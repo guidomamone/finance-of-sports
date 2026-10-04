@@ -1,8 +1,10 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "mdSha1": "24f3096fb449277503685c36e121b1db2b2cd4a1",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-02T02:40:52.235Z",
+ "generado": "2026-10-04T21:56:46.950Z",
+ "indiceAmpliado": 2,
  "intentoNotasComoEstado": true,
  "estadoDesdeNotas": true,
  "bloques": {
@@ -259,11 +261,11 @@
  "estado": [
   "b19",
   "b22",
-  "b25",
   "b23",
   "b24",
-  "b27",
+  "b25",
   "b26",
+  "b27",
   "b28",
   "b30",
   "b31",
@@ -287,23 +289,24 @@
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Resultado Año 2017",
-   "texto": "No hay estado de resultados; el único resultado impreso está en la nota de resultados acumulados (b18), que es de patrimonio.",
+   "texto": "El documento no trae estado de resultados; el único resultado impreso del ejercicio está en la nota de resultados acumulados (b18).",
    "bloques": [
     "b18"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿El cuadro de otros gastos (b28) no imprime total y se suma tal cual, incluyendo 'Impuestos Asumidos' negativo (1,468)?",
+   "pregunta": "¿Los salarios del plantel están incluidos en 'Sueldos' de la nota 21 Gastos de Administración (b23) sin un cuadro aparte que los separe?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Impuestos Asumidos",
-   "texto": "b28 no muestra fila total en el texto visto y el signo de Impuestos Asumidos 2017 es inverso al de 2016.",
+   "renglon": "Sueldos",
+   "texto": "No hay cuadro específico de salarios del plantel; los sueldos aparecen dentro de gastos de administración (b23) y de ventas (b26).",
    "bloques": [
-    "b28"
+    "b23",
+    "b26"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "El documento trae solo notas. Gastos de administración en b23-b24-b25 (continuación), gastos de ventas b26-b27. b20/b21 desglosan ingresos ordinarios de b19 sin columna 2016. Etiquetas de totales mal transcritas ('Total Pasivos por Impuestos', 'Total Otros Gastos' en otros ingresos)."
+ "observaciones": "Documento solo con notas (sin estado de resultados). Se toman como estado las notas 19 (ingresos ordinarios), 20 (costo de ventas), 21 (gastos de administración, b23-b25), 22 (gastos de ventas, b26-b27), 23 (otros gastos), 24 (otros ingresos), 25 (costos financieros) y la nota 18 donde figura el resultado 2017. b20-b21 detallan el rubro de ingresos (solo 2017). Totales de b30/b31 con etiquetas mal transcriptas ('Total Otros Gastos'/'Total Otros Ingresos'). Estados individuales del Fortaleza Fútbol Club."
 }

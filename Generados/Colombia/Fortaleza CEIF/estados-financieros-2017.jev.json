@@ -1,51 +1,15 @@
 {
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
- "generatedAt": "2026-10-02T20:07:37.748Z",
- "rubrosHuella": "32e6b1557d2d740687a29db349e21cdc26b08027",
+ "generatedAt": "2026-10-04T21:59:10.497Z",
+ "rubrosHuella": "dff4bf9705ecd9ec715385666f0cc53b08bb5c54",
  "rubros": [
-  {
-   "label": "Actividades Deportivas",
-   "lado": "revenue",
-   "page": 14,
-   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
-   "choice": "other_sports",
-   "confidence": 0.46,
-   "desdeCache": true
-  },
-  {
-   "label": "Otros Ingresos",
-   "lado": "revenue",
-   "page": 14,
-   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
-   "choice": "other_income",
-   "confidence": 0.95,
-   "desdeCache": true
-  },
-  {
-   "label": "Venta de Productos",
-   "lado": "revenue",
-   "page": 14,
-   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.76,
-   "desdeCache": true
-  },
-  {
-   "label": "Casa Hogar",
-   "lado": "revenue",
-   "page": 14,
-   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
-   "choice": "other_income",
-   "confidence": 0.95,
-   "desdeCache": true
-  },
   {
    "label": "Aprovechamientos",
    "lado": "revenue",
    "page": 19,
    "section": "nota que desglosa \"Total Otros Gastos\"",
    "choice": "other_income",
-   "confidence": 0.99,
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -55,16 +19,67 @@
    "section": "nota que desglosa \"Total Otros Gastos\"",
    "choice": "other_income",
    "confidence": 1,
-   "desdeCache": true
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 954
   },
   {
    "label": "Costos de Ventas",
    "lado": "expense",
    "page": 15,
    "section": "nota que desglosa \"Total Costo de Ventas\"",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.54,
-   "desdeCache": true
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Total Ingresos actividades ordinarias",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.52
+    ],
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1020
   },
   {
    "label": "Costos Extraordinarios",
@@ -72,37 +87,800 @@
    "page": 15,
    "section": "nota que desglosa \"Total Costo de Ventas\"",
    "choice": "exceptional_items",
-   "confidence": 1,
-   "desdeCache": true
+   "confidence": 0.97,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
   },
   {
-   "label": "Total Gastos de Administración",
+   "label": "Horas Extras y Recarg",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "wages_squad",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 911
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Auxilios de Transport",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "youth_other_sports_expense",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 846
+  },
+  {
+   "label": "Bonificaciones",
    "lado": "expense",
    "page": 17,
-   "section": "estado",
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "Dotacion y Sum a Trab",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
    "choice": "admin_general_expense",
    "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Intereses Sobre Las C",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 872
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 879
+  },
+  {
+   "label": "Indmenizaciones Labor",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Prima de Servicios",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Aportes Admin de Ries",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Gastos Deportivos y D",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Aportes a Fondos de P",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Aportes a Cajas de Co",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Aportes a Icbf",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Aporte a Salud",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "wages_squad",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 921
+  },
+  {
+   "label": "Sena",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 878
+  },
+  {
+   "label": "Gastos Medicos y Drog",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.28,
    "desdeCache": true
   },
   {
-   "label": "Total Gastos de Ventas",
+   "label": "Asesoria Tecnica",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Maquinaria y Equipo",
    "lado": "expense",
    "page": 18,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 0.58,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
    "desdeCache": true
   },
   {
-   "label": "Otros gastos",
+   "label": "Asesoria Juridica",
    "lado": "expense",
-   "page": 19,
-   "section": "ajuste manual",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 979
+  },
+  {
+   "label": "Arbitraje Partidos Pr",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Impuesto al Consumo",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Impuesto a la Riqueza",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 948
+  },
+  {
+   "label": "Contrucciones y Edifi",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
    "choice": "other_expenses",
    "confidence": 1,
    "top3": [
     [
      "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Equipo de Computacion",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Asistencia Tecnica",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Ditritales Y/O Depart",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "depreciation",
+     0.06999999999999999
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Energia Electrica",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Telefono",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Vida Colectiva",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Cumplimiento",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Gas",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Responsabilidad Civil",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
      1
     ],
     [
@@ -114,7 +892,929 @@
      0
     ]
    ],
-   "tokens": 1001
+   "tokens": 877
+  },
+  {
+   "label": "Tv Cable",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bomberos",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Soat",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Aseo y Vigilancia",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Notariales",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Registro Mercantil",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tramites y Licencias",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "other_amortisation",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Acueducto y Alcantari",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Correo Portes y Teleg",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 874
+  },
+  {
+   "label": "Publicidad Propaganda",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Transportes, Fletes Y",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Pasajes Aereos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasajes Terrestres",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Logistica y Manejo Pa",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Recoge Bolas",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Flota y Equipo de Tra",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Ligas de Futbol",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Taxis y Buses",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Casino y Restaurante",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Parqueaderos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo de Comunicacio",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Peajes",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Alojamiento y Manuten",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Flota y Equipo de Trn",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Elementos de Aseo y C",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Reparaciones Locativa",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Utiles Papeleria y Fo",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Combustibles y Lubric",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Polvora y Similares",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Auxilio de Transporte",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Arbitraje",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 904
+  },
+  {
+   "label": "Dotacion y Suministro",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 904
+  },
+  {
+   "label": "Impuesto al Consumo A",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Impuesto Boleteria",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Construcciones y Edif",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "Equipo de Oficina",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Retenciones Asumidas",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Gravamenes",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Comunicaciones",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Correo",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedades",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Amortizacion Marcas y Derechos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_amortisation",
+     0.56
+    ],
+    [
+     "player_amortisation",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Instalaciones Electri",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 863
+  },
+  {
+   "label": "Publicidad",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Transporte",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Servicio de Ambulanci",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ]
+   ],
+   "tokens": 893
+  },
+  {
+   "label": "Utiles",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1029
   }
  ]
 }
