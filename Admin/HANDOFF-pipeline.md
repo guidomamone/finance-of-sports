@@ -26,9 +26,11 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
 
 1. **Caja y deuda** (ver "Caja y deuda" más abajo; hoy `--medir` da Juventus caja 17 de 23 y deuda 12 de 21 iguales, los otros 5 clubes
    todo igual o sin dato). En orden:
-   - (a) la escala (`factorPorIngresos`) se confunde con las filas de ajuste manual `fila`: en Juventus 2003-2006 gana "miles" (las filas de
-     la nota de sponsors están en €000 y el estado en euros). Antes de diseñar: un subagente Sonnet mide en qué clubes la escala decide por
-     poco margen.
+   - (a) la escala: hoy es UNA por documento, sacada del estado de resultados (`factorPorIngresos`), pero hay documentos con dos escalas
+     (Novorizontino `balanco-2016.md`: resumen "em milhares" L6 y balancete en reais L329, el que lee caja-deuda; Juventus 2002-03:
+     posición financiera resumida en €000 y estado en euros). Por eso Juventus 2003-2006 sale en miles. A diseñar: la escala de las FILAS
+     que propone cada escalón (la de su tabla, o la que hace coincidir la fila con el año anterior cargado), no la del documento. Para
+     medir: `caja-deuda.mjs --medir --escalas`.
    - (b) "4) Due to banks": el diccionario no la reconoce por la numeración adelante. Probado: sacar la numeración la lee bien (Juventus
      2005-06 L1967; 2004-05 L1715), pero sin (a) entra en miles y 2005 pasa de sin dato a distinto. Va después de (a).
    - (c) quedan distintos en `--medir` por sumas casuales del precedente (escalón 0): deuda 2018 ("Players' registration rights" +

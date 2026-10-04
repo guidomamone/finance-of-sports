@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 456 — Escala de caja y deuda: probado y NO adoptado; `--medir --escalas` (2026-10-04)
+
+- `caja-deuda.mjs --medir --escalas`: lista la escala que eligió `factorPorIngresos` en cada año (solo para medir; no cambia resultados).
+- Probado y no adoptado: escala sin los rubros de ajustes `fila` y, en empate, desempate en las filas del estado de resultados. Cambia justo lo esperado (Juventus 2003-2006 a unidades, Novorizontino 2016 a miles) pero empeora 4 años: hay documentos con DOS escalas (Novorizontino `balanco-2016.md`: balance resumido "em milhares" L6 y balancete en reais L329, que es lo que lee caja-deuda; Juventus 2002-03: posición financiera resumida en €000, "Bank and post-office deposits (67,185)" + "Cash at bank and in hand (13)" = caja cargada, y el estado en euros). Una escala por documento no puede acertar las dos.
+
 ## Versión 455 — Probado y NO adoptado todavía: "4) Due to banks"; HANDOFF reordenado (2026-10-04)
 
 - `caja-deuda.mjs`: sacar la numeración de lista ("4)", "a)", "IV.") antes del diccionario lee bien "4) Due to banks" (Juventus 2005-06 L1967, 2004-05 L1715), pero con la escala actual 2005 entra en miles y pasa de sin dato a distinto (24.973,8 contra 24,97). Revertido: va después del arreglo de la escala.
