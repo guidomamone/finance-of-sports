@@ -23,33 +23,29 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 ## Dónde estamos
 
 **Seis clubes en el sitio local, sin push:** UC (Chile) 2010-2025; Fortaleza CEIF (Colombia) 2017-2025; Goiás (Brasil) 2008-2017 y
-2021-2025; Novorizontino (Brasil) 2010 y 2013-2025; AEL Larissa (Grecia) 2016-2025; **Juventus (Italia) 2003-2021 y 2023-2025** (en curso).
-Versiones de esta tanda: 407-439.
+2021-2025; Novorizontino (Brasil) 2010 y 2013-2025; AEL Larissa (Grecia) 2016-2025; **Juventus (Italia) 2003-2025**.
+Versiones de esta tanda: 407-440.
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
-1. **En curso: Juventus (`juventus-it`, estados SEPARADOS: ajuste `perimetro` individual del club; lotes 12-13h).** Se trabaja con una
-   tabla año → etapa → por qué → solución, avanzando juntos los años de la etapa más baja (pedido de Guido). Falta:
-   - **2022 (2021-22):** el .md cambió al rearmar la pág. 100 (escalón 1b, en un `--reintentar` de más) y el inventario lo volvió a
-     "sin-verificar": sin `listo-para-jev` no se categoriza ni carga. La etapa 4 confirmó los 178 números del estado (b100, pág. 136) y dejó
-     148 sin confirmar en NOTAS que no se usan (págs. 172-182; cierra con la lectura 6, que no abre notas). Siguiente paso: resolver
-     (~US$ 1) + lote solo de 2022. **A TRATAR (diseño pendiente):** (a) que `avisarRegistro` (verificar.mjs) exija confirmados solo los
-     bloques que la lectura ganadora usa; (b) el rearmado no debería dispararse por la marca de una corrida con otro perímetro (2022 la
-     arrastró del consolidado); (c) un `--reintentar` sobre una lista mezclada rehace documentos que no lo necesitan (lotes con solo los que
-     lo piden).
-   - **Caja y deuda:** 8 ajustes `caja` hechos (2003-2008, 2019, 2021; el resto sale por precedente). Deuda por escalón 2 (IA, ~US$ 0,70)
-     porque desde 2007 viene en dos filas con la misma etiqueta (corriente y no corriente) y el escalón 1 no suma familias repetidas.
-     Deuda 2003-2004 sin dato (no hay deuda financiera); derivados de cobertura afuera. Correr `caja-deuda.mjs --club juventus-it
-     --ejecutar --escribir` con los 24 años cargados.
+1. **Juventus (`juventus-it`) cargado 2003-2025** (estado separado; Versiones 433-440). Pendiente:
+   - **Deuda 2007-2025 sin dato:** la IA (escalón 2) propone valores razonables (2007 18,7 M = "Loans and other financial liabilities"
+     corriente + no corriente) pero la compuerta no confirma: la columna "año anterior" del documento siguiente dice otra cosa (reexpresiones
+     IFRS, o la IA del año vecino eligió otras filas). Y desde 2007 la deuda viene en dos filas con la misma etiqueta, que el escalón 1 no
+     suma (familia repetida). A diseñar: escalón 1 que sume corriente + no corriente de la misma familia.
+   - **Caja 2022, 2024, 2025 sin dato y `caja-deuda.mjs` no respeta el ajuste `perimetro`:** lee el primer balance del .md (el consolidado).
+     2023 se corrigió a mano. A diseñar: que caja-deuda reciba el perímetro (como el cambio H para localizar).
+   - **Escala de caja-deuda equivocada cuando hay filas de ajuste manual:** `factorPorIngresos` compara los rubros cargados con las cifras
+     del .md; en 2003-2006 las filas de la nota de sponsors (en miles) ganaron y la escala salió miles (valores x1000, corregidos a mano).
+   - **2022 (.md cambiado), A TRATAR:** (a) que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (en 2022
+     frenaban notas no usadas: se destrabó con 29 ajustes `confirmado`); (b) el rearmado no debería dispararse por la marca de una corrida
+     con otro perímetro; (c) `--reintentar` sobre una lista mezclada rehace lo que no hace falta; (d) el caché de localizar/extraer no se
+     invalida si el .md cambió (el resolver corrió 4 líneas el estado de 2022).
    - Nota visible para el sitio (no hecha): quiebre de serie 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-   Cambios de esta tanda: E (el lote pasa por las voces, `resolver-inventario`, antes de rearmar; V433), F (lectura 6; V434), G (ajuste `fila`
-   en lecturas 5-6, valor 0 = sacar; V435, 437), H (el perímetro del ajuste llega a localizar; V436), `carpetas-clubes --json` sin corte en
-   64 KB (V438), diccionario de deuda en inglés reactivado (V439). Ajustes manuales: signos del formato italiano viejo 2003-2006, nota de
-   sponsors abierta 2003-2006, filas "per share" sacadas (2019, 2021, 2023, 2024).
-   Defectos vistos, sin arreglar: el ensayo estima extraer con un costo fijo (US$ 0,07) y en documentos largos cuesta ~US$ 0,35;
-   `compararVecino` no cuenta las filas que entran por ajuste manual (falso "año vecino distinto", Juventus 2005); el escalón 1a del lote
-   solo mira "revisar", no "sin-verificar"; "4) Due to banks" no matchea el diccionario por el número adelante; escalón 3 de caja/deuda
-   (media móvil, diseño aprobado) en pausa hasta que un caso lo necesite.
+   Cambios de esta tanda: E (voces antes de rearmar; V433), F (lectura 6; V434), G (ajuste `fila` en lecturas 5-6; V435, 437), H (perímetro
+   a localizar; V436), `carpetas-clubes --json` sin corte (V438), diccionario de deuda en inglés reactivado (V439). Defectos vistos: el
+   ensayo estima extraer con un costo fijo; `compararVecino` no cuenta filas de ajuste; el escalón 1a solo mira "revisar"; "4) Due to banks"
+   no matchea por el número adelante; escalón 3 de caja/deuda (media móvil) aprobado y en pausa.
 1b. **PRIORIDAD (pedido de Guido, 2026-10-04): una dinámica que no haga pasar lo mismo por las APIs varias veces.** Con Juventus se pagó
    de más varias veces: el lote 13 localizó 2022-2025 antes de que el perímetro llegara a localizar (cambio H) y hubo que relocalizar; un
    `--reintentar` sobre una lista mezclada rehízo 2023-2025 sin necesidad; rearmar una página invalidó la validación del .md entero y hubo

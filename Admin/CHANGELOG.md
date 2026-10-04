@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 440 — Juventus entero: 2003-2025 con caja y deuda parcial (2026-10-04)
+
+- Estado de resultados de Juventus (`juventus-it`, estados separados) 2003-2025 cargado: 2022-2024 relocalizados con el perímetro individual y 2025 recargado (antes consolidado). Ajustes manuales: fila "per share" fuera en 2023-2024, números de notas no usadas `confirmado` en 2022.
+- Caja escrita 2003-2021 y 2023 (8 ajustes `caja` + precedente); deuda 2005-2006 ("Due to banks"). Corregidos a mano: 2003-2006 (caja-deuda tomó esos documentos en miles por las filas de la nota de sponsors abiertas a mano; valores x1000) y caja 2023 (había tomado el balance consolidado; va el separado, 48.389.386, .md L4800).
+- Sin dato: deuda 2003-2004 (no hay deuda financiera), deuda 2007-2025 (la IA propone, pero la compuerta no confirma: reexpresiones y filas distintas entre años), caja 2022, 2024 y 2025 (caja-deuda lee el balance consolidado; no respeta el perímetro).
+
 ## Sourcing Europa del Este, 2026-10-03
 
 - Sesión de sourcing de región (worktree `sourcing-europa-del-este`), sin cargar nada al sitio ni transcribir.
