@@ -29,8 +29,11 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    Hecho también: el caché de localizar, validar y extraer sabe si el .md cambió (V445, `cache-al-dia.mjs`); los `.json` de `Generados/`
    se trackean como respaldo (V444; no se publican); el ensayo estima extraer con salida = 2 x entrada, o la mediana del club / techo
    US$ 0,32 si todavía no se localizó (V446).
+   Y para ver dónde está cada documento: el inventario y el tablero (`estado.mjs`) dicen la etapa y el escalón del proceso nuevo, con
+   la misma lógica (`etapa-doc.mjs`, V447-448).
    Falta:
    - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
+   - `estado.mjs --logica` (lo propio de cada grupo de países) sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`).
    - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
 2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano): el escalón 1 tiene que
