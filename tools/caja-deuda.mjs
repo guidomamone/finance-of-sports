@@ -116,7 +116,8 @@ export function filasDelMd(md) {
     // (Versión 422) para el DICCIONARIO (vocabulario.mjs, que busca la palabra al principio) la etiqueta va sin el código de cuenta de un
     // balancete ("2.2.01 EMPRESTIMOS...", "29 2201010001 - I-9 SPORTS"): la familia y la etiqueta impresa no cambian. Caso: Novorizontino
     // 2013-2017, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" no la reconocía el escalón 1 de deuda.
-    const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '');
+    // (Versión 459) también una numeración de lista al principio ("4)", "a)", "IV.", "12."): Juventus 2005-06 L1967 "4) Due to banks".
+    const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
     filas.push({ linea: i + 1, pagina, etiqueta, cd, codigo, norm: normalizar(sinCodigo), familia: claveFamilia(etiqueta), valor: nums[0], cifras: nums });
@@ -312,23 +313,45 @@ function parCorrienteYNoCorriente(filas, fam) {
   const entre = filas.some((f) => f.linea > xs[0].linea && f.linea < xs[1].linea && TOTAL_NO_CORRIENTE_RE.test(f.norm));
   return entre ? xs : null;
 }
-export function compuerta(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null }) {
-  if (!factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
+// LA ESCALA EN LA COMPUERTA (Versión 459, punto 1 del HANDOFF, aprobado por Guido el 2026-10-04). La escala de un documento es una sola (la
+// del estado de resultados), pero hay documentos con dos (Juventus 2002-06: posición financiera en €000 y estado en euros; Novorizontino
+// balanco-2016: resumen en milhares y balancete en reais). Escalera:
+//   ESCALÓN 0  la escala del documento: si la compuerta pasa Y el valor es PLAUSIBLE (entre 1/100 y 100 veces el año cargado más cercano
+//              del mismo dato, si lo hay) ──► dato (como antes)
+//   ESCALÓN 1  si no pasa o no es plausible: las otras escalas, aplicadas a las filas de la propuesta (y, en el documento siguiente, a sus
+//              cifras también); se acepta solo si UNA da ok y plausible
+//   nada ──► lo de la escala del documento (como antes)
+// Caso: Juventus 2005, "4) Due to banks" 24,973,807: con la escala del documento (miles) daba 24.973,8 millones y el documento siguiente
+// (también en miles) lo confirmaba; ahora no es plausible contra 2006 (14,93) y en unidades da 24,973807, el cargado. Medido en los 519
+// años de todos los clubes: +5 iguales (Juventus deuda 2005 y 2006, Fluminense 2025 caja y deuda, Mönchengladbach 2024 caja), 0 empeoran.
+export function compuerta(prop, ctx) {
+  const { factor, referencia = null } = ctx;
+  const plausible = (r) => !(referencia > 0) || !(r.valor > 0) || (r.valor / referencia <= 100 && r.valor / referencia >= 0.01);
+  const base = evaluar(prop, ctx, null);
+  if (base.ok && plausible(base)) return base;
+  const alts = FACTORES.filter((x) => x !== factor).map((x) => [x, evaluar(prop, ctx, x)]).filter(([, r]) => r.ok && plausible(r));
+  if (alts.length === 1) return { ...alts[0][1], escalaAlternativa: alts[0][0] };
+  return base;
+}
+// La compuerta con UNA escala: la del documento (over null) o una forzada para las filas de la propuesta (over).
+function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null }, over) {
+  if (over == null && !factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
+  const esc = over ?? factor;
   // (Versión 420) LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
   // los escalones 0 y 1 aplican al buscar, ahora también para la propuesta de la IA). La comparación con el vecino no lo atrapa: si el error
   // se repite en los dos años, coincide. Caso: Novorizontino 2024 y 2025, la IA propuso "Caixa e equivalentes de caixa" como deuda.
   const otraFamilia = (prop.filas || []).find((f) => (cual === 'deuda' ? CAJA_RE : cual === 'cash' ? DEUDA_FINANCIERA_RE : null)?.test(f.norm || ''));
   if (otraFamilia) return { ok: false, valor: null, motivo: `la fila "${otraFamilia.etiqueta}" es de ${cual === 'deuda' ? 'caja' : 'deuda'}, no de ${cual === 'deuda' ? 'deuda' : 'caja'}` };
-  const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * factor);
+  const valor = prop.ninguna ? 0 : r6(prop.filas.reduce((a, f) => a + f.valor, 0) * esc);
   const chequeos = []; // [nombre, coincide, detalle]
   if (anterior != null) {
     if (prop.ninguna) chequeos.push(['año anterior', Math.abs(anterior) <= TOL(0), `cargado ${anterior}`]);
-    else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * factor); chequeos.push(['año anterior', Math.abs(prev - anterior) <= TOL(anterior), `${prev} contra ${anterior} cargado`]); }
+    else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * esc); chequeos.push(['año anterior', Math.abs(prev - anterior) <= TOL(anterior), `${prev} contra ${anterior} cargado`]); }
   }
   // (Versión 385) una fila que no está en las páginas del balance (una nota) se busca también en las notas del documento vecino.
   if (siguiente) {
     if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
-    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); chequeos.push(['documento siguiente', Math.abs(prev - valor) <= TOL(valor), `${prev} en el siguiente`]); } }
+    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); let okS = Math.abs(prev - valor) <= TOL(valor); if (!okS && over != null) { const p2 = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * over); okS = Math.abs(p2 - valor) <= TOL(valor); } /* (Versión 459) con una escala forzada, el siguiente también puede ir en esa escala */ chequeos.push(['documento siguiente', okS, `${prev} en el siguiente`]); } }
   }
   const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
   if (malos.length) return { ok: false, valor, motivo: `no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` };
@@ -344,7 +367,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
   for (let e = 0; e < propuestas.length; e++) {
     const p = propuestas[e];
     if (!p) { if (e < 2 || ia) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente, cual });
+    const c = compuerta(p, { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null }); // (Versión 459) el año cargado más cercano, para la plausibilidad
     if (c.ok) return { valor: c.valor, escalon: e, validacion: c.validacion, como: p.como, filas: p.filas.map(cita), club };
     intentos.push(`escalón ${e} (${c.valor}): ${c.motivo}`);
   }
