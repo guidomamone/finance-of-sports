@@ -26,3 +26,9 @@ Sin ángulo nuevo evidente. Antes de insistir, desambiguar cuál de los 2 EDRPOU
 entidad vigente (útil igual para cualquier pregunta directa al club en `dudas-por-club.md`).
 
 - Último chequeo: 2026-09-18.
+
+## Chequeo 2026-10-03 (sesión Europa del Este)
+
+**Ángulos**: sitio oficial: agotado (sin sección financiera, sesión anterior) · Wayback CDX (`fckryvbas.com.ua`): 0 PDFs archivados (consulta con servicio funcionando; puede ser dominio equivocado) · búsqueda web: agotado (solo agregadores) · barrido: 2 (Sonnet).
+
+**Lead sin verificar (agregador)**: `opendatabot.ua/c/33576285` (ТОВ ФК „КРИВБАС", ojo: también existe `youcontrol.com.ua/.../41034874` "ФК КРИВБАС", dos EDRPOU candidatos, sin aclarar) muestra ingresos 2024 de 287,1 M UAH, pérdida neta 1,1 M UAH, 152 empleados. Fuente NO oficial, pendiente de verificar. Encontrado 2026-10-03.

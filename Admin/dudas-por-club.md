@@ -703,9 +703,11 @@ no existe. Ver `fuentes/Turquía/Trabzonspor.md`.)*
 
 ## Obolon (sourcing de Ucrania, sesión 2026-09-18, pregunta real, no bloqueó nada)
 
-- **¿El PDF financiero de 2025 es del club de fútbol o de la cervecera ПрАТ "ОБОЛОНЬ" (EDRPOU
-  05391057)?**: comparten sitio/patrocinio pero podrían ser entidades legales distintas — confirmar
-  antes de cargar cualquier cifra.
+- **RESUELTA (2026-10-03, sesión Europa del Este)**: el formulario de balance de 2021-2024 dice
+  `Товариство з обмеженою відповідальністю "Футбольний клуб "ОБОЛОНЬ"`, actividad "Діяльність
+  спортивних клубів", y el PDF de 2020 se llama `Finansova-zvitnist-TOV-FK-Obolon-za-2020-rik.pdf`:
+  el documento es de la ТОВ del club, no de la cervecera ПрАТ "ОБОЛОНЬ" (EDRPOU 05391057). Falta
+  solo confirmar el EDRPOU exacto de la ТОВ al cargar (el de 2025 tiene el dictamen de Євроаудит).
 
 ## Kolos Kovalivka (sourcing de Ucrania, sesión 2026-09-18, pregunta real para el club)
 
@@ -1851,3 +1853,16 @@ precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squ
 precedente de Racing (sección 13 del skill: costos no salariales del plantel bundle-ados con
 salarios cuando no hay categoría más específica) — confirmar si es el criterio correcto o si
 debería ir a `match_organisation_expense`/`other_expenses`.
+
+## Sourcing de Europa del Este (sesión 2026-10-03): preguntas de mapeo y de clubes
+
+- **Hungría**: Kisvárda (¿base de la Kft. de fútbol o la `összevont` con la asociación?), DVSC (cifras consolidadas del grupo, no solo de la Zrt.), Újpest (cierres al 30-jun y al 31-dic: ¿cómo se mapea el ejercicio?), Ferencváros (¿solo FTC Labdarúgó Zrt. o también la asociación madre? los PDF de la asociación quedaron aparte).
+- **Eslovaquia**: Slovan (¿individual o consolidado?), Podbrezová (¿FK o ŠK `a.s.`?).
+- **Polonia**: Wisła Kraków (el ejercicio de transición se rotula "01.01.2021-30.06.2022" pero 2021 ya está publicado: probablemente 01.01-30.06.2022), Lechia (primer archivo dice "01.07.18_30.06.18": ¿2017/18 o 2018/19?), Arka (dos informes de gestión con año ilegible).
+- **Rumanía**: CFR Cluj (¿qué entidades consolida el "consolidat" 2024-25?), Csíkszereda (¿existen estados 2022-2023, cuando jugó Liga 2?).
+- **Bulgaria**: CSKA 1948 (el club profesional opera dentro de la asociación 177080120 o a través de otra sociedad; la 200269839 no presenta nada), Botev Plovdiv (sin presentaciones antes de 2022).
+- **Serbia**: Crvena zvezda (confirmar figura jurídica y matični broj; el brief decía a.d.), Partizan (el archivo 2025 se llama "audit-opinion" pero trae estados y notas completos).
+- **Letonia**: Riga FC (patrimonio neto de -5,16 M EUR en 2021 a +0,79 M en 2025: ¿condonación o aporte de capital?), Valmiera (facturación de 0 a 1,69 M EUR y activos de 1,6 M a 73 mil: ¿traspaso de actividad?).
+- **Kazajistán**: Kaspiy FK (el DFO solo tiene 2021-2022). **Georgia**: Dinamo Batumi (reportal.ge hasta 2022).
+- **Ucrania**: Dynamo Kyiv (la consolidada bajada de Wayback, ¿es 2020 u otro año?).
+

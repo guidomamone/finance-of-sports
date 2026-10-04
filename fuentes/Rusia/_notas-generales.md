@@ -64,7 +64,18 @@ igual existe y es consultable en la página (no haría falta inventar ni saltear
 sin el respaldo de un PDF descargable para citar como fuente primaria, que es el estándar del
 proyecto).
 
-**Ningún formato nuevo para el `.gitignore`**: todo lo bajado es PDF (`*.pdf`, ya cubierto).
+**Ningún formato nuevo para el `.gitignore`**: todo lo bajado es PDF (`*.pdf`, ya cubierto). *(Actualizado 2026-10-03: ver la sección siguiente — los datos estructurados sí son JSON y ZIP, que ahora también están en el `.gitignore`.)*
+
+## Hallazgo 2026-10-03: el balance y el estado de resultados oficiales se pueden bajar de cada año, con o sin auditoría
+
+La sección anterior dice que "los datos estructurados están disponibles como JSON aunque no haya PDF" pero solo en la página humana. Hay dos endpoints públicos más (sin captcha, sin login, `curl`/`urllib` puro) que los bajan como archivo, para el `reportId` de cada año (el mismo `typeCorrections[0].correction.id` que ya usa el listado `/nbo/organizations/<id>/bfo/`):
+
+- **`https://bo.nalog.gov.ru/nbo/bfo/details/<reportId>`** → JSON con `balance` (formulario 0710001, filas `current1100`/`current1600`... con año actual, anterior y anteanterior), `financialResult` (0710002: `current2110` ingresos, `2120` costo de ventas, `2200` resultado de ventas, `2400` resultado neto), `capitalChange`, `fundsMovement` y la ficha de la entidad. Cifras en **miles de rublos**.
+- **`https://bo.nalog.gov.ru/download/bfo/<reportId>?type=XLS`** → ZIP con el `.xlsx` de las formas (el parámetro `type` es un enum de Java: solo `XLS` dio 200; `PDF`, `XLSX`, `XML`, etc. dan 400).
+
+Con eso se bajaron, para los 16 clubes y todos sus ejercicios 2021-2025, `bfo-<año>-datos.json` y `bfo-<año>-formas-xls.zip` en `Clubes/Rusia/<Club>/` (15 clubes con 5 ejercicios, Baltika con 4: la entidad solo presenta desde 2022). **Sanity check**: Zenit 2025, `current2110` = 22.070.930 (miles de RUB = 22,1 mil millones). Esto resuelve los clubes con menos de 5 PDFs: Akhmat Grozny (solo notas 2025; ahora tiene 5 ejercicios estructurados aunque el dictamen siga sin existir), Akron Tolyatti (años previos exentos de auditoría, ahora con balance y resultados 2021-2025) y Dynamo Makhachkala (2021-2023 sin auditoría exigida, ahora con datos). Son la **misma fuente primaria** (la propia presentación del club al depósito del Estado), no un agregador.
+
+Script reproducible: `Admin/` no lo guarda (vive en el scratchpad de la sesión); la lógica es listar `/bfo/` y pedir los dos endpoints por `reportId`. **`.gitignore`**: `Clubes/**/*.json`, `*.zip`, `*.xls`, `*.xlsx` agregados el 2026-10-03 (documento fuente crudo queda local, mismo criterio que XML/DOCX/TIFF).
 
 **Gotcha de tooling — timeouts de conexión frecuentes con archivos grandes**: la conexión a
 `bo.nalog.gov.ru` es lenta e inestable desde este entorno (varios `curl` de 5-30 MB cortaron a los

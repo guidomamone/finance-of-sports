@@ -1,0 +1,8 @@
+# Partizan (Fudbalski klub "Partizan", Beograd)
+
+**Ángulos**: sitio oficial: parcial — solo 2025 en `/vesti/dokumenta`; 2023-2024 sólo vía Wayback del CDN mpanel · Wayback CDX: parcial — 2019, 2020 y 2021 tienen UNA captura cada una, truncada a 1.048.576 bytes · regulador/país (APR): bloqueado desde EE.UU. · búsqueda web: agotado · barrido: 1 (Sonnet) — 2026-10-03
+
+- **Entidad**: FUDBALSKI KLUB "PARTIZAN", Beograd (matični broj 21024236 es el del auditor, no del club). Auditor: Forvis Mazars d.o.o. Beograd. Informes "nekonsolidovani" (no consolidados), cada PDF = opinión + bilans + notas + godišnji izveštaj.
+- **3 ejercicios en disco** (`Clubes/Serbia/Partizan/`): `misljenje-revizora-nekonsolidovani-fi-2023.pdf` (97 pág.), `-2024.pdf` (96 pág.), `audit-opinion-fk-partizan-2025.pdf` (89 pág., firmado 17.03.2026). Texto con capa de texto, alfabeto latino.
+- **Faltan 2019-2022**. Las URL del sitio viejo existen en Wayback pero las 3 capturas están truncadas (1.048.576 bytes, sin `%%EOF`): 2019 `partizan.rs/wp-content/uploads/2020/11/FK-Partizan_Misljenje-revizora_Pojedinacni-FI-2019_FINAL-potpisan.pdf` (ts 20210125205650), 2020 `www1.partizan.rs/wp-content/uploads/FK-Partizan_Misljenje-revizora_Nekonsolidovani-FI-2020_FINAL_locked.pdf` (ts 20220706185934), 2021 `.../FK-Partizan_Misljenje-revizora_Nekonsolidovani-FI-2021_FINAL-potpisan-1.pdf` (ts 20220629032813). Los hosts vivos ya no existen (DNS). 2022 no apareció en ningún CDX (el sitio mpanel recién tiene 2023-2025). Reintentar con otra captura cuando archive.org tenga más, o bajar de APR (gestión de Guido).
+- El CDN del sitio actual es `fkpartizan.mpanel.app/storage/files/documents/` (nombre con timestamp unix al final).

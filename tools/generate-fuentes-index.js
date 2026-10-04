@@ -146,6 +146,22 @@ const OVERRIDES = {
   'Suiza|Basel': { doc: true, motivo: '18 documentos 2005-2021' },
   'España|Real Sociedad': { doc: false, motivo: 'el depósito existe, el PDF queda detrás de un informe pago' },
 
+  // Sesión Europa del Este, 2026-10-03: 14 líneas ambiguas de países nuevos.
+  'Armenia|Ararat-Armenia, Alashkert y otros': { doc: false, motivo: 'sin documentos' },
+  'Azerbaiyan|Qarabag': { doc: true, motivo: 'sin balance propio, pero los informes de licenciamiento AFFA 2015-2025 desglosan ingresos club por club' },
+  'Azerbaiyan|Neftci, Sabah, Zira, Sumqayit y otros': { doc: true, motivo: 'sin balance individual, pero el agregado AFFA desglosa ingresos club por club' },
+  'Eslovenia|Maribor': { doc: true, motivo: '3 resúmenes de 1 página (2018-2020) con cifras propias; los completos están en AJPES con captcha' },
+  'Georgia|Otros clubes georgianos en reportal.ge': { doc: false, motivo: 'solo mapa de entidades; los documentos exigen cuenta en reportal.ge' },
+  'Hungria|Ujpest': { doc: true, motivo: '2020-2025 en disco' },
+  'Kazajistan|Astana, Kairat, Tobol y otros': { doc: false, motivo: 'no están en el DFO (no son entidades de interés público)' },
+  'Letonia|Valmiera FC': { doc: true, motivo: '1 ejercicio completo (2022) + informe del auditor; el "bloqueado" es solo el 2020 truncado' },
+  'Letonia|Otros clubes de la Virslīga y 1. liga': { doc: false, motivo: 'sin documentos' },
+  'Lituania|Otros clubes de la A lyga': { doc: false, motivo: 'sin documentos accesibles' },
+  'Rumania|Farul Constanța': { doc: false, motivo: 'dominio oficial vigente no hallado, sin documento' },
+  'Rumania|UTA Arad': { doc: false, motivo: 'dominio oficial no accesible, sin documento' },
+  'Rumania|Unirea Slobozia': { doc: false, motivo: 'dominio no identificado, sin documento' },
+  'Ucrania|Shakhtar': { doc: true, motivo: '8 ejercicios 2018-2025 del sitio oficial; el "sin cerrar" es la frase de la nota vieja que se reemplazó' },
+
   // 13 CONFLICTOS de la corrida del 2026-09-23 (to-do 48), tras sumarse el sourcing
   // de Brasil/Colombia/México de la Versión 201-202.
   'Brasil|Amazonas': { doc: true, motivo: 'balanços resumidos sin auditar, 2022-2024, rescatados de Wayback' },

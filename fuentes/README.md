@@ -85,21 +85,27 @@ la línea de ese país acá solo si cambió alguno de sus números.
 
 ## Índice de países
 
-Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **44 países,
-587 clubes trackeados, 371 con documento encontrado.**
+Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **65 países,
+726 clubes trackeados, 498 con documento encontrado.**
 
 "Con documento" = existe al menos un documento financiero identificado y accesible con cifras de
 ese club — propio, o un agregado de liga con desglose club por club, como la DNCG francesa —
 aunque todavía no esté cargado al sitio. No cuenta un documento confirmado pero inaccesible
 (pago, captcha, 403), ni un agregado que solo publica el total de la liga.
 
+- [Albania](_indice/Albania.md) — 1 club, 1 con documento — Chequeo más antiguo: 2026-10-03
 - [Alemania](_indice/Alemania.md) — 18 clubes, 11 con documento — Chequeo más antiguo: 2026-09-17
 - [Arabia Saudita](<_indice/Arabia Saudita.md>) — sin clubes trackeados individualmente, ver el detalle
 - [Argentina](_indice/Argentina.md) — 66 clubes, 19 con documento — Chequeo más antiguo: 2026-09-12
+- [Armenia](_indice/Armenia.md) — 5 clubes, 4 con documento — Chequeo más antiguo: 2026-10-03
 - [Austria](_indice/Austria.md) — 12 clubes, 1 con documento — Chequeo más antiguo: 2026-09-17
+- [Azerbaiyan](_indice/Azerbaiyan.md) — 3 clubes, 3 con documento — Chequeo más antiguo: 2026-10-03
 - [Bélgica](_indice/Bélgica.md) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
+- [Bielorrusia](_indice/Bielorrusia.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-10-03
 - [Bolivia](_indice/Bolivia.md) — 3 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
+- [Bosnia](_indice/Bosnia.md) — 5 clubes, 5 con documento — Chequeo más antiguo: 2026-10-03
 - [Brasil](_indice/Brasil.md) — 43 clubes, 43 con documento — Chequeo más antiguo: 2026-09-12
+- [Bulgaria](_indice/Bulgaria.md) — 9 clubes, 9 con documento — Chequeo más antiguo: 2026-10-03
 - [Chile](_indice/Chile.md) — 16 clubes, 5 con documento — Chequeo más antiguo: 2026-09-12
 - [China](_indice/China.md) — 17 clubes, 1 con documento — Chequeo más antiguo: 2026-09-17
 - [Colombia](_indice/Colombia.md) — 20 clubes, 18 con documento — Chequeo más antiguo: 2026-09-13
@@ -110,31 +116,46 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [Ecuador](_indice/Ecuador.md) — 13 clubes, 2 con documento — Chequeo más antiguo: 2026-09-13
 - [Egipto](_indice/Egipto.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Escocia](_indice/Escocia.md) — 1 club, 1 con documento — Chequeo más antiguo: 2026-09-13
+- [Eslovaquia](_indice/Eslovaquia.md) — 10 clubes, 10 con documento — Chequeo más antiguo: 2026-10-03
+- [Eslovenia](_indice/Eslovenia.md) — 9 clubes, 9 con documento — Chequeo más antiguo: 2026-10-03
 - [España](_indice/España.md) — 20 clubes, 19 con documento — Chequeo más antiguo: 2026-09-13
 - [Estados Unidos](<_indice/Estados Unidos.md>) — 14 clubes, 4 con documento — Chequeo más antiguo: 2026-09-13
+- [Estonia](_indice/Estonia.md) — 10 clubes, 10 con documento — Chequeo más antiguo: 2026-10-03
 - [Francia](_indice/Francia.md) — 18 clubes, 18 con documento — Chequeo más antiguo: 2026-09-17
+- [Georgia](_indice/Georgia.md) — 4 clubes, 3 con documento — Chequeo más antiguo: 2026-10-03
 - [Grecia](_indice/Grecia.md) — 14 clubes, 14 con documento — Chequeo más antiguo: 2026-09-17
 - [Guatemala](_indice/Guatemala.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Honduras](_indice/Honduras.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
+- [Hungria](_indice/Hungria.md) — 11 clubes, 11 con documento — Chequeo más antiguo: 2026-10-03
 - [Inglaterra](_indice/Inglaterra.md) — 33 clubes, 33 con documento — Chequeo más antiguo: 2026-09-13
 - [Italia](_indice/Italia.md) — 20 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
 - [Jamaica](_indice/Jamaica.md) — 1 club, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Japón](_indice/Japón.md) — 10 clubes, 10 con documento — Chequeo más antiguo: 2026-09-13
+- [Kazajistan](_indice/Kazajistan.md) — 7 clubes, 6 con documento — Chequeo más antiguo: 2026-10-03
+- [Kosovo](_indice/Kosovo.md) — sin clubes trackeados individualmente, ver el detalle
+- [Letonia](_indice/Letonia.md) — 9 clubes, 8 con documento — Chequeo más antiguo: 2026-10-03
+- [Lituania](_indice/Lituania.md) — 8 clubes, 7 con documento — Chequeo más antiguo: 2026-10-03
+- [Macedonia del Norte](<_indice/Macedonia del Norte.md>) — 1 club, 1 con documento — Chequeo más antiguo: 2026-10-03
 - [Marruecos](_indice/Marruecos.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [México](_indice/México.md) — 18 clubes, 4 con documento — Chequeo más antiguo: 2026-09-13
+- [Moldavia](_indice/Moldavia.md) — sin clubes trackeados individualmente, ver el detalle
+- [Montenegro](_indice/Montenegro.md) — sin clubes trackeados individualmente, ver el detalle
 - [Nigeria](_indice/Nigeria.md) — sin clubes trackeados individualmente, ver el detalle
 - [Noruega](_indice/Noruega.md) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
 - [Países Bajos](<_indice/Países Bajos.md>) — 18 clubes, 18 con documento — Chequeo más antiguo: 2026-09-17
 - [Panamá](_indice/Panamá.md) — 1 club, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Paraguay](_indice/Paraguay.md) — 9 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
 - [Perú](_indice/Perú.md) — 15 clubes, 2 con documento — Chequeo más antiguo: 2026-09-12
+- [Polonia](_indice/Polonia.md) — 19 clubes, 19 con documento — Chequeo más antiguo: 2026-10-03
 - [Portugal](_indice/Portugal.md) — 18 clubes, 17 con documento — Chequeo más antiguo: 2026-09-17
 - [República Checa](<_indice/República Checa.md>) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-17
+- [Rumania](_indice/Rumania.md) — 16 clubes, 12 con documento — Chequeo más antiguo: 2026-10-03
 - [Rusia](_indice/Rusia.md) — 16 clubes, 16 con documento — Chequeo más antiguo: 2026-09-18
+- [Serbia](_indice/Serbia.md) — 10 clubes, 7 con documento — Chequeo más antiguo: 2026-10-03
 - [Sudáfrica](_indice/Sudáfrica.md) — 10 clubes, 0 con documento — Chequeo más antiguo: 2026-09-13
 - [Suiza](_indice/Suiza.md) — 12 clubes, 5 con documento — Chequeo más antiguo: 2026-09-17
 - [Turquía](_indice/Turquía.md) — 18 clubes, 10 con documento — Chequeo más antiguo: 2026-09-18
-- [Ucrania](_indice/Ucrania.md) — 16 clubes, 11 con documento — Chequeo más antiguo: 2026-09-18
+- [Ucrania](_indice/Ucrania.md) — 16 clubes, 13 con documento — Chequeo más antiguo: 2026-09-18
 - [Uruguay](_indice/Uruguay.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
 - [Venezuela](_indice/Venezuela.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-09-12
 

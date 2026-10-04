@@ -32,3 +32,12 @@
   redireccionar) para ver si hay copias archivadas de años previos.
 
 - Último chequeo: 2026-09-18.
+
+## Chequeo 2026-10-03 (sesión Europa del Este)
+
+**Ángulos**: sitio oficial: agotado (`metalist1925.com/club/all/financiality/`, solo 2025 en vivo) · Wayback CDX (`metalist1925.com`): agotado (ejercicios 2022 y 2023 recuperados; los archivos viejos son `club/all/financiality/file/<n>.pdf`) · barrido: 2 (Sonnet).
+
+- **Entidad confirmada** (balance 2022, 2023): ТОВ "ФУТБОЛЬНИЙ КЛУБ "МЕТАЛІСТ 1925" ХАРКІВ" (hoy rebrandeado "ФК Харків").
+- **Nuevo en disco** (`Clubes/Ucrania/Metalist 1925/`): **2022** completo (`metalist1925-balance-2022.pdf`, `-flujo-caja-2022`, `-resultados-2022`, `-auditor-2022`, esta última de Аудит-Класик, ЄДРПОУ 24143394, con carta de abril 2023) y **2023** parcial (`-balance-2023`, `-flujo-caja-2023`, `-auditor-2023`; falta el reporte de resultados 2023, no apareció). Con el 2025 existente son 3 ejercicios.
+- **Gotcha**: de los 10 archivos `file/1..10.pdf` del sitio viejo (capturas de 2023), 4 venían truncados a 1 MiB (borrados) y 2 eran cartas de presentación sin datos (borradas). El año de cada uno se identificó por OCR ("за Рік 2022 р.").
+- **Pendiente**: 2021 y 2024; probable que el club rebrandeado `fckharkiv.com` los tenga: ver su sección financiera.

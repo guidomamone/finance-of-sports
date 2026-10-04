@@ -1,21 +1,9 @@
 # Slaven Belupo (NK Slaven Belupo, Koprivnica)
 
-- **Entidad legal**: no se confirmó a fondo esta sesión (quedó pendiente, no bloqueó el
-  sourcing) — el nombre completo visto en los documentos es "Nogometni klub Slaven Koprivnica" /
-  "NK Slaven Belupo". Vale confirmar si ya se convirtió a sportsko dioničko društvo o sigue como
-  asociación (Belupo, el laboratorio farmacéutico, es sponsor/nombrante, no necesariamente dueño
-  societario — no asumir).
-- **2 ejercicios descargados** a `Clubes/Croacia/Slaven Belupo/`: 2024 y 2025. **5 ejercicios más
-  (2019-2023) están identificados pero NO se pudieron descargar** — ver "Pendiente".
-- **Cómo se encontró**: el sitio actual (`nk-slaven-belupo.hr/o-klubu/dokumenti`) tiene una
-  página "Dokumenti" que lista los 7 ejercicios 2019-2025 con sus links.
-- **Pendiente — ejercicios 2019 a 2023**: los 5 links de esos años apuntan a un subdominio
-  `arhiva.nk-slaven-belupo.hr` (el "archivo" del sitio viejo, de antes de un rediseño) que
-  devuelve **401 Unauthorized real** — confirmado tanto con `curl` como navegando con el browser,
-  no es un bloqueo de bot ni un problema de user-agent. Se intentó recuperar esos 5 PDFs vía la
-  Wayback Machine (mismo patrón que funcionó para Dinamo Zagreb) pero **Archive.org tuvo una
-  interrupción de servicio real y prolongada** durante esta sesión ("Internet Archive:
-  Temporarily Offline" / 504 Gateway Timeout en la API CDX) — no se pudo completar. Reintentar
-  en sesión futura, primero contra Wayback (debería funcionar apenas el servicio esté de vuelta),
-  y si no, evaluar si vale la pena pedirle el acceso al `arhiva.` subdominio directamente al club.
-- Último chequeo: 2026-09-17.
+**Ángulos**: sitio oficial: agotado (`nk-slaven-belupo.hr/o-klubu/dokumenti`, 2024-2025 en vivo; 2019-2023 en el subdominio `arhiva.` con 401) · canal regulador (RGFI-JAV/FINA): no aplica (exige cuenta, regla del proyecto) · Wayback CDX: agotado (dominio completo, 2019-2023 recuperados) · búsqueda web: no hizo falta · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Entidad legal**: Nogometni klub Slaven Koprivnica / NK Slaven Belupo (asociación, "udruga"; Belupo, el laboratorio, es sponsor). Entidad en carátula verificada (`NOGOMETNI KLUB SLAVEN Koprivnica`, "Izvješće neovisnog revizora").
+- **7 ejercicios en disco** (`Clubes/Croacia/Slaven Belupo/`): 2019, 2020, 2021, 2022, 2023, 2024, 2025 (`financijsko-izvjesce-<año>.pdf`, 19-20 págs. los recuperados). Ejercicio verificado en la carátula/portada de 2019, 2020, 2021, 2022 y 2023 (31 de diciembre de cada año).
+- **Cómo se recuperaron 2019-2023** (sesión 2026-10-03): con archive.org de vuelta, el CDX de dominio completo (`matchType=domain`, filtro `application/pdf`) mostró los PDFs originales tanto en `nk-slaven-belupo.hr/wp-content/uploads/` como en `arhiva.nk-slaven-belupo.hr/wp-content/uploads/` (el 401 del subdominio solo afecta la navegación en vivo, las capturas de Wayback están completas). Capturas usadas: 2019 `20201020114907`, 2020 `20240805065937` (la captura `20211028054129` del dominio principal devolvió una página HTML de 11 KB, no el PDF), 2021 `20220419232909`, 2022 `20240805091422`, 2023 `20240805061027`, bajadas con `.../web/<ts>id_/<url>`. Los nombres no se adivinaban (`F.01_Godisnji-financijski-izvjestaji-poslije-revizije-za-2020..pdf`).
+- **Gotcha**: validar siempre con `pdfinfo` — una captura puede devolver HTML en vez del PDF; con otra captura (la del subdominio `arhiva.`) el mismo documento bajó completo.
+- Último chequeo: 2026-10-03.
