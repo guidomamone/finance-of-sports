@@ -393,3 +393,6 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).
 6. Si el documento no declara tipo de cambio: la cotización de cierre del **archivo de series oficiales** (`tools/fx-reference/`, bajado de
    cada banco central). Nunca una cotización dada por Claude. Si la moneda no está en el archivo, se agrega al script que baja las series,
    desde su fuente oficial (hoy hay 14 monedas; CLP toma el primer día con dato posterior al cierre, como lo declaran los clubes).
+7. Perímetro: cuando un documento trae los dos estados (individual y consolidado), se carga el **individual**, salvo que una controlada
+   concentre ingresos del club (por ejemplo, el marketing): eso se mira en el `.md` antes de fijar el ajuste `perimetro` del club. Se fija
+   antes del primer lote. Casos: Boca, Racing, Panathinaikos, Juventus.

@@ -234,6 +234,9 @@ numéricas resultó muy confiable en la práctica. Ver
 completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
 cómo verificar los números del OCR fila por fila antes de cargarlos).
 
+**En el onboarding con el pipeline, la transcripción (etapa 2) la corre `tools/pipeline.mjs --sin-jev`, que además la valida: ver el
+skill `club-or-year-onboarding`.** Lo que sigue describe los motores que usa por dentro y el camino para un PDF suelto.
+
 **ACTUALIZADO OTRA VEZ (Versiones 244-248, 2026-09-26): el DEFAULT para transcribir en volumen ya
 no es que la sesión de Claude lo haga, es mandarlo a una API externa barata, corrida por Guido desde
 SU PROPIA terminal — 0 tokens de Claude, sea 1 PDF o sean 2000.** El test completo (30 documentos,

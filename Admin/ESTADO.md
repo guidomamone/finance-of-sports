@@ -55,8 +55,9 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 138 a 142.
 - Clubes cargados enteros por el pipeline: UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025,
   estados separados; caja y deuda en parte cargadas a mano).
-- El proceso viejo (`tools/pipeline.mjs`: transcripción → categorización, sin carga) sigue en el repo solo como referencia; retirarlo es
-  el to-do 142c. No re-preparar con él documentos que pasaron por el pipeline.
+- `tools/pipeline.mjs` hace la etapa 2 (transcribir con Mistral y validar), corrido con `--sin-jev`. Su categorización (Jev y Claude)
+  es la del proceso viejo y no se usa: la reemplaza la etapa 7 del lote; retirar esa parte es el to-do 142c. No re-preparar con él
+  documentos que pasaron por el lote.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
 

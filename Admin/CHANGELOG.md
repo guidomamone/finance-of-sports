@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 476 — Ajustes al onboarding tras la prueba con Lazio (2026-10-04)
+
+- Skill `club-or-year-onboarding`: la etapa 2 la corre `pipeline.mjs --sin-jev --max-paginas 0` (no `mistral-ocr-transcribe.mjs`); los documentos sin estado de resultados se le proponen a Guido para `Admin/documentos-descartados.txt`; trampa: los ensayos reescriben el registro y la lista de la corrida.
+- `Admin/ESTADO.md`, `CLAUDE.md` ("Cada PDF nuevo") y `Admin/COMO-CORRE-EL-PROYECTO.html`: la etapa 2 es `pipeline.mjs`.
+- `Admin/PIPELINE.md`, decisión 7: con los dos estados en un documento, se carga el individual salvo que una controlada concentre ingresos.
+- To-dos 140(m) (`estado.mjs` estima la etapa 2 por documento y no por páginas) y 140(n) (`pipeline.mjs` numera las etapas como el proceso viejo).
+
 ## Versión 475 — Limpieza de lo que quedó del onboarding manual (2026-10-04)
 
 - `Admin/ESTADO.md`: un solo bloque del pipeline, sin historia; el proceso viejo (`pipeline.mjs`) como referencia; inventario al día (6.825 PDFs, 517 cargados, 4.550 sin `.md`).

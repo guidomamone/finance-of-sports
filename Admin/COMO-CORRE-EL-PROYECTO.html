@@ -519,7 +519,7 @@
     <thead><tr><th>Etapa</th><th>Qué entra → qué sale</th><th>Quién · costo</th></tr></thead>
     <tbody>
       <tr><td class="mono">1 Conseguir</td><td>Una búsqueda → el documento oficial guardado en <code>Clubes/&lt;País&gt;/&lt;Club&gt;/</code>. El año se lee del contenido, no del nombre del archivo.</td><td class="num">sourcing,<br>sesión de Claude</td></tr>
-      <tr><td class="mono">2 Transcribir</td><td>PDF → texto Markdown con marca de página. Un escaneo se marca como tal; si el texto sale roto se trata como escaneo.</td><td class="num">Mistral OCR,<br>lo corre Guido</td></tr>
+      <tr><td class="mono">2 Transcribir</td><td>PDF → texto Markdown con marca de página. Un escaneo se marca como tal; si el texto sale roto se trata como escaneo.</td><td class="num"><code>pipeline.mjs</code> (Mistral; Gemini o Claude donde hay dudas),<br>lo corre Guido</td></tr>
       <tr><td class="mono">3 Localizar</td><td>Un índice gratis de las tablas del texto → la elección de cuáles son el estado de resultados, las notas de ingresos y gastos, la escala, la moneda y el perímetro. Si no hay estado de resultados, el documento queda como fuente.</td><td class="num">IA,<br>~US$ 0,05</td></tr>
       <tr><td class="mono">4 Validar</td><td>Cada número de esos bloques → confirmado contra una lectura independiente: el texto propio del PDF si es digital, la imagen de la página si es un escaneo.</td><td class="num">gratis (digital);<br>centavos (escaneo)</td></tr>
       <tr><td class="mono">5 Extraer</td><td>Solo los bloques elegidos → las filas tal cual, con tipo, lado (ingreso o gasto) y escala. No suma, no convierte, no categoriza.</td><td class="num">IA,<br>~US$ 0,12–0,35</td></tr>

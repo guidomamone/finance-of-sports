@@ -30,8 +30,14 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 ### a) Correr clubes
 
-1. Si el PDF no tiene `.md`, primero se transcribe (`CLAUDE.md`, "Cada PDF nuevo"); lo corre Guido.
-2. Armar la lista (`Admin/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos.
+1. La etapa 2 (transcribir con Mistral y validar) la hace `tools/pipeline.mjs`, no el lote: `lote.mjs` saltea los PDFs sin `.md` y
+   arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0 --sin-jev`; Guido
+   corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
+   final); `--sin-jev` saltea la categorización vieja (Jev y Claude), que el lote hace en la etapa 7. El costo es el del ensayo (cuenta
+   páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
+2. Armar la lista (`Admin/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
+   estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/documentos-descartados.txt`
+   (el lote los saltea) y entra ahí solo con su ok.
 3. Club nuevo: fijar perímetro y cierre (`node tools/ajustes.mjs`) antes del primer lote, para no pagar dos veces la localización.
    `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis).
 4. Ensayo: `node tools/lote.mjs --lista Admin/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
@@ -97,6 +103,8 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - `git status` se ensucia solo mientras Guido corre lotes (logs en `Admin/`, `.md` en `Clubes/`, y los `.json` de `Generados/`):
   revisar antes de commitear; los de `Generados/` van con los logs.
 - `estado.mjs` mientras corre un lote muestra una foto a mitad de camino.
+- Los ensayos no llaman a ninguna API, pero reescriben el registro (`Admin/transcripciones-estado.jsonl`) y la lista temporal de la
+  corrida: que aparezcan en `git status` después de un ensayo no quiere decir que algo cambió de verdad.
 - Los "Syntax Error" en la terminal son de poppler leyendo PDFs dañados: no son errores del pipeline.
 - Para esperar un proceso en segundo plano, usar su PID, no `pgrep -f` (se encuentra a sí mismo y no termina nunca).
 - Corridas largas: la Mac se duerme; usar `caffeinate -i`.
