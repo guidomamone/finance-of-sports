@@ -1,5 +1,7 @@
 # Torino (Torino FC)
 
+**Ángulos**: sitio oficial: agotado (sección `relazioni_e_bilanci` encontrada) · Wayback CDX: usado solo para descubrir la sección · búsqueda web: no hizo falta · regulador/país: no aplica (Registro Imprese pago) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Torino Football Club S.p.A., propiedad de Urbano Cairo (a través de una holding
@@ -30,3 +32,18 @@ Torino FC S.p.A. misma, y si consolida o desglosa al club. Si no, el único cana
 Registro Imprese pago (ver `fuentes/Italia/_notas-generales.md`).
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): CORRECCIÓN — Torino SÍ publica sus bilanci; 8 ejercicios bajados
+
+La nota del 2026-09-17 decía "sin sección de bilancio/trasparenza". Era incorrecta: `torinofc.it/
+relazioni_e_bilanci` existe (la CDX de Wayback la lista desde 2019) y publica un PDF por año en
+`torinofc.it/sites/default/files/bilanci/`, junto con las relazioni del revisor y del collegio
+sindacale. Se bajaron los **8 bilanci de Torino Football Club S.p.A. al 31 de diciembre de 2018,
+2019, 2020, 2021, 2022, 2023, 2024 y 2025** (carátulas confirmadas). En `Clubes/Italia/Torino/`:
+`Torino-bilancio-AAAA.pdf`. También están en esa página las relazioni di revisione y de los sindaci
+de varios años (no se bajaron: no son el bilancio).
+
+- **Formato**: 2018-2020 y 2025 tienen capa de texto; **2021, 2022, 2023 y 2024 son ESCANEOS sin
+  capa de texto** (17-19 MB). La carátula se leyó con OCR. Esto desmiente "cero escaneos en todo el
+  país": Torino los tiene.
+- Torino FC S.p.A. es la entidad; no es la holding (U.T. Communications) ni Cairo Communication.

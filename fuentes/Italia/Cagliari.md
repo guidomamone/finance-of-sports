@@ -1,5 +1,7 @@
 # Cagliari (Cagliari Calcio)
 
+**Ángulos**: sitio oficial: agotado (la sección lista Issuu y Drive, ambos no descargables) · Wayback CDX: agotado · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Cagliari Calcio S.p.A., propiedad de Tommaso Giulini. No cotiza.
@@ -26,3 +28,15 @@ vale la pena anotarlo en `dudas-por-club.md` como algo concreto y accionable (no
 criterio, sino un link roto que el propio club puede arreglar en un minuto).
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): sin PDF, pero hay dos documentos oficiales identificados
+
+La página `cagliaricalcio.com/club/documenti-societari/informazioni-finanziarie` tuvo, según Wayback:
+2019-07-21 "Bilancio d'esercizio al 30 giugno 2018" como embed de Issuu
+(`e.issuu.com/embed.html#35323209/69252326`); 2022-04 y 2022-10 "Bilancio d'esercizio al 30 giugno
+2021" como Drive `1TEFS0Qz5hxEjzKZaOdzp9QZ2y4xL8rZI` — que hoy responde "el propietario no dio
+permiso para descargar" (archivo existente, solo visible). Las capturas de 2023 de la sección no traen
+ningún enlace.
+
+**Candidato a mail**: el club tiene al menos 2018 y 2021 publicados como visor; basta pedirle el PDF o
+que active la descarga. No es un dead-end.

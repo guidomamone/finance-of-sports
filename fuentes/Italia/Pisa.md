@@ -1,5 +1,7 @@
 # Pisa (Pisa Sporting Club)
 
+**Ángulos**: sitio oficial: agotado (`/club/governance/` solo trae códigos y modelo 231) · Wayback CDX: agotado (ninguno de los PDFs listados es financiero) · búsqueda web: agotado (solo agregadores de pago) · regulador/país: no aplica (Registro Imprese pago) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división) — ascendido en 2024/25, primera vez en la
   máxima categoría desde 1990/91.
@@ -25,3 +27,10 @@ que sí lo hacen desde su ascenso). Reintentar en unos meses o directamente ir a
 pago si se necesita con urgencia.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): confirmado sin documentos públicos
+
+Pisa Sporting Club S.r.l. (CF 01932490509) no publica bilancio en su web: la sección de governance solo
+tiene Codice Etico, Modello 231, safeguarding y whistleblowing; la CDX de dominio completo no lista
+ningún PDF financiero. La prensa local cita cifras (`lanazione.it`, pérdida de 17,5 M en 2023/24) y
+varios agregadores venden el bilancio. Único canal: Registro Imprese (pago) → gestión de Guido.

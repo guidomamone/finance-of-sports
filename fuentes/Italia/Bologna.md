@@ -1,5 +1,7 @@
 # Bologna (Bologna FC 1909)
 
+**Ángulos**: sitio oficial: agotado (página desactualizada) · Wayback CDX: agotado para 2018-2023 (`wp-content/uploads`), 2023/24 y 2024/25 sin encontrar · búsqueda web: agotado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Bologna Football Club 1909 S.p.A., propiedad de Joey Saputo (empresario
@@ -35,3 +37,16 @@ dejó de hacerlo? Vale la pena escribirle al club — es un caso raro de un club
 (2017/18, 2022/23) y parece haber cortado la práctica justo cuando sus resultados mejoraron.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): +4 ejercicios (2018/19 a 2021/22), total 6
+
+La CDX de `bolognafc.it` mostró 7 "Fascicolo ... Bilancio consolidato" en `wp-content/uploads/` (2018 a
+2023) que la página actual ya no linkea. Se bajaron de Wayback y se identificaron por OCR (todos son
+**escaneos sin capa de texto**): consolidado al 30/06/**2019**, **2020**, **2021** y **2022**
+(Bologna Football Club 1909 S.p.A.). El de 2018 y el de 2023 eran idénticos a los ya guardados
+(`cmp`). Tres capturas (la de 2018, 2019 y 2021) vinieron TRUNCADAS a 1 MiB en la captura de 2022 y se
+recuperaron con otra captura (2025-01); `retry` por todas las capturas hasta que `pdfinfo` abra.
+
+El ejercicio 2021/22 (`2022/11/Fascicolo-di-bilancio-consolidato-al-300622.pdf`) se identificó por la
+URL y por el patrimonio neto, no por una carátula con la fecha (el OCR de las primeras 6 páginas no la
+devolvió): verificar al transcribir. **Falta 2023/24 y 2024/25** (la nota anterior ya lo documentaba).

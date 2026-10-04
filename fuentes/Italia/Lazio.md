@@ -1,5 +1,8 @@
 # Lazio (S.S. Lazio)
 
+**Ángulos**: sitio oficial: agotado (API `sslazio.it/api/widget/attachment?id_category=37/38` + CMS viejo) · Wayback CDX: agotado · búsqueda web: no hizo falta · regulador/país: no aplica (cotiza; la serie completa salió del propio sitio) · barrido: 2 (Sonnet) — 2026-10-03
+
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: S.S. Lazio S.p.A., propiedad de Claudio Lotito. **Cotiza en Borsa Italiana /
@@ -36,9 +39,27 @@ PDF del bilancio anual 2024/25 confirmado real.
 
 ## Dudas / pendientes
 
-**Falta prácticamente todo el histórico 1998-2024** (26 años de disclosure bursátil real, comparable
-a la serie de Juventus) — el canal existe (Borsa Italiana / 1info.it, el mismo sistema que usa Roma
-para su archivo `investor-relations`) pero no se consiguió navegarlo a fondo en esta sesión por
-tiempo. Es la mejor pista individual pendiente para una sesión de profundización de Italia.
+Resuelto el 2026-10-03: ver las secciones de abajo. Pendiente solo el histórico bursátil ANTERIOR a 2006/07 (1998-2006), que el sitio no publica.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): +8 ejercicios (2006/07 a 2013/14)
+
+Wayback CDX sobre `sslazio.it` (dominio completo) mostró que el CMS viejo (Joomla, hasta ~2015)
+servía los bilanci en `sslazio.it/images/stories/documenti/pdf/investor_relator/`. Las capturas del
+2015-09-24 (HTTP 200, `application/pdf`) bajaron completas (todas con `%%EOF` y `pdfinfo` OK), 8
+archivos: **bilancio S.S. Lazio S.p.A. separado + consolidado al 30 de junio de 2007, 2008, 2009,
+2010, 2011, 2012, 2013 y 2014**. Entidad confirmada leyendo la carátula (S.S. Lazio S.p.A., Registro
+Imprese 80109710584), no la URL: dos de ellos tenían nombres genéricos (`Bilancio separato e
+consolidato S.S. Lazio S.p.A.pdf`) y eran 2009 y 2008. En `Clubes/Italia/Lazio/`:
+`Lazio-bilancio-separato-consolidato-2006-07.pdf` … `2013-14.pdf`. 100% con capa de texto.
+
+(2014/15 a 2023/24 resueltos en la 2ª tanda, abajo.)
+
+## Sesión de sourcing Italia, 2ª tanda (2026-10-03): +10 ejercicios → serie COMPLETA 2006/07-2024/25 (19 ejercicios)
+
+Se completó 2014/15 a 2023/24:
+- **2014/15 a 2020/21** salieron de Wayback, carpeta `sslazio.it/images/documents/investors/` (el CMS de 2016-2021): bilancio al 30/06 de 2015, 2016, 2017, 2019, 2020 y la "Relazione finanziaria" del 30/06/2021 (capturas HTTP 200, íntegras). El de 2017 tiene dos marcas `%%EOF` (actualización incremental, está bien).
+- **2017/18, 2021/22, 2022/23 y 2023/24** salieron del sitio vivo por la API del widget de documentos (`sslazio.it/api/widget/attachment?offset=N&id_category=37|38`, JSON paginado de 30 en 30 con `file_url` a `mediaverse.sslazio.hiway.media/VMFS1/FILES/public/upload/...`). La categoría 37 y 38 contienen el archivo histórico completo (514 documentos desde 2006): el listado que "solo mostraba ~30" de la nota anterior era el límite de la UI, no de la fuente. Para 2023/24 se usó la "copia di cortesia" de 185 págs del errata corrige del 23/10/2024 (hay también una versión del 04/10/2024).
+- Las carátulas dicen S.S. Lazio S.p.A. en todos (individual + consolidado). Archivos: `Lazio-bilancio-separato-consolidato-AAAA-AA.pdf` (el de 2021/22 y siguientes son la Relazione Finanziaria Annuale, que los incluye).
+- **Técnica reutilizable**: si el sitio de un club muestra una lista "cargar más" de documentos, buscar el JSON del widget en la pestaña de red; suele traer el histórico sin tope.

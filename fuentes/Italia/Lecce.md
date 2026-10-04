@@ -1,5 +1,7 @@
 # Lecce (US Lecce)
 
+**Ángulos**: sitio oficial: agotado (menú dinámico sin sección financiera) · Wayback CDX: agotado (PDFs solo de abonos/estadio) · búsqueda web: agotado · regulador/país: no aplica (Registro Imprese pago) · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Unione Sportiva Lecce S.p.A., propiedad de Saverio Sticchi Damiani. No cotiza.
@@ -20,3 +22,9 @@ No se probó todavía el Registro Imprese pago para este club puntual. Sin otro 
 esta sesión.
 
 - Último chequeo: 2026-09-17.
+
+## Sesión de sourcing Italia (2026-10-03): confirmado sin documentos públicos
+
+La CDX de `uslecce.it` no lista ningún PDF financiero (solo abonos, estadio, brochures). La prensa
+(calcioefinanza, calciolecce) detalla los ejercicios 2023/24 y 2024/25 (utilidad de 14 M y 20,1 M), por
+lo que el depósito existe; ningún medio linkea el documento. Único canal: Registro Imprese (pago).
