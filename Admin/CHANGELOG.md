@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 458 — El rearmado solo usa números sin confirmar de bloques elegidos hoy (2026-10-04)
+
+- `texto-propio-a-md.mjs` (`paginasARearmar`, etapa 2 escalón 1b): los números sin confirmar de la `.validacion.json` cuentan solo si su bloque sigue elegido en el `.ubicacion.json` vigente. Caso: Juventus 2021-22, una validación hecha con el consolidado (b54, b55, b67-b71, págs. 92, 93 y 100) disparó el rearmado después de pasar a individual.
+- Medido: en los 87 documentos de `prueba-completa` la elección de páginas da idéntica (hoy ninguno rearma). Simulado con copia de seguridad: con la validación del consolidado, viejo [92, 93, 100] → nuevo ninguna; control con un bloque elegido (b100, pág. 136) → nuevo [136].
+
 ## Versión 457 — La compuerta del registro exige solo los bloques que se cargan (2026-10-04)
 
 - `verificar.mjs` (`avisarRegistro`): los números sin confirmar que frenan son solo los de los bloques que usa la lectura que cerró (los de las filas que se cargan, por su línea en el `.filas.json`); sin `.filas.json`, como antes (todos).

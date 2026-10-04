@@ -37,16 +37,15 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
      "Tangible assets in progress", dos activos) y caja 2005. No afectan lo cargado (`caja-deuda.mjs` nunca pisa un valor cargado).
    - Escalón 3 (media móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años (Bahia 2025
      aprendió una suma casual); el número del año en un escaneo necesita una segunda lectura (Gemini), como la etapa 4.
-2. **Juventus 2022, a tratar:** el rearmado (etapa 2, escalón 1b) no debería dispararse por la marca de una corrida con otro perímetro.
-3. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
+2. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
    "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados);
    `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
-4. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
+3. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-5. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
+4. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
    Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
-6. No urgentes:
+5. No urgentes:
    - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
      costos financieros mal rotulados);
    - marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo usan
@@ -514,7 +513,7 @@ Pendientes, a decidir con casos reales:
 ## Cómo arranca la próxima sesión
 
 (2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (caja y deuda: la escala, con un
-subagente que mida primero) y después 2-4.
+subagente que mida primero) y después 2-3.
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
