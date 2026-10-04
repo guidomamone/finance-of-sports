@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
- "generado": "2026-10-04T21:58:42.058Z",
+ "generado": "2026-10-04T22:17:26.723Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2017,
@@ -55,6 +55,58 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "4,220,658",
+   "linea": 538,
+   "etiqueta": "Actividades Deportivas",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "1,027,450",
+   "linea": 539,
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "70,183",
+   "linea": 540,
+   "etiqueta": "Venta de Productos",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "1,600",
+   "linea": 541,
+   "etiqueta": "Casa Hogar",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
   }
  ],
  "cola": [],
@@ -94,6 +146,10 @@
   "la nota de \"Total Ingresos actividades ordinarias\" no suma el renglón (10639.782 contra 5319.891, sumando sus renglones): quedó el renglón del estado",
   "ajuste manual: fila \"Otros gastos\" (gasto) 41,780 (2026-10-02, Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.)",
   "ajuste manual: fila \"Costos financieros\" (financiero) (3,581), en lugar de \"Total Otros Ingresos\" (2026-10-02, El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.)",
+  "ajuste manual: fila \"Actividades Deportivas\" (ingreso) 4,220,658, en lugar de \"Total Ingresos actividades ordinarias\" (2026-10-04, Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891))",
+  "ajuste manual: fila \"Otros Ingresos\" (ingreso) 1,027,450, en lugar de \"Total Ingresos actividades ordinarias\" (2026-10-04, Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891))",
+  "ajuste manual: fila \"Venta de Productos\" (ingreso) 70,183, en lugar de \"Total Ingresos actividades ordinarias\" (2026-10-04, Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891))",
+  "ajuste manual: fila \"Casa Hogar\" (ingreso) 1,600, en lugar de \"Total Ingresos actividades ordinarias\" (2026-10-04, Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891))",
   "ajuste manual: resultado final 1,347,094 (2026-10-02, El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.)",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultado Año 2017' 1,347,094 de la nota 18 (b18) como resultado del ejercicio 2017?",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Los salarios del plantel están incluidos en 'Sueldos' de la nota 21 Gastos de Administración (b23) sin un cuadro aparte que los separe?",
@@ -131,14 +187,6 @@
  },
  "lineas": [
   {
-   "etiqueta": "Total Ingresos actividades ordinarias",
-   "lado": "ingreso",
-   "M": 5319.891,
-   "pagina": 14,
-   "linea": 543,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Aprovechamientos",
    "lado": "ingreso",
    "M": 0.001,
@@ -153,6 +201,38 @@
    "pagina": 19,
    "linea": 782,
    "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Actividades Deportivas",
+   "lado": "ingreso",
+   "M": 4220.658,
+   "pagina": 14,
+   "linea": 538,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 1027.45,
+   "pagina": 14,
+   "linea": 539,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Venta de Productos",
+   "lado": "ingreso",
+   "M": 70.183,
+   "pagina": 14,
+   "linea": 540,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Casa Hogar",
+   "lado": "ingreso",
+   "M": 1.6,
+   "pagina": 14,
+   "linea": 541,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Costos de Ventas",
