@@ -20,7 +20,7 @@ qué agrega. Una vez aprobadas y aplicadas, borrar este archivo.
   URL desde el browser. Flamengo: portal de transparencia con pestaña FINANÇAS (Strapi, PDFs en
   `storage.googleapis.com`). Chapecoense: `href="...pdf"` en el HTML crudo de `/transparencia/`.
   Atlético Goianiense: el servidor da 406 con un User-Agent corto tipo `Mozilla/5.0`, y los hrefs de
-  `transparencia/financas.html` van con comillas simples.
+  `atleticogoianiense.com.br/transparencia/financas.html` van con comillas simples.
 - **Si un `.PDF` en mayúscula devuelve el challenge de Cloudflare con HTTP 200 en
   `futebolpaulista.com.br`, probar `.pdf` en minúscula** (Guarani 2023).
 - Juventude: el dead-end viejo se destrabó; balances 2017-2025 en
