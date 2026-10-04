@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 447 — El inventario dice en qué etapa y escalón está cada estado (2026-10-04)
+
+- `inventario-transcripciones.mjs`: el resumen "Por estado" agrega la etapa y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en `Generados/` (localizar, extraer, verificar, propuesta de carga); los descartados como fuente se cuentan aparte. "Por motor" sin la lista de páginas (de ~120 renglones a ~20).
+- El registro (`Admin/transcripciones-estado.jsonl`) no cambia: medido, idéntico byte a byte. Hoy: los 663 "listo" están en la etapa 3 (localizar pendiente); los 87 documentos con localizar hecho están todos cargados.
+
 ## Versión 446 — El ensayo estima extraer por el tamaño real (2026-10-04)
 
 - `extraer.mjs`: en el ensayo, salida = 2 x entrada (antes 4.000 tokens fijos). Contra las 155 extracciones reales (US$ 24,03): antes US$ 14,76 y 68 llamadas subestimadas más de 30%; ahora US$ 25,96 y 5.
