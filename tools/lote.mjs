@@ -119,6 +119,17 @@ for (const pdf of docs) {
   // documento queda "listo" -> sigue. Si no, el escalón 1b de abajo (rearmar con el texto propio) como antes. Hasta acá el lote iba directo
   // al rearmado, que con la marca "dígito distinto" reescribía TODAS las páginas por un código postal (Juventus 2017-18: "10121 Torino"
   // contra "10151 Turin"; 1 página con cifras dudosas de 117). Se llama como comando aparte: una sola versión de la lógica.
+  // ETAPA 2, ESCALÓN 1a, "SIN VERIFICAR" (Versión 463, grupo C de los defectos chicos, aprobado por Guido el 2026-10-04): el .md cambió
+  // después de su última validación (desde la V443, el registro dice qué páginas). Antes de localizar (que se paga) va la validación GRATIS
+  // del inventario (números del .md contra el texto del PDF), solo para la carpeta del club: si queda "listo", sigue; si queda "revisar",
+  // el resolver de abajo (que paga solo las páginas cambiadas). Corre también en el ensayo: es gratis. Hasta acá un "sin verificar" iba
+  // directo a localizar sobre una transcripción sin validar. Caso: Juventus 2021-22 quedó así al rearmar 3 páginas.
+  if (e.estado === 'sin-verificar' && !e.cargado) {
+    const carpeta = pdf.split('/').slice(0, 3).join('/');
+    node('tools/inventario-transcripciones.mjs', ['--verificar', '--estado', 'sin-verificar', '--dir', carpeta], { silencioso: true });
+    registro = leerRegistro(); e = registro.find((x) => x.pdf === pdf) || e;
+    console.log(`  ${pdf}: "sin verificar" -> validación gratis del inventario (etapa 2, escalón 1a): ahora "${e.estado}"`);
+  }
   let resolverEnsayo = false;
   if (e.estado === 'revisar' && !e.cargado) {
     const R = node('tools/resolver-inventario.mjs', ['--pdf', pdf, ...(EJECUTAR ? ['--ejecutar'] : [])], { silencioso: true });
