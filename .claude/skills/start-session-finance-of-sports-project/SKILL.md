@@ -21,12 +21,12 @@ permanentes. Esto es el procedimiento.
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 33 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 72 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
 | 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 89 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 67 KB |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB (+ el archivo de tu país en `paises/`, ~2-9 KB cada uno, desde el to-do 87) |
-| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 10 KB + 2-8 KB por país |
+| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 14 KB + 2-8 KB por país |
 
 (Pesos re-medidos 2026-09-26, `wc -c`. Hasta la Versión 239 `Admin/ESTADO.md` incluía el bloque
 CLUB-INDEX y pesaba 56 KB, a 4 KB del umbral de 60 KB que usa `tools/audit.js` — to-do 63, ya
@@ -42,7 +42,7 @@ desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 
 
 - `Admin/finance-of-sports-project.md` (488 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `Admin/CHANGELOG.md` (426 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `Admin/CHANGELOG.md` (586 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 
