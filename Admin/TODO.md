@@ -97,7 +97,8 @@ perdieron sino que se descartaron:
 
 138. VER LOS TEMAS DE AUDITORÍA PENDIENTES. Hallazgos de las auditorías de datos que todavía no se arreglaron ni se
     descartaron; cada archivo trae el caso, la evidencia y el arreglo propuesto. Hoy: `auditorias/2026-10-04-clubes-pipeline.md`
-    (los 6 clubes del pipeline nuevo: 12 hallazgos, y la nota visible del quiebre de serie de Juventus 2006 → 2007).
+    (los 6 clubes del pipeline nuevo: 12 hallazgos, los pendientes de caja y deuda, y la nota visible del quiebre de serie de
+    Juventus 2006 → 2007).
 
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:

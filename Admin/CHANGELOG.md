@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 468 — Pendientes de caja y deuda, del HANDOFF a la auditoría (2026-10-04)
+
+- `auditorias/2026-10-04-clubes-pipeline.md`, sección "Caja y deuda": los pendientes que estaban en el HANDOFF más 3 casos nuevos (4 propuestas sin vecino para la compuerta en Novorizontino y Fortaleza; deuda de Fortaleza 2021 cargada solo con el corto plazo; caja de Fortaleza 2019-2022 sin propuesta).
+- HANDOFF: "Dónde estamos" queda con el defecto D, el puntero al to-do 138 y los no urgentes.
+
 ## Versión 467 — Auditoría de los 6 clubes del pipeline nuevo, a su archivo (2026-10-04)
 
 - `auditorias/2026-10-04-clubes-pipeline.md`: 12 hallazgos (UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa, Juventus) con evidencia y arreglo propuesto, 4 verificados por la sesión; y la propuesta de nota visible del quiebre de serie de Juventus 2006 → 2007.

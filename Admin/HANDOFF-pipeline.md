@@ -28,14 +28,9 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1;
    puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están cargados. Retomar si un club nuevo con ajustes `fila` de
    ingresos frena por eso. (Los defectos B, textos, quedaron en las Versiones 465-466.)
-2. **Temas de auditoría:** fuera de este HANDOFF, en el to-do 138 de `Admin/TODO.md` (archivos en `auditorias/`).
-3. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
-   caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
-   51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
-   neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
-   móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
-   escaneo necesita una segunda lectura (Gemini).
-4. No urgentes:
+2. **Temas de auditoría, incluidos los pendientes de caja y deuda:** fuera de este HANDOFF, en el to-do 138 de `Admin/TODO.md`
+   (archivos en `auditorias/`).
+3. No urgentes:
    - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
      costos financieros mal rotulados);
    - marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo usan
@@ -93,7 +88,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
             ── pasa → dato · no pasa → siguiente escalón · nada → null
 ```
 
-Los pendientes están en "Dónde estamos", punto 1.
+Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).
 
 ---
 
@@ -528,7 +523,8 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04, Versiones 441-467) Seguir por "Dónde estamos": caja y deuda (punto 3). Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
+(2026-10-04, Versiones 441-468) "Dónde estamos" ya no tiene un arreglo en curso: elegir con Guido entre el to-do 138 (auditoría) y
+los no urgentes. Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
 TODOS los clubes si toca caja y deuda).
 
 1. `git status` y `git log --oneline -5` en `main`.

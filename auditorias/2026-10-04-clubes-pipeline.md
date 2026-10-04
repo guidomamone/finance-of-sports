@@ -49,6 +49,27 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 12. **Fortaleza: "Auxilio de arbitraje / transporte / hotelero" cambian de categoría entre años** (`competition_bonus` / `other_income`;
     ~0,3-0,4 M COP por año). Impacto chico. Cosmético: etiquetas que son frases del documento en 2022-2024.
 
+## Caja y deuda (`tools/caja-deuda.mjs`), lo que queda
+
+Medido el 2026-10-04 con `caja-deuda.mjs --club <id>` (gratis, no escribe). Los casos a) a c) son nuevos de esta auditoría (amplían el
+hallazgo 7); d) es lo que estaba en el HANDOFF hasta la Versión 468.
+
+a) **Hay propuesta y la compuerta no tiene contra qué comparar** ("ningún año vecino para comparar"): Novorizontino deuda 2018 (27,51),
+   2020 (40,05) y 2022 (70,28); Fortaleza deuda 2023 (110). Coinciden con el documento. El año anterior está vacío y la columna "año
+   anterior" del documento siguiente no se lee (Novorizontino 2019 tiene la deuda cargada, 32,3, y su documento debería traer 2018).
+   Propuesta: investigar por qué (subagente, gratis) y diseñar un escalón con su compuerta. 4 datos de una vez.
+b) **Fortaleza 2021, deuda mal cargada:** el sitio tiene 102,513 (escalón 2, "Total Prestamos y Sobregiros Bancarios", nota 12, pág. 20
+   del visor), que es solo "Obligaciones al corto plazo" (tarjetas 2,513 + préstamos 100,000); la pág. 21 del visor arranca con una imagen
+   sin transcribir. El cuadro de instrumentos financieros (`estados-financieros-2021.md` L506) dice 295,846. `caja-deuda.mjs` nunca pisa
+   un valor cargado: hace falta diseñar cómo corregir uno (p. ej. ajuste `caja` con "reemplaza" como escalón 0).
+c) **Fortaleza caja 2019-2022 sin propuesta en ningún escalón.** El efectivo está en el cuadro de instrumentos financieros (2021: 20,036;
+   2020: 151,365, L504), que no es una página del balance: probablemente por eso queda afuera.
+d) Antes (sin arreglo limpio medido; no insistir sin un caso nuevo). `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin
+   dato; Juventus caja 17 de 23 y deuda 14 de 21. Juventus caja 2004 (51,104 contra 51,101966: el resumen en €000 contra el estado en
+   euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera neta, L1523); deuda 2018 (suma casual del
+   precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media móvil) aprobado y en pausa. Ideas a medir
+   con un club real: precedente que sume lo cargado en DOS años; el número del año en un escaneo necesita una segunda lectura (Gemini).
+
 ## Para documentar (sin arreglo)
 
 - Novorizontino: "Premiações" de gastos en `other_expenses` (2024-25) y en `wages_squad` (2015), las dos por decisión de Guido.
