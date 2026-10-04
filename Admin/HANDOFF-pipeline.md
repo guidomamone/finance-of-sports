@@ -30,14 +30,14 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
    móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
    escaneo necesita una segunda lectura (Gemini).
-2. **Defectos chicos:** `compararVecino` no cuenta las filas de ajuste manual; el escalón 1a del lote solo mira "revisar" y no
-   "sin-verificar"; el RESULTADO final de `lote.mjs` muestra propuestas de carga viejas ("el club no existe" en años ya cargados);
-   `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
+2. **Defectos chicos** (agrupados: B textos, C, D): `compararVecino` no cuenta las filas de ajuste manual (D); el escalón 1a del lote
+   solo mira "revisar" y no "sin-verificar" (C); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
 3. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-4. Opcional: Fortaleza 2017 tiene los sueldos dentro de "gastos generales" (totales bien): `caffeinate -i node tools/lote.mjs --lista
-   Admin/lote-08b.txt --ejecutar --reintentar` (~US$ 0,30) y recargar con `cargar.mjs --reemplazar` si las notas 21-22 suman.
+4. Fortaleza 2017 (sueldos dentro de "gastos generales"; totales bien): reintentado con las notas como estado, verifica ok con los
+   gastos desglosados. Para recargarlo (`cargar.mjs --reemplazar`) faltan: las 16 categorías en la cola (`node tools/cola.mjs`) y ver por
+   qué la propuesta suma los ingresos en 0,006 (la verificación dice 5.319,897; huele a escala en `cargar.mjs` con notas como estado).
 5. No urgentes:
    - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
      costos financieros mal rotulados);

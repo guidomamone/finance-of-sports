@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 461 — Propuesta de carga al día por documento; RESULTADO del lote sin propuestas viejas (2026-10-04)
+
+- `lote.mjs`: una propuesta de carga es vieja solo si hay un ajuste manual del mismo documento o de su club con fecha igual o posterior (antes: cualquier ajuste del archivo; el de Novorizontino frenaba el reintento de Fortaleza 2017). Y en el RESULTADO final, un año que ya está en el sitio va a "Ya en el sitio" aunque su propuesta sea vieja.
+- Medido: ensayo de `prueba-completa` con y sin `--reintentar` idéntico. RESULTADO simulado sobre los 87 (todos cargados): antes 56 "listo", 21 "frenados" (6 de ellos "el club no existe") y 10 "ya en el sitio"; ahora 87 "ya en el sitio".
+- Fortaleza 2017 reintentado con las notas como estado (Versión 460): verifica ok con los gastos desglosados; no se recargó (la propuesta frena: 16 categorías en la cola e ingresos 0,006 en la propuesta).
+
 ## Versión 460 — Reintento en el mismo modo, sin pisar lo que sirve, una vez (2026-10-04)
 
 - `lote.mjs --reintentar`: (1) si la localización vigente es "las notas hacen de estado", el reintento relocaliza en ese modo (con el índice ampliado y lo que faltó); (2) un reintento que da "sin estado" no pisa una localización con estado (el intento queda en `.ubicacion-reintento.json`); (3) el reintento por "categoría en 0" queda marcado en `.reintento-categorias.json` y no se vuelve a ofrecer.
