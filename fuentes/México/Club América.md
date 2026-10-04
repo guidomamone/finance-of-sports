@@ -1,5 +1,27 @@
 # Club América (Club de Fútbol América — Ollamani, S.A.B.)
 
+**Ángulos**: sitio oficial: agotado (`ollamani.com.mx/reportes-3/` recorrido completo: 2024-2026) · regulador/país: agotado (BMV/CNBV: reportes `AGUILAS`; antes de 2024, el emisor es Grupo Televisa, `TLEVISA`, con el SEC como espejo) · Wayback CDX: no aplica · búsqueda web: agotado · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Actualización 2026-10-03 (sourcing Norteamérica): de 2 ejercicios a 7 con cifras, pero los 5 nuevos son solo la línea de ingresos del
+  fútbol dentro de Televisa, no un estado propio del club.** Nada anterior a 2024 existe como estado del club: Ollamani se constituyó el
+  31/01/2024 y su Reporte Anual 2024 solo trae el periodo inicial (la tabla "Periodo anual anterior" sale en 0). Lo que sí hay, en
+  `Clubes/México/Club América/`:
+  - `televisa-information-statement-spin-off-ollamani.pdf` (151 págs, feb-2024, `televisair.com`): el *Information Statement* de la
+    escisión. Trae el segmento "Soccer" con ingresos y **utilidad de segmento**: 2022 ingresos Ps. 2.501,8 M (44,0% de Ollamani) y
+    utilidad de segmento Ps. 122,8 M; 9M-2023 utilidad de segmento Ps. 215,8 M (+92,7% vs 9M-2022); más estados *pro forma* condensados
+    de Ollamani a 31/12/2022 y 30/9/2023. El segmento incluye el estadio y eventos, igual que en los reportes posteriores.
+  - `televisa-estados-financieros-2023.pdf` (76 págs) y `televisa-estados-financieros-2021.pdf` (80 págs): estados consolidados de Grupo Televisa. En la
+    nota de ingresos por segmento, línea **"Eventos de fútbol y otros espectáculos"** (segmento Otros Negocios), miles de MXN,
+    ingresos totales: **2019 $3.004.577 · 2020 $1.529.032 · 2021 $1.730.589 · 2022 $2.497.287 · 2023 $2.697.562** (2023 incluye $165.686 de
+    ingresos intersegmento; ojo, la tabla de la nota 2023 viene con un encabezado "2022" mal puesto por la extracción de texto, las cifras de 2023 son las de la
+    columna con total de segmentos $74.258.381). 2020 y 2021 dependen de cómo reexpresó Televisa (venta del negocio de Contenidos en ene-2022).
+  - `reporte-anual-ollamani-2024-bmv.pdf` (163 págs) y `reporte-anual-ollamani-2025.pdf` (204 págs): Reportes Anuales CNBV completos (con estados auditados y notas); los
+    reportes financieros BMV de la sesión anterior son un subconjunto.
+  - `folleto-informativo-ollamani-escision.pdf` (57 págs, ene-2026): sobre la alianza con General Atlantic (HoldCo "Controladora Deportiva Águilas", 51/49, valor empresa USD 490 M); sin cifras históricas.
+  **Cuenta**: 2024 y 2025 (segmento Fútbol de Ollamani, cargado el 2025) + 2019-2023 (solo ingresos de "Eventos de fútbol", Televisa) = 7 ejercicios
+  con ingresos, y utilidad de segmento para 2022 y 9M-2023. Decisión pendiente para Guido: si 2019-2023 sirven para cargarse (línea de
+  ingresos que mezcla fútbol y otros espectáculos, sin gastos).
+
 - **Hit real, rompe el supuesto "Liga MX = sin disclosure" (sesión 2026-09-13, sourcing CONCACAF).**
   Club América dejó de ser una subsidiaria interna de Grupo Televisa el 31/01/2024: Televisa escindió
   ("spin-off") su negocio de fútbol + Estadio Azteca (rebautizado Estadio Banorte) + editoriales

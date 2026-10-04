@@ -1,5 +1,22 @@
 # Atlanta Braves
 
+**Ángulos**: sitio oficial: no aplica (el emisor es la holding, no el club) · regulador/país: agotado (SEC EDGAR: los 3 10-K de la holding que existen desde la escisión de jul-2023 + 10-K de Liberty Media FY2019 y FY2022 para la etapa "Braves Group") · Wayback CDX: no aplica · búsqueda web: no hizo falta · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Actualización 2026-10-03 (sourcing Norteamérica): 4 ejercicios con estados propios (FY2022-FY2025) +
+  la serie anterior vía Liberty Media.** Se bajaron (HTML con texto, sin OCR):
+  - `atlanta-braves-holdings-10k-2023.htm` — 10-K FY2023 (accession `0001558370-24-002078`, 2024-02-29).
+    OJO: la holding es "smaller reporting company" y este 10-K trae solo 2 años de estado de resultados
+    (2023 y 2022), así que NO agrega un año nuevo; sí el balance al 31/12/2022 y la cifra original de 2023.
+    Con los 10-K de 2024 y 2025, quedan cubiertos FY2022 a FY2025 con estados propios.
+  - `liberty-media-10k-fy2022-braves-group.htm` y `liberty-media-10k-fy2019-braves-group.htm` — 10-K de
+    **Liberty Media Corp** (CIK 1560385), accessions `0001558370-23-002514` y `0001558370-20-001494`.
+    Hasta la escisión (jul-2023) el club era el "Braves Group" (tracking stock `BATRA`/`BATRK`) dentro de
+    Liberty, y esos 10-K traen resultados y balance atribuidos al Braves Group para 2020-2022 (el de
+    FY2022) y 2017-2019 (el de FY2019). **No se leyó en detalle qué tablas trae cada uno** (se confirmó que
+    describen al Braves Group y su perímetro, no se extrajeron cifras): la sesión de mapeo tiene que ver
+    si es información atribuida no auditada por grupo o segmentos del consolidado. Si se carga, los
+    ejercicios 2017-2021 llegarían por ahí → 9 ejercicios posibles (2017-2025).
+
 - **Deporte**: Béisbol
 - **Liga / competencia**: MLB (Major League Baseball, Estados Unidos y Canadá) — División Este de la Liga Nacional
 - **Entidad legal**: **Atlanta Braves Holdings, Inc.** (Nasdaq `BATRA`/`BATRK`) — CIK de la SEC

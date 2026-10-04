@@ -392,6 +392,22 @@ perdieron sino que se descartaron:
     confirmó cada club-año. Esto solo evita repetir la búsqueda de una liga-temporada ya resuelta.
     Detalle completo en `tools/club-league-reference/README.md`.
 
+126. SOURCING CANADÁ, LO QUE QUEDÓ (sesión Norteamérica, 2026-10-03; ver `fuentes/Canadá/_notas-generales.md`).
+    Los clubes comunitarios de la CFL publican informe anual con auditor (Winnipeg 5 ejercicios, Saskatchewan 4, Edmonton 6 con
+    resumen). Falta: (a) Roughriders FY2022 y anteriores (los posts de AGM de `riderville.com` de 2022/2023, abrirlos con un browser
+    real); (b) Edmonton: bajar 2019 y confirmar si los PDFs de 2020-21 y 2023 traen estados (posible OCR, `tesseract -l eng`);
+    (c) Blue Bombers: informes 2020 y anteriores (`bluebombers.com/news/2016-annual-report/`, dan 403 a `WebFetch`);
+    (d) probar los otros seis clubes de la CFL y los de la CPL (sitio oficial y `static.cfl.ca/wp-content/uploads/sites/<n>/`);
+    (e) SEDAR+ nunca se intentó; (f) Toronto Blue Jays: leer el MD&A/40-F de Rogers, el cierre es provisorio.
+127. SOURCING EE.UU. Y MÉXICO, LO QUE QUEDÓ (misma sesión). (a) Reg CF / Form C-AR en EDGAR es un canal nuevo para clubes chicos
+    (Detroit City FC 5 ejercicios, Oakland Ballers 3): faltan nombres de clubes USL/NISA/ligas menores y de otros deportes que
+    hayan hecho crowdfunding; (b) Packers FY2023-FY2026 siguen sin PDF (pedir a `shareholderservices@packers.com` o probar
+    `materials.proxyvote.com`); (c) deuda municipal en EMMA de arenas/estadios de NBA/NFL/MLB/NHL no se hizo en esta sesión;
+    (d) Liberty Media: bajados los 10-K FY2019 y FY2022 con el "Braves Group" pero sin leer qué tablas traen; (e) Club América:
+    decidir si los ingresos 2019-2023 de "Eventos de fútbol y otros espectáculos" de Televisa (mezclan fútbol y otros eventos) alcanzan
+    para cargarse; (f) Diablos Rojos del México: reconciliar ingresos 2024 ($573,3 M del semestral vs $559,9 M de prensa) y revisar el perímetro
+    (equipo vs estadio/otros negocios) al mapear; (g) TKO/Endeavor/Formula One Group no son clubes: decisión de Guido si el sitio las quiere.
+
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de

@@ -1,5 +1,10 @@
 # New York Rangers
 
+**Ángulos**: igual que `New York Knicks.md` (mismo emisor, mismo 10-K de MSG Sports) · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Actualización 2026-10-03**: comparte los 8 ejercicios fiscales FY2019-FY2026 (10-K de MSG Sports) listados en
+  `New York Knicks.md`; no hay nada específico de los Rangers que bajar aparte.
+
 - **Deporte**: Hockey sobre hielo
 - **Liga / competencia**: NHL (Estados Unidos y Canadá)
 

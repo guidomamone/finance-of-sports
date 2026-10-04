@@ -76,3 +76,36 @@ los PDFs (quedan locales; lo que se versiona es la transcripción). El patrón e
   Liberty Media (Fórmula 1 como negocio, no un equipo), TKO Group Holdings (UFC y WWE, que son
   promotoras, no clubes — probablemente fuera del esquema del sitio).
 - Último chequeo de esta sección: 2026-09-13.
+
+---
+
+## Sesión 2026-10-03 (sourcing Norteamérica): un canal nuevo para clubes chicos, y qué NO sirvió
+
+### Canal nuevo: Form C-AR de Regulation Crowdfunding (clubes que levantaron capital de hinchas)
+
+Un club que vendió participaciones a sus hinchas por crowdfunding (Regulation CF, plataformas tipo Wefunder o
+StartEngine) está obligado a presentar en EDGAR un **Form C** al levantar y un **Form C-AR anual** después, con estados
+financieros (sin auditar y autocertificados, o revisados/auditados según el monto levantado). Es gratis, es PDF
+con texto y alcanza a cualquier deporte y a clubes que NO son de MLS ni de las 4 ligas grandes. Encontrados:
+**Detroit City FC** (5 C-AR, FY2021-FY2025) y **Oakland Ballers** (béisbol, 3 ejercicios); ver sus fichas.
+Cómo se busca: búsqueda de texto completo de EDGAR,
+`https://efts.sec.gov/LATEST/search-index?q="football club"&forms=C-AR` (con el `User-Agent` de la SEC), y después
+`data.sec.gov/submissions/CIK<cik>.json` para la lista de filings y `.../<accession>/index.json` para el nombre del
+archivo. **Límite**: la búsqueda de texto completo tiene mucho ruido (la mayoría de los hits son empresas sin relación
+con deportes) y solo indexa algunos documentos; probar nombres propios de clubes da más que buscar por palabras
+genéricas. Sin resultado para Sacramento Republic (solo Form D de 2013), Louisville City, Hartford Athletic, North Carolina FC ni
+Oakland Roots. Pendiente (no se hizo): recorrer más nombres de clubes USL/NISA/ligas menores que hayan hecho crowdfunding.
+
+### Liberty Media (tracking stock): la etapa "Braves Group" de Atlanta Braves
+Hasta jul-2023 el club estaba dentro de Liberty Media Corp (CIK 1560385) como "Braves Group"; los 10-K de Liberty
+de FY2019 y FY2022 (bajados) cubren 2017-2022. Liberty también es la controlante de Formula One (otro tracking stock, "Formula One Group"):
+es una organización de la competencia, no un equipo, y los equipos de F1 ya están en `fuentes/Inglaterra/`; no se bajó nada de F1.
+**TKO Group (UFC/WWE) y Endeavor**: son promotoras/agencias, no clubes; no se exploraron. Decisión de Guido si el sitio las quiere.
+
+### Green Bay Packers: reintento sin resultado (ver su ficha)
+FY2023-FY2026 siguen sin PDF; la prensa del club repite cifras sin enlazar el documento.
+
+### Lo que sigue pendiente de lo pedido para EE.UU.
+- Deuda pública en EMMA (bonos municipales de estadios/arenas) de franquicias de NBA/NFL/MLB/NHL: **no se hizo en esta sesión**; la sesión anterior ya cubrió
+  Sacramento Kings (Golden 1 Center) y Vegas, Chicago, Boston, Golden State y Dallas dieron todos privados sin bonos públicos.
+- Canadá: ver `fuentes/Canadá/_notas-generales.md`.

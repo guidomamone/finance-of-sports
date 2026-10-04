@@ -1,5 +1,17 @@
 # New York Knicks
 
+**Ángulos**: sitio oficial: no aplica (el emisor es MSG Sports) · regulador/país: agotado (SEC EDGAR, CIK 1636519: 5 de los 11 10-K disponibles bajados) · Wayback CDX: no aplica · búsqueda web: no hizo falta · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Actualización 2026-10-03 (sourcing Norteamérica): 8 ejercicios fiscales (FY2019-FY2026, cierre 30/6) en disco.**
+  A los `msg-sports-10k-fy2025.htm` y `fy2026.htm` ya bajados se sumaron, en `Clubes/Estados Unidos/Madison
+  Square Garden Sports/`, los 10-K de **FY2021** (`msg-sports-10k-fy2021.htm`, accession
+  `0001636519-21-000010`; verificado: trae FY2021/FY2020/FY2019 — ingresos $415,7 M / $603,3 M / $729,4 M),
+  **FY2022** (`0001636519-22-000009`) y **FY2023** (`0001636519-23-000009`). Cada 10-K trae 3 años de
+  estado de resultados, así que quedan cubiertos FY2019 a FY2026 sin huecos. EDGAR tiene además 10-K de
+  FY2016-FY2020 (la lista completa está en `data.sec.gov/submissions/CIK0001636519.json`) por si hiciera
+  falta más historia. OJO para el mapeo: FY2020-FY2021 tienen el perímetro afectado por la escisión de
+  MSG Entertainment (abr-2020) y por el COVID (temporadas sin público).
+
 - **Deporte**: Básquet
 - **Liga / competencia**: NBA (Estados Unidos y Canadá)
 

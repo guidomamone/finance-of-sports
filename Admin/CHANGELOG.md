@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Norteamérica, 2026-10-03
+
+- México: Club América pasa de 2 a 7 ejercicios con cifras (2019-2023 salen del *Information Statement* de la escisión y de los
+  estados de Televisa; solo ingresos de "Eventos de fútbol y otros espectáculos"); Diablos Rojos del México (béisbol, BMV `DIABLOS`)
+  entra como club nuevo con 4 ejercicios auditados (FY2022-FY2025).
+- EE.UU.: MSG Sports (Knicks/Rangers) con 10-K de FY2019 a FY2026; Atlanta Braves con 10-K 2023 y los de Liberty Media FY2019 y FY2022
+  (etapa "Braves Group"); Packers reintentado sin éxito para FY2023-26; Detroit City FC (5 Form C-AR, FY2021-25) y Oakland Ballers
+  (3 ejercicios) entran como clubes nuevos por el canal Reg CF de EDGAR.
+- Canadá (país nuevo, carpeta y índice): Winnipeg Blue Bombers, Saskatchewan Roughriders y Edmonton Elks (informes anuales de clubes comunitarios
+  de la CFL, `static.cfl.ca`), Atlético Ottawa (vía cuentas del Atlético de Madrid) y Toronto Blue Jays (sin desglose en Rogers).
+- Pendientes en `Admin/TODO.md` 126 y 127.
+
 ## Sourcing Centroamérica, 2026-10-03
 
 - Región CENTROAMERICA (Costa Rica, Guatemala, Honduras, Panamá, Jamaica + El Salvador nuevo): 0 PDFs

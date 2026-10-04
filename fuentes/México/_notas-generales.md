@@ -143,6 +143,11 @@ la clave `DIABLOS` mediante un listado sin oferta pública, a MXN 1.000 por tít
 de béisbol del proyecto. Decisión para Guido: si vale la pena abrir béisbol/LMB, este es el candidato
 obvio y el canal ya está probado (BMV/CNBV, mismo flujo que `AGUILAS`).
 
+**Seguimiento 2026-10-03**: ya sourceado, ver `Diablos Rojos del México.md` — 4 ejercicios con estados auditados (FY2022-FY2025) desde el folleto de listado, los reportes semestrales y el dictamen 2025. Qué NO aparece: nada de 2021 ni antes (no tenían obligación de publicar). Segunda lección del patrón bursátil mexicano: el folleto del listado trae 2 años de estados dictaminados *anteriores* a la salida a bolsa; vale revisarlo siempre.
+
+### 8. Club América antes de Ollamani (2026-10-03)
+Ollamani no tiene estados anteriores a 2024, pero el *Information Statement* de la escisión (en `televisair.com`) trae segmento "Soccer" 2022 y 9M-2023 con utilidad, y los estados de Televisa 2021 y 2023 traen la línea de ingresos "Eventos de fútbol y otros espectáculos" 2019-2023. Ver `Club América.md`. Generalización: cuando un club sale de un grupo por escisión, el documento de escisión y los estados del ex-controlante cubren los años previos.
+
 ## Cómo mantener esta nota
 
 Si una sesión futura confirma otro club de Liga MX con disclosure público real (vía CNBV/BMV u otro
