@@ -65,10 +65,14 @@ const leerDerivado = (e, suf) => { try { const p = resolve(ROOT, derivado(e.md, 
 // Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número (cargar.mjs, Versión 340).
 // (Versión 442) `detalle`: los desgloses que no suman de un documento cuya etapa 6 cerró (opcionales, ver --detalle); `reintentar`: lo que
 // destraba la carga, más el detalle si se pidió --detalle.
+// (Versión 460) UNA VEZ POR DOCUMENTO también para "categoría en 0": el intento queda en <doc>.reintento-categorias.json (lo escribe el lote al
+// reintentar); con esa marca, las categorías en 0 de la propuesta de carga ya no piden otro reintento. Caso: Fortaleza 2017, el lote volvía a
+// ofrecer el mismo reintento después de intentarlo (y se pagaba cada vez).
+const categoriasPendientes = (e) => (leerDerivado(e, '.reintento-categorias.json') ? [] : ((leerDerivado(e, '.carga.json') || {}).reintentar || []).filter((x) => x.categoria));
 const verifDe = (e, { detalle = DETALLE } = {}) => {
-  const v = leerDerivado(e, '.verificacion.json') || {}; const c = leerDerivado(e, '.carga.json') || {};
+  const v = leerDerivado(e, '.verificacion.json') || {};
   const desgl = v.reintentar || []; const opcional = v.estado === 'ok' ? desgl : [];
-  const r = [...(v.estado === 'ok' && !detalle ? [] : desgl), ...(c.reintentar || [])];
+  const r = [...(v.estado === 'ok' && !detalle ? [] : desgl), ...categoriasPendientes(e)];
   return { ...v, reintentar: r.length ? r : null, detalle: opcional.length ? opcional : null };
 };
 if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
@@ -139,7 +143,7 @@ for (const pdf of docs) {
   // data/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
   const cargado = e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
-  const reintento = !REINTENTAR ? null : cargado ? ((cargaFresca && (leerDerivado(e, '.carga.json')?.reintentar || []).filter((x) => x.categoria)) || []).length ? leerDerivado(e, '.carga.json').reintentar.filter((x) => x.categoria) : null : verifDe(e)?.reintentar || null;
+  const reintento = !REINTENTAR ? null : cargado ? (cargaFresca && categoriasPendientes(e).length ? categoriasPendientes(e) : null) : verifDe(e)?.reintentar || null;
   if (REINTENTAR && cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
   // ETAPA 3, ESCALÓN 2 (Versión 360, aprobado por Guido): "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
@@ -203,8 +207,21 @@ for (const pdf of docs) {
   const CA = REHACER || reintento ? null : cacheAlDia(e.md);
   const cacheViejo = CA && !CA.alDia && !cargado;
   if (CA && !CA.alDia) console.log(`  ${pdf}: ${CA.detalle}${cargado ? ' (año cargado: solo aviso, no se rehace)' : ': se rehace localizar, validar y extraer'}`);
-  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento });
-  if (L.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+  // (Versión 460, punto del reintento, aprobado por Guido el 2026-10-04) EL REINTENTO EN EL MISMO MODO: si la localización vigente es "las notas
+  // hacen de estado" (etapa 3, escalón 2), el reintento relocaliza en ese modo (con el índice ampliado y la lista de lo que faltó). Caso:
+  // Fortaleza 2017 (solo notas) relocalizó en el modo normal, dio "sin estado" y pisó la localización buena.
+  const enModoNotas = !!reintento && !!ubAntes?.estadoDesdeNotas;
+  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento, notasComoEstado: enModoNotas });
+  if (!L.ensayo && !L.error && reintento && reintento.some((x) => x.categoria)) { try { writeFileSync(resolve(ROOT, derivado(e.md, '.reintento-categorias.json')), JSON.stringify({ fecha: new Date().toISOString(), categorias: reintento.filter((x) => x.categoria).map((x) => x.categoria), modoNotas: enModoNotas }, null, 1)); } catch { /* sin marca: como antes */ } }
+  // (Versión 460) COMPUERTA: un reintento que da "sin estado" cuando la localización anterior sí tenía estado NO la pisa (sin estado nunca se
+  // puede cargar): el intento queda en <doc>.ubicacion-reintento.json y vuelve la anterior.
+  if (!L.ensayo && !L.error && reintento && L.datos?.sin_estado && ubAntes && !ubAntes.sin_estado && (ubAntes.estado || []).length) {
+    writeFileSync(resolve(ROOT, derivado(e.md, '.ubicacion-reintento.json')), JSON.stringify(L.datos, null, 1));
+    writeFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json')), JSON.stringify(ubAntes, null, 1));
+    usd += L.costo || 0; estado[pdf] = 'reintento sin estado: queda la localización anterior'; console.log(`  ${pdf}: el reintento no encontró estado; queda la localización anterior (el intento, en .ubicacion-reintento.json)`);
+    continue;
+  }
+  if (L.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {
