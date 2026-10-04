@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 467 — Auditoría de los 6 clubes del pipeline nuevo, a su archivo (2026-10-04)
+
+- `auditorias/2026-10-04-clubes-pipeline.md`: 12 hallazgos (UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa, Juventus) con evidencia y arreglo propuesto, 4 verificados por la sesión; y la propuesta de nota visible del quiebre de serie de Juventus 2006 → 2007.
+- To-do 138 (genérico): ver los temas de auditoría pendientes. El HANDOFF ya no los lista.
+
 ## Versión 466 — `estado.mjs --logica` con las etapas del proceso nuevo (2026-10-04)
 
 - `estado.mjs --logica` imprime las 7 etapas del HANDOFF (2 Transcribir, 3 Localizar, 4 Validar, 5 Extraer, 6 Verificar, 7 Categorizar, 8 Cargar) en vez de las 5 del proceso viejo.

@@ -24,13 +24,11 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **Defectos chicos.** B (textos, sin cambiar datos; medir que las propuestas de `prueba-completa` den idénticas salvo el texto): `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
-   meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
-   D, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo): `compararVecino` (verificar.mjs) compara con el año vecino las filas
-   extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1; puede ser
-   esto o la reexpresión italiano → IFRS) pero verifican ok y están cargados. Retomar si un club nuevo con ajustes `fila` de ingresos frena por eso.
-2. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
-   Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
+1. **Defecto D, CONOCIDO Y SIN DAÑO HOY** (no perseguir sin un caso nuevo): `compararVecino` (verificar.mjs) compara con el año vecino
+   las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1;
+   puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están cargados. Retomar si un club nuevo con ajustes `fila` de
+   ingresos frena por eso. (Los defectos B, textos, quedaron en las Versiones 465-466.)
+2. **Temas de auditoría:** fuera de este HANDOFF, en el to-do 138 de `Admin/TODO.md` (archivos en `auditorias/`).
 3. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
    caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
    51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
@@ -530,8 +528,7 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04, fin de la sesión de arreglos, Versiones 441-464) Seguir por "Dónde estamos": defectos chicos B (textos), después la
-auditoría de los 6 clubes con un subagente Sonnet. Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
+(2026-10-04, Versiones 441-467) Seguir por "Dónde estamos": caja y deuda (punto 3). Medir cualquier cambio con `Admin/prueba-completa.txt` (y `caja-deuda.mjs --medir` en
 TODOS los clubes si toca caja y deuda).
 
 1. `git status` y `git log --oneline -5` en `main`.
