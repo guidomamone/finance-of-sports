@@ -50,6 +50,14 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
    `compararVecino` no cuenta las filas que entran por ajuste manual (falso "año vecino distinto", Juventus 2005); el escalón 1a del lote
    solo mira "revisar", no "sin-verificar"; "4) Due to banks" no matchea el diccionario por el número adelante; escalón 3 de caja/deuda
    (media móvil, diseño aprobado) en pausa hasta que un caso lo necesite.
+1b. **PRIORIDAD (pedido de Guido, 2026-10-04): una dinámica que no haga pasar lo mismo por las APIs varias veces.** Con Juventus se pagó
+   de más varias veces: el lote 13 localizó 2022-2025 antes de que el perímetro llegara a localizar (cambio H) y hubo que relocalizar; un
+   `--reintentar` sobre una lista mezclada rehízo 2023-2025 sin necesidad; rearmar una página invalidó la validación del .md entero y hubo
+   que pagar el resolver otra vez (2022, ~US$ 1); el ensayo subestima extraer ~5 veces en documentos largos (sorpresas de costo). A diseñar,
+   en este orden: (i) **antes del primer lote de un club**, fijar todo lo que cambia lo que se localiza (perímetro, cierre) y avisar si falta;
+   (ii) el lote reintenta **solo** los documentos que lo piden, aunque la lista tenga más; (iii) cambiar una página del .md no invalida las
+   páginas validadas que no cambiaron (validación por página, no por archivo); (iv) el ensayo estima extraer por el tamaño real de los
+   bloques elegidos; (v) en el resumen final, lo gastado en cada documento y por qué (para ver repeticiones).
 2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
    escalón 2 de la etapa 2. Guido quiere probar varios clubes a la vez con el mismo esquema de tabla y etapas (mejor si son del mismo país
    o formato).
