@@ -53,6 +53,7 @@
   # tiene que voltear el deploy entero. Si esto falla, Netlify deja publicada la
   # versión anterior del sitio (no hay caída), pero el cambio no sale — mirar el
   # log del deploy, que imprime la cuenta de abajo.
+  # Generados/ (Versión 444): el caché de las etapas del pipeline (.json de localizar, extraer, verificar...), trackeado como respaldo; no es del sitio.
   # tools/ (Versión 318, pedido de Guido: "no publiquemos tools"): el código de las herramientas internas y sus datos de referencia
   # (series de tipo de cambio, rosters) no son del sitio; ninguna página carga nada de tools/ (solo lo nombran en comentarios).
   command = """
@@ -62,6 +63,7 @@
     find fuentes -name '*.md' -delete || true
     rm -rf auditorias Prototyping || true
     rm -rf tools || true
+    rm -rf Generados || true
     echo "quedan $(find . -name '*.md' -not -path './Clubes/*' -not -path './node_modules/*' | wc -l) .md publicables fuera de Clubes/"
     echo "documentos internos que sobreviven (tiene que dar 0): $(ls Admin 2>/dev/null | wc -l)"
     echo "paginas de fuentes que SI se publican: $(ls fuentes/*.html 2>/dev/null | wc -l)"
