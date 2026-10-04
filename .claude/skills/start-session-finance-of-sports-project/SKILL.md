@@ -16,15 +16,18 @@ permanentes. Esto es el procedimiento.
 
 ## 1. Leer, en este orden, y parar cuando alcance
 
+**Si la tarea es onboardear clubes o tocar las tools del pipeline, el arranque es el del skill `club-or-year-onboarding`, no esta tabla.**
+
 | # | Qué | Cuándo | Peso |
 |---|---|---|---|
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
 | 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 72 KB |
-| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o agregás un club | 17 KB |
-| 4 | `.claude/skills/club-data-mapping` | si tocás datos financieros de un club | 89 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si cargás un club o un ejercicio nuevo | 67 KB |
+| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` | 38 KB |
+| 3b | `Admin/PANTALLA-FINANZAS.md`: reglas de pantalla de Finanzas | si tocás cómo se ve algo en Finanzas | 27 KB |
+| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline | 89 KB |
+| 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) | 9 KB |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB (+ el archivo de tu país en `paises/`, ~2-9 KB cada uno, desde el to-do 87) |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 14 KB + 2-8 KB por país |
 

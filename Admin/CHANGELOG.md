@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 474 — El arranque y CLAUDE.md, alineados con el skill de onboarding nuevo (2026-10-04)
+
+- `start-session-finance-of-sports-project`: si la tarea es onboarding o el pipeline, el arranque es el de `club-or-year-onboarding`; tabla con `Admin/PANTALLA-FINANZAS.md`, pesos al día (ARQUITECTURA 38 KB, onboarding 9 KB) y `club-data-mapping` solo para cargas a mano.
+- `CLAUDE.md`: `club-or-year-onboarding` es el skill del onboarding con el pipeline; `club-data-mapping` deja de ser obligatorio para el onboarding (consulta con grep).
+
 ## Versión 473 — Skill de onboarding nuevo, para el pipeline; HANDOFF archivado (2026-10-04)
 
 - `.claude/skills/club-or-year-onboarding/SKILL.md` reescrito (texto aprobado por Guido): objetivo, arranque, los dos tipos de sesión (correr clubes / mejorar un script), reglas de Guido (incluidas las que estaban solo en la memoria de Claude), lotes de prueba, trampas, lo que el pipeline no cubre, cierre y mantenimiento. Sin versiones ni fechas.

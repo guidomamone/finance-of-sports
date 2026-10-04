@@ -88,13 +88,14 @@ OBLIGATORIO, no opcional:
 
 - `start-session-finance-of-sports-project`: el checklist de arranque y de cierre
   de CUALQUIER sesión acá (qué leer y en qué orden, cómo verificar, qué
-  documentar, la regla de git). **Empezá por este, sea cual sea la tarea.**
-- `club-data-mapping`: **si la tarea toca datos financieros de un club** (cargar
-  un balance/presupuesto nuevo, recategorizar un rubro, tocar el tipo de cambio de
-  un ejercicio, agregar un club nuevo) — cómo mapear el documento del club al
-  esquema del sitio. Antes de tocar nada.
-- `club-or-year-onboarding`: en esa misma tarea — cómo encarar la sesión y qué
-  arquitectura ya existe para reusar, en vez de reinventarla por club.
+  documentar, la regla de git). **Empezá por este, salvo que la tarea sea onboarding de clubes: ahí el arranque es el del
+  skill siguiente.**
+- `club-or-year-onboarding`: **si la tarea es onboardear clubes (cargar un club o un año) o tocar las tools del
+  pipeline.** Cómo se trabaja con el pipeline, que corre Guido en su terminal; el proceso etapa por etapa está en
+  `Admin/PIPELINE.md`.
+- `club-data-mapping`: los criterios para categorizar un rubro o elegir el tipo de cambio. Leerlo si se carga o
+  corrige algo A MANO, fuera del pipeline (un presupuesto, una corrección puntual). En el onboarding con el pipeline
+  no se lee entero: se consulta con grep si hace falta.
 - `club-sourcing`: **si la tarea es BUSCAR/encontrar PDFs de un club o país que
   todavía no tiene nada cargado**, antes de que exista ningún documento para
   mapear (qué regulador o canal público chequear según el país, gotchas de
