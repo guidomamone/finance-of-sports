@@ -790,7 +790,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const club = clubId || pdf.split('/')[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const rubros = out.lineas.filter((l) => l.origen !== 'redondeo').map((l) => ({ label: l.etiqueta, lado: l.lado === 'ingreso' ? 'revenue' : 'expense', page: l.pagina, section: l.origen, values: [l.M] }));
     writeFileSync(resolve(ROOT, derivado(md, '.rubros.json')), JSON.stringify({ md, pdf, club, year, generatedAt: new Date().toISOString(), origen: 'verificar.mjs (proceso nuevo, Versión 324)', rubros }, null, 1));
-    if (out.estado === 'ok') avisarRegistro(md, rubros.length, registro);
+    if (out.estado === 'ok') avisarRegistro(md, rubros.length, registro, out);
   }
   return out;
 }
@@ -806,7 +806,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
 // Solo si se cumplen todas:
 //   - el .md no está cargado ni ya es listo-para-jev para esta misma huella (no se pisa la validación entera de un documento del proceso viejo);
 //   - validacion.json existe, es posterior al .md y no tiene números sin confirmar.
-function avisarRegistro(md, nRubros, registro) {
+function avisarRegistro(md, nRubros, registro, out = null) {
   const e = (registro || []).find((x) => x.md === md);
   const mdAbs = resolve(ROOT, md);
   if (!e || e.cargado || !existsSync(mdAbs)) return false;
@@ -819,7 +819,21 @@ function avisarRegistro(md, nRubros, registro) {
   if (!existsSync(vPath)) return false;
   let v; try { v = JSON.parse(readFileSync(vPath, 'utf8')); } catch { return false; }
   const confirmadosAMano = ajustesDe(md.replace(/\.md$/i, '.pdf')).filter((a) => a.campo === 'confirmado'); // (Versión 417) ajuste manual
-  const sinConfirmar = (v.noConfirmados || []).filter((n) => !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
+  // SOLO LOS BLOQUES QUE SE CARGAN (Versión 457, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): se exigen confirmados los números de
+  // los bloques que usa la lectura que cerró (los de las filas que se cargan: ingresos, gastos, financiero e impuesto, por su línea en el
+  // .filas.json); un número de un bloque que no se carga no frena. Caso: Juventus 2021-22, 30 números sin confirmar, todos de notas que la
+  // lectura no usó (ej. L6462, b133, "Ticket sales | 32,293 | 7,752 | 24,541" en miles): se destrabó con 29 ajustes `confirmado` que con
+  // esta regla no hacían falta. Si no se puede saber qué bloques usa (sin .filas.json), como antes: todos.
+  const usados = (() => {
+    if (!out) return null;
+    try {
+      const X = JSON.parse(readFileSync(resolve(ROOT, derivado(md, '.filas.json', { crear: false })), 'utf8'));
+      const lineas = new Set([...(out.lineas || []), ...(out.financiero || []), ...(out.impuesto || [])].map((l) => Number(l.linea)));
+      const bs = new Set((X.filas || []).filter((f) => lineas.has(Number(f.linea))).map((f) => f.bloque));
+      return bs.size ? bs : null;
+    } catch { return null; }
+  })();
+  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
   if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
   const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
