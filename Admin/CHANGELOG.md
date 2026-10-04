@@ -40,7 +40,7 @@ que dice `ESTADO.md` era verdad ese día.
 - Chile: Palestino 1 → 8 ejercicios (wp-json/media del sitio oficial). Uruguay: Peñarol 2018 vía Wayback. Ecuador: Emelec 2023 y Barcelona SC 2018. Perú: Universitario parcial (Memoria 2018 + comunicados BDO). Paraguay, Bolivia, Venezuela y Nacional (Uruguay): dead-end documentado.
 - Notas nuevas: `fuentes/{Paraguay,Bolivia,Venezuela,Perú}/_notas-generales.md`, `fuentes/Brasil/_otros-deportes.md`, 17 fichas de Colombia. `tools/generate-fuentes-index.js`: 6 OVERRIDES nuevos. Texto propuesto para las skills en `Admin/propuestas-skills-sudamerica.md` (no aplicado).
 
-## Sourcing Inglaterra, 2026-10-03 (sin número de versión: asignarlo al mergear a main)
+## Sourcing Inglaterra, 2026-10-03
 
 - Todos los clubes ingleses con carpeta tienen ≥5 ejercicios en disco (PDF/HTM en `Clubes/Inglaterra/`, sin
   trackear): 19 de Premier, rugby, F1 y cricket que ya existían, + Manchester United con 6 20-F de la SEC
@@ -50,7 +50,7 @@ que dice `ESTADO.md` era verdad ese día.
   `tools/fca-mutuals-fetch.mjs`. Aprendizajes en `fuentes/Inglaterra/_notas-generales.md` sección 6.
 - Una nota `fuentes/Inglaterra/<Club>.md` por club con bloque `ing-sourcing` y línea `**Ángulos**`.
 
-## Sourcing Italia, 2026-10-03 (fútbol; sin número de versión, para no chocar con otras sesiones)
+## Sourcing Italia, 2026-10-03
 
 - Fútbol: **+45 ejercicios en disco** (PDFs en `Clubes/Italia/`, no trackeados). Lazio +18 (serie completa 2006/07-2024/25: CMS viejo vía Wayback y la API del widget de documentos del sitio), Torino +8 (dic 2018-2025: la sección `torinofc.it/relazioni_e_bilanci` SÍ existía, la nota del 2026-09-17 era incorrecta), Hellas Verona +4, Bologna +4, Cremonese +2, Fiorentina +3 (reconstruidos desde las imágenes del lector público de Issuu, sin capa de texto), Monza +3 (2022-2024), Sampdoria +3 (2018, 2019, 2021). Ya tienen 5 o más: Lazio, Torino, Verona, Bologna, Fiorentina.
 - Serie B: de 18 clubes barridos solo Monza y Sampdoria publican; los otros 16 no tienen ningún documento público (solo Registro Imprese, pago). Se recomienda no repetir el barrido en Serie C. Pisa y Lecce (Serie A) confirmados sin documento. Cagliari: 2018 en Issuu y 2021 en Drive de solo lectura (mail). Udinese 2022/23-2023/24 solo truncados en Wayback. Genoa, Como y Cremonese: el sitio no publica años anteriores a 2022/2023/2023.
