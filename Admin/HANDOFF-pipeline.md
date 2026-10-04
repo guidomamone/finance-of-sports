@@ -51,7 +51,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
    `--reintentar` sobre una lista mezclada rehízo 2023-2025 sin necesidad; rearmar una página invalidó la validación del .md entero y hubo
    que pagar el resolver otra vez (2022, ~US$ 1); el ensayo subestima extraer ~5 veces en documentos largos (sorpresas de costo). A diseñar,
    en este orden: (i) HECHO (V441): compuerta antes de localizar (`antes-de-localizar.mjs`), frena sin pagar si falta perímetro o cierre;
-   (ii) el lote reintenta **solo** los documentos que lo piden, aunque la lista tenga más; (iii) cambiar una página del .md no invalida las
+   (ii) HECHO (V442): `--reintentar` solo lo que destraba la carga; el desglose que no suma con la etapa 6 cerrada, con `--detalle`; (iii) cambiar una página del .md no invalida las
    páginas validadas que no cambiaron (validación por página, no por archivo); (iv) el ensayo estima extraer por el tamaño real de los
    bloques elegidos; (v) en el resumen final, lo gastado en cada documento y por qué (para ver repeticiones).
 2. Candidatos después: Ferroviária (Brasil, 12 años, 9 escaneos). Noruegos (Molde, Fredrikstad, Aalesund, Brann): escaneos, esperan el
@@ -396,7 +396,9 @@ errores"). Un documento se marca para reintentar por dos motivos:
 
 Qué pasa después:
 
-- Al final del lote aparece la lista y el comando: `caffeinate -i node tools/lote.mjs --lista <lista> --ejecutar --reintentar`.
+- Al final del lote aparecen dos listas con su comando (Versión 442): lo que destraba la carga (`--reintentar`: categoría en 0, o desglose
+  que no suma con la etapa 6 sin cerrar) y el detalle opcional (`--reintentar --detalle`: desglose que no suma con la etapa 6 cerrada; el
+  año se carga igual con el renglón sin abrir). Un año ya cargado (registro o sitio) solo se reintenta por categoría en 0.
 - El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y con la lista de lo que faltó, y
   extrae con esa misma lista (y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado).
 - Una sola vez por documento. Si sigue faltando, se carga con aviso.

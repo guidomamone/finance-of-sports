@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 442 — --reintentar solo sobre lo que destraba la carga; --detalle para lo opcional (2026-10-04)
+
+- `lote.mjs`: un desglose que no suma en un documento cuya etapa 6 cerró (verificación ok) ya no entra al reintento (etapa 3, escalón 1) con `--reintentar`; entra solo con `--reintentar --detalle`. Entran siempre: categoría en 0 y desglose que no suma con la etapa 6 sin cerrar.
+- "Año ya cargado" mira también el sitio (clubId y año del `.carga.json` contra `data/*.js`), no solo el registro.
+- El resumen final separa "REINTENTOS QUE DESTRABAN LA CARGA" y "DETALLE OPCIONAL", cada uno con su comando (costo estimado ~US$ 0,50 por documento).
+- Medido: ensayo sin `--reintentar` idéntico en los lotes 07 a 13; con `--reintentar`, la única diferencia es Juventus 2021-22 (en el sitio, `cargado: false` en el registro), que deja de reintentarse (lotes 13, 13f-13i).
+
 ## Versión 441 — Compuerta antes de localizar: perímetro y cierre fijados antes de pagar (2026-10-04)
 
 - `tools/antes-de-localizar.mjs` (nuevo, gratis): para un documento sin `.ubicacion.json`, frena si no hay cierre (ajuste o periodo.mjs; sugiere el de los vecinos) o si el .md trae consolidado e individual (o dos entidades) y no hay ajuste `perimetro` ni año cargado consolidado de dónde heredarlo. Usa el detector de `alta-club.mjs` y la herencia de `cargar.mjs` (exportados `cargarSitio`, `perimetroHeredado`, `perimetroCercano`).
