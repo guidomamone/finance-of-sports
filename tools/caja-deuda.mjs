@@ -127,14 +127,33 @@ export function filasDelMd(md) {
   // titula "Estados de Situación Financiera Consolidados" y su total es "TOTAL DE ACTIVOS", que TITULO_BALANCE / TOTAL_ACTIVO no reconocían
   // (la página 7 del visor, el balance, quedaba afuera); (2) un total con muchas palabras de más no es el del balance: "Total Activos Líquidos en
   // Moneda Extranjera" (UC 2024, Nota 25, págs. 46 y 94 del visor) marcaba como balance una nota con la caja partida por moneda.
+  // (Versión 452, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04) la exclusión del flujo de efectivo / cambios en el patrimonio mira
+  // solo el texto FUERA de las tablas (títulos y renglones sueltos): una FILA con esas palabras no es el título de otro estado. Caso: Juventus
+  // 2011-12 pág. 84, "Statement of financial position" con la fila "Cash flow hedge reserve" en el patrimonio: la página quedaba afuera del
+  // balance y la deuda de casi todos los años quedaba sin dato.
+  const sinTablas = (t) => t.split('\n').filter((l) => !l.trimStart().startsWith('|')).join('\n');
+  // El título del balance cuenta como "fuera de la tabla" solo si es un ENCABEZADO (renglón con # o en negrita sola), no una mención en prosa
+  // (UC 2015 págs. 50-51, nota de impuestos diferidos: "...se presentan en el estado de situación financiera...").
+  // Y CORTO (hasta 70 caracteres sin # ni *): "b. Los movimientos de impuestos diferidos del estado de situación financiera son los siguientes:"
+  // (UC 2015 pág. 50) es un encabezado de nota, no el título del balance.
+  const encabezados = (t) => t.split('\n').filter((l) => (/^\s*#/.test(l) || /^\s*\*\*[^|]+\*\*\s*$/.test(l)) && l.replace(/[#*]/g, '').trim().length <= 70).join('\n');
   const balance = new Set();
   for (const [p, txt] of textoPag) {
     const n = normalizar(txt.slice(0, 1500));
     const conTotal = filas.some((f) => f.pagina === p && esTotalBalance(f.norm));
-    if ((TITULO_BALANCE_RE.test(n) || TITULO_BALANCE_PLURAL_RE.test(n) || conTotal) && !FLUJO_O_PATRIMONIO_RE.test(n)) balance.add(p);
+    const fuera = normalizar(sinTablas(txt.slice(0, 1500))); const enc = normalizar(encabezados(txt.slice(0, 1500)));
+    const tituloFuera = TITULO_BALANCE_RE.test(enc) || TITULO_BALANCE_PLURAL_RE.test(enc);
+    // La fila solo deja de excluir si el título del balance está FUERA de la tabla: un índice ("INDICE" con "Estado de Flujo de Efectivo"
+    // como fila, UC 2015 págs. 2-3) o una nota con "Saldo inicial" (UC 2015 págs. 37-51) siguen afuera, como antes.
+    if ((TITULO_BALANCE_RE.test(n) || TITULO_BALANCE_PLURAL_RE.test(n) || conTotal) && !FLUJO_O_PATRIMONIO_RE.test(tituloFuera ? fuera : n)) balance.add(p);
   }
   // La página siguiente a una del balance también (el pasivo suele seguir), si no es el flujo.
-  for (const p of [...balance]) { const n = normalizar((textoPag.get(p + 1) || '').slice(0, 1500)); if (textoPag.has(p + 1) && !FLUJO_O_PATRIMONIO_RE.test(n)) balance.add(p + 1); }
+  // (Versión 452) la siguiente: con el mismo criterio (las filas no excluyen si la página trae su propio título de balance fuera de la tabla).
+  for (const p of [...balance]) {
+    const t = (textoPag.get(p + 1) || '').slice(0, 1500); const fuera = normalizar(sinTablas(t)); const enc = normalizar(encabezados(t));
+    const tituloFuera = TITULO_BALANCE_RE.test(enc) || TITULO_BALANCE_PLURAL_RE.test(enc);
+    if (textoPag.has(p + 1) && !FLUJO_O_PATRIMONIO_RE.test(tituloFuera ? fuera : normalizar(t))) balance.add(p + 1);
+  }
   // (Probado y DESCARTADO en la Versión 352: leer solo el "balance principal", el primer tramo de páginas seguidas: manta corta.)
   for (const f of filas) f.balance = balance.has(f.pagina);
   return filas;
