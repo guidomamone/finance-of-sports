@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 472 — Estudio de qué documentos partir (2026-10-04)
+
+- `auditorias/2026-10-04-partir-archivos.md` (nuevo, hecho por un subagente, solo lectura): qué se lee en cada sesión (≈225 KB) y 4 particiones recomendadas.
+- To-do 143: partir los documentos que se leen en cada sesión (después del 109).
+
 ## Versión 471 — El skill de onboarding viejo, repartido y archivado (2026-10-04)
 
 - `Admin/PANTALLA-FINANZAS.md` (nuevo): las reglas de pantalla de Finanzas (ex §4-8, §10, §12-14 del skill), sin cambios de texto.

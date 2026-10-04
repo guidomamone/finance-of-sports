@@ -147,6 +147,13 @@ perdieron sino que se descartaron:
       `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
       lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
 
+143. PARTIR LOS DOCUMENTOS QUE SE LEEN EN CADA SESIÓN (estudio del 2026-10-04, pedido de Guido: "cosas que no hacen
+    falta que sean en cada sesión, no tienen que leerse"). Hoy se leen ≈225 KB (≈65.000 tokens) antes de empezar; con 4
+    particiones bajan a ≈85-90 KB: CONVENCIONES en general/datos/UI (≈44 KB), TODO sin el sourcing por país ni el detalle
+    de 98/105 (≈40 KB), ESTADO sin la descripción de la pantalla (≈35 KB), CLAUDE.md a ≈10 KB (≈20 KB, y se paga también
+    en cada subagente). Las 2 últimas esperan a que cierre la mudanza de PIPELINE/ARQUITECTURA; sacar los gotchas del
+    navegador de CLAUDE.md y tocar los skills necesita el ok de Guido. Detalle y riesgos: `auditorias/2026-10-04-partir-archivos.md`.
+
 98. BAJAR EL COSTO EN TOKENS DE CLAUDE DEL ONBOARDING DE UN EJERCICIO NUEVO (candidato del to-do 85,
     pedido de Guido 2026-09-28: *"sería factible un enfoque en el que se utilicen más scripts que
     corren en mi computadora y vos solo pienses cuando haga falta?"*). Mismo principio que ya se usó
