@@ -50,7 +50,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en U
    de más varias veces: el lote 13 localizó 2022-2025 antes de que el perímetro llegara a localizar (cambio H) y hubo que relocalizar; un
    `--reintentar` sobre una lista mezclada rehízo 2023-2025 sin necesidad; rearmar una página invalidó la validación del .md entero y hubo
    que pagar el resolver otra vez (2022, ~US$ 1); el ensayo subestima extraer ~5 veces en documentos largos (sorpresas de costo). A diseñar,
-   en este orden: (i) **antes del primer lote de un club**, fijar todo lo que cambia lo que se localiza (perímetro, cierre) y avisar si falta;
+   en este orden: (i) HECHO (V441): compuerta antes de localizar (`antes-de-localizar.mjs`), frena sin pagar si falta perímetro o cierre;
    (ii) el lote reintenta **solo** los documentos que lo piden, aunque la lista tenga más; (iii) cambiar una página del .md no invalida las
    páginas validadas que no cambiaron (validación por página, no por archivo); (iv) el ensayo estima extraer por el tamaño real de los
    bloques elegidos; (v) en el resumen final, lo gastado en cada documento y por qué (para ver repeticiones).
@@ -199,7 +199,15 @@ Mitigaciones:
 - b) `localizar.mjs` (IA, ~US$ 0,05) ve las fichas y elige: los bloques del estado de resultados, las notas de ingresos y de gastos, la
   escala, la moneda, las columnas y el perímetro.
 - c) Si el documento no tiene estado de resultados (memoria sola, dictamen), queda como fuente.
-- d) **Escalera** (es el reintento del camino de error):
+- d) **Compuerta antes de pagar** (Versión 441, `antes-de-localizar.mjs`; solo documentos sin `.ubicacion.json`):
+
+```
+ CIERRE     ajuste `cierre` ─► periodo.mjs ── hay → sigue · no → no se localiza (sugiere el de los vecinos)
+ PERÍMETRO  ajuste (doc o club) ─► el .md trae uno solo ─► trae consolidado y el año cargado más cercano es consolidado
+            ── pasa → localizar · no → no se localiza; el lote imprime el ajuste que falta (dos entidades: descartar primero la otra)
+```
+
+- e) **Escalera** (es el reintento del camino de error):
 
 ```
  ESCALÓN 0  índice normal ────────────────────────────── ¿verificar cierra y no faltan categorías? sí → sigue

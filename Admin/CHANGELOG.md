@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 441 — Compuerta antes de localizar: perímetro y cierre fijados antes de pagar (2026-10-04)
+
+- `tools/antes-de-localizar.mjs` (nuevo, gratis): para un documento sin `.ubicacion.json`, frena si no hay cierre (ajuste o periodo.mjs; sugiere el de los vecinos) o si el .md trae consolidado e individual (o dos entidades) y no hay ajuste `perimetro` ni año cargado consolidado de dónde heredarlo. Usa el detector de `alta-club.mjs` y la herencia de `cargar.mjs` (exportados `cargarSitio`, `perimetroHeredado`, `perimetroCercano`).
+- `lote.mjs`: llama a la compuerta antes de localizar; el documento que frena no se paga y el lote imprime el comando de `ajustes.mjs` que falta (uno por club). Suelto: `node tools/antes-de-localizar.mjs --lista <lista>`.
+- Medido: ensayo de los lotes 07 a 13 idéntico (26 listas). Juventus sin el ajuste del club: frenaría 14 de 17 del lote 13 (incluidos 2020-21 a 2024-25, que se pagaron dos veces). Candidatos (Ferroviária, Operário, noruegos): 131 de 144 frenan (perímetro o dos entidades en Molde, Aalesund, Fredrikstad; 18 sin cierre).
+
 ## Versión 440 — Juventus entero: 2003-2025 con caja y deuda parcial (2026-10-04)
 
 - Estado de resultados de Juventus (`juventus-it`, estados separados) 2003-2025 cargado: 2022-2024 relocalizados con el perímetro individual y 2025 recargado (antes consolidado). Ajustes manuales: fila "per share" fuera en 2023-2024, números de notas no usadas `confirmado` en 2022.
