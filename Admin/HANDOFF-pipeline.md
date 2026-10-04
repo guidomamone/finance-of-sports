@@ -29,8 +29,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    5.319,891, el renglón de ingresos) y después `node tools/cargar.mjs "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf"
    --desde-verificacion --reemplazar` (ensayo) y con `--escribir`. Pendiente también: `node tools/diagnostico-desglose.mjs` (gratis) para
    un desglose que sigue sin sumar; Televisión y Estadio en 0.
-2. **Defectos chicos** (agrupados: B textos, C, D): `compararVecino` no cuenta las filas de ajuste manual (D); el escalón 1a del lote
-   solo mira "revisar" y no "sin-verificar" (C); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
+2. **Defectos chicos** (agrupados: B textos, D): `compararVecino` no cuenta las filas de ajuste manual (D); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
 3. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
@@ -179,6 +178,7 @@ Mitigaciones:
  ESCALÓN 1a (Versión 433) el inventario dice "revisar" → resolver-inventario.mjs (las VOCES): Claude solo en las páginas con cifras que
             no coinciden con el texto del PDF; ignora las dudas en prosa ── compuerta: el inventario queda "listo" → sigue
             (Versión 443) por página: una página con la misma huella que en la última validación "listo" se reusa, no se paga otra vez
+            (Versión 463) "sin verificar" (el .md cambió): primero la validación gratis del inventario; si queda "revisar", el resolver
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
             quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)

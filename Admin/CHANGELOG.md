@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 463 — "Sin verificar" pasa por la validación gratis antes de localizar (2026-10-04)
+
+- `lote.mjs`, etapa 2 escalón 1a: un documento "sin-verificar" (el .md cambió después de validarse) pasa primero por la validación gratis del inventario (solo la carpeta del club); si queda "revisar", sigue el resolver como antes (que paga solo las páginas cambiadas, V443). Corre también en el ensayo (es gratis).
+- Medido: ensayo de `prueba-completa` con y sin `--reintentar` idéntico (hoy no hay ningún "sin-verificar"). Simulado con copia de seguridad (Ferroviária 2018 con una validación de un .md anterior): "sin verificar" → validación gratis → "revisar" → resolver (ensayo US$ 0,03, 5 págs.) → la compuerta de perímetro frena antes de pagar localizar.
+
 ## Versión 462 — Escalera de "no es rubro" en la carga (2026-10-04)
 
 - `cargar.mjs` (`proponerConEscalera`): una fila verificada con lado que la IA marcó "no es rubro" se excluye (escalón 0, como siempre); si la carga no cierra por tie-out, se prueba incluirla (escalón 1, su categoría va a la cola) y gana solo si cierra. El intento del escalón 1 no escribe en la cola salvo que gane.
