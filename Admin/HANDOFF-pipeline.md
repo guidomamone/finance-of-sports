@@ -29,11 +29,11 @@ Versiones de esta tanda: 407-440.
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir en UC + Fortaleza + Goiás + el club en curso):
 
 1. **Juventus (`juventus-it`) cargado 2003-2025** (estado separado; Versiones 433-440). Pendiente:
-   - **Deuda 2007-2025 sin dato:** la IA (escalón 2) propone valores razonables (2007 18,7 M = "Loans and other financial liabilities"
+   - **Deuda 2007-2025 cargada A MANO** (y caja 2022, 2024, 2025), del balance separado. El problema de fondo sigue: la IA (escalón 2) propone valores razonables (2007 18,7 M = "Loans and other financial liabilities"
      corriente + no corriente) pero la compuerta no confirma: la columna "año anterior" del documento siguiente dice otra cosa (reexpresiones
      IFRS, o la IA del año vecino eligió otras filas). Y desde 2007 la deuda viene en dos filas con la misma etiqueta, que el escalón 1 no
      suma (familia repetida). A diseñar: escalón 1 que sume corriente + no corriente de la misma familia.
-   - **Caja 2022, 2024, 2025 sin dato y `caja-deuda.mjs` no respeta el ajuste `perimetro`:** lee el primer balance del .md (el consolidado).
+   - **`caja-deuda.mjs` no respeta el ajuste `perimetro`:** lee el primer balance del .md (el consolidado).
      2023 se corrigió a mano. A diseñar: que caja-deuda reciba el perímetro (como el cambio H para localizar).
    - **Escala de caja-deuda equivocada cuando hay filas de ajuste manual:** `factorPorIngresos` compara los rubros cargados con las cifras
      del .md; en 2003-2006 las filas de la nota de sponsors (en miles) ganaron y la escala salió miles (valores x1000, corregidos a mano).
