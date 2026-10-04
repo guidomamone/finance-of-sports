@@ -1,5 +1,7 @@
 # Atlético Mineiro (Clube Atlético Mineiro SAF, Belo Horizonte-MG — "Galo")
 
+**Ángulos**: sitio oficial: HIT (atletico.com.br/wp-content/uploads, descarga directa; las páginas del portal dan 403 a curl) · federación/regulador: no necesario · Wayback CDX: HIT (lista completa de DEMONSTRACAOFINANCEIRA_<año>) · búsqueda web: confirmó Relatório Integrado 2025 · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Hit confirmado, SAF desde fines de 2023.** El Atlético Mineiro SAF publica "Demonstrações
   contábeis individuais e consolidadas" auditadas en su Portal da Transparência SAF
   (`atletico.com.br/institucional/portal-da-transparencia/portal-da-transparencia-saf/`, con los
@@ -44,3 +46,10 @@
   `club-or-year-onboarding` sección 3). Cruzado con teamcolorcodes.com (#000000). Verificado
   2026-09-24.
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 3 a 9 ejercicios en disco (2017-2022 asociación + 2023-2025 SAF)
+
+El Wayback CDX de `atletico.com.br` reveló los PDFs de la asociación (**Clube Atlético Mineiro**, anterior a la SAF); todos bajan con `curl` directo desde `atletico.com.br/wp-content/uploads/...` (los listados HTML del portal dan 403 a curl, los archivos no). En `Clubes/Brasil/Atletico Mineiro/`:
+- `demonstracoes-financeiras-cam-2022.pdf` (67 pp, `.../2023/04/Relatorio-do-auditor-com-as-DFS-CAM-2022.pdf`), `-2021.pdf` (70 pp), `-2020.pdf` (44 pp), `-2019.pdf` (34 pp), `-2018.pdf` (23 pp, "31 de dezembro de 2018 e 2017"), `-2017.pdf` (24 pp, escaneo; carátula verificada: "Clube Atlético Mineiro, Demonstrações Contábeis em 31 de Dezembro de 2017").
+- **Ojo**: son de la asociación CAM, sujeto distinto de la SAF (2023-2025, ya existentes). El 2023 SAF cubre solo desde la constitución; el ejercicio 2023 de la asociación no se ubicó (la asociación sigue como accionista).
+- Existen más, no bajados: `DEMONSTRACAOFINANCEIRA_2011/2012/2013/2014/2015/2016` (en `atletico.com.br/wp-content/uploads/2022/05/` y `transparencia.atletico.com.br/documents/demonstracoes/`), `Balanço-CAM-2014`, relatórios de gestão 2018-2020.

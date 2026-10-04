@@ -1,5 +1,7 @@
 # Vasco da Gama (Vasco da Gama SAF)
 
+**Ángulos**: sitio oficial: BLOQUEADO (media.vasco.com.br: Cloudflare, también desafío interactivo en el Browser pane) · federación/regulador: no aplica · Wayback CDX: HIT (PDFs oficiales mirroreados) · búsqueda web: HIT (crvascodagama.com, netvasco) · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Recuperado esta sesión, con un enfoque distinto al intento anterior.** El dominio oficial
   media.vasco.com.br sigue bloqueado por un challenge de Cloudflare (confirmado de nuevo: 403 con
   `cf-mitigated: challenge` incluso variando el User-Agent), y archive.org/Wayback Machine estuvo
@@ -40,3 +42,13 @@
   partes iguales, "si el otro color es blanco, gana el que no es blanco"): gana el negro. Hex
   confirmado con 2 fuentes independientes (teamcolorcodes.com, football-logos.cc), ambas listan
   `#000000` para el club. Verificado 2026-09-24.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 1 SAF + 2 asociación a 2 SAF + 9 asociación
+
+**Atención a las dos entidades**: la SAF (Vasco da Gama SAF, CNPJ 47.589.413/0001-17) y la associação CRVG (Club de Regatas Vasco da Gama, dueña del 30% de la SAF) son sujetos distintos; el nombre de archivo lo dice.
+
+- **SAF**: `demonstracoes-contabeis-saf-2022.pdf` (61 pp; Wayback id_ de `media.vasco.com.br/static/2023/04/Vasco-da-Gama-SAF-Demonstracoes-Contabeis-2022.pdf`, el ejercicio de constitución que la nota anterior daba por sin mirror) + el `demonstracoes-contabeis-2023.pdf` ya existente. **SAF 2024: NO conseguido**: la versión no auditada existe en `media.vasco.com.br/static/2025/04/Vasco-da-Gama-SAF-DRE-e-Balanco-Patrimonial-2024.pdf` (403 Cloudflare, sin copia en Wayback ni en netvasco; el artículo de netvasco solo trae un aviso de 4 pp, guardado como `aviso-divulgacao-saf-2024-nao-auditado.pdf`) y la versión completa con parecer iba a salir a fin de junio de 2025 (no ubicada). SAF 2025: no ubicado.
+- **Asociación CRVG** (sitio `crvascodagama.com/transparencia-informacoes-financeiras/`, sin bloqueo, y Wayback de `vasco.com.br`/`static.vasco.com.br`/`media.vasco.com.br`): `demonstracoes-financeiras-associacao-crvg-2020.pdf` (69 pp), `-2021.pdf` (75 pp), `-2022.pdf` (ya estaba), `-2023.pdf` (61 pp, `.../2025/05/Demonstracoes-Financeiras-2023-2-Final.pdf`), `-2024.pdf` (4 pp: solo el aviso; el balance 2024 de verdad es el `dre-balanco-patrimonial-2024.pdf` ya existente, md5 idéntico a `Balanco-Patrimonial-2024.pdf`), `balanco-patrimonial-associacao-crvg-2025.pdf` (62 pp, `.../2026/04/Balanco-Patrimonial-2025.pdf`), y de la serie vieja `balanco-associacao-crvg-2018.pdf` (62 pp), `-2012.pdf` (17 pp), `-2013.pdf` (13 pp).
+- **Gotcha de Wayback**: las capturas de archivos de más de 1 MiB vienen cortadas exactamente en 1.048.576 bytes y `pdfinfo` no las lee; así quedaron fuera `balanco_2014`, `_2015`, `_2016`, `_2017` (y 2019, no ubicado) de la serie vieja de la asociación (`media.vasco.com.br/media/2020/10/balanco_<año>.pdf`; el host live da Cloudflare, `vasco.com.br/wp-content/...` da 404). Se borraron los truncados.
+- También hay en Wayback: balancetes trimestrales 2019-2021 de la asociación, `balanco_2009/2010/2011` en `www.vasco.com.br/site/public/upload/...` (no bajados).
+- Probado sin éxito: Browser pane en `media.vasco.com.br` ("Just a moment..." interactivo; no se insistió).

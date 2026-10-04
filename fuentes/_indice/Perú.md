@@ -8,8 +8,8 @@ registro, están en [`fuentes/README.md`](../README.md).
 **Última auditoría de datos: nunca** — campo nuevo (to-do 56, 2026-09-26): el eje `datos` de `auditoria-finance-of-sports/SKILL.md` ahora se corre POR PAÍS, no sobre el proyecto entero. Actualizar esta fecha (AAAA-MM-DD) cada vez que ese eje se corre sobre este país específico.
 
 - [Alianza Lima](../Perú/Alianza Lima.md) — 6 ejercicios consecutivos reales (2019-2024); CARGADOS al sitio (`alianzalima-pe`) — Último chequeo: 2026-09-12
-- [Sporting Cristal](../Perú/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte — Último chequeo: 2026-09-12
-- [Universitario de Deportes](../Perú/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI confirmado dead-end (solo historial procesal) — Último chequeo: 2026-09-13
+- [Sporting Cristal](../Perú/Sporting Cristal.md) — sin PDF, S.A. cerrada sin obligación de reporte · **Barrido 2026-10-03**: CDX completo (19.778 URLs) sin financieros; sin SMV — Último chequeo: 2026-10-03
+- [Universitario de Deportes](../Perú/Universitario de Deportes.md) — sin PDF, proceso concursal INDECOPI confirmado dead-end (solo historial procesal) · **Barrido 2026-10-03**: Memoria 2018 + comunicados de auditoría BDO 2021/2023 (imágenes con resultado neto 2014-2023); sin EEFF completos — Último chequeo: 2026-10-03
 - [FBC Melgar](../Perú/FBC Melgar.md) — sin PDF, asociación civil + concursal INDECOPI sin expediente ubicado — Último chequeo: 2026-09-13
 - [Cienciano](../Perú/Cienciano.md) — sin PDF, dead-end real confirmado (escalera completa agotada, 0 señal propia) — Último chequeo: 2026-09-26
 - [Sport Boys](../Perú/Sport Boys.md) — sin PDF; identificado un Plan de Viabilidad con proyecciones auditables presentado a SUNAT en 2023 (proceso concursal), no público — candidato a SAIP/mail — Último chequeo: 2026-09-26

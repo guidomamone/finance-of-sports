@@ -1,8 +1,7 @@
 # Binacional (Club Escuela Municipal Deportivo Binacional FC)
 
-**Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: no intentado ·
-búsqueda web: agotado (sin balance, sí mucha cobertura de deudas) · regulador/país: no aplica ·
-barrido: 1 (Sonnet+Exa) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (clubdeportivobinacional.com.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 
 - Sin PDF ni fuente pública identificada. Dead-end estructural: pese a "Municipal" en el nombre
   (viene de una fusión histórica con Escuela Municipal, no de pertenencia al sector público), está
@@ -39,3 +38,7 @@ enlazado.
   deuda pública conocida (GORE Puno, SAFAP), podría valer un mail directo al club pidiendo su
   memoria o estado de situación, pero sin garantía de respuesta — no hay canal de transparencia
   identificado.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `clubdeportivobinacional.com.pe`: 388 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

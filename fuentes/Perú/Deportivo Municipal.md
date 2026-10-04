@@ -1,9 +1,4 @@
-**Ángulos**: sitio oficial: agotado (sin dominio propio activo — ver detalle) · Wayback CDX: agotado
-(solo 3 archivos de 2012-2017, formularios de socios, nada financiero) · búsqueda web: agotado
-(`filetype:pdf` sin resultados) · prensa: **parcial — señal fuerte, sin documento confirmado** (ver
-detalle: cifras de deuda S/12M citadas en múltiples notas 2024-2026 por el "fiscal"/tesorero del
-club, proceso de conversión a S.A.D. en curso, pero ningún PDF/balance formal referenciado todavía) ·
-regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (clubdeportivomunicipal.com / .pe / deportivomunicipal.com.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
 
 # Deportivo Municipal (Club Centro Deportivo Municipal)
 
@@ -67,3 +62,7 @@ regulador/país: no aplica · barrido: 1 (Sonnet) — 2026-09-26
   nombre en prensa (Jorge Fernández) como posible destinatario o referencia. Guido decide y aprueba
   el envío.
 - Último chequeo: 2026-09-26.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `clubdeportivomunicipal.com / .pe / deportivomunicipal.com.pe`: 0 URLs en los tres. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

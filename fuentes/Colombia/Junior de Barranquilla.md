@@ -1,5 +1,7 @@
 # Junior de Barranquilla (Club Deportivo Popular Junior F.C. S.A.)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte, club nuevo.** 3 PDFs descargados a `Clubes/Colombia/Junior de Barranquilla/`:
   `estados-financieros-2025.pdf` (38 páginas, paquete completo 2025/2024),
   `dictamen-revisor-fiscal-2025.pdf`, `certificacion-ef-2025.pdf` — vía SIIS, NIT 900456729. Cifras
@@ -26,3 +28,8 @@
   escudo, no la camiseta) — se usó el rojo porque Wikipedia lo lista primero y es el color
   predominante del uniforme titular histórico (camiseta a rayas rojo y blanco).
 
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 900456729, 10 ejercicios en SIIS (2016-2025); 2020-2022 y 2018 devuelven 404 en documentos-adicionales (sin documentos depositados).
+- Bajado a `Clubes/Colombia/Junior de Barranquilla/`: estados-financieros 2016, 2019 (régimen Pymes), y 2023-2025; 2017 solo certificación y dictamen. Total en disco: 5 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

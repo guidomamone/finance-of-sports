@@ -1,5 +1,7 @@
 # Operário Ferroviário (Operário Ferroviário Esporte Clube, Ponta Grossa-PR — associação, no SAF)
 
+**Ángulos**: sitio oficial: HIT parcial (sitio actual SPA Fanbase solo expone 2025; el sitio WordPress viejo vive en Wayback) · federación/regulador: FPF solo 2024 (2025 lo publica el club) · Wayback CDX: HIT (dominio completo, `wp-content/uploads/2024/04`) · búsqueda web: sin resultado · barrido: 1 (Sonnet) — 2026-10-03
+
 - Club nuevo esta sesión (Série B 2025). Sigue siendo **associação** (no se convirtió a SAF), y
   publica igual: la Lei Pelé + el licenciamento de la Federação Paranaense lo obligan.
 - **2 PDFs descargados a `Clubes/Brasil/Operario Ferroviario/`, de dos canales oficiales
@@ -57,3 +59,17 @@
   DRE, no el de la Nota). `gestionId` quedó `sinconfirmar` los 2 años (firma de presidente Juarez
   Costa Pinto solo visible en el PDF 2025, sin confirmar para todo 2024).
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (sourcing Brasil grupo B) — de 2 a 8 ejercicios en disco
+
+- Wayback CDX de `operarioferroviario.com.br` (dominio, filtro `Balan|DFs|DRE|Auditor`) lista el repositorio del **sitio WordPress viejo**
+  (`/wp-content/uploads/2024/04/...`, `/2024/02/...`, `/2025/04-05/...`, página "gestao-tecnica-e-financeira"). Ojo: **las primeras capturas (agosto 2024) vienen truncadas
+  a 1.048.576 bytes** (PDF inválido, pdfinfo falla): hay que listar todas las capturas de CADA archivo (`fl=timestamp,statuscode,length`) y elegir la de tamaño completo (3-11 MB).
+- Bajados a `Clubes/Brasil/Operario Ferroviario/` (todos verificados en carátula; **escaneos sin capa de texto, salvo 2019 y el parecer**):
+  `demonstracoes-financeiras-2023.pdf` (20 pp, "31 de dezembro de 2023 e 2022", MDM Contabilidade; cap. 20240925015313),
+  `balanco-patrimonial-e-dre-2022.pdf` (20 pp; cap. 20251117202007), `balanco-patrimonial-e-dre-2021.pdf` (17 pp; cap. 20240902150219),
+  `balanco-patrimonial-e-dre-2020.pdf` (20 pp; cap. 20240831203810), `demonstracoes-financeiras-2019.pdf` (29 pp, texto; cap. 20240903195626),
+  `balanco-patrimonial-e-dre-2018.pdf` (3 pp, **balanço mínimo** 2017 vs 2018, activo total ~R$229 mil, firmado por el presidente; no auditado),
+  `parecer-auditores-2022.pdf` (2 pp, sólo el dictamen del auditor 2022).
+- Fuentes en el mismo repositorio, no bajadas: relatórios de gestão financeira/técnica 2017-2023, pareceres del Conselho Fiscal, actas de aprobación de cuentas, `2023-Parecer-e-Relatorio-de-Auditores-Independentes.pdf`, `2024-Parecer-e-Relatorio-de-Auditores-Independentes.pdf`, `Balanco-Patrimonial-e-DRE-Exercicio-2017.pdf`.
+- Ejercicios en disco ahora: 2018 (mini), 2019, 2020, 2021, 2022, 2023, 2024, 2025. Los años 2020-2023 requieren OCR (escaneo).

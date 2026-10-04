@@ -1,8 +1,7 @@
 # Sport Huancayo (Club Sport Huancayo)
 
-**Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: no intentado ·
-búsqueda web: agotado (fuente terciaria confirma "sin información financiera disponible") ·
-regulador/país: no aplica · barrido: 1 (Sonnet+Exa) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (sporthuancayo.com) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 
 - Sin PDF ni fuente pública identificada. Dead-end estructural: registrado en SUNAT con RUC
   20486860791, actividad "Otras Asociaciones NCP" — tipo societario **Asociación**, sin obligación
@@ -33,3 +32,7 @@ disponible" — coincide con lo ya sabido (Asociación, sin obligación de repor
 - Prensa reciente (asamblea FPF abril 2025) confirma que Sport Huancayo se ausentó de la Asamblea
   de Bases que aprobó los estados financieros 2024 de la FPF — un dato de color, no del club.
 - Confirma el dead-end estructural. Sin candidato a mail nuevo esta sesión.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `sporthuancayo.com`: 412 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

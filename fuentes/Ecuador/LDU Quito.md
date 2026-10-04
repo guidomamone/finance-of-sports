@@ -1,5 +1,7 @@
 # LDU Quito (Liga Deportiva Universitaria de Quito)
 
+**Ángulos**: sitio oficial: agotado (solo club social, 1 año: 2022 mensual+anual) · regulador/país: no aplica · Wayback CDX: hecho (no hay otros años) · búsqueda web: sin novedad · barrido: 4 (Sonnet) — 2026-10-03
+
 - **Actualización 2026-09-13 — contexto que cambia cómo leer el hallazgo de abajo.** Esta sesión
   confirmó (ver `_notas-generales.md`, sección nueva) que a septiembre de 2026 NINGÚN club
   ecuatoriano opera todavía como S.A.D.P./SAD — la reforma legal recién se aprobó (Ley Orgánica del
@@ -61,3 +63,7 @@
   cargable todavía). Pregunta genuina anotada en `Admin/dudas-por-club.md`.
 - Último chequeo: 2026-09-25.
 
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+- wp-json `media?search=estado/financier` del sitio: SOLO existen estados del año 2022 (12 mensuales + `ESTADO-DE-SITUACION-FINANCIERA-DICIEMBRE-2022.pdf` + `ESTADO-DE-RESULTADOS-2022.pdf`). La página `/estados-financieros-2023/` existe pero es un stub (flipbooks de cronogramas, sin PDFs); `/estados-financieros/` es un visor de flipbooks 2022 (ipages_flipbook ids 15-40). CDX del dominio completo (`ldu.org.ec`): ningún estado financiero de otro año; solo estatutos, convocatorias a asamblea 2025-2026 y términos de referencia de una auditoría contratada en 2023.
+- Siguen siendo del club social consolidado (colegio + country club), sin el fútbol (ver nota 2026-09-25). Ejercicios financieros en disco: **1** (2022; mismo documento ya evaluado y descartado). Dead-end del canal online; candidato a mail: estados de la "Comisión Especial de Fútbol" y años 2019-2024.

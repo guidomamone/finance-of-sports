@@ -32,3 +32,17 @@ insistir de nuevo con estos mismos métodos en una sesión futura:**
   un pedido de acceso a información pública directo a la AIN, o contactar a un socio real de cada
   club dispuesto a compartir el PDF que le llega por mail.
 
+## Barrido 2026-10-03: canales nuevos (pregunta: ¿qué obligación de publicar tiene la SAD?)
+
+- **Obligación**: las SAD uruguayas (Ley 17.292 y decretos 291/2014, 372/2015, 408/2016 que cita el informe de auditoría de Peñarol)
+  presentan estados a la AIN, pero eso es un control reservado, no una publicación. No hay deber de depósito público. El auditor de
+  Peñarol aclara incluso que el club "no tiene un ámbito legal que regule la preparación contable" obligatoria (Nota 2.1).
+- **Wayback CDX del dominio completo funciona y es el método que rindió**: con Peñarol (dominio punycode `xn--pearol-xwa.org`, filtro
+  mimetype PDF) apareció que `aucdocumento.aspx?<pag>,<doc>` sirve documentos sin login, incluido el Balance al 30-nov-2018 (ver
+  `Peñarol.md`). Para Nacional (`nacional.uy`, `nacional.com.uy`) no hay balances archivados.
+- **Metodología propuesta (texto para `paises/Uruguay.md`)**: "Peñarol publicó públicamente el balance del ejercicio 2018 (cierre 30-nov)
+  en su sitio; desde la Memoria 2019 pasó al login de socios. Probar, en Uruguay, el CDX del dominio completo antes que el sitio vivo.
+  Nacional: sin balances públicos en ninguna fecha archivada."
+- No encontrado: prospecto de fideicomiso (BCU/BVM) ni emisión de deuda de los clubes. La licencia CONMEBOL/AUF exige EEFF auditados
+  a los clubes pero los entrega al ente, no al público.
+

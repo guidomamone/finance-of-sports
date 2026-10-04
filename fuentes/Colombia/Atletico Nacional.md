@@ -1,5 +1,7 @@
 # Atlético Nacional (Atlético Nacional S.A.)
 
+**Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+
 - **Hit fuerte, club nuevo.** 3 PDFs descargados a `Clubes/Colombia/Atletico Nacional/`:
   `estados-financieros-2025.pdf` (57 páginas, paquete completo 2025/2024, auditado por Baker Tilly
   Colombia), `dictamen-revisor-fiscal-2025.pdf`, `certificacion-ef-2025.pdf` — vía SIIS, NIT
@@ -22,3 +24,8 @@
 - Color de marca: `#00953B` — verde, Pantone 355 C según la guía de marca del club (RGB 0,149,63) +
   footylogos.com/es/color-codes/atletico-nacional, verificado 2026-09-22.
 
+## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
+
+- NIT 900464187, 11 ejercicios en SIIS (2015-2025).
+- Bajado a `Clubes/Colombia/Atletico Nacional/`: estados-financieros 2020-2024 (+certificación y dictamen). Total en disco: 6 ejercicios con estados-financieros.
+- Ninguno transcripto ni cargado todavía.

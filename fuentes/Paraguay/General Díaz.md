@@ -1,5 +1,7 @@
 # General Díaz
 
+**Ángulos**: sitio oficial: sin sitio oficial utilizable (dominio cybersquatteado), no reintentado · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: no corrido · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Sitio oficial (familia 1) — dominio hoy TOMADO por un sitio de apuestas, confirmado histórico
   vía Wayback.** `generaldiaz.com` resuelve (103.119.0.69) pero devuelve HTTP 444 (conexión
   cerrada sin respuesta) tanto a `curl` como a Firecrawl (2 intentos: básico y con
@@ -52,3 +54,8 @@
   facebook.com/ClubGeneralDiaz, X @clubgraldiaz — ninguno con sección de transparencia
   financiera identificada.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- sin sitio oficial utilizable (dominio cybersquatteado), no reintentado.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

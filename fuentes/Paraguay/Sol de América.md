@@ -1,5 +1,7 @@
 # Sol de América
 
+**Ángulos**: sitio oficial: soldeamerica.com.py: solo una sentencia judicial 2022 archivada (noticias.soldeamerica.com.py/.../sentencia.pdf) · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Sitio oficial (familia 1) — dominio hoy MUERTO, confirmado histórico vía Wayback.**
   `soldeamerica.com.py` no resuelve por DNS (`dig` sin respuesta, `curl` código `000`, Firecrawl
   `SCRAPE_DNS_RESOLUTION_ERROR` en 2 intentos: `www.soldeamerica.com.py` y `soldeamerica.com.py` sin
@@ -27,3 +29,8 @@
 - Contacto: sin sitio oficial activo. Facebook facebook.com/SolDeAmericaprensa, X
   @SoldeAmericapy — ninguno con sección de transparencia financiera.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- soldeamerica.com.py: solo una sentencia judicial 2022 archivada (noticias.soldeamerica.com.py/.../sentencia.pdf); sin balances.
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

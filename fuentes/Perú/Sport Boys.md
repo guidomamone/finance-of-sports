@@ -1,9 +1,7 @@
 # Sport Boys (Club Sport Boys Association)
 
-**Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: no intentado ·
-búsqueda web: agotado (sin PDF, sí evidencia de que existe un "Plan de Viabilidad" no publicado) ·
-regulador/país: SUNAT (proceso concursal Ley 32113) — no hay canal público de descarga ·
-barrido: 1 (Sonnet+Exa) — 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (sportboys.com.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 
 - Sin PDF ni fuente pública identificada. Dead-end estructural: registrado en SUNAT como
   "Club Sport Boys Association" (RUC 20210064673, Callao), tipo societario **Asociación** — sin
@@ -39,3 +37,7 @@ proyecciones, aprobado por el regulador tributario, no por el club en asamblea.
   vía Solicitud de Acceso a la Información Pública (SAIP) a SUNAT (ver
   `sunat.gob.pe/cuentassunat/informacionContribuyente/index.html`) o directamente al club, en vez
   de asumir dead-end estructural total.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `sportboys.com.pe`: 4.352 URLs; 0 PDFs (solo informes médicos). Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

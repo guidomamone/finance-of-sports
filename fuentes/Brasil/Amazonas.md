@@ -1,5 +1,7 @@
 # Amazonas (Amazonas Futebol Clube, Manaus-AM — associação civil, NO es SAF)
 
+**Ángulos**: sitio oficial: agotado (dominio sin DNS; solo 2 PDF en Wayback) · federación/regulador: FAF solo publica sus propios balances (probado) · Wayback CDX: agotado (678 URLs del dominio listadas; solo 2 `arqeditor` + estatuto; sitio viejo 2019-2022 sin sección financiera) · búsqueda web: sin resultado (CNPJ, 2021/2025, Tribunal de Contas, CBF licenciamiento) · barrido: 3 (Sonnet) — 2026-10-03
+
 - **Hallazgo parcial: 2 PDFs con 3 ejercicios (2022, 2023, 2024), pero NO son estados contables
   auditados** — son balanços patrimoniales resumidos, firmados por el presidente del club y por una
   contadora (CRC-AM 013501/O-0), sin relatório de auditor independente, sin notas explicativas y sin
@@ -47,3 +49,15 @@
   web.archive.org/web/2026/<esa url>); fafamazonas.com.br/site/pagina/transparencia/ (solo la
   federación, no los clubes).
 - Último chequeo: 2026-09-22.
+
+## Barrido 2026-10-03 (sourcing Brasil grupo B) — sigue en 3 ejercicios (2022, 2023, 2024); no llega a 5
+
+- Wayback CDX de dominio completo para `amazonasfc.com.br/*` (filtros `arq|pdf|transpar|balan|site/`): los **únicos** documentos financieros capturados son `balanco_patrimonial_amazonasfc_2024.pdf`,
+  `balancos_2022_2023.pdf` (ya en disco) y `ESTATUTO_AMFC.pdf`. No hay snapshot de la página de transparencia con otros años. El sitio viejo de 2019-2022 (`www.amazonasfc.com.br`, otro CMS) no tuvo sección financiera.
+- El dominio sigue sin resolver DNS (`dig` vacío, 2026-10-03). Búsqueda web con CNPJ y años 2025/2021/2020: sin resultados nuevos.
+- **Ángulo que falta**: el club se fundó en 2019, así que 2019-2021 podrían existir; no hay evidencia pública. Opciones reales: mail al club (`club-outreach`), o Tribunal de Contas/SEJEL-AM por los R$7 mi de dinero público (rendición de cuentas), o esperar a que levanten dominio nuevo y publiquen el ejercicio 2025.
+
+## Barrido 3 (2026-10-03, Sonnet): sin cambios, sigue en 3 ejercicios (2022-2024)
+
+- Wayback CDX completo del dominio (678 URLs, sin filtro): el único contenido financiero son los 2 `arqeditor` + estatuto ya en disco; la captura 2022-06 de `/institucional` del sitio viejo no linkea nada financiero. Búsquedas web (CNPJ 34.639.980/0001-99, 2021/2025, rendición de contas SEJEL/TCE-AM, CBF Licença Nacional): nada. DOE-AM y JUCEA no consultados (no indexados / cobran).
+- Candidato a mail (no redactado): pedir al club 2025 y 2019-2021; por ser dinero público, también vía solicitud LAI a SEJEL-AM (gestión de Guido).

@@ -1,5 +1,7 @@
 # Los Chankas (Club Deportivo Los Chankas CYC)
 
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (loschankascyc.com.pe) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDF ni fuente pública identificada. Caso distinto al resto de los candidatos de esta sesión:
   es el ÚNICO de los 12 clubes revisados que SÍ está constituido como **Sociedad Anónima** propiamente
   dicha — "Club Deportivo Los Chankas CYC Sociedad Anónima" (RUC 20601105021, ex "Club Deportivo
@@ -16,3 +18,7 @@
   hecho esta sesión por prioridad de tiempo.
 - Contacto: loschankascyc.com.pe / clubloschankas.com (sin sección de transparencia).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `loschankascyc.com.pe`: 99 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

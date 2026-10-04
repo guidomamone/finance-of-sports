@@ -408,6 +408,32 @@ perdieron sino que se descartaron:
     para cargarse; (f) Diablos Rojos del México: reconciliar ingresos 2024 ($573,3 M del semestral vs $559,9 M de prensa) y revisar el perímetro
     (equipo vs estadio/otros negocios) al mapear; (g) TKO/Endeavor/Formula One Group no son clubes: decisión de Guido si el sitio las quiere.
 
+129. SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no
+    se escribió ningún mail). Peñarol 2019-2025 (login de socios `crm2.montevideo.com.uy/areasocio`, o
+    pedido de acceso a información pública a la AIN); Sportivo Luqueño EEFF auditados (los ofrece por
+    WhatsApp 595981001921); Athletic Club SAF 2022 (primer ejercicio completo); Amazonas 2019-2021 y 2025
+    (también LAI a SEJEL-AM); Barcelona SC 2019-2024, Emelec 2019-2022 y 2024, Universitario dictámenes BDO
+    2021-2023, Deportivo Cuenca 2021-2025 (todos se reparten a socios); Palestino 2010-2016 (CMF con
+    clics reales o avisos en prensa); Pinheiros Vol.1 2018-2025 (reintentar desde la red de Guido:
+    `ecp.org.br/institucional/o-clube/governanca/documentos_gerais_<año>/`); Paulistano 2023+ (API
+    `cms.paulistano.org.br` o browser); Vasco SAF 2024-25 (`media.vasco.com.br` bloqueado por Cloudflare);
+    SUNARP/SUNAT (de pago) para Sporting Cristal, UCV y Los Chankas; Drive de la Memoria IDV 2023.
+
+130. SUDAMÉRICA: DECIDIR EL ESQUEMA PARA CLUBES POLIESPORTIVOS Y OTROS DEPORTES. Minas Tênis Clube/Náutico,
+    Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
+    escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
+    Toros) y básquet (Titanes) con balance propio de sociedad anónima. Decidir antes de transcribir.
+
+131. SUDAMÉRICA: LO QUE QUEDÓ EN DISCO SIN TRANSCRIBIR. 17 clubes nuevos de Colombia (Primera B), Palestino
+    2017-2024 (con texto), Peñarol 2018 (escaneo), Emelec 2023 y Barcelona 2018 (escaneos), Santos 2017-2023,
+    Guarani 2017-19, Operário 2020-23, Juventude 2017/19/20/21/24, Náutico 2017-18, Paulistano 2013 y 2019,
+    Praia 2019 y 2021 (escaneos: Mistral/Gemini + verificación). Corsarios (4) y Leones FC (SIIS no tiene
+    2021/2023+) no llegan a 5 ejercicios. Verificar entidad y ejercicio de cada PDF de Colombia al
+    transcribir: solo se contó el índice de SIIS.
+
+132. SUDAMÉRICA: APLICAR LOS TEXTOS PROPUESTOS A LAS SKILLS (con el ok de Guido): ver
+    `Admin/propuestas-skills-sudamerica.md`; borrarlo al aplicar.
+
 89. LEER EL DOCUMENTO FUENTE COMPLETO ES CARO, PERO ABARATARLO TIENE UN RIESGO YA CONFIRMADO
     (candidato del to-do 85, 2026-09-27). Los 6 balances de Almagro (~170 KB) se leyeron completos
     para extraer ~15-20 líneas de rubros por año — la mayor parte de cada documento (nómina de

@@ -1,5 +1,7 @@
 # Palestino (Club Deportivo Palestino S.A.D.P.)
 
+**Ángulos**: sitio oficial: HIT (memorias 2017-2024 con EEFF auditados) · regulador/país: CMF ya probado, RVEMI sin EEFF para el club (no reintentado, innecesario) · Wayback CDX: no hizo falta · búsqueda web: no hizo falta · barrido: 1 (Sonnet) — 2026-10-03
+
 - Sigue en hit parcial: un solo ejercicio real, `Clubes/Chile/Palestino/estados-financieros-2018.pdf`
   (Estados Financieros Intermedios con comparativo del ejercicio completo cerrado 31/12/2018 +
   período de 6 meses a jun-2019, vía CMF). Esta sesión aclaró el misterio del `row=`: el listado
@@ -23,3 +25,28 @@
   cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=99569020&tipoentidad=RVEMI.
 - Último chequeo: 2026-09-12.
 
+## Barrido 2026-10-03: HIT en el sitio oficial (wp-json de media)
+
+- El sitio oficial es WordPress (palestino.cl). La API `https://palestino.cl/wp-json/wp/v2/media?media_type=application&per_page=100`
+  lista todos los PDF subidos al sitio. Hay 8 Memorias anuales de Club Deportivo Palestino S.A.D.P.
+  (RUT 99.569.020-9 en cada carátula) subidas el 2025-06-06, cada una con los Estados Financieros auditados
+  y notas adentro (Estados de Situación Financiera, Informe de los Auditores Independientes, Notas, Análisis Razonado):
+  - Memoria 2017 (79 pp): https://palestino.cl/wp-content/uploads/2025/06/archivo-4.pdf
+  - Memoria 2018 (85 pp): https://palestino.cl/wp-content/uploads/2025/06/archivo-3.pdf
+  - Memoria 2019 (96 pp): https://palestino.cl/wp-content/uploads/2025/06/archivo-2.pdf
+  - Memoria 2020 (98 pp): https://palestino.cl/wp-content/uploads/2025/06/archivo-1.pdf
+  - Memoria 2021 (101 pp): https://palestino.cl/wp-content/uploads/2025/06/Memoria202021.pdf
+  - Memoria 2022 (110 pp): https://palestino.cl/wp-content/uploads/2025/06/Memoria202022.pdf
+  - Memoria 2023 (105 pp): https://palestino.cl/wp-content/uploads/2025/06/archivo.pdf
+  - Memoria 2024 (101 pp): https://palestino.cl/wp-content/uploads/2025/06/Memoria-2024-CDPalestinoSADP.pdf
+- Guardadas en `Clubes/Chile/Palestino/memoria-AAAA.pdf` (todas con capa de texto, no escaneos). Verificado con pdftotext:
+  RUT y "al 31 de diciembre de AAAA" en cada una. NO transcriptas ni cargadas.
+- Un PDF más del sitio (`2026/02/Futbol_EM_25-02-2026.pdf`) es una carta de El Mercurio, sin relación financiera.
+- Con esto el club pasa de 1 a 8 ejercicios en disco (2017-2024; el 2018 ya estaba y ahora hay dos fuentes del mismo año).
+- Faltan 2010-2016 y 2025 (la Junta Ordinaria 2026 se anunció en palestino.cl/comunicado-oficial-junta-ordinaria-de-accionistas-2/;
+  la Memoria 2025 todavía no estaba subida al 2026-10-03). Revisar el wp-json de media cada año.
+- Nota: la Memoria 2021 dice que "El Balance y Estados Financieros al 31 de diciembre de 2020, se publicaron en..." un diario:
+  los EEFF de años anteriores a 2017 pueden estar en publicaciones de prensa (El Mercurio), no probado.
+- Bolsa de Santiago `ifrs/newobtenerpdf.asp?nemo=PALESTINO|PALESTIN|CDPALEST`: "EL ARCHIVO ... NO ESTA DISPONIBLE" (el club no tiene nemo ahí).
+- La URL de ficha CMF que figuraba en la nota (`cmfchile.cl/institucional/mercados/entidad.php?...`) hoy da 404 con curl
+  (el sitio migró de ruta); no se retomó el flujo CMF porque el sitio oficial resolvió la tarea.

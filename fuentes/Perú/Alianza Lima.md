@@ -1,5 +1,7 @@
 # Alianza Lima (Club Alianza Lima)
 
+**Ángulos**: sitio oficial: agotado (6 PDFs 2019-2024; /transparencia es JS y no lista) · regulador/país: no aplica · Wayback CDX: hecho (3.859 URLs; solo 2019/2020/2022/2023 archivados) · búsqueda web: n/a · barrido: 4 (Sonnet) — 2026-10-03
+
 - **CARGADO al sitio: los 6 ejercicios (2019-2024), `data/alianzalima-pe-data.js`.** Tie-out exacto
   contra el propio Estado de resultados integrales de cada EEFF (Ingresos, Gastos y Resultado
   operativo/neto, los 6 años) — verificado con un script Node aparte además de a mano, y en el
@@ -41,3 +43,6 @@
 - Contacto: clubalianzalima.com.pe (sección Transparencia).
 - Último chequeo: 2026-09-12.
 
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Ya cumple el objetivo (6 ejercicios distintos 2019-2024, cargados). Se probaron nombres de archivo de 2018 y 2025 en `/static/media/uploads/transparencia/` (9 variantes): todas 404; Wayback CDX no tiene nada anterior a 2019 ni 2025. Sin acción pendiente salvo reintentar 2025 cuando el club lo suba.

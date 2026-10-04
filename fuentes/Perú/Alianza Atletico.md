@@ -1,8 +1,7 @@
 # Alianza Atlético (Club Sport Alianza Atlético de Sullana)
 
-**Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: no intentado ·
-búsqueda web: agotado (sin resultados) · regulador/país: no aplica · barrido: 1 (Sonnet+Exa)
-— 2026-09-26
+**Ángulos**: sitio oficial: agotado (ver notas previas) · regulador/país: sin obligación de publicar · Wayback CDX: hecho, 0 señal (clubalianzasullana.com) · búsqueda web: previa agotada · barrido: 4 (Sonnet) — 2026-10-03
+
 
 - Sin PDF ni fuente pública identificada. Dead-end estructural: registrado en SUNAT como
   "Asociación Deportiva Club Alianza Atlético de Sullana" (RUC 20530174019, inicio de actividades
@@ -26,3 +25,7 @@ falso positivo por homonimia de la palabra "balance", descartado explícitamente
 dirigencial sin cifras. Ningún resultado de otro club u otro país con nombre parecido — no hubo
 caso de homonimia real. Confirma el dead-end estructural: sin lead nuevo, sin candidato a mail
 (no hay a quién escribirle más allá del club mismo, que ya no tiene canal de transparencia).
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Wayback CDX del dominio completo `clubalianzasullana.com`: 1.099 URLs; 0 PDFs. Ningún estado financiero, memoria ni balance archivado. Dead-end del canal Wayback; el club no tiene obligación de publicar (asociación civil o S.A. cerrada).

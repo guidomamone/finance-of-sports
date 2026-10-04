@@ -1,8 +1,7 @@
 # Comerciantes Unidos (Club Comerciantes Unidos de Cutervo)
 
-**Ángulos**: sitio oficial: agotado (sin sección institucional) · Wayback CDX: no intentado ·
-búsqueda web: **ENCONTRADO** (tesis académica con balance del club 2013-2015) · regulador/país:
-no aplica · barrido: 3 (Exa) — 2026-09-26
+**Ángulos**: sitio oficial: agotado · regulador/país: no aplica (asociación) · Wayback CDX: no intentado · búsqueda web: tesis USAT (2013-2015) · barrido: 4 (Sonnet) — 2026-10-03
+
 
 - Sin PDF oficial del club ni fuente institucional identificada. Dead-end estructural: el nombre
   legal completo es "Asociación Social Deportiva y Cultural Comerciantes Unidos" (fundado
@@ -50,3 +49,7 @@ como fuente secundaria (con la salvedad de que es un trabajo de tesis, no el bal
 oficial) o usarla solo como pista para pedirle al club/USAT el balance original.
 - Candidato: no amerita mail todavía — primero hay que transcribir y evaluar la tesis en una
   sesión de onboarding; recién ahí se sabrá si falta pedir el balance oficial al club.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+Sigue con la tesis USAT como única fuente en disco (estados individuales 2013-2015 = 3 ejercicios secundarios, no oficiales). Sin ángulo nuevo en esta pasada: asociación civil sin obligación de publicar; la ley 29504 que cita la tesis (transformación en S.A.A.) nunca se aplicó al club, así que no hay SMV.

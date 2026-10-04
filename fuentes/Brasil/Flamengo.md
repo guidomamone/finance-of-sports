@@ -1,5 +1,7 @@
 # Flamengo (Clube de Regatas do Flamengo, Rio de Janeiro)
 
+**Ángulos**: sitio oficial: HIT (portal /clube/transparencia, pestaña FINANÇAS, 8 ejercicios) · federación/regulador: no necesario · Wayback CDX: no necesario · búsqueda web: no necesaria · barrido: 1 (Sonnet) — 2026-10-03
+
 - **Hit real, pero incompleto todavía.** Flamengo NO se convirtió a SAF — sigue siendo una
   associação (Clube de Regatas do Flamengo) que, por estatuto, publica "Relatório Anual com as
   Demonstrações Financeiras" auditadas todos los años. 2 ejercicios descargados en
@@ -39,3 +41,10 @@
   en el propio apodo del club — y el body/torso del kit es rojo puro con mangas negras), verificado
   2026-09-24.
 - Último chequeo: 2026-09-24.
+
+## Barrido 2026-10-03 (grupo C Brasil): de 2 a 8 ejercicios en disco (2018-2025)
+
+- **Cómo se destrabó lo que la nota anterior daba por SPA imposible**: el portal nuevo `flamengo.com.br/clube/transparencia` (las URLs `/transparencia/demonstracoes-financeiras` y las notas de prensa de 2022/2023 dan "Página no encontrada" hoy) tiene una pestaña **FINANÇAS** con 8 páginas de paginación y todos los PDFs como `<a href>` a `storage.googleapis.com/crf-strapi-media-prd/Demonstracao_Financeira_<año>_<hash>/...pdf` (Strapi). Se llega con el Browser pane (clic en el botón FINANÇAS, luego clic en cada número de página y juntar los `href` por JS) y los PDFs bajan con `curl` normal.
+- Bajados a `Clubes/Brasil/Flamengo/` (nombre `demonstracoes-financeiras-<año>.pdf`, md5 distintos, verificados con `pdftotext` de las primeras páginas): **2023** (82 pp, 33 MB), **2022** (84 pp), **2021** (86 pp), **2020** (67 pp, "31 de dezembro de 2020"), **2019** (76 pp, primer año con auditor independiente según el propio texto), **2018** (41 pp). Se suman a los 2024 y 2025 ya cargados.
+- Existen además en el mismo portal (NO bajados): `Demonstracao_Financeira_2016` y `_2017`, `Financial_Statements_2021` (versión en inglés de 2021) y los relatórios trimestrais 2016-2026 (`Relatorio_de_Transparencia_...Trimestre`). Con 2016-2017 la serie llega a 10 ejercicios.
+- Pendiente real de datos: ninguno para llegar a 5; el trabajo que queda es onboarding (2018-2023 sin cargar en el sitio).

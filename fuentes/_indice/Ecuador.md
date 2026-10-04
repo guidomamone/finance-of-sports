@@ -12,10 +12,10 @@ S.A.D.P./SAD — el reglamento que habilita la conversión recién se emitió en
 club grande la completó. Todos los clubes de abajo siguen siendo sociedades civiles sin fines de
 lucro.
 
-- [Barcelona SC](../Ecuador/Barcelona SC.md) — sin PDFs ni fuente pública identificada; club "analiza" conversión a SAD, sin trámite iniciado — Último chequeo: 2026-09-13
-- [Emelec](../Ecuador/Emelec.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
-- [LDU Quito](../Ecuador/LDU Quito.md) — PDF real, pero del club social consolidado (educación + country club), no del fútbol aislado; evaluado para carga y descartado (sesión 2026-09-25, ver ficha) — Último chequeo: 2026-09-25
-- [Independiente del Valle](../Ecuador/Independiente del Valle.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 403 — Último chequeo: 2026-09-13
+- [Barcelona SC](../Ecuador/Barcelona SC.md) — sin PDFs ni fuente pública identificada; club "analiza" conversión a SAD, sin trámite iniciado · **Barrido 2026-10-03**: estado de resultados y situación 2018 firmados por el club (3 págs, escaneado); informes posteriores solo a socios — Último chequeo: 2026-10-03
+- [Emelec](../Ecuador/Emelec.md) — sin PDFs ni fuente pública identificada · **Barrido 2026-10-03**: Estados Financieros 2023 auditados (40 págs, escaneado) recuperados por Wayback del sitio viejo; 1 ejercicio — Último chequeo: 2026-10-03
+- [LDU Quito](../Ecuador/LDU Quito.md) — PDF real, pero del club social consolidado (educación + country club), no del fútbol aislado; evaluado para carga y descartado (sesión 2026-09-25, ver ficha) · **Barrido 2026-10-03**: solo club social 2022, ningún otro año en el sitio ni en Wayback — Último chequeo: 2026-10-03
+- [Independiente del Valle](../Ecuador/Independiente del Valle.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 403 · **Barrido 2026-10-03**: Memoria de Sostenibilidad 2023 en Drive no accesible; lead sin verificar — Último chequeo: 2026-10-03
 - [Aucas](../Ecuador/Aucas.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
 - [Delfín SC](../Ecuador/Delfin SC.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13
 - [Universidad Católica](../Ecuador/Universidad Catolica.md) — sin PDFs ni fuente pública identificada — Último chequeo: 2026-09-13

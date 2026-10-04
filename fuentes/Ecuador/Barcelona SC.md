@@ -1,5 +1,7 @@
 # Barcelona SC
 
+**Ángulos**: sitio oficial: **ENCONTRADO vía Wayback** (informe 2018 en el sitio viejo; el actual solo convocatorias) · regulador/país: no aplica (club civil) · Wayback CDX: **ENCONTRADO** (2018) · búsqueda web: confirma que los informes 2021-2023 se reparten a socios por mail, no públicos · barrido: 4 (Sonnet) — 2026-10-03
+
 - Sin PDFs ni fuente pública identificada. Ninguno de los dos tiene una sección de transparencia o
   estados financieros en su propio sitio (barcelonasc.com.ec, emelec.com.ec — se probaron rutas
   típicas tipo `/transparencia/` y `/estados-financieros/`, ambas 404). No se intentó buscarlos en
@@ -33,3 +35,10 @@
   directamente al club.
 - Contacto: sin sección propia identificada; supercias.gob.ec no aplica todavía (ver arriba).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet) — HALLAZGO: Informe Financiero 2018
+
+- Guardado `Clubes/Ecuador/Barcelona SC/informe-financiero-2018.pdf` (3 págs, ESCANEADO/imagen; verificado a ojo): "Barcelona Sporting Club — Estado de Resultado Integral 01/01/2018-31/12/2018" (ingresos totales 24.057.353,73; resultado del ejercicio -1.386.038,02) y "Estado de Situación Financiera al 31/12/2018" (activos 56.627.630,40; patrimonio 27.145.207,25), firmados por el club (Vicepresidente Financiero, Tesorero, Gerente General, Gerente Financiero, Contador y Auditor Interno) — NO es un informe de auditor externo. Origen: `https://barcelonasc.com.ec/descargas/pdf/INFORME_FINANCIERO_2018.pdf` (sitio viejo; Wayback `20210512081757`).
+- `https://barcelonasc.com.ec/descargas/pdf/2do_informe_cuatrimestral2018.pdf` (Wayback `20210512081255`, 790 KB comprimido): la captura sale TRUNCADA a 1.048.576 bytes (PDF roto) también con `--compressed`; no guardado. Es un informe cuatrimestral 2018 (parcial), valor bajo. `informeSOCIOSBSC2018mayo.pdf` es 301/404 en Wayback.
+- Las convocatorias a asamblea 2022-2025 (barcelonasc.com.ec/2024/03/04/..., etc.) confirman que cada año se trata "informe anual económico del Directorio" + "informe anual de los Auditores Externos (art. 89 del Estatuto)": EXISTEN auditorías externas anuales, pero el sitio actual no las publica (prensa: el informe económico 2023 se envió por mail a los socios para la asamblea del 19-oct-2024). Wp-json media del sitio actual: sin PDFs financieros.
+- Ejercicios en disco: **1** (2018). Candidato a mail/socio (hay hinchas-socios que pueden compartirlos): estados auditados 2019-2024.

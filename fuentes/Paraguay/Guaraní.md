@@ -1,6 +1,7 @@
 # Guaraní
 
-**Ángulos**: sitio oficial: agotado (WordPress, wp-json search de "balance"/"memoria"/"asamblea"/"estados
+**Ángulos**: sitio oficial: clubguarani.com.py (WordPress): wp-json/media solo tiene un PDF de prueba (2021) · regulador/país: sin regulador público (APF fair play financiero es reservado) · Wayback CDX: sin PDF útil · búsqueda web: solo prensa/asambleas · barrido: 1 (Sonnet) — 2026-10-03
+
 contables"/"transparencia"/"presupuesto" + menú completo + páginas Socios/Asociate/Comisión Directiva
 revisadas — sin sección institucional de transparencia ni PDF financiero) · Wayback CDX: agotado (104
 PDFs archivados en todo el dominio clubguarani.com.py, todos "imprimir artículo" de Joomla 2007-2012
@@ -36,3 +37,8 @@ aprueba memoria y balance en asamblea, sin PDF publicado) · regulador/país: no
   contacto directo del club en esta sesión para evaluarlo — quedaría para una sesión de `club-outreach`
   que primero busque el contacto.
 - Último chequeo: 2026-09-27.
+
+## Barrido 2026-10-03
+
+- clubguarani.com.py (WordPress): wp-json/media solo tiene un PDF de prueba (2021); Wayback solo PDFs generados del CMS viejo (2007-2012, notas).
+- Ver `_notas-generales.md` de Paraguay para la metodología del país (qué obligación de publicar existe y por qué no hay canal público).

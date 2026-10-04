@@ -1,5 +1,7 @@
 # Club Deportivo Cuenca
 
+**Ángulos**: sitio oficial: agotado (solo informe 2026 semestral) · regulador/país: no aplica · Wayback CDX: hecho (12.191 URLs, 0 informes económicos antes de 2026) · búsqueda web: sin novedad · barrido: 4 (Sonnet) — 2026-10-03
+
 - **Hit real, pero OJO con el tipo de documento — no es un balance/estado financiero auditado
   tradicional.** Club Deportivo Cuenca es (como todos los clubes profesionales ecuatorianos a
   septiembre 2026 — ver `_notas-generales.md`) una sociedad civil sin fines de lucro, no una S.A.D.P.
@@ -55,3 +57,7 @@
   Preguntas genuinas (incluida la ya anotada por la sesión de sourcing sobre "Remuneraciones y
   obligaciones de plantilla" vs. "Sueldos y remuneraciones") anotadas en `Admin/dudas-por-club.md`.
 - Último chequeo: 2026-09-25.
+
+## Barrido 2026-10-03 (sourcing Perú/Ecuador, Sonnet)
+
+CDX del dominio completo `clubdeportivocuenca.com`: los únicos PDFs son el estatuto (2021) y nada financiero; no hay "informe económico/presidencial" archivado de años previos (el de enero-junio 2026 es el primero). Los links de Drive no se probaron de nuevo. Ejercicios en disco: 0 devengados (los 2 PDFs son informes de caja, ya descartados). Candidato a mail: balance 2021-2025 (el club ya mostró voluntad de transparencia y el informe SRI/IESS cita pagos 2021-2026).
