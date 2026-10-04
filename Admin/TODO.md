@@ -625,3 +625,39 @@ perdieron sino que se descartaron:
 115. OCEANÍA — DECIDIR EL ESTATUS DE LAS COPIAS NO OFICIALES. Sydney, West Coast, Port Adelaide, Gold Coast y GWS (AFL) están cubiertos solo por el espejo footyindustry.com (copias de ASIC Form 388, muchas escaneadas); también partes de Fremantle, Adelaide, North Melbourne, Western Bulldogs y Richmond 2012-17. Los PDFs están guardados pero no se trackean (`.gitignore`). Antes de onboardear alguno: decidir si una copia ASIC de un espejo cuenta como fuente (reliability `secondary_mirror`) o hay que pedir el original. Richmond y Cowboys publican solo un "concise financial report": decidir si alcanza.
 
 116. OCEANÍA — VERIFICACIONES PENDIENTES ANTES DE CARGAR: Western Bulldogs 2013 (pesa exactamente 2.097.152 bytes, posible truncado), Cricket NSW (¿FS completos?) y Cricket Victoria 2024-25 (¿resumido?), NZ Cricket (estados resumidos con ISA 810), Collingwood 2011 (escaneo), Penrith (el club NRL PDRLFC no consolida; el consolidado es el leagues club PRLC), Souths (el Member Co no consolida al club NRL).
+
+117. ASEC MIMOSAS (Costa de Marfil): 15 PDFs en disco, SIN TRANSCRIBIR NI CARGAR (sourcing de África,
+    2026-10-03). Carpeta `Clubes/Costa de Marfil/ASEC Mimosas/`, detalle y tabla de ejercicios en
+    `fuentes/Costa de Marfil/ASEC Mimosas.md`. Son 2009-2010 y 2012-2024, en FCFA, un compte d'exploitation
+    + bilan por año (2009 es escaneo, el resto tiene texto). Es la primera fuente africana cargable y la de
+    más años de todo el continente. Falta: (a) ejercicio 2011 (aviso en `asec.ci/fr/2011/02/16/`, el PDF no
+    apareció en el CDX) y 2025 (AG del 23/08/2026; el sitio vivo da 500 en `/document/compte-exploitation`,
+    reintentar o esperar captura de Wayback); (b) decidir antes de onboardear si se carga la asociación sola
+    o el grupo consolidado (el club publica los dos resultados); (c) pasarlos por la escalera de
+    transcripción y por `club-data-mapping` — es una ASOCIACIÓN con recetas de transferencias y subvenciones
+    de la FIF/sponsors, categorías propias.
+
+118. OMPIC/directinfo.ma — RAJA CLUB ATHLETIC S.A. (Marruecos): GESTIÓN DE GUIDO. La ficha gratuita lista
+    "Etats de synthèse 2025" por 75 MAD (unos 8 USD), RC 467977, depositado. Requiere cuenta OMPIC + pago, un
+    agente no puede. Un solo ejercicio (la S.A. no tiene depositados años anteriores), así que no alcanza
+    por sí solo para 5. Wydad NO vale la pena: su S.A. (RC 398831) no tiene ningún bilan depositado.
+    Ver `fuentes/Marruecos/_notas-generales.md`.
+
+119. TARAJI HOLDING / ESPÉRANCE DE TÚNEZ: revisar cada tanto si el CMF dio el visa y se publicó el prospecto
+    (`cmf.tn/?q=prospectus-vis-s-par-le-cmf`, `?q=visas-capital`, `?q=documents-de-r-f-rences-enregistr-s-aupr-s-du-cmf`).
+    Hoy (2026-10-03) el expediente lleva más de un año sin visa. Cuando salga trae ~3 ejercicios consolidados
+    auditados. Sin fecha fija. Ver `fuentes/Túnez/Espérance de Túnez.md`.
+
+120. SUDÁFRICA, PAIA (decisión de Guido): el manual PAIA de Orlando Pirates (leído 2026-10-03) confirma que los
+    AFS existen y se piden por solicitud formal al Information Officer (Darryl Joselowsky,
+    darrylj@orlandopiratesfc.co.za), pero la ley (art. 50) pide justificar un derecho propio y el club puede
+    negarse. Probabilidad baja. Candidato a una solicitud de prueba, mismo mecanismo en Chiefs y Sundowns.
+    Antes de mandar nada, `club-outreach`. Ver `fuentes/Sudáfrica/Orlando Pirates.md`.
+
+121. ÁFRICA, FALTA LA ESCALERA COMPLETA en: Argelia (comptes sociaux en el CNRC: verificar si un tercero puede
+    consultarlos y a qué costo), Kenia/Tanzania/Ghana/Senegal/Camerún/Zambia/Zimbabue/Angola/Mozambique/RD Congo/
+    Etiopía/Libia/Mauricio (solo 1 búsqueda web cada uno en el mejor caso, sin canal), y otros clubes
+    de Costa de Marfil (Africa Sports, Stade d'Abidjan, SOA). Lección del barrido: el hallazgo de ASEC vino de
+    un barrido CDX de dominio completo filtrando PDF, no de la búsqueda web; replicarlo en los sitios
+    oficiales de los clubes grandes de cada país antes de dar el país por vacío.
+

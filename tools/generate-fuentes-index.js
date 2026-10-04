@@ -145,6 +145,9 @@ const OVERRIDES = {
   'Portugal|Arouca': { doc: false, motivo: '4 ejercicios existen pero truncados en Wayback, no usables' },
   'Suiza|Basel': { doc: true, motivo: '18 documentos 2005-2021' },
   'España|Real Sociedad': { doc: false, motivo: 'el depósito existe, el PDF queda detrás de un informe pago' },
+  'Marruecos|Wydad AC': { doc: false, motivo: 'la S.A. no tiene ningún bilan depositado en OMPIC (ficha gratuita verificada 2026-10-03)' },
+  'Marruecos|Raja Casablanca': { doc: false, motivo: 'bilan 2025 depositado en OMPIC (75 MAD) pero requiere cuenta+pago de Guido; no descargado' },
+  'Túnez|Espérance Sportive de Tunis': { doc: false, motivo: 'Taraji Holding sin visa CMF ni prospecto todavía' },
 
   // 13 CONFLICTOS de la corrida del 2026-09-23 (to-do 48), tras sumarse el sourcing
   // de Brasil/Colombia/México de la Versión 201-202.
