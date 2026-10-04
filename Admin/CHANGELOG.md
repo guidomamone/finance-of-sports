@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 473 — Skill de onboarding nuevo, para el pipeline; HANDOFF archivado (2026-10-04)
+
+- `.claude/skills/club-or-year-onboarding/SKILL.md` reescrito (texto aprobado por Guido): objetivo, arranque, los dos tipos de sesión (correr clubes / mejorar un script), reglas de Guido (incluidas las que estaban solo en la memoria de Claude), lotes de prueba, trampas, lo que el pipeline no cubre, cierre y mantenimiento. Sin versiones ni fechas.
+- `Admin/HANDOFF-pipeline.md` → `Admin/Archive/HANDOFF-pipeline-hasta-2026-10-04.md`. Referencias repuntadas en `Admin/PIPELINE.md`, `Admin/ESTADO.md` y to-do 108.
+- To-do 140(l): que el pipeline cubra presupuestos.
+
 ## Versión 472 — Estudio de qué documentos partir (2026-10-04)
 
 - `auditorias/2026-10-04-partir-archivos.md` (nuevo, hecho por un subagente, solo lectura): qué se lee en cada sesión (≈225 KB) y 4 particiones recomendadas.

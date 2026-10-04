@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-04 (Versión 473).** El HANDOFF corto del pipeline, al terminar la mudanza. Hoy: cómo se trabaja, en el skill `club-or-year-onboarding`; el proceso, en `Admin/PIPELINE.md`; los descartes, en `Admin/HALLAZGOS-pipeline.md`; los pendientes, en `Admin/TODO.md` (138 a 142).
+
 # HANDOFF: de un PDF a un año cargado en el sitio
 
 Mientras dura la mudanza a archivos propios (Versión 469): el proceso, caja y deuda y las decisiones tomadas están en

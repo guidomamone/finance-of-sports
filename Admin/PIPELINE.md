@@ -1,8 +1,8 @@
 # PIPELINE: de un PDF a un año cargado en el sitio
 
 Referencia del proceso nuevo: qué hace cada etapa, sus escaleras y compuertas, y las decisiones de Guido que lo parametrizan.
-Se actualiza en la misma sesión en que cambia una tool (decisión de Guido, 2026-10-04, Versión 469). Cómo se trabaja con el
-pipeline (reglas, medición, arranque) está en `Admin/HANDOFF-pipeline.md`; lo que se midió y no entró, en `Admin/HALLAZGOS-pipeline.md`.
+Se actualiza en la misma sesión en que cambia una tool. Cómo se trabaja con el pipeline (reglas, medición, arranque) está en el skill
+`club-or-year-onboarding`; lo que se midió y no entró, en `Admin/HALLAZGOS-pipeline.md`.
 
 ---
 
@@ -334,7 +334,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
   (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
-- Va acá lo que Guido decide forzar. NO va en el HANDOFF ni en una respuesta de la cola (esa se ata al texto de la pregunta).
+- Va acá lo que Guido decide forzar. NO va escrita en un documento (ningún script lo lee) ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana
 

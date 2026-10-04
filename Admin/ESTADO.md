@@ -51,7 +51,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 
 - Seis clubes cargados enteros por el proceso nuevo (`tools/lote.mjs` + `cargar.mjs` + `caja-deuda.mjs`): UC, Fortaleza CEIF, Goiás,
   Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025, estados separados; caja y deuda en parte cargadas a mano). El estado y lo
-  pendiente del pipeline viven en `Admin/HANDOFF-pipeline.md` ("Dónde estamos"). Desde el 2026-10-04 (Versiones 441-464): el pipeline no
+  pendiente del pipeline viven en `Admin/PIPELINE.md` y en `Admin/TODO.md` (to-dos 138 a 142). Desde el 2026-10-04 (Versiones 441-464): el pipeline no
   paga dos veces lo mismo (compuerta de perímetro y cierre, validación por página, caché que sabe si el .md cambió, reintento acotado y en
   el mismo modo, gasto por documento); caja y deuda leen el perímetro y la escala en la compuerta; Fortaleza 2017 recargado con los gastos
   desglosados; el caché de `Generados/` (.json) se respalda en git; listas fijas de prueba en `Admin/prueba-*.txt`.
@@ -62,8 +62,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   transcripción (Mistral, documento entero) hasta la categorización (precedente del club -> Jev >= 0,90 -> Claude por API >= 0,80), y deja `<md>.rubros.json` /
   `<md>.jev.json` / `<md>.categorias.json`. La validación paga (Gemini, Claude) solo toca páginas con números que los chequeos gratis no respaldan. Cargar el
   ejercicio al sitio por script NO existe todavía (to-do 108; `tools/proponer-carga.mjs` solo mide; `tools/alta-club.mjs` propone el alta de un club nuevo). El registro por PDF (motor que hizo el `.md`, estado, reservas) es `Admin/transcripciones-estado.jsonl`.
-- Inventario hoy: 3.358 PDFs; 316 cargados; 1.106 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/HANDOFF-pipeline.md`
-  (estado, decisiones de Guido, números medidos, qué falta).
+- Inventario hoy: 3.358 PDFs; 316 cargados; 1.106 sin ningún `.md`; el resto en distintos estados de validación. Para entender todo: `Admin/PIPELINE.md`
+  (el proceso y las decisiones de Guido) y el skill `club-or-year-onboarding` (cómo se trabaja).
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por

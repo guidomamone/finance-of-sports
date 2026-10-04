@@ -81,7 +81,7 @@ perdieron sino que se descartaron:
        tienen el `.md` validado y siguen disponibles como fuente; falta detectar cuáles traen un total usable.
     3c. **REEMPLAZADO POR "EL PROCESO NUEVO" (Versión 324, 2026-10-01)**: la selección de filas por palabras de 3b reproduce 7-11% de lo
        cargado; se diseñó con Guido y se construyó localizar -> validar -> extraer -> verificar con cola humana (`tools/lote.mjs`,
-       `tools/cola.mjs`). Detalle, riesgos y lo que falta construir: `Admin/HANDOFF-pipeline.md`, "El proceso nuevo". Siguiente paso: el
+       `tools/cola.mjs`). Detalle, riesgos y lo que falta construir: `Admin/PIPELINE.md`. Siguiente paso: el
        lote 01 (`node tools/lote.mjs --lista Admin/lote-01.txt`, ~US$ 0,8), refinando en lotes de 5.
     4. Los 1.192 PDFs SIN ningún `.md` son otro trabajo (`node tools/onboard.mjs --all`), no entran acá.
     5. Nota: los `.md` viejos re-hechos quedan con su original en `<nombre>.previo-<motor>.md` (gitignoreado).
@@ -122,6 +122,8 @@ perdieron sino que se descartaron:
     (j) Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
     (k) Que las diferencias por grupo de países (`logica` de `tools/grupos-pais.mjs`, lo que muestra `node tools/estado.mjs --logica`)
         pasen a ser configuración que las tools lean, grupo por grupo.
+    (l) Que el pipeline cubra presupuestos: hoy `localizar.mjs` no los elige y se cargan a mano (`Admin/ARQUITECTURA.md` ex §11,
+        presupuesto y balance del mismo año; `Admin/CONVENCIONES.md` ex §15, presupuesto en año calendario).
 
 141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
     (a) Cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados).
