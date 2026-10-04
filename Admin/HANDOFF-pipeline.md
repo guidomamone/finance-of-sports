@@ -26,13 +26,14 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
 
 1. **No pagar dos veces lo mismo en las APIs** (pedido de Guido, 2026-10-04). Hecho: compuerta antes de localizar (V441), `--reintentar`
    solo lo que destraba la carga y `--detalle` (V442), validación por página (V443). Falta:
-   - (iv) el caché de localizar, extraer y validar no sabe si el .md cambió (hoy: "existe el archivo"). Casos: Juventus 2021-22 (.md
-     13:54, localizar/extraer 13:36-13:37; el resolver corrió 4 líneas) y Novorizontino 2025 (.md 22:55, cachés 22:46-22:47). Guardar
-     la huella del .md en `.ubicacion/.filas/.validacion.json` (patrón de `huellas.mjs`).
+   - (iv) EN CURSO (ok de Guido): el caché de localizar, extraer y validar no sabe si el .md cambió (hoy: "existe el archivo"). Medido:
+     Juventus 2021-22 tiene 148 de 149 filas de `.filas.json` fuera de su línea (corridas -5, -9 y -12 por el rearmado y el resolver; ej.
+     "Ticket sales" 32,293,161 citada en L4855, hoy en L4850); Novorizontino 2025 (.md más nuevo que sus cachés) tiene las 60 en su lugar.
    - (v) el ensayo estima extraer con US$ 0,07 fijo (sin localizar) o con 4.000 tokens de salida; lo real en Juventus fue US$ 0,18-0,34
      (8.000-15.000 tokens de salida). Estimar por el tamaño de los bloques elegidos o por la mediana del club.
    - (vi) en el resumen final del lote, lo gastado en cada documento y por qué.
-   - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada documento.
+   - Las validaciones viejas no tienen huella por página: el ahorro de V443 empieza después de la próxima corrida del resolver de cada
+     documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
 2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano): el escalón 1 tiene que
    sumar corriente + no corriente de la misma etiqueta (desde 2007, "Loans and other financial liabilities" en dos filas); `caja-deuda.mjs`
    tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
