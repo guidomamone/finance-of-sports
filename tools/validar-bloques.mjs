@@ -32,6 +32,7 @@ import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
 import { verifyNumbers, extractNumbers, norm as normNum, NUM_RE } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -88,7 +89,7 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
       }
     }
   }
-  const datos = { pdf, md, modo, motivoModo: v.reason || null, generado: new Date().toISOString(), fuentes, confirmados, noConfirmados };
+  const datos = { pdf, md, mdSha1: shaMd(md), modo, motivoModo: v.reason || null, generado: new Date().toISOString(), fuentes, confirmados, noConfirmados };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, datos, costo: modo === 'digital' ? 0 : Object.values(fuentes).filter((f) => f && f !== 'guardada').length * USD_PAGINA_GEMINI };
 }

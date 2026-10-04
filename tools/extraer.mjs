@@ -30,6 +30,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
+import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -106,7 +107,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
   const r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: reintento?.length ? 'extraer-reintento' : 'extraer', pdf, maxTokens: 32000 });
   if (r.error) return { error: r.error, costo: r.costo };
-  const datos = { pdf, md, modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos };
+  const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo: r.costo };
 }

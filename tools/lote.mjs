@@ -42,6 +42,7 @@ const { verificarLista } = await import('./verificar.mjs');
 const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 const { loadSite } = await import('./proponer-carga.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
+const { cacheAlDia } = await import('./cache-al-dia.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -192,7 +193,13 @@ for (const pdf of docs) {
   const FP = faltaAntesDeLocalizar(pdf, { registro });
   if (FP?.aviso) console.log(`  ${pdf}: compuerta antes de localizar: ${FP.aviso}`);
   else if (FP) { aFijar.push({ pdf, ...FP }); estado[pdf] = `falta fijar el ${FP.falta} antes de localizar`; console.log(`  ${pdf}: FALTA FIJAR EL ${FP.falta.toUpperCase()} antes de localizar (no se paga): ${FP.detalle}`); continue; }
-  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, ampliado: !!reintento, reintento });
+  // ETAPAS 3-5, ¿EL CACHÉ SIGUE SIRVIENDO? (Versión 445, punto 1.iv del HANDOFF, aprobado por Guido el 2026-10-04): si el .md cambió
+  // desde extraer y las filas ya no están en su línea (tools/cache-al-dia.mjs), un año sin cargar se rehace (localizar, validar y extraer;
+  // el ensayo dice el costo) y un año cargado solo avisa (no se paga nada). Caso: Juventus 2021-22, 148 de 149 filas corridas.
+  const CA = REHACER || reintento ? null : cacheAlDia(e.md);
+  const cacheViejo = CA && !CA.alDia && !cargado;
+  if (CA && !CA.alDia) console.log(`  ${pdf}: ${CA.detalle}${cargado ? ' (año cargado: solo aviso, no se rehace)' : ': se rehace localizar, validar y extraer'}`);
+  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento });
   if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
@@ -227,8 +234,8 @@ for (const pdf of docs) {
   }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
-  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento }); usd += V.costo || V.usd || 0;
-  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento, reintento });
+  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo }); usd += V.costo || V.usd || 0;
+  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, reintento });
   if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
