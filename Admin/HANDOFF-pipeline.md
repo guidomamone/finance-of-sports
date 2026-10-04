@@ -38,7 +38,7 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
      documento (decisión de Guido, 2026-10-04: no sembrar huellas en el historial).
 2. **Caja y deuda** (defectos vistos con Juventus; deuda 2007-2025 y caja 2022, 2024, 2025 hoy cargadas a mano). Hecho: corriente + no
    corriente de la misma etiqueta (V451) y la página del balance con "Cash flow hedge reserve" (V452): deuda de Juventus 9 de 21 iguales
-   solas. Falta, en orden: `caja-deuda.mjs` tiene que respetar el ajuste `perimetro` (lee el primer balance del .md, el consolidado); la escala (`factorPorIngresos`) no puede
+   solas; y el perímetro (V454): Juventus caja 17 de 23 y deuda 12 de 21 iguales. Falta, en orden: la escala (`factorPorIngresos`) no puede
    confundirse con filas de ajuste manual (2003-2006 salió en miles); "4) Due to banks" no matchea por el número adelante. Escalón 3
    (media móvil) aprobado y en pausa.
 3. **Juventus 2022, a tratar:** que `avisarRegistro` exija confirmados solo los bloques que usa la lectura ganadora (se destrabó con 29

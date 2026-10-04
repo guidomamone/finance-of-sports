@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 454 — Caja y deuda respetan el ajuste de perímetro (2026-10-04)
+
+- `caja-deuda.mjs`: cada página del balance con título como encabezado se marca "consolidado" o "individual" (la siguiente sin título hereda). Con ajuste `perimetro` y páginas de ese perímetro en el .md, las filas del otro dejan de contar como balance; si el .md trae los dos perímetros, solo cuentan las páginas marcadas con el del ajuste (los resúmenes del balance en el informe de gestión, sin marca, también quedan afuera).
+- En el camino (escalones): sacar las páginas sin marca en TODOS los documentos hacía perder Juventus caja 2008 y metía una suma casual en deuda 2015: se limitó a los documentos con los dos perímetros.
+- Medido con `--medir`: UC, Fortaleza CEIF, Goiás, Novorizontino y AEL Larissa idénticos; Juventus caja de 12 a 17 iguales (2021, antes distinto, y 2022-2025), deuda de 9 a 12 (2021, 2022, 2024); ningún año empeora.
+
 ## Versión 453 — Probado y NO adoptado: filtrar lo que aprende el precedente de deuda (2026-10-04)
 
 - Objetivo: que el escalón 0 de `caja-deuda.mjs` no aprenda sumas casuales (Juventus 2017: "Players' registration rights, net + Tangible assets in progress", dos ACTIVOS; 2018 da 332,3 M contra 329,2 M cargado).
