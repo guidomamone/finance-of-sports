@@ -85,6 +85,7 @@ const testigos = new Set(lineas.filter((l) => /^testigo\s+/i.test(l)).map((l) =>
 const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/documentos-descartados.txt)`); return false; } return true; });
 if (docs.length > 10) console.log(`OJO: ${docs.length} documentos. El proceso nuevo se refina de a 5 (pedido de Guido).`);
+const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
 // silencioso: para las tools que se llaman solo por su efecto y imprimen un resumen de TODO el proyecto (inventario-transcripciones.mjs
@@ -138,7 +139,11 @@ for (const pdf of docs) {
   // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
   // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
   // sueldos en 0 (Admin/lote-08b.txt).
-  const cargaFresca = (() => { try { const pc = resolve(ROOT, derivado(e.md, '.carga.json', { crear: false })); const pa = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl'); return existsSync(pc) && (!existsSync(pa) || statSync(pc).mtimeMs >= statSync(pa).mtimeMs); } catch { return false; } })();
+  // (Versión 461, grupo A de los defectos chicos, aprobado por Guido el 2026-10-04) AL DÍA POR DOCUMENTO: la propuesta es vieja solo si hay un
+  // ajuste manual del MISMO documento o de su CLUB con fecha igual o posterior al día de la propuesta (mismo día = vieja, igual de prudente
+  // que antes). Hasta acá se comparaba con la fecha del archivo de ajustes ENTERO: un ajuste de Novorizontino dejaba "vieja" la propuesta
+  // de Fortaleza 2017 y su reintento no corría (86 de 87 propuestas de prueba-completa contaban como viejas; por documento y club, 58).
+  const cargaFresca = (() => { try { const c = leerDerivado(e, '.carga.json'); if (!c?.generado) return false; const dia = String(c.generado).slice(0, 10); const carpeta = pdf.split('/').slice(0, 3).join('/') + '/'; return !ajustesTodos().some((a) => (a.pdf === pdf || a.pdf === carpeta) && String(a.fecha || '') >= dia); } catch { return false; } })();
   // AÑO YA CARGADO SEGÚN EL SITIO (Versión 442): el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
   // data/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
@@ -347,7 +352,10 @@ const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
 for (const pdf of docs.filter((d) => !testigos.has(d))) {
   const e = registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
   const anio = c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf;
-  if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
+  // (Versión 461) un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (Novorizontino 2018-2021 y
+  // 2024, Juventus 2012: propuestas de antes del alta del club decían "el club no existe en el sitio").
+  if (e?.md && yaEnSitio(e)) resultado.yaCargado.push({ anio });
+  else if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
   else if (!(c.frena || []).length) resultado.listo.push({ anio });
   else if ((c.frena || []).some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) resultado.yaCargado.push({ anio });
   else resultado.frenado.push({ anio, motivo: `[${c.frena[0].etapa}] ${String(c.frena[0].motivo).slice(0, 110)}` });
