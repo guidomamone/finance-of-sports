@@ -135,13 +135,21 @@ Los pendientes están en "Dónde estamos", punto 1.
 Los comandos:
 
 ```bash
-node tools/lote.mjs --lista Admin/lote-02.txt                               # ensayo: qué haría y cuánto cuesta (gratis)
-caffeinate -i node tools/lote.mjs --lista Admin/lote-02.txt --ejecutar      # de verdad (lo corre Guido)
+node tools/lote.mjs --lista Admin/lote-NN.txt                               # ensayo: qué haría y cuánto cuesta (gratis)
+caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar      # de verdad (lo corre Guido)
+caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
 node tools/cola.mjs                                                         # la cola humana
-node tools/estado.mjs                                                       # el tablero de todos los PDFs (gratis)
+node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
+node tools/inventario-transcripciones.mjs                                   # el registro, con la etapa de cada estado (gratis)
+node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # lo gastado por documento en una corrida pasada
 ```
 
-`lote.mjs` corre las etapas 3 a 8 sobre una lista chica. Lo que ya está hecho no se repite (se guarda en `Generados/`).
+`lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
+- Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
+  misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
+- El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,12-0,32).
+- Al final: el gasto por documento y por tarea, con "N.ª vez" si esa tarea ya se había pagado para ese PDF; y el RESULTADO (listos,
+  frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja).
 
 ### 1 Conseguir
 
@@ -176,6 +184,8 @@ Mitigaciones:
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
             COMPUERTA por página (Versión 411): la rearmada tiene que conservar al menos la mitad de las filas de tabla; si no, queda
             la anterior (Novorizontino 2025: estado de resultados girado 90°)
+            Solo cuentan los números sin confirmar de bloques ELEGIDOS HOY (Versión 458): una validación hecha con otra localización
+            (otro perímetro) no dispara el rearmado
  ESCALÓN 2  (falta) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```
@@ -249,7 +259,7 @@ Mitigaciones:
 
 ### 5 Extraer
 
-- a) `extraer.mjs` (IA, ~US$ 0,07) recibe solo los bloques elegidos, con cada línea numerada.
+- a) `extraer.mjs` (IA, ~US$ 0,12; hasta ~US$ 0,35 en documentos largos) recibe solo los bloques elegidos, con cada línea numerada.
 - b) Devuelve las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto,
   financiero, impuesto), qué renglón del estado desglosa cada fila de nota, y la escala de cada bloque.
 - c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
@@ -309,6 +319,8 @@ Mitigaciones:
  COLA HUMANA (perímetro, cuadro de otro año, fila ilegible y "otro" siempre llegan)
 ```
 - g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
+- h) **Compuerta del registro** (deja el documento "listo" para categorizar): exige confirmados solo los números de los bloques que usa la
+  lectura que cerró (las filas que se cargan); un número de una nota que no se carga no frena (Versión 457).
 - Tool: `verificar.mjs` (gratis, sin IA: un modelo de lenguaje no sirve para verificar sumas).
 
 Riesgos:
@@ -366,6 +378,8 @@ Mitigaciones:
  CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso
+ "NO ES RUBRO"    (fila verificada con lado, dicho por la IA) excluirla ─► si la carga no cierra, incluirla (a la cola) ─► gana la que
+                  cierra; el intento descartado no escribe en la cola (Versión 462)
 ```
 - Hoy en el lote es solo propuesta: no escribe el sitio.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
@@ -397,9 +411,11 @@ errores"). Un documento se marca para reintentar por dos motivos:
 
 Qué pasa después:
 
+- Antes del primer pago de cada documento, la compuerta de la etapa 3 (perímetro y cierre fijados).
 - Al final del lote aparecen dos listas con su comando (Versión 442): lo que destraba la carga (`--reintentar`: categoría en 0, o desglose
   que no suma con la etapa 6 sin cerrar) y el detalle opcional (`--reintentar --detalle`: desglose que no suma con la etapa 6 cerrada; el
-  año se carga igual con el renglón sin abrir). Un año ya cargado (registro o sitio) solo se reintenta por categoría en 0.
+  año se carga igual con el renglón sin abrir). Un año ya cargado (registro o sitio) solo se reintenta por categoría en 0, y solo si su
+  propuesta de carga está al día: ningún ajuste manual del mismo documento o de su club con fecha igual o posterior (Versión 461).
 - El reintento vuelve a localizar con un índice más permisivo (cuenta las filas que terminan en "-") y con la lista de lo que faltó, y
   extrae con esa misma lista (y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado).
 - Una sola vez por documento (también por "categoría en 0": queda la marca `.reintento-categorias.json`). Si sigue faltando, se carga con aviso.
