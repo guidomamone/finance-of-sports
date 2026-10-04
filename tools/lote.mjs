@@ -33,7 +33,7 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
 import { validar } from './validar-bloques.mjs';
-import { extraer } from './extraer.mjs';
+import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
@@ -157,7 +157,7 @@ for (const pdf of docs) {
   const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
   if (candidatoNotas || candidatoAjuste) {
     const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
-    if (L3.ensayo) { usd += L3.usd + 0.07; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ~US$ 0,07`); continue; }
+    if (L3.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
@@ -174,7 +174,7 @@ for (const pdf of docs) {
   // (Versión 397) el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
   const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
   if (pagsTP) {
-    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar y extraer ~US$ 0,12`); if (!EJECUTAR) usd += 0.12; continue; }
+    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);
     console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
     const L4 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
@@ -200,7 +200,7 @@ for (const pdf of docs) {
   const cacheViejo = CA && !CA.alDia && !cargado;
   if (CA && !CA.alDia) console.log(`  ${pdf}: ${CA.detalle}${cargado ? ' (año cargado: solo aviso, no se rehace)' : ': se rehace localizar, validar y extraer'}`);
   const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento });
-  if (L.ensayo) { usd += L.usd + 0.07; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ~US$ 0,07 (estimado)`); continue; }
+  if (L.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {

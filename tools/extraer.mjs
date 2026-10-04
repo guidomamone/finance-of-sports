@@ -87,6 +87,19 @@ export const INSTRUCCION_NOTAS_COMO_ESTADO = `ESTE DOCUMENTO NO TIENE ESTADO DE 
 
 // REINTENTO (Versión 336): `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
 // agrega a la IA una instrucción SOLO en ese caso (decisión de Guido: las reglas extra son para cuando hay errores, no para el camino limpio).
+// EXTRAER SIN LOCALIZAR TODAVÍA (Versión 446): no se conocen los bloques, así que el ensayo usa lo que costó extraer en ESE club (mediana de
+// sus llamadas en Admin/claude-api/resultados.jsonl); sin historia, el techo de las 155 extracciones medidas (percentil 90, US$ 0,32; la
+// mediana es US$ 0,12). Antes era US$ 0,07 fijo: Juventus costó US$ 0,18-0,34 por año.
+const TECHO_EXTRAER = 0.32; const MEDIANA_EXTRAER = 0.12;
+let _costosExtraer = null;
+export function estimarExtraerSinBloques(pdf) {
+  if (!_costosExtraer) { _costosExtraer = []; try { for (const l of readFileSync(resolve(ROOT, 'Admin', 'claude-api', 'resultados.jsonl'), 'utf8').split('\n')) { if (!l.includes('"extraer')) continue; try { const x = JSON.parse(l); if (/^extraer/.test(x.tarea) && x.pdf) _costosExtraer.push(x); } catch { /* línea rota */ } } } catch { /* sin log */ } }
+  const club = pdf.split('/').slice(0, 3).join('/') + '/';
+  const c = _costosExtraer.filter((x) => String(x.pdf).includes(club)).map((x) => x.costUsd).sort((a, b) => a - b);
+  if (c.length) return { usd: c[Math.floor((c.length - 1) / 2)], texto: `~US$ ${c[Math.floor((c.length - 1) / 2)].toFixed(2)} (mediana de ${c.length} extracciones del club)` };
+  return { usd: TECHO_EXTRAER, texto: `~US$ ${MEDIANA_EXTRAER.toFixed(2)}-${TECHO_EXTRAER.toFixed(2)} (club sin historia; el total usa ${TECHO_EXTRAER.toFixed(2)})` };
+}
+
 export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null } = {}) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -101,7 +114,11 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // Cada bloque con sus 3 líneas de arriba (el título y la escala suelen estar ahí), numeradas.
   const texto = ids.map((id) => { const b = ub.bloques[id]; const desde = Math.max(1, b.lineas[0] - 3); return `[${id}] pág. ${b.pagina}\n${L.slice(desde - 1, b.lineas[1]).map((l, k) => `L${desde + k}: ${l}`).join('\n')}`; }).join('\n\n');
   const user = `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: columna "${ub.columna_ejercicio}" (cierre ${e.periodo?.cierre || '?'}); año anterior: columna "${ub.columna_anterior || '?'}". Bloques del estado: ${ub.estado.join(', ')}; notas de ingresos: ${ub.notas_ingresos.join(', ') || '-'}; notas de gastos: ${ub.notas_gastos.join(', ') || '-'}.\n\n${texto}`;
-  if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 4000) }; }
+  // ENSAYO (Versión 446, punto 1.v del HANDOFF, aprobado por Guido el 2026-10-04): la salida se estima como 2 x la entrada. Medido contra
+  // las 155 extracciones reales (US$ 24,03): con 4.000 tokens de salida fijos el ensayo daba US$ 14,76 y subestimaba más de 30% en 68
+  // llamadas; con 2 x la entrada da US$ 25,96 y subestima en 5 (la salida real es 1 a 2,5 veces la entrada, mediana 1,9). Juventus 2023-24:
+  // entrada 6.951, real US$ 0,31, antes US$ 0,11, ahora US$ 0,31.
+  if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 2 * t) }; }
   // LAS NOTAS HACEN DE ESTADO (Versión 360; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO): solo si localizar las eligió así.
   const notasComoEstado = ub.estadoDesdeNotas ? `\n\n${INSTRUCCION_NOTAS_COMO_ESTADO}` : '';
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
