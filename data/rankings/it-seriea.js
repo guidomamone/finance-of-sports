@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie A (IT) — 19 ejercicio(s) con ranking:
+// Serie A (IT) — 20 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -36,6 +37,14 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
         mix:[["Comercial / Sponsors",135.88],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",68.042]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"juventus-it", revenue:547.301, reportType:"official_balance_sheet",
+        sourceId:"juventus-it-annual-financial-report-2022-23",
+        mix:[["Comercial / Sponsors",194.34],["Estadio",66.827],["Televisión",170.772],["Venta de Jugadores",76.243],["Otros ingresos",39.12]] },
     ],
   },
   2021: {
