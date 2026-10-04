@@ -25,7 +25,7 @@
 // QUÉ NO HACE, A PROPÓSITO:
 //   - No dice si un número está bien contra el PDF. Eso solo lo puede hacer quien
 //     tiene el documento delante, al onboardear (ver el skill
-//     `club-or-year-onboarding`, sección 8). Esto audita CONSISTENCIA, no fuente.
+//     `Admin/PANTALLA-FINANZAS.md`, ex §8). Esto audita CONSISTENCIA, no fuente.
 //   - No toca nada. Solo lee y reporta.
 //   - No reemplaza a `auditAll()` en el navegador: los chequeos de consola,
 //     listeners y Chart.js solo se ven con el sitio corriendo.
@@ -169,7 +169,7 @@ function checkEstructura(api) {
     // o ambiguo). El campo AUSENTE es otra cosa: nadie lo chequeó. Los dos se ven igual en pantalla
     // (`pintarCrest()` hace `if(!c)`), así que sin esta distinción la única forma de saber cuál es
     // cuál sería rebarrer todos los clubes, que es justo lo que el paso de onboarding evita.
-    if (!('brandColor' in api.clubs[id])) add('P3', 'club-sin-color-ni-null', `${id}: sin brandColor ni brandColor:null en data/clubs.js — no se distingue "se miró y no lleva color" de "nadie lo chequeó" (ver club-or-year-onboarding §3 punto 1b)`);
+    if (!('brandColor' in api.clubs[id])) add('P3', 'club-sin-color-ni-null', `${id}: sin brandColor ni brandColor:null en data/clubs.js — no se distingue "se miró y no lleva color" de "nadie lo chequeó" (ver club-or-year-onboarding/club-nuevo.md)`);
   }
 
   for (const { clubId, year, ym } of clubYears(api)) {

@@ -108,7 +108,7 @@
 //                  Packers: el catálogo de `data/leagues.js` los tiene inactivos).
 // brandColor       NUNCA lo decide este script. `tools/brand-color-reference/`
 //                  (caché de footylogos) da candidatos, pero la regla de
-//                  `club-or-year-onboarding` §3 1b es identidad primero (¿de qué
+//                  `club-or-year-onboarding/club-nuevo.md` es identidad primero (¿de qué
 //                  color es la camiseta?) y hex después, y un color equivocado se
 //                  lee peor que ninguno. Queda `pendiente`: el campo se escribe
 //                  AUSENTE (= "nadie lo chequeó", P3 `club-sin-color-ni-null`), no
@@ -944,7 +944,7 @@ export function analizar(docArg, sitio, ov = {}) {
     else r.campos.push(campo('sport', deporte, `el .md nombra "${deporte}" ${otros[0][1]} veces y el fútbol ${nFutbol}`, 'pregunta', { pregunta: `El documento parece de ${deporte}, no de fútbol. El catálogo de data/leagues.js tiene ese deporte inactivo (o no lo tiene). ¿Se da de alta igual (y con qué liga), o queda fuera del sitio por ahora?` }));
     // brandColor: nunca lo decide el script
     const candidatos = candidatosColor(displayName);
-    r.campos.push(campo('brandColor', undefined, candidatos.length ? `tools/brand-color-reference/ (footylogos): ${candidatos.map((c) => `[${c.liga}] ${c.name}: ${c.swatches.slice(0, 4).map((s) => s.hex + ' ' + s.label.replace(/ #.*/, '')).join(', ')}`).join(' | ')}` : 'la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)', 'pendiente', { nota: 'el campo queda AUSENTE (= nadie lo chequeó, P3 club-sin-color-ni-null). La decisión es identidad primero (¿de qué color es la camiseta?, Wikipedia del país) y hex después, club-or-year-onboarding §3 1b: no la toma un script. NUNCA escribir null sin haberlo mirado.' }));
+    r.campos.push(campo('brandColor', undefined, candidatos.length ? `tools/brand-color-reference/ (footylogos): ${candidatos.map((c) => `[${c.liga}] ${c.name}: ${c.swatches.slice(0, 4).map((s) => s.hex + ' ' + s.label.replace(/ #.*/, '')).join(', ')}`).join(' | ')}` : 'la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)', 'pendiente', { nota: 'el campo queda AUSENTE (= nadie lo chequeó, P3 club-sin-color-ni-null). La decisión es identidad primero (¿de qué color es la camiseta?, Wikipedia del país) y hex después, club-or-year-onboarding/club-nuevo.md: no la toma un script. NUNCA escribir null sin haberlo mirado.' }));
   }
 
   // ---------------------------------------------------------------- campos del ejercicio
@@ -1154,7 +1154,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   const iso = pais.iso2.toLowerCase();
   const cachePath = resolve(ROOT, 'tools/club-league-reference', `${iso}.json`);
   if (ANOTAR_MISSES) runNode('tools/lookup-club-league.js', [nombre, '--pais', iso, '--anio', String(anio), '--json']);
-  if (!existsSync(cachePath)) return campo('liga', null, `sin caché de rosters para ${iso} (tools/club-league-reference/${iso}.json)`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding §17)' });
+  if (!existsSync(cachePath)) return campo('liga', null, `sin caché de rosters para ${iso} (tools/club-league-reference/${iso}.json)`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))' });
   const data = JSON.parse(readFileSync(cachePath, 'utf8'));
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();
   const exactos = []; const parciales = [];
@@ -1205,7 +1205,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
     return campo('liga', null, `coincidencia NO exacta en los rosters cacheados: ${todos.map((t) => `"${t.club}" en ${t.page}`).join(' | ')}`, 'pendiente', { nota: `fila en null hasta confirmar: ¿"${nombre}" es ${todos.map((t) => `"${t.club}" (${t.leagueId}, ${t.page})`).join(' o ')}?` });
   }
   const cacheados = Object.entries(data.leagues || {}).filter(([, y]) => y[String(anio)]).map(([l]) => l);
-  return campo('liga', null, cacheados.length ? `no aparece en los rosters cacheados de ${anio} (${cacheados.join(', ')}): puede haber jugado otra división` : `no hay ninguna liga-temporada de ${iso} ${anio} cacheada`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)' });
+  return campo('liga', null, cacheados.length ? `no aparece en los rosters cacheados de ${anio} (${cacheados.join(', ')}): puede haber jugado otra división` : `no hay ninguna liga-temporada de ${iso} ${anio} cacheada`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))' });
 }
 
 // ============================================================================
@@ -1253,7 +1253,7 @@ function escribir(r) {
     let clubsJs = readFileSync(clubsPath, 'utf8');
     if (new RegExp(`['"]?${id}['"]?\\s*:\\s*\\{\\s*id:`).test(clubsJs)) throw new Error(`data/clubs.js ya tiene '${id}'`);
     const campos = [`id:${jsStr(id)}`, `name:${jsStr(val('name'))}`, `displayName:${jsStr(val('displayName'))}`, `country:${jsStr(val('country'))}`, `reportingCurrency:${jsStr(val('reportingCurrency'))}`, `fiscalYearStart:${jsStr(val('fiscalYearStart'))}`, `sport:${jsStr(val('sport'))}`];
-    const linea = `  // ${val('displayName')}: alta por tools/alta-club.mjs (${hoy}) desde ${r.documento}. brandColor AUSENTE a propósito\n  // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).\n  ${jsStr(id)}: { ${campos.join(', ')} },\n`;
+    const linea = `  // ${val('displayName')}: alta por tools/alta-club.mjs (${hoy}) desde ${r.documento}. brandColor AUSENTE a propósito\n  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).\n  ${jsStr(id)}: { ${campos.join(', ')} },\n`;
     clubsJs = insertarAntes(clubsJs, 'const clubs = {', /^\};$/m, linea, 'data/clubs.js');
     writeFileSync(clubsPath, clubsJs); escritos.push('data/clubs.js');
 

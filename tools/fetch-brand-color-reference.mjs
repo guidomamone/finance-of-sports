@@ -7,8 +7,8 @@
 //
 // OJO, ESTO NO DECIDE el `brandColor` de un club — solo cachea los swatches que
 // footylogos publica para esa liga, en el mismo orden en que la fuente los
-// lista. Seguí el proceso de `club-or-year-onboarding/SKILL.md` sección 3
-// punto 1b igual que siempre: identidad primero (Wikipedia/liga: ¿de qué color
+// lista. Seguí el proceso de `club-or-year-onboarding/club-nuevo.md`
+// igual que siempre: identidad primero (Wikipedia/liga: ¿de qué color
 // es la CAMISETA?), recién después el hex, y el hex se acepta SOLO si cae en
 // la familia que confirmó el paso 1. Este archivo evita el fetch repetido,
 // nada más — las trampas ya documentadas ahí (bicolor en partes iguales,
@@ -82,7 +82,7 @@ async function main() {
     liga: ligaSlug,
     source: url,
     fetchedAt: new Date().toISOString(),
-    note: 'Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/SKILL.md sección 3 punto 1b para el proceso de decisión.',
+    note: 'Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/club-nuevo.md para el proceso de decisión.',
     clubs,
   };
   const outPath = resolve(outDir, `${outName}.json`);

@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 471 — El skill de onboarding viejo, repartido y archivado (2026-10-04)
+
+- `Admin/PANTALLA-FINANZAS.md` (nuevo): las reglas de pantalla de Finanzas (ex §4-8, §10, §12-14 del skill), sin cambios de texto.
+- `Admin/ARQUITECTURA.md`: sección nueva "Finanzas para cualquier club" con los ex §2, §3 (sin el color) y §11.
+- `.claude/skills/club-or-year-onboarding/club-nuevo.md` (nuevo): color de marca (ex §3 1b, sin la sangría de lista), chequeo contra el escudo y liga (ex §17).
+- `Admin/CONVENCIONES.md`: el presupuesto en año calendario (ex §15) al final; 5 referencias al skill repuntadas.
+- `Admin/Archive/club-or-year-onboarding-hasta-V470.md`: el skill viejo entero, con la tabla de a dónde fue cada sección. El `SKILL.md` queda con esa tabla hasta que se reescriba (paso 4).
+- `alta-club.mjs`, `audit.js`, `lookup-brand-color.js` y `fetch-brand-color-reference.mjs` apuntan a `club-nuevo.md` / `PANTALLA-FINANZAS.md`. Las referencias en `data/`, `js/` y `fuentes/` no se tocaron (se resuelven con la tabla del Archive).
+
 ## Versión 470 — Los pendientes del pipeline, del HANDOFF al TODO (2026-10-04)
 
 - `Admin/TODO.md`: to-dos nuevos 139 (defecto D), 140 (escalones y chequeos que le faltan al proceso, a-k), 141 (la cola humana, a-d) y 142 (decisiones pendientes de Guido, a-c), justo después del 138. Salen de "Dónde estamos", "Pendientes, a decidir con casos reales" y "No construido todavía" del HANDOFF, y de un pendiente que solo estaba en `tools/grupos-pais.mjs` (140k).

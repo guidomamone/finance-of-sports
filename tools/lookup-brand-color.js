@@ -6,8 +6,8 @@
 // cacheada (`tools/fetch-brand-color-reference.mjs`).
 //
 // ESTO NO DECIDE `brandColor` — solo evita volver a pedirle la página a
-// footylogos. Seguí el proceso completo de `club-or-year-onboarding/SKILL.md`
-// sección 3 punto 1b antes de aceptar un hex: identidad primero (¿de qué
+// footylogos. Seguí el proceso completo de `club-or-year-onboarding/club-nuevo.md`
+// antes de aceptar un hex: identidad primero (¿de qué
 // color es la CAMISETA, según Wikipedia/la liga?), el hex solo si cae en esa
 // familia, y las 4 trampas ya documentadas ahí (bicolor en partes iguales,
 // agregador ordenado por el escudo no la camiseta, blanco con acento,
@@ -132,7 +132,7 @@ function main() {
     console.log(`[${m.liga}] ${m.name} (footylogos.com/color-codes/${m.slug})`);
     m.swatches.forEach((s, i) => console.log(`  ${i + 1}. ${s.hex}  ${s.label}`));
   }
-  console.log('\nOJO: el orden de arriba es el de footylogos (por el escudo), NO asumir que el #1 es la camiseta. Confirmar contra Wikipedia/la liga antes de elegir (club-or-year-onboarding sección 3, punto 1b).');
+  console.log('\nOJO: el orden de arriba es el de footylogos (por el escudo), NO asumir que el #1 es la camiseta. Confirmar contra Wikipedia/la liga antes de elegir (club-or-year-onboarding/club-nuevo.md).');
 }
 
 main();

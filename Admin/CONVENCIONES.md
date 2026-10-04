@@ -279,8 +279,8 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   nuevo cargado. (1) Instituto: el Presupuesto 2025 (año calendario, ya transcripto) NO se carga —
   regla nueva: un presupuesto calendario se reconstruye a temporada combinando 2 documentos
   calendario consecutivos, y con uno solo no hay forma de completar ninguna temporada, así que se
-  mantiene la info transcripta sin subir nada incompleto (ver `.claude/skills/
-  club-or-year-onboarding/SKILL.md` sección 15). (2) San Lorenzo: Presupuesto 2023/2024 cargado como
+  mantiene la info transcripta sin subir nada incompleto (ver al final de este archivo, "ex §15").
+  (2) San Lorenzo: Presupuesto 2023/2024 cargado como
   3er ejercicio del club (antes solo 2013/2014) — la transcripción `.md` original salió mal
   alineada por un artefacto de `pdftotext -layout` (números de filas anchas cayendo en líneas
   separadas), así que se re-leyó directo de imágenes renderizadas de la página (300dpi, 3 crops) en
@@ -443,7 +443,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   presupuesto cargado, en vez de mostrar un mensaje de "no hay". Pedido explícito de Guido al ver
   los 4 cards vacíos para Boca 2024/2025 (que tiene balance, no presupuesto). La función
   `noDataMsg()` se borró (ya no la llama nadie). Detalle completo en
-  `.claude/skills/club-or-year-onboarding/SKILL.md` sección 6.
+  `Admin/PANTALLA-FINANZAS.md`, ex §6.
 - REGLA PARA EL FUTURO (Versión 40, pedido explícito de Guido: "es mi manera de hacerte un
   control"): toda fila de "Formato simplificado" tiene que llevar `items` con el desglose real de
   qué campo(s) nativo(s) se sumaron para llegar a ese número, nunca `items:null`. Implementado para
@@ -477,7 +477,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   "Formato simplificado" porque esa plata estaba enterrada en `items` de una línea mal categorizada
   como bolsón sin desglosar, cuando el documento SÍ la desglosaba. Ver
   `.claude/skills/club-data-mapping/SKILL.md` sección 1 (regla completa) y
-  `.claude/skills/club-or-year-onboarding/SKILL.md` sección 8 (cómo detectarlo probando en el
+  `Admin/PANTALLA-FINANZAS.md`, ex §8 (cómo detectarlo probando en el
   navegador: mirar CADA bucket de "Formato simplificado", no solo el total).
 - REGLA (Versión 37, bug visual): el "$" del eje Y del gráfico de barras (card Gráficos) no
   colisiona más con el tick más alto, ver `layout:{padding:{top:26}}` en `drawTrendChart`/
@@ -486,7 +486,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
   `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la pestaña Fuentes, nunca
-  repetida card por card. Ver `.claude/skills/club-or-year-onboarding/SKILL.md`, sección 7.
+  repetida card por card. Ver `Admin/PANTALLA-FINANZAS.md`, ex §7.
 - REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda
   homologar"): los 3 cards de presupuesto oficial de Finanzas: "Supuestos"
   (`#supuestosCard`/`renderSupuestosCard`), "Presupuesto Financiero"
@@ -595,7 +595,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
   contraste del círculo** — para eso están `textoSobre()` (cambia el TEXTO, no el color del
   club) y el aro interno de los colores claros; si aun así no se lleva, va a `null`. El dato
   del club no se toca, que es justamente lo que el campo promete. El procedimiento para
-  resolver el color de un club NUEVO vive en `club-or-year-onboarding/SKILL.md` §3 punto 1b.
+  resolver el color de un club NUEVO vive en `.claude/skills/club-or-year-onboarding/club-nuevo.md`.
 - OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174).
   `grillaConTope()` la usan varias grillas distintas, y su `mostrarTodos` es una
   variable de módulo: si una grilla nueva la prende, "Mostrar más" queda apretado
@@ -613,3 +613,43 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 
 
 **YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 1122 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 169 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba. **Si dejás un archivo nuevo en el repo, va adentro de `Admin/` si es interno (no hace falta tocar este archivo); si lo dejás suelto en la raíz, se publica.**
+
+## REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual (ex §15 del skill de onboarding, Versión 471)
+
+
+Motivo del pedido: Instituto ACC publicó su Presupuesto 2025 (y sus Premisas) en año calendario
+(ene-25 a dic-25, con columna por mes), pero el sitio entero modela todo en TEMPORADA/ejercicio
+económico (el mismo criterio que ya usa el balance auditado real de ese club, jul-jun) — cargar el
+documento tal cual metería un `year` key que no es comparable con ningún otro del mismo club (un
+"año" que arranca en enero, al lado de ejercicios que arrancan en julio).
+
+**La regla, para cualquier club futuro que publique un presupuesto en año calendario**: nosotros
+mismos reconstruimos la temporada, no lo subimos en año calendario. Si el documento tiene desglose
+MENSUAL (columna por mes, no solo un total anual), se puede partir en 2 mitades de 6 meses y sumar
+cada mitad con la mitad correspondiente de OTRO presupuesto calendario (el del año anterior o el
+siguiente) para reconstruir una temporada completa (ene-jun de un año + jul-dic del año anterior =
+temporada jul-jun). Si el documento NO tiene desglose mensual (solo un total del año calendario
+entero), no hay forma de reconstruir ninguna temporada con un solo documento — hace falta el
+documento del año calendario siguiente/anterior igual, para poder recortar cada uno a su mitad útil
+antes de sumarlos.
+
+**Caso real que disparó la regla, Instituto Presupuesto 2025**: SÍ tiene desglose mensual (12
+columnas, ene-25 a dic-25 — ver `Clubes/Argentina/Instituto/presupuesto-2025.md`), así que en teoría
+se podrían reconstruir 2 mitades de temporada: ene-jun 2025 (2da mitad del Ejercicio 2024/2025) y
+jul-dic 2025 (1ra mitad del Ejercicio 2025/2026). Pero Instituto solo tiene ESTE presupuesto
+descargado — no hay un Presupuesto 2024 (para completar la mitad jul-dic 2024 del Ejercicio
+2024/2025) ni un Presupuesto 2026 (para completar la mitad ene-jun 2026 del Ejercicio 2025/2026) —
+así que NINGUNA de las 2 temporadas queda completa con lo que tenemos hoy. Conclusión (regla
+explícita de Guido: "para el caso en que tengamos solo la mitad de un año y sea irreconstruible,
+mantengamos esa info pero no subamos info incompleta"): **no se cargó nada al sitio** para este
+presupuesto — ni el año calendario tal cual (rompería el modelo de datos), ni una mitad de temporada
+sola (sería un ejercicio incompleto, y el sitio no tiene forma de marcar "esto es solo 6 meses" sin
+que se lea como un ejercicio completo raro). El documento y el hallazgo quedan documentados en
+`fuentes/Argentina/Instituto.md` (ver el índice en `fuentes/_indice/Argentina.md`) para que si en el
+futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una de las 2 temporadas
+y recién ahí cargarla.
+
+**Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
+última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
+documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa
+columna es diciembre del MISMO año 2025), no un error de transcripción.
