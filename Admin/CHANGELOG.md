@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 464 — Fortaleza CEIF 2017 recargado con los gastos desglosados (2026-10-04)
+
+- Reintento con las notas como estado (V460) + 4 ajustes `fila` con las partes de la nota de ingresos (L538-541) en lugar de su total + cola contestada (17 casos; Aportes a Icbf y Sena a `wages_squad`, decisión de Guido) + `cargar.mjs --reemplazar --escribir`.
+- Ingresos 5.319,897 en las mismas 4 partes de antes; gastos 3.677,627 en 119 líneas (sueldos del plantel 1.604,683 aparte; antes, 5 renglones con los sueldos dentro de administración); resultado 1.347,094 = impreso. Auditoría 0 P0 / 0 P1; ASSET_V 399 → 400. Queda marcado: el lote no lo vuelve a reintentar.
+
 ## Versión 463 — "Sin verificar" pasa por la validación gratis antes de localizar (2026-10-04)
 
 - `lote.mjs`, etapa 2 escalón 1a: un documento "sin-verificar" (el .md cambió después de validarse) pasa primero por la validación gratis del inventario (solo la carpeta del club); si queda "revisar", sigue el resolver como antes (que paga solo las páginas cambiadas, V443). Corre también en el ensayo (es gratis).

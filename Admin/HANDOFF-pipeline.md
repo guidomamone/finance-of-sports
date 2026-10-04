@@ -24,22 +24,17 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 
 Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con los lotes de prueba de abajo):
 
-1. **Fortaleza 2017** (reintentado con las notas como estado, V460; la carga cierra con la escalera de "no es rubro", V462): para recargarlo
-   falta contestar sus 17 casos de categoría en la cola (`node tools/cola.mjs`; entre ellos "Total Ingresos actividades ordinarias"
-   5.319,891, el renglón de ingresos) y después `node tools/cargar.mjs "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf"
-   --desde-verificacion --reemplazar` (ensayo) y con `--escribir`. Pendiente también: `node tools/diagnostico-desglose.mjs` (gratis) para
-   un desglose que sigue sin sumar; Televisión y Estadio en 0.
-2. **Defectos chicos** (agrupados: B textos, D): `compararVecino` no cuenta las filas de ajuste manual (D); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
+1. **Defectos chicos** (agrupados: B textos, D): `compararVecino` no cuenta las filas de ajuste manual (D); `estado.mjs --logica` sigue con la numeración vieja de etapas (2-6, `grupos-pais.mjs`); el comentario que escribe `cargar.mjs` en la
    meta dice "grossDebt/cash: no se leen por script todavía" (ahora los completa `caja-deuda.mjs`).
-3. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
+2. **Auditoría de los 6 clubes cargados** (subagente Sonnet): categorías dudosas o datos raros. Y la nota visible del quiebre de serie de
    Juventus 2006 (formato italiano, con extraordinarios) → 2007 (IFRS).
-4. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
+3. **Caja y deuda, lo que queda** (ver "Caja y deuda" más abajo). Hoy `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin dato; Juventus
    caja 17 de 23 y deuda 14 de 21. Quedan, sin arreglo limpio medido (no insistir sin un caso nuevo): Juventus caja 2004 (51,104 contra
    51,101966: el resumen en €000 contra el estado en euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera
    neta, L1523); deuda 2018 (suma casual del precedente: dos activos); deuda 2007-2009 y caja 2006-2007 sin propuesta. Escalón 3 (media
    móvil) aprobado y en pausa. Ideas a medir con un club real: precedente que sume lo cargado en DOS años; el número del año en un
    escaneo necesita una segunda lectura (Gemini).
-5. No urgentes:
+4. No urgentes:
    - escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
      costos financieros mal rotulados);
    - marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo usan
@@ -49,6 +44,8 @@ Plan, en orden (de a un cambio, con el ok de Guido; siempre escalera; medir con 
    - chequeo de coherencia entre años (prototipado, no construido);
    - etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente);
    - etapas 4 y 8: registrar en qué escalón salió cada dato;
+   - Fortaleza: "Aporte SENA" y "Sena" de otros años están en `admin_general_expense` (2017 quedó en `wages_squad`, como Pensiones,
+     Salud y Cajas); unificar si se recargan esos años;
    - perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes);
    - datos ya publicados con categorías dudosas: Almagro tiene "Sede Social - Medrano 522" como cuotas sociales; Grêmio, "Receitas
      Patrimoniais" como cuotas sociales; Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
@@ -530,8 +527,8 @@ Pendientes, a decidir con casos reales:
 
 ## Cómo arranca la próxima sesión
 
-(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (`cargar.mjs` y las filas "Total…" en
-notas como estado, con Fortaleza 2017) y después 2-3.
+(2026-10-04) Sesión de arreglos (sin sumar clubes): seguir por el punto 1 de "Dónde estamos" (defectos chicos B y D) y después la
+auditoría de los 6 clubes.
 
 1. `git status` y `git log --oneline -5` en `main`.
 2. `node tools/estado.mjs`.
