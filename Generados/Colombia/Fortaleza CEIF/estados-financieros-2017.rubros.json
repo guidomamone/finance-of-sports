@@ -1,1135 +1,1260 @@
 {
- "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
- "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
- "club": "fortalezaceif-co",
- "year": 2017,
- "generatedAt": "2026-10-04T22:17:26.725Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Aprovechamientos",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"Total Otros Gastos\"",
-   "values": [
-    0.001
-   ]
-  },
-  {
-   "label": "Ajuste al Peso",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"Total Otros Gastos\"",
-   "values": [
-    0.005
-   ]
-  },
-  {
-   "label": "Actividades Deportivas",
-   "lado": "revenue",
-   "page": 14,
-   "section": "ajuste manual",
-   "values": [
-    4220.658
-   ]
-  },
-  {
-   "label": "Otros Ingresos",
-   "lado": "revenue",
-   "page": 14,
-   "section": "ajuste manual",
-   "values": [
-    1027.45
-   ]
-  },
-  {
-   "label": "Venta de Productos",
-   "lado": "revenue",
-   "page": 14,
-   "section": "ajuste manual",
-   "values": [
-    70.183
-   ]
-  },
-  {
-   "label": "Casa Hogar",
-   "lado": "revenue",
-   "page": 14,
-   "section": "ajuste manual",
-   "values": [
-    1.6
-   ]
-  },
-  {
-   "label": "Costos de Ventas",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Costo de Ventas\"",
-   "values": [
-    127.783
-   ]
-  },
-  {
-   "label": "Costos Extraordinarios",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Costo de Ventas\"",
-   "values": [
-    49.494
-   ]
-  },
-  {
-   "label": "Sueldos",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    705.432
-   ]
-  },
-  {
-   "label": "Horas Extras y Recarg",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    6.529
-   ]
-  },
-  {
-   "label": "Incapacidades",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.138
-   ]
-  },
-  {
-   "label": "Auxilios de Transport",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    25.947
-   ]
-  },
-  {
-   "label": "Cesantías",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    52.367
-   ]
-  },
-  {
-   "label": "Intereses Sobre Las C",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    4.87
-   ]
-  },
-  {
-   "label": "Prima de Servicios",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    51.994
-   ]
-  },
-  {
-   "label": "Vacaciones",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    30.427
-   ]
-  },
-  {
-   "label": "Bonificaciones",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    169.037
-   ]
-  },
-  {
-   "label": "Dotacion y Sum a Trab",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.7
-   ]
-  },
-  {
-   "label": "Indmenizaciones Labor",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    413.384
-   ]
-  },
-  {
-   "label": "Gastos Deportivos y D",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.25
-   ]
-  },
-  {
-   "label": "Aportes Admin de Ries",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    14.645
-   ]
-  },
-  {
-   "label": "Aporte a Salud",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    5.116
-   ]
-  },
-  {
-   "label": "Aportes a Fondos de P",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    99.698
-   ]
-  },
-  {
-   "label": "Aportes a Cajas de Co",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    26.833
-   ]
-  },
-  {
-   "label": "Aportes a Icbf",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    2.397
-   ]
-  },
-  {
-   "label": "Sena",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.598
-   ]
-  },
-  {
-   "label": "Gastos Medicos y Drog",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    16.014
-   ]
-  },
-  {
-   "label": "Asesoria Juridica",
-   "lado": "expense",
-   "page": 15,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    5.164
-   ]
-  },
-  {
-   "label": "Asesoria Tecnica",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    71.102
-   ]
-  },
-  {
-   "label": "Comisiones",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    100.842
-   ]
-  },
-  {
-   "label": "Arbitraje Partidos Pr",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    45.079
-   ]
-  },
-  {
-   "label": "Impuesto al Consumo",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    7.117
-   ]
-  },
-  {
-   "label": "Impuesto a la Riqueza",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.171
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    13.961
-   ]
-  },
-  {
-   "label": "Terrenos",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    38.184
-   ]
-  },
-  {
-   "label": "Contrucciones y Edifi",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    43.741
-   ]
-  },
-  {
-   "label": "Maquinaria y Equipo",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    9.011
-   ]
-  },
-  {
-   "label": "Equipo de Computacion",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.61
-   ]
-  },
-  {
-   "label": "Ligas de Futbol",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    2.024
-   ]
-  },
-  {
-   "label": "Ditritales Y/O Depart",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.868
-   ]
-  },
-  {
-   "label": "Cumplimiento",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.54
-   ]
-  },
-  {
-   "label": "Vida Colectiva",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    2.516
-   ]
-  },
-  {
-   "label": "Responsabilidad Civil",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    6.787
-   ]
-  },
-  {
-   "label": "Soat",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.181
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    10.769
-   ]
-  },
-  {
-   "label": "Aseo y Vigilancia",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    6.523
-   ]
-  },
-  {
-   "label": "Asistencia Tecnica",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    19.435
-   ]
-  },
-  {
-   "label": "Acueducto y Alcantari",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.298
-   ]
-  },
-  {
-   "label": "Energia Electrica",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    8.764
-   ]
-  },
-  {
-   "label": "Telefono",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.794
-   ]
-  },
-  {
-   "label": "Correo Portes y Teleg",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.436
-   ]
-  },
-  {
-   "label": "Transportes, Fletes Y",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    7.55
-   ]
-  },
-  {
-   "label": "Gas",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.252
-   ]
-  },
-  {
-   "label": "Publicidad Propaganda",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    21.72
-   ]
-  },
-  {
-   "label": "Tv Cable",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.72
-   ]
-  },
-  {
-   "label": "Bomberos",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    2.459
-   ]
-  },
-  {
-   "label": "Logistica y Manejo Pa",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    16.947
-   ]
-  },
-  {
-   "label": "Recoge Bolas",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.286
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.796
-   ]
-  },
-  {
-   "label": "Notariales",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.109
-   ]
-  },
-  {
-   "label": "Registro Mercantil",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.793
-   ]
-  },
-  {
-   "label": "Tramites y Licencias",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    5.941
-   ]
-  },
-  {
-   "label": "Contrucciones y Edifi",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.656
-   ]
-  },
-  {
-   "label": "Maquinaria y Equipo",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.219
-   ]
-  },
-  {
-   "label": "Equipo de Comunicacio",
-   "lado": "expense",
-   "page": 16,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.12
-   ]
-  },
-  {
-   "label": "Flota y Equipo de Tra",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    6.856
-   ]
-  },
-  {
-   "label": "Reparaciones Locativa",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    16.437
-   ]
-  },
-  {
-   "label": "Alojamiento y Manuten",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    27.142
-   ]
-  },
-  {
-   "label": "Pasajes Aereos",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    4.99
-   ]
-  },
-  {
-   "label": "Pasajes Terrestres",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    1.689
-   ]
-  },
-  {
-   "label": "Flota y Equipo de Trn",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    19.299
-   ]
-  },
-  {
-   "label": "Elementos de Aseo y C",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    5.292
-   ]
-  },
-  {
-   "label": "Utiles Papeleria y Fo",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    15.089
-   ]
-  },
-  {
-   "label": "Combustibles y Lubric",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.377
-   ]
-  },
-  {
-   "label": "Taxis y Buses",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    11.488
-   ]
-  },
-  {
-   "label": "Casino y Restaurante",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    99.622
-   ]
-  },
-  {
-   "label": "Parqueaderos",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.159
-   ]
-  },
-  {
-   "label": "Polvora y Similares",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.027
-   ]
-  },
-  {
-   "label": "Peajes",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    0.79
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Administración\"",
-   "values": [
-    178.48
-   ]
-  },
-  {
-   "label": "Auxilio de Transporte",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.6
-   ]
-  },
-  {
-   "label": "Bonificaciones",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.2
-   ]
-  },
-  {
-   "label": "Dotacion y Suministro",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    62.476
-   ]
-  },
-  {
-   "label": "Gastos Medicos y Drog",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    1.138
-   ]
-  },
-  {
-   "label": "Asesoria Juridica",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    102.476
-   ]
-  },
-  {
-   "label": "Asesoria Tecnica",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    70.5
-   ]
-  },
-  {
-   "label": "Arbitraje",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    13.071
-   ]
-  },
-  {
-   "label": "Impuesto Boleteria",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.052
-   ]
-  },
-  {
-   "label": "Impuesto al Consumo A",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.011
-   ]
-  },
-  {
-   "label": "Retenciones Asumidas",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.077
-   ]
-  },
-  {
-   "label": "Gravamenes",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    2.972
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.148
-   ]
-  },
-  {
-   "label": "Construcciones y Edif",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    40.39
-   ]
-  },
-  {
-   "label": "Equipo de Computacion",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.63
-   ]
-  },
-  {
-   "label": "Aseo y Vigilancia",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    28.53
-   ]
-  },
-  {
-   "label": "Acueducto y Alcantari",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.751
-   ]
-  },
-  {
-   "label": "Energia Electrica",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    11.761
-   ]
-  },
-  {
-   "label": "Telefono",
-   "lado": "expense",
-   "page": 17,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.514
-   ]
-  },
-  {
-   "label": "Comunicaciones",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.46
-   ]
-  },
-  {
-   "label": "Correo",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.251
-   ]
-  },
-  {
-   "label": "Transporte",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    2.177
-   ]
-  },
-  {
-   "label": "Publicidad",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    27.98
-   ]
-  },
-  {
-   "label": "Servicio de Ambulanci",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    9.349
-   ]
-  },
-  {
-   "label": "Gas",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    5.254
-   ]
-  },
-  {
-   "label": "Notariales",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.02
-   ]
-  },
-  {
-   "label": "Registro Mercantil",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.006
-   ]
-  },
-  {
-   "label": "Construcciones y Edif",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    11.888
-   ]
-  },
-  {
-   "label": "Maquinaria y Equipo",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    15.213
-   ]
-  },
-  {
-   "label": "Equipo de Oficina",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    4.78
-   ]
-  },
-  {
-   "label": "Flota y Equipo de Tra",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.04
-   ]
-  },
-  {
-   "label": "Instalaciones Electri",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.054
-   ]
-  },
-  {
-   "label": "Alojamiento y Manuten",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    5.98
-   ]
-  },
-  {
-   "label": "Pasajes Aereos",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    1.223
-   ]
-  },
-  {
-   "label": "Pasajes Terrestres",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.635
-   ]
-  },
-  {
-   "label": "Otros",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    1.087
-   ]
-  },
-  {
-   "label": "Comisiones",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    3.697
-   ]
-  },
-  {
-   "label": "Elementos de Aseo y C",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    10.159
-   ]
-  },
-  {
-   "label": "Utiles",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    2.141
-   ]
-  },
-  {
-   "label": "Combustibles y Lubric",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    8.414
-   ]
-  },
-  {
-   "label": "Taxis y Buses",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    11.419
-   ]
-  },
-  {
-   "label": "Casino y Restaurante",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    4.07
-   ]
-  },
-  {
-   "label": "Parqueaderos",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.424
-   ]
-  },
-  {
-   "label": "Propiedades",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    0.48
-   ]
-  },
-  {
-   "label": "Amortizacion Marcas y Derechos",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Total Gastos de Ventas\"",
-   "values": [
-    516.474
-   ]
-  },
-  {
-   "label": "Otros gastos",
-   "lado": "expense",
-   "page": 19,
-   "section": "ajuste manual",
-   "values": [
-    41.78
-   ]
-  }
- ]
+  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+  "club": "fortalezaceif-co",
+  "year": 2017,
+  "generatedAt": "2026-10-04T22:23:59.098Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Aprovechamientos",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Total Otros Gastos\"",
+      "values": [
+        0.001
+      ],
+      "glosa": "Aprovechamientos"
+    },
+    {
+      "label": "Ajuste al Peso",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Total Otros Gastos\"",
+      "values": [
+        0.005
+      ],
+      "glosa": "Ajuste al Peso"
+    },
+    {
+      "label": "Actividades Deportivas",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        4220.658
+      ],
+      "glosa": "Actividades Deportivas"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        1027.45
+      ],
+      "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "Venta de Productos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        70.183
+      ],
+      "glosa": "Venta de Productos"
+    },
+    {
+      "label": "Casa Hogar",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        1.6
+      ],
+      "glosa": "Casa Hogar"
+    },
+    {
+      "label": "Costos de Ventas",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Costo de Ventas\"",
+      "values": [
+        127.783
+      ],
+      "glosa": "Costos de Ventas"
+    },
+    {
+      "label": "Costos Extraordinarios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Costo de Ventas\"",
+      "values": [
+        49.494
+      ],
+      "glosa": "Costos Extraordinarios"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        705.432
+      ],
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Horas Extras y Recarg",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        6.529
+      ],
+      "glosa": "Horas Extras y Recarg"
+    },
+    {
+      "label": "Incapacidades",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.138
+      ],
+      "glosa": "Incapacidades"
+    },
+    {
+      "label": "Auxilios de Transport",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        25.947
+      ],
+      "glosa": "Auxilios de Transport"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        52.367
+      ],
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses Sobre Las C",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        4.87
+      ],
+      "glosa": "Intereses Sobre Las C"
+    },
+    {
+      "label": "Prima de Servicios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        51.994
+      ],
+      "glosa": "Prima de Servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        30.427
+      ],
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        169.037
+      ],
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotacion y Sum a Trab",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.7
+      ],
+      "glosa": "Dotacion y Sum a Trab"
+    },
+    {
+      "label": "Indmenizaciones Labor",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        413.384
+      ],
+      "glosa": "Indmenizaciones Labor"
+    },
+    {
+      "label": "Gastos Deportivos y D",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.25
+      ],
+      "glosa": "Gastos Deportivos y D"
+    },
+    {
+      "label": "Aportes Admin de Ries",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        14.645
+      ],
+      "glosa": "Aportes Admin de Ries"
+    },
+    {
+      "label": "Aporte a Salud",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        5.116
+      ],
+      "glosa": "Aporte a Salud"
+    },
+    {
+      "label": "Aportes a Fondos de P",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        99.698
+      ],
+      "glosa": "Aportes a Fondos de P"
+    },
+    {
+      "label": "Aportes a Cajas de Co",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        26.833
+      ],
+      "glosa": "Aportes a Cajas de Co"
+    },
+    {
+      "label": "Aportes a Icbf",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        2.397
+      ],
+      "glosa": "Aportes a Icbf"
+    },
+    {
+      "label": "Sena",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.598
+      ],
+      "glosa": "Sena"
+    },
+    {
+      "label": "Gastos Medicos y Drog",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        16.014
+      ],
+      "glosa": "Gastos Medicos y Drog"
+    },
+    {
+      "label": "Asesoria Juridica",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        5.164
+      ],
+      "glosa": "Asesoria Juridica"
+    },
+    {
+      "label": "Asesoria Tecnica",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        71.102
+      ],
+      "glosa": "Asesoria Tecnica"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        100.842
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Arbitraje Partidos Pr",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        45.079
+      ],
+      "glosa": "Arbitraje Partidos Pr"
+    },
+    {
+      "label": "Impuesto al Consumo",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        7.117
+      ],
+      "glosa": "Impuesto al Consumo"
+    },
+    {
+      "label": "Impuesto a la Riqueza",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.171
+      ],
+      "glosa": "Impuesto a la Riqueza"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        13.961
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        38.184
+      ],
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Contrucciones y Edifi",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        43.741
+      ],
+      "glosa": "Contrucciones y Edifi"
+    },
+    {
+      "label": "Maquinaria y Equipo",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        9.011
+      ],
+      "glosa": "Maquinaria y Equipo"
+    },
+    {
+      "label": "Equipo de Computacion",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.61
+      ],
+      "glosa": "Equipo de Computacion"
+    },
+    {
+      "label": "Ligas de Futbol",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        2.024
+      ],
+      "glosa": "Ligas de Futbol"
+    },
+    {
+      "label": "Ditritales Y/O Depart",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.868
+      ],
+      "glosa": "Ditritales Y/O Depart"
+    },
+    {
+      "label": "Cumplimiento",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.54
+      ],
+      "glosa": "Cumplimiento"
+    },
+    {
+      "label": "Vida Colectiva",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        2.516
+      ],
+      "glosa": "Vida Colectiva"
+    },
+    {
+      "label": "Responsabilidad Civil",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        6.787
+      ],
+      "glosa": "Responsabilidad Civil"
+    },
+    {
+      "label": "Soat",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.181
+      ],
+      "glosa": "Soat"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        10.769
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Aseo y Vigilancia",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        6.523
+      ],
+      "glosa": "Aseo y Vigilancia"
+    },
+    {
+      "label": "Asistencia Tecnica",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        19.435
+      ],
+      "glosa": "Asistencia Tecnica"
+    },
+    {
+      "label": "Acueducto y Alcantari",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.298
+      ],
+      "glosa": "Acueducto y Alcantari"
+    },
+    {
+      "label": "Energia Electrica",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        8.764
+      ],
+      "glosa": "Energia Electrica"
+    },
+    {
+      "label": "Telefono",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.794
+      ],
+      "glosa": "Telefono"
+    },
+    {
+      "label": "Correo Portes y Teleg",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.436
+      ],
+      "glosa": "Correo Portes y Teleg"
+    },
+    {
+      "label": "Transportes, Fletes Y",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        7.55
+      ],
+      "glosa": "Transportes, Fletes Y"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.252
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Publicidad Propaganda",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        21.72
+      ],
+      "glosa": "Publicidad Propaganda"
+    },
+    {
+      "label": "Tv Cable",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.72
+      ],
+      "glosa": "Tv Cable"
+    },
+    {
+      "label": "Bomberos",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        2.459
+      ],
+      "glosa": "Bomberos"
+    },
+    {
+      "label": "Logistica y Manejo Pa",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        16.947
+      ],
+      "glosa": "Logistica y Manejo Pa"
+    },
+    {
+      "label": "Recoge Bolas",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.286
+      ],
+      "glosa": "Recoge Bolas"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.796
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.109
+      ],
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Registro Mercantil",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.793
+      ],
+      "glosa": "Registro Mercantil"
+    },
+    {
+      "label": "Tramites y Licencias",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        5.941
+      ],
+      "glosa": "Tramites y Licencias"
+    },
+    {
+      "label": "Contrucciones y Edifi",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.656
+      ],
+      "glosa": "Contrucciones y Edifi"
+    },
+    {
+      "label": "Maquinaria y Equipo",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.219
+      ],
+      "glosa": "Maquinaria y Equipo"
+    },
+    {
+      "label": "Equipo de Comunicacio",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.12
+      ],
+      "glosa": "Equipo de Comunicacio"
+    },
+    {
+      "label": "Flota y Equipo de Tra",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        6.856
+      ],
+      "glosa": "Flota y Equipo de Tra"
+    },
+    {
+      "label": "Reparaciones Locativa",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        16.437
+      ],
+      "glosa": "Reparaciones Locativa"
+    },
+    {
+      "label": "Alojamiento y Manuten",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        27.142
+      ],
+      "glosa": "Alojamiento y Manuten"
+    },
+    {
+      "label": "Pasajes Aereos",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        4.99
+      ],
+      "glosa": "Pasajes Aereos"
+    },
+    {
+      "label": "Pasajes Terrestres",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        1.689
+      ],
+      "glosa": "Pasajes Terrestres"
+    },
+    {
+      "label": "Flota y Equipo de Trn",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        19.299
+      ],
+      "glosa": "Flota y Equipo de Trn"
+    },
+    {
+      "label": "Elementos de Aseo y C",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        5.292
+      ],
+      "glosa": "Elementos de Aseo y C"
+    },
+    {
+      "label": "Utiles Papeleria y Fo",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        15.089
+      ],
+      "glosa": "Utiles Papeleria y Fo"
+    },
+    {
+      "label": "Combustibles y Lubric",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.377
+      ],
+      "glosa": "Combustibles y Lubric"
+    },
+    {
+      "label": "Taxis y Buses",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        11.488
+      ],
+      "glosa": "Taxis y Buses"
+    },
+    {
+      "label": "Casino y Restaurante",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        99.622
+      ],
+      "glosa": "Casino y Restaurante"
+    },
+    {
+      "label": "Parqueaderos",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.159
+      ],
+      "glosa": "Parqueaderos"
+    },
+    {
+      "label": "Polvora y Similares",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.027
+      ],
+      "glosa": "Polvora y Similares"
+    },
+    {
+      "label": "Peajes",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        0.79
+      ],
+      "glosa": "Peajes"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Administración\"",
+      "values": [
+        178.48
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Auxilio de Transporte",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.6
+      ],
+      "glosa": "Auxilio de Transporte"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.2
+      ],
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotacion y Suministro",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        62.476
+      ],
+      "glosa": "Dotacion y Suministro"
+    },
+    {
+      "label": "Gastos Medicos y Drog",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        1.138
+      ],
+      "glosa": "Gastos Medicos y Drog"
+    },
+    {
+      "label": "Asesoria Juridica",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        102.476
+      ],
+      "glosa": "Asesoria Juridica"
+    },
+    {
+      "label": "Asesoria Tecnica",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        70.5
+      ],
+      "glosa": "Asesoria Tecnica"
+    },
+    {
+      "label": "Arbitraje",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        13.071
+      ],
+      "glosa": "Arbitraje"
+    },
+    {
+      "label": "Impuesto Boleteria",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.052
+      ],
+      "glosa": "Impuesto Boleteria"
+    },
+    {
+      "label": "Impuesto al Consumo A",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.011
+      ],
+      "glosa": "Impuesto al Consumo A"
+    },
+    {
+      "label": "Retenciones Asumidas",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.077
+      ],
+      "glosa": "Retenciones Asumidas"
+    },
+    {
+      "label": "Gravamenes",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        2.972
+      ],
+      "glosa": "Gravamenes"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.148
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Construcciones y Edif",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        40.39
+      ],
+      "glosa": "Construcciones y Edif"
+    },
+    {
+      "label": "Equipo de Computacion",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.63
+      ],
+      "glosa": "Equipo de Computacion"
+    },
+    {
+      "label": "Aseo y Vigilancia",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        28.53
+      ],
+      "glosa": "Aseo y Vigilancia"
+    },
+    {
+      "label": "Acueducto y Alcantari",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.751
+      ],
+      "glosa": "Acueducto y Alcantari"
+    },
+    {
+      "label": "Energia Electrica",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        11.761
+      ],
+      "glosa": "Energia Electrica"
+    },
+    {
+      "label": "Telefono",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.514
+      ],
+      "glosa": "Telefono"
+    },
+    {
+      "label": "Comunicaciones",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.46
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Correo",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.251
+      ],
+      "glosa": "Correo"
+    },
+    {
+      "label": "Transporte",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        2.177
+      ],
+      "glosa": "Transporte"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        27.98
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Servicio de Ambulanci",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        9.349
+      ],
+      "glosa": "Servicio de Ambulanci"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        5.254
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.02
+      ],
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Registro Mercantil",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.006
+      ],
+      "glosa": "Registro Mercantil"
+    },
+    {
+      "label": "Construcciones y Edif",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        11.888
+      ],
+      "glosa": "Construcciones y Edif"
+    },
+    {
+      "label": "Maquinaria y Equipo",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        15.213
+      ],
+      "glosa": "Maquinaria y Equipo"
+    },
+    {
+      "label": "Equipo de Oficina",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        4.78
+      ],
+      "glosa": "Equipo de Oficina"
+    },
+    {
+      "label": "Flota y Equipo de Tra",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.04
+      ],
+      "glosa": "Flota y Equipo de Tra"
+    },
+    {
+      "label": "Instalaciones Electri",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.054
+      ],
+      "glosa": "Instalaciones Electri"
+    },
+    {
+      "label": "Alojamiento y Manuten",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        5.98
+      ],
+      "glosa": "Alojamiento y Manuten"
+    },
+    {
+      "label": "Pasajes Aereos",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        1.223
+      ],
+      "glosa": "Pasajes Aereos"
+    },
+    {
+      "label": "Pasajes Terrestres",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.635
+      ],
+      "glosa": "Pasajes Terrestres"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        1.087
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        3.697
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Elementos de Aseo y C",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        10.159
+      ],
+      "glosa": "Elementos de Aseo y C"
+    },
+    {
+      "label": "Utiles",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        2.141
+      ],
+      "glosa": "Utiles"
+    },
+    {
+      "label": "Combustibles y Lubric",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        8.414
+      ],
+      "glosa": "Combustibles y Lubric"
+    },
+    {
+      "label": "Taxis y Buses",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        11.419
+      ],
+      "glosa": "Taxis y Buses"
+    },
+    {
+      "label": "Casino y Restaurante",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        4.07
+      ],
+      "glosa": "Casino y Restaurante"
+    },
+    {
+      "label": "Parqueaderos",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.424
+      ],
+      "glosa": "Parqueaderos"
+    },
+    {
+      "label": "Propiedades",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        0.48
+      ],
+      "glosa": "Propiedades"
+    },
+    {
+      "label": "Amortizacion Marcas y Derechos",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Total Gastos de Ventas\"",
+      "values": [
+        516.474
+      ],
+      "glosa": "Amortizacion Marcas y Derechos"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 19,
+      "section": "ajuste manual",
+      "values": [
+        41.78
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
 }

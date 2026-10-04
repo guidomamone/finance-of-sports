@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
- "generado": "2026-10-04T22:10:38.868Z",
+ "generado": "2026-10-04T22:24:30.127Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,18 +11,12 @@
    "motivo": "fortalezaceif-co ya tiene el ejercicio 2017 cargado"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "17 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Total Ingresos actividades ordinarias\" -> other_income 0; \"Gastos Deportivos y D\" -> match_organisation_expense 0.6; \"Aportes Admin de Ries\" -> wages_squad 0.6; \"Aporte a Salud\" -> wages_squad 0.65; \"Aportes a Cajas de Co\" -> wages_squad 0.65"
-  },
-  {
    "etapa": "fuente",
    "motivo": "sources['fortalezaceif-co-estados-financieros-2017'] ya existe"
   }
  ],
  "avisos": [
-  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio",
-  "gastos: ningún total impreso igual a la suma de las líneas (-3628.133); queda la suma, verificada por el resultado del ejercicio",
-  "escalón 1 de \"no es rubro\": excluir \"Total Ingresos actividades ordinarias\" no cerraba; incluida, la carga cierra (su categoría va a la cola)"
+  "gastos: ningún total impreso igual a la suma de las líneas (-3628.133); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "fortalezaceif-co",
@@ -30,15 +24,6 @@
   "cierre": "2017-12-31",
   "perimetro": "individual",
   "revenueLines": [
-   {
-    "rawLabel": "Total Ingresos actividades ordinarias",
-    "normalizedCategory": "other_income",
-    "amountNative": 5319.891,
-    "disclosureLevel": "aggregated",
-    "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0
-   },
    {
     "rawLabel": "Aprovechamientos",
     "normalizedCategory": "other_income",
@@ -56,6 +41,42 @@
     "_pag": 19,
     "_escalon": 0,
     "_conf": 1
+   },
+   {
+    "rawLabel": "Actividades Deportivas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4220.658,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otros Ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1027.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.96
+   },
+   {
+    "rawLabel": "Venta de Productos",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 70.183,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Casa Hogar",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.6,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.96
    }
   ],
   "expenseLines": [
@@ -178,12 +199,12 @@
    },
    {
     "rawLabel": "Gastos Deportivos y D",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.25,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Aportes Admin de Ries",
@@ -191,8 +212,8 @@
     "amountNative": -14.645,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Aporte a Salud",
@@ -200,8 +221,8 @@
     "amountNative": -5.116,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Aportes a Fondos de P",
@@ -218,21 +239,21 @@
     "amountNative": -26.833,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Aportes a Icbf",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -2.397,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.8
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Sena",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -1.598,
     "disclosureLevel": "aggregated",
     "_pag": 15,
@@ -353,8 +374,8 @@
     "amountNative": -2.024,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Ditritales Y/O Depart",
@@ -362,8 +383,8 @@
     "amountNative": -1.868,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.75
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Cumplimiento",
@@ -502,12 +523,12 @@
    },
    {
     "rawLabel": "Bomberos",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -2.459,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Logistica y Manejo Pa",
@@ -704,8 +725,8 @@
     "amountNative": -0.027,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.4
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Peajes",
@@ -713,8 +734,8 @@
     "amountNative": -0.79,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Otros",
@@ -794,8 +815,8 @@
     "amountNative": -0.052,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.55
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Impuesto al Consumo A",
@@ -812,8 +833,8 @@
     "amountNative": -0.077,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.7
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Gravamenes",
@@ -821,8 +842,8 @@
     "amountNative": -2.972,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.75
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Otros",
@@ -911,8 +932,8 @@
     "amountNative": -2.177,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Publicidad",
@@ -1001,8 +1022,8 @@
     "amountNative": -0.054,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.7
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Alojamiento y Manuten",
@@ -1109,8 +1130,8 @@
     "amountNative": -0.48,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.55
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Amortizacion Marcas y Derechos",
@@ -1118,8 +1139,8 @@
     "amountNative": -516.474,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.55
+    "_escalon": 0,
+    "_conf": 1
    },
    {
     "rawLabel": "Otros gastos",
@@ -1149,6 +1170,14 @@
     {
      "label": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
      "value": -291.595
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Actividades Deportivas",
+     "lado": "revenue",
+     "importe": 4220.658,
+     "motivo": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA)."
     }
    ],
    "grossDebt": null,
@@ -1226,31 +1255,66 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "4,220,658",
+   "linea": 538,
+   "etiqueta": "Actividades Deportivas",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "1,027,450",
+   "linea": 539,
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "70,183",
+   "linea": 540,
+   "etiqueta": "Venta de Productos",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "1,600",
+   "linea": 541,
+   "etiqueta": "Casa Hogar",
+   "lado": "ingreso",
+   "reemplaza": "Total Ingresos actividades ordinarias",
+   "motivo": "Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
   }
  ],
  "seleccion": {
-  "filas": 124,
+  "filas": 127,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
-  {
-   "label": "Total Ingresos actividades ordinarias",
-   "page": 14,
-   "native": 5319.891,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 5319.891,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.85 (fila verificada: no se excluye sola): se propone la genérica de su lado",
-   "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 5319.891
-  },
   {
    "label": "Aprovechamientos",
    "page": 19,
@@ -1280,6 +1344,68 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.005
+  },
+  {
+   "label": "Actividades Deportivas",
+   "page": 14,
+   "native": 4220.658,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4220.658,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "revenue",
+   "amountNative": 4220.658
+  },
+  {
+   "label": "Otros Ingresos",
+   "page": 14,
+   "native": 1027.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1027.45,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1027.45
+  },
+  {
+   "label": "Venta de Productos",
+   "page": 14,
+   "native": 70.183,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 70.183,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "revenue",
+   "amountNative": 70.183
+  },
+  {
+   "label": "Casa Hogar",
+   "page": 14,
+   "native": 1.6,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.6,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.6
   },
   {
    "label": "Costos de Ventas",
@@ -1490,12 +1616,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 0.25,
-   "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "etiqueta cortada; bloque de personal; inmaterial",
    "destino": "expense",
    "amountNative": -0.25
   },
@@ -1507,11 +1633,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 14.645,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "sigue a Sueldos y Pensiones de la misma nota",
    "destino": "expense",
    "amountNative": -14.645
   },
@@ -1523,11 +1649,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 5.116,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "sigue a Sueldos y Pensiones de la misma nota",
    "destino": "expense",
    "amountNative": -5.116
   },
@@ -1554,11 +1680,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 26.833,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente 2020 y 2023",
    "destino": "expense",
    "amountNative": -26.833
   },
@@ -1569,11 +1695,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 2.397,
-   "cat": "admin_general_expense",
-   "conf": 0.8,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Guido 2026-10-04: aporte parafiscal sobre la nómina, como Pensiones, Salud y Cajas de Compensación",
    "destino": "expense",
    "amountNative": -2.397
   },
@@ -1584,11 +1711,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 1.598,
-   "cat": "admin_general_expense",
+   "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Guido 2026-10-04: aporte parafiscal sobre la nómina, como Pensiones, Salud y Cajas de Compensación",
    "destino": "expense",
    "amountNative": -1.598
   },
@@ -1784,11 +1912,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 2.024,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "bloque de impuestos y seguros",
    "destino": "expense",
    "amountNative": -2.024
   },
@@ -1800,11 +1928,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 1.868,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "impuestos distritales y departamentales",
    "destino": "expense",
    "amountNative": -1.868
   },
@@ -2041,12 +2169,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 2.459,
-   "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente: Bomberos 2025 en admin_general",
    "destino": "expense",
    "amountNative": -2.459
   },
@@ -2377,11 +2505,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 0.027,
    "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "partida minima",
    "destino": "expense",
    "amountNative": -0.027
   },
@@ -2393,11 +2521,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Administración\")",
    "signoFijo": 0.79,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente 2020 y 2023",
    "destino": "expense",
    "amountNative": -0.79
   },
@@ -2532,11 +2660,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 0.052,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "impuesto de taquilla",
    "destino": "expense",
    "amountNative": -0.052
   },
@@ -2563,11 +2691,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 0.077,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "retenciones fiscales asumidas",
    "destino": "expense",
    "amountNative": -0.077
   },
@@ -2579,11 +2707,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 2.972,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "4x1000; precedente 2020",
    "destino": "expense",
    "amountNative": -2.972
   },
@@ -2730,11 +2858,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 2.177,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "bloque de servicios",
    "destino": "expense",
    "amountNative": -2.177
   },
@@ -2882,11 +3010,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 0.054,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "mantenimiento",
    "destino": "expense",
    "amountNative": -0.054
   },
@@ -3066,11 +3194,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 0.48,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "mantenimiento de sede",
    "destino": "expense",
    "amountNative": -0.48
   },
@@ -3082,11 +3210,11 @@
    "origen": "verificacion (nota que desglosa \"Total Gastos de Ventas\")",
    "signoFijo": 516.474,
    "cat": "other_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "nota 11: marca y afiliaciones Dimayor, no pases",
    "destino": "expense",
    "amountNative": -516.474
   },
@@ -3130,12 +3258,11 @@
  ],
  "signos": {
   "porTabla": {
-   "verificacion (estado)": "gastos con signo",
    "verificacion (nota que desglosa \"Total Otros Gastos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Total Costo de Ventas\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Total Gastos de Administración\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Total Gastos de Ventas\")": "gastos sin signo (se invierten)",
-   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -3170,8 +3297,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 3,
+  "motivos": 3,
+  "lineasIngreso": 6,
   "lineasGasto": 119,
   "metaFilas": 2,
   "excluidas": 0

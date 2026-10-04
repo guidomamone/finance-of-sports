@@ -1709,3 +1709,20 @@
 {"tipo":"respuesta","id":"260bf3e","ts":"2026-10-04T22:19:44.865Z","decision":"corregir","valor":"wages_squad","nota":"Guido 2026-10-04: aporte parafiscal sobre la nómina, como Pensiones, Salud y Cajas de Compensación"}
 {"tipo":"caso","id":"a742ab6","ts":"2026-10-04T22:19:45.261Z","clave":"Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf|cargar|categoria|sena","pdf":"Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf","md":"Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md","etapa":"cargar","motivo":"categoria","detalle":"sena","categoriaPropuesta":"wages_squad","que":"Corrección de Guido: \"Sena\" va como wages_squad."}
 {"tipo":"respuesta","id":"a742ab6","ts":"2026-10-04T22:19:45.262Z","decision":"corregir","valor":"wages_squad","nota":"Guido 2026-10-04: aporte parafiscal sobre la nómina, como Pensiones, Salud y Cajas de Compensación"}
+{"tipo":"respuesta","id":"44b136b","ts":"2026-10-04T22:23:53.330Z","decision":"corregir","valor":"admin_general_expense","nota":"etiqueta cortada; bloque de personal; inmaterial"}
+{"tipo":"respuesta","id":"57e21ec","ts":"2026-10-04T22:23:53.376Z","decision":"aceptar","valor":null,"nota":"sigue a Sueldos y Pensiones de la misma nota"}
+{"tipo":"respuesta","id":"329b0ad","ts":"2026-10-04T22:23:53.419Z","decision":"aceptar","valor":null,"nota":"sigue a Sueldos y Pensiones de la misma nota"}
+{"tipo":"respuesta","id":"fc422f2","ts":"2026-10-04T22:23:53.460Z","decision":"aceptar","valor":null,"nota":"precedente 2020 y 2023"}
+{"tipo":"respuesta","id":"dc98eda","ts":"2026-10-04T22:23:53.506Z","decision":"aceptar","valor":null,"nota":"bloque de impuestos y seguros"}
+{"tipo":"respuesta","id":"00cb6e9","ts":"2026-10-04T22:23:53.547Z","decision":"aceptar","valor":null,"nota":"impuestos distritales y departamentales"}
+{"tipo":"respuesta","id":"08cb6a0","ts":"2026-10-04T22:23:53.589Z","decision":"corregir","valor":"admin_general_expense","nota":"precedente: Bomberos 2025 en admin_general"}
+{"tipo":"respuesta","id":"0073892","ts":"2026-10-04T22:23:53.634Z","decision":"aceptar","valor":null,"nota":"partida minima"}
+{"tipo":"respuesta","id":"32f82e4","ts":"2026-10-04T22:23:53.674Z","decision":"aceptar","valor":null,"nota":"precedente 2020 y 2023"}
+{"tipo":"respuesta","id":"f9008fb","ts":"2026-10-04T22:23:53.715Z","decision":"aceptar","valor":null,"nota":"impuesto de taquilla"}
+{"tipo":"respuesta","id":"546a775","ts":"2026-10-04T22:23:53.755Z","decision":"aceptar","valor":null,"nota":"retenciones fiscales asumidas"}
+{"tipo":"respuesta","id":"e51ae94","ts":"2026-10-04T22:23:53.792Z","decision":"aceptar","valor":null,"nota":"4x1000; precedente 2020"}
+{"tipo":"respuesta","id":"1f5c415","ts":"2026-10-04T22:23:53.830Z","decision":"aceptar","valor":null,"nota":"bloque de servicios"}
+{"tipo":"respuesta","id":"579e0c3","ts":"2026-10-04T22:23:53.867Z","decision":"aceptar","valor":null,"nota":"mantenimiento"}
+{"tipo":"respuesta","id":"7337aa0","ts":"2026-10-04T22:23:53.906Z","decision":"aceptar","valor":null,"nota":"mantenimiento de sede"}
+{"tipo":"respuesta","id":"147a3a6","ts":"2026-10-04T22:23:53.946Z","decision":"aceptar","valor":null,"nota":"nota 11: marca y afiliaciones Dimayor, no pases"}
+{"tipo":"respuesta","id":"60d8e9f","ts":"2026-10-04T22:23:53.986Z","decision":"descartar","valor":null,"nota":"lo reemplazan las 4 partes de la nota de ingresos (ajustes fila L538-541)"}
