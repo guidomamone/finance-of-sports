@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 452 — Caja y deuda: una fila con "cash flow" no saca la página del balance (2026-10-04)
+
+- `caja-deuda.mjs`, páginas del balance: si la página tiene el título del balance como ENCABEZADO corto (renglón con # o en negrita sola, hasta 70 caracteres), la exclusión del flujo de efectivo / cambios en el patrimonio mira solo el texto fuera de las tablas. Caso: Juventus 2011-12 pág. 84, "Cash flow hedge reserve" en el patrimonio.
+- Probado y descartado en el camino (manta corta): ignorar las filas en todas las páginas metía índices ("INDICE" con "Estado de Flujo de Efectivo", UC 2015 págs. 2-3), notas con "Saldo inicial" (UC 2015 págs. 37-51), Fortaleza 2017-2018 pág. 10, Goiás 2014 pág. 1 y Novorizontino 2023 pág. 2; un encabezado largo en prosa (UC 2015 pág. 50) también.
+- Medido: páginas del balance en los 87 documentos de `prueba-completa`: solo cambian 10 de Juventus (se agrega la página del pasivo). `--medir`: los otros 5 clubes idénticos; Juventus deuda de 2 a 9 iguales y de 2 a 1 distinto (2018, el precedente con filas de activo); caja igual.
+
 ## Versión 451 — Caja y deuda: deuda corriente + no corriente de la misma etiqueta (2026-10-04)
 
 - `caja-deuda.mjs`, escalón 1 de deuda: una familia con EXACTAMENTE dos filas, una a cada lado del total del pasivo no corriente del mismo balance (a menos de 40 líneas), se propone sumada; en el documento siguiente la compuerta busca el mismo par (`enOtroDoc`). Más de dos filas (consolidado + separado) sigue sin decidir.
