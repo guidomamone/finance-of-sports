@@ -145,7 +145,7 @@ const r6 = (x) => (x === null || x === undefined ? x : Number(Number(x).toFixed(
 // ============================================================================
 // DATOS DEL SITIO (mismo método de `vm` que audit.js / alta-club.mjs: se ejecutan los archivos reales, nunca se parsean a mano)
 // ============================================================================
-function cargarSitio(root = ROOT) {
+export function cargarSitio(root = ROOT) {
   const sandbox = { console: { log() {}, warn() {}, error() {} } }; sandbox.window = sandbox; sandbox.globalThis = sandbox;
   sandbox.document = { createElement() { return {}; }, head: { appendChild() {} } };
   const ctx = vm.createContext(sandbox);
@@ -196,7 +196,7 @@ function perimetroDeTexto(t) {
   if (ind && !cons) return 'individual';
   return cons && ind ? '?' : 'individual?';
 }
-function perimetroHeredado(sitio, clubId) {
+export function perimetroHeredado(sitio, clubId) {
   const cd = sitio.generic[clubId] || {};
   const header = (() => { try { return readFileSync(resolve(ROOT, 'data', `${clubId}-data.js`), 'utf8').slice(0, 6000); } catch { return ''; } })();
   const porAnio = {};
@@ -208,7 +208,7 @@ function perimetroHeredado(sitio, clubId) {
 // El perímetro del año YA CARGADO más cercano a `year` (a igual distancia, el posterior: es el formato vigente). Versión 337, diseño aprobado
 // por Guido: un club puede cambiar de perímetro (UC: individual hasta 2021, consolidado desde 2022), así que se hereda del vecino, no de
 // "todos los años iguales" (con 2021 individual cargado, UC 2025 frenaba aunque 2022-2024 eran consolidados).
-function perimetroCercano(her, year) {
+export function perimetroCercano(her, year) {
   const ys = Object.keys(her.porAnio).map(Number).filter((y) => y !== Number(year));
   if (!ys.length || !year) return null;
   ys.sort((a, b) => Math.abs(a - year) - Math.abs(b - year) || b - a);
