@@ -235,7 +235,7 @@
         <tr><td class="mono">Admin/ARQUITECTURA.md</td><td>Qué hace cada archivo y cómo funciona el motor genérico. Se lee cuando se toca el motor o se agrega un club.</td><td class="num">17 KB</td></tr>
         <tr><td class="mono">skills/club-sourcing</td><td>Cómo BUSCAR el balance de un club que todavía no tiene nada: la escalera de ángulos (sitio oficial → regulador del país → Wayback CDX de dominio completo → búsqueda dirigida → prensa) y quién la corre en cada escalón (Sonnet → Exa → Opus). Ver <a href="#sourcing">paso 02</a>.</td><td class="num">120 KB</td></tr>
         <tr><td class="mono">skills/club-data-mapping</td><td>Cómo LEER un balance y pasarlo al esquema del sitio: qué categoría le toca a cada rubro, qué tipo de cambio usar, cómo verificar antes de cargar. Incluye el flujo de OCR con Tesseract y cuándo desconfiar de una transcripción de Mistral marcada como escaneo.</td><td class="num">90 KB</td></tr>
-        <tr><td class="mono">skills/club-or-year-onboarding</td><td>Cómo ENCARAR la sesión de carga: qué confirmar con vos antes de arrancar y qué partes del sitio ya existen para reusar.</td><td class="num">69 KB</td></tr>
+        <tr><td class="mono">skills/club-or-year-onboarding</td><td>Cómo se trabaja con el pipeline: correr lotes que corrés vos, leer resultados y la cola, cargar con los scripts y mejorarlos de a un escalón. Los pasos a mano de un club nuevo, en <code>club-nuevo.md</code>.</td><td class="num">9 KB</td></tr>
         <tr><td class="mono">skills/club-outreach</td><td>Cómo escribirle un mail de verdad a un club (Resend + subdominio propio + cola que aprobás vos) sin que cada envío pase por el chat. Distinto del CRITERIO de cuándo amerita un mail, que vive en <code>club-sourcing</code> 0.3.</td><td class="num">14 KB</td></tr>
         <tr><td class="mono">skills/auditoria-finance-of-sports</td><td>La auditoría de rutina, periódica y transversal (datos, escala, código, docs, tokens) — distinta de esta verificación de onboarding y de <code>auditAll()</code>.</td><td class="num">12 KB</td></tr>
         <tr><td class="mono">skills/escala-finance-of-sports</td><td>El mapa de puntos calientes de escala: qué archivo o estructura se rompe entre 200 y 3000 clubes, y con qué número aproximado.</td><td class="num">26 KB</td></tr>
@@ -303,12 +303,12 @@
       <rect x="454" y="30" width="298" height="244" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".55"/>
       <text x="603" y="16" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1" fill="currentColor" opacity=".6" font-weight="600">A DEMANDA · 275 KB</text>
 
-      <text x="470" y="54" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ARQUITECTURA — 17 KB</text>
+      <text x="470" y="54" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">ARQUITECTURA — 38 KB</text>
       <text x="470" y="70" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si tocás el motor o sumás un club</text>
 
       <text x="470" y="96" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-sourcing — 93 KB</text>
       <text x="470" y="118" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-data-mapping — 84 KB</text>
-      <text x="470" y="140" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-or-year-onboarding — 71 KB</text>
+      <text x="470" y="140" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">club-or-year-onboarding — 9 KB</text>
       <text x="470" y="156" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".6">si tocás datos de un club</text>
 
       <text x="470" y="182" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor">fuentes/README + índice — 10 KB</text>
@@ -431,171 +431,126 @@
 <section class="flow" id="onboarding">
   <div class="col">
     <div class="flow-head"><span class="step-no">03</span><h2>Onboardear un club</h2></div>
-    <p>Es el proceso que más se va a repetir: la meta de referencia es ~10 clubes por cada una de 10 regiones, y ya van 161 de 14 países. Sourcing (<a href="#sourcing">paso 02</a>) sigue trayendo candidatos nuevos, así que este paso no tiene techo fijo.</p>
-    <p>El paso 1 es el que menos cuesta y más ahorra: <strong>medir cuánto texto tiene el PDF antes de tocar nada</strong>. Separa un PDF con texto real (barato de leer) de un escaneo (caro: hay que reconocer los caracteres con Tesseract, o leerlo como imagen).</p>
+    <p>Es el proceso que más se va a repetir. Lleva un PDF de un club hasta un año cargado en el sitio, con un pipeline de scripts de nueve etapas. El PDF lo trae el sourcing (<a href="#sourcing">paso 02</a>). Cada etapa guarda su resultado en <code>Generados/</code>, así que lo que ya está hecho no se vuelve a pagar.</p>
+    <p>Lo que gasta API lo corre Guido en su terminal. La sesión de Claude prepara la lista de documentos, ensaya gratis cuánto va a costar, lee lo que quedó y la cola humana, y escribe en el sitio con <code>cargar.mjs</code>. Cada etapa tiene una escalera de intentos con una sola compuerta: cada escalón propone y la compuerta decide. El detalle de cada una está en <code>Admin/PIPELINE.md</code>.</p>
   </div>
 
   <figure>
-    <svg viewBox="0 0 880 268" role="img" aria-label="Pipeline de onboarding en siete pasos: medir, transcribir, mapear, verificar, cargar, registrar y documentar.">
+    <svg viewBox="0 0 880 276" role="img" aria-label="Pipeline de nueve etapas: conseguir, transcribir, localizar, validar, extraer, verificar, categorizar, cargar y publicar. Lo que no cierra va a la cola humana.">
       <defs>
         <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
       </defs>
       <text x="8" y="26" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1" fill="currentColor" opacity=".55" font-weight="600">PIPELINE</text>
 
       <g font-family="IBM Plex Mono, monospace" font-size="11.5">
-        <rect x="8" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
-        <text x="60" y="66" text-anchor="middle" font-weight="600" fill="currentColor">1 medir</text>
-        <text x="60" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">¿tiene texto?</text>
-        <text x="60" y="95" text-anchor="middle" font-size="10.5" fill="var(--accent)">segundos</text>
+        <rect x="8" y="44" width="140" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="78" y="66" text-anchor="middle" font-weight="600" fill="currentColor">1 conseguir</text>
+        <text x="78" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">el PDF oficial</text>
+        <text x="78" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">sourcing</text>
 
-        <rect x="136" y="44" width="104" height="58" rx="3" fill="var(--cost)" opacity=".12"/>
-        <rect x="136" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
-        <text x="188" y="66" text-anchor="middle" font-weight="600" fill="currentColor">2 transcribir</text>
-        <text x="188" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">PDF → texto</text>
-        <text x="188" y="95" text-anchor="middle" font-size="10.5" fill="var(--cost)">paso más caro</text>
+        <rect x="176" y="44" width="140" height="58" rx="3" fill="var(--cost)" opacity=".12"/>
+        <rect x="176" y="44" width="140" height="58" rx="3" fill="none" stroke="var(--cost)" stroke-width="2"/>
+        <text x="246" y="66" text-anchor="middle" font-weight="600" fill="currentColor">2 transcribir</text>
+        <text x="246" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">PDF → texto</text>
+        <text x="246" y="95" text-anchor="middle" font-size="10.5" fill="var(--cost)">OCR · API</text>
 
-        <rect x="264" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <text x="316" y="66" text-anchor="middle" font-weight="600" fill="currentColor">3 mapear</text>
-        <text x="316" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">rubro →</text>
-        <text x="316" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">categoría</text>
+        <rect x="344" y="44" width="140" height="58" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <text x="414" y="66" text-anchor="middle" font-weight="600" fill="currentColor">3 localizar</text>
+        <text x="414" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">qué tablas usar</text>
+        <text x="414" y="95" text-anchor="middle" font-size="10.5" fill="var(--accent)">IA · centavos</text>
 
-        <rect x="392" y="44" width="104" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
-        <text x="444" y="66" text-anchor="middle" font-weight="600" fill="currentColor">4 verificar</text>
-        <text x="444" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">suma vs.</text>
-        <text x="444" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">total impreso</text>
+        <rect x="512" y="44" width="140" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+        <text x="582" y="66" text-anchor="middle" font-weight="600" fill="currentColor">4 validar</text>
+        <text x="582" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">cada número vs.</text>
+        <text x="582" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">otra lectura</text>
 
-        <rect x="520" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <text x="572" y="66" text-anchor="middle" font-weight="600" fill="currentColor">5 cargar</text>
-        <text x="572" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">data/&lt;club&gt;</text>
-        <text x="572" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">-data.js</text>
+        <rect x="680" y="44" width="140" height="58" rx="3" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <text x="750" y="66" text-anchor="middle" font-weight="600" fill="currentColor">5 extraer</text>
+        <text x="750" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">filas tal cual</text>
+        <text x="750" y="95" text-anchor="middle" font-size="10.5" fill="var(--accent)">IA · ~US$ 0,12</text>
 
-        <rect x="648" y="44" width="104" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <text x="700" y="66" text-anchor="middle" font-weight="600" fill="currentColor">6 registrar</text>
-        <text x="700" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">clubs.js +</text>
-        <text x="700" y="95" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">club-leagues</text>
+        <rect x="8" y="150" width="140" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+        <text x="78" y="172" text-anchor="middle" font-weight="600" fill="currentColor">6 verificar</text>
+        <text x="78" y="188" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">las sumas cierran</text>
+        <text x="78" y="201" text-anchor="middle" font-size="10.5" fill="var(--good)">gratis, sin IA</text>
 
-        <rect x="776" y="44" width="96" height="58" rx="3" fill="var(--good)" opacity=".1"/>
-        <rect x="776" y="44" width="96" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
-        <text x="824" y="66" text-anchor="middle" font-weight="600" fill="currentColor">7 documentar</text>
-        <text x="824" y="82" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">+ regenerar</text>
-        <text x="824" y="95" text-anchor="middle" font-size="10.5" fill="var(--good)">4 archivos</text>
+        <rect x="176" y="150" width="140" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="246" y="172" text-anchor="middle" font-weight="600" fill="currentColor">7 categorizar</text>
+        <text x="246" y="188" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">rubro → categoría</text>
+        <text x="246" y="201" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">precedente, IA</text>
+
+        <rect x="344" y="150" width="140" height="58" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="414" y="172" text-anchor="middle" font-weight="600" fill="currentColor">8 cargar</text>
+        <text x="414" y="188" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">escribe el sitio</text>
+        <text x="414" y="201" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">cargar.mjs</text>
+
+        <rect x="512" y="150" width="140" height="58" rx="3" fill="var(--good)" opacity=".1"/>
+        <rect x="512" y="150" width="140" height="58" rx="3" fill="none" stroke="var(--good)" stroke-width="2"/>
+        <text x="582" y="172" text-anchor="middle" font-weight="600" fill="currentColor">9 publicar</text>
+        <text x="582" y="188" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">un commit por año</text>
+        <text x="582" y="201" text-anchor="middle" font-size="10.5" fill="var(--good)">el push: Guido</text>
+
+        <rect x="680" y="150" width="140" height="58" rx="3" fill="var(--cost)" opacity=".12"/>
+        <rect x="680" y="150" width="140" height="58" rx="3" fill="none" stroke="var(--cost)" stroke-width="2" stroke-dasharray="5 4"/>
+        <text x="750" y="172" text-anchor="middle" font-weight="600" fill="currentColor">cola humana</text>
+        <text x="750" y="188" text-anchor="middle" font-size="10.5" fill="currentColor" opacity=".7">preguntas de</text>
+        <text x="750" y="201" text-anchor="middle" font-size="10.5" fill="var(--cost)">sí o no</text>
       </g>
 
       <g stroke="currentColor" stroke-width="1.5" marker-end="url(#a2)">
-        <line x1="112" y1="73" x2="132" y2="73"/><line x1="240" y1="73" x2="260" y2="73"/>
-        <line x1="368" y1="73" x2="388" y2="73"/><line x1="496" y1="73" x2="516" y2="73"/>
-        <line x1="624" y1="73" x2="644" y2="73"/><line x1="752" y1="73" x2="772" y2="73"/>
+        <line x1="148" y1="73" x2="172" y2="73"/><line x1="316" y1="73" x2="340" y2="73"/>
+        <line x1="484" y1="73" x2="508" y2="73"/><line x1="652" y1="73" x2="676" y2="73"/>
+        <line x1="148" y1="179" x2="172" y2="179"/><line x1="316" y1="179" x2="340" y2="179"/>
+        <line x1="484" y1="179" x2="508" y2="179"/>
       </g>
+      <path d="M750,102 L750,126 L78,126 L78,146" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#a2)"/>
 
-      <path d="M60,102 L60,146 L316,146" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a2)" color="var(--accent)"/>
-      <text x="70" y="140" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--accent)">si es escaneo: Mistral avisa, y ese caso puntual pasa a Gemini — ver el cuadro de abajo</text>
-
-      <path d="M444,102 L444,190 L188,190" fill="none" stroke="var(--cost)" stroke-width="1.5" marker-end="url(#a2)" color="var(--cost)"/>
-      <text x="200" y="184" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">no cierra → volver al documento, nunca ajustar una línea para que cierre</text>
-
-      <path d="M444,102 L444,232 L836,232" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" opacity=".6" marker-end="url(#a2)"/>
-      <text x="456" y="226" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".7">se contradice el documento mismo → Admin/dudas-por-club.md, y el club se carga parcial o no se carga</text>
+      <path d="M78,208 L78,244 L746,244 L746,212" fill="none" stroke="var(--cost)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a2)" color="var(--cost)"/>
+      <text x="92" y="238" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">no cierra, o no hay con qué confirmarlo → cola humana; nunca se ajusta una línea para que cierre</text>
     </svg>
-    <figcaption>Los dos caminos de salida del paso 4 son lo que separa este proyecto de uno que "carga números": si no cierra se vuelve al documento, y si el que se contradice es el club, la contradicción se anota en vez de taparse.</figcaption>
+    <figcaption>Un documento sigue solo mientras todo cierra. Cuando algo no cierra pasa una vez por el camino de error (reintento con una lectura más permisiva) y, si sigue sin cerrar, llega a la cola humana con la pregunta ya armada.</figcaption>
   </figure>
 
   <div class="col">
-    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 2, en detalle: quién transcribe, y por qué (hasta) 4 motores distintos</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Desde la Versión 302, Mistral y Gemini transcriben CADA documento EN PARALELO (no solo los escaneos) — <strong>0 tokens de Claude</strong>, sea 1 PDF o sean miles — y <code>tools/compare-transcripts.mjs</code> los compara por rubro: si coinciden, se sigue solo; si no, hace falta revisión. Por qué: un test amplio (8 documentos, ~1.660 celdas verificadas a mano, <code>Admin/test-mistral-gemini-escaneos.md</code>) confirmó que NINGUNO de los dos motores es sistemáticamente mejor — cada uno se equivoca en celdas distintas — así que la señal útil no es "elegir un default", es el desacuerdo entre los dos. Gemini además rechaza ~1 de cada 4 documentos con <code>RECITATION</code> (falso positivo de copyright de Google): ahí entra una 3ra API (Claude, por API directa) como reemplazo puntual, y un subagente de Claude completo queda como última red, para lo que ninguna API resuelve sola.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">Las nueve etapas, de un vistazo</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Las etapas 3 a 8 las corre juntas <code>tools/lote.mjs</code> sobre una lista chica de documentos. Sin <code>--ejecutar</code> es un ensayo gratis que dice qué haría y cuánto costaría.</p>
   </div>
-
   <div class="tbl-wrap"><table class="ledger">
-    <thead><tr><th>Quién</th><th>Cuándo</th><th>Costo/doc</th><th>El límite conocido</th></tr></thead>
+    <thead><tr><th>Etapa</th><th>Qué entra → qué sale</th><th>Quién · costo</th></tr></thead>
     <tbody>
-      <tr><td class="mono">Mistral OCR</td><td><strong>Siempre</strong>, la transcripción canónica del club. <code>node tools/onboard.mjs "&lt;pdf&gt;"</code> (o <code>--all --limit 50</code>) la dispara sola.</td><td class="num">~$0,01–$0,25<br>(por página)</td><td>En un escaneo dañado o rotado puede inventar un número con la misma confianza que uno bien leído, sin avisar — o saltearse contenido entero (una columna de ratios, visto en el test de 8 escaneos) sin ninguna advertencia.</td></tr>
-      <tr><td class="mono">Gemini 3.8 Flash</td><td><strong>Siempre, EN PARALELO</strong> a Mistral (<code>--out-suffix .gemini-check</code>), no solo para escaneos — es el 2do chequeo que dispara la comparación.</td><td class="num">~$0,03–$0,17</td><td>Puede fabricar un valor en una celda vacía, o "corregir" en silencio un dígito hacia lo que le parece más consistente (mismo test de 8 escaneos) — y rechaza ~1 de cada 4 documentos con <code>finishReason: RECITATION</code>, un falso positivo de copyright, no un problema del documento.</td></tr>
-      <tr><td class="mono">Claude (API directa)<br><code>tools/claude-api-transcribe.mjs</code></td><td>SOLO cuando Gemini rechaza por RECITATION — <code>tools/onboard.mjs</code> lo llama solo, escribiendo al mismo <code>.gemini-check.md</code> (compare-transcripts.mjs no distingue cuál de los 2 lo generó).</td><td class="num">Sonnet 5.5,<br>$2/$10 por MTok</td><td>Recién conectado (2026-09-29) — todavía sin un test de calidad propio, a diferencia de Mistral/Gemini.</td></tr>
-      <tr><td class="mono">Un subagente de Claude</td><td>Lo que ninguna API resuelve sola (Gemini Y Claude API fallan, o una discrepancia Mistral/Gemini que hay que resolver contra el PDF a mano).</td><td class="num">70k–290k<br>tokens de Claude</td><td>El más caro, pero también el más minucioso: cruza sumas entre notas, marca <code>[ilegible]</code> en vez de inventar, y resuelve ambigüedades de OCR contra el resto del documento.</td></tr>
+      <tr><td class="mono">1 Conseguir</td><td>Una búsqueda → el documento oficial guardado en <code>Clubes/&lt;País&gt;/&lt;Club&gt;/</code>. El año se lee del contenido, no del nombre del archivo.</td><td class="num">sourcing,<br>sesión de Claude</td></tr>
+      <tr><td class="mono">2 Transcribir</td><td>PDF → texto Markdown con marca de página. Un escaneo se marca como tal; si el texto sale roto se trata como escaneo.</td><td class="num">Mistral OCR,<br>lo corre Guido</td></tr>
+      <tr><td class="mono">3 Localizar</td><td>Un índice gratis de las tablas del texto → la elección de cuáles son el estado de resultados, las notas de ingresos y gastos, la escala, la moneda y el perímetro. Si no hay estado de resultados, el documento queda como fuente.</td><td class="num">IA,<br>~US$ 0,05</td></tr>
+      <tr><td class="mono">4 Validar</td><td>Cada número de esos bloques → confirmado contra una lectura independiente: el texto propio del PDF si es digital, la imagen de la página si es un escaneo.</td><td class="num">gratis (digital);<br>centavos (escaneo)</td></tr>
+      <tr><td class="mono">5 Extraer</td><td>Solo los bloques elegidos → las filas tal cual, con tipo, lado (ingreso o gasto) y escala. No suma, no convierte, no categoriza.</td><td class="num">IA,<br>~US$ 0,12–0,35</td></tr>
+      <tr><td class="mono">6 Verificar</td><td>Las filas → la prueba de que las sumas cierran contra los totales impresos, contra el año anterior ya cargado y contra el año vecino. Un documento sin ningún total impreso no se carga.</td><td class="num">gratis,<br>sin IA</td></tr>
+      <tr><td class="mono">7 Categorizar</td><td>Cada rubro → una categoría del sitio: primero lo que el club ya decidió antes, después Jev, después Claude por API. Lo que queda con poca confianza va a la cola.</td><td class="num">precedente,<br>IA, ~US$ 0,03</td></tr>
+      <tr><td class="mono">8 Cargar</td><td>Lo verificado y categorizado → el año escrito en el sitio, con tipo de cambio, liga y página de fuente. Después corre la auditoría y, si da un error grave, revierte solo. Un club nuevo se da de alta en el mismo commit que su primer año.</td><td class="num">gratis,<br><code>cargar.mjs</code></td></tr>
+      <tr><td class="mono">9 Publicar</td><td>Un commit local por año cargado → el sitio, cuando Guido hace el push.</td><td class="num">Guido</td></tr>
     </tbody>
   </table></div>
 
   <div class="col">
-    <p style="color:var(--ink-soft);margin:12px 0 0;">El test original (30 documentos, comparados cifra por cifra contra una transcripción ya verificada, <code>Admin/test-costo-transcripcion.md</code>) fue el que estableció que Mistral+Gemini salen mucho más barato que un subagente de Claude. El test más nuevo (8 escaneos, <code>Admin/test-mistral-gemini-escaneos.md</code>) cambió el criterio de EN QUÉ ORDEN usar Mistral/Gemini (ya no hay un "mejor" fijo) por EJECUTAR LOS DOS Y COMPARAR — Claude (API directa primero, subagente completo después) queda como las 2 últimas redes, para lo que la comparación automática no puede resolver sola.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">La cola humana</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Es el lugar donde cae lo que el pipeline no puede resolver solo: un número que no se confirma, una suma que no cierra, un año vecino que da distinto, una categoría con poca confianza. Cada caso llega como una <strong>pregunta de sí o no</strong>, con la propuesta del sistema, la página del PDF a abrir y las líneas del texto. Se ve con <code>node tools/cola.mjs</code> y Guido contesta con el mismo comando: aceptar, corregir, descartar o preguntarle al club. La próxima corrida toma la respuesta, y una respuesta de categoría queda como precedente para los años siguientes del club. Para forzar una decisión que no es una respuesta puntual (un perímetro, una fecha de cierre, un tipo de cambio) existen los ajustes manuales, <code>node tools/ajustes.mjs</code>.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;">Para ver en qué etapa está cada documento: <code>node tools/estado.mjs</code> (gratis).</p>
   </div>
 
   <div class="col">
-    <h3 style="font-size:18px;margin:26px 0 6px;font-weight:600;">De punta a punta, en una terminal nueva</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Lo que hay que tipear, arrancando de cero (sin ninguna sesión de Claude Code de por medio). Separado en bloques independientes — para probar algo puntual no hace falta correr todo de punta a punta, cada bloque de abajo se puede tipear solo.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">Caja y deuda</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Van aparte, con el club ya publicado: <code>tools/caja-deuda.mjs</code> completa la caja y la deuda bruta de cada año donde el sitio tiene vacío, sin pisar nunca un valor cargado y sin frenar nada. Escribirlas usa IA en su último escalón, así que lo corre Guido.</p>
   </div>
-  <pre class="term"><code><span class="rem"># 1. pararse en la carpeta del proyecto</span>
-cd /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports</code></pre>
 
   <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Proceso completo, de punta a punta</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Mistral → Gemini en paralelo → comparar → onboardear lo que coincida (nativo o ya resuelto a mano). Club y año se adivinan solos por la carpeta/nombre del archivo — si hay ambigüedad, el comando lo dice y pide <code>--club</code>/<code>--year</code> explícito en vez de arriesgar.</p>
-  </div>
-  <pre class="term"><code><span class="rem"># confirmar que las API keys están (si falta alguna, pedírsela a Guido)</span>
-ls Admin/mistral/.env Admin/gemini/.env
-
-<span class="rem"># un documento nuevo</span>
-node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
-
-<span class="rem"># o un lote de N (mismo --limit que ya usabas con Mistral; más de 50 sin</span>
-<span class="rem"># --limit pide --confirm, es plata real — ver el aviso del propio comando)</span>
-node tools/onboard.mjs --all --limit 50</code></pre>
-
-  <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Solo Mistral</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">El default, el más barato, sin el filtro de copyright de Gemini.</p>
-  </div>
-  <pre class="term"><code>node tools/mistral-ocr-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf"
-
-<span class="rem"># o en lote</span>
-node tools/mistral-ocr-transcribe.mjs --all --limit 150</code></pre>
-
-  <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Solo Gemini</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;"><code>--out-suffix</code> transcribe a un archivo APARTE (<code>.gemini-check.md</code>), sin pisar el de Mistral — es la transcripción EN PARALELO para comparar, no un reemplazo.</p>
-  </div>
-  <pre class="term"><code>node tools/gemini-transcribe.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --out-suffix .gemini-check</code></pre>
-
-  <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Mistral y Gemini en el mismo script</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Las 2 transcripciones en paralelo, sin comparar ni onboardear todavía.</p>
-  </div>
-  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --transcribe-only
-
-<span class="rem"># o en lote</span>
-node tools/onboard.mjs --all --limit 50 --transcribe-only</code></pre>
-
-  <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Chequear que Mistral y Gemini coincidan</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Compara por RUBRO, no diff de texto (dos transcripciones fieles pueden diferir en formato sin que importe). No onboardea aunque dé match — solo dice sí/no y, si no, en qué rubros puntuales.</p>
-  </div>
-  <pre class="term"><code>node tools/compare-transcripts.mjs "archivo.md" "archivo.gemini-check.md"
-
-<span class="rem"># o con la misma sintaxis que el resto (adivina club/año, sirve en lote)</span>
-node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --check-only</code></pre>
-
-  <div class="col">
-    <p style="margin:18px 0 2px;font-weight:600;">Onboardear lo que ya coincide</p>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Sea porque Mistral y Gemini coincidieron solos, o porque Claude corrigió el <code>.md</code> canónico contra el PDF para resolver una discrepancia. Vuelve a comparar EN EL MOMENTO antes de onboardear — nunca confía en un resultado guardado de una corrida anterior, así que si Claude ya arregló el archivo, esto lo detecta solo, sin que nadie le avise nada.</p>
-  </div>
-  <pre class="term"><code>node tools/onboard.mjs "Clubes/&lt;País&gt;/&lt;Club&gt;/archivo.pdf" --onboard-only
-
-<span class="rem"># o en lote</span>
-node tools/onboard.mjs --all --limit 50 --onboard-only</code></pre>
-
-  <div class="col">
-    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">El paso 7, en detalle: qué se toca y por qué</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Cargar un club toca 7 archivos a mano (uno, <code>Admin/dudas-por-club.md</code>, sólo si hace falta) y dispara 4 comandos que regeneran el resto. Ninguno de los 4 se edita a mano nunca — ver el <a href="#generadores">paso 06</a>.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">Lo que queda a mano</h3>
   </div>
   <div class="tbl-wrap"><table class="ledger">
-    <thead><tr><th>Archivo</th><th>Por qué se toca</th><th class="num">¿Cómo?</th></tr></thead>
+    <thead><tr><th>Qué</th><th>Por qué no lo hace el pipeline</th></tr></thead>
     <tbody>
-      <tr><td class="mono">Clubes/&lt;País&gt;/&lt;Club&gt;/…md</td><td>La transcripción del PDF. Se hace ANTES de extraer un solo número, para que cualquier revisión futura lea texto plano en vez de volver a abrir el PDF.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">data/&lt;club&gt;-data.js</td><td>Los datos. Es el archivo que el sitio realmente lee.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">data/clubs.js</td><td>Una línea: nombre, país, moneda, mes de cierre, color de marca. Sin esto el club no aparece en el selector.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">data/club-leagues/&lt;iso2&gt;.js</td><td>En qué categoría jugó ese ejercicio — la fuente de la pestaña Ligas y del árbol del selector.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">Admin/CHANGELOG.md</td><td>La entrada de la versión.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">fuentes/&lt;País&gt;/&lt;Club&gt;.md<br>+ fuentes/_indice/&lt;País&gt;.md</td><td>Marcar el club como cargado y la fecha del chequeo.</td><td class="num">a mano</td></tr>
-      <tr><td class="mono">Admin/dudas-por-club.md</td><td>Sólo si el documento dejó una pregunta abierta de verdad.</td><td class="num">a mano,<br>condicional</td></tr>
-      <tr><td class="mono">Admin/ESTADO-clubes.md (CLUB-INDEX)<br>fuentes.html + 161 páginas<br>data/rankings/&lt;liga&gt;.js<br>fuentes/README.md (índice)</td><td>"Qué es real por club", el listado de fuentes, el ranking de su liga y el índice de países — los 4 se regeneran, nunca se escriben.</td><td class="num">4 comandos</td></tr>
+      <tr><td class="mono">Club nuevo</td><td>El color de marca, el chequeo contra el escudo y la liga de cada temporada se resuelven a mano, con los pasos de <code>.claude/skills/club-or-year-onboarding/club-nuevo.md</code>. Perímetro y fecha de cierre se fijan antes del primer lote con <code>tools/ajustes.mjs</code>.</td></tr>
+      <tr><td class="mono">Presupuestos</td><td><code>localizar.mjs</code> no los elige, así que el pipeline no los carga. Se cargan a mano.</td></tr>
+      <tr><td class="mono">Lo que regeneran los generadores</td><td>El índice de clubes, <code>fuentes.html</code> y sus páginas, los rankings de liga y el índice de países nunca se editan: se regeneran (<a href="#generadores">paso 06</a>).</td></tr>
+      <tr><td class="mono">Las preguntas al club</td><td>Si el documento deja una duda que solo el club puede contestar, va a <code>Admin/dudas-por-club.md</code> para escribirle.</td></tr>
     </tbody>
   </table></div>
 </section>

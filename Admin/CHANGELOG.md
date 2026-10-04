@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 475 — Limpieza de lo que quedó del onboarding manual (2026-10-04)
+
+- `Admin/ESTADO.md`: un solo bloque del pipeline, sin historia; el proceso viejo (`pipeline.mjs`) como referencia; inventario al día (6.825 PDFs, 517 cargados, 4.550 sin `.md`).
+- `Admin/TODO.md`: los to-dos 98, 105, 85, 89 y 108 a `Admin/Archive/todos-cerrados-onboarding-manual.md` (tal cual); el 112 reescrito con lo que sigue vivo, verificado (11 preguntas de perímetro, 91 documentos sin preguntar, faltan las series SEK y PLN, rangos de COP y BRL).
+- `Admin/COMO-CORRE-EL-PROYECTO.html`: la sección "Onboardear un club" describe el pipeline (9 etapas, cola humana, caja y deuda, lo que queda a mano); pesos y descripción del skill de onboarding y de ARQUITECTURA al día.
+
 ## Versión 474 — El arranque y CLAUDE.md, alineados con el skill de onboarding nuevo (2026-10-04)
 
 - `start-session-finance-of-sports-project`: si la tarea es onboarding o el pipeline, el arranque es el de `club-or-year-onboarding`; tabla con `Admin/PANTALLA-FINANZAS.md`, pesos al día (ARQUITECTURA 38 KB, onboarding 9 KB) y `club-data-mapping` solo para cargas a mano.
