@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 466 — `estado.mjs --logica` con las etapas del proceso nuevo (2026-10-04)
+
+- `estado.mjs --logica` imprime las 7 etapas del HANDOFF (2 Transcribir, 3 Localizar, 4 Validar, 5 Extraer, 6 Verificar, 7 Categorizar, 8 Cargar) en vez de las 5 del proceso viejo.
+- `grupos-pais.mjs`: los 60 puntos medidos pasan a su etapa nueva sin reescribirse (preparar → 3 localizar, validar → 4, categorizar → 7, cargar → 8); la cabecera y el pie aclaran que se vieron con el proceso viejo (2026-09-30).
+- Medido: los 60 puntos en la etapa esperada (0 mal ubicados); ensayo de `prueba-completa` idéntico; solo `estado.mjs` lee `logica`.
+
 ## Versión 465 — Comentario de la meta: caja y deuda las completa caja-deuda.mjs (2026-10-04)
 
 - `cargar.mjs`: el comentario que escribe en el `fiscalYearMeta` de cada año nuevo dice "grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía)" en vez de "no se leen por script todavía". Los años ya cargados conservan el texto viejo.

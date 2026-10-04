@@ -41,16 +41,17 @@ if (args.includes('--actualizar') || !existsSync(regPath)) {
 if (args.includes('--logica')) {
   const pedido = flagVal('--logica'); const lista = pedido && !pedido.startsWith('--') ? GRUPOS.filter((g) => g.id === pedido) : GRUPOS;
   if (!lista.length) { console.error(`Grupo desconocido: ${pedido}. Grupos: ${GRUPOS.map((g) => g.id).join(', ')}`); process.exit(1); }
-  const ETAPA = { 2: '2. Transcribir', 3: '3. Validar', 4: '4. Preparar (qué filas, qué escala)', 5: '5. Categorizar', 6: '6. Cargar' };
+  // Las etapas del proceso nuevo (Admin/HANDOFF-pipeline.md); hasta la Versión 466 eran las del viejo (2-6, con "4. Preparar").
+  const ETAPA = { 2: '2. Transcribir', 3: '3. Localizar (qué bloques, escala, perímetro)', 4: '4. Validar', 5: '5. Extraer', 6: '6. Verificar', 7: '7. Categorizar', 8: '8. Cargar' };
   for (const g of lista) {
     console.log(`\n${g.corto} ${g.nombre.toUpperCase()}  (${g.paises.join(', ') || 'el resto'})\n  ${g.marco}`);
-    for (const k of [2, 3, 4, 5, 6]) {
+    for (const k of [2, 3, 4, 5, 6, 7, 8]) {
       const items = (g.logica || {})[k];
       console.log(`  ${ETAPA[k]}: ${items && items.length ? '' : 'nada propio conocido (igual que el resto)'}`);
       for (const x of items || []) console.log(`     - ${x}`);
     }
   }
-  console.log('\n(Es conocimiento medido, cada punto con el documento donde se vio. Fuente: tools/grupos-pais.mjs.)\n');
+  console.log('\n(Es conocimiento medido, cada punto con el documento donde se vio, visto con el proceso viejo (2026-09-30) y pasado a las\n etapas nuevas. Fuente: tools/grupos-pais.mjs.)\n');
   process.exit(0);
 }
 const R = readFileSync(regPath, 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((e) => !dir || e.pdf.startsWith(dir.replace(/\/$/, '') + '/'));
