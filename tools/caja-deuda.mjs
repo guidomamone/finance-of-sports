@@ -52,7 +52,7 @@ import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { readdirSync } from 'node:fs';
 import { derivado } from './rutas.mjs';
-import { ajusteDe, ajusteClubODoc } from './ajustes.mjs';
+import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -156,6 +156,19 @@ export function filasDelMd(md) {
   }
   // (Probado y DESCARTADO en la Versión 352: leer solo el "balance principal", el primer tramo de páginas seguidas: manta corta.)
   for (const f of filas) f.balance = balance.has(f.pagina);
+  // PERÍMETRO DE CADA PÁGINA DEL BALANCE (Versión 454, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): una página con su propio título
+  // de balance como encabezado es "consolidado" si el encabezado lo dice, "individual" si no; la página siguiente sin título (el pasivo)
+  // hereda el de la anterior. Sin encabezado de balance: null. Lo usa filasCache() para quedarse con el perímetro del ajuste `perimetro`.
+  // Caso: Juventus 2020-21, "CONSOLIDATED STATEMENT OF FINANCIAL POSITION" (caja 10.533.461, L1444) y "STATEMENT OF FINANCIAL POSITION"
+  // (separado, 10.077.958, L4349; el cargado).
+  const perPag = new Map(); let ultimo = null;
+  for (const p of [...balance].sort((a, b) => a - b)) {
+    const enc = normalizar(encabezados((textoPag.get(p) || '').slice(0, 1500)));
+    if (TITULO_BALANCE_RE.test(enc) || TITULO_BALANCE_PLURAL_RE.test(enc)) ultimo = /consolidad|consolidat|konsolid|konzern/.test(enc) ? 'consolidado' : 'individual';
+    else if (!balance.has(p - 1)) ultimo = null;
+    perPag.set(p, ultimo);
+  }
+  for (const f of filas) f.perimetro = f.balance ? perPag.get(f.pagina) ?? null : null;
   return filas;
 }
 
@@ -416,7 +429,20 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
     extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean) };
 }
 const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
-const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md)) c.set(md, filasDelMd(readFileSync(resolve(ROOT, md), 'utf8'))); return c.get(md); }; };
+// (Versión 454) con ajuste `perimetro` (del documento o del club) y páginas de balance de ese perímetro en el .md, las filas del balance del
+// OTRO perímetro dejan de contar como balance (para todos los escalones y para los precedentes). Sin ajuste, o si el .md no marca ese
+// perímetro en ninguna página, como antes.
+const conPerimetro = (filas, md) => {
+  const aj = ajustePerimetroDe(md.replace(/\.md$/i, '.pdf'))?.valor;
+  if (!aj || !filas.some((f) => f.balance && f.perimetro === aj)) return filas;
+  // Si el .md trae LOS DOS perímetros, solo cuentan las páginas MARCADAS con el del ajuste: las de balance sin marca (resúmenes del balance
+  // dentro del informe de gestión, Juventus 2021-22 págs. 19-20 y 36-37, con las cifras consolidadas) también quedan afuera; si no, la
+  // compuerta tomaba la primera de esas. Si trae uno solo, solo sale el otro (no hay): las páginas sin encabezado siguen contando (medido:
+  // sacarlas en los documentos de un solo perímetro hacía perder Juventus caja 2008 y metía una suma casual en deuda 2015).
+  const dos = filas.some((f) => f.balance && f.perimetro && f.perimetro !== aj);
+  return filas.map((f) => (f.balance && (dos ? f.perimetro !== aj : f.perimetro && f.perimetro !== aj) ? { ...f, balance: false } : f));
+};
+const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md)) c.set(md, conPerimetro(filasDelMd(readFileSync(resolve(ROOT, md), 'utf8')), md)); return c.get(md); }; };
 
 // La IA de un documento (guardada o, con ejecutar, pedida). Devuelve { datos } | { ensayo, usd } | { error }.
 async function iaDe(md, filas, club) {
