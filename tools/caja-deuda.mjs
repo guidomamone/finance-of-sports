@@ -230,7 +230,21 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
     return null;
   }
   const porFam = new Map(); for (const f of m) porFam.set(f.familia, [...(porFam.get(f.familia) || []), f]);
-  if ([...porFam.values()].some((xs) => xs.length > 1)) return null; // una familia con dos importes: no hay UNA propuesta
+  // CORRIENTE + NO CORRIENTE DE LA MISMA ETIQUETA (Versión 451, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): en deuda, una familia
+  // con EXACTAMENTE dos filas, una a cada lado del total del pasivo no corriente del mismo balance (a menos de 40 líneas), es la deuda partida
+  // en sus dos plazos: se propone la suma. Más de dos (consolidado + separado en el mismo .md) sigue sin decidir. En el documento siguiente la
+  // compuerta busca el mismo par (enOtroDoc), no la primera fila de la familia. Caso: Juventus 2006-07, "Loans and other financial liabilities"
+  // 17.194.480 (L1656, no corriente) + 1.517.777 (L1663, corriente) = 18.712.257.
+  const repetidas = [...porFam.entries()].filter(([, xs]) => xs.length > 1);
+  if (repetidas.length) {
+    if (cual !== 'deuda') return null; // una familia con dos importes: no hay UNA propuesta
+    const pares = repetidas.map(([fam]) => [fam, parCorrienteYNoCorriente(filas, fam)]);
+    if (pares.some(([, p]) => !p)) return null;
+    const unicas = m.filter((f) => !repetidas.some(([fam]) => fam === f.familia));
+    const elegidas = [...unicas, ...pares.flatMap(([, p]) => p)];
+    return { escalon: 1, filas: elegidas, como: `vocabulario: ${pares.map(([fam]) => `"${fam}" corriente + no corriente`).join(', ')}`,
+      enOtroDoc: (sig) => { const out = []; for (const f of unicas) { const x = sig.find((y) => y.balance && y.familia === f.familia && y.cifras.length > 1); if (!x) return null; out.push(x); } for (const [fam] of pares) { const p = parCorrienteYNoCorriente(sig, fam); if (!p || !p.every((y) => y.cifras.length > 1)) return null; out.push(...p); } return out; } };
+  }
   if (cual === 'cash' && m.length > 1) return null;
   // UNA PARTE DE LA NOTA DE EFECTIVO (Versión 383, aprobado por Guido el 2026-10-02): si la fila de caja está en una tabla que termina en un
   // total y las filas de esa tabla suman ese total, se PROPONEN todas esas filas (la caja es una parte, el efectivo es el total). Pasa por la
@@ -257,6 +271,15 @@ function propuestaIA(filas, ia, cual) {
 // (Versión 418) las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
 // si no se conoce (su año no está cargado), la de este, como antes. Caso: Novorizontino 2021 (en miles): caja 0,952 contra 951.927 del 2022
 // (en reales), el mismo número.
+// (Versión 451) Las dos filas de una familia de deuda, una a cada lado del total del pasivo no corriente del mismo balance; si no son
+// exactamente dos así, null.
+const TOTAL_NO_CORRIENTE_RE = /^[\s*]*total\s+(de\s+|del\s+)?(non[\s-]?current\s+liabilities|pasivos?\s+no\s+corrientes?|passivo\s+nao\s+circulante|exigivel\s+a\s+longo\s+prazo)/u;
+function parCorrienteYNoCorriente(filas, fam) {
+  const xs = dedupe(filas.filter((f) => f.balance && f.familia === fam && !esTotal(f.etiqueta) && f.cd !== 'D'));
+  if (xs.length !== 2 || xs[1].linea - xs[0].linea > 40) return null;
+  const entre = filas.some((f) => f.linea > xs[0].linea && f.linea < xs[1].linea && TOTAL_NO_CORRIENTE_RE.test(f.norm));
+  return entre ? xs : null;
+}
 export function compuerta(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null }) {
   if (!factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
   // (Versión 420) LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
