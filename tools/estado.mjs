@@ -4,7 +4,8 @@
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "tenemos demasiados estados abiertos y me marea. Pasame un código para que la terminal
 // pueda hacer esa consulta siempre que quiera"). Los estados vienen de Admin/transcripciones-estado.jsonl (lo escribe
-// tools/inventario-transcripciones.mjs) y de los archivos derivados de Generados/ (huellas de la categorización, tools/huellas.mjs).
+// tools/inventario-transcripciones.mjs) y de lo que las etapas 3-8 dejaron en Generados/ (tools/etapa-doc.mjs, Versión 448: las etapas del
+// proceso nuevo, las mismas que muestra el inventario).
 //
 // USO:
 //   node tools/estado.mjs                 lee el registro tal como está (instantáneo) y dice de cuándo es
@@ -21,8 +22,8 @@
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { jevAlDia, categoriasAlDia } from './huellas.mjs';
-import { clubDeRuta } from './carpetas-clubes.mjs';
+import { etapaDe, rubrosViejo } from './etapa-doc.mjs';
+import { estimarExtraerSinBloques } from './extraer.mjs';
 import { GRUPOS, GRUPO, grupoDe } from './grupos-pais.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -55,78 +56,78 @@ if (args.includes('--logica')) {
 const R = readFileSync(regPath, 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((e) => !dir || e.pdf.startsWith(dir.replace(/\/$/, '') + '/'));
 const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
 
-// ETAPAS del proyecto, EN ORDEN (pedido de Guido, 2026-09-30: "que me dé una imagen comprehensive, ordenada según la secuencia del
-// proyecto, con las categorías en 0 también; no es un waterfall, así que en distintas tablas según el proceso"). Cada fila: clave del
-// registro, qué significa, qué le falta, con qué se avanza, US$ por PDF (medido en los pilotos C y D, 2026-09-30).
+// ETAPAS DEL PROCESO NUEVO, EN ORDEN (Versión 448, aprobado por Guido el 2026-10-04: el tablero con las etapas de Admin/HANDOFF-pipeline.md,
+// "El proceso nuevo"; hasta acá usaba las secciones del proceso viejo, "4. Preparar lista de rubros", y contaba distinto que el inventario).
+// En qué etapa está cada documento lo decide tools/etapa-doc.mjs, la MISMA función que usa el resumen del inventario. Cada fila: clave de
+// etapa-doc, qué significa, qué le falta, con qué se avanza, US$ por PDF (número, o función del PDF: localizar + extraer estimado, V446).
+const usdLocalizarYExtraer = (pdf) => 0.05 + estimarExtraerSinBloques(pdf).usd;
 const ETAPAS = [
   ['1. CONSEGUIR EL PDF (el sourcing no pasa por este registro: acá solo aparecen los PDFs que llegaron rotos)', [
-    ['no-es-pdf', 'El archivo no es un PDF o está cortado', 'Volver a bajarlo (el link está en fuentes/<País>/<Club>.md).', 'a mano', 0],
+    ['e1-roto', 'El archivo no es un PDF o está cortado', 'Volver a bajarlo (el link está en fuentes/<País>/<Club>.md).', 'a mano', 0],
   ]],
-  ['2. TRANSCRIBIR', [
-    ['sin-md', 'Solo PDF, sin transcripción', 'Transcribir (Mistral) y validar.', 'pipeline.mjs --ejecutar', 0.20],
-    ['sin-tablas', 'Transcripción vieja sin tablas', 'Rehacer con Mistral (una vez).', 'pipeline.mjs --ejecutar', 0.10],
+  ['2. TRANSCRIBIR Y VALIDAR LA TRANSCRIPCIÓN', [
+    ['e2-sin-md', 'Solo PDF, sin transcripción (escalón 0)', 'Transcribir (Mistral) y validar.', 'pipeline.mjs --ejecutar', 0.20],
+    ['e2-sin-tablas', 'Transcripción vieja sin tablas (escalón 0)', 'Rehacer con Mistral (una vez).', 'pipeline.mjs --ejecutar', 0.10],
+    ['e2-sin-verificar', 'El .md cambió después de validarse', 'Revalidar (gratis si no aparecen dudas; solo las páginas cambiadas, V443).', 'inventario-transcripciones.mjs', 0],
+    ['e2-revisar', 'Escalón 1a: cifras distintas del texto del PDF', 'Resolver: Claude solo en las páginas dudosas.', 'resolver-inventario.mjs --ejecutar (lo corre lote.mjs)', 0.10],
+    ['e2-segunda-voz', 'Escalón 1a: escaneo sin validar', 'Segunda voz (Gemini; Claude donde difieran) solo en páginas con números.', 'pipeline.mjs --ejecutar', 0.15],
+    ['e2-reintentar', 'Escalón 1a cortado por crédito, red o límite', 'Volver a correr (lo retoma solo).', 'pipeline.mjs --ejecutar', 0.10],
   ]],
-  ['3. VALIDAR LOS NÚMEROS', [
-    ['sin-verificar', 'El .md cambió después de validarse', 'Revalidar (gratis si no aparecen dudas).', 'inventario-transcripciones.mjs --verificar --estado sin-verificar', 0],
-    ['pendiente-segunda-voz', 'Escaneo sin validar (no hay texto del PDF para comparar gratis)', 'Segunda voz (Gemini; Claude donde difieran) solo en páginas con números.', 'pipeline.mjs --ejecutar', 0.15],
-    ['revisar', 'El chequeo gratis encontró cifras distintas del texto del PDF', 'Resolver: Claude solo en las páginas dudosas.', 'pipeline.mjs --ejecutar', 0.10],
-    ['reintentar', 'Un motor falló por crédito, red o límite', 'Volver a correr (lo retoma solo).', 'pipeline.mjs --ejecutar', 0.10],
+  ['3. LOCALIZAR (qué bloques son el estado de resultados y sus notas)', [
+    ['e3-localizar', 'Transcripción validada, sin localizar', 'Localizar y extraer (antes, la compuerta de perímetro y cierre, V441).', 'lote.mjs --lista <lista> (ensayo primero)', usdLocalizarYExtraer],
+    ['e3-fuente', 'Sin estado de resultados (memoria, dictamen, balance solo)', 'Nada: queda como fuente.', '—', 0],
   ]],
-  ['4. PREPARAR (lista de rubros)', [
-    ['listo', 'Validado, sin preparar', 'Sacar la lista de rubros (gratis).', 'pipeline.mjs --ejecutar --solo-preparar --max-paginas 0', 0],
-    ['sin-rubros', 'Validado, sin estado de resultados (memoria, acta, auditor, solo notas)', 'Nada: queda como fuente.', '—', 0],
+  ['4-5. VALIDAR Y EXTRAER', [
+    ['e5-extraer', 'Localizado, sin extraer', 'Extraer (validar es gratis en PDF digital).', 'lote.mjs --lista <lista>', (pdf) => estimarExtraerSinBloques(pdf).usd],
   ]],
-  ['5. CATEGORIZAR (Jev y Claude)', [
-    ['cat-falta', 'Con rubros, sin categorizar o con la categorización desactualizada', 'Jev y Claude por API.', 'pipeline.mjs --ejecutar', 0.04],
-    ['cat-solo-jev', 'Con rubros, solo Jev (falta Claude)', 'Claude por API en lo que Jev dejó < 0,90.', 'pipeline.mjs --ejecutar', 0.03],
-    ['cat-ok', 'Con rubros y categorización al día', 'Cargar (etapa 6).', 'node tools/cargar.mjs <pdf> (propuesta; --escribir)', 0],
+  ['6. VERIFICAR (sumas, resultado, año anterior y vecino)', [
+    ['e6-verificar', 'Extraído, sin verificar', 'Verificar (gratis).', 'lote.mjs --lista <lista>', 0],
+    ['e6-no-cerro', 'No cerró', 'La cola humana o el reintento.', 'cola.mjs  ·  lote.mjs --reintentar', 0],
   ]],
-  ['7. EN EL SITIO', [
-    ['cargado', 'Ejercicio cargado', 'Nada.', '—', 0],
+  ['7. CATEGORIZAR (precedente, Jev, Claude)', [
+    ['e7-categorizar', 'Verificado, sin propuesta de carga', 'Categorizar y proponer la carga.', 'lote.mjs --lista <lista>', 0.03],
+  ]],
+  ['8. CARGAR', [
+    ['e8-lista', 'Propuesta lista', 'Escribir el año en el sitio.', 'cargar.mjs "<pdf>" --desde-verificacion --escribir', 0],
+    ['e8-frenado', 'Propuesta frenada', 'Ver el motivo (abajo) y la cola.', 'cola.mjs', 0],
+  ]],
+  ['9. EN EL SITIO', [
+    ['e9-cargado', 'Ejercicio cargado', 'Nada (caja y deuda: caja-deuda.mjs --club <id>).', '—', 0],
   ]],
 ];
-// QUÉ TOOLS HACEN CADA ETAPA (pedido de Guido, 2026-09-30: "agregame para el paso 2, 3 y 4 las tools que se usan"). En orden de uso; la
-// primera es la que orquesta. El detalle de cada una está en su cabecera. Si una tool entra o sale de una
-// etapa, actualizar esta lista (no se deduce sola del código).
+// QUÉ TOOLS HACEN CADA ETAPA (pedido de Guido, 2026-09-30). En orden de uso; el detalle de cada una está en su cabecera. Si una tool entra o
+// sale de una etapa, actualizar esta lista (no se deduce sola del código).
 const TOOLS = {
   '2': [
-    ['resolver-inventario.mjs', 'orquesta las etapas 2 y 3 (la llama pipeline.mjs)'],
-    ['reparar-pdf.mjs', 'PDF dañado o con imágenes gigantes, antes de mandarlo'],
     ['mistral-ocr-transcribe.mjs', 'transcribe el documento entero a .md (API Mistral)'],
+    ['inventario-transcripciones.mjs', 'el registro de estados y la validación gratis (números del .md contra el texto del PDF)'],
+    ['resolver-inventario.mjs', 'escalón 1a: Claude/Gemini solo en las páginas dudosas; reusa las que no cambiaron (V443)'],
+    ['texto-propio-a-md.mjs', 'escalón 1b: rearma páginas con el texto propio del PDF (gratis)'],
     ['check-transcripcion-fidelidad.js', 'bloques resumidos o páginas faltantes (gratis)'],
   ],
   '3': [
-    ['paginas-con-numeros.mjs', 'qué páginas tienen cifras (la prosa no se valida)'],
-    ['verify-numbers.mjs', 'números del .md contra el texto del PDF (gratis)'],
-    ['chequeos-gratis.mjs', 'sumas, año anterior cargado y balance, por página (gratis)'],
-    ['gemini-transcribe.mjs', 'segunda voz en las páginas dudosas de escaneos (API Gemini)'],
-    ['claude-api-transcribe.mjs', 'desempate en las páginas dudosas (API Claude)'],
-    ['revisar-reservas.mjs', 'decide con sumas las páginas "con reserva"'],
-    ['inventario-transcripciones.mjs', 'el registro de estados (Admin/transcripciones-estado.jsonl)'],
+    ['antes-de-localizar.mjs', 'compuerta antes de pagar: perímetro y cierre fijados (V441)'],
+    ['indice-bloques.mjs', 'ficha de cada tabla o bloque con cifras (gratis)'],
+    ['localizar.mjs', 'elige los bloques del estado y de las notas (IA)'],
   ],
   '4': [
-    ['pipeline.mjs', 'etapa 3 del pipeline: arma <md>.rubros.json'],
-    ['prepare-onboarding.mjs', 'tablas y sumas del .md -> <md>.briefing.json'],
-    ['extract-table-rows.mjs', 'saca las tablas y marca las relevantes'],
-    ['sum-check.mjs', 'chequea sumas contra los totales impresos'],
-    ['proponer-carga.mjs', 'seleccionarFilas(): las filas que va a cargar la etapa 6 (Versión 321)'],
-    ['filas-rubro.mjs', 'descarta lo que no es rubro y deduce el lado (lista vieja)'],
-    ['vocabulario.mjs', 'palabras contables en 29 idiomas'],
+    ['validar-bloques.mjs', 'cada número de los bloques contra el PDF (texto propio o Gemini)'],
+    ['extraer.mjs', 'las filas tal cual (IA)'],
+    ['cache-al-dia.mjs', '¿el caché sigue sirviendo para el .md de hoy? (V445)'],
   ],
+  '6': [['verificar.mjs', 'chequeos gratis; lo que no cierra va a la cola']],
+  '7': [['glosar-rubros.mjs, jev-categorizar.mjs, categorizar-claude.mjs', 'precedente, Jev y Claude']],
+  '8': [['cargar.mjs', 'propuesta y escritura del año'], ['alta-club.mjs', 'club nuevo'], ['caja-deuda.mjs', 'caja y deuda, con el club ya publicado']],
 };
-const clave = (e) => {
-  if (e.cargado) return 'cargado';
-  if (e.jev === 'sin-rubros') return 'sin-rubros';
-  if (e.jev === 'listo-para-jev') { const md = resolve(ROOT, e.md); return categoriasAlDia(md) ? 'cat-ok' : jevAlDia(md) ? 'cat-solo-jev' : 'cat-falta'; }
-  return e.estado;
-};
+const ETAPA_R = new Map(R.map((e) => [e.pdf, etapaDe(e)]));
+const clave = (e) => ETAPA_R.get(e.pdf).clave;
 const cuenta = {}; for (const e of R) cuenta[clave(e)] = (cuenta[clave(e)] || 0) + 1;
 const porGrupo = {}; for (const e of R) { const k = clave(e); const g = grupoDe(e.pdf); (porGrupo[k] ||= {})[g] = (porGrupo[k][g] || 0) + 1; }
 // "ARG 22 · BRA 79 · ..." en el orden de GRUPOS, solo los que tienen alguno.
 const desglose = (m) => GRUPOS.filter((g) => m && m[g.id]).map((g) => `${g.corto} ${m[g.id]}`).join(' · ');
 
 console.log(`\nINVENTARIO${dir ? ` (${dir})` : ''}: ${R.length} PDFs · registro de hace ${edad} min${edad > 60 ? ' (node tools/estado.mjs --actualizar para rehacerlo)' : ''}`);
-console.log('(Si hay un proceso del pipeline corriendo, esto es una foto a mitad de camino.)');
+console.log('(Si hay un proceso del pipeline corriendo, esto es una foto a mitad de camino. Etapas: Admin/HANDOFF-pipeline.md, "El proceso nuevo".)');
 let total = 0;
 const w = Math.max(...ETAPAS.flatMap(([, f]) => f.map((x) => x[1].length)));
 const conocidas = new Set(ETAPAS.flatMap(([, f]) => f.map((x) => x[0])));
@@ -136,66 +137,32 @@ const imprimirEtapa = ([etapa, filas]) => {
   const tools = TOOLS[etapa[0]];
   if (tools) { const wt = Math.max(...tools.map((t) => t[0].length)); console.log(`  tools: ${tools.map(([n, q], i) => `${i ? '         ' : ''}${n.padEnd(wt)}  ${q}`).join('\n')}`); }
   for (const [k, nombre, falta, cmd, usd] of filas) {
-    const n = cuenta[k] || 0;
-    const costo = n && usd ? `~US$ ${Math.round(n * usd)}` : n && !usd && !['cargado', 'sin-rubros', 'cat-ok'].includes(k) ? 'gratis' : '';
-    if (n && usd) total += n * usd;
+    const docs = R.filter((e) => clave(e) === k); const n = docs.length;
+    const u = typeof usd === 'function' ? docs.reduce((a, e) => a + usd(e.pdf), 0) : n * usd;
+    const costo = n && u ? `~US$ ${Math.round(u)}` : n && !u && !['e9-cargado', 'e3-fuente', 'e8-lista', 'e8-frenado', 'e6-no-cerro'].includes(k) ? 'gratis' : '';
+    if (n && u) total += u;
     console.log(`  ${String(n).padStart(5)}  ${nombre.padEnd(w)}  ${costo.padEnd(10)}${n ? `  falta: ${falta}${cmd !== '—' ? `  [${cmd}]` : ''}` : ''}`);
     if (n) console.log(`         ${desglose(porGrupo[k])}`);
+    if (k === 'e8-frenado' && n) { const m = {}; for (const e of docs) { const x = ETAPA_R.get(e.pdf).motivo; m[x] = (m[x] || 0) + 1; } console.log(`         motivos: ${Object.entries(m).map(([a, b]) => `${a} ${b}`).join(' · ')}`); }
   }
 };
 // PDFs ROTOS (pedido de Guido, 2026-10-01: "cuando se descarga un PDF que no es, en fuentes se lo da por caso cerrado pero en realidad debe
-// volver"): el registro los marca `no-es-pdf`, pero el sourcing del club (fuentes/<País>/<Club>.md) puede seguir diciendo "encontrado". Se
-// listan con el archivo de fuentes que hay que reabrir, para que vuelvan a la etapa 1.
-const rotos = R.filter((e) => e.estado === 'no-es-pdf');
+// volver"): se listan con el archivo de fuentes que hay que reabrir, para que vuelvan a la etapa 1.
+const rotos = R.filter((e) => clave(e) === 'e1-roto');
 const reabrir = () => { if (!rotos.length) return; console.log('     Reabrir el sourcing (el archivo de fuentes todavía puede darlo por conseguido):'); for (const e of rotos.slice(0, 10)) { const [, pais, club] = e.pdf.split('/'); console.log(`       ${e.pdf}  ->  fuentes/${pais}/${club}.md`); } };
-// La etapa 7 (en el sitio) se imprime al final, después de la 6 (cargar), que no es una lista de estados sino lo que les falta.
-ETAPAS.filter(([e]) => !e.startsWith('7')).forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(); });
-for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  (estado sin describir: ${k})`);
-console.log(`\n  Costo estimado para llevar todo hasta "categorizado": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
-
-// Detalle de los que tienen rubros: qué les falta para poder cargarse.
-const L = R.filter((e) => !e.cargado && e.jev === 'listo-para-jev');
-if (L.length) {
-  const f = { cat: 0, jev: 0, enSitio: 0, nuevo: 0, noAnual: 0, nombre: 0, reserva: 0 }; const enSitioG = {}; const nuevoG = {};
-  for (const e of L) {
-    const g = grupoDe(e.pdf); if (clubDeRuta(e.pdf).clubId) enSitioG[g] = (enSitioG[g] || 0) + 1; else nuevoG[g] = (nuevoG[g] || 0) + 1;
-    const md = resolve(ROOT, e.md);
-    if (categoriasAlDia(md)) f.cat++; else if (jevAlDia(md)) f.jev++;
-    clubDeRuta(e.pdf).clubId ? f.enSitio++ : f.nuevo++;
-    if (e.periodo && e.periodo.tipo !== 'anual') f.noAnual++;
-    if (e.periodo?.nombreNoCoincide) f.nombre++;
-    if ((e.reserva || []).length) f.reserva++;
-  }
-  console.log(`\n6. CARGAR (etapa 6) — qué les falta a los ${L.length} con rubros:`);
-  console.log(`  club ya en el sitio: ${f.enSitio}   (${desglose(enSitioG)})`);
-  console.log(`  club nuevo (necesita alta): ${f.nuevo}   (${desglose(nuevoG)})`);
-  console.log(`  no anuales (trimestral, semestral...; no se cargan como ejercicio): ${f.noAnual} · nombre del archivo con otra fecha que el contenido: ${f.nombre}`);
-  console.log(`  con páginas "con reserva" (cerrar con sumas al cargar): ${f.reserva}`);
-}
-// Altas de clubes nuevos.
-const altas = resolve(ROOT, 'Admin', 'altas-club.jsonl');
-if (existsSync(altas)) {
-  const A = readFileSync(altas, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
-  const c = {}; for (const a of A) c[a.estado] = (c[a.estado] || 0) + 1;
-  console.log(`\n6b. ALTA DE CLUBES NUEVOS (Admin/altas-club.jsonl): ${Object.entries(c).map(([k, v]) => `${k} ${v}`).join(' · ')}   [node tools/alta-club.mjs --todos]`);
-}
-// ÚLTIMA CORRIDA DE LA ETAPA 6 (Admin/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`): cuántos cargarían y por qué frenan los demás, por
-// grupo de países. Un documento puede frenar por varios motivos: cada columna cuenta los documentos que tienen ese motivo.
+ETAPAS.forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(); });
+for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  ${k === 'descartado' ? 'descartados como fuente (Admin/documentos-descartados.txt; el lote los saltea)' : `(estado sin describir: ${k})`}`);
+console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
+// PROCESO VIEJO, solo como referencia (Versión 448, decisión de Guido): los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan
+// como avance del proceso nuevo. El HANDOFF tiene pendiente retirar el proceso viejo.
+const viejos = R.filter((e) => !e.cargado && e.md && rubrosViejo(e)).length;
+if (viejos) console.log(`  Referencia, proceso viejo: ${viejos} documentos sin cargar tienen lista de rubros de pipeline.mjs (no cuenta como avance acá).`);
+// ÚLTIMA PROPUESTA DE CARGA (Admin/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`, también desde lote.mjs).
 const ultimo = resolve(ROOT, 'Admin', 'cargar-ultimo.jsonl');
 if (existsSync(ultimo)) {
   const U = readFileSync(ultimo, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
-  const NOMBRE = { 'tie-out': 'no cierra', 'tie-out-resultado': 'resultado', categorizacion: 'categoría', fx: 'tipo cambio', alta: 'alta', periodo: 'período', año: 'año', filas: 'filas', moneda: 'moneda', fuente: 'fuente', registro: 'registro', club: 'club', error: 'error' };
-  const motivos = Object.keys(NOMBRE).filter((m) => U.some((x) => x.motivos.includes(m)));
-  console.log(`\n6c. ÚLTIMA CORRIDA DE LA ETAPA 6 (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían`);
-  console.log(`  ${'grupo'.padEnd(6)}${'docs'.padStart(5)}${'carga'.padStart(6)}${motivos.map((m) => NOMBRE[m].padStart(12)).join('')}`);
-  for (const g of GRUPOS) {
-    const X = U.filter((x) => grupoDe(x.pdf) === g.id); if (!X.length) continue;
-    console.log(`  ${g.corto.padEnd(6)}${String(X.length).padStart(5)}${String(X.filter((x) => x.carga).length).padStart(6)}${motivos.map((m) => String(X.filter((x) => x.motivos.includes(m)).length || '').padStart(12)).join('')}`);
-  }
-  console.log('  ("no cierra": las filas no suman ningún total impreso; "resultado": tampoco el resultado del ejercicio. Detalle por documento: Admin/cargar-ultimo.jsonl)');
+  console.log(`  Última propuesta de carga (${U[0]?.lista}, ${String(U[0]?.ts).slice(0, 16).replace('T', ' ')}): ${U.filter((x) => x.carga).length} de ${U.length} cargarían. Detalle: Admin/cargar-ultimo.jsonl`);
 }
-console.log('  La etapa 6 (tools/cargar.mjs) existe pero frena casi todo por problemas de etapas anteriores: ver Admin/HANDOFF-pipeline.md, "Dónde estamos".');
-console.log('  PROCESO NUEVO (localizar, validar, extraer, verificar, con cola humana; Admin/HANDOFF-pipeline.md "El proceso nuevo"): node tools/lote.mjs --lista Admin/lote-NN.txt  ·  cola: node tools/cola.mjs');
-ETAPAS.filter(([e]) => e.startsWith('7')).forEach(imprimirEtapa);
+console.log('  Cola humana: node tools/cola.mjs  ·  un lote: node tools/lote.mjs --lista Admin/lote-NN.txt');
 console.log(`\n  Grupos de países: ${GRUPOS.map((g) => `${g.corto} ${g.nombre}`).join(' · ')}.\n  Qué tiene de propio cada grupo en cada etapa: node tools/estado.mjs --logica [grupo]`);
 console.log('');

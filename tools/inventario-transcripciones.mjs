@@ -54,6 +54,7 @@ import { derivado } from './rutas.mjs';
 import { periodoDe } from './periodo.mjs';
 import { ajusteDe } from './ajustes.mjs';
 import { ultimaConPaginas, huellasDelTexto, compararPaginas } from './huella-paginas.mjs';
+import { etapaDe, ETAPAS_DOC, claveDeEstado, DESCARTADOS } from './etapa-doc.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -255,41 +256,13 @@ const tally = (arr, key) => arr.reduce((a, e) => ((a[key(e)] = (a[key(e)] || 0) 
 const scopeE = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
 console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/transcripciones-estado.jsonl\n`);
 // POR ETAPA (Versión 447, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
-// y el escalón del proceso nuevo (Admin/HANDOFF-pipeline.md, "El proceso nuevo"). Los "listo" se abren mirando qué dejaron las etapas 3-8
-// en Generados/ (gratis): "listo" solo dice que la transcripción terminó, no hasta dónde llegó el documento.
-const ETAPA_DE_ESTADO = {
-  'no-es-pdf': 'Etapa 1 · conseguir: llegó roto (volver a bajarlo)',
-  'sin-md': 'Etapa 2 · transcribir, escalón 0 (Mistral)',
-  'sin-tablas': 'Etapa 2 · transcribir, escalón 0: transcripción vieja sin tablas (rehacer con Mistral)',
-  'sin-verificar': 'Etapa 2 · validación gratis pendiente (el .md cambió o nunca se validó)',
-  revisar: 'Etapa 2 · escalón 1a: cifras distintas del texto del PDF (resolver: Claude en las páginas dudosas)',
-  'pendiente-segunda-voz': 'Etapa 2 · escalón 1a: escaneo, falta la segunda voz (Gemini en las páginas con cifras)',
-  reintentar: 'Etapa 2 · escalón 1a cortado por crédito, red o límite (se retoma solo)',
-  cargado: 'Etapa 9 · en el sitio',
-};
-const leerGen = (e, suf) => { try { const q = resolve(root, derivado(e.md, suf, { crear: false })); return existsSync(q) ? JSON.parse(readFileSync(q, 'utf8')) : null; } catch { return null; } };
-// Descartados por Guido como fuente (Admin/documentos-descartados.txt): lote.mjs los saltea; no son "pendientes".
-const DESCARTADOS = new Set((existsSync(resolve(root, 'Admin', 'documentos-descartados.txt')) ? readFileSync(resolve(root, 'Admin', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
-const etapaDe = (e) => {
-  if (DESCARTADOS.has(e.pdf) && !e.cargado) return 'descartado como fuente (Admin/documentos-descartados.txt)';
-  if (e.estado !== 'listo') return ETAPA_DE_ESTADO[e.estado] || `estado ${e.estado}`;
-  const ub = leerGen(e, '.ubicacion.json');
-  if (!ub) return 'Etapa 3 · localizar (pendiente)';
-  if (ub.sin_estado) return 'Etapa 3 · sin estado de resultados: queda como fuente (memoria, dictamen, balance solo)';
-  if (!leerGen(e, '.filas.json')) return 'Etapa 5 · extraer (pendiente)';
-  const v = leerGen(e, '.verificacion.json');
-  if (!v) return 'Etapa 6 · verificar (pendiente)';
-  if (v.estado !== 'ok') return 'Etapa 6 · verificar: no cerró (cola humana o reintento)';
-  const c = leerGen(e, '.carga.json');
-  if (!c) return 'Etapa 7 · categorizar (pendiente)';
-  if ((c.frena || []).length) return `Etapa 8 · cargar: frenado por "${c.frena[0].etapa}"`;
-  return 'Etapa 8 · cargar: propuesta lista (falta escribir)';
-};
+// y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en Generados/. La lógica vive en
+// tools/etapa-doc.mjs (Versión 448), la misma que usa el tablero (tools/estado.mjs).
 console.log('Por estado (con la etapa y el escalón del proceso, Admin/HANDOFF-pipeline.md):');
 for (const [k, v] of Object.entries(tally(scopeE, (e) => e.estado)).sort((a, b) => b[1] - a[1])) {
-  if (k !== 'listo') { const nd = scopeE.filter((e) => e.estado === k && !e.cargado && DESCARTADOS.has(e.pdf)).length; console.log(`  ${String(v).padStart(5)}  ${k.padEnd(22)} ${ETAPA_DE_ESTADO[k] || ''}${nd ? ` (${nd} descartados como fuente)` : ''}`); continue; }
+  if (k !== 'listo') { const nd = scopeE.filter((e) => e.estado === k && !e.cargado && DESCARTADOS.has(e.pdf)).length; console.log(`  ${String(v).padStart(5)}  ${k.padEnd(22)} ${ETAPAS_DOC[claveDeEstado(k)]?.[1] || ''}${nd ? ` (${nd} descartados como fuente)` : ''}`); continue; }
   console.log(`  ${String(v).padStart(5)}  ${'listo'.padEnd(22)} Etapa 2 terminada (transcripción validada); de esos:`);
-  for (const [et, n] of Object.entries(tally(scopeE.filter((e) => e.estado === 'listo'), etapaDe)).sort((a, b) => a[0].localeCompare(b[0]))) console.log(`  ${''.padStart(5)}  ${String(n).padStart(22)}  ${et}`);
+  for (const [et, n] of Object.entries(tally(scopeE.filter((e) => e.estado === 'listo'), (e) => etapaDe(e).texto)).sort((a, b) => a[0].localeCompare(b[0]))) console.log(`  ${''.padStart(5)}  ${String(n).padStart(22)}  ${et}`);
 }
 console.log('\nPor motor que hizo el .md (solo lo NO cargado todavía):');
 const notLoaded = scopeE.filter((e) => !e.cargado);
