@@ -26,3 +26,9 @@ de operación, prioridades distintas), pero no se confirmó explícitamente. Can
 `dudas-por-club.md` si Guido quiere preguntar directo.
 
 - Último chequeo: 2026-09-18.
+
+## Chequeo 2026-10-03 (sesión Europa del Este)
+
+**Ángulos**: sitio oficial: agotado (sin sección financiera, sesión anterior) · Wayback CDX: **homonimia — `zorya.com.ua` es la empresa de turbinas Zorya-Mashproekt, no el club** (los PDF archivados son de motores marinos), el dominio del club no se consultó (archive.org cayó) · búsqueda web: agotado (solo agregadores) · barrido: 2 (Sonnet).
+
+**Lead sin verificar (agregador)**: `opendatabot.ua/c/31673441`, `clarity-project.info/edr/31673441` y `zvitnist.com` (ТОВ ФК «ЗОРЯ», EDRPOU 31673441) muestran datos financieros resumidos. Fuente NO oficial, pendiente de verificar contra el documento original. Encontrado 2026-10-03.

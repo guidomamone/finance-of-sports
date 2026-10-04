@@ -50,3 +50,9 @@ los tamaños fueron razonables y consistentes con capturas de página completa).
   `club-data-mapping` si se retoma.
 
 - Último chequeo: 2026-09-18.
+
+## Chequeo 2026-10-03 (sesión Europa del Este)
+
+**Ángulos**: Wayback/otros años: no intentado (archive.org cayó) · búsqueda web: solo agregadores · barrido: 2 (Sonnet).
+
+**Lead sin verificar (agregador)**: `opendatabot.ua/c/35206591` (ФК ПОЛТАВА, EDRPOU 35206591, capital 4 M UAH) tiene balance y resultados 2023-2025 (activos 3,2-3,6 M UAH). Fuente NO oficial, pendiente. Encontrado 2026-10-03.

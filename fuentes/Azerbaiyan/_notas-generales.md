@@ -1,0 +1,30 @@
+# Azerbaiyán — notas generales (sourcing, sesión 2026-10-03)
+
+## Qué canales se probaron
+
+- **Registro tributario / `e-qanun` / `taxes.gov.az`**: no se encontró ningún servicio gratuito para descargar estados financieros
+  de un LLC/OJSC. No se profundizó con navegación autenticada. Documentado como: sin canal accesible.
+- **Clubes**: ni Qarabağ ni los demás publican estados auditados; Qarabağ publica solo un `Official Reports` con el
+  informe de sostenibilidad (desde 2025, primera edición; el archivo anterior `qarabagh.com/brandbook/uploads/files/sustanability_report.pdf`
+  ya no existe en vivo y su captura de Wayback está truncada).
+- **AFFA (federación)**: SÍ publica el informe anual de licenciamiento de clubes con ingresos por club (ver `affa.az/index.php/lisenziya/rsmi-sndlr/211`:
+  "AFFA Klubların Lisenziyalaşdırılması üzrə hesabatı - <año>", 2014-2025; las URLs `…/uploads/files/dirNNN/…/N_0.php` devuelven el PDF directo).
+  La prensa azerí (idman.biz, report.az, qol.az) los cita cada diciembre (ingresos del año anterior).
+
+## Gotchas
+
+- `curl` a `qarabagh.com`, `report.az`, `cbcsport.az` devuelve 403 (hay que usar el navegador del pane); `media.qarabagh.com` (CDN de archivos) baja bien con curl.
+- Los PDF de AFFA pesan 3-12 MB (informes con gráficos): texto parcial. Idioma: azerí (`aze` en Tesseract si hiciera falta).
+- Moneda AZN (manat). Ejercicio = año calendario; el licenciamiento mira el ejercicio previo (informe "2025" = ejercicio 2024).
+
+## Texto propuesto para `paises/Azerbaiyan.md`
+
+> **Azerbaiyán**: sin canal público de estados individuales. Fuente de cifras por club: informes anuales de licenciamiento
+> de la AFFA (`affa.az/index.php/lisenziya/rsmi-sndlr/211`, 2014-2025) y, para Qarabağ, el informe de sostenibilidad
+> (`qarabagh.com/en/resmi-hesabatlar`). No cargar como "balance": son agregados. Los clubes son LLC/OJSC de patronos
+> (Qarabağ = Azersun).
+
+## Gestiones / mails
+
+- Candidato a mail (no escrito): Qarabağ, pidiendo estados auditados (si los hay) además del informe de sostenibilidad.
+- Gestión de Guido: bajar a mano el informe AFFA 2014.

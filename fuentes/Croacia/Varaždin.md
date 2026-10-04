@@ -1,19 +1,9 @@
 # Varaždin (NK Varaždin)
 
-- **Entidad legal**: NOGOMETNI KLUB VARAŽDIN sportsko dioničko društvo (s.d.d.) — conversión
-  RECIENTE (2024/25) desde su forma anterior; varias notas de prensa de esa época cubren
-  explícitamente el paso a sociedad anónima deportiva ("NK Varaždin postaje sportsko dioničko
-  društvo"). Antes de eso, casi con certeza operaba como udruga, sin obligación de disclosure
-  público equivalente.
-- **1 ejercicio descargado** a `Clubes/Croacia/Varaždin/`: 2025 (`financijsko-izvjesce-2025.pdf`,
-  43 pág., más el informe de auditoría separado `revizorsko-izvjesce-2025.pdf`).
-- **Cómo se encontró**: el dominio `nk-varazdin.hr` redirige a `varazdin.club`. La página
-  `varazdin.club/klub/` tiene una sección "DOKUMENTOS" / "OBJAVE ZA LICENCIRANJE" con el
-  ejercicio 2025 completo (informe de auditoría + informe financiero anual + informe de la
-  Junta + informe del Consejo de Vigilancia, todo para la Asamblea General).
-- **Por qué no hay años anteriores**: no es un dead-end de búsqueda — la conversión societaria
-  recién se completó en 2024/25, así que 2025 es muy probablemente el PRIMER ejercicio con este
-  nivel de disclosure obligatorio. No se encontró ningún PDF de años anteriores en el sitio ni
-  mención de un balance previo en prensa. No vale la pena insistir salvo que aparezca evidencia
-  concreta de un balance pre-conversión.
-- Último chequeo: 2026-09-17.
+**Ángulos**: sitio oficial: agotado (`varazdin.club/klub/` solo muestra 2025) · canal regulador (RGFI-JAV/FINA): no aplica (exige cuenta) · Wayback CDX: agotado en `nk-varazdin.hr` y `varazdin.club` (2021-2024 recuperados; 2019 truncado, 2020 no apareció) · búsqueda web: no hizo falta · barrido: 2 (Sonnet) — 2026-10-03
+
+- **Entidad legal**: NOGOMETNI KLUB VARAŽDIN. Hasta 2024 operaba como asociación (udruga) y ya publicaba revizijsko izvješće con la licencia HNS; en 2024/25 pasó a `sportsko dioničko društvo` (s.d.d.). **Corrección de la nota anterior**: no es cierto que 2025 sea el primer ejercicio con disclosure — hay informes de auditor desde al menos 2019.
+- **5 ejercicios en disco** (`Clubes/Croacia/Varaždin/`): 2021 (`revizijsko-izvjesce-2021.pdf`, 36 págs., 22 MB), 2022 (36 págs.), 2023 (35 págs.), 2024 (39 págs.) y 2025 (`financijsko-izvjesce-2025.pdf` + `revizorsko-izvjesce-2025.pdf`, ya existentes). Los 4 nuevos son escaneos sin capa de texto; el ejercicio de cada uno se verificó por OCR de la carátula ("REVIZIJSKO IZVJEŠĆE ZA 20XX. GODINU, NOGOMETNI KLUB VARAŽDIN"). Más `f03-naknade-posrednicima-2023.pdf` y `-2024.pdf` (declaraciones de intermediarios, no financieras).
+- **Cómo se encontraron**: CDX de `nk-varazdin.hr` (sitio viejo, `www.nk-varazdin.hr/news/storage/NKVarazdin_Izvjesce_2021.pdf` y `..._F02_Godisnji_Financijski_Izvjestaji_nakon_revizije_za_2022.pdf`) y de `varazdin.club` (`/download/1557/` = auditoría 2024; el 2023 era `nk-varazdin.hr/download/2561/`).
+- **Pendiente**: 2019 (`http://nk-varazdin.hr/NKVarazdin_Izvjesce_2019.pdf`): la única captura de Wayback (`20201001031705`) viene truncada a 1.048.576 bytes y no abre; 2020 no apareció en ningún listado. Reintentar con otra captura si archive.org agrega una.
+- Último chequeo: 2026-10-03.

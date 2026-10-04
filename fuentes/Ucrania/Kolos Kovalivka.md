@@ -1,40 +1,9 @@
 # Kolos Kovalivka
 
-- **Deporte**: Fútbol
-- **Liga / competencia**: Прем'єр-ліга України (Ucrania, 1ª división)
-- **Entidad legal activa**: ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ФУТБОЛЬНИЙ КЛУБ КОЛОС
-  КОВАЛІВКА (LLC), EDRPOU 39845640, óblast de Kyiv.
-- **Canal**: sitio oficial del club, `koloskovalivka.com/club/report/` (link "Документи" del menú
-  "Клуб") — a diferencia de la mayoría de los otros clubes del país, acá el sitio SOLO publica un
-  documento relacionado a lo financiero, no el paquete completo (balance/resultados/flujo/auditor
-  por separado).
+**Ángulos**: sitio oficial: agotado (`koloskovalivka.com/club/report/`: solo informes de auditor) · canal regulador: no aplica (ТОВ) · Wayback CDX: parcial — 2019 y 2020 aparecen pero las capturas vienen truncadas, archive.org cayó a mitad de sesión ("Temporarily Offline") antes de probar otra captura · búsqueda web: agotado (solo agregadores) · barrido: 2 (Sonnet) — 2026-10-03
 
-## Qué se bajó (sesión 2026-09-18) — resultado PARCIAL, no un paquete completo
-
-**Solo 1 documento, para 2025.** `Clubes/Ucrania/Kolos Kovalivka/`:
-
-- `kolos-auditor-info-adicional-2025.pdf` — "Звіт про фактичні результати щодо оцінки
-  відповідності додаткової фінансової інформації" (informe de procedimientos acordados sobre
-  información financiera ADICIONAL, no el dictamen de auditoría sobre los estados financieros
-  completos en sí). 10,1 MB, confirmado PDF real.
-
-**No se encontró** en el sitio propio ningún balance, estado de resultados o flujo de fondos
-completo — solo este informe de procedimientos acordados. Terceros agregadores privados
-(`zvitnist.com`, `clarity-project.info/edr/39845640/finances`) sí muestran cifras de ingresos del
-club (ej. 282.871.100 UAH de ingresos 2025 citado por `zvitnist.com`), lo que sugiere que el club SÍ
-presenta declaración/estados financieros a algún depósito estatal (probablemente Держстат o el
-mismo mecanismo que alimenta a estos agregadores), pero no se identificó el canal público directo
-para bajar el PDF fuente de esos números en esta sesión — no vale la pena seguir un rabbit hole acá,
-ver duda abajo.
-
-## Dudas / pendientes
-
-- **El balance/resultados/flujo completo de Kolos no se encontró en su sitio propio, pese a que el
-  patrón general del país (art. 14) sugeriría que debería estar ahí.** Puede ser que el club esté
-  por debajo del umbral de empresa "mediana" (exento de publicación aunque igual presente su
-  declaración a otro organismo, que es de donde sale la cifra de ingresos que sí circula en
-  agregadores privados), o que simplemente no cumplió con la obligación de publicar en su sitio.
-  Vale la pena una pregunta directa al club en `dudas-por-club.md` si Guido quiere insistir en
-  conseguir el paquete completo.
-
-- Último chequeo: 2026-09-18.
+- **Entidad legal**: ТОВ ФУТБОЛЬНИЙ КЛУБ КОЛОС КОВАЛІВКА, EDRPOU 39845640. Auditor: ТОВ «АУДИТОРСЬКА КОМПАНІЯ «ЕД РЕМ».
+- **Qué hay en disco** (`Clubes/Ucrania/Kolos Kovalivka/`): NO son estados financieros completos sino informes del auditor sobre la información financiera de cada año: `kolos-auditor-info-adicional-2022.pdf` (informe de procedimientos acordados, 12 págs.), `kolos-auditor-2023.pdf` (10 págs.), `kolos-auditor-2024.pdf` (12 págs.) y `kolos-auditor-info-adicional-2025.pdf` (ya existente, 12 págs.). El año de cada uno se identificó por OCR de su texto (2022: "Балансу ... за 2022 рік"; 2023: "Станом на 31.12.2023"; 2024: martial law "до 07.05.2025"). Son escaneos; el contenido no se abrió página por página (¿incluyen el balance? verificar al cargar).
+- **No se encontró** balance/resultados/flujo propios en ningún año; agregadores (`zvitnist.com`, `clarity-project.info`) muestran cifras (ingresos 2025 ~282,9 M UAH) de las declaraciones a Держстат, que no tienen PDF público.
+- **Pendiente**: 2019 (`wp-content/uploads/2020/04/Звіт-аудитора-та_фін.-інформаця-за-2019-рік.pdf`, captura `20200929001101`) y 2020 (`wp-content/uploads/2021/04/Фінансовий-звіт-за-2020-р..pdf` captura `20210514102317`; `uploads/organization/fiansovii-zvit-za-2020-r-1.pdf` captura `20220128185113`): las capturas bajaron truncadas a 1.048.576 bytes y se descartaron. La CDX dice 1.033.535 bytes comprimidos para la de 2020: reintentar con otra captura cuando archive.org vuelva. 2021 no apareció en el sitio ni en Wayback.
+- Último chequeo: 2026-10-03.

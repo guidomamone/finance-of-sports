@@ -14,6 +14,9 @@ registro EGRUL en sí) dio timeout — inaccesible, pero no hizo falta. 15 de 16
 2025/26 cubiertos con dictámenes de auditor y/o notas reales; histórico solo hasta 2021 (techo real
 del depósito estatal, no límite de búsqueda). Ver `fuentes/Rusia/_notas-generales.md` y la sección
 26 (propuesta) del skill de sourcing.
+**Actualización 2026-10-03:** los 16 clubes tienen además balance + estado de resultados 2021-2025
+(JSON + XLS oficiales de `bo.nalog.gov.ru`, 5 ejercicios cada uno, Baltika 4), con o sin dictamen:
+los conteos por club de abajo hablan solo de PDF (dictamen y notas).
 
 - [Zenit](<../Rusia/Zenit.md>) — 5 ejercicios (2021-2025), serie completa audit+notas, sin cargar aún — Último chequeo: 2026-09-18
 - [Krasnodar](<../Rusia/Krasnodar.md>) — auditoría 2021-2025 + notas solo 2025, sin cargar aún — Último chequeo: 2026-09-18

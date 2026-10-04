@@ -20,7 +20,7 @@ de la HNS (que exige publicar los mismos formularios F.01/F.02 en los 10 sitios)
 - [Lokomotiva](<../Croacia/Lokomotiva.md>) — encontrado pero bloqueado por Scribd (login/pago), sin PDF, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Osijek](<../Croacia/Osijek.md>) — 7 ejercicios reales (2018-2020, 2022-2025), sin cargar aún — Último chequeo: 2026-09-17
 - [Rijeka](<../Croacia/Rijeka.md>) — 9 ejercicios reales, serie completa 2017-2025, + informe combinado 2024 (con Stadion Kantrida); CARGADO al sitio (`rijeka-hr`, ejercicio 2024, informe combinado) — Último chequeo: 2026-09-22
-- [Slaven Belupo](<../Croacia/Slaven Belupo.md>) — 2 ejercicios reales (2024-2025), sin cargar aún — Último chequeo: 2026-09-17
-- [Varaždin](<../Croacia/Varaždin.md>) — 1 ejercicio real (2025, conversión societaria reciente), sin cargar aún — Último chequeo: 2026-09-17
-- [Vukovar 1991](<../Croacia/Vukovar 1991.md>) — 1 ejercicio real (2025, recién ascendido), sin cargar aún — Último chequeo: 2026-09-17
+- [Slaven Belupo](<../Croacia/Slaven Belupo.md>) — 7 ejercicios reales (2019-2025; 2019-2023 recuperados de Wayback), sin cargar aún — Último chequeo: 2026-10-03
+- [Varaždin](<../Croacia/Varaždin.md>) — 5 ejercicios reales (2021-2025; 2021-2024 de Wayback, informes del auditor escaneados), 2019 truncado y 2020 sin encontrar, sin cargar aún — Último chequeo: 2026-10-03
+- [Vukovar 1991](<../Croacia/Vukovar 1991.md>) — 1 ejercicio real (2025, recién ascendido), Wayback sin ninguna captura del dominio, sin cargar aún — Último chequeo: 2026-10-03
 - [Notas generales de Croacia](<../Croacia/_notas-generales.md>)

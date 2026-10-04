@@ -15,6 +15,24 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Sourcing Europa del Este, 2026-10-03
+
+- Sesión de sourcing de región (worktree `sourcing-europa-del-este`), sin cargar nada al sitio ni transcribir.
+  Países con carpeta completados: Rusia (los 16 clubes con balance + resultados 2021-2025 como JSON/XLS
+  oficiales de `bo.nalog.gov.ru`, endpoints `/nbo/bfo/details/<id>` y `/download/bfo/<id>?type=XLS`),
+  Croacia (Slaven Belupo 2→7, Varaždin 1→5, vía Wayback), Ucrania (Shakhtar 8, Oleksandriya 7, Obolon 6,
+  Metalist 1925 3, Dynamo Kyiv, Kolos parcial), República Checa ya estaba completa.
+- Países nuevos con carpeta: Polonia (19 clubes, 5-9 ejercicios, canal = sitio del club por licencia PZPN),
+  Rumanía (12 de 16), Moldavia, Hungría (10 de 11), Eslovaquia (10 clubes, API abierta de `registeruz.sk`),
+  Eslovenia (4 de 9), Serbia, Bulgaria (Registro Mercantil scripteable), Bosnia, Macedonia del Norte,
+  Albania/Montenegro/Kosovo (pasada corta), Estonia (9 clubes, 7 ejercicios), Letonia, Lituania, Georgia,
+  Armenia, Azerbaiyán, Kazajistán (depositario `opi.dfo.kz`, también básquet y vóley) y Bielorrusia (dead-end).
+- `.gitignore`: `Clubes/**/*.json|zip|xls|xlsx` (documento fuente crudo, mismo criterio que XML/DOCX).
+- `tools/generate-fuentes-index.js`: 14 overrides nuevos de líneas ambiguas.
+- Corregidos: Dynamo Kyiv NO era dead-end (sección `fcdynamo.com/pages/40`), Shakhtar NO estaba "sin cerrar"
+  (publica 2018-2025), Oleksandriya no estaba bloqueado (Wayback), Obolon es la ТОВ del club (duda cerrada),
+  Varaždin ya publicaba desde 2019.
+
 ## Sourcing Sudamérica, 2026-10-03
 
 - Colombia: 6 clubes con 1 ejercicio pasaron a 5-6 (Nacional, Junior, Tolima, Millonarios, Santa Fe, América de Cali) y Unión Magdalena a 5, todo por la API de SIIS. Clubes nuevos de Primera B y otros deportes, 4-6 ejercicios cada uno: Real Santander, Jaguares, Atlético FC, Barranquilla FC, Tigres FC, Boca Juniors de Cali, Atlético Huila, Real Cartagena, Bogotá FC, Corsarios (4), Leones FC, Orsomarso, Cúcuta, Cortuluá, Caimanes (béisbol), Titanes (básquet), Toros (béisbol).

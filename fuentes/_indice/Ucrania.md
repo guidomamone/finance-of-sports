@@ -21,14 +21,14 @@ sociedades anónimas. 11 de 16 clubes de la UPL 2025/26 con datos reales, 3 dead
 - [Epicentr](<../Ucrania/Epicentr.md>) — serie completa 2022-2025 — Último chequeo: 2026-09-18
 - [Kudrivka](<../Ucrania/Kudrivka.md>) — 2024-2025, completo (recién ascendido) — Último chequeo: 2026-09-18
 - [LNZ Cherkasy](<../Ucrania/LNZ Cherkasy.md>) — serie completa 2022-2025 — Último chequeo: 2026-09-18
-- [Metalist 1925](<../Ucrania/Metalist 1925.md>) — solo 2025, club rebrandeado a "ФК Харків" — Último chequeo: 2026-09-18
-- [Obolon](<../Ucrania/Obolon.md>) — solo 2025, ver duda de identidad de entidad (club vs. cervecera) en dudas-por-club.md — Último chequeo: 2026-09-18
+- [Metalist 1925](<../Ucrania/Metalist 1925.md>) — 2022 completo + 2023 parcial (de Wayback) + 2025, club rebrandeado a "ФК Харків" — Último chequeo: 2026-10-03
+- [Obolon](<../Ucrania/Obolon.md>) — 6 ejercicios (2020-2025, de Wayback + sitio), entidad confirmada: ТОВ ФК «ОБОЛОНЬ», no la cervecera — Último chequeo: 2026-10-03
 - [Poltava](<../Ucrania/Poltava.md>) — 2024 parcial + 2025, publicado como JPG no PDF — Último chequeo: 2026-09-18
 - [Rukh Lviv](<../Ucrania/Rukh Lviv.md>) — solo 2025 — Último chequeo: 2026-09-18
-- [Kolos Kovalivka](<../Ucrania/Kolos Kovalivka.md>) — parcial, solo informe de procedimientos acordados 2025, ver duda en dudas-por-club.md — Último chequeo: 2026-09-18
-- [Shakhtar](<../Ucrania/Shakhtar.md>) — sin cerrar, SMIDA vacío de financieros, "Річний звіт" propio sin verificar — Último chequeo: 2026-09-18
-- [Dynamo Kyiv](<../Ucrania/Dynamo Kyiv.md>) — dead-end, sin sección financiera en el sitio, ver duda en dudas-por-club.md — Último chequeo: 2026-09-18
+- [Kolos Kovalivka](<../Ucrania/Kolos Kovalivka.md>) — parcial: solo informes del auditor 2022-2025 (no estados completos); 2019-2020 en Wayback truncados, ver duda en dudas-por-club.md — Último chequeo: 2026-10-03
+- [Shakhtar](<../Ucrania/Shakhtar.md>) — 8 ejercicios (2018-2025) del sitio oficial (sección "financial statements"; la nota anterior lo daba por sin cerrar) — Último chequeo: 2026-10-03
+- [Dynamo Kyiv](<../Ucrania/Dynamo Kyiv.md>) — 2025 (auditor + info financiera) + consolidados con dictamen (año a verificar, ~2020), la sección existe en `fcdynamo.com/pages/40` (corrige el dead-end previo) — Último chequeo: 2026-10-03
 - [Zorya](<../Ucrania/Zorya.md>) — dead-end, sin sección financiera en el sitio, ver duda en dudas-por-club.md — Último chequeo: 2026-09-18
 - [Kryvbas](<../Ucrania/Kryvbas.md>) — dead-end, sin sección financiera en el sitio, ver duda en dudas-por-club.md — Último chequeo: 2026-09-18
-- [Oleksandriya](<../Ucrania/Oleksandriya.md>) — bloqueo de tooling (403 hasta con browser real), documento confirmado existente por Google — Último chequeo: 2026-09-18
+- [Oleksandriya](<../Ucrania/Oleksandriya.md>) — 7 ejercicios (2019-2025) recuperados de Wayback pese al 403 del sitio vivo; 2018 truncado — Último chequeo: 2026-10-03
 - [Notas generales de Ucrania](<../Ucrania/_notas-generales.md>)
