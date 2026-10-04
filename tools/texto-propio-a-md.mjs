@@ -262,6 +262,14 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   // (el estado final, no solo el resultado: Goiás 2015 "cerraba" con ingresos de 0,00007 millones leídos mal y el año vecino lo frenaba)
   if (existsSync(vf) && JSON.parse(readFileSync(vf, 'utf8')).estado === 'ok') return null;
   const o = JSON.parse(readFileSync(v, 'utf8')); const m = String(o.motivoModo || '');
+  // SOLO LOS BLOQUES ELEGIDOS HOY (Versión 458, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): los números sin confirmar cuentan si su
+  // bloque sigue elegido en el .ubicacion.json vigente (estado + notas de ingresos + notas de gastos). Caso: Juventus 2021-22, la validación del
+  // 10-03 se hizo con el CONSOLIDADO (notas b54, b55, b67-b71, págs. 92, 93 y 100) y un --reintentar del 10-04 rearmó con ella después de que
+  // el perímetro pasó a individual. Sin .ubicacion.json, como antes.
+  try {
+    const pu = resolve(ROOT, derivado(mdRel, '.ubicacion.json', { crear: false }));
+    if (existsSync(pu)) { const u = JSON.parse(readFileSync(pu, 'utf8')); const elegidos = new Set([...(u.estado || []), ...(u.notas_ingresos || []), ...(u.notas_gastos || [])]); o.noConfirmados = (o.noConfirmados || []).filter((x) => !x.bloque || elegidos.has(x.bloque)); }
+  } catch { /* .ubicacion.json ilegible: como antes */ }
   // "texto parcial" (Versión 395, medido en UC 2015: PDF híbrido, los estados en imagen) NO alcanza para rearmar todo: ahí manda la lista de
   // números no confirmados, y una página en imagen no tiene texto propio que usar (se descarta abajo).
   const casiNada = /no coincide con casi nada del \.md|solo tiene el \d+% de los números del PDF/.test(m);
