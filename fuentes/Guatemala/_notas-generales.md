@@ -17,4 +17,14 @@
 - Comunicaciones confirmado como S.A. de propiedad unipersonal (Remigio Ángel González) sin
   obligación de disclosure — ver `fuentes/Guatemala/Comunicaciones.md`. Municipal sin estructura
   confirmada todavía.
-- Último chequeo: 2026-09-13.
+## Chequeo 2026-10-03 (sourcing Centroamérica): portal de información pública de la FEDEFUT revisado
+
+`fedefutguate.gt/informacionpublica/` tiene: Ley de Acceso a la Información Pública (Decreto
+57-2008), información pública de oficio, formulario de solicitud de información pública, Ley
+Orgánica del Presupuesto, Ley del Presupuesto 2024 y un archivo "Años anteriores" 2016-2025. **Nada
+de clubes de la Liga Nacional** en el índice. Lo que sí existe y no se probó: la **solicitud de
+información pública** (Decreto 57-2008) por formulario — la FEDEFUT, como entidad que recibe fondos
+públicos, podría estar obligada a responder; si tiene estados financieros de clubes por licencia
+(no se sabe si el reglamento de licencias de Guatemala los pide) es un pedido, no sourcing: gestión
+de Guido, bajo valor esperado sin una señal de que exista el documento.
+- Último chequeo: 2026-10-03.

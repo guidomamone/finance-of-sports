@@ -1,5 +1,9 @@
 # Deportivo Saprissa
 
+**Ángulos**: sitio oficial: agotado a nivel superficial (sin sección de transparencia, 2026-09-13) · Wayback CDX: no intentado · búsqueda web/prensa: agotado (2026-10-03: elmundo.cr y La Teja confirman EEFF 2023-2024 auditados por Grant Thornton, ninguno linkea el PDF) · regulador/país: agotado (FEDEFUT art. 12 confidencialidad; no figura en SUGEVAL/BNV en la búsqueda del 2026-10-03, sin padrón revisado) · barrido: 2 (Sonnet) — **candidato a mail (0.3): documento confirmado que existe, ejercicios 2023 y 2024** — 2026-10-03
+
+**Chequeo 2026-10-03**: La Teja (nota "Contadora explica en sencillo el informe financiero de Saprissa que reveló periodista", periodista Ferlin Fuentes) cubre los ejercicios 2023 (utilidad ~US$1,5 M) y 2024 (pérdida ~US$2,5 M; deuda total ₡17.417 millones ≈ US$33,9 M; utilidad bruta ₡1.857 M, gastos administrativos ₡1.947 M, intereses ₡1.408 M), y el dictamen de Grant Thornton incluye una "incertidumbre material sobre empresa en marcha" (pérdidas acumuladas > 50% del capital social, según la prensa). Esas cifras son de prensa, NO fuente de carga. Tampoco se encontró ningún prospecto/emisión de Saprissa en SUGEVAL/BNV (la búsqueda solo devolvió material genérico). Camino concreto: mail al club (accionistas reciben el documento en la asamblea de julio) o al periodista de elmundo.cr; no se redactó ningún mail.
+
 - Sin PDF descargado. A diferencia de Alajuelense, Saprissa SÍ es una Sociedad Anónima (con
   accionistas, no solo socios de asociación) — celebra Asamblea Ordinaria y Extraordinaria de
   Accionistas donde se discuten y aprueban Estados Financieros Auditados. Confirmado por prensa

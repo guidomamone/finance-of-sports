@@ -661,3 +661,32 @@ perdieron sino que se descartaron:
     un barrido CDX de dominio completo filtrando PDF, no de la búsqueda web; replicarlo en los sitios
     oficiales de los clubes grandes de cada país antes de dar el país por vacío.
 
+
+
+122. EL SALVADOR: CERTIFICACIÓN DE BALANCE PARTICULAR DEL CNR (gestión de Guido, sourcing Centroamérica,
+    2026-10-03). El Registro de Comercio del CNR (cnr.gob.sv) recibe el balance anual auditado de toda
+    sociedad mercantil y entrega copia fiel por US$ 6 + US$ 0,25 por hoja (solicitud con denominación
+    y año + recibo de pago; ver `fuentes/El Salvador/_notas-generales.md`). Los agentes no pueden
+    pagar ni identificarse. ANTES de pagar: confirmar que el club sea una SOCIEDAD (Alianza y Águila
+    parecen asociaciones con junta directiva, en cuyo caso el CNR no tiene nada que certificar; FAS
+    pertenecería a SSports Inc., entidad foránea) y su denominación exacta. Sitio oficial y Wayback
+    de los 3 ya agotados (ver notas). Siguiente escalón: licencia de clubes de la FESFUT.
+
+123. COSTA RICA: MAIL A SAPRISSA Y ALAJUELENSE (candidatos a mail, 0.3, 2026-10-03). Documento confirmado
+    por prensa y no público: Saprissa EEFF consolidados 2023-2024 auditados por Grant Thornton
+    (accionistas, asamblea de julio); Alajuelense Informe de Tesorería a socios 2023 y 2025. Proceso
+    de envío en `club-outreach`; no se redactó nada. Guido dijo que NO por ahora (2026-10-03): queda
+    como candidato, no mandar sin que lo pida.
+
+124. PANAMÁ: CONSEGUIR EL REGLAMENTO DE LICENCIAMIENTO MASCULINO DE LA FPF (2026-10-03). Las URLs de
+    2024/2025 dan 404 (el sitio solo muestra el femenino JUL 2026): buscar en Wayback
+    (`fepafut.com/wp-content/uploads/2025/*`) y leer si tiene cláusula de confidencialidad como el
+    art. 12 de Costa Rica. Misma pregunta para la FENAFUTH (Honduras) y la FEDEFUT de Guatemala.
+
+125. REGIÓN CENTROAMÉRICA/CARIBE SIN BARRER (2026-10-03): Nicaragua, Belice, Trinidad y Tobago (la
+    búsqueda secundaria dice que el Companies Registry exige cuenta con PIN y que las privadas no
+    presentan cuentas auditadas: verificar en la ley), República Dominicana (Registro Mercantil de las
+    Cámaras de Comercio, Ley 479-08), Haití, Cuba, Puerto Rico, Curazao, Surinam y los otros deportes
+    (béisbol dominicano/boricua, cricket de Jamaica/Caribe: Cricket West Indies publica como
+    federación). La WebSearch devuelve casi solo Wikipedia: para un barrido serio de estos países
+    usar Firecrawl (`/map` y `/scrape`) y Exa (las keys sí existen en `Admin/*/.env`, archivos ocultos).

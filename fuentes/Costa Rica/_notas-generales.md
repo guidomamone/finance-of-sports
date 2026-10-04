@@ -33,6 +33,18 @@ Supersociedades (Colombia) o Supercias (Ecuador).
 - Sin explorar todavía: Municipal Grecia FC y otros clubes con estructura de "Asociación Deportiva"
   más chica (fuera del scope de esta sesión, que priorizó los tres grandes).
 
+## Chequeo 2026-10-03 (sourcing Centroamérica)
+
+Sin cambios en el bloqueo estructural (FEDEFUT). Lo nuevo: la prensa confirma ejercicios concretos
+que EXISTEN y circulan entre accionistas/socios — Saprissa 2023 y 2024 (EEFF consolidados auditados
+por Grant Thornton, con párrafo de empresa en marcha) y Alajuelense 2023 y 2025 (informes de
+Tesorería a socios) — por lo que los dos son "candidato a mail" (0.3), no dead-end. Hechos del
+contexto: la FCRF le quitó la licencia a Liberia (30-jun-2026) por "falta de transparencia
+financiera"; Santos y Guanacasteca la perdieron en 2025; los clubes con deudas ante la CCSS o
+Hacienda no pueden empezar el torneo (Infobae/EFE 24-jul-2026) — o sea que existe un control
+financiero real, pero no público. No se encontró emisión de deuda/acciones de ningún club en
+SUGEVAL/BNV (búsqueda web, sin revisar el padrón). Herediano sin cambios.
+
 ## Cómo mantener esta nota
 
 Si una sesión futura consigue destrabar alguno de los tres ángulos de arriba (pedido de información

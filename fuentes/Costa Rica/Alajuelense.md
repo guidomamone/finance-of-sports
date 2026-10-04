@@ -1,5 +1,9 @@
 # Liga Deportiva Alajuelense
 
+**Ángulos**: sitio oficial: agotado a nivel superficial (2026-09-13) · Wayback CDX: no intentado · búsqueda web/prensa: agotado (2026-10-03: CRHoy y Teletica confirman que el informe se "envía a los socios", ninguno lo linkea) · regulador/país: agotado (FEDEFUT art. 12; Registro Nacional solo personería) · barrido: 2 (Sonnet) — **candidato a mail (0.3): informes de Tesorería a socios 2023 y 2025 confirmados** — 2026-10-03
+
+**Chequeo 2026-10-03**: dos informes confirmados por prensa, ambos "Informe de Tesorería" remitido a los socios antes de la asamblea (no son estados auditados, según CRHoy no menciona auditoría): ejercicio 2023 (Teletica, 29-ene-2024: utilidad neta ₡1.152 M, gastos operativos ₡7.157 M, patrimonio ₡5.256 M, deuda ₡25 M por un leasing) y ejercicio 2025 (CRHoy: ingresos ₡9.225,98 M, 6,82% sobre presupuesto; gastos operativos ₡8.308,80 M; resultado positivo, deuda monetaria casi nula). Ningún medio adjunta el documento. Atención al categorizar si se consigue: es un informe de tesorería a socios, no un balance auditado; hay que decidir cómo se muestra (criterio de Guido).
+
 - Sin PDF descargado. Alajuelense es una asociación deportiva con estructura de socios (asamblea
   general anual), no una S.A. — presenta informes económicos reales a sus asociados (confirmado por
   prensa: informe 2023 con ¢1.152 millones de superávit y ¢5.256 millones de patrimonio presentado en
