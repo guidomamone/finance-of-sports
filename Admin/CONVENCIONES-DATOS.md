@@ -284,3 +284,13 @@ y recién ahí cargarla.
 última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa
 columna es diciembre del MISMO año 2025), no un error de transcripción.
+
+## REGLA: deducciones de ingresos que el documento no abre por tipo de ingreso (to-do 138, hallazgo 11, 2026-10-05)
+
+Cuando el documento imprime UNA línea de deducciones ("(-) Deduções da receita", tributos y descuentos sobre el ingreso bruto) sin decir a
+qué ingreso corresponde cada parte, va ENTERA a `other_income`, en negativo. No se reparte entre TV, entradas, patrocinio, etc.: repartirla
+sería inventar una apertura que la fuente no da. Cuando el documento sí la abre por ingreso (Goiás desde 2021: "(-) INSS Patrocínio",
+"(-) IRRF Jogos Lotéricos"...), cada parte va con su ingreso o a `other_income` según su texto. Consecuencia esperable, no un error: en esos
+años `other_income` puede quedar negativo (Goiás 2008-2017). Una auditoría que lo vea no lo reabre; si el signo es lo que la alarma, las
+líneas verificadas están en `tools/audit-ignore.json`.
+

@@ -554,5 +554,40 @@
     "code": "escala-implausible",
     "match": "novorizontino-br 2015: revenue",
     "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): balancete en reais con centavos (balanco-2015.md); receitas 746.574,12, confirmado por el documento 2016, que en miles da 747 para 2015 (balanco-2016.md L6, L32-60). Club en el Paulista de divisiones de acceso."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2012 ingreso \"(-) Deduções da receita\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2012-2011.md (nota 19, por segmento)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2013 ingreso \"(-) Deduções da receita\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2013-2012.md L795 (nota 17, por segmento)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2014 ingreso \"(-) Deduções da receita\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2014-2013.md L941/L1022); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2015 ingreso \"(-) Deduções da receita\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2015-2014.md L853/L913); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2016 ingreso \"(-) Deduções das receitas\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2016-2015.md L906 (nota 17)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2017 ingreso \"(-) Deduções das receitas\"",
+    "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2017-2016.md L953 y nota (a) L956); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
+  },
+  {
+    "code": "signo-invertido",
+    "match": "goias-br 2013 gasto \"Provisões para contingências\"",
+    "motivo": "VERIFICADO 2026-10-05 (Versión 499): reversión de provisiones impresa en positivo en la nota 18 (demonstracoes-contabeis-2013-2012.md L820, 1.588.481,02); resta del gasto."
   }
 ]

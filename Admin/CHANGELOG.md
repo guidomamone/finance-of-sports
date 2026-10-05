@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 505 — Deducciones de ingresos que el documento no abre: regla escrita y hallazgos silenciados (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 11 (Goiás 2008-2017, "(-) Dedução da receita" entera en `other_income`): no se corrige, es el criterio. Regla nueva en `Admin/CONVENCIONES-DATOS.md`: una deducción que el documento no abre por tipo de ingreso va entera a `other_income`; no se reparte.
+- `tools/audit-ignore.json`: 7 entradas verificadas contra el documento (deducciones de Goiás 2012-2017, que el vocabulario de `audit.js` no reconoce en plural, y la reversión de provisiones de Goiás 2013). Auditoría: P2 41 → 34.
+- Hallazgo 13 (SENA de Fortaleza): sin cambios, ya sigue el criterio de nómina de la Versión 500.
+
 ## Versión 504 — Fortaleza CEIF: caja 2019-2022 y deuda 2022-2023 con ajustes manuales (2026-10-05)
 
 - Auditoría 2026-10-04, caja y deuda: el dato está en el cuadro de instrumentos financieros o en la nota de efectivo, no en las páginas del balance que lee `caja-deuda.mjs`. Caja 2019 169.648 (total de la nota 8), 2020 151.365 (bancos + caja), 2021 20.036, 2022 241.766; deuda 2022 238.144 y 2023 110.000 (préstamos y sobregiros bancarios, criterio del club). Cada número leído en el documento; 6 ajustes `caja` / `deuda`, escritos por `caja-deuda.mjs --club fortalezaceif-co --escribir` (escalón 0, sin IA). Fortaleza queda con caja y deuda en 2017-2025. ASSET_V 413 → 414.
