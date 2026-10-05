@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
  "md": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md",
- "generado": "2026-10-03T23:03:06.245Z",
+ "generado": "2026-10-05T15:21:15.610Z",
  "estado": "ok",
  "clubId": "aellarissa-gr",
  "year": 2023,
@@ -21,6 +21,106 @@
    "evidencia": "AEL_FS_2023-06-30_a.md L238-256 y L593-599",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 9: el renglón del estado ΕΛΠ 'Λοιπά έξοδα και ζημιές' es 'Έκτακτα κι ανόργανα έξοδα' (gastos extraordinarios y no operativos) según la nota de esos años; mismo renglón en todos los años del club",
+   "evidencia": "nota 'Λοιπά έκτακτα έξοδα και ζημίες' (2019-2025)",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "2.062.578,73",
+   "linea": 593,
+   "etiqueta": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "gasto",
+   "reemplaza": "(-) Κόστος πωλήσεων",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L593",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "209.559,64",
+   "linea": 594,
+   "etiqueta": "Αμοιβές και έξοδα τρίτων",
+   "lado": "gasto",
+   "reemplaza": "(-) Έξοδα διοίκησης",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L594",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "34.042,47",
+   "linea": 595,
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "reemplaza": "(-) Έξοδα διάθεσης",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L595",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "385.006,03",
+   "linea": 596,
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L596",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "42.666,30",
+   "linea": 597,
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L597",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "fila",
+   "valor": "3.678,04",
+   "linea": 598,
+   "etiqueta": "Φόροι-τέλη",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": "pág. 19 del visor, .md L598",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Αμοιβές και έξοδα προσωπικού",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18)",
+   "evidencia": ".md L593; precedente 2022 y 2024",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -59,6 +159,12 @@
  "notas": [
   "la nota de \"Κύκλος εργασιών (καθαρός)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) Λοιπά έξοδα και ζημιές\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Αμοιβές και έξοδα προσωπικού\" (gasto) 2.062.578,73, en lugar de \"(-) Κόστος πωλήσεων\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
+  "ajuste manual: fila \"Αμοιβές και έξοδα τρίτων\" (gasto) 209.559,64, en lugar de \"(-) Έξοδα διοίκησης\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
+  "ajuste manual: fila \"Παροχές τρίτων\" (gasto) 34.042,47, en lugar de \"(-) Έξοδα διάθεσης\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
+  "ajuste manual: fila \"Διάφορα έξοδα\" (gasto) 385.006,03 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
+  "ajuste manual: fila \"Αποσβέσεις\" (gasto) 42.666,30 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
+  "ajuste manual: fila \"Φόροι-τέλη\" (gasto) 3.678,04 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 8: gastos por naturaleza de la nota 16 (como 2022 y 2024) en lugar de los tres renglones funcionales; las seis filas suman 2.737.531,21 = estado (el Σύνολο impreso de la nota, 2.745.139,63, suma además los gastos bancarios de la nota 18))",
   "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga la nota 16 'Έξοδα' (L593-L599) como desglose por naturaleza de la suma de Κόστος πωλήσεων + Έξοδα διοίκησης + Έξοδα διάθεσης (L241, L245, L246), sin asignarla a un único renglón?",
   "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se asume escala en unidades (euros) para todos los bloques, aunque ningún bloque la declara?"
  ],
@@ -117,36 +223,60 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(-) Κόστος πωλήσεων",
-   "lado": "gasto",
-   "M": 1.587768,
-   "pagina": 8,
-   "linea": 241,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(-) Έξοδα διοίκησης",
-   "lado": "gasto",
-   "M": 0.657007,
-   "pagina": 8,
-   "linea": 245,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(-) Έξοδα διάθεσης",
-   "lado": "gasto",
-   "M": 0.492756,
-   "pagina": 8,
-   "linea": 246,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
    "lado": "gasto",
    "M": 0,
    "pagina": 8,
    "linea": 247,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "gasto",
+   "M": 2.062579,
+   "pagina": 19,
+   "linea": 593,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Αμοιβές και έξοδα τρίτων",
+   "lado": "gasto",
+   "M": 0.20956,
+   "pagina": 19,
+   "linea": 594,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "M": 0.034042,
+   "pagina": 19,
+   "linea": 595,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 0.385006,
+   "pagina": 19,
+   "linea": 596,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.042666,
+   "pagina": 19,
+   "linea": 597,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Φόροι-τέλη",
+   "lado": "gasto",
+   "M": 0.003678,
+   "pagina": 19,
+   "linea": 598,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

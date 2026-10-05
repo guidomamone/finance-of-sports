@@ -189,9 +189,12 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.0216, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2023: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'(-) Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-1.587768, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'(-) Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.657007, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
-    { rawLabel:'(-) Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.492756, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-2.062579, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
+    { rawLabel:'Αμοιβές και έξοδα τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.20956, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
+    { rawLabel:'Παροχές τρίτων', normalizedCategory:'admin_general_expense', amountNative:-0.034042, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
+    { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.385006, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
+    { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.042666, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
+    { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.003678, disclosureLevel:'aggregated' }, // pág. 19, ajuste manual (auditoría 2026-10-04, hallazgo 8: nota 16 por naturaleza, como 2022 y 2024)
     { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
 };

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 498 — AEL Larissa 2023: gastos por naturaleza, sueldos 2,06 M€ (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 8: 2023 estaba cargado por función (Κόστος πωλήσεων 1,59 M€ en bolsón) y `wages_squad` en 0; ahora con la nota 16 por naturaleza, como 2022 y 2024 (Αμοιβές και έξοδα προσωπικού 2.062.578,73 → `wages_squad`). Las seis filas suman 2.737.531,21 = estado; el Σύνολο impreso de la nota (2.745.139,63) suma además los gastos bancarios de la nota 18.
+- 6 ajustes `fila` (3 con `reemplaza`) + 1 `categoria`; `verificar.mjs` cierra con ellos. ASSET_V 408 → 409.
+
 ## Versión 497 — Goiás 2025: Earn In y "Outras Receitas (b)" a ítems excepcionales (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 10: la nota 22 "Outras Receitas e Despesas Operacionais" (Earn In de la Liga Forte União 7,98 M y Outras Receitas 1,44 M) estaba en `other_expenses` / `other_income`; en 2024 el mismo rubro está en `exceptional_items`. Las dos filas pasan a `exceptional_items` (la de ingreso se muda de lado con el mismo efecto en el resultado); totales oficiales sin la partida, como los calcula `cargar.mjs`. 2 ajustes `categoria`. ASSET_V 407 → 408.
