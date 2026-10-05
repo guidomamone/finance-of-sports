@@ -31,10 +31,9 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 ### a) Correr clubes
 
 1. La etapa 2 (transcribir con Mistral y validar) la hace `tools/pipeline.mjs`, no el lote: `lote.mjs` saltea los PDFs sin `.md` y
-   arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0 --sin-jev`; Guido
+   arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; Guido
    corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
-   final); `--sin-jev` saltea la categorización vieja (Jev y Claude), que el lote hace en la etapa 7. El costo es el del ensayo (cuenta
-   páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
+   final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
 2. Armar la lista (`Admin/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/documentos-descartados.txt`
    (el lote los saltea) y entra ahí solo con su ok.
@@ -108,8 +107,6 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - Los "Syntax Error" en la terminal son de poppler leyendo PDFs dañados: no son errores del pipeline.
 - Para esperar un proceso en segundo plano, usar su PID, no `pgrep -f` (se encuentra a sí mismo y no termina nunca).
 - Corridas largas: la Mac se duerme; usar `caffeinate -i`.
-- El proceso viejo (`pipeline.mjs --repreparar`) pisa el `.rubros.json` que deja `verificar.mjs`: no re-preparar documentos que pasaron por el
-  proceso nuevo.
 
 ## 7. Lo que el pipeline no cubre
 
