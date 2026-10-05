@@ -859,7 +859,14 @@ export function analizar(docArg, sitio, ov = {}) {
     else if (cierreTxt.anio === anio) fuenteAnio += ', confirmado por las fechas de cierre del .md';
     else if (!anioForzado) {
       const aniosTxt = Object.keys(cierreTxt.porMes).length ? fechasFinDeMes(md).filter((f) => f.mes === mesCierre).map((f) => f.anio) : [];
-      if (aniosTxt.includes(anio)) fuenteAnio += `, presente en el .md (el año más citado con fecha de cierre es ${cierreTxt.anio})`;
+      // (Versión 519, to-do 140(a), aprobado por Guido el 2026-10-05) NOMBRE CON DOS AÑOS SEGUIDOS QUE BAJAN ("2017-2016"): es ambiguo.
+      // En Goiás es "ejercicio 2017 con su comparativo 2016" (la regla del nombre da 2016, mal: 10 ajustes `anio`); en Suduva
+      // "up2021-2020.12.31" es "subido en 2021, ejercicio 2020" (da 2020, bien). Decide el contenido: si el año de las fechas de cierre del
+      // .md (con la misma evidencia fuerte de arriba) es uno de los dos del nombre, gana ese. Sin esa evidencia, la regla de siempre. Medido:
+      // Goiás 11 de 11 (los 10 del ajuste más balanco-publicado-2024-2023); los demás PDFs no tienen ese patrón y no cambian.
+      const par = nombreArchivo.match(/(?<!\d)((?:19|20)\d{2})[-_]((?:19|20)\d{2})(?!\d)/);
+      if (par && +par[2] === +par[1] - 1 && [+par[1], +par[2]].includes(anio) && [+par[1], +par[2]].includes(cierreTxt.anio)) { anio = cierreTxt.anio; fuenteAnio = `contenido del .md (el nombre "${par[0]}" es ambiguo; las fechas de cierre del documento son de ${cierreTxt.anio}, ${cierreTxt.n} de ${cierreTxt.total})`; }
+      else if (aniosTxt.includes(anio)) fuenteAnio += `, presente en el .md (el año más citado con fecha de cierre es ${cierreTxt.anio})`;
       else { estadoAnio = 'pregunta'; preguntaAnio = `El nombre del archivo sugiere el ejercicio ${anio}, pero las fechas de cierre del documento son de ${cierreTxt.anio}. ¿Qué ejercicio es?`; }
     }
   }

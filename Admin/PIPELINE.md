@@ -253,6 +253,8 @@ Mitigaciones:
  TIPO DE CAMBIO   ajuste ─► declarado (compuerta: su frase no trae otra fecha que el cierre) ─► en tabla (fecha más nueva) ─► serie oficial ─► cola
  PERÍMETRO        heredado del año cargado más cercano ─► cola
  FECHA DE CIERRE  títulos ─► encabezados de las tablas (ejercicio | un año antes) ─► vecinos ─► cola; compuerta: no más de 2 años después de hoy
+ AÑO (alta-club)  ajuste `anio` ─► nombre con dos años seguidos que bajan ("2017-2016", ambiguo): el de las fechas de cierre del .md si es
+                  uno de los dos (Versión 519) ─► la regla del nombre (el segundo de un par, el de una fecha ISO...) ─► contenido ─► cola
  CATEGORÍAS EN 0  ajuste `cero-real` ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso

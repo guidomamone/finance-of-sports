@@ -41,8 +41,10 @@ ni en el comentario de ningún archivo de código.
 
 140. ESCALONES Y CHEQUEOS QUE LE FALTAN AL PROCESO DEL PIPELINE (no urgentes; venían del HANDOFF, Versión 470; las etapas están en
     `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
-    (a) Escalones automáticos para lo que hoy son ajustes (año del nombre del archivo; resultado final que repite el documento siguiente;
-        costos financieros mal rotulados).
+    (a) Escalones automáticos para lo que hoy son ajustes. Hecho el del AÑO DEL NOMBRE DEL ARCHIVO (Versión 519: Goiás "2017-2016" lo decide
+        el contenido; los 10 ajustes `anio` quedan y dan lo mismo). Quedan: resultado final que repite el documento siguiente (6 ajustes:
+        Fortaleza CEIF 5, Novorizontino 1) y costos financieros mal rotulados (9 ajustes `fila` financiero: Juventus 6, Fortaleza 3). Otras
+        copias de la regla del año, sin el texto a mano: `pipeline.mjs` y `onboard.mjs` (guessYear, el registro) y `cierre-vecinos.mjs`.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente).
     (c) Etapa 1: duplicados de PDF por huella (el mismo documento bajado dos veces con nombres distintos).
     (d) Etapa 1: reabrir solo el sourcing de un PDF roto.

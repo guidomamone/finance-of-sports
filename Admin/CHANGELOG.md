@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 519 — To-do 140(a): el año de un nombre "2017-2016" lo decide el documento (2026-10-05)
+
+- `tools/alta-club.mjs`: un nombre con dos años seguidos que bajan es ambiguo (Goiás "2017-2016" = ejercicio 2017; Suduva "up2021-2020.12.31" = ejercicio 2020). Si las fechas de cierre del .md (evidencia fuerte, la de siempre) son de uno de los dos, gana ese; si no, la regla de siempre. Antes Goiás daba 2016 y lo aceptaba porque 2016 "está presente en el .md" (la columna comparativa).
+- Medido en sandbox sin los 10 ajustes `anio`: Goiás 11 de 11 correctos (antes 0 de 11), incluido `balanco-publicado-2024-2023` (2024; no está cargado, el lote 09 lo dejó afuera). Suduva y Transinvest sin cambios (sin transcripción). Ensayo de `prueba-completa` idéntico. Descartado "si baja, el primero" (rompe Suduva): `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 518 — To-do 140(i), paso 3: `cargar.mjs` aplica "Posiblemente dentro de otro rubro" al escribir (2026-10-05)
 
 - `cargar.mjs --escribir` llama a `marcarClub()` de `tools/dentro-de-otro.mjs` sobre el club entero, antes de publicar (un P0/P1 revierte todo junto): el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si el nuevo le cambia el precedente. Imprime las marcas del club en la salida.
