@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 523 — To-do 140(e) cerrado: medido y descartado (2026-10-05)
+
+- Filtro de identificadores (CNPJ, CPF, 10+ dígitos sin separador) en la validación gratis: 3 de 453 documentos en "revisar" pasan a "listo" y 4 de 467 "listo" empeoran a "no aplica". No entra; detalle en `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 522 — To-do 140(d) cerrado: premisa vencida (2026-10-05)
 
 - "Reabrir solo el sourcing de un PDF roto" ya lo hace `estado.mjs` desde la Versión 447 (lista el PDF roto con la ficha de `fuentes/` a reabrir). El único caso, Unión Magdalena `dictamen-revisor-fiscal-2021.pdf` (una página HTML guardada como .pdf), ya está documentado en su ficha; volver a bajarlo es sourcing, y SIIS no devuelve la ruta del PDF de 2021 (régimen Pymes).
