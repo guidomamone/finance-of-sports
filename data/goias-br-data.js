@@ -462,12 +462,15 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-1.231903, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
   2012: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Despesas com futebol', normalizedCategory:'lump_football_operations_expense', amountNative:-35.830361, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.147616, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.558845, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-1.880989, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.450007, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-3.096477, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas com jogos', normalizedCategory:'match_organisation_expense', amountNative:-3.384073, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas com pessoal - futebol profissional', normalizedCategory:'wages_squad', amountNative:-25.454582, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas com pessoal - social e administrativo', normalizedCategory:'admin_general_expense', amountNative:-4.180386, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.524193, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.558845, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-4.095731, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.450007, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-3.096477, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:-0.22, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
   ],
   2015: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Alugueis de estádios', normalizedCategory:'match_organisation_expense', amountNative:-0.351459, disclosureLevel:'aggregated' }, // pág. 3, precedente
@@ -538,12 +541,15 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-0.683319, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
   2013: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'(-) Despesas com futebol profissional e amador', normalizedCategory:'lump_football_operations_expense', amountNative:-44.649623, disclosureLevel:'aggregated' }, // pág. 6, precedente
-    { rawLabel:'(-) Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.204453, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
-    { rawLabel:'(-) Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.697356, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.91
-    { rawLabel:'(-) Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-3.262262, disclosureLevel:'aggregated' }, // pág. 6, precedente
-    { rawLabel:'(-) Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.837323, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
-    { rawLabel:'(-) Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-4.867446, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Despesas com jogos', normalizedCategory:'match_organisation_expense', amountNative:-5.203185, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas com pessoal - futebol profissional', normalizedCategory:'wages_squad', amountNative:-31.850227, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas com pessoal - social e administrativo', normalizedCategory:'admin_general_expense', amountNative:-5.230738, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.226781, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.697356, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-7.193888, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.837323, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Despesas gerais', normalizedCategory:'admin_general_expense', amountNative:-4.867446, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
+    { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:1.588481, disclosureLevel:'aggregated' }, // pág. 18, ajuste manual (auditoría 2026-10-04, hallazgo 5: nota de costos y gastos, columna TOTAL; pessoal partido por segmento)
   ],
   2014: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Alugueis de estádios', normalizedCategory:'match_organisation_expense', amountNative:-0.298538, disclosureLevel:'aggregated' }, // pág. 19, precedente

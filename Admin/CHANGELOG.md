@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 499 — Goiás 2012 y 2013: gastos desde la nota por segmento; sueldos del plantel 25,5 M y 31,9 M (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 5: `wages_squad` en 0 y los gastos de fútbol en bolsón (35,8 M y 44,6 M). La nota de costos y gastos (2012: nota 20, pág. 3; 2013: nota 18, pág. 18) viene por segmento y su columna TOTAL suma exacto los renglones del estado; la auditoría no cerraba porque comparaba profesional + base contra el renglón "futebol" del estado, que reparte distinto. Se cargan las filas de la nota; "Despesas com pessoal" se parte: futebol profissional → `wages_squad`, social e administrativo → `admin_general_expense` (el documento separa la nómina administrativa: criterio de la etiqueta "Salarios del plantel" y de UC).
+- 18 ajustes `fila` + 8 `categoria`; `verificar.mjs` cierra los dos años (2013 en la lectura 4: la reversión de provisiones 1.588.481,02 impresa en positivo resta). ASSET_V 409 → 410.
+
 ## Versión 498 — AEL Larissa 2023: gastos por naturaleza, sueldos 2,06 M€ (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 8: 2023 estaba cargado por función (Κόστος πωλήσεων 1,59 M€ en bolsón) y `wages_squad` en 0; ahora con la nota 16 por naturaleza, como 2022 y 2024 (Αμοιβές και έξοδα προσωπικού 2.062.578,73 → `wages_squad`). Las seis filas suman 2.737.531,21 = estado; el Σύνολο impreso de la nota (2.745.139,63) suma además los gastos bancarios de la nota 18.

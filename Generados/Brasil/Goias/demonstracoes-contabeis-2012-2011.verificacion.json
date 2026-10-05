@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md",
- "generado": "2026-10-03T23:03:05.597Z",
+ "generado": "2026-10-05T15:23:25.247Z",
  "estado": "ok",
  "clubId": "goias-br",
  "year": 2012,
@@ -42,6 +42,167 @@
    "evidencia": "demonstracoes-contabeis-2012-2011.md L553-556 (atletas amadores)",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(3.384.073,41)",
+   "linea": 902,
+   "etiqueta": "Despesas com jogos",
+   "lado": "gasto",
+   "reemplaza": "Despesas com futebol",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L902",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(25.454.582,42)",
+   "linea": 903,
+   "etiqueta": "Despesas com pessoal - futebol profissional",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L903, columna futebol profissional",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(4.180.386,28)",
+   "linea": 903,
+   "etiqueta": "Despesas com pessoal - social e administrativo",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L903, columna social e administrativo",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(524.193,49)",
+   "linea": 904,
+   "etiqueta": "Despesas administrativas",
+   "lado": "gasto",
+   "reemplaza": "Despesas administrativas",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L904",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(558.845,02)",
+   "linea": 905,
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "reemplaza": "Materiais",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L905",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(4.095.730,67)",
+   "linea": 906,
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "reemplaza": "Serviços de terceiros",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L906",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(450.007,01)",
+   "linea": 907,
+   "etiqueta": "Despesas tributárias",
+   "lado": "gasto",
+   "reemplaza": "Despesas tributárias",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L907",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(3.096.477,39)",
+   "linea": 908,
+   "etiqueta": "Despesas gerais",
+   "lado": "gasto",
+   "reemplaza": "Despesas gerais",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L908",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "fila",
+   "valor": "(220.000,23)",
+   "linea": 909,
+   "etiqueta": "Provisões para contingências",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": ".md L909",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Despesas com pessoal - futebol profissional",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": "nota de costos y gastos, columna futebol profissional",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Despesas com pessoal - social e administrativo",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa)",
+   "evidencia": "nota de costos y gastos, columna social e administrativo",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "categoria",
+   "valor": "match_organisation_expense",
+   "linea": null,
+   "etiqueta": "Despesas com jogos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa) (precedente 2011)",
+   "evidencia": "nota de costos y gastos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Provisões para contingências",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa) (precedente 2011 y 2024)",
+   "evidencia": "nota de costos y gastos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -78,6 +239,15 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Despesas com jogos\" (gasto) (3.384.073,41), en lugar de \"Despesas com futebol\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Despesas com pessoal - futebol profissional\" (gasto) (25.454.582,42) (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Despesas com pessoal - social e administrativo\" (gasto) (4.180.386,28) (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Despesas administrativas\" (gasto) (524.193,49), en lugar de \"Despesas administrativas\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Materiais\" (gasto) (558.845,02), en lugar de \"Materiais\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Serviços de terceiros\" (gasto) (4.095.730,67), en lugar de \"Serviços de terceiros\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Despesas tributárias\" (gasto) (450.007,01), en lugar de \"Despesas tributárias\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Despesas gerais\" (gasto) (3.096.477,39), en lugar de \"Despesas gerais\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
+  "ajuste manual: fila \"Provisões para contingências\" (gasto) (220.000,23) (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 5: la nota de costos y gastos por segmento suma, en su columna TOTAL, lo mismo que los renglones del estado; se cargan sus filas (el renglón 'futebol' del estado no es profesional + base). Despesas com pessoal se parte: futebol profissional -> plantel, social e administrativo -> administración (el documento separa la nómina administrativa))",
   "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"RECEITAS LÍQUIDAS\"): aceptar, en demonstracoes-contabeis-2012-2011.pdf",
   "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"RECEITAS LÍQUIDAS (nota 19)\"): aceptar, en demonstracoes-contabeis-2012-2011.pdf",
   "duda de extraer que no afecta la carga: El encabezado de la fila quedó partido entre L202 y L206."
@@ -177,52 +347,76 @@
    "origen": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\""
   },
   {
-   "etiqueta": "Despesas com futebol",
+   "etiqueta": "Despesas com jogos",
    "lado": "gasto",
-   "M": 35.830361,
-   "pagina": 1,
-   "linea": 195,
-   "origen": "estado"
+   "M": 3.384073,
+   "pagina": 3,
+   "linea": 902,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Despesas com pessoal - futebol profissional",
+   "lado": "gasto",
+   "M": 25.454582,
+   "pagina": 3,
+   "linea": 903,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Despesas com pessoal - social e administrativo",
+   "lado": "gasto",
+   "M": 4.180386,
+   "pagina": 3,
+   "linea": 903,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Despesas administrativas",
    "lado": "gasto",
-   "M": 0.147616,
-   "pagina": 1,
-   "linea": 196,
-   "origen": "estado"
+   "M": 0.524193,
+   "pagina": 3,
+   "linea": 904,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Materiais",
    "lado": "gasto",
    "M": 0.558845,
-   "pagina": 1,
-   "linea": 197,
-   "origen": "estado"
+   "pagina": 3,
+   "linea": 905,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Serviços de terceiros",
    "lado": "gasto",
-   "M": 1.880989,
-   "pagina": 1,
-   "linea": 198,
-   "origen": "estado"
+   "M": 4.095731,
+   "pagina": 3,
+   "linea": 906,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Despesas tributárias",
    "lado": "gasto",
    "M": 0.450007,
-   "pagina": 1,
-   "linea": 199,
-   "origen": "estado"
+   "pagina": 3,
+   "linea": 907,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Despesas gerais",
    "lado": "gasto",
    "M": 3.096477,
-   "pagina": 1,
-   "linea": 200,
-   "origen": "estado"
+   "pagina": 3,
+   "linea": 908,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Provisões para contingências",
+   "lado": "gasto",
+   "M": 0.22,
+   "pagina": 3,
+   "linea": 909,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
