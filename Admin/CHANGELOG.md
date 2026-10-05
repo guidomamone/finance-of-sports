@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 520 — To-do 140(a) cerrado (2026-10-05)
+
+- "Resultado final que repite el documento siguiente": medido y descartado (89% de coincidencia en 80 pares; no arregla ninguno de sus 4 casos de Fortaleza CEIF), en `Admin/HALLAZGOS-pipeline.md`. "Costos financieros mal rotulados": descartado por Guido, sin construir. Con el año del nombre ya hecho (Versión 519), el 140(a) sale de la lista.
+
 ## Versión 519 — To-do 140(a): el año de un nombre "2017-2016" lo decide el documento (2026-10-05)
 
 - `tools/alta-club.mjs`: un nombre con dos años seguidos que bajan es ambiguo (Goiás "2017-2016" = ejercicio 2017; Suduva "up2021-2020.12.31" = ejercicio 2020). Si las fechas de cierre del .md (evidencia fuerte, la de siempre) son de uno de los dos, gana ese; si no, la regla de siempre. Antes Goiás daba 2016 y lo aceptaba porque 2016 "está presente en el .md" (la columna comparativa).
