@@ -39,6 +39,12 @@
 //   típicamente a mensalidades de sócio patrimonial (categoría de socio con derecho a butaca/palco
 //   fijo) — es la lectura más fiel disponible sin un desglose propio, documentada acá como supuesto,
 //   no como un dato confirmado línea por línea.
+//   CONFIRMADO Y CERRADO (decisión de Guido, 2026-10-05; una auditoría no lo reabre): es el ingreso del cuadro social. Evidencia en
+//   demonstracoes-contabeis-2023-2024.md: la política de reconocimiento (L863) lista "as mensalidades de Associados" y la nota 22 no
+//   tiene otra línea donde puedan estar; la nota 29 (L1953) registra el trabajo voluntario "nas Receitas Patrimoniais por se tratar de
+//   doação de trabalho de associados"; contrapartidas: "Ingressos a Sócios" en costos (L1816) y "Mensalidades do Quadro Social
+//   antecipadas" en el pasivo (L1436). Incluye 2,16 M por año de trabajo voluntario valorizado (no es caja): se deja adentro, como
+//   lo registra el club.
 // - 'Receitas de Luvas Contratuais' -> other_income: "luvas" son un bonus/prima contractual (Nota 18:
 //   deferred revenue de un contrato de 2019, amortizado hasta 2024), no necesariamente comercial ni
 //   de estadio — se dejó en el catch-all en vez de forzarlo a sponsorship_commercial sin certeza.

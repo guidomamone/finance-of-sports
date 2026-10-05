@@ -14,7 +14,7 @@ Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verific
 Datos ya publicados con categorías dudosas, anotados en el HANDOFF y pasados acá en la Versión 470. Sin verificar todavía contra el .md.
 
 - (Cerrado 2026-10-05) Almagro, "Sede Social - Medrano 522" como cuotas sociales: decisión de Guido, se queda así.
-- Grêmio, "Receitas Patrimoniais" como cuotas sociales.
+- (Cerrado 2026-10-05) Grêmio, "Receitas Patrimoniais" como cuotas sociales: confirmado con el documento, decisión de Guido; evidencia en `data/gremio-data.js`.
 - Vitória, Bahia y América Mineiro tienen socios en sus documentos y no en el sitio.
 
 ## Caja y deuda (`tools/caja-deuda.mjs`), lo que queda

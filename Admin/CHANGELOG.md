@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 508 — Grêmio: "Receitas Patrimoniais" confirmado como cuotas sociales (2026-10-05)
+
+- Duda de la auditoría 2026-10-04 cerrada con evidencia del documento (política de reconocimiento, nota 29 de voluntariado, "Ingressos a Sócios" y mensalidades anticipadas), escrita en el comentario de `data/gremio-data.js`. Sin cambio de datos. ASSET_V 416 → 417.
+
 ## Versión 507 — Almagro: "Sede Social - Medrano 522" queda como cuotas sociales, decisión de Guido (2026-10-05)
 
 - Duda de la auditoría 2026-10-04 cerrada: la decisión queda escrita en el comentario de categorización de `data/almagro-ar-data.js` para que una auditoría no la reabra. Sin cambio de datos. ASSET_V 415 → 416.
