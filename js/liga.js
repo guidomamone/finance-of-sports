@@ -246,7 +246,7 @@ window.LIGA_VIEW = (function(){
     // y `sourceId` salen de `c.meta` (el `fiscalYearMeta[year]` crudo que trae
     // `computeYearGeneric()`), NO de `yearMetaFor()` — ese helper devuelve SOLO
     // moneda y tipo de cambio, leerle `reportType` da `undefined` en silencio.
-    var incluidos = (rep.ingresos || []).filter(function(row){ return row.incluidoEn; }).map(function(row){ return [row.label, row.incluidoEn]; }); // Versión 510
+    var incluidos = (rep.ingresos || []).filter(function(row){ return row.incluidoEn; }).map(function(row){ return [row.label, row.incluidoEn].concat(row.incluidoPosible ? [1] : []); }); // Versiones 510-511
     return { id:clubId, revenue:revenue, reportType:c.meta.reportType || null,
              sourceId:c.meta.sourceId || null, mix:mix, year:year, simulado:true, incluidos:incluidos };
   }
@@ -1028,7 +1028,7 @@ window.LIGA_VIEW = (function(){
       (f.incluidos || []).forEach(function(m){
         var fila = el('div', 'liga-desglose-fila liga-desglose-incluido');
         fila.appendChild(el('span', 'liga-desglose-cat', tLabel(m[0])));
-        fila.appendChild(el('span', 'liga-desglose-val', t('finanzas.incluidoEn', 'Incluido en') + ' ' + tLabel(m[1])));
+        fila.appendChild(el('span', 'liga-desglose-val', (m[2] ? t('finanzas.posibleIncluidoEn', 'Posiblemente incluido en') : t('finanzas.incluidoEn', 'Incluido en')) + ' ' + tLabel(m[1])));
         bloque.appendChild(fila);
       });
       caja.appendChild(bloque);

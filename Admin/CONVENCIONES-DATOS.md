@@ -301,4 +301,7 @@ América Mineiro: "atividades sociais", que puede incluir cuotas), la línea va 
 `fiscalYearMeta` del año se agrega `incluidoEn: { <categoría que queda en 0>: '<categoría donde está> }'`, por ejemplo
 `{ member_dues: 'matchday_competition' }`. La vista simplificada de Finanzas pinta entonces "Incluido en <fila>" en vez de $0, sin tocar
 el valor (sigue siendo el número 0, así que los totales no cambian). Una auditoría no lo reabre como "socios en 0".
+Si no está confirmado que el concepto esté en esa línea (América Mineiro: "atividades sociais"), la forma es
+`{ member_dues: { en: 'other_income', posible: true } }` y el sitio dice "Posiblemente incluido en". La decisión se guarda también como
+ajuste manual `incluye` (`tools/ajustes.mjs`), para que una recarga con `cargar.mjs` la conserve.
 

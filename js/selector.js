@@ -1652,7 +1652,7 @@ window.CLUB_SELECTOR = (function(){
       mezclaDe(id, y).forEach(function(r){ out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value; });
       // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
       ((window.simplifiedReportForClub(id, y) || {}).ingresos || []).forEach(function(r){
-        if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + t('sel.res.incl', 'está incluido en') + ' ' + tLabel(r.incluidoEn));
+        if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'puede estar incluido en') : t('sel.res.incl', 'está incluido en')) + ' ' + tLabel(r.incluidoEn));
       });
     });
     if(b.agg === 'promedio'){

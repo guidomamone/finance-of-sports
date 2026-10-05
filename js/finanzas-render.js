@@ -127,7 +127,7 @@
     // no un cero. Se pinta "—", el mismo carácter que ya usa la tabla para "no hay columna
     // anterior", y el % también, porque un porcentaje de un dato que no existe no significa nada.
     // Versión 509: `incluidoEn` (bucketize) = el documento junta esta fila con otra; se dice dónde está en vez de mostrar $0.
-    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido">${t('finanzas.incluidoEn', 'Incluido en')} ${tLabel(row.incluidoEn)}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
+    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido">${row.incluidoPosible ? t('finanzas.posibleIncluidoEn', 'Posiblemente incluido en') : t('finanzas.incluidoEn', 'Incluido en')} ${tLabel(row.incluidoEn)}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
     const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
     // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
     // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo

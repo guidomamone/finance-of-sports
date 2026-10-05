@@ -168,7 +168,7 @@ function rankingDe(api, leagueId, year) {
 
     // (Versión 510) "INCLUIDO EN …": las filas en 0 que el año declara incluidas en otra (`fiscalYearMeta.incluidoEn`, js/finanzas-calc.js
     // bucketize). Van APARTE de `mix` (que solo lleva importes y tiene que sumar el ingreso): [fila, fila que la contiene].
-    const incluidos = (rep.ingresos || []).filter(row => row.incluidoEn).map(row => [row.label, row.incluidoEn]);
+    const incluidos = (rep.ingresos || []).filter(row => row.incluidoEn).map(row => [row.label, row.incluidoEn, ...(row.incluidoPosible ? [1] : [])]);
     filas.push({
       id,
       revenue: r3(revenue),
@@ -250,7 +250,7 @@ function archivoDe(api, leagueId, porAnio) {
     r.clubs.forEach(f => {
       L.push(`      { id:${JSON.stringify(f.id)}, revenue:${f.revenue}, reportType:${JSON.stringify(f.reportType)},`);
       L.push(`        sourceId:${JSON.stringify(f.sourceId)},`);
-      L.push(`        mix:[${f.mix.map(m => `[${JSON.stringify(m[0])},${m[1]}]`).join(',')}]${f.incluidos ? `,\n        incluidos:[${f.incluidos.map(m => `[${JSON.stringify(m[0])},${JSON.stringify(m[1])}]`).join(',')}]` : ''} },`);
+      L.push(`        mix:[${f.mix.map(m => `[${JSON.stringify(m[0])},${m[1]}]`).join(',')}]${f.incluidos ? `,\n        incluidos:[${f.incluidos.map(m => JSON.stringify(m)).join(',')}]` : ''} },`);
     });
     L.push('    ],');
     L.push('  },');

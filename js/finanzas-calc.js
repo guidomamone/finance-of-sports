@@ -407,7 +407,8 @@
         const dentro = value === 0 && incluidoEn ? b.cats.map(c => incluidoEn[c]).find(Boolean) : null;
         return { label:b.label, value, items, hideIfZero:b.hideIfZero,
                  unknown: !dentro && hayBolson && value === 0 && !esBolson,
-                 ...(dentro ? { incluidoEn: filaDe(dentro) } : {}) };
+                 // (Versión 511) `incluidoEn` puede ser 'categoria' o { en:'categoria', posible:true } (no confirmado que esté ahí)
+                 ...(dentro ? { incluidoEn: filaDe(typeof dentro === 'string' ? dentro : dentro.en), ...(dentro.posible ? { incluidoPosible: true } : {}) } : {}) };
       })
       .filter(row => !(row.hideIfZero && row.value === 0));
     const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));

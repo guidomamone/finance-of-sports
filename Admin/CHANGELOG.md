@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 511 — "Incluido en" en el pipeline (ajuste `incluye`) y "Posiblemente incluido en" (2026-10-05)
+
+- `tools/ajustes.mjs`: campo `incluye` (`--valor <categoría en 0> --categoria <donde está> [--posible]`). `tools/cargar.mjs` lo escribe en `fiscalYearMeta.incluidoEn` y no trata esa categoría como un 0 a revisar (ni reintento ni pregunta de perfil en la cola). Probado con un ajuste temporal sobre UC 2016 (la propuesta lleva el `incluidoEn`, sin frenos); revertido.
+- Forma "no confirmado": `{ member_dues: { en: 'other_income', posible: true } }` → "Posiblemente incluido en" / "Possibly included in", en Finanzas, ligas y Comparar ("puede estar incluido en"). América Mineiro 2023-2025 pasa a esa forma (recomendación aceptada por Guido).
+- 6 ajustes `incluye` (Bahia 2024-2025, Vitória 2025, América Mineiro 2023-2025). Rankings regenerados. ASSET_V 419 → 420.
+
 ## Versión 510 — "Incluido en …" también en las páginas de liga y en Comparar (2026-10-05)
 
 - `tools/generate-rankings.js`: cada club lleva, aparte de `mix` (que sigue sumando el ingreso), `incluidos: [[fila, fila que la contiene]]`; `js/liga.js` lo muestra en el desglose por categoría ("Cuotas Sociales · Incluido en Estadio"), también en las filas simuladas. Rankings regenerados: Bahia, Vitória y América Mineiro en Série A y B.

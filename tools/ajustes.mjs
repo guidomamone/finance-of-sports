@@ -34,6 +34,9 @@
 //                     categorías de cargar.mjs: gana sobre todo, también sobre la COMPUERTA DEL LADO. Si la categoría es del otro lado, la
 //                     fila se muda de lado sin cambiar su efecto en el resultado (un ingreso de 140 pasa a gasto de +140). Caso: Goiás 2023,
 //                     "Outras Receitas e Despesas" 140.214.785 (venta del 20% de la Liga Forte União) como exceptional_items.
+//   incluye           (Versión 511) valor = una categoría que da 0 porque el documento la junta con otra en una línea; --categoria = donde
+//                     está; --posible si no está confirmado. cargar.mjs lo escribe en fiscalYearMeta.incluidoEn (el sitio pinta "Incluido en"
+//                     o "Posiblemente incluido en") y no lo trata como un 0 a revisar. Casos: Bahia, Vitória, América Mineiro (member_dues).
 //   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
 //                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Sin caso todavía.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
@@ -58,7 +61,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -69,7 +72,7 @@ function leer() {
 // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
 export function ajustesDe(pdf) {
   const m = new Map();
-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
+  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
   return [...m.values()];
 }
 export function ajusteDe(pdf, campo) {
@@ -109,6 +112,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (campo === 'caja' && !flag('--valor')) { console.error('caja necesita --valor (el número tal cual impreso)'); process.exit(1); }
     // (Versión 495) deuda = la deuda bruta del año TAL CUAL impresa, igual que `caja`: escalón 0 de la deuda en caja-deuda.mjs. Caso: Fortaleza
     // CEIF 2021, el escalón 2 leyó solo el corto plazo (102.513, nota 12) y el cuadro de instrumentos financieros dice 295.846 (.md L506).
+    // (Versión 511) incluye = una categoría que queda en 0 porque el documento la junta con otra en UNA línea: --valor <la que queda en 0>
+    // --categoria <donde está> [--posible si no está confirmado que esté ahí]. cargar.mjs lo escribe como fiscalYearMeta.incluidoEn (el sitio
+    // pinta "Incluido en <fila>" o "Posiblemente incluido en <fila>") y no lo trata como una categoría en 0 que debería tener número.
+    // Caso: Bahia 2024-2025, member_dues dentro de matchday_competition ("Sócios e bilheteria").
+    if (campo === 'incluye' && (!flag('--valor') || !flag('--categoria'))) { console.error('incluye necesita --valor <categoría en 0> y --categoria <donde está> [--posible]'); process.exit(1); }
     if (campo === 'deuda' && !flag('--valor')) { console.error('deuda necesita --valor (el número tal cual impreso)'); process.exit(1); }
     if (campo === 'confirmado' && (!flag('--linea') || !flag('--valor'))) { console.error('confirmado necesita --linea N y --valor "el número tal cual en el .md"'); process.exit(1); }
     if (campo === 'cierre' && !/^\d{4}-\d{2}-\d{2}$/.test(flag('--valor') || '')) { console.error('cierre necesita --valor AAAA-MM-DD'); process.exit(1); }
@@ -121,7 +129,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza') } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza') } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
