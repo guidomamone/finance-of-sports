@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 501 — Juventus 2006 y 2007: nota visible del cambio de normas contables (2026-10-05)
+
+- `publicNote` en las fuentes 2005-06 y 2006-07 (texto propuesto por la auditoría 2026-10-04, aprobado por Guido, corregido por la Versión 492: los 30 M€ de Mediaset ya están en Televisión y en otros ingresos quedan los 13,75 M€ de la RAI). Cifras verificadas: pérdida −36.480.230 € con normas italianas (informe 2005-06, L1722) y −45.986.220 € reexpresada con IFRS (informe 2006-07, L1652). ASSET_V 411 → 412.
+
 ## Versión 500 — Fortaleza CEIF 2019-2025: la nómina administrativa sale de "Salarios del plantel" (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 6, decisión de Guido: cuando el documento separa la nómina de la nota de gastos de administración de la del equipo (2019-2025), la de administración va a `admin_general_expense`, como en UC y Goiás; reemplaza la respuesta anterior de la cola (todo a `wages_squad`). 25 renglones, 5.732 M COP en total; quedan con la etiqueta "… (administración)". 2017 y 2018 no cambian: ahí el documento no separa (la única nómina, con el plantel, está en administración u operación).

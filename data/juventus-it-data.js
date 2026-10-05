@@ -1197,6 +1197,7 @@ Object.assign(sources, {
     id:'juventus-it-annual-financial-report-2006-07', clubId:'juventus-it',
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2006-07 (ejercicio 2007)',
     type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Primer ejercicio con normas internacionales (IFRS); los años anteriores siguen las normas italianas y no son del todo comparables. Es además la temporada en Serie B, tras el descenso por el fallo deportivo de 2006.',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'juventus-it-annual-financial-report-2008-09': {
@@ -1239,6 +1240,7 @@ Object.assign(sources, {
     id:'juventus-it-annual-financial-report-2005-06', clubId:'juventus-it',
     title:'Juventus Football Club S.p.A. — Juventus-annual-financial-report-2005-06 (ejercicio 2006)',
     type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Último ejercicio con normas contables italianas: separa ingresos y gastos extraordinarios. Incluye ingresos por única vez: 30 M€ por opciones de derechos de TV cedidas a Mediaset (se muestran en Televisión) y 13,75 M€ por el archivo de imágenes vendido a la RAI (en otros ingresos). Con las normas internacionales (IFRS) que el club adoptó desde 2006/07, este mismo ejercicio da una pérdida de 45,99 M€ en lugar de 36,48 M€, así que 2006 y 2007 no son del todo comparables.',
     note:'Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
   'juventus-it-annual-financial-report-2007-08': {

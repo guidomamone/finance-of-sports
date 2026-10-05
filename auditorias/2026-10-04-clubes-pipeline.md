@@ -58,11 +58,6 @@ d) Antes (sin arreglo limpio medido; no insistir sin un caso nuevo). `--medir` e
 - AEL Larissa: pico 2021 de `other_income` (subsidios); fx en rango.
 - Juventus: totales contra los oficiales; caja y deuda del balance separado; caídas 2021 (COVID) y 2024 (sin Champions).
 
-## Propuesta de nota visible del quiebre de serie de Juventus (`publicNote`, pendiente del ok de Guido)
+## Nota visible del quiebre de serie de Juventus
 
-- 2005-06 (año 2006): "Último ejercicio con normas contables italianas: separa ingresos y gastos extraordinarios, y sus otros ingresos
-  incluyen 43,75 M€ por única vez por derechos de TV y de archivo cedidos a Mediaset y a la RAI. Con las normas internacionales (IFRS)
-  que el club adoptó desde 2006/07, este mismo ejercicio da una pérdida de 45,99 M€ en lugar de 36,48 M€, así que 2006 y 2007 no son
-  del todo comparables."
-- 2006-07 (año 2007): "Primer ejercicio con normas internacionales (IFRS); los años anteriores siguen las normas italianas y no son del
-  todo comparables. Es además la temporada en Serie B, tras el descenso por el fallo deportivo de 2006."
+Publicada el 2026-10-05 (Versión 501), como `publicNote` de las fuentes 2005-06 y 2006-07.
