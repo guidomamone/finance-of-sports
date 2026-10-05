@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 485 — ESTADO sin la descripción del sitio (to-do 143, paso 3) (2026-10-04)
+
+- `Admin/ESTADO.md` (50 → 11 KB): queda el estado (objetivo, pipeline, sitio, analytics, datos, "Si algo no cierra").
+- A `Admin/ARQUITECTURA.md`: convención de archivos, taxonomía del selector, liga por ejercicio, tamaño de liga, índice liviano, verificación automática, fuentes, procedencia del fx y "Dónde está cada cosa". A `Admin/PANTALLA.md`: presupuestos por club, pestañas, Ligas, simular clubes, selector, portada, Comparar, toggles, idiomas, caché de assets y branding. Texto sin cambios.
+- `Admin/Archive/estado-historia.md`: por qué es un archivo, el retiro de los placeholder y la copia del párrafo de netlify.
+- Skill de arranque: pesos de ESTADO (11), ARQUITECTURA (60) y PANTALLA (63).
+
 ## Versión 484 — Mantener instalaciones va a Administración: Argentinos y San Lorenzo (to-do 101) (2026-10-04)
 
 - Criterio (Guido): el costo de mantener instalaciones (estadio, predios, ciudad deportiva, sedes) es `admin_general_expense`.

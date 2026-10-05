@@ -608,3 +608,177 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   existió en cdnjs), si en el futuro se sube de versión, verificar SIEMPRE
   con `curl -I` contra la URL exacta antes de pinear un número de versión
   nuevo, no asumirlo.
+
+
+---
+
+## Cómo funciona cada pantalla (venía de `Admin/ESTADO.md`)
+
+Texto movido sin cambios.
+
+- PRESUPUESTOS, POR CLUB (Versión 135): los 3 cards que solo aparecen para un
+  ejercicio con presupuesto (Supuestos, Presupuesto Financiero, Presupuesto de
+  Inversiones) sacan sus datos de `presupuestoSupuestosByYear` /
+  `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, adentro del
+  `data/<club>-data.js` de cada club. Antes vivían en 3 registros por club dentro
+  de `js/finanzas-render.js`, y el contenido de Boca era HTML escrito a mano en
+  ESTE archivo. Onboardear un presupuesto ya no toca ni el motor ni el HTML.
+- PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
+  trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
+  placeholder según el club. "Mi Cuenta" (to-do 70, Versiones 271-272, 2026-09-27) DEJÓ DE SER
+  UN STUB: login con Google vía Supabase y "Saved Searches" reales — cada club/comparación que se
+  mira queda guardado solo (sin botón), con favoritos primero y el resto del historial después.
+  No es un paywall (la decisión de ir todo gratis del 2026-09-14 sigue en pie): es que quien se
+  loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
+  no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
+  modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
+- PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
+  el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
+  `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún
+  `data/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
+  vivo). Barras verticales ascendentes en el `brandColor` de cada club, con el
+  valor en M/MM USD y, debajo, el % que esa barra representa del total de la
+  liga-ejercicio (Versión 243) escritos arriba de cada barra; tabla con
+  puesto/club/ingresos/ejercicio/documento; DEBAJO DE LA TABLA, un desglose de
+  ingresos por categoría de Formato simplificado de cada club (Versión 243, el
+  dato ya estaba precalculado en `mix` desde la Versión 182 — solo se usaba para
+  el aviso del bolsón sin desglosar), SIEMPRE VISIBLE y sin toggle: pedido
+  explícito de Guido, "que se halle scrolleando"; y salvedades derivadas del dato.
+  TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre escrito y es cambiable
+  (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con
+  MÁS clubes y no el más reciente, porque los balances tardan en publicarse; y el
+  "N de M" solo se escribe si `leagueSizeAt()` lo sabe. Se llega por el nav
+  (estado frío: la grilla de ligas agrupadas por continente — Versión 232 — con
+  país y liga alfabéticos y, cuando un país tiene más de una liga cargada, la
+  liga ordenada por DIVISIÓN, `tier` ascendente, no alfabético por nombre —
+  Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
+  Finanzas del primer club de esa liga por orden alfabético. No necesita club
+  activo.
+- SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
+  ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón
+  "¿Cómo le iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un
+  club o una liga entera…") que acepta tanto un club suelto (se baja con `loadClubData()` antes de
+  calcular, y su ejercicio queda editable con un dropdown inline) como una LIGA COMPLETA (inserta
+  TODOS sus clubes de una, reusando `data/rankings/<liga>.js` ya calculado — no baja nada, por eso
+  esos clubes no tienen dropdown de año). Cada club insertado se dibuja distinto (barra translúcida,
+  fondo ámbar, badge "(simulado)") y NUNCA cuenta para los totales/cobertura reales de esa liga.
+  Mientras hay algo simulado, un dropdown deja cambiar de liga sin perder los clubes, y "Volver a
+  Ligas" reabre el picker con ellos en cola en vez de resetear todo. Se guarda solo en Mi Cuenta
+  (to-do 70) como `state.clubes` (siempre array, mismo caso con 1 club o con varios). El botón de
+  Finanzas solo aparece en modo "Año a año" (no "Por gestión"): el motor real compara un ejercicio
+  puntual, no un rango.
+- UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
+  de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
+  plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →
+  Región → País → Clubes → Ejercicio de cada club. El resuelto se encoge a una
+  línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
+  tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
+  el que ya sabe qué quiere escribe "boca" o "primera div" y llega en un paso —
+  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con el botón de club
+  del header, desde Inicio o desde el card de Finanzas. Vive en `js/selector.js`
+  y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
+  `club-leagues/<iso2>.js`, sin bajar ningún archivo de club. Esos últimos NO son
+  eager desde la Versión 164: se bajan al abrir el modal, que es el único lugar
+  que los usa, detrás de una sola frontera async en `abrirModal()`.
+  DESDE LA VERSIÓN 165 el buscador tiene debounce de 160 ms (en el listener, no
+  en `renderBusqueda()`, que también se llama a sí misma y tiene que correr en el
+  acto), tope de 30 resultados con "Mostrar más" y el conteo real, y una caché del
+  texto buscable de cada club. La grilla de "elegir clubes" del constructor de
+  mezcla lleva el mismo tope, con los ya marcados siempre primero, y DESDE LA
+  VERSIÓN 174 su propio campo de filtro: mismo look que el buscador de arriba,
+  pero busca sólo por nombre de club + país (no por liga, que en esa grilla no se
+  imprime en ninguna parte), no toca nunca a los ya marcados, y lleva su propio
+  estado de texto y de "Mostrar más", separado del buscador del modal.
+  DESDE LA VERSIÓN 178 el círculo de iniciales de cada club va en SU color, no en el
+  azul del sitio: `clubs[id].brandColor` (`data/clubs.js`), un hex verificado club
+  por club contra su propia fuente. Pinta en los 4 lugares donde ese círculo existe
+  (la fila del modal, el paso de "ejercicio de cada club", el card de Comparar y el
+  botón de club del header), siempre por la misma `pintarCrest()` de
+  `js/selector.js`, que además decide el color de las INICIALES por contraste —
+  blancas mientras lleguen a 4:1 contra el fondo, negras cuando no (el celeste de
+  Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
+  claros, que contra el fondo blanco de la fila se perderían. Son 39 de los 41: el
+  campo es opcional a propósito y Real Madrid y Once Caldas llevan `brandColor:null`
+  (Versión 179), porque el color que los identifica es el blanco y un círculo blanco
+  no se ve; esos dos se quedan con el azul del sitio, que es el fallback. El `null`
+  explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
+  ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
+  color es desde la Versión 179 un paso del onboarding de cada club nuevo
+  (`club-or-year-onboarding` §3 punto 1b), no una barrida que se repite. Desde la
+  Versión 180 los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
+  `fuentes/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
+  <fecha>"), el mismo formato con el que la anota un club nuevo: 5 del sitio oficial
+  del club, 20 de la tabla por liga de footylogos, 9 de logotyp.us (los japoneses),
+  2 de teamcolorcodes, 1 del infobox de ja.wikipedia (Cerezo), 1 sin re-verificar
+  porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
+  externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
+  sin hacerse (derechos y hosting, el repo se deploya entero).
+- LA PORTADA ES UNA PREGUNTA Y UNA VIDRIERA (Versión 144, reescrita en la 184 con
+  el to-do 33). Inicio abre con dos opciones grandes: "quiero ver un club en
+  particular" (abre el selector y aterriza en Finanzas) o "quiero comparar dos
+  clubes o ligas" (va a la pestaña Comparar). ABAJO, LOS RANKINGS DE LIGA, hasta
+  10, uno por entrada de `data/destacados.js`: cada uno con su "N de M", su
+  gráfico, el aviso de cuánto no está desglosado y un "Ver la liga ›". HASTA LA
+  VERSIÓN 184 abajo iba el resumen del club activo (4 KPIs y 3 gráficos,
+  `#inicioClub`): se BORRÓ, por decisión de Guido — "en Inicio quedan las ligas
+  que dejamos predeterminadas como para mostrar de qué es capaz y qué tiene la
+  página, nada más". Dos de esos 3 gráficos encima duplicaban el `trendChart` de
+  Finanzas. Inicio se ve IGUAL haya club elegido o no. Sin club se ven Inicio,
+  Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El
+  club queda en `localStorage` y las visitas siguientes entran derecho a él.
+  NINGÚN `data/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
+  rankings salen de `data/rankings/<liga>.js`, ~6,5 KB gzip por los 4 bloques de
+  hoy, contra ~150 KB que costaría calcularlos desde los archivos de club.
+- COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
+  que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
+  LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:
+
+      { kind:'liga',   league:'ar-primera', years:[2025],             agg:'promedio'|'suma' }
+      { kind:'clubes', pares:[['boca',2025], ['river',null]],         agg:'promedio'|'suma' }
+
+  De ahí sale el caso que lo motivó, de Guido: "promedio de clubes colombianos +
+  sumatoria de 6 clubes brasileros" contra Real Madrid. Los cards se llenan con el
+  MISMO modal, que para este camino gana un paso 4 ("¿qué querés medir?": Ligas /
+  Clubes / Mezcla — las dos primeras son atajos de un bloque, la mezcla es el
+  modelo completo). Por eso el card no tiene toggle Promedio/Sumatoria: muestra la
+  FÓRMULA. `año === null` es "el ejercicio más reciente de ESE club"; en un bloque
+  de liga el año NO puede ser null, define quiénes la integraban.
+  El resultado son 6 indicadores, una fila cada uno con su barra a escala DENTRO
+  de su indicador, más la composición de ingresos al 100% y las salvedades. Fuerza
+  USD y Formato simplificado, y lo dice en pantalla. Muestra "sin dato" (no 0)
+  cuando la fuente no informa. Los números salen de `computeYearGeneric()`, el
+  motor real. Vive todo en `js/selector.js`: `js/comparar-clubes.js` (la bandeja de
+  chips de la Versión 137) se borró en la Versión 152.
+- Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
+  (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
+  desde la Versión 112 (pedido de Guido), código y datos intactos.
+- IDIOMAS: el sitio tiene selector de idioma (globo, arriba a la derecha) desde
+  la Versión 115. Castellano (idioma fuente, ES EL HTML mismo, sin archivo de
+  diccionario) e inglés (`data/lang/en.js`, ~105 claves). Detecta el idioma del
+  navegador en la primera visita y recuerda la elección en localStorage.
+  AGREGAR UN IDIOMA = crear `data/lang/<code>.js` + una línea en
+  `data/lang/langs.js`. Nada más: ni el HTML ni `js/i18n.js` se tocan.
+  TRADUCCIÓN COMPLETA desde la Versión 138: las 204 claves que el sitio usa están
+  las 204 en `en.js`, y `fuentes.html` también se traduce sola, con el mismo motor
+  y el mismo diccionario (no se genera un archivo por idioma). Lo que NO se traduce
+  es a propósito y ahora es una regla escrita en `Admin/CONVENCIONES.md`: los rubros de
+  "Formato del club", el título de cada documento, y los nombres de club, de liga y
+  de gestión, que salen textuales de la fuente o son nombres propios.
+- CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
+  NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
+  ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
+  OJO, SE SUBE EN DOS LUGARES (corregido en la Versión 125, hasta acá este
+  párrafo decía algo que no era cierto): `window.ASSET_V` es una constante
+  inline, pero los `?v=` de los `<script src>` estáticos son LITERALES y no salen
+  de ella, solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
+  leen. Hay que cambiar la constante Y los tags. Subir uno solo es peor que no
+  subir ninguno: mezcla archivos nuevos con archivos viejos de la caché, que es
+  el estado en el que el sitio tira `ReferenceError`. Lo chequea
+  `node tools/audit.js` (`asset-v-desfasado`, P1).
+- BRANDING: RESUELTO en la Versión 117 (decisión de Guido). La marca es distinta
+  por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
+  Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
+  dominio. Antes decía "Tu club en números", que ya no era cierto: el sitio dejó
+  de ser solo de fútbol de clubes argentinos hace rato. El mail del formulario de
+  contacto dejó de ser el placeholder `contacto@bocaennumeros.example` en la
+  Versión 167: hoy el mailto va a `guidomamone91@gmail.com`.
