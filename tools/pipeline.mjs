@@ -185,7 +185,7 @@ if (toResolve.length) {
     console.log('\nEs un ENSAYO: no se llamó a ninguna API. Agregá --ejecutar para correrlo de verdad.');
     process.exit(0);
   }
-  console.log(`\n=== Etapas 1-2: transcribir y validar ${toResolve.length} documento(s) (concurrencia ${concurrency}) ===\n`);
+  console.log(`\n=== Etapa 2 (Admin/PIPELINE.md): transcribir y validar ${toResolve.length} documento(s) (concurrencia ${concurrency}) ===\n`);
   node('tools/resolver-inventario.mjs', ['--lista', 'Admin/.pipeline-lista-actual.txt', '--ejecutar', '--concurrencia', concurrency], { stdio: 'inherit' });
   ledger = refreshLedger();
 } else if (!EXECUTE) {
@@ -196,7 +196,7 @@ if (toResolve.length) {
 // ---- Etapa 3-4: preparar para Jev (todo gratis)
 const selectedPdfs = new Set(selected.map((e) => e.pdf));
 const ready = ledger.filter((e) => selectedPdfs.has(e.pdf) && needsPrepare(e)); // (con --repreparar incluye los que ya tenían su lista de rubros)
-console.log(`\n=== Etapas 3-4: preparar ${ready.length} documento(s) listos para Jev (sin API) ===`);
+console.log(`\n=== Proceso viejo: preparar ${ready.length} documento(s) listos para Jev (sin API; el lote no lo usa) ===`);
 
 function clubAndYear(pdf) {
   // Reusa lo que ya resuelve tools/onboard.mjs (club por carpeta contra data/clubs.js, año por el nombre, con su corrección
@@ -343,14 +343,14 @@ for (const e of ready) {
   appendFileSync(verifPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'listo', jev, rubros: rubros.length, tieOuts: { cierran: closes, noCierran: fails } }) + '\n');
   if (jev === 'listo-para-jev') nJev++; else nSin++;
 }
-console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros; lista = selección de la etapa 6 en ${nSeleccion}${nSeleccionFalla ? `, lista vieja en ${nSeleccionFalla} (la selección falló: ver "seleccion" en su .rubros.json)` : ''} (${nDescartadas} filas descartadas por no ser rubros: subtotales, resultados, números sueltos, metadatos)${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
+console.log(`  ${nJev} listo-para-jev, ${nSin} sin-rubros; lista = selección de proponer-carga.mjs (proceso viejo) en ${nSeleccion}${nSeleccionFalla ? `, lista vieja en ${nSeleccionFalla} (la selección falló: ver "seleccion" en su .rubros.json)` : ''} (${nDescartadas} filas descartadas por no ser rubros: subtotales, resultados, números sueltos, metadatos)${nSinTablas ? `, ${nSinTablas} SIN TABLAS (se rehacen con Mistral en la próxima corrida)` : ''}${nFail ? `, ${nFail} con error en prepare-onboarding` : ''}.`);
 
 // ---- Etapa 5: Jev categoriza los rubros de los documentos listo-para-jev (casi gratis: ~$42 por mil millones de tokens)
 if (!NO_JEV) {
   // Jev lee el registro para saber qué documentos están `listo-para-jev`: hay que regenerarlo ANTES, si no los documentos preparados en esta
   // misma corrida quedaban sin categorizar hasta la corrida siguiente (bug visto en el piloto de 9 documentos, 2026-09-30).
   ledger = refreshLedger();
-  console.log('\n=== Etapa 5: Jev categoriza los rubros (lado y ejemplos parecidos incluidos) ===');
+  console.log('\n=== Proceso viejo: Jev categoriza los rubros (lado y ejemplos parecidos incluidos; el lote lo hace en su etapa 7) ===');
   // Glosa en español de cada rubro (Gemini, ~$0,001 por documento): sin ella la búsqueda de ejemplos parecidos no encuentra nada en idiomas que el sitio no tiene.
   // SOLO los documentos de esta corrida (bug real 2026-09-30, piloto C: la etapa 5 tomaba TODOS los `listo-para-jev` del inventario y
   // categorizar-claude.mjs empezó a mandar 390 documentos a Claude por API; se cortó en 44, US$ 1,90). La lista va a las tres tools.
@@ -362,7 +362,7 @@ if (!NO_JEV) {
   // (sus convenciones) y las filas vecinas. Backtest sobre 3.975 rubros: Jev >= 0,90 sola resuelve 69,4% (94,4% de acierto); sumando
   // Claude >= 0,80 se resuelve 80,2% con 94,5%; el resto queda para revisión (Admin/tests/test-categorizar-claude.md). ~US$ 0,015 por documento.
   // Deja `<md>.categorias.json` (la categoría final de cada rubro y de qué escalón salió: precedente / jev / claude / sin-resolver).
-  console.log('\n=== Etapa 5b: Claude por API categoriza lo que Jev no resolvió con confianza ===');
+  console.log('\n=== Proceso viejo: Claude por API categoriza lo que Jev no resolvió con confianza ===');
   node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.pipeline-lista-jev.txt'], { stdio: 'inherit' });
 }
 

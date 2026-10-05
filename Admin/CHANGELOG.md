@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 482 — pipeline.mjs con la numeración de etapas de PIPELINE.md (ex to-do 140n) (2026-10-04)
+
+- `tools/pipeline.mjs`: "Etapas 1-2: transcribir y validar" pasa a "Etapa 2 (Admin/PIPELINE.md)"; preparar para Jev, Jev y Claude por API se rotulan "Proceso viejo" (el lote los hace en su etapa 7). Solo texto en pantalla; el ensayo corre igual.
+
 ## Versión 481 — Argentina con su archivo en la skill de sourcing (ex to-do 93) (2026-10-04)
 
 - `.claude/skills/club-sourcing/paises/Argentina.md` (nuevo, texto aprobado por Guido): sitio oficial primero, IGJ bloqueada (gestión de Guido), CNV/AIF para los clubes que emiten deuda, Reddit no rinde. La skill lo lista en el índice de países y deja de decir que Argentina va aparte.

@@ -62,8 +62,6 @@ ni en el comentario de ningún archivo de código.
         presupuesto y balance del mismo año; `Admin/CONVENCIONES.md` ex §15, presupuesto en año calendario).
     (m) `estado.mjs` estima la etapa 2 con un costo fijo por documento (US$ 0,20) y subestima los PDFs largos: Lazio, 19 PDFs de 151-208
         páginas, da ~US$ 4 contra US$ 25,60 del ensayo de `pipeline.mjs`, que cuenta páginas. Que estime por páginas, como el ensayo.
-    (n) `pipeline.mjs` imprime "Etapas 1-2: transcribir y validar" (numeración del proceso viejo) para lo que en `Admin/PIPELINE.md` es la
-        etapa 2. Que use la numeración de `PIPELINE.md`.
 
 141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
     (a) Cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados).
