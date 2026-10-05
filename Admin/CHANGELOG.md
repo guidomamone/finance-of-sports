@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 527 — To-do 140(k) y 140(l) fuera de la lista (2026-10-05)
+
+- (k) diferencias por grupo de países como configuración: sin caso que frene hoy (Vélez 2021 "consolidado" se cargó bien a mano); se resuelve caso por caso si vuelve. (l) presupuestos por el pipeline: 16 de 22 PDFs de presupuesto ya cargados a mano, quedan 5 de Argentina y 1 de España; se cargan a mano. Decisión de Guido.
+
 ## Versión 526 — To-do 140(i) y 140(j) fuera de la lista (2026-10-05)
 
 - Decisión de Guido: se dan por hechos; el paso 4 del (i) (la cola para años sin precedente) y el perfil de clubes fuera de Sudamérica (j) van a aparecer solos con los casos.
