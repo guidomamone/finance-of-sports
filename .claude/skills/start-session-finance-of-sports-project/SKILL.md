@@ -23,13 +23,13 @@ permanentes. Esto es el procedimiento.
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 11 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** | 13 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto | 23 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto | 17 KB |
 | 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club | 25 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` | 60 KB |
 | 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS | 63 KB |
 | 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline | 89 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) | 9 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB (+ el archivo de tu país en `paises/`, ~2-9 KB cada uno, desde el to-do 87) |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 42 KB (+ el archivo de tu país en `paises/`, ~1-9 KB cada uno, desde el to-do 87) |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 14 KB + 2-8 KB por país |
 
 (Pesos re-medidos 2026-09-26, `wc -c`. Hasta la Versión 239 `Admin/ESTADO.md` incluía el bloque

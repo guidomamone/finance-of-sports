@@ -78,28 +78,17 @@ del ayuntamiento de Zhytomyr). Ninguna de estas 4 formas jurídicas distintas im
 publicara sus estados financieros — la obligación del art. 14 aplica igual a todas por tamaño de
 empresa, no por forma societaria.
 
-## Dead-ends confirmados (3 clubes, sin lead nuevo)
+## Dead-ends: quedan Zorya y Kryvbas (corregido 2026-10-03)
 
-**Динамо Київ, Зоря (Луганськ) y Кривбас (Кривий Ріг)** no tienen ninguna sección de "Фінансова
-звітність"/transparencia en su sitio oficial — confirmado revisando el menú completo (no solo la
-portada) vía JS (`document.querySelectorAll('a')` filtrado por palabras clave). Kryvbas sí tiene una
-página "Публічні документи" (`fckryvbas.com/publichni-dokumenti`), pero solo contiene contratos de
-servicios de la academia infantil, nada financiero. Como son ТОВ, tampoco tienen canal SMIDA. Sin un
-ángulo nuevo que probar — el dead-end es de "no publicaron", no de "portal bloqueado", así que no
-hay gotcha de acceso que resolver, solo esperar a que el club decida publicar (o preguntarles
-directo, ver `dudas-por-club.md`).
+Dynamo Kyiv no era dead-end: la sección está en `fcdynamo.com/pages/40` ("Документація"), ver
+`Dynamo Kyiv.md`. Shakhtar tampoco: publica 2018-2025 en su sitio, ver `Shakhtar.md`. Siguen sin
+sección financiera Zorya y Kryvbas (Kryvbas tiene "Публічні документи", pero solo contratos de la
+academia); como son ТОВ, tampoco tienen canal SMIDA.
 
-## Bloqueo de TOOLING, no de disclosure: Oleksandriya
+## Oleksandriya: sitio bloqueado, resuelto por Wayback (2026-10-03)
 
-`fco.com.ua` (Олександрія) devuelve **403 Forbidden (nginx)** para CUALQUIER acceso automatizado —
-confirmado con `curl` (con y sin User-Agent de navegador), `WebFetch`, y el Browser pane real (que
-también recibió el 403, o sea que no es un bloqueo anti-bot que un navegador real esquive, parece un
-bloqueo de rango de IP/geográfico a nivel de servidor). El propio índice de Google SÍ tiene indexado
-`fco.com.ua/wp-content/themes/fco/files/fin_zvit-2020.pdf` ("Футбольний клуб «Олександрія»
-Фінансова звітність за..."), confirmando que el club publica igual que el resto del país — el
-documento existe, simplemente no se pudo bajar desde este entorno. Vale la pena reintentar desde una
-sesión futura (puede ser un bloqueo transitorio o específico de la IP de este entorno), o pedirle el
-PDF a Guido si tiene acceso de otra red.
+`fco.com.ua` da 403 a todo acceso automatizado (bloqueo de IP), pero el CDX de dominio completo
+recuperó 2019-2025. Ver `Oleksandriya.md`.
 
 ## Cómo mantener esta nota
 

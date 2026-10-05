@@ -41,11 +41,6 @@ links de la página con un script (hay muchas más PDFs de SFP/határozat que ru
 - **Descargas de Google Drive** de un sitio oficial (`drive.google.com/uc?export=download&id=`) funcionaron
   (Újpest); el de 26 págs de la kiegészítő 2023 devolvió HTML de confirmación.
 
-## Texto propuesto para `paises/Hungria.md` (a copiar por la sesión principal)
-Canal: sitios de los clubes (`/tao`, `/eves-beszamolok`, `/beszamolok`); e-beszamolo.im.gov.hu con captcha ALTCHA
-(gestión de Guido); agregadores pagos (759 Ft). PDFs escaneados -> OCR `hun`. Cuidar homonimia
-asociación/Zrt. Ver `fuentes/Hungria/_notas-generales.md`.
-
 ## Pendientes (venían del TODO)
 
 - (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (c) captcha de `e-beszamolo.im.gov.hu` (Hungría: Fehérvár y huecos de Paks 2020, MTK 2019).

@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 491 — Lo aprendido en el sourcing de Europa del Este, a la skill (ex to-do 136) (2026-10-05)
+
+- `club-sourcing`, aprobado por Guido: 17 archivos de país nuevos en `paises/` (Armenia, Azerbaiyán, Bielorrusia, Bosnia, Bulgaria, Eslovaquia, Eslovenia, Estonia, Georgia, Hungría, Kazajistán, Letonia, Lituania, Macedonia del Norte, Polonia, Rumania, Serbia) con su línea en el índice; `Rusia.md` (endpoints `details` JSON y `XLS`), `Croacia.md` (Slaven y Varaždin por CDX de dominio) y `Ucrania.md` (Dynamo Kyiv deja de ser dead-end, Shakhtar, Oleksandriya por Wayback, 14 de 16).
+- SKILL.md 0.1: la licencia nacional de la federación como canal en Europa, la mediateca de WordPress (`wp-json/wp/v2/media`) y validar cada captura de Wayback con `pdfinfo` + `curl --compressed`.
+- Borradas las secciones de texto propuesto de `fuentes/<País>/_notas-generales.md`; corregidas las secciones viejas de dead-ends y Oleksandriya en la nota de Ucrania. Peso de `club-sourcing` en la skill de arranque: 33 → 42 KB.
+
 ## Versión 490 — Lo aprendido en el sourcing de Sudamérica, a la skill (ex to-do 132) (2026-10-05)
 
 - `club-sourcing`, aprobado por Guido: `paises/Brasil.md` (otros deportes, Google Drive, portales que bloquean curl, `.PDF` en minúscula; Juventude deja de ser dead-end), `Chile.md` (wp-json, Palestino), `Colombia.md` (subvisor desde el url de documentos-adicionales; 404 = sin documentos), `Uruguay.md` (Peñarol 2018 por el dominio punycode), `Ecuador.md` (informes a socios), `Peru-Paraguay-Bolivia-Venezuela.md` y SKILL.md 0.1 (quedarse con la captura de Wayback más grande).

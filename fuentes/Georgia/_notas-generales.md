@@ -29,12 +29,6 @@ completo (14 PDFs). Los otros clubes no se resolvieron/exploraron (los dominios 
 - Wayback trunca a 1.048.576 bytes: 5 PDFs de Dinamo Tbilisi quedaron así (borrados).
 - El nombre jurídico de los clubes es largo (`შპს საფეხბურთო კლუბი …`): buscar por la palabra del club.
 
-## Texto propuesto para `paises/Georgia.md`
-
-> **Georgia**: reportal.ge (SARAS) es el registro de informes anuales; el buscador es público pero los documentos
-> requieren cuenta (gestión de Guido). Los clubes son შპს; buscar por nombre en georgiano. Dinamo Tbilisi
-> publica el paquete de licencia en `fcdinamo.ge/m/u/ck/files/` (recuperable por CDX). Tesseract `kat`.
-
 ## Gestiones de Guido / mails
 
 - Crear cuenta en reportal.ge y bajar los informes de Dinamo Tbilisi (2017-2025; 2020 falta), Torpedo Kutaisi (2018-2025), Dinamo Batumi (2018-2022), Gagra, Lokomotivi, Sioni, Zestafoni, Samgurali (2020-2025).

@@ -11,6 +11,3 @@ Es el mejor canal de todo el barrido de Europa del Este: **cada Годишен �
 
 ## Clubes
 Ver `fuentes/_indice/Bulgaria.md`. ЕИК usados: Ludogorets 201280347, Levski 121660936, CSKA Sofia 110501548, Lokomotiv Plovdiv 109080575, Botev Plovdiv 201468114, Cherno More 103253223, Slavia 130068410, CSKA 1948 (asociación) 177080120, Arda 205176207.
-
-## Propuesta de texto para `paises/Bulgaria.md`
-Canal único y suficiente: Registro Mercantil búlgaro, API pública JSON (ver pasos arriba). Idioma OCR `bul`. Buscar con el nombre completo registrado en cirílico. Los PDFs vienen del propio club (el auditor firma en búlgaro o inglés). No hace falta pasar por el sitio del club.

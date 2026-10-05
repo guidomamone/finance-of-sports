@@ -102,16 +102,6 @@ estados existen, solo leads.
 Candidatos a mail (no escritos): ninguno justificado todavía; el camino para estos deportes es el RDF
 (gestión de Guido desde IP polaca o con ayuda de un tercero) o pedir a cada club.
 
-**Texto propuesto para `paises/Polonia.md`**: Polonia: 1) los clubes de la Ekstraklasa y de 1ª liga son
-S.A. y publican sus `sprawozdania finansowe` en una sección permanente de su sitio por la licencia PZPN
-(F.01); buscar `/sprawozdania`, `/akcjonariusze`, `/wymogi-licencyjne`, "dokumenty licencyjne". 2) Si el
-club cotiza en NewConnect (GKS Katowice) el canal son los comunicados EBI/ESPI. 3) El repositorio RDF
-(`rdf-przegladarka.ms.gov.pl`) está bloqueado por IP desde EE.UU.: no insistir. `api-krs.ms.gov.pl` sirve
-solo para razón social/KRS. 4) Los años viejos se recuperan con Wayback CDX del dominio, comparando
-siempre el período de la carátula (los clubes sobreescriben el mismo slot cada año). 5) Verificar si el
-ejercicio es calendario o julio-junio, y si hubo un período de transición (Raków, Widzew, Wisła Kraków).
-6) Otros deportes: este canal no aplica.
-
 ## Pendientes (venían del TODO)
 
 - (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (a) **IP polaca/UE** para el repositorio RDF/KRS (`rdf-przegladarka.ms.gov.pl`, bloquea EE.UU.): completa huecos de Polonia (Górnik 2024, Śląsk 2021/2023, Cracovia 2021, Zagłębie 2020, Motor 2024, Arka 2022/23+) y otros deportes.

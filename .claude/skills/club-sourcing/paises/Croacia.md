@@ -20,6 +20,8 @@ cuenta para esto (regla general del proyecto). Último chequeo: 2026-09-17.
 - **Lokomotiva es el único bloqueo real**: sus 2 ejercicios más recientes están alojados en Scribd
   (login/pago) en vez del sitio propio del club — decisión de Guido si vale la pena, ver
   `Admin/dudas-por-club.md`.
-- **Wayback Machine estuvo caído durante toda la sesión** para varios huecos puntuales (Dinamo 2023,
-  Slaven Belupo 2019-2023) — no es un dead-end confirmado, retomar en una sesión futura cuando el
-  servicio esté disponible, antes de asumir que esos ejercicios no existen.
+- **Los años viejos salen del CDX de dominio completo**, que incluye los subdominios: Slaven Belupo
+  tiene 2019-2023 en `arhiva.nk-slaven-belupo.hr`, que da 401 real en vivo, pero sus capturas están
+  completas; Varaždin, en su sitio viejo `nk-varazdin.hr`. Los nombres de archivo no se adivinan
+  (`F.01_Godisnji-financijski-izvjestaji-poslije-revizije-za-2020..pdf`). Ser asociación no frena la
+  licencia: Varaždin publicaba el informe del auditor como udruga desde 2019, antes de pasar a s.d.d.

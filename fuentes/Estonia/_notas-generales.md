@@ -34,16 +34,6 @@ Linnameeskond` (80339528); Kalju = `MTÜ Nõmme Kalju FC` (80048819); Kalev = `J
 (80052525); Harju JK Laagri = `MTÜ Harju Jalgpalliklubi Laagri` (80620596). Homonimia confirmada y evitada:
 `Tartu Jalgpalliklubi` (80072433) NO es Tammeka (contacto `tjkmerkuur@hot.ee`, parece JK Merkuur).
 
-## Texto propuesto para `paises/Estonia.md` (para la sesión principal; no se editó el skill)
-
-> **Estonia**: e-Äriregister (`ariregister.rik.ee`), PDF gratis y sin login por empresa
-> (`/eng/company/<kood>` → `Annual reports` → `PDF`). Usar `curl` SIN `-A`/User-Agent (con UA de
-> navegador Cloudflare responde 520). Validar `%PDF-` y reintentar con pausa si llega HTML. Los clubes
-> son MTÜ; resolver la entidad con el CSV de datos abiertos `ettevotja_rekvisiidid__lihtandmed`. Hay 7
-> ejercicios 2019-2025 para los clubes de la Meistriliiga. Los informes son nativos con texto
-> (`pdftotext` sirve), en estonio (`est` en Tesseract si hace falta). Datos estructurados 2019-2025 en
-> `4.<año>_aruannete_elemendid`.
-
 ## No intentado / pendiente
 
 - Clubes de menor nivel de la Esiliiga/II liiga (Maardu, Viimsi, Pärnu JK, etc.): no se buscaron.

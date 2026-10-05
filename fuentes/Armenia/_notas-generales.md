@@ -24,13 +24,6 @@ confidencialidad" (puede anonimizar por club: verificar). Guardado en `Clubes/Ar
 anteriores (2013-2024) están en `ffa.am` (el sitio es una SPA; no se listaron). Camino: abrir
 `https://www.ffa.am/en/licensing` en el navegador y extraer los links.
 
-## Texto propuesto para `paises/Armenia.md`
-
-> **Armenia**: `e-register.moj.am` solo da datos básicos gratis (nombre en armenio por prefijo). Los estados auditados
-> están en el sitio de cada club (secciones "Reports"/"Ֆինանսական հաշվետվություն"): Pyunik 2018-2025, Noah 2024,
-> Urartu 2018-2020, Ararat FC 2020/2021/2025. Clubes = ONG (ՀԿ). Auditor habitual: Audit Armenia. Escaneos: OCR `hye`/`eng`.
-> La FFA publica un benchmarking anual de licencias (armenio).
-
 ## Dudas / mails / gestiones
 
 - Mail candidato (no escrito): Noah (años 2022-2023), Urartu (2021-2025), Alashkert, Ararat-Armenia (nunca publicaron), Ararat FC (2022-2024).

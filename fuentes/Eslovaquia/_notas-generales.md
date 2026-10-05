@@ -33,11 +33,6 @@ bajaron; los .docx/.rtf sí).
 - Spartak Trnava = `FC Spartak, a.s.` (IČO 36247057; confirmado por OCR del informe del auditor 2024: "FC Spartak, a.s., Dolné bašty 14, Trnava").
 - Documentos con "Mimoriadna" (extraordinaria) se saltearon (Žilina 2020-03).
 
-## Texto propuesto para `paises/Eslovaquia.md`
-Canal: `registeruz.sk` (API pública, ver cadena de llamadas en `fuentes/Eslovaquia/_notas-generales.md`). Descarga
-sin cuenta ni captcha de estados, informes del auditor y memorias de a.s./s.r.o. Buscar por la API `suggestion/search`.
-Cuidar homónimos y cambios de figura jurídica. Scripts de referencia: ver el reporte de la sesión 2026-10-03.
-
 ## Pendientes (venían del TODO)
 
 - (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: [...] Tampoco están probados: Skalica/Dukla Banská Bystrica/Košice (Eslovaquia).

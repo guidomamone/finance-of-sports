@@ -28,14 +28,6 @@
 - `data.gov.lv` y `dati.ur.gov.lv` responden desde IP de EE.UU. (no bloquean, a diferencia de Lituania).
 - Tesseract `lav` instalado: leyó bien las carátulas de RFS 2020/2021.
 
-## Texto propuesto para `paises/Letonia.md`
-
-> **Letonia**: (1) sitio del club, sección Dokumenti (RFS, Riga FC, FK Auda tienen 4-6 años; Google Drive
-> público en Auda). (2) datos abiertos del Registro de Empresas en `data.gov.lv` (`gada-parskatu-finansu-dati`):
-> CSV masivo de balance/PyG/flujo por informe anual, incluye biedrības pero solo con balance. (3) Lursoft
-> / ur.gov.lv: PDF pagos (~11 EUR). Los clubes grandes son biedrības (RFS, Riga FC, Liepāja, Jelgava) o SIA
-> (Auda, Valmiera FC, Spartaks); confirmar reg. nº por la carátula. Idioma `lav` en Tesseract.
-
 ## Dudas para `Admin/dudas-por-club.md` (para la sesión principal)
 
 - Riga FC: ¿el patrimonio neto pasa de -5,16 M EUR (2021) a +0,79 M (2025) por condonación de deuda del dueño o por

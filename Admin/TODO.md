@@ -182,5 +182,3 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-136. **Texto propuesto para `paises/*.md` pendiente de aprobar** (no se editó ningún skill): Polonia, Rumania, Hungría, Eslovaquia, Eslovenia, Serbia, Bulgaria, Bosnia, Macedonia del Norte, Estonia, Letonia, Lituania, Georgia, Armenia, Azerbaiyán, Kazajistán, Bielorrusia y la actualización de Rusia (endpoints `details` y `XLS`), Croacia (Wayback, Slaven y Varaždin), Ucrania (Dynamo Kyiv, Shakhtar y Oleksandriya, corrigiendo el "dead-end"). Cada texto está al final de `fuentes/<País>/_notas-generales.md` (sección "Texto propuesto" o equivalente) y hay que mostrarlo antes de crear el archivo y su línea en el índice del `SKILL.md`. Regla general nueva a agregar a `club-sourcing` 0.1: Wayback por `https://`, una captura de 1.048.576 bytes exactos está truncada, y la licencia nacional de la federación (PZPN F.01, HNS, FSS, LFF, ...) suele ser el canal.
-

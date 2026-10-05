@@ -17,13 +17,6 @@
 - Los PDF de AFFA pesan 3-12 MB (informes con gráficos): texto parcial. Idioma: azerí (`aze` en Tesseract si hiciera falta).
 - Moneda AZN (manat). Ejercicio = año calendario; el licenciamiento mira el ejercicio previo (informe "2025" = ejercicio 2024).
 
-## Texto propuesto para `paises/Azerbaiyan.md`
-
-> **Azerbaiyán**: sin canal público de estados individuales. Fuente de cifras por club: informes anuales de licenciamiento
-> de la AFFA (`affa.az/index.php/lisenziya/rsmi-sndlr/211`, 2014-2025) y, para Qarabağ, el informe de sostenibilidad
-> (`qarabagh.com/en/resmi-hesabatlar`). No cargar como "balance": son agregados. Los clubes son LLC/OJSC de patronos
-> (Qarabağ = Azersun).
-
 ## Gestiones / mails
 
 - Candidato a mail (no escrito): Qarabağ, pidiendo estados auditados (si los hay) además del informe de sostenibilidad.

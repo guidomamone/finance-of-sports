@@ -89,7 +89,9 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
 1. **Fuente oficial del club** — el sitio propio, MENÚ COMPLETO (no solo la home ni la primera
    sección que parezca obvia, tipo "Transparencia"). Si es WordPress, además del menú, buscar posts
    de asamblea/balance/ejercicio vía `wp-json/wp/v2/search?search=<término>` y abrir CADA resultado
-   — el documento real puede colgar de un post cuyo título no menciona "balance" para nada.
+   — el documento real puede colgar de un post cuyo título no menciona "balance" para nada. Listar
+   también la mediateca: `wp-json/wp/v2/media?per_page=100&search=<término>&mime_type=application/pdf`
+   devuelve PDFs que ninguna página enlaza.
    **"Encontré la Memoria y es puramente narrativa" NO es señal de que el club no publica un
    balance real** — es señal de que hay que seguir mirando DENTRO del sitio, no de pasar a la
    familia 2. Gimnasia y Esgrima (La Plata) es el caso que lo prueba: 4 memorias narrativas
@@ -123,7 +125,7 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    House, Unternehmensregister, etc.).
 
    **Cada país tiene su propio archivo en `paises/<País>.md` (to-do 87, resuelto 2026-09-27) — leé
-   SOLO el de tu país, no hace falta abrir los 28 restantes.** Antes vivían las 29 secciones juntas
+   SOLO el de tu país, no hace falta abrir los demás.** Antes vivían las 29 secciones juntas
    en este mismo archivo (123 KB); un agente sourceando Argentina no tenía por qué cargar qué pasa en
    Grecia. El índice completo está más abajo, después de la sección 0.3.
 
@@ -132,6 +134,14 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    etc.) — es un canal distinto del registro de asociaciones civiles/sociedades, con su propio
    régimen de disclosure, a veces más completo (ver `fuentes/Argentina/River.md`).
 
+   **En Europa, el canal suele ser la licencia nacional de la federación, más que un registro**:
+   PZPN (Polonia, criterio F.01), HNS, FRF, FSS, NSBiH, LFF, FFM, FFA o MLSZ hacen que el club
+   publique sus estados en su propio sitio. Pistas: una sección permanente (`/dokumenti`,
+   `/transparenca`, `/sprawozdania`, `/tao`), archivos con el código del criterio (`F.01`,
+   `fin0101`) o una declaración de pagos a intermediarios al lado. Casi siempre queda solo el último
+   año (el club reemplaza el archivo o borra el anterior): los viejos salen del CDX de dominio
+   completo (familia 3), verificando el ejercicio en la carátula porque el mismo nombre de archivo
+   sirve para varios años. No se extiende a otros deportes (Polonia: vóley, básquet, speedway).
 
 3. **Wayback Machine, CDX API sobre el DOMINIO COMPLETO** del club (`matchType=domain`), no solo la
    URL puntual que se sospecha. Sirve para dos cosas: recuperar un documento que el sitio vivo movió
@@ -156,7 +166,8 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
 
    **Con varias capturas del mismo PDF, listarlas todas** con `fl=original,timestamp,length` y quedarse con la de mayor tamaño (la de
    exactamente 1.048.576 bytes está truncada: Operário, Volta Redonda, Emelec, Pinheiros). Hay clubes cuyos PDFs viejos solo existen en
-   Wayback, de un sitio que ya cambió a SPA (Coritiba, Paulistano, Operário).
+   Wayback, de un sitio que ya cambió a SPA (Coritiba, Paulistano, Operário). Validar cada captura con `pdfinfo`, no por el código HTTP: a
+   veces es una página HTML en lugar del PDF. Con `id_`, usar `curl --compressed` (si no, baja un gzip crudo).
 
    **Un club "ya muy sourceado" NO es excusa para saltear la familia 3 — el barrido de dominio
    completo puede seguir sin haberse corrido nunca en serio.** Encontrado con Boca Juniors
@@ -401,21 +412,38 @@ le tocaba). Abrí SOLO el archivo del país/región que estés buscando — no h
 - **Reino Unido — Companies House, sirve para CUALQUIER deporte** → [`paises/Reino-Unido.md`](paises/Reino-Unido.md)
 - **Estados Unidos — la SEC, para los deportes que NO son fútbol** → [`paises/Estados-Unidos.md`](paises/Estados-Unidos.md)
 - **Alemania — Unternehmensregister + DFL Finanzkennzahlen** → [`paises/Alemania.md`](paises/Alemania.md)
+- **Armenia — sitio del club; el registro solo da datos básicos** → [`paises/Armenia.md`](paises/Armenia.md)
 - **Austria — Firmenbuch bloqueado por pago, pero la liga entera publica un agregado gratis** → [`paises/Austria.md`](paises/Austria.md)
+- **Azerbaiyán — sin canal público de estados individuales** → [`paises/Azerbaiyan.md`](paises/Azerbaiyan.md)
 - **Bélgica — sin login y scriptable por API** → [`paises/Belgica.md`](paises/Belgica.md)
+- **Bielorrusia — sin canal público de balances** → [`paises/Bielorrusia.md`](paises/Bielorrusia.md)
+- **Bosnia — sitio del club, plantilla de licencia del NSBiH** → [`paises/Bosnia.md`](paises/Bosnia.md)
+- **Bulgaria — Registro Mercantil público, gratis y scripteable: alcanza solo** → [`paises/Bulgaria.md`](paises/Bulgaria.md)
 - **China — mayormente dead-end por diseño societario, pero NO es un dead-end de liga completa** → [`paises/China.md`](paises/China.md)
 - **Corea del Sur — DART funciona como un EDGAR/SEC coreano, para los clubes de chaebol** → [`paises/Corea-del-Sur.md`](paises/Corea-del-Sur.md)
 - **Croacia — sin registro central gratis, pero el mandato de licenciamiento de la liga alcanza** → [`paises/Croacia.md`](paises/Croacia.md)
 - **Dinamarca — mismo patrón que Bélgica, y una idea reutilizable** → [`paises/Dinamarca.md`](paises/Dinamarca.md)
+- **Eslovaquia — `registeruz.sk`: API pública, sin cuenta ni captcha** → [`paises/Eslovaquia.md`](paises/Eslovaquia.md)
+- **Eslovenia — sitio del club; AJPES pide captcha para ver los documentos** → [`paises/Eslovenia.md`](paises/Eslovenia.md)
 - **España — sin registro único; el atajo es listar el CMS de cada club en Wayback** → [`paises/España.md`](paises/España.md)
+- **Estonia — e-Äriregister: PDF gratis y sin login, con `curl` sin User-Agent** → [`paises/Estonia.md`](paises/Estonia.md)
 - **Francia — sin registro mercantil abierto, pero la DNCG publica bilanes individuales por club** → [`paises/Francia.md`](paises/Francia.md)
+- **Georgia — reportal.ge: el buscador es público, los documentos piden cuenta** → [`paises/Georgia.md`](paises/Georgia.md)
 - **Grecia — 100% de la liga top cubierta con un solo canal** → [`paises/Grecia.md`](paises/Grecia.md)
+- **Hungría — sección TAO / beszámolók del sitio del club; el depósito estatal tiene captcha** → [`paises/Hungria.md`](paises/Hungria.md)
 - **Italia — no es un registro mercantil, es la obligación de licencia UEFA** → [`paises/Italia.md`](paises/Italia.md)
+- **Kazajistán — DFO en modo invitado, solo para clubes con participación estatal** → [`paises/Kazajistan.md`](paises/Kazajistan.md)
+- **Letonia — sitio del club por licencia LFF, más los datos abiertos del registro** → [`paises/Letonia.md`](paises/Letonia.md)
+- **Lituania — sitio del club por la licencia LFF; el registro no es accesible para un agente** → [`paises/Lituania.md`](paises/Lituania.md)
+- **Macedonia del Norte — sitio del club por la licencia FFM; registro sin verificar** → [`paises/Macedonia-del-Norte.md`](paises/Macedonia-del-Norte.md)
 - **Noruega — canal excelente, con un gotcha real de URL no documentada** → [`paises/Noruega.md`](paises/Noruega.md)
 - **Países Bajos — KvK de pago, pero el mandato de licencia F.04 de la KNVB alcanza igual** → [`paises/Paises-Bajos.md`](paises/Paises-Bajos.md)
+- **Polonia — sitio del club por la licencia PZPN; el registro RDF está bloqueado por IP** → [`paises/Polonia.md`](paises/Polonia.md)
 - **Portugal — muy buena cobertura de liga completa, y una tercera red de rescate reutilizable** → [`paises/Portugal.md`](paises/Portugal.md)
 - **República Checa — otro registro gratis de primer nivel, y dos formatos nuevos para el `.gitignore`** → [`paises/Republica-Checa.md`](paises/Republica-Checa.md)
+- **Rumania — sitio del club, por el formato de licencia de la FRF** → [`paises/Rumania.md`](paises/Rumania.md)
 - **Rusia — accesible pese al contexto geopolítico, vía un dominio redirigido** → [`paises/Rusia.md`](paises/Rusia.md)
+- **Serbia — sitio del club; el registro APR no es accesible desde EE.UU.** → [`paises/Serbia.md`](paises/Serbia.md)
 - **Suiza — Zefix es dead-end de país, pero la mitad de la liga publica voluntariamente** → [`paises/Suiza.md`](paises/Suiza.md)
 - **Turquía — los 4 grandes cotizan DIRECTO como club-asociación, caso único en el proyecto** → [`paises/Turquia.md`](paises/Turquia.md)
 - **Ucrania — no es un registro mercantil, es la ley de contabilidad la que obliga a publicar** → [`paises/Ucrania.md`](paises/Ucrania.md)

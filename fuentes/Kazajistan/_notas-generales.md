@@ -19,13 +19,6 @@
 - Gotchas: los archivos pesan 2-56 MB (descarga lenta, hasta ~1 min cada uno); pocos `.docx` de notas. El DFO marca a veces la entidad como "Архивный объект" aunque tenga informes.
 - Ojo: **no es un registro de empresas**, solo de OPI (sociedades por acciones, estatales, emisores, bancos, etc.); un club privado (TOO) no aparece.
 
-## Texto propuesto para `paises/Kazajistan.md`
-
-> **Kazajistán**: `opi.dfo.kz` (Depositario de Informes Financieros, OPI), acceso invitado y descarga directa de PDFs
-> (`/ru/file-download/<token>`) vía `report-json/get-reports` + `render-blocks/get-node-data`. Cubre clubes con
-> participación estatal (Aktobe, Ordabasy, Shakhter, Okzhetpes, Kaspiy) y NO los privados (Astana, Kairat, Tobol).
-> Informes auditados en ruso, escaneados; OCR `rus`. 6 ejercicios 2020-2025 por club.
-
 ## Dudas / gestiones
 
 - Astana y Kairat: sin canal público; candidatos a mail (no escrito).

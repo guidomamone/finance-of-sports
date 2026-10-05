@@ -13,6 +13,13 @@ financiero SÍ es accesible desde este entorno. Último chequeo: 2026-09-18.
     real de profundidad histórica del propio depósito estatal ГИРБО, no un límite de búsqueda).
   - Descargar: `bo.nalog.gov.ru/download/audit/<reportId>` (dictamen de auditor) y
     `.../download/clarification/<reportId>` (notas al balance).
+  - **Datos estructurados de cada ejercicio, haya PDF o no** (mismo `reportId`):
+    `bo.nalog.gov.ru/nbo/bfo/details/<reportId>` → JSON con `balance` (formulario 0710001:
+    `current1100`, `current1600`...), `financialResult` (0710002: `current2110` ingresos,
+    `current2400` resultado neto), `capitalChange` y `fundsMovement`, en **miles de rublos**; y
+    `bo.nalog.gov.ru/download/bfo/<reportId>?type=XLS` → ZIP con el `.xlsx` de las formas (solo
+    `XLS` funciona: `PDF`, `XLSX`, `XML` dan 400). Es la misma presentación del club al depósito del
+    Estado, no un agregador. JSON y ZIP no se trackean (`.gitignore`).
 - **Gotcha de tooling real que costó una hora**: la conexión es lenta e inestable — varios `curl`
   de archivos grandes cortaron a los 25s con `Operation timed out` pero igual habían recibido HTTP
   200 en los headers antes del corte, marcando falsamente 16 PDFs como "OK" en la primera pasada.
@@ -24,6 +31,6 @@ financiero SÍ es accesible desde este entorno. Último chequeo: 2026-09-18.
   renombrada a un club de otra ciudad con escala irrisoria. Se resolvió cruzando el sitio oficial
   del club con la escala de ingresos del registro, mismo criterio que Bélgica (comparar turnover,
   `paises/Belgica.md`) y Noruega (comparar driftsinntekter, `paises/Noruega.md`).
-- Con esto, 15 de 16 clubes de la Premier League rusa 2025/26 quedaron con documentos reales
-  (dictamen de auditor y/o notas al balance). Un club (Akhmat Grozny) está legalmente obligado a
-  depositar el dictamen pero nunca lo hizo en 5 años — ver duda en `Admin/dudas-por-club.md`.
+- Con los PDFs, 15 de 16 clubes de la Premier League rusa 2025/26 tienen dictamen y/o notas; con
+  los datos estructurados, los 16 tienen balance y resultados 2021-2025 (Baltika desde 2022). Akhmat
+  Grozny está obligado a depositar el dictamen y nunca lo hizo — ver `Admin/dudas-por-club.md`.

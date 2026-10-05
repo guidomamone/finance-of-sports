@@ -33,13 +33,6 @@ que recuperó 2019-2024 de Žalgiris Vilnius y FY2022/2023 de Panevėžys.
   que es el año SIGUIENTE al ejercicio; confirmar con el texto "(YYYY.01.01-YYYY.12.31)".
 - Dos entidades "Žalgiris" no relacionadas: VšĮ Futbolo klubas "Žalgiris" (Vilnius, 302309678) y VšĮ Futbolo klubas "Kauno Žalgiris".
 
-## Texto propuesto para `paises/Lituania.md`
-
-> **Lituania**: Registrų centras (JAR) está tras Cloudflare Turnstile y `data.gov.lt` bloquea IP de EE.UU.: no
-> accesibles para un agente. El canal real es el sitio del club (licencia LFF: paquete de estados auditados
-> publicado), que suele conservar solo el año en curso → completar con Wayback CDX del dominio completo. Casi todo
-> escaneado (OCR `lit`). Los clubes son VšĮ/asociación (no UAB), salvo Hegelmann.
-
 ## Dudas / mails / gestiones
 
 - **Gestión de Guido**: Registrų centras (consulta gratuita de VšĮ/asociaciones) para completar Panevėžys (FY2021, FY2024), Kauno Žalgiris (2019-2024), Sūduva (2024-2025 y resultados 2019-2020), Transinvest, Riteriai, Džiugas.

@@ -17,8 +17,3 @@
 - La licencia de la federación (ABFF) no obliga a publicar; el contexto sancionatorio (UEFA suspendió a clubes y selecciones
   bielorrusos de competiciones europeas desde 2022) quita el incentivo de publicar.
 - Tesseract `bel` y `rus` están instalados si apareciera algún PDF.
-
-## Texto propuesto para `paises/Bielorrusia.md`
-
-> **Bielorrusia**: sin canal público de balances. ЕГР es de pago/solicitud; los clubes (BATE = ООО «ФК БАТЭ») no publican.
-> Considerar el país cerrado salvo contacto directo.

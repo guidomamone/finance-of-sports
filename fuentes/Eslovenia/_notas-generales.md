@@ -20,10 +20,6 @@ Los informes anuales de la NZS (nzs.si) NO son de los clubes.
 - `fckoper.si/klub/` lista 4 de los 6 años; los de 2022 y 2024 se encuentran por CDX de dominio (`wp-content/uploads/2023/05/…2022-ok.pdf`, `2025/05/…2024.pdf`); el link de 2023 apunta a `wp-admin` (roto) pero la ruta correcta salió del CDX.
 - `nk-bravo.si/Klub`: los estados son **consolidados** (NK Bravo + subsidiarias).
 
-## Texto propuesto para `paises/Eslovenia.md`
-Canal: sitio del club (Olimpija, Domžale, Koper, Bravo publican); AJPES JOLP con captcha de código de acceso (gestión de Guido; buscador
-`rezultati.asp` scripteable). Cuidar capturas Wayback truncadas. Ver `fuentes/Eslovenia/_notas-generales.md`.
-
 ## Pendientes (venían del TODO)
 
 - (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (c) captcha [...] de AJPES JOLP (Eslovenia: Maribor, Celje, Mura, Radomlje, Primorje).
