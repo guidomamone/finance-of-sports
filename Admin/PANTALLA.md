@@ -782,3 +782,80 @@ Texto movido sin cambios.
   de ser solo de fútbol de clubes argentinos hace rato. El mail del formulario de
   contacto dejó de ser el placeholder `contacto@bocaennumeros.example` en la
   Versión 167: hoy el mailto va a `guidomamone91@gmail.com`.
+
+
+---
+
+## Trampas del navegador de preview (venía de `CLAUDE.md`, "Gotchas de tooling")
+
+Texto movido sin cambios.
+
+- **Caché de `<script src="data/....js">` o del propio `index.html` en el
+  navegador de preview**: si después de editar un archivo (`data/*.js` o
+  `index.html`) los números/estilos en pantalla siguen mostrando el valor
+  VIEJO, aunque `curl`/`fetch` al mismo archivo ya muestre el nuevo,
+  sospechá de caché del navegador ANTES de asumir que hay un bug real en el
+  código. `location.reload()`, `Cmd+Shift+R`, parar/re-lanzar `preview_start`
+  en el mismo puerto, abrir una pestaña nueva (`tabs_create`), Y cambiar el
+  puerto en `.claude/launch.json` — ESTOS 5 CONFIRMADOS QUE NO ALCANZAN en
+  este entorno (probado dos veces en la Versión 101: el puerto externo que
+  ve el navegador queda igual aunque cambies el puerto interno del server,
+  y la caché persiste incluso en una pestaña recién creada — el caché HTTP
+  de este entorno parece compartirse por origen entre pestañas, no por
+  pestaña). Lo único que funcionó de forma confiable: cambiar la URL exacta
+  del `<script src="...">` con un query string.
+  **ACTUALIZADO (Versión 115): esto ya NO es un truco temporal, ahora es una
+  convención del proyecto.** Todos los `<script src>` propios llevan un `?v=`,
+  y `window.ASSET_V` está declarado en un `<script>` inline justo antes de ellos.
+  **CORRECCIÓN IMPORTANTE (Versión 125, este párrafo decía algo que no era
+  cierto y costó un bug): los `?v=` de los `<script src>` estáticos son
+  LITERALES, NO salen de `ASSET_V`.** Solo los 2 cargadores dinámicos
+  (`loadClubData()` e `I18N.load()`) leen la constante de verdad. O sea que hay
+  que cambiar la constante Y los tags, y cambiar uno solo es PEOR que no cambiar
+  ninguno: el navegador mezcla archivos nuevos con archivos viejos de su caché
+  (pasó al migrar los `fx`: llegó un `currency-map.js` cacheado sin
+  `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, `ReferenceError` en
+  toda la página). Lo chequea `node tools/audit.js` (`asset-v-desfasado`, P1),
+  que compara la constante contra cada tag. Para forzar recarga durante una
+  sesión de desarrollo: subí ASSET_V (y los tags) a un valor que nunca se pidió
+  antes (ej. `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
+  igual en producción: sin esto, un visitante que ya entró antes se puede
+  quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo. Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
+  `document.querySelector('style').textContent.includes('tu regla nueva')`
+  con `javascript_tool` ANTES de concluir que el cambio "no funciona" — y
+  ANTES de concluir que SÍ funciona, ya que un error viejo puede seguir
+  apareciendo en `read_console_messages` de una pestaña reusada aunque el
+  problema ya esté arreglado (el historial de consola no se limpia solo
+  entre navegaciones); si el error es sospechosamente el mismo que uno ya
+  arreglado, volvé a chequear el estado real en vez de confiar en la lectura
+  de consola.
+  **NUEVO (auditoría de código, Versión 231→232, 2026-09-26): el propio `index.html` se puede quedar
+  cacheado ENTERO, no solo sus `<script src>`.** Encontrado auditando en vivo justo cuando otra
+  sesión pisó `ASSET_V` de 228 a 231: una pestaña nueva (`tabs_create`) seguía leyendo
+  `window.ASSET_V === '228'` — o sea, ni siquiera pedía el HTML de nuevo, cache de la respuesta a
+  `/` misma. La única forma que funcionó de forzar un fetch real del documento: navegar con un query
+  string en la URL de nivel superior, no en un `<script src>` (`http://localhost:8971/?cb=<lo que
+  sea>`). Confirmalo con `window.ASSET_V` (o cualquier otro global reciente) antes y después de
+  agregar el query string si sospechás que estás mirando un `index.html` viejo pese a haber abierto
+  pestaña nueva.
+- **Un diálogo nativo abierto (`alert`/`confirm`) congela TAMBIÉN las herramientas
+  de debug** (sesión 2026-09-13, Versión 137, costó una hora). Si `javascript_tool`
+  empieza a dar timeout, si un `setTimeout` de 300 ms no resuelve, o si un
+  `loadClubData()` queda "pendiente para siempre" aunque su request haya devuelto
+  200, sospechá de un `alert()` abierto ANTES de buscar un bug de concurrencia: un
+  diálogo nativo bloquea el hilo entero, así que ni los timers ni el `onload` de un
+  `<script>` inyectado ni tu propia sonda desde la consola llegan a correr. Se
+  destraba navegando con `force:true`. Y la moraleja para el sitio quedó como regla
+  en `Admin/CONVENCIONES.md`: ningún camino de error usa `alert()`.
+- **`computer` screenshot da BLANCO si la página está scrolleada**: en este
+  entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
+  cada vez que `window.scrollY > 0` en el momento de la captura, no importa
+  cómo se llegó ahí (`window.scrollTo`, `scrollIntoView`, el `scroll_to` del
+  tool `computer`, que sí mueve el scroll de verdad). Con `scrollY === 0`
+  sale bien siempre. La vuelta que funcionó: `resize_window` con un
+  `height` custom bien grande (2500-3000px) para que todo el contenido
+  relevante entre sin scrollear, capturar ahí, y después
+  `resize_window({preset:'desktop'})` para volver al tamaño normal. `zoom`
+  con `region` (crop) tampoco está soportado en este entorno, devuelve la
+  imagen completa igual. Esto es una limitación del TOOLING de esta sesión,
+  no algo que haya que "arreglar" en el sitio.

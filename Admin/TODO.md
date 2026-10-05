@@ -87,13 +87,6 @@ ni en el comentario de ningún archivo de código.
       `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
       lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
 
-143. PARTIR LOS DOCUMENTOS QUE SE LEEN EN CADA SESIÓN (estudio del 2026-10-04, pedido de Guido: "cosas que no hacen
-    falta que sean en cada sesión, no tienen que leerse"). Hoy se leen ≈225 KB (≈65.000 tokens) antes de empezar; con 4
-    particiones bajan a ≈85-90 KB. Hecho: CONVENCIONES partido (proceso / `CONVENCIONES-DATOS.md` / `PANTALLA.md`) el TODO
-    sin el sourcing por país y sin leerse al arrancar, y ESTADO sin la descripción del sitio (50 → 11 KB). Falta: CLAUDE.md a ≈10 KB (≈20 KB, y se paga también
-    en cada subagente). La mudanza de PIPELINE/ARQUITECTURA ya cerró, así que se pueden encarar; sacar los gotchas del
-    navegador de CLAUDE.md y tocar los skills necesita el ok de Guido. Detalle y riesgos: `auditorias/2026-10-04-partir-archivos.md`.
-
 101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
     CONTRA LOS 162 CLUBES (2026-09-28, ver el ex to-do 98 en `Admin/Archive/todos-cerrados-onboarding-manual.md`). Mismo rubro, mismo lado (ingreso o gasto),
     categoría DISTINTA entre ejercicios del MISMO club — no es un bug de la tool (ya separa

@@ -370,6 +370,14 @@ locally`. No es un problema del PDF ni del OCR: el sandbox bloquea esa ruta. Hay
 imágenes al directorio de scratchpad de la sesión y OCRear desde ahí. Se pierde bastante tiempo
 buscándole la vuelta si uno cree que el PDF está roto.
 
+- **Varios agentes de sourcing en paralelo (subagentes del `Agent` tool) pueden compartir el mismo
+  Browser pane** (sesión 2026-09-16, barrido de LaLiga en simultáneo con Brasil): una pestaña se
+  navegó sola a un sitio de otro agente en medio de la búsqueda. No es un bug del portal que se
+  estaba investigando. La vuelta que funcionó: cada agente abre su propia pestaña con `tabs_create`
+  al arrancar y fija ese `tabId` explícito en cada llamada del Browser tool, en vez de operar sobre
+  "la pestaña activa" por defecto. Si se lanzan sourcing agents en paralelo que usan el browser,
+  decírselo en el prompt.
+
 ## Países — un archivo por regulador/región en `paises/`
 
 Cada entrada de abajo es un archivo propio bajo `.claude/skills/club-sourcing/paises/`, con el mismo

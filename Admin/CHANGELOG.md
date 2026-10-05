@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 486 — CLAUDE.md de 30 a 6 KB; to-do 143 cerrado (2026-10-04)
+
+- `CLAUDE.md` reescrito corto: separación del sitio profesional, netlify, dónde va un documento, archivar, al empezar, antes de terminar, cada PDF nuevo, precisión y punteros a las trampas.
+- Movido sin cambios: carpetas de `Clubes/`, transcripción y trampas de PDF/grep a `Admin/PIPELINE.md` ("Documentos fuente"); trampas del navegador a `Admin/PANTALLA.md`; agentes en paralelo y el Browser a la skill `club-sourcing`. Original en `Admin/Archive/CLAUDE-md-hasta-2026-10-04.md`.
+- To-do 143 cerrado: lo que se lee al arrancar bajó de ~225 KB a ~45 KB.
+
 ## Versión 485 — ESTADO sin la descripción del sitio (to-do 143, paso 3) (2026-10-04)
 
 - `Admin/ESTADO.md` (50 → 11 KB): queda el estado (objetivo, pipeline, sitio, analytics, datos, "Si algo no cierra").

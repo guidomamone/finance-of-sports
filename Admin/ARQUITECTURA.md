@@ -182,8 +182,8 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   paralelos, PDFs/<país>/<club>/ + pdf-extracts/<país>/<club>/ (ese esquema
   nació en la Versión 17, reemplazando a su vez las carpetas sueltas
   racing-pdfs/ y river-pdfs/). Guido pidió el PDF y su transcripción uno al
-  lado del otro, no en dos carpetas separadas. Ver CLAUDE.md, sección
-  "Estructura de carpetas de documentos fuente". Regla desde la Versión 14
+  lado del otro, no en dos carpetas separadas. Ver `Admin/PIPELINE.md`, sección
+  "Documentos fuente". Regla desde la Versión 14
   sigue vigente: todo PDF nuevo se transcribe a un .md ACÁ MISMO (junto al
   PDF) ANTES de extraer datos, ver CLAUDE.md, sección "Cada PDF nuevo:
   transcribirlo a Markdown ANTES de usarlo". Para iterar sobre
