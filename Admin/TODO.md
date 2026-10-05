@@ -43,13 +43,6 @@ ni en el comentario de ningún archivo de código.
     `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
-    (i) "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido el 2026-10-05; pasos 1 a 3 hechos, Versiones 515, 517 y 518: texto
-        y bocadillo en la página, `tools/dentro-de-otro.mjs` con 70 filas marcadas en 16 años de 7 clubes, y `cargar.mjs --escribir` que
-        aplica la misma escalera al club entero). PREMISA VENCIDA: decía "8 años" y "No declarado"; los años con renglón sin desglosar son
-        ~95 lado-años (la mayoría cargados a mano, sin `sinDesglose`), y la página ya mostraba "—", no $0. Falta solo el paso 4: la pregunta
-        de la cola para años nuevos sin precedente, a diseñar con el primer caso real (un año que el pipeline carga con renglón sin desglosar
-        y el club sin 2 balances desglosados de ese lado).
-    (j) Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
     (k) Que las diferencias por grupo de países (`logica` de `tools/grupos-pais.mjs`, lo que muestra `node tools/estado.mjs --logica`)
         pasen a ser configuración que las tools lean, grupo por grupo.
     (l) Que el pipeline cubra presupuestos: hoy `localizar.mjs` no los elige y se cargan a mano (`Admin/ARQUITECTURA.md` ex §11,

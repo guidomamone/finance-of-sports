@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 526 — To-do 140(i) y 140(j) fuera de la lista (2026-10-05)
+
+- Decisión de Guido: se dan por hechos; el paso 4 del (i) (la cola para años sin precedente) y el perfil de clubes fuera de Sudamérica (j) van a aparecer solos con los casos.
+
 ## Versión 525 — To-do 140(h): en qué escalón salió cada dato (2026-10-05)
 
 - `cargar.mjs` guarda en el `.carga.json` la `procedencia` de las escaleras chicas (año, cierre, perímetro, moneda, tipo de cambio, liga: el texto de `alta-club.mjs` más lo que decide encima del perímetro) y `_fuenteCat` en cada línea. Solo registro: el ensayo de `prueba-completa` da idéntico.
