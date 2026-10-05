@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 484 — Mantener instalaciones va a Administración: Argentinos y San Lorenzo (to-do 101) (2026-10-04)
+
+- Criterio (Guido): el costo de mantener instalaciones (estadio, predios, ciudad deportiva, sedes) es `admin_general_expense`.
+- `data/argentinosjuniors-data.js`: "Estadio y predios" 2015 y "Sueldos y cargas sociales (Estadio y predios)" 2016-2018, de `match_organisation_expense` a `admin_general_expense` (la columna de la sección es mantenimiento, servicios, impuestos y personal; 2019 ya estaba así).
+- `data/sanlorenzo-data.js`: "Ciudad deportiva (gasto)" y "Subsedes" 2014, de `other_expenses` a `admin_general_expense`, como 2011.
+- Totales sin cambio; `auditAll()` sin "no cierra" de los dos. ASSET_V 402 → 403; generadores corridos.
+
 ## Versión 483 — Estudiantes: "Reconocimientos y premios" en sueldos del plantel todos los años (to-do 101) (2026-10-04)
 
 - `data/estudianteslp-data.js`: 2022, 2023 y 2024 pasan de `match_organisation_expense` a `wages_squad`, como 2025 (columna de los sueldos de los jugadores en el anexo de gastos; la memoria: "reconocimientos con el plantel profesional"). Totales sin cambio; `auditAll()` sin "no cierra" de Estudiantes. ASSET_V 401 → 402; generadores corridos.
