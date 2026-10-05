@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 524 — To-dos 140(f) y 140(g) cerrados: medidos, sin construir (2026-10-05)
+
+- (f) número citado en el texto: 84 de 88 años ya tienen chequeo cruzado; los 4 restantes no citan el total en prosa. (g) coherencia de categoría entre años: 16 de 18 avisos serían falsos; los errores no volvieron. Detalle en `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 523 — To-do 140(e) cerrado: medido y descartado (2026-10-05)
 
 - Filtro de identificadores (CNPJ, CPF, 10+ dígitos sin separador) en la validación gratis: 3 de 453 documentos en "revisar" pasan a "listo" y 4 de 467 "listo" empeoran a "no aplica". No entra; detalle en `Admin/HALLAZGOS-pipeline.md`.

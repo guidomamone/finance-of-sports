@@ -43,8 +43,6 @@ ni en el comentario de ningún archivo de código.
     `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
-    (f) Etapa 6: número citado en el texto del documento como segundo chequeo.
-    (g) Chequeo de coherencia entre años (prototipado, no construido).
     (h) Etapas 4 y 8: registrar en qué escalón salió cada dato.
     (i) "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido el 2026-10-05; pasos 1 a 3 hechos, Versiones 515, 517 y 518: texto
         y bocadillo en la página, `tools/dentro-de-otro.mjs` con 70 filas marcadas en 16 años de 7 clubes, y `cargar.mjs --escribir` que
