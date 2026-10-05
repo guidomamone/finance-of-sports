@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 504 — Fortaleza CEIF: caja 2019-2022 y deuda 2022-2023 con ajustes manuales (2026-10-05)
+
+- Auditoría 2026-10-04, caja y deuda: el dato está en el cuadro de instrumentos financieros o en la nota de efectivo, no en las páginas del balance que lee `caja-deuda.mjs`. Caja 2019 169.648 (total de la nota 8), 2020 151.365 (bancos + caja), 2021 20.036, 2022 241.766; deuda 2022 238.144 y 2023 110.000 (préstamos y sobregiros bancarios, criterio del club). Cada número leído en el documento; 6 ajustes `caja` / `deuda`, escritos por `caja-deuda.mjs --club fortalezaceif-co --escribir` (escalón 0, sin IA). Fortaleza queda con caja y deuda en 2017-2025. ASSET_V 413 → 414.
+
 ## Versión 503 — Novorizontino: deuda 2018 y 2020-2022 con ajuste manual `deuda` (2026-10-05)
 
 - Auditoría 2026-10-04, caja y deuda: con el criterio del club (préstamos + débitos con partes relacionadas, corrientes y no corrientes; confirmado con la columna 2019 del balance 2020 = 32.323, lo cargado): 2018 27,491 M; 2020 40,059 M; 2021 51,884 M (el documento 2022 imprime 51.883.784 para 2021); 2022 70,311934 M. Cada número leído en el balance y cargado con su ajuste; probado que `caja-deuda.mjs` lo reproduce con el año en null.

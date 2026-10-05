@@ -814,7 +814,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-17.468},
     ],
     // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 16
-    grossDebt:0.794, cash:null,
+    // tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Total Efectivo y Equivalente de Efectivo (nota 8; su columna 2018, 919.687, es lo cargado)
+    grossDebt:0.794, cash:169.648,
     officialTotalRevenue:3463.947, officialTotalExpenses:3450.175, officialPAT:-52.122,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -832,7 +833,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Total Impuesto a Cargo (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-588.049},
     ],
     // tools/caja-deuda.mjs (2026-10-02): cash escalón 1 (compuerta: documento siguiente): "Bancos" pág. 13 + "Caja" pág. 13
-    grossDebt:null, cash:19.742,
+    // tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros, criterio del club; su columna 2022 (238.144) coincide con el documento 2022
+    grossDebt:110, cash:19.742,
     officialTotalRevenue:5998.469, officialTotalExpenses:4342.281, officialPAT:1021.768,
   },
   // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -876,7 +878,8 @@ const fortalezaceifcoFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-54.012, tax:0,
     // ajuste manual (Admin/ajustes-manuales.jsonl, 2026-10-05): grossDebt = "Préstamos y sobregiros bancarios" del cuadro de instrumentos financieros (nota 5.A, .md L506); antes 102.513, solo el corto plazo
-    grossDebt:295.846, cash:null,
+    // tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5.A) = Bancos 14.963 + Caja 5.073
+    grossDebt:295.846, cash:20.036,
     officialTotalRevenue:3595.986, officialTotalExpenses:4189.291, officialPAT:-647.319,
   },
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (175.117). Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.
@@ -893,7 +896,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Los costos financieros están comprendidos al 31 de diciembre de:', value:-48.42},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:24.673},
     ],
-    grossDebt:null, cash:null,
+    // tools/caja-deuda.mjs (2026-10-05): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros (nota 5), criterio del club; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5); el documento 2023 lo abre en Bancos 239.614 + Caja 2.152
+    grossDebt:238.144, cash:241.766,
     officialTotalRevenue:4302.126, officialTotalExpenses:4453.496, officialPAT:-175.117,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.
@@ -908,7 +912,8 @@ const fortalezaceifcoFiscalYearMeta = {
       {label:'Total Costos Financieros', value:-12.112},
       {label:'Impuesto De Renta Y Complementario', value:8.182},
     ],
-    grossDebt:188.998, cash:null,
+    // tools/caja-deuda.mjs (2026-10-05): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-05): Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)
+    grossDebt:188.998, cash:151.365,
     officialTotalRevenue:2223.737, officialTotalExpenses:2922.233, officialPAT:-702.423,
   },
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = 41,780. Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.

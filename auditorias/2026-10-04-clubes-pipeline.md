@@ -6,11 +6,9 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 
 ## Hallazgos
 
-(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 6 (500), 8 (498), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
+(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 6 (500), 7 (495, 503 y 504), 8 (498), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
 Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verificar.mjs`.)
 
-7. **Caja y deuda con huecos.** Novorizontino `grossDebt` null en 2018 y 2020-2022 (deuda con partes relacionadas en el documento: 27,5;
-   39,98; 51,8; 70,3). Fortaleza: `cash` null 2019-2022; `grossDebt` null 2022 (238,1, L642) y 2023 (110,0). Va con "Caja y deuda" del HANDOFF.
 11. **Goiás 2008-2017: "(-) Dedução da receita" entera en `other_income`**, que queda negativo en 2008, 2009, 2010, 2012 y 2017. Desde
     2021 cada deducción va a su línea. Documentar o ajuste `fila`.
 12. **Fortaleza: "Auxilio de arbitraje / transporte / hotelero" cambian de categoría entre años** (`competition_bonus` / `other_income`;
@@ -31,12 +29,9 @@ Datos ya publicados con categorías dudosas, anotados en el HANDOFF y pasados ac
 Medido el 2026-10-04 con `caja-deuda.mjs --club <id>` (gratis, no escribe). Los casos a) a c) son nuevos de esta auditoría (amplían el
 hallazgo 7); d) es lo que estaba en el HANDOFF hasta la Versión 468.
 
-a) **Hay propuesta y la compuerta no tiene contra qué comparar** ("ningún año vecino para comparar"): Novorizontino deuda 2018 (27,51),
-   2020 (40,05) y 2022 (70,28); Fortaleza deuda 2023 (110). Coinciden con el documento. El año anterior está vacío y la columna "año
-   anterior" del documento siguiente no se lee (Novorizontino 2019 tiene la deuda cargada, 32,3, y su documento debería traer 2018).
-   Propuesta: investigar por qué (subagente, gratis) y diseñar un escalón con su compuerta. 4 datos de una vez.
-c) **Fortaleza caja 2019-2022 sin propuesta en ningún escalón.** El efectivo está en el cuadro de instrumentos financieros (2021: 20,036;
-   2020: 151,365, L504), que no es una página del balance: probablemente por eso queda afuera.
+a) a c) resueltos el 2026-10-05 (Versiones 495, 503 y 504): Novorizontino deuda 2018 y 2020-2022 y Fortaleza caja 2019-2022 y deuda 2021-2023,
+   leídos en el documento y cargados con ajustes `deuda` / `caja`. Lo que se probó en la herramienta y no entró está en `Admin/HALLAZGOS-pipeline.md`;
+   lo que entró, en la Versión 502 (un valor aceptado en la misma corrida ya no sirve de vecino).
 d) Antes (sin arreglo limpio medido; no insistir sin un caso nuevo). `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin
    dato; Juventus caja 17 de 23 y deuda 14 de 21. Juventus caja 2004 (51,104 contra 51,101966: el resumen en €000 contra el estado en
    euros) y 2005 (lee "Bank and post-office deposits" del cuadro de posición financiera neta, L1523); deuda 2018 (suma casual del
