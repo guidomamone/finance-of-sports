@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 479 — Dos decisiones de producto, de las notas de sourcing al TODO (2026-10-04)
+
+- To-do 144: TKO/Endeavor/Formula One Group (de la nota de Estados Unidos) y abrir béisbol con Diablos Rojos (de la nota de México), con la aclaración de que Diablos ya está sourceado. En las notas queda un puntero.
+
 ## Versión 478 — El TODO, sin el sourcing por país y sin leerse al arrancar (to-do 143, paso 2) (2026-10-04)
 
 - 24 puntos de sourcing (50, 59, 100, 113-129, 131, 133-135) del TODO a `fuentes/<País>/_notas-generales.md`, partidos por país sin reescribir (sección "Pendientes (venían del TODO)"); 22 notas de país nuevas. `Admin/TODO.md`: 55 → 32 KB.

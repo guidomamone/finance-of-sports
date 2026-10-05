@@ -223,6 +223,13 @@ ni en el comentario de ningún archivo de código.
     escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
     Toros) y básquet (Titanes) con balance propio de sociedad anónima. Decidir antes de transcribir.
 
+144. QUÉ ENTRA AL SITIO: DOS DECISIONES DE PRODUCTO QUE ESTABAN EN LAS NOTAS DE SOURCING (2026-10-04; relacionado: el 130,
+    clubes polideportivos y otros deportes).
+    (a) Estados Unidos (ex to-do 127 g): TKO/Endeavor/Formula One Group no son clubes: decisión de Guido si el sitio las quiere.
+    (b) México (ex to-do 50): **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos. Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL, Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta que Guido decida.
+        (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
+        `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
+
 132. SUDAMÉRICA: APLICAR LOS TEXTOS PROPUESTOS A LAS SKILLS (con el ok de Guido): ver
     `Admin/propuestas-skills-sudamerica.md`; borrarlo al aplicar.
 
