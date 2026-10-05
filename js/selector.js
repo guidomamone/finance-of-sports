@@ -604,49 +604,16 @@ window.CLUB_SELECTOR = (function(){
     return b;
   }
 
-  // El botón "?" de info: hover en desktop, click/tap en mobile (donde no existe
-  // hover). El bocadillo NO es descendiente del botón: `.paso` tiene
-  // `overflow:hidden` (para las esquinas redondeadas de la card), así que un
-  // bocadillo posicionado adentro se recorta apenas el botón queda cerca del borde
-  // de la card (le pasó a México, la última fila de Países). Un único bocadillo
-  // `position:fixed` colgado de `document.body`, reposicionado con
-  // `getBoundingClientRect()` en cada apertura, esquiva cualquier `overflow`
-  // ajeno en el camino.
-  var infoTipEl = null, infoAbierto = null; // infoAbierto: el botón pineado por click, o null
-  function infoTip(){
-    if(!infoTipEl){
-      infoTipEl = el('div', 'op-info-float');
-      document.body.appendChild(infoTipEl);
-    }
-    return infoTipEl;
-  }
-  function mostrarInfo(btn, texto){
-    var tip = infoTip();
-    tip.textContent = texto;
-    tip.style.display = 'block';
-    var r = btn.getBoundingClientRect();
-    var w = tip.offsetWidth || 230;
-    var left = Math.min(Math.max(8, r.right - w), window.innerWidth - w - 8);
-    tip.style.top = (r.bottom + 6) + 'px';
-    tip.style.left = left + 'px';
-  }
-  function ocultarInfo(){ if(infoTipEl) infoTipEl.style.display = 'none'; }
-  // Llamado desde `renderModal()`: si el paso se repinta (se eligió otra opción,
-  // se cambió de paso), el botón pineado ya no existe, así que el bocadillo
-  // flotante tiene que cerrarse con él en vez de quedar huérfano en pantalla.
-  function cerrarInfosAbiertas(){ infoAbierto = null; ocultarInfo(); }
+  // El botón "?" de info: hover en desktop, click/tap en mobile. El bocadillo vive en js/info-tip.js (Versión 515: compartido
+  // con las celdas "Dentro de otro rubro" de Finanzas y Ligas); ahí está el porqué de que no sea descendiente del botón.
+  // Llamado desde `renderModal()`: si el paso se repinta, el botón pineado ya no existe y el bocadillo se cierra con él.
+  function cerrarInfosAbiertas(){ window.INFO_TIP.cerrar(); }
 
   function infoBtn(texto){
     var info = el('button', 'op-info', '?');
     info.type = 'button';
     info.setAttribute('aria-label', t('sel.info.aria', 'Por qué'));
-    info.addEventListener('mouseenter', function(){ mostrarInfo(info, texto); });
-    info.addEventListener('mouseleave', function(){ if(infoAbierto !== info) ocultarInfo(); });
-    info.addEventListener('click', function(ev){
-      ev.stopPropagation();
-      if(infoAbierto === info){ infoAbierto = null; ocultarInfo(); }
-      else { infoAbierto = info; mostrarInfo(info, texto); }
-    });
+    window.INFO_TIP.enganchar(info, texto);
     return info;
   }
 
@@ -1652,7 +1619,7 @@ window.CLUB_SELECTOR = (function(){
       mezclaDe(id, y).forEach(function(r){ out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value; });
       // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
       ((window.simplifiedReportForClub(id, y) || {}).ingresos || []).forEach(function(r){
-        if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'puede estar incluido en') : t('sel.res.incl', 'está incluido en')) + ' ' + tLabel(r.incluidoEn));
+        if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'posiblemente está dentro de') : t('sel.res.incl', 'está dentro de')) + ' ' + tLabel(r.incluidoEn));
       });
     });
     if(b.agg === 'promedio'){
@@ -2511,10 +2478,7 @@ window.CLUB_SELECTOR = (function(){
         isOpen() ? close() : open(false);
       }
     });
-    // Cierra el tooltip "?" (op.info) si el click fue afuera de él. El propio botón
-    // ya corta la propagación en su handler, así que este listener solo ve clicks
-    // ajenos.
-    document.addEventListener('click', cerrarInfosAbiertas);
+    // (El click afuera del "?" que cierra el bocadillo lo escucha js/info-tip.js desde la Versión 515.)
 
     inited = true;
     renderButton();

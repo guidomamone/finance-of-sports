@@ -1329,7 +1329,7 @@ function checkHigiene(api) {
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
   // REGLA: todo archivo de `js/` que llame a `t()` va en esta lista.
-  for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'js/selector.js', 'index.html']) {
+  for (const rel of ['js/finanzas-render.js', 'js/finanzas-calc.js', 'js/selector.js', 'js/liga.js', 'index.html']) { // (Versión 515) + js/liga.js, que llamaba a t() y no estaba
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
     // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se

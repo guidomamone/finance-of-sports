@@ -27,6 +27,14 @@
 // las funciones de este archivo).
 // ============================================================================
 
+  // (Versión 515, to-do 140(i)) El bocadillo de una fila que el documento junta con otra (`incluidoEn`): nombra el rubro donde
+  // está. Textos de Guido. Lo usan la tabla de Finanzas (abajo) y el desglose de Ligas (js/liga.js, que carga después).
+  window.FINANZAS_DENTRO_TIP = function(rubro, posible){
+    return posible
+      ? t('finanzas.tipPosible1', 'Sospecho que está dentro de') + ' ' + tLabel(rubro) + ': ' + t('finanzas.tipPosible2', 'no es un cero, pero la fuente no lo aclara o es confusa.')
+      : t('finanzas.tipIncluido1', 'Está incluido en') + ' ' + tLabel(rubro) + ': ' + t('finanzas.tipIncluido2', 'la fuente lo reporta junto con ese rubro.');
+  };
+
   let trendChartInst = null, breakdownChartInst = null;
   let inicioIngresosChartInst = null, inicioGastosChartInst = null, inicioDeudaChartInst = null;
 
@@ -127,7 +135,9 @@
     // no un cero. Se pinta "—", el mismo carácter que ya usa la tabla para "no hay columna
     // anterior", y el % también, porque un porcentaje de un dato que no existe no significa nada.
     // Versión 509: `incluidoEn` (bucketize) = el documento junta esta fila con otra; se dice dónde está en vez de mostrar $0.
-    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido">${row.incluidoPosible ? t('finanzas.posibleIncluidoEn', 'Posiblemente incluido en') : t('finanzas.incluidoEn', 'Incluido en')} ${tLabel(row.incluidoEn)}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
+    // (Versión 515, to-do 140(i), textos de Guido) la celda dice solo "Dentro de otro rubro" / "Posiblemente dentro de otro rubro"
+    // (el nombre del rubro la hacía ocupar seis renglones) y el rubro va en el bocadillo (js/info-tip.js: hover o tap).
+    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
     const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
     // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
     // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo

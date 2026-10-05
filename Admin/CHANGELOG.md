@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 515 — To-do 140(i), paso 1: "Dentro de otro rubro" con bocadillo (2026-10-05)
+
+- Finanzas y Ligas: la fila con `incluidoEn` dice "Dentro de otro rubro" / "Posiblemente dentro de otro rubro" (textos de Guido) y el rubro va en un bocadillo (hover o tap): "Sospecho que está dentro de X: no es un cero, pero la fuente no lo aclara o es confusa." Comparar: "está dentro de" / "posiblemente está dentro de". Inglés: "Within another line" / "Possibly within another line".
+- `js/info-tip.js` nuevo: el bocadillo del "?" del selector, sacado de `js/selector.js` y compartido (delegación con `data-info-tip`). El "?" del selector, probado: abre, no selecciona el país, cierra afuera.
+- `tools/audit.js`: `js/liga.js` entra en el chequeo de i18n (llamaba a `t()` y no estaba); aparecen 13 claves del simulador de Ligas sin traducir (P3, se traducen aparte).
+- Verificado en el preview: América Mineiro 2023 (Finanzas, ES/EN, desktop y mobile con tap) y Série B 2025 (Ligas). ASSET_V 421 → 422, audit 0 P0/P1.
+
 ## Versión 514 — To-do 139 diagnosticado (2026-10-05)
 
 - El defecto D (`compararVecino` sin ajustes `fila`) explica 1 solo de los 7 "NO" de año vecino de todas las verificaciones (Juventus 2005); los otros son reexpresiones reales (Juventus 2006 IFRS, 2010 TV centralizada) y UC 2009 (sin estado extraído). Sin daño: nada cargado distinto, cola vacía.

@@ -1028,7 +1028,10 @@ window.LIGA_VIEW = (function(){
       (f.incluidos || []).forEach(function(m){
         var fila = el('div', 'liga-desglose-fila liga-desglose-incluido');
         fila.appendChild(el('span', 'liga-desglose-cat', tLabel(m[0])));
-        fila.appendChild(el('span', 'liga-desglose-val', (m[2] ? t('finanzas.posibleIncluidoEn', 'Posiblemente incluido en') : t('finanzas.incluidoEn', 'Incluido en')) + ' ' + tLabel(m[1])));
+        // (Versión 515) texto corto; el rubro, en el bocadillo (js/info-tip.js)
+        var val = el('span', 'liga-desglose-val pl-incluido', m[2] ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro'));
+        val.setAttribute('data-info-tip', window.FINANZAS_DENTRO_TIP(m[1], !!m[2])); val.setAttribute('tabindex', '0');
+        fila.appendChild(val);
         bloque.appendChild(fila);
       });
       caja.appendChild(bloque);

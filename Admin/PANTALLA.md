@@ -339,6 +339,16 @@ de al lado.
 
 Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 
+- UN SOLO BOCADILLO DE EXPLICACIÓN: `js/info-tip.js` (Versión 515). Hover en desktop, tap en mobile, un único `div.op-info-float`
+  `position:fixed` colgado de `body` (esquiva el `overflow:hidden` de cards y del modal). Para algo pintado con innerHTML alcanza con
+  `data-info-tip="texto"` (delegación); para un botón que no debe propagar el click, `INFO_TIP.enganchar(el, texto)` (el "?" del
+  selector). No crear otro bocadillo propio en otro archivo: así terminó duplicado el del selector.
+- "DENTRO DE OTRO RUBRO" (Versión 515, textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
+  dentro de otro rubro" (en la celda no entra el nombre del rubro: ocupaba seis renglones) y el rubro va en el bocadillo:
+  "Está incluido en X: la fuente lo reporta junto con ese rubro." / "Sospecho que está dentro de X: no es un cero, pero la fuente no lo
+  aclara o es confusa." (`window.FINANZAS_DENTRO_TIP`, en js/finanzas-render.js; lo usa también js/liga.js). En Comparar, que es prosa,
+  el rubro va nombrado ("está dentro de X").
+
 - QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
   buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada

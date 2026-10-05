@@ -516,6 +516,8 @@
      `position:fixed` colgado de `document.body` y reposicionado en JS con
      `getBoundingClientRect()` esquiva ese recorte. Oculto por default: JS lo
      muestra con `display:block` al hacer hover o click sobre un `.op-info`. */
+  /* (Versión 515) "Dentro de otro rubro" en Finanzas y Ligas: el rubro va en el mismo bocadillo (data-info-tip). */
+  .pl-incluido{cursor:help;border-bottom:1px dotted currentColor;}
   .op-info-float{display:none;position:fixed;width:230px;max-width:min(230px,70vw);
                  background:var(--text);color:#fff;font-size:12px;font-weight:400;line-height:1.45;
                  text-align:left;white-space:normal;padding:10px 12px;border-radius:8px;

@@ -299,9 +299,10 @@ líneas verificadas están en `tools/audit-ignore.json`.
 Cuando el documento junta dos conceptos en UNA línea sin separarlos (Bahia: "Sócios e bilheteria"; Vitória: premios de copa + socio-hincha;
 América Mineiro: "atividades sociais", que puede incluir cuotas), la línea va entera a la categoría principal y NO se reparte. En el
 `fiscalYearMeta` del año se agrega `incluidoEn: { <categoría que queda en 0>: '<categoría donde está> }'`, por ejemplo
-`{ member_dues: 'matchday_competition' }`. La vista simplificada de Finanzas pinta entonces "Incluido en <fila>" en vez de $0, sin tocar
+`{ member_dues: 'matchday_competition' }`. La vista simplificada de Finanzas pinta entonces "Dentro de otro rubro" (con el nombre de la fila
+en el bocadillo; textos de Guido, Versión 515) en vez de $0, sin tocar
 el valor (sigue siendo el número 0, así que los totales no cambian). Una auditoría no lo reabre como "socios en 0".
 Si no está confirmado que el concepto esté en esa línea (América Mineiro: "atividades sociais"), la forma es
-`{ member_dues: { en: 'other_income', posible: true } }` y el sitio dice "Posiblemente incluido en". La decisión se guarda también como
+`{ member_dues: { en: 'other_income', posible: true } }` y el sitio dice "Posiblemente dentro de otro rubro". La decisión se guarda también como
 ajuste manual `incluye` (`tools/ajustes.mjs`), para que una recarga con `cargar.mjs` la conserve.
 
