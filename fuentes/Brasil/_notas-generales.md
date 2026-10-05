@@ -200,3 +200,8 @@ Corinthians, Palmeiras, Santos, São Paulo, Ponte Preta, Guarani, RB Bragantino,
 Portuguesa, Primavera, São Bento, Velo Clube, AD Guarulhos, Ferroviária y Grêmio Novorizontino —
 o sea, profundidad histórica para varios clubes que hoy están cargados con 2-8 ejercicios. Es
 ejecutar el mismo procedimiento, no hay nada que investigar.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 129, 2026-10-03) SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no se escribió ningún mail). Athletic Club SAF 2022 (primer ejercicio completo); Amazonas 2019-2021 y 2025 (también LAI a SEJEL-AM); Pinheiros Vol.1 2018-2025 (reintentar desde la red de Guido: `ecp.org.br/institucional/o-clube/governanca/documentos_gerais_<año>/`); Paulistano 2023+ (API `cms.paulistano.org.br` o browser); Vasco SAF 2024-25 (`media.vasco.com.br` bloqueado por Cloudflare).
+- (ex to-do 131) SUDAMÉRICA: LO QUE QUEDÓ EN DISCO SIN TRANSCRIBIR. Santos 2017-2023, Guarani 2017-19, Operário 2020-23, Juventude 2017/19/20/21/24, Náutico 2017-18, Paulistano 2013 y 2019, Praia 2019 y 2021 (escaneos: Mistral/Gemini + verificación).

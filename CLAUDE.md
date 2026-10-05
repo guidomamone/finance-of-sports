@@ -26,7 +26,7 @@ El repo de GitHub es `guidomamone/finance-of-sports` y el dominio
 `financeofsports.com`; el nombre viejo (`numeros-de-boca`) sigue
 redirigiendo.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 1122 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 169 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
+**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 1144 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 169 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
 
 **DÓNDE PONER UN DOCUMENTO NUEVO (Versión 196).** Si es interno —cualquier cosa escrita para Guido o para una sesión futura: estado, reglas, notas, planes— va adentro de `Admin/`, y no hay que tocar `netlify.toml` ni el `.gitignore`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`) y te dice que lo muevas. Hasta la Versión 195 la exclusión era una lista de nombres a mano y ya se había escapado tres veces — la última, `COMO-CORRE-EL-PROYECTO.html`, estuvo servido en producción porque el chequeo solo miraba `.md`. **La extensión no dice nada sobre si un documento es interno.** `CLAUDE.md` es la única excepción que se queda en la raíz, porque Claude Code lo carga por convención desde ahí.
 
@@ -34,8 +34,9 @@ redirigiendo.
 
 ## Al empezar a trabajar acá
 
-Leé primero `Admin/ESTADO.md` (qué hay armado hoy) y `Admin/TODO.md` (qué falta hacer, en
-orden de prioridad). Leelos vos solo, sin que Guido tenga que pedirlo o resumirlo. El detalle de
+Leé primero `Admin/ESTADO.md` (qué hay armado hoy), vos solo, sin que Guido tenga que pedirlo o resumirlo.
+`Admin/TODO.md` (qué falta hacer) NO se lee al arrancar: se abre cuando la tarea es elegir qué sigue, cuando Guido lo pide, o
+para agregar o borrar un punto. El detalle de
 qué hay cargado de cada club vive aparte, en `Admin/ESTADO-clubes.md` (Versión 239, generado por
 `node tools/generate-club-index.js`) — se partió de `Admin/ESTADO.md` cuando ese archivo se acercó
 al umbral de 60 KB que usa `tools/audit.js`.

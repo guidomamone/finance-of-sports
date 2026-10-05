@@ -7,3 +7,7 @@
 - **Fiscalización de la FAF**: la Direction du Contrôle de Gestion (DCG, el equivalente argelino de la DNCG) exige a cada club de Ligue 1 el bilan certificado por auditor, cuenta de resultados, flujo de efectivo (TFT) y cambios en patrimonio (TVCP) — pero es una presentación a la federación (julio de 2025: MCA, USMA y CRB fueron los primeros revisados), no una publicación.
 - Dead-end parcial: sin canal público confirmado. No se creó archivo por club.
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 121) ÁFRICA, FALTA LA ESCALERA COMPLETA en: Argelia (comptes sociaux en el CNRC: verificar si un tercero puede consultarlos y a qué costo). Lección del barrido: el hallazgo de ASEC vino de un barrido CDX de dominio completo filtrando PDF, no de la búsqueda web; replicarlo en los sitios oficiales de los clubes grandes de cada país antes de dar el país por vacío.

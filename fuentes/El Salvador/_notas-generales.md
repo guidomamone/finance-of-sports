@@ -65,3 +65,7 @@ escalón con valor es la licencia de clubes de la FESFUT (¿exige estados audita
 Costa Rica?), todavía no investigada.
 
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 122, 2026-10-03) EL SALVADOR: CERTIFICACIÓN DE BALANCE PARTICULAR DEL CNR (gestión de Guido, sourcing Centroamérica, 2026-10-03). El Registro de Comercio del CNR (cnr.gob.sv) recibe el balance anual auditado de toda sociedad mercantil y entrega copia fiel por US$ 6 + US$ 0,25 por hoja (solicitud con denominación y año + recibo de pago; ver `fuentes/El Salvador/_notas-generales.md`). Los agentes no pueden pagar ni identificarse. ANTES de pagar: confirmar que el club sea una SOCIEDAD (Alianza y Águila parecen asociaciones con junta directiva, en cuyo caso el CNR no tiene nada que certificar; FAS pertenecería a SSports Inc., entidad foránea) y su denominación exacta. Sitio oficial y Wayback de los 3 ya agotados (ver notas). Siguiente escalón: licencia de clubes de la FESFUT.

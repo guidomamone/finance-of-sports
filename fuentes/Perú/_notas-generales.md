@@ -7,3 +7,7 @@
 - **Universitario sí publica material financiero oficial como IMAGEN** (comunicados de auditoría BDO 2021 y 2023 en `universitario.pe/media/uploads/<año>/<mes>/<día>/*.jpg`): un `find` de PDFs no lo detecta; hay que leer las noticias institucionales/comunicados. Patrón replicable en otros clubes: buscar en la sección de noticias "comunicado" + "auditoría".
 - **Canales de pago / no probados**: SUNARP (registro de personas jurídicas, de pago) y SUNAT (clave fiscal) → gestión de Guido. SMV/BVL: búsqueda web de Sporting Cristal sin rastro; no es emisor.
 - Alianza Lima: pruebas de nombre de archivo 2018 y 2025 en `/static/media/uploads/transparencia/` = 404; el CDX solo archivó 2019/2020/2022/2023.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 129, 2026-10-03) SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no se escribió ningún mail). [...] Universitario dictámenes BDO 2021-2023, [...] (todos se reparten a socios); SUNARP/SUNAT (de pago) para Sporting Cristal, UCV y Los Chankas.

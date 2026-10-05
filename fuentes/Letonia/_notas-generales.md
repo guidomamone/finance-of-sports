@@ -47,3 +47,9 @@
 
 - No se transcribió ni cargó nada. No se buscó Wayback para 2015-2019 de RFS/Riga FC (objetivo de 5 cumplido).
 - No se revisaron Jelgava/Tukums/Metta con búsqueda web por nombre de documento.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (f) Letonia Lursoft (~11 EUR por informe: Liepāja, Jelgava, Tukums, Valmiera).
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: Valmiera 2020.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Valmiera, Liepāja.

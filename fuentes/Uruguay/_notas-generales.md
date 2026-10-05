@@ -46,3 +46,7 @@ insistir de nuevo con estos mismos métodos en una sesión futura:**
 - No encontrado: prospecto de fideicomiso (BCU/BVM) ni emisión de deuda de los clubes. La licencia CONMEBOL/AUF exige EEFF auditados
   a los clubes pero los entrega al ente, no al público.
 
+## Pendientes (venían del TODO)
+
+- (ex to-do 129, 2026-10-03) SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no se escribió ningún mail). Peñarol 2019-2025 (login de socios `crm2.montevideo.com.uy/areasocio`, o pedido de acceso a información pública a la AIN).
+- (ex to-do 131) SUDAMÉRICA: LO QUE QUEDÓ EN DISCO SIN TRANSCRIBIR. Peñarol 2018 (escaneo).

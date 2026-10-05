@@ -28,3 +28,8 @@
 
 - Candidato a mail (no escrito): Qarabağ, pidiendo estados auditados (si los hay) además del informe de sostenibilidad.
 - Gestión de Guido: bajar a mano el informe AFFA 2014.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (g) [...] Azerbaiyán AFFA 2014.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Qarabağ.

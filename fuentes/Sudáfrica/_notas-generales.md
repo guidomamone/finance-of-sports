@@ -108,3 +108,7 @@ club.
 - **PSL (la liga) sí publica un agregado**: el Annual Report 2024/25 informa ingresos de la liga de R1.190 M y excedente de R2,25 M (SABC Sport, 2026), con reparto de más de R700 M a 32 clubes en subsidios y premios. Es la liga, no el club; la prensa lo cita pero no se encontró el PDF en esta pasada. Lead para una pasada futura (la liga no desglosa los EEFF de cada club).
 - **Otros deportes (pasada superficial)**: SA Rugby y Cricket South Africa son federaciones (NPC) con informes anuales públicos, pero no son clubes; las uniones/franquicias de Currie Cup (Sharks, Bulls, Lions, WP) son (Pty) Ltd — mismo cierre por Sección 33. Una búsqueda web no devolvió ningún informe anual de unión. No se intentó la escalera completa.
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 120, 2026-10-03) SUDÁFRICA, PAIA (decisión de Guido): el manual PAIA de Orlando Pirates (leído 2026-10-03) confirma que los AFS existen y se piden por solicitud formal al Information Officer (Darryl Joselowsky, darrylj@orlandopiratesfc.co.za), pero la ley (art. 50) pide justificar un derecho propio y el club puede negarse. Probabilidad baja. Candidato a una solicitud de prueba, mismo mecanismo en Chiefs y Sundowns. Antes de mandar nada, `club-outreach`. Ver `fuentes/Sudáfrica/Orlando Pirates.md`.

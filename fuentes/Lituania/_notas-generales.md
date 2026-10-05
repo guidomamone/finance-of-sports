@@ -44,3 +44,8 @@ que recuperó 2019-2024 de Žalgiris Vilnius y FY2022/2023 de Panevėžys.
 
 - **Gestión de Guido**: Registrų centras (consulta gratuita de VšĮ/asociaciones) para completar Panevėžys (FY2021, FY2024), Kauno Žalgiris (2019-2024), Sūduva (2024-2025 y resultados 2019-2020), Transinvest, Riteriai, Džiugas.
 - Candidatos a mail (no escritos): FK Panevėžys (paquete FY2021 y FY2024), Kauno Žalgiris (2019-2024).
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (d) Lituania `registrucentras.lt` (Cloudflare Turnstile) y `data.gov.lt` desde IP europea.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: FK Panevėžys, Kauno Žalgiris.

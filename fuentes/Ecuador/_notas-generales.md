@@ -75,3 +75,8 @@ empresa que confirmara 1790463265001).
 - **Truncado de capturas**: PDFs de Wayback que salen exactamente 1.048.576 bytes están cortados (rotos). Hay que probar otras capturas del mismo URL (`cdx ... &fl=original,timestamp,length`): para Emelec 2023 la de 2025-08-03 salió completa y la de 2024-10-12 no.
 - Dominios sin nada financiero en CDX: Deportivo Cuenca, Independiente del Valle (solo "Memoria de sostenibilidad" en Drive, sin acceso público), Aucas (`aucas.ec/download/<id>/` da 500 hoy y 0 captura utilizable), Delfín, Macara (artículo sobre gestión financiera, sin balance), Mushuc Runa (imágenes "Financ1/2" 2022 sin abrir), Orense (revista "Mundo Orense 2022"), LDU. Técnico Universitario y El Nacional: 0 URLs archivadas.
 - Pendiente de bajo costo: abrir las imágenes `mushucrunasc.ec/wp-content/uploads/2022/05/Financ1-e1653427532471.png` y `Financ2-...png` (Wayback `20230510231246/44`) para ver si son una presentación financiera.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 129, 2026-10-03) SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no se escribió ningún mail). Barcelona SC 2019-2024, Emelec 2019-2022 y 2024, [...] Deportivo Cuenca 2021-2025 (todos se reparten a socios); Drive de la Memoria IDV 2023.
+- (ex to-do 131) SUDAMÉRICA: LO QUE QUEDÓ EN DISCO SIN TRANSCRIBIR. Emelec 2023 y Barcelona 2018 (escaneos).

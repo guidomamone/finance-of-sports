@@ -29,3 +29,7 @@ Honduras, ALUTECH, Financiera Solidaria y Compañía Financiera. **Ningún club 
 Cierra la vía bursátil para Honduras (confirmado, la pendiente de la nota anterior); reabrir solo ante
 un anuncio de emisión. Sigue sin explorar: licenciamiento de la FENAFUTH.
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 124, 2026-10-03) PANAMÁ: CONSEGUIR EL REGLAMENTO DE LICENCIAMIENTO MASCULINO DE LA FPF (2026-10-03). [...] leer si tiene cláusula de confidencialidad como el art. 12 de Costa Rica. Misma pregunta para la FENAFUTH (Honduras) y la FEDEFUT de Guatemala.

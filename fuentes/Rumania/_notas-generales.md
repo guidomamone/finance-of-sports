@@ -49,3 +49,8 @@ leer la carátula: las asociaciones y las S.A. consolidadas se presentan distint
 ## Clubes sin resolver
 Farul, UTA Arad, Argeș, Unirea Slobozia: dominio oficial vigente no hallado/accesible por curl. Siguiente paso:
 abrir con el Browser pane. Ver cada archivo de club.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: [...] Tampoco están probados: Rumanía Farul/UTA/Argeș/Slobozia en el Browser pane.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Universitatea Cluj (2020-2022 publicados como imagen).

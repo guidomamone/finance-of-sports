@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 478 — El TODO, sin el sourcing por país y sin leerse al arrancar (to-do 143, paso 2) (2026-10-04)
+
+- 24 puntos de sourcing (50, 59, 100, 113-129, 131, 133-135) del TODO a `fuentes/<País>/_notas-generales.md`, partidos por país sin reescribir (sección "Pendientes (venían del TODO)"); 22 notas de país nuevas. `Admin/TODO.md`: 55 → 32 KB.
+- La lista "sacados el 2026-09-14" a `Admin/Archive/todo-sacados-2026-09-14.md`; en "Cómo leer esta lista", que los pendientes de sourcing de un país viven en su nota.
+- `CLAUDE.md` y skill de arranque: `Admin/TODO.md` ya no se lee al arrancar (pedido de Guido); se abre para elegir qué sigue, cuando Guido lo pide o para agregar/borrar un punto.
+- Párrafo de `netlify.toml` en `CLAUDE.md` y `Admin/ESTADO.md`: 1144 notas de `fuentes/`.
+
 ## Versión 477 — CONVENCIONES partido en proceso, datos y pantalla (to-do 143, paso 1) (2026-10-04)
 
 - `Admin/CONVENCIONES.md` (58 → 13 KB): quedan las 5 reglas de proceso y un índice de 1 línea por regla mudada.

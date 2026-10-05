@@ -4,3 +4,8 @@
 - **Vardar** (`fkvardar.mk`) y **Struga**: sitio responde, sin sección financiera visible; no se profundizó. Candidatos a próxima pasada o a mail.
 - Idioma OCR: `mkd`. Cirílico macedonio con capa de texto correcta en los PDFs de Shkëndija.
 - Propuesta `paises/Macedonia del Norte.md`: la licencia de la FFM obliga al club a publicar en su sitio; Shkëndija lo cumple (transparencia anual). El registro central (CRM) es el canal alternativo a confirmar.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (h) [...] Macedonia CRM desde otra IP.
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: [...] Tampoco están probados: Vardar y Struga (Macedonia).

@@ -186,3 +186,7 @@ dueño a un fondo con obligaciones de reporting, como pasó con RC Strasbourg/Bl
   ejercicios porque el agregado trae 20+ temporadas (2002/03-2022/23 sin 2015/16, + 2024/25) con el
   bilan y la cuenta de resultados de cada club de L1 y L2. No hay carpeta por club en `Clubes/Francia/`
   (solo Olympique Lyonnais y el agregado): la cobertura es vía `Clubes/Francia/_DNCG-Agregado-Liga/`.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 113, 2026-10-03) SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree `sourcing-espana-francia`; detalle por club en `fuentes/España/<Club>.md`). (b) Francia: el agregado DNCG ya da 20+ temporadas para los 18 clubes de L1/L2, pero falta 2023/24 (no está en `www.sta.lfp.fr/reports-dncg`, que ahora tiene `www.` — el host sin `www` ya no resuelve) y 2015/16 (solo rapport). (c) Clubes nuevos (resto de LaLiga/LaLiga 2/RFEF y de Ligue 1/Ligue 2) no arrancados.

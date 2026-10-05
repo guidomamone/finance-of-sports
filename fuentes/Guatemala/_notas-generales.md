@@ -28,3 +28,7 @@ públicos, podría estar obligada a responder; si tiene estados financieros de c
 (no se sabe si el reglamento de licencias de Guatemala los pide) es un pedido, no sourcing: gestión
 de Guido, bajo valor esperado sin una señal de que exista el documento.
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 124, 2026-10-03) PANAMÁ: CONSEGUIR EL REGLAMENTO DE LICENCIAMIENTO MASCULINO DE LA FPF (2026-10-03). [...] leer si tiene cláusula de confidencialidad como el art. 12 de Costa Rica. Misma pregunta para la FENAFUTH (Honduras) y la FEDEFUT de Guatemala.

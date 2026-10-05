@@ -103,3 +103,8 @@ Si en una sesión futura se confirma el artículo exacto del Pravilnik de la HNS
 publicación pública (o se descubre que NO es obligación y es voluntario), actualizar el párrafo
 correspondiente. Si Archive.org ya no está caído, completar los pendientes de Dinamo Zagreb 2023
 y Slaven Belupo 2019-2023 antes de intentar cualquier otro ángulo nuevo.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: Varaždin 2019.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Vukovar 2020-2024.

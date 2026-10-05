@@ -18,3 +18,9 @@ Ver `fuentes/_indice/Serbia.md`. Sin nada: Crvena zvezda, Novi Pazar, Radnik Sur
 
 ## Propuesta de texto para `paises/Serbia.md`
 SuperLiga: canal 1 = sitio del club (licencia FSS/UEFA, mediateca WordPress por `wp-json`); canal 2 = APR Registar finansijskih izveštaja (gratis 3 años, pago el resto; inaccesible desde EE.UU., probar con IP serbia). Cirílico: verificar `pdffonts`; los PDFs de Vojvodina/Čukarički traen texto correcto. OCR: `-l srp` (cirílico) o `srp_latn`.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (b) **IP serbia o VPN** para `apr.gov.rs` (Crvena zvezda, Novi Pazar, Radnik y los años faltantes de Partizan/Vojvodina/Čukarički; gratis solo 3 años).
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: Partizan 2019-2021, Napredak 2018.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Vojvodina, Čukarički, Mladost Lučani, Napredak, Partizan 2019-2022, Novi Pazar y Radnik Surdulica (todo).

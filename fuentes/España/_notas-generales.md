@@ -132,3 +132,7 @@ y común a un deporte distinto del fútbol.** Lo probado:
 - **Camino no agotado** (no se hizo por costo/valor): barrido Wayback por dominio de cada club ACB cuando
   archive.org esté estable, y Registro Mercantil (gestión de Guido, de pago) para Valencia Basket,
   Baskonia, Unicaja y Joventut, que son los 4 con SAD y mayor presupuesto.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 113, 2026-10-03) SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree `sourcing-espana-francia`; detalle por club en `fuentes/España/<Club>.md`). (a) Llegar a 5 ejercicios: faltan 1 en Elche, Rayo y Villarreal; 2 en Oviedo y Espanyol; Levante y Osasuna tienen 3 con cuentas (Mallorca y Sevilla ya llegaron a 5+ tras re-barrer con archive.org de vuelta). (c) Clubes nuevos (resto de LaLiga/LaLiga 2/RFEF y de Ligue 1/Ligue 2) no arrancados. (d) Real Sociedad sigue en 0 (cuentas gateadas a accionistas / Registro Mercantil de pago): gestión de Guido. (e) Proponer, con texto exacto y OK de Guido antes de tocar ningún skill, un `paises/España.md` con la técnica del prefijo del CMS de LaLiga en Wayback (ver `fuentes/España/_notas-generales.md`, sesión 2026-10-03).

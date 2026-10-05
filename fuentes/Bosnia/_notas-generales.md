@@ -12,3 +12,7 @@ Ver `fuentes/_indice/Bosnia.md`.
 
 ## Propuesta de texto para `paises/Bosnia.md`
 Premijer Liga BiH: canal = sitio del club, sección financiera obligatoria por licencia NSBiH (informe de mayo de cada año). Si el sitio viejo desapareció, Wayback CDX del dominio `media.<club>.ba` / `/wp-content/uploads/`. El revisor es a menudo Recons (Sarajevo) o Aditon (Banja Luka).
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Sarajevo.

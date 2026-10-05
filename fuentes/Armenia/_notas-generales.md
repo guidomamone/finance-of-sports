@@ -35,3 +35,8 @@ anteriores (2013-2024) están en `ffa.am` (el sitio es una SPA; no se listaron).
 
 - Mail candidato (no escrito): Noah (años 2022-2023), Urartu (2021-2025), Alashkert, Ararat-Armenia (nunca publicaron), Ararat FC (2022-2024).
 - Gestión de Guido: abrir `ffa.am/en/licensing` en navegador y bajar las ediciones previas del benchmarking.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (g) Armenia `ffa.am/en/licensing` [...]
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Noah, Urartu, Ararat FC.

@@ -1,0 +1,5 @@
+# Trinidad y Tobago — notas generales
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 125, 2026-10-03) REGIÓN CENTROAMÉRICA/CARIBE SIN BARRER (2026-10-03): Trinidad y Tobago (la búsqueda secundaria dice que el Companies Registry exige cuenta con PIN y que las privadas no presentan cuentas auditadas: verificar en la ley). La WebSearch devuelve casi solo Wikipedia: para un barrido serio de estos países usar Firecrawl (`/map` y `/scrape`) y Exa (las keys sí existen en `Admin/*/.env`, archivos ocultos).

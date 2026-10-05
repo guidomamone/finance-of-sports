@@ -23,7 +23,7 @@ permanentes. Esto es el procedimiento.
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
 | 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** | 13 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 72 KB |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto | 54 KB |
 | 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club | 25 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` | 38 KB |
 | 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS | 50 KB |

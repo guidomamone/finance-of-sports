@@ -14,3 +14,7 @@
 - **Metodología propuesta (texto para `paises/Peru-Paraguay-Bolivia-Venezuela.md`)**: "Paraguay: asociaciones civiles; licencia APF/CONMEBOL
   exige EEFF auditados pero reservados. Barrido CDX del dominio completo y wp-json de los 9 clubes (2026-10-03): sin PDFs. Único canal: pedido
   directo (Luqueño ofrece los EEFF por WhatsApp/mail)."
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 129, 2026-10-03) SUDAMÉRICA, 2026-10-03: GESTIONES QUE LE TOCAN A GUIDO (candidatos a mail o acción de persona, no se escribió ningún mail). Sportivo Luqueño EEFF auditados (los ofrece por WhatsApp 595981001921).

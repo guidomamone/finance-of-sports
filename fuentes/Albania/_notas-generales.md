@@ -4,3 +4,8 @@
 - **Clubes**: KF Tirana publica un balance escaneado 2018 (ver `Tirana.md`). Partizani (`kfpartizani.al`), Vllaznia (`kfvllaznia.al`) no responden desde acá; Dinamo Tirana (`dinamo.al`) responde sin sección financiera. Sin hallazgos.
 - Idioma OCR: `sqi`.
 - Propuesta `paises/Albania.md`: canal por probar = QKB (con NIPT); mientras tanto, solo KF Tirana tiene un documento propio. Gestión de Guido si hace falta cuenta e-Albania.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (h) [...] Albania QKB [...] desde otra IP.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Tirana 2022.

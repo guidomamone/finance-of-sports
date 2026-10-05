@@ -110,3 +110,7 @@ en `opendatabot.ua`/`youcontrol.com.ua`, 2) revisar el sitio oficial por "Фін
 "Документи" en el menú, 3) solo si es ПАТ/ПрАТ, chequear también SMIDA.
 
 - Último chequeo: 2026-09-18.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: Oleksandriya 2018, Kolos Kovalivka 2019-2020. Tampoco están probados: Rukh Lviv y Kudrivka años previos, Dynamo Kyiv 2021-2024 (la página `fcdynamo.com/pages/40` reemplaza el año anterior), Zorya y Kryvbas (dominios `fczorya.com`, sin capturas de PDF).

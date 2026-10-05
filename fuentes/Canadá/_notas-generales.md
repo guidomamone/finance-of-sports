@@ -31,3 +31,7 @@ Primer barrido de Canadá, 2026-10-03 (sesión de sourcing Norteamérica). País
 3. SEDAR+ para cualquier emisor canadiense relacionado (no se intentó).
 
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 126, 2026-10-03) SOURCING CANADÁ, LO QUE QUEDÓ (sesión Norteamérica, 2026-10-03; ver `fuentes/Canadá/_notas-generales.md`). Los clubes comunitarios de la CFL publican informe anual con auditor (Winnipeg 5 ejercicios, Saskatchewan 4, Edmonton 6 con resumen). Falta: (a) Roughriders FY2022 y anteriores (los posts de AGM de `riderville.com` de 2022/2023, abrirlos con un browser real); (b) Edmonton: bajar 2019 y confirmar si los PDFs de 2020-21 y 2023 traen estados (posible OCR, `tesseract -l eng`); (c) Blue Bombers: informes 2020 y anteriores (`bluebombers.com/news/2016-annual-report/`, dan 403 a `WebFetch`); (d) probar los otros seis clubes de la CFL y los de la CPL (sitio oficial y `static.cfl.ca/wp-content/uploads/sites/<n>/`); (e) SEDAR+ nunca se intentó; (f) Toronto Blue Jays: leer el MD&A/40-F de Rogers, el cierre es provisorio.

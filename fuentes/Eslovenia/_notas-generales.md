@@ -23,3 +23,8 @@ Los informes anuales de la NZS (nzs.si) NO son de los clubes.
 ## Texto propuesto para `paises/Eslovenia.md`
 Canal: sitio del club (Olimpija, Domžale, Koper, Bravo publican); AJPES JOLP con captcha de código de acceso (gestión de Guido; buscador
 `rezultati.asp` scripteable). Cuidar capturas Wayback truncadas. Ver `fuentes/Eslovenia/_notas-generales.md`.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (c) captcha [...] de AJPES JOLP (Eslovenia: Maribor, Celje, Mura, Radomlje, Primorje).
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Celje/Mura/Radomlje/Primorje (estados revisados para la licencia NZS).

@@ -30,3 +30,7 @@
 
 - Astana y Kairat: sin canal público; candidatos a mail (no escrito).
 - Kaspiy FK: ¿por qué solo 2021-2022 en el DFO?
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Astana y Kairat (no están en el DFO).

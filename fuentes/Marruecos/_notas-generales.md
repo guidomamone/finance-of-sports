@@ -118,3 +118,7 @@ la **ficha pública con la lista de documentos disponibles y su precio**, antes 
   y mirar si la ficha tiene esa sección. No se buscaron los otros clubes de la Botola (FAR, RS Berkane, FUS, MAS, etc.):
   probablemente siguen como asociación (sin registro mercantil).
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 118) OMPIC/directinfo.ma — RAJA CLUB ATHLETIC S.A. (Marruecos): GESTIÓN DE GUIDO. La ficha gratuita lista "Etats de synthèse 2025" por 75 MAD (unos 8 USD), RC 467977, depositado. Requiere cuenta OMPIC + pago, un agente no puede. Un solo ejercicio (la S.A. no tiene depositados años anteriores), así que no alcanza por sí solo para 5. Wydad NO vale la pena: su S.A. (RC 398831) no tiene ningún bilan depositado. Ver `fuentes/Marruecos/_notas-generales.md`.

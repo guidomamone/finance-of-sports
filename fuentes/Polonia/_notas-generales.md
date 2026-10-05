@@ -111,3 +111,9 @@ solo para razón social/KRS. 4) Los años viejos se recuperan con Wayback CDX de
 siempre el período de la carátula (los clubes sobreescriben el mismo slot cada año). 5) Verificar si el
 ejercicio es calendario o julio-junio, y si hubo un período de transición (Raków, Widzew, Wisła Kraków).
 6) Otros deportes: este canal no aplica.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (a) **IP polaca/UE** para el repositorio RDF/KRS (`rdf-przegladarka.ms.gov.pl`, bloquea EE.UU.): completa huecos de Polonia (Górnik 2024, Śląsk 2021/2023, Cracovia 2021, Zagłębie 2020, Motor 2024, Arka 2022/23+) y otros deportes.
+- (ex to-do 134) **Reintentar capturas de Wayback truncadas a 1.048.576 bytes** cuando aparezca otra captura: Śląsk 2023, Widzew 2018, Arka 2022/23.
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Górnik, Śląsk, Cracovia, Zagłębie, Motor, Arka.

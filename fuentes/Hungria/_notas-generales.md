@@ -45,3 +45,8 @@ links de la página con un script (hay muchas más PDFs de SFP/határozat que ru
 Canal: sitios de los clubes (`/tao`, `/eves-beszamolok`, `/beszamolok`); e-beszamolo.im.gov.hu con captcha ALTCHA
 (gestión de Guido); agregadores pagos (759 Ft). PDFs escaneados -> OCR `hun`. Cuidar homonimia
 asociación/Zrt. Ver `fuentes/Hungria/_notas-generales.md`.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 133, 2026-10-03) **Gestiones de Guido que desbloquean varios países de Europa del Este** (sesión 2026-10-03; ninguna es tarea de sourcing, cada una exige IP, cuenta, captcha o pago de una persona): (c) captcha de `e-beszamolo.im.gov.hu` (Hungría: Fehérvár y huecos de Paks 2020, MTK 2019).
+- (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Fehérvár (`titkarsag@vidi.hu`, estados 2020-2025).

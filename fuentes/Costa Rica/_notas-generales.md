@@ -50,3 +50,7 @@ SUGEVAL/BNV (búsqueda web, sin revisar el padrón). Herediano sin cambios.
 Si una sesión futura consigue destrabar alguno de los tres ángulos de arriba (pedido de información
 pública, contacto con socio, contacto con el medio), actualizar esta nota y el archivo del club
 correspondiente en vez de dejarla diciendo "bloqueado" cuando ya no lo esté.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 123, 2026-10-03) COSTA RICA: MAIL A SAPRISSA Y ALAJUELENSE (candidatos a mail, 0.3, 2026-10-03). Documento confirmado por prensa y no público: Saprissa EEFF consolidados 2023-2024 auditados por Grant Thornton (accionistas, asamblea de julio); Alajuelense Informe de Tesorería a socios 2023 y 2025. Proceso de envío en `club-outreach`; no se redactó nada. Guido dijo que NO por ahora (2026-10-03): queda como candidato, no mandar sin que lo pida.

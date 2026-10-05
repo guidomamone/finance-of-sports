@@ -17,3 +17,8 @@ encontró nada equivalente en otro club ivoriano.
   resultados — familia 4 hecha una vez, falta el resto de la escalera. No se consideran agotados.
 - **Pendiente**: ejercicio 2011 y 2025 de ASEC (ver archivo del club).
 - Último chequeo: 2026-10-03.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 117, 2026-10-03) ASEC MIMOSAS (Costa de Marfil): 15 PDFs en disco, SIN TRANSCRIBIR NI CARGAR (sourcing de África, 2026-10-03). Carpeta `Clubes/Costa de Marfil/ASEC Mimosas/`, detalle y tabla de ejercicios en `fuentes/Costa de Marfil/ASEC Mimosas.md`. Son 2009-2010 y 2012-2024, en FCFA, un compte d'exploitation + bilan por año (2009 es escaneo, el resto tiene texto). Es la primera fuente africana cargable y la de más años de todo el continente. Falta: (a) ejercicio 2011 (aviso en `asec.ci/fr/2011/02/16/`, el PDF no apareció en el CDX) y 2025 (AG del 23/08/2026; el sitio vivo da 500 en `/document/compte-exploitation`, reintentar o esperar captura de Wayback); (b) decidir antes de onboardear si se carga la asociación sola o el grupo consolidado (el club publica los dos resultados); (c) pasarlos por la escalera de transcripción y por `club-data-mapping` — es una ASOCIACIÓN con recetas de transferencias y subvenciones de la FIF/sponsors, categorías propias.
+- (ex to-do 121) ÁFRICA, FALTA LA ESCALERA COMPLETA en: [...] y otros clubes de Costa de Marfil (Africa Sports, Stade d'Abidjan, SOA). Lección del barrido: el hallazgo de ASEC vino de un barrido CDX de dominio completo filtrando PDF, no de la búsqueda web; replicarlo en los sitios oficiales de los clubes grandes de cada país antes de dar el país por vacío.

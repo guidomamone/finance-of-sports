@@ -25,3 +25,8 @@ Nada transversal bajable: el nivel pro de NZ (rugby, fútbol, cricket) se public
 
 - Fiji / Papúa Nueva Guinea: no sourceado en profundidad. Fiji Rugby Union presenta FS en su AGM (prensa: pérdida F$1.3M 2022, ganancia consolidada F$929k 2025, Fiji Rakavi Ltd = brazo comercial) pero no se halló PDF público (fijirugby.com). Probable dead-end; candidato a mail.
 - NZ Football (nzfootball.co.nz): CDX solo trae informes anuales 2009-2012; no se profundizó (federación, no club). Wellington Phoenix se absorbió en el "Professional Club Group" (Phoenix + Auckland FC) como miembro de NZF.
+
+## Pendientes (venían del TODO)
+
+- (ex to-do 114, 2026-10-03) OCEANÍA — HUECOS DEL PRIMER BARRIDO (2026-10-03, ver `fuentes/Australia/` y `fuentes/Nueva Zelanda/`). Gestión de Guido: (d) candidatos a mail: franquicias NZ, Phoenix, Auckland FC.
+- (ex to-do 116) OCEANÍA — VERIFICACIONES PENDIENTES ANTES DE CARGAR: NZ Cricket (estados resumidos con ISA 810).
