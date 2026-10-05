@@ -263,7 +263,7 @@ Mitigaciones:
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;
-- ii) el documento no declara y la moneda no está en el archivo de series (hoy hay 20; falta PEN, cuyas fuentes oficiales bloquean la descarga automática).
+- ii) el documento no declara y la moneda no está en el archivo de series (hoy hay 21).
 
 Mitigaciones:
 - i) si están en una tabla con una fecha por columna, gana la fecha más nueva; si no (frase, años sueltos, activo y pasivo), a la cola;
@@ -392,7 +392,7 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).
    mercado). El promedio entre apertura y cierre es solo para presupuestos.
 6. Si el documento no declara tipo de cambio: la cotización de cierre del **archivo de series oficiales** (`tools/fx-reference/`, bajado de
    cada banco central). Nunca una cotización dada por Claude. Si la moneda no está en el archivo, se agrega al script que baja las series,
-   desde su fuente oficial (hoy hay 20 monedas; CLP toma el primer día con dato posterior al cierre, como lo declaran los clubes).
+   desde su fuente oficial (hoy hay 21 monedas; CLP toma el primer día con dato posterior al cierre, como lo declaran los clubes).
 7. Perímetro: cuando un documento trae los dos estados (individual y consolidado), se carga el **individual**, salvo que una controlada
    concentre ingresos del club (por ejemplo, el marketing): eso se mira en el `.md` antes de fijar el ajuste `perimetro` del club. Se fija
    antes del primer lote. Casos: Boca, Racing, Panathinaikos, Juventus.

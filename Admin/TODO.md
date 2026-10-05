@@ -21,7 +21,11 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-112. PENDIENTES DEL ALTA DE CLUBES NUEVOS POR SCRIPT (`tools/alta-club.mjs`), decisiones de Guido y datos que faltan:
+112. PENDIENTES DEL ALTA DE CLUBES NUEVOS POR SCRIPT (`tools/alta-club.mjs`), datos que faltan:
+    - Rangos de tipo de cambio de JPY, CNY y MXN más angostos que sus series (ahora cargadas en `tools/fx-reference/`): en `MONEDAS` de
+      `alta-club.mjs`, JPY [80, 180] (la serie bajó a 75,7 en 2011), CNY [6, 8] (8,28 en 2002) y MXN [10, 25] (8,9 en 2001 y 25,1 en 2020); en
+      `FX_PLAUSIBLE_RANGE` de `data/currency-map.js`, MXN [15, 25] y JPY [100, 180]. Un tipo declarado fuera del rango se descarta.
+    - Polonia y Suecia no están en `PAISES` de `alta-club.mjs`: con la serie de PLN y SEK ya bajada, el alta de un club de esos países igual frena.
 
 138. VER LOS TEMAS DE AUDITORÍA PENDIENTES. Hallazgos de las auditorías de datos que todavía no se arreglaron ni se
     descartaron; cada archivo trae el caso, la evidencia y el arreglo propuesto. Hoy: `auditorias/2026-10-04-clubes-pipeline.md`

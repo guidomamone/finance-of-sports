@@ -63,6 +63,7 @@ const CURRENCIES = {
   JPY: { file: 'jpy-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
   CNY: { file: 'cny-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
   MXN: { file: 'mxn-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  PEN: { file: 'pen-usd.json', fuente: 'Tipo de cambio del BCRP, publicado por el Banco de Pagos Internacionales' },
 };
 
 function logMiss(reason, currency, date) {

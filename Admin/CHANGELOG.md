@@ -15,11 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión ?? — Seis series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY y MXN (to-do 112) (2026-10-04)
+## Versión ?? — Siete series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY, MXN y PEN (to-do 112) (2026-10-04)
 
-- `tools/fetch-fx-reference.mjs`: SEK (Riksbank), PLN (NBP, tabla A), HRK (HNB, tipo medio, hasta 2022-12-31), y JPY, CNY y MXN (Reserva Federal H.10 vía FRED). Series nuevas en `tools/fx-reference/`; son 20 monedas en total. PEN no está: el BCRP, la SBS y la SUNAT bloquean la descarga automática.
+- `tools/fetch-fx-reference.mjs`: SEK (Riksbank), PLN (NBP, tabla A), HRK (HNB, tipo medio, hasta 2022-12-31), y JPY, CNY y MXN (Reserva Federal H.10 vía FRED). PEN, del Banco de Pagos Internacionales (BIS), que la recibe del BCRP: el BCRP, la SBS y la SUNAT bloquean la descarga automática. Series nuevas en `tools/fx-reference/`; son 21 monedas en total.
 - `tools/lookup-fx-close.js` y `tools/alta-club.mjs` (`SERIES_FX`) las leen.
-- Verificadas contra el cruce del BCE (diferencias entre 0% y 1,2%, por la hora de fijación) y contra los tipos que declaran los documentos: HRK exacto en Dinamo Zagreb 2020 y 2021; MXN −0,02% en Atlas 2019 y −0,06% en América 2024; CNY −0,21% en Guangzhou 2019.
+- Verificadas contra el cruce del BCE (diferencias entre 0% y 1,2%, por la hora de fijación) y contra los tipos que declaran los documentos: HRK exacto en Dinamo Zagreb 2020 y 2021; MXN −0,02% en Atlas 2019 y −0,06% en América 2024; CNY −0,21% en Guangzhou 2019; PEN exacto en los cierres 2023 y 2024 de Alianza Lima (tipo contable SBS) y +0,09% en 2022.
 - `data/currency-map.js`, `FX_PLAUSIBLE_RANGE`: COP [2500, 5000] → [1600, 5500] y BRL [3, 7] → [1,4; 7,5], según las series. Novorizontino 2010 (BRL 1,6662) quedaba afuera del rango viejo. **Al mergear: subir ASSET_V.**
 - TODO 112: salen los perímetros resueltos como consolidado y las preguntas de `--dudas` (se ven al trabajar cada club), la corrida de Claude de los 91 documentos y las series.
 

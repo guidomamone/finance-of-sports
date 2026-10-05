@@ -41,9 +41,8 @@
 //   - HRK: Hrvatska narodna banka, tipo medio (la kuna termina en
 //     2022: desde 2023 Croacia reporta en EUR).                        [to-do 112]
 //   - JPY, CNY, MXN: Reserva Federal H.10 vía FRED, como CHF y KRW.   [to-do 112]
-//   - PEN: NO está. El BCRP, la SBS y la SUNAT bloquean la descarga
-//     automática (protección anti-bots); no se saltea. Los cierres
-//     peruanos van a mano a FX_CLOSE con su fuente, como hasta ahora.
+//   - PEN: Banco de Pagos Internacionales (BIS), que la recibe del BCRP.
+//     El BCRP, la SBS y la SUNAT bloquean la descarga automática.      [to-do 112]
 // Todas son endpoints públicos sin API key, pensados para descarga. Ninguna es
 // una tasa cruzada vía EUR: todas cotizan directo contra el USD (EUR y GBP se
 // publican como USD por unidad y acá se invierten; es una inversión exacta, no
@@ -67,7 +66,7 @@
 // referencia desde `data/` ni desde ningún `<script src>` del sitio.
 //
 // USO:
-//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 20)
+//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 21)
 //   node tools/fetch-fx-reference.mjs --currency ARS   solo una
 //   node tools/fetch-fx-reference.mjs --currency COP --from 2015-01-01
 //   node tools/fetch-fx-reference.mjs --currency TRY --full   TRY desde cero
@@ -312,6 +311,24 @@ async function fetchCZK(from, to) {
 // --- CHF y KRW: Reserva Federal H.10 (ver comentario en CURRENCIES) ----------
 const fetchCHF = (from, to) => fetchFredH10('DEXSZUS', from, to);
 const fetchKRW = (from, to) => fetchFredH10('DEXKOUS', from, to);
+// --- PEN: Banco de Pagos Internacionales (BIS), dataset WS_XRU ---------------
+// Serie diaria del tipo de cambio contra el USD que el BIS recibe de cada banco
+// central (para Perú, del BCRP). CSV de la API SDMX pública, sin key.
+async function fetchBIS(pais, moneda, from, to) {
+  const resp = await fetchRetry(`https://stats.bis.org/api/v1/data/WS_XRU/D.${pais}.${moneda}.A?startPeriod=${from}&endPeriod=${to}&format=csv`);
+  if (!resp.ok) throw new Error(`BIS HTTP ${resp.status} para ${moneda}`);
+  const lines = (await resp.text()).trim().split('\n');
+  const head = lines[0].split(',');
+  const iD = head.indexOf('TIME_PERIOD'), iV = head.indexOf('OBS_VALUE');
+  const series = {};
+  for (const line of lines.slice(1)) {
+    const f = line.split(',');
+    if (f[iV]) series[f[iD]] = parseFloat(f[iV]);
+  }
+  return series;
+}
+const fetchPEN = (from, to) => fetchBIS('PE', 'PEN', from, to);
+
 const fetchJPY = (from, to) => fetchFredH10('DEXJPUS', from, to);
 const fetchCNY = (from, to) => fetchFredH10('DEXCHUS', from, to);
 const fetchMXN = (from, to) => fetchFredH10('DEXMXUS', from, to);
@@ -791,6 +808,22 @@ const CURRENCIES = {
     source: 'Federal Reserve Board H.10 (serie DEXCHUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
   MXN: { file: 'mxn-usd.json', label: 'MXN por 1 USD (Reserva Federal H.10, noon buying rate Nueva York)', fetch: fetchMXN, defaultFrom: '2000-01-01',
     source: 'Federal Reserve Board H.10 (serie DEXMXUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
+
+  // PEN — Banco de Pagos Internacionales (BIS), dataset WS_XRU, serie
+  // D.PE.PEN.A: el tipo diario sol/dólar que el BIS publica tal como se lo
+  // manda el Banco Central de Reserva del Perú. POR QUÉ NO EL BCRP DIRECTO: su
+  // API (estadisticas.bcrp.gob.pe), la SBS y la SUNAT responden con una
+  // pantalla anti-bots a cualquier descarga automática, y eso no se saltea. El
+  // BIS es el banco de los bancos centrales y no bloquea. Directo contra el USD.
+  // Dirección: PEN por 1 USD (~3,5 en 2000, ~3,7 en 2023-25). Días sin dato:
+  // fines de semana y feriados peruanos (el 31/12 suele faltar; el lookup cae
+  // al hábil anterior).
+  // VERIFICADO contra los 3 cierres de Alianza Lima ya cargados a mano en
+  // FX_CLOSE: 2023 (29/12) 3,709 y 2024 (30/12) 3,764 = tipo contable SBS,
+  // EXACTOS; 2022 (30/12) 3,814 contra 3,8105 cargado como promedio de compra y
+  // venta interbancario del BCRP (+0,09%).
+  PEN: { file: 'pen-usd.json', label: 'PEN por 1 USD (BCRP, publicado por el Banco de Pagos Internacionales)', fetch: fetchPEN, defaultFrom: '2000-01-01',
+    source: 'BIS, stats.bis.org/api/v1/data/WS_XRU/D.PE.PEN.A (dato del BCRP)' },
 };
 
 function parseArgs() {

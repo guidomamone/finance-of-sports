@@ -153,7 +153,7 @@
 //                  esa fecha (`fxRef`), si no la serie local de
 //                  `tools/fx-reference/` (la de `tools/lookup-fx-close.js`: ARS, BRL,
 //                  COP, NOK, CZK, CHF, TRY, RUB, UAH, KRW, CLP, EUR, DKK, GBP, SEK, PLN, HRK, JPY,
-//                  CNY, MXN), si no `pendiente` ("correr fetch-fx-reference.mjs").
+//                  CNY, MXN, PEN), si no `pendiente` ("correr fetch-fx-reference.mjs").
 // reportType       'official_balance_sheet' si el documento nombra un estado contable
 //                  Y trae filas con números (10+ filas de tabla o líneas con 2+ montos:
 //                  un dictamen de auditor nombra los estados sin traerlos); `pregunta`
@@ -684,13 +684,14 @@ function fechaDeColumna(md, item) {
 
 // Series locales de tools/fx-reference/ (las mismas que lee tools/lookup-fx-close.js).
 const SERIES_FX = { ARS: 'ars-usd.json', BRL: 'brl-usd.json', COP: 'cop-usd.json', NOK: 'nok-usd.json', CZK: 'czk-usd.json', CHF: 'chf-usd.json', TRY: 'try-usd.json', RUB: 'rub-usd.json', UAH: 'uah-usd.json', KRW: 'krw-usd.json', CLP: 'clp-usd.json', EUR: 'eur-usd.json', DKK: 'dkk-usd.json', GBP: 'gbp-usd.json',
-  SEK: 'sek-usd.json', PLN: 'pln-usd.json', HRK: 'hrk-usd.json', JPY: 'jpy-usd.json', CNY: 'cny-usd.json', MXN: 'mxn-usd.json' };
+  SEK: 'sek-usd.json', PLN: 'pln-usd.json', HRK: 'hrk-usd.json', JPY: 'jpy-usd.json', CNY: 'cny-usd.json', MXN: 'mxn-usd.json', PEN: 'pen-usd.json' };
 const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda) del Banco Central do Brasil', COP: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)',
   NOK: 'Tipo medio de referencia de Norges Bank', CZK: 'Fixing del Česká národní banka', CHF: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
   TRY: 'Döviz alış del TCMB', RUB: 'Tipo oficial del Banco de Rusia', UAH: 'Tipo oficial del Banco Nacional de Ucrania', KRW: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CLP: 'Dólar observado (Banco Central de Chile, publicado por el SII)',
   EUR: 'Tipo de referencia del Banco Central Europeo', DKK: 'Tipo oficial de Danmarks Nationalbank', GBP: 'Tipo spot del Bank of England',
   SEK: 'Tipo medio del Sveriges Riksbank', PLN: 'Tipo medio del Narodowy Bank Polski (tabla A)', HRK: 'Tipo medio de la Hrvatska narodna banka',
-  JPY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CNY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', MXN: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' };
+  JPY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CNY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', MXN: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
+  PEN: 'Tipo de cambio del BCRP, publicado por el Banco de Pagos Internacionales' };
 // Monedas cuya cotización de un cierre es la del PRIMER día con dato POSTERIOR (la serie publica el valor de un día al día siguiente). Mismo
 // criterio que `diaCierre: 'siguiente'` en tools/lookup-fx-close.js (Versión 339; verificado para CLP contra los cierres declarados de UC y
 // Palestino). Si se agrega otra moneda con esa convención, va en los dos lugares.
