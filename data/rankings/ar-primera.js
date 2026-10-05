@@ -74,7 +74,7 @@ window.RANKINGS["ar-primera"] = {
     clubs: [
       { id:"river", revenue:217.861, reportType:"unofficial_mirror",
         sourceId:"river-estados-contables-2023-24",
-        mix:[["Cuotas Sociales",52.561],["Estadio",14.062],["Educación",4.347],["Otras secciones deportivas",1.598],["Fútbol profesional (sin desglosar por la fuente)",145.292]] },
+        mix:[["Cuotas Sociales",52.561],["Comercial / Sponsors",40.984],["Estadio",68.933],["Televisión",12.64],["Venta de Jugadores",36.798],["Educación",4.347],["Otras secciones deportivas",1.598]] },
       { id:"racing", revenue:73.012, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2023-24",
         mix:[["Cuotas Sociales",12.776],["Comercial / Sponsors",4.693],["Estadio",6.426],["Televisión",3.409],["Venta de Jugadores",30.457],["Educación",0.986],["Otros ingresos",14.265]] },
@@ -149,7 +149,7 @@ window.RANKINGS["ar-primera"] = {
     clubs: [
       { id:"river", revenue:92.942, reportType:"official_balance_sheet",
         sourceId:"river-estados-contables-2020-2021",
-        mix:[["Cuotas Sociales",17.682],["Estadio",0.847],["Educación",3.32],["Otras secciones deportivas",0.803],["Fútbol profesional (sin desglosar por la fuente)",70.29]] },
+        mix:[["Cuotas Sociales",17.682],["Comercial / Sponsors",15.095],["Estadio",0.871],["Televisión",23.379],["Venta de Jugadores",31.793],["Educación",3.32],["Otras secciones deportivas",0.803]] },
       { id:"racing", revenue:34.92, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2021",
         mix:[["Cuotas Sociales",4.656],["Comercial / Sponsors",2.943],["Estadio",6.066],["Televisión",3.082],["Venta de Jugadores",8.96],["Educación",0.533],["Otros ingresos",8.68]] },

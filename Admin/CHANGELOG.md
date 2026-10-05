@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 480 — River 2021 y 2024 con "Fútbol Profesional" abierto; TODO más corto (2026-10-04)
+
+- `data/river-data.js`: "Fútbol Profesional" (Anexo VII) en sus 4 renglones con categoría propia, 2021 y 2024 (ex to-do 102): venta de jugadores → `player_sales`, TV → `broadcasting`, publicidad → `sponsorship_commercial`, "Ingresos torneos nacionales e internacionales" → `matchday_competition` (es taquilla: $2,3 M en 2021, sin público). Totales sin cambio; `auditAll()` sin "no cierra" de River. ASSET_V 400 → 401; generadores corridos (el ranking de `ar-primera` muestra el desglose).
+- `Admin/TODO.md`: borrados 95, 97 y 99 (resueltos o superados), 34 (sin acciones) y 102 (hecho); 23(d) con la propuesta de deflactar por el IPC de EE.UU. y el pedido de comparar el club contra sí mismo; 144(a) descartado por Guido (anotado en la nota de Estados Unidos) y 144(b) fusionado en el 130; 143 al día.
+
 ## Versión 479 — Dos decisiones de producto, de las notas de sourcing al TODO (2026-10-04)
 
 - To-do 144: TKO/Endeavor/Formula One Group (de la nota de Estados Unidos) y abrir béisbol con Diablos Rojos (de la nota de México), con la aclaración de que Diablos ya está sourceado. En las notas queda un puntero.

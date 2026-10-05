@@ -166,4 +166,4 @@ IFRS 5 sobre el nuevo dueño antes de dar el club por perdido.
   - ✅ **León y Pachuca (México)**: resuelto por el to-do 75 (Firecrawl) — Pachuca sin nada financiero, blindado por el Art. 12 de LIGA MX; León confirmado bloqueo de IP/hosting (no WAF).
   - ❌ **Pumas y Tigres (México), descartado (decisión de Guido, 2026-09-29): "elijo no hacerlo, me da igual".** Las 2 solicitudes de transparencia (UNAM/UANL) estaban redactadas pero nadie las va a presentar. No retomar salvo que Guido cambie de opinión.
   - **León se está vendiendo, sin cerrar todavía** (último chequeo 2026-09-28): plazo hasta 2027, ~130 propuestas recibidas. Candidato a vigilar: si el comprador es un vehículo que cotiza en bolsa (ej. Apollo Global Management, NYSE `APO`), se abre la ventana Ollamani. Puro monitoreo, rechequear cuando cierre la operación — nada que hacer hoy.
-  - `DIABLOS` en la BMV (abrir béisbol): pasó al TODO, to-do 144.
+  - `DIABLOS` en la BMV (abrir béisbol): pasó al TODO, to-do 130.

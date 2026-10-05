@@ -68,16 +68,16 @@ const riverRevenueLinesByYear = {
   // mismo criterio que Boca/Racing) vía CNV, `Clubes/Argentina/River/
   // estados-contables-2020-2021.pdf`, transcripto HOY con Mistral OCR (documento ESCANEADO —
   // cifras verificadas a mano contra el PDF, no solo que el tie-out cierre, ver SKILL.md sección
-  // 6 punto 6). "Fútbol Profesional" queda como `lump_football_operations` A PROPÓSITO, aunque el
-  // Anexo VII de este mismo ejercicio SÍ separa sus 4 sub-ítems en categorías reales distintas —
-  // es el MISMO criterio que ya usa 2024 de este club, no corregido (ver to-do 102, decisión
-  // pendiente de Guido). Suma exacta a $9.065.549.461 (moneda nativa, "Total recursos ordinarios"
+  // 6 punto 6). "Fútbol Profesional" del Anexo VII se carga abierto en sus 4 renglones, cada uno con su
+  // categoría (decisión de Guido, 2026-10-04, igual que 2024): "Ingresos torneos nacionales e internacionales" es
+  // taquilla, no premios (`matchday_competition`): en este año sin público dio $2,3 M contra $1.290,9 M del año
+  // anterior, y el renglón Estadio no tiene entradas. Suma exacta a $9.065.549.461 (moneda nativa, "Total recursos ordinarios"
   // impreso).
   2021: [
-    { rawLabel:'Fútbol Profesional', normalizedCategory:'lump_football_operations', amountNative:6856.111878, disclosureLevel:'detailed', items:[
-      ['Venta, préstamos de jugadores, derechos de formación y otros', 3101.042241], ['Televisión', 2280.386274],
-      ['Publicidad', 1472.349199], ['Ingresos torneos nacionales e internacionales', 2.334164],
-    ]},
+    { rawLabel:'Venta, préstamos de jugadores, derechos de formación y otros', normalizedCategory:'player_sales', amountNative:3101.042241, disclosureLevel:'detailed' },
+    { rawLabel:'Televisión', normalizedCategory:'broadcasting', amountNative:2280.386274, disclosureLevel:'detailed' },
+    { rawLabel:'Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:1472.349199, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos torneos nacionales e internacionales', normalizedCategory:'matchday_competition', amountNative:2.334164, disclosureLevel:'detailed' },
     { rawLabel:'Estadio', normalizedCategory:'matchday_competition', amountNative:82.626908, disclosureLevel:'detailed', items:[
       ['Concesiones', 57.925856], ['Ingresos Museo', 22.139078], ['Alquileres', 0], ['Estacionamiento', 2.561974],
     ]},
@@ -92,12 +92,13 @@ const riverRevenueLinesByYear = {
     ]},
   ],
   // ARS millones nativos (Versión 32 — antes USD ya convertido). Fuente: Anexo VII, pág. 58,
-  // columna 31/08/2024. Suma exacta a $207.077.217.738.
+  // columna 31/08/2024. Suma exacta a $207.077.217.738. "Fútbol Profesional" abierto en sus 4 renglones (decisión de Guido,
+  // 2026-10-04): "Ingresos torneos" es taquilla (`matchday_competition`), ver la nota de 2021.
   2024: [
-    { rawLabel:'Fútbol Profesional', normalizedCategory:'lump_football_operations', amountNative:138100.487166, disclosureLevel:'detailed', items:[
-      ['Venta, préstamos de jugadores, derechos de formación y otros', 34976.634475], ['Televisión', 12013.955106],
-      ['Publicidad', 38954.967989], ['Ingresos torneos nacionales e internacionales', 52154.929596],
-    ]},
+    { rawLabel:'Venta, préstamos de jugadores, derechos de formación y otros', normalizedCategory:'player_sales', amountNative:34976.634475, disclosureLevel:'detailed' },
+    { rawLabel:'Televisión', normalizedCategory:'broadcasting', amountNative:12013.955106, disclosureLevel:'detailed' },
+    { rawLabel:'Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:38954.967989, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos torneos nacionales e internacionales', normalizedCategory:'matchday_competition', amountNative:52154.929596, disclosureLevel:'detailed' },
     { rawLabel:'Estadio', normalizedCategory:'matchday_competition', amountNative:13365.876231, disclosureLevel:'detailed', items:[
       ['Concesiones', 2710.815855], ['Ingresos Museo', 4624.600585], ['Alquileres', 5758.259768], ['Estacionamiento', 272.200023],
     ]},

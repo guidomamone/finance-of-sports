@@ -91,9 +91,9 @@ ni en el comentario de ningún archivo de código.
 
 143. PARTIR LOS DOCUMENTOS QUE SE LEEN EN CADA SESIÓN (estudio del 2026-10-04, pedido de Guido: "cosas que no hacen
     falta que sean en cada sesión, no tienen que leerse"). Hoy se leen ≈225 KB (≈65.000 tokens) antes de empezar; con 4
-    particiones bajan a ≈85-90 KB: CONVENCIONES ya está partido (proceso / `CONVENCIONES-DATOS.md` / `PANTALLA.md`); faltan TODO sin el sourcing por país ni el detalle
-    de 98/105 (≈40 KB), ESTADO sin la descripción de la pantalla (≈35 KB), CLAUDE.md a ≈10 KB (≈20 KB, y se paga también
-    en cada subagente). Las 2 últimas esperan a que cierre la mudanza de PIPELINE/ARQUITECTURA; sacar los gotchas del
+    particiones bajan a ≈85-90 KB. Hecho: CONVENCIONES partido (proceso / `CONVENCIONES-DATOS.md` / `PANTALLA.md`) y el TODO
+    sin el sourcing por país y sin leerse al arrancar. Falta: ESTADO sin la descripción de la pantalla (≈35 KB), CLAUDE.md a ≈10 KB (≈20 KB, y se paga también
+    en cada subagente). La mudanza de PIPELINE/ARQUITECTURA ya cerró, así que se pueden encarar; sacar los gotchas del
     navegador de CLAUDE.md y tocar los skills necesita el ok de Guido. Detalle y riesgos: `auditorias/2026-10-04-partir-archivos.md`.
 
 101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
@@ -122,47 +122,20 @@ ni en el comentario de ningún archivo de código.
     sí está bien, es la tool la que los confunde. Si se repite este patrón, evaluar si `normalize()`
     necesita distinguir texto entre paréntesis en vez de descartarlo.
 
-102. RIVER (Ejercicio 2024, YA PUBLICADO): "Fútbol Profesional" está entero en
-    `lump_football_operations`, con sus 4 sub-ítems reales (Venta de jugadores, Televisión,
-    Publicidad, Torneos) enterrados solo como `items` — encontrado 2026-09-28 onboardeando el
-    Ejercicio 2021 del mismo club (misma estructura de documento, Anexo VII), NO corregido a
-    pedido de Guido ("si es un error en producción, abrí un to-do para que se revise/evalúe/
-    corrija en el futuro, no lo toques ahora"). Es el mismo patrón que SKILL.md sección 1 ya
-    describe con el ejemplo de Racing (Versión 32): esos 4 conceptos tienen categoría REAL
-    distinta entre sí (`player_sales`/`broadcasting`/`sponsorship_commercial`/`competition_bonus`),
-    no son un bolsón sin desglosar — así que `sumCat()`/`computeYearGeneric()` hoy muestran
-    Televisión/Publicidad/Venta de jugadores en $0 en Formato Simplificado para River, que es el
-    club más visitado del sitio. Los montos exactos (ya verificados, listos para copiar si se
-    decide corregir) están en el comentario de `riverRevenueLinesByYear[2024]`,
-    `data/river-data.js` — los mismos 4 valores que hoy viven como `items` de la línea "Fútbol
-    Profesional". El Ejercicio 2021 (cargado en esta misma sesión) usa el MISMO criterio que 2024
-    (lump, no promovido) a propósito, para no quedar inconsistente entre años mientras esto no se
-    decide — si se corrige 2024, corregir 2021 en el mismo movimiento.
-
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
         ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
         por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
         moneda y año. Decisión de Guido si se abre.
+        PROPUESTA (2026-10-04, Guido la retoma más adelante: es un punto grande): convertir a USD con el tipo de cambio de cada
+        cierre ya absorbe la inflación local; lo que queda es la inflación del dólar (~35% entre 2015 y 2025). Una sola serie
+        oficial, el IPC de EE.UU. (CPI-U, BLS), para todos los clubes, y un selector "USD nominales / USD de <último año>".
+        Y en Finanzas, que se pueda comparar el club contra sí mismo fácilmente (pedido de Guido): sus años lado a lado, en
+        USD constantes.
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
-
-97. EL PIPELINE DE TRANSCRIPCIÓN (Mistral/Gemini) NO ACTUALIZA NINGÚN INVENTARIO — evaluar si
-    conviene que lo haga (pregunta de Guido, 2026-09-28). Lo que hay hoy: `tools/mistral-ocr-
-    transcribe.mjs` y `tools/gemini-transcribe.mjs` solo appendean a `Admin/{mistral,gemini}/
-    resultados.jsonl` y `fallidos.jsonl` (qué PDF se transcribió, costo, tiempo) — ninguno de los 2
-    toca `Admin/inventario-pendiente.md`, que es el archivo que responde "¿qué hay transcripto y
-    todavía no cargado al sitio?". Y ese archivo lo dice él mismo en su cabecera: es **"una FOTO, no
-    un archivo vivo"**, armado a mano el 2026-09-25 (barrido de filesystem + 2 agentes Explore) — hoy
-    ya está desactualizado: desde entonces se sumaron Grecia, Italia, Noruega, México, Boyacá Chicó,
-    Once Caldas y Estados Unidos, nada de eso reflejado ahí. EVALUAR (no construir todavía): ¿conviene
-    que los 2 scripts actualicen el inventario (o un archivo más chico/estructurado) cada vez que
-    escriben un `.md` nuevo, en vez de depender de un barrido manual que se desactualiza en días?
-    CONTRA A PESAR: el archivo actual también cruza contra `Admin/ESTADO-clubes.md` y las cabeceras de
-    `data/<clubId>-data.js` para saber qué YA está CARGADO (no solo qué está transcripto) — un update
-    automático del lado de la transcripción sería solo la mitad de la foto.
 
 96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
     ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
@@ -181,52 +154,11 @@ ni en el comentario de ningún archivo de código.
     dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
     gotchas de caché) y qué jerarquía visual preferiría.
 
-95. EVALUAR UN ARCHIVO DE REFERENCIA CON QUÉ LIGA/TEMPORADA JUGÓ CADA CLUB CADA AÑO, EN VEZ DE
-    BUSCARLO ONLINE CADA VEZ (pedido de Guido, 2026-09-28). Mismo patrón que el to-do 91 (FX/
-    brandColor, ya cerrado y andando): hoy, para completar `data/club-leagues/<iso2>.js` (SE EDITA A
-    MANO, ver su propia cabecera) el paso de onboarding busca online en qué liga/división jugó el
-    club ese ejercicio — una búsqueda puntual por club-año que se repite cada vez, en vez de consultar
-    un archivo local. Evaluar precargar esto para TODOS los clubes que ya tenemos en PDF (sourceados o
-    cargados) desde una fuente pública (candidatos: RSSSF, tablas de temporada de Wikipedia, alguna
-    API de datos de fútbol tipo TheSportsDB). Misma arquitectura que el 91: archivo de referencia
-    FUERA de `data/` (no eager, no se sirve al visitante), consultado local antes de salir a buscar.
-    EVALUAR ANTES DE EJECUTAR: cobertura real de la fuente elegida para ligas chicas/países con menos
-    visibilidad (punto débil ya conocido de RSSSF/Wikipedia fuera de las ligas grandes), y que esto no
-    reemplaza la verificación humana del ascenso/descenso al cierre exacto del ejercicio — solo evita
-    la búsqueda repetida, mismo criterio que ya se estableció para el 91.
-
-    **EVALUADO 2026-09-28, primera pasada equivocada — CORREGIDO el mismo día por Guido.** La primera
-    evaluación miró la página del CLUB (sin tabla temporada-por-temporada para un club chico) y RSSSF
-    (encoding roto, formato inconsistente) y concluyó que un scraper no alcanzaba. Estaba mirando las
-    fuentes equivocadas: la página de la TEMPORADA en Wikipedia (ej.
-    `2025–26 Premier League`, no la del club) SÍ tiene una tabla "Teams" en wikitext estándar de
-    MediaWiki, consistente entre países — confirmado bajando el roster real de Colombia 2016 (20
-    equipos, incluido Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
-
-    **SÍ SE CONSTRUYÓ, pipeline de 3 tools, probado de punta a punta**:
-    1. `tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` — encuentra el título exacto de la
-       página de esa temporada (la convención varía por liga, sin fórmula única) vía la API de
-       búsqueda de Wikipedia. No auto-elige el resultado #1: un nombre ambiguo (ej. "Premier League")
-       trae también la canadiense, la rusa, la israelí — hay que confirmar cuál es.
-    2. `tools/fetch-club-league-reference.mjs "<título>" <leagueId> <año> --pais <iso2>` — baja el
-       wikitext (no HTML renderizado, no un resumen de modelo) y guarda el roster completo en
-       `tools/club-league-reference/<iso2>.json`. Si no encuentra tabla parseable, no escribe nada.
-    3. `tools/lookup-club-league.js "<club>" --pais <iso2>` — busca por NOMBRE (no por `clubId`: la
-       mayoría de estos clubes todavía no están onboardeados) contra los rosters cacheados.
-
-    Sigue sin ser fuente de verdad: `data/club-leagues/<iso2>.js` sigue a mano, con su nota de cómo se
-    confirmó cada club-año. Esto solo evita repetir la búsqueda de una liga-temporada ya resuelta.
-    Detalle completo en `tools/club-league-reference/README.md`.
-
-130. SUDAMÉRICA: DECIDIR EL ESQUEMA PARA CLUBES POLIESPORTIVOS Y OTROS DEPORTES. Minas Tênis Clube/Náutico,
+130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
     escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
     Toros) y básquet (Titanes) con balance propio de sociedad anónima. Decidir antes de transcribir.
-
-144. QUÉ ENTRA AL SITIO: DOS DECISIONES DE PRODUCTO QUE ESTABAN EN LAS NOTAS DE SOURCING (2026-10-04; relacionado: el 130,
-    clubes polideportivos y otros deportes).
-    (a) Estados Unidos (ex to-do 127 g): TKO/Endeavor/Formula One Group no son clubes: decisión de Guido si el sitio las quiere.
-    (b) México (ex to-do 50): **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos. Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL, Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta que Guido decida.
+    También el béisbol de México (ex to-dos 50 y 144): **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos. Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL, Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta que Guido decida.
         (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
         `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
 
@@ -253,43 +185,6 @@ ni en el comentario de ningún archivo de código.
     Twitter/X del to-do 80), o conviene darle su propio archivo igual que a los demás países para
     tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
     pregunta más chica y puntual. Sin evaluar todavía.
-
-99. JEV PARA CATEGORIZAR RUBROS — FUSIÓN DE LOS EX TO-DOS 74 Y 36 (2026-09-29, a pedido de Guido:
-    eran el mismo backtest escrito en 2 lugares — 36 traía el gate de integración por volumen, 74 el
-    pedido de correrlo ya que la key está lista). PLAN DE ACCIÓN:
-
-    **Por qué el backtest original (contra Boca/River/Racing ya categorizados) no alcanza**: son
-    casos FÁCILES — vocabulario argentino de fútbol, ya resuelto, sin ambigüedad real. Mide si JEV
-    puede REPETIR una decisión ya tomada, no cómo maneja el caso que el propio análisis original ya
-    marcaba como el punto débil: "la primera vez que aparece un rubro nuevo o un club/país nuevo".
-
-    **Idea de Guido que mejora el test, 2026-09-29**: en vez de (o además de) el backtest contra
-    ejercicios ya cargados, onboardear 2-3 clubes REALES de la cola de sourcing, elegidos a propósito
-    diversos — mínimo 2 países de fútbol distintos entre sí y de Argentina (vocabulario/régimen
-    contable distinto: candidatos ya transcriptos, Grecia/Italia/Noruega/Boyacá Chicó), más 1 caso de
-    OTRO DEPORTE si hay uno ya transcripto (Green Bay Packers, EE.UU. — con la salvedad de que
-    `category-map.js` es taxonomía 100% de fútbol, ver to-do 23: acá el test mide algo extra y útil,
-    si JEV devuelve confianza baja/honesta cuando el rubro no encaja en NINGUNA categoría existente,
-    o si fuerza un match con confianza alta igual — ese segundo caso es el falso positivo peligroso).
-
-    **Mecánica**: (1) elegir los 2-3 club-ejercicios; (2) correr JEV sobre la lista de rubros de cada
-    uno (categoría + confianza) ANTES de que la sesión de `club-data-mapping` los categorice, sin que
-    esa sesión vea el resultado de JEV primero (no contaminar el criterio humano con la sugerencia);
-    (3) la sesión categoriza normal, como cualquier onboarding; (4) comparar rubro por rubro, JEV vs.
-    categorización real, separado por nivel de confianza de JEV — la pregunta que importa es si algún
-    caso de CONFIANZA ALTA salió mal, no el acierto promedio; (5) documentar en `Admin/tests/test-jev.md`
-    (mismo patrón que `test-costo-transcripcion.md`/`test-barridos.md`).
-
-    **Lo que NO cambia**: el gate de integración real (conectar JEV al flujo de onboarding para que
-    decida solo, sin que Claude revise cada rubro) sigue esperando a los **200 clubes cargados** (hoy
-    162) — a este volumen, categorizar a mano sigue siendo más rápido que integrar y VALIDAR una API
-    nueva. Este test es sobre VALIDAR la herramienta con datos reales, no sobre conectarla ya. Si el
-    resultado es bueno, define de una vez el umbral de auto-aceptación para cuando se llegue a 200.
-
-    Pipeline de 3 pisos si se integra más adelante (sin cambios respecto a la idea original): JEV
-    clasifica cada rubro → confianza alta se acepta automático → confianza baja pasa a Sonnet con el
-    contexto completo del club → si Sonnet tampoco está seguro, cae en `Admin/dudas-por-club.md` como
-    ya pasa hoy.
 
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
     tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
@@ -328,45 +223,6 @@ ni en el comentario de ningún archivo de código.
     (prensa con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta)
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
-
-34. LO QUE DEJÓ ABIERTO EL MERGE DEL SELECTOR (Versiones 143-155, 2026-09-17). ACTUALIZADO
-    2026-09-28 con lo que cambió desde entonces en features relacionadas (to-dos 70 y 83). Ninguno
-    es un bug: son decisiones a propósito, revisadas ahora que hay más uso.
-
-    (a) **MÓVIL, más allá de que entre.** Sin cambios: sigue sin diseñarse la experiencia en
-        teléfono (solo verificado que no rompe a 375px). Decisión de Guido durante el
-        prototipado: primero desktop.
-
-    (b) **NO HAY GRUPOS GUARDADOS dentro del constructor de mezcla.** Sigue sin existir tal cual.
-        Parcialmente mitigado por "Saved Searches" (to-do 70, cerrado): cualquier comparación
-        TERMINADA se guarda sola y se puede reabrir desde la cuenta, así que no hace falta
-        rearmar "mis 6 brasileños" si ya se armó una vez. Pero sigue faltando un grupo REUSABLE
-        para mezclar en una comparación DISTINTA a la que se guardó — son cosas distintas.
-
-    (c) **UN BLOQUE DE CLUBES EN LA MEZCLA TIENE UN SOLO AÑO PARA TODO EL BLOQUE.** Sigue igual
-        en el constructor de Comparar. Dato nuevo: el patrón "año editable por club" SÍ se
-        construyó, pero en otro lugar del sitio (Ligas, to-do 83, Versión 285) — al sumar un
-        club suelto a un ranking de liga, su año es un dropdown editable. El mismo patrón
-        podría portarse a Comparar si hiciera falta; no está hecho ahí todavía.
-
-    (d) **EL APORTE DE CADA BLOQUE NO SE MUESTRA EN EL CONSTRUCTOR.** Sigue igual en Comparar.
-        Confirmado en la práctica que reusar rankings precalculados (en vez de bajar cada club)
-        SÍ es viable sin costo: to-do 83 lo implementó para "sumar una liga entera" en Ligas
-        (Versión 285, inserta 10-20 clubes de una reusando `data/rankings/<liga>.js`). El mismo
-        truco resolvería el aporte en plata de un bloque en Comparar sin bajar los 162 archivos
-        de club — es el camino más barato si se retoma.
-
-    (e) **UN LADO PUEDE SUMAR UN PROMEDIO CON UNA SUMATORIA.** Sin cambios. Decisión explícita
-        de Guido: "suma peras con manzanas pero no es mi tema, yo tengo que dar la
-        funcionalidad".
-
-    (f) **LOS DATOS SIGUEN FLACOS PARA LO QUE LA INTERFAZ YA PERMITE, pero mejoró la proporción**
-        (recalculado 2026-09-28 contra `Admin/ESTADO-clubes.md`): hoy 88 de 162 clubes (54%)
-        tienen UN solo ejercicio cargado — mejor que el 34 de 41 (83%) de cuando se escribió
-        esto. Las ligas con ranking precalculado pasaron de 8 a 22 (`data/rankings/`). Sigue
-        siendo cierto que comparar 2 ligas específicas puede salir desparejo según cuántos
-        ejercicios tenga cada una, pero el problema se va resolviendo solo a medida que crece
-        el proyecto — no hace falta acción.
 
 136. **Texto propuesto para `paises/*.md` pendiente de aprobar** (no se editó ningún skill): Polonia, Rumania, Hungría, Eslovaquia, Eslovenia, Serbia, Bulgaria, Bosnia, Macedonia del Norte, Estonia, Letonia, Lituania, Georgia, Armenia, Azerbaiyán, Kazajistán, Bielorrusia y la actualización de Rusia (endpoints `details` y `XLS`), Croacia (Wayback, Slaven y Varaždin), Ucrania (Dynamo Kyiv, Shakhtar y Oleksandriya, corrigiendo el "dead-end"). Cada texto está al final de `fuentes/<País>/_notas-generales.md` (sección "Texto propuesto" o equivalente) y hay que mostrarlo antes de crear el archivo y su línea en el índice del `SKILL.md`. Regla general nueva a agregar a `club-sourcing` 0.1: Wayback por `https://`, una captura de 1.048.576 bytes exactos está truncada, y la licencia nacional de la federación (PZPN F.01, HNS, FSS, LFF, ...) suele ser el canal.
 
