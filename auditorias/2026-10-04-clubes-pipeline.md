@@ -2,7 +2,7 @@
 
 Clubes: Universidad Católica (UC), Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa, Juventus. Categorías dudosas y datos raros
 en lo ya publicado. La hizo un subagente Sonnet (solo lectura); los marcados ✔ los verificó la sesión contra el .md y el `data/*.js`.
-Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del club. Pendiente: to-do 138 de `Admin/TODO.md`.
+Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del club. Cerrada el 2026-10-05 (ex to-do 138). Queda solo el d) de caja y deuda (Juventus, sin caso nuevo no se sigue).
 
 ## Hallazgos
 

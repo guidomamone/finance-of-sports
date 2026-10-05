@@ -43,7 +43,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - El onboarding se hace con el pipeline: `tools/lote.mjs` (etapas 3 a 8, lo corre Guido), `tools/cargar.mjs` (escribe el año en el sitio,
   corre los generadores y `audit.js`, y revierte si algo falla) y `tools/caja-deuda.mjs` (caja y deuda, con el club ya publicado). Lo que no
   se resuelve solo va a la cola humana (`tools/cola.mjs`). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
-  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 138 a 143. Un dato publicado mal se corrige con un ajuste manual
+  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 139 a 143. Un dato publicado mal se corrige con un ajuste manual
   (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - Clubes cargados enteros por el pipeline: UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025,
   estados separados; caja y deuda en parte cargadas a mano).

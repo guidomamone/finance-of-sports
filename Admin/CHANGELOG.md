@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 512 — To-do 138 cerrado (2026-10-05)
+
+- Auditoría de los clubes del pipeline (`auditorias/2026-10-04-clubes-pipeline.md`): los 13 hallazgos y las 3 dudas de otros clubes resueltos (Versiones 492-511). Queda anotado en el archivo el d) de caja y deuda de Juventus, que no se sigue sin un caso nuevo.
+
 ## Versión 511 — "Incluido en" en el pipeline (ajuste `incluye`) y "Posiblemente incluido en" (2026-10-05)
 
 - `tools/ajustes.mjs`: campo `incluye` (`--valor <categoría en 0> --categoria <donde está> [--posible]`). `tools/cargar.mjs` lo escribe en `fiscalYearMeta.incluidoEn` y no trata esa categoría como un 0 a revisar (ni reintento ni pregunta de perfil en la cola). Probado con un ajuste temporal sobre UC 2016 (la propuesta lleva el `incluidoEn`, sin frenos); revertido.

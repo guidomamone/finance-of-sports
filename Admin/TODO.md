@@ -26,11 +26,6 @@ ni en el comentario de ningún archivo de código.
     `| Impostos a recuperar | | 2 | - | Empréstimos | | 24 | 43 |` (.md L181): leía Empréstimos 2018 = 43 (es 2017) y proponía deuda 27,51 en
     vez de 27,491. Idea a medir: usar la columna "Nota(s)" del encabezado de la tabla cuando la hay (escalón), en vez de adivinar por el tamaño.
 
-138. VER LOS TEMAS DE AUDITORÍA PENDIENTES. Hallazgos de las auditorías de datos que todavía no se arreglaron ni se
-    descartaron; cada archivo trae el caso, la evidencia y el arreglo propuesto. Hoy: `auditorias/2026-10-04-clubes-pipeline.md`
-    (los 6 clubes del pipeline nuevo: 12 hallazgos, los pendientes de caja y deuda, y la nota visible del quiebre de serie de
-    Juventus 2006 → 2007).
-
 139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo; venía del HANDOFF, Versión 470).
     `compararVecino` (verificar.mjs) compara con el año vecino las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan
     "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1; puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están
