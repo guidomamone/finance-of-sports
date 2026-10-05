@@ -653,8 +653,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.068},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
-    // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos" pág. 8 + "Débitos com partes relacionadas" pág. 8
-    grossDebt:32.32, cash:0.695,
+    // ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05, to-do 143): préstamos + partes relacionadas, criterio del club; Empréstimos 27 + Débitos com partes relacionadas 32.296 (miles), .md L193/L204. caja-deuda.mjs (2026-10-03) había leído el 24 de 2018 (32,32)
+    grossDebt:32.323, cash:0.695,
     officialTotalRevenue:12.23, officialTotalExpenses:15.787, officialPAT:-3.783,
   },
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = exceptional_items. Guido 2026-10-02: provisión única por una cobranza a Corinthians por venta de un atleta, en discusión judicial; no recurrente

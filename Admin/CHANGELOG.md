@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 513 — To-do 143: caja-deuda no confunde un importe chico con un número de nota (2026-10-05)
+
+- `tools/caja-deuda.mjs` (`columnasDeNotas`): la referencia a nota pasa a ser una escalera. Si la tabla tiene una columna de notas inequívoca (en las filas con la cantidad de celdas más común, todas sus celdas con número son "4", "5,6", "18/26"…, al menos 2) y la cifra está a su derecha, es un importe; si no, la regla de siempre. Aprobado por Guido.
+- Medido: 181 filas cambian en las 2.298 transcripciones (muestra de 12 documentos revisada: todas pasan a leer el año en curso); `--medir` deuda 47 → 48 iguales (Novorizontino 2018), ningún distinto nuevo, caja idéntico; `--club novorizontino-br` idéntico. Dos versiones más amplias, descartadas: `Admin/HALLAZGOS-pipeline.md`.
+- Dato publicado mal, corregido en `data/` y con ajuste `deuda`: Novorizontino 2019 deuda 32,32 → 32,323 (había leído "Empréstimos" 24, de 2018, en vez de 27; la compuerta lo dejó pasar por la tolerancia de redondeo). ASSET_V 420 → 421, generadores corridos, audit 0 P0/P1.
+- To-do 143 cerrado; lo que no cubre (tablas sin columna de notas) queda como to-do 145.
+
 ## Versión 512 — To-do 138 cerrado (2026-10-05)
 
 - Auditoría de los clubes del pipeline (`auditorias/2026-10-04-clubes-pipeline.md`): los 13 hallazgos y las 3 dudas de otros clubes resueltos (Versiones 492-511). Queda anotado en el archivo el d) de caja y deuda de Juventus, que no se sigue sin un caso nuevo.

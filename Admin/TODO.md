@@ -21,10 +21,13 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-143. CAJA-DEUDA LEE UN IMPORTE CHICO COMO NÚMERO DE NOTA (conocido, sin daño hoy: el dato se cargó con ajuste manual). `tools/caja-deuda.mjs` descarta
-    el primer entero de 1-2 dígitos de una fila como referencia a nota, aunque la fila no tenga columna de notas. Caso: Novorizontino 2018,
-    `| Impostos a recuperar | | 2 | - | Empréstimos | | 24 | 43 |` (.md L181): leía Empréstimos 2018 = 43 (es 2017) y proponía deuda 27,51 en
-    vez de 27,491. Idea a medir: usar la columna "Nota(s)" del encabezado de la tabla cuando la hay (escalón), en vez de adivinar por el tamaño.
+145. CAJA-DEUDA: CIFRA CHICA DEL AÑO EN UNA TABLA SIN COLUMNA DE NOTAS (conocido, sin daño hoy: ningún dato cargado distinto por esto en
+    `caja-deuda.mjs --medir`). Lo que dejó el to-do 143 (Versión 513): sin una columna de notas inequívoca, el primer entero de 1-2 dígitos
+    se sigue descartando como nota, y a veces es el importe del año. Casos: Novorizontino 2016 "| Caixa e Equivalentes de Caixa | 7 | 16 |"
+    (balanco-2016.md L14, lee 16 = 2015), Midtjylland 2014 "| Likvide beholdninger | 90 | 2.170 |" (aarsrapport-2014-06-30.md L1306),
+    La Equidad 2021 "Caja Dolares | 19 | 318", y Criciúma 2023 "| Empréstimos e Financiamentos | 13 - | 140.909 |" (nota y guion en la misma
+    celda, relatorio-de-balanco-2023.md L193). Idea a medir, como escalón aparte: si la compuerta no cierra con la lectura de hoy, probar la
+    otra lectura (sin descartar) con la MISMA compuerta. Guido, 2026-10-05: anotarlo, no hacerlo ahora.
 
 139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo; venía del HANDOFF, Versión 470).
     `compararVecino` (verificar.mjs) compara con el año vecino las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan
