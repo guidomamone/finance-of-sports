@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 488 — estado.mjs estima la etapa 2 por páginas (ex to-do 140m) (2026-10-04)
+
+- `tools/estado.mjs`: un PDF sin `.md` cuesta páginas × US$ 0,0086 (la misma cuenta que el ensayo de `pipeline.mjs`), con las páginas de `Admin/.paginas-cache.json`; si el PDF no está en la caché, sigue en US$ 0,20. Lazio: ~US$ 4 → ~US$ 25 (el ensayo da 25,60). Todo el inventario sin `.md`: ~US$ 910 → ~US$ 1.068. El resto del tablero, idéntico.
+
 ## Versión 487 — La cola cierra sola los casos de años ya cargados (ex to-do 141a) (2026-10-04)
 
 - `tools/cola.mjs`: `cerrarCargados()`, que corre al listar: cierra como "obsoleto" los casos pendientes de `verificar` y de `cargar · perimetro` cuyo año ya está en el sitio (registro o `.carga.json` + `fiscalYearMeta`, como lote.mjs). Nunca categoría ni perfil; un caso reabierto no se vuelve a cerrar. Cerró los 11 de Juventus.

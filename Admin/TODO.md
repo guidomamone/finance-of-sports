@@ -60,8 +60,6 @@ ni en el comentario de ningún archivo de código.
         pasen a ser configuración que las tools lean, grupo por grupo.
     (l) Que el pipeline cubra presupuestos: hoy `localizar.mjs` no los elige y se cargan a mano (`Admin/ARQUITECTURA.md` ex §11,
         presupuesto y balance del mismo año; `Admin/CONVENCIONES.md` ex §15, presupuesto en año calendario).
-    (m) `estado.mjs` estima la etapa 2 con un costo fijo por documento (US$ 0,20) y subestima los PDFs largos: Lazio, 19 PDFs de 151-208
-        páginas, da ~US$ 4 contra US$ 25,60 del ensayo de `pipeline.mjs`, que cuenta páginas. Que estime por páginas, como el ensayo.
 
 141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
     (b) Ordenar la cola por impacto.
