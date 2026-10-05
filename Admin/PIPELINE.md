@@ -493,7 +493,7 @@ numéricas resultó muy confiable en la práctica. Ver
 completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
 cómo verificar los números del OCR fila por fila antes de cargarlos).
 
-**En el onboarding con el pipeline, la transcripción (etapa 2) la corre `tools/pipeline.mjs --sin-jev`, que además la valida: ver el
+**En el onboarding con el pipeline, la transcripción (etapa 2) la corre `tools/pipeline.mjs`, que además la valida (desde la Versión 529 hace solo eso; `--sin-jev` se acepta y no hace nada): ver el
 skill `club-or-year-onboarding`.** Lo que sigue describe los motores que usa por dentro y el camino para un PDF suelto.
 
 **ACTUALIZADO OTRA VEZ (Versiones 244-248, 2026-09-26): el DEFAULT para transcribir en volumen ya

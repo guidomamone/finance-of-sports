@@ -43,16 +43,16 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - El onboarding se hace con el pipeline: `tools/lote.mjs` (etapas 3 a 8, lo corre Guido), `tools/cargar.mjs` (escribe el año en el sitio,
   corre los generadores y `audit.js`, y revierte si algo falla) y `tools/caja-deuda.mjs` (caja y deuda, con el club ya publicado). Lo que no
   se resuelve solo va a la cola humana (`tools/cola.mjs`). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
-  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 139 a 142 y 145. Un dato publicado mal se corrige con un ajuste manual
+  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 139, 140(b) y 145. Un dato publicado mal se corrige con un ajuste manual
   (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
   club la tiene en todos sus otros balances desglosados (hoy 70 filas en 16 años de 7 clubes); `cargar.mjs --escribir` la aplica solo. La
   página dice el rubro en un bocadillo (`js/info-tip.js`). Falta la pregunta de la cola para años sin precedente (to-do 140(i), paso 4).
 - Clubes cargados enteros por el pipeline: UC, Fortaleza CEIF, Goiás, Novorizontino, AEL Larissa (2016-2025) y Juventus (2003-2025,
   estados separados; caja y deuda en parte cargadas a mano).
-- `tools/pipeline.mjs` hace la etapa 2 (transcribir con Mistral y validar), corrido con `--sin-jev`. Su categorización (Jev y Claude)
-  es la del proceso viejo y no se usa: la reemplaza la etapa 7 del lote; retirar esa parte es el to-do 142c. No re-preparar con él
-  documentos que pasaron por el lote.
+- `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La preparación para Jev y
+  la categorización vieja se retiraron en la Versión 529 (to-do 142c): la lista de rubros la arma `verificar.mjs` y la categorización es la
+  etapa 7 del lote.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
 

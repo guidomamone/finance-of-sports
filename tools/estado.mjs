@@ -167,7 +167,7 @@ ETAPAS.forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(
 for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  ${k === 'descartado' ? 'descartados como fuente (Admin/documentos-descartados.txt; el lote los saltea)' : `(estado sin describir: ${k})`}`);
 console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
 // PROCESO VIEJO, solo como referencia (Versión 448, decisión de Guido): los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan
-// como avance del proceso nuevo. Retirar el proceso viejo es el to-do 142c de Admin/TODO.md.
+// como avance del proceso nuevo. El proceso viejo se retiró de pipeline.mjs en la Versión 529: estos son los que quedaron de antes.
 const viejos = R.filter((e) => !e.cargado && e.md && rubrosViejo(e)).length;
 if (viejos) console.log(`  Referencia, proceso viejo: ${viejos} documentos sin cargar tienen lista de rubros de pipeline.mjs (no cuenta como avance acá).`);
 // ÚLTIMA PROPUESTA DE CARGA (Admin/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`, también desde lote.mjs).

@@ -44,12 +44,6 @@ ni en el comentario de ningún archivo de código.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
 
-142. DECISIONES PENDIENTES DE GUIDO SOBRE EL PIPELINE, a tomar con casos reales (venían del HANDOFF, Versión 470).
-    (a) ¿El primer año automático de cada club pasa siempre por la cola?
-    (b) Perímetro: se hereda del año cargado más cercano; si no se puede, pregunta en la cola.
-    (c) Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
-        Relacionado: el ex to-do 108 (validar el inventario con `pipeline.mjs`), en `Admin/Archive/todos-cerrados-onboarding-manual.md`.
-
 146. EL NOMBRE DEL CLUB EN EL HEADER VUELVE A UNO VIEJO AL CAMBIAR DE IDIOMA (encontrado el 2026-10-05 probando la Versión 515). Con un
     club elegido, `I18N.setLang` deja el chip "Estás viendo" con el nombre de un club anterior (visto: "AEL Larissa" con el escudo "AM" de
     América Mineiro) mientras la página muestra el actual. Causa probable: `<span id="cbName" data-i18n="header.club.none">` en index.html

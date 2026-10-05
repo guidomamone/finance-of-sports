@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 529 — To-do 142 cerrado: proceso viejo retirado de pipeline.mjs (2026-10-05)
+
+- (a) primer año por la cola y (b) perímetro heredado: ya funcionaban así (`verificar.mjs` caso `primer-anio` salvo que un vecino confirme; `cargar.mjs` Versión 412). Fuera de la lista.
+- (c) `tools/pipeline.mjs` hace solo la etapa 2: se sacaron la preparación para Jev (prepare-onboarding, lista de rubros, marca listo-para-jev / sin-rubros), la categorización con Jev y Claude y `--repreparar` / `--solo-preparar`; `--sin-jev` se acepta y no hace nada. Queda el control "sin tablas" (corre sobre todos los validados que no pasaron por el lote, fuera de `--limit`). Ninguna tool se archivó: todas las que usaba siguen en uso por el lote (mapa de llamadas sin comentarios). Saca una trampa: `verificar.mjs` no pisa una marca listo-para-jev de la preparación vieja, y el tablero sugería `pipeline.mjs --ejecutar` sin `--sin-jev`.
+- Medido: ensayo de `pipeline.mjs` sobre Clubes/Colombia idéntico salvo un texto; ensayo de `prueba-completa` idéntico.
+
 ## Versión 528 — To-do 141 cerrado (2026-10-05)
 
 - La cola humana no necesita ordenarse por impacto, ni volver reglas sus respuestas, ni otra vista: Guido la resuelve con un subagente (Sonnet) que resume los casos. Medido antes de cerrar: 853 casos en su historia, 187 abiertos en el pico (2026-10-02), 54% de categoría; hoy vacía.
