@@ -123,7 +123,7 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.387312, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.93
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.042048, disclosureLevel:'aggregated' }, // pág. 18, precedente
     { rawLabel:'Φόροι-Τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.005684, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.98
-    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.216105, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.95
+    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.216105, disclosureLevel:'aggregated' }, // pág. 7, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2024: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-1.351228, disclosureLevel:'aggregated' }, // pág. 19, precedente
@@ -132,7 +132,7 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.271693, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.93
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.021413, disclosureLevel:'aggregated' }, // pág. 19, precedente
     { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.004934, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.98
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-1.632104, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-1.632104, disclosureLevel:'aggregated' }, // pág. 8, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2022: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-1.520477, disclosureLevel:'aggregated' }, // pág. 19, precedente
@@ -141,7 +141,7 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.246985, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.93
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.018443, disclosureLevel:'aggregated' }, // pág. 19, precedente
     { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.003498, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.98
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.28039, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.28039, disclosureLevel:'aggregated' }, // pág. 8, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2020: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-1.971957, disclosureLevel:'aggregated' }, // pág. 19, precedente
@@ -150,25 +150,25 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.624463, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.93
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.006388, disclosureLevel:'aggregated' }, // pág. 19, precedente
     { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.003336, disclosureLevel:'aggregated' }, // pág. 19, Jev 0.98
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.028911, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.028911, disclosureLevel:'aggregated' }, // pág. 7, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2018: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'(-) Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-1.541699, disclosureLevel:'aggregated' }, // pág. 3, precedente
     { rawLabel:'(-) Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.637944, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
     { rawLabel:'(-) Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.478458, disclosureLevel:'aggregated' }, // pág. 3, precedente
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.000391, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.000391, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2017: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'(-) Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-1.477726, disclosureLevel:'aggregated' }, // pág. 3, precedente
     { rawLabel:'(-) Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.611473, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
     { rawLabel:'(-) Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.458605, disclosureLevel:'aggregated' }, // pág. 3, precedente
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.020179, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.020179, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2016: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-0.726277, disclosureLevel:'aggregated' }, // pág. 3, precedente
     { rawLabel:'Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.300528, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
     { rawLabel:'Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.225396, disclosureLevel:'aggregated' }, // pág. 3, precedente
-    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.099591, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.95
+    { rawLabel:'Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.099591, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2021: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-2.388341, disclosureLevel:'aggregated' }, // pág. 19, precedente
@@ -177,7 +177,7 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.329221, disclosureLevel:'aggregated' }, // pág. 19, precedente
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.023769, disclosureLevel:'aggregated' }, // pág. 19, precedente
     { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.00575, disclosureLevel:'aggregated' }, // pág. 19, precedente
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.273481, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.273481, disclosureLevel:'aggregated' }, // pág. 8, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2019: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Αμοιβές και έξοδα προσωπικού', normalizedCategory:'wages_squad', amountNative:-2.462845, disclosureLevel:'aggregated' }, // pág. 14, precedente
@@ -186,13 +186,13 @@ const aellarissagrExpenseLinesByYear = {
     { rawLabel:'Διάφορα έξοδα', normalizedCategory:'other_expenses', amountNative:-0.410632, disclosureLevel:'aggregated' }, // pág. 14, precedente
     { rawLabel:'Αποσβέσεις', normalizedCategory:'depreciation', amountNative:-0.011318, disclosureLevel:'aggregated' }, // pág. 14, precedente
     { rawLabel:'Φόροι-τέλη', normalizedCategory:'admin_general_expense', amountNative:-0.003164, disclosureLevel:'aggregated' }, // pág. 14, precedente
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:-0.0216, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:-0.0216, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
   2023: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'(-) Κόστος πωλήσεων', normalizedCategory:'lump_football_operations_expense', amountNative:-1.587768, disclosureLevel:'aggregated' }, // pág. 8, precedente
     { rawLabel:'(-) Έξοδα διοίκησης', normalizedCategory:'admin_general_expense', amountNative:-0.657007, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
     { rawLabel:'(-) Έξοδα διάθεσης', normalizedCategory:'admin_general_expense', amountNative:-0.492756, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.96
+    { rawLabel:'(-) Λοιπά έξοδα και ζημιές', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, ajuste manual (auditoría 2026-10-04, hallazgo 9: Έκτακτα κι ανόργανα έξοδα)
   ],
 };
 const aellarissagrFiscalYearMeta = {
@@ -214,7 +214,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 6; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 6
     grossDebt:0.007031, cash:0.252356,
-    officialTotalRevenue:3.384045, officialTotalExpenses:2.718314, officialPAT:0.649637,
+    officialTotalRevenue:3.384045, officialTotalExpenses:2.502209, officialPAT:0.649637,
   },
   2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2024-06-30',
@@ -233,7 +233,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: documento siguiente): "Δάνεια" pág. 7; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
     grossDebt:0.0075, cash:0.212242,
-    officialTotalRevenue:1.21248, officialTotalExpenses:3.568785, officialPAT:-2.363346,
+    officialTotalRevenue:1.21248, officialTotalExpenses:1.936681, officialPAT:-2.363346,
   },
   2022: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2022-06-30',
@@ -253,7 +253,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
     grossDebt:0.015, cash:0.243669,
-    officialTotalRevenue:2.332679, officialTotalExpenses:2.386989, officialPAT:-0.062813,
+    officialTotalRevenue:2.332679, officialTotalExpenses:2.106599, officialPAT:-0.062813,
   },
   2020: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2020-06-30',
@@ -268,7 +268,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 2 (compuerta: documento siguiente): "Δάνεια" pág. 6; cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 6
     grossDebt:0.015, cash:0.208989,
-    officialTotalRevenue:2.793526, officialTotalExpenses:3.312966, officialPAT:-0.525172,
+    officialTotalRevenue:2.793526, officialTotalExpenses:3.284055, officialPAT:-0.525172,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2018-06-30',
@@ -284,7 +284,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
     grossDebt:null, cash:0.468862,
-    officialTotalRevenue:3.40008, officialTotalExpenses:2.658492, officialPAT:0.730033,
+    officialTotalRevenue:3.40008, officialTotalExpenses:2.658101, officialPAT:0.730033,
   },
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2017-06-30',
@@ -304,7 +304,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
     grossDebt:null, cash:0.230582,
-    officialTotalRevenue:2.219786, officialTotalExpenses:2.567982, officialPAT:-0.35446,
+    officialTotalRevenue:2.219786, officialTotalExpenses:2.547803, officialPAT:-0.35446,
   },
   2016: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2016-06-30',
@@ -324,7 +324,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
     grossDebt:null, cash:0.098071,
-    officialTotalRevenue:1.001265, officialTotalExpenses:1.351793, officialPAT:-0.352929,
+    officialTotalRevenue:1.001265, officialTotalExpenses:1.252202, officialPAT:-0.352929,
   },
   2021: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2021-06-30',
@@ -344,7 +344,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): grossDebt escalón 0 (compuerta: año anterior): "Δάνεια" pág. 7; cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 7
     grossDebt:0.015, cash:0.899113,
-    officialTotalRevenue:4.31844, officialTotalExpenses:3.819903, officialPAT:0.473197,
+    officialTotalRevenue:4.31844, officialTotalExpenses:3.546422, officialPAT:0.473197,
   },
   2019: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2019-06-30',
@@ -359,7 +359,7 @@ const aellarissagrFiscalYearMeta = {
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
     grossDebt:null, cash:0.307579,
-    officialTotalRevenue:3.086962, officialTotalExpenses:3.556419, officialPAT:-0.483748,
+    officialTotalRevenue:3.086962, officialTotalExpenses:3.534819, officialPAT:-0.483748,
   },
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): sin-dudas. Guido 2026-10-03: se carga por función (costo de ventas + administración + comercialización); la nota 16 suma también los intereses (7.608,42) y el escalón 1 no la abre
   2023: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.

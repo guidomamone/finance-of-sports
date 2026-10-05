@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 496 — AEL Larissa: "Λοιπά έξοδα και ζημιές" a ítems excepcionales, 2016-2025 (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 9: el renglón es "Έκτακτα κι ανόργανα έξοδα" (gastos extraordinarios y no operativos) según la nota de 2019-2025; 2016-2017 sin nota, mismo renglón del estado ΕΛΠ. Era `other_expenses`; 2024: 1,63 M€, el 46% del gasto.
+- 10 ajustes `categoria` (uno por año) y `officialTotalExpenses` de cada año sin la partida, como lo calcula `cargar.mjs` (los excepcionales van aparte del total de gastos). Resultado del ejercicio sin cambios. ASSET_V 406 → 407. Auditoría 0 P0 / 0 P1.
+
 ## Versión 495 — Fortaleza CEIF 2021: deuda 102,5 → 295,8 (ajuste manual `deuda`, nuevo) (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 7: el escalón 2 de `caja-deuda.mjs` había leído solo el corto plazo ("Total Prestamos y Sobregiros", nota 12); la deuda bruta es "Préstamos y sobregiros bancarios" 295.846 del cuadro de instrumentos financieros (nota 5.A, .md L506; 2020 en el mismo cuadro, 188.997, coincide con lo cargado).
