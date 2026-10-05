@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md",
- "generado": "2026-10-05T15:29:35.401Z",
+ "generado": "2026-10-05T16:28:18.982Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2023,
@@ -375,12 +375,57 @@
   {
    "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
    "campo": "fila",
-   "valor": "11.013",
-   "linea": 1125,
+   "valor": "0",
+   "linea": null,
    "etiqueta": "Auxilio de transporte",
    "lado": "ingreso",
+   "reemplaza": "Auxilio de transporte",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025: anula la reposición anterior del ingreso con esta etiqueta (la nómina del equipo tiene 'Auxilio de Transporte', y la categoría por etiqueta no distingue mayúsculas); el ingreso entra como 'Auxilio de transporte (Dimayor)'",
+   "evidencia": ".md L1125",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
+   "campo": "deuda",
+   "valor": "110.000",
+   "linea": 512,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros, criterio del club; su columna 2022 (238.144) coincide con el documento 2022",
+   "evidencia": ".md L512",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de arbitraje",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
+   "evidencia": ".md L1124",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "11.013",
+   "linea": 1125,
+   "etiqueta": "Auxilio de transporte (Dimayor)",
+   "lado": "ingreso",
    "reemplaza": null,
-   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6: el ingreso 'Auxilio de transporte' (de la Dimayor) tiene la misma etiqueta que una fila de la nómina de administración; el reemplazo por etiqueta lo saca y se repone",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
+   "evidencia": ".md L1125",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de transporte (Dimayor)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
    "evidencia": ".md L1125",
    "autor": "Guido",
    "fecha": "2026-10-05"
@@ -448,7 +493,8 @@
   "ajuste manual: fila \"Bonificaciones (administración)\" (gasto) 146.841 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "ajuste manual: fila \"Aportes fondo de pensiones (administración)\" (gasto) 37.096, en lugar de \"Aportes fondo de pensiones\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "ajuste manual: fila \"Bonificaciones (2ª fila)\" (gasto) 20.514 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6: la nota de gastos de ventas tiene dos filas 'Bonificaciones' (314.797 y 20.514, .md L1173 y L1178); el reemplazo por etiqueta de la nómina de administración saca las tres y se reponen con etiquetas distintas)",
-  "ajuste manual: fila \"Auxilio de transporte\" (ingreso) 11.013 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6: el ingreso 'Auxilio de transporte' (de la Dimayor) tiene la misma etiqueta que una fila de la nómina de administración; el reemplazo por etiqueta lo saca y se repone)",
+  "ajuste manual: sale la fila \"Auxilio de transporte\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025: anula la reposición anterior del ingreso con esta etiqueta (la nómina del equipo tiene 'Auxilio de Transporte', y la categoría por etiqueta no distingue mayúsculas); el ingreso entra como 'Auxilio de transporte (Dimayor)')",
+  "ajuste manual: fila \"Auxilio de transporte (Dimayor)\" (ingreso) 11.013 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025)",
   "la lectura base no cerraba; cerró con la lectura 1",
   "ajuste manual: resultado final 1.021.768 (2026-10-02, Cerrado por la fuerza por decisión de Guido: el resultado antes de impuestos (1.609.817) cierra con las notas, pero ni restando ni sumando el 'Total impuesto a cargo' (589.589) da el resultado impreso; el impuesto contable es 588.049.)",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Los importes de las notas están en miles de pesos aunque el título diga 'Expresados en pesos colombianos'?",
@@ -619,7 +665,7 @@
    "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
   },
   {
-   "etiqueta": "Auxilio de transporte",
+   "etiqueta": "Auxilio de transporte (Dimayor)",
    "lado": "ingreso",
    "M": 11.013,
    "pagina": 24,

@@ -6,11 +6,9 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 
 ## Hallazgos
 
-(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 6 (500), 7 (495, 503 y 504), 8 (498), 11 y 13 (505), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
+(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 6 (500), 7 (495, 503 y 504), 8 (498), 11 y 13 (505), 12 (506), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
 Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verificar.mjs`.)
 
-12. **Fortaleza: "Auxilio de arbitraje / transporte / hotelero" cambian de categoría entre años** (`competition_bonus` / `other_income`;
-    ~0,3-0,4 M COP por año). Impacto chico. Cosmético: etiquetas que son frases del documento en 2022-2024.
 ## Otros clubes ya publicados (fuera de los 6)
 
 Datos ya publicados con categorías dudosas, anotados en el HANDOFF y pasados acá en la Versión 470. Sin verificar todavía contra el .md.

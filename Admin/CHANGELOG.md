@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 506 — Fortaleza CEIF: los auxilios de la Dimayor, a premios de competición en todos los años (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 12: "Auxilio de arbitraje / transporte / hotelero" estaban en `competition_bonus` unos años (2019, 2020, 2022, 2025; ajuste de Guido de 2020) y en `other_income` otros. 9 filas de 2019-2024 pasan a `competition_bonus` (0,73 M COP en total); "Otros auxilios", bioseguridad y análisis deportivo quedan en `other_income`. Totales sin cambios.
+- Ajustes `categoria` por año. En 2023 el ingreso "Auxilio de transporte" pasa a "Auxilio de transporte (Dimayor)": la categoría por etiqueta no distingue mayúsculas y la nómina del equipo tiene "Auxilio de Transporte" (se habría mudado de lado). ASSET_V 414 → 415.
+
 ## Versión 505 — Deducciones de ingresos que el documento no abre: regla escrita y hallazgos silenciados (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 11 (Goiás 2008-2017, "(-) Dedução da receita" entera en `other_income`): no se corrige, es el criterio. Regla nueva en `Admin/CONVENCIONES-DATOS.md`: una deducción que el documento no abre por tipo de ingreso va entera a `other_income`; no se reparte.

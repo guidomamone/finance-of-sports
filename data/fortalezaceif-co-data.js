@@ -56,7 +56,7 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Auxilio Arbitraje', normalizedCategory:'competition_bonus', amountNative:54.063, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.91
     { rawLabel:'Aux Mejoramiento De Gestión Organizacional Clubes', normalizedCategory:'other_income', amountNative:27.273, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.96
     { rawLabel:'Auxilio Análisis Deportivo', normalizedCategory:'other_income', amountNative:21, disclosureLevel:'aggregated' }, // pág. 21, precedente
-    { rawLabel:'Auxilio Transporte', normalizedCategory:'other_income', amountNative:20.683, disclosureLevel:'aggregated' }, // pág. 21, precedente
+    { rawLabel:'Auxilio Transporte', normalizedCategory:'competition_bonus', amountNative:20.683, disclosureLevel:'aggregated' }, // pág. 21, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Federación Colombiana De Futbol', normalizedCategory:'competition_bonus', amountNative:19.038, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.97
     { rawLabel:'Convenio Entre Clubes', normalizedCategory:'other_income', amountNative:16.807, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.96
     { rawLabel:'Propaganda Y Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:0.3, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.99
@@ -80,8 +80,8 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Federación Colombiana de Futbol', normalizedCategory:'competition_bonus', amountNative:114.8, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.97
     { rawLabel:'Auxilio hotelero', normalizedCategory:'competition_bonus', amountNative:195.613, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Convenio entre clubes', normalizedCategory:'other_income', amountNative:140.694, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.96
-    { rawLabel:'Auxilio de arbitraje', normalizedCategory:'other_income', amountNative:129.316, disclosureLevel:'aggregated' }, // pág. 24, precedente
-    { rawLabel:'Auxilio de transporte', normalizedCategory:'other_income', amountNative:11.013, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Auxilio de arbitraje', normalizedCategory:'competition_bonus', amountNative:129.316, disclosureLevel:'aggregated' }, // pág. 24, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
+    { rawLabel:'Auxilio de transporte (Dimayor)', normalizedCategory:'competition_bonus', amountNative:11.013, disclosureLevel:'aggregated' }, // pág. 24, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Otros auxilios(*)', normalizedCategory:'other_income', amountNative:950.417, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Propaganda y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:510.624, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
     { rawLabel:'Derechos deportivos', normalizedCategory:'player_sales', amountNative:1106.21, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
@@ -102,8 +102,8 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Federación Colombiana de Futbol', normalizedCategory:'competition_bonus', amountNative:174.561, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.97
     { rawLabel:'Auxilio hotelero', normalizedCategory:'competition_bonus', amountNative:186.067, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Convenio entre clubes', normalizedCategory:'other_income', amountNative:33.319, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.96
-    { rawLabel:'Auxilio de arbitraje', normalizedCategory:'other_income', amountNative:243.727, disclosureLevel:'aggregated' }, // pág. 24, precedente
-    { rawLabel:'Auxilio de transporte', normalizedCategory:'other_income', amountNative:16.531, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Auxilio de arbitraje', normalizedCategory:'competition_bonus', amountNative:243.727, disclosureLevel:'aggregated' }, // pág. 24, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
+    { rawLabel:'Auxilio de transporte', normalizedCategory:'competition_bonus', amountNative:16.531, disclosureLevel:'aggregated' }, // pág. 24, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Otros auxilios (*)', normalizedCategory:'other_income', amountNative:394.384, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Propaganda y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:1997.067, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
     { rawLabel:'Derechos deportivos', normalizedCategory:'player_sales', amountNative:1506.472, disclosureLevel:'aggregated' }, // pág. 23, Jev 0.99
@@ -147,10 +147,10 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Derechos de televisión nacional(*)', normalizedCategory:'broadcasting', amountNative:1149.209, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
     { rawLabel:'Federación Colombiana de Futbol', normalizedCategory:'competition_bonus', amountNative:270, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
     { rawLabel:'Auxilio protocolos bioseguridad(*)', normalizedCategory:'other_income', amountNative:237.238, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Auxilio hotelero(*)', normalizedCategory:'other_income', amountNative:161.7, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Auxilio hotelero(*)', normalizedCategory:'competition_bonus', amountNative:161.7, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Convenio entre clubes', normalizedCategory:'other_income', amountNative:276.128, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.96
-    { rawLabel:'Auxilio de arbitraje(*)', normalizedCategory:'other_income', amountNative:60.875, disclosureLevel:'aggregated' }, // pág. 26, precedente
-    { rawLabel:'Auxilio de transporte(*)', normalizedCategory:'other_income', amountNative:52.26, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Auxilio de arbitraje(*)', normalizedCategory:'competition_bonus', amountNative:60.875, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
+    { rawLabel:'Auxilio de transporte(*)', normalizedCategory:'competition_bonus', amountNative:52.26, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Infraestructura(*)', normalizedCategory:'other_income', amountNative:12.842, disclosureLevel:'aggregated' }, // pág. 26, precedente
     { rawLabel:'Derechos de televisión internacional(*)', normalizedCategory:'broadcasting', amountNative:4.603, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
     { rawLabel:'Propaganda y publicidad', normalizedCategory:'sponsorship_commercial', amountNative:141.578, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
@@ -200,7 +200,7 @@ const fortalezaceifcoRevenueLinesByYear = {
     { rawLabel:'Auxilio Hotelero', normalizedCategory:'competition_bonus', amountNative:94.879, disclosureLevel:'aggregated' }, // pág. 22, precedente
     { rawLabel:'Auxilio Arbitraje', normalizedCategory:'competition_bonus', amountNative:67.811, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.91
     { rawLabel:'Convenio Entre Clubes', normalizedCategory:'other_income', amountNative:50, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.96
-    { rawLabel:'Auxilio Transporte', normalizedCategory:'other_income', amountNative:13.086, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'Auxilio Transporte', normalizedCategory:'competition_bonus', amountNative:13.086, disclosureLevel:'aggregated' }, // pág. 22, ajuste manual (auditoría 2026-10-04, hallazgo 12: auxilio de la Dimayor, como 2020)
     { rawLabel:'Comercio Al Por Mayor Y Al Por Menor', normalizedCategory:'sponsorship_commercial', amountNative:76.73, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.98
     { rawLabel:'Alquiler Deportivo', normalizedCategory:'other_income', amountNative:148, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'Subsidio Nomina Gobierno Nal', normalizedCategory:'other_income', amountNative:107.518, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99

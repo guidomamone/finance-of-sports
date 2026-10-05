@@ -23,7 +23,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:1.569, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2023",
-        mix:[["Comercial / Sponsors",0.221],["Estadio",0.105],["Televisión",0.335],["Premios por competencias",0.081],["Venta de Jugadores",0.289],["Educación",0.016],["Otros ingresos",0.523]] },
+        mix:[["Comercial / Sponsors",0.221],["Estadio",0.105],["Televisión",0.335],["Premios por competencias",0.118],["Venta de Jugadores",0.289],["Educación",0.016],["Otros ingresos",0.486]] },
     ],
   },
   2022: {
@@ -39,7 +39,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2021",
-        mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.068],["Venta de Jugadores",0.072],["Otros ingresos",0.373]] },
+        mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.137],["Venta de Jugadores",0.072],["Otros ingresos",0.304]] },
     ],
   },
   2020: {
@@ -47,7 +47,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:0.648, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2020",
-        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.116],["Venta de Jugadores",0.108],["Otros ingresos",0.187]] },
+        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.12],["Venta de Jugadores",0.108],["Otros ingresos",0.183]] },
     ],
   },
   2019: {
@@ -55,7 +55,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:1.057, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2019",
-        mix:[["Comercial / Sponsors",0.065],["Estadio",0.143],["Televisión",0.252],["Premios por competencias",0.057],["Venta de Jugadores",0.335],["Otros ingresos",0.205]] },
+        mix:[["Comercial / Sponsors",0.065],["Estadio",0.143],["Televisión",0.252],["Premios por competencias",0.063],["Venta de Jugadores",0.335],["Otros ingresos",0.199]] },
     ],
   },
   2018: {

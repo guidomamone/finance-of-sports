@@ -58,7 +58,7 @@ window.RANKINGS["co-primeraA"] = {
         mix:[["Comercial / Sponsors",1.106],["Estadio",2.73],["Televisión",1.609],["Premios por competencias",0.154],["Venta de Jugadores",0.419],["Otros ingresos",0.099]] },
       { id:"fortalezaceif-co", revenue:2.768, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2024",
-        mix:[["Comercial / Sponsors",0.589],["Estadio",1.012],["Televisión",0.34],["Premios por competencias",0.082],["Venta de Jugadores",0.342],["Educación",0.03],["Otros ingresos",0.373]] },
+        mix:[["Comercial / Sponsors",0.589],["Estadio",1.012],["Televisión",0.34],["Premios por competencias",0.141],["Venta de Jugadores",0.342],["Educación",0.03],["Otros ingresos",0.314]] },
       { id:"boyacachico-co", revenue:1.874, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",0.358],["Estadio",0.156],["Televisión",1.722],["Otros ingresos",-0.36]] },
