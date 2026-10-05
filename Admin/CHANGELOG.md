@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 497 — Goiás 2025: Earn In y "Outras Receitas (b)" a ítems excepcionales (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 10: la nota 22 "Outras Receitas e Despesas Operacionais" (Earn In de la Liga Forte União 7,98 M y Outras Receitas 1,44 M) estaba en `other_expenses` / `other_income`; en 2024 el mismo rubro está en `exceptional_items`. Las dos filas pasan a `exceptional_items` (la de ingreso se muda de lado con el mismo efecto en el resultado); totales oficiales sin la partida, como los calcula `cargar.mjs`. 2 ajustes `categoria`. ASSET_V 407 → 408.
+
 ## Versión 496 — AEL Larissa: "Λοιπά έξοδα και ζημιές" a ítems excepcionales, 2016-2025 (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 9: el renglón es "Έκτακτα κι ανόργανα έξοδα" (gastos extraordinarios y no operativos) según la nota de 2019-2025; 2016-2017 sin nota, mismo renglón del estado ΕΛΠ. Era `other_expenses`; 2024: 1,63 M€, el 46% del gasto.

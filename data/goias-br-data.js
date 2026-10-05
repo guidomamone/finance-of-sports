@@ -344,7 +344,6 @@ const goiasbrRevenueLinesByYear = {
     { rawLabel:'Patrocínio/bilheteria/Sócio Torcedor/ Outras', normalizedCategory:'sponsorship_commercial', amountNative:19.931127, disclosureLevel:'aggregated' }, // pág. 29, precedente
     { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:1.084364, disclosureLevel:'aggregated' }, // pág. 29, precedente
     { rawLabel:'(-) Demais deduções da receita', normalizedCategory:'other_income', amountNative:-2.364205, disclosureLevel:'aggregated' }, // pág. 29, precedente
-    { rawLabel:'Outras Receitas (b)', normalizedCategory:'other_income', amountNative:1.439848, disclosureLevel:'aggregated' }, // pág. 30, precedente
   ],
 };
 const goiasbrExpenseLinesByYear = {
@@ -641,7 +640,8 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Depreciação e amortização', normalizedCategory:'depreciation', amountNative:-2.521457, disclosureLevel:'aggregated' }, // pág. 30, precedente
     { rawLabel:'Água, telefone, energia e internet', normalizedCategory:'admin_general_expense', amountNative:-1.096766, disclosureLevel:'aggregated' }, // pág. 30, precedente
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.195678, disclosureLevel:'aggregated' }, // pág. 7, precedente
-    { rawLabel:'Despesas com Earn In (a)', normalizedCategory:'other_expenses', amountNative:-7.977865, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Despesas com Earn In (a)', normalizedCategory:'exceptional_items', amountNative:-7.977865, disclosureLevel:'aggregated' }, // pág. 30, ajuste manual (auditoría 2026-10-04, hallazgo 10: nota 22, como 2024)
+    { rawLabel:'Outras Receitas (b)', normalizedCategory:'exceptional_items', amountNative:1.439848, disclosureLevel:'aggregated' }, // pág. 30, ajuste manual (auditoría 2026-10-04, hallazgo 10: nota 22; se muda de ingreso a ítem excepcional, mismo efecto en el resultado)
   ],
 };
 const goiasbrFiscalYearMeta = {
@@ -885,7 +885,7 @@ const goiasbrFiscalYearMeta = {
       {renglon:'Serviços de terceiros (b)', lado:'expense', importe:12.827914, motivo:'Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)'},
     ],
     grossDebt:null, cash:null,
-    officialTotalRevenue:46.814472, officialTotalExpenses:142.154644, officialPAT:-98.110093,
+    officialTotalRevenue:45.374624, officialTotalExpenses:134.176779, officialPAT:-98.110093,
   },
 };
 const goiasbrPresupuestoOverlayByYear = {};
