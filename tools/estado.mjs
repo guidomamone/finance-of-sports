@@ -62,12 +62,21 @@ const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
 // En qué etapa está cada documento lo decide tools/etapa-doc.mjs, la MISMA función que usa el resumen del inventario. Cada fila: clave de
 // etapa-doc, qué significa, qué le falta, con qué se avanza, US$ por PDF (número, o función del PDF: localizar + extraer estimado, V446).
 const usdLocalizarYExtraer = (pdf) => 0.05 + estimarExtraerSinBloques(pdf).usd;
+// ETAPA 2 SIN .md, POR PÁGINAS (Versión 488, to-do 140m): con un costo fijo de US$ 0,20 por PDF el tablero subestimaba los PDFs largos (Lazio,
+// 19 PDFs de 151-208 páginas: ~US$ 4 acá contra US$ 25,60 del ensayo de pipeline.mjs). Ahora usa la MISMA cuenta que ese ensayo
+// (tools/resolver-inventario.mjs, dryRunDoc, caso "sin .md"): Mistral en todas las páginas + segunda voz en el 58% que tiene números
+// = 0,004 + 0,58 × (0,002 + 0,6 × 0,25 × 0,02 + 0,15 × 0,02) ≈ US$ 0,0086 por página. Las páginas salen de la caché que mantiene
+// pipeline.mjs (Admin/.paginas-cache.json, sin pdfinfo: el tablero tiene que seguir siendo instantáneo); un PDF que no está en la caché
+// sigue con los US$ 0,20 de antes. Es una estimación (pedido de Guido: no hace falta que sea perfecta); el gasto real lo da tools/gasto.mjs.
+const USD_POR_PAGINA_SIN_MD = 0.004 + 0.58 * (0.002 + 0.6 * 0.25 * 0.02 + 0.15 * 0.02);
+const PAGINAS = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, 'Admin', '.paginas-cache.json'), 'utf8')); } catch { return {}; } })();
+const usdTranscribir = (pdf) => (PAGINAS[pdf]?.n ? PAGINAS[pdf].n * USD_POR_PAGINA_SIN_MD : 0.20);
 const ETAPAS = [
   ['1. CONSEGUIR EL PDF (el sourcing no pasa por este registro: acá solo aparecen los PDFs que llegaron rotos)', [
     ['e1-roto', 'El archivo no es un PDF o está cortado', 'Volver a bajarlo (el link está en fuentes/<País>/<Club>.md).', 'a mano', 0],
   ]],
   ['2. TRANSCRIBIR Y VALIDAR LA TRANSCRIPCIÓN', [
-    ['e2-sin-md', 'Solo PDF, sin transcripción (escalón 0)', 'Transcribir (Mistral) y validar.', 'pipeline.mjs --ejecutar', 0.20],
+    ['e2-sin-md', 'Solo PDF, sin transcripción (escalón 0)', 'Transcribir (Mistral) y validar.', 'pipeline.mjs --ejecutar', usdTranscribir],
     ['e2-sin-tablas', 'Transcripción vieja sin tablas (escalón 0)', 'Rehacer con Mistral (una vez).', 'pipeline.mjs --ejecutar', 0.10],
     ['e2-sin-verificar', 'El .md cambió después de validarse', 'Revalidar (gratis si no aparecen dudas; solo las páginas cambiadas, V443).', 'inventario-transcripciones.mjs', 0],
     ['e2-revisar', 'Escalón 1a: cifras distintas del texto del PDF', 'Resolver: Claude solo en las páginas dudosas.', 'resolver-inventario.mjs --ejecutar (lo corre lote.mjs)', 0.10],

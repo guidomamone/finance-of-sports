@@ -343,6 +343,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.
+- Al abrir la cola, se cierran solos (estado "obsoleto", sin efecto en ninguna tool) los casos de `verificar` y de `cargar · perimetro` de
+  años que ya están en el sitio: ya no frenan nada. Nunca los de categoría (pueden tocar un dato publicado) ni los de perfil (son del club).
+  Si una etapa vuelve a levantar uno, se reabre y no se vuelve a cerrar solo.
 - Las dudas de la IA traen un tema de una lista fija (usar un cuadro por segmento, cuadro duplicado, cuadro de otro año, perímetro, escala,
   columna, fila ilegible, otro) y el renglón al que afectan. Una duda de tema fijo se reconoce por club + tema + renglón: si Guido ya la
   contestó en cualquier año del club, se aplica sola.
@@ -396,3 +399,169 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).
 7. Perímetro: cuando un documento trae los dos estados (individual y consolidado), se carga el **individual**, salvo que una controlada
    concentre ingresos del club (por ejemplo, el marketing): eso se mira en el `.md` antes de fijar el ajuste `perimetro` del club. Se fija
    antes del primer lote. Casos: Boca, Racing, Panathinaikos, Juventus.
+
+
+---
+
+## Documentos fuente: carpetas, transcripción y trampas de PDF (venía de `CLAUDE.md`)
+
+Texto movido sin cambios. Lo que dice "este archivo" o "acá" se refería a `CLAUDE.md`.
+
+## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
+
+Todos los PDFs fuente Y sus transcripciones a Markdown viven JUNTOS, en la
+misma carpeta: `finance-of-sports/Clubes/<País>/<Club>/` — NO carpetas sueltas
+tipo `racing-pdfs/`, `river-pdfs/` al nivel raíz (eso fue un error temprano,
+corregido en la Versión 17), y NO dos árboles paralelos separados para PDFs
+y para transcripciones (eso fue el esquema `PDFs/` + `pdf-extracts/` de la
+Versión 17, reemplazado en la Versión 28 a pedido de Guido: quería el PDF y
+su transcripción uno al lado del otro, no en dos carpetas distintas que hay
+que mantener sincronizadas).
+
+Ejemplo actual: `Clubes/Argentina/Boca/`, `Clubes/Argentina/River/`,
+`Clubes/Argentina/Racing/`. País y club van CAPITALIZADOS (`Argentina`,
+`Boca`, `River`, `Racing` — no `argentina`/`boca` en minúscula). Ojo: esto es
+distinto del criterio que sigue usando el CÓDIGO del sitio para los
+`clubId` (`boca`, `river`, `racing`, siempre en minúscula) — son dos
+convenciones separadas a propósito, una para carpetas (legible para Guido en
+Finder), otra para identificadores internos (consistente con el resto del
+código). Si en el futuro se agrega un club de otro país (ej. Flamengo,
+Brasil), la carpeta nueva es `Clubes/Brasil/Flamengo/` — NUNCA una carpeta
+nueva al nivel raíz de `finance-of-sports/` por club o por país.
+
+Dentro de la carpeta de cada club podés tener subcarpetas propias si hace
+falta separar por tipo o por procedencia del documento (ej.
+`Clubes/Argentina/River/estados-contables-leads/` para el PDF de fuente no
+oficial — Y su transcripción, juntos ahí también, mismo criterio) — eso sí
+está bien, lo que no escala es una carpeta nueva por club al nivel raíz del
+proyecto.
+
+**OJO CON LO QUE SE TRACKEA, que no es lo mismo que lo que se guarda (2026-09-17).**
+El repo entero se deploya: Netlify publica la raíz, así que cualquier archivo
+trackeado queda servido en `financeofsports.com/<su ruta>` salvo que `netlify.toml`
+lo saque del artefacto de deploy (ver arriba: `Admin/` y poco más). Los PDFs no viajan (`*.pdf` está en `.gitignore`),
+pero las transcripciones `.md` sí, y son 106 MB de los 110 MB del repo. Para un
+balance oficial eso está bien y hasta es coherente con el proyecto. Para un
+documento que NO es del dominio del club, no: la carpeta
+`Clubes/Argentina/River/estados-contables-leads/` está en `.gitignore` por eso —
+el PDF se consiguió en una réplica de la comunidad tuRiver. Los archivos siguen en
+la máquina y se usan igual; lo único que cambia es que no se publican. **Si
+aparece otra fuente no oficial, mismo criterio: se guarda, no se trackea.**
+
+## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo
+
+Cuando se descarga o recibe un PDF nuevo para este proyecto (balance, presupuesto,
+lo que sea), lo primero que se hace con él — antes de extraer datos, antes de
+cargar nada al sitio — es transcribir el contenido COMPLETO a un archivo
+`.md`, en LA MISMA carpeta que el PDF: `finance-of-sports/Clubes/<País>/<Club>/`
+(crear las carpetas si no existen), con el mismo nombre base que el PDF (ej.
+`Memoria y Balance al 30-06-2025.pdf` → `memoria-y-balance-2024-25.md`, los
+dos juntos en `Clubes/Argentina/Boca/`).
+
+Por qué: estos PDFs suelen ser escaneos sin capa de texto (pdftotext no sirve),
+así que leerlos implica OCR o (si no hay más remedio) renderizar página por
+página como imágenes con el Read tool — caro en tokens. Guido quiere poder
+iterar sobre CÓMO se muestra un número (probar formatos, reclasificaciones,
+layouts) sin que cada prueba implique volver a abrir el PDF de página en
+página. Con el `.md` ya transcripto, esas iteraciones futuras leen texto
+plano — rápido y barato.
+
+Actualizado (Versión 90 de `index.html`, onboarding de Vélez Sarsfield): para
+un PDF escaneado sin capa de texto, antes de recurrir al Read tool sobre
+imágenes, instalar Tesseract (`brew install tesseract tesseract-lang`) y
+generar la transcripción con `pdftoppm -png -r 300` + `tesseract -l spa
+--psm 6` página por página — mucho más barato en tokens, y el OCR de tablas
+numéricas resultó muy confiable en la práctica. Ver
+`.claude/skills/club-data-mapping/SKILL.md` sección 15 para el flujo
+completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
+cómo verificar los números del OCR fila por fila antes de cargarlos).
+
+**En el onboarding con el pipeline, la transcripción (etapa 2) la corre `tools/pipeline.mjs --sin-jev`, que además la valida: ver el
+skill `club-or-year-onboarding`.** Lo que sigue describe los motores que usa por dentro y el camino para un PDF suelto.
+
+**ACTUALIZADO OTRA VEZ (Versiones 244-248, 2026-09-26): el DEFAULT para transcribir en volumen ya
+no es que la sesión de Claude lo haga, es mandarlo a una API externa barata, corrida por Guido desde
+SU PROPIA terminal — 0 tokens de Claude, sea 1 PDF o sean 2000.** El test completo (30 documentos,
+costo y calidad comparados cifra por cifra) está en `Admin/test-costo-transcripcion.md`; el criterio
+que salió de ese test:
+
+1. **Default: `node tools/mistral-ocr-transcribe.mjs --all`** (Mistral OCR, motor de extracción
+   dedicado, ~$4 cada 1000 páginas). Marca en la consola y con una advertencia adentro del `.md`
+   cuando el PDF es un escaneo — en ese caso, antes de cargar esos datos hace falta verificar a mano
+   contra el PDF (`club-data-mapping` sección 6): es el único caso real donde encontramos que
+   inventa un número con la misma confianza que uno bien leído, en vez de avisar.
+2. **`node tools/gemini-transcribe.mjs --redo-mistral-scanned`** (Gemini 3.8 Flash) para lo que
+   Mistral marcó como escaneo y amerita más cuidado — OJO, no es `--all`: ese flag busca PDFs sin
+   ningún `.md` y se saltea justo los que Mistral ya tocó (aunque los haya marcado escaneados) — en el test manejó escaneos rotados/dañados sin errores. Rechaza
+   ~1 de cada 4 documentos con `finishReason: RECITATION` (falso positivo de copyright de Google,
+   más común en "memorias" narrativas) — no es un problema del documento ni de Mistral.
+3. **Un subagente de Claude** (el flujo de siempre, Tesseract incluido, descripto abajo) para lo que
+   Gemini rechaza por RECITATION, o cualquier caso donde ninguna de las dos APIs alcance. Es el más
+   caro (70.000-290.000 tokens por documento) pero también el más minucioso: cruza sumas entre notas,
+   marca `[ilegible]` en vez de inventar, y corrige ambigüedades de OCR contra el resto del documento.
+
+Las dos APIs necesitan su propia key en `Admin/gemini/.env` / `Admin/mistral/.env` (gitignoreadas,
+mismo criterio que la de Resend) — si no existen todavía, pedírselas a Guido, no asumir que hay que
+usar el flujo de Tesseract de abajo por default.
+
+**Los pasos 1 y 2 corren solos `tools/check-transcripcion-fidelidad.js` (to-do 90) sobre cada `.md`
+recién escrito, y avisan en la consola si encuentran algo** — no hace falta acordarse de correrlo
+aparte para esos dos. El chequeo mira CONTENIDO, no solo cantidad de páginas: agarra un bloque
+reemplazado por un resumen en inglés en vez de transcripto (el error real que dejó pasar el test de
+costo de Haiku, ver `Admin/test-costo-transcripcion.md`) y huecos en la numeración de página. Es
+gratis (script de Node puro, sin ninguna llamada a modelo) y no bloquea la transcripción si encuentra
+algo, solo marca qué archivo revisar antes de onboardear. **El paso 3 (subagente de Claude) NO lo
+corre solo** — correlo a mano al terminar (`node tools/check-transcripcion-fidelidad.js
+<archivo.md>`), es la misma clase de modelo (chat, no motor de extracción) que produjo el bug
+original, así que el chequeo tiene más chance real de encontrar algo ahí que en Mistral.
+
+Qué transcribir: TODO el documento, página por página, en el mismo orden,
+incluyendo tablas (como tablas Markdown o listas alineadas, lo que se lea
+mejor), números exactos tal cual figuran impresos (sin redondear, sin
+reclasificar a ninguna categoría del sitio todavía — eso es un paso aparte,
+después), y una marca de página (ej. `--- pág. 76 ---`) antes de cada una para
+poder citar la fuente exacta más adelante. Es una transcripción fiel, no un
+resumen: si se resume o se salta contenido "poco relevante", se pierde
+justamente el dato suelto que capaz hace falta en una sesión futura.
+
+Una vez que el `.md` está armado, se usa ESE archivo (no el PDF) para extraer
+los datos que se vayan a cargar a `<club>RevenueLinesByYear`/
+`<club>ExpenseLinesByYear`/etc. (ver `data/river-data.js` para el shape, el
+mismo que usan todos los clubes incluida Boca desde la Versión 102), y para
+cualquier experimentación de formato que pida Guido más adelante sobre ese
+mismo documento.
+
+### Trampas de PDF y de grep
+
+- **`grep -oP '.{20}CARACTER.{20}'` (u otro cuantificador de caracteres
+  alrededor de un carácter especial) puede fallar en silencio cerca de
+  acentos**: el cuantificador `.{N}` con `-P` (PCRE) en este entorno no
+  cuenta bien caracteres cuando hay vocales acentuadas cerca (más, línea,
+  categoría, año) del texto en español, así que una línea real puede
+  simplemente no aparecer en el resultado, dando una falsa sensación de "ya
+  no queda ninguna". El chequeo confiable: `grep -n 'CARACTER' archivo` (sin
+  capturar contexto con un cuantificador de caracteres, solo el número de
+  línea) y revisar cada línea completa a mano.
+- **`pdfinfo archivo.pdf | grep "^Pages:"` puede devolver VACÍO en silencio
+  si el PDF trae bytes NUL en sus metadatos** (encontrado en la transcripción
+  masiva de la Versión 156/157, con PDF de clubes chinos generados por
+  PDFsharp: el campo `Producer` arrastra restos de un string UTF-16 de
+  Windows sin convertir, con bytes `\0` de por medio). `grep` detecta esos
+  bytes NUL, decide que el stream es binario, y deja de hacer matching línea
+  por línea — así que la línea `Pages:` (que viene DESPUÉS de `Producer` en
+  la salida de `pdfinfo`) nunca aparece, aunque `pdfinfo` sin pipear muestre
+  todo bien. Síntoma típico: una variable de cantidad de páginas que queda
+  vacía y rompe el comando siguiente (`seq 1 ""` → "invalid floating point
+  argument"), no un error de `pdfinfo` en sí. El fix es `grep -a` (fuerza a
+  tratar el input como texto pase lo que pase) en vez de `grep` a secas,
+  cualquier vez que se parsee la salida de `pdfinfo` (o de cualquier otra
+  herramienta que pueda traer metadata binaria) con grep.
+- **`pdftotext` puede devolver texto que "funciona" (no vacío, sin error) pero es MOJIBAKE, no el
+  contenido real** (encontrado transcribiendo `Clubes/Ucrania/Kolos Kovalivka/kolos-auditor-
+  info-adicional-2025.pdf`, Versión 214): el PDF tenía capa de texto, pero sus fuentes eran
+  Helvetica/WinAnsi no embebidas y sin mapa ToUnicode (confirmable con `pdffonts`), así que
+  `pdftotext` devolvía caracteres latinos sin sentido (`TOB (AyAI4TOPCbKA`) en vez del cirílico real
+  (`ТОВ «АУДИТОРСЬКА»`). La señal: si el idioma esperado del documento es no-latino (cirílico,
+  griego, etc.) y `pdftotext` devuelve caracteres latinos, no asumas que "no tiene texto que
+  aportar" ni that el documento está en otro idioma — es mojibake. Tratarlo como escaneado (OCR con
+  Tesseract, en el idioma real del documento) en vez de confiar en esa capa de texto rota.

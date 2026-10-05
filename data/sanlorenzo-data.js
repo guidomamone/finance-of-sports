@@ -382,8 +382,8 @@ const sanLorenzoExpenseLinesByYear = {
   2014: [
     { rawLabel:'Fútbol (gasto)', normalizedCategory:'lump_football_operations_expense', amountNative:-136.115811, disclosureLevel:'detailed' },
     { rawLabel:'Administración central (gasto)', normalizedCategory:'admin_general_expense', amountNative:-37.631270, disclosureLevel:'detailed' },
-    { rawLabel:'Ciudad deportiva (gasto)', normalizedCategory:'other_expenses', amountNative:-15.830241, disclosureLevel:'detailed' },
-    { rawLabel:'Subsedes', normalizedCategory:'other_expenses', amountNative:-9.033083, disclosureLevel:'detailed' },
+    { rawLabel:'Ciudad deportiva (gasto)', normalizedCategory:'admin_general_expense', amountNative:-15.830241, disclosureLevel:'detailed' },
+    { rawLabel:'Subsedes', normalizedCategory:'admin_general_expense', amountNative:-9.033083, disclosureLevel:'detailed' },
     { rawLabel:'Depreciación de bienes de uso', normalizedCategory:'depreciation', amountNative:-2.528849, disclosureLevel:'detailed' },
     { rawLabel:'Amortización de activos intangibles', normalizedCategory:'player_amortisation', amountNative:-19.150669, disclosureLevel:'detailed' },
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-0.411839, disclosureLevel:'detailed' },

@@ -14,7 +14,8 @@
 //   {tipo:'respuesta', id, ts, decision, valor, nota}
 // Al leer, la última respuesta de cada caso gana. Un caso con la misma `clave` (pdf | etapa | motivo | detalle) no se agrega dos veces.
 //
-// (decision 'obsoleto' la escribe sola una etapa cuando su última corrida ya no levanta el caso: ver cerrarObsoletos)
+// (decision 'obsoleto' la escribe sola una etapa cuando su última corrida ya no levanta el caso: ver cerrarObsoletos; y este mismo
+// comando, al listar, para los casos de años que ya están cargados en el sitio: ver cerrarCargados)
 // QUÉ PUEDE CONTESTAR GUIDO (decision):
 //   aceptar          la propuesta del sistema está bien (o el número del .md está bien): se usa
 //   corregir         el valor correcto es `--valor` (un importe, una categoría, un perímetro...): se usa ese
@@ -38,6 +39,7 @@ import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // COLA_ARCHIVO (variable de entorno) apunta a otro archivo: para probar las tools sin ensuciar la cola real.
@@ -140,6 +142,40 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
   return n;
 }
 
+// CASOS DE AÑOS YA CARGADOS (Versión 487, to-do 141a, pedido de Guido). La cola mostraba casos que no esperaban nada: el año del documento
+// ya estaba en el sitio (Juventus 2003, 2004, 2016, 2017, 2019 y 2020: 11 casos). Cerrarlos a mano no servía: 'descartar' quiere decir "este
+// documento no se carga" y 'aceptar' se vuelve regla del club, y las dos tienen efecto en las corridas siguientes. Se cierran con el ESTADO
+// 'obsoleto' (no es una respuesta: respuestaDe() y casoYRespuesta() no lo ven, así que ninguna tool cambia lo que hace), y si una etapa vuelve
+// a levantar el caso, agregarCaso() lo reabre ('reabierto'). Un caso REABIERTO no se vuelve a cerrar acá: si una etapa lo levantó de nuevo es
+// porque alguien está re-procesando ese año, y Guido tiene que verlo.
+// QUÉ SE CIERRA: solo los casos de 'verificar' (deciden si un año se carga; si ya se cargó, no frenan nada) y los de 'cargar · perimetro' (si
+// el año se cargó, el perímetro ya se decidió). NUNCA 'cargar · categoria' (puede ser una categoría dudosa de un dato ya publicado: contestarla
+// puede cambiar lo que se ve) ni 'cargar · perfil' (es sobre el club, no sobre ese año, y sirve para los años que vienen).
+// "AÑO CARGADO", igual que lote.mjs (Versión 442): el registro (`cargado` en Admin/transcripciones-estado.jsonl) o, si el registro quedó
+// viejo, el sitio: el club y el año de la última propuesta de carga del documento (`.carga.json`) están en su fiscalYearMeta.
+const cierraSiCargado = (c) => c.etapa === 'verificar' || (c.etapa === 'cargar' && c.motivo === 'perimetro');
+export async function cerrarCargados() {
+  const L = leer(); const cand = [...L.casos.values()].filter((c) => pendiente(c, L) && cierraSiCargado(c) && !L.cerrado.has(c.id));
+  if (!cand.length) return [];
+  const reg = new Map();
+  try { for (const l of readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').split('\n')) { if (!l.trim()) continue; const e = JSON.parse(l); reg.set(e.pdf, e); } } catch { /* sin registro: solo el sitio */ }
+  let sitio = null; const cerrados = [];
+  for (const c of cand) {
+    const e = reg.get(c.pdf); let donde = e?.cargado ? 'según el registro' : null;
+    if (!donde) {
+      try {
+        const md = c.md || e?.md; const p = md ? resolve(ROOT, derivado(md, '.carga.json', { crear: false })) : null;
+        const k = p && existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null;
+        if (k?.clubId && k?.year) { sitio ??= (await import('./proponer-carga.mjs')).loadSite(); if (sitio.generic?.[k.clubId]?.fiscalYearMeta?.[k.year]) donde = `${k.clubId} ${k.year}`; }
+      } catch { /* sin propuesta de carga legible: no se cierra */ }
+    }
+    if (!donde) continue;
+    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id: c.id, ts: new Date().toISOString(), decision: 'obsoleto', nota: `el año ya está cargado en el sitio (${donde}); la pregunta no frena nada` }) + '\n');
+    cerrados.push(c);
+  }
+  return cerrados;
+}
+
 // RESUELTO POR UNA RESPUESTA DEL CLUB (Versión 348). Una etapa aplicó a ESTE documento la respuesta que Guido dio en OTRO documento del
 // mismo club (cargar.mjs, categoría por etiqueta: "Otras ganancias (pérdidas)" de UC contestada en 2014). Si este documento tiene su propio
 // caso pendiente con la misma clave, ya no hace falta: se cierra con decision 'obsoleto' y la nota dice qué respuesta lo resolvió. Solo toca
@@ -182,6 +218,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
     process.exit(0);
   }
+  const cerradosPorCarga = await cerrarCargados();
+  if (cerradosPorCarga.length) console.log(`Cerré ${cerradosPorCarga.length} caso(s) de años que ya están en el sitio (no esperaban nada; si una etapa los vuelve a levantar, se reabren solos).\n`);
   const L = leer(); const { casos, resp, cerrado } = L;
   const lista = [...casos.values()].filter((c) => A.includes('--todas') || pendiente(c, L));
   if (!lista.length) { console.log('La cola está vacía.'); process.exit(0); }

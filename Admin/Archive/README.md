@@ -29,3 +29,5 @@ Qué hay hoy:
 - `todos-cerrados-onboarding-manual.md` — los to-dos 98, 105, 85, 89 y 108 del onboarding manual, cerrados por el pipeline; tal cual estaban, porque varios archivos los citan por número. Archivado en la 475.
 - `convenciones-historia.md` — dos textos de `Admin/CONVENCIONES.md` que ya no mandaban: la regla de la Versión 49 (reemplazada por la 189) y la copia del párrafo de `netlify.toml` de `CLAUDE.md`. Archivado en la 477.
 - `todo-sacados-2026-09-14.md` — la lista de puntos que Guido sacó del TODO el 2026-09-14 (onboarding de ejercicios faltantes, Mercado de Pases, sourcing por país, dominio y repo, cards de presupuesto, payload de `data/`, free/paid), con el motivo de cada uno. Estaba en el encabezado de `Admin/TODO.md`. Archivado el 2026-10-04.
+- `estado-historia.md` — tres textos de `Admin/ESTADO.md` que eran historia (por qué es un archivo, el retiro de los placeholder, la copia del párrafo de netlify). Archivado en la 485.
+- `CLAUDE-md-hasta-2026-10-04.md` — `CLAUDE.md` antes de achicarlo de 30 a 6 KB; arriba dice a dónde se mudó cada parte viva. Archivado en la 486.

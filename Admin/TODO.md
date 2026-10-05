@@ -50,11 +50,8 @@ ni en el comentario de ningún archivo de código.
         pasen a ser configuración que las tools lean, grupo por grupo.
     (l) Que el pipeline cubra presupuestos: hoy `localizar.mjs` no los elige y se cargan a mano (`Admin/ARQUITECTURA.md` ex §11,
         presupuesto y balance del mismo año; `Admin/CONVENCIONES.md` ex §15, presupuesto en año calendario).
-    (m) `estado.mjs` estima la etapa 2 con un costo fijo por documento (US$ 0,20) y subestima los PDFs largos: Lazio, 19 PDFs de 151-208
-        páginas, da ~US$ 4 contra US$ 25,60 del ensayo de `pipeline.mjs`, que cuenta páginas. Que estime por páginas, como el ensayo.
 
 141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
-    (a) Cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados).
     (b) Ordenar la cola por impacto.
     (c) Que una respuesta de la cola se vuelva regla (una convención de un grupo de países en `tools/grupos-pais.mjs`). Las respuestas de
         categoría ya quedan como precedente del club (`Admin/categorias-aprendidas.jsonl`); las demás no.
@@ -77,13 +74,6 @@ ni en el comentario de ningún archivo de código.
       `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
       lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
 
-143. PARTIR LOS DOCUMENTOS QUE SE LEEN EN CADA SESIÓN (estudio del 2026-10-04, pedido de Guido: "cosas que no hacen
-    falta que sean en cada sesión, no tienen que leerse"). Hoy se leen ≈225 KB (≈65.000 tokens) antes de empezar; con 4
-    particiones bajan a ≈85-90 KB. Hecho: CONVENCIONES partido (proceso / `CONVENCIONES-DATOS.md` / `PANTALLA.md`) y el TODO
-    sin el sourcing por país y sin leerse al arrancar. Falta: ESTADO sin la descripción de la pantalla (≈35 KB), CLAUDE.md a ≈10 KB (≈20 KB, y se paga también
-    en cada subagente). La mudanza de PIPELINE/ARQUITECTURA ya cerró, así que se pueden encarar; sacar los gotchas del
-    navegador de CLAUDE.md y tocar los skills necesita el ok de Guido. Detalle y riesgos: `auditorias/2026-10-04-partir-archivos.md`.
-
 101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
     CONTRA LOS 162 CLUBES (2026-09-28, ver el ex to-do 98 en `Admin/Archive/todos-cerrados-onboarding-manual.md`). Mismo rubro, mismo lado (ingreso o gasto),
     categoría DISTINTA entre ejercicios del MISMO club — no es un bug de la tool (ya separa
@@ -91,15 +81,10 @@ ni en el comentario de ningún archivo de código.
     contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
     años es correcto, si lo es):
     - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/tests/test-categorizar-claude.md`)**: los errores de
-      Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: San Lorenzo "Ciudad deportiva" y "Ciudad
-      deportiva (gasto)" en categorías distintas; "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
+      Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
       de juveniles de Boca en `wages_squad` contra la regla del skill; "Interese perdidos" de Almagro como línea (los intereses van a
       `netInterest`); River "Educación" (gasto) fuera de `education_expense`; gastos de transferencias partidos 40 `other_expenses` / 31
       `player_amortisation`. Mientras sigan, parte del "error" medido de la categorización automática es la vara.
-    - **Argentinos Juniors** (gasto): "Estadio y predios" -> `match_organisation_expense` en 2015,
-      `admin_general_expense` en 2019.
-    - **San Lorenzo** (gasto): "Subsedes" -> `admin_general_expense` en 2011, `other_expenses` en
-      2014.
 
     **Además, un FALSO positivo de la propia tool, no un conflicto real**: Mallorca marcó
     "Otros gastos de gestión corriente" (2025) en conflicto, pero son 2 rubros DISTINTOS del

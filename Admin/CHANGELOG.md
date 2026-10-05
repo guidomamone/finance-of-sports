@@ -15,13 +15,42 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión ?? — Siete series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY, MXN y PEN (to-do 112) (2026-10-04)
+## Versión 489 — Siete series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY, MXN y PEN (to-do 112) (2026-10-04)
 
 - `tools/fetch-fx-reference.mjs`: SEK (Riksbank), PLN (NBP, tabla A), HRK (HNB, tipo medio, hasta 2022-12-31), y JPY, CNY y MXN (Reserva Federal H.10 vía FRED). PEN, del Banco de Pagos Internacionales (BIS), que la recibe del BCRP: el BCRP, la SBS y la SUNAT bloquean la descarga automática. Series nuevas en `tools/fx-reference/`; son 21 monedas en total.
 - `tools/lookup-fx-close.js` y `tools/alta-club.mjs` (`SERIES_FX`) las leen.
 - Verificadas contra el cruce del BCE (diferencias entre 0% y 1,2%, por la hora de fijación) y contra los tipos que declaran los documentos: HRK exacto en Dinamo Zagreb 2020 y 2021; MXN −0,02% en Atlas 2019 y −0,06% en América 2024; CNY −0,21% en Guangzhou 2019; PEN exacto en los cierres 2023 y 2024 de Alianza Lima (tipo contable SBS) y +0,09% en 2022.
-- `data/currency-map.js`, `FX_PLAUSIBLE_RANGE`: COP [2500, 5000] → [1600, 5500] y BRL [3, 7] → [1,4; 7,5], según las series. Novorizontino 2010 (BRL 1,6662) quedaba afuera del rango viejo. **Al mergear: subir ASSET_V.**
+- `data/currency-map.js`, `FX_PLAUSIBLE_RANGE`: COP [2500, 5000] → [1600, 5500] y BRL [3, 7] → [1,4; 7,5], según las series. Novorizontino 2010 (BRL 1,6662) quedaba afuera del rango viejo. ASSET_V 403 → 404; generadores corridos.
 - TODO 112: salen los perímetros resueltos como consolidado y las preguntas de `--dudas` (se ven al trabajar cada club), la corrida de Claude de los 91 documentos y las series.
+## Versión 488 — estado.mjs estima la etapa 2 por páginas (ex to-do 140m) (2026-10-04)
+
+- `tools/estado.mjs`: un PDF sin `.md` cuesta páginas × US$ 0,0086 (la misma cuenta que el ensayo de `pipeline.mjs`), con las páginas de `Admin/.paginas-cache.json`; si el PDF no está en la caché, sigue en US$ 0,20. Lazio: ~US$ 4 → ~US$ 25 (el ensayo da 25,60). Todo el inventario sin `.md`: ~US$ 910 → ~US$ 1.068. El resto del tablero, idéntico.
+
+## Versión 487 — La cola cierra sola los casos de años ya cargados (ex to-do 141a) (2026-10-04)
+
+- `tools/cola.mjs`: `cerrarCargados()`, que corre al listar: cierra como "obsoleto" los casos pendientes de `verificar` y de `cargar · perimetro` cuyo año ya está en el sitio (registro o `.carga.json` + `fiscalYearMeta`, como lote.mjs). Nunca categoría ni perfil; un caso reabierto no se vuelve a cerrar. Cerró los 11 de Juventus.
+- Medido sobre copias de la cola: las respuestas que leen las tools, idénticas (600 → 600); 0 casos de categoría cerrados (43 de 43 siguen); un caso vuelto a levantar reaparece; ensayo del lote de `prueba-completa` idéntico; propuesta de carga de los 87 documentos idéntica con y sin el cambio.
+- `Admin/PIPELINE.md`, cola humana: la regla.
+
+## Versión 486 — CLAUDE.md de 30 a 6 KB; to-do 143 cerrado (2026-10-04)
+
+- `CLAUDE.md` reescrito corto: separación del sitio profesional, netlify, dónde va un documento, archivar, al empezar, antes de terminar, cada PDF nuevo, precisión y punteros a las trampas.
+- Movido sin cambios: carpetas de `Clubes/`, transcripción y trampas de PDF/grep a `Admin/PIPELINE.md` ("Documentos fuente"); trampas del navegador a `Admin/PANTALLA.md`; agentes en paralelo y el Browser a la skill `club-sourcing`. Original en `Admin/Archive/CLAUDE-md-hasta-2026-10-04.md`.
+- To-do 143 cerrado: lo que se lee al arrancar bajó de ~225 KB a ~45 KB.
+
+## Versión 485 — ESTADO sin la descripción del sitio (to-do 143, paso 3) (2026-10-04)
+
+- `Admin/ESTADO.md` (50 → 11 KB): queda el estado (objetivo, pipeline, sitio, analytics, datos, "Si algo no cierra").
+- A `Admin/ARQUITECTURA.md`: convención de archivos, taxonomía del selector, liga por ejercicio, tamaño de liga, índice liviano, verificación automática, fuentes, procedencia del fx y "Dónde está cada cosa". A `Admin/PANTALLA.md`: presupuestos por club, pestañas, Ligas, simular clubes, selector, portada, Comparar, toggles, idiomas, caché de assets y branding. Texto sin cambios.
+- `Admin/Archive/estado-historia.md`: por qué es un archivo, el retiro de los placeholder y la copia del párrafo de netlify.
+- Skill de arranque: pesos de ESTADO (11), ARQUITECTURA (60) y PANTALLA (63).
+
+## Versión 484 — Mantener instalaciones va a Administración: Argentinos y San Lorenzo (to-do 101) (2026-10-04)
+
+- Criterio (Guido): el costo de mantener instalaciones (estadio, predios, ciudad deportiva, sedes) es `admin_general_expense`.
+- `data/argentinosjuniors-data.js`: "Estadio y predios" 2015 y "Sueldos y cargas sociales (Estadio y predios)" 2016-2018, de `match_organisation_expense` a `admin_general_expense` (la columna de la sección es mantenimiento, servicios, impuestos y personal; 2019 ya estaba así).
+- `data/sanlorenzo-data.js`: "Ciudad deportiva (gasto)" y "Subsedes" 2014, de `other_expenses` a `admin_general_expense`, como 2011.
+- Totales sin cambio; `auditAll()` sin "no cierra" de los dos. ASSET_V 402 → 403; generadores corridos.
 
 ## Versión 483 — Estudiantes: "Reconocimientos y premios" en sueldos del plantel todos los años (to-do 101) (2026-10-04)
 
