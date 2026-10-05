@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 522 — To-do 140(d) cerrado: premisa vencida (2026-10-05)
+
+- "Reabrir solo el sourcing de un PDF roto" ya lo hace `estado.mjs` desde la Versión 447 (lista el PDF roto con la ficha de `fuentes/` a reabrir). El único caso, Unión Magdalena `dictamen-revisor-fiscal-2021.pdf` (una página HTML guardada como .pdf), ya está documentado en su ficha; volver a bajarlo es sourcing, y SIIS no devuelve la ruta del PDF de 2021 (régimen Pymes).
+- Notas de sourcing: los 6 duplicados con años distintos del 140(c) quedaron en `fuentes/<País>/_notas-generales.md` (Colombia, Inglaterra, Kazajistán, República Checa, Portugal).
+
 ## Versión 521 — To-do 140(c): PDFs duplicados por huella; 140(b) sin caso (2026-10-05)
 
 - `inventario-transcripciones.mjs`: sha1 de cada PDF (cacheado por tamaño y fecha: la primera corrida hashea 10 GB, las siguientes ~20 s) y estado `duplicado` para las copias idénticas (queda el cargado, si no el que tiene .md, si no el que no se llama como un anexo, si no la primera ruta; un PDF cargado nunca pasa a duplicado). `etapa-doc.mjs` lo nombra (etapa 1); `lote.mjs` lo saltea; `pipeline.mjs` no lo transcribe (elige por estado).
