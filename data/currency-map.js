@@ -396,8 +396,8 @@ const FX_PLAUSIBLE_RANGE = {
   ARS: [3, 3000],        // Argentina: alta inflación, rango histórico amplio a propósito (clubes
                           // cargados van de ~$4 en 2011 a ~$1900 en presupuestos 2026/27)
   CLP: [600, 1200],      // Chile
-  COP: [2500, 5000],     // Colombia
-  BRL: [3, 7],           // Brasil
+  COP: [1600, 5500],     // Colombia — serie TRM 2010-2026: mínimo 1.748 (2011), máximo 5.061 (2022)
+  BRL: [1.4, 7.5],       // Brasil — serie PTAX 2010-2026: mínimo 1,53 (2011), máximo 6,21 (2024)
   PEN: [3, 5],           // Perú
   EUR: [0.7, 1.15],      // España — OJO: EUR/USD (cuántos USD vale 1 EUR) ronda 1,0-1,2, así que el
                           // fx que va ACÁ (EUR por 1 USD) es el INVERSO, ~0,85-1,0. Si aparece un
