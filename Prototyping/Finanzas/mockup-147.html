@@ -49,13 +49,18 @@ h1{font-size:28px;margin:0;display:flex;align-items:center;gap:6px}
 .seg{display:inline-flex;border:1px solid var(--border);border-radius:7px;overflow:hidden}
 .seg button{border:0;border-radius:0}.seg button.on{background:var(--azul);color:#fff}
 .hint{font-size:12px;color:var(--muted)}
-.gestwrap{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-left:14px}
+.realnote{margin-top:8px;font-size:12.5px;background:#eef6f0;border:1px solid #cfe5d6;border-radius:8px;padding:8px 12px;color:#1d4d2e}
+.realnote b{font-variant-numeric:tabular-nums}
+.gestwrap{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#gestRow:has(.gestwrap:empty){display:none}
+.viewrow{margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--border)}
 .gestwrap:empty{display:none}
 .gb{white-space:nowrap;border:1px solid #cfd8e6;background:#fff;border-radius:16px;padding:4px 11px;font:inherit;font-size:12px;cursor:pointer;color:var(--azul)}
 .gb small{color:var(--muted);margin-left:4px}
+.gmore{border:0;background:none;color:var(--azul);font:inherit;font-size:12px;font-weight:600;cursor:pointer;padding:4px 6px}
 .gb.on{background:var(--azul);color:#fff;border-color:var(--azul)}.gb.on small{color:#cfd8e6}
 tr.gest th{font-size:11px;text-align:center;color:var(--azul);font-weight:700;border-bottom:0;padding:6px 4px 0}
-tr.gest th span{display:block;border-bottom:2px solid var(--azul);padding-bottom:3px}
+tr.gest th span{display:block;overflow:hidden;text-overflow:ellipsis;max-width:100%;border-bottom:2px solid var(--azul);padding-bottom:3px}
 tr.gest th.g1 span{border-color:#8fb0dd;color:#3f6fb5}
 .more{margin-top:8px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
 .more:hover{text-decoration:underline}
@@ -149,14 +154,20 @@ summary{cursor:pointer;font-weight:600}
         <button data-p="all">Todos</button>
         <button data-p="1">Solo el último</button>
       </div>
-      <span id="gestWrap" class="gestwrap"></span>
-      <span class="lbl" style="margin-left:14px">Formato</span>
-      <div class="seg"><button>Del club</button><button class="on">Simplificado</button></div>
       <span class="pin">3</span>
     </div>
+    <div class="barrow" id="gestRow"><span id="gestWrap" class="gestwrap"></span></div>
     <div class="years" id="years"></div>
     <button class="more" id="more" hidden></button>
     <div class="hint" id="hint" style="margin-top:6px"></div>
+    <div class="barrow viewrow">
+      <span class="lbl">Formato</span>
+      <div class="seg"><button>Del club</button><button class="on">Simplificado</button></div>
+      <span class="lbl" style="margin-left:18px">Valores</span>
+      <div class="seg" id="realSeg"><button class="on" data-r="0">Nominales</button><button data-r="1">Ajustados por inflación</button></div>
+      <span class="pin">10</span>
+    </div>
+    <div class="realnote" id="realNote" hidden></div>
   </div>
 
   <div class="empty" id="empty" hidden><b>No hay ningún ejercicio elegido.</b><br>Tocá los años que quieras ver, o <a href="#" id="emptyL5">volvé a los últimos 5</a>.</div>
@@ -177,7 +188,7 @@ summary{cursor:pointer;font-weight:600}
       <div><h2>Estado de resultados <span class="pin">5</span></h2>
       <p class="desc">Cuánta plata entró y salió, rubro por rubro. Tocá un rubro para ver su evolución.</p></div>
       <div class="ctrls">
-        <button class="sw" id="budBtn" hidden>Presupuesto al lado del balance <span class="pin">9</span></button>
+        <button class="sw" id="budBtn" hidden>Presupuesto al lado del balance <span class="pin">11</span></button>
         <div class="seg" id="unit"><button class="on" data-u="abs" id="unitAbs"></button><button data-u="pct">% del total</button></div>
       </div>
     </div>
@@ -223,6 +234,8 @@ summary{cursor:pointer;font-weight:600}
       <li><b>"Otra liga" es un card con la respuesta a la vista</b>, no un botón entre los filtros. Usa el último balance elegido (nunca un presupuesto). <em>Norman: signifiers.</em></li>
       <li><b>Fuentes acompaña a la selección:</b> un renglón por ejercicio; si tiene presupuesto y balance, los dos documentos.</li>
       <li><b>Gestión (Racing).</b> Si el club tiene gestiones cargadas y confirmadas, aparece una fila "Gestión" con un botón por presidente. Tocarlo elige todos los ejercicios de ese mandato (presupuestos incluidos: son sus promesas); tocarlo de nuevo los saca, igual que Todos. Aunque elijas años a mano, el gráfico pinta una franja por gestión y la tabla agrupa las columnas bajo el nombre del presidente: así se lee "esto pasó con Blanco, esto con Milito" sin elegir nada. Un club sin gestiones confirmadas (Juventus, hoy) no muestra nada. <em>Few: regiones de referencia en un gráfico de tiempo; Gestalt, región común para agrupar columnas.</em></li>
+      <li><b>Muchas gestiones (Juventus, de ejemplo: 6 presidentes desde 2003).</b> Más nueva primero; con más de 4 se ven las 3 últimas y "+3 más" (la que está elegida nunca se esconde). En el gráfico, cada franja lleva el apellido si entra, las 3 primeras letras si no, y nada si es muy angosta: el nombre completo está al pasar el mouse. Una gestión de un solo ejercicio (Blanc, 2009/10) es una franja de un año. Probá Todos con Juventus. <em>Hick: no mostrar 6 opciones cuando casi siempre se quiere una de las últimas.</em></li>
+      <li><b>Valores ajustados por inflación (deflactor del PBI).</b> El tipo de cambio de cada cierre ya absorbe la inflación local (pesos, reales); lo que falta es la del dólar o el euro. "Ajustados por inflación" pasa todo (KPIs, gráficos, tabla, deuda) a moneda del último ejercicio, con el deflactor del PBI de la moneda que se está mirando: EE.UU. para USD, zona euro para EUR. Una franja verde explica el ajuste con un ejemplo del primer año elegido, y cada columna dice su factor (×1,58). Los Δ% pasan a ser crecimiento real. Default: nominales, que es lo que imprime el balance. <em>Few: comparar en la misma unidad; Krug: el nombre dice qué hace ("ajustados por inflación"), "deflactor" queda en la explicación.</em></li>
       <li><b>Presupuesto y balance del mismo año (elegí Racing en el chip).</b> El número que manda es siempre el <b>balance</b>: es lo que pasó. El presupuesto es lo que el club dijo que iba a pasar. Por default la columna muestra el balance y el encabezado avisa "+ presupuesto". El botón "Presupuesto al lado del balance" abre esos años en dos columnas (presupuesto en amarillo y cursiva, balance normal) más el desvío: "prometieron 3.127, entró 2.436". En los gráficos el presupuesto es un punto hueco. Un año con <b>solo</b> presupuesto (19/20, 25/26, 26/27 de Racing) entra a la línea con punto hueco y tramo punteado, y si es el último elegido los KPIs lo dicen con el card punteado. Últimos 5 cuenta solo años con balance: los presupuestos futuros se suman a mano. <em>Few: codificar la diferencia de naturaleza del dato (real vs. proyectado) siempre igual en toda la página; convención financiera de la línea punteada para lo proyectado.</em></li>
     </ol>
   </div>
@@ -249,14 +262,26 @@ for(let y=2009;y<=2027;y++){const b=RAC_B[y],p=RAC_P[y];CLUBS.racing.years[y]={B
 for(const c of Object.values(CLUBS)){let i=0;for(const y in c.years){const e=c.years[y];if(e.B){e.B.gd=(c.cur==='EUR'?300:20)+i*(c.cur==='EUR'?30:3);e.B.ca=e.B.gd*.18;e.B.nd=e.B.gd-e.B.ca;i++}}}
 
 // Gestiones REALES de Racing (gestionesByClub.racing, data/racing-data.js). Juventus no tiene cargadas: no se ve la fila.
-const GEST={racing:[{n:'Blanco',d:'2013–2024',first:2014,last:2024},{n:'Milito',d:'2024–hoy',first:2025,last:2027}],juve:[]};
+// Juventus: presidentes 2003-2025 SOLO PARA EL MOCKUP (de memoria, sin verificar contra fuente; el año va con quien presidía al cierre).
+const GEST={racing:[{n:'Blanco',d:'2013–2024',first:2014,last:2024},{n:'Milito',d:'2024–hoy',first:2025,last:2027}],
+ juve:[{n:'Chiusano',d:'1990–2003',first:2003,last:2003},{n:'Grande Stevens',d:'2003–2006',first:2004,last:2006},{n:'Cobolli Gigli',d:'2006–2009',first:2007,last:2009},{n:'Blanc',d:'2009–2010',first:2010,last:2010},{n:'Agnelli',d:'2010–2023',first:2011,last:2022},{n:'Ferrero',d:'2023–hoy',first:2023,last:2025}]};
+let gestAll=false;
 const gestOf=y=>(GEST[club]||[]).findIndex(g=>y>=g.first&&y<=g.last);
 const gYears=g=>YS().filter(y=>y>=g.first&&y<=g.last&&kind(y)!=='X');
 // ---------- Estado ----------
 let expanded=false,club='juve',S=new Set(),unit='abs',mode='tot',open=new Set(['tv']),showBud=false;
 const C=()=>CLUBS[club];
 const YS=()=>Object.keys(C().years).map(Number).sort((a,b)=>a-b);
-const E=y=>C().years[y];
+// Deflactor del PBI, APROXIMADO en el mockup (de memoria; la serie real se baja de la fuente oficial).
+// USD: deflactor implícito del PBI de EE.UU. (BEA, 2017=100). EUR: deflactor del PBI de la zona euro (Eurostat, 2015=100).
+// 2026-2027 son proyección: un presupuesto futuro se deja en valores del año base, no se "infla" con un dato que no existe.
+const DEF={USD:{2003:76.7,2004:78.7,2005:81.2,2006:83.7,2007:85.9,2008:87.6,2009:88.2,2010:89.2,2011:91.1,2012:92.9,2013:94.5,2014:96.2,2015:97.1,2016:98.1,2017:100,2018:102.4,2019:104.0,2020:105.4,2021:110.2,2022:117.9,2023:122.3,2024:125.2,2025:128.5},
+ EUR:{2003:86.0,2004:87.6,2005:89.2,2006:90.8,2007:93.1,2008:95.0,2009:96.0,2010:96.7,2011:97.8,2012:98.4,2013:98.9,2014:99.6,2015:100,2016:100.9,2017:102.0,2018:103.4,2019:105.2,2020:107.1,2021:109.4,2022:114.4,2023:120.9,2024:124.2,2025:126.9}};
+const BASE=2025;let real=false;
+const fac=y=>{if(!real)return 1;const d=DEF[C().cur];return d[BASE]/d[Math.min(y,BASE)]};
+const NUM=['st','tv','co','ps','ot','wa','ex','rev','oe','pat','gd','ca','nd'];
+const scale=(o,k)=>{if(!o)return o;const r={};for(const key in o)r[key]=NUM.includes(key)&&o[key]!=null?o[key]*k:o[key];return r};
+const E=y=>{const e=C().years[y];if(!real||!e)return e;const k=fac(y);return{B:scale(e.B,k),P:scale(e.P,k)}};
 const kind=y=>{const e=E(y);return e.B&&e.P?'PB':e.B?'B':e.P?'P':'X'};
 const KLAB={B:'Balance',P:'Presupuesto',PB:'Presupuesto y Balance',X:'Sin publicar'};
 const V=y=>E(y).B||E(y).P;           // el número que manda: balance si hay
@@ -264,13 +289,13 @@ const isP=y=>!E(y).B;                // el valor mostrado es un presupuesto
 const sel=()=>[...S].sort((a,b)=>a-b);
 const lab=y=>String(y-1).slice(2)+'/'+String(y).slice(2);
 const full=y=>(y-1)+'/'+String(y).slice(2);
-const U=()=>'M '+C().cur;
+const U=()=>'M '+C().cur+(real?' de '+full(BASE):'');
 const f=v=>v==null?'—':Math.abs(v)>=100?v.toFixed(0):v.toFixed(1);
 const REV=[['tv','Televisión'],['co','Comercial / Sponsors'],['st','Estadio y socios'],['ps','Venta de jugadores'],['ot','Otros ingresos']];
 const EXP=[['wa','Salarios y primas'],['oe','Otros gastos']];
 const COL={tv:'#0a2b5c',co:'#3f6fb5',st:'#8fb0dd',ps:'#f2b705',ot:'#c9c9c4'};
 function last5(){return YS().filter(y=>E(y).B).slice(-5)}
-function setClub(c){club=c;expanded=false;S=new Set(last5());open=new Set(['tv']);showBud=false;render()}
+function setClub(c){club=c;gestAll=false;expanded=false;S=new Set(last5());open=new Set(['tv']);showBud=false;render()}
 
 // ---------- Helpers ----------
 function spark(ys,get,w=90,h=22,color='#0a2b5c'){
@@ -296,7 +321,11 @@ function renderYears(){
   const hiddenN=all.length-shown.length;
   mb.textContent=expanded?'Ver menos':`Ver más · ${hiddenN} ejercicios más, desde ${full(all[0])}`;
   const gw=document.getElementById('gestWrap');const G=GEST[club]||[];
-  gw.innerHTML=G.length?'<span class="lbl">Gestión</span>'+G.map((g,i)=>{const ys=gYears(g),on=ys.length&&S.size===ys.length&&ys.every(y=>S.has(y));return `<button class="gb${on?' on':''}" data-g="${i}">${g.n}<small>${g.d}</small></button>`}).join('')+'<span class="pin">8</span>':'';
+  // Más nueva primero. Con más de 4 gestiones: las 3 más nuevas + "+N más" (la elegida siempre a la vista).
+  const ord=G.map((g,i)=>i).reverse();const isOn=i=>{const ys=gYears(G[i]);return ys.length&&S.size===ys.length&&ys.every(y=>S.has(y))};
+  const vis=(G.length<=4||gestAll)?ord:ord.filter((i,k)=>k<3||isOn(i));
+  gw.innerHTML=G.length?'<span class="lbl">Gestión</span>'+vis.map(i=>{const g=G[i];return `<button class="gb${isOn(i)?' on':''}" data-g="${i}">${g.n}<small>${g.d}</small></button>`}).join('')+(G.length>4?`<button class="gmore" id="gmore">${gestAll?'menos':'+'+(G.length-vis.length)+' más'}</button>`:'')+'<span class="pin">8</span>':'';
+  const gm=document.getElementById('gmore');if(gm)gm.onclick=()=>{gestAll=!gestAll;renderYears()};
   gw.querySelectorAll('.gb').forEach(b=>b.onclick=()=>{const ys=gYears(G[+b.dataset.g]);const on=b.classList.contains('on');S=on?new Set():new Set(ys);expanded=!on&&ys.some(y=>!last5().includes(y));render()});
   const n=S.size,s=sel();
   document.querySelectorAll('.presets button').forEach(p=>p.classList.toggle('on',
@@ -339,7 +368,7 @@ function lineChart(svg,series,ys,opts={}){
     if(s.p)s.p.forEach((pv,i)=>{if(pv==null)return;g+=`<line x1="${x(i)+7}" x2="${x(i)+7}" y1="${yy(pv)}" y2="${yy(s.v[i])}" stroke="${s.c}" stroke-opacity=".35"/><circle cx="${x(i)+7}" cy="${yy(pv)}" r="3.4" fill="#fff" stroke="${s.c}" stroke-width="1.6"><title>${s.n} ${lab(ys[i])} presupuesto: ${f(pv)} ${U()}</title></circle>`});
     const l=s.v.length-1;g+=`<text x="${x(l)-6}" y="${yy(s.v[l])-10}" font-size="11" font-weight="600" fill="${s.c}" text-anchor="end">${f(s.v[l])}</text>`});
   if(opts.bands){const G=GEST[club]||[];let bands='';G.forEach((gg,gi)=>{const idx=ys.map((y,i)=>[y,i]).filter(([y])=>gestOf(y)===gi).map(([,i])=>i);if(!idx.length)return;const step=ys.length>1?(W-L-Rr)/(ys.length-1):200;const x0=Math.max(L,x(idx[0])-step/2),x1=Math.min(W-Rr,x(idx[idx.length-1])+step/2);
-    bands+=`<rect x="${x0}" y="${T-12}" width="${x1-x0}" height="${H-B-T+12}" fill="${gi%2?'#f3f7fc':'#e9eff8'}"/><text x="${(x0+x1)/2}" y="${T-1}" font-size="11" font-weight="700" fill="#0a2b5c" text-anchor="middle">${gg.n}</text>`});g=bands+g}
+    bands+=`<rect x="${x0}" y="${T-12}" width="${x1-x0}" height="${H-B-T+12}" fill="${gi%2?'#f3f7fc':'#e9eff8'}"/><text x="${(x0+x1)/2}" y="${T-1}" font-size="11" font-weight="700" fill="#0a2b5c" text-anchor="middle"><title>${gg.n} (${gg.d})</title>${(x1-x0)>gg.n.length*6.6+6?gg.n:(x1-x0)>30?gg.n.slice(0,3)+'.':''}</text><line x1="${x0}" x2="${x0}" y1="${T-12}" y2="${H-B}" stroke="#fff" stroke-width="2"/>`});g=bands+g}
   svg.innerHTML=g;
 }
 function stackChart(svg,ys){
@@ -372,7 +401,7 @@ function renderPL(){
   const hd=c=>{if(c.gap)return'<th class="gap">…</th>';const k=kind(c.y);
     if(c.dev)return`<th>${lab(c.y)}<small>desvío</small></th>`;
     if(c.src==='P')return`<th class="bud">${lab(c.y)}<small>Presupuesto</small></th>`;
-    return`<th>${lab(c.y)}<small>${k==='PB'?(showBud?'Balance':'Balance + presup.'):'Balance'}</small></th>`};
+    return`<th>${lab(c.y)}<small>${k==='PB'?(showBud?'Balance':'Balance + presup.'):'Balance'}${real&&fac(c.y)>1.005?' · ×'+fac(c.y).toFixed(2):''}</small></th>`};
   const tail=multi?`<th>Δ ${lab(a)}→${lab(b)}</th><th class="spark">Tendencia</th>`:'<th>% del total</th>';
   const N=cols.length+2;
   const cell=(c,k,tk,neg)=>{if(c.gap)return'<td class="gap"></td>';const e=E(c.y);
@@ -385,7 +414,7 @@ function renderPL(){
     return h};
   const tot=(n,k,neg,tk)=>`<tr class="tot"><td>${n}</td>${cols.map(c=>c.gap?'<td class="gap"></td>':c.dev?cell(c,k,tk||k,neg):`<td class="${c.src==='P'?'bud':''}">${pct?(tk?(E(c.y)[c.src][k]/E(c.y)[c.src][tk]*100).toFixed(0)+'%':'100%'):(neg?'('+f(E(c.y)[c.src][k])+')':f(E(c.y)[c.src][k]))}</td>`).join('')}${multi?`<td>${k==='pat'?'':delta(V(a)[k],V(b)[k],neg)}</td><td class="spark">${spark(s,y=>V(y)[k],90,22,neg||k==='pat'?'#b5372b':'#0a2b5c')}</td>`:'<td>—</td>'}</tr>`;
   let gr='';if((GEST[club]||[]).length){const grp=[];cols.forEach((c,ci)=>{let gi=c.gap?-2:gestOf(c.y);if(c.gap){const nx=cols[ci+1],l=grp[grp.length-1];if(nx&&l&&gestOf(nx.y)===l.gi)gi=l.gi}const l=grp[grp.length-1];if(l&&l.gi===gi&&gi!==-2)l.n++;else grp.push({gi,n:1})});
-    if(grp.some(g=>g.gi>=0))gr=`<tr class="gest"><th></th>${grp.map(g=>`<th colspan="${g.n}" class="g${g.gi%2}">${g.gi>=0?`<span>${GEST[club][g.gi].n}</span>`:''}</th>`).join('')}<th colspan="${multi?2:1}"></th></tr>`}
+    if(grp.some(g=>g.gi>=0))gr=`<tr class="gest"><th></th>${grp.map(g=>`<th colspan="${g.n}" class="g${g.gi%2}">${g.gi>=0?`<span title="${GEST[club][g.gi].n} (${GEST[club][g.gi].d})">${GEST[club][g.gi].n}</span>`:''}</th>`).join('')}<th colspan="${multi?2:1}"></th></tr>`}
   let h=gr+`<tr><th>Rubro</th>${cols.map(hd).join('')}${tail}</tr>`+
     `<tr class="sec"><td colspan="${N}">Ingresos</td></tr>`+REV.map(([k,n])=>row(k,n,'rev')).join('')+tot('Total ingresos','rev')+
     `<tr class="sec"><td colspan="${N}">Gastos</td></tr>`+EXP.map(([k,n])=>row(k,n,'ex',1)).join('')+tot('Total gastos','ex',1)+
@@ -395,6 +424,11 @@ function renderPL(){
   open.forEach(k=>{const el=document.getElementById('c_'+k);if(el){const neg=EXP.some(e=>e[0]===k);lineChart(el,[{n:REV.concat(EXP).find(e=>e[0]===k)[1],c:neg?'#b5372b':'#0a2b5c',v:s.map(y=>V(y)[k]),p:s.map(y=>showBud&&kind(y)==='PB'?E(y).P[k]:null)}],s,{h:170})}});
   document.getElementById('plNote').innerHTML=`Montos en ${U()} nominales.`+(club==='racing'?' Cada ejercicio convertido con su propio tipo de cambio (el del balance, o la premisa del presupuesto).':'')+(s.some(isP)?' Las columnas en amarillo y cursiva son <b>presupuestos</b>: lo que el club proyectó, no lo que pasó.':'');
 }
+document.querySelectorAll('#realSeg button').forEach(x=>x.onclick=()=>{real=x.dataset.r==='1';document.querySelectorAll('#realSeg button').forEach(z=>z.classList.toggle('on',z===x));render()});
+function renderRealNote(){const el=document.getElementById('realNote');const s=sel();el.hidden=!real||!s.length;if(el.hidden)return;
+  const a=s[0],d=DEF[C().cur],k=d[BASE]/d[Math.min(a,BASE)],src=C().cur==='USD'?'deflactor del PBI de EE.UU. (BEA)':'deflactor del PBI de la zona euro (Eurostat)';
+  const ej=(100*k).toFixed(0);
+  el.innerHTML=`Todo en <b>${C().cur} de ${full(BASE)}</b>, con el ${src}. Ejemplo: 100 M ${C().cur} de ${full(a)} equivalen a <b>${ej} M</b> de ${full(BASE)}. Los Δ% pasan a ser crecimiento real.${s.some(y=>y>BASE)?' Los presupuestos posteriores a '+full(BASE)+' quedan como están: todavía no hay inflación para descontarles.':''} <span style="color:var(--muted)">(Serie aproximada en el mockup.)</span>`}
 document.getElementById('budBtn').onclick=()=>{showBud=!showBud;renderPL();renderTrend()};
 
 function renderDebt(){
@@ -426,7 +460,7 @@ function render(){
   const none=S.size===0;document.getElementById('empty').hidden=!none;
   document.querySelectorAll('#kpis, main section.card').forEach(e=>e.style.display=none?'none':'');
   if(none)return;
-  renderKpis();renderTrend();renderPL();renderDebt();renderSrc()}
+  renderRealNote();renderKpis();renderTrend();renderPL();renderDebt();renderSrc()}
 setClub(location.hash==='#racing'?'racing':'juve');
 </script>
 </body>
