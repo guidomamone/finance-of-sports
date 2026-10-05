@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 516 — Simulador de Ligas traducido al inglés (2026-10-05)
+
+- 13 claves `liga.sim.*` que un visitante en inglés veía en castellano desde que existe el simulador (to-do 83): aparecieron cuando `js/liga.js` entró al chequeo de i18n de `audit.js` (Versión 515). Traducidas en `data/lang/en.js`. ASSET_V 422 → 423, audit 0 P0/P1, P3 113.
+
 ## Versión 515 — To-do 140(i), paso 1: "Dentro de otro rubro" con bocadillo (2026-10-05)
 
 - Finanzas y Ligas: la fila con `incluidoEn` dice "Dentro de otro rubro" / "Posiblemente dentro de otro rubro" (textos de Guido) y el rubro va en un bocadillo (hover o tap): "Sospecho que está dentro de X: no es un cero, pero la fuente no lo aclara o es confusa." Comparar: "está dentro de" / "posiblemente está dentro de". Inglés: "Within another line" / "Possibly within another line".
