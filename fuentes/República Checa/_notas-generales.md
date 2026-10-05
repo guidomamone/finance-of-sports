@@ -105,3 +105,9 @@ del informe).
 Ningún club de esta sesión requirió pago, login, ni creación de cuenta.
 
 - Última sesión: 2026-09-17.
+
+## Duplicados con años distintos (encontrados el 2026-10-05, to-do 140(c))
+
+El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
+
+- Jablonec: `SL138_2019b.pdf` y `SL137_2018b.pdf` son el MISMO archivo. Uno de los dos años (2019 o 2018) falta.

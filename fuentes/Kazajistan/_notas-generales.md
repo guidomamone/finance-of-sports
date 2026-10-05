@@ -27,3 +27,9 @@
 ## Pendientes (venían del TODO)
 
 - (ex to-do 135) **Candidatos a mail (existencia confirmada o muy probable, no escritos; Guido decide y aprueba cada envío, proceso en `club-outreach`)**: Astana y Kairat (no están en el DFO).
+
+## Duplicados con años distintos (encontrados el 2026-10-05, to-do 140(c))
+
+El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
+
+- Kaspiy: `rep17291-2023-08-31-n7-ПОБ.pdf` y `rep11779-2022-09-06-n7-ПОБ.pdf` son el MISMO archivo (el de 2023 es una nueva bajada del de 2022). El de 2023 falta.

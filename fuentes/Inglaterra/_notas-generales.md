@@ -170,3 +170,9 @@ Championship, League One y League Two con 5 ejercicios cada uno.
   apareció por búsqueda de nombre); Stockport County (no apareció la sociedad por nombre).
 - **Falta aún**: League Two completa, Sheffield Wednesday plc (00062478), 9 condados de cricket
   (ver sección 5), el resto de Premiership Rugby y Super League.
+
+## Duplicados con años distintos (encontrados el 2026-10-05, to-do 140(c))
+
+El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
+
+- Surrey CCC: `surrey-ccc-annual-return-and-accounts-2026.pdf` y `...-2025.pdf` son el MISMO archivo. Uno de los dos años falta (probablemente 2026 todavía no está publicado).

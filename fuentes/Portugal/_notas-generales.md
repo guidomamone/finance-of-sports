@@ -79,3 +79,9 @@ pena agregarlo como tercera opción después de Wayback antes de dar un club por
 Actualizar si Arouca destraba su situación (PDF reencontrados sin truncar, o el club los resube),
 si se completa el hueco de Vitória Guimarães 2022/23 o el de Braga 2017/18-2018/19, o si se
 confirma/descarta el registro `publicacoes.mj.pt`/BDCA como canal de consulta gratuita.
+
+## Duplicados con años distintos (encontrados el 2026-10-05, to-do 140(c))
+
+El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
+
+- Benfica: `prestacao-contas-2010-12-06.pdf` y `prestacao-contas-2010-11-11.pdf` son el MISMO archivo. Si eran dos documentos distintos (por ejemplo, el de la SAD y el del club), falta uno.

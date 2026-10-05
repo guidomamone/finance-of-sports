@@ -162,3 +162,10 @@ o sea que el canal colombiano, igual que Companies House en Reino Unido, no depe
 - (ex to-do 131) SUDAMÉRICA: LO QUE QUEDÓ EN DISCO SIN TRANSCRIBIR. 17 clubes nuevos de Colombia (Primera B). Corsarios (4) y Leones FC (SIIS no tiene 2021/2023+) no llegan a 5 ejercicios. Verificar entidad y ejercicio de cada PDF de Colombia al transcribir: solo se contó el índice de SIIS.
 - (ex to-do 50, 2026-09-29) LEADS DE SOURCING DE COLOMBIA Y MÉXICO. Resumen 2026-09-29: SIIS Colombia y León/Pachuca ya resueltos, Pumas/Tigres descartado por decisión de Guido, quedan 2 hilos de puro monitoreo, sin acción pendiente de nadie hasta que algo externo cambie:
   - ✅ **SIIS Colombia**: Boyacá Chicó suma 2021-2025 (8 ejercicios en total), Once Caldas suma 2021-2024 (serie completa 2016-2025). Bucaramanga 2021 confirmado como hueco REAL de la fuente (la sociedad no depositó ese año), no throttling. Detalle en `fuentes/Colombia/<Club>.md`.
+
+## Duplicados con años distintos (encontrados el 2026-10-05, to-do 140(c))
+
+El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
+
+- Deportes Tolima: `dictamen-revisor-fiscal-2024.pdf` y `dictamen-revisor-fiscal-2025.pdf` son el MISMO archivo (misma huella). Uno de los dos años falta: abrir el PDF para ver de qué año es y volver a buscar el otro.
+- Independiente Santa Fe: `dictamen-revisor-fiscal-2024.pdf` y `dictamen-revisor-fiscal-2023.pdf` son el MISMO archivo. Uno de los dos años falta.
