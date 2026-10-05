@@ -465,7 +465,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // resultado. Caso: Fortaleza CEIF 2017 (nota 23 "Otros gastos" 41.780 perdida en un salto de página; costos financieros rotulados
   // "Total Otros Ingresos" en el PDF).
   // (Versión 387) la misma pasada se aplica también a la base de la lectura 3 (ing3/gas3); ahí solo ingresos y gastos, sin repetir notas.
-  const aplicarAjustesFila = (ingB, gasB, primera) => { for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && isFinite(parseNumber(x.valor)))) {
+  // (Versión 493, aprobado por Guido el 2026-10-05) `firmado` = la base de la lectura 4: ahí el ajuste lleva su signo impreso relativo al signo
+  // normal de los AJUSTES de su lado (la mayoría), igual que un renglón respecto de su lado en lineasDeLado(firmado): un ingreso impreso en
+  // negativo entre ingresos positivos resta. El signo normal sale de los ajustes y no del estado porque vienen de otra tabla (una nota que
+  // imprime los gastos entre paréntesis bajo un estado que los imprime en positivo). En las demás lecturas sigue el valor absoluto. No es una
+  // regla nueva: la escalera de lecturas prueba las dos formas y gana la que cierra. Caso: Goiás 2016, "(-) Deduções das receitas"
+  // (7.401.426,19) entre las partes de la nota 17 (lectura 1: ingresos 97,8 M contra 83,0 M impresos; lectura 4: cierra).
+  const signoNormalDe = (lado) => { const r = ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === lado && isFinite(parseNumber(x.valor)) && parseNumber(x.valor)); return r.filter((x) => parseNumber(x.valor) < 0).length > r.length / 2 ? -1 : 1; };
+  const aplicarAjustesFila = (ingB, gasB, primera, firmado = false) => { for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && isFinite(parseNumber(x.valor)))) {
     const destino = { ingreso: ingB, gasto: gasB, financiero: primera ? fin : null, impuesto: primera ? imp : null }[a.lado];
     if (!destino) continue;
     // sale la fila con esa etiqueta Y, si estaba abierta en su nota, las filas de la nota (si no, se contaría dos veces)
@@ -475,7 +482,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // (Versión 435, cambio G) con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
     // de la ganancia por acción "(0,040)", .md L1160, no es un importe del estado)
     if (v === 0 && a.reemplaza) { if (primera) notas.push(`ajuste manual: sale la fila "${a.reemplaza}" (${a.fecha}, ${a.motivo})`); continue; }
-    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? Math.abs(v) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
     if (primera) notas.push(`ajuste manual: fila "${a.etiqueta}" (${a.lado}) ${a.valor}${a.reemplaza ? `, en lugar de "${a.reemplaza}"` : ''} (${a.fecha}, ${a.motivo})`);
   } };
   aplicarAjustesFila(ing0, gas0, true);
@@ -484,7 +491,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (otros.length) aplicarAjustesFila(ing3, gas3, false);
   // base de la lectura 4 (Versión 396): signos impresos (lineasDeLado, firmado), con los renglones sin lado como en la lectura 3
   const ing4 = lineasDeLado('ingreso', 'M', true, true); const gas4 = lineasDeLado('gasto', 'M', true, true);
-  aplicarAjustesFila(ing4, gas4, false);
+  aplicarAjustesFila(ing4, gas4, false, true);
   const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo', 'signos impresos (un renglón negativo resta en su lado)', 'solo las hojas con su signo (C/D del balancete), sin subtotales ni totales', 'la 5 más los renglones sin lado según su signo'];
   // LECTURA 5 (Versión 414, escalera aprobada por Guido el 2026-10-02): SOLO LAS HOJAS del estado (renglones), ningún subtotal ni total, cada
   // una con su signo: la marca C/D de un balancete si la trae (D en ingresos resta, C en gastos resta, financiero C suma y D resta) y si no,

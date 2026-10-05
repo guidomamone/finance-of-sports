@@ -7,8 +7,7 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 ## Hallazgos
 
 (Hallazgos 1 a 4 resueltos el 2026-10-05, Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
-El ajuste de Goiás 2016 todavía no se reproduce solo: el ajuste `fila` de ingreso toma el valor absoluto y la deducción (-) 7.401.426,19
-entra sumando; hace falta que `verificar.mjs` respete el signo impreso en el lado ingreso.)
+Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verificar.mjs`.)
 
 5. **Goiás 2012-2013: `wages_squad` en 0, gastos de fútbol en bolsón (35,8 y 44,6).** La nota 18 de 2013-2012 (L806-820) es un cuadro por
    segmento (profesional / base / social) con "Despesas com pessoal" 31,85 y 25,45 (profesional). Verificado 2013: profesional + base

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 493 — Los ajustes `fila` llevan su signo en la lectura 4 de verificar.mjs (2026-10-05)
+
+- `tools/verificar.mjs`: en la lectura 4 (signos impresos), un ajuste `fila` entra con su signo relativo a la mayoría de los ajustes de su lado; en las demás lecturas sigue con valor absoluto. La escalera prueba las dos formas y gana la que cierra (pedido de Guido: nada de regla fija).
+- Caso: Goiás 2016, "(-) Deduções das receitas" (7.401.426,19) entre las partes de la nota 17: pasa de "cola" (ingresos 97,8 M contra 83,0 M impresos) a cerrar en la lectura 4. Medido con `verificar.mjs --lista Admin/prueba-completa.txt`: 1 de 87 documentos cambia (ese); los otros 86, idénticos.
+
 ## Versión 492 — Auditoría de los clubes del pipeline: hallazgos 1 a 4 corregidos (to-do 138) (2026-10-05)
 
 - Goiás 2016: ingresos y gastos de fútbol abiertos con las notas 17 y 18 (antes, dos bolsones con `sinDesglose` falso); TV 53,9 M, transferencias 24,1 M y sueldos 30,1 M dejan de verse en 0.

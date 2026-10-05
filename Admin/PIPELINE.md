@@ -165,7 +165,8 @@ Mitigaciones:
  LECTURA 1  + "resultado antes de impuestos" si no hay resultado final ── ¿cierra? sí → OK
  LECTURA 2  + el total impreso puede ser un renglón más del estado ─────── ¿cierra? sí → OK
  LECTURA 3  + renglones sin lado, según su signo ──────────────────────── ¿cierra? sí → OK
- LECTURA 4  + signos impresos; subtotal de un solo renglón; total bruto con deducciones aparte (Versiones 396, 409)
+ LECTURA 4  + signos impresos; subtotal de un solo renglón; total bruto con deducciones aparte (Versiones 396, 409); los ajustes
+            `fila` también con su signo, relativo a la mayoría de los ajustes de su lado (Versión 493)
  LECTURA 5  solo las hojas, con signo (C/D de balancetes); sin totales; compuerta: resultado impreso exacto (Versión 414)
  nada cierra → reintento (una vez) → cola humana
 ```
