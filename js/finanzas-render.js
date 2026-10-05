@@ -126,8 +126,9 @@
     // por la fuente" con plata adentro y esta fila da cero — o sea que el cero es un "no sabemos",
     // no un cero. Se pinta "—", el mismo carácter que ya usa la tabla para "no hay columna
     // anterior", y el % también, porque un porcentaje de un dato que no existe no significa nada.
-    const celdaValor = (row, val) => row && row.unknown ? '—' : fmtDisplay(val);
-    const celdaPct = (row, val, tot) => row && row.unknown ? '—' : fmtPctOfTotal(val, tot);
+    // Versión 509: `incluidoEn` (bucketize) = el documento junta esta fila con otra; se dice dónde está en vez de mostrar $0.
+    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido">${t('finanzas.incluidoEn', 'Incluido en')} ${tLabel(row.incluidoEn)}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
+    const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
     // El total tiene que estar calculado ANTES de generar el HTML de cada fila (para poder mostrar
     // el % de cada una contra el total ya cerrado), antes se acumulaba fila por fila en el mismo
     // paso en el que se generaba su HTML, así que ninguna fila conocía el total final todavía.
@@ -151,7 +152,7 @@
           ${prevPctCell}
         </tr>` + itemsHtml;
       }
-      return `<tr${c.unknown ? ' class="pl-nodato"' : ''}>
+      return `<tr${c.unknown || c.incluidoEn ? ' class="pl-nodato"' : ''}>
         <td>${tLabel(c.label)}</td>
         <td>${celdaValor(c, curVal)}</td>
         ${pctCell}

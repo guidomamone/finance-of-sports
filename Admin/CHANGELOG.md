@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 509 — "Incluido en …": la fila que el documento junta con otra deja de mostrar $0 (paso 1: dato y Finanzas) (2026-10-05)
+
+- `fiscalYearMeta[año].incluidoEn` (ej. `{ member_dues: 'matchday_competition' }`): `bucketize()` (`js/finanzas-calc.js`) marca la fila que da 0 con la etiqueta de la fila que la contiene, y `js/finanzas-render.js` pinta "Incluido en <fila>" (es) / "Included in" (en), con "—" en el %. El valor sigue siendo el número 0: los totales no cambian (verificado: `auditAll()` igual que antes).
+- Datos: Bahia 2024-2025 (socios dentro de Estadio), Vitória 2025 (dentro de Premios por competencias), América Mineiro 2023-2025 (dentro de Otros ingresos). Regla en `Admin/CONVENCIONES-DATOS.md`. ASSET_V 417 → 418.
+- Pendiente (pasos siguientes): rankings y Comparar; ajuste `incluye` en el pipeline (`cargar.mjs`) y que `audit.js` lo respete.
+
 ## Versión 508 — Grêmio: "Receitas Patrimoniais" confirmado como cuotas sociales (2026-10-05)
 
 - Duda de la auditoría 2026-10-04 cerrada con evidencia del documento (política de reconocimiento, nota 29 de voluntariado, "Ingressos a Sócios" y mensalidades anticipadas), escrita en el comentario de `data/gremio-data.js`. Sin cambio de datos. ASSET_V 416 → 417.

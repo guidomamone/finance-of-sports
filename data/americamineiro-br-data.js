@@ -244,6 +244,8 @@ const americamineiroBrFiscalYearMeta = {
   2023: {
     currency:'BRL', fxRef:'BRL@2023-12-31', fxSource:'market_close',
     sourceId:'americamineiro-br-demonstracoes-2023',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Receitas com atividades sociais da entidade" puede incluir las cuotas de socios; el documento no lo separa.
+    incluidoEn:{ member_dues:'other_income' },
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
     // grossDebt = "Empréstimos e financiamentos" (Nota 11), Consolidado, circulante+não circulante.
@@ -257,6 +259,8 @@ const americamineiroBrFiscalYearMeta = {
   2024: {
     currency:'BRL', fxRef:'BRL@2024-12-31', fxSource:'market_close',
     sourceId:'americamineiro-br-demonstracoes-2024',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Receitas com atividades sociais da entidade" puede incluir las cuotas de socios; el documento no lo separa.
+    incluidoEn:{ member_dues:'other_income' },
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
     grossDebt:29.444135, cash:0.129673,
@@ -268,6 +272,8 @@ const americamineiroBrFiscalYearMeta = {
   2025: {
     currency:'BRL', fxRef:'BRL@2025-12-31', fxSource:'market_close',
     sourceId:'americamineiro-br-demonstracoes-2025',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Receitas com atividades sociais da entidade" puede incluir las cuotas de socios; el documento no lo separa.
+    incluidoEn:{ member_dues:'other_income' },
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
     grossDebt:36.494416, cash:0.394718,

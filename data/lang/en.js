@@ -80,6 +80,7 @@ window.I18N.strings.en = {
   "ejercicio.dropdown.budget": " (Budget)",
   "ejercicio.dropdown.budgetAndBalance": " (Budget and balance sheet)",
   "ejercicio.dropdown.placeholder": " (Placeholder)",
+  "finanzas.incluidoEn": "Included in",
   "finanzas.banner.mirror": "Real, audited financial statements (with an independent auditor's report), but downloaded from a fan-community mirror, not the club's official channel",
   "finanzas.banner.pending": "Financial year not reported by the club yet: no official balance sheet or budget has been loaded for this period yet, we are waiting for Boca to publish it",
   "finanzas.banner.placeholder": "Placeholder data, a number invented to test the site's design, not real",

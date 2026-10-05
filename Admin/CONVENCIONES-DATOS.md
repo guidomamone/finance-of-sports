@@ -294,3 +294,11 @@ sería inventar una apertura que la fuente no da. Cuando el documento sí la abr
 años `other_income` puede quedar negativo (Goiás 2008-2017). Una auditoría que lo vea no lo reabre; si el signo es lo que la alarma, las
 líneas verificadas están en `tools/audit-ignore.json`.
 
+## REGLA: una línea que junta dos conceptos se carga entera en una categoría, y el año dice dónde quedó la otra (`incluidoEn`, Versión 509)
+
+Cuando el documento junta dos conceptos en UNA línea sin separarlos (Bahia: "Sócios e bilheteria"; Vitória: premios de copa + socio-hincha;
+América Mineiro: "atividades sociais", que puede incluir cuotas), la línea va entera a la categoría principal y NO se reparte. En el
+`fiscalYearMeta` del año se agrega `incluidoEn: { <categoría que queda en 0>: '<categoría donde está> }'`, por ejemplo
+`{ member_dues: 'matchday_competition' }`. La vista simplificada de Finanzas pinta entonces "Incluido en <fila>" en vez de $0, sin tocar
+el valor (sigue siendo el número 0, así que los totales no cambian). Una auditoría no lo reabre como "socios en 0".
+

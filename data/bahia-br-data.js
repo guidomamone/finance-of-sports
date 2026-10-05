@@ -290,6 +290,8 @@ const bahiaBrFiscalYearMeta = {
   2024: {
     currency:'BRL', fxRef:'BRL@2024-12-31', fxSource:'market_close',
     sourceId:'bahia-br-demonstracoes-2024',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Sócios e bilheteria" junta cuotas de socio-torcedor y entradas; los documentos de la SAF no los separan.
+    incluidoEn:{ member_dues:'matchday_competition' },
     reportType:'official_balance_sheet',
     gestionId:'aguirrezegarra',
     // grossDebt = "Partes relacionadas" (Passivo não circulante, Nota 7 — mútuos com City Football
@@ -309,6 +311,8 @@ const bahiaBrFiscalYearMeta = {
   2025: {
     currency:'BRL', fxRef:'BRL@2025-12-31', fxSource:'market_close',
     sourceId:'bahia-br-demonstracoes-2025',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Sócios e bilheteria" junta cuotas de socio-torcedor y entradas; los documentos de la SAF no los separan.
+    incluidoEn:{ member_dues:'matchday_competition' },
     reportType:'official_balance_sheet',
     gestionId:'aguirrezegarra',
     // grossDebt = "Partes relacionadas" (Passivo não circulante, Nota 9 — mútuos com CFG Brazil +

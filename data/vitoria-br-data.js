@@ -190,6 +190,8 @@ const vitoriaBrFiscalYearMeta = {
   2025: {
     currency:'BRL', fxRef:'BRL@2025-12-31',
     sourceId:'vitoria-br-demonstracoes-2025',
+    // Versión 509: el sitio muestra "Incluido en …" en la fila de socios en vez de $0. "Premiações e outras" junta premios de copa y socio-hincha (nota 23 d); el documento no los separa.
+    incluidoEn:{ member_dues:'competition_bonus' },
     reportType:'official_balance_sheet',
     gestionId:'sinconfirmar',
     // grossDebt = 'Empréstimos e financiamentos' Controladora, circulante (Nota 16) — sin porção

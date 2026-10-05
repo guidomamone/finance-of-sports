@@ -388,8 +388,14 @@
   // EL CATCH-ALL QUEDA AFUERA a propósito: que dé cero significa que todas las líneas encontraron
   // su fila, que es información buena, no un dato faltante.
   // NO MUEVE NINGÚN NÚMERO: las filas marcadas valen 0, así que el total de la sección es idéntico.
-  function bucketize(lines, buckets, catchAllLabel){
+  // "INCLUIDO EN …" (Versión 509, pedido de Guido: "lo más honesto para el lector"). Cuando el documento junta dos conceptos en una sola
+  // línea (Bahia: "Sócios e bilheteria"; Vitória: premios de copa + socio-hincha), la línea entera va a UNA categoría y la otra fila da 0.
+  // Ese 0 no es "el club no tiene socios": es "están adentro de otra fila". `incluidoEn` (en fiscalYearMeta del año) dice de qué
+  // categoría a cuál, ej. { member_dues: 'matchday_competition' }; la fila que da 0 se marca con la etiqueta de la fila que la contiene
+  // y se pinta "Incluido en <fila>". El VALOR SIGUE SIENDO EL NÚMERO 0: el total de la sección no cambia.
+  function bucketize(lines, buckets, catchAllLabel, incluidoEn){
     const bucketed = new Set(buckets.flatMap(b => b.cats));
+    const filaDe = (cat) => (buckets.find(b => b.cats.includes(cat)) || {}).label || catchAllLabel;
     const LUMPS = ['lump_football_operations', 'lump_football_operations_expense'];
     const hayBolson = lines.some(l => LUMPS.includes(l.normalizedCategory) && l.amountNative !== 0);
     const rows = buckets
@@ -398,8 +404,10 @@
         const value = matches.reduce((s,l) => s + l.amountNative, 0);
         const items = matches.length ? matches.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
         const esBolson = b.cats.some(c => LUMPS.includes(c));
+        const dentro = value === 0 && incluidoEn ? b.cats.map(c => incluidoEn[c]).find(Boolean) : null;
         return { label:b.label, value, items, hideIfZero:b.hideIfZero,
-                 unknown: hayBolson && value === 0 && !esBolson };
+                 unknown: !dentro && hayBolson && value === 0 && !esBolson,
+                 ...(dentro ? { incluidoEn: filaDe(dentro) } : {}) };
       })
       .filter(row => !(row.hideIfZero && row.value === 0));
     const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));
@@ -426,8 +434,8 @@
     ];
     return {
       resultLabel:'Resultado neto',
-      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos'),
-      gastos: bucketize(cur.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos'),
+      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos', cur.meta.incluidoEn),
+      gastos: bucketize(cur.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos', cur.meta.incluidoEn),
       extraRows,
     };
   }
