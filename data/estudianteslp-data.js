@@ -150,7 +150,8 @@ const estudiantesLPExpenseLinesByYear = {
     { rawLabel:'Gastos por transferencias y préstamos jugadores', normalizedCategory:'player_amortisation', amountNative:-434.068466, disclosureLevel:'detailed' },
     { rawLabel:'Amortización acelerada por libertad de acción', normalizedCategory:'player_amortisation', amountNative:-428.885403, disclosureLevel:'detailed' },
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-364.350711, disclosureLevel:'detailed' },
-    { rawLabel:'Reconocimientos y premios', normalizedCategory:'match_organisation_expense', amountNative:-352.503491, disclosureLevel:'detailed' },
+    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
+    { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-352.503491, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-233.409423, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-75.742867, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-153.323695, disclosureLevel:'detailed' },
@@ -174,7 +175,8 @@ const estudiantesLPExpenseLinesByYear = {
   2023: [
     { rawLabel:'Sueldos y jornales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-1293.963095, disclosureLevel:'detailed' },
     { rawLabel:'Sueldos y jornales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-1501.533091, disclosureLevel:'detailed' },
-    { rawLabel:'Reconocimientos y premios', normalizedCategory:'match_organisation_expense', amountNative:-1217.864742, disclosureLevel:'detailed' },
+    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
+    { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-1217.864742, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-737.833743, disclosureLevel:'detailed' },
     { rawLabel:'Otros gastos', normalizedCategory:'other_expenses', amountNative:-727.116735, disclosureLevel:'detailed' },
     { rawLabel:'Gastos por transferencias y préstamos jugadores', normalizedCategory:'player_amortisation', amountNative:-560.143316, disclosureLevel:'detailed' },
@@ -201,7 +203,8 @@ const estudiantesLPExpenseLinesByYear = {
     { rawLabel:'Sueldos y jornales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-4761.049974, disclosureLevel:'detailed' },
     { rawLabel:'Sueldos y jornales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-5455.670716, disclosureLevel:'detailed' },
     { rawLabel:'Gastos por transferencias y préstamos jugadores', normalizedCategory:'player_amortisation', amountNative:-4667.951256, disclosureLevel:'detailed' },
-    { rawLabel:'Reconocimientos y premios', normalizedCategory:'match_organisation_expense', amountNative:-4402.027264, disclosureLevel:'detailed' },
+    // Reconocimientos y premios: premios al plantel profesional (columna 'Fútbol - Exhibición y espectáculos' del anexo de gastos, la de los sueldos de los jugadores; la memoria habla de 'reconocimientos con el plantel profesional'). Sueldos del plantel en todos los años (decisión de Guido, 2026-10-04).
+    { rawLabel:'Reconocimientos y premios', normalizedCategory:'wages_squad', amountNative:-4402.027264, disclosureLevel:'detailed' },
     { rawLabel:'Gastos de partidos internacionales', normalizedCategory:'match_organisation_expense', amountNative:-2759.110986, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (Fútbol - Exhibición y espectáculos)', normalizedCategory:'wages_squad', amountNative:-531.866624, disclosureLevel:'detailed' },
     { rawLabel:'Cargas sociales (resto de sectores)', normalizedCategory:'youth_other_sports_expense', amountNative:-1306.134631, disclosureLevel:'detailed' },

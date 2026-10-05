@@ -108,8 +108,6 @@ ni en el comentario de ningún archivo de código.
       `player_amortisation`. Mientras sigan, parte del "error" medido de la categorización automática es la vara.
     - **Argentinos Juniors** (gasto): "Estadio y predios" -> `match_organisation_expense` en 2015,
       `admin_general_expense` en 2019.
-    - **Estudiantes LP** (gasto): "Reconocimientos y premios" -> `match_organisation_expense` en
-      2022/2023/2024, `wages_squad` en 2025.
     - **San Lorenzo** (gasto): "Subsedes" -> `admin_general_expense` en 2011, `other_expenses` en
       2014.
 

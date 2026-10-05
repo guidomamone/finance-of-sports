@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 483 — Estudiantes: "Reconocimientos y premios" en sueldos del plantel todos los años (to-do 101) (2026-10-04)
+
+- `data/estudianteslp-data.js`: 2022, 2023 y 2024 pasan de `match_organisation_expense` a `wages_squad`, como 2025 (columna de los sueldos de los jugadores en el anexo de gastos; la memoria: "reconocimientos con el plantel profesional"). Totales sin cambio; `auditAll()` sin "no cierra" de Estudiantes. ASSET_V 401 → 402; generadores corridos.
+
 ## Versión 482 — pipeline.mjs con la numeración de etapas de PIPELINE.md (ex to-do 140n) (2026-10-04)
 
 - `tools/pipeline.mjs`: "Etapas 1-2: transcribir y validar" pasa a "Etapa 2 (Admin/PIPELINE.md)"; preparar para Jev, Jev y Claude por API se rotulan "Proceso viejo" (el lote los hace en su etapa 7). Solo texto en pantalla; el ensayo corre igual.
