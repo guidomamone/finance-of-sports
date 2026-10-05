@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 503 — Novorizontino: deuda 2018 y 2020-2022 con ajuste manual `deuda` (2026-10-05)
+
+- Auditoría 2026-10-04, caja y deuda: con el criterio del club (préstamos + débitos con partes relacionadas, corrientes y no corrientes; confirmado con la columna 2019 del balance 2020 = 32.323, lo cargado): 2018 27,491 M; 2020 40,059 M; 2021 51,884 M (el documento 2022 imprime 51.883.784 para 2021); 2022 70,311934 M. Cada número leído en el balance y cargado con su ajuste; probado que `caja-deuda.mjs` lo reproduce con el año en null.
+- 2018: la herramienta proponía 27,51 porque leía "Empréstimos" 43 (2017): tomaba el 24 por número de nota. Anotado en el TODO. ASSET_V 412 → 413.
+
 ## Versión 502 — caja-deuda.mjs: un valor aceptado en la misma corrida ya no sirve de vecino (2026-10-05)
 
 - `tools/caja-deuda.mjs --club`: hasta acá (Versión 356) un valor completado en la corrida contaba como cargado para el año siguiente, y un error se encadenaba (probado: la caja chica de Fortaleza 2020 validaba la de 2021 y esa la de 2022). Ahora el vecino es solo lo cargado en el sitio o el documento vecino.

@@ -21,6 +21,11 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
+143. CAJA-DEUDA LEE UN IMPORTE CHICO COMO NÚMERO DE NOTA (conocido, sin daño hoy: el dato se cargó con ajuste manual). `tools/caja-deuda.mjs` descarta
+    el primer entero de 1-2 dígitos de una fila como referencia a nota, aunque la fila no tenga columna de notas. Caso: Novorizontino 2018,
+    `| Impostos a recuperar | | 2 | - | Empréstimos | | 24 | 43 |` (.md L181): leía Empréstimos 2018 = 43 (es 2017) y proponía deuda 27,51 en
+    vez de 27,491. Idea a medir: usar la columna "Nota(s)" del encabezado de la tabla cuando la hay (escalón), en vez de adivinar por el tamaño.
+
 138. VER LOS TEMAS DE AUDITORÍA PENDIENTES. Hallazgos de las auditorías de datos que todavía no se arreglaron ni se
     descartaron; cada archivo trae el caso, la evidencia y el arreglo propuesto. Hoy: `auditorias/2026-10-04-clubes-pipeline.md`
     (los 6 clubes del pipeline nuevo: 12 hallazgos, los pendientes de caja y deuda, y la nota visible del quiebre de serie de

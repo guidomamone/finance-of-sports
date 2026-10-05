@@ -621,7 +621,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receitas financeiras', value:null},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 7
-    grossDebt:null, cash:0.952,
+    // ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos e financiamentos 87 + 12 + partes relacionadas 51.785 (miles), .md L174/L187/L189
+    grossDebt:51.884, cash:0.952,
     officialTotalRevenue:9.055, officialTotalExpenses:22.866, officialPAT:-14.699,
   },
   2024: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -669,7 +670,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receitas financeiras', value:null},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 8
-    grossDebt:null, cash:0.085,
+    // ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 79 + partes relacionadas 39.971 + 9 (miles), .md L198/L204/L211
+    grossDebt:40.059, cash:0.085,
     officialTotalRevenue:10.262, officialTotalExpenses:17.402, officialPAT:-9.124,
   },
   2023: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -700,7 +702,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.06},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 8
-    grossDebt:null, cash:0.149,
+    // ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos 24 + Débitos com partes relacionadas 27.467 (miles), .md L181/L191
+    grossDebt:27.491, cash:0.149,
     officialTotalRevenue:7.161, officialTotalExpenses:15.357, officialPAT:-8.485,
   },
   2025: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -742,7 +745,8 @@ const novorizontinobrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-2.441458},
     ],
     // tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-02: la caja de 2022 como la reclasificó el documento 2023 (sin las aplicaciones financieras de proyectos incentivados, 574.806), coherente con 2023-2025; el 2022 imprimía 721.730
-    grossDebt:null, cash:0.146924,
+    // ajuste manual `deuda` (Admin/ajustes-manuales.jsonl, 2026-10-05): préstamos + partes relacionadas, criterio del club; Empréstimos bancários 28.250 + Partes relacionadas 70.283.684, .md L250/L258
+    grossDebt:70.311934, cash:0.146924,
     officialTotalRevenue:30.003234, officialTotalExpenses:41.218659, officialPAT:-13.649368,
   },
   // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 2.204. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
