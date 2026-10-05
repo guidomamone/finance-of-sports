@@ -729,5 +729,53 @@
   "lineasGasto": 10,
   "metaFilas": 4,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2010,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2010-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (170 de 218 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (2 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 7 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2010-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene CLP@2010-12-31 = 468.01 (Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2011-01-03, 2010-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "catolica-cl-estados-financieros-2010",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para cl (tools/club-league-reference/cl.json)",
+   "estado": "pendiente"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

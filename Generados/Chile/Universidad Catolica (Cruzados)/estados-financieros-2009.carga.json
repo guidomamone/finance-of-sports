@@ -136,5 +136,53 @@
   "lineasGasto": 0,
   "metaFilas": 1,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2009,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2009-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (10 de 10 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md casi no tiene tablas con números (1 filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos",
+   "estado": "pregunta"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 1 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2009-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 507.1. --escribir agrega 'CLP@2009-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "catolica-cl-estados-financieros-2009",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para cl (tools/club-league-reference/cl.json)",
+   "estado": "pendiente"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

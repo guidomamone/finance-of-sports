@@ -1018,5 +1018,48 @@
   "lineasGasto": 22,
   "metaFilas": 4,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2016,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2016-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (203 de 203 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": 669.47,
+   "fuente": "declarado por el documento, línea 579: \"Dólar Estadounidense                          669,47            710,16\" (elegido entre 2 valores por ser el de la fecha más nueva de la tabla, 2016-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "catolica-cl-estados-financieros-2016",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para cl (tools/club-league-reference/cl.json)",
+   "estado": "pendiente"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

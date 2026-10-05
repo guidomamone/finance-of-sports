@@ -1189,5 +1189,53 @@
   "lineasGasto": 18,
   "metaFilas": 9,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2005,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2005-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (297 de 315 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": null,
+   "fuente": "el .md menciona estados consolidados 5 veces y los individuales 12",
+   "estado": "pregunta"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 1 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "EUR@2005-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2005-06-30 = 0.826993 (Tipo de referencia del Banco Central Europeo al 2005-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "juventus-it-annual-financial-report-2004-05",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

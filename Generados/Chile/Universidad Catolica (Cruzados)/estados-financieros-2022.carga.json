@@ -1091,5 +1091,48 @@
   "lineasGasto": 25,
   "metaFilas": 4,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (261 de 262 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": null,
+   "fuente": "el .md menciona estados consolidados 137 veces y los individuales 8",
+   "estado": "pregunta"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": 855.86,
+   "fuente": "declarado por el documento, línea 694: \"Dólar Estadounidense                       855,86           844,69\" (elegido entre 3 valores por ser el de la fecha más nueva de la tabla, 2022-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "catolica-cl-estados-financieros-2022",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "cl-primera",
+   "fuente": "data/club-leagues/cl.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

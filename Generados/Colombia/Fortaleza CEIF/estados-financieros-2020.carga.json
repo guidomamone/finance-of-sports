@@ -2928,5 +2928,48 @@
   "lineasGasto": 97,
   "metaFilas": 2,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (50 de 50 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (2 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2020-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2020-12-31 = 3432.5 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2020-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fortalezaceif-co-estados-financieros-2020",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraB",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

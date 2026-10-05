@@ -428,5 +428,48 @@
   "lineasGasto": 7,
   "metaFilas": 1,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2019-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2019-06-30) y contenido del .md (53 de 53 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Grecia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2019-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-06-30 = 0.878735 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "aellarissa-gr-ael-notes-elp-2019-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gr-superleague",
+   "fuente": "data/club-leagues/gr.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

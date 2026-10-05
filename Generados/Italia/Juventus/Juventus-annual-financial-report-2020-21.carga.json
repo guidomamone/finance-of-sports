@@ -598,5 +598,48 @@
   "lineasGasto": 11,
   "metaFilas": 4,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (340 de 363 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": null,
+   "fuente": "el .md menciona estados consolidados 129 veces y los individuales 25",
+   "estado": "pregunta"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "juventus-it-annual-financial-report-2020-21",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }

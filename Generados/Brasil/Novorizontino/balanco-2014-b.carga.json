@@ -2088,5 +2088,48 @@
   "lineasGasto": 64,
   "metaFilas": 5,
   "excluidas": 0
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2014,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2014-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (6 de 6 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): Guido 2026-10-02: balancete con la Demonstração do Resultado completa; la lectura 5 cierra exacto con el PREJUÍZO impreso",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2014-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2014-12-31 = 2.6562 (PTAX de cierre (venda) del Banco Central do Brasil al 2014-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "novorizontino-br-balanco-2014-b",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-paulistaA3",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
+   "estado": "ok"
+  },
+  "_rehecha": "tools/escalones.mjs --rehacer-procedencia (alta-club.mjs; sin lo que cargar.mjs decide encima del perímetro)"
  }
 }
