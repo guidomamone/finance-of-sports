@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 500 — Fortaleza CEIF 2019-2025: la nómina administrativa sale de "Salarios del plantel" (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 6, decisión de Guido: cuando el documento separa la nómina de la nota de gastos de administración de la del equipo (2019-2025), la de administración va a `admin_general_expense`, como en UC y Goiás; reemplaza la respuesta anterior de la cola (todo a `wages_squad`). 25 renglones, 5.732 M COP en total; quedan con la etiqueta "… (administración)". 2017 y 2018 no cambian: ahí el documento no separa (la única nómina, con el plantel, está en administración u operación).
+- 70 ajustes (`fila` + `categoria`) en 2019-2023 y 2025, con dos casos de etiqueta repetida resueltos con etiqueta propia: "Bonificaciones (2ª fila)" (dos filas en la nota de ventas 2023) y el ingreso "Auxilio de transporte" 2023 (misma etiqueta que una fila de la nómina). `verificar.mjs`: los seis años dan los mismos totales que antes. 2024 sin ajustes: la verificación de hoy no abre esa nota. ASSET_V 410 → 411.
+
 ## Versión 499 — Goiás 2012 y 2013: gastos desde la nota por segmento; sueldos del plantel 25,5 M y 31,9 M (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 5: `wages_squad` en 0 y los gastos de fútbol en bolsón (35,8 M y 44,6 M). La nota de costos y gastos (2012: nota 20, pág. 3; 2013: nota 18, pág. 18) viene por segmento y su columna TOTAL suma exacto los renglones del estado; la auditoría no cerraba porque comparaba profesional + base contra el renglón "futebol" del estado, que reparte distinto. Se cargan las filas de la nota; "Despesas com pessoal" se parte: futebol profissional → `wages_squad`, social e administrativo → `admin_general_expense` (el documento separa la nómina administrativa: criterio de la etiqueta "Salarios del plantel" y de UC).

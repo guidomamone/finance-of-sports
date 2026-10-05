@@ -246,7 +246,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Gastos de Viaje', normalizedCategory:'match_organisation_expense', amountNative:-180.573, disclosureLevel:'aggregated' }, // pág. 23, Jev 0.99
     { rawLabel:'Gastos Legales', normalizedCategory:'admin_general_expense', amountNative:-53.7, disclosureLevel:'aggregated' }, // pág. 23, Jev 0.99
     { rawLabel:'Prestación de Servicios Deportivos', normalizedCategory:'match_organisation_expense', amountNative:-214.465, disclosureLevel:'aggregated' }, // pág. 23, precedente
-    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-526.714, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Gastos Laborales (administración)', normalizedCategory:'admin_general_expense', amountNative:-526.714, disclosureLevel:'aggregated' }, // pág. 24, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Gastos por Honorarios', normalizedCategory:'admin_general_expense', amountNative:-151.847, disclosureLevel:'aggregated' }, // pág. 24, Jev 1
     { rawLabel:'Gastos por Impuestos', normalizedCategory:'admin_general_expense', amountNative:-35.491, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.99
     { rawLabel:'Gastos por Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-182.886, disclosureLevel:'aggregated' }, // pág. 24, precedente
@@ -275,7 +275,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Prima de Servicios', normalizedCategory:'wages_squad', amountNative:-73.858, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Intereses Sobre Cesantías', normalizedCategory:'wages_squad', amountNative:-7.478, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Vacaciones', normalizedCategory:'wages_squad', amountNative:-69.69, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Bonificaciones', normalizedCategory:'wages_squad', amountNative:-20.514, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Bonificaciones (2ª fila)', normalizedCategory:'wages_squad', amountNative:-20.514, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Prima extralegal', normalizedCategory:'wages_squad', amountNative:-0.5, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.85
     { rawLabel:'Fondos Pensión', normalizedCategory:'wages_squad', amountNative:-104.85, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Fondos EPS', normalizedCategory:'wages_squad', amountNative:-0.203, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
@@ -320,17 +320,17 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-11.111, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-53.133, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
     { rawLabel:'Deterioro de inventario', normalizedCategory:'other_expenses', amountNative:-15.637, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'Sueldos', normalizedCategory:'wages_squad', amountNative:-278.356, disclosureLevel:'aggregated' }, // pág. 27, precedente
+    { rawLabel:'Sueldos (administración)', normalizedCategory:'admin_general_expense', amountNative:-278.356, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Horas extras y recargos', normalizedCategory:'admin_general_expense', amountNative:-1.97, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.8
-    { rawLabel:'Incapacidades', normalizedCategory:'wages_squad', amountNative:-6.109, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Auxilio de transporte', normalizedCategory:'wages_squad', amountNative:-6.204, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Cesantías', normalizedCategory:'wages_squad', amountNative:-25.249, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Intereses sobre cesantías', normalizedCategory:'wages_squad', amountNative:-2.963, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Prima de servicios', normalizedCategory:'wages_squad', amountNative:-25.251, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Vacaciones', normalizedCategory:'wages_squad', amountNative:-27.14, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Prima extralegal', normalizedCategory:'wages_squad', amountNative:-2.7, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.85
-    { rawLabel:'Bonificaciones', normalizedCategory:'wages_squad', amountNative:-146.841, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Aportes fondo de pensiones', normalizedCategory:'wages_squad', amountNative:-37.096, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.96
+    { rawLabel:'Incapacidades (administración)', normalizedCategory:'admin_general_expense', amountNative:-6.109, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Auxilio de transporte (administración)', normalizedCategory:'admin_general_expense', amountNative:-6.204, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Cesantías (administración)', normalizedCategory:'admin_general_expense', amountNative:-25.249, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Intereses sobre cesantías (administración)', normalizedCategory:'admin_general_expense', amountNative:-2.963, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Prima de servicios (administración)', normalizedCategory:'admin_general_expense', amountNative:-25.251, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Vacaciones (administración)', normalizedCategory:'admin_general_expense', amountNative:-27.14, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Prima extralegal (administración)', normalizedCategory:'admin_general_expense', amountNative:-2.7, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Bonificaciones (administración)', normalizedCategory:'admin_general_expense', amountNative:-146.841, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Aportes fondo de pensiones (administración)', normalizedCategory:'admin_general_expense', amountNative:-37.096, disclosureLevel:'aggregated' }, // pág. 27, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Aportes caja de compensación familiar', normalizedCategory:'admin_general_expense', amountNative:-11.66, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'Aportes de riesgos laborales', normalizedCategory:'admin_general_expense', amountNative:-1.493, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'Aportes a entidades promotora de salud', normalizedCategory:'admin_general_expense', amountNative:-7.512, disclosureLevel:'aggregated' }, // pág. 27, precedente
@@ -392,7 +392,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-51.639, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
     { rawLabel:'Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-21.663, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.9
     { rawLabel:'Deterioro de inventario', normalizedCategory:'other_expenses', amountNative:-26.913, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99
-    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-996.661, disclosureLevel:'aggregated' }, // pág. 26, precedente
+    { rawLabel:'Gastos Laborales (administración)', normalizedCategory:'admin_general_expense', amountNative:-996.661, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-119.681, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
     { rawLabel:'Contribuciones y afiliaciones', normalizedCategory:'admin_general_expense', amountNative:-9.581, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
     { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-4.206, disclosureLevel:'aggregated' }, // pág. 27, precedente
@@ -446,7 +446,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-35.05, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.98
     { rawLabel:'De viaje', normalizedCategory:'match_organisation_expense', amountNative:-13.065, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.97
     { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-79.959, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99
-    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-2234.94, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Gastos Laborales (administración)', normalizedCategory:'admin_general_expense', amountNative:-2234.94, disclosureLevel:'aggregated' }, // pág. 28, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-244.744, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
     { rawLabel:'Alquileres', normalizedCategory:'other_expenses', amountNative:-1.415, disclosureLevel:'aggregated' }, // pág. 29, precedente
     { rawLabel:'Contribuciones y afiliaciones', normalizedCategory:'admin_general_expense', amountNative:-9.935, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
@@ -478,7 +478,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-260.061, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-91.84, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
     { rawLabel:'Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-124, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.9
-    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-517.345, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Gastos Laborales (administración)', normalizedCategory:'admin_general_expense', amountNative:-517.345, disclosureLevel:'aggregated' }, // pág. 28, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-106.062, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
     { rawLabel:'Impuestos', normalizedCategory:'admin_general_expense', amountNative:-6.608, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
     { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-0.45, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.97
@@ -522,7 +522,7 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-13.526, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'Depreciaciones', normalizedCategory:'depreciation', amountNative:-71.858, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'Amortizaciones', normalizedCategory:'other_amortisation', amountNative:-2, disclosureLevel:'aggregated' }, // pág. 27, precedente
-    { rawLabel:'Gastos Laborales', normalizedCategory:'wages_squad', amountNative:-502.281, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Gastos Laborales (administración)', normalizedCategory:'admin_general_expense', amountNative:-502.281, disclosureLevel:'aggregated' }, // pág. 28, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-51.355, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'Impuestos', normalizedCategory:'admin_general_expense', amountNative:-8.522, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-0.301, disclosureLevel:'aggregated' }, // pág. 28, precedente
@@ -579,18 +579,18 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'Peajes', normalizedCategory:'admin_general_expense', amountNative:-0.228, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Parqueadero', normalizedCategory:'admin_general_expense', amountNative:-0.141, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Transportes Fletes Y Acarreos', normalizedCategory:'admin_general_expense', amountNative:-0.097, disclosureLevel:'aggregated' }, // pág. 24, Jev 0.94
-    { rawLabel:'Sueldos', normalizedCategory:'wages_squad', amountNative:-257.425, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Bonificaciones', normalizedCategory:'wages_squad', amountNative:-29.9, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Fondos Pensión', normalizedCategory:'wages_squad', amountNative:-29.598, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Prima De Servicios', normalizedCategory:'wages_squad', amountNative:-24.177, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Cesantías', normalizedCategory:'wages_squad', amountNative:-23.265, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Sueldos (administración)', normalizedCategory:'admin_general_expense', amountNative:-257.425, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Bonificaciones (administración)', normalizedCategory:'admin_general_expense', amountNative:-29.9, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Fondos Pensión (administración)', normalizedCategory:'admin_general_expense', amountNative:-29.598, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Prima De Servicios (administración)', normalizedCategory:'admin_general_expense', amountNative:-24.177, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Cesantías (administración)', normalizedCategory:'admin_general_expense', amountNative:-23.265, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Sena', normalizedCategory:'admin_general_expense', amountNative:-21.881, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
-    { rawLabel:'Vacaciones', normalizedCategory:'wages_squad', amountNative:-11.833, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Aportes Cajas De Compensación Familiar', normalizedCategory:'wages_squad', amountNative:-10.93, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Vacaciones (administración)', normalizedCategory:'admin_general_expense', amountNative:-11.833, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Aportes Cajas De Compensación Familiar (administración)', normalizedCategory:'admin_general_expense', amountNative:-10.93, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Aportes Administradoras De Riesgos Profe', normalizedCategory:'admin_general_expense', amountNative:-6.625, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
-    { rawLabel:'Auxilio De Transporte', normalizedCategory:'wages_squad', amountNative:-4.501, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Intereses Sobre Cesantías', normalizedCategory:'wages_squad', amountNative:-2.788, disclosureLevel:'aggregated' }, // pág. 25, precedente
-    { rawLabel:'Aportes A Entidades Promotoras De Salud', normalizedCategory:'wages_squad', amountNative:-1.63, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Auxilio De Transporte (administración)', normalizedCategory:'admin_general_expense', amountNative:-4.501, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Intereses Sobre Cesantías (administración)', normalizedCategory:'admin_general_expense', amountNative:-2.788, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
+    { rawLabel:'Aportes A Entidades Promotoras De Salud (administración)', normalizedCategory:'admin_general_expense', amountNative:-1.63, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04, hallazgo 6: nómina de la nota de gastos de administración; el documento la separa de la del equipo)
     { rawLabel:'Horas Extras Y Recargos', normalizedCategory:'admin_general_expense', amountNative:-1.627, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
     { rawLabel:'Dotación Y Suministro A Trabajadores', normalizedCategory:'admin_general_expense', amountNative:-0.964, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8
     { rawLabel:'Aporte I.C.B.F.', normalizedCategory:'admin_general_expense', amountNative:-0.567, disclosureLevel:'aggregated' }, // pág. 25, Claude 0.8

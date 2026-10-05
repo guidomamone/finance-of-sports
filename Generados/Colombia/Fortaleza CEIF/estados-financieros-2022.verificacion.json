@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
- "generado": "2026-10-03T23:03:06.199Z",
+ "generado": "2026-10-05T15:28:32.078Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2022,
@@ -43,6 +43,43 @@
    "evidencia": "estados-financieros-2022.md L1219 (renglón) y L1229-1240 (detalle, total 2.280.630)",
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "fila",
+   "valor": "1.686.353",
+   "linea": null,
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "reemplaza": "Gastos Laborales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "fila",
+   "valor": "502.281",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -93,6 +130,8 @@
   "el desglose de \"Servicios\" (18 filas) no suma la fila: quedó la fila",
   "el desglose de \"Legales\" (3 filas) no suma la fila: quedó la fila",
   "el desglose de \"De viaje\" (4 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"Gastos Laborales\" (gasto) 1.686.353, en lugar de \"Gastos Laborales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Gastos Laborales (administración)\" (gasto) 502.281 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "ajuste manual: resultado final (175.117) (2026-10-02, Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.)",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Las cifras de las notas 19 a 25 están expresadas en miles de pesos colombianos?",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma el resultado del ejercicio de la fila 'Resultados del ejercicio' del cuadro de patrimonio (b38) como resultado impreso, según el ajuste manual?",
@@ -372,14 +411,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Gastos Laborales",
-   "lado": "gasto",
-   "M": 1686.353,
-   "pagina": 26,
-   "linea": 1282,
-   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
-  },
-  {
    "etiqueta": "Honorarios",
    "lado": "gasto",
    "M": 177.218,
@@ -570,14 +601,6 @@
    "pagina": 27,
    "linea": 1351,
    "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
-  },
-  {
-   "etiqueta": "Gastos Laborales",
-   "lado": "gasto",
-   "M": 502.281,
-   "pagina": 28,
-   "linea": 1362,
-   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
   },
   {
    "etiqueta": "Honorarios",
@@ -786,6 +809,22 @@
    "pagina": 29,
    "linea": 1443,
    "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 1686.353,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "M": 502.281,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

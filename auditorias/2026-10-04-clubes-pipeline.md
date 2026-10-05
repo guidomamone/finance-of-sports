@@ -6,12 +6,9 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 
 ## Hallazgos
 
-(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 8 (498), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
+(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 6 (500), 8 (498), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
 Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verificar.mjs`.)
 
-6. **Fortaleza: "Gastos Laborales" de la nota de gastos administrativos en `wages_squad`** (2025: 2.234,9; 2024: 996,7). Es decisión de
-   Guido en la cola (`categorias-aprendidas.jsonl`), distinta del criterio de UC y Goiás (nómina administrativa en
-   `admin_general_expense`). Confirmar criterio.
 7. **Caja y deuda con huecos.** Novorizontino `grossDebt` null en 2018 y 2020-2022 (deuda con partes relacionadas en el documento: 27,5;
    39,98; 51,8; 70,3). Fortaleza: `cash` null 2019-2022; `grossDebt` null 2022 (238,1, L642) y 2023 (110,0). Va con "Caja y deuda" del HANDOFF.
 11. **Goiás 2008-2017: "(-) Dedução da receita" entera en `other_income`**, que queda negativo en 2008, 2009, 2010, 2012 y 2017. Desde

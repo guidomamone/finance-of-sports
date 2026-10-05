@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md",
- "generado": "2026-10-05T14:17:19.936Z",
+ "generado": "2026-10-05T15:28:33.186Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2025,
@@ -133,6 +133,30 @@
    "evidencia": ".md L1156",
    "autor": "Guido",
    "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "2.234.940",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "reemplaza": "Gastos Laborales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -181,6 +205,7 @@
   "ajuste manual: fila \"Tramites y licencias\" (gasto) 16.891, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
   "ajuste manual: fila \"Derechos Deportivos (7)\" (gasto) 3.483.228, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
   "ajuste manual: fila \"Legales\" (gasto) 39.211, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Gastos Laborales (administración)\" (gasto) 2.234.940, en lugar de \"Gastos Laborales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "la lectura base no cerraba; cerró con la lectura 1",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad contable antes de impuesto' de la conciliación fiscal (b12) como resultado antes de impuestos de 2025, aunque solo trae la columna 2025?",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultados del ejercicio' de la nota de patrimonio (b28) como resultado neto del ejercicio 2025 y 2024?",
@@ -546,14 +571,6 @@
    "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
   },
   {
-   "etiqueta": "Gastos Laborales",
-   "lado": "gasto",
-   "M": 2234.94,
-   "pagina": 28,
-   "linea": 1295,
-   "origen": "nota que desglosa \"Gastos de administración\""
-  },
-  {
    "etiqueta": "Honorarios",
    "lado": "gasto",
    "M": 244.744,
@@ -727,6 +744,14 @@
    "M": 39.211,
    "pagina": 29,
    "linea": 1346,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "M": 2234.94,
+   "pagina": null,
+   "linea": null,
    "origen": "ajuste manual"
   }
  ],

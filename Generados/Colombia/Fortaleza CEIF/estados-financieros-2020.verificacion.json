@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md",
- "generado": "2026-10-03T23:03:06.174Z",
+ "generado": "2026-10-05T15:28:30.964Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2020,
@@ -31,6 +31,376 @@
    "evidencia": "estados-financieros-2020, nota de ingresos operacionales",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "727.972",
+   "linea": null,
+   "etiqueta": "Sueldos",
+   "lado": "gasto",
+   "reemplaza": "Sueldos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "257.425",
+   "linea": null,
+   "etiqueta": "Sueldos (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Sueldos (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "101.481",
+   "linea": null,
+   "etiqueta": "Bonificaciones",
+   "lado": "gasto",
+   "reemplaza": "Bonificaciones",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "29.900",
+   "linea": null,
+   "etiqueta": "Bonificaciones (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Bonificaciones (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "89.424",
+   "linea": null,
+   "etiqueta": "Fondos Pensión",
+   "lado": "gasto",
+   "reemplaza": "Fondos Pensión",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "29.598",
+   "linea": null,
+   "etiqueta": "Fondos Pensión (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Fondos Pensión (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "71.693",
+   "linea": null,
+   "etiqueta": "Prima De Servicios",
+   "lado": "gasto",
+   "reemplaza": "Prima De Servicios",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "24.177",
+   "linea": null,
+   "etiqueta": "Prima De Servicios (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Prima De Servicios (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "67.456",
+   "linea": null,
+   "etiqueta": "Cesantías",
+   "lado": "gasto",
+   "reemplaza": "Cesantías",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "23.265",
+   "linea": null,
+   "etiqueta": "Cesantías (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Cesantías (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "31.713",
+   "linea": null,
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "reemplaza": "Vacaciones",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "11.833",
+   "linea": null,
+   "etiqueta": "Vacaciones (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Vacaciones (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "30.797",
+   "linea": null,
+   "etiqueta": "Aportes Cajas De Compensación Familiar",
+   "lado": "gasto",
+   "reemplaza": "Aportes Cajas De Compensación Familiar",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "10.930",
+   "linea": null,
+   "etiqueta": "Aportes Cajas De Compensación Familiar (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Aportes Cajas De Compensación Familiar (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "29.944",
+   "linea": null,
+   "etiqueta": "Auxilio De Transporte",
+   "lado": "gasto",
+   "reemplaza": "Auxilio De Transporte",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "4.501",
+   "linea": null,
+   "etiqueta": "Auxilio De Transporte (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Auxilio De Transporte (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "6.876",
+   "linea": null,
+   "etiqueta": "Intereses Sobre Cesantías",
+   "lado": "gasto",
+   "reemplaza": "Intereses Sobre Cesantías",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "2.788",
+   "linea": null,
+   "etiqueta": "Intereses Sobre Cesantías (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Intereses Sobre Cesantías (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "404",
+   "linea": null,
+   "etiqueta": "Aportes A Entidades Promotoras De Salud",
+   "lado": "gasto",
+   "reemplaza": "Aportes A Entidades Promotoras De Salud",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "fila",
+   "valor": "1.630",
+   "linea": null,
+   "etiqueta": "Aportes A Entidades Promotoras De Salud (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Aportes A Entidades Promotoras De Salud (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -68,6 +438,26 @@
  ],
  "notas": [
   "la nota de \"Comercio Al Por Mayor Y Al Por Menor (2)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Sueldos\" (gasto) 727.972, en lugar de \"Sueldos\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Sueldos (administración)\" (gasto) 257.425 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Bonificaciones\" (gasto) 101.481, en lugar de \"Bonificaciones\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Bonificaciones (administración)\" (gasto) 29.900 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Fondos Pensión\" (gasto) 89.424, en lugar de \"Fondos Pensión\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Fondos Pensión (administración)\" (gasto) 29.598 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Prima De Servicios\" (gasto) 71.693, en lugar de \"Prima De Servicios\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Prima De Servicios (administración)\" (gasto) 24.177 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Cesantías\" (gasto) 67.456, en lugar de \"Cesantías\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Cesantías (administración)\" (gasto) 23.265 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Vacaciones\" (gasto) 31.713, en lugar de \"Vacaciones\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Vacaciones (administración)\" (gasto) 11.833 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Aportes Cajas De Compensación Familiar\" (gasto) 30.797, en lugar de \"Aportes Cajas De Compensación Familiar\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Aportes Cajas De Compensación Familiar (administración)\" (gasto) 10.930 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Auxilio De Transporte\" (gasto) 29.944, en lugar de \"Auxilio De Transporte\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Auxilio De Transporte (administración)\" (gasto) 4.501 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Intereses Sobre Cesantías\" (gasto) 6.876, en lugar de \"Intereses Sobre Cesantías\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Intereses Sobre Cesantías (administración)\" (gasto) 2.788 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
+  "ajuste manual: fila \"Aportes A Entidades Promotoras De Salud\" (gasto) 404, en lugar de \"Aportes A Entidades Promotoras De Salud\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Aportes A Entidades Promotoras De Salud (administración)\" (gasto) 1.630 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad Contable' de la liquidación del impuesto (b6) como resultado antes de impuestos de 2020?",
   "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga 'Impuesto De Renta Y Complementario' (8,182) de L511 como ingreso por impuesto (signo a favor), dado que las notas suman -710,605 y la Utilidad Contable es (702,423)?",
   "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usa como etiqueta de cada renglón del estado el rótulo del total impreso (ej. 'Total Gastos de Ventas') porque el título numerado de la nota no está transcripto?"
@@ -223,70 +613,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Sueldos",
-   "lado": "gasto",
-   "M": 727.972,
-   "pagina": 23,
-   "linea": 932,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Bonificaciones",
-   "lado": "gasto",
-   "M": 101.481,
-   "pagina": 23,
-   "linea": 933,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Cesantías",
-   "lado": "gasto",
-   "M": 67.456,
-   "pagina": 23,
-   "linea": 934,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Prima De Servicios",
-   "lado": "gasto",
-   "M": 71.693,
-   "pagina": 23,
-   "linea": 935,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Fondos Pensión",
-   "lado": "gasto",
-   "M": 89.424,
-   "pagina": 23,
-   "linea": 936,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Vacaciones",
-   "lado": "gasto",
-   "M": 31.713,
-   "pagina": 23,
-   "linea": 937,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Aportes Cajas De Compensación Familiar",
-   "lado": "gasto",
-   "M": 30.797,
-   "pagina": 23,
-   "linea": 938,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Auxilio De Transporte",
-   "lado": "gasto",
-   "M": 29.944,
-   "pagina": 23,
-   "linea": 939,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
    "etiqueta": "Aportes A Administradoras De Riesgos Profesionales",
    "lado": "gasto",
    "M": 18.71,
@@ -303,27 +629,11 @@
    "origen": "nota que desglosa \"Total Gastos de Ventas\""
   },
   {
-   "etiqueta": "Intereses Sobre Cesantías",
-   "lado": "gasto",
-   "M": 6.876,
-   "pagina": 23,
-   "linea": 942,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
    "etiqueta": "Dotación De Personal",
    "lado": "gasto",
    "M": 5.886,
    "pagina": 23,
    "linea": 943,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Aportes A Entidades Promotoras De Salud",
-   "lado": "gasto",
-   "M": 0.404,
-   "pagina": 24,
-   "linea": 953,
    "origen": "nota que desglosa \"Total Gastos de Ventas\""
   },
   {
@@ -439,46 +749,6 @@
    "origen": "nota que desglosa \"Total Gastos de Ventas\""
   },
   {
-   "etiqueta": "Sueldos",
-   "lado": "gasto",
-   "M": 257.425,
-   "pagina": 25,
-   "linea": 1002,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Bonificaciones",
-   "lado": "gasto",
-   "M": 29.9,
-   "pagina": 25,
-   "linea": 1003,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Fondos Pensión",
-   "lado": "gasto",
-   "M": 29.598,
-   "pagina": 25,
-   "linea": 1004,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Prima De Servicios",
-   "lado": "gasto",
-   "M": 24.177,
-   "pagina": 25,
-   "linea": 1005,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Cesantías",
-   "lado": "gasto",
-   "M": 23.265,
-   "pagina": 25,
-   "linea": 1006,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
    "etiqueta": "Sena",
    "lado": "gasto",
    "M": 21.881,
@@ -487,51 +757,11 @@
    "origen": "nota que desglosa \"Total Gastos de Administración\""
   },
   {
-   "etiqueta": "Vacaciones",
-   "lado": "gasto",
-   "M": 11.833,
-   "pagina": 25,
-   "linea": 1008,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Aportes Cajas De Compensación Familiar",
-   "lado": "gasto",
-   "M": 10.93,
-   "pagina": 25,
-   "linea": 1009,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
    "etiqueta": "Aportes Administradoras De Riesgos Profe",
    "lado": "gasto",
    "M": 6.625,
    "pagina": 25,
    "linea": 1010,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Auxilio De Transporte",
-   "lado": "gasto",
-   "M": 4.501,
-   "pagina": 25,
-   "linea": 1011,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Intereses Sobre Cesantías",
-   "lado": "gasto",
-   "M": 2.788,
-   "pagina": 25,
-   "linea": 1012,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
-  },
-  {
-   "etiqueta": "Aportes A Entidades Promotoras De Salud",
-   "lado": "gasto",
-   "M": 1.63,
-   "pagina": 25,
-   "linea": 1013,
    "origen": "nota que desglosa \"Total Gastos de Administración\""
   },
   {
@@ -989,6 +1219,166 @@
    "pagina": 27,
    "linea": 1133,
    "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Sueldos",
+   "lado": "gasto",
+   "M": 727.972,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Sueldos (administración)",
+   "lado": "gasto",
+   "M": 257.425,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Bonificaciones",
+   "lado": "gasto",
+   "M": 101.481,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Bonificaciones (administración)",
+   "lado": "gasto",
+   "M": 29.9,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Fondos Pensión",
+   "lado": "gasto",
+   "M": 89.424,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Fondos Pensión (administración)",
+   "lado": "gasto",
+   "M": 29.598,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Prima De Servicios",
+   "lado": "gasto",
+   "M": 71.693,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Prima De Servicios (administración)",
+   "lado": "gasto",
+   "M": 24.177,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cesantías",
+   "lado": "gasto",
+   "M": 67.456,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cesantías (administración)",
+   "lado": "gasto",
+   "M": 23.265,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 31.713,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Vacaciones (administración)",
+   "lado": "gasto",
+   "M": 11.833,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Aportes Cajas De Compensación Familiar",
+   "lado": "gasto",
+   "M": 30.797,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Aportes Cajas De Compensación Familiar (administración)",
+   "lado": "gasto",
+   "M": 10.93,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Auxilio De Transporte",
+   "lado": "gasto",
+   "M": 29.944,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Auxilio De Transporte (administración)",
+   "lado": "gasto",
+   "M": 4.501,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Intereses Sobre Cesantías",
+   "lado": "gasto",
+   "M": 6.876,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Intereses Sobre Cesantías (administración)",
+   "lado": "gasto",
+   "M": 2.788,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Aportes A Entidades Promotoras De Salud",
+   "lado": "gasto",
+   "M": 0.404,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Aportes A Entidades Promotoras De Salud (administración)",
+   "lado": "gasto",
+   "M": 1.63,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

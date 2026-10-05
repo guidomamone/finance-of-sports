@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md",
- "generado": "2026-10-03T23:03:06.165Z",
+ "generado": "2026-10-05T15:28:30.424Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2019,
@@ -44,6 +44,43 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "fila",
+   "valor": "1.162.652",
+   "linea": null,
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "reemplaza": "Gastos Laborales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo)",
+   "evidencia": "nota de gastos de ventas",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "fila",
+   "valor": "526.714",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Gastos Laborales (administración)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
+   "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -87,6 +124,8 @@
  "notas": [
   "la nota de \"Total Costo de Ventas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: fila \"Costos financieros\" (financiero) (48,426), en lugar de \"Total Costos Financieros\" (2026-10-02, El total de costos financieros está impreso en positivo y entraba sumando como ingreso; el impuesto calculado daba 114.320 en vez de 17.462.)",
+  "ajuste manual: fila \"Gastos Laborales\" (gasto) 1.162.652, en lugar de \"Gastos Laborales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad) (la etiqueta se repite en las dos notas: el reemplazo saca las dos y se repone la del equipo))",
+  "ajuste manual: fila \"Gastos Laborales (administración)\" (gasto) 526.714 (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad))",
   "ajuste manual: resultado final (52,122) (2026-10-02, Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.)",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se deja afuera de la carga el cuadro de venta de derechos deportivos por equipo/jugador (b26)?",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad Contable' de b7 (52,122 entre paréntesis, pérdida) como resultado antes de impuestos del ejercicio 2019?",
@@ -299,14 +338,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Gastos Laborales",
-   "lado": "gasto",
-   "M": 1162.652,
-   "pagina": 22,
-   "linea": 862,
-   "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
    "etiqueta": "Gastos de Viaje",
    "lado": "gasto",
    "M": 180.573,
@@ -329,14 +360,6 @@
    "pagina": 23,
    "linea": 901,
    "origen": "nota que desglosa \"Total Gastos de Ventas\""
-  },
-  {
-   "etiqueta": "Gastos Laborales",
-   "lado": "gasto",
-   "M": 526.714,
-   "pagina": 24,
-   "linea": 938,
-   "origen": "nota que desglosa \"Total Gastos de Administración\""
   },
   {
    "etiqueta": "Gastos por Honorarios",
@@ -473,6 +496,22 @@
    "pagina": 26,
    "linea": 1067,
    "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 1162.652,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Gastos Laborales (administración)",
+   "lado": "gasto",
+   "M": 526.714,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
