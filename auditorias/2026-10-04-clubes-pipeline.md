@@ -6,25 +6,14 @@ Ordenados por impacto en lo que ve un visitante. "M" = millones de la moneda del
 
 ## Hallazgos
 
-(Hallazgos 1 a 4 resueltos el 2026-10-05, Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
+(Resueltos el 2026-10-05: hallazgos 1 a 4 (Versión 492), 5 (499), 8 (498), 9 (496), 10 (497) y la deuda de Fortaleza 2021 del 7 y el b) de caja y deuda (495). Los de la Versión 492: datos corregidos y ajustes manuales en `Admin/ajustes-manuales.jsonl`.
 Desde la Versión 493 los ajustes de los cuatro casos se reproducen con `verificar.mjs`.)
 
-5. **Goiás 2012-2013: `wages_squad` en 0, gastos de fútbol en bolsón (35,8 y 44,6).** La nota 18 de 2013-2012 (L806-820) es un cuadro por
-   segmento (profesional / base / social) con "Despesas com pessoal" 31,85 y 25,45 (profesional). Verificado 2013: profesional + base
-   = 44,91 contra 44,65 del estado: no cierra exacto. Investigar antes de proponer.
 6. **Fortaleza: "Gastos Laborales" de la nota de gastos administrativos en `wages_squad`** (2025: 2.234,9; 2024: 996,7). Es decisión de
    Guido en la cola (`categorias-aprendidas.jsonl`), distinta del criterio de UC y Goiás (nómina administrativa en
    `admin_general_expense`). Confirmar criterio.
 7. **Caja y deuda con huecos.** Novorizontino `grossDebt` null en 2018 y 2020-2022 (deuda con partes relacionadas en el documento: 27,5;
-   39,98; 51,8; 70,3). Fortaleza: `cash` null 2019-2022; `grossDebt` null 2022 (238,1, L642) y 2023 (110,0); 2021 cargado 102,5 = solo
-   corto plazo (el balance dice 295,8, L506): dato mal cargado, no un hueco. Va con "Caja y deuda" del HANDOFF.
-8. **AEL Larissa 2023: `wages_squad` en 0** con la nota de gastos por naturaleza disponible (`AEL_FS_2023-06-30_a.md` L593, pág. 19:
-   Αμοιβές και έξοδα προσωπικού 2,06). Cargado como bolsón funcional (Κόστος πωλήσεων 1,59). Arreglo: recarga con la nota 16.
-   2025: entradas, patrocinio y TV solo en el informe de gestión, no cierran exacto con el bolsón 2,30: documentar.
-9. **AEL Larissa 2024: "Λοιπά έξοδα και ζημιές" 1,632 (46% del gasto) en `other_expenses`**; son extraordinarios
-   (`AEL_FS_ELP_2024-06-30.md` L646-650). Igual en 2022 (0,28) y 2025 (0,216). Propuesta: `exceptional_items`.
-10. **Goiás 2025: "Despesas com Earn In" 7,98 en `other_expenses` y "Outras Receitas (b)" 1,44 en `other_income`** (L1295-1300); en 2024
-    el mismo rubro ("Outras Receitas e Despesas" -6,90) está en `exceptional_items`. Propuesta: unificar en `exceptional_items`.
+   39,98; 51,8; 70,3). Fortaleza: `cash` null 2019-2022; `grossDebt` null 2022 (238,1, L642) y 2023 (110,0). Va con "Caja y deuda" del HANDOFF.
 11. **Goiás 2008-2017: "(-) Dedução da receita" entera en `other_income`**, que queda negativo en 2008, 2009, 2010, 2012 y 2017. Desde
     2021 cada deducción va a su línea. Documentar o ajuste `fila`.
 12. **Fortaleza: "Auxilio de arbitraje / transporte / hotelero" cambian de categoría entre años** (`competition_bonus` / `other_income`;
@@ -49,10 +38,6 @@ a) **Hay propuesta y la compuerta no tiene contra qué comparar** ("ningún año
    2020 (40,05) y 2022 (70,28); Fortaleza deuda 2023 (110). Coinciden con el documento. El año anterior está vacío y la columna "año
    anterior" del documento siguiente no se lee (Novorizontino 2019 tiene la deuda cargada, 32,3, y su documento debería traer 2018).
    Propuesta: investigar por qué (subagente, gratis) y diseñar un escalón con su compuerta. 4 datos de una vez.
-b) **Fortaleza 2021, deuda mal cargada:** el sitio tiene 102,513 (escalón 2, "Total Prestamos y Sobregiros Bancarios", nota 12, pág. 20
-   del visor), que es solo "Obligaciones al corto plazo" (tarjetas 2,513 + préstamos 100,000); la pág. 21 del visor arranca con una imagen
-   sin transcribir. El cuadro de instrumentos financieros (`estados-financieros-2021.md` L506) dice 295,846. `caja-deuda.mjs` nunca pisa
-   un valor cargado: hace falta diseñar cómo corregir uno (p. ej. ajuste `caja` con "reemplaza" como escalón 0).
 c) **Fortaleza caja 2019-2022 sin propuesta en ningún escalón.** El efectivo está en el cuadro de instrumentos financieros (2021: 20,036;
    2020: 151,365, L504), que no es una página del balance: probablemente por eso queda afuera.
 d) Antes (sin arreglo limpio medido; no insistir sin un caso nuevo). `--medir` en todos los clubes: 146 iguales, 10 distintos, 363 sin
