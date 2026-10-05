@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md",
- "generado": "2026-10-03T23:14:05.411Z",
+ "generado": "2026-10-05T14:17:20.548Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2006,
@@ -154,6 +154,64 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+   "campo": "caja",
+   "valor": "202,266",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L1931 (185,500 + 16,766)",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+   "campo": "fila",
+   "valor": "30.000.000",
+   "linea": 3133,
+   "etiqueta": "Option rights granted to RTI (Mediaset), TV 2007/08-2008/09",
+   "lado": "ingreso",
+   "reemplaza": "e) Other revenues and income",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 3: los 30 M de opciones de derechos de TV a RTI van a TV",
+   "evidencia": "pág. 111 del visor, .md L3133",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+   "campo": "fila",
+   "valor": "21.002.569",
+   "linea": 2029,
+   "etiqueta": "e) Other revenues and income (resto)",
+   "lado": "ingreso",
+   "reemplaza": "e) Other revenues and income",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 3: 51.002.569 impreso menos los 30.000.000 de RTI",
+   "evidencia": ".md L2029",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "Option rights granted to RTI (Mediaset), TV 2007/08-2008/09",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 3",
+   "evidencia": ".md L3133",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "e) Other revenues and income (resto)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 3",
+   "evidencia": ".md L2029",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -179,6 +237,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2005 de este documento suma ingresos 259.082991; el sitio tiene 259.082991"
+  },
+  {
    "nombre": "documento del año 2007",
    "ok": false,
    "detalle": "ingresos de 2006: 262.043887 en este documento y 226.029084 en Juventus-annual-financial-report-2006-07.pdf (columna del año anterior)"
@@ -187,11 +250,6 @@
    "nombre": "documento del año 2005",
    "ok": false,
    "detalle": "ingresos de 2005: 229.914251 en Juventus-annual-financial-report-2004-05.pdf y 259.082991 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2005: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -209,6 +267,8 @@
   "ajuste manual: fila \"Advertising\" (ingreso) 1628000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3080))",
   "ajuste manual: fila \"Technical staff and players' image rights\" (ingreso) 1731000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3081))",
   "ajuste manual: fila \"Sundry income\" (ingreso) 166000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3082))",
+  "ajuste manual: fila \"Option rights granted to RTI (Mediaset), TV 2007/08-2008/09\" (ingreso) 30.000.000, en lugar de \"e) Other revenues and income\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 3: los 30 M de opciones de derechos de TV a RTI van a TV)",
+  "ajuste manual: fila \"e) Other revenues and income (resto)\" (ingreso) 21.002.569, en lugar de \"e) Other revenues and income\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 3: 51.002.569 impreso menos los 30.000.000 de RTI)",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b19 es una cuenta de resultados reclasificada en €/000 con columnas por área de negocio; sus importes ya están en el estado oficial y las notas.",
   "duda de localizar que no afecta la carga: Son detalle por jugador de renglones ya abiertos en b62, b64 y b68.",
@@ -286,14 +346,6 @@
    "M": 1,
    "pagina": 81,
    "linea": 2027,
-   "origen": "estado (lectura 5: hoja)"
-  },
-  {
-   "etiqueta": "e) Other revenues and income",
-   "lado": "ingreso",
-   "M": 51.002569,
-   "pagina": 81,
-   "linea": 2029,
    "origen": "estado (lectura 5: hoja)"
   },
   {
@@ -382,6 +434,22 @@
    "M": 0.166,
    "pagina": 109,
    "linea": 3082,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Option rights granted to RTI (Mediaset), TV 2007/08-2008/09",
+   "lado": "ingreso",
+   "M": 30,
+   "pagina": 111,
+   "linea": 3133,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "e) Other revenues and income (resto)",
+   "lado": "ingreso",
+   "M": 21.002569,
+   "pagina": 81,
+   "linea": 2029,
    "origen": "ajuste manual"
   },
   {

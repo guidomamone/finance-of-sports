@@ -299,7 +299,16 @@ const goiasbrRevenueLinesByYear = {
   // 2016: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Goias/demonstracoes-contabeis-2016-2015.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2016: [
-    { rawLabel:'RECEITA LÍQUIDA DAS ATIVIDADES', normalizedCategory:'lump_football_operations', amountNative:83.004966, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
+    { rawLabel:'Bilheterias', normalizedCategory:'matchday_competition', amountNative:1.692187, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:53.945357, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Premiação/participações', normalizedCategory:'competition_bonus', amountNative:0.48, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Transação de atletas', normalizedCategory:'player_sales', amountNative:24.128113, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Patrocínio/ publicidade/propaganda', normalizedCategory:'sponsorship_commercial', amountNative:3.22816, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Mensalidades', normalizedCategory:'member_dues', amountNative:3.224762, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Jogos lotéricos', normalizedCategory:'other_income', amountNative:2.071201, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Receitas patrimoniais', normalizedCategory:'other_income', amountNative:0.22691, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:1.409704, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'(-) Deduções das receitas', normalizedCategory:'other_income', amountNative:-7.401426, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
     { rawLabel:'Outras receitas e despesas', normalizedCategory:'other_income', amountNative:0.018408, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
   // 2024: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
@@ -564,7 +573,17 @@ const goiasbrExpenseLinesByYear = {
     { rawLabel:'Provisões para contingências', normalizedCategory:'admin_general_expense', amountNative:-4.061112, disclosureLevel:'aggregated' }, // pág. 20, precedente
   ],
   2016: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Despesas com futebol profissional e amador', normalizedCategory:'lump_football_operations_expense', amountNative:-38.209386, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Alugueis de estádios', normalizedCategory:'match_organisation_expense', amountNative:-0.152332, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.028189, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Exames antidoping', normalizedCategory:'match_organisation_expense', amountNative:-0.000743, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Custos e despesas c/ pessoal - Jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.190501, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Outros custos e despesas - Jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.437696, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Taxas confederações e federações', normalizedCategory:'match_organisation_expense', amountNative:-0.70513, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Transportes', normalizedCategory:'match_organisation_expense', amountNative:-0.243219, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Alimentação e estadias', normalizedCategory:'match_organisation_expense', amountNative:-0.649441, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Cessão de direitos de atletas', normalizedCategory:'player_amortisation', amountNative:-3.69115, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Despesa com pessoal', normalizedCategory:'wages_squad', amountNative:-30.088732, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
+    { rawLabel:'Cessão de direito de imagem', normalizedCategory:'wages_squad', amountNative:-2.022254, disclosureLevel:'aggregated' }, // pág. 3, ajuste manual (nota 17/18, auditoría 2026-10-04)
     { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.454245, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.875578, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Serviços de terceiros', normalizedCategory:'admin_general_expense', amountNative:-3.284072, disclosureLevel:'aggregated' }, // pág. 1, precedente
@@ -826,11 +845,7 @@ const goiasbrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-3.260861, tax:0,
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'RECEITA LÍQUIDA DAS ATIVIDADES', lado:'revenue', importe:83.004966, motivo:'el documento no desglosa este renglón'},
-      {renglon:'Despesas com futebol profissional e amador', lado:'expense', importe:38.209386, motivo:'el documento no desglosa este renglón'},
-    ],
+    // ajuste manual (2026-10-05, auditoría 2026-10-04 hallazgo 1): ingresos y gastos de fútbol abiertos con las notas 17 y 18 (.md L892-941), que suman exacto lo impreso.
     grossDebt:null, cash:null,
     officialTotalRevenue:83.023374, officialTotalExpenses:63.985423, officialPAT:15.77709,
   },

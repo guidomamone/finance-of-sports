@@ -222,7 +222,8 @@ const juventusitRevenueLinesByYear = {
     { rawLabel:'1) REVENUES FROM SALES AND SERVICES', normalizedCategory:'matchday_competition', amountNative:16.594705, disclosureLevel:'aggregated' }, // pág. 81, precedente
     { rawLabel:'a) Income from temporary transfer of players', normalizedCategory:'player_sales', amountNative:1.485, disclosureLevel:'aggregated' }, // pág. 81, Jev 0.98
     { rawLabel:'b) LNP contributions', normalizedCategory:'broadcasting', amountNative:1, disclosureLevel:'aggregated' }, // pág. 81, precedente
-    { rawLabel:'e) Other revenues and income', normalizedCategory:'other_income', amountNative:51.002569, disclosureLevel:'aggregated' }, // pág. 81, precedente
+    { rawLabel:'Option rights granted to RTI (Mediaset), TV 2007/08-2008/09', normalizedCategory:'broadcasting', amountNative:30, disclosureLevel:'aggregated' }, // pág. 111, ajuste manual (auditoría 2026-10-04): parte de 'e) Other revenues and income', .md L3133
+    { rawLabel:'e) Other revenues and income (resto)', normalizedCategory:'other_income', amountNative:21.002569, disclosureLevel:'aggregated' }, // pág. 81, ajuste manual: 51.002569 menos los 30 de RTI
     { rawLabel:'a) Capital gains on disposals', normalizedCategory:'player_sales', amountNative:4.444841, disclosureLevel:'aggregated' }, // pág. 82, precedente
     { rawLabel:'b) Others', normalizedCategory:'other_income', amountNative:4.871963, disclosureLevel:'aggregated' }, // pág. 82, Jev 0.99
     { rawLabel:'Official and Technical sponsors', normalizedCategory:'sponsorship_commercial', amountNative:34.47, disclosureLevel:'aggregated' }, // pág. 109, Jev 1

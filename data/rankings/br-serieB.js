@@ -154,7 +154,7 @@ window.RANKINGS["br-serieB"] = {
     clubs: [
       { id:"goias-br", revenue:25.474, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2016-2015",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",25.469],["Otros ingresos",0.006]] },
+        mix:[["Cuotas Sociales",0.989],["Comercial / Sponsors",0.991],["Estadio",0.519],["Televisión",16.552],["Premios por competencias",0.147],["Venta de Jugadores",7.403],["Otros ingresos",-1.128]] },
     ],
   },
   2012: {

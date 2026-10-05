@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 492 — Auditoría de los clubes del pipeline: hallazgos 1 a 4 corregidos (to-do 138) (2026-10-05)
+
+- Goiás 2016: ingresos y gastos de fútbol abiertos con las notas 17 y 18 (antes, dos bolsones con `sinDesglose` falso); TV 53,9 M, transferencias 24,1 M y sueldos 30,1 M dejan de verse en 0.
+- Fortaleza CEIF 2025: "Legales" y "Arrendamientos" abiertos en sus partes (Derechos Deportivos 3.483 M COP a `player_amortisation`, Alquiler Terrenos a `match_organisation_expense`); 2024: "Legales" 163,6 abierto igual.
+- Juventus 2006: los 30 M€ de opciones de TV a RTI salen de `other_income` a `broadcasting`.
+- Universidad Católica 2016: "Remuneraciones" 447,5 M CLP de la nota de administración pasa a `admin_general_expense` con etiqueta propia.
+- Corrección a mano de `data/*.js` (pedido de Guido: sin API) + 41 ajustes en `Admin/ajustes-manuales.jsonl` para que el pipeline lo reproduzca; `verificar.mjs` cierra con los ajustes en Fortaleza 2025, Juventus 2006 y UC 2016. Goiás 2016 queda pendiente del signo de la deducción en el ajuste `fila`. ASSET_V 404 → 405; rankings y página de fuentes regenerados. Auditoría 0 P0 / 0 P1; `auditAll()` sin cambios en lo que no cierra (Bayern, redondeo).
+
 ## Versión 491 — Lo aprendido en el sourcing de Europa del Este, a la skill (ex to-do 136) (2026-10-05)
 
 - `club-sourcing`, aprobado por Guido: 17 archivos de país nuevos en `paises/` (Armenia, Azerbaiyán, Bielorrusia, Bosnia, Bulgaria, Eslovaquia, Eslovenia, Estonia, Georgia, Hungría, Kazajistán, Letonia, Lituania, Macedonia del Norte, Polonia, Rumania, Serbia) con su línea en el índice; `Rusia.md` (endpoints `details` JSON y `XLS`), `Croacia.md` (Slaven y Varaždin por CDX de dominio) y `Ucrania.md` (Dynamo Kyiv deja de ser dead-end, Shakhtar, Oleksandriya por Wayback, 14 de 16).

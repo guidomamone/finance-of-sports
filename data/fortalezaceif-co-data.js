@@ -371,7 +371,8 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'IVA descontable por $ 119.791', normalizedCategory:'admin_general_expense', amountNative:-119.791, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
     { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-47.515, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-956.647, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.98
-    { rawLabel:'Legales', normalizedCategory:'admin_general_expense', amountNative:-163.562, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Tramites y licencias', normalizedCategory:'admin_general_expense', amountNative:-96.521, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04)
+    { rawLabel:'Derechos Deportivos (7)', normalizedCategory:'player_amortisation', amountNative:-67.041, disclosureLevel:'aggregated' }, // pág. 25, ajuste manual (auditoría 2026-10-04)
     { rawLabel:'Terrenos', normalizedCategory:'admin_general_expense', amountNative:-9.354, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Construcciones y edificaciones', normalizedCategory:'admin_general_expense', amountNative:-109.658, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Maquinaria y equipo', normalizedCategory:'admin_general_expense', amountNative:-5.974, disclosureLevel:'aggregated' }, // pág. 25, precedente
@@ -419,7 +420,9 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'COSTO DE VENTAS', normalizedCategory:'other_expenses', amountNative:-606.635, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'De personal', normalizedCategory:'wages_squad', amountNative:-7170.528, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-536.813, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
-    { rawLabel:'Arrendamientos', normalizedCategory:'admin_general_expense', amountNative:-1655.093, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
+    { rawLabel:'Alquiler construcciones y edificaciones', normalizedCategory:'admin_general_expense', amountNative:-225.384, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04)
+    { rawLabel:'Alquiler maquinaria y equipo', normalizedCategory:'admin_general_expense', amountNative:-150.895, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04)
+    { rawLabel:'Alquiler Terrenos', normalizedCategory:'match_organisation_expense', amountNative:-1278.814, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04)
     { rawLabel:'Afiliaciones y sostenimientos', normalizedCategory:'admin_general_expense', amountNative:-0.303, disclosureLevel:'aggregated' }, // pág. 26, precedente
     { rawLabel:'INDUSTRIA Y COMERCIO', normalizedCategory:'admin_general_expense', amountNative:-55.493, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.9
     { rawLabel:'DE ESPECTACULOS PUBLICOS (I.D.R.D)', normalizedCategory:'admin_general_expense', amountNative:-373.032, disclosureLevel:'aggregated' }, // pág. 27, precedente
@@ -428,7 +431,8 @@ const fortalezaceifcoExpenseLinesByYear = {
     { rawLabel:'IVA DESCONTABLE', normalizedCategory:'admin_general_expense', amountNative:-359.859, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
     { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-33.568, disclosureLevel:'aggregated' }, // pág. 26, precedente
     { rawLabel:'Servicios', normalizedCategory:'admin_general_expense', amountNative:-1453.576, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.98
-    { rawLabel:'Legales', normalizedCategory:'admin_general_expense', amountNative:-3500.119, disclosureLevel:'aggregated' }, // pág. 26, Jev 1
+    { rawLabel:'Tramites y licencias', normalizedCategory:'admin_general_expense', amountNative:-16.891, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04)
+    { rawLabel:'Derechos Deportivos (7)', normalizedCategory:'player_amortisation', amountNative:-3483.228, disclosureLevel:'aggregated' }, // pág. 26, ajuste manual (auditoría 2026-10-04)
     { rawLabel:'Mantenimiento y adecuaciones', normalizedCategory:'admin_general_expense', amountNative:-479.854, disclosureLevel:'aggregated' }, // pág. 26, precedente
     { rawLabel:'De viaje', normalizedCategory:'match_organisation_expense', amountNative:-674.771, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.97
     { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-1016.505, disclosureLevel:'aggregated' }, // pág. 26, Jev 0.99

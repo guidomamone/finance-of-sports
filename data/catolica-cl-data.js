@@ -651,7 +651,7 @@ const catolicaExpenseLinesByYear = {
     { rawLabel:'Arriendo de Bienes', normalizedCategory:'admin_general_expense', amountNative:-186.016, disclosureLevel:'aggregated' }, // pág. 60, precedente
     { rawLabel:'Servicios de Aseo y Seguridad', normalizedCategory:'admin_general_expense', amountNative:-73.871, disclosureLevel:'aggregated' }, // pág. 60, precedente
     { rawLabel:'Servicios Contratados', normalizedCategory:'admin_general_expense', amountNative:-320.375, disclosureLevel:'aggregated' }, // pág. 60, precedente
-    { rawLabel:'Remuneraciones', normalizedCategory:'wages_squad', amountNative:-447.549, disclosureLevel:'aggregated' }, // pág. 60, precedente
+    { rawLabel:'Remuneraciones (gastos de administración)', normalizedCategory:'admin_general_expense', amountNative:-447.549, disclosureLevel:'aggregated' }, // pág. 60, ajuste manual (auditoría 2026-10-04): nota de Gastos de Administración, .md L2943
     { rawLabel:'Gas, Agua y Electricidad', normalizedCategory:'admin_general_expense', amountNative:-62.114, disclosureLevel:'aggregated' }, // pág. 60, Jev 0.99
     { rawLabel:'TV Cable, Internet y Telefonía', normalizedCategory:'admin_general_expense', amountNative:-16.684, disclosureLevel:'aggregated' }, // pág. 60, Jev 1
     { rawLabel:'Otros Gastos', normalizedCategory:'other_expenses', amountNative:-108.234, disclosureLevel:'aggregated' }, // pág. 60, Claude 0.88

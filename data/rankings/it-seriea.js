@@ -182,7 +182,7 @@ window.RANKINGS["it-seriea"] = {
     clubs: [
       { id:"juventus-it", revenue:333.137, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2005-06",
-        mix:[["Comercial / Sponsors",70.26],["Estadio",21.097],["Televisión",138.95],["Premios por competencias",24.047],["Venta de Jugadores",7.539],["Otros ingresos",71.244]] },
+        mix:[["Comercial / Sponsors",70.26],["Estadio",21.097],["Televisión",177.089],["Premios por competencias",24.047],["Venta de Jugadores",7.539],["Otros ingresos",33.105]] },
     ],
   },
   2005: {

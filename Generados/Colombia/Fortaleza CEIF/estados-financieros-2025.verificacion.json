@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md",
- "generado": "2026-10-03T23:03:06.231Z",
+ "generado": "2026-10-05T14:17:19.936Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2025,
@@ -20,6 +20,119 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "225.384",
+   "linea": 1154,
+   "etiqueta": "Alquiler construcciones y edificaciones",
+   "lado": "gasto",
+   "reemplaza": "Arrendamientos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1154",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "150.895",
+   "linea": 1155,
+   "etiqueta": "Alquiler maquinaria y equipo",
+   "lado": "gasto",
+   "reemplaza": "Arrendamientos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1155",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "1.278.814",
+   "linea": 1156,
+   "etiqueta": "Alquiler Terrenos",
+   "lado": "gasto",
+   "reemplaza": "Arrendamientos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1156",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "15.715",
+   "linea": 1270,
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "reemplaza": "Arrendamientos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1270",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "16.891",
+   "linea": 1170,
+   "etiqueta": "Tramites y licencias",
+   "lado": "gasto",
+   "reemplaza": "Legales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1170",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "3.483.228",
+   "linea": 1171,
+   "etiqueta": "Derechos Deportivos (7)",
+   "lado": "gasto",
+   "reemplaza": "Legales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1171",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "fila",
+   "valor": "39.211",
+   "linea": 1346,
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "reemplaza": "Legales",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca)",
+   "evidencia": ".md L1346",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Derechos Deportivos (7)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: intermediación y pagos a clubes por transferencias (nota 7); precedente de Guido 2020 y 2023",
+   "evidencia": "estados-financieros-2025.md L1171 y nota (7)",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "categoria",
+   "valor": "match_organisation_expense",
+   "linea": null,
+   "etiqueta": "Alquiler Terrenos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: precedente del club",
+   "evidencia": ".md L1156",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],
@@ -61,6 +174,13 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Alquiler construcciones y edificaciones\" (gasto) 225.384, en lugar de \"Arrendamientos\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Alquiler maquinaria y equipo\" (gasto) 150.895, en lugar de \"Arrendamientos\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Alquiler Terrenos\" (gasto) 1.278.814, en lugar de \"Arrendamientos\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Arrendamientos\" (gasto) 15.715, en lugar de \"Arrendamientos\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Tramites y licencias\" (gasto) 16.891, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Derechos Deportivos (7)\" (gasto) 3.483.228, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
+  "ajuste manual: fila \"Legales\" (gasto) 39.211, en lugar de \"Legales\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 2: el renglón se abre en sus partes (se repone el homónimo de otra nota, que el reemplazo por etiqueta también saca))",
   "la lectura base no cerraba; cerró con la lectura 1",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad contable antes de impuesto' de la conciliación fiscal (b12) como resultado antes de impuestos de 2025, aunque solo trae la columna 2025?",
   "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultados del ejercicio' de la nota de patrimonio (b28) como resultado neto del ejercicio 2025 y 2024?",
@@ -266,14 +386,6 @@
    "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
   },
   {
-   "etiqueta": "Arrendamientos",
-   "lado": "gasto",
-   "M": 1655.093,
-   "pagina": 26,
-   "linea": 1153,
-   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
-  },
-  {
    "etiqueta": "Afiliaciones y sostenimientos",
    "lado": "gasto",
    "M": 0.303,
@@ -338,14 +450,6 @@
    "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
   },
   {
-   "etiqueta": "Legales",
-   "lado": "gasto",
-   "M": 3500.119,
-   "pagina": 26,
-   "linea": 1169,
-   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
-  },
-  {
    "etiqueta": "Mantenimiento y adecuaciones",
    "lado": "gasto",
    "M": 479.854,
@@ -407,14 +511,6 @@
    "M": 46.283,
    "pagina": 28,
    "linea": 1267,
-   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
-  },
-  {
-   "etiqueta": "Arrendamientos",
-   "lado": "gasto",
-   "M": 15.715,
-   "pagina": 28,
-   "linea": 1270,
    "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
   },
   {
@@ -498,14 +594,6 @@
    "origen": "nota que desglosa \"Gastos de administración\""
   },
   {
-   "etiqueta": "Legales",
-   "lado": "gasto",
-   "M": 39.211,
-   "pagina": 29,
-   "linea": 1346,
-   "origen": "nota que desglosa \"Gastos de administración\""
-  },
-  {
    "etiqueta": "Mantenimientos y reparaciones",
    "lado": "gasto",
    "M": 113.956,
@@ -584,6 +672,62 @@
    "pagina": 30,
    "linea": 1399,
    "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Alquiler construcciones y edificaciones",
+   "lado": "gasto",
+   "M": 225.384,
+   "pagina": 26,
+   "linea": 1154,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Alquiler maquinaria y equipo",
+   "lado": "gasto",
+   "M": 150.895,
+   "pagina": 26,
+   "linea": 1155,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Alquiler Terrenos",
+   "lado": "gasto",
+   "M": 1278.814,
+   "pagina": 26,
+   "linea": 1156,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 15.715,
+   "pagina": 28,
+   "linea": 1270,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Tramites y licencias",
+   "lado": "gasto",
+   "M": 16.891,
+   "pagina": 26,
+   "linea": 1170,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Derechos Deportivos (7)",
+   "lado": "gasto",
+   "M": 3483.228,
+   "pagina": 26,
+   "linea": 1171,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 39.211,
+   "pagina": 29,
+   "linea": 1346,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
