@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 514 — To-do 139 diagnosticado (2026-10-05)
+
+- El defecto D (`compararVecino` sin ajustes `fila`) explica 1 solo de los 7 "NO" de año vecino de todas las verificaciones (Juventus 2005); los otros son reexpresiones reales (Juventus 2006 IFRS, 2010 TV centralizada) y UC 2009 (sin estado extraído). Sin daño: nada cargado distinto, cola vacía.
+- Probado en un sandbox con `Admin/prueba-completa.txt` y descartado: usar el total con el que cerró cada documento (arregla 2005, rompe 2003 y 2004). El 139 queda reescrito con el diagnóstico; el descarte, en `Admin/HALLAZGOS-pipeline.md`. Sin cambios de código.
+
 ## Versión 513 — To-do 143: caja-deuda no confunde un importe chico con un número de nota (2026-10-05)
 
 - `tools/caja-deuda.mjs` (`columnasDeNotas`): la referencia a nota pasa a ser una escalera. Si la tabla tiene una columna de notas inequívoca (en las filas con la cantidad de celdas más común, todas sus celdas con número son "4", "5,6", "18/26"…, al menos 2) y la cifra está a su derecha, es un importe; si no, la regla de siempre. Aprobado por Guido.

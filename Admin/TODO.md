@@ -29,11 +29,15 @@ ni en el comentario de ningún archivo de código.
     celda, relatorio-de-balanco-2023.md L193). Idea a medir, como escalón aparte: si la compuerta no cierra con la lectura de hoy, probar la
     otra lectura (sin descartar) con la MISMA compuerta. Guido, 2026-10-05: anotarlo, no hacerlo ahora.
 
-139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (no perseguir sin un caso nuevo; venía del HANDOFF, Versión 470).
-    `compararVecino` (verificar.mjs) compara con el año vecino las filas extraídas ANTES de los ajustes `fila`; Juventus 2005 y 2006 dan
-    "NO" en el chequeo de año vecino (2005: 229,9 contra 259,1; puede ser esto o la reexpresión italiano → IFRS) pero verifican ok y están
-    cargados. Retomar si un club nuevo con ajustes `fila` de ingresos frena por eso. (Los defectos B, textos, quedaron en las Versiones
-    465-466.)
+139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (diagnosticado el 2026-10-05; no perseguir sin un caso nuevo).
+    `compararVecino` (verificar.mjs, chequeo 4b) relee los ingresos de los dos documentos SIN los ajustes `fila`. De los 160 chequeos de año
+    vecino de las 88 verificaciones hay 7 "NO" (4 pares), y uno solo es este defecto: Juventus 2005 (229,914 en 2004-05 contra 259,083 en la
+    columna anterior de 2005-06; la diferencia, 29,169, es el ajuste "a) Capital gains on disposals" 29.168.740 de 2004-05). Los otros son
+    reales: Juventus 2006 (reexpresión IFRS, 2006-07 .md L1708), Juventus 2010 (reclasificación por la venta centralizada de la TV, 2010-11
+    .md L1694) y UC 2009 (documento sin estado de resultados extraído, no cargado). Ningún dato cargado distinto y la cola está vacía.
+    Lo que NO sirve (medido, `Admin/HALLAZGOS-pipeline.md`): tomar del lado del año en curso el total con el que el documento cerró; arregla
+    2005 y rompe 2003 y 2004. Un arreglo de verdad tiene que aplicar los ajustes `fila` de cada documento también a SU columna del año
+    anterior (por la fila que nombra `reemplaza`), y no hay forma de hacerlo con los desgloses que agregan filas sin `reemplaza`.
 
 140. ESCALONES Y CHEQUEOS QUE LE FALTAN AL PROCESO DEL PIPELINE (no urgentes; venían del HANDOFF, Versión 470; las etapas están en
     `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
