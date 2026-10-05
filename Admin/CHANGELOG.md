@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 518 — To-do 140(i), paso 3: `cargar.mjs` aplica "Posiblemente dentro de otro rubro" al escribir (2026-10-05)
+
+- `cargar.mjs --escribir` llama a `marcarClub()` de `tools/dentro-de-otro.mjs` sobre el club entero, antes de publicar (un P0/P1 revierte todo junto): el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si el nuevo le cambia el precedente. Imprime las marcas del club en la salida.
+- Probado en sandbox: Fortaleza CEIF sin marcas, `cargar.mjs` 2017 `--reemplazar --escribir` → vuelven las marcas de 2017 y de 2018. Ensayo de `Admin/prueba-completa.txt` (87 documentos) idéntico antes y después. `dentro-de-otro.mjs --todos --escribir` sobre el sitio: 102 → 102, no escribe nada.
+- `Admin/PIPELINE.md` al día (escalera de la etapa de carga). La skill de onboarding no cambia: no hay un paso más.
+
 ## Versión 517 — To-do 140(i), paso 2: "Posiblemente dentro de otro rubro" por precedente del club (2026-10-05)
 
 - `tools/dentro-de-otro.mjs` (nuevo, gratis): corre el motor de la página en Node (`js/finanzas-calc.js` expone `window.SIMPLIFIED_BUCKETS`) y, si una fila está en "—" por un renglón sin desglosar y tiene plata en todos los otros balances desglosados del club (al menos 2, sin presupuestos), escribe `incluidoEn` con `posible:true, por:'precedente'`. Escalón 0: `incluye` y `cero-real` de Guido. Reescribe sus propias marcas en cada corrida (idempotente; una que deja de cumplir la regla se borra).

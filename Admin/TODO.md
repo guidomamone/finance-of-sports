@@ -50,12 +50,12 @@ ni en el comentario de ningún archivo de código.
     (f) Etapa 6: número citado en el texto del documento como segundo chequeo.
     (g) Chequeo de coherencia entre años (prototipado, no construido).
     (h) Etapas 4 y 8: registrar en qué escalón salió cada dato.
-    (i) "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido el 2026-10-05; pasos 1 y 2 hechos, Versiones 515 y 517: texto y
-        bocadillo en la página, y `tools/dentro-de-otro.mjs` con 70 filas marcadas en 16 años de 7 clubes). PREMISA VENCIDA: decía "8 años"
-        y "No declarado"; los años con renglón sin desglosar son ~95 lado-años (la mayoría cargados a mano, sin `sinDesglose`), y la página
-        ya mostraba "—", no $0. Falta: paso 3, que `cargar.mjs` llame a la misma escalera al escribir un año y que después de cargar se corra
-        `dentro-de-otro.mjs --club <id>` (Admin/PIPELINE.md y, con el ok de Guido, la skill club-or-year-onboarding paso 8); paso 4, la
-        pregunta de la cola para años nuevos sin precedente, a diseñar con el primer caso real.
+    (i) "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido el 2026-10-05; pasos 1 a 3 hechos, Versiones 515, 517 y 518: texto
+        y bocadillo en la página, `tools/dentro-de-otro.mjs` con 70 filas marcadas en 16 años de 7 clubes, y `cargar.mjs --escribir` que
+        aplica la misma escalera al club entero). PREMISA VENCIDA: decía "8 años" y "No declarado"; los años con renglón sin desglosar son
+        ~95 lado-años (la mayoría cargados a mano, sin `sinDesglose`), y la página ya mostraba "—", no $0. Falta solo el paso 4: la pregunta
+        de la cola para años nuevos sin precedente, a diseñar con el primer caso real (un año que el pipeline carga con renglón sin desglosar
+        y el club sin 2 balances desglosados de ese lado).
     (j) Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
     (k) Que las diferencias por grupo de países (`logica` de `tools/grupos-pais.mjs`, lo que muestra `node tools/estado.mjs --logica`)
         pasen a ser configuración que las tools lean, grupo por grupo.

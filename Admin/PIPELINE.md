@@ -258,9 +258,16 @@ Mitigaciones:
                   por palabras ni se excluye sola por "no es rubro" dudoso
  "NO ES RUBRO"    (fila verificada con lado, dicho por la IA) excluirla ─► si la carga no cierra, incluirla (a la cola) ─► gana la que
                   cierra; el intento descartado no escribe en la cola (Versión 462)
+ "POSIBLEMENTE DENTRO DE OTRO RUBRO" (Versión 518; tools/dentro-de-otro.mjs, la llama --escribir sobre el club entero antes de publicar)
+                  una fila en "—" por un renglón sin desglosar: ajuste `incluye` / `cero-real` ─► precedente del club (plata en TODOS sus
+                  otros balances desglosados, al menos 2) ─► (cola: a diseñar con el primer caso) ─► queda "—". No cambia ningún número.
+                  Reescribe sus propias marcas: el año nuevo nace marcado y un año viejo gana o pierde las suyas si el nuevo le cambia el
+                  precedente.
 ```
 - Hoy en el lote es solo propuesta: no escribe el sitio.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
+  Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
+  fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
 
 Riesgos:
 - i) el documento declara varios tipos de cambio;

@@ -158,40 +158,55 @@ function escribirClub(id, porAnio) {
   writeFileSync(p, t);
 }
 
+// LO QUE USA tools/cargar.mjs (Versión 518, paso 3): recalcula y escribe las marcas de UN club con el motor sobre lo que hay en disco
+// (el año recién escrito incluido). Sin publicar: quien llama sube ASSET_V, corre los generadores y audit.js, y revierte si falla.
+// Devuelve { cambio, antes, despues, lineas } (cambio = si el archivo quedó distinto).
+export function marcarClub(id, { M = motor(), log = () => {} } = {}) {
+  if (!M.G[id]) return { cambio: false, antes: 0, despues: 0, lineas: [] };
+  const anios = aniosDe(M, id); const porAnio = {}; const lineas = [];
+  for (const a of anios) {
+    const pr = propuestasDe(M, anios, a);
+    for (const lado of Object.keys(pr)) {
+      lineas.push(`${id} ${a.y} ${lado}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`);
+      (porAnio[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: LUMP[lado] })));
+    }
+  }
+  const p = resolve(ROOT, `data/${id}-data.js`); const viejo = readFileSync(p, 'utf8');
+  const antes = [...viejo.matchAll(MARCA_RE)].length;
+  const despues = Object.values(porAnio).flat().reduce((k, x) => k + x.cats.length, 0);
+  if (!antes && !despues) return { cambio: false, antes, despues, lineas };
+  escribirClub(id, porAnio);
+  const cambio = readFileSync(p, 'utf8') !== viejo;
+  for (const l of lineas) log(l);
+  return { cambio, antes, despues, lineas };
+}
+const MARCA_RE = /\b(\w+):\{ en:'[^']*', posible:true, por:'precedente' \}/g;
+
 async function main() {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   const M = motor();
   if (A.includes('--medir')) return medir(M);
   const club = flag('--club'); if (!club && !A.includes('--todos')) { console.error('Uso: --medir | --todos | --club <id> [--escribir]'); process.exit(1); }
+  if (club && !M.G[club]) { console.error(`no existe ${club}`); process.exit(1); }
   const ids = club ? [club] : Object.keys(M.G).sort();
-  const porClub = {}; let n = 0;
-  const conMarcas = (id) => /por:'precedente'/.test(readFileSync(resolve(ROOT, `data/${id}-data.js`), 'utf8'));
-  const marcasAntes = (id) => [...readFileSync(resolve(ROOT, `data/${id}-data.js`), 'utf8').matchAll(/\b(\w+):\{ en:'[^']*', posible:true, por:'precedente' \}/g)].length;
-  for (const id of ids) {
-    if (!M.G[id]) { console.error(`no existe ${id}`); process.exit(1); }
-    const anios = aniosDe(M, id);
-    for (const a of anios) {
-      const pr = propuestasDe(M, anios, a);
-      for (const lado of Object.keys(pr)) {
-        console.log(`  ${id} ${a.y} ${lado.padEnd(8)}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`);
-        ((porClub[id] ||= {})[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: LUMP[lado] }))); n += pr[lado].length;
-      }
-    }
-  }
-  const aLimpiar = ids.filter((id) => !porClub[id] && conMarcas(id));
-  for (const id of aLimpiar) porClub[id] = {};
-  const antes = ids.reduce((s, id) => s + (M.G[id] ? marcasAntes(id) : 0), 0);
-  const despues = Object.entries(porClub).reduce((s, [, pa]) => s + Object.values(pa).flat().reduce((k, x) => k + x.cats.length, 0), 0);
-  console.log(`\nMarcas por precedente en los archivos: ${antes} hoy → ${despues} después (por categoría; una fila puede ser varias).${aLimpiar.length ? ` Se limpian sin reemplazo: ${aLimpiar.join(', ')}.` : ''}`);
-  console.log(`${n} fila(s) para marcar en ${Object.values(porClub).reduce((s, x) => s + Object.keys(x).length, 0)} año(s) de ${Object.keys(porClub).length} club(es).${A.includes('--escribir') ? '' : ' ENSAYO: agregá --escribir.'}`);
-  if (!A.includes('--escribir') || !Object.keys(porClub).length) return;
-  const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
-  const snap = snapshot(); const escritos = Object.keys(porClub).map((id) => `data/${id}-data.js`);
+  const escribir = A.includes('--escribir');
+  let snap = null; let revertir = null; let publicarCambios = null;
+  if (escribir) ({ snapshot: snap, revertir, publicarCambios } = await import('./cargar.mjs'));
+  const s0 = escribir ? snap() : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
   try {
-    for (const [id, porAnio] of Object.entries(porClub)) escribirClub(id, porAnio);
-    const r = publicarCambios(snap, [], escritos);
+    for (const id of ids) {
+      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(`data/${id}-data.js`); continue; }
+      // ensayo: lo mismo sin tocar el archivo
+      const anios = aniosDe(M, id);
+      antes += [...readFileSync(resolve(ROOT, `data/${id}-data.js`), 'utf8').matchAll(MARCA_RE)].length;
+      for (const a of anios) { const pr = propuestasDe(M, anios, a); for (const lado of Object.keys(pr)) { console.log(`  ${id} ${a.y} ${lado.padEnd(8)}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`); despues += pr[lado].reduce((k, x) => k + x.cats.length, 0); filas++; } }
+    }
+    console.log(`\nMarcas por precedente en los archivos: ${antes} hoy → ${despues} después (por categoría; una fila puede ser varias). ${filas} lado(s)-año.${escribir ? '' : ' ENSAYO: agregá --escribir.'}`);
+    if (!escribir) return;
+    if (!escritos.length) { console.log('Nada cambió: no se escribe ni se publica.'); return; }
+    const r = publicarCambios(s0, [], escritos);
     console.log(r.ok ? `Escrito: ${r.escritos.join(', ')} · ${r.audit}` : `NO se escribió: ${r.motivo}`);
-  } catch (err) { const rv = revertir(snap, []); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); }
+  } catch (err) { if (escribir) { const rv = revertir(s0, []); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); } else throw err; }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main();

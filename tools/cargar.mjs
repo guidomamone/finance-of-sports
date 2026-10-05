@@ -106,6 +106,7 @@ const { categoriasAlDia } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
+const { marcarClub } = await import('./dentro-de-otro.mjs'); // (Versión 518) "Posiblemente dentro de otro rubro", ver escribir()
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub } = await import('./cola.mjs');
 const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
@@ -889,6 +890,12 @@ export function escribir(P) {
     }
     // fuentes/<País>/<Club>.md (interno, no se publica)
     if (extra.length) { appendFileSync(resolve(ROOT, fuentesMd), `\n- Cargado en el sitio por tools/cargar.mjs (${HOY}): ejercicio ${y} desde \`${P.pdf}\` (sourceId \`${E.source.id}\`).\n`); escritos.push(fuentesMd); }
+    // (Versión 518, to-do 140(i) paso 3) "POSIBLEMENTE DENTRO DE OTRO RUBRO": la misma escalera de tools/dentro-de-otro.mjs, sobre el club
+    // entero y con el año recién escrito: el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si este año le cambia el
+    // precedente. Antes de publicar, así un P0/P1 lo revierte todo junto.
+    const marcas = marcarClub(id);
+    if (marcas.cambio && !escritos.includes(dataRel)) escritos.push(dataRel);
+    if (marcas.antes || marcas.despues) console.log(`"Posiblemente dentro de otro rubro" (tools/dentro-de-otro.mjs): marcas del club ${marcas.antes} → ${marcas.despues}${marcas.lineas.length ? `\n  ${marcas.lineas.join('\n  ')}` : ''}`);
     return publicarCambios(snap, extra, escritos);
   } catch (err) {
     const rv = revertir(snap, extra);
