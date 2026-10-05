@@ -380,6 +380,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
  ESCALÓN 2  IA (solo líneas)
  COMPUERTA (la misma para todos): la familia de la fila es la del dato y el año anterior cargado o el documento siguiente dicen lo mismo
             ── pasa → dato · no pasa → siguiente escalón · nada → null
+ VECINO     lo cargado en el sitio o el documento vecino; nunca un valor aceptado en la misma corrida (Versión 502)
 ```
 
 Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` (to-do 138).

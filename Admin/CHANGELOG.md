@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 502 — caja-deuda.mjs: un valor aceptado en la misma corrida ya no sirve de vecino (2026-10-05)
+
+- `tools/caja-deuda.mjs --club`: hasta acá (Versión 356) un valor completado en la corrida contaba como cargado para el año siguiente, y un error se encadenaba (probado: la caja chica de Fortaleza 2020 validaba la de 2021 y esa la de 2022). Ahora el vecino es solo lo cargado en el sitio o el documento vecino.
+- Medido: `--medir` idéntico; ensayo de completar en todos los clubes: Goiás caja 2022-2024 dan el mismo valor, ahora validados contra el documento siguiente; 2009 y 2025 quedan sin dato (solo se validaban en cadena). Ningún valor cambia.
+- Probados y descartados en la misma sesión (ver `Admin/HALLAZGOS-pipeline.md`): "-" como 0, vecino por importe y caja en las notas.
+
 ## Versión 501 — Juventus 2006 y 2007: nota visible del cambio de normas contables (2026-10-05)
 
 - `publicNote` en las fuentes 2005-06 y 2006-07 (texto propuesto por la auditoría 2026-10-04, aprobado por Guido, corregido por la Versión 492: los 30 M€ de Mediaset ya están en Televisión y en otros ingresos quedan los 13,75 M€ de la RAI). Cifras verificadas: pérdida −36.480.230 € con normas italianas (informe 2005-06, L1722) y −45.986.220 € reexpresada con IFRS (informe 2006-07, L1652). ASSET_V 411 → 412.

@@ -39,7 +39,7 @@
 // --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
 // recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
 // a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
-// misma corrida cuenta como cargado para el año siguiente. Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
+// misma corrida NO cuenta como cargado para el año siguiente (Versión 502: un error se encadenaba). Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
 // data/<club>-data.js con un comentario de dónde salió cada dato, sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
@@ -440,7 +440,7 @@ export function criterioDeudaDe(familias) {
 }
 
 // El contexto de un año para la escalera: sus filas, su escala, los precedentes del club (con la escala de cada uno), el año anterior cargado
-// y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado (o completado en esta corrida).
+// y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado en el sitio.
 function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const filas = filasDe(a.md);
   const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio], a.md);
@@ -548,7 +548,10 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       else if (r.error) { for (const k of sinDato) res[k].como += ` · escalón 2: ${r.error}`; }
       else { usd += r.costo || 0; for (const k of sinDato) res[k] = { ctx: res[k].ctx, ...escalera(res[k].ctx.filas, k === 'cash' ? 'cash' : 'deuda', { ...res[k].ctx, ia: r.datos }) }; }
     }
-    for (const k of faltan) { if (res[k].valor != null) conocidos[k][a.anio] = res[k].valor; const { ctx, ...x } = res[k]; propuestas.push({ anio: a.anio, cual: k, ...x }); }
+    // (Versión 502, aprobado por Guido el 2026-10-05) un valor completado en esta corrida YA NO cuenta como cargado para el año siguiente: un
+    // vecino es lo cargado en el sitio o el documento vecino, nunca una propuesta que nadie confirmó (si no, un error se encadena: Fortaleza
+    // 2020-2022, la caja chica de 2020 validaba la de 2021 y esa la de 2022). Antes (Versión 356) sí contaba.
+    for (const k of faltan) { const { ctx, ...x } = res[k]; propuestas.push({ anio: a.anio, cual: k, ...x }); }
   }
   for (const p of propuestas) console.log(`  ${p.anio} ${p.cual === 'cash' ? 'caja ' : 'deuda'}: ${p.valor ?? 'null'}  (${p.escalon != null ? `escalón ${p.escalon}, compuerta: ${p.validacion}; ` : ''}${p.como})${(p.filas || []).map((f) => `\n        "${String(f.etiqueta).slice(0, 60)}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`).join('')}`);
   const conValor = propuestas.filter((p) => p.valor != null);
