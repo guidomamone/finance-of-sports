@@ -42,7 +42,8 @@
 // CATEGORIZACIÓN (ver club-data-mapping SKILL.md sección 1 para el criterio de cada
 // categoría; estas son las decisiones específicas de Almagro, algunas no cubiertas por el
 // skill al 100%, ver reporte de la sesión):
-// - "Sede Social - Medrano 522 CABA" (Anexo II, única línea) -> member_dues.
+// - "Sede Social - Medrano 522 CABA" (Anexo II, única línea) -> member_dues. DECISIÓN DE GUIDO (2026-10-05): son cuotas sociales;
+//   no es una duda abierta y una auditoría no la reabre (el balance pone aparte "Alquiler de Sede").
 // - "Futbol Ingreso por Partidos" / "Partidos Amistosos" (2023) -> matchday_competition.
 // - "Ingreso A.F.A." / "Ingreso A.F.A: dcho tv" / "Derechos TV" -> broadcasting (el propio
 //   rótulo 2020+ dice "dcho tv", confirma que es reparto de TV/torneos vía AFA).

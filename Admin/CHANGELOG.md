@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 507 — Almagro: "Sede Social - Medrano 522" queda como cuotas sociales, decisión de Guido (2026-10-05)
+
+- Duda de la auditoría 2026-10-04 cerrada: la decisión queda escrita en el comentario de categorización de `data/almagro-ar-data.js` para que una auditoría no la reabra. Sin cambio de datos. ASSET_V 415 → 416.
+
 ## Versión 506 — Fortaleza CEIF: los auxilios de la Dimayor, a premios de competición en todos los años (2026-10-05)
 
 - Auditoría 2026-10-04, hallazgo 12: "Auxilio de arbitraje / transporte / hotelero" estaban en `competition_bonus` unos años (2019, 2020, 2022, 2025; ajuste de Guido de 2020) y en `other_income` otros. 9 filas de 2019-2024 pasan a `competition_bonus` (0,73 M COP en total); "Otros auxilios", bioseguridad y análisis deportivo quedan en `other_income`. Totales sin cambios.
