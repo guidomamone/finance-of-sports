@@ -187,6 +187,8 @@ window.CLUB_SELECTOR = (function(){
   }
   function idx(id){ return (window.CLUB_INDEX || {})[id] || {}; }
   function nameOf(id){ return (clubs[id] && clubs[id].displayName) || idx(id).n || id; }
+  // Etiqueta de una fila de Formato simplificado, traducida (mismo helper que js/liga.js; Versión 510, para el aviso de "incluido en").
+  function tLabel(label){ var key = (window.SITE_LABEL_KEYS || {})[label]; return key ? t(key, label) : label; }
   function countryOf(id){ return (clubs[id] && clubs[id].country) || idx(id).c || null; }
   function regionOf(id){ return window.regionOfCountry(countryOf(id)); }
   function sportOf(id){ return (clubs[id] && clubs[id].sport) || 'futbol'; }
@@ -1626,7 +1628,7 @@ window.CLUB_SELECTOR = (function(){
   function totalesDeBloque(b){
     var pares = paresDeBloque(b);
     var out = { nombre:nombreBloque(b), agg:b.agg, n:pares.length, conDato:0, sinEjercicio:[],
-                anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{} };
+                anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{}, incluidos:[] };
     ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     pares.forEach(function(par){
       var id = par[0], y = par[1];
@@ -1648,6 +1650,10 @@ window.CLUB_SELECTOR = (function(){
       // sale la plata de estos clubes juntos); lo que no tiene sentido es promediar
       // los porcentajes de clubes con tamaños distintos.
       mezclaDe(id, y).forEach(function(r){ out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value; });
+      // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
+      ((window.simplifiedReportForClub(id, y) || {}).ingresos || []).forEach(function(r){
+        if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + t('sel.res.incl', 'está incluido en') + ' ' + tLabel(r.incluidoEn));
+      });
     });
     if(b.agg === 'promedio'){
       ACUMULADAS.forEach(function(k){
@@ -1665,7 +1671,7 @@ window.CLUB_SELECTOR = (function(){
   // con el aviso correspondiente abajo de la tabla.
   function totalesDe(l){
     var out = { nombre:l.nombre, n:0, conDato:0, sinEjercicio:[], anios:[], presupuestos:0,
-                tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l) };
+                tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l), incluidos:[] };
     ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     var aggs = {};
     (l.bloques || []).forEach(function(b){
@@ -1676,6 +1682,7 @@ window.CLUB_SELECTOR = (function(){
       out.anios = out.anios.concat(tb.anios);
       out.presupuestos += tb.presupuestos;
       out.sinEjercicio = out.sinEjercicio.concat(tb.sinEjercicio);
+      out.incluidos = out.incluidos.concat(tb.incluidos);
       if(tb.conDato) aggs[b.agg] = 1;
       ACUMULADAS.forEach(function(k){
         if(!tb.informan[k]) return;
@@ -2014,6 +2021,8 @@ window.CLUB_SELECTOR = (function(){
       }
       if(tt.presupuestos) avisos.push(letra + tt.presupuestos + ' ' + t('sel.res.presu',
         'de los ejercicios son PRESUPUESTOS, o sea proyecciones del club, no cierres.'));
+      if(tt.incluidos.length) avisos.push(letra + t('sel.res.incluidos', 'el documento junta dos rubros en una línea, y en la composición suman donde están') + ': '
+        + tt.incluidos.slice(0, 4).join('; ') + (tt.incluidos.length > 4 ? '; +' + (tt.incluidos.length - 4) : '') + '.');
       if(tt.mezclaAgg) avisos.push(letra + t('sel.res.mezcla',
         'este lado mezcla un promedio con una sumatoria') + ' (' + tt.formula + ').');
     });

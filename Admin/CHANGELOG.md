@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 510 — "Incluido en …" también en las páginas de liga y en Comparar (2026-10-05)
+
+- `tools/generate-rankings.js`: cada club lleva, aparte de `mix` (que sigue sumando el ingreso), `incluidos: [[fila, fila que la contiene]]`; `js/liga.js` lo muestra en el desglose por categoría ("Cuotas Sociales · Incluido en Estadio"), también en las filas simuladas. Rankings regenerados: Bahia, Vitória y América Mineiro en Série A y B.
+- `js/selector.js` (Comparar): aviso debajo de la tabla con las filas incluidas en otra ("Bahia 2025: Cuotas Sociales está incluido en Estadio"); la mezcla no cambia. Claves en inglés en `data/lang/en.js`. Verificado en el navegador. ASSET_V 418 → 419.
+
 ## Versión 509 — "Incluido en …": la fila que el documento junta con otra deja de mostrar $0 (paso 1: dato y Finanzas) (2026-10-05)
 
 - `fiscalYearMeta[año].incluidoEn` (ej. `{ member_dues: 'matchday_competition' }`): `bucketize()` (`js/finanzas-calc.js`) marca la fila que da 0 con la etiqueta de la fila que la contiene, y `js/finanzas-render.js` pinta "Incluido en <fila>" (es) / "Included in" (en), con "—" en el %. El valor sigue siendo el número 0: los totales no cambian (verificado: `auditAll()` igual que antes).

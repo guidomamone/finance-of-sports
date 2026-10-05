@@ -408,6 +408,8 @@ window.I18N.strings.en = {
   "sel.res.desparejo": "The two sides do not have the same number of financial years: read each one's formula before taking the total as \"who is bigger\".",
   "sel.res.falta": "club(s) without that financial year, left out of the count",
   "sel.res.mezcla": "this side mixes an average with a sum",
+  "sel.res.incl": "is included in",
+  "sel.res.incluidos": "the document merges two items into one line, and in the composition they count where they are",
   "sel.res.partes": "parts report it",
   "sel.res.presu": "of the financial years are BUDGETS, that is, club projections rather than closed accounts.",
   "sel.res.sub": "In USD. Each side is worked out financial year by financial year with the same engine the rest of the site uses.",
