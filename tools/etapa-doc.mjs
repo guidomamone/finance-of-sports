@@ -18,6 +18,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 // clave -> [etapa, texto]. La clave es estable (la usa el tablero para sus filas); el texto es lo que se lee.
 export const ETAPAS_DOC = {
   'e1-roto': [1, 'Etapa 1 · conseguir: llegó roto (volver a bajarlo)'],
+  'e1-duplicado': [1, 'Etapa 1 · el mismo PDF que otro de la carpeta (misma huella): no se procesa (Versión 521)'],
   'e2-sin-md': [2, 'Etapa 2 · transcribir, escalón 0 (Mistral)'],
   'e2-sin-tablas': [2, 'Etapa 2 · transcribir, escalón 0: transcripción vieja sin tablas (rehacer con Mistral)'],
   'e2-sin-verificar': [2, 'Etapa 2 · validación gratis pendiente (el .md cambió o nunca se validó)'],
@@ -35,7 +36,7 @@ export const ETAPAS_DOC = {
   'e9-cargado': [9, 'Etapa 9 · en el sitio'],
   descartado: [0, 'descartado como fuente (Admin/documentos-descartados.txt)'],
 };
-const DE_ESTADO = { 'no-es-pdf': 'e1-roto', 'sin-md': 'e2-sin-md', 'sin-tablas': 'e2-sin-tablas', 'sin-verificar': 'e2-sin-verificar', revisar: 'e2-revisar', 'pendiente-segunda-voz': 'e2-segunda-voz', reintentar: 'e2-reintentar', cargado: 'e9-cargado' };
+const DE_ESTADO = { 'no-es-pdf': 'e1-roto', duplicado: 'e1-duplicado', 'sin-md': 'e2-sin-md', 'sin-tablas': 'e2-sin-tablas', 'sin-verificar': 'e2-sin-verificar', revisar: 'e2-revisar', 'pendiente-segunda-voz': 'e2-segunda-voz', reintentar: 'e2-reintentar', cargado: 'e9-cargado' };
 export const claveDeEstado = (estado) => DE_ESTADO[estado] || null;
 
 const leerGen = (e, suf) => { try { const q = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(q) ? JSON.parse(readFileSync(q, 'utf8')) : null; } catch { return null; } };

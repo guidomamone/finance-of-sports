@@ -188,6 +188,13 @@ const pending = pendingByOnboard();
 const prov = loadProvenance();
 const verifs = latestVerifications();
 
+// HUELLA DEL PDF (Versión 521, to-do 140(c), aprobado por Guido el 2026-10-05): el sha1 de los bytes del PDF, para marcar el MISMO
+// documento bajado dos veces con nombres distintos (22 grupos al medirlo, todos dentro de la carpeta de un club: Envigado
+// certificacion-ef-2021 = estados-financieros-2021, Mirassol 2024-laudo-auditoria = relatorio-auditoria-contabil-2024...). Hashear 10 GB
+// tarda minutos, así que se reusa la huella del registro anterior si el PDF tiene el mismo tamaño y la misma fecha de modificación.
+const previoHuella = new Map((existsSync(statePath) ? readFileSync(statePath, 'utf8').split('\n').filter(Boolean) : []).map((l) => { try { const x = JSON.parse(l); return [x.pdf, x]; } catch { return [null, null]; } }));
+const huellaPdf = (pdf, pdfAbs) => { const st = statSync(pdfAbs); const v = previoHuella.get(pdf); if (v && v.pdfSha1 && v.pdfBytes === st.size && v.pdfMtime === st.mtimeMs) return { pdfSha1: v.pdfSha1, pdfBytes: st.size, pdfMtime: st.mtimeMs }; return { pdfSha1: sha1(pdfAbs), pdfBytes: st.size, pdfMtime: st.mtimeMs }; };
+
 let entries = pdfsAll.map((pdfAbs) => {
   const pdf = relative(root, pdfAbs);
   const md = pdf.replace(/\.pdf$/i, '.md');
@@ -206,6 +213,7 @@ let entries = pdfsAll.map((pdfAbs) => {
     voces: findVoices(pdfAbs),
     cargado: !pending.has(pdf),
     mdSha1: tieneMd ? sha1(mdAbs) : null,
+    ...huellaPdf(pdf, pdfAbs),
     // Versión 314: qué período cubre el documento, leído del CONTENIDO (tools/periodo.mjs): 'anual' (con `anual` = 'calendario' si cierra
     // en diciembre o 'temporada' si no), 'trimestral', 'semestral', 'nueve-meses', 'bimestral', 'intermedio', 'otro' (13, 18 meses...).
     // Un documento no anual NO se carga como ejercicio: queda marcado para juntarlo con los otros períodos cuando lleguen
@@ -244,6 +252,21 @@ entries = entries.map((e) => {
   const jev = vv && vv.mdSha1 === e.mdSha1 && vv.jev ? { jev: vv.jev, rubros: vv.rubros ?? null } : {};
   return { ...rest, ...jev, ...(mf ? { motor: mf.motor, motorOriginal: e.motor, paginasReemplazadas: mf.paginasReemplazadas, reserva: mf.reserva, previo: mf.previo } : {}), estado: s.status, metodo: s.method, detalle: s.detail, mdSha1 };
 });
+// DUPLICADOS (Versión 521): de cada grupo de PDFs con la misma huella queda UNO (el cargado, si no el que tiene .md, si no la primera
+// ruta); los demás pasan al estado `duplicado` con `duplicadoDe` (salvo uno ya cargado: Elche y Mirassol tienen las dos copias
+// registradas como cargadas y ahí no hay nada que ahorrar). Ninguna etapa los procesa (pipeline.mjs elige por estado; lote.mjs los
+// saltea), así no se paga dos veces la misma transcripción ni la misma localización. Son los mismos bytes: no hay nada que interpretar.
+{
+  const grupos = new Map(); for (const e of entries) if (e.pdfSha1) { if (!grupos.has(e.pdfSha1)) grupos.set(e.pdfSha1, []); grupos.get(e.pdfSha1).push(e); }
+  for (const g of grupos.values()) {
+    if (g.length < 2) continue;
+    // Desempate solo de NOMBRE (el contenido es el mismo): no quedarse con el que se llama como un anexo, porque el nombre termina en el
+    // sourceId del sitio (Envigado: queda estados-financieros-2021, no certificacion-ef-2021).
+    const anexo = (e) => (/certifica|dictamen|laudo|parecer/i.test(e.pdf.split('/').pop()) ? 1 : 0);
+    const queda = [...g].sort((a, b) => (b.cargado - a.cargado) || (b.tieneMd - a.tieneMd) || (anexo(a) - anexo(b)) || a.pdf.localeCompare(b.pdf))[0];
+    for (const e of g) if (e !== queda && !e.cargado) { e.estado = 'duplicado'; e.duplicadoDe = queda.pdf; e.detalle = `mismo archivo que ${queda.pdf} (huella ${e.pdfSha1.slice(0, 10)})`; }
+  }
+}
 writeFileSync(statePath, entries.map((e) => JSON.stringify(e)).join('\n') + '\n');
 
 if (listState) {
