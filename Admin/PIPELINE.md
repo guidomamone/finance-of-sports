@@ -372,7 +372,7 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir --club <id> [-
  ESCALA     una por documento (la del estado de resultados contra lo cargado); la del vecino, con SU escala; en la compuerta, si
             el valor no es plausible (1/100 a 100 veces el año cargado más cercano) o no pasa, se prueban las otras escalas y se
             acepta si UNA sola da ok y plausible
- ESCALÓN 0  ajuste manual `caja` del año · precedente del club (las familias que suman lo cargado en el año más cercano)
+ ESCALÓN 0  ajuste manual `caja` / `deuda` del año · precedente del club (las familias que suman lo cargado en el año más cercano)
  ESCALÓN 1  diccionario (vocabulario.mjs) + términos del club o del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
             dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total

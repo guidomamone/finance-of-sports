@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 495 — Fortaleza CEIF 2021: deuda 102,5 → 295,8 (ajuste manual `deuda`, nuevo) (2026-10-05)
+
+- Auditoría 2026-10-04, hallazgo 7: el escalón 2 de `caja-deuda.mjs` había leído solo el corto plazo ("Total Prestamos y Sobregiros", nota 12); la deuda bruta es "Préstamos y sobregiros bancarios" 295.846 del cuadro de instrumentos financieros (nota 5.A, .md L506; 2020 en el mismo cuadro, 188.997, coincide con lo cargado).
+- `tools/ajustes.mjs`: campo `deuda` (el número tal cual impreso), igual que `caja`; `tools/caja-deuda.mjs` lo toma como escalón 0. Probado con 2021 en null: propone 295.846 por el ajuste. ASSET_V 405 → 406.
+
 ## Versión 494 — La cabecera de cargar.mjs dice qué escribe la propuesta (2026-10-05)
 
 - `tools/cargar.mjs`: decía "propuesta: no escribe nada"; no toca el sitio, pero escribe a propósito en la cola, en los precedentes aprendidos y el briefing (así le hace preguntas el lote). Solo documentación.

@@ -875,8 +875,8 @@ const fortalezaceifcoFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-54.012, tax:0,
-    // tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 2 (compuerta: año anterior): "Total Prestamos y Sobregiros Bancarios" pág. 20
-    grossDebt:102.513, cash:null,
+    // ajuste manual (Admin/ajustes-manuales.jsonl, 2026-10-05): grossDebt = "Préstamos y sobregiros bancarios" del cuadro de instrumentos financieros (nota 5.A, .md L506); antes 102.513, solo el corto plazo
+    grossDebt:295.846, cash:null,
     officialTotalRevenue:3595.986, officialTotalExpenses:4189.291, officialPAT:-647.319,
   },
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): resultado-final = (175.117). Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.

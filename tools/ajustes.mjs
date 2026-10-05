@@ -58,7 +58,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda-incluye'];
+export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
@@ -107,6 +107,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // versión detallada en reales del mismo PDF confirma el .md).
     // (Versión 419) caja = la caja del año TAL CUAL impresa (caja-deuda.mjs la pasa a millones con la escala del documento). Caso: Novorizontino 2022.
     if (campo === 'caja' && !flag('--valor')) { console.error('caja necesita --valor (el número tal cual impreso)'); process.exit(1); }
+    // (Versión 495) deuda = la deuda bruta del año TAL CUAL impresa, igual que `caja`: escalón 0 de la deuda en caja-deuda.mjs. Caso: Fortaleza
+    // CEIF 2021, el escalón 2 leyó solo el corto plazo (102.513, nota 12) y el cuadro de instrumentos financieros dice 295.846 (.md L506).
+    if (campo === 'deuda' && !flag('--valor')) { console.error('deuda necesita --valor (el número tal cual impreso)'); process.exit(1); }
     if (campo === 'confirmado' && (!flag('--linea') || !flag('--valor'))) { console.error('confirmado necesita --linea N y --valor "el número tal cual en el .md"'); process.exit(1); }
     if (campo === 'cierre' && !/^\d{4}-\d{2}-\d{2}$/.test(flag('--valor') || '')) { console.error('cierre necesita --valor AAAA-MM-DD'); process.exit(1); }
     if (campo === 'reportType' && !['official_balance_sheet', 'official_budget'].includes(flag('--valor'))) { console.error('reportType necesita --valor official_balance_sheet|official_budget'); process.exit(1); }
