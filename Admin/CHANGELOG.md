@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 481 — Argentina con su archivo en la skill de sourcing (ex to-do 93) (2026-10-04)
+
+- `.claude/skills/club-sourcing/paises/Argentina.md` (nuevo, texto aprobado por Guido): sitio oficial primero, IGJ bloqueada (gestión de Guido), CNV/AIF para los clubes que emiten deuda, Reddit no rinde. La skill lo lista en el índice de países y deja de decir que Argentina va aparte.
+- Skill de arranque: el TODO pesa 23 KB. To-do 93 borrado.
+
 ## Versión 480 — River 2021 y 2024 con "Fútbol Profesional" abierto; TODO más corto (2026-10-04)
 
 - `data/river-data.js`: "Fútbol Profesional" (Anexo VII) en sus 4 renglones con categoría propia, 2021 y 2024 (ex to-do 102): venta de jugadores → `player_sales`, TV → `broadcasting`, publicidad → `sponsorship_commercial`, "Ingresos torneos nacionales e internacionales" → `matchday_competition` (es taquilla: $2,3 M en 2021, sin público). Totales sin cambio; `auditAll()` sin "no cierra" de River. ASSET_V 400 → 401; generadores corridos (el ranking de `ar-primera` muestra el desglose).

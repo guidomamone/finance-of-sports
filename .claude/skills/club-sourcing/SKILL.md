@@ -13,8 +13,7 @@ figura jurídica que usan los clubes de acá?" — la respuesta suele servir par
 juntos.
 
 Este skill es la memoria de qué funcionó y qué no al buscar balances/estados contables auditados de
-clubes que todavía no están en el sitio (fuera de Argentina, principalmente, donde el criterio ya es
-distinto — ver sección 0). Salió de sesiones reales de sourcing (agentes en background que barrieron
+clubes que todavía no están en el sitio, de cualquier país, Argentina incluida (`paises/Argentina.md`). Salió de sesiones reales de sourcing (agentes en background que barrieron
 decenas de clubes por país), no es teoría. Leelo ANTES de salir a buscar un club/país nuevo: te ahorra
 repetir un intento que ya se probó y descartó, y te da el ángulo que SÍ funcionó para países similares.
 
@@ -378,6 +377,7 @@ contenido que antes vivía como sección numerada acá (to-do 87, resuelto 2026-
 123 KB, todas en un solo archivo que cualquier sesión de sourcing leía entero sin importar qué país
 le tocaba). Abrí SOLO el archivo del país/región que estés buscando — no hace falta leer los demás.
 
+- **Argentina — sitio oficial; IGJ bloqueada; CNV para los clubes que emiten deuda** → [`paises/Argentina.md`](paises/Argentina.md)
 - **Chile — CMF** → [`paises/Chile.md`](paises/Chile.md)
 - **Colombia — Supersociedades (SIIS)** → [`paises/Colombia.md`](paises/Colombia.md)
 - **Brasil — muy buena cobertura, gracias a la Lei do SAF** → [`paises/Brasil.md`](paises/Brasil.md)

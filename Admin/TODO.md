@@ -176,16 +176,6 @@ ni en el comentario de ningún archivo de código.
     del skill, no una herramienta puntual — pensarla junto con Guido antes de tocar
     `club-sourcing/SKILL.md` (mismo criterio ya establecido: no editar el skill sin avisar).
 
-93. EVALUAR SI ARGENTINA AMERITA UN ARCHIVO PROPIO EN `paises/` (pedido de Guido, 2026-09-27, al
-    notar que el piloto de Reddit del to-do 81 no tuvo dónde anotar el hallazgo para los clubes
-    argentinos: `paises/Argentina.md` no existe, porque la sección 0 de `SKILL.md` dice que "fuera
-    de Argentina, el criterio ya es distinto" y la deja afuera del esquema país-por-país. La
-    pregunta a resolver: ¿ese criterio separado sigue siendo correcto ahora que Argentina también
-    empieza a acumular hallazgos del tipo "qué ángulo rinde y cuál no" (Reddit, y potencialmente
-    Twitter/X del to-do 80), o conviene darle su propio archivo igual que a los demás países para
-    tener dónde guardarlos? Ligado al to-do 82 (arquitectura del funnel por país) pero es una
-    pregunta más chica y puntual. Sin evaluar todavía.
-
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
     tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
     diseño original de este punto ("Claude redacta, Guido aprueba en el chat, envío por Gmail")
