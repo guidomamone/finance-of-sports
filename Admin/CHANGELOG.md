@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión ?? — Seis series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY y MXN (to-do 112) (2026-10-04)
+
+- `tools/fetch-fx-reference.mjs`: SEK (Riksbank), PLN (NBP, tabla A), HRK (HNB, tipo medio, hasta 2022-12-31), y JPY, CNY y MXN (Reserva Federal H.10 vía FRED). Series nuevas en `tools/fx-reference/`; son 20 monedas en total. PEN no está: el BCRP, la SBS y la SUNAT bloquean la descarga automática.
+- `tools/lookup-fx-close.js` y `tools/alta-club.mjs` (`SERIES_FX`) las leen.
+- Verificadas contra el cruce del BCE (diferencias entre 0% y 1,2%, por la hora de fijación) y contra los tipos que declaran los documentos: HRK exacto en Dinamo Zagreb 2020 y 2021; MXN −0,02% en Atlas 2019 y −0,06% en América 2024; CNY −0,21% en Guangzhou 2019.
+- TODO 112: salen los perímetros resueltos como consolidado y las preguntas de `--dudas` (se ven al trabajar cada club), la corrida de Claude de los 91 documentos y las series.
+
 ## Versión 483 — Estudiantes: "Reconocimientos y premios" en sueldos del plantel todos los años (to-do 101) (2026-10-04)
 
 - `data/estudianteslp-data.js`: 2022, 2023 y 2024 pasan de `match_organisation_expense` a `wages_squad`, como 2025 (columna de los sueldos de los jugadores en el anexo de gastos; la memoria: "reconocimientos con el plantel profesional"). Totales sin cambio; `auditAll()` sin "no cierra" de Estudiantes. ASSET_V 401 → 402; generadores corridos.

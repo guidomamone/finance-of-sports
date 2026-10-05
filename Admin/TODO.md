@@ -22,14 +22,8 @@ ni en el comentario de ningún archivo de código.
 ## Qué hay que hacer
 
 112. PENDIENTES DEL ALTA DE CLUBES NUEVOS POR SCRIPT (`tools/alta-club.mjs`), decisiones de Guido y datos que faltan:
-    - Revisar 5 perímetros que Claude resolvió como CONSOLIDADO (criterio aplicado, no dato leído): Inter, Atalanta, Go Ahead Eagles,
-      Başakşehir, Trabzonspor (ninguno cargado todavía). Y las 11 preguntas de `node tools/alta-club.mjs --dudas` (todas de perímetro).
-    - Series de tipo de cambio que faltan en `tools/fx-reference/` para las monedas de clubes nuevos: SEK, PLN, y las que aparezcan (PEN,
-      MXN, JPY...). Hoy hay 14: ARS, BRL, CHF, CLP, COP, CZK, DKK, EUR, GBP, KRW, NOK, RUB, TRY, UAH. Sin serie, la carga frena.
     - `FX_PLAUSIBLE_RANGE` de `data/currency-map.js`: COP [2500, 5000] -> [1600, 5500] (la serie llegó a 5.061 en 2022) y BRL [3, 7] -> [1,4; 7,5]
       antes de cargar años brasileños anteriores a 2015 (tocar data/ obliga a subir ASSET_V y regenerar).
-    - Preguntar a Claude los 91 documentos que faltan: `node tools/alta-club.mjs --todos --claude --tope-usd 3` (lo corre Guido; el ensayo
-      sin `--claude` dice el costo).
 
 138. VER LOS TEMAS DE AUDITORÍA PENDIENTES. Hallazgos de las auditorías de datos que todavía no se arreglaron ni se
     descartaron; cada archivo trae el caso, la evidencia y el arreglo propuesto. Hoy: `auditorias/2026-10-04-clubes-pipeline.md`

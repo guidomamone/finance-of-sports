@@ -36,6 +36,14 @@
 //     DKK por 100 USD, se divide por 100).                              [2026-10-01]
 //   - GBP: Bank of England, IADB serie XUDLUSS (publicado USD por GBP,
 //     se invierte a GBP por USD).                                       [2026-10-01]
+//   - SEK: Sveriges Riksbank, tipo medio (API SWEA).                  [to-do 112]
+//   - PLN: Narodowy Bank Polski, tabla A, tipo medio.                 [to-do 112]
+//   - HRK: Hrvatska narodna banka, tipo medio (la kuna termina en
+//     2022: desde 2023 Croacia reporta en EUR).                        [to-do 112]
+//   - JPY, CNY, MXN: Reserva Federal H.10 vía FRED, como CHF y KRW.   [to-do 112]
+//   - PEN: NO está. El BCRP, la SBS y la SUNAT bloquean la descarga
+//     automática (protección anti-bots); no se saltea. Los cierres
+//     peruanos van a mano a FX_CLOSE con su fuente, como hasta ahora.
 // Todas son endpoints públicos sin API key, pensados para descarga. Ninguna es
 // una tasa cruzada vía EUR: todas cotizan directo contra el USD (EUR y GBP se
 // publican como USD por unidad y acá se invierten; es una inversión exacta, no
@@ -59,7 +67,7 @@
 // referencia desde `data/` ni desde ningún `<script src>` del sitio.
 //
 // USO:
-//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 14)
+//   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 20)
 //   node tools/fetch-fx-reference.mjs --currency ARS   solo una
 //   node tools/fetch-fx-reference.mjs --currency COP --from 2015-01-01
 //   node tools/fetch-fx-reference.mjs --currency TRY --full   TRY desde cero
@@ -304,6 +312,9 @@ async function fetchCZK(from, to) {
 // --- CHF y KRW: Reserva Federal H.10 (ver comentario en CURRENCIES) ----------
 const fetchCHF = (from, to) => fetchFredH10('DEXSZUS', from, to);
 const fetchKRW = (from, to) => fetchFredH10('DEXKOUS', from, to);
+const fetchJPY = (from, to) => fetchFredH10('DEXJPUS', from, to);
+const fetchCNY = (from, to) => fetchFredH10('DEXCHUS', from, to);
+const fetchMXN = (from, to) => fetchFredH10('DEXMXUS', from, to);
 
 // --- EUR: Banco Central Europeo, tipo de referencia diario EUR/USD -----------
 // El BCE publica USD por 1 EUR (~1,05-1,18); el sitio guarda EUR por 1 USD, así
@@ -441,6 +452,55 @@ async function fetchUAH(from, to) {
   if (!resp.ok) throw new Error(`NBU HTTP ${resp.status}`);
   const series = {};
   for (const row of await resp.json()) series[ddmmyyyyToIso(row.exchangedate)] = row.rate_per_unit;
+  return series;
+}
+
+// --- SEK: Sveriges Riksbank, API SWEA (serie SEKUSDPMI) ---------------------
+// Una sola llamada trae la serie entera (~6.700 días desde 2000). Sin key, la
+// API admite pocas llamadas por minuto: alcanza de sobra para una.
+async function fetchSEK(from, to) {
+  const resp = await fetchRetry(`https://api.riksbank.se/swea/v1/Observations/SEKUSDPMI/${from}/${to}`);
+  if (!resp.ok) throw new Error(`Riksbank HTTP ${resp.status}`);
+  const series = {};
+  for (const row of await resp.json()) if (row.value != null) series[row.date] = row.value;
+  return series;
+}
+
+// --- PLN: Narodowy Bank Polski, tabla A (tipo medio) ------------------------
+// La API acepta como máximo 367 días por consulta: se pide año por año. Datos
+// desde 2002-01-02 (antes de esa fecha la API no tiene la tabla A).
+async function fetchPLN(from, to) {
+  const series = {};
+  const start = from < '2002-01-02' ? '2002-01-02' : from;
+  for (let y = Number(start.slice(0, 4)); y <= Number(to.slice(0, 4)); y++) {
+    const a = y === Number(start.slice(0, 4)) ? start : `${y}-01-01`;
+    const b = y === Number(to.slice(0, 4)) ? to : `${y}-12-31`;
+    const resp = await fetchRetry(`https://api.nbp.pl/api/exchangerates/rates/a/usd/${a}/${b}/?format=json`);
+    if (resp.status === 404) continue; // NBP: 404 = "no hay tabla en ese rango"
+    for (const row of (await resp.json()).rates ?? []) series[row.effectiveDate] = row.mid;
+    process.stdout.write(`  ${y}\r`);
+  }
+  console.log('');
+  return series;
+}
+
+// --- HRK: Hrvatska narodna banka, tečajna lista v2 (srednji tečaj) ----------
+// Se pide año por año. La kuna dejó de existir el 2023-01-01 (Croacia pasó al
+// euro): la serie termina el 2022-12-31 aunque se pida más.
+async function fetchHRK(from, to) {
+  const series = {};
+  const end = to > '2022-12-31' ? '2022-12-31' : to;
+  for (let y = Number(from.slice(0, 4)); y <= Number(end.slice(0, 4)); y++) {
+    const a = y === Number(from.slice(0, 4)) ? from : `${y}-01-01`;
+    const b = y === Number(end.slice(0, 4)) ? end : `${y}-12-31`;
+    const resp = await fetchRetry(`https://api.hnb.hr/tecajn/v2?valuta=USD&datum-primjene-od=${a}&datum-primjene-do=${b}`);
+    if (!resp.ok) throw new Error(`HNB HTTP ${resp.status} para ${y}`);
+    for (const row of await resp.json()) {
+      series[row.datum] = parseFloat(row.srednji_tecaj.replace(',', '.')) / (row.jedinica || 1);
+    }
+    process.stdout.write(`  ${y}\r`);
+  }
+  console.log('');
   return series;
 }
 
@@ -683,6 +743,54 @@ const CURRENCIES = {
   // exacto). Las diferencias son de hora de fijación, no de definición.
   GBP: { file: 'gbp-usd.json', label: 'GBP por 1 USD (Bank of England, tipo spot diario, invertido de USD por GBP)', fetch: fetchGBP, defaultFrom: '2000-01-01',
     source: 'Bank of England, Interactive Database, serie XUDLUSS (valor invertido a GBP por USD)' },
+
+  // --- Las 6 de abajo se agregaron por el to-do 112 (pedido de Guido: las
+  // monedas de los clubes con documentos transcriptos y sin serie, más SEK y PLN).
+
+  // SEK — Sveriges Riksbank, API SWEA, serie SEKUSDPMI. Qué tasa es: el tipo
+  // medio ("mittkurs") que el Riksbank publica cada día hábil sueco, el que
+  // usan los balances suecos al cierre. Directo contra el USD. Dirección: SEK
+  // por 1 USD (~8,5 en 2000, ~10-11 en 2023-25). Sin key (límite de pocas
+  // llamadas por minuto: el script hace una sola). Datos desde 1993; se baja
+  // desde 2000. Días sin dato: fines de semana y feriados suecos.
+  SEK: { file: 'sek-usd.json', label: 'SEK por 1 USD (Sveriges Riksbank, tipo medio diario)', fetch: fetchSEK, defaultFrom: '2000-01-01',
+    source: 'Sveriges Riksbank, API SWEA, api.riksbank.se/swea/v1/Observations/SEKUSDPMI' },
+
+  // PLN — Narodowy Bank Polski, tabla A (kurs średni). Qué tasa es: el tipo
+  // medio que el NBP publica cada día hábil polaco; es el que manda la ley
+  // contable polaca para valuar al cierre ("średni kurs NBP z ostatniego dnia
+  // roboczego"). Directo contra el USD. Dirección: PLN por 1 USD (~3,9 en 2002,
+  // ~4,0 en 2024). Sin key. La API tiene la tabla A desde 2002-01-02.
+  PLN: { file: 'pln-usd.json', label: 'PLN por 1 USD (Narodowy Bank Polski, tabla A, tipo medio)', fetch: fetchPLN, defaultFrom: '2002-01-02',
+    source: 'NBP, api.nbp.pl/api/exchangerates/rates/a/usd (campo mid)' },
+
+  // HRK — Hrvatska narodna banka, tečajna lista v2, srednji tečaj (tipo medio).
+  // Qué tasa es: el tipo medio de la lista del HNB, con la fecha de APLICACIÓN
+  // (datum primjene: la lista se fija el día hábil anterior y rige ese día). Viene
+  // un dato por cada día calendario. Es el que declaran los balances croatas
+  // ("srednji tečaj HNB na dan bilance"). Directo contra el USD. Dirección: HRK
+  // por 1 USD (~7,6 en 2000, ~7,1 a fines de 2022). La kuna dejó de existir el
+  // 2023-01-01: desde ahí los clubes croatas reportan en EUR (serie del BCE) y
+  // esta serie termina el 2022-12-31.
+  HRK: { file: 'hrk-usd.json', label: 'HRK por 1 USD (Hrvatska narodna banka, tipo medio, hasta 2022)', fetch: fetchHRK, defaultFrom: '2000-01-01',
+    source: 'HNB, api.hnb.hr/tecajn/v2?valuta=USD (srednji_tecaj)' },
+
+  // JPY, CNY y MXN — Reserva Federal H.10 vía FRED (series DEXJPUS, DEXCHUS,
+  // DEXMXUS), mismo criterio que CHF y KRW: "noon buying rate" de Nueva York,
+  // diaria y directa contra el USD (ver CHF arriba para lo que eso implica).
+  // POR QUÉ NO EL BANCO CENTRAL DE CADA PAÍS: el Banco de Japón no ofrece una
+  // serie diaria descargable simple; el Banco Popular de China no publica su
+  // tipo central en un formato de descarga; la API del Banco de México (SIE)
+  // pide token. Si el documento declara su tipo, gana ese (regla #0 de
+  // club-data-mapping). Datos desde 1971 (CNY desde 1981, MXN desde 1993); se
+  // bajan desde 2000. OJO: FRED rechaza a curl (corta la conexión), pero
+  // responde al fetch de Node que usa este script.
+  JPY: { file: 'jpy-usd.json', label: 'JPY por 1 USD (Reserva Federal H.10, noon buying rate Nueva York)', fetch: fetchJPY, defaultFrom: '2000-01-01',
+    source: 'Federal Reserve Board H.10 (serie DEXJPUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
+  CNY: { file: 'cny-usd.json', label: 'CNY por 1 USD (Reserva Federal H.10, noon buying rate Nueva York)', fetch: fetchCNY, defaultFrom: '2000-01-01',
+    source: 'Federal Reserve Board H.10 (serie DEXCHUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
+  MXN: { file: 'mxn-usd.json', label: 'MXN por 1 USD (Reserva Federal H.10, noon buying rate Nueva York)', fetch: fetchMXN, defaultFrom: '2000-01-01',
+    source: 'Federal Reserve Board H.10 (serie DEXMXUS) vía FRED, fred.stlouisfed.org/graph/fredgraph.csv' },
 };
 
 function parseArgs() {

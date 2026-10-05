@@ -56,6 +56,13 @@ const CURRENCIES = {
   EUR: { file: 'eur-usd.json', fuente: 'Tipo de referencia del Banco Central Europeo' },
   DKK: { file: 'dkk-usd.json', fuente: 'Tipo oficial de Danmarks Nationalbank' },
   GBP: { file: 'gbp-usd.json', fuente: 'Tipo spot del Bank of England' },
+  // Agregadas por el to-do 112 (ver fetch-fx-reference.mjs para qué tasa es cada una).
+  SEK: { file: 'sek-usd.json', fuente: 'Tipo medio del Sveriges Riksbank' },
+  PLN: { file: 'pln-usd.json', fuente: 'Tipo medio del Narodowy Bank Polski (tabla A)' },
+  HRK: { file: 'hrk-usd.json', fuente: 'Tipo medio de la Hrvatska narodna banka' },
+  JPY: { file: 'jpy-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  CNY: { file: 'cny-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
+  MXN: { file: 'mxn-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
 };
 
 function logMiss(reason, currency, date) {
