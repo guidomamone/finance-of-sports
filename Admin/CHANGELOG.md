@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 531 — To-do 147, paso 1: en Finanzas el título es el club (2026-10-05)
+
+- `index.html` + `js/selector.js` (`renderFinSelector`, `finSubtitle`): con club, el H1 es el nombre del club y la bajada dice liga · país · cuántos balances y presupuestos hay y de qué ejercicio a cuál (sale de `CLUB_INDEX`; la liga, de `leagueAt` del ejercicio más reciente, y se rearma cuando cargan las tablas de ligas). El card "Cambiar de club" se esconde: repetía el chip del header. Sin club no cambia nada: H1 "Finanzas" y el card para elegir uno.
+- `data/lang/en.js`: 6 claves `finanzas.head.*`; salen `finanzas.sub`, `finanzas.sel.change` y `finanzas.sel.sub.club`, que ya no se usan. `ASSET_V` 426, `fuentes.html` regenerado.
+- Mockup del rediseño completo (cards de ejercicios, presupuesto y balance, gestión): `Prototyping/Finanzas/mockup-147.html`.
+
 ## Versión 530 — To-do 146: el chip del club del header ya no vuelve a un club viejo al cambiar de idioma (2026-10-05)
 
 - `index.html`: el nombre, la línea de arriba y el title del chip ya no llevan `data-i18n` (I18N.apply() guardaba como castellano el nombre de un club y lo reponía); `I18N.onChange` ahora llama a `CLUB_SELECTOR.refresh()`, que faltaba. Verificado en el preview: Bayern Munich → 1. FC Köln, ES → EN → ES, el chip sigue en 1. FC Köln y solo se traduce "Estás viendo". Regla en `Admin/PANTALLA.md`. ASSET_V 424 → 425, audit 0 P0/P1.

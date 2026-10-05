@@ -2353,6 +2353,42 @@ window.CLUB_SELECTOR = (function(){
   // EL SELECTOR DENTRO DE FINANZAS (Versión 143). Sin club es lo único que hay
   // para hacer en esa pantalla; con club, es cómo se cambia.
   // ---------------------------------------------------------------------------
+  // La bajada del título con club (to-do 147, paso 1): liga · país · cuántos balances y
+  // presupuestos hay y de qué ejercicio a qué ejercicio. Sale del índice liviano
+  // (CLUB_INDEX), así que no necesita los datos del club cargados. La liga es la del
+  // ejercicio más reciente que tenga una asignada; si la tabla de ligas de ese país
+  // todavía no cargó, la bajada sale sin liga en vez de esperar.
+  function finSubtitle(id){
+    var partes = [];
+    var yrs = (idx(id).yrs || []);
+    var conLiga = yrs.map(function(p){ return typeof leagueAt === 'function' ? leagueAt(id, p[0]) : null; })
+                     .filter(Boolean)[0];
+    var liga = conLiga && (window.LEAGUES || {})[conLiga];
+    if(liga) partes.push(liga.name);
+    var co = window.COUNTRIES[countryOf(id)];
+    if(co) partes.push(t(co.key, co.name));
+    var BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+    var PRE = { official_budget:1, official_budget_and_balance:1 };
+    var nb = 0, np = 0, anios = [];
+    yrs.forEach(function(p){
+      if(BAL[p[1]]) nb++;
+      if(PRE[p[1]]) np++;
+      if(BAL[p[1]] || PRE[p[1]]) anios.push(p[0]);
+    });
+    if(anios.length){
+      var calendario = clubs[id] && clubs[id].fiscalYearStart === '01-01';
+      var ej = function(y){ return calendario ? String(y) : (y - 1) + '/' + String(y).slice(2); };
+      var cuantos = [];
+      if(nb) cuantos.push(nb === 1 ? t('finanzas.head.bal1', '1 balance') : t('finanzas.head.baln', '{n} balances').replace('{n}', nb));
+      if(np) cuantos.push(np === 1 ? t('finanzas.head.pre1', '1 presupuesto') : t('finanzas.head.pren', '{n} presupuestos').replace('{n}', np));
+      var desde = Math.min.apply(null, anios), hasta = Math.max.apply(null, anios);
+      var rango = desde === hasta ? ej(desde)
+        : t('finanzas.head.range', '{a} a {b}').replace('{a}', ej(desde)).replace('{b}', ej(hasta));
+      partes.push(cuantos.join(t('finanzas.head.and', ' y ')) + ', ' + rango);
+    }
+    return partes.join(' · ');
+  }
+
   function renderFinSelector(){
     var caja = $('finSelector');
     if(!caja) return;
@@ -2362,22 +2398,32 @@ window.CLUB_SELECTOR = (function(){
     var sec = $('finanzas');
     if(sec) sec.classList.toggle('sin-club', !id);
 
-    caja.appendChild(el('span', 'fin-sel-ico', id ? initials(nameOf(id)) : '?'));
-
-    var txt = el('span', 'fin-sel-txt');
-    txt.appendChild(el('span', 'fin-sel-t', id ? nameOf(id) : t('finanzas.sel.none', 'Todavía no elegiste un club')));
-    var sub;
-    if(id){
-      var co = window.COUNTRIES[countryOf(id)];
-      sub = (co ? t(co.key, co.name) + ' · ' : '') + t('finanzas.sel.sub.club', 'los números de abajo son de este club');
-    } else {
-      sub = t('finanzas.sel.sub.none', 'Elegilo y acá abajo aparecen sus ingresos, gastos y deuda, ejercicio por ejercicio.');
+    // Con club, el club ES el título y se cambia desde el chip del header: el card de acá
+    // repetía el mismo control (to-do 147, paso 1). Sin club, el card sigue siendo lo único
+    // que hay para hacer en la pantalla.
+    var h1 = $('finTitle'), bajada = $('finSub');
+    if(h1) h1.textContent = id ? nameOf(id) : t('finanzas.title', 'Finanzas');
+    if(bajada){
+      bajada.textContent = id ? finSubtitle(id) : '';
+      bajada.hidden = !bajada.textContent;
+      // Las tablas de ligas se cargan aparte (data/club-leagues/<país>.js): si todavía no
+      // llegaron, la bajada se rearma cuando lleguen, siempre que el club no haya cambiado.
+      if(id && typeof window.loadClubLeagues === 'function'){
+        window.loadClubLeagues().then(function(){
+          if(api.getClub() === id) bajada.textContent = finSubtitle(id);
+        });
+      }
     }
-    txt.appendChild(el('span', 'fin-sel-s', sub));
+    caja.hidden = !!id;
+    if(id) return;
+
+    caja.appendChild(el('span', 'fin-sel-ico', '?'));
+    var txt = el('span', 'fin-sel-txt');
+    txt.appendChild(el('span', 'fin-sel-t', t('finanzas.sel.none', 'Todavía no elegiste un club')));
+    txt.appendChild(el('span', 'fin-sel-s', t('finanzas.sel.sub.none', 'Elegilo y acá abajo aparecen sus ingresos, gastos y deuda, ejercicio por ejercicio.')));
     caja.appendChild(txt);
 
-    var b = el('button', 'fin-sel-btn' + (id ? ' alt' : ''),
-               id ? t('finanzas.sel.change', 'Cambiar de club') : t('finanzas.sel.pick', 'Elegir un club'));
+    var b = el('button', 'fin-sel-btn', t('finanzas.sel.pick', 'Elegir un club'));
     b.type = 'button';
     b.addEventListener('click', function(){ open(false); });
     caja.appendChild(b);
