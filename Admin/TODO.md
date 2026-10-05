@@ -70,6 +70,18 @@ ni en el comentario de ningún archivo de código.
     (c) Retirar el proceso viejo de las etapas 3 a 5 (~10 tools): cuando el proceso nuevo haya cargado bien algunos documentos.
         Relacionado: el ex to-do 108 (validar el inventario con `pipeline.mjs`), en `Admin/Archive/todos-cerrados-onboarding-manual.md`.
 
+146. EL NOMBRE DEL CLUB EN EL HEADER VUELVE A UNO VIEJO AL CAMBIAR DE IDIOMA (encontrado el 2026-10-05 probando la Versión 515). Con un
+    club elegido, `I18N.setLang` deja el chip "Estás viendo" con el nombre de un club anterior (visto: "AEL Larissa" con el escudo "AM" de
+    América Mineiro) mientras la página muestra el actual. Causa probable: `<span id="cbName" data-i18n="header.club.none">` en index.html
+    (~L73): el motor de i18n le re-escribe el texto y pisa el de `renderButton()` (js/selector.js ~L2397-2412). Arreglar sin romper que
+    "Elegí tu club" / "Pick your club" se traduzca cuando no hay club. Verificar en ES y EN en el preview.
+
+147. EVOLUTIVO POR RUBRO EN FINANZAS (pedido de Guido, 2026-10-05). Hoy Finanzas tiene un solo gráfico de evolución, "Ingresos vs. gastos,
+    últimos ejercicios" (`trendChart`, solo los dos totales), y la tabla "Estado de resultados" es de UN ejercicio. Falta ver cada rubro
+    (televisión, sponsors, sueldos…) a lo largo de los años del club, lado a lado. Es la parte "comparar el club contra sí mismo" que
+    estaba dentro del 23(d); los deflactores (USD constantes) quedan allá y este punto no depende de ellos (se puede hacer en USD
+    nominales primero y sumar el selector de USD constantes cuando se cierre el 23(d)).
+
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).
@@ -110,7 +122,7 @@ ni en el comentario de ningún archivo de código.
         cierre ya absorbe la inflación local; lo que queda es la inflación del dólar (~35% entre 2015 y 2025). Una sola serie
         oficial, el IPC de EE.UU. (CPI-U, BLS), para todos los clubes, y un selector "USD nominales / USD de <último año>".
         Y en Finanzas, que se pueda comparar el club contra sí mismo fácilmente (pedido de Guido): sus años lado a lado, en
-        USD constantes.
+        USD constantes. (La vista por rubro año a año es el to-do 147; acá queda solo la parte de USD constantes.)
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
