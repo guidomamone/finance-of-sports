@@ -724,10 +724,17 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
   // cambian: el importe está una sola vez, en la línea.
   const sinDesglose = [...rev, ...exp].filter((f) => /^lump_football_operations/.test(f.cat || '')).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
+  // (Versión 525, to-do 140(h), aprobado por Guido el 2026-10-05) DE DÓNDE SALIÓ CADA DATO DE LAS ESCALERAS CHICAS: el texto que ya arma
+  // alta-club.mjs para cada campo (año, cierre, perímetro, moneda, tipo de cambio, liga), más lo que cargar.mjs decidió encima (perímetro
+  // por ajuste, heredado o por la cola). Solo registro: no cambia ninguna decisión. Lo junta `node tools/estado.mjs --escalones`.
+  P.procedencia = Object.fromEntries(alta.ejercicio.campos.map((c) => [c.campo, { valor: c.valor ?? null, fuente: c.fuente || null, estado: c.estado || null }]));
+  { const avPer = P.avisos.find((x) => /^perímetro(:| heredado)/.test(x));
+    if (ajPer) P.procedencia.perimetro = { valor: perimetro, fuente: `ajuste manual (${ajPer.fecha})`, estado: 'ok' };
+    else if (avPer) P.procedencia.perimetro = { valor: perimetro, fuente: /heredado/.test(avPer) ? 'heredado del año cargado más cercano' : 'respuesta de Guido en la cola', estado: 'ok' }; }
   P.ejercicio = {
     clubId, year, cierre: alta.ejercicio.cierre, perimetro,
-    revenueLines: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf })),
-    expenseLines: exp.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf })),
+    revenueLines: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
+    expenseLines: exp.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
     fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };

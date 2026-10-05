@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 525 — To-do 140(h): en qué escalón salió cada dato (2026-10-05)
+
+- `cargar.mjs` guarda en el `.carga.json` la `procedencia` de las escaleras chicas (año, cierre, perímetro, moneda, tipo de cambio, liga: el texto de `alta-club.mjs` más lo que decide encima del perímetro) y `_fuenteCat` en cada línea. Solo registro: el ensayo de `prueba-completa` da idéntico.
+- `tools/escalones.mjs` (`node tools/estado.mjs --escalones`, gratis): junta la etapa 4 (`.validacion.json` → `fuentes` por página) y la 8. `--rehacer-procedencia` completó las 89 propuestas viejas sin tocar `generado`. Primer conteo: páginas confirmadas 438 texto propio / 17 Gemini / 1 Claude; categorías 1.475 escalón 0 / 847 Jev / 199 Claude; tipo de cambio 78 serie oficial / 11 declarado; año 78 nombre confirmado por el contenido / 11 ajuste.
+- `Admin/altas-club.jsonl` al día como efecto de correr `alta-club.mjs` (caché por carpeta: Fortaleza, AEL y Juventus ya no figuran "listo-para-alta").
+
 ## Versión 524 — To-dos 140(f) y 140(g) cerrados: medidos, sin construir (2026-10-05)
 
 - (f) número citado en el texto: 84 de 88 años ya tienen chequeo cruzado; los 4 restantes no citan el total en prosa. (g) coherencia de categoría entre años: 16 de 18 avisos serían falsos; los errores no volvieron. Detalle en `Admin/HALLAZGOS-pipeline.md`.

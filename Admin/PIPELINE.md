@@ -118,7 +118,7 @@ Mitigaciones:
 
 - a) PDF digital: cada número de los bloques elegidos se busca en el texto propio de su página. Gratis.
 - b) Escaneo: Gemini lee la imagen de esa página (si la rechaza, Claude). ~US$ 0,003 por página.
-- **Escalera** (ya funciona así; no registra todavía en qué escalón quedó cada número):
+- **Escalera** (en qué escalón quedó cada página: `.validacion.json` → `fuentes`; el conteo, `node tools/estado.mjs --escalones`):
 
 ```
  ESCALÓN 0  texto propio del PDF (digital) ────── ¿el número está en su página? sí → confirmado
@@ -250,7 +250,7 @@ Mitigaciones:
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año.
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
-- d) **Escaleras chicas** (ya funcionan así; falta registrar en qué escalón salió cada dato, to-do 140h):
+- d) **Escaleras chicas** (de dónde salió cada dato: `.carga.json` → `procedencia`, y `_escalon` / `_fuenteCat` en cada línea, Versión 525; el conteo: `node tools/estado.mjs --escalones`):
 
 ```
  TIPO DE CAMBIO   ajuste ─► declarado (compuerta: su frase no trae otra fecha que el cierre) ─► en tabla (fecha más nueva) ─► serie oficial ─► cola

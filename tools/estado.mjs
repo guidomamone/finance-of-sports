@@ -11,6 +11,7 @@
 //   node tools/estado.mjs                 lee el registro tal como está (instantáneo) y dice de cuándo es
 //   node tools/estado.mjs --actualizar    regenera el registro antes (~1 minuto, sin API)
 //   node tools/estado.mjs --dir Clubes/Brasil    solo una carpeta
+//   node tools/estado.mjs --escalones            en qué escalón salió cada dato de las etapas 4 y 8 (tools/escalones.mjs)
 //   node tools/estado.mjs --logica [grupo]       qué tiene de PROPIO cada grupo de países en cada etapa (tools/grupos-pais.mjs), con el
 //                                                ejemplo real donde se vio; sin grupo, todos. Grupos: argentina, brasil, latam, iberica,
 //                                                britanica, germanica, benelux, nordica, este, mediterranea, asia, otros.
@@ -38,6 +39,8 @@ if (args.includes('--actualizar') || !existsSync(regPath)) {
   console.log('listo.');
 }
 // --logica: solo imprime la lógica por grupo y sale (no necesita el registro).
+// --escalones (Versión 525, to-do 140(h)): en qué escalón salió cada dato de las etapas 4 y 8 (tools/escalones.mjs).
+if (args.includes('--escalones')) { await import('./escalones.mjs'); process.exit(0); }
 if (args.includes('--logica')) {
   const pedido = flagVal('--logica'); const lista = pedido && !pedido.startsWith('--') ? GRUPOS.filter((g) => g.id === pedido) : GRUPOS;
   if (!lista.length) { console.error(`Grupo desconocido: ${pedido}. Grupos: ${GRUPOS.map((g) => g.id).join(', ')}`); process.exit(1); }
