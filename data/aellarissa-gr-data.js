@@ -274,6 +274,8 @@ const aellarissagrFiscalYearMeta = {
     officialTotalRevenue:2.793526, officialTotalExpenses:3.284055, officialPAT:-0.525172,
   },
   2018: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2018-06-30',
     sourceId:'aellarissa-gr-ael-notes-elp-2018-06-30',
     reportType:'official_balance_sheet',
@@ -290,6 +292,8 @@ const aellarissagrFiscalYearMeta = {
     officialTotalRevenue:3.40008, officialTotalExpenses:2.658101, officialPAT:0.730033,
   },
   2017: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2017-06-30',
     sourceId:'aellarissa-gr-ael-notes-elp-2017-06-30',
     reportType:'official_balance_sheet',
@@ -310,6 +314,8 @@ const aellarissagrFiscalYearMeta = {
     officialTotalRevenue:2.219786, officialTotalExpenses:2.547803, officialPAT:-0.35446,
   },
   2016: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2016-06-30',
     sourceId:'aellarissa-gr-ael-notes-elp-2015-16',
     reportType:'official_balance_sheet',

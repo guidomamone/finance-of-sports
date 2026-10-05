@@ -405,6 +405,8 @@ const sanLorenzoExpenseLinesByYear = {
 
 const sanLorenzoFiscalYearMeta = {
   2011: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2015, 2016, 2017): Salarios y primas (plantel y cuerpo técnico), Organización de partidos, Otras secciones deportivas (juvenil, otros deportes, básquet)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, youth_other_sports_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     // Comparativo dentro del balance 2011-2012 — no hay archivo propio descargado para este año.
     currency:'ARS', fx:4.11, fxSource:'market_approx', sourceId:'sanlorenzo-memoria-y-balance-2011-12',
     reportType:'official_balance_sheet', gestionId:'abdo',
@@ -471,6 +473,8 @@ const sanLorenzoFiscalYearMeta = {
     officialTotalRevenue:180.832670, officialTotalExpenses:155.932357, officialPAT:32.929698,
   },
   2014: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2011, 2012, 2013, 2015, 2016, 2017): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos, Otras secciones deportivas (juvenil, otros deportes, básquet)
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, youth_other_sports_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'ARS', fxRef:'ARS@2014-06-30', sourceId:'sanlorenzo-memoria-y-balance-2013-14',
     reportType:'official_balance_sheet', gestionId:'lammens',
     grossDebt:156.616408, cash:0.331774,

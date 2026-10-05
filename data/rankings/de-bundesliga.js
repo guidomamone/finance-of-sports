@@ -82,7 +82,8 @@ window.RANKINGS["de-bundesliga"] = {
     clubs: [
       { id:"bayernmunich-de", revenue:888.08, reportType:"official_balance_sheet",
         sourceId:"bayernmunich-de-jahresabschluss-2023",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",888.08]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",888.08]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"rbleipzig-de", revenue:428.949, reportType:"official_balance_sheet",
         sourceId:"rbleipzig-de-jahresabschluss-2023",
         mix:[["Comercial / Sponsors",9.131],["Fútbol profesional (sin desglosar por la fuente)",340.353],["Otros ingresos",79.465]] },
@@ -110,7 +111,8 @@ window.RANKINGS["de-bundesliga"] = {
     clubs: [
       { id:"bayernmunich-de", revenue:765.181, reportType:"official_balance_sheet",
         sourceId:"bayernmunich-de-jahresabschluss-2021",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",765.181]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",765.181]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

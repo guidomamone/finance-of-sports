@@ -780,6 +780,8 @@ const fortalezaceifcoFiscalYearMeta = {
   // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): fila = (103,918). Nota de gastos financieros (bancarios 31.728 + comisiones 12.692 + intereses 266 + diferencial cambiario 59.233) con el total rotulado 'Total Otros Ingresos' en el PDF, como en 2017: es un costo. Con el signo bien, el impuesto calculado da 40.604 y el documento imprime 'Impuesto de Renta y Complementarios 40,612' (L448).
   // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-02): sin-dudas. Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.
   2018: { // tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
+    incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'COP', fxRef:'COP@2018-12-31',
     sourceId:'fortalezaceif-co-estados-financieros-2018',
     reportType:'official_balance_sheet',
@@ -925,6 +927,8 @@ const fortalezaceifcoFiscalYearMeta = {
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 70,183. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
   // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,600. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
   2017: { // tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
+    incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'COP', fxRef:'COP@2017-12-31',
     sourceId:'fortalezaceif-co-estados-financieros-2017',
     reportType:'official_balance_sheet',

@@ -305,4 +305,9 @@ el valor (sigue siendo el número 0, así que los totales no cambian). Una audit
 Si no está confirmado que el concepto esté en esa línea (América Mineiro: "atividades sociais"), la forma es
 `{ member_dues: { en: 'other_income', posible: true } }` y el sitio dice "Posiblemente dentro de otro rubro". La decisión se guarda también como
 ajuste manual `incluye` (`tools/ajustes.mjs`), para que una recarga con `cargar.mjs` la conserve.
+SIN DECISIÓN DE GUIDO, POR PRECEDENTE (Versión 517, to-do 140(i)): si el año tiene un renglón "sin desglosar por la fuente" y una fila en
+"—" tiene plata en TODOS los otros balances desglosados del club (al menos 2; presupuestos no cuentan), `tools/dentro-de-otro.mjs` escribe
+`{ en:'lump_football_operations(_expense)', posible:true, por:'precedente' }`. Esas marcas (con `por`) son de la tool: cada corrida las
+borra y las recalcula; nunca se editan a mano. Para corregir una, un ajuste `cero-real` (el 0 es real) o `incluye` (dónde está), y correr
+la tool otra vez.
 

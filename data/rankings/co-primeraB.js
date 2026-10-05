@@ -66,7 +66,8 @@ window.RANKINGS["co-primeraB"] = {
         mix:[["Comercial / Sponsors",0.075],["Estadio",0.635],["Televisión",1.31],["Premios por competencias",0.149],["Otros ingresos",0.035]] },
       { id:"fortalezaceif-co", revenue:1.976, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2018",
-        mix:[["Comercial / Sponsors",0.165],["Estadio",0.003],["Fútbol profesional (sin desglosar por la fuente)",1.806],["Otros ingresos",0.002]] },
+        mix:[["Comercial / Sponsors",0.165],["Estadio",0.003],["Fútbol profesional (sin desglosar por la fuente)",1.806],["Otros ingresos",0.002]],
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2017: {
@@ -74,7 +75,8 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:1.783, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2017",
-        mix:[["Comercial / Sponsors",0.024],["Fútbol profesional (sin desglosar por la fuente)",1.414],["Otros ingresos",0.345]] },
+        mix:[["Comercial / Sponsors",0.024],["Fútbol profesional (sin desglosar por la fuente)",1.414],["Otros ingresos",0.345]],
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

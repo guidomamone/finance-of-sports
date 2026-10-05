@@ -259,6 +259,8 @@ const argentinosJuniorsExpenseLinesByYear = {
 
 const argentinosJuniorsFiscalYearMeta = {
   2015: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018): Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+    incluidoEn:{ player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     // Único disponible para 2015: columna comparativa del balance 2015-2016 (no hay balance
     // 2014-2015 en nuestro archivo) — revenue con detalle completo (Anexo IV siempre da ambos
     // años), gastos solo a nivel de las 4 categorías agregadas (Anexo V no desglosa el año
@@ -306,6 +308,8 @@ const argentinosJuniorsFiscalYearMeta = {
     officialTotalRevenue:610.699504, officialTotalExpenses:272.415220, officialPAT:318.336988,
   },
   2019: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2015, 2016, 2017, 2018): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     // NO tocado en el fix — sigue viniendo de presentacion-asamblea-2018-2019.pdf (ver comentario
     // de cabecera: al ser el año más reciente de esa presentación, su columna probablemente ya es
     // ~nominal, pero no hay balance auditado real de este ejercicio descargado para confirmarlo).

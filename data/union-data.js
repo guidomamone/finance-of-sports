@@ -254,6 +254,8 @@ const unionFiscalYearMeta = {
     officialTotalRevenue:5087.874350, officialTotalExpenses:4339.212070, officialPAT:893.901287,
   },
   2024: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023): Salarios y primas (plantel y cuerpo técnico), Educación
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, education_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     // No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
     // archivo — grossDebt/cash quedan sin cargar, no inventados.
     currency:'ARS', fx:890.50, fxSource:'document_close', sourceId:'union-estados-contables-118-2023-24',
@@ -263,6 +265,8 @@ const unionFiscalYearMeta = {
     officialTotalRevenue:20283.299213, officialTotalExpenses:19052.891247, officialPAT:1166.322977,
   },
   2025: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023): Educación
+    incluidoEn:{ education_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     // El propio balance no se pudo leer con confianza para su Anexo de moneda extranjera (ver
     // comentario de cabecera) — dólar oficial vendedor BNA de cierre 30/6/2025, investigado
     // externamente.

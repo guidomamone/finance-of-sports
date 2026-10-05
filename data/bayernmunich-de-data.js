@@ -237,6 +237,8 @@ const bayernmunichDeExpenseLinesByYear = {
 
 const bayernmunichDeFiscalYearMeta = {
   2021: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2021-06-30',
     sourceId:'bayernmunich-de-jahresabschluss-2021',
     reportType:'official_balance_sheet',
@@ -248,6 +250,8 @@ const bayernmunichDeFiscalYearMeta = {
     officialTotalRevenue:643.9, officialTotalExpenses:638.9, officialPAT:1.9,
   },
   2023: {
+    // tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, player_impairment:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2023-06-30',
     sourceId:'bayernmunich-de-jahresabschluss-2023',
     reportType:'official_balance_sheet',

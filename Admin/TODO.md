@@ -50,8 +50,12 @@ ni en el comentario de ningún archivo de código.
     (f) Etapa 6: número citado en el texto del documento como segundo chequeo.
     (g) Chequeo de coherencia entre años (prototipado, no construido).
     (h) Etapas 4 y 8: registrar en qué escalón salió cada dato.
-    (i) Marcar "no desglosado" distinto de `cero-real`, y que la página lea `fiscalYearMeta.sinDesglose` y muestre "No declarado" (ya lo
-        usan 8 años cargados).
+    (i) "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido el 2026-10-05; pasos 1 y 2 hechos, Versiones 515 y 517: texto y
+        bocadillo en la página, y `tools/dentro-de-otro.mjs` con 70 filas marcadas en 16 años de 7 clubes). PREMISA VENCIDA: decía "8 años"
+        y "No declarado"; los años con renglón sin desglosar son ~95 lado-años (la mayoría cargados a mano, sin `sinDesglose`), y la página
+        ya mostraba "—", no $0. Falta: paso 3, que `cargar.mjs` llame a la misma escalera al escribir un año y que después de cargar se corra
+        `dentro-de-otro.mjs --club <id>` (Admin/PIPELINE.md y, con el ok de Guido, la skill club-or-year-onboarding paso 8); paso 4, la
+        pregunta de la cola para años nuevos sin precedente, a diseñar con el primer caso real.
     (j) Perfil de clubes fuera de Sudamérica (cuando aparezcan documentos de esos clubes).
     (k) Que las diferencias por grupo de países (`logica` de `tools/grupos-pais.mjs`, lo que muestra `node tools/estado.mjs --logica`)
         pasen a ser configuración que las tools lean, grupo por grupo.
@@ -81,6 +85,11 @@ ni en el comentario de ningún archivo de código.
     (televisión, sponsors, sueldos…) a lo largo de los años del club, lado a lado. Es la parte "comparar el club contra sí mismo" que
     estaba dentro del 23(d); los deflactores (USD constantes) quedan allá y este punto no depende de ellos (se puede hacer en USD
     nominales primero y sumar el selector de USD constantes cuando se cierre el 23(d)).
+
+148. EL CHEQUEO DE TIPO DE CAMBIO (`checkFxSanity()`, index.html) DA 6 FALSOS POSITIVOS DE AÑOS VIEJOS (visto el 2026-10-05 con
+    `auditAll()`). UC 2010-2013 (CLP 468-525 por dólar, rango "plausible" desde 600) y Juventus 2008 y 2011 (EUR 0,634 y 0,692, rango desde
+    0,70): los valores son los reales de esos años (el euro llegó a 1,58 dólares en 2008). Los rangos no contemplan la historia; ajustarlos
+    por moneda (o por moneda y década) para que el chequeo vuelva a 0 avisos sin silenciar uno real.
 
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:

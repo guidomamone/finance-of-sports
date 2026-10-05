@@ -359,6 +359,10 @@
     {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations_expense'], hideIfZero:true},
   ];
 
+  // (Versión 517, to-do 140(i)) las filas del formato simplificado, para tools/dentro-de-otro.mjs, que corre este mismo motor en Node:
+  // así la tool marca las mismas filas que ve el visitante sin copiar estas listas.
+  window.SIMPLIFIED_BUCKETS = { ingresos: GENERIC_SIMPLIFIED_REVENUE_BUCKETS, gastos: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS };
+
   // ACORDEÓN DE CONTROL (Versión 42, extiende a River/Racing la regla de la Versión 40, ver
   // club-data-mapping SKILL.md sección 12): cada bucket lleva `items` con las líneas reales
   // (rawLabel + amountNative, tal cual las reportó la fuente) que se sumaron para llegar a ese

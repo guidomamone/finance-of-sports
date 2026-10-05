@@ -22,7 +22,8 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:32.005, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2024",
-        mix:[["Comercial / Sponsors",9.07],["Televisión",7.202],["Premios por competencias",0.542],["Fútbol profesional (sin desglosar por la fuente)",15.191]] },
+        mix:[["Comercial / Sponsors",9.07],["Televisión",7.202],["Premios por competencias",0.542],["Fútbol profesional (sin desglosar por la fuente)",15.191]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2023: {
@@ -30,7 +31,8 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:29.176, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2023",
-        mix:[["Comercial / Sponsors",7.453],["Televisión",7.281],["Premios por competencias",4.234],["Fútbol profesional (sin desglosar por la fuente)",10.208]] },
+        mix:[["Comercial / Sponsors",7.453],["Televisión",7.281],["Premios por competencias",4.234],["Fútbol profesional (sin desglosar por la fuente)",10.208]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2022: {
@@ -38,7 +40,8 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:23.37, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2022",
-        mix:[["Comercial / Sponsors",5.566],["Televisión",6.586],["Premios por competencias",4.057],["Fútbol profesional (sin desglosar por la fuente)",7.16]] },
+        mix:[["Comercial / Sponsors",5.566],["Televisión",6.586],["Premios por competencias",4.057],["Fútbol profesional (sin desglosar por la fuente)",7.16]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {

@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 517 — To-do 140(i), paso 2: "Posiblemente dentro de otro rubro" por precedente del club (2026-10-05)
+
+- `tools/dentro-de-otro.mjs` (nuevo, gratis): corre el motor de la página en Node (`js/finanzas-calc.js` expone `window.SIMPLIFIED_BUCKETS`) y, si una fila está en "—" por un renglón sin desglosar y tiene plata en todos los otros balances desglosados del club (al menos 2, sin presupuestos), escribe `incluidoEn` con `posible:true, por:'precedente'`. Escalón 0: `incluye` y `cero-real` de Guido. Reescribe sus propias marcas en cada corrida (idempotente; una que deja de cumplir la regla se borra).
+- Backtest: 0,8% de marcas falsas (11 de 1.394); la variante "en algún otro año", 7,4%, descartada (`Admin/HALLAZGOS-pipeline.md`). Probado en sandbox: segunda corrida idéntica, `cero-real` y precedente perdido borran la marca, las marcas manuales no se tocan.
+- Escrito: 70 filas (102 marcas por categoría) en 16 años de AEL Larissa, Alianza Lima, Argentinos, Bayern, Fortaleza CEIF, San Lorenzo y Unión. Ningún número cambia: `auditAll()` 1.136 OK, los 3 que no cierran de siempre (Bayern); verificado en el navegador (Bayern 2021, Unión 2024-2025, AEL 2018, Fortaleza 2017). Rankings regenerados. ASSET_V 423 → 424, audit 0 P0/P1.
+- To-do 148 nuevo: 6 falsos positivos de `checkFxSanity()` en años viejos (UC 2010-2013, Juventus 2008 y 2011).
+
 ## Versión 516 — Simulador de Ligas traducido al inglés (2026-10-05)
 
 - 13 claves `liga.sim.*` que un visitante en inglés veía en castellano desde que existe el simulador (to-do 83): aparecieron cuando `js/liga.js` entró al chequeo de i18n de `audit.js` (Versión 515). Traducidas en `data/lang/en.js`. ASSET_V 422 → 423, audit 0 P0/P1, P3 113.
