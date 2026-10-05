@@ -125,9 +125,8 @@ sección "Transparência"/"SAF"/"Governança").
   HTML crudo antes de dar por perdido un portal que "menciona" las demonstrações; (2) se estaba
   adivinando el nombre de archivo en vez de leer un índice de la federación estadual.
 - Dead-ends que siguen sin lead nuevo (no rabbit-holear más sin uno): Náutico, Marília.
-  **Juventude** es un dead-end parcial: solo se encontró el ejercicio 2020 (vía el repositorio de la
-  Federação Gaúcha), y prensa reporta que el club no publicó su demonstração de 2024 dentro del
-  plazo legal — la pregunta directa al club está en `Admin/dudas-por-club.md`.
+  **Juventude** ya no es un dead-end: los balances 2017-2025 están en `juventude.com.br/publicacoes-e-editais` (PDFs en
+  `r2.juventude.com.br`).
 - **El sitio de la SAF puede no ser el sitio del club**, y el link entre los dos suele estar en el
   pie de página y no en el menú: Athletic Club tiene `athleticclub.com.br` (la asociación, cuya
   sección "Governança" solo trae cartas-convite) y `acfutebol.com.br` (la SAF, con `/transparencia`
@@ -155,3 +154,24 @@ específicamente — hay que chequear el subreddit real (`/api/subreddits/search
 Arctic Shift) antes de asumir que un club grande tiene cobertura ahí. El patrón que sí se sostiene,
 igual que en Inglaterra: subreddits de ~75-125k rinden, uno de <1k no, sin que el idioma sea la
 variable relevante — ver `Reino-Unido.md` para el detalle completo del piloto.
+
+## Otros deportes, documentos en Google Drive y portales que bloquean curl
+
+- **Otros deportes**: el canal sirve solo para clubes poliesportivos/sociales constituidos como
+  associação con persona jurídica propia (Minas Tênis Clube y Náutico, Paulistano, Praia Clube,
+  Pinheiros), que publican relatório anual con demonstrações auditadas por estatuto o por recibir
+  recursos de Lei de Incentivo. Un balance consolida todos los deportes; no hay balance por deporte.
+  Los equipos de NBB/Superliga suelen colgar de un poliesportivo o no publican nada; LNB y CBV
+  publican su propio balance, no el de los clubes. Gotchas: la carpeta `/uploads/AAAA/MM/` es fecha
+  de subida, no ejercicio; Praia Clube bloquea el HTML con Cloudflare pero los PDFs bajan con
+  User-Agent; Paulistano hoy es una SPA Angular+Strapi y sus PDFs viejos solo están en Wayback.
+- **Club que publica cada documento como noticia con link a Google Drive** (Vila Nova 2021): se baja
+  vía Wayback de la noticia más `drive.google.com/uc?export=download&id=<id>`, sin login.
+- **Portales con 403 a curl que cargan en un browser real** (Athletico Paranaense,
+  `athletico.com.br/gestao/`): los PDFs están en un bucket S3 que baja con curl una vez sacada la
+  URL desde el browser. Flamengo: portal de transparencia con pestaña FINANÇAS (Strapi, PDFs en
+  `storage.googleapis.com`). Chapecoense: `href="...pdf"` en el HTML crudo de `/transparencia/`.
+  Atlético Goianiense: el servidor da 406 con un User-Agent corto tipo `Mozilla/5.0`, y los hrefs de
+  `atleticogoianiense.com.br/transparencia/financas.html` van con comillas simples.
+- **Si un `.PDF` en mayúscula devuelve el challenge de Cloudflare con HTTP 200 en
+  `futebolpaulista.com.br`, probar `.pdf` en minúscula** (Guarani 2023).

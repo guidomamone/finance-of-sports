@@ -22,6 +22,10 @@ completo: series de 16-17 años consecutivos para Universidad Católica/Universi
   Iquique, Coquimbo Unido, Unión La Calera, Deportes La Serena, Curicó Unido. Antes de invertir
   tiempo en un club chileno nuevo, chequeá su clasificación (RVEMI vs. OTODP) en la CMF primero.
   Palestino es un caso mixto: tiene AMBOS registros (RVEMI y OTODP) — usar el RVEMI.
+  - **Antes de la CMF, y para un club con sitio WordPress**: listar sus PDF con
+    `<dominio>/wp-json/wp/v2/media?media_type=application&per_page=100`. Palestino publica ahí 8 Memorias anuales
+    (2017-2024) con EEFF auditados adentro, verificables por RUT (99.569.020-9) y cierre al 31-dic. La ficha CMF de
+    Palestino que figuraba en la nota daba 404 con curl.
   - **Aceleración**: el sitio propio del club a veces aloja copias directas de sus mismos envíos a
     la CMF (ej. Universidad Católica en `cruzados.cl/inversionistas/`, con URLs estáticas predecibles
     por trimestre, sin necesitar el mecanismo `auth`/`send`) — chequear la sección de

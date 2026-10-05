@@ -51,3 +51,15 @@ en `fuentes/<País>/<Club>.md`:
   todavía — próxima sesión que toque estos países, empezar por buscar si existe un regulador
   societario nacional con portal público (mismo patrón que Colombia/Ecuador) antes de ir club por
   club.
+
+## Lo que dio el sitio de cada club y Wayback
+
+- Perú: Universitario publica los resultados de la auditoría BDO como imágenes de comunicado en
+  `universitario.pe/media/uploads/<año>/…/*.jpg`, no como PDF. Sporting Cristal, Cienciano, Melgar y
+  otros 9: CDX completo sin ningún financiero. Alianza Lima: Wayback no tiene nada fuera de 2019,
+  2020, 2022 y 2023.
+- Paraguay: asociaciones civiles; la licencia APF/CONMEBOL pide EEFF auditados pero los guarda la APF.
+  CDX y wp-json de los 9 clubes sin resultado. Único canal: pedido directo (Sportivo Luqueño ofrece los
+  EEFF en `clubsportivoluqueno.com.py/socios/asamblea.php`, por WhatsApp).
+- Bolivia y Venezuela: asociaciones civiles sin obligación pública; la FBF solo publica documentos
+  propios. Dead-end documentado.

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 490 — Lo aprendido en el sourcing de Sudamérica, a la skill (ex to-do 132) (2026-10-05)
+
+- `club-sourcing`, aprobado por Guido: `paises/Brasil.md` (otros deportes, Google Drive, portales que bloquean curl, `.PDF` en minúscula; Juventude deja de ser dead-end), `Chile.md` (wp-json, Palestino), `Colombia.md` (subvisor desde el url de documentos-adicionales; 404 = sin documentos), `Uruguay.md` (Peñarol 2018 por el dominio punycode), `Ecuador.md` (informes a socios), `Peru-Paraguay-Bolivia-Venezuela.md` y SKILL.md 0.1 (quedarse con la captura de Wayback más grande).
+- `Admin/propuestas-skills-sudamerica.md` borrado (aplicado); to-do 132 cerrado.
+
 ## Versión 489 — Siete series de tipo de cambio más: SEK, PLN, HRK, JPY, CNY, MXN y PEN (to-do 112) (2026-10-04)
 
 - `tools/fetch-fx-reference.mjs`: SEK (Riksbank), PLN (NBP, tabla A), HRK (HNB, tipo medio, hasta 2022-12-31), y JPY, CNY y MXN (Reserva Federal H.10 vía FRED). PEN, del Banco de Pagos Internacionales (BIS), que la recibe del BCRP: el BCRP, la SBS y la SUNAT bloquean la descarga automática. Series nuevas en `tools/fx-reference/`; son 21 monedas en total.

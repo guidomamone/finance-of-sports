@@ -133,9 +133,6 @@ ni en el comentario de ningún archivo de código.
         (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
         `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
 
-132. SUDAMÉRICA: APLICAR LOS TEXTOS PROPUESTOS A LAS SKILLS (con el ok de Guido): ver
-    `Admin/propuestas-skills-sudamerica.md`; borrarlo al aplicar.
-
 82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
     escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
     separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón

@@ -26,6 +26,9 @@ request, está en `fuentes/Colombia/_notas-generales.md`; el resumen:
    **Trampa**: el campo `infoEmpresa.documentos_adicionales` que viene en la respuesta de
    Elasticsearch está desactualizado — viene VACÍO para 2021 en adelante aunque los documentos
    existan. Usar el endpoint, nunca el campo.
+   El `url` que devuelve `documentos-adicionales` ya es `VisualizarDocumentos.aspx`; el subvisor del paso 3 se arma cambiando
+   ese nombre por `subvisor.aspx`, con el mismo token. Un `404` en `documentos-adicionales` significa "sin documentos
+   depositados" para ese radicado, no un fallo transitorio: no reintentar.
 3. **Bajar**: `subvisor.aspx?Radicado=<token>` PRIMERO (es el que materializa el temporal y el que
    trae la ruta real), y recién después `GET .../bpmformularios/tmp/<ruta>` con `Referer` al
    subvisor. **El patrón `tmp/<radicado>/<radicado>.PDF` NO siempre se cumple**: el nombre de

@@ -154,6 +154,10 @@ no son 3 ángulos, es 1 ángulo probado 3 veces.
    sospechosamente corto, reintentar con otro timestamp de la misma URL** si la CDX API lista más de
    uno — no asumir que la primera captura que se abrió es representativa de todas.
 
+   **Con varias capturas del mismo PDF, listarlas todas** con `fl=original,timestamp,length` y quedarse con la de mayor tamaño (la de
+   exactamente 1.048.576 bytes está truncada: Operário, Volta Redonda, Emelec, Pinheiros). Hay clubes cuyos PDFs viejos solo existen en
+   Wayback, de un sitio que ya cambió a SPA (Coritiba, Paulistano, Operário).
+
    **Un club "ya muy sourceado" NO es excusa para saltear la familia 3 — el barrido de dominio
    completo puede seguir sin haberse corrido nunca en serio.** Encontrado con Boca Juniors
    (2026-09-26): la nota del club decía "Wayback CDX: no aplica esta sesión (club muy sourceado, no

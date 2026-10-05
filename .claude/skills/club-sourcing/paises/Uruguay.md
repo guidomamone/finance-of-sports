@@ -12,3 +12,6 @@ Confirmado, 3 ángulos distintos, los 3 bloqueados — **no reintentar con estos
 - Si se retoma en el futuro, el ángulo distinto a probar es un pedido formal de acceso a información
   pública a la AIN, o contactar a un socio real dispuesto a compartir el PDF que le llega por mail —
   no repetir los 3 de arriba.
+- Peñarol publicó el balance al 30-nov-2018 en su sitio (`aucdocumento.aspx?7138,21539` y `?7139,21543`, par página,documento).
+  Se encuentra con el CDX del dominio punycode `xn--pearol-xwa.org`, antes que el sitio vivo; desde la Memoria 2019 todo está detrás
+  del login de socios. Nacional: sin balances en ninguna fecha archivada de `nacional.uy`, `nacional.com.uy` ni `socionacional.uy`.

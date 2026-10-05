@@ -35,3 +35,10 @@ el sitio oficial de cada club (menú completo, no solo rutas típicas `/transpar
 asumir que no existe. Cuidado además con reportes de este tipo: suelen ser de CAJA (ingresos/egresos
 bancarios, pagos de impuestos), no estados contables de DEVENGADO con balance/estado de resultados
 completo — releer `club-data-mapping/SKILL.md` antes de decidir si encajan en el esquema del sitio.
+
+## Informes a socios colgados en el sitio
+
+Los clubes civiles grandes presentan informe económico y estados (a veces auditados) a socios en la asamblea anual y lo cuelgan un
+tiempo en el sitio: Emelec 2023 (`content/uploads/2024/08/`), Barcelona SC 2018 (`/descargas/pdf/INFORME_FINANCIERO_2018.pdf`). Los
+sitios nuevos ya no los publican. Técnica: CDX del dominio completo con filtro `application/pdf` y buscar nombres tipo
+`informe_financiero` o `estados`. Las convocatorias de asamblea (`/asamblea…`) confirman si hay auditoría externa anual.
