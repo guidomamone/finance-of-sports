@@ -29,7 +29,8 @@
 //   LEER UNA FILA: el importe en valor absoluto (hay balances que imprimen el pasivo entre paréntesis: Tottenham 2023-24).
 // Respuesta de la IA guardada en Generados/<doc>.caja-deuda-ia.json.
 // Solo se leen las páginas del BALANCE: las que tienen el título (TITULO_BALANCE) o un total del activo / del pasivo, sin el título del flujo
-// de efectivo. La columna es la PRIMERA cifra de la fila que no sea una referencia a nota (un entero de 1-2 dígitos al principio).
+// de efectivo. La columna es la PRIMERA cifra de la fila que no sea una referencia a nota (un entero de 1-2 dígitos al principio), salvo
+// que la tabla tenga una columna de notas antes de esa cifra (Versión 513, columnasDeNotas): entonces la cifra es un importe.
 //
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
@@ -76,13 +77,40 @@ function parseNumber(raw) {
   return Number.isNaN(n) ? null : (neg ? -n : n);
 }
 
+// COLUMNAS DE NOTAS de cada tabla markdown (Versión 513, to-do 143): para cada renglón de una tabla, los índices de celda de las columnas
+// que son de notas SIN AMBIGÜEDAD: mirando solo las filas con la cantidad de celdas más común de la tabla (una fila despareja corre las
+// columnas: Novorizontino 2023 L330), todas sus celdas con número son referencias a nota ("4", "5,6", "18/26", "6; 21") y hay al menos 2.
+// El encabezado ("Nota", "Note", "Σημ.") y la fila separadora no cuentan: tienen letras o guiones. Un renglón con otra cantidad de celdas
+// no tiene columnas de notas (null) y se lee con la regla de siempre.
+// PROBADO Y DESCARTADO (Admin/HALLAZGOS-pipeline.md): "la columna tiene importes, así que la cifra no es nota", con o sin separador de
+// miles. Rompía las transcripciones donde la columna "Note" y una de importes quedaron mezcladas (Aalesund 2012, Brann 2025).
+function columnasDeNotas(L) {
+  const celdasDe = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
+  const NOTA = /^\d{1,2}[a-z]?(?:\s*(?:[,;/&]|e|y|og|and)\s*\d{1,2}[a-z]?)*$/u;
+  const res = new Map();
+  for (let a = 0; a < L.length;) {
+    if (!L[a].trim().startsWith('|')) { a++; continue; }
+    let b = a; while (b < L.length && L[b].trim().startsWith('|')) b++;
+    const rs = L.slice(a, b).map(celdasDe); const freq = new Map(); for (const r of rs) freq.set(r.length, (freq.get(r.length) || 0) + 1);
+    const modal = [...freq].sort((x, y) => y[1] - x[1])[0][0]; const parejas = rs.filter((r) => r.length === modal); const cols = [];
+    for (let c = 0; c < modal; c++) {
+      const vs = parejas.map((r) => r[c] || '').filter((v) => v && !/\p{L}{2,}/u.test(v) && !/^:?-{2,}:?$/.test(v));
+      if (vs.length >= 2 && vs.every((v) => NOTA.test(v))) cols.push(c);
+    }
+    for (let k = a; k < b; k++) res.set(k, rs[k - a].length === modal && cols.length ? cols : null);
+    a = b;
+  }
+  return res;
+}
+
 // Las filas de la transcripción: etiqueta + cifras (tablas markdown y renglones de texto), con su página y su línea.
 export function filasDelMd(md) {
   const L = md.split('\n'); const filas = []; let pagina = 1; const textoPag = new Map();
+  const notasAntes = columnasDeNotas(L);
   for (let i = 0; i < L.length; i++) {
     const l = L[i]; const m = l.match(PAG_RE); if (m) { pagina = Number(m[1]); continue; }
     textoPag.set(pagina, (textoPag.get(pagina) || '') + '\n' + l);
-    let etiqueta = null; let crudos = []; const segmentos = [];
+    let etiqueta = null; let crudos = []; const segmentos = []; let ixPrim = null; let jPrim = null;
     if (l.trim().startsWith('|')) {
       const celdas = l.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.replace(/\*\*/g, '').trim());
       if (celdas.every((c) => /^:?-{2,}:?$/.test(c) || !c)) continue;
@@ -96,21 +124,26 @@ export function filasDelMd(md) {
       // va DESPUÉS del importe ("1.234 D"), así que no entra acá.
       const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c);
       const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c) && !esRefNota(c);
-      for (let j = iEt; j < celdas.length; j++) { if (!esTexto(celdas[j])) continue; let k = j + 1; const cs = []; while (k < celdas.length && !esTexto(celdas[k])) { if (esCifra(celdas[k])) cs.push(celdas[k]); k++; } segmentos.push([celdas[j], cs]); j = k - 1; }
-      [etiqueta, crudos] = segmentos.shift();
+      for (let j = iEt; j < celdas.length; j++) { if (!esTexto(celdas[j])) continue; let k = j + 1; const cs = []; const ix = []; while (k < celdas.length && !esTexto(celdas[k])) { if (esCifra(celdas[k])) { cs.push(celdas[k]); ix.push(k); } k++; } segmentos.push([celdas[j], cs, ix, j]); j = k - 1; }
+      [etiqueta, crudos, ixPrim, jPrim] = segmentos.shift();
     } else {
       const t = l.replace(/\*\*/g, ''); if (!/\p{L}{3,}/u.test(t) || !/\d/.test(t)) continue;
       const mm = t.match(/^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u) || t.match(/^(.*?\p{L}[^\d(]*?)\s+([-(]?\d[\d.,' ]*\)?(?:\s+[-(]?\d[\d.,' ]*\)?)*)\s*$/u);
       if (!mm) continue; etiqueta = mm[1].trim(); crudos = (mm[2].match(IMPORTE_RE) || []);
     }
-    const todas = [[etiqueta, crudos], ...segmentos];
-    for (const [et0, cr0] of todas) { const etiqueta = et0; let crudos = cr0;
+    const todas = [[etiqueta, crudos, ixPrim, jPrim], ...segmentos];
+    for (const [et0, cr0, ix0, j0] of todas) { const etiqueta = et0; let crudos = cr0;
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
     // (Versión 421) UNA sola referencia a nota, no en bucle: el importe de al lado también puede ser un entero chico (miles). Caso:
     // Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |" sacaba el 4 (nota) y el 85 (la caja, en miles) y leía 695 (2019).
-    if (nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
+    // (Versión 513, to-do 143, aprobado por Guido el 2026-10-05) ESCALERA DE LA LECTURA: escalón 1, si la tabla tiene una COLUMNA DE NOTAS
+    // (columnasDeNotas) entre la etiqueta y la primera cifra, esa cifra es un importe: la celda de nota de esta fila está vacía. Escalón 2,
+    // sin esa evidencia, la regla de siempre. Caso: Novorizontino 2019 "| Empréstimos |  | 27 | 24 |" (.md L193) descartaba el 27 (2019) y
+    // leía el 24 (2018); se publicó deuda 32,32 en vez de 32,323 (la compuerta lo dejó pasar por la tolerancia de redondeo).
+    const notaAntes = ix0 && notasAntes.get(i) && notasAntes.get(i).some((c) => c > j0 && c < ix0[0]);
+    if (!notaAntes && nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
     // (Versión 422) para el DICCIONARIO (vocabulario.mjs, que busca la palabra al principio) la etiqueta va sin el código de cuenta de un
