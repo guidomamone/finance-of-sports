@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 528 — To-do 141 cerrado (2026-10-05)
+
+- La cola humana no necesita ordenarse por impacto, ni volver reglas sus respuestas, ni otra vista: Guido la resuelve con un subagente (Sonnet) que resume los casos. Medido antes de cerrar: 853 casos en su historia, 187 abiertos en el pico (2026-10-02), 54% de categoría; hoy vacía.
+
 ## Versión 527 — To-do 140(k) y 140(l) fuera de la lista (2026-10-05)
 
 - (k) diferencias por grupo de países como configuración: sin caso que frene hoy (Vélez 2021 "consolidado" se cargó bien a mano); se resuelve caso por caso si vuelve. (l) presupuestos por el pipeline: 16 de 22 PDFs de presupuesto ya cargados a mano, quedan 5 de Argentina y 1 de España; se cargan a mano. Decisión de Guido.

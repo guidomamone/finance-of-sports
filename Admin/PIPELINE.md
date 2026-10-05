@@ -366,7 +366,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Qué entra: números no confirmados que no cierran, totales o resultado que no cierran, año vecino distinto, primer año sin vecino, dudas de
   localizar y de extraer que afectan la carga, y filas con categoría menor a 0,80 (etapa 8).
 - Una respuesta de categoría queda como precedente del club para los años siguientes (`Admin/categorias-aprendidas.jsonl`).
-- Falta: que otras respuestas (convenciones de un grupo de países) se vuelvan regla (to-do 141c).
+- Cómo la resuelve Guido (2026-10-05): con un subagente (Sonnet) que resume los casos; no hace falta ordenarla ni otra vista.
 
 ---
 

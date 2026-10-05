@@ -44,12 +44,6 @@ ni en el comentario de ningún archivo de código.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
 
-141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
-    (b) Ordenar la cola por impacto.
-    (c) Que una respuesta de la cola se vuelva regla (una convención de un grupo de países en `tools/grupos-pais.mjs`). Las respuestas de
-        categoría ya quedan como precedente del club (`Admin/categorias-aprendidas.jsonl`); las demás no.
-    (d) ¿Dónde ver la cola? Hoy es un archivo que se lee con `cola.mjs`. Decisión de Guido, a tomar con casos reales.
-
 142. DECISIONES PENDIENTES DE GUIDO SOBRE EL PIPELINE, a tomar con casos reales (venían del HANDOFF, Versión 470).
     (a) ¿El primer año automático de cada club pasa siempre por la cola?
     (b) Perímetro: se hereda del año cargado más cercano; si no se puede, pregunta en la cola.
