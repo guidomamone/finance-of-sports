@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 494 — La cabecera de cargar.mjs dice qué escribe la propuesta (2026-10-05)
+
+- `tools/cargar.mjs`: decía "propuesta: no escribe nada"; no toca el sitio, pero escribe a propósito en la cola, en los precedentes aprendidos y el briefing (así le hace preguntas el lote). Solo documentación.
+
 ## Versión 493 — Los ajustes `fila` llevan su signo en la lectura 4 de verificar.mjs (2026-10-05)
 
 - `tools/verificar.mjs`: en la lectura 4 (signos impresos), un ajuste `fila` entra con su signo relativo a la mayoría de los ajustes de su lado; en las demás lecturas sigue con valor absoluto. La escalera prueba las dos formas y gana la que cierra (pedido de Guido: nada de regla fija).

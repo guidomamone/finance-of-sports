@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/cargar.mjs — ETAPA 6 del pipeline: cargar en el sitio el ejercicio de un documento ya categorizado.
 //
-//     node tools/cargar.mjs "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf"            # propuesta (default): no escribe nada
+//     node tools/cargar.mjs "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf"            # propuesta (default): no escribe el sitio
 //     node tools/cargar.mjs "<pdf>" --escribir                                                  # escribe, audita y revierte si algo falla
 //
 // POR QUÉ EXISTE (pedido de Guido, 2026-09-30, to-do 108 sección 3b y to-do 112): el pipeline (tools/pipeline.mjs) llevaba un PDF hasta la
@@ -77,6 +77,10 @@
 // USO
 // ----------------------------------------------------------------------------
 //   node tools/cargar.mjs "<pdf>"                         propuesta en JSON (qué escribiría y por qué frena)
+//        OJO: la propuesta no toca el sitio (data/*.js), pero SÍ escribe, a propósito: en Admin/cola-revision.jsonl (las preguntas de
+//        categoría para Guido, y cierra las ya contestadas para otro año del club), en Admin/categorias-aprendidas.jsonl (copia como
+//        precedente del club las respuestas que Guido ya dio en la cola) y el <doc>.briefing.json de Generados/. Así le hace preguntas el
+//        lote a Guido (lote.mjs, etapa 8). Un ensayo de una sesión deja esos cambios en git status: revisarlos antes de commitear.
 //   node tools/cargar.mjs "<pdf>" --escribir              escribe si no frena; revierte si audit.js da P0/P1
 //   node tools/cargar.mjs --lista Admin/mi-lista.txt      una línea por documento (carga / frena y por qué)
 //   node tools/cargar.mjs --lista <x> --salida <x.jsonl>  además deja la propuesta completa de cada uno
