@@ -64,7 +64,6 @@ ni en el comentario de ningún archivo de código.
         páginas, da ~US$ 4 contra US$ 25,60 del ensayo de `pipeline.mjs`, que cuenta páginas. Que estime por páginas, como el ensayo.
 
 141. LA COLA HUMANA DEL PIPELINE (`tools/cola.mjs`; venía del HANDOFF, Versión 470).
-    (a) Cerrar casos obsoletos de la cola automáticamente (hoy hay 11 de Juventus 2003, 2004 y 2016, años ya cargados).
     (b) Ordenar la cola por impacto.
     (c) Que una respuesta de la cola se vuelva regla (una convención de un grupo de países en `tools/grupos-pais.mjs`). Las respuestas de
         categoría ya quedan como precedente del club (`Admin/categorias-aprendidas.jsonl`); las demás no.

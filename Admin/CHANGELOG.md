@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 487 — La cola cierra sola los casos de años ya cargados (ex to-do 141a) (2026-10-04)
+
+- `tools/cola.mjs`: `cerrarCargados()`, que corre al listar: cierra como "obsoleto" los casos pendientes de `verificar` y de `cargar · perimetro` cuyo año ya está en el sitio (registro o `.carga.json` + `fiscalYearMeta`, como lote.mjs). Nunca categoría ni perfil; un caso reabierto no se vuelve a cerrar. Cerró los 11 de Juventus.
+- Medido sobre copias de la cola: las respuestas que leen las tools, idénticas (600 → 600); 0 casos de categoría cerrados (43 de 43 siguen); un caso vuelto a levantar reaparece; ensayo del lote de `prueba-completa` idéntico; propuesta de carga de los 87 documentos idéntica con y sin el cambio.
+- `Admin/PIPELINE.md`, cola humana: la regla.
+
 ## Versión 486 — CLAUDE.md de 30 a 6 KB; to-do 143 cerrado (2026-10-04)
 
 - `CLAUDE.md` reescrito corto: separación del sitio profesional, netlify, dónde va un documento, archivar, al empezar, antes de terminar, cada PDF nuevo, precisión y punteros a las trampas.

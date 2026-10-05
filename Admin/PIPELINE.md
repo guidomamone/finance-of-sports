@@ -343,6 +343,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.
+- Al abrir la cola, se cierran solos (estado "obsoleto", sin efecto en ninguna tool) los casos de `verificar` y de `cargar · perimetro` de
+  años que ya están en el sitio: ya no frenan nada. Nunca los de categoría (pueden tocar un dato publicado) ni los de perfil (son del club).
+  Si una etapa vuelve a levantar uno, se reabre y no se vuelve a cerrar solo.
 - Las dudas de la IA traen un tema de una lista fija (usar un cuadro por segmento, cuadro duplicado, cuadro de otro año, perímetro, escala,
   columna, fila ilegible, otro) y el renglón al que afectan. Una duda de tema fijo se reconoce por club + tema + renglón: si Guido ya la
   contestó en cualquier año del club, se aplica sola.
