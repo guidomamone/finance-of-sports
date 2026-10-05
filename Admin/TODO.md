@@ -43,7 +43,6 @@ ni en el comentario de ningún archivo de código.
     `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
-    (c) Etapa 1: duplicados de PDF por huella (el mismo documento bajado dos veces con nombres distintos).
     (d) Etapa 1: reabrir solo el sourcing de un PDF roto.
     (e) Falso positivo del inventario con números que no son cifras contables (firmas digitales).
     (f) Etapa 6: número citado en el texto del documento como segundo chequeo.

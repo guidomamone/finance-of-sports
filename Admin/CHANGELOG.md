@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 521 — To-do 140(c): PDFs duplicados por huella; 140(b) sin caso (2026-10-05)
+
+- `inventario-transcripciones.mjs`: sha1 de cada PDF (cacheado por tamaño y fecha: la primera corrida hashea 10 GB, las siguientes ~20 s) y estado `duplicado` para las copias idénticas (queda el cargado, si no el que tiene .md, si no el que no se llama como un anexo, si no la primera ruta; un PDF cargado nunca pasa a duplicado). `etapa-doc.mjs` lo nombra (etapa 1); `lote.mjs` lo saltea; `pipeline.mjs` no lo transcribe (elige por estado).
+- Medido: 22 grupos idénticos, todos dentro de la carpeta de un club; 20 PDFs pasan a `duplicado` (Elche y Mirassol tienen las dos copias cargadas). 14 iban a transcribirse dos veces. Ensayo de `prueba-completa` idéntico.
+- Hallazgo de sourcing: 6 duplicados tienen años distintos en el nombre (Tolima dictamen 2024 = 2025, Santa Fe 2024 = 2023, Surrey 2026 = 2025, Kaspiy 2023 = 2022, Jablonec 2019 = 2018, Benfica 2010-12-06 = 2010-11-11): un año que figura como conseguido falta.
+- 140(b) (Gemini sobre escaneos enteros): sin caso hoy (0 documentos sin estado de resultados); queda anotado así en el TODO.
+
 ## Versión 520 — To-do 140(a) cerrado (2026-10-05)
 
 - "Resultado final que repite el documento siguiente": medido y descartado (89% de coincidencia en 80 pares; no arregla ninguno de sus 4 casos de Fortaleza CEIF), en `Admin/HALLAZGOS-pipeline.md`. "Costos financieros mal rotulados": descartado por Guido, sin construir. Con el año del nombre ya hecho (Versión 519), el 140(a) sale de la lista.
