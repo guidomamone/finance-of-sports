@@ -117,7 +117,7 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - **Presupuestos:** `localizar.mjs` no los elige, así que el pipeline no los carga. A mano: `Admin/ARQUITECTURA.md` (ex §11, presupuesto y
   balance del mismo año) y `Admin/CONVENCIONES.md` (ex §15, presupuesto en año calendario).
 - **Buscar el PDF:** skill `club-sourcing`.
-- **Cómo se ve el club en el sitio:** `Admin/PANTALLA-FINANZAS.md`.
+- **Cómo se ve el club en el sitio:** `Admin/PANTALLA.md`.
 
 ## 8. Al cerrar la sesión
 

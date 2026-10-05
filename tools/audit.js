@@ -25,7 +25,7 @@
 // QUÉ NO HACE, A PROPÓSITO:
 //   - No dice si un número está bien contra el PDF. Eso solo lo puede hacer quien
 //     tiene el documento delante, al onboardear (ver el skill
-//     `Admin/PANTALLA-FINANZAS.md`, ex §8). Esto audita CONSISTENCIA, no fuente.
+//     `Admin/PANTALLA.md`, ex §8). Esto audita CONSISTENCIA, no fuente.
 //   - No toca nada. Solo lee y reporta.
 //   - No reemplaza a `auditAll()` en el navegador: los chequeos de consola,
 //     listeners y Chart.js solo se ven con el sitio corriendo.

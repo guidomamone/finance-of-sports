@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 477 — CONVENCIONES partido en proceso, datos y pantalla (to-do 143, paso 1) (2026-10-04)
+
+- `Admin/CONVENCIONES.md` (58 → 13 KB): quedan las 5 reglas de proceso y un índice de 1 línea por regla mudada.
+- `Admin/CONVENCIONES-DATOS.md` (nuevo): las 16 reglas de datos. `Admin/PANTALLA-FINANZAS.md` → `Admin/PANTALLA.md`, con las 25 reglas de pantalla y código al final. Texto sin cambios.
+- `Admin/Archive/convenciones-historia.md`: la regla de la Versión 49 y la copia del párrafo de `netlify.toml`.
+- Skill de arranque: filas 2, 2c y 3b de la tabla y dónde va una regla nueva; skill de onboarding y `club-nuevo.md`: `PANTALLA.md`. Referencias repuntadas en `audit.js`, ARQUITECTURA y el Archive.
+
 ## Versión 476 — Ajustes al onboarding tras la prueba con Lazio (2026-10-04)
 
 - Skill `club-or-year-onboarding`: la etapa 2 la corre `pipeline.mjs --sin-jev --max-paginas 0` (no `mistral-ocr-transcribe.mjs`); los documentos sin estado de resultados se le proponen a Guido para `Admin/documentos-descartados.txt`; trampa: los ensayos reescriben el registro y la lista de la corrida.

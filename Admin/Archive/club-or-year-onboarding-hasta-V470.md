@@ -6,7 +6,7 @@
 | §0, §1, §9, §16, §17 (los generadores) y "Cómo mantener" | Solo acá (proceso manual o ya resuelto) |
 | §2, §3 (sin el color), §11 | `Admin/ARQUITECTURA.md`, sección "Finanzas para cualquier club" |
 | §3 punto 1b (color de marca), §17 (escudo y liga) | `.claude/skills/club-or-year-onboarding/club-nuevo.md` |
-| §4-8, §10, §12-14 | `Admin/PANTALLA-FINANZAS.md` |
+| §4-8, §10, §12-14 | `Admin/PANTALLA.md` |
 | §15 | `Admin/CONVENCIONES.md`, al final |
 
 ---

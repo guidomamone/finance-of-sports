@@ -22,10 +22,11 @@ permanentes. Esto es el procedimiento.
 |---|---|---|---|
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 44 KB |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
-| 2 | `Admin/CONVENCIONES.md` | **siempre** | 53 KB |
+| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** | 13 KB |
 | 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | **siempre** | 72 KB |
+| 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club | 25 KB |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` | 38 KB |
-| 3b | `Admin/PANTALLA-FINANZAS.md`: reglas de pantalla de Finanzas | si tocás cómo se ve algo en Finanzas | 27 KB |
+| 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS | 50 KB |
 | 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline | 89 KB |
 | 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) | 9 KB |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 33 KB (+ el archivo de tu país en `paises/`, ~2-9 KB cada uno, desde el to-do 87) |
@@ -130,7 +131,8 @@ Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido
 3. **`Admin/CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
 4. **`Admin/finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
    investigación, un bug real con su causa raíz). Un ajuste de UI no lo amerita.
-5. **`Admin/CONVENCIONES.md`**: si se decidió una regla nueva o se contradijo una vieja.
+5. **Si se decidió una regla nueva o se contradijo una vieja**: va a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md`
+   (datos) o `Admin/PANTALLA.md` (pantalla y código).
 
 No dupliques la to-do list en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sports-project.md`: la lista oficial vive sólo en
 `Admin/TODO.md`.
