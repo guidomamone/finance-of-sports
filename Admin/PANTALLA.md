@@ -339,6 +339,11 @@ de al lado.
 
 Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 
+- UN TEXTO QUE ESCRIBE JS NO LLEVA `data-i18n` (Versión 530, bug real: to-do 146). `I18N.apply()` guarda como "castellano original" lo que
+  el elemento tenga la PRIMERA vez que lo ve y lo vuelve a poner en cada cambio de idioma: si JS ya había escrito ahí (el nombre del club
+  en el chip del header), ese texto viejo vuelve. Lo que arma JS se traduce con `t()` en su render, y ese render se llama desde
+  `I18N.onChange` (en index.html). Al agregar un render nuevo, sumarlo ahí: `CLUB_SELECTOR.refresh()` no estaba, aunque su comentario
+  decía que sí.
 - UN SOLO BOCADILLO DE EXPLICACIÓN: `js/info-tip.js` (Versión 515). Hover en desktop, tap en mobile, un único `div.op-info-float`
   `position:fixed` colgado de `body` (esquiva el `overflow:hidden` de cards y del modal). Para algo pintado con innerHTML alcanza con
   `data-info-tip="texto"` (delegación); para un botón que no debe propagar el click, `INFO_TIP.enganchar(el, texto)` (el "?" del

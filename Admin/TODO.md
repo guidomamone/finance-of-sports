@@ -44,12 +44,6 @@ ni en el comentario de ningún archivo de código.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
 
-146. EL NOMBRE DEL CLUB EN EL HEADER VUELVE A UNO VIEJO AL CAMBIAR DE IDIOMA (encontrado el 2026-10-05 probando la Versión 515). Con un
-    club elegido, `I18N.setLang` deja el chip "Estás viendo" con el nombre de un club anterior (visto: "AEL Larissa" con el escudo "AM" de
-    América Mineiro) mientras la página muestra el actual. Causa probable: `<span id="cbName" data-i18n="header.club.none">` en index.html
-    (~L73): el motor de i18n le re-escribe el texto y pisa el de `renderButton()` (js/selector.js ~L2397-2412). Arreglar sin romper que
-    "Elegí tu club" / "Pick your club" se traduzca cuando no hay club. Verificar en ES y EN en el preview.
-
 147. EVOLUTIVO POR RUBRO EN FINANZAS (pedido de Guido, 2026-10-05). Hoy Finanzas tiene un solo gráfico de evolución, "Ingresos vs. gastos,
     últimos ejercicios" (`trendChart`, solo los dos totales), y la tabla "Estado de resultados" es de UN ejercicio. Falta ver cada rubro
     (televisión, sponsors, sueldos…) a lo largo de los años del club, lado a lado. Es la parte "comparar el club contra sí mismo" que

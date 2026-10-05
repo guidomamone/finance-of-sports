@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 530 — To-do 146: el chip del club del header ya no vuelve a un club viejo al cambiar de idioma (2026-10-05)
+
+- `index.html`: el nombre, la línea de arriba y el title del chip ya no llevan `data-i18n` (I18N.apply() guardaba como castellano el nombre de un club y lo reponía); `I18N.onChange` ahora llama a `CLUB_SELECTOR.refresh()`, que faltaba. Verificado en el preview: Bayern Munich → 1. FC Köln, ES → EN → ES, el chip sigue en 1. FC Köln y solo se traduce "Estás viendo". Regla en `Admin/PANTALLA.md`. ASSET_V 424 → 425, audit 0 P0/P1.
+
 ## Versión 529 — To-do 142 cerrado: proceso viejo retirado de pipeline.mjs (2026-10-05)
 
 - (a) primer año por la cola y (b) perímetro heredado: ya funcionaban así (`verificar.mjs` caso `primer-anio` salvo que un vecino confirme; `cargar.mjs` Versión 412). Fuera de la lista.
