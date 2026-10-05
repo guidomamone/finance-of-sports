@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finanzas multi-año — mockup</title>
+<style>
+:root{--azul:#0a2b5c;--azul-dark:#071d3f;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--green:#1b7a3d;--red:#b5372b;--soft:#eef2f8;--budget:#8a6d00;--budgetbg:#fdf8e7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+.top{background:var(--azul);color:#fff;display:flex;align-items:center;gap:20px;padding:10px 24px;position:relative}
+.top b{font-size:15px}
+.top nav{display:flex;gap:4px;margin-left:auto}
+.top nav span{padding:5px 9px;border-radius:6px;font-size:13px;opacity:.85}
+.top nav span.on{background:var(--oro);color:var(--azul);opacity:1;font-weight:600}
+.chip{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 6px 4px 8px;position:relative}
+.chip small{display:block;font-size:9px;letter-spacing:.06em;opacity:.7}
+.chip strong{font-size:13px}
+.chip button{background:var(--oro);border:0;border-radius:6px;font-weight:600;font-size:12px;padding:4px 8px;color:var(--azul);cursor:pointer}
+.menu{position:absolute;top:110%;right:0;background:#fff;color:var(--text);border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.15);padding:6px;min-width:190px;z-index:20}
+.menu div{padding:7px 10px;border-radius:6px;cursor:pointer}.menu div:hover{background:var(--soft)}
+.menu small{color:var(--muted);opacity:1;letter-spacing:0;font-size:11px;padding:4px 10px}
+.cur{display:flex;border:1px solid rgba(255,255,255,.4);border-radius:7px;overflow:hidden;font-size:12px}
+.cur span{padding:4px 9px}.cur span.on{background:#fff;color:var(--azul);font-weight:600}
+main{max-width:1120px;margin:0 auto;padding:22px 24px 80px}
+.pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#d0332b;color:#fff;font-size:11px;font-weight:700;vertical-align:middle;margin-left:6px;flex:none}
+body.noann .pin{display:none}
+h1{font-size:28px;margin:0;display:flex;align-items:center;gap:6px}
+.sub{color:var(--muted);margin:2px 0 16px}
+/* toolbar */
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 12px;border-bottom:1px solid var(--border);margin-bottom:16px}
+.barrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.years{display:flex;gap:6px;flex-wrap:wrap}
+.yc{position:relative;border:1px solid var(--border);background:#fff;border-radius:8px;padding:5px 8px 5px 24px;cursor:pointer;text-align:left;min-width:72px;font:inherit;line-height:1.15}
+.yc b{display:block;font-size:13px;font-variant-numeric:tabular-nums}
+.yc span{display:block;font-size:10px;color:var(--muted);white-space:nowrap}
+.yc::before{content:"";position:absolute;left:7px;top:50%;margin-top:-6px;width:12px;height:12px;border:1.5px solid #b9b9b4;border-radius:3px;background:#fff}
+.yc.on{border-color:var(--azul);background:var(--soft)}
+.yc.on::before{background:var(--azul);border-color:var(--azul);box-shadow:inset 0 0 0 2px #fff}
+.yc.on b{color:var(--azul)}
+.yc.p{border-style:dashed}
+.yc.p span{color:var(--budget)}
+.yc.x{cursor:not-allowed;opacity:.5;background:repeating-linear-gradient(135deg,#fff 0 6px,#f3f3f1 6px 12px)}
+.yc.x::before{display:none}.yc.x{padding-left:8px}
+.presets{display:flex;gap:6px}
+.presets button,.seg button,.sw{border:1px solid var(--border);background:#fff;border-radius:6px;padding:5px 9px;font-size:12px;cursor:pointer;font:inherit;font-size:12px}
+.presets button.on{border-color:var(--azul);color:var(--azul);font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:7px;overflow:hidden}
+.seg button{border:0;border-radius:0}.seg button.on{background:var(--azul);color:#fff}
+.hint{font-size:12px;color:var(--muted)}
+.gestwrap{display:flex;gap:6px;align-items:center;margin-left:14px}
+.gestwrap:empty{display:none}
+.gb{border:1px solid #cfd8e6;background:#fff;border-radius:16px;padding:4px 11px;font:inherit;font-size:12px;cursor:pointer;color:var(--azul)}
+.gb small{color:var(--muted);margin-left:4px}
+.gb.on{background:var(--azul);color:#fff;border-color:var(--azul)}.gb.on small{color:#cfd8e6}
+tr.gest th{font-size:11px;text-align:center;color:var(--azul);font-weight:700;border-bottom:0;padding:6px 4px 0}
+tr.gest th span{display:block;border-bottom:2px solid var(--azul);padding-bottom:3px}
+tr.gest th.g1 span{border-color:#8fb0dd;color:#3f6fb5}
+.more{margin-top:8px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.more:hover{text-decoration:underline}
+.empty{background:#fff;border:1px dashed #c9c9c4;border-radius:10px;padding:40px 20px;text-align:center;color:var(--muted);margin-bottom:16px}
+.empty b{color:var(--text);font-size:16px}
+.empty a{color:var(--azul)}
+/* kpis */
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:18px}
+.kpi{background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.kpi.p{border-style:dashed;border-color:#d9c27a;background:var(--budgetbg)}
+.kpi .k{font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.kpi .v{font-size:21px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:end;gap:6px;margin-top:4px}
+.tagp{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--budget);background:var(--budgetbg);border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;text-transform:uppercase;vertical-align:1px}
+.pos{color:var(--green)}.neg{color:var(--red)}
+section.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+section.card h2{font-size:18px;margin:0 0 2px;display:flex;align-items:center;gap:6px}
+.desc{color:var(--muted);margin:0 0 12px;font-size:13px}
+.head-row{display:flex;justify-content:space-between;align-items:start;gap:12px;flex-wrap:wrap}
+.ctrls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sw.on{border-color:var(--budget);color:var(--budget);background:var(--budgetbg);font-weight:600}
+/* table */
+.tw{overflow-x:auto;border-top:1px solid var(--border)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid #f0f0ee}
+th{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.03em;vertical-align:bottom}
+th small{display:block;font-weight:500;font-size:10px}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff;min-width:200px;z-index:1}
+td.bud,th.bud{background:var(--budgetbg);color:var(--budget);font-style:italic}
+th.bud small{color:var(--budget)}
+td.dev{font-size:12px}
+tr.sec td{font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;background:#fafaf8}
+tr.sec td:first-child{background:#fafaf8}
+tr.tot td{font-weight:700;border-top:1px solid var(--border)}
+tr.row{cursor:pointer}
+tr.row:hover td{background:#f6f8fc}
+tr.row td:first-child::before{content:"▸ ";color:var(--muted)}
+tr.row.open td:first-child::before{content:"▾ ";}
+tr.row.open td{background:#f1f5fb}
+tr.chartrow td{background:#f8fafd;padding:12px 16px 16px}
+td.spark,th.spark{text-align:center}
+th.gap,td.gap{padding:0 2px;color:#bbb;font-size:11px;text-align:center;min-width:14px}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+.chart{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:4px 0 0}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.ol{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:center}
+.ol .big{font-size:34px;font-weight:800;color:var(--azul)}
+.ol select{font:inherit;padding:5px 8px;border:1px solid var(--border);border-radius:6px}
+.btn{display:inline-block;background:var(--azul);color:#fff;border-radius:7px;padding:7px 12px;font-weight:600;font-size:13px;text-decoration:none}
+details{border-top:1px solid var(--border);padding:8px 0}
+summary{cursor:pointer;font-weight:600}
+.doc{margin:6px 0 0 14px;font-size:13px}
+.ann{background:#fff8e6;border:1px solid #f0d58a;border-radius:10px;padding:16px 20px;margin:26px 0 0}
+.ann h3{margin:0 0 8px;font-size:15px}
+.ann ol{margin:0;padding-left:20px}.ann li{margin:6px 0}
+.ann em{color:var(--muted);font-style:normal}
+.toggle-ann{position:fixed;right:16px;bottom:16px;background:#d0332b;color:#fff;border:0;border-radius:20px;padding:8px 14px;font-weight:600;cursor:pointer;z-index:9}
+@media (max-width:760px){
+ .top{flex-wrap:wrap;padding:8px 16px}.top nav{display:none}
+ main{padding:16px 16px 80px}
+ .kpis{grid-template-columns:repeat(2,1fr)}
+ .ol{grid-template-columns:1fr}
+ th:first-child,td:first-child{min-width:140px}
+ .bar{position:static}
+ .years{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px}
+ .yc{flex:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <b>El deporte en Números</b>
+  <nav><span>Inicio</span><span>Comparar</span><span>Ligas</span><span class="on">Finanzas</span><span>Fuentes</span><span>Mi Cuenta</span></nav>
+  <div class="cur" id="cur"></div>
+  <div class="chip"><div><small>ESTÁS VIENDO</small><strong id="chipName"></strong></div><button id="chipBtn">Cambiar</button>
+    <div class="menu" id="menu" hidden><small>Solo en el mockup: los dos clubes de ejemplo</small><div data-c="juve">Juventus · 23 balances</div><div data-c="racing">Racing · balances y presupuestos</div></div>
+  </div>
+  <span class="pin">1</span>
+</header>
+
+<main>
+  <h1><span id="clubName"></span> <span class="pin">2</span></h1>
+  <p class="sub" id="clubSub"></p>
+
+  <div class="bar">
+    <div class="barrow">
+      <span class="lbl">Ejercicios</span>
+      <div class="presets">
+        <button data-p="5">Últimos 5</button>
+        <button data-p="all">Todos</button>
+        <button data-p="1">Solo el último</button>
+      </div>
+      <span id="gestWrap" class="gestwrap"></span>
+      <span class="lbl" style="margin-left:14px">Formato</span>
+      <div class="seg"><button>Del club</button><button class="on">Simplificado</button></div>
+      <span class="pin">3</span>
+    </div>
+    <div class="years" id="years"></div>
+    <button class="more" id="more" hidden></button>
+    <div class="hint" id="hint" style="margin-top:6px"></div>
+  </div>
+
+  <div class="empty" id="empty" hidden><b>No hay ningún ejercicio elegido.</b><br>Tocá los años que quieras ver, o <a href="#" id="emptyL5">volvé a los últimos 5</a>.</div>
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card">
+    <div class="head-row">
+      <div><h2>Ingresos, gastos y resultado <span class="pin">4</span></h2>
+      <p class="desc" id="trendDesc"></p></div>
+      <div class="seg" id="chartMode"><button class="on" data-m="tot">Totales</button><button data-m="mix">De qué vive el club</button></div>
+    </div>
+    <svg class="chart" id="trend" viewBox="0 0 1060 260"></svg>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section class="card">
+    <div class="head-row">
+      <div><h2>Estado de resultados <span class="pin">5</span></h2>
+      <p class="desc">Cuánta plata entró y salió, rubro por rubro. Tocá un rubro para ver su evolución.</p></div>
+      <div class="ctrls">
+        <button class="sw" id="budBtn" hidden>Presupuesto al lado del balance <span class="pin">9</span></button>
+        <div class="seg" id="unit"><button class="on" data-u="abs" id="unitAbs"></button><button data-u="pct">% del total</button></div>
+      </div>
+    </div>
+    <div class="tw"><table id="pl"></table></div>
+    <p class="note" id="plNote"></p>
+  </section>
+
+  <section class="card">
+    <h2>Deuda</h2>
+    <p class="desc">Lo que el club le debe a terceros, la caja que tiene y la diferencia. Sale solo de balances: un presupuesto no la informa.</p>
+    <div class="tw"><table id="debt"></table></div>
+  </section>
+
+  <section class="card">
+    <div class="ol">
+      <div>
+        <h2><span id="olName"></span> en otra liga <span class="pin">6</span></h2>
+        <p class="desc" style="margin-bottom:8px">Ponemos sus ingresos de <b id="olYear"></b> en el ranking de otra liga, mismo ejercicio. No es una predicción deportiva: es cuánta plata maneja comparado con ellos.</p>
+        <label>Si jugara en <select><option>Premier League</option><option>LaLiga</option><option>Bundesliga</option><option>Liga Profesional (ARG)</option></select></label>
+      </div>
+      <div style="text-align:center">
+        <div class="big">9.º <span style="font-size:16px;color:var(--muted);font-weight:500">de 20</span></div>
+        <div style="color:var(--muted);font-size:12px;margin-bottom:10px">en ingresos · <i>número de ejemplo</i></div>
+        <a class="btn" href="#">Ver el ranking completo →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Fuentes <span class="pin">7</span></h2>
+    <p class="desc">De dónde sale cada número. Un renglón por ejercicio elegido.</p>
+    <div id="src"></div>
+  </section>
+
+  <div class="ann" id="ann">
+    <h3>Por qué cada cambio (los pines rojos)</h3>
+    <ol>
+      <li><b>El club se elige en un solo lugar: el chip del header.</b> Sale el card "Cambiar de club" de adentro de la página: dos controles para la misma acción hacen pensar si hacen cosas distintas. <em>Krug, Don't Make Me Think; Nielsen, heurística 8.</em></li>
+      <li><b>El título es el club, no la pestaña.</b> "Finanzas" ya está resaltada arriba. La bajada dice cuánta historia hay, que invita a mirar la evolución. <em>Krug: "¿dónde estoy?" de un vistazo.</em></li>
+      <li><b>Un card por ejercicio, cada uno se prende y se apaga solo.</b> Se pueden elegir años salteados (2015, 2019 y 2025, por ejemplo). Cada card dice qué documento hay: Balance, Presupuesto, Presupuesto y Balance (las mismas palabras del dropdown de hoy); los presupuestos tienen borde punteado. Los años sin publicar aparecen rayados, dicen "Sin publicar" y no se pueden elegir, para que el hueco se vea. Atajos: Últimos 5 (el default, cuenta solo años con balance), Todos (tocarlo de nuevo los saca a todos, y la página muestra un estado vacío que dice qué hacer), Solo el último. Con más de 5 ejercicios, la fila arranca corta: los 5 últimos balances más cualquier otro año elegido (lo elegido nunca queda escondido), y "Ver más" abre la historia completa. <em>Divulgación progresiva (NN/g); Hick: menos opciones a la vista, decisión más rápida.</em> <em>Norman: el estado visible de cada control; Shneiderman: filtrar, después detalle.</em></li>
+      <li><b>El gráfico de evolución va arriba y sigue a la selección.</b> Si hay años salteados, el tramo que los une va punteado: no se inventa lo que pasó en el medio. "De qué vive el club" reemplaza a la torta de un año. <em>Tufte; Few, Show Me the Numbers.</em></li>
+      <li><b>Una columna por ejercicio</b>, más Δ (primero vs. último elegido) y una sparkline por rubro. Tocar un rubro abre su gráfico ahí mismo (el to-do 147). Si hay un salto entre columnas, una columnita "…" lo marca. <em>Tufte: sparklines; Few: tabla para el valor, gráfico para la forma.</em></li>
+      <li><b>"Otra liga" es un card con la respuesta a la vista</b>, no un botón entre los filtros. Usa el último balance elegido (nunca un presupuesto). <em>Norman: signifiers.</em></li>
+      <li><b>Fuentes acompaña a la selección:</b> un renglón por ejercicio; si tiene presupuesto y balance, los dos documentos.</li>
+      <li><b>Gestión (Racing).</b> Si el club tiene gestiones cargadas y confirmadas, aparece una fila "Gestión" con un botón por presidente. Tocarlo elige todos los ejercicios de ese mandato (presupuestos incluidos: son sus promesas); tocarlo de nuevo los saca, igual que Todos. Aunque elijas años a mano, el gráfico pinta una franja por gestión y la tabla agrupa las columnas bajo el nombre del presidente: así se lee "esto pasó con Blanco, esto con Milito" sin elegir nada. Un club sin gestiones confirmadas (Juventus, hoy) no muestra nada. <em>Few: regiones de referencia en un gráfico de tiempo; Gestalt, región común para agrupar columnas.</em></li>
+      <li><b>Presupuesto y balance del mismo año (elegí Racing en el chip).</b> El número que manda es siempre el <b>balance</b>: es lo que pasó. El presupuesto es lo que el club dijo que iba a pasar. Por default la columna muestra el balance y el encabezado avisa "+ presupuesto". El botón "Presupuesto al lado del balance" abre esos años en dos columnas (presupuesto en amarillo y cursiva, balance normal) más el desvío: "prometieron 3.127, entró 2.436". En los gráficos el presupuesto es un punto hueco. Un año con <b>solo</b> presupuesto (19/20, 25/26, 26/27 de Racing) entra a la línea con punto hueco y tramo punteado, y si es el último elegido los KPIs lo dicen con el card punteado. Últimos 5 cuenta solo años con balance: los presupuestos futuros se suman a mano. <em>Few: codificar la diferencia de naturaleza del dato (real vs. proyectado) siempre igual en toda la página; convención financiera de la línea punteada para lo proyectado.</em></li>
+    </ol>
+  </div>
+</main>
+<button class="toggle-ann" onclick="document.body.classList.toggle('noann');const a=document.getElementById('ann');a.hidden=!a.hidden">Mostrar / ocultar notas</button>
+
+<script>
+// ---------- Datos ----------
+// Juventus: M EUR, computeYearGeneric (formato simplificado), datos reales 2002/03-2024/25.
+// Racing: nativo (M ARS o M USD) + fx del propio ejercicio, convertido a M USD acá. Datos reales del sitio.
+// Deuda y el puesto en "otra liga": de relleno.
+const JUV={2003:[22.6,87.4,54.6,49,57.5,131.7,199.8,2.2],2004:[17.6,95.2,53.8,6,48.8,116.5,171.9,-18.5],2005:[22.8,109.4,57.5,29.7,39.7,126.5,185.6,-3],2006:[16.6,139.3,55.3,5.9,45,131.2,217.6,-36.5],2007:[7.7,93,34.5,41.5,9.9,95,147.4,-0.9],2008:[14,124.2,41.2,17.1,7.2,112.7,175.8,-20.8],2009:[18.4,150.4,46.1,17.3,8.2,129.3,194.2,6.6],2010:[18.5,151.4,45.7,14.7,13,127,196.5,-11],2011:[11.6,88.7,43.3,18.2,10.3,126.9,203.7,-95.4],2012:[31.8,90.6,53.5,18.4,19.5,137.1,206.3,-48.7],2013:[38.1,163.5,52.6,11.4,18.3,149,227.1,-15.9],2014:[41,151,60.3,36.4,27.1,167.9,246.6,-6.7],
+2015:[51.4,194.7,53.8,23.5,26.6,178.8,263.9,2.3],2016:[43.7,194.9,83.5,46.4,30.1,197.7,300.8,4.1],2017:[57.8,232.8,93.9,151.1,27.4,235.3,402,42.6],2018:[56.4,200.2,114.7,102.4,31,233.3,384.1,-19.2],2019:[70.7,206.6,152.9,157.2,34.1,301.3,459,-39.9],2020:[49.2,166.4,161.3,172,24.5,259.3,415.2,-89.7],2021:[7.8,235.3,171.2,43.2,21.6,298.2,448.6,-209.5],2022:[32.3,170.5,167,40.8,29.5,310.8,466.3,-238.1],2023:[61.5,157.2,178.9,70.2,36,255.4,425.5,-123.3],2024:[57.7,99.7,160.5,34.2,38.4,239,397.9,-199.2],2025:[65.4,177.4,115.9,109.7,58.1,220.3,403.4,-57]};
+// Racing: [fx, st,tv,co,ps,ot, wages, gastos, resultado]  (fx null = ya en USD)
+const RAC_B={2009:[null,1.911,3.805,1.429,10.587,5.149,10.837,14.054,0.704],2010:[null,1.482,5.965,2.573,2.549,5.85,13.015,16.648,-2.439],2011:[null,2.14,5.699,2.985,4.844,9.809,15.133,19.21,0.063],
+2012:[4.726,12.015,30.611,16.33,64.297,61.539,76.731,98.004,17.024],2013:[5.872,7.763,32.511,22.911,63.589,61.917,113.286,137.526,11.227],2014:[8.307,8.963,42.022,23.905,136.157,91.586,116.159,155.785,100.937],2015:[9.2,59.209,56.648,40.505,83.417,190.535,175.583,256.772,102.545],2016:[14.83,91.639,52.803,43.794,175.031,248.701,230.695,333.973,193.973],2017:[17.21,111.633,90.439,63.643,206.088,333.031,338.568,465.448,134.161],2018:[36.65,124.813,90.532,88.125,970.845,515.504,625.747,874.134,616.521],2020:[73.98,191.871,290.569,240.14,509.332,1204.191,1585.028,1933.2,-277.06],2021:[95.52,579.451,294.387,281.073,855.871,1324.78,1806.724,2190.559,7.012],2024:[909,5841.3,3098.6,4265.7,27685,25477.1,34505.1,45851.5,-6127.6],2025:[1196,18773.6,6494.2,5134.9,13515.9,43480.9,46302.5,64694.6,-178.5]};
+const RAC_P={2014:[6,11.21,35.2,32.517,85.802,79.623,83.564,229.547,null],2016:[11.8,67.75,59,71.9,59.825,206.72,143.35,472.226,null],2018:[20,110.2,78,135,454.66,359.26,253.5,1125.591,null],2019:[40,88.4,137.154,100,602.95,687.523,627.7,1341.319,-140.626],2020:[70,156,208.8,320.778,1141.255,1300.786,1149.345,2977.502,null],2026:[1438,3325.2,7470.2,13712.6,34016.3,64772.8,42948.2,107849.9,-3563.2],2027:[1687.5,4456.4,7003,12914.7,40328.2,78416.2,45304.8,122753.3,1046.7]};
+function mk(a,fx){const d=fx?a.map(v=>v==null?null:v/fx):a;const o={st:d[0],tv:d[1],co:d[2],ps:d[3],ot:d[4],wa:d[5],ex:d[6]};o.rev=o.st+o.tv+o.co+o.ps+o.ot;o.oe=o.ex-o.wa;o.pat=d[7]==null?o.rev-o.ex:d[7];return o}
+const CLUBS={
+ juve:{name:'Juventus',sub:'Serie A · Italia · 23 balances auditados, 2002/03 a 2024/25',cur:'EUR',years:{}},
+ racing:{name:'Racing',sub:'Liga Profesional · Argentina · 14 balances y 7 presupuestos, 2008/09 a 2026/27',cur:'USD',years:{}}};
+for(const y in JUV)CLUBS.juve.years[y]={B:mk(JUV[y])};
+for(let y=2009;y<=2027;y++){const b=RAC_B[y],p=RAC_P[y];CLUBS.racing.years[y]={B:b?mk(b.slice(1),b[0]):null,P:p?mk(p.slice(1),p[0]):null}}
+for(const c of Object.values(CLUBS)){let i=0;for(const y in c.years){const e=c.years[y];if(e.B){e.B.gd=(c.cur==='EUR'?300:20)+i*(c.cur==='EUR'?30:3);e.B.ca=e.B.gd*.18;e.B.nd=e.B.gd-e.B.ca;i++}}}
+
+// Gestiones REALES de Racing (gestionesByClub.racing, data/racing-data.js). Juventus no tiene cargadas: no se ve la fila.
+const GEST={racing:[{n:'Blanco',d:'2013–2024',first:2014,last:2024},{n:'Milito',d:'2024–hoy',first:2025,last:2027}],juve:[]};
+const gestOf=y=>(GEST[club]||[]).findIndex(g=>y>=g.first&&y<=g.last);
+const gYears=g=>YS().filter(y=>y>=g.first&&y<=g.last&&kind(y)!=='X');
+// ---------- Estado ----------
+let expanded=false,club='juve',S=new Set(),unit='abs',mode='tot',open=new Set(['tv']),showBud=false;
+const C=()=>CLUBS[club];
+const YS=()=>Object.keys(C().years).map(Number).sort((a,b)=>a-b);
+const E=y=>C().years[y];
+const kind=y=>{const e=E(y);return e.B&&e.P?'PB':e.B?'B':e.P?'P':'X'};
+const KLAB={B:'Balance',P:'Presupuesto',PB:'Presupuesto y Balance',X:'Sin publicar'};
+const V=y=>E(y).B||E(y).P;           // el número que manda: balance si hay
+const isP=y=>!E(y).B;                // el valor mostrado es un presupuesto
+const sel=()=>[...S].sort((a,b)=>a-b);
+const lab=y=>String(y-1).slice(2)+'/'+String(y).slice(2);
+const full=y=>(y-1)+'/'+String(y).slice(2);
+const U=()=>'M '+C().cur;
+const f=v=>v==null?'—':Math.abs(v)>=100?v.toFixed(0):v.toFixed(1);
+const REV=[['tv','Televisión'],['co','Comercial / Sponsors'],['st','Estadio y socios'],['ps','Venta de jugadores'],['ot','Otros ingresos']];
+const EXP=[['wa','Salarios y primas'],['oe','Otros gastos']];
+const COL={tv:'#0a2b5c',co:'#3f6fb5',st:'#8fb0dd',ps:'#f2b705',ot:'#c9c9c4'};
+function last5(){return YS().filter(y=>E(y).B).slice(-5)}
+function setClub(c){club=c;expanded=false;S=new Set(last5());open=new Set(['tv']);showBud=false;render()}
+
+// ---------- Helpers ----------
+function spark(ys,get,w=90,h=22,color='#0a2b5c'){
+  if(ys.length<2)return'';const vals=ys.map(get),mn=Math.min(...vals),mx=Math.max(...vals),r=mx-mn||1;
+  const pts=vals.map((v,i)=>[i*(w-6)/(ys.length-1)+3,h-3-(v-mn)/r*(h-6)]);
+  let s='';for(let i=1;i<pts.length;i++){const dash=(ys[i]-ys[i-1]>1)||isP(ys[i])||isP(ys[i-1]);s+=`<line x1="${pts[i-1][0]}" y1="${pts[i-1][1]}" x2="${pts[i][0]}" y2="${pts[i][1]}" stroke="${color}" stroke-width="1.6" ${dash?'stroke-dasharray="2 2"':''}/>`}
+  const l=pts[pts.length-1];return `<svg width="${w}" height="${h}">${s}<circle cx="${l[0]}" cy="${l[1]}" r="2.6" fill="${isP(ys[ys.length-1])?'#fff':color}" stroke="${color}" stroke-width="1.4"/></svg>`}
+function delta(v0,v1,inv){if(!v0)return'—';const d=(v1-v0)/Math.abs(v0)*100;const good=inv?d<0:d>0;return `<span class="${good?'pos':'neg'}">${d>0?'+':''}${d.toFixed(0)}%</span>`}
+function niceStep(r){const p=Math.pow(10,Math.floor(Math.log10(r||1)));return [1,2,2.5,5,10].map(m=>m*p).find(s=>s>=r)||p*10}
+
+// ---------- Cards de ejercicios ----------
+function renderYears(){
+  const el=document.getElementById('years');el.innerHTML='';
+  const all=YS(),l5=last5(),many=all.length>5;
+  const shown=(!many||expanded)?all:all.filter(y=>l5.includes(y)||S.has(y));
+  shown.forEach(y=>{const k=kind(y),b=document.createElement('button');
+    b.className='yc'+(S.has(y)?' on':'')+(k==='P'?' p':'')+(k==='X'?' x':'');
+    b.innerHTML=`<b>${lab(y)}</b><span>${KLAB[k]}</span>`;
+    b.title=k==='X'?'El club todavía no publicó este ejercicio':(S.has(y)?'Sacar ':'Sumar ')+full(y);
+    if(k!=='X')b.onclick=()=>{S.has(y)?S.delete(y):S.add(y);render()};
+    el.appendChild(b)});
+  const mb=document.getElementById('more');mb.hidden=!many;
+  const hiddenN=all.length-shown.length;
+  mb.textContent=expanded?'Ver menos':`Ver más · ${hiddenN} ejercicios más, desde ${full(all[0])}`;
+  const gw=document.getElementById('gestWrap');const G=GEST[club]||[];
+  gw.innerHTML=G.length?'<span class="lbl">Gestión</span>'+G.map((g,i)=>{const ys=gYears(g),on=ys.length&&S.size===ys.length&&ys.every(y=>S.has(y));return `<button class="gb${on?' on':''}" data-g="${i}">${g.n}<small>${g.d}</small></button>`}).join('')+'<span class="pin">8</span>':'';
+  gw.querySelectorAll('.gb').forEach(b=>b.onclick=()=>{const ys=gYears(G[+b.dataset.g]);const on=b.classList.contains('on');S=on?new Set():new Set(ys);expanded=!on&&ys.some(y=>!last5().includes(y));render()});
+  const n=S.size,s=sel();
+  document.querySelectorAll('.presets button').forEach(p=>p.classList.toggle('on',
+    (p.dataset.p==='5'&&n===l5.length&&l5.every(y=>S.has(y)))||(p.dataset.p==='all'&&n===YS().filter(y=>kind(y)!=='X').length)||(p.dataset.p==='1'&&n===1&&S.has(l5[l5.length-1]))));
+  const skipped=s.some((y,i)=>i&&y-s[i-1]>1);
+  document.getElementById('hint').textContent=n===0?'Ningún ejercicio elegido.':n===1?`Viendo ${full(s[0])}. Tocá otros años para sumarlos.`:`Viendo ${n} ejercicios${skipped?', con saltos':''}. Tocá un año para sumarlo o sacarlo.`;
+  requestAnimationFrame(()=>{el.scrollLeft=el.scrollWidth});
+}
+document.querySelectorAll('.presets button').forEach(p=>p.onclick=()=>{const all=YS().filter(y=>kind(y)!=='X'),l5=last5();
+  if(p.dataset.p==='all'){const allOn=all.every(y=>S.has(y));S=allOn?new Set():new Set(all);expanded=!allOn;}  // Todos por segunda vez = ninguno
+  else S=new Set(p.dataset.p==='5'?l5:[l5[l5.length-1]]);render()});
+document.getElementById('more').onclick=()=>{expanded=!expanded;renderYears()};
+document.getElementById('emptyL5').onclick=e=>{e.preventDefault();S=new Set(last5());render()};
+
+// ---------- KPIs ----------
+function renderKpis(){
+  const s=sel(),b=s[s.length-1],a=s[0],multi=s.length>1,ys=YS(),prev=ys.filter(y=>y<b&&E(y).B).pop(),P=isP(b);
+  const k=[['Ingresos','rev'],['Gastos','ex',1],['Salarios / ingresos','wr',1],['Resultado neto','pat'],['Deuda neta','nd',1]];
+  const val=(y,key)=>key==='wr'?V(y).wa/V(y).rev*100:V(y)[key];
+  document.getElementById('kpis').innerHTML=k.map(([t,key,inv])=>{
+    if(key==='nd'&&P)return `<div class="kpi p"><div class="k">${t} · ${lab(b)}</div><div class="v" style="color:var(--muted)">—</div><div class="d"><span>Un presupuesto no informa deuda</span></div></div>`;
+    const v=val(b,key),base=multi?(key==='nd'&&!E(a).B?null:val(a,key)):(prev?val(prev,key):null);
+    const txt=key==='wr'?v.toFixed(0)+'%':(key==='pat'&&v>0?'+':'')+f(v)+' M';
+    const cmp=base==null?'':(multi?`vs. ${lab(a)} `:`vs. ${lab(prev)} `)+(key==='wr'?`<span class="${(v-base)<0?'pos':'neg'}">${(v-base>0?'+':'')+(v-base).toFixed(0)} pp</span>`:delta(base,v,inv));
+    const ks=key==='nd'?s.filter(y=>E(y).B):s;
+    return `<div class="kpi${P?' p':''}"><div class="k">${t} · ${lab(b)}${P?' <span class="tagp">Presupuesto</span>':''}</div><div class="v ${key==='pat'?(v<0?'neg':'pos'):''}">${txt}</div><div class="d"><span>${cmp}</span>${multi?spark(ks,y=>val(y,key),60,20,key==='pat'?'#b5372b':'#0a2b5c'):''}</div></div>`}).join('');
+}
+
+// ---------- Gráficos ----------
+function lineChart(svg,series,ys,opts={}){
+  const W=1060,H=opts.h||260,L=56,Rr=20,T=16,B=28;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const all=series.flatMap(s=>s.v.concat(s.p||[]).filter(v=>v!=null));let mn=Math.min(0,...all),mx=Math.max(...all)*1.1;
+  const x=i=>ys.length===1?L+(W-L-Rr)/2:L+i*(W-L-Rr)/(ys.length-1),yy=v=>T+(mx-v)/(mx-mn)*(H-T-B);
+  let g='';const step=niceStep((mx-mn)/4);for(let t=Math.ceil(mn/step)*step;t<=mx;t+=step){g+=`<line x1="${L}" x2="${W-Rr}" y1="${yy(t)}" y2="${yy(t)}" stroke="${Math.abs(t)<1e-9?'#999':'#eee'}"/><text x="${L-8}" y="${yy(t)+4}" font-size="11" fill="#6b6b6b" text-anchor="end">${+t.toFixed(2)}</text>`}
+  ys.forEach((y,i)=>{g+=`<text x="${x(i)}" y="${H-8}" font-size="11" fill="${isP(y)?'#8a6d00':'#6b6b6b'}" font-style="${isP(y)?'italic':'normal'}" text-anchor="middle">${lab(y)}</text>`;if(i&&y-ys[i-1]>1)g+=`<text x="${(x(i)+x(i-1))/2}" y="${H-8}" font-size="11" fill="#bbb" text-anchor="middle">…</text>`});
+  series.forEach(s=>{
+    if(s.bar){const bw=Math.min(28,(W-L-Rr)/ys.length*.4);s.v.forEach((v,i)=>g+=`<rect x="${x(i)-bw/2}" y="${Math.min(yy(v),yy(0))}" width="${bw}" height="${Math.abs(yy(v)-yy(0))}" fill="${v<0?'#e7b3ad':'#b7dcc4'}" ${isP(ys[i])?'fill-opacity=".45" stroke="#b5372b" stroke-dasharray="3 2"':''}/>`);return}
+    for(let i=1;i<s.v.length;i++){const dash=ys[i]-ys[i-1]>1||isP(ys[i])||isP(ys[i-1]);g+=`<line x1="${x(i-1)}" y1="${yy(s.v[i-1])}" x2="${x(i)}" y2="${yy(s.v[i])}" stroke="${s.c}" stroke-width="2.4" ${dash?'stroke-dasharray="5 4"':''}/>`}
+    s.v.forEach((v,i)=>g+=`<circle cx="${x(i)}" cy="${yy(v)}" r="3.6" fill="${isP(ys[i])?'#fff':s.c}" stroke="${s.c}" stroke-width="1.8"><title>${s.n} ${lab(ys[i])}${isP(ys[i])?' (presupuesto)':''}: ${f(v)} ${U()}</title></circle>`);
+    if(s.p)s.p.forEach((pv,i)=>{if(pv==null)return;g+=`<line x1="${x(i)+7}" x2="${x(i)+7}" y1="${yy(pv)}" y2="${yy(s.v[i])}" stroke="${s.c}" stroke-opacity=".35"/><circle cx="${x(i)+7}" cy="${yy(pv)}" r="3.4" fill="#fff" stroke="${s.c}" stroke-width="1.6"><title>${s.n} ${lab(ys[i])} presupuesto: ${f(pv)} ${U()}</title></circle>`});
+    const l=s.v.length-1;g+=`<text x="${x(l)-6}" y="${yy(s.v[l])-10}" font-size="11" font-weight="600" fill="${s.c}" text-anchor="end">${f(s.v[l])}</text>`});
+  if(opts.bands){const G=GEST[club]||[];let bands='';G.forEach((gg,gi)=>{const idx=ys.map((y,i)=>[y,i]).filter(([y])=>gestOf(y)===gi).map(([,i])=>i);if(!idx.length)return;const step=ys.length>1?(W-L-Rr)/(ys.length-1):200;const x0=Math.max(L,x(idx[0])-step/2),x1=Math.min(W-Rr,x(idx[idx.length-1])+step/2);
+    bands+=`<rect x="${x0}" y="${T-12}" width="${x1-x0}" height="${H-B-T+12}" fill="${gi%2?'#f3f7fc':'#e9eff8'}"/><text x="${(x0+x1)/2}" y="${T-1}" font-size="11" font-weight="700" fill="#0a2b5c" text-anchor="middle">${gg.n}</text>`});g=bands+g}
+  svg.innerHTML=g;
+}
+function stackChart(svg,ys){
+  const W=1060,H=260,L=56,Rr=16,T=16,B=28;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const mx=Math.max(...ys.map(y=>V(y).rev))*1.06,bw=Math.min(60,(W-L-Rr)/ys.length*.62);
+  const x=i=>L+(i+.5)*(W-L-Rr)/ys.length,yy=v=>T+(mx-v)/mx*(H-T-B);let g='';
+  ys.forEach((y,i)=>{let acc=0;REV.forEach(([k,n])=>{const v=V(y)[k];g+=`<rect x="${x(i)-bw/2}" y="${yy(acc+v)}" width="${bw}" height="${yy(acc)-yy(acc+v)}" fill="${COL[k]}" ${isP(y)?'fill-opacity=".4" stroke="'+COL[k]+'" stroke-dasharray="3 2"':''}><title>${n} ${lab(y)}: ${f(v)}</title></rect>`;acc+=v});
+    g+=`<text x="${x(i)}" y="${H-8}" font-size="11" fill="${isP(y)?'#8a6d00':'#6b6b6b'}" font-style="${isP(y)?'italic':'normal'}" text-anchor="middle">${lab(y)}</text><text x="${x(i)}" y="${yy(acc)-5}" font-size="10" fill="#6b6b6b" text-anchor="middle">${f(acc)}</text>`});
+  svg.innerHTML=g;
+}
+function renderTrend(){
+  const s=sel(),svg=document.getElementById('trend'),lg=document.getElementById('legend'),a=s[0],b=s[s.length-1];
+  const anyP=s.some(isP),anyPB=s.some(y=>kind(y)==='PB');
+  if(mode==='tot'){
+    const pb=k=>s.map(y=>showBud&&kind(y)==='PB'?E(y).P[k]:null);
+    lineChart(svg,[{bar:1,v:s.map(y=>V(y).pat)},{n:'Ingresos',c:'#0a2b5c',v:s.map(y=>V(y).rev),p:pb('rev')},{n:'Gastos',c:'#b5372b',v:s.map(y=>V(y).ex),p:pb('ex')}],s,{bands:1,h:280});
+    lg.innerHTML='<span><i style="background:#0a2b5c"></i>Ingresos</span><span><i style="background:#b5372b"></i>Gastos</span><span><i style="background:#b7dcc4"></i><i style="background:#e7b3ad;margin-left:-3px"></i>Resultado neto</span>'+((anyP||(anyPB&&showBud))?'<span>○ hueco y tramo punteado = presupuesto</span>':'')+(s.some((y,i)=>i&&y-s[i-1]>1)?'<span>… = años sin elegir en el medio</span>':'');
+  }else{stackChart(svg,s);lg.innerHTML=REV.map(([k,n])=>`<span><i style="background:${COL[k]}"></i>${n}</span>`).join('')+(anyP?'<span>barra clara punteada = presupuesto</span>':'')}
+  document.getElementById('trendDesc').textContent=s.length===1?`Con un solo ejercicio elegido el gráfico es una foto; sumá años para ver la evolución.`:`En ${U()}. De ${full(a)} a ${full(b)} los ingresos ${V(b).rev>V(a).rev?'subieron':'bajaron'} ${Math.abs((V(b).rev/V(a).rev-1)*100).toFixed(0)}%; el resultado fue negativo en ${s.filter(y=>V(y).pat<0).length} de ${s.length} ejercicios.`;
+}
+
+// ---------- Tabla ----------
+function renderPL(){
+  const s=sel(),multi=s.length>1,pct=unit==='pct',a=s[0],b=s[s.length-1];
+  const anyPB=s.some(y=>kind(y)==='PB');
+  const bb=document.getElementById('budBtn');bb.hidden=!anyPB;bb.classList.toggle('on',showBud);
+  // columnas: por cada año, 1 (o 3 si PB y showBud: presupuesto, balance, desvío); "…" si hay salto
+  const cols=[];s.forEach((y,i)=>{if(i&&y-s[i-1]>1)cols.push({gap:1});
+    if(kind(y)==='PB'&&showBud){cols.push({y,src:'P'});cols.push({y,src:'B'});cols.push({y,dev:1})}else cols.push({y,src:isP(y)?'P':'B'})});
+  const hd=c=>{if(c.gap)return'<th class="gap">…</th>';const k=kind(c.y);
+    if(c.dev)return`<th>${lab(c.y)}<small>desvío</small></th>`;
+    if(c.src==='P')return`<th class="bud">${lab(c.y)}<small>Presupuesto</small></th>`;
+    return`<th>${lab(c.y)}<small>${k==='PB'?(showBud?'Balance':'Balance + presup.'):'Balance'}</small></th>`};
+  const tail=multi?`<th>Δ ${lab(a)}→${lab(b)}</th><th class="spark">Tendencia</th>`:'<th>% del total</th>';
+  const N=cols.length+2;
+  const cell=(c,k,tk,neg)=>{if(c.gap)return'<td class="gap"></td>';const e=E(c.y);
+    if(c.dev){const p=e.P[k],r=e.B[k];if(!p)return'<td class="dev">—</td>';if(k==='pat'){const d=r-p;return`<td class="dev ${d>0?'pos':'neg'}">${d>0?'+':''}${f(d)}</td>`}const d=(r-p)/Math.abs(p)*100;const good=neg?d<0:d>0;return`<td class="dev ${good?'pos':'neg'}">${d>0?'+':''}${d.toFixed(0)}%</td>`}
+    const o=e[c.src],v=o[k];const t=pct?(v/o[tk]*100).toFixed(0)+'%':f(v);return`<td class="${c.src==='P'?'bud':''}">${neg&&!pct?'('+t+')':t}</td>`};
+  const row=(k,n,tk,neg)=>{const isOpen=open.has(k)&&multi;
+    let h=`<tr class="row${isOpen?' open':''}" data-k="${k}"><td>${n}</td>${cols.map(c=>cell(c,k,tk,neg)).join('')}`;
+    h+=multi?`<td>${delta(V(a)[k],V(b)[k],neg)}</td><td class="spark">${spark(s,y=>V(y)[k],90,22,neg?'#b5372b':'#0a2b5c')}</td></tr>`:`<td>${(V(b)[k]/V(b)[tk]*100).toFixed(0)}%</td></tr>`;
+    if(isOpen)h+=`<tr class="chartrow"><td colspan="${N}"><b>${n}</b> <span style="color:var(--muted)">· ${U()} · ${s.length} ejercicios</span><svg class="chart" id="c_${k}" viewBox="0 0 1060 170"></svg></td></tr>`;
+    return h};
+  const tot=(n,k,neg,tk)=>`<tr class="tot"><td>${n}</td>${cols.map(c=>c.gap?'<td class="gap"></td>':c.dev?cell(c,k,tk||k,neg):`<td class="${c.src==='P'?'bud':''}">${pct?(tk?(E(c.y)[c.src][k]/E(c.y)[c.src][tk]*100).toFixed(0)+'%':'100%'):(neg?'('+f(E(c.y)[c.src][k])+')':f(E(c.y)[c.src][k]))}</td>`).join('')}${multi?`<td>${k==='pat'?'':delta(V(a)[k],V(b)[k],neg)}</td><td class="spark">${spark(s,y=>V(y)[k],90,22,neg||k==='pat'?'#b5372b':'#0a2b5c')}</td>`:'<td>—</td>'}</tr>`;
+  let gr='';if((GEST[club]||[]).length){const grp=[];cols.forEach((c,ci)=>{let gi=c.gap?-2:gestOf(c.y);if(c.gap){const nx=cols[ci+1],l=grp[grp.length-1];if(nx&&l&&gestOf(nx.y)===l.gi)gi=l.gi}const l=grp[grp.length-1];if(l&&l.gi===gi&&gi!==-2)l.n++;else grp.push({gi,n:1})});
+    if(grp.some(g=>g.gi>=0))gr=`<tr class="gest"><th></th>${grp.map(g=>`<th colspan="${g.n}" class="g${g.gi%2}">${g.gi>=0?`<span>${GEST[club][g.gi].n}</span>`:''}</th>`).join('')}<th colspan="${multi?2:1}"></th></tr>`}
+  let h=gr+`<tr><th>Rubro</th>${cols.map(hd).join('')}${tail}</tr>`+
+    `<tr class="sec"><td colspan="${N}">Ingresos</td></tr>`+REV.map(([k,n])=>row(k,n,'rev')).join('')+tot('Total ingresos','rev')+
+    `<tr class="sec"><td colspan="${N}">Gastos</td></tr>`+EXP.map(([k,n])=>row(k,n,'ex',1)).join('')+tot('Total gastos','ex',1)+
+    tot('Resultado neto','pat',0,'rev');
+  const t=document.getElementById('pl');t.innerHTML=h;
+  t.querySelectorAll('tr.row').forEach(r=>r.onclick=()=>{const k=r.dataset.k;open.has(k)?open.delete(k):open.add(k);renderPL()});
+  open.forEach(k=>{const el=document.getElementById('c_'+k);if(el){const neg=EXP.some(e=>e[0]===k);lineChart(el,[{n:REV.concat(EXP).find(e=>e[0]===k)[1],c:neg?'#b5372b':'#0a2b5c',v:s.map(y=>V(y)[k]),p:s.map(y=>showBud&&kind(y)==='PB'?E(y).P[k]:null)}],s,{h:170})}});
+  document.getElementById('plNote').innerHTML=`Montos en ${U()} nominales.`+(club==='racing'?' Cada ejercicio convertido con su propio tipo de cambio (el del balance, o la premisa del presupuesto).':'')+(s.some(isP)?' Las columnas en amarillo y cursiva son <b>presupuestos</b>: lo que el club proyectó, no lo que pasó.':'');
+}
+document.getElementById('budBtn').onclick=()=>{showBud=!showBud;renderPL();renderTrend()};
+
+function renderDebt(){
+  const s=sel(),multi=s.length>1,a=s[0],b=s[s.length-1];
+  const rows=[['Deuda bruta','gd',1],['Caja','ca'],['Deuda neta','nd',1]];
+  const bal=s.filter(y=>E(y).B);
+  document.getElementById('debt').innerHTML=`<tr><th>Indicador</th>${s.map(y=>`<th class="${isP(y)?'bud':''}">${lab(y)}${isP(y)?'<small>Presupuesto</small>':''}</th>`).join('')}${multi?'<th>Δ</th><th class="spark">Tendencia</th>':''}</tr>`+
+   rows.map(([n,k,inv])=>`<tr${k==='nd'?' class="tot"':''}><td>${n}</td>${s.map(y=>E(y).B?`<td>${f(E(y).B[k])}</td>`:'<td class="bud">—</td>').join('')}${multi?`<td>${bal.length>1?delta(E(bal[0]).B[k],E(bal[bal.length-1]).B[k],inv):'—'}</td><td class="spark">${bal.length>1?spark(bal,y=>E(y).B[k]):''}</td>`:''}</tr>`).join('')+
+   `<tr><td colspan="${s.length+3}" class="note" style="text-align:left">Deuda: valores de relleno en el mockup.</td></tr>`;
+}
+function renderSrc(){
+  const s=sel(),lastB=s.filter(y=>E(y).B).pop();
+  document.getElementById('olYear').textContent=lastB?full(lastB):'—';document.getElementById('olName').textContent=C().name;
+  document.getElementById('src').innerHTML=s.slice().reverse().map((y,i)=>{const e=E(y);const docs=[];
+    if(e.B)docs.push(`<div class="doc">Balance auditado ${full(y)} · fuente primaria · <a href="#">ver documento →</a></div>`);
+    if(e.P)docs.push(`<div class="doc"><span class="tagp">Presupuesto</span> aprobado por asamblea para ${full(y)} · <a href="#">ver documento →</a></div>`);
+    return `<details ${i===0?'open':''}><summary>${full(y)} · ${KLAB[kind(y)]}</summary>${docs.join('')}</details>`}).join('')+`<p class="note"><a href="#">Ver todos los documentos de ${C().name} →</a></p>`;
+}
+document.querySelectorAll('#unit button').forEach(x=>x.onclick=()=>{unit=x.dataset.u;document.querySelectorAll('#unit button').forEach(z=>z.classList.toggle('on',z===x));renderPL()});
+document.querySelectorAll('#chartMode button').forEach(x=>x.onclick=()=>{mode=x.dataset.m;document.querySelectorAll('#chartMode button').forEach(z=>z.classList.toggle('on',z===x));renderTrend()});
+document.getElementById('chipBtn').onclick=e=>{e.stopPropagation();const m=document.getElementById('menu');m.hidden=!m.hidden};
+document.querySelectorAll('#menu div').forEach(d=>d.onclick=()=>{document.getElementById('menu').hidden=true;setClub(d.dataset.c)});
+document.addEventListener('click',()=>document.getElementById('menu').hidden=true);
+function render(){
+  document.getElementById('chipName').textContent=C().name;document.getElementById('clubName').textContent=C().name;document.getElementById('clubSub').textContent=C().sub;
+  document.getElementById('cur').innerHTML=`<span class="${C().cur==='USD'?'on':''}">USD</span><span class="${C().cur==='EUR'?'on':''}">EUR</span>`;
+  document.getElementById('unitAbs').textContent=U();
+  renderYears();
+  const none=S.size===0;document.getElementById('empty').hidden=!none;
+  document.querySelectorAll('#kpis, main section.card').forEach(e=>e.style.display=none?'none':'');
+  if(none)return;
+  renderKpis();renderTrend();renderPL();renderDebt();renderSrc()}
+setClub(location.hash==='#racing'?'racing':'juve');
+</script>
+</body>
+</html>
