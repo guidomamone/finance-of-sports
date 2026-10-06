@@ -363,7 +363,7 @@
      miente — no hay un dato inventado, no hay ningún dato. Ahora esa pantalla es UNA
      cosa: el selector. Con club elegido el mismo card se encoge a una línea, porque ya
      no es la tarea sino cómo se cambia de club.
-     Viene del prototipo 4 (`Prototyping/Selector/MERGE-A-PRODUCCION.md`, etapa 1 del plan
+     Viene del prototipo 4 (`Admin/Archive/selector-merge-a-produccion.md`, etapa 1 del plan
      de merge). Es la única etapa independiente de todo el resto: no toca js/selector.js
      ni el modelo de datos, así que el botón de acá abre el panel de columnas de hoy. */
   #finanzas.sin-club > *:not(h1):not(.subtitle):not(.fin-sel){display:none !important;}

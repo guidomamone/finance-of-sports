@@ -101,7 +101,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   se bajan al abrir el modal): dibuja todos los clubes cargados (161 al
   2026-09-26) sin bajar un solo `data/<club>-data.js`, y recién baja los que
   hagan falta al apretar "Comparar". La explicación larga del modelo está en
-  `Prototyping/Selector/MERGE-A-PRODUCCION.md`, secciones 0, 3 y 5.
+  `Admin/Archive/selector-merge-a-produccion.md`, secciones 0, 3 y 5.
   `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
   se borró en la Versión 152 y lo que hacía mejor está acá adentro.
 - js/liga.js: la pestaña LIGAS — el ranking de ingresos de los clubes de una
@@ -743,7 +743,7 @@ completo está en `Admin/CONVENCIONES.md`.
   4 generadores, los 4 `-selector.js` y los datos inventados: la historia está en
   git. Sobreviven `README.md` (la tabla de POR QUÉ PERDIERON los prototipos 1, 2 y
   3 — es lo que evita que alguien los vuelva a proponer) y
-  `Selector/MERGE-A-PRODUCCION.md`, marcado como cerrado, que sigue siendo la mejor
+  `Selector/MERGE-A-PRODUCCION.md` (hoy `Admin/Archive/selector-merge-a-produccion.md`), que sigue siendo la mejor
   explicación escrita del modelo que hoy corre en `js/selector.js`.
   OJO, LO QUE SE APRENDIÓ AL BORRARLOS: esa carpeta SE DEPLOYA. No hay
   `netlify.toml` ni `_redirects`, y Netlify publica la raíz del repo, así que
@@ -783,8 +783,3 @@ completo está en `Admin/CONVENCIONES.md`.
   `node tools/generate-club-index.js`, partido de este archivo cuando se acercaba al umbral de
   60 KB de `tools/audit.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.
-- `Admin/inventario-pendiente.md` (Versión 228): foto completa de PDFs sin transcribir y
-  transcripciones `.md` ya hechas pero sin cargar, país por país y club por club, con una sección de
-  "por dónde empezar" y otra de descartados con motivo — para no tener que rehacer el barrido de
-  `Clubes/` cada sesión. Es una FOTO puntual, no se regenera sola: borrar la línea de lo que se vaya
-  onboardeando.

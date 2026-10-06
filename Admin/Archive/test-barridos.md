@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-06 (to-do 109).** El A/B test de barridos de sourcing del 2026-09-26. Su conclusión (Sonnet → Exa → Opus, Haiku afuera) vive en el skill `club-sourcing`, sección 0.1b.
+
 # Test de barridos — Haiku+Sonnet vs. Sonnet solo, y si Exa vale la pena
 
 **Por qué existe este archivo (2026-09-26).** La sesión de sourcing de los 40 clubes tradicionales

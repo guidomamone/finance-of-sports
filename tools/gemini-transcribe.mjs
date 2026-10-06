@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Transcribe PDFs a .md usando Gemini directo (multimodal, sin Tesseract/pdftotext previo -- ese es
 // el punto: la API lee el PDF nativamente). Nace del test de costo del to-do 66 (ver
-// Admin/test-costo-transcripcion.md) -- promovido a herramienta permanente porque el resultado salió
+// Admin/Archive/test-costo-transcripcion.md) -- promovido a herramienta permanente porque el resultado salió
 // 10/10 en la verificación, más barato y más rápido que transcribir con un subagente de Claude.
 //
 // Uso individual: node tools/gemini-transcribe.mjs "Clubes/Colombia/Alianza FC/estados-financieros-2016.pdf"
@@ -17,7 +17,7 @@
 //   node tools/gemini-transcribe.mjs --pendientes-claude
 //
 // Corre entero desde tu propia terminal: no necesita ninguna sesión de Claude Code para nada, así que
-// no consume tokens de Claude sea 1 PDF o sean 2000 -- ver la sección de esto en Admin/test-costo-transcripcion.md.
+// no consume tokens de Claude sea 1 PDF o sean 2000 -- ver la sección de esto en Admin/Archive/test-costo-transcripcion.md.
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, basename, extname, join } from 'node:path';
@@ -86,7 +86,7 @@ const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidel
 
 // Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito. A diferencia
 // de Mistral (motor de extracción), Gemini SÍ es un modelo de chat -- el mismo tipo de modelo que
-// produjo los placeholders en inglés del test de costo de Haiku (Admin/test-costo-transcripcion.md,
+// produjo los placeholders en inglés del test de costo de Haiku (Admin/Archive/test-costo-transcripcion.md,
 // to-do 71) -- así que acá el chequeo tiene más chance real de encontrar algo, no es solo una
 // formalidad. No bloquea la transcripción si encuentra algo (ni si el chequeo mismo falla): solo
 // avisa, para revisar antes de onboardear.

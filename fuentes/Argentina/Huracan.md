@@ -57,7 +57,7 @@ sirve para nada, cualquier ruta "existe". El WordPress real que alimenta el siti
   por N votos", que no alcanza como señal fuerte de que valga la pena escribirle al club todavía.
 - Último chequeo: 2026-09-26 (mañana — ver REABIERTO abajo, misma fecha, más tarde).
 
-## Chequeo 2026-09-26 (2) — REABIERTO vía Exa (Test 3 del A/B test, `Admin/test-barridos.md`)
+## Chequeo 2026-09-26 (2) — REABIERTO vía Exa (Test 3 del A/B test, `Admin/Archive/test-barridos.md`)
 
 La escalera estándar (sitio oficial + Wayback CDX de `cahuracan.com` + búsqueda web genérica) había
 agotado todo SIN encontrar nada — pero ninguna de esas 3 familias mira sitios de TERCEROS que no

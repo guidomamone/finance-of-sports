@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-06 (to-do 109).** Era `Prototyping/Selector/MERGE-A-PRODUCCION.md`. El selector se llevó a producción en las Versiones 143 a 155; sigue siendo la mejor explicación escrita del modelo que corre en `js/selector.js`.
+
 # Prototipo 4 — el selector que HOY ES el sitio
 
 > ## ✅ EL MERGE TERMINÓ (2026-09-17, Versiones 143 a 155)

@@ -6,7 +6,7 @@
 // columnas a la vez, ~67 opciones en pantalla, y cinco decisiones simultáneas.
 // Era el prototipo 1 de los cuatro que se probaron; ganó el 4 y esto es su
 // etapa 3. El handoff completo — el modelo, qué cambia archivo por archivo, los
-// gotchas — está en `Prototyping/Selector/MERGE-A-PRODUCCION.md`.
+// gotchas — está en `Admin/Archive/selector-merge-a-produccion.md`.
 //
 // LA IDEA: una pregunta por vez, adentro de un modal. Los pasos se apilan; el
 // que está resuelto se encoge a una línea con lo que elegiste y un "Cambiar".

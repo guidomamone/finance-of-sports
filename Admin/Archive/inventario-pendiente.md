@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-06 (to-do 109).** Una foto del 2026-09-25 de los PDFs sin transcribir y las transcripciones sin cargar. La reemplazó el registro `Admin/transcripciones-estado.jsonl` (`node tools/estado.mjs`).
+
 # Inventario pendiente: PDFs sin transcribir + transcripciones sin cargar
 
 **Por qué existe este archivo (2026-09-25, pedido explícito de Guido: "hace la lista entera de pdfs

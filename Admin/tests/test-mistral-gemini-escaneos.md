@@ -63,7 +63,7 @@ etiquetas de una tabla de dotación de personal (fusionó dos filas en una). Nin
 rompe ningún total conocido — un chequeo de sumas no las detecta.
 
 **Gemini, en cambio, a veces fabrica o corrige un número con la misma confianza que uno bien leído** —
-el riesgo que ya señalaba `Admin/test-costo-transcripcion.md` para Mistral, pero que este test
+el riesgo que ya señalaba `Admin/Archive/test-costo-transcripcion.md` para Mistral, pero que este test
 encuentra también del lado de Gemini: fabricó un valor en una celda vacía (Ituano 2022), "corrigió" una
 cifra hacia el valor de otra página en vez de transcribir el dígito real impreso (Panetolikos, Brann), y
 en Ituano 2017 cometió 4 errores de dígito reales en una tabla completa (601 en vez de 481, 429 en vez

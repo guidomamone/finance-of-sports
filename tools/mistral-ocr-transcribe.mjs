@@ -102,7 +102,7 @@ function readGeminiFailures() {
   return out.sort();
 }
 
-const SCANNED_WARNING = `> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver Admin/test-costo-transcripcion.md).** El único
+const SCANNED_WARNING = `> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver Admin/Archive/test-costo-transcripcion.md).** El único
 > error de calidad real que encontramos en el test de comparación fue justo en un documento así: en
 > celdas dañadas/tapadas/rotadas, Mistral no avisa que no está seguro -- devuelve un número con la
 > misma confianza que uno bien leído. Antes de usar este archivo para cargar datos al sitio,
@@ -290,7 +290,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs) {
     }
   });
   const totalMin = (Date.now() - startAll) / 60000;
-  console.log(`\nListo: ${ok} OK, ${fail} fallidos, costo total ~$${cost.toFixed(2)}, ${totalMin.toFixed(1)} min. (${scanned} de ${pending.length} eran escaneados -- revisá esos con más cuidado, ver Admin/test-costo-transcripcion.md sobre por qué)`);
+  console.log(`\nListo: ${ok} OK, ${fail} fallidos, costo total ~$${cost.toFixed(2)}, ${totalMin.toFixed(1)} min. (${scanned} de ${pending.length} eran escaneados -- revisá esos con más cuidado, ver Admin/Archive/test-costo-transcripcion.md sobre por qué)`);
   if (fail > 0) console.log(`Ver detalle de fallos en ${failuresPath.replace(projectRoot + '/', '')}.`);
   if (fidelidadAlertas > 0) console.log(`${fidelidadAlertas} transcripción(es) con hallazgos P1 de tools/check-transcripcion-fidelidad.js -- correlo de nuevo sobre esos archivos puntuales antes de onboardearlos.`);
 }

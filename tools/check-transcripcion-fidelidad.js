@@ -5,7 +5,7 @@
 //
 // EL PROBLEMA QUE RESUELVE (to-do 90, encontrado resolviendo el to-do 71,
 // 2026-09-27): el chequeo que se usó en el test de costo de transcripción
-// (Admin/test-costo-transcripcion.md) solo contaba páginas, y eso dejó pasar dos
+// (Admin/Archive/test-costo-transcripcion.md) solo contaba páginas, y eso dejó pasar dos
 // fallas reales sin detectar:
 //   (a) marcas de página `--- pág. N ---` CORRIDAS — páginas reales del PDF
 //       fusionadas bajo menos marcas de las que corresponden. El conteo TOTAL de

@@ -69,7 +69,7 @@ está descargable"). La nueva gestión (asumió dic-2025, activamente denunciand
 transparencia de la anterior) puede ser receptiva a un pedido de publicación.
 - Último chequeo: 2026-09-26.
 
-## Chequeo 2026-09-26 (2) — Exa (Test 3 del A/B test, `Admin/test-barridos.md`): el informe de 120 días SÍ está público
+## Chequeo 2026-09-26 (2) — Exa (Test 3 del A/B test, `Admin/Archive/test-barridos.md`): el informe de 120 días SÍ está público
 
 Búsqueda semántica con Exa (`node tools/exa-search.mjs`) encontró lo que la búsqueda web genérica
 no había encontrado: el "informe de gestión de los primeros 120 días" de la gestión Mirkin (ya

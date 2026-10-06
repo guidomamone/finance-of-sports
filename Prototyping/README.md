@@ -20,8 +20,9 @@ acá es lo único que hace falta leer sin desenterrarla.
 ```
 Prototyping/
   README.md                      ← esto: por qué perdieron los otros tres
-  Selector/MERGE-A-PRODUCCION.md ← qué es el prototipo 4 y cómo se merged
 ```
+
+Qué es el prototipo 4 y cómo se mergeó: `Admin/Archive/selector-merge-a-produccion.md`.
 
 ---
 

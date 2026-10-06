@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-06 (to-do 109).** El test de costo y calidad de transcripción del 2026-09-26 (to-do 66), con sus datos en `Admin/Archive/test-costo-transcripcion/`. Su criterio (Mistral → Gemini → subagente) vive en `Admin/PIPELINE.md`, sección "Documentos fuente". Las rutas `Admin/test-costo-transcripcion/...` de adentro son las de antes de archivarlo.
+
 # Test de costo/calidad de transcripción PDF→MD: Sonnet vs Haiku vs Gemini
 
 To-do 66 de `Admin/TODO.md`, corrido el 2026-09-26. Objetivo: medir costo y calidad de transcribir

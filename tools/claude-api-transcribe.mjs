@@ -3,7 +3,7 @@
 // tools/claude-api-transcribe.mjs — la 3ra API del pipeline de transcripción,
 // para cuando Gemini rechaza un documento por `finishReason: RECITATION` (un
 // falso positivo de copyright de Google, no un problema del documento -- ver
-// Admin/test-costo-transcripcion.md). `tools/onboard.mjs` la llama sola,
+// Admin/Archive/test-costo-transcripcion.md). `tools/onboard.mjs` la llama sola,
 // automáticamente, cuando detecta eso en la salida de Gemini (ver
 // `transcribeGeminiWithFallback()` ahí) -- este archivo antes era
 // tools/thirdapi-transcribe.mjs, un placeholder sin API elegida; renombrado

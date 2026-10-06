@@ -505,7 +505,7 @@ skill `club-or-year-onboarding`.** Lo que sigue describe los motores que usa por
 **ACTUALIZADO OTRA VEZ (Versiones 244-248, 2026-09-26): el DEFAULT para transcribir en volumen ya
 no es que la sesión de Claude lo haga, es mandarlo a una API externa barata, corrida por Guido desde
 SU PROPIA terminal — 0 tokens de Claude, sea 1 PDF o sean 2000.** El test completo (30 documentos,
-costo y calidad comparados cifra por cifra) está en `Admin/test-costo-transcripcion.md`; el criterio
+costo y calidad comparados cifra por cifra) está en `Admin/Archive/test-costo-transcripcion.md`; el criterio
 que salió de ese test:
 
 1. **Default: `node tools/mistral-ocr-transcribe.mjs --all`** (Mistral OCR, motor de extracción
@@ -531,7 +531,7 @@ usar el flujo de Tesseract de abajo por default.
 recién escrito, y avisan en la consola si encuentran algo** — no hace falta acordarse de correrlo
 aparte para esos dos. El chequeo mira CONTENIDO, no solo cantidad de páginas: agarra un bloque
 reemplazado por un resumen en inglés en vez de transcripto (el error real que dejó pasar el test de
-costo de Haiku, ver `Admin/test-costo-transcripcion.md`) y huecos en la numeración de página. Es
+costo de Haiku, ver `Admin/Archive/test-costo-transcripcion.md`) y huecos en la numeración de página. Es
 gratis (script de Node puro, sin ninguna llamada a modelo) y no bloquea la transcripción si encuentra
 algo, solo marca qué archivo revisar antes de onboardear. **El paso 3 (subagente de Claude) NO lo
 corre solo** — correlo a mano al terminar (`node tools/check-transcripcion-fidelidad.js

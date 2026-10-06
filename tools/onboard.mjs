@@ -298,7 +298,7 @@ function transcribeIfMissing(pdfPath, mdPath, { dryRun, label, scriptRelPath, ex
 const THIRDAPI_SCRIPT = 'tools/claude-api-transcribe.mjs';
 
 // Gemini rechaza ~1 de cada 4 documentos con `finishReason: RECITATION` (falso positivo de
-// copyright de Google, no un problema del documento -- Admin/test-costo-transcripcion.md). Con el
+// copyright de Google, no un problema del documento -- Admin/Archive/test-costo-transcripcion.md). Con el
 // flujo de comparación (Mistral vs. Gemini), un rechazo de Gemini deja a ese documento SIN su 2do
 // chequeo -- pedido de Guido, 2026-09-29: que entre una 3ra API SOLO ahí, como reemplazo de Gemini
 // para ese subconjunto puntual, escribiendo al MISMO archivo (mismo GEMINI_CHECK_SUFFIX) para que
