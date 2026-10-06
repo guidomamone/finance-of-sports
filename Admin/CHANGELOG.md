@@ -15,14 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión ?? — Cuatro documentos cerrados a `Admin/Archive/` (to-do 109) (2026-10-06)
+## Versión 555 — Cuatro documentos cerrados a `Admin/Archive/` (to-do 109) (2026-10-06)
 
 - `Admin/test-barridos.md`, `Admin/test-costo-transcripcion.md` (con su carpeta), `Admin/inventario-pendiente.md` y `Prototyping/Selector/MERGE-A-PRODUCCION.md` (ahora `selector-merge-a-produccion.md`), con su banner y su línea en `Admin/Archive/README.md`.
 - Citas actualizadas en las tools (comentarios y la advertencia de escaneo de `mistral-ocr-transcribe.mjs`), `Admin/PIPELINE.md`, `Admin/ARQUITECTURA.md`, `Prototyping/README.md`, `index.html`, `js/selector.js`, `js/styles.css` y dos notas de `fuentes/Argentina/`. Sin cambios de comportamiento.
+- Skills `club-data-mapping` (§6 y §15) y `club-sourcing` (0.1b) sin citas a esos tests (con el ok de Guido); §15 apunta a `Admin/PIPELINE.md`, "Documentos fuente". ASSET_V 449 → 450 (comentarios en `js/` y el cambio de Boca); generadores corridos.
 
-## Versión ?? — Boca: el sueldo de cada departamento va con su departamento (to-do 101, punto 1) (2026-10-06)
+## Versión 554 — Boca: el sueldo de cada departamento va con su departamento (to-do 101, punto 1) (2026-10-06)
 
-- `data/boca-data.js`, 2022, 2023 y 2025: los sueldos de Estadio, Casa Amarilla, Departamento médico y Estructura operativa pasan de `wages_squad` a `admin_general_expense`, y los de Educación física, Fútbol juvenil y Básquet a `youth_other_sports_expense`, la misma categoría que los otros gastos de cada departamento. Solo Fútbol profesional queda en `wages_squad` (2025: 67.870 → 46.452 M ARS). Totales sin cambio. La decisión queda escrita arriba de `bocaExpenseLinesByYear`. **Al mergear: subir ASSET_V y correr los generadores (rankings).**
+- `data/boca-data.js`, 2022, 2023 y 2025: los sueldos de Estadio, Casa Amarilla, Departamento médico y Estructura operativa pasan de `wages_squad` a `admin_general_expense`, y los de Educación física, Fútbol juvenil y Básquet a `youth_other_sports_expense`, la misma categoría que los otros gastos de cada departamento. Solo Fútbol profesional queda en `wages_squad` (2025: 67.870 → 46.452 M ARS). Totales sin cambio. La decisión queda escrita arriba de `bocaExpenseLinesByYear`. ASSET_V 449 → 450; generadores corridos.
 
 ## Versión 553 — To-do 149 cerrado: 62 clubes con sus presidentes en el formato nuevo (2026-10-05)
 
