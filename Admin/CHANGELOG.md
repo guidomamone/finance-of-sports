@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 552 — To-do 149: los presidentes en el pipeline (2026-10-05)
+
+- `cargar.mjs`: `cargarSitio()` lee `data/gestiones/*.js`; si ninguna gestión confirmada cubre el cierre del año, un caso `gestion` en la cola (no frena) con lo que hay que completar y, como pista, los firmantes de la transcripción (el renglón del nombre y el del cargo, nunca el del documento de la persona). "descartar" (club sin presidente persona) no se vuelve a preguntar; "aceptar" con un año que siguió sin cubrir abre un caso para ese año.
+- Probado en sandbox: Goiás 2021 abre el caso con "Paulo Rogério de Carvalho Pinheiro / Presidente Executivo" (L1317); descartado, Goiás 2022 no abre otro. Ensayo de `prueba-completa` idéntico.
+- Queda en el to-do 149 pasar al formato nuevo los ~40 clubes con nombres en `gestionesByClub`.
+
 ## Versión 551 — To-do 148: el chequeo de tipo de cambio vuelve a 0 avisos (2026-10-05)
 
 - `FX_PLAUSIBLE_RANGE` (data/currency-map.js): mínimo de CLP de 600 a 400 (UC 2010-2013 cerró a 468-525, real) y de EUR de 0,7 a 0,6 (Juventus 2008 0,634 y 2011 0,692, reales). El máximo de EUR (1,15) no se toca: atrapa el fx invertido de España (1,172). `auditAll()`: 0 avisos de tipo de cambio (antes 6), 1.136 OK, los 3 de Bayern de siempre. ASSET_V 447 → 448, audit 0 P0/P1.

@@ -21,16 +21,12 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (Versión 545) creó el formato nuevo de
-    gestiones (`data/gestiones/<país>.js`: presidente o dueño, desde, hasta, fuente, confirmada) y lo cargó para Boca y Racing. Falta que un club nuevo lo traiga solo al onboardearse, en vez de la entrada de relleno "Gestión actual" que hoy escribe
-    `tools/alta-club.mjs` (y `gestionId:null` de `tools/cargar.mjs`). Idea de partida, a discutir con Guido: proponer el firmante
-    de cada balance desde su transcripción ("Presidente", "Presidente do Conselho", "Chairman", "Vorstandsvorsitzender"), marcarlo
-    confirmado solo con una fuente, y mandar a la cola humana solo cuando el firmante cambia entre años o no aparece. Criterio ya
-    decidido: un año con dos presidentes es de quien firmó el balance; en empresas, el dueño solo si es una persona con nombre (SAF y
-    sociedades anónimas, sin gestión). Incluye pasar al formato nuevo los ~40 clubes que hoy tienen nombres reales en
-    `gestionesByClub` (Almagro, Estudiantes, Colo-Colo, Flamengo, Corinthians, Everton, Bayern…), con fechas y fuente: el to-do 147
-    solo cargó Boca y Racing. Cuando esté, se retira `gestionesByClub` (lo usan todavía las pestañas ocultas Pases y
-    Resultados).
+149. LAS GESTIONES DE LOS CLUBES YA CARGADOS (pedido de Guido, 2026-10-05). La parte del pipeline está hecha (Versión 552): al cargar un
+    año sin presidente que lo cubra, `cargar.mjs` deja un caso `gestion` en la cola, que contesta el subagente como las preguntas de perfil.
+    Falta pasar al formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada) los ~40 clubes que hoy
+    tienen nombres reales en `gestionesByClub` (Almagro, Estudiantes, Colo-Colo, Flamengo, Corinthians, Everton, Bayern…), con fechas y
+    fuente; propuesta: una corrida de un subagente Sonnet club por club. Criterio ya decidido: un año con dos presidentes es de quien
+    firmó el balance; en empresas, el dueño solo si es una persona con nombre (SAF y sociedades anónimas, sin gestión).
 
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:

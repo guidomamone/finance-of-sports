@@ -157,9 +157,11 @@ export function cargarSitio(root = ROOT) {
   const ctx = vm.createContext(sandbox);
   const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', 'data/leagues.js', 'data/club-leagues.js',
     ...readdirSync(resolve(root, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/club-leagues/' + f),
-    ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f)];
+    ...readdirSync(resolve(root, 'data')).filter((f) => f.endsWith('-data.js')).sort().map((f) => 'data/' + f),
+    // (Versión 552, to-do 149) quién condujo cada club: data/gestiones/<país>.js
+    ...(existsSync(resolve(root, 'data/gestiones')) ? readdirSync(resolve(root, 'data/gestiones')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/gestiones/' + f) : [])];
   for (const f of files) vm.runInContext(readFileSync(resolve(root, f), 'utf8'), ctx, { filename: f });
-  return vm.runInContext('({ clubs, sources, CURRENCY_META, FX_CLOSE, FX_PLAUSIBLE_RANGE, COUNTRIES, LEAGUES, CLUB_LEAGUE_BY_YEAR: window.CLUB_LEAGUE_BY_YEAR, generic: window.CLUB_GENERIC_DATA || {} })', ctx);
+  return vm.runInContext('({ clubs, sources, CURRENCY_META, FX_CLOSE, FX_PLAUSIBLE_RANGE, COUNTRIES, LEAGUES, CLUB_LEAGUE_BY_YEAR: window.CLUB_LEAGUE_BY_YEAR, generic: window.CLUB_GENERIC_DATA || {}, gestiones: window.CLUB_GESTIONES || {} })', ctx);
 }
 function categoriasDelSitio() {
   const src = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
@@ -738,6 +740,30 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
+  // PRESIDENTES (Versión 552, to-do 149, decisión de Guido el 2026-10-05: "cuando se hace el alta se pregunta si hay socios, consolidado,
+  // etc.; acá debería agregarse lo de presidentes"). Si ninguna gestión confirmada de data/gestiones/<país>.js cubre el cierre de este año,
+  // va un caso a la cola (lo contesta el subagente de Guido, como las preguntas de perfil). NO FRENA: el año se carga igual, sin presidente.
+  // Un club ya contestado "descartar" (sociedad sin dueño persona) no se vuelve a preguntar; uno contestado "aceptar" que igual quedó sin
+  // cubrir este año abre un caso nuevo para el año. La pista: los renglones de la transcripción donde aparece el cargo (el firmante).
+  {
+    const cierreY = alta.ejercicio.cierre; const gs = (sitio.gestiones || {})[clubId] || [];
+    const cubre = gs.some((g) => g.confirmada && ((g.desde && g.desde <= cierreY && (!g.hasta || g.hasta >= cierreY)) || (g.firmo || []).includes(year)));
+    const previa = respuestaPorDetalle('cargar', 'gestion', clubId);
+    if (cierreY && !cubre && previa?.resp?.decision !== 'descartar') {
+      const iso = String(club.country || '').toLowerCase();
+      let pistas = [];
+      // El nombre del firmante suele ir en el renglón de ARRIBA del cargo ("Paulo Rogério de Carvalho Pinheiro" / "Presidente Executivo",
+      // Goiás 2021 L1315-1316); se trae ese renglón y el del cargo, nunca el de abajo (ahí va el número de documento de la persona).
+      const limpio = (l) => l.replace(/[|*#]/g, ' ').replace(/\s+/g, ' ').trim();
+      try { const L = readFileSync(resolve(ROOT, e.md), 'utf8').split('\n');
+        pistas = L.map((l, i) => i).filter((i) => /\b(presidente|presidenta|president|chairman|chairwoman|vorstandsvorsitzende|vorsitzende|voorzitter|formand|predsjednik|πρόεδρος)\b/i.test(L[i]) && L[i].length < 220).slice(-4)
+          .map((i) => { const j = [i - 1, i - 2].find((k) => k >= 0 && limpio(L[k])); const arriba = j != null && limpio(L[j]).length <= 80 && !/\d{3}/.test(L[j]) ? `${limpio(L[j])} / ` : ''; return `L${i + 1}: ${arriba}${limpio(L[i]).slice(0, 120)}`; }); } catch { /* sin .md */ }
+      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'gestion', detalle: previa ? `${clubId}:${year}` : clubId,
+        que: `¿Quién condujo ${club.name || clubId} en el ejercicio ${year} (cierre ${cierreY})? Ninguna gestión confirmada de data/gestiones/${iso}.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla en la cabecera de data/gestiones/ar.js): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar '${iso}' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: ${pistas.length ? pistas.join(' | ') : 'no se encontraron'}. Después: node tools/cola.mjs --responder <id> aceptar.`,
+        propuesta: 'completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)' });
+      P.avisos.push(`gestión: ningún presidente confirmado cubre ${year} (cierre ${cierreY}); pregunta en la cola (no frena)`);
+    }
+  }
   Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // (Versión 462) no va al .carga.json
   P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
   return P;
