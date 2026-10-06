@@ -599,10 +599,29 @@
     }
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
-    renderSupuestosCard(clubId, y);
-    renderPresupuestoFinancieroCard(clubId, y);
-    renderPresupuestoInversionesCard(clubId, y);
-    renderTorneosCard(clubId, y);
+    // to-do 147, paso 9: con ?multi=1 los cards de presupuesto (Supuestos, Presupuesto Financiero,
+    // Inversiones, Torneos) son los del presupuesto MÁS NUEVO elegido (decisión de Guido), y llevan su
+    // año en el título: con varios ejercicios en pantalla, sin el año no se sabe de cuál son.
+    const yPresu = window.FIN_MULTI ? presupuestoMasNuevoElegido(clubId) : y;
+    renderSupuestosCard(clubId, yPresu);
+    renderPresupuestoFinancieroCard(clubId, yPresu);
+    renderPresupuestoInversionesCard(clubId, yPresu);
+    renderTorneosCard(clubId, yPresu);
+    document.querySelectorAll('#supuestosCard .fin-card-yr, #presupuestoFinancieroCard .fin-card-yr, #presupuestoInversionesCard .fin-card-yr')
+      .forEach(el => { el.textContent = (window.FIN_MULTI && yPresu) ? ' · ' + labelEjercicioCorto(clubId, yPresu) : ''; });
+  }
+
+  // El ejercicio con presupuesto (solo, o junto con el balance) más nuevo de los elegidos; null si no hay.
+  function presupuestoMasNuevoElegido(clubId){
+    const ys = FIN_SEL.years();
+    for(let i = ys.length - 1; i >= 0; i--){
+      const rt = reportTypeForYear(clubId, ys[i]);
+      if(rt === 'official_budget' || rt === 'official_budget_and_balance') return ys[i];
+    }
+    return null;
+  }
+  function labelEjercicioCorto(clubId, y){
+    return isCalendarYearClub(clubId) ? String(y) : (y - 1) + '/' + String(y).slice(2);
   }
 
 
@@ -698,6 +717,23 @@
   function renderDataQualityBannerForCurrentSelection(){
     const banner = document.getElementById('finanzasDataQualityBanner');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
+    // to-do 147, paso 9: con ?multi=1 y varios ejercicios, el aviso cubre a TODOS los elegidos, no
+    // solo al más nuevo: un dato de prensa en una columna del medio también tiene que avisarse.
+    if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
+      const metas = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
+      const OK = { official_budget:1, official_balance_sheet:1, official_budget_and_balance:1 };
+      const avisos = FIN_SEL.years().filter(y => !OK[(metas[y] || {}).reportType]).map(y => {
+        const rt = (metas[y] || {}).reportType;
+        const txt = rt === 'pending_official' ? t('finanzas.banner.pending', 'Ejercicio todavía no informado por el club: no hay balance ni presupuesto oficial cargado todavía para este período, se está esperando que Boca lo publique')
+          : rt === 'press_estimate' ? t('finanzas.banner.press', 'Dato de cobertura de prensa, no el documento oficial del club')
+          : rt === 'unofficial_mirror' ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad de hinchas, no del dominio oficial del club')
+          : t('finanzas.banner.placeholder', 'Dato placeholder, número inventado para probar el diseño del sitio, no es real');
+        return `<div>⚠️ <strong>${labelEjercicioCorto(currentClub, y)}:</strong> ${txt}.</div>`;
+      });
+      banner.style.display = avisos.length ? 'block' : 'none';
+      banner.innerHTML = avisos.join('') + (avisos.length ? `<div style="margin-top:4px;">${t('fuentes.banner.ver', 'El documento y sus salvedades están en "Fuentes", al final de esta sección.')}</div>` : '');
+      return;
+    }
     const year = isGestion
       ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
       : FIN_SEL.primary();
@@ -977,26 +1013,49 @@
     const body = document.getElementById('finanzasFuentesBody');
     if(!body) return;
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
+    // to-do 147, paso 9: con ?multi=1 y varios ejercicios, un renglón plegable por ejercicio elegido
+    // (el más nuevo abierto), cada uno con la misma ficha que se ve con un solo ejercicio, y el
+    // documento del presupuesto cuando el año tiene las dos fuentes.
+    if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
+      const metas = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
+      const tipoDoc = rt => rt === 'official_budget' ? t('finanzas.card.budget', 'Presupuesto')
+        : rt === 'official_budget_and_balance' ? t('finanzas.card.both', 'Presupuesto y Balance')
+        : t('finanzas.card.balance', 'Balance');
+      body.innerHTML = FIN_SEL.years().slice().reverse().map((y, i) => {
+        const meta = metas[y] || {};
+        return `<details class="fin-src-year"${i === 0 ? ' open' : ''}><summary>${labelEjercicioCorto(currentClub, y)} · ${tipoDoc(meta.reportType)}</summary>${fichaFuenteDeAnio(y)}</details>`;
+      }).join('') + linkTodasLasFuentes();
+      return;
+    }
     const year = isGestion
       ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
       : FIN_SEL.primary();
+    body.innerHTML = fichaFuenteDeAnio(year) + linkTodasLasFuentes();
+  }
+
+  // La ficha de fuente de UN ejercicio: documento, nivel, tipos de cambio y salvedades. La usan la
+  // vista de un ejercicio y cada renglón de la vista multi-año (paso 9).
+  function fichaFuenteDeAnio(year){
     const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     const src = sources[meta.sourceId];
-    const linkTodas = linkTodasLasFuentes();
 
     if(!src){
-      body.innerHTML = `<p style="color:var(--muted);font-size:14.5px;line-height:1.6;margin:6px 0 0;">${
+      return `<p style="color:var(--muted);font-size:14.5px;line-height:1.6;margin:6px 0 0;">${
         t('fuentes.card.none', 'Este ejercicio todavía no tiene un documento oficial cargado: los números que se muestran son un placeholder para probar el diseño, no cifras reales del club.')
-      }</p>` + linkTodas;
-      return;
+      }</p>`;
     }
 
+    // Con ?multi=1, el documento del presupuesto de un año que tiene las dos fuentes también se nombra.
+    const ov = window.FIN_MULTI ? presupuestoOverlayFor(currentClub, year) : null;
+    const srcPresu = ov && ov.sourceId ? sources[ov.sourceId] : null;
     const nivel = nivelFuente(src.reliability);
     const filas = [
       filaFicha(t('fuentes.card.doc', 'Documento'),
         `${src.title}${src.url ? ` <a href="${src.url}" target="_blank" rel="noopener">(${t('fuentes.card.see', 'ver documento')})</a>` : ''}`),
       filaFicha(t('fuentes.card.level', 'Tipo y nivel de fuente'),
         `${tipoFuente(src.type)} · <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>`),
+      srcPresu ? filaFicha(t('fuentes.card.docBudget', 'Documento del presupuesto'),
+        `${srcPresu.title}${srcPresu.url ? ` <a href="${srcPresu.url}" target="_blank" rel="noopener">(${t('fuentes.card.see', 'ver documento')})</a>` : ''}`) : '',
       filaFx(yearMetaFor(currentClub, year), t('fuentes.card.fx', 'Tipo de cambio')),
       // Un ejercicio con balance Y presupuesto muestra dos columnas, y cada una se convierte con
       // SU tipo de cambio: el del balance es un cierre ya ocurrido, el del presupuesto un supuesto.
@@ -1008,7 +1067,7 @@
       })(),
     ].join('');
 
-    body.innerHTML = filas + linkTodas;
+    return filas;
   }
 
 

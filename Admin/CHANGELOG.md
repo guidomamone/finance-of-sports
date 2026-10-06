@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 540 — To-do 147, paso 9: fuentes, aviso de calidad y cards de presupuesto con varios ejercicios (?multi=1) (2026-10-05)
+
+- Fuentes: con `?multi=1` y varios ejercicios, un renglón plegable por ejercicio elegido (el más nuevo abierto), cada uno con la ficha de siempre, más "Documento del presupuesto" en los años que tienen las dos fuentes. La ficha de un año se extrajo a `fichaFuenteDeAnio()` (`js/finanzas-render.js`), que usan las dos vistas.
+- Aviso de calidad: con varios ejercicios cubre a todos los elegidos, un renglón por año ("2023/24: Balance real y auditado…, descargado de una réplica…"), no solo al más nuevo.
+- Cards de presupuesto (Supuestos, Presupuesto Financiero, Inversiones, Torneos): con `?multi=1` son los del presupuesto más nuevo elegido (`presupuestoMasNuevoElegido()`) y llevan el año en el título; el año va en un `<span class="fin-card-yr">` aparte del texto traducible para que `I18N.apply()` no lo pise.
+- Verificado: Racing (5 y Todos), Boca (5 y Todos), River (aviso del balance de réplica) y el cambio de idioma. Sin `?multi=1`, los 65 ejercicios idénticos a `main`, ficha de fuente y aviso incluidos. `data/lang/en.js` (`fuentes.card.docBudget`). `ASSET_V` 439.
+
 ## Versión 539 — To-do 147, paso 8: Deuda con una columna por ejercicio (?multi=1) (2026-10-05)
 
 - `js/finanzas-multi.js` (`FIN_MULTI_DEBT`) + `index.html` (`#finanzasDebtMulti`): con `?multi=1` y más de un ejercicio, la tabla de deuda va con una columna por año (las mismas 4 filas: Salarios / Ingresos, Deuda bruta, Caja, Deuda neta), "…" en los saltos, Δ (puntos, %, % y plata respectivamente) y sparkline. Un año cuyo documento no desglosa deuda o que es solo presupuesto muestra "—" en vez de "0.0" (con varios años lado a lado, un cero se leería como "no debía nada"), y la nota de abajo dice cuáles son. La tabla de un año se sigue armando escondida.

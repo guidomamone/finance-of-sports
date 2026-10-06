@@ -166,6 +166,7 @@ window.I18N.strings.en = {
   "fx.source.unknown": "Not determined",
   "fuentes.banner.ver": "The document and its caveats are under \"Sources\", at the end of this section.",
   "fuentes.card.club": "See every document for this club",
+  "fuentes.card.docBudget": "Budget document",
   "fuentes.card.doc": "Document",
   "fuentes.card.fx": "Exchange rate",
   "fuentes.card.fxBudget": "Budget exchange rate",
