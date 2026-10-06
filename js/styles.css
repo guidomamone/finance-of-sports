@@ -118,29 +118,18 @@
     .club-btn{min-width:0;flex:1;max-width:none;}
   }
 
-  /* Composición de ingresos al 100%: compara la MEZCLA (cuánto depende cada club de
-     TV vs. socios vs. venta de pases), que es la pregunta interesante, sin que la
-     tape la diferencia de tamaño entre Real Madrid y Unión. */
-  .mix-row{display:grid;grid-template-columns:170px 1fr 92px;align-items:center;gap:10px;margin-bottom:9px;}
-  .mix-name{display:flex;align-items:center;gap:7px;font-size:12.5px;min-width:0;}
-  /* Las tres se fueron con el bloque de la comparación vieja (Versión 152) y la
-     composición de ingresos las seguía usando: sin ellas el nombre y el ejercicio
-     se dibujaban pegados ("Boca Juniors2027"). */
-  .mbar-txt{display:flex;flex-direction:column;line-height:1.22;min-width:0;}
-  .mbar-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;}
-  .mbar-yr{font-size:9.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .mix-bar{height:22px;border-radius:4px;display:flex;overflow:hidden;background:#f2f2ef;position:relative;}
-  .mix-seg{height:100%;}
-  /* La deducción (to-do 41): no es un segmento más de la pila, es una franja
-     rayada superpuesta que "muerde" el final de la barra — así se distingue de
-     un rubro real a primera vista, sin inventar un color nuevo (reusa --red, el
-     mismo que ya marca negativos en el resto de Comparar). */
-  .mix-seg-neg{position:absolute;top:0;right:0;height:100%;
-    background:repeating-linear-gradient(45deg,var(--red),var(--red) 4px,rgba(181,55,43,.5) 4px,rgba(181,55,43,.5) 8px);}
-  .mix-val{font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);}
-  .mix-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted);}
-  .mix-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:-1px;}
-  .mix-legend i.mix-legend-neg{background:repeating-linear-gradient(45deg,var(--red),var(--red) 3px,rgba(181,55,43,.5) 3px,rgba(181,55,43,.5) 6px);}
+  /* to-do 23, paso 4: el gráfico de Comparar, A y B en el mismo eje (Chart.js). Reemplaza a la
+     composición al 100% (.mix-*), que se fue con este paso. */
+  .cd-graf{margin:4px 0 22px;}
+  .cd-graf-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;}
+  .cd-graf-head h3{margin:0 0 2px;font-size:17px;}
+  .cd-graf-sum{display:flex;gap:20px;flex-wrap:wrap;align-items:baseline;margin:6px 0 10px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .cd-graf-sum b{color:var(--text);font-size:16px;}
+  .cd-graf-sum b.presu{color:#8a6d00;font-style:italic;}
+  .cd-graf-cv{position:relative;height:280px;}
+  .cd-graf-head .segmented{max-width:100%;overflow-x:auto;}
+  .cd-graf-head .segmented button{padding:6px 12px;font-size:12.5px;white-space:nowrap;}
+  .cd-letra.b{background:#d9822b;}
 
   @media (max-width:900px){
     .mix-row{grid-template-columns:104px 1fr 72px;}

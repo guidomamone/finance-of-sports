@@ -1745,7 +1745,7 @@ window.CLUB_SELECTOR = (function(){
   function card(i){
     var col = el('div', 'cd-col' + (lado[i] ? ' con' : ''));
     var head = el('div', 'cd-head');
-    head.appendChild(el('span', 'cd-letra', LETRAS[i]));
+    head.appendChild(el('span', 'cd-letra' + (i ? ' b' : ''), LETRAS[i]));
     head.appendChild(el('span', 'cd-titulo', t('sel.modal.lado', 'Lado') + ' ' + LETRAS[i]));
     if(lado[i]){
       var x = el('button', 'cd-x', '×');
@@ -2066,6 +2066,176 @@ window.CLUB_SELECTOR = (function(){
     });
   }
 
+  // ---------------------------------------------------------------------------
+  // EL GRÁFICO (to-do 23, paso 4): A y B en el MISMO eje, no un gráfico por lado (pedido de
+  // Guido: separados pierden la gracia de la comparación). Eje X = año de cierre, en escala
+  // real: un año que no se eligió deja su hueco y el tramo que lo cruza va punteado. Mismo
+  // código visual que el gráfico de Finanzas (FIN_MULTI_CHART): presupuesto = punto hueco y
+  // tramo punteado. "De qué vive cada lado" son las barras apiladas de Finanzas, una por lado.
+  // ---------------------------------------------------------------------------
+  var cmpModo = 'ing';
+  var cmpCharts = [];
+  var COL_LADO = ['#0a2b5c', '#d9822b'];
+
+  // Un lado partido por año de cierre: para cada año, el mismo lado restringido a sus ejercicios
+  // de ese año y agregado con totalesDe(), o sea con las mismas reglas que el número del lado
+  // (promedio por los que informan, ratios sobre totales, factor de inflación por ejercicio).
+  function seriePorAnio(l){
+    var ys = {};
+    paresDe(l).forEach(function(p){ if(p[1] != null) ys[p[1]] = 1; });
+    return Object.keys(ys).map(Number).sort(function(a, b){ return a - b; }).map(function(y){
+      var bs = (l.bloques || []).map(function(b){
+        if(b.kind === 'liga'){
+          var yrs = b.years.length ? b.years : [ultimaTemporada(b.league)];
+          return yrs.indexOf(y) >= 0 ? { kind:'liga', league:b.league, years:[y], agg:b.agg } : null;
+        }
+        var ps = paresDeBloque(b).filter(function(p){ return p[1] === y; });
+        return ps.length ? { kind:'clubes', pares:ps, agg:b.agg } : null;
+      }).filter(Boolean);
+      var pares = paresDe({ bloques:bs });
+      return { y:y, tt:totalesDe({ nombre:'', bloques:bs }),
+               presu: pares.length > 0 && pares.every(function(p){ return tipoDe(p[0], p[1]) === 'P'; }) };
+    });
+  }
+  function unidadCmp(){
+    return cmpReal ? 'M USD ' + t('finanzas.real.of', 'de') + ' ' + baseReal() : 'M USD';
+  }
+  function fmtCorto(v){ return v == null ? '—' : (v < 0 ? '-' : '') + Math.abs(v).toFixed(1); }
+  function vecesTxt(va, vb){
+    if(va == null || vb == null || va === 0 || vb === 0) return '';
+    if((va < 0) !== (vb < 0)) return t('sel.graf.sign', 'signo distinto');
+    var r = vb / va;
+    return 'B = ' + r.toFixed(r >= 10 ? 0 : 1) + '× A';
+  }
+
+  // Dibuja A contra B en `canvas`. `series` = [serieA, serieB] de seriePorAnio(); `valor(tt)`
+  // devuelve el número de un año (null = sin dato); `barras` = un punto es una barra (resultado).
+  function graficoAB(canvas, nombres, series, valor, barras){
+    var todos = {};
+    series.forEach(function(s){ s.forEach(function(p){ todos[p.y] = 1; }); });
+    var Y = Object.keys(todos).map(Number).sort(function(a, b){ return a - b; });
+    var datasets = series.map(function(s, i){
+      var col = COL_LADO[i];
+      var d = s.map(function(p){
+        var v = valor(p.tt);
+        return v == null ? null : { x:p.y + (barras ? (i ? 0.18 : -0.18) : 0), y:v, presu:p.presu, yr:p.y };
+      }).filter(Boolean);
+      var label = LETRAS[i] + ' · ' + nombres[i];
+      if(barras) return { type:'bar', label:label, data:d, barThickness:22,
+        backgroundColor:d.map(function(p){ return p.presu ? '#fff' : col + 'cc'; }),
+        borderColor:col, borderWidth:d.map(function(p){ return p.presu ? 1.5 : 0; }), borderDash:[3, 2] };
+      return { type:'line', label:label, data:d, borderColor:col, backgroundColor:col, borderWidth:2.6, tension:0,
+        pointRadius:4.5, pointBorderWidth:2, pointBackgroundColor:d.map(function(p){ return p.presu ? '#fff' : col; }),
+        segment:{ borderDash:function(c){
+          var p0 = d[c.p0DataIndex], p1 = d[c.p1DataIndex];
+          return (p1.yr - p0.yr > 1 || p0.presu || p1.presu) ? [5, 4] : undefined;
+        } } };
+    });
+    var presuTxt = t('finanzas.card.budget', 'Presupuesto');
+    cmpCharts.push(new Chart(canvas, {
+      type: barras ? 'bar' : 'line',
+      data:{ datasets:datasets },
+      options:{
+        responsive:true, maintainAspectRatio:false, animation:false,
+        interaction:{ mode:'nearest', axis:'x', intersect:false },
+        plugins:{
+          legend:{ position:'bottom', labels:{ usePointStyle:true, boxHeight:7 } },
+          tooltip:{ callbacks:{
+            title:function(it){ return it.length ? t('sel.graf.close', 'Cierre') + ' ' + it[0].raw.yr : ''; },
+            label:function(c){ var r = c.raw;
+              return c.dataset.label + (r.presu ? ' (' + presuTxt + ')' : '') + ': ' + r.y.toFixed(1) + ' ' + unidadCmp(); }
+          } }
+        },
+        scales:{
+          x:{ type:'linear', min:Y[0] - 0.5, max:Y[Y.length - 1] + 0.5, grid:{ display:false },
+              afterBuildTicks:function(ax){ ax.ticks = Y.map(function(v){ return { value:v }; }); },
+              ticks:{ autoSkip:true, autoSkipPadding:8, maxRotation:0, callback:function(v){ return String(v); } } },
+          y:{ beginAtZero:true, title:{ display:true, text:unidadCmp() }, ticks:{ maxTicksLimit:6 } }
+        }
+      }
+    }));
+  }
+
+  // "De qué vive cada lado": una barra apilada por lado, con los rubros de ingreso del formato
+  // simplificado, cada rubro con su color fijo (colorDeRubro), igual en las dos barras.
+  function graficoMezcla(canvas, nombres, tots){
+    var rubros = [];
+    tots.forEach(function(tt){ Object.keys(tt.mezcla).forEach(function(r){ if(rubros.indexOf(r) < 0) rubros.push(r); }); });
+    cmpCharts.push(new Chart(canvas, {
+      type:'bar',
+      data:{ labels:nombres.map(function(n, i){ return LETRAS[i] + ' · ' + n; }),
+             datasets:rubros.map(function(r){
+               return { label:tLabel(r), data:tots.map(function(tt){ return tt.mezcla[r] || 0; }),
+                        backgroundColor:colorDeRubro(r), maxBarThickness:120 };
+             }) },
+      options:{
+        responsive:true, maintainAspectRatio:false, animation:false,
+        plugins:{ legend:{ position:'bottom', labels:{ boxWidth:10, boxHeight:10 } },
+          tooltip:{ callbacks:{ label:function(c){ return c.dataset.label + ': ' + c.parsed.y.toFixed(1) + ' ' + unidadCmp(); } } } },
+        scales:{ x:{ stacked:true, grid:{ display:false } },
+                 y:{ stacked:true, beginAtZero:true, title:{ display:true, text:unidadCmp() } } }
+      }
+    }));
+  }
+
+  function bloqueGrafico(tots){
+    var caja = el('div', 'cd-graf');
+    var head = el('div', 'cd-graf-head');
+    var tit = el('div');
+    tit.appendChild(el('h3', null, t('sel.graf.title', 'Ingresos, gastos y resultado')));
+    tit.appendChild(el('p', 'cd-res-sub', cmpModo === 'mix'
+      ? t('sel.graf.subMix', 'En {u}. De dónde sale la plata de cada lado, rubro por rubro (formato simplificado).').replace('{u}', unidadCmp())
+      : t('sel.graf.sub', 'En {u}, por año de cierre. Una liga: un punto por temporada. Un club: uno por ejercicio.').replace('{u}', unidadCmp())));
+    head.appendChild(tit);
+    var seg = el('div', 'segmented');
+    [['ing', t('section.revenue', 'Ingresos')], ['gas', t('section.expenses', 'Gastos')],
+     ['pat', t('sel.graf.result', 'Resultado')], ['mix', t('sel.graf.mix', 'De qué vive cada lado')]].forEach(function(o){
+      var b = el('button', cmpModo === o[0] ? 'active' : null, o[1]);
+      b.type = 'button';
+      b.addEventListener('click', function(){ cmpModo = o[0]; renderResultado(); });
+      seg.appendChild(b);
+    });
+    head.appendChild(seg);
+    caja.appendChild(head);
+
+    // El número de cada lado arriba del gráfico, con "B = 3,1× A": es la comparación en una línea.
+    var k = { ing:'revenue', gas:'expenses', pat:'pat', mix:'revenue' }[cmpModo];
+    var lab = { ing:t('section.revenue', 'Ingresos'), gas:t('section.expenses', 'Gastos'),
+                pat:t('sel.graf.result', 'Resultado'), mix:t('section.revenue', 'Ingresos') }[cmpModo];
+    var sum = el('div', 'cd-graf-sum');
+    var vals = tots.map(function(tt){ return tt.informan[k] ? tt.tot[k] : null; });
+    tots.forEach(function(tt, i){
+      var sp = el('span');
+      sp.appendChild(el('span', 'cd-letra chica' + (i ? ' b' : ''), LETRAS[i]));
+      var agg = (lado[i].bloques.length === 1 && tt.conDato > 1)
+        ? ', ' + (lado[i].bloques[0].agg === 'promedio' ? t('sel.agg.avg.f', 'promedio') : t('sel.agg.sum.f', 'suma')) : '';
+      sp.appendChild(document.createTextNode(lab + agg + ': '));
+      var v = vals[i];
+      sp.appendChild(el('b', tt.conDato && tt.presupuestos === tt.conDato ? 'presu' : null,
+        (cmpModo === 'pat' && v > 0 ? '+' : '') + fmtCorto(v)));
+      sum.appendChild(sp);
+    });
+    sum.appendChild(el('span', null, vecesTxt(vals[0], vals[1])));
+    caja.appendChild(sum);
+
+    var cv = el('div', 'cd-graf-cv');
+    cv.appendChild(document.createElement('canvas'));
+    caja.appendChild(cv);
+    return caja;
+  }
+
+  function dibujarGrafico(caja, tots){
+    cmpCharts.forEach(function(c){ c.destroy(); });
+    cmpCharts = [];
+    var canvas = caja.querySelector('.cd-graf canvas');
+    if(!canvas || !window.Chart) return;
+    var nombres = tots.map(function(tt){ return tt.nombre; });
+    if(cmpModo === 'mix'){ graficoMezcla(canvas, nombres, tots); return; }
+    var k = { ing:'revenue', gas:'expenses', pat:'pat' }[cmpModo];
+    graficoAB(canvas, nombres, [seriePorAnio(lado[0]), seriePorAnio(lado[1])],
+      function(tt){ return tt.informan[k] ? tt.tot[k] : null; }, cmpModo === 'pat');
+  }
+
   function renderResultado(){
     var caja = $('cdResultado');
     if(!caja) return;
@@ -2093,12 +2263,14 @@ window.CLUB_SELECTOR = (function(){
       + 'los clubes no cierran el mismo día ni tienen los mismos años cargados.');
     caja.appendChild(reglas);
 
+    caja.appendChild(bloqueGrafico(tots));
+
     var tabla = el('table', 'cd-tabla');
     var trh = el('tr');
     trh.appendChild(el('th', null, ''));
     tots.forEach(function(tt, i){
       var th = el('th');
-      th.appendChild(el('span', 'cd-letra chica', LETRAS[i]));
+      th.appendChild(el('span', 'cd-letra chica' + (i ? ' b' : ''), LETRAS[i]));
       th.appendChild(el('span', 'cd-res-n', tt.nombre));
       // La fórmula abajo del nombre: con un agregador por bloque, el encabezado solo
       // no alcanza para saber qué se está mirando. Va SIEMPRE que haya una liga de
@@ -2188,95 +2360,8 @@ window.CLUB_SELECTOR = (function(){
     var pie = el('div', 'cd-avisos');
     avisos.forEach(function(a){ pie.appendChild(el('p', null, a)); });
     caja.appendChild(pie);
-
-    caja.appendChild(cardMezcla(tots));
-  }
-
-  // ---------------------------------------------------------------------------
-  // DE DÓNDE SALE LA PLATA DE CADA LADO. Barras al 100%, para comparar la MEZCLA y
-  // no el tamaño; el total va al costado. Viene de la vista vieja, con una
-  // diferencia: allá un benchmark de liga no tenía composición propia, porque el
-  // promedio era de porcentajes. Acá los rubros se suman en USD antes de sacar el
-  // porcentaje, así que un conjunto sí describe algo — de dónde sale la plata de
-  // esos clubes juntos.
-  // ---------------------------------------------------------------------------
-  function cardMezcla(tots){
-    var caja = el('div', 'cd-mix');
-    caja.appendChild(el('h3', null, t('cmp.mix.title', 'Composición de ingresos')));
-    caja.appendChild(el('p', 'cd-res-sub', t('cmp.mix.sub',
-      'De dónde sale la plata de cada uno. Barras al 100%, para comparar la mezcla y no el tamaño; el total va al costado.')));
-
-    var usados = {};
-    var hayDeducciones = false;
-    tots.forEach(function(tt, i){
-      var positivos = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] > 0; });
-      var negativos = Object.keys(tt.mezcla).filter(function(l){ return tt.mezcla[l] < 0; });
-      // BRUTO: la suma de los rubros positivos. Es sobre lo que se escala la barra,
-      // así cada rubro sigue ocupando el mismo % "normal" que ocupaba antes del
-      // to-do 41. NETO: la suma de TODOS los rubros (positivos y negativos), que es
-      // el ingreso real — el mismo total que ya usa `verifyTieOuts()`.
-      var bruto = positivos.reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
-      var neto = positivos.concat(negativos).reduce(function(acc, l){ return acc + tt.mezcla[l]; }, 0);
-      var fila = el('div', 'mix-row');
-
-      var nombre = el('div', 'mix-name');
-      nombre.appendChild(el('span', 'cd-letra chica', LETRAS[i]));
-      var txt = el('span', 'mbar-txt');
-      txt.appendChild(el('span', 'mbar-nm', tt.nombre));
-      txt.appendChild(el('span', 'mbar-yr', rangoAnios(tt)));
-      nombre.appendChild(txt);
-      fila.appendChild(nombre);
-
-      var barra = el('div', 'mix-bar');
-      positivos.sort(function(a, b){ return tt.mezcla[b] - tt.mezcla[a]; }).forEach(function(lbl){
-        usados[lbl] = true;
-        var seg = el('div', 'mix-seg');
-        seg.style.width = (bruto ? tt.mezcla[lbl] / bruto * 100 : 0) + '%';
-        seg.style.background = colorDeRubro(lbl);
-        seg.title = lbl + ': ' + Math.round(tt.mezcla[lbl] / bruto * 100) + '%';
-        barra.appendChild(seg);
-      });
-      // LA DEDUCCIÓN (to-do 41): un rubro real, pero negativo (Botafogo 2024,
-      // Cruzeiro 2025, Envigado 2025 informan ingreso bruto y una línea de
-      // deducciones aparte). Una barra apilada no tiene forma de representar un
-      // segmento negativo apilándolo — se dibuja como una franja rayada que
-      // "muerde" el final de la barra, superpuesta sobre la última porción del
-      // bruto, en vez de sumarse como un segmento más. El número al costado sigue
-      // siendo el NETO, que es el dato correcto.
-      if(bruto && negativos.length){
-        hayDeducciones = true;
-        var negAbs = negativos.reduce(function(acc, l){ return acc - tt.mezcla[l]; }, 0);
-        var neg = el('div', 'mix-seg mix-seg-neg');
-        neg.style.width = Math.min(100, negAbs / bruto * 100) + '%';
-        neg.title = negativos.map(function(lbl){
-          return lbl + ': −' + Math.abs(tt.mezcla[lbl]).toFixed(1) + ' M USD';
-        }).join(' · ');
-        barra.appendChild(neg);
-      }
-      fila.appendChild(barra);
-      fila.appendChild(el('div', 'mix-val', neto ? neto.toFixed(1) + ' M USD' : '—'));
-      caja.appendChild(fila);
-    });
-
-    // La leyenda lista solo las categorías que efectivamente aparecen.
-    var leyenda = el('div', 'mix-legend');
-    Object.keys(usados).forEach(function(lbl){
-      var sp = el('span');
-      var i = el('i');
-      i.style.background = colorDeRubro(lbl);
-      sp.appendChild(i);
-      sp.appendChild(document.createTextNode(lbl));
-      leyenda.appendChild(sp);
-    });
-    if(hayDeducciones){
-      var spNeg = el('span');
-      spNeg.appendChild(el('i', 'mix-legend-neg'));
-      spNeg.appendChild(document.createTextNode(
-        t('cmp.mix.deducciones', 'Deducciones sobre el ingreso bruto (se restan del total)')));
-      leyenda.appendChild(spNeg);
-    }
-    caja.appendChild(leyenda);
-    return caja;
+    // El gráfico se dibuja con el bloque ya colgado: Chart.js mide el contenedor.
+    dibujarGrafico(caja, tots);
   }
 
   function colorDeRubro(label){
