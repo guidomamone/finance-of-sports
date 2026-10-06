@@ -633,7 +633,10 @@
       const target = exact || years.reduce((best, y) => Math.abs(y.value - previousYear) < Math.abs(best.value - previousYear) ? y : best);
       anioSelect.value = String(target.value);
     }
-    FIN_SEL.set([parseInt(anioSelect.value, 10)]);
+    // Con los cards de ejercicios (?multi=1, to-do 147 paso 4) la selección la maneja FIN_ANIOS:
+    // default de 5 al cambiar de club, y la misma selección si solo cambió el idioma o la moneda.
+    if(window.FIN_MULTI && window.FIN_ANIOS) FIN_ANIOS.alCargarClub(clubId);
+    else FIN_SEL.set([parseInt(anioSelect.value, 10)]);
   }
 
 

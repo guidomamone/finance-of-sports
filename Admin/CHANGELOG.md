@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 534 — To-do 147, paso 4: cards de ejercicios en Finanzas, detrás de ?multi=1 (2026-10-05)
+
+- `js/finanzas-anios.js` (nuevo, `FIN_ANIOS`): un card por ejercicio que se prende y se apaga solo, sin checkbox. Dice Balance / Presupuesto / Presupuesto y Balance; los años vacíos entre el primero y el último cargado salen rayados, "Sin publicar", y no se eligen. Atajos Últimos 5 (default, solo años con balance), Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca corta y "+N más" va al principio. Al cambiar de club vuelve al default; al cambiar idioma o moneda se conserva. En celular la fila se scrollea de costado y arranca en lo más nuevo.
+- Solo con `?multi=1` (`window.FIN_MULTI`, clase `fin-multi` que esconde el dropdown). Con varios elegidos la página muestra todavía el más nuevo (pasos 5 a 9). Sin el parámetro, nada cambia: verificado contra `main` en los mismos 65 ejercicios de 7 clubes.
+- `index.html` (markup `#finYears`, `refreshFinanzas()` llama a `FIN_ANIOS.render()`, Mi Cuenta no guarda una búsqueda sin ejercicios), `js/finanzas-render.js` (`populateFinanzasSelectors()` le pasa el club a `FIN_ANIOS.alCargarClub()`), `js/styles.css`, `data/lang/en.js` (12 claves `finanzas.card.*`). `ASSET_V` 430, `fuentes.html` regenerado.
+
 ## Versión 533 — To-do 147, paso 3: el año elegido en Finanzas vive en FIN_SEL, no en el dropdown (2026-10-05)
 
 - `js/finanzas-render.js`: `FIN_SEL` (también `window.FIN_SEL`) guarda la LISTA de ejercicios elegidos; `primary()` es el más nuevo (lo que muestra UN ejercicio: tabla, KPIs, banner de calidad, ficha de fuente) y `lastBalance()` el balance más nuevo elegido (otra liga). Las 6 lecturas de `#anioSelect.value` pasan a `FIN_SEL`; el dropdown escribe con `set()` (su `change`, `populateFinanzasSelectors()` y `reopenSavedSearch()`). Sin cambio visible.

@@ -28,7 +28,7 @@ consulta puntual, nunca lectura de corrido.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=429">
+<link rel="stylesheet" href="js/styles.css?v=430">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -232,6 +232,21 @@ consulta puntual, nunca lectura de corrido.
     <p class="subtitle" id="finSub" hidden></p>
     <div class="fin-sel" id="finSelector"></div>
 
+
+    <!-- Los cards de ejercicios (to-do 147, paso 4), detrás de ?multi=1. Los llena js/finanzas-anios.js
+         desde refreshFinanzas(); sin el parámetro quedan escondidos y manda el dropdown "Año". -->
+    <div class="fin-years" id="finYears" hidden>
+      <div class="fin-years-head">
+        <span class="fin-years-lbl" data-i18n="finanzas.card.label">Ejercicios</span>
+        <div class="fin-years-presets">
+          <button type="button" data-p="5" data-i18n="finanzas.card.last5">Últimos 5</button>
+          <button type="button" data-p="all" data-i18n="finanzas.card.all">Todos</button>
+          <button type="button" data-p="1" data-i18n="finanzas.card.last1">Solo el último</button>
+        </div>
+      </div>
+      <div class="fin-years-row"></div>
+      <p class="fin-years-empty" hidden data-i18n="finanzas.card.empty">Ningún ejercicio elegido. Tocá un año para sumarlo.</p>
+    </div>
 
     <div class="controls">
       <!-- "Por gestión" oculto desde la Versión 112 (pedido de Guido, escalando a 1000 clubes: la
@@ -698,46 +713,47 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '429';</script>
-<script src="data/lang/langs.js?v=429"></script>
-<script src="js/i18n.js?v=429"></script>
-<script src="data/clubs.js?v=429"></script>
+<script>window.ASSET_V = '430';</script>
+<script src="data/lang/langs.js?v=430"></script>
+<script src="js/i18n.js?v=430"></script>
+<script src="data/clubs.js?v=430"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=429"></script>
+<script src="data/club-index.js?v=430"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=429"></script>
-<script src="data/club-leagues.js?v=429"></script>
-<script src="data/category-map.js?v=429"></script>
-<script src="data/site-labels.js?v=429"></script>
-<script src="data/currency-map.js?v=429"></script>
-<script src="data/sources-view.js?v=429"></script>
+<script src="data/leagues.js?v=430"></script>
+<script src="data/club-leagues.js?v=430"></script>
+<script src="data/category-map.js?v=430"></script>
+<script src="data/site-labels.js?v=430"></script>
+<script src="data/currency-map.js?v=430"></script>
+<script src="data/sources-view.js?v=430"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/info-tip.js?v=429"></script>
-<script src="js/finanzas-calc.js?v=429"></script>
-<script src="js/finanzas-render.js?v=429"></script>
+<script src="js/info-tip.js?v=430"></script>
+<script src="js/finanzas-calc.js?v=430"></script>
+<script src="js/finanzas-render.js?v=430"></script>
+<script src="js/finanzas-anios.js?v=430"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=429"></script>
-<script src="data/destacados.js?v=429"></script>
-<script src="js/liga.js?v=429"></script>
+<script src="js/selector.js?v=430"></script>
+<script src="data/destacados.js?v=430"></script>
+<script src="js/liga.js?v=430"></script>
 <!-- js/cuenta.js (to-do 70): login con Google vía Supabase + guardado automático de búsquedas.
      No sabe cómo se renderiza el resto del sitio, igual que js/selector.js — recibe `reopen` por
      CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=429"></script>
+<script src="js/cuenta.js?v=430"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -859,10 +875,11 @@ consulta puntual, nunca lectura de corrido.
     // to-do 83: el botón de simulación solo tiene sentido con un club elegido y en
     // modo "Año a año" (la simulación es de UN ejercicio puntual, no de una gestión).
     renderLigaSimCard(isGestion);
+    if(window.FIN_MULTI) FIN_ANIOS.render(currentClub);
     // to-do 70, "Saved Searches": cada vez que el club/año/gestión se asienta, se avisa a
     // js/cuenta.js. Si no hay sesión (o `currentClub` es null, portada), CUENTA.notifyStateChange
     // no hace nada — no es un botón, se guarda sola (decisión de Guido, 2026-09-27).
-    if(window.CUENTA && currentClub){
+    if(window.CUENTA && currentClub && (isGestion || FIN_SEL.years().length)){
       window.CUENTA.notifyStateChange({
         view: 'finanzas',
         club: currentClub,
