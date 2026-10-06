@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 532 — To-do 147, paso 2: "otra liga" es un card propio (2026-10-05)
+
+- `index.html`: el botón "¿Cómo le iría en otra liga?" sale de la barra de controles (ahí parecía un filtro) y pasa a un card entre Deuda y Gráficos, "<club> en otra liga", que explica qué hace y con qué ejercicio, y un botón "Elegir una liga". `ligaSimYear()`: el ejercicio elegido si tiene balance; si es un presupuesto o un placeholder, el balance más nuevo del club (nunca un presupuesto). `renderLigaSimCard()` lo llena desde `refreshFinanzas()`.
+- `js/styles.css` (`.liga-sim-card`), `data/lang/en.js` (`finanzas.ligasim.title/sub/cta`; sale `finanzas.ligasim.btn`). `ASSET_V` 428, `fuentes.html` regenerado.
+
 ## Versión 531 — To-do 147, paso 1: en Finanzas el título es el club (2026-10-05)
 
 - `index.html` + `js/selector.js` (`renderFinSelector`, `finSubtitle`): con club, el H1 es el nombre del club y la bajada dice liga · país · cuántos balances y presupuestos hay y de qué ejercicio a cuál (sale de `CLUB_INDEX`; la liga, de `leagueAt` del ejercicio más reciente, y se rearma cuando cargan las tablas de ligas). El card "Cambiar de club" se esconde: repetía el chip del header. Sin club no cambia nada: H1 "Finanzas" y el card para elegir uno.

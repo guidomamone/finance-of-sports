@@ -416,6 +416,10 @@
   /* `display:flex` de una clase le gana al `display:none` que el navegador le da a
      [hidden]: sin esta regla, un .fin-sel escondido se ve igual. */
   .fin-sel[hidden]{display:none;}
+  /* to-do 147, paso 2: "otra liga" como card propio, texto a la izquierda y el botón a la derecha. */
+  .liga-sim-card{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .liga-sim-txt{flex:1 1 240px;min-width:0;}
+  .liga-sim-txt .subtitle{margin-bottom:0;}
   /* El aviso de "no se pudo cargar el club" vivía adentro del hero del cold start
      (borrado en la Versión 146) y heredaba su paleta oscura: acá va sobre fondo claro. */
   .aviso-error{background:#fdecea;border:1px solid #e08d84;color:#8c2b21;border-radius:8px;
