@@ -386,7 +386,7 @@ palabra clave (no perfecto, es una ayuda de dónde mirar primero, no un filtro d
    ejercicio 2024. Regla: para cargar el ejercicio N, andá siempre al balance/presupuesto CUYO año
    corriente ES N, nunca a la columna comparativa de un balance de N+1.
 6. **Si el `.md` empieza con la advertencia "ESCANEADO, TRANSCRIPTO CON MISTRAL OCR"** (de
-   `tools/mistral-ocr-transcribe.mjs`, ver `Admin/test-costo-transcripcion.md`), el chequeo de arriba
+   `tools/mistral-ocr-transcribe.mjs`), el chequeo de arriba
    (1-5) NO alcanza solo: verificá a mano contra el PDF cada cifra que vayas a cargar, no solo que la
    suma cierre. Encontrado real (test de comparación, 2026-09-26, Llaneros 2016): en una celda
    dañada/tapada por sombreado del escaneo, Mistral devolvió un TOTAL mal leído con la misma
@@ -723,8 +723,8 @@ de Claude cuando le toca transcribir un PDF — pero desde el to-do 66, transcri
 arranca acá.** El default hoy es mandar el PDF a una API externa desde la terminal de Guido (0 tokens
 de Claude): `node tools/mistral-ocr-transcribe.mjs` primero, `node tools/gemini-transcribe.mjs` para
 lo que salga marcado como escaneo, y recién si Gemini lo rechaza por `RECITATION` le toca a un
-subagente — ahí sí, con el flujo de Tesseract de esta sección. Ver `CLAUDE.md` sección "Cada PDF
-nuevo" y `Admin/test-costo-transcripcion.md` para el criterio completo y por qué. Lo que sigue
+subagente — ahí sí, con el flujo de Tesseract de esta sección. Ver `Admin/PIPELINE.md`, sección
+"Documentos fuente", para el criterio completo. Lo que sigue
 abajo sigue siendo válido tal cual, para cuando el trabajo cae en un subagente.
 
 Encontrado cargando Vélez Sarsfield hacia atrás hasta agotar su archivo completo (Versiones 90-93):

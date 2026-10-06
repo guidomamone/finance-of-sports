@@ -244,7 +244,7 @@ como dead-end.
 
 Además de QUÉ familia probar (0.1), importa QUÉ herramienta la corre — escalando en costo a medida
 que el club se resiste. Versión revisada tras el A/B test de la sesión del 2026-09-26
-(`Admin/test-barridos.md`, 23 clubes argentinos, split aleatorio): la versión original de este punto
+(23 clubes argentinos, split aleatorio): la versión original de este punto
 proponía Haiku para el descubrimiento mecánico de un club nuevo, con Sonnet verificando después — el
 test lo midió y **costó 30,8% MÁS caro que Sonnet solo** (tokens, tool calls y duración, consistente
 en los 3 lotes probados), porque verificar bien a Haiku exigía rehacer buena parte del trabajo
