@@ -21,13 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-149. LAS GESTIONES DE LOS CLUBES YA CARGADOS (pedido de Guido, 2026-10-05). La parte del pipeline está hecha (Versión 552): al cargar un
-    año sin presidente que lo cubra, `cargar.mjs` deja un caso `gestion` en la cola, que contesta el subagente como las preguntas de perfil.
-    Falta pasar al formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada) los ~40 clubes que hoy
-    tienen nombres reales en `gestionesByClub` (Almagro, Estudiantes, Colo-Colo, Flamengo, Corinthians, Everton, Bayern…), con fechas y
-    fuente; propuesta: una corrida de un subagente Sonnet club por club. Criterio ya decidido: un año con dos presidentes es de quien
-    firmó el balance; en empresas, el dueño solo si es una persona con nombre (SAF y sociedades anónimas, sin gestión).
-
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).

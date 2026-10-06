@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 553 — To-do 149 cerrado: 62 clubes con sus presidentes en el formato nuevo (2026-10-05)
+
+- Un subagente (Sonnet) pasó a `data/gestiones/<país>.js` los clubes que tenían nombres de presidentes en `gestionesByClub` (que sigue vivo para otras pestañas): 105 gestiones de 65 clubes en total, con fecha de asunción y fuente; archivos nuevos br, gb, cl, co, de, be, dk, hr y es, y esos países en `PAISES` de `js/finanzas-anios.js`. Ninguna confirmada sin fuente.
+- Verificado en el preview con todos los clubes cargados: cada ejercicio cargado tiene su presidente, salvo Operário Ferroviario 2024-2025 (`confirmada:false`, sin fuente). No pasaron los de relleno (sin nombre de persona) ni las sociedades sin dueño persona (Liverpool, Newcastle, Wolves, RB Leipzig).
+- Fechas aproximadas (día 1 cuando la fuente da solo mes o año) y criterios para revisar (Vélez 2023, Estudiantes 2024, Corinthians 2024, Bayern con el CEO de la AG, cabeza de sociedades inglesas): en el informe de la sesión; ninguna cambia qué presidente le toca a un ejercicio cargado salvo esos casos de criterio. ASSET_V 448 → 449, audit 0 P0/P1.
+
 ## Versión 552 — To-do 149: los presidentes en el pipeline (2026-10-05)
 
 - `cargar.mjs`: `cargarSitio()` lee `data/gestiones/*.js`; si ninguna gestión confirmada cubre el cierre del año, un caso `gestion` en la cola (no frena) con lo que hay que completar y, como pista, los firmantes de la transcripción (el renglón del nombre y el del cargo, nunca el del documento de la persona). "descartar" (club sin presidente persona) no se vuelve a preguntar; "aceptar" con un año que siguió sin cubrir abre un caso para ese año.
