@@ -420,6 +420,13 @@
   .liga-sim-card{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
   .liga-sim-txt{flex:1 1 240px;min-width:0;}
   .liga-sim-txt .subtitle{margin-bottom:0;}
+  /* paso 13: el puesto en otra liga, a la derecha del texto (abajo en celular). */
+  .liga-sim-res{text-align:center;min-width:220px;flex:0 1 300px;}
+  .liga-sim-res[hidden]{display:none;}
+  .liga-sim-pick{font-size:13px;color:var(--muted);display:block;margin-bottom:6px;}
+  .liga-sim-pick select{font:inherit;padding:4px 8px;border:1px solid var(--border);border-radius:6px;color:var(--text);max-width:180px;}
+  .liga-sim-big{font-size:34px;font-weight:800;color:var(--azul);line-height:1.1;}
+  .liga-sim-cap{font-size:12.5px;color:var(--muted);margin:2px 0 10px;}
   /* to-do 147, paso 4: los cards de ejercicios (vista multi-año). Un card por año, se prende y se apaga
      solo; sin checkbox (pedido de Guido): prendido = borde azul y fondo celeste. */
   .fin-multi #anioSelectWrap{display:none !important;}

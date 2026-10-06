@@ -1217,6 +1217,11 @@ window.LIGA_VIEW = (function(){
     // "Mi Cuenta" al reabrir una simulación guardada (N clubes).
     iniciarSimulacion: iniciarSimulacion,
     showConSimulados: showConSimulados,
+    // To-do 147, paso 13: el card "otra liga" de Finanzas calcula el puesto con el MISMO motor que
+    // la simulación de esta pestaña (filaSimulada) contra el MISMO ranking precalculado.
+    loadRanking: loadRanking,
+    rankingDe: rankingDe,
+    filaSimulada: filaSimulada,
     // La llama index.html después de un cambio de idioma, igual que
     // `CLUB_SELECTOR.refresh()`. Repinta LAS DOS pantallas: la vidriera de Inicio
     // también es texto generado en JS.

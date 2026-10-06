@@ -63,7 +63,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   fuentes por ejercicio. El título es el club. `?multi=0` vuelve a la vista vieja de un año. Cómo está hecho y qué no romper:
   `Admin/PANTALLA.md`, "Finanzas multi-año". Desde la Versión 543, valores ajustados por inflación (deflactor del PBI, USD y EUR,
   `data/deflactores.js`, se actualiza una vez por año). Desde la Versión 545, gestión (botón, franjas y columnas agrupadas) con el formato nuevo `data/gestiones/<país>.js`: hoy
-  Boca y Racing, con fuentes. Faltan (to-do 147): el puesto en el card "otra liga" y el cierre; las gestiones de los demás clubes y su
+  Boca y Racing, con fuentes. Desde la Versión 547, el card "otra liga" muestra el puesto. Falta (to-do 147) el cierre; las gestiones de los demás clubes y su
   carga en el pipeline de altas son el to-do 149.
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por

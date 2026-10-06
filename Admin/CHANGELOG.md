@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 547 — To-do 147, paso 13: el card "otra liga" muestra el puesto (2026-10-05)
+
+- `index.html` (`renderLigaSimPuesto()`, `#ligaSimRes`): selector "Si jugara en" con las ligas que tienen clubes cargados ese ejercicio (`leagueAt` sobre `CLUB_INDEX`; default, la de más clubes) y el puesto en ingresos, "6.º en ingresos, entre los 17 clubes de Premier League 2024/2025 que tenemos cargados" (más "(la liga tuvo N)" si se sabe). Calculado con `LIGA_VIEW.filaSimulada` contra el ranking precalculado, igual que Ligas. "Ver el ranking completo" abre Ligas con el club simulado. Sin ligas candidatas, queda el botón viejo "Elegir una liga".
+- `js/liga.js` expone `loadRanking`, `rankingDe` y `filaSimulada`. `js/styles.css`, `data/lang/en.js` (`finanzas.ligasim.*`). `ASSET_V` 446.
+- Verificado: Juventus 2024/25 (617,1 M USD) queda 6.º, detrás de los 5 clubes de la Premier con más ingresos en el ranking; el botón abre Ligas con Juventus simulado en la Premier 2024/25.
+
 ## Versión 546 — Sin pesos en KB en la guía de arranque; Racing 2012/13 con Blanco (2026-10-05)
 
 - `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: la tabla de qué leer pierde la columna "Peso" y los párrafos que la explicaban (pedido de Guido: no tener que actualizar esos números nunca más). `tools/audit.js`: se borra `checkPesoDocs()` (`doc-peso-desfasado`), que comparaba esos números contra el tamaño real.

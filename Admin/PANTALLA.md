@@ -44,7 +44,11 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   de presupuesto son los del presupuesto más nuevo elegido, con el año en un `<span class="fin-card-yr">` aparte del texto
   traducible (si va adentro del mismo elemento con `data-i18n`, `I18N.apply()` lo pisa).
 - **"<club> en otra liga"** es un card entre Deuda y los cards de presupuesto, no un botón en la barra: usa el balance más nuevo
-  elegido, nunca un presupuesto.
+  elegido, nunca un presupuesto. Muestra el puesto a la vista (Versión 547): un selector con las ligas que tienen clubes cargados
+  ESE ejercicio (por `leagueAt` sobre `CLUB_INDEX`, sin bajar rankings; default, la de más clubes), y el puesto calculado con
+  `LIGA_VIEW.filaSimulada` contra `data/rankings/<liga>.js`, el mismo motor que la simulación de Ligas. El texto dice ENTRE CUÁNTOS
+  clubes cargados (los rankings no tienen la liga entera), nunca "de 20" a secas. "Ver el ranking completo" abre Ligas con el club
+  simulado.
 - **Valores ajustados por inflación** (`FIN_REAL`, `FIN_REAL_UI`, `data/deflactores.js`): toggle "Nominales | Ajustados por
   inflación" en la barra, solo en USD o EUR (las monedas con serie). Todo monto de la vista multi-año se multiplica por
   `FIN_REAL.fac(año)`; un cociente (% del total, desvío, salarios / ingresos) no, porque el factor se cancela. Prendido, la tabla

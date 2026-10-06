@@ -28,7 +28,7 @@ consulta puntual, nunca lectura de corrido.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=445">
+<link rel="stylesheet" href="js/styles.css?v=446">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -362,6 +362,14 @@ consulta puntual, nunca lectura de corrido.
       <div class="liga-sim-txt">
         <h2 id="ligaSimTitle"></h2>
         <p class="subtitle" id="ligaSimSub"></p>
+      </div>
+      <!-- to-do 147, paso 13: el puesto, a la vista, en la liga que se elija acá (renderLigaSimCard). Si
+           ninguna otra liga tiene clubes cargados de ese ejercicio, queda solo "Elegir una liga". -->
+      <div class="liga-sim-res" id="ligaSimRes" hidden>
+        <label class="liga-sim-pick"><span data-i18n="finanzas.ligasim.in">Si jugara en</span> <select id="ligaSimLeague"></select></label>
+        <div class="liga-sim-big" id="ligaSimRank"></div>
+        <div class="liga-sim-cap" id="ligaSimCap"></div>
+        <button type="button" id="btnLigaSimVer" class="fin-sel-btn" data-i18n="finanzas.ligasim.see">Ver el ranking completo</button>
       </div>
       <button type="button" id="btnLigaSim" class="fin-sel-btn" data-i18n="finanzas.ligasim.cta">Elegir una liga</button>
     </div>
@@ -751,49 +759,49 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '445';</script>
-<script src="data/lang/langs.js?v=445"></script>
-<script src="js/i18n.js?v=445"></script>
-<script src="data/clubs.js?v=445"></script>
+<script>window.ASSET_V = '446';</script>
+<script src="data/lang/langs.js?v=446"></script>
+<script src="js/i18n.js?v=446"></script>
+<script src="data/clubs.js?v=446"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=445"></script>
+<script src="data/club-index.js?v=446"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=445"></script>
-<script src="data/club-leagues.js?v=445"></script>
-<script src="data/category-map.js?v=445"></script>
-<script src="data/site-labels.js?v=445"></script>
-<script src="data/currency-map.js?v=445"></script>
-<script src="data/sources-view.js?v=445"></script>
+<script src="data/leagues.js?v=446"></script>
+<script src="data/club-leagues.js?v=446"></script>
+<script src="data/category-map.js?v=446"></script>
+<script src="data/site-labels.js?v=446"></script>
+<script src="data/currency-map.js?v=446"></script>
+<script src="data/sources-view.js?v=446"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/info-tip.js?v=445"></script>
-<script src="data/deflactores.js?v=445"></script>
-<script src="js/finanzas-calc.js?v=445"></script>
-<script src="js/finanzas-render.js?v=445"></script>
-<script src="js/finanzas-anios.js?v=445"></script>
-<script src="js/finanzas-multi.js?v=445"></script>
+<script src="js/info-tip.js?v=446"></script>
+<script src="data/deflactores.js?v=446"></script>
+<script src="js/finanzas-calc.js?v=446"></script>
+<script src="js/finanzas-render.js?v=446"></script>
+<script src="js/finanzas-anios.js?v=446"></script>
+<script src="js/finanzas-multi.js?v=446"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=445"></script>
-<script src="data/destacados.js?v=445"></script>
-<script src="js/liga.js?v=445"></script>
+<script src="js/selector.js?v=446"></script>
+<script src="data/destacados.js?v=446"></script>
+<script src="js/liga.js?v=446"></script>
 <!-- js/cuenta.js (to-do 70): login con Google vía Supabase + guardado automático de búsquedas.
      No sabe cómo se renderiza el resto del sitio, igual que js/selector.js — recibe `reopen` por
      CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=445"></script>
+<script src="js/cuenta.js?v=446"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -905,6 +913,58 @@ consulta puntual, nunca lectura de corrido.
     document.getElementById('ligaSimSub').textContent = I18N.t('finanzas.ligasim.sub',
       'Ponemos sus ingresos de {ej} en el ranking de ingresos de otra liga, mismo ejercicio. No es una predicción deportiva: es cuánta plata maneja comparado con esos clubes.').replace('{ej}', ej);
     card.dataset.year = year;
+    renderLigaSimPuesto(year, ej);
+  }
+
+  // to-do 147, paso 13: el puesto en otra liga, sin salir de Finanzas. Candidatas = las ligas que no son
+  // la del club y que tienen clubes cargados ESE ejercicio (leagueAt sobre el índice de clubes, sin bajar
+  // ningún ranking). Default: la de más clubes cargados. El puesto sale de LIGA_VIEW.filaSimulada (el mismo
+  // motor que la simulación de la pestaña Ligas) contra el ranking precalculado de esa liga. Como un ranking
+  // tiene solo los clubes que el sitio tiene cargados, el texto dice entre cuántos, nunca "de 20" a secas.
+  let ligaSimElegida = {}, ligasPorClubListas = false;
+  function renderLigaSimPuesto(year, ej){
+    const res = document.getElementById('ligaSimRes'), btnViejo = document.getElementById('btnLigaSim');
+    const club = currentClub;
+    if(!res || typeof leagueAt !== 'function' || !window.LIGA_VIEW || !LIGA_VIEW.filaSimulada){ if(res) res.hidden = true; return; }
+    // Las ligas por club (data/club-leagues/) se cargan aparte: hasta que lleguen, no hay candidatas.
+    if(!ligasPorClubListas && typeof window.loadClubLeagues === 'function'){
+      window.loadClubLeagues().then(() => { ligasPorClubListas = true; if(currentClub === club) renderLigaSimPuesto(year, ej); });
+      res.hidden = true; return;
+    }
+    const propia = leagueAt(club, year);
+    const cuenta = {};
+    Object.entries(window.CLUB_INDEX || {}).forEach(([id, c]) => {
+      if(id === club || !(c.yrs || []).some(p => p[0] === year)) return;
+      const lid = leagueAt(id, year);
+      if(lid && lid !== propia) cuenta[lid] = (cuenta[lid] || 0) + 1;
+    });
+    const ligas = Object.keys(cuenta).sort((a, b) => (cuenta[b] - cuenta[a]) || ((LEAGUES[a] || {}).name || a).localeCompare((LEAGUES[b] || {}).name || b));
+    if(!ligas.length){ res.hidden = true; btnViejo.hidden = false; return; }
+    const sel = document.getElementById('ligaSimLeague');
+    const clave = club + '|' + year;
+    const elegida = ligas.includes(ligaSimElegida[clave]) ? ligaSimElegida[clave] : ligas[0];
+    sel.innerHTML = ligas.map(l => `<option value="${l}">${(LEAGUES[l] || {}).name || l}</option>`).join('');
+    sel.value = elegida;
+    sel.onchange = () => { ligaSimElegida[clave] = sel.value; renderLigaSimPuesto(year, ej); };
+    res.hidden = false; btnViejo.hidden = true;
+    const rank = document.getElementById('ligaSimRank'), cap = document.getElementById('ligaSimCap');
+    rank.textContent = '…'; cap.textContent = '';
+    LIGA_VIEW.loadRanking(elegida).then(() => {
+      if(currentClub !== club || sel.value !== elegida) return;
+      const r = LIGA_VIEW.rankingDe(elegida, year), yo = LIGA_VIEW.filaSimulada(club, year);
+      if(!r || !yo){ rank.textContent = '—'; cap.textContent = ''; return; }
+      const otros = (r.clubs || []).filter(c => c.id !== club && c.revenue);
+      const puesto = 1 + otros.filter(c => c.revenue > yo.revenue).length;
+      const nombreLiga = (LEAGUES[elegida] || {}).name || elegida;
+      rank.textContent = I18N.t('finanzas.ligasim.rank', '{p}.º').replace('{p}', puesto);
+      cap.textContent = I18N.t('finanzas.ligasim.among', 'en ingresos, entre los {n} clubes de {liga} {ej} que tenemos cargados')
+        .replace('{n}', otros.length + 1).replace('{liga}', nombreLiga).replace('{ej}', ej)
+        + (r.leagueSize ? ' ' + I18N.t('finanzas.ligasim.size', '(la liga tuvo {m})').replace('{m}', r.leagueSize) : '') + '.';
+      document.getElementById('btnLigaSimVer').onclick = () => {
+        LIGA_VIEW.showConSimulados(elegida, year, [{ clubId: club, clubYear: year }]);
+        irASeccion('liga');
+      };
+    });
   }
 
   function refreshFinanzas(){
