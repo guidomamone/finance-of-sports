@@ -35,6 +35,29 @@
       : t('finanzas.tipIncluido1', 'Está incluido en') + ' ' + tLabel(rubro) + ': ' + t('finanzas.tipIncluido2', 'la fuente lo reporta junto con ese rubro.');
   };
 
+  // QUÉ EJERCICIOS SE ESTÁN MIRANDO EN FINANZAS (to-do 147, paso 3). Hasta acá el año vivía en el DOM
+  // (`#anioSelect.value`) y unas 10 funciones lo leían de ahí. Ahora vive en este objeto, que ya es una
+  // LISTA de años porque los pasos que siguen (los cards de ejercicios) eligen varios a la vez; mientras
+  // la pantalla siga teniendo el dropdown, la lista tiene un solo año. Quien muestre UN ejercicio
+  // (KPIs, banner de calidad, ficha de fuente) usa `primary()`, el más nuevo elegido; quien necesite
+  // un balance (la simulación en otra liga) usa `lastBalance()`. Nadie lee `#anioSelect` salvo el
+  // dropdown mismo, que escribe acá con `set()`.
+  const FIN_SEL = (function(){
+    let years = [];
+    const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+    return {
+      set(list){ years = [...new Set(list.filter(Number.isFinite))].sort((a, b) => a - b); },
+      years(){ return years.slice(); },
+      has(y){ return years.includes(y); },
+      primary(){ return years.length ? years[years.length - 1] : NaN; },
+      lastBalance(clubId){
+        for(let i = years.length - 1; i >= 0; i--) if(BAL[reportTypeForYear(clubId, years[i])]) return years[i];
+        return null;
+      },
+    };
+  })();
+  window.FIN_SEL = FIN_SEL;
+
   let trendChartInst = null, breakdownChartInst = null;
   let inicioIngresosChartInst = null, inicioGastosChartInst = null, inicioDeudaChartInst = null;
 
@@ -544,7 +567,7 @@
 
 
   function updateFinanzasByAnioGeneric(clubId){
-    const y = parseInt(document.getElementById('anioSelect').value, 10);
+    const y = FIN_SEL.primary();
     const cur = computeYearGeneric(clubId, y);
     if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
@@ -566,7 +589,7 @@
     // anterior) para tratar de mantenerlo al cambiar de club, o el más cercano en el tiempo si ese
     // ejercicio puntual no existe para el club nuevo. Sin esto, el <select> siempre volvía a la
     // primera opción (el ejercicio más lejano, si la lista no estaba ordenada, ver más abajo).
-    const previousYear = parseInt(anioSelect.value, 10);
+    const previousYear = FIN_SEL.primary();
     // finanzasGestiones/finanzasYears (Versión 102, ver comentario de cabecera en data/boca-data.js):
     // campos OPCIONALES en CLUB_GENERIC_DATA[clubId], para un club que quiera mostrar en el <select>
     // de Finanzas menos gestiones/años de los que tiene cargados en gestionesByClub/fiscalYearMeta
@@ -580,6 +603,7 @@
     if(!gd){
       gestionSelect.innerHTML = '';
       document.getElementById('anioSelect').innerHTML = '';
+      FIN_SEL.set([]);
       return;
     }
     const gestiones = gestionesByClub[clubId] || {}; // Versión 112: defensivo, ver currentGestionKey() en js/finanzas-calc.js
@@ -609,6 +633,7 @@
       const target = exact || years.reduce((best, y) => Math.abs(y.value - previousYear) < Math.abs(best.value - previousYear) ? y : best);
       anioSelect.value = String(target.value);
     }
+    FIN_SEL.set([parseInt(anioSelect.value, 10)]);
   }
 
 
@@ -648,7 +673,7 @@
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     const year = isGestion
       ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
-      : parseInt(document.getElementById('anioSelect').value, 10);
+      : FIN_SEL.primary();
     const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     // REGLA (Versión 58): 'official_budget_and_balance' (ejercicio con las 2 fuentes reales
     // cargadas a la vez, ver club-or-year-onboarding/SKILL.md sección 11) es tan "real" como
@@ -927,7 +952,7 @@
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     const year = isGestion
       ? ((gestionesByClub[currentClub] || {})[document.getElementById('gestionSelect').value] || {}).lastYear
-      : parseInt(document.getElementById('anioSelect').value, 10);
+      : FIN_SEL.primary();
     const meta = (((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {})[year] || {};
     const src = sources[meta.sourceId];
     const linkTodas = linkTodasLasFuentes();

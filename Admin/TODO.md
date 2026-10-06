@@ -46,7 +46,7 @@ ni en el comentario de ningún archivo de código.
 
 147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
     lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531) y paso 2 (otra liga como card, Versión 532).
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) y paso 3 (FIN_SEL, Versión 533).
     DECISIONES DE GUIDO (2026-10-05):
     - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
       Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
@@ -65,7 +65,7 @@ ni en el comentario de ningún archivo de código.
       abre al tocar un rubro. El aviso "Viendo N ejercicios" solo aparece con 0 elegidos.
     - Valores ajustados por inflación (absorbe el 23(d)): deflactor del PBI de la moneda que se muestra (EE.UU./BEA para USD, zona
       euro/Eurostat para EUR), año base = el último ejercicio cerrado, por año de cierre (2024/25 usa 2025), los presupuestos
-      posteriores al base no se ajustan. Serie en `data/deflactores.js`, se actualiza una vez por año. Default: nominales.
+      posteriores al base no se ajustan. Serie en un archivo nuevo de data/ (deflactores, a crear en el paso 11), se actualiza una vez por año. Default: nominales.
     PASOS QUE FALTAN (cada uno con el ok de Guido; del 4 al 9 detrás de `?multi=1` hasta que estén todos):
     3. Estado de la selección: una lista de años + "el año que manda", reemplazando las ~10 lecturas directas de `anioSelect.value`.
     4. Cards de ejercicios + atajos + "+N más" + estado vacío (necesita 3).
@@ -75,7 +75,7 @@ ni en el comentario de ningún archivo de código.
     7. Gráficos arriba de la tabla, siguen a la selección; la torta pasa a barras apiladas; sale la sección "Gráficos".
     8. Deuda con columnas por año.   9. Fuentes y banner de calidad por ejercicio elegido.
     10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
-    11. Valores ajustados por inflación (`data/deflactores.js`).
+    11. Valores ajustados por inflación (archivo nuevo de deflactores en data/).
     12. Gestión: G1 formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada; los años se
         derivan de las fechas), G2 migrar Boca, Racing y los ~40 clubes con nombres reales (el relleno "Gestión actual" no se migra),
         G3 botón de gestión, G5 chequeos en audit.js. Después, G4 `tools/gestiones.mjs` (propone el firmante de cada balance desde su

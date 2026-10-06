@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 533 — To-do 147, paso 3: el año elegido en Finanzas vive en FIN_SEL, no en el dropdown (2026-10-05)
+
+- `js/finanzas-render.js`: `FIN_SEL` (también `window.FIN_SEL`) guarda la LISTA de ejercicios elegidos; `primary()` es el más nuevo (lo que muestra UN ejercicio: tabla, KPIs, banner de calidad, ficha de fuente) y `lastBalance()` el balance más nuevo elegido (otra liga). Las 6 lecturas de `#anioSelect.value` pasan a `FIN_SEL`; el dropdown escribe con `set()` (su `change`, `populateFinanzasSelectors()` y `reopenSavedSearch()`). Sin cambio visible.
+- Verificado contra `main`: 7 clubes (Racing, Boca, Juventus, Köln, Flamengo, Gimnasia, San Lorenzo), 65 ejercicios, mismo texto en tabla, KPIs, deuda, banner y fuente, y el mismo año arrastrado al cambiar de club; cambio de idioma sin pérdida. `ASSET_V` 429, `fuentes.html` regenerado.
+
 ## Versión 532 — To-do 147, paso 2: "otra liga" es un card propio (2026-10-05)
 
 - `index.html`: el botón "¿Cómo le iría en otra liga?" sale de la barra de controles (ahí parecía un filtro) y pasa a un card entre Deuda y Gráficos, "<club> en otra liga", que explica qué hace y con qué ejercicio, y un botón "Elegir una liga". `ligaSimYear()`: el ejercicio elegido si tiene balance; si es un presupuesto o un placeholder, el balance más nuevo del club (nunca un presupuesto). `renderLigaSimCard()` lo llena desde `refreshFinanzas()`.

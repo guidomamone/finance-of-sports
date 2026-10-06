@@ -28,7 +28,7 @@ consulta puntual, nunca lectura de corrido.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=428">
+<link rel="stylesheet" href="js/styles.css?v=429">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -698,46 +698,46 @@ consulta puntual, nunca lectura de corrido.
      desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
      render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
      `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '428';</script>
-<script src="data/lang/langs.js?v=428"></script>
-<script src="js/i18n.js?v=428"></script>
-<script src="data/clubs.js?v=428"></script>
+<script>window.ASSET_V = '429';</script>
+<script src="data/lang/langs.js?v=429"></script>
+<script src="js/i18n.js?v=429"></script>
+<script src="data/clubs.js?v=429"></script>
 <!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
      calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
      porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
      cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
      se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
      que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=428"></script>
+<script src="data/club-index.js?v=429"></script>
 <!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
      (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
      (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
      cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=428"></script>
-<script src="data/club-leagues.js?v=428"></script>
-<script src="data/category-map.js?v=428"></script>
-<script src="data/site-labels.js?v=428"></script>
-<script src="data/currency-map.js?v=428"></script>
-<script src="data/sources-view.js?v=428"></script>
+<script src="data/leagues.js?v=429"></script>
+<script src="data/club-leagues.js?v=429"></script>
+<script src="data/category-map.js?v=429"></script>
+<script src="data/site-labels.js?v=429"></script>
+<script src="data/currency-map.js?v=429"></script>
+<script src="data/sources-view.js?v=429"></script>
 <!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
      que entraba eager, porque Boca era el club por default del sitio. Con el cold start
      no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
      entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
      carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/info-tip.js?v=428"></script>
-<script src="js/finanzas-calc.js?v=428"></script>
-<script src="js/finanzas-render.js?v=428"></script>
+<script src="js/info-tip.js?v=429"></script>
+<script src="js/finanzas-calc.js?v=429"></script>
+<script src="js/finanzas-render.js?v=429"></script>
 <!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
      <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
      clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
      sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=428"></script>
-<script src="data/destacados.js?v=428"></script>
-<script src="js/liga.js?v=428"></script>
+<script src="js/selector.js?v=429"></script>
+<script src="data/destacados.js?v=429"></script>
+<script src="js/liga.js?v=429"></script>
 <!-- js/cuenta.js (to-do 70): login con Google vía Supabase + guardado automático de búsquedas.
      No sabe cómo se renderiza el resto del sitio, igual que js/selector.js — recibe `reopen` por
      CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=428"></script>
+<script src="js/cuenta.js?v=429"></script>
 <!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
      (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
 <script>
@@ -826,12 +826,12 @@ consulta puntual, nunca lectura de corrido.
     return clubDataPending[clubId];
   }
 
-  // to-do 147, paso 2: el ejercicio que se lleva a otra liga. El elegido si tiene balance; si es
-  // un presupuesto o un placeholder, el balance más nuevo del club (CLUB_INDEX). null si no hay.
+  // to-do 147, paso 2: el ejercicio que se lleva a otra liga. El balance más nuevo de los elegidos;
+  // si no se eligió ninguno con balance, el balance más nuevo del club (CLUB_INDEX). null si no hay.
   function ligaSimYear(){
+    const elegido = FIN_SEL.lastBalance(currentClub);
+    if(elegido) return elegido;
     const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
-    const y = parseInt(document.getElementById('anioSelect').value, 10);
-    if(BAL[reportTypeForYear(currentClub, y)]) return y;
     const yrs = ((window.CLUB_INDEX || {})[currentClub] || {}).yrs || [];
     const ultimo = yrs.find(p => BAL[p[1]]);
     return ultimo ? ultimo[0] : null;
@@ -867,7 +867,7 @@ consulta puntual, nunca lectura de corrido.
         view: 'finanzas',
         club: currentClub,
         mode: isGestion ? 'gestion' : 'anio',
-        year: isGestion ? null : parseInt(document.getElementById('anioSelect').value, 10),
+        year: isGestion ? null : FIN_SEL.primary(),
         gestion: isGestion ? document.getElementById('gestionSelect').value : null,
       });
     }
@@ -1013,7 +1013,10 @@ consulta puntual, nunca lectura de corrido.
       document.getElementById('gestionSelectWrap').style.display = isGestion ? 'inline' : 'none';
       document.getElementById('anioSelectWrap').style.display = isGestion ? 'none' : 'inline';
       if(isGestion) document.getElementById('gestionSelect').value = state.gestion;
-      else document.getElementById('anioSelect').value = String(state.year);
+      else {
+        document.getElementById('anioSelect').value = String(state.year);
+        FIN_SEL.set([parseInt(document.getElementById('anioSelect').value, 10)]);
+      }
       refreshFinanzas();
       irASeccion('finanzas');
     });
@@ -1116,7 +1119,11 @@ consulta puntual, nunca lectura de corrido.
   document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
-  document.getElementById('anioSelect').addEventListener('change', refreshFinanzas);
+  // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee (to-do 147, paso 3).
+  document.getElementById('anioSelect').addEventListener('change', e => {
+    FIN_SEL.set([parseInt(e.target.value, 10)]);
+    refreshFinanzas();
+  });
   document.querySelectorAll('#viewToggle button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#viewToggle button').forEach(b => b.classList.remove('active'));
