@@ -770,6 +770,15 @@
   .cd-agg{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;}
   .cd-agg .segmented button{padding:5px 11px;font-size:12.5px;}
   .cd-tag-presu{display:inline-block;font-size:10.5px;font-weight:600;color:#8a6d00;border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;background:#fdf8e7;}
+  /* to-do 23, paso 3: la barra de Comparar (formato fijo + valores) y su franja verde. */
+  .cd-controles{margin-bottom:16px;}
+  .cd-controles[hidden]{display:none;}
+  .cd-ctl{display:inline-flex;align-items:center;gap:8px;}
+  .cd-fmt-fijo{font-size:13px;color:var(--muted);border:1px solid var(--border);border-radius:8px;padding:7px 12px;background:#fff;}
+  .cd-fmt-fijo b{color:var(--text);font-weight:600;}
+  .cd-real-note{margin:-6px 0 18px;}
+  /* Comparar siempre muestra USD: el USD / ARS del header no hace nada ahí, así que no se muestra. */
+  body[data-section="vs"] #currencyToggleGlobal{display:none;}
 
   /* El resultado: una barra por lado en cada indicador, a escala DENTRO de su
      indicador y no entre indicadores (misma regla que la comparación de hoy). */

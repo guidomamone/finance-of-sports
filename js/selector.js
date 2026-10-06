@@ -1735,6 +1735,7 @@ window.CLUB_SELECTOR = (function(){
     wrap.innerHTML = '';
     cols.forEach(function(c){ wrap.appendChild(c); });
     renderPie();
+    renderControles();
     // SIN BOTÓN "COMPARAR" (to-do 23): con los dos lados llenos, el resultado se arma solo y se
     // rehace con cada cambio de un card, como Finanzas con sus cards de ejercicio.
     if(lado[0] && lado[1]) aplicar();
@@ -1981,6 +1982,30 @@ window.CLUB_SELECTOR = (function(){
     return lista[lista.length - 1] + '-' + lista[0] + ' (' + lista.length + ')';
   }
 
+  // LA BARRA (to-do 23, paso 3): formato fijo y "Valores: Nominales | Ajustados por
+  // inflación", como en Finanzas. La franja verde explica el ajuste con el ejercicio más
+  // viejo de la comparación y avisa si hay presupuestos posteriores al año base.
+  function renderControles(){
+    var barra = $('cdControles'), nota = $('cdRealNote');
+    if(!barra || !nota) return;
+    var listo = !!lado[0] && !!lado[1] && !!serieUSD();
+    barra.hidden = !listo;
+    barra.querySelectorAll('#cdRealToggle button').forEach(function(b){
+      b.classList.toggle('active', (b.dataset.real === '1') === cmpReal);
+      b.onclick = function(){ cmpReal = b.dataset.real === '1'; renderControles(); renderResultado(); };
+    });
+    if(!listo || !cmpReal){ nota.hidden = true; return; }
+    var ys = paresDe(lado[0]).concat(paresDe(lado[1])).map(function(p){ return p[1]; }).filter(Boolean);
+    var base = baseReal(), a = Math.min.apply(null, ys);
+    var txt = t('sel.real.note', 'Todo en M USD de {b}, ajustado con el deflactor del PBI de EE.UU.: 100 M USD de un ejercicio que cerró en {a} equivalen a {x} M de {b}. Cada ejercicio se ajusta por el año en que cierra, antes de sumar o promediar su lado.')
+      .split('{b}').join(base).replace('{a}', a).replace('{x}', Math.round(100 * facReal(a)));
+    if(ys.some(function(y){ return y > base; })){
+      txt += ' ' + t('sel.real.future', 'Los presupuestos que cierran después de {b} quedan como están: todavía no hay inflación para descontarles.').split('{b}').join(base);
+    }
+    nota.textContent = txt;
+    nota.hidden = false;
+  }
+
   // Sin botón "Comparar" (to-do 23): el pie solo avisa mientras falte un lado.
   function renderPie(){
     var pie = $('cdPie');
@@ -2013,9 +2038,15 @@ window.CLUB_SELECTOR = (function(){
     }
     mostrando = true;
 
-    Promise.resolve(api.pickClub(primerClub)).then(function(){
-      try { localStorage.setItem(LS_CLUB, primerClub); } catch(e){}
-      renderButton();
+    // Pero SOLO si todavía no había uno (to-do 23): sin botón, la comparación se rehace con
+    // cada chip, y pisar el club que el visitante estaba mirando en cada toque lo sacaba de
+    // su club sin que lo pidiera.
+    var hayClub = !!api.getClub();
+    Promise.resolve(hayClub ? null : api.pickClub(primerClub)).then(function(){
+      if(!hayClub){
+        try { localStorage.setItem(LS_CLUB, primerClub); } catch(e){}
+        renderButton();
+      }
       // Los data files de todos los clubes involucrados: sin ellos no hay qué sumar.
       // Es el único momento en que el selector baja archivos de club, y es a pedido
       // explícito ("Comparar"), no mientras elegís.
@@ -2048,8 +2079,9 @@ window.CLUB_SELECTOR = (function(){
 
     var head = el('div', 'cd-res-head');
     head.appendChild(el('h2', null, 'A ' + t('sel.vs', 'contra') + ' B'));
-    head.appendChild(el('p', 'cd-res-sub', t('sel.res.sub',
-      'En USD. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.')));
+    head.appendChild(el('p', 'cd-res-sub', cmpReal
+      ? t('sel.res.subReal', 'En USD de {b}, ajustados por inflación. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.').split('{b}').join(baseReal())
+      : t('sel.res.sub', 'En USD. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.')));
     caja.appendChild(head);
 
     // LAS 3 REGLAS DE COMPARABILIDAD SE DICEN, no solo se aplican. Vienen tal cual de
@@ -2713,7 +2745,7 @@ window.CLUB_SELECTOR = (function(){
     // crudo.
     paresDeLado: function(l){ return paresDe(l); },
     // to-do 23: "Valores ajustados por inflación" de Comparar. Lo usa el toggle de la barra (paso 3).
-    setReal: function(v){ cmpReal = !!v; if(mostrando) renderResultado(); },
+    setReal: function(v){ cmpReal = !!v; renderControles(); if(mostrando) renderResultado(); },
     baseReal: baseReal
   };
 })();

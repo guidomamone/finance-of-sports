@@ -205,6 +205,24 @@ consulta puntual, nunca lectura de corrido.
     <div class="cd-wrap" id="cdWrap"></div>
     <div class="cd-pie" id="cdPie"></div>
 
+    <!-- to-do 23, paso 3: la barra de Finanzas. El formato va fijo (es la condición para comparar
+         clubes de países distintos) y "Valores" es el mismo toggle de Finanzas, con la serie del
+         dólar. La maneja renderControles() en js/selector.js; se ve con los dos lados llenos. -->
+    <div class="controls cd-controles" id="cdControles" hidden>
+      <span class="cd-ctl">
+        <label data-i18n="sel.fmt.label">Formato:</label>
+        <span class="cd-fmt-fijo"><b data-i18n="finanzas.fmt.simple">Formato simplificado</b>, <span data-i18n="sel.fmt.why">el único comparable entre clubes</span></span>
+      </span>
+      <span class="cd-ctl">
+        <label data-i18n="finanzas.real.label">Valores:</label>
+        <div class="segmented" id="cdRealToggle">
+          <button type="button" data-real="0" class="active" data-i18n="finanzas.real.nominal">Nominales</button>
+          <button type="button" data-real="1" data-i18n="finanzas.real.adjusted">Ajustados por inflación</button>
+        </div>
+      </span>
+    </div>
+    <p class="fin-real-note cd-real-note" id="cdRealNote" hidden></p>
+
     <!-- El resultado. Fuera del bloque de arriba porque es lo que se mira, no un control. -->
     <div class="cd-resultado" id="cdResultado" hidden></div>
 
@@ -1356,6 +1374,9 @@ consulta puntual, nunca lectura de corrido.
       sections.forEach(s => s.classList.remove('active'));
       btn.classList.add('active');
       document.getElementById(btn.dataset.section).classList.add('active');
+      // to-do 23: la pestaña activa también en <body>, para que el CSS esconda lo que en ella no
+      // hace nada (el USD / ARS del header en Comparar, que siempre muestra USD).
+      document.body.dataset.section = btn.dataset.section;
     });
   });
 
