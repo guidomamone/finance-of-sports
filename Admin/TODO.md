@@ -44,11 +44,43 @@ ni en el comentario de ningún archivo de código.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
 
-147. EVOLUTIVO POR RUBRO EN FINANZAS (pedido de Guido, 2026-10-05). Hoy Finanzas tiene un solo gráfico de evolución, "Ingresos vs. gastos,
-    últimos ejercicios" (`trendChart`, solo los dos totales), y la tabla "Estado de resultados" es de UN ejercicio. Falta ver cada rubro
-    (televisión, sponsors, sueldos…) a lo largo de los años del club, lado a lado. Es la parte "comparar el club contra sí mismo" que
-    estaba dentro del 23(d); los deflactores (USD constantes) quedan allá y este punto no depende de ellos (se puede hacer en USD
-    nominales primero y sumar el selector de USD constantes cuando se cierre el 23(d)).
+147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
+    lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531) y paso 2 (otra liga como card, Versión 532).
+    DECISIONES DE GUIDO (2026-10-05):
+    - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
+      Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
+      corta (últimos 5 balances + lo elegido) y "+N más" va al principio de la misma fila. Orden: más viejo a la izquierda.
+    - Años sin publicar en el medio: rayados, no elegibles, dicen "Sin publicar" (5ta palabra autorizada para los cards; el dropdown
+      viejo sigue con sus 4).
+    - Presupuesto y balance del mismo año: manda el balance; "Presupuesto al lado del balance" (apagado por default) abre presupuesto,
+      balance y desvío (en el resultado neto, diferencia en plata, no %). Presupuesto = punto hueco y tramo punteado en todos los
+      gráficos; si el último elegido es solo presupuesto, los KPIs van punteados y la deuda en "—".
+    - Gestión: fila de botones (más vieja primero; con más de 4, "+N más" a la izquierda), acumulables: tocar suma sus años, tocar de
+      nuevo los saca. Franjas por gestión en el gráfico y columnas agrupadas por presidente en la tabla. Solo gestiones confirmadas.
+      Para empresas: el dueño solo si es una persona con nombre; SAF y sociedades anónimas sin botón. Un año con dos presidentes es
+      de quien firmó el balance.
+    - "Otra liga": usa el último balance elegido, nunca un presupuesto. El puesto ("9.º de 20") adentro del card es un paso aparte.
+    - Al cambiar de club, la selección vuelve a los últimos 5 del club nuevo. Sparklines en SVG; Chart.js solo para el gráfico que se
+      abre al tocar un rubro. El aviso "Viendo N ejercicios" solo aparece con 0 elegidos.
+    - Valores ajustados por inflación (absorbe el 23(d)): deflactor del PBI de la moneda que se muestra (EE.UU./BEA para USD, zona
+      euro/Eurostat para EUR), año base = el último ejercicio cerrado, por año de cierre (2024/25 usa 2025), los presupuestos
+      posteriores al base no se ajustan. Serie en `data/deflactores.js`, se actualiza una vez por año. Default: nominales.
+    PASOS QUE FALTAN (cada uno con el ok de Guido; del 4 al 9 detrás de `?multi=1` hasta que estén todos):
+    3. Estado de la selección: una lista de años + "el año que manda", reemplazando las ~10 lecturas directas de `anioSelect.value`.
+    4. Cards de ejercicios + atajos + "+N más" + estado vacío (necesita 3).
+    5. Estado de resultados con una columna por año, Δ, sparkline, rubro desplegable, % del total como switch, presupuesto al lado.
+       En formato del club, filas = unión de etiquetas de los años, "—" donde falta. colspans y colgroup dinámicos.
+    6. KPIs con Δ y sparkline (siguen saliendo de los totales de la tabla).
+    7. Gráficos arriba de la tabla, siguen a la selección; la torta pasa a barras apiladas; sale la sección "Gráficos".
+    8. Deuda con columnas por año.   9. Fuentes y banner de calidad por ejercicio elegido.
+    10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
+    11. Valores ajustados por inflación (`data/deflactores.js`).
+    12. Gestión: G1 formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada; los años se
+        derivan de las fechas), G2 migrar Boca, Racing y los ~40 clubes con nombres reales (el relleno "Gestión actual" no se migra),
+        G3 botón de gestión, G5 chequeos en audit.js. Después, G4 `tools/gestiones.mjs` (propone el firmante de cada balance desde su
+        transcripción, a la cola solo si cambia o falta; `cargar.mjs` deja de escribir `gestionId`) y G6 retirar `gestionesByClub`.
+    13. El puesto adentro del card "otra liga".   14. Cierre: en.js, celular, audit, docs (PANTALLA, ESTADO), borrar este punto.
 
 148. EL CHEQUEO DE TIPO DE CAMBIO (`checkFxSanity()`, index.html) DA 6 FALSOS POSITIVOS DE AÑOS VIEJOS (visto el 2026-10-05 con
     `auditAll()`). UC 2010-2013 (CLP 468-525 por dólar, rango "plausible" desde 600) y Juventus 2008 y 2011 (EUR 0,634 y 0,692, rango desde
@@ -95,7 +127,7 @@ ni en el comentario de ningún archivo de código.
         cierre ya absorbe la inflación local; lo que queda es la inflación del dólar (~35% entre 2015 y 2025). Una sola serie
         oficial, el IPC de EE.UU. (CPI-U, BLS), para todos los clubes, y un selector "USD nominales / USD de <último año>".
         Y en Finanzas, que se pueda comparar el club contra sí mismo fácilmente (pedido de Guido): sus años lado a lado, en
-        USD constantes. (La vista por rubro año a año es el to-do 147; acá queda solo la parte de USD constantes.)
+        USD constantes. DECIDIDO 2026-10-05: se hace dentro del to-do 147 (paso 11), con el deflactor del PBI y no el IPC.
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
