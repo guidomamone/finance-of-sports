@@ -39,7 +39,9 @@ const carpetaClub = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
 
 // Devuelve null si el documento puede localizarse, { falta: 'cierre' | 'perimetro', detalle, comando } si frena, o { aviso } si no se pudo
 // analizar (no frena).
-export function faltaAntesDeLocalizar(pdf, { registro, todos = false }) {
+// previsto: Map carpeta del club -> perímetro que perimetro-senales.mjs fijaría al ejecutar (solo en el ensayo; al ejecutar ya está escrito como
+// ajuste y lo toma ajustePerimetroDe).
+export function faltaAntesDeLocalizar(pdf, { registro, todos = false, previsto = null }) {
   const sitio = sitioCargar();
   const e = registro.find((x) => x.pdf === pdf) || {};
   if (!todos && e.md && existsSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })))) return null;
@@ -51,7 +53,7 @@ export function faltaAntesDeLocalizar(pdf, { registro, todos = false }) {
       comando: `node tools/ajustes.mjs --agregar "${pdf}" cierre --valor ${cv?.cierre || 'AAAA-MM-DD'} --motivo "..."` };
   }
   // PERÍMETRO
-  if (ajustePerimetroDe(pdf)) return null;
+  if (ajustePerimetroDe(pdf) || previsto?.has(carpetaClub(pdf))) return null;
   let alta; try { alta = analizar(pdf, sitio); } catch (err) { return { aviso: `no se pudo analizar el documento (${err.message}); no frena` }; }
   if (alta?.error) return { aviso: `alta-club: ${alta.error}; no frena` };
   const perC = alta.ejercicio.campos.find((c) => c.campo === 'perimetro') || {};
@@ -71,7 +73,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (i < 0) { console.error('Uso: node tools/antes-de-localizar.mjs --lista <archivo> [--todos]'); process.exit(1); }
   const docs = readFileSync(resolve(ROOT, A[i + 1]), 'utf8').split('\n').map((l) => l.trim().replace(/^testigo\s+/i, '')).filter((l) => l && !l.startsWith('#'));
   const registro = readFileSync(resolve(ROOT, 'Admin', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  // (perimetro-senales.mjs) el escalón que fija el perímetro del club cuando sus documentos coinciden: acá en modo ensayo (sin Jev ni escritura).
+  const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
+  const PS = await fijarPerimetroDeClubes(docs, { registro, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro, todos: A.includes('--todos') })?.falta === 'perimetro' });
+  const previsto = new Map(PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']));
+  for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor ? `se fija ${x.valor} al ejecutar el lote (${x.detalle})` : x.pendienteJev ? `lo decide Jev al ejecutar el lote (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
   let n = 0;
-  for (const pdf of docs) { const f = faltaAntesDeLocalizar(pdf, { registro, todos: A.includes('--todos') }); if (!f) continue; if (f.aviso) { console.log(`  aviso: ${pdf}: ${f.aviso}`); continue; } n++; console.log(`  FALTA ${f.falta}: ${pdf}\n     ${f.detalle}\n     ${f.comando}`); }
+  for (const pdf of docs) { const f = faltaAntesDeLocalizar(pdf, { registro, todos: A.includes('--todos'), previsto }); if (!f) continue; if (f.aviso) { console.log(`  aviso: ${pdf}: ${f.aviso}`); continue; } n++; console.log(`  FALTA ${f.falta}: ${pdf}\n     ${f.detalle}\n     ${f.comando}`); }
   console.log(`${n} de ${docs.length} documento(s) frenarían antes de localizar.`);
 }

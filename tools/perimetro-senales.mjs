@@ -6,8 +6,9 @@
 // MENCIONES de "consolidato": 5 de 12 clubes frenaron por un falso positivo (Torino, Sassuolo, Monza, Napoli, Sampdoria: las menciones
 // son del grupo dueño del club, no un estado del club). Y donde el documento trae los dos, nadie le dice a Guido cuál conviene.
 //
-// ESTADO: SUELTO. Todavía no lo llama ninguna tool del pipeline: se mide contra Admin/tests/perimetro-verdad.tsv y, recién si acierta
-// sin errores, se enchufa a antes-de-localizar.mjs como escalón (con el ok de Guido).
+// DÓNDE SE USA (Versión 561, aprobado por Guido el 2026-10-06): lote.mjs y antes-de-localizar.mjs llaman a fijarPerimetroDeClubes() (abajo)
+// antes de la compuerta del perímetro. Medido contra Admin/tests/perimetro-verdad.tsv: 77 bien, 0 mal, 23 sin decidir. Cualquier cambio acá
+// se mide otra vez con esa verdad (--verdad ... --jev) y tiene que seguir en 0 mal.
 //
 // LA ESCALERA (solo propone; lo que no se decide va a la cola humana):
 //
@@ -267,6 +268,54 @@ export async function proponer(mdRel, { jev = false } = {}) {
   else if (si === 0) { r.propuesta = 'individual'; r.motivo = '0 de 3 criterios'; }
   else { r.motivo = '1 de 3 criterios: a la cola'; }
   return r;
+}
+
+// ---------------------------------------------------------------- LA REGLA DEL CLUB (lo que usa el pipeline)
+// El ajuste `perimetro` se fija por CLUB (Admin/ajustes-manuales.jsonl), pero la propuesta es por documento. Se miran TODOS los .md del club
+// (no solo los de la lista), agrupados por ejercicio (cierre del registro):
+//   - de cada ejercicio, qué perímetros HAY: "solo uno" (paso A) o los dos (dos documentos del mismo cierre, o uno con los dos);
+//   - los votos: lo que eligió el paso B en los documentos que traen los dos.
+// Se fija solo si: los votos coinciden entre sí, y ningún ejercicio tiene SOLO el otro perímetro. Sin votos, vale el perímetro único de
+// todos los ejercicios. Si algún ejercicio tiene solo el otro perímetro (un cambio de perímetro en la serie: Parma, individual 2018-2024 y
+// solo consolidado 2022 y 2025), NO se fija: frena la compuerta de siempre y Guido decide. Un documento que no decide (cola) no cuenta.
+//   ejecutar = true: pregunta a Jev lo que haga falta y ESCRIBE el ajuste del club (autor "perimetro-senales").
+//   ejecutar = false (ensayo): sin Jev ni escritura; dice qué fijaría, o que lo decide Jev al ejecutar.
+// faltaPerimetro(pdf): la compuerta (antes-de-localizar.mjs) dice que ese documento frena por perímetro; solo se miran esos clubes.
+export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false, faltaPerimetro, descartados = new Set() }) {
+  const { ajustePerimetroDe, agregarAjuste } = await import('./ajustes.mjs');
+  const carpeta = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
+  const clubes = [...new Set(pdfs.filter((p) => !ajustePerimetroDe(p) && faltaPerimetro(p)).map(carpeta))];
+  const out = [];
+  for (const c of clubes) {
+    const docs = registro.filter((e) => e.pdf.startsWith(c) && e.estado !== 'duplicado' && !descartados.has(e.pdf) && e.md && existsSync(resolve(ROOT, e.md)));
+    const props = [];
+    for (const e of docs) props.push({ e, r: await proponer(e.md, { jev: ejecutar }) });
+    const porCierre = new Map(); const votos = new Map(); let pendJev = 0;
+    for (const { e, r } of props) {
+      const k = e.periodo?.cierre || e.md;
+      const set = porCierre.get(k) || new Set();
+      if (r.pasoA === 'solo-individual') set.add('individual');
+      else if (r.pasoA === 'solo-consolidado') set.add('consolidado');
+      else if (r.pasoA === 'los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; }
+      porCierre.set(k, set);
+    }
+    const valoresVoto = [...new Set(votos.values())];
+    const unicos = [...porCierre.entries()].filter(([, s]) => s.size === 1).map(([k, s]) => [k, [...s][0]]);
+    const valoresUnicos = [...new Set(unicos.map(([, v]) => v))];
+    let valor = null; let porque = '';
+    if (valoresVoto.length > 1) porque = `los documentos que traen los dos estados no eligen lo mismo (${[...votos].map(([m, v]) => `${m.split('/').pop()}: ${v}`).join('; ')})`;
+    else if (valoresVoto.length === 1 && valoresUnicos.some((v) => v !== valoresVoto[0])) porque = `los votos dan ${valoresVoto[0]}, pero hay ejercicios con solo el otro perímetro (${unicos.filter(([, v]) => v !== valoresVoto[0]).map(([k]) => k).join(', ')})`;
+    else if (!valoresVoto.length && valoresUnicos.length > 1) porque = `hay ejercicios con solo individual (${unicos.filter(([, v]) => v === 'individual').map(([k]) => k).join(', ')}) y con solo consolidado (${unicos.filter(([, v]) => v === 'consolidado').map(([k]) => k).join(', ')})`;
+    else if (valoresVoto.length === 1) valor = valoresVoto[0];
+    else if (valoresUnicos.length === 1) valor = valoresUnicos[0];
+    else porque = 'ningún documento del club decide';
+    const evidencia = `${votos.size} documento(s) con los dos estados votan ${valoresVoto.join('/') || '—'}; ${unicos.length} ejercicio(s) con un solo perímetro (${valoresUnicos.join('/') || '—'}); ${props.length} documento(s) mirados`;
+    if (!valor && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, pendienteJev: true, detalle: `${porque || 'sin decidir'}; ${pendJev} documento(s) esperan el voto de Jev (se pregunta al ejecutar)` }); continue; }
+    if (!valor) { out.push({ carpeta: c, valor: null, detalle: porque }); continue; }
+    if (ejecutar) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, autor: 'perimetro-senales' });
+    out.push({ carpeta: c, valor, escrito: ejecutar, detalle: evidencia });
+  }
+  return out;
 }
 
 // ---------------------------------------------------------------- CLI

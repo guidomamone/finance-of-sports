@@ -110,6 +110,14 @@ const paginasEnImagen = (pdf) => {
   return out;
 };
 console.log(`\n=== Etapas 3-5: localizar, validar, extraer (${EJECUTAR ? 'DE VERDAD' : 'ENSAYO, sin API'}) ===`);
+// ETAPA 3, ANTES DE LA COMPUERTA: EL PERÍMETRO DEL CLUB POR SEÑALES (tools/perimetro-senales.mjs, aprobado por Guido el 2026-10-06). Para cada
+// club de la lista que frenaría por perímetro, mira todos sus .md y, si coinciden (tablas de cada perímetro y el voto de 3 criterios, uno de
+// Jev), fija el ajuste del club; si no, la compuerta frena como siempre y Guido decide. En el ensayo no pregunta a Jev ni escribe: dice qué
+// fijaría. Caso: lote 14, 12 clubes italianos nuevos, 29 documentos frenados por perímetro.
+const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
+const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: EJECUTAR, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
+const previstoPerimetro = EJECUTAR ? null : new Map(PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']));
+for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor} (${x.detalle})` : x.pendienteJev ? `lo decide Jev al ejecutar (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
 for (const pdf of docs) {
   let e = registro.find((x) => x.pdf === pdf);
   // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
@@ -216,7 +224,7 @@ for (const pdf of docs) {
   // se localizó y le falta fijar el CIERRE o el PERÍMETRO (trae consolidado e individual y no hay ajuste ni año cargado de dónde heredarlo),
   // no se localiza: se imprime el ajuste que falta y el resto del lote sigue. Caso: Juventus, lote 13, localizó 2020-21 a 2024-25 con el
   // consolidado y hubo que pagar localizar y extraer otra vez (~US$ 2,8). La escalera está en tools/antes-de-localizar.mjs.
-  const FP = faltaAntesDeLocalizar(pdf, { registro });
+  const FP = faltaAntesDeLocalizar(pdf, { registro, previsto: previstoPerimetro });
   if (FP?.aviso) console.log(`  ${pdf}: compuerta antes de localizar: ${FP.aviso}`);
   else if (FP) { aFijar.push({ pdf, ...FP }); estado[pdf] = `falta fijar el ${FP.falta} antes de localizar`; console.log(`  ${pdf}: FALTA FIJAR EL ${FP.falta.toUpperCase()} antes de localizar (no se paga): ${FP.detalle}`); continue; }
   // ETAPAS 3-5, ¿EL CACHÉ SIGUE SIRVIENDO? (Versión 445, punto 1.iv del HANDOFF, aprobado por Guido el 2026-10-04): si el .md cambió

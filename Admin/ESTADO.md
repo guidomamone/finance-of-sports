@@ -53,6 +53,12 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La preparación para Jev y
   la categorización vieja se retiraron en la Versión 529 (to-do 142c): la lista de rubros la arma `verificar.mjs` y la categorización es la
   etapa 7 del lote.
+- Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
+  ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
+  perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
+- Italia (onboarding en curso): 18 clubes nuevos, 142 PDFs. Etapa 2: 35 de 105 validados (primer tercio, `--limit 35`); faltan 70
+  (~US$ 41, mismo comando dos veces más). `Admin/lote-14.txt` (34 documentos del primer tercio) tiene el perímetro resuelto para sus 12
+  clubes (11 por señales al ejecutar, Parma a mano) y está listo para el lote (~US$ 14 de localizar y extraer, ensayo).
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
 

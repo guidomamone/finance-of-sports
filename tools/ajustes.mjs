@@ -88,6 +88,14 @@ export function ajusteClubODoc(pdf, campo) {
   const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length) return delDoc[delDoc.length - 1];
   const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length ? delClub[delClub.length - 1] : null;
 }
+// Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
+// perímetro de un club cuando sus documentos coinciden (autor "perimetro-senales"); el motivo cita los documentos y los criterios.
+export function agregarAjuste(a) {
+  if (!CAMPOS.includes(a.campo)) throw new Error(`campo desconocido: ${a.campo}`);
+  const linea = { pdf: a.pdf, campo: a.campo, valor: a.valor ?? null, linea: a.linea ?? null, motivo: a.motivo, evidencia: a.evidencia ?? null, autor: a.autor, fecha: new Date().toISOString().slice(0, 10) };
+  appendFileSync(ARCHIVO, JSON.stringify(linea) + '\n');
+  return linea;
+}
 export function ajustePerimetroDe(pdf) {
   const todos = leer().filter((a) => a.campo === 'perimetro');
   const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length) return delDoc[delDoc.length - 1];

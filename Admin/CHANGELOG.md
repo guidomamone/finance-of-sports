@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 561 — Italia: etapa 2 del primer tercio y el perímetro del club por señales (2026-10-06)
+
+- `pipeline.mjs` sobre 35 de los 105 documentos italianos sin validar (todos "listo"); lista `Admin/lote-14.txt` (34, sin el informe del
+  auditor de Lazio 2024-25).
+- Nuevo `tools/perimetro-senales.mjs`: propone individual o consolidado por documento (tablas de cada perímetro y voto de 3 criterios, uno
+  de Jev) y fija el ajuste del club cuando sus documentos coinciden. Lo llaman `lote.mjs` y `antes-de-localizar.mjs` antes de la compuerta;
+  `ajustes.mjs` exporta `agregarAjuste()`. Verdad de prueba: `Admin/tests/perimetro-verdad.tsv`. Prueba completa idéntica antes y después.
+- Ajuste de Parma: individual (Guido).
+
 ## Versión 560 — To-do 23 cerrado (2026-10-06)
 
 - Lo único que quedaba era la nota "techo del modelo" (la taxonomía es de fútbol), que no es una tarea: pasó a `Admin/ESTADO.md`.
