@@ -534,9 +534,9 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:1152.906397, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:14863.072662, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:23789.84136, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:2289.790438, disclosureLevel:'detailed', items:[
-      ['Cobranzas de otras actividades deportivas', 599.188852], ['Cobranzas de instituciones educativas', 1690.601585],
-    ]},
+    // (Versión 550, to-do 101) los dos sub-ítems de "Ingresos de otras secciones" como líneas: el colegio es `education`, como 2009-2025.
+    { rawLabel:'Cobranzas de otras actividades deportivas', normalizedCategory:'other_sports', amountNative:599.188852, disclosureLevel:'detailed' },
+    { rawLabel:'Cobranzas de instituciones educativas', normalizedCategory:'education', amountNative:1690.601585, disclosureLevel:'detailed' },
     { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:6950.531967, disclosureLevel:'detailed', items:[
       ['Cobros de otros recursos ordinarios', 6430.531967], ['Cobros de rentas financieras', 520.0],
     ]},
@@ -557,9 +557,9 @@ const racingRevenueLinesByYear = {
     { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:1551.494, disclosureLevel:'detailed' },
     { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:13778.918428, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:36786.392109, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:4359.330552, disclosureLevel:'detailed', items:[
-      ['Cobranzas de otras actividades deportivas', 1151.782091], ['Cobranzas de instituciones educativas', 3207.548462],
-    ]},
+    // (Versión 550, to-do 101) los dos sub-ítems de "Ingresos de otras secciones" como líneas: el colegio es `education`, como 2009-2025.
+    { rawLabel:'Cobranzas de otras actividades deportivas', normalizedCategory:'other_sports', amountNative:1151.782091, disclosureLevel:'detailed' },
+    { rawLabel:'Cobranzas de instituciones educativas', normalizedCategory:'education', amountNative:3207.548462, disclosureLevel:'detailed' },
     { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:8942.65347, disclosureLevel:'detailed', items:[
       ['Cobros de otros recursos ordinarios', 8664.10347], ['Cobros de rentas financieras', 278.55],
     ]},
@@ -605,8 +605,9 @@ const racingRevenueLinesByYear = {
 //   gastos por participación" (2026/2027, costo de participar en competencias: viajes,
 //   concentración). Mismo concepto que "Organización de Espectáculos" de Boca.
 // - `youth_other_sports_expense`: "Actividades deportivas y sociales" (2009-2011/2024/2025), "Pago
-//   de gastos fútbol amateur (activable)" y "Egresos de otras secciones" (2026/2027, incluye
-//   sub-ítems de otras actividades deportivas E instituciones educativas). Mismo concepto que
+//   de gastos fútbol amateur (activable)" y los dos sub-ítems de otras actividades deportivas de
+//   "Egresos de otras secciones" (2026/2027; los de instituciones educativas van a `education_expense`
+//   desde la Versión 550, to-do 101). Mismo concepto que
 //   "Fútbol Juvenil"+"Otros Deportes"+"Basket" de Boca.
 // - `admin_general_expense`: "Televisión AFA"/"Honorarios órgano fiduciario"/"Honorarios y otras
 //   contribuciones"/"Mantenimiento"/"Sellados, multas y gastos bancarios"/"Sede Villa del
@@ -956,10 +957,11 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-9719.521189, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-5260.525946, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-7069.748476, disclosureLevel:'detailed' },
-    { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-4732.977406, disclosureLevel:'detailed', items:[
-      ['Pago de remuneraciones otras actividades deportivas', -894.565507], ['Pago de gastos otras actividades deportivas', -572.029391],
-      ['Pago de remuneraciones de instituciones educativas', -2743.247721], ['Pago de gastos de instituciones educativas', -523.134788],
-    ]},
+    // (Versión 550, to-do 101) los cuatro sub-ítems de "Egresos de otras secciones" como líneas: el colegio es `education_expense`, como 2009-2018.
+    { rawLabel:'Pago de remuneraciones otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-894.565507, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-572.029391, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de remuneraciones de instituciones educativas', normalizedCategory:'education_expense', amountNative:-2743.247721, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos de instituciones educativas', normalizedCategory:'education_expense', amountNative:-523.134788, disclosureLevel:'detailed' },
     { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-17160.514764, disclosureLevel:'detailed', items:[
       ['Pago de gastos de administración', -12318.896759], ['Pago de otros gastos ordinarios', -436.882116],
       ['Pago de impuestos, tasas y contribuciones', -2427.991586], ['Pago de gastos financieros', -1976.744303],
@@ -986,10 +988,11 @@ const racingExpenseLinesByYear = {
     { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-14335.322189, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-5462.113805, disclosureLevel:'detailed' },
     { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-8478.900817, disclosureLevel:'detailed' },
-    { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-5981.254752, disclosureLevel:'detailed', items:[
-      ['Pago de remuneraciones otras actividades deportivas', -389.374038], ['Pago de gastos otras actividades deportivas', -1970.613103],
-      ['Pago de remuneraciones de instituciones educativas', -2789.252081], ['Pago de gastos de instituciones educativas', -832.01553],
-    ]},
+    // (Versión 550, to-do 101) los cuatro sub-ítems de "Egresos de otras secciones" como líneas: el colegio es `education_expense`, como 2009-2018.
+    { rawLabel:'Pago de remuneraciones otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-389.374038, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-1970.613103, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de remuneraciones de instituciones educativas', normalizedCategory:'education_expense', amountNative:-2789.252081, disclosureLevel:'detailed' },
+    { rawLabel:'Pago de gastos de instituciones educativas', normalizedCategory:'education_expense', amountNative:-832.01553, disclosureLevel:'detailed' },
     { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-19998.655736, disclosureLevel:'detailed', items:[
       ['Pago de gastos de administración', -15375.16962], ['Pago de otros gastos ordinarios', -519.097351],
       ['Pago de impuestos, tasas y contribuciones', -2157.3], ['Pago de gastos financieros', -1947.088765],
@@ -1558,9 +1561,9 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Cobros de derechos de formación y mecanismo de solidaridad', normalizedCategory:'player_sales', amountNative:7.960000 },
       { rawLabel:'Cobros de otros recursos de gestión por fútbol', normalizedCategory:'other_income', amountNative:18.000000 },
       { rawLabel:'Ingresos sociales', normalizedCategory:'member_dues', amountNative:634.152050 },
-      { rawLabel:'Ingresos de otras secciones', normalizedCategory:'other_sports', amountNative:76.100000, items:[
-        ['Cobranzas de otras actividades deportivas', 29.700000], ['Cobranzas de instituciones educativas', 46.400000],
-      ]},
+      // (Versión 550, to-do 101) los dos sub-ítems de "Ingresos de otras secciones" como líneas: el colegio es `education`, como 2009-2025.
+      { rawLabel:'Cobranzas de otras actividades deportivas', normalizedCategory:'other_sports', amountNative:29.700000 },
+      { rawLabel:'Cobranzas de instituciones educativas', normalizedCategory:'education', amountNative:46.400000 },
       { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:78.600000, items:[
         ['Cobros de otros recursos ordinarios', 30.600000], ['Cobros de rentas financieras', 48.000000],
       ]},
@@ -1590,10 +1593,11 @@ const racingPresupuestoOverlayByYear = {
       { rawLabel:'Pago de gastos por compraventa de jugadores', normalizedCategory:'other_expenses', amountNative:-95.795000 },
       { rawLabel:'Pago de gastos fútbol amateur (activable)', normalizedCategory:'youth_other_sports_expense', amountNative:-122.000000 },
       { rawLabel:'Pago de gastos de comercialización', normalizedCategory:'admin_general_expense', amountNative:-81.082048 },
-      { rawLabel:'Egresos de otras secciones', normalizedCategory:'youth_other_sports_expense', amountNative:-107.500000, items:[
-        ['Pago de remuneraciones otras actividades deportivas', -6.900000], ['Pago de gastos otras actividades deportivas', -53.700000],
-        ['Pago de remuneraciones de instituciones educativas', -38.600000], ['Pago de gastos de instituciones educativas', -8.300000],
-      ]},
+      // (Versión 550, to-do 101) los cuatro sub-ítems de "Egresos de otras secciones" como líneas: el colegio es `education_expense`, como 2009-2018.
+      { rawLabel:'Pago de remuneraciones otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-6.900000 },
+      { rawLabel:'Pago de gastos otras actividades deportivas', normalizedCategory:'youth_other_sports_expense', amountNative:-53.700000 },
+      { rawLabel:'Pago de remuneraciones de instituciones educativas', normalizedCategory:'education_expense', amountNative:-38.600000 },
+      { rawLabel:'Pago de gastos de instituciones educativas', normalizedCategory:'education_expense', amountNative:-8.300000 },
       { rawLabel:'Otros egresos', normalizedCategory:'admin_general_expense', amountNative:-325.900000, items:[
         ['Pago de gastos de administración', -42.600000], ['Pago de otros gastos ordinarios', -228.000000],
         ['Pago de impuestos, tasas y contribuciones', -7.300000], ['Pago de gastos financieros', -48.000000],

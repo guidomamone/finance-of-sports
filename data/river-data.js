@@ -134,7 +134,7 @@ const riverExpenseLinesByYear = {
   2021: [
     { rawLabel:'Fútbol profesional — Sueldos y cargas sociales', normalizedCategory:'wages_squad', amountNative:-524.701710, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol profesional — resto (sin desglosar por la fuente)', normalizedCategory:'lump_football_operations_expense', amountNative:-3955.164136, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Educación', normalizedCategory:'youth_other_sports_expense', amountNative:-279.214824, disclosureLevel:'detailed' },
+    { rawLabel:'Educación', normalizedCategory:'education_expense', amountNative:-279.214824, disclosureLevel:'detailed' },
     { rawLabel:'Deportes', normalizedCategory:'youth_other_sports_expense', amountNative:-327.396855, disclosureLevel:'detailed' },
     { rawLabel:'Administración', normalizedCategory:'admin_general_expense', amountNative:-592.866913, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento e intendencia', normalizedCategory:'admin_general_expense', amountNative:-453.493513, disclosureLevel:'detailed' },
@@ -163,8 +163,11 @@ const riverExpenseLinesByYear = {
   //   - "Fútbol profesional" -> `lump_football_operations_expense`, que es exactamente lo que
   //     es: un bolsón que la fuente no desglosa. Se muestra en la fila "Fútbol profesional (sin
   //     desglosar por la fuente)", que lo dice, en vez de perderse en "Otros gastos".
-  //   - "Educación" y "Deportes" -> `youth_other_sports_expense` (Boca manda ahí su
-  //     Departamento de educación física, Fútbol juvenil, Básquet y Fútbol femenino).
+  //   - "Deportes" -> `youth_other_sports_expense` (Boca manda ahí su Departamento de educación
+  //     física, Fútbol juvenil, Básquet y Fútbol femenino). "Educación" -> `education_expense`
+  //     (Versión 550, to-do 101: la fila espejo del ingreso "Educación" existe desde la Versión 194 y
+  //     River había quedado afuera de esa recategorización. Sin ajuste manual: el ajuste `categoria` va
+  //     por etiqueta y movería también el INGRESO "Educación"; River se carga a mano, no por el pipeline).
   //   - "Administración", "Mantenimiento e intendencia", "Servicio médico y asistencial",
   //     "Socios" y "Museo" -> `admin_general_expense` (Boca manda ahí "Gastos generales",
   //     "Gastos de estructura operativa — Otros", "Departamento médico — Otros gastos
@@ -200,7 +203,7 @@ const riverExpenseLinesByYear = {
     //   3. Una segunda fila al azar ("Transporte") también cierra exacto contra su total impreso.
     { rawLabel:'Fútbol profesional — Sueldos y cargas sociales', normalizedCategory:'wages_squad', amountNative:-12889.436305, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol profesional — resto (sin desglosar por la fuente)', normalizedCategory:'lump_football_operations_expense', amountNative:-65946.176101, disclosureLevel:'not_disclosed' },
-    { rawLabel:'Educación', normalizedCategory:'youth_other_sports_expense', amountNative:-4112.960939, disclosureLevel:'detailed' },
+    { rawLabel:'Educación', normalizedCategory:'education_expense', amountNative:-4112.960939, disclosureLevel:'detailed' },
     { rawLabel:'Deportes', normalizedCategory:'youth_other_sports_expense', amountNative:-5640.127149, disclosureLevel:'detailed' },
     { rawLabel:'Administración', normalizedCategory:'admin_general_expense', amountNative:-10887.796621, disclosureLevel:'detailed' },
     { rawLabel:'Mantenimiento e intendencia', normalizedCategory:'admin_general_expense', amountNative:-7235.840776, disclosureLevel:'detailed' },

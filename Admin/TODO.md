@@ -48,24 +48,17 @@ ni en el comentario de ningún archivo de código.
       `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
       lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
 
-101. CONFLICTOS DE CATEGORIZACIÓN REALES, ENCONTRADOS PROBANDO `tools/suggest-category-precedent.mjs`
-    CONTRA LOS 162 CLUBES (2026-09-28, ver el ex to-do 98 en `Admin/Archive/todos-cerrados-onboarding-manual.md`). Mismo rubro, mismo lado (ingreso o gasto),
-    categoría DISTINTA entre ejercicios del MISMO club — no es un bug de la tool (ya separa
-    ingreso/gasto), es una inconsistencia real que quedó en los datos ya cargados. Revisar cada uno
-    contra el documento fuente y unificar (o dejar documentado por qué el cambio de categoría entre
-    años es correcto, si lo es):
-    - **Más casos, del backtest de `tools/categorizar-claude.mjs` (2026-09-30, `Admin/tests/test-categorizar-claude.md`)**: los errores de
-      Claude con confianza >= 0,80 son casi todos incoherencias de producción, no del modelo: "Seguros" fuera de `admin_general_expense` contra lo que dice el skill; cargas sociales
-      de juveniles de Boca en `wages_squad` contra la regla del skill; "Interese perdidos" de Almagro como línea (los intereses van a
-      `netInterest`); River "Educación" (gasto) fuera de `education_expense`; gastos de transferencias partidos 40 `other_expenses` / 31
-      `player_amortisation`. Mientras sigan, parte del "error" medido de la categorización automática es la vara.
-
-    **Además, un FALSO positivo de la propia tool, no un conflicto real**: Mallorca marcó
-    "Otros gastos de gestión corriente" (2025) en conflicto, pero son 2 rubros DISTINTOS del
-    documento ("Otros gastos de gestión corriente" y "Otros (gastos de gestión corriente)") que
-    `normalize()` colapsa al mismo texto por sacar los paréntesis — la categorización de Mallorca en
-    sí está bien, es la tool la que los confunde. Si se repite este patrón, evaluar si `normalize()`
-    necesita distinguir texto entre paréntesis en vez de descartarlo.
+101. CRITERIOS DE CATEGORÍA A DECIDIR (revisión de los 169 clubes por un subagente, 2026-10-05; los errores claros, River y Racing
+    Educación, quedaron corregidos en la Versión 550). Casi no hay conflictos entre años: lo que hay son rubros parejos dentro del club
+    pero contra la skill. Decisiones de Guido, una por línea; cada corrección con su ajuste manual si el club pasa por el pipeline:
+    1. Boca 2022, 2023 y 2025: sueldos de juveniles, básquet, educación física, Casa Amarilla, estadio y estructura en `wages_squad`
+       (2025: 21.417 M ARS de 67.870); la skill §17 y el presupuesto 2027 de Boca los mandan a otras secciones / administración.
+    2. Gastos de transferencias, préstamos y comisiones de jugadores: mitad de los clubes en `other_expenses`, mitad en
+       `player_amortisation` (la skill §1 dice este). San Lorenzo cambia entre años (2012-2013 vs 2015-2017).
+    3. "Seguros" en `other_expenses` (Argentinos 2016-18, San Lorenzo 2012-17, Unión 2022-23, Rosario Central 2023); la skill dice admin.
+    4. Intereses dentro de gastos operativos como línea (Almagro, Colo-Colo, Fortaleza CEIF, Botafogo SP, Racing); la skill dice netInterest.
+    5. Alquileres: repartidos entre `admin_general_expense` y `other_expenses`; Novorizontino cambia en 2022-2023.
+    6. Boca 2027 (presupuesto): pretemporada, seguros, viajes y vigilancia (~6.600 M ARS) dentro de la línea de sueldos del fútbol profesional.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):

@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 550 — To-do 101: errores claros de categoría corregidos (2026-10-05)
+
+- River 2021 y 2024: el gasto "Educación" (−279,2 y −4.113,0 M ARS) pasa de `youth_other_sports_expense` a `education_expense`, espejo del ingreso (quedó fuera de la recategorización de la Versión 194). Sin ajuste manual: el ajuste `categoria` va por etiqueta y movería también el ingreso "Educación"; River no pasa por el pipeline.
+- Racing presupuestos 2019, 2026 y 2027: los sub-ítems de "Ingresos/Egresos de otras secciones" pasan a líneas propias; los de instituciones educativas van a `education` / `education_expense`, como el colegio en 2009-2025.
+- Ningún total cambia: `auditAll()` 1.136 OK y los 3 de Bayern de siempre. ASSET_V 446 → 447, audit 0 P0/P1.
+- La revisión de los 169 clubes (subagente) dejó 6 decisiones de criterio en el to-do 101.
+
 ## Versión 549 — To-dos 139, 140 y 145 fuera de la lista (2026-10-05)
 
 - Decisión de Guido: el 139 (defecto D, un solo caso, sin daño), el 140(b) (Gemini sobre escaneos enteros, sin caso) y el 145 (caja-deuda en tablas sin columna de notas, sin daño) salen de la lista. El diagnóstico de cada uno queda en las Versiones 513-514 y 521 de este archivo.
