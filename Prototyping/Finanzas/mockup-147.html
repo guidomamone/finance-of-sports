@@ -32,17 +32,17 @@ h1{font-size:28px;margin:0;display:flex;align-items:center;gap:6px}
 .barrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
 .years{display:flex;gap:6px;flex-wrap:wrap}
-.yc{position:relative;border:1px solid var(--border);background:#fff;border-radius:8px;padding:5px 8px 5px 24px;cursor:pointer;text-align:left;min-width:72px;font:inherit;line-height:1.15}
+.yc{position:relative;border:1px solid var(--border);background:#fff;border-radius:8px;padding:5px 10px;cursor:pointer;text-align:left;min-width:72px;font:inherit;line-height:1.15}
 .yc b{display:block;font-size:13px;font-variant-numeric:tabular-nums}
 .yc span{display:block;font-size:10px;color:var(--muted);white-space:nowrap}
-.yc::before{content:"";position:absolute;left:7px;top:50%;margin-top:-6px;width:12px;height:12px;border:1.5px solid #b9b9b4;border-radius:3px;background:#fff}
+.yc::before{display:none;content:"";position:absolute;left:7px;top:50%;margin-top:-6px;width:12px;height:12px;border:1.5px solid #b9b9b4;border-radius:3px;background:#fff}
 .yc.on{border-color:var(--azul);background:var(--soft)}
 .yc.on::before{background:var(--azul);border-color:var(--azul);box-shadow:inset 0 0 0 2px #fff}
 .yc.on b{color:var(--azul)}
 .yc.p{border-style:dashed}
 .yc.p span{color:var(--budget)}
 .yc.x{cursor:not-allowed;opacity:.5;background:repeating-linear-gradient(135deg,#fff 0 6px,#f3f3f1 6px 12px)}
-.yc.x::before{display:none}.yc.x{padding-left:8px}
+
 .presets{display:flex;gap:6px}
 .presets button,.seg button,.sw{border:1px solid var(--border);background:#fff;border-radius:6px;padding:5px 9px;font-size:12px;cursor:pointer;font:inherit;font-size:12px}
 .presets button.on{border-color:var(--azul);color:var(--azul);font-weight:600}
@@ -62,7 +62,7 @@ h1{font-size:28px;margin:0;display:flex;align-items:center;gap:6px}
 tr.gest th{font-size:11px;text-align:center;color:var(--azul);font-weight:700;border-bottom:0;padding:6px 4px 0}
 tr.gest th span{display:block;overflow:hidden;text-overflow:ellipsis;max-width:100%;border-bottom:2px solid var(--azul);padding-bottom:3px}
 tr.gest th.g1 span{border-color:#8fb0dd;color:#3f6fb5}
-.more{margin-top:8px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.more{align-self:center;white-space:nowrap;flex:none;margin-right:4px;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
 .more:hover{text-decoration:underline}
 .empty{background:#fff;border:1px dashed #c9c9c4;border-radius:10px;padding:40px 20px;text-align:center;color:var(--muted);margin-bottom:16px}
 .empty b{color:var(--text);font-size:16px}
@@ -158,7 +158,6 @@ summary{cursor:pointer;font-weight:600}
     </div>
     <div class="barrow" id="gestRow"><span id="gestWrap" class="gestwrap"></span></div>
     <div class="years" id="years"></div>
-    <button class="more" id="more" hidden></button>
     <div class="hint" id="hint" style="margin-top:6px"></div>
     <div class="barrow viewrow">
       <span class="lbl">Formato</span>
@@ -233,8 +232,8 @@ summary{cursor:pointer;font-weight:600}
       <li><b>Una columna por ejercicio</b>, más Δ (primero vs. último elegido) y una sparkline por rubro. Tocar un rubro abre su gráfico ahí mismo (el to-do 147). Si hay un salto entre columnas, una columnita "…" lo marca. <em>Tufte: sparklines; Few: tabla para el valor, gráfico para la forma.</em></li>
       <li><b>"Otra liga" es un card con la respuesta a la vista</b>, no un botón entre los filtros. Usa el último balance elegido (nunca un presupuesto). <em>Norman: signifiers.</em></li>
       <li><b>Fuentes acompaña a la selección:</b> un renglón por ejercicio; si tiene presupuesto y balance, los dos documentos.</li>
-      <li><b>Gestión (Racing).</b> Si el club tiene gestiones cargadas y confirmadas, aparece una fila "Gestión" con un botón por presidente. Tocarlo elige todos los ejercicios de ese mandato (presupuestos incluidos: son sus promesas); tocarlo de nuevo los saca, igual que Todos. Aunque elijas años a mano, el gráfico pinta una franja por gestión y la tabla agrupa las columnas bajo el nombre del presidente: así se lee "esto pasó con Blanco, esto con Milito" sin elegir nada. Un club sin gestiones confirmadas (Juventus, hoy) no muestra nada. <em>Few: regiones de referencia en un gráfico de tiempo; Gestalt, región común para agrupar columnas.</em></li>
-      <li><b>Muchas gestiones (Juventus, de ejemplo: 6 presidentes desde 2003).</b> Más nueva primero; con más de 4 se ven las 3 últimas y "+3 más" (la que está elegida nunca se esconde). En el gráfico, cada franja lleva el apellido si entra, las 3 primeras letras si no, y nada si es muy angosta: el nombre completo está al pasar el mouse. Una gestión de un solo ejercicio (Blanc, 2009/10) es una franja de un año. Probá Todos con Juventus. <em>Hick: no mostrar 6 opciones cuando casi siempre se quiere una de las últimas.</em></li>
+      <li><b>Gestión (Racing).</b> Si el club tiene gestiones cargadas y confirmadas, aparece una fila "Gestión" con un botón por presidente. Tocarlo suma todos los ejercicios de ese mandato (presupuestos incluidos: son sus promesas) a lo que ya estaba elegido; se pueden prender dos gestiones a la vez para compararlas, y tocarla de nuevo saca sus años. Aunque elijas años a mano, el gráfico pinta una franja por gestión y la tabla agrupa las columnas bajo el nombre del presidente: así se lee "esto pasó con Blanco, esto con Milito" sin elegir nada. Un club sin gestiones confirmadas (Juventus, hoy) no muestra nada. <em>Few: regiones de referencia en un gráfico de tiempo; Gestalt, región común para agrupar columnas.</em></li>
+      <li><b>Muchas gestiones (Juventus, de ejemplo: 6 presidentes desde 2003).</b> Más vieja primero, igual que los ejercicios; con más de 4 se ven las 3 últimas y "+3 más" a la izquierda (la que está elegida nunca se esconde). En el gráfico, cada franja lleva el apellido si entra, las 3 primeras letras si no, y nada si es muy angosta: el nombre completo está al pasar el mouse. Una gestión de un solo ejercicio (Blanc, 2009/10) es una franja de un año. Probá Todos con Juventus. <em>Hick: no mostrar 6 opciones cuando casi siempre se quiere una de las últimas.</em></li>
       <li><b>Valores ajustados por inflación (deflactor del PBI).</b> El tipo de cambio de cada cierre ya absorbe la inflación local (pesos, reales); lo que falta es la del dólar o el euro. "Ajustados por inflación" pasa todo (KPIs, gráficos, tabla, deuda) a moneda del último ejercicio, con el deflactor del PBI de la moneda que se está mirando: EE.UU. para USD, zona euro para EUR. Una franja verde explica el ajuste con un ejemplo del primer año elegido, y cada columna dice su factor (×1,58). Los Δ% pasan a ser crecimiento real. Default: nominales, que es lo que imprime el balance. <em>Few: comparar en la misma unidad; Krug: el nombre dice qué hace ("ajustados por inflación"), "deflactor" queda en la explicación.</em></li>
       <li><b>Presupuesto y balance del mismo año (elegí Racing en el chip).</b> El número que manda es siempre el <b>balance</b>: es lo que pasó. El presupuesto es lo que el club dijo que iba a pasar. Por default la columna muestra el balance y el encabezado avisa "+ presupuesto". El botón "Presupuesto al lado del balance" abre esos años en dos columnas (presupuesto en amarillo y cursiva, balance normal) más el desvío: "prometieron 3.127, entró 2.436". En los gráficos el presupuesto es un punto hueco. Un año con <b>solo</b> presupuesto (19/20, 25/26, 26/27 de Racing) entra a la línea con punto hueco y tramo punteado, y si es el último elegido los KPIs lo dicen con el card punteado. Últimos 5 cuenta solo años con balance: los presupuestos futuros se suman a mano. <em>Few: codificar la diferencia de naturaleza del dato (real vs. proyectado) siempre igual en toda la página; convención financiera de la línea punteada para lo proyectado.</em></li>
     </ol>
@@ -317,27 +316,27 @@ function renderYears(){
     b.title=k==='X'?'El club todavía no publicó este ejercicio':(S.has(y)?'Sacar ':'Sumar ')+full(y);
     if(k!=='X')b.onclick=()=>{S.has(y)?S.delete(y):S.add(y);render()};
     el.appendChild(b)});
-  const mb=document.getElementById('more');mb.hidden=!many;
+  const mb=document.createElement('button');mb.className='more';mb.id='more';mb.hidden=!many;el.prepend(mb);mb.onclick=()=>{expanded=!expanded;renderYears()};
   const hiddenN=all.length-shown.length;
-  mb.textContent=expanded?'Ver menos':`Ver más · ${hiddenN} ejercicios más, desde ${full(all[0])}`;
+  mb.textContent=expanded?'Ver menos':`+${hiddenN} más`;mb.title=expanded?'':`${hiddenN} ejercicios más, desde ${full(all[0])}`;
   const gw=document.getElementById('gestWrap');const G=GEST[club]||[];
   // Más nueva primero. Con más de 4 gestiones: las 3 más nuevas + "+N más" (la elegida siempre a la vista).
-  const ord=G.map((g,i)=>i).reverse();const isOn=i=>{const ys=gYears(G[i]);return ys.length&&S.size===ys.length&&ys.every(y=>S.has(y))};
-  const vis=(G.length<=4||gestAll)?ord:ord.filter((i,k)=>k<3||isOn(i));
-  gw.innerHTML=G.length?'<span class="lbl">Gestión</span>'+vis.map(i=>{const g=G[i];return `<button class="gb${isOn(i)?' on':''}" data-g="${i}">${g.n}<small>${g.d}</small></button>`}).join('')+(G.length>4?`<button class="gmore" id="gmore">${gestAll?'menos':'+'+(G.length-vis.length)+' más'}</button>`:'')+'<span class="pin">8</span>':'';
+  const ord=G.map((g,i)=>i);const isOn=i=>{const ys=gYears(G[i]);return ys.length&&ys.every(y=>S.has(y))};
+  const vis=(G.length<=4||gestAll)?ord:ord.filter((i,k)=>k>=G.length-3||isOn(i));
+  gw.innerHTML=G.length?'<span class="lbl">Gestión</span>'+(G.length>4?`<button class="gmore" id="gmore">${gestAll?'menos':'+'+(G.length-vis.length)+' más'}</button>`:'')+vis.map(i=>{const g=G[i];return `<button class="gb${isOn(i)?' on':''}" data-g="${i}">${g.n}<small>${g.d}</small></button>`}).join('')+'<span class="pin">8</span>':'';
   const gm=document.getElementById('gmore');if(gm)gm.onclick=()=>{gestAll=!gestAll;renderYears()};
-  gw.querySelectorAll('.gb').forEach(b=>b.onclick=()=>{const ys=gYears(G[+b.dataset.g]);const on=b.classList.contains('on');S=on?new Set():new Set(ys);expanded=!on&&ys.some(y=>!last5().includes(y));render()});
+  gw.querySelectorAll('.gb').forEach(b=>b.onclick=()=>{const ys=gYears(G[+b.dataset.g]);const on=b.classList.contains('on');ys.forEach(y=>on?S.delete(y):S.add(y));render()});
   const n=S.size,s=sel();
   document.querySelectorAll('.presets button').forEach(p=>p.classList.toggle('on',
     (p.dataset.p==='5'&&n===l5.length&&l5.every(y=>S.has(y)))||(p.dataset.p==='all'&&n===YS().filter(y=>kind(y)!=='X').length)||(p.dataset.p==='1'&&n===1&&S.has(l5[l5.length-1]))));
   const skipped=s.some((y,i)=>i&&y-s[i-1]>1);
-  document.getElementById('hint').textContent=n===0?'Ningún ejercicio elegido.':n===1?`Viendo ${full(s[0])}. Tocá otros años para sumarlos.`:`Viendo ${n} ejercicios${skipped?', con saltos':''}. Tocá un año para sumarlo o sacarlo.`;
+  const hint=document.getElementById('hint');hint.textContent=n===0?'Ningún ejercicio elegido. Tocá un año para sumarlo.':'';hint.hidden=n!==0;
   requestAnimationFrame(()=>{el.scrollLeft=el.scrollWidth});
 }
 document.querySelectorAll('.presets button').forEach(p=>p.onclick=()=>{const all=YS().filter(y=>kind(y)!=='X'),l5=last5();
   if(p.dataset.p==='all'){const allOn=all.every(y=>S.has(y));S=allOn?new Set():new Set(all);expanded=!allOn;}  // Todos por segunda vez = ninguno
   else S=new Set(p.dataset.p==='5'?l5:[l5[l5.length-1]]);render()});
-document.getElementById('more').onclick=()=>{expanded=!expanded;renderYears()};
+
 document.getElementById('emptyL5').onclick=e=>{e.preventDefault();S=new Set(last5());render()};
 
 // ---------- KPIs ----------
