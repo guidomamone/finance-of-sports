@@ -61,8 +61,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Desde la Versión 542, Finanzas muestra varios ejercicios a la vez: cards de ejercicios (default, los últimos 5 con balance),
   Estado de resultados y Deuda con una columna por año, KPIs con comparación y sparkline, gráfico de evolución arriba de la tabla,
   fuentes por ejercicio. El título es el club. `?multi=0` vuelve a la vista vieja de un año. Cómo está hecho y qué no romper:
-  `Admin/PANTALLA.md`, "Finanzas multi-año". Faltan (to-do 147): valores ajustados por inflación, gestión, el puesto en el card
-  "otra liga" y el cierre.
+  `Admin/PANTALLA.md`, "Finanzas multi-año". Desde la Versión 543, valores ajustados por inflación (deflactor del PBI, USD y EUR,
+  `data/deflactores.js`, se actualiza una vez por año). Faltan (to-do 147): gestión, el puesto en el card "otra liga" y el cierre.
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por

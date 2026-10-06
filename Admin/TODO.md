@@ -46,7 +46,7 @@ ni en el comentario de ningún archivo de código.
 
 147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
     lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541), paso 11 (valores ajustados por inflación, Versión 543). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
     DECISIONES DE GUIDO (2026-10-05):
     - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
       Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
@@ -76,7 +76,6 @@ ni en el comentario de ningún archivo de código.
     9. Fuentes y banner de calidad por ejercicio elegido. Y los cards de presupuesto (Supuestos, Presupuesto financiero,
        Inversiones, Torneos): solo para el presupuesto más nuevo elegido, con el año en el título (decisión de Guido).
     10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
-    11. Valores ajustados por inflación (archivo nuevo de deflactores en data/).
     12. Gestión: G1 formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada; los años se
         derivan de las fechas), G2 migrar Boca, Racing y los ~40 clubes con nombres reales (el relleno "Gestión actual" no se migra),
         G3 botón de gestión, G5 chequeos en audit.js. Después, G4 `tools/gestiones.mjs` (propone el firmante de cada balance desde su
@@ -120,15 +119,10 @@ ni en el comentario de ningún archivo de código.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
-    (d) DEFLACTORES. El aviso de "ejercicios de años distintos" explica el problema (cada
-        ejercicio se convierte a USD con el tipo de cambio de su propio documento, sin ajustar
-        por inflación), pero no lo arregla. Arreglarlo de verdad es una serie de deflactores por
-        moneda y año. Decisión de Guido si se abre.
-        PROPUESTA (2026-10-04, Guido la retoma más adelante: es un punto grande): convertir a USD con el tipo de cambio de cada
-        cierre ya absorbe la inflación local; lo que queda es la inflación del dólar (~35% entre 2015 y 2025). Una sola serie
-        oficial, el IPC de EE.UU. (CPI-U, BLS), para todos los clubes, y un selector "USD nominales / USD de <último año>".
-        Y en Finanzas, que se pueda comparar el club contra sí mismo fácilmente (pedido de Guido): sus años lado a lado, en
-        USD constantes. DECIDIDO 2026-10-05: se hace dentro del to-do 147 (paso 11), con el deflactor del PBI y no el IPC.
+    (d) DEFLACTORES EN COMPARAR. En Finanzas ya está (to-do 147, Versión 543): toggle "Valores ajustados por inflación" con el
+        deflactor del PBI de la moneda mostrada (`data/deflactores.js`, `FIN_REAL` en `js/finanzas-multi.js`). Falta lo mismo en
+        Comparar, donde el aviso de "ejercicios de años distintos" explica el problema pero no lo arregla: reusar la misma serie
+        y el mismo criterio (año base = el último de la serie, año de cierre, presupuestos futuros sin ajustar).
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.

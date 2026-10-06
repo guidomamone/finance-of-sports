@@ -45,6 +45,12 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   traducible (si va adentro del mismo elemento con `data-i18n`, `I18N.apply()` lo pisa).
 - **"<club> en otra liga"** es un card entre Deuda y los cards de presupuesto, no un botón en la barra: usa el balance más nuevo
   elegido, nunca un presupuesto.
+- **Valores ajustados por inflación** (`FIN_REAL`, `FIN_REAL_UI`, `data/deflactores.js`): toggle "Nominales | Ajustados por
+  inflación" en la barra, solo en USD o EUR (las monedas con serie). Todo monto de la vista multi-año se multiplica por
+  `FIN_REAL.fac(año)`; un cociente (% del total, desvío, salarios / ingresos) no, porque el factor se cancela. Prendido, la tabla
+  multi-año se usa aunque haya UN solo ejercicio (la de un año no sabe ajustar) y el número grande de los KPIs se reescribe.
+  La unidad pasa a "M USD de 2024/25" en todos lados, cada columna dice su factor (×1.26) y una franja verde explica la serie
+  con un ejemplo. Los años posteriores al base (presupuestos futuros) no se ajustan, y la franja lo dice.
 - **Mi Cuenta** guarda `years` además de `year`; con un solo año la clave es la de siempre (las búsquedas viejas no se duplican).
 - **Cómo verificar un cambio acá**: los totales de cada columna contra la tabla de un año, eligiendo los ejercicios de a uno
   CON CLICKS en los cards (`#finYears .fin-year`). Llamar `refreshFinanzas()` o `selectClub()` desde la consola no sirve:

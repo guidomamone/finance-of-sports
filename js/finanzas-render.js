@@ -575,7 +575,8 @@
     // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
     // totales son los del ejercicio más nuevo y los usan los KPIs.
     const ysSel = FIN_SEL.years();
-    const multiTabla = !!window.FIN_MULTI && ysSel.length > 1 && typeof renderMultiPLTable === 'function';
+    // Ajustado por inflación (paso 11) también con UN ejercicio: la tabla de un año no sabe ajustar.
+    const multiTabla = !!window.FIN_MULTI && (ysSel.length > 1 || (window.FIN_REAL && FIN_REAL.activo() && ysSel.length === 1)) && typeof renderMultiPLTable === 'function';
     document.getElementById('finanzasPLTable').hidden = multiTabla;
     const tablaMulti = document.getElementById('finanzasPLMulti');
     if(tablaMulti){

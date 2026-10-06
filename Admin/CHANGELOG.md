@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 543 — To-do 147, paso 11: valores ajustados por inflación en Finanzas (2026-10-05)
+
+- `data/deflactores.js` (nuevo): deflactor del PBI de EE.UU. (BEA vía FRED, A191RD3A086NBEA, 2017=100) y de la zona euro (Eurostat nama_10_gdp EA20 PD15_EUR, 2015=100), 2000-2025, bajados de las dos fuentes el 2026-10-05. Se actualiza una vez por año.
+- `js/finanzas-multi.js`: `FIN_REAL` (factor por ejercicio: año base = el último de la serie, por año de cierre, 1 para años posteriores al base) y `FIN_REAL_UI` (toggle y franja explicativa). La tabla, la deuda, los KPIs (número grande incluido), el gráfico y el gráfico de cada rubro multiplican por el factor; unidad "M USD de 2024/25", factor por columna. Solo con USD o EUR en pantalla; en ARS u otra moneda el toggle no aparece. Prendido con un solo ejercicio, se usa la tabla multi-año.
+- `index.html` (`#realToggleWrap`, `#finRealNote`, script de deflactores), `js/finanzas-render.js`, `js/styles.css`, `data/lang/en.js` (`finanzas.real.*`). To-do 23(d) queda reducido a Comparar. `ASSET_V` 443.
+- Verificado: cada total de ingresos ajustado = nominal × factor (±0,1 por redondeo) en Juventus, Racing y Köln en USD; factor EUR igual a Eurostat (2020/21 ×1,1759); un solo ejercicio viejo (Juventus 2004/05: 259,1 × 1,4851 = 384,8 M EUR de 2024/25); gráfico, KPIs y tabla iguales; ARS sin toggle. Con `?multi=0`, los 65 ejercicios idénticos a `main`.
+
 ## Versión 542 — To-do 147: Finanzas multi-año pasa a ser la vista por default (2026-10-05)
 
 - `js/finanzas-anios.js`: `FIN_MULTI` es `true` salvo con `?multi=0`, que vuelve a la vista de un ejercicio con el dropdown (salida de emergencia). Los comentarios que decían "con ?multi=1" se reescribieron.

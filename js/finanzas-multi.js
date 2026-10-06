@@ -26,6 +26,40 @@
 //     fuentes en presupuesto | balance | desvío. Manda siempre el balance: es lo que pasó.
 // ============================================================================
 
+// ============================================================================
+// VALORES AJUSTADOS POR INFLACIÓN (to-do 147, paso 11). Ver data/deflactores.js para el criterio y las
+// fuentes. `fac(y)` es el factor que lleva un monto del ejercicio que cierra en `y` a moneda del año
+// base: 1 con el toggle apagado, en una moneda sin serie (solo USD y EUR tienen), o para un ejercicio
+// posterior al año base (un presupuesto futuro no se ajusta). Todo lo de este archivo que convierte
+// un monto para mostrarlo lo multiplica por `fac` del año; un cociente (% del total, desvío
+// presupuesto vs. balance del MISMO año, salarios / ingresos) no cambia, porque el factor se cancela.
+// ============================================================================
+const FIN_REAL = (function(){
+  let prendido = false;
+  function serie(){ return (window.DEFLACTORES || {})[currentCurrency] || null; }
+  function base(){ const s = serie(); return s ? Math.max(...Object.keys(s.valores).map(Number)) : null; }
+  function disponible(){ return !!serie(); }
+  function activo(){ return prendido && disponible(); }
+  function fac(y){
+    if(!activo()) return 1;
+    const s = serie(), b = base();
+    if(y >= b) return 1;
+    const v = s.valores[y];
+    return v ? s.valores[b] / v : 1;
+  }
+  // "M USD" o, ajustado, "M USD de 2024/25" (el año base con el formato del club).
+  function unidad(clubId){
+    if(!activo()) return 'M ' + currentCurrency;
+    const b = base();
+    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    return 'M ' + currentCurrency + ' ' + t('finanzas.real.of', 'de') + ' ' + (cal ? String(b) : (b - 1) + '/' + String(b).slice(2));
+  }
+  function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
+  function set(v){ prendido = !!v; }
+  return { fac, base, disponible, activo, unidad, set, serie, get prendido(){ return prendido; } };
+})();
+window.FIN_REAL = FIN_REAL;
+
 const FIN_MULTI_PL = (function(){
   const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
   const estado = { unidad:'abs', conPresu:false, abiertos:new Set(), club:null, years:[], tableId:null };
@@ -77,7 +111,7 @@ const FIN_MULTI_PL = (function(){
 
     const repDe = (d, src) => src === 'ov' ? d.ov : d.rep;
     const metaDe = (d, src) => src === 'ov' ? d.ovMeta : d.meta;
-    const val = (d, src, v) => nativeDisplayVal(v, metaDe(d, src), currentCurrency);
+    const val = (d, src, v) => nativeDisplayVal(v, metaDe(d, src), currentCurrency) * FIN_REAL.fac(d.y);
     const cls = c => c.src === 'ov' || (c.src === 'main' && c.d.presu) ? ' class="pl-col-presu"' : c.src === 'dev' ? ' class="pl-dev"' : '';
 
     // Totales por sección, por ejercicio y fuente (null = no informa).
@@ -234,10 +268,10 @@ const FIN_MULTI_PL = (function(){
       : c.d.presu ? t('finanzas.card.budget', 'Presupuesto')
       : (c.d.ov && !abrir) ? t('pl.multi.balPlus', 'Balance + presup.')
       : t('finanzas.card.balance', 'Balance');
-    let head = `<tr><th>${t('th.line', 'Rubro')}<small>${pct ? esc(t('pl.multi.pctUnit', '% del total')) : 'M ' + esc(currentCurrency)}</small></th>`;
+    let head = `<tr><th>${t('th.line', 'Rubro')}<small>${pct ? esc(t('pl.multi.pctUnit', '% del total')) : esc(FIN_REAL.unidad(clubId))}</small></th>`;
     cols.forEach(c => {
       head += c.gap ? `<th class="pl-gap" title="${esc(t('pl.multi.gap', 'Años sin elegir en el medio'))}">…</th>`
-        : `<th${cls(c)}>${lab(c.d.y)}<small>${sub(c)}</small></th>`;
+        : `<th${cls(c)}>${lab(c.d.y)}<small>${sub(c)}${!pct && c.src !== 'dev' && FIN_REAL.fac(c.d.y) > 1.005 ? ' · ×' + FIN_REAL.fac(c.d.y).toFixed(2) : ''}</small></th>`;
     });
     head += `<th class="pl-delta">Δ ${lab(primero.y)}→${lab(ultimo.y)}</th><th class="pl-spark">${t('pl.multi.trend', 'Tendencia')}</th></tr>`;
 
@@ -278,7 +312,7 @@ const FIN_MULTI_PL = (function(){
       const r = filaDe(rep[key], label);
       if(!r || r.unknown || r.incluidoEn) return null;
       if(key === 'gastos' && src === 'main' && d.sinGastos) return null;
-      const v = nativeDisplayVal(r.value, src === 'ov' ? d.ovMeta : d.meta, currentCurrency);
+      const v = nativeDisplayVal(r.value, src === 'ov' ? d.ovMeta : d.meta, currentCurrency) * FIN_REAL.fac(d.y);
       if(!pct) return absG(v);
       const tot = (rep[key] || []).reduce((s, x) => s + nativeDisplayVal(x.value, src === 'ov' ? d.ovMeta : d.meta, currentCurrency), 0);
       return tot ? v / tot * 100 : null;
@@ -302,7 +336,7 @@ const FIN_MULTI_PL = (function(){
         showLine: false, borderColor: color, backgroundColor: '#fff', pointRadius: 4, pointBorderWidth: 1.8, pointStyle: 'circle',
       });
     }
-    const unidad = pct ? '%' : 'M ' + currentCurrency;
+    const unidad = pct ? '%' : FIN_REAL.unidad(estado.club);
     return new Chart(canvas, {
       type: 'line',
       data: { labels: datos.map(d => lab(d.y)), datasets: sets },
@@ -341,7 +375,7 @@ const FIN_MULTI_PL = (function(){
     }
     const seg = document.createElement('div');
     seg.className = 'segmented';
-    [['abs', 'M ' + currentCurrency], ['pct', t('pl.multi.pctUnit', '% del total')]].forEach(([u, txt]) => {
+    [['abs', FIN_REAL.unidad(estado.club)], ['pct', t('pl.multi.pctUnit', '% del total')]].forEach(([u, txt]) => {
       const b = document.createElement('button');
       b.type = 'button';
       b.textContent = txt;
@@ -390,15 +424,16 @@ const FIN_MULTI_KPIS = (function(){
     const meta = yearMetaFor(clubId, y);
     const rep = nativeReportFor(clubId, y);
     const c = computeYearGeneric(clubId, y);
-    const v = x => nativeDisplayVal(x, meta, currentCurrency);
+    const f = FIN_REAL.fac(y);
+    const v = x => nativeDisplayVal(x, meta, currentCurrency) * f;
     const presu = !BAL[reportTypeForYear(clubId, y)];
     const sinGastos = !!c && !(c.expenseLines || []).length && (c.meta || {}).officialTotalExpenses == null && !c.expenses && !c.nonCash;
     const ing = (rep.ingresos || []).reduce((s, r) => s + v(r.value), 0);
     const gas = sinGastos ? null : (rep.gastos || []).reduce((s, r) => s + v(r.value), 0);
     const extra = (rep.extraRows || []).reduce((s, e) => s + v(e.value), 0);
     const pat = gas == null ? null : ing + gas + extra;
-    const nd = (presu || !c || deudaNoDesglosada(c)) ? null : toDisplayValue(c.netDebt, meta, currentCurrency);
-    return { y, presu, ing, gas: gas == null ? null : Math.abs(gas), pat, nd };
+    const nd = (presu || !c || deudaNoDesglosada(c)) ? null : toDisplayValue(c.netDebt, meta, currentCurrency) * f;
+    return { y, presu, ing, gas: gas == null ? null : Math.abs(gas), pat, nd, extra };
   }
 
   function spark(vals, ys, color){
@@ -430,6 +465,13 @@ const FIN_MULTI_KPIS = (function(){
     caja.querySelectorAll('.stat').forEach(st => {
       const k = st.dataset.k;
       st.classList.toggle('stat-presu', ultimo.presu);
+      // Ajustado por inflación: el número grande también (renderFinanzasStatsGeneric lo dejó nominal).
+      if(FIN_REAL.activo() && FIN_REAL.fac(ultimo.y) !== 1){
+        const v = st.querySelector('.value'), x = ultimo[k];
+        if(v && x != null && !v.classList.contains('nodato')){
+          v.textContent = (k === 'pat' || k === 'extra') ? fmtAmount(x, currentCurrency) : fmtAmountPlain(Math.abs(x), currentCurrency);
+        }
+      }
       const etiqueta = st.querySelector('.label');
       if(etiqueta && !etiqueta.querySelector('.stat-year')){
         etiqueta.insertAdjacentHTML('beforeend', ` <span class="stat-year">· ${lab(ultimo.y)}</span>` +
@@ -496,7 +538,8 @@ const FIN_MULTI_DEBT = (function(){
       const meta = yearMetaFor(clubId, y);
       const presu = !BAL[reportTypeForYear(clubId, y)];
       const sinDeuda = presu || deudaNoDesglosada(c);
-      const v = x => toDisplayValue(x, meta, currentCurrency);
+      const f = FIN_REAL.fac(y);
+      const v = x => toDisplayValue(x, meta, currentCurrency) * f;
       return { y, presu, sinDeuda,
         wr: c && c.revenue ? c.wagesToTurnover * 100 : null,
         gd: sinDeuda ? null : v(c.grossDebt), ca: sinDeuda ? null : v(c.cash), nd: sinDeuda ? null : v(c.netDebt) };
@@ -520,7 +563,7 @@ const FIN_MULTI_DEBT = (function(){
       const p = dif / Math.abs(v0) * 100;
       return `<span class="${Math.round(p) === 0 ? '' : malo ? 'pl-down' : 'pl-up'}">${p > 0 ? '+' : ''}${p.toFixed(0)}%</span>`;
     }
-    let head = `<tr><th>${t('th.indicator', 'Indicador')}<small>M ${currentCurrency}</small></th>`;
+    let head = `<tr><th>${t('th.indicator', 'Indicador')}<small>${FIN_REAL.unidad(clubId)}</small></th>`;
     cols.forEach(c => {
       head += c.gap ? `<th class="pl-gap">…</th>`
         : `<th${c.d.presu ? ' class="pl-col-presu"' : ''}>${lab(c.d.y)}<small>${c.d.presu ? t('finanzas.card.budget', 'Presupuesto') : t('finanzas.card.balance', 'Balance')}</small></th>`;
@@ -586,7 +629,7 @@ const FIN_MULTI_CHART = (function(){
     const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
     const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
     const datos = years.map(y => FIN_MULTI_KPIS.delAnio(clubId, y));
-    const unidad = 'M ' + currentCurrency;
+    const unidad = FIN_REAL.unidad(clubId);
     const punteado = ctx => {
       const a = datos[ctx.p0DataIndex], b = datos[ctx.p1DataIndex];
       return (b.y - a.y > 1 || a.presu || b.presu) ? [5, 4] : undefined;
@@ -642,7 +685,7 @@ const FIN_MULTI_CHART = (function(){
         const m = {};
         (rep.ingresos || []).forEach(r => {
           if(!rubros.includes(r.label)) rubros.push(r.label);
-          m[r.label] = (m[r.label] || 0) + nativeDisplayVal(r.value, meta, currentCurrency);
+          m[r.label] = (m[r.label] || 0) + nativeDisplayVal(r.value, meta, currentCurrency) * FIN_REAL.fac(y);
         });
         return m;
       });
@@ -676,3 +719,39 @@ const FIN_MULTI_CHART = (function(){
   return { render };
 })();
 window.FIN_MULTI_CHART = FIN_MULTI_CHART;
+
+
+
+// ============================================================================
+// EL TOGGLE "Nominales | Ajustados por inflación" Y SU EXPLICACIÓN (paso 11). Solo en la vista
+// multi-año y con una moneda que tiene serie (USD, EUR). La franja verde dice con qué serie se
+// ajustó y da un ejemplo con el primer ejercicio elegido, para que "ajustado" no sea una caja negra.
+// ============================================================================
+const FIN_REAL_UI = (function(){
+  function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
+  function render(clubId, years){
+    const wrap = document.getElementById('realToggleWrap');
+    const nota = document.getElementById('finRealNote');
+    if(!wrap || !nota) return;
+    const ok = !!window.FIN_MULTI && FIN_REAL.disponible() && years.length > 0;
+    wrap.hidden = !ok;
+    wrap.querySelectorAll('button').forEach(b => {
+      b.classList.toggle('active', (b.dataset.real === '1') === FIN_REAL.prendido);
+      b.onclick = () => { FIN_REAL.set(b.dataset.real === '1'); refreshFinanzas(); };
+    });
+    if(!ok || !FIN_REAL.activo()){ nota.hidden = true; return; }
+    const s = FIN_REAL.serie(), base = FIN_REAL.base();
+    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const a = years[0];
+    const ej = Math.round(100 * FIN_REAL.fac(a));
+    let txt = t('finanzas.real.note', 'Todo en {u}, ajustado con el {serie}: 100 M {cur} de {a} equivalen a {x} M de {b}. Los Δ% pasan a ser crecimiento real.')
+      .replace('{u}', FIN_REAL.unidad(clubId)).replace('{serie}', t('finanzas.real.serie.' + currentCurrency, s.nombre))
+      .replace('{cur}', currentCurrency).replace('{a}', lab(a)).replace('{x}', ej).replace('{b}', lab(base));
+    if(years.some(y => y > base)) txt += ' ' + t('finanzas.real.future', 'Los presupuestos posteriores a {b} quedan como están: todavía no hay inflación para descontarles.').replace('{b}', lab(base));
+    nota.textContent = txt;
+    nota.hidden = false;
+  }
+  return { render };
+})();
+window.FIN_REAL_UI = FIN_REAL_UI;
