@@ -1727,7 +1727,7 @@ window.CLUB_SELECTOR = (function(){
     // o sea media pantalla que parecía una decisión de diseño en vez de un bug.
     var cols;
     try {
-      cols = [card(0), el('div', 'cd-vs', 'VS'), card(1)];
+      cols = [card(0), card(1)];
     } catch(err){
       console.error('[selector] no se pudieron dibujar los cards', err);
       return;
@@ -1735,7 +1735,10 @@ window.CLUB_SELECTOR = (function(){
     wrap.innerHTML = '';
     cols.forEach(function(c){ wrap.appendChild(c); });
     renderPie();
-    renderResultado();
+    // SIN BOTÓN "COMPARAR" (to-do 23): con los dos lados llenos, el resultado se arma solo y se
+    // rehace con cada cambio de un card, como Finanzas con sus cards de ejercicio.
+    if(lado[0] && lado[1]) aplicar();
+    else { mostrando = false; renderResultado(); }
   }
 
   function card(i){
@@ -1767,6 +1770,146 @@ window.CLUB_SELECTOR = (function(){
     return b;
   }
 
+  // LOS CHIPS DE EJERCICIO (to-do 23): el mismo componente que los cards de Finanzas
+  // (js/finanzas-anios.js, clases .fin-year*), para que las dos pantallas se lean igual.
+  // Dos formas de lado los tienen: UN club (un chip por ejercicio, varios a la vez) y UNA
+  // liga (un chip por temporada). Cualquier otra forma (varios clubes, varias ligas, una
+  // mezcla) sigue con la fórmula y "Ejercicios: …": cambiar eso es volver al modal.
+  var BAL_TIPOS = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+  var cdExpandido = [false, false];   // "+N más" abierto, por card
+
+  function tipoDe(id, y){
+    var par = yearsOf(id).filter(function(p){ return p[0] === y; })[0];
+    if(!par) return null;
+    return par[1] === 'official_budget' ? 'P' : BAL_TIPOS[par[1]] ? 'B' : null;
+  }
+  function etiquetaEj(id, y){
+    var cal = clubs[id] && clubs[id].fiscalYearStart === '01-01';
+    return cal ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2);
+  }
+  // Los ejercicios de un club, del primero al último cargado, con los años vacíos del medio
+  // como "Sin publicar" (mismo criterio que FIN_ANIOS.ejercicios, pero desde CLUB_INDEX: el
+  // card se dibuja antes de bajar el archivo del club).
+  function ejerciciosClub(id){
+    var ys = yearsOf(id).map(function(p){ return p[0]; }).filter(function(y){ return tipoDe(id, y); });
+    if(!ys.length) return [];
+    var out = [];
+    for(var y = Math.min.apply(null, ys); y <= Math.max.apply(null, ys); y++){
+      out.push({ y:y, tipo: ys.indexOf(y) >= 0 ? tipoDe(id, y) : 'X' });
+    }
+    return out;
+  }
+  function ultimoBalance(id){
+    var b = ejerciciosClub(id).filter(function(e){ return e.tipo === 'B'; });
+    return b.length ? b[b.length - 1].y : (yearsOf(id)[0] || [])[0];
+  }
+
+  // Una fila de chips. `lista` = [{y, label, sub, tipo}] de más viejo a más nuevo; `elegidos`
+  // = años prendidos. Con más de 5, arranca corta (los últimos 5 y lo elegido) y "+N más" va
+  // al principio, como en Finanzas. Nunca deja apagar el último: un lado vacío no compara nada.
+  function filaChips(i, titulo, lista, elegidos, alCambiar){
+    var caja = el('div', 'cd-chips');
+    caja.appendChild(el('span', 'fin-years-lbl', titulo));
+    var fila = el('div', 'fin-years-row');
+    var ultimos = lista.filter(function(e){ return e.tipo !== 'X'; }).slice(-5).map(function(e){ return e.y; });
+    // Se cuentan los publicados: si lo único que quedaría escondido son años "Sin publicar", no vale un "+N más".
+    var muchos = lista.filter(function(e){ return e.tipo !== 'X'; }).length > 5;
+    var visibles = (!muchos || cdExpandido[i]) ? lista : lista.filter(function(e){
+      return ultimos.indexOf(e.y) >= 0 || elegidos.indexOf(e.y) >= 0;
+    });
+    if(muchos){
+      var mas = el('button', 'fin-years-more', cdExpandido[i]
+        ? t('finanzas.card.less', 'Ver menos')
+        : '+' + (lista.length - visibles.length) + ' ' + t('finanzas.card.more', 'más'));
+      mas.type = 'button';
+      mas.addEventListener('click', function(){ cdExpandido[i] = !cdExpandido[i]; render(); });
+      fila.appendChild(mas);
+    }
+    visibles.forEach(function(e){
+      var on = elegidos.indexOf(e.y) >= 0;
+      var b = el('button', 'fin-year' + (on ? ' on' : '') + (e.tipo === 'P' ? ' presu' : '') + (e.tipo === 'X' ? ' sinpub' : ''));
+      b.type = 'button';
+      b.appendChild(el('b', null, e.label));
+      b.appendChild(el('span', null, e.sub));
+      if(e.tipo === 'X'){
+        b.disabled = true;
+        b.title = t('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
+      } else {
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.addEventListener('click', function(){
+          var nuevos = on ? elegidos.filter(function(y){ return y !== e.y; }) : elegidos.concat(e.y);
+          if(!nuevos.length) return;
+          alCambiar(nuevos.sort(function(a, c){ return a - c; }));
+          render();
+        });
+      }
+      fila.appendChild(b);
+    });
+    caja.appendChild(fila);
+    return caja;
+  }
+
+  function chipsClub(i, b, id){
+    var lista = ejerciciosClub(id).map(function(e){
+      return { y:e.y, tipo:e.tipo, label:etiquetaEj(id, e.y),
+               sub: e.tipo === 'B' ? t('finanzas.card.balance', 'Balance')
+                  : e.tipo === 'P' ? t('finanzas.card.budget', 'Presupuesto')
+                  : t('finanzas.card.unpublished', 'Sin publicar') };
+    });
+    var elegidos = b.pares.map(function(p){ return p[1]; });
+    return filaChips(i, t('sel.card.years', 'Ejercicios'), lista, elegidos, function(ys){
+      b.pares = ys.map(function(y){ return [id, y]; });
+    });
+  }
+
+  function chipsLiga(i, b){
+    var lista = temporadasDe(b.league).slice().sort(function(a, c){ return a - c; }).map(function(y){
+      return { y:y, tipo:'B', label:String(y), sub:nClubes(equiposDe(b.league, y).length) };
+    });
+    var elegidos = b.years.length ? b.years.slice() : [ultimaTemporada(b.league)];
+    return filaChips(i, t('sel.card.seasons', 'Temporadas'), lista, elegidos, function(ys){
+      b.years = ys;
+      lado[i] = ladoDesde([b]);
+    });
+  }
+
+  // "Cómo se junta": el agregador del bloque, a la vista. Solo con más de un ejercicio.
+  function segAgregador(b){
+    var caja = el('div', 'cd-agg');
+    caja.appendChild(el('span', 'fin-years-lbl', t('sel.card.agg', 'Cómo se junta')));
+    var seg = el('div', 'segmented');
+    [['promedio', t('sel.agg.avg', 'Promedio')], ['suma', t('sel.agg.sum', 'Suma')]].forEach(function(o){
+      var btn = el('button', b.agg === o[0] ? 'active' : null, o[1]);
+      btn.type = 'button';
+      btn.addEventListener('click', function(){ b.agg = o[0]; render(); });
+      seg.appendChild(btn);
+    });
+    caja.appendChild(seg);
+    return caja;
+  }
+
+  // La línea de abajo del nombre: cómo se arma el lado, en una frase. Es lo único que queda
+  // de la vieja bajada "A contra B" (Guido: el título son los cards).
+  function comoSeArma(l, unClub, unaLiga){
+    var pares = paresDe(l);
+    var partes = [];
+    var pais = unClub ? countryOf(unClub) : unaLiga ? (window.LEAGUES[unaLiga.league] || {}).country : null;
+    var co = pais ? window.COUNTRIES[pais] : null;
+    if(co) partes.push(t(co.key, co.name));
+    var presu = pares.filter(function(p){ return tipoDe(p[0], p[1]) === 'P'; }).length;
+    if(pares.length === 1){
+      partes.push((presu ? t('sel.card.budget1', 'presupuesto') : t('sel.card.balance1', 'balance')) + ' ' + etiquetaEj(pares[0][0], pares[0][1]));
+      return { texto:partes.join(' · '), presu:0 };
+    }
+    var agg = (l.bloques.length === 1) ? l.bloques[0].agg : null;
+    var n = nEjercicios(pares.length);
+    var nc = clubesDe(l).length;
+    partes.push((agg === 'promedio' ? t('sel.card.avgOf', 'promedio de') + ' '
+               : agg === 'suma' ? t('sel.card.sumOf', 'suma de') + ' ' : '')
+               + n + (nc > 1 ? ' ' + t('sel.card.of', 'de') + ' ' + nClubes(nc) : ''));
+    return { texto:partes.join(' · '), presu:presu };
+  }
+
   function cuerpoLleno(i){
     var l = lado[i];
     var caja = el('div', 'cd-elegido');
@@ -1779,19 +1922,34 @@ window.CLUB_SELECTOR = (function(){
     // liga no existe. TypeError, y como render() va agregando los tres hijos de a
     // uno, el card B desaparecía dejando A y el VS. Bug real, encontrado por Guido
     // comparando la liga argentina contra la brasilera.
-    var soloClubes = l.bloques.length === 1 && l.bloques[0].kind === 'clubes';
-    var unClub = (soloClubes && ids.length === 1 && paresDe(l).length === 1) ? ids[0] : null;
+    // Desde el to-do 23 un club puede tener VARIOS ejercicios: sigue siendo "un club".
+    var b0 = l.bloques[0];
+    var soloClubes = l.bloques.length === 1 && b0.kind === 'clubes';
+    var unClub = (soloClubes && ids.length === 1) ? ids[0] : null;
+    var unaLiga = (l.bloques.length === 1 && b0.kind === 'liga') ? b0 : null;
+    // Un club recién elegido llega con el año en null ("el más reciente"): el card lo fija
+    // en el último BALANCE, como el default de Finanzas (un presupuesto futuro no es lo
+    // primero que se quiere comparar).
+    if(unClub && b0.pares.some(function(p){ return p[1] == null; })){
+      var ult = ultimoBalance(unClub);
+      b0.pares = [[unClub, ult]];
+    }
 
     var fila = el('div', 'cd-sujeto');
     // Un lado que NO es un club solo (una liga, un país, una mezcla) va con el 🧩 y sin color:
     // el color es del club, y un lado de varios no tiene uno.
     fila.appendChild(pintarCrest(el('span', 'cd-crest', unClub ? initials(nameOf(unClub)) : '🧩'), unClub));
     var txt = el('span', 'cd-op-txt');
-    txt.appendChild(el('span', 'cd-sujeto-n', l.nombre));
-    var co = unClub ? window.COUNTRIES[countryOf(unClub)] : null;
-    txt.appendChild(el('span', 'cd-op-s', unClub
-      ? (co ? t(co.key, co.name) : '')
-      : nClubes(ids.length) + ' · ' + nEjercicios(paresDe(l).length)));
+    txt.appendChild(el('span', 'cd-sujeto-n', unClub ? nameOf(unClub)
+      : unaLiga ? ((window.LEAGUES[unaLiga.league] || {}).name || unaLiga.league) : l.nombre));
+    var arma = comoSeArma(l, unClub, unaLiga);
+    var sub = el('span', 'cd-op-s', arma.texto);
+    if(arma.presu){
+      sub.appendChild(document.createTextNode(' · '));
+      sub.appendChild(el('span', 'cd-tag-presu', t('sel.card.inclPresu', 'incluye') + ' ' + arma.presu + ' '
+        + (arma.presu === 1 ? t('sel.card.presu1', 'presupuesto') : t('sel.card.presuN', 'presupuestos'))));
+    }
+    txt.appendChild(sub);
     fila.appendChild(txt);
     var otro = el('button', 'cd-otro', t('sel.card.other', 'Elegir otro'));
     otro.type = 'button';
@@ -1800,13 +1958,17 @@ window.CLUB_SELECTOR = (function(){
     fila.appendChild(otro);
     caja.appendChild(fila);
 
-    // LA FÓRMULA, en lugar de un toggle Promedio / Sumatoria: con un agregador por
-    // bloque, un botón único ya no puede decir cómo se mide este lado.
-    if(l.bloques.length > 1 || (l.bloques[0] && paresDeBloque(l.bloques[0]).length > 1)){
-      caja.appendChild(el('p', 'cd-formula', formulaDe(l)));
+    if(unClub) caja.appendChild(chipsClub(i, b0, unClub));
+    else if(unaLiga) caja.appendChild(chipsLiga(i, unaLiga));
+    else {
+      // LA FÓRMULA, en lugar de un toggle Promedio / Sumatoria: con un agregador por
+      // bloque, un botón único ya no puede decir cómo se mide este lado.
+      if(l.bloques.length > 1 || (b0 && paresDeBloque(b0).length > 1)){
+        caja.appendChild(el('p', 'cd-formula', formulaDe(l)));
+      }
+      caja.appendChild(el('p', 'cd-anios', t('sel.card.years', 'Ejercicios') + ': ' + textoAnios(l)));
     }
-    if(unClub) caja.appendChild(selectorDeAnio(i));
-    else caja.appendChild(el('p', 'cd-anios', t('sel.card.years', 'Ejercicios') + ': ' + textoAnios(l)));
+    if((unClub || unaLiga) && paresDe(l).length > 1) caja.appendChild(segAgregador(b0));
     return caja;
   }
 
@@ -1819,51 +1981,16 @@ window.CLUB_SELECTOR = (function(){
     return lista[lista.length - 1] + '-' + lista[0] + ' (' + lista.length + ')';
   }
 
-  // El desplegable de ejercicio del card: SOLO cuando el lado es un club en un
-  // ejercicio. Para cualquier otra cosa, cambiar de año es volver al paso donde esa
-  // pregunta ya está contestada; tenerla en dos lugares es tener dos verdades.
-  function selectorDeAnio(i){
-    var l = lado[i];
-    var b = l.bloques[0];
-    // La invariante que lo hace posible, escrita: un solo bloque, de clubes, con un
-    // solo par. Si alguna vez deja de cumplirse, esto devuelve el texto de siempre
-    // en vez de tirar y llevarse el card puesto.
-    if(!b || b.kind !== 'clubes' || !b.pares || !b.pares.length){
-      return el('p', 'cd-anios', t('sel.card.years', 'Ejercicios') + ': ' + textoAnios(l));
-    }
-    var id = b.pares[0][0];
-    var fila = el('label', 'cd-anio');
-    fila.appendChild(el('span', null, t('fuentes.ejercicio', 'Ejercicio')));
-    var sel = document.createElement('select');
-    var actual = paresDe(l)[0][1];
-    yearsOf(id).forEach(function(par){
-      var o = document.createElement('option');
-      o.value = par[0];
-      o.textContent = labelAnio(par[0], [id]);
-      if(par[0] === actual) o.selected = true;
-      sel.appendChild(o);
-    });
-    sel.addEventListener('change', function(){
-      b.pares = [[id, Number(this.value)]];
-      render();
-    });
-    fila.appendChild(sel);
-    return fila;
-  }
-
+  // Sin botón "Comparar" (to-do 23): el pie solo avisa mientras falte un lado.
   function renderPie(){
     var pie = $('cdPie');
     if(!pie) return;
     pie.innerHTML = '';
     var listo = !!lado[0] && !!lado[1];
-    var b = el('button', 'cd-go' + (listo ? '' : ' off'), listo
-      ? t('sel.go', 'Comparar') + ' ' + lado[0].nombre + ' ' + t('sel.vs', 'contra') + ' ' + lado[1].nombre
-      : t('sel.go.off', 'Llená los dos cards para comparar'));
-    b.type = 'button';
-    b.disabled = !listo;
-    b.addEventListener('click', aplicar);
-    pie.appendChild(b);
+    pie.hidden = listo;
+    if(!listo) pie.appendChild(el('p', 'cd-falta', t('sel.go.off', 'Llená los dos cards para comparar')));
   }
+
 
   // ---------------------------------------------------------------------------
   // EL RESULTADO. Una sola vista para los tres casos (un club, un conjunto
@@ -1878,8 +2005,12 @@ window.CLUB_SELECTOR = (function(){
     var primerClub = clubesDe(activos[0])[0];
     var caja = $('cdResultado');
     caja.hidden = false;
-    caja.innerHTML = '';
-    caja.appendChild(el('p', 'cd-cargando', t('sel.calc', 'Calculando…')));
+    // Con un resultado ya a la vista (se cambió un chip), no se borra para mostrar
+    // "Calculando…": parpadearía en cada toque.
+    if(!mostrando){
+      caja.innerHTML = '';
+      caja.appendChild(el('p', 'cd-cargando', t('sel.calc', 'Calculando…')));
+    }
     mostrando = true;
 
     Promise.resolve(api.pickClub(primerClub)).then(function(){
@@ -2571,10 +2702,9 @@ window.CLUB_SELECTOR = (function(){
       lado[0] = a; lado[1] = b;
       // render() dibuja los dos cards de arriba (#cdWrap) leyendo `lado[i]` directo — sin esto
       // quedaban vacíos, aunque aplicar() sí mostrara bien la tabla de resultado de abajo
-      // (encontrado por Guido probando la reapertura). aplicar() es aparte porque además
-      // carga de nuevo los data files de los clubes involucrados si hiciera falta.
+      // (encontrado por Guido probando la reapertura). Desde el to-do 23, render() con los
+      // dos lados llenos llama a aplicar() solo, que carga los data files que hagan falta.
       render();
-      aplicar();
     },
     // to-do 70: pares [clubId, year] YA RESUELTOS de un lado — un bloque puede guardar el año
     // en `null` ("el más reciente que haya", ver paresDeBloque()) y ese default se calcula acá

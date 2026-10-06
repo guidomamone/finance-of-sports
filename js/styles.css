@@ -724,13 +724,10 @@
   /* ===== LOS DOS CARDS DE COMPARAR (Versión 148) =====
      Arrancan VACÍOS: el card vacío es un botón grande y nada más, así la pantalla
      abre con una pregunta en vez de con un árbol de cinco niveles por lado. */
-  .cd-wrap{display:grid;grid-template-columns:1fr 44px 1fr;gap:10px;align-items:stretch;
-           background:linear-gradient(160deg,var(--azul) 0%,var(--azul-dark) 100%);
-           border-radius:14px;padding:20px;margin-bottom:0;}
-  .cd-vs{align-self:center;text-align:center;font-size:13px;font-weight:800;color:#8fa3c4;letter-spacing:.08em;}
-  .cd-col{background:var(--card);color:var(--text);border-radius:12px;border:1px solid transparent;overflow:hidden;
+  /* to-do 23: los dos cards son blancos y sueltos, como los de Finanzas (antes iban en una franja azul con "VS"). */
+  .cd-wrap{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;margin-bottom:16px;}
+  .cd-col{min-width:0;background:var(--card);color:var(--text);border-radius:12px;border:1px solid var(--border);overflow:hidden;
           display:flex;flex-direction:column;}
-  .cd-col.con{border-color:var(--oro);}
   .cd-head{display:flex;align-items:center;gap:9px;padding:11px 13px;border-bottom:1px solid var(--border);}
   .cd-letra{width:22px;height:22px;border-radius:50%;background:var(--azul);color:#fff;font-size:11.5px;font-weight:800;
             display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
@@ -765,12 +762,14 @@
   .cd-anio select{flex:1;font-family:inherit;font-size:13px;padding:7px 8px;border:1px solid var(--border);
                   border-radius:8px;background:#fff;color:var(--text);cursor:pointer;}
   .cd-anios{margin:0;font-size:12px;color:var(--muted);font-weight:700;}
-  .cd-pie{background:linear-gradient(160deg,var(--azul-dark),var(--azul-dark));border-radius:0 0 14px 14px;
-          margin-top:-14px;padding:0 20px 20px;margin-bottom:22px;}
-  .cd-go{background:var(--oro);color:var(--azul-dark);border:none;border-radius:10px;padding:12px 22px;
-         font-family:inherit;font-size:14.5px;font-weight:800;cursor:pointer;}
-  .cd-go:hover{filter:brightness(1.07);}
-  .cd-go.off{background:rgba(255,255,255,.12);color:#8fa3c4;cursor:not-allowed;}
+  .cd-pie{margin:-6px 0 18px;}
+  .cd-pie[hidden]{display:none;}
+  .cd-falta{margin:0;font-size:13px;color:var(--muted);}
+  /* to-do 23: chips de ejercicio (las clases .fin-year* de Finanzas) y "Cómo se junta". */
+  .cd-chips .fin-years-lbl{display:block;margin-bottom:6px;}
+  .cd-agg{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;}
+  .cd-agg .segmented button{padding:5px 11px;font-size:12.5px;}
+  .cd-tag-presu{display:inline-block;font-size:10.5px;font-weight:600;color:#8a6d00;border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;background:#fdf8e7;}
 
   /* El resultado: una barra por lado en cada indicador, a escala DENTRO de su
      indicador y no entre indicadores (misma regla que la comparación de hoy). */
@@ -946,7 +945,6 @@
   @media (max-width:900px){
     .sel-modal{padding:12px 8px;}
     /* Los dos cards se apilan y el VS queda en el medio. */
-    .cd-wrap{grid-template-columns:1fr;}
-    .cd-vs{padding:4px 0;}
+    .cd-wrap{grid-template-columns:minmax(0,1fr);}
     .cd-tabla .cd-ind{width:auto;}
   }
