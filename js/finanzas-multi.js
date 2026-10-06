@@ -467,6 +467,127 @@ const FIN_MULTI_KPIS = (function(){
     });
   }
 
-  return { render };
+  return { render, delAnio };
 })();
 window.FIN_MULTI_KPIS = FIN_MULTI_KPIS;
+
+
+// ============================================================================
+// EL GRÁFICO DE EVOLUCIÓN ARRIBA DE LA TABLA (to-do 147, paso 7).
+//
+// Con ?multi=1 reemplaza a la sección "Gráficos" de abajo (que en este modo se esconde por CSS). Sigue a
+// los ejercicios elegidos y usa los mismos totales por año que los KPIs (FIN_MULTI_KPIS.delAnio), así
+// que gráfico, cards y tabla dicen lo mismo. Dos vistas:
+//   - "Totales": ingresos y gastos (líneas) y resultado neto (barras verdes o rojas).
+//   - "De qué vive el club": barras apiladas con los rubros de ingreso del formato simplificado, un
+//     ejercicio por barra. Reemplaza a la torta de un año, que no puede mostrar cómo cambia la mezcla.
+//     Siempre en formato simplificado: las etiquetas del club cambian de un año a otro y no se apilan.
+// Igual que en la tabla: tramo punteado donde la selección saltea años o una punta es presupuesto,
+// punto hueco en los presupuestos. Las franjas por gestión llegan con el paso 12.
+// ============================================================================
+const FIN_MULTI_CHART = (function(){
+  let inst = null, modo = 'tot', club = null;
+  const PALETA = ['#0a2b5c', '#3f6fb5', '#8fb0dd', '#f2b705', '#1b7a3d', '#e07b39', '#8a5cf6', '#2b8a99', '#b9b9b4'];
+  function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
+
+  function render(clubId, years){
+    const card = document.getElementById('finTrendCard');
+    if(!card) return;
+    if(clubId !== club){ club = clubId; modo = 'tot'; }
+    if(!years.length){ card.hidden = true; return; }
+    card.hidden = false;
+    if(inst){ inst.destroy(); inst = null; }
+
+    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const datos = years.map(y => FIN_MULTI_KPIS.delAnio(clubId, y));
+    const unidad = 'M ' + currentCurrency;
+    const punteado = ctx => {
+      const a = datos[ctx.p0DataIndex], b = datos[ctx.p1DataIndex];
+      return (b.y - a.y > 1 || a.presu || b.presu) ? [5, 4] : undefined;
+    };
+
+    // Botones Totales / De qué vive el club
+    document.querySelectorAll('#finTrendMode button').forEach(b => {
+      b.classList.toggle('active', b.dataset.m === modo);
+      b.onclick = () => { modo = b.dataset.m; render(clubId, years); };
+    });
+
+    // Bajada: qué pasó entre el primero y el último elegidos.
+    const desc = document.getElementById('finTrendDesc');
+    if(datos.length === 1) desc.textContent = t('finanzas.mchart.one', 'Con un solo ejercicio el gráfico es una foto: sumá años para ver la evolución.');
+    else {
+      const a = datos[0], b = datos[datos.length - 1];
+      const p = a.ing ? Math.abs((b.ing / a.ing - 1) * 100) : 0;
+      const conRes = datos.filter(d => d.pat != null);
+      desc.textContent = t('finanzas.mchart.desc', 'En {u}. De {a} a {b} los ingresos {dir} {p}%; el resultado fue negativo en {n} de {m} ejercicios.')
+        .replace('{u}', unidad).replace('{a}', lab(a.y)).replace('{b}', lab(b.y))
+        .replace('{dir}', b.ing >= a.ing ? t('finanzas.mchart.up', 'subieron') : t('finanzas.mchart.down', 'bajaron'))
+        .replace('{p}', p.toFixed(0))
+        .replace('{n}', conRes.filter(d => d.pat < 0).length).replace('{m}', conRes.length);
+    }
+
+    const labels = datos.map(d => lab(d.y));
+    const canvas = document.getElementById('finTrendCanvas');
+    let config;
+    if(modo === 'tot'){
+      const linea = (nombre, k, color) => ({
+        type: 'line', label: nombre, data: datos.map(d => d[k]), order: 1,
+        borderColor: color, backgroundColor: color, borderWidth: 2.4, tension: 0, spanGaps: true,
+        pointRadius: 4, pointBorderWidth: 1.8, pointBackgroundColor: datos.map(d => d.presu ? '#fff' : color),
+        segment: { borderDash: punteado },
+      });
+      config = {
+        type: 'bar',
+        data: { labels, datasets: [
+          linea(t('section.revenue', 'Ingresos'), 'ing', '#0a2b5c'),
+          linea(t('section.expenses', 'Gastos'), 'gas', '#b5372b'),
+          { type: 'bar', label: t('stat.pat', 'Resultado neto'), data: datos.map(d => d.pat), order: 2,
+            backgroundColor: datos.map(d => d.pat == null ? 'transparent' : d.pat < 0 ? (d.presu ? 'rgba(181,55,43,.25)' : 'rgba(181,55,43,.45)') : (d.presu ? 'rgba(27,122,61,.25)' : 'rgba(27,122,61,.45)')),
+            borderColor: datos.map(d => d.pat != null && d.pat < 0 ? '#b5372b' : '#1b7a3d'),
+            borderWidth: datos.map(d => d.presu ? 1.5 : 0), borderDash: [3, 2], maxBarThickness: 34 },
+        ] },
+      };
+    } else {
+      // Rubros de ingreso del formato simplificado, convertidos con el tipo de cambio de cada año.
+      const rubros = [];
+      const porAnio = years.map(y => {
+        const rep = simplifiedReportForGeneric(clubId, y);
+        const meta = yearMetaFor(clubId, y);
+        const m = {};
+        (rep.ingresos || []).forEach(r => {
+          if(!rubros.includes(r.label)) rubros.push(r.label);
+          m[r.label] = (m[r.label] || 0) + nativeDisplayVal(r.value, meta, currentCurrency);
+        });
+        return m;
+      });
+      const conPlata = rubros.filter(r => porAnio.some(m => (m[r] || 0) > 0));
+      config = {
+        type: 'bar',
+        data: { labels, datasets: conPlata.map((r, i) => ({
+          label: tLabel(r), data: porAnio.map(m => m[r] || 0), stack: 'ing',
+          backgroundColor: datos.map(d => d.presu ? PALETA[i % PALETA.length] + '66' : PALETA[i % PALETA.length]),
+          maxBarThickness: 46,
+        })) },
+      };
+    }
+    config.options = {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'bottom', labels: { usePointStyle: true, boxHeight: 7 } },
+        tooltip: { callbacks: {
+          title: items => items.length ? items[0].label + (datos[items[0].dataIndex].presu ? ' (' + t('finanzas.card.budget', 'Presupuesto') + ')' : '') : '',
+          label: c => c.dataset.label + ': ' + (c.parsed.y == null ? '—' : c.parsed.y.toFixed(1) + ' ' + unidad),
+        } },
+      },
+      scales: {
+        x: { stacked: modo === 'mix', grid: { display: false } },
+        y: { stacked: modo === 'mix', beginAtZero: true, title: { display: true, text: unidad } },
+      },
+    };
+    inst = new Chart(canvas, config);
+  }
+  return { render };
+})();
+window.FIN_MULTI_CHART = FIN_MULTI_CHART;

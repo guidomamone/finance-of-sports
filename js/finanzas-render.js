@@ -588,6 +588,7 @@
     // primero elegido y llevan una sparkline (js/finanzas-multi.js). El número grande no cambia: sigue
     // saliendo de los totales de la tabla de arriba.
     if(window.FIN_MULTI && window.FIN_MULTI_KPIS) FIN_MULTI_KPIS.render(clubId, ysSel);
+    if(window.FIN_MULTI && window.FIN_MULTI_CHART) FIN_MULTI_CHART.render(clubId, ysSel);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);

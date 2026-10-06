@@ -473,6 +473,12 @@
   .pl-multi-hint{font-size:12.5px;color:var(--muted);}
   .pl-multi-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
   .pl-multi-bud{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 10px;font-size:13px;cursor:pointer;}
+  /* paso 7: el gráfico de evolución arriba de la tabla; la sección "Gráficos" vieja no va en multi. */
+  .fin-multi #finChartsCard{display:none !important;}
+  .fin-mchart-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;}
+  .fin-mchart-head .subtitle{margin-bottom:8px;}
+  .fin-mchart-wrap{position:relative;height:300px;}
+  @media (max-width:640px){ .fin-mchart-wrap{height:240px;} }
   /* paso 6: KPIs en modo multi-año. */
   .stat .stat-year{color:var(--muted);font-weight:400;}
   .stat .stat-tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#8a6d00;background:#fdf8e7;border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;vertical-align:1px;}

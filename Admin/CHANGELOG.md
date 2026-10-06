@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 538 — To-do 147, paso 7: el gráfico de evolución va arriba de la tabla y sigue a la selección (?multi=1) (2026-10-05)
+
+- `js/finanzas-multi.js` (`FIN_MULTI_CHART`) + `index.html` (`#finTrendCard`, entre los KPIs y la tabla): "Totales" = ingresos y gastos en líneas y resultado neto en barras verdes/rojas; "De qué vive el club" = barras apiladas con los rubros de ingreso del formato simplificado, un ejercicio por barra (reemplaza a la torta de un año). Tramo punteado en saltos y presupuestos, punto hueco y barra clara en presupuestos. Bajada armada con los números ("De 2017/18 a 2024/25 los ingresos subieron 50%; el resultado fue negativo en 3 de 5 ejercicios"). Usa los mismos totales por año que los KPIs (`FIN_MULTI_KPIS.delAnio`, ahora expuesto).
+- Con `?multi=1` la sección "Gráficos" (`#finChartsCard`) se esconde por CSS. Sin el parámetro no cambia nada (los 65 ejercicios idénticos a `main`).
+- Verificado: los ingresos del gráfico, las sumas de las barras apiladas y el Total ingresos de la tabla coinciden año por año en Racing, Juventus, Boca y Köln. `js/styles.css`, `data/lang/en.js` (`finanzas.mchart.*`). `ASSET_V` 437.
+
 ## Versión 537 — To-do 147, paso 6: KPIs con año, comparación y sparkline (?multi=1) (2026-10-05)
 
 - `js/finanzas-multi.js` (`FIN_MULTI_KPIS`): con `?multi=1`, los 5 cards de arriba dicen de qué ejercicio son ("Ingresos · 2024/25"); con más de uno elegido, comparan contra el primero (ingresos y gastos en %, resultado y deuda neta en plata, porque cambian de signo) y llevan una sparkline. Si el más nuevo es solo presupuesto, van punteados con "Presupuesto" y la deuda neta en "—" ("Un presupuesto no informa deuda"). El número grande sigue saliendo de los totales de la tabla de un año.
