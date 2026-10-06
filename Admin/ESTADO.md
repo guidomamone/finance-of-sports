@@ -43,7 +43,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - El onboarding se hace con el pipeline: `tools/lote.mjs` (etapas 3 a 8, lo corre Guido), `tools/cargar.mjs` (escribe el año en el sitio,
   corre los generadores y `audit.js`, y revierte si algo falla) y `tools/caja-deuda.mjs` (caja y deuda, con el club ya publicado). Lo que no
   se resuelve solo va a la cola humana (`tools/cola.mjs`). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
-  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes del pipeline están en `Admin/HALLAZGOS-pipeline.md` (medidos y descartados) y en el to-do 149 (gestiones). Un dato publicado mal se corrige con un ajuste manual
+  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes del pipeline están en `Admin/HALLAZGOS-pipeline.md` (medidos y descartados). Un dato publicado mal se corrige con un ajuste manual
   (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
   club la tiene en todos sus otros balances desglosados (hoy 70 filas en 16 años de 7 clubes); `cargar.mjs --escribir` la aplica solo. La
@@ -65,8 +65,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   emergencia). Cómo está hecho y qué no romper: `Admin/PANTALLA.md`, "Finanzas multi-año". Mockup aprobado:
   `Prototyping/Finanzas/mockup-147.html`.
 - Datos nuevos que se mantienen a mano una vez por año: `data/deflactores.js` (se genera con
-  `node tools/fetch-fx-reference.mjs --deflactores`) y `data/gestiones/<país>.js` (hoy solo Boca y Racing; el resto y su carga en
-  el pipeline de altas, to-do 149).
+  `node tools/fetch-fx-reference.mjs --deflactores`) y `data/gestiones/<país>.js` (65 clubes de 10 países, Versión 553; un año nuevo
+  sin presidente que lo cubra abre un caso `gestion` en la cola al cargarlo, Versión 552).
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por
