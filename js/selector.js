@@ -143,6 +143,9 @@ window.CLUB_SELECTOR = (function(){
   // LOS DOS LADOS de la pestaña Comparar. `null` = card vacío.
   var lado = [null, null];
   var mostrando = false;          // ¿ya se apretó "Comparar"?
+  // "Valores ajustados por inflación" de Comparar (to-do 23). Es un estado APARTE del de Finanzas
+  // (FIN_REAL, js/finanzas-multi.js): Comparar siempre muestra USD, sin importar la moneda elegida.
+  var cmpReal = false;
 
   // --- ESTADO DE LOS PASOS ---------------------------------------------------
   // `armado` es el paso 6 (el año y el agregador). Está en la lista de claves
@@ -1526,11 +1529,31 @@ window.CLUB_SELECTOR = (function(){
     });
   }
 
+  // VALORES AJUSTADOS POR INFLACIÓN (to-do 23): el mismo criterio que FIN_REAL en Finanzas, con la serie
+  // del dólar de data/deflactores.js. Cada ejercicio se ajusta por el año en que cierra (`year`, la misma
+  // clave que usa el tipo de cambio) ANTES de sumarse o promediarse con los demás de su lado; año base =
+  // el último de la serie; un ejercicio que cierra en el año base o después (un presupuesto futuro) no se
+  // ajusta. Con el toggle apagado, 1.
+  function serieUSD(){ return ((window.DEFLACTORES || {}).USD) || null; }
+  function baseReal(){
+    var s = serieUSD();
+    return s ? Math.max.apply(null, Object.keys(s.valores).map(Number)) : null;
+  }
+  function facReal(year){
+    var s = serieUSD();
+    if(!cmpReal || !s) return 1;
+    var b = baseReal();
+    if(year >= b) return 1;
+    var v = s.valores[year];
+    return v ? s.valores[b] / v : 1;
+  }
+
   function numerosDe(id, year){
     var c = window.computeYearGeneric(id, year);
     if(!c) return null;
     var meta = window.yearMetaFor(id, year);
-    var usd = function(v){ return window.toDisplayValue(v, meta, 'USD'); };
+    var f = facReal(year);
+    var usd = function(v){ return window.toDisplayValue(v, meta, 'USD') * f; };
     // Mismo test que usa el sitio para "la fuente no informa deuda ni caja": los dos
     // en null, o los dos en CERO exacto (así lo escriben los presupuestos).
     var sinDeuda = (c.meta.grossDebt == null && c.meta.cash == null)
@@ -1574,8 +1597,9 @@ window.CLUB_SELECTOR = (function(){
   function mezclaDe(id, year){
     var rows = (window.simplifiedReportForClub(id, year) || {}).ingresos || [];
     var meta = window.yearMetaFor(id, year);
+    var f = facReal(year);
     return rows.map(function(r){
-      return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') };
+      return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') * f };
     // OJO: se descartan los CEROS exactos (una fila en 0 no dibuja nada), pero NO
     // los negativos. Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan ingreso
     // BRUTO y una línea de deducciones que cae en el catch-all y queda negativa —
@@ -2557,6 +2581,9 @@ window.CLUB_SELECTOR = (function(){
     // adentro, no en el bloque en sí. js/cuenta.js necesita el año real para el label
     // ("Real Betis, 2025/2026"), así que pide la versión ya resuelta en vez de leer `bloques`
     // crudo.
-    paresDeLado: function(l){ return paresDe(l); }
+    paresDeLado: function(l){ return paresDe(l); },
+    // to-do 23: "Valores ajustados por inflación" de Comparar. Lo usa el toggle de la barra (paso 3).
+    setReal: function(v){ cmpReal = !!v; if(mostrando) renderResultado(); },
+    baseReal: baseReal
   };
 })();
