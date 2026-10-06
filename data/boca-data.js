@@ -205,6 +205,13 @@ const bocaRevenueLinesByYear = {
 
 
 // ---------- GASTOS ----------
+// SUELDOS POR DEPARTAMENTO (decisión de Guido, to-do 101, 2026-10-06; NO volver a plantearla): en 2022, 2023
+// y 2025 el sueldo de cada departamento va a la MISMA categoría que los otros gastos de ese departamento.
+// Solo "Fútbol profesional" queda en wages_squad. Estadio, Casa Amarilla, Departamento médico y Gastos de
+// estructura operativa → admin_general_expense; Educación física, Fútbol juvenil y Básquet →
+// youth_other_sports_expense. Es lo que dice club-data-mapping §17 y lo que hacen Vélez, Rosario Central y
+// San Lorenzo. Antes de esta decisión los 8 sueldos iban a wages_squad (2025: 67.870 M de sueldos del plantel;
+// ahora 46.452 M). Totales sin cambio.
 const bocaExpenseLinesByYear = {
   // Ejercicio 2022: mismo criterio de separación wages_squad/player_amortisation/other_expenses por
   // departamento que ya usa 2025 (ver comentario de cabecera del archivo) — acá cada departamento SÍ
@@ -229,12 +236,12 @@ const bocaExpenseLinesByYear = {
     ]},
     { rawLabel:'Incorporación de jugadores a préstamo', normalizedCategory:'other_expenses', amountNative:-43.440853, disclosureLevel:'detailed' },
     { rawLabel:'Derechos de tanteo', normalizedCategory:'other_expenses', amountNative:-70.468931, disclosureLevel:'detailed' },
-    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-374.373211, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-374.373211, disclosureLevel:'detailed' },
     { rawLabel:'Estadio — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-152.826052, disclosureLevel:'detailed', items:[
       ['Materiales y elementos de limpieza', -40.638041], ['Conservación de muebles e inmuebles', -39.194871], ['Servicios públicos', -22.441432],
       ['Gastos diversos', -22.47758], ['A.B.L. e impuestos municipales', -16.342345], ['Honorarios', -6.998786], ['Agasajos, buffet y refrigerios', -4.732997],
     ]},
-    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-145.1943, disclosureLevel:'detailed', items:[
+    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-145.1943, disclosureLevel:'detailed', items:[
       ['Deportes varios: Remuneraciones y cargas sociales', -39.596435], ['Vóley: Remuneraciones y cargas sociales', -36.779939],
       ['Básquet amateur: Remuneraciones y cargas sociales', -30.859027], ['Fútbol 0.000005: Remuneraciones y cargas sociales', -27.051865],
       ['Gastos administrativos: Remuneraciones y cargas sociales', -10.907034],
@@ -246,28 +253,28 @@ const bocaExpenseLinesByYear = {
       ['Vóley: otros gastos', -9.611653, [['Afiliación e inscripciones', -1.716041], ['Gastos de concentración y viajes', -1.33128], ['Gastos diversos', -6.564332]]],
       ['Gastos administrativos: otros', -0.44706, [['Gastos diversos', -0.44706]]],
     ]},
-    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-179.1326, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-179.1326, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol juvenil — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-122.167141, disclosureLevel:'detailed', items:[
       ['Gastos diversos', -37.961241], ['Agasajos, buffet y refrigerios', -53.851594], ['Vigilancia', -18.9224], ['Mantenimiento de campo de juego', -11.431906],
     ]},
-    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-42.151924, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-42.151924, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de básquet — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-193.017539, disclosureLevel:'detailed', items:[
       ['Locación de servicios plantel', -118.103658], ['Gastos de concentración y viajes', -33.726403], ['Gastos de vivienda', -13.229105], ['Gastos diversos', -14.251747],
       ['Gastos de organización de espectáculos', -9.837104], ['Artículos de deporte', -2.977843], ['Afiliación e inscripciones', -0.891679],
     ]},
     { rawLabel:'Departamento de Vóley Liga Nacional', normalizedCategory:'youth_other_sports_expense', amountNative:-49.836854, disclosureLevel:'detailed', items:[['Vóley femenino', -49.836854]] },
-    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-94.1488, disclosureLevel:'detailed' },
+    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-94.1488, disclosureLevel:'detailed' },
     { rawLabel:'Casa Amarilla — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-65.275649, disclosureLevel:'detailed', items:[
       ['Servicios de vigilancia y limpieza', -29.918098], ['Servicios públicos', -17.208991], ['Conservación muebles e inmuebles', -5.831272],
       ['A.B.L. e impuestos municipales', -3.050802], ['Gastos diversos', -4.85003], ['Parque Social y Deportivo Casa Amarilla', -2.886631], ['Agasajos, buffet y refrigerios', -1.397432], ['Honorarios', -0.132393],
     ]},
-    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-103.673862, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-103.673862, disclosureLevel:'detailed' },
     { rawLabel:'Departamento médico — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-24.632169, disclosureLevel:'detailed', items:[
       ['Honorarios', -17.372384], ['Gastos diversos', -7.259785],
     ]},
     { rawLabel:'Departamento de cultura', normalizedCategory:'admin_general_expense', amountNative:-34.297136, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol femenino', normalizedCategory:'youth_other_sports_expense', amountNative:-74.35979, disclosureLevel:'detailed' },
-    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-387.601593, disclosureLevel:'detailed', items:[
+    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-387.601593, disclosureLevel:'detailed', items:[
       ['Gastos Gerencia de Administración y Finanzas', -97.323505], ['Gastos Gerencia de Sistemas', -51.896167], ['Gastos Gerencia de Recursos Humanos', -46.705775],
       ['Gastos Comisión Directiva', -29.649505], ['Gastos Gerencia de Legales', -28.242953], ['Gastos Gerencia General', -23.657564], ['Gastos Gerencia de Seguridad', -38.654409],
       ['Gastos Registro Abonos y Cobranzas', -40.302334], ['Gastos Gerencia de Abastecimiento', -19.625331], ['Gastos Gerencia de Marketing', -11.54405],
@@ -311,12 +318,12 @@ const bocaExpenseLinesByYear = {
     { rawLabel:'Gastos por transferencia de jugadores', normalizedCategory:'other_expenses', amountNative:-816.267487, disclosureLevel:'detailed' },
     { rawLabel:'Derechos de tanteo', normalizedCategory:'other_expenses', amountNative:-103.643683, disclosureLevel:'detailed' },
     { rawLabel:'Incorporación de jugadores a préstamo', normalizedCategory:'other_expenses', amountNative:-79.201253, disclosureLevel:'detailed' },
-    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-804.694703, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-804.694703, disclosureLevel:'detailed' },
     { rawLabel:'Estadio — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-406.293261, disclosureLevel:'detailed', items:[
       ['Materiales y elementos de limpieza', -101.0728], ['Conservación de muebles e inmuebles', -85.900449], ['Gastos diversos', -82.537904],
       ['Servicios públicos', -60.243276], ['Alquileres, A.B.L. e impuestos municipales', -50.552867], ['Honorarios', -13.804354], ['Agasajos, buffet y refrigerios', -12.181611],
     ]},
-    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-388.50668, disclosureLevel:'detailed', items:[
+    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-388.50668, disclosureLevel:'detailed', items:[
       ['Vóley femenino y masculino: Remuneraciones y cargas sociales', -148.890355], ['Deportes varios: Remuneraciones y cargas sociales', -86.379641],
       ['Básquet amateur: Remuneraciones y cargas sociales', -64.65026], ['Fútbol 0.000005: Remuneraciones y cargas sociales', -52.473905],
       ['Gastos administrativos: Remuneraciones y cargas sociales', -36.112519],
@@ -328,27 +335,27 @@ const bocaExpenseLinesByYear = {
       ['Básquet amateur: otros gastos', -24.801942, [['Indumentaria deportiva', -16.16631], ['Viáticos jugadores', -5.588733], ['Organización de eventos y espectáculos', -1.417219], ['Gastos diversos', -1.609373], ['Gastos concentración y viajes', -0.020307]]],
       ['Gastos administrativos: otros', -11.601692, [['Gastos diversos', -11.601692]]],
     ]},
-    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-547.636258, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-547.636258, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol juvenil — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-357.245434, disclosureLevel:'detailed', items:[
       ['Agasajos, buffet y refrigerios', -183.32349], ['Gastos diversos', -93.663355], ['Vigilancia', -59.107369], ['Mantenimiento de campo de juego', -21.15122],
     ]},
-    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-86.056673, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-86.056673, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de básquet — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-354.094626, disclosureLevel:'detailed', items:[
       ['Locación de servicios plantel', -191.671505], ['Gastos de concentración y viajes', -58.820447], ['Gastos diversos', -46.547345], ['Gastos de vivienda', -24.378913],
       ['Gastos de organización de espectáculos', -20.856653], ['Artículos de deporte', -9.312018], ['Afiliación e inscripciones', -2.507745],
     ]},
-    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-205.986471, disclosureLevel:'detailed' },
+    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-205.986471, disclosureLevel:'detailed' },
     { rawLabel:'Casa Amarilla — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-106.867088, disclosureLevel:'detailed', items:[
       ['Servicios públicos', -44.989823], ['Servicios de vigilancia y limpieza', -30.752488], ['Conservación muebles e inmuebles', -15.659543],
       ['Gastos diversos', -9.253292], ['Parque Social y Deportivo Casa Amarilla', -2.926487], ['Agasajos, buffet y refrigerios', -2.899728], ['Honorarios', -0.385727],
     ]},
-    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-210.037341, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-210.037341, disclosureLevel:'detailed' },
     { rawLabel:'Departamento médico — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-72.898353, disclosureLevel:'detailed', items:[
       ['Honorarios', -64.706351], ['Gastos diversos', -8.192002],
     ]},
     { rawLabel:'Departamento de cultura', normalizedCategory:'admin_general_expense', amountNative:-84.971758, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol femenino', normalizedCategory:'youth_other_sports_expense', amountNative:-340.901098, disclosureLevel:'detailed' },
-    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-843.055427, disclosureLevel:'detailed', items:[
+    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-843.055427, disclosureLevel:'detailed', items:[
       ['Gastos Gerencia de Administración y Finanzas', -219.536395], ['Gastos Gerencia de Sistemas', -116.861628], ['Gastos Gerencia de Recursos Humanos', -92.373845],
       ['Gastos Centro de Atención al Socio', -82.409189], ['Gastos Gerencia de Seguridad', -70.722233], ['Gastos Comisión Directiva', -67.547078],
       ['Gastos Gerencia de Legales', -60.297003], ['Gastos Gerencia General', -56.771693], ['Gastos Gerencia de Marketing', -33.787921], ['Gastos Gerencia de Abastecimiento', -42.748442],
@@ -401,13 +408,13 @@ const bocaExpenseLinesByYear = {
       ['Copa Libertadores', -1489.465135], ['Festejo día del hincha', -241.727871], ['Selección Nacional', -184.421360],
       ['Copa Argentina', -77.466083],
     ]},
-    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-5543.366571, disclosureLevel:'detailed' },
+    { rawLabel:'Estadio — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-5543.366571, disclosureLevel:'detailed' },
     { rawLabel:'Estadio — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-2584.319372, disclosureLevel:'detailed', items:[
       ['Servicios públicos', -623.866711], ['Conservación de muebles e inmuebles', -498.969090], ['Alquileres/ABL/impuestos municipales', -424.718410],
       ['Honorarios', -289.376079], ['Materiales y elementos de limpieza', -293.446972], ['Agasajos, buffet y refrigerios', -188.842220],
       ['Gastos diversos', -164.938647], ['Convenios de Canje', -100.161244],
     ]},
-    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-2709.550553, disclosureLevel:'detailed', items:[
+    { rawLabel:'Departamento de educación física — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-2709.550553, disclosureLevel:'detailed', items:[
       ['Gastos administrativos: Remuneraciones y cargas sociales', -93.203254], ['Vóley femenino y masculino: Remuneraciones y cargas sociales', -649.331990],
       ['Deportes varios: Remuneraciones y cargas sociales', -832.481489], ['Fútbol 5: Remuneraciones y cargas sociales', -725.426959],
       ['Básquet amateur: Remuneraciones y cargas sociales', -409.106861],
@@ -419,31 +426,31 @@ const bocaExpenseLinesByYear = {
       ['Fútbol 5: otros gastos', -197.819954, [['Artículos de deporte', -13.822192], ['Viajes', -35.934698], ['Gastos diversos', -148.063064]]],
       ['Básquet amateur: otros gastos', -400.608939, [['Viáticos jugadores', -50.369882], ['Indumentaria deportiva', -146.455433], ['Organización de eventos y espectáculos', -171.502638], ['Gastos diversos', -32.280986]]],
     ]},
-    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-3358.856303, disclosureLevel:'detailed' },
+    { rawLabel:'Fútbol juvenil — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-3358.856303, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol juvenil — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-2043.925922, disclosureLevel:'detailed', items:[
       ['Agasajos, buffet y refrigerios', -877.944935], ['Mantenimiento de campo de juego', -95.068751], ['Vigilancia', -397.034004],
       ['Gastos diversos', -186.754866], ['Viajes', -487.123366],
     ]},
-    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-550.578435, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento de básquet — Remuneraciones y cargas sociales', normalizedCategory:'youth_other_sports_expense', amountNative:-550.578435, disclosureLevel:'detailed' },
     { rawLabel:'Departamento de básquet — Otros gastos operativos', normalizedCategory:'youth_other_sports_expense', amountNative:-3044.638821, disclosureLevel:'detailed', items:[
       ['Locación de servicios plantel', -1581.323934], ['Gastos de concentración y viajes', -623.998792], ['Gastos de alquiler de equipos', -277.743279],
       ['Gastos diversos', -184.763446], ['Gastos de vivienda', -166.888913], ['Gastos de organización de espectáculos', -134.711447],
       ['Artículos de deporte', -58.872060], ['Afiliación e inscripciones', -16.336950],
     ]},
-    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-1723.314898, disclosureLevel:'detailed' },
+    { rawLabel:'Casa Amarilla — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-1723.314898, disclosureLevel:'detailed' },
     { rawLabel:'Casa Amarilla — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-775.588156, disclosureLevel:'detailed', items:[
       ['Servicios públicos', -313.395811], ['Agasajos, buffet y refrigerios', -124.964843], ['Conservación muebles e inmuebles', -119.172247],
       ['Servicios de vigilancia y limpieza', -122.082198], ['Parque Social y Deportivo Casa Amarilla', -61.945654],
       ['Gastos diversos', -29.140162], ['Honorarios', -4.887241],
     ]},
-    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-1249.597409, disclosureLevel:'detailed' },
+    { rawLabel:'Departamento médico — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-1249.597409, disclosureLevel:'detailed' },
     { rawLabel:'Departamento médico — Otros gastos operativos', normalizedCategory:'admin_general_expense', amountNative:-933.257882, disclosureLevel:'detailed', items:[
       ['Honorarios', -754.340520], ['Mantenimiento y soporte', -58.886208], ['Gastos diversos', -120.031154],
     ]},
     { rawLabel:'Departamento de cultura', normalizedCategory:'admin_general_expense', amountNative:-354.949396, disclosureLevel:'detailed' },
     { rawLabel:'Fútbol femenino', normalizedCategory:'youth_other_sports_expense', amountNative:-1988.118211, disclosureLevel:'detailed' },
     { rawLabel:'Impuestos y tasas', normalizedCategory:'admin_general_expense', amountNative:-7080.513561, disclosureLevel:'detailed' },
-    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'wages_squad', amountNative:-6282.235977, disclosureLevel:'detailed', items:[
+    { rawLabel:'Gastos de estructura operativa — Remuneraciones y cargas sociales', normalizedCategory:'admin_general_expense', amountNative:-6282.235977, disclosureLevel:'detailed', items:[
       ['Gastos Comisión Directiva', -436.234604], ['Gastos Gerencia General', -519.311449], ['Gastos Gerencia de Prensa', -217.827635],
       ['Gastos Gerencia de Recursos Humanos', -606.211507], ['Gastos Gerencia de Seguridad', -359.089350],
       ['Gastos Gerencia de Abastecimiento y Operaciones', -495.503091], ['Gastos Gerencia de Administración y Finanzas', -1090.144115],

@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión ?? — Boca: el sueldo de cada departamento va con su departamento (to-do 101, punto 1) (2026-10-06)
+
+- `data/boca-data.js`, 2022, 2023 y 2025: los sueldos de Estadio, Casa Amarilla, Departamento médico y Estructura operativa pasan de `wages_squad` a `admin_general_expense`, y los de Educación física, Fútbol juvenil y Básquet a `youth_other_sports_expense`, la misma categoría que los otros gastos de cada departamento. Solo Fútbol profesional queda en `wages_squad` (2025: 67.870 → 46.452 M ARS). Totales sin cambio. La decisión queda escrita arriba de `bocaExpenseLinesByYear`. **Al mergear: subir ASSET_V y correr los generadores (rankings).**
+
 ## Versión 553 — To-do 149 cerrado: 62 clubes con sus presidentes en el formato nuevo (2026-10-05)
 
 - Un subagente (Sonnet) pasó a `data/gestiones/<país>.js` los clubes que tenían nombres de presidentes en `gestionesByClub` (que sigue vivo para otras pestañas): 105 gestiones de 65 clubes en total, con fecha de asunción y fuente; archivos nuevos br, gb, cl, co, de, be, dk, hr y es, y esos países en `PAISES` de `js/finanzas-anios.js`. Ninguna confirmada sin fuente.

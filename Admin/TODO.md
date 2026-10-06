@@ -35,8 +35,6 @@ ni en el comentario de ningún archivo de código.
 101. CRITERIOS DE CATEGORÍA A DECIDIR (revisión de los 169 clubes por un subagente, 2026-10-05; los errores claros, River y Racing
     Educación, quedaron corregidos en la Versión 550). Casi no hay conflictos entre años: lo que hay son rubros parejos dentro del club
     pero contra la skill. Decisiones de Guido, una por línea; cada corrección con su ajuste manual si el club pasa por el pipeline:
-    1. Boca 2022, 2023 y 2025: sueldos de juveniles, básquet, educación física, Casa Amarilla, estadio y estructura en `wages_squad`
-       (2025: 21.417 M ARS de 67.870); la skill §17 y el presupuesto 2027 de Boca los mandan a otras secciones / administración.
     2. Gastos de transferencias, préstamos y comisiones de jugadores: mitad de los clubes en `other_expenses`, mitad en
        `player_amortisation` (la skill §1 dice este). San Lorenzo cambia entre años (2012-2013 vs 2015-2017).
     3. "Seguros" en `other_expenses` (Argentinos 2016-18, San Lorenzo 2012-17, Unión 2022-23, Rosario Central 2023); la skill dice admin.
