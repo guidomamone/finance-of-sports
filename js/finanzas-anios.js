@@ -71,6 +71,10 @@ const FIN_ANIOS = (function(){
       clubDeLaSeleccion = clubId;
       expandido = false;
       FIN_SEL.set(ultimosConBalance(lista, 5));
+      // Las gestiones del país llegan aparte (paso 12): cuando están, se vuelve a dibujar.
+      if(window.FIN_GESTION) FIN_GESTION.cargar(clubId).then(() => {
+        if(clubDeLaSeleccion === clubId && window.CLUB_GESTIONES && window.CLUB_GESTIONES[clubId]) refreshFinanzas();
+      });
     } else {
       const validos = lista.filter(e => e.tipo !== 'X').map(e => e.y);
       FIN_SEL.set(FIN_SEL.years().filter(y => validos.includes(y)));
@@ -148,6 +152,100 @@ const FIN_ANIOS = (function(){
     vacio.hidden = n !== 0;
   }
 
-  return { alCargarClub, render };
+  return { alCargarClub, render, ejercicios };
 })();
 window.FIN_ANIOS = FIN_ANIOS;
+
+
+// ============================================================================
+// GESTIÓN (to-do 147, paso 12). Lee data/gestiones/<país>.js (formato y regla de ejercicios: ver el
+// encabezado de ese archivo) y arma la fila "Gestión" de los cards: un botón por gestión CONFIRMADA
+// que tenga algún ejercicio cargado, de la más vieja a la más nueva. Tocar uno SUMA sus ejercicios a
+// los elegidos y tocarlo de nuevo los saca (se pueden prender dos para compararlas); un botón se ve
+// prendido cuando todos sus ejercicios están elegidos. Con más de 4, se ven las 3 más nuevas (más la
+// prendida) y "+N más" a la izquierda. `deAnio()` lo usan el gráfico (franjas) y la tabla (columnas
+// agrupadas por presidente), en js/finanzas-multi.js.
+// ============================================================================
+const FIN_GESTION = (function(){
+  // Países con archivo en data/gestiones/. Uno nuevo se suma acá (tools/audit.js lo controla).
+  const PAISES = ['ar'];
+  const pedidos = {};
+  let todas = false, clubDeTodas = null;
+
+  function cargar(clubId){
+    const pais = ((clubs[clubId] || {}).country || '').toLowerCase();
+    if(!PAISES.includes(pais)) return Promise.resolve();
+    if(!pedidos[pais]) pedidos[pais] = new Promise(res => {
+      const s = document.createElement('script');
+      s.src = 'data/gestiones/' + pais + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.onload = res; s.onerror = () => { console.error('[gestiones] no cargó data/gestiones/' + pais + '.js'); res(); };
+      document.head.appendChild(s);
+    });
+    return pedidos[pais];
+  }
+  // La fecha de cierre del ejercicio `y`: el día anterior al arranque del ejercicio siguiente.
+  function cierre(clubId, y){
+    const ini = (clubs[clubId] || {}).fiscalYearStart || '07-01';
+    if(ini === '01-01') return y + '-12-31';
+    const d = new Date(Date.UTC(y, Number(ini.slice(0, 2)) - 1, Number(ini.slice(3, 5))));
+    d.setUTCDate(d.getUTCDate() - 1);
+    return d.toISOString().slice(0, 10);
+  }
+  // Las gestiones confirmadas del club, cada una con sus ejercicios cargados (no "Sin publicar").
+  function deClub(clubId){
+    const lista = ((window.CLUB_GESTIONES || {})[clubId] || []).filter(g => g.confirmada);
+    const ys = FIN_ANIOS.ejercicios(clubId).filter(e => e.tipo !== 'X').map(e => e.y);
+    return lista.slice().sort((a, b) => a.desde < b.desde ? -1 : 1).map(g => ({
+      ...g,
+      anios: ys.filter(y => (g.firmo || []).includes(y) || (!lista.some(o => o !== g && (o.firmo || []).includes(y))
+        && g.desde <= cierre(clubId, y) && (g.hasta == null || cierre(clubId, y) < g.hasta))),
+    }));
+  }
+  function deAnio(clubId, y){ return deClub(clubId).find(g => g.anios.includes(y)) || null; }
+
+  function render(clubId){
+    const caja = document.getElementById('finGest');
+    if(!caja) return;
+    if(clubId !== clubDeTodas){ clubDeTodas = clubId; todas = false; }
+    const gs = deClub(clubId).filter(g => g.anios.length);
+    caja.hidden = !gs.length;
+    caja.innerHTML = '';
+    if(!gs.length) return;
+    const t = (k, es) => (window.I18N && I18N.t) ? I18N.t(k, es) : es;
+    const sel = FIN_SEL.years();
+    const prendida = g => g.anios.every(y => sel.includes(y));
+    const visibles = (gs.length <= 4 || todas) ? gs : gs.filter((g, i) => i >= gs.length - 3 || prendida(g));
+    const lbl = document.createElement('span');
+    lbl.className = 'fin-years-lbl';
+    lbl.textContent = t('finanzas.gest.label', 'Gestión');
+    caja.appendChild(lbl);
+    if(gs.length > 4){
+      const mas = document.createElement('button');
+      mas.type = 'button';
+      mas.className = 'fin-years-more';
+      mas.textContent = todas ? t('finanzas.gest.less', 'menos') : '+' + (gs.length - visibles.length) + ' ' + t('finanzas.card.more', 'más');
+      mas.onclick = () => { todas = !todas; render(clubId); };
+      caja.appendChild(mas);
+    }
+    visibles.forEach(g => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'fin-gest' + (prendida(g) ? ' on' : '');
+      b.setAttribute('aria-pressed', prendida(g) ? 'true' : 'false');
+      b.title = g.nombre + ' · ' + g.cargo;
+      b.innerHTML = '<span></span><small></small>';
+      b.querySelector('span').textContent = g.corto;
+      b.querySelector('small').textContent = g.desde.slice(0, 4) + '–' + (g.hasta ? g.hasta.slice(0, 4) : t('finanzas.gest.today', 'hoy'));
+      b.onclick = () => {
+        const on = prendida(g);
+        const nuevos = on ? sel.filter(y => !g.anios.includes(y)) : [...new Set(sel.concat(g.anios))];
+        FIN_SEL.set(nuevos);
+        refreshFinanzas();
+      };
+      caja.appendChild(b);
+    });
+  }
+
+  return { cargar, deClub, deAnio, render, cierre };
+})();
+window.FIN_GESTION = FIN_GESTION;

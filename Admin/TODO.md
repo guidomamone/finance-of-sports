@@ -46,7 +46,7 @@ ni en el comentario de ningún archivo de código.
 
 147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
     lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541), paso 11 (valores ajustados por inflación, Versión 543). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541), paso 11 (valores ajustados por inflación, Versión 543), paso 12 (gestión con el formato nuevo, Boca y Racing, Versión 545). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
     DECISIONES DE GUIDO (2026-10-05):
     - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
       Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
@@ -76,10 +76,6 @@ ni en el comentario de ningún archivo de código.
     9. Fuentes y banner de calidad por ejercicio elegido. Y los cards de presupuesto (Supuestos, Presupuesto financiero,
        Inversiones, Torneos): solo para el presupuesto más nuevo elegido, con el año en el título (decisión de Guido).
     10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
-    12. Gestión: G1 formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada; los años se
-        derivan de las fechas), G2 migrar Boca, Racing y los ~40 clubes con nombres reales (el relleno "Gestión actual" no se migra),
-        G3 botón de gestión, G5 chequeos en audit.js. Después, G4 `tools/gestiones.mjs` (propone el firmante de cada balance desde su
-        transcripción, a la cola solo si cambia o falta; `cargar.mjs` deja de escribir `gestionId`) y G6 retirar `gestionesByClub`.
     13. El puesto adentro del card "otra liga".   14. Cierre: en.js, celular, audit, docs (PANTALLA, ESTADO), borrar este punto.
 
 149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (paso 12) crea el formato nuevo de
@@ -89,7 +85,9 @@ ni en el comentario de ningún archivo de código.
     de cada balance desde su transcripción ("Presidente", "Presidente do Conselho", "Chairman", "Vorstandsvorsitzender"), marcarlo
     confirmado solo con una fuente, y mandar a la cola humana solo cuando el firmante cambia entre años o no aparece. Criterio ya
     decidido: un año con dos presidentes es de quien firmó el balance; en empresas, el dueño solo si es una persona con nombre (SAF y
-    sociedades anónimas, sin gestión). Cuando esté, se retira `gestionesByClub` (lo usan todavía las pestañas ocultas Pases y
+    sociedades anónimas, sin gestión). Incluye pasar al formato nuevo los ~40 clubes que hoy tienen nombres reales en
+    `gestionesByClub` (Almagro, Estudiantes, Colo-Colo, Flamengo, Corinthians, Everton, Bayern…), con fechas y fuente: el to-do 147
+    solo cargó Boca y Racing. Cuando esté, se retira `gestionesByClub` (lo usan todavía las pestañas ocultas Pases y
     Resultados).
 
 148. EL CHEQUEO DE TIPO DE CAMBIO (`checkFxSanity()`, index.html) DA 6 FALSOS POSITIVOS DE AÑOS VIEJOS (visto el 2026-10-05 con

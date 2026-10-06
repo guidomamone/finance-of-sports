@@ -275,9 +275,24 @@ const FIN_MULTI_PL = (function(){
     });
     head += `<th class="pl-delta">Δ ${lab(primero.y)}→${lab(ultimo.y)}</th><th class="pl-spark">${t('pl.multi.trend', 'Tendencia')}</th></tr>`;
 
+    // Paso 12: una fila arriba que agrupa las columnas por gestión. Un "…" queda adentro del grupo si
+    // los dos vecinos son de la misma gestión (son años salteados del mismo presidente).
+    let filaGest = '';
+    if(window.FIN_GESTION){
+      const grupos = [];
+      cols.forEach((c, i) => {
+        let g = c.gap ? undefined : FIN_GESTION.deAnio(clubId, c.d.y);
+        if(c.gap){ const ant = grupos[grupos.length - 1], sig = cols[i + 1]; if(ant && sig && !sig.gap && ant.g && (FIN_GESTION.deAnio(clubId, sig.d.y) || {}).desde === ant.g.desde) g = ant.g; }
+        const ult = grupos[grupos.length - 1];
+        if(ult && g && ult.g && ult.g.desde === g.desde) ult.n++; else grupos.push({ g: g || null, n: 1 });
+      });
+      if(grupos.some(x => x.g)){
+        filaGest = `<tr class="pl-gest-row"><th></th>${grupos.map((x, k) => `<th colspan="${x.n}" class="pl-gest${k % 2 ? ' alt' : ''}">${x.g ? `<span title="${esc(x.g.nombre)}">${esc(x.g.corto)}</span>` : ''}</th>`).join('')}<th colspan="2"></th></tr>`;
+      }
+    }
     const sp = `<tr class="pl-spacer"><td colspan="${N}"></td></tr>`;
     const tabla = document.getElementById(tableId);
-    tabla.querySelector('thead').innerHTML = head;
+    tabla.querySelector('thead').innerHTML = filaGest + head;
     tabla.querySelector('tbody').innerHTML = ingHtml + sp + gasHtml + (extraHtml ? sp + extraHtml : '') + sp + res;
 
     // Abrir / cerrar un rubro
@@ -699,7 +714,40 @@ const FIN_MULTI_CHART = (function(){
         })) },
       };
     }
+    // Paso 12: una franja por gestión detrás de las barras y las líneas, con el apellido arriba si entra.
+    const franjas = [];
+    if(window.FIN_GESTION){
+      datos.forEach((d, i) => {
+        const g = FIN_GESTION.deAnio(clubId, d.y);
+        const ult = franjas[franjas.length - 1];
+        if(ult && (ult.g && ult.g.desde) === (g && g.desde)) ult.i1 = i; else franjas.push({ g, i0: i, i1: i });
+      });
+    }
+    const conFranjas = franjas.some(f => f.g);
+    config.plugins = conFranjas ? [{
+      id: 'franjasGestion',
+      beforeDatasetsDraw(chart){
+        const x = chart.scales.x, a = chart.chartArea, ctx = chart.ctx;
+        const paso = datos.length > 1 ? x.getPixelForValue(1) - x.getPixelForValue(0) : (a.right - a.left);
+        let k = 0;
+        franjas.forEach(f => {
+          if(!f.g) return;
+          const x0 = Math.max(a.left, x.getPixelForValue(f.i0) - paso / 2), x1 = Math.min(a.right, x.getPixelForValue(f.i1) + paso / 2);
+          ctx.save();
+          ctx.fillStyle = (k++ % 2) ? 'rgba(10,43,92,.035)' : 'rgba(10,43,92,.075)';
+          ctx.fillRect(x0, a.top, x1 - x0, a.bottom - a.top);
+          ctx.fillStyle = '#0a2b5c';
+          ctx.font = '600 11px -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif';
+          ctx.textAlign = 'center';
+          const ancho = x1 - x0, nombre = f.g.corto;
+          const txt = ctx.measureText(nombre).width + 8 < ancho ? nombre : ancho > 30 ? nombre.slice(0, 3) + '.' : '';
+          if(txt) ctx.fillText(txt, (x0 + x1) / 2, a.top - 6);
+          ctx.restore();
+        });
+      },
+    }] : [];
     config.options = {
+      layout: { padding: { top: conFranjas ? 18 : 0 } },
       responsive: true, maintainAspectRatio: false, animation: false,
       interaction: { mode: 'index', intersect: false },
       plugins: {

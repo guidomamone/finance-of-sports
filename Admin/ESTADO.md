@@ -62,7 +62,9 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   Estado de resultados y Deuda con una columna por año, KPIs con comparación y sparkline, gráfico de evolución arriba de la tabla,
   fuentes por ejercicio. El título es el club. `?multi=0` vuelve a la vista vieja de un año. Cómo está hecho y qué no romper:
   `Admin/PANTALLA.md`, "Finanzas multi-año". Desde la Versión 543, valores ajustados por inflación (deflactor del PBI, USD y EUR,
-  `data/deflactores.js`, se actualiza una vez por año). Faltan (to-do 147): gestión, el puesto en el card "otra liga" y el cierre.
+  `data/deflactores.js`, se actualiza una vez por año). Desde la Versión 545, gestión (botón, franjas y columnas agrupadas) con el formato nuevo `data/gestiones/<país>.js`: hoy
+  Boca y Racing, con fuentes. Faltan (to-do 147): el puesto en el card "otra liga" y el cierre; las gestiones de los demás clubes y su
+  carga en el pipeline de altas son el to-do 149.
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por

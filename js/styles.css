@@ -439,6 +439,13 @@
   .fin-year.presu span{color:#8a6d00;}
   .fin-year.sinpub{cursor:not-allowed;opacity:.55;background:repeating-linear-gradient(135deg,#fff 0 6px,#f1f1ee 6px 12px);}
   .fin-years-more{align-self:center;white-space:nowrap;border:0;background:none;padding:0 4px 0 0;color:var(--azul);font-size:13px;font-weight:600;cursor:pointer;}
+  /* paso 12: la fila Gestión, arriba de los cards de ejercicios. */
+  .fin-years-gest{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 8px;}
+  .fin-years-gest[hidden]{display:none;}
+  .fin-gest{white-space:nowrap;border:1px solid #cfd8e6;background:#fff;border-radius:16px;padding:4px 11px;font-size:12.5px;cursor:pointer;color:var(--azul);}
+  .fin-gest small{color:var(--muted);margin-left:5px;font-size:11px;}
+  .fin-gest.on{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .fin-gest.on small{color:#cfd8e6;}
   .fin-years-empty{font-size:13px;color:var(--muted);margin:10px 0 0;}
   /* Sin ningún ejercicio elegido, la página se queda con el título, los cards y el aviso. */
   /* to-do 147, paso 5a: Estado de resultados con una columna por ejercicio. Ancho automático (no el
@@ -466,6 +473,9 @@
   .pl-multi tr.pl-row-open .pl-arrow{color:var(--muted);margin-right:4px;}
   .pl-multi tr.pl-row-chart td{background:#f8fafd;text-align:left;padding:10px 12px 14px;}
   .pl-row-chart-wrap{position:sticky;left:12px;height:190px;max-width:calc(100vw - 80px);width:760px;}
+  .pl-multi tr.pl-gest-row th{padding:6px 4px 0;text-align:center;border-bottom:0;}
+  .pl-multi th.pl-gest span{display:block;border-bottom:2px solid var(--azul);color:var(--azul);font-weight:700;font-size:11.5px;padding-bottom:3px;overflow:hidden;text-overflow:ellipsis;}
+  .pl-multi th.pl-gest.alt span{border-color:#8fb0dd;color:#3f6fb5;}
   .pl-multi .pl-dev{font-size:12.5px;background:#fafaf8;}
   .pl-multi th small{font-style:normal;}
   .pl-multi-ctrls{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px;}

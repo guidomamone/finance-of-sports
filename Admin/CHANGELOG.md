@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 545 — To-do 147, paso 12: gestión en Finanzas, con el formato nuevo de gestiones (2026-10-05)
+
+- `data/gestiones/ar.js` (nuevo, formato nuevo): Boca (Angelici, Ameal, Riquelme) y Racing (Molina, Cogorno, Blanco, Milito), cada una con fecha de asunción, fin, fuente (prensa o Wikipedia, verificadas hoy) y `confirmada`. Los ejercicios de cada gestión se derivan: quien estaba en el cargo al cierre del ejercicio; `firmo` queda para cuando el firmante del balance sea otro. Caso abierto anotado en el archivo: Racing 2012/13 (cerró con Cogorno, Blanco asumió el 30/9/2013; la transcripción no trae firmas).
+- `js/finanzas-anios.js` (`FIN_GESTION`): carga el archivo del país al elegir el club y arma la fila "Gestión" (botones acumulables, más vieja primero, "+N más" con más de 4). `js/finanzas-multi.js`: franjas por gestión en el gráfico y columnas agrupadas por presidente en la tabla.
+- `tools/audit.js` (`checkGestiones`): fuente de cada gestión confirmada, fechas, superposiciones, club existente y la lista `PAISES` contra los archivos. `index.html` (`#finGest`), `js/styles.css`, `data/lang/en.js` (`finanzas.gest.*`). `ASSET_V` 444.
+- Los ~40 clubes con nombres reales en `gestionesByClub` no se migraron: pasan al to-do 149 (gestiones en el pipeline de altas).
+- Verificado: años de cada gestión (Racing: Molina 2009-11, Cogorno 2012-13, Blanco 2014-24, Milito 2025-27; Boca: Ameal 2022-23, Riquelme 2025 y 2027, Angelici sin ejercicios y sin botón), prender y apagar, franjas, columnas agrupadas, Juventus sin fila. Con `?multi=0`, los 65 ejercicios idénticos a `main`.
+
 ## Versión 544 — Los deflactores se bajan con el mismo script que los tipos de cambio (2026-10-05)
 
 - `tools/fetch-fx-reference.mjs --deflactores` (pedido de Guido: que convivan con las series de tipo de cambio del pipeline de altas): baja el deflactor del PBI de EE.UU. (FRED) y de la zona euro (Eurostat) a `tools/fx-reference/deflactor-usd.json` y `deflactor-eur.json`, con el mismo formato que las cotizaciones, y regenera el objeto de `data/deflactores.js` conservando su encabezado. Corrido hoy: reproduce byte por byte lo que se había cargado a mano en la Versión 543. `Admin/PIPELINE.md` (regla 6 del tipo de cambio).

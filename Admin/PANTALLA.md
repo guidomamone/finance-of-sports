@@ -51,6 +51,13 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   multi-año se usa aunque haya UN solo ejercicio (la de un año no sabe ajustar) y el número grande de los KPIs se reescribe.
   La unidad pasa a "M USD de 2024/25" en todos lados, cada columna dice su factor (×1.26) y una franja verde explica la serie
   con un ejemplo. Los años posteriores al base (presupuestos futuros) no se ajustan, y la franja lo dice.
+- **Gestión** (`FIN_GESTION`, js/finanzas-anios.js; datos en `data/gestiones/<país>.js`, se cargan al elegir un club de ese
+  país): fila de botones arriba de los cards, uno por gestión CONFIRMADA con algún ejercicio cargado, de la más vieja a la más
+  nueva (con más de 4, "+N más" a la izquierda). Tocar uno suma sus ejercicios; de nuevo, los saca; dos a la vez se comparan. Los
+  ejercicios de cada gestión NO se escriben: se derivan (quien estaba en el cargo al cierre; `firmo` para la excepción, ver el
+  encabezado de `data/gestiones/ar.js`). El gráfico pinta una franja por gestión (plugin `franjasGestion`) y la tabla agrupa las
+  columnas por presidente. Un país nuevo se suma a `PAISES` en `FIN_GESTION`; `tools/audit.js` (`checkGestiones`) controla
+  fuentes, fechas, superposiciones y que la lista coincida con los archivos.
 - **Mi Cuenta** guarda `years` además de `year`; con un solo año la clave es la de siempre (las búsquedas viejas no se duplican).
 - **Cómo verificar un cambio acá**: los totales de cada columna contra la tabla de un año, eligiendo los ejercicios de a uno
   CON CLICKS en los cards (`#finYears .fin-year`). Llamar `refreshFinanzas()` o `selectClub()` desde la consola no sirve:

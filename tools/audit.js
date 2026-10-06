@@ -1276,6 +1276,42 @@ function checkEscala(api) {
 }
 
 // --- H: higiene de runtime que sí se puede ver desde Node -------------------
+// GESTIONES (to-do 147, paso 12): data/gestiones/<país>.js. Lo que el sitio muestra como botón y como
+// franja tiene que ser verificable: una gestión confirmada sin fuente es un dato sin respaldo (P1);
+// una fecha mal escrita, un "hasta" antes del "desde" o dos gestiones del mismo club que se pisan
+// asignan mal los ejercicios en silencio (P1); un club que no existe es una gestión que nunca se ve
+// (P2). Y la lista PAISES de js/finanzas-anios.js tiene que nombrar exactamente los archivos que hay:
+// un archivo que no está en la lista nunca se carga (P1).
+function checkGestiones(api) {
+  const dir = path.join(ROOT, 'data', 'gestiones');
+  if (!fs.existsSync(dir)) return;
+  const archivos = fs.readdirSync(dir).filter(f => f.endsWith('.js')).map(f => f.replace(/\.js$/, '')).sort();
+  const anios = fs.readFileSync(path.join(ROOT, 'js', 'finanzas-anios.js'), 'utf8');
+  const m = anios.match(/const PAISES = \[([^\]]*)\]/);
+  const lista = m ? [...m[1].matchAll(/'([a-z]+)'/g)].map(x => x[1]).sort() : [];
+  for (const f of archivos) if (!lista.includes(f)) add('P1', 'gestiones-sin-cargar', `data/gestiones/${f}.js existe pero '${f}' no está en PAISES de js/finanzas-anios.js: el sitio nunca lo carga`);
+  for (const f of lista) if (!archivos.includes(f)) add('P2', 'gestiones-pais-sin-archivo', `PAISES de js/finanzas-anios.js nombra '${f}' y no existe data/gestiones/${f}.js (404 al elegir un club de ese país)`);
+  const sandbox = { window: {} };
+  for (const f of archivos) {
+    try { vm.runInNewContext(fs.readFileSync(path.join(dir, f + '.js'), 'utf8'), sandbox, { filename: `data/gestiones/${f}.js` }); }
+    catch (e) { add('P1', 'gestiones-no-carga', `data/gestiones/${f}.js no carga: ${e.message}`); }
+  }
+  const fecha = /^\d{4}-\d{2}-\d{2}$/;
+  for (const [club, gs] of Object.entries(sandbox.window.CLUB_GESTIONES || {})) {
+    if (!api.clubs[club]) add('P2', 'gestion-club-inexistente', `data/gestiones: '${club}' no está en data/clubs.js`);
+    const orden = gs.slice().sort((a, b) => a.desde < b.desde ? -1 : 1);
+    orden.forEach((g, i) => {
+      const quien = `${club} · ${g.nombre || '?'}`;
+      if (!g.nombre || !g.corto || !g.cargo) add('P1', 'gestion-incompleta', `${quien}: falta nombre, corto o cargo`);
+      if (!fecha.test(g.desde || '') || (g.hasta != null && !fecha.test(g.hasta))) add('P1', 'gestion-fecha', `${quien}: desde/hasta tienen que ser AAAA-MM-DD (hasta puede ser null)`);
+      else if (g.hasta != null && g.hasta <= g.desde) add('P1', 'gestion-fecha', `${quien}: "hasta" (${g.hasta}) no es posterior a "desde" (${g.desde})`);
+      if (g.confirmada && !g.fuente) add('P1', 'gestion-sin-fuente', `${quien}: confirmada sin fuente; o se le pone la fuente o confirmada:false`);
+      const sig = orden[i + 1];
+      if (sig && (g.hasta == null || g.hasta > sig.desde)) add('P1', 'gestiones-superpuestas', `${club}: ${g.nombre} (hasta ${g.hasta || 'hoy'}) se pisa con ${sig.nombre} (desde ${sig.desde})`);
+    });
+  }
+}
+
 function checkHigiene(api) {
   const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 
@@ -1462,6 +1498,7 @@ function main() {
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHigiene(api);
+  checkGestiones(api);
 
   if (JSON_OUT) console.log(JSON.stringify({ findings, silenciados }, null, 2));
   else imprimir(api);
