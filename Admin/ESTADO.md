@@ -77,6 +77,12 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   ejercicio. Sin USD / ARS en el header en esta pestaña. Cómo está hecho: `Admin/PANTALLA.md`, "Comparar con el diseño de
   Finanzas". Mockup: `Prototyping/Comparar/mockup-23.html`.
 
+### Techo del modelo (no es una tarea)
+
+- La taxonomía es de fútbol (`player_sales`, `wages_squad`, `youth_football`) y las pestañas Pases/Resultados/Títulos y
+  `gestionesByClub` también. Un club de otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido. (Venía del
+  to-do 23, cerrado en la Versión 560.)
+
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `Admin/finance-of-sports-project.md` (narrativa completa). Este bloque

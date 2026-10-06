@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 560 — To-do 23 cerrado (2026-10-06)
+
+- Lo único que quedaba era la nota "techo del modelo" (la taxonomía es de fútbol), que no es una tarea: pasó a `Admin/ESTADO.md`.
+
 ## Versión 559 — To-do 23: Comparar con el diseño de Finanzas y valores ajustados por inflación (2026-10-06)
 
 - Construido en 7 pasos desde el mockup aprobado (`Prototyping/Comparar/mockup-23.html`), todo en `js/selector.js`, `js/styles.css`,

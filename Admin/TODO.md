@@ -21,12 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
-    prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
-    TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
-    `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
-    otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
-
 96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
     ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
     pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
