@@ -46,7 +46,7 @@ ni en el comentario de ningún archivo de código.
 
 147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
     lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) y paso 7 (gráfico arriba de la tabla, Versión 538). Decidido: el card "Salarios / ingresos" del mockup no va.
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) y paso 8 (deuda por año, Versión 539). Decidido: el card "Salarios / ingresos" del mockup no va.
     DECISIONES DE GUIDO (2026-10-05):
     - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
       Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
@@ -73,7 +73,8 @@ ni en el comentario de ningún archivo de código.
        En formato del club, filas = unión de etiquetas de los años, "—" donde falta. colspans y colgroup dinámicos.
     6. KPIs con Δ y sparkline (siguen saliendo de los totales de la tabla).
     7. Gráficos arriba de la tabla, siguen a la selección; la torta pasa a barras apiladas; sale la sección "Gráficos".
-    8. Deuda con columnas por año.   9. Fuentes y banner de calidad por ejercicio elegido.
+    9. Fuentes y banner de calidad por ejercicio elegido. Y los cards de presupuesto (Supuestos, Presupuesto financiero,
+       Inversiones, Torneos): solo para el presupuesto más nuevo elegido, con el año en el título (decisión de Guido).
     10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
     11. Valores ajustados por inflación (archivo nuevo de deflactores en data/).
     12. Gestión: G1 formato nuevo (`data/gestiones/<país>.js`: nombre, corto, cargo, desde, hasta, fuente, confirmada; los años se

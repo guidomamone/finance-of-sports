@@ -590,6 +590,13 @@
     if(window.FIN_MULTI && window.FIN_MULTI_KPIS) FIN_MULTI_KPIS.render(clubId, ysSel);
     if(window.FIN_MULTI && window.FIN_MULTI_CHART) FIN_MULTI_CHART.render(clubId, ysSel);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
+    // to-do 147, paso 8: con ?multi=1 y más de un ejercicio, la deuda también va con una columna por año.
+    const deudaMulti = document.getElementById('finanzasDebtMulti');
+    if(deudaMulti && window.FIN_MULTI_DEBT){
+      document.getElementById('finanzasDebtTable').hidden = multiTabla;
+      deudaMulti.hidden = !multiTabla;
+      if(multiTabla) FIN_MULTI_DEBT.render(clubId, ysSel, 'finanzasDebtMulti');
+    }
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
     renderSupuestosCard(clubId, y);

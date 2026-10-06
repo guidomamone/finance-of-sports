@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 539 — To-do 147, paso 8: Deuda con una columna por ejercicio (?multi=1) (2026-10-05)
+
+- `js/finanzas-multi.js` (`FIN_MULTI_DEBT`) + `index.html` (`#finanzasDebtMulti`): con `?multi=1` y más de un ejercicio, la tabla de deuda va con una columna por año (las mismas 4 filas: Salarios / Ingresos, Deuda bruta, Caja, Deuda neta), "…" en los saltos, Δ (puntos, %, % y plata respectivamente) y sparkline. Un año cuyo documento no desglosa deuda o que es solo presupuesto muestra "—" en vez de "0.0" (con varios años lado a lado, un cero se leería como "no debía nada"), y la nota de abajo dice cuáles son. La tabla de un año se sigue armando escondida.
+- Verificado: 240 valores (60 ejercicios de 7 clubes) contra la tabla de deuda de un año; los "—" son exactamente los años solo-presupuesto. Sin `?multi=1`, los 65 ejercicios idénticos a `main`. `data/lang/en.js` (`finanzas.debt.multi.*`). `ASSET_V` 438.
+
 ## Versión 538 — To-do 147, paso 7: el gráfico de evolución va arriba de la tabla y sigue a la selección (?multi=1) (2026-10-05)
 
 - `js/finanzas-multi.js` (`FIN_MULTI_CHART`) + `index.html` (`#finTrendCard`, entre los KPIs y la tabla): "Totales" = ingresos y gastos en líneas y resultado neto en barras verdes/rojas; "De qué vive el club" = barras apiladas con los rubros de ingreso del formato simplificado, un ejercicio por barra (reemplaza a la torta de un año). Tramo punteado en saltos y presupuestos, punto hueco y barra clara en presupuestos. Bajada armada con los números ("De 2017/18 a 2024/25 los ingresos subieron 50%; el resultado fue negativo en 3 de 5 ejercicios"). Usa los mismos totales por año que los KPIs (`FIN_MULTI_KPIS.delAnio`, ahora expuesto).

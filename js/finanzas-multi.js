@@ -467,9 +467,94 @@ const FIN_MULTI_KPIS = (function(){
     });
   }
 
-  return { render, delAnio };
+  return { render, delAnio, spark };
 })();
 window.FIN_MULTI_KPIS = FIN_MULTI_KPIS;
+
+
+// ============================================================================
+// LA TABLA DE DEUDA CON UNA COLUMNA POR EJERCICIO (to-do 147, paso 8).
+//
+// Con ?multi=1 y más de un ejercicio elegido reemplaza en pantalla a la tabla de deuda de un año
+// (renderDebtBlockGeneric, que se sigue armando escondida). Mismas 4 filas: Salarios / Ingresos,
+// Deuda bruta, Caja, Deuda neta. Diferencias con la de un año, a propósito:
+//   - un ejercicio cuyo documento no desglosa deuda ni caja (deudaNoDesglosada) o que es solo
+//     presupuesto muestra "—", no "0.0": con varios años lado a lado, un cero en el medio se leería
+//     como "ese año no debía nada". La nota de abajo dice qué ejercicios son;
+//   - Δ: Salarios / Ingresos en puntos; deuda bruta y caja en %; deuda neta en plata (puede cambiar de
+//     signo, mismo criterio que el KPI).
+// ============================================================================
+const FIN_MULTI_DEBT = (function(){
+  const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+  function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
+
+  function render(clubId, years, tableId){
+    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const datos = years.map(y => {
+      const c = computeYearGeneric(clubId, y);
+      const meta = yearMetaFor(clubId, y);
+      const presu = !BAL[reportTypeForYear(clubId, y)];
+      const sinDeuda = presu || deudaNoDesglosada(c);
+      const v = x => toDisplayValue(x, meta, currentCurrency);
+      return { y, presu, sinDeuda,
+        wr: c && c.revenue ? c.wagesToTurnover * 100 : null,
+        gd: sinDeuda ? null : v(c.grossDebt), ca: sinDeuda ? null : v(c.cash), nd: sinDeuda ? null : v(c.netDebt) };
+    });
+    const cols = [];
+    datos.forEach((d, i) => { if(i && d.y - datos[i - 1].y > 1) cols.push({ gap:true }); cols.push({ d }); });
+    const N = cols.length + 3;
+    const filas = [
+      { k:'wr', label:'Salarios / Ingresos', fmt: v => Math.round(v) + '%', delta:'pp', color:'#b5372b' },
+      { k:'gd', label:'Deuda bruta', fmt: fmtDisplay, delta:'pct', malo:'sube', bold:true, color:'#b5372b' },
+      { k:'ca', label:'Caja', fmt: fmtDisplay, delta:'pct', malo:'baja', color:'#0a2b5c' },
+      { k:'nd', label:'Deuda neta', fmt: fmtDisplay, delta:'plata', malo:'sube', bold:true, shade:true, color:'#b5372b' },
+    ];
+    function delta(f, v0, v1){
+      if(v0 == null || v1 == null) return '—';
+      const dif = v1 - v0;
+      const malo = f.delta === 'pp' || f.malo === 'sube' ? dif > 0 : dif < 0;
+      if(f.delta === 'pp') return `<span class="${Math.round(dif) === 0 ? '' : malo ? 'pl-down' : 'pl-up'}">${dif > 0 ? '+' : ''}${dif.toFixed(0)} pp</span>`;
+      if(f.delta === 'plata') return `<span class="${Math.abs(dif) < 0.05 ? '' : malo ? 'pl-down' : 'pl-up'}">${dif > 0 ? '+' : dif < 0 ? '−' : ''}${Math.abs(dif).toFixed(1)}</span>`;
+      if(!v0) return '—';
+      const p = dif / Math.abs(v0) * 100;
+      return `<span class="${Math.round(p) === 0 ? '' : malo ? 'pl-down' : 'pl-up'}">${p > 0 ? '+' : ''}${p.toFixed(0)}%</span>`;
+    }
+    let head = `<tr><th>${t('th.indicator', 'Indicador')}<small>M ${currentCurrency}</small></th>`;
+    cols.forEach(c => {
+      head += c.gap ? `<th class="pl-gap">…</th>`
+        : `<th${c.d.presu ? ' class="pl-col-presu"' : ''}>${lab(c.d.y)}<small>${c.d.presu ? t('finanzas.card.budget', 'Presupuesto') : t('finanzas.card.balance', 'Balance')}</small></th>`;
+    });
+    head += `<th class="pl-delta">Δ</th><th class="pl-spark">${t('pl.multi.trend', 'Tendencia')}</th></tr>`;
+    let body = '';
+    filas.forEach(f => {
+      const serie = datos.map(d => d[f.k]);
+      const conDato = serie.map((v, i) => ({ v, i })).filter(x => x.v != null);
+      body += `<tr class="${[f.bold ? 'pl-bold' : '', f.shade ? 'pl-shade' : ''].join(' ').trim()}"><td>${tLabel(f.label)}</td>`;
+      cols.forEach(c => {
+        if(c.gap){ body += '<td class="pl-gap"></td>'; return; }
+        const v = c.d[f.k];
+        const cls = c.d.presu ? ' class="pl-col-presu"' : '';
+        const tip = v == null && f.k !== 'wr' ? ` title="${t('finanzas.debt.multi.tip', 'El documento de este ejercicio no informa deuda ni caja')}"` : '';
+        body += `<td${cls}${tip}>${v == null ? '—' : f.fmt(v)}</td>`;
+      });
+      const v0 = conDato.length ? conDato[0].v : null, v1 = conDato.length > 1 ? conDato[conDato.length - 1].v : null;
+      body += `<td class="pl-delta">${delta(f, v0, v1)}</td><td class="pl-spark">${FIN_MULTI_KPIS.spark(serie, datos, f.color)}</td></tr>`;
+    });
+    const tabla = document.getElementById(tableId);
+    tabla.querySelector('thead').innerHTML = head;
+    tabla.querySelector('tbody').innerHTML = body;
+
+    // La nota: qué ejercicios elegidos no informan deuda (los presupuestos, por definición, tampoco).
+    const sin = datos.filter(d => d.sinDeuda).map(d => lab(d.y));
+    const nota = document.getElementById('finanzasDebtNote');
+    if(nota) nota.textContent = sin.length
+      ? t('finanzas.debt.multi.note', '— = el documento de ese ejercicio no informa deuda ni caja ({a}). No es una deuda de cero: es un dato que no está.').replace('{a}', sin.join(', '))
+      : '';
+  }
+  return { render };
+})();
+window.FIN_MULTI_DEBT = FIN_MULTI_DEBT;
 
 
 // ============================================================================
