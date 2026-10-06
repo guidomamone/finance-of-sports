@@ -1,11 +1,55 @@
 # Reglas de pantalla y código del sitio
 
-Cómo se ve y cómo está hecho el sitio. Primero, Finanzas para cualquier club: cards, dropdown "Año", tabla "Estado de resultados",
+Cómo se ve y cómo está hecho el sitio. Primero, Finanzas multi-año (la vista de hoy, to-do 147); después, las reglas de la vista de
+un ejercicio, que sigue armándose escondida y es la que vuelve con `?multi=0`: cards, dropdown "Año", tabla "Estado de resultados",
 stats de arriba y cómo verificarlo en el navegador (venía del skill `club-or-year-onboarding`). Al final, "Convenciones de pantalla y
 código": traducciones, `alert()`, ASSET_V, Chart.js, selects, color de club (venían de `Admin/CONVENCIONES.md`). Se lee cuando se toca
 `js/`, `index.html` o CSS, no en cada sesión. Los textos movidos no cambiaron.
 
 Las referencias "sección N" dentro del texto son a las secciones del skill viejo (buscá "ex §N"): §2, §3 y §11 están en `Admin/ARQUITECTURA.md`; §4-8, §10 y §12-14 en `Admin/PANTALLA.md`; color de marca, escudo y liga de un club nuevo en `.claude/skills/club-or-year-onboarding/club-nuevo.md`; §15 en `Admin/CONVENCIONES.md`; el skill viejo entero, en `Admin/Archive/club-or-year-onboarding-hasta-V470.md`.
+
+---
+
+## Finanzas multi-año (to-do 147, Versiones 531-542): cómo es y qué no romper
+
+Desde la Versión 542 es la vista por default; `?multi=0` vuelve a la vieja de un ejercicio con el dropdown "Año" (salida de
+emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión: `Prototyping/Finanzas/mockup-147.html`.
+
+- **Encabezado.** El H1 es el club y la bajada dice liga · país · cuántos balances y presupuestos, de qué ejercicio a cuál
+  (`finSubtitle()`, js/selector.js, desde `CLUB_INDEX`). El club se cambia SOLO desde el chip del header: el card "Cambiar de
+  club" se muestra únicamente sin club elegido.
+- **Selección.** `FIN_SEL` (js/finanzas-render.js) guarda la lista de ejercicios elegidos; nadie lee `#anioSelect`.
+  `primary()` = el más nuevo (KPIs, tabla de un año escondida); `lastBalance()` = el balance más nuevo (otra liga).
+- **Cards de ejercicios** (`FIN_ANIOS`, js/finanzas-anios.js): uno por año, se prende y se apaga solo, sin rangos ni checkbox.
+  Default y al cambiar de club: los últimos 5 CON BALANCE; al cambiar idioma o moneda, se conserva. Todos (otra vez = ninguno,
+  estado vacío), Solo el último. Con más de 5, la fila arranca corta y "+N más" va al principio. Dicen Balance / Presupuesto /
+  Presupuesto y Balance / Sin publicar: "Sin publicar" es la 5ta palabra, autorizada SOLO para los cards (un año vacío entre el
+  primero y el último cargado, rayado y no elegible). El dropdown viejo sigue con sus 4 (sección de abajo).
+- **Manda el balance.** En un año con presupuesto y balance, todo muestra el balance; el presupuesto aparece solo con
+  "Presupuesto al lado del balance" (apagado por default). Presupuesto = amarillo y cursiva en tablas, punto hueco y tramo
+  punteado en gráficos y sparklines, card punteado con "Presupuesto" en los KPIs. Un salto en la selección = columna "…" y
+  tramo punteado: nunca se dibuja lo que pasó en los años no elegidos.
+- **Tabla de una columna por año** (`FIN_MULTI_PL`, js/finanzas-multi.js), con más de un ejercicio. Es una tabla APARTE
+  (`#finanzasPLMulti`), no una generalización de `renderNativePLTable()`, que se sigue armando escondida porque sus totales son
+  los de los KPIs. Filas = unión de las filas de los años elegidos ("—" donde un año no la tiene); una etiqueta repetida en la
+  misma sección de un año se SUMA (`filaDe()`: Juventus 2002/03 tiene dos "- from others"). Δ del primero al último: en gastos
+  compara tamaño (más gasto = rojo); resultado y deuda neta en plata, nunca en % (cambian de signo). Rubro desplegable con su
+  gráfico (Chart.js, se destruye en cada re-render) y "% del total" (el resultado, como margen sobre ingresos).
+- **KPIs** (`FIN_MULTI_KPIS`): el número grande sigue saliendo de `renderFinanzasStatsGeneric()`; se le suma el año, la
+  comparación contra el primero elegido y una sparkline. Los cards llevan `data-k` (ing, gas, extra, pat, nd).
+- **Gráfico arriba de la tabla** (`FIN_MULTI_CHART`, `#finTrendCard`): Totales / De qué vive el club (barras apiladas, siempre
+  en formato simplificado). La sección "Gráficos" vieja (`#finChartsCard`) se esconde por CSS.
+- **Deuda** (`FIN_MULTI_DEBT`): "—" y no "0.0" en un año cuyo documento no la informa o que es solo presupuesto.
+- **Fuentes, aviso de calidad y cards de presupuesto**: un renglón por ejercicio; el aviso cubre a todos los elegidos; los cards
+  de presupuesto son los del presupuesto más nuevo elegido, con el año en un `<span class="fin-card-yr">` aparte del texto
+  traducible (si va adentro del mismo elemento con `data-i18n`, `I18N.apply()` lo pisa).
+- **"<club> en otra liga"** es un card entre Deuda y los cards de presupuesto, no un botón en la barra: usa el balance más nuevo
+  elegido, nunca un presupuesto.
+- **Mi Cuenta** guarda `years` además de `year`; con un solo año la clave es la de siempre (las búsquedas viejas no se duplican).
+- **Cómo verificar un cambio acá**: los totales de cada columna contra la tabla de un año, eligiendo los ejercicios de a uno
+  CON CLICKS en los cards (`#finYears .fin-year`). Llamar `refreshFinanzas()` o `selectClub()` desde la consola no sirve:
+  la consola no ve el `currentClub` del script de la página y deja el estado mezclado. Y un `<details>` cerrado tiene
+  `innerText` vacío: para leer su contenido, `textContent`.
 
 ---
 
@@ -670,8 +714,8 @@ Texto movido sin cambios.
   Finanzas del primer club de esa liga por orden alfabético. No necesita club
   activo.
 - SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
-  ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, botón
-  "¿Cómo le iría en otra liga?" con el club activo; (b) desde CUALQUIER liga, un buscador ("Sumar un
+  ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
+  "<club> en otra liga" (Versión 532; hasta ahí era un botón en la barra de controles), con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un
   club o una liga entera…") que acepta tanto un club suelto (se baja con `loadClubData()` antes de
   calcular, y su ejercicio queda editable con un dropdown inline) como una LIGA COMPLETA (inserta
   TODOS sus clubes de una, reusando `data/rankings/<liga>.js` ya calculado — no baja nada, por eso

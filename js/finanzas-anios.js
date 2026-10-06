@@ -13,12 +13,14 @@
 //     nunca queda escondido) y "+N más", al principio de la misma fila, abre el resto.
 //   - Más viejo a la izquierda.
 //
-// DETRÁS DE `?multi=1` mientras la tabla, los KPIs y los gráficos sigan mostrando UN ejercicio
-// (pasos 5 a 9): sin el parámetro el sitio sigue con el dropdown y este archivo no hace nada.
-// Con varios elegidos, la página muestra por ahora el más nuevo (FIN_SEL.primary()).
+// ES EL DEFAULT desde la Versión 542 (pasos 4 a 10 terminados; hasta ahí vivía detrás de `?multi=1`).
+// `?multi=0` vuelve a la vista vieja de un ejercicio con el dropdown "Año": queda como salida de
+// emergencia y para comparar, no es algo que vea un visitante. El código de esa vista sigue entero
+// (renderNativePLTable, renderDebtBlockGeneric, la sección "Gráficos"): la vista multi-año lo usa
+// escondido para los totales de los KPIs, así que no se puede borrar.
 // ============================================================================
 
-window.FIN_MULTI = /[?&]multi=1(&|$)/.test(location.search);
+window.FIN_MULTI = !/[?&]multi=0(&|$)/.test(location.search);
 // La clase esconde el dropdown "Año" por CSS: hay 3 lugares de index.html que le ponen display:inline.
 if(window.FIN_MULTI) document.documentElement.classList.add('fin-multi');
 

@@ -46,7 +46,7 @@ ni en el comentario de ningún archivo de código.
 
 147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
     lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) y paso 10 (búsquedas guardadas, Versión 541). Decidido: el card "Salarios / ingresos" del mockup no va.
+    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
     DECISIONES DE GUIDO (2026-10-05):
     - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
       Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
@@ -66,7 +66,7 @@ ni en el comentario de ningún archivo de código.
     - Valores ajustados por inflación (absorbe el 23(d)): deflactor del PBI de la moneda que se muestra (EE.UU./BEA para USD, zona
       euro/Eurostat para EUR), año base = el último ejercicio cerrado, por año de cierre (2024/25 usa 2025), los presupuestos
       posteriores al base no se ajustan. Serie en un archivo nuevo de data/ (deflactores, a crear en el paso 11), se actualiza una vez por año. Default: nominales.
-    PASOS QUE FALTAN (cada uno con el ok de Guido; del 4 al 9 detrás de `?multi=1` hasta que estén todos):
+    PASOS (cada uno con el ok de Guido):
     3. Estado de la selección: una lista de años + "el año que manda", reemplazando las ~10 lecturas directas de `anioSelect.value`.
     4. Cards de ejercicios + atajos + "+N más" + estado vacío (necesita 3).
     5. Estado de resultados con una columna por año, Δ, sparkline, rubro desplegable, % del total como switch, presupuesto al lado.

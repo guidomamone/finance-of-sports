@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 542 — To-do 147: Finanzas multi-año pasa a ser la vista por default (2026-10-05)
+
+- `js/finanzas-anios.js`: `FIN_MULTI` es `true` salvo con `?multi=0`, que vuelve a la vista de un ejercicio con el dropdown (salida de emergencia). Los comentarios que decían "con ?multi=1" se reescribieron.
+- `Admin/PANTALLA.md`: sección nueva "Finanzas multi-año" (cómo es, qué no romper, cómo verificar); el card "otra liga" en "Simular clubes". `Admin/ESTADO.md`: bloque "Finanzas multi-año". `ASSET_V` 441.
+
 ## Versión 541 — To-do 147, paso 10: las búsquedas guardadas de Mi Cuenta recuerdan varios ejercicios (2026-10-05)
 
 - `index.html`: Finanzas le pasa a `CUENTA.notifyStateChange()` también `years` (la lista de FIN_SEL); `year` (el más nuevo) se sigue mandando. `reopenSavedSearch()`: con `?multi=1` y una búsqueda con varios ejercicios, vuelve a elegir todos los que el club siga teniendo; sin los cards, queda el más nuevo.

@@ -571,7 +571,7 @@
     const cur = computeYearGeneric(clubId, y);
     if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
-    // to-do 147, paso 5a: con ?multi=1 y más de un ejercicio, la tabla de una columna por año
+    // to-do 147, paso 5a: en la vista multi-año y más de un ejercicio, la tabla de una columna por año
     // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
     // totales son los del ejercicio más nuevo y los usan los KPIs.
     const ysSel = FIN_SEL.years();
@@ -584,13 +584,13 @@
       else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
     }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
-    // to-do 147, paso 6: con ?multi=1, los KPIs dicen de qué ejercicio son, se comparan contra el
+    // to-do 147, paso 6: en la vista multi-año, los KPIs dicen de qué ejercicio son, se comparan contra el
     // primero elegido y llevan una sparkline (js/finanzas-multi.js). El número grande no cambia: sigue
     // saliendo de los totales de la tabla de arriba.
     if(window.FIN_MULTI && window.FIN_MULTI_KPIS) FIN_MULTI_KPIS.render(clubId, ysSel);
     if(window.FIN_MULTI && window.FIN_MULTI_CHART) FIN_MULTI_CHART.render(clubId, ysSel);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
-    // to-do 147, paso 8: con ?multi=1 y más de un ejercicio, la deuda también va con una columna por año.
+    // to-do 147, paso 8: en la vista multi-año y más de un ejercicio, la deuda también va con una columna por año.
     const deudaMulti = document.getElementById('finanzasDebtMulti');
     if(deudaMulti && window.FIN_MULTI_DEBT){
       document.getElementById('finanzasDebtTable').hidden = multiTabla;
@@ -599,7 +599,7 @@
     }
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
-    // to-do 147, paso 9: con ?multi=1 los cards de presupuesto (Supuestos, Presupuesto Financiero,
+    // to-do 147, paso 9: en la vista multi-año los cards de presupuesto (Supuestos, Presupuesto Financiero,
     // Inversiones, Torneos) son los del presupuesto MÁS NUEVO elegido (decisión de Guido), y llevan su
     // año en el título: con varios ejercicios en pantalla, sin el año no se sabe de cuál son.
     const yPresu = window.FIN_MULTI ? presupuestoMasNuevoElegido(clubId) : y;
@@ -676,7 +676,7 @@
       const target = exact || years.reduce((best, y) => Math.abs(y.value - previousYear) < Math.abs(best.value - previousYear) ? y : best);
       anioSelect.value = String(target.value);
     }
-    // Con los cards de ejercicios (?multi=1, to-do 147 paso 4) la selección la maneja FIN_ANIOS:
+    // Con los cards de ejercicios (vista multi-año, to-do 147 paso 4) la selección la maneja FIN_ANIOS:
     // default de 5 al cambiar de club, y la misma selección si solo cambió el idioma o la moneda.
     if(window.FIN_MULTI && window.FIN_ANIOS) FIN_ANIOS.alCargarClub(clubId);
     else FIN_SEL.set([parseInt(anioSelect.value, 10)]);
@@ -717,7 +717,7 @@
   function renderDataQualityBannerForCurrentSelection(){
     const banner = document.getElementById('finanzasDataQualityBanner');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    // to-do 147, paso 9: con ?multi=1 y varios ejercicios, el aviso cubre a TODOS los elegidos, no
+    // to-do 147, paso 9: en la vista multi-año y varios ejercicios, el aviso cubre a TODOS los elegidos, no
     // solo al más nuevo: un dato de prensa en una columna del medio también tiene que avisarse.
     if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
       const metas = ((window.CLUB_GENERIC_DATA || {})[currentClub] || {}).fiscalYearMeta || {};
@@ -1013,7 +1013,7 @@
     const body = document.getElementById('finanzasFuentesBody');
     if(!body) return;
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
-    // to-do 147, paso 9: con ?multi=1 y varios ejercicios, un renglón plegable por ejercicio elegido
+    // to-do 147, paso 9: en la vista multi-año y varios ejercicios, un renglón plegable por ejercicio elegido
     // (el más nuevo abierto), cada uno con la misma ficha que se ve con un solo ejercicio, y el
     // documento del presupuesto cuando el año tiene las dos fuentes.
     if(window.FIN_MULTI && !isGestion && FIN_SEL.years().length > 1){
@@ -1045,7 +1045,7 @@
       }</p>`;
     }
 
-    // Con ?multi=1, el documento del presupuesto de un año que tiene las dos fuentes también se nombra.
+    // En la vista multi-año, el documento del presupuesto de un año que tiene las dos fuentes también se nombra.
     const ov = window.FIN_MULTI ? presupuestoOverlayFor(currentClub, year) : null;
     const srcPresu = ov && ov.sourceId ? sources[ov.sourceId] : null;
     const nivel = nivelFuente(src.reliability);

@@ -1,7 +1,7 @@
 // ============================================================================
 // js/finanzas-multi.js — el Estado de resultados con UNA COLUMNA POR EJERCICIO (to-do 147, pasos 5a y 5b).
 //
-// Se usa solo con `?multi=1` y más de un ejercicio elegido (FIN_SEL). Con uno solo sigue la tabla de
+// Se usa solo en la vista multi-año y más de un ejercicio elegido (FIN_SEL). Con uno solo sigue la tabla de
 // siempre, `renderNativePLTable()` (js/finanzas-render.js), que además es la que devuelve los totales
 // del ejercicio más nuevo para los KPIs: esa tabla se sigue armando (escondida) para que KPIs y tabla
 // nunca puedan decir números distintos.
@@ -475,7 +475,7 @@ window.FIN_MULTI_KPIS = FIN_MULTI_KPIS;
 // ============================================================================
 // LA TABLA DE DEUDA CON UNA COLUMNA POR EJERCICIO (to-do 147, paso 8).
 //
-// Con ?multi=1 y más de un ejercicio elegido reemplaza en pantalla a la tabla de deuda de un año
+// En la vista multi-año y más de un ejercicio elegido reemplaza en pantalla a la tabla de deuda de un año
 // (renderDebtBlockGeneric, que se sigue armando escondida). Mismas 4 filas: Salarios / Ingresos,
 // Deuda bruta, Caja, Deuda neta. Diferencias con la de un año, a propósito:
 //   - un ejercicio cuyo documento no desglosa deuda ni caja (deudaNoDesglosada) o que es solo
@@ -560,7 +560,7 @@ window.FIN_MULTI_DEBT = FIN_MULTI_DEBT;
 // ============================================================================
 // EL GRÁFICO DE EVOLUCIÓN ARRIBA DE LA TABLA (to-do 147, paso 7).
 //
-// Con ?multi=1 reemplaza a la sección "Gráficos" de abajo (que en este modo se esconde por CSS). Sigue a
+// En la vista multi-año reemplaza a la sección "Gráficos" de abajo (que en este modo se esconde por CSS). Sigue a
 // los ejercicios elegidos y usa los mismos totales por año que los KPIs (FIN_MULTI_KPIS.delAnio), así
 // que gráfico, cards y tabla dicen lo mismo. Dos vistas:
 //   - "Totales": ingresos y gastos (líneas) y resultado neto (barras verdes o rojas).
