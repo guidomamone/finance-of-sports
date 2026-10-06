@@ -21,29 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-145. CAJA-DEUDA: CIFRA CHICA DEL AÑO EN UNA TABLA SIN COLUMNA DE NOTAS (conocido, sin daño hoy: ningún dato cargado distinto por esto en
-    `caja-deuda.mjs --medir`). Lo que dejó el to-do 143 (Versión 513): sin una columna de notas inequívoca, el primer entero de 1-2 dígitos
-    se sigue descartando como nota, y a veces es el importe del año. Casos: Novorizontino 2016 "| Caixa e Equivalentes de Caixa | 7 | 16 |"
-    (balanco-2016.md L14, lee 16 = 2015), Midtjylland 2014 "| Likvide beholdninger | 90 | 2.170 |" (aarsrapport-2014-06-30.md L1306),
-    La Equidad 2021 "Caja Dolares | 19 | 318", y Criciúma 2023 "| Empréstimos e Financiamentos | 13 - | 140.909 |" (nota y guion en la misma
-    celda, relatorio-de-balanco-2023.md L193). Idea a medir, como escalón aparte: si la compuerta no cierra con la lectura de hoy, probar la
-    otra lectura (sin descartar) con la MISMA compuerta. Guido, 2026-10-05: anotarlo, no hacerlo ahora.
-
-139. DEFECTO D DEL PIPELINE, CONOCIDO Y SIN DAÑO HOY (diagnosticado el 2026-10-05; no perseguir sin un caso nuevo).
-    `compararVecino` (verificar.mjs, chequeo 4b) relee los ingresos de los dos documentos SIN los ajustes `fila`. De los 160 chequeos de año
-    vecino de las 88 verificaciones hay 7 "NO" (4 pares), y uno solo es este defecto: Juventus 2005 (229,914 en 2004-05 contra 259,083 en la
-    columna anterior de 2005-06; la diferencia, 29,169, es el ajuste "a) Capital gains on disposals" 29.168.740 de 2004-05). Los otros son
-    reales: Juventus 2006 (reexpresión IFRS, 2006-07 .md L1708), Juventus 2010 (reclasificación por la venta centralizada de la TV, 2010-11
-    .md L1694) y UC 2009 (documento sin estado de resultados extraído, no cargado). Ningún dato cargado distinto y la cola está vacía.
-    Lo que NO sirve (medido, `Admin/HALLAZGOS-pipeline.md`): tomar del lado del año en curso el total con el que el documento cerró; arregla
-    2005 y rompe 2003 y 2004. Un arreglo de verdad tiene que aplicar los ajustes `fila` de cada documento también a SU columna del año
-    anterior (por la fila que nombra `reemplaza`), y no hay forma de hacerlo con los desgloses que agregan filas sin `reemplaza`.
-
-140. ESCALONES Y CHEQUEOS QUE LE FALTAN AL PROCESO DEL PIPELINE (no urgentes; venían del HANDOFF, Versión 470; las etapas están en
-    `Admin/PIPELINE.md`). Cada uno, de a uno: diseño con su escalera, ok de Guido, y medir con los lotes de prueba.
-    (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
-        0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
-
 149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (Versión 545) creó el formato nuevo de
     gestiones (`data/gestiones/<país>.js`: presidente o dueño, desde, hasta, fuente, confirmada) y lo cargó para Boca y Racing. Falta que un club nuevo lo traiga solo al onboardearse, en vez de la entrada de relleno "Gestión actual" que hoy escribe
     `tools/alta-club.mjs` (y `gestionId:null` de `tools/cargar.mjs`). Idea de partida, a discutir con Guido: proponer el firmante

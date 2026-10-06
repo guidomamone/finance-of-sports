@@ -43,7 +43,7 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - El onboarding se hace con el pipeline: `tools/lote.mjs` (etapas 3 a 8, lo corre Guido), `tools/cargar.mjs` (escribe el año en el sitio,
   corre los generadores y `audit.js`, y revierte si algo falla) y `tools/caja-deuda.mjs` (caja y deuda, con el club ya publicado). Lo que no
   se resuelve solo va a la cola humana (`tools/cola.mjs`). Cómo se trabaja: skill `club-or-year-onboarding`; el proceso etapa por etapa y
-  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes: to-dos 139, 140(b) y 145. Un dato publicado mal se corrige con un ajuste manual
+  las decisiones de Guido: `Admin/PIPELINE.md`; los pendientes del pipeline están en `Admin/HALLAZGOS-pipeline.md` (medidos y descartados) y en el to-do 149 (gestiones). Un dato publicado mal se corrige con un ajuste manual
   (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - "Posiblemente dentro de otro rubro": una fila en "—" porque el documento no desglosa un renglón la marca `tools/dentro-de-otro.mjs` si el
   club la tiene en todos sus otros balances desglosados (hoy 70 filas en 16 años de 7 clubes); `cargar.mjs --escribir` la aplica solo. La

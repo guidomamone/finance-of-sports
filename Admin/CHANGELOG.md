@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 549 — To-dos 139, 140 y 145 fuera de la lista (2026-10-05)
+
+- Decisión de Guido: el 139 (defecto D, un solo caso, sin daño), el 140(b) (Gemini sobre escaneos enteros, sin caso) y el 145 (caja-deuda en tablas sin columna de notas, sin daño) salen de la lista. El diagnóstico de cada uno queda en las Versiones 513-514 y 521 de este archivo.
+
 ## Versión 548 — To-do 147 cerrado: Finanzas multi-año (2026-10-05)
 
 - Cierre: pasada en celular (Racing, Juventus y Flamengo con Todos y ajuste por inflación: sin scroll horizontal de la página; la fila de años y las tablas se scrollean de costado), `auditAll()` igual que `main` (169 clubes, 1136 checks; los 3 de Bayern y los 6 avisos de fx del to-do 148 ya conocidos), `audit.js` 0 P0 / 0 P1.
