@@ -21,17 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
-    de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
-    - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).
-    - **`Admin/`**: las listas de pilotos viejas ya están en `Admin/Archive/pilotos/` (2026-09-30). Quedan los informes de
-      tests (`test-*.md`, `test-*.jsonl`) que conviene juntar en una carpeta, y documentos internos viejos que hay que archivar siguiendo la regla de `CLAUDE.md`
-      (`Admin/Archive/`, sacándole antes lo que todavía sirve a `CONVENCIONES.md`/skills/`TODO.md`).
-    - **Raíz y otras carpetas** (`Prototyping/`, `auditorias/`, archivos sueltos): revisar cuáles siguen vivos. Recordá que lo suelto en la raíz se PUBLICA (`netlify.toml`).
-    - **Cuidado**: los registros (`Admin/transcripciones-*.jsonl`, `Admin/*/resultados.jsonl`) y muchas tools guardan RUTAS de archivos; mover algo obliga a actualizarlas. Proponer un script
-      `tools/inventario-archivos.mjs` que liste por tipo, peso y antigüedad qué hay, y mostrarle el plan a Guido antes de mover nada. **Nunca borrar: archivar.** Cada movimiento
-      lo aprueba Guido, y después correr `node tools/audit.js` (0 P0/P1).
-
 101. CRITERIOS DE CATEGORÍA A DECIDIR (revisión de los 169 clubes por un subagente, 2026-10-05; los errores claros, River y Racing
     Educación, quedaron corregidos en la Versión 550). Casi no hay conflictos entre años: lo que hay son rubros parejos dentro del club
     pero contra la skill. Decisiones de Guido, una por línea; cada corrección con su ajuste manual si el club pasa por el pipeline:

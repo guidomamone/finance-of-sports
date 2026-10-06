@@ -15,7 +15,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 556 — 64 archivos de corridas viejas a `Admin/Archive/` (to-do 109) (2026-10-06)
+## Versión 556 — 64 archivos de corridas viejas a `Admin/Archive/`; to-do 109 cerrado (2026-10-06)
 
 - A `Admin/Archive/lotes/` las 32 listas `lote-*.txt` y `juventus-etapa2.txt`; a `pilotos/` los 5 `piloto-*.txt`; a `prompts/` los 3 prompts de sourcing; a `tests/` 21 variantes viejas de `Admin/tests/`; a `Admin/Archive/` `medicion-caja-deuda-ia.txt` y `auditoria-pipeline-2026-10-02.md`. Ninguna tool los leía.
 - Ejemplos de uso de `lote.mjs`, `antes-de-localizar.mjs` y `gasto-doc.mjs` con `Admin/lote-NN.txt`; citas de `lote.mjs`, `resolver-inventario.mjs`, `escalones.mjs` y `tools/archivo/localizar-extraer.mjs` a la ruta nueva. `audit.js`: 0 rutas muertas.
