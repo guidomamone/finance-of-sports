@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 557 — To-do 101 cerrado sin más cambios (2026-10-06)
+
+- Decisión de Guido: los criterios de categoría entre clubes no se siguen revisando ("va a ser un círculo sin fin"). Quedan como están, sin cambios en los datos: gastos de transferencias y préstamos de jugadores (entre `other_expenses` y `player_amortisation` según el club), seguros fuera de administración en 4 clubes, intereses como línea de gasto en 5, alquileres repartidos entre administración y otros gastos, y la línea de sueldos de Boca 2027 con gastos no salariales adentro. Lo único que se cambió del 101 fue el punto 1 (Boca, Versión 554).
+
 ## Versión 556 — 64 archivos de corridas viejas a `Admin/Archive/`; to-do 109 cerrado (2026-10-06)
 
 - A `Admin/Archive/lotes/` las 32 listas `lote-*.txt` y `juventus-etapa2.txt`; a `pilotos/` los 5 `piloto-*.txt`; a `prompts/` los 3 prompts de sourcing; a `tests/` 21 variantes viejas de `Admin/tests/`; a `Admin/Archive/` `medicion-caja-deuda-ia.txt` y `auditoria-pipeline-2026-10-02.md`. Ninguna tool los leía.

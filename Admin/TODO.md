@@ -21,16 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-101. CRITERIOS DE CATEGORÍA A DECIDIR (revisión de los 169 clubes por un subagente, 2026-10-05; los errores claros, River y Racing
-    Educación, quedaron corregidos en la Versión 550). Casi no hay conflictos entre años: lo que hay son rubros parejos dentro del club
-    pero contra la skill. Decisiones de Guido, una por línea; cada corrección con su ajuste manual si el club pasa por el pipeline:
-    2. Gastos de transferencias, préstamos y comisiones de jugadores: mitad de los clubes en `other_expenses`, mitad en
-       `player_amortisation` (la skill §1 dice este). San Lorenzo cambia entre años (2012-2013 vs 2015-2017).
-    3. "Seguros" en `other_expenses` (Argentinos 2016-18, San Lorenzo 2012-17, Unión 2022-23, Rosario Central 2023); la skill dice admin.
-    4. Intereses dentro de gastos operativos como línea (Almagro, Colo-Colo, Fortaleza CEIF, Botafogo SP, Racing); la skill dice netInterest.
-    5. Alquileres: repartidos entre `admin_general_expense` y `other_expenses`; Novorizontino cambia en 2022-2023.
-    6. Boca 2027 (presupuesto): pretemporada, seguros, viajes y vigilancia (~6.600 M ARS) dentro de la línea de sueldos del fútbol profesional.
-
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
     (d) DEFLACTORES EN COMPARAR. En Finanzas ya está (to-do 147, Versión 543): toggle "Valores ajustados por inflación" con el
