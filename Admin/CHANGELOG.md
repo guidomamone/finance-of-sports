@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 551 — To-do 148: el chequeo de tipo de cambio vuelve a 0 avisos (2026-10-05)
+
+- `FX_PLAUSIBLE_RANGE` (data/currency-map.js): mínimo de CLP de 600 a 400 (UC 2010-2013 cerró a 468-525, real) y de EUR de 0,7 a 0,6 (Juventus 2008 0,634 y 2011 0,692, reales). El máximo de EUR (1,15) no se toca: atrapa el fx invertido de España (1,172). `auditAll()`: 0 avisos de tipo de cambio (antes 6), 1.136 OK, los 3 de Bayern de siempre. ASSET_V 447 → 448, audit 0 P0/P1.
+
 ## Versión 550 — To-do 101: errores claros de categoría corregidos (2026-10-05)
 
 - River 2021 y 2024: el gasto "Educación" (−279,2 y −4.113,0 M ARS) pasa de `youth_other_sports_expense` a `education_expense`, espejo del ingreso (quedó fuera de la recategorización de la Versión 194). Sin ajuste manual: el ajuste `categoria` va por etiqueta y movería también el ingreso "Educación"; River no pasa por el pipeline.

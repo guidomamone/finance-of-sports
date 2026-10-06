@@ -32,11 +32,6 @@ ni en el comentario de ningún archivo de código.
     solo cargó Boca y Racing. Cuando esté, se retira `gestionesByClub` (lo usan todavía las pestañas ocultas Pases y
     Resultados).
 
-148. EL CHEQUEO DE TIPO DE CAMBIO (`checkFxSanity()`, index.html) DA 6 FALSOS POSITIVOS DE AÑOS VIEJOS (visto el 2026-10-05 con
-    `auditAll()`). UC 2010-2013 (CLP 468-525 por dólar, rango "plausible" desde 600) y Juventus 2008 y 2011 (EUR 0,634 y 0,692, rango desde
-    0,70): los valores son los reales de esos años (el euro llegó a 1,58 dólares en 2008). Los rangos no contemplan la historia; ajustarlos
-    por moneda (o por moneda y década) para que el chequeo vuelva a 0 avisos sin silenciar uno real.
-
 109. ORDENAR LAS CARPETAS DEL PROYECTO (pedido de Guido, 2026-09-30: "hay muchos files dando vueltas que ya no tienen razón de ser"). No hay apuro, pero cada lote
     de pipeline suma archivos. Lo que ya se ve como desorden, para que la sesión que lo encare no arranque de cero:
     - Los archivos generados ya salieron de `Clubes/` (Versión 317, `Generados/`, `tools/rutas.mjs`).

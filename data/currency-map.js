@@ -395,11 +395,14 @@ function fxMetaFor(meta){
 const FX_PLAUSIBLE_RANGE = {
   ARS: [3, 3000],        // Argentina: alta inflación, rango histórico amplio a propósito (clubes
                           // cargados van de ~$4 en 2011 a ~$1900 en presupuestos 2026/27)
-  CLP: [600, 1200],      // Chile
+  CLP: [400, 1200],      // Chile — (Versión 551, to-do 148) mínimo de 600 a 400: UC 2010-2013 cerró a 468-525 CLP por
+                          // USD (real; ~430 en 2008). Un fx invertido daría ~0,002 y sigue saltando.
   COP: [1600, 5500],     // Colombia — serie TRM 2010-2026: mínimo 1.748 (2011), máximo 5.061 (2022)
   BRL: [1.4, 7.5],       // Brasil — serie PTAX 2010-2026: mínimo 1,53 (2011), máximo 6,21 (2024)
   PEN: [3, 5],           // Perú
-  EUR: [0.7, 1.15],      // España — OJO: EUR/USD (cuántos USD vale 1 EUR) ronda 1,0-1,2, así que el
+  EUR: [0.6, 1.15],      // (Versión 551, to-do 148: mínimo de 0,7 a 0,6; Juventus 2008 0,634 y 2011 0,692 son reales,
+                          // el euro llegó a 1,60 USD en 2008. El máximo NO se toca: atrapa el fx invertido de España, 1,172.)
+                          // España — OJO: EUR/USD (cuántos USD vale 1 EUR) ronda 1,0-1,2, así que el
                           // fx que va ACÁ (EUR por 1 USD) es el INVERSO, ~0,85-1,0. Si aparece un
                           // valor >1,15 acá, casi seguro está invertido (ver el bug de España arriba).
   MXN: [15, 25],         // México
