@@ -82,6 +82,16 @@ ni en el comentario de ningún archivo de código.
         transcripción, a la cola solo si cambia o falta; `cargar.mjs` deja de escribir `gestionId`) y G6 retirar `gestionesByClub`.
     13. El puesto adentro del card "otra liga".   14. Cierre: en.js, celular, audit, docs (PANTALLA, ESTADO), borrar este punto.
 
+149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (paso 12) crea el formato nuevo de
+    gestiones (`data/gestiones/<país>.js`: presidente o dueño, desde, hasta, fuente, confirmada) y lo carga para los clubes que ya
+    están. Falta que un club nuevo lo traiga solo al onboardearse, en vez de la entrada de relleno "Gestión actual" que hoy escribe
+    `tools/alta-club.mjs` (y `gestionId:null` de `tools/cargar.mjs`). Idea de partida, a discutir con Guido: proponer el firmante
+    de cada balance desde su transcripción ("Presidente", "Presidente do Conselho", "Chairman", "Vorstandsvorsitzender"), marcarlo
+    confirmado solo con una fuente, y mandar a la cola humana solo cuando el firmante cambia entre años o no aparece. Criterio ya
+    decidido: un año con dos presidentes es de quien firmó el balance; en empresas, el dueño solo si es una persona con nombre (SAF y
+    sociedades anónimas, sin gestión). Cuando esté, se retira `gestionesByClub` (lo usan todavía las pestañas ocultas Pases y
+    Resultados).
+
 148. EL CHEQUEO DE TIPO DE CAMBIO (`checkFxSanity()`, index.html) DA 6 FALSOS POSITIVOS DE AÑOS VIEJOS (visto el 2026-10-05 con
     `auditAll()`). UC 2010-2013 (CLP 468-525 por dólar, rango "plausible" desde 600) y Juventus 2008 y 2011 (EUR 0,634 y 0,692, rango desde
     0,70): los valores son los reales de esos años (el euro llegó a 1,58 dólares en 2008). Los rangos no contemplan la historia; ajustarlos
