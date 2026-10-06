@@ -1619,7 +1619,7 @@ window.CLUB_SELECTOR = (function(){
     var pares = paresDeBloque(b);
     var out = { nombre:nombreBloque(b), agg:b.agg, n:pares.length, conDato:0, sinEjercicio:[],
                 anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{}, incluidos:[],
-                gastos:{}, conGastos:0, ordenIng:[], ordenGas:[] };
+                gastos:{}, conGastos:0, ordenIng:[], ordenGas:[], incl:{} };
     ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     pares.forEach(function(par){
       var id = par[0], y = par[1];
@@ -1645,6 +1645,13 @@ window.CLUB_SELECTOR = (function(){
       var rep = window.simplifiedReportForClub(id, y) || {};
       (rep.ingresos || []).forEach(function(r){ anotarOrden(out.ordenIng, r.label); });
       (rep.gastos || []).forEach(function(r){ anotarOrden(out.ordenGas, r.label); });
+      // "Dentro de otro rubro" (Versión 510): con UN ejercicio, la celda va en "—" con el
+      // bocadillo, como en Finanzas. Con varios, va como aviso del lado (no hay una celda única).
+      [['i', rep.ingresos], ['g', rep.gastos]].forEach(function(par){
+        (par[1] || []).forEach(function(r){
+          if(r.incluidoEn) out.incl[par[0] + '|' + r.label] = { en:r.incluidoEn, posible:!!r.incluidoPosible };
+        });
+      });
       mezclaDe(id, y).forEach(function(r){
         out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value;
       });
@@ -1657,7 +1664,8 @@ window.CLUB_SELECTOR = (function(){
         });
       }
       // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
-      ((window.simplifiedReportForClub(id, y) || {}).ingresos || []).forEach(function(r){
+      var repI = window.simplifiedReportForClub(id, y) || {};
+      (repI.ingresos || []).concat(repI.gastos || []).forEach(function(r){
         if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'posiblemente está dentro de') : t('sel.res.incl', 'está dentro de')) + ' ' + tLabel(r.incluidoEn));
       });
     });
@@ -1681,7 +1689,7 @@ window.CLUB_SELECTOR = (function(){
   function totalesDe(l){
     var out = { nombre:l.nombre, n:0, conDato:0, sinEjercicio:[], anios:[], presupuestos:0,
                 tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l), incluidos:[],
-                gastos:{}, ordenIng:[], ordenGas:[], nEj:{} };
+                gastos:{}, ordenIng:[], ordenGas:[], nEj:{}, incl:{} };
     // `informan` cuenta PARTES (bloques) del lado; `nEj`, EJERCICIOS (para el "12 de 14" de la tabla).
     ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; out.nEj[k] = 0; });
     var aggs = {};
@@ -1707,6 +1715,7 @@ window.CLUB_SELECTOR = (function(){
       Object.keys(tb.gastos).forEach(function(lbl){
         out.gastos[lbl] = (out.gastos[lbl] || 0) + tb.gastos[lbl];
       });
+      Object.keys(tb.incl).forEach(function(k){ out.incl[k] = tb.incl[k]; });
       tb.ordenIng.forEach(function(lbl){ anotarOrden(out.ordenIng, lbl); });
       tb.ordenGas.forEach(function(lbl){ anotarOrden(out.ordenGas, lbl); });
     });
@@ -1982,6 +1991,8 @@ window.CLUB_SELECTOR = (function(){
       caja.appendChild(el('p', 'cd-anios', t('sel.card.years', 'Ejercicios') + ': ' + textoAnios(l)));
     }
     if((unClub || unaLiga) && paresDe(l).length > 1) caja.appendChild(segAgregador(b0));
+    // Los avisos de ESTE lado: los llena renderResultado(), que es el que tiene los números.
+    caja.appendChild(el('div', 'cd-avisos-lado'));
     return caja;
   }
 
@@ -2369,10 +2380,16 @@ window.CLUB_SELECTOR = (function(){
       var pcts = vals.map(function(v, i){ return hay[i] && totales[i] ? v / Math.abs(totales[i]) * 100 : null; });
       var r = '<tr class="pl-row-open' + (abierta ? ' abierto' : '') + '" data-fila="' + escH(id) + '" tabindex="0"><td><span class="pl-arrow">'
         + (abierta ? '&#9662;' : '&#9656;') + '</span>' + escH(tLabel(label)) + '</td>';
+      var dentro = tots.map(function(tt){ return tt.conDato === 1 ? tt.incl[id] : null; });
       vals.forEach(function(v, i){
+        if(dentro[i]){
+          r += '<td' + tdCls(i) + '><span class="pl-incluido" tabindex="0" data-info-tip="'
+            + escH(window.FINANZAS_DENTRO_TIP ? window.FINANZAS_DENTRO_TIP(dentro[i].en, dentro[i].posible) : dentro[i].en) + '">—</span></td>';
+          return;
+        }
         r += '<td' + tdCls(i) + '>' + (!hay[i] ? '—' : cmpPct ? fmtPctCell(v, totales[i]) : fmtNum(v)) + '</td>';
       });
-      r += rat(hay[0] ? vals[0] : null, hay[1] ? vals[1] : null, pcts[0], pcts[1]) + '</tr>';
+      r += (dentro[0] || dentro[1] ? '<td class="cd-rat">—</td>' : rat(hay[0] ? vals[0] : null, hay[1] ? vals[1] : null, pcts[0], pcts[1])) + '</tr>';
       if(abierta) r += '<tr class="pl-row-chart"><td colspan="4"><div class="pl-row-chart-wrap"><canvas data-fila="' + escH(id) + '"></canvas></div></td></tr>';
       return r;
     }
@@ -2393,7 +2410,8 @@ window.CLUB_SELECTOR = (function(){
     h += sec(escH(t('section.revenue', 'Ingresos')));
     union('ordenIng').forEach(function(l){
       var vals = tots.map(function(tt){ return tt.mezcla[l] || 0; });
-      if(!vals[0] && !vals[1]) return;   // un rubro en cero en los dos lados no dice nada
+      // Un rubro en cero en los dos lados no dice nada (salvo que esté dentro de otro).
+      if(!vals[0] && !vals[1] && !tots.some(function(tt){ return tt.conDato === 1 && tt.incl['i|' + l]; })) return;
       h += filaRubro('i', l, vals, totIng, anyRev);
     });
     h += filaTotal(escH(t('sel.tab.totRev', 'Total ingresos')), totIng, anyRev, 'pl-shade');
@@ -2401,7 +2419,7 @@ window.CLUB_SELECTOR = (function(){
     h += sec(escH(t('section.expenses', 'Gastos')) + preguntaH(t('cmp.m.expenses.note', 'Incluye amortizaciones y depreciación, igual que el total de la tabla de Finanzas.')));
     union('ordenGas').forEach(function(l){
       var vals = tots.map(function(tt){ return tt.gastos[l] || 0; });
-      if(!vals[0] && !vals[1]) return;
+      if(!vals[0] && !vals[1] && !tots.some(function(tt){ return tt.conDato === 1 && tt.incl['g|' + l]; })) return;
       h += filaRubro('g', l, vals, totGas, anyGas);
     });
     h += filaTotal(escH(t('sel.tab.totExp', 'Total gastos')), totGas, anyGas, 'pl-shade');
@@ -2466,66 +2484,114 @@ window.CLUB_SELECTOR = (function(){
   function renderResultado(){
     var caja = $('cdResultado');
     if(!caja) return;
-    if(!mostrando){ caja.hidden = true; caja.innerHTML = ''; return; }
+    if(!mostrando){ caja.hidden = true; caja.innerHTML = ''; limpiarAvisosLado(); return; }
     var activos = [lado[0], lado[1]].filter(Boolean);
-    if(activos.length < 2){ caja.hidden = true; return; }
+    if(activos.length < 2){ caja.hidden = true; limpiarAvisosLado(); return; }
 
     caja.hidden = false;
     caja.innerHTML = '';
     var tots = activos.map(totalesDe);
 
-    var head = el('div', 'cd-res-head');
-    head.appendChild(el('h2', null, 'A ' + t('sel.vs', 'contra') + ' B'));
-    head.appendChild(el('p', 'cd-res-sub', cmpReal
-      ? t('sel.res.subReal', 'En USD de {b}, ajustados por inflación. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.').split('{b}').join(baseReal())
-      : t('sel.res.sub', 'En USD. Cada lado se calcula ejercicio por ejercicio con el mismo motor que usa el resto del sitio.')));
-    caja.appendChild(head);
-
-    // LAS 3 REGLAS DE COMPARABILIDAD SE DICEN, no solo se aplican. Vienen tal cual de
-    // la vista que esto reemplaza (js/comparar-clubes.js, Versión 137).
-    var reglas = el('p', 'cd-reglas');
-    reglas.innerHTML = t('cmp.rules',
-      'Todo en <b>USD</b> (la comparación ignora el toggle de moneda a propósito) y en <b>Formato simplificado</b>, '
-      + 'la única taxonomía comparable entre clubes de países distintos. Cada lado muestra <b>su propio ejercicio</b>: '
-      + 'los clubes no cierran el mismo día ni tienen los mismos años cargados.');
-    caja.appendChild(reglas);
-
+    // Sin título "A contra B" ni párrafo de reglas (to-do 23, paso 6): los cards ya dicen qué es
+    // cada lado, y la barra dice el formato y la moneda. El resultado arranca con el gráfico.
     caja.appendChild(bloqueGrafico(tots));
-
     caja.appendChild(tablaComparacion(tots));
 
-    // Las salvedades. Sin esto, dos números grandes uno al lado del otro parecen
-    // comparables aunque no lo sean.
+    // Abajo de la tabla, solo los avisos que valen para la comparación entera. Los de cada
+    // lado van a su card (avisosDeLado), al lado de lo que explican.
     var avisos = [];
-    tots.forEach(function(tt, i){
-      var letra = LETRAS[i] + ': ';
-      if(tt.sinEjercicio.length){
-        avisos.push(letra + tt.sinEjercicio.length + ' ' + t('sel.res.falta',
-          'club(es) sin ese ejercicio, afuera de la cuenta') + ' (' + tt.sinEjercicio.slice(0, 4).join(', ')
-          + (tt.sinEjercicio.length > 4 ? ', +' + (tt.sinEjercicio.length - 4) : '') + ').');
-      }
-      if(tt.anios.length > 1){
-        var min = Math.min.apply(null, tt.anios), max = Math.max.apply(null, tt.anios);
-        if(max - min >= 2) avisos.push(letra + t('sel.res.anios', 'los ejercicios van de') + ' ' + min
-          + ' ' + t('sel.res.anios2', 'a') + ' ' + max + ', ' + t('sel.res.anios3', 'no son todos del mismo año.'));
-      }
-      if(tt.presupuestos) avisos.push(letra + tt.presupuestos + ' ' + t('sel.res.presu',
-        'de los ejercicios son PRESUPUESTOS, o sea proyecciones del club, no cierres.'));
-      if(tt.incluidos.length) avisos.push(letra + t('sel.res.incluidos', 'el documento junta dos rubros en una línea, y en la composición suman donde están') + ': '
-        + tt.incluidos.slice(0, 4).join('; ') + (tt.incluidos.length > 4 ? '; +' + (tt.incluidos.length - 4) : '') + '.');
-      if(tt.mezclaAgg) avisos.push(letra + t('sel.res.mezcla',
-        'este lado mezcla un promedio con una sumatoria') + ' (' + tt.formula + ').');
-    });
-    if(tots[0].n !== tots[1].n){
-      avisos.push(t('sel.res.desparejo',
-        'Los dos lados no tienen la misma cantidad de ejercicios: mirá la fórmula de cada uno antes de leer el total como "quién es más grande".'));
+    if(tots[0].conDato !== tots[1].conDato){
+      avisos.push(t('sel.res.desparejo2', 'Los dos lados no tienen la misma cantidad de ejercicios (A: {a}, B: {b}). Mirá cómo se arma cada uno, en su card, antes de leer el total como "quién es más grande".')
+        .replace('{a}', tots[0].conDato).replace('{b}', tots[1].conDato));
     }
-    avisos.push(t('sel.res.cero', 'Un club sin el dato no suma cero: queda afuera y se cuenta aparte.'));
+    avisos.push(t('sel.res.cero2', 'Un ejercicio sin el dato no suma cero: queda afuera y se cuenta aparte (el "12 de 14" abajo del número).'));
     var pie = el('div', 'cd-avisos');
     avisos.forEach(function(a){ pie.appendChild(el('p', null, a)); });
     caja.appendChild(pie);
+
+    caja.appendChild(bloqueFuentes(tots));
+    avisosDeLado(tots);
     // El gráfico se dibuja con el bloque ya colgado: Chart.js mide el contenedor.
     dibujarGrafico(caja, tots);
+  }
+
+  // Los avisos de cada lado, en su card: lo que el número de ESE lado deja afuera o junta.
+  // Los años y los presupuestos ya están a la vista en los chips y en la línea de cómo se arma.
+  function avisosDeLado(tots){
+    var cajas = document.querySelectorAll('#cdWrap .cd-avisos-lado');
+    tots.forEach(function(tt, i){
+      var c = cajas[i];
+      if(!c) return;
+      c.innerHTML = '';
+      var avisos = [];
+      if(tt.sinEjercicio.length){
+        avisos.push(tt.sinEjercicio.length + ' ' + t('sel.res.falta', 'club(es) sin ese ejercicio, afuera de la cuenta') + ' ('
+          + tt.sinEjercicio.slice(0, 4).join(', ') + (tt.sinEjercicio.length > 4 ? ', +' + (tt.sinEjercicio.length - 4) : '') + ').');
+      }
+      // Con un solo ejercicio, "dentro de otro rubro" va en la celda de la tabla (con su bocadillo).
+      if(tt.incluidos.length && tt.conDato > 1){
+        avisos.push(t('sel.res.incluidos2', 'el documento junta dos rubros en una línea, y en la tabla suman donde están') + ': '
+          + tt.incluidos.slice(0, 3).join('; ') + (tt.incluidos.length > 3 ? '; +' + (tt.incluidos.length - 3) : '') + '.');
+      }
+      if(tt.mezclaAgg) avisos.push(t('sel.res.mezcla', 'este lado mezcla un promedio con una sumatoria') + ' (' + tt.formula + ').');
+      avisos.forEach(function(a){ c.appendChild(el('p', null, a.charAt(0).toUpperCase() + a.slice(1))); });
+    });
+  }
+  function limpiarAvisosLado(){
+    document.querySelectorAll('#cdWrap .cd-avisos-lado').forEach(function(c){ c.innerHTML = ''; });
+  }
+
+  // FUENTES (to-do 23, paso 6): como en Finanzas, un renglón por ejercicio, agrupado por lado.
+  // Cada renglón dice el documento y linkea a él; abajo, la página de fuentes de cada club.
+  function bloqueFuentes(tots){
+    var caja = el('div', 'cd-fuentes');
+    caja.appendChild(el('h3', null, t('fuentes.card.title', 'Fuentes')));
+    caja.appendChild(el('p', 'cd-res-sub', t('sel.src.sub', 'De dónde sale cada número. Un renglón por ejercicio, agrupado por lado.')));
+    var tipoDoc = function(id, y){
+      var tp = (yearsOf(id).filter(function(p){ return p[0] === y; })[0] || [])[1];
+      return tp === 'official_budget' ? t('finanzas.card.budget', 'Presupuesto')
+        : tp === 'official_budget_and_balance' ? t('finanzas.card.both', 'Presupuesto y Balance')
+        : t('finanzas.card.balance', 'Balance');
+    };
+    [lado[0], lado[1]].forEach(function(l, i){
+      var pares = paresDe(l).filter(function(p){ return p[1] != null; });
+      var det = el('details', 'fin-src-year');
+      if(i === 1 || pares.length <= 3) det.open = true;
+      var sum = el('summary');
+      sum.appendChild(el('span', 'cd-letra chica' + (i ? ' b' : ''), LETRAS[i]));
+      sum.appendChild(document.createTextNode(tots[i].nombre + ' · ' + nEjercicios(pares.length)));
+      det.appendChild(sum);
+      var clubesVistos = [];
+      pares.slice().sort(function(a, b){ return nameOf(a[0]).localeCompare(nameOf(b[0]), 'es') || a[1] - b[1]; }).forEach(function(p){
+        var meta = (((window.CLUB_GENERIC_DATA || {})[p[0]] || {}).fiscalYearMeta || {})[p[1]] || {};
+        var src = (typeof sources !== 'undefined' ? sources : {})[meta.sourceId];
+        var fila = el('div', 'cd-src-row');
+        fila.appendChild(document.createTextNode(nameOf(p[0]) + ', ' + etiquetaEj(p[0], p[1]) + ' · ' + tipoDoc(p[0], p[1]) + ': '));
+        if(src){
+          if(src.url){
+            var a = el('a', null, src.title);
+            a.href = src.url; a.target = '_blank'; a.rel = 'noopener';
+            fila.appendChild(a);
+          } else fila.appendChild(document.createTextNode(src.title));
+        } else fila.appendChild(el('span', 'cd-cnt-inline', t('sel.src.none', 'sin documento cargado')));
+        det.appendChild(fila);
+        if(clubesVistos.indexOf(p[0]) < 0) clubesVistos.push(p[0]);
+      });
+      // La página de fuentes de cada club (fuentes/<clubId>.html), solo si tiene documentos.
+      var conPagina = clubesVistos.filter(function(id){
+        return Object.keys(typeof sources !== 'undefined' ? sources : {}).some(function(k){ return sources[k].clubId === id; });
+      });
+      if(conPagina.length === 1){
+        var lnk = el('a', 'cd-src-more', t('fuentes.card.club', 'Ver todos los documentos de este club') + ' →');
+        lnk.href = 'fuentes/' + conPagina[0] + '.html';
+        det.appendChild(lnk);
+      }
+      caja.appendChild(det);
+    });
+    var todas = el('a', 'cd-src-more', t('fuentes.card.others', 'Ver fuentes de otros equipos') + ' →');
+    todas.href = 'fuentes.html';
+    caja.appendChild(todas);
+    return caja;
   }
 
   function colorDeRubro(label){

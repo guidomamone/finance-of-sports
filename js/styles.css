@@ -773,11 +773,20 @@
      indicador y no entre indicadores (misma regla que la comparación de hoy). */
   .cd-resultado{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:26px;}
   .cd-resultado[hidden]{display:none;}
-  .cd-res-head h2{margin:0 0 4px;font-size:20px;}
   .cd-res-sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
   .cd-cargando{color:var(--muted);font-size:13.5px;margin:0;}
   /* to-do 23, paso 5: la tabla de Comparar usa la de Finanzas (.pl-multi) más esto. */
   .cd-pl{margin-top:6px;}
+  /* to-do 23, paso 6: avisos de cada lado en su card, fuentes por ejercicio. */
+  .cd-avisos-lado:empty{display:none;}
+  .cd-avisos-lado{margin-top:10px;border-top:1px dashed var(--border);padding-top:8px;}
+  .cd-avisos-lado p{margin:3px 0;font-size:12px;color:var(--muted);line-height:1.4;}
+  .cd-fuentes{margin-top:22px;padding-top:16px;border-top:1px solid var(--border);}
+  .cd-fuentes h3{margin:0 0 2px;font-size:17px;}
+  .cd-fuentes .fin-src-year summary{display:flex;align-items:center;gap:2px;}
+  .cd-src-row{font-size:13px;margin:5px 0 0 14px;line-height:1.45;}
+  .cd-src-more{display:inline-block;font-size:13.5px;margin:10px 0 0;}
+  .cd-cnt-inline{color:var(--muted);}
   .cd-tw{overflow-x:auto;border-top:1px solid var(--border);}
   .cd-tabla-n th .cd-letra.chica{margin-right:6px;}
   .cd-tabla-n th{color:var(--text);text-transform:none;letter-spacing:0;font-size:13px;}
@@ -787,8 +796,6 @@
   .cd-cnt{display:block;font-size:10.5px;color:var(--muted);font-style:normal;font-weight:400;}
   .cd-q{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;border:1px solid #c9c9c4;
         color:var(--muted);font-size:10px;font-weight:700;margin-left:5px;cursor:help;vertical-align:1px;text-transform:none;letter-spacing:0;}
-  /* Las 3 reglas de comparabilidad, que se dicen y no solo se aplican. */
-  .cd-reglas{font-size:12px;color:var(--muted);margin:0 0 18px;line-height:1.5;}
   /* ======================================================================
      PESTAÑA LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de una
      liga en un ejercicio. Reusa el lenguaje visual de la pestaña Comparar
