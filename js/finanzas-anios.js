@@ -28,8 +28,6 @@ const FIN_ANIOS = (function(){
   let clubDeLaSeleccion = null;   // para saber si populate() viene de un cambio de club o de idioma
   let expandido = false;
 
-  function tt(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
-
   // Los ejercicios de la fila: los que tiene el club en fiscalYearMeta (o finanzasYears) más los
   // años vacíos ENTRE el primero y el último, que salen como "Sin publicar".
   function ejercicios(clubId){
@@ -56,11 +54,11 @@ const FIN_ANIOS = (function(){
     const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
     return cal ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2);
   }
-  function tipoTexto(t){
-    return t === 'B' ? tt('finanzas.card.balance', 'Balance')
-      : t === 'P' ? tt('finanzas.card.budget', 'Presupuesto')
-      : t === 'PB' ? tt('finanzas.card.both', 'Presupuesto y Balance')
-      : tt('finanzas.card.unpublished', 'Sin publicar');
+  function tipoTexto(tipo){
+    return tipo === 'B' ? t('finanzas.card.balance', 'Balance')
+      : tipo === 'P' ? t('finanzas.card.budget', 'Presupuesto')
+      : tipo === 'PB' ? t('finanzas.card.both', 'Presupuesto y Balance')
+      : t('finanzas.card.unpublished', 'Sin publicar');
   }
 
   // Lo llama populateFinanzasSelectors(): con un club nuevo, la selección vuelve al default; con
@@ -121,7 +119,7 @@ const FIN_ANIOS = (function(){
       mas.type = 'button';
       mas.className = 'fin-years-more';
       const ocultos = lista.length - visibles.length;
-      mas.textContent = expandido ? tt('finanzas.card.less', 'Ver menos') : '+' + ocultos + ' ' + tt('finanzas.card.more', 'más');
+      mas.textContent = expandido ? t('finanzas.card.less', 'Ver menos') : '+' + ocultos + ' ' + t('finanzas.card.more', 'más');
       mas.onclick = () => { expandido = !expandido; render(clubId); };
       fila.appendChild(mas);
     }
@@ -134,7 +132,7 @@ const FIN_ANIOS = (function(){
       b.querySelector('span').textContent = tipoTexto(e.tipo);
       if(e.tipo === 'X'){
         b.disabled = true;
-        b.title = tt('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
+        b.title = t('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
       } else {
         b.setAttribute('aria-pressed', FIN_SEL.has(e.y) ? 'true' : 'false');
         b.onclick = () => cambiar(FIN_SEL.has(e.y) ? sel.filter(y => y !== e.y) : sel.concat(e.y));

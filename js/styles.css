@@ -441,10 +441,29 @@
   .fin-years-more{align-self:center;white-space:nowrap;border:0;background:none;padding:0 4px 0 0;color:var(--azul);font-size:13px;font-weight:600;cursor:pointer;}
   .fin-years-empty{font-size:13px;color:var(--muted);margin:10px 0 0;}
   /* Sin ningún ejercicio elegido, la página se queda con el título, los cards y el aviso. */
+  /* to-do 147, paso 5a: Estado de resultados con una columna por ejercicio. Ancho automático (no el
+     table-layout:fixed de la tabla de un año) y la columna Rubro fija al scrollear de costado. */
+  table[hidden]{display:none !important;}
+  .pl-multi{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;}
+  .pl-multi th,.pl-multi td{text-align:right;white-space:nowrap;padding:7px 10px;}
+  .pl-multi th{vertical-align:bottom;}
+  .pl-multi th small{display:block;font-weight:500;font-size:10.5px;color:var(--muted);text-transform:none;letter-spacing:0;}
+  .pl-multi th:first-child,.pl-multi td:first-child{text-align:left;white-space:normal;min-width:170px;position:sticky;left:0;background:var(--card);z-index:1;}
+  .pl-multi tr.pl-shade td:first-child{background:#f2f2ef;}
+  .pl-multi tr.pl-highlight td:first-child{background:#eef3fa;}
+  .pl-multi tr.pl-section-head td{text-align:left;}
+  .pl-multi .pl-col-presu{background:#fdf8e7;color:#8a6d00;font-style:italic;}
+  .pl-multi th.pl-col-presu small{color:#8a6d00;}
+  .pl-multi .pl-gap{padding:0 2px;min-width:14px;color:#bbb;text-align:center;}
+  .pl-multi .pl-delta{font-size:13px;}
+  .pl-multi .pl-spark{text-align:center;padding-top:2px;padding-bottom:2px;}
+  .pl-multi .pl-up{color:var(--green);}
+  .pl-multi .pl-down{color:var(--red);}
   #finanzas.sin-anio > *:not(h1):not(.subtitle):not(.fin-sel):not(.fin-years){display:none !important;}
   @media (max-width:640px){
     .fin-years-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;}
     .fin-year,.fin-years-more{flex:none;}
+    .pl-multi th:first-child,.pl-multi td:first-child{min-width:130px;}
   }
   /* El aviso de "no se pudo cargar el club" vivía adentro del hero del cold start
      (borrado en la Versión 146) y heredaba su paleta oscura: acá va sobre fondo claro. */

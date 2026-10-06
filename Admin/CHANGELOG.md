@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 535 — To-do 147, paso 5a: Estado de resultados con una columna por ejercicio (?multi=1) (2026-10-05)
+
+- `js/finanzas-multi.js` (nuevo, `renderMultiPLTable()`): con `?multi=1` y más de un ejercicio elegido, la tabla `#finanzasPLMulti` reemplaza en pantalla a la de un año. Rubro | un ejercicio por columna (más viejo a la izquierda, "…" donde la selección saltea años) | Δ del primero al último (en gastos compara el tamaño: más gasto = rojo) | sparkline (punteada en saltos y presupuestos). Filas = unión de las filas de los años elegidos; en formato del club un rubro que un año no tiene sale "—". Solo-presupuesto en amarillo y cursiva. Cada año con su propio tipo de cambio. Rubro fija al scrollear de costado.
+- La tabla de un año se sigue armando escondida: sus totales alimentan los KPIs (`updateFinanzasByAnioGeneric`).
+- Bugs encontrados al verificar: (1) Juventus 2002/03 repite "- from others" en la misma sección y la tabla tomaba solo la primera: ahora suma las filas con la misma etiqueta (`filaDe()`); (2) `tipoTexto(t)` en `js/finanzas-anios.js` tapaba `t()` con su parámetro y los cards no se dibujaban.
+- Verificado: Total ingresos, Total gastos y Resultado neto de cada columna contra la tabla de un año, 60 ejercicios de 7 clubes en formato simplificado (180 chequeos) y 52 de 4 clubes en formato del club (156), sin diferencias. Sin `?multi=1`, mismos 65 ejercicios idénticos a `main`.
+- `tools/audit.js`: el chequeo de i18n mira también `js/finanzas-anios.js` y `js/finanzas-multi.js`. `data/lang/en.js` (`pl.multi.*`), `js/styles.css` (`.pl-multi`). `ASSET_V` 434.
+
 ## Versión 534 — To-do 147, paso 4: cards de ejercicios en Finanzas, detrás de ?multi=1 (2026-10-05)
 
 - `js/finanzas-anios.js` (nuevo, `FIN_ANIOS`): un card por ejercicio que se prende y se apaga solo, sin checkbox. Dice Balance / Presupuesto / Presupuesto y Balance; los años vacíos entre el primero y el último cargado salen rayados, "Sin publicar", y no se eligen. Atajos Últimos 5 (default, solo años con balance), Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca corta y "+N más" va al principio. Al cambiar de club vuelve al default; al cambiar idioma o moneda se conserva. En celular la fila se scrollea de costado y arranca en lo más nuevo.

@@ -554,6 +554,17 @@
     if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const prev = g.firstYear !== g.lastYear ? computeYearGeneric(clubId, g.firstYear) : null;
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
+    // to-do 147, paso 5a: con ?multi=1 y más de un ejercicio, la tabla de una columna por año
+    // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
+    // totales son los del ejercicio más nuevo y los usan los KPIs.
+    const ysSel = FIN_SEL.years();
+    const multiTabla = !!window.FIN_MULTI && ysSel.length > 1 && typeof renderMultiPLTable === 'function';
+    document.getElementById('finanzasPLTable').hidden = multiTabla;
+    const tablaMulti = document.getElementById('finanzasPLMulti');
+    if(tablaMulti){
+      tablaMulti.hidden = !multiTabla;
+      if(multiTabla) renderMultiPLTable(clubId, ysSel, 'finanzasPLMulti');
+    }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, prev, 'finanzasDebtTable');
     const years = []; for(let y=g.firstYear; y<=g.lastYear; y++){ years.push(y); }
@@ -571,6 +582,17 @@
     const cur = computeYearGeneric(clubId, y);
     if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
+    // to-do 147, paso 5a: con ?multi=1 y más de un ejercicio, la tabla de una columna por año
+    // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
+    // totales son los del ejercicio más nuevo y los usan los KPIs.
+    const ysSel = FIN_SEL.years();
+    const multiTabla = !!window.FIN_MULTI && ysSel.length > 1 && typeof renderMultiPLTable === 'function';
+    document.getElementById('finanzasPLTable').hidden = multiTabla;
+    const tablaMulti = document.getElementById('finanzasPLMulti');
+    if(tablaMulti){
+      tablaMulti.hidden = !multiTabla;
+      if(multiTabla) renderMultiPLTable(clubId, ysSel, 'finanzasPLMulti');
+    }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
     drawTrendChartGeneric(clubId, [cur]);
