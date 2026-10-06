@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 544 — Los deflactores se bajan con el mismo script que los tipos de cambio (2026-10-05)
+
+- `tools/fetch-fx-reference.mjs --deflactores` (pedido de Guido: que convivan con las series de tipo de cambio del pipeline de altas): baja el deflactor del PBI de EE.UU. (FRED) y de la zona euro (Eurostat) a `tools/fx-reference/deflactor-usd.json` y `deflactor-eur.json`, con el mismo formato que las cotizaciones, y regenera el objeto de `data/deflactores.js` conservando su encabezado. Corrido hoy: reproduce byte por byte lo que se había cargado a mano en la Versión 543. `Admin/PIPELINE.md` (regla 6 del tipo de cambio).
+
 ## Versión 543 — To-do 147, paso 11: valores ajustados por inflación en Finanzas (2026-10-05)
 
 - `data/deflactores.js` (nuevo): deflactor del PBI de EE.UU. (BEA vía FRED, A191RD3A086NBEA, 2017=100) y de la zona euro (Eurostat nama_10_gdp EA20 PD15_EUR, 2015=100), 2000-2025, bajados de las dos fuentes el 2026-10-05. Se actualiza una vez por año.

@@ -71,6 +71,9 @@
 //   node tools/fetch-fx-reference.mjs --currency COP --from 2015-01-01
 //   node tools/fetch-fx-reference.mjs --currency TRY --full   TRY desde cero
 //
+//   node tools/fetch-fx-reference.mjs --deflactores   los deflactores del PBI (USD y EUR) y
+//                                                       regenera data/deflactores.js (ver abajo)
+//
 // No necesita ninguna API key (todos los endpoints son públicos). Volver a
 // correrlo pisa el archivo con la serie más actualizada. Todas bajan en
 // segundos salvo TRY: la primera vez son ~6.800 requests (~5 minutos); después
@@ -869,7 +872,79 @@ async function runOne(code, from, to) {
   console.log(`  Listo: ${dates.length} cotizaciones (${dates[0]} a ${dates[dates.length - 1]}) -> ${outPath.replace(projectRoot + '/', '')}`);
 }
 
+// ============================================================================
+// DEFLACTORES DEL PBI (to-do 147, paso 11). Viven al lado de las series de tipo de cambio porque son
+// la otra mitad de la misma cuenta: el tipo de cambio de cada cierre lleva un monto a USD (o EUR) de
+// ESE año, y el deflactor lo lleva a USD de hoy. Mismo criterio que el resto de este archivo: fuente
+// oficial, endpoint público sin key, la serie completa guardada en tools/fx-reference/. A diferencia
+// de las cotizaciones (que se curan a mano en FX_CLOSE), esta serie es chica (un valor por año), así
+// que data/deflactores.js se GENERA desde estos archivos: no se edita a mano.
+//   USD: deflactor implícito del PBI de EE.UU. (BEA), vía FRED, serie anual A191RD3A086NBEA, 2017=100.
+//   EUR: deflactor del PBI de la zona euro (Eurostat nama_10_gdp, EA20, PD15_EUR, B1GQ), 2015=100.
+// Se corre una vez por año, cuando las dos fuentes publican el año que cerró.
+// ============================================================================
+const DEFLACTORES = {
+  USD: { file: 'deflactor-usd.json', nombre: 'deflactor del PBI de EE.UU.', fuente: 'BEA, vía FRED (A191RD3A086NBEA), índice 2017 = 100',
+    url: 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RD3A086NBEA',
+    async fetch() {
+      const r = await fetchRetry(this.url);
+      const out = {};
+      for (const line of (await r.text()).trim().split('\n').slice(1)) {
+        const [fecha, v] = line.split(',');
+        const y = Number(fecha.slice(0, 4));
+        if (y >= 2000 && v && v !== '.') out[y] = Number(v);
+      }
+      return out;
+    } },
+  EUR: { file: 'deflactor-eur.json', nombre: 'deflactor del PBI de la zona euro', fuente: 'Eurostat (nama_10_gdp, EA20, PD15_EUR), índice 2015 = 100',
+    url: 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?geo=EA20&unit=PD15_EUR&na_item=B1GQ&sinceTimePeriod=2000&format=JSON&lang=EN',
+    async fetch() {
+      const r = await fetchRetry(this.url);
+      const j = await r.json();
+      const idx = j.dimension.time.category.index, out = {};
+      for (const [y, i] of Object.entries(idx)) { const v = j.value[String(i)]; if (v != null) out[Number(y)] = v; }
+      return out;
+    } },
+};
+
+async function runDeflactores() {
+  mkdirSync(outDir, { recursive: true });
+  const series = {};
+  for (const [cur, cfg] of Object.entries(DEFLACTORES)) {
+    console.log(`Bajando ${cfg.nombre}...`);
+    const valores = await cfg.fetch();
+    const ys = Object.keys(valores).map(Number).sort((a, b) => a - b);
+    if (!ys.length) throw new Error(`${cur}: la fuente no devolvió datos -- no piso nada.`);
+    writeFileSync(resolve(outDir, cfg.file), JSON.stringify({
+      label: `${cfg.nombre} (anual)`, source: cfg.fuente + ', ' + cfg.url, fetchedAt: new Date().toISOString(),
+      rangeFrom: String(ys[0]), rangeTo: String(ys[ys.length - 1]), count: ys.length, series: valores,
+    }, null, 1), 'utf8');
+    console.log(`  Listo: ${ys[0]}-${ys[ys.length - 1]} -> tools/fx-reference/${cfg.file}`);
+    series[cur] = { cfg, valores };
+  }
+  // data/deflactores.js: el encabezado (criterio y decisiones) se conserva; se reescribe el objeto.
+  const destino = resolve(projectRoot, 'data', 'deflactores.js');
+  const viejo = existsSync(destino) ? readFileSync(destino, 'utf8') : '';
+  const corte = viejo.indexOf('window.DEFLACTORES');
+  const encabezado = corte > 0 ? viejo.slice(0, corte) : '// data/deflactores.js — GENERADO por tools/fetch-fx-reference.mjs --deflactores.\n\n';
+  const fila = (valores) => {
+    const ys = Object.keys(valores).map(Number).sort((a, b) => a - b);
+    const partes = ys.map((y) => `${y}: ${valores[y].toFixed(3)}`);
+    const lineas = [];
+    for (let i = 0; i < partes.length; i += 6) lineas.push('      ' + partes.slice(i, i + 6).join(', ') + ',');
+    return lineas.join('\n');
+  };
+  let cuerpo = 'window.DEFLACTORES = {\n';
+  for (const [cur, { cfg, valores }] of Object.entries(series)) {
+    cuerpo += `  ${cur}: {\n    nombre: '${cfg.nombre}',\n    fuente: '${cfg.fuente}',\n    valores: {\n${fila(valores)}\n    },\n  },\n`;
+  }
+  cuerpo += '};\n';
+  writeFileSync(destino, encabezado + cuerpo, 'utf8');
+  console.log('  data/deflactores.js regenerado. Subí ASSET_V para que el sitio lo vuelva a pedir.');
+}
+
 async function main() {
+  if (process.argv.includes('--deflactores')) return runDeflactores();
   const { currencies, from, to } = parseArgs();
   for (const code of currencies) await runOne(code, from, to);
 }

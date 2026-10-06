@@ -13,12 +13,11 @@
 // 2025, mismo criterio que el tipo de cambio); un ejercicio posterior al año base (un presupuesto
 // futuro) no se ajusta.
 //
-// SE ACTUALIZA UNA VEZ POR AÑO, cuando BEA y Eurostat publican el año que cerró: agregar el valor
-// nuevo y nada más (el año base se mueve solo, es el último de cada serie). Las dos series se bajaron
-// el 2026-10-05:
-//   USD: https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RD3A086NBEA
-//   EUR: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?geo=EA20&unit=PD15_EUR&na_item=B1GQ&format=JSON
-// Una revisión de la fuente cambia años viejos: si se baja de nuevo, se reemplaza la serie entera.
+// EL OBJETO DE ABAJO SE GENERA, NO SE EDITA A MANO: `node tools/fetch-fx-reference.mjs --deflactores`
+// baja las dos series de su fuente oficial a tools/fx-reference/ (deflactor-usd.json, deflactor-eur.json,
+// al lado de las series de tipo de cambio del pipeline de altas) y reescribe el objeto; este encabezado
+// se conserva. Se corre una vez por año, cuando BEA y Eurostat publican el año que cerró: el año base se
+// mueve solo (es el último de cada serie). Si la fuente revisó años viejos, también se actualizan.
 // ============================================================================
 
 window.DEFLACTORES = {
