@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 546 — Sin pesos en KB en la guía de arranque; Racing 2012/13 con Blanco (2026-10-05)
+
+- `.claude/skills/start-session-finance-of-sports-project/SKILL.md`: la tabla de qué leer pierde la columna "Peso" y los párrafos que la explicaban (pedido de Guido: no tener que actualizar esos números nunca más). `tools/audit.js`: se borra `checkPesoDocs()` (`doc-peso-desfasado`), que comparaba esos números contra el tamaño real.
+- `data/gestiones/ar.js`: Racing 2012/13 pasa a Blanco (`firmo:[2013]`, decisión de Guido): cerró con Cogorno pero Blanco asumió el 30/9/2013, antes de la aprobación del balance. `ASSET_V` 445.
+
 ## Versión 545 — To-do 147, paso 12: gestión en Finanzas, con el formato nuevo de gestiones (2026-10-05)
 
 - `data/gestiones/ar.js` (nuevo, formato nuevo): Boca (Angelici, Ameal, Riquelme) y Racing (Molina, Cogorno, Blanco, Milito), cada una con fecha de asunción, fin, fuente (prensa o Wikipedia, verificadas hoy) y `confirmada`. Los ejercicios de cada gestión se derivan: quien estaba en el cargo al cierre del ejercicio; `firmo` queda para cuando el firmante del balance sea otro. Caso abierto anotado en el archivo: Racing 2012/13 (cerró con Cogorno, Blanco asumió el 30/9/2013; la transcripción no trae firmas).

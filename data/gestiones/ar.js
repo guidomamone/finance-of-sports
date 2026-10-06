@@ -18,9 +18,9 @@
 // cargo el día de su CIERRE (30/6 para un club que arranca el 1/7). La regla que decidió Guido es
 // "de quien firmó el balance"; las dos coinciden salvo cuando el cambio cae entre el cierre y la
 // aprobación del balance. Para esos casos existe `firmo` (lista de ejercicios que esta gestión firmó
-// aunque no estuviera al cierre), y se usa solo con el balance en la mano. Caso abierto: Racing
-// 2012/13 cerró con Cogorno (30/6/2013) y Blanco asumió el 30/9/2013; la transcripción de ese balance
-// no trae la página de firmas, así que por ahora queda con Cogorno, por la fecha de cierre.
+// aunque no estuviera al cierre). Racing 2012/13: cerró con Cogorno (30/6/2013), Blanco asumió el
+// 30/9/2013, así que probablemente aprobó ese balance; la transcripción no trae la página de firmas, y Guido
+// decidió (2026-10-05) dejarlo con Blanco.
 // ============================================================================
 
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
@@ -31,7 +31,7 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://es.wikipedia.org/wiki/Anexo:Presidentes_del_Racing_Club', confirmada:true },
     { nombre:'Gastón Cogorno', corto:'Cogorno', cargo:'Presidente', desde:'2011-12-27', hasta:'2013-09-30',
       fuente:'https://www.lanueva.com/nota/2011-12-27-22-36-0-cogorno-asumio-en-racing-y-ya-piensa-en-la-continuidad-de-teofilo', confirmada:true },
-    { nombre:'Víctor Blanco', corto:'Blanco', cargo:'Presidente', desde:'2013-09-30', hasta:'2024-12-19',
+    { nombre:'Víctor Blanco', corto:'Blanco', cargo:'Presidente', desde:'2013-09-30', hasta:'2024-12-19', firmo:[2013],
       fuente:'https://www.vavel.com/ar/futbol-argentino/2013/09/30/racing-avellaneda/268054.html', confirmada:true },
     { nombre:'Diego Milito', corto:'Milito', cargo:'Presidente', desde:'2024-12-19', hasta:null,
       fuente:'https://www.espn.com.ar/futbol/argentina/nota/_/id/14584260/diego-milito-asumio-como-nuevo-presidente-de-racing', confirmada:true },

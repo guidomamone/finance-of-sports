@@ -18,35 +18,25 @@ permanentes. Esto es el procedimiento.
 
 **Si la tarea es onboardear clubes o tocar las tools del pipeline, el arranque es el del skill `club-or-year-onboarding`, no esta tabla.**
 
-| # | Qué | Cuándo | Peso |
-|---|---|---|---|
-| 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** | 11 KB |
-| 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club | 13 KB |
-| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** | 13 KB |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto | 17 KB |
-| 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club | 25 KB |
-| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` | 60 KB |
-| 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS | 63 KB |
-| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline | 89 KB |
-| 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) | 9 KB |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía | 42 KB (+ el archivo de tu país en `paises/`, ~1-9 KB cada uno, desde el to-do 87) |
-| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca | 14 KB + 2-8 KB por país |
-
-(Pesos re-medidos 2026-09-26, `wc -c`. Hasta la Versión 239 `Admin/ESTADO.md` incluía el bloque
-CLUB-INDEX y pesaba 56 KB, a 4 KB del umbral de 60 KB que usa `tools/audit.js` — to-do 63, ya
-cerrado: el bloque generado se partió a `Admin/ESTADO-clubes.md`, mismo mecanismo que sacó la to-do
-list de `index.html` en la Versión 138. Con eso los dos archivos quedan lejos del umbral de nuevo.)
-
-**Los KB de esta tabla los chequea `node tools/audit.js`** (`doc-peso-desfasado`, P3, agregado en
-la auditoría de docs del 2026-09-20): existen para decidir qué abrir y qué no, así que un número
-desactualizado no es cosmético — cuando se midió, `club-sourcing` decía 33 KB y pesaba 91, y
-`Admin/CHANGELOG.md` decía 68 y pesaba 189. Si el chequeo se queja, actualizá el número acá.
+| # | Qué | Cuándo |
+|---|---|---|
+| 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** |
+| 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club |
+| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** |
+| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto |
+| 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club |
+| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
+| 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS |
+| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline |
+| 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) |
+| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
+| 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
-- `Admin/finance-of-sports-project.md` (488 KB): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
+- `Admin/finance-of-sports-project.md` (el archivo más pesado del proyecto): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
   consulta buscando una palabra puntual, nunca de corrido.
-- `Admin/CHANGELOG.md` (586 KB): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
+- `Admin/CHANGELOG.md` (muy pesado): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
 Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
 
