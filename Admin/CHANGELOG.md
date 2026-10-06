@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 536 — To-do 147, paso 5b: rubro desplegable, % del total y presupuesto al lado del balance (?multi=1) (2026-10-05)
+
+- `js/finanzas-multi.js` reescrito como `FIN_MULTI_PL` (con `renderMultiPLTable()` de alias): tocar un rubro (o Enter) abre su gráfico Chart.js debajo de la fila (gastos en tamaño, punto hueco y tramo punteado en presupuestos y saltos; las instancias se destruyen en cada re-render); "M <moneda> | % del total" (cada rubro contra el total de su sección ese año, el resultado como margen sobre ingresos, Δ en puntos); "Presupuesto al lado del balance" (aparece solo si algún año elegido tiene las dos fuentes, apagado por default) abre esos años en presupuesto (amarillo), balance y desvío (%; en el resultado neto, diferencia en plata). Los rubros abiertos y el botón vuelven a cero al cambiar de club.
+- `index.html` (`#plMultiCtrls`), `js/finanzas-render.js` (esconde los controles fuera del modo multi), `js/styles.css`, `data/lang/en.js` (6 claves `pl.multi.*`). `ASSET_V` 435.
+- Verificado: totales de cada columna contra la tabla de un año (180 chequeos, 7 clubes), columnas de presupuesto contra la columna de presupuesto de la tabla de un año en los 6 ejercicios con las dos fuentes (Racing 4, Gimnasia 2), % que suman 100 por columna, gráfico de rubro. Sin `?multi=1`, los 65 ejercicios idénticos a `main`.
+
 ## Versión 535 — To-do 147, paso 5a: Estado de resultados con una columna por ejercicio (?multi=1) (2026-10-05)
 
 - `js/finanzas-multi.js` (nuevo, `renderMultiPLTable()`): con `?multi=1` y más de un ejercicio elegido, la tabla `#finanzasPLMulti` reemplaza en pantalla a la de un año. Rubro | un ejercicio por columna (más viejo a la izquierda, "…" donde la selección saltea años) | Δ del primero al último (en gastos compara el tamaño: más gasto = rojo) | sparkline (punteada en saltos y presupuestos). Filas = unión de las filas de los años elegidos; en formato del club un rubro que un año no tiene sale "—". Solo-presupuesto en amarillo y cursiva. Cada año con su propio tipo de cambio. Rubro fija al scrollear de costado.

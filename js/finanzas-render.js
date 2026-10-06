@@ -564,6 +564,7 @@
     if(tablaMulti){
       tablaMulti.hidden = !multiTabla;
       if(multiTabla) renderMultiPLTable(clubId, ysSel, 'finanzasPLMulti');
+      else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
     }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, prev, 'finanzasDebtTable');
@@ -592,6 +593,7 @@
     if(tablaMulti){
       tablaMulti.hidden = !multiTabla;
       if(multiTabla) renderMultiPLTable(clubId, ysSel, 'finanzasPLMulti');
+      else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
     }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');

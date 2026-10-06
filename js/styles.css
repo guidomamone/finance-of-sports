@@ -459,6 +459,21 @@
   .pl-multi .pl-spark{text-align:center;padding-top:2px;padding-bottom:2px;}
   .pl-multi .pl-up{color:var(--green);}
   .pl-multi .pl-down{color:var(--red);}
+  /* paso 5b: rubro desplegable con su gráfico, desvío vs. presupuesto, controles arriba de la tabla. */
+  .pl-multi tr.pl-row-open{cursor:pointer;}
+  .pl-multi tr.pl-row-open:hover td{background:#f6f8fc;}
+  .pl-multi tr.pl-row-open.abierto td{background:#eef3fa;}
+  .pl-multi tr.pl-row-open .pl-arrow{color:var(--muted);margin-right:4px;}
+  .pl-multi tr.pl-row-chart td{background:#f8fafd;text-align:left;padding:10px 12px 14px;}
+  .pl-row-chart-wrap{position:sticky;left:12px;height:190px;max-width:calc(100vw - 80px);width:760px;}
+  .pl-multi .pl-dev{font-size:12.5px;background:#fafaf8;}
+  .pl-multi th small{font-style:normal;}
+  .pl-multi-ctrls{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px;}
+  .pl-multi-ctrls[hidden]{display:none;}
+  .pl-multi-hint{font-size:12.5px;color:var(--muted);}
+  .pl-multi-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .pl-multi-bud{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 10px;font-size:13px;cursor:pointer;}
+  .pl-multi-bud.on{border-color:#d9c27a;background:#fdf8e7;color:#8a6d00;font-weight:600;}
   #finanzas.sin-anio > *:not(h1):not(.subtitle):not(.fin-sel):not(.fin-years){display:none !important;}
   @media (max-width:640px){
     .fin-years-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;}
