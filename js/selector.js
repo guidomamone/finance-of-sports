@@ -1481,24 +1481,9 @@ window.CLUB_SELECTOR = (function(){
   // afuera (se probó, y una fórmula simplificada tiró 12 falsos positivos porque
   // no contemplaba nonCash, profitOnPlayerSales, assetSales ni tax).
   // ---------------------------------------------------------------------------
-  // LOS 6 INDICADORES, los mismos que dibujaba la vista de barras de
-  // js/comparar-clubes.js hasta la Versión 152. Los 4 primeros son MONTOS y se
-  // agregan sumando (o promediando) ejercicio por ejercicio; los 2 últimos son
-  // RATIOS y NO se pueden promediar así — ver `ratiosDe()`.
-  var INDICADORES = [
-    { key:'revenue',  label:function(){ return t('cmp.m.revenue', 'Ingresos'); } },
-    { key:'expenses', label:function(){ return t('cmp.m.expenses', 'Gastos'); },
-      nota:function(){ return t('cmp.m.expenses.note', 'Incluye amortizaciones y depreciación, igual que el total de la tabla de Finanzas.'); } },
-    { key:'pat',      label:function(){ return t('cmp.m.pat', 'Resultado del ejercicio'); }, signo:true },
-    { key:'netDebt',  label:function(){ return t('cmp.m.netdebt', 'Deuda neta'); }, signo:true,
-      nota:function(){ return t('cmp.m.netdebt.note', 'Deuda bruta menos caja. Negativa quiere decir más caja que deuda.'); } },
-    { key:'wagesPct', label:function(){ return t('cmp.m.wages', 'Masa salarial / Ingresos'); }, ratio:'pct',
-      nota:function(){ return t('cmp.m.wages.note', 'Cuánto de lo que entra se va en sueldos del plantel.'); } },
-    { key:'perMember', label:function(){ return t('cmp.m.permember', 'Ingreso por socio'); }, ratio:'usd',
-      nota:function(){ return t('cmp.m.permember.note', 'Solo para los clubes que publican su padrón de socios.'); } }
-  ];
-  // Los 4 que se agregan sumando. Los 2 ratios se calculan aparte, al final.
-  var MONTOS = INDICADORES.filter(function(m){ return !m.ratio; });
+  // LOS INDICADORES: 4 MONTOS (ingresos, gastos, resultado, deuda neta) que se agregan sumando
+  // (o promediando) ejercicio por ejercicio, y 2 RATIOS (masa salarial / ingresos, ingreso por
+  // socio) que NO se pueden promediar así: se arman al final con los totales del lado (totalesDe).
 
   // Los pares (club, ejercicio) de UN bloque. Para una liga salen de la membresía
   // de esa temporada; para un puñado de clubes, de lo que se eligió club por club.
@@ -1609,6 +1594,20 @@ window.CLUB_SELECTOR = (function(){
     }).filter(function(r){ return r.value !== 0; });
   }
 
+  // Los gastos de un club-ejercicio por rubro del formato simplificado, en USD (to-do 23,
+  // paso 5: la tabla de Comparar tiene las mismas filas que la de Finanzas). Vienen en
+  // NEGATIVO, como en el reporte, y se muestran entre paréntesis.
+  function gastosDe(id, year){
+    var rows = (window.simplifiedReportForClub(id, year) || {}).gastos || [];
+    var meta = window.yearMetaFor(id, year);
+    var f = facReal(year);
+    return rows.map(function(r){
+      return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') * f };
+    }).filter(function(r){ return r.value !== 0; });
+  }
+  // El orden de los rubros: el del formato simplificado (el primero que aparece manda).
+  function anotarOrden(lista, label){ if(lista.indexOf(label) < 0) lista.push(label); }
+
   // UN BLOQUE: se suman sus ejercicios y, si el agregador es promedio, se divide por
   // los que informan ESE indicador (no por los ejercicios del bloque: un club que no
   // publica su deuda no puede bajar el promedio de deuda de los demás).
@@ -1619,7 +1618,8 @@ window.CLUB_SELECTOR = (function(){
   function totalesDeBloque(b){
     var pares = paresDeBloque(b);
     var out = { nombre:nombreBloque(b), agg:b.agg, n:pares.length, conDato:0, sinEjercicio:[],
-                anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{}, incluidos:[] };
+                anios:[], presupuestos:0, tot:{}, informan:{}, mezcla:{}, incluidos:[],
+                gastos:{}, conGastos:0, ordenIng:[], ordenGas:[] };
     ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
     pares.forEach(function(par){
       var id = par[0], y = par[1];
@@ -1640,7 +1640,22 @@ window.CLUB_SELECTOR = (function(){
       // ejercicio, SUMADOS en USD. Un conjunto sí tiene una mezcla propia (de dónde
       // sale la plata de estos clubes juntos); lo que no tiene sentido es promediar
       // los porcentajes de clubes con tamaños distintos.
-      mezclaDe(id, y).forEach(function(r){ out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value; });
+      // El orden de las filas sale del reporte ENTERO, ceros incluidos: si saliera de los rubros
+      // con plata, un rubro en cero en el primer club (Banfield 2020 no tiene premios) caería al final.
+      var rep = window.simplifiedReportForClub(id, y) || {};
+      (rep.ingresos || []).forEach(function(r){ anotarOrden(out.ordenIng, r.label); });
+      (rep.gastos || []).forEach(function(r){ anotarOrden(out.ordenGas, r.label); });
+      mezclaDe(id, y).forEach(function(r){
+        out.mezcla[r.label] = (out.mezcla[r.label] || 0) + r.value;
+      });
+      // Los gastos por rubro, solo de los ejercicios que informan gastos (los clubes japoneses
+      // publican ingresos y no costos: no pueden bajar el promedio de gastos de los demás).
+      if(n.expenses != null){
+        out.conGastos++;
+        gastosDe(id, y).forEach(function(r){
+          out.gastos[r.label] = (out.gastos[r.label] || 0) + r.value;
+        });
+      }
       // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
       ((window.simplifiedReportForClub(id, y) || {}).ingresos || []).forEach(function(r){
         if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'posiblemente está dentro de') : t('sel.res.incl', 'está dentro de')) + ' ' + tLabel(r.incluidoEn));
@@ -1653,6 +1668,9 @@ window.CLUB_SELECTOR = (function(){
       Object.keys(out.mezcla).forEach(function(lbl){
         if(out.conDato) out.mezcla[lbl] = out.mezcla[lbl] / out.conDato;
       });
+      Object.keys(out.gastos).forEach(function(lbl){
+        if(out.conGastos) out.gastos[lbl] = out.gastos[lbl] / out.conGastos;
+      });
     }
     return out;
   }
@@ -1662,8 +1680,10 @@ window.CLUB_SELECTOR = (function(){
   // con el aviso correspondiente abajo de la tabla.
   function totalesDe(l){
     var out = { nombre:l.nombre, n:0, conDato:0, sinEjercicio:[], anios:[], presupuestos:0,
-                tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l), incluidos:[] };
-    ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; });
+                tot:{}, informan:{}, mezcla:{}, partes:[], mezclaAgg:false, formula:formulaDe(l), incluidos:[],
+                gastos:{}, ordenIng:[], ordenGas:[], nEj:{} };
+    // `informan` cuenta PARTES (bloques) del lado; `nEj`, EJERCICIOS (para el "12 de 14" de la tabla).
+    ACUMULADAS.forEach(function(k){ out.tot[k] = 0; out.informan[k] = 0; out.nEj[k] = 0; });
     var aggs = {};
     (l.bloques || []).forEach(function(b){
       var tb = totalesDeBloque(b);
@@ -1676,6 +1696,7 @@ window.CLUB_SELECTOR = (function(){
       out.incluidos = out.incluidos.concat(tb.incluidos);
       if(tb.conDato) aggs[b.agg] = 1;
       ACUMULADAS.forEach(function(k){
+        out.nEj[k] += tb.informan[k];
         if(!tb.informan[k]) return;
         out.tot[k] += tb.tot[k];
         out.informan[k]++;
@@ -1683,6 +1704,11 @@ window.CLUB_SELECTOR = (function(){
       Object.keys(tb.mezcla).forEach(function(lbl){
         out.mezcla[lbl] = (out.mezcla[lbl] || 0) + tb.mezcla[lbl];
       });
+      Object.keys(tb.gastos).forEach(function(lbl){
+        out.gastos[lbl] = (out.gastos[lbl] || 0) + tb.gastos[lbl];
+      });
+      tb.ordenIng.forEach(function(lbl){ anotarOrden(out.ordenIng, lbl); });
+      tb.ordenGas.forEach(function(lbl){ anotarOrden(out.ordenGas, lbl); });
     });
     out.mezclaAgg = Object.keys(aggs).length > 1;
 
@@ -1698,20 +1724,6 @@ window.CLUB_SELECTOR = (function(){
       ? (out.tot.revenueConSocios * 1e6) / out.tot.socios : null;
     out.informan.perMember = out.informan.socios;
     return out;
-  }
-
-  function fmtM(v, m){
-    if(v == null) return t('cmp.nodata', 'sin dato');
-    if(m && m.ratio === 'pct') return v.toFixed(0) + '%';
-    if(m && m.ratio === 'usd') return Math.round(v).toLocaleString('es-AR') + ' USD';
-    var abs = Math.abs(v);
-    var txt = abs >= 1000 ? (abs / 1000).toFixed(2) + ' MM' : abs.toFixed(1) + ' M';
-    return (v < 0 ? '-' : '') + txt + ' USD';
-  }
-  function rangoAnios(tt){
-    if(!tt.anios.length) return '—';
-    var min = Math.min.apply(null, tt.anios), max = Math.max.apply(null, tt.anios);
-    return min === max ? String(min) : min + '-' + max;
   }
 
   // ---------------------------------------------------------------------------
@@ -2230,10 +2242,225 @@ window.CLUB_SELECTOR = (function(){
     var canvas = caja.querySelector('.cd-graf canvas');
     if(!canvas || !window.Chart) return;
     var nombres = tots.map(function(tt){ return tt.nombre; });
-    if(cmpModo === 'mix'){ graficoMezcla(canvas, nombres, tots); return; }
+    if(cmpModo === 'mix'){
+      graficoMezcla(canvas, nombres, tots);
+      dibujarFila(caja, nombres, [seriePorAnio(lado[0]), seriePorAnio(lado[1])]);
+      return;
+    }
     var k = { ing:'revenue', gas:'expenses', pat:'pat' }[cmpModo];
-    graficoAB(canvas, nombres, [seriePorAnio(lado[0]), seriePorAnio(lado[1])],
-      function(tt){ return tt.informan[k] ? tt.tot[k] : null; }, cmpModo === 'pat');
+    var series = [seriePorAnio(lado[0]), seriePorAnio(lado[1])];
+    graficoAB(canvas, nombres, series, function(tt){ return tt.informan[k] ? tt.tot[k] : null; }, cmpModo === 'pat');
+    dibujarFila(caja, nombres, series);
+  }
+
+  // El rubro abierto de la tabla: el mismo gráfico A contra B, solo para ese rubro. Los gastos,
+  // en positivo (es un tamaño). Un año sin el dato no se dibuja.
+  function dibujarFila(caja, nombres, series){
+    var cv = caja.querySelector('canvas[data-fila]');
+    if(!cv || !cmpFila) return;
+    var clave = cmpFila.slice(0, 1), label = cmpFila.slice(2);
+    graficoAB(cv, nombres, series, function(tt){
+      if(!tt.conDato) return null;
+      if(clave === 'i') return tt.mezcla[label] || 0;
+      return tt.informan.expenses ? Math.abs(tt.gastos[label] || 0) : null;
+    }, false);
+  }
+
+  // ---------------------------------------------------------------------------
+  // LA TABLA (to-do 23, paso 5): las filas de la de Finanzas en formato simplificado (rubro por
+  // rubro, totales, resultado, deuda) y abajo los dos indicadores que solo tiene Comparar.
+  // Columnas A, B y B / A, sin verde ni rojo en B / A: en una comparación ningún lado es el
+  // bueno. Mismas clases que la tabla multi-año de Finanzas (.pl-multi): unidad en el
+  // encabezado, gastos entre paréntesis, columna de presupuesto en amarillo y cursiva, rubro
+  // desplegable con su gráfico (acá, A contra B por año de cierre).
+  // ---------------------------------------------------------------------------
+  var cmpPct = false;
+  var cmpFila = null;   // 'i|<rubro>' o 'g|<rubro>': la fila abierta
+
+  function escH(s){
+    return String(s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; });
+  }
+  function fmtNum(v){
+    if(v == null) return '—';
+    var abs = Math.abs(v).toFixed(1);
+    return v < 0 ? '<span class="neg-num">(' + abs + ')</span>' : abs;
+  }
+  function fmtPctCell(v, base){
+    if(v == null || !base) return '—';
+    var p = v / Math.abs(base) * 100;
+    return p < 0 ? '<span class="neg-num">(' + Math.abs(p).toFixed(1) + '%)</span>' : p.toFixed(1) + '%';
+  }
+  function esPresu(tt){ return tt.conDato > 0 && tt.presupuestos === tt.conDato; }
+  function preguntaH(texto){ return ' <span class="cd-q" tabindex="0" data-info-tip="' + escH(texto) + '">?</span>'; }
+
+  function tablaComparacion(tots){
+    var caja = el('div', 'cd-pl');
+    var head = el('div', 'cd-graf-head');
+    var tit = el('div');
+    tit.appendChild(el('h3', null, t('sel.tab.title', 'Estado de resultados')));
+    tit.appendChild(el('p', 'cd-res-sub', t('sel.tab.sub', 'En ingresos ves cuánta plata entró y en gastos cuánta salió, rubro por rubro. Tocá un rubro para ver cómo se compara año a año.')));
+    head.appendChild(tit);
+    var seg = el('div', 'segmented');
+    [[false, unidadCmp()], [true, t('pl.multi.pctUnit', '% del total')]].forEach(function(o){
+      var b = el('button', cmpPct === o[0] ? 'active' : null, o[1]);
+      b.type = 'button';
+      b.addEventListener('click', function(){ cmpPct = o[0]; renderResultado(); });
+      seg.appendChild(b);
+    });
+    head.appendChild(seg);
+    caja.appendChild(head);
+
+    var pres = tots.map(esPresu);
+    var tdCls = function(i){ return pres[i] ? ' class="pl-col-presu"' : ''; };
+    var anyRev = tots.map(function(tt){ return !!tt.informan.revenue; });
+    var anyGas = tots.map(function(tt){ return !!tt.informan.expenses; });
+    var base = baseReal();
+
+    // B / A: veces en montos, diferencia en puntos en "% del total". "—" con un cero o sin dato.
+    function rat(va, vb, pa, pb){
+      if(cmpPct){
+        if(pa == null || pb == null) return '<td class="cd-rat">—</td>';
+        var d = pb - pa;
+        return '<td class="cd-rat">' + (d >= 0 ? '+' : '') + d.toFixed(1) + ' ' + t('sel.tab.pp', 'p.p.') + '</td>';
+      }
+      if(va == null || vb == null || va === 0 || vb === 0) return '<td class="cd-rat">—</td>';
+      if((va < 0) !== (vb < 0)) return '<td class="cd-rat">' + t('sel.graf.sign', 'signo distinto') + '</td>';
+      var r = vb / va;
+      return '<td class="cd-rat">×' + r.toFixed(r >= 10 ? 0 : 1) + '</td>';
+    }
+    function cnt(tt, k){
+      return tt.nEj[k] < tt.conDato
+        ? '<span class="cd-cnt">' + tt.nEj[k] + ' ' + t('sel.of', 'de') + ' ' + tt.conDato + '</span>' : '';
+    }
+
+    // Encabezado: el nombre de cada lado; con el ajuste, el factor de cada año; la etiqueta de
+    // presupuesto si el lado lo mezcla con balances. Con una LIGA de por medio va además cómo se
+    // junta: "Brasileirão 2025: 114,1" a secas se lee como lo que factura la liga entera (hoy esa
+    // temporada tiene un solo club cargado, Mirassol); "promedio de 1 ejercicio" dice lo que es.
+    var h = '<thead><tr><th>' + escH(t('th.line', 'Rubro')) + '<small>' + escH(unidadCmp()) + '</small></th>';
+    tots.forEach(function(tt, i){
+      h += '<th' + tdCls(i) + '><span class="cd-letra chica' + (i ? ' b' : '') + '">' + LETRAS[i] + '</span>' + escH(tt.nombre);
+      var hayLiga = (lado[i].bloques || []).some(function(b){ return b.kind === 'liga'; });
+      if(hayLiga && lado[i].bloques.length === 1){
+        h += '<small>' + escH((lado[i].bloques[0].agg === 'promedio' ? t('sel.card.avgOf', 'promedio de') : t('sel.card.sumOf', 'suma de'))
+          + ' ' + nEjercicios(tt.conDato)) + '</small>';
+      } else if(lado[i].bloques.length > 1){
+        h += '<small>' + escH(tt.formula) + '</small>';
+      }
+      if(pres[i]) h += '<small>' + escH(t('finanzas.card.budget', 'Presupuesto')) + '</small>';
+      if(cmpReal){
+        var ys = tt.anios.filter(function(y, k, a){ return a.indexOf(y) === k; }).sort(function(a, b){ return a - b; });
+        h += '<small>' + ys.map(function(y){
+          return y >= base && facReal(y) === 1 && y > base ? y + ': ' + t('sel.tab.noadj', 'sin ajustar') : y + ': ×' + facReal(y).toFixed(2);
+        }).join(' · ') + '</small>';
+      }
+      if(tt.presupuestos && !pres[i]){
+        h += '<small><span class="cd-tag-presu">' + escH(t('sel.card.inclPresu', 'incluye') + ' ' + tt.presupuestos + ' '
+          + (tt.presupuestos === 1 ? t('sel.card.presu1', 'presupuesto') : t('sel.card.presuN', 'presupuestos'))) + '</span></small>';
+      }
+      h += '</th>';
+    });
+    h += '<th class="cd-rat">B / A<small>' + escH(cmpPct ? t('sel.tab.diff', 'diferencia') : t('sel.tab.times', 'veces')) + '</small></th></tr></thead><tbody>';
+
+    var sec = function(titulo){ return '<tr class="pl-section-head"><td colspan="4">' + titulo + '</td></tr>'; };
+    function filaRubro(clave, label, vals, totales, hay){
+      var id = clave + '|' + label;
+      var abierta = cmpFila === id;
+      var pcts = vals.map(function(v, i){ return hay[i] && totales[i] ? v / Math.abs(totales[i]) * 100 : null; });
+      var r = '<tr class="pl-row-open' + (abierta ? ' abierto' : '') + '" data-fila="' + escH(id) + '" tabindex="0"><td><span class="pl-arrow">'
+        + (abierta ? '&#9662;' : '&#9656;') + '</span>' + escH(tLabel(label)) + '</td>';
+      vals.forEach(function(v, i){
+        r += '<td' + tdCls(i) + '>' + (!hay[i] ? '—' : cmpPct ? fmtPctCell(v, totales[i]) : fmtNum(v)) + '</td>';
+      });
+      r += rat(hay[0] ? vals[0] : null, hay[1] ? vals[1] : null, pcts[0], pcts[1]) + '</tr>';
+      if(abierta) r += '<tr class="pl-row-chart"><td colspan="4"><div class="pl-row-chart-wrap"><canvas data-fila="' + escH(id) + '"></canvas></div></td></tr>';
+      return r;
+    }
+    function filaTotal(label, vals, hay, cls){
+      var r = '<tr class="pl-bold ' + cls + '"><td>' + label + '</td>';
+      vals.forEach(function(v, i){ r += '<td' + tdCls(i) + '>' + (!hay[i] ? '—' : cmpPct ? '100%' : fmtNum(v)) + '</td>'; });
+      return r + (cmpPct ? '<td class="cd-rat">—</td>' : rat(hay[0] ? vals[0] : null, hay[1] ? vals[1] : null)) + '</tr>';
+    }
+    function union(campo){
+      var out = [];
+      tots.forEach(function(tt){ tt[campo].forEach(function(l){ if(out.indexOf(l) < 0) out.push(l); }); });
+      return out;
+    }
+
+    var totIng = tots.map(function(tt){ return tt.informan.revenue ? tt.tot.revenue : null; });
+    var totGas = tots.map(function(tt){ return tt.informan.expenses ? -tt.tot.expenses : null; });
+
+    h += sec(escH(t('section.revenue', 'Ingresos')));
+    union('ordenIng').forEach(function(l){
+      var vals = tots.map(function(tt){ return tt.mezcla[l] || 0; });
+      if(!vals[0] && !vals[1]) return;   // un rubro en cero en los dos lados no dice nada
+      h += filaRubro('i', l, vals, totIng, anyRev);
+    });
+    h += filaTotal(escH(t('sel.tab.totRev', 'Total ingresos')), totIng, anyRev, 'pl-shade');
+
+    h += sec(escH(t('section.expenses', 'Gastos')) + preguntaH(t('cmp.m.expenses.note', 'Incluye amortizaciones y depreciación, igual que el total de la tabla de Finanzas.')));
+    union('ordenGas').forEach(function(l){
+      var vals = tots.map(function(tt){ return tt.gastos[l] || 0; });
+      if(!vals[0] && !vals[1]) return;
+      h += filaRubro('g', l, vals, totGas, anyGas);
+    });
+    h += filaTotal(escH(t('sel.tab.totExp', 'Total gastos')), totGas, anyGas, 'pl-shade');
+
+    // Resultado: lo que no es ni ingreso ni gasto operativo (intereses, resultados financieros,
+    // extraordinarios) en una fila, para que la columna cierre contra el resultado oficial.
+    h += sec(escH(t('sel.tab.result', 'Resultado')));
+    var pat = tots.map(function(tt){ return tt.informan.pat ? tt.tot.pat : null; });
+    var otros = tots.map(function(tt, i){ return pat[i] != null && totIng[i] != null && totGas[i] != null ? pat[i] - totIng[i] - totGas[i] : null; });
+    var rOtros = '<tr><td>' + escH(t('sel.tab.other', 'Intereses y otros resultados'))
+      + preguntaH(t('sel.tab.other.tip', 'Intereses, resultados financieros y extraordinarios: por eso el resultado no es ingresos menos gastos.')) + '</td>';
+    otros.forEach(function(v, i){ rOtros += '<td' + tdCls(i) + '>' + (v == null ? '—' : cmpPct ? fmtPctCell(v, totIng[i]) : fmtNum(v)) + '</td>'; });
+    h += rOtros + '<td class="cd-rat">—</td></tr>';
+    var rPat = '<tr class="pl-bold pl-highlight"><td>' + escH(t('cmp.m.pat', 'Resultado del ejercicio'))
+      + (cmpPct ? ' <small>(' + escH(t('pl.multi.margin', '% de los ingresos')) + ')</small>' : '') + '</td>';
+    pat.forEach(function(v, i){ rPat += '<td' + tdCls(i) + '>' + (v == null ? '—' : (cmpPct ? fmtPctCell(v, totIng[i]) : fmtNum(v)) + cnt(tots[i], 'pat')) + '</td>'; });
+    h += rPat + (cmpPct ? '<td class="cd-rat">—</td>' : rat(pat[0], pat[1])) + '</tr>';
+
+    h += sec(escH(t('sel.tab.debt', 'Deuda')));
+    var nd = tots.map(function(tt){ return tt.informan.netDebt ? tt.tot.netDebt : null; });
+    var rNd = '<tr><td>' + escH(t('cmp.m.netdebt', 'Deuda neta')) + preguntaH(t('cmp.m.netdebt.note', 'Deuda bruta menos caja. Negativa quiere decir más caja que deuda.')) + '</td>';
+    nd.forEach(function(v, i){
+      var vacio = v == null && pres[i] ? '<span class="cd-cnt">' + escH(t('sel.tab.noDebt', 'un presupuesto no la informa')) + '</span>' : '';
+      rNd += '<td' + tdCls(i) + '>' + (v == null ? '—' + vacio : cmpPct ? '—' : fmtNum(v) + cnt(tots[i], 'netDebt')) + '</td>';
+    });
+    h += rNd + (cmpPct ? '<td class="cd-rat">—</td>' : rat(nd[0], nd[1])) + '</tr>';
+
+    // Los dos indicadores que Finanzas no tiene: aparte, al final, para que el resto de la
+    // tabla sea igual a la de Finanzas.
+    h += sec(escH(t('sel.tab.only', 'Indicadores que solo tiene Comparar')));
+    var wp = tots.map(function(tt){ return tt.tot.wagesPct; });
+    var rWp = '<tr><td>' + escH(t('cmp.m.wages', 'Masa salarial / Ingresos')) + preguntaH(t('sel.tab.wages.tip', 'Cuánto de lo que entra se va en sueldos del plantel. Se calcula sobre los totales del lado, no promediando porcentajes.')) + '</td>';
+    wp.forEach(function(v, i){ rWp += '<td' + tdCls(i) + '>' + (v == null ? '—' : v.toFixed(0) + '%' + cnt(tots[i], 'wages')) + '</td>'; });
+    h += rWp + '<td class="cd-rat">' + (wp[0] != null && wp[1] != null ? (wp[1] - wp[0] >= 0 ? '+' : '') + (wp[1] - wp[0]).toFixed(0) + ' ' + t('sel.tab.pp', 'p.p.') : '—') + '</td></tr>';
+    var pm = tots.map(function(tt){ return tt.tot.perMember; });
+    var rPm = '<tr><td>' + escH(t('cmp.m.permember', 'Ingreso por socio')) + preguntaH(t('cmp.m.permember.note', 'Solo para los clubes que publican su padrón de socios.')) + '</td>';
+    pm.forEach(function(v, i){ rPm += '<td' + tdCls(i) + '>' + (v == null ? '—' : Math.round(v).toLocaleString('es-AR') + ' USD' + cnt(tots[i], 'socios')) + '</td>'; });
+    h += rPm + rat(pm[0], pm[1]) + '</tr>';
+
+    var tw = el('div', 'cd-tw');
+    var tabla = el('table', 'pl-multi cd-tabla-n');
+    tabla.innerHTML = h + '</tbody>';
+    tabla.addEventListener('click', function(ev){
+      var tr = ev.target.closest('tr[data-fila]');
+      if(!tr) return;
+      cmpFila = cmpFila === tr.dataset.fila ? null : tr.dataset.fila;
+      renderResultado();
+    });
+    tabla.addEventListener('keydown', function(ev){
+      if(ev.key !== 'Enter' && ev.key !== ' ') return;
+      var tr = ev.target.closest('tr[data-fila]');
+      if(!tr) return;
+      ev.preventDefault();
+      cmpFila = cmpFila === tr.dataset.fila ? null : tr.dataset.fila;
+      renderResultado();
+    });
+    tw.appendChild(tabla);
+    caja.appendChild(tw);
+    return caja;
   }
 
   function renderResultado(){
@@ -2265,70 +2492,7 @@ window.CLUB_SELECTOR = (function(){
 
     caja.appendChild(bloqueGrafico(tots));
 
-    var tabla = el('table', 'cd-tabla');
-    var trh = el('tr');
-    trh.appendChild(el('th', null, ''));
-    tots.forEach(function(tt, i){
-      var th = el('th');
-      th.appendChild(el('span', 'cd-letra chica' + (i ? ' b' : ''), LETRAS[i]));
-      th.appendChild(el('span', 'cd-res-n', tt.nombre));
-      // La fórmula abajo del nombre: con un agregador por bloque, el encabezado solo
-      // no alcanza para saber qué se está mirando. Va SIEMPRE que haya una liga de
-      // por medio, aunque sea de un solo ejercicio: hoy el Brasileirão Série A 2025
-      // tiene un único club con balance cargado (Mirassol), y "Brasileirão Série A
-      // 2025: 114,1 M USD" a secas se lee como lo que factura la liga entera. Con
-      // `promedio(Brasileirão Série A 2025)` y "1 de 1 ejercicio" al lado, se lee lo
-      // que es. Los otros lados solo la muestran cuando suman más de una cosa,
-      // porque `suma(Real Madrid)` es ruido.
-      var hayLiga = (activos[i].bloques || []).some(function(b){ return b.kind === 'liga'; });
-      if(hayLiga || tt.partes.length > 1 || tt.n > 1) th.appendChild(el('span', 'cd-res-m', tt.formula));
-      th.appendChild(el('span', 'cd-res-m', tt.conDato + ' ' + t('sel.of', 'de') + ' '
-        + nEjercicios(tt.n) + ' · ' + rangoAnios(tt)));
-      trh.appendChild(th);
-    });
-    var thead = el('thead'); thead.appendChild(trh); tabla.appendChild(thead);
-
-    var tbody = el('tbody');
-    INDICADORES.forEach(function(m){
-      var tr = el('tr');
-      var th = el('th', 'cd-ind');
-      th.appendChild(el('span', null, m.label()));
-      // La nota de cada indicador, la misma que escribía la vista vieja: sin ella
-      // "Gastos" no dice que incluye amortizaciones, y "Deuda neta" negativa se lee
-      // como un error en vez de como "más caja que deuda".
-      if(m.nota) th.appendChild(el('span', 'cd-ind-nota', m.nota()));
-      tr.appendChild(th);
-      // Cada barra está a escala DENTRO de su indicador, no entre indicadores: es la
-      // misma regla que ya usa la comparación de barras del sitio.
-      var maxAbs = Math.max.apply(null, tots.map(function(tt){
-        return tt.informan[m.key] ? Math.abs(tt.tot[m.key]) : 0;
-      })) || 1;
-      tots.forEach(function(tt){
-        var td = el('td');
-        if(!tt.informan[m.key]){
-          td.appendChild(el('span', 'cd-nodato', t('cmp.nodata', 'sin dato')));
-        } else {
-          var v = tt.tot[m.key];
-          td.appendChild(el('span', 'cd-num' + (m.signo && v < 0 ? ' neg' : ''), fmtM(v, m)));
-          var barra = el('span', 'cd-bar');
-          var relleno = el('span', 'cd-bar-in' + (m.signo && v < 0 ? ' neg' : ''));
-          relleno.style.width = Math.round((Math.abs(v) / maxAbs) * 100) + '%';
-          barra.appendChild(relleno);
-          td.appendChild(barra);
-          // "X de Y lo informan" cuenta PARTES del lado, no ejercicios: con un
-          // agregador por bloque, el lado suma bloques, y decir "2 de 8" mezclaría
-          // dos unidades distintas en la misma frase.
-          if(tt.informan[m.key] < tt.partes.length){
-            td.appendChild(el('span', 'cd-res-m', tt.informan[m.key] + ' ' + t('sel.of', 'de')
-              + ' ' + tt.partes.length + ' ' + t('sel.res.partes', 'partes lo informan')));
-          }
-        }
-        tr.appendChild(td);
-      });
-      tbody.appendChild(tr);
-    });
-    tabla.appendChild(tbody);
-    caja.appendChild(tabla);
+    caja.appendChild(tablaComparacion(tots));
 
     // Las salvedades. Sin esto, dos números grandes uno al lado del otro parecen
     // comparables aunque no lo sean.
