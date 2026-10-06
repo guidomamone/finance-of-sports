@@ -456,6 +456,8 @@ window.I18N.strings.en = {
   "sel.res.cero2": "A financial year without the figure doesn't count as zero: it's left out and counted apart (the \"12 of 14\" under the number).",
   "sel.src.sub": "Where each number comes from. One line per financial year, grouped by side.",
   "sel.src.none": "no document loaded",
+  "sel.res.fail": "Couldn't load the data for {c}: the result is incomplete.",
+  "sel.res.retry": "Try again",
   "sel.res.incluidos2": "the document puts two lines into one, and in the table they add up where they are",
   "sel.tab.title": "Income statement",
   "sel.tab.sub": "Revenue shows how much money came in and expenses how much went out, line by line. Tap a line to see how it compares year by year.",

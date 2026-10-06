@@ -70,6 +70,46 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
 
 ---
 
+## Comparar con el diseño de Finanzas (to-do 23, Versión 559): cómo es y qué no romper
+
+Mockup aprobado y el porqué de cada decisión (en el comentario del principio): `Prototyping/Comparar/mockup-23.html`. Todo vive en
+`js/selector.js`; el CSS, en `js/styles.css` (bloques `cd-*`, más las clases de Finanzas que se reusan: `.fin-year*`, `.pl-multi`).
+
+- **Los cards son el título.** No hay "A contra B" ni párrafo de reglas. Abajo del nombre, una línea dice cómo se arma el lado
+  (`comoSeArma()`: país · promedio/suma de N ejercicios de M clubes · "incluye N presupuesto"). B lleva la letra en naranja
+  (`.cd-letra.b`, `#d9822b`): es el color de B en el gráfico.
+- **Chips de ejercicio** (`filaChips()`), el mismo componente que Finanzas: un CLUB elige uno o VARIOS ejercicios (Balance /
+  Presupuesto punteado / "Sin publicar" rayado y no elegible, armado desde `CLUB_INDEX`, sin bajar el archivo del club); una LIGA
+  elige temporadas. Con más de 5 ejercicios PUBLICADOS arranca corta con "+N más". No deja apagar el último. Un club recién elegido
+  arranca en su último BALANCE. "Cómo se junta: Promedio | Suma" con más de un ejercicio. Un lado de varios clubes, varias ligas o
+  una mezcla sigue con la fórmula y "Ejercicios: …" (se cambia desde el modal).
+- **Sin botón "Comparar".** Con los dos lados llenos, `render()` llama a `aplicar()` y el resultado se rehace con cada chip. Fija el
+  club activo SOLO si no había ninguno (antes lo pisaba con el primer club de A). Cada archivo de club se baja con un reintento; si
+  igual falla, el resultado lo dice arriba con "Reintentar" (`cmpFallidos`), en vez de mostrar un promedio parcial como completo.
+- **Barra** (`renderControles()`, `#cdControles`): formato fijo en Simplificado y "Valores: Nominales | Ajustados por inflación".
+  El USD / ARS del header se esconde en esta pestaña (`body[data-section="vs"]`, que pone el handler del nav en index.html).
+- **Inflación** (`cmpReal`, `facReal()`): estado PROPIO, no el de `FIN_REAL` (Comparar siempre es USD). Serie USD de
+  `data/deflactores.js`, año base = el último de la serie, cada ejercicio por su año de cierre ANTES de sumar o promediar
+  (`numerosDe`, `mezclaDe`, `gastosDe`); un ejercicio que cierra después del año base no se ajusta. Unidad "M USD de 2025".
+- **Gráfico** (`bloqueGrafico()`, `graficoAB()`): UN solo gráfico, A y B en el mismo eje (pedido de Guido: separados pierden la
+  comparación). Eje X lineal = año de cierre, con los años elegidos como marcas: un año sin elegir deja su hueco y el tramo va
+  punteado; presupuesto = punto hueco. Modos Ingresos / Gastos / Resultado (barras lado a lado) / De qué vive (una barra apilada
+  por lado, colores fijos por rubro de `INICIO_INGRESOS_BUCKETS`). Cada punto sale de `seriePorAnio()`: el lado restringido a ese
+  año y pasado por `totalesDe()`, o sea las mismas reglas que el número del lado. Los Chart.js se destruyen en cada render
+  (`cmpCharts`).
+- **Tabla** (`tablaComparacion()`): las filas de Finanzas en formato simplificado (orden del reporte ENTERO, ceros incluidos; una
+  fila en cero en los dos lados se esconde), "Intereses y otros resultados" para que cierre contra el resultado, deuda neta, y al
+  final "Indicadores que solo tiene Comparar" (masa salarial / ingresos, ingreso por socio). Columnas A, B y B / A sin colores.
+  "% del total": B / A pasa a diferencia en puntos. "12 de 14" = ejercicios que informan el dato (`tt.nEj`, no `tt.informan`, que
+  cuenta bloques). Columna amarilla si el lado es todo presupuesto. Rubro desplegable = `graficoAB()` de ese rubro.
+- **Avisos**: los de cada lado, en su card (`avisosDeLado()`, `.cd-avisos-lado`); abajo de la tabla, solo los generales.
+  **Fuentes** (`bloqueFuentes()`): un renglón por ejercicio, agrupado por lado.
+- **Cómo verificar un cambio acá**: armá la comparación con `CLUB_SELECTOR.reopenComparacion(a, b)` en la consola (con la pestaña
+  Comparar ya abierta, o los chips no saben su ancho) y tocá chips de verdad. Par de control: liga AR 2020+2024 promedio contra
+  Boca 22/23 + 24/25 + 26/27 = ingresos 47.4 / 148.0 nominal y 49.6 / 149.7 ajustado. El servidor local (`python3 -m
+  http.server`) corta conexiones si se bajan muchos archivos de club a la vez: un "—" en un lado entero es eso, y desde la Versión
+  559 lo dice el aviso de arriba.
+
 ## Bug: `gastosTotal` ya viene convertido — no reconvertir (ex §4)
 
 Al generalizar `renderFinanzasStatsGeneric(cur, gastosTotal)` para que respete el toggle de moneda,
@@ -412,8 +452,9 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - "DENTRO DE OTRO RUBRO" (Versión 515, textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
   dentro de otro rubro" (en la celda no entra el nombre del rubro: ocupaba seis renglones) y el rubro va en el bocadillo:
   "Está incluido en X: la fuente lo reporta junto con ese rubro." / "Sospecho que está dentro de X: no es un cero, pero la fuente no lo
-  aclara o es confusa." (`window.FINANZAS_DENTRO_TIP`, en js/finanzas-render.js; lo usa también js/liga.js). En Comparar, que es prosa,
-  el rubro va nombrado ("está dentro de X").
+  aclara o es confusa." (`window.FINANZAS_DENTRO_TIP`, en js/finanzas-render.js; lo usan también js/liga.js y js/selector.js). En
+  Comparar, un lado de UN ejercicio lo muestra en la celda igual que Finanzas; uno de varios ejercicios no tiene una celda única que
+  marcar, y lo dice en prosa en el card de ese lado, con el rubro nombrado ("está dentro de X").
 
 - QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
@@ -816,15 +857,12 @@ Texto movido sin cambios.
   sumatoria de 6 clubes brasileros" contra Real Madrid. Los cards se llenan con el
   MISMO modal, que para este camino gana un paso 4 ("¿qué querés medir?": Ligas /
   Clubes / Mezcla — las dos primeras son atajos de un bloque, la mezcla es el
-  modelo completo). Por eso el card no tiene toggle Promedio/Sumatoria: muestra la
-  FÓRMULA. `año === null` es "el ejercicio más reciente de ESE club"; en un bloque
-  de liga el año NO puede ser null, define quiénes la integraban.
-  El resultado son 6 indicadores, una fila cada uno con su barra a escala DENTRO
-  de su indicador, más la composición de ingresos al 100% y las salvedades. Fuerza
-  USD y Formato simplificado, y lo dice en pantalla. Muestra "sin dato" (no 0)
-  cuando la fuente no informa. Los números salen de `computeYearGeneric()`, el
-  motor real. Vive todo en `js/selector.js`: `js/comparar-clubes.js` (la bandeja de
-  chips de la Versión 137) se borró en la Versión 152.
+  modelo completo). `año === null` es "el ejercicio más reciente de ESE club"; en un
+  bloque de liga el año NO puede ser null, define quiénes la integraban.
+  Desde el to-do 23 (Versión 559) la pantalla se lee como Finanzas: ver la sección
+  "Comparar con el diseño de Finanzas" de arriba. Los números salen de
+  `computeYearGeneric()`, el motor real. Vive todo en `js/selector.js`:
+  `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) se borró en la Versión 152.
 - Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
   (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
   desde la Versión 112 (pedido de Guido), código y datos intactos.

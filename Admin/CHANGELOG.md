@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 559 — To-do 23: Comparar con el diseño de Finanzas y valores ajustados por inflación (2026-10-06)
+
+- Construido en 7 pasos desde el mockup aprobado (`Prototyping/Comparar/mockup-23.html`), todo en `js/selector.js`, `js/styles.css`,
+  `index.html` y `data/lang/en.js`: inflación con la serie USD por ejercicio antes de juntar el lado; chips de ejercicio de Finanzas
+  (varios ejercicios por club, "Promedio | Suma", default el último balance); sin botón "Comparar" y sin pisar el club activo; barra
+  con formato fijo y toggle de inflación, sin USD / ARS en el header; un solo gráfico A contra B por año de cierre (reemplaza a la
+  composición al 100%); tabla con las filas de Finanzas, B / A, % del total y rubro desplegable (reemplaza a los 6 indicadores con
+  barras); avisos de cada lado en su card, "dentro de otro rubro" en la celda, fuentes por ejercicio; reintento y aviso si el
+  archivo de un club no carga. `ASSET_V` a 451; `fuentes.html` y las 169 páginas de club regeneradas.
+
 ## Versión 558 — To-do 23: mockup de Comparar con el diseño de Finanzas (2026-10-06)
 
 - `Prototyping/Comparar/mockup-23.html`, aprobado por Guido. Comparar pasa a leerse como Finanzas: los dos cards de lado son el título, chips de ejercicio de Finanzas (un club elige varios ejercicios, cada lado con "Promedio | Suma"), barra con formato fijo en Simplificado y "Valores ajustados por inflación", un solo gráfico con A y B en el mismo eje de años, tabla con las filas de Finanzas (A, B, B / A) y un gráfico A contra B al tocar un rubro. Sin USD / ARS en el header de Comparar. Números reales del motor; el porqué de cada decisión, en un comentario al principio del archivo. Nada del sitio cambió todavía.

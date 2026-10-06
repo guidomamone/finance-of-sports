@@ -68,6 +68,15 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   `node tools/fetch-fx-reference.mjs --deflactores`) y `data/gestiones/<país>.js` (65 clubes de 10 países, Versión 553; un año nuevo
   sin presidente que lo cubra abre un caso `gestion` en la cola al cargarlo, Versión 552).
 
+### Comparar con el diseño de Finanzas (to-do 23, Versión 559)
+
+- Comparar se lee como Finanzas: los dos cards de lado son el título, con los chips de ejercicio de Finanzas (un club puede elegir
+  varios ejercicios, cada lado con "Promedio | Suma"); sin botón, el resultado se arma solo con los dos lados llenos; barra con
+  formato fijo y "Valores ajustados por inflación" (serie USD, propia de Comparar); un solo gráfico con A y B en el mismo eje de
+  años; tabla con las filas de Finanzas (A, B, B / A, % del total, rubro desplegable); avisos de cada lado en su card y fuentes por
+  ejercicio. Sin USD / ARS en el header en esta pestaña. Cómo está hecho: `Admin/PANTALLA.md`, "Comparar con el diseño de
+  Finanzas". Mockup: `Prototyping/Comparar/mockup-23.html`.
+
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por
 versión, 96 versiones) y en `Admin/finance-of-sports-project.md` (narrativa completa). Este bloque

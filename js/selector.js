@@ -146,6 +146,9 @@ window.CLUB_SELECTOR = (function(){
   // "Valores ajustados por inflación" de Comparar (to-do 23). Es un estado APARTE del de Finanzas
   // (FIN_REAL, js/finanzas-multi.js): Comparar siempre muestra USD, sin importar la moneda elegida.
   var cmpReal = false;
+  // Clubes cuyo archivo de datos no se pudo bajar (ni con un reintento): el resultado los avisa
+  // arriba en vez de mostrar un promedio parcial como si estuviera completo.
+  var cmpFallidos = [];
 
   // --- ESTADO DE LOS PASOS ---------------------------------------------------
   // `armado` es el paso 6 (el año y el agregador). Está en la lista de claves
@@ -1755,6 +1758,8 @@ window.CLUB_SELECTOR = (function(){
     }
     wrap.innerHTML = '';
     cols.forEach(function(c){ wrap.appendChild(c); });
+    // En celular la fila de chips se scrollea de costado: que arranque en lo más nuevo, como en Finanzas.
+    wrap.querySelectorAll('.fin-years-row').forEach(function(f){ f.scrollLeft = f.scrollWidth; });
     renderPie();
     renderControles();
     // SIN BOTÓN "COMPARAR" (to-do 23): con los dos lados llenos, el resultado se arma solo y se
@@ -2075,9 +2080,14 @@ window.CLUB_SELECTOR = (function(){
       // explícito ("Comparar"), no mientras elegís.
       var ids = [];
       activos.forEach(function(l){ clubesDe(l).forEach(function(id){ if(ids.indexOf(id) < 0) ids.push(id); }); });
+      // Un reintento por club (un corte de red pasajero), y si igual falla, queda anotado.
+      var fallidos = [];
       return Promise.all(ids.map(function(id){
-        return window.loadClubData ? window.loadClubData(id).catch(function(){ return null; }) : null;
-      }));
+        if(!window.loadClubData) return null;
+        return window.loadClubData(id)
+          .catch(function(){ return window.loadClubData(id); })
+          .catch(function(){ fallidos.push(nameOf(id)); return null; });
+      })).then(function(){ cmpFallidos = fallidos; });
     }).then(function(){
       renderResultado();
       // La página no se mueve sola: el resultado aparece abajo y el visitante decide
@@ -2494,6 +2504,16 @@ window.CLUB_SELECTOR = (function(){
 
     // Sin título "A contra B" ni párrafo de reglas (to-do 23, paso 6): los cards ya dicen qué es
     // cada lado, y la barra dice el formato y la moneda. El resultado arranca con el gráfico.
+    if(cmpFallidos.length){
+      var falla = el('div', 'cd-falla');
+      falla.appendChild(el('span', null, t('sel.res.fail', 'No se pudieron cargar los datos de {c}: el resultado está incompleto.')
+        .replace('{c}', cmpFallidos.join(', '))));
+      var reintentar = el('button', null, t('sel.res.retry', 'Reintentar'));
+      reintentar.type = 'button';
+      reintentar.addEventListener('click', aplicar);
+      falla.appendChild(reintentar);
+      caja.appendChild(falla);
+    }
     caja.appendChild(bloqueGrafico(tots));
     caja.appendChild(tablaComparacion(tots));
 

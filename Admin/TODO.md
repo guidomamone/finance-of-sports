@@ -23,16 +23,6 @@ ni en el comentario de ningún archivo de código.
 
 23. NUEVO (Versión 137, lo que dejó abierto el selector jerárquico + la comparación). ACTIVO,
     prioridad de Guido (2026-09-29: "me interesa, mantenelo abierto, no pausado"):
-    (d) COMPARAR CON EL DISEÑO DE FINANZAS + VALORES AJUSTADOS POR INFLACIÓN. Mockup aprobado (2026-10-06):
-        `Prototyping/Comparar/mockup-23.html`; el porqué de cada decisión está en el comentario del principio del archivo.
-        Decidido: los cards de lado son el título (sin "A contra B" ni bajada); chips de ejercicio de Finanzas, un club
-        elige VARIOS ejercicios y cada lado tiene "Promedio | Suma"; formato fijo en Simplificado; inflación con la serie
-        USD de `data/deflactores.js`, factor por ejercicio ANTES de sumar o promediar (`numerosDe`/`mezclaDe`), presupuestos
-        posteriores al año base sin ajustar; UN gráfico con A y B en el mismo eje de años (Ingresos / Gastos / Resultado /
-        De qué vive), sin cards de KPIs; tabla con las filas de Finanzas en formato simplificado, columnas A, B y B / A sin
-        colores, presupuesto en amarillo si el lado es solo presupuesto y "incluye N presupuesto" si es mezclado; tocar un
-        rubro abre su gráfico A contra B; fuentes por ejercicio; sin USD / ARS en el header de Comparar. Falta construirlo
-        en `js/selector.js`.
     TECHO DEL MODELO, no tarea: la taxonomía es de fútbol (`player_sales`, `wages_squad`,
     `youth_football`) y las pestañas Pases/Resultados/Títulos y `gestionesByClub` también. Un club de
     otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.

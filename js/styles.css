@@ -777,6 +777,8 @@
   .cd-cargando{color:var(--muted);font-size:13.5px;margin:0;}
   /* to-do 23, paso 5: la tabla de Comparar usa la de Finanzas (.pl-multi) más esto. */
   .cd-pl{margin-top:6px;}
+  .cd-falla{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;padding:9px 12px;border-radius:8px;background:#fdf1ef;border:1px solid #f0c9c2;color:#8a2a1f;font-size:13px;}
+  .cd-falla button{border:1px solid #d79a90;background:#fff;color:#8a2a1f;border-radius:6px;padding:4px 10px;font:inherit;font-size:12.5px;cursor:pointer;}
   /* to-do 23, paso 6: avisos de cada lado en su card, fuentes por ejercicio. */
   .cd-avisos-lado:empty{display:none;}
   .cd-avisos-lado{margin-top:10px;border-top:1px dashed var(--border);padding-top:8px;}
@@ -791,6 +793,14 @@
   .cd-tabla-n th .cd-letra.chica{margin-right:6px;}
   .cd-tabla-n th{color:var(--text);text-transform:none;letter-spacing:0;font-size:13px;}
   .cd-tabla-n th:first-child{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
+  /* El nombre de cada lado se parte en varias líneas: con nowrap, "Primera División 2020 + 2024" empujaba
+     las columnas de números fuera de la pantalla de un teléfono. */
+  .cd-tabla-n thead th{white-space:normal;min-width:84px;}
+  @media (max-width:640px){
+    .cd-tabla-n th:first-child,.cd-tabla-n td:first-child{min-width:112px;}
+    .cd-tabla-n th,.cd-tabla-n td{padding:7px 6px;}
+    .cd-tabla-n thead th{font-size:12px;}
+  }
   .cd-tabla-n .cd-rat{color:var(--muted);font-size:12.5px;}
   .cd-tabla-n th.cd-rat{font-size:12px;}
   .cd-cnt{display:block;font-size:10.5px;color:var(--muted);font-style:normal;font-weight:400;}
