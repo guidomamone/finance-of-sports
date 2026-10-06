@@ -3146,133 +3146,139 @@ KOLINGER
 
 --- pág. 108 ---
 
+108
+
 Gruppo F.C. Internazionale Milano S.p.A.
 
-# MOVIMENTAZIONE DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI
+MOVIMENTAZIONE DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI
 
-|  Calciatori | Data di nascita | Contratto |   | Provenienza |   | Destinazione |   | Valori di inizio periodo  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Data inizio primo contratto | Data scadenza | Data acquisto | Società di provenienza | Data cessione | Società di destinaz. | (1) Costo storico | (2) Fondo amm.to | (3) Fondo svalutazione  |
-|  **Prima squadra** |  |  |  |  |  |  |  |  |  |   |
-|  Acerbi Francesco | 10/02/88 | 01/09/22 | 30/06/26 | 14/06/23 | S.S. Lazio |  |  | 3.782.273 | -1.629.905 | -  |
-|  Arnautovic Marko | 19/04/89 | 16/08/23 | 30/06/25 | 16/08/23 | Bologna F.C. 1909 |  |  | 10.944.704 | -5.104.328 | -  |
-|  Asllani Kristjan | 09/03/02 | 01/07/22 | 30/06/28 | 29/06/22 | Empoli F.B.C. |  |  | 15.738.499 | -6.145.400 | -  |
-|  Barella Nicolò | 07/02/97 | 12/07/19 | 30/06/29 | 12/07/19 | Cagliari Calcio |  |  | 52.223.253 | -37.327.448 | -  |
-|  Bastoni Alessandro | 13/04/99 | 31/08/17 | 30/06/28 | 27/08/17 | Atalanta B.C. |  |  | 40.767.223 | -35.089.226 | -  |
-|  Bisseck Yann Aurel | 29/11/00 | 12/07/23 | 30/06/29 | 12/07/23 | AGF A/S |  |  | 7.186.050 | -1.402.349 | -  |
-|  Buchanan Tajon Trevor | 08/02/99 | 04/01/24 | 30/06/28 | 04/01/24 | Club Brugge NV |  |  | 7.328.956 | -796.431 | -  |
-|  Calhanoglu Hakan | 08/02/94 | 01/07/21 | 30/06/27 | 22/06/21 | Tesseramento |  |  | 2.411.630 | -1.780.671 | -  |
-|  Darmian Matteo | 02/12/89 | 05/10/20 | 30/06/26 | 05/10/20 | Parma Calcio 1913 |  |  | 3.293.702 | -3.113.145 | -  |
-|  De Vrij Stefan | 05/02/92 | 05/07/23 | 30/06/23 | 05/07/23 | Tesseramento |  |  | - | - | -  |
-|  Dimarco Federico | 10/11/97 | 01/07/18 | 30/06/27 | 30/06/18 | Sion |  |  | 5.591.853 | -4.358.877 | -  |
-|  Di Gennaro Raffaele | 03/10/93 | 12/07/23 | 30/06/19 | 12/07/23 | A.S. Gubbio 1910 |  |  | 15.000 | -13.753 | -  |
-|  Dumfries Denzel Justus Morris | 18/04/96 | 14/08/21 | 30/06/28 | 14/08/21 | PSV NV |  |  | 15.148.676 | -10.926.030 | -  |
-|  Frattesi Davide | 22/09/99 | 06/07/23 | 30/06/28 | 06/07/23 | U.S. Sassuolo Calcio |  |  | 31.378.764 | -6.206.788 | -  |
-|  Martinez Lautaro Javier | 22/08/97 | 01/07/18 | 30/06/29 | 01/07/18 | Racing Club de Avellaneda |  |  | 29.548.705 | -24.554.507 | -  |
-|  Martinez Riera Josep | 27/05/98 | 04/07/24 | 30/06/28 | 04/07/24 | Genoa C. & F.C. |  |  | - | - | -  |
-|  Mkhitaryan Henrikh | 21/01/89 | 01/07/22 | 30/06/26 | 22/06/22 | A.S. Roma |  |  | - | - | -  |
-|  Palacios Tiago Tomas | 28/04/03 | 29/08/24 | 30/06/29 | 29/08/24 | CS Independiente Rivadavia |  |  | - | - | -  |
-|  Pavard Benjamin Jaques Marcel | 28/03/96 | 30/08/23 | 30/06/28 | 30/08/23 | F.C. Bayern Munchen |  |  | 31.287.828 | -5.406.678 | -  |
-|  Sommer Yann | 17/12/88 | 07/08/23 | 30/06/26 | 07/08/23 | F.C. Bayern Munchen |  |  | 6.977.664 | -2.163.208 | -  |
-|  Sucic Petar | 25/10/03 | 01/06/25 | 30/06/30 | 01/06/25 | GNK Dinamo Zagreb |  |  | - | - | -  |
-|  Taremi Mehdi | 18/07/92 | 12/07/24 | 30/06/27 | 12/07/24 | Tesseramento |  |  | - | - | -  |
-|  Thuram Ulien Marcus Lilian | 06/08/97 | 01/07/23 | 30/06/28 | 27/06/23 | Tesseramento |  |  | 7.587.229 | -1.517.446 | -  |
-|  Tomaz De Lima Luis Henrique | 14/12/01 | 05/06/25 | 30/06/30 | 05/06/25 | Olympique de Marseille |  |  | - | - | -  |
-|  Zalewski Nicola | 23/01/02 | 23/06/25 | 30/06/29 | 23/06/25 | A.S. Roma |  |  | - | - | -  |
-|  Zielinski Piotr Sebastian | 20/05/94 | 01/07/23 | 30/06/28 | 18/03/24 | Tesseramento |  |  | 2.100.000 | - | -  |
-|  Zopolato Neves Carlos Augusto | 07/01/99 | 14/08/23 | 30/06/28 | 14/08/23 | A.C. Monza |  |  | 13.247.662 | -2.387.703 | -  |
-|   |  |  |  |  |  |  |  | 286.559.671 | -149.923.893 | -  |
-|  **Altri / Calciatori in prestito** |  |  |  |  |  |  |  |  |  |   |
-|  Agoumé Lucien | 09/02/02 | 01/07/19 | 30/06/26 | 01/07/19 | F.C. Sochaux-Montbeliard | 06/08/24 | Sevilla F.C. | 4.551.628 | -3.862.226 | -  |
-|  Akinsanmiro Ebenezer Ajodun | 25/11/04 | 30/01/23 | 30/06/26 | 30/01/23 | Remo Stars F.C. |  |  | 466.000 | -193.201 | -  |
-|  Carboni Franco Ezequiel | 04/04/03 | 30/01/20 | 30/06/27 | 30/01/20 | Calcio Catania |  |  | 402.000 | -313.274 | -  |
-|  Carboni Valentin | 05/03/05 | 10/09/20 | 30/06/29 | 10/09/20 | Calcio Catania |  |  | 477.124 | -209.616 | -  |
-|  Correa Carlos Joaquin | 13/08/94 | 25/08/21 | 30/06/25 | 25/08/21 | S.S. Lazio |  |  | 32.595.522 | -24.127.646 | -  |
-|  Della Mora Tommaso | 17/07/06 | 01/07/24 | 30/06/26 | 28/09/20 | Pordenone Calcio |  |  | 200.000 | -148.804 | -  |
-|  El Mahboubi Mezmizi Anas | 16/02/07 | 10/08/23 | 30/06/26 | 10/08/23 | C.E. Sant Gabriel |  |  | 140.000 | -43.128 | -  |
-|  Esposito Francesco Pio | 28/06/05 | 01/07/17 | 30/06/27 | 01/07/17 | Tesseramento |  |  | 780.000 | -195.000 | -  |
-|  Esposito Sebastiano | 02/07/02 | 27/07/16 | 30/06/26 | 27/07/16 | Brescia Calcio |  |  | 617.300 | -323.650 | -  |
-|  Fontanarosa Alessandro | 07/02/03 | 20/08/19 | 30/06/27 | 20/08/19 | Empoli F.B.C. |  |  | 795.000 | -625.287 | -  |
-|  Gianelli Jacopo | 04/03/01 | 15/09/17 | 30/06/25 | 30/08/17 | U.S. Cremonese | 27/08/24 | Svincolato | 330.480 | -291.717 | -32.497  |
-|  Kartelo Dominik | 30/04/08 | 28/08/24 | 30/06/27 | 28/08/24 | HNK Sibenik |  |  | - | - | -  |
-|  Nunziatini Francesco | 15/03/03 | 06/07/21 | 30/06/25 | 06/07/21 | A.S. Livorno Calcio | 11/07/24 | Torres | 147.150 | -101.739 | -44.042  |
-|  Oristanio Gaetano Pio | 28/09/02 | 29/09/16 | 30/06/27 | 29/09/16 | Peluso Accademy | 13/07/24 | Venezia F.C. | 490.000 | -249.246 | -  |
-|  Radu Ionut Andrei | 28/05/97 | 12/07/19 | 30/06/21 | 12/07/19 | Genoa C.F.C. |  |  | 10.555.408 | -8.962.495 | -1.592.913  |
-|  Romano Thiago | 23/06/06 | 08/08/24 | 30/06/29 | 08/08/24 | Panathinaikos FC |  |  | - | - | -  |
-|  Satriano Costa Martin Adrian | 20/02/01 | 31/01/20 | 30/06/27 | 31/01/20 | Club National de Football | 17/05/25 | R.C. Lens | 2.575.000 | -1.654.358 | -  |
-|  Stankovic Filip | 25/02/02 | 24/08/16 | 30/06/26 | 24/08/16 | Acc. Internaz. Calcio | 22/06/25 | Venezia F.C. | 325.000 | -202.132 | -  |
-|  Topalovic Luka | 23/02/06 | 02/07/24 | 30/06/29 | 02/07/24 | NK Domzale |  |  | - | - | -  |
-|  Vanheusden Zinho | 29/07/99 | 01/07/21 | 30/06/22 | 01/07/21 | Standard de Liege |  | Svincolato | 14.784.863 | -8.870.918 | -2.413.945  |
-|  Zanotti Mattia | 11/01/03 | 05/07/18 | 30/06/26 | 05/07/18 | Brescia Calcio | 11/07/24 | F.C. Lugano | 70.000 | -60.002 | -  |
-|   |  |  |  |  |  |  |  | 70.302.475 | -50.434.439 | -4.083.398  |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  **Altri / Settore giovanile e femminile** |  |  |  |  |  |  |  | 7.984.770 | -5.808.953 | -421.783  |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  **TOTALE** |  |  |  |  |  |  |  | 364.856.915 | -206.164.285 | -4.508.181  |
+| Calciatori | Data di nascita | Data inizio primo contratto | Data scadenza | Data acquisto | Società di provenienza | Data cessione | Società di destinaz. | (1) Costo storico | (2) Fondo amm.to | (3) Fondo svalutazione |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Prima squadra** | | | | | | | | | | |
+| Acerbi Francesco | 10/02/88 | 01/09/22 | 30/06/26 | 14/06/23 | S.S. Lazio | | | 3.782.273 | -1.629.905 | - |
+| Arnautovic Marko | 19/04/89 | 16/08/23 | 30/06/25 | 16/08/23 | Bologna F.C. 1909 | | | 10.944.704 | -5.104.328 | - |
+| Asllani Kristjan | 09/03/02 | 01/07/22 | 30/06/28 | 29/06/22 | Empoli F.B.C. | | | 15.738.499 | -6.145.400 | - |
+| Barella Nicolò | 07/02/97 | 12/07/19 | 30/06/29 | 12/07/19 | Cagliari Calcio | | | 52.223.253 | -37.327.448 | - |
+| Bastoni Alessandro | 13/04/99 | 31/08/17 | 30/06/28 | 27/08/17 | Atalanta B.C. | | | 40.767.223 | -35.089.226 | - |
+| Bisseck Yann Aurel | 29/11/00 | 12/07/23 | 30/06/29 | 12/07/23 | AGF A/S | | | 7.186.050 | -1.402.349 | - |
+| Buchanan Tajon Trevor | 08/02/99 | 04/01/24 | 30/06/28 | 04/01/24 | Club Brugge NV | | | 7.328.956 | -796.431 | - |
+| Calhanoglu Hakan | 08/02/94 | 01/07/21 | 30/06/27 | 22/06/21 | Tesseramento | | | 2.411.630 | -1.780.671 | - |
+| Darmian Matteo | 02/12/89 | 05/10/20 | 30/06/26 | 05/10/20 | Parma Calcio 1913 | | | 3.293.702 | -3.113.145 | - |
+| De Vrij Stefan | 05/02/92 | 05/07/23 | 30/06/23 | 05/07/23 | Tesseramento | | | - | - | - |
+| Dimarco Federico | 10/11/97 | 01/07/18 | 30/06/27 | 30/06/18 | Sion | | | 5.591.853 | -4.358.877 | - |
+| Di Gennaro Raffaele | 03/10/93 | 12/07/23 | 30/06/19 | 12/07/23 | A.S. Gubbio 1910 | | | 15.000 | -13.753 | - |
+| Dumfries Denzel Justus Morris | 18/04/96 | 14/08/21 | 30/06/28 | 14/08/21 | PSV NV | | | 15.148.676 | -10.926.030 | - |
+| Frattesi Davide | 22/09/99 | 06/07/23 | 30/06/28 | 06/07/23 | U.S. Sassuolo Calcio | | | 31.378.764 | -6.206.788 | - |
+| Martinez Lautaro Javier | 22/08/97 | 01/07/18 | 30/06/29 | 01/07/18 | Racing Club de Avellaneda | | | 29.548.705 | -24.554.507 | - |
+| Martinez Riera Josep | 27/05/98 | 04/07/24 | 30/06/28 | 04/07/24 | Genoa C. & F.C. | | | - | - | - |
+| Mkhitaryan Henrikh | 21/01/89 | 01/07/22 | 30/06/26 | 22/06/22 | A.S. Roma | | | - | - | - |
+| Palacios Tiago Tomas | 28/04/03 | 29/08/24 | 30/06/29 | 29/08/24 | CS Independiente Rivadavia | | | - | - | - |
+| Pavard Benjamin Jaques Marcel | 28/03/96 | 30/08/23 | 30/06/28 | 30/08/23 | F.C. Bayern Munchen | | | 31.287.828 | -5.406.678 | - |
+| Sommer Yann | 17/12/88 | 07/08/23 | 30/06/26 | 07/08/23 | F.C. Bayern Munchen | | | 6.977.664 | -2.163.208 | - |
+| Sucic Petar | 25/10/03 | 01/06/25 | 30/06/30 | 01/06/25 | GNK Dinamo Zagreb | | | - | - | - |
+| Taremi Mehdi | 18/07/92 | 12/07/24 | 30/06/27 | 12/07/24 | Tesseramento | | | - | - | - |
+| Thuram Ulien Marcus Lilian | 06/08/97 | 01/07/23 | 30/06/28 | 27/06/23 | Tesseramento | | | 7.587.229 | -1.517.446 | - |
+| Tomaz De Lima Luis Henrique | 14/12/01 | 05/06/25 | 30/06/30 | 05/06/25 | Olympique de Marseille | | | - | - | - |
+| Zalewski Nicola | 23/01/02 | 23/06/25 | 30/06/29 | 23/06/25 | A.S. Roma | | | - | - | - |
+| Zielinski Piotr Sebastian | 20/05/94 | 01/07/23 | 30/06/28 | 18/03/24 | Tesseramento | | | 2.100.000 | - | - |
+| Zopolato Neves Carlos Augusto | 07/01/99 | 14/08/23 | 30/06/28 | 14/08/23 | A.C. Monza | | | 13.247.662 | -2.387.703 | - |
+| | | | | | | | | 286.559.671 | -149.923.893 | - |
+| **Altri / Calciatori in prestito** | | | | | | | | | | |
+| Agoumè Lucien | 09/02/02 | 01/07/19 | 30/06/26 | 01/07/19 | F.C. Sochaux-Montbeliard | 06/08/24 | Sevilla F.C. | 4.551.628 | -3.862.226 | - |
+| Akinsanmiro Ebenezer Ajodun | 25/11/04 | 30/01/23 | 30/06/26 | 30/01/23 | Remo Stars F.C. | | | 466.000 | -193.201 | - |
+| Carboni Franco Ezequiel | 04/04/03 | 30/01/20 | 30/06/27 | 30/01/20 | Calcio Catania | | | 402.000 | -313.274 | - |
+| Carboni Valentin | 05/03/05 | 10/09/20 | 30/06/29 | 10/09/20 | Calcio Catania | | | 477.124 | -209.616 | - |
+| Correa Carlos Joaquin | 13/08/94 | 25/08/21 | 30/06/25 | 25/08/21 | S.S. Lazio | | | 32.595.522 | -24.127.646 | - |
+| Della Mora Tommaso | 17/07/06 | 01/07/24 | 30/06/26 | 28/09/20 | Pordenone Calcio | | | 200.000 | -148.804 | - |
+| El Mahboubi Mezmizi Anas | 16/02/07 | 10/08/23 | 30/06/26 | 10/08/23 | C.E. Sant Gabriel | | | 140.000 | -43.128 | - |
+| Esposito Francesco Pio | 28/06/05 | 01/07/17 | 30/06/27 | 01/07/17 | Tesseramento | | | 780.000 | -195.000 | - |
+| Esposito Sebastiano | 02/07/02 | 27/07/16 | 30/06/26 | 27/07/16 | Brescia Calcio | | | 617.300 | -323.650 | - |
+| Fontanarosa Alessandro | 07/02/03 | 20/08/19 | 30/06/27 | 20/08/19 | Empoli F.B.C. | | | 795.000 | -625.287 | - |
+| Gianelli Jacopo | 04/03/01 | 15/09/17 | 30/06/25 | 30/08/17 | U.S. Cremonese | 27/08/24 | Svincolato | 330.480 | -291.717 | -32.497 |
+| Kartelo Dominik | 30/04/08 | 28/08/24 | 30/06/27 | 28/08/24 | HNK Sibenik | | | - | - | - |
+| Nunziatini Francesco | 15/03/03 | 06/07/21 | 30/06/25 | 06/07/21 | A.S. Livorno Calcio | 11/07/24 | Torres | 147.150 | -101.739 | -44.042 |
+| Oristanio Gaetano Pio | 28/09/02 | 29/09/16 | 30/06/27 | 29/09/16 | Peluso Accademy | 13/07/24 | Venezia F.C. | 490.000 | -249.246 | - |
+| Radu Ionut Andrei | 28/05/97 | 12/07/19 | 30/06/21 | 12/07/19 | Genoa C.F.C. | | | 10.555.408 | -8.962.495 | -1.592.913 |
+| Romano Thiago | 23/06/06 | 08/08/24 | 30/06/29 | 08/08/24 | Panathinaikos FC | | | - | - | - |
+| Satriano Costa Martin Adrian | 20/02/01 | 31/01/20 | 30/06/27 | 31/01/20 | Club National de Football | 17/05/25 | R.C. Lens | 2.575.000 | -1.654.358 | - |
+| Stankovic Filip | 25/02/02 | 24/08/16 | 30/06/26 | 24/08/16 | Acc. Internaz. Calcio | 22/06/25 | Venezia F.C. | 325.000 | -202.132 | - |
+| Topalovic Luka | 23/02/06 | 02/07/24 | 30/06/29 | 02/07/24 | NK Domzale | | | - | - | - |
+| Vanheusden Zinho | 29/07/99 | 01/07/21 | 30/06/22 | 01/07/21 | Standard de Liege | | Svincolato | 14.784.863 | -8.870.918 | -2.413.945 |
+| Zanotti Mattia | 11/01/03 | 05/07/18 | 30/06/26 | 05/07/18 | Brescia Calcio | 11/07/24 | F.C. Lugano | 70.000 | -60.002 | - |
+| | | | | | | | | 70.302.475 | -50.434.439 | -4.083.398 |
+| **Altri / Settore giovanile e femminile** | | | | | | | | 7.994.770 | -5.805.953 | -421.783 |
+| **TOTALE** | | | | | | | | 364.856.915 | -206.164.285 | -4.505.181 |
 
 108
 
 --- pág. 109 ---
 
+109
+
 Bilancio Consolidato al 30 Giugno 2025
 
-# CALCIATORI
+CALCIATORI
 
-|  30/08/2024 | Variazioni valori di periodo | Effetti economici di periodo | Valori di fine periodo 30/08/2025 |   |   | Varie  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  (4) Netto | (5) Acquisti (6) Cessioni (7) Variaz. fondo amm.t) | (8) Ammer.t (9) Svalutaz.(10) Minusv.(10) Plusv. | (11) 1+5+6 Costo storico | (12) 2+7 Fondo amm.to | (13) 9 Fondo svalutazione | (14) 11-12-13 Netto | Compenso agenti acquisiz. | Altri Азl. costi di free  |
-|  2.152.368 |  | 1.076.184 | 3.782.273 | -2.706.089 | - | 1.076.184 |  |   |
-|  5.840.376 |  | 5.840.376 | 10.944.704 | -10.944.704 | - | - | 700.000 |   |
-|  9.593.099 | 325.000 | 2.601.126 | 16.063.499 | -8.746.526 | - | 7.316.973 | 500.000 |   |
-|  14.895.805 |  | 2.979.161 | 52.223.253 | -40.306.609 | - | 11.916.644 | 2.000.000 |   |
-|  5.677.997 |  | 1.419.499 | 40.767.223 | -36.508.725 | - | 4.258.498 | 1.050.000 |   |
-|  5.783.701 | 552.500 | 1.324.335 | 7.738.550 | -2.726.684 | - | 5.011.866 | 400.000 |   |
-|  6.532.525 |  | 1.633.131 | 7.328.956 | -2.429.562 | - | 4.899.394 | 353.500 |   |
-|  630.959 |  | 210.320 | 2.411.630 | -1.990.991 | - | 420.639 | 2.500.000 |   |
-|  180.557 |  | 90.278 | 3.293.702 | -3.203.423 | - | 90.279 | 110.000 |   |
-|  - |  |  | - | - | - | - |  |   |
-|  1.232.976 |  | 410.992 | 5.591.853 | -4.769.869 | - | 821.984 | 400.000 |   |
-|  1.247 | 7.500 | 1.314 | 22.500 | -15.067 | - | 7.433 | 15.000 |   |
-|  4.222.646 | 210.000 | 2.029.149 | 15.358.676 | -12.955.179 | - | 2.403.497 | 1.250.000 |   |
-|  25.171.976 | 1.000.000 | 6.542.994 | 32.378.764 | -12.749.782 | - | 19.628.982 | 1.500.000 |   |
-|  4.994.198 | 579.000 | 1.163.549 | 30.127.705 | -25.718.056 | - | 4.409.649 | 3.000.000 |   |
-|  - | 14.043.754 | 3.489.251 | 14.043.754 | -3.489.251 | - | 10.554.503 | 750.000 |   |
-|  - |  |  | - | - | - | - |  |   |
-|  - | 6.421.718 | 1.109.702 | 6.421.718 | -1.109.702 | - | 5.312.016 | 250.000 |   |
-|  25.881.150 | 1.538.462 | 6.854.903 3.564.708 | 32.826.289 | -12.261.581 | -3.564.708 | 17.000.000 | 1.500.000 |   |
-|  4.814.456 |  | 2.407.228 | 6.977.664 | -4.570.436 | - | 2.407.228 | 300.000 |   |
-|  - | 14.605.598 | 270.700 | 14.605.598 | -270.700 | - | 14.334.898 | 1.500.000 |   |
-|  - | 2.383.000 | 781.168 | 2.383.000 | -781.168 | - | 1.601.832 | 2.500.000 |   |
-|  6.069.783 |  | 1.517.446 | 7.587.229 | -3.034.892 | - | 4.552.337 | 8.000.000 |   |
-|  - | 22.848.059 | 368.056 | 22.848.059 | -368.056 | - | 22.480.003 | 1.400.000 |   |
-|  - | 6.719.988 | 36.621 | 6.719.988 | -36.621 | - | 6.683.367 | 75.000 |   |
-|  2.100.000 |  | 525.000 | 2.100.000 | -525.000 | - | 1.575.000 | 2.100.000 |   |
-|  10.859.959 | 2.005.178 | 3.216.284 | 15.252.840 | -5.603.987 | - | 9.648.853 | 300.000 |   |
-|  **136.635.778** | **73.239.757** | **47.898.768 3.564.708** | **359.799.427** | **-197.522.660** | **-3.564.708** | **158.412.059** | **32.453.500** | **-**  |
-|  689.402 | -4.551.628 3.897.168 | -3.264.872 | - | 34.942 | - | 34.942 |  |   |
-|  272.799 | 350.000 | 311.399 | 816.000 | -504.600 | - | 311.400 | 156.000 |   |
-|  88.726 |  | 29.793 | 402.000 | -343.067 | - | 58.933 |  |   |
-|  267.508 |  | 54.578 | 477.124 | -264.194 | - | 212.930 |  |   |
-|  8.467.876 |  | 7.980.683 487.193 | 32.595.522 | -32.108.329 | -487.193 | 0 | 1.000.000 |   |
-|  51.196 | 105.500 | 74.371 | 305.500 | -223.176 | - | 82.324 | 5.500 |   |
-|  96.872 | 80.000 | 88.436 | 220.000 | -131.564 | - | 88.436 |  |   |
-|  585.000 | 675.000 | 258.860 | 1.455.000 | -453.860 | - | 1.001.140 |  |   |
-|  293.650 |  | 150.115 | 617.300 | -473.765 | - | 143.535 | 375.000 |   |
-|  169.713 |  | 59.735 109.978 | 795.000 | -685.022 | -109.978 | 0 |  |   |
-|  6.266 | -330.480 330.480 | 6.266 | - | - | - | - |  |   |
-|  - | 100.000 | 29.605 | 100.000 | -29.605 | - | 70.395 |  |   |
-|  1.369 | -147.150 147.150 | 1.369 | - | - | - | - |  |   |
-|  240.754 | -490.000 252.105 | 2.858 -3.527.731 | - | - | - | - |  |   |
-|  - |  |  | 10.555.408 | -10.555.408 | - | - | 624.000 |   |
-|  - | 867.768 | 158.791 | 867.768 | -158.791 | - | 708.977 | 700.000 |   |
-|  920.642 | -2.575.000 1.924.245 | 269.887 -3.891.393 | - | - | - | - |  |   |
-|  122.868 | -325.000 262.219 | 60.088 -1.370.170 | - | - | - | - |  |   |
-|  - | 1.170.000 | 233.487 | 1.170.000 | -233.487 | - | 936.513 | 70.000 |   |
-|  3.500.000 |  | 1.750.000 1.750.000 | 14.784.863 | -13.034.863 | -1.750.000 | - |  |   |
-|  9.998 | -70.000 60.152 | 151 -1.818.176 | - | - | - | - |  |   |
-|  **15.784.638** | **3.348.288 -6.489.258 6.873.519** | **11.520.472 2.347.171** | **68.161.486** | **-59.164.789** | **-2.347.171** | **3.649.525** | **2.930.500** | **-**  |
-|  **1.767.054** | **2.189.071 -1.349.438 1.328.536** | **1.282.492 159.762** | **8.834.402** | **-6.181.692** | **-159.762** | **2.492.948** | **-** | **-**  |
-|  **164.187.449** | **78.777.095 -9.838.696 8.202.055** | **60.701.732 6.071.640** | **433.798.314** | **-263.169.141** | **-6.071.640** | **164.549.276** | **35.384.000** | **-**  |
+(Las filas siguen el mismo orden que la tabla de la página anterior.)
+
+| 30/06/2024 (4) Netto | (5) Acquisti | (6) Cessioni | (7) Variaz. fondo amm.ti | (8) Ammor.ti | (9) Svalutaz. | (10) Minusv. | (10) Plusv. | (11) 1+5+6 Costo storico | (12) 2+7 Fondo amm.to | (13) 9 Fondo svalutazione | (14) 11-12-13 Netto | Varie: Compenso agenti | Varie: Altri costi di acquisiz. | Varie: Val. sell on free |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | | | | | | |
+| 2.152.368 | | | | 1.076.184 | | | | 3.782.273 | -2.706.089 | - | 1.076.184 | | | |
+| 5.840.376 | | | | 5.840.376 | | | | 10.944.704 | -10.944.704 | - | - | 700.000 | | |
+| 9.593.099 | 325.000 | | | 2.601.126 | | | | 16.063.499 | -8.746.526 | - | 7.316.973 | 500.000 | | |
+| 14.895.805 | | | | 2.979.161 | | | | 52.223.253 | -40.306.609 | - | 11.916.644 | 2.000.000 | | |
+| 5.677.997 | | | | 1.419.499 | | | | 40.767.223 | -36.508.725 | - | 4.258.498 | 1.050.000 | | |
+| 5.783.701 | 552.500 | | | 1.324.335 | | | | 7.738.550 | -2.726.684 | - | 5.011.866 | 400.000 | | |
+| 6.532.525 | | | | 1.633.131 | | | | 7.328.956 | -2.429.562 | - | 4.899.394 | 353.500 | | |
+| 630.959 | | | | 210.320 | | | | 2.411.630 | -1.990.991 | - | 420.639 | 2.500.000 | | |
+| 180.557 | | | | 90.278 | | | | 3.293.702 | -3.203.423 | - | 90.279 | 110.000 | | |
+| - | | | | | | | | - | - | - | - | | | |
+| 1.232.976 | | | | 410.992 | | | | 5.591.853 | -4.769.869 | - | 821.984 | 400.000 | | |
+| 1.247 | 7.500 | | | 1.314 | | | | 22.500 | -15.067 | - | 7.433 | 15.000 | | |
+| 4.222.646 | 210.000 | | | 2.029.149 | | | | 15.358.676 | -12.955.179 | - | 2.403.497 | 1.250.000 | | |
+| 25.171.976 | 1.000.000 | | | 6.542.994 | | | | 32.378.764 | -12.749.782 | - | 19.628.982 | 1.500.000 | | |
+| 4.994.198 | 579.000 | | | 1.163.549 | | | | 30.127.705 | -25.718.056 | - | 4.409.649 | 3.000.000 | | |
+| - | 14.043.754 | | | 3.489.251 | | | | 14.043.754 | -3.489.251 | - | 10.554.503 | 750.000 | | |
+| - | | | | | | | | - | - | - | - | | | |
+| - | 6.421.718 | | | 1.109.702 | | | | 6.421.718 | -1.109.702 | - | 5.312.016 | 250.000 | | |
+| 25.881.150 | 1.538.462 | | | 6.854.903 | 3.564.708 | | | 32.826.289 | -12.261.581 | -3.564.708 | 17.000.000 | 1.500.000 | | |
+| 4.814.456 | | | | 2.407.228 | | | | 6.977.664 | -4.570.436 | - | 2.407.228 | 300.000 | | |
+| - | 14.605.598 | | | 270.700 | | | | 14.605.598 | -270.700 | - | 14.334.898 | 1.500.000 | | |
+| - | 2.383.000 | | | 781.168 | | | | 2.383.000 | -781.168 | - | 1.601.832 | 2.500.000 | | |
+| 6.069.783 | | | | 1.517.446 | | | | 7.587.229 | -3.034.892 | - | 4.552.337 | 8.000.000 | | |
+| - | 22.848.059 | | | 368.056 | | | | 22.848.059 | -368.056 | - | 22.480.003 | 1.400.000 | | |
+| - | 6.719.988 | | | 36.621 | | | | 6.719.988 | -36.621 | - | 6.683.367 | 75.000 | | |
+| 2.100.000 | | | | 525.000 | | | | 2.100.000 | -525.000 | - | 1.575.000 | 2.100.000 | | |
+| 10.859.959 | 2.005.178 | | | 3.216.284 | | | | 15.252.840 | -5.603.987 | - | 9.648.853 | 300.000 | | |
+| 136.635.778 | 73.239.757 | - | - | 47.898.768 | 3.564.708 | - | - | 359.799.427 | -197.822.660 | -3.564.708 | 158.412.059 | 32.453.500 | - | - |
+| | | | | | | | | | | | | | | |
+| 689.402 | | -4.551.628 | 3.897.168 | | | | -3.264.872 | - | 34.942 | - | 34.942 | | | |
+| 272.799 | 350.000 | | | 311.399 | | | | 816.000 | -504.600 | - | 311.400 | 156.000 | | |
+| 88.726 | | | | 29.793 | | | | 402.000 | -343.067 | - | 58.933 | | | |
+| 267.508 | | | | 54.578 | | | | 477.124 | -264.194 | - | 212.930 | | | |
+| 8.467.876 | | | | 7.980.683 | 487.193 | | | 32.595.522 | -32.108.329 | -487.193 | 0 | 1.000.000 | | |
+| 51.196 | 105.500 | | | 74.371 | | | | 305.500 | -223.176 | - | 82.324 | 5.500 | | |
+| 96.872 | 80.000 | | | 88.436 | | | | 220.000 | -131.564 | - | 88.436 | | | |
+| 585.000 | 675.000 | | | 258.860 | | | | 1.455.000 | -453.860 | - | 1.001.140 | | | |
+| 293.650 | | | | 150.115 | | | | 617.300 | -473.765 | - | 143.535 | 375.000 | | |
+| 169.713 | | | | 59.735 | 109.978 | | | 795.000 | -685.022 | -109.978 | 0 | | | |
+| 6.266 | | -330.480 | 330.480 | 6.266 | | | | - | - | - | - | | | |
+| - | 100.000 | | | 29.605 | | | | 100.000 | -29.605 | - | 70.395 | | | |
+| 1.369 | | -147.150 | 147.150 | 1.369 | | | | - | - | - | - | | | |
+| 240.754 | | -490.000 | 252.105 | 2.858 | | | -3.527.731 | - | - | - | - | | | |
+| - | | | | | | | | 10.555.408 | -10.555.408 | - | - | 624.000 | | |
+| - | 867.768 | | | 158.791 | | | | 867.768 | -158.791 | - | 708.977 | 700.000 | | |
+| 920.642 | | -2.575.000 | 1.924.245 | 269.887 | | | -3.891.393 | - | - | - | - | | | |
+| 122.868 | | -325.000 | 262.219 | 60.088 | | | -1.370.170 | - | - | - | - | | | |
+| - | 1.170.000 | | | 233.487 | | | | 1.170.000 | -233.487 | - | 936.513 | 70.000 | | |
+| 3.500.000 | | | | 1.750.000 | 1.750.000 | | | 14.784.863 | -13.034.863 | -1.750.000 | - | | | |
+| 9.998 | | -70.000 | 60.152 | 151 | | | -1.818.176 | - | - | - | - | | | |
+| 15.784.638 | 3.348.268 | -8.489.258 | 6.873.519 | 11.520.472 | 2.347.171 | - | -13.872.342 | 65.161.485 | -59.164.789 | -2.347.171 | 3.649.525 | 2.930.500 | - | - |
+| | | | | | | | | | | | | | | |
+| 1.767.034 | 2.189.071 | -1.349.438 | 1.328.536 | 1.282.492 | 159.762 | - | -498.631 | 8.834.402 | -6.181.692 | -159.762 | 2.492.948 | - | - | - |
+| | | | | | | | | | | | | | | |
+| 154.187.449 | 78.777.095 | -9.838.696 | 8.202.055 | 60.701.732 | 6.071.640 | - | -14.370.974 | 433.795.314 | -263.169.141 | -6.071.640 | 164.549.276 | 35.384.000 | - | - |
 
 109
 
@@ -3432,37 +3438,42 @@ Dott.ssa Paola Mignani
 
 Bilancio Consolidato al 30 Giugno 2025
 
-![img-12.jpeg](img-12.jpeg)
+117
 
-## Relazione della società di revisione indipendente
+Consolidated Financial Statements as of June 30, 2025
 
+pwc
+
+PricewaterhouseCoopers SpA
+
+Sede legale: Milano 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 071 2132311 - Bari 70122 Via Abate Gimma 72 Tel. 080 5640211 - Bergamo 24121 Largo Belotti 5 Tel. 035 229691 - Bologna 40124 Via Luigi Carlo Farini 12 Tel. 051 6186211 - Brescia 25121 Viale Duca d'Aosta 28 Tel. 030 3697501 - Catania 95129 Corso Italia 302 Tel. 095 7532311 - Firenze 50121 Viale Gramsci 15 Tel. 055 2482811 - Genova 16121 Piazza Piccapietra 9 Tel. 010 29041 - Napoli 80121 Via dei Mille 16 Tel. 081 36181 - Padova 35138 Via Vicenza 4 Tel. 049 873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091 349737 - Parma 43121 Viale Tanara 20/A Tel. 0521 275911 - Pescara 65127 Piazza Ettore Troilo 8 Tel. 085 4545711 - Roma 00154 Largo Fochetti 29 Tel. 06 570251 - Torino 10122 Corso Palestro 10 Tel. 011 556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461 237004 - Treviso 31100 Viale Felissent 90 Tel. 0422 696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 040 3480781 - Udine 33100 Via Poscolle 43 Tel. 0432 25789 - Varese 21100 Via Albuzzi 43 Tel. 0332 285039 - Verona 37135 Via Francia 21/C Tel. 045 8263001 - Vicenza 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
+
+www.pwc.com/it
+
+**Relazione della società di revisione indipendente**
 *ai sensi dell'articolo 14 del DLgs 39/2010*
 
 Agli azionisti di FC Internazionale Milano SpA
 
-### Relazione sulla revisione contabile del bilancio consolidato
+**Relazione sulla revisione contabile del bilancio consolidato**
 
-#### Giudizio
+**Giudizio**
 
 Abbiamo svolto la revisione contabile del bilancio consolidato di FC Internazionale Milano SpA e sue controllate (il Gruppo FC Internazionale Milano), costituito dallo stato patrimoniale al 30 giugno 2025, dal conto economico e dal rendiconto finanziario per l'esercizio chiuso a tale data, e dalla nota integrativa.
 
 A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria del Gruppo al 30 giugno 2025, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-#### Elementi alla base del giudizio
+**Elementi alla base del giudizio**
 
 Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto a FC Internazionale Milano SpA in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti e appropriati su cui basare il nostro giudizio.
 
-#### Responsabilità degli amministratori e del collegio sindacale per il bilancio consolidato
+-
+
+**Responsabilità degli amministratori e del collegio sindacale per il bilancio consolidato**
 
 Gli amministratori sono responsabili per la redazione del bilancio consolidato che fornisca una rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a frodi o a comportamenti o eventi non intenzionali.
 
 Gli amministratori sono responsabili per la valutazione della capacità del Gruppo di continuare a
-
-PricewaterhouseCoopers SpA
-
-Sede legale: **Milano** 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: **Ancona** 60131 Via Sandro Totti 1 Tel. 071 2132311 - **Bari** 70122 Via Abate Gimma 72 Tel. 080 5640211 - **Bergamo** 24121 Largo Bellotti 5 Tel. 035 229691 - **Bologna** 40124 Via Luigi Carlo Farini 12 Tel. 051 6186211 - **Brescia** 25121 Viale Duca d'Aosta 28 Tel. 030 3697501 - **Catania** 95129 Corso Italia 302 Tel. 095 7532311 - **Firenze** 50121 Viale Gramsci 15 Tel. 055 2482811 - **Genova** 16121 Piazza Piccapietra 9 Tel. 010 29041 - **Napoli** 80121 Via del Mille 16 Tel. 081 36181 - **Padova** 35138 Via Vicenza 4 Tel. 049 873481 - **Palermo** 90141 Via Marchese Ugo 60 Tel. 091 349737 - **Parma** 43121 Viale Tanara 20/A Tel. 0521 275911 - **Pescara** 85127 Piazza Ettore Troilo 8 Tel. 085 4545711 - **Roma** 00154 Largo Fochetti 29 Tel. 06 570251 - **Torino** 10122 Corso Palestro 10 Tel. 011 556771 - **Trento** 38122 Viale della Costituzione 33 Tel. 0461 237004 - **Treviso** 31100 Viale Felissent 90 Tel. 0422 696911 - **Trieste** 34125 Via Cesare Battisti 18 Tel. 040 3480781 - **Udine** 33100 Via Poscolle 43 Tel. 0432 25789 - **Varese** 21100 Via Albuzzi 43 Tel. 0332 285039 - **Verona** 37135 Via Francia 21/C Tel. 045 8263001 - **Vicenza** 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
-
-www.pwc.com/it
 
 117
 

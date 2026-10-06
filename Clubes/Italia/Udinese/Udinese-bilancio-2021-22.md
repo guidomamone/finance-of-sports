@@ -105,12 +105,12 @@ La società ha pertanto analizzato il numero degli spettatori presenti in occasi
 
 --- pág. 6 ---
 
-|   | 2015/2016 | 2016/2017 | 2017/2018 | 2018/2019 | 2019/2020 | Valore Medio  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Abbonamenti | 196.156 | 200.431 | 207.005 | 227.563 | 212.685 | 208.768  |
-|  Bighetti singoli | 98.666 | 116.707 | 104.587 | 127.351 | 70.183 | 103.499  |
-|  Ospiti Hospitality | 11.060 | 13.600 | 14.563 | 14.129 | 11.723 | 13.015  |
-|  Totale Spettatori | 305.882 | 330.738 | 326.155 | 369.043 | 294.591 | 325.282  |
+| | 2015/2016 | 2016/2017 | 2017/2018 | 2018/2019 | 2019/2020 | Valore Medio |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Abbonamenti | 196.156 | 200.431 | 207.005 | 227.563 | 212.685 | 208.768 |
+| Biglietti singoli | 98.666 | 116.707 | 104.587 | 127.351 | 70.183 | 103.499 |
+| Ospiti Hospitality | 11.060 | 13.600 | 14.563 | 14.129 | 11.723 | 13.015 |
+| Totale Spettatori | 305.882 | 330.738 | 326.155 | 369.043 | 294.591 | 325.282 |
 
 Lo stadio ha registrato un afflusso medio di spettatori nelle ultime 5 stagioni pari a 325 mila. Tale risultato risulta condizionato dalla stagione 2015/16, annata in cui lo stadio è stato solo parzialmente utilizzabile e dalla stagione 2019/20 in cui il campionato si è concluso a porte chiuse.
 
@@ -118,30 +118,30 @@ Sulla base di quanto precede la società ha predisposto un business plan che sim
 
 Di seguito alcune considerazioni rispetto all'analisi fatta:
 
-- Stagione 2020/21: le presenze sono sostanzialmente azzerate a seguito delle norme che hanno limitato l'accesso per tutte la stagione;
+- Stagione 2020/21: le presenze sono sostanzialmente azzerate a seguito delle norme che hanno limitato l'accesso per tutta la stagione;
 - Stagione 2021/22: spettatori stimati sulla base delle previsioni al momento ipotizzabili;
 - Stagione 2022/23: stante l'incertezza attuale dell'evoluzione della pandemia, sono stati prudenzialmente ipotizzati spettatori pari a circa l'80% della media calcolata sul quinquennio 2015/16-2019/20;
-- Stagioni alla 2023/24: è stato ipotizzato un livello di spettatori pari alla media registrata nel quinquennio 2015/16-2019/20. Nelle stagioni successive, fino alla stagione 2029/30, è ipotizzato un incremento delle presenze pari al 2% per ciascuna categoria.
+- Stagioni dalla 2023/24: è stato ipotizzato un livello di spettatori pari alla media registrata nel quinquennio 2015/16-2019/20. Nelle stagioni successive, fino alla stagione 2029/30, è ipotizzato un incremento delle presenze pari al 2% per ciascuna categoria.
 
 In base all'analisi fatta emerge che gli spettatori delle prime tre stagioni saranno di gran lunga inferiori rispetto alla media registrata nel quinquennio 2015-2020 di funzionalità "piena" dello stadio per poi tornare a tale livelli a partire dalla SS 2024/25 ed incrementarsi nelle successive.
 
 Di seguito si riporta i dati di tale studio:
 
-|   | 2015/2016 | 2016/2017 | 2017/2018 | 2018/2019 | 2019/2020 | 2020/2021 | 2021/2022 | 2022/2023 | 2023/2024 | 2024/2025  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Abbonamenti | - | 97.666 | 106.638 | 208.297 | 212.463 | 216.713 | 221.047 | 225.468 | 229.977 | 234.577  |
-|  Bighetti singoli | - | 81.464 | 85.281 | 103.160 | 105.223 | 107.328 | 109.474 | 111.664 | 113.897 | 116.175  |
-|  Ospiti Hospitality | 954 | 8.911 | 10.412 | 13.015 | 13.275 | 13.841 | 13.912 | 14.088 | 14.370 | 14.657  |
-|  Totale Spettatori | 954 | 108.043 | 162.330 | 224.473 | 250.962 | 337.581 | 344.101 | 351.220 | 358.344 | 365.409  |
+| | 2020/2021 | 2021/2022 | 2022/2023 | 2023/2024 | 2024/2025 | 2025/2026 | 2026/2027 | 2027/2028 | 2028/2029 | 2029/2030 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Abbonamenti | | 97.666 | 166.638 | 208.297 | 212.463 | 216.712 | 221.047 | 225.468 | 229.977 | 234.577 |
+| Biglietti singoli | | 81.464 | 85.281 | 103.160 | 105.223 | 107.328 | 109.474 | 111.664 | 113.897 | 116.175 |
+| Ospiti Hospitality | 954 | 8.911 | 10.412 | 13.015 | 13.275 | 13.541 | 13.812 | 14.088 | 14.370 | 14.657 |
+| Totale Spettatori | 954 | 188.040 | 262.330 | 324.473 | 330.962 | 337.581 | 344.333 | 351.220 | 358.244 | 365.409 |
 
 Sulla base delle informazioni precedenti, in continuità con quanto stabilito alla data di conclusione dei lavori di ristrutturazione dello stadio e tenendo in considerazione il principio di correlazione tra costi e ricavi la società ha deciso di procedere con un piano di ammortamento che prevede di ammortizzare il 95% del valore dello stadio in 10 anni con i primi 3 anni ad aliquote crescenti e 7 anni ad aliquota decrescente secondo il seguente piano:
 
-|  Ammortamento Stadio  |   |
-| --- | --- |
-|  1° anno | 2,79%  |
-|  2° anno | 5,59%  |
-|  3° anno | 8,38%  |
-|  4° anno | 19,56%  |
+| Ammortamento Stadio | |
+| :--- | :--- |
+| 1° anno | 2,79% |
+| 2° anno | 5,59% |
+| 3° anno | 8,38% |
+| 4° anno | 19,56% |
 
 5
 
@@ -266,73 +266,76 @@ Le operazioni di mercato perfezionate nel corso della Stagione Sportiva 2021/202
 
 Le minusvalenze registrate nel corso della Stagione Sportiva 2021/2022 sono complessivamente pari a Euro 6.999.117 in aumento rispetto all'esercizio precedente.
 
-## La gestione sociale
+### La gestione sociale
 
 L'attività gestionale della Vostra società rimane improntata al perseguimento di tre obiettivi, ritenuti di eguale importanza:
 
 A) mantenimento e/o sviluppo del fatturato e riduzione del rischio "agonistico";
 B) gestione del patrimonio calciatori;
-C) controlo dei costi di gestione.
+C) controllo dei costi di gestione.
 
 Al fine del perseguimento di tali obiettivi, l'esercizio in esame, in continuità con gli esercizi precedenti, è stato caratterizzato da una serie di iniziative volte al mantenimento e allo sviluppo del fatturato aziendale nelle sue componenti più stabili quali si possono considerare i diritti televisivi e le sponsorizzazioni. I risultati di bilancio conseguiti assumono ancora maggior rilievo in considerazione del fatto che sono stati conseguiti con dei risultati sportivi, che anche per la stagione 2021/22 non hanno rispettato le aspettative. È continuata la valorizzazione della struttura operativa e organizzativa, composta da numerosi osservatori sia in Italia che all'Estero che visionano con continuità incontri sia a livello nazionale che internazionale. Tali iniziative vengono svolte a livello continuativo nel corso dell'intera Stagione Sportiva e permettono acquisizioni efficaci sia sotto il profilo degli investimenti, per lo più effettuati a valori concorrenziali rispetto alle operazioni di mercato, sia sotto il profilo delle ipotesi di plusvalenze derivanti dalla cessione dei diritti alle prestazioni sportive di quei giocatori che giungono a un elevato livello di maturità tecnico-agonistica. In relazione alla gestione, rinviamo ai paragrafi successivi, ove dal raffronto tra variazioni di costi e variazioni di ricavi, si potranno verificare i fattori che hanno portato alla determinazione del risultato del presente esercizio.
 
-## La situazione patrimoniale-finanziaria
+### La situazione patrimoniale-finanziaria
 
 Durante l'esercizio appena trascorso l'importo del capitale immobilizzato risulta pari a Euro 222 milioni e il Patrimonio netto pari a Euro 126 milioni.
 
 Lo stato patrimoniale risulta così riassumibile in termini finanziari:
 
-|  Valori in € | 30/06/2022 | 30/06/2021 | Variazione %  |
-| --- | --- | --- | --- |
-|  ATTIVITA' |  |  |   |
-|  CAPITALE CIRCOLANTE | 104.548.398 | 114.547.165 | -8,73%  |
-|  Liquidità immediate | 44.180.419 | 53.237.088 | -17,01%  |
-|  Disponibilità liquide | 44.180.419 | 53.237.088 | -17,01%  |
-|  Liquidità differite | 60.367.979 | 61.310.067 | -1,54%  |
+| Valori in € | 30/06/2022 | 30/06/2021 | Variazione % |
+| :--- | :---: | :---: | :---: |
+| **ATTIVITA'** | | | |
+| **CAPITALE CIRCOLANTE** | **104.548.398** | **114.547.155** | **-8,73%** |
+| Liquidità immediate | 44.180.419 | 53.237.088 | -17,01% |
+| Disponibilità liquide | 44.180.419 | 53.237.088 | -17,01% |
+| Liquidità differite | 60.367.979 | 61.310.067 | -1,54% |
 
 10
 
 --- pág. 12 ---
 
-|  Crediti dell'attivo a breve termine | 28.516.710 | 40.399.420 | -29,41%  |
-| --- | --- | --- | --- |
-|  Crediti immobilizzati a breve termine | 0 | 479.460 | -100,00%  |
-|  Crediti a medio lungo termine | 30.292.452 | 18.306.063 | 65,48%  |
-|  Rimanenze finali | 0 | 0 | 0,00%  |
-|  Ratei e risconti attivi | 1.558.817 | 2.125.125 | -26,65%  |
-|  **IMMOBILIZZAZIONI** | **222.388.382** | **275.156.981** | **-19,18%**  |
-|  Immobilizzazioni immateriali | 199.928.957 | 252.545.184 | -20,83%  |
-|  Immobilizzazioni materiali | 21.354.358 | 21.506.936 | -0,71%  |
-|  Immobilizzazioni finanziarie | 1.105.066 | 1.104.860 | 0,02%  |
-|  **TOTALE ATTIVITA'** | **326.936.779** | **389.704.135** | **-16,11%**  |
-|  **Valori in €** | **30/06/2022** | **30/06/2021** | **Variazione %**  |
-|  **PASSIVITA'** |  |  |   |
-|  **PASSIVITA' CORRENTI** | **99.174.079** | **92.193.441** | **7,57%**  |
-|  Debiti a breve termine | 85.796.159 | 75.231.173 | 14,04%  |
-|  Debiti a breve termine v/ settore specifico | 8.364.468 | 3.656.155 | 128,78%  |
-|  Ratei e risconti passivi | 5.013.452 | 13.306.113 | -62,32%  |
-|  **PASSIVITA' CONSOLIDATE** | **100.534.266** | **101.229.013** | **-0,69%**  |
-|  Debiti a medio e lungo termine | 83.868.834 | 84.047.523 | -0,21%  |
-|  Debiti a medio e lungo termine v/settore spec. | 6.715.311 | 1.681.504 | -  |
-|  Fondi per rischi e oneri | 9.915.580 | 15.267.400 | -35,05%  |
-|  TFR | 34.541 | 32.586 | 6,00%  |
-|  **PATRIMONIO NETTO** | **127.228.435** | **196.281.682** | **-35,18%**  |
-|  Capitale sociale | 15.127.000 | 15.127.000 | 0,06%  |
-|  Riserve | 181.154.682 | 218.040.368 | -16,92%  |
-|  Reddito netto | -69.053.247 | -36.885.687 | 87,21%  |
-|  **TOTALE PASSIVITA'** | **326.936.779** | **389.704.135** | **-16,11%**  |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Crediti dell'attivo a breve termine | 28.516.710 | 40.399.420 | -29,41% |
+| Crediti immobilizzati a breve termine | 0 | 479.460 | -100,00% |
+| Crediti a medio lungo termine | 30.292.452 | 18.306.063 | 65,48% |
+| Rimanenze finali | 0 | 0 | 0,00% |
+| Ratei e risconti attivi | 1.558.817 | 2.125.125 | -26,65% |
+| IMMOBILIZZAZIONI | 222.388.382 | 275.156.981 | -19,18% |
+| Immobilizzazioni immateriali | 199.928.957 | 252.545.184 | -20,83% |
+| Immobilizzazioni materiali | 21.354.358 | 21.506.936 | -0,71% |
+| Immobilizzazioni finanziarie | 1.105.066 | 1.104.860 | 0,02% |
+| **TOTALE ATTIVITA'** | **326.936.779** | **389.704.135** | **-16,11%** |
+
+| Valori in € | 30/06/2022 | 30/06/2021 | Variazione % |
+| :--- | :--- | :--- | :--- |
+| **PASSIVITA'** | | | |
+| **PASSIVITA' CORRENTI** | **99.174.079** | **92.193.441** | **7,57%** |
+| Debiti a breve termine | 85.796.159 | 75.231.173 | 14,04% |
+| Debiti a breve termine v/ settore specifico | 8.364.468 | 3.656.155 | 128,78% |
+| Ratei e risconti passivi | 5.013.452 | 13.306.113 | -62,32% |
+| **PASSIVITA' CONSOLIDATE** | **100.534.266** | **101.229.013** | **-0,69%** |
+| Debiti a medio e lungo termine | 83.868.834 | 84.047.523 | -0,21% |
+| Debiti a medio e lungo termine v/settore spec. | 6.715.311 | 1.881.504 | |
+| Fondi per rischi e oneri | 9.915.580 | 15.267.400 | -35,05% |
+| TFR | 34.541 | 32.586 | 6,00% |
+| **PATRIMONIO NETTO** | **127.228.435** | **196.281.682** | **-35,18%** |
+| Capitale sociale | 15.127.000 | 15.127.000 | 0,00% |
+| Riserve | 181.154.682 | 218.040.368 | -16,92% |
+| Reddito netto | -69.053.247 | -36.885.687 | 87,21% |
+| **TOTALE PASSIVITA'** | **326.936.779** | **389.704.135** | **-16,11%** |
 
 I fondi rischi sono diminuiti di circa 5 milioni di Euro principalmente per effetto della fiscalità differita passiva dovuta alla sospensione degli ammortamenti di alcune immobilizzazioni ed alla rateizzazione delle plusvalenze.
 
 A migliore descrizione della situazione patrimoniale della società si riportano di seguito alcuni indici di bilancio attinenti sia alle modalità di finanziamento degli impieghi a medio/lungo termine che alla composizione delle fonti di finanziamento, confrontati con gli stessi indici relativi ai bilanci dell'esercizio precedente.
 
-#### Principali indicatori della situazione patrimoniale e finanziaria:
+### Principali indicatori della situazione patrimoniale e finanziaria:
 
-|  Indici patrimoniali | 30/06/2022 | 30/06/2021  |
-| --- | --- | --- |
-|  Margine primario di struttura | -95.159.947 | -79.354.759  |
-|  Quoziente primario di struttura | 0,57 | 0,71  |
-|  Margine secondario di struttura | 7.647.047 | 21.874.254  |
+| Indici patrimoniali | 30/06/2022 | 30/06/2021 |
+| :--- | :--- | :--- |
+| Margine primario di struttura | -95.159.947 | -79.354.759 |
+| Quoziente primario di struttura | 0,57 | 0,71 |
+| Margine secondario di struttura | 7.647.047 | 21.874.254 |
 
 11
 
@@ -420,27 +423,28 @@ Per quanto riguarda la situazione reddituale, Vi riportiamo i seguenti dati di s
 
 --- pág. 15 ---
 
-|  Variazione nelle rimanenze di materie prime | 0 | 0 | 0,00%  |
-| --- | --- | --- | --- |
-|  Oneri diversi di gestione | -17.515.911 | -6.090.263 | 187,61%  |
-|  Margine Operativo Lordo | -3.162.969 | 29.760.613 | -110,63%  |
-|  Ammortamenti, accantonamenti e svalutazioni | -63.144.505 | -58.198.343 | 8,50%  |
-|  Margine Operativo Netto | -68.307.474 | -28.437.730 | 133,17%  |
-|  Gestione finanziaria | -5.544.096 | -2.107.997 | 163,00%  |
-|  Risultato prima delle imposte | -71.851.570 | -30.545.727 | 135,23%  |
-|  Imposte sul reddito | 2.798.323 | -6.339.960 | -144,14%  |
-|  Risultato netto | -69.053.247 | -36.888.687 | 87,21%  |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Variazione nelle rimanenze di materie prime | 0 | 0 | 0,00% |
+| Oneri diversi di gestione | -17.515.911 | -6.090.263 | 187,61% |
+| Margine Operativo Lordo | -3.162.969 | 29.760.613 | -110,63% |
+| Ammortamenti, accantonamenti e svalutazioni | -63.144.505 | -58.198.343 | 8,50% |
+| Margine Operativo Netto | -66.307.474 | -28.437.730 | 133,17% |
+| Gestione finanziaria | -5.544.096 | -2.107.997 | 163,00% |
+| Risultato prima delle imposte | -71.851.570 | -30.545.727 | 135,23% |
+| Imposte sul reddito | 2.798.323 | -6.339.960 | -144,14% |
+| Risultato netto | -69.053.247 | -36.885.687 | 87,21% |
 
 A migliore descrizione della situazione reddituale della società si riportano nella tabella sottostante alcuni indici di redditività confrontati con gli stessi indici relativi al bilancio dell'esercizio precedente.
 
-Principali indicatori della situazione economica-reddituale:
+**Principali indicatori della situazione economica-reddituale:**
 
-|  Indici reddituali | 30/06/2022 | 30/06/2021  |
-| --- | --- | --- |
-|  ROE netto | -0,54 | -0,19  |
-|  ROE lordo | -0,56 | -0,16  |
-|  ROI | -0,20 | -0,07  |
-|  ROS | -0,90 | -0,26  |
+| Indici reddituali | 30/06/2022 | 30/06/2021 |
+| :--- | :--- | :--- |
+| ROE netto | -0,54 | -0,19 |
+| ROE lordo | -0,56 | -0,16 |
+| ROI | -0,20 | -0,07 |
+| ROS | -0,90 | -0,26 |
 
 Il ROE esprime la redditività del capitale di rischio e si ottiene dividendo il reddito dopo le imposte (nel caso di ROE netto) o ante imposte (nel caso di ROE lordo) con il patrimonio netto della società.
 
@@ -448,10 +452,10 @@ Il ROI esprime la redditività del capitale investito e si ottiene dividendo il 
 
 Il ROS indica la redditività delle vendite e si ottiene dividendo il risultato operativo caratteristico con le vendite.
 
-|  INDICE | 30/06/2022 | 30/06/2021 | Variazione %  |
-| --- | --- | --- | --- |
-|  E.B.I.T.D.A | -3.162.969 | 29.760.613 | -110,63%  |
-|  Totale | -3.162.969 | 29.760.613 | 110,63%  |
+| INDICE | 30/06/2022 | 30/06/2021 | Variazione % |
+| :--- | :--- | :--- | :--- |
+| E.B.I.T.D.A | -3.162.969 | 29.760.613 | -110,63% |
+| Totale | -3.162.969 | 29.760.613 | 110,63% |
 
 Il margine operativo lordo (EBITDA), pari a Euro -3.163 milioni è diminuito rispetto all'esercizio precedente nonostante l'incremento dei ricavi della gestione caratteristica principalmente per effetto delle minori plusvalenze realizzate (-41%) e dei ricavi da cessione dei diritti televisivi (-31%).
 
@@ -463,13 +467,25 @@ La composizione del valore della produzione dell'esercizio 2021-2022 risulta ess
 
 --- pág. 16 ---
 
-![img-2.jpeg](img-2.jpeg)
+* Ricavi cessione temp. giocatori 0,02%
+* Contributi conto esercizio 2,62%
+* Plusvalenze 21,68%
+* Proventi televisivi 46,31%
+* Sponsor. e proventi pubblicitari 10,41%
+* Ricavi da gare 6,55%
+* Proventi da Lega 2,43%
+* Altri ricavi e proventi 9,98%
 
-Risultano incrementati anche i costi della produzione, che passano da 136,300 milioni di Euro al 30.06.21 a 144,387 milioni di Euro al 30.06.22. Tale incremento è principalmente dovuto agli ammortamenti e svalutazioni incrementati di Euro 5,3 milioni e agli oneri diversi di gestione, incrementati di Euro 11,4 milioni rispetto all'esercizio precedente. L'aumento degli oneri diversi di gestione è dovuto principalmente a parti variabili spettanti ad altri club in seguito ad alcune cessioni effettuate dalla società (sell on fee). Le altre voci di costo risultano essere sostanzialmente in linea con l'esercizio precedente mentre si registra una diminuzione dei costi del personale pari a Euro 8,4 milioni.
+Risultano incrementati anche i costi della produzione, che passano da 136,300 milioni di Euro al 30.06.21 a 144,387 milioni di Euro al 30.06.22. Tale incremento è principalmente dovuto agli ammortamenti e svalutazioni incrementati di Euro 5,3 milioni e agli oneri diversi di gestione, incrementati di Euro 11,4 milioni rispetto all'esercizio precedente. L'aumento degli oneri diversi di gestione è dovuto principalmente a parti variabili spettanti ad altri club in seguito ad alcune cessioni effettuate dalla società (sell on fee).Le altre voci di costo risultano essere sostanzialmente in linea con l'esercizio precedente mentre si registra una diminuzione dei costi del personale pari a Euro 8,4 milioni.
 
 La composizione dei costi della produzione dell'esercizio 2021-2022 risulta la seguente:
 
-![img-3.jpeg](img-3.jpeg)
+* Costi per godimento beni di terzi 0,59%
+* Costi per merci e materiali di consumo 1,91%
+* Costi del personale 28,81%
+* Ammortamenti e svalutazioni 43,73%
+* Costi per servizi 12,82%
+* Oneri diversi di gestione 12,13%
 
 15
 
@@ -1800,53 +1816,51 @@ Bilancio XBRL
 
 --- pág. 50 ---
 
-UDINESE CALCIO S.P.A.
-
+UDINESE CALCIO S.P.A.  
 Bilancio al 30/06/2022
 
 Il fondo svalutazione crediti risulta stanziato per quei crediti di dubbio realizzo.
 
-# Crediti verso imprese sottoposte al controllo delle controllanti
+### Crediti verso imprese sottoposte al controllo delle controllanti
 
 Trattasi dei crediti verso il Watford FC, che ammontano a complessivi Euro 8.749.419, di cui Euro 8.500.000 esigibili oltre l'esercizio successivo. Tali crediti sono principalmente dovuti alla cessione del giocatore Ignacio Pussetto avvenuta nella sessione di mercato invernale della stagione 2019/20.
 
-# Crediti tributari
+### Crediti tributari
 
 I crediti tributari, dell'importo complessivo di Euro 1.218.405, tutti esigibili entro l'esercizio successivo, sono dettagliati nella tabella seguente.
 
-|  Valori in € | 30/06/2022 | 30/06/2021 | Variazioni  |
-| --- | --- | --- | --- |
-|  Erario c/liquidazione IVA (Credito) | 289.678 | 0 | 289.678  |
-|  Credito IRES e IRES da IRAP a rimborso | 535.020 | 535.020 | 0  |
-|  Credito IRES | 206.765 | 198.201 | 8.564  |
-|  Altri crediti tributari | 179.830 | 157.993 | 21.837  |
-|  Ritenute subite | 7.112 | 36.810 | (29.698)  |
-|  Totale | 1.218.405 | 928.024 | 290.382  |
+| Valori in € | 30/06/2022 | 30/06/2021 | Variazioni |
+| :--- | :---: | :---: | :---: |
+| Erario c/liquidazione IVA (Credito) | 289.678 | 0 | 289.678 |
+| Credito IRES e IRES da IRAP a rimborso | 535.020 | 535.020 | 0 |
+| Credito IRES | 206.765 | 198.201 | 8.564 |
+| Altri crediti tributari | 179.830 | 157.993 | 21.837 |
+| Ritenute subite | 7.112 | 36.810 | (29.698) |
+| **Totale** | **1.218.405** | **928.024** | **290.382** |
 
-# Crediti verso altri
+### Crediti verso altri
 
 I crediti verso altri, tutti esigibili entro l'esercizio successivo, sono così costituiti:
 
-|  Valori in € | 30/06/2022 | 30/06/2021 | Variazioni  |
-| --- | --- | --- | --- |
-|  Crediti v/LNP | 2.486 | 1.554 | 932  |
-|  Altri crediti | 1.462.371 | 15.513.602 | (14.051.231)  |
-|  Totale | 1.464.857 | 15.515.166 | (14.050.300)  |
+| Valori in € | 30/06/2022 | 30/06/2021 | Variazioni |
+| :--- | :---: | :---: | :---: |
+| Crediti v/LNP | 2.486 | 1.554 | 932 |
+| Altri crediti | 1.462.371 | 15.513.602 | (14.051.231) |
+| **Totale** | **1.464.857** | **15.515.156** | **(14.050.300)** |
 
 La voce "Altri crediti" accoglie principalmente il credito verso fornitori per acconti e il credito verso i propri dipendenti per prestiti erogati.
 
-# Disponibilità liquide
+### Disponibilità liquide
 
 Le disponibilità liquide sono valutate al valore nominale e così composte:
 
-|  Valori in € | 30/06/2022 | 30/06/2021 | Variazioni  |
-| --- | --- | --- | --- |
-|  Depositi bancari e postali | 44.162.292 | 53.236.971 | (9.074.680)  |
-|  Denaro e valori in cassa | 18.127 | 117 | 18.010  |
-|  Totale | 44.180.419 | 53.237.088 | (9.056.669)  |
+| Valori in € | 30/06/2022 | 30/06/2021 | Variazioni |
+| :--- | :---: | :---: | :---: |
+| Depositi bancari e postali | 44.162.292 | 53.236.971 | (9.074.680) |
+| Denaro e valori in cassa | 18.127 | 117 | 18.010 |
+| **Totale** | **44.180.419** | **53.237.088** | **(9.056.669)** |
 
-Bilancio XBRL
-
+Bilancio XBRL  
 27
 
 --- pág. 51 ---
@@ -3360,122 +3374,136 @@ Franco Saddati - Presidente
 UDINESE CALCIO S.p.A. - BILANCIO ANNUALE AL 30/06/2022
 
 UDINESE CALCIO SPA - BILANCIO AL 30.06.2022
-
 Documentazione supplementare
 
-STATO PATRIMONIALE ATTIVO
+STATO PATRIMONIALE ATTIVO — ALLEGATO A
 
-ALLEGATO A
+Colonne: STATO PATRIMONIALE | 30 giugno 2022 | Variazioni: esercizio precedente, esercizio in corso, totale variazioni | 30/06/2022 (UEFA)
 
-|  STATO PATRIMONIALE | 30 giugno 2022 | Variazioni |   |   | 30/06/2022 (UEFA)  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |   |  esercizio precedente | esercizio in corso | totale variazioni  |   |   |
-|  ATTIVO  |   |   |   |   |   |   |
-|  A | CREDITI VERSO SOCI PER VERSAMENTI ANCORA DOVUTI | 0 |  |  |  | -  |
-|  B | IMMOBILIZZAZIONI |  |  |  |  |   |
-|   | I Immobilizzazioni immateriali |  |  |  |  |   |
-|   | 1) Costi di impianto e di ampliamento | 654 | - | - |  | 654  |
-|   | 4) Concessioni, licenze, marchi e diritti simili | 64.494.261 | - | - |  | 64.494.261  |
-|   | 6) Immobilizzazioni in corso e accenti | 39.818.878 | - | - |  | 39.818.878  |
-|   | 8) Dotti pluri e di alle prestazioni dei cabiatori | 36.242.284 | - | 94.014.358 | 84.777.676 | 27.105.812  |
-|   | 9) Altre immobilizzazioni immateriali | 59.272.870 |  |  |  | 59.272.870  |
-|   |  | 199.928.956 |  |  | (9.238.982) | 190.892.275  |
-|   | II Immobilizzazioni materiali |  |  |  |  |   |
-|   | 1) Terreni e fabbricati | 19.393.768 | - | - |  | 19.393.768  |
-|   | 2) Impianti e macchinari | 806.492 | - | - |  | 806.492  |
-|   | 4) Altri beni | 1.154.098 | - | - |  | 1.154.098  |
-|   | 5) Immobilizzazioni in corso accenti | 0 | - | - |  | -  |
-|   |  | 21.354.357 |  |  |  | 21.354.357  |
-|   | III Immobilizzazioni finanziarie |  |  |  |  |   |
-|   | 1) Partecipazioni in: | 165.313 | - | - |  | 165.313  |
-|   | a) Imprese controllate | 165.000 |  |  |  |   |
-|   | b) Imprese collegate | 0 |  |  |  |   |
-|   | d) Partecipazioni in altre imprese | 313 |  |  |  |   |
-|   | 2) Crediti | 133.950 | - | - |  | 133.950  |
-|   | d) verso altri esigibili entro l'esercizio successivo | 15.253 |  |  |  |   |
-|   | d) verso altri esigibili oltre l'esercizio successivo | 118.697 |  |  |  |   |
-|   |  | 299.263 |  |  | 0 | 299.263  |
-|   | 3) Altri Titoli | 939.753 |  |  |  |   |
-|   |  | 939.753 | - | - |  | 939.753  |
-|   | Totale immobilizzazioni | 332.532.329 |  |  |  | 315.265.649  |
-|  C | ATTIVO CIRCOLANTE |  |  |  |  |   |
-|   | I Rimanenze | 0 |  |  |  | -  |
-|   | II Crediti |  |  |  |  |   |
-|   | 1) Verso clienti | 2.739.299 | - | - |  | 2.739.299  |
-|   | esigibili entro l'esercizio successivo | 2.739.299 |  |  |  |   |
-|   | esigibili oltre l'esercizio successivo | 0 |  |  |  |   |
-|   | 5) Verso imprese sottoposte al controllo delle controcurti | 8.749.419 | - | - |  | 8.749.419  |
-|   | esigibili entro l'esercizio successivo | 249.419 |  |  |  |   |
-|   | esigibili oltre l'esercizio successivo | 8.500.000 |  |  |  |   |
-|   | 5-bis) Crediti tributari | 1.218.405 | - | - |  | 1.218.405  |
-|   | esigibili entro l'esercizio successivo | 1.208.111 |  |  |  |   |
-|   | esigibili oltre l'esercizio successivo | 10.284 |  |  |  |   |
-|   | 5-quateri) Verso altri | 1.484.857 | - | - |  | 1.484.857  |
-|   | esigibili entro l'esercizio successivo | 524.857 |  |  |  |   |
-|   | esigibili oltre l'esercizio successivo | 940.000 |  |  |  |   |
-|   | 6) Verso Enti - Settore Specifico | 44.503.232 |  |  |  | 44.503.232  |
-|   | esigibili entro l'esercizio successivo | 44.503.232 |  |  |  |   |
-|   | esigibili oltre l'esercizio successivo | 0 |  |  |  |   |
-|   |  | 58.675.212 |  |  |  | 58.675.212  |
-|   | IV Disponibilità legale |  |  |  |  |   |
-|   | 1) Depositi bancari e postali | 44.162.262 | - | - |  | 44.162.262  |
-|   | 2) Denaro e valori in cassa | 18.127 |  |  |  | 18.127  |
-|   |  | 44.180.419 |  |  |  | 44.180.419  |
-|   | Totale attivo circolante | 102.855.631 |  |  |  | 102.855.631  |
-|  D | RATTE E RISCONTI (Attivi) | 1.558.817 | 1.558.817 | - | - | 1.558.817  |
-|   | TOTALE ATTIVO | 326.936.779 |  |  | 9.236.682 | 317.700.097  |
+**ATTIVO**
+
+**A — CREDITI VERSO SOCI PER VERSAMENTI ANCORA DOVUTI: 0** (UEFA: -)
+
+**B — IMMOBILIZZAZIONI**
+
+I Immobilizzazioni immateriali
+
+| Voce | 30 giugno 2022 | Var. esercizio precedente | Var. esercizio in corso | 30/06/2022 (UEFA) |
+|---|---|---|---|---|
+| 1) Costi di impianto e di ampliamento | 654 | - | - | 654 |
+| 4) Concessioni, licenze, marchi e diritti simili | 64.494.261 | - | - | 64.494.261 |
+| 6) Immobilizzazioni in corso e acconti | 39.818.878 | - | - | 39.818.878 |
+| 8) Diritti pluriennali alle prestazioni dei calciatori | 36.342.294 | - 94.014.358 | 84.777.676 | 27.105.612 |
+| 9) Altre immobilizzazioni immateriali | 59.272.870 | - | - | 59.272.870 |
+| Totale I | 199.928.956 | | totale variazioni: (9.236.682) | 190.692.275 |
+
+II Immobilizzazioni materiali
+
+| Voce | 30 giugno 2022 | Var. esercizio precedente | Var. esercizio in corso | 30/06/2022 (UEFA) |
+|---|---|---|---|---|
+| 1) Terreni e fabbricati | 19.393.768 | - | - | 19.393.768 |
+| 2) Impianti e macchinario | 806.492 | - | - | 806.492 |
+| 4) Altri beni | 1.154.098 | - | - | 1.154.098 |
+| 5) Immobilizzazioni in corso e acconti | 0 | - | - | - |
+| Totale II | 21.354.357 | | - | 21.354.357 |
+
+III Immobilizzazioni finanziarie
+
+- 1) Partecipazioni in: 165.313 (UEFA: 165.313)
+  - a) Imprese controllate: 165.000
+  - b) Imprese collegate: 0
+  - d) Partecipazioni in altre imprese: 313
+- 2) Crediti: 133.950 (UEFA: 133.950)
+  - d) verso altri esigibili entro l'esercizio successivo: 15.253
+  - d) verso altri esigibili oltre l'esercizio successivo: 118.697
+  - Subtotale: 299.263 — totale variazioni: 0 — UEFA: 299.263
+- 3) Altri Titoli: 939.753 — subtotale 939.753 (UEFA: 939.753)
+
+**Totale immobilizzazioni: 222.522.329** (UEFA: 213.285.649)
+
+**C — ATTIVO CIRCOLANTE**
+
+I Rimanenze: 0 (UEFA: -)
+
+II Crediti
+
+- 1) Verso clienti: 2.739.299 (UEFA: 2.739.299)
+  - esigibili entro l'esercizio successivo: 2.739.299
+  - esigibili oltre l'esercizio successivo: 0
+- 5) Verso imprese sottoposte al controllo delle controllanti: 8.749.419 (UEFA: 8.749.419)
+  - esigibili entro l'esercizio successivo: 249.419
+  - esigibili oltre l'esercizio successivo: 8.500.000
+- 5-bis) Crediti tributari: 1.218.405 (UEFA: 1.218.405)
+  - esigibili entro l'esercizio successivo: 1.208.111
+  - esigibili oltre l'esercizio successivo: 10.294
+- 5-quater) Verso altri: 1.464.857 (UEFA: 1.464.857)
+  - esigibili entro l'esercizio successivo: 524.857
+  - esigibili oltre l'esercizio successivo: 940.000
+- 6) Verso Enti - Settore Specifico: 44.503.232 (UEFA: 44.503.232)
+  - esigibili entro l'esercizio successivo: 44.503.232
+  - esigibili oltre l'esercizio successivo: 0
+- Totale crediti: 58.675.212 — totale variazioni: - — UEFA: 58.675.212
+
+IV Disponibilità liquide
+
+- 1) Depositi bancari e postali: 44.162.292 (UEFA: 44.162.292)
+- 3) Denaro e valori in cassa: 18.127 (UEFA: 18.127)
+- Subtotale: 44.180.419 — UEFA: 44.180.419
+
+**Totale attivo circolante: 102.855.631** (UEFA: 102.855.631)
+
+**D — RATEI E RISCONTI (Attivi): 1.558.817** (subtotale 1.558.817; UEFA: 1.558.817)
+
+**TOTALE ATTIVO: 326.936.779** — totale variazioni: - 9.236.682 — UEFA: 317.700.097
 
 --- pág. 93 ---
 
-UDINESE CALCIO S.p.A. - BILANCIO ANNUALE AL 30/06/2022
-
-STATO PATRIMONIALE PASSIVO
+# UDINESE CALCIO S.p.A. - BILANCIO ANNUALE AL 30/06/2022
 
 UDINESE CALCIO SPA - BILANCIO AL 30.06.2022
 Documentazione supplementare
 
+STATO PATRIMONIALE PASSIVO
+
 ALLEGATO A
 
-|  STATO PATRIMONIALE | 30 giugno 2022 | Variazioni |   |   | 30/06/2022 (UEFA)  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |   |  esercizio precedente | esercizio in corso | totale variazioni  |   |   |
-|  **PASSIVO**  |   |   |   |   |   |   |
-|  A | **PATRIMONIO NETTO** |  |  |  |  |   |
-|  I | Capitale | 15.127.000 | - | - |  | 15.127.000  |
-|  II | Riserva da sovrapprezzo delle azioni | 0 | - | - |  | 0  |
-|  III | Riserva di rivalutazione | 226.019.423 | 113.369.224 | (2.337.510) |  | 110.312.690  |
-|  IV | Riserva legale | 0 | - | - |  | 0  |
-|  V | Riserva statutaria | 0 | - | - |  | 0  |
-|  VI | Altri riserva |  |  |  |  |   |
-|   | Riserva straordinaria | 0 | - | - |  | 0  |
-|   | Altri riserva | 12.768.219 | - | - |  | 12.768.219  |
-|   | Riserva da compilazione in unità di Euro | (2) | - | - |  | -  |
-|  VII | Utili (perdita) portati a nuovo | (57.632.960) | 32.146.866 | 43.949 |  | (35.530.044)  |
-|  IX | Utili/Perdita dell'esercizio | (66.053.247) | - | 78.174.636 |  | 9.121.369  |
-|  **Totale patrimonio netto** |   | **127.228.422** |  |  | **(5.429.181)** | **121.798.253**  |
-|  B | **FONDI PER RISCHI ED ONERI** |  |  |  |  |   |
-|  2) | Fondo per imposte, anche diffrente | 9.458.470 | 9.285.735 | 6.646.989 |  | 6.819.724  |
-|  3) | Altri |  |  |  |  |   |
-|   | Altri fondi | 457.110 | - | - |  | 457.110  |
-|  **Totale fondi per rischi ed oneri** |   | **9.915.381** |  |  | **-2.638.748** | **7.278.834**  |
-|  C | **TRATTAMENTO DI FINE RAPPORTO DI LAVORO SUBORDINATO** | 34.541 | **34.541** |  |  | **34.541**  |
-|  D | **DEBITI** |  |  |  |  |   |
-|  1) | Debiti per Obbligazioni ordinarie | 14.159.550 |  |  |  | 14.159.550  |
-|  2) | Debiti verso Soci per finanziamenti | 0 |  |  |  | 0  |
-|  4) | Debiti verso banche | 67.153.838 | - | - |  | 67.153.838  |
-|  7) | Debiti verso fornitori | 16.652.981 | - | - |  | 16.652.981  |
-|  11 bis) | Debiti verso imprese sottoposte al controllo delle controllanti | 29.103.479 | - | - |  | 29.103.479  |
-|  12) | Debiti tributari | 20.160.106 | 3.506.265 | 2.337.510 |  | 18.991.351  |
-|  13) | Debiti verso istituti di previdenza e di sicurezza sociale | 3.297.344 | - | - |  | 3.297.344  |
-|  14) | Altri debiti | 19.137.694 | - | - |  | 19.137.694  |
-|  16) | Debiti verso settore specifico | 15.079.779 | - | - |  | 15.079.779  |
-|  **Totale debiti** |   | **184.744.772** |  |  | **(1.168.785)** | **183.876.617**  |
-|  E | **RATIS E RISCONTI (Passivi)** | 5.013.452 | **5.013.452** |  |  | **5.013.452**  |
-|  **TOTALE PASSIVO** |   | **326.936.779** |  |  | **(9.236.662)** | **317.700.097**  |
+| STATO PATRIMONIALE | 30 giugno 2022 (dettaglio) | 30 giugno 2022 (totale) | Variazioni: esercizio precedente | Variazioni: esercizio in corso | Variazioni: totale variazioni | 30/06/2022 (UEFA) (dettaglio) | 30/06/2022 (UEFA) (totale) |
+|---|---|---|---|---|---|---|---|
+| **PASSIVO** | | | | | | | |
+| **A PATRIMONIO NETTO** | | | | | | | |
+| I Capitale | 15.127.000 | | - | - | | 15.127.000 | |
+| II Riserva da sovrapprezzo delle azioni | 0 | | - | - | | 0 | |
+| III Riserve di rivalutazione | 226.019.423 | | - 113.369.224 | (2.337.510) | | 110.312.690 | |
+| IV Riserva legale | 0 | | - | - | | 0 | |
+| V Riserva statutaria | 0 | | - | - | | 0 | |
+| VI Altre riserve: Riserva straordinaria | 0 | | - | - | | 0 | |
+| Altre riserve | 12.768.219 | | - | - | | 12.768.219 | |
+| Riserva da compilazione in unità di Euro | (2) | | | | | | |
+| VIII Utili (perdite) portati a nuovo | (57.632.960) | | 32.146.866 - | 43.949 | | (25.530.044) | |
+| IX Utile/Perdita dell'esercizio | (69.053.247) | | - | 78.174.636 | | 9.121.389 | |
+| **Totale patrimonio netto** | | 127.228.433 | | | (5.429.181) | | 121.799.253 |
+| **B FONDI PER RISCHI ED ONERI** | | | | | | | |
+| 2) Fondo per imposte, anche differite | 9.458.470 | | - 9.285.735 | 6.646.989 | | 6.819.724 | |
+| 3) Altri: Altri fondi | 457.110 | | - | - | | 457.110 | |
+| **Totale fondi per rischi ed oneri** | | 9.915.581 | | | -2.638.746 | | 7.276.834 |
+| **C TRATTAMENTO DI FINE RAPPORTO DI LAVORO SUBORDINATO** | 34.541 | 34.541 | | | 0 | | 34.541 |
+| **D DEBITI** | | | | | | | |
+| 1) Debiti per Obbligazioni ordinarie | 14.159.550 | | | | | 14.159.550 | |
+| 2) Debiti verso Soci per finanziamenti | 0 | | | | | 0 | |
+| 4) Debiti verso banche | 67.153.838 | | - | - | | 67.153.838 | |
+| 7) Debiti verso fornitori | 16.652.981 | | - | - | | 16.652.981 | |
+| 11 bis) Debiti verso imprese sottoposte al controllo delle controllanti | 29.103.479 | | - | - | | 29.103.479 | |
+| 12) Debiti tributari | 20.160.106 | | - 3.506.265 | 2.337.510 | | 18.991.351 | |
+| 13) Debiti verso istituti di previdenza e di sicurezza sociale | 3.297.344 | | - | - | | 3.297.344 | |
+| 14) Altri debiti | 19.137.694 | | - | - | | 19.137.694 | |
+| 16) Debiti verso settore specifico | 15.079.779 | | - | - | | 15.079.779 | |
+| **Totale debiti** | | 184.744.772 | | | (1.168.755) | | 183.576.017 |
+| **E RATEI E RISCONTI (Passivi)** | 5.013.452 | 5.013.452 | - | - | | | 5.013.452 |
+| **TOTALE PASSIVO** | | 326.936.779 | | | (9.236.682) | | 317.700.097 |
 
 --- pág. 94 ---
 
-# **UDINESE CALCIO S.p.A. - BILANCIO ANNUALE AL 30/06/2022**
+# UDINESE CALCIO S.p.A. - BILANCIO ANNUALE AL 30/06/2022
 
 UDINESE CALCIO SPA - BILANCIO AL 30.06.2022
 Documentazione supplementare
@@ -3484,65 +3512,65 @@ CONTO ECONOMICO
 
 ALLEGATO A
 
-|  CONTO ECONOMICO | 30 giugno 2022 | Variazioni | 30/06/2022 (UEFA)  |
-| --- | --- | --- | --- |
-|  **A VALORE DELLA PRODUZIONE** |  |  |   |
-|  1) Ricevi delle vendite e delle prestazioni | 5.115.056 |  | 5.115.056  |
-|  5) Altri ricevi e proventi: |  |  |   |
-|  a) Contributi in conto esercizio | 3.858.340 | - | 3.858.340  |
-|  b) Proventi da sponsorizzazioni | 2.200.000 | - | 2.200.000  |
-|  c) Proventi pubblicitari | 5.925.334 | - | 5.925.334  |
-|  d) Proventi commerciali e royalties | 773.293 | - | 773.293  |
-|  e) Proventi da cessioni diritti audiovisivi | 36.160.511 | - | 36.160.511  |
-|  f) Ricevi da cessione temporanea prestazione calciatori | 15.300 | - | 15.300  |
-|  g) Fluxvalenze da cessione calciatori | 16.928.151 | 51.001.469 | 67.929.620  |
-|  h) Altri proventi da trasferimento calciatori | 534.468 | - | 534.468  |
-|  i) Ricevi e proventi diversi | 6.569.784 | - | 6.569.784  |
-|   | 72.965.182 | 51.001.469 | 123.986.651  |
-|  **Totale valore della produzione** | **78.080.239** | **51.001.469** | **129.081.708**  |
-|  **B COSTI DELLA PRODUZIONE** |  |  |   |
-|  6) Costi per materie prime, sussidiarie, di consumo e di merci | 2.763.664 | - | 2.763.664  |
-|  7) Costi per servizi | 18.514.821 | - | 18.514.821  |
-|  8) Costi per godimento di beni di terzi | 847.816 | - | 847.816  |
-|  9) Per il personale: |  |  |   |
-|  a) Salari e stipendi | 39.236.173 | - | 39.236.173  |
-|  b) Oneri sociali | 2.242.366 | - | 2.242.366  |
-|  c) Trattamento di fine rapporto | 122.458 | - | 122.458  |
-|   | 41.600.999 | 0 | 41.600.998  |
-|  10) Ammortamenti e svalutazioni: |  |  |   |
-|  a) Ammortamento delle immobilizzazioni immateriali | 57.930.334 | 25.693.659 | 32.236.674  |
-|  b) Ammortamento delle immobilizzazioni materiali | 1.103.644 | - | 1.103.644  |
-|  c) Altre svalutazioni delle immobilizzazioni immobilizzazioni ma | 1.522.949 | 761.222 | 761.727  |
-|  d) Svalutazione dei crediti e delle disponibilità liquide | 2.311.760 | - | 2.311.760  |
-|   | 62.868.685 | (26.454.881) | 36.413.805  |
-|  11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci | 0 | - | 0  |
-|  12) Accantonamenti | 275.818 | - | 275.818  |
-|  14) Oneri diversi di gestione: |  |  |   |
-|  Oneri da organizzazione competizioni | 1.186.421 | - | 1.186.421  |
-|  Minusvalenze da cessioni diritti calciatori | 8.019.148 | 7.365.275 | 653.873  |
-|  Altri oneri da trasferimento diritti calciatori | 6.554.013 | - | 6.554.013  |
-|  Altri oneri diversi di gestione | 1.756.328 | - | 1.756.328  |
-|   | 17.515.911 | (7.365.275) | 10.150.635  |
-|  **Totale costi della produzione** | **144.387.713** | **(33.820.156)** | **110.567.557**  |
-|  **Differenza tra valore e costi della produzione** | **(66.307.475)** | **84.821.625** | **18.514.151**  |
-|  **C PROVENTI E ONERI FINANZIARI** |  |  |   |
-|  16) Proventi: |  |  |   |
-|  d) Proventi diversi dai precedenti |  |  |   |
-|  d.4) Proventi diversi dai precedenti da altre imprese | 121.750 | - | 121.750  |
-|  17) Oneri: |  |  |   |
-|  d) Interessi e altri oneri finanziari verso altri | (5.856.187) | - | (5.856.187)  |
-|  17) bis) Utili e perdite su cambi | 190.341 | - | 190.341  |
-|  **Totale proventi e oneri finanziari** | **(5.544.095)** | **0** | **(5.544.095)**  |
-|  **D RETTIFICHE DI VALORE DI ATTIVITÀ FINANZIARIE** |  |  |   |
-|  19) Svalutazioni |  |  |   |
-|  19a) Svalutazioni di partecipazioni | 0 | - | 0  |
-|  **Totale delle rettifiche di valore di attività finanziarie** | **0** | **0** | **0**  |
-|  **Risultato prima delle imposte** | **(71.851.569)** | **84.821.625** | **12.970.056**  |
-|  22) Imposte sul reddito dell'esercizio |  |  |   |
-|  a) Imposte correnti | (2.354.788) | - | (2.354.788)  |
-|  b) Imposte differite | 5.153.111 | 6.646.989 | (1.493.879)  |
-|  **Totale imposte sul reddito d'esercizio** | **2.798.323** | **6.646.989** | **(3.848.667)**  |
-|  **Utile (perdita) dell'esercizio** | **(69.053.247)** | **78.174.636** | **9.121.389**  |
+| CONTO ECONOMICO | 30 giugno 2022 (dettaglio) | 30 giugno 2022 (totale) | Variazioni (dettaglio) | Variazioni (totale) | 30/06/2022 (UEFA) (dettaglio) | 30/06/2022 (UEFA) (totale) |
+|---|---|---|---|---|---|---|
+| **A VALORE DELLA PRODUZIONE** | | | | | | |
+| 1) Ricavi delle vendite e delle prestazioni | | 5.115.056 | | | | 5.115.056 |
+| 5) Altri ricavi e proventi: | | | | | | |
+| a) Contributi in conto esercizio | 3.858.340 | | - | | 3.858.340 | |
+| b) Proventi da sponsorizzazioni | 2.200.000 | | - | | 2.200.000 | |
+| c) Proventi pubblicitari | 5.925.334 | | - | | 5.925.334 | |
+| d) Proventi commerciali e royalties | 773.293 | | - | | 773.293 | |
+| e) Proventi da cessioni diritti audiovisivi | 36.160.511 | | - | | 36.160.511 | |
+| f) Ricavi da cessione temporanea prestazione calciatori | 15.300 | | - | | 15.300 | |
+| g) Plusvalenze da cessione calciatori | 16.928.151 | | 51.001.469 | | 67.929.620 | |
+| h) Altri proventi da trasferimento calciatori | 534.468 | | - | | 534.468 | |
+| i) Ricavi e proventi diversi | 6.569.784 | | - | | 6.569.784 | |
+| | | 72.965.182 | | 51.001.469 | | 123.966.651 |
+| **Totale valore della produzione** | | 78.080.239 | | 51.001.469 | | 129.081.708 |
+| **B COSTI DELLA PRODUZIONE** | | | | | | |
+| 6) Costi per materie prime, sussidiarie, di consumo e di merci | | 2.763.664 | - | | | 2.763.664 |
+| 7) Costi per servizi | | 18.514.821 | - | | | 18.514.821 |
+| 8) Costi per godimento di beni di terzi | | 847.816 | - | | | 847.816 |
+| 9) Per il personale: | | | | | | |
+| a) Salari e stipendi | 39.236.173 | | - | | 39.236.173 | |
+| b) Oneri sociali | 2.242.366 | | - | | 2.242.366 | |
+| c) Trattamento di fine rapporto | 122.458 | | - | | 122.458 | |
+| | | 41.600.999 | | 0 | | 41.600.998 |
+| 10) Ammortamenti e svalutazioni: | | | | | | |
+| a) Ammortamento delle immobilizzazioni immateriali | 57.930.334 | | - 25.693.659 | | 32.236.674 | |
+| b) Ammortamento delle immobilizzazioni materiali | 1.103.644 | | - | | 1.103.644 | |
+| c) Altre svalutazioni delle immobilizzazioni immobilizzazioni ma | 1.522.949 | | - 761.222 | | 761.727 | |
+| d) Svalutazione dei crediti e delle disponibilità liquide | 2.311.760 | | - | | 2.311.760 | |
+| | | 62.868.685 | | (26.454.881) | | 36.413.805 |
+| 11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci | | 0 | - | | | 0 |
+| 12) Accantonamenti | | 275.818 | - | | | 275.818 |
+| 14) Oneri diversi di gestione: | | | | | | |
+| Oneri da organizzazione competizioni | 1.186.421 | | - | | 1.186.421 | |
+| Minusvalenze da cessioni diritti calciatori | 8.019.148 | | - 7.365.275 | | 653.873 | |
+| Altri oneri da trasferimento diritti calciatori | 6.554.013 | | - | | 6.554.013 | |
+| Altri oneri diversi di gestione | 1.756.328 | | - | | 1.756.328 | |
+| | | 17.515.911 | | (7.365.275) | | 10.150.635 |
+| **Totale costi della produzione** | | 144.387.713 | | (33.820.156) | | 110.567.557 |
+| **Differenza tra valore e costi della produzione** | | (66.307.475) | | 84.821.625 | | 18.514.151 |
+| **C PROVENTI E ONERI FINANZIARI** | | | | | | |
+| 16) Proventi: | | | | | | |
+| d) Proventi diversi dai precedenti | | | | | | |
+| d.4) Proventi diversi dai precedenti da altre imprese | 121.750 | | - | | 121.750 | |
+| 17) Oneri: | | | | | | |
+| d) Interessi e altri oneri finanziari verso altri | (5.856.187) | | - | | (5.856.187) | |
+| 17) bis) Utili e perdite su cambi | 190.341 | | - | | 190.341 | |
+| **Totale proventi e oneri finanziari** | | (5.544.095) | | 0 | | (5.544.095) |
+| **D RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE** | | | | | | |
+| 19) Svalutazioni | | | | | | |
+| 19a) Svalutazioni di partecipazioni | 0 | | - | | 0 | |
+| **Totale delle rettifiche di valore di attività finanziarie** | | 0 | | 0 | | 0 |
+| **Risultato prima delle imposte** | | (71.851.569) | | 84.821.625 | | 12.970.056 |
+| 22) Imposte sul reddito dell'esercizio | | | | | | |
+| a) Imposte correnti | | (2.354.788) | - | | | (2.354.788) |
+| b) Imposte differite | | 5.153.111 | 6.646.989 | | | (1.493.879) |
+| **Totale imposte sul reddito d'esercizio** | | 2.798.323 | | 6.646.989 | | (3.848.667) |
+| **Utile (perdita) dell'esercizio** | | (69.053.247) | | 78.174.636 | | 9.121.389 |
 
 --- pág. 95 ---
 

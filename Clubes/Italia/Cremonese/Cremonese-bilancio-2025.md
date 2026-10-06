@@ -899,40 +899,40 @@ La Società, come previsto dal D.Lgs. n. 14/2019 (Codice della crisi e dell'inso
 
 BILANCIO DI ESERCIZIO AL 30 GIUGNO 2025
 
-U.S. Cremonese
+U. S. Cremonese
 
 # Nota integrativa, attivo
 
 Si presentano di seguito le variazioni intervenute nella consistenza delle voci dell'attivo.
 
-# Immobilizzazioni
+## Immobilizzazioni
 
 Si presentano di seguito le variazioni intervenute nella consistenza delle immobilizzazioni.
 
-# Immobilizzazioni immateriali
+### Immobilizzazioni immateriali
 
 Movimenti delle immobilizzazioni immateriali
 
 La composizione e i movimenti di sintesi delle immobilizzazioni immateriali sono dettagliati nella seguente tabella:
 
-|   | Concessioni, licenze, marchi e diritti simili | Altre immobilizzazioni immateriali | Totale immobilizzazioni immateriali  |
-| --- | --- | --- | --- |
-|  Valore di inizio esercizio |  |  |   |
-|  Costo | 1.958.178 | 43.024.658 | 44.982.836  |
-|  Ammortamenti (Fondo ammortamento) | 675.797 | 24.256.771 | 24.932.568  |
-|  Valore di bilancio | 1.282.381 | 18.767.887 | 20.050.268  |
-|  Variazioni nell'esercizio |  |  |   |
-|  Incrementi per acquisizioni | - | 13.462.978 | 13.462.978  |
-|  Decrementi per allenazioni e dismissioni (del valore di bilancio) | 45.600 | 6.804.119 | 6.849.719  |
-|  Ammortamento dell'esercizio | 159.173 | 9.387.953 | 9.547.126  |
-|  Svalutazioni effettuate nell'esercizio | - | 1.424.700 | 1.424.700  |
-|  Altre variazioni | 45.600 | 5.112.918 | 5.158.518  |
-|  Totale variazioni | (159.173) | 959.124 | 799.951  |
-|  Valore di fine esercizio |  |  |   |
-|  Costo | 1.912.576 | 49.583.516 | 51.496.094  |
-|  Ammortamenti (Fondo ammortamento) | 789.370 | 28.431.805 | 29.221.175  |
-|  Svalutazioni | - | 1.424.700 | 1.424.700  |
-|  Valore di bilancio | 1.123.208 | 19.727.011 | 20.850.219  |
+| | Concessioni, licenze, marchi e diritti simili | Altre immobilizzazioni immateriali | Totale immobilizzazioni immateriali |
+|---|---|---|---|
+| **Valore di inizio esercizio** | | | |
+| Costo | 1.958.178 | 43.024.658 | 44.982.836 |
+| Ammortamenti (Fondo ammortamento) | 675.797 | 24.256.771 | 24.932.568 |
+| Valore di bilancio | 1.282.381 | 18.767.887 | 20.050.268 |
+| **Variazioni nell'esercizio** | | | |
+| Incrementi per acquisizioni | - | 13.462.978 | 13.462.978 |
+| Decrementi per alienazioni e dismissioni (del valore di bilancio) | 45.600 | 6.804.119 | 6.849.719 |
+| Ammortamento dell'esercizio | 159.173 | 9.387.953 | 9.547.126 |
+| Svalutazioni effettuate nell'esercizio | - | 1.424.700 | 1.424.700 |
+| Altre variazioni | 45.600 | 5.112.918 | 5.158.518 |
+| Totale variazioni | (159.173) | 959.124 | 799.951 |
+| **Valore di fine esercizio** | | | |
+| Costo | 1.912.578 | 49.583.516 | 51.496.094 |
+| Ammortamenti (Fondo ammortamento) | 789.370 | 28.431.805 | 29.221.175 |
+| Svalutazioni | - | 1.424.700 | 1.424.700 |
+| Valore di bilancio | 1.123.208 | 19.727.011 | 20.850.219 |
 
 Le concessioni, licenze, marchi e diritti simili si riferiscono quasi esclusivamente per euro 1.121.528 ai diritti di sfruttamento della Teca Rai della U.S. Cremonese acquisiti a titolo definitivo nel luglio 2020.
 
@@ -1177,40 +1177,41 @@ BILANCIO DI ESERCIZIO AL 30 GIUGNO 2025
 
 U.S. Cremonese
 
-|  Totale | 43.122 | 140.127 | (97.005)  |
-| --- | --- | --- | --- |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| Totale | | 43.122 | 140.127 | (97.005) |
 
 Con riferimento al credito per indennizzo assicurativo si precisa che lo stesso deriva da un evento meteo ed è stato regolarmente incassato.
 
 Con riferimento agli acconti INAIL, al 30/06/2025 gli stessi sono stati rilevati a decurtazione del relativo debito.
 
-Suddivisione dei crediti iscritti nell'attivo circolante per area geografica
+### Suddivisione dei crediti iscritti nell'attivo circolante per area geografica
 
 La ripartizione dei crediti al 30/06/2025 secondo area geografica è riportata nella tabella seguente (articolo 2427, primo comma, n. 6, C.c.).
 
-|  Area geografica | Italia | Paesi UE | Paesi Extra UE | Totale  |
-| --- | --- | --- | --- | --- |
-|  Crediti verso clienti iscritti nell'attivo circolante | 1.494.794 | - | 2.791.716 | 4.286.510  |
-|  Crediti tributari iscritti nell'attivo circolante | 124.822 | - | - | 124.822  |
-|  Attività per imposte anticipate iscritte nell'attivo circolante | 2.255.274 | - | - | 2.255.274  |
-|  Crediti verso altri iscritti nell'attivo circolante | 1.644.374 | 1.520.507 | 910.737 | 4.075.618  |
-|  Totale crediti iscritti nell'attivo circolante | 5.519.264 | 1.520.507 | 3.702.453 | 10.742.224  |
+| Area geografica | Italia | Paesi UE | Paesi Extra UE | Totale |
+| :--- | :--- | :--- | :--- | :--- |
+| Crediti verso clienti iscritti nell'attivo circolante | 1.494.794 | - | 2.791.716 | 4.286.510 |
+| Crediti tributari iscritti nell'attivo circolante | 124.822 | - | - | 124.822 |
+| Attività per imposte anticipate iscritte nell'attivo circolante | 2.255.274 | - | - | 2.255.274 |
+| Crediti verso altri iscritti nell'attivo circolante | 1.644.374 | 1.520.507 | 910.737 | 4.075.618 |
+| Totale crediti iscritti nell'attivo circolante | 5.519.264 | 1.520.507 | 3.702.453 | 10.742.224 |
 
-# Disponibilità liquide
+### Disponibilità liquide
 
 Le disponibilità liquide sono valutate al valore nominale.
 
 Si presentano di seguito le variazioni intervenute nella consistenza della voce "Disponibilità liquide".
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Depositi bancari e postali | 382.207 | 1.449.020 | 1.831.227  |
-|  Denaro e altri valori in cassa | 9.904 | 8.961 | 18.865  |
-|  Totale disponibilità liquide | 392.111 | 1.457.961 | 1.850.092  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :--- | :--- | :--- |
+| Depositi bancari e postali | 382.207 | 1.449.020 | 1.831.227 |
+| Denaro e altri valori in cassa | 9.904 | 8.961 | 18.865 |
+| Totale disponibilità liquide | 392.111 | 1.457.981 | 1.850.092 |
 
 Il saldo delle disponibilità liquide è rappresentato dalla giacenza di cassa e dal saldo dei correnti bancari attivi liberamente disponibili alla data di chiusura dell'esercizio. Nel rendiconto finanziario risultano esplicitate le variazioni intervenute nelle disponibilità liquide.
 
-# Ratei e risconti attivi
+### Ratei e risconti attivi
 
 --- pág. 30 ---
 

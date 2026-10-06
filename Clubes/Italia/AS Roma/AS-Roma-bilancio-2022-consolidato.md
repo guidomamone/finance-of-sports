@@ -1151,48 +1151,45 @@ AS·ROMA
 
 --- pág. 41 ---
 
-RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE  
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
-# PROSPETTI CONTABILI
+### PROSPETTI CONTABILI
 
-# SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
+#### SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
+*(in €/migliaia)*
 
-(in €/migliaia)
+| ATTIVO | note | 30/06/2022 | 30/06/2021 |
+| :--- | :---: | :---: | :---: |
+| **ATTIVITA' NON CORRENTI** | | | |
+| Diritti pluriennali alle prestazioni dei calciatori | 7.1 | 165.472 | 188.207 |
+| Altre immobilizzazioni immateriali | 7.2 | 15.760 | 18.641 |
+| Attività immateriali | | 181.231 | 206.848 |
+| Fabbricati | | 7.443 | 6.054 |
+| Impianti e macchinari | | 604 | 535 |
+| Attrezzature industriali e commerciali | | 642 | 319 |
+| Altre immobilizzazioni | | 2.055 | 1.641 |
+| Immobilizzazioni in corso ed acconti | | 1.796 | 3.805 |
+| Attività materiali | 7.3 | 12.539 | 12.354 |
+| Diritti d'uso | 7.4 | 18.699 | 22.295 |
+| Crediti commerciali | 7.6 | 5.365 | 11.991 |
+| Attività finanziarie non correnti | 7.7 | 10.045 | 10.045 |
+| Altre attività | 7.8 | 3.392 | 3.218 |
+| Altre attività non correnti | | 18.802 | 25.254 |
+| **Totale attività non correnti** | | **231.272** | **266.751** |
+| **ATTIVITA' CORRENTI** | | | |
+| Rimanenze | 7.5 | 1.548 | 1.004 |
+| Crediti commerciali | 7.6 | 51.061 | 45.458 |
+| Altre attività | 7.8 | 52.125 | 37.917 |
+| Crediti per imposte | 7.9 | 630 | 1.344 |
+| Disponibilità liquide e mezzi equivalenti | 7.10 | 22.821 | 22.824 |
+| Attività possedute per la vendita o cessate | 7.11 | 3.768 | |
+| **Totale attività correnti** | | **131.953** | **108.548** |
+| **TOTALE ATTIVITA'** | | **363.225** | **375.299** |
 
-|  ATTIVO | note | 30/06/2022 | 30/06/2021  |
-| --- | --- | --- | --- |
-|  **ATTIVITA' NON CORRENTI**  |   |   |   |
-|  Diritti pluriennali alle prestazioni dei calciatori | 7.1 | 165.472 | 188.207  |
-|  Altre immobilizzazioni immateriali | 7.2 | 15.760 | 18.641  |
-|  Attività immateriali |  | 181.231 | 206.848  |
-|  Fabbricati |  | 7.443 | 6.054  |
-|  Impianti e macchinari |  | 604 | 535  |
-|  Attrezzature industriali e commerciali |  | 642 | 319  |
-|  Altre immobilizzazioni |  | 2.055 | 1.641  |
-|  Immobilizzazioni in corso ed acconti |  | 1.796 | 3.805  |
-|  Attività materiali | 7.3 | 12.539 | 12.354  |
-|  Diritti d'uso | 7.4 | 18.699 | 22.295  |
-|  Crediti commerciali | 7.6 | 5.365 | 11.991  |
-|  Attività finanziarie non correnti | 7.7 | 10.045 | 10.045  |
-|  Altre attività | 7.8 | 3.392 | 3.218  |
-|  Altre attività non correnti |  | 18.802 | 25.254  |
-|  **Totale attività non correnti** |  | **231.272** | **266.751**  |
-|  **ATTIVITA' CORRENTI**  |   |   |   |
-|  Rimanenze | 7.5 | 1.548 | 1.004  |
-|  Crediti commerciali | 7.6 | 51.061 | 45.458  |
-|  Altre attività | 7.8 | 52.125 | 37.917  |
-|  Crediti per imposte | 7.9 | 630 | 1.344  |
-|  Disponibilità liquide e mezzi equivalenti | 7.10 | 22.821 | 22.824  |
-|  Attività possedute per la vendita o cessate | 7.11 | 3.768 |   |
-|  **Totale attività correnti** |  | **131.953** | **108.548**  |
-|  **TOTALE ATTIVITA'** |  | **363.225** | **375.299**  |
-
-Le note illustrative sono parte integrante del Bilancio Consolidato
+*Le note illustrative sono parte integrante del Bilancio Consolidato*
 
 41
-
-[BBOX]0.8395,0.9247,0.9247,0.9349[/BBOX]
 
 --- pág. 42 ---
 
@@ -1295,73 +1292,70 @@ Le note illustrative sono parte integrante del Bilancio Consolidato
 
 --- pág. 44 ---
 
-**RELAZIONE FINANZIARIA ANNUALE**
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
-# **RENDICONTO FINANZIARIO CONSOLIDATO**
+## RENDICONTO FINANZIARIO CONSOLIDATO
 
-(in €/migliaia)
+*(in €/migliaia)*
 
-|  (€ / 000 ) | Note | 30/06/2022 | 30/06/2021  |
-| --- | --- | --- | --- |
-|  Perdita di Gruppo A.S. Roma | 8.17 | (219.291) | (185.317)  |
-|  ammortamenti e svalutazioni | 8.13 | 90.277 | 102.018  |
-|  accantonamenti per rischi | 8.13 - 8.15 | - | -  |
-|  plusvalenze (minusvalenze) cessioni diritti calciatori | 8.14 | 3.979 | (255)  |
-|  oneri finanziari netti | 8.15 | 23.939 | 35.970  |
-|  altre variazioni non monetarie |  | (5.940) | (3.226)  |
-|  variazione delle rimanenze | 7.5 - 8.8 | (544) | 450  |
-|  variazione dei crediti commerciali correnti | 7.6 | (2.365) | 14.403  |
-|  variazione dei debiti commerciali correnti | 7.16 | (1.617) | 7.288  |
-|  variazione dei fondi per rischi e oneri | 7.18 | 20.727 | 194  |
-|  variazione dei crediti per imposte | 7.9 | 714 | 2.684  |
-|  variazione dei debiti tributari e fondo rischi per imposte | 7.17 | 18.331 | 16.036  |
-|  variazione altre attività correnti | 7.8 | (14.208) | (15.895)  |
-|  variazione altre passività correnti | 7.20 | (10.630) | (34.837)  |
-|  variazione altre attività non correnti | 7.8 | (174) | 30  |
-|  variazione altre passività non correnti | 7.4 - 7.13 - 7.20 | (2.984) | (2.588)  |
-|  imposte pagate | 7.17 | (1.030) | (437)  |
-|  **A) Flusso Monetario Attività Operativa** |  | **(100.824)** | **(63.483)**  |
-|  acquisti diritti pluriennali prestazioni calciatori | 7.1 | (84.648) | (60.534)  |
-|  cessioni diritti pluriennali prestazioni calciatori | 7.1 | 24.011 | 52.569  |
-|  variazione crediti per cessione diritti pluriennali prestazioni calciatori | 7.6 | (1.509) | 15.567  |
-|  variazione debiti per cessione diritti pluriennali prestazioni calciatori | 7.16 | (13.322) | (64.928)  |
-|  variazione degli investimenti nelle attività materiali ed immateriali | 7.2 - 7.3 | (1.000) | (4.256)  |
-|  **B) Flusso monetario dell'attività di investimento** |  | **(76.468)** | **(61.583)**  |
-|  Assunzione nuovi finanziamenti | 7.12 | - | 5.931  |
-|  Rimborso di finanziamenti | 7.12 | (6.143) | (5.806)  |
-|  Interessi passivi pagati |  | (16.266) | (16.486)  |
-|  Pagamento della Consent fee |  |  | (14.600)  |
-|  Rimborso di passività relativi ai Diritti d'Uso |  | (2.040) | (2.704)  |
-|  Versamenti in c/ finanziamento soci |  | 85.076 | 30.735  |
-|  Versamenti in c/ aumento di capitale | 7.11 | 120.000 | 144.600  |
-|  **C) Flusso monetario dell'attività di finanziamento** |  | **180.626** | **141.669**  |
-|  **D)=(A+B+C) FLUSSO MONETARIO TOTALE** |  | **3.333** | **16.602**  |
+| (€ / 000 ) | Note | 30/06/2022 | 30/06/2021 |
+|---|---|---|---|
+| Perdita di Gruppo A.S. Roma | 8.17 | (219.291) | (185.317) |
+| ammortamenti e svalutazioni | 8.13 | 90.277 | 102.018 |
+| accantonamenti per rischi | 8.13 - 8.15 | - | - |
+| plusvalenze (minusvalenze) cessioni dititti calciatori | 8.14 | 3.979 | (255) |
+| oneri finanziari netti | 8.15 | 23.939 | 35.970 |
+| altre variazioni non monetarie | | (5.940) | (3.226) |
+| variazione delle rimanenze | 7.5 - 8.8 | (544) | 450 |
+| variazione dei crediti commerciali correnti | 7.6 | (2.365) | 14.403 |
+| variazione dei debiti commerciali correnti | 7.16 | (1.617) | 7.288 |
+| variazione dei fondi per rischi e oneri | 7.18 | 20.727 | 194 |
+| variazione dei crediti per imposte | 7.9 | 714 | 2.684 |
+| variazione dei debiti tributari e fondo rischi per imposte | 7.17 | 18.331 | 16.036 |
+| variazione altre attività correnti | 7.8 | (14.208) | (15.895) |
+| variazione altre passività correnti | 7.20 | (10.630) | (34.837) |
+| variazione altre attività non correnti | 7.8 | (174) | 30 |
+| variazione altre passività non correnti | 7.4 - 7.13 - 7.20 | (2.994) | (2.588) |
+| imposte pagate | 7.17 | (1.030) | (437) |
+| **A) Flusso Monetario Attività Operativa** | | (100.824) | (63.483) |
+| acquisti diritti pluriennali prestazioni calciatori | 7.1 | (84.648) | (60.534) |
+| cessioni diritti pluriennali prestazioni calciatori | 7.1 | 24.011 | 52.569 |
+| variazione crediti per cessione diritti pluriennali prestazioni calciatori | 7.6 | (1.509) | 15.567 |
+| variazione debiti per cessione diritti pluriennali prestazioni calciatori | 7.16 | (13.322) | (64.928) |
+| variazione degli investimenti nelle attività materiali ed immateriali | 7.2 7.3 | (1.000) | (4.256) |
+| **B) Flusso monetario dell'attività di investimento** | | (76.469) | (61.583) |
+| Assunzione nuovi finanziamenti | 7.12 | - | 5.931 |
+| Rimborso di finanziamenti | 7.12 | (6.143) | (5.806) |
+| Interessi passivi pagati | | (16.266) | (16.486) |
+| Pagamento della Consent fee | | | (14.600) |
+| Rimborso di passività relativi ai Diritti d'Uso | | (2.040) | (2.704) |
+| Versamenti in c/ finanziamento soci | | 85.076 | 30.735 |
+| Versamenti in c/ aumento di capitale | 7.11 | 120.000 | 144.600 |
+| **C) Flusso monetario dell'attività di finanziamento** | | 180.626 | 141.669 |
+| **D)=(A+B+C) FLUSSO MONETARIO TOTALE** | | 3.333 | 16.603 |
 
-# **RICONCILIAZIONE DELLE DISPONIBILITA' LIQUIDE E DEI MEZZI EQUIVALENTI**
+## RICONCILIAZIONE DELLE DISPONIBILITA' LIQUIDE E DEI MEZZI EQUIVALENTI
 
-Variazione delle disponibilità liquide al netto dei saldi bancari passivi:
+| *Variazione delle disponibilità liquide al netto dei saldi bancari passivi:* | | | |
+|---|---|---|---|
+| Disponibilità liquide e mezzi equivalenti iniziali | 7.10 | 12.686 | (3.916) |
+| Disponibilità liquide e mezzi equivalenti finali | 7.10 | 16.020 | 12.687 |
+| **Variaz. delle disponibilità liquide al netto dei saldi bancari passivi** | 7.10 | 3.333 | 16.602 |
 
-|  Disponibilità liquide e mezzi equivalenti iniziali | 7.10 | 12.686 | (3.916)  |
-| --- | --- | --- | --- |
-|  Disponibilità liquide e mezzi equivalenti finali | 7.10 | 16.020 | 12.687  |
-|  **Variaz. delle disponibilità liquide al netto dei saldi bancari passivi** |  | **3.333** | **16.602**  |
+| *Composizione delle disponibilità liquide iniziale:* | | | |
+|---|---|---|---|
+| Disponibilità liquide e mezzi equivalenti | 7.10 | 22.824 | 7.706 |
+| Saldi bancari passivi | 7.12 | (10.138) | (11.622) |
+| **Disponibilità liquide e mezzi equivalenti iniziali** | | 12.687 | (3.916) |
 
-Composizione delle disponibilità liquide iniziale:
+| *Composizione delle disponibilità liquide finale:* | | | |
+|---|---|---|---|
+| Disponibilità liquide e mezzi equivalenti | 7.10 | 22.821 | 22.824 |
+| Saldi bancari passivi | 7.12 | (6.801) | (10.138) |
+| **Disponibilità liquide e mezzi equivalenti finali** | | 16.020 | 12.687 |
 
-|  Disponibilità liquide e mezzi equivalenti | 7.10 | 22.824 | 7.706  |
-| --- | --- | --- | --- |
-|  Saldi bancari passivi | 7.12 | (10.138) | (11.622)  |
-|  **Disponibilità liquide e mezzi equivalenti iniziali** |  | **12.687** | **(3.916)**  |
-
-Composizione delle disponibilità liquide finale:
-
-|  Disponibilità liquide e mezzi equivalenti | 7.10 | 22.821 | 22.824  |
-| --- | --- | --- | --- |
-|  Saldi bancari passivi | 7.12 | (6.801) | (10.138)  |
-|  **Disponibilità liquide e mezzi equivalenti finali** |  | **16.020** | **12.687**  |
-
-Le note illustrative sono parte integrante del Bilancio Consolidato
+*Le note illustrative sono parte integrante del Bilancio Consolidato*
 
 44
 
@@ -2029,84 +2023,82 @@ La tabella che segue riporta il dettaglio dei valori dei valori dei Diritti plur
 --- pág. 67 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
-
-|  Calciatore | Valori al 30 giugno 2021 |   |   | 30/06/2022  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Valore di carico | Fondi di Amm.to | Valore contabile Netto | Investimenti | Disinvest.ti Netti | Svalutazioni e costi di vendita | Amm.to | Riclass. a imm. destinata alla vendita o cessate | Valore contabile Netto | Scadenza contratto  |
-|  Abraham | - | - | - | 41.282 | - | - | (7.319) | - | 33.963 | 30/06/2026  |
-|  Afena | 350 | (33) | 317 | 950 | - | - | (129) | - | 1.138 | 30/06/2026  |
-|  Antonucci | 215 | (215) | (0) | - | - | - | - | - | (0) | 30/06/2022  |
-|  Banda | 28 | (28) | 0 | - | - | - | - | - | 0 | 30/06/2022  |
-|  Bianda | 6.295 | (3.759) | 2.536 | - | - | - | (1.268) | - | 1.268 | 30/06/2023  |
-|  Beer | 480 | (304) | 176 | - | - | - | (59) | - | 117 | 30/06/2024  |
-|  Bouah | 380 | (154) | 225 | 22 | 0 | (167) | (82) | - | - | 30/06/2024  |
-|  Bove | 75 | (13) | 62 | - | - | - | (17) | - | 45 | 30/06/2025  |
-|  Calafiori | 435 | (111) | 324 | - | - | - | (162) | - | 162 | 30/06/2023  |
-|  Cardinali | 21 | (21) | (0) | - | - | - | - | - | (0) | 30/06/2023  |
-|  Celer | 930 | (639) | 291 | - | (269) | - | (22) | - | (0) | 30/06/2023  |
-|  Ciorvo | 60 | (10) | 50 | - | (39) | - | (10) | - | (0) | 30/06/2024  |
-|  Coric | 9.000 | (5.400) | 3.600 | - | - | - | (1.800) | - | 1.800 | 30/06/2023  |
-|  Cristante | 30.600 | (15.282) | 15.318 | - | - | - | (5.106) | - | 10.212 | 30/06/2024  |
-|  D'Orazio | 95 | (30) | 66 | - | (64) | - | (3) | - | (0) | 30/06/2023  |
-|  Derboe | 120 | (60) | 60 | - | - | - | (17) | - | 43 | 30/06/2026  |
-|  Olewara | 22.900 | (9.160) | 13.740 | - | - | (7.270) | (4.580) | (1.890) | - | 30/06/2024  |
-|  Ozeko | 19.648 | (19.648) | 0 | - | - | - | - | - | 0 | 30/06/2022  |
-|  Fazio | 3.200 | (2.875) | 325 | - | 0 | (161) | (154) | - | (0) | 30/06/2022  |
-|  Feratovic | 400 | (97) | 313 | - | - | (209) | (104) | - | - | 30/06/2024  |
-|  Fiorenti | 4.500 | (3.572) | 928 | - | - | - | (464) | - | 464 | 30/06/2023  |
-|  Fuzato | 1.500 | (996) | 504 | - | 0 | (252) | (252) | - | 0 | 30/06/2023  |
-|  Gante | 202 | (67) | 135 | - | 0 | (68) | (68) | - | (0) | 30/06/2023  |
-|  Greco | 92 | (92) | 0 | - | - | - | - | - | 0 | 30/06/2024  |
-|  Ibanez | 12.350 | (3.339) | 9.011 | - | - | - | (1.968) | - | 7.043 | 30/06/2026  |
-|  Ivkovic | - | - | - | 600 | - | - | (105) | - | 495 | 30/06/2024  |
-|  Kandorp | 16.600 | (12.582) | 4.018 | - | - | - | (1.004) | - | 3.013 | 30/06/2025  |
-|  Keramitsis | - | - | - | 30 | - | - | (9) | - | 21 | 30/06/2024  |
-|  Kluivert | 21.250 | (12.750) | 8.500 | - | - | - | (4.238) | - | 4.262 | 30/06/2024  |
-|  Kumbulla | 29.500 | (4.845) | 24.654 | - | - | - | (6.163) | - | 18.490 | 30/06/2025  |
-|  Louskima | 50 | (3) | 47 | - | - | - | (24) | - | 24 | 30/06/2023  |
-|  Mancini | 25.700 | (9.840) | 15.850 | 284 | - | - | (3.919) | - | 12.225 | 30/06/2027  |
-|  Milanese | 70 | (12) | 58 | - | - | - | (19) | - | 39 | 30/06/2024  |
-|  Ndiaye | 20 | (3) | 17 | 10 | - | (18) | (8) | - | (0) | 30/06/2024  |
-|  Ngingi | 250 | (73) | 177 | - | 0 | (132) | (45) | - | 0 | 30/06/2023  |
-|  Nzonzi | 21.808 | (21.808) | 0 | - | - | - | - | - | 0 | 30/06/2022  |
-|  Oliveras | 130 | (39) | 91 | - | - | - | (45) | - | 45 | 30/06/2023  |
-|  Olsen | 11.300 | (6.703) | 4.597 | - | (2.469) | - | (2.129) | - | (0) | 30/06/2023  |
-|  Postore | 15.396 | (15.397) | (0) | - | - | - | - | - | (0) | 30/06/2023  |
-|  Pau Lopez | 25.546 | (10.142) | 15.404 | - | (11.400) | (1.416) | (2.588) | - | (0) | 30/06/2024  |
-|  Pedro | 581 | (581) | - | - | - | - | - | - | - | 30/06/2023  |
-|  Pellegrini | 13.165 | (10.532) | 2.633 | 500 | - | - | (1.058) | - | 2.075 | 30/06/2026  |
-|  Perez | 13.500 | (4.330) | 9.170 | 500 | - | - | (3.204) | - | 6.466 | 30/06/2024  |
-|  Persson | 110 | (59) | 51 | - | (0) | (34) | (17) | - | (0) | 30/06/2023  |
-|  Pezzello | 211 | (95) | 116 | - | - | (58) | (58) | - | - | 30/06/2023  |
-|  Podgoronau | 325 | (70) | 255 | - | (243) | - | (11) | - | (0) | 30/06/2023  |
-|  Providence | 500 | (241) | 259 | - | - | - | (86) | - | 172 | 30/06/2024  |
-|  Reynolds | 6.925 | (645) | 6.280 | - | - | - | (1.570) | - | 4.710 | 30/06/2025  |
-|  Riccardi | 470 | (265) | 205 | - | (1) | (102) | (102) | - | (0) | 30/06/2023  |
-|  Rui Patricio | - | - | - | 12.588 | - | - | (4.000) | - | 8.588 | 30/06/2024  |
-|  Santon | 10.000 | (7.500) | 2.500 | - | - | - | (2.500) | - | - | 30/06/2022  |
-|  Shomurodov | - | - | - | 19.600 | - | - | (3.443) | - | 16.157 | 30/06/2026  |
-|  Smalling | 17.093 | (4.327) | 12.765 | - | - | - | (6.383) | - | 6.383 | 30/06/2023  |
-|  Spinazzola | 30.800 | (12.455) | 18.345 | - | - | - | (6.115) | - | 12.230 | 30/06/2024  |
-|  Svilar | - | - | - | 1.865 | - | - | - | - | 1.865 | 30/06/2027  |
-|  Tahirovic | 304 | (25) | 279 | - | (0) | - | (70) | - | 209 | 30/06/2026  |
-|  Tall | 64 | (64) | - | - | - | - | - | - | - | 30/06/2023  |
-|  Under | 16.882 | (11.568) | 5.314 | - | (3.320) | - | (1.994) | - | (0) | 30/06/2023  |
-|  Valoau | 70 | (70) | 0 | - | - | - | - | - | 0 | 30/06/2023  |
-|  Veretout | 18.500 | (7.289) | 11.211 | - | - | - | (3.737) | - | 7.474 | 30/06/2024  |
-|  Vetkal | 80 | (23) | 57 | - | - | - | (28) | - | 28 | 30/06/2023  |
-|  Vicario | 400 | (87) | 313 | - | - | (209) | (104) | - | - | 30/06/2024  |
-|  Villar | 5.000 | (1.604) | 3.396 | - | - | - | (1.132) | - | 2.264 | 30/06/2024  |
-|  Villa | - | - | - | 15.635 | - | - | (2.807) | - | 12.828 | 30/06/2026  |
-|  Volpato | - | - | - | 116 | - | - | (39) | - | 77 | 30/06/2024  |
-|  Wiklund | - | - | - | 30 | - | - | (9) | - | 21 | 30/06/2024  |
-|  Zajsek | 223 | (44) | 179 | - | (0) | (89) | (89) | - | 0 | 30/06/2023  |
-|  Zalewski | 150 | (25) | 124 | - | - | - | (34) | - | 90 | 30/06/2025  |
-|  Zaniolo | 6.500 | (3.287) | 3.212 | - | - | - | (1.070) | - | 2.142 | 30/06/2024  |
-|  **TOTALE** | **423.349** | **(225.278)** | **198.072** | **94.011** | **(17.804)** | **(10.185)** | **(83.555)** | **(1.890)** | **178.648** |   |
-|  Attualizzazioni | (24.454) | 14.589 | (9.865) | (9.362) | - | - | 6.050 | - | (13.177) |   |
-|  **TOTALE** | **398.895** | **(210.689)** | **188.207** | **84.648** | **(17.804)** | **(10.185)** | **(77.505)** | **(1.890)** | **165.472** |   |
+| Calciatore | Valori al 30 giugno 2021: Valore di carico | Valori al 30 giugno 2021: Fondi di Amm.to | Valori al 30 giugno 2021: Valore contabile Netto | Investimenti | Disinvestiti Netti | Svalutazioni e costi di vendita | Amm.to | 30/06/2022: Riclass. a imm. destinate alla vendita o cessate | 30/06/2022: Valore contabile Netto | Scadenza contratto |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Abraham | - | - | - | 41.282 | - | - | (7.319) | - | 33.963 | 30/06/2026 |
+| Afena | 350 | (33) | 317 | 950 | - | - | (129) | - | 1.138 | 30/06/2026 |
+| Antonucci | 215 | (215) | (0) | - | - | - | - | - | (0) | 30/06/2022 |
+| Bamba | 28 | (28) | 0 | - | - | - | - | - | 0 | 30/06/2022 |
+| Bianda | 6.295 | (3.759) | 2.536 | - | - | - | (1.268) | - | 1.268 | 30/06/2023 |
+| Boer | 480 | (304) | 176 | - | - | - | (59) | - | 117 | 30/06/2024 |
+| Bouah | 380 | (154) | 226 | 22 | - | (167) | (82) | - | - | 30/06/2024 |
+| Bove | 75 | (13) | 62 | - | - | - | (17) | - | 45 | 30/06/2025 |
+| Calafiori | 435 | (111) | 324 | - | - | - | (162) | - | 162 | 30/06/2023 |
+| Cardinali | 21 | (21) | (0) | - | - | - | - | - | - | 30/06/2023 |
+| Celar | 930 | (639) | 291 | - | (269) | - | (22) | - | (0) | 30/06/2023 |
+| Ciervo | 60 | (10) | 50 | - | (39) | - | (10) | - | (0) | 30/06/2024 |
+| Coric | 9.000 | (5.400) | 3.600 | - | - | - | (1.800) | - | 1.800 | 30/06/2023 |
+| Cristante | 30.600 | (15.282) | 15.318 | - | - | - | (5.106) | - | 10.212 | 30/06/2024 |
+| D'Orazio | 96 | (30) | 66 | - | (64) | - | (3) | - | (0) | 30/06/2023 |
+| Darboe | 120 | (60) | 60 | - | - | - | (17) | - | 43 | 30/06/2026 |
+| Diawara | 22.900 | (9.160) | 13.740 | - | - | (7.270) | (4.580) | (1.890) | - | 30/06/2024 |
+| Dzeko | 19.648 | (19.648) | 0 | - | - | - | - | - | 0 | 30/06/2022 |
+| Fazio | 3.200 | (2.875) | 325 | - | - | (161) | (164) | - | (0) | 30/06/2022 |
+| Feratovic | 400 | (87) | 313 | - | - | (209) | (104) | - | - | 30/06/2024 |
+| Florenzi | 4.500 | (3.572) | 928 | - | - | - | (464) | - | 464 | 30/06/2023 |
+| Fuzato | 1.500 | (996) | 504 | - | 0 | (252) | (252) | - | 0 | 30/06/2023 |
+| Gante | 202 | (67) | 135 | - | 0 | (68) | (68) | - | (0) | 30/06/2023 |
+| Greco | 92 | (92) | 0 | - | - | - | - | - | 0 | 30/06/2024 |
+| Ibanez | 12.350 | (3.339) | 9.011 | - | - | - | (1.968) | - | 7.043 | 30/06/2026 |
+| Ivkovic | - | - | - | 600 | - | - | (105) | - | 495 | 30/06/2024 |
+| Karsdorp | 16.600 | (12.582) | 4.018 | - | - | - | (1.004) | - | 3.013 | 30/06/2025 |
+| Keramitsis | - | - | - | 30 | - | - | (9) | - | 21 | 30/06/2025 |
+| Kluivert | 21.250 | (12.750) | 8.500 | - | - | - | (4.238) | - | 4.262 | 30/06/2023 |
+| Kumbulla | 29.500 | (4.846) | 24.654 | - | - | - | (6.163) | - | 18.490 | 30/06/2025 |
+| Louakima | 50 | (3) | 47 | - | - | - | (24) | - | 24 | 30/06/2023 |
+| Mancini | 25.700 | (9.840) | 15.860 | 284 | - | - | (3.919) | - | 12.225 | 30/06/2027 |
+| Milanese | 70 | (12) | 58 | - | - | - | (19) | - | 39 | 30/06/2024 |
+| Ndiaye | 20 | (3) | 17 | - | - | (8) | (8) | - | (0) | 30/06/2024 |
+| Ngingi | 250 | (73) | 177 | - | - | (132) | (45) | - | 0 | 30/06/2023 |
+| Nzonzi | 21.808 | (21.808) | 0 | - | - | - | - | - | 0 | 30/06/2022 |
+| Oliveras | 130 | (39) | 91 | - | - | - | (45) | - | 45 | 30/06/2023 |
+| Olsen | 11.300 | (6.703) | 4.597 | - | (2.469) | - | (2.129) | - | (0) | 30/06/2023 |
+| Pastore | 15.396 | (15.397) | (0) | - | - | - | - | - | (0) | 30/06/2023 |
+| Pau Lopez | 25.546 | (10.142) | 15.404 | - | (11.400) | (1.416) | (2.588) | - | (0) | 30/06/2024 |
+| Pedro | 581 | (581) | - | - | - | - | - | - | - | 30/06/2023 |
+| Pellegrini | 13.165 | (10.532) | 2.633 | 500 | - | - | (1.058) | - | 2.075 | 30/06/2026 |
+| Perez | 13.500 | (4.330) | 9.170 | 500 | - | - | (3.204) | - | 6.466 | 30/06/2024 |
+| Persson | 110 | (59) | 51 | - | (0) | (34) | (17) | - | (0) | 30/06/2023 |
+| Pezzella | 211 | (95) | 116 | - | - | (58) | (58) | - | - | 30/06/2023 |
+| Podgoreanu | 325 | (70) | 255 | - | (243) | - | (11) | - | (0) | 30/06/2023 |
+| Providence | 500 | (241) | 259 | - | - | - | (86) | - | 172 | 30/06/2024 |
+| Reynolds | 6.925 | (645) | 6.280 | - | - | - | (1.570) | - | 4.710 | 30/06/2025 |
+| Riccardi | 470 | (265) | 205 | - | (1) | (102) | (102) | - | (0) | 30/06/2023 |
+| Rui Patricio | - | - | - | 12.588 | - | - | (4.000) | - | 8.588 | 30/06/2024 |
+| Santon | 10.000 | (7.500) | 2.500 | - | - | - | (2.500) | - | - | 30/06/2022 |
+| Shomurodov | - | - | - | 19.600 | - | - | (3.443) | - | 16.157 | 30/06/2026 |
+| Smalling | 17.093 | (4.327) | 12.766 | - | - | - | (6.383) | - | 6.383 | 30/06/2023 |
+| Spinazzola | 30.800 | (12.455) | 18.345 | - | - | - | (6.115) | - | 12.230 | 30/06/2024 |
+| Svilar | - | - | - | 1.865 | - | - | - | - | 1.865 | 30/06/2027 |
+| Tahirovic | 304 | (25) | 279 | - | - | - | (70) | - | 209 | 30/06/2025 |
+| Tall | 64 | (64) | - | - | - | - | - | - | - | 30/06/2023 |
+| Under | 16.882 | (11.568) | 5.314 | - | (3.320) | - | (1.994) | - | (0) | 30/06/2023 |
+| Valeau | 70 | (70) | 0 | - | - | - | - | - | 0 | 30/06/2023 |
+| Veretout | 18.500 | (7.289) | 11.211 | - | - | - | (3.737) | - | 7.474 | 30/06/2024 |
+| Vetkal | 80 | (23) | 57 | - | - | - | (28) | - | 28 | 30/06/2023 |
+| Vicario | 400 | (87) | 313 | - | - | (209) | (104) | - | - | 30/06/2024 |
+| Villar | 5.000 | (1.604) | 3.396 | - | - | - | (1.132) | - | 2.264 | 30/06/2024 |
+| Vina | - | - | - | 15.635 | - | - | (2.807) | - | 12.828 | 30/06/2026 |
+| Volpato | - | - | - | 116 | - | - | (39) | - | 77 | 30/06/2024 |
+| Wiklund | - | - | - | 30 | - | - | (9) | - | 21 | 30/06/2024 |
+| Zajsek | 223 | (44) | 179 | - | (0) | (89) | (89) | - | 0 | 30/06/2023 |
+| Zalewski | 150 | (26) | 124 | - | - | - | (34) | - | 90 | 30/06/2025 |
+| Zaniolo | 6.500 | (3.287) | 3.212 | - | - | - | (1.070) | - | 2.142 | 30/06/2024 |
+| **TOTALE** | **423.349** | **(225.278)** | **198.072** | **94.011** | **(17.804)** | **(10.185)** | **(83.555)** | **(1.890)** | **178.648** | |
+| Attualizzazioni | (24.454) | 14.589 | (9.865) | (9.362) | - | - | 6.050 | - | (13.177) | |
+| **TOTALE** | **398.895** | **(210.689)** | **188.207** | **84.648** | **(17.804)** | **(10.185)** | **(77.505)** | **(1.890)** | **165.472** | |
 
 67
 
@@ -2529,23 +2521,22 @@ Infine, Le frequenze annue di anticipazione e di turnover sono desunte dalle esp
 
 --- pág. 78 ---
 
-RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE  
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
-# 7.16 DEBITI COMMERCIALI NON CORRENTI E CORRENTI
+### 7.16 DEBITI COMMERCIALI NON CORRENTI E CORRENTI
 
 I Debiti commerciali, pari a 180.657 migliaia di euro (197.507 migliaia di euro al 30 giugno 2021) sono relativi a debiti verso società di calcio, debiti verso altri fornitori, e debiti verso parti correlate. Il decremento dei debiti commerciali deriva principalmente dalla diminuzione dei debiti verso società di calcio, agenti e consulenti sportivi, relativi ad operazioni di acquisizione a titolo definitivo nei diritti alle prestazioni sportive verificatesi nel periodo. Di seguito si riporta il saldo delle quote con scadenze entro ed oltre i dodici mesi.
 
-|  €/000 | 30/06/2022 |   |   | 30/06/2021 |   |   | Variazioni  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Corrente | Non corrente | Totale | Corrente | Non corrente | Totale | Corrente | Non corrente | Totale  |
-|  Debiti verso società di Calcio | 65.304 | 61.764 | 128.068 | 91.359 | 47.192 | 138.551 | (25.055) | 14.572 | (10.483)  |
-|  Debiti verso agenti e consulenti sportivi | 23.356 | 5.423 | 28.779 | 28.000 | 3.619 | 31.618 | (4.644) | 1.804 | (2.839)  |
-|  Debiti verso altri fornitori | 23.712 | 0 | 23.712 | 23.928 | 1.912 | 25.840 | (216) | (1.912) | (2.128)  |
-|  Debiti vs imprese correlate | 98 | - | 98 | 1.498 | - | 1.498 | (1.400) | - | (1.400)  |
-|  **TOTALE** | **113.470** | **67.187** | **180.657** | **144.784** | **52.723** | **197.507** | **(31.315)** | **14.464** | **(16.851)**  |
+| €/000 | 30/06/2022 Corrente | 30/06/2022 Non corrente | 30/06/2022 Totale | 30/06/2021 Corrente | 30/06/2021 Non corrente | 30/06/2021 Totale | Variazioni Corrente | Variazioni Non corrente | Variazioni Totale |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Debiti verso società di Calcio | 66.304 | 61.764 | 128.068 | 91.359 | 47.192 | 138.551 | (25.055) | 14.572 | (10.483) |
+| Debiti verso agenti e consulenti sportivi | 23.356 | 5.423 | 28.779 | 28.000 | 3.619 | 31.618 | (4.644) | 1.804 | (2.839) |
+| Debiti verso altri fornitori | 23.712 | 0 | 23.712 | 23.928 | 1.912 | 25.840 | (216) | (1.912) | (2.128) |
+| Debiti vs imprese correlate | 98 | - | 98 | 1.498 | - | 1.498 | (1.400) | - | (1.400) |
+| **TOTALE** | **113.470** | **67.187** | **180.657** | **144.784** | **52.723** | **197.507** | **(31.315)** | **14.464** | **(16.851)** |
 
-# Debiti verso società di calcio
+<u>*Debiti verso società di calcio*</u>
 
 I Debiti verso società di calcio, pari a 128.068 migliaia di euro (138.551 migliaia di euro al 30 giugno 2021), registrano un decremento di 10.483 migliaia di euro, sono relativi agli acquisti a titolo definitivo e/o temporaneo dei diritti alle prestazioni di calciatori, nonché a premi di valorizzazione, addestramento tecnico e solidarietà FIFA:
 
@@ -2839,7 +2830,6 @@ Il 16 settembre 2022, le parti si sono altresì scambiate i documenti in rispost
 --- pág. 87 ---
 
 RELAZIONE FINANZIARIA ANNUALE
-
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
 sulle richieste documentali in data 30 settembre 2022, il 7 ottobre le parti si sono scambiate i documenti la cui produzione è stata ordinata dall'arbitro.
@@ -2848,26 +2838,25 @@ Il 27 ottobre 2022, New Balance ha depositato una memoria, cui AS Roma replicher
 
 In base alle informazioni e ai documenti disponibili, il rischio di soccombenza è probabile.
 
-# 7.19 DEBITI VERSO ISTITUTI PREVIDENZIALI
+7.19 DEBITI VERSO ISTITUTI PREVIDENZIALI
 
 Pari a 7.213 migliaia di euro (3.583 migliaia di euro, al 30 giugno 2021), in crescita di 3.630 migliaia di euro, sono relativi sostanzialmente a contributi previdenziali e ritenute operate ai lavoratori dipendenti e collaboratori, unitamente alla quota di spettanza della Società, regolarmente versati nei termini di legge. Si segnala che la Società e il Gruppo, con riferimento ai versamenti fiscali e contributivi con scadenza nei mesi di marzo, aprile, maggio e giugno 2020, si sono avvalsi delle disposizioni dell'art. 61 del Decreto Legge del 17 marzo 2020 n.18 (convertito in L. n. 27/2020), come successivamente modificato dall'art. 127 del Decreto Legge del 19 maggio 2020 n. 34 (convertito, con modificazioni, dalla L. n. 77/2020) ed hanno sospeso il versamento delle ritenute IRPEF e dei contributi per complessivi 13,4 milioni di euro, quasi interamente riferiti alla AS Roma, il cui versamento è stato avviato dalla Società e dal Gruppo il 16 settembre 2020 in applicazione delle previsioni di cui all'art. 97 del Decreto Legge del 14 agosto 2020 n. 104.
 
 Inoltre, con riferimento ai versamenti fiscali e contributivi in scadenza nei mesi di gennaio e febbraio 2021, il Gruppo si è avvalso delle disposizioni dell'art.1, commi 36 e 37 della Legge di Bilancio 2021, ed ha sospeso il versamento delle ritenute IRPEF e dei contributi per complessivi 19,8 milioni di euro, interamente riferiti alla AS Roma, il cui versamento senza applicazione di sanzioni e interessi, mediante rateizzazione fino a un massimo di ventiquattro rate mensili di pari importo, è stato avviato il 25 maggio 2021.
 
-Infine, con riferimento ai versamenti fiscali e contributivi in scadenza nel mese di gennaio, febbraio, marzo, aprile, maggio, giugno e luglio 2022, il Gruppo, avvalendosi delle disposizioni dell'art.1 commi 923 e 924 della Legge di Bilancio 2022 e dell'art. 7 del DL 17/2022 convertito con modificazioni nella L. 34/2022, ha sospeso il versamento delle ritenute IRPEF e dei contributi per complessivi 41,8 milioni di euro, interamente riferiti alla AS Roma, il cui versamento, senza applicazione di sanzioni e interessi, era previsto in un'unica soluzione entro il 31 agosto 2022 o mediante rateizzazione fino a un massimo di quattro rate mensili di pari importo a partire dal 31 agosto 2022, pari al 50 per cento del totale dovuto, e l'ultima rata entro il 16 dicembre 2022 pari al valore residuo. Si segnala infatti che l'art. 7 del DL 17/2022, convertito con modificazioni nella L. 34/2022, oltre a differire al 31 agosto 2022 il termine di ripresa dei versamenti sospesi, originariamente previsto al 30 maggio 2022, ha altresì ampliato l'ambito temporale della sospensione disposta dalla Legge di Bilancio 2022, rendendola applicabile anche ai versamenti in scadenza nel periodo 1° maggio – 31 luglio 2022. Da ultimo, in sede di conversione del decreto "Aiuti" nella L. 15.7.2022 n. 91, la sospensione dei soli versamenti la cui scadenza era ricompresa nel periodo 1 gennaio – 30 aprile 2022 è stata ulteriormente prorogata al 30 novembre 2022 ed è stato disposto che tali versamenti sospesi dovranno essere effettuati, senza applicazione di sanzioni e interessi, in un'unica soluzione entro il 16.12.2022.
+Infine, con riferimento ai versamenti fiscali e contributivi in scadenza nel mese di gennaio, febbraio, marzo, aprile, maggio, giugno e luglio 2022, il Gruppo, avvalendosi delle disposizioni dell'art.1 commi 923 e 924 della Legge di Bilancio 2022 e dell'art. 7 del DL 17/2022 convertito con modificazioni nella L. 34/2022, ha sospeso il versamento delle ritenute IRPEF e dei contributi per complessivi 41,8 milioni di euro, interamente riferiti alla AS Roma, il cui versamento, senza applicazione di sanzioni e interessi, era previsto in un'unica soluzione entro il 31 agosto 2022 o mediante rateizzazione fino a un massimo di quattro rate mensili di pari importo a partire dal 31 agosto 2022, pari al 50 per cento del totale dovuto, e l'ultima rata entro il 16 dicembre 2022 pari al valore residuo. Si segnala infatti che l'art. 7 del DL 17/2022, convertito con modificazioni nella L. 34/2022, oltre a differire al 31 agosto 2022 il termine di ripresa dei versamenti sospesi, originariamente previsto al 30 maggio 2022, ha altresì ampliato l'ambito temporale della sospensione disposta dalla Legge di Bilancio 2022, rendendola applicabile anche ai versamenti in scadenza nel periodo 1° maggio – 31 luglio 2022. Da ultimo, in sede di conversione del decreto "Aiuti" nella L. 15.7.2022 n. 91, la sospensione dei soli versamenti la cui scadenza era ricompresa nel periodo 1 gennaio - 30 aprile 2022 è stata ulteriormente prorogata al 30 novembre 2022 ed è stato disposto che tali versamenti sospesi dovranno essere effettuati, senza applicazione di sanzioni e interessi, in un'unica soluzione entro il 16.12.2022.
 
-# 7.20 ALTRE PASSIVITÀ NON CORRENTI E CORRENTI
+7.20 ALTRE PASSIVITÀ NON CORRENTI E CORRENTI
 
-Pari a 51.374 migliaia di euro (66.331 migliaia di euro, al 30 giugno 2021), registrano un decremento di 14.957 migliaia di euro nell'esercizio. Sono composte dei seguenti elementi:
+Pari a 51.374 migliaia di euro (66.331 migliaia di euro, al 30 giugno 2021), registrano un decremento di 14.957 migliaia di euro nell' esercizio. Sono composte dei seguenti elementi:
 
-|  €/000 | 30/06/2022 |   |   | 30/06/2021 |   |   | Variazioni  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Corrente | Non corrente | Totale | Corrente | Non corrente | Totale | Corrente | Non corrente | Totale  |
-|  Debiti verso dipendenti e tesserati | 22.655 | - | 22.655 | 38.057 | - | 38.057 | (15.413) | - | (15.413)  |
-|  Debiti verso imprese correlate | 2.226 | - | 2.226 | 2.410 | - | 2.410 | (184) | - | (184)  |
-|  Altre passività | 4.824 | - | 4.824 | 6.490 | 440 | 6.930 | (1.666) | (440) | (2.106)  |
-|  Ratio e risconti passivi | 12.933 | 8.737 | 21.670 | 10.098 | 8.925 | 19.923 | 2.835 | (88) | 2.747  |
-|  **TOTALE** | **42.637** | **8.737** | **51.374** | **57.066** | **8.265** | **66.331** | **(14.429)** | **(528)** | **(14.957)**  |
+| €/000 | 30/06/2022 – Corrente | 30/06/2022 – Non corrente | 30/06/2022 – Totale | 30/06/2021 – Corrente | 30/06/2021 – Non corrente | 30/06/2021 – Totale | Variazioni – Corrente | Variazioni – Non corrente | Variazioni – Totale |
+|---|---|---|---|---|---|---|---|---|---|
+| Debiti verso dipendenti e tesserati | 22.655 | - | 22.655 | 38.067 | - | 38.067 | (15.413) | - | (15.413) |
+| Debiti verso imprese correlate | 2.226 | - | 2.226 | 2.410 | - | 2.410 | (184) | - | (184) |
+| Altre passività | 4.824 | - | 4.824 | 6.490 | 440 | 6.930 | (1.666) | (440) | (2.106) |
+| Ratei e risconti passivi | 12.933 | 8.737 | 21.670 | 10.098 | 8.825 | 18.923 | 2.835 | (88) | 2.747 |
+| TOTALE | 42.637 | 8.737 | 51.374 | 57.066 | 9.265 | 66.331 | (14.429) | (528) | (14.957) |
 
 87
 
@@ -3279,68 +3268,66 @@ Pari a 90.277 migliaia di euro (102.018 migliaia di euro al 30 giugno 2021), in 
 
 --- pág. 98 ---
 
-# **RELAZIONE FINANZIARIA ANNUALE**
+RELAZIONE FINANZIARIA ANNUALE  
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
-|  €/000 | 12 mesi al |   | Variazioni  |
-| --- | --- | --- | --- |
-|   |  30/06/2022 | 30/06/2021  |   |
-|  Ammortamenti DPS calciatori | (77.505) | (88.836) | 11.331  |
-|  Ammortamenti delle altre immobilizz. immateriali | (452) | (468) | 16  |
-|  Ammortamento delle immobilizzazioni materiali | (3.244) | (1.956) | (1.288)  |
-|  Ammortamento Diritti d'uso | (4.179) | (4.529) | 349  |
-|  **Totale ammortamenti** | **(85.381)** | **(95.789)** | **10.408**  |
-|  Svalutazioni dei crediti correnti | (4.897) | (6.230) | 1.333  |
-|  **Totale** | **(90.277)** | **(102.018)** | **11.741**  |
+| €/000 | 12 mesi al 30/06/2022 | 12 mesi al 30/06/2021 | Variazioni |
+| :--- | :---: | :---: | :---: |
+| Ammortamenti DPS calciatori | (77.505) | (88.836) | 11.331 |
+| Ammortamenti delle altre immobilizz. immateriali | (452) | (468) | 16 |
+| Ammortamento delle immobilizzazioni materiali | (3.244) | (1.956) | (1.288) |
+| Ammortamento Diritti d'uso | (4.179) | (4.529) | 349 |
+| **Totale ammortamenti** | **(85.381)** | **(95.789)** | **10.408** |
+| Svalutazioni dei crediti correnti | (4.897) | (6.230) | 1.333 |
+| **Totale** | **(90.277)** | **(102.018)** | **11.741** |
 
 In particolare, si riferiscono per 85.381 migliaia di euro ad ammortamenti (95.789 migliaia di euro al 30 giugno 2021), e per 4.897 migliaia di euro a svalutazioni di crediti correnti (6.230 migliaia di euro al 30 giugno 2021), operate per adeguarli al valore al presunto realizzo determinato mediante l'applicazione del modello dell'*expected credit loss* previsto dal principio contabile internazionale IFRS 9, tenuto conto anche in parte degli impatti del COVID 19.
 
-# **8.14. RICAVI NETTI DA GESTIONE DEI DIRITTI PLURIENNALI PRESTAZIONI CALCIATORI**
+### 8.14. RICAVI NETTI DA GESTIONE DEI DIRITTI PLURIENNALI PRESTAZIONI CALCIATORI
 
 La Gestione netta dei Diritti pluriennali alle prestazioni sportive dei calciatori ("DPS") ha determinato un risultato netto negativo pari a 11.606 migliaia di euro (negativo per 1.198 migliaia di euro al 30 giugno 2021), in peggioramento di 10.408 migliaia di euro, rispetto all'esercizio precedente.
 
-|  €/000 | 12 mesi al |   | Variazioni  |
-| --- | --- | --- | --- |
-|   |  30/06/2022 | 30/06/2021  |   |
-|  *Proventi:* |  |  |   |
-|  Plusvalenze | 6.206 | 21.323 | (15.116)  |
-|  Proventi da trasferimenti temporanei | 3.627 | 6.024 | (2.397)  |
-|  Altri proventi | 4.850 | 8.779 | (3.928)  |
-|  **Totale proventi** | **14.584** | **36.125** | **(21.441)**  |
-|  *Oneri:* |  |  |   |
-|  Minusvalenze e svalutazioni | (10.185) | (21.067) | 10.883  |
-|  Oneri da trasferimenti temporanei | (2.483) | (2.117) | (366)  |
-|  Altri oneri | (13.621) | (14.138) | 517  |
-|  **Totale oneri** | **(26.290)** | **(37.323)** | **11.033**  |
-|  **Totale** | **(11.606)** | **(1.198)** | **(10.408)**  |
+| €/000 | 12 mesi al 30/06/2022 | 12 mesi al 30/06/2021 | Variazioni |
+| :--- | :---: | :---: | :---: |
+| *Proventi:* | | | |
+| Plusvalenze | 6.206 | 21.323 | (15.116) |
+| Proventi da trasferimenti temporanei | 3.627 | 6.024 | (2.397) |
+| Altri proventi | 4.850 | 8.779 | (3.928) |
+| **Totale proventi** | **14.684** | **36.125** | **(21.441)** |
+| *Oneri:* | | | |
+| Minusvalenze e svalutazioni | (10.185) | (21.067) | 10.883 |
+| Oneri da trasferimenti temporanei | (2.483) | (2.117) | (366) |
+| Altri oneri | (13.621) | (14.138) | 517 |
+| **Totale oneri** | **(26.290)** | **(37.323)** | **11.033** |
+| **Totale** | **(11.606)** | **(1.198)** | **(10.408)** |
 
 Le Plusvalenze sono state conseguite con le operazioni definite nel corso della stagione 2021/22, e in particolare:
 
-|  12 mesi stagione 2021/22 Calciatorie / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata  |
-| --- | --- | --- | --- |
-|  Under / Marsiglia | 8.400 | 3.603 | 4.797  |
-|  Olsen/Aston Villa | 3.500 | 2.469 | 1.031  |
-|  Ciervo / Sassuolo | 2.000 | 39 | 1.961  |
-|  Celar / Lugano | 475 | 269 | 206  |
-|  Podgoreanu / Spezia | 300 | 243 | 57  |
-|  D'Orazio / SPAL | 70 | 64 | 6  |
-|  **Totale** | **14.745** | **6.688** | **8.057**  |
-|  Adeguamento IFRS 9 |  |  | (1.851)  |
-|  **Totale plusvalenze nette** | **14.745** | **6.688** | **6.206**  |
+| 12 mesi stagione 2021/22<br>Calciatore / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata |
+| :--- | :---: | :---: | :---: |
+| Under / Marsiglia | 8.400 | 3.603 | 4.797 |
+| Olsen/Aston Villa | 3.500 | 2.469 | 1.031 |
+| Ciervo / Sassuolo | 2.000 | 39 | 1.961 |
+| Celar / Lugano | 475 | 269 | 206 |
+| Podgoreanu / Spezia | 300 | 243 | 57 |
+| D'Orazio / SPAL | 70 | 64 | 6 |
+| **Totale** | **14.745** | **6.688** | **8.057** |
+| Adeguamento IFRS 9 | - | - | (1.851) |
+| **Totale plusvalenze nette** | **14.745** | **6.688** | **6.206** |
 
-|  12 mesi stagione 2020/21 Calciatorie / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata  |
-| --- | --- | --- | --- |
-|  Schick / Bayer Leverkusen | 26.500 | 18.724 | 7.776  |
-|  Cetin / Hellas Verona | 7.837 | 3.451 | 4.386  |
-|  Cancellieri / Hellas Verona | 2.500 | - | 2.500  |
-|  Diably / Hellas Verona | 2.500 | - | 2.500  |
-|  Defrel / Sassuolo | 10.000 | 7.835 | 2.165  |
-|  Gonalons / Granada | 4.000 | 1.876 | 2.124  |
-|  Kolarov/ Internazionale | 1.500 | 568 | 932  |
-|  Silipo/Palermo | 20 | - | 20  |
-|  **Totale** | **54.857** | **32.454** | **22.403**  |
-|  Adeguamento IFRS 9 |  |  | (1.081)  |
-|  **Totale plusvalenze nette** | **54.857** | **32.454** | **21.323**  |
+| 12 mesi stagione 2020/21<br>Calciatore / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata |
+| :--- | :---: | :---: | :---: |
+| Schick / Bayer Leverkusen | 26.500 | 18.724 | 7.776 |
+| Cetin / Hellas Verona | 7.837 | 3.451 | 4.386 |
+| Cancellieri / Hellas Verona | 2.500 | - | 2.500 |
+| Diaby / Hellas Verona | 2.500 | - | 2.500 |
+| Defrel / Sassuolo | 10.000 | 7.835 | 2.165 |
+| Gonalons / Granada | 4.000 | 1.876 | 2.124 |
+| Kolarov/ Internazionale | 1.500 | 568 | 932 |
+| Silipo / Palermo | 20 | - | 20 |
+| **Totale** | **54.857** | **32.454** | **22.403** |
+| Adeguamento IFRS 9 | - | - | (1.081) |
+| **Totale plusvalenze nette** | **54.857** | **32.454** | **21.323** |
 
 Le minusvalenze e svalutazioni realizzate, pari a 10.185 migliaia di euro (21.067 migliaia di euro al 30 giugno 2021), sono determinate da operazioni di mercato realizzate nel corso dell'esercizio, da risoluzioni contrattuali, oltre che da svalutazioni operate tenendo conto dei valori di cessione definiti successivamente alla chiusura dell'esercizio prima della data della presente Relazione. La tabella che segue ne riporta il dettaglio:
 
@@ -3577,40 +3564,42 @@ L'Indebitamento finanziario del Gruppo al 30 giugno 2022 si compone invece di: (
 
 --- pág. 105 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE  
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
 08/04/2020 N.23 ("Decreto Liquidità") (v) debiti verso altri Istituti Finanziari; (vi) debiti collegati alle carte di credito della Società e (vii) debiti finanziari per diritti d'uso relativi ai contratti di locazione del Gruppo. Di seguito si riporta l'analisi delle scadenze per le passività finanziarie con il dettaglio delle scadenze contrattuali residue:
 
-|  (€/000) | Saldo al 30.06.2022 | Rimborso entro 12 mesi | Rimborso entro 24 mesi | Rimborso entro 36 mesi | Rimborso entro 48 mesi | Rimborso superiore a 48 mesi  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Prestito Obbligazionario* | 290.831 | 19.710 | 19.782 | 251.340 | 0 | 0  |
-|  Finanziamenti bancari di lungo periodo* | 6.022 | 134 | 1.570 | 1.570 | 1.570 | 1.177  |
-|  Finanziamenti bancari di breve periodo** | 6.801 | 6.801 |  |  |  |   |
-|  Finanziamenti soci | 85.076 | 0 |  |  |  | 85.076  |
-|  Mutui Istituto del Credito Sportivo | 499 | 113 | 117 | 121 | 73 | 76  |
-|  Debiti per carte di credito e altri debiti | 164 | 164 |  |  |  |   |
-|  Debiti contratti di leasing IFRS 16 | 23.248 | 7.491 | 4.608 | 2.551 | 1.503 | 7.095  |
-|   | 412.641 | 34.413 | 26.076 | 255.582 | 3.146 | 93.424  |
+*(€/000)*
 
-* Indicato al valore nominale, comprensivo degli interessi contrattualmente previsti
+| | Saldo al 30.06.2022 | Rimborso entro 12 mesi | Rimborso entro 24 mesi | Rimborso entro 36 mesi | Rimborso entro 48 mesi | Rimborso superiore a 48 mesi |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Prestito Obbligazionario* | 290.831 | 19.710 | 19.782 | 251.340 | 0 | 0 |
+| Finanziamenti bancari di lungo periodo* | 6.022 | 134 | 1.570 | 1.570 | 1.570 | 1.177 |
+| Finanziamenti bancari di breve periodo** | 6.801 | 6.801 | | | | |
+| Finanziamenti soci | 85.076 | 0 | | | | 85.076 |
+| Mutui Istituto del Credito Sportivo | 499 | 113 | 117 | 121 | 73 | 76 |
+| Debiti per carte di credito e altri debiti | 164 | 164 | | | | |
+| Debiti contratti di leasing IFRS 16 | 23.248 | 7.491 | 4.608 | 2.551 | 1.503 | 7.095 |
+| | **412.641** | **34.413** | **26.076** | **255.582** | **3.146** | **93.424** |
 
-**Alla Data della presente Relazione, al fine di coprire i fabbisogni finanziaria di breve termine, il Gruppo AS Roma può disporre di fonti di finanziamento per complessivi 7 milioni di Euro, relativi a due affidamenti bancari di breve periodo per linee per cassa concesse da primari Istituti di credito, a condizioni correnti di mercato. La tabella seguente mostra le scadenze, l'affidamento concesso, ed il relativo utilizzo delle stesse al 30 giugno 2022.
+\* *Indicato al valore nominale, comprensivo degli interessi contrattualmente previsti*  
+\*\* *Alla Data della presente Relazione, al fine di coprire i fabbisogni finanziaria di breve termine, il Gruppo AS Roma può disporre di fonti di finanziamento per complessivi 7 milioni di Euro, relativi a due affidamenti bancari di breve periodo per linee per cassa concesse da primari Istituti di credito, a condizioni correnti di mercato. La tabella seguente mostra le scadenze, l'affidamento concesso, ed il relativo utilizzo delle stesse al 30 giugno 2022.*
 
-|  (€/000) | Scadenza | Tasso di interesse | Affidamento concesso alla data della Relazione | Affidamento concesso utilizzato al 30 giugno 2022  |
-| --- | --- | --- | --- | --- |
-|  Linea 1 | a revoca | 4,850% | 2.000 | 1.954  |
-|  Linea 2 | 31/01/2023 | Euribor 3m + 4,75% | 5.000 | 4.709  |
-|  **TOTALE FONTI DI FINANZIAMENTO** |  |  | **7.000** | **6.663**  |
-|  Interessi maturati e non ancora addebitati dalla banca: |   |   |   | 138  |
-|  **Totale debito v/banche** |   |   |   | **6.801**  |
+*(€/000)*
 
-Per maggiori dettagli relativi all'indebitamento finanziario del Gruppo, si rinvia alle note 7.13. "Finanziamenti a breve e medio lungo termine" e 7.14 "Debiti per Diritti d'uso".
+| | Scadenza | Tasso di interesse | Affidamento concesso alla data della Relazione | Affidamento concesso utilizzato al 30 giugno 2022 |
+| :--- | :---: | :---: | :---: | :---: |
+| Linea 1 | a revoca | 4,650% | 2.000 | 1.954 |
+| Linea 2 | 31/01/2023 | Euribor 3m + 4,75% | 5.000 | 4.709 |
+| **TOTALE FONTI DI FINANZIAMENTO** | | | **7.000** | **6.663** |
+| Interessi maturati e non ancora addebitati dalle banca: | | | | 138 |
+| **Totale debito v/banche** | | | | **6.801** |
 
-### Rischio connesso ai covenant contrattuali
+Per maggiori dettagli relativi all'indebitamento finanziario del Gruppo, si rinvia alle note 7.13. "Finanziamenti a breve e medio lungo termine" e 7.14 "Debiti per Diritti d'uso ".
 
-I titoli di debito emessi da MediaCo in data 26 ottobre 2022 sono garantiti da Soccer e da AS Roma, oltre che dai seguenti pegni e garanzie: (i) un pegno sulle quote di MediaCo; (ii) un pegno sulle quote di AS Roma; (iii) un pegno sui conti correnti di MediaCo; (iv) una cessione in garanzia da parte di Roma dei crediti derivanti dai diritti televisivi nazionali e internazionali (c.d. "Indirect Media Rights"); (v) una cessione in garanzia dei crediti rinvenienti da taluni rapporti infragruppo; (vi) una cessione in garanzia da parte di Soccer e MediaCo di crediti derivanti da contratti di sponsorizzazione e media rights (direct ed indirect).
+<u>*Rischio connesso ai covenant contrattuali*</u>
+
+I titoli di debito emessi da MediaCo in data 26 ottobre 2022 sono garantiti da Soccer e da AS Roma, oltre che dai seguenti pegni e garanzie: (i) un pegno sulle quote di MediaCo; (ii) un pegno sulle quote di AS Roma; (iii) un pegno sui conti correnti di MediaCo; (iv) una cessione in garanzia da parte di Roma dei crediti derivanti dai diritti televisivi nazionali e internazionali (c.d, "Indirect Media Rights"); (v) una cessione in garanzia dei crediti rinvenienti da taluni rapporti infragruppo; (vi) una cessione in garanzia da parte di Soccer e MediaCo di crediti derivanti da contratti di sponsorizzazione e media rights (direct ed indirect).
 
 In particolare, tra le altre cose, la documentazione finanziaria relativa all'emissione dei titoli di debito prevede taluni covenants - usuali per operazioni similari - tra i quali, a titolo esemplificativo e non esaustivo:
 
@@ -3885,36 +3874,40 @@ PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2022
 
 # 14. PROSPETTI DI INFORMATIVA SUPPLEMENTARE
 
-# 14.1. ELENCO DELLE PARTECIPAZIONI RILEVANTI AL 30 GIUGNO 2022
+## 14.1. ELENCO DELLE PARTECIPAZIONI RILEVANTI AL 30 GIUGNO 2022
 
-![img-3.jpeg](img-3.jpeg)
+[Diagramma organigramma:]
 
-Si ricorda che l'Assemblea dei Soci
-della AS Roma, tenutasi il 18 ottobre
-2022, ha deliberato l'acquisto, da
-parte di AS Roma, delle quote
-detenute rispettivamente da Brand
-Management S.r.l. e ASR Soccer LP
-S.r.l., acquisto che dovrà essere
-formalizzato con atto notarile. (€/000)
+- AS Roma S.p.A.
+  - 100% → Roma Studio S.r.l.
+  - 99,98% → Soccer Sas di Brand Management S.r.l.
+  - 11,34% → ASR Media and Sponsorship S.r.l.
+- Soccer Sas di Brand Management S.r.l. → 88,66% → ASR Media and Sponsorship S.r.l.
+- Brand Management S.r.l. → 0,01% → Soccer Sas di Brand Management S.r.l.
+- AS Roma Soccer LP S.r.l. → 0,01% → Soccer Sas di Brand Management S.r.l.
+- *Perimetro di consolidamento* (area tratteggiata che racchiude AS Roma S.p.A., Roma Studio S.r.l., Soccer Sas di Brand Management S.r.l. e ASR Media and Sponsorship S.r.l.)
 
-|  Denominazione | Sede legale | Capitale sociale | Valuta  |
-| --- | --- | --- | --- |
-|  Soccer S.r.l. | Roma | 123.432.270 | Euro  |
-|  ASR Media and Sponsorship S.r.l. | Roma | 200.000 | Euro  |
-|  Roma Studio S.r.l. | Roma | 110.000 | Euro  |
+Si ricorda che l'Assemblea dei Soci della AS Roma, tenutasi il 18 ottobre 2022, ha deliberato l'acquisto, da parte di AS Roma, delle quote detenute rispettivamente da Brand Management S.r.l. e ASR Soccer LP S.r.l., acquisto che dovrà essere formalizzato con atto notarile. (€/000)
 
-Dati riferiti alla Relazione finanziaria consolidata per l'esercizio chiuso al 30 giugno 2022
+| Denominazione | Sede legale | Capitale sociale | Valuta |
+|---|---|---|---|
+| Soccer S.r.l. | Roma | 123.432.270 | Euro |
+| ASR Media and Sponsorship S.r.l. | Roma | 200.000 | Euro |
+| Roma Studio S.r.l. | Roma | 110.000 | Euro |
 
-# 14.2. DATI ESSENZIALI DELLE IMPRESE CONTROLLATE
+*Dati riferiti alla Relazione finanziaria consolidata per l'esercizio chiuso al 30 giugno 2022*
 
-|  Denominazione | % Quota di partecipazione | Capitale sociale | Patrimonio netto | Valore della produzione | Utile netto (perdita) | Attività non correnti e immobilizzazioni | Totale Attività  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Soccer Sas di Brand Management S.r.l. | 99,98% | 123.432 | 48.504 | 41.955 | (17.018) | 335.961 | 431.517  |
-|  ASR Media and Sponsorship S.r.l. | 11,34% | 200 | 142.523 | 22.700 | 15.815 | 477.246 | 502.018  |
-|  Roma Studio S.r.l. | 100,00% | 110 | 1.205 | 4.162 | (1.878) | 2.484 | 6.557  |
+## 14.2. DATI ESSENZIALI DELLE IMPRESE CONTROLLATE
 
-Dati riferiti alla Relazione finanziaria al 30 giugno 2022
+| Denominazione | % Quota di partecipazione | Capitale sociale | Patrimonio netto | Valore della produzione | Utile netto (perdita) | Attività non correnti e immobilizzazioni | Totale Attività |
+|---|---|---|---|---|---|---|---|
+| Soccer Sas di Brand Management S.r.l. | 99,98% | 123.432 | 48.504 | 41.955 | (17.018) | 335.961 | 431.517 |
+| ASR Media and Sponsorship S.r.l. | 11,34% | 200 | 142.523 | 22.700 | 15.815 | 477.246 | 502.018 |
+| Roma Studio S.r.l. | 100,00% | 110 | 1.205 | 4.162 | (1.978) | 2.484 | 6.557 |
+
+*Dati riferiti alla Relazione finanziaria al 30 giugno 2022*
+
+114
 
 --- pág. 115 ---
 

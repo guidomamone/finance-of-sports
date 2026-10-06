@@ -437,22 +437,29 @@ La composizione del valore della produzione dell'esercizio 2024/2025 risulta ess
 
 --- pág. 16 ---
 
-![img-2.jpeg](img-2.jpeg)
+[Grafico a torta:
+- Plusvalenze 51,04%
+- Proventi televisivi 26,08%
+- Sponsor. e proventi pubblicitari 7,51%
+- Ricavi da gare 6,63%
+- Proventi da Lega 1,57%
+- Altri ricavi e proventi 4,84%
+- Ricavi cessione temp. giocatori 0,74%
+- Contributi conto esercizio 1,59%]
 
-|  Descrizione | 30/06/2025 | 30/06/2024 | Delta  |
-| --- | --- | --- | --- |
-|  Proventi televisivi | € 36.955.129 | € 40.910.195 | -€ 3.955.066  |
-|  Sponsor. e proventi pubblicitari | € 10.637.030 | € 9.982.479 | € 654.551  |
-|  Ricavi da gare | € 9.399.768 | € 8.162.494 | € 1.237.274  |
-|  Proventi da Lega | € 2.226.525 | € 1.318.941 | € 907.584  |
-|  Altri ricavi e proventi | € 6.853.363 | € 20.653.228 | -€ 13.799.865  |
-|  Ricavi cessione temp. giocatori | € 1.050.000 | € 585.220 | € 464.780  |
-|  Contributi conto esercizio | € 2.252.223 | € 1.624.701 | € 627.522  |
-|  Plusvalenze | € 72.321.288 | € 37.633.206 | € 34.688.082  |
-|  **Totali** | **€ 141.695.326** | **€ 120.870.464** | **€ 20.824.862**  |
+| Descrizione | 30/06/2025 | 30/06/2024 | Delta |
+| :--- | :--- | :--- | :--- |
+| Proventi televisivi | € 36.955.129 | € 40.910.195 | -€ 3.955.066 |
+| Sponsor. e proventi pubblicitari | € 10.637.030 | € 9.982.479 | € 654.551 |
+| Ricavi da gare | € 9.399.768 | € 8.162.494 | € 1.237.274 |
+| Proventi da Lega | € 2.226.525 | € 1.318.941 | € 907.584 |
+| Altri ricavi e proventi | € 6.853.363 | € 20.653.228 | -€ 13.799.865 |
+| Ricavi cessione temp. giocatori | € 1.050.000 | € 585.220 | € 464.780 |
+| Contributi conto esercizio | € 2.252.223 | € 1.624.701 | € 627.522 |
+| Plusvalenze | € 72.321.288 | € 37.633.206 | € 34.688.082 |
+| **Totali** | **€ 141.695.326** | **€ 120.870.464** | **€ 20.824.862** |
 
-Risultano in aumento anche i costi della produzione, che passano da 123,798 milioni di Euro al 30.06.24 a 130,699 milioni di Euro al 30.06.25. Tale aumento è principalmente dovuto agli oneri diversi di gestione ed in particolare per gli importi dovuti a titolo di sell on fee ad alcuni club a seguito della cessione di alcuni giocatori, per il costo dovuto per l'acquisto temporaneo di giocatori (Toure dal Metz) e per l'importo relativo alla conciliazione/adesione sottoscritta con l'Agenzia delle Entrate relativo al contenzioso dello Stadio.
-Le altre voci di costo sono in linea con il dato registrato nell'esercizio precedente.
+Risultano in aumento anche i costi della produzione, che passano da 123,798 milioni di Euro al 30.06.24 a 130,699 milioni di Euro al 30.06.25. Tale aumento è principalmente dovuto agli oneri diversi di gestione ed in particolare per gli importi dovuti a titolo di sell on fee ad alcuni club a seguito della cessione di alcuni giocatori, per il costo dovuto per l'acquisto temporaneo di giocatori (Toure dal Metz) e per l'importo relativo alla conciliazione/adesione sottoscritta con l'Agenzia delle Entrate relativo al contenzioso dello Stadio. Le altre voci di costo sono in linea con il dato registrato nell'esercizio precedente.
 
 La composizione dei costi della produzione dell'esercizio 2024/2025 risulta la seguente:
 
@@ -460,26 +467,32 @@ La composizione dei costi della produzione dell'esercizio 2024/2025 risulta la s
 
 --- pág. 17 ---
 
-![img-3.jpeg](img-3.jpeg)
+[Grafico a torta:]
+- Costi per godimento beni di terzi: 0,79%
+- Costi per merci e materiali di consumo: 2,26%
+- Costi del personale: 32,24%
+- Ammortamenti e svalutazioni: 39,66%
+- Costi per servizi: 13,99%
+- Oneri diversi di gestione: 11,05%
 
 Per maggiore chiarezza si riporta di seguito la composizione dei costi per servizi, anche con il confronto rispetto allo scorso esercizio:
 
-|  Valori in € | 30/06/2025 | 30/06/2024 | Delta  |
-| --- | --- | --- | --- |
-|  Costi per attività sportiva | € 636.430 | € 638.855 | -€ 2.425  |
-|  Spese per organizzazione gare | € 1.423.586 | € 1.284.006 | € 139.580  |
-|  Costi specifici tecnici | € 6.762.137 | € 7.897.581 | -€ 1.135.444  |
-|  Costi vitto, alloggio, locomozione gare | € 2.204.748 | € 1.881.915 | € 322.833  |
-|  Assicurative e previdenziali | € 542.234 | € 568.689 | -€ 26.455  |
-|  Amministrative, pubblicitarie e generali | € 2.888.920 | € 2.665.802 | € 223.118  |
-|  Altre prestazioni di servizi | € 3.833.013 | € 3.942.525 | -€ 109.512  |
-|  **Totale** | **€ 18.291.068** | **€ 18.879.372** | **-€ 588.304**  |
+| Valori in € | 30/06/2025 | 30/06/2024 | Delta |
+| :--- | :--- | :--- | :--- |
+| Costi per attività sportiva | € 636.430 | € 638.855 | -€ 2.425 |
+| Spese per organizzazione gare | € 1.423.586 | € 1.284.006 | € 139.580 |
+| Costi specifici tecnici | € 6.762.137 | € 7.897.581 | -€ 1.135.444 |
+| Costi vitto, alloggio, locomozione gare | € 2.204.748 | € 1.881.915 | € 322.833 |
+| Assicurative e previdenziali | € 542.234 | € 568.689 | -€ 26.455 |
+| Amministrative, pubblicitarie e generali | € 2.888.920 | € 2.665.802 | € 223.118 |
+| Altre prestazioni di servizi | € 3.833.013 | € 3.942.525 | -€ 109.512 |
+| **Totale** | **€ 18.291.068** | **€ 18.879.372** | **-€ 588.304** |
 
-# Azioni proprie o di società controllanti
+### Azioni proprie o di società controllanti
 
 Nel corso del periodo 01.07.2024 – 30.06.2025 la Vostra società non ha acquistato o alienato nessuna azione della controllante o azione propria anche per tramite di società fiduciaria o per interposta persona. Alla data del 30.06.2025 la Vostra società non possiede alcuna azione propria o della controllante, nemmeno per tramite di società fiduciarie o per interposta persona.
 
-# Informativa ai sensi dell'art. 2497-bis Codice Civile
+### Informativa ai sensi dell'art. 2497-bis Codice Civile
 
 Nel corso del periodo 01.07.2024 – 30.06.2025 la Vostra società non ha coltivato rapporti con la società Gesapar S.A., che esercita l'attività di direzione e coordinamento, oltre a quelli istituzionalmente previsti
 

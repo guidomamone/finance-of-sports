@@ -271,73 +271,75 @@ con sede in Bergamo ex articoli 2497 e seguenti del Codice Civile
 
 --- pág. 9 ---
 
-|  RENDICONTO FINANZIARIO - GRUPPO ATALANTA | 31.12.2021 | 31.12.2020  |
-| --- | --- | --- |
-|  **A. Fluori finanziari derivanti dall'attività operativa (metodo indiretto)** |  |   |
-|  Utile (perdita) dell'esercizio | 35.142.575 | 51.738.249  |
-|  Imposte sul reddito | 17.970.195 | 22.648.727  |
-|  Interessi passivi/(interessi attivi) | 371.700 | 1.146.086  |
-|  (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai OPC) | 5.030 | (70)  |
-|  **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **53.489.500** | **75.532.992**  |
-|  *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* |  |   |
-|  Accantonamenti ai fondi | 2.118.200 | 64.036  |
-|  Ammortamenti delle immobilizzazioni | 54.383.486 | 44.838.785  |
-|  Svahitazioni per perdite durevoli di valore | 3.107.256 | 635.211  |
-|  Rettifiche di valore di attività e passività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie | 314.727 | 0  |
-|  Altre rettifiche per elementi non monetari | 18.204 | 77.331  |
-|  **2. Fluxo finanziario prima delle variazioni del CCN** | **59.942.873** | **45.605.363**  |
-|  *Variazioni del capitale circolante netto* |  |   |
-|  Decremento/(incremento) delle rimanenze | 100.542 | 93.168  |
-|  Decremento/(incremento) dei crediti vs clienti | 5.560.329 | (413.938)  |
-|  Incremento/(decremento) dei debiti verso fornitori | (2.999.178) | (8.707.059)  |
-|  Decremento/(decremento) ratei e risconti attivi | 1.887.427 | (1.117.450)  |
-|  Incremento/(decremento) ratei e risconti passivi | (6.889.496) | 5.517.699  |
-|  Altre variazioni del capitale circolante netto | 455.435 | 81.253  |
-|  **3. Fluxo finanziario dopo le variazioni del CCN** | **(1.884.941)** | **(4.544.333)**  |
-|  *Altre rettifiche* |  |   |
-|  Interessi incassati/(pagati) | (78.963) | (564.814)  |
-|  (Imposte sul reddito pagato) | (24.186.219) | (8.901.100)  |
-|  Dividendi incassati | 0 | 0  |
-|  (Utilizzo dei fondi) | 0 | (112.570)  |
-|  **Totale Altre rettifiche** | **(24.265.182)** | **(9.578.484)**  |
-|  **Fluxo finanziario dell'attività operativa (A)** | **87.282.249** | **107.013.538**  |
-|  **B. Fluori finanziari derivanti dall'attività di investimento** |  |   |
-|  *Immobilizzazioni materiali* | **(1.398.735)** | **(10.199.246)**  |
-|  (Investimenti) | (1.399.586) | (10.199.246)  |
-|  Disinvestimenti | 845 | 0  |
-|  *Diritti pluriennali alle prestazioni dei calciatori* | **(76.052.813)** | **(56.486.234)**  |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (71.804.346) | (78.880.024)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | 8.179.501 | 6.367.114  |
-|  Decremento/(decremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (15.397.462) | (36.248.238)  |
-|  Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 2.969.434 | 52.274.914  |
-|  Altre immobilizzazioni immateriali | (2.829.085) | (2.156.471)  |
-|  (Investimenti) | (2.869.062) | (2.156.471)  |
-|  Disinvestimenti | 39.977 | 0  |
-|  *Immobilizzazioni finanziarie* | **(553.809)** | **(178)**  |
-|  (Investimenti) | (553.984) | (178)  |
-|  Disinvestimenti | 175 | 0  |
-|  *Attività finanziarie non immobilizzate* | **0** | **0**  |
-|  **Totale Altre attività di investimento** | **(3.382.894)** | **(2.156.649)**  |
-|  **Fluxo finanziario dell'attività di investimento (B)** | **(80.834.442)** | **(68.842.129)**  |
-|  **C. Fluori finanziari derivanti dall'attività di finanziamento** |  |   |
-|  *Mezzi di terzi* | **(1.253.223)** | **2.595.132**  |
-|  Incremento (decremento) debiti a breve verso banche | 0 | (119.879)  |
-|  Accensione finanziamenti | 0 | 2.715.011  |
-|  (Rimborso finanziamenti) | (1.253.223) | 0  |
-|  *Finanziamenti soci* | **0** | **0**  |
-|  Accensione finanziamenti | 0 | 0  |
-|  (Rimborso finanziamenti) | 0 | 0  |
-|  *Mezzi propri* | **0** | **0**  |
-|  Aumento di capitale a pagamento | 0 | 0  |
-|  (Rimborso di capitale) | 0 | 0  |
-|  Cessione (acquisto) di azioni proprie | 0 | 0  |
-|  (Dividendi (e acconti su dividendi) pagati) | 0 | 0  |
-|  *Altre entrate (uscite) da attività di finanziamento* | **0** | **0**  |
-|  **Fluxo finanziario dell'attività di finanziamento (C)** | **(1.253.223)** | **2.595.132**  |
-|  **Increvimento (decremento) delle disponibilità liquide (A x B x C)** | **5.194.584** | **40.766.541**  |
-|  **Disponibilità liquide all'inizio dell'esercizio** | **51.945.337** | **11.178.796**  |
-|  **Disponibilità liquide alla fine dell'esercizio** | **57.139.921** | **51.945.337**  |
-|  **Saldo a pareggio** | **5.194.584** | **40.766.541**  |
+**RENDICONTO FINANZIARIO - GRUPPO ATALANTA**
+
+| | 31.12.2021 | 31.12.2020 |
+|---|---:|---:|
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| Utile (perdita) dell'esercizio | 35.142.575 | 51.738.249 |
+| Imposte sul reddito | 17.970.195 | 22.648.727 |
+| Interessi passivi/(interessi attivi) | 371.700 | 1.146.086 |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di attività (escluse quelle derivanti dai DPC) | 5.030 | (70) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **53.489.500** | **75.532.992** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 2.118.200 | 64.036 |
+| Ammortamento delle immobilizzazioni | 54.383.486 | 44.838.785 |
+| Svalutazioni per perdite durevoli di valore | 3.107.256 | 625.211 |
+| Rettifiche di valore di attività e passività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie | 314.727 | 0 |
+| Altre rettifiche per elementi non monetari | 19.204 | 77.331 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **59.942.873** | **45.605.363** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | 100.542 | 93.168 |
+| Decremento/(incremento) dei crediti vs clienti | 5.560.329 | (413.938) |
+| Incremento/(decremento) dei debiti verso fornitori | (2.999.178) | (8.707.059) |
+| Decremento/(incremento) ratei e risconti attivi | 1.887.427 | (1.117.450) |
+| Incremento/(decremento) ratei e risconti passivi | (6.889.496) | 5.517.693 |
+| Altre variazioni del capitale circolante netto | 455.435 | 81.253 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **(1.884.941)** | **(4.546.333)** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | (78.963) | (564.814) |
+| (Imposte sul reddito pagate) | (24.186.219) | (8.901.100) |
+| Dividendi incassati | 0 | 0 |
+| (Utilizzo dei fondi) | 0 | (112.570) |
+| **Totale Altre rettifiche** | **(24.265.182)** | **(9.578.484)** |
+| **Flusso finanziario dell'attività operativa (A)** | **87.282.249** | **107.013.538** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | | |
+| *Immobilizzazioni materiali* | *(1.398.735)* | *(10.199.246)* |
+| (Investimenti) | (1.399.580) | (10.199.246) |
+| Disinvestimenti | 845 | 0 |
+| *Diritti pluriennali alle prestazioni dei calciatori* | *(76.052.813)* | *(56.486.234)* |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (71.804.346) | (78.880.024) |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 8.179.561 | 6.367.114 |
+| Decremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (15.397.462) | (36.248.238) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 2.969.434 | 52.274.914 |
+| *Altre Immobilizzazioni immateriali* | *(2.829.085)* | *(2.156.471)* |
+| (Investimenti) | (2.869.062) | (2.156.471) |
+| Disinvestimenti | 39.977 | 0 |
+| *Immobilizzazioni finanziarie* | *(553.809)* | *(178)* |
+| (Investimenti) | (553.984) | (178) |
+| Disinvestimenti | 175 | 0 |
+| *Attività finanziarie non immobilizzate* | *0* | *0* |
+| *Totale Altre attività di investimento* | *(3.382.894)* | *(2.156.649)* |
+| **Flusso finanziario dell'attività di investimento (B)** | **(80.834.442)** | **(68.842.129)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | *(1.253.223)* | *2.595.132* |
+| Incremento (decremento) debiti a breve verso banche | 0 | (119.879) |
+| Accensione finanziamenti | 0 | 2.715.011 |
+| (Rimborso finanziamenti) | (1.253.223) | 0 |
+| *Finanziamenti soci* | *0* | *0* |
+| Accensione finanziamenti | 0 | 0 |
+| (Rimborso finanziamenti) | 0 | 0 |
+| *Mezzi propri* | *0* | *0* |
+| Aumento di capitale a pagamento | 0 | 0 |
+| (Rimborso di capitale) | 0 | 0 |
+| Cessione (acquisto) di azioni proprie | 0 | 0 |
+| (Dividendi (e acconti su dividendi) pagati) | 0 | 0 |
+| *Altre entrate (uscite) da attività di finanziamento* | *0* | *0* |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **(1.253.223)** | **2.595.132** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **5.194.584** | **40.766.541** |
+| Disponibilità liquide all'inizio dell'esercizio | 51.945.337 | 11.178.796 |
+| Disponibilità liquide alla fine dell'esercizio | 57.139.921 | 51.945.337 |
+| Saldo a pareggio | 5.194.584 | 40.766.541 |
 
 7
 
@@ -864,36 +866,36 @@ Tale voce accoglie:
 
 - un fondo rischi di € 863.196, conteggiato quasi interamente con riferimento al probabile rischio di soccombenza della società nei contenziosi fiscali in essere la cui movimentazione viene sotto esposta:
 
-|   | Esercizio 2021 | Esercizio 2020  |
-| --- | --- | --- |
-|  Fondo rischi inizio esercizio | 607.193 | 719.763  |
-|  Utilizzi dell'esercizio | (39.778) | (169.874)  |
-|  Accantonamenti dell'esercizio | 295.781 | 57.304  |
-|  Saldo finale | 863.196 | 607.193  |
+| | Esercizio 2021 | Esercizio 2020 |
+| :--- | ---: | ---: |
+| Fondo rischi inzio esercizio | 607.193 | 719.763 |
+| Utilizzi dell'esercizio | (39.778) | (169.874) |
+| Accantonamenti dell'esercizio | 295.781 | 57.304 |
+| **Saldo finale** | **863.196** | **607.193** |
 
 - un fondo oneri di € 704.538, relativo al compenso lordo variabile attribuito all'Amministratore Delegato a titolo di Long Term Incentive dal Consiglio di Amministrazione in data 13 novembre 2020 interamente accantonato nell'esercizio.
 
-Da ultimo Vi segnaliamo che la società ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate riferiti agli anni fiscali 2012, 2013, 2014 e 2015. Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società; in particolare, la presunta violazione discende dalla riqualificazione effettuata dall'Amministrazione Finanziaria delle prestazioni di consulenza fornite alla società da due suoi agenti sportivi in occasione dei trasferimenti dei diritti pluriennali alle prestazioni di tali calciatori: secondo la tesi dell'Amministrazione Finanziaria, infatti, i compensi corrisposti dalla società ai propri agenti sportivi sono da qualificare quali fringe benefit riconosciuti ai tre calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
+Da ultimo Vi segnaliamo che la società ha ricevuto alcuni avvisi di accertamento dall'Agenzia delle Entrate riferiti agli anni fiscali 2012, 2013, 2014 e 2015. Con detti avvisi di accertamento l'Amministrazione Finanziaria ha contestato violazioni in materia di riscossione attinenti a un ipotizzato maggior reddito da lavoro dipendente di tre ex calciatori della società; in particolare, la presunta violazione discende dalla riqualificazione effettuata dall'Amministrazione Finanziaria delle prestazioni di consulenza fornite alla società da due suoi agenti sportivi in occasione dei trasferimenti dei diritti pluriennali alle prestazioni di tali calciatori: secondo la tesi dell'Amministrazione Finanziaria, infatti, i compensi corrisposti dalla società ai propri agenti sportivi sono da qualificare quali *fringe benefit* riconosciuti ai tre calciatori, essendo questi ultimi i reali beneficiari della predetta attività di consulenza.
 
 La società, ritenendo totalmente infondate le pretese dell'Amministrazione Finanziaria, ha presentato ricorsi avverso tutti i predetti avvisi di accertamento.
 
 Per completezza di informativa, nella tabella seguente vengono riportati le contestazioni mosse dall'Agenzia delle Entrate alla società e lo stato del contenzioso:
 
-|   | 2012 | 2013 | 2014 | 2015  |
-| --- | --- | --- | --- | --- |
-|  Contestazioni |  |  |  |   |
-|  Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600  |
-|  Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170  |
-|  Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636  |
-|  Totale | 374.710 | 311.537 | 19.860 | 35.406  |
-|   | 2012 | 2013 | 2014 | 2015  |
-|  Status Contenzioso |  |  |  |   |
-|  Ricorso Presentato | Si | Si | Si | Si  |
-|  Commissione Tributaria Provinciale | Annullamento integrale | Annullamento parziale | Annullamento integrale | Annullamento integrale  |
-|  Presentazione Appello da parte dell'Ufficio | Si | Si | Si | Si  |
-|  Costituzione in giudizio Società | Si | Si | Si | Si  |
-|  Commissione Tributaria Regionale - Processo | In pendenza | Sentenza CTR - annullamento integrale dell'avviso di accertamento | In pendenza | In pendenza  |
-|  Rischio | Possibile | Possibile | Possibile | Possibile  |
+| Contestazioni | 2012 | 2013 | 2013 | 2014 | 2015 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Impropria detrazione IVA | 5.250 | 0 | 10.500 | 6.600 | 4.400 |
+| Impropria deduzione costi ai Fini IRAP | 20.475 | 0 | 9.360 | 1.170 | 780 |
+| Mancato versamento ritenute | 348.985 | 311.537 | 0 | 27.636 | 18.424 |
+| **Totale** | **374.710** | **311.537** | **19.860** | **35.406** | **23.604** |
+
+| Status Contenzioso | 2012 | 2013 | 2013 | 2014 | 2015 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Ricorso Presentato | Sì | Sì | Sì | Sì | Sì |
+| Commissione Tributaria Provinciale | Annullamento integrale | Annullamento parziale | Annullamento integrale | Annullamento integrale | - |
+| Presentazione Appello da parte dell'Ufficio | Sì | Sì | Sì | Sì | - |
+| Costituzione in giudizio Società | Sì | Sì | Sì | Sì | - |
+| Commissione Tributaria Regionale - Processo | In pendenza | Sentenza CTR - annullamento integrale dell'avviso di accertamento | In pendenza | In pendenza | In attesa della pubblicazione della sentenza di primo grado |
+| Rischio | Possibile | Possibile | Possibile | Possibile | Possibile |
 
 In ossequio alle disposizioni civilistiche contenute nell'art. 2424-bis, terzo comma, del Codice Civile e al contenuto dell'O.I.C. n. 31, nel presente bilancio consolidato non si è provveduto ad accantonare alcun fondo rischi in quanto, anche a parere dei legali che assistono la società in tale contenzioso, è ragionevole ritenere che la società possa risultare vittoriosa in sede contenziosa (come già avvenuto, peraltro, in Commissione Tributaria Provinciale e
 
@@ -1617,11 +1619,17 @@ Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
 --- pág. 47 ---
 
-Allegato 1 - Diritti Pluriennali alle prestazioni dei calciatori
+**Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori**
 
-|  Data di data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati per la data di dati |   |   | Capitolo |   | Previsione |   | Setticatore |   | Vita/La/02.2012 |   |   | Moleto e valori di parte |   |   |   | Moltococenti di parte |   |   |   | Valori di 01.02.2013 |   |   |   | Valori di 01.02.2013 |   |   |   | Valori di 01.02.2013 |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Catilare (COSM) di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data | Data di data |   |
+(Tabella ruotata, con carattere molto piccolo; la gran parte delle cifre e dei nomi non è leggibile.)
+
+Intestazioni di colonna (parzialmente leggibili): Dei diritti pluriennali alle prestazioni dei calciatori | Calciatore COGNOME e NOME | Data di nascita | Data inizio/scadenza contratto | Data acquisto | Società | Info Calciatore | Destinataria | Società | Valori al 31.12.2020 (Costo storico, Fdo ammort., Netto) | Variazioni valori di periodo (Acquisti / Incrementi, Netto, Cessioni, Costo storico, Prezzo Cessione / Decrementi, Ammortamenti, Aggiorn. Positivi, Svalutazioni) | Diritti economici di periodo | Altre variazioni | Riclassificazioni / Prerisultano | Valori al 31.12.2021 (Costo storico, Fdo amm., Netto) | Anni Vita Residua | Altri oneri/costi di acquisizione | Compensi agenti | Compensi agenti/Bonus sul venduto | Note | Valori sul-con-tre
+
+Sezione: "Altri calciatori pro professionisti" – righe per calciatore: [ilegible]
+
+Ultima riga: "TOTALE ALTRI CALCIATORI PRO PROFESSIONISTI" – [ilegible]
+
+Note laterali visibili nell'ultima colonna (parzialmente leggibili): "50% prezzo di cessione", "5% eccedenza", "[ilegible]"
 
 45
 

@@ -4295,85 +4295,85 @@ PROSPETTI DI INFORMATIVA SUPPLEMENTARE
 
 # BILANCIO 2024-25
 
-| BAGLIOTTI | NAZIONE DI V. NO | Contratto | Provenienza | Destinazione | Valori socio periodo (Valori in Euro / 000) | Variazioni valori di periodo (Valori in Euro / 000) | Effetti economici di periodo (Valori in Euro / 000) | Valori di fine periodo (Valori in Euro / 000) | Compensa Agenti (Costo storico invitale) | Attri-costi di acquirire | Sell'en fine |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Data totale prima contratto | Data scadenza ultime contratto | Data acquisito | Società | Data Cessione | Società | 30/06/2024 | Valore Notto | 4) Acquisti di diritti | 5) Concensi di diritti e risoluzioni | 6) Velo}) Militare fondi ammortamento | 6) Arempe it | 7) Svalutaz. | 8) Minuca. | 9) Piscivalenze | Costo storico | Fondo di ammortamento | Valore Notto |
-| 1) Costo storico | 2) Fondo senovali | 3) Valore Notto |
-| Modultuendi | 18/07/1999 | 28/8/24 | 30/8/28 | 29/8/24 | AL AS AL SALER |  |  |  |  |  | 2.500 |  |  | (543) |  |  | 2.500 | (543) | 1.951 |  |  |  |
-| Abraham | 02/10/1997 | 17/8/21 | 30/8/27 | 17/8/21 | CHELSEA |  |  | 42.280 | (24.777) | 17.572 |  | (42.280) | 30.020 | (8.263) |  | 2.881 | (0) |  | (0) | - |  | (1) |
-| Alcan | 20/06/1998 | 1/7/21 | 30/8/28 | 1/7/21 | CHINESE |  |  |  |  |  |  |  |  |  |  | 10.630 |  |  |  | - |  |  |
-| Balbanzi | 23/03/2003 | 1/2/24 | 30/8/28 | 1/2/24 | EMPEU |  |  | 11.459 | (1.857) | 10.442 | 2.000 |  |  | (2.871) |  |  | 10.459 | (3.868) | 3.531 | 1.000 |  | (2) |
-| Baer | 12/05/2002 | 12/8/18 | 30/8/26 | 15/8/18 | VENIZIA |  |  | 465 | (424) | 61 |  |  |  | (31) | (23) |  | 464 | (445) | (0) | 30 | 15 |  |
-| Baer | 16/05/2002 | 16/8/18 | 30/8/28 |  | SETTORE GIOVANILE |  |  | 75 | (50) | 20 |  |  |  | (5) | (76) |  | 68 | (60) |  | 75 |  |  |
-| Calik | 17/02/1997 | 2/7/22 | 30/8/28 | 3/7/22 | LECE L'AL SA |  |  | 7.383 | (3.886) | 3.697 |  |  |  | (1.846) |  |  | 7.383 | (5.535) | 1.843 | 250 |  |  |
-| Chimolini | 15/01/2004 | 20/7/27 | 30/8/27 |  | SETTORE GIOVANILE |  |  |  |  |  | 100 |  |  | (42) |  |  | 100 | (52) | 117 | 100 |  |  |
-| Cicciento | 03/03/1995 | 1/7/18 | 30/8/27 | 1/7/18 | ATALANTA |  |  | 30.000 | (24.966) | 6.634 |  |  |  | (1.878) |  |  | 30.000 | (29.064) | 3.758 | 600 |  |  |
-| Dart | 04/03/2002 | 27/7/24 | 30/8/28 | 29/7/24 | EUROBARENI |  |  |  |  |  | 4.000 | (4.000) | 707 | (707) |  | 5.257 |  |  |  | - |  | (3) |
-| Darben | 06/06/2001 | 9/7/19 | 30/8/26 | 10/7/19 | VISAN NEST |  |  | 120 | (86) | 22 |  |  |  | (7) | (71) |  | 100 | (100) |  | 120 |  |  |
-| Davisik | 21/04/1997 | 3/8/24 | 30/8/28 | 1/8/24 | SIROVA |  |  |  |  |  | 41.715 |  |  | (7.836) |  |  | 41.715 | (7.836) | 23.478 | 1.000 |  | (4) |
-| E Costa-Cosco | 28/03/2005 | 1/2/22 | 30/8/28 | 15/10/21 | SPORT CLUB CORNITHIANS |  |  | 75 | (28) | 47 |  | (75) | 32 | (4) |  | 7.042 |  |  |  | 75 |  | (5) |
-| Genesis Towards (Angolino) | 04/03/1997 | 30/1/24 | 30/8/28 | 30/8/24 | ANDINWAL SPORT L'EXICO |  |  | 5.378 | (115) | 2.262 |  |  |  | (1.255) |  |  | 5.378 | (1.425) | 3.947 | 250 |  |  |
-| Helio | 05/03/2006 | 21/7/22 | 30/8/29 | 23/7/22 | NA DONZALE |  |  | 200 | (33) | 167 |  |  |  | (165) |  |  | 200 | (200) |  |  |  | (8) |
-| Imatoni | 27/05/2005 | 10/7/24 | 30/8/28 |  | SETTORE GIOVANILE |  |  |  |  |  | 70 |  |  | (35) | (35) |  | 25 | (25) |  | 70 |  |  |
-| Imimose | 18/06/1995 | 2/6/24 | 30/8/28 | 2/6/24 | CHINESE |  |  |  |  |  | 2.000 |  |  | (500) |  |  | 2.000 | (500) | 1.084 | 2.000 |  |  |
-| Isbanti | 04/01/2008 | 28/1/22 | 30/8/25 | 28/1/22 | VAL824 |  |  | 800 | (458) | 744 |  | (542) | 542 | (86) | (58) |  |  |  |  |  |  | (7) |
-| Jorgei | 13/03/2007 | 14/7/23 | 30/8/28 | 7/7/23 | NA MARIBIR |  |  | 150 | (49) | 101 |  |  |  | (51) | (51) |  | 89 | (89) |  |  |  |  |
-| Kundorp | 17/02/1995 | 1/7/17 | 30/8/25 | 28/8/17 | FOTOROGRO V. |  |  | 10.000 | (10.000) | 10 |  |  |  |  |  |  | 10.000 | (10.000) | 10 | 600 |  |  |
-| Kirkland | 18/05/2007 | 24/7/23 | 30/8/28 | 18/7/23 | CHINESE |  |  | 64 | (27) | 43 |  |  |  | (22) | (22) |  | 42 | (42) |  |  |  |  |
-| Novarlotta | 01/07/2004 | 23/8/21 | 30/8/24 | 22/8/21 | EMPEU |  |  | 30 | (30) |  |  |  |  |  |  |  | 30 | (30) |  |  |  | (8) |
-| Nora | 17/05/2001 | 31/8/24 | 30/8/28 | 30/8/24 | BORUSSA VFL 1993 M |  |  |  |  |  | 10.074 |  |  | (2.277) |  |  | 10.074 | (2.277) | 15.750 |  |  | (9) |
-| Nordkalla | 08/02/2003 | 17/8/20 | 30/8/28 | 17/8/20 | HOLLES VIREWA |  |  | 29.500 | (18.803) | 10.697 |  |  |  | (2.874) |  |  | 29.500 | (21.477) | 8.023 | 1.000 |  |  |
-| Le Foe | 03/02/2000 | 10/7/24 | 30/8/29 | 8/7/24 | STAGE KIRNAAS |  |  |  |  |  | 23.750 | (23.750) | 4.183 | (4.783) |  | (1.587) |  |  |  | 750 |  |  |
-| Levski | 03/03/2000 | 31/7/23 | 30/8/25 | 29/8/23 | NA DELUX F1 |  |  | 600 | (300) | 300 |  |  |  | (300) |  |  | 600 | (600) |  |  |  | (10) |
-| Marcioli | 17/04/1996 | 17/7/19 | 30/8/27 | 17/7/19 | ATALANTA |  |  | 25.984 | (18.848) | 7.335 |  |  |  | (2.445) |  |  | 25.984 | (21.094) | 4.890 | 1.984 |  |  |
-| Marinisi | 08/07/2000 | 26/7/22 | 30/8/28 |  | SETTORE GIOVANILE |  |  |  |  |  | 325 |  |  | (34) |  |  | 325 | (34) | 290 |  |  |  |
-| Misina | 27/04/2006 | 22/8/21 | 30/8/28 | 20/8/22 | NA DONZALE |  |  | 400 | (233) | 176 |  | (400) | 335 | (115) |  | (65) |  |  |  |  |  |  |
-| N'Stella | 20/09/1999 | 27/4/25 | 30/8/28 | 27/8/25 | CHINESE |  |  | 4.000 | (800) | 2.000 |  |  |  | (800) |  |  | 4.000 | (1.000) | 2.400 | 4.000 |  |  |
-| Olivoro | 07/07/2004 | 27/8/28 | 30/8/28 | 18/8/28 | BARCOURSA |  |  | 150 | (100) | 22 |  |  |  | (7) | (71) |  | 150 | (178) |  |  |  |  |
-| Porodin | 29/06/1994 | 15/8/22 | 30/8/28 | 15/8/22 | PARIS IL KERMAN |  |  | 3.645 | (1.670) | 3.174 | 721 |  |  | (1.920) |  |  | 4.265 | (3.480) | 366 |  |  | (11) |
-| Pallegolo | 16/06/1996 | 1/7/17 | 30/8/28 | 1/7/17 | BARCIALE |  |  | 10.000 | (10.027) | 7.028 |  |  |  | (578) |  |  | 10.000 | (10.348) | 519 | 3.885 |  |  |
-| Podil | 23/09/2004 | 20/7/27 | 30/8/28 |  | SETTORE GIOVANILE |  |  | 40 | (18) | 22 | 150 |  |  | (20) |  |  | 180 | (38) | 152 | 40 |  |  |
-| Rum | 30/04/1993 | 17/7/24 | 30/8/25 | 17/7/24 | CHINESE |  |  |  |  |  |  |  |  |  |  | 750 |  |  |  |  |  |  |
-| Rutumajima | 03/09/2005 | 13/7/22 | 30/8/28 | 18/2/22 | BROKINA |  |  | 40 | (40) |  |  |  |  |  |  |  | 40 | (40) |  |  |  |  |
-| Sanuzi | 18/01/2003 | 23/1/25 | 30/8/28 | 23/1/25 | ATC AIAG |  |  |  |  |  | 6.000 |  |  | (594) |  |  | 6.000 | (594) | 5.450 |  |  |  |
-| Salணம் | 17/06/2006 | 3/8/22 | 30/8/25 | 29/7/22 | FC WINTERPANE RS |  |  | 84 | (60) | 32 |  |  |  | (20) |  |  | 84 | (80) | 9 |  |  | (10) |
-| Salmbrosio | 15/02/1999 | 10/7/21 | 30/8/24 | 13/7/21 | WSS 2006/AMPTON |  |  | 13.812 | (13.812) |  |  |  |  |  |  |  | 13.812 | (13.812) |  | 300 |  |  |
-| Salm-Eddino | 18/01/2002 | 3/2/25 | 30/8/29 | 3/2/25 | FC TWENTE |  |  |  |  |  | 8.000 |  |  | (878) |  |  | 8.000 | (878) | 8.881 |  |  |  |
-| Sangoni | 06/08/2007 | 1/7/24 | 30/8/27 | 24/8/24 | LEVANTE |  |  | 1.616 |  | 1.616 |  |  |  | (328) |  |  | 1.616 | (328) | 1.077 |  |  | (13) |
-| Sasso | 28/05/2007 | 4/8/22 | 30/8/28 | 4/8/22 | CHINESE |  |  | 84 | (26) | 58 |  |  |  | (29) |  |  | 84 | (55) | 29 |  |  |  |
-| Stark | 20/04/2000 | 19/7/24 | 30/8/28 | 19/7/24 | FC PRO VINCELLI |  |  | 252 | (47) | 200 |  |  |  | (103) |  |  | 252 | (100) | 103 |  |  |  |
-| Stamandino | 04/09/1995 | 2/8/22 | 30/8/27 | 2/8/27 | BANVA |  |  | 10.000 | (11.521) | 8.078 |  |  |  | (2.842) |  |  | 10.000 | (14.484) | 3.126 | 1.000 |  | (14) |
-| Sevillea | 22/11/1989 | 30/8/29 | 30/8/25 | 6/10/20 | MANCHESTER UNITED |  |  | 10.000 | (17.030) | 700 |  |  | (18.029) | 17.077 | (150) |  | 749 |  |  | 1.750 | 830 | (15) |
-| Sebakkai | 07/09/1998 | 2/7/23 | 30/8/27 |  | CHINESE |  |  | 1.750 | (582) | 1.568 |  |  |  | (388) |  |  | 1.750 | (571) | 775 | 1.750 |  |  |
-| Sebari | 08/07/2006 | 13/8/22 | 30/8/28 | 8/8/22 | CLUB MEDIAL 7 IMPORTAN |  |  | 222 | (34) | 180 |  |  |  | (80) | (30) |  | 144 | (144) |  |  |  | (16) |
-| Seula | 14/04/2003 | 31/7/24 | 30/8/28 | 30/7/24 | AVANTUS |  |  |  |  |  | 28.825 |  |  | (5.285) |  |  | 28.825 | (5.285) | 23.320 | 2.000 |  |  |
-| Spinaccolo | 23/03/1993 | 1/7/19 | 30/8/24 | 20/8/19 | AVANTUS |  |  | 30.000 | (30.000) |  |  |  |  |  |  |  | 30.000 | (30.000) |  | 1.000 |  |  |
-| Sollar | 27/09/1998 | 16/5/22 | 30/8/27 | 16/5/22 | CHINESE |  |  | 1.800 | (744) | 1.118 |  |  |  | (373) |  |  | 1.800 | (1.118) | 746 | 1.000 |  |  |
-| Strifati | 27/02/2004 | 28/8/20 | 30/8/25 | 29/8/20 | KALIN TALLIN |  |  | 80 | (75) | 7 |  |  | (80) | 74 | (7) |  | 19 |  |  |  |  |  |
-| Zubrani | 23/01/2002 | 16/7/18 | 30/8/23 |  | SETTORE GIOVANILE |  |  | 150 | (100) | 10 |  |  | (400) | 210 | (80) |  | 6.128 | (6) |  | 150 |  |  |
-| **Totale** | **300.750** | **(184.000)** | **81.481** | **139.587** | **(89.585)** | **54.579** | **(42.000)** | **(323)** | **(1.633)** | **30.000** | **300.450** | **(184.573)** | **132.450** | **28.030** | **951** |  |
-| **Totale diritti pluriennati alle prestazioni sportive** | **236.000** | **50.978** | **(5.699)** | **172.775** |  |  |  | **6.588** |  | **(1.056)** | **(2.795)** | **(44.635)** | **37.283** | **(9.392)** |  |  |
-| **Totale diritti pluriennati alle prestazioni sportive** | **244.284** | **(168.582)** | **75.750** | **129.597** | **(89.585)** | **54.579** | **(42.000)** | **(323)** | **(2.607)** | **28.560** | **280.884** | **(168.752)** | **124.091** | **28.530** | **951** |  |
+Cabeceras de grupo: Contratto | Provenienza | Destinazione | Valori inizio periodo (Valori in Euro / 000) 30/06/2024 | Variazioni valori di periodo (Valori in Euro / 000) | Effetti economici di periodo (Valori in Euro / 000) | Valori di fine periodo (Valori in Euro / 000) 30/06/2025
 
-|  Nota | Calciatore | Club beneficiario | Descrizione  |
-| --- | --- | --- | --- |
-|  (1) | Abraham | Chelsea | 100% della differenza fra il prezzo di cessione e l'importo pagato al Chelsea (compresivo di bonus) fino a 60 milioni di euro in aggiunta al 10% della comma eccedente 60 milioni di euro  |
-|  (2) | Balbanzi | Empoli | 10% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus)  |
-|  (3) | Dark | EUROBARENIS | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto  |
-|  (4) | Davisik | Group | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto  |
-|  (5) | E Costa Cosco | SPORT CLUB CORNITHIANS | 20% dell'importo ricevuto dalla AS Roma  |
-|  (6) | Golis | NA DONZALE | 10% dell'importo ricevuto dalla AS Roma  |
-|  (7) | Inferno | Hajduk | 10% dell'importo ricevuto dalla AS Roma in caso di vendita entro 30/08/2020, fino ad un massimo di 1 milione di euro  |
-|  (8) | Keramitis | Empoli | 50% dell'importo ricevuto dalla AS Roma  |
-|  (9) | Kona | BORUSSA VFL 1993 M. | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto  |
-|  (10) | Levak | NK Dulok | 12,5% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus)  |
-|  (11) | Porodde | Paris Saint Germain | 20% della differenza fra il prezzo di cessione e l'importo pagato al Paris Saint Germain (compresivo di bonus)  |
-|  (12) | Romano | FC Winterthur | 10% dell'importo ricevuto dalla AS Roma  |
-|  (13) | Sangaro | Levante | 15% dell'importo ricevuto dalla AS Roma  |
-|  (14) | Shamurodov | Donus | 10% dell'importo ricevuto più tutti i bonus non maturati al momento della cessione  |
-|  (15) | Smalling | Manchester United | 20% dell'importo ricevuto dalla AS Roma  |
-|  (16) | Salties | Club Local 7 Deportivo | 20% dell'importo ricevuto dalla AS Roma  |
-|  (17) | Soule | Juventus | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto  |
+| CALCIATORE | DATA DI NASCITA | Data inizio primo contratto | Data scadenza ultimo contratto | Data acquisto | Provenienza - Società | Destinazione - Data Cessione | Destinazione - Società | 1) Costo storico | 2) Fondo ammort. | 3) Valore Netto | 4) Acquisti di diritti | 5) Cessioni di diritti e risoluzioni | 5-bis) Utilizzo Fondi ammortamento | 6) Ammor.ti | 7) Svalutaz. | 8) Minusv. | 9) Plusvalenze | Costo storico | Fondo di ammortamento | Valore Netto | Compenso Agenti (Costo storico iniziale) | Altri costi di acqui.ne | Sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Abdulhamid | 18/07/1999 | 28/8/24 | 30/6/28 | 26/8/24 | AL HILAL SAUDI | | | | | - | 2.500 | | | (549) | | | | 2.500 | (549) | 1.951 | | | |
+| Abraham | 02/10/1997 | 17/8/21 | 30/6/27 | 17/8/21 | CHELSEA | | | 42.289 | (24.717) | 17.572 | | (42.289) | 30.920 | (6.203) | | | 2.881 | (0) | - | (0) | - | | (1) |
+| Aouar | 30/06/1998 | 1/7/23 | 30/6/28 | 1/7/23 | SVINCOLATO | | | - | - | - | - | | | | | | 10.530 | - | - | - | - | | |
+| Baldanzi | 23/03/2003 | 1/2/24 | 30/6/28 | 1/2/24 | EMPOLI | | | 11.499 | (1.057) | 10.442 | 2.000 | | | (2.911) | | | | 13.499 | (3.968) | 9.531 | 1.000 | | (2) |
+| Boer | 12/05/2002 | 12/9/18 | 30/6/26 | 13/8/18 | VENEZIA | | | 495 | (434) | 61 | | | | (31) | (31) | | | 464 | (465) | (0) | 30 | 15 | |
+| Bove | 16/05/2002 | 16/8/18 | 30/6/28 | | SETTORE GIOVANILE | | | 75 | (55) | 20 | | | | (5) | (15) | | | 60 | (60) | - | 75 | | |
+| Celik | 17/02/1997 | 2/7/22 | 30/6/26 | 3/7/22 | LOSC Lille SA | | | 7.383 | (3.686) | 3.697 | | | | (1.848) | | | | 7.383 | (5.535) | 1.848 | 250 | | |
+| Cherubini | 15/01/2004 | 20/7/21 | 30/6/27 | | SETTORE GIOVANILE | | | | | - | 160 | | | (43) | | | | 160 | (43) | 117 | 100 | | |
+| Cristante | 03/03/1995 | 1/7/18 | 30/6/27 | 1/7/18 | ATALANTA | | | 30.600 | (24.966) | 5.634 | | | | (1.878) | | | | 30.600 | (26.844) | 3.756 | 600 | | |
+| Dahl | 04/03/2002 | 27/7/24 | 30/6/29 | 26/7/24 | DJURGARDENS | | | | | - | 4.000 | (4.000) | 707 | (707) | | | 5.257 | - | - | - | | | (3) |
+| Darboe | 06/06/2001 | 10/7/19 | 30/6/26 | 10/1/19 | YOUNG RIETI | | | 120 | (98) | 22 | | | | (11) | (11) | | | 109 | (109) | - | 120 | | |
+| Dovbyk | 21/06/1997 | 3/8/24 | 30/6/29 | 1/8/24 | GIRONA | | | | | - | 41.113 | | | (7.636) | | | | 41.113 | (7.636) | 33.478 | 1.600 | | (4) |
+| E Costa Cesco | 28/03/2005 | 1/2/22 | 30/6/26 | 15/10/21 | SPORT CLUB CORINTHIANS | | | 75 | (28) | 47 | | (75) | 32 | (4) | | | 7.642 | - | - | - | 75 | | (5) |
+| Esmoris Tasende (Angelino) | 04/01/1997 | 30/1/24 | 30/6/28 | 30/5/24 | RASENBALLSPORT LEIPZIG | | | 5.378 | (115) | 5.263 | | | | (1.316) | | | | 5.378 | (1.431) | 3.947 | 250 | | |
+| Golic | 05/03/2006 | 22/7/22 | 30/6/25 | 22/7/22 | NK DOMZALE | | | 200 | (33) | 167 | | | | (167) | | | | 200 | (200) | - | - | | (6) |
+| Graziani | 21/05/2005 | 10/2/23 | 30/6/26 | | SETTORE GIOVANILE | | | - | - | - | 70 | | | (35) | (35) | | | 35 | (35) | - | 70 | | |
+| Hermoso | 18/06/1995 | 2/9/24 | 30/6/26 | 2/9/24 | SVINCOLATO | | | | | - | 2.000 | | | (906) | | | | 2.000 | (906) | 1.094 | 2.000 | | |
+| Ivkovic | 04/01/2006 | 28/1/22 | 30/6/25 | 28/1/22 | HAJDUK | | | 600 | (456) | 144 | | (542) | 542 | (86) | (58) | | | - | - | - | - | | (7) |
+| Jurgec | 13/03/2007 | 14/7/23 | 30/6/26 | 7/7/23 | NK MARIBOR | | | 150 | (49) | 101 | | | | (51) | (51) | | | 99 | (99) | - | | | |
+| Karsdorp | 11/02/1995 | 1/7/17 | 30/6/25 | 28/6/17 | FEYENOORD R. | | | 15.596 | (15.596) | (0) | | | | - | | | | 15.596 | (15.596) | (0) | 600 | | |
+| Kehayov | 16/05/2007 | 24/7/23 | 30/6/26 | 19/7/23 | SVINCOLATO | | | 64 | (21) | 43 | | | | (22) | (22) | | | 42 | (42) | - | | | |
+| Keramitsis | 01/07/2004 | 22/8/21 | 30/6/24 | 22/8/21 | EMPOLI | | | 30 | (30) | - | | | | - | | | | 30 | (30) | - | - | | (8) |
+| Kone | 17/05/2001 | 31/8/24 | 30/6/29 | 30/8/24 | BORUSSIA VFL 1900 M. | | | | | - | 18.974 | | | (3.217) | | | | 18.974 | (3.217) | 15.756 | | | (9) |
+| Kumbulla | 08/02/2000 | 17/9/20 | 30/6/28 | 17/9/20 | HELLAS VERONA | | | 29.500 | (18.803) | 10.697 | | | | (2.674) | | | | 29.500 | (21.477) | 8.023 | 1.000 | | |
+| Le Fee | 03/02/2000 | 10/7/24 | 30/6/29 | 8/7/24 | STADE RENNAIS | | | | | - | 23.750 | (23.750) | 4.183 | (4.183) | | (1.567) | | - | - | - | 750 | | |
+| Levak | 03/05/2006 | 31/1/23 | 30/6/25 | 29/6/23 | NK OSIJEK FC | | | 600 | (300) | 300 | | | | (300) | | | | 600 | (600) | - | - | | (10) |
+| Mancini | 17/04/1996 | 17/7/19 | 30/6/27 | 17/7/19 | ATALANTA | | | 25.984 | (18.649) | 7.335 | | | | (2.445) | | | | 25.984 | (21.094) | 4.890 | 1.984 | | |
+| Mannini | 08/07/2006 | 26/7/22 | 30/6/28 | | SETTORE GIOVANILE | | | | | | 325 | | | (34) | | | | 325 | (34) | 290 | | | |
+| Mlakar | 27/04/2006 | 22/7/22 | 30/6/25 | 30/6/22 | NK DOMZALE | | | 400 | (225) | 175 | | (400) | 335 | (110) | (65) | | | - | - | - | - | | |
+| N'Dicka | 20/08/1999 | 21/6/23 | 30/6/28 | 21/6/23 | SVINCOLATO | | | 4.000 | (800) | 3.200 | | | | (800) | | | | 4.000 | (1.600) | 2.400 | 4.000 | | |
+| Oliveras | 07/07/2004 | 27/8/20 | 30/6/26 | 18/8/20 | BARCELLONA | | | 130 | (108) | 22 | | | | (11) | (11) | | | 119 | (119) | - | - | | |
+| Paredes | 29/06/1994 | 15/8/23 | 30/6/26 | 15/8/23 | PARIS S. GERMAN | | | 3.645 | (1.470) | 2.174 | 721 | | | (1.929) | | | | 4.365 | (3.400) | 966 | | | (11) |
+| Pellegrini | 19/06/1996 | 1/7/17 | 30/6/26 | 1/7/17 | SASSUOLO | | | 13.665 | (12.627) | 1.038 | | | | (519) | | | | 13.665 | (13.146) | 519 | 3.665 | | |
+| Pisilli | 23/09/2004 | 20/7/21 | 30/6/29 | | SETTORE GIOVANILE | | | 40 | (18) | 22 | 150 | | | (20) | | | | 190 | (38) | 152 | 40 | | |
+| Ryan | 08/04/1992 | 17/7/24 | 30/6/25 | 17/7/24 | SVINCOLATO | | | | | - | | | | | | | 750 | - | - | - | | | |
+| Razumejevs | 03/09/2005 | 13/7/22 | 30/6/25 | 15/2/22 | BIEDRIBA | | | 46 | (46) | - | | | | - | | | | 46 | (46) | - | - | | |
+| Rensch | 18/01/2003 | 23/1/25 | 30/6/29 | 23/1/25 | AFC AJAX | | | | | | 6.050 | | | (594) | | | | 6.050 | (594) | 5.456 | | | |
+| Romano | 17/06/2006 | 3/8/22 | 30/6/25 | 29/7/22 | FC WINTERTHUR AG | | | 94 | (62) | 32 | | | | (23) | | | | 94 | (85) | 9 | - | | (12) |
+| Rui Patricio | 15/02/1988 | 13/7/21 | 30/6/24 | 13/7/21 | WOLVERHAMPTON | | | 13.612 | (13.612) | - | | | | - | | | | 13.612 | (13.612) | - | 300 | | |
+| Salah-Eddine | 18/01/2002 | 3/2/25 | 30/6/29 | 3/2/25 | FC TWENTE | | | | | | 8.900 | | | (819) | | | | 8.900 | (819) | 8.081 | | | |
+| Sangare | 06/08/2007 | 1/7/24 | 30/6/27 | 24/6/24 | LEVANTE | | | 1.616 | - | 1.616 | | | | (539) | | | | 1.616 | (539) | 1.077 | | | (13) |
+| Sarac | 28/05/2007 | 8/8/23 | 30/6/26 | 4/8/23 | SVINCOLATO | | | 84 | (26) | 58 | | | | (29) | | | | 84 | (55) | 29 | | | |
+| Seck | 20/04/2006 | 15/1/24 | 30/6/26 | 15/1/24 | FC PRO VERCELLI | | | 252 | (47) | 205 | | | | (103) | | | | 252 | (150) | 103 | | | |
+| Shomurodov | 26/08/1995 | 2/8/21 | 30/6/27 | 2/8/21 | GENOA | | | 19.600 | (11.521) | 8.079 | | | | (2.943) | | | | 19.600 | (14.464) | 5.136 | 1.600 | | (14) |
+| Smalling | 22/11/1989 | 30/8/19 | 30/6/25 | 5/10/20 | MANCHESTER UNITED | | | 18.029 | (17.239) | 790 | | (18.029) | 17.377 | (138) | | | 149 | - | - | - | 1.750 | 936 | (15) |
+| Solbakken | 07/09/1998 | 2/1/23 | 30/6/27 | | SVINCOLATO | | | 1.750 | (582) | 1.168 | | | | (389) | | | | 1.750 | (971) | 779 | 1.750 | | |
+| Solbes | 08/07/2006 | 12/8/23 | 30/6/26 | 6/8/23 | CLUB SOCIAL Y DEPORTIVO | | | 233 | (54) | 180 | | | | (90) | (90) | | | 144 | (144) | - | | | (16) |
+| Soule | 15/04/2003 | 31/7/24 | 30/6/29 | 30/7/24 | JUVENTUS | | | | | - | 28.625 | | | (5.305) | | | | 28.625 | (5.305) | 23.320 | 2.000 | | |
+| Spinazzola | 25/03/1993 | 1/7/19 | 30/6/24 | 30/6/19 | JUVENTUS | | | 30.800 | (30.800) | - | | | | - | | | | 30.800 | (30.800) | - | 1.300 | | |
+| Svilar | 27/08/1999 | 16/5/22 | 30/6/27 | 16/5/22 | SVINCOLATO | | | 1.865 | (746) | 1.119 | | | | (373) | | | | 1.865 | (1.119) | 746 | 1.500 | | |
+| Vetkal | 21/02/2004 | 26/8/20 | 30/6/25 | 28/8/20 | KALEV TALLIN | | | 80 | (73) | 7 | | (80) | 74 | (1) | | | 19 | - | - | - | - | | |
+| Zalewski | 23/01/2002 | 16/7/18 | 30/6/25 | | SETTORE GIOVANILE | | | 150 | (120) | 30 | 250 | (400) | 210 | (90) | | | 6.128 | (0) | 0 | (0) | 150 | | |
+| **Totale** | | | | | | | | 280.730 | (199.268) | 81.461 | 139.587 | (89.565) | 54.379 | (52.086) | (323) | (1.633) | 33.355 | 330.429 | (196.975) | 133.454 | 28.559 | 951 | - |
+| Attualizzazioni | | | | | | | | (36.346) | 30.676 | (5.669) | (10.279) | - | | 6.586 | | (1.304) | (3.795) | (46.625) | 37.263 | (9.362) | | | |
+| **Totale diritti pluriennali alle prestazioni sportive** | | | | | | | | 244.384 | (168.592) | 75.792 | 129.307 | (89.565) | 54.379 | (45.500) | (323) | (2.937) | 29.560 | 283.804 | (159.712) | 124.091 | 28.559 | 951 | |
+
+| Nota | Calciatore | Club beneficiario | Descrizione |
+|---|---|---|---|
+| (1) | Abraham | Chelsea | 100% della differenza fra il prezzo di cessione e l'importo pagato al Chelsea (compresivo di bonus) fino a 50 milioni di euro in aggiunta al 10% della somma eccedente 50 milioni di euro |
+| (2) | Baldanzi | Empoli | 15% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus) |
+| (3) | Dahl | DJURGARDENS | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto. |
+| (4) | Dovbyk | Girona | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto. |
+| (5) | E Costa Cesco | SPORT CLUB CORINTHIANS | 20% dell'importo ricevuto dalla AS Roma |
+| (6) | Golic | NK DOMZALE | 10% dell'importo ricevuto dalla AS Roma |
+| (7) | Ivkovic | Hajduk | 10% dell'importo ricevuto dalla AS Roma in caso di vendita entro 30/06/2026, fino ad un massimo di 1 milione di euro |
+| (8) | Keramitsis | Empoli | 50% dell'importo ricevuto dalla AS Roma |
+| (9) | Kone | BORUSSIA VFL 1900 M. | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto. |
+| (10) | Levak | NK Osijek | 12,5% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus) |
+| (11) | Paredes | Paris Saint Germain | 30% della differenza fra il prezzo di cessione e l'importo pagato al Paris Saint Germain (compresivo di bonus) |
+| (12) | Romano | FC Winterthur | 15% dell'importo ricevuto dalla AS Roma |
+| (13) | Sangare | Levante | 15% dell'importo ricevuto dalla AS Roma |
+| (14) | Shomurodov | Genoa | 10% dell'importo ricevuto più tutti i bonus non maturati al momento della cessione |
+| (15) | Smalling | Manchester United | 20% dell'importo ricevuto dalla AS Roma |
+| (16) | Solbes | Club Social Y Deportivo | 20% dell'importo ricevuto dalla AS Roma |
+| (17) | Soule | Juventus | 10% del profitto realizzato dalla AS Roma rispetto a quanto corrisposto per l'acquisto. |
 
 --- pág. 94 ---
 

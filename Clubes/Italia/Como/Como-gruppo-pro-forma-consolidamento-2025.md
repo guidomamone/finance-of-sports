@@ -349,154 +349,146 @@ Prospetto Pro-forma di^{}[] Consolidamento
 
 --- pág. 9 ---
 
-Como 1907 - Prospetto Pro-forma di Consolidamento
+**Como 1907 - Prospetto Pro-forma di Consolidamento**
 
-Como 1907
+| CONTO ECONOMICO | Como 1907<br>12 mesi al<br>30 giugno 2025 | Società del Gruppo<br>12 mesi al<br>30 giugno 2025 | Eliminazioni IC<br>12 mesi al<br>30 giugno 2025 | Prospetto Pro-forma di Consolidamento<br>12 mesi al<br>30 giugno 2025 |
+| :--- | :---: | :---: | :---: | :---: |
+| **A) VALORE DELLA PRODUZIONE** | | | | |
+| 1) Ricavi delle vendite e delle prestazioni | | | | |
+| a) ricavi da gare | 2.958.856 | - | - | 2.958.856 |
+| b) abbonamenti | 2.962.219 | - | - | 2.962.219 |
+| 2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti | - | 1.438.174 | - | 1.438.174 |
+| 5) Altri ricavi e proventi | | | | |
+| a) contributi in conto esercizio | 4.671.024 | - | - | 4.671.024 |
+| b) sponsorizzazioni | 5.213.198 | 6.694.132 | (5.213.198) | 6.694.132 |
+| d) proventi commerciali e royalties | 568.130 | 6.168.914 | (2.689.124) | 4.047.920 |
+| e) proventi da cessione diritti televisivi | 31.781.894 | - | - | 31.781.894 |
+| f) ricavi cessione temporanea calciatori | 880.488 | - | - | 880.488 |
+| g) plusvalenze cessione diritti prestazioni calciatori | 5.146.957 | - | - | 5.146.957 |
+| h) altri proventi da gestione calciatori | 853.053 | - | - | 853.053 |
+| i) altri ricavi e proventi diversi | 360.799 | 5.440.013 | (5.190.302) | 610.509 |
+| **Totale valore della produzione** | **55.396.617** | **19.741.233** | **(13.092.624)** | **62.045.226** |
+| **B) COSTI DELLA PRODUZIONE** | | | | |
+| 6) Per materie prime, sussidiarie, di consumo | 1.966.288 | 6.323.293 | (1.910.724) | 6.378.857 |
+| 7) Per servizi | 26.307.897 | 25.666.810 | (10.555.377) | 41.419.331 |
+| 8) Per godimento di beni di terzi | 1.633.489 | 2.229.730 | (380.000) | 3.483.219 |
+| 9) Per il personale | | | | |
+| a) salari e stipendi | 80.140.300 | 6.097.750 | (59.221) | 86.178.829 |
+| b) oneri sociali | 4.824.772 | 1.658.315 | - | 6.483.088 |
+| c) trattamento di fine rapporto | 691.136 | 337.058 | - | 1.028.195 |
+| 10) Ammortamenti e svalutazioni | | | | |
+| a) ammortamento delle immobilizzazioni immateriali | 26.618.093 | 206.201 | - | 26.824.294 |
+| b) ammortamento delle immobilizzazioni materiali | 176.785 | 625.326 | - | 802.112 |
+| c) altre svalutazioni delle immobilizzazioni | 4.687.777 | 23.514 | - | 4.711.291 |
+| d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide | - | 204.808 | - | 204.808 |
+| 11) Variazioni delle rimanenze di materiale di consumo e di merci | - | 182.605 | - | 182.605 |
+| 12) Accantonamenti per rischi | - | 66.500 | - | 66.500 |
+| 14) Oneri diversi di gestione | | | | |
+| a) oneri da organizzazione competizioni | 673.144 | 1.020.837 | - | 1.693.982 |
+| b) costi per acquisizione temporanea prestazione calciatori | 1.542.998 | - | - | 1.542.998 |
+| c) minusvalenze cessione diritti prestaz.calciatori | 2.219.836 | - | - | 2.219.836 |
+| d) altri oneri da gestione calciatori | 2.635.726 | - | - | 2.635.726 |
+| e) altri oneri diversi e sopravvenienze passive | 4.492.695 | 960.572 | 1.037.127 | 6.490.393 |
+| **Totale costi della produzione** | **158.610.937** | **45.603.321** | **(11.868.195)** | **192.346.063** |
+| **Differenza fra valore e costi della produzione (A - B)** | **(103.214.320)** | **(25.862.088)** | **(1.224.430)** | **(130.300.838)** |
+| **C) PROVENTI E ONERI FINANZIARI** | | | | |
+| 16) Altri proventi finanziari | | | | |
+| d) proventi diversi dai precedenti | | | | |
+| - altri proventi diversi | 146.607 | 43.691 | - | 190.298 |
+| 17) Interessi e altri oneri finanziari | | | | |
+| e) altri oneri finanziari | (1.862.027) | (354) | - | (1.862.381) |
+| 17-bis) Utile e perdite su cambi | (98.887) | 5.031 | - | (93.856) |
+| **Totale proventi e oneri finanziari** | **(1.814.307)** | **48.369** | **-** | **(1.765.938)** |
+| **D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE** | | | | |
+| 19) Svalutazioni | | | | |
+| a) di partecipazioni | (37.000) | (10.188.310) | 10.225.310 | - |
+| **Totale rettifiche di valore di attività finanziarie** | **(37.000)** | **(10.188.310)** | **10.225.310** | **-** |
+| **Risultato prima delle imposte** | **(105.065.627)** | **(36.002.029)** | **9.000.880** | **(132.066.776)** |
+| 20) Imposte sul reddito dell'esercizio | | | | |
+| a) imposte correnti | - | - | - | - |
+| **Utile (Perdita) dell'esercizio** | **(105.065.627)** | **(36.002.029)** | **9.000.880** | **(132.066.776)** |
 
-Società del Gruppo
-
-Eliminazioni IC
-
-Prospetto Pro-forma di Consolidamento
-
-|  CONTO ECONOMICO | 12 mesi al 30 giugno 2025 | 12 mesi al 30 giugno 2025 | 12 mesi al 30 giugno 2025 | 12 mesi al 30 giugno 2025  |
-| --- | --- | --- | --- | --- |
-|  **A) VALORE DELLA PRODUZIONE** |  |  |  |   |
-|  1) Ricavi delle vendite e delle prestazioni |  |  |  |   |
-|  a) ricavi da gare | 2.958.856 | - | - | 2.958.856  |
-|  b) abbonamenti | 2.962.219 | - | - | 2.962.219  |
-|  2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti | - | 1.438.174 | - | 1.438.174  |
-|  5) Altri ricavi e proventi |  |  |  |   |
-|  a) contributi in conto esercizio | 4.671.024 | - | - | 4.671.024  |
-|  b) sponsorizzazioni | 5.213.198 | 6.694.132 | (5.213.198) | 6.694.132  |
-|  d) proventi commerciali e royalties | 568.130 | 6.168.914 | (2.689.124) | 4.047.920  |
-|  e) proventi da cessione diritti televisivi | 31.781.894 | - | - | 31.781.894  |
-|  f) ricavi cessione temporanea calciatori | 880.488 | - | - | 880.488  |
-|  g) plusvalenze cessione diritti prestazioni calciatori | 5.146.957 | - | - | 5.146.957  |
-|  h) altri proventi da gestione calciatori | 853.053 | - | - | 853.053  |
-|  i) altri ricavi e proventi diversi | 360.799 | 5.440.013 | (5.190.302) | 610.509  |
-|  **Totale valore della produzione** | **55.396.617** | **19.741.233** | **(13.092.624)** | **62.645.236**  |
-|  **B) COSTI DELLA PRODUZIONE** |  |  |  |   |
-|  6) Per materie prime, sussidiarie, di consumo | 1.966.288 | 6.323.293 | (1.910.724) | 6.378.857  |
-|  7) Per servizi | 26.307.897 | 25.666.810 | (10.555.377) | 41.419.331  |
-|  8) Per godimento di beni di terzi | 1.633.489 | 2.229.730 | (380.000) | 3.483.219  |
-|  9) Per il personale |  |  |  |   |
-|  a) salari e stipendi | 80.140.300 | 6.097.750 | (59.221) | 86.178.829  |
-|  b) oneri sociali | 4.824.772 | 1.658.315 | - | 6.483.088  |
-|  c) trattamento di fine rapporto | 691.136 | 337.058 | - | 1.028.195  |
-|  10) Ammortamenti e svalutazioni |  |  |  |   |
-|  a) ammortamento delle immobilizzazioni immateriali | 26.618.093 | 206.201 | - | 26.824.294  |
-|  b) ammortamento delle immobilizzazioni materiali | 176.785 | 625.326 | - | 802.112  |
-|  c) altre svalutazioni delle immobilizzazioni | 4.687.777 | 23.514 | - | 4.711.291  |
-|  d) svalutazioni dei crediti compresi nell'antivo circolante e nelle disponibilità liquide | - | 204.808 | - | 204.808  |
-|  11) Variazioni delle rimanenze di materiale di consumo e di merci | - | 182.605 | - | 182.605  |
-|  12) Accantonamenti per rischi | - | 66.500 | - | 66.500  |
-|  14) Oneri diversi di gestione |  |  |  |   |
-|  a) oneri da organizzazione competizione | 673.144 | 1.020.837 | - | 1.693.982  |
-|  b) costi per acquisizione temporanea prestazione calciatori | 1.542.998 | - | - | 1.542.998  |
-|  c) minusvalenze cessione diritti prestaz. calciatori | 2.219.836 | - | - | 2.219.836  |
-|  d) altri oneri da gestione calciatori | 2.635.726 | - | - | 2.635.726  |
-|  e) altri oneri diversi e sopravvenienze passive | 4.492.695 | 960.572 | 1.037.127 | 6.490.393  |
-|  **Totale costi della produzione** | **155.610.717** | **45.603.421** | **(11.565.192)** | **172.470.603**  |
-|  **Differenza fra valore e costi della produzione (A - B)** | **(103.214.329)** | **(25.862.088)** | **(1.224.430)** | **(130.300.838)**  |
-|  **C) PROVENTI E ONERI FINANZIARI** |  |  |  |   |
-|  16) Altri proventi finanziari |  |  |  |   |
-|  d) proventi diversi dai precedenti |  |  |  |   |
-|  - altri proventi diversi | 146.607 | 43.691 | - | 190.298  |
-|  17) Interessi e altri oneri finanziari |  |  |  |   |
-|  c) altri oneri finanziari | (1.862.027) | (354) | - | (1.862.381)  |
-|  17-bis) Utile e perdite su cambi | (98.887) | 5.031 | - | (93.856)  |
-|  **Totale proventi e oneri finanziari** | **(1.814.307)** | **48.369** | **-** | **(1.765.938)**  |
-|  **D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE** |  |  |  |   |
-|  19) Svalutazioni |  |  |  |   |
-|  a) di partecipazioni | (37.000) | (10.188.310) | 10.225.310 | -  |
-|  **Totale rettifiche di valore di attività finanziarie** | **(37.000)** | **(10.188.310)** | **10.225.310** | **-**  |
-|  **Risultati prima delle imposte** | **(105.065.627)** | **(36.002.029)** | **9.000.880** | **(132.066.776)**  |
-|  20) Imposte sul reddito dell'esercizio |  |  |  |   |
-|  a) imposte correnti | - | - | - | -  |
-|  **Utile (Perdita) dell'esercizio** | **(105.065.627)** | **(36.002.029)** | **9.000.880** | **(132.066.776)**  |
-
-Per il Consiglio di Amministrazione
-
-Il Presidente
-
-Attestato
+Per il Consiglio di Amministrazione  
+Il Presidente  
+Mirwan  
+[firma]
 
 --- pág. 10 ---
 
-Como 1907 - Prospetto Pro-forma di Consolidamento
+**Como 1907 - Prospetto Pro-forma di Consolidamento**
 
-Rendicento Finanziario al 30 giugno 2025
+**Rendiconto Finanziario al 30 giugno 2025**
 
-|  In Euro | 12 mesi al 30 etorno 2023 | 12 mesi al 30 etorno 2024  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** |  |   |
-|  Utile (perdita) dell'esercizio | (132.066.776) | (49.499.836)  |
-|  Interessi passivi (interessi attivi) | 1.672.083 | (18.246)  |
-|  (Plusvalenze) minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | (2.927.120) | 585.411  |
-|  (Plusvalenze) minusvalenze derivanti dalla cessione di altre attività | - | -  |
-|  **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(133.321.814)** | **(48.932.671)**  |
-|  Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto |  |   |
-|  Accantonamenti ai fondi | 639.617 | 336.997  |
-|  Amortamenti delle immobilizzazioni | 27.626.406 | 5.165.175  |
-|  Svalutazioni per perdite durevoli di valore | 4.916.099 | 730.922  |
-|  Altre rettifiche per elementi non monetari | 424.517 | 8.695  |
-|  **2. Flussi finanziario prima delle variazioni del CCN** | **33.606.639** | **6.241.789**  |
-|  Variazioni del capitale circolante netto |  |   |
-|  Decramento (incremento) delle rimanenze | (1.195.612) | (1.297.164)  |
-|  Decramento (incremento) dei crediti vs clienti | (5.690.281) | (3.795.729)  |
-|  Incremento (decremento) dei debiti verso fornitori | 4.838.862 | 2.179.637  |
-|  Decramento (incremento) ratei e risconti attivi | (5.403.808) | (666.349)  |
-|  Incremento (decremento) ratei e risconti passivi | 1.706.747 | 3.999.961  |
-|  Altre variazioni del capitale circolante netto | 18.663.560 | 10.419.141  |
-|  **3. Flussi finanziario dopo le variazioni del CCN** | **12.919.467** | **10.839.496**  |
-|  Altre rettifiche |  |   |
-|  Interessi incassati (pagati) | 189.945 | 18.246  |
-|  (Imposte sul reddito pagate) | - | (160.525)  |
-|  (Utilizzo dei fondi) | (268.811) | 36.347  |
-|  **Totale Altre rettifiche** | **(78.867)** | **(105.932)**  |
-|  **Flussi finanziario dell'attività operativa (A)** | **(86.874.575)** | **(31.957.319)**  |
-|  **B. Flussi finanziari derivanti dall'attività di investimento** |  |   |
-|  Immobilizzazioni materiali | (9.339.089) | (4.477.945)  |
-|  (Investimenti) | (11.691.902) | (4.477.945)  |
-|  Disinvestimenti | 2.352.813 | -  |
-|  **Diritti pluriennali alle prestazioni dei calciatori** | **(53.742.615)** | **(14.802.846)**  |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (115.063.742) | (38.199.600)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | 7.657.400 | (107.334)  |
-|  Decramento (incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (7.067.318) | (946.159)  |
-|  Incremento (decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 60.731.045 | 24.450.247  |
-|  **Altre Immobilizzazioni immastriali** | **(6.697.393)** | **(797.833)**  |
-|  (Investimenti) | (8.485.396) | (797.833)  |
-|  Disinvestimenti | 1.788.003 | -  |
-|  **Immobilizzazioni finanziarie** | **(5.124.170)** | **(2.227.323)**  |
-|  (Investimenti) | (9.261.250) | (2.227.323)  |
-|  Disinvestimenti | 4.137.080 | -  |
-|  **Attività Finanziarie non immobilizzate** | **-** | **-**  |
-|  (Investimenti) | - | -  |
-|  Disinvestimenti | - | -  |
-|  **Totale Altre attività di investimento** | **(11.821.563)** | **(3.025.156)**  |
-|  **Flussi finanziario dell'attività di investimento (B)** | **(74.903.267)** | **(22.305.947)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  Mezzi di terzi | - | -  |
-|  Incremento (decremento) debiti a breve verso banche | - | -  |
-|  Accensione finanziamenti - v controllate | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Finanziamenti soci** | **-** | **500.000**  |
-|  Accensione finanziamenti | - | 500.000  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Mezzi propri** | **169.016.893** | **58.023.797**  |
-|  Aumento di capitale a pagamento | 169.016.893 | 58.023.797  |
-|  (Rimborso di capitale) | - | -  |
-|  **Altre entrate (uscite) da attività di finanziamento** | **-** | **-**  |
-|  **Flussi finanziario dell'attività di finanziamento (C)** | **169.016.893** | **58.523.797**  |
-|  **Incremento (decremento) delle disponibilità liquide (A ÷ B ÷ C)** | **7.239.050** | **4.260.531**  |
-|  Disponibilità liquide all'inizio dell'esercizio | 4.603.132 | 342.600  |
-|  Disponibilità liquide alla fine dell'esercizio | 11.842.182 | 4.603.131  |
-|  **Totale a pareggio** | **(7.239.050)** | **(4.260.531)**  |
+| In Euro | 12 mesi al 30 giugno 2025 | 12 mesi al 30 giugno 2024 |
+| :--- | :---: | :---: |
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| Utile (perdita) dell'esercizio | (132.066.776) | (49.499.836) |
+| Interessi passivi (interessi attivi) | 1.672.083 | (18.246) |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | (2.927.120) | 585.411 |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività | - | - |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(133.321.814)** | **(48.932.671)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 639.617 | 336.997 |
+| Ammortamenti delle immobilizzazioni | 27.626.406 | 5.165.175 |
+| Svalutazioni per perdite durevoli di valore | 4.916.099 | 730.922 |
+| Altre rettifiche per elementi non monetari | 424.517 | 8.695 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **33.606.639** | **6.241.789** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | (1.195.612) | (1.297.164) |
+| Decremento/(incremento) dei crediti vs clienti | (5.690.281) | (3.795.729) |
+| Incremento/(decremento) dei debiti verso fornitori | 4.838.862 | 2.179.637 |
+| Decremento/(incremento) ratei e risconti attivi | (5.403.808) | (666.349) |
+| Incremento/(decremento) ratei e risconti passivi | 1.706.747 | 3.999.961 |
+| Altre variazioni del capitale circolante netto | 18.663.560 | 10.419.141 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **12.919.467** | **10.839.496** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | 189.945 | 18.246 |
+| (Imposte sul reddito pagate) | - | (160.525) |
+| (Utilizzo dei fondi) | (268.811) | 36.347 |
+| **Totale Altre rettifiche** | **(78.867)** | **(105.932)** |
+| **Flusso finanziario dell'attività operativa (A)** | **(86.874.575)** | **(31.957.319)** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | | |
+| **Immobilizzazioni materiali** | **(9.339.089)** | **(4.477.945)** |
+| (Investimenti) | (11.691.902) | (4.477.945) |
+| Disinvestimenti | 2.352.813 | - |
+| **Diritti pluriennali alle prestazioni dei calciatori** | **(53.742.615)** | **(14.802.846)** |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (115.063.742) | (38.199.600) |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 7.657.400 | (107.334) |
+| Decremento/(incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (7.067.318) | (946.159) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 60.731.045 | 24.450.247 |
+| **Altre Immobilizzazioni immateriali** | **(6.697.393)** | **(797.833)** |
+| (Investimenti) | (8.485.396) | (797.833) |
+| Disinvestimenti | 1.788.003 | - |
+| **Immobilizzazioni finanziarie** | **(5.124.170)** | **(2.227.323)** |
+| (Investimenti) | (9.261.250) | (2.227.323) |
+| Disinvestimenti | 4.137.080 | - |
+| **Attività Finanziarie non immobilizzate** | | |
+| (Investimenti) | - | - |
+| Disinvestimenti | - | - |
+| **Totale Altre attività di investimento** | **(11.821.563)** | **(3.025.156)** |
+| **Flusso finanziario dell'attività di investimento (B)** | **(74.903.267)** | **(22.305.947)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| **Mezzi di terzi** | | |
+| Incremento (decremento) debiti a breve verso banche | - | - |
+| Accensione finanziamenti - v/controllate | - | - |
+| (Rimborso finanziamenti) | - | - |
+| **Finanziamenti soci** | - | **500.000** |
+| Accensione finanziamenti | - | 500.000 |
+| (Rimborso finanziamenti) | - | - |
+| **Mezzi propri** | **169.016.893** | **58.023.797** |
+| Aumento di capitale a pagamento | 169.016.893 | 58.023.797 |
+| (Rimborso di capitale) | - | - |
+| **Altre entrate (uscite) da attività di finanziamento** | - | - |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **169.016.893** | **58.523.797** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **7.239.050** | **4.260.531** |
+| Disponibilità liquide all'inizio dell'esercizio | 4.603.132 | 342.600 |
+| Disponibilità liquide alla fine dell'esercizio | 11.842.182 | 4.603.131 |
+| **Saldo a pareggio** | **(7.239.050)** | **(4.260.531)** |
 
-P. di Consiglio di Amministrazione  
- Il Presidente  
- Mirwan
+Per il Consiglio di Amministrazione  
+Il Presidente  
+Mirwan  
+[firma]
 
 --- pág. 11 ---
 
@@ -1039,21 +1031,22 @@ Non esistono ratei e risconti attivi con scadenza superiore a 5 anni.
 
 GRUPPO COMO 1907
 
-## Analisi delle voci di Stato Patrimoniale – PASSIVO
+14
 
-### Patrimonio netto
+**Analisi delle voci di Stato Patrimoniale – PASSIVO**
 
-|   | Capitale sociale | Riserva da sovrapprezzo azioni | Riserva Straordinaria | Riserva per copertura perdite esercizio in corso | Utile/(Perdite) a nuovo | Utile/(Perdita) dell'esercizio | Totale  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **migliaia di Euro**  |   |   |   |   |   |   |   |
-|  Saldi al 30/06/2024 | 2.030 | 729 | 11.690 | 49.758 | - | (49.500) | 14.707  |
-|  - Capitale sociale | (10) |  |  |  |  |  | (10)  |
-|  - Riserva da sovrapprezzo azioni |  | 1.495 |  |  |  |  | 1.495  |
-|  - Copertura perdite |  |  |  |  |  | 49.500 | 49.500  |
-|  - Riserva Straordinaria |  |  | 34.323 |  |  |  | 34.323  |
-|  - Riserva per copertura perdite esercizio in corso |  |  |  | 85.733 |  |  | 85.733  |
-|  Risultato esercizio 2024/2025 |  |  |  |  |  | (132.067) | (132.067)  |
-|  **Saldi al 30/06/2025** | **2.020** | **2.224** | **46.013** | **145.492** | **-** | **(132.067)** | **53.682**  |
+**Patrimonio netto**
+
+| migliaia di Euro | Capitale sociale | Riserva da sovrapprezzo azioni | Riserva Straordinaria | Riserva per copertura perdite esercizio in corso | Utile/(Perdite) a nuovo | Utile/(Perdita) dell'esercizio | Totale |
+|---|---|---|---|---|---|---|---|
+| **Saldi al 30/06/2024** | 2.030 | 729 | 11.690 | 49.758 | - | (49.500) | 14.707 |
+| - Capitale sociale | (10) | | | | | | (10) |
+| - Riserva da sovrapprezzo azioni | | 1.495 | | | | | 1.495 |
+| - Copertura perdite | | | | | | 49.500 | 49.500 |
+| - Riserva Straordinaria | | | 34.323 | | | | 34.323 |
+| - Riserva per copertura perdite esercizio in corso | | | | 85.733 | | | 85.733 |
+| Risultato esercizio 2024/2025 | | | | | | (132.067) | (132.067) |
+| **Saldi al 30/06/2025** | 2.020 | 2.224 | 46.013 | 135.492 | - | (132.067) | 53.682 |
 
 La riserva da sovrapprezzo azioni rappresenta il sovrapprezzo pagato da Sent Italy nel mese di luglio 2024 in sede di acquisto delle quote della società Sent Retail.
 
@@ -1063,29 +1056,26 @@ La riserva straordinaria è interamente formata tramite versamenti della control
 
 La riserva per copertura perdite esercizio in corso è interamente formata tramite versamenti della controllante Sent Entertainment Limited nella società Como.
 
-### Fondi per rischi e oneri
+**Fondi per rischi e oneri**
 
 Si riporta di seguito la movimentazione occorsa nell'esercizio:
 
-|  Saldo al 30/06/2025  |   |
-| --- | --- |
-|  **migliaia di Euro**  |   |
-|  **Saldo all'inizio dell'esercizio** | **176**  |
-|  Utilizzi | (176)  |
-|  Accantonamento dell'esercizio | 67  |
-|  Riclassifiche | -  |
-|  Rilasci | -  |
-|  **Saldo alla fine dell'esercizio** | **67**  |
+| migliaia di Euro | Saldo al 30/06/2025 |
+|---|---|
+| **Saldo all'inizio dell'esercizio** | 176 |
+| Utilizzi | (176) |
+| Accantonamento dell'esercizio | 67 |
+| Riclassifiche | - |
+| Rilasci | - |
+| **Saldo alla fine dell'esercizio** | 67 |
 
 Gli utilizzi dell'esercizio, pari ad Euro 176 migliaia, si riferiscono alla risoluzione di una controversia giudiziaria di natura fiscale relativa alla società Como.
 
 Gli accantonamenti dell'esercizio, pari ad Euro 67 migliaia, si riferiscono alla stima degli oneri relativi a transazioni per controversie giudiziarie in corso.
 
-### Trattamento di fine rapporto di lavoro subordinato
+**Trattamento di fine rapporto di lavoro subordinato**
 
 Tale voce ha avuto la seguente movimentazione nel corso dell'esercizio:
-
-14
 
 --- pág. 25 ---
 
@@ -1620,73 +1610,85 @@ Mirwan
 
 --- pág. 37 ---
 
-|  Catcham | Date of Receipt | Catcham |   |   | Processing |   | Contingency |   | Date of date per week (6/30/2023) |   |   | Catcham date of per week |   |   | Date recovered (current) |   |   | Date of date per week (6/30/2023) |   |   |   | Date  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Date of | Date from prime | Date to achieve | Date to achieve | Date separate | Carotid & dextroclavity | (1) Date | Carotid & dextroclavity | (2) Date | (3) Period | (4) Period | (5) Period | (6) Period | (7) Decrease | (8) Decrease | (9) Decrease | (10) Plan | (11) Date | (12) Date | (13) Date | (14) Date | (15) Date  |
-|   | Remarks | Date from prime | Date to achieve | Date separate |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  All-Zanadala Jumaine | 11/04/06 | 24/03/29 | 30/06/26 | 24/03/26 | Tenamaranha | - | - | - | - | - | - | 250.000 | - | - | 77.278 | 142.092 | - | - | 250.000 | 77.278 | 142.092 | 19.600 | 250.000  |
-|  St. Francis of the Great Falls | 20/02/26 | 30/08/23 | 30/08/27 | 01/08/24 | Al-Muhtani Edit | - | - | - | - | - | - | 975.333 | - | - | 297.937 | - | - | - | 975.333 | 297.937 | - | 687.000 | 600.000  |
-|  Arrigon Framhan | 26/02/04 | 03/08/28 | 30/08/25 | 01/09/20 | Tenamaranha | 01/07/24 | Foods/Kids/Ludford | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Azadra Mubarak End | 18/02/47 | 29/07/23 | 30/08/28 | 24/03/26 | U.C. Symptoms | - | - | - | - | - | - | 5,906.133 | - | - | 5,906.133 | - | - | 5,906.133 | 5,906.157 | - | 4,527.774 | - | -  |
-|  Arpa Manzan Iran | 24/11/02 | 03/02/25 | 30/08/29 | 01/09/24 | Postpalligana | - | - | - | - | - | - | 1,938.002 | - | - | 1,938.002 | - | - | 1,938.002 | 1,938.002 | - | 1,742.187 | 100.000 | -  |
-|  Balbir Karwari | 12/03/01 | 03/02/25 | 30/08/27 | 24/03/24 | F.C. Wrbrichar | - | - | 5,882.867 | 287.183 | - | 1,635.888 | - | - | - | 1,680.561 | 867.936 | - | - | 1,882.067 | 769.765 | 987.936 | 1,591.888 | 100.000  |
-|  Barbu Satorun | 01/03/03 | 03/08/23 | 30/08/26 | 30/08/24 | Post Spelling/Club 1909 | 26/01/25 | Football Club One | 786.947 | 224.938 | - | 594.359 | 50.000 | 848.347 | 390.468 | 103.450 | - | 448.479 | - | - | - | - | 70.000 | -  |
-|  Baudi Gawain | 12/03/02 | 08/08/22 | 30/08/26 | 08/08/22 | Tasam Yorim | 01/02/26 | Restaurant-salt-situate | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Baturina Marvin | 03/02/23 | 03/07/23 | 30/08/30 | 24/04/25 | IBRD/Severe | - | - | - | - | - | - | 18,455.072 | - | - | - | - | - | - | 18,455.072 | - | - | 18,455.072 | 2,500.000  |
-|  Battana Adanandha | 07/08/05 | 14/07/19 | 30/08/26 | 14/07/20 | S.P.A.L. | 01/08/24 | U.C. Symptoms | 100.000 | 77.778 | - | 22.222 | - | 100.000 | 78.752 | 374 | - | - | 2,178.752 | - | - | - | - | -  |
-|  Batalla Harsha | 05/12/05 | 03/07/23 | 30/08/26 | 01/09/24 | ALL Buses | - | - | 6,122.458 | - | - | 6,122.458 | 124.898 | - | - | 5,986.000 | 1,653.650 | - | - | 6,906.759 | 1,098.380 | 1,653.650 | 163.026 | -  |
-|  Balichar Yorim | 27/02/09 | 28/08/19 | 30/08/25 | 28/08/25 | Tenamaranha | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Busa Male Madhika | 27/03/02 | 08/08/19 | 30/08/27 | 01/09/24 | F.E. Asyitha Wrbr | - | - | 1,693.000 | 83.596 | - | 1,693.000 | - | - | - | 595.100 | - | - | - | 1,693.000 | 579.792 | - | 1,078.270 | 100.000  |
-|  Buda Hara Lada Maral | 08/08/05 | 06/02/23 | 30/08/28 | 06/02/25 | Royal Mawasa F.C. | - | - | - | - | - | - | - | - | - | 2,000.000 | - | - | - | 2,000.000 | 200.000 | - | 1,800.000 | -  |
-|  Cabanah Mawasa | 13/02/00 | 12/02/25 | 30/08/29 | 12/01/25 | Osmigraan comms | - | - | - | - | - | - | 13,911.732 | - | - | 2,450.027 | - | - | - | 13,911.732 | 2,450.027 | - | 12,451.785 | -  |
-|  Casanaha Yamanasa | 09/02/00 | 23/07/22 | 30/08/27 | 13/07/23 | U.S. Colitis | - | - | 950.000 | 80.375 | - | 184.425 | - | - | - | 80.332 | - | - | - | 950.000 | 123.917 | - | 177.000 | -  |
-|  Cars Mawasa | 10/04/06 | 01/07/22 | 30/08/26 | 01/07/22 | Yagash Gaya | - | - | 1,250.000 | 625.000 | - | 625.000 | - | - | - | 312.500 | - | - | - | 1,250.000 | 537.500 | - | 312.500 | -  |
-|  Chula Maruti | 04/03/09 | 12/07/21 | 30/08/25 | 12/07/21 | All-Ledamama Cagash | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandri Yamanasa | 06/12/05 | 12/01/24 | 30/08/26 | 12/01/24 | Tenamaranha | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Cans Mawasa | 05/01/09 | 01/07/24 | 30/08/27 | 01/09/24 | Yamanasa Kudhal | - | - | 780.000 | 83.000 | - | 720.000 | 75.000 | - | - | 250.000 | 528.470 | - | - | 855.000 | 192.000 | 528.470 | 18.457 | 80.000  |
-|  Caruana Kudhal | 03/02/08 | 03/02/24 | 30/08/28 | 28/08/22 | Walshchandran Mawasa F.C. | - | - | 600.000 | 1,011.516 | - | 160.000 | 10.000 | - | - | 100.000 | - | - | - | 610.000 | 200.000 | - | 200.000 | 100.000  |
-|  Cat Landa Jauja | 08/08/10 | 01/02/23 | 30/08/29 | 12/01/24 | DELJampan Odor Khan | - | - | 700.000 | 287.573 | - | 677.691 | - | - | - | 175.978 | - | - | - | 765.000 | 100.000 | - | 100.000 | 100.000  |
-|  Chau Dwayne Asuam | 07/07/15 | 07/01/25 | 30/09/29 | 07/01/25 | BaroRim, Bismayal | - | - | - | - | - | - | 11,045.494 | - | - | 1,181.014 | - | - | - | 11,045.494 | 1,181.014 | - | 9,864.792 | 121.125  |
-|  Chauwa Mawasa | 11/10/06 | 01/07/23 | 30/08/28 | 23/08/24 | Cagash Colitis | - | - | 9,100.000 | - | - | 9,100.000 | 195.488 | - | - | 2,282.296 | - | - | - | 9,450.000 | 2,092.296 | - | 7,450.000 | 600.000  |
-|  Chauwaka Arakasara | 02/08/03 | 03/02/25 | 30/08/29 | 03/08/29 | Real God Lenta AmRga | - | - | - | - | - | - | 14,760.528 | - | - | 2,357.712 | - | - | - | 14,760.528 | 1,017.712 | - | 13,402.017 | 500.000  |
-|  Cagashand Yaman | 07/02/01 | 03/08/24 | 30/08/27 | 01/09/24 | Fortuna Tisaadahri (IBD) | - | - | - | - | - | - | 7,939.154 | - | - | 2,422.540 | - | - | - | 7,939.154 | 2,422.540 | - | 7,323.604 | -  |
-|  Chake Shiva | 03/01/01 | 23/08/19 | 30/08/28 | 24/08/24 | IBD One | - | - | - | - | - | - | 5,192.094 | - | - | 1,188.608 | - | - | - | 5,192.094 | 1,188.608 | - | 6,093.688 | 500.000  |
-|  Curragali Chamsun | 20/02/00 | 28/01/24 | 30/08/27 | 24/01/24 | ALL Gana Amara | - | - | 380.278 | 459.675 | - | 330.424 | - | - | - | 130.331 | - | - | - | 380.278 | 159.895 | - | 210.441 | 71.000  |
-|  Calandhwa Arakasara | 03/07/06 | 01/01/28 | 30/08/27 | 01/01/28 | ALL Binajabi Colitis 2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chitrih Sama | 19/03/00 | 03/07/22 | 30/08/26 | 18/07/22 | ALL P. Puranaka | 01/08/24 | U.C. Symptoms | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandran Mawasa Satorun | 25/07/00 | 22/01/24 | 30/08/27 | 22/01/24 | Maym magan decar | 25/01/25 | Armour Trupala U.C. | 2,500.000 | 312.000 | - | 2,187.978 | - | 2,500.000 | 729.443 | 437.013 | - | 1,770.357 | - | - | - | - | 500.000 | -  |
-|  Chittang Mawasa | 02/01/04 | 27/01/24 | 30/08/26 | 27/01/24 | Cagash Colitis | - | - | 1,100.000 | 254.000 | - | 1,176.000 | - | - | - | 580.232 | - | - | - | 1,100.000 | 832.896 | - | 508.132 | 400.000  |
-|  Channa Madhika | 10/11/05 | 22/07/22 | 30/08/25 | 24/07/22 | Rathagharan Kuwal F.C. | 01/08/24 | U.C. Symptoms | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Channa Mawasa | 01/02/01 | 02/08/19 | 30/08/26 | 01/09/24 | Tenamaranha | - | - | - | - | - | - | 1,760.000 | - | - | 519.938 | - | - | - | 1,760.000 | 519.938 | - | 1,018.716 | -  |
-|  Changh Nara Ghar | 08/01/05 | 27/08/22 | 30/08/27 | 27/08/24 | Omdurath | - | - | - | - | - | - | - | - | - | 12.442 | 17.178 | - | - | 45.000 | 24.362 | 17.178 | 2.000 | -  |
-|  Changan Lam Thames | 09/04/00 | 16/07/22 | 30/08/26 | 16/07/22 | University Callage Dublin | - | - | 25.000 | 12.500 | - | 12.500 | 20.000 | - | - | 535.000 | - | - | - | 2,550.000 | 1,009.331 | - | 1,181.789 | 250.000  |
-|  Chandran Ghar | 16/03/00 | 24/07/23 | 30/08/19 | 24/07/23 | Torino F.C. | - | - | 2,100.000 | 600.000 | - | 1,711.000 | - | - | - | 240.000 | 208.575 | - | - | 600.000 | 300.000 | 188.575 | 41.425 | -  |
-|  Chandran Kwan | 01/12/01 | 01/02/24 | 30/08/26 | 01/01/24 | All-Standard Puthamasa | - | - | 600.000 | 120.000 | - | 480.000 | - | - | - | 270.822 | - | - | - | 2,778.822 | 720.802 | - | 2,810.000 | 90.000  |
-|  Chandran Ghar | 20/03/00 | 01/07/24 | 30/08/27 | 18/06/24 | Tenamaranha | - | - | - | - | - | - | - | - | - | 452.920 | - | - | - | 500.000 | 421.900 | - | 78.000 | 500.000  |
-|  Chandran Ghar | 01/11/06 | 06/07/22 | 30/08/27 | 24/07/24 | Annamal Colitis | - | - | - | - | - | - | - | - | - | 592.810 | - | - | - | 952.880 | 100.000 | - | 944.000 | -  |
-|  Chandran Ghar | 01/11/06 | 22/07/24 | 30/08/25 | 24/07/24 | Tenamaranha | - | - | 915.000 | 222.000 | - | 699.000 | - | - | - | 603.291 | 618.760 | - | - | 1,050.000 | 944.322 | 428.910 | 66.048 | 800.000  |
-|  Chandran Ghar | 06/08/01 | 28/07/19 | 30/08/25 | 19/07/21 | Walsh Gaya | - | - | 800.000 | 234.333 | - | 640.768 | 200.000 | - | - | 205.333 | - | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 02/08/06 | 04/07/23 | 30/08/26 | 04/07/23 | Tenamaranha | 30/07/24 | U.S. Seasate | 100.000 | 24.286 | - | 87.714 | - | 100.000 | 21.331 | 17.045 | - | 301.333 | - | - | - | - | - | -  |
-|  Chandran Ghar | 20/03/01 | 23/07/22 | 30/08/25 | 23/07/22 | Torino F.C. | - | - | - | - | - | - | - | - | - | 206.794 | - | - | - | 1,800.000 | 100.765 | - | 1,015.000 | -  |
-|  Chandran Ghar | 01/01/04 | 26/01/20 | 30/08/28 | 24/01/25 | Torino F.C. | - | - | - | - | - | - | - | - | - | 6,001.000 | - | - | - | 6,001.000 | 1,130.294 | - | 4,673.686 | 500.000  |
-|  Chandran Ghar | 08/03/04 | 23/08/24 | 30/08/28 | 24/08/24 | Penal Mawasa F.C. | - | - | 700.000 | 100.000 | - | 600.000 | - | - | - | 170.270 | 205.335 | - | - | 700.000 | 375.270 | 205.335 | 19.936 | -  |
-|  Chandran Ghar | 01/03/01 | 23/07/24 | 30/08/25 | 18/07/24 | Tenamaranha | - | - | - | - | - | - | - | - | - | 61.693 | - | - | - | 101.000 | 91.893 | - | 69.937 | -  |
-|  Chandran Ghar | 07/03/02 | 23/08/24 | 30/08/26 | 10/03/24 | Tenamaranha | - | - | - | - | - | - | - | - | - | 50.911 | - | - | - | 101.000 | 91.893 | - | 69.937 | -  |
-|  Chandran Ghar | 07/03/02 | 23/08/24 | 30/08/26 | 10/03/24 | Tenamaranha | - | - | - | - | - | - | - | - | - | 52.041 | 24.891 | - | - | 49.250 | 22.861 | 26.891 | 200 | -  |
-|  Chandran Ghar | 04/08/09 | 24/07/23 | 30/08/26 | 24/07/22 | U.S. Seasate | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 12/01/08 | 01/07/22 | 29/08/27 | 06/07/24 | Penal Colitis 2008 | - | 2,582.911 | 447.080 | - | 1,693.822 | - | 2,262.911 | 447.385 | 53.237 | - | 124.674 | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 16/01/06 | 02/08/19 | 30/08/28 | 21/08/24 | Cagash Colitis | - | - | - | - | - | - | 1,970.513 | - | - | 905.206 | - | - | - | 1,970.513 | 905.206 | - | 865.566 | 90.000  |
-|  Chandran Ghar | 17/08/05 | 02/02/23 | 30/08/29 | 02/02/25 | IPM Pagan | - | - | - | - | - | - | 1,500.000 | - | - | 1,000.000 | - | - | - | 1,500.000 | 1,000.000 | - | 1,361.000 | -  |
-|  Chandran Ghar | 08/03/02 | 23/07/22 | 30/08/25 | 24/07/24 | ALL Gana Amara | 04/07/24 | Martens (D.E.) | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 03/08/07 | 24/02/24 | 30/08/27 | 29/01/24 | U.S. Colitis | - | - | 2,780.231 | 600.936 | - | 3,126.865 | 599.827 | - | - | 1,571.683 | - | - | - | 1,710.037 | 2,035.759 | - | 1,613.000 | 600.000  |
-|  Chandran Ghar | 05/02/04 | 28/07/22 | 30/08/26 | 26/07/22 | Tenamaranha | - | - | - | - | - | - | 12.500 | - | - | 33.070 | (3.595) | - | - | 32.580 | 33.070 | 25.095 | 405 | -  |
-|  Chandran Ghar | 25/04/04 | 01/07/22 | 30/08/29 | 01/09/25 | Foster F.C. | - | - | - | - | - | - | 6,000.000 | - | - | - | - | - | - | 6,000.000 | - | - | 6,000.000 | -  |
-|  Chandran Ghar | 01/01/04 | 28/08/22 | 30/08/28 | 28/09/25 | PTM Puthamasa | - | - | - | - | - | - | 6,608.071 | - | - | 200.916 | - | - | - | 6,608.071 | 200.916 | - | 6,657.016 | 200.000  |
-|  Chandran Ghar | 25/04/02 | 27/07/24 | 30/08/26 | 21/07/24 | Tenamaranha | - | - | - | - | - | - | 1,250.000 | 1,250.000 | 504.908 | 154.908 | 516.092 | - | - | - | - | - | - | 1,250.000  |
-|  Chandran Ghar | 12/07/02 | 24/08/23 | 30/08/26 | 21/09/22 | Torino F.C. | - | - | 1,000.000 | 613.333 | - | 1,186.667 | - | - | - | 469.333 | - | - | - | 1,000.000 | 1,156.667 | - | 693.333 | -  |
-|  Chandran Ghar | 11/01/06 | 24/08/22 | 30/08/25 | 18/08/25 | Spana Colitis | 01/07/24 | Spana Colitis | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 01/01/04 | 01/02/23 | 30/08/25 | 01/09/25 | Common Colitis | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Chandran Ghar | 01/01/04 | 01/02/23 | 30/08/25 | 01/09/25 | Torino F.C. | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |[{"box_2d": [285, 15, 331, 963], "label": "table", "caption": "<table><thead><tr><th>Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th><th>Date of Section</th
+Intestazioni delle colonne: Calciatori | Nascita | Contratto (Data inizio primo contratto; Data scadenza ultimo contratto) | Data acquisto | Provenienza (Società di Provenienza) | Data Cessione | Destinazione (Società di destinazione) | Valori di inizio periodo 30/06/2024 [(1) Costo storico, (2) Fondo amm.to, (3) Fondo svalutazione, (4) Netto] | Variazioni valori di periodo [(5) Acquisti, (6) Cessioni, Fondo amm.ti, (7) Variazione] | Effetti economici di periodo [(8) Ammor.ti, (9) Svalutaz., (10) Minusv.]. Il blocco dei valori di fine periodo e le colonne successive sono [ilegible]. I valori numerici sono riportati nell'ordine in cui sono stampati.
+
+| Calciatori | Nascita | Data inizio primo contratto | Data scadenza ultimo contratto | Data acquisto | Società di Provenienza | Data Cessione | Società di destinazione | Valori numerici |
+|---|---|---|---|---|---|---|---|---|
+| Alli Bamidele Jermaine | 11/04/96 | 19/01/25 | 30/06/26 | 19/01/25 | Tesseramento | | | - - - - 250.000 77.178 142.992 |
+| Al-Tameemi Ali Jasim Elaibi | 20/01/04 | 05/08/24 | 30/06/27 | 05/08/24 | Al-Kahrbaa Club | | | - - - - 975.103 287.407 |
+| Arrigoni Tommaso | 26/02/94 | 01/09/20 | 30/06/25 | 01/09/20 | Tesseramento | 01/07/24 | Fussballclub Sudtirol | - - - - - |
+| Audero Mulyadi Emil | 18/01/97 | 29/07/24 | 30/06/28 | 29/07/24 | U.C. Sampdoria | | | - - - - 5.946.131 1.398.357 |
+| Azon Monzon Ivan | 24/12/02 | 03/02/25 | 30/06/29 | 03/02/25 | Real Zaragoza | | | - - - - 1.918.902 176.506 |
+| Ballet Samuel | 12/03/01 | 26/01/24 | 30/06/27 | 26/01/24 | F.C. Winterthur | | | 1.862.867 247.181 - - 1.615.686 538.562 967.936 |
+| Barba Federico | 01/09/93 | 01/08/23 | 30/06/26 | 01/08/23 | Pisa Sporting Club 1909 | 16/01/25 | Football Club Sion | 798.947 234.008 - - 564.939 50.000 848.947 - 399.468 165.460 449.479 |
+| Baselli Daniele | 12/03/92 | 08/08/22 | 30/06/25 | 08/08/22 | Tesseramento | 03/02/25 | Risoluzione contrattuale | - - - - - |
+| Baturina Martin | 16/02/23 | 01/07/25 | 30/06/30 | 14/06/25 | GNK Dinamo | | | - - - - 18.491.072 - |
+| Bellemo Alessandro | 07/08/95 | 14/07/19 | 30/06/26 | 14/07/19 | S.P.A.L. | 01/08/24 | U.C. Sampdoria | 100.000 77.778 - - 22.222 100.000 - 78.752 974 |
+| Belotti Andrea | 20/12/93 | 01/07/24 | 30/06/26 | 25/06/24 | A.S. Roma | | | 4.122.658 - - 4.122.658 125.898 - 1.998.380 1.653.454 |
+| Bolchini Pierre | 27/02/99 | 28/08/19 | 30/06/25 | 28/08/19 | Tesseramento | | | - - - - - |
+| Braunöder Matthias | 27/03/02 | 06/06/24 | 30/06/27 | 06/06/24 | F.K. Austria Wien | | | 1.650.000 44.595 - - 1.605.405 535.135 |
+| Butez Jean Jules Michel | 08/06/95 | 06/01/25 | 30/06/28 | 06/01/25 | Royal Antwerp F.C. | | | - - - - 2.100.000 290.566 |
+| Caqueret Maxence | 15/02/00 | 12/01/25 | 30/06/29 | 12/01/25 | Olympique Lyonnais | | | - - - - 13.911.732 1.450.027 |
+| Cassandro Tommaso | 09/01/00 | 13/07/23 | 30/06/27 | 13/07/23 | U.S. Lecce | | | 350.000 84.375 - - 265.625 88.542 |
+| Cerri Alberto | 16/04/96 | 01/07/22 | 30/06/26 | 01/07/22 | Cagliari Calcio | | | 1.250.000 625.000 - - 625.000 312.500 |
+| Chajia Moutir | 04/06/98 | 12/07/21 | 30/06/25 | 12/07/21 | NK Lokomotiva Zagreb | | | - - - - - |
+| Chinetti Federico | 04/11/05 | 12/01/24 | 30/06/26 | 12/01/24 | Tesseramento | | | - - - - - |
+| Curto Marco | 05/01/99 | 01/07/24 | 30/06/27 | 01/04/24 | Fussballclub Sudtirol | | | 780.000 60.000 - - 720.000 75.000 256.066 520.478 |
+| Cutrone Patrick | 03/01/98 | 26/08/22 | 30/06/28 | 26/08/22 | Wolverhampton Wanderers F.C. | | | 400.000 134.714 - - 265.286 12.500 69.399 |
+| Da Cunha Lucas | 09/06/01 | 12/01/23 | 30/06/29 | 12/01/23 | OGC de Nice Côte d'Azur | | | 745.004 267.573 - - 477.431 171.974 |
+| Diao Diaoune Assane | 07/07/25 | 07/01/25 | 30/06/29 | 07/01/25 | Real Betis Bolompié | | | - - - - 11.046.404 1.181.614 |
+| Dossena Alberto | 13/10/98 | 01/07/24 | 30/06/28 | 29/06/24 | Cagliari Calcio | | | 9.340.360 - - 9.340.360 591.988 2.281.296 |
+| Douvikas Anastasios | 02/08/99 | 03/02/25 | 30/06/29 | 03/02/25 | Real Club Celta de Vigo | | | - - - - 14.760.528 1.357.712 |
+| Engelhardt Yannik | 07/02/01 | 05/08/24 | 30/06/27 | 05/08/24 | Fortuna Düsseldorf 1895 | | | - - - - 7.939.354 2.415.540 |
+| Fadera Alieu | 03/11/01 | 13/08/24 | 30/06/28 | 13/08/24 | KRC Genk | | | - - - - 5.234.294 1.188.606 |
+| Fumagalli Tommaso | 20/02/00 | 29/01/24 | 30/06/27 | 29/01/24 | A.S. Giana Erminio | | | 380.278 49.675 - - 330.604 110.201 |
+| Gabrielloni Alessandro | 10/07/94 | 31/01/18 | 30/06/27 | 31/01/18 | A.S. Bisceglie Calcio 1913 | | | - - - - - |
+| Ghidotti Simone | 19/03/00 | 18/07/22 | 30/06/26 | 18/07/22 | A.C.F. Fiorentina | 01/08/24 | U.C. Sampdoria | - - - - - |
+| Gioacchini Nicholas Selson | 25/07/00 | 22/01/24 | 30/06/27 | 22/01/24 | Major League Soccer | 25/01/25 | Asteras Tripolis F.C. | 2.500.000 312.030 - - 2.187.970 2.500.000 - 729.643 417.613 1.770.357 |
+| Goldaniga Edoardo | 02/11/93 | 27/01/24 | 30/06/26 | 27/01/24 | Cagliari Calcio | | | 1.430.928 254.465 - - 1.176.463 588.232 |
+| Ioannou Nicholas | 10/11/95 | 22/07/22 | 30/06/25 | 22/07/22 | Nottingham Forest F.C. | 01/08/24 | U.C. Sampdoria | - - - - - |
+| Iovine Alessio | 01/02/91 | 01/09/19 | 30/06/26 | 01/09/19 | Tesseramento | | | - - - - - |
+| Kempf Marc-Oliver | 28/01/95 | 27/08/24 | 30/06/27 | 27/08/24 | Hertha BSC | | | - - - - 1.750.000 519.268 |
+| Kerrigan Liam Thomas | 09/04/00 | 16/07/22 | 30/06/26 | 16/07/22 | University College Dublin | | | 25.000 12.500 - - 12.500 20.000 12.462 17.178 |
+| Kone Ben Lhassine | 14/03/00 | 24/07/23 | 30/06/27 | 24/07/23 | Torino F.C. | | | 2.150.000 438.816 - - 1.711.184 570.395 |
+| Kovacik Peter | 01/12/01 | 01/02/24 | 30/06/26 | 01/02/24 | FK Zeleziarne Podbrezova | | | 600.000 120.000 - - 480.000 240.000 198.575 |
+| Mazzaglia Giuseppe | 20/06/06 | 01/07/24 | 30/06/27 | 18/06/24 | Tesseramento | | | - - - - - |
+| Mazzitelli Luca | 15/11/95 | 26/07/24 | 30/06/27 | 26/07/24 | Frosinone Calcio | | | - - - - 2.778.412 725.402 |
+| Moreno Perez Alberto | 05/07/92 | 22/07/24 | 30/06/25 | 22/07/24 | Tesseramento | | | - - - - 500.000 421.909 |
+| Mustapha Suliman Marlon | 24/05/01 | 10/07/23 | 30/06/27 | 10/07/23 | Mainz 05 | | | 911.808 212.500 - - 699.308 233.103 |
+| Nielsen Oliver Abildgaard | 10/06/96 | 06/07/23 | 30/06/26 | 06/07/23 | Rubin Kazan | | | 850.000 219.231 - - 630.769 200.000 345.291 418.910 |
+| Odenthal Cas Ruben | 26/09/00 | 23/07/22 | 30/06/25 | 23/07/22 | Tesseramento | 30/07/24 | U.S. Sassuolo | 100.000 14.286 - - 85.714 100.000 - 21.331 7.045 |
+| Ozilio Moreira Pacheco Fellipe Jack | 12/01/06 | 24/01/25 | 30/06/28 | 24/01/25 | Sociedade Esportiva Palmeiras | | | - - - - 1.800.000 226.794 |
+| Paz Martinez Nicolas | 08/09/04 | 23/08/24 | 30/06/28 | 23/08/24 | Real Madrid C.F. | | | - - - - 6.003.380 1.330.294 |
+| Pisano Manuel Giuseppe | 05/04/06 | 30/07/24 | 30/06/27 | 30/07/24 | FC Bayern München | | | - - - - 350.000 110.319 |
+| Razi Najemedine | 28/10/06 | 31/01/24 | 30/06/26 | 31/01/24 | Shamrock Rovers F.C. | | | 500.000 100.000 - - 400.000 175.270 205.335 |
+| Reina Paez Jose Manuel | 31/08/82 | 18/07/24 | 30/06/25 | 18/07/24 | Tesseramento | | | - - - - - |
+| Rispoli Fabio | 28/09/06 | 12/01/24 | 30/06/26 | 12/01/24 | Tesseramento | | | - - - - 101.200 31.693 |
+| Roberto Carnicer Sergi | 07/02/92 | 23/08/24 | 30/06/26 | 23/08/24 | Tesseramento | | | - - - - 147.500 58.951 |
+| Ronco Diego | 21/10/04 | 01/08/23 | 30/06/26 | 01/08/23 | Tesseramento | | | - - - - 49.250 22.061 26.891 |
+| Sala Marco | 04/06/99 | 24/07/23 | 30/06/26 | 24/07/23 | U.S. Sassuolo | | | - - - - - |
+| Semper Adrian | 12/01/98 | 05/07/23 | 30/06/27 | 05/07/23 | Genoa C.F.C. | 30/07/24 | Pisa Sporting Club 1909 | 2.282.911 447.089 - - 1.835.822 2.282.911 - 497.385 50.297 |
+| Simonetta Jacopo | 14/01/06 | 21/08/24 | 30/06/28 | 21/08/24 | Cagliari Calcio | | | - - - - 1.370.513 305.206 |
+| Smolcic Ivan | 17/08/00 | 02/02/25 | 30/06/29 | 02/02/25 | HNK Rijeka | | | - - - - 1.500.000 138.820 |
+| Solini Matteo | 09/03/93 | 15/07/19 | 30/06/25 | 15/07/19 | A.C. ChievoVerona | 04/07/24 | Mantova 1911 | - - - - - |
+| Strefezza Gabriel Rebelato Tadeu | 18/04/97 | 29/01/24 | 30/06/27 | 29/01/24 | U.S. Lecce | | | 4.784.211 638.346 - - 4.145.865 939.827 1.571.383 |
+| Tremolada Marco Andrea | 02/03/04 | 06/07/23 | 30/06/26 | 06/07/23 | Tesseramento | | | - - - - 32.500 16.070 15.935 |
+| Valle Gomez Alex | 25/04/04 | 01/07/25 | 30/06/29 | 01/06/25 | Futbol Club Barcelona | | | - - - - 6.000.000 - |
+| Van Der Brempt Ignace Fabienne | 01/04/02 | 28/04/25 | 30/06/28 | 28/04/25 | FC Red Bull Salzburg | | | - - - - 3.638.471 200.916 |
+| Varane Raphael Xavier | 25/04/93 | 27/07/24 | 30/06/26 | 27/07/24 | Tesseramento | | | - - - - 1.250.000 1.250.000 - 104.908 104.908 520.092 |
+| Verdi Simone | 12/07/92 | 25/08/23 | 30/06/26 | 25/08/23 | Torino F.C. | | | 1.800.000 413.333 - - 1.386.667 693.333 |
+| Vignali Luca | 11/01/96 | 18/08/22 | 30/06/25 | 18/08/22 | Spezia Calcio | 01/07/24 | Spezia Calcio | - - - - - |
+| Vigorito Mauro | 22/05/90 | 01/09/23 | 30/06/25 | 01/09/23 | Cosenza Calcio | | | - - - - - |
+| Vojvoda Mergim | 01/02/95 | 03/02/25 | 30/06/27 | 03/02/25 | Torino F.C. | | | - - - - 3.131.579 481.633 |
+| | | | | | | | | 39.714.972 5.007.494 - - 34.707.478 114.739.742 7.081.859 - 1.831.487 25.950.671 4.687.777 2.219.836 |
+| Settore giovanile | | | | | | | | 65.373 65.373 - - - 324.000 43.981 - 43.981 71.497 - - |
+| **TOTALE** | | | | | | | | 39.780.345 5.072.867 - - 34.707.478 115.063.742 7.125.839 - 1.875.467 26.022.168 4.687.777 2.219.836 |
+
+Colonne di destra (valori di fine periodo 30/06/2025 e successive): [ilegible]
+
+Per il Consiglio di Amministrazione
+Il Presidente
+Mirwan [firma manoscritta]
 
 --- pág. 38 ---
 
