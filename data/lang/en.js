@@ -253,6 +253,7 @@ window.I18N.strings.en = {
   "stat.extra.tip": "Net interest and other adjustments that are neither operating revenue nor operating costs, but do feed into the net result",
   "stat.netdebt": "Net debt",
   "stat.netdebt.short": "Net debt",
+  "stat.multi.noDebt": "A budget doesn't report debt",
   "stat.nodata": "No data",
   "stat.pat": "Net result",
   "th.amount": "Amount",

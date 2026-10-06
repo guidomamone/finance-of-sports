@@ -365,3 +365,108 @@ window.FIN_MULTI_PL = FIN_MULTI_PL;
 
 // Nombre que usa js/finanzas-render.js desde el paso 5a.
 function renderMultiPLTable(clubId, years, tableId){ FIN_MULTI_PL.render(clubId, years, tableId); }
+
+
+// ============================================================================
+// LOS KPIs DE ARRIBA EN MODO MULTI-AÑO (to-do 147, paso 6).
+//
+// renderFinanzasStatsGeneric() (js/finanzas-render.js) sigue armando los 5 cards con el ejercicio más
+// nuevo elegido, y con los totales de la tabla de un año: el número grande no cambia. Esto les agrega:
+//   - de qué ejercicio es cada número ("Ingresos · 2024/25");
+//   - con más de un ejercicio elegido, la comparación contra el primero ("vs. 2020/21 +10%") y una
+//     sparkline con todos los elegidos. Ingresos y gastos en %; resultado y deuda neta en plata, porque
+//     pueden cambiar de signo y un % ahí no significa nada (mismo criterio que el desvío del paso 5b);
+//   - si el más nuevo es SOLO presupuesto, los cards van punteados con "Presupuesto", y la deuda neta
+//     en "—": un presupuesto no informa deuda.
+// Los totales por año salen igual que en la tabla multi-año (nativeReportFor + nativeDisplayVal con el
+// tipo de cambio de cada ejercicio), y la deuda de computeYearGeneric, con el mismo test de "no
+// desglosada" que el card de un año (deudaNoDesglosada).
+// ============================================================================
+const FIN_MULTI_KPIS = (function(){
+  const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
+  function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
+
+  function delAnio(clubId, y){
+    const meta = yearMetaFor(clubId, y);
+    const rep = nativeReportFor(clubId, y);
+    const c = computeYearGeneric(clubId, y);
+    const v = x => nativeDisplayVal(x, meta, currentCurrency);
+    const presu = !BAL[reportTypeForYear(clubId, y)];
+    const sinGastos = !!c && !(c.expenseLines || []).length && (c.meta || {}).officialTotalExpenses == null && !c.expenses && !c.nonCash;
+    const ing = (rep.ingresos || []).reduce((s, r) => s + v(r.value), 0);
+    const gas = sinGastos ? null : (rep.gastos || []).reduce((s, r) => s + v(r.value), 0);
+    const extra = (rep.extraRows || []).reduce((s, e) => s + v(e.value), 0);
+    const pat = gas == null ? null : ing + gas + extra;
+    const nd = (presu || !c || deudaNoDesglosada(c)) ? null : toDisplayValue(c.netDebt, meta, currentCurrency);
+    return { y, presu, ing, gas: gas == null ? null : Math.abs(gas), pat, nd };
+  }
+
+  function spark(vals, ys, color){
+    const pts = vals.map((v, i) => v == null ? null : { i, v }).filter(Boolean);
+    if(pts.length < 2) return '';
+    const W = 64, H = 20, n = vals.length;
+    const mn = Math.min(...pts.map(p => p.v)), mx = Math.max(...pts.map(p => p.v)), r = (mx - mn) || 1;
+    const x = i => 3 + i * (W - 6) / (n - 1), y = v => H - 3 - (v - mn) / r * (H - 6);
+    let s = '';
+    for(let k = 1; k < pts.length; k++){
+      const a = pts[k - 1], b = pts[k];
+      const punteado = ys[b.i].y - ys[a.i].y > 1 || ys[a.i].presu || ys[b.i].presu;
+      s += `<line x1="${x(a.i).toFixed(1)}" y1="${y(a.v).toFixed(1)}" x2="${x(b.i).toFixed(1)}" y2="${y(b.v).toFixed(1)}" stroke="${color}" stroke-width="1.5"${punteado ? ' stroke-dasharray="2 2"' : ''}/>`;
+    }
+    const l = pts[pts.length - 1];
+    s += `<circle cx="${x(l.i).toFixed(1)}" cy="${y(l.v).toFixed(1)}" r="2.3" fill="${ys[l.i].presu ? '#fff' : color}" stroke="${color}" stroke-width="1.2"/>`;
+    return `<svg width="${W}" height="${H}" aria-hidden="true">${s}</svg>`;
+  }
+
+  function render(clubId, years){
+    const caja = document.getElementById('finanzasStats');
+    if(!caja || !years.length) return;
+    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const datos = years.map(y => delAnio(clubId, y));
+    const ultimo = datos[datos.length - 1];
+    const multi = datos.length > 1;
+
+    caja.querySelectorAll('.stat').forEach(st => {
+      const k = st.dataset.k;
+      st.classList.toggle('stat-presu', ultimo.presu);
+      const etiqueta = st.querySelector('.label');
+      if(etiqueta && !etiqueta.querySelector('.stat-year')){
+        etiqueta.insertAdjacentHTML('beforeend', ` <span class="stat-year">· ${lab(ultimo.y)}</span>` +
+          (ultimo.presu ? ` <span class="stat-tag">${t('finanzas.card.budget', 'Presupuesto')}</span>` : ''));
+      }
+      if(k === 'nd' && ultimo.presu){
+        const v = st.querySelector('.value');
+        v.textContent = '—';
+        v.className = 'value nodato';
+        st.insertAdjacentHTML('beforeend', `<div class="stat-cmp"><span>${t('stat.multi.noDebt', 'Un presupuesto no informa deuda')}</span></div>`);
+        return;
+      }
+      if(!multi || !['ing', 'gas', 'pat', 'nd'].includes(k)) return;
+      const serie = datos.map(d => d[k]);
+      const i0 = serie.findIndex(v => v != null);
+      const v0 = i0 >= 0 ? serie[i0] : null;
+      const v1 = serie[serie.length - 1];
+      let cmp = '';
+      if(v0 != null && v1 != null && i0 < serie.length - 1){
+        const desde = lab(datos[i0].y);
+        if(k === 'ing' || k === 'gas'){
+          if(v0){
+            const p = (v1 - v0) / Math.abs(v0) * 100;
+            const bueno = k === 'ing' ? p > 0 : p < 0;
+            cmp = `vs. ${desde} <b class="${Math.round(p) === 0 ? '' : bueno ? 'pos' : 'neg'}">${p > 0 ? '+' : ''}${p.toFixed(0)}%</b>`;
+          }
+        } else {
+          const dif = v1 - v0;
+          const bueno = k === 'pat' ? dif > 0 : dif < 0;
+          cmp = `vs. ${desde} <b class="${Math.abs(dif) < 0.05 ? '' : bueno ? 'pos' : 'neg'}">${dif > 0 ? '+' : dif < 0 ? '−' : ''}${Math.abs(dif).toFixed(1)} M</b>`;
+        }
+      }
+      const color = k === 'gas' ? '#b5372b' : k === 'pat' ? '#1b7a3d' : '#0a2b5c';
+      st.insertAdjacentHTML('beforeend', `<div class="stat-cmp"><span>${cmp}</span>${spark(serie, datos, color)}</div>`);
+    });
+  }
+
+  return { render };
+})();
+window.FIN_MULTI_KPIS = FIN_MULTI_KPIS;

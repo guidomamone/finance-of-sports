@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 537 — To-do 147, paso 6: KPIs con año, comparación y sparkline (?multi=1) (2026-10-05)
+
+- `js/finanzas-multi.js` (`FIN_MULTI_KPIS`): con `?multi=1`, los 5 cards de arriba dicen de qué ejercicio son ("Ingresos · 2024/25"); con más de uno elegido, comparan contra el primero (ingresos y gastos en %, resultado y deuda neta en plata, porque cambian de signo) y llevan una sparkline. Si el más nuevo es solo presupuesto, van punteados con "Presupuesto" y la deuda neta en "—" ("Un presupuesto no informa deuda"). El número grande sigue saliendo de los totales de la tabla de un año.
+- `js/finanzas-render.js`: los cards llevan `data-k` (ing, gas, extra, pat, nd); `updateFinanzasByAnioGeneric()` llama a `FIN_MULTI_KPIS.render()`. Se sacó de `updateFinanzasByGestionGeneric()` el bloque de la tabla multi-año que el paso 5a había copiado ahí por error (un reemplazo de texto que matcheó dos veces; el modo gestión está oculto, no se vio).
+- Verificado: el Δ de ingresos y gastos de los KPIs coincide con el Δ de Total ingresos / Total gastos de la tabla, y la diferencia de resultado con la de sus celdas (±0,1 por redondeo), en 6 clubes con Últimos 5 y con Todos. Sin `?multi=1`, los 65 ejercicios idénticos a `main`. `js/styles.css`, `data/lang/en.js` (`stat.multi.noDebt`). `ASSET_V` 436.
+
 ## Versión 536 — To-do 147, paso 5b: rubro desplegable, % del total y presupuesto al lado del balance (?multi=1) (2026-10-05)
 
 - `js/finanzas-multi.js` reescrito como `FIN_MULTI_PL` (con `renderMultiPLTable()` de alias): tocar un rubro (o Enter) abre su gráfico Chart.js debajo de la fila (gastos en tamaño, punto hueco y tramo punteado en presupuestos y saltos; las instancias se destruyen en cada re-render); "M <moneda> | % del total" (cada rubro contra el total de su sección ese año, el resultado como margen sobre ingresos, Δ en puntos); "Presupuesto al lado del balance" (aparece solo si algún año elegido tiene las dos fuentes, apagado por default) abre esos años en presupuesto (amarillo), balance y desvío (%; en el resultado neto, diferencia en plata). Los rubros abiertos y el botón vuelven a cero al cambiar de club.

@@ -483,14 +483,14 @@
     // cero que la fuente no publica no se muestra como cero.
     const sinDeuda = deudaNoDesglosada(cur);
     const extraStat = extraTotal !== undefined
-      ? `<div class="stat"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
     document.getElementById('finanzasStats').innerHTML = `
-      <div class="stat"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">${t('section.expenses','Gastos')}</div><div class="value${sinGastos ? ' nodato' : ''}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
+      <div class="stat" data-k="ing"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
+      <div class="stat" data-k="gas"><div class="label">${t('section.expenses','Gastos')}</div><div class="value${sinGastos ? ' nodato' : ''}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmountPlain(expensesDisp, currentCurrency)}</div></div>
       ${sinGastos ? '' : extraStat}
-      <div class="stat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${sinGastos ? 'nodato' : (cur.pat>=0?'pos':'neg')}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmount(patDisp, currentCurrency)}</div></div>
-      <div class="stat"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value${sinDeuda ? ' nodato' : ''}">${sinDeuda ? t('stat.nodata','Sin dato') : fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
+      <div class="stat" data-k="pat"><div class="label">${t('stat.pat','Resultado neto')}</div><div class="value ${sinGastos ? 'nodato' : (cur.pat>=0?'pos':'neg')}">${sinGastos ? t('stat.nodata','Sin dato') : fmtAmount(patDisp, currentCurrency)}</div></div>
+      <div class="stat" data-k="nd"><div class="label">${t('stat.netdebt.short','Deuda neta')}</div><div class="value${sinDeuda ? ' nodato' : ''}">${sinDeuda ? t('stat.nodata','Sin dato') : fmtAmountPlain(netDebtDisp, currentCurrency)}</div></div>
     `;
   }
 
@@ -554,18 +554,6 @@
     if(!cur) return;  // Versión 131: sin club elegido no hay ejercicio que mostrar
     const prev = g.firstYear !== g.lastYear ? computeYearGeneric(clubId, g.firstYear) : null;
     const plTotals = renderNativePLTable(clubId, cur.year, cur.yearLabel, 'finanzasPLTable');
-    // to-do 147, paso 5a: con ?multi=1 y más de un ejercicio, la tabla de una columna por año
-    // (js/finanzas-multi.js) reemplaza a la de arriba en pantalla. La de arriba se arma igual: sus
-    // totales son los del ejercicio más nuevo y los usan los KPIs.
-    const ysSel = FIN_SEL.years();
-    const multiTabla = !!window.FIN_MULTI && ysSel.length > 1 && typeof renderMultiPLTable === 'function';
-    document.getElementById('finanzasPLTable').hidden = multiTabla;
-    const tablaMulti = document.getElementById('finanzasPLMulti');
-    if(tablaMulti){
-      tablaMulti.hidden = !multiTabla;
-      if(multiTabla) renderMultiPLTable(clubId, ysSel, 'finanzasPLMulti');
-      else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
-    }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
     renderDebtBlockGeneric(cur, prev, 'finanzasDebtTable');
     const years = []; for(let y=g.firstYear; y<=g.lastYear; y++){ years.push(y); }
@@ -596,6 +584,10 @@
       else if(window.FIN_MULTI_PL) FIN_MULTI_PL.ocultar();
     }
     renderFinanzasStatsGeneric(cur, plTotals.gastosTotal, plTotals.ingresosTotal, plTotals.extraTotal);
+    // to-do 147, paso 6: con ?multi=1, los KPIs dicen de qué ejercicio son, se comparan contra el
+    // primero elegido y llevan una sparkline (js/finanzas-multi.js). El número grande no cambia: sigue
+    // saliendo de los totales de la tabla de arriba.
+    if(window.FIN_MULTI && window.FIN_MULTI_KPIS) FIN_MULTI_KPIS.render(clubId, ysSel);
     renderDebtBlockGeneric(cur, null, 'finanzasDebtTable');
     drawTrendChartGeneric(clubId, [cur]);
     drawBreakdownChartGeneric(cur);
