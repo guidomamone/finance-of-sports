@@ -743,7 +743,7 @@ completo está en `Admin/CONVENCIONES.md`.
   4 generadores, los 4 `-selector.js` y los datos inventados: la historia está en
   git. Sobreviven `README.md` (la tabla de POR QUÉ PERDIERON los prototipos 1, 2 y
   3 — es lo que evita que alguien los vuelva a proponer) y
-  `Selector/MERGE-A-PRODUCCION.md` (hoy `Admin/Archive/selector-merge-a-produccion.md`), que sigue siendo la mejor
+  el documento del merge del prototipo 4 (hoy `Admin/Archive/selector-merge-a-produccion.md`), que sigue siendo la mejor
   explicación escrita del modelo que hoy corre en `js/selector.js`.
   OJO, LO QUE SE APRENDIÓ AL BORRARLOS: esa carpeta SE DEPLOYA. No hay
   `netlify.toml` ni `_redirects`, y Netlify publica la raíz del repo, así que
