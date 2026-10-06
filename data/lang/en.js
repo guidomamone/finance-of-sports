@@ -65,6 +65,7 @@ window.I18N.strings.en = {
   "chart.nodata": "Not reported by the club",
   "comparar.sub": "The same financial and sporting indicators, side by side.",
   "comparar.title": "Compare boards",
+  "cuenta.years.range": "{a} to {b}, {n} financial years",
   "cuenta.login.button": "Sign in with Google",
   "cuenta.login.text": "Every club you look at is saved to your account only, so you can come back to it later. No password needed.",
   "cuenta.login.title": "Sign in with Google",

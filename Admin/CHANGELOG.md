@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 541 — To-do 147, paso 10: las búsquedas guardadas de Mi Cuenta recuerdan varios ejercicios (2026-10-05)
+
+- `index.html`: Finanzas le pasa a `CUENTA.notifyStateChange()` también `years` (la lista de FIN_SEL); `year` (el más nuevo) se sigue mandando. `reopenSavedSearch()`: con `?multi=1` y una búsqueda con varios ejercicios, vuelve a elegir todos los que el club siga teniendo; sin los cards, queda el más nuevo.
+- `js/cuenta.js`: con más de un ejercicio, la clave lleva la lista y el nombre dice "Racing Club, 2017/2018 a 2024/2025, 5 ejercicios" (hasta 3, se nombran). Con uno solo, la clave de siempre: las búsquedas viejas no se duplican. `stateKey` y `labelFor` quedan expuestos en `window.CUENTA` para verificarlos sin sesión.
+- Verificado sin login (guardar de verdad lo necesita): la clave de un año es idéntica a la vieja, la de varios años distinta, el nombre, reabrir una búsqueda de 3 ejercicios desde otro club y reabrir una vieja de un año. Sin `?multi=1`, los 65 ejercicios idénticos a `main`. `data/lang/en.js` (`cuenta.years.range`). `ASSET_V` 440.
+
 ## Versión 540 — To-do 147, paso 9: fuentes, aviso de calidad y cards de presupuesto con varios ejercicios (?multi=1) (2026-10-05)
 
 - Fuentes: con `?multi=1` y varios ejercicios, un renglón plegable por ejercicio elegido (el más nuevo abierto), cada uno con la ficha de siempre, más "Documento del presupuesto" en los años que tienen las dos fuentes. La ficha de un año se extrajo a `fichaFuenteDeAnio()` (`js/finanzas-render.js`), que usan las dos vistas.

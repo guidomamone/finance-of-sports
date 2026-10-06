@@ -42,6 +42,12 @@
       var claves = (state.clubes || []).map(function(c) { return c.club + ':' + c.clubYear; }).join(',');
       return ['ligaSim', state.league, state.leagueYear, claves].join('|');
     }
+    // to-do 147, paso 10: con varios ejercicios elegidos la clave lleva la lista. Con uno solo queda
+    // la clave de siempre, así una búsqueda vieja de un año y la misma búsqueda hecha hoy son la misma
+    // fila y no se duplica.
+    if (Array.isArray(state.years) && state.years.length > 1) {
+      return [state.view, state.club, state.mode, state.years.join(','), state.gestion].join('|');
+    }
     return [state.view, state.club, state.mode, state.year, state.gestion].join('|');
   }
 
@@ -108,6 +114,14 @@
         + t('cuenta.ligasim.ejercicio', 'ejercicio') + ' ' + state.leagueYear;
     }
     if (state.mode === 'gestion') return clubName(state.club) + ', ' + (state.gestion || '');
+    // to-do 147, paso 10: varios ejercicios. Hasta 3, se nombran; con más, el primero, el último y
+    // cuántos son ("Racing, 2017/2018 a 2024/2025, 5 ejercicios": puede haber saltos en el medio).
+    if (Array.isArray(state.years) && state.years.length > 1) {
+      var ys = state.years.slice().sort(function(a, b) { return a - b; });
+      if (ys.length <= 3) return clubName(state.club) + ', ' + ys.map(function(y) { return seasonLabel(state.club, y); }).join(', ');
+      return clubName(state.club) + ', ' + t('cuenta.years.range', '{a} a {b}, {n} ejercicios')
+        .replace('{a}', seasonLabel(state.club, ys[0])).replace('{b}', seasonLabel(state.club, ys[ys.length - 1])).replace('{n}', ys.length);
+    }
     return clubName(state.club) + ', ' + seasonLabel(state.club, state.year);
   }
 
@@ -230,5 +244,7 @@
     });
   }
 
-  window.CUENTA = { init: init, notifyStateChange: notifyStateChange };
+  // stateKey y labelFor se exponen para poder verificarlos sin sesión (to-do 147, paso 10): guardar
+  // de verdad necesita un usuario logueado, armar la clave y el nombre de la búsqueda no.
+  window.CUENTA = { init: init, notifyStateChange: notifyStateChange, stateKey: stateKey, labelFor: labelFor };
 })();
