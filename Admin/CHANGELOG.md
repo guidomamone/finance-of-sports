@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 548 — To-do 147 cerrado: Finanzas multi-año (2026-10-05)
+
+- Cierre: pasada en celular (Racing, Juventus y Flamengo con Todos y ajuste por inflación: sin scroll horizontal de la página; la fila de años y las tablas se scrollean de costado), `auditAll()` igual que `main` (169 clubes, 1136 checks; los 3 de Bayern y los 6 avisos de fx del to-do 148 ya conocidos), `audit.js` 0 P0 / 0 P1.
+- `Admin/TODO.md`: sale el 147 (sus decisiones viven en `Admin/PANTALLA.md`, "Finanzas multi-año"). `Admin/ESTADO.md`, `Prototyping/README.md` (el mockup se conserva por sus notas), entrada en `Admin/finance-of-sports-project.md`.
+
 ## Versión 547 — To-do 147, paso 13: el card "otra liga" muestra el puesto (2026-10-05)
 
 - `index.html` (`renderLigaSimPuesto()`, `#ligaSimRes`): selector "Si jugara en" con las ligas que tienen clubes cargados ese ejercicio (`leagueAt` sobre `CLUB_INDEX`; default, la de más clubes) y el puesto en ingresos, "6.º en ingresos, entre los 17 clubes de Premier League 2024/2025 que tenemos cargados" (más "(la liga tuvo N)" si se sabe). Calculado con `LIGA_VIEW.filaSimulada` contra el ranking precalculado, igual que Ligas. "Ver el ranking completo" abre Ligas con el club simulado. Sin ligas candidatas, queda el botón viejo "Elegir una liga".

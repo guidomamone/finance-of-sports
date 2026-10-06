@@ -1,6 +1,13 @@
 # Prototyping — por qué el selector es como es
 
-**Acá no queda ningún prototipo.** Quedan dos documentos, y este archivo explica
+**Finanzas multi-año (to-do 147, 2026-10-05):** `Finanzas/mockup-147.html` es el mockup que Guido
+aprobó antes de construir la vista de varios ejercicios (Versiones 531-548). Se conserva porque sus
+notas rojas explican el porqué de cada decisión (cards en vez de rangos, presupuesto vs. balance,
+gestión, ajuste por inflación). Los números de deuda y el puesto en "otra liga" del mockup son de
+relleno; las gestiones de Juventus, de memoria y sin verificar. No es la fuente de nada que se
+publique. El resto de este archivo es del selector de club.
+
+**Del selector no queda ningún prototipo.** Quedan dos documentos, y este archivo explica
 qué fueron y por qué se conservan.
 
 Entre el 2026-09-14 y el 2026-09-15 se probaron **cuatro** formas distintas de

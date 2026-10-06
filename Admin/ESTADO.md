@@ -56,15 +56,17 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
 
-### Finanzas multi-año (to-do 147, en curso)
+### Finanzas multi-año (to-do 147, Versiones 531-548)
 
-- Desde la Versión 542, Finanzas muestra varios ejercicios a la vez: cards de ejercicios (default, los últimos 5 con balance),
-  Estado de resultados y Deuda con una columna por año, KPIs con comparación y sparkline, gráfico de evolución arriba de la tabla,
-  fuentes por ejercicio. El título es el club. `?multi=0` vuelve a la vista vieja de un año. Cómo está hecho y qué no romper:
-  `Admin/PANTALLA.md`, "Finanzas multi-año". Desde la Versión 543, valores ajustados por inflación (deflactor del PBI, USD y EUR,
-  `data/deflactores.js`, se actualiza una vez por año). Desde la Versión 545, gestión (botón, franjas y columnas agrupadas) con el formato nuevo `data/gestiones/<país>.js`: hoy
-  Boca y Racing, con fuentes. Desde la Versión 547, el card "otra liga" muestra el puesto. Falta (to-do 147) el cierre; las gestiones de los demás clubes y su
-  carga en el pipeline de altas son el to-do 149.
+- Finanzas muestra varios ejercicios a la vez: el título es el club; cards de ejercicios (default, los últimos 5 con balance) y
+  fila de gestión; KPIs con comparación y sparkline; gráfico de evolución arriba de la tabla; Estado de resultados y Deuda con una
+  columna por año (rubro desplegable, % del total, presupuesto al lado del balance); valores ajustados por inflación (deflactor del
+  PBI, USD y EUR); fuentes por ejercicio; card "otra liga" con el puesto. `?multi=0` vuelve a la vista vieja de un año (salida de
+  emergencia). Cómo está hecho y qué no romper: `Admin/PANTALLA.md`, "Finanzas multi-año". Mockup aprobado:
+  `Prototyping/Finanzas/mockup-147.html`.
+- Datos nuevos que se mantienen a mano una vez por año: `data/deflactores.js` (se genera con
+  `node tools/fetch-fx-reference.mjs --deflactores`) y `data/gestiones/<país>.js` (hoy solo Boca y Racing; el resto y su carga en
+  el pipeline de altas, to-do 149).
 
 Esto es el ESTADO, no el historial. Si buscás "¿cuándo se hizo tal cosa?" o "¿por
 qué se decidió tal cosa?", NO está acá: está en `Admin/CHANGELOG.md` (resumen por

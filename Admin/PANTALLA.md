@@ -10,7 +10,7 @@ Las referencias "sección N" dentro del texto son a las secciones del skill viej
 
 ---
 
-## Finanzas multi-año (to-do 147, Versiones 531-542): cómo es y qué no romper
+## Finanzas multi-año (to-do 147, Versiones 531-548): cómo es y qué no romper
 
 Desde la Versión 542 es la vista por default; `?multi=0` vuelve a la vieja de un ejercicio con el dropdown "Año" (salida de
 emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión: `Prototyping/Finanzas/mockup-147.html`.

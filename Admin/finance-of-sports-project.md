@@ -6180,3 +6180,23 @@ Los tres "fallan" en el sourcing automatizado, pero solo los dos primeros amerit
 51 — el tercero es una decisión de costo que le toca a Guido, no algo que una sesión pueda resolver
 insistiendo. Separar esos tres es lo que evita que el to-do 51 (proceso de mail a clubes, sesión
 aparte) herede un criterio de disparo mal calibrado.
+
+## Finanzas pasa a mirar varios años a la vez (to-do 147, 2026-10-05)
+
+El pedido de Guido empezó como "la pestaña está trabada": la tabla mostraba un solo ejercicio, el club se elegía en dos lugares a
+la vez, el título repetía el nombre de la pestaña y "¿Cómo le iría en otra liga?" estaba en la barra de controles, donde parecía un
+filtro. Antes de tocar código se hizo un mockup con datos reales (Juventus, 23 balances; Racing, que tiene todos los casos de
+presupuesto y balance) y Guido lo corrigió en varias vueltas: nada de rangos de años (cada año se prende y se apaga solo), sin
+checkbox, "Todos" de nuevo para vaciar, "+N más" en la misma fila, gestiones acumulables y de la más vieja a la más nueva.
+
+Tres decisiones que no son obvias y que conviene no deshacer sin saber por qué: (1) en un año con presupuesto y balance manda
+siempre el balance, y el presupuesto aparece solo a pedido, en amarillo y punteado en todos lados — es lo que permite leer
+"prometieron X, pasó Y" sin confundir uno con otro; (2) la tabla multi-año es una tabla APARTE de la de un año, que se sigue armando
+escondida porque sus totales son los de los KPIs: generalizar la vieja era tocar reglas de ancho que Guido pidió una por una; (3) el
+puesto en otra liga dice "entre los N clubes que tenemos cargados", nunca "de 20", porque los rankings no tienen la liga entera.
+
+Lo que se encontró verificando, no leyendo: Juventus 2002/03 repite una etiqueta ("- from others") en la misma sección y la tabla
+nueva tomaba una sola (los totales no cerraban contra la de un año); un parámetro llamado `t` tapaba la función de traducción y
+los cards no se dibujaban; y un reemplazo de texto copió el bloque de la tabla multi-año adentro del modo "Por gestión" oculto. Cada
+paso se dio por bueno comparando los 65 ejercicios de 7 clubes contra `main` (vista vieja intacta) y los totales de cada columna
+contra la tabla de un año, eligiendo los años con clicks: desde la consola, `refreshFinanzas()` no ve el club de la página.

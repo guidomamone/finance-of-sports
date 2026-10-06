@@ -44,43 +44,8 @@ ni en el comentario de ningún archivo de código.
     (b) Etapa 2, escalón 2: Gemini sobre escaneos enteros (hoy, si no hay estado, queda como fuente). SIN CASO HOY (medido el 2026-10-05:
         0 documentos en "sin estado de resultados" en el registro); no construir hasta que un escaneo quede como fuente.
 
-147. FINANZAS MULTI-AÑO (pedido de Guido, 2026-10-05). Rediseño de la pestaña: ver cada rubro a lo largo de los años del club, lado a
-    lado. Mockup aprobado: `Prototyping/Finanzas/mockup-147.html` (las notas rojas explican cada decisión). Se trabaja en el worktree
-    `finanzas-147`. Hechos: paso 1 (el título es el club, Versión 531), paso 2 (otra liga como card, Versión 532) paso 3 (FIN_SEL, Versión 533) paso 4 (cards de ejercicios con `?multi=1`, Versión 534) paso 5a (tabla con una columna por año, Versión 535) paso 5b (rubro desplegable, % del total, presupuesto al lado, Versión 536) paso 6 (KPIs, Versión 537) paso 7 (gráfico arriba de la tabla, Versión 538) paso 8 (deuda por año, Versión 539) paso 9 (fuentes, aviso y cards de presupuesto, Versión 540) paso 10 (búsquedas guardadas, Versión 541), paso 11 (valores ajustados por inflación, Versión 543), paso 12 (gestión con el formato nuevo, Boca y Racing, Versión 545), paso 13 (puesto en el card "otra liga", Versión 547). Desde la Versión 542 la vista multi-año es el default (`?multi=0` vuelve a la vieja). Decidido: el card "Salarios / ingresos" del mockup no va.
-    DECISIONES DE GUIDO (2026-10-05):
-    - Un card por ejercicio, cada uno se prende y se apaga solo (sin rangos, sin checkbox). Default: los últimos 5 años CON BALANCE.
-      Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío) y Solo el último. Con más de 5 ejercicios la fila arranca
-      corta (últimos 5 balances + lo elegido) y "+N más" va al principio de la misma fila. Orden: más viejo a la izquierda.
-    - Años sin publicar en el medio: rayados, no elegibles, dicen "Sin publicar" (5ta palabra autorizada para los cards; el dropdown
-      viejo sigue con sus 4).
-    - Presupuesto y balance del mismo año: manda el balance; "Presupuesto al lado del balance" (apagado por default) abre presupuesto,
-      balance y desvío (en el resultado neto, diferencia en plata, no %). Presupuesto = punto hueco y tramo punteado en todos los
-      gráficos; si el último elegido es solo presupuesto, los KPIs van punteados y la deuda en "—".
-    - Gestión: fila de botones (más vieja primero; con más de 4, "+N más" a la izquierda), acumulables: tocar suma sus años, tocar de
-      nuevo los saca. Franjas por gestión en el gráfico y columnas agrupadas por presidente en la tabla. Solo gestiones confirmadas.
-      Para empresas: el dueño solo si es una persona con nombre; SAF y sociedades anónimas sin botón. Un año con dos presidentes es
-      de quien firmó el balance.
-    - "Otra liga": usa el último balance elegido, nunca un presupuesto. El puesto ("9.º de 20") adentro del card es un paso aparte.
-    - Al cambiar de club, la selección vuelve a los últimos 5 del club nuevo. Sparklines en SVG; Chart.js solo para el gráfico que se
-      abre al tocar un rubro. El aviso "Viendo N ejercicios" solo aparece con 0 elegidos.
-    - Valores ajustados por inflación (absorbe el 23(d)): deflactor del PBI de la moneda que se muestra (EE.UU./BEA para USD, zona
-      euro/Eurostat para EUR), año base = el último ejercicio cerrado, por año de cierre (2024/25 usa 2025), los presupuestos
-      posteriores al base no se ajustan. Serie en un archivo nuevo de data/ (deflactores, a crear en el paso 11), se actualiza una vez por año. Default: nominales.
-    PASOS (cada uno con el ok de Guido):
-    3. Estado de la selección: una lista de años + "el año que manda", reemplazando las ~10 lecturas directas de `anioSelect.value`.
-    4. Cards de ejercicios + atajos + "+N más" + estado vacío (necesita 3).
-    5. Estado de resultados con una columna por año, Δ, sparkline, rubro desplegable, % del total como switch, presupuesto al lado.
-       En formato del club, filas = unión de etiquetas de los años, "—" donde falta. colspans y colgroup dinámicos.
-    6. KPIs con Δ y sparkline (siguen saliendo de los totales de la tabla).
-    7. Gráficos arriba de la tabla, siguen a la selección; la torta pasa a barras apiladas; sale la sección "Gráficos".
-    9. Fuentes y banner de calidad por ejercicio elegido. Y los cards de presupuesto (Supuestos, Presupuesto financiero,
-       Inversiones, Torneos): solo para el presupuesto más nuevo elegido, con el año en el título (decisión de Guido).
-    10. Mi Cuenta: búsquedas guardadas con `years:[]`, leyendo las viejas con `year`.
-    14. Cierre: en.js, celular, audit, docs (PANTALLA, ESTADO), borrar este punto.
-
-149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (paso 12) crea el formato nuevo de
-    gestiones (`data/gestiones/<país>.js`: presidente o dueño, desde, hasta, fuente, confirmada) y lo carga para los clubes que ya
-    están. Falta que un club nuevo lo traiga solo al onboardearse, en vez de la entrada de relleno "Gestión actual" que hoy escribe
+149. LAS GESTIONES EN EL PIPELINE DE ALTAS (pedido de Guido, 2026-10-05). El to-do 147 (Versión 545) creó el formato nuevo de
+    gestiones (`data/gestiones/<país>.js`: presidente o dueño, desde, hasta, fuente, confirmada) y lo cargó para Boca y Racing. Falta que un club nuevo lo traiga solo al onboardearse, en vez de la entrada de relleno "Gestión actual" que hoy escribe
     `tools/alta-club.mjs` (y `gestionId:null` de `tools/cargar.mjs`). Idea de partida, a discutir con Guido: proponer el firmante
     de cada balance desde su transcripción ("Presidente", "Presidente do Conselho", "Chairman", "Vorstandsvorsitzender"), marcarlo
     confirmado solo con una fuente, y mandar a la cola humana solo cuando el firmante cambia entre años o no aparece. Criterio ya
