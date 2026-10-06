@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 558 — To-do 23: mockup de Comparar con el diseño de Finanzas (2026-10-06)
+
+- `Prototyping/Comparar/mockup-23.html`, aprobado por Guido. Comparar pasa a leerse como Finanzas: los dos cards de lado son el título, chips de ejercicio de Finanzas (un club elige varios ejercicios, cada lado con "Promedio | Suma"), barra con formato fijo en Simplificado y "Valores ajustados por inflación", un solo gráfico con A y B en el mismo eje de años, tabla con las filas de Finanzas (A, B, B / A) y un gráfico A contra B al tocar un rubro. Sin USD / ARS en el header de Comparar. Números reales del motor; el porqué de cada decisión, en un comentario al principio del archivo. Nada del sitio cambió todavía.
+
 ## Versión 557 — To-do 101 cerrado sin más cambios (2026-10-06)
 
 - Decisión de Guido: los criterios de categoría entre clubes no se siguen revisando ("va a ser un círculo sin fin"). Quedan como están, sin cambios en los datos: gastos de transferencias y préstamos de jugadores (entre `other_expenses` y `player_amortisation` según el club), seguros fuera de administración en 4 clubes, intereses como línea de gasto en 5, alquileres repartidos entre administración y otros gastos, y la línea de sueldos de Boca 2027 con gastos no salariales adentro. Lo único que se cambió del 101 fue el punto 1 (Boca, Versión 554).

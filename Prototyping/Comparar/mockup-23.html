@@ -1,0 +1,448 @@
+<!doctype html>
+<!--
+  MOCKUP DEL TO-DO 23 (Comparar con el diseño de Finanzas + valores ajustados por inflación). Interno, no se publica.
+  El porqué de cada decisión, aprobadas por Guido el 2026-10-06 (no se muestran en la página: no son para el visitante):
+  - Sin título "A contra B" ni bajada: los dos cards son el título. Abajo del nombre, una línea: cómo se arma el lado.
+  - Chips de ejercicio iguales a los de Finanzas (Balance / Presupuesto punteado / Sin publicar rayado). Una liga elige
+    varias temporadas; un club elige VARIOS ejercicios, como en Finanzas, cada lado con su "Promedio | Suma".
+  - Sin USD / ARS en el header: en Comparar no hace nada (siempre USD).
+  - Barra de Finanzas: "Formato" fijo en Simplificado (la condición para comparar); "Valores: Nominales | Ajustados por
+    inflación" con el deflactor del PBI de EE.UU. Cada ejercicio se ajusta por su año de cierre ANTES de sumar o
+    promediar el lado (numerosDe / mezclaDe en js/selector.js); año base = el último de la serie; un presupuesto
+    posterior al año base no se ajusta.
+  - Sin cards de KPIs: el gráfico "Ingresos, gastos y resultado" de Finanzas (FIN_MULTI_CHART), uno por lado y con la
+    misma escala. Liga: un punto por temporada; club: uno por ejercicio. Presupuesto = punto hueco y tramo punteado.
+    "De qué vive cada lado" = las barras apiladas de Finanzas (reemplaza a la composición al 100%).
+  - Tabla con las filas de Finanzas en formato simplificado + los 2 indicadores propios de Comparar. Columnas A, B y
+    B / A sin verde ni rojo. Unidad en el encabezado, gastos entre paréntesis, toggle "% del total". Lado solo
+    presupuesto = columna amarilla en cursiva; mezclado = etiqueta "incluye N presupuesto". "12 de 14" = cuántos
+    ejercicios informan el dato. Tocar un rubro abre de qué ejercicios sale.
+  - Avisos generales abajo de la tabla; los de cada lado, en su card. Fuentes: un renglón por ejercicio.
+  - Mobile: lo mismo que Finanzas (apilado, chips con scroll, primera columna de la tabla fija).
+  DATOS: todos reales, del motor del sitio (computeYearGeneric, simplifiedReportForClub, toDisplayValue a USD) en el
+  preview local del 2026-10-06, y el deflactor de data/deflactores.js. RELLENO: solo comportamiento (las temporadas de
+  la liga que no son 2020 ni 2024 y "Elegir otro" no hacen nada; Fuentes sin el nombre del documento).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comparar, mockup 23</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<style>
+/* Mismos tokens y las mismas clases que Prototyping/Finanzas/mockup-147.html: la idea es que se note que es el mismo sitio. */
+:root{--azul:#0a2b5c;--ladob:#d9822b;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--green:#1b7a3d;--red:#b5372b;--soft:#eef2f8;--budget:#8a6d00;--budgetbg:#fdf8e7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+.top{background:var(--azul);color:#fff;display:flex;align-items:center;gap:20px;padding:10px 24px}
+.top b{font-size:15px}
+.top nav{display:flex;gap:4px;margin-left:auto}
+.top nav span{padding:5px 9px;border-radius:6px;font-size:13px;opacity:.85}
+.top nav span.on{background:var(--oro);color:var(--azul);opacity:1;font-weight:600}
+.chip{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 6px 4px 8px}
+.chip small{display:block;font-size:9px;letter-spacing:.06em;opacity:.7}
+.chip strong{font-size:13px}
+.chip button{background:var(--oro);border:0;border-radius:6px;font-weight:600;font-size:12px;padding:4px 8px;color:var(--azul)}
+main{max-width:1120px;margin:0 auto;padding:22px 24px 80px}
+h1{font-size:28px;margin:0 0 14px}
+
+.toggle-ann{position:fixed;right:16px;bottom:16px;background:#d0332b;color:#fff;border:0;border-radius:20px;padding:8px 14px;font-weight:600;cursor:pointer;z-index:9}
+
+.L{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--azul);color:#fff;font-size:10px;font-weight:700;flex:none;vertical-align:1px;margin-right:5px}
+.L.b{background:var(--ladob)}
+/* los dos lados */
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.side{min-width:0;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.side-h{display:flex;align-items:center;gap:6px}
+.side-h strong{font-size:17px}
+.side-h .chg{margin-left:auto;border:1px solid var(--border);background:#fff;border-radius:6px;padding:3px 8px;font:inherit;font-size:12px;cursor:pointer;flex:none}
+.side .what{color:var(--muted);font-size:12.5px;margin:2px 0 10px 23px}
+.barrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.years{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}
+.yc{border:1px solid var(--border);background:#fff;border-radius:8px;padding:5px 10px;cursor:pointer;text-align:left;min-width:64px;font:inherit;line-height:1.15}
+.yc b{display:block;font-size:13px;font-variant-numeric:tabular-nums}
+.yc span{display:block;font-size:10px;color:var(--muted);white-space:nowrap}
+.yc.on{border-color:var(--azul);background:var(--soft)}
+.yc.on b{color:var(--azul)}
+.yc.p{border-style:dashed}
+.yc.p span{color:var(--budget)}
+.yc.x{cursor:not-allowed;opacity:.5;background:repeating-linear-gradient(135deg,#fff 0 6px,#f3f3f1 6px 12px)}
+.yc.off{cursor:default;opacity:.55}
+.more{align-self:center;white-space:nowrap;background:none;border:0;padding:0;color:var(--azul);font:inherit;font-size:13px;font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:7px;overflow:hidden;background:#fff}
+.seg button{border:0;background:#fff;padding:5px 9px;font:inherit;font-size:12px;cursor:pointer}
+.seg button.on{background:var(--azul);color:#fff}
+.viewrow{padding:10px 0;border-top:1px dashed var(--border);border-bottom:1px solid var(--border);margin-bottom:16px}
+.fixed{font-size:12px;border:1px solid var(--border);border-radius:7px;padding:5px 9px;background:#fff;color:var(--muted)}
+.fixed b{color:var(--text);font-weight:600}
+.realnote{margin:-6px 0 16px;font-size:12.5px;background:#eef6f0;border:1px solid #cfe5d6;border-radius:8px;padding:8px 12px;color:#1d4d2e}
+.tagp{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--budget);background:var(--budgetbg);border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;text-transform:uppercase;vertical-align:1px;font-style:normal}
+.tagm{display:inline-block;font-size:10px;font-weight:600;color:var(--budget);border:1px dashed #d9c27a;border-radius:4px;padding:0 4px;background:#fff;font-style:normal}
+.pos{color:var(--green)}.neg{color:var(--red)}
+section.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+section.card h2{font-size:18px;margin:0 0 2px}
+.desc{color:var(--muted);margin:0 0 12px;font-size:13px}
+.head-row{display:flex;justify-content:space-between;align-items:start;gap:12px;flex-wrap:wrap}
+/* el gráfico: A y B en el mismo eje */
+.sum{display:flex;gap:22px;flex-wrap:wrap;margin:4px 0 10px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sum b{color:var(--text);font-size:16px}
+.sum b.p{color:var(--budget);font-style:italic}
+.sum .x{align-self:end}
+.cv{position:relative;height:280px}
+.rowcv{position:relative;height:200px;max-width:760px}
+.photo{font-size:12px;color:var(--muted);margin-top:4px}
+/* tabla: las mismas reglas que la de Finanzas */
+.tw{overflow-x:auto;border-top:1px solid var(--border)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid #f0f0ee}
+th{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.03em;vertical-align:bottom}
+th small{display:block;font-weight:500;font-size:10px;letter-spacing:0}
+th .nm{display:block;color:var(--text);font-size:13px;letter-spacing:0}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff;min-width:220px;z-index:1;white-space:normal}
+td.bud,th.bud{background:var(--budgetbg);color:var(--budget);font-style:italic}
+th.bud small,th.bud .nm{color:var(--budget)}
+td.ratio{color:var(--muted)}
+td .cnt{display:block;font-size:10px;color:var(--muted);font-style:normal}
+tr.sec td{font-size:11px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;background:#fafaf8}
+tr.tot td{font-weight:700;border-top:1px solid var(--border)}
+tr.row{cursor:pointer}
+tr.row:hover td{background:#f6f8fc}
+tr.row td:first-child::before{content:"▸ ";color:var(--muted)}
+tr.row.open td:first-child::before{content:"▾ "}
+tr.row.open td{background:#f1f5fb}
+tr.chartrow td{background:#f8fafd;padding:10px 16px 14px;white-space:normal}
+.partsw{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.parts{display:grid;grid-template-columns:minmax(120px,190px) 1fr 50px;gap:3px 10px;font-size:12px;align-items:center}
+.parts .pb{height:8px;background:#f0f0ee;border-radius:3px;overflow:hidden}.parts .pb i{display:block;height:100%;background:var(--azul)}
+.parts .pb i.b{background:var(--ladob)}
+.parts .pb i.p{background:repeating-linear-gradient(90deg,#d9c27a 0 4px,#fdf8e7 4px 7px)}
+.parts .r{text-align:right;font-variant-numeric:tabular-nums}
+.tip{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;border:1px solid #c9c9c4;color:var(--muted);font-size:10px;font-weight:700;margin-left:4px;cursor:help;vertical-align:1px}
+.avisos{margin-top:12px;border-top:1px solid var(--border);padding-top:10px}
+.avisos p{margin:4px 0;font-size:12.5px;color:var(--muted)}
+details{border-top:1px solid var(--border);padding:8px 0}
+summary{cursor:pointer;font-weight:600}
+.doc{margin:4px 0 0 14px;font-size:13px}
+.phone{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
+.phone iframe{width:375px;height:780px;border:10px solid #222;border-radius:28px;background:var(--bg);flex:none}
+body.embed #phoneBlk{display:none}
+@media (max-width:760px){
+ .top{flex-wrap:wrap;padding:8px 16px}.top nav{display:none}
+ main{padding:16px 16px 80px}
+ h1{font-size:22px}
+ .sides{grid-template-columns:minmax(0,1fr)}
+ .years{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.yc{flex:none}
+ th:first-child,td:first-child{min-width:130px}
+ th,td{padding:6px 6px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <b>El deporte en Números</b>
+  <nav><span>Inicio</span><span class="on">Comparar</span><span>Ligas</span><span>Finanzas</span><span>Fuentes</span><span>Mi Cuenta</span></nav>
+  <div class="chip"><div><small>ESTÁS VIENDO</small><strong>Boca Juniors</strong></div><button>Cambiar</button></div>
+</header>
+
+<main>
+  <div class="blk">
+    <div>
+      <h1>Comparar</h1>
+      <div class="sides">
+        <div class="side">
+          <div class="side-h"><span class="L">A</span><strong>Primera División</strong><button class="chg">Elegir otro</button></div>
+          <div class="what" id="whatA"></div>
+          <span class="lbl">Temporadas</span>
+          <div class="years" id="yearsA"></div>
+          <div class="barrow"><span class="lbl">Cómo se junta</span><div class="seg" id="aggSeg"><button data-a="prom" class="on">Promedio</button><button data-a="suma">Suma</button></div></div>
+        </div>
+        <div class="side">
+          <div class="side-h"><span class="L b">B</span><strong>Boca Juniors</strong><button class="chg">Elegir otro</button></div>
+          <div class="what" id="whatB"></div>
+          <span class="lbl">Ejercicios</span>
+          <div class="years" id="yearsB"></div>
+          <div class="barrow"><span class="lbl">Cómo se junta</span><div class="seg" id="aggSegB"><button data-a="prom" class="on">Promedio</button><button data-a="suma">Suma</button></div></div>
+        </div>
+      </div>
+      <div class="barrow viewrow">
+        <span class="lbl">Formato</span>
+        <span class="fixed"><b>Simplificado</b>, el único comparable entre clubes</span>
+        <span class="lbl" style="margin-left:18px">Valores</span>
+        <div class="seg" id="realSeg"><button class="on" data-r="0">Nominales</button><button data-r="1">Ajustados por inflación</button></div>
+      </div>
+      <div class="realnote" id="realNote" hidden></div>
+    </div>
+  </div>
+
+  <div class="blk">
+    <section class="card">
+      <div class="head-row">
+        <div><h2>Ingresos, gastos y resultado</h2>
+        <p class="desc" id="chartDesc"></p></div>
+        <div class="seg" id="chartMode"><button class="on" data-m="ing">Ingresos</button><button data-m="gas">Gastos</button><button data-m="pat">Resultado</button><button data-m="mix">De qué vive cada lado</button></div>
+      </div>
+      <div class="sum" id="cmpSum"></div>
+      <div class="cv"><canvas id="cvMain"></canvas></div>
+    </section>
+  </div>
+
+  <div class="blk">
+    <section class="card">
+      <div class="head-row">
+        <div><h2>Estado de resultados</h2>
+        <p class="desc">En ingresos ves cuánta plata entró y en gastos cuánta salió, rubro por rubro. Tocá un rubro para ver de qué ejercicios sale.</p></div>
+        <div class="seg" id="unit"><button class="on" data-u="abs" id="unitAbs"></button><button data-u="pct">% del total</button></div>
+      </div>
+      <div class="tw"><table id="pl"></table></div>
+      <div class="avisos" id="avisos"></div>
+    </section>
+  </div>
+
+  <div class="blk">
+    <section class="card">
+      <h2>Fuentes</h2>
+      <p class="desc">De dónde sale cada número. Un renglón por ejercicio, agrupado por lado.</p>
+      <div id="src"></div>
+    </section>
+  </div>
+
+  <div class="blk" id="phoneBlk">
+    <section class="card">
+      <h2>En un teléfono</h2>
+      <div class="phone"><iframe src="mockup-23.html?embed=1" title="Comparar en 375 px"></iframe></div>
+    </section>
+  </div>
+</main>
+
+<script>
+if(new URLSearchParams(location.search).get('embed')) document.body.classList.add('embed');
+
+// ---------- Datos reales (preview local, 2026-10-06) ----------
+// M USD nominales, formato simplificado. [ingresos, gastos, resultado, deuda neta, masa salarial, socios]
+// Rubros en el orden de ING y GAS (gastos en positivo).
+const ING=['Cuotas Sociales','Comercial / Sponsors','Estadio','Televisión','Premios por competencias','Venta de Jugadores','Educación','Otras secciones deportivas','Otros ingresos'];
+const GAS=['Compra de jugadores','Salarios y primas (plantel y cuerpo técnico)','Inversiones (amortizaciones y depreciación)','Organización de partidos','Educación','Otras secciones deportivas (juvenil, otros deportes, básquet)','Administración y gastos generales','Fútbol profesional (sin desglosar por la fuente)','Otros gastos'];
+const PALETA=['#0a2b5c','#3f6fb5','#8fb0dd','#f2b705','#1b7a3d','#e07b39','#8a5cf6','#2b8a99','#b9b9b4']; // la de FIN_MULTI_CHART
+function E(c,y,t,n,i,g){return {c,y,t,rev:n[0],exp:n[1],pat:n[2],nd:n[3],wa:n[4],so:n[5],i,g}}
+const LIGA=[
+ E('Banfield',2020,'B',[10.02,9.16,1.14,3.37,2.69,null],[0.9,0.39,0.32,2.34,0,2.66,0.4,0.33,2.68],[0,2.69,1.62,0.66,0.56,1.47,2.17,0,0]),
+ E('Godoy Cruz',2020,'B',[8.72,5.88,2.23,-1.14,2.79,null],[0.33,0.43,0.37,3.73,0,2.49,0.45,0.05,0.86],[0.17,2.79,0.1,0.36,0.37,0.15,0.83,0,1.11]),
+ E('Racing Club',2020,'B',[32.93,39.75,-3.75,1.76,21.43,86529],[6.56,3.25,2.59,3.93,0,6.88,0.71,0,9.01],[2.26,21.43,11.36,0.84,0,3.1,0.77,0,0]),
+ E('Vélez Sarsfield',2020,'B',[19.57,28.94,-2.06,8.12,9.22,72889],[4.97,2.08,0.93,3.19,0,3,3.8,0,1.61],[3.25,9.22,0.67,0.03,0,7.98,6.52,0,1.27]),
+ E('Estudiantes de La Plata',2024,'B',[54.82,44.88,10.52,13.16,10.67,56000],[6.56,0.71,1.24,3.28,6.4,26.66,1.53,1.56,6.88],[14.9,10.67,1.79,5.18,0,7.58,1.92,0,2.85]),
+ E('Gimnasia y Esgrima (LP)',2024,'B',[23.81,22.97,4.36,10.12,9.64,null],[4.22,0.69,1.08,2.66,0.32,5.6,1.14,0.52,7.57],[3.51,9.64,0.45,0.47,1.39,2.49,2.2,0,2.81]),
+ E('Independiente',2024,'B',[42.86,45.09,8.3,27.25,15.43,175796],[15.23,4.37,8.29,3.18,0,5.32,2.18,0.66,3.63],[4.88,15.43,1.48,3.82,2.61,8.65,7.38,0,0.83]),
+ E('Instituto ACC',2024,'B',[19.76,18.43,2.01,2.55,2.75,30000],[3.01,4.27,3.63,2.51,0,3.62,1.63,0.16,0.92],[0.58,2.75,0.34,2.11,1.42,4.06,2.11,0,5.07]),
+ E('Racing Club',2024,'B',[73.01,87.09,-6.74,29.74,37.96,86529],[12.78,4.69,6.43,3.41,0,30.46,0.99,0,14.26],[11,37.96,25.66,2.86,0,7.91,1.71,0,0]),
+ E('River Plate',2024,'B',[217.86,157.47,62.02,28.84,13.56,null],[52.56,40.98,68.93,12.64,0,36.8,4.35,1.6,0],[25.16,13.56,6.75,0,4.33,5.93,32.35,69.38,0]),
+ E('San Lorenzo',2024,'P',[21.36,14.82,6.54,null,6.71,89700],[10.25,3.85,1.3,1.75,3.97,0,0,0.03,0.2],[0,6.71,0,1.34,0,0.85,5.92,0,0]),
+ E('Talleres',2024,'B',[64.78,50.19,12.79,20.61,9.85,null],[14.92,3.89,8.94,4.18,0,25.83,0,0.14,6.89],[17.1,9.85,1.04,5.81,0,0,11.35,0,5.04]),
+ E('Unión',2024,'B',[22.78,21.4,1.31,null,null,null],[3.93,0.41,0.54,2.67,0.08,11.25,2.56,0.4,0.94],[1.4,0,0.29,2.25,0,3.62,2.82,10.57,0.45]),
+ E('Vélez Sarsfield',2024,'B',[51.26,69.43,-1.22,16.7,13.92,72889],[7.26,1.96,4.64,2.71,0,27.26,5.24,0,2.19],[16.52,13.92,1.41,0.37,0,13.15,22.54,0,1.53])];
+const BOCA={
+ 2022:E('Boca Juniors',2022,'B',[114.21,109.33,3.69,20.41,19.81,365000],[30.14,28.33,21.58,0,0,25.97,0,4.93,3.27],[22.68,19.81,3.95,10.05,0,7.47,31.55,0,13.83]),
+ 2023:E('Boca Juniors',2023,'B',[102.14,108.45,3.99,10.85,22.35,365000],[40.52,17.99,29.69,0,0,8.05,0,0.65,5.24],[18.54,22.35,4.57,12.85,0,9.24,33.66,0,7.24]),
+ 2025:E('Boca Juniors',2025,'B',[197.52,168.53,29.58,26.64,38.61,365000],[47.83,27.61,46.89,0,0,71.16,0,0.79,3.23],[30.4,38.61,6.2,18.98,0,12.84,40.64,0,20.86]),
+ 2027:E('Boca Juniors',2027,'P',[144.21,142.16,2.05,null,43.75,365000],[50.96,32.22,50.44,0,0,0,0,3.26,7.34],[28.75,43.75,2.28,20.32,0,12.59,34.46,0,0])};
+const SEASONS=[[2019,4],[2020,4],[2021,3],[2022,4],[2023,6],[2024,10],[2025,8],[2026,2]]; // clubes cargados por temporada, data/rankings/ar-primera.js
+const DEF={2020:105.377,2022:118.026,2023:122.451,2024:125.587,2025:128.893}; // deflactor del PBI de EE.UU., data/deflactores.js
+const BASE=2025;
+
+// ---------- Estado ----------
+let selA=new Set([2020,2024]), selB=new Set([2023,2025,2027]), aggA='prom', aggB='prom', real=new URLSearchParams(location.search).get('real')==='1', unit='abs', chartMode=new URLSearchParams(location.search).get('m')||'ing', openRow=new URLSearchParams(location.search).get('row');
+const fac=y=>(!real||y>BASE)?1:DEF[BASE]/DEF[y];
+const ej=y=>`${String(y-1).slice(2)}/${String(y).slice(2)}`;
+const f1=v=>v==null?'—':(Math.abs(v)<0.05?'0.0':v.toFixed(1));
+const money=v=>v==null?'—':(v<0?'-':'')+Math.abs(v).toFixed(1);
+const unitTxt=()=>real?`M USD de ${BASE}`:'M USD';
+const sortN=s=>[...s].sort((a,b)=>a-b);
+
+function side(list, mode){
+  const keys=['rev','exp','pat','nd','wa'];
+  const s={sum:{},n:{},i:ING.map(()=>0),g:GAS.map(()=>0),rcw:0,rcs:0,so:0,list};
+  keys.forEach(k=>{s.sum[k]=0;s.n[k]=0});
+  list.forEach(e=>{const f=fac(e.y);
+    keys.forEach(k=>{if(e[k]!=null){s.sum[k]+=e[k]*f;s.n[k]++}});
+    if(e.wa!=null)s.rcw+=e.rev*f;
+    if(e.so){s.rcs+=e.rev*f;s.so+=e.so}
+    e.i.forEach((v,j)=>s.i[j]+=v*f); e.g.forEach((v,j)=>s.g[j]+=v*f);});
+  const div=k=>mode==='prom'&&s.n[k]?s.n[k]:1;
+  s.v={}; keys.forEach(k=>s.v[k]=s.n[k]?s.sum[k]/div(k):null);
+  const dn=mode==='prom'&&list.length?list.length:1;
+  s.i=s.i.map(v=>v/dn); s.g=s.g.map(v=>v/dn);
+  s.v.oth=s.v.pat-s.v.rev+s.v.exp;
+  s.v.wp=s.n.wa?s.sum.wa/s.rcw*100:null;
+  s.v.pm=s.so?s.rcs*1e6/s.so:null;
+  s.nso=list.filter(e=>e.so).length;
+  s.total=list.length; s.clubs=new Set(list.map(e=>e.c)).size;
+  s.presu=list.filter(e=>e.t==='P'); s.years=[...new Set(list.map(e=>e.y))].sort();
+  s.allBudget=list.length>0&&list.every(e=>e.t==='P');
+  return s;
+}
+const listA=()=>LIGA.filter(e=>selA.has(e.y));
+const listB=()=>sortN(selB).map(y=>BOCA[y]);
+const A=()=>side(listA(),aggA);
+const B=()=>side(listB(),aggB);
+const nameA=()=>'Primera División '+sortN(selA).join(' + ');
+const facTxt=s=>s.years.map(y=>y>BASE?`${y}: sin ajustar`:`${y}: ×${fac(y).toFixed(2)}`).join(' · ');
+const aggWord=(m,n)=>n===1?'':(m==='prom'?'promedio de ':'suma de ');
+
+function render(){
+  const a=A(), b=B();
+  const pres=s=>s.presu.length?(s.allBudget?' · <span class="tagp">Presupuesto</span>':` · <span class="tagm">incluye ${s.presu.length} presupuesto</span>`):'';
+  document.getElementById('whatA').innerHTML=`Argentina · ${aggWord(aggA,a.total)}${a.total} ejercicios de ${a.clubs} clubes${pres(a)}`;
+  document.getElementById('whatB').innerHTML=`Argentina · ${b.total===1?(b.allBudget?'presupuesto ':'balance ')+ej(b.years[0]):aggWord(aggB,b.total)+b.total+' ejercicios'}${b.total>1?pres(b):''}`;
+  document.getElementById('yearsA').innerHTML=SEASONS.map(([y,n])=>{const live=y===2020||y===2024;return `<button class="yc${selA.has(y)?' on':''}${live?'':' off'}" data-y="${y}" title="${live?'':'En el mockup solo 2020 y 2024'}"><b>${y}</b><span>${n} club${n>1?'es':''}</span></button>`}).join('')+'<button class="more">+10 más</button>';
+  const BY=[[2022,'Balance'],[2023,'Balance'],[2024,'Sin publicar'],[2025,'Balance'],[2026,'Sin publicar'],[2027,'Presupuesto']];
+  document.getElementById('yearsB').innerHTML=BY.map(([y,t])=>`<button class="yc${selB.has(y)?' on':''}${t==='Presupuesto'?' p':''}${t==='Sin publicar'?' x':''}" data-y="${y}"><b>${ej(y)}</b><span>${t}</span></button>`).join('');
+  document.getElementById('aggSegB').parentElement.style.display=selB.size>1?'':'none';
+  document.querySelectorAll('#aggSeg button').forEach(x=>x.classList.toggle('on',x.dataset.a===aggA));
+  document.querySelectorAll('#aggSegB button').forEach(x=>x.classList.toggle('on',x.dataset.a===aggB));
+  document.querySelectorAll('#realSeg button').forEach(x=>x.classList.toggle('on',(x.dataset.r==='1')===real));
+  const rn=document.getElementById('realNote'); rn.hidden=!real;
+  if(real) rn.innerHTML=`Todo en <b>M USD de ${BASE}</b>, ajustado con el deflactor del PBI de EE.UU.: 100 M USD de un ejercicio que cerró en 2020 equivalen a <b>${(100*DEF[BASE]/DEF[2020]).toFixed(0)} M</b> de ${BASE}. Cada ejercicio se ajusta por el año en que cierra, antes de sumar o promediar su lado. ${[...selA,...selB].some(y=>y>BASE)?`Los presupuestos que cierran después de ${BASE} (Boca ${ej(2027)}) quedan como están: todavía no hay inflación para descontarles.`:''}`;
+  document.getElementById('unitAbs').textContent=unitTxt();
+  renderChart(a,b); renderTable(a,b); renderSrc(a,b);
+}
+
+// ---------- Gráfico: A y B en el mismo eje ----------
+// Eje X = año de cierre de cada ejercicio. A: un punto por temporada (su promedio o suma); B: uno por ejercicio.
+// Mismo código visual que Finanzas: presupuesto = punto hueco, tramo punteado si hay un salto o un presupuesto.
+const COLA='#0a2b5c', COLB='#d9822b';
+let mainChart=null, rowChart=null;
+const ptA=y=>selA.has(y)?side(LIGA.filter(e=>e.y===y),aggA):null;
+const ptB=y=>selB.has(y)?side([BOCA[y]],'suma'):null;
+// Datos como {x: año de cierre, y}: el eje X es lineal, así un año sin elegir deja su hueco en vez de juntar los puntos.
+function serie(Y,pt,val,dx){
+  return Y.map(y=>{const s=pt(y);return s?{x:y+(dx||0),y:val(s),presu:!!s.allBudget,yr:y}:null}).filter(Boolean);
+}
+function lineas(Y,val){
+  const A=serie(Y,ptA,val), B=serie(Y,ptB,val);
+  const ds=(lab,col,d)=>({type:'line',label:lab,data:d,borderColor:col,backgroundColor:col,borderWidth:2.6,tension:0,
+    pointRadius:4.5,pointBorderWidth:2,pointBackgroundColor:d.map(p=>p.presu?'#fff':col),
+    segment:{borderDash:c=>{const p0=d[c.p0DataIndex],p1=d[c.p1DataIndex];return (p1.yr-p0.yr>1||p0.presu||p1.presu)?[5,4]:undefined}}});
+  return [ds('A · '+nameA(),COLA,A),ds('B · Boca Juniors',COLB,B)];
+}
+function opciones(Y,stacked,cat){
+  const o={responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'nearest',axis:'x',intersect:false},
+    plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxHeight:7}},
+      tooltip:{callbacks:{title:it=>it.length&&!cat?String(it[0].raw.yr):(it[0]||{}).label,
+        label:c=>{const r=c.raw;if(cat)return `${c.dataset.label}: ${c.parsed.y.toFixed(1)} ${unitTxt()}`;
+          const B=c.datasetIndex===1;return `${B?'B · Boca '+ej(r.yr):'A · temporada '+r.yr}${r.presu?' (Presupuesto)':''}: ${r.y.toFixed(1)} ${unitTxt()}`}}}},
+    scales:{y:{stacked,beginAtZero:true,title:{display:true,text:unitTxt()},ticks:{maxTicksLimit:6}}}};
+  o.scales.x=cat?{stacked,grid:{display:false}}
+    :{type:'linear',min:Y[0]-0.5,max:Y[Y.length-1]+0.5,grid:{display:false},afterBuildTicks:ax=>{ax.ticks=Y.map(v=>({value:v}))},ticks:{callback:v=>String(v)}};
+  return o;
+}
+function renderChart(a,b){
+  if(mainChart){mainChart.destroy();mainChart=null}
+  document.querySelectorAll('#chartMode button').forEach(x=>x.classList.toggle('on',x.dataset.m===chartMode));
+  const Y=sortN(new Set([...selA,...selB]));
+  const k={ing:'rev',gas:'exp',pat:'pat'}[chartMode];
+  const word=(m,n)=>n>1?(m==='prom'?'promedio':'suma'):(n===1?'':'');
+  const SUMLAB={ing:'Ingresos',gas:'Gastos',pat:'Resultado',mix:'Ingresos'}[chartMode];
+  const va=k?a.v[k]:a.v.rev, vb=k?b.v[k]:b.v.rev;
+  const sg=v=>chartMode==='pat'&&v>0?'+':'';
+  document.getElementById('cmpSum').innerHTML=
+    `<span><span class="L">A</span>${SUMLAB}, ${word(aggA,a.total)}: <b>${sg(va)}${money(va)}</b></span>`+
+    `<span><span class="L b">B</span>${SUMLAB}${b.total>1?', '+word(aggB,b.total):''}: <b class="${b.allBudget?'p':''}">${sg(vb)}${money(vb)}</b></span>`+
+    `<span class="x">${ratioTxt(va,vb)}</span>`;
+  document.getElementById('chartDesc').textContent=chartMode==='mix'
+    ? `En ${unitTxt()}. De dónde sale la plata de cada lado, rubro por rubro (formato simplificado).`
+    : `En ${unitTxt()}, por año de cierre. A: un punto por temporada. B: uno por ejercicio.`;
+  let cfg;
+  if(chartMode==='mix'){
+    const usados=ING.map((_,j)=>j).filter(j=>a.i[j]>0||b.i[j]>0);
+    cfg={type:'bar',data:{labels:['A · '+nameA(),'B · Boca Juniors'],datasets:usados.map((j,i)=>({label:ING[j],data:[a.i[j],b.i[j]],backgroundColor:PALETA[i%PALETA.length],maxBarThickness:120}))},
+      options:opciones(Y,true,true)};
+  } else if(chartMode==='pat'){
+    // Barras de A y B lado a lado en cada año (corridas 0,18 a cada lado del año).
+    const bar=(lab,col,d)=>({type:'bar',label:lab,data:d,backgroundColor:d.map(p=>p.presu?'#fff':col+'cc'),borderColor:col,borderWidth:d.map(p=>p.presu?1.5:0),borderDash:[3,2],barThickness:22});
+    cfg={type:'bar',data:{datasets:[bar('A · '+nameA(),COLA,serie(Y,ptA,s=>s.v.pat,-0.18)),bar('B · Boca Juniors',COLB,serie(Y,ptB,s=>s.v.pat,0.18))]},options:opciones(Y,false,false)};
+  } else {
+    cfg={type:'line',data:{datasets:lineas(Y,s=>s.v[k])},options:opciones(Y,false,false)};
+  }
+  mainChart=new Chart(document.getElementById('cvMain'),cfg);
+}
+function ratioTxt(va,vb){
+  if(va==null||vb==null||va===0||vb===0) return '';
+  if(Math.sign(va)!==Math.sign(vb)) return 'signo distinto';
+  const r=vb/va; return `B = ${r.toFixed(r>=10?0:1)}× A`;
+}
+function renderRowChart(){
+  if(rowChart){rowChart.destroy();rowChart=null}
+  const cv=document.getElementById('cvRow'); if(!cv) return;
+  const [key,j]=[openRow[0],+openRow.slice(1)];
+  const Y=sortN(new Set([...selA,...selB]));
+  rowChart=new Chart(cv,{type:'line',data:{datasets:lineas(Y,s=>key==='i'?s.i[j]:s.g[j])},options:opciones(Y,false,false)});
+}
+
+// ---------- Tabla ----------
+function renderTable(a,b){
+  document.querySelectorAll('#unit button').forEach(x=>x.classList.toggle('on',x.dataset.u===unit));
+  const pct=unit==='pct';
+  const totIA=a.v.rev, totIB=b.v.rev, totGA=a.v.exp, totGB=b.v.exp;
+  const Bb=b.allBudget;
+  const cell=(v,base,neg,bud,cnt)=>{let t; if(v==null)t='—'; else if(pct)t=base?(Math.abs(v)/Math.abs(base)*100).toFixed(1)+'%':'—'; else t=neg&&v!==0?`(${f1(Math.abs(v))})`:f1(v);
+    return `<td class="${bud?'bud':''}">${t}${cnt||''}</td>`};
+  const rat=(va,vb,ba,bb)=>{
+    if(pct){if(va==null||vb==null||!ba||!bb)return '<td class="ratio">—</td>';const d=Math.abs(vb)/Math.abs(bb)*100-Math.abs(va)/Math.abs(ba)*100;return `<td class="ratio">${d>=0?'+':''}${d.toFixed(1)} p.p.</td>`}
+    if(va==null||vb==null||va===0||vb===0)return '<td class="ratio">—</td>';
+    if(Math.sign(va)!==Math.sign(vb))return '<td class="ratio">signo distinto</td>';
+    return `<td class="ratio">×${(vb/va).toFixed(vb/va>=10?0:1)}</td>`};
+  const cnt=(s,k)=>s.n[k]<s.total?`<span class="cnt">${s.n[k]} de ${s.total}</span>`:'';
+  const tagH=s=>s.presu.length&&!s.allBudget?`<small><span class="tagm">incluye ${s.presu.length} presupuesto</span></small>`:'';
+  let h=`<thead><tr><th>Rubro<small>${unitTxt()}${pct?' · % del total':''}</small></th>
+    <th><span class="nm"><span class="L">A</span>${nameA()}</span>${real?`<small>${facTxt(a)}</small>`:''}${tagH(a)}</th>
+    <th class="${Bb?'bud':''}"><span class="nm"><span class="L b">B</span>Boca Juniors ${sortN(selB).map(ej).join(' + ')}</span>${Bb?'<small>Presupuesto</small>':''}${real?`<small>${facTxt(b)}</small>`:''}${tagH(b)}</th>
+    <th>B / A<small>${pct?'diferencia':'veces'}</small></th></tr></thead><tbody>`;
+  const sec=t=>`<tr class="sec"><td colspan="4">${t}</td></tr>`;
+  const parts=(key,j)=>`<tr class="chartrow"><td colspan="4"><div style="font-size:12px;color:var(--muted);margin-bottom:6px">${key==='i'?ING[j]:GAS[j]}, por año de cierre. A: el ${aggA==='prom'?'promedio':'total'} de cada temporada. B: cada ejercicio.</div><div class="rowcv"><canvas id="cvRow"></canvas></div></td></tr>`;
+  const row=(lab,key,j,va,vb,ba,bb,neg)=>{const id=key+j;const open=openRow===id;
+    return `<tr class="row${open?' open':''}" data-r="${id}"><td>${lab}</td>${cell(va,ba,neg)}${cell(vb,bb,neg,Bb)}${rat(va,vb,ba,bb)}</tr>`+(open?parts(key,j):'')};
+  h+=sec('Ingresos');
+  ING.forEach((l,j)=>{if(!a.i[j]&&!b.i[j])return;h+=row(l,'i',j,a.i[j],b.i[j],totIA,totIB,false)});
+  h+=`<tr class="tot"><td>Total ingresos</td>${cell(totIA,totIA)}${cell(totIB,totIB,false,Bb)}${rat(totIA,totIB,totIA,totIB)}</tr>`;
+  h+=sec('Gastos <span class="tip" title="Incluyen amortizaciones y depreciación, igual que el total de la tabla de Finanzas.">?</span>');
+  GAS.forEach((l,j)=>{if(!a.g[j]&&!b.g[j])return;h+=row(l,'g',j,a.g[j],b.g[j],totGA,totGB,true)});
+  h+=`<tr class="tot"><td>Total gastos</td>${cell(totGA,totGA,true)}${cell(totGB,totGB,true,Bb)}${rat(totGA,totGB,totGA,totGB)}</tr>`;
+  h+=sec('Resultado');
+  h+=`<tr><td>Intereses y otros resultados <span class="tip" title="Intereses, resultados financieros y extraordinarios: por eso el resultado no es ingresos menos gastos.">?</span></td>${cell(a.v.oth,totIA)}${cell(b.v.oth,totIB,false,Bb)}<td class="ratio">—</td></tr>`;
+  const pc=(v,base)=>v==null?'—':(pct?(base?(v/base*100).toFixed(1)+'%':'—'):(v>0?'+':'')+f1(v));
+  const sc=v=>v==null?'':(v<0?'neg':'pos');
+  h+=`<tr class="tot"><td>Resultado del ejercicio</td><td class="${sc(a.v.pat)}">${pc(a.v.pat,totIA)}</td><td class="${Bb?'bud':sc(b.v.pat)}">${pc(b.v.pat,totIB)}</td>${pct?'<td class="ratio">margen</td>':rat(a.v.pat,b.v.pat)}</tr>`;
+  h+=sec('Deuda');
+  h+=`<tr><td>Deuda neta <span class="tip" title="Deuda bruta menos caja. Negativa quiere decir más caja que deuda.">?</span></td><td>${pct?'—':f1(a.v.nd)}${cnt(a,'nd')}</td><td class="${Bb?'bud':''}">${b.v.nd==null?'—<span class="cnt">un presupuesto no la informa</span>':(pct?'—':f1(b.v.nd))+cnt(b,'nd')}</td>${pct?'<td class="ratio">—</td>':rat(a.v.nd,b.v.nd)}</tr>`;
+  h+=sec('Indicadores que solo tiene Comparar');
+  const wpA=a.v.wp,wpB=b.v.wp;
+  h+=`<tr><td>Masa salarial / Ingresos <span class="tip" title="Cuánto de lo que entra se va en sueldos del plantel. Se calcula sobre los totales del lado, no promediando porcentajes.">?</span></td><td>${wpA==null?'—':wpA.toFixed(0)+'%'}${cnt(a,'wa')}</td><td class="${Bb?'bud':''}">${wpB==null?'—':wpB.toFixed(0)+'%'}</td><td class="ratio">${wpA!=null&&wpB!=null?((wpB-wpA)>=0?'+':'')+(wpB-wpA).toFixed(0)+' p.p.':'—'}</td></tr>`;
+  h+=`<tr><td>Ingreso por socio <span class="tip" title="Solo para los clubes que publican su padrón de socios.">?</span></td><td>${a.v.pm==null?'—':Math.round(a.v.pm).toLocaleString('es-AR')+' USD'}${a.nso<a.total?`<span class="cnt">${a.nso} de ${a.total}</span>`:''}</td><td class="${Bb?'bud':''}">${b.v.pm==null?'—':Math.round(b.v.pm).toLocaleString('es-AR')+' USD'}</td>${rat(a.v.pm,b.v.pm)}</tr>`;
+  document.getElementById('pl').innerHTML=h+'</tbody>';
+  renderRowChart();
+  const av=[];
+  if(a.total!==b.total) av.push(`Los dos lados no tienen la misma cantidad de ejercicios (A: ${a.total}, B: ${b.total}). Mirá cómo se arma cada uno, arriba en su card, antes de leer "quién es más grande".`);
+  av.push('Un ejercicio sin el dato no suma cero: queda afuera y se cuenta aparte (el "12 de 14" abajo del número).');
+  av.push('En gastos, "Fútbol profesional (sin desglosar por la fuente)" es de River y Unión: sus documentos no separan sueldos de otros gastos del plantel.');
+  document.getElementById('avisos').innerHTML=av.map(t=>`<p>${t}</p>`).join('');
+}
+
+function renderSrc(a,b){
+  const g=(L,nm,list,open)=>`<details ${open?'open':''}><summary><span class="L${L==='B'?' b':''}">${L}</span>${nm} · ${list.length} ejercicio${list.length>1?'s':''}</summary>${list.map(e=>`<div class="doc">${e.c}, ${L==='A'?'cierre '+e.y:ej(e.y)}: ${e.t==='P'?'<span class="tagp">Presupuesto</span>':'Balance'} <a href="#" onclick="return false">ver documento</a></div>`).join('')}</details>`;
+  document.getElementById('src').innerHTML=g('A',nameA(),a.list,false)+g('B','Boca Juniors',b.list,true);
+}
+
+document.addEventListener('click',ev=>{
+  const ya=ev.target.closest('#yearsA .yc'); if(ya){const y=+ya.dataset.y; if(y===2020||y===2024){selA.has(y)?selA.delete(y):selA.add(y); if(!selA.size)selA.add(y===2020?2024:2020); render()} return}
+  const yb=ev.target.closest('#yearsB .yc'); if(yb&&!yb.classList.contains('x')){const y=+yb.dataset.y; selB.has(y)?selB.delete(y):selB.add(y); if(!selB.size)selB.add(y); render();return}
+  const ag=ev.target.closest('#aggSeg button'); if(ag){aggA=ag.dataset.a;render();return}
+  const agb=ev.target.closest('#aggSegB button'); if(agb){aggB=agb.dataset.a;render();return}
+  const r=ev.target.closest('#realSeg button'); if(r){real=r.dataset.r==='1';render();return}
+  const u=ev.target.closest('#unit button'); if(u){unit=u.dataset.u;render();return}
+  const c=ev.target.closest('#chartMode button'); if(c){chartMode=c.dataset.m;render();return}
+  const tr=ev.target.closest('tr.row'); if(tr){openRow=openRow===tr.dataset.r?null:tr.dataset.r;render();return}
+});
+render();
+</script>
+</body>
+</html>

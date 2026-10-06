@@ -7,6 +7,10 @@ gestión, ajuste por inflación). Los números de deuda y el puesto en "otra lig
 relleno; las gestiones de Juventus, de memoria y sin verificar. No es la fuente de nada que se
 publique. El resto de este archivo es del selector de club.
 
+**Comparar con el diseño de Finanzas (to-do 23, 2026-10-06):** `Comparar/mockup-23.html` es el mockup que Guido
+aprobó para que Comparar se lea como Finanzas, con valores ajustados por inflación. El porqué de cada decisión está en
+el comentario del principio del archivo. Números reales del motor al 2026-10-06.
+
 **Del selector no queda ningún prototipo.** Quedan dos documentos, y este archivo explica
 qué fueron y por qué se conservan.
 
