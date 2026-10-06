@@ -32,9 +32,9 @@
 // 'extraer'), así tools/gasto.mjs la cuenta.
 //
 // USO:
-//   node tools/localizar-extraer.mjs --lista Admin/piloto-localizar.txt              ENSAYO: tokens y costo estimados, sin API
-//   node tools/localizar-extraer.mjs --lista Admin/piloto-localizar.txt --ejecutar   localizar + extraer (API); los ya hechos no se repiten
-//   node tools/localizar-extraer.mjs --lista Admin/piloto-localizar.txt --medir      gratis: verificación y comparación con producción
+//   node tools/localizar-extraer.mjs --lista Admin/Archive/pilotos/piloto-localizar.txt              ENSAYO: tokens y costo estimados, sin API
+//   node tools/localizar-extraer.mjs --lista Admin/Archive/pilotos/piloto-localizar.txt --ejecutar   localizar + extraer (API); los ya hechos no se repiten
+//   node tools/localizar-extraer.mjs --lista Admin/Archive/pilotos/piloto-localizar.txt --medir      gratis: verificación y comparación con producción
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'node:fs';

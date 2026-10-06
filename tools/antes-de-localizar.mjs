@@ -19,7 +19,7 @@
 // Si el análisis del documento falla (alta-club no puede leerlo), no frena: la compuerta es un ahorro, no un chequeo de datos.
 //
 // USO (dentro de lote.mjs; también suelto, para ver qué frenaría):
-//   node tools/antes-de-localizar.mjs --lista Admin/lote-13.txt [--todos]   (--todos: aunque ya tengan .ubicacion.json)
+//   node tools/antes-de-localizar.mjs --lista Admin/lote-NN.txt [--todos]   (--todos: aunque ya tengan .ubicacion.json)
 // ============================================================================
 
 import { readFileSync, existsSync } from 'node:fs';

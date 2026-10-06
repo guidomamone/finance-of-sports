@@ -17,7 +17,7 @@
 // Familias para contar repeticiones: localizar-2 es parte de localizar; extraer-reintento cuenta como extraer.
 //
 // USO SUELTO (para mirar una corrida pasada):
-//   node tools/gasto-doc.mjs --lista Admin/lote-13g.txt --desde 2026-10-04T17:30 --hasta 2026-10-04T17:45
+//   node tools/gasto-doc.mjs --lista Admin/lote-NN.txt --desde 2026-10-04T17:30 --hasta 2026-10-04T17:45
 // ============================================================================
 
 import { readFileSync, existsSync } from 'node:fs';

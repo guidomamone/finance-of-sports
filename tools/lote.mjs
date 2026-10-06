@@ -23,8 +23,8 @@
 // (node tools/cola.mjs). Las respuestas de Guido se toman en la próxima corrida del mismo lote.
 //
 // USO:
-//   node tools/lote.mjs --lista Admin/lote-01.txt                 ensayo con costo
-//   caffeinate -i node tools/lote.mjs --lista Admin/lote-01.txt --ejecutar
+//   node tools/lote.mjs --lista Admin/lote-NN.txt                 ensayo con costo
+//   caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
@@ -151,7 +151,7 @@ for (const pdf of docs) {
   // "desglose que no suma" (se cargó con el renglón sin abrir, a propósito; en Fortaleza 2018-2020 esas marcas eran ruido: 5.867,807 contra
   // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
   // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
-  // sueldos en 0 (Admin/lote-08b.txt).
+  // sueldos en 0 (Admin/Archive/lotes/lote-08b.txt).
   // (Versión 461, grupo A de los defectos chicos, aprobado por Guido el 2026-10-04) AL DÍA POR DOCUMENTO: la propuesta es vieja solo si hay un
   // ajuste manual del MISMO documento o de su CLUB con fecha igual o posterior al día de la propuesta (mismo día = vieja, igual de prudente
   // que antes). Hasta acá se comparaba con la fecha del archivo de ajustes ENTERO: un ajuste de Novorizontino dejaba "vieja" la propuesta
