@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf",
-  "club": "as-roma",
+  "club": "asroma-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T00:01:59.567Z",
+  "generatedAt": "2026-10-07T01:28:35.238Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         39.957
       ],
-      "glosa": "Ingresos por competiciones"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Ricavi delle vendite commerciali e licensing",
@@ -74,7 +74,7 @@
       "values": [
         14.684
       ],
-      "glosa": "Ingresos por la gestión de derechos plurianuales de futbolistas"
+      "glosa": "Ingresos por gestión de derechos plurianuales de futbolistas"
     },
     {
       "label": "Acquisti materie di consumo",
@@ -104,7 +104,7 @@
       "values": [
         63.207
       ],
-      "glosa": "Servicios exteriores"
+      "glosa": "Gastos por servicios"
     },
     {
       "label": "Spese per godimento beni di terzi",
@@ -114,7 +114,7 @@
       "values": [
         6.868
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Gastos por uso de bienes de terceros"
     },
     {
       "label": "Spese per il personale",
@@ -154,7 +154,7 @@
       "values": [
         26.29
       ],
-      "glosa": "Gastos por la gestión de derechos plurianuales de futbolistas"
+      "glosa": "Gastos por gestión de derechos plurianuales de futbolistas"
     }
   ]
 }

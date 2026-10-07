@@ -1,0 +1,1042 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md",
+ "generatedAt": "2026-10-07T01:30:43.712Z",
+ "rubrosHuella": "feabe9a2d8d40010a5562d8b71dd4d653af950e0",
+ "rubros": [
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "-/- da L.N.P.",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.39
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "competition_bonus",
+     0.12
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "ricavi da gare in casa",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "abbonamenti",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "-/- televisivi",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "-/- percentuale diritti televisivi da squadre ospitanti",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "broadcasting",
+     0.9400000000000001
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Cessione temporanea calciatori",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Canoni per licenze, marchi, brevetti",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "player_sales",
+     0.73
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "percentuali su incassi gare da squadra ospitanti",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "-/- da altri",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "-/- da transazioni con creditori",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Proventi vari",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "revenue",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Salari e stipendi",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Oneri sociali",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "Trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Altri costi",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Minusvalenze da cessione diritti alle prestazioni dei calciatori",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "exceptional_items",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "exceptional_items",
+     0.95
+    ],
+    [
+     "player_impairment",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Costi per Acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Altri oneri da gestione calciatori",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.64
+    ],
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Costi per vitto, alloggio e locomozione",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Spese assicurative",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Spese per pubblicità e promozione",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Spese bancarie",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Spese amministrative",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Tassa iscrizioni gare",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "-/- percentuale su incassi gare a squadra ospite",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "-/- percentuale su diritti televisivi a squadra ospite",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Amm. delle immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Amm. delle immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_amortisation",
+     0.34
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 1109
+  },
+  {
+   "label": "Oneri straordinari",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Svalutaz. Delle immobilizzazioni",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_impairment",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "player_impairment",
+     0.77
+    ],
+    [
+     "depreciation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Svalutaz. dei crediti dell'attivo circolante e dispon. lig.",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 106,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_amortisation",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

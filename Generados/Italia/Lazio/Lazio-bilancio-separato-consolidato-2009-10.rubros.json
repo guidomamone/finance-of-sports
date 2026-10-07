@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2009-10.md",
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2009-10.pdf",
-  "club": "lazio",
+  "club": "lazio-it",
   "year": 2010,
-  "generatedAt": "2026-10-07T00:02:00.305Z",
+  "generatedAt": "2026-10-07T01:28:35.363Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.543202
       ],
-      "glosa": "Porcentajes sobre recaudaciones de partidos de equipos anfitriones"
+      "glosa": "Porcentaje sobre la recaudación de partidos de equipos locales"
     },
     {
       "label": "abbonamenti",
@@ -54,7 +54,7 @@
       "values": [
         6.719213
       ],
-      "glosa": "-) Porcentaje de derechos de televisión de equipos anfitriones"
+      "glosa": "-) Porcentaje de derechos de televisión de equipos locales"
     },
     {
       "label": "-) televisivi da partecipazioni comp. U.E.F.A.",
@@ -64,7 +64,7 @@
       "values": [
         1.878703
       ],
-      "glosa": "-) Derechos de televisión por participación en competiciones UEFA"
+      "glosa": "-) Derechos de televisión por participación en competiciones de la UEFA"
     },
     {
       "label": "-) da L.N.P.",
@@ -94,7 +94,7 @@
       "values": [
         9.521492
       ],
-      "glosa": "Ingresos publicitarios"
+      "glosa": "Ingresos por publicidad"
     },
     {
       "label": "Canoni per licenze, marchi, brevetti",
@@ -124,7 +124,7 @@
       "values": [
         8.159896
       ],
-      "glosa": "Plusvalías por traspaso de derechos sobre futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -144,7 +144,7 @@
       "values": [
         1.053974
       ],
-      "glosa": "-) Por transacciones con acreedores (no recurrentes)"
+      "glosa": "-) Por acuerdos con acreedores (no recurrentes)"
     },
     {
       "label": "-) da altri",
@@ -164,7 +164,7 @@
       "values": [
         0.3624
       ],
-      "glosa": "Ingresos diversos"
+      "glosa": "Ingresos varios"
     },
     {
       "label": "Variazione delle rimanenze",
@@ -194,7 +194,7 @@
       "values": [
         2.304631
       ],
-      "glosa": "Materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "Materias primas, consumibles y mercaderías"
     },
     {
       "label": "Salari e stipendi",
@@ -224,7 +224,7 @@
       "values": [
         0.091457
       ],
-      "glosa": "Indemnizaciones por fin de contrato de trabajo (TFR)"
+      "glosa": "Indemnizaciones por cese laboral"
     },
     {
       "label": "Altri costi",
@@ -234,7 +234,7 @@
       "values": [
         1.283713
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros costes"
     },
     {
       "label": "Costi per Acquisizione temporanea prestazioni calciatori",
@@ -244,7 +244,7 @@
       "values": [
         0.8
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Costes por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti alle prestazioni dei calciatori",
@@ -254,7 +254,7 @@
       "values": [
         2.307573
       ],
-      "glosa": "Minusvalías por traspaso de derechos sobre futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -264,7 +264,7 @@
       "values": [
         0.14585
       ],
-      "glosa": "Otros gastos de gestión de futbolistas"
+      "glosa": "Otros gastos por gestión de futbolistas"
     },
     {
       "label": "Costi per tesserati",
@@ -274,7 +274,7 @@
       "values": [
         0.408398
       ],
-      "glosa": "Gastos por fichas federativas"
+      "glosa": "Gastos por personal federado"
     },
     {
       "label": "Costi specifici tecnici",
@@ -284,7 +284,7 @@
       "values": [
         7.050488
       ],
-      "glosa": "Gastos técnicos específicos"
+      "glosa": "Costes técnicos específicos"
     },
     {
       "label": "Costi per vitto, alloggio e locomozione",
@@ -364,7 +364,7 @@
       "values": [
         0.372293
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios por organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
@@ -374,7 +374,7 @@
       "values": [
         0.007255
       ],
-      "glosa": "Cuotas de inscripción en competiciones"
+      "glosa": "Tasas de inscripción en competiciones"
     },
     {
       "label": "-) percentuale su incassi gare a squadra ospite",
@@ -394,7 +394,7 @@
       "values": [
         6.9825
       ],
-      "glosa": "-) Porcentaje de derechos de televisión al equipo visitante"
+      "glosa": "-) Porcentaje sobre derechos de televisión al equipo visitante"
     },
     {
       "label": "Altri oneri di gestione",
@@ -404,7 +404,7 @@
       "values": [
         0.805453
       ],
-      "glosa": "Otros gastos de gestión"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Sopravvenienze passive (non ricorrenti)",

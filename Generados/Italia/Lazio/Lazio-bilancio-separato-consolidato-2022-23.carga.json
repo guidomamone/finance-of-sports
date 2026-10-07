@@ -1,22 +1,216 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf",
- "generado": "2026-10-07T00:12:57.660Z",
+ "generado": "2026-10-07T01:31:12.227Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
+   "etapa": "categoria-en-cola",
+   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Costo del Personale\" -> wages_squad 0.75; \"Oneri da gestione diritti calciatori\" -> other_expenses 0.6; \"Ammortamenti, accantonamenti e svalutazi\" -> player_amortisation 0.5"
   },
   {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 1 ejercicio(s) con un solo perímetro (consolidado); 10 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-176.066496); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 176.096222 difiere en 0.029726: redondeo)"
+ ],
+ "ejercicio": {
+  "clubId": "lazio-it",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ricavi da gare",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 17.919117,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diritti radiotelevisivi e proventi media",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 101.991926,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da sponsorizzazione e pubblicità",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 20.725428,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi da gestione diritti calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.473302,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.242734,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.311766,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.65178,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costi per materie prime",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.340428,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costo del Personale",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -110.068773,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -25.679646,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Oneri da gestione diritti calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.489073,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri costi",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.434459,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ammortamenti, accantonamenti e svalutazioni",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -31.054117,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Minusvalenze da diritti alle prestazioni dei tesserati",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.029726,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-06-30",
+   "sourceId": "lazio-it-bilancio-separato-consolidato-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.467378,
+   "tax": -3.293597,
+   "extraRows": [
+    {
+     "label": "Proventi finanziari",
+     "value": 0.706786
+    },
+    {
+     "label": "Oneri finanziari",
+     "value": -4.174164
+    },
+    {
+     "label": "Imposte correnti",
+     "value": -3.019757
+    },
+    {
+     "label": "Imposte differite e anticipate",
+     "value": -0.27384
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 153.316053,
+   "officialTotalExpenses": 176.066496,
+   "officialPAT": -29.541144
+  },
+  "source": {
+   "id": "lazio-it-bilancio-separato-consolidato-2022-23",
+   "clubId": "lazio-it",
+   "title": "S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
  "reemplaza": false,
  "periodo": {
@@ -26,5 +220,357 @@
   "evidencia": null,
   "confianza": "media",
   "anual": "temporada"
+ },
+ "clubId": "lazio-it",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ricavi da gare",
+   "page": 99,
+   "native": 17.919117,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.919117,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.919117
+  },
+  {
+   "label": "Diritti radiotelevisivi e proventi media",
+   "page": 99,
+   "native": 101.991926,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 101.991926,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 101.991926
+  },
+  {
+   "label": "Ricavi da sponsorizzazione e pubblicità",
+   "page": 99,
+   "native": 20.725428,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 20.725428,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 20.725428
+  },
+  {
+   "label": "Proventi da gestione diritti calciatori",
+   "page": 99,
+   "native": 0.473302,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.473302,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.473302
+  },
+  {
+   "label": "Altri ricavi",
+   "page": 99,
+   "native": 5.242734,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.242734,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.242734
+  },
+  {
+   "label": "Ricavi da merchandising",
+   "page": 99,
+   "native": 2.311766,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.311766,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.311766
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
+   "page": 99,
+   "native": 4.65178,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.65178,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.65178
+  },
+  {
+   "label": "Costi per materie prime",
+   "page": 99,
+   "native": 3.340428,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.340428,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.340428
+  },
+  {
+   "label": "Costo del Personale",
+   "page": 99,
+   "native": 110.068773,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 110.068773,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -110.068773
+  },
+  {
+   "label": "Costi per servizi",
+   "page": 99,
+   "native": 25.679646,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 25.679646,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -25.679646
+  },
+  {
+   "label": "Oneri da gestione diritti calciatori",
+   "page": 99,
+   "native": 1.489073,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.489073,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.489073
+  },
+  {
+   "label": "Altri costi",
+   "page": 99,
+   "native": 4.434459,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.434459,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.434459
+  },
+  {
+   "label": "Ammortamenti, accantonamenti e svalutazioni",
+   "page": 99,
+   "native": 31.054117,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 31.054117,
+   "cat": "player_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -31.054117
+  },
+  {
+   "label": "Minusvalenze da diritti alle prestazioni dei tesserati",
+   "page": 99,
+   "native": 0.029726,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.029726,
+   "cat": "exceptional_items",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.029726
+  },
+  {
+   "label": "Proventi finanziari",
+   "page": null,
+   "native": 0.706786,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Oneri finanziari",
+   "page": null,
+   "native": -4.174164,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposte correnti",
+   "page": null,
+   "native": -3.019757,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Imposte differite e anticipate",
+   "page": null,
+   "native": -0.27384,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 153.316053,
+  "expSum": -176.066496,
+  "officialTotalRevenue": 153.316053,
+  "officialTotalExpenses": 176.066496,
+  "officialPAT": -29.541144,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -29.541144,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 153.316053
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (658 de 691 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lazio-it-bilancio-separato-consolidato-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 7,
+  "lineasGasto": 7,
+  "metaFilas": 4,
+  "excluidas": 0
  }
 }

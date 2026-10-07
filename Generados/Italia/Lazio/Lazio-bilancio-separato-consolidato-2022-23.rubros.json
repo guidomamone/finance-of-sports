@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf",
-  "club": "lazio",
+  "club": "lazio-it",
   "year": 2023,
-  "generatedAt": "2026-10-07T00:02:00.492Z",
+  "generatedAt": "2026-10-07T01:28:35.434Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         17.919117
       ],
-      "glosa": "Ingresos por competiciones y partidos"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Diritti radiotelevisivi e proventi media",
@@ -104,7 +104,7 @@
       "values": [
         25.679646
       ],
-      "glosa": "Servicios exteriores"
+      "glosa": "Gastos por servicios"
     },
     {
       "label": "Oneri da gestione diritti calciatori",
@@ -144,7 +144,7 @@
       "values": [
         0.029726
       ],
-      "glosa": "Minusvalías por derechos federativos"
+      "glosa": "Minusvalías por enajenación de derechos federativos"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
- "generado": "2026-10-07T00:01:59.936Z",
+ "generado": "2026-10-07T01:32:39.539Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "como-it",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -14,8 +14,9 @@
  "ajustes": null,
  "cola": [
   "42f99a6",
-  "e4b24c1",
-  "465d092"
+  "f13c4fc",
+  "f13c4fc",
+  "fde51f8"
  ],
  "chequeos": [
   {
@@ -36,7 +37,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -81,11 +82,11 @@
   "línea 397: 190.298 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 399: 1.862.381 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 400: 93.856 no está en el texto del PDF, pero las sumas cierran con él",
-  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se toma el año anterior (30/06/2024) de las notas b1/b2 en miles de euros, dado que el b6 no trae columna comparativa?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"a) salari e stipendi\"): ¿Se deja afuera de la carga el cuadro b37 (L1456-L1460) de personal por Tesserati/Altri, porque replica los renglones del estado partidos en dos columnas?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"e) altri oneri diversi e sopravvenienze passive\"): ¿Se dejan afuera las filas de b39 L1503-L1506 por repetir renglones del estado (14 a-d)?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga b1, b2 y b30, que repiten los renglones del estado redondeados a miles?",
-  "duda de extraer que no afecta la carga: El estado pro-forma (L354) no imprime columna comparativa; las notas sí traen 2024."
+  "duda de extraer que no afecta la carga: b1, b30 y las líneas L1272/L1276 de b29 repiten en miles los mismos renglones del estado b6, sin desglose adicional.",
+  "duda de extraer que no afecta la carga: b2 agrupa los costos del estado b6 sin aportar desglose nuevo (total 192.346 = L392).",
+  "duda de extraer que no afecta la carga: b39 L1503-L1506 repiten los renglones a)-d) de oneri diversi y b37 repite salari/oneri/TFR separando Tesserati/Altri; solo se cargó el detalle de 'altri oneri' y de b38.",
+  "duda de extraer que no afecta la carga: El estado pro-forma (L354) solo trae columnas de 2025 por entidad; las notas sí tienen 2024.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {

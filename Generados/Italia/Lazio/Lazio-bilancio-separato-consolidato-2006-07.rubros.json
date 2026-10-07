@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md",
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.pdf",
-  "club": "lazio",
+  "club": "lazio-it",
   "year": 2007,
-  "generatedAt": "2026-10-07T00:02:00.252Z",
+  "generatedAt": "2026-10-07T01:28:35.289Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         4.508333
       ],
-      "glosa": "Ingresos por partidos en casa"
+      "glosa": "Ingresos por partidos como local"
     },
     {
       "label": "percentuali su incassi gare da squadra ospitanti",
@@ -24,7 +24,7 @@
       "values": [
         0.331808
       ],
-      "glosa": "Porcentajes sobre recaudación de partidos de equipos anfitriones"
+      "glosa": "Porcentajes sobre recaudación de partidos de equipos locales"
     },
     {
       "label": "abbonamenti",
@@ -44,7 +44,7 @@
       "values": [
         28.741509
       ],
-      "glosa": "-/- Derechos de televisión"
+      "glosa": "-/- derechos televisivos"
     },
     {
       "label": "-/- percentuale diritti televisivi da squadre ospitanti",
@@ -54,7 +54,7 @@
       "values": [
         4.367268
       ],
-      "glosa": "-/- Porcentaje de derechos de televisión de equipos anfitriones"
+      "glosa": "-/- porcentaje de derechos televisivos de equipos locales"
     },
     {
       "label": "-/- da L.N.P.",
@@ -204,7 +204,7 @@
       "values": [
         0.101238
       ],
-      "glosa": "Indemnizaciones por fin de contrato laboral"
+      "glosa": "Indemnizaciones por fin de contrato"
     },
     {
       "label": "Altri costi",
@@ -224,7 +224,7 @@
       "values": [
         0.755876
       ],
-      "glosa": "Costes por cesión temporal de futbolistas"
+      "glosa": "Costes por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti alle prestazioni dei calciatori",
@@ -254,7 +254,7 @@
       "values": [
         0.124109
       ],
-      "glosa": "Gastos por personal federado"
+      "glosa": "Costes por personal federado"
     },
     {
       "label": "Costi per attività sportiva",
@@ -264,7 +264,7 @@
       "values": [
         0.007338
       ],
-      "glosa": "Gastos por actividad deportiva"
+      "glosa": "Costes por actividad deportiva"
     },
     {
       "label": "Costi specifici tecnici",
@@ -274,7 +274,7 @@
       "values": [
         1.944419
       ],
-      "glosa": "Gastos técnicos específicos"
+      "glosa": "Costes técnicos específicos"
     },
     {
       "label": "Costi per vitto, alloggio e locomozione",
@@ -354,7 +354,7 @@
       "values": [
         0.200404
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
@@ -374,7 +374,7 @@
       "values": [
         0.627983
       ],
-      "glosa": "-/- Porcentaje sobre recaudación de partidos al equipo visitante"
+      "glosa": "-/- porcentaje sobre recaudación de partidos al equipo visitante"
     },
     {
       "label": "-/- percentuale su diritti televisivi a squadra ospite",
@@ -384,7 +384,7 @@
       "values": [
         5.5746
       ],
-      "glosa": "-/- Porcentaje de derechos de televisión al equipo visitante"
+      "glosa": "-/- porcentaje sobre derechos televisivos al equipo visitante"
     },
     {
       "label": "Altri oneri di gestione",
@@ -394,7 +394,7 @@
       "values": [
         0.464327
       ],
-      "glosa": "Otros gastos de gestión"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Oneri straordinari",
@@ -434,7 +434,7 @@
       "values": [
         0.001564
       ],
-      "glosa": "Deterioro de valor del inmovilizado"
+      "glosa": "Deterioro del inmovilizado"
     },
     {
       "label": "Svalutaz. dei crediti dell'attivo circolante e dispon. lig.",
@@ -444,7 +444,7 @@
       "values": [
         -1.03898
       ],
-      "glosa": "Deterioro de créditos del activo corriente y tesorería"
+      "glosa": "Deterioro de créditos del activo corriente y disponibilidades líquidas"
     },
     {
       "label": "Accantonamenti per rischi",
@@ -454,7 +454,7 @@
       "values": [
         0.290424
       ],
-      "glosa": "Dotaciones a las provisiones para riesgos"
+      "glosa": "Provisiones para riesgos"
     }
   ]
 }

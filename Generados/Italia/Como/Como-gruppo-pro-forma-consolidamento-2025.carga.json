@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
- "generado": "2026-10-07T00:12:57.622Z",
+ "generado": "2026-10-07T01:33:25.481Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,11 +11,13 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-06: individual (Como 1907 S.p.A.); el pro-forma di consolidamento es una planilla del grupo, no se carga)"
+ ],
  "ejercicio": null,
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
  "reemplaza": false,
@@ -26,5 +28,7 @@
   "evidencia": null,
   "confianza": "media",
   "anual": "temporada"
- }
+ },
+ "clubId": "como-it",
+ "year": 2025
 }

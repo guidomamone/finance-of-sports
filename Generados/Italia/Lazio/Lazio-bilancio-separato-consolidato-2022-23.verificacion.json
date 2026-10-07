@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
- "generado": "2026-10-07T01:26:43.728Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:28:35.433Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "38436d9"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +49,8 @@
   "la nota de \"Altri costi\" no suma el renglón (4.478 contra 4.434459, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b124 abre ricavi por Sportivo/Commerciale/Immobiliare; parece no aportar desglose nuevo por categoría.",
-  "duda de extraer que no afecta la carga: El cuadro no imprime 'in €/000' pero su total 25.680 (L6106) coincide con 25.679.646 euros del estado (L3839)."
+  "duda de extraer que no afecta la carga: El cuadro no imprime 'in €/000' pero su total 25.680 (L6106) coincide con 25.679.646 euros del estado (L3839).",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2022-23.pdf"
  ],
  "reintentar": [
   {

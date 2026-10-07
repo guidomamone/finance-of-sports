@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
- "generado": "2026-10-07T01:26:39.133Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:28:35.325Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2009,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "19e8b00"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,6 +47,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2008-09.pdf",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale solo dan totales de ricavi y de risultato por segmento.",
   "duda de extraer que no afecta la carga: El estado b125/b126 ya trae el mismo desglose en unidades; las notas lo repiten redondeado en E/000.",
   "duda de extraer que no afecta la carga: L3476 muestra 12 en la columna actual; 12-40.236=-40.224 vs total -40.225, coherente salvo redondeo.",

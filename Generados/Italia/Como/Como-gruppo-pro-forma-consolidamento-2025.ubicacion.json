@@ -3,7 +3,7 @@
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
  "mdSha1": "97cb5ecf02609e785e4fa2c2cb2e3838f5600498",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-06T23:07:47.746Z",
+ "generado": "2026-10-07T01:31:32.623Z",
  "bloques": {
   "b1": {
    "pagina": 3,
@@ -380,7 +380,7 @@
   "b39"
  ],
  "escala": "unidades",
- "escala_evidencia": "Importes del Conto Economico en euros (ej. Perdita 132.066.776; Rendiconto 'In Euro'); las notas están en 'migliaia di Euro'",
+ "escala_evidencia": "b6 imprime importes en euros sin indicación de escala (p.ej. Totale valore della produzione 62.045.226; perdita 132.066.776, coincide con 'perdita di periodo di Euro (132.066.776)'); las notas están en 'migliaia di Euro'",
  "moneda": "EUR",
  "columna_ejercicio": "Prospetto Pro-forma di Consolidamento 12 mesi al 30 giugno 2025",
  "columna_anterior": null,
@@ -388,29 +388,39 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan solo los importes de la columna 'Prospetto Pro-forma di Consolidamento' del b6, dejando afuera las columnas Como 1907, Società del Gruppo y Eliminazioni IC?",
+   "pregunta": "¿Se carga la columna 'Como 1907 12 mesi al 30 giugno 2025' de b6 (individual) en lugar de la columna 'Prospetto Pro-forma di Consolidamento'?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El b6 muestra individual, otras sociedades, eliminaciones y consolidado pro-forma en columnas.",
+   "texto": "El club tiene cargados años en perímetro individual y b6 trae la columna Como 1907 (individual) junto al consolidado pro-forma.",
    "bloques": [
     "b6"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se toma el año anterior (30/06/2024) de las notas b1/b2 en miles de euros, dado que el b6 no trae columna comparativa?",
+   "pregunta": "¿Se dejan de usar las notas b1, b2 y b29-b39 como desglose si se carga la columna individual, dado que están referidas al grupo consolidado?",
    "propuesta": "sí",
-   "tema": "columna",
+   "tema": "perimetro",
    "renglon": "",
-   "texto": "El estado b6 solo tiene el ejercicio 2025; los comparativos aparecen en las notas en migliaia.",
+   "texto": "Las notas (p.ej. personal 93.690 miles, b37) coinciden con el consolidado, no con Como 1907 individual.",
    "bloques": [
-    "b6",
     "b1",
-    "b2"
+    "b2",
+    "b29",
+    "b30",
+    "b31",
+    "b32",
+    "b33",
+    "b34",
+    "b35",
+    "b36",
+    "b37",
+    "b38",
+    "b39"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado único b6 (prospecto pro-forma de consolidación) con columnas individual Como 1907, Società del Gruppo, Eliminazioni IC y consolidado pro-forma; se usa la consolidada. Estado en euros, notas en miles de euros. b44 es resumen del collegio sindacale, no se elige."
+ "observaciones": "Documento pro-forma de consolidación del Grupo Como 1907. b6 tiene cuatro columnas: Como 1907 (individual), Società del Gruppo, Eliminazioni IC y Prospetto Pro-forma di Consolidamento; no tiene año anterior (el comparativo 2024 aparece solo en b1, b2, b44 y notas, en miles). Las notas desglosan el consolidado. Dado que el club usa perímetro individual, la columna a cargar sería 'Como 1907', pero las notas no aplican a ella. Excluidos balance (b4,b5), flujo (b7), activo fijo, créditos/deudas, por jugador (b11,b12,b42) y resúmenes del colegio sindical (b43,b44)."
 }

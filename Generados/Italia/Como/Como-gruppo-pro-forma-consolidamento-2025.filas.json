@@ -3,7 +3,7 @@
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
  "mdSha1": "97cb5ecf02609e785e4fa2c2cb2e3838f5600498",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-06T23:08:51.097Z",
+ "generado": "2026-10-07T01:32:39.387Z",
  "ubicacion": {
   "estado": [
    "b6"
@@ -30,72 +30,72 @@
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "Importes sin indicación de escala, con detalle a la unidad (ej. 62.045.226 en L370)"
+   "evidencia": "Importes sin indicación de escala, con detalle a la unidad (ej. 62.045.226) (L370)"
   },
   {
    "bloque": "b1",
    "escala": "miles",
-   "evidencia": "L74: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L74)"
   },
   {
    "bloque": "b29",
    "escala": "miles",
-   "evidencia": "L1271: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1271)"
   },
   {
    "bloque": "b30",
    "escala": "miles",
-   "evidencia": "L1291: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1291)"
   },
   {
    "bloque": "b2",
    "escala": "miles",
-   "evidencia": "L110: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L110)"
   },
   {
    "bloque": "b31",
    "escala": "miles",
-   "evidencia": "L1339: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1339)"
   },
   {
    "bloque": "b32",
    "escala": "miles",
-   "evidencia": "L1357: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1357)"
   },
   {
    "bloque": "b33",
    "escala": "miles",
-   "evidencia": "L1378: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1378)"
   },
   {
    "bloque": "b34",
    "escala": "miles",
-   "evidencia": "L1404: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1404)"
   },
   {
    "bloque": "b35",
    "escala": "miles",
-   "evidencia": "L1418: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1418)"
   },
   {
    "bloque": "b36",
    "escala": "miles",
-   "evidencia": "L1439: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1439)"
   },
   {
    "bloque": "b37",
    "escala": "miles",
-   "evidencia": "L1454: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1454)"
   },
   {
    "bloque": "b38",
    "escala": "miles",
-   "evidencia": "L1468: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1468)"
   },
   {
    "bloque": "b39",
    "escala": "miles",
-   "evidencia": "L1502: migliaia di Euro"
+   "evidencia": "migliaia di Euro (L1502)"
   }
  ],
  "filas": [
@@ -580,6 +580,16 @@
    "detalla_a": "6) Per materie prime, sussidiarie, di consumo"
   },
   {
+   "bloque": "b31",
+   "linea": 1345,
+   "etiqueta": "",
+   "actual": "6.379",
+   "anterior": "2.071",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "6) Per materie prime, sussidiarie, di consumo"
+  },
+  {
    "bloque": "b32",
    "linea": 1358,
    "etiqueta": "Amministrative - pubblicitarie e generali",
@@ -636,6 +646,16 @@
    "actual": "608",
    "anterior": "213",
    "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) Per servizi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1364,
+   "etiqueta": "",
+   "actual": "41.419",
+   "anterior": "12.625",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "7) Per servizi"
   },
@@ -790,6 +810,16 @@
    "detalla_a": "Amministrative - pubblicitarie e generali"
   },
   {
+   "bloque": "b33",
+   "linea": 1394,
+   "etiqueta": "",
+   "actual": "22.985",
+   "anterior": "5.666",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Amministrative - pubblicitarie e generali"
+  },
+  {
    "bloque": "b34",
    "linea": 1405,
    "etiqueta": "Compensi lavoratori autonomi",
@@ -840,6 +870,16 @@
    "detalla_a": "Costi per attività sportiva"
   },
   {
+   "bloque": "b34",
+   "linea": 1410,
+   "etiqueta": "",
+   "actual": "3.972",
+   "anterior": "1.953",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Costi per attività sportiva"
+  },
+  {
    "bloque": "b35",
    "linea": 1419,
    "etiqueta": "Costi accessori campagna trasferimenti",
@@ -856,6 +896,16 @@
    "actual": "6.931",
    "anterior": "2.326",
    "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costi specifici tecnici"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1421,
+   "etiqueta": "",
+   "actual": "11.001",
+   "anterior": "3.808",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Costi specifici tecnici"
   },
@@ -920,6 +970,16 @@
    "detalla_a": "8) Per godimento di beni di terzi"
   },
   {
+   "bloque": "b36",
+   "linea": 1446,
+   "etiqueta": "",
+   "actual": "3.483",
+   "anterior": "986",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "8) Per godimento di beni di terzi"
+  },
+  {
    "bloque": "b38",
    "linea": 1469,
    "etiqueta": "Compensi contrattuali giocatori",
@@ -946,6 +1006,16 @@
    "actual": "13.422",
    "anterior": "3.852",
    "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) salari e stipendi"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1472,
+   "etiqueta": "",
+   "actual": "78.991",
+   "anterior": "29.357",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "a) salari e stipendi"
   },
@@ -1025,35 +1095,47 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro b37 (L1456-L1460) de personal por Tesserati/Altri, porque replica los renglones del estado partidos en dos columnas?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de composición del valor de la producción b1 (L77-L89) y los cuadros b29/b30 en lo que repiten renglones del estado?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
-   "renglon": "a) salari e stipendi",
-   "texto": "b37 suma Tesserati+Altri = renglones de 9) del estado (L376-L378); cargarlo duplicaría o requeriría elegir columna.",
+   "renglon": "",
+   "texto": "b1, b30 y las líneas L1272/L1276 de b29 repiten en miles los mismos renglones del estado b6, sin desglose adicional.",
    "bloques": [
-    "b37",
-    "b6"
+    "b1",
+    "b29",
+    "b30"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   },
   {
-   "pregunta": "¿Se cargan los renglones de b38 (L1469-L1471) como desglose de 'a) salari e stipendi' aunque solo cubren la parte Tesserati (78.991 de 86.179)?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de composición de costos b2 (L111-L120) por repetir en miles los renglones del estado?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "a) salari e stipendi",
-   "texto": "b38 desglosa solo salarios de tesserati (L1472 = 78.991), no el total del renglón.",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b2 agrupa los costos del estado b6 sin aportar desglose nuevo (total 192.346 = L392).",
    "bloques": [
-    "b38",
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera las filas de b39 L1503-L1506 y el cuadro b37 (L1456-L1460) por repetir renglones del estado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b39 L1503-L1506 repiten los renglones a)-d) de oneri diversi y b37 repite salari/oneri/TFR separando Tesserati/Altri; solo se cargó el detalle de 'altri oneri' y de b38.",
+   "bloques": [
+    "b39",
     "b37"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   },
   {
-   "pregunta": "¿Se dejan afuera las filas de b39 L1503-L1506 por repetir renglones del estado (14 a-d)?",
+   "pregunta": "¿Se acepta asignar 'Differenze da consolidamento' (L1513, 1.224) a 'e) altri oneri diversi e sopravvenienze passive'?",
    "propuesta": "sí",
-   "tema": "cuadro-duplicado",
+   "tema": "otro",
    "renglon": "e) altri oneri diversi e sopravvenienze passive",
-   "texto": "L1503-L1506 son iguales a L387-L390; solo L1508-L1513 desglosan 'e)' (suman 6.490).",
+   "texto": "Las 5 sub-partidas (5.266) más 1.224 suman 6.490, que coincide con L391 (6.490.393); el total de b39 (14.583) incluye además minusvalenze que el estado separa.",
    "bloques": [
     "b39",
     "b6"
@@ -1061,30 +1143,16 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera de la carga b1, b2 y b30, que repiten los renglones del estado redondeados a miles?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b1 (L77-L88), b2 (L111-L119) y b30 (L1292-L1300) son resúmenes de los mismos renglones de b6.",
-   "bloques": [
-    "b1",
-    "b2",
-    "b30",
-    "b6"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se toma como año anterior 'null' para el estado b6, dado que solo tiene columnas del ejercicio 2025?",
+   "pregunta": "¿Se deja la columna del año anterior en null para el estado b6 porque no tiene columna comparativa?",
    "propuesta": "sí",
    "tema": "columna",
    "renglon": "",
-   "texto": "El estado pro-forma (L354) no imprime columna comparativa; las notas sí traen 2024.",
+   "texto": "El estado pro-forma (L354) solo trae columnas de 2025 por entidad; las notas sí tienen 2024.",
    "bloques": [
     "b6"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado en unidades de euro (columna Pro-forma de Consolidamento); notas en miles. b29 desglosa ricavi da gare (L1273-L1275); abbonamenti sin desglose. b33, b34, b35 desglosan renglones de b32."
+ "observaciones": "Estado b6 en euros (unidades), notas en miles. Se tomó la columna 'Prospetto Pro-forma di Consolidamento'. Las rettifiche di valore y las imposte son cero (-) en la columna consolidada."
 }

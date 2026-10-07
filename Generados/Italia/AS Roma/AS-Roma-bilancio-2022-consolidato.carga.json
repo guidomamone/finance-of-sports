@@ -1,22 +1,222 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf",
- "generado": "2026-10-07T00:12:57.548Z",
+ "generado": "2026-10-07T01:31:08.925Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
+   "etapa": "categoria-en-cola",
+   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Acquisti materie di consumo\" -> other_expenses 0.6; \"Spese per servizi\" -> admin_general_expense 0.5; \"Spese per il personale\" -> wages_squad 0.75; \"Ammortamenti e svalutazioni\" -> player_amortisation 0.55; \"Oneri da gestione dei diritti pluriennal\" -> exceptional_items 0.45"
   },
   {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-374.598); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "asroma-it",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ricavi da gare",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 39.957,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi delle vendite commerciali e licensing",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.989,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.241,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diritti televisivi e diritti d'immagine",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 78.516,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pubblicità",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 16.336,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi",
+    "normalizedCategory": "other_income",
+    "amountNative": 34.152,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 14.684,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Acquisti materie di consumo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.252,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Variazione delle rimanenze",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.544,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -63.207,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per godimento beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.868,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per il personale",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -182.831,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri costi",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -21.707,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ammortamenti e svalutazioni",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -90.277,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -26.29,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "asroma-it-bilancio-2022-consolidato",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -23.938,
+   "tax": -0.507,
+   "extraRows": [
+    {
+     "label": "Proventi finanziari",
+     "value": 2.676
+    },
+    {
+     "label": "Oneri finanziari",
+     "value": -26.614
+    },
+    {
+     "label": "imposte correnti",
+     "value": -0.507
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 205.875,
+   "officialTotalExpenses": 374.598,
+   "officialPAT": -219.459
+  },
+  "source": {
+   "id": "asroma-it-bilancio-2022-consolidato",
+   "clubId": "asroma-it",
+   "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2022-consolidato (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
  "reemplaza": false,
  "periodo": {
@@ -26,5 +226,363 @@
   "evidencia": null,
   "confianza": "media",
   "anual": "temporada"
+ },
+ "clubId": "asroma-it",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ricavi da gare",
+   "page": 43,
+   "native": 39.957,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 39.957,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 39.957
+  },
+  {
+   "label": "Ricavi delle vendite commerciali e licensing",
+   "page": 43,
+   "native": 13.989,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 13.989,
+   "cat": "sponsorship_commercial",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.989
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "page": 43,
+   "native": 8.241,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.241,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.241
+  },
+  {
+   "label": "Diritti televisivi e diritti d'immagine",
+   "page": 43,
+   "native": 78.516,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 78.516,
+   "cat": "broadcasting",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 78.516
+  },
+  {
+   "label": "Pubblicità",
+   "page": 43,
+   "native": 16.336,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 16.336,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.336
+  },
+  {
+   "label": "Altri ricavi",
+   "page": 43,
+   "native": 34.152,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 34.152,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 34.152
+  },
+  {
+   "label": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "page": 43,
+   "native": 14.684,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14.684,
+   "cat": "player_sales",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 14.684
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "page": 43,
+   "native": 10.252,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 10.252,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -10.252
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "page": 43,
+   "native": 0.544,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.544,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.544
+  },
+  {
+   "label": "Spese per servizi",
+   "page": 43,
+   "native": 63.207,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 63.207,
+   "cat": "admin_general_expense",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -63.207
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "page": 43,
+   "native": 6.868,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.868,
+   "cat": "admin_general_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.868
+  },
+  {
+   "label": "Spese per il personale",
+   "page": 43,
+   "native": 182.831,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 182.831,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -182.831
+  },
+  {
+   "label": "Altri costi",
+   "page": 43,
+   "native": 21.707,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 21.707,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -21.707
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "page": 43,
+   "native": 90.277,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 90.277,
+   "cat": "player_amortisation",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -90.277
+  },
+  {
+   "label": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "page": 43,
+   "native": 26.29,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 26.29,
+   "cat": "exceptional_items",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -26.29
+  },
+  {
+   "label": "Proventi finanziari",
+   "page": null,
+   "native": 2.676,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Oneri finanziari",
+   "page": null,
+   "native": -26.614,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "imposte correnti",
+   "page": null,
+   "native": -0.507,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 205.875,
+  "expSum": -374.598,
+  "officialTotalRevenue": 205.875,
+  "officialTotalExpenses": 374.598,
+  "officialPAT": -219.459,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -219.459,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 205.875
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (653 de 714 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "asroma-it-bilancio-2022-consolidato",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 7,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
  }
 }

@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf",
-  "club": "lazio",
+  "club": "lazio-it",
   "year": 2009,
-  "generatedAt": "2026-10-07T00:02:00.279Z",
+  "generatedAt": "2026-10-07T01:28:35.326Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         36.98
       ],
-      "glosa": "-) Derechos audiovisuales"
+      "glosa": "-) Televisivos"
     },
     {
       "label": "-) percentuale diritti televisivi da squadre ospitanti",
@@ -54,7 +54,7 @@
       "values": [
         6.584517
       ],
-      "glosa": "-) Porcentaje de derechos audiovisuales de equipos anfitriones"
+      "glosa": "-) Porcentaje de derechos televisivos de equipos anfitriones"
     },
     {
       "label": "-) da L.N.P.",
@@ -114,7 +114,7 @@
       "values": [
         9.759247
       ],
-      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -124,7 +124,7 @@
       "values": [
         0.103183
       ],
-      "glosa": "Otros ingresos de la gestión de futbolistas"
+      "glosa": "Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "-) da transazioni con creditori (non ricorrenti)",
@@ -214,7 +214,7 @@
       "values": [
         0.095986
       ],
-      "glosa": "Indemnizaciones por cese de relación laboral"
+      "glosa": "Indemnizaciones por extinción de contrato de trabajo (TFR)"
     },
     {
       "label": "Altri costi",
@@ -224,7 +224,7 @@
       "values": [
         0.58877
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros costes"
     },
     {
       "label": "Costi per Acquisizione temporanea prestazioni calciatori",
@@ -234,7 +234,7 @@
       "values": [
         2.4
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Costes por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti alle prestazioni dei calciatori",
@@ -244,7 +244,7 @@
       "values": [
         0.483741
       ],
-      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -254,7 +254,7 @@
       "values": [
         0.01785
       ],
-      "glosa": "Otros gastos de gestión de futbolistas"
+      "glosa": "Otros gastos por gestión de futbolistas"
     },
     {
       "label": "Costi per tesserati",
@@ -264,7 +264,7 @@
       "values": [
         0.278717
       ],
-      "glosa": "Gastos de personal federado"
+      "glosa": "Gastos por deportistas federados"
     },
     {
       "label": "Costi per attività sportiva",
@@ -364,7 +364,7 @@
       "values": [
         0.369057
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
@@ -394,7 +394,7 @@
       "values": [
         7.196968
       ],
-      "glosa": "-) Porcentaje sobre derechos audiovisuales al equipo visitante"
+      "glosa": "-) Porcentaje de derechos televisivos al equipo visitante"
     },
     {
       "label": "Altri oneri di gestione",
@@ -404,7 +404,7 @@
       "values": [
         0.44982
       ],
-      "glosa": "Otros gastos de gestión"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Sopravvenienze passive (non ricorrenti)",
@@ -454,7 +454,7 @@
       "values": [
         0.512
       ],
-      "glosa": "Dotación a provisiones para riesgos"
+      "glosa": "Provisiones para riesgos"
     }
   ]
 }

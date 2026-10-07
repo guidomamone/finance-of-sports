@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.md",
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.pdf",
-  "club": "lazio",
+  "club": "lazio-it",
   "year": 2020,
-  "generatedAt": "2026-10-07T00:02:00.412Z",
+  "generatedAt": "2026-10-07T01:28:35.399Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         14.282601
       ],
-      "glosa": "-) Televisivos por participación en competiciones UEFA"
+      "glosa": "-) Derechos televisivos por participación en competiciones UEFA"
     },
     {
       "label": "-) da L.N.P.",
@@ -74,7 +74,7 @@
       "values": [
         8.544548
       ],
-      "glosa": "Ingresos por publicidad"
+      "glosa": "Ingresos publicitarios"
     },
     {
       "label": "Canoni per licenze, marchi, brevetti",
@@ -94,7 +94,7 @@
       "values": [
         1.946271
       ],
-      "glosa": "Cesión temporal de jugadores"
+      "glosa": "Cesión temporal de futbolistas"
     },
     {
       "label": "-) da altri",
@@ -124,7 +124,7 @@
       "values": [
         0.366393
       ],
-      "glosa": "Ingresos varios"
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "Ricavi da merchandising",
@@ -144,7 +144,7 @@
       "values": [
         16.673723
       ],
-      "glosa": "Plusvalías por enajenación de derechos federativos de jugadores"
+      "glosa": "Plusvalías por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "Acquisti di materie prime,sussidiarie,di consumo e di merci",
@@ -154,7 +154,7 @@
       "values": [
         2.3415
       ],
-      "glosa": "Compras de materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "Compras de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Variazione delle rimanenze",
@@ -194,7 +194,7 @@
       "values": [
         0.382595
       ],
-      "glosa": "Indemnizaciones por cese laboral"
+      "glosa": "Indemnizaciones por cese laboral (TFR)"
     },
     {
       "label": "Altri costi",
@@ -204,7 +204,7 @@
       "values": [
         0.133803
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros costes"
     },
     {
       "label": "Costi per Acquisizione temporanea prestazioni calciatori",
@@ -214,7 +214,7 @@
       "values": [
         0.036446
       ],
-      "glosa": "Gastos por cesión temporal de jugadores"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -224,7 +224,7 @@
       "values": [
         3.271565
       ],
-      "glosa": "Otros gastos de gestión de jugadores"
+      "glosa": "Otros gastos de gestión de futbolistas"
     },
     {
       "label": "Costi per tesserati",
@@ -234,7 +234,7 @@
       "values": [
         0.814774
       ],
-      "glosa": "Gastos de personal federado"
+      "glosa": "Gastos por jugadores federados"
     },
     {
       "label": "Costi specifici tecnici",
@@ -264,7 +264,7 @@
       "values": [
         1.140654
       ],
-      "glosa": "Servicio de taquilla y control de accesos"
+      "glosa": "Servicio de venta de entradas y control de accesos"
     },
     {
       "label": "Spese assicurative",
@@ -324,7 +324,7 @@
       "values": [
         0.382193
       ],
-      "glosa": "Gastos varios de organización de partidos"
+      "glosa": "Gastos diversos de organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
@@ -344,7 +344,7 @@
       "values": [
         0.018005
       ],
-      "glosa": "-) Porcentaje de recaudación en taquilla al equipo visitante"
+      "glosa": "-) Porcentaje de recaudación de taquilla al equipo visitante"
     },
     {
       "label": "Altri oneri di gestione",
@@ -374,7 +374,7 @@
       "values": [
         30.408328
       ],
-      "glosa": "Amortización del inmovilizado intangible"
+      "glosa": "Amortización de activos intangibles"
     },
     {
       "label": "Amm. delle attività materiali",
@@ -384,7 +384,7 @@
       "values": [
         1.166546
       ],
-      "glosa": "Amortización del inmovilizado material"
+      "glosa": "Amortización de activos materiales"
     },
     {
       "label": "Amm. Dei diritti d'uso",
@@ -404,7 +404,7 @@
       "values": [
         3.111921
       ],
-      "glosa": "Deterioro del inmovilizado intangible"
+      "glosa": "Deterioro de valor de activos intangibles"
     },
     {
       "label": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
