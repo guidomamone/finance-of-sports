@@ -29,3 +29,5 @@ Ninguna. Serie completa desde el primer ejercicio exigido por el manual UEFA vig
 - Último chequeo: 2026-09-17.
 
 - **Color de marca**: `#0D68B1` (azul) — nerazzurro en rayas iguales (it.wikipedia, Atalanta_Bergamasca_Calcio); elegido el azul, como Inter; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.pdf` (sourceId `atalanta-it-bilancio-consolidato-2021`).
