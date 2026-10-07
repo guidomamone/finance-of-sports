@@ -87,3 +87,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2014 desde `Clubes/Brasil/Novorizontino/balanco-2014-b.pdf` (sourceId `novorizontino-br-balanco-2014-b`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2013 desde `Clubes/Brasil/Novorizontino/balanco-2013.pdf` (sourceId `novorizontino-br-balanco-2013`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2010 desde `Clubes/Brasil/Novorizontino/balanco-2010.pdf` (sourceId `novorizontino-br-balanco-2010`).

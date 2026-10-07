@@ -123,10 +123,6 @@ const novorizontinobrRevenueLinesByYear = {
   ],
   // 2010: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/balanco-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/balanco-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2010: [
-    { rawLabel:'Convênio P.M.N.H nº 21/10', normalizedCategory:'other_income', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 1, precedente
-    { rawLabel:'Doações, Receitas de Patrocínio, Locação de Espaço, e Ev', normalizedCategory:'other_income', amountNative:0.06035, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
-  ],
   // 2022: cargado por tools/cargar.mjs (2026-10-03) desde Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Novorizontino/demonstracoes-financeiras-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
@@ -210,6 +206,12 @@ const novorizontinobrRevenueLinesByYear = {
     { rawLabel:'117 3.1.01.01.0009 - DOAÇOES RECEBIDAS', normalizedCategory:'other_income', amountNative:0.004419, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
     { rawLabel:'119 3.1.01.02.0002 - CONV.PROJETO NOVOS HORIZONTES', normalizedCategory:'other_income', amountNative:0.166, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.85
     { rawLabel:'179 3.1.01.02.0003 - DEV. DE CONVÊNIO NÃO UTILIZAD', normalizedCategory:'other_income', amountNative:-0.014755, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.97
+  ],
+  // 2010: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Brasil/Novorizontino/balanco-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Novorizontino/balanco-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2010: [
+    { rawLabel:'Convênio P.M.N.H nº 21/10', normalizedCategory:'other_income', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Doações, Receitas de Patrocínio, Locação de Espaço, e Ev', normalizedCategory:'other_income', amountNative:0.06035, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
   ],
 };
 const novorizontinobrExpenseLinesByYear = {
@@ -351,11 +353,6 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'Gastos com atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-7.318188, disclosureLevel:'aggregated' }, // pág. 8, precedente
     { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:-0.097091, disclosureLevel:'aggregated' }, // pág. 8, precedente
     { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-0.42879, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.95
-  ],
-  2010: [ // tools/cargar.mjs (2026-10-03)
-    { rawLabel:'Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.040536, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
-    { rawLabel:'Despesas Gerais e Manutenção', normalizedCategory:'admin_general_expense', amountNative:-0.056758, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
-    { rawLabel:'Projeto Escola de Futebol -Conv. Nº 21/10', normalizedCategory:'youth_other_sports_expense', amountNative:-0.066653, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
   ],
   2022: [ // tools/cargar.mjs (2026-10-03)
     { rawLabel:'Com pessoal', normalizedCategory:'wages_squad', amountNative:-21.71003, disclosureLevel:'aggregated' }, // pág. 10, precedente
@@ -605,6 +602,11 @@ const novorizontinobrExpenseLinesByYear = {
     { rawLabel:'177 5.2.03.01.0009 - REFEIÇÕES', normalizedCategory:'youth_other_sports_expense', amountNative:-0.022593, disclosureLevel:'aggregated' }, // pág. 4, precedente
     { rawLabel:'178 5.2.03.01.0010 - LANCHES', normalizedCategory:'youth_other_sports_expense', amountNative:-0.022016, disclosureLevel:'aggregated' }, // pág. 4, precedente
   ],
+  2010: [ // tools/cargar.mjs (2026-10-07)
+    { rawLabel:'Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.040536, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas Gerais e Manutenção', normalizedCategory:'admin_general_expense', amountNative:-0.056758, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'Projeto Escola de Futebol -Conv. Nº 21/10', normalizedCategory:'youth_other_sports_expense', amountNative:-0.066653, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.9
+  ],
 };
 const novorizontinobrFiscalYearMeta = {
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): categoria = matchday_competition. Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial
@@ -722,16 +724,6 @@ const novorizontinobrFiscalYearMeta = {
     grossDebt:145.192927, cash:1.482725,
     officialTotalRevenue:67.564252, officialTotalExpenses:89.496986, officialPAT:-25.254161,
   },
-  2010: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'BRL', fxRef:'BRL@2010-12-31',
-    sourceId:'novorizontino-br-balanco-2010',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:0.001691, tax:0,
-    grossDebt:null, cash:null,
-    officialTotalRevenue:0.13035, officialTotalExpenses:0.163946, officialPAT:-0.035287,
-  },
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cierre = 2022-12-31. Guido 2026-10-02: el detector de período tomó la fecha de la firma (28/04/2023, L17); el ejercicio cierra el 31/12/2022 (29 menciones)
   2022: { // tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2022-12-31',
@@ -844,6 +836,20 @@ const novorizontinobrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:1.712617, officialTotalExpenses:2.419205, officialPAT:-0.728231,
+  },
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): reportType = official_balance_sheet. Guido 2026-10-02: la página 1 trae la Demonstração do Resultado completa (pocas filas numéricas porque el club recién se fundaba)
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Salarios del plantel. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Televisión. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+  // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Estadio. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
+  2010: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2010-12-31',
+    sourceId:'novorizontino-br-balanco-2010',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.001691, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.13035, officialTotalExpenses:0.163946, officialPAT:-0.035287,
   },
 };
 const novorizontinobrPresupuestoOverlayByYear = {};

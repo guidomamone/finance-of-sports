@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md",
- "generado": "2026-10-07T20:57:04.943Z",
+ "generado": "2026-10-07T21:55:51.316Z",
  "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2025,
@@ -54,7 +54,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)"
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "lectura",
@@ -88,7 +88,7 @@
   "resultadoImpreso": -6.985407,
   "resultadoParaCargar": -6.985407,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -589,18 +589,18 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "altri (proventi finanziari)",
-   "M": -0.024755,
+   "M": 0.024755,
    "linea": 186
   },
   {
    "etiqueta": "altri (oneri finanziari)",
-   "M": 0.029016,
+   "M": -0.029016,
    "linea": 190
   }
  ],

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
  "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
- "generado": "2026-10-03T23:03:05.748Z",
+ "generado": "2026-10-07T21:55:52.483Z",
  "estado": "ok",
  "clubId": "novorizontino-br",
  "year": null,
@@ -68,7 +68,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (financiero e impuesto invertidos)"
   },
   {
    "nombre": "año anterior cargado",
@@ -90,7 +90,7 @@
   "resultadoImpreso": -0.035287,
   "resultadoParaCargar": -0.035287,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
   {
@@ -135,13 +135,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Financeiras Líquidas",
-   "M": 0.001691,
+   "M": -0.001691,
    "linea": 14
   }
  ],

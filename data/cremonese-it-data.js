@@ -34,6 +34,8 @@
 const cremoneseitRevenueLinesByYear = {
   // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
   // Generados/Italia/Cremonese/Cremonese-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
+  // Generados/Italia/Cremonese/Cremonese-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Cremonese/Cremonese-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
@@ -108,6 +110,8 @@ const cremoneseitExpenseLinesByYear = {
 const cremoneseitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07)
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
   2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -116,10 +120,10 @@ const cremoneseitFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
-    netInterest:0.004261, tax:1.073132,
+    netInterest:-0.004261, tax:1.073132,
     extraRows: [
-      {label:'altri (proventi finanziari)', value:-0.024755},
-      {label:'altri (oneri finanziari)', value:0.029016},
+      {label:'altri (proventi finanziari)', value:0.024755},
+      {label:'altri (oneri finanziari)', value:-0.029016},
       {label:'imposte correnti', value:-1.182142},
       {label:'imposte differite e anticipate', value:2.255274},
     ],
