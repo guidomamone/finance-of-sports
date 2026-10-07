@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 572 — El candado del lote alcanza a pipeline.mjs y cargar.mjs --escribir (2026-10-07)
+
+- `tools/candado.mjs` (nuevo): la lógica del candado de `lote.mjs`, compartida. Lo toman `lote.mjs` y `pipeline.mjs` (también en ensayo)
+  y `cargar.mjs` solo con `--escribir`. Archivo: `Admin/.candado.lock` (antes `.lote.lock`).
+- Medido: ensayos de `lote.mjs` (prueba-completa) y `pipeline.mjs` (Italia) idénticos; con un lote vivo, `pipeline.mjs` y `cargar.mjs
+  --escribir` salen sin tocar nada y la propuesta de `cargar.mjs` corre; un candado de un `pipeline.mjs` muerto se reemplaza. TODO 164 resuelto.
+
 ## Versión 571 — PDF híbrido: una página escaneada dentro de un PDF digital se valida con Gemini (2026-10-07)
 
 - `validar-bloques.mjs`: una página de un PDF digital sin texto propio (menos de 50 caracteres) se valida como escaneo (Gemini; si la

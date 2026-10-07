@@ -56,6 +56,9 @@ const SUMMARY_ONLY = args.includes('--resumen');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : 50;
 const dirFilter = flagVal('--dir');
 const listFile = flagVal('--lista');
+// CANDADO (to-do 164): un solo proceso a la vez escribiendo el registro, también en el ensayo (refreshLedger lo reescribe). Ver tools/candado.mjs.
+const { tomarCandado } = await import('./candado.mjs');
+tomarCandado('pipeline.mjs', { lista: listFile || dirFilter || null, modo: EXECUTE ? '--ejecutar' : 'ensayo' });
 const concurrency = flagVal('--concurrencia') || '4';
 // Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
 // más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.

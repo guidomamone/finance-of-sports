@@ -220,8 +220,3 @@ ni en el comentario de ningún archivo de código.
     Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
     2,05 M); ahí se usó `incluye` por el to-do 158. Arreglo candidato: si la nota suma exactamente el SUBTOTAL del grupo (aunque no sus
     renglones uno por uno), que reemplace el grupo entero (compuerta: el subtotal impreso).
-
-164. EL CANDADO DEL LOTE NO ALCANZA A PIPELINE.MJS NI A CARGAR.MJS --ESCRIBIR (2026-10-07, decisión de Guido: un cambio por vez). Los dos
-    escriben el registro (`Admin/transcripciones-estado.jsonl`) y, si corren durante un lote, lo pueden pisar. `lote.mjs` toma
-    `Admin/.lote.lock` desde la Versión 566 (ver su cabecera, "CANDADO"); el arreglo es que estas dos tools tomen el mismo candado (sacar la
-    lógica a un módulo chico y reusarla). Cuidado: sin manejador de SIGINT (rompe Ctrl+C en el código sincrónico, ver la cabecera).

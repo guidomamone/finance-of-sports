@@ -21,8 +21,9 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
 ```
 
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
-- Un solo lote a la vez, también en ensayo: toma `Admin/.lote.lock`. Si hay otro corriendo, sale sin hacer nada; si quedó el candado de
-  un lote que se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
+- Un solo proceso a la vez escribiendo el registro: `lote.mjs` y `pipeline.mjs` (también en ensayo) y `cargar.mjs --escribir` toman el
+  mismo candado (`Admin/.candado.lock`, `tools/candado.mjs`). Si otro lo tiene, sale sin hacer nada y dice cuál; si quedó el de uno que
+  se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
 - El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,12-0,32).

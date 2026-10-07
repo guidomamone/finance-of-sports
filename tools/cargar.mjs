@@ -993,6 +993,9 @@ async function main() {
   const docs = LISTA ? readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : DOCS;
   if (!docs.length) { console.error('Uso: node tools/cargar.mjs "<pdf>" [--escribir]  |  --lista <archivo> [--salida x.jsonl] [--comparar <raíz>] (ver la cabecera)'); process.exit(1); }
   if (ESCRIBIR && docs.length > 1) { console.error('--escribir va de a un documento por vez.'); process.exit(1); }
+  // CANDADO (to-do 164): con --escribir, un solo proceso a la vez escribiendo el registro y el sitio (tools/candado.mjs). La propuesta no lo
+  // toma: el lote la corre como hija mientras tiene el candado.
+  if (ESCRIBIR) { const { tomarCandado } = await import('./candado.mjs'); tomarCandado('cargar.mjs', { lista: docs[0], modo: '--escribir' }); }
   const sitio = cargarSitio(); const registro = leerRegistro();
   const prod = COMPARAR ? cargarSitio(resolve(COMPARAR)) : null;
   const salidas = [];
