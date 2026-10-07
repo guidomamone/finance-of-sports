@@ -70,6 +70,8 @@ Mitigaciones:
             la anterior (Novorizontino 2025: estado de resultados girado 90°)
             Solo cuentan los números sin confirmar de bloques ELEGIDOS HOY (Versión 458): una validación hecha con otra localización
             (otro perímetro) no dispara el rearmado
+            Un documento con la etapa 4 y sin la 6 (un lote cortado) pasa primero por la etapa 6, gratis y también en el
+            ensayo, y el rearmado decide con ella (to-do 162)
  ESCALÓN 2  (falta, to-do 140b) escaneo entero → Gemini o Claude sobre las páginas candidatas
  nada → queda como fuente (memoria, dictamen, balance solo)
 ```

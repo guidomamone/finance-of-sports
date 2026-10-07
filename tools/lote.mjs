@@ -232,6 +232,16 @@ for (const pdf of docs) {
   // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
   // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
   // (Versión 397) el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
+  // LOTE CORTADO: LA ETAPA 6 ANTES DEL REARMADO (to-do 162, ok de Guido). Un lote que se corta (lote 14: se reinició la terminal) deja
+  // documentos con la etapa 4 hecha (.validacion.json) y la 6 sin hacer (sin .verificacion.json). paginasARearmar() decide con los "no
+  // confirmados" de la etapa 4 y, sin verificación, rearma; pero esos números casi siempre son falsos (medido en los lotes 14 y 19: 193 de
+  // 193 en páginas que validó la etapa 2) y el rearmado con el texto propio puede EMPEORAR la página. Caso: AC Milan 2022-23, pág. 84,
+  // "42 | 2.456" bien en el .md y partido en el texto propio. La etapa 6 es gratis: corre primero, también en el ensayo (como la validación
+  // del inventario de arriba), y el rearmado decide con ella.
+  if (!resolverEnsayo && e.md && !e.cargado && leerDerivado(e, '.validacion.json') && leerDerivado(e, '.filas.json') && !leerDerivado(e, '.verificacion.json')) {
+    const [[, VR]] = verificarLista([pdf], { registro, sitio });
+    console.log(`  ${pdf}: tenía la etapa 4 sin la 6 (un lote cortado): etapa 6 primero, gratis -> ${VR?.estado || VR?.error || '?'}`);
+  }
   const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
   if (pagsTP) {
     if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
