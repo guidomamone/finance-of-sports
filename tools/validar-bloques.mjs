@@ -39,6 +39,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const USD_PAGINA_GEMINI = 0.003;
+const MIN_TEXTO = 50; // caracteres de texto propio (sin espacios) por debajo de los cuales una página de un PDF digital es una imagen
 
 const textoPagina = (pdf, n) => execFileSync('pdftotext', ['-layout', '-f', String(n), '-l', String(n), pdf, '-'], { maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('utf8');
 const unDigito = (a, b) => a.length === b.length && [...a].filter((c, i) => c !== b[i]).length === 1;
@@ -69,10 +70,19 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
   const L = readFileSync(mdAbs, 'utf8').split('\n');
   const ids = [...new Set([...ub.estado, ...ub.notas_ingresos, ...ub.notas_gastos])].filter((id) => ub.bloques[id]);
   const paginas = [...new Set(ids.map((id) => ub.bloques[id].pagina))].sort((a, b) => a - b);
-  if (!ejecutar) return { ensayo: true, modo, motivoModo: v.reason || null, paginas, usd: modo === 'digital' ? 0 : paginas.length * USD_PAGINA_GEMINI };
+  // PDF HÍBRIDO (to-do 160 parte 2, excepción pedida por Guido aunque sea un solo caso): en un PDF digital, una página SIN texto propio (menos
+  // de MIN_TEXTO caracteres) es una imagen, y comparar contra su texto vacío deja todos sus números "sin confirmar". Esa página se valida
+  // como en un escaneo: Gemini lee la imagen y, si la rechaza (RECITATION: el falso positivo de copyright con documentos financieros),
+  // Claude (segundaLectura). Si ninguno la lee, sus números quedan con sinSegunda y decide la etapa 6 (verificar.mjs, avisarRegistro).
+  // Caso: Como 2025, pág. 9 del visor (sin número impreso), el pro-forma firmado por el presidente, escaneado entero (JPEG 1646x2331 a
+  // 200 dpi) dentro de un PDF de Acrobat; los 120 números de la tabla quedaban sin confirmar. Medido: 1 de 632 páginas de 99 PDFs digitales.
+  const textos = new Map(); const hibridas = [];
+  if (modo === 'digital') for (const n of paginas) { try { const tx = textoPagina(pdfAbs, n); textos.set(n, tx); if (tx.replace(/\s/g, '').length < MIN_TEXTO) hibridas.push(n); } catch { textos.set(n, null); } }
+  const aPagar = (ps) => ps.filter((n) => !existsSync(resolve(ROOT, derivado(md, `.pag${n}.segunda.md`, { crear: false })))).length * USD_PAGINA_GEMINI;
+  if (!ejecutar) return { ensayo: true, modo, motivoModo: v.reason || null, paginas, hibridas, usd: modo === 'digital' ? aPagar(hibridas) : paginas.length * USD_PAGINA_GEMINI };
   const fuentes = {}; const segundas = new Map();
   for (const n of paginas) {
-    if (modo === 'digital') { try { segundas.set(n, extractNumbers(textoPagina(pdfAbs, n))); fuentes[n] = 'pdftotext'; } catch { fuentes[n] = null; } continue; }
+    if (modo === 'digital' && !hibridas.includes(n)) { const tx = textos.get(n); if (tx == null) fuentes[n] = null; else { segundas.set(n, extractNumbers(tx)); fuentes[n] = 'pdftotext'; } continue; }
     const r = segundaLectura(pdfAbs, md, n);
     if (r.error) { fuentes[n] = null; continue; }
     segundas.set(n, extractNumbers(r.texto)); fuentes[n] = r.motor;
@@ -96,9 +106,9 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
       }
     }
   }
-  const datos = { pdf, md, mdSha1: shaMd(md), modo, motivoModo: v.reason || null, generado: new Date().toISOString(), fuentes, confirmados, noConfirmados };
+  const datos = { pdf, md, mdSha1: shaMd(md), modo, motivoModo: v.reason || null, generado: new Date().toISOString(), fuentes, ...(hibridas.length ? { hibridas } : {}), confirmados, noConfirmados };
   writeFileSync(out, JSON.stringify(datos, null, 1));
-  return { hecho: true, datos, costo: modo === 'digital' ? 0 : Object.values(fuentes).filter((f) => f && f !== 'guardada').length * USD_PAGINA_GEMINI };
+  return { hecho: true, datos, costo: Object.values(fuentes).filter((f) => f && !['guardada', 'pdftotext'].includes(f)).length * USD_PAGINA_GEMINI };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -108,7 +118,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   let usd = 0;
   for (const pdf of docs) {
     const r = await validar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
-    if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ${r.modo}${r.motivoModo ? ` (${r.motivoModo})` : ''}, páginas ${r.paginas.join(',')}, ~US$ ${r.usd.toFixed(3)}`); }
+    if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ${r.modo}${r.motivoModo ? ` (${r.motivoModo})` : ''}, páginas ${r.paginas.join(',')}${r.hibridas?.length ? ` (en imagen dentro del PDF digital, van a Gemini: ${r.hibridas.join(',')})` : ''}, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.sinEstado) console.log(`  ${pdf}: sin estado de resultados`);
     else if (r.error) console.log(`  ${pdf}: ${r.error}`);
     else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.modo}, ${r.datos.confirmados} números confirmados, ${r.datos.noConfirmados.length} sin confirmar`); }

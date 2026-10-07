@@ -140,6 +140,8 @@ Mitigaciones:
 ### 4 Validar
 
 - a) PDF digital: cada número de los bloques elegidos se busca en el texto propio de su página. Gratis.
+  Una página de un PDF digital SIN texto propio (menos de 50 caracteres: una hoja escaneada metida en el PDF, como el pro-forma firmado
+  de Como 2025, pág. 9 del visor) se valida como un escaneo (b). `.validacion.json` → `hibridas`.
 - b) Escaneo: Gemini lee la imagen de esa página (si la rechaza, Claude). ~US$ 0,003 por página.
 - **Escalera** (en qué escalón quedó cada página: `.validacion.json` → `fuentes`; el conteo, `node tools/estado.mjs --escalones`):
 
