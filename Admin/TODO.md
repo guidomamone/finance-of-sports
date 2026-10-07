@@ -148,6 +148,7 @@ ni en el comentario de ningún archivo de código.
     - DATOS MAL HOY por la compuerta floja (valor absoluto + 0,01 M de tolerancia; cierran invirtiendo TODO el financiero, sf=-1):
       Cremonese 2025 carga netInterest +0,004261 (data/cremonese-it-data.js L119) y el C impreso es (4.261) → −0,004261 (error 8,5 mil EUR);
       Hellas Verona 2020 −0,027588 contra (27.554) (34 EUR); Bologna 2018-19 (sin cargar) −0,552236 contra (556.520).
+      Decisión de Guido (2026-10-07): Cremonese 2025 queda así hasta este escalón; se recarga cuando el script lo lea bien.
     - Diseño: después de la escalera 0-6, si no cierra (o cierra solo con sf=-1) y hay un renglón 17) y un C impreso: re-leer fin con
       15)/16) con su signo, 17) y sus hojas como −|valor|, 17-bis con su signo (perdite desglosadas restan), D: 19) resta y 18) suma; por
       posición/bloque, no por etiqueta. Compuerta ÚNICA: |ΣFIN − C impreso| ≤ media unidad impresa por fila (si no hay C impreso: el
