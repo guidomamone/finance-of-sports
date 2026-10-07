@@ -1,0 +1,720 @@
+{
+  "md": "Clubes/Italia/Monza/Monza-bilancio-2022.md",
+  "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
+  "club": "monza",
+  "year": 2022,
+  "generatedAt": "2026-10-07T00:02:00.519Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gare di Campionato",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"1. Ricavi delle vendite e prestazioni\" > desglose de \"Ricavi da gare in casa\"",
+      "values": [
+        1.412702
+      ],
+      "glosa": "Partidos de Liga"
+    },
+    {
+      "label": "Gare Coppa Italia",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"1. Ricavi delle vendite e prestazioni\" > desglose de \"Ricavi da gare in casa\"",
+      "values": [
+        0.010578
+      ],
+      "glosa": "Partidos de Copa de Italia"
+    },
+    {
+      "label": "Gare Amichevoli",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"1. Ricavi delle vendite e prestazioni\" > desglose de \"Ricavi da gare in casa\"",
+      "values": [
+        0.014924
+      ],
+      "glosa": "Partidos amistosos"
+    },
+    {
+      "label": "Ricavi da gare fuori casa",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"1. Ricavi delle vendite e prestazioni\"",
+      "values": [
+        0.021847
+      ],
+      "glosa": "Ingresos por partidos como visitante"
+    },
+    {
+      "label": "Abbonamenti",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"1. Ricavi delle vendite e prestazioni\"",
+      "values": [
+        1.283379
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Mutualità generale LNPB",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"- contributi in conto esercizio\"",
+      "values": [
+        2.038
+      ],
+      "glosa": "Fondo de mutualidad general LNPB"
+    },
+    {
+      "label": "Contributi Federali",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"- contributi in conto esercizio\"",
+      "values": [
+        0.394423
+      ],
+      "glosa": "Subvenciones federativas"
+    },
+    {
+      "label": "Contributi LNPA",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"- contributi in conto esercizio\"",
+      "values": [
+        0.272596
+      ],
+      "glosa": "Subvenciones LNPA"
+    },
+    {
+      "label": "Altri contributi sportivi",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"- contributi in conto esercizio\"",
+      "values": [
+        0.065815
+      ],
+      "glosa": "Otras subvenciones deportivas"
+    },
+    {
+      "label": "Contributi LNPB",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"- contributi in conto esercizio\"",
+      "values": [
+        0.0425
+      ],
+      "glosa": "Subvenciones LNPB"
+    },
+    {
+      "label": "Proventi da sponsorizzazioni e altre attività promozionali",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        9.66049
+      ],
+      "glosa": "Ingresos por patrocinios y otras actividades promocionales"
+    },
+    {
+      "label": "Proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.489973
+      ],
+      "glosa": "Ingresos comerciales y regalías"
+    },
+    {
+      "label": "Proventi da cessione diritti audiovisivi",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        15.170502
+      ],
+      "glosa": "Ingresos por cesión de derechos audiovisuales"
+    },
+    {
+      "label": "Proventi Corporate",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.310638
+      ],
+      "glosa": "Ingresos corporativos"
+    },
+    {
+      "label": "Ricavi da cessione temporanea prestazioni calciatori",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.305273
+      ],
+      "glosa": "Ingresos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "Altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.080722
+      ],
+      "glosa": "Otros ingresos por gestión de futbolistas"
+    },
+    {
+      "label": "Ricavi altre attività sportive organizzate dalla società",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.116096
+      ],
+      "glosa": "Ingresos por otras actividades deportivas organizadas por el club"
+    },
+    {
+      "label": "Proventi da attività accessorie",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.098476
+      ],
+      "glosa": "Ingresos por actividades accesorias"
+    },
+    {
+      "label": "Proventi diversi, indennizzi e sopravvenienze",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.547496
+      ],
+      "glosa": "Ingresos diversos, indemnizaciones e ingresos extraordinarios"
+    },
+    {
+      "label": "Contributi e crediti fiscali emergenza sanitaria",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"- altri\"",
+      "values": [
+        0.387011
+      ],
+      "glosa": "Subvenciones y créditos fiscales por emergencia sanitaria"
+    },
+    {
+      "label": "6. Per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.24265
+      ],
+      "glosa": "6. Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Costi per tesserati",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        1.089306
+      ],
+      "glosa": "Gastos por deportistas federados"
+    },
+    {
+      "label": "Costi per attività sportiva",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        0.946825
+      ],
+      "glosa": "Gastos por actividad deportiva"
+    },
+    {
+      "label": "Costi specifici tecnici",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        0.8064
+      ],
+      "glosa": "Gastos técnicos específicos"
+    },
+    {
+      "label": "Compensi per Agenti Sportivi",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        3.36279
+      ],
+      "glosa": "Comisiones de agentes deportivos"
+    },
+    {
+      "label": "Costi vitto, alloggio, locomozione gare",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        1.154341
+      ],
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+    },
+    {
+      "label": "Costi assicurativi e servizi finanziari",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        0.742191
+      ],
+      "glosa": "Gastos de seguros y servicios financieros"
+    },
+    {
+      "label": "Costi per servizi inerenti il personale",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        0.964906
+      ],
+      "glosa": "Gastos por servicios relativos al personal"
+    },
+    {
+      "label": "Spese amministrative e generali",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        2.613511
+      ],
+      "glosa": "Gastos administrativos y generales"
+    },
+    {
+      "label": "Spese pubblicitarie e promozionali",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        1.819114
+      ],
+      "glosa": "Gastos de publicidad y promoción"
+    },
+    {
+      "label": "Servizio biglietteria e controllo ingressi",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"7. Per servizi\"",
+      "values": [
+        0.276843
+      ],
+      "glosa": "Servicio de taquilla y control de accesos"
+    },
+    {
+      "label": "Noleggio automezzi e autoveicoli per uso aziendale",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"8. Per godimento di beni di terzi\"",
+      "values": [
+        0.569114
+      ],
+      "glosa": "Alquiler de vehículos para uso de la empresa"
+    },
+    {
+      "label": "Noleggio attrezzature sportive e varie",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"8. Per godimento di beni di terzi\"",
+      "values": [
+        0.558876
+      ],
+      "glosa": "Alquiler de equipamiento deportivo y varios"
+    },
+    {
+      "label": "Locazione impianti sportivi",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"8. Per godimento di beni di terzi\"",
+      "values": [
+        0.029
+      ],
+      "glosa": "Arrendamiento de instalaciones deportivas"
+    },
+    {
+      "label": "Canoni utilizzo software e simili",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"8. Per godimento di beni di terzi\"",
+      "values": [
+        0.125089
+      ],
+      "glosa": "Cánones por uso de software y similares"
+    },
+    {
+      "label": "Concessione strutture sportive",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"8. Per godimento di beni di terzi\"",
+      "values": [
+        0.014353
+      ],
+      "glosa": "Concesión de instalaciones deportivas"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        44.363742
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        3.169385
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.223423
+      ],
+      "glosa": "c) Indemnización por cese laboral"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        11.842211
+      ],
+      "glosa": "e) Otros gastos de personal"
+    },
+    {
+      "label": "Costi di Impianto e Ampliamento",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.000115
+      ],
+      "glosa": "Gastos de establecimiento y ampliación"
+    },
+    {
+      "label": "Licenze Software",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.007447
+      ],
+      "glosa": "Licencias de software"
+    },
+    {
+      "label": "Marchio",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.006626
+      ],
+      "glosa": "Marca"
+    },
+    {
+      "label": "Diritti Pluriennali prest. Calciatori",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        13.315139
+      ],
+      "glosa": "Derechos federativos de futbolistas"
+    },
+    {
+      "label": "Migliorie Stadio",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.496802
+      ],
+      "glosa": "Mejoras en el estadio"
+    },
+    {
+      "label": "Migliorie Monzello",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.309711
+      ],
+      "glosa": "Mejoras en Monzello"
+    },
+    {
+      "label": "Altre immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.008709
+      ],
+      "glosa": "Otro inmovilizado intangible"
+    },
+    {
+      "label": "Terreni e fabbricati",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.000255
+      ],
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Impianto Telefonico",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.001095
+      ],
+      "glosa": "Instalaciones telefónicas"
+    },
+    {
+      "label": "Impianti Generici",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.019703
+      ],
+      "glosa": "Instalaciones genéricas"
+    },
+    {
+      "label": "Attrezzatura e dotazioni",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.01294
+      ],
+      "glosa": "Equipamiento y dotaciones"
+    },
+    {
+      "label": "Attrezzatura Sportiva",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.04659
+      ],
+      "glosa": "Equipamiento deportivo"
+    },
+    {
+      "label": "Macchine Elettroniche",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.021082
+      ],
+      "glosa": "Equipos para procesos de información"
+    },
+    {
+      "label": "Mobili e Arredi",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.038617
+      ],
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Autovetture e ciclomotori",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.000188
+      ],
+      "glosa": "Vehículos y ciclomotores"
+    },
+    {
+      "label": "Allestimenti stadio",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.011593
+      ],
+      "glosa": "Acondicionamiento del estadio"
+    },
+    {
+      "label": "c) altre svalutazioni delle immobilizzazioni",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.283484
+      ],
+      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+    },
+    {
+      "label": "12. Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        4.70175
+      ],
+      "glosa": "12. Provisiones para riesgos"
+    },
+    {
+      "label": "Minusvalenze cessione diritti pluriennali prestazione calciatori",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.125729
+      ],
+      "glosa": "Pérdidas por traspaso de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Costi per acquisizione temporanea prestazione calciatori",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        5.228
+      ],
+      "glosa": "Gastos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "Spese organizzazione gare",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.882679
+      ],
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Tasse iscrizioni gare",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.320625
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "Percentuale su incassi gare a squadre ospitate",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.004053
+      ],
+      "glosa": "Porcentaje de recaudación a equipos visitantes"
+    },
+    {
+      "label": "Oneri contribuzione Lega",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        3
+      ],
+      "glosa": "Cuotas de contribución a la Liga"
+    },
+    {
+      "label": "premi di preparazione",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.081054
+      ],
+      "glosa": "Derechos de formación"
+    },
+    {
+      "label": "altri oneri",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.06743
+      ],
+      "glosa": "Otras cargas"
+    },
+    {
+      "label": "sopravvenienze passive e perdite su crediti",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.246107
+      ],
+      "glosa": "Gastos extraordinarios y pérdidas de créditos incobrables"
+    },
+    {
+      "label": "multe e ammende",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.014954
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "imposte e tasse diverse",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.128916
+      ],
+      "glosa": "Otros tributos e impuestos"
+    },
+    {
+      "label": "abbonamenti",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.106999
+      ],
+      "glosa": "Suscripciones"
+    },
+    {
+      "label": "altri",
+      "lado": "expense",
+      "page": 52,
+      "section": "nota que desglosa \"14. Oneri diversi di gestione\"",
+      "values": [
+        0.126817
+      ],
+      "glosa": "Otros"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+ "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+ "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
+ "generado": "2026-10-07T00:02:00.934Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "dac1b31",
+  "61c03d2",
+  "5d98c81",
+  "dac3ec4"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "78.080241 = 78.08024"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "144.387713 = 144.387714"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 78.080241 - gastos 144.387713 ± financiero 6.168278 ± impuesto -2.798323 no da el impreso -69.053247"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b103 repite el conto economico con columnas de variaciones y valores UEFA; el estado oficial es b31-b32.",
+  "duda de localizar que no afecta la carga: b24 parece repetir el desglose de servicios de la nota b79.",
+  "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 78.080241,
+  "gastos": 144.387713,
+  "financiero": 6.168278,
+  "impuesto": -2.798323,
+  "resultadoImpreso": -69.053247,
+  "resultadoParaCargar": -69.053247,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "- Gare Campionato",
+   "lado": "ingreso",
+   "M": 2.858916,
+   "pagina": 63,
+   "linea": 2402,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- Gare Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.027534,
+   "pagina": 63,
+   "linea": 2403,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- Gare Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.016281,
+   "pagina": 63,
+   "linea": 2406,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 2.212326,
+   "pagina": 63,
+   "linea": 2407,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 2.046228,
+   "pagina": 27,
+   "linea": 856,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 70.918956,
+   "pagina": 27,
+   "linea": 857,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 2.763664,
+   "pagina": 27,
+   "linea": 861,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 0.44203,
+   "pagina": 66,
+   "linea": 2543,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Spese per organizzazione gare",
+   "lado": "gasto",
+   "M": 0.780382,
+   "pagina": 66,
+   "linea": 2544,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 8.833332,
+   "pagina": 66,
+   "linea": 2545,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Costi vitto, alloggio, locomozione gare",
+   "lado": "gasto",
+   "M": 1.766056,
+   "pagina": 66,
+   "linea": 2546,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Assicurative e previdenziali",
+   "lado": "gasto",
+   "M": 0.469379,
+   "pagina": 66,
+   "linea": 2547,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Amministrative, pubblicitarie e generali",
+   "lado": "gasto",
+   "M": 2.382209,
+   "pagina": 66,
+   "linea": 2548,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Altre prestazioni di servizi",
+   "lado": "gasto",
+   "M": 3.841433,
+   "pagina": 66,
+   "linea": 2549,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "affitto dei campi sportivi",
+   "lado": "gasto",
+   "M": 0.03565,
+   "pagina": 67,
+   "linea": 2598,
+   "origen": "nota que desglosa \"8) per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "noleggio autoveicoli e automezzi per uso aziendale",
+   "lado": "gasto",
+   "M": 0.152938,
+   "pagina": 67,
+   "linea": 2599,
+   "origen": "nota que desglosa \"8) per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "spese per affitti e utenze locali ad uso foresteria",
+   "lado": "gasto",
+   "M": 0.378075,
+   "pagina": 67,
+   "linea": 2600,
+   "origen": "nota que desglosa \"8) per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "noleggio attrezzature",
+   "lado": "gasto",
+   "M": 0.281153,
+   "pagina": 67,
+   "linea": 2601,
+   "origen": "nota que desglosa \"8) per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 39.236173,
+   "pagina": 27,
+   "linea": 865,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 2.242366,
+   "pagina": 27,
+   "linea": 866,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.122458,
+   "pagina": 27,
+   "linea": 867,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 57.930334,
+   "pagina": 28,
+   "linea": 883,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 1.103644,
+   "pagina": 28,
+   "linea": 884,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 1.522949,
+   "pagina": 28,
+   "linea": 885,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
+   "lado": "gasto",
+   "M": 2.31176,
+   "pagina": 28,
+   "linea": 886,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "12) accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 0.275818,
+   "pagina": 28,
+   "linea": 888,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13) altri accantonamenti",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 28,
+   "linea": 889,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Oneri da organizzazione competizioni",
+   "lado": "gasto",
+   "M": 1.186421,
+   "pagina": 69,
+   "linea": 2720,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Minusvalenze da cessioni diritti calciatori",
+   "lado": "gasto",
+   "M": 8.019148,
+   "pagina": 69,
+   "linea": 2721,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri da trasferimento diritti calciatori",
+   "lado": "gasto",
+   "M": 6.554013,
+   "pagina": 69,
+   "linea": 2722,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 1.756328,
+   "pagina": 69,
+   "linea": 2723,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni",
+   "M": null,
+   "linea": 895
+  },
+  {
+   "etiqueta": "altri",
+   "M": 0.12175,
+   "linea": 897
+  },
+  {
+   "etiqueta": "altri",
+   "M": 5.856187,
+   "linea": 901
+  },
+  {
+   "etiqueta": "17-bis) utili e perdite su cambi",
+   "M": 0.190341,
+   "linea": 903
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": 2.354788,
+   "linea": 907
+  },
+  {
+   "etiqueta": "imposte differite e anticipate",
+   "M": -5.153111,
+   "linea": 908
+  }
+ ]
+}

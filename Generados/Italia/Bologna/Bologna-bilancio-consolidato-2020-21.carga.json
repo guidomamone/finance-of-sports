@@ -1,0 +1,30 @@
+{
+ "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf",
+ "generado": "2026-10-07T00:12:57.618Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ }
+}

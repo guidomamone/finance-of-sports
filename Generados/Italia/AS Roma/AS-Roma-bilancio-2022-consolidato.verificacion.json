@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
+ "generado": "2026-10-07T00:01:59.566Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "6fb90b6"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Altri costi\" (4 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Altri oneri\" (5 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: b47 y b48 parecen reclasificar los mismos renglones de ricavi por momento de reconocimiento, sin abrir nuevas categorías.",
+  "duda de localizar que no afecta la carga: Son detalles por jugador; el total ya está en b60.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Variazione delle rimanenze\"): ¿Se deja afuera de la carga el cuadro 'Costo netto prodotti da commercializzare' de b53 (L3092-L3094), que combina un renglón de b52 con la variación de existencias?",
+  "duda de extraer que no afecta la carga: L1280 imprime el año anterior sin paréntesis pese a ser pérdida; probable error tipográfico, se transcribe tal cual."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Altri costi",
+   "suma": 21.707,
+   "objetivo": 2.778
+  },
+  {
+   "renglon": "Altri oneri",
+   "suma": 13.622,
+   "objetivo": 6.853
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Altri costi",
+   "suma": 21.707,
+   "objetivo": 2.778
+  },
+  {
+   "renglon": "Altri oneri",
+   "suma": 13.622,
+   "objetivo": 6.853
+  }
+ ],
+ "totales": {
+  "ingresos": 205.875,
+  "gastos": 400.888,
+  "financiero": -23.938,
+  "impuesto": -0.507,
+  "resultadoImpreso": -219.459,
+  "resultadoParaCargar": -219.459,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 39.957,
+   "pagina": 43,
+   "linea": 1252,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi delle vendite commerciali e licensing",
+   "lado": "ingreso",
+   "M": 13.989,
+   "pagina": 43,
+   "linea": 1253,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 8.241,
+   "pagina": 43,
+   "linea": 1254,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diritti televisivi e diritti d'immagine",
+   "lado": "ingreso",
+   "M": 78.516,
+   "pagina": 43,
+   "linea": 1255,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pubblicità",
+   "lado": "ingreso",
+   "M": 16.336,
+   "pagina": 43,
+   "linea": 1256,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi",
+   "lado": "ingreso",
+   "M": 34.152,
+   "pagina": 43,
+   "linea": 1257,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 14.684,
+   "pagina": 43,
+   "linea": 1267,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Acquisti materie di consumo",
+   "lado": "gasto",
+   "M": 10.252,
+   "pagina": 43,
+   "linea": 1259,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Variazione delle rimanenze",
+   "lado": "gasto",
+   "M": -0.544,
+   "pagina": 43,
+   "linea": 1260,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per servizi",
+   "lado": "gasto",
+   "M": 63.207,
+   "pagina": 43,
+   "linea": 1261,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per godimento beni di terzi",
+   "lado": "gasto",
+   "M": 6.868,
+   "pagina": 43,
+   "linea": 1262,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il personale",
+   "lado": "gasto",
+   "M": 182.831,
+   "pagina": 43,
+   "linea": 1263,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri costi",
+   "lado": "gasto",
+   "M": 21.707,
+   "pagina": 43,
+   "linea": 1264,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 90.277,
+   "pagina": 43,
+   "linea": 1265,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 26.29,
+   "pagina": 43,
+   "linea": 1268,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Proventi finanziari",
+   "M": 2.676,
+   "linea": 1270
+  },
+  {
+   "etiqueta": "Oneri finanziari",
+   "M": -26.614,
+   "linea": 1271
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": -0.507,
+   "linea": 1274
+  }
+ ]
+}

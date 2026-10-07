@@ -1,0 +1,33 @@
+{
+ "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.pdf",
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.md",
+ "mdSha1": "c2b9e77c4a3b118a7dd986810e08f0b35d6a9834",
+ "modo": "digital",
+ "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 2879 vs 2379, 2429 vs 2428, 2397 vs 2497",
+ "generado": "2026-10-06T22:25:49.036Z",
+ "fuentes": {
+  "33": "pdftotext",
+  "34": "pdftotext",
+  "76": "pdftotext",
+  "77": "pdftotext",
+  "80": "pdftotext",
+  "81": "pdftotext",
+  "82": "pdftotext",
+  "83": "pdftotext",
+  "84": "pdftotext",
+  "85": "pdftotext",
+  "86": "pdftotext"
+ },
+ "confirmados": 321,
+ "noConfirmados": [
+  {
+   "bloque": "b47",
+   "pagina": 84,
+   "linea": 2527,
+   "numero": "2.456",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori | 42 | 2.456 | -2.414  |"
+  }
+ ]
+}

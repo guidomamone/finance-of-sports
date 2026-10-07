@@ -1,0 +1,1701 @@
+{
+ "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf",
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2025.md",
+ "mdSha1": "9ba88e3cf249c3300cf14dd05f308a546fb1c73c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-06T23:42:18.023Z",
+ "ubicacion": {
+  "estado": [
+   "b13",
+   "b14"
+  ],
+  "notas_ingresos": [
+   "b59",
+   "b60",
+   "b61",
+   "b62",
+   "b63",
+   "b64",
+   "b65",
+   "b66",
+   "b68",
+   "b88",
+   "b89"
+  ],
+  "notas_gastos": [
+   "b71",
+   "b73",
+   "b75",
+   "b76",
+   "b77",
+   "b79",
+   "b80",
+   "b81",
+   "b82",
+   "b84",
+   "b85",
+   "b90"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "Importes en euros sin indicación de miles (ej. 290.860.326); notas encabezadas 'Euro 24.128.184'"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "Continuación del conto economico en euros"
+  },
+  {
+   "bloque": "b59",
+   "escala": "unidades",
+   "evidencia": "L1758: Euro 24.128.184"
+  },
+  {
+   "bloque": "b60",
+   "escala": "unidades",
+   "evidencia": "L1782: Euro 266.732.142"
+  },
+  {
+   "bloque": "b61",
+   "escala": "unidades",
+   "evidencia": "Totale 48.062.629 coincide con el estado en euros"
+  },
+  {
+   "bloque": "b62",
+   "escala": "unidades",
+   "evidencia": "Totale 5.000 coincide con el estado"
+  },
+  {
+   "bloque": "b63",
+   "escala": "unidades",
+   "evidencia": "Totale 20.077.513 coincide con el estado"
+  },
+  {
+   "bloque": "b64",
+   "escala": "unidades",
+   "evidencia": "Totale 78.084.465 coincide con el estado"
+  },
+  {
+   "bloque": "b65",
+   "escala": "unidades",
+   "evidencia": "Totale 1.344.000 coincide con el estado"
+  },
+  {
+   "bloque": "b66",
+   "escala": "unidades",
+   "evidencia": "Plusvalenze 102.550.445 coincide con el estado"
+  },
+  {
+   "bloque": "b68",
+   "escala": "unidades",
+   "evidencia": "Totale 16.608.090 coincide con nota b60"
+  },
+  {
+   "bloque": "b88",
+   "escala": "unidades",
+   "evidencia": "Totale 4.063.075 coincide con el estado"
+  },
+  {
+   "bloque": "b89",
+   "escala": "unidades",
+   "evidencia": "Coincide con el estado"
+  },
+  {
+   "bloque": "b71",
+   "escala": "unidades",
+   "evidencia": "Totale 6.452.509 coincide con el estado"
+  },
+  {
+   "bloque": "b73",
+   "escala": "unidades",
+   "evidencia": "L1994: Euro 36.015.561"
+  },
+  {
+   "bloque": "b75",
+   "escala": "unidades",
+   "evidencia": "L2033: Euro 6.674.279"
+  },
+  {
+   "bloque": "b76",
+   "escala": "unidades",
+   "evidencia": "L2048: Euro 142.071.554"
+  },
+  {
+   "bloque": "b77",
+   "escala": "unidades",
+   "evidencia": "Totale 132.936.753 coincide con nota b76"
+  },
+  {
+   "bloque": "b79",
+   "escala": "unidades",
+   "evidencia": "Totale 115.406.032 coincide con el estado"
+  },
+  {
+   "bloque": "b80",
+   "escala": "unidades",
+   "evidencia": "Totale 151.878 coincide con el estado"
+  },
+  {
+   "bloque": "b81",
+   "escala": "unidades",
+   "evidencia": "Totale 1.200.000 coincide con el estado"
+  },
+  {
+   "bloque": "b82",
+   "escala": "unidades",
+   "evidencia": "Totale 1.478.376 coincide con el estado"
+  },
+  {
+   "bloque": "b84",
+   "escala": "unidades",
+   "evidencia": "L2150: Euro – 91.495"
+  },
+  {
+   "bloque": "b85",
+   "escala": "unidades",
+   "evidencia": "TOTALE 6.188.323 coincide con el estado"
+  },
+  {
+   "bloque": "b90",
+   "escala": "unidades",
+   "evidencia": "L2257: Euro 758.781"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b13",
+   "linea": 256,
+   "etiqueta": "a) ricavi da gare in casa",
+   "actual": "14.387.503",
+   "anterior": "15.811.801",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 257,
+   "etiqueta": "b) percentuale su incassi gare da squadre ospitanti",
+   "actual": "66.179",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 258,
+   "etiqueta": "c) abbonamenti",
+   "actual": "9.674.502",
+   "anterior": "11.484.132",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 259,
+   "etiqueta": "d) altri ricavi da gare",
+   "actual": "0",
+   "anterior": "94.979",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 260,
+   "etiqueta": "Totale Ricavi delle vendite e delle prestazioni (1)",
+   "actual": "24.128.184",
+   "anterior": "27.390.912",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 262,
+   "etiqueta": "b) proventi da sponsorizzazioni",
+   "actual": "48.062.629",
+   "anterior": "48.650.684",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 263,
+   "etiqueta": "c) proventi pubblicitari",
+   "actual": "5.000",
+   "anterior": "5.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 264,
+   "etiqueta": "d) proventi commerciali e royalties",
+   "actual": "20.077.513",
+   "anterior": "21.568.088",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 265,
+   "etiqueta": "e) proventi da cessioni diritti televisivi",
+   "actual": "78.084.465",
+   "anterior": "142.188.404",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 266,
+   "etiqueta": "f) proventi vari",
+   "actual": "1.344.000",
+   "anterior": "1.307.222",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 267,
+   "etiqueta": "g) ricavi per cessione temporanea calciatori",
+   "actual": "7.241.858",
+   "anterior": "1.300.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 268,
+   "etiqueta": "h) plusvalenza da cessione diritti pluriennali calciatori",
+   "actual": "102.550.445",
+   "anterior": "70.758.785",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 269,
+   "etiqueta": "i) altri proventi da gestione calciatori",
+   "actual": "571.420",
+   "anterior": "867.745",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 270,
+   "etiqueta": "l) ricavi e proventi diversi",
+   "actual": "8.794.812",
+   "anterior": "14.153.534",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 271,
+   "etiqueta": "Totale Altri ricavi e proventi (5)",
+   "actual": "266.732.142",
+   "anterior": "300.799.462",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 272,
+   "etiqueta": "TOTALE VALORE DELLA PRODUZIONE A )",
+   "actual": "290.860.326",
+   "anterior": "328.190.374",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 274,
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e merci",
+   "actual": "6.452.509",
+   "anterior": "10.303.501",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 275,
+   "etiqueta": "7) per servizi",
+   "actual": "36.015.561",
+   "anterior": "30.219.876",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 276,
+   "etiqueta": "8) per godimento beni di terzi",
+   "actual": "6.674.279",
+   "anterior": "7.412.806",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 278,
+   "etiqueta": "a) salari e stipendi",
+   "actual": "135.844.557",
+   "anterior": "109.087.515",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 279,
+   "etiqueta": "b) oneri sociali",
+   "actual": "4.065.083",
+   "anterior": "3.861.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 280,
+   "etiqueta": "c) trattamento di fine rapporto",
+   "actual": "709.871",
+   "anterior": "672.057",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 281,
+   "etiqueta": "e) altri costi",
+   "actual": "1.452.043",
+   "anterior": "2.783.843",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 282,
+   "etiqueta": "Totale costi per il personale (9)",
+   "actual": "142.071.554",
+   "anterior": "116.404.415",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 284,
+   "etiqueta": "a) amm.to delle immobilizzazioni immateriali",
+   "actual": "115.406.032",
+   "anterior": "74.913.174",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 285,
+   "etiqueta": "b) amm.to delle immobilizzazioni materiali",
+   "actual": "151.878",
+   "anterior": "121.897",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 286,
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "actual": "1.200.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 287,
+   "etiqueta": "d) svalut.dei crediti compresi nel circolante",
+   "actual": "1.478.376",
+   "anterior": "370.124",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 288,
+   "etiqueta": "Totale ammortamenti e svalutazioni (10)",
+   "actual": "118.236.286",
+   "anterior": "75.405.195",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 289,
+   "etiqueta": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci",
+   "actual": "(91.495)",
+   "anterior": "(99.458)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 291,
+   "etiqueta": "a) spese varie organizzazioni gare",
+   "actual": "201.066",
+   "anterior": "218.268",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 292,
+   "etiqueta": "b) tasse iscrizione gare",
+   "actual": "419.137",
+   "anterior": "782.273",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 293,
+   "etiqueta": "c) oneri specifici v/squadre ospitate",
+   "actual": "389.586",
+   "anterior": "79.927",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 294,
+   "etiqueta": "d) costi per acquisizione temporanea calciatori",
+   "actual": "2.001.600",
+   "anterior": "1.013.818",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 295,
+   "etiqueta": "e) minus. da cessione diritti plur. alle prest. calciatori",
+   "actual": "65.485",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 296,
+   "etiqueta": "f) altri oneri di gestione calciatori",
+   "actual": "1.096.497",
+   "anterior": "1.436.089",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 297,
+   "etiqueta": "g) altri oneri diversi di gestione",
+   "actual": "2.014.952",
+   "anterior": "1.271.958",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 298,
+   "etiqueta": "Totale oneri diversi di gestione (14)",
+   "actual": "6.188.323",
+   "anterior": "4.802.333",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 299,
+   "etiqueta": "TOTALE COSTI DELLA PRODUZIONE B)",
+   "actual": "315.547.017",
+   "anterior": "244.448.668",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 300,
+   "etiqueta": "DIFFER. VALORE E COSTI DELLA PROD.NE ( A-B )",
+   "actual": "(24.686.691)",
+   "anterior": "83.741.706",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 316,
+   "etiqueta": "- altri",
+   "actual": "4.981.326",
+   "anterior": "8.510.682",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 317,
+   "etiqueta": "Totale proventi diversi dai precedenti (16 d)",
+   "actual": "4.981.326",
+   "anterior": "8.510.682",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 318,
+   "etiqueta": "Totale Altri proventi finanziari (16)",
+   "actual": "4.981.326",
+   "anterior": "8.510.682",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 320,
+   "etiqueta": "e) altri",
+   "actual": "918.251",
+   "anterior": "1.063.280",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 321,
+   "etiqueta": "Totale interessi ed altri oneri finanziari (17)",
+   "actual": "918.251",
+   "anterior": "1.063.280",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 323,
+   "etiqueta": "a) utili su cambi",
+   "actual": "0",
+   "anterior": "30",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 324,
+   "etiqueta": "b) perdite su cambi",
+   "actual": "0",
+   "anterior": "4.559",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 325,
+   "etiqueta": "Totale Utili e (Perdite) su cambi (17bis)",
+   "actual": "0",
+   "anterior": "(4.529)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 326,
+   "etiqueta": "TOTALE PROVENTI ED ONERI FINANZIARI C )",
+   "actual": "4.063.075",
+   "anterior": "7.442.873",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 327,
+   "etiqueta": "RISULTATO PRIMA DELLE IMPOSTE ( A-B+C )",
+   "actual": "(20.623.616)",
+   "anterior": "91.184.579",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 329,
+   "etiqueta": "a) imposte correnti",
+   "actual": "5.859.119",
+   "anterior": "10.138.752",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 330,
+   "etiqueta": "b) imposte relative a esercizi precedenti",
+   "actual": "1.117.363",
+   "anterior": "164.063",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 331,
+   "etiqueta": "c) oneri (proventi) da consolidato fiscale",
+   "actual": "(14.574.172)",
+   "anterior": "17.011.456",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 332,
+   "etiqueta": "d) imposte differite",
+   "actual": "15.489.341",
+   "anterior": "7.180.915",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 333,
+   "etiqueta": "e) imposte anticipate",
+   "actual": "(7.132.870)",
+   "anterior": "(6.339.788)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 334,
+   "etiqueta": "TOTALE IMPOSTE SUL REDDITO D'ESERCIZIO",
+   "actual": "758.781",
+   "anterior": "28.155.398",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 335,
+   "etiqueta": "UTILE (PERDITA) DELL'ESERCIZIO",
+   "actual": "(21.382.397)",
+   "anterior": "63.029.181",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b59",
+   "linea": 1763,
+   "etiqueta": "- Gare Campionato",
+   "actual": "13.212.447",
+   "anterior": "9.948.066",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) ricavi da gare in casa"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1764,
+   "etiqueta": "- Gare Coppa Italia",
+   "actual": "858.139",
+   "anterior": "175.134",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) ricavi da gare in casa"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1765,
+   "etiqueta": "- Gare Coppe Internazionali",
+   "actual": "0",
+   "anterior": "5.369.957",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) ricavi da gare in casa"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1766,
+   "etiqueta": "- Altre gare - amichevoli",
+   "actual": "316.917",
+   "anterior": "318.644",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) ricavi da gare in casa"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1768,
+   "etiqueta": "- Gare Coppa Italia",
+   "actual": "66.179",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) percentuale su incassi gare da squadre ospitanti"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1770,
+   "etiqueta": "- Gare Campionato",
+   "actual": "9.190.793",
+   "anterior": "9.753.207",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "c) abbonamenti"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1771,
+   "etiqueta": "- Gare Coppe Internazionali",
+   "actual": "0",
+   "anterior": "1.217.599",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "c) abbonamenti"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1772,
+   "etiqueta": "- Gare Coppa Italia",
+   "actual": "483.709",
+   "anterior": "513.326",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "c) abbonamenti"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1807,
+   "etiqueta": "Sponsor ufficiali",
+   "actual": "0",
+   "anterior": "1.200.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1808,
+   "etiqueta": "Sponsor istituzionali",
+   "actual": "1.122.425",
+   "anterior": "2.456.666",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1809,
+   "etiqueta": "Partner commerciali",
+   "actual": "0",
+   "anterior": "390.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1810,
+   "etiqueta": "Altre sponsorizzazioni",
+   "actual": "10.049.200",
+   "anterior": "3.396.822",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1811,
+   "etiqueta": "Regional Sponsor",
+   "actual": "1.750.000",
+   "anterior": "5.600.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1812,
+   "etiqueta": "Global Partner",
+   "actual": "10.107.292",
+   "anterior": "6.769.035",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1813,
+   "etiqueta": "Principal Sponsor",
+   "actual": "9.177.575",
+   "anterior": "15.900.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1814,
+   "etiqueta": "Official Sponsor",
+   "actual": "8.957.638",
+   "anterior": "6.723.226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1815,
+   "etiqueta": "Local Partner",
+   "actual": "431.948",
+   "anterior": "332.517",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1816,
+   "etiqueta": "Business Partner",
+   "actual": "3.664.756",
+   "anterior": "3.026.953",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b61",
+   "linea": 1817,
+   "etiqueta": "Sponsor - Ospitalità",
+   "actual": "2.801.795",
+   "anterior": "2.855.465",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) proventi da sponsorizzazioni"
+  },
+  {
+   "bloque": "b62",
+   "linea": 1824,
+   "etiqueta": "Altri proventi pubblicitari",
+   "actual": "5.000",
+   "anterior": "5.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "c) proventi pubblicitari"
+  },
+  {
+   "bloque": "b63",
+   "linea": 1831,
+   "etiqueta": "Proventi da merchandising",
+   "actual": "18.939.974",
+   "anterior": "20.256.806",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "d) proventi commerciali e royalties"
+  },
+  {
+   "bloque": "b63",
+   "linea": 1832,
+   "etiqueta": "Proventi da licensing",
+   "actual": "1.056.749",
+   "anterior": "1.241.417",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "d) proventi commerciali e royalties"
+  },
+  {
+   "bloque": "b63",
+   "linea": 1833,
+   "etiqueta": "Altri proventi commerciali",
+   "actual": "80.790",
+   "anterior": "69.865",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "d) proventi commerciali e royalties"
+  },
+  {
+   "bloque": "b64",
+   "linea": 1852,
+   "etiqueta": "Proventi televisivi - LNPA",
+   "actual": "67.793.035",
+   "anterior": "66.517.417",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "e) proventi da cessioni diritti televisivi"
+  },
+  {
+   "bloque": "b64",
+   "linea": 1853,
+   "etiqueta": "Proventi televisivi da competizione Uefa",
+   "actual": "3.938.244",
+   "anterior": "70.129.386",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "e) proventi da cessioni diritti televisivi"
+  },
+  {
+   "bloque": "b64",
+   "linea": 1854,
+   "etiqueta": "Proventi televisivi gare amichevoli",
+   "actual": "194.388",
+   "anterior": "191.601",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "e) proventi da cessioni diritti televisivi"
+  },
+  {
+   "bloque": "b64",
+   "linea": 1855,
+   "etiqueta": "Altri Proventi TV",
+   "actual": "6.158.798",
+   "anterior": "5.350.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "e) proventi da cessioni diritti televisivi"
+  },
+  {
+   "bloque": "b65",
+   "linea": 1862,
+   "etiqueta": "Proventi radiofonici",
+   "actual": "900.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "f) proventi vari"
+  },
+  {
+   "bloque": "b65",
+   "linea": 1863,
+   "etiqueta": "Proventi sfruttamento diritti d'immagine",
+   "actual": "444.000",
+   "anterior": "1.307.222",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "f) proventi vari"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1903,
+   "etiqueta": "- proventi da enti federali (L.N.P.A.)",
+   "actual": "367.821",
+   "anterior": "417.910",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "l) ricavi e proventi diversi"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1904,
+   "etiqueta": "- proventi produzioni televisive",
+   "actual": "1.376.549",
+   "anterior": "1.350.171",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "l) ricavi e proventi diversi"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1905,
+   "etiqueta": "- rilascio fondo rischi",
+   "actual": "0",
+   "anterior": "1.073.914",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "l) ricavi e proventi diversi"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1906,
+   "etiqueta": "- altri ricavi",
+   "actual": "7.050.442",
+   "anterior": "11.311.539",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "l) ricavi e proventi diversi"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2224,
+   "etiqueta": "Interessi passivi su finanziamenti",
+   "actual": "345.117",
+   "anterior": "374.356",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "e) altri"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2225,
+   "etiqueta": "Interessi passivi di mora",
+   "actual": "51",
+   "anterior": "4.823",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "e) altri"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2226,
+   "etiqueta": "Commissione SACE su finanziamenti",
+   "actual": "402.682",
+   "anterior": "403.786",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "e) altri"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2227,
+   "etiqueta": "Altri oneri finanziari",
+   "actual": "1.937",
+   "anterior": "111.726",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "e) altri"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2228,
+   "etiqueta": "Interessi passivi su oneri tributari",
+   "actual": "168.464",
+   "anterior": "168.589",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "e) altri"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1970,
+   "etiqueta": "Acquisto materiale sportivo",
+   "actual": "176.999",
+   "anterior": "298.209",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1971,
+   "etiqueta": "Acquisto materiale indumenti",
+   "actual": "822.073",
+   "anterior": "1.008.980",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1972,
+   "etiqueta": "Acquisto materiale di consumo",
+   "actual": "428.446",
+   "anterior": "482.851",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1973,
+   "etiqueta": "Acquisto materiale di cancelleria e stampati",
+   "actual": "21.130",
+   "anterior": "33.954",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1974,
+   "etiqueta": "Acquisto medicinali",
+   "actual": "103.624",
+   "anterior": "101.743",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1975,
+   "etiqueta": "Beni destinati alla rivendita",
+   "actual": "4.900.237",
+   "anterior": "8.377.764",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "6) per materie prime, sussidiarie, di consumo e merci"
+  },
+  {
+   "bloque": "b73",
+   "linea": 1998,
+   "etiqueta": "Costi per tesserati ed attività sportiva",
+   "actual": "692.920",
+   "anterior": "487.149",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 1999,
+   "etiqueta": "Costi per attività sportiva",
+   "actual": "1.034.212",
+   "anterior": "795.654",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2000,
+   "etiqueta": "Costi specifici tecnici",
+   "actual": "19.950.371",
+   "anterior": "15.343.638",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2001,
+   "etiqueta": "Costi vitto, alloggio, locomozione gare",
+   "actual": "713.094",
+   "anterior": "793.078",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2002,
+   "etiqueta": "Servizio biglietteria e controllo ingressi",
+   "actual": "2.847.942",
+   "anterior": "2.809.809",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2003,
+   "etiqueta": "Assicurative e previdenziali",
+   "actual": "161.452",
+   "anterior": "172.760",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2004,
+   "etiqueta": "Compensi Amministratori",
+   "actual": "2.767.828",
+   "anterior": "2.759.685",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2005,
+   "etiqueta": "Amministrative, pubblicitarie e generali",
+   "actual": "5.703.665",
+   "anterior": "5.057.392",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b73",
+   "linea": 2006,
+   "etiqueta": "Altri",
+   "actual": "2.144.077",
+   "anterior": "2.000.711",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7) per servizi"
+  },
+  {
+   "bloque": "b75",
+   "linea": 2037,
+   "etiqueta": "Locazioni operative",
+   "actual": "3.212.019",
+   "anterior": "3.565.371",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento beni di terzi"
+  },
+  {
+   "bloque": "b75",
+   "linea": 2038,
+   "etiqueta": "Affitto centro tecnico, campi sportivi e canone concessione stadio",
+   "actual": "1.151.300",
+   "anterior": "1.273.520",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento beni di terzi"
+  },
+  {
+   "bloque": "b75",
+   "linea": 2039,
+   "etiqueta": "Altri costi per godimento beni terzi",
+   "actual": "2.310.960",
+   "anterior": "2.573.915",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento beni di terzi"
+  },
+  {
+   "bloque": "b76",
+   "linea": 2052,
+   "etiqueta": "Salari e stipendi tesserati",
+   "actual": "132.936.753",
+   "anterior": "106.482.645",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) salari e stipendi"
+  },
+  {
+   "bloque": "b76",
+   "linea": 2053,
+   "etiqueta": "Altri salari e stipendi",
+   "actual": "2.907.804",
+   "anterior": "2.604.870",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) salari e stipendi"
+  },
+  {
+   "bloque": "b76",
+   "linea": 2055,
+   "etiqueta": "Trattamento di fine rapporto",
+   "actual": "439.957",
+   "anterior": "390.379",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "c) trattamento di fine rapporto"
+  },
+  {
+   "bloque": "b76",
+   "linea": 2056,
+   "etiqueta": "Indennità fine carriera",
+   "actual": "269.914",
+   "anterior": "281.678",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "c) trattamento di fine rapporto"
+  },
+  {
+   "bloque": "b77",
+   "linea": 2072,
+   "etiqueta": "Compensi contrattuali calciatori",
+   "actual": "100.437.597",
+   "anterior": "94.241.641",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi tesserati"
+  },
+  {
+   "bloque": "b77",
+   "linea": 2073,
+   "etiqueta": "Quota variabile retrib. calc. legata ai risultati sportivi",
+   "actual": "6.206.871",
+   "anterior": "455.989",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi tesserati"
+  },
+  {
+   "bloque": "b77",
+   "linea": 2074,
+   "etiqueta": "Compensi contrattuali allenatori",
+   "actual": "18.418.929",
+   "anterior": "8.837.238",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi tesserati"
+  },
+  {
+   "bloque": "b77",
+   "linea": 2075,
+   "etiqueta": "Quota variabile retrib. allen. legata ai risultati sportivi",
+   "actual": "3.897.554",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi tesserati"
+  },
+  {
+   "bloque": "b77",
+   "linea": 2076,
+   "etiqueta": "Compensi contrattuali istruttori, tecnici e altri tess.",
+   "actual": "3.975.802",
+   "anterior": "2.947.777",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi tesserati"
+  },
+  {
+   "bloque": "b79",
+   "linea": 2112,
+   "etiqueta": "Concessioni, marchi, licenze e simili",
+   "actual": "3.750.000",
+   "anterior": "3.750.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) amm.to delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b79",
+   "linea": 2113,
+   "etiqueta": "Amm.to diritti plur. prestazioni calciatori",
+   "actual": "111.470.646",
+   "anterior": "70.879.195",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) amm.to delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b79",
+   "linea": 2114,
+   "etiqueta": "Altre immobilizzazioni immateriali",
+   "actual": "185.386",
+   "anterior": "283.979",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) amm.to delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2119,
+   "etiqueta": "Impianti",
+   "actual": "26.083",
+   "anterior": "5.810",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2120,
+   "etiqueta": "Macchinari",
+   "actual": "433",
+   "anterior": "97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2121,
+   "etiqueta": "Attrezzature",
+   "actual": "64.089",
+   "anterior": "63.224",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2122,
+   "etiqueta": "Automezzi",
+   "actual": "4.486",
+   "anterior": "8.973",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2123,
+   "etiqueta": "Macchine ufficio",
+   "actual": "20.981",
+   "anterior": "20.513",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b80",
+   "linea": 2124,
+   "etiqueta": "Mobili e arredi",
+   "actual": "35.806",
+   "anterior": "23.280",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) amm.to delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b81",
+   "linea": 2129,
+   "etiqueta": "Diritti pluriennali alle prestazioni dei calciatori",
+   "actual": "1.200.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "c) altre svalutazioni delle immobilizzazioni"
+  },
+  {
+   "bloque": "b82",
+   "linea": 2134,
+   "etiqueta": "Crediti iscritti nell'attivo circolante vs Clienti",
+   "actual": "1.478.376",
+   "anterior": "370.124",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "d) svalut.dei crediti compresi nel circolante"
+  },
+  {
+   "bloque": "b84",
+   "linea": 2154,
+   "etiqueta": "Materiale destinato alla rivendita",
+   "actual": "(91.495)",
+   "anterior": "(99.458)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci"
+  },
+  {
+   "bloque": "b84",
+   "linea": 2159,
+   "etiqueta": "Materiale destinato alla rivendita - Multimediale",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci"
+  },
+  {
+   "bloque": "b85",
+   "linea": 2181,
+   "etiqueta": "- indennizzi Lega e Uefa",
+   "actual": "98.290",
+   "anterior": "285.200",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "g) altri oneri diversi di gestione"
+  },
+  {
+   "bloque": "b85",
+   "linea": 2182,
+   "etiqueta": "- rappresentanza e omaggi",
+   "actual": "603.975",
+   "anterior": "416.513",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "g) altri oneri diversi di gestione"
+  },
+  {
+   "bloque": "b85",
+   "linea": 2183,
+   "etiqueta": "- diversi",
+   "actual": "1.312.687",
+   "anterior": "570.245",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "g) altri oneri diversi di gestione"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2265,
+   "etiqueta": "- IRAP",
+   "actual": "6.306",
+   "anterior": "(25.341)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "b) imposte relative a esercizi precedenti"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2266,
+   "etiqueta": "- Oneri (Proventi) da Consolidato Fiscale",
+   "actual": "1.111.057",
+   "anterior": "189.404",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "b) imposte relative a esercizi precedenti"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2268,
+   "etiqueta": "- IRES",
+   "actual": "14.167.612",
+   "anterior": "6.517.015",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "d) imposte differite"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2269,
+   "etiqueta": "- IRES - rigiro anticipate",
+   "actual": "1.140.177",
+   "anterior": "625.360",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "d) imposte differite"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2270,
+   "etiqueta": "- IRAP - rigiro anticipate",
+   "actual": "181.552",
+   "anterior": "38.540",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "d) imposte differite"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2272,
+   "etiqueta": "- IRES",
+   "actual": "(612.427)",
+   "anterior": "(1.360.835)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "e) imposte anticipate"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2273,
+   "etiqueta": "- IRES - rigiro differite",
+   "actual": "(6.271.015)",
+   "anterior": "(4.641.761)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "e) imposte anticipate"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2274,
+   "etiqueta": "- IRAP",
+   "actual": "(63.053)",
+   "anterior": "(150.817)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "e) imposte anticipate"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2275,
+   "etiqueta": "- IRAP - rigiro differite",
+   "actual": "(186.375)",
+   "anterior": "(186.375)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "e) imposte anticipate"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 272,
+  "actual": "290.860.326"
+ },
+ "total_gastos": {
+  "linea": 299,
+  "actual": "315.547.017"
+ },
+ "resultado": {
+  "linea": 335,
+  "actual": "(21.382.397)",
+  "anterior": "63.029.181"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Plus. da Cessione Diritti Plur. Prest. Calciatori' (L1880-L1884) por ser un cálculo (valor de realización menos valor contable) y no un desglose aditivo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "h) plusvalenza da cessione diritti pluriennali calciatori",
+   "texto": "L1880-L1884 muestran número de cesiones, valor contable y de realización que no suman al renglón.",
+   "bloques": [
+    "b66"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera los subrenglones de inventario inicial/final/desvalorización (L2155-L2158, L2160-L2161) por ser componentes de cálculo de la variación?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci",
+   "texto": "Son movimientos de existencias que componen la variación; se cargan solo L2154 y L2159.",
+   "bloques": [
+    "b84"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el desglose de 'Imposte correnti' de L2261-L2263, que mezcla IRAP y consolidado fiscal que en el estado son dos renglones separados (a y c)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "a) imposte correnti",
+   "texto": "L2261 (-8.715.053) no coincide con a) imposte correnti 5.859.119 del estado; sus partes ya están en L329 y L331.",
+   "bloques": [
+    "b90",
+    "b14"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que en el año anterior los oneri finanziari de la nota (1.067.839, L2230) difieren del estado (1.063.280, L320) por incluir las perdite su cambi?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "e) altri",
+   "texto": "La nota b88 suma intereses y diferencias de cambio juntos; se cargan solo los renglones de intereses como desglose de e) altri.",
+   "bloques": [
+    "b88",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado y notas en euros (unidades). Las tablas resumen que repiten renglones del estado (b60, b68 L1900-L1902, b85, b76 duplicados, b88 L2221-L2222, b89) no se cargaron como desglose porque reproducen 1:1 los renglones del estado. Desglose de 'Salari e stipendi tesserati' (b77) cargado como desglose de nota dentro de nota. El cuadro de cesiones por jugador (b68 L1895-L1896) es parcial y no se carga. Subtotales IRES/IRAP L2277-L2278 no cargados (reclasificación alternativa)."
+}

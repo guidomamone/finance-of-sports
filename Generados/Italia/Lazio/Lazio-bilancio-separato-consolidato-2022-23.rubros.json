@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
+  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf",
+  "club": "lazio",
+  "year": 2023,
+  "generatedAt": "2026-10-07T00:02:00.492Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.919117
+      ],
+      "glosa": "Ingresos por competiciones y partidos"
+    },
+    {
+      "label": "Diritti radiotelevisivi e proventi media",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        101.991926
+      ],
+      "glosa": "Derechos audiovisuales e ingresos de medios"
+    },
+    {
+      "label": "Ricavi da sponsorizzazione e pubblicità",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        20.725428
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Proventi da gestione diritti calciatori",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.473302
+      ],
+      "glosa": "Ingresos por gestión de derechos de futbolistas"
+    },
+    {
+      "label": "Altri ricavi",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.242734
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ricavi da merchandising",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.311766
+      ],
+      "glosa": "Ingresos por merchandising"
+    },
+    {
+      "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
+      "lado": "revenue",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.65178
+      ],
+      "glosa": "Plusvalías por enajenación de derechos federativos"
+    },
+    {
+      "label": "Costi per materie prime",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.340428
+      ],
+      "glosa": "Gastos por materias primas"
+    },
+    {
+      "label": "Costo del Personale",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        110.068773
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Costi per servizi",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        25.679646
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Oneri da gestione diritti calciatori",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.489073
+      ],
+      "glosa": "Gastos por gestión de derechos de futbolistas"
+    },
+    {
+      "label": "Altri costi",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.434459
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Ammortamenti, accantonamenti e svalutazioni",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        31.054117
+      ],
+      "glosa": "Amortizaciones, provisiones y deterioros"
+    },
+    {
+      "label": "Minusvalenze da diritti alle prestazioni dei tesserati",
+      "lado": "expense",
+      "page": 99,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.029726
+      ],
+      "glosa": "Minusvalías por derechos federativos"
+    }
+  ]
+}

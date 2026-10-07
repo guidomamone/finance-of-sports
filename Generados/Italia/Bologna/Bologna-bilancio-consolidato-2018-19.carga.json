@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf",
+ "generado": "2026-10-07T00:12:57.613Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ }
+}

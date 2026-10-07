@@ -1,0 +1,399 @@
+{
+ "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf",
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.md",
+ "generado": "2026-10-07T00:01:59.739Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "85.66315 = 85.66315"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "105.378569 = 105.378569"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 85.66315 en este documento y 85.66315 en Bologna-bilancio-consolidato-2019-20.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"a) ammortamento delle immobilizzazioni immateriali\" no suma el renglón (23.140565 contra 23.142564, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b69 solo muestra una fila Totale, sin apertura por categoría.",
+  "duda de extraer que no afecta la carga: L2428 repite la minusvalenza ya incluida en L2376 (sin importe en el ejercicio actual).",
+  "duda de extraer que no afecta la carga: El estado no imprime escala; L788 coincide con L2131 y L2107 dice 'Valori in €'."
+ ],
+ "reintentar": [
+  {
+   "renglon": "a) ammortamento delle immobilizzazioni immateriali",
+   "suma": 23.140565,
+   "objetivo": 23.142564
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "a) ammortamento delle immobilizzazioni immateriali",
+   "suma": 23.140565,
+   "objetivo": 23.142564
+  }
+ ],
+ "totales": {
+  "ingresos": 85.66315,
+  "gastos": 105.378569,
+  "financiero": 0.552236,
+  "impuesto": 1.44418,
+  "resultadoImpreso": -21.716119,
+  "resultadoParaCargar": -21.716119,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1) ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "M": 5.776763,
+   "pagina": 24,
+   "linea": 783,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "4) incrementi di immobilizzazioni per lavori interni",
+   "lado": "ingreso",
+   "M": 1.142206,
+   "pagina": 24,
+   "linea": 784,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 1.238095,
+   "pagina": 24,
+   "linea": 786,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 77.506086,
+   "pagina": 24,
+   "linea": 787,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 1.385357,
+   "pagina": 24,
+   "linea": 791,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 2.204258,
+   "pagina": 55,
+   "linea": 2215,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 1.239954,
+   "pagina": 55,
+   "linea": 2216,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Costi vitto, alloggio, locomozione gare",
+   "lado": "gasto",
+   "M": 0.557934,
+   "pagina": 55,
+   "linea": 2217,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Servizio biglietteria, controllo ingressi",
+   "lado": "gasto",
+   "M": 0.220389,
+   "pagina": 55,
+   "linea": 2218,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Assicurative e previdenziali",
+   "lado": "gasto",
+   "M": 1.111702,
+   "pagina": 55,
+   "linea": 2219,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "Amministrative, pubblicitarie e generali",
+   "lado": "gasto",
+   "M": 4.264945,
+   "pagina": 55,
+   "linea": 2220,
+   "origen": "nota que desglosa \"7) per servizi\""
+  },
+  {
+   "etiqueta": "8) per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 2.074,
+   "pagina": 24,
+   "linea": 793,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 57.009902,
+   "pagina": 24,
+   "linea": 795,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 3.247284,
+   "pagina": 24,
+   "linea": 796,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.690248,
+   "pagina": 24,
+   "linea": 797,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 23.142564,
+   "pagina": 25,
+   "linea": 813,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "terreni e fabbricati \"costruzioni leggere\"",
+   "lado": "gasto",
+   "M": 0.268982,
+   "pagina": 57,
+   "linea": 2332,
+   "origen": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "impianti e macchinari",
+   "lado": "gasto",
+   "M": 0.034294,
+   "pagina": 57,
+   "linea": 2333,
+   "origen": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "attrezzature industriali e commerciali",
+   "lado": "gasto",
+   "M": 0.075719,
+   "pagina": 57,
+   "linea": 2334,
+   "origen": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "altri beni",
+   "lado": "gasto",
+   "M": 0.072217,
+   "pagina": 57,
+   "linea": 2335,
+   "origen": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0.666228,
+   "pagina": 25,
+   "linea": 815,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
+   "lado": "gasto",
+   "M": 0.4127,
+   "pagina": 25,
+   "linea": 816,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "12) accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 25,
+   "linea": 818,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spese varie organizzazione gare",
+   "lado": "gasto",
+   "M": 1.276006,
+   "pagina": 58,
+   "linea": 2371,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Tasse iscrizioni gare",
+   "lado": "gasto",
+   "M": 0.00699,
+   "pagina": 58,
+   "linea": 2372,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- percentuale su incassi gare a squadre ospitate",
+   "lado": "gasto",
+   "M": 0.230687,
+   "pagina": 58,
+   "linea": 2374,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "gasto",
+   "M": 1.789712,
+   "pagina": 58,
+   "linea": 2375,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- Contributi a società affiliate",
+   "lado": "gasto",
+   "M": 0.180328,
+   "pagina": 58,
+   "linea": 2378,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\""
+  },
+  {
+   "etiqueta": "- Contributi solidarietà",
+   "lado": "gasto",
+   "M": 0.069845,
+   "pagina": 58,
+   "linea": 2379,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\""
+  },
+  {
+   "etiqueta": "- Premio di rendimento",
+   "lado": "gasto",
+   "M": 0.745875,
+   "pagina": 58,
+   "linea": 2380,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\""
+  },
+  {
+   "etiqueta": "- Premi di preparazione ex.art. 96 N.O.I.F.",
+   "lado": "gasto",
+   "M": 0.070719,
+   "pagina": 58,
+   "linea": 2381,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\""
+  },
+  {
+   "etiqueta": "- Sopravvenienze passive altri oneri di gestione",
+   "lado": "gasto",
+   "M": 0.088816,
+   "pagina": 58,
+   "linea": 2382,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\""
+  },
+  {
+   "etiqueta": "- Spese, ammende e multe gare",
+   "lado": "gasto",
+   "M": 1.139447,
+   "pagina": 58,
+   "linea": 2384,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri di gestione:\""
+  },
+  {
+   "etiqueta": "- Oneri tributari indiretti",
+   "lado": "gasto",
+   "M": 0.273999,
+   "pagina": 58,
+   "linea": 2385,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri di gestione:\""
+  },
+  {
+   "etiqueta": "- Altri",
+   "lado": "gasto",
+   "M": 0.827468,
+   "pagina": 58,
+   "linea": 2386,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri di gestione:\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "altri",
+   "M": -0.000002,
+   "linea": 824
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.006223,
+   "linea": 828
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.554378,
+   "linea": 832
+  },
+  {
+   "etiqueta": "17-bis) utili e perdite su cambi",
+   "M": 0.008367,
+   "linea": 834
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": -1.566167,
+   "linea": 838
+  },
+  {
+   "etiqueta": "imposte relative a esercizi precedenti",
+   "M": 0.116973,
+   "linea": 839
+  },
+  {
+   "etiqueta": "imposte differite e anticipate",
+   "M": 0.005014,
+   "linea": 840
+  }
+ ]
+}

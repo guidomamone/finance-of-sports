@@ -1,0 +1,670 @@
+{
+  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
+  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+  "club": "as-roma",
+  "year": 2018,
+  "generatedAt": "2026-10-07T00:01:59.517Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Campionato Serie A",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        11.598
+      ],
+      "glosa": "Campeonato Serie A"
+    },
+    {
+      "label": "UEFA Champions League",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        52.784
+      ],
+      "glosa": "Liga de Campeones de la UEFA"
+    },
+    {
+      "label": "Youth League",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        0.048
+      ],
+      "glosa": "Liga Juvenil de la UEFA"
+    },
+    {
+      "label": "Tim Cup",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        0.242
+      ],
+      "glosa": "Copa TIM"
+    },
+    {
+      "label": "Gare amichevoli",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        3.628
+      ],
+      "glosa": "Partidos amistosos"
+    },
+    {
+      "label": "Abbonamenti Campionato",
+      "lado": "revenue",
+      "page": 109,
+      "section": "nota que desglosa \"Ricavi da gare\"",
+      "values": [
+        8.919
+      ],
+      "glosa": "Abonos de campeonato"
+    },
+    {
+      "label": "Altri ricavi delle vendite e delle prestazioni",
+      "lado": "revenue",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        7.808
+      ],
+      "glosa": "Otros ingresos de explotación y ventas"
+    },
+    {
+      "label": "b) Sponsorizzazioni",
+      "lado": "revenue",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        11.842
+      ],
+      "glosa": "b) Patrocinios"
+    },
+    {
+      "label": "c) Diritti televisivi e diritti d'immagine",
+      "lado": "revenue",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        128.557
+      ],
+      "glosa": "c) Derechos audiovisuales y de imagen"
+    },
+    {
+      "label": "d) Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        13.814
+      ],
+      "glosa": "d) Ingresos por publicidad"
+    },
+    {
+      "label": "Proventi LNP",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        2.086
+      ],
+      "glosa": "Ingresos de la LNP"
+    },
+    {
+      "label": "Indennizzi assicurativi infortuni calciatori",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        5.114
+      ],
+      "glosa": "Indemnizaciones de seguros por lesiones de futbolistas"
+    },
+    {
+      "label": "Riaddebiti ed entità correlate",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.201
+      ],
+      "glosa": "Refacturaciones a entidades vinculadas"
+    },
+    {
+      "label": "AS Roma Camp",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.35
+      ],
+      "glosa": "Campus AS Roma"
+    },
+    {
+      "label": "Ritiri estivi",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.325
+      ],
+      "glosa": "Concentraciones de pretemporada"
+    },
+    {
+      "label": "Scuola Calcio",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.501
+      ],
+      "glosa": "Escuela de fútbol"
+    },
+    {
+      "label": "Addebiti materiale sportivo",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.219
+      ],
+      "glosa": "Cargos por material deportivo"
+    },
+    {
+      "label": "Utilizzo fondi rischi",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        1.239
+      ],
+      "glosa": "Aplicación de provisiones para riesgos"
+    },
+    {
+      "label": "Sopravvenienze attive",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.089
+      ],
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Biglietti trasferite internazionali",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.682
+      ],
+      "glosa": "Entradas para partidos internacionales como visitante"
+    },
+    {
+      "label": "Tessera Tifoso Away",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.149
+      ],
+      "glosa": "Tarjeta de aficionado visitante"
+    },
+    {
+      "label": "Altri proventi diversi",
+      "lado": "revenue",
+      "page": 112,
+      "section": "nota que desglosa \"e) Altri proventi\"",
+      "values": [
+        0.671
+      ],
+      "glosa": "Otros ingresos diversos"
+    },
+    {
+      "label": "Indumenti sportivi e materiale tecnico",
+      "lado": "expense",
+      "page": 113,
+      "section": "nota que desglosa \"Acquisti materie di consumo\"",
+      "values": [
+        2.267
+      ],
+      "glosa": "Ropa deportiva y material técnico"
+    },
+    {
+      "label": "Divise sociali ed altri beni",
+      "lado": "expense",
+      "page": 113,
+      "section": "nota que desglosa \"Acquisti materie di consumo\"",
+      "values": [
+        0.405
+      ],
+      "glosa": "Uniformes oficiales y otros bienes"
+    },
+    {
+      "label": "Beni e prodotti da commercializzare",
+      "lado": "expense",
+      "page": 113,
+      "section": "nota que desglosa \"Acquisti materie di consumo\"",
+      "values": [
+        3.504
+      ],
+      "glosa": "Bienes y productos destinados a la venta"
+    },
+    {
+      "label": "Materiale vario di consumo",
+      "lado": "expense",
+      "page": 113,
+      "section": "nota que desglosa \"Acquisti materie di consumo\"",
+      "values": [
+        0.786
+      ],
+      "glosa": "Material diverso de consumo"
+    },
+    {
+      "label": "Variazione delle rimanenze",
+      "lado": "expense",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        0.082
+      ],
+      "glosa": "Variación de existencias"
+    },
+    {
+      "label": "Costi per tesserati",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        1.542
+      ],
+      "glosa": "Gastos por personal federado"
+    },
+    {
+      "label": "Costi per attività sportiva",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        5.641
+      ],
+      "glosa": "Gastos por actividad deportiva"
+    },
+    {
+      "label": "Costi specifici tecnici",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        6.336
+      ],
+      "glosa": "Gastos técnicos específicos"
+    },
+    {
+      "label": "Costi vitto, alloggio, locomozione e trasferte",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        2.254
+      ],
+      "glosa": "Gastos de manutención, alojamiento, desplazamientos y viajes"
+    },
+    {
+      "label": "Spese assicurative",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        5.865
+      ],
+      "glosa": "Gastos de seguros"
+    },
+    {
+      "label": "Consulenze e servizi professionali",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        6.701
+      ],
+      "glosa": "Servicios profesionales independientes"
+    },
+    {
+      "label": "Consulenze professionali per servizi commerciali",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        1.174
+      ],
+      "glosa": "Asesoramiento profesional para servicios comerciales"
+    },
+    {
+      "label": "Spese postali, telefoniche ed altre utenze",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.655
+      ],
+      "glosa": "Gastos postales, telefónicos y otros suministros"
+    },
+    {
+      "label": "Spese di vigilanza",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.157
+      ],
+      "glosa": "Gastos de seguridad y vigilancia"
+    },
+    {
+      "label": "Manutenzione - gestione sede sociale e centro sportivo",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        1.559
+      ],
+      "glosa": "Mantenimiento y gestión de sede social y centro deportivo"
+    },
+    {
+      "label": "Manutenzione e gestione hardware, software e sito internet",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        2.041
+      ],
+      "glosa": "Mantenimiento y gestión de hardware, software y sitio web"
+    },
+    {
+      "label": "Spese per assemblee, societari e di borsa",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.1
+      ],
+      "glosa": "Gastos de asambleas, societarios y cotización bursátil"
+    },
+    {
+      "label": "Trasporti e trasferte",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        1.974
+      ],
+      "glosa": "Transportes y desplazamientos"
+    },
+    {
+      "label": "Emolumenti al Consiglio di Amministrazione",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.15
+      ],
+      "glosa": "Retribuciones al Consejo de Administración"
+    },
+    {
+      "label": "Spese di revisione contabile",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.234
+      ],
+      "glosa": "Gastos de auditoría de cuentas"
+    },
+    {
+      "label": "Emolumenti al Collegio sindacale / O.D.V.",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.137
+      ],
+      "glosa": "Retribuciones a la Comisión de Control / Órgano de Vigilancia"
+    },
+    {
+      "label": "Costi di produzione *Roma TV e Roma Radio*",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        4.878
+      ],
+      "glosa": "Gastos de producción de Roma TV y Roma Radio"
+    },
+    {
+      "label": "Spese Call Center Stadio ed altri servizi interinali",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.025
+      ],
+      "glosa": "Gastos de centro de atención telefónica del estadio y trabajo temporal"
+    },
+    {
+      "label": "Altre spese generali e amministrative",
+      "lado": "expense",
+      "page": 115,
+      "section": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\"",
+      "values": [
+        0.205
+      ],
+      "glosa": "Otros gastos generales y de administración"
+    },
+    {
+      "label": "Spese di pubblicità e promozione",
+      "lado": "expense",
+      "page": 114,
+      "section": "nota que desglosa \"Spese per Servizi\"",
+      "values": [
+        5.752
+      ],
+      "glosa": "Gastos de publicidad y relaciones públicas"
+    },
+    {
+      "label": "Spese per godimento beni di terzi",
+      "lado": "expense",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        10.671
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Salari e stipendi",
+      "lado": "expense",
+      "page": 117,
+      "section": "nota que desglosa \"Spese per il personale\"",
+      "values": [
+        150.958
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Oneri sociali",
+      "lado": "expense",
+      "page": 117,
+      "section": "nota que desglosa \"Spese per il personale\"",
+      "values": [
+        6.452
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "T.F.R.",
+      "lado": "expense",
+      "page": 117,
+      "section": "nota que desglosa \"Spese per il personale\"",
+      "values": [
+        0.932
+      ],
+      "glosa": "Provisión para indemnizaciones por fin de contrato (TFR)"
+    },
+    {
+      "label": "Altri costi (Faifc)",
+      "lado": "expense",
+      "page": 117,
+      "section": "nota que desglosa \"Spese per il personale\"",
+      "values": [
+        0.498
+      ],
+      "glosa": "Otros gastos de personal (FAIFC)"
+    },
+    {
+      "label": "Oneri tributari indiretti",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.979
+      ],
+      "glosa": "Tributos e impuestos indirectos"
+    },
+    {
+      "label": "Sopravvenienze passive",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.107
+      ],
+      "glosa": "Gastos excepcionales"
+    },
+    {
+      "label": "- Costi accesso segnale televisivo LNP",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        1.063
+      ],
+      "glosa": "- Gastos de acceso a la señal televisiva de la LNP"
+    },
+    {
+      "label": "- Mutualità incassi gare TIM Cup",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.109
+      ],
+      "glosa": "- Fondo de solidaridad sobre taquilla de la Copa TIM"
+    },
+    {
+      "label": "- Contributi, ammende, spese LNP-FIGC-UEFA",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        1.355
+      ],
+      "glosa": "- Aportaciones, sanciones y gastos LNP-FIGC-UEFA"
+    },
+    {
+      "label": "- Costi per acquisti biglietti gare in trasferta",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.68
+      ],
+      "glosa": "- Gastos por adquisición de entradas para partidos fuera de casa"
+    },
+    {
+      "label": "- Erogazioni liberali Roma",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.973
+      ],
+      "glosa": "- Donaciones y liberalidades Roma"
+    },
+    {
+      "label": "- Penalità contrattuali",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.287
+      ],
+      "glosa": "- Penalizaciones contractuales"
+    },
+    {
+      "label": "- Altri oneri diversi",
+      "lado": "expense",
+      "page": 118,
+      "section": "nota que desglosa \"Oneri diversi di gestione\"",
+      "values": [
+        0.731
+      ],
+      "glosa": "- Otros gastos diversos"
+    },
+    {
+      "label": "Totale Costi di esercizio",
+      "lado": "expense",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        230.056
+      ],
+      "glosa": "Total gastos de explotación"
+    },
+    {
+      "label": "Ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 121,
+      "section": "nota que desglosa \"Ammortamenti e svalutazioni\"",
+      "values": [
+        57.457
+      ],
+      "glosa": "Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "Ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 121,
+      "section": "nota que desglosa \"Ammortamenti e svalutazioni\"",
+      "values": [
+        0.353
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Svalutazione dei crediti correnti",
+      "lado": "expense",
+      "page": 121,
+      "section": "nota que desglosa \"Ammortamenti e svalutazioni\"",
+      "values": [
+        1.41
+      ],
+      "glosa": "Deterioro de créditos comerciales y corrientes"
+    },
+    {
+      "label": "Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 62,
+      "section": "estado",
+      "values": [
+        0.546
+      ],
+      "glosa": "Dotación a las provisiones para riesgos"
+    }
+  ]
+}

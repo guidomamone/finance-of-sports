@@ -1,0 +1,652 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
+ "mdSha1": "286ede4994b6765569e4112f727f678f654fb09f",
+ "modo": "digital",
+ "motivoModo": "84 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 12469 vs 17469, 13314 vs 13312, 2183 vs 3183; 155 números del .md no están en el PDF (tolerancia 74); el .md solo tiene el 75% de los números del PDF (mínimo 85%): incompleto",
+ "generado": "2026-10-06T23:26:08.244Z",
+ "fuentes": {
+  "97": "pdftotext",
+  "143": "pdftotext",
+  "144": "pdftotext",
+  "145": "pdftotext",
+  "146": "pdftotext",
+  "147": "pdftotext",
+  "150": "pdftotext",
+  "151": "pdftotext",
+  "152": "pdftotext"
+ },
+ "confirmados": 164,
+ "noConfirmados": [
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5700,
+   "numero": "30.06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ricavi da gare | 30.06.22 | 30.06.21 | %  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5700,
+   "numero": "30.06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ricavi da gare | 30.06.22 | 30.06.21 | %  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5701,
+   "numero": "10.325",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ricavi da gare in casa | 10.325 | 0 | 100,00  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5701,
+   "numero": "100,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ricavi da gare in casa | 10.325 | 0 | 100,00  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5702,
+   "numero": "100,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  % su incassi gare da squadre ospitanti | 170 | 0 | 100,00  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5703,
+   "numero": "100,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Abbonamenti | 33 | 0 | 100,00  |"
+  },
+  {
+   "bloque": "b172",
+   "pagina": 143,
+   "linea": 5704,
+   "numero": "100,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **10.528** | **0** | **100,00**  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5714,
+   "numero": "30.06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Diritti televisivi e proventi media | 30.06.22 | 30.06.21 | %  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5714,
+   "numero": "30.06",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Diritti televisivi e proventi media | 30.06.22 | 30.06.21 | %  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5715,
+   "numero": "64.031",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Televisivi | 64.031 | 85.378 | -25,00  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5715,
+   "numero": "85.378",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Televisivi | 64.031 | 85.378 | -25,00  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5715,
+   "numero": "25,00",
+   "segundaLeyo": "4500",
+   "sinSegunda": false,
+   "texto": "|  Televisivi | 64.031 | 85.378 | -25,00  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5716,
+   "numero": "16.748",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Televisivi da partecipazioni a comp. UEFA | 16.748 | 52.935 | -68,36  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5716,
+   "numero": "52.935",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Televisivi da partecipazioni a comp. UEFA | 16.748 | 52.935 | -68,36  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5716,
+   "numero": "68,36",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Televisivi da partecipazioni a comp. UEFA | 16.748 | 52.935 | -68,36  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5717,
+   "numero": "4.879",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Da LNP | 4.879 | 5.499 | -11,27  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5717,
+   "numero": "5.499",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Da LNP | 4.879 | 5.499 | -11,27  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5717,
+   "numero": "11,27",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Da LNP | 4.879 | 5.499 | -11,27  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5718,
+   "numero": "85.657",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **85.657** | **143.812** | **-40,44**  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5718,
+   "numero": "143.812",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **85.657** | **143.812** | **-40,44**  |"
+  },
+  {
+   "bloque": "b173",
+   "pagina": 143,
+   "linea": 5718,
+   "numero": "40,44",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **85.657** | **143.812** | **-40,44**  |"
+  },
+  {
+   "bloque": "b175",
+   "pagina": 144,
+   "linea": 5764,
+   "numero": "1.655",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Cessione temporanea calciatori | 900 | 1.655 | -45,62 |"
+  },
+  {
+   "bloque": "b175",
+   "pagina": 144,
+   "linea": 5764,
+   "numero": "45,62",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Cessione temporanea calciatori | 900 | 1.655 | -45,62 |"
+  },
+  {
+   "bloque": "b175",
+   "pagina": 144,
+   "linea": 5766,
+   "numero": "1.719",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Totale | 900 | 1.719 | -47,64 |"
+  },
+  {
+   "bloque": "b175",
+   "pagina": 144,
+   "linea": 5766,
+   "numero": "47,64",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Totale | 900 | 1.719 | -47,64 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5803,
+   "numero": "1.794",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Materiale per vendita a terzi | 1.794 | 1.522 | 17,87 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5803,
+   "numero": "1.522",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Materiale per vendita a terzi | 1.794 | 1.522 | 17,87 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5803,
+   "numero": "17,87",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Materiale per vendita a terzi | 1.794 | 1.522 | 17,87 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5804,
+   "numero": "60,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Altri | 6 | 15 | -60,00 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5805,
+   "numero": "1.537",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Totale | 1.800 | 1.537 | 17,11 |"
+  },
+  {
+   "bloque": "b177",
+   "pagina": 145,
+   "linea": 5805,
+   "numero": "17,11",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Totale | 1.800 | 1.537 | 17,11 |"
+  },
+  {
+   "bloque": "b190",
+   "pagina": 152,
+   "linea": 6102,
+   "numero": "3.426",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati | 24.985 | 3.426 | 629,17 |"
+  },
+  {
+   "bloque": "b190",
+   "pagina": 152,
+   "linea": 6102,
+   "numero": "629,17",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati | 24.985 | 3.426 | 629,17 |"
+  },
+  {
+   "bloque": "b190",
+   "pagina": 152,
+   "linea": 6103,
+   "numero": "100,00",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Minusvalenze da diritti alle prestazioni dei tesserati | 0 | -364 | -100,00 |"
+  },
+  {
+   "bloque": "b190",
+   "pagina": 152,
+   "linea": 6104,
+   "numero": "3.062",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **Totale** | 24.985 | 3.062 | 715,94 |"
+  },
+  {
+   "bloque": "b190",
+   "pagina": 152,
+   "linea": 6104,
+   "numero": "715,94",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **Totale** | 24.985 | 3.062 | 715,94 |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5859,
+   "numero": "74.002",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali calciatori | 74.002 | 87.289 | -15,22  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5859,
+   "numero": "87.289",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali calciatori | 74.002 | 87.289 | -15,22  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5859,
+   "numero": "15,22",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali calciatori | 74.002 | 87.289 | -15,22  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5860,
+   "numero": "5.758",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Quota variabile legata ai risultati sportivi | 5.758 | 22.758 | -74,70  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5860,
+   "numero": "22.758",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Quota variabile legata ai risultati sportivi | 5.758 | 22.758 | -74,70  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5860,
+   "numero": "74,70",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Quota variabile legata ai risultati sportivi | 5.758 | 22.758 | -74,70  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5861,
+   "numero": "10.461",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali allenatori e tecnici I squadra | 10.461 | 9.835 | 6,37  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5861,
+   "numero": "9.835",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali allenatori e tecnici I squadra | 10.461 | 9.835 | 6,37  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5862,
+   "numero": "1.663",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Quota variabile legata ai risultati sportivi | 592 | 1.663 | -64,40  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5862,
+   "numero": "64,40",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Quota variabile legata ai risultati sportivi | 592 | 1.663 | -64,40  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5863,
+   "numero": "1.271",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali allenatori e tecnici sq. Minori | 1.271 | 1.150 | 10,52  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5863,
+   "numero": "1.150",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali allenatori e tecnici sq. Minori | 1.271 | 1.150 | 10,52  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5863,
+   "numero": "10,52",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Compensi contrattuali allenatori e tecnici sq. Minori | 1.271 | 1.150 | 10,52  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5864,
+   "numero": "2.724",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Oneri sociali | 2.724 | 2.599 | 4,81  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5864,
+   "numero": "2.599",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Oneri sociali | 2.724 | 2.599 | 4,81  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5866,
+   "numero": "1.203",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Altri Costi | 1.203 | 7.089 | -83,03  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5866,
+   "numero": "7.089",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Altri Costi | 1.203 | 7.089 | -83,03  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5866,
+   "numero": "83,03",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Altri Costi | 1.203 | 7.089 | -83,03  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5867,
+   "numero": "96.360",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Sub Totale* | *96.360* | *132.738* | *-27,41*  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5867,
+   "numero": "132.738",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Sub Totale* | *96.360* | *132.738* | *-27,41*  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5867,
+   "numero": "27,41",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Sub Totale* | *96.360* | *132.738* | *-27,41*  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5869,
+   "numero": "1.855",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Salari e stipendi | 1.855 | 1.760 | 5,43  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5869,
+   "numero": "1.760",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Salari e stipendi | 1.855 | 1.760 | 5,43  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5872,
+   "numero": "35,48",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Altri Costi | 113 | 83 | 35,48  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5873,
+   "numero": "2.821",
+   "segundaLeyo": "2021",
+   "sinSegunda": false,
+   "texto": "|  *Sub Totale* | *2.821* | *2.686* | *5,05*  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5873,
+   "numero": "2.686",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  *Sub Totale* | *2.821* | *2.686* | *5,05*  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5874,
+   "numero": "99.182",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **99.182** | **135.423** | **-26,76**  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5874,
+   "numero": "135.423",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **99.182** | **135.423** | **-26,76**  |"
+  },
+  {
+   "bloque": "b180",
+   "pagina": 146,
+   "linea": 5874,
+   "numero": "26,76",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **99.182** | **135.423** | **-26,76**  |"
+  },
+  {
+   "bloque": "b186",
+   "pagina": 150,
+   "linea": 5995,
+   "numero": "232,41",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costi per acquisizione temporanea calciatori | 65 | 20 | 232,41  |"
+  },
+  {
+   "bloque": "b186",
+   "pagina": 150,
+   "linea": 5996,
+   "numero": "1.799",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri oneri da gestione calciatori | 544 | 1.799 | -69,79  |"
+  },
+  {
+   "bloque": "b186",
+   "pagina": 150,
+   "linea": 5996,
+   "numero": "69,79",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri oneri da gestione calciatori | 544 | 1.799 | -69,79  |"
+  },
+  {
+   "bloque": "b186",
+   "pagina": 150,
+   "linea": 5997,
+   "numero": "1.819",
+   "segundaLeyo": "3819",
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **609** | **1.819** | **-66,54**  |"
+  },
+  {
+   "bloque": "b186",
+   "pagina": 150,
+   "linea": 5997,
+   "numero": "66,54",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **609** | **1.819** | **-66,54**  |"
+  }
+ ]
+}

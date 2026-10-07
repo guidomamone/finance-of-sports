@@ -1,0 +1,69 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md",
+ "generado": "2026-10-07T00:01:59.649Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "50fd4c4",
+  "d1352fc",
+  "66eb260",
+  "18501d7",
+  "18501d7",
+  "25629cf",
+  "114a9bb"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 0 y el total impreso dice 0.299882"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 0 y el total impreso dice 0.364408"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El documento es del ejercicio 2024-25; el ejercicio pedido solo aparece como columna comparativa 30/06/2024."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

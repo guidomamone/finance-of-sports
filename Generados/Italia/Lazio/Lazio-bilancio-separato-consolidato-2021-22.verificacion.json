@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
+ "generado": "2026-10-07T00:02:00.464Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "f9f4d09",
+  "402c51e",
+  "3c4748f",
+  "0404b98"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2022: 161.134819 en este documento y 186.11826 en Lazio-bilancio-separato-consolidato-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Proventi da gestione diritti calciatori\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"RICAVI NETTI DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI TESSERATI\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Costi per materie prime\" no suma el renglón (1.89992 contra 3.818452, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Solo da ventas por segmento, que no abren renglones no desglosados por las notas.",
+  "duda de localizar que no afecta la carga: No aparece en el índice una tabla consolidada de proventi da attività di investimento (la separada es b89).",
+  "duda de extraer que no afecta la carga: L5917 es un detalle por tipo de una fila que ya está en b182 (L5906, 4.688) y no tiene columnas de ejercicio."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Costi per materie prime",
+   "suma": 1.89992,
+   "objetivo": 3.818452
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Costi per materie prime",
+   "suma": 1.89992,
+   "objetivo": 3.818452
+  }
+ ],
+ "totales": {
+  "ingresos": 161.134819,
+  "gastos": 173.008561,
+  "financiero": -1.430598,
+  "impuesto": -4.115317,
+  "resultadoImpreso": -17.419657,
+  "resultadoParaCargar": -17.419657,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 10.5283,
+   "pagina": 97,
+   "linea": 3735,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diritti radiotelevisivi e proventi media",
+   "lado": "ingreso",
+   "M": 85.657296,
+   "pagina": 97,
+   "linea": 3736,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da sponsorizzazione e pubblicità",
+   "lado": "ingreso",
+   "M": 23.952336,
+   "pagina": 97,
+   "linea": 3737,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi da gestione diritti calciatori",
+   "lado": "ingreso",
+   "M": 0.9,
+   "pagina": 97,
+   "linea": 3738,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi",
+   "lado": "ingreso",
+   "M": 13.311937,
+   "pagina": 97,
+   "linea": 3739,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da merchandising",
+   "lado": "ingreso",
+   "M": 1.80032,
+   "pagina": 97,
+   "linea": 3740,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
+   "lado": "ingreso",
+   "M": 24.98463,
+   "pagina": 97,
+   "linea": 3750,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi per materie prime",
+   "lado": "gasto",
+   "M": 3.818452,
+   "pagina": 97,
+   "linea": 3743,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costo del personale",
+   "lado": "gasto",
+   "M": 99.182175,
+   "pagina": 97,
+   "linea": 3744,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi per servizi",
+   "lado": "gasto",
+   "M": 22.204801,
+   "pagina": 97,
+   "linea": 3745,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da gestione diritti calciatori",
+   "lado": "gasto",
+   "M": 0.608626,
+   "pagina": 97,
+   "linea": 3746,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri costi",
+   "lado": "gasto",
+   "M": 4.420754,
+   "pagina": 97,
+   "linea": 3747,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti, accantonamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 42.773753,
+   "pagina": 97,
+   "linea": 3748,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Proventi finanziari",
+   "M": 0.186256,
+   "linea": 3754
+  },
+  {
+   "etiqueta": "Oneri finanziari",
+   "M": -1.616854,
+   "linea": 3755
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte correnti",
+   "M": -3.738451,
+   "linea": 3757
+  },
+  {
+   "etiqueta": "Imposte differite e anticipate",
+   "M": -0.376866,
+   "linea": 3758
+  }
+ ]
+}
