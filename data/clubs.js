@@ -420,6 +420,9 @@ const clubs = {
   // Hellas Verona: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf.
   // brandColor y su procedencia: fuentes/Italia/Hellas Verona.md.
   'hellasverona-it': { id:'hellasverona-it', name:'Hellas Verona Football Club S.p.A.', displayName:'Hellas Verona', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#002F6C' },
+  // Inter: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Inter.md.
+  'inter-it': { id:'inter-it', name:'F.C. Internazionale Milano S.p.A.', displayName:'Inter', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00239C' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

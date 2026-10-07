@@ -35,7 +35,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["como-it"],
+    sinDato: ["como-it","inter-it"],
     clubs: [
       { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
