@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
- "generado": "2026-10-07T00:02:00.279Z",
+ "generado": "2026-10-07T01:26:39.133Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "lazio-it",
  "year": 2009,
  "escala": {
   "valor": "unidades",
@@ -13,7 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "7ce3412"
+  "19e8b00"
  ],
  "chequeos": [
   {
@@ -39,12 +39,12 @@
   {
    "nombre": "documento del año 2010",
    "ok": true,
-   "detalle": "ingresos de 2009: 92.001361 en este documento y 92.001255 en Lazio-bilancio-separato-consolidato-2009-10.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2009: 92.001361 en este documento y 92.001361 en Lazio-bilancio-separato-consolidato-2009-10.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2008: este chequeo no se puede hacer"
   }
  ],
  "notas": [

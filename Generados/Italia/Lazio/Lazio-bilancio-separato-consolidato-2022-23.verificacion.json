@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
- "generado": "2026-10-07T00:02:00.492Z",
+ "generado": "2026-10-07T01:26:43.728Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "lazio-it",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -13,7 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "70e0974"
+  "38436d9"
  ],
  "chequeos": [
   {
@@ -44,7 +44,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

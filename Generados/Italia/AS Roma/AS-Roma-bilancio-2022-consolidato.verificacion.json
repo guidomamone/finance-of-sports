@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
- "generado": "2026-10-07T00:01:59.566Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-07T01:26:35.886Z",
+ "estado": "ok",
+ "clubId": "asroma-it",
  "year": 2022,
  "escala": {
   "valor": "miles",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "6fb90b6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,7 +37,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
