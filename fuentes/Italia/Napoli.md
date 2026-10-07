@@ -35,3 +35,5 @@ Ninguna. Serie completa 2019/20-2024/25.
 - Último chequeo: 2026-09-17.
 
 - **Color de marca**: `#00ABE7` (celeste) — "maglia azzurra" (it.wikipedia, Società_Sportiva_Calcio_Napoli); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf` (sourceId `napoli-it-bilancio-2025`).
