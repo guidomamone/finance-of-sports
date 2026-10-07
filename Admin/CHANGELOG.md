@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 566 — Un solo lote a la vez (2026-10-07)
+
+- `lote.mjs` toma un candado (`Admin/.lote.lock`, en `.gitignore`) al arrancar, también en ensayo: un segundo lote sale sin tocar nada; el
+  candado de un lote cortado se avisa y se reemplaza. Sin manejador de Ctrl+C a propósito (no cortaba las etapas sincrónicas).
+- TODO 162 queda con la otra mitad (verificar al arrancar lo que dejó un lote cortado); TODO 164 nuevo: el candado para pipeline.mjs y
+  cargar.mjs --escribir.
+
 ## Versión 565 — El resultado del lote muestra todos los motivos de freno (2026-10-07)
 
 - `lote.mjs`, bloque RESULTADO: cada documento frenado lista todos sus motivos, uno por línea (antes solo el primero), y avisa si el

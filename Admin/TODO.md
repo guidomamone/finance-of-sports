@@ -254,12 +254,10 @@ ni en el comentario de ningún archivo de código.
       commiteó aparte).
     - Ya arreglado en la Versión 562: el alta no leía el ajuste de perímetro.
 
-162. NADA IMPIDE CORRER DOS LOTES A LA VEZ (2026-10-07). Guido lanzó el lote 20 dos veces seguidas mientras el primero ya había terminado y
-    otra mientras corría el segundo: dos `lote.mjs` escribieron a la vez el registro (`Admin/transcripciones-estado.jsonl`), la lista
-    temporal (`Admin/.lote-lista-actual.txt`) y la cola (no se rompió nada: las escrituras de la cola son append). Y un lote cortado a
-    mitad (lote 14, la terminal se reinició) deja `.validacion.json` sin `.verificacion.json`, lo que dispara el rearmado del to-do 150.
-    Arreglo: un lockfile (`Admin/.lote.lock` con el PID) que haga salir al segundo con un mensaje claro; y al arrancar, si hay documentos
-    con validación y sin verificación, verificarlos primero (gratis) antes de decidir reintentos.
+162. UN LOTE CORTADO A MITAD DEJA DOCUMENTOS VALIDADOS SIN VERIFICAR (2026-10-07). Lote 14: la terminal se reinició y quedaron
+    `.validacion.json` sin `.verificacion.json`, lo que dispara el rearmado del to-do 150 en la corrida siguiente. Desde la Versión 566 el lote
+    lo detecta (avisa "quedó el candado de un lote que se cortó"), pero no hace nada distinto. Arreglo: al arrancar, si hay documentos de la
+    lista con validación y sin verificación, verificarlos primero (gratis) antes de decidir reintentos.
 
 163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
     proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
@@ -268,3 +266,8 @@ ni en el comentario de ningún archivo de código.
     `categoria`. Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
     2,05 M); ahí se usó `incluye` por el to-do 158. Arreglo candidato: si la nota suma exactamente el SUBTOTAL del grupo (aunque no sus
     renglones uno por uno), que reemplace el grupo entero (compuerta: el subtotal impreso).
+
+164. EL CANDADO DEL LOTE NO ALCANZA A PIPELINE.MJS NI A CARGAR.MJS --ESCRIBIR (2026-10-07, decisión de Guido: un cambio por vez). Los dos
+    escriben el registro (`Admin/transcripciones-estado.jsonl`) y, si corren durante un lote, lo pueden pisar. `lote.mjs` toma
+    `Admin/.lote.lock` desde la Versión 566 (ver su cabecera, "CANDADO"); el arreglo es que estas dos tools tomen el mismo candado (sacar la
+    lógica a un módulo chico y reusarla). Cuidado: sin manejador de SIGINT (rompe Ctrl+C en el código sincrónico, ver la cabecera).

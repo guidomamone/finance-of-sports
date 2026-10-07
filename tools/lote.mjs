@@ -76,6 +76,32 @@ const verifDe = (e, { detalle = DETALLE } = {}) => {
   return { ...v, reintentar: r.length ? r : null, detalle: opcional.length ? opcional : null };
 };
 if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
+// CANDADO: UN SOLO LOTE A LA VEZ (to-do 162, ok de Guido). Dos lote.mjs escriben a la vez el registro (Admin/transcripciones-estado.jsonl,
+// que se reescribe entero, también en el ensayo), la lista temporal (Admin/.lote-lista-actual.txt, que las etapas 5 a 8 leen por nombre: el
+// primero terminaría categorizando la lista del segundo) y la cola. Caso: el lote 20 se lanzó dos veces seguidas (2026-10-07). Vale para el
+// ensayo también. El candado se crea atómico ('wx': si existe, falla) con PID, lista, modo y hora; si ya existe y su proceso sigue vivo y es
+// un lote.mjs (`ps`: el PID puede haberse reusado), este sale sin tocar nada; si está muerto (lote 14: se reinició la terminal), se avisa y
+// se reemplaza. Al terminar (fin normal, error o process.exit) se borra, solo si sigue siendo el de este proceso. Un Ctrl+C o el cierre de la
+// terminal NO lo borran, a propósito: un manejador de SIGINT haría que Ctrl+C dejara de cortar el lote en las etapas sincrónicas (spawnSync
+// de las etapas 5 a 8: moría la tool hija y el lote seguía con la siguiente; medido al armar el candado). El candado que queda es el de un
+// lote muerto, y la corrida siguiente lo reemplaza con el aviso de que ese lote se cortó.
+// pipeline.mjs y cargar.mjs --escribir también escriben el registro y NO toman el candado (decisión de Guido: un cambio por vez; TODO).
+const LOCK = resolve(ROOT, 'Admin', '.lote.lock');
+const hora = (iso) => (iso ? new Date(iso).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', hour12: false }) : '?');
+const loteVivo = (pid) => {
+  try { process.kill(pid, 0); } catch (err) { if (err.code !== 'EPERM') return false; }
+  return /lote\.mjs/.test(spawnSync('ps', ['-p', String(pid), '-o', 'command='], { encoding: 'utf8' }).stdout || '');
+};
+const miCandado = { pid: process.pid, lista: LISTA, modo: EJECUTAR ? '--ejecutar' : 'ensayo', inicio: new Date().toISOString() };
+for (let intento = 0; ; intento++) {
+  try { writeFileSync(LOCK, JSON.stringify(miCandado) + '\n', { flag: 'wx' }); break; } catch (err) { if (err.code !== 'EEXIST' || intento > 0) throw err; }
+  let otro = {}; try { otro = JSON.parse(readFileSync(LOCK, 'utf8')); } catch { /* candado ilegible: se trata como muerto */ }
+  const desc = `PID ${otro.pid ?? '?'}, ${otro.lista ?? '?'}, ${otro.modo ?? '?'}, desde las ${hora(otro.inicio)}`;
+  if (otro.pid && loteVivo(otro.pid)) { console.error(`Ya hay un lote corriendo (${desc}). Esperá a que termine; este no hizo nada.`); process.exit(1); }
+  console.log(`Quedó el candado de un lote que se cortó (${desc}): lo reemplazo. Ese lote no terminó; lo que dejó a medias se completa al correr su lista de nuevo.`);
+  try { unlinkSync(LOCK); } catch { /* ya no está */ }
+}
+process.on('exit', () => { try { if (JSON.parse(readFileSync(LOCK, 'utf8')).pid === process.pid) unlinkSync(LOCK); } catch { /* sin candado */ } });
 // TESTIGOS (Versión 334, ok de Guido): una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
 // anterior" contra el año actual del otro: chequeo de año vecino de verificar.mjs). Pasa por localizar, validar y extraer, y nada más: no se
 // verifica, no se categoriza ni se propone cargar (UC 2022 en el lote 03: ya cargado, llenaba la terminal con 7 frenos esperables).
