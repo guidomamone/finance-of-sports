@@ -23,4 +23,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'atalanta-it': { 2021: 'it-seriea' },
   // Bologna (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Bologna".
   'bologna-it': { 2019: 'it-seriea' },
+  // Como (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Como".
+  'como-it': { 2025: 'it-seriea' },
 });

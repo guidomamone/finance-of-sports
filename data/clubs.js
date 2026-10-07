@@ -411,6 +411,9 @@ const clubs = {
   // Bologna: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf.
   // brandColor y su procedencia: fuentes/Italia/Bologna.md.
   'bologna-it': { id:'bologna-it', name:'Bologna F.C. 1909 S.p.A.', displayName:'Bologna', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#9F1F33' },
+  // Como: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Como.md.
+  'como-it': { id:'como-it', name:'Como 1907 S.r.l.', displayName:'Como', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#10416A' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
