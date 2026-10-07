@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
+ "generado": "2026-10-07T22:15:44.549Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-06: individual (Como 1907 S.p.A.); el pro-forma di consolidamento es una planilla del grupo, no se carga)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "como-it",
+ "year": 2024,
+ "cortadoEn": "filas"
+}
