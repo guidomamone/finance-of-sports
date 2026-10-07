@@ -128,3 +128,16 @@ ni en el comentario de ningún archivo de código.
     pro-forma?" respondida "no" (Guido quiere la columna Como 1907): verificar.mjs la guarda como nota y la carga seguía con la columna del
     grupo; se resolvió con un ajuste de perímetro y `lote.mjs --rehacer` (lote 16). Si se repite: que un "no" a una duda de columna
     dispare el re-extraer con la columna correcta, o que la pregunta no se haga cuando el perímetro ya está fijado.
+
+155. ITALIA: "17) INTERESSI E ALTRI ONERI FINANZIARI" SE SUMA COMO INGRESO (medido 2026-10-07, lote 14). El formato del Codice Civile
+    imprime los costos en positivo y los resta por posición ("TOTALE (C) (15+16-17)"); la etapa 6 toma el 17) con su signo impreso y lo
+    suma. Torino 2018, 2021 y 2024 cierran al centavo restándolo (2024: 19,683 + 0,439 − 3,227 − 6,496 de impuestos = 10,398, el impreso);
+    Udinese 2021-22 y 2024-25 cierran restándolo y con el signo de los impuestos también al revés. Arreglo candidato: escalón con el total
+    impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, el contrario.
+
+156. ITALIA: EL SUBTOTAL IMPRESO DESPUÉS DE SUS RENGLONES SE CUENTA DOS VECES (medido 2026-10-07, lote 14). "Totale costi per il
+    personale (9)", "Totale ammortamenti e svalutazioni (10)", "Totale oneri diversi di gestione (14)" vienen DESPUÉS de sus a)-e) y sin
+    `detalla_a`: los gastos dan el doble. Napoli 2025: 631,3 M contra 315,5 M impresos ("TOTALE COSTI DELLA PRODUZIONE B)"); el mismo
+    síntoma (gastos ≈ 2×) en Napoli 2024, Cremonese 2025, Parma 2023 y Roma 2018. Torino no lo sufre porque su subtotal va ANTES de los
+    renglones. Arreglo candidato: un subtotal "Totale ... (N)" cuyo valor es la suma de los renglones anteriores los detalla (compuerta:
+    el total B impreso).
