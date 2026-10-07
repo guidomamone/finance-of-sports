@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
- "generado": "2026-10-07T01:58:27.327Z",
+ "generado": "2026-10-07T02:00:05.725Z",
  "estado": "ok",
  "clubId": "udinese-it",
  "year": 2022,
@@ -60,6 +60,17 @@
    "lado": "impuesto",
    "reemplaza": "imposte differite e anticipate",
    "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "motivo": "Claude 2026-10-07: la TV (Proventi da cessioni diritti audiovisivi 36.160.511, nota L2442) está dentro del renglón 'altri' 70.918.956 del estado (L857); no se separa porque --reemplaza 'altri' también tocaría el 16) y el 17) (ver to-do 157)",
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-07"

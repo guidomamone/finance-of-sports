@@ -46,5 +46,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Torino (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Torino".
   'torino-it': { 2024: 'it-seriea', 2018: 'it-seriea', 2021: 'it-seriea' }, // 2018: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2021: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Udinese (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Udinese".
-  'udinese-it': { 2025: 'it-seriea' },
+  'udinese-it': { 2025: 'it-seriea', 2022: 'it-seriea' }, // 2022: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e
 });

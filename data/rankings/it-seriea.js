@@ -7,7 +7,7 @@
 //   2025: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -86,6 +86,10 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:213.852, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2022-consolidato",
         mix:[["Comercial / Sponsors",40.06],["Estadio",41.505],["Televisión",81.558],["Venta de Jugadores",15.253],["Otros ingresos",35.475]] },
+      { id:"udinese-it", revenue:81.105, reportType:"official_balance_sheet",
+        sourceId:"udinese-it-bilancio-2021-22",
+        mix:[["Estadio",5.313],["Otros ingresos",75.792]],
+        incluidos:[["Televisión","Otros ingresos"]] },
       { id:"monza-it", revenue:34.903, reportType:"official_balance_sheet",
         sourceId:"monza-it-bilancio-2022",
         mix:[["Comercial / Sponsors",11.158],["Estadio",2.926],["Televisión",18.355],["Venta de Jugadores",0.412],["Otros ingresos",2.053]] },
