@@ -64,7 +64,7 @@ Mitigaciones:
             (Versión 443) por página: una página con la misma huella que en la última validación "listo" se reusa, no se paga otra vez
             (Versión 463) "sin verificar" (el .md cambió): primero la validación gratis del inventario; si queda "revisar", el resolver
  ESCALÓN 1b (Versión 395, camino de error) PDF digital, la etapa 4 dice que el .md no coincide con el texto propio y la verificación no
-            quedó ok → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
+            quedó ok ni cierran todos sus chequeos de números (to-do 162: dudas de la IA en la cola no alcanzan para rearmar) → texto-propio-a-md.mjs rearma esas páginas (gratis) y se vuelve a localizar ── compuerta: etapas 4 y 6
             rearmado, con su escalera (Versión 397): método "columnas" ─► si la etapa 6 sigue sin cerrar, método "regiones" (una vez cada uno)
             COMPUERTA por página (Versión 411): la rearmada tiene que conservar al menos la mitad de las filas de tabla; si no, queda
             la anterior (Novorizontino 2025: estado de resultados girado 90°)

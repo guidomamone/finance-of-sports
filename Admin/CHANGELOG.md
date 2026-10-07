@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 570 — Un lote cortado ya no rearma páginas que estaban bien (2026-10-07)
+
+- `lote.mjs` (paso A): un documento con la etapa 4 y sin la 6 (lote cortado) pasa primero por la etapa 6, gratis, también en el ensayo.
+- `texto-propio-a-md.mjs` (paso B): el rearmado con el texto propio no corre si los chequeos de números de la etapa 6 cierran todos, aunque
+  el estado sea "cola" por dudas de la IA. Caso: AC Milan 2022-23, pág. 84 ("42 | 2.456" bien en el .md, partido en el texto propio).
+- Medido: ensayo de prueba-completa idéntico; de 122 documentos con validación solo cambia Milan (deja de rearmarse, US$ 0,33 menos);
+  con un chequeo de año vecino que falla (simulado, tipo Goiás 2015) se sigue rearmando. TODO 162 resuelto.
+
 ## Versión 569 — Bologna 2019-20, 2020-21 y 2021-22 cargados (2026-10-07)
 
 - Cargados con ajustes manuales: el 17) por línea (`--reemplaza-linea`) y la D de 2019-20; los ingresos abiertos con la nota "Altri

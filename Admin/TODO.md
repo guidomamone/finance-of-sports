@@ -219,16 +219,6 @@ ni en el comentario de ningún archivo de código.
       commiteó aparte).
     - Ya arreglado en la Versión 562: el alta no leía el ajuste de perímetro.
 
-162. UN LOTE CORTADO A MITAD DEJA DOCUMENTOS VALIDADOS SIN VERIFICAR (2026-10-07). Lote 14: la terminal se reinició y quedaron
-    `.validacion.json` sin `.verificacion.json`, lo que dispara el rearmado del to-do 150 en la corrida siguiente. Desde la Versión 566 el lote
-    lo detecta (avisa "quedó el candado de un lote que se cortó"), pero no hace nada distinto. Arreglo: al arrancar, si hay documentos de la
-    lista con validación y sin verificación, verificarlos primero (gratis) antes de decidir reintentos.
-    POR QUÉ IMPORTA (medido 2026-10-07, ex to-do 150): `paginasARearmar()` (`tools/texto-propio-a-md.mjs` ~L235-275) usa los "no confirmados"
-    de la etapa 4 para rearmar la página CON el texto propio cuando no hay `.verificacion.json` ok; si el texto propio es el que está mal, el
-    rearmado EMPEORA la página. En los lotes 14 y 19, de 193 números sin confirmar, los 193 están en páginas que la etapa 2 ya había validado
-    y 192 en documentos donde la etapa 6 cerró: casi todos falsos. Caso en riesgo hoy: AC Milan 2022-23 (sin `.verificacion.json` por el
-    corte del lote 14; 1 "no confirmado", el 2.456 de la pág. 84 del visor, impreso 84, .md L2527, celda partida en el texto propio).
-
 163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
     proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
     difieren en 0,097 M en cómo reparten a) y f), `cerrarNota` no cierra y a) se carga entero como other_income → "Televisión en 0" y el

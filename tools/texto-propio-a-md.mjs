@@ -261,6 +261,15 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   const vf = resolve(ROOT, derivado(mdRel, '.verificacion.json', { crear: false }));
   // (el estado final, no solo el resultado: Goiás 2015 "cerraba" con ingresos de 0,00007 millones leídos mal y el año vecino lo frenaba)
   if (existsSync(vf) && JSON.parse(readFileSync(vf, 'utf8')).estado === 'ok') return null;
+  // (to-do 162, ok de Guido) TAMPOCO si los chequeos de NÚMEROS de la etapa 6 cierran todos (el resultado del ejercicio cierra y ningún
+  // chequeo da mal: totales, año vecino, año anterior cargado) aunque el estado sea "cola" por dudas de la IA que no son de números. Caso:
+  // AC Milan 2022-23, sumas cerradas y 2 dudas en la cola (un "Totale" de una nota, la escala en miles); el rearmado de la pág. 84 rompía
+  // "42 | 2.456", bien en el .md y partido en el texto propio. Goiás 2015 (la razón de mirar el estado y no solo el resultado) se sigue
+  // rearmando: su chequeo de año vecino da mal.
+  if (existsSync(vf)) {
+    const ch = JSON.parse(readFileSync(vf, 'utf8')).chequeos || [];
+    if (ch.some((c) => /^resultado/.test(c.nombre) && c.ok === true) && !ch.some((c) => c.ok === false)) return null;
+  }
   const o = JSON.parse(readFileSync(v, 'utf8')); const m = String(o.motivoModo || '');
   // SOLO LOS BLOQUES ELEGIDOS HOY (Versión 458, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): los números sin confirmar cuentan si su
   // bloque sigue elegido en el .ubicacion.json vigente (estado + notas de ingresos + notas de gastos). Caso: Juventus 2021-22, la validación del
