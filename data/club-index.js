@@ -28,6 +28,7 @@ window.CLUB_INDEX = {
   "arsenal-gb": {"n":"Arsenal","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "asroma-it": {"n":"AS Roma","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "astonvilla-gb": {"n":"Aston Villa","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "atalanta-it": {"n":"Atalanta","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "athleticclub": {"n":"Athletic Club","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "athleticoparanaense-br": {"n":"Athletico Paranaense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "atleticogoianiense": {"n":"Atlético Goianiense","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
