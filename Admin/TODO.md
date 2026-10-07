@@ -157,40 +157,15 @@ ni en el comentario de ningún archivo de código.
       y lo cargado iguales (Torino 2024 −2,788248; Napoli 2024 +7,442873; Udinese 2021-22 −5,544096); los 57 de Italia: los que cierran sin
       ajuste no cambian, salvo Cremonese 2025, Bologna 2018-19 y Hellas Verona 2020, que tienen que pasar al signo correcto.
 
-156. ITALIA: LOS GASTOS SALEN CASI EL DOBLE (medido 2026-10-07, lote 14; causa encontrada por un subagente). La "variazione delle
-    rimanenze" es negativa (reduce costos) y entra a gastos en valor absoluto: la suma de renglones deja de coincidir con "TOTALE COSTI
-    DELLA PRODUZIONE" por 2 x |variación|, más que la tolerancia de `cerca()` (0,05%), y `lineasDeLado.esSumaDe` no reconoce el total y
-    lo cuenta como una línea más (después `ajuste()` lo acepta por la regla "total + líneas fuera de ese total", pensada para Nottingham
-    Forest). Casos: Napoli 2024 (L255) y 2025 (L289), Cremonese 2025 (L179), Parma 2023 (L575), Roma 2018 (L1912, con costos entre
-    paréntesis). Agravantes: Napoli 2024, `cerrarNota` deja las hojas de la nota de la variación normalizadas a positivo; Parma 2023, el
-    renglón "altri" se cuenta además de su subtotal abierto por la nota b46. Se resolvieron con ajustes manuales (Admin/ajustes-manuales.jsonl,
-    2026-10-07). Arreglo candidato: (1) `esSumaDe` compara también la suma CON signo; (2) las hojas de `cerrarNota` vuelven a tomar el signo
-    impreso del renglón; (3) `ajuste()` nunca acepta el propio total entre las líneas sumadas.
-    LO QUE SE APRENDIÓ AL ARREGLARLO A MANO (para no redescubrirlo):
-    - Los gastos se toman en VALOR ABSOLUTO: un ajuste `fila` del lado gasto con valor negativo NO resta (Roma 2018: probado con "82",
-      "(82)", "164" y "(164)", todos suman). Para una partida que reduce costos, el arreglo que funciona es mudarla al lado ingreso con el
-      mismo valor (mismo efecto en el resultado): "Variazione delle rimanenze (reduce costos)", lado ingreso, 82.
-    - Un total que se cuenta como línea se saca con `fila --valor "0" --reemplaza "<etiqueta del total>"` (Roma 2018, "Totale Costi di
-      esercizio"); un renglón contado dos veces, igual (Parma 2023, "altri" de L557).
-    - Roma 2018 tiene formato propio (conto economico "riclassificato" IFRS): "Totale Ricavi/Costi di esercizio" NO incluyen la "Gestione
-      operativa netta calciatori" (+45.922, L1918, se cargó como ingreso) ni Ammortamenti (59.220) y Accantonamenti (546), impresos debajo
-      del total; el resultado impreso es el del Gruppo (−25.498) y el consolidado incluye terzi (225, L1927, se cargó del lado
-      financiero para no inflar ingresos). Los chequeos de total de ingresos/gastos no pueden cerrar ahí: se aceptaron en la cola.
-    - Napoli 2024 cierra solo con los 2 ajustes de financiero (sin abrir notas); el subagente propuso un truco para que cierre en la
-      "lectura 4" con las notas abiertas (`signoNormalDe('gasto')` invierte si la mayoría de los ajustes de gasto son negativos) y NO se usó.
-    - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
-      mismo. Y la prueba completa idéntica.
-
-    INVESTIGADO (2026-10-07, subagente, medido en una copia sobre las 122 verificaciones con cada variante): el diagnóstico de arriba es
-    parcial. Los ajustes de Napoli 2024/2025, Cremonese 2025 y Parma 2023 NO tocan la variación (son del financiero, to-do 155, y en Parma
-    "altri" L557): con ellos cierran en la lectura 4 o 5 con los gastos bien. El doble conteo solo existe en las lecturas 0-3 (valor absoluto),
-    y se veía porque cuando nada cierra se muestra la lectura 0. Solo Roma 2018 tiene ajustes de variación/total. Código (verificar.mjs):
-    L312 abs de los renglones; L321 esSumaDe compara la suma con signo solo desde la lectura 3/4; L593-596 ajuste() da un falso ok (la "línea
-    fuera del total" es el propio total); cerrarNota firma las hojas con el signo de la suma (L147: Napoli 2024, nota b72); el rescate de la
-    Versión 409 (L338-356) mira todos los renglones de arriba (Parma: "altri" contado dos veces). Variantes medidas: F1 (esSumaDe firmado) no
-    cierra nada y mueve Lazio 2014-15; F3 (sacar el total de las líneas) cambia 0. ESCALONES RECOMENDADOS (sin tocar las lecturas 0-3):
-    A) cerrarNota conserva el signo impreso de las hojas si el renglón es de signo anómalo (compuerta: total de gastos en la lectura 4; solo
-    cambia Napoli 2024); C) un subtotal igual al renglón INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos; solo
-    cambia Parma 2023, anular su ajuste "altri" L557). F3 como higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian
-    solo Napoli 2024 (lectura 5 → 4) y Parma 2023. El escalón B ya entró como troubleshoot (Versión 581): corre solo si ninguna lectura
-    cerró el resultado.
+156. ITALIA: VARIACIÓN DE EXISTENCIAS Y SUBTOTALES REPETIDOS. CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). El doble conteo
+    de la "variazione delle rimanenze" solo existe en las lecturas 0-3 (valor absoluto); los documentos cierran bien en la 4 o la 5. El
+    escalón B ya entró (Versión 581). Quedan dos escalones medidos por un subagente que NO corrigen ningún dato cargado:
+    - A) `cerrarNota` firma las hojas con el signo de la SUMA (verificar.mjs ~L147): Napoli 2024, nota b72 (pág. 52, .md L2097-2107,
+      795.012 − 3.704.825 + 2.816.272 − 5.917 = −99.458) queda +99.458, la lectura 4 falla por 198.916 y gana la 5 (cargado bien, 29 líneas,
+      ninguna de nota). Como troubleshoot: si la 4 no cierra, repetirla con las hojas con el signo impreso del renglón; misma compuerta.
+      Ganancia: solo detalle de Napoli 2024.
+    - C) un subtotal igual al renglón INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos): solo Parma 2023, que hoy
+      cierra con un ajuste ("altri" L557).
+    CUÁNDO HACERLO: si aparece un documento que con esto queda mal o frenado. Para arreglarlo a mano: un gasto con valor negativo NO resta
+    (los gastos van en valor absoluto); una partida que reduce costos se muda al lado ingreso con el mismo valor (Roma 2018, "Variazione
+    delle rimanenze (reduce costos)", 82); un total contado como línea se saca con `fila --valor "0" --reemplaza "<etiqueta>"`.
