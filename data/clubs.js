@@ -435,6 +435,9 @@ const clubs = {
   // Parma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf.
   // brandColor y su procedencia: fuentes/Italia/Parma.md.
   'parma-it': { id:'parma-it', name:'Parma Calcio 1913 S.r.l.', displayName:'Parma', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // Sampdoria: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Sampdoria.md.
+  'sampdoria-it': { id:'sampdoria-it', name:'U.C. Sampdoria S.p.A.', displayName:'Sampdoria', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#002160' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

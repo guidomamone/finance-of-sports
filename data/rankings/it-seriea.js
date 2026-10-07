@@ -71,7 +71,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2021: {
     leagueSize: null,
-    sinDato: ["atalanta-it"],
+    sinDato: ["atalanta-it","sampdoria-it"],
     clubs: [
       { id:"juventus-it", revenue:569.226, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2020-21",
