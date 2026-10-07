@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
   "club": "napoli-it",
   "year": 2024,
-  "generatedAt": "2026-10-07T02:00:45.852Z",
+  "generatedAt": "2026-10-07T02:04:24.056Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         15.811801
       ],
-      "glosa": "a) Ingresos por partidos como local"
+      "glosa": "a) Ingresos por partidos en casa"
     },
     {
       "label": "c) abbonamenti",
@@ -54,7 +54,7 @@
       "values": [
         0.005
       ],
-      "glosa": "c) Ingresos publicitarios"
+      "glosa": "c) Ingresos por publicidad"
     },
     {
       "label": "d) proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         70.758785
       ],
-      "glosa": "h) Plusvalías por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "h) Plusvalías por cesión de derechos plurianuales de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -114,7 +114,7 @@
       "values": [
         0.867745
       ],
-      "glosa": "i) Otros ingresos derivados de la gestión de futbolistas"
+      "glosa": "i) Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "j) ricavi e proventi diversi",
@@ -184,7 +184,7 @@
       "values": [
         0.672057
       ],
-      "glosa": "c) Indemnización por cese de relación laboral"
+      "glosa": "c) Indemnización por fin de contrato de trabajo"
     },
     {
       "label": "e) altri costi",
@@ -224,7 +224,7 @@
       "values": [
         0.370124
       ],
-      "glosa": "d) Corrección valorativa de créditos del activo corriente"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente"
     },
     {
       "label": "Variaz delle riman. mat.prime, sussid., di consumo e merci",
@@ -254,7 +254,7 @@
       "values": [
         0.782273
       ],
-      "glosa": "b) Tasas de inscripción a competiciones"
+      "glosa": "b) Tasas de inscripción en competiciones"
     },
     {
       "label": "c) oneri specifici visquadre ospitate",
@@ -264,7 +264,7 @@
       "values": [
         0.079927
       ],
-      "glosa": "c) Gastos específicos de equipos visitantes"
+      "glosa": "c) Gastos específicos por equipos visitantes"
     },
     {
       "label": "d) costi per acquisizione temporanea calciatori",
@@ -274,7 +274,7 @@
       "values": [
         1.013818
       ],
-      "glosa": "d) Costes por adquisición temporal de futbolistas"
+      "glosa": "d) Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "f) altri oneri di gestione calciatori",

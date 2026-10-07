@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2024.md",
- "generado": "2026-10-07T02:03:12.438Z",
+ "generado": "2026-10-07T02:06:05.259Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2024,
@@ -34,6 +34,16 @@
    "lado": "financiero",
    "reemplaza": "b) perdite su cambi",
    "motivo": "perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
+   "campo": "confirmado",
+   "valor": "2023",
+   "linea": 276,
+   "motivo": "Claude 2026-10-07: es el año \"2023\" del encabezado de la columna, no un importe",
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-07"
