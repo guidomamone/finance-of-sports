@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md",
- "generado": "2026-10-07T21:35:19.107Z",
- "estado": "cola",
+ "generado": "2026-10-07T21:42:46.472Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2025,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "8ef7836",
-  "e1117bf",
-  "c16f402"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,9 +53,9 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en AS-Roma-bilancio-2025.pdf",
   "duda de extraer que no afecta la carga: Sus filas coinciden una a una (redondeadas a miles) con renglones ya cargados de b15, por ejemplo L2010-L2017 vs L817-L824.",
-  "duda de extraer que no afecta la carga: Coinciden con L839 y L840 del estado; solo se cargó el desglose de amortización inmaterial (L2192-L2194).",
-  "5 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Coinciden con L839 y L840 del estado; solo se cargó el desglose de amortización inmaterial (L2192-L2194)."
  ],
  "reintentar": null,
  "reintentado": false,

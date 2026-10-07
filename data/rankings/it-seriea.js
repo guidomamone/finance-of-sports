@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
-//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -45,6 +45,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"napoli-it", revenue:340.905, reportType:"official_balance_sheet",
         sourceId:"napoli-it-bilancio-2025",
         mix:[["Comercial / Sponsors",80.39],["Estadio",28.28],["Televisión",94.188],["Venta de Jugadores",129.353],["Otros ingresos",8.695]] },
+      { id:"asroma-it", revenue:316.738, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2025",
+        mix:[["Comercial / Sponsors",84.003],["Estadio",52.117],["Televisión",105.923],["Venta de Jugadores",57.048],["Otros ingresos",17.647]] },
       { id:"udinese-it", revenue:166.075, reportType:"official_balance_sheet",
         sourceId:"udinese-it-bilancio-2024-25",
         mix:[["Comercial / Sponsors",12.467],["Estadio",11.017],["Televisión",43.314],["Venta de Jugadores",88.163],["Otros ingresos",11.115]] },

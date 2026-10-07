@@ -18,7 +18,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // AC Milan (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "AC Milan".
   'acmilan-it': { 2024: 'it-seriea' },
   // AS Roma (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Roma" = "AS Roma".
-  'asroma-it': { 2022: 'it-seriea', 2018: 'it-seriea' }, // 2018: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia ú
+  'asroma-it': { 2022: 'it-seriea', 2018: 'it-seriea', 2025: 'it-seriea' }, // 2018: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2017–18 Serie A" (tools/club-league-reference/it.json), coincidencia ú // 2025: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia ú
   // Atalanta (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Atalanta".
   'atalanta-it': { 2021: 'it-seriea', 2024: 'it-seriea' }, // 2024: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Bologna (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Bologna".

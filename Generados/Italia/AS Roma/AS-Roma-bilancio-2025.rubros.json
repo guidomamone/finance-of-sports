@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.pdf",
   "club": "asroma-it",
   "year": 2025,
-  "generatedAt": "2026-10-07T21:35:19.108Z",
+  "generatedAt": "2026-10-07T21:42:46.472Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         28.031802
       ],
-      "glosa": "a) Ingresos por taquilla y partidos"
+      "glosa": "a) Ingresos por partidos"
     },
     {
       "label": "b) abbonamenti",
@@ -34,7 +34,7 @@
       "values": [
         21.137526
       ],
-      "glosa": "a) Ingresos por patrocinios"
+      "glosa": "a) Ingresos por patrocinio"
     },
     {
       "label": "b) proventi pubblicitari",
@@ -84,7 +84,7 @@
       "values": [
         29.888552
       ],
-      "glosa": "f) Plusvalías por enajenación de derechos plurianuales de futbolistas"
+      "glosa": "f) Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "g) altri proventi da trasferimento diritti calciatori",
@@ -114,7 +114,7 @@
       "values": [
         1.75
       ],
-      "glosa": "Ropa deportiva y uniformes oficiales"
+      "glosa": "Ropa deportiva y equipaciones oficiales"
     },
     {
       "label": "Materiali di consumo",
@@ -134,7 +134,7 @@
       "values": [
         10.179
       ],
-      "glosa": "Bienes y productos para la venta"
+      "glosa": "Mercaderías y productos para comercialización"
     },
     {
       "label": "Costi per tesserati",
@@ -184,7 +184,7 @@
       "values": [
         8.423
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Gastos de seguros"
     },
     {
       "label": "Spese amministrative e generali",
@@ -194,7 +194,7 @@
       "values": [
         22.871
       ],
-      "glosa": "Gastos generales y de administración"
+      "glosa": "Gastos de administración y generales"
     },
     {
       "label": "Spese di pubblicità e promozione",
@@ -254,7 +254,7 @@
       "values": [
         112.903
       ],
-      "glosa": "Futbolistas masculinos y femeninos"
+      "glosa": "Futbolistas (masculino y femenino)"
     },
     {
       "label": "Staff Tecnico",
@@ -294,7 +294,7 @@
       "values": [
         0.914402
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato / cese"
+      "glosa": "c) Indemnización por fin de contrato laboral"
     },
     {
       "label": "e) altri costi",
@@ -354,7 +354,7 @@
       "values": [
         0.829513
       ],
-      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Deterioro de valor de créditos del activo corriente y de tesorería"
     },
     {
       "label": "11) variazioni delle rimanenze di prodotti finiti",
@@ -374,7 +374,7 @@
       "values": [
         7.008318
       ],
-      "glosa": "12) Dotaciones a provisiones para riesgos y gastos"
+      "glosa": "12) Dotaciones a provisiones para riesgos"
     },
     {
       "label": "b) costi per acquisizione temporanea prestazioni calciatori",
@@ -394,7 +394,7 @@
       "values": [
         3.259849
       ],
-      "glosa": "c) Pérdidas por enajenación de derechos plurianuales de futbolistas"
+      "glosa": "c) Pérdidas por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "d) altri oneri da trasferimento diritti calciatori",
@@ -424,7 +424,7 @@
       "values": [
         0.329
       ],
-      "glosa": "Entradas para partidos como visitante"
+      "glosa": "Entradas para partidos de visitante"
     },
     {
       "label": "Oneri lega",
@@ -454,7 +454,7 @@
       "values": [
         0.797
       ],
-      "glosa": "Gastos excepcionales / pérdidas extraordinarias"
+      "glosa": "Gastos extraordinarios"
     },
     {
       "label": "Altri costi",

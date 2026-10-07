@@ -71,6 +71,20 @@ const asromaitRevenueLinesByYear = {
     { rawLabel:'Gestione operativa netta calciatori', normalizedCategory:'player_sales', amountNative:45.922, disclosureLevel:'aggregated' }, // pág. 62, Claude 0.8
     { rawLabel:'Variazione delle rimanenze (reduce costos)', normalizedCategory:'other_income', amountNative:0.082, disclosureLevel:'aggregated' }, // pág. 62, Jev 0.99
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:28.031802, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:16.434645, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'a) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:21.137526, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'b) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:24.912436, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'c) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:25.621428, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'d) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:90.373519, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'e) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:5.663, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.98
+    { rawLabel:'f) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:29.888552, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.99
+    { rawLabel:'g) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:13.121622, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.99
+    { rawLabel:'h) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:15.056475, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+  ],
 };
 const asromaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -127,6 +141,44 @@ const asromaitExpenseLinesByYear = {
     { rawLabel:'Svalutazione dei crediti correnti', normalizedCategory:'other_expenses', amountNative:-1.41, disclosureLevel:'aggregated' }, // pág. 121, Jev 1
     { rawLabel:'Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.546, disclosureLevel:'aggregated' }, // pág. 62, Jev 0.98
   ],
+  2025: [ // tools/cargar.mjs (2026-10-07)
+    { rawLabel:'Indumenti sportivi e divise ufficiale', normalizedCategory:'admin_general_expense', amountNative:-1.75, disclosureLevel:'aggregated' }, // pág. 50, Claude 0.88
+    { rawLabel:'Materiali di consumo', normalizedCategory:'admin_general_expense', amountNative:-0.984, disclosureLevel:'aggregated' }, // pág. 50, Jev 0.98
+    { rawLabel:'Beni e prodotti da commercializzare', normalizedCategory:'other_expenses', amountNative:-10.179, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-0.252, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-7.192, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-6.758, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi di vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-3.329, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Spese assicurative', normalizedCategory:'admin_general_expense', amountNative:-8.423, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Spese amministrative e generali', normalizedCategory:'admin_general_expense', amountNative:-22.871, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Spese di pubblicità e promozione', normalizedCategory:'admin_general_expense', amountNative:-5.196, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Centro sportivo di Trigoria', normalizedCategory:'match_organisation_expense', amountNative:-2.7, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Stadio Olimpico', normalizedCategory:'match_organisation_expense', amountNative:-4.026, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Altre sedi', normalizedCategory:'admin_general_expense', amountNative:-3.018, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Beni', normalizedCategory:'admin_general_expense', amountNative:-4.051, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Calciatori e calciatrici', normalizedCategory:'wages_squad', amountNative:-112.903, disclosureLevel:'aggregated' }, // pág. 51, Jev 0.99
+    { rawLabel:'Staff Tecnico', normalizedCategory:'wages_squad', amountNative:-15.494, disclosureLevel:'aggregated' }, // pág. 51, Jev 0.98
+    { rawLabel:'Dipendenti e dirigenti', normalizedCategory:'admin_general_expense', amountNative:-12.64, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-9.77567, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.914402, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.95
+    { rawLabel:'e) altri costi', normalizedCategory:'other_expenses', amountNative:-1.006119, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'Ammortamento DPS Calciatori', normalizedCategory:'player_amortisation', amountNative:-45.5, disclosureLevel:'aggregated' }, // pág. 52, Jev 1
+    { rawLabel:'Ammortamento DPS Calciatrici', normalizedCategory:'player_amortisation', amountNative:-0.054, disclosureLevel:'aggregated' }, // pág. 52, Claude 0.85
+    { rawLabel:'Ammortamento altre immob. Immateriali', normalizedCategory:'other_amortisation', amountNative:-0.952, disclosureLevel:'aggregated' }, // pág. 52, Claude 0.8
+    { rawLabel:'b) ammortamenti immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-4.865562, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'d) svalutazioni dei crediti dell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.829513, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'11) variazioni delle rimanenze di prodotti finiti', normalizedCategory:'other_expenses', amountNative:1.548221, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-7.008318, disclosureLevel:'aggregated' }, // pág. 22, precedente
+    { rawLabel:'b) costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-0.93, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.99
+    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-3.259849, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.99
+    { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-6.233958, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.312, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Biglietti trasferte', normalizedCategory:'match_organisation_expense', amountNative:-0.329, disclosureLevel:'aggregated' }, // pág. 52, Jev 0.99
+    { rawLabel:'Oneri lega', normalizedCategory:'match_organisation_expense', amountNative:-0.905, disclosureLevel:'aggregated' }, // pág. 52, Jev 0.91
+    { rawLabel:'Multe', normalizedCategory:'other_expenses', amountNative:-0.331, disclosureLevel:'aggregated' }, // pág. 52, Jev 1
+    { rawLabel:'Sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.797, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-0.979, disclosureLevel:'aggregated' }, // pág. 52, Jev 0.99
+  ],
 };
 const asromaitFiscalYearMeta = {
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -163,6 +215,25 @@ const asromaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:296.87, officialTotalExpenses:289.796, officialPAT:-25.498,
   },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2025-06-30. Claude 2026-10-07: es el BILANCIO 2024-25 (cierre 30/06/2025); periodo.mjs lo leyó como 2024-06-30 (confianza media, el nombre no coincide) y extraer tomó la columna comparativa
+  2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'asroma-it-bilancio-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-13.937648, tax:-4.985606,
+    extraRows: [
+      {label:'16) altri proventi finanziari', value:4.359403},
+      {label:'e) altri interessi e oneri finanziari', value:-17.954026},
+      {label:'17 bis) utile e perdite su cambi', value:-0.343025},
+      {label:'a) imposte correnti', value:-11.367144},
+      {label:'c) imposte differite', value:-0.019536},
+      {label:'e) proventi (oneri) da adesione al regime di consolidato fiscale', value:6.401074},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:270.241005, officialTotalExpenses:301.143321, officialPAT:-53.884213,
+  },
 };
 const asromaitPresupuestoOverlayByYear = {};
 
@@ -192,6 +263,12 @@ Object.assign(sources, {
     title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'asroma-it-bilancio-2025': {
+    id:'asroma-it-bilancio-2025', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
