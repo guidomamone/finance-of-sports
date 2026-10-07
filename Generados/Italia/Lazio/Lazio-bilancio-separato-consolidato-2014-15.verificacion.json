@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.md",
- "generado": "2026-10-07T01:55:06.172Z",
- "estado": "cola",
+ "generado": "2026-10-07T21:21:04.643Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2015,
  "escala": {
@@ -33,8 +33,9 @@
    "etiqueta": "imposte differite (b)",
    "lado": "impuesto",
    "reemplaza": null,
-   "motivo": "columnas corridas: 933.312 es el total b)+c); b)=172.710, c)=760.602 (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
-   "evidencia": null,
+   "reemplazaLinea": 3464,
+   "motivo": "to-do 157: columnas corridas en el .md (L3463-3465); L3463 933.312 es el subtotal b)+c) con la etiqueta de b); L3464 172.710 es b). Reemplaza solo su propia fila (antes no reemplazaba y el impuesto entraba doble)",
+   "evidencia": ".md L3463-3465: 172.710 + 760.602 = 933.312",
    "autor": "Guido",
    "fecha": "2026-10-07"
   },
@@ -46,36 +47,34 @@
    "etiqueta": "imposte anticipate (c)",
    "lado": "impuesto",
    "reemplaza": null,
-   "motivo": "ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
-   "evidencia": null,
+   "reemplazaLinea": 3463,
+   "motivo": "to-do 157: L3465 760.602 es c); saca la fila de L3463 (933.312 = b)+c), el subtotal contado además de sus partes)",
+   "evidencia": ".md L3463-3465: 172.710 + 760.602 = 933.312",
    "autor": "Guido",
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "1541cd3",
-  "7ab9efe",
-  "adbb7d1",
-  "797f8d0",
-  "a5a7f4a",
-  "fca1c89",
-  "34514d3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "110.927488 = 110.927382"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": false,
-   "detalle": "las líneas suman 100.79218 y el total impreso dice 85.997236"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 110.927488 - gastos 100.79218 ± financiero -2.101739 ± impuesto -1.393095 no da el impreso 5.812193"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "año anterior cargado",
@@ -85,25 +84,29 @@
  ],
  "notas": [
   "ajuste manual: fila \"imposte correnti\" (impuesto) (3.432.429) (2026-10-07, el renglón salió con las columnas corridas y no se extrajo (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
-  "ajuste manual: fila \"imposte differite (b)\" (impuesto) 172.710 (2026-10-07, columnas corridas: 933.312 es el total b)+c); b)=172.710, c)=760.602 (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
-  "ajuste manual: fila \"imposte anticipate (c)\" (impuesto) 760.602 (2026-10-07, ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "ajuste manual: fila \"imposte differite (b)\" (impuesto) 172.710, en lugar de la fila de L3464 (2026-10-07, to-do 157: columnas corridas en el .md (L3463-3465); L3463 933.312 es el subtotal b)+c) con la etiqueta de b); L3464 172.710 es b). Reemplaza solo su propia fila (antes no reemplazaba y el impuesto entraba doble))",
+  "ajuste manual: fila \"imposte anticipate (c)\" (impuesto) 760.602, en lugar de la fila de L3463 (2026-10-07, to-do 157: L3465 760.602 es c); saca la fila de L3463 (933.312 = b)+c), el subtotal contado además de sus partes))",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: El cuadro de segmentos de pág. 116 parece repetir importes ya abiertos en notas 31.x consolidadas.",
+  "duda de extraer ya contestada para el club (columna, \"Oneri finanziari netti e differenze cambio\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Imposte correnti\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Imposte differite e anticipate\"): corregir no, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Proventi (Oneri) finanziari da partecipazioni\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer que no afecta la carga: Son aperturas 'di cui' ya incluidas en otras partidas; no se cargaron.",
-  "duda de extraer que no afecta la carga: L5052-L5056 no indican escala; 1.445 coincide con 1.444.895 euro.",
-  "4 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L5052-L5056 no indican escala; 1.445 coincide con 1.444.895 euro."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 110.927488,
-  "gastos": 100.79218,
+  "ingresos": 110.927383,
+  "gastos": 100.514336,
   "financiero": -2.101739,
-  "impuesto": -1.393095,
+  "impuesto": -2.499117,
   "resultadoImpreso": 5.812193,
   "resultadoParaCargar": 5.812193,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -112,7 +115,7 @@
    "M": 7.580604,
    "pagina": 94,
    "linea": 3363,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "percentuali su incassi gare da squadra ospitanti",
@@ -120,7 +123,7 @@
    "M": 0.198454,
    "pagina": 94,
    "linea": 3364,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "abbonamenti",
@@ -128,7 +131,7 @@
    "M": 1.909872,
    "pagina": 94,
    "linea": 3365,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) televisivi",
@@ -136,15 +139,7 @@
    "M": 46.798503,
    "pagina": 94,
    "linea": 3367,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "-) percentuale diritti televisivi da squadre ospitanti",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3368,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) televisivi da partecipazioni comp. U.E.F.A.",
@@ -152,7 +147,7 @@
    "M": 22.329997,
    "pagina": 94,
    "linea": 3369,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) da L.N.P.",
@@ -160,7 +155,7 @@
    "M": 15.173702,
    "pagina": 94,
    "linea": 3370,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Sponsorizzazioni",
@@ -168,7 +163,7 @@
    "M": 1.287238,
    "pagina": 94,
    "linea": 3372,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Proventi pubblicitari",
@@ -176,7 +171,7 @@
    "M": 5.398294,
    "pagina": 94,
    "linea": 3373,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Canoni per licenze, marchi, brevetti",
@@ -184,7 +179,7 @@
    "M": 2.124836,
    "pagina": 94,
    "linea": 3374,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Cessione temporanea calciatori",
@@ -192,15 +187,7 @@
    "M": 0.537133,
    "pagina": 94,
    "linea": 3376,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3377,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Altri proventi da gestione calciatori",
@@ -208,7 +195,7 @@
    "M": 0.013478,
    "pagina": 94,
    "linea": 3378,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) da transazioni con creditori (non ricorrenti)",
@@ -216,7 +203,7 @@
    "M": 0.450212,
    "pagina": 94,
    "linea": 3380,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) da altri",
@@ -224,15 +211,7 @@
    "M": 5.184386,
    "pagina": 94,
    "linea": 3381,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Contributi in c/esercizio",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3383,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Proventi vari",
@@ -240,7 +219,7 @@
    "M": 0.363633,
    "pagina": 94,
    "linea": 3384,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Variazione delle rimanenze",
@@ -248,23 +227,15 @@
    "M": 0.132146,
    "pagina": 94,
    "linea": 3385,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Materiale per vendita a terzi",
+   "etiqueta": "Ricavi da merchandising",
    "lado": "ingreso",
-   "M": 1.417,
-   "pagina": 138,
-   "linea": 5054,
-   "origen": "nota que desglosa \"Ricavi da merchandising\""
-  },
-  {
-   "etiqueta": "Altri",
-   "lado": "ingreso",
-   "M": 0.028,
-   "pagina": 138,
-   "linea": 5055,
-   "origen": "nota que desglosa \"Ricavi da merchandising\""
+   "M": 1.444895,
+   "pagina": 94,
+   "linea": 3386,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Materie prime,sussidiarie,di consumo e di merci",
@@ -272,7 +243,7 @@
    "M": 2.941465,
    "pagina": 94,
    "linea": 3390,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Salari e stipendi",
@@ -280,7 +251,7 @@
    "M": 57.910068,
    "pagina": 94,
    "linea": 3392,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Oneri sociali",
@@ -288,7 +259,7 @@
    "M": 2.72647,
    "pagina": 94,
    "linea": 3393,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Trattamento di fine rapporto",
@@ -296,7 +267,7 @@
    "M": 0.178884,
    "pagina": 94,
    "linea": 3394,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Altri costi",
@@ -304,7 +275,7 @@
    "M": 0.101613,
    "pagina": 94,
    "linea": 3395,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Costi per Acquisizione temporanea prestazioni calciatori",
@@ -312,15 +283,7 @@
    "M": 0.51,
    "pagina": 94,
    "linea": 3397,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Minusvalenze da cessione diritti alle prestazioni dei calciatori",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3398,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Altri oneri da gestione calciatori",
@@ -328,7 +291,7 @@
    "M": 0.055835,
    "pagina": 94,
    "linea": 3399,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Costi per tesserati",
@@ -336,15 +299,7 @@
    "M": 0.393209,
    "pagina": 94,
    "linea": 3401,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Costi per attività sportiva",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3402,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Costi specifici tecnici",
@@ -352,7 +307,7 @@
    "M": 2.571813,
    "pagina": 94,
    "linea": 3403,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Costi per vitto,alloggio e locomozione",
@@ -360,7 +315,7 @@
    "M": 1.144056,
    "pagina": 94,
    "linea": 3404,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Servizio biglietteria, controllo ingressi",
@@ -368,7 +323,7 @@
    "M": 0.932813,
    "pagina": 94,
    "linea": 3405,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese assicurative",
@@ -376,7 +331,7 @@
    "M": 0.157731,
    "pagina": 94,
    "linea": 3406,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese amministrative",
@@ -384,7 +339,7 @@
    "M": 5.444039,
    "pagina": 94,
    "linea": 3407,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese per pubblicità e promozione",
@@ -392,7 +347,7 @@
    "M": 4.511485,
    "pagina": 94,
    "linea": 3408,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese bancarie",
@@ -400,7 +355,7 @@
    "M": 0.118355,
    "pagina": 94,
    "linea": 3410,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Per godimento di beni di terzi",
@@ -408,7 +363,7 @@
    "M": 3.51552,
    "pagina": 94,
    "linea": 3411,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese varie organizzazione gare",
@@ -416,7 +371,7 @@
    "M": 0.437862,
    "pagina": 94,
    "linea": 3412,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Tassa iscrizioni gare",
@@ -424,7 +379,7 @@
    "M": 0.00222,
    "pagina": 94,
    "linea": 3413,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "-) percentuale su incassi gare a squadra ospite",
@@ -432,7 +387,7 @@
    "M": 0.237758,
    "pagina": 94,
    "linea": 3415,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Altri oneri di gestione",
@@ -440,7 +395,7 @@
    "M": 0.958658,
    "pagina": 94,
    "linea": 3416,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Sopravvenienze passive (non ricorrenti)",
@@ -448,15 +403,7 @@
    "M": 1.147384,
    "pagina": 94,
    "linea": 3417,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Minusvalenze da cessione immob. materiali",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3418,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Amm. delle immobilizzazioni immateriali",
@@ -464,7 +411,7 @@
    "M": 13.501742,
    "pagina": 94,
    "linea": 3422,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Amm. delle immobilizzazioni materiali",
@@ -472,7 +419,7 @@
    "M": 0.924133,
    "pagina": 94,
    "linea": 3423,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Svalutaz. Delle immobilizzazioni",
@@ -480,15 +427,7 @@
    "M": 0.093507,
    "pagina": 94,
    "linea": 3424,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Accantonamenti e altre svalutazioni",
-   "lado": "gasto",
-   "M": 0.002284,
-   "pagina": 94,
-   "linea": 3425,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
@@ -496,23 +435,15 @@
    "M": 0.135496,
    "pagina": 94,
    "linea": 3426,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Accantonamenti per rischi",
    "lado": "gasto",
-   "M": 0.13778,
+   "M": -0.13778,
    "pagina": 94,
    "linea": 3427,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Accantonamento altri fondi",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 94,
-   "linea": 3429,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -520,26 +451,6 @@
   "impuesto": 1
  },
  "financiero": [
-  {
-   "etiqueta": "Utile (Perdite) imprese controllate e collegate",
-   "M": 0,
-   "linea": 3442
-  },
-  {
-   "etiqueta": "Proventi (Oneri) finanziari da partecipazioni",
-   "M": 0,
-   "linea": 3444
-  },
-  {
-   "etiqueta": "Proventi (Oneri) finanziari da consolidamento",
-   "M": 0,
-   "linea": 3445
-  },
-  {
-   "etiqueta": "a) utili",
-   "M": 0,
-   "linea": 3448
-  },
   {
    "etiqueta": "b) perdite",
    "M": -0.000675,
@@ -549,11 +460,6 @@
    "etiqueta": "da terzi",
    "M": 0.005387,
    "linea": 3452
-  },
-  {
-   "etiqueta": "da compart. ex art. 102 NOIF",
-   "M": 0,
-   "linea": 3453
   },
   {
    "etiqueta": "da attualizzazione",
@@ -572,16 +478,6 @@
   }
  ],
  "impuesto": [
-  {
-   "etiqueta": "b) imposte differite",
-   "M": 0.933312,
-   "linea": 3463
-  },
-  {
-   "etiqueta": "c) imposte anticipate",
-   "M": 0.17271,
-   "linea": 3464
-  },
   {
    "etiqueta": "imposte correnti",
    "M": -3.432429,
