@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 563 — Alta de 16 clubes italianos sin años y gestiones de Italia (2026-10-07)
+
+- Alta, sin cargar ningún año (decisión de Guido, 2026-10-06): AC Milan, AS Roma, Atalanta, Bologna, Como, Cremonese, Hellas Verona, Inter,
+  Lazio, Monza, Napoli, Parma, Sampdoria, Sassuolo, Torino y Udinese, un commit por club, con `brandColor` (Parma `null`). Nombre legal
+  corregido a mano donde `alta-club.mjs` tomó otra entidad o una forma truncada (Hellas Verona, AS Roma, Sassuolo, Monza, etc.). ASSET_V 453.
+- `data/gestiones/it.js` nuevo ('it' en `PAISES`): gestiones de 14 clubes (Monza y Como quedan sin cargar, ver `Admin/TODO.md`); ASSET_V 454. Los 3 casos de gestión de la cola
+  (Atalanta 2021, Hellas Verona 2020, Sassuolo 2025) respondidos con aceptar.
+
 ## Versión 562 — El alta lee el ajuste de perímetro; el resultado del lote dice el club (2026-10-06)
 
 - `alta-club.mjs`: el ajuste `perimetro` (del documento o del club) es el escalón 0, como ya era en `cargar.mjs`. Con dos entidades en la

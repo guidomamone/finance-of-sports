@@ -105,3 +105,9 @@ ni en el comentario de ningún archivo de código.
     2.456. Parte fue efecto del corte del lote: `paginasARearmar()` (texto-propio-a-md.mjs L263) no rearma si la etapa 6 cerró, y la
     corrida cortada no llegó a la etapa 6. Medir con el lote 14 terminado (sus 34 documentos). Guido descartó por ahora encadenar el
     `--reintentar` al final del lote.
+
+151. GESTIONES DE ITALIA SIN DECIDIR: MONZA Y COMO (2026-10-07). Monza: desde el 8/7/2022 el club no tiene presidente (el último fue Paolo
+    Berlusconi, 29/3/2019-8/7/2022; lo controla Fininvest), así que sus cierres al 31/12 de 2022-2024 no tienen persona: ¿se descartan? Desde el
+    29/9/2025 la presidente es Lauren Crampsie (Beckett Layne Ventures). Como: el presidente que firma el bilancio 2024 es Mirwan Suwarso, pero las
+    fuentes se contradicen en desde cuándo lo es (noviembre de 2019 o octubre de 2024, money.it); falta la fecha para cargarlo. También quedó
+    dudoso Cremonese 2023: cierra el 30/6/2023, Rossi, pero Dini fue nombrado el 6/7/2023 y pudo firmar el balance (¿`firmo`?).
