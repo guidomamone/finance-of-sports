@@ -32,16 +32,22 @@
 // ============================================================================
 
 const sassuoloitRevenueLinesByYear = {
+  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
+  // Generados/Italia/Sassuolo/Sassuolo-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Sassuolo/Sassuolo-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
     { rawLabel:'Ricavi da gare in casa', normalizedCategory:'matchday_competition', amountNative:1.67, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.97
     { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:0.557, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.98
     { rawLabel:'Ricavi store', normalizedCategory:'sponsorship_commercial', amountNative:0.385, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.96
-    { rawLabel:'b) plusvalenze', normalizedCategory:'player_sales', amountNative:2.384681, disclosureLevel:'aggregated' }, // pág. 20, Claude 0.8
-    { rawLabel:'f) Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:15.410208, disclosureLevel:'aggregated' }, // pág. 20, Jev 0.98
-    { rawLabel:'a) Derivanti da attività accessorie (sin TV)', normalizedCategory:'other_income', amountNative:34.08654, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:19.305, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:7.096, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.291, disclosureLevel:'aggregated' }, // pág. 49, precedente
     { rawLabel:'Proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:16.205, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori', normalizedCategory:'player_sales', amountNative:2.385, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Proventi da cessioni temporanee calciatori', normalizedCategory:'player_sales', amountNative:1.627, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Proventi Lega non audiovisivi', normalizedCategory:'sponsorship_commercial', amountNative:15.507, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Proventi diversi', normalizedCategory:'other_income', amountNative:5.671, disclosureLevel:'aggregated' }, // pág. 49, precedente
   ],
 };
 const sassuoloitExpenseLinesByYear = {
@@ -79,7 +85,7 @@ const sassuoloitExpenseLinesByYear = {
 const sassuoloitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 34.086.540. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 16.205.000. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
-  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = broadcasting. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = broadcasting. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo,
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): categoria = other_income. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
   2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2025-12-31',
@@ -98,7 +104,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'d) Provento da Consolidato Fiscale', value:11.868018},
     ],
     grossDebt:null, cash:null,
-    officialTotalRevenue:70.698429, officialTotalExpenses:118.55949, officialPAT:-38.772733,
+    officialTotalRevenue:70.699, officialTotalExpenses:118.55949, officialPAT:-38.772733,
   },
 };
 const sassuoloitPresupuestoOverlayByYear = {};

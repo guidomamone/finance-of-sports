@@ -27,3 +27,5 @@ Ninguna. Serie completa y fácil de mantener actualizada (URLs predecibles:
 - **Color de marca**: `#1EA451` (verde) — neroverde a palos iguales (it.wikipedia, Unione_Sportiva_Sassuolo_Calcio); elegido el verde, que lo distingue; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf` (sourceId `sassuolo-it-bilancio-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf` (sourceId `sassuolo-it-bilancio-2025`).
