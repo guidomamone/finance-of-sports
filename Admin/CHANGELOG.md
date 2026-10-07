@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 580 — To-do 157: Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra; el escalón B del 156 no entra (2026-10-07)
+
+- Ajustes manuales (gratis): Lazio 2014-15, imposte b) y c) con `--reemplaza-linea` (columnas corridas, el subtotal 933.312 entraba
+  además de sus partes); Sampdoria 2021, i) 5.785.259 sale (es un di cui de h)) y cierre 2021-12-31 (30/03/2022 era la aprobación);
+  Inter 2024-25, el D) 18) +780.928 con `--reemplaza-linea` (la lectura 5 solo suma los ajustes del financiero que reemplazan).
+- Lote 23 (categorización, ~US$ 0,06). Cargados Lazio 2014-15 y Sampdoria 2021 (primer año del club; alta revisada por un subagente
+  Sonnet: nombre, tipo y cierre OK). Auditoría P0 0, P1 0. Perfil de Sampdoria: sin socios, solo fútbol (criterio de Italia);
+  "d) altri costi" del personal -> salarios del plantel (precedente de Atalanta 2021).
+- Medido y descartado: la lectura 5 con todos los ajustes del financiero (to-do 156 B) rompe Roma 2018 (HALLAZGOS).
+
 ## Versión 579 — La nota del subtotal: componentes abajo, señal estable, negrita y anular ajustes (2026-10-07)
 
 - `verificar.mjs`: el escalón de la nota del subtotal busca los componentes también ABAJO del subtotal (Sassuolo 2025) y la señal de

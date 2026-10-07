@@ -57,11 +57,11 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
 - Italia (onboarding en curso): 16 clubes nuevos dados de alta (Versión 563, algunos todavía sin años), con color de marca y gestiones.
-  Cargados 28 ejercicios de 15 clubes además de Juventus: Lazio 6, Torino 3, Bologna 3, AS Roma 2, Atalanta 2, Udinese 2, Napoli 2,
-  AC Milan, Inter, Como, Cremonese, Parma, Hellas Verona, Monza y Sassuolo. Muchos cierran con ajustes manuales del formato italiano
+  Cargados 30 ejercicios de 16 clubes además de Juventus: Lazio 7, Torino 3, Bologna 3, AS Roma 2, Atalanta 2, Udinese 2, Napoli 2,
+  AC Milan, Inter, Como, Cremonese, Parma, Hellas Verona, Monza, Sassuolo y Sampdoria. Muchos cierran con ajustes manuales del formato italiano
   (signo del 17) e imposte, variación de existencias, columna de Como): to-dos 155-157. Los ingresos de Bologna, Sassuolo 2025, Udinese
   2021-22 y Cremonese 2025 los abre el script con la nota (to-do 163, Versión 579): sin ajustes manuales de ingresos.
-  Sin cargar del lote 14: los 4 del to-do 157 (Inter 2024-25, Lazio 2014-15, Sampdoria 2021, Roma 2025) y Milan 2022-23 (to-do 150). Etapa 2: 35 de 105 documentos
+  Sin cargar del lote 14: Inter 2024-25 (cierra; 4 casos en la cola), Roma 2025 (to-do 157, re-transcribir su pág. 22) y Milan 2022-23 (to-do 150). Etapa 2: 35 de 105 documentos
   validados; faltan 70 (~US$ 41, `pipeline.mjs --dir Clubes/Italia --max-paginas 0 --limit 35` dos veces), en otra sesión.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.

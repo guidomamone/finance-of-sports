@@ -190,31 +190,14 @@ ni en el comentario de ningún archivo de código.
     Versión 409 (L338-356) mira todos los renglones de arriba (Parma: "altri" contado dos veces). Variantes medidas: F1 (esSumaDe firmado) no
     cierra nada y mueve Lazio 2014-15; F3 (sacar el total de las líneas) cambia 0. ESCALONES RECOMENDADOS (sin tocar las lecturas 0-3):
     A) cerrarNota conserva el signo impreso de las hojas si el renglón es de signo anómalo (compuerta: total de gastos en la lectura 4; solo
-    cambia Napoli 2024); B) fin5 toma TODOS los ajustes de financiero, no solo los que reemplazan (compuerta: resultado exacto de la lectura
-    5; Roma 2018 cierra sin ajustes de variación/total, e Inter 2024-25 del to-do 157 se arregla igual); C) un subtotal igual al renglón
-    INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos; solo cambia Parma 2023, anular su ajuste "altri" L557). F3 como
-    higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian solo Napoli 2024 (lectura 5 → 4), Roma 2018 y Parma 2023.
+    cambia Napoli 2024); C) un subtotal igual al renglón INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos; solo
+    cambia Parma 2023, anular su ajuste "altri" L557). F3 como higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian
+    solo Napoli 2024 (lectura 5 → 4) y Parma 2023. El escalón B (la lectura 5 con TODOS los ajustes de financiero) se midió el 2026-10-07 y
+    no entra: rompe Roma 2018 (ver Admin/HALLAZGOS-pipeline.md).
 
-157. ITALIA: 4 DOCUMENTOS QUE NO CIERRAN (investigado 2026-10-07 por un subagente, probado en una copia; las causas anotadas antes eran
-    otras). Ya cierran con ajustes y están cargados: Milan 2023-24, Inter 2021-22, Lazio 2021-22, Bologna 2019-2022. Los 4 que faltan, y
-    3 se cierran con ajustes (gratis; probados en la copia: cierran por la lectura 5):
-    - Inter 2024-25: el 12) no era el problema. El ajuste D ya cargado (L976, +780.928) no lleva `reemplaza` y la lectura 5 solo mete al
-      financiero los ajustes con `reemplaza`/`reemplazaLinea` (verificar.mjs ~L575): agregar el mismo con `--reemplaza-linea 976`:
-      node tools/ajustes.mjs --agregar "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf" fila --valor "780.928"
-        --etiqueta "rivalutazioni di partecipazioni (18)" --lado financiero --linea 976 --reemplaza-linea 976 --motivo "..."
-      567.012.038 − 482.024.122 − 35.879.464 + 780.928 − 14.491.102 = 35.398.278 (L986). Quedan 3 dudas en la cola.
-    - Lazio 2014-15: impuestos DOBLES (.md L3463-3465 con columnas corridas: L3463 933.312 es b)+c), L3464 172.710 b), L3465 760.602 c)):
-      ...ajustes.mjs --agregar "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf" fila --valor "172.710"
-        --etiqueta "imposte differite (b)" --lado impuesto --linea 3464 --reemplaza-linea 3464 --motivo "..."
-      ...mismo pdf: fila --valor "760.602" --etiqueta "imposte anticipate (c)" --lado impuesto --linea 3465 --reemplaza-linea 3463
-      110.927.383 − 100.514.336 − 2.101.739 − 2.499.117 = 5.812.191 contra 5.812.193 (redondeo). Además en la lectura 0 cuenta el subtotal
-      L3425 (2.284) y el crédito L3427 (137.780) como costo; la lectura 5 no.
-    - Sampdoria 2021: L902 "i) ricavi e proventi diversi" 5.785.259 es otro "di cui" de h) (28.550 + 2.959.520 + 5.785.259 = 8.773.329):
-      ...ajustes.mjs --agregar "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf" fila --valor 0
-        --etiqueta "(sale) i) ricavi e proventi diversi" --lado ingreso --linea 902 --reemplaza-linea 902 --motivo "di cui de h)"
-      76.310.005 − 100.403.221 − 4.139.726 + 3.817.955 = −24.414.987 contra −24.414.986.
-    - AS Roma 2025: no se arregla con ajustes. El conto economico consolidato (pág. 22 del visor, impreso 22, .md L805-1113) quedó como
-      etiquetas y listas de números sueltas; texto-propio-a-md.mjs (columnas y regiones) tampoco lo arma. Opciones: escribir la tabla a mano
-      en el .md o re-transcribir esa página con Claude/Gemini (cuesta); después lote --reintentar. Cifras 30/06/2025 verificadas: A
-      270.241.005, B 305.201.964, C (13.937.648), imposte (4.985.606), utile (53.884.213). Ojo 156: 11) variazione (1.548.221) reduce costos.
-    Cambio de script a considerar (con 155/156): que en la lectura 5 un ajuste `fila` entre aunque no lleve `reemplaza`.
+157. ITALIA: AS ROMA 2025 NO CIERRA (investigado 2026-10-07 por un subagente). Los otros 3 del lote 14 se resolvieron con ajustes:
+    Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra por la lectura 5 y espera 4 respuestas en la cola.
+    AS Roma 2025: el conto economico (pág. 22 del visor, impreso 22, .md L805-1113) quedó como etiquetas y listas de números sueltas;
+    texto-propio-a-md.mjs tampoco lo arma (pdftotext -layout sí lo lee limpio). Decisión de Guido (2026-10-07): re-transcribir esa página
+    con Claude (la página sola, extraída con qpdf) y reemplazar ese tramo del .md; después lote --reintentar. Cifras 30/06/2025 verificadas:
+    A 270.241.005, B 305.201.964, C (13.937.648), imposte (4.985.606), utile (53.884.213). Ojo 156: 11) variazione (1.548.221) reduce costos.
