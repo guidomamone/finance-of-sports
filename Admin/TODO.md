@@ -95,27 +95,16 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-154. UNA RESPUESTA A UNA DUDA DE COLUMNA NO CAMBIA LO EXTRAÍDO (2026-10-07). Caso: Como 2025 (`Como-gruppo-pro-forma-consolidamento-2025`),
-    un "Prospetto Pro-forma di Consolidamento" (.md L354-409) con columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma.
-    Guido decidió perímetro individual (Como 1907). Ni la respuesta "no" a la duda e4b24c1 ("¿solo la columna pro-forma?"), ni el ajuste
-    de perímetro + `lote.mjs --rehacer` (lote 16, US$ 0,38) cambiaron la columna: `extraer.mjs` tomó otra vez el pro-forma (62,05 M).
-    `verificar.mjs` ~L699-709 guarda las respuestas de duda-tema como NOTA, no actúan. Además `perimetro-senales.mjs` ve el pro-forma como
-    "solo individual" (no reconoce "consolidamento" como perímetro: a propósito, ver su cabecera).
-    CÓMO SE RESOLVIÓ A MANO: 23 ajustes `fila` (`--reemplaza <etiqueta extraída>` con el valor de la columna 1), generados con un script
-    desde la tabla del .md (filas.json → línea → celda 1; "-" = 0; lado "otro" → financiero), más `resultado-final (105.065.627)`; y en la
-    cola se aceptaron los "no-cierra" de los totales (comparan contra el total del pro-forma). Queda en `Admin/ajustes-manuales.jsonl`.
-    Arreglo candidato: que `extraer.mjs`/`localizar.mjs` reciban la columna a usar cuando el bloque tiene columnas por entidad y el
-    perímetro está fijado (escalón con compuerta: el total impreso de esa columna).
-    INVESTIGADO (2026-10-07, subagente; conocido, 1 club, sin daño hoy): extraer.mjs no recibe el perímetro ni ninguna columna de entidad
-    (solo columna_ejercicio/columna_anterior del .ubicacion.json, L116); localizar.mjs recibe el perímetro solo como frase para elegir
-    BLOQUES (L80-84). Por eso el ajuste de perímetro + --rehacer no cambió nada. Escaneo de todos los .md: el layout "sociedad | grupo |
-    eliminaciones | pro-forma" está solo en Como 2025 (L354) y Como 2024 (L306, sin cargar); Juventus 2021-25 ("Pro-forma adjustments"),
-    AC Milan ("Rettifiche | Consolidato"), Lazio 2006-07 y Dortmund son ajustes del mismo perímetro, no entidades; Mercedes F1 (Group |
-    Company) está en notas. CUÁNDO HACERLO: al cargar Como 2024 si sale con la columna equivocada, o con un segundo club. DISEÑO: escalón
-    determinístico en extraer.mjs (entre armar `texto` L114-115 y llamarClaude L125; pasar perimetroClub desde lote.mjs L193): con perímetro
-    individual y una cabecera de 4+ columnas cuya primera columna de importes es la del club (con "Eliminazioni"/"Pro-forma" a la derecha),
-    leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como 2025 tiene que dar
-    los 23 ajustes `fila` (después se anulan); en los demás .filas.json no dispara.
+154. COLUMNAS POR ENTIDAD (Como 2025). CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). En un "Prospetto Pro-forma di
+    Consolidamento" (columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma) `extraer.mjs` toma la columna pro-forma aunque el
+    perímetro fijado sea individual: no recibe el perímetro ni una columna de entidad (solo columna_ejercicio/columna_anterior del
+    .ubicacion.json); `localizar.mjs` usa el perímetro solo para elegir BLOQUES. Las respuestas a una duda de columna quedan como nota.
+    Único caso: Como 2025, cargado bien con 23 ajustes `fila` de la columna 1 (Admin/ajustes-manuales.jsonl). Como 2024 NO lo necesita: se
+    carga desde el bilancio individual (Como-fascicolo-bilancio-2024) y el pro-forma 2024 quedó en Admin/documentos-descartados.txt.
+    CUÁNDO HACERLO: con un segundo documento con columnas por entidad y perímetro individual fijado. DISEÑO (como escalón): en extraer.mjs,
+    con perímetro individual y una cabecera de 4+ columnas cuya primera columna de importes es la del club (con "Eliminazioni"/"Pro-forma"
+    a la derecha), leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como
+    2025 tiene que dar los 23 ajustes `fila`; en los demás .filas.json no dispara.
 
 155. ITALIA: EL SIGNO DEL 17) Y DEL 17-BIS. CONOCIDO, SIN DAÑO HOY (escalones 1 y 2 hechos, Versiones 582 y 583). El escalón "17) resta"
     de verificar.mjs lee el 17) restando por posición y reemplazó los ajustes manuales de 14 documentos (Torino 2018/2021/2024, Udinese
