@@ -211,6 +211,10 @@ Mitigaciones:
  LECTURA 4  + signos impresos; subtotal de un solo renglón; total bruto con deducciones aparte (Versiones 396, 409); los ajustes
             `fila` también con su signo, relativo a la mayoría de los ajustes de su lado (Versión 493)
  LECTURA 5  solo las hojas, con signo (C/D de balancetes); sin totales; compuerta: resultado impreso exacto (Versión 414)
+ LECTURA 6  la 5 + los renglones sin lado, según su signo (Versión 434)
+ ESCALÓN    si NINGUNA lectura cerró el RESULTADO: la 5 otra vez + los ajustes `fila` del financiero sin `reemplaza` (la 5 solo suma
+            los que reemplazan); misma compuerta que la 5 (Versión 581, to-do 156 B; caso Inter 2024-25). No corre si el resultado ya
+            cerró en alguna lectura y fallan solo los totales (Roma 2018: así, como regla de la 5, rompía lo cargado)
  nada cierra → reintento (una vez) → cola humana
 ```
 

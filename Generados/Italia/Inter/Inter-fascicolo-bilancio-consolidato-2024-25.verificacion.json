@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
- "generado": "2026-10-07T21:36:23.215Z",
+ "generado": "2026-10-07T21:39:32.949Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2025,
@@ -20,8 +20,7 @@
    "etiqueta": "rivalutazioni di partecipazioni (18)",
    "lado": "financiero",
    "reemplaza": null,
-   "reemplazaLinea": 976,
-   "motivo": "to-do 157: la lectura 5 solo suma los ajustes del financiero que reemplazan una fila (el escalón B del to-do 156, que los sumaba a todos, rompía Roma 2018); el mismo D) 18) +780.928 con reemplaza-linea (la fila de L976 no se extrajo: no sale nada)",
+   "motivo": "D) 18) rettifiche: la fila no se extrajo (to-do 155). Sin reemplaza: la toma el escalón 'ajustes del financiero sin reemplaza' de verificar.mjs (to-do 156 B), ya no hace falta --reemplaza-linea",
    "evidencia": ".md L976; 567.012.038 − 482.024.122 − 35.879.464 + 780.928 − 14.491.102 = 35.398.278 (L986)",
    "autor": "Guido",
    "fecha": "2026-10-07"
@@ -58,7 +57,8 @@
  "notas": [
   "el desglose de \"Amministrative, pubblicitarie e generali\" (18 filas) no suma la fila: quedó la fila",
   "la nota de \"a) salari e stipendi\" no suma el renglón (209.231 contra 231.682534, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 780.928, en lugar de la fila de L976 (2026-10-07, to-do 157: la lectura 5 solo suma los ajustes del financiero que reemplazan una fila (el escalón B del to-do 156, que los sumaba a todos, rompía Roma 2018); el mismo D) 18) +780.928 con reemplaza-linea (la fila de L976 no se extrajo: no sale nada))",
+  "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 780.928 (2026-10-07, D) 18) rettifiche: la fila no se extrajo (to-do 155). Sin reemplaza: la toma el escalón 'ajustes del financiero sin reemplaza' de verificar.mjs (to-do 156 B), ya no hace falta --reemplaza-linea)",
+  "escalón \"ajustes del financiero sin reemplaza\": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
   "duda de extraer ya contestada para el club (columna, \"a) salari e stipendi\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2024-25.pdf",

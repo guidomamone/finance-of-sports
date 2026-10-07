@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 581 — Escalón "ajustes del financiero sin reemplaza" en verificar.mjs (to-do 156 B); AS Roma 2025 re-transcripto (2026-10-07)
+
+- `verificar.mjs`: si ninguna lectura 0-6 cerró el RESULTADO, se repite la lectura 5 sumando también los ajustes `fila` del financiero
+  que no reemplazan ninguna fila (la 5 solo sumaba los que reemplazan). Misma compuerta que la 5. Como regla de la lectura 5 rompía Roma
+  2018 (resultado cerrado desde la lectura 0, fallan solo los totales); como escalón no lo toca. Inter 2024-25 cierra por el escalón y su
+  ajuste vuelve a no llevar `--reemplaza-linea`.
+- Medido: 57 de Italia, cambia solo Inter 2024-25 (mismos totales que con el ajuste manual); prueba completa (87), cambian 0.
+- AS Roma 2025: la página 22 del visor (conto economico consolidato) re-transcripta con Claude, la página sola (US$ 0,027), y
+  reemplazada en el .md; lote 24 (US$ 0,36): cierra por la lectura 4. Cola de Roma 2025 e Inter 2024-25 respondida.
+
 ## Versión 580 — To-do 157: Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra; el escalón B del 156 no entra (2026-10-07)
 
 - Ajustes manuales (gratis): Lazio 2014-15, imposte b) y c) con `--reemplaza-linea` (columnas corridas, el subtotal 933.312 entraba

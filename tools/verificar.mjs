@@ -577,9 +577,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && (x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
     const m = mult(estado[0]?.bloque); fin5.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
   }
-  const evaluar = (nivel) => {
+  // ESCALÓN "ajustes del financiero sin reemplaza" (to-do 156 B, como troubleshoot): la lectura 5 de arriba solo suma los ajustes del
+  // financiero que reemplazan una fila. fin5Todos les suma también los que no reemplazan nada (una fila que la extracción no trajo). No es
+  // una regla de la lectura 5 (así rompía Roma 2018, que cierra el resultado desde la lectura 0 y falla solo por los totales): es un
+  // escalón aparte, que corre SOLO si ninguna lectura 0-6 cerró el RESULTADO (lo único que el financiero puede arreglar). Compuerta: la
+  // de la lectura 5, el resultado impreso exacto. Caso: Inter 2024-25, "rivalutazioni di partecipazioni (18)" +780.928 (.md L976):
+  // 567.012.038 − 482.024.122 − 35.879.464 + 780.928 − 14.491.102 = 35.398.278 (L986).
+  const fin5Todos = [...fin5];
+  for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && !(x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
+    const m = mult(estado[0]?.bloque); fin5Todos.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+  }
+  const evaluar = (nivel, conAjustesFin = false) => {
     const ch = []; let ing = [...(nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
-    const finL = nivel >= 5 ? fin5 : fin;
+    const finL = nivel >= 5 ? (conAjustesFin ? fin5Todos : fin5) : fin;
     // LECTURA 6 (Versión 434, cambio F, aprobado por Guido el 2026-10-03): la 5 (solo hojas, sin totales, resultado impreso EXACTO) + los
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
@@ -642,12 +652,15 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     return { ing, gas, ch, okRes, lect, cierra, nivel, objetivo };
   };
   let E = null; let E0 = null;
-  for (const n of [0, 1, 2, 3, 4, 5, 6]) { const e = evaluar(n); if (!E0) E0 = e; if (e.cierra) { E = e; break; } }
+  let algunaCierraRes = false; let escalonAjFin = false;
+  for (const n of [0, 1, 2, 3, 4, 5, 6]) { const e = evaluar(n); if (!E0) E0 = e; if (e.okRes) algunaCierraRes = true; if (e.cierra) { E = e; break; } }
+  if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
   if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
-  if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...fin5); // lectura 5: el financiero también con el signo C/D
+  if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...(escalonAjFin ? fin5Todos : fin5));
+  if (escalonAjFin) notas.push('escalón "ajustes del financiero sin reemplaza": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero'); // lectura 5: el financiero también con el signo C/D
   let okRes = E.okRes; let lectura = E.lect; const res = E.objetivo ?? resFinal;
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }
   if (sinNumero) chequeos.push({ nombre: 'número impreso para cerrar', ok: false, detalle: 'el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas' });

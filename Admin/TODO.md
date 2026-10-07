@@ -192,8 +192,8 @@ ni en el comentario de ningún archivo de código.
     A) cerrarNota conserva el signo impreso de las hojas si el renglón es de signo anómalo (compuerta: total de gastos en la lectura 4; solo
     cambia Napoli 2024); C) un subtotal igual al renglón INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos; solo
     cambia Parma 2023, anular su ajuste "altri" L557). F3 como higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian
-    solo Napoli 2024 (lectura 5 → 4) y Parma 2023. El escalón B (la lectura 5 con TODOS los ajustes de financiero) se midió el 2026-10-07 y
-    no entra: rompe Roma 2018 (ver Admin/HALLAZGOS-pipeline.md).
+    solo Napoli 2024 (lectura 5 → 4) y Parma 2023. El escalón B ya entró como troubleshoot (Versión 581): corre solo si ninguna lectura
+    cerró el resultado.
 
 157. ITALIA: AS ROMA 2025 NO CIERRA (investigado 2026-10-07 por un subagente). Los otros 3 del lote 14 se resolvieron con ajustes:
     Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra por la lectura 5 y espera 4 respuestas en la cola.
