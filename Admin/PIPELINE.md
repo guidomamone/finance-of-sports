@@ -375,6 +375,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
   (`resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+- `fila` saca la fila que trajo mal la extracción con `--reemplaza "<etiqueta>"` (TODAS las que se llaman así) o `--reemplaza-linea N`
+  (SOLO la de esa línea del .md, o las hojas de su nota si estaba abierta). Con etiquetas repetidas (en el formato italiano "altri" es
+  ingreso, financiero + y financiero −), siempre por línea.
 - Va acá lo que Guido decide forzar. NO va escrita en un documento (ningún script lo lee) ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
 ### Cola humana

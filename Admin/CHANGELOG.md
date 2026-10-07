@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 568 — Un ajuste `fila` puede reemplazar una línea, no solo una etiqueta (2026-10-07)
+
+- `ajustes.mjs fila --reemplaza-linea N` y `verificar.mjs`: sale solo la fila de esa línea del .md (o las hojas de su nota, si estaba
+  abierta: cada hoja recuerda la línea de su renglón en una propiedad no visible), en todas las lecturas. `--reemplaza` por etiqueta, igual.
+- Medido: los 121 `.verificacion.json` re-verificados, idénticos; renglón abierto en su nota (Bologna 2020-21, L860): salen sus 4 hojas.
+- Bologna 2019-20, 2020-21 y 2021-22 cierran: un ajuste por año en el 17) por línea (y la D de 2019-20). El ingreso "altri" de
+  79.927.219 (L833) queda adentro, que era lo que el reemplazo por etiqueta sacaba. TODO 158 resuelto; 157 al día.
+
 ## Versión 567 — Un año en el encabezado de una tabla ya no frena la categorización (2026-10-07)
 
 - Etapa 4, escalón 2b (`validar-bloques.mjs`): un 1900-2099 en la fila de encabezado de una tabla sigue sin confirmar pero lleva la

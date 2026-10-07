@@ -200,17 +200,11 @@ ni en el comentario de ningún archivo de código.
     - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
       mismo. Y la prueba completa idéntica.
 
-157. ITALIA: 7 DOCUMENTOS QUE TODAVÍA NO CIERRAN NI CON AJUSTES (2026-10-07; un subagente encontró las causas, ver abajo). Ya cierran con
+157. ITALIA: 4 DOCUMENTOS QUE TODAVÍA NO CIERRAN NI CON AJUSTES (2026-10-07; un subagente encontró las causas, ver abajo). Ya cierran con
     ajustes (cargables): Milan 2023-24 (rettifiche D sin lado: `fila` 672 y (800) del lado financiero), Inter 2021-22 (D 521.197),
-    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando). Los que faltan:
-    - Bologna 2019-20, 2020-21 y 2021-22: el 17) (`altri`, impreso positivo) y las imposte (impresas como costo en positivo, con el
-      crédito de años anteriores entre paréntesis) entran con el signo al revés; 2019-20 además tiene D "19) svalutazioni" 1.868.716
-      sin lado. NO se puede arreglar con `--reemplaza "altri"`: un renglón de INGRESOS de 79,9 M también se llama "altri" (L833 en
-      2020-21) y el reemplazo por etiqueta lo saca (se probó y se revirtió). Hace falta un `reemplaza` por línea (no existe hoy:
-      `verificar.mjs` ~L479 compara solo la etiqueta). Ajustes que cerrarían (calculados por el subagente, al euro): 2019-20 16) 1.931
-      (L948), 17) (670.894) (L952), D (1.868.716) (L958), imposte (591.876) / 94.384 / (1.424) (L976-978) → −39,518066; 2020-21 16)
-      217.766 (L871), 17) (1.297.992) (L875), imposte (905.396) / 94.050 / (1.424) (L886-888) → −30,846228; 2021-22 16) 4.561 (L231),
-      17) (1.384.360) (L235), imposte (779.656) / 50.676 / (1.424) (L241-243) → −46,694141.
+    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando), Bologna 2019-20, 2020-21 y 2021-22 (Versión 568:
+    un ajuste `fila` por línea en el 17), `--reemplaza-linea`, y en 2019-20 la D (1.868.716); las imposte NO hacían falta, ya entraban netas;
+    2020-21 y 2021-22 quedan con dudas de extracción en la cola). Los que faltan:
     - Inter 2024-25: D 780.928 (L976) ya cargado como ajuste; falta que el "12) Accantonamenti per rischi" (19.420) entre restando
       (es un rilascio). Solo la lectura 5 cerraría; hoy gana otra.
     - Lazio 2014-15 (formato riclassificato): ajustes de impuestos ya cargados (imposte correnti (3.432.429) que no se había extraído;
@@ -224,14 +218,6 @@ ni en el comentario de ningún archivo de código.
       resultado (53.884.213) (L725 y L1122, en tabla bien formada).
     Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
 
-
-158. `--reemplaza` DE UN AJUSTE `fila` ES POR ETIQUETA, NO POR LÍNEA (2026-10-07). `verificar.mjs` ~L479-480 saca TODAS las filas cuya
-    etiqueta coincide (en ingresos, gastos, financiero e impuesto a la vez). En el formato italiano muchos renglones se llaman igual
-    ("altri" en 16), en 17) y en 5) de ingresos; "a) di partecipazioni" en 18) y 19)). Consecuencias medidas: Bologna 2019-22 no se pudo
-    arreglar (un `--reemplaza "altri"` se llevaba el ingreso "altri" de 79,9 M, L833 de 2020-21; se revirtió), Udinese 2021-22 tuvo que
-    marcar la TV como "incluida en otros ingresos" en vez de separarla, y en Udinese/Cremonese/Parma/Milan hubo que reemplazar las DOS
-    filas homónimas y volver a agregar ambas. Arreglo: que `reemplaza` acepte también la línea (`--linea` del ajuste o `--reemplaza-linea
-    N`) y saque solo esa fila. Destraba directo el to-do 157 (Bologna) y simplifica los ajustes de 155.
 
 160. UN DOCUMENTO QUE CIERRA NO SE CATEGORIZA SI LA ETAPA 4 DEJÓ "NO CONFIRMADOS" FALSOS (2026-10-07). `avisarRegistro()`
     (`verificar.mjs`) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y SOLO cuando
