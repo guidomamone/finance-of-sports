@@ -41,4 +41,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'parma-it': { 2023: 'it-serieb' },
   // Sampdoria (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Sampdoria".
   'sampdoria-it': { 2021: 'it-seriea' },
+  // Sassuolo (alta-club.mjs, 2026-10-07): SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (it-seriea): puede haber jugado otra división).
+  'sassuolo-it': { 2025: null },
 });

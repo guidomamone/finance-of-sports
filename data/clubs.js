@@ -438,6 +438,9 @@ const clubs = {
   // Sampdoria: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf.
   // brandColor y su procedencia: fuentes/Italia/Sampdoria.md.
   'sampdoria-it': { id:'sampdoria-it', name:'U.C. Sampdoria S.p.A.', displayName:'Sampdoria', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#002160' },
+  // Sassuolo: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Sassuolo.md.
+  'sassuolo-it': { id:'sassuolo-it', name:'Unione Sportiva Sassuolo Calcio S.r.l.', displayName:'Sassuolo', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1EA451' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
