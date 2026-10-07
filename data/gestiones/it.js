@@ -1,0 +1,100 @@
+// ============================================================================
+// data/gestiones/it.js: quién condujo cada club de Italia y desde/hasta cuándo (to-do 149).
+// El formato, la regla de qué ejercicio es de qué gestión y el campo `firmo` están explicados en la
+// cabecera de data/gestiones/ar.js. En una sociedad se carga el dueño solo si es una persona con nombre;
+// donde el dueño es un fondo o una holding (Milan, Inter desde 2024, Monza) se carga el presidente del
+// consejo de administración, que es quien firma el balance. Cuando la fuente da solo el año, el día es 01
+// por convención (se avisa en el comentario de la gestión).
+// ============================================================================
+
+window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
+
+Object.assign(window.CLUB_GESTIONES, {
+  'acmilan-it': [
+    { nombre:'Li Yonghong', corto:'Li', cargo:'Presidente', desde:'2017-04-14', hasta:'2018-07-21',
+      fuente:'https://it.wikipedia.org/wiki/Presidenti_dell%27Associazione_Calcio_Milan', confirmada:true },
+    // Elliott (fondo) subió a Scaroni a la presidencia el 21/7/2018; RedBird (fondo) lo confirmó desde 2022.
+    { nombre:'Paolo Scaroni', corto:'Scaroni', cargo:'Presidente', desde:'2018-07-21', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Presidenti_dell%27Associazione_Calcio_Milan', confirmada:true },
+  ],
+  'asroma-it': [
+    // Pallotta: la fuente da solo los años (2012-2020); desde = 01/01/2012 por convención.
+    { nombre:'James Pallotta', corto:'Pallotta', cargo:'Presidente', desde:'2012-01-01', hasta:'2020-08-17',
+      fuente:'https://it.wikipedia.org/wiki/Allenatori_e_presidenti_dell%27Associazione_Sportiva_Roma', confirmada:true },
+    { nombre:'Dan Friedkin', corto:'Friedkin', cargo:'Presidente', desde:'2020-08-17', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Associazione_Sportiva_Roma', confirmada:true },
+  ],
+  'atalanta-it': [
+    // Percassi: "presidente dal 2010" (solo el año; 01/01 por convención). Desde 2022 hay un copresidente (Stephen Pagliuca, cordata
+    // estadounidense), pero Percassi sigue de presidente y principal accionista individual: no se parte la gestión.
+    { nombre:'Antonio Percassi', corto:'Percassi', cargo:'Presidente', desde:'2010-01-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Atalanta_Bergamasca_Calcio', confirmada:true },
+  ],
+  'bologna-it': [
+    // Saputo: control del club desde el 19/9/2015 (Tacopina fue presidente en 2014-15 con Saputo de chairman).
+    { nombre:'Joey Saputo', corto:'Saputo', cargo:'Presidente', desde:'2015-09-19', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Bologna_Football_Club_1909', confirmada:true },
+  ],
+  'cremonese-it': [
+    // Rossi: la lista de presidentes da solo el año de arranque (2017); 01/01 por convención.
+    { nombre:'Paolo Rossi', corto:'Rossi', cargo:'Presidente', desde:'2017-01-01', hasta:'2023-07-06',
+      fuente:'https://it.wikipedia.org/wiki/Unione_Sportiva_Cremonese', confirmada:true },
+    { nombre:'Francesco Dini', corto:'Dini', cargo:'Presidente', desde:'2023-07-06', hasta:null,
+      fuente:'https://www.uscremonese.it/francesco-dini-e-il-nuovo-presidente-dellu-s-cremonese/', confirmada:true },
+  ],
+  'hellasverona-it': [
+    // Setti compró el club el 23/6/2012 (único dueño desde marzo de 2013); presidente hasta el pase a Presidio Investors (15/1/2025).
+    { nombre:'Maurizio Setti', corto:'Setti', cargo:'Presidente', desde:'2012-06-23', hasta:'2025-01-15',
+      fuente:'https://it.wikipedia.org/wiki/Hellas_Verona_Football_Club', confirmada:true },
+    { nombre:'Italo Zanzi', corto:'Zanzi', cargo:'Presidente', desde:'2025-01-15', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Hellas_Verona_Football_Club', confirmada:true },
+  ],
+  'inter-it': [
+    { nombre:'Steven Zhang', corto:'Zhang', cargo:'Presidente', desde:'2018-10-26', hasta:'2024-06-04',
+      fuente:'https://www.gazzetta.it/Calcio/Serie-A/Inter/26-10-2018/inter-ufficiale-stevenzhang-presidente-marotta-300989857711.shtml', confirmada:true },
+    // Oaktree (fondo) tomó el control en mayo de 2024; Marotta es presidente del consejo desde el 4/6/2024.
+    { nombre:'Giuseppe Marotta', corto:'Marotta', cargo:'Presidente', desde:'2024-06-04', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Football_Club_Internazionale_Milano', confirmada:true },
+  ],
+  'lazio-it': [
+    { nombre:'Claudio Lotito', corto:'Lotito', cargo:'Presidente', desde:'2004-06-19', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio', confirmada:true },
+  ],
+  'napoli-it': [
+    // De Laurentiis: "presidente y dueño desde 2004" tras la quiebra (solo el año; 01/09 aproximado, verano de 2004).
+    { nombre:'Aurelio De Laurentiis', corto:'De Laurentiis', cargo:'Presidente', desde:'2004-09-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Calcio_Napoli', confirmada:true },
+  ],
+  'parma-it': [
+    // Las tres gestiones: la fuente da solo los años (2017-2018, 2018-2020, 2020-); 01/01/2017, 01/10/2018 (control de Nuovo Inizio,
+    // octubre de 2018) y 01/09/2020 (septiembre de 2020, entra la familia Krause) por convención.
+    { nombre:'Jiang Lizhang', corto:'Jiang', cargo:'Presidente', desde:'2017-01-01', hasta:'2018-10-01',
+      fuente:'https://it.wikipedia.org/wiki/Parma_Calcio_1913', confirmada:true },
+    { nombre:'Pietro Pizzarotti', corto:'Pizzarotti', cargo:'Presidente', desde:'2018-10-01', hasta:'2020-09-01',
+      fuente:'https://it.wikipedia.org/wiki/Parma_Calcio_1913', confirmada:true },
+    { nombre:'Kyle Krause', corto:'Krause', cargo:'Presidente', desde:'2020-09-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Parma_Calcio_1913', confirmada:true },
+  ],
+  'sampdoria-it': [
+    // Ferrero compró el club el 12/6/2014. Entre el 5/4 y el 19/12/2017 la FIGC lo hizo decaer de la presidencia (siguió de dueño): no se parte la gestión.
+    { nombre:'Massimo Ferrero', corto:'Ferrero', cargo:'Presidente', desde:'2014-06-12', hasta:'2021-12-27',
+      fuente:'https://it.wikipedia.org/wiki/Massimo_Ferrero', confirmada:true },
+    // Lanna: nombrado el 27/12/2021; la lista da su fin como "2024" (solo el año; 01/01/2024 por convención).
+    { nombre:'Marco Lanna', corto:'Lanna', cargo:'Presidente', desde:'2021-12-27', hasta:'2024-01-01',
+      fuente:'https://it.wikipedia.org/wiki/Marco_Lanna', confirmada:true },
+  ],
+  'sassuolo-it': [
+    // Carlo Rossi, presidente del consejo (dueña: la familia Squinzi, vía Mapei). Las fuentes dicen 2003 o 2004; 01/01/2004 por convención.
+    { nombre:'Carlo Rossi', corto:'Rossi', cargo:'Presidente', desde:'2004-01-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Unione_Sportiva_Sassuolo_Calcio', confirmada:true },
+  ],
+  'torino-it': [
+    { nombre:'Urbano Cairo', corto:'Cairo', cargo:'Presidente', desde:'2005-08-31', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Torino_Football_Club', confirmada:true },
+  ],
+  'udinese-it': [
+    // Franco Soldati, presidente del consejo (la familia Pozzo controla vía Gesapar). La fuente dice 2000 en un lado y 2002 en otro; 01/01/2002 por convención.
+    { nombre:'Franco Soldati', corto:'Soldati', cargo:'Presidente', desde:'2002-01-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Udinese_Calcio', confirmada:true },
+  ],
+});
