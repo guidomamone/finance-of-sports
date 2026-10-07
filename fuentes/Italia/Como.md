@@ -43,3 +43,5 @@ consolidamento) — puede que se publique más adelante en la temporada, retomar
 Se muestrearon las 22 capturas de Wayback de `comofootball.com/(en/)documenti-societari/`: solo aparecen `como-1907-fascicolo-bilancio-30-06-2024` y `pubblicazione-bilancio-su-sito-licenze-uefa`. Como publica desde que entró en el régimen de licencia UEFA (2023/24); no hay años anteriores en el sitio. Falta contrastar si Como 1907 S.r.l. depositó los anteriores (Registro Imprese, pago).
 
 - **Color de marca**: `#10416A` (azul) — "blu reale" (it.wikipedia, Como_1907; el blanco va en los shorts); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf` (sourceId `como-it-gruppo-pro-forma-consolidamento-2025`).
