@@ -50,6 +50,16 @@ const udineseitRevenueLinesByYear = {
     { rawLabel:'Rimborsi assicurativi', normalizedCategory:'other_income', amountNative:0.161012, disclosureLevel:'aggregated' }, // pág. 66, Jev 1
     { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:4.843268, disclosureLevel:'aggregated' }, // pág. 66, Jev 0.99
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Udinese/Udinese-bilancio-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'- Gare Campionato', normalizedCategory:'matchday_competition', amountNative:2.858916, disclosureLevel:'aggregated' }, // pág. 63, Jev 0.99
+    { rawLabel:'- Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.027534, disclosureLevel:'aggregated' }, // pág. 63, Jev 0.99
+    { rawLabel:'- Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.016281, disclosureLevel:'aggregated' }, // pág. 63, Jev 0.99
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:2.212326, disclosureLevel:'aggregated' }, // pág. 63, Jev 1
+    { rawLabel:'contributi in conto esercizio', normalizedCategory:'other_income', amountNative:2.046228, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.97
+    { rawLabel:'altri', normalizedCategory:'other_income', amountNative:70.918956, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
+  ],
 };
 const udineseitExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-07)
@@ -75,6 +85,33 @@ const udineseitExpenseLinesByYear = {
     { rawLabel:'Altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-9.700351, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.94
     { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-3.414033, disclosureLevel:'aggregated' }, // pág. 72, Jev 0.95
   ],
+  2022: [ // tools/cargar.mjs (2026-10-07)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-2.763664, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.44203, disclosureLevel:'aggregated' }, // pág. 66, precedente
+    { rawLabel:'Spese per organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.780382, disclosureLevel:'aggregated' }, // pág. 66, Jev 0.99
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-8.833332, disclosureLevel:'aggregated' }, // pág. 66, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-1.766056, disclosureLevel:'aggregated' }, // pág. 66, Jev 1
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.469379, disclosureLevel:'aggregated' }, // pág. 66, precedente
+    { rawLabel:'Amministrative, pubblicitarie e generali', normalizedCategory:'admin_general_expense', amountNative:-2.382209, disclosureLevel:'aggregated' }, // pág. 66, Jev 1
+    { rawLabel:'Altre prestazioni di servizi', normalizedCategory:'admin_general_expense', amountNative:-3.841433, disclosureLevel:'aggregated' }, // pág. 66, precedente
+    { rawLabel:'affitto dei campi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.03565, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.96
+    { rawLabel:'noleggio autoveicoli e automezzi per uso aziendale', normalizedCategory:'admin_general_expense', amountNative:-0.152938, disclosureLevel:'aggregated' }, // pág. 67, Jev 1
+    { rawLabel:'spese per affitti e utenze locali ad uso foresteria', normalizedCategory:'admin_general_expense', amountNative:-0.378075, disclosureLevel:'aggregated' }, // pág. 67, Jev 0.95
+    { rawLabel:'noleggio attrezzature', normalizedCategory:'match_organisation_expense', amountNative:-0.281153, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-39.236173, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.242366, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.97
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.122458, disclosureLevel:'aggregated' }, // pág. 27, Claude 0.85
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-57.930334, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-1.103644, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-1.522949, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.97
+    { rawLabel:'d) svalutazioni dei crediti compresi nell\'attivo circolante e delle disponibilita\' liquide', normalizedCategory:'other_expenses', amountNative:-2.31176, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.275818, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.97
+    { rawLabel:'13) altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' }, // pág. 28, Claude 0.8
+    { rawLabel:'Oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-1.186421, disclosureLevel:'aggregated' }, // pág. 69, Jev 1
+    { rawLabel:'Minusvalenze da cessioni diritti calciatori', normalizedCategory:'exceptional_items', amountNative:-8.019148, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.97
+    { rawLabel:'Altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-6.554013, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.94
+    { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-1.756328, disclosureLevel:'aggregated' }, // pág. 69, Jev 0.95
+  ],
 };
 const udineseitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 125.708. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
@@ -97,6 +134,30 @@ const udineseitFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:141.695325, officialTotalExpenses:130.217417, officialPAT:2.923802,
+  },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 121.750. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (5.856.187). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (2.354.788). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.153.111. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): incluye = broadcasting. Claude 2026-10-07: la TV (Proventi da cessioni diritti audiovisivi 36.160.511, nota L2442) está dentro del renglón 'altri' 70.918.956 del estado (L857); no se separa porque --reemplaza 'altri' también tocaría el 16) y el 17) (ver to-do 157)
+  2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'udinese-it-bilancio-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.544096, tax:2.798323,
+    extraRows: [
+      {label:'c) da titoli iscritti nell\'attivo circolante che non costituiscono partecipazioni', value:null},
+      {label:'17-bis) utili e perdite su cambi', value:0.190341},
+      {label:'altri proventi finanziari', value:0.12175},
+      {label:'altri oneri finanziari (17, costo)', value:-5.856187},
+      {label:'imposte correnti (costo)', value:-2.354788},
+      {label:'imposte differite e anticipate (ingreso)', value:5.153111},
+    ],
+    incluidoEn:{"broadcasting":"other_income"}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    grossDebt:null, cash:null,
+    officialTotalRevenue:78.080241, officialTotalExpenses:136.368565, officialPAT:-69.053247,
   },
 };
 const udineseitPresupuestoOverlayByYear = {};
@@ -121,6 +182,12 @@ Object.assign(sources, {
     title:'Udinese Calcio S.p.A. — Udinese-bilancio-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'udinese-it-bilancio-2021-22': {
+    id:'udinese-it-bilancio-2021-22', clubId:'udinese-it',
+    title:'Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

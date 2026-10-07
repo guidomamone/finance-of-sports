@@ -53,3 +53,5 @@ documentos) o pagar el Registro Imprese para esos dos ejercicios puntuales.
 - **Color de marca**: `#000000` (negro) — bianconero (it.wikipedia, Udinese_Calcio); regla (d); hex de footylogos (el #4). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf` (sourceId `udinese-it-bilancio-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf` (sourceId `udinese-it-bilancio-2021-22`).
