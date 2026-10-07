@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 564 — Italia: 25 ejercicios cargados con ajustes manuales del formato italiano (2026-10-07)
+
+- Cargados AS Roma 2018 y 2022, Atalanta 2021 y 2024, Como 2025, Cremonese 2025, Hellas Verona 2020, Inter 2021-22, Lazio 2006-07,
+  2008-09, 2009-10, 2019-20, 2021-22 y 2022-23, AC Milan 2023-24, Monza 2022, Napoli 2024 y 2025, Parma 2023, Sassuolo 2025, Torino 2018,
+  2021 y 2024, Udinese 2021-22 y 2024-25.
+- Ajustes manuales (Admin/ajustes-manuales.jsonl) para lo que el script todavía no resuelve: signo del 17) y de las imposte, variación de
+  existencias, renglones contados dos veces, rettifiche D sin lado, columna Como 1907 del pro-forma, TV de Sassuolo, números "no
+  confirmados" falsos. Cola respondida por Claude con los criterios de Guido (to-do 152). Colores de marca de 19 clubes; Juventus #000000.
+- TODO 150 y 152-163 con el contexto de cada falla de script. Sassuolo 2025: Serie A.
+
 ## Versión 563 — Alta de 16 clubes italianos sin años y gestiones de Italia (2026-10-07)
 
 - Alta, sin cargar ningún año (decisión de Guido, 2026-10-06): AC Milan, AS Roma, Atalanta, Bologna, Como, Cremonese, Hellas Verona, Inter,
