@@ -95,45 +95,86 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
+150. ¿LA ETAPA 4 REBOTA NÚMEROS QUE LA ETAPA 2 YA VALIDÓ? MEDIRLO (Guido, 2026-10-06). Si casi no hay o son reales, queda como está;
+    si hay falsos positivos, se arregla.
+    QUÉ SE SABE:
+    - Las dos etapas comparan contra la MISMA fuente en un PDF digital (el texto propio, `pdftotext -f N -l N`), pero la etapa 2
+      (`pipeline.mjs` → `resolver-inventario.mjs` + `chequeos-gratis.mjs`) además mira sumas de tabla, columna del año anterior y manda
+      lo dudoso a Claude, y DECIDE; la etapa 4 (`validar-bloques.mjs`, Versión 324, anterior a la validación de la etapa 2) solo busca
+      cada número en el texto de su página, marca `noConfirmados` en `<doc>.validacion.json` y deja decidir a la etapa 6 (sumas). La
+      etapa 4 no lee nada de lo que resolvió la etapa 2 (registro `Admin/transcripciones-estado.jsonl`, historial
+      `Admin/transcripciones-verificaciones.jsonl`).
+    - El daño no es la marca: es que `paginasARearmar()` (`tools/texto-propio-a-md.mjs` ~L235-275) usa esos `noConfirmados` para
+      disparar el escalón 1b (rearmar la página CON el texto propio) cuando no hay `.verificacion.json` con estado ok (L263). Si el
+      texto propio es el que está mal, el rearmado EMPEORA la página.
+    - Caso: Milan 2022-23, pág. 84 del visor (impreso 84), .md L2527, "Minusvalenze da cessione diritti pluriennali": el .md
+      (42 | 2.456 | -2.414) está bien (imagen de la página; las columnas suman 18.566 y 22.232); el texto propio no trae 42 ni 2.456
+      (celda partida en varias líneas; `pdftotext -layout` y `-raw` igual). La etapa 2 la había dejado pasar ("5 dudas respaldadas por
+      los chequeos gratis: 61, 84, 104, 163, 173"). El disparo fue además efecto de un corte: la 1.ª corrida del lote 14 murió antes de
+      la etapa 6, y la 2.ª vio "no confirmado + sin verificación". En una corrida sin cortes la etapa 6 lo habría cerrado.
+    CÓMO MEDIR (gratis, script de solo lectura): para los documentos de Admin/lote-14.txt y lote-19.txt, cruzar cada `noConfirmados` de
+    `Generados/**/<doc>.validacion.json` con el estado de su página en la etapa 2 y con si la etapa 6 cerró (`.verificacion.json`).
+    Arreglo candidato si hace falta: escalón 0 de la etapa 4 = "página validada en la etapa 2" (o que el 1b no se dispare sin etapa 6).
 
-150. ¿LA ETAPA 4 REBOTA NÚMEROS QUE LA ETAPA 2 YA VALIDÓ? MEDIRLO CON EL LOTE 14 (Guido, 2026-10-06). La pregunta: cuántos "no
-    confirmados" de la etapa 4 (`validar-bloques.mjs`, `.validacion.json` → `noConfirmados`) caen en páginas que la etapa 2 ya había
-    validado (registro: chequeos gratis, segunda voz) y, de esos, cuántos eran falsos (el .md estaba bien). Si casi no hay o son reales,
-    queda como está. Si hay falsos positivos, se arregla (candidato: escalón 0 de la etapa 4 = "página validada en la etapa 2").
-    Caso que lo abrió: Milan 2022-23, pág. 84 del visor (impreso 84), .md L2527, "Minusvalenze da cessione diritti pluriennali": el .md
-    (42 | 2.456 | -2.414) está bien (imagen de la página; las columnas suman 18.566 y 22.232); el texto propio del PDF no trae 42 ni
-    2.456. Parte fue efecto del corte del lote: `paginasARearmar()` (texto-propio-a-md.mjs L263) no rearma si la etapa 6 cerró, y la
-    corrida cortada no llegó a la etapa 6. Medir con el lote 14 terminado (sus 34 documentos). Guido descartó por ahora encadenar el
-    `--reintentar` al final del lote.
+152. LAS RESPUESTAS DE LA COLA NO SE REUSAN ENTRE AÑOS NI ENTRE CLUBES (Guido, 2026-10-07: "por qué pasar por Jev de nuevo si ya sabemos
+    las categorías").
+    QUÉ SE SABE:
+    - Las respuestas de categoría se aplican en `cargar.mjs` (gratis, sin lote ni Jev): el flujo que funcionó fue responder en
+      `tools/cola.mjs --responder <id> aceptar|corregir --valor <categoría>` y correr `node tools/verificar.mjs "<pdf>"` +
+      `node tools/cargar.mjs "<pdf>" --desde-verificacion` (ensayo) / `--escribir`. El lote solo hace falta cuando el documento nunca se
+      categorizó (quedó frenado en la etapa 6).
+    - Atalanta 2024 volvió a preguntar "Oneri sociali", "F.A.F.I.C. - T.F.R.", "costi per acquisizione temporanea" y "minusvalenze" ya
+      decididos en Atalanta 2021 con etiquetas casi iguales ("b) oneri sociali"): el precedente del club compara la etiqueta EXACTA.
+      Y entre clubes no hay reuso: cada club italiano nuevo volvió a preguntar lo mismo (Atalanta 30, Verona 21, Sassuolo 13, Monza 28,
+      Roma 2022 5, Lazio 26 filas).
+    - Las decisiones de Guido para Italia (2026-10-06/07), útiles como semilla: oneri sociali y TFR → wages_squad; "costi per
+      tesserati" → wages_squad; minusvalenze de jugadores → exceptional_items (como "Capital losses on disposals" de Juventus); costos de
+      préstamo de jugadores ("acquisizione temporanea") → other_expenses; ingresos por préstamo → player_sales; premios a otros clubes
+      por formación ("valorizzazione", "premi di preparazione", "Contributo Solidarietà Fifa", "premi ex art. 103 NOIF") →
+      player_amortisation; alquileres ("godimento di beni di terzi") → admin_general_expense; contribuciones a la Lega, costi specifici
+      tecnici, attività sportiva, % de TV al visitante → match_organisation_expense; provisiones → other_amortisation; amortización de
+      intangibles → player_amortisation; "da L.N.P." y "Mutualità" → broadcasting; "Proventi non audiovisivi" → sponsorship_commercial;
+      abbonamenti → season_tickets. Socios y otras secciones deportivas: "no" en todas las S.p.A. Están en `Admin/cola-revision.jsonl`
+      (líneas `tipo: respuesta`) y en `Admin/categorias-aprendidas.jsonl`.
+    Arreglo candidato (escalón, medido antes/después): normalizar la etiqueta (sin "a)", "b)", numeración, mayúsculas) al buscar el
+    precedente y las respuestas del mismo club; después, evaluar un precedente por país para etiquetas idénticas. Lo cargado tiene que dar
+    idéntico (prueba completa).
 
-151. GESTIONES DE ITALIA SIN DECIDIR: MONZA Y COMO (2026-10-07). Monza: desde el 8/7/2022 el club no tiene presidente (el último fue Paolo
-    Berlusconi, 29/3/2019-8/7/2022; lo controla Fininvest), así que sus cierres al 31/12 de 2022-2024 no tienen persona: ¿se descartan? Desde el
-    29/9/2025 la presidente es Lauren Crampsie (Beckett Layne Ventures). Como: el presidente que firma el bilancio 2024 es Mirwan Suwarso, pero las
-    fuentes se contradicen en desde cuándo lo es (noviembre de 2019 o octubre de 2024, money.it); falta la fecha para cargarlo. También quedó
-    dudoso Cremonese 2023: cierra el 30/6/2023, Rossi, pero Dini fue nombrado el 6/7/2023 y pudo firmar el balance (¿`firmo`?).
+153. UNA PREGUNTA YA RESPONDIDA VUELVE CON OTRO ID (Guido, 2026-10-07). Casos: Hellas Verona 2020 (escala de las notas: 372b04d →
+    e7639f2), Lazio 2008-09 (escala del consolidado: 7ce3412 → 19e8b00), Lazio 2022-23 (dejar afuera resultado integral y EPS:
+    70e0974 → 38436d9). Mismo texto de pregunta, id nuevo al re-verificar después de responder otras cosas, y la respuesta vieja no se
+    aplica (hubo que re-responder). El id es un hash de pdf|etapa|motivo|detalle (`tools/cola.mjs`, función que agrega casos ~L70-80; los
+    casos de la IA llevan la pregunta en el detalle, y la IA la redacta distinto entre corridas o cambian las líneas citadas). Ya existe
+    `respuestaPorDetalle()` en `verificar.mjs` (~L699) para "duda ya contestada para el club": mirar por qué no los atrapó. La respuesta
+    tiene que quedar atada a algo estable (como los ajustes: pdf + campo/tema + renglón).
 
-152. LAS RESPUESTAS DE LA COLA NO SE REUSAN ENTRE AÑOS DEL MISMO CLUB (Guido, 2026-10-07: "por qué pasar por Jev de nuevo si ya sabemos
-    las categorías"). Caso: Atalanta 2024 volvió a preguntar "Oneri sociali" (wages_squad), "F.A.F.I.C. - T.F.R.", "costi per acquisizione
-    temporanea" y "minusvalenze" cuando Guido ya los había decidido en Atalanta 2021 con etiquetas casi iguales ("b) oneri sociali"). El
-    precedente del club compara la etiqueta exacta. Arreglo candidato (escalón, con medición antes y después): normalizar la etiqueta (sin
-    "a)", "b)", numeración ni mayúsculas) al buscar el precedente y las respuestas de cola del mismo club; si coincide, se usa la misma
-    categoría sin preguntar. Medir cuántas preguntas de categoría desaparecen en los clubes italianos y que lo cargado dé idéntico.
+154. UNA RESPUESTA A UNA DUDA DE COLUMNA NO CAMBIA LO EXTRAÍDO (2026-10-07). Caso: Como 2025 (`Como-gruppo-pro-forma-consolidamento-2025`),
+    un "Prospetto Pro-forma di Consolidamento" (.md L354-409) con columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma.
+    Guido decidió perímetro individual (Como 1907). Ni la respuesta "no" a la duda e4b24c1 ("¿solo la columna pro-forma?"), ni el ajuste
+    de perímetro + `lote.mjs --rehacer` (lote 16, US$ 0,38) cambiaron la columna: `extraer.mjs` tomó otra vez el pro-forma (62,05 M).
+    `verificar.mjs` ~L699-709 guarda las respuestas de duda-tema como NOTA, no actúan. Además `perimetro-senales.mjs` ve el pro-forma como
+    "solo individual" (no reconoce "consolidamento" como perímetro: a propósito, ver su cabecera).
+    CÓMO SE RESOLVIÓ A MANO: 23 ajustes `fila` (`--reemplaza <etiqueta extraída>` con el valor de la columna 1), generados con un script
+    desde la tabla del .md (filas.json → línea → celda 1; "-" = 0; lado "otro" → financiero), más `resultado-final (105.065.627)`; y en la
+    cola se aceptaron los "no-cierra" de los totales (comparan contra el total del pro-forma). Queda en `Admin/ajustes-manuales.jsonl`.
+    Arreglo candidato: que `extraer.mjs`/`localizar.mjs` reciban la columna a usar cuando el bloque tiene columnas por entidad y el
+    perímetro está fijado (escalón con compuerta: el total impreso de esa columna).
 
-153. UNA PREGUNTA YA RESPONDIDA VUELVE CON OTRO ID (Guido, 2026-10-07). Casos: Hellas Verona 2020 (escala de las notas: 372b04d y
-    después e7639f2), Lazio 2008-09 (7ce3412 → 19e8b00) y 2022-23 (70e0974 → 38436d9): el mismo texto de pregunta, con id nuevo al
-    re-verificar, y la respuesta vieja no se aplica. Mirar cómo se arma el id del caso en tools/cola.mjs / verificar.mjs (hash de
-    pdf|etapa|motivo|detalle) y qué cambia entre corridas; la respuesta tiene que quedar atada a algo estable (como los ajustes).
-
-154. UNA RESPUESTA "NO" A UNA PREGUNTA DE COLUMNA NO CAMBIA LO EXTRAÍDO. Caso: Como 2025, duda-tema e4b24c1 "¿se carga solo la columna
-    pro-forma?" respondida "no" (Guido quiere la columna Como 1907): verificar.mjs la guarda como nota y la carga seguía con la columna del
-    grupo; se resolvió con un ajuste de perímetro y `lote.mjs --rehacer` (lote 16). Si se repite: que un "no" a una duda de columna
-    dispare el re-extraer con la columna correcta, o que la pregunta no se haga cuando el perímetro ya está fijado.
-
-155. ITALIA: "17) INTERESSI E ALTRI ONERI FINANZIARI" SE SUMA COMO INGRESO (medido 2026-10-07, lote 14). El formato del Codice Civile
-    imprime los costos en positivo y los resta por posición ("TOTALE (C) (15+16-17)"); la etapa 6 toma el 17) con su signo impreso y lo
-    suma. Torino 2018, 2021 y 2024 cierran al centavo restándolo (2024: 19,683 + 0,439 − 3,227 − 6,496 de impuestos = 10,398, el impreso);
-    Udinese 2021-22 y 2024-25 cierran restándolo y con el signo de los impuestos también al revés. Arreglo candidato: escalón con el total
-    impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, el contrario.
+155. ITALIA: EL SIGNO DE "17) INTERESSI E ALTRI ONERI FINANZIARI" Y DE LAS IMPOSTE (medido 2026-10-07, lote 14). El formato del Codice
+    Civile imprime los costos en positivo y los resta por posición ("TOTALE (C) (15+16-17)", "20) Imposte" como costo); la etapa 6
+    (`verificar.mjs`, `conSigno(fin)`) toma el 17) con el signo impreso y lo SUMA. Casos y arreglos manuales (todos en
+    `Admin/ajustes-manuales.jsonl`, 2026-10-07):
+    - Torino 2018/2021/2024: `fila` "d) oneri diversi (17, costo)" con el valor entre paréntesis, `--reemplaza "d) oneri diversi"`
+      (2024: 19,683 + 0,439 − 3,227 − 6,496 = 10,398, el impreso; los tres cierran al centavo).
+    - Udinese 2021-22 y 2024-25: los renglones 16) y 17) se llaman los dos "altri", y `--reemplaza` saca TODAS las filas con esa etiqueta
+      (`verificar.mjs` ~L479-480): se reemplazan los dos ("altri proventi finanziari (16)" positivo y "altri oneri finanziari (17,
+      costo)" negativo); además las imposte con el signo al revés ("imposte correnti (costo)" negativo, "imposte differite e anticipate
+      (ingreso)" positivo).
+    - Napoli 2024 ("e) altri" y "b) perdite su cambi"), Napoli 2025 ("e) altri"), Cremonese 2025 y Parma 2023 ("altri" 16 y 17): igual.
+    - Las dudas de la IA en la cola sobre escala/signo de estos documentos se respondieron en coherencia con los ajustes.
+    Arreglo candidato: escalón con el total impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, los
+    renglones bajo 17) restando (y las imposte como costo). Medir con los 8 documentos de arriba que hoy cierran por ajuste: sacando los
+    ajustes, el script tiene que dar lo mismo.
 
 156. ITALIA: LOS GASTOS SALEN CASI EL DOBLE (medido 2026-10-07, lote 14; causa encontrada por un subagente). La "variazione delle
     rimanenze" es negativa (reduce costos) y entra a gastos en valor absoluto: la suma de renglones deja de coincidir con "TOTALE COSTI
@@ -144,3 +185,17 @@ ni en el comentario de ningún archivo de código.
     renglón "altri" se cuenta además de su subtotal abierto por la nota b46. Se resolvieron con ajustes manuales (Admin/ajustes-manuales.jsonl,
     2026-10-07). Arreglo candidato: (1) `esSumaDe` compara también la suma CON signo; (2) las hojas de `cerrarNota` vuelven a tomar el signo
     impreso del renglón; (3) `ajuste()` nunca acepta el propio total entre las líneas sumadas.
+    LO QUE SE APRENDIÓ AL ARREGLARLO A MANO (para no redescubrirlo):
+    - Los gastos se toman en VALOR ABSOLUTO: un ajuste `fila` del lado gasto con valor negativo NO resta (Roma 2018: probado con "82",
+      "(82)", "164" y "(164)", todos suman). Para una partida que reduce costos, el arreglo que funciona es mudarla al lado ingreso con el
+      mismo valor (mismo efecto en el resultado): "Variazione delle rimanenze (reduce costos)", lado ingreso, 82.
+    - Un total que se cuenta como línea se saca con `fila --valor "0" --reemplaza "<etiqueta del total>"` (Roma 2018, "Totale Costi di
+      esercizio"); un renglón contado dos veces, igual (Parma 2023, "altri" de L557).
+    - Roma 2018 tiene formato propio (conto economico "riclassificato" IFRS): "Totale Ricavi/Costi di esercizio" NO incluyen la "Gestione
+      operativa netta calciatori" (+45.922, L1918, se cargó como ingreso) ni Ammortamenti (59.220) y Accantonamenti (546), impresos debajo
+      del total; el resultado impreso es el del Gruppo (−25.498) y el consolidado incluye terzi (225, L1927, se cargó del lado
+      financiero para no inflar ingresos). Los chequeos de total de ingresos/gastos no pueden cerrar ahí: se aceptaron en la cola.
+    - Napoli 2024 cierra solo con los 2 ajustes de financiero (sin abrir notas); el subagente propuso un truco para que cierre en la
+      "lectura 4" con las notas abiertas (`signoNormalDe('gasto')` invierte si la mayoría de los ajustes de gasto son negativos) y NO se usó.
+    - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
+      mismo. Y la prueba completa idéntica.
