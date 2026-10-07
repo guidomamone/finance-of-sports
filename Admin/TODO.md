@@ -118,10 +118,13 @@ ni en el comentario de ningún archivo de código.
       costo)" negativo); además las imposte con el signo al revés ("imposte correnti (costo)" negativo, "imposte differite e anticipate
       (ingreso)" positivo).
     - Napoli 2024 ("e) altri" y "b) perdite su cambi"), Napoli 2025 ("e) altri"), Cremonese 2025 y Parma 2023 ("altri" 16 y 17): igual.
+    - Bologna 2019-20, 2020-21 y 2021-22 (Versión 568): un solo ajuste por año, el 17) con `--reemplaza-linea` (to-do 158, ya existe:
+      los ajustes nuevos no necesitan reemplazar las dos filas homónimas). Ahí las imposte NO hacían falta: entraban netas. O sea, el signo
+      de las imposte no es igual en todos los documentos; el del 17) sí (11 documentos).
     - Las dudas de la IA en la cola sobre escala/signo de estos documentos se respondieron en coherencia con los ajustes.
     Arreglo candidato: escalón con el total impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, los
-    renglones bajo 17) restando (y las imposte como costo). Medir con los 8 documentos de arriba que hoy cierran por ajuste: sacando los
-    ajustes, el script tiene que dar lo mismo.
+    renglones bajo 17) restando (y las imposte como costo). Medir con los 11 documentos de arriba que hoy cierran por ajuste: anulando sus
+    ajustes de financiero/impuesto (`ajustes.mjs --anular`, Versión 579) el script tiene que dar lo mismo que lo cargado.
 
 156. ITALIA: LOS GASTOS SALEN CASI EL DOBLE (medido 2026-10-07, lote 14; causa encontrada por un subagente). La "variazione delle
     rimanenze" es negativa (reduce costos) y entra a gastos en valor absoluto: la suma de renglones deja de coincidir con "TOTALE COSTI
