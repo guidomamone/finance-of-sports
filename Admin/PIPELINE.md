@@ -186,6 +186,9 @@ Mitigaciones:
 
 - a) Notas: reemplazan a su renglón solo si suman, también anidadas (una fila de una nota abierta por otro cuadro). Se lee la estructura impresa: qué subtotal suma qué, cuadros de detalle que no se suman
   dos veces, subtotales impresos arriba de sus componentes.
+  Si las filas que dicen abrir un renglón no lo cierran, se prueba solo con las del mismo lado (to-do 163: "altri" es renglón de ingresos y
+  del 16) y 17), y las notas de intereses también dicen abrir "altri"). Escalón, no regla: como regla rompía Goiás 2025, cuya nota mezcla
+  un gasto y un ingreso que dan el renglón neto.
 - b) Resultado: ingresos − gastos ± financiero ± impuesto tiene que dar el resultado impreso.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.

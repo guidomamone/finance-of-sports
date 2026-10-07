@@ -166,13 +166,12 @@ ni en el comentario de ningún archivo de código.
     Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
 
 
-163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
-    proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
-    difieren en 0,097 M en cómo reparten a) y f), `cerrarNota` no cierra y a) se carga entero como other_income → "Televisión en 0" y el
-    lote pide un `--reintentar` (~US$ 0,50) que no lo arregla. Se resolvió a mano con 2 `fila` (a) sin TV 34.086.540 + TV 16.205.000) y 2
-    `categoria`. Bologna 2019-20 a 2021-22: la nota "Altri ricavi e proventi" abre el grupo 5) entero (contributi + altri, al euro), no cada renglón;
-    sin abrirla, TV (33,9 / 62,7 / 41,8 M) y sponsors quedaban en otros ingresos. Se resolvió con 10 `fila` por año generadas por script desde
-    la tabla de la nota (los dos renglones salen con `--reemplaza-linea`) y `--corregir-categoria` para cada fila nueva (Versión 569).
-    Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
-    2,05 M); ahí se usó `incluye` por el to-do 158. Arreglo candidato: si la nota suma exactamente el SUBTOTAL del grupo (aunque no sus
-    renglones uno por uno), que reemplace el grupo entero (compuerta: el subtotal impreso).
+163. LA NOTA ABRE EL SUBTOTAL DEL GRUPO Y NO SE USA (2026-10-07). Problema 1 (nombres repetidos: las notas de intereses también dicen abrir
+    "altri") resuelto en la Versión 577 con un escalón (Bologna 2020-21 da sin ajustes lo cargado). Falta el problema 2 (ok de Guido: como
+    escalón, no regla): la extracción asigna las filas de la nota al SUBTOTAL del grupo ("Totale altri ricavi e proventi") y verificar.mjs
+    nunca abre la nota de un subtotal (lo saltea porque es la suma de los renglones de arriba). Casos: Bologna 2019-20 (nota L2311-L2321,
+    67.881.535 = contributi L907 + altri L908) y 2021-22 (la última fila de la nota, 831.190, en la pág. siguiente, L2708); Sassuolo 2025 (el
+    estado separa a) 50,29 M / f) 15,41 M y la nota reparte los mismos 68,09 M en otras filas: difieren 0,097 M en a) y f); se resolvió con 2
+    `fila` y 2 `categoria`); Udinese 2021-22 ("Totale altri ricavi e proventi" 72.965.182, contributi 3,86 M en la nota y 2,05 M en el estado;
+    se usó `incluye`). Escalón: si las filas de la nota suman el subtotal impreso (cerrarNota), reemplazan a los renglones que lo componen.
+    Medir sacando los ajustes de Bologna 2019-20/2021-22, Sassuolo 2025 y Udinese 2021-22: tiene que dar lo cargado.

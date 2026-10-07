@@ -319,7 +319,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // saber qué suma qué; ver cerrarNota()).
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
       const obj = Math.abs(f[campo] || 0);
-      const c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
+      let c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
+      // ESCALÓN DEL LADO (to-do 163, problema 1; ok de Guido): si las filas que dicen abrir este renglón no lo cierran, se prueba SOLO con las
+      // del mismo lado que el renglón. Nombres repetidos: en el formato italiano "altri" es el renglón de ingresos 5), el 16) y el 17), y las
+      // notas de intereses (lado financiero) también dicen abrir "altri" (Bologna 2020-21: 9 filas de ingresos 79.927.218 + 8 de intereses =
+      // 81.433.661 contra 79.927.219). Escalón y no regla: probado como regla, rompía Goiás 2025 (cargado), cuya nota "Outras Receitas e
+      // Despesas" mezcla un gasto y un ingreso que juntos dan el renglón neto. La compuerta es la de siempre: cerrarNota().
+      if (!c && hijas.length >= 2) {
+        const ladoOk = (h) => !h.lado || !f.lado || h.lado === f.lado || h.lado === 'otro' || f.lado === 'otro';
+        const mismas = hijas.filter(ladoOk);
+        if (mismas.length >= 2 && mismas.length < hijas.length) { c = cerrarNota(obj, mismas, campo, f.u || 0) || cerrarConAjuste(f, mismas, campo); if (c) { const n = `la nota de "${f.etiqueta}" cierra solo con sus filas del lado ${f.lado} (${hijas.length - mismas.length} filas de otro lado dicen abrir un renglón con el mismo nombre)`; if (!notas.includes(n)) notas.push(n); } }
+      }
       if (c) out.push(...conLineas(abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1), [f]));
       else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M' && !desgloseTrivial(f, hijas)) { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
     }

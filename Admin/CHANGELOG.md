@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 577 — Una nota con nombres repetidos se prueba solo con las filas de su lado (2026-10-07)
+
+- `verificar.mjs`, to-do 163 problema 1: si las filas que dicen abrir un renglón no lo cierran, escalón con solo las del mismo lado.
+  Causa en Bologna 2020-21: las notas de intereses (16 y 17) también dicen abrir "altri" y sumaban 81.433.661 contra 79.927.219.
+- Medido: probado primero como regla, rompía Goiás 2025 (cargado: su nota mezcla gasto e ingreso). Como escalón: de 122 documentos solo
+  cambia Bologna, lo cargado idéntico; sin sus ajustes de ingresos, Bologna 2020-21 da lo mismo que el sitio (TV 62,7 M).
+
 ## Versión 576 — El nombre legal del alta: portada y más frecuente tienen que coincidir; si no, a la cola (2026-10-07)
 
 - `alta-club.mjs`, `decidirNombre()`: ajuste `name` (nuevo en `ajustes.mjs`, también por carpeta) o respuesta de la cola → portada y más
