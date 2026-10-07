@@ -38,3 +38,5 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - Último chequeo: 2026-09-17.
 
 - **Color de marca**: `#980A2B` (rojo granate) — giallorosso (it.wikipedia, Associazione_Sportiva_Roma); la camiseta titular es roja; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf` (sourceId `asroma-it-bilancio-2022-consolidato`).

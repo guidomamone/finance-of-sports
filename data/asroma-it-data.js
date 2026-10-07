@@ -31,9 +31,48 @@
 //   2022: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2022-06-30","sourceId":"asroma-it-bilancio-2022-consolidato"}
 // ============================================================================
 
-const asromaitRevenueLinesByYear = {};
-const asromaitExpenseLinesByYear = {};
-const asromaitFiscalYearMeta = {};
+const asromaitRevenueLinesByYear = {
+  // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:39.957, disclosureLevel:'aggregated' }, // pág. 43, Jev 1
+    { rawLabel:'Ricavi delle vendite commerciali e licensing', normalizedCategory:'sponsorship_commercial', amountNative:13.989, disclosureLevel:'aggregated' }, // pág. 43, Jev 0.96
+    { rawLabel:'Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:8.241, disclosureLevel:'aggregated' }, // pág. 43, Jev 1
+    { rawLabel:'Diritti televisivi e diritti d\'immagine', normalizedCategory:'broadcasting', amountNative:78.516, disclosureLevel:'aggregated' }, // pág. 43, Jev 0.99
+    { rawLabel:'Pubblicità', normalizedCategory:'sponsorship_commercial', amountNative:16.336, disclosureLevel:'aggregated' }, // pág. 43, Jev 1
+    { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:34.152, disclosureLevel:'aggregated' }, // pág. 43, Jev 1
+    { rawLabel:'Ricavi da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:14.684, disclosureLevel:'aggregated' }, // pág. 43, Claude 0.8
+  ],
+};
+const asromaitExpenseLinesByYear = {
+  2022: [ // tools/cargar.mjs (2026-10-07)
+    { rawLabel:'Acquisti materie di consumo', normalizedCategory:'admin_general_expense', amountNative:-10.252, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_expenses', amountNative:0.544, disclosureLevel:'aggregated' }, // pág. 43, Jev 1
+    { rawLabel:'Spese per servizi', normalizedCategory:'admin_general_expense', amountNative:-63.207, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Spese per godimento beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-6.868, disclosureLevel:'aggregated' }, // pág. 43, Jev 0.91
+    { rawLabel:'Spese per il personale', normalizedCategory:'wages_squad', amountNative:-182.831, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-21.707, disclosureLevel:'aggregated' }, // pág. 43, Jev 0.99
+    { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-90.277, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Oneri da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-26.29, disclosureLevel:'aggregated' }, // pág. 43, precedente
+  ],
+};
+const asromaitFiscalYearMeta = {
+  2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'asroma-it-bilancio-2022-consolidato',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-23.938, tax:-0.507,
+    extraRows: [
+      {label:'Proventi finanziari', value:2.676},
+      {label:'Oneri finanziari', value:-26.614},
+      {label:'imposte correnti', value:-0.507},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:205.875, officialTotalExpenses:400.888, officialPAT:-219.459,
+  },
+};
 const asromaitPresupuestoOverlayByYear = {};
 
 const asromaitPasesData = [];
@@ -51,6 +90,12 @@ window.CLUB_GENERIC_DATA['asroma-it'] = {
 // Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
 // primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
 Object.assign(sources, {
+  'asroma-it-bilancio-2022-consolidato': {
+    id:'asroma-it-bilancio-2022-consolidato', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2022-consolidato (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
 });
 
 memberCountByClub['asroma-it'] = null;
