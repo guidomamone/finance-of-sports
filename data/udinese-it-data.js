@@ -50,6 +50,8 @@ const udineseitRevenueLinesByYear = {
     { rawLabel:'Rimborsi assicurativi', normalizedCategory:'other_income', amountNative:0.161012, disclosureLevel:'aggregated' }, // pág. 66, Jev 1
     { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:4.843268, disclosureLevel:'aggregated' }, // pág. 66, Jev 0.99
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
+  // Generados/Italia/Udinese/Udinese-bilancio-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2022: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Udinese/Udinese-bilancio-2021-22.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
@@ -57,8 +59,16 @@ const udineseitRevenueLinesByYear = {
     { rawLabel:'- Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.027534, disclosureLevel:'aggregated' }, // pág. 63, Jev 0.99
     { rawLabel:'- Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.016281, disclosureLevel:'aggregated' }, // pág. 63, Jev 0.99
     { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:2.212326, disclosureLevel:'aggregated' }, // pág. 63, Jev 1
-    { rawLabel:'contributi in conto esercizio', normalizedCategory:'other_income', amountNative:2.046228, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.97
-    { rawLabel:'altri', normalizedCategory:'other_income', amountNative:70.918956, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
+    { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:3.85834, disclosureLevel:'aggregated' }, // pág. 64, Jev 0.97
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:2.2, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:5.925334, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.773293, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Proventi da cessioni diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:36.160511, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Ricavi da cessione temporanea prestazione calciatori', normalizedCategory:'player_sales', amountNative:0.0153, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Plusvalenze da cessione calciatori', normalizedCategory:'player_sales', amountNative:16.928151, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Altri proventi da trasferimento calciatori', normalizedCategory:'player_sales', amountNative:0.534468, disclosureLevel:'aggregated' }, // pág. 64, precedente
+    { rawLabel:'Rimborsi assicurativi', normalizedCategory:'other_income', amountNative:0.116158, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:6.453626, disclosureLevel:'aggregated' }, // pág. 65, precedente
   ],
 };
 const udineseitExpenseLinesByYear = {
@@ -138,8 +148,12 @@ const udineseitFiscalYearMeta = {
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 121.750. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (5.856.187). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (2.354.788). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
-  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.153.111. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.153.111. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos,
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): incluye = broadcasting. Claude 2026-10-07: la TV (Proventi da cessioni diritti audiovisivi 36.160.511, nota L2442) está dentro del renglón 'altri' 70.918.956 del estado (L857); no se separa porque --reemplaza 'altri' también tocaría el 16) y el 17) (ver to-do 157)
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 121.750. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (5.856.187). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (2.354.788). Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 5.153.111. Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2022-06-30',
     sourceId:'udinese-it-bilancio-2021-22',
@@ -155,9 +169,8 @@ const udineseitFiscalYearMeta = {
       {label:'imposte correnti (costo)', value:-2.354788},
       {label:'imposte differite e anticipate (ingreso)', value:5.153111},
     ],
-    incluidoEn:{"broadcasting":"other_income"}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
     grossDebt:null, cash:null,
-    officialTotalRevenue:78.080241, officialTotalExpenses:136.368565, officialPAT:-69.053247,
+    officialTotalRevenue:78.080238, officialTotalExpenses:136.368565, officialPAT:-69.053247,
   },
 };
 const udineseitPresupuestoOverlayByYear = {};

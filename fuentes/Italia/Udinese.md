@@ -55,3 +55,5 @@ documentos) o pagar el Registro Imprese para esos dos ejercicios puntuales.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf` (sourceId `udinese-it-bilancio-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf` (sourceId `udinese-it-bilancio-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf` (sourceId `udinese-it-bilancio-2021-22`).
