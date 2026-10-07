@@ -8,7 +8,7 @@
 //   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -113,7 +113,6 @@ window.RANKINGS["it-seriea"] = {
   },
   2021: {
     leagueSize: null,
-    sinDato: ["sampdoria-it"],
     clubs: [
       { id:"juventus-it", revenue:569.226, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2020-21",
@@ -127,6 +126,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"torino-it", revenue:94.82, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2021",
         mix:[["Comercial / Sponsors",12.637],["Estadio",1.586],["Televisión",61.516],["Venta de Jugadores",12.352],["Otras secciones deportivas",0.001],["Otros ingresos",6.727]] },
+      { id:"sampdoria-it", revenue:86.429, reportType:"official_balance_sheet",
+        sourceId:"sampdoria-it-fascicolo-bilancio-2021",
+        mix:[["Comercial / Sponsors",8.664],["Estadio",1.15],["Televisión",59.131],["Venta de Jugadores",16.828],["Otros ingresos",0.655]] },
     ],
   },
   2020: {

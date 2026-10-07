@@ -14,3 +14,5 @@ Los fascicoli están en `sampdoria.it/wp-content/uploads/` (`2019/04/Fascicolo_B
 - Último chequeo: 2026-10-03.
 
 - **Color de marca**: `#002160` (azul) — "maglia blu" con banda biancorossonera (it.wikipedia, Unione_Calcio_Sampdoria); theme-color de sampdoria.it. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf` (sourceId `sampdoria-it-fascicolo-bilancio-2021`).

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md",
- "generado": "2026-10-07T21:21:04.686Z",
+ "generado": "2026-10-07T21:23:23.247Z",
  "estado": "ok",
  "clubId": "sampdoria-it",
  "year": 2022,
@@ -101,6 +101,16 @@
    "reemplazaLinea": 902,
    "motivo": "to-do 157: i) es otro 'di cui' de h) (28.550 + 2.959.520 + 5.785.259 = 8.773.329 = h); se contaba dos veces",
    "evidencia": ".md L899-902; 5) sin i) = 75.294.337 contra 75.294.336 impreso",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "cierre",
+   "valor": "2021-12-31",
+   "linea": null,
+   "motivo": "Claude 2026-10-07 (ok de Guido, cola d29023b): el conto economico es al 31/12/2021; 30/03/2022 es la fecha de aprobación del consiglio",
+   "evidencia": ".md L882-914 (pág. 27 del visor, impreso 25)",
    "autor": "Guido",
    "fecha": "2026-10-07"
   }
