@@ -60,6 +60,22 @@ const interitRevenueLinesByYear = {
     { rawLabel:'i) other income from player management', normalizedCategory:'player_sales', amountNative:2.469482, disclosureLevel:'aggregated' }, // pág. 17, precedente
     { rawLabel:'l) sundry revenues and income', normalizedCategory:'other_income', amountNative:22.999055, disclosureLevel:'aggregated' }, // pág. 17, Jev 1
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:67.296366, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:31.541347, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti', normalizedCategory:'other_income', amountNative:2.022694, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'- altri contributi in conto esercizio', normalizedCategory:'other_income', amountNative:16.374844, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.97
+    { rawLabel:'b) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:88.168392, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:10.026251, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:44.148269, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'e) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:264.422878, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'f) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:3, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'g) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:14.370974, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'- proventi diversi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:4.117261, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.94
+    { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:21.522762, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+  ],
 };
 const interitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -112,6 +128,26 @@ const interitExpenseLinesByYear = {
     { rawLabel:'- Cost of previously years', normalizedCategory:'exceptional_items', amountNative:-1.763, disclosureLevel:'aggregated' }, // pág. 61, Jev 0.96
     { rawLabel:'- Sundry costs', normalizedCategory:'other_expenses', amountNative:-2.402, disclosureLevel:'aggregated' }, // pág. 61, Jev 1
   ],
+  2025: [ // tools/cargar.mjs (2026-10-07)
+    { rawLabel:'6) Per materie prime, sussidiarie, di consumo', normalizedCategory:'other_expenses', amountNative:-16.659295, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'7) Per servizi', normalizedCategory:'admin_general_expense', amountNative:-80.032871, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'8) Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-17.047058, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-231.682534, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-11.737955, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.92
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-2.551709, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.92
+    { rawLabel:'e) altri costi', normalizedCategory:'wages_squad', amountNative:-7.248734, disclosureLevel:'aggregated' }, // pág. 46, Claude 0.88
+    { rawLabel:'a) ammortamento immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-79.856596, disclosureLevel:'aggregated' }, // pág. 46, Claude 0.88
+    { rawLabel:'b) ammortamento immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-2.197761, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'c) svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-6.34645, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.98
+    { rawLabel:'d) svalutazioni di crediti compresi nell\'attivo circolante e nelle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-2.558108, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'12) Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:0.01942, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.98
+    { rawLabel:'13) Altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:-8.871892, disclosureLevel:'aggregated' }, // pág. 46, Claude 0.92
+    { rawLabel:'a) oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-7.128693, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'b) costi da acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-0.25, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-0.011849, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'- oneri diversi da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-0.53586, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-7.326177, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+  ],
 };
 const interitFiscalYearMeta = {
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 521.197. D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
@@ -137,6 +173,29 @@ const interitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:439.642181, officialTotalExpenses:526.149354, officialPAT:-140.05618,
   },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 780.928. D) 18) rettifiche: la fila no se extrajo (to-do 155). Sin reemplaza: la toma el escalón 'ajustes del financiero sin reemplaza' de verificar.mjs (to-do 156 B), ya no hace falta --reemplaza-linea
+  2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'inter-it-fascicolo-bilancio-consolidato-2024-25',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-35.098536, tax:-14.491102,
+    extraRows: [
+      {label:'a.5) altri proventi', value:0.252746},
+      {label:'d.5) altri proventi diversi', value:6.116183},
+      {label:'c) verso imprese controllanti', value:-0.095298},
+      {label:'e) altri interessi e oneri finanziari', value:-42.382857},
+      {label:'17 bis) Utile e perdite su cambi', value:0.229762},
+      {label:'rivalutazioni di partecipazioni', value:0.780928},
+      {label:'a) imposte correnti', value:-15.335692},
+      {label:'b) imposte relative a esercizi precedenti', value:0.416423},
+      {label:'c) imposte differite', value:0.413833},
+      {label:'d) imposte anticipate', value:0.014334},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:567.012038, officialTotalExpenses:482.012273, officialPAT:35.398278,
+  },
 };
 const interitPresupuestoOverlayByYear = {};
 
@@ -160,6 +219,12 @@ Object.assign(sources, {
     title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'inter-it-fascicolo-bilancio-consolidato-2024-25': {
+    id:'inter-it-fascicolo-bilancio-consolidato-2024-25', clubId:'inter-it',
+    title:'F.C. Internazionale Milano S.p.A. — Inter-fascicolo-bilancio-consolidato-2024-25 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

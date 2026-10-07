@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
-//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -35,8 +35,10 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["inter-it"],
     clubs: [
+      { id:"inter-it", revenue:664.571, reportType:"official_balance_sheet",
+        sourceId:"inter-it-fascicolo-bilancio-consolidato-2024-25",
+        mix:[["Comercial / Sponsors",166.834],["Estadio",115.844],["Televisión",309.919],["Venta de Jugadores",25.185],["Otros ingresos",46.789]] },
       { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
         mix:[["Comercial / Sponsors",135.88],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",68.042]] },
