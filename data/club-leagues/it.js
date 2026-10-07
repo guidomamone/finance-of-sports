@@ -21,4 +21,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'asroma-it': { 2022: 'it-seriea' },
   // Atalanta (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Atalanta".
   'atalanta-it': { 2021: 'it-seriea' },
+  // Bologna (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Bologna".
+  'bologna-it': { 2019: 'it-seriea' },
 });

@@ -86,6 +86,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2019: {
     leagueSize: null,
+    sinDato: ["bologna-it"],
     clubs: [
       { id:"juventus-it", revenue:707.217, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2018-19",

@@ -408,6 +408,9 @@ const clubs = {
   // Atalanta: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.pdf.
   // brandColor y su procedencia: fuentes/Italia/Atalanta.md.
   'atalanta-it': { id:'atalanta-it', name:'Atalanta Bergamasca Calcio S.p.A.', displayName:'Atalanta', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0D68B1' },
+  // Bologna: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Bologna.md.
+  'bologna-it': { id:'bologna-it', name:'Bologna F.C. 1909 S.p.A.', displayName:'Bologna', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#9F1F33' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
