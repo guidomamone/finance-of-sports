@@ -135,6 +135,26 @@ ni en el comentario de ningún archivo de código.
     Arreglo candidato: escalón con el total impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, los
     renglones bajo 17) restando (y las imposte como costo). Medir con los 11 documentos de arriba que hoy cierran por ajuste: anulando sus
     ajustes de financiero/impuesto (`ajustes.mjs --anular`, Versión 579) el script tiene que dar lo mismo que lo cargado.
+    INVESTIGADO (2026-10-07, subagente; verificado a mano el caso de Cremonese):
+    - Causa (tools/verificar.mjs): fin se arma con el signo IMPRESO (renglonesOTotal ~L469-472) y la compuerta del resultado prueba 4
+      combinaciones (sf, si) con UN SOLO factor sf para todas las filas financieras (~L626-638): con 16) positivo y 17) a restar no hay
+      combinación que sirva. En los 11 documentos "16) + 17-bis − 17) = C impreso" se cumple y el error es exactamente 2 × 17).
+    - Matices: 17-bis va con su signo (neto utili/perdite); Napoli 2024 desglosa 17-bis y "b) perdite su cambi" 4.559 positivo resta; las
+      hojas de nota del 17) (detalla_a) restan con él; Bologna 2019-20 tiene el mismo patrón en la sección D (19) svalutazioni resta).
+    - Imposte NO necesitan escalón: `si` ya se prueba aparte; con el financiero bien cierra solo. Los 4 ajustes de imposte de Udinese serían
+      redundantes (confirmarlo al medir). Torino imprime el efecto (si=+1); Napoli, Bologna, Cremonese, Udinese como costo (si=-1).
+    - La etiqueta NO es compuerta: Atalanta 2021/2024, Sassuolo 2025, Monza 2022, Lazio 2019-20/2022-23 y Roma 2022 imprimen el 17) entre
+      paréntesis y ya cierran: una regla "17) resta" los rompería. Va como escalón solo si la escalera no cierra.
+    - DATOS MAL HOY por la compuerta floja (valor absoluto + 0,01 M de tolerancia; cierran invirtiendo TODO el financiero, sf=-1):
+      Cremonese 2025 carga netInterest +0,004261 (data/cremonese-it-data.js L119) y el C impreso es (4.261) → −0,004261 (error 8,5 mil EUR);
+      Hellas Verona 2020 −0,027588 contra (27.554) (34 EUR); Bologna 2018-19 (sin cargar) −0,552236 contra (556.520).
+    - Diseño: después de la escalera 0-6, si no cierra (o cierra solo con sf=-1) y hay un renglón 17) y un C impreso: re-leer fin con
+      15)/16) con su signo, 17) y sus hojas como −|valor|, 17-bis con su signo (perdite desglosadas restan), D: 19) resta y 18) suma; por
+      posición/bloque, no por etiqueta. Compuerta ÚNICA: |ΣFIN − C impreso| ≤ media unidad impresa por fila (si no hay C impreso: el
+      resultado impreso exacto, como la lectura 5). Después se prueban los 4 (sf, si) con fin ya firmado. Anotar "escalón 17) resta".
+    - Medición: los 11 sin sus ajustes de financiero/impuesto (en una copia; no anular en el repo hasta medir) tienen que dar totales.financiero
+      y lo cargado iguales (Torino 2024 −2,788248; Napoli 2024 +7,442873; Udinese 2021-22 −5,544096); los 57 de Italia: los que cierran sin
+      ajuste no cambian, salvo Cremonese 2025, Bologna 2018-19 y Hellas Verona 2020, que tienen que pasar al signo correcto.
 
 156. ITALIA: LOS GASTOS SALEN CASI EL DOBLE (medido 2026-10-07, lote 14; causa encontrada por un subagente). La "variazione delle
     rimanenze" es negativa (reduce costos) y entra a gastos en valor absoluto: la suma de renglones deja de coincidir con "TOTALE COSTI
