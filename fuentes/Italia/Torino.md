@@ -49,3 +49,9 @@ de varios años (no se bajaron: no son el bilancio).
 - Torino FC S.p.A. es la entidad; no es la holding (U.T. Communications) ni Cairo Communication.
 
 - **Color de marca**: `#8B2A1F` (granate) — "granata" (it.wikipedia, Torino_Football_Club); hex de footylogos (el #2; el #1 es naranja y no sirve). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2018 desde `Clubes/Italia/Torino/Torino-bilancio-2018.pdf` (sourceId `torino-it-bilancio-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Torino/Torino-bilancio-2021.pdf` (sourceId `torino-it-bilancio-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2024 desde `Clubes/Italia/Torino/Torino-bilancio-2024.pdf` (sourceId `torino-it-bilancio-2024`).
