@@ -3003,43 +3003,40 @@ NOTA INTEGRATIVA – BILANCIOBILANCIO CONSOLIDATO AL 30 GIUGNO 2025
 
 --- pág. 84 ---
 
-**GENOA**^{}[] GRIDALE AND FOOTBALL CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-## Informativa sulle perdite fiscali
+**Informativa sulle perdite fiscali**
 
 Si riporta di seguito il totale delle perdite fiscali in capo alla Controllante e la parte valorizzata in bilancio.
 
-|  *(Importi in Euro)* | Esercizio corrente |   |   | Esercizio precedente  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Ammontare | Aliquota fiscale | Imposte anticipate rilevate | Ammontare | Aliquota fiscale | Imposte anticipate rilevate  |
-|  **Perdite fiscali** |  |  |  |  |  |   |
-|  dell'esercizio | 15.262.386 |  |  | 19.453.667 |  |   |
-|  di esercizi precedenti (post consolidato fiscale) | 77.743.296 |  |  | 58.289.629 |  |   |
-|  di esercizi precedenti (ante consolidato fiscale) | 24.781.111 |  |  | 24.781.111 |  |   |
-|  Totale perdite fiscali | 117.786.793 |  |  | 102.524.407 |  |   |
-|  Perdite fiscali a nuovo recuperabili con ragionevole certezza | 57.916.667 | 24% | 13.900.000 | 57.916.667 | 24% | 13.900.000  |
+| (Importi in Euro) | Esercizio corrente: Ammontare | Esercizio corrente: Aliquota fiscale | Esercizio corrente: Imposte anticipate rilevate | Esercizio precedente: Ammontare | Esercizio precedente: Aliquota fiscale | Esercizio precedente: Imposte anticipate rilevate |
+|---|---|---|---|---|---|---|
+| **Perdite fiscali** | | | | | | |
+| dell'esercizio | 15.262.386 | | | 19.453.667 | | |
+| di esercizi precedenti (post consolidato fiscale) | 77.743.296 | | | 58.289.629 | | |
+| di esercizi precedenti (ante consolidato fiscale) | 24.781.111 | | | 24.781.111 | | |
+| Totale perdite fiscali | 117.786.793 | | | 102.524.407 | | |
+| Perdite fiscali a nuovo recuperabili con ragionevole certezza | 57.916.667 | 24% | 13.900.000 | 57.916.667 | 24% | 13.900.000 |
 
-## Compensi, anticipazioni e crediti concessi ad amministratori e sindaci e impegni assunti per loro conto
+**Compensi, anticipazioni e crediti concessi ad amministratori e sindaci e impegni assunti per loro conto**
 
 Si riporta di seguito l'indicazione dei compensi relativi all'esercizio chiuso al 30 giugno 2025 spettanti agli Amministratori ed ai Sindaci della Società per cariche ricoperte presso la stessa.
 
-|  **Valori in €** | **Saldo al 30/06/2025**  |
-| --- | --- |
-|  Amministratori | 176.000  |
-|  Sindaci | 38.532  |
-|  **Totale** | **214.532**  |
+| Valori in € | Saldo al 30/06/2025 |
+|---|---|
+| Amministratori | 176.000 |
+| Sindaci | 38.532 |
+| **Totale** | **214.532** |
 
-## Compensi al revisore legale o società di revisione
+**Compensi al revisore legale o società di revisione**
 
 Ai sensi dell'art. 2427 punto 16-bis si fornisce di seguito il dettaglio dei corrispettivi spettanti al revisore legale (alla società di revisione) per le prestazioni rese.
 
-|  **Valori in €** | **Saldo al 30/06/2025**  |
-| --- | --- |
-|  Società di Revisione | 69.000  |
+| Valori in € | Saldo al 30/06/2025 |
+|---|---|
+| Società di Revisione | 69.000 |
 
-## Categorie di azioni emesse dalla società
+**Categorie di azioni emesse dalla società**
 
 Come prescritto dal punto 17 dell'art. 2427 del Codice Civile, i dati sulle azioni che compongono il capitale sociale e il numero ed il valore nominale delle azioni della società controllante sottoscritte
 

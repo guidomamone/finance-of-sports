@@ -2616,181 +2616,147 @@ PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2024
 
 --- pág. 60 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2024
-
-## CONTO ECONOMICO
-
-**01/07/2023 -  
-30/06/2024**
-
-**01/07/2022 -  
-30/06/2023**
-
-### A. VALORE DELLA PRODUZIONE
-
-#### 1) ricavi delle vendite e delle prestazioni
-
-|  a) ricavi da gare | 39.174.069 | 33.378.086  |
-| --- | --- | --- |
-|  b) abbonamenti | 16.290.643 | 15.866.698  |
-|  **1) Totale Ricavi delle vendite e delle prestazioni** | **55.464.711** | **49.244.785**  |
-|  **5) altri ricavi e proventi** |  |   |
-|  a) proventi da sponsorizzazioni | 8.830.870 | 9.850.000  |
-|  b) proventi pubblicitari | 63.908 | 47.633  |
-|  c) proventi commerciali e royalties | - | 1.155  |
-|  d) proventi da cessione diritti audiovisivi | 101.636.428 | 106.628.681  |
-|  e) ricavi da cessione temporanea prestazioni calciatori | 1.565.535 | 3.416.157  |
-|  f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 25.046.418 | 47.131.792  |
-|  g) altri proventi da trasferimento diritti calciatori | 21.038.216 | 5.563.399  |
-|  h) ricavi e proventi diversi | 25.810.446 | 17.145.485  |
-|  **5) Totale altri ricavi e proventi** | **183.991.821** | **189.784.301**  |
-
-**TOTALE VALORE DELLA PRODUZIONE (A)**
-
-**239.456.532**
-
-**239.029.086**
-
-### B. COSTI DELLA PRODUZIONE
-
-|  **6) per materie prime, sussidiarie, di consumo e di merci** | **4.340.253** | **4.103.926**  |
-| --- | --- | --- |
-|  **7) per servizi** | **45.915.168** | **57.097.217**  |
-|  **8) per godimento di beni di terzi** | **11.967.723** | **12.093.405**  |
-|  **9) per il personale** |  |   |
-|  a) salari e stipendi | 183.153.133 | 155.607.719  |
-|  b) oneri sociali | 8.708.820 | 7.372.315  |
-|  c) trattamento di fine rapporto | 456.500 | 908.978  |
-|  e) altri costi | 1.168.195 | 748.489  |
-|  **9) Totale costi per il personale** | **193.486.648** | **164.637.500**  |
-|  **10) ammortamenti e svalutazioni** |  |   |
-|  a) ammortamenti immobilizzazioni immateriali | 38.408.394 | 55.754.949  |
-|  b) ammortamenti immobilizzazioni materiali | 4.162.898 | 3.542.946  |
-|  c) altre svalutazioni delle immobilizzazioni | - | -  |
-|  d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 28.291 | 44.158  |
-|  **10) Totale costi per ammortamenti e svalutazioni** | **42.599.583** | **59.342.054**  |
-|  **12) accantonamenti per rischi** | **4.956.295** | **58.728**  |
-|  **14) oneri diversi di gestione** |  |   |
-|  b) costi per acquisizione temporanea prestazioni calciatori | 10.082.075 | 1.415.828  |
-|  c) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 1.135.911 | 10.429  |
-|  d) altri oneri da trasferimento diritti calciatori | 7.880.849 | 9.942.395  |
-|  e) altri oneri diversi di gestione | 6.455.676 | 9.818.416  |
-|  **14) Totale oneri diversi di gestione** | **25.554.511** | **21.187.067**  |
-
-**TOTALE COSTI DELLA PRODUZIONE (B)**
-
-**328.820.180**
-
-**318.519.897**
-
-**DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)**
-
-**(89.363.648)**
-
-**(79.490.811)**
-
-### C. PROVENTI E ONERI FINANZIARI
-
-|  **15) proventi da partecipazioni** | **505.722** | **1.793.404**  |
-| --- | --- | --- |
-|  **16) altri proventi finanziari** | **6.044.565** | **1.165.368**  |
-|  **17) interessi ed altri oneri finanziari** | **(13.156.649)** | **(16.086.480)**  |
-|  e) altri interessi e oneri finanziari | (13.156.649) | (16.086.480)  |
-|  **17 bis) utile e perdite su cambi** | **(31.851)** | **(3.425)**  |
-|  **TOTALE PROVENTI ED ONERI FINANZIARI (C) (15+16-17 ± 17 bis)** | **(6.638.214)** | **(13.131.134)**  |
-
-**RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)**
-
-**(96.001.861)**
-
-**(92.621.945)**
-
-|  **20) imposte sul reddito dell'esercizio** | **(2.089.321)** | **(201.217)**  |
-| --- | --- | --- |
-|  a) imposte correnti | (4.872.941) | (3.066.924)  |
-|  e) proventi (oneri) da adesione al regime di consolidato fiscale/trasparenza fiscale | 2.783.620 | 2.865.707  |
-|  **21) UTILE (PERDITA) DELL'ESERCIZIO** | **(98.091.182)** | **(92.823.182)**  |
 
 60
 
+CONTO ECONOMICO
+
+| | 01/07/2023 - 30/06/2024 | 01/07/2022 - 30/06/2023 |
+|---|---|---|
+| **A. VALORE DELLA PRODUZIONE** | | |
+| **1) ricavi delle vendite e delle prestazioni** | | |
+| a) ricavi da gare | 39.174.069 | 33.378.086 |
+| b) abbonamenti | 16.290.643 | 15.866.698 |
+| **1) Totale Ricavi delle vendite e delle prestazioni** | **55.464.711** | **49.244.785** |
+| **5) altri ricavi e proventi** | | |
+| a) proventi da sponsorizzazioni | 8.830.870 | 9.850.000 |
+| b) proventi pubblicitari | 63.908 | 47.633 |
+| c) proventi commerciali e royalties | - | 1.155 |
+| d) proventi da cessione diritti audiovisivi | 101.636.428 | 106.628.681 |
+| e) ricavi da cessione temporanea prestazioni calciatori | 1.565.535 | 3.416.157 |
+| f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 25.046.418 | 47.131.792 |
+| g) altri proventi da trasferimento diritti calciatori | 21.038.216 | 5.563.399 |
+| h) ricavi e proventi diversi | 25.810.446 | 17.145.485 |
+| **5) Totale altri ricavi e proventi** | **183.991.821** | **189.784.301** |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | **239.456.532** | **239.029.086** |
+| **B. COSTI DELLA PRODUZIONE** | | |
+| **6) per materie prime, sussidiarie, di consumo e di merci** | **4.340.253** | **4.103.926** |
+| **7) per servizi** | **45.915.168** | **57.097.217** |
+| **8) per godimento di beni di terzi** | **11.967.723** | **12.093.405** |
+| 9) per il personale | | |
+| a) salari e stipendi | 183.153.133 | 155.607.719 |
+| b) oneri sociali | 8.708.820 | 7.372.315 |
+| c) trattamento di fine rapporto | 456.500 | 908.978 |
+| e) altri costi | 1.168.195 | 748.489 |
+| **9) Totale costi per il personale** | **193.486.648** | **164.637.500** |
+| **10) ammortamenti e svalutazioni** | | |
+| a) ammortamenti immobilizzazioni immateriali | 38.408.394 | 55.754.949 |
+| b) ammortamenti immobilizzazioni materiali | 4.162.898 | 3.542.946 |
+| c) altre svalutazioni delle immobilizzazioni | - | - |
+| d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 28.291 | 44.158 |
+| **10) Totale costi per ammortamenti e svalutazioni** | **42.599.583** | **59.342.054** |
+| **12) accantonamenti per rischi** | **4.956.295** | **58.728** |
+| **14) oneri diversi di gestione** | | |
+| b) costi per acquisizione temporanea prestazioni calciatori | 10.082.075 | 1.415.828 |
+| c) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 1.135.911 | 10.429 |
+| d) altri oneri da trasferimento diritti calciatori | 7.880.849 | 9.942.395 |
+| e) altri oneri diversi di gestione | 6.455.676 | 9.818.416 |
+| **14) Totale oneri diversi di gestione** | **25.554.511** | **21.187.067** |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | **328.820.180** | **318.519.897** |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | **(89.363.648)** | **(79.490.811)** |
+| **C PROVENTI E ONERI FINANZIARI** | | |
+| **15) proventi da partecipazioni** | **505.722** | **1.793.404** |
+| **16) altri proventi finanziari** | **6.044.565** | **1.165.368** |
+| **17) interessi ed altri oneri finanziari** | **(13.156.649)** | **(16.086.480)** |
+| e) altri interessi e oneri finanziari | (13.156.649) | (16.086.480) |
+| **17 bis) utile e perdite su cambi** | **(31.851)** | **(3.425)** |
+| **TOTALE PROVENTI ED ONERI FINANZIARI (C ) (15+16-17 ± 17 bis )** | **(6.638.214)** | **(13.131.134)** |
+| **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | **(96.001.861)** | **(92.621.945)** |
+| **20) Imposte sul reddito dell'esercizio** | **(2.089.321)** | **(201.217)** |
+| a) imposte correnti | (4.872.941) | (3.066.924) |
+| e) proventi (oneri) da adesione al regime di consolidato fiscale/trasparenza fiscale | 2.783.620 | 2.865.707 |
+| | | - |
+| **21) UTILE (PERDITA) DELL'ESERCIZIO** | **(98.091.182)** | **(92.823.162)** |
+
 --- pág. 61 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2024
 
-|  RENDICONTO FINANZIARIO | 01/07/2023 - 30/06/2024 | 01/07/2022 - 30/06/2023  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dell'attività operativa** |  |   |
-|  Utile (perdita) dell'esercizio | (98.091.182) | (92.823.162)  |
-|  Imposte sul reddito | (2.089.321) | (201.217)  |
-|  Interessi passivi/(interessi attivi) | 9.249.819 | 11.197.660  |
-|  Dividendi | (505.722) | (1.793.404)  |
-|  (Plusvalenze)/minusvalenze da cessione calciatori | (23.910.507) | (47.121.363)  |
-|  **1. Utile (perdita) dell'esercizio prima d'imposte, interessi, E plus/minus da cessione** | **(115.346.913)** | **(130.741.486)**  |
-|  *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* |  |   |
-|  Accantonamenti ai fondi | 5.492.695 | 3.369.846  |
-|  Ammortamenti delle immobilizzazioni | 42.571.292 | 59.297.895  |
-|  Svalutazioni per perdite durevoli di valore | 28.291 | 44.158  |
-|  Altre rettifiche per elementi non monetarie | (2.137.735) | 3.723.452  |
-|  **2. Flusso finanziario prima delle variazioni del ccn** | **(69.392.370)** | **(64.306.134)**  |
-|  *Variazioni del capitale circolante netto* |  |   |
-|  Decremento/(incremento) delle rimanenze | - | -  |
-|  Decremento/(incremento) dei crediti vs clienti | (5.694.918) | 676.313  |
-|  Incremento/(decremento) dei debiti verso fornitori | (8.530.102) | 6.769.966  |
-|  Decremento/(incremento) ratei e risconti attivi | 966.090 | 1.519.494  |
-|  Incremento/(decremento) ratei e risconti passivi | 12.209.522 | 2.303.013  |
-|  Altre variazioni del capitale circolante netto | 17.163.007 | (22.037.587)  |
-|  **3. Flusso finanziario dopo le variazioni del ccn** | **(53.278.771)** | **(75.074.935)**  |
-|  *Altre rettifiche* |  |   |
-|  Interessi incassati/(pagati) | - | (12.563.958)  |
-|  (Imposte sul reddito pagate) | (5.686.977) | -  |
-|  (Utilizzo dei fondi) | (4.118.100) | (13.679.674)  |
-|  Altri incassi/pagamenti | - | -  |
-|  **Flusso finanziario dell'attività operativa (A)** | **(63.083.849)** | **(101.318.567)**  |
-|  **B. Flussi finanziari derivanti dall'attività d'investimento** |  |   |
-|  *Immobilizzazioni materiali* |  |   |
-|  (Investimenti) | (2.080.486) | (3.853.258)  |
-|  Disinvestimenti | - | -  |
-|  *Diritti pluriennali alle prestazioni dei calciatori* |  |   |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | - | (15.843.579)  |
-|  Valore acquisti calciatori | (22.579.500) | -  |
-|  Variazione debiti vs squadre di calcio | (32.250.185) | (52.526.645)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | - | -  |
-|  Valore cessione calciatori | 40.884.336 | 65.376.852  |
-|  Variazione crediti vs squadre di calcio | (15.863.397) | (20.742.967)  |
-|  *Altre Immobilizzazioni immateriali* |  |   |
-|  (Investimenti) | (4.030) | (888.558)  |
-|  Disinvestimenti | - | -  |
-|  *Immobilizzazioni finanziarie* |  |   |
-|  (Investimenti) | (127.501) | (3.944.559)  |
-|  Disinvestimenti | - | -  |
-|  **Flusso finanziario dell'attività di investimento (B)** | **(32.020.764)** | **(32.422.713)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  *Mezzi di terzi* |  |   |
-|  Incremento (decremento) debiti a breve verso banche | (1.638.025) | (6.917.314)  |
-|  Accensione finanziamenti | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  Atri incassi e pagamenti da attività di finanziamento | 12.001.700 | (83.493.998)  |
-|  *Finanziamenti soci* |  |   |
-|  Accensione finanziamenti | 90.000.000 | 232.546.160  |
-|  *Mezzi propri* |  |   |
-|  Versamento in conto futuro aumento di capitale | - | -  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **100.363.675** | **142.134.848**  |
-|  **Incremento (decremento) della disponibilità liquide (A ± B ± C)** | **5.259.062** | **6.393.567**  |
-|  Effetto cambi sulle disponibilità liquide |  |   |
-|  **Disponibilità liquide all'inizio dell'esercizio** | **25.742.686** | **17.349.119**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 25.736.038 | 17.341.326  |
-|  denaro e valori in cassa | 6.649 | 7.793  |
-|  **Disponibilità liquide alla fine dell'esercizio** | **31.001.749** | **25.742.686**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 30.996.657 | 25.736.038  |
-|  denaro e valori in cassa | 5.092 | 6.649  |
-
 61
+
+RENDICONTO FINANZIARIO
+
+| | 01/07/2023 - 30/06/2024 | 01/07/2022 - 30/06/2023 |
+|---|---|---|
+| **A. Flussi finanziari derivanti dell'attività operativa** | | |
+| Utile (perdita) dell'esercizio | (98.091.182) | (92.823.162) |
+| Imposte sul reddito | (2.089.321) | (201.217) |
+| Interessi passivi/(interessi attivi) | 9.249.819 | 11.197.660 |
+| Dividendi | (505.722) | (1.793.404) |
+| (Plusvalenze)/minusvalenze da cessione calciatori | (23.910.507) | (47.121.363) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte, interessi, E plus/minus da cessione** | **(115.346.913)** | **(130.741.486)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 5.492.695 | 3.369.846 |
+| Ammortamenti delle immobilizzazioni | 42.571.292 | 59.297.895 |
+| Svalutazioni per perdite durevoli di valore | 28.291 | 44.158 |
+| Altre rettifiche per elementi non monetarie | (2.137.735) | 3.723.452 |
+| **2. Flusso finanziario prima delle variazioni del ccn** | **(69.392.370)** | **(64.306.134)** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | - | - |
+| Decremento/(incremento) dei crediti vs clienti | (5.694.918) | 676.313 |
+| Incremento/(decremento) dei debiti verso fornitori | (8.530.102) | 6.769.966 |
+| Decremento/(incremento) ratei e risconti attivi | 966.090 | 1.519.494 |
+| Incremento/(decremento) ratei e risconti passivi | 12.209.522 | 2.303.013 |
+| Altre variazioni del capitale circolante netto | 17.163.007 | (22.037.587) |
+| **3. Flusso finanziario dopo le variazioni del ccn** | **(53.278.771)** | **(75.074.935)** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | - | (12.563.958) |
+| (Imposte sul reddito pagate) | (5.686.977) | - |
+| (Utilizzo dei fondi) | (4.118.100) | (13.679.674) |
+| Altri incassi/pagamenti | | - |
+| **Flusso finanziario dell'attività operativa (A)** | **(63.083.849)** | **(101.318.567)** |
+| **B. Flussi finanziari derivanti dall'attività d'investimento** | | |
+| *Immobilizzazioni materiali* | | |
+| (Investimenti) | (2.080.486) | (3.853.258) |
+| Disinvestimenti | - | - |
+| *Diritti pluriennali alle prestazioni dei calciatori* | | - |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | | (15.843.579) |
+| Valore acquisti calciatori | (22.579.500) | - |
+| Variazione debiti vs squadre di calcio | (32.250.185) | (52.526.645) |
+| *Cessione diritti pluriennali alle prestazioni dei calciatori* | | - |
+| Valore cessione calciatori | 40.884.336 | 65.376.852 |
+| Variazione crediti vs squadre di calcio | (15.863.397) | (20.742.967) |
+| *Altre Immobilizzazioni immateriali* | | - |
+| (Investimenti) | (4.030) | (888.558) |
+| Disinvestimenti | | - |
+| *Immobilizzazioni finanziarie* | | - |
+| (Investimenti) | (127.501) | (3.944.559) |
+| Disinvestimenti | | - |
+| **Flusso finanziario dell'attività di investimento (B)** | **(32.020.764)** | **(32.422.713)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | | |
+| Incremento (decremento) debiti a breve verso banche | (1.638.025) | (6.917.314) |
+| Accensione finanziamenti | | - |
+| (Rimborso finanziamenti) | | - |
+| Atri incassi e pagamenti da attività di finanziamento | 12.001.700 | (83.493.998) |
+| *Finanziamenti soci* | | - |
+| Accensione finanziamenti | 90.000.000 | 232.546.160 |
+| *Mezzi propri* | | - |
+| Versamento in conto futuro aumento di capitale | | - |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **100.363.675** | **142.134.848** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **5.259.062** | **8.393.567** |
+| Effetto cambi sulle disponibilità liquide | | |
+| **Disponibilità liquide all'inizio dell'esercizio** | **25.742.686** | **17.349.119** |
+| di cui: | | |
+| depositi bancari e postali | 25.736.038 | 17.341.326 |
+| denaro e valori in cassa | 6.649 | 7.793 |
+| **Disponibilità liquide alla fine dell'esercizio** | **31.001.749** | **25.742.686** |
+| di cui: | | |
+| depositi bancari e postali | 30.996.657 | 25.736.038 |
+| denaro e valori in cassa | 5.092 | 6.649 |
 
 --- pág. 62 ---
 
@@ -4275,82 +4241,82 @@ PROSPETTI DI INFORMATIVA SUPPLEMENTARE
 
 --- pág. 94 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2024
 
-Tabella di movimentazione dei diritti pluriennali alle prestazioni di calciatori
+**Tabella di movimentazione dei diritti pluriennali alle prestazioni di calciatori**
 
-| CACLOTERO | TELEGRA DI NASCIMENTO | Contratto | Provenienza | Destinazione | Valori inizio periodo (Valori in Euro / 000) | Variazioni valori di periodo (Valori in Euro / 000) | Effetti economici di periodo (Valori in Euro / 000) | Valori di fine periodo (Valori in Euro / 000) | Compenso Agenti (Costo storico intr还是) | Attri costi di acqui.ne | Sell an fee |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Data inizio primo contratto | Data scadenza ultimo contratto | Data acquinto | Società | Data Cessione | Società | 02/06/2023 | 4) Acquisti di diritti | 5) Cessioni di diritti o risoluzioni | 6) Amino II | 7) Svalutaz. | 8) Minuso | 9) Plusvalenze | Costo storico | Fondo di commutamento | Valore Netto | Compenso Agenti (Costo storico intr还是) |
-| 1) Costo statico | 2) Fondo anniversi | 3) Valore fatto | 6) Ammos II | 7) Svalutaz. | 8) Minuso | 9) Plusvalenze |
-| Abraham | 03/19/1997 | 17/8/21 | 30/8/27 | 17/8/21 | CHELSEA |  |  | 42.288 | (15.930) | 26.358 |  |  |  | (8.786) |  |  |  | 42.288 | (24.717) | 17.572 |  |  | (1) |
-| Badianzi | 23/03/2003 | 1/2/24 | 30/8/28 | 1/2/24 | EMPOLI |  |  |  |  |  | 11.688 |  |  | (1.057) |  |  |  | 11.688 | (1.057) | 10.442 | 1.000 |  | (2) |
-| Balanti | 23/12/1993 | 28/8/22 | 30/8/25 | 28/8/22 | SERICOLATO | 25/05/2024 | COIAD |  |  |  |  |  |  |  |  |  | 4.000 |  |  |  |  |  |  |
-| Baoi | 12/05/2000 | 12/8/18 | 30/8/24 | 12/8/18 | VENEZIA |  |  | 499 | (403) | 92 |  |  |  | (31) |  |  |  | 499 | (434) | 61 | 30 | 15 |  |
-| Boro | 16/05/2002 | 16/8/18 | 30/8/28 |  | SETTORE GIOVANILE |  |  | 75 | (45) | 30 |  |  |  | (30) |  |  |  | 75 | (55) | 20 | 75 |  |  |
-| Carlo | 17/02/1997 | 2/7/22 | 30/8/26 | 1/7/22 | JUSC LAL-SA |  |  | 7.383 | (1.838) | 5.545 |  |  |  | (1.840) |  |  |  | 7.383 | (3.688) | 3.697 | 250 |  |  |
-| Cassano | 22/07/2005 | 10/7/22 | 30/8/26 |  | SETTORE GIOVANILE | 03/09/2023 | CITTADELLA | 60 | (8) | 52 |  | (60) | 9 | (2) |  |  | 45 |  |  |  | 60 |  |  |
-| Cristiano | 03/20/1995 | 1/7/18 | 30/8/27 | 1/7/18 |  |  |  | 30.600 | (21.000) | 11 |  |  |  | (1.878) |  |  |  | 30.600 | (24.968) | 5.654 | 600 |  |  |
-| Durboe | 09/08/2001 | 10/7/19 | 30/8/26 | 10/7/19 | YOUNG RIEY |  |  | 120 | (88) | 22 |  |  |  | (11) |  |  |  | 120 | (88) | 22 | 120 |  |  |
-| E Costa Croce | 28/03/2005 | 1/2/22 | 30/8/26 | 15/10/27 | SPORT CLUB CORRITHANS |  |  | 75 | (5) | 70 |  |  |  | (23) |  |  |  | 75 | (28) | 47 | 75 |  |  |
-| Emoria Tasande (Angelino) | 04/01/1997 | 30/1/24 | 30/8/28 | 30/8/24 | AVGENBALLSPORT LOPZIO |  |  |  |  |  | 5.378 |  |  | (155) |  |  |  | 5.378 | (155) | 5.263 | 250 |  |  |
-| Folcassi | 31/07/2004 | 1/8/20 | 30/8/26 |  | SETTORE GIOVANILE | 25/08/2023 | LECCE |  |  |  |  |  |  |  |  |  | 1.000 |  |  |  |  |  |  |
-| Galo | 05/03/2008 | 22/7/22 | 30/8/25 | 22/7/22 | NR DOROCALE |  |  | 50 | (56) | 34 | 150 |  |  | (37) |  |  |  | 200 | (33) | 167 |  |  |  |
-| Bonini | 23/11/1998 | 27/7/20 | 30/8/26 | 27/7/20 | ATALANTA | 08/08/2023 | AL AHAU SUDI | 12.350 | (7.068) | 7.282 |  | (12.350) | 7.261 | (193) |  |  | 23.471 |  | 0 | 0 | 1.350 |  |  |
-| Inboco | 04/01/2006 | 28/7/22 | 30/8/26 | 28/7/22 | ARIZONA |  |  | 600 | (312) | 288 |  |  |  | (44) |  |  |  | 600 | (404) | 144 |  |  | (3) |
-| Junges | 13/03/2007 | 14/7/23 | 30/8/26 | 7/7/23 | NR INNIBIER |  |  |  |  |  | 150 |  |  | (48) |  |  |  | 150 | (28) | 101 |  |  |  |
-| Kandemp | 15/02/1995 | 1/7/17 | 30/8/25 | 28/8/17 | FERNOGARD II |  |  | 16.000 | (14.597) | 1.000 |  |  |  | (1.004) | (1.004) |  |  | 15.500 | (15.558) | (6) | 600 |  |  |
-| Kalvaza | 16/05/2007 | 24/7/23 | 30/8/26 | 19/7/23 | SERICOLATO |  |  |  |  |  | 84 |  |  | (21) |  |  |  | 84 | (21) | 43 |  |  |  |
-| Keramitis | 07/07/2004 | 22/8/27 | 30/8/24 |  | SETTORE GIOV |  |  | 30 | (28) | 10 |  |  |  | (30) |  |  |  | 30 | (28) | - |  |  | (4) |
-| Kumbulla | 08/02/2000 | 17/8/20 | 30/8/27 | 17/8/20 | HELLAS VERDAM |  |  | 29.500 | (15.237) | 14.263 |  |  |  | (3.566) |  |  |  | 29.500 | (18.800) | 10.097 | 1.000 |  |  |
-| Lorak | 03/05/2008 | 17/7/23 | 30/8/25 | 29/8/23 | NR OSLOK PT |  |  | 600 |  | 600 |  |  |  | (200) |  |  |  | 600 | (200) | 200 |  |  | (5) |
-| Louakima | 28/02/2003 | 1/10/20 | 30/8/23 | 25/8/20 | PARIS S. BERNAN | 09/05/2024 | LECCE | 70 | (45) | 25 |  | (70) | 52 | (2) |  |  | (18) |  |  |  |  | 10 | (8) |
-| Marcini | 17/04/1996 | 17/7/19 | 30/8/27 | 17/7/19 | ATALANTA |  |  | 25.984 | (10.204) | 9.780 |  |  |  | (2.445) |  |  |  | 25.984 | (18.849) | 7.335 | 1.984 |  |  |
-| Mello | 07/08/1998 | 1/7/21 | 30/8/24 | 14/8/22 | SERICOLATO | 14/09/2023 | RONNAN |  |  |  |  |  |  |  |  |  | 2.000 |  |  |  |  |  |  |
-| Melzer | 27/04/2006 | 22/7/23 | 30/8/25 | 30/8/20 | NR DOROCALE |  |  | 320 | (101) | 219 | 80 |  |  | (124) |  |  |  | 420 | (225) | 175 |  |  |  |
-| M'Divino | 03/08/1999 | 21/6/23 | 30/8/28 | 21/6/23 | SERICOLATO |  |  | 4.000 |  | 1.000 |  |  |  | (800) |  |  |  | 4.000 | (800) | 1.200 | 4.000 |  |  |
-| Olivero | 07/07/2004 | 21/9/20 | 30/8/23 | 16/8/20 | BARCELLONA |  |  | 150 | (87) | 33 |  |  |  | (17) |  |  |  | 150 | (100) | 22 |  |  |  |
-| Pandus | 29/08/1994 | 15/8/23 | 30/8/25 | 15/8/23 | PARIS S. BERNAN |  |  |  |  |  | 3.845 |  |  | (1.470) |  |  |  | 3.845 | (1.470) | 2.174 |  |  | (7) |
-| Pellegrini | 19/08/1996 | 1/7/17 | 30/8/26 | 1/7/17 | MARQUILO |  |  | 13.865 | (12.108) | 1.557 |  |  |  | (519) |  |  |  | 13.865 | (12.627) | 1.038 | 3.665 |  |  |
-| Piotti | 23/09/2004 | 28/7/21 | 30/8/26 |  | SETTORE GIOV |  |  | 40 | (7) | 33 |  |  |  | (11) |  |  |  | 40 | (18) | 22 | 40 |  |  |
-| Racunajeno | 02/09/2005 | 13/7/22 | 30/8/25 | 15/2/22 | BIBERBA |  |  | 70 | (23) | 47 |  |  |  | (24) |  |  |  | 40 | (48) | - |  |  |  |
-| Raunedo | 28/08/2001 | 30/1/21 | 30/8/25 | 1/2/21 | MAYOR LEAGUE SICCER | 21/07/2023 | WESTORLO | 6.925 | (3.785) | 3.348 |  | (8.925) | 3.954 | (129) |  |  | 354 |  |  |  | 75 |  |  |
-| Reinace | 17/04/2006 | 3/8/22 | 30/8/25 | 28/7/22 | FC WINTERTHUR AN |  |  | 94 | (20) | 94 |  |  |  | (32) |  |  |  | 94 | (62) | 33 |  |  | (8) |
-| Rio Patricio | 15/02/1998 | 10/7/21 | 30/8/26 | 10/7/21 | MOLVERHAMPTON |  |  | 13.100 | (8.444) | 4.655 | 312 |  |  | (5.767) |  |  |  | 13.612 | (13.612) | - | 300 |  |  |
-| Sangara | 06/09/2007 | 1/7/24 | 30/8/27 | 24/8/24 | LEVANTE |  |  |  |  |  | 1.616 |  |  |  |  |  |  | 1.616 |  | 1.616 |  |  | (9) |
-| Sano | 28/05/2007 | 8/8/22 | 30/8/26 | 4/8/22 | SERICOLATO |  |  |  |  |  | 84 |  |  | (20) |  |  |  | 84 | (20) | 50 |  |  |  |
-| Soch | 20/04/2008 | 15/7/24 | 30/8/26 | 15/7/24 | FC PRO VERCELLI |  |  |  |  |  | 252 |  |  | (47) |  |  |  | 252 | (47) | 205 |  |  |  |
-| Stamucvideo | 26/08/1996 | 2/8/21 | 30/8/26 | 2/8/21 | SENECA |  |  | 19.600 | (7.682) | 12.718 |  |  |  | (4.028) |  |  |  | 19.600 | (11.527) | 6.078 | 1.600 |  | (10) |
-| Smalling | 22/11/1995 | 26/8/19 | 30/8/25 | 5/10/20 | MANUADSTOR UNITED |  |  | 18.028 | (16.449) | 1.500 |  |  |  | (750) |  |  |  | 18.028 | (17.239) | 750 | 1.750 | 606 | (71) |
-| Solbakken | 07/09/1998 | 2/7/23 | 30/8/27 |  | SERICOLATO |  |  | 1.750 | (182) | 1.558 |  |  |  | (200) |  |  |  | 1.750 | (182) | 1.500 | 1.750 |  |  |
-| Solten | 06/07/2006 | 12/9/22 | 30/8/26 | 6/8/23 | CLUB SOCIAL Y DEPORTIVO |  |  |  |  |  | 233 |  |  | (54) |  |  |  | 233 | (54) | 180 |  |  | (12) |
-| Sproazzolo | 25/05/1993 | 1/7/18 | 30/8/24 | 30/8/19 | FC ZAVENTUS |  |  | 20.800 | (24.885) | 6.115 |  |  |  | (8.115) |  |  |  | 20.800 | (10.800) | - | 1.300 |  |  |
-| Sullar | 27/08/1998 | 16/5/22 | 30/8/27 | 16/5/22 | SERICOLATO |  |  | 1.865 | (372) | 1.692 |  |  |  | (373) |  |  |  | 1.865 | (748) | 1.118 | 1.500 |  |  |
-| Verbal | 21/02/2004 | 26/8/20 | 30/8/23 | 28/8/20 | HALEX TALLUN |  |  | 80 | (65) | 15 |  |  |  | (7) |  |  |  | 80 | (73) | 7 |  |  | (13) |
-| Villar | 23/05/1998 | 16/1/20 | 30/8/24 | 16/1/20 | ELCHE | 02/08/2023 | GRANADA | 5.000 | (3.868) | 1.132 |  | (5.000) | 3.980 | (152) |  |  | 470 | - | 0 | 0 | 1.000 |  |  |
-| Vilta | 19/11/1997 | 7/8/21 | 30/8/26 | 7/8/21 | PALMERAS | 22/07/2024 | FLAMENGO | 15.655 | (6.014) | 9.621 |  | (15.655) | 7.850 | (1.856) |  |  | (90) |  |  |  | 1.500 |  | (14) |
-| Zalmerdi | 23/05/2000 | 10/7/18 | 30/8/26 |  | SETTORE GIOVANILE |  |  | 150 | (80) | 60 |  |  |  | (30) |  |  |  | 150 | (120) | 30 | 150 |  |  |
-| **Totale** | **288.733** | **(178.771)** | **118.423** | **23.664** | **(48.040)** | **22.066** | **(43.823)** | **(1.028)** | **(108)** | **31.254** | **288.733** | **(198.268)** | **81.462** | **28.034** | **971** |  |
-| **Attualizzazioni** | **(35.260)** | **25.132** | **(10.129)** | **(1.000)** |  |  | **5.543** |  |  |  | **(6.207)** | **(36.246)** | **20.676** | **(5.660)** |  |  |  |
-| **Totale diritti pluriennali alla prestazioni sportive** | **278.157** | **(158.874)** | **109.284** | **22.589** | **(48.040)** | **22.066** | **(38.078)** | **(1.028)** | **(108)** | **28.040** | **244.384** | **158.563** | **75.782** | **28.034** | **971** |  |  |
+Intestazioni di gruppo: Contratto (Data inizio primo contratto, Data scadenza ultimo contratto) | Provenienza (Data acquisto, Società) | Destinazione (Data Cessione, Società) | Valori inizio periodo (Valori in Euro / 000) 30/06/2023 (1, 2, 3) | Variazioni valori di periodo (Valori in Euro / 000) (4, 5, 5-bis) | Effetti economici di periodo (Valori in Euro / 000) (6, 7, 8, 9) | Valori di fine periodo (Valori in Euro / 000) 30/06/2024 (Costo storico, Fondo di ammortamento, Valore Netto)
 
-Note Calciatori Club brevidiario Descrizione
+| CALCIATORE | DATA DI NASCITA | Data inizio primo contratto | Data scadenza ultimo contratto | Data acquisto | Società (Provenienza) | Data Cessione | Società (Destinazione) | 1) Costo storico | 2) Fondo ammort. | 3) Valore Netto | 4) Acquisti di diritti | 5) Cessioni di diritti e risoluzioni | 5-bis) Utilizzo Fondi ammortamento | 6) Ammor.ti | 7) Svalutaz. | 8) Minusv. | 9) Plusvalenze | Costo storico (fine periodo) | Fondo di ammortamento (fine periodo) | Valore Netto (fine periodo) | Compenso Agenti (Costo storico iniziale) | Altri costi di acqui.ne | Sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Abraham | 02/10/1997 | 17/8/21 | 30/6/27 | 17/8/21 | CHELSEA | | | 42.289 | (15.930) | 26.358 | | | | (8.786) | | | | 42.289 | (24.717) | 17.572 | - | | (1) |
+| Baldanzi | 23/03/2003 | 1/2/24 | 30/6/28 | 1/2/24 | EMPOLI | | | | | | 11.499 | | | (1.057) | | | | 11.499 | (1.057) | 10.442 | 1.000 | | (2) |
+| Belotti | 20/12/1993 | 28/8/22 | 30/6/25 | 28/8/22 | SVINCOLATO | 25/06/2024 | COMO | - | - | - | | | | - | | | 4.000 | - | - | - | - | | |
+| Boer | 12/05/2002 | 12/9/18 | 30/6/24 | 13/8/18 | VENEZIA | | | 495 | (403) | 92 | | | | (31) | | | | 495 | (434) | 61 | 30 | 15 | |
+| Bove | 16/05/2002 | 16/8/18 | 30/6/28 | | SETTORE GIOVANILE | | | 75 | (45) | 30 | | | | (10) | | | | 75 | (55) | 20 | 75 | | |
+| Celik | 17/02/1997 | 2/7/22 | 30/6/26 | 3/7/22 | LOSC Lille SA | | | 7.383 | (1.838) | 5.545 | | | | (1.848) | | | | 7.383 | (3.686) | 3.697 | 250 | | |
+| Cassano | 22/07/2003 | 18/1/22 | 30/6/26 | | SETTORE GIOVANILE | 03/08/2023 | CITTADELLA | 60 | (8) | 52 | | (60) | 9 | (2) | | | 49 | - | - | - | 60 | | |
+| Cristante | 03/03/1995 | 1/7/18 | 30/6/27 | 1/7/18 | ATALANTA | | | 30.600 | (23.088) | 7.512 | | | | (1.878) | | | | 30.600 | (24.966) | 5.634 | 600 | | |
+| Darboe | 06/06/2001 | 10/7/19 | 30/6/26 | 10/1/19 | YOUNG RIETI | | | 120 | (88) | 32 | | | | (11) | | | | 120 | (98) | 22 | 120 | | |
+| E Costa Cesco | 28/03/2005 | 1/2/22 | 30/6/26 | 15/10/21 | SPORT CLUB CORINTHIANS | | | 75 | (5) | 70 | | | | (23) | | | | 75 | (28) | 47 | 75 | | |
+| Esmoris Tasende (Angelino) | 04/01/1997 | 30/1/24 | 30/6/28 | 30/5/24 | RASENBALLSPORT LEIPZIG | | | | | | 5.378 | | | (115) | | | | 5.378 | (115) | 5.263 | 250 | | |
+| Faticanti | 31/07/2004 | 1/9/20 | 30/6/26 | | SETTORE GIOVANILE | 25/08/2023 | LECCE | - | - | - | | | | - | | | 1.000 | - | - | - | | | |
+| Golic | 05/03/2006 | 22/7/22 | 30/6/25 | 22/7/22 | NK DOMZALE | | | 50 | (16) | 34 | 150 | | | (17) | | | | 200 | (33) | 167 | - | | |
+| Ibanez | 23/11/1998 | 27/1/20 | 30/6/26 | 27/1/20 | ATALANTA | 08/08/2023 | AL AHALI SUDI | 12.350 | (7.068) | 5.282 | | (12.350) | 7.261 | (193) | | | 23.411 | - | 0 | 0 | 1.350 | | |
+| Ivkovic | 04/01/2006 | 28/1/22 | 30/6/24 | 28/1/22 | HAJDUK | | | 600 | (312) | 288 | | | | (144) | | | | 600 | (456) | 144 | - | | (3) |
+| Jurgec | 13/03/2007 | 14/7/23 | 30/6/26 | 7/7/23 | NK MARIBOR | | | - | - | - | 150 | | | (49) | | | | 150 | (49) | 101 | | | |
+| Karsdorp | 11/02/1995 | 1/7/17 | 30/6/25 | 28/6/17 | FEYENOORD R. | | | 16.600 | (14.591) | 2.009 | | | | (1.004) | (1.004) | | | 15.596 | (15.596) | (0) | 600 | | |
+| Kehayov | 16/05/2007 | 24/7/23 | 30/6/26 | 19/7/23 | SVINCOLATO | | | - | - | - | 64 | | | (21) | | | | 64 | (21) | 43 | | | |
+| Keramitsis | 01/07/2004 | 22/8/21 | 30/6/24 | | SETTORE GIOV. | | | 30 | (20) | 10 | | | | (10) | | | | 30 | (30) | - | - | | (4) |
+| Kumbulla | 08/02/2000 | 17/9/20 | 30/6/27 | 17/9/20 | HELLAS VERONA | | | 29.500 | (15.237) | 14.263 | | | | (3.566) | | | | 29.500 | (18.803) | 10.697 | 1.000 | | |
+| Levak | 03/05/2006 | 31/1/23 | 30/6/25 | 29/6/23 | NK OSIJEK FC | | | 600 | - | 600 | | | | (300) | | | | 600 | (300) | 300 | | | (5) |
+| Louakima | 28/02/2003 | 1/10/20 | 30/6/23 | 21/9/20 | PARIS S. GERMAN | 09/01/2024 | LECCE | 70 | (45) | 25 | | (70) | 52 | (7) | | (18) | | - | - | - | - | 20 | (6) |
+| Mancini | 17/04/1996 | 17/7/19 | 30/6/27 | 17/7/19 | ATALANTA | | | 25.984 | (16.204) | 9.780 | | | | (2.445) | | | | 25.984 | (18.649) | 7.335 | 1.984 | | |
+| Matic | 01/08/1988 | 1/7/22 | 30/6/24 | 14/6/22 | SVINCOLATO | 14/08/2023 | RENNAIS | - | - | - | | | | - | | | 2.000 | - | - | - | | | |
+| Mlakar | 27/04/2006 | 22/7/22 | 30/6/25 | 30/6/22 | NK DOMZALE | | | 320 | (101) | 219 | 80 | | | (124) | | | | 400 | (225) | 175 | - | | |
+| N'Dicka | 20/08/1999 | 21/6/23 | 30/6/28 | 21/6/23 | SVINCOLATO | | | 4.000 | - | 4.000 | | | | (800) | | | | 4.000 | (800) | 3.200 | 4.000 | | |
+| Oliveras | 07/07/2004 | 27/8/20 | 30/6/23 | 18/8/20 | BARCELLONA | | | 130 | (97) | 33 | | | | (11) | | | | 130 | (108) | 22 | - | | |
+| Paredes | 29/06/1994 | 15/8/23 | 30/6/25 | 15/8/23 | PARIS S. GERMAN | | | | | | 3.645 | | | (1.470) | | | | 3.645 | (1.470) | 2.174 | | | (7) |
+| Pellegrini | 19/06/1996 | 1/7/17 | 30/6/26 | 1/7/17 | SASSUOLO | | | 13.665 | (12.108) | 1.557 | | | | (519) | | | | 13.665 | (12.627) | 1.038 | 3.665 | | |
+| Pisilli | 23/09/2004 | 20/7/21 | 30/6/26 | | SETTORE GIOV. | | | 40 | (7) | 33 | | | | (11) | | | | 40 | (18) | 22 | 40 | | |
+| Razumejevs | 03/09/2005 | 13/7/22 | 30/6/25 | 15/2/22 | BIEDRIBA | | | 70 | (23) | 47 | | | | (24) | (24) | | | 46 | (46) | - | - | - | |
+| Reynolds | 28/06/2001 | 30/1/21 | 30/6/25 | 1/2/21 | MAYOR LEAGUE SOCCER | 21/07/2023 | WESTERLO | 6.925 | (3.785) | 3.140 | | (6.925) | 3.914 | (129) | | | 314 | - | - | - | 75 | | |
+| Romano | 17/06/2006 | 3/8/22 | 30/6/25 | 29/7/22 | FC WINTERTHUR AG | | | 94 | (30) | 65 | | | | (32) | | | | 94 | (62) | 32 | - | | (8) |
+| Rui Patricio | 15/02/1988 | 13/7/21 | 30/6/24 | 13/7/21 | WOLVERHAMPTON | | | 13.100 | (8.444) | 4.655 | 512 | | | (5.167) | | | | 13.612 | (13.612) | - | 300 | | |
+| Sangare | 06/08/2007 | 1/7/24 | 30/6/27 | 24/6/24 | LEVANTE | | | | | | 1.616 | | | - | | | | 1.616 | - | 1.616 | | | (9) |
+| Sarac | 28/05/2007 | 8/8/23 | 30/6/26 | 4/8/23 | SVINCOLATO | | | - | - | - | 84 | | | (26) | | | | 84 | (26) | 58 | | | |
+| Seck | 20/04/2006 | 15/1/24 | 30/6/26 | 15/1/24 | FC PRO VERCELLI | | | | | | 252 | | | (47) | | | | 252 | (47) | 205 | | | |
+| Shomurodov | 26/08/1995 | 2/8/21 | 30/6/26 | 2/8/21 | GENOA | | | 19.600 | (7.482) | 12.118 | | | | (4.039) | | | | 19.600 | (11.521) | 8.079 | 1.600 | | (10) |
+| Smalling | 22/11/1989 | 30/8/19 | 30/6/25 | 5/10/20 | MANCHESTER UNITED | | | 18.029 | (16.449) | 1.580 | | | | (790) | | | | 18.029 | (17.239) | 790 | 1.750 | 936 | (11) |
+| Solbakken | 07/09/1998 | 2/1/23 | 30/6/27 | | SVINCOLATO | | | 1.750 | (192) | 1.558 | | | | (389) | | | | 1.750 | (582) | 1.168 | 1.750 | | |
+| Solbes | 08/07/2006 | 12/8/23 | 30/6/26 | 6/8/23 | CLUB SOCIAL Y DEPORTIVO | | | - | - | - | 233 | | | (54) | | | | 233 | (54) | 180 | | | (12) |
+| Spinazzola | 25/03/1993 | 1/7/19 | 30/6/24 | 30/6/19 | FC JUVENTUS | | | 30.800 | (24.685) | 6.115 | | | | (6.115) | | | | 30.800 | (30.800) | - | 1.300 | | |
+| Svilar | 27/08/1999 | 16/5/22 | 30/6/27 | 16/5/22 | SVINCOLATO | | | 1.865 | (373) | 1.492 | | | | (373) | | | | 1.865 | (746) | 1.119 | 1.500 | | |
+| Vetkal | 21/02/2004 | 26/8/20 | 30/6/23 | 28/8/20 | KALEV TALLIN | | | 80 | (65) | 15 | | | | (7) | | | | 80 | (73) | 7 | - | | (13) |
+| Villar | 23/03/1998 | 30/1/20 | 30/6/24 | 30/1/20 | ELCHE | 02/08/2023 | GRANADA | 5.000 | (3.868) | 1.132 | | (5.000) | 3.980 | (112) | | | 479 | - | 0 | 0 | 1.000 | | |
+| Viña | 09/11/1997 | 7/8/21 | 30/6/26 | 7/8/21 | PALMEIRAS | 22/01/2024 | FLAMENGO | 15.635 | (6.014) | 9.621 | | (15.635) | 7.850 | (1.836) | | (90) | | - | - | - | 1.500 | | (14) |
+| Zalewski | 23/01/2002 | 16/7/18 | 30/6/25 | | SETTORE GIOVANILE | | | 150 | (90) | 60 | | | | (30) | | | | 150 | (120) | 30 | 150 | | |
+| **Totale** | | | | | | | | **298.133** | **(178.711)** | **119.423** | **23.664** | **(40.040)** | **23.066** | **(43.623)** | **(1.028)** | **(108)** | **31.254** | **280.730** | **(199.268)** | **81.462** | **26.024** | **971** | |
+| Attualizzazioni | | | | | | | | (35.261) | 25.132 | (10.129) | (1.085) | - | | 5.545 | | | (6.207) | (36.346) | 30.676 | (5.669) | | | |
+| **Totale diritti pluriennali alle prestazioni sportive** | | | | | | | | **278.167** | **(168.874)** | **109.294** | **22.580** | **(40.040)** | **23.066** | **(38.079)** | **(1.028)** | **(108)** | **25.046** | **244.384** | **(168.592)** | **75.792** | **26.024** | **971** | |
 
-- (1) Abraham Chelsea 100% della differenza fra il prezzo di cessione e l'importo pagato al Chelsea (compresivo di bonus) fino a 50 milioni di euro in aggiunta al 10% della comma accademia 50 milioni di euro
-- (2) Badianzi Empoli 15% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus)
-- (3) Inboco Haplak 10% dell'importo ricevuto dalla AS Roma in caso di vendita entro 30/05/2026, fino ad un massimo di 1 milione di euro
-- (4) Keramitis Empoli 50% dell'importo ricevuto dalla AS Roma
-- (5) Lovak NR Osijek 12,5% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus)
-- (6) Louakima Paris Saint Germain 20% dell'importo ricevuto dalla AS Roma
-- (7) Pandus Paris Saint Germain 30% della differenza fra il prezzo di cessione e l'importo pagato al Paris Saint Germain (compresivo di bonus)
-- (8) Romano FC Winterthur 15% dell'importo ricevuto dalla AS Roma
-- (9) Sangara Levanto 15% dell'importo ricevuto dalla AS Roma
-- (10) Shamurodov Genoa 10% dell'importo ricevuto più tutti i bonus non maturati al momento della cessione
-- (11) Smalling Manchester United 20% dell'importo ricevuto dalla AS Roma
-- (12) Solten Club Social Y Deportivo 20% dell'importo ricevuto dalla AS Roma
-- (13) Verbal Kales Tallinn 10% dell'importo ricevuto dalla AS Roma, fino a un massimo di 1 milione di euro
-- (14) Villa Palmerais 15% della differenza fra il prezzo di cessione e l'importo pagato al Palmerais (compresivo di bonus)
+| Nota | Calciatore | Club beneficiario | Descrizione |
+|---|---|---|---|
+| (1) | Abraham | Chelsea | 100% della differenza fra il prezzo di cessione e l'importo pagato al Chelsea (compresivo di bonus) fino a 50 milioni di euro in aggiunta al 10% della somma eccedente 50 milioni di euro |
+| (2) | Baldanzi | Empoli | 15% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus) |
+| (3) | Ivkovic | Hajduk | 10% dell'importo ricevuto dalla AS Roma in caso di vendita entro 30/06/2026, fino ad un massimo di 1 milione di euro |
+| (4) | Keramitsis | Empoli | 50% dell'importo ricevuto dalla AS Roma |
+| (5) | Levak | NK Osijek | 12,5% della differenza fra il prezzo di cessione e l'importo pagato per l'acquisto (compresivo di bonus) |
+| (6) | Louakima | Paris Saint Germain | 20% dell'importo ricevuto dalla AS Roma |
+| (7) | Paredes | Paris Saint Germain | 30% della differenza fra il prezzo di cessione e l'importo pagato al Paris Saint Germain (compresivo di bonus) |
+| (8) | Romano | FC Winterthur | 15% dell'importo ricevuto dalla AS Roma |
+| (9) | Sangare | Levante | 15% dell'importo ricevuto dalla AS Roma |
+| (10) | Shomurodov | Genoa | 10% dell'importo ricevuto più tutti i bonus non maturati al momento della cessione |
+| (11) | Smalling | Manchester United | 20% dell'importo ricevuto dalla AS Roma |
+| (12) | Solbes | Club Social Y Deportivo | 20% dell'importo ricevuto dalla AS Roma |
+| (13) | Vetkal | Kalev Tallinn | 10% dell'importo ricevuto dalla AS Roma, fino a un massimo di 1 milione di euro |
+| (14) | Viña | Palmerais | 15% della differenza fra il prezzo di cessione e l'importo pagato al Palmierais (compresivo di bonus) |
 
 --- pág. 95 ---
 

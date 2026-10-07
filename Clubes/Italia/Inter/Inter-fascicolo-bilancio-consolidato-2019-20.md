@@ -1494,48 +1494,42 @@ Tali fonti di ricavi e liquidità incrementano significativamente la capacità d
 
 --- pág. 31 ---
 
-# Analisi delle voci di Stato Patrimoniale
+13
 
-## ATTIVO
+Analisi delle voci di Stato Patrimoniale
 
-### Immobilizzazioni
+ATTIVO
+Immobilizzazioni
+Immobilizzazioni immateriali
 
-#### Immobilizzazioni immateriali
+Alla data del 30 giugno 2020 e 30 giugno 2019 ammontano rispettivamente a Euro 514.734 migliaia e ad Euro 441.219 migliaia.
+Gli ammortamenti dell’esercizio ammontano complessivamente a Euro 132.671 migliaia. Nell’esercizio, altresì, sono state rilevate svalutazioni per complessivi Euro 3.570 migliaia.
 
-Alla data del 30 giugno 2020 e 30 giugno 2019 ammontano rispettivamente a Euro 514.734 migliaia e ad Euro 441.219 migliaia. Gli ammortamenti dell'esercizio ammontano complessivamente a Euro 132.671 migliaia. Nell'esercizio, altresì, sono state rilevate svalutazioni per complessivi Euro 3.570 migliaia.
+| migliaia di Euro | Saldo al 30.06.2019 | Incrementi | Decrementi | Riclassifiche | 30/06/2020 | Saldo F.do Amm.to al 30.06.2019 | Svalutazioni | Cessioni | Ammortamenti | Saldo F.do Amm.to al 30.06.2020 | Imm. Imm.li Nette |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Diritti di brevetto ind.le e diritti utilizz.ne opere ing. | 412 | 26 | - | - | 438 | (317) | - | - | (21) | (338) | 100 |
+| Concessioni, licenze e marchi | 193.179 | 200 | (3) | 15 | 193.391 | (105.287) | - | - | (5.616) | (110.903) | 82.488 |
+| Immobilizzazioni in corso e acconti | 25.276 | 872 | - | (15) | 26.133 | - | - | - | - | - | 26.133 |
+| Capitalizzazione costi vivaio | 60.563 | 8.635 | - | - | 69.198 | (47.737) | - | - | (6.255) | (53.992) | 15.206 |
+| Diritti pluriennali prestazioni calciatori | 549.994 | 217.286 | (73.382) | - | 693.898 | (237.928) | (3.570) | 54.676 | (120.213) | (307.035) | 386.863 |
+| Altre | 15.773 | 1.451 | (5) | - | 17.219 | (12.709) | - | - | (566) | (13.275) | 3.944 |
+| Totale | 845.197 | 228.470 | (73.390) | - | 1.000.277 | (403.978) | (3.570) | 54.676 | (132.671) | (485.543) | 514.734 |
 
-|  Angiata di Euro | Italia al 31.06.2019 | Incrementi | Decrementi | Esclare/Febr | 30/06/2020 | Stato F do Arrivo al 31/06/2019 | Svalutazioni | Cessioni | Ammortamenti | Stato F do Arrivo al 31/06/2020 | Non}sala/Notte  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Diritti di brevetto ind. le e diritti u80,2, ne opere ing. | 412 | 26 | - | - | 438 | (317) | - | - | (21) | (338) | 100  |
-|  Concessioni, licenze e marchi | 100.179 | 200 | (3) | 15 | 103.391 | (105.287) | - | - | (5.618) | (110.903) | 82.488  |
-|  Immobilizzazioni in corso e accenti | 26.276 | 872 | - | (15) | 26.133 | - | - | - | - | - | 26.133  |
-|  Capitolizzazione costi visuo | 60.563 | 8.635 | - | - | 69.198 | (47.737) | - | - | (6.255) | (53.992) | 15.206  |
-|  Diritti pluriennali prestazioni calciatori | 549.994 | 217.286 | (73.382) | - | 693.898 | (237.928) | (3.570) | 54.676 | (120.213) | (307.035) | 386.863  |
-|  Altre | 15.773 | 1.451 | (5) | - | 17.219 | (12.709) | - | - | (566) | (13.275) | 3.944  |
-|  **Totale** | **848.107** | **208.479** | **(73.386)** | **-** | **1.668.277** | **(463.978)** | **(3.570)** | **54.676** | **(132.671)** | **(465.543)** | **814.734**  |
+Il valore netto residuo della voce “Diritti di brevetto industriale e diritti di utilizzazione delle opere dell’ingegno” si riferisce principalmente ai diritti di immagine (foto e video) dei progetti Intercampus nel mondo, nonché al corrispettivo pagato per finalizzare la realizzazione di un documentario avente ad oggetto la carriera in nerazzurro dello storico ex capitano della Prima Squadra di FC Inter, Javier Zanetti.
 
-Il valore netto residuo della voce "Diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno" si riferisce principalmente ai diritti di immagine (foto e video) dei progetti Intercampus nel mondo, nonché al corrispettivo pagato per finalizzare la realizzazione di un documentario avente ad oggetto la carriera in nerazzurro dello storico ex capitano della Prima Squadra di FC Inter, Javier Zanetti.
+La voce “Concessioni, licenze e marchi” deriva principalmente dall’allocazione al marchio FC Inter del disavanzo da fusione emerso nel bilancio consolidato al 30 giugno 2007 per effetto dell’incorporazione di Inter Capital S.r.l. in FC Inter.
+Nell’allocazione del suddetto disavanzo ci si è avvalsi dei riferimenti valutativi raccolti all’atto della cessione del marchio F.C. Internazionale Milano S.p.A. a Inter Brand S.r.l.
+Si ricorda che, a seguito dell’operazione di conferimento e dell’allocazione dei plusvalori effettuata con l’ausilio di un perito indipendente, come precedentemente descritto, si è proceduto alla rideterminazione della vita utile del suddetto marchio che a partire dal 5 giugno 2014 è stata definita in 20 anni. Il valore netto residuo al 30 giugno 2020 del marchio FC Inter è pari a Euro 58.765 migliaia.
+Come meglio descritto nel paragrafo “Altre informazioni”, la voce “Concessioni, licenze e marchi” per Euro 22.960 migliaia comprende inoltre il valore netto residuo del costo di acquisto a titolo definitivo dell’archivio Rai (libreria storica, materiali e diritti) a far data dal 30 giugno 2011, nonché della quota di archivio delle autoproduzioni del canale tematico Inter Tv dal 2000 al 2008.
+Tale importo è ammortizzato in 30 anni con decorrenza dal 1° luglio 2011 sulla base di un’apposita perizia redatta da un esperto indipendente in funzione dei flussi di ricavi che saranno conseguiti nel tempo.
 
-La voce "Concessioni, licenze e marchi" deriva principalmente dall'allocazione al marchio FC Inter del disavanzo da fusione emerso nel bilancio consolidato al 30 giugno 2007 per effetto dell'incorporazione di Inter Capital S.r.l. in FC Inter. Nell'allocazione del suddetto disavanzo ci si è avvalsi dei riferimenti valutativi raccolti all'atto della cessione del marchio F.C. Internazionale Milano S.p.A. a Inter Brand S.r.l.
-
-Si ricorda che, a seguito dell'operazione di conferimento e dell'allocazione dei plusvalori effettuata con l'ausilio di un perito indipendente, come precedentemente descritto, si è proceduto alla rideterminazione della vita utile del suddetto marchio che a partire dal 5 giugno 2014 è stata definita in 20 anni. Il valore netto residuo al 30 giugno 2020 del marchio FC Inter è pari a Euro 58.765 migliaia.
-
-Come meglio descritto nel paragrafo "Altre informazioni", la voce "Concessioni, licenze e marchi" per Euro 22.960 migliaia comprende inoltre il valore netto residuo del costo di acquisto a titolo definitivo dell'archivio Rai (libreria storica, materiali e diritti) a far data dal 30 giugno 2011, nonché della quota di archivio delle autoproduzioni del canale tematico *Inter Tv* dal 2000 al 2008. Tale importo è ammortizzato in 30 anni con decorrenza dal 1° luglio 2011 sulla base di un'apposita perizia redatta da un esperto indipendente in funzione dei flussi di ricavi che saranno conseguiti nel tempo.
-
-#### Impairment test
-
-Gli Amministratori, in accordo con l'OIC 9, al fine di sostenere il significativo valore delle immobilizzazioni immateriali iscritte nel bilancio consolidato hanno proceduto, con l'ausilio dell'esperto indipendente, ad effettuare un test di *impairment* al 31 marzo 2020 con riferimento alla Situazione Patrimoniale Intermedia consolidata, dopo aver considerato la pandemia COVID-19 un potenziale indicatore di perdita di valore. Il suddetto test di *impairment* è stato ritenuto ancora applicabile al 30 giugno 2020 considerando sia le previsioni del Piano utilizzate per cui non sono emersi eventi tali da modificarne in maniera materiale la validità sia gli stress test effettuati.
-
-L'*impairment* test è stato condotto utilizzando il Discounted Cash Flow Method basato sul Piano 2021-2025 (di seguito anche il "Piano"), sviluppato secondo scenario differenti sulla base dell'evoluzione prevista della Pandemia COVID-19, e attualizzato utilizzando il tasso WACC (Weighted average Cost of Capital). L'*impairment test* è stato preparato dagli Amministratori del Gruppo con il supporto di uno specialista facente parte di un network e approvato dagli Amministratori unitamente al Piano multi-scenario e alla Situazione Patrimoniale Intermedia consolidata in data 22 giugno 2020.
-
-Come anticipato, date le incertezze negli ultimi mesi, l'*impairment test* è stato predisposto utilizzato due differenti scenari: *Lockdown* e *Recovery Scenario*.
-
-Nel *Lockdown Scenario*, gli Amministratori avevano ipotizzato, come fattore chiave, che la Stagione 2019/2020 fosse definitivamente interrotta, senza altre partite giocate. In quanto considerata l'opzione più prudente in tale contesto, gli Amministratori hanno deciso di mantenere il *Lockdown Scenario* come assunzione ai fini dell'*impairment test* in quanto comunque significativo per determinare l'impatto negativo massimo derivante dalla Pandemia COVID-19.
-
+*Impairment test*
+Gli Amministratori, in accordo con l’OIC 9, al fine di sostenere il significativo valore delle immobilizzazioni immateriali iscritte nel bilancio consolidato hanno proceduto, con l’ausilio dell’esperto indipendente, ad effettuare un test di *impairment* al 31 marzo 2020 con riferimento alla Situazione Patrimoniale Intermedia consolidata, dopo aver considerato la pandemia COVID-19 un potenziale indicatore di perdita di valore. Il sudetto test di *impairment* è stato ritenuto ancora applicabile al 30 giugno 2020 considerando sia le previsioni del Piano utilizzate per cui non sono emersi eventi tali da modificarne in maniera materiale la validità sia gli stress test effettuati.
+L’*impairment test* è stato condotto utilizzando il Discounted Cash Flow Method basato sul Piano 2021-2025 (di seguito anche il “Piano”), sviluppato secondo scenario differenti sulla base dell’evoluzione prevista della Pandemia COVID-19, e attualizzato utilizzando il tasso WACC (Weighted average Cost of Capital). L’*Impairment test* è stato preparato dagli Amministratori del Gruppo con il supporto di uno specialista facente parte di un network e approvato dagli Amministratori unitamente al Piano multi-scenario e alla Situazione Patrimoniale Intermedia consolidata in data 22 giugno 2020.
+Come anticipato, date le incertezze negli utimi mesi, l’*impairment test* è stato predisposto utilizzato due differenti scenari: *Lockdown* e *Recovery Scenario*.
+Nel *Lockdown Scenario*, gli Amministratori avevano ipotizzato, come fattore chiave, che la Stagione 2019/2020 fosse definitivamente interrotta, senza altre partite giocate. In quanto considerata l’opzione più prudente in tale contesto, gli Amministratori hanno deciso di mantenere il *Lockdown Scenario* come assunzione ai fini dell'*impairment test* in quanto comunque significativo per determinare l’impatto negativo massimo derivante dalla Pandemia COVID-19.
 Nel *Recovery Scenario*, gli Amministratori avevano ipotizzato, come fattore chiave, che il campionato riprendesse a giugno 2020 e con conclusione a luglio/agosto 2020, ipotesi alla fine verificatasi.
-
 Con riferimento al *Recovery Scenario*, le proiezioni sono state fatte utilizzando come assunzione principale che la Prima Squadra nella stagione 2020/2021 non passerà il girone della UEFA Champions League (UCL) e verrà eliminata ai quarti di finale della Uefa Europa League (UEL) e dalla stagione 2021/2022 fino alla fine del Piano che la Squadra passerà il girone della UEFA Champions League (UCL) con eliminazione agli ottavi di finale.
-
 Con riferimento ai ricavi da biglietteria, il Piano prevede un significativo calo nella Stagione 2020/2021 prevendendo di giocare a porte chiuse almeno fino a gennaio 2021 e successivamente prevede un tasso di saturazione dello stadio pari al 25% della sua capacità massima. A partire dalla Stagione 2021/2022 in avanti, il Piano prevede di raggiungere livelli Pre-COVID-19.
 
 13
@@ -1633,55 +1627,46 @@ Il valore netto contabili delle cessioni effettuate durante l'esercizio è pari 
 
 --- pág. 34 ---
 
-Si segnala che, con riferimento ai diritti pluriennali il cui pagamento risulti dovuto oltre 12 mesi successivi, si è proceduto ad iscrivere il diritto ad un valore che tenesse conto dell'effetto di attualizzazione come descritto nei criteri di valutazione. Tale effetto, per gli acquisti effettuati nell'esercizio, è risultato pari a Euro 10.481 migliaia.
+16
 
-Maggiori dettagli sulle cessioni dei Diritti pluriennali alle prestazioni dei calciatori sono desumibili al paragrafo "Altri ricavi e proventi", nel commento alle plusvalenze.
+Si segnala che, con riferimento ai diritti pluriennali il cui pagamento risulti dovuto oltre 12 mesi successivi, si è proceduto ad iscrivere il diritto ad un valore che tenesse conto dell’effetto di attualizzazione come descritto nei criteri di valutazione. Tale effetto, per gli acquisti effettuati nell’esercizio, è risultato pari a Euro 10.481 migliaia.
+Maggiori dettagli sulle cessioni dei Diritti pluriennali alle prestazioni dei calciatori sono desumibili al paragrafo “Altri ricavi e proventi”, nel commento alle plusvalenze.
 
-Le "Altre immobilizzazioni immateriali", pari a Euro 3.944 migliaia, si riferiscono principalmente ai lavori effettuati per la nuova sede di Viale della Liberazione e al rifacimento di campi da gioco, spogliatoi e uffici presso il Centro Sportivo Suning in memoria di Giacinto Facchetti, sede degli allenamenti e ritiri delle squadre giovanili.
+Le “Altre immobilizzazioni immateriali”, pari a Euro 3.944 migliaia, si riferiscono principalmente ai lavori effettuati per la nuova sede di Viale della Liberazione e al rifacimento di campi da gioco, spogliatoi e uffici presso il Centro Sportivo Suning in memoria di Giacinto Facchetti, sede degli allenamenti e ritiri delle squadre giovanili.
 
-### Immobilizzazioni materiali
-
+**Immobilizzazioni materiali**
 Al 30 giugno 2020 e al 30 giugno 2019 ammontano rispettivamente Euro 27.909 migliaia e a Euro 21.481 migliaia.
+Si precisa che al 30 giugno 2020 il Gruppo ha in essere contratti di leasing operativo scadenti nel 2024 e relativi a macchine elettroniche per ufficio per un importo complessivo di canoni a scadere di Euro 478 migliaia. Tale importo è stato incluso tra gli “Impegni, garanzie e passività potenziali non risultanti dallo Stato Patrimoniale”.
+Al 30 giugno 2020 le “Immobilizzazioni materiali” non risultano gravate da vincoli di ipoteca o da privilegi.
+Gli ammortamenti imputati nell’esercizio ammontano a Euro 2.056 migliaia (di cui Euro 1 migliaia inerente ai beni inferiori a Euro 516,46 spesato nella voce “Costi per materie prime, sussidiarie e di consumo”) e sono stati calcolati, su tutte le immobilizzazioni materiali ammortizzabili al 30 giugno 2020, applicando le aliquote rappresentative della vita economico-tecnica, specificate nei criteri di valutazione.
 
-Si precisa che al 30 giugno 2020 il Gruppo ha in essere contratti di leasing operativo scadenti nel 2024 e relativi a macchine elettroniche per ufficio per un importo complessivo di canoni a scadere di Euro 478 migliaia. Tale importo è stato incluso tra gli "Impegni, garanzie e passività potenziali non risultanti dallo Stato Patrimoniale".
+| migliaia di Euro | Saldo al 30.06.2019 | Incrementi | Decrementi e riclassifiche | Saldo al 30.06.2020 | Saldo F.do Amm.to al 30.06.2019 | Cessioni | Ammortamenti | Saldo F.do Amm.to al 30.06.2020 | Imm. Materiali Nette |
+|---|---|---|---|---|---|---|---|---|---|
+| Terreni e fabbricati | 23.207 | 1.101 | - | 24.308 | (6.190) | - | (1.264) | (7.454) | 16.854 |
+| - terreno e centro sportivo | 23.113 | 1.044 | - | 24.157 | (6.175) | - | (1.252) | (7.427) | 16.730 |
+| - costruzioni leggere | 94 | 57 | - | 151 | (15) | - | (12) | (27) | 124 |
+| Impianti e macch. | 2.249 | 158 | - | 2.407 | (1.700) | - | (133) | (1.833) | 574 |
+| - impianti generici | 779 | 34 | - | 813 | (538) | - | (36) | (574) | 239 |
+| - macchinari | 1.470 | 124 | - | 1.594 | (1.162) | - | (97) | (1.259) | 335 |
+| Attrrezzature Ind.li e comm.li | 1.122 | 120 | - | 1.242 | (933) | - | (47) | (980) | 261 |
+| - attrezz. sportive | 250 | 66 | - | 316 | (212) | - | (14) | (226) | 90 |
+| - attrezz. sanitarie | 628 | 36 | - | 664 | (537) | - | (29) | (566) | 98 |
+| - attrezz. diverse | 244 | 18 | - | 262 | (184) | - | (4) | (188) | 74 |
+| Altri beni | 4.637 | 1.230 | (7) | 5.860 | (2.191) | 4 | (612) | (2.799) | 3.061 |
+| - macchine uff. elettroniche | 1.844 | 315 | (7) | 2.152 | (831) | 4 | (330) | (1.157) | 995 |
+| - mobilio e arredi | 2.777 | 915 | - | 3.692 | (1.346) | - | (280) | (1.626) | 2.066 |
+| - automezzi | 16 | - | - | 16 | (14) | - | (2) | (16) | - |
+| Immobilizzazioni in corso e acconti | 1.280 | 5.879 | - | 7.159 | - | - | - | - | 7.159 |
+| Totale | 32.495 | 8.488 | (7) | 40.976 | (11.014) | 4 | (2.056) | (13.066) | 27.909 |
 
-Al 30 giugno 2020 le "Immobilizzazioni materiali" non risultano gravate da vincoli di ipoteca o da privilegi.
-
-Gli ammortamenti imputati nell'esercizio ammontano a Euro 2.056 migliaia (di cui Euro 1 migliaia inerente ai beni inferiori a Euro 516,46 spesato nella voce "Costi per materie prime, sussidiarie e di consumo") e sono stati calcolati, su tutte le immobilizzazioni materiali ammortizzabili al 30 giugno 2020, applicando le aliquote rappresentative della vita economico-tecnica, specificate nei criteri di valutazione.
-
-|  migliaia di Euro | Saldo al 30.06.2019 | Incrementi | Decrementi e ricubazione | Saldo al 30.06.2019 | Saldo F.do Amm.to al 30.06.2019 | Cessioni | Ammortamenti | Saldo F.do Amm.to al 30.06.2020 | Imm. Materiali Nette  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Terreni e fabbricati** | **23.207** | **1.101** | **-** | **24.306** | **(6.190)** | **-** | **(1.264)** | **(7.454)** | **16.854**  |
-|  - terreni e centro sportivo | 23.113 | 1.044 | - | 24.157 | (6.175) | - | (1.252) | (7.427) | 16.730  |
-|  - costruzioni leggere | 94 | 57 | - | 151 | (15) | - | (12) | (27) | 124  |
-|  **Impianti e macchi.** | **2.249** | **158** | **-** | **2.407** | **(1.700)** | **-** | **(133)** | **(1.833)** | **574**  |
-|  - impianti generici | 779 | 34 | - | 813 | (538) | - | (36) | (574) | 239  |
-|  - macchinari | 1.470 | 124 | - | 1.594 | (1.162) | - | (97) | (1.259) | 335  |
-|  **Attrezzature Ind.li e comm.li** | **1.122** | **120** | **-** | **1.242** | **(933)** | **-** | **(47)** | **(660)** | **261**  |
-|  - attrezzi, sportive | 250 | 66 | - | 316 | (212) | - | (14) | (226) | 90  |
-|  - attrezzi, sanitarie | 628 | 36 | - | 664 | (537) | - | (29) | (566) | 98  |
-|  - attrezzi, diverse | 244 | 18 | - | 262 | (184) | - | (4) | (188) | 74  |
-|  **Altri beni** | **4.637** | **1.230** | **(7)** | **5.860** | **(2.191)** | **4** | **(612)** | **(2.799)** | **3.061**  |
-|  - macchine uff. elettroniche | 1.844 | 315 | (7) | 2.152 | (831) | 4 | (330) | (1.157) | 995  |
-|  - mobili e arredi | 2.777 | 915 | - | 3.692 | (1.346) | - | (280) | (1.626) | 2.066  |
-|  - automezzi | 16 | - | - | 16 | (14) | - | (2) | (16) | -  |
-|  **Immobilizzazioni in corso e acconti** | **1.280** | **5.879** | **-** | **7.159** | **-** | **-** | **-** | **-** | **7.159**  |
-|  **Totale** | **32.492** | **9.488** | **(7)** | **40.276** | **(11.614)** | **4** | **(2.006)** | **(11.660)** | **27.689**  |
-
-Si segnala che nella voce "Terreni e fabbricati" figura il costo di acquisizione del "Centro Sportivo Suning in memoria di Angelo Moratti" di Appiano Gentile, abituale sede della Prima Squadra per gli allenamenti e ritiri.
-
-L'incremento dell'esercizio fa riferimento principalmente ai lavori sostenuti per la ristrutturazione dell'albergo e dei campi del "Centro Sportivo Suning in memoria di Angelo Moratti" di Appiano Gentile.
-
-La voce "Altri beni" ha subito un incremento relativo principalmente all'acquisto di apparecchiature elettroniche, mobili e arredi per la nuova sede di Viale della Liberazione.
-
+Si segnala che nella voce “Terreni e fabbricati” figura il costo di acquisizione del “Centro Sportivo Suning in memoria di Angelo Moratti” di Appiano Gentile, abituale sede della Prima Squadra per gli allenamenti e ritiri.
+L’incremento dell’esercizio fa riferimento principalmente ai lavori sostenuti per la ristrutturazione dell’albergo e dei campi del “Centro Sportivo Suning in memoria di Angelo Moratti” di Appiano Gentile.
+La voce “Altri beni” ha subito un incremento relativo principalmente all’acquisto di apparecchiature elettroniche, mobili e arredi per la nuova sede di Viale della Liberazione.
 Si precisa che sono state effettuate rivalutazioni, ai soli fini civilistici e senza alcun onere fiscale, sui beni immobili ai sensi del D.L. 29/11/08 per un importo complessivo pari a Euro 2.334 migliaia sulla base di una apposita perizia.
 
-### Immobilizzazioni finanziarie
-
-#### Partecipazioni in imprese collegate
-
-Il saldo al 30 giugno 2020 rappresenta il valore della quota pari al 50% in M-I Stadio S.r.l. società detenuta a controllo congiunto con A.C. Milan S.p.A.. La partecipazione, come è già stato riferito nel paragrafo "Principi di consolidamento", è stata consolidata sinteticamente con l'*equity method*.
-
+**Immobilizzazioni finanziarie**
+**Partecipazioni in imprese collegate**
+Il saldo al 30 giugno 2020 rappresenta il valore della quota pari al 50% in M-I Stadio S.r.l. società detenuta a controllo congiunto con A.C. Milan S.p.A.. La partecipazione, come è già stato riferito nel paragrafo “Principi di consolidamento”, è stata consolidata sinteticamente con l’*equity method*.
 Di seguito si riportano le principali informazioni relative alla società collegata:
 
 16
@@ -1732,36 +1717,33 @@ Il capitale circolante netto al 30 giugno 2020 evidenzia un saldo negativo, in d
 
 --- pág. 36 ---
 
-e verso altri, a causa del rinvio del pagamento degli stipendi del personale tesserato, che si è reso necessario a causa della carenza di liquidità sopravvenuta a causa dell'emergenza e dei provvedimenti restrittivi emanati dagli organi competenti per combattere la diffusione della pandemia COVID-19.
+18
 
-Infine, si rammenta altresì che nei debiti sono inclusi anche Euro 26.400 migliaia di debiti verso il Comune di Milano che verranno compensati con il valore delle migliorie apportate allo Stadio Meazza iscritte alla voce "Immobilizzazioni in corso ed acconti" per Euro 26.116 migliaia e sostenute dal Gruppo per conto del Comune.
+e verso altri, a causa del rinvio del pagamento degli stipendi del personale tesserato, che si è reso necessario a causa della carenza di liquidità sopravvenuta a causa dell’emergenza e dei provvedimenti restrittivi emanati dagli organi competenti per combattere la diffusione della pandemia COVID-19.
+Infine, si rammenta altresì che nei debiti sono inclusi anche Euro 26.400 migliaia di debiti verso il Comune di Milano che verranno compensati con il valore delle migliorie apportate allo Stadio Meazza iscritte alla voce “Immobilizzazioni in corso ed acconti” per Euro 26.116 migliaia e sostenute dal Gruppo per conto del Comune.
 
-### Crediti
-
+**Crediti**
 Ammontano a Euro 241.249 migliaia e si riferiscono a crediti come qui di seguito specificati:
 
-|  *migliaia di Euro* | Saldo al 30.06.2020 | Saldo al 30.06.2019  |
-| --- | --- | --- |
-|  Crediti verso clienti | 94.445 | 103.774  |
-|  Crediti verso società enti settore specifico | 124.288 | 134.347  |
-|  Crediti verso società controllate | 48 | 48  |
-|  Crediti verso imprese controllanti | 11.984 | 49.976  |
-|  Crediti verso società sottoposte al controllo delle controllanti | 2.000 | 1.167  |
-|  Crediti tributari | 4.923 | 5.709  |
-|  Crediti per imposte anticipate | 2.230 | 1.107  |
-|  Crediti verso altri | 11.872 | 5.010  |
-|   | **251.790** | **301.138**  |
-|  Fondo rischi su crediti per inesigibilità | (10.541) | (17.350)  |
-|   | **241.249** | **263.788**  |
+| migliaia di Euro | Saldo al 30.06.2020 | Saldo al 30.06.2019 |
+|---|---|---|
+| Crediti verso clienti | 94.445 | 103.774 |
+| Crediti verso società enti settore specifico | 124.288 | 134.347 |
+| Crediti verso società controllate | 48 | 48 |
+| Crediti verso imprese controllanti | 11.984 | 49.976 |
+| Crediti verso società sottoposte al controllo delle controllanti | 2.000 | 1.167 |
+| Crediti tributari | 4.923 | 5.709 |
+| Crediti per imposte anticipate | 2.230 | 1.107 |
+| Crediti verso altri | 11.872 | 5.010 |
+| | 251.790 | 301.138 |
+| Fondo rischi su crediti per inesigibilità | (10.541) | (17.350) |
+| | 241.249 | 283.788 |
 
-### Crediti verso clienti
-
-L'importo di Euro 94.445 migliaia comprende crediti vantati verso una clientela eterogenea, composta principalmente da società private per operazioni commerciali, principalmente legate alla vendita di diritti televisivi, *academies*, sponsorizzazioni, tra cui i (i) i *regional sponsors* (con riferimento ai quali si rimanda al paragrafo "Altre Informazioni – Contratti di sponsorizzazione") per complessivi Euro 54.967 migliaia (Euro 69.992 migliaia al 30 giugno 2019), dei quali per Euro 48.742 migliaia la data di scadenza di incasso è stata prorogata al 31 dicembre 2020; si segnala che nel mese di ottobre 2020 sono stati incassati crediti pari a Euro 16.300 migliaia, (ii) Infront per Euro 3.872 migliaia, (iii) LNP Serie A per Euro 806 migliaia, (iv) Sky per Euro 3.393 migliaia (di cui fatture da emettere per Euro 215 migliaia) e (v) IMG Media per Euro 11.714 migliaia (di cui Euro 4.750 migliaia incassati in data 8 luglio 2020).
-
+**Crediti verso clienti**
+L’importo di Euro 94.445 migliaia comprende crediti vantati verso una clientela eterogenea, composta principalmente da società private per operazioni commerciali, principalmente legate alla vendita di diritti televisivi, *academies*, sponsorizzazioni, tra cui i (i) i *regional sponsors* (con riferimento ai quali si rimanda al paragrafo “Altre Informazioni – Contratti di sponsorizzazione”) per complessivi Euro 54.967 migliaia (Euro 69.992 migliaia al 30 giugno 2019), dei quali per Euro 48.742 migliaia la data di scadenza di incasso è stata prorogata al 31 dicembre 2020; si segnala che nel mese di ottobre 2020 sono stati incassati crediti pari a Euro 16.300 migliaia, (ii) Infront per Euro 3.872 migliaia, (iii) LNP Serie A per Euro 806 migliaia, (iv) Sky per Euro 3.393 migliaia (di cui fatture da emettere per Euro 215 migliaia) e (v) IMG Media per Euro 11.714 migliaia (di cui Euro 4.750 migliaia incassati in data 8 luglio 2020).
 Inoltre si evidenzia che in tale voce al 30 giugno 2020 sono inclusi crediti per fatture da emettere per Euro 3.469 migliaia composti principalmente da Euro 546 migliaia inerenti ai contratti di *sponsorship*, da Euro 715 migliaia per *royalties* relative al *licencing* e *merchandising* Nike, e da Euro 1.100 migliaia per i corrispettivi inerenti i ritiri estivi svolti dalla Prima Squadra nel mese di luglio 2017.
 
-### Crediti verso ente settore specifico
-
+**Crediti verso ente settore specifico**
 I crediti verso società calcistiche, inclusi nei crediti verso enti settore specifico e al lordo del relativo fondo svalutazione crediti per Euro 2.522 migliaia, sono i seguenti:
 
 18
@@ -1913,107 +1895,93 @@ La voce risconti è analizzabile come segue:
 
 --- pág. 40 ---
 
-|  *migliaia di Euro* | **Saldo al 30.06.2020** | **Saldo al 30.06.2019**  |
-| --- | --- | --- |
-|  Risconto affitti passivi | 57 | 445  |
-|  Risconto premi assicurativi | 166 | 152  |
-|  Risconto oneri accessori su finanziamenti | 326 | 436  |
-|  Risconto oneri accessori su Prestito obbligazionario | 44 | 69  |
-|  Risconto interessi passivi factors | 99 | 191  |
-|  Risconto concessione Stadio Meazza | - | 623  |
-|  Risconto costi per Agenti FIFA | 10.049 | 10.727  |
-|  Risconto per acquisizione temporanea calciatori | 592 | -  |
-|  Risconto stipendi tesserati Prima Squadra | 15.023 | -  |
-|  Altri risconti per prestazioni di servizi | 1.452 | 1.202  |
-|  **Totale risconti attivi** | **27.808** | **13.845**  |
+22
 
-Nella voce "Risconto oneri accessori su Prestito obbligazionario" sono incluse le quote di competenza, successive alla data di riferimento del presente bilancio consolidato, dei costi sostenuti annualmente per le *fees* collegate al Prestito Obbligazionario.
-
-I risconti dei costi per Agenti FIFA, pari ad Euro 10.049 migliaia, si riferiscono (i) ai rinnovi contrattuali di alcuni calciatori tra i quali D'Ambrosio e Lazaro (ii) a quanto maturato in relazione alla presenza dei propri assistiti nella rosa della Prima Squadra e (iii) alle commissioni di intermediazione relative all'acquisizione a titolo temporaneo dei calciatori Moses, Sensi e Sanchez.
-
+Nella voce “Risconto oneri accessori su Prestito obbligazionario” sono incluse le quote di competenza, successive alla data di riferimento del presente bilancio consolidato, dei costi sostenuti annualmente per le *fees* collegate al Prestito Obbligazionario.
+I risconti dei costi per Agenti FIFA, pari ad Euro 10.049 migliaia, si riferiscono (i) ai rinnovi contrattuali di alcuni calciatori tra i quali D’Ambrosio e Lazaro (ii) a quanto maturato in relazione alla presenza dei propri assistiti nella rosa della Prima Squadra e (iii) alle commissioni di intermediazione relative all’acquisizione a titolo temporaneo dei calciatori Moses, Sensi e Sanchez.
 I risconti per acquisizione temporanea calciatori, pari a Euro 592 migliaia, sono riconducibili ai calciatori Sensi e Moses.
-
 Il risconto degli stipendi della Prima Squadra è relativo alla contabilizzazione *pro-rata* da marzo fino al termine della stagione dei costi di riferimento a seguito della proroga della stagione sportiva 2019/2020 fino alla data del 31 agosto 2020, così come stabilito dalle autorità competenti al termine delle misure restrittive adottate durante il periodo di *lockdown* contro la diffusione della pandemia COVID-19.
-
-Tra gli altri risconti per prestazioni di servizi, pari ad Euro 1.452 migliaia, sono ricompresi principalmente i costi di noleggio delle auto aziendali, di manutenzione della *Data Service Room* e dei sistemi di *marketing* e *Customer Relationship Management* di competenza dell'esercizio successivo.
+Tra gli altri risconti per prestazioni di servizi, pari ad Euro 1.452 migliaia, sono ricompresi principalmente i costi di noleggio delle auto aziendali, di manutenzione della *Data Service Room* e dei sistemi di *marketing* e *Customer Relationship Management* di competenza dell’esercizio successivo.
 
 Si segnala che nella voce risconti attivi risultano altresì iscritti importi per Euro 4.700 migliaia che hanno scadenza oltre 12 mesi, mentre non ne esistono con scadenza superiore a 5 anni.
 
-## PASSIVO
+| migliaia di Euro | Saldo al 30.06.2020 | Saldo al 30.06.2019 |
+|---|---|---|
+| Risconto affitti passivi | 57 | 445 |
+| Risconto premi assicurativi | 166 | 152 |
+| Risconto oneri accessori su finanziamenti | 326 | 436 |
+| Risconto oneri accessori su Prestito obbligazionario | 44 | 69 |
+| Risconto interessi passivi factors | 99 | 191 |
+| Risconto concessione Stadio Meazza | - | 623 |
+| Risconto costi per Agenti FIFA | 10.049 | 10.727 |
+| Risconto per acquisizione temporanea calciatori | 592 | - |
+| Risconto stipendi tesserati Prima Squadra | 15.023 | - |
+| Altri risconti per prestazioni di servizi | 1.452 | 1.202 |
+| Totale risconti attivi | 27.808 | 13.845 |
 
-### Patrimonio netto
+**PASSIVO**
 
-|  *migliaia di Euro* | Capitale sociale | Riserva sovrazzioni | Riserva versamento soci in cifuturo aumento capitale sociale | Riserva copertura perdite | Utili/Perdite a nuovo | Utili/Perdita esercizio | Totale  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Saldi al 30.06.2019** | **19.195** | **26.943** | **-** | **105.000** | **(129.552)** | **(17.754)** | **3.832**  |
-|  Delibera assemblea del 28.10.2018: |  |  |  |  |  |  |   |
-|  - riserva copertura perdite |  |  |  |  | (17.754) | 17.754 | -  |
-|  - Riserva versamento soci in cifuturo aumento di capitale sociale |  |  | 40.000 |  |  |  | **40.000**  |
-|  Risultato consolidato al 30.06.2019 |  |  |  |  |  | (48.387) | **(48.387)**  |
-|  **Saldi al 30.06.2019** | **19.195** | **26.943** | **40.000** | **105.000** | **(147.306)** | **(46.387)** | **(4.350)**  |
-|  Delibera assemblea del 28.10.2019: |  |  |  |  |  |  |   |
-|  - Utili/Perdite a nuovo |  |  |  | (63.295) | 14.908 | 48.387 | -  |
-|  - Riserva versamento soci in cifuturo aumento di capitale sociale |  |  | 70.000 |  |  |  | **70.000**  |
-|  Risultato consolidato 30.06.2020 |  |  |  |  |  | (102.394) | **(102.394)**  |
-|  **Saldi al 30.06.2020** | **19.195** | **26.943** | **115.000** | **41.705** | **(132.398)** | **(102.394)** | **(36.949)**  |
+**Patrimonio netto**
 
-### Capitale sociale
+| migliaia di Euro | Capitale sociale | Riserva sovr. azioni | Riserva versamento soci in c/futuro aumento capitale sociale | Riserva copertura perdite | Utili/Perdite a nuovo | Utile/Perdita esercizio | Totale |
+|---|---|---|---|---|---|---|---|
+| Saldi al 30.06.2018 | 19.195 | 26.943 | - | 105.000 | (129.552) | (17.754) | 3.832 |
+| Delibera assemblea del 26.10.2018: | | | | | | | |
+| - riserva copertura perdite | | | | | (17.754) | 17.754 | - |
+| - Riserva versamento soci in c/futuro aumento di capitale sociale | | | 40.000 | | | | 40.000 |
+| Risutato consolidato al 30.06.2019 | | | | | | (48.387) | (48.387) |
+| Saldi al 30.06.2019 | 19.195 | 26.943 | 40.000 | 105.000 | (147.306) | (48.387) | (4.555) |
+| Delibera assemblea del 28.10.2019: | | | | | | | |
+| - Utili/Perdite a nuovo | | | | (63.295) | 14.908 | 48.387 | - |
+| - Riserva versamento soci in c/futuro aumento di capitale sociale | | | 70.000 | | | | 70.000 |
+| Risutato consolidato 30.06.2020 | | | | | | (102.394) | (102.394) |
+| Saldi al 30.06.2020 | 19.195 | 26.943 | 110.000 | 41.705 | (132.398) | (102.394) | (36.949) |
 
+**Capitale sociale**
 Il capitale sociale sottoscritto e versato alla data del 30 giugno 2020 risulta essere di complessivi Euro 19.195 migliaia.
 
-### Riserva sovrapprezzo azioni
-
-L'importo pari a Euro 26.943 migliaia, al netto dell'utilizzo di Euro 82.551 migliaia per la copertura della perdita dell'esercizio chiuso al 30 giugno 2017, rappresenta il sovrapprezzo pagato nel mese di giugno 2016 in sede di sottoscrizione di aumento del capitale da parte del Gruppo Suning.
+**Riserva sovrapprezzo azioni**
+L’importo pari a Euro 26.943 migliaia, al netto dell’utilizzo di Euro 82.551 migliaia per la copertura della perdita dell’esercizio chiuso al 30 giugno 2017, rappresenta il sovrapprezzo pagato nel mese di giugno 2016 in sede di sottoscrizione di aumento del capitale da parte del Gruppo Suning.
 
 22
 
 --- pág. 41 ---
 
-### Riserva per versamento soci in c/futuro aumento capitale
+23
 
-L'importo di Euro 110.000 migliaia è stato generato dalla conversione delle *tranches* di finanziamento del socio Great Horizon S.à.r.l. avvenute in data 26 giugno 2019 per Euro 40 milioni, in data 24 marzo 2020 per Euro 60.000 migliaia e in data 22 giugno 2020 per Euro 10.000 migliaia.
+**Riserva per versamento soci in c/futuro aumento capitale**
+L’importo di Euro 110.000 migliaia è stato generato dalla conversione delle *tranches* di finanziamento del socio Great Horizon S.à.r.l. avvenute in data 26 giugno 2019 per Euro 40 milioni, in data 24 marzo 2020 per Euro 60.000 migliaia e in data 22 giugno 2020 per Euro 10.000 migliaia.
 
-### Riserva versamenti soci per copertura perdite in formazione
+**Riserva versamenti soci per copertura perdite in formazione**
+L’importo di Euro 41.705 migliaia è stato generato dalle conversioni delle tranche di finanziamento avvenute rispettivamente in data 29 settembre 2017 per Euro 20.000 migliaia e in data 24 novembre 2017 per Euro 85.000 migliaia (di cui Euro 85 milioni utilizzabili anche per un futuro aumento di capitale riservato esclusivamente all’azionista Great Horizon S.à r.l.), e dall’utilizzo per la copertura della perdita consuntivata nell’esercizio chiuso al 30 giugno 2018 pari a Euro 63.295 migliaia.
 
-L'importo di Euro 41.705 migliaia è stato generato dalle conversioni delle tranche di finanziamento avvenute rispettivamente in data 29 settembre 2017 per Euro 20.000 migliaia e in data 24 novembre 2017 per Euro 85.000 migliaia (di cui Euro 85 milioni utilizzabili anche per un futuro aumento di capitale riservato esclusivamente all'azionista Great Horizon S.à r.l.), e dall'utilizzo per la copertura della perdita consuntivata nell'esercizio chiuso al 30 giugno 2018 pari a Euro 63.295 migliaia.
+**Utili/(Perdite) portate a nuovo**
+L’ammontare negativo pari a Euro 132.398 migliaia, si riferisce principalmente alla riserva generata dalle perdite consuntivate in periodi precedenti.
 
-### Utili/(Perdite) portate a nuovo
+**Disponibilità e distribuibilità delle riserve del patrimonio netto**
+In relazione alla disponibilità delle riserve di “Patrimonio Netto” si evidenzia il vincolo di indistribuibilità degli utili fino alla ricostituzione della riserva creatasi con la rivalutazione monetaria degli immobili in accordo con l’art. 15, commi da 16 a 23, del Decreto Legge del 29/11/2008, n. 185 – “Rivalutazione dei beni immobili relativi all’impresa”, come descritto nel paragrafo “Immobilizzazioni Materiali” interamente utilizzata per la copertura perdite nei precedenti esercizi.
 
-L'ammontare negativo pari a Euro 132.398 migliaia, si riferisce principalmente alla riserva generata dalle perdite consuntivate in periodi precedenti.
-
-### Disponibilità e distribuibilità delle riserve del patrimonio netto
-
-In relazione alla disponibilità delle riserve di "Patrimonio Netto" si evidenzia il vincolo di indistribuibilità degli utili fino alla ricostituzione della riserva creatasi con la rivalutazione monetaria degli immobili in accordo con l'art. 15, commi da 16 a 23, del Decreto Legge del 29/11/2008, n. 185 – "Rivalutazione dei beni immobili relativi all'impresa", come descritto nel paragrafo "Immobilizzazioni Materiali" interamente utilizzata per la copertura perdite nei precedenti esercizi.
-
-### Fondi per rischi e oneri
-
+**Fondi per rischi e oneri**
 *Fondo per imposte, anche differite*
-
-Il "Fondo per imposte differite" riguarda lo stanziamento inerente l'accantonamento al fondo svalutazione crediti di Inter Brand dedotto extra-contabilmente nel quadro EC del modello Unico per gli esercizi d'imposta chiusi al 31 dicembre 2006 e al 30 giugno 2007, effettuato esclusivamente in applicazione delle norme fiscali in vigore per Euro 58 e per Euro 4 migliaia su interessi attivi di mora non incassati.
+Il “Fondo per imposte differite” riguarda lo stanziamento inerente l’accantonamento al fondo svalutazione crediti di Inter Brand dedotto extra-contabilmente nel quadro EC del modello Unico per gli esercizi d’imposta chiusi al 31 dicembre 2006 e al 30 giugno 2007, effettuato esclusivamente in applicazione delle norme fiscali in vigore per Euro 58 e per Euro 4 migliaia su interessi attivi di mora non incassati.
 
 *Fondo per rischi e oneri*
+Si riporta di seguito la movimentazione del “Fondo per rischi e oneri” occorsa durante l’esercizio:
 
-Si riporta di seguito la movimentazione del "Fondo per rischi e oneri" occorsa durante l'esercizio:
-
-|  migliaia di Euro | Saldo al 30.06.2020 | Saldo al 30.06.2019  |
-| --- | --- | --- |
-|  Saldo all'inizio dell'esercizio | 28.050 | 870  |
-|  Utilizzi | (13.351) | (183)  |
-|  Rilasci | (3) | (4)  |
-|  Accantonamento dell'esercizio | 15.236 | 27.367  |
-|  **Saldo alla fine dell'esercizio** | **28.932** | **28.050**  |
+| migliaia di Euro | Saldo al 30.06.2020 | Saldo al 30.06.2019 |
+|---|---|---|
+| Saldo all’inizio dell'esercizio | 28.050 | 870 |
+| Utilizzi | (13.351) | (183) |
+| Rilasci | (3) | (4) |
+| Accantonamento dell'esercizio | 15.236 | 27.367 |
+| Saldo alla fine dell'esercizio | 29.932 | 28.050 |
 
 Al 30 giugno 2020 le principali posizioni iscritte nella voce sono le seguenti:
-
-- Euro 12.946 migliaia relativi all'accantonamento dell'esercizio degli oneri per retribuzioni contrattualmente dovute al personale tesserato non più impiegato nel progetto tecnico per il periodo dal 1° luglio 2019 al 30 giugno 2021, data di cessazione dei singoli contratti. Qualora nel corso della successiva stagione tale personale assumesse nuovi incarichi presso altri *club*, il valore residuo del fondo non utilizzato per le retribuzioni non corrisposte verrebbe rilasciato al conto economico alla voce "Altri ricavi – Rilascio fondi rischi e oneri";
-
-- Euro 11.044 migliaia si riferiscono principalmente alle ritenute IRPEF non versate in seguito all'applicazione del regime fiscale per i lavoratori cosiddetti "impatriati" così come disciplinato dall'art. 5 del DL 34/2019 che ha modificato il precedente art. 16, comma 5-quater e 5 quinquies, D. Lgs. 14 settembre 2015, n. 147, permettendo di includere nella categoria dei lavoratori impatriati anche gli sportivi professionisti con riferimento ai redditi di lavoro dipendente imponibili a partire dal periodo d'imposta 2020. L'applicabilità del regime agevolativo è subordinata i) allo svolgimento dell'attività lavorativa in modo prevalente sul territorio italiano, ii) alla condizione che il tesserato non sia stato residente in Italia nei due periodi d'imposta precedenti al trasferimento, iii) al mantenimento della residenza in Italia da parte dello sportivo per almeno due anni. La Società ha accantonato la minor IRPEF versata a fondo rischi non essendoci allo stato attuale elementi certi che i tesserati mantengano la residenza fiscale in Italia per i prossimi due anni;
-
-- Euro 4.192 migliaia accantonamento operato nell'esercizio per il sorgere di contenziosi con riferimento agli accordi di sponsorizzazione 2019/2020 per cui – secondo le controparti – ci sarebbero state inadempienze contrattuali strettamente collegate ai provvedimenti restrittivi emanati dalle autorità governative e federali a seguito dell'espandersi della pandemia COVID-19;
-
-- Euro 595 migliaia relativi al piano di incentivazione del management ("*Long Term Incentive*");
-
-- Euro 257 migliaia (di cui Euro 3 migliaia per rilasci dell'esercizio per adeguamento cambi) inerenti alla stima dei costi a finire da parte della società incaricata da Inter Brand per mettere in liquidazione la società controllata Shanghai Inter Brand Trading Co., Ltd.;
+- Euro 12.946 migliaia relativi all’accantonamento dell’esercizio degli oneri per retribuzioni contrattualmente dovute al personale tesserato non più impiegato nel progetto tecnico per il periodo dal 1° luglio 2019 al 30 giugno 2021, data di cessazione dei singoli contratti. Qualora nel corso della successiva stagione tale personale assumesse nuovi incarichi presso altri *club*, il valore residuo del fondo non utilizzato per le retribuzioni non corrisposte verrebbe rilasciato al conto economico alla voce “Altri ricavi – Rilascio fondi rischi e oneri”;
+- Euro 11.044 migliaia si riferiscono principalmente alle ritenute IRPEF non versate in seguito all’applicazione del regime fiscale per i lavoratori cosiddetti “impatriati” così come disciplinato dall’art. 5 del DL 34/2019 che ha modificato il precedente art. 16, comma 5-quater e 5 quinquies, D. Lgs. 14 settembre 2015, n. 147, permettendo di includere nella categoria dei lavoratori impatriati anche gli sportivi professionisti con riferimento ai redditi di lavoro dipendente imponibili a partire dal periodo d’imposta 2020. L’applicabilità del regime agevolativo è subordinata i) allo svolgimento dell’attività lavorativa in modo prevalente sul territorio italiano, ii) alla condizione che il tesserato non sia stato residente in Italia nei due periodi d’imposta precedenti al trasferimento, iii) al mantenimento della residenza in Italia da parte dello sportivo per almeno due anni. La Società ha accantonato la minor IRPEF versata a fondo rischi non essendoci allo stato attuale elementi certi che i tesserati mantengano la residenza fiscale in Italia per i prossimi due anni;
+- Euro 4.192 migliaia accantonamento operato nell’esercizio per il sorgere di contenziosi con riferimento agli accordi di sponsorizzazione 2019/2020 per cui – secondo le controparti – ci sarebbero state inadempienze contrattuali strettamente collegate ai provvedimenti restrittivi emanati dalle autorità governative e federali a seguito dell’espandersi della pandemia COVID-19;
+- Euro 595 migliaia relativi al piano di incentivazione del management (“*Long Term Incentive*”);
+- Euro 257 migliaia (di cui Euro 3 migliaia per rilasci dell’esercizio per adeguamento cambi) inerenti alla stima dei costi a finire da parte della società incaricata da Inter Brand per mettere in liquidazione la società controllata Shanghai Inter Brand Trading Co., Ltd.;
 
 23
 
@@ -2211,62 +2179,73 @@ In particolare, i debiti verso enti settore specifico, regolati in compensazione
 
 --- pág. 46 ---
 
-|  Società Nazionali | LNP Serie A | Diretti  |
-| --- | --- | --- |
-|  **migliaia di Euro**  |   |   |
-|  CAGLIARI CALCIO S.P.A. | 26.404 |   |
-|  US SASSUOLO CALCIO SRL | 21.175 |   |
-|  GENOA CRICKET & FOOTBALL CLUB SPA | 12.429 |   |
-|  A.S. ROMA SPA | 11.954 |   |
-|  ATALANTA BC SPA | 3.996 |   |
-|  PARMA CALCIO 1913 SRL | 3.992 |   |
-|  DELFINO PESCARA 1936 SPA | 2.267 |   |
-|  CREMONESE SPA | 295 |   |
-|  S.S.C. NAPOLI S.P.A. | 167 |   |
-|  FUSSBALL CLUB SUDTIROL S.R.L. | 150 |   |
-|  SSD PRO SESTO SRL | 94 |   |
-|  A.C. RENATE S.R.L. | 80 |   |
-|  PORDENONE CALCIO S.R.L. | 62 |   |
-|  PIACENZA CALCIO 1919 SSDRL | 55 |   |
-|  VICENZA CALCIO SPA | 43 |   |
-|  A.S.D. DONATELLO CALCIO | 40 |   |
-|  U.S. PERGOLETTE 1932 | 12 |   |
-|  URBS REGGINA 1914 SRL | 10 |   |
-|  S.S. AREZZO SRL | 7 |   |
-|  EMPOLI FOOTBALL CLUB S.P.A. | 6 |   |
-|  SESTO 2012 S.S.D. A R.L. | 3 |   |
-|  RAVENNA FOOTBALL CLUB 1913 S.P.A. | 3 |   |
-|  ASD REAL MEDA C.F. | 1 |   |
-|  A.C. MONZA BRIANZA 1912 SPA |  | 5  |
-|  ASCOLI CALCIO 1898 F.C. S.P.A. |  | 3  |
-|  CUNEO 1905 SRL |  | 1  |
-|  **Totale Nazionali** | **83.245** | **6**  |
-|  **Lega c/Campionato** |  | **1.003**  |
-|  **PIGC** |  | **(3)**  |
-|  **Fatture da ricevere Contributi di solidarietà Estero** |  | **420**  |
-|  **Fatture da ricevere da enti settore specifico** |  | **41.212**  |
-|  **Società Estero**  |   |   |
-|  MANCHESTER UTD F.C. LTD |  | 50.551  |
-|  HERTHA BSC GMBH & CO. |  | 13.365  |
-|  TOTTENHAM HOTSPUR FOOTBALL & ATHLETIC CO. LTD |  | 12.384  |
-|  FOOTBALL CLUB SION |  | 1.212  |
-|  ANDERLECHT |  | 1.136  |
-|  CHELSEA FOOTBALL CLUB |  | 820  |
-|  EVERTON FOOTBALL CLUB CO LTD |  | 519  |
-|  FC RED BULL SALZBURG GMBH |  | 455  |
-|  AFC AJAX NV |  | 309  |
-|  LYNGBY BOLDKLUB A/S |  | 201  |
-|  ASS ESPERANCE SPORTIVE TROYES AUBE CHAMP |  | 200  |
-|  ODENSE SPORT & EVENTS A/S |  | 177  |
-|  STEIRISCHER FUßBALLVERBAND (STFV) |  | 135  |
-|  URBSFA KBVB |  | 50  |
-|  GNK DINAMO |  | 48  |
-|  NOGOMETNI KLUB ZAGREB |  | 30  |
-|  **Totale Estere** |  | **81.092**  |
+28
 
-I debiti verso società nazionali sono da considerare unitamente ai crediti verso società nazionali iscritti nell'attivo nella voce "Crediti verso Ente settore specifico" in quanto le voci sono regolate per il loro ammontare netto tramite la stanza di compensazione LNP.
+| Società Nazionali | LNP Serie A | Diretti |
+|---|---|---|
+| *migliaia di Euro* | | |
+| CAGLIARI CALCIO S.P.A. | 26.404 | |
+| US SASSUOLO CALCIO SRL | 21.175 | |
+| GENOA CRICKET & FOOTBALL CLUB SPA | 12.429 | |
+| A.S. ROMA SPA | 11.954 | |
+| ATALANTA BC SPA | 3.996 | |
+| PARMA CALCIO 1913 SRL | 3.992 | |
+| DELFINO PESCARA 1936 SPA | 2.267 | |
+| CREMONESE SPA | 295 | |
+| S.S.C. NAPOLI S.P.A. | 167 | |
+| FUSSBALL CLUB SUDTIROL S.R.L. | 150 | |
+| SSD PRO SESTO SRL | 94 | |
+| A.C. RENATE S.R.L. | 80 | |
+| PORDENONE CALCIO S.R.L. | 62 | |
+| PIACENZA CALCIO 1919 SSDRL | 55 | |
+| VICENZA CALCIO SPA | 43 | |
+| A.S.D. DONATELLO CALCIO | 40 | |
+| U.S. PERGOLETTESE 1932 | 12 | |
+| URBS REGGINA 1914 SRL | 10 | |
+| S.S. AREZZO SRL | 7 | |
+| EMPOLI FOOTBALL CLUB S.P.A. | 6 | |
+| SESTO 2012 S.S.D. A R.L. | 3 | |
+| RAVENNA FOOTBALL CLUB 1913 S.P.A. | 3 | |
+| ASD REAL MEDA C.F. | 1 | |
+| A.C. MONZA BRIANZA 1912 SPA | | 5 |
+| ASCOLI CALCIO 1898 F.C. S.P.A. | | 3 |
+| CUNEO 1905 SRL | | 1 |
+| **Totale Nazionali** | **83.245** | **8** |
 
-Si segnala infine che per i debiti con data di pagamento oltre l'esercizio in accordo con i nuovi principi contabili, sono stati iscritti al 30 giugno 2020 al netto di un effetto di attualizzazione pari a Euro 8.470 migliaia.
+| Lega c/Campionato | 1.003 |
+|---|---|
+
+| FIGC | (3) |
+|---|---|
+
+| Fatture da ricevere Contributi di solidarietà Estero | 420 |
+|---|---|
+
+| Fatture da ricevere da enti settore specifico | 41.212 |
+|---|---|
+
+| Società Estere | |
+|---|---|
+| MANCHESTER UTD F.C. LTD | 50.551 |
+| HERTHA BSC GMBH & CO. | 13.365 |
+| TOTTENHAM HOTSPUR FOOTBALL & ATHLETIC CO. LTD | 12.384 |
+| FOOTBALL CLUB SION | 1.212 |
+| ANDERLECHT | 1.136 |
+| CHELSEA FOOTBALL CLUB | 820 |
+| EVERTON FOOTBALL CLUB CO LTD | 519 |
+| FC RED BULL SALZBURG GMBH | 455 |
+| AFC AJAX NV | 309 |
+| LYNGBY BOLDKLUB A/S | 201 |
+| ASS ESPERANCE SPORTIVE TROYES AUBE CHAMP | 200 |
+| ODENSE SPORT & EVENTS A/S | 177 |
+| STEIRISCHER FUßBALLVERBAND (STFV) | 135 |
+| URBSFA KBVB | 50 |
+| GNK DINAMO | 48 |
+| NOGOMETNI KLUB ZAGREB | 30 |
+| **Totale Estere** | **81.592** |
+
+I debiti verso società nazionali sono da considerare unitamente ai crediti verso società nazionali iscritti nell’attivo nella voce “Crediti verso Ente settore specifico” in quanto le voci sono regolate per il loro ammontare netto tramite la stanza di compensazione LNP.
+Si segnala infine che per i debiti con data di pagamento oltre l’esercizio in accordo con i nuovi principi contabili, sono stati iscritti al 30 giugno 2020 al netto di un effetto di attualizzazione pari a Euro 8.470 migliaia.
 
 28
 
@@ -2446,43 +2425,42 @@ La voce *Proventi da cessione diritti televisivi* comprende principalmente i ric
 
 --- pág. 51 ---
 
+33
+
 per il differimento delle competizioni a causa della pandemia COVID-19, è dovuto anche alla riduzione del *Coefficient Ranking* della stagione sportiva in corso rispetto a quella precedente.
-
 I *Ricavi da cessione temporanea calciatori* sono relativi al calciatore Ivan Perisic.
+Le *Plusvalenze da cessione diritti alle prestazioni calciatori*, realizzate nell’esercizio, vengono di seguito elencate in Euro migliaia con l’indicazione del nominativo del calciatore e della società cessionaria:
 
-Le *Plusvalenze da cessione diritti alle prestazioni calciatori*, realizzate nell'esercizio, vengono di seguito elencate in Euro migliaia con l'indicazione del nominativo del calciatore e della società cessionaria:
-
-|  Calciatore | Società cessionaria | Netto contabile | Valore di cessione | Attualizzazione credito | Plusvalenza  |
-| --- | --- | --- | --- | --- | --- |
-|  **migliaia di Euro**  |   |   |   |   |   |
-|  Icardi Mauro | Sasp Paris Saint-Germain Football | 1.952 | 49.125 | - | 47.173  |
-|  Puscas George | The Reading Football Club Limited | 116 | 7.482 | (403) | 6.963  |
-|  Karamoh Yann | Parma Calcio 1913 S.r.l. | 3.662 | 7.300 | (169) | 3.469  |
-|  Barbosa Almeida Gabriel | Clube de Regatas do Flamengo | 12.424 | 16.500 | (1.767) | 2.308  |
-|  Merola Davide | Empoli F.B.C. S.p.A. | 21 | 750 | - | 729  |
-|  Rizzo Nicholas | Genoa Cricket & Football Club S.p.A. | 18 | 500 | - | 482  |
-|  Palazzi Andrea | Associazione Calcio Monza S.p.A. | 183 | 400 | - | 217  |
-|  D'Amico Felice | U.C. Sampdoria S.p.A. | 289 | 400 | - | 111  |
-|  Radaelli Nicolò | Delfino Pescara 1936 S.p.A. | 6 | 100 | - | 94  |
-|  **Totale** |  |  |  |  | **51.546**  |
+| Calciatore | Società cessionaria | Netto contabile | Valore di cessione | Attualizzazione credito | Plusvalenza |
+|---|---|---|---|---|---|
+| *migliaia di Euro* | | | | | |
+| Icardi Mauro Sasp | Paris Saint-Germain Football | 1.952 | 49.125 | - | 47.173 |
+| Puscas George | The Reading Football Club Limited | 116 | 7.482 | (403) | 6.963 |
+| Karamoh Yann | Parma Calcio 1913 S.r.l. | 3.662 | 7.300 | (169) | 3.469 |
+| Barbosa Almeida Gabriel | Clube de Regatas do Flamengo | 12.424 | 16.500 | (1.767) | 2.308 |
+| Merola Davide | Empoli F.B.C. S.p.A. | 21 | 750 | - | 729 |
+| Rizzo Nicholas | Genoa Cricket & Football Club S.p.A. | 18 | 500 | - | 482 |
+| Palazzi Andrea | Associazione Calcio Monza S.p.A. | 183 | 400 | - | 217 |
+| D'Amico Felice | U.C. Sampdoria S.p.A. | 289 | 400 | - | 111 |
+| Radaelli Nicolò | Delfino Pescara 1936 S.p.A. | 6 | 100 | - | 94 |
+| Totale | | | | | 61.546 |
 
 Gli *Altri proventi da gestione calciatori*, pari a Euro 3.926 migliaia, sono relativi per Euro 3.166 migliaia ai premi diversi da campagna trasferimento calciatori maturati nei confronti sia di *club* nazionali che internazionali (principalmente ai premi maturati per i calciatori Rizzo per Euro 2.000 migliaia e Kovacic per Euro 1.000 migliaia) e per Euro 760 migliaia ai contributi di solidarietà maturati a seguito delle cessioni dei calciatori a *club* internazionali, di cui in particolare per Euro 546 migliaia si riferiscono al calciatore Kovacic.
+Gli *Altri ricavi e proventi diversi* comprendono tra l’altro ricavi da rimborsi assicurativi per Euro 10.000 migliaia relativi alla quota di abbonamenti rimborsati per la stagione sportiva 2019/2020 a causa del COVID-19, da Inter *Academies* per Euro 7.866 migliaia, proventi dovuti a contratti sottoscritti con il Gruppo Suning per la condivisione del personale tecnico e professionale (*Know-How*) per Euro 3.500 migliaia di Euro e servizi a collegate per Euro 725 migliaia. Sono altresì ricomprese nella voce in esame anche le sopravvenienze attive e insussistenze del passivo per Euro 2.500 migliaia tra cui si segnalano principalmente il provento di Euro 708 migliaia relativo al servizio bar effettuato dalla collegata M-I Stadio per l’esercizio 2018/2019, che non poteva essere stimato precedentemente in quanto definito dopo la chiusura del medesimo e il ricavo per Euro 230 migliaia inerente l’“*UEFA Club Benefits Programme 2018-2019*” riconosciuto al Gruppo per le convocazioni dei propri calciatori alle competizioni UEFA *Nations League* 2018/2019 e UEFA *European Championship* 2018-2020.
 
-Gli *Altri ricavi e proventi diversi* comprendono tra l'altro ricavi da rimborsi assicurativi per Euro 10.000 migliaia relativi alla quota di abbonamenti rimborsati per la stagione sportiva 2019/2020 a causa del COVID-19, da *Inter Academies* per Euro 7.866 migliaia, proventi dovuti a contratti sottoscritti con il Gruppo Suning per la condivisione del personale tecnico e professionale (*Know-How*) per Euro 3.500 migliaia di Euro e servizi a collegare per Euro 725 migliaia. Sono altresì ricomprese nella voce in esame anche le sopravvenienze attive e insussistenze del passivo per Euro 2.500 migliaia tra cui si segnalano principalmente il provento di Euro 708 migliaia relativo al servizio bar effettuato dalla collegata M-I Stadio per l'esercizio 2018/2019, che non poteva essere stimato precedentemente in quanto definito dopo la chiusura del medesimo e il ricavo per Euro 230 migliaia inerente l'*UEFA Club Benefits Programme 2018-2019* riconosciuto al Gruppo per le convocazioni dei propri calciatori alle competizioni UEFA Nations League 2018/2019 e UEFA European Championship 2018-2020.
+**COSTI DELLA PRODUZIONE**
 
-## COSTI DELLA PRODUZIONE
+**Costi per materie prime, sussidiarie, di consumo**
 
-### Costi per materie prime, sussidiarie, di consumo
+| migliaia di Euro | 12 mesi al 30.06.2020 | 12 mesi al 30.06.2019 |
+|---|---|---|
+| Materiale tecnico | 987 | 721 |
+| Materiale consumo | 1.780 | 1.876 |
+| Materiale sanitario | 272 | 264 |
+| Altri | 204 | 366 |
+| | 3.243 | 3.227 |
 
-|  migliaia di Euro | 12 mesi al 30.06.2020 | 12 mesi al 30.06.2019  |
-| --- | --- | --- |
-|  Materiale tecnico | 987 | 721  |
-|  Materiale consumo | 1.780 | 1.876  |
-|  Materiale sanitario | 272 | 264  |
-|  Altri | 204 | 366  |
-|   | **3.243** | **3.227**  |
-
-Nella voce "Materiale di consumo", si segnala che sono inclusi gli acquisti di materiale per le *Inter Academies*, gli *Inter Club* e *Membership*.
+Nella voce “Materiale di consumo”, si segnala che sono inclusi gli acquisti di materiale per le Inter *Academies*, gli Inter *Club* e *Membership*.
 
 33
 
@@ -2821,60 +2799,52 @@ Nel corso dell'esercizio sono stati intrattenuti i seguenti rapporti di natura p
 
 --- pág. 60 ---
 
-|  Società | Natura del rapporto | Crediti/Risconti Attivi | Debiti/Risconti Passivi | Ricavi | Conti  |
-| --- | --- | --- | --- | --- | --- |
-|   |   |  30.06.2020 | 30.06.2020 | 30.06.2020 | 30.06.2020  |
-|  Great Horizon S.à.r.l. | Finanziari | - | 78.233 | 4.087 | 3.419  |
-|  Grand Flagship Ltd. | Finanziari | - | 51.164 | - | 2.230  |
-|  Jiangsu Suning Sports Industry Co., Ltd. | Commerciali | 7.344 | 285 | 16.017 | -  |
-|  Suning Sports International Ltd. | Commerciali/Finanziari | 4.200 | - | 9.500 | -  |
-|  Jiangsu Family Sports & Culture Development Co., Ltd. | Commerciali | 220 | - | - | -  |
-|  Jiangsu Suning Football Club Co., Ltd. | Commerciali | 10 | - | - | -  |
-|  Suning Appliance Group Co., Ltd. | Commerciali | 219 | - | - | -  |
-|  Great Mercury Limited | Commerciali | 2.000 | - | 2.000 | -  |
-|  Inter Brand China Co., Ltd. in liquidazione | Finanziari e commerciali | 16 | 16 | - | -  |
-|  Shanghai I.Brand Trading Co., Ltd. | Commerciali | 32 | - | - | -  |
-|  M-I Stadio S.r.l. | Commerciali | - | 3.064 | 725 | 5.073  |
-|  **Totali** |  | **14.641** | **132.762** | **32.329** | **10.722**  |
+42
 
-### Compensi agli Amministratori, ai Sindaci e alla Società di Revisione
+| Società | Natura del rapporto | Crediti/Risconti Attivi 30.06.2020 | Debiti/Risconti Passivi 30.06.2020 | Ricavi 30.06.2020 | Costi 30.06.2020 |
+|---|---|---|---|---|---|
+| Great Horizon S.à.r.l. | Finanziari | - | 78.233 | 4.087 | 3.419 |
+| Grand Flagship Ltd. | Finanziari | - | 51.164 | - | 2.230 |
+| Jiangsu Suning Sports Industry Co., Ltd. | Commerciali | 7.344 | 285 | 16.017 | - |
+| Suning Sports International Ltd. | Commerciali/Finanziari | 4.200 | - | 9.500 | - |
+| Jiangsu Family Sports & Culture Development Co., Ltd. | Commerciali | 220 | - | - | - |
+| Jiangsu Suning Football Club Co., Ltd. | Commerciali | 10 | - | - | - |
+| Suning Appliance Group Co., Ltd. | Commerciali | 219 | - | - | - |
+| Great Mercury Limited | Commerciali | 2.000 | - | 2.000 | - |
+| Inter Brand China Co., Ltd. in liquidazione | Finanziari e commerciali | 16 | 16 | - | - |
+| Shanghai I.Brand Trading Co., Ltd. | Commerciali | 32 | - | - | - |
+| M-I Stadio S.r.l. | Commerciali | - | 3.064 | 725 | 5.073 |
+| Totali | | 14.041 | 132.762 | 32.329 | 10.722 |
 
+**Compensi agli Amministratori, ai Sindaci e alla Società di Revisione**
 I compensi relativi al Consiglio di Amministrazione, al 30 giugno 2020 ammontano ad Euro 1.690 migliaia.
-
 I compensi spettanti ai Sindaci e alla società di revisione, al 30 giugno 2020, ammontano rispettivamente a Euro 223 migliaia e Euro 104 migliaia.
-
 Per completezza di informativa si segnala che tutti i compensi erogati alla Società di Revisione si riferiscono esclusivamente alle normali attività di revisione legale dei conti.
 
-### Azioni di godimento, obbligazioni convertibili in azioni e titoli o valori simili emessi dalla Società del Gruppo
-
+**Azioni di godimento, obbligazioni convertibili in azioni e titoli o valori simili emessi dalla Società del Gruppo**
 Le società consolidate non evidenziano alcuna delle fattispecie in oggetto.
 
-### Numero e caratteristiche degli altri strumenti finanziari emessi dalla Società del Gruppo
+**Numero e caratteristiche degli altri strumenti finanziari emessi dalla Società del Gruppo**
+Le società facenti parte dell’area di consolidamento non evidenziano alcuna delle fattispecie in oggetto.
 
-Le società facenti parte dell'area di consolidamento non evidenziano alcuna delle fattispecie in oggetto.
-
-### Impegni, garanzie e passività potenziali non risultanti dallo stato patrimoniale
-
+**Impegni, garanzie e passività potenziali non risultanti dallo stato patrimoniale**
 Si riporta di seguito il dettaglio degli impegni, delle garanzie e delle passività potenziali non risultanti nel bilancio al 30 giugno 2020.
 
-|  migliaia di Euro | 30.06.2020  |
-| --- | --- |
-|  **Pegni** | **378.055**  |
-|  Pegno sulle quote di partecipazione nella controllata Inter Media | 105.597  |
-|  Pegno su marchi di Inter Media a favore investitori Prestito obbligazionario | 272.458  |
-|  **Fidejussioni** | **4.119**  |
-|  di cui nei confronti di imprese collegate | 106  |
-|  di cui nei confronti di terzi | 4.013  |
-|  **Impegni** | **478**  |
-|  di cui canoni di leasing operativi a scadere | 478  |
+| migliaia di Euro | 30.06.2020 |
+|---|---|
+| **Pegni** | **378.055** |
+| Pegno sulle quote di partecipazione nella controllata Inter Media | 105.597 |
+| Pegno su marchi di Inter Media a favore investitori Prestito obbligazionario | 272.458 |
+| **Fidejussioni** | **4.119** |
+| di cui nei confronti di imprese collegate | 106 |
+| di cui nei confronti di terzi | 4.013 |
+| **Impegni** | **478** |
+| di cui canoni di leasing operativi a scadere | 478 |
 
-Il Gruppo ha concesso in pegno le quote relative al capitale sociale detenuto nella società Inter Media a garanzia della sottoscrizione del Prestito Obbligazionario come descritto nel paragrafo "Altre Informazioni - Operazioni di conferimento e rifinanziamento del debito".
-
-Le principali fidejussioni, come risulta dal prospetto presentato in calce al bilancio d'esercizio, sono a favore di terzi ed ammontano a Euro 4.013 migliaia e sono per la maggior parte a garanzia del contratto di affitto con il Comune di Milano per l'utilizzo dello Stadio Meazza di San Siro. Le fidejussioni a favore di società collegate ammontano a complessivi Euro 106 migliaia e sono per l'intero importo a favore della collegata M-I Stadio a garanzia dell'attività svolta della collegata stessa.
-
+Il Gruppo ha concesso in pegno le quote relative al capitale sociale detenuto nella società Inter Media a garanzia della sottoscrizione del Prestito Obbligazionario come descritto nel paragrafo “Altre Informazioni - Operazioni di conferimento e rifinanziamento del debito”.
+Le principali fidejussioni, come risulta dal prospetto presentato in calce al bilancio d’esercizio, sono a favore di terzi ed ammontano a Euro 4.013 migliaia e sono per la maggior parte a garanzia del contratto di affitto con il Comune di Milano per l’utilizzo dello Stadio Meazza di San Siro. Le fidejussioni a favore di società collegate ammontano a complessivi Euro 106 migliaia e sono per l’intero importo a favore della collegata M-I Stadio a garanzia dell’attività svolta della collegata stessa.
 Gli impegni per canoni di *leasing* operativi a scadere ammontano complessivamente ad Euro 478 migliaia e rappresentano il valore complessivo dei canoni a scadere da corrispondere alla società di *leasing* previsto dai contratti ed escluse le rate già pagate.
-
-Si segnala inoltre che alcuni contratti stipulati per l'acquisto di giocatori prevedono conguagli al verificarsi di specifici risultati sportivi futuri che potrebbero determinare una esposizione del Gruppo a esborsi per massimi Euro 68.450 migliaia; per contro, dal lato attivo i corrispettivi potenziali dovuti da altri *club* al raggiungimento di risultati sportivi definiti relativi alle principali cessioni di giocatori (ivi incluse le cessioni di prestito con obbligo di riscatto a condizioni non ancora maturate) sarebbero pari a Euro 7.750 migliaia.
+Si segnala inoltre che alcuni contratti stipulati per l’acquisto di giocatori prevedono conguagli al verificarsi di specifici risultati sportivi futuri che potrebbero determinare una esposizione del Gruppo a esborsi per massimi Euro 68.450 migliaia; per contro, dal lato attivo i corrispettivi potenziali dovuti da altri *club* al raggiungimento di risultati sportivi definiti relativi alle principali cessioni di giocatori (ivi incluse le cessioni di prestito con obbligo di riscatto a condizioni non ancora maturate) sarebbero pari a Euro 7.750 migliaia.
 
 42
 

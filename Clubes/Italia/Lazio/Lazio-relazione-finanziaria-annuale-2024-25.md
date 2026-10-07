@@ -97,51 +97,48 @@ Dal 28 ottobre 2022 sino all’approvazione del bilancio 2024/2025
 
 --- pág. 4 ---
 
-RELAZIONE FINANZARILANNUALE
+RELAZIONE FINANZIARIA ANNUALE
 AL 30 GIUGNO 2025
 
-# **S.S. LAZIO S.p.A.**
-**PARTE I: RELAZIONE SULLA GESTIONE AL BILANCIO DI ESERCIZIO AL 30**
-**GIUGNO 2025**
+**S.S. LAZIO S.p.A.**  
+**PARTE I: RELAZIONE SULLA GESTIONE AL BILANCIO DI ESERCIZIO AL 30 GIUGNO 2025**
 
 Signori Azionisti,
 
-la S.S. Lazio S.p.A. (di seguito la “Società” o la “Lazio”) al 30 giugno 2025 presenta un risultato netto negativo di Euro 6,45 milioni.
+la S.S. Lazio S.p.A. (di seguito la "Società" o la "Lazio") al 30 giugno 2025 presenta un risultato netto negativo di Euro 6,45 milioni.
 
-Nel prosieguo della relazione saranno esaminati i principali aspetti economici e patrimoniali dell’esercizio chiuso al 30 giugno 2025.
+Nel prosieguo della relazione saranno esaminati i principali aspetti economici e patrimoniali dell'esercizio chiuso al 30 giugno 2025.
 
-# **Risultati reddituali**
+**Risultati reddituali**
 
-Conto Economico Rielassificato
+### Conto Economico Riclassificato
 
-|  fonte prospetti IAS |  | 01/07/2024 30/06/2025 |   | 01/07/2023 30/06/2024  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |   |  Euro/MI | % | Euro/MI | %  |
-|  32,33,34,35,36 | **Valore della produzione** | **123,28** | **100,0%** | **171,35** | **100,0%**  |
-|  37,38,39,41 | Costi operativi al netto ammortamenti, svalutazioni e accantonamenti | (124,81) | -101,2% | (144,20) | -84,2%  |
-|   | **Risultato operativo lordo** | **(1,53)** | **-1,2%** | **27,15** | **15,8%**  |
-|  42 | Ammort. svalutazioni e accantonamenti | (38,04) | -30,9% | (37,89) | -22,1%  |
-|  43 | Proventi da cessione definitive e temporanee contratti calciatori | 14,04 | 11,4% | 43,17 | 25,2%  |
-|  40 | Oneri da cessione/risoluzione contratti calciatori | (0,71) | -0,6% | (1,55) | -0,9%  |
-|   | **Risultato operativo netto dopo i proventi netti da cess. contratti calciati.** | **(26,24)** | **-21,3%** | **30,88** | **18,0%**  |
-|  44 | Proventi ed oneri da partecipazioni | 17,90 | 14,5% | (1,66) | -1,0%  |
-|  45,46 | Proventi ed Oneri finanziari netti | (6,05) | -4,9% | (4,39) | -2,6%  |
-|   | **Utile lordo ante imposte** | **(14,38)** | **-11,7%** | **24,83** | **14,5%**  |
-|  47,48 | Imposte sul reddito | 7,93 | 6,4% | 0,77 | 0,5%  |
-|   | **Utile (Perdita) netto d’esercizio** | **(6,45)** | **-5,2%** | **25,60** | **14,9%**  |
+| fonte prospetti IAS | | 01/07/2024 30/06/2025 Euro/Ml | % | 01/07/2023 30/06/2024 Euro/Ml | % |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| 32,33,34,35,36 | Valore della produzione | 123,28 | 100,0% | 171,35 | 100,0% |
+| 37,38,39,41 | Costi operativi al netto ammortamenti, svalutazioni e accantonamenti | (124,81) | -101,2% | (144,20) | -84,2% |
+| | **Risultato operativo lordo** | **(1,53)** | **-1,2%** | **27,15** | **15,8%** |
+| 42 | Ammort, svalutazioni e accantonamenti | (38,04) | -30,9% | (37,89) | -22,1% |
+| 43 | Proventi da cessione definitive e temporanee contratti calciatori | 14,04 | 11,4% | 43,17 | 25,2% |
+| 40 | Oneri da cessione/risoluzione contratti calciatori | (0,71) | -0,6% | (1,55) | -0,9% |
+| | **Risultato operativo netto dopo i proventi netti da cess. contratti calciat.** | **(26,24)** | **-21,3%** | **30,88** | **18,0%** |
+| 44 | Proventi ed oneri da partecipazioni | 17,90 | 14,5% | (1,66) | -1,0% |
+| 45;46 | Proventi ed Oneri finanziari netti | (6,05) | -4,9% | (4,39) | -2,6% |
+| | **Utile lordo ante imposte** | **(14,38)** | **-11,7%** | **24,83** | **14,5%** |
+| 47;48 | Imposte sul reddito | 7,93 | 6,4% | 0,77 | 0,5% |
+| | **Utile (Perdita) netto d'esercizio** | **(6,45)** | **-5,2%** | **25,60** | **14,9%** |
 
 Il giro di affari si attesta a Euro 123,28 milioni con un decremento rispetto al medesimo periodo della stagione precedente di Euro 48,07 milioni. Tale variazione è dipesa in prevalenza dai minori introiti rivenienti dalla partecipazione alla Europa League rispetto alla Champions League.
 
 Il valore della produzione al 30 giugno 2025 è costituito da Ricavi da gare per Euro 23,35, Diritti TV ed Altre concessioni per Euro 93,96 milioni, sponsorizzazioni, pubblicità e royalties per Euro 2,22 milioni ed altri ricavi e proventi per Euro 3,40 milioni.
 
-I Costi operativi al netto di ammortamenti, svalutazioni e accantonamenti sono pari a Euro 124,60 milioni e sono diminuiti rispetto alla stagione precedente, di Euro 19,39 milioni, per il decremento dei costi del personale.
-
+I Costi operativi al netto di ammortamenti, svalutazioni e accantonamenti sono pari a Euro 124,60 milioni e sono diminuiti rispetto alla stagione precedente, di Euro 19,39 milioni, per il decremento dei costi del personale.  
 La seguente tabella ne evidenzia la composizione (in Euro milioni):
 
-|   | 01/07/24 30/06/25 | 01/07/23 30/06/24 | Diff.%le  |
-| --- | --- | --- | --- |
-|  Costi per il personale | 94,20 | 114,63 | (17,82)  |
-|  Altri costi di gestione | 30,40 | 29,37 | 3,50  |
+| | 01/07/24<br>30/06/25 | 01/07/23<br>30/06/24 | Diff.%le |
+| :--- | :---: | :---: | :---: |
+| Costi per il personale | 94,20 | 114,63 | (17,82) |
+| Altri costi di gestione | 30,40 | 29,37 | 3,50 |
 
 4
 
@@ -235,43 +232,50 @@ I Debiti, al netto dell'esposizione finanziaria, dei Risconti passivi e dei Fond
 --- pág. 7 ---
 
 RELAZIONE FINANZIARIA ANNUALE
+AL 30 GIUGNO 2025
 
-AL 30 GIUGNO 2015
-
-L’indebitamento finanziario netto risulta negativo per Euro 85,02 milioni con un incremento di Euro 17,06 milioni, rispetto al 30 giugno 2024, dovuto all’aumento delle linee di finanziamento autoliquidanti.
+L'indebitamento finanziario netto risulta negativo per Euro 85,02 milioni con un incremento di Euro 17,06 milioni, rispetto al 30 giugno 2024, dovuto all'aumento delle linee di finanziamento autoliquidanti.
 
 Le informazioni patrimoniali e finanziarie riportate nelle tabelle seguenti vengono indicate anche ai sensi della raccomandazione Consob n. 2080535 del 9 dicembre 2002.
 
-# Indicatori Alternativi di Performance (IAP)
+**Indicatori Alternativi di Performance (IAP)**
 
-Ai sensi dalla Comunicazione Consob n. 0092543 del 3 dicembre 2015 che recepisce gli orientamenti ESMA/2015/1415 in tema di indicatori alternativi di performance si evidenziano di seguito le definizioni di tali indicatori.
+Ai sensi dalla Comunicazione Consob n. 0092543 del 3 dicembre 2015 che recepisce gli orientamenti ESMA/2015/1415 in tema di indicatori alternativi di *performance* si evidenziano di seguito le definizioni di tali indicatori.
+* Capitale investito netto: è un indicatore della struttura patrimoniale ed è calcolato come differenza tra le attività non correnti nette ed il circolante netto ed il fondo TFR.
+* Indebitamento finanziario netto: rappresenta un indicatore della struttura finanziaria e corrisponde alla differenza tra le passività, sia a breve sia a lungo termine, e le attività finanziarie prontamente liquidabili incluse le disponibilità liquide.
+* Risultato operativo netto dopo i proventi da cessione calciatori: come risulta dal prospetto del conto economico riclassificato, rappresenta il saldo netto tra valore della produzione e costi operativi, ammortamenti, svalutazioni e accantonamenti, proventi e oneri da cessione definitiva e temporanea dei contratti calciatori.
 
-- Capitale investito netto: è un indicatore della struttura patrimoniale ed è calculato come differenza tra le attività non correnti nette ed il circolante netto ed il fondo TFR.
-- Indebitamento finanziario netto: rappresenta un indicatore della struttura finanziaria e corrisponde alla differenza tra le passività, sia a breve sia a lungo termine, e le attività finanziarie prontamente liquidabili incluse le disponibilità liquide.
-- Risultato operativo netto dopo i proventi da cessione calciatori: come risulta dal prospetto del conto economico riclassificato, rappresenta il saldo netto tra valore della produzione e costi operativi, ammortamenti, svalutazioni e accantonamenti, proventi e oneri da cessione definitiva e temporanea dei contratti calciatori.
+**Altre informazioni**
 
-# Altre informazioni
+| INDICATORI DI SINTESI | 30/06/25 | 30/06/24 |
+| :--- | :---: | :---: |
+| **MARGINE PRIMARIO DI STRUTTURA** | | |
+| -in valore assoluto | (226,12) | (181,90) |
+| -in percentuale | 17,15% | 22,66% |
+| **MARGINE SECONDARIO DI STRUTTURA** | | |
+| -in valore assoluto | (140,34) | (89,51) |
+| -in percentuale | 48,58% | 61,94% |
+| **INDEBITAMENTO FINANZIARIO NETTO** | | |
+| - componenti positive e negative a breve | (85,02) | (67,96) |
+| - componenti positive e negative a medio/lungo termine | 0,00 | 0,00 |
+| - Totale | (85,02) | (67,96) |
+| **QUOZIENTE DI INDEBITAMENTO COMPLESSIVO** | 679,77% | 551,22% |
+| **QUOZIENTE DI INDEBITAMENTO FINANZIARIO NETTO** | 181,67% | 127,49% |
+| **MARGINE DI DISPONIBILITA** | | |
+| -in valore assoluto | (190,19) | (135,89) |
+| -in percentuale | 18,14% | 32,53% |
+| **CASH FLOW** | | |
+| - variazione cash flow nel periodo | 2,88 | 0,10 |
+| **VARIAZIONE CAPITALE CIRCOLANTE NETTO** | (33,57) | (2,81) |
 
-|  INDICATORI DI SINTESI | 30/06/25 | 30/06/24  |
-| --- | --- | --- |
-|  MARGINE PRIMARIO DI STRUTTURA -in valore assoluto -in percentuale | (226,12) 17,15% | (181,90) 22,66%  |
-|  MARGINE SECONDARIO DI STRUTTURA -in valore assoluto -in percentuale | (140,34) 48,58% | (89,51) 61,94%  |
-|  INDEBITAMENTO FINANZIARIO NETTO - componenti positive e negative a breve - componenti positive e negative a medio/lungo termine | (85,02) 0,00 | (67,96) 0,00  |
-|  - Totale | (85,02) | (67,96)  |
-|  QUOZIENTE DI INDEBITAMENTO COMPLESSIVO | 679,77% | 551,22%  |
-|  QUOZIENTE DI INDEBITAMENTO FINANZIARIO NETTO | 181,67% | 127,49%  |
-|  MARGINE DI DISPONIBILITA -in valore assoluto -in percentuale | (190,19) 18,14% | (135,89) 32,53%  |
-|  CASH FLOW - variazione cash flow nel periodo | 2,88 | 0,10  |
-|  VARIAZIONE CAPITALE CIRCOLANTE NETTO | (33,57) | (2,81)  |
+| INDICATORI DI SINTESI | 01/07/24<br>30/06/25 | 01/07/23<br>30/06/24 |
+| :--- | :---: | :---: |
+| **ROE NETTO** | -13,79% | 48,03% |
+| **ROE LORDO** | -30,74% | 46,57% |
+| **ROI** | -11,49% | 14,34% |
+| **ROS** | -20,85% | 17,79% |
 
-|  INDICATORI DI SINTESI | 01/07/24 30/06/25 | 01/07/23 30/06/24  |
-| --- | --- | --- |
-|  ROE NETTO | -13,79% | 48,03%  |
-|  ROE LORDO | -30,74% | 46,57%  |
-|  ROI | -11,49% | 14,34%  |
-|  ROS | -20,85% | 17,79%  |
-
-Personale ed organizzazione
+***Personale ed organizzazione***
 
 7
 
@@ -2008,51 +2012,50 @@ AL 30 GIUGNO 2025
 
 --- pág. 55 ---
 
-RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE  
 AL 30 GIUGNO 2025
 
-|  in euro |  | RENDICONTO | RENDICONTO  |
-| --- | --- | --- | --- |
-|   |   |  01/07/2024 30/06/25 | 01/07/2023 30/06/24  |
-|  **UTILE (PERDITA) DI ESERCIZIO** |  | **(6.451.693)** | **25.598.329**  |
-|  Ammortamenti, accantonamenti e svalutazioni | 42 | 38.202.648 | 37.339.625  |
-|  Variazione Fondo benefici dipendenti (*) | 23 | 31.583 | (44.289)  |
-|  Variazione Fondi per rischi e oneri ed imposte differite | 22;48;42 | (5.171.107) | (5.370.820)  |
-|  Plusvalenze e minusvalenze DPS |  | (11.143.673) | (40.895.366)  |
-|  (Proventi) Oneri finanziari da partecipazioni |  | (17.900.000) | 1.660.000  |
-|  Oneri finanziari netti |  | 3.909.531 | 2.455.174  |
-|  imposte correnti |  | (3.087.770) | 5.146.195  |
-|  Variazione rimanenze | 10 | 184.781 | (184.781)  |
-|  Variazione crediti verso enti specifici | 7;12 | 971.759 | 5.635.751  |
-|  Variazione crediti verso clienti | 11 | (1.471.240) | (7.619.371)  |
-|  Variazione crediti tributari | 9; 15 | 227.908 | 212.329  |
-|  Variazione crediti diversi |  | (1.364.320) | 23.726  |
-|  Variazione altre attività |  | 3.680.610 | 2.173.594  |
-|  Variazione debiti verso enti specifici | 20; 28 | (41.693) | (352.184)  |
-|  Variazione debiti commerciali | 29 | 3.910.487 | 3.088.879  |
-|  Variazione debiti tributari e passività per fiscalità incerta | 19;27 | (16.049.731) | (14.858.527)  |
-|  Variazione debiti diversi | 19,27;30,24 | 2.824.956 | 1.137.835  |
-|  Accantonamento al fondo imposte |  | (2.838.417) | (786.962)  |
-|  Imposte pagate |  | (4.826.928) | (6.899.092)  |
-|  **FLUSSO DI CASSA DELLA GESTIONE CORRENTE** |  | **(16.402.310)** | **7.460.045**  |
-|  Investimento diritti pluriennali prestazioni calciatori |  | (80.777.717) | (45.209.059)  |
-|  Cessione diritti pluriennali prestazioni calciatori |  | 21.312.418 | 50.775.611  |
-|  (Incremento) Decremento netto immobilizzazioni materiali ed immateriali | 1;2;3;4 | (3.600.797) | (3.585.670)  |
-|  (Incremento) Decremento netto attività finanziarie | 6 | (4.041.369) | 142.037  |
-|  Variazione crediti verso società calcistiche |  | 19.490.165 | (21.572.915)  |
-|  Variazione debiti verso società calcistiche |  | (3.323.438) | 17.951.425  |
-|  Variazione crediti verso enti specifici (lega c/trasferimenti) |  | 8.164.839 | 4.228.704  |
-|  Variazione debiti verso enti specifici (lega c/trasferimenti) |  | 27.992.288 | (8.390.165)  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO** |  | **(14.783.611)** | **(5.660.031)**  |
-|  Assunzione di finanziamenti | 18;25 | 108.670.785 | 146.801.806  |
-|  Rimborsi di finanziamenti | 18;25 | (88.742.180) | (153.254.089)  |
-|  Incasso e pagamenti operazioni con parti correlate |  | 16.148.349 | 6.708.550  |
-|  Apporti di capitale |  | 0 | 0  |
-|  Oneri finanziari pagati |  | (2.012.430) | (1.951.743)  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ FINANZIARIA** |  | **34.064.524** | **(1.695.476)**  |
-|  **INCREMENTO (DECREMENTO) DISPONIBILITÀ LIQUIDE** |  | **2.878.602** | **104.537**  |
-|  Disponibilità liquide all'inizio del periodo | 16 | 1.849.143 | 1.744.606  |
-|  Disponibilità liquide alla fine del periodo | 16 | 4.727.745 | 1.849.143  |
+| in euro | Note | RENDICONTO<br>01/07/2024<br>30/06/25 | RENDICONTO<br>01/07/2023<br>30/06/24 |
+| :--- | :---: | :---: | :---: |
+| **UTILE (PERDITA) DI ESERCIZIO** | | **(6.451.693)** | **25.598.329** |
+| Ammortamenti, accantonamenti e svalutazioni | 42 | 38.202.648 | 37.339.625 |
+| Variazione Fondo benefici dipendenti (*) | 23 | 31.583 | (44.289) |
+| Variazione Fondi per rischi e oneri ed imposte differite | 22;48;42 | (5.171.107) | (5.370.820) |
+| Plusvalenze e minusvalenze DPS | | (11.143.673) | (40.895.366) |
+| (Proventi) Oneri finanziari da partecipazioni | | (17.900.000) | 1.660.000 |
+| Oneri finanziari netti | | 3.909.531 | 2.455.174 |
+| Imposte correnti | | (3.087.770) | 5.146.195 |
+| Variazione rimanenze | 10 | 184.781 | (184.781) |
+| Variazione crediti verso enti specifici | 7;12 | 971.759 | 5.635.751 |
+| Variazione crediti verso clienti | 11 | (1.471.240) | (7.619.371) |
+| Variazione crediti tributari | 9; 15 | 227.908 | 212.329 |
+| Variazione crediti diversi | | (1.364.320) | 23.726 |
+| Variazione altre attività | | 3.680.610 | 2.173.594 |
+| Variazione debiti verso enti specifici | 20; 28 | (41.693) | (352.184) |
+| Variazione debiti commerciali | 29 | 3.910.487 | 3.088.879 |
+| Variazione debiti tributari e passività per fiscalità incerta | 19;27 | (16.049.731) | (14.858.527) |
+| Variazione debiti diversi | 19;27;30;24 | 2.824.956 | 1.137.835 |
+| Accantonamento al fondo imposte | | (2.838.417) | (786.962) |
+| Imposte pagate | | (4.826.928) | (6.899.092) |
+| **FLUSSO DI CASSA DELLA GESTIONE CORRENTE** | | **(16.402.310)** | **7.460.045** |
+| Investimento diritti pluriennali prestazioni calciatori | | (80.777.717) | (45.209.059) |
+| Cessione diritti pluriennali prestazioni calciatori | | 21.312.418 | 50.775.611 |
+| (Incremento) Decremento netto immobilizzazioni materiali ed immateriali | 1;2;3;4 | (3.600.797) | (3.585.670) |
+| (Incremento) Decremento netto attività finanziarie | 6 | (4.041.369) | 142.037 |
+| Variazione crediti verso società calcistiche | | 19.490.165 | (21.572.915) |
+| Variazione debiti verso società calcistiche | | (3.323.438) | 17.951.425 |
+| Variazione crediti verso enti specifici (lega c/trasferimenti) | | 8.164.839 | 4.228.704 |
+| Variazione debiti verso enti specifici (lega c/trasferimenti) | | 27.992.288 | (8.390.165) |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO** | | **(14.783.611)** | **(5.660.031)** |
+| Assunzione di finanziamenti | 18;25 | 108.670.785 | 146.801.806 |
+| Rimborsi di finanziamenti | 18;25 | (88.742.180) | (153.254.089) |
+| Incasso e pagamenti operazioni con parti correlate | | 16.148.349 | 6.708.550 |
+| Apporti di capitale | | 0 | 0 |
+| Oneri finanziari pagati | | (2.012.430) | (1.951.743) |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ FINANZIARIA** | | **34.064.524** | **(1.695.476)** |
+| **INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE** | | **2.878.602** | **104.537** |
+| Disponibilità liquide all'inizio del periodo | 16 | 1.849.143 | 1.744.606 |
+| Disponibilità liquide alla fine del periodo | 16 | 4.727.745 | 1.849.143 |
 
 55
 
@@ -2952,30 +2955,28 @@ AL 30 GIUGNO 2025
 
 I Debiti verso enti-settore specifico ammontano al 30 giugno 2025 a Euro 44,13 milioni e si riferiscono a debiti verso Lega seria A, Euro 23,82 milioni, e società estere con scadenza oltre i 12 mesi, Euro 20,31 milioni, rivenienti dalle campagne trasferimenti dei diritti alle prestazioni sportive.
 
-### *Indebitamento soggetto a condizioni*
+**Indebitamento soggetto a condizioni**
 
-La migliore stima dell’indebitamento soggetto a condizioni, informativa richiesta dagli orientamenti ESMA n. 32-232-1138 del 4 marzo 2021, è pari al 30 giugno 2025 a:
-
+La migliore stima dell'indebitamento soggetto a condizioni, informativa richiesta dagli orientamenti ESMA n. 32-232-1138 del 4 marzo 2021, è pari al 30 giugno 2025 a:
 -) compensi, per Euro 13,30 milioni, ad intermediari, per le stagioni dalla 25/26 alla 28/29, dipendenti dal tesseramento/rinnovo dei giocatori presso la S.S. Lazio S.p.A.;
 -) compensi, per Euro 17,44 milioni, a giocatori, per le stagioni dalla 25/26 alla 28/29.
 
-### *Erogazioni pubbliche*
+**Erogazioni pubbliche**
 
-La legge 4 agosto 2017, n. 124 (legge annuale per il mercato e la concorrenza) ha introdotto all’articolo 1, commi da 125 a 129, alcune misure finalizzate ad assicurare la trasparenza nel sistema delle erogazioni pubbliche. Le disposizioni, da ultimo modificate con decreto-legge 30 aprile 2019, n. 34, prevedono, in particolare, l’obbligo di pubblicare nelle note integrative del bilancio di esercizio e dell’eventuale bilancio consolidato gli importi e le informazioni relativi a sovvenzioni, sussidi, vantaggi, contributi o aiuti, in denaro o in natura, non aventi carattere generale e privi di natura corrispettiva, retributiva o risarcitoria, ricevute dalle pubbliche amministrazioni (comma 125-bis) e le erogazioni effettuate (comma 126).
+La legge 4 agosto 2017, n. 124 (legge annuale per il mercato e la concorrenza) ha introdotto all'articolo 1, commi da 125 a 129, alcune misure finalizzate ad assicurare la trasparenza nel sistema delle erogazioni pubbliche. Le disposizioni, da ultimo modificate con decreto-legge 30 aprile 2019, n. 34, prevedono, in particolare, l'obbligo di pubblicare nelle note integrative del bilancio di esercizio e dell'eventuale bilancio consolidato gli importi e le informazioni relativi a sovvenzioni, sussidi, vantaggi, contributi o aiuti, in denaro o in natura, non aventi carattere generale e privi di natura corrispettiva, retributiva o risarcitoria, ricevute dalle pubbliche amministrazioni (comma 125-bis) e le erogazioni effettuate (comma 126).
 
 In coerenza con le circolari di Assonime n. 5 del 22/2/2019 “Trasparenza nel sistema delle erogazioni pubbliche: analisi della disciplina e orientamenti interpretativi” e n.32 del 23 dicembre 2019 “Attività di impresa e concorrenza”, i principali criteri e modalità di rendicontazione delle erogazioni pubbliche adottate da Lazio S.p.A. sono di seguito sintetizzati:
-
-- la disciplina si applica solo ai soggetti residenti in Italia;
-- le erogazioni hanno carattere di liberalità o donazione, e rappresentano incentivi o agevolazioni volte a conferire al beneficiario un riconosciuto vantaggio economico; si tratta pertanto di erogazioni a titolo di donazione o liberalità e di aiuti pubblici ad hoc concessi non sulla base di un regime generale di aiuti;
-- le risorse pubbliche sono esclusivamente “nazionali”;
-- le erogazioni sono rendicontate secondo il criterio della cassa e per importo non inferiore a 10.000 euro (con riferimento al singolo beneficiario) nel periodo considerato.
+• la disciplina si applica solo ai soggetti residenti in Italia;
+• le erogazioni hanno carattere di liberalità o donazione, e rappresentano incentivi o agevolazioni volte a conferire al beneficiario un riconosciuto vantaggio economico; si tratta pertanto di erogazioni a titolo di donazione o liberalità e di aiuti pubblici ad hoc concessi non sulla base di un regime generale di aiuti;
+• le risorse pubbliche sono esclusivamente “nazionali”;
+• le erogazioni sono rendicontate secondo il criterio della cassa e per importo non inferiore a 10.000 euro (con riferimento al singolo beneficiario) nel periodo considerato.
 
 In linea a quanto sopra esposto, di seguito le erogazioni pubbliche incassate/disposte da SS Lazio S.p.A. nella stagione 2024/2025:
 
-|  ENTE BENEFICIARIO | DENOMINAZIONE/RAGIONE SOCIALE | PARTITATIVA | TIPOLOGIA DI OPERAZIONE | IMPORTO IN € | NOTE  |
-| --- | --- | --- | --- | --- | --- |
-|  S.S. Lazio S.p.A. | Regione Lazio | 0212863100 5 | Contributo straordinario contro il bullismo e cyberbullismo | 30.000 | Contributo straordinario contro il bullismo e cyberbullismo  |
-|  **Totale** |  |  |  | **30.000** |   |
+| ENTE BENEFICIARIO | DENOMINAZIONE/RAGIONE SOCIALE | PARTITA IVA | TIPOLOGIA DI OPERAZIONE | IMPORTO IN € | NOTE |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| S.S. Lazio S.p.A. | Regione Lazio | 02128631005 | Contributo straordinario contro il bullismo e cyberbullismo | 30.000 | Contributo straordinario contro il bullismo e cyberbullismo |
+| **Totale** | | | | **30.000** | |
 
 78
 
@@ -3257,42 +3258,37 @@ Le Attività per imposte differite attive al 30 giugno 2025 sono pari ad Euro 41
 --- pág. 85 ---
 
 RELAZIONE FINANZIARIA ANNUALE
-
-AL 30 GIUGNO 2023
+AL 30 GIUGNO 2025
 
 Durante l'esercizio le attività per imposte differite attive hanno subito la seguente movimentazione:
-
-decremento per Euro 1.965 migliaia principamente per effetto delle variazioni in aumento fiscali;
-- incremento per Euro 6.723 migliaia di cui 5.887 migliaia relativi a quota parte delle perdite fiscali pregasse e 836 migliaia per variazioni fiscali.
+* decremento per Euro 1.965 migliaia principalmente per effetto delle variazioni in aumento fiscali;
+* incremento per Euro 6.723 migliaia di cui 5.887 migliaia relativi a quota parte delle perdite fiscali pregresse e 836 migliaia per variazioni fiscali.
 
 La tabella seguente, in Euro migliaia, evidenzia la composizione delle Attività per imposte differite:
 
 in €/000
 
-|  Imposte differite attive | Da perdite di esercizio | Da variazioni fiscali IRES | Da Ace | Totale  |
-| --- | --- | --- | --- | --- |
-|  Al 30 giugno 2024 | 30.941 | 5.410 | 6 | 36.356  |
-|  (Addebito) a stato patrimoniale |  | 0 |  | 0  |
-|  (Addebito) a conto economico | (59) | (1.906) |  | (1.965)  |
-|  Accredito a conto economico | 5.887 | 836 |  | 6.723  |
-|  Al 30 giugno 2025 | 36.769 | 4.340 | 6 | 41.114  |
+| Imposte differite attive | Da perdite di esercizio | Da variazioni fiscali IRES | Da Ace | Totale |
+| :--- | :---: | :---: | :---: | :---: |
+| **Al 30 giugno 2024** | **30.941** | **5.410** | **6** | **36.356** |
+| (Addebito) a stato patrimoniale | | 0 | | 0 |
+| (Addebito) a conto economico | (59) | (1.906) | | (1.965) |
+| Accredito a conto economico | 5.887 | 836 | | 6.723 |
+| **Al 30 giugno 2025** | **36.769** | **4.340** | **6** | **41.114** |
 
 Alla data di bilancio il Gruppo ha perdite fiscali pari a Euro 178 milioni. Tutte le Società del Gruppo operano in Italia e aderiscono a un accordo di consolidato fiscale, in base al quale le imposte sono determinate a livello di gruppo. In conformità alla normativa fiscale italiana le perdite fiscali non sono soggette a scadenza, sono quindi riportabili a nuovo indefinitamente e possono essere utilizzate in ciascun esercizio fino a concorrenza dell'80% dell'imponibile.
 
-In conformità alle raccomandazioni formulate dall'ESMA nel Public Statement "Consideration on recognition of deferred tax assets arising from the carry-forward of the unused tax losses" del 15 luglio 2019, è stata effettuata una valutazione approfondita in merito alle evidenze sul fatto che la realizzazione di probabili imponibili fiscali futuri da parte del Gruppo, renda, di conseguenza, probabile il recupero delle predette imposte anticipate.
-
+In conformità alle raccomandazioni formulate dall'ESMA nel Public Statement "*Consideration on recognition of deferred tax assets arising from the carry-forward of the unused tax losses*" del 15 luglio 2019, è stata effettuata una valutazione approfondita in merito alle evidenze sul fatto che la realizzazione di probabili imponibili fiscali futuri da parte del Gruppo, renda, di conseguenza, probabile il recupero delle predette imposte anticipate.
 Tale valutazione è stata condotta considerando i criteri previsti dallo IAS 12:36 applicabili nelle circostanze.
 
 All'esito della valutazione la recuperabilità delle imposte anticipate si basa:
-
-- sulla valutazione che risulti probabile che il Gruppo possa generare degli imponibili fiscali sufficienti per l'integrale recuperabilità delle imposte anticipate;
-- sulla presenza di differenze temporanee imponibili sua sulla capogruppo che sulla controllata SS Lazio M&C S.p.A. a fronte delle quali sono stanziate imposte differite passive (par a Euro 8,94 milioni a livello di gruppo al 30 giugno 2025). Il riversamento di tali differenze avverrà secondo tempistiche coerenti con quale attese per le differenze temporanee deducibili e potra consentire di generare dei maggiori imponibili fiscali.
+* sulla valutazione che risulti probabile che il Gruppo possa generare degli imponibili fiscali sufficienti per l'integrale recuperabilità delle imposte anticipate;
+* sulla presenza di differenze temporanee imponibili sia sulla capogruppo che sulla controllata SS Lazio M&C S.p.A. a fronte delle quali sono stanziate imposte differite passive (pari a Euro 8,94 milioni a livello di gruppo al 30 giugno 2025). Il riversamento di tali differenze avverrà secondo tempistiche coerenti con quelle attese per le differenze temporanee deducibili e potrà consentire di generare dei maggiori imponibili fiscali.
 
 Considerando:
-
-- il percorso di ristrutturazione del costo e ringiovanimento dei tesserati, ai fini anche del rispetto di quanto previsto per le prossime stagioni alla UEFA (New Financial Sustainability Regulations);
-- la conferma di risultati economici rivenienti dalle performance sportive storicamente ottenute sua in Campionato che di partecipazione alle competizioni UEFA;
-- il conseguimento di plusvalenze da cessione dei diritti alle prestazioni sportive della rosa della prima squadra, sua sulla base di quanto realizzato nelle stagioni precedenti, sua dall'analisi del potenziale differenziale tra valori di mercato e valori di iscrizione in bilancio;
+* il percorso di ristrutturazione del costo e ringiovanimento dei tesserati, ai fini anche del rispetto di quanto previsto per le prossime stagioni dalla UEFA (New Financial Sustainability Regulations);
+* la conferma di risultati economici rivenienti dalle performance sportive storicamente ottenute sia in Campionato che di partecipazione alle competizioni UEFA;
+* il conseguimento di plusvalenze da cessione dei diritti alle prestazioni sportive della rosa della prima squadra, sia sulla base di quanto realizzato nelle stagioni precedenti, sia dall'analisi del potenziale differenziale tra valori di mercato e valori di iscrizione in bilancio;
 
 85
 
@@ -3628,44 +3624,45 @@ La tabella che segue ne evidenzia la movimentazione:
 
 --- pág. 93 ---
 
-RELAZIONE FINANZIARIA ANNUALE
-AL 30 GIUGNO 2023
+RELAZIONE FINANZIARIA ANNUALE  
+AL 30 GIUGNO 2025  
 
 Le principali ipotesi attuariali adottate sono di seguito indicate:
 
-|  RIEPILOGO DELLE BASI TECNICHE ECONOMICHE |   | 30.06.24  |
-| --- | --- | --- |
-|  Tasso annuo di attualizzazione | 3,21% | 3,49%  |
-|  Tasso annuo di inflazione | 2,00% | 2,00%  |
-|  Tasso annuo incremento TFR | 3,00% | 3,00%  |
-|  Tasso annuo di incremento salariale | Dirigenti: 1,50%; Quadri: 0,50%; Impiegati: 0,50%; Operai: 0,50% | Dirigenti: 1,50%; Quadri: 0,50%; Impiegati: 0,50%; Operai: 0,50%  |
+| RIEPILOGO DELLE BASI TECNICHE ECONOMICHE | 30.06.25 | 30.06.24 |
+| :--- | :---: | :---: |
+| Tasso annuo di attualizzazione | 3,21% | 3,49% |
+| Tasso annuo di inflazione | 2,00% | 2,00% |
+| Tasso annuo incremento TFR | 3,00% | 3,00% |
+| Tasso annuo di incremento salariale | Dirigenti: 1,50%; Quadri: 0,50%; Impiegati: 0,50%; Operai: 0,50% | Dirigenti: 1,50%; Quadri: 0,50%; Impiegati: 0,50%; Operai: 0,50% |
 
 Il tasso utilizzato per l'attualizzazione fa riferimento all'indice Iboxx Corporate A con duration 7-10 rilevato alla data della valutazione.
 
 Si segnala che ai sensi della legge n. 296/06 la Società non possiede i requisiti numerici per il trasferimento del TFR a forme di previdenza complementare.
 
-#### 24. Altre passività non correnti
+### 24. Altre passività non correnti
 
 La voce "Altre passività non correnti" al 30 giugno 2025 ammonta a Euro 6.913 migliaia con un incremento di Euro 3.221 migliaia rispetto al 30 giugno 2024 ed è composta dalle voci riportate nella seguente tabella:
 
-|  Altre passività non correnti | in €/000  |   |
-| --- | --- | --- |
-|   |  30.06.25 | 30.06.24  |
-|  Altri debiti | 4.153 | 799  |
-|  Risconti passivi | 2.760 | 2.893  |
-|  **Totale** | **6.913** | **3.692**  |
+*in €/000*
 
-#### Altri debiti
+| Altre passività non correnti | 30.06.25 | 30.06.24 |
+| :--- | :---: | :---: |
+| Altri debiti | 4.153 | 799 |
+| Risconti passivi | 2.760 | 2.893 |
+| **Totale** | **6.913** | **3.692** |
+
+#### *Altri debiti*
 
 Gli Altri debiti sono pari a Euro 4.153 migliaia e fanno riferimento alla riclassifica della parte oltre i 12 mesi dei debiti relativi agli intermediari sportivi.
 
-#### Risconti passivi
+#### *Risconti passivi*
 
 I Risconti passivi ammontano a Euro 2.760 migliaia e sono, in prevalenza, la parte oltre i 12 mesi dei ricavi relativi al contratto di cessione non esclusiva dei diritti di utilizzazione dell'archivio delle immagini di SS Lazio alla RAI, per la quota non di competenza del periodo.
 
 ### PASSIVITÀ CORRENTI
 
-#### 25. Debiti finanziari
+### 25. Debiti finanziari
 
 La voce "Debiti finanziari" al 30 giugno 2025 ammonta a Euro 63.481 migliaia, con un incremento rispetto al 30 giugno 2024 di Euro 23.589 migliaia, in gran parte per la riclassifica di debiti a medio lungo termine. Tale incremento ha finanziato i flussi di cassa della gestione corrente e dall'attività di investimento entrambi negativi, come evidenziato nel rendiconto finanziario.
 
@@ -4571,42 +4568,41 @@ Gli Oneri finanziari netti aumentano per minori attualizzazioni.
 RELAZIONE FINANZIARIA ANNUALE
 AL 30 GIUGNO 2025
 
-# Situazione patrimoniale finanziaria
+**Situazione patrimoniale finanziaria**
 
-Stato Patrimoniale Riclassificato
+**Stato Patrimoniale Riclassificato**
 
-|  fonte prospetti IAS |  | 30/06/2025 |   | 30/06/2024  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |   |  Euro/MI | % | Euro/MI | %  |
-|  1;2;3;4;5;6 | Immobilizzazioni Nette | 203,80 | 411,99% | 164,08 | 426,13%  |
-|  9,10,11,12,13;24,25,26,27,28 | Capitale Circolante Netto | (116,34) | -235,19% | (81,30) | -211,14%  |
-|  6,7,8;17,18,19,20,22 | Altre Passività nette non correnti | (36,14) | -73,06% | (42,55) | -110,50%  |
-|  21 | Fondo TFR | (1,85) | -3,74% | (1,73) | -4,49%  |
-|   | **Capitale Investito Netto** | **49,47** | **100,00%** | **38,51** | **100,00%**  |
-|   | finanziato da: |  |  |  |   |
-|  15 | Patrimonio Netto | (16,83) | -34,03% | 0,39 | 1,01%  |
-|  14;16;23 | Indebitamento Finanziario Netto | 66,30 | 134,03% | 38,12 | 98,99%  |
-|   | **Tot. Fonti di Finanziamento** | **49,47** | **100,00%** | **38,51** | **100,00%**  |
+| fonte prospetti IAS | | 30/06/2025 Euro/Ml | % | 30/06/2024 Euro/Ml | % |
+|---|---|---|---|---|---|
+| 1;2;3;4;5;6 | Immobilizzazioni Nette | 203,80 | 411,99% | 164,08 | 426,13% |
+| 9,10,11,12,13;24,25,26,27,28 | Capitale Circolante Netto | (116,34) | -235,19% | (81,30) | -211,14% |
+| 6;7;8;17;18;19;20;22 | Altre Passività nette non correnti | (36,14) | -73,06% | (42,55) | -110,50% |
+| 21 | Fondo TFR | (1,85) | -3,74% | (1,73) | -4,49% |
+| | **Capitale Investito Netto** | 49,47 | 100,00% | 38,51 | 100,00% |
+| | finanziato da: | | | | |
+| 15 | Patrimonio Netto | (16,83) | -34,03% | 0,39 | 1,01% |
+| 14;16;23 | Indebitamento Finanziario Netto | 66,30 | 134,03% | 38,12 | 98,99% |
+| | **Tot. Fonti di Finanziamento** | 49,47 | 100,00% | 38,51 | 100,00% |
 
 Il Capitale immobilizzato è pari ad Euro 203,80 milioni con un incremento di Euro 39,72 milioni, rispetto al valore al 30 giugno 2024; tale aumento è dipeso soprattutto degli acquisti/vendite dei diritti alle prestazioni sportive effettuati nel corso dell'esercizio, al netto degli ammortamenti di periodo.
 
 Il valore dei Diritti alle prestazioni sportive dei tesserati ammonta ad Euro 109,67 milioni, così come indicato nella tabella allegata in appendice. Le tabelle seguenti, in migliaia di Euro ed al lordo delle attualizzazioni, evidenziano per le principali operazioni di acquisto e vendite perfezionate nel periodo, il costo di acquisto, comprensivo di eventuali oneri accessori di diretta imputazione, ed i prezzi di vendita con eventuali plusvalenze o minusvalenze:
 
-Acquisti (importi in Euro migliaia)
+*Acquisti (importi in Euro migliaia)*
 
-|  Calciatore | Società di Provenienza | Costo del diritto | Età | Durata del contratto  |
-| --- | --- | --- | --- | --- |
-|  Rovella Nicolò | Juventus Football Club | 17.000 | 23 | 4  |
-|  Noslin Tijjani | Hellas Verona FC S.p.A. | 16.789 | 21 | 5  |
-|  Belahyane Reda | Hella Verona F.C. | 10.329 | 21 | 5  |
-|  Tchaouna Loum | U. S. Salernitana 1919 S.R.L. | 8.766 | 25 | 5  |
-|  Tavares Nuno Varela | Arsenal Football Club | 6.000 | 25 | 5  |
-|  Dele Bashiru | Hatay sport Club Association | 5.432 | 24 | 4  |
-|  Oliver Porvstgaard Nielsen | Vb Alliancen | 4.500 | 22 | 5  |
-|  Samuel Gigot | Olympique de Marseille | 4.489 | 31 | 3  |
-|  Pellegrini Luca | Juventus Football Club | 4.000 | 26 | 3  |
+| Calciatore | Società di Provenienza | Costo del diritto | Età | Durata del contratto |
+|---|---|---|---|---|
+| Rovella Nicolò | Juventus Football Club | 17.000 | 23 | 4 |
+| Noslin Tijjani | Hellas Verona FC S.p.A. | 16.789 | 21 | 5 |
+| Belahyane Reda | Hella Verona F.C. | 10.329 | 21 | 5 |
+| Tchaouna Loum | U. S. Salernitana 1919 S.R.L. | 8.766 | 25 | 5 |
+| Tavares Nuno Varela | Arsenal Football Club | 6.000 | 25 | 5 |
+| Dele Bashiru | Hatayspor Club Association | 5.432 | 24 | 4 |
+| Oliver Porvstgaard Nielsen | Vb Alliancen | 4.500 | 22 | 5 |
+| Samuel Gigot | Olympique de Marseille | 4.489 | 31 | 3 |
+| Pellegrini Luca | Juventus Football Club | 4.000 | 26 | 3 |
 
-Cessioni (importi in Euro migliaia)
+*Cessioni (importi in Euro migliaia)*
 
 113
 
@@ -5742,27 +5738,29 @@ AL 30 GIUGNO 2023
 
 --- pág. 143 ---
 
-RELAZIONE FINANZIARIA ANNUALE
-AL 30 GIUGNO 2023
+RELAZIONE FINANZIARIA ANNUALE  
+AL 30 GIUGNO 2025
 
-|  PROSPETTO VARIAZIONI PATRIMONIO NETTO | in Euro  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Capitale Sociale | Riserva legale | Riserva da sovrapprezzo delle azioni | Riserva da prima applicazione IAS | Altre riserve | Utile (Perdita) portati a nuovo | Utile (Perdita) di esercizio | Totale patrimonio netto  |
-|  **Saldo al 30.06.23** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.230.788)** | **21.167.559** | **(26.140.984)** | **(29.541.144)** | **(38.039.137)**  |
-|  Riporto a nuovo perdita di esercizio |  |  |  |  |  | (29.541.144) | 29.541.144 | -  |
-|  Variazione per applicazione IAS |  |  |  | (68.065) |  |  |  | (68.065)  |
-|  Versamenti futuri aumenti |  |  |  |  |  |  |  | -  |
-|  Utile (perdita) di esercizio |  |  |  |  |  |  | 38.495.467 | 38.495.467  |
-|  **Saldo al 30.06.24** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.298.853)** | **21.167.559** | **(55.688.128)** | **38.495.467** | **388.265**  |
+*in Euro*
 
-|  PROSPETTO VARIAZIONI PATRIMONIO NETTO | in Euro  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Capitale Sociale | Riserva legale | Riserva da sovrapprezzo delle azioni | Riserva da prima applicazione IAS | Altre riserve | Utile (Perdita) portati a nuovo | Utile (Perdita) di esercizio | Totale patrimonio netto  |
-|  **Saldo al 30.06.24** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.298.853)** | **21.167.559** | **(55.688.128)** | **38.495.467** | **388.265**  |
-|  Riporto a nuovo utile di esercizio |  | 732.699 |  |  | 2.559.000 | 35.204.000 | (38.495.467) | 0  |
-|  Variazione per applicazione IAS |  |  |  | (55.000) |  |  |  | (55.000)  |
-|  Utile (perdita) di esercizio |  |  |  |  |  |  | (17.164.480) | (17.164.480)  |
-|  **Saldo al 30.06.25** | **40.643.347** | **8.128.669** | **17.666.845** | **(69.355.845)** | **23.722.559** | **(20.437.516)** | **(17.164.480)** | **(16.832.201)**  |
+| PROSPETTO VARIAZIONI PATRIMONIO NETTO | Capitale Sociale | Riserva legale | Riserva da sovrapprezzo delle azioni | Riserva da prima applicazione IAS | Altre riserve | Utile (Perdita) portati a nuovo | Utile (Perdita) di esercizio | Totale patrimonio netto |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Saldo al 30.06.23** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.230.788)** | **21.167.559** | **(26.140.984)** | **(29.541.144)** | **(38.039.137)** |
+| Riporto a nuovo perdita di esercizio | | | | | | (29.541.144) | 29.541.144 | - |
+| Variazione per applicazione IAS | | | | (68.065) | | | | (68.065) |
+| Versamenti futuri aumenti | | | | | | | | |
+| Utile (perdita) di esercizio | | | | | | | 38.495.467 | 38.495.467 |
+| **Saldo al 30.06.24** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.298.853)** | **21.167.559** | **(55.688.128)** | **38.495.467** | **388.265** |
+
+*in Euro*
+
+| PROSPETTO VARIAZIONI PATRIMONIO NETTO | Capitale Sociale | Riserva legale | Riserva da sovrapprezzo delle azioni | Riserva da prima applicazione IAS | Altre riserve | Utile (Perdita) portati a nuovo | Utile (Perdita) di esercizio | Totale patrimonio netto |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Saldo al 30.06.24** | **40.643.347** | **7.396.028** | **17.666.845** | **(69.298.853)** | **21.167.559** | **(55.688.128)** | **38.495.467** | **388.265** |
+| Riporto a nuovo utile di esercizio | | 732.699 | | | 2.559.000 | 35.204.000 | (38.495.467) | 0 |
+| Variazione per applicazione IAS | | | | (55.000) | | | | (55.000) |
+| Utile (perdita) di esercizio | | | | | | | (17.164.480) | (17.164.480) |
+| **Saldo al 30.06.25** | **40.643.347** | **8.128.669** | **17.666.845** | **(69.355.845)** | **23.722.559** | **(20.437.516)** | **(17.164.480)** | **(16.832.201)** |
 
 Note al bilancio n. 15
 
@@ -5779,47 +5777,46 @@ AL 30 GIUGNO 2025
 
 --- pág. 145 ---
 
-RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE  
 AL 30 GIUGNO 2025
 
-|  in euro |  | RENDICONTO | RENDICONTO  |
-| --- | --- | --- | --- |
-|   |   |  01/07/24-30/06/25 | 01/07/23-30/06/24  |
-|  **UTILE (PERDITA) DI ESERCIZIO** |  | **(17.164.480)** | 38.495.467  |
-|  Ammortamenti, accantonamenti e svalutazioni | 40 | 38.843.831 | 37.890.207  |
-|  Variazione Fondo benefici dipendenti | 21 | 64.031 | (27.275)  |
-|  Variazione Fondi per rischi e oneri ed imposte differite | 20;45;40 | (5.172.178) | (5.290.112)  |
-|  Plusvalenze e minusvalenze DPS |  | (11.143.673) | (40.895.366)  |
-|  Oneri finanziari |  | 1.931.119 | 1.484.999  |
-|  Imposte correnti |  | 1.029.179 | 8.066.049  |
-|  Variazione rimanenze | 9 | (457.114) | (622.793)  |
-|  Variazione crediti verso enti specifici | 11;6 | 893.699 | 5.634.519  |
-|  Variazione crediti commerciali | 10 | (3.096.049) | (7.690.202)  |
-|  Variazione crediti tributari | 13;8 | 218.797 | 224.366  |
-|  Variazione altre attività |  | 4.624.570 | 2.406.413  |
-|  Variazione debiti verso enti specifici | 18;25 | (41.762) | (352.184)  |
-|  Variazione debiti commerciali | 26 | 4.449.682 | 4.628.537  |
-|  Variazione debiti tributari e passività per fiscalità incerta | 17,24;28 | (19.365.548) | (16.889.197)  |
-|  Variazione debiti diversi | 17,24;27,22 | 1.381.422 | (1.325.386)  |
-|  Accantonamento al fondo imposte |  | (2.838.417) | (785.039)  |
-|  Imposte pagate |  | (5.366.096) | (7.704.842)  |
-|  **FLUSSO DI CASSA DELLA GESTIONE CORRENTE** |  | **(11.208.987)** | **17.248.161**  |
-|  (Investimento)diritti pluriennali prestazioni calciatori |  | (80.777.717) | (45.209.059)  |
-|  Cessione diritti pluriennali prestazioni calciatori |  | 21.312.418 | 50.775.611  |
-|  (Incremento) Decremento netto immobilizzazioni materiali | 1 | (3.864.648) | (3.632.976)  |
-|  (Incremento) Decremento netto altre attività non correnti | 5 | (4.040.793) | 165.810  |
-|  Variazione crediti verso società calcistiche |  | 19.490.165 | (21.572.915)  |
-|  Variazione debiti verso società calcistiche |  | (3.319.487) | 17.951.425  |
-|  Variazione crediti verso enti specifici (lega c/trasferimenti) |  | 8.164.839 | 4.228.704  |
-|  Variazione debiti verso enti specifici (lega c/trasferimenti) |  | 27.992.288 | (8.390.165)  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO** |  | **(15.042.935)** | **(5.683.563)**  |
-|  Assunzioni di finanziamenti | 16;23 | 108.761.785 | 146.834.806  |
-|  Rimborsi di finanziamenti |  | (89.613.112) | (154.301.049)  |
-|  Oneri finanziari pagati |  | (1.931.119) | (1.484.999)  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ FINANZIARIA** |  | **17.217.554** | **(8.951.242)**  |
-|  **INCREMENTO (DECREMENTO) DISPONIBILITÀ LIQUIDE E MEZZI EQUIVALENTI** |  | **(9.034.368)** | **2.613.356**  |
-|  Disponibilità liquide e mezzi equivalenti all'inizio del periodo | 14 | 15.091.641 | 12.478.285  |
-|  Disponibilità liquide e mezzi equivalenti alla fine del periodo | 14 | 6.057.272 | 15.091.641  |
+| in euro | | RENDICONTO<br>01/07/24-30/06/25 | RENDICONTO<br>01/07/23-30/06/24 |
+| :--- | :---: | :---: | :---: |
+| **UTILE (PERDITA) DI ESERCIZIO** | | (17.164.480) | 38.495.467 |
+| Ammortamenti, accantonamenti e svalutazioni | 40 | 38.843.831 | 37.890.207 |
+| Variazione Fondo benefici dipendenti | 21 | 64.031 | (27.275) |
+| Variazione Fondi per rischi e oneri ed imposte differite | 20;45;40 | (5.172.178) | (5.290.112) |
+| Plusvalenze e minusvalenze DPS | | (11.143.673) | (40.895.366) |
+| Oneri finanziari | | 1.931.119 | 1.484.999 |
+| Imposte correnti | | 1.029.179 | 8.066.049 |
+| Variazione rimanenze | 9 | (457.114) | (622.793) |
+| Variazione crediti verso enti specifici | 11;6 | 893.699 | 5.634.519 |
+| Variazione crediti commerciali | 10 | (3.096.049) | (7.690.202) |
+| Variazione crediti tributari | 13,8 | 218.797 | 224.366 |
+| Variazione altre attività | | 4.624.570 | 2.406.413 |
+| Variazione debiti verso enti specifici | 18;25 | (41.762) | (352.184) |
+| Variazione debiti commerciali | 26 | 4.449.682 | 4.628.537 |
+| Variazione debiti tributari e passività per fiscalità incerta | 17;24;28 | (19.365.548) | (16.889.197) |
+| Variazione debiti diversi | 17;24;27;22 | 1.381.422 | (1.325.386) |
+| Accantonamento al fondo imposte | | (2.838.417) | (785.039) |
+| Imposte pagate | | (5.366.096) | (7.704.842) |
+| **FLUSSO DI CASSA DELLA GESTIONE CORRENTE** | | **(11.208.987)** | **17.248.161** |
+| (Investimento)diritti pluriennali prestazioni calciatori | | (80.777.717) | (45.209.059) |
+| Cessione diritti pluriennali prestazioni calciatori | | 21.312.418 | 50.775.611 |
+| (Incremento) Decremento netto immobilizzazioni materiali | 1 | (3.864.648) | (3.632.976) |
+| (Incremento) Decremento netto altre attività non correnti | 5 | (4.040.793) | 165.810 |
+| Variazione crediti verso società calcistiche | | 19.490.165 | (21.572.915) |
+| Variazione debiti verso società calcistiche | | (3.319.487) | 17.951.425 |
+| Variazione crediti verso enti specifici (lega c/trasferimenti) | | 8.164.839 | 4.228.704 |
+| Variazione debiti verso enti specifici (lega c/trasferimenti) | | 27.992.288 | (8.390.165) |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ DI INVESTIMENTO** | | **(15.042.935)** | **(5.683.563)** |
+| Assunzioni di finanziamenti | 16;23 | 108.761.785 | 146.834.806 |
+| Rimborsi di finanziamenti | | (89.613.112) | (154.301.049) |
+| Oneri finanziari pagati | | (1.931.119) | (1.484.999) |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ FINANZIARIA** | | **17.217.554** | **(8.951.242)** |
+| **INCREMENTO (DECREMENTO) DISPONIBILITÁ LIQUIDE E MEZZI EQUIVALENTI** | | **(9.034.368)** | **2.613.356** |
+| Disponibilità liquide e mezzi equivalenti all'inizio del periodo | 14 | 15.091.641 | 12.478.285 |
+| Disponibilità liquide e mezzi equivalenti alla fine del periodo | 14 | 6.057.272 | 15.091.641 |
 
 145
 
@@ -6730,50 +6727,45 @@ In coerenza con le circolari di Assonime n. 5 del 22/2/2019 “Trasparenza nel s
 
 --- pág. 169 ---
 
-RELAZIONE FINANZIARIA ANNUALE
+RELAZIONE FINANZIARIA ANNUALE  
 AL 30 GIUGNO 2025
 
-- le erogazioni hanno carattere di liberalità o donazione, e rappresentano incentivi o agevolazioni volte a conferire al beneficiario un riconosciuto vantaggio economico; si tratta pertanto di erogazioni a titolo di donazione o liberalità e di aiuti pubblici ad hoc concessi non sulla base di un regime generale di aiuti;
-- le risorse pubbliche sono esclusivamente “nazionali”;
-- le erogazioni sono rendicontate secondo il criterio della cassa e per importo non inferiore a 10.000 euro (con riferimento al singolo beneficiario) nel periodo considerato.
+* le erogazioni hanno carattere di liberalità o donazione, e rappresentano incentivi o agevolazioni volte a conferire al beneficiario un riconosciuto vantaggio economico; si tratta pertanto di erogazioni a titolo di donazione o liberalità e di aiuti pubblici ad hoc concessi non sulla base di un regime generale di aiuti;
+* le risorse pubbliche sono esclusivamente "nazionali";
+* le erogazioni sono rendicontate secondo il criterio della cassa e per importo non inferiore a 10.000 euro (con riferimento al singolo beneficiario) nel periodo considerato.
 
 In linea a quanto sopra esposto, di seguito le erogazioni pubbliche incassate/disposte da SS Lazio S.p.A. nella stagione 2024/2025:
 
-|  ENTE BENEFICIA RIO | DENOMINAZIO NE/RAGIONE SOCIALE | PARTITA IVA | TIPOLOGIA DI OPERAZIONE | IMPORTO IN € | NOTE  |
-| --- | --- | --- | --- | --- | --- |
-|  S.S. Lazio S.p.A. | Regione Lazio | 0212863100 5 | Contributo straordinario contro il bullismo e cyberbullismo | 30.000 | Contributo straordinario contro il bullismo e cyberbullism  |
-|  **Totale** |  |  |  | **30.000** |   |
+| ENTE BENEFICIARIO | DENOMINAZIONE/RAGIONE SOCIALE | PARTITA IVA | TIPOLOGIA DI OPERAZIONE | IMPORTO IN € | NOTE |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| S.S. Lazio S.p.A. | Regione Lazio | 02128631005 | Contributo straordinario contro il bullismo e cyberbullismo | 30.000 | Contributo straordinario contro il bullismo e cyberbullismo |
+| **Totale** | | | | **30.000** | |
 
-### Informativa di settore
+### *Informativa di settore*
 
-L’informativa per settore di attività e per area geografica è presentata secondo quanto richiesto dallo IFRS 8 – Informativa di settore.
+L'informativa per settore di attività e per area geografica è presentata secondo quanto richiesto dallo IFRS 8 – Informativa di settore.  
+Lo schema primario di informativa è costituito dai settori di attività.  
+Ai fini gestionali il Gruppo S.S. Lazio è organizzato su base Italia in tre aree operative principali: Area sportiva, Area commerciale ed Area Immobiliare.  
+A partire dal settembre 2006, l'area commerciale è stata conferita in un'apposita Società controllata interamente dalla S.S. Lazio S.p.A.  
+L'area Immobiliare è conseguenza dell'acquisto del 51% della Società Cirio Lazio Immobiliare, ora fusa per incorporazione nella controllata SS Lazio Marketing & Communication, la cui unica attività consisteva nella gestione di un immobile di circa 2.800 mq in Via Valenziani (Roma).  
+Ad integrazione delle informazioni ivi esposte, l'informativa per settore è esposta nelle seguenti tabelle:
 
-Lo schema primario di informativa è costituito dai settori di attività.
+*in €/000*
+| RICAVI | Sportivo 30/06/25 | Sportivo 30/06/24 | Commerciale 30/06/25 | Commerciale 30/06/24 | Immobiliare 30/06/25 | Immobiliare 30/06/24 | Consolidato 30/06/25 | Consolidato 30/06/24 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Vendite a terzi | 136.578 | 213.983 | 21.412 | 23.045 | 0 | 0 | 157.990 | 237.028 |
+| Vendite intersettoriali | | | | | | | | |
+| **Totale ricavi da attività in funzionamento** | **136.578** | **213.983** | **21.412** | **23.045** | **0** | **0** | **157.990** | **237.028** |
 
-Ai fini gestionali il Gruppo S.S. Lazio è organizzato su base Italia in tre aree operative principali: Area sportiva, Area commerciale ed Area Immobiliare.
-
-A partire dal settembre 2006, l’area commerciale è stata conferita in un’apposita Società controllata interamente dalla S.S. Lazio S.p.A.
-
-L’area Immobiliare è conseguenza dell’acquisto del 51% della Società Cirio Lazio Immobiliare, ora fusa per incorporazione nella controllata SS Lazio Marketing & Communication, la cui unica attività consisteva nella gestione di un immobile di circa 2.800 mq in Via Valenziani (Roma).
-
-Ad integrazione delle informazioni ivi esposte, l’informativa per settore è esposta nelle seguenti tabelle:
-
-|  RICAVI | Sportivo |   | Commerciale |   | Immobiliare |   | Consolidato  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  30/06/25 | 30/06/24 | 30/06/25 | 30/06/24 | 30/06/25 | 30/06/24 | 30/06/25 | 30/06/24  |
-|  Vendite a terzi | 136.578 | 213.983 | 21.412 | 23.045 | 0 | 0 | 157.990 | 237.028  |
-|  Vendite intersettoriali |  |  |  |  |  |  |  |   |
-|  **Totale ricavi da attività in funzionamento** | **136.578** | **213.983** | **21.412** | **23.045** | **0** | **0** | **157.990** | **237.028**  |
-
-|  RISULTATI | Sportivo |   | Commerciale |   | Immobiliare |   | Consolidato  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  30/06/25 | 30/06/24 | 30/06/25 | 30/06/24 | 30/06/25 | 30/06/24 | 30/06/25 | 30/06/24  |
-|  Risultato del settore | (29.006) | 30.143 | 12.186 | 14.099 | (4) | (5) | (16.824) | 44.237  |
-|  Costi comuni non allocati |  |  |  |  |  |  | 0 | 0  |
-|  Utile operativo da attività in funzionamento | (29.006) | 30.143 | 12.186 | 14.099 | (4) | (5) | (16.824) | 44.237  |
-|  Quota di utili di imprese collegate |  | 0 |  | 0 |  |  | 0 | 0  |
-|  Proventi ed oneri finanziari | (4.152) | (3.890) | 59 | 456 | (65) | (78) | (4.158) | (3.513)  |
-|  Rettifiche di valore di attività finanziarie |  | 0 |  | 0 |  |  | 0 | 0  |
+*in €/000*
+| RISULTATI | Sportivo 30/06/25 | Sportivo 30/06/24 | Commerciale 30/06/25 | Commerciale 30/06/24 | Immobiliare 30/06/25 | Immobiliare 30/06/24 | Consolidato 30/06/25 | Consolidato 30/06/24 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Risultato del settore | (29.006) | 30.143 | 12.186 | 14.099 | (4) | (5) | (16.824) | 44.237 |
+| Costi comuni non allocati | | | | | | | 0 | 0 |
+| **Utile operativo da attività in funzionamento** | **(29.006)** | **30.143** | **12.186** | **14.099** | **(4)** | **(5)** | **(16.824)** | **44.237** |
+| Quota di utili di imprese collegate | | 0 | | 0 | | | 0 | 0 |
+| Proventi ed oneri finanziari | (4.152) | (3.890) | 59 | 456 | (65) | (78) | (4.158) | (3.513) |
+| Rettifiche di valore di attività finanziarie | | 0 | | 0 | | | 0 | 0 |
 
 169
 
@@ -8121,61 +8113,58 @@ La seguente tabella ne illustra la composizione:
 
 --- pág. 199 ---
 
-RELAZIONE FINANZIARIA ANNUALE
-AL 30 GIUGNO 2015
+RELAZIONE FINANZIARIA ANNUALE  
+AL 30 GIUGNO 2025
 
-|   | in €/000  |   |   |
-| --- | --- | --- | --- |
-|  Altri costi | 30.06.25 | 30.06.24 | %  |
-|  Spese bancarie | 241 | 230 | 4,60  |
-|  Per godimento di beni di terzi | 3.248 | 3.137 | 3,56  |
-|  Spese varie organizzazione gare | 640 | 522 | 22,56  |
-|  Tasse iscrizione gare | 26 | 15 | 69,65  |
-|  Oneri specifici verso squadre ospitate: |  |  |   |
-|  -% su incassi gare a squadre ospitate | 66 | 951 | -93,04  |
-|  Altri oneri di gestione |  |  |   |
-|  - oneri tributari indiretti | 496 | 1.047 | -52,66  |
-|  - multe e danni | 612 | 432 | 41,67  |
-|  - perdite su crediti | 555 | 234 | 137,18  |
-|  Oneri straordinari | 232 | 168 | 38,29  |
-|  **Totale** | **6.116** | **6.736** | **-9,21**  |
+| | | | in €/000 |
+| :--- | :---: | :---: | :---: |
+| **Altri costi** | **30.06.25** | **30.06.24** | **%** |
+| Spese bancarie | 241 | 230 | 4,60 |
+| Per godimento di beni di terzi | 3.248 | 3.137 | 3,56 |
+| Spese varie organizzazione gare | 640 | 522 | 22,56 |
+| Tasse iscrizione gare | 26 | 15 | 69,65 |
+| Oneri specifici verso squadre ospitate: | | | |
+| -% su incassi gare a squadre ospitate | 66 | 951 | -93,04 |
+| Altri oneri di gestione | | | |
+| - oneri tributari indiretti | 496 | 1.047 | -52,66 |
+| - multe e danni | 612 | 432 | 41,67 |
+| - perdite su crediti | 555 | 234 | 137,18 |
+| Oneri straordinari | 232 | 168 | 38,29 |
+| **Totale** | **6.116** | **6.736** | **-9,21** |
 
 Gli Oneri per godimento di beni di terzi ammontano ad Euro 3.248 migliaia e sono perlopiù costituiti:
-
-- dall'affitto degli impianti sportivi dello Stadio Olimpico (Euro 3.000 migliaia);
-- dall'affitto degli impianti sportivi per il settore giovanile (Euro 115 migliaia);
-- dal noleggio di apparecchiature sanitarie e non (Euro 49 migliaia).
+* dall'affitto degli impianti sportivi dello Stadio Olimpico (Euro 3.000 migliaia);
+* dall'affitto degli impianti sportivi per il settore giovanile (Euro 115 migliaia);
+* dal noleggio di apparecchiature sanitarie e non (Euro 49 migliaia).
 
 Le Spese varie organizzazione gare includono principalmente le spese sanitarie (Euro 366 migliaia) e gli Oneri per i vigili del fuoco (Euro 210 migliaia).
 
 Gli Altri oneri di gestione, pari ad Euro 1.531 migliaia, includono le seguenti voci:
+* Oneri tributari indiretti riferiti soprattutto all'IMU per Euro 348 migliaia;
+* Spese, ammende e multe gare riferite a penalità richieste dagli organismi sportivi per Euro 612 migliaia.
 
-- Oneri tributari indiretti riferiti soprattutto all'IMU per Euro 348 migliaia;
-- Spese, ammende e multe gare riferite a penalità richieste dagli organismi sportivi per Euro 612 migliaia.
+### 40. Ammortamenti, accantonamenti e svalutazioni
 
-#### 40. Ammortamenti, accantonamenti e svalutazioni
-
-|   | in €/000  |   |   |
-| --- | --- | --- | --- |
-|  Ammortamenti, accantonamenti e svalutazioni | 30.06.25 | 30.06.24 | %  |
-|  Ammortamenti e svalutazioni | 36.926 | 33.639 | 9,77  |
-|  Accantonamenti ed altre svalutazioni | 1.756 | 4.798 | -63,40  |
-|  **Totale** | **38.682** | **38.437** | **0,64**  |
+| | | | in €/000 |
+| :--- | :---: | :---: | :---: |
+| **Ammortamenti, accantonamenti e svalutazioni** | **30.06.25** | **30.06.24** | **%** |
+| Ammortamenti e svalutazioni | 36.926 | 33.639 | 9,77 |
+| Accantonamenti ed altre svalutazioni | 1.756 | 4.798 | -63,40 |
+| **Totale** | **38.682** | **38.437** | **0,64** |
 
 #### *Ammortamenti e svalutazioni*
 
-Gli Ammortamenti e svalutazioni delle attività materiali ed immateriali sono pari a Euro 36.926 migliaia con un incremento netto di Euro 3.287 migliaia rispetto al 30 giugno 2024, dovuto all'aumento della quota di ammortamento sui diritti alle prestazioni sportive ed a minori svalutazioni dei diritti alle prestazioni sportive dei tesserati.
-
+Gli Ammortamenti e svalutazioni delle attività materiali ed immateriali sono pari a Euro 36.926 migliaia con un incremento netto di Euro 3.287 migliaia rispetto al 30 giugno 2024, dovuto all'aumento della quota di ammortamento sui diritti alle prestazioni sportive ed a minori svalutazioni dei diritti alle prestazioni sportive dei tesserati.  
 La seguente tabella ne illustra la composizione:
 
-|   | in €/000  |   |   |
-| --- | --- | --- | --- |
-|  Ammortamenti e svalutazioni | 30.06.25 | 30.06.24 | %  |
-|  Ammortamenti immobilizzazioni immateriali | 32.776 | 28.316 | 15,75  |
-|  Ammortamenti immobilizzazioni materiali | 1.997 | 1.518 | 31,54  |
-|  Amm.to Dei diritti d'uso | 611 | 522 | 17,02  |
-|  Svalutazione delle immobilizzazioni | 1.543 | 3.283 | -53,02  |
-|  **Totale** | **36.926** | **33.639** | **9,77**  |
+| | | | in €/000 |
+| :--- | :---: | :---: | :---: |
+| **Ammortamenti e svalutazioni** | **30.06.25** | **30.06.24** | **%** |
+| Ammortamenti immobilizzazioni immateriali | 32.776 | 28.316 | 15,75 |
+| Ammortamenti immobilizzazioni materiali | 1.997 | 1.518 | 31,54 |
+| Amm.to Dei diritti d'uso | 611 | 522 | 17,02 |
+| Svalutazione delle immobilizzazioni | 1.543 | 3.283 | -53,02 |
+| **Totale** | **36.926** | **33.639** | **9,77** |
 
 199
 

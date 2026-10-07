@@ -502,82 +502,80 @@ Ing. Andres Bissques Delalou
 
 --- pág. 11 ---
 
-Società GENOA C.F.C. S.p.A.
+**Società GENOA C.F.C. S.p.A.**
 
 Capitale Euro 6.471.354,60
-
-Sede Legale: Genova Via Renshi, 67
-
+Sede Legale: Genova Via Ronchi, 67
 Iscritta nel Registro delle Imprese di Genova al numero 250918
-
 Codice Fiscale 80033270101
 
-|  Rendiconto Finanziario al 31.12.2022  |   |   |
-| --- | --- | --- |
-|  AGGREGATI | RENDICONTO | RENDICONTO  |
-|   |  Valori effettivi per il periodo 01/01/2022 - 31/12/2022 | Valori effettivi per il periodo 01/01/2021 - 31/12/2021  |
-|  A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto) |  |   |
-|  UTILE (PERDITA) DI PERIODO | -61.728.621 | -42.730.096  |
-|  Imposte sul reddito | -9.396.310 | -11.104.929  |
-|  Interessi passivi /(attivi) | 5.162.770 | 7.157.004  |
-|  1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e | -65.962.161 | -46.678.021  |
-|  Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN |  |   |
-|  Accantonamento ai fondi | 349.732 | 3.300.413  |
-|  Ammortamenti delle immobilizzazioni | 19.452.175 | 3.080.537  |
-|  Svalutazioni per perdite durevoli di valore | 3.845.322 | 0  |
-|  Totale rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale | 23.647.229 | 6.380.951  |
-|  2) Flusso finanziario prima delle variazioni del CCN | -42.314.931 | -40.297.070  |
-|  Variazioni del CCN |  |   |
-|  Decremento / (incremento) delle rimanenze | 411.247 | -3.148  |
-|  Decremento / (incremento) crediti vs clienti | 1.587.799 | 7.977.236  |
-|  Incremento / (Decremento) debiti vs fornitori | -3.976.998 | 4.697.688  |
-|  Decremento / (Incremento) ratei risconti attivi | -6.072.748 | -1.396.841  |
-|  Incremento / (Decremento) ratei risconti passivi | -1.482.871 | -444.108  |
-|  Totale parziale | -9.533.571 | 10.830.828  |
-|  Se crediti - Altri decrementi / (Altri incrementi) del CCN |  |   |
-|  Crediti vs controllanti, controllate e collegate | -4.538.121 | 22.300.931  |
-|  Debiti vs controllanti, controllate e collegate | 44.517.349 | 2.873.099  |
-|  Crediti tributari | 34 | -34  |
-|  Imposte anticipate entro | 0 | 0  |
-|  Crediti vs altri entro | -3.632.679 | -28.389.115  |
-|  Clienti c/ anticipi | 0 | 0  |
-|  Debiti tributari | -42.474.316 | 13.110.768  |
-|  Debiti previdenziali | -4.069.912 | -43.089  |
-|  Debiti verso altri finanziatori | -8.615.852 | 3.715.982  |
-|  Debiti vs soci per finanziamenti | 0 | 4.795.371  |
-|  Debiti diversi | -12.313.434 | -4.477.479  |
-|  Totale altre variazioni CCN | -31.126.932 | 13.886.434  |
-|  3) Flusso finanziario dopo variazioni CCN | -82.975.434 | -15.579.806  |
-|  Altre rettifiche | -33.378.027 | -10.950  |
-|  Interessi incassati / (pagati) | -5.162.770 | -7.157.004  |
-|  (Imposte sul reddito pagate) | 847.954 | 11.104.929  |
-|  Altri incassi / (pagamenti) (ffr) | -57.309 | -2.188.654  |
-|  Totale altre rettifiche | -37.750.152 | 1.748.321  |
-|  Flusso finanziario attività operativa (A) | -120.725.587 | -13.831.487  |
-|  B) Flusso Finanziario attività investimento |  |   |
-|  imm.oni materiali (investimenti) | -152.334 | -187.595  |
-|  imm.oni immateriali (investimenti) | -38.658.330 | -10.364.724  |
-|  Crediti oltre esercizio | 26.529.515 | -5.340.631  |
-|  Imposte anticipate oltre | -8.589.283 | 0  |
-|  FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO (B) | -20.870.432 | -15.892.950  |
-|  C) Flusso Finanziario da attività di finanziamento |  |   |
-|  Incremento / (Decremento) debiti verso banche a breve | 3.641.383 | 6.196.502  |
-|  Accensione Finanziamenti | 16.485.686 | -7.563.444  |
-|  Debiti Diversi oltre l'esercizio | 59.641.269 | -1.524.724  |
-|  Mezzi propri | 62.447.290 | 33.023.526  |
-|  FLUSSO FINANZIARIO DELL'ATTIVITA' DI FINANZIAMENTO (C) | 142.215.628 | 30.131.861  |
-|  INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (A+ B+ C) | 619.608 | 407.422  |
-|  Disponibilità liquide all'inizio del periodo (I) | 544.912 | 137.490  |
-|  Disponibilità liquide alla fine del periodo (L) | 1.164.520 | 544.912  |
-|  SALDO A PAREGGIO (M+ L - I) | 619.608 | 407.422  |
+**Rendiconto Finanziario al 31.12.2022**
+
+| AGGREGATI | RENDICONTO Valori effettivi per il periodo 01/01/2022 - 31/12/2022 | RENDICONTO Valori effettivi per il periodo 01/01/2021 - 31/12/2021 |
+|---|---:|---:|
+| A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto) | | |
+| UTILE (PERDITA) DI PERIODO | -61.728.621 | -42.730.096 |
+| Imposte sul reddito | -9.396.310 | -11.104.929 |
+| Interessi passivi /(attivi) | 5.162.770 | 7.157.004 |
+| 1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e | -65.962.161 | -46.678.021 |
+| Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN | | |
+| Accantonamento ai fondi | 349.732 | 3.300.413 |
+| Ammortamenti delle immobilizzazioni | 19.452.175 | 3.080.537 |
+| Svalutazioni per perdite durevoli di valore | 3.845.322 | 0 |
+| Totale rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale | 23.647.229 | 6.380.951 |
+| 2)Flusso finanziario prima delle variazioni del CCN | -42.314.931 | -40.297.070 |
+| Variazioni del CCN | | |
+| Decremento / (incremento) delle rimanenze | 411.247 | -3.148 |
+| Decremento / (incremento) crediti vs clienti | 1.587.799 | 7.977.236 |
+| Incremento / (Decremento) debiti vs fornitori | -3.976.998 | 4.697.688 |
+| Decremento / (Incremento) ratei risconti attivi | -6.072.748 | -1.396.841 |
+| Incremento / (Decremento) ratei risconti passivi | -1.482.871 | -444.108 |
+| Totale parziale | -9.533.571 | 10.830.828 |
+| Se crediti - Altri decrementi / (Altri incrementi) del CCN | | |
+| Crediti vs controllanti, controllate e collegate | -4.538.121 | 22.300.931 |
+| Debiti vs controllanti, controllate e collegate | 44.517.349 | 2.873.099 |
+| Crediti tributari | 34 | -34 |
+| Imposte anticipate entro | 0 | 0 |
+| Crediti vs altri entro | -3.632.679 | -28.389.115 |
+| Clienti c/ anticipi | 0 | 0 |
+| Debiti tributari | -42.474.316 | 13.110.768 |
+| Debiti previdenziali | -4.069.912 | -43.089 |
+| Debiti verso altri finanziatori | -8.615.852 | 3.715.982 |
+| Debiti vs soci per finanziamenti | 0 | 4.795.371 |
+| Debiti diversi | -12.313.434 | -4.477.479 |
+| Totale altre variazioni CCN | -31.126.932 | 13.886.434 |
+| 3) Flusso finanziario dopo variazioni CCN | -82.975.434 | -15.579.808 |
+| Altre rettifiche | -33.378.027 | -10.950 |
+| Interessi incassati / (pagati) | -5.162.770 | -7.157.004 |
+| (Imposte sul reddito pagate) | 847.954 | 11.104.929 |
+| Altri incassi / (pagamenti) (tfr) | -57.309 | -2.188.654 |
+| Totale altre rettifiche | -37.750.152 | 1.748.321 |
+| Flusso finanziario attività operativa (A) | -120.725.587 | -13.831.487 |
+| B) Flusso Finanziario attività investimento | | |
+| Imm.oni materiali (investimenti) | -152.334 | -187.595 |
+| Imm.oni immateriali (investimenti) | -38.658.330 | -10.364.724 |
+| Crediti oltre esercizio | 26.529.515 | -5.340.631 |
+| Imposte anticipate oltre | -8.589.283 | 0 |
+| FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO (B) | -20.870.432 | -15.892.950 |
+| C) Flusso Finanziario da attività di finanziamento | | |
+| Incremento / (Decremento) debiti verso banche a breve | 3.641.383 | 6.196.502 |
+| Accensione Finanziamenti | 16.485.686 | -7.563.444 |
+| Debiti Diversi oltre l'esercizio | 59.641.269 | -1.524.724 |
+| Mezzi propri | 62.447.290 | 33.023.526 |
+| FLUSSO FINANZIARIO DELL'ATTIVITA' DI FINANZIAMENTO( C ) | 142.215.628 | 30.131.861 |
+| INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (A+-B+-C)) | 619.608 | 407.422 |
+| Disponibilità liquide all'inizio del periodo ( I ) | 544.912 | 137.490 |
+| Disponibilità liquide alla fine del periodo ( L ) | 1.164.520 | 544.912 |
+| SALDO A PAREGGIO (M= L - I ) | 619.608 | 407.422 |
 
 Nota: per esigenze di comparabilità, il "flusso finanziario dopo variazioni CCN" del 2021 presenta una riclassifica al suo interno da "crediti verso altri" a "crediti verso controllanti, controllate e collegate" per Euro 22,3 milioni e da "debiti diversi" a "debiti vs controllanti, controllate e collegate" per Euro 2,9 milioni. Rimane quindi invariato il totale del flusso finanziario dopo le variazioni di CCN.
 
 Il Legale Rappresentante
-
 Andres Blazquez Ceballos
 
 Genova, 8 maggio 2023
+
+[firma manoscritta]
 
 --- pág. 12 ---
 
@@ -3580,49 +3578,66 @@ Mat. 20980
 
 --- pág. 100 ---
 
-|  TRANSAZIONI CON VENEZIA F.C. SRL  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Calciatore | Valutazione diritto | Età | Anni contratto  |   |
-|  ACQUISTI  |   |   |   |   |
-|  ARAMU MATTIA | 2.350.000 | 27 | 4  |   |
-|  CESSIONI  |   |   |   |   |
-|  Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate  |
-|  CANDELA ANTONIO | 221.667 | 23 | 500.000 | 278.333  |
+### TRANSAZIONI CON VENEZIA F.C. SRL
 
-|  TRANSAZIONI CON OLYMPIQUE DE MARSEILLE  |   |   |   |
-| --- | --- | --- | --- |
-|  Calciatore | Valutazione | Età | Anni contratto  |
-|  ACQUISTI  |   |   |   |
-|  STROOTMAN KEVIN | 0 | 33 | 2  |
+**ACQUISTI**
 
-|  TRANSAZIONI CON SPEZIA CALCIO  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  CESSIONI  |   |   |   |   |
-|  Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate  |
-|  AGUDELO ARDILA KEVIN ANDRES | 2.500.000 | 24 | 636.382 | 1.863.618  |
-|  SERPE LAURENS | - | 22 | - | -  |
+| Calciatore | Valutazione diritto | Età | Anni contratto |
+| :--- | :---: | :---: | :---: |
+| ARAMU MATTIA | 2.350.000 | 27 | 4 |
 
-|  TRANSAZIONI CON BRESCIA CALCIO  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  CESSIONI  |   |   |   |   |
-|  Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate  |
-|  ANDRENACCI LORENZO | 50.000 | 28 | 100.000 | 50.000  |
+**CESSIONI**
 
-GENOA
+| Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate |
+| :--- | :---: | :---: | :---: | :---: |
+| CANDELA ANTONIO | 221.667 | 23 | 500.000 | 278.333 |
+
+---
+
+### TRANSAZIONI CON OLYMPIQUE DE MARSEILLE
+
+| Calciatore | Valutazione | Età | Anni contratto |
+| :--- | :---: | :---: | :---: |
+| **ACQUISTI** | | | |
+| STROOTMAN KEVIN | 0 | 33 | 2 |
+
+---
+
+### TRANSAZIONI CON SPEZIA CALCIO
+
+**CESSIONI**
+
+| Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate |
+| :--- | :---: | :---: | :---: | :---: |
+| AGUDELO ARDILA KEVIN ANDRES | 2.500.000 | 24 | 636.382 | 1.863.618 |
+| SERPE LAURENS | - | 22 | - | - |
+
+---
+
+### TRANSAZIONI CON BRESCIA CALCIO
+
+**CESSIONI**
+
+| Calciatore | Valutazione diritto | Età | Valore Netto Contabile | Plus/minusvalenze realizzate |
+| :--- | :---: | :---: | :---: | :---: |
+| ANDRENACCI LORENZO | 50.000 | 28 | 100.000 | 50.000 |
+
+---
+
+**GENOA**  
 CRICKET AND FOOTBALL CLUB
 
-Via Ronchi, 67
-16155 Genova Pegli
+Via Ronchi, 67  
+16155 Genova Pegli  
 
-Tel. +39 010 612631
-Fax +39 010 6128345
+Tel. +39 010 612831  
+Fax +39 010 6128345  
 
-info@genoacfc.it
-genoacfc.it
+info@genoacfc.it  
+genoacfc.it  
 
-C.F. 80033270101
-P.IVA 00973790108
-
+C.F. 80033270101  
+P.IVA 00973790108  
 Mat. 20980
 
 --- pág. 101 ---
@@ -3753,25 +3768,87 @@ Il segna che di ammortamento dei solutati non stati anpati nelle base del la leg
 
 --- pág. 104 ---
 
-Illinois of 24/02/2008
+**Bilancio al 31/12/2022**
 
-Proceeds with non-international debt debt advanced after amortized debt estimated at 30/01/2008 - 2 December 2008
+Prospetto delle movimentazioni dei diritti pluriennali alle prestazioni dei calciatori al 31/12/2022 - 2 Semestre 2022
 
-|  Date of 2018 | 2017/03/2017 |   |   |   | 2018/03/2018 |   | 2019/03/2019 |   | 2020/03/2020 |   | 2021/03/2021 |   | 2022/03/2022 |   | 2023/03/2023 |   | 2024/03/2024 |   | 2025/03/2025 |   | 2026/03/2026 |   | 2027/03/2027 |   | 2028/03/2028 |   | 2029/03/2029 |   | 2030/03/2030 |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Incentive | Total | Total | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total | Incentive | Total |   |
-|  31/01/2022 | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total | Total |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  Agents, Inc. | 2000/2000 | 62 | 62/2000 | Chk. Chk. Chk. | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Bank of Wits | 2000/2000 | 62 | 62/2000 | Late | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Bank of Wits | 2000/2000 | 62 | 62/2000 | Amber | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Bank of Wits | 2000/2000 | 62 | 62/2000 | Amber | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2 | 62/2000 | 62/2000 | 62/2000 | 62/2000 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Bank of Wits | 2000/2000 | 62 | 62/2000 | Amber | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  Bank of Wits | 2000/2000 | 62 | 62/2000 | Amber | 62/2000 | 62/2000 | 62/2000 | 62/2000 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 | 62/2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
+Struttura delle colonne (testo molto piccolo; la maggior parte dei valori numerici non è leggibile con certezza):
 
-A. 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 2066, 2067, 2068, 2069, 2070, 2071, 2072, 2073, 2074, 2075, 2076, 2077, 2078, 2079, 2080, 2081, 2082, 2083, 2084, 2085, 2086, 2087, 2088, 2089, 2090, 2091, 2092, 2093, 2094, 2095, 2096, 2097, 2098, 2099, 2100
+- Date of FS: 31/12/2022
+- Contract: Expiring Date | Amort. (years)
+- Sell - Info: Date | Team | Date | Club
+- Changes in the period (01/07/2022 – 30/09/2022): Increases | Decreases
+- Values as of 30/09/2022: Historical Cost | Amortiz. Fund | NBV
+- Amortization 01/01/2022-30/09/2022 | Amortization 01/07/2022-30/09/2022
+- P&L impact as of 30/09/2022: Impairment | Capital Loss | Capital Gain
+- NBV as of FS (30/09/2022)
+- Changes in the period (01/10/2022 – 31/12/2022): Increases | Decreases
+- Values as of 31/12/2022: Historical Cost | Amortiz. Fund | NBV
+- Impairment | Capital Loss | Capital Gain | NBV as of FS (31/12/2022)
 
-![img-6.jpeg](img-6.jpeg)
+| Calciatore | Scadenza | Amort. (anni) | Data | Società (acquisto) | Data | Club (cessione) | Valori numerici |
+|---|---|---|---|---|---|---|---|
+| Agudelo Ardila Kevin Andres | 30/06/2025 | 0,5 | 09/07/19 | Club Atlet. Itala | 16/06/22 | AC Spezia | [ilegible] |
+| Badelj Milan | 30/06/2024 | 1,5 | 14/09/20 | Lazio | | | [ilegible] |
+| Bani Mattia | 30/06/2024 | 1,5 | 04/01/17 | Bologna | | | [ilegible] |
+| Biraschi Davide | 30/06/2024 | 1,5 | 04/01/17 | Avellino | | | [ilegible] |
+| Calò Giacomo | 30/06/2025 | 0,5 | 03/07/16 | Juve Stabia | 01/02/23 | Cosenza | [ilegible] |
+| Candela Antonio | 30/06/2025 | 0,5 | 16/06/18 | Spezia | 25/08/22 | Venezia | [ilegible] |
+| Cassata Francesco | 30/06/2024 | 1,5 | 25/07/19 | Sassuolo | | | [ilegible] |
+| Charpentier Gabriel | 30/06/2025 | 0,5 | 01/09/20 | FK Spartak | 30/08/22 | Parma | [ilegible] |
+| Chiericu Luca | 30/06/2026 | 3,5 | 18/01/21 | Roma | | | [ilegible] |
+| Criscito Domenico | 30/06/2022 | 0,5 | 01/07/18 | Zenit | 24/06/22 | Risoluzione | [ilegible] |
+| Curato Marcus | 30/06/2022 | 2,5 | 28/07/18 | Arsenal de Sarandi | 01/02/22 | Perugia | [ilegible] |
+| Favilli Andrea | [ilegible] | | 19/08/21 | Juventus | | | [ilegible] |
+| Ghiglione Paolo | 30/06/2023 | 0,5 | [ilegible] | Provercelli | 18/07/22 | Cremonese | [ilegible] |
+| Jagiello Filip | 30/06/2023 | 0,5 | 31/01/22 | Zagłębie Lubin | | | [ilegible] |
+| Jaroszynski Pawel | 30/06/2022 | | 22/06/21 | Chievo Verona | 01/02/22 | Salernitana | [ilegible] |
+| Leragner Lukas Reiff | 30/06/2022 | 0,5 | 30/06/21 | FC Groningen | 01/07/22 | Copenaghen | [ilegible] |
+| Mandelia Andrea | 30/06/2022 | | 01/01/20 | Atalanta | 30/06/22 | Contract expired | [ilegible] |
+| Palcari Alberto Andrea | 30/06/2024 | 1,5 | 04/08/21 | Cittadella | 17/06/22 | Benevento | [ilegible] |
+| Parigini Vittorio | 30/06/2024 | 1,5 | 08/01/21 | | | | [ilegible] |
+| Petrelli Elio | 30/06/2027 | 4,5 | 28/01/21 | Juventus | | | [ilegible] |
+| Portanova Manolo | 30/06/2025 | 0,5 | 28/01/21 | Juventus | | | [ilegible] |
+| Radovanovic Ivan | 30/06/2022 | | 31/01/22 | Chievo | 31/01/22 | Risoluzione | [ilegible] |
+| Rizza Nicholas | 30/06/2025 | 2,5 | 01/07/19 | Inter | | | [ilegible] |
+| Spinelli Claudio | 30/06/2022 | | 16/07/18 | Club Atlet. Tigre | 30/06/22 | Contract expired | [ilegible] |
+| Sturaro Stefano | 30/06/2023 | 0,5 | 31/01/21 | Juventus | | | [ilegible] |
+| Valietti Federico | 30/06/2025 | | 26/08/18 | Inter | | | [ilegible] |
+| Vodlbak Rok | 30/06/2025 | 0,5 | 01/07/18 | Olimpija Lubiana | 01/02/23 | [ilegible] | [ilegible] |
+| Zennaro Mattia | 30/06/2024 | 1,5 | 31/01/21 | Venezia | | | [ilegible] |
+| Ekuban Caleb Ansah | 30/06/2024 | 1,5 | 31/07/21 | Trabzon Sportif | | | [ilegible] |
+| Gudmundsson Albert | 30/06/2024 | 1,5 | 01/09/21 | Velez Sarsfield | | | [ilegible] |
+| Touré Abdoulaye | 30/06/2022 | 0,5 | 28/08/21 | Nantes | 30/06/22 | Fine contratto | [ilegible] |
+| Calcedo Correa Felipe | 30/06/2022 | | 30/08/21 | Parametro Zero | 30/06/22 | Fine contratto | [ilegible] |
+| Sirigo Salvatore | 30/06/2022 | | 26/07/21 | Parametro Zero | 30/06/22 | Fine contratto | [ilegible] |
+| Mukukunvile Nikola | 30/06/2022 | 0,5 | 31/08/21 | Parametro Zero | 03/08/22 | Risoluzione | [ilegible] |
+| Andrenacci Lorenzo | 30/06/2024 | 1,5 | 12/08/21 | Parametro Zero | 17/06/22 | Brescia | [ilegible] |
+| Kallon Yayah | 30/06/2024 | | Giovanili | | | | [ilegible] |
+| Rolon Alexander | 30/06/2026 | 3,5 | 28/08/21 | Parametro Zero | | | [ilegible] |
+| Sengner Adrian | 30/06/2026 | 3,5 | 03/08/21 | Parametro Zero | | | [ilegible] |
+| Vasquez Ibarra Johan | 30/06/2025 | 0,5 | 15/08/21 | Club Universidad Nacional | | | [ilegible] |
+| Czyborra Lennart | 30/06/2025 | 0,5 | 01/02/22 | Atalanta | | | [ilegible] |
+| Frendrup Morten Wetche | 30/06/2025 | 0,5 | 30/01/22 | Brondby | | | [ilegible] |
+| Gudmundsson Albert | 30/06/2025 | 2,5 | 31/01/22 | AZ | | | [ilegible] |
+| Hefti Silvan | 30/06/2026 | 3,5 | 03/01/22 | Young Boys | | | [ilegible] |
+| Melegoni Filippo | 30/06/2026 | 3,5 | 03/01/22 | Atalanta | | | [ilegible] |
+| Yeboah Kevin | 30/06/2026 | 3,5 | 08/01/22 | Sturm Graz | | | [ilegible] |
+| Vagliacco Alessandro | 30/06/2026 | 0,5 | 01/02/22 | Pordenone | | | [ilegible] |
+| Bamber Stefan | 30/06/2024 | 1,5 | 01/07/22 | Free transfer | | | [ilegible] |
+| Coda Massimo | 30/06/2025 | 2,5 | 01/07/22 | Lecce | | | [ilegible] |
+| Pajar Marko | 30/06/2025 | 2,5 | 01/07/22 | Free transfer | | | [ilegible] |
+| Strootman Kevin | 30/06/2024 | 1,5 | 05/08/22 | Marsiglia | | | [ilegible] |
+| Dragusin Radu Matei | 30/06/2026 | 3,5 | 01/02/22 | Juventus | | | [ilegible] |
+| Aramu Mattia | 30/06/2025 | 2,5 | 01/09/22 | Venezia | | | [ilegible] |
+| Matturro Alan | 30/06/2026 | 2,5 | 19/12/22 | Defensor | | | [ilegible] |
+
+| | Increases | Decreases | Historical Cost | Amortiz. Fund | NBV | ... | NBV as of FS |
+|---|---|---|---|---|---|---|---|
+| TOTALI | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+
+Si segnala che gli ammortamenti dei calciatori sono stati sospesi sulla base della legge 28 marzo 2022 n. 25 di conversione del DL 4/2022 (c.d. DL Sostegni-ter), ad eccezione dei calciatori il cui contratto è terminato (oppure il calciatore è stato ceduto) in corso d'anno.
+
+[timbro e firma manoscritta: GENOA CRICKET ...]
 
 --- pág. 105 ---
 
@@ -3956,39 +4033,41 @@ Mat. 20980
 
 --- pág. 110 ---
 
-sulla base dell’esame dei risultati del lavoro svolto dai Revisori in carica, che ci hanno informato sull’esito dei loro controlli sulla regolare tenuta della contabilità sociale.
+sulla base dell'esame dei risultati del lavoro svolto dai Revisori in carica, che ci hanno informato sull'esito dei loro controlli sulla regolare tenuta della contabilità sociale.
 
 Non sono pervenute denunce ex art. 2408 c.c..
 
-Nel corso dell’esercizio non sono stati rilasciati pareri.
+Nel corso dell'esercizio non sono stati rilasciati pareri.
 
-Nel corso dell’attività di vigilanza, come sopra descritta, non sono emersi ulteriori fatti significativi di menzione nella presente relazione.
+Nel corso dell'attività di vigilanza, come sopra descritta, non sono emersi ulteriori fatti significativi di menzione nella presente relazione.
 
-# Osservazioni in ordine al bilancio di esercizio
+**Osservazioni in ordine al bilancio di esercizio**
 
-Per quanto riguarda la formazione del Bilancio al 31 dicembre 2022, abbiamo esaminato il documento redatto dal Consiglio di Amministrazione, predisposto secondo la normativa europea, recepita nel nostro ordinamento dagli art. 2423 e seguenti del Codice Civile, e composto da Stato Patrimoniale, Conto Economico, Nota Integrativa, Relazione sulla Gestione al Bilancio di Esercizio al 31 dicembre 2022 e Rendiconto Finanziario. Si ricorda che lo stesso, oltre alla normativa citata, vista la peculiarità dell’attività svolta, è compilato anche sulla base delle regole e raccomandazioni emanate dalla Federazione Italiana Gioco Calcio.
+Per quanto riguarda la formazione del Bilancio al 31 dicembre 2022, abbiamo esaminato il documento redatto dal Consiglio di Amministrazione, predisposto secondo la normativa europea, recepita nel nostro ordinamento dagli art. 2423 e seguenti del Codice Civile, e composto da Stato Patrimoniale, Conto Economico, Nota Integrativa, Relazione sulla Gestione al Bilancio di Esercizio al 31 dicembre 2022 e Rendiconto Finanziario. Si ricorda che lo stesso, oltre alla normativa citata, vista la peculiarità dell'attività svolta, è compilato anche sulla base delle regole e raccomandazioni emanate dalla Federazione Italiana Gioco Calcio.
 
-Per quanto a nostra conoscenza, gli Amministratori, nella redazione del bilancio, non hanno derogato alle norme di legge ai sensi dell’art. 2423, comma cinque, C.C.
+Per quanto a nostra conoscenza, gli Amministratori, nella redazione del bilancio, non hanno derogato alle norme di legge ai sensi dell'art. 2423, comma cinque, C.C.
 
-Abbiamo verificato la rispondenza del bilancio ai fatti ed alle informazioni di cui abbiamo conoscenza a seguito dell’espletamento dei nostri doveri e non abbiamo osservazioni al riguardo.
+Abbiamo verificato la rispondenza del bilancio ai fatti ed alle informazioni di cui abbiamo conoscenza a seguito dell'espletamento dei nostri doveri e non abbiamo osservazioni al riguardo.
 
-Essendo demandata alla Società di Revisione Ria Grant Thornton S.p.A. la revisione legale del bilancio e quindi il controllo analitico di merito sul suo contenuto, la nostra attività si è concentrata sulla vigilanza dell’impostazione generale data al documento e sulla generale
+Essendo demandata alla Società di Revisione Ria Grant Thornton S.p.A. la revisione legale del bilancio e quindi il controllo analitico di merito sul suo contenuto, la nostra attività si è concentrata sulla vigilanza dell'impostazione generale data al documento e sulla generale
 
 Abbiamo incontrato la Società di Revisione e dal confronto non sono emerse particolari criticità in ordine ai risultati delle attività dalla stessa svolte.
 
-GENOA
+---
+
+**GENOA**  
 CRICKET AND FOOTBALL CLUB
 
-Via Ronchi, 67
-16155 Genova Pagli
+Via Ronchi, 67  
+16155 Genova Pegli
 
-Tel. +39 010 612831
-Fax +39 010 6126345
+Tel. +39 010 612831  
+Fax +39 010 6128345
 
-info@genoacfc.it
+info@genoacfc.it  
 genoacfc.it
 
-C.F. 80033270101
+C.F. 80033270101  
 P.IVA 00973790108
 
 Mat. 20980
@@ -4122,40 +4201,40 @@ Mat. 20980
 
 --- pág. 115 ---
 
-In particolare, l'azionista di riferimento della Genoa Cricket and Football Club S.p.A. ha già erogato nell'esercizio 2022, finanziamenti, poi convertiti in conto futuro aumento di capitale, per € 62,4 milioni, portando l'apporto complessivo del socio, dalla data di acquisizione della società al 31 dicembre 2022 ad € 89,5 milioni circa. Il supporto del socio è proseguito nell'esercizio 2023; nei primi tre mesi dell'esercizio sono stati versati ulteriori € 16 milioni circa.
+*In particolare, l'azionista di riferimento della Genoa Cricket and Football Club S.p.A. ha già erogato nell' esercizio 2022, finanziamenti, poi convertiti in conto futuro aumento di capitale, per € 62,4 milioni, portando l'apporto complessivo del socio, dalla data di acquisizione della società al 31 dicembre 2022 ad € 89,5 milioni circa. Il supporto del socio è proseguito nell' esercizio 2023; nei primi tre mesi dell'esercizio sono stati versati ulteriori € 16 milioni circa.*
 
-Gli amministratori segnalano di essere confidenti della possibilità di implementazione e realizzazione delle linee guida previste nel Piano 2022/2038, per il raggiungimento di uno stabile equilibrio economico patrimoniale e finanziario nel medio termine. Le principali direttrici del Piano, in fase di rivisitazione, in parte già avviate, prevedono: i) il ritorno già dalla stagione sportiva 2023/2024 nella serie A, obiettivo alla data della presente relazione raggiunto, ii) un piano di mercato che possa garantire plusvalenze nette dalla cessione di diritti pluriennali di calciatori, iii) la riduzione del costo del lavoro.
+*Gli amministratori segnalano di essere confidenti della possibilità di implementazione e realizzazione delle linee guida previste nel Piano 2022/2038, per il raggiungimento di uno stabile equilibrio economico patrimoniale e finanziario nel medio termine. Le principali direttrici del Piano, in fase di rivisitazione, in parte già avviate, prevedono: i) il ritorno già dalla stagione sportiva 2023/2024 nella serie A, obiettivo alla data della presente relazione raggiunto, ii) un piano di mercato che possa garantire plusvalenze nette dalla cessione di diritti pluriennali di calciatori, iii) la riduzione del costo del lavoro.*
 
-Gli amministratori informano che le azioni previste in essere nel piano previsionale 2022/2038 ed avviate nell'esercizio 2022 volte al contenimento dell'esposizione debitoria della società, ampiamente descritte nella relazione sulla gestione e nella nota integrativa, sono state revocate in considerazione del confermato supporto finanziario da parte del socio almeno per l'esercizio 2023.
+*Gli amministratori informano che le azioni previste in essere nel piano previsionale 2022/2038 ed avviate nell' esercizio 2022 volte al contenimento dell'esposizione debitoria della società, ampiamente descritte nella relazione sulla gestione e nella nota integrativa, sono state revocate in considerazione del confermato supporto finanziario da parte del socio almeno per l'esercizio 2023.*
 
-Gli amministratori pur nella consapevolezza delle incertezze proprie di ogni processo previsionale, della possibilità in un contesto economico incerto che i dati previsionali potrebbero non essere confermati o confermati in parte, hanno predisposto il bilancio in base al presupposto della continuità aziendale.
+*Gli amministratori pur nella consapevolezza delle incertezze proprie di ogni processo previsionale, della possibilità in un contesto economico incerto che i dati previsionali potrebbero non essere confermati o confermati in parte, hanno predisposto il bilancio in base al presupposto della continuità aziendale.*
 
-La società si è avvalsa, come per gli esercizi precedenti, della facoltà concessa dalla legge 28 marzo 2022 n. 25 (c.d. DL Sostegni-ter), e ha sospeso gli ammortamenti anche nell'esercizio 2022. Gli
+*La società si è avvalsa, come per gli esercizi precedenti, della facoltà concessa dalla legge 28 marzo 2022 n. 25 (c.d. DL Sostegni-ter), e ha sospeso gli ammortamenti anche nell' esercizio 2022. Gli*
 
-GENOA
-CRICKET AND FOOTBALL CLUB
+***
 
-Via Ronchi, 67
-16155 Genova Pegli
+**GENOA CRICKET AND FOOTBALL CLUB**
 
-Tel. +39 010 612831
-Fax +39 010 6126345
+Via Ronchi, 67  
+16155 Genova Pegli  
 
-info@genoacfc.it
-genoacfc.it
+Tel. +39 010 612831  
+Fax +39 010 6128345  
 
-C.F. 80033270101
-P.IVA 00973790108
+info@genoacfc.it  
+genoacfc.it  
 
+C.F. 80033270101  
+P.IVA 00973790108  
 Mat. 20980
 
 --- pág. 116 ---
 
 effetti di tale decisione sono descritti nella relazione sulla gestione e nella nota integrativa, a cui si rimanda.
 
-Il bilancio riflette attività per imposte anticipate per € 8,6 milioni circa. Come evidenziato nella relazione sulla gestione e nella nota integrativa, gli amministratori ritengono ragionevole prevedere imponibili fiscali futuri sufficienti a recuperare l’intero importo.
+*Il bilancio riflette attività per imposte anticipate per € 8,6 milioni circa. Come evidenziato nella relazione sulla gestione e nella nota integrativa, gli amministratori ritengono ragionevole prevedere imponibili fiscali futuri sufficienti a recuperare l'intero importo.*
 
-Il nostro giudizio non è espresso con rilievi in relazione agli aspetti sopra richiamati.”
+*Il nostro giudizio non è espresso con rilievi in relazione agli aspetti sopra richiamati.”*
 
 Signori Azionisti,
 
@@ -4163,29 +4242,28 @@ considerando tutto quanto sopra, nonché le risultanze dell’attività svolta d
 
 Genova, 10 maggio 2023
 
-Dott. Carlo Bindella
+Dott. Carlo Bindella Sindaco Presidente [firma]
 
-Dott. Carlo Castelli
+Dott. Carlo Castelli Sindaco effettivo [firma]
 
-Dott. Enrico Verri
+Dott. Enrico Verri Sindaco effettivo [firma]
 
-Sindaco Presidente  
-Sindaco effettivo  
-Sindaco effettivo
+***
 
-GENOA
+**GENOA**  
 CRICKET AND FOOTBALL CLUB
 
-Via Ronchi, 67
-16155 Genova Pagli
+Via Ronchi, 67  
+16155 Genova Pegli
 
-Tel. +39 010 612831
+Tel. +39 010 612831  
 Fax +39 010 6128345
 
-info@genoacfo.it
-genoacfo.it
+info@genoacfc.it  
+genoacfc.it
 
-C.F. 80032270101
+C.F. 80033270101  
 P.IVA 00973790108
 
-Mot. 20980
+Mat. 20980
+

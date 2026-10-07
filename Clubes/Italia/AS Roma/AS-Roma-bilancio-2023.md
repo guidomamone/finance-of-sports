@@ -795,152 +795,150 @@ AS • ROMA
 --- pág. 24 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+### PROSPETTI CONTABILI
+*(valori in Euro)*
 
-## PROSPETTI CONTABILI
+| STATO PATRIMONIALE | 30/06/2023 | 30/06/2022 |
+| :--- | :--- | :--- |
+| **B. IMMOBILIZZAZIONI** | | |
+| **I. Immobilizzazioni immateriali** | | |
+| 4) concessioni, licenze, marchi e diritti simili | 9.021.862 | 56.480 |
+| 6) immobilizzazioni in corso e acconti | - | 64.324 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 109.293.899 | 167.361.582 |
+| 8) altre | 15.453.234 | 17.517.225 |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **133.768.995** | **184.999.611** |
+| **II. Immobilizzazioni materiali** | | |
+| 1) terreni e fabbricati | 7.308.806 | 7.442.910 |
+| 2) impianti e macchinario | 772.946 | 604.307 |
+| 3) attrezzature industriali e commerciali | 766.200 | 641.596 |
+| 4) altri beni | 2.050.586 | 2.054.712 |
+| 5) immobilizzazioni in corso e acconti | 1.738.108 | 1.795.722 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **12.636.646** | **12.539.247** |
+| **III. Immobilizzazioni finanziarie** | | |
+| 2) crediti: | | |
+| d) verso imprese sottoposte al controllo delle controllanti | | |
+| - entro 12 mesi | - | - |
+| - oltre 12 mesi | 2.700.000 | 2.700.000 |
+| d-bis) verso altri | | |
+| - entro 12 mesi | - | - |
+| - oltre 12 mesi | 6.074.219 | 10.702.228 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **8.774.219** | **13.402.228** |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **155.179.860** | **210.941.086** |
+| | | |
+| **C. ATTIVO CIRCOLANTE** | | |
+| **I. Rimanenze** | | |
+| 4) prodotti finiti e merci | 1.800.256 | 1.548.189 |
+| **TOTALE (I) - RIMANENZE** | **1.800.256** | **1.548.189** |
+| **II. Crediti** | | |
+| 1) verso clienti | | |
+| - entro 12 mesi | 14.533.199 | 16.649.929 |
+| - oltre 12 mesi | - | - |
+| 4) verso imprese controllanti | | |
+| - entro 12 mesi | 4.526.182 | 7.470.815 |
+| - oltre 12 mesi | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | |
+| - entro 12 mesi | 159.269 | 199.758 |
+| - oltre 12 mesi | - | - |
+| 5-bis) crediti tributari | | |
+| - entro 12 mesi | 282.986 | 629.689 |
+| - oltre 12 mesi | 35.008 | 35.008 |
+| 5-quater) verso altri | | |
+| - entro 12 mesi | 915.246 | 20.395.847 |
+| - oltre 12 mesi | - | - |
+| 6) crediti verso enti-settore specifico | | |
+| - entro 12 mesi | 47.080.660 | 54.468.671 |
+| - oltre 12 mesi | 31.978.547 | 5.365.161 |
+| **TOTALE (II) - CREDITI** | **99.511.097** | **105.214.878** |
+| **IV. Disponibilità liquide** | | |
+| 1) depositi bancari e postali | 43.976.958 | 22.797.052 |
+| 3) danaro e valori in cassa | 28.079 | 23.703 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | **44.005.037** | **22.820.756** |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **145.316.390** | **129.583.823** |
+| | | |
+| **D. RATEI E RISCONTI ATTIVI** | | |
+| - risconti attivi | | |
+| - entro 12 mesi | 2.534.536 | 4.091.024 |
+| - oltre 12 mesi | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | **2.534.536** | **4.091.024** |
+| | | |
+| **TOTALE ATTIVO (A+B+C+D)** | **303.030.786** | **344.615.932** |
 
-(valori in Euro)
-
-|  STATO PATRIMONIALE | 30/06/2023 | 30/06/2022  |
-| --- | --- | --- |
-|  **B. IMMOBILIZZAZIONI** |  |   |
-|  I. Immobilizzazioni immateriali |  |   |
-|  4) concessioni, licenze, marchi e diritti simili | 9.021.862 | 56.480  |
-|  6) Immobilizzazioni in corso e acconti | - | 64.324  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 109.293.899 | 167.361.582  |
-|  8) altre | 15.453.234 | 17.517.225  |
-|  **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **133.768.995** | **184.999.611**  |
-|  II. Immobilizzazioni materiali |  |   |
-|  1) terreni e fabbricati | 7.308.806 | 7.442.910  |
-|  2) impianti e macchinario | 772.946 | 604.307  |
-|  3) attrezzature industriali e commerciali | 766.200 | 641.596  |
-|  4) altri beni | 2.050.586 | 2.054.713  |
-|  5) Immobilizzazioni in corso e acconti | 1.738.108 | 1.795.722  |
-|  **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **12.636.646** | **12.539.247**  |
-|  III. Immobilizzazioni finanziarie |  |   |
-|  **2) crediti:** |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |   |
-|  - entro 12 mesi | - | -  |
-|  - oltre 12 mesi | 2.700.000 | 2.700.000  |
-|  d-bis) verso altri |  |   |
-|  - entro 12 mesi | - | -  |
-|  - oltre 12 mesi | 6.074.219 | 10.702.228  |
-|  **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **8.774.219** | **13.402.228**  |
-|  **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **155.179.860** | **210.941.086**  |
-|  **C. ATTIVO CIRCOLANTE** |  |   |
-|  I. Rimanenze |  |   |
-|  4) prodotti finiti e merci | 1.800.256 | 1.548.189  |
-|  **TOTALE (I) - RIMANENZE** | **1.800.256** | **1.548.189**  |
-|  II. Crediti |  |   |
-|  1) verso clienti |  |   |
-|  - entro 12 mesi | 14.533.199 | 16.649.929  |
-|  - oltre 12 mesi | - | -  |
-|  4) verso imprese controllanti |  |   |
-|  - entro 12 mesi | 4.526.182 | 7.470.815  |
-|  - oltre 12 mesi | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |   |
-|  - entro 12 mesi | 159.269 | 199.758  |
-|  - oltre 12 mesi | - | -  |
-|  5-bis) crediti tributari |  |   |
-|  - entro 12 mesi | 282.986 | 629.689  |
-|  - oltre 12 mesi | 35.008 | 35.008  |
-|  5-quater) verso altri |  |   |
-|  - entro 12 mesi | 915.246 | 20.395.847  |
-|  - oltre 12 mesi | - | -  |
-|  6) crediti verso enti-settore specifico |  |   |
-|  - entro 12 mesi | 47.080.660 | 54.468.671  |
-|  - oltre 12 mesi | 31.978.547 | 5.365.161  |
-|  **TOTALE (II) - CREDITI** | **99.511.097** | **105.214.878**  |
-|  IV. Disponibilità liquide |  |   |
-|  1) depositi bancari e postali | 43.976.958 | 22.797.052  |
-|  3) donare e valori in cassa | 28.079 | 23.703  |
-|  **TOTALE (IV) - DISPONIBILITÀ LIQUIDE** | **44.005.037** | **22.820.756**  |
-|  **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **145.316.390** | **129.583.823**  |
-|  **D. RATEI E RISCONTI ATTIVI** |  |   |
-|  - risconti attivi |  |   |
-|  - entro 12 mesi | 2.534.536 | 4.091.024  |
-|  - oltre 12 mesi | - | -  |
-|  **TOTALE RATEI E RISCONTI (D)** | **2.534.536** | **4.091.024**  |
-|  **TOTALE ATTIVO (A+B+C+D)** | **303.030.786** | **344.515.932**  |
+[Firma]
 
 24
 
 --- pág. 25 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+| STATO PATRIMONIALE | 30/06/2023 | 30/06/2022 |
+| :--- | :--- | :--- |
+| **A. PATRIMONIO NETTO** | | |
+| I. Capitale | 93.942.205 | 93.942.205 |
+| VI. Altre riserve | 402.734.688 | 402.734.688 |
+| VIII. Utili (perdite) portati a nuovo | (830.368.507) | (612.123.522) |
+| IX. Utile (perdita) di periodo | (102.747.288) | (219.100.731) |
+| **Totale Patrimonio Netto del Gruppo AS Roma** | **(436.438.902)** | **(334.547.361)** |
+| XI.1 Capitale e riserve di terzi | - | (1.275.289) |
+| XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | - | (168.638) |
+| **Totale Patrimonio dei Terzi** | **-** | **(1.443.927)** |
+| **TOTALE PATRIMONIO NETTO (E)** | **(436.438.902)** | **(335.991.288)** |
+| | | |
+| **B. FONDI PER RISCHI E ONERI** | | |
+| 2) per imposte, anche differite | 3.113.282 | 0 |
+| 4) altri | 18.860.002 | 29.543.123 |
+| **TOTALE FONDI PER RISCHI E ONERI (F)** | **21.973.284** | **29.543.123** |
+| | | |
+| **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | **4.896.277** | **4.325.087** |
+| | | |
+| **D. DEBITI** | | |
+| 1) obbligazioni | | |
+| - entro 12 mesi | 1.761.667 | 6.300.000 |
+| - oltre 12 mesi | 171.706.396 | 251.122.790 |
+| 3) debiti verso soci per finanziamenti | | |
+| - entro 12 mesi | - | - |
+| - oltre 12 mesi | 317.621.919 | 85.075.759 |
+| 4) debiti verso banche | | |
+| - entro 12 mesi | 1.696.875 | 7.324.730 |
+| - oltre 12 mesi | 4.235.382 | 5.589.231 |
+| 5) debiti verso altri finanziatori | | |
+| - entro 12 mesi | 126.697 | 122.216 |
+| - oltre 12 mesi | 259.892 | 376.951 |
+| 7) debiti verso fornitori | | |
+| - entro 12 mesi | 51.343.274 | 44.156.372 |
+| - oltre 12 mesi | 4.423.795 | 5.422.710 |
+| 11) debiti verso imprese controllanti | | |
+| - entro 12 mesi | 729.239 | 2.314.591 |
+| - oltre 12 mesi | - | - |
+| 11-bis) debiti verso imprese sotto il controllo delle controllanti | | |
+| - entro 12 mesi | 2.306.347 | 2.817.347 |
+| - oltre 12 mesi | 4.515.900 | - |
+| 12) debiti tributari | | |
+| - entro 12 mesi | 8.107.024 | 49.385.693 |
+| - oltre 12 mesi | 524.792 | 982.705 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | |
+| - entro 12 mesi | 2.490.076 | 7.213.268 |
+| - oltre 12 mesi | - | - |
+| 14) altri debiti | | |
+| - entro 12 mesi | 37.328.393 | 27.798.563 |
+| - oltre 12 mesi | - | - |
+| 15) debiti verso enti-settore specifico | | |
+| - entro 12 mesi | 53.528.953 | 67.301.809 |
+| - oltre 12 mesi | 25.300.898 | 61.764.394 |
+| **TOTALE DEBITI (H)** | **688.007.519** | **625.069.132** |
+| | | |
+| **E. RATEI E RISCONTI PASSIVI** | | |
+| - risconti passivi | | |
+| - entro 12 mesi | 15.943.719 | 12.932.811 |
+| - oltre 12 mesi | 8.648.889 | 8.737.066 |
+| **TOTALE RATEI E RISCONTI PASSIVI (I)** | **24.592.608** | **21.669.878** |
+| | | |
+| **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | **303.030.786** | **344.615.932** |
 
-A. PATRIMONIO NETTO
-
-|  I. Capitale | 93.942.205 | 93.942.205  |
-| --- | --- | --- |
-|  VI. Altre riserve | 402.734.688 | 402.734.688  |
-|  VIII. Utili (perdite) portati a nuovo | (830.368.507) | (612.123.522)  |
-|  IX. Utile (perdita) di periodo | (102.747.288) | (219.100.731)  |
-|  **Totale Patrimonio Netto del Gruppo A5 Roma** | **(436.438.902)** | **(334.547.361)**  |
-|  XI.1 Capitale e riserve di terzi | - | (1.275.289)  |
-|  XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | - | (168.638)  |
-|  **Totale Patrimonio dei Terzi** | **-** | **(1.443.927)**  |
-|  **TOTALE PATRIMONIO NETTO (E)** | **(436.438.902)** | **(335.991.288)**  |
-
-B. FONDI PER RISCHI E ONERI
-
-|  2) per imposte, anche differite | 3.113.282 | 0  |
-| --- | --- | --- |
-|  4) altri | 18.860.002 | 29.543.123  |
-|  **TOTALE FONDI PER RISCHI E ONERI (F)** | **21.973.284** | **29.543.123**  |
-
-C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO 4.896.277 4.325.087
-
-D. DEBITI
-
-|  1) obbligazioni |  |   |
-| --- | --- | --- |
-|  - entro 12 mesi | 1.761.667 | 6.300.000  |
-|  - oltre 12 mesi | 171.706.396 | 251.122.790  |
-|  3) debiti verso soci per finanziamenti |  |   |
-|  - entro 12 mesi | - | -  |
-|  - oltre 12 mesi | 317.621.919 | 85.075.759  |
-|  4) debiti verso banche |  |   |
-|  - entro 12 mesi | 1.696.875 | 7.324.730  |
-|  - oltre 12 mesi | 4.235.382 | 5.589.231  |
-|  5) debiti verso altri finanziatori |  |   |
-|  - entro 12 mesi | 126.697 | 122.216  |
-|  - oltre 12 mesi | 259.892 | 376.951  |
-|  7) debiti verso fornitori |  |   |
-|  - entro 12 mesi | 51.343.274 | 44.156.372  |
-|  - oltre 12 mesi | 4.423.795 | 5.422.710  |
-|  11) debiti verso imprese controllanti |  |   |
-|  - entro 12 mesi | 729.239 | 2.314.591  |
-|  - oltre 12 mesi | - | -  |
-|  11-bis) debiti verso imprese sotto il controllo delle controllanti |  |   |
-|  - entro 12 mesi | 2.306.347 | 2.817.347  |
-|  - oltre 12 mesi | 4.515.900 | -  |
-|  12) debiti tributari |  |   |
-|  - entro 12 mesi | 8.107.024 | 49.385.693  |
-|  - oltre 12 mesi | 524.792 | 982.705  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale |  |   |
-|  - entro 12 mesi | 2.490.076 | 7.213.268  |
-|  - oltre 12 mesi | - | -  |
-|  14) altri debiti |  |   |
-|  - entro 12 mesi | 37.328.393 | 27.798.563  |
-|  - oltre 12 mesi | - | -  |
-|  15) debiti verso enti-settore specifico |  |   |
-|  - entro 12 mesi | 53.528.953 | 67.301.809  |
-|  - oltre 12 mesi | 25.300.898 | 61.764.394  |
-|  **TOTALE DEBITI (H)** | **688.007.519** | **625.069.132**  |
-
-E. RATEI E RISCONTI PASSIVI
-
-|  - risconti passivi |  |   |
-| --- | --- | --- |
-|  - entro 12 mesi | 15.943.719 | 12.932.811  |
-|  - oltre 12 mesi | 8.648.889 | 8.737.066  |
-|  **TOTALE RATEI E RISCONTI PASSIVI (I)** | **24.592.608** | **21.669.878**  |
-
-TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E) 303.030.786 344.615.932
+[Firma]
 
 25
 
@@ -1018,76 +1016,77 @@ PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 --- pág. 27 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+| RENDICONTO FINANZIARIO CONSOLIDATO | 01/07/2022 - 30/06/2023 | 01/07/2021 - 30/06/2022 |
+| :--- | :--- | :--- |
+| **A. Flussi finanziari derivanti dell'attività operativa** | | |
+| Utile (perdita) dell'esercizio | (102.747.288) | (219.269.369) |
+| Imposte sul reddito | 3.446.901 | 507.013 |
+| Interessi passivi/(interessi attivi) | 17.705.977 | 15.612.738 |
+| (Plusvalenze)/minusvalenze da cessione calciatori | (47.121.363) | (4.982.213) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte, interessi, E plus/minus da cessione** | **(128.715.774)** | **(208.131.831)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 6.424.401 | 25.960.228 |
+| Ammortamenti delle immobilizzazioni | 60.114.736 | 81.201.225 |
+| Svalutazioni per perdite durevoli di valore | 491.626 | 13.857.617 |
+| Altre rettifiche per elementi non monetarie | 9.864.955 | 7.090.359 |
+| **2. Flusso finanziario prima delle variazioni del ccn** | **(51.820.056)** | **(80.022.402)** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | (252.067) | (543.975) |
+| Decremento/(incremento) dei crediti vs clienti | 2.116.731 | 1.251.105 |
+| Incremento/(decremento) dei debiti verso fornitori | 6.187.987 | (6.692.445) |
+| Decremento/(incremento) ratei e risconti attivi | 1.556.488 | 3.040.156 |
+| Incremento/(decremento) ratei e risconti passivi | 2.922.731 | 2.746.524 |
+| Altre variazioni del capitale circolante netto | (22.138.219) | (19.539.025) |
+| **3. Flusso finanziario dopo le variazioni del ccn** | **(61.426.405)** | **(99.760.063)** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | (9.786.369) | (13.724.750) |
+| (Imposte sul reddito pagate) | (734.474) | (1.029.592) |
+| (Utilizzo dei fondi) | (13.423.050) | (4.672.649) |
+| Altri incassi/pagamenti | (6.914.105) | (2.540.935) |
+| **Flusso finanziario dell'attività operativa (A)** | **(92.284.403)** | **(121.727.989)** |
+| **B. Flussi finanziari derivanti dall'attività d'investimento** | | |
+| *Immobilizzazioni materiali* | | |
+| (Investimenti) | (4.020.478) | (3.428.634) |
+| Disinvestimenti | - | - |
+| *Diritti pluriennali alle prestazioni dei calciatori* | | |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (15.843.579) | (84.648.388) |
+| Valore acquisti calciatori | - | - |
+| Variazione debiti vs squadre di calcio | (52.526.645) | (10.482.687) |
+| *Cessione diritti pluriennali alle prestazioni dei calciatori* | | |
+| Valore cessione calciatori | 65.376.852 | 22.786.499 |
+| Variazione crediti vs squadre di calcio | (20.742.967) | 1.508.855 |
+| *Altre immobilizzazioni immateriali* | | |
+| (Investimenti) | (7.383.262) | 550.416 |
+| Disinvestimenti | - | - |
+| *Immobilizzazioni finanziarie* | | |
+| (Investimenti) | - | - |
+| Disinvestimenti | 4.628.009 | (174.859) |
+| **Flusso finanziario dell'attività di investimento (B)** | **(30.512.070)** | **(73.888.797)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | | |
+| Incremento (decremento) debiti a breve verso banche | (6.981.705) | (3.181.155) |
+| Accensione finanziamenti | 175.000.000 | - |
+| (Rimborso finanziamenti) | (263.200.000) | (6.143.324) |
+| Atri incassi e pagamenti da attività di finanziamento | 6.616.300 | (138.169) |
+| *Finanziamenti soci* | | |
+| Accensione finanziamenti | 232.546.160 | 85.075.759 |
+| *Mezzi propri* | | |
+| Versamento in conto futuro aumento di capitale | - | 120.000.000 |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **143.980.755** | **195.613.111** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **21.184.281** | **(3.676)** |
+| Effetto cambi sulle disponibilità liquide | - | - |
+| **Disponibilità liquide all'inizio dell'esercizio** | **22.820.756** | **22.824.431** |
+| *di cui:* | | |
+| depositi bancari e postali | 22.797.052 | 22.811.509 |
+| denaro e valori in cassa | 23.703 | 12.922 |
+| **Disponibilità liquide alla fine dell'esercizio** | **44.005.037** | **22.820.756** |
+| *di cui:* | | |
+| depositi bancari e postali | 43.976.958 | 22.797.052 |
+| denaro e valori in cassa | 28.079 | 23.703 |
 
-|  RENDICONTO FINANZIARIO CONSOLIDATO | 01/07/2022 - 30/06/2023 | 01/07/2021 - 30/06/2022  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dell'attività operativa** |  |   |
-|  Utile (perdita) dell'esercizio | (102.747.288) | (219.269.369)  |
-|  Imposte sul reddito | 3.446.981 | 507.013  |
-|  Interessi passivi/(interessi attivi) | 17.705.977 | 15.612.738  |
-|  (Plusvalenze)/minusvalenze da cessione calciatori | (47.121.363) | (4.982.213)  |
-|  **1. Utile (perdita) dell'esercizio prima d'Imposte, interessi, E plus/minus da cessione** | **(128.715.774)** | **(208.131.831)**  |
-|  *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* |  |   |
-|  Accantonamenti ai fondi | 6.424.401 | 25.960.228  |
-|  Ammortamenti delle immobilizzazioni | 60.114.736 | 81.201.225  |
-|  Svalutazioni per perdite durevoli di valore | 491.625 | 13.857.617  |
-|  Altre rettifiche per elementi non monetarie | 9.864.955 | 7.090.359  |
-|  **2. Flusso finanziario prima delle variazioni del ccn** | **(51.820.056)** | **(80.022.402)**  |
-|  *Variazioni del capitale circolante netto* |  |   |
-|  Decremento/(incremento) delle rimanenze | (252.067) | (543.975)  |
-|  Decremento/(incremento) dei crediti vs clienti | 2.116.731 | 1.251.105  |
-|  Incremento/(decremento) dei debiti verso fornitori | 6.187.987 | (6.692.445)  |
-|  Decremento/(incremento) ratei e risconti attivi | 1.556.488 | 3.040.156  |
-|  Incremento/(decremento) ratei e risconti passivi | 2.922.731 | 2.746.524  |
-|  Altre variazioni del capitale circolante netto | (22.138.219) | (19.539.025)  |
-|  **3. Flusso finanziario dopo le variazioni del ccn** | **(61.426.405)** | **(99.760.983)**  |
-|  *Altre rettifiche* |  |   |
-|  Interessi incassati/(pagati) | (9.786.369) | (13.724.750)  |
-|  (Imposte sul reddito pagate) | (734.474) | (1.029.592)  |
-|  (Utilizzo dei fondi) | (13.423.050) | (4.672.649)  |
-|  Altri incassi/pagamenti | (6.914.105) | (2.540.935)  |
-|  **Flusso finanziario dell'attività operativa (A)** | **(92.284.403)** | **(121.727.989)**  |
-|  **B. Flussi finanziari derivanti dall'attività d'investimento** |  |   |
-|  *Immobilizzazioni materiali* |  |   |
-|  (Investimenti) | (4.020.478) | (3.428.634)  |
-|  Disinvestimenti | - | -  |
-|  *Diritti pluriennali alle prestazioni dei calciatori* |  |   |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (15.843.579) | (84.648.388)  |
-|  Valore acquisti calciatori | - | -  |
-|  Variazione debiti vs squadre di calcio | (52.526.645) | (10.482.687)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | - | -  |
-|  Valore cessione calciatori | 65.376.852 | 22.786.499  |
-|  Variazione crediti vs squadre di calcio | (20.742.967) | 1.508.855  |
-|  *Altre Immobilizzazioni immateriali* |  |   |
-|  (Investimenti) | (7.383.262) | 550.416  |
-|  Disinvestimenti | - | -  |
-|  *Immobilizzazioni finanziarie* |  |   |
-|  (Investimenti) | - | -  |
-|  Disinvestimenti | 4.628.009 | (174.859)  |
-|  **Flusso finanziario dell'attività di Investimento (B)** | **(30.512.070)** | **(73.888.707)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  *Mezzi di terzi* |  |   |
-|  Incremento (decremento) debiti a breve verso banche | (6.981.705) | (3.181.155)  |
-|  Accensione finanziamenti | 175.000.000 | -  |
-|  (Rimborso finanziamenti) | (263.200.000) | (6.142.324)  |
-|  Atri incassi e pagamenti da attività di finanziamento | 6.616.300 | (138.169)  |
-|  *Finanziamenti soci* |  |   |
-|  Accensione finanziamenti | 232.546.160 | 85.075.759  |
-|  *Mezzi propri* |  |   |
-|  Versamento in conto futuro aumento di capitale | - | 120.000.000  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **143.980.755** | **195.613.111**  |
-|  **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **21.184.281** | **(3.676)**  |
-|  *Effetto cambi sulle disponibilità liquide* |  |   |
-|  **Disponibilità liquide all'inizio dell'esercizio** | **22.820.756** | **22.824.431**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 22.797.052 | 22.811.509  |
-|  denaro e valori in cassa | 23.703 | 12.922  |
-|  **Disponibilità liquide alla fine dell'esercizio** | **44.005.037** | **22.820.756**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 43.976.958 | 22.797.052  |
-|  denaro e valori in cassa | 28.079 | 23.703  |
+[Firma]
 
 27
 
@@ -1433,381 +1432,371 @@ Di seguito viene fornita:
 
 --- pág. 38 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-## Riconciliazione del conto economico comparativo
-
-CONTO ECONOMICO 1 LUGLIO 2021 - 30 GIUGNO 2022 Principi IAS/IFRS Rclassifiche OIC Rettifiche OIC Principi contabili italiani
-
-### A. VALORE DELLA PRODUZIONE
-
-|  1) ricavi delle vendite e delle prestazioni | 25.520.950 | - | - | 25.520.950  |
-| --- | --- | --- | --- | --- |
-|  2) variazioni delle rimanenze di prodotti finiti | 543.975 | - | - | 543.975  |
-|  5) altri ricavi e proventi |  |  |  |   |
-|  a) proventi da sponsorizzazioni | 8.241.272 | - | - | 8.241.272  |
-|  b) proventi pubblicitari | 16.336.236 | - | - | 16.336.236  |
-|  c) proventi commerciali e royalties | 13.989.043 | - | - | 13.989.043  |
-|  d) proventi da cessione diritti audiovisivi | 92.951.860 | - | - | 92.951.860  |
-|  e) ricavi da cessione temporanea prestazioni calciatori | 3.627.186 | - | - | 3.627.186  |
-|  f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 6.206.241 | - | - | 6.206.241  |
-|  g) altri proventi da trasferimento diritti calciatori | 4.850.280 | - | - | 4.850.280  |
-|  h) ricavi e proventi diversi | 34.153.765 | - | - | 34.153.765  |
-|  **5) Totale altri ricavi e proventi** | **180.355.884** | **-** | **-** | **180.355.884**  |
-|  **TOTALE VALORE DELLA PRODUZIONE (A)** | **206.420.809** | **-** | **-** | **206.420.809**  |
-
-### B. COSTI DELLA PRODUZIONE
-
-|  6) per materie prime, sussidiarie, di consumo e di merci | 10.252.494 | - | - | 10.252.494  |
-| --- | --- | --- | --- | --- |
-|  7) per servizi | 63.206.904 | - | - | 63.206.904  |
-|  8) per godimento di beni di terzi | 6.867.805 | - | 4.848.271 | 11.716.075  |
-|  9) per il personale |  |  |  |   |
-|  a) salari e stipendi | 171.970.620 | - | - | 171.970.620  |
-|  b) oneri sociali | 9.036.687 | - | - | 9.036.687  |
-|  c) trattamento di fine rapporto | 964.381 | - | 348.174 | 1.312.555  |
-|  e) altri costi | 859.284 | - | - | 859.284  |
-|  **9) Totale costi per il personale** | **182.830.973** | **-** | **348.174** | **183.179.146**  |
-|  10) ammortamenti e svalutazioni |  |  |  |   |
-|  a) ammortamenti immobilizzazioni immateriali | 82.136.890 | - | (4.179.275) | 77.957.614  |
-|  b) ammortamenti immobilizzazioni materiali | 3.243.611 | - | - | 3.243.611  |
-|  c) altre svalutazioni delle immobilizzazioni | - | 8.960.811 | - | 8.960.811  |
-|  d) svalutazioni dei crediti dell'attivo circulante e delle disponibilità liquide | 4.896.806 | - | - | 4.896.806  |
-|  **10) Totale costi per ammortamenti e svalutazioni** | **90.277.306** | **8.960.811** | **(4.179.275)** | **95.058.842**  |
-|  12) accantonamenti per rischi | - | - | - | -  |
-|  14) oneri diversi di gestione |  |  |  |   |
-|  a) costi per acquisizione temporanea prestazioni calciatori | 2.483.391 | - | - | 2.483.391  |
-|  b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.184.840 | (8.960.811) | - | 1.224.039  |
-|  c) altri oneri da trasferimento diritti calciatori | 13.621.364 | - | - | 13.621.364  |
-|  d) altri oneri diversi di gestione | 21.707.125 | - | - | 21.707.125  |
-|  **14) Totale oneri diversi di gestione** | **47.996.719** | **(8.960.811)** | **-** | **39.035.908**  |
-|  **TOTALE COSTI DELLA PRODUZIONE (B)** | **401.432.201** | **-** | **1.017.169** | **402.449.369**  |
-|  **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | **(195.011.391)** | **-** | **(1.017.169)** | **(196.028.560)**  |
-
-### C. PROVENTI E ONERI FINANZIARI
-
-|  16) altri proventi finanziari | 2.670.656 | - | (8.083) | 2.662.574  |
-| --- | --- | --- | --- | --- |
-|  17) interessi ed altri oneri finanziari | (26.580.841) | - | 1.215.171 | (25.365.671)  |
-|  a) altri interessi e oneri finanziari | (26.580.841) | - | 1.215.171 | (25.365.671)  |
-|  17 bis) utile e perdite su cambi | (30.699) | - | - | (30.699)  |
-|  **TOTALE PROVENTI ED ONERI FINANZIARI (C) (16+16-17 ± 17 bis)** | **(23.940.885)** | **-** | **1.207.088** | **(22.733.797)**  |
-|  **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | **(218.952.276)** | **-** | **189.919** | **(218.762.356)**  |
-|  20) imposte sul reddito dell'esercizio | (507.013) | - | 0 | (507.013)  |
-|  a) imposte correnti | (2.785.826) | - | - | (2.785.826)  |
-|  a) proventi (oneri) da adesione al regime di consolidate fiscale/trasparenza fiscale | 2.278.813 | - | - | 2.278.813  |
-|  **20) UTILE (PERDITA) DELL'ESERCIZIO** | **(219.459.299)** | **-** | **189.919** | **(219.358.359)**  |
-|  Utile (perdita) di terzi | (168.538) | - | - | (168.538)  |
-|  **Risultato di pertinenza del gruppo** | **(219.290.651)** | **-** | **189.919** | **(219.100.731)**  |
 
 38
 
+Riconciliazione del conto economico comparativo
+
+| CONTO ECONOMICO 1 LUGLIO 2021 - 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. VALORE DELLA PRODUZIONE** | | | | |
+| 1) ricavi delle vendite e delle prestazioni | 25.520.950 | | | 25.520.950 |
+| 2) variazioni delle rimanenze di prodotti finiti | 543.975 | - | - | 543.975 |
+| 5) altri ricavi e proventi | | | | |
+| a) proventi da sponsorizzazioni | 8.241.272 | | - | 8.241.272 |
+| b) proventi pubblicitari | 16.336.236 | | - | 16.336.236 |
+| c) proventi commerciali e royalties | 13.989.043 | | - | 13.989.043 |
+| d) proventi da cessione diritti audiovisivi | 92.951.860 | | - | 92.951.860 |
+| e) ricavi da cessione temporanea prestazioni calciatori | 3.627.186 | | - | 3.627.186 |
+| f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 6.206.241 | | - | 6.206.241 |
+| g) altri proventi da trasferimento diritti calciatori | 4.850.280 | | - | 4.850.280 |
+| h) ricavi e proventi diversi | 34.153.765 | | - | 34.153.765 |
+| 5) Totale altri ricavi e proventi | 180.355.884 | - | - | 180.355.884 |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | 206.420.809 | - | - | 206.420.809 |
+| **B. COSTI DELLA PRODUZIONE** | | | | |
+| 6) per materie prime, sussidiarie, di consumo e di merci | 10.252.494 | - | - | 10.252.494 |
+| 7) per servizi | 63.206.904 | - | - | 63.206.904 |
+| 8) per godimento di beni di terzi | 6.867.805 | - | 4.848.271 | 11.716.075 |
+| 9) per il personale | | | | |
+| a) salari e stipendi | 171.970.620 | | | 171.970.620 |
+| b) oneri sociali | 9.036.687 | | - | 9.036.687 |
+| c) trattamento di fine rapporto | 964.381 | | 348.174 | 1.312.555 |
+| e) altri costi | 859.284 | | - | 859.284 |
+| 9) Totale costi per il personale | 182.830.973 | - | 348.174 | 183.179.146 |
+| 10) ammortamenti e svalutazioni | | | | |
+| a) ammortamenti immobilizzazioni immateriali | 82.136.890 | | (4.179.275) | 77.957.614 |
+| b) ammortamenti immobilizzazioni materiali | 3.243.611 | | - | 3.243.611 |
+| c) altre svalutazioni delle immobilizzazioni | - | 8.960.811 | - | 8.960.811 |
+| d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 4.896.806 | | - | 4.896.806 |
+| 10) Totale costi per ammortamenti e svalutazioni | 90.277.306 | 8.960.811 | (4.179.275) | 95.058.842 |
+| 12) accantonamenti per rischi | - | | - | - |
+| 14) oneri diversi di gestione | | | | |
+| a) costi per acquisizione temporanea prestazioni calciatori | 2.483.391 | | - | 2.483.391 |
+| b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.184.840 | (8.960.811) | - | 1.224.029 |
+| c) altri oneri da trasferimento diritti calciatori | 13.621.364 | | - | 13.621.364 |
+| d) altri oneri diversi di gestione | 21.707.125 | | - | 21.707.125 |
+| 14) Totale oneri diversi di gestione | 47.996.719 | (8.960.811) | - | 39.035.908 |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | 401.432.201 | - | 1.017.169 | 402.449.369 |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | (195.011.391) | - | (1.017.169) | (196.028.560) |
+| **C PROVENTI E ONERI FINANZIARI** | | | | |
+| 16) altri proventi finanziari | 2.670.656 | - | (8.083) | 2.662.574 |
+| 17) interessi ed altri oneri finanziari | (26.580.841) | - | 1.215.171 | (25.365.671) |
+| e) altri interessi e oneri finanziari | (26.580.841) | | 1.215.171 | (25.365.671) |
+| 17 bis) utile e perdite su cambi | (30.699) | - | - | (30.699) |
+| **TOTALE PROVENTI ED ONERI FINANZIARI (C ) (15+16-17 ± 17 bis )** | (23.940.885) | - | 1.207.088 | (22.733.797) |
+| **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | (218.952.276) | - | 189.919 | (218.762.356) |
+| 20) Imposte sul reddito dell'esercizio | (507.013) | - | 0 | (507.013) |
+| a) imposte correnti | (2.785.826) | | - | (2.785.826) |
+| e) proventi (oneri) da adesione al regime di consolidato fiscale/trasparenza fiscale | 2.278.813 | | - | 2.278.813 |
+| - | | | | |
+| **21) UTILE (PERDITA) DELL'ESERCIZIO** | (219.459.289) | - | 189.919 | (219.269.369) |
+| Utile (perdita) di terzi | (168.638) | | | (168.638) |
+| **Risultato di pertinenza del gruppo** | (219.290.651) | - | 189.919 | (219.100.731) |
+
 --- pág. 39 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-Riconciliazione dello Stato Patrimoniale di apertura
-
-|  STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  B. IMMOBILIZZAZIONI  |   |   |   |   |
-|  I. Immobilizzazioni immateriali |  |  |  |   |
-|  4) concessioni, licenze, marchi e diritti simili | 132.245 | - | - | 132.245  |
-|  6) immobilizzazioni in corso e accordi | 11.955 | - | - | 11.955  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 188.207.051 | - | - | 188.207.051  |
-|  8) altre | 43.791.582 | - | (22.294.926) | 18.498.655  |
-|  TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI | 229.142.832 | - | (22.294.926) | 206.847.906  |
-|  II. Immobilizzazioni materiali |  |  |  |   |
-|  1) terreni e fabbricati | 6.054.371 | - | - | 6.054.371  |
-|  2) impianti e macchinari | 534.594 | - | - | 534.594  |
-|  3) attrezzature industriali e commerciali | 319.170 | - | - | 319.170  |
-|  4) altri beni | 1.640.747 | - | - | 1.640.747  |
-|  5) immobilizzazioni in corso e accordi | 3.805.343 | - | - | 3.805.343  |
-|  TOTALE (II) - IMMOBILIZZAZIONI MATERIALI | 12.354.225 | - | - | 12.354.225  |
-|  III. Immobilizzazioni finanziarie |  |  |  |   |
-|  2) crediti: |  |  |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 2.700.000 | - | - | 2.700.000  |
-|  d-bis) verso altri |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 10.527.368 | - | - | 10.527.368  |
-|  TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE | 13.227.368 | - | - | 13.227.368  |
-|  TOTALE IMMOBILIZZAZIONI (B) (I+II+III) | 254.724.425 | - | (22.294.926) | 232.429.499  |
-|  C. ATTIVO CIRCOLANTE  |   |   |   |   |
-|  I. Rimanenze |  |  |  |   |
-|  4) prodotti finiti e merci | 1.004.214 | - | - | 1.004.214  |
-|  TOTALE (I) - RIMANENZE | 1.004.214 | - | - | 1.004.214  |
-|  II. Crediti |  |  |  |   |
-|  1) verso clienti |  |  |  |   |
-|  - entro 12 mesi | 17.811.035 | - | 90.000 | 17.901.035  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  3) verso imprese collegate |  |  |  |   |
-|  4) verso imprese controllanti |  |  |  |   |
-|  - entro 12 mesi | 5.343.747 | - | - | 5.343.747  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | 193.266 | - | - | 193.266  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5-bis) crediti tributari |  |  |  |   |
-|  - entro 12 mesi | 1.344.028 | - | - | 1.344.028  |
-|  - oltre 12 mesi | 35.008 | - | - | 35.008  |
-|  5-quater) verso altri |  |  |  |   |
-|  - entro 12 mesi | 1.041.368 | - | - | 1.041.368  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  6) crediti verso enti-settore specifico |  |  |  |   |
-|  - entro 12 mesi | 51.854.517 | - | - | 51.854.517  |
-|  - oltre 12 mesi | 11.991.462 | - | - | 11.991.462  |
-|  TOTALE (II) - CREDITI | 89.614.419 | - | 90.000 | 89.704.419  |
-|  IV. Disponibilità liquide |  |  |  |   |
-|  1) depositi bancari e postali | 22.811.509 | - | - | 22.811.509  |
-|  2) danaro e valori in causa | 12.922 | - | - | 12.922  |
-|  TOTALE (IV) - DISPONIBILITA' LIQUIDE | 22.824.431 | - | - | 22.824.431  |
-|  TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV) | 113.443.064 | - | 90.000 | 113.533.064  |
-|  D. RATEI E RISCONTI ATTIVI  |   |   |   |   |
-|  - risconti attivi |  |  |  |   |
-|  - entro 12 mesi | 7.131.180 | - | - | 7.131.180  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  TOTALE RATEI E RISCONTI (D) | 7.131.180 | - | - | 7.131.180  |
-|  TOTALE ATTIVO (A+B+C+D) | 375.298.669 | - | (22.294.926) | 353.093.742  |
 
 39
 
+Riconciliazione dello Stato Patrimoniale di apertura
+
+| STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **B. IMMOBILIZZAZIONI** | | | | |
+| I. Immobilizzazioni immateriali | | | | |
+| 4) concessioni, licenze, marchi e diritti simili | 132.245 | | - | 132.245 |
+| 6) immobilizzazioni in corso e acconti | 11.955 | | - | 11.955 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 188.207.051 | | - | 188.207.051 |
+| 8) altre | 40.791.582 | | (22.294.926) | 18.496.655 |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | 229.142.832 | - | (22.294.926) | 206.847.906 |
+| II. Immobilizzazioni materiali | | | | |
+| 1) terreni e fabbricati | 6.054.371 | | - | 6.054.371 |
+| 2) impianti e macchinario | 534.594 | | - | 534.594 |
+| 3) attrezzature industriali e commerciali | 319.170 | | - | 319.170 |
+| 4) altri beni | 1.640.747 | | - | 1.640.747 |
+| 5) immobilizzazioni in corso e acconti | 3.805.343 | | - | 3.805.343 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | 12.354.225 | - | - | 12.354.225 |
+| III. Immobilizzazioni finanziarie | | | | |
+| 2) crediti: | | | - | |
+| d) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 2.700.000 | | - | 2.700.000 |
+| d-bis) verso altri | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 10.527.368 | | - | 10.527.368 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | 13.227.368 | - | - | 13.227.368 |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | 254.724.425 | - | (22.294.926) | 232.429.499 |
+| **C. ATTIVO CIRCOLANTE** | | | | |
+| I. Rimanenze | | | | |
+| 4) prodotti finiti e merci | 1.004.214 | | - | 1.004.214 |
+| **TOTALE (I) - RIMANENZE** | 1.004.214 | - | - | 1.004.214 |
+| II. Crediti | | | | |
+| 1) verso clienti | | | | |
+| - entro 12 mesi | 17.811.035 | - | 90.000 | 17.901.035 |
+| - oltre 12 mesi | - | | - | - |
+| 3) verso imprese collegate | | | - | |
+| 4) verso imprese controllanti | | | - | |
+| - entro 12 mesi | 5.343.747 | | - | 5.343.747 |
+| - oltre 12 mesi | - | | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | 193.266 | | - | 193.266 |
+| - oltre 12 mesi | - | | - | - |
+| 5-bis) crediti tributari | | | - | |
+| - entro 12 mesi | 1.344.028 | | - | 1.344.028 |
+| - oltre 12 mesi | 35.008 | | - | 35.008 |
+| 5-quater) verso altri | | | - | |
+| - entro 12 mesi | 1.041.368 | - | - | 1.041.368 |
+| - oltre 12 mesi | - | | - | - |
+| 6) crediti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 51.854.517 | | - | 51.854.517 |
+| - oltre 12 mesi | 11.991.462 | | - | 11.991.462 |
+| **TOTALE (II) - CREDITI** | 89.614.419 | - | 90.000 | 89.704.419 |
+| IV. Disponibilità liquide | | | | |
+| 1) depositi bancari e postali | 22.811.509 | | - | 22.811.509 |
+| 3) danaro e valori in cassa | 12.922 | | - | 12.922 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | 22.824.431 | - | - | 22.824.431 |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | 113.443.064 | - | 90.000 | 113.533.064 |
+| **D. RATEI E RISCONTI ATTIVI** | | | | |
+| - risconti attivi | | | - | |
+| - entro 12 mesi | 7.131.180 | | - | 7.131.180 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | 7.131.180 | - | - | 7.131.180 |
+| **TOTALE ATTIVO (A+B+C+D)** | 375.298.669 | - | (22.204.926) | 353.093.742 |
+
 --- pág. 40 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  **A. PATRIMONIO NETTO** |  |  |  |   |
-|  I. Capitale | 93.942.205 | - | - | 93.942.205  |
-|  VI. Altre risorse |  |  |  |   |
-|  - Riserva perdite attuariali | (861.066) | - | 861.066 | -  |
-|  - Riserva copertura perdite infrancuali | 3.394.305 | - | - | 3.394.305  |
-|  - Riserva adomiti c/aumento di capitale | 243.679.254 | - | - | 243.679.254  |
-|  - Effetti fiscali da Conferimento | - | - | - | -  |
-|  - Riserva di trasformazione | - | - | - | -  |
-|  - Riserva FTA transizione OIC | - | - | 3.988.719 | 3.988.719  |
-|  - Altre risorse | - | - | - | -  |
-|  VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | - | - | -  |
-|  VIII. LIIB (perdita) portati a nuovo | (612.123.532) | - | - | (612.123.532)  |
-|  IX. LIIB (perdita) di periodo | - | - | - | -  |
-|  **Totale Patrimonio Netto del Gruppo AS Roma** | **(271.968.835)** | **-** | **4.849.785** | **(267.119.049)**  |
-|  XI.1 Capitale a risorse di terzi | (1.019.507) | - | - | (1.019.507)  |
-|  XI.2 LIIB (perdita) dell'esercizio di pertinenza di terzi | (255.782) | - | - | (255.782)  |
-|  **Totale Patrimonio dei Terzi** | **(1.275.289)** | **-** | **-** | **(1.275.289)**  |
-|  **TOTALE PATRIMONIO NETTO (E)** | **(273.244.124)** | **-** | **4.849.785** | **(266.394.338)**  |
-|  **B. FONDI PER RISCHI E ONERI** |  |  |  |   |
-|  2) per imposte, anche differite | (1) | - | 1 | 0  |
-|  4) altri | 8.816.607 | - | (1) | 8.816.606  |
-|  **TOTALE FONDI PER RISCHI E ONERI (F)** | **8.816.606** | **-** | **-** | **8.816.606**  |
-|  **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | **4.372.253** | **-** | **(608.227)** | **3.764.026**  |
-|  **D. DEBITI** |  |  |  |   |
-|  1) obbligazioni |  |  |  |   |
-|  - entro 12 mesi | 6.100.000 | - | - | 6.100.000  |
-|  - oltre 12 mesi | 254.783.090 | - | - | 254.783.090  |
-|  3) debiti verso soci per finanziamenti |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 30.734.616 | - | - | 30.734.616  |
-|  4) debiti verso banche |  |  |  |   |
-|  - entro 12 mesi | 10.137.617 | - | - | 10.137.617  |
-|  - oltre 12 mesi | 5.957.499 | - | - | 5.957.499  |
-|  5) debiti verso altri finanziatori |  |  |  |   |
-|  - entro 12 mesi | 6.729.842 | - | (5.512.934) | 216.908  |
-|  - oltre 12 mesi | 20.423.420 | - | (19.933.550) | 489.870  |
-|  7) debiti verso fornitori |  |  |  |   |
-|  - entro 12 mesi | 50.301.132 | - | - | 50.301.132  |
-|  - oltre 12 mesi | 5.970.395 | - | - | 5.970.395  |
-|  11) debiti verso imprese controllanti |  |  |  |   |
-|  - entro 12 mesi | 3.898.915 | - | - | 3.898.915  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  11-bis) debiti verso imprese sotto il controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | 1.635.849 | - | - | 1.635.849  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  12) debiti tributari |  |  |  |   |
-|  - entro 12 mesi | 22.230.245 | - | - | 22.230.245  |
-|  - oltre 12 mesi | 10.836.315 | - | - | 10.836.315  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale |  |  |  |   |
-|  - entro 12 mesi | 3.582.805 | - | - | 3.582.805  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  14) altri debiti |  |  |  |   |
-|  - entro 12 mesi | 44.220.950 | - | - | 44.220.950  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  15) debiti verso enti-settore specifico |  |  |  |   |
-|  - entro 12 mesi | 91.695.511 | - | - | 91.695.511  |
-|  - oltre 12 mesi | 47.102.377 | - | - | 47.102.377  |
-|  **TOTALE DEBITI (H)** | **616.430.579** | **-** | **(26.446.484)** | **589.984.095**  |
-|  **E. RATEI E RISCONTI PASSIVI** |  |  |  |   |
-|  - risconti passivi |  |  |  |   |
-|  - entro 12 mesi | 10.098.111 | - | - | 10.098.111  |
-|  - oltre 12 mesi | 8.825.243 | - | - | 8.825.243  |
-|  **TOTALE RATEI E RISCONTI PASSIVI (I)** | **18.923.354** | **-** | **-** | **18.923.354**  |
-|  **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | **375.208.669** | **-** | **(22.204.926)** | **383.039.742**  |
 
 40
 
+| STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. PATRIMONIO NETTO** | | | | |
+| I. Capitale | 93.942.205 | | - | 93.942.205 |
+| VI. Altre riserve | | | - | |
+| - Riserva perdite attuariali | (861.066) | | 861.066 | - |
+| - Riserve copertura perdite infrannuali | 3.394.305 | | - | 3.394.305 |
+| - Riserva azionisti c/aumento di capitale | 243.679.254 | | - | 243.679.254 |
+| - Effetti Fiscali da Conferimento | - | | - | - |
+| - Riserva di trasformazione | - | | - | - |
+| - Riserva FTA transizione OIC | - | | 3.988.719 | 3.988.719 |
+| - Altre riserve | - | | - | - |
+| VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | | - | - |
+| VIII. Utili (perdite) portati a nuovo | (612.123.532) | | - | (612.123.532) |
+| IX. Utile (perdita) di periodo | | | - | |
+| **Totale Patrimonio Netto del Gruppo AS Roma** | (271.968.835) | - | 4.849.785 | (267.119.049) |
+| XI.1 Capitale e riserve di terzi | (1.019.507) | | - | (1.019.507) |
+| XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | (255.782) | | - | (255.782) |
+| **Totale Patrimonio dei Terzi** | (1.275.289) | - | - | (1.275.289) |
+| **TOTALE PATRIMONIO NETTO (E)** | (273.244.124) | - | 4.849.785 | (268.394.338) |
+| **B. FONDI PER RISCHI E ONERI** | | | | |
+| 2) per imposte, anche differite | (1) | | 1 | 0 |
+| 4) altri | 8.816.607 | | (1) | 8.816.606 |
+| **TOTALE FONDI PER RISCHI E ONERI (F)** | 8.816.606 | - | - | 8.816.606 |
+| **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | 4.372.253 | - | (608.227) | 3.764.026 |
+| **D. DEBITI** | | | | |
+| 1) obbligazioni | | | | |
+| - entro 12 mesi | 6.100.000 | | - | 6.100.000 |
+| - oltre 12 mesi | 254.783.090 | | - | 254.783.090 |
+| 3) debiti verso soci per finanziamenti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 30.734.616 | | - | 30.734.616 |
+| 4) debiti verso banche | | | - | |
+| - entro 12 mesi | 10.137.617 | | - | 10.137.617 |
+| - oltre 12 mesi | 5.957.499 | | - | 5.957.499 |
+| 5) debiti verso altri finanziatori | | | - | |
+| - entro 12 mesi | 6.729.842 | | (6.512.934) | 216.908 |
+| - oltre 12 mesi | 20.423.420 | | (19.933.550) | 489.870 |
+| 7) debiti verso fornitori | | | - | |
+| - entro 12 mesi | 50.301.132 | | - | 50.301.132 |
+| - oltre 12 mesi | 5.970.395 | | - | 5.970.395 |
+| 11) debiti verso imprese controllanti | | | - | |
+| - entro 12 mesi | 3.898.915 | | - | 3.898.915 |
+| - oltre 12 mesi | - | | - | - |
+| 11-bis) debiti verso imprese sotto il controllo delle controllanti | | | - | |
+| - entro 12 mesi | 1.635.849 | | - | 1.635.849 |
+| - oltre 12 mesi | - | | - | - |
+| 12) debiti tributari | | | - | |
+| - entro 12 mesi | 22.230.245 | | - | 22.230.245 |
+| - oltre 12 mesi | 10.836.315 | | - | 10.836.315 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | | - | |
+| - entro 12 mesi | 3.582.805 | | - | 3.582.805 |
+| - oltre 12 mesi | - | | - | - |
+| 14) altri debiti | | | - | |
+| - entro 12 mesi | 44.220.950 | | - | 44.220.950 |
+| - oltre 12 mesi | - | | - | - |
+| 15) debiti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 91.695.511 | | - | 91.695.511 |
+| - oltre 12 mesi | 47.192.377 | | - | 47.192.377 |
+| **TOTALE DEBITI (H)** | 616.430.579 | - | (26.446.484) | 589.984.095 |
+| **E. RATEI E RISCONTI PASSIVI** | | | | |
+| - risconti passivi | | | - | |
+| - entro 12 mesi | 10.098.111 | | - | 10.098.111 |
+| - oltre 12 mesi | 8.825.243 | | - | 8.825.243 |
+| **TOTALE RATEI E RISCONTI PASSIVI (I)** | 18.923.354 | - | - | 18.923.354 |
+| **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | 375.298.669 | - | (22.204.926) | 353.093.742 |
+
 --- pág. 41 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  **B. IMMOBILIZZAZIONI** |  |  |  |   |
-|  I. Immobilizzazioni immateriali |  |  |  |   |
-|  4) concessioni, licenze, marchi e diritti simili | 56.480 | - | - | 56.480  |
-|  6) immobilizzazioni in corso e acconti | 84.324 | - | - | 84.324  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 165.471.512 | 1.890.070 | (0) | 167.361.582  |
-|  8) altre | 34.338.298 | - | (16.821.063) | 17.517.225  |
-|  **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **199.930.604** | **1.890.070** | **(16.821.063)** | **184.999.611**  |
-|  II. Immobilizzazioni materiali |  |  |  |   |
-|  1) terreni e fabbricati | 7.442.910 | - | - | 7.442.910  |
-|  2) impianti e macchinari | 604.307 | - | - | 604.307  |
-|  3) attrezzature industriali e commerciali | 641.086 | - | - | 641.086  |
-|  4) altri beni | 2.054.712 | - | - | 2.054.712  |
-|  5) immobilizzazioni in corso e acconti | 1.795.722 | - | - | 1.795.722  |
-|  **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **12.539.247** | **-** | **-** | **12.539.247**  |
-|  III. Immobilizzazioni finanziarie |  |  |  |   |
-|  **2) crediti:** |  |  |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 2.700.000 | - | - | 2.700.000  |
-|  d-bis) verso altri |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 10.702.228 | - | - | 10.702.228  |
-|  **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **13.402.228** | **-** | **-** | **13.402.228**  |
-|  **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **225.872.079** | **1.890.070** | **(16.821.063)** | **210.941.086**  |
-|  **C. ATTIVO CIRCOLANTE** |  |  |  |   |
-|  I. Rimanenze |  |  |  |   |
-|  4) prodotti finiti e merci | 1.548.189 | - | - | 1.548.189  |
-|  **TOTALE (I) - RIMANENZE** | **1.548.189** | **-** | **-** | **1.548.189**  |
-|  II. Crediti |  |  |  |   |
-|  1) verso clienti |  |  |  |   |
-|  - entro 12 mesi | 15.309.929 | - | 1.340.000 | 16.649.929  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  2) verso imprese collegate |  |  |  |   |
-|  4) verso imprese controllanti |  |  |  |   |
-|  - entro 12 mesi | 7.470.815 | - | - | 7.470.815  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | 199.758 | - | - | 199.758  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5-bis) crediti tributari |  |  |  |   |
-|  - entro 12 mesi | 629.689 | - | - | 629.689  |
-|  - oltre 12 mesi | 35.008 | - | - | 35.008  |
-|  5-quater) verso altri |  |  |  |   |
-|  - entro 12 mesi | 24.164.108 | (1.890.070) | (1.878.191) | 20.395.847  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  6) crediti verso enti-settore specifica |  |  |  |   |
-|  - entro 12 mesi | 55.718.671 | - | (1.250.000) | 54.468.671  |
-|  - oltre 12 mesi | 5.365.161 | - | - | 5.365.161  |
-|  **TOTALE (II) - CREDITI** | **108.893.139** | **(1.890.070)** | **(1.788.191)** | **105.214.878**  |
-|  IV. Disponibilità liquide |  |  |  |   |
-|  1) depositi bancari e postali | 22.797.052 | - | - | 22.797.052  |
-|  3) donare e valori in cassa | 23.703 | - | - | 23.703  |
-|  **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | **22.820.756** | **-** | **-** | **22.820.756**  |
-|  **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **133.262.083** | **(1.890.070)** | **(1.788.191)** | **129.583.823**  |
-|  **D. RATEI E RISCONTI ATTIVI** |  |  |  |   |
-|  - risconti attivi |  |  |  |   |
-|  - entro 12 mesi | 4.091.024 | - | - | 4.091.024  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  **TOTALE RATEI E RISCONTI (D)** | **4.091.024** | **-** | **-** | **4.091.024**  |
-|  **TOTALE ATTIVO (A+B+C+D)** | **363.225.186** | **-** | **(18.609.254)** | **344.615.532**  |
 
 41
 
+| STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **B. IMMOBILIZZAZIONI** | | | | |
+| I. Immobilizzazioni immateriali | | | | |
+| 4) concessioni, licenze, marchi e diritti simili | 56.480 | | - | 56.480 |
+| 6) immobilizzazioni in corso e acconti | 64.324 | | - | 64.324 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 165.471.512 | 1.890.070 | (0) | 167.361.582 |
+| 8) altre | 34.338.288 | | (16.821.063) | 17.517.225 |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | 199.930.604 | 1.890.070 | (16.821.063) | 184.999.611 |
+| II. Immobilizzazioni materiali | | | | |
+| 1) terreni e fabbricati | 7.442.910 | | - | 7.442.910 |
+| 2) impianti e macchinario | 604.307 | | - | 604.307 |
+| 3) attrezzature industriali e commerciali | 641.596 | | - | 641.596 |
+| 4) altri beni | 2.054.712 | | - | 2.054.712 |
+| 5) immobilizzazioni in corso e acconti | 1.795.722 | | - | 1.795.722 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | 12.539.247 | - | - | 12.539.247 |
+| III. Immobilizzazioni finanziarie | | | | |
+| 2) crediti: | | | - | |
+| d) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 2.700.000 | | - | 2.700.000 |
+| d-bis) verso altri | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 10.702.228 | | - | 10.702.228 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | 13.402.228 | - | - | 13.402.228 |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | 225.872.079 | 1.890.070 | (16.821.063) | 210.941.086 |
+| **C. ATTIVO CIRCOLANTE** | | | | |
+| I. Rimanenze | | | | |
+| 4) prodotti finiti e merci | 1.548.189 | | - | 1.548.189 |
+| **TOTALE (I) - RIMANENZE** | 1.548.189 | - | - | 1.548.189 |
+| II. Crediti | | | | |
+| 1) verso clienti | | | | |
+| - entro 12 mesi | 15.309.929 | - | 1.340.000 | 16.649.929 |
+| - oltre 12 mesi | - | | - | - |
+| 3) verso imprese collegate | | | - | |
+| 4) verso imprese controllanti | | | - | |
+| - entro 12 mesi | 7.470.815 | | - | 7.470.815 |
+| - oltre 12 mesi | - | | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | 199.758 | | - | 199.758 |
+| - oltre 12 mesi | - | | - | - |
+| 5-bis) crediti tributari | | | - | |
+| - entro 12 mesi | 629.689 | | - | 629.689 |
+| - oltre 12 mesi | 35.008 | | - | 35.008 |
+| 5-quater) verso altri | | | - | |
+| - entro 12 mesi | 24.164.108 | (1.890.070) | (1.878.191) | 20.395.847 |
+| - oltre 12 mesi | - | | - | - |
+| 6) crediti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 55.718.671 | | (1.250.000) | 54.468.671 |
+| - oltre 12 mesi | 5.365.161 | | - | 5.365.161 |
+| **TOTALE (II) - CREDITI** | 108.893.139 | (1.890.070) | (1.788.191) | 105.214.878 |
+| IV. Disponibilità liquide | | | | |
+| 1) depositi bancari e postali | 22.797.052 | | - | 22.797.052 |
+| 3) danaro e valori in cassa | 23.703 | | - | 23.703 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | 22.820.756 | - | - | 22.820.756 |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | 133.262.083 | (1.890.070) | (1.788.191) | 129.583.823 |
+| **D. RATEI E RISCONTI ATTIVI** | | | | |
+| - risconti attivi | | | - | |
+| - entro 12 mesi | 4.091.024 | | - | 4.091.024 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | 4.091.024 | - | - | 4.091.024 |
+| **TOTALE ATTIVO (A+B+C+D)** | 363.225.186 | - | (18.609.254) | 344.615.932 |
+
 --- pág. 42 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-|  STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  A. PATRIMONIO NETTO |  |  |  |   |
-|  I. Capitale | 93.942.205 |  | - | 93.942.205  |
-|  VI. Altre riserve |  |  |  |   |
-|  - Riserva perdite attuariali | (195.955) |  | 195.955 | -  |
-|  - Riserva copertura perdite infrannuali | 3.394.305 |  | - | 3.394.305  |
-|  - Riserva azionisti c/aurimento di capitale | 395.351.664 |  | - | 395.351.664  |
-|  - Effetti Fiscali da Conferimento | - |  | - | -  |
-|  - Riserva di trasformazione | - |  | - | -  |
-|  - Riserva FTA transizione OIC | - |  | 3.088.719 | 3.088.719  |
-|  - Altre riserve | - |  | - | -  |
-|  VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - |  | - | -  |
-|  VIII. Utile (perdite) portati a nuovi | (613.123.522) |  | - | (613.123.522)  |
-|  IX. Utile (perdite) di periodo | (219.200.651) |  | 189.019 | (219.100.731)  |
-|  Totale Patrimonio Netto del Gruppo AS Roma | (338.521.954) | - | 4.374.594 | (334.547.381)  |
-|  X.1 Capitale a riserve di terzi | (1.275.288) |  | - | (1.275.288)  |
-|  X.2 Utile (perdite) dell'esercizio di pertinenza di terzi | (168.638) |  | - | (168.638)  |
-|  Totale Patrimonio dei Terzi | (1.443.927) | - | - | (1.443.927)  |
-|  TOTALE PATRIMONIO NETTO (E) | (340.365.881) | - | 4.374.594 | (335.991.288)  |
-|  B. FONDI PER RISCHI E ONERI |  |  |  |   |
-|  2) per imposte, anche differite | (1) |  | 1 | 0  |
-|  4) altri | 29.543.124 |  | (1) | 29.543.123  |
-|  TOTALE FONDI PER RISCHI E ONERI (F) | 29.543.123 | - | (0) | 29.543.123  |
-|  C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO | 3.957.568 | - | 367.519 | 4.325.087  |
-|  D. DEBITI |  |  |  |   |
-|  1) obbligazioni |  |  |  |   |
-|  - entro 12 mesi | 6.300.000 |  | - | 6.300.000  |
-|  - oltre 12 mesi | 251.071.424 | - | 51.367 | 251.122.790  |
-|  3) debiti verso soci per finanziamenti |  |  | - | -  |
-|  - entro 12 mesi | - |  | - | -  |
-|  - oltre 12 mesi | 85.075.759 |  | - | 85.075.759  |
-|  4) debiti verso banche |  |  | - | -  |
-|  - entro 12 mesi | 7.160.444 |  | 164.286 | 7.324.730  |
-|  - oltre 12 mesi | 5.640.598 |  | (51.367) | 5.589.231  |
-|  5) debiti verso altri finanziatori |  |  | - | -  |
-|  - entro 12 mesi | 7.071.681 |  | (6.948.465) | 123.216  |
-|  - oltre 12 mesi | 16.839.789 |  | (16.462.838) | 376.951  |
-|  7) debiti verso fornitori |  |  | - | -  |
-|  - entro 12 mesi | 47.067.722 |  | (2.911.350) | 44.156.372  |
-|  - oltre 12 mesi | 5.422.710 |  | - | 5.422.710  |
-|  11) debiti verso imprese controllanti |  |  | - | -  |
-|  - entro 12 mesi | 2.314.591 |  | - | 2.314.591  |
-|  - oltre 12 mesi | - |  | - | -  |
-|  11-bis) debiti verso imprese sotto il controllo delle controllanti |  |  | - | -  |
-|  - entro 12 mesi | 9.347 | - | 2.808.000 | 2.817.347  |
-|  - oltre 12 mesi | - |  | - | -  |
-|  12) debiti tributari |  |  | - | -  |
-|  - entro 12 mesi | 49.385.693 |  | - | 49.385.693  |
-|  - oltre 12 mesi | 982.705 |  | - | 982.705  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale |  |  | - | -  |
-|  - entro 12 mesi | 7.213.268 |  | - | 7.213.268  |
-|  - oltre 12 mesi | - |  | - | -  |
-|  14) altri debiti |  |  | - | -  |
-|  - entro 12 mesi | 27.798.563 |  | - | 27.798.563  |
-|  - oltre 12 mesi | - |  | - | -  |
-|  15) debiti verso enti-settore specifica |  |  | - | -  |
-|  - entro 12 mesi | 67.301.809 |  | - | 67.301.809  |
-|  - oltre 12 mesi | 61.764.394 |  | - | 61.764.394  |
-|  TOTALE DEBITI (H) | 648.420.498 | - | (23.351.366) | 625.069.132  |
-|  E. RATEI E RISCONTI PASSIVI |  |  |  |   |
-|  - risconti passivi |  |  | - | -  |
-|  - entro 12 mesi | 12.932.811 |  | - | 12.932.811  |
-|  - oltre 12 mesi | 8.737.066 |  | - | 8.737.066  |
-|  TOTALE RATEI E RISCONTI PASSIVI (I) | 21.669.878 | - | - | 21.669.878  |
-|  TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E) | 383.225.186 | - | (18.609.284) | 344.815.932  |
+42
 
 Riconciliazione del rendiconto finanziario comparativo
 
-|  ESERCIZIO CHIUSO AL 30 GIUGNO 2022 | Principi IAS/IFRS | Effetto Transizione OIC | Principi contabili italiani  |
-| --- | --- | --- | --- |
-|  Flusso finanziario dell'attività operativa (A) | (100.823.817) | (20.904.173) | (121.727.989)  |
-|  Flusso finanziario dell'attività di investimento (B) | (76.468.908) | 2.580.111 | (73.888.797)  |
-|  Flusso finanziario dell'attività di finanziamento (C) | 177.289.050 | 18.324.061 | 195.613.111  |
-|  Incremento (decremento) delle disponibilità liquide (A ± B ± C) | (3.676) | (0) | (3.676)  |
-|  Disponibilità liquide all'inizio dell'esercizio | 22.824.431 | - | 22.824.431  |
-|  Disponibilità liquide alla fine dell'esercizio | 22.820.756 | - | 22.820.756  |
+| STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. PATRIMONIO NETTO** | | | | |
+| I. Capitale | 93.942.205 | | - | 93.942.205 |
+| VI. Altre riserve | | | | |
+| - Riserva perdite attuariali | (195.955) | | 195.955 | - |
+| - Riserve copertura perdite infrannuali | 3.394.305 | | - | 3.394.305 |
+| - Riserva azionisti c/aumento di capitale | 395.351.664 | | - | 395.351.664 |
+| - Effetti Fiscali da Conferimento | - | | - | - |
+| - Riserva di trasformazione | - | | - | - |
+| - Riserva FTA transizione OIC | - | | 3.988.719 | 3.988.719 |
+| - Altre riserve | - | | - | - |
+| VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | | - | - |
+| VIII. Utili (perdite) portati a nuovo | (612.123.522) | | - | (612.123.522) |
+| IX. Utile (perdita) di periodo | (219.290.651) | | 189.919 | (219.100.731) |
+| **Totale Patrimonio Netto del Gruppo AS Roma** | (338.921.954) | - | 4.374.594 | (334.547.361) |
+| XI.1 Capitale e riserve di terzi | (1.275.289) | | - | (1.275.289) |
+| XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | (168.638) | | - | (168.638) |
+| **Totale Patrimonio dei Terzi** | (1.443.927) | - | - | (1.443.927) |
+| **TOTALE PATRIMONIO NETTO (E)** | (340.365.881) | - | 4.374.594 | (335.991.288) |
+| **B. FONDI PER RISCHI E ONERI** | | | | |
+| 2) per imposte, anche differite | (1) | | 1 | 0 |
+| 4) altri | 29.543.124 | | (1) | 29.543.123 |
+| **TOTALE FONDI PER RISCHI E ONERI (F)** | 29.543.123 | - | (0) | 29.543.123 |
+| **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | 3.957.568 | - | 367.519 | 4.325.087 |
+| **D. DEBITI** | | | | |
+| 1) obbligazioni | | | | |
+| - entro 12 mesi | 6.300.000 | | - | 6.300.000 |
+| - oltre 12 mesi | 251.071.424 | - | 51.367 | 251.122.790 |
+| 3) debiti verso soci per finanziamenti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 85.075.759 | | - | 85.075.759 |
+| 4) debiti verso banche | | | - | |
+| - entro 12 mesi | 7.160.444 | | 164.286 | 7.324.730 |
+| - oltre 12 mesi | 5.640.598 | | (51.367) | 5.589.231 |
+| 5) debiti verso altri finanziatori | | | - | |
+| - entro 12 mesi | 7.071.681 | | (6.949.465) | 122.216 |
+| - oltre 12 mesi | 16.839.789 | | (16.462.838) | 376.951 |
+| 7) debiti verso fornitori | | | - | |
+| - entro 12 mesi | 47.067.722 | | (2.911.350) | 44.156.372 |
+| - oltre 12 mesi | 5.422.710 | | - | 5.422.710 |
+| 11) debiti verso imprese controllanti | | | - | |
+| - entro 12 mesi | 2.314.591 | | - | 2.314.591 |
+| - oltre 12 mesi | - | | - | - |
+| 11-bis) debiti verso imprese sotto il controllo delle controllanti | | | - | |
+| - entro 12 mesi | 9.347 | - | 2.808.000 | 2.817.347 |
+| - oltre 12 mesi | - | | - | - |
+| 12) debiti tributari | | | - | |
+| - entro 12 mesi | 49.385.693 | | - | 49.385.693 |
+| - oltre 12 mesi | 982.705 | | - | 982.705 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | | - | |
+| - entro 12 mesi | 7.213.268 | | - | 7.213.268 |
+| - oltre 12 mesi | - | | - | - |
+| 14) altri debiti | | | - | |
+| - entro 12 mesi | 27.798.563 | | - | 27.798.563 |
+| - oltre 12 mesi | - | | - | - |
+| 15) debiti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 67.301.809 | | - | 67.301.809 |
+| - oltre 12 mesi | 61.764.394 | | - | 61.764.394 |
+| **TOTALE DEBITI (H)** | 648.420.498 | - | (23.351.366) | 625.069.132 |
+| **E. RATEI E RISCONTI PASSIVI** | | | | |
+| - risconti passivi | | | - | |
+| - entro 12 mesi | 12.932.811 | | - | 12.932.811 |
+| - oltre 12 mesi | 8.737.066 | | - | 8.737.066 |
+| **TOTALE RATEI E RISCONTI PASSIVI (I)** | 21.669.878 | - | - | 21.669.878 |
+| **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | 363.225.186 | - | (18.609.254) | 344.615.932 |
 
-42
+Riconciliazione del rendiconto finanziario comparativo
+
+| ESERCIZIO CHIUSO AL 30 GIUGNO 2022 | Principi IAS/IFRS | Effetto Transizione OIC | Principi contabili italiani |
+|---|---|---|---|
+| Flusso finanziario dell'attività operativa (A) | (100.823.817) | (20.904.173) | (121.727.989) |
+| Flusso finanziario dell'attività di investimento (B) | (76.468.908) | 2.580.111 | (73.888.797) |
+| Flusso finanziario dell'attività di finanziamento (C) | 177.289.050 | 18.324.061 | 195.613.111 |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | (3.676) | (0) | (3.676) |
+| **Disponibilità liquide all'inizio dell'esercizio** | 22.824.431 | - | 22.824.431 |
+| **Disponibilità liquide alla fine dell'esercizio** | 22.820.756 | - | 22.820.756 |
 
 --- pág. 43 ---
 
@@ -2114,56 +2103,57 @@ Pari complessivamente a 2.535 migliaia di euro al 30 giugno 2023 (4.091 migliaia
 
 --- pág. 49 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-|  Risconti attivi | 30/06/2023 | 30/06/2022 | Variazioni  |
-| --- | --- | --- | --- |
-|  Consulenze/servizi professionali | 1.026 | 1.936 | (910)  |
-|  Premi assicurativi e fidejussioni | 1.085 | 919 | 166  |
-|  Altri | 423 | 1.236 | (813)  |
-|  **TOTALE** | **2.535** | **4.091** | **(1.556)**  |
+49
 
-## 8.4. PATRIMONIO NETTO
+| Risconti attivi | 30/06/2023 | 30/06/2022 | Variazioni |
+|---|---|---|---|
+| Consulenze/servizi professionali | 1.026 | 1.936 | (910) |
+| Premi assicurativi e fidejussioni | 1.085 | 919 | 166 |
+| Altri | 423 | 1.236 | (813) |
+| TOTALE | 2.535 | 4.091 | (1.556) |
+
+8.4. PATRIMONIO NETTO
 
 Il Patrimonio netto consolidato del Gruppo è negativo per 436.439 migliaia di euro (negativo per 335.991 migliaia di euro al 30 giugno 2022), in peggioramento di 100.448 migliaia di euro nei dodici mesi per effetto dalla perdita del periodo, pari a 102.747 migliaia di euro, compensata dagli effetti contabili dell'acquisto da Brand Management, da parte di AS Roma, della partecipazione nella controllata Soccer.
 
-|  Patrimonio netto consolidato | 30/06/2023 | 30/06/2022 | Variazioni  |
-| --- | --- | --- | --- |
-|  Capitale | 93.942 | 93.942 | -  |
-|  Altre riserve: |  |  |   |
-|  Riserve copertura perdite infrannuali | 3.394 | 3.394 | -  |
-|  Riserva FTA | 3.989 | 3.989 | -  |
-|  Riserva azionisti c/aumento di capitale | 395.352 | 395.352 | -  |
-|  **Sub-totale Altre riserve** | **402.735** | **402.735** | **-**  |
-|  Utili (perdite) portati a nuovo | (830.369) | (612.124) | (218.245)  |
-|  Utile (perdita) periodo | (102.747) | (219.101) | 116.353  |
-|  **TOTALE Patrimonio netto del Gruppo** | **(436.439)** | **(334.547)** | **(101.892)**  |
-|  Patrimonio netto di terzi | - | (1.444) | 1.444  |
-|  **TOTALE PATRIMONIO NETTO** | **(436.439)** | **(335.991)** | **(100.448)**  |
+| Patrimonio netto consolidato | 30/06/2023 | 30/06/2022 | Variazioni |
+|---|---|---|---|
+| Capitale | 93.942 | 93.942 | - |
+| Altre riserve: | | | |
+| Riserve copertura perdite infrannuali | 3.394 | 3.394 | - |
+| Riserva FTA | 3.989 | 3.989 | - |
+| Riserva azionisti c/aumento di capitale | 395.352 | 395.352 | - |
+| Sub-totale Altre riserve | 402.735 | 402.735 | - |
+| Utili (perdite) portati a nuovo | (830.369) | (612.124) | (218.245) |
+| Utile (perdita) periodo | (102.747) | (219.101) | 116.353 |
+| TOTALE Patrimonio netto del Gruppo | (436.439) | (334.547) | (101.892) |
+| Patrimonio netto di terzi | - | (1.444) | 1.444 |
+| TOTALE PATRIMONIO NETTO | (436.439) | (335.991) | (100.448) |
 
 Di seguito si riporta il prospetto della variazione del patrimonio netto:
 
-|   | Capitale sociale | Riserva perdite attuariali | Riserva FTA | Riserva azionisti c/aumento di capitale | Perdite partate a nuovo | Perdita d'esercizio | TOTALE DEL GRUPPO | Patrimonio netto di terzi | TOTALE  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Patrimonio netto al 1 Luglio 2021 | 93.942 | 3.394 | 3.989 | 243.678 | (426.808) | (185.317) | (267.159) | (1.033) | (268.139)  |
-|  Riporto a nuovo perdite e copertura perdita esercizio precedente |  |  |  |  | (185.317) | 185.317 | - | (256) | (256)  |
-|  Versamenti azionisti effettuati nel periodo |  |  |  | 151.672 |  |  | 151.672 |  | 151.672  |
-|  Perdita di esercizio al 30 giugno 2022 |  |  |  |  |  | (219.101) | (219.101) | (189) | (219.269)  |
-|  **Patrimonio netto al 30 Giugno 2022** | **93.942** | **3.394** | **3.989** | **395.352** | **(612.124)** | **(219.101)** | **(334.547)** | **(1.444)** | **(335.991)**  |
-|  Riporto a nuovo perdite e copertura perdita esercizio precedente |  |  |  |  | (219.101) | 219.101 | - | 1.444 | 1.444  |
-|  Transizione D/C |  |  |  |  | 856 |  | 856 |  | 856  |
-|  Perdita di esercizio al 30 giugno 2023 |  |  |  |  |  | (102.747) | (102.747) |  | (102.747)  |
-|  **Patrimonio netto al 30 Giugno 2023** | **93.942** | **3.394** | **3.989** | **395.352** | **(830.369)** | **(102.747)** | **(430.439)** | **-** | **(430.439)**  |
+| | Capitale sociale | Riserva perdite attuariali | Riserva FTA | Riserva azionisti c/aumento di capitale | Perdite portate a nuovo | Perdita d'esercizio | TOTALE DEL GRUPPO | Patrimonio netto di terzi | TOTALE |
+|---|---|---|---|---|---|---|---|---|---|
+| Patrimonio netto al 1 Luglio 2021 | 93.942 | 3.394 | 3.989 | 243.679 | (426.806) | (185.317) | (267.119) | (1.020) | (268.139) |
+| Riporto a nuovo perdita e copertura perdita esercizio precedente | | | | | (185.317) | 185.317 | - | (256) | (256) |
+| Versamenti azionisti effettuati nel periodo | | | | 151.672 | | | 151.672 | | 151.672 |
+| Perdita di esercizio al 30 giugno 2022 | | | | | | (219.101) | (219.101) | (169) | (219.269) |
+| Patrimonio netto al 30 Giugno 2022 | 93.942 | 3.394 | 3.989 | 395.352 | (612.124) | (219.101) | (334.547) | (1.444) | (335.991) |
+| Riporto a nuovo perdita e copertura perdita esercizio precedente | | | | | (219.101) | 219.101 | - | 1.444 | 1.444 |
+| Transizione OIC | | | | | 856 | | 856 | | 856 |
+| Perdita di esercizio al 30 giugno 2023 | | | | | | (102.747) | (102.747) | | (102.747) |
+| Patrimonio netto al 30 Giugno 2023 | 93.942 | 3.394 | 3.989 | 395.352 | (830.369) | (102.747) | (436.439) | - | (436.439) |
 
 Nel dettaglio:
 
 - il Capitale Sociale sottoscritto e versato è pari a 93.942 migliaia di euro, rimasto invariato rispetto al 30 giugno 2022, ed è costituito da n. 628.882.320 azioni ordinarie prive di valore nominale. Il Capitale Sociale deliberato è pari a 613.942 migliaia di euro, e include gli effetti della delibera dell'Assemblea straordinaria degli Azionisti della A.S. Roma del 18 ottobre 2022, che ha approvato la proposta di incrementare fino a Euro 520.000.000,00 l'importo massimo dell'aumento del capitale sociale deliberato dall'Assemblea Straordinaria del 28 ottobre 2019, in via scindibile e a pagamento, mediante emissione di azioni ordinarie prive di valore nominale, in regime di dematerializzazione, aventi le stesse caratteristiche di quelle in circolazione e godimento regolare, da offrire in opzione agli azionisti della Società ai sensi dell'art. 2441, comma 1, del Codice Civile, nonché di prorogare al 31 dicembre 2024 il termine ultimo per dare esecuzione al suddetto aumento di capitale e stabilire, ai sensi dell'art. 2439, comma 2, c.c., che l'aumento di capitale, ove non integralmente sottoscritto, si intenderà limitato all'importo risultante dalle sottoscrizioni effettuate entro tale termine. Al riguardo l'Assemblea ha approvato le conseguenti modifiche dell'articolo 5 dello statuto sociale della Società per tenere conto delle delibere che precedono;
-- la Riserva Azionisti c/aumento di capitale, pari a 395.352 migliaia di euro al 30 giugno 2022, si compone dei Versamenti effettuati dalla controllante NEEP, ad integrale ed esclusivo beneficio di NEEP, per l'esecuzione da parte di NEEP stessa del previsto aumento di capitale non rimborsabile della Società;
-- la Riserva copertura perdite infrannuali, pari a 3.394 migliaia di euro e invariata rispetto al 30 giugno 2022, è stata costituita nell'esercizio 2018/19 a seguito della deliberazione assunta dall'Assemblea degli azionisti del 24 giugno 2019 che ha determinato la copertura della perdita infrannuale emersa dalla situazione contabile della Capogruppo al 31 marzo 2019. Successivamente, l'Assemblea degli azionisti di A.S. Roma, in data 28 ottobre 2019, ha deliberato la copertura della perdita emersa dal Bilancio separato al 30 giugno 2019, pari a circa 19.999
 
-49
+- la Riserva Azionisti c/aumento di capitale, pari a 395.352 migliaia di euro al 30 giugno 2022, si compone dei Versamenti effettuati dalla controllante NEEP, ad integrale ed esclusivo beneficio di NEEP, per l'esecuzione da parte di NEEP stessa del previsto aumento di capitale non rimborsabile della Società;
+
+- la Riserva copertura perdite infrannuali, pari a 3.394 migliaia di euro e invariata rispetto al 30 giugno 2022, è stata costituita nell'esercizio 2018/19 a seguito della deliberazione assunta dall'Assemblea degli azionisti del 24 giugno 2019 che ha determinato la copertura della perdita infrannuale emersa dalla situazione contabile della Capogruppo al 31 marzo 2019. Successivamente, l'Assemblea degli azionisti di A.S. Roma, in data 28 ottobre 2019, ha deliberato la copertura della perdita emersa dal Bilancio separato al 30 giugno 2019, pari a circa 19.999
 
 --- pág. 50 ---
 
@@ -2966,76 +2956,79 @@ BILANCIO DI ESERCIZIO DI AS ROMA S.R.L.
 --- pág. 67 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+### PROSPETTI CONTABILI
+*(valori in Euro)*
 
-## PROSPETTI CONTABILI
+| STATO PATRIMONIALE | 30/06/2023 | 30/06/2022 |
+| :--- | :--- | :--- |
+| **B. IMMOBILIZZAZIONI** | | |
+| **I. Immobilizzazioni immateriali** | | |
+| 4) concessioni, licenze, marchi e diritti simili | 899.873 | 56.480 |
+| 6) immobilizzazioni in corso e acconti | - | 64.324 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 109.293.899 | 167.361.582 |
+| 8) altre | - | 0 |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **110.193.772** | **167.482.386** |
+| **II. Immobilizzazioni materiali** | | |
+| 1) terreni e fabbricati | 6.756.199 | 6.741.566 |
+| 2) impianti e macchinario | 696.809 | 524.298 |
+| 3) attrezzature industriali e commerciali | 750.155 | 616.196 |
+| 4) altri beni | 1.686.216 | 1.592.648 |
+| 5) immobilizzazioni in corso e acconti | 1.691.363 | 1.795.722 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **11.580.742** | **11.270.430** |
+| **III. Immobilizzazioni finanziarie** | | |
+| 1) partecipazioni in: | | |
+| a) imprese controllate | 136.499.001 | 132.543.101 |
+| 2) crediti: | | |
+| d) verso imprese sottoposte al controllo delle controllanti | | |
+| - entro 12 mesi | - | - |
+| - oltre 12 mesi | 2.700.000 | 2.700.000 |
+| d-bis) verso altri | | |
+| - entro 12 mesi | - | - |
+| - oltre 12 mesi | 292.076 | 303.417 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **139.491.077** | **135.546.518** |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **261.265.591** | **314.299.333** |
+| | | |
+| **C. ATTIVO CIRCOLANTE** | | |
+| **II. Crediti** | | |
+| 1) verso clienti | | |
+| - entro 12 mesi | 3.644.908 | 4.321.221 |
+| - oltre 12 mesi | - | - |
+| 2) verso imprese controllate | | |
+| - entro 12 mesi | 117.288.222 | 94.547.121 |
+| - oltre 12 mesi | - | - |
+| 4) verso imprese controllanti | | |
+| - entro 12 mesi | 6.766.187 | 7.174.601 |
+| - oltre 12 mesi | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | |
+| - entro 12 mesi | 203.780 | 198.053 |
+| - oltre 12 mesi | - | - |
+| 5-bis) crediti tributari | | |
+| - entro 12 mesi | 183.192 | 569.605 |
+| - oltre 12 mesi | 35.008 | 35.008 |
+| 5-quater) verso altri | | |
+| - entro 12 mesi | 667.926 | 20.159.020 |
+| - oltre 12 mesi | - | - |
+| 6) crediti verso enti-settore specifico | | |
+| - entro 12 mesi | 47.080.660 | 54.468.671 |
+| - oltre 12 mesi | 31.978.547 | 5.365.161 |
+| **TOTALE (II) - CREDITI** | **207.848.430** | **186.838.462** |
+| **IV. Disponibilità liquide** | | |
+| 1) depositi bancari e postali | 25.736.038 | 17.341.326 |
+| 3) danaro e valori in cassa | 6.649 | 7.793 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | **25.742.686** | **17.349.119** |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **233.591.116** | **204.187.581** |
+| | | |
+| **D. RATEI E RISCONTI ATTIVI** | | |
+| - risconti attivi | | |
+| - entro 12 mesi | 2.427.437 | 3.946.930 |
+| - oltre 12 mesi | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | **2.427.437** | **3.946.930** |
+| | | |
+| **TOTALE ATTIVO (A+B+C+D)** | **497.284.144** | **522.433.845** |
 
-(valori in Euro)
-
-|  STATO PATRIMONIALE | 30/06/2023 | 30/06/2022  |
-| --- | --- | --- |
-|  **B. IMMOBILIZZAZIONI** |  |   |
-|  I. Immobilizzazioni immateriali |  |   |
-|  4) concessioni, licenze, marchi e diritti simili | 899.873 | 56.480  |
-|  6) immobilizzazioni in corso e acconti | - | 64.324  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 109.293.899 | 167.361.582  |
-|  8) altre | - | 0  |
-|  **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **110.193.772** | **167.482.386**  |
-|  II. Immobilizzazioni materiali |  |   |
-|  1) terreni e fabbricati | 6.756.199 | 6.741.566  |
-|  2) impianti e macchinario | 696.809 | 524.298  |
-|  3) attrezzature industriali e commerciali | 750.195 | 616.196  |
-|  4) altri beni | 1.686.216 | 1.592.648  |
-|  5) immobilizzazioni in corso e acconti | 1.691.363 | 1.795.722  |
-|  **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **11.580.742** | **11.270.430**  |
-|  III. Immobilizzazioni finanziarie |  |   |
-|  1) partecipazioni in: |  |   |
-|  a) imprese controllate | 136.499.001 | 132.543.101  |
-|  2) crediti: |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |   |
-|  - entro 12 mesi | - | -  |
-|  - oltre 12 mesi | 2.700.000 | 2.700.000  |
-|  d-bis) verso altri |  |   |
-|  - entro 12 mesi | - | -  |
-|  - oltre 12 mesi | 292.076 | 303.417  |
-|  **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **139.491.077** | **135.546.518**  |
-|  **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **261.265.591** | **314.299.333**  |
-|  **C. ATTIVO CIRCOLANTE** |  |   |
-|  II. Crediti |  |   |
-|  1) verso clienti |  |   |
-|  - entro 12 mesi | 3.644.908 | 4.321.221  |
-|  - oltre 12 mesi | - | -  |
-|  2) verso imprese controllate |  |   |
-|  - entro 12 mesi | 117.288.222 | 94.547.121  |
-|  - oltre 12 mesi | - | -  |
-|  4) verso imprese controllanti |  |   |
-|  - entro 12 mesi | 6.766.187 | 7.174.601  |
-|  - oltre 12 mesi | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |   |
-|  - entro 12 mesi | 203.780 | 198.053  |
-|  - oltre 12 mesi | - | -  |
-|  5-bis) crediti tributari |  |   |
-|  - entro 12 mesi | 183.192 | 569.605  |
-|  - oltre 12 mesi | 35.008 | 35.008  |
-|  5-quater) verso altri |  |   |
-|  - entro 12 mesi | 667.926 | 20.159.020  |
-|  - oltre 12 mesi | - | -  |
-|  6) crediti verso enti-settore specifico |  |   |
-|  - entro 12 mesi | 47.080.660 | 54.468.671  |
-|  - oltre 12 mesi | 31.978.547 | 5.365.161  |
-|  **TOTALE (II) - CREDITI** | **207.848.430** | **186.838.462**  |
-|  IV. Disponibilità liquide |  |   |
-|  1) depositi bancari e postali | 25.736.038 | 17.341.326  |
-|  3) danaro e valori in cassa | 6.649 | 7.793  |
-|  **TOTALE (IV) - DISPONIBILITÀ LIQUIDE** | **25.742.686** | **17.349.119**  |
-|  **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **233.591.116** | **204.187.581**  |
-|  **D. RATEI E RISCONTI ATTIVI** |  |   |
-|  - risconti attivi |  |   |
-|  - entro 12 mesi | 2.427.437 | 3.946.930  |
-|  - oltre 12 mesi | - | -  |
-|  **TOTALE RATEI E RISCONTI (D)** | **2.427.437** | **3.946.930**  |
-|  **TOTALE ATTIVO (A+B+C+D)** | **467.284.144** | **522.433.845**  |
+[Firma]
 
 67
 
@@ -3104,156 +3097,149 @@ PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 --- pág. 69 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+| CONTO ECONOMICO | 01/07/2022 - 30/06/2023 | 01/07/2021 - 30/06/2022 |
+| :--- | :--- | :--- |
+| **A. VALORE DELLA PRODUZIONE** | | |
+| **1) ricavi delle vendite e delle prestazioni** | | |
+| a) ricavi da gare | 33.378.086 | 17.889.224 |
+| b) abbonamenti | 15.866.698 | 7.631.727 |
+| **1) Totale Ricavi delle vendite e delle prestazioni** | **49.244.785** | **25.520.950** |
+| **2) variazioni delle rimanenze di prodotti finiti** | **-** | **(105.072)** |
+| **5) altri ricavi e proventi** | | |
+| a) proventi da sponsorizzazioni | 9.850.000 | 7.141.272 |
+| b) proventi pubblicitari | 47.633 | 69.648 |
+| c) proventi commerciali e royalties | 1.155 | 207 |
+| d) proventi da cessione diritti audiovisivi | 106.628.681 | 91.272.657 |
+| e) ricavi da cessione temporanea prestazioni calciatori | 3.416.157 | 3.627.186 |
+| f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 47.131.792 | 6.206.241 |
+| g) altri proventi da trasferimento diritti calciatori | 5.563.399 | 4.850.280 |
+| h) ricavi e proventi diversi | 17.145.485 | 37.547.598 |
+| **5) Totale altri ricavi e proventi** | **189.784.301** | **150.715.089** |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | **239.029.086** | **176.130.968** |
+| | | |
+| **B. COSTI DELLA PRODUZIONE** | | |
+| **6) per materie prime, sussidiarie, di consumo e di merci** | **4.103.926** | **3.867.391** |
+| **7) per servizi** | **57.097.217** | **55.163.882** |
+| **8) per godimento di beni di terzi** | **12.093.405** | **9.477.564** |
+| **9) per il personale** | | |
+| a) salari e stipendi | 155.607.719 | 165.729.741 |
+| b) oneri sociali | 7.372.315 | 7.299.915 |
+| c) trattamento di fine rapporto | 908.978 | 819.249 |
+| e) altri costi | 748.489 | 859.284 |
+| **9) Totale costi per il personale** | **164.637.500** | **174.708.190** |
+| **10) ammortamenti e svalutazioni** | | |
+| a) ammortamenti immobilizzazioni immateriali | 55.754.949 | 77.580.970 |
+| b) ammortamenti immobilizzazioni materiali | 3.542.946 | 2.856.886 |
+| c) altre svalutazioni delle immobilizzazioni | - | 11.421.461 |
+| d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 44.158 | 2.707.798 |
+| **10) Totale costi per ammortamenti e svalutazioni** | **59.342.054** | **94.567.114** |
+| **12) accantonamenti per rischi** | **58.728** | **-** |
+| **14) oneri diversi di gestione** | | |
+| a) costi per acquisizione temporanea prestazioni calciatori | 1.415.828 | 2.483.391 |
+| b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.429 | 1.224.029 |
+| c) altri oneri da trasferimento diritti calciatori | 9.942.395 | 13.621.364 |
+| d) altri oneri diversi di gestione | 9.818.416 | 21.493.017 |
+| **14) Totale oneri diversi di gestione** | **21.187.067** | **38.821.801** |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | **318.519.897** | **376.605.942** |
+| | | |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | **(79.490.811)** | **(200.474.975)** |
+| | | |
+| **C PROVENTI E ONERI FINANZIARI** | | |
+| **15) proventi da partecipazioni** | **1.793.404** | **443.137** |
+| **16) altri proventi finanziari** | **1.165.368** | **2.660.038** |
+| **17) interessi ed altri oneri finanziari** | **(16.086.480)** | **(19.897.335)** |
+| e) altri interessi e oneri finanziari | (16.086.480) | (19.897.335) |
+| **17 bis) utile o perdite su cambi** | **(3.425)** | **(23.835)** |
+| **TOTALE PROVENTI ED ONERI FINANZIARI (C) (15+16-17 ± 17 bis )** | **(13.131.134)** | **(16.817.994)** |
+| | | |
+| **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | **(92.621.945)** | **(217.292.969)** |
+| | | |
+| **20) Imposte sul reddito dell'esercizio** | **(201.217)** | **2.256.943** |
+| a) imposte correnti | (3.066.924) | - |
+| e) proventi (oneri) da adesione al regime di consolidato fiscale/trasparenza fiscale | 2.865.707 | 2.256.943 |
+| **21) UTILE (PERDITA) DELL'ESERCIZIO** | **(92.823.162)** | **(215.036.026)** |
 
-CONTO ECONOMICO
-
-01/07/2022 -
-30/06/2023
-
-01/07/2021 -
-30/06/2022
-
-A. VALORE DELLA PRODUZIONE
-
-|  1) ricavi delle vendite e delle prestazioni |  |   |
-| --- | --- | --- |
-|  a) ricavi da gare | 33.378.086 | 17.889.224  |
-|  b) abbonamenti | 15.866.698 | 7.631.727  |
-|  **1) Totale Ricavi delle vendite e delle prestazioni** | **49.244.785** | **25.520.950**  |
-|  **2) variazioni delle rimanenze di prodotti finiti** | **-** | **(105.072)**  |
-|  5) altri ricavi e proventi |  |   |
-|  a) proventi da sponsorizzazioni | 9.850.000 | 7.141.272  |
-|  b) proventi pubblicitari | 47.633 | 69.648  |
-|  c) proventi commerciali e royalties | 1.155 | 207  |
-|  d) proventi da cessione diritti audiovisivi | 106.628.681 | 91.272.657  |
-|  e) ricavi da cessione temporanea prestazioni calciatori | 3.416.157 | 3.627.186  |
-|  f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 47.131.792 | 6.206.241  |
-|  g) altri proventi da trasferimento diritti calciatori | 5.563.399 | 4.850.280  |
-|  h) ricavi e proventi diversi | 17.145.485 | 37.547.598  |
-|  **5) Totale altri ricavi e proventi** | **189.784.301** | **150.715.089**  |
-|  **TOTALE VALORE DELLA PRODUZIONE (A)** | **239.029.086** | **176.130.968**  |
-
-B. COSTI DELLA PRODUZIONE
-
-|  6) per materie prime, sussidiarle, di consumo e di merci | 4.103.926 | 3.867.391  |
-| --- | --- | --- |
-|  7) per servizi | 57.097.217 | 55.163.882  |
-|  8) per godimento di beni di terzi | 12.093.405 | 9.477.564  |
-|  9) per il personale |  |   |
-|  a) salari e stipendi | 155.607.719 | 165.729.741  |
-|  b) oneri sociali | 7.372.315 | 7.299.915  |
-|  c) trattamento di fine rapporto | 908.978 | 819.249  |
-|  e) altri costi | 748.489 | 859.284  |
-|  **9) Totale costi per il personale** | **164.637.500** | **174.708.190**  |
-|  10) ammortamenti e svalutazioni |  |   |
-|  a) ammortamenti immobilizzazioni immateriali | 55.754.949 | 77.580.970  |
-|  b) ammortamenti immobilizzazioni materiali | 3.542.946 | 2.856.886  |
-|  c) altre svalutazioni delle immobilizzazioni | - | 11.421.461  |
-|  d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 44.158 | 2.707.798  |
-|  **10) Totale costi per ammortamenti e svalutazioni** | **59.342.054** | **94.567.114**  |
-|  12) accantonamenti per rischi | 58.728 | -  |
-|  14) oneri diversi di gestione |  |   |
-|  a) costi per acquisizione temporanea prestazioni calciatori | 1.415.828 | 2.483.391  |
-|  b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.429 | 1.224.029  |
-|  c) altri oneri da trasferimento diritti calciatori | 9.942.395 | 13.621.364  |
-|  d) altri oneri diversi di gestione | 9.818.416 | 21.493.017  |
-|  **14) Totale oneri diversi di gestione** | **21.167.067** | **38.821.801**  |
-|  **TOTALE COSTI DELLA PRODUZIONE (B)** | **318.519.897** | **376.605.942**  |
-|  **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | **(79.490.811)** | **(200.474.975)**  |
-
-C. PROVENTI E ONERI FINANZIARI
-
-|  15) proventi da partecipazioni | 1.793.404 | 443.137  |
-| --- | --- | --- |
-|  16) altri proventi finanziari | 1.165.368 | 2.660.038  |
-|  17) interessi ed altri oneri finanziari | (16.086.480) | (19.897.335)  |
-|  e) altri interessi e oneri finanziari | (16.086.480) | (19.897.335)  |
-|  17 bis) utile e perdite su cambi | (3.425) | (23.835)  |
-|  **TOTALE PROVENTI ED ONERI FINANZIARI (C) (15+16+17 ± 17 bis)** | **(13.131.134)** | **(16.817.994)**  |
-|  **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | **(92.621.945)** | **(217.292.969)**  |
-|  20) Imposte sul reddito dell'esercizio | (201.217) | 2.256.943  |
-|  a) imposte correnti | (3.066.924) | -  |
-|  e) proventi (oneri) da adesione al regime di consolidato fiscale/trasparenza fiscale | 2.865.707 | 2.256.943  |
-|  **21) UTILE (PERDITA) DELL'ESERCIZIO** | **(92.823.162)** | **(215.036.026)**  |
+[Firma]
 
 69
 
 --- pág. 70 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+| RENDICONTO FINANZIARIO | 01/07/2022 - 30/06/2023 | 01/07/2021 - 30/06/2022 |
+| :--- | :--- | :--- |
+| **A. Flussi finanziari derivanti dell'attività operativa** | | |
+| Utile (perdita) dell'esercizio | (92.823.162) | (215.036.026) |
+| Imposte sul reddito | (201.217) | 2.256.943 |
+| Interessi passivi/(interessi attivi) | 11.197.660 | 12.757.985 |
+| Dividendi | (1.793.404) | (443.137) |
+| (Plusvalenze)/minusvalenze da cessione calciatori | (47.121.363) | (4.982.213) |
+| **1. Utile (perdita) dell'esercizio prima d'imposte, interessi, E plus/minus da cessione** | **(130.741.486)** | **(205.446.448)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 3.369.846 | 25.960.228 |
+| Ammortamenti delle immobilizzazioni | 59.297.895 | 80.437.856 |
+| Svalutazioni per perdite durevoli di valore | 44.158 | 14.129.259 |
+| Altre rettifiche per elementi non monetarie | 3.723.452 | 4.479.312 |
+| **2. Flusso finanziario prima delle variazioni del ccn** | **(64.306.134)** | **(80.439.794)** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | - | 105.072 |
+| Decremento/(incremento) dei crediti vs clienti | 676.313 | (1.072.474) |
+| Incremento/(decremento) dei debiti verso fornitori | 6.769.966 | (7.830.578) |
+| Decremento/(incremento) ratei e risconti attivi | 1.519.494 | 2.936.737 |
+| Incremento/(decremento) ratei e risconti passivi | 2.303.013 | 2.392.057 |
+| Altre variazioni del capitale circolante netto | (22.037.587) | (49.559.626) |
+| **3. Flusso finanziario dopo le variazioni del ccn** | **(75.074.935)** | **(133.468.605)** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | (12.563.958) | - |
+| (Imposte sul reddito pagate) | - | (283.963) |
+| (Utilizzo dei fondi) | (13.679.674) | (4.804.086) |
+| Altri incassi/pagamenti | - | (1.861.300) |
+| **Flusso finanziario dell'attività operativa (A)** | **(101.318.567)** | **(140.417.954)** |
+| **B. Flussi finanziari derivanti dall'attività d'investimento** | | |
+| *Immobilizzazioni materiali* | | |
+| (Investimenti) | (3.853.258) | (3.413.687) |
+| Disinvestimenti | - | - |
+| *Diritti pluriennali alle prestazioni dei calciatori* | | |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (15.843.579) | (84.648.388) |
+| Valore acquisti calciatori | - | - |
+| Variazione debiti vs squadre di calcio | (52.526.645) | (10.482.687) |
+| *Cessione diritti pluriennali alle prestazioni dei calciatori* | | |
+| Valore cessione calciatori | 65.376.852 | 22.786.499 |
+| Variazione crediti vs squadre di calcio | (20.742.967) | 1.508.855 |
+| *Altre immobilizzazioni immateriali* | | |
+| (Investimenti) | (888.558) | (52.369) |
+| Disinvestimenti | - | - |
+| *Immobilizzazioni finanziarie* | | |
+| (Investimenti) | (3.944.559) | (56.145) |
+| Disinvestimenti | - | - |
+| **Flusso finanziario dell'attività di investimento (B)** | **(32.422.713)** | **(74.357.922)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| *Mezzi di terzi* | | |
+| Incremento (decremento) debiti a breve verso banche | (6.917.314) | (3.217.546) |
+| Accensione finanziamenti | - | - |
+| (Rimborso finanziamenti) | - | - |
+| Atri incassi e pagamenti da attività di finanziamento | (83.493.998) | 13.394.282 |
+| *Finanziamenti soci* | | |
+| Accensione finanziamenti | 232.546.160 | 85.075.759 |
+| *Mezzi propri* | | |
+| Versamento in conto futuro aumento di capitale | - | 120.000.000 |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **142.134.848** | **215.252.495** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **8.393.567** | **476.619** |
+| Effetto cambi sulle disponibilità liquide | - | - |
+| **Disponibilità liquide all'inizio dell'esercizio** | **17.349.119** | **16.872.500** |
+| *di cui:* | | |
+| depositi bancari e postali | 17.341.326 | 16.870.560 |
+| denaro e valori in cassa | 7.793 | 1.941 |
+| **Disponibilità liquide alla fine dell'esercizio** | **25.742.686** | **17.349.119** |
+| *di cui:* | | |
+| depositi bancari e postali | 25.736.038 | 17.341.326 |
+| denaro e valori in cassa | 6.649 | 7.793 |
 
-|  RENDICONTO FINANZIARIO | 01/07/2022 - 30/06/2023 | 01/07/2021 - 30/06/2022  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dell'attività operativa** |  |   |
-|  Utile (perdita) dell'esercizio | (92.823.162) | (215.036.026)  |
-|  Imposte sul reddito | (201.217) | 2.256.943  |
-|  Interessi passivi/(interessi attivi) | 11.197.660 | 12.757.985  |
-|  Dividendi | (1.793.404) | (443.137)  |
-|  (Plusvalenze)/minusvalenze da cessione calciatori | (47.121.363) | (4.982.213)  |
-|  **1. Utile (perdita) dell'esercizio prima d'imposte, interessi, € plus/minus da cessione** | **(130.741.486)** | **(205.446.448)**  |
-|  *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* |  |   |
-|  Accantonamenti ai fondi | 3.369.846 | 25.960.228  |
-|  Ammortamenti delle immobilizzazioni | 59.297.895 | 80.437.856  |
-|  Svalutazioni per perdite durevoli di valore | 44.158 | 14.129.259  |
-|  Altre rettifiche per elementi non monetarie | 3.723.452 | 4.479.312  |
-|  **2. Flusso finanziario prima delle variazioni del ccn** | **(64.306.134)** | **(80.439.794)**  |
-|  *Variazioni del capitale circolante netto* |  |   |
-|  Decremento/(incremento) delle rimanenze | - | 105.072  |
-|  Decremento/(incremento) dei crediti vs clienti | 676.313 | (1.072.474)  |
-|  Incremento/(decremento) dei debiti verso fornitori | 6.769.966 | (7.830.578)  |
-|  Decremento/(incremento) ratei e risconti attivi | 1.519.494 | 2.936.737  |
-|  Incremento/(decremento) ratei e risconti passivi | 2.303.013 | 2.392.957  |
-|  Altre variazioni del capitale circolante netto | (22.037.587) | (49.559.626)  |
-|  **3. Flusso finanziario dopo le variazioni del ccn** | **(75.074.935)** | **(133.468.605)**  |
-|  *Altre rettifiche* |  |   |
-|  Interessi incassati/(pagati) | (12.563.958) | -  |
-|  (Imposte sul reddito pagate) | - | (283.953)  |
-|  (Utilizzo dei fondi) | (13.679.674) | (4.804.086)  |
-|  Altri incassi/pagamenti | - | (1.861.300)  |
-|  **Flusso finanziario dall'attività operativa (A)** | **(101.318.567)** | **(140.417.054)**  |
-|  **B. Flussi finanziari derivanti dall'attività d'investimento** |  |   |
-|  *Immobilizzazioni materiali* |  |   |
-|  (Investimenti) | (3.853.258) | (3.413.687)  |
-|  Disinvestimenti | - | -  |
-|  *Diritti pluriennali alle prestazioni dei calciatori* |  |   |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (15.843.579) | (84.648.388)  |
-|  Valore acquisti calciatori | - | -  |
-|  Variazione debiti vs squadre di calcio | (52.526.645) | (10.482.687)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | - | -  |
-|  Valore cessione calciatori | 65.376.852 | 22.786.499  |
-|  Variazione crediti vs squadre di calcio | (20.742.967) | 1.508.855  |
-|  *Altre immobilizzazioni immateriali* |  |   |
-|  (Investimenti) | (888.558) | (52.369)  |
-|  Disinvestimenti | - | -  |
-|  *Immobilizzazioni finanziarie* |  |   |
-|  (Investimenti) | (3.944.559) | (56.145)  |
-|  Disinvestimenti | - | -  |
-|  **Flusso finanziario dell'attività di investimento (B)** | **(32.422.713)** | **(74.357.922)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  *Mezzi di terzi* |  |   |
-|  Incremento (decremento) debiti a breve verso banche | (6.917.314) | (3.217.546)  |
-|  Accensione finanziamenti | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  Atri incassi e pagamenti da attività di finanziamento | (63.493.998) | 13.394.282  |
-|  *Finanziamenti soci* |  |   |
-|  Accensione finanziamenti | 232.546.160 | 85.075.759  |
-|  *Mezzi propri* |  |   |
-|  Versamento in conto futuro aumento di capitale | - | 120.000.000  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **142.134.848** | **215.252.495**  |
-|  **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **6.393.667** | **476.619**  |
-|  *Effetto cambi sulle disponibilità liquide* |  |   |
-|  **Disponibilità liquide all'inizio dell'esercizio** | **17.349.119** | **16.872.500**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 17.341.326 | 16.870.560  |
-|  denaro e valori in cassa | 7.793 | 1.941  |
-|  **Disponibilità liquide alla fine dell'esercizio** | **25.742.686** | **17.349.119**  |
-|  di cui: |  |   |
-|  depositi bancari e postali | 25.736.038 | 17.341.326  |
-|  denaro e valori in cassa | 6.649 | 7.793  |
+[Firma]
 
 70
 
@@ -3544,385 +3530,379 @@ Di seguito viene fornita:
 
 --- pág. 79 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  CONTO ECONOMICO 1 LUGLIO 2021 - 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  A. VALORE DELLA PRODUZIONE  |   |   |   |   |
-|  1) ricavi delle vendite e delle prestazioni |  |  |  |   |
-|  a) ricavi da gare | 17.889.224 | - | - | 17.889.224  |
-|  b) aldermamenti | 7.631.727 | - | - | 7.631.727  |
-|  1) Totale Ricavi delle vendite e delle prestazioni | 25.520.950 | - | - | 25.520.950  |
-|  2) variazioni delle rimanenze di prodotti finiti | (105.072) | - | - | (105.072)  |
-|  5) altri ricavi e proventi |  |  |  |   |
-|  a) proventi da sparvarizzazioni | 7.141.272 | - | - | 7.141.272  |
-|  b) proventi pubblicitari | 69.648 | - | - | 69.648  |
-|  c) proventi commerciali e royalties | 207 | - | - | 207  |
-|  d) proventi da cessione diritti audiovisivi | 91.272.657 | - | - | 91.272.657  |
-|  e) ricavi da cessione temporanea prestazioni calciatori | 3.627.186 | - | - | 3.627.186  |
-|  f) pluvialenze da cessione diritti pluriennali prestazioni calciatori | 6.208.241 | - | - | 6.208.241  |
-|  g) altri proventi da trasferimento diritti calciatori | 4.850.280 | - | - | 4.850.280  |
-|  h) ricavi e proventi diversi | 37.547.698 | - | - | 37.547.698  |
-|  5) Totale altri ricavi e proventi | 150.715.089 | - | - | 150.715.089  |
-|  TOTALE VALORE DELLA PRODUZIONE (A) | 176.130.968 | - | - | 176.130.968  |
-|  B. COSTI DELLA PRODUZIONE  |   |   |   |   |
-|  6) per materie prime, sussidiarie, di consumo e di merci | 3.867.391 | - | - | 3.867.391  |
-|  7) per servizi | 55.163.882 | - | - | 55.163.882  |
-|  8) per godimento di beni di terzi | 5.855.547 | - | 3.622.017 | 9.477.564  |
-|  9) per il personale |  |  |  |   |
-|  a) salari e stipendi | 165.729.741 | - | - | 165.729.741  |
-|  b) oneri sociali | 7.299.915 | - | - | 7.299.915  |
-|  c) trattamento di fine rapporto | 584.792 | - | 234.458 | 819.249  |
-|  e) altri costi | 859.284 | - | - | 859.284  |
-|  9) Totale costi per il personale | 174.473.732 | - | 234.458 | 174.708.190  |
-|  10) ammortamenti e svalutazioni |  |  |  |   |
-|  a) ammortamenti immobilizzazioni immateriali | 80.816.594 | - | (3.235.625) | 77.580.970  |
-|  b) ammortamenti immobilizzazioni materiali | 2.856.886 | - | - | 2.856.886  |
-|  c) altre svalutazioni delle immobilizzazioni | 2.460.650 | 11.421.461 | (2.460.650) | 11.421.461  |
-|  d) svalutazioni dei crediti dell'attivo circolante o delle disponibilità liquide | 2.707.758 | - | - | 2.707.758  |
-|  10) Totale costi per ammortamenti e svalutazioni | 88.841.928 | 11.421.461 | (5.696.275) | 94.567.114  |
-|  12) accantonamenti per rischi | - | - | - | -  |
-|  14) oneri diversi di gestione |  |  |  |   |
-|  a) costi per acquisizione temporanea prestazioni calciatori | 2.483.391 | - | - | 2.483.391  |
-|  b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.184.840 | (11.421.461) | 2.460.650 | 1.224.029  |
-|  c) altri oneri da trasferimento diritti calciatori | 13.621.364 | - | - | 13.621.364  |
-|  d) altri oneri diversi di gestione | 21.493.017 | - | - | 21.493.017  |
-|  14) Totale oneri diversi di gestione | 47.782.812 | (11.421.461) | 2.460.650 | 38.821.801  |
-|  TOTALE COSTI DELLA PRODUZIONE (B) | 375.985.093 | - | 620.850 | 376.605.942  |
-|  DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B) | (199.854.125) | - | (620.850) | (200.474.975)  |
-|  C. PROVENTI E ONERI FINANZIARI  |   |   |   |   |
-|  15) proventi da partecipazioni | 443.137 | - | - | 443.137  |
-|  16) altri proventi finanziari | 2.668.120 | - | (8.083) | 2.660.038  |
-|  17) interessi ed altri oneri finanziari | (20.539.573) | - | 642.239 | (19.897.335)  |
-|  a) altri interessi e oneri finanziari | (20.539.573) | - | 642.239 | (19.897.335)  |
-|  17 bis) utile e perdite su cambi | (23.835) | - | - | (23.835)  |
-|  TOTALE PROVENTI ED ONERI FINANZIARI (C) (15+16-17 ± 17 bis) | (17.452.150) | - | 634.156 | (16.817.994)  |
-|  RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D) | (217.306.276) | - | 13.306 | (217.292.969)  |
-|  20) imposte sul reddito dell'esercizio | 2.256.943 | - | - | 2.256.943  |
-|  21) UTILE (PREDITA) DELL'ESERCIZIO | (215.049.333) | - | 13.306 | (215.038.026)  |
-|  Utile (perdita) di terzi | - | - | - | -  |
-|  Risultato di pertinenza del gruppo | (215.049.333) | - | 13.306 | (215.038.026)  |
 
 79
 
+| CONTO ECONOMICO 1 LUGLIO 2021 - 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. VALORE DELLA PRODUZIONE** | | | | |
+| 1) ricavi delle vendite e delle prestazioni | | | | |
+| a) ricavi da gare | 17.889.224 | | - | 17.889.224 |
+| b) abbonamenti | 7.631.727 | | - | 7.631.727 |
+| 1) Totale Ricavi delle vendite e delle prestazioni | 25.520.950 | - | - | 25.520.950 |
+| 2) variazioni delle rimanenze di prodotti finiti | (105.072) | - | - | (105.072) |
+| 5) altri ricavi e proventi | | | | |
+| a) proventi da sponsorizzazioni | 7.141.272 | | - | 7.141.272 |
+| b) proventi pubblicitari | 69.648 | | - | 69.648 |
+| c) proventi commerciali e royalties | 207 | | - | 207 |
+| d) proventi da cessione diritti audiovisivi | 91.272.657 | | - | 91.272.657 |
+| e) ricavi da cessione temporanea prestazioni calciatori | 3.627.186 | | - | 3.627.186 |
+| f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 6.206.241 | | - | 6.206.241 |
+| g) altri proventi da trasferimento diritti calciatori | 4.850.280 | | - | 4.850.280 |
+| h) ricavi e proventi diversi | 37.547.598 | | - | 37.547.598 |
+| 5) Totale altri ricavi e proventi | 150.715.089 | - | - | 150.715.089 |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | 176.130.968 | - | - | 176.130.968 |
+| **B. COSTI DELLA PRODUZIONE** | | | | |
+| 6) per materie prime, sussidiarie, di consumo e di merci | 3.867.391 | - | - | 3.867.391 |
+| 7) per servizi | 55.163.882 | - | - | 55.163.882 |
+| 8) per godimento di beni di terzi | 5.855.547 | - | 3.622.017 | 9.477.564 |
+| 9) per il personale | | | | |
+| a) salari e stipendi | 165.729.741 | | - | 165.729.741 |
+| b) oneri sociali | 7.299.915 | | - | 7.299.915 |
+| c) trattamento di fine rapporto | 584.792 | - | 234.458 | 819.249 |
+| e) altri costi | 859.284 | | - | 859.284 |
+| 9) Totale costi per il personale | 174.473.732 | - | 234.458 | 174.708.190 |
+| 10) ammortamenti e svalutazioni | | | | |
+| a) ammortamenti immobilizzazioni immateriali | 80.816.594 | | (3.235.625) | 77.580.970 |
+| b) ammortamenti immobilizzazioni materiali | 2.856.886 | | - | 2.856.886 |
+| c) altre svalutazioni delle immobilizzazioni | 2.460.650 | 11.421.461 | (2.460.650) | 11.421.461 |
+| d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 2.707.798 | | - | 2.707.798 |
+| 10) Totale costi per ammortamenti e svalutazioni | 88.841.928 | 11.421.461 | (5.696.275) | 94.567.114 |
+| 12) accantonamenti per rischi | - | | - | - |
+| 14) oneri diversi di gestione | | | | |
+| a) costi per acquisizione temporanea prestazioni calciatori | 2.483.391 | | - | 2.483.391 |
+| b) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 10.184.840 | (11.421.461) | 2.460.650 | 1.224.029 |
+| c) altri oneri da trasferimento diritti calciatori | 13.621.364 | | - | 13.621.364 |
+| d) altri oneri diversi di gestione | 21.493.017 | | - | 21.493.017 |
+| 14) Totale oneri diversi di gestione | 47.782.612 | (11.421.461) | 2.460.650 | 38.821.801 |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | 375.985.093 | - | 620.850 | 376.605.942 |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | (199.854.125) | - | (620.850) | (200.474.975) |
+| **C PROVENTI E ONERI FINANZIARI** | | | | |
+| 15) proventi da partecipazioni | 443.137 | - | - | 443.137 |
+| 16) altri proventi finanziari | 2.668.120 | - | (8.083) | 2.660.038 |
+| 17) interessi ed altri oneri finanziari | (20.539.573) | - | 642.239 | (19.897.335) |
+| e) altri interessi e oneri finanziari | (20.539.573) | - | 642.239 | (19.897.335) |
+| 17 bis) utile e perdite su cambi | (23.835) | - | - | (23.835) |
+| **TOTALE PROVENTI ED ONERI FINANZIARI (C ) (15+16-17 ± 17 bis )** | (17.452.150) | - | 634.156 | (16.817.994) |
+| **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | (217.306.276) | - | 13.306 | (217.292.969) |
+| 20) Imposte sul reddito dell'esercizio | 2.256.943 | - | - | 2.256.943 |
+| - | | | | |
+| **21) UTILE (PERDITA) DELL'ESERCIZIO** | (215.049.333) | - | 13.306 | (215.036.026) |
+| Utile (perdita) di terzi | - | | | - |
+| **Risultato di pertinenza del gruppo** | (215.049.333) | - | 13.306 | (215.036.026) |
+
 --- pág. 80 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  **B. IMMOBILIZZAZIONI** |  |  |  |   |
-|  I. Immobilizzazioni immateriali |  |  |  |   |
-|  4) concorsioni, licenze, marchi e diritti simili | 132.245 | - | - | 132.245  |
-|  6) immobilizzazioni in corso e uccenti | 11.955 | - | - | 11.955  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 188.207.051 | - | - | 188.207.051  |
-|  8) altra | 12.821.643 | - | (12.821.643) | -  |
-|  **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | **201.172.894** | **-** | **(12.821.643)** | **188.351.250**  |
-|  Ii. Immobilizzazioni materiali |  |  |  |   |
-|  1) terreni e fabbricati | 5.117.262 | - | - | 5.117.262  |
-|  2) impianti e macchinario | 415.574 | - | - | 415.574  |
-|  3) attrezzature industriali e commerciali | 288.874 | - | - | 288.874  |
-|  4) altri beni | 1.086.576 | - | - | 1.086.576  |
-|  5) immobilizzazioni in corso e uccenti | 3.805.343 | - | - | 3.805.343  |
-|  **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | **10.713.629** | **-** | **-** | **10.713.629**  |
-|  IIi. Immobilizzazioni finanziarie |  |  |  |   |
-|  1) partecipazioni in: |  |  |  |   |
-|  a) imprese controllate | 135.003.751 | - | - | 135.003.751  |
-|  2) crediti: |  |  |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 2.700.000 | - | - | 2.700.000  |
-|  d-bis) verso altri |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 247.271 | - | - | 247.271  |
-|  **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | **137.951.023** | **-** | **-** | **137.951.023**  |
-|  **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | **348.837.545** | **-** | **(12.821.643)** | **337.015.902**  |
-|  **C. ATTIVO CIRCOLANTE** |  |  |  |   |
-|  I. Rimanenze |  |  |  |   |
-|  4) prodotti feriti e merci | 105.072 | - | - | 105.072  |
-|  **TOTALE (I) - RIMANENZE** | **105.072** | **-** | **-** | **105.072**  |
-|  Ii. Crediti |  |  |  |   |
-|  1) verso clienti |  |  |  |   |
-|  - entro 12 mesi | 3.158.747 | - | 90.000 | 3.248.747  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  2) verso imprese controllate |  |  |  |   |
-|  - entro 12 mesi | 76.121.281 | - | - | 76.121.281  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  4) verso imprese controllanti |  |  |  |   |
-|  - entro 12 mesi | 4.188.512 | - | - | 4.188.512  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | 191.762 | - | - | 191.762  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  S-bis) crediti tributari |  |  |  |   |
-|  - entro 12 mesi | 1.249.175 | - | - | 1.249.175  |
-|  - oltre 12 mesi | 35.000 | - | - | 35.000  |
-|  S-quater) verso altri |  |  |  |   |
-|  - entro 12 mesi | 151.669 | - | - | 151.669  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  6) crediti verso enti settore specifico |  |  |  |   |
-|  - entro 12 mesi | 51.854.517 | - | - | 51.854.517  |
-|  - oltre 12 mesi | 11.991.462 | - | - | 11.991.462  |
-|  **TOTALE (II) - CREDITI** | **148.942.133** | **-** | **90.000** | **149.032.133**  |
-|  IV. Disponibilità legale |  |  |  |   |
-|  1) depositi bancari e postali | 16.870.560 | - | - | 16.870.560  |
-|  3) danze e valori in cassa | 1.941 | - | - | 1.941  |
-|  **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | **16.872.500** | **-** | **-** | **16.872.500**  |
-|  **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | **165.919.705** | **-** | **90.000** | **166.009.705**  |
-|  **D. RATEI E RISCONTI ATTIVI** |  |  |  |   |
-|  - ricconti attivi |  |  |  |   |
-|  - entro 12 mesi | 6.883.668 | - | - | 6.883.668  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  **TOTALE RATEI E RISCONTI (D)** | **6.883.668** | **-** | **-** | **6.883.668**  |
-|  **TOTALE ATTIVO (A+B+C+D)** | **522.660.918** | **-** | **(12.721.643)** | **509.809.279**  |
 
 80
 
+| STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **B. IMMOBILIZZAZIONI** | | | | |
+| I. Immobilizzazioni immateriali | | | | |
+| 4) concessioni, licenze, marchi e diritti simili | 132.245 | | - | 132.245 |
+| 6) immobilizzazioni in corso e acconti | 11.955 | | - | 11.955 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 188.207.051 | | - | 188.207.051 |
+| 8) altre | 12.821.643 | | (12.821.643) | - |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | 201.172.894 | - | (12.821.643) | 188.351.250 |
+| II. Immobilizzazioni materiali | | | | |
+| 1) terreni e fabbricati | 5.117.262 | | - | 5.117.262 |
+| 2) impianti e macchinario | 415.574 | | - | 415.574 |
+| 3) attrezzature industriali e commerciali | 288.874 | | - | 288.874 |
+| 4) altri beni | 1.086.576 | | - | 1.086.576 |
+| 5) immobilizzazioni in corso e acconti | 3.805.343 | | - | 3.805.343 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | 10.713.629 | - | - | 10.713.629 |
+| III. Immobilizzazioni finanziarie | | | | |
+| 1) partecipazioni in: | | | | |
+| a) imprese controllate | 135.003.751 | | - | 135.003.751 |
+| 2) crediti: | | | - | |
+| d) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 2.700.000 | | - | 2.700.000 |
+| d-bis) verso altri | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 247.271 | | - | 247.271 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | 137.951.023 | - | - | 137.951.023 |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | 349.837.545 | - | (12.821.643) | 337.015.902 |
+| **C. ATTIVO CIRCOLANTE** | | | | |
+| I. Rimanenze | | | | |
+| 4) prodotti finiti e merci | 105.072 | | - | 105.072 |
+| **TOTALE (I) - RIMANENZE** | 105.072 | - | - | 105.072 |
+| II. Crediti | | | | |
+| 1) verso clienti | | | | |
+| - entro 12 mesi | 3.158.747 | - | 90.000 | 3.248.747 |
+| - oltre 12 mesi | - | | - | - |
+| 2) verso imprese controllate | | | - | |
+| - entro 12 mesi | 76.121.281 | | - | 76.121.281 |
+| - oltre 12 mesi | - | | - | - |
+| 4) verso imprese controllanti | | | - | |
+| - entro 12 mesi | 4.188.512 | | - | 4.188.512 |
+| - oltre 12 mesi | - | | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | 191.762 | | - | 191.762 |
+| - oltre 12 mesi | - | | - | - |
+| 5-bis) crediti tributari | | | - | |
+| - entro 12 mesi | 1.249.175 | | - | 1.249.175 |
+| - oltre 12 mesi | 35.008 | | - | 35.008 |
+| 5-quater) verso altri | | | - | |
+| - entro 12 mesi | 151.669 | - | - | 151.669 |
+| - oltre 12 mesi | - | | - | - |
+| 6) crediti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 51.854.517 | | - | 51.854.517 |
+| - oltre 12 mesi | 11.991.462 | | - | 11.991.462 |
+| **TOTALE (II) - CREDITI** | 148.942.133 | - | 90.000 | 149.032.133 |
+| IV. Disponibilità liquide | | | | |
+| 1) depositi bancari e postali | 16.870.560 | | - | 16.870.560 |
+| 3) danaro e valori in cassa | 1.941 | | - | 1.941 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | 16.872.500 | - | - | 16.872.500 |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | 165.919.705 | - | 90.000 | 166.009.705 |
+| **D. RATEI E RISCONTI ATTIVI** | | | | |
+| - risconti attivi | | | - | |
+| - entro 12 mesi | 6.883.668 | | - | 6.883.668 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | 6.883.668 | - | - | 6.883.668 |
+| **TOTALE ATTIVO (A+B+C+D)** | 522.640.918 | - | (12.731.643) | 509.909.275 |
+
 --- pág. 81 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  **A. PATRIMONIO NETTO** |  |  |  |   |
-|  I. Capitale | 93.942.205 | - | - | 93.942.205  |
-|  VI. Altre risorse | - | - | - | -  |
-|  - Riserva perdite attuariali | (593.297) | - | 593.297 | -  |
-|  - Riserva copertura perdite inframmaili | 3.394.305 | - | - | 3.394.305  |
-|  - Riserva azionisti e joamento di capitale | 243.679.254 | - | - | 243.679.254  |
-|  - Riserva FTA transizione OIC | - | - | 3.274.987 | 3.274.987  |
-|  - Altre risorse | - | - | - | -  |
-|  VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | - | - | -  |
-|  VIII. Utili (perdite) portati e nuove | (451.866.361) | - | - | (451.866.361)  |
-|  IX. Utile (perdite) di portata | - | - | - | -  |
-|  **Totale Patrimonio Netto del Gruppo AS Roma** | **(111.443.894)** | **-** | **3.868.284** | **(107.575.610)**  |
-|  XI.1 Capitale e risorse di terzi | - | - | - | -  |
-|  XI.2 Utile (perdite) dell'esercizio di pertinenza di terzi | - | - | - | -  |
-|  **Totale Patrimonio dei Terzi** | **-** | **-** | **-** | **-**  |
-|  **TOTALE PATRIMONIO NETTO (E)** | **(111.443.894)** | **-** | **3.868.284** | **(107.575.610)**  |
-|  **B. FONDI PER RISCHI E ONERI** |  |  |  |   |
-|  2) per imposte, anche difiorite | - | - | - | -  |
-|  4) altri | 8.816.607 | - | - | 8.816.607  |
-|  **TOTALE FONDI PER RISCHI E ONERI (F)** | **8.816.607** | **-** | **-** | **8.816.607**  |
-|  **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | **2.331.156** | **-** | **(321.101)** | **2.010.056**  |
-|  **D. DEBITI** |  |  |  |   |
-|  1) obbligazioni | - | - | - | -  |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | (26.117) | - | - | (26.117)  |
-|  2) debiti verso soci per finanziamenti | - | - | - | -  |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 30.734.616 | - | - | 30.734.616  |
-|  4) debiti verso/anche | - | - | - | -  |
-|  - entro 12 mesi | 10.095.450 | - | - | 10.095.450  |
-|  - oltre 12 mesi | 5.857.499 | - | - | 5.857.499  |
-|  5) debiti verso altri finanziatori | - | - | - | -  |
-|  - entro 12 mesi | 23.817.522 | - | (5.706.886) | 18.030.636  |
-|  - oltre 12 mesi | 258.100.522 | - | (10.481.041) | 247.618.581  |
-|  7) debiti verso fornitori | - | - | - | -  |
-|  - entro 12 mesi | 45.073.135 | - | - | 45.073.135  |
-|  - oltre 12 mesi | 4.058.630 | - | - | 4.058.630  |
-|  9) debiti verso imprese controllate | - | - | - | -  |
-|  - entro 12 mesi | 16.394.333 | - | (1.620.500) | 16.767.833  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  11) debiti verso imprese controllanti | - | - | - | -  |
-|  - entro 12 mesi | 1.699.648 | - | - | 1.699.648  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  11-le(s) debiti verso imprese sotto il controllo delle controllanti | - | - | - | -  |
-|  - entro 12 mesi | 9.349 | - | 1.620.500 | 1.635.049  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  12) debiti tributati | - | - | - | -  |
-|  - entro 12 mesi | 21.938.261 | - | - | 21.938.261  |
-|  - oltre 12 mesi | 10.036.315 | - | - | 10.036.315  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale | - | - | - | -  |
-|  - entro 12 mesi | 3.088.838 | - | - | 3.088.838  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  14) altri debiti | - | - | - | -  |
-|  - entro 12 mesi | 40.612.014 | - | - | 40.612.014  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  15) debiti verso enti-vettore specifico | - | - | - | -  |
-|  - entro 12 mesi | 81.695.511 | - | - | 81.695.511  |
-|  - oltre 12 mesi | 47.102.377 | - | - | 47.102.377  |
-|  **TOTALE DEBITI (H)** | **613.277.903** | **-** | **(16.276.826)** | **596.999.077**  |
-|  **E. RATEI E RISCONTI PASSIVI** |  |  |  |   |
-|  - risconti passivi | - | - | - | -  |
-|  - entro 12 mesi | 9.659.146 | - | - | 9.659.146  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  **TOTALE RATEI E RISCONTI PASSIVI (I)** | **9.659.146** | **-** | **-** | **9.659.146**  |
-|  **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | **522.640.918** | **-** | **(12.731.643)** | **509.908.275**  |
 
 81
 
+| STATO PATRIMONIALE 1 LUGLIO 2021 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. PATRIMONIO NETTO** | | | | |
+| I. Capitale | 93.942.205 | | - | 93.942.205 |
+| VI. Altre riserve | | | - | |
+| - Riserva perdite attuariali | (593.297) | | 593.297 | - |
+| - Riserve copertura perdite infrannuali | 3.394.305 | | - | 3.394.305 |
+| - Riserva azionisti c/aumento di capitale | 243.679.254 | | - | 243.679.254 |
+| - Riserva FTA transizione OIC | - | | 3.274.987 | 3.274.987 |
+| - Altre riserve | - | | - | - |
+| VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | | - | - |
+| VIII. Utili (perdite) portati a nuovo | (451.866.361) | | - | (451.866.361) |
+| IX. Utile (perdita) di periodo | | | - | |
+| **Totale Patrimonio Netto del Gruppo AS Roma** | (111.443.894) | - | 3.868.284 | (107.575.610) |
+| XI.1 Capitale e riserve di terzi | - | | - | - |
+| XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | - | | - | - |
+| **Totale Patrimonio dei Terzi** | - | - | - | - |
+| **TOTALE PATRIMONIO NETTO (E)** | (111.443.894) | - | 3.868.284 | (107.575.610) |
+| **B. FONDI PER RISCHI E ONERI** | | | | |
+| 2) per imposte, anche differite | - | | - | - |
+| 4) altri | 8.816.607 | | - | 8.816.607 |
+| **TOTALE FONDI PER RISCHI E ONERI (F)** | 8.816.607 | - | - | 8.816.607 |
+| **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | 2.331.156 | - | (321.101) | 2.010.056 |
+| **D. DEBITI** | | | | |
+| 1) obbligazioni | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | (26.117) | | - | (26.117) |
+| 3) debiti verso soci per finanziamenti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 30.734.616 | | - | 30.734.616 |
+| 4) debiti verso banche | | | - | |
+| - entro 12 mesi | 10.095.450 | | - | 10.095.450 |
+| - oltre 12 mesi | 5.957.499 | | - | 5.957.499 |
+| 5) debiti verso altri finanziatori | | | - | |
+| - entro 12 mesi | 23.817.522 | | (5.796.886) | 18.020.636 |
+| - oltre 12 mesi | 258.100.522 | | (10.481.941) | 247.618.581 |
+| 7) debiti verso fornitori | | | - | |
+| - entro 12 mesi | 45.073.135 | | - | 45.073.135 |
+| - oltre 12 mesi | 4.058.630 | | - | 4.058.630 |
+| 9) debiti verso imprese controllate | | | - | |
+| - entro 12 mesi | 18.394.333 | | (1.626.500) | 16.767.833 |
+| - oltre 12 mesi | - | | - | - |
+| 11) debiti verso imprese controllanti | | | - | |
+| - entro 12 mesi | 1.699.648 | | - | 1.699.648 |
+| - oltre 12 mesi | - | | - | - |
+| 11-bis) debiti verso imprese sotto il controllo delle controllanti | | | - | |
+| - entro 12 mesi | 9.349 | - | 1.626.500 | 1.635.849 |
+| - oltre 12 mesi | - | | - | - |
+| 12) debiti tributari | | | - | |
+| - entro 12 mesi | 21.938.261 | | - | 21.938.261 |
+| - oltre 12 mesi | 10.836.315 | | - | 10.836.315 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | | - | |
+| - entro 12 mesi | 3.088.838 | | - | 3.088.838 |
+| - oltre 12 mesi | - | | - | - |
+| 14) altri debiti | | | - | |
+| - entro 12 mesi | 40.612.014 | | - | 40.612.014 |
+| - oltre 12 mesi | - | | - | - |
+| 15) debiti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 91.695.511 | | - | 91.695.511 |
+| - oltre 12 mesi | 47.192.377 | | - | 47.192.377 |
+| **TOTALE DEBITI (H)** | 613.277.903 | - | (16.278.826) | 596.999.077 |
+| **E. RATEI E RISCONTI PASSIVI** | | | | |
+| - risconti passivi | | | - | |
+| - entro 12 mesi | 9.659.146 | | - | 9.659.146 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI PASSIVI (I)** | 9.659.146 | - | - | 9.659.146 |
+| **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | 522.640.918 | - | (12.731.643) | 509.909.275 |
+
 --- pág. 82 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
-
-|  STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  B. IMMOBILIZZAZIONI  |   |   |   |   |
-|  I. Immobilizzazioni immateriali |  |  |  |   |
-|  4) concessioni, licenze, marchi e diritti civili | 56.480 | - | - | 56.480  |
-|  6) immobilizzazioni in corso e accenti | 64.324 | - | - | 64.324  |
-|  7) diritti pluriennali alle prestazioni dei calciatori | 165.471.512 | 1.890.070 | - | 167.361.582  |
-|  8) altre | 10.053.419 | - | (10.053.419) | 0  |
-|  TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI | 175.645.735 | 1.890.070 | (10.053.419) | 167.482.386  |
-|  II. Immobilizzazioni materiali |  |  |  |   |
-|  1) terreni e fabbricati | 6.741.566 | - | - | 6.741.566  |
-|  2) impianti e macchiutati | 524.298 | - | - | 524.298  |
-|  3) attrezzature industriali e commerciali | 618.196 | - | - | 618.196  |
-|  4) altri beni | 1.592.648 | - | - | 1.592.648  |
-|  5) immobilizzazioni in corso e accenti | 1.795.722 | - | - | 1.795.722  |
-|  TOTALE (II) - IMMOBILIZZAZIONI MATERIALI | 11.270.430 | - | - | 11.270.430  |
-|  III. Immobilizzazioni finanziarie |  |  |  |   |
-|  1) partecipazioni in: |  |  |  |   |
-|  a) imprese controllate | 132.543.101 | - | - | 132.543.101  |
-|  2) crediti: |  |  |  |   |
-|  d) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 2.700.000 | - | - | 2.700.000  |
-|  d-bis) verso altri |  |  |  |   |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 303.417 | - | - | 303.417  |
-|  TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE | 135.546.518 | - | - | 135.546.518  |
-|  TOTALE IMMOBILIZZAZIONI (B) (I+II+III) | 322.462.683 | 1.890.070 | (10.053.419) | 314.299.333  |
-|  C. ATTIVO CIRCOLANTE  |   |   |   |   |
-|  I. Rimanenze |  |  |  |   |
-|  4) prodotti finiti e merci | - | - | - | -  |
-|  TOTALE (I) - RIMANENZE | - | - | - | -  |
-|  II. Crediti |  |  |  |   |
-|  1) verso clienti |  |  |  |   |
-|  - entro 12 mesi | 2.981.221 | - | 1.340.000 | 4.321.221  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  2) verso imprese controllate |  |  |  |   |
-|  - entro 12 mesi | 94.547.121 | - | - | 94.547.121  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  4) verso imprese controllanti |  |  |  |   |
-|  - entro 12 mesi | 7.174.601 | - | - | 7.174.601  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5) verso imprese sottoposte al controllo delle controllanti |  |  |  |   |
-|  - entro 12 mesi | 198.053 | - | - | 198.053  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  5-bis) crediti tributari |  |  |  |   |
-|  - entro 12 mesi | 569.605 | - | - | 569.605  |
-|  - oltre 12 mesi | 35.000 | - | - | 35.000  |
-|  5-quater) verso altri |  |  |  |   |
-|  - entro 12 mesi | 22.049.090 | (1.890.070) | - | 20.159.020  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  6) crediti verso enti-settore specifici |  |  |  |   |
-|  - entro 12 mesi | 55.718.671 | - | (1.250.000) | 54.468.671  |
-|  - oltre 12 mesi | 5.385.161 | - | - | 5.385.161  |
-|  TOTALE (II) - CRÉDITI | 188.638.532 | (1.890.070) | 90.000 | 186.838.462  |
-|  IV. Disponibilità tipiche |  |  |  |   |
-|  1) depositi bancari e pastali | 17.341.326 | - | - | 17.341.326  |
-|  3) donate e valori in cassa | 7.793 | - | - | 7.793  |
-|  TOTALE (IV) - DISPONIBILITA' LIQUIDE | 17.349.119 | - | - | 17.349.119  |
-|  TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV) | 205.987.651 | (1.890.070) | 90.000 | 204.187.681  |
-|  D. RATELI E RISCONTI ATTIVI  |   |   |   |   |
-|  - risconti attivi |  |  |  |   |
-|  - entro 12 mesi | 3.946.930 | - | - | 3.946.930  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  TOTALE RATELI E RISCONTI (D) | 3.946.930 | - | - | 3.946.930  |
-|  TOTALE ATTIVO (A+B+C+D) | 532.307.264 | - | (5.983.419) | 522.433.865  |
 
 82
 
+| STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **B. IMMOBILIZZAZIONI** | | | | |
+| I. Immobilizzazioni immateriali | | | | |
+| 4) concessioni, licenze, marchi e diritti simili | 56.480 | | - | 56.480 |
+| 6) immobilizzazioni in corso e acconti | 64.324 | | - | 64.324 |
+| 7) diritti pluriennali alle prestazioni dei calciatori | 165.471.512 | 1.890.070 | - | 167.361.582 |
+| 8) altre | 10.053.419 | | (10.053.419) | 0 |
+| **TOTALE (I) - IMMOBILIZZAZIONI IMMATERIALI** | 175.645.735 | 1.890.070 | (10.053.419) | 167.482.386 |
+| II. Immobilizzazioni materiali | | | | |
+| 1) terreni e fabbricati | 6.741.566 | | - | 6.741.566 |
+| 2) impianti e macchinario | 524.298 | | - | 524.298 |
+| 3) attrezzature industriali e commerciali | 616.196 | | - | 616.196 |
+| 4) altri beni | 1.592.648 | | - | 1.592.648 |
+| 5) immobilizzazioni in corso e acconti | 1.795.722 | | - | 1.795.722 |
+| **TOTALE (II) - IMMOBILIZZAZIONI MATERIALI** | 11.270.430 | - | - | 11.270.430 |
+| III. Immobilizzazioni finanziarie | | | | |
+| 1) partecipazioni in: | | | | |
+| a) imprese controllate | 132.543.101 | | - | 132.543.101 |
+| 2) crediti: | | | - | |
+| d) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 2.700.000 | | - | 2.700.000 |
+| d-bis) verso altri | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 303.417 | | - | 303.417 |
+| **TOTALE (III) - IMMOBILIZZAZIONI FINANZIARIE** | 135.546.518 | - | - | 135.546.518 |
+| **TOTALE IMMOBILIZZAZIONI (B) (I+II+III)** | 322.462.683 | 1.890.070 | (10.053.419) | 314.299.333 |
+| **C. ATTIVO CIRCOLANTE** | | | | |
+| I. Rimanenze | | | | |
+| 4) prodotti finiti e merci | - | | - | - |
+| **TOTALE (I) - RIMANENZE** | - | - | - | - |
+| II. Crediti | | | | |
+| 1) verso clienti | | | | |
+| - entro 12 mesi | 2.981.221 | - | 1.340.000 | 4.321.221 |
+| - oltre 12 mesi | - | | - | - |
+| 2) verso imprese controllate | | | - | |
+| - entro 12 mesi | 94.547.121 | | - | 94.547.121 |
+| - oltre 12 mesi | - | | - | - |
+| 4) verso imprese controllanti | | | - | |
+| - entro 12 mesi | 7.174.601 | | - | 7.174.601 |
+| - oltre 12 mesi | - | | - | - |
+| 5) verso imprese sottoposte al controllo delle controllanti | | | - | |
+| - entro 12 mesi | 198.053 | | - | 198.053 |
+| - oltre 12 mesi | - | | - | - |
+| 5-bis) crediti tributari | | | - | |
+| - entro 12 mesi | 569.605 | | - | 569.605 |
+| - oltre 12 mesi | 35.008 | | - | 35.008 |
+| 5-quater) verso altri | | | - | |
+| - entro 12 mesi | 22.049.090 | (1.890.070) | - | 20.159.020 |
+| - oltre 12 mesi | - | | - | - |
+| 6) crediti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 55.718.671 | | (1.250.000) | 54.468.671 |
+| - oltre 12 mesi | 5.365.161 | | - | 5.365.161 |
+| **TOTALE (II) - CREDITI** | 188.638.532 | (1.890.070) | 90.000 | 186.838.462 |
+| IV. Disponibilità liquide | | | | |
+| 1) depositi bancari e postali | 17.341.326 | | - | 17.341.326 |
+| 3) danaro e valori in cassa | 7.793 | | - | 7.793 |
+| **TOTALE (IV) - DISPONIBILITA' LIQUIDE** | 17.349.119 | - | - | 17.349.119 |
+| **TOTALE ATTIVO CIRCOLANTE (C) (I+II+III+IV)** | 205.987.651 | (1.890.070) | 90.000 | 204.187.581 |
+| **D. RATEI E RISCONTI ATTIVI** | | | | |
+| - risconti attivi | | | - | |
+| - entro 12 mesi | 3.946.930 | | - | 3.946.930 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI (D)** | 3.946.930 | - | - | 3.946.930 |
+| **TOTALE ATTIVO (A+B+C+D)** | 532.397.264 | - | (9.963.419) | 522.433.845 |
+
 --- pág. 83 ---
 
-# RELAZIONE FINANZIARIA ANNUALE
-
+RELAZIONE FINANZIARIA ANNUALE
 PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-|  STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani  |
-| --- | --- | --- | --- | --- |
-|  **A. PATRIMONIO NETTO** |  |  |  |   |
-|  I. Capitale | 93.942.205 | - | - | 93.942.205  |
-|  VI. Altre risorse | - | - | - | -  |
-|  - Riserva perdite attuariali | (285.841) | - | 285.841 | -  |
-|  - Riserve copertura perdite infannuali | 3.394.305 | - | - | 3.394.305  |
-|  - Riserva adami/il c/aumento di capitale | 395.351.664 | - | - | 395.351.664  |
-|  - Riserva FTA transizione OIC | - | - | 3.274.987 | 3.274.987  |
-|  - Altre risorse | - | - | - | -  |
-|  VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | - | - | -  |
-|  VIII. US$ (perdita) portati o nuove | (451.866.361) | - | - | (451.866.361)  |
-|  IX. US$ (perdita) di periodo | (215.049.333) | - | 13.008 | (215.039.026)  |
-|  **Totale Patrimonio Netto del Gruppo AS Roma** | **(174.513.361)** | **-** | **3.574.134** | **(170.939.226)**  |
-|  XI.1 Capitale e risorse di terzi | - | - | - | -  |
-|  XI.2 US$ (perdita) dell'esercizio di pertinenza di terzi | - | - | - | -  |
-|  **Totale Patrimonio dei Terzi** | **-** | **-** | **-** | **-**  |
-|  **TOTALE PATRIMONIO NETTO (E)** | **(174.513.361)** | **-** | **3.574.134** | **(170.939.226)**  |
-|  **B. FONDI PER RISCHI E ONERI** |  |  |  |   |
-|  2) per imposte, anche differite | - | - | - | -  |
-|  4) altri | 29.543.124 | - | - | 29.543.124  |
-|  **TOTALE FONDI PER RISCHI E ONERI (F)** | **29.543.124** | **-** | **-** | **29.543.124**  |
-|  **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | **2.238.994** | **-** | **200.687** | **2.439.681**  |
-|  **D. DEBITI** |  |  |  |   |
-|  1) obbligazioni | - | - | - | -  |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | (51.367) | - | 51.367 | -  |
-|  2) debiti verso soci per finanziamenti | - | - | - | -  |
-|  - entro 12 mesi | - | - | - | -  |
-|  - oltre 12 mesi | 85.075.759 | - | - | 85.075.759  |
-|  4) debiti verso banche | - | - | - | -  |
-|  - entro 12 mesi | 7.081.885 | - | 184.288 | 7.249.173  |
-|  - oltre 12 mesi | 5.640.598 | - | (51.367) | 5.589.231  |
-|  5) debiti verso altri finanziatori | - | - | - | -  |
-|  - entro 12 mesi | 24.223.311 | - | (3.162.987) | 21.060.324  |
-|  - oltre 12 mesi | 265.604.080 | - | (7.657.021) | 257.947.059  |
-|  7) debiti verso fornitori | - | - | - | -  |
-|  - entro 12 mesi | 41.768.896 | - | (5.890.518) | 35.878.477  |
-|  - oltre 12 mesi | 5.422.710 | - | - | 5.422.710  |
-|  9) debiti verso imprese controllate | - | - | - | -  |
-|  - entro 12 mesi | 17.346.907 | - | - | 17.346.907  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  11) debiti verso imprese controllanti | - | - | - | -  |
-|  - entro 12 mesi | 288.052 | - | - | 288.052  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  11-bis) debiti verso imprese sotto il controllo delle controllanti | - | - | - | -  |
-|  - entro 12 mesi | 9.347 | - | 2.808.000 | 2.817.347  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  12) debiti tributari | - | - | - | -  |
-|  - entro 12 mesi | 49.175.010 | - | - | 49.175.010  |
-|  - oltre 12 mesi | 982.705 | - | - | 982.705  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale | - | - | - | -  |
-|  - entro 12 mesi | 6.684.112 | - | - | 6.684.112  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  14) altri debiti | - | - | - | -  |
-|  - entro 12 mesi | 24.759.994 | - | - | 24.759.994  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  15) debiti verso enti-settore specifica | - | - | - | -  |
-|  - entro 12 mesi | 67.301.809 | - | - | 67.301.809  |
-|  - oltre 12 mesi | 61.764.394 | - | - | 61.764.394  |
-|  **TOTALE DEBITI (H)** | **663.077.204** | **-** | **(13.738.241)** | **649.339.063**  |
-|  **E. RATEI E RISCONTI PASSIVI** |  |  |  |   |
-|  - triconti passivi | - | - | - | -  |
-|  - entro 12 mesi | 12.051.203 | - | - | 12.051.203  |
-|  - oltre 12 mesi | - | - | - | -  |
-|  **TOTALE RATEI E RISCONTI PASSIVI (I)** | **12.051.203** | **-** | **-** | **12.051.203**  |
-|  **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | **532.397.264** | **-** | **(8.963.419)** | **522.433.845**  |
+83
 
-## ESERCIZIO CHIUSO AL 30 GIUGNO 2022
+| STATO PATRIMONIALE 30 GIUGNO 2022 | Principi IAS/IFRS | Riclassifiche OIC | Rettifiche OIC | Principi contabili italiani |
+|---|---|---|---|---|
+| **A. PATRIMONIO NETTO** | | | | |
+| I. Capitale | 93.942.205 | | - | 93.942.205 |
+| VI. Altre riserve | | | - | |
+| - Riserva perdite attuariali | (285.841) | | 285.841 | - |
+| - Riserve copertura perdite infrannuali | 3.394.305 | | - | 3.394.305 |
+| - Riserva azionisti c/aumento di capitale | 395.351.664 | | - | 395.351.664 |
+| - Riserva FTA transizione OIC | - | | 3.274.987 | 3.274.987 |
+| - Altre riserve | - | | - | - |
+| VII. Riserva per operazioni di copertura dei flussi finanziari attesi | - | | - | - |
+| VIII. Utili (perdite) portati a nuovo | (451.866.361) | | - | (451.866.361) |
+| IX. Utile (perdita) di periodo | (215.049.333) | - | 13.306 | (215.036.026) |
+| **Totale Patrimonio Netto del Gruppo AS Roma** | (174.513.361) | - | 3.574.134 | (170.939.226) |
+| XI.1 Capitale e riserve di terzi | - | | - | - |
+| XI.2 Utile (perdita) dell'esercizio di pertinenza di terzi | - | | - | - |
+| **Totale Patrimonio dei Terzi** | - | - | - | - |
+| **TOTALE PATRIMONIO NETTO (E)** | (174.513.361) | - | 3.574.134 | (170.939.226) |
+| **B. FONDI PER RISCHI E ONERI** | | | | |
+| 2) per imposte, anche differite | - | | - | - |
+| 4) altri | 29.543.124 | | - | 29.543.124 |
+| **TOTALE FONDI PER RISCHI E ONERI (F)** | 29.543.124 | - | - | 29.543.124 |
+| **C. TRATTAMENTO FINE RAPPORTO LAVORO SUBORDINATO** | 2.238.994 | - | 200.687 | 2.439.681 |
+| **D. DEBITI** | | | | |
+| 1) obbligazioni | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | (51.367) | | 51.367 | - |
+| 3) debiti verso soci per finanziamenti | | | - | |
+| - entro 12 mesi | - | | - | - |
+| - oltre 12 mesi | 85.075.759 | | - | 85.075.759 |
+| 4) debiti verso banche | | | - | |
+| - entro 12 mesi | 7.081.886 | | 164.286 | 7.246.173 |
+| - oltre 12 mesi | 5.640.598 | | (51.367) | 5.589.231 |
+| 5) debiti verso altri finanziatori | | | - | |
+| - entro 12 mesi | 24.223.311 | | (3.162.987) | 21.060.324 |
+| - oltre 12 mesi | 265.604.080 | | (7.657.021) | 257.947.059 |
+| 7) debiti verso fornitori | | | - | |
+| - entro 12 mesi | 41.768.996 | | (5.890.519) | 35.878.477 |
+| - oltre 12 mesi | 5.422.710 | | - | 5.422.710 |
+| 9) debiti verso imprese controllate | | | - | |
+| - entro 12 mesi | 17.346.907 | | - | 17.346.907 |
+| - oltre 12 mesi | - | | - | - |
+| 11) debiti verso imprese controllanti | | | - | |
+| - entro 12 mesi | 288.052 | | - | 288.052 |
+| - oltre 12 mesi | - | | - | - |
+| 11-bis) debiti verso imprese sotto il controllo delle controllanti | | | - | |
+| - entro 12 mesi | 9.347 | - | 2.808.000 | 2.817.347 |
+| - oltre 12 mesi | - | | - | - |
+| 12) debiti tributari | | | - | |
+| - entro 12 mesi | 49.175.010 | | - | 49.175.010 |
+| - oltre 12 mesi | 982.705 | | - | 982.705 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | | - | |
+| - entro 12 mesi | 6.684.112 | | - | 6.684.112 |
+| - oltre 12 mesi | - | | - | - |
+| 14) altri debiti | | | - | |
+| - entro 12 mesi | 24.758.994 | | - | 24.758.994 |
+| - oltre 12 mesi | - | | - | - |
+| 15) debiti verso enti-settore specifico | | | - | |
+| - entro 12 mesi | 67.301.809 | | - | 67.301.809 |
+| - oltre 12 mesi | 61.764.394 | | - | 61.764.394 |
+| **TOTALE DEBITI (H)** | 663.077.304 | - | (13.738.241) | 649.339.063 |
+| **E. RATEI E RISCONTI PASSIVI** | | | | |
+| - risconti passivi | | | - | |
+| - entro 12 mesi | 12.051.203 | | - | 12.051.203 |
+| - oltre 12 mesi | - | | - | - |
+| **TOTALE RATEI E RISCONTI PASSIVI (I)** | 12.051.203 | - | - | 12.051.203 |
+| **TOTALE PASSIVO E PATRIMONIO NETTO (A+B+C+D+E)** | 532.397.264 | - | (9.963.419) | 522.433.845 |
 
-|   | Principi IAS/IFRS | Effetto Transizione OIC | Principi contabili italiani  |
-| --- | --- | --- | --- |
-|  Flusso finanziario dell'attività operativa (A) | (122.636.273) | (17.781.680) | (140.417.954)  |
-|  Flusso finanziario dell'attività di investimento (B) | (76.474.288) | 2.116.366 | (74.357.922)  |
-|  Flusso finanziario dell'attività di finanziamento (C) | 199.587.181 | 15.665.314 | 215.252.495  |
-|  **Incremento (decremento) delle disponibilità liquide (A x B x C)** | **476.619** | **(0)** | **476.619**  |
-|  **Disponibilità liquide all'inizio dell'esercizio** | **16.872.500** | **-** | **16.872.500**  |
-|  **Disponibilità liquide alla fine dell'esercizio** | **17.349.119** | **-** | **17.349.119**  |
+| ESERCIZIO CHIUSO AL 30 GIUGNO 2022 | Principi IAS/IFRS | Effetto Transizione OIC | Principi contabili italiani |
+|---|---|---|---|
+| Flusso finanziario dell'attività operativa (A) | (122.636.273) | (17.781.680) | (140.417.954) |
+| Flusso finanziario dell'attività di investimento (B) | (76.474.288) | 2.116.366 | (74.357.922) |
+| Flusso finanziario dell'attività di finanziamento (C) | 199.587.181 | 15.665.314 | 215.252.495 |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | 476.619 | (0) | 476.619 |
+| **Disponibilità liquide all'inizio dell'esercizio** | 16.872.500 | - | 16.872.500 |
+| **Disponibilità liquide alla fine dell'esercizio** | 17.349.119 | - | 17.349.119 |
 
-3.2.2. Commento alle principali rettifiche derivanti dall'applicazione dei principi contabili nazionali apportate alle voci degli stati patrimoniali al 1° luglio 2021 e al 30 giugno 2022 e del conto economico dell'esercizio 2022
+**3.2.2. Commento alle principali rettifiche derivanti dall'applicazione dei principi contabili nazionali apportate alle voci degli stati patrimoniali al 1° luglio 2021 e al 30 giugno 2022 e del conto economico dell'esercizio 2022**
 
 Si riporta di seguito una descrizione delle principali rettifiche operate nella transizione ai principi contabili nazionali:
-
-83
 
 --- pág. 84 ---
 
@@ -5155,74 +5135,71 @@ PROSPETTI DI INFORMATIVA SUPPLEMENTARE
 --- pág. 110 ---
 
 # RELAZIONE FINANZIARIA ANNUALE
+### PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
 
-PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2023
+### TABELLA DI MOVIMENTAZIONE DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DI CALCIATORI
 
-TABELLA DI MOVIMENTAZIONE DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DI CALCIATORI
+| CALCIATORE | DATA DI NASCITA | Data inizio contratto | Data scadenza | Data acquisto | Società Provenienza | Data Cessione | Società Destinazione | 1) Costo storico (30/06/2022) | 2) Fondo ammort. (30/06/2022) | 3) Valore Netto (30/06/2022) | 4) Acquisti ed altri diritti | 5) Cessioni ed altre variazioni | 5-bis) (Utilizzo Fondi ammort.) | 6) Ammort. | 7) Svalutaz. | 8) Minusv. | 9) Plusvalenze | Costo storico (30/06/2023) | Fondo di ammortamento e svalutaz. (30/06/2023) | Valore netto (30/06/2023) | Compenso Agenti (Competenza esercizio) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Abraham | 02/10/1997 | 17/8/21 | 30/6/26 | 17/8/21 | CHELSEA | | | 41.282 | (7.319) | 33.963 | 1.007 | | | (8.611) | | | | 42.289 | (15.930) | 26.358,30 | |
+| Afena | 19/01/2003 | 1/7/21 | 30/6/26 | 1/2/21 | EURAFRICA | | CREMONESE | 150 | (13) | 137 | | (150) | 13 | | | | 4.579 | - | - | 0,00 | |
+| Baldi | 21/03/2004 | 1/7/22 | 30/6/24 | 1/7/18 | SETTORE GIOVANILE | | | - | - | - | 455 | | | (47) | | | | 455 | (47) | 407,59 | 50 |
+| Bianda | 01/04/2000 | 27/6/18 | 30/6/23 | 27/6/18 | RACING CLUB DE LENS | | | 4.955 | (3.784) | 1.171 | | | | (1.171) | | | | 4.955 | (4.955) | 0,00 | |
+| Bove | 16/05/2002 | 12/9/20 | 30/6/25 | 13/8/18 | SETTORE GIOVANILE | | | 435 | (273) | 162 | | | | (70) | | | | 435 | (344) | 91,50 | |
+| Celik | 17/02/1997 | 5/7/22 | 30/6/26 | 5/7/22 | LILLE OSC | | | - | - | - | 7.383 | | | (1.832) | | | | 7.383 | (1.832) | 5.550,56 | 400 |
+| Ciervo | 01/04/2002 | 1/7/21 | 30/6/24 | 28/8/16 | SETTORE GIOVANILE | 31/08/2022 | SASSUOLO | 75 | (59) | 16 | | (75) | 59 | | | | 1.944 | - | - | 0,00 | |
+| Coric | 14/04/1997 | 1/7/18 | 30/6/23 | 28/5/18 | GNK DINAMO ZAGABRIA | | | 6.000 | (4.800) | 1.200 | | | | (1.200) | | | | 6.000 | (6.000) | 0,00 | |
+| Cristante | 03/03/1995 | 10/5/23 | 30/6/27 | 10/5/23 | ATALANTA | | | 29.584 | (22.253) | 7.331 | | | | (2.290) | | | | 29.584 | (24.543) | 5.041,18 | 435 |
+| Darboe | 06/06/2001 | 1/7/20 | 30/6/26 | 23/1/19 | SETTORE GIOVANILE | | | 75 | (15) | 60 | | | | (18) | | | | 75 | (33) | 42,00 | 60 |
+| Delvaux | 27/02/2004 | 1/7/22 | 30/6/23 | 1/7/18 | SETTORE GIOVANILE | | | - | - | - | 15 | | | (15) | | | | 15 | (15) | 0,00 | |
+| Diawara | 17/07/1997 | 1/7/19 | 30/6/24 | 1/7/19 | NAPOLI | 31/08/2022 | ANDERLECHT | 15.530 | (13.640) | 1.890 | | (15.530) | 13.740 | (100) | | | 450 | - | - | 0,00 | |
+| Falasca | 04/05/2004 | 1/7/22 | 30/6/23 | 1/7/18 | SETTORE GIOVANILE | | | - | - | - | 120 | | | (120) | | | | 120 | (120) | 0,00 | |
+| Feratovic | 05/07/2002 | 22/9/20 | 30/6/23 | 22/9/20 | NK BRAVO | | | 454 | (391) | 63 | | | | (63) | | | | 454 | (454) | 0,00 | |
+| Florenzi | 11/03/1991 | 1/7/18 | 30/6/23 | 1/7/02 | SETTORE GIOVANILE | 01/07/2022 | MILAN | 4.280 | (4.270) | 10 | | (4.280) | 4.036 | - | | | 1.936 | - | - | 0,00 | |
+| Fuzato | 04/07/1997 | 20/6/20 | 30/6/23 | 8/7/18 | PALMEIRAS | | | 473 | (426) | 47 | | | | (47) | | | | 473 | (473) | 0,00 | |
+| Greco | 19/06/2001 | 20/7/20 | 30/6/23 | 20/7/18 | SETTORE GIOVANILE | | | 30 | (17) | 13 | | | | (13) | | | | 30 | (30) | 0,00 | |
+| Ivkovic | 04/01/2006 | 22/1/22 | 30/6/24 | 22/1/22 | HAJDUK SP. | | | 600 | (105) | 495 | | | | (208) | | | | 600 | (313) | 287,84 | |
+| Keramitsis | 01/07/2004 | 1/7/21 | 30/6/25 | 1/7/21 | EMPOLI | | | 30 | (7) | 23 | 50 | | | (20) | | | | 80 | (27) | 53,33 | |
+| Kluivert | 05/05/1999 | 1/7/18 | 30/6/25 | 22/6/18 | AFC AJAX NV | | | 17.258 | (13.793) | 3.465 | | | | (2.052) | | | | 17.258 | (15.845) | 1.413,29 | 1.350 |
+| Kumbulla | 08/02/2000 | 17/8/20 | 30/6/25 | 17/8/20 | HELLAS VERONA | | | 29.500 | (11.063) | 18.437 | | | | (5.531) | | | | 29.500 | (16.594) | 12.906,25 | 1.350 |
+| Louakima | 28/02/2003 | 1/7/21 | 30/6/25 | 13/10/20 | PARIS S. GERMAIN | | | 170 | (60) | 110 | | | | (44) | | | | 170 | (104) | 66,28 | |
+| Mancini | 17/04/1996 | 12/7/22 | 30/6/27 | 17/7/19 | ATALANTA | | | 25.984 | (13.759) | 12.225 | | | | (2.445) | | | | 25.984 | (16.204) | 9.779,53 | |
+| Milanese | 21/11/2001 | 1/7/21 | 30/6/24 | 1/7/18 | SETTORE GIOVANILE | | CREMONESE | 120 | (37) | 83 | | (120) | 37 | | | | 711 | - | - | 0,00 | |
+| Missori | 24/03/2004 | 1/7/21 | 30/6/26 | 1/7/18 | SETTORE GIOVANILE | | SASSUOLO | - | - | - | 320 | | | (10) | | | 2.550 | 320 | (10) | 309,68 | |
+| N'Dicka | 20/08/1999 | 21/6/23 | 30/6/28 | 21/6/23 | SVINCOLATO | | | - | - | - | 4.000 | | | - | | | | 4.000 | - | 4.000,00 | |
+| Ngingi | 15/09/2003 | 1/7/21 | 30/6/23 | 29/1/20 | SETTORE GIOVANILE | | | 35 | (11) | 24 | | | | (24) | | | | 35 | (35) | 0,00 | |
+| Oliveras | 05/04/2004 | 1/7/22 | 30/6/26 | 1/7/20 | REAL MADRID | | | - | - | - | 130 | | | (26) | | | | 130 | (26) | 104,00 | |
+| Pau Lopez | 13/12/1994 | 8/7/19 | 30/6/24 | 8/7/19 | REAL BETIS BALOMPIE | 30/06/2022 | OLYMPIQUE DE MARSEILLE | 22.500 | (13.882) | 8.618 | | (22.500) | 15.078 | | | | 8.162 | - | - | 0,00 | |
+| Perez | 16/02/1998 | 29/1/20 | 30/6/24 | 29/1/20 | BARCELLONA | | CELTA VIGO | 13.865 | (11.590) | 2.275 | | | | (719) | | | | 13.865 | (12.309) | 1.556,40 | 2.865 |
+| Pisilli | 23/09/2004 | 1/7/22 | 30/6/26 | 1/7/18 | SETTORE GIOVANILE | | | - | - | - | 70 | | | (14) | | | | 70 | (14) | 56,00 | |
+| Podgoreanu | 09/07/2002 | 1/7/20 | 30/6/24 | 1/7/20 | MACCABI HAIFA | | | 292 | (100) | 192 | | | | (93) | | | | 292 | (193) | 99,44 | 1.000 |
+| Providence | 07/07/2001 | 29/7/19 | 30/6/24 | 29/7/19 | PARIS S. GERMAIN | | | 500 | (328) | 172 | | | | (112) | | | | 500 | (440) | 60,00 | |
+| Reynolds | 28/06/2001 | 3/2/21 | 30/6/25 | 1/2/21 | MAJOR LEAGUE SOCCER | | | 6.925 | (2.215) | 4.710 | | | | (1.570) | | | | 6.925 | (3.785) | 3.139,91 | 75 |
+| Rocchetti | 14/05/2003 | 1/7/21 | 30/6/24 | 1/7/18 | SETTORE GIOVANILE | | TRIESTINA | - | - | - | 40 | | | (7) | | | 1.757 | 40 | (7) | 33,33 | |
+| Rui Patricio | 15/02/1988 | 13/7/21 | 30/6/24 | 13/7/21 | WOLVERHAMPTON | | | 12.588 | (4.000) | 8.588 | 512 | | | (4.444) | | | | 13.100 | (8.444) | 4.655,70 | |
+| Satriano | 05/03/2003 | 1/7/21 | 30/6/24 | 24/9/20 | CROTONE | | HERACLES ALMELO | 150 | (150) | - | | (150) | 150 | - | | | - | - | - | 0,00 | |
+| Schick | 24/01/1996 | 2/7/18 | 30/6/22 | 29/8/17 | SAMPDORIA | | | - | - | - | | | | - | | | 400 | - | - | 0,00 | |
+| Shomurodov | 29/06/1995 | 2/8/21 | 30/6/26 | 2/8/21 | GENOA | | | 19.600 | (3.443) | 16.157 | | | | (4.039) | | | | 19.600 | (7.482) | 12.117,90 | 1.850 |
+| Smalling | 22/11/1989 | 15/6/23 | 30/6/25 | 5/10/20 | MANCHESTER UNITED | | | 17.050 | (8.763) | 8.287 | 1.750 | | | (4.694) | | | | 18.800 | (13.457) | 5.343,47 | 1.250 |
+| Spinazzola | 25/03/1993 | 1/7/19 | 30/6/24 | 1/7/19 | JUVENTUS | | | 29.500 | (17.098) | 12.402 | | | | (6.064) | | | | 29.500 | (23.162) | 6.337,50 | |
+| Svilar | 27/08/1999 | 1/7/22 | 30/6/27 | 1/7/22 | SVINCOLATO | | | - | - | - | 1.865 | | | (373) | | | | 1.865 | (373) | 1.491,78 | 1.500 |
+| Tahirovic | 03/03/2003 | 1/7/21 | 30/6/26 | 1/2/21 | VASALUNDS IF | | AJAX | 123 | (53) | 70 | | (123) | 53 | | | | 7.054 | - | - | 0,00 | |
+| Veretout | 01/03/1993 | 1/7/20 | 30/6/24 | 20/7/19 | FIORENTINA | 05/08/2022 | D. MARSIGLIA | 18.520 | (7.375) | 11.145 | | (18.520) | 7.825 | (450) | | 10 | | - | - | 0,00 | |
+| Vetkal | 21/02/2004 | 1/7/22 | 30/6/25 | 1/7/20 | KALEV TALLIN | | | - | - | - | 80 | | | (20) | | | | 80 | (20) | 60,00 | |
+| Vina | 09/11/1997 | 8/8/21 | 30/6/26 | 8/8/21 | PALMEIRAS | | | 15.635 | (2.807) | 12.828 | | | | (3.207) | | | | 15.635 | (6.014) | 9.620,77 | 1.500 |
+| Voelkerling | 21/08/2002 | 1/7/21 | 30/6/24 | 24/1/19 | TRELLEBORGS FF | 13/07/2022 | LECCE | 90 | (24) | 66 | | (90) | 24 | | | | 382 | - | - | 0,00 | |
+| Volpato | 15/11/2003 | 1/7/21 | 30/6/26 | 21/1/20 | WANDERERS | | SASSUOLO | 116 | (29) | 88 | 355 | | | (75) | | | 7.054 | 471 | (104) | 367,00 | |
+| Villar | 23/03/1998 | 29/1/20 | 30/6/24 | 29/1/20 | ELCHE | | | 5.100 | (2.736) | 2.364 | | | | (1.025) | | | | 5.100 | (3.761) | 1.338,71 | |
+| Vipotnik | 15/03/2002 | 1/7/22 | 30/6/25 | 1/7/21 | ND GORICA | | | - | - | - | 90 | | | (30) | | | | 90 | (30) | 60,00 | |
+| Wakwoel | 04/09/2003 | 1/7/22 | 30/6/24 | 1/7/21 | SPÖK STOCKSUND | | | - | - | - | 20 | | | (5) | | | | 20 | (5) | 14,57 | 15 |
+| Zalewski | 23/01/2002 | 1/7/21 | 30/6/25 | 1/7/18 | SETTORE GIOVANILE | | | 25 | (5) | 21 | | | | (6) | | | | 25 | (10) | 14,57 | |
+| Zaniolo | 02/07/1999 | 15/7/18 | 30/6/24 | 26/6/18 | INTERNAZIONALE | 08/02/2023 | GALATASARAY | 6.220 | (3.732) | 2.488 | | (6.220) | 5.012 | (1.279) | | | 14.253 | - | - | 0,00 | 2.100 |
+| Zezelj | 03/07/2006 | 1/7/22 | 30/6/25 | 1/7/22 | NK RADOMLJE | | | - | - | - | 66 | | | (22) | | | | 66 | (22) | 44,00 | |
+| **Totale diritti pluriennali alle prestazioni sportive** | | | | | | | | **329.428** | **(159.083)** | **170.345** | **17.287** | **(85.478)** | **55.223** | **(60.138)** | | **(10)** | **47.132** | **261.237** | **(154.003)** | **109.774,57** | **14.709** |
+| Attualizzazioni | | | | | | | | 16.484 | (19.468) | (2.984) | (1.443) | - | - | 3.993 | | - | - | 15.041 | (15.522) | (481,00) | - |
+| | | | | | | | | **345.912** | **(178.452)** | **167.361** | **15.844** | **(85.478)** | **55.223** | **(56.145)** | | **(10)** | **47.132** | **276.167** | **(168.174)** | **109.293,89** | **14.709** |
 
-| CALCIATORE | VITTORI IN VIZIO | Contratto | Prevenienza | Destinazione | Vizori in cui si portata (Vizori in Euro / DDD) | Variazioni valori di portata (Vizori in Euro / DDD) | Effetti economici di portata (Vizori in Euro / DDD) | Vizori di fine portata (Vizori in Euro / DDD) | Compenso Aggenti (Costo storico cicciono) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Data in cui si prima contratto | Data in cui si prima contratto | Data in cui si prima contratto | Data scopra | Società | Data Cecidario | Società | DISTRU/DDDD | Allargato di diritti | El Cescioni di diritti e ricercicioni | Il vizio (utilizzo e fienzi ammortamenti) n | El Ammort. | Il Svelvato | Il Minuto | Il Plusvulento | Delle distese | Rende di ammortamenti n | Vizze delle |
-| 1) Cesta startata | 2) Fiembo ammort. | 3) Valore inetta |
-| Alcantari | 02/10/1957 | 17/8/21 | 30/8/24 | 17/8/21 | CHELSEA |  |  | 41.283 | (7.235) | 22.932 | 1.657 | - | - | (8.977) | - | - | - | 42.289 | (15.930) | 29.456,50 | - |
-| Alfons | 10/01/2002 | 1/2/21 | 30/8/24 | 1/2/21 | ESMERICA |  | CREMONESE | 1.200 | (162) | 1.198 | - | (1.900) | 200 | (47) | - | - | 4.000 | - | - | 0,00 | 500 |
-| Barata | 04/04/2000 | 1/7/18 | 30/8/23 | 28/8/18 | BARAC C. DI LERE |  |  | 6.283 | (5.037) | 1.288 | - | - | - | (1.288) | - | - | - | 6.283 | (6.200) | 0,00 | 250 |
-| Biser | 10/05/2002 | 12/8/18 | 30/8/24 | 12/8/18 | VENICA |  |  | 489 | (263) | 107 | 18 | - | - | (40) | - | - | - | 489 | (400) | 31,90 | 35 |
-| Bova | 16/05/2002 | 16/8/18 | 30/8/23 | - | SETTORE BERNARLE |  |  | 75 | (55) | 49 | - | - | - | (70) | - | - | - | 75 | (45) | 25,91 | 75 |
-| Celafari | 10/05/2002 | 1/7/18 | 30/8/23 | - | SETTORE BERNARLE | 21/08/2022 | BASEL | 426 | (275) | 162 | - | (475) | 301 | (28) | - | - | 863 | - | - | 0,00 | 475 |
-| Cella | 17/02/1957 | 2/7/22 | 30/8/24 | 2/7/22 | LIBIO LISA DI |  |  | - | - | - | 7.383 | - | - | (1.858) | - | - | - | 7.383 | (1.858) | 5.144,93 | - |
-| Ciccarino | 22/07/2002 | 18/1/22 | 30/8/24 | - | SETTORE BERNARLE |  |  | - | - | - | 60 | - | - | (6) | - | - | - | 60 | (6) | 10,78 | 60 |
-| Coro | 14/04/1957 | 1/7/18 | 30/8/23 | 10/8/18 | GRIA FRANCI Z. |  |  | 9.000 | (7.200) | 1.800 | - | - | - | (1.800) | - | - | - | 9.000 | (9.000) | 0,00 | 1.000 |
-| Cristiano | 02/02/1959 | 1/7/18 | 30/8/27 | 1/7/18 | ATALANTA |  |  | 30.600 | (30.288) | 10.212 | - | - | - | (2.100) | - | - | - | 30.600 | (31.098) | 7.971,98 | 400 |
-| D'Vietolo | 21/02/2004 | - | - | - | - |  |  | - | - | - | - | - | - | - | - | - | 450 | - | - | 0,00 | - |
-| Durless | 05/06/1957 | 12/7/18 | 30/8/24 | 12/7/18 | VIGLIUS RISTI |  |  | 123 | (77) | 43 | - | - | - | (10) | - | - | - | 123 | (86) | 31,29 | 123 |
-| Edwards | 17/02/1957 | 1/7/18 | 30/8/24 | 1/7/18 | NAPOLI | 21/08/2022 | ANODILICAT | 15.633 | (13.742) | 1.890 | - | (15.633) | 12.742 | - | - | - | - | 0 | - | 0,00 | 1.500 |
-| E'Santa Sanna | 24/03/2000 | 12/2/21 | 30/8/24 | 15/10/21 | GIANT CLUB (CREMTAGNE) |  |  | - | - | - | 75 | - | - | (5) | - | - | - | 75 | (5) | 75,37 | - |
-| Faberici | 11/02/1957 | 2/10/22 | 30/8/23 | 20/8/23 | ELI GROTTINO | 01/07/2022 | MEAN | 4.800 | (4.036) | 484 | - | (4.800) | 4.036 | - | - | - | 1.936 | - | - | 0,00 | 2.000 |
-| Isola | 05/05/2000 | 22/7/20 | 30/8/23 | 22/7/20 | NR D'ENIDALE |  |  | - | - | - | 62 | - | - | (10) | - | - | - | 60 | (10) | 21,98 | - |
-| Isola | 23/11/1959 | 2/11/20 | 30/8/24 | 2/11/20 | ATALANTA |  |  | 12.363 | (5.357) | 7.043 | - | - | - | (1.763) | - | - | - | 12.363 | (7.008) | 5.283,19 | 1.200 |
-| Isosola | 04/01/2000 | 28/1/22 | 30/8/24 | 28/1/22 | MALISSA |  |  | 650 | (150) | 485 | - | - | - | (208) | - | - | - | 500 | (272) | 197,96 | - |
-| Kambrino | 11/02/1959 | 1/7/17 | 30/8/23 | 24/8/17 | PETRINOSPA A. |  |  | 16.400 | (15.587) | 3.015 | - | - | - | (1.004) | - | - | - | 16.400 | (14.321) | 2.008,83 | 500 |
-| Karpenitsa | 01/07/2004 | 22/8/27 | 30/8/24 | - | SETTORE IGRI |  |  | 30 | (5) | 31 | - | - | - | (10) | - | - | - | 30 | (10) | 10,50 | - |
-| Kovanni | 05/05/1959 | 1/7/18 | 30/8/24 | 23/8/18 | AFE AURE MV |  |  | 21.350 | (15.868) | 4.192 | - | (21.350) | 15.078 | (3.180) | - | - | 8.000 | - | - | 0,00 | 4.000 |
-| Kombasila | 08/02/2000 | 17/4/23 | 30/8/27 | 17/4/23 | HELMA VERONA |  |  | 29.500 | (15.002) | 18.480 | - | - | - | (4.228) | - | - | - | 29.500 | (15.237) | 14.333,70 | 1.000 |
-| Leese | 02/02/2004 | 31/1/23 | 30/8/23 | 29/8/23 | NR VISSOR PC |  |  | - | - | - | 600 | - | - | - | - | - | - | 600 | - | 600,00 | - |
-| Leurolina | 28/02/2002 | 1/10/20 | 30/8/23 | 21/8/20 | PARO L. GERMAN |  |  | 50 | (25) | 24 | 25 | - | - | (10) | - | - | - | 75 | (45) | 24,98 | - |
-| Manzini | 17/04/1956 | 17/7/18 | 30/8/27 | 17/7/18 | ATALANTA |  |  | 25.584 | (13.718) | 12.225 | - | - | - | (2.445) | - | - | - | 25.584 | (15.254) | 5.778,83 | 1.984 |
-| Maricella | 01/07/2002 | 5/7/18 | 30/8/24 | - | SETTORE BERNARLE |  | CREMONESE | 75 | (21) | 28 | - | (15) | 21 | - | - | - | 75 | - | - | 0,00 | 75 |
-| Mirzari | 24/02/2004 | 1/7/21 | 30/8/23 | - | SETTORE BERNARLE |  |  | - | - | - | - | - | - | - | - | - | 2.000 | - | - | 0,00 | - |
-| Moyer | 27/04/2006 | 22/7/22 | 30/8/22 | 30/8/22 | NR D'ENIDALE |  |  | - | - | - | 300 | - | - | (100) | - | - | - | 300 | (100) | 210,48 | - |
-| N'Elisha | 22/06/1959 | 21/8/23 | 30/8/24 | - | GIACIGLATO |  |  | - | - | - | 4.000 | - | - | - | - | - | - | 4.000 | - | 4.000,00 | - |
-| Orlando | 07/07/2004 | 27/8/20 | 30/8/23 | 18/8/20 | BARCELLIINA |  |  | 120 | (85) | 45 | - | - | - | (10) | - | - | - | 120 | (87) | 25,42 | - |
-| Palmezzo | 19/06/1959 | 1/7/17 | 30/8/24 | 1/7/17 | MANVALLE |  |  | 13.493 | (11.045) | 2.276 | - | - | - | (208) | - | - | - | 13.493 | (12.108) | 1.019,68 | 2.083 |
-| Parco | 10/02/1959 | 20/1/20 | 30/8/24 | 23/2/20 | BARCELLIINA |  |  | 14.000 | (7.534) | 9.466 | - | (14.000) | 12.767 | (3.233) | - | - | 1.767 | - | - | 0,00 | 1.500 |
-| Pecci | 23/02/2004 | 20/7/21 | 30/8/24 | - | SETTORE IGRI |  |  | - | - | - | 40 | - | - | (7) | - | - | - | 40 | (7) | 3,70 | - |
-| Provalpiano | 07/07/2001 | 25/7/16 | 30/8/24 | 29/7/15 | PARO L. GERMAN |  |  | 500 | (228) | 172 | - | (500) | 407 | (76) | - | - | 407 | - | - | 0,00 | 200 |
-| Raimontano | 02/02/2005 | 12/7/23 | 30/8/24 | 15/3/23 | BEERMA |  |  | - | - | - | 70 | - | - | (22) | - | - | - | 70 | (22) | 41,78 | - |
-| Raimondo | 28/05/2007 | 20/1/21 | 30/8/23 | 1/2/21 | MAYOR LAVALA DOZIER |  |  | 6.925 | (2.235) | 4.750 | - | - | - | (1.510) | - | - | - | 6.925 | (3.785) | 2.139,37 | 75 |
-| Ramona | 17/04/2006 | 2/8/22 | 30/8/24 | 20/7/20 | FE WESTERN AR AS |  |  | - | - | - | 54 | - | - | (20) | - | - | - | 54 | (20) | 54,54 | - |
-| San Antonio | 10/02/1959 | 13/7/21 | 30/8/24 | 10/7/21 | MOLVERHAMPTON |  |  | 12.588 | (4.000) | 8.088 | 372 | - | - | (4.444) | - | - | - | 12.100 | (8.444) | 4.655,00 | 200 |
-| Sanfiano | 31/11/2007 | - | - | - | - |  |  | - | - | - | - | - | - | - | - | - | 400 | - | - | 0,00 | - |
-| Schellanella | 24/10/1959 | 2/8/21 | 30/8/24 | 2/8/21 | VENICA |  |  | 15.600 | (3.442) | 18.187 | - | - | - | (4.208) | - | - | - | 15.600 | (7.482) | 12.177,00 | 1.000 |
-| Smalfino | 22/12/1959 | 20/8/19 | 30/8/23 | 5/10/20 | MARCHETTE UNITED |  |  | 17.383 | (10.792) | 6.383 | 526 | - | - | (5.716) | - | - | - | 18.023 | (10.443) | 1.576,65 | 1.700 |
-| Salvatese | 07/09/1959 | 3/1/23 | 30/8/27 | - | GIACIGLATO |  |  | - | - | - | 1.750 | - | - | (702) | - | - | - | 1.750 | (782) | 1.527,53 | - |
-| Spingolpa | 24/03/1959 | 1/7/19 | 30/8/24 | 30/8/19 | FE OVERSTUS |  |  | 20.800 | (18.570) | 12.220 | - | - | - | (8.710) | - | - | - | 20.800 | (24.488) | 6.514,37 | 1.200 |
-| Sutter | 27/08/1959 | 15/5/20 | 30/8/27 | 18/5/20 | GIACIGLATO |  |  | 1.893 | - | 1.893 | - | - | - | (373) | - | - | - | 1.893 | (373) | 1.431,78 | 1.500 |
-| Tabbiano | 05/03/2003 | 1/2/21 | 30/8/24 | 1/2/21 | VANILLINER IF |  |  | 100 | (54) | 206 | 205 | (558) | 729 | (78) | - | - | 7.074 | 0 | (0) | 0,00 | 100 |
-| Tabbiano | 05/03/1959 | 15/7/19 | 30/8/24 | 15/7/19 | AFE FRIENDTINA | 05/08/2022 | S. MARIOLIA | 18.500 | (11.000) | 7.474 | - | (18.500) | 11.000 | (208) | - | - | 3.000 | - | - | 0,00 | 1.500 |
-| Vadua | 21/02/2004 | 28/8/20 | 30/8/23 | 28/8/20 | BASAT TALUN |  |  | 80 | (10) | 28 | - | - | - | (10) | - | - | - | 80 | (60) | 14,50 | - |
-| Villar | 23/09/1959 | 30/1/20 | 30/8/24 | 30/1/20 | ELENE |  |  | 5.000 | (2.256) | 2.254 | - | - | - | (1.102) | - | - | - | 5.000 | (2.858) | 1.131,72 | 1.000 |
-| Vina | 05/10/1957 | 7/8/21 | 30/8/24 | 7/8/21 | PALMERAS |  |  | 15.500 | (2.857) | 12.928 | - | - | - | (3.307) | - | - | - | 15.500 | (9.374) | 5.610,73 | 1.500 |
-| Volpola | 15/11/2003 | 1/7/21 | 30/8/24 | - | SETTORE BERNARLE |  |  | 116 | (26) | 77 | - | (116) | 26 | (27) | - | - | 7.400 | - | - | 0,00 | - |
-| Volpola | 16/01/2003 | 15/8/21 | 30/8/24 | 15/8/21 | IRV FIGURGIANO |  |  | 30 | (9) | 21 | - | (30) | 20 | (10) | - | - | - | 0 | - | 0,00 | 2.000 |
-| Zolowat | 23/07/2002 | 16/7/19 | 30/8/23 | - | SETTORE BERNARLE |  |  | 150 | (38) | 50 | - | - | - | (50) | - | - | - | 150 | (50) | 60,07 | 150 |
-| Zolowat | 02/07/1959 | 1/7/18 | 30/8/24 | 29/8/18 | INTERMAGNALE |  |  | 8.000 | (5.288) | 2.142 | - | (8.000) | 5.010 | (844) | - | - | 14.000 | (5) | 0 | 0,00 | 2.000 |
-|  |  |  |  |  |  |  |  | 214.000 | (168.288) | 188.228 | 171.288 | (85.478) | 85.228 | (1.188) | (110) | - | 54.287 | (23.287) | 1.224,44 | 118.422,57 | 54.100 |
-|  |  |  |  |  |  |  |  | 224.816 | 50.628 | 104.100 | (5.444) | - | - | 4.400 | - | - | (7.000) | (25.200) | 25.102 | (10.100) | - |
-|  |  |  |  |  |  |  |  | 544.816 | (376.662) | 1607.967 | 15.844 | (85.478) | 68.222 | (50.845) | (10) | - | 47.102 | 276.167 | (168.574) | 109.202,89 | 54.100 |
-|  |
-
-Attu适应的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者购买的新能源消费者
+[Firma]
 
 --- pág. 111 ---
 

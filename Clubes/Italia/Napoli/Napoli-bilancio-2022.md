@@ -84,83 +84,68 @@ Pagina 3
 
 Bilancio al 30.06.2022
 
-# **Società Sportiva Calcio Napoli S.p.A.**
-
+**Società Sportiva Calcio Napoli S.p.A.**
 Sede legale: Via del Maio di Porto, 9 - Napoli
-
 Capitale Sociale i.v. € 501.000
-
-C. F./P.N.A e iscrizione Registro Imprese di Napoli : 04855461216
-
+C. F./P.IVA e iscrizione Registro Imprese di Napoli : 04855461218
 Iscrizione al Repertorio Economico Amministrativo di Napoli : 718539
+**Bilancio al 30 giugno 2022**
+redatto in unità Euro
 
-# **Bilancio al 30 giugno 2022**
+**STATO PATRIMONIALE**
 
-redattore in unita Euro
+| | | | al 30.06.2022 | | al 30.06.2021 |
+|---|---|---|---|---|---|
+| **ATTIVO** | | | | | |
+| | **IMMOBILIZZAZIONI** | | | | |
+| I | **Immobilizzazioni immateriali:** | | | | |
+| 4) | Concessioni, licenze, marchi e diritti simili | | 71.250.000 | | 75.000.000 |
+| 6) | Immobilizzazioni in corso e acconti | | 5.012 | | 5.012 |
+| 8) | Diritti pluriennali alle prestazioni calciatori | | 97.746.501 | | 126.093.178 |
+| 10) | Altre | | 480.740 | | 839.871 |
+| | **Totale Immobilizzazioni immateriali (I)** | | **169.482.253** | | **201.938.061** |
+| II | **Immobilizzazioni materiali** | | | | |
+| 2) | Impianti e macchinari | | 8.683 | | 39.383 |
+| 3) | Attrezzature industriali e commerciali | | 358.313 | | 403.124 |
+| 4) | Altri beni | | 22.432 | | 31.404 |
+| | **Totale Immobilizzazioni materiali (II)** | | **389.428** | | **473.911** |
+| III | **Immobilizzazioni finanziarie** | | | | |
+| 2) | Crediti | | | | |
+| | e) verso altri | | 103 | | 103 |
+| | Totale Crediti | | 103 | | 103 |
+| | **Totale Immobilizzazioni finanziarie (III)** | | **103** | | **103** |
+| | **TOTALE IMMOBILIZZAZIONI B )** | | **169.871.784** | | **202.412.075** |
+| | **ATTIVO CIRCOLANTE** | | | | |
+| I) | **Rimanenze** | | | | |
+| 4) | Prodotti finiti e merci | | 731.142 | | 291.296 |
+| | **Totale rimanenze (I)** | | **731.142** | | **291.296** |
+| II) | **Crediti** | | | | |
+| 1) | Verso clienti | | 18.752.099 | | 19.521.852 |
+| 4) | Verso imprese controllanti | | 15.420.449 | | 12.773.444 |
+| | di cui esigibili entro l'esercizio successivo | 430.911 | | 12.773.444 | |
+| | di cui esigibili oltre l'esercizio successivo | 14.989.538 | | 0 | |
+| 5) | Verso imprese sottoposte al controllo delle controllanti | | 195.613 | | 192.310 |
+| 5-bis) | Crediti tributari | | 502.109 | | 24.728 |
+| 5-ter) | Imposte anticipate | | 3.502.862 | | 3.872.377 |
+| | di cui esigibili entro l'esercizio successivo | 2.344.557 | | 2.528.744 | |
+| | di cui esigibili oltre l'esercizio successivo | 1.158.305 | | 1.343.633 | |
+| 5-quater) | Crediti verso Enti settore specifico | | 34.274.781 | | 73.332.496 |
+| | di cui esigibili entro l'esercizio successivo | 28.573.507 | | 46.832.496 | |
+| | di cui esigibili oltre l'esercizio successivo | 5.701.274 | | 26.500.000 | |
+| 6) | Verso altri | | 2.126.198 | | 9.540.973 |
+| | **Totale crediti (II)** | | **74.774.111** | | **119.268.180** |
+| IV) | **Disponibilità liquide** | | | | |
+| 1) | Depositi bancari e postali | | 107.815.470 | | 95.753.516 |
+| 3) | Denaro e valori in cassa | | 6.734 | | 4.534 |
+| | **Totale Disponibilità liquide (IV)** | | **107.822.204** | | **95.768.050** |
+| | **TOTALE ATTIVO CIRCOLANTE C )** | | **183.327.457** | | **215.307.526** |
+| | **RATEI E RISCONTI ATTIVI** | | | | |
+| I) | Ratei attivi | | 400 | | 377 |
+| II) | Risconti attivi | | 1.981.844 | | 58.568 |
+| | **TOTALE RATEI E RISCONTI ATTIVI** | | **1.982.244** | | **58.945** |
+| | **TOTALE ATTIVO** | | **355.181.485** | | **417.778.546** |
 
-|  STATO PATRIMONIALE | al 30.06.2022 | al 30.06.2021  |
-| --- | --- | --- |
-|  **ATTIVO**  |   |   |
-|  **IMMOBILIZZAZIONI**  |   |   |
-|  I | Immobilizzazioni immateriali: |   |
-|  4) | Concessioni, licenze, marchi e diritti simili | 71.250.000  |
-|  6) | Immobilizzazioni in corso e acconti | 5.012  |
-|  8) | Diritti pluriennali alle prestazioni calciatori | 97.746.501  |
-|  10) | Altre | 480.740  |
-|   | **Totale immobilizzazioni immateriali (I)** | **169.482.263**  |
-|   |  | **201.938.061**  |
-|  II | Immobilizzazioni materiali |   |
-|  2) | Impianti e macchinari | 8.683  |
-|  3) | Altrezzature industriali e commerciali | 358.313  |
-|  4) | Altri beni | 22.432  |
-|   | **Totale immobilizzazioni materiali (II)** | **389.428**  |
-|   |  | **373.911**  |
-|  III | Immobilizzazioni finanziarie |   |
-|  2) | Crediti |   |
-|   | e) verso altri | 103  |
-|   | **Totale Crediti** | **103**  |
-|   |  | **103**  |
-|   | **Totale Immobilizzazioni finanziarie (III)** | **103**  |
-|   | **TOTALE IMMOBILIZZAZIONI B )** | **169.871.784**  |
-|   |  | **202.412.075**  |
-|  **ATTIVO CIRCOLANTE**  |   |   |
-|  I) | Rimanenze |   |
-|  4) | Prodotti finiti e merci | 731.142  |
-|   | **Totale rimanenze (I)** | **731.142**  |
-|   |  | **291.296**  |
-|  II) | Crediti |   |
-|  1) | Verso clienti | 18.752.099  |
-|  4) | Verso imprese controllanti | 15.420.449  |
-|   | di cui esigibili entro l'esercizio successivo | 430.911  |
-|   | di cui esigibili oltre l'esercizio successivo | 14.989.538  |
-|  5) | Verso imprese sottoposte al controllo delle controllanti | 195.613  |
-|  5-bis) | Crediti tributari | 502.109  |
-|  5-ter) | Imposte anticipate | 3.502.862  |
-|   | di cui esigibili entro l'esercizio successivo | 2.344.557  |
-|   | di cui esigibili oltre l'esercizio successivo | 1.158.305  |
-|  5-quater) | Crediti verso Enti settore specifico | 34.274.781  |
-|   | di cui esigibili entro l'esercizio successivo | 28.573.507  |
-|   | di cui esigibili oltre l'esercizio successivo | 5.701.274  |
-|  6) | Verso altri | 2.126.198  |
-|   | **Totale crediti (II)** | **9.540.973**  |
-|   |  | **119.268.180**  |
-|  IV) | Disponibilità liquide |   |
-|  1) | Depositi bancari e postali | 107.815.470  |
-|  3) | Denaro e valori in cassa | 6.734  |
-|   | **Totale Disponibilità liquide (IV)** | **107.822.204**  |
-|   | **TOTALE ATTIVO CIRCOLANTE C )** | **183.327.457**  |
-|   |  | **215.307.526**  |
-|  **RATEI E RISCONTI ATTIVI**  |   |   |
-|  I) | Ratei attivi | 400  |
-|  II) | Risconti attivi | 1.981.844  |
-|   | **TOTALE RATEI E RISCONTI ATTIVI** | **1.982.244**  |
-|   |  | **58.945**  |
-|   | **TOTALE ATTIVO** | **355.181.485**  |
-|   |  | **417.778.546**  |
-
-SSC Napoli S.p.A.
-
-Pagina 4
+SSC Napoli S.p.A. — Pagina 4
 
 --- pág. 5 ---
 
@@ -332,133 +317,134 @@ Pagina 7
 
 Bilancio al 30.06.2022
 
-|  **RENDICONTO FINANZIARIO** | **periodo 01.07.21 - 30.06.2022 (13 mesi)** | **periodo 01.07.20 - 30.06.2021 (13 mesi)** | **Scostamenti**  |
-| --- | --- | --- | --- |
-|  **UTILE (PERDITA) DI PERIODO** | **-51.951.202** | **-58.941.765** | **6.990.563**  |
-|  Ammortamento costi diritti pluriennali prestazioni calciatori | 70.579.676 | 111.406.313 | -40.826.637  |
-|  Ammortamento altre immobilizzazioni immateriali | 4.109.131 | 359.087 | 3.750.044  |
-|  Ammortamento immobilizzazioni materiali | 156.059 | 156.210 | -151  |
-|  Variazione T.F.R. | 72.620 | 32.333 | 40.287  |
-|  Variazione Fondi per rischi e oneri | -12.197.238 | -17.065.900 | 4.868.662  |
-|  **AUTOFINANZIAMENTO ECONOMICO (A)** | **10.769.046** | **35.946.278** | **-25.177.232**  |
-|  Variazione rimanenze | 439.846 | 53.458 | 386.388  |
-|  Variazione crediti verso società calcistiche | -39.057.715 | -36.140.552 | -2.917.163  |
-|  Variazione crediti verso clienti | 1.426.975 | -17.147.666 | 18.574.641  |
-|  Variazione crediti tributari | 107.866 | -564.790 | 672.656  |
-|  Variazione crediti diversi | -7.414.777 | 8.338.566 | -15.753.343  |
-|  Variazione attività finanziarie | 0 | 0 | 0  |
-|  Variazione ratei e riscontri attivi | 1.923.299 | -3.816.431 | 5.739.730  |
-|  **Totale (B)** | **-42.574.506** | **-49.277.415** | **6.702.909**  |
-|  Variazione debiti verso società calcistiche | -31.018.594 | -15.129.747 | -15.888.847  |
-|  Variazione debiti commerciali | -16.385.438 | 16.133.423 | -32.518.861  |
-|  Variazione debiti tributari | 179.616 | 33.349.710 | -33.170.094  |
-|  Variazione debiti diversi | 1.740.598 | -25.227.480 | 26.968.078  |
-|  Variazione ratei e risconti passivi | -5.571.135 | -24.247.698 | 18.676.563  |
-|  **Totale (C)** | **-51.054.963** | **-15.121.792** | **-35.933.161**  |
-|  **VARIAZIONI NELLE ATTIVITÀ E NELLE PASSIVITÀ CORRENTI (D= B-C)** | **8.480.447** | **-34.155.623** | **42.636.070**  |
-|  **FLUSSO DI CASSA DELLA GESTIONE CORRENTE (E= A-D)** | **2.288.599** | **70.101.901** | **-67.613.302**  |
-|  Incremento (Decremento) netto diritti pluriennali prestazioni calciatori | 42.123.000 | 95.756.438 | -53.633.438  |
-|  Incremento (Decremento) netto altre immobilizzazioni immateriali | 0 | 2.266.750 | -2.266.750  |
-|  Incremento (Decremento) netto immobilizzazioni materiali | 71.576 | 139.032 | -67.456  |
-|  Incremento (Decremento) netto immobilizzazioni finanziarie | 0 | 0 | 0  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO (F)** | **-42.104.576** | **-98.162.220** | **95.967.644**  |
-|  Variazioni obbligazioni ordinarie e convertibili | 0 | 0 | 0  |
-|  Variazioni debiti verso soci per finanziamenti | 0 | 0 | 0  |
-|  Variazioni debiti verso banche | 51.970.131 | 0 | 51.970.131  |
-|  Variazioni debiti verso altri finanziatori | 0 | 0 | 0  |
-|  Variazioni debiti di natura finanziaria collegati a partecipazioni | 0 | 0 | 0  |
-|  Apporti di capitale | 0 | 0 | 0  |
-|  Distribuzioni di utili | 0 | 0 | 0  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ FINANZIARIA (G)** | **51.970.131** | **-** | **51.970.131**  |
-|  **INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (H= E,F+G)** | **12.064.154** | **-28.060.319** | **40.124.473**  |
-|  Disponibilità liquide all'inizio del periodo ( I ) | 95.758.050 | 123.818.369 | -28.060.319  |
-|  Disponibilità liquide alla fine del periodo ( L ) | 107.822.204 | 95.758.050 | 12.064.154  |
-|  **SALDO A PAREGGIO (M=L-I)** | **12.064.154** | **-28.060.319** | **40.124.473**  |
+**RENDICONTO FINANZIARIO**
 
-SSC Napoli S.p.A.
+| | periodo 01.07.21 - 30.06.2022 (12 mesi) | periodo 01.07.20 - 30.06.2021 (12 mesi) | Scostamenti |
+|---|---|---|---|
+| UTILE (PERDITA) DI PERIODO | -51.951.202 | -58.941.765 | 6.990.563 |
+| Ammortamento costi diritti pluriennali prestazioni calciatori | 70.579.676 | 111.406.313 | -40.826.637 |
+| Ammortamento altre immobilizzazioni immateriali | 4.109.131 | 359.087 | 3.750.044 |
+| Ammortamento immobilizzazioni materiali | 156.059 | 156.210 | -151 |
+| Variazione T.F.R. | 72.620 | 32.333 | 40.287 |
+| Variazione Fondi per rischi e oneri | -12.197.238 | -17.065.900 | 4.868.662 |
+| **AUTOFINANZIAMENTO ECONOMICO (A)** | **10.769.046** | **35.946.278** | **-25.177.232** |
+| Variazione rimanenze | 439.846 | 53.458 | 386.388 |
+| Variazione crediti verso società calcistiche | -39.057.715 | -36.140.552 | -2.917.163 |
+| Variazione crediti verso clienti | 1.426.975 | -17.147.666 | 18.574.641 |
+| Variazione crediti tributari | 107.866 | -564.790 | 672.656 |
+| Variazione crediti diversi | -7.414.777 | 8.338.566 | -15.753.343 |
+| Variazione attività finanziarie | 0 | 0 | 0 |
+| Variazione ratei e riscontri attivi | 1.923.299 | -3.816.431 | 5.739.730 |
+| **Totale (B)** | **-42.574.506** | **-49.277.415** | **6.702.909** |
+| Variazione debiti verso società calcistiche | -31.018.594 | -15.129.747 | -15.888.847 |
+| Variazione debiti commerciali | -16.385.438 | 16.133.423 | -32.518.861 |
+| Variazione debiti tributari | 179.616 | 33.349.710 | -33.170.094 |
+| Variazione debiti diversi | 1.740.598 | -25.227.480 | 26.968.078 |
+| Variazione ratei e risconti passivi | -5.571.135 | -24.247.698 | 18.676.563 |
+| **Totale (C)** | **-51.054.953** | **-15.121.792** | **-35.933.161** |
+| **VARIAZIONI NELLE ATTIVITÁ E NELLE PASSIVITÁ CORRENTI (D= B-C)** | **8.480.447** | **-34.155.623** | **42.636.070** |
+| **FLUSSO DI CASSA DELLA GESTIONE CORRENTE (E= A-D)** | **2.288.599** | **70.101.901** | **-67.813.302** |
+| Incremento (Decremento) netto diritti pluriennali prestazioni calciatori | 42.123.000 | 95.756.438 | -53.633.438 |
+| Incremento (Decremento) netto altre immobilizzazioni immateriali | 0 | 2.266.750 | -2.266.750 |
+| Incremento (Decremento) netto immobilizzazioni materiali | 71.576 | 139.032 | -67.456 |
+| Incremento (Decremento) netto immobilizzazioni finanziarie | 0 | 0 | 0 |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ DI INVESTIMENTO (F)** | **-42.194.576** | **-98.162.220** | **55.967.644** |
+| Variazioni obbligazioni ordinarie e convertibili | 0 | 0 | 0 |
+| Variazioni debiti verso soci per finanziamenti | 0 | 0 | 0 |
+| Variazioni debiti verso banche | 51.970.131 | 0 | 51.970.131 |
+| Variazioni debiti verso altri finanziatori | 0 | 0 | 0 |
+| Variazioni debiti di natura finanziaria collegati a partecipazioni | 0 | 0 | 0 |
+| Apporti di capitale | 0 | 0 | 0 |
+| Distribuzioni di utili | 0 | 0 | 0 |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ FINANZIARIA (G)** | **51.970.131** | - | **51.970.131** |
+| **INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (H= E-F+G)** | **12.064.154** | **-28.060.319** | **40.124.473** |
+| Disponibilità liquide all'inizio del periodo ( I ) | 95.758.050 | 123.818.369 | -28.060.319 |
+| Disponibilità liquide alla fine del periodo ( L ) | 107.822.204 | 95.758.050 | 12.064.154 |
+| **SALDO A PAREGGIO (M=L-I)** | **12.064.154** | **-28.060.319** | **40.124.473** |
 
-Pagina 8
+SSC Napoli S.p.A. — Pagina 8
 
 --- pág. 9 ---
 
 Bilancio al 30.06.2022
 
-# **Società Sportiva Calcio Napoli S.p.A.**
-**Rendiconto Finanziario - Manule Licenza UEFA Ed. 2020**
+### Società Sportiva Calcio Napoli S.p.A.
+#### Rendiconto Finanziario - Manule Licenza UEFA Ed. 2020
 
-|   | Stagione 2021/2022 | Stagione 2020/2021  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** |  |   |
-|  Utile (Perdita) dell'esercizio | (51.951.202) | (58.941.765)  |
-|  Imposte sul reddito | (13.621.427) | (19.006.326)  |
-|  Interessi passivi (interessi attivi) | 396.221 | (597.734)  |
-|  (Dividendi) | 0 | 0  |
-|  (Plusvalenze)/Minusvalenze derivanti dalla cessione di attività (incluse quelle derivanti dai diritti pluriennali alle prestazioni dei calciatori) | (3.900.895) | (47.529.657)  |
-|  **Utile (Perdita) dell'esercizio prima delle imposte sul reddito,** |  |   |
-|  **1. Interessi, dividendi e plus/minusvalenze da cessione** | **(69.077.303)** | **(126.075.492)**  |
-|  **Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto** | **75.528.491** | **115.254.659**  |
-|  Accantonamenti ai Fondi | 683.624 | 3.333.049  |
-|  Ammontamento delle Immobilizzazioni | 74.644.867 | 111.921.610  |
-|  Svalutazioni per perdite durevoli di valore | 0 | 0  |
-|  Altre rettifiche per perdite non monetarie | 0 | 0  |
-|  **2. Flusso Finanziario prima delle variazioni del CCN** | **6.461.188** | **(10.820.833)**  |
-|  **Variazioni del capitale circolante netto** | **(29.661.689)** | **25.575.029**  |
-|  Decremento /(Incremento) delle immanenze | (439.646) | (53.458)  |
-|  Decremento /(Incremento) dei crediti verso clienti | (769.753) | 17.621.681  |
-|  Incremento /(Decremento) dei debiti verso fornitori | (2.650.246) | 308.558  |
-|  Decremento /(Incremento) dei ratei e risconti attivi | (1.923.299) | 3.816.431  |
-|  Incremento /(Decremento) dei ratei e risconti passivi | (5.571.134) | (24.247.699)  |
-|  Altre variazioni del capitale circolante netto | (18.307.411) | 27.929.516  |
-|  **3. Flusso Finanziario dopo le variazioni del CCN** | **(23.210.501)** | **14.764.196**  |
-|  **Altre rettifiche** |  |   |
-|  Interessi incassati (pagati) | (190.670) | 1.120  |
-|  (Imposte sul reddito pagate) | (3.328.524) | (1.200.000)  |
-|  Dividendi incassati | 0 | 0  |
-|  (Utilizzo dei fondi) | (1.333.657) | (3.420.415)  |
-|  **Totale Altre Rettifiche** | **(4.852.851)** | **(4.619.296)**  |
-|  **Flusso Finanziario dell'Attività Operativa (A)** | **(28.063.352)** | **10.134.901**  |
-|  **B. Flussi finanziari derivanti dall'attività di investimento** |  |   |
-|  **Immobilizzazioni materiali** | **(71.576)** | **(139.031)**  |
-|  (Investimenti) | (71.576) | (139.031)  |
-|  Disinvestimenti | 0 | 0  |
-|  **Diritti pluriennali alle prestazioni dei calciatori** | **(11.771.049)** | **(35.789.438)**  |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (51.430.000) | (95.003.357)  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | 10.156.540 | 45.700.992  |
-|  (Incassi ) di crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (63.136.180) | (94.782.690)  |
-|  Pagamenti dei debiti per cessione diritti pluriennali alle prestazioni dei calciatori | 92.638.591 | 108.295.617  |
-|  **Altre Immobilizzazioni immateriali** | **0** | **(2.266.751)**  |
-|  (Investimenti) | 0 | (2.266.751)  |
-|  Disinvestimenti | 0 | 0  |
-|  **Immobilizzazioni Finanziarie** | **0** | **0**  |
-|  (Investimenti) | 0 | 0  |
-|  Disinvestimenti | 0 | 0  |
-|  **Attività Finanziarie non Immobilizzate** | **0** | **0**  |
-|  (Investimenti) | 0 | 0  |
-|  Disinvestimenti | 0 | 0  |
-|  **Totale Altre Attività di Investimento** | **0** | **0**  |
-|  **Flusso finanziario dell'attività di investimento (B)** | **(11.842.625)** | **(38.195.220)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  **Mezzi di terzi** | **51.970.131** | **0**  |
-|  Incremento (decremento) debiti a breve verso banche | 0 | 0  |
-|  Accensione finanziamenti | 52.125.942 | 0  |
-|  (Rimborso finanziamenti) | (155.811) | 0  |
-|  **Finanziamento Soci** | **0** | **0**  |
-|  Accensione finanziamenti | 0 | 0  |
-|  (Rimborso finanziamenti) | 0 | 0  |
-|  **Mezzi Propri** | **0** | **0**  |
-|  Aumento di capitale a pagamento | 0 | 0  |
-|  (Rimborso di capitale) | 0 | 0  |
-|  Cessione (acquisto) di azioni proprie | 0 | 0  |
-|  Dividendi (e acconti su dividendi) pagati | 0 | 0  |
-|  **Altre entrate (uscite) da attività di finanziamento** | **0** | **0**  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **51.970.131** | **0**  |
-|  **Incremento (Decremento) delle disponibilità liquide (A+B+C)** | **12.064.154** | **(28.060.319)**  |
-|  Disponibilità liquide all'inizio dell'esercizio | 95.758.050 | 123.818.369  |
-|  Disponibilità liquide alla fine dell'esercizio | 107.822.204 | 95.758.050  |
-|  Saldo a pareggio | 12.064.154 | (28.060.319)  |
+| | Stagione 2021/2022 | Stagione 2020/2021 |
+| :--- | :--- | :--- |
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| **Utile (Perdita) dell'esercizio** | (51.951.202) | (58.941.765) |
+| Imposte sul reddito | (13.621.427) | (19.006.326) |
+| Interessi passivi (interessi attivi) | 396.221 | (597.734) |
+| (Dividendi) | 0 | 0 |
+| (Plusvalenze)/Minusvalenze derivanti dalla cessione di attività (incluse quelle derivanti dai diritti pluriennali alle prestazioni dei calciatori) | (3.900.895) | (47.529.667) |
+| **Utile (Perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(69.077.303)** | **(126.075.492)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | **75.528.491** | **115.254.659** |
+| Accantonamenti ai Fondi | 683.624 | 3.333.049 |
+| Ammortamento delle Immobilizzazioni | 74.844.867 | 111.921.610 |
+| Svalutazioni per perdite durevoli di valore | 0 | 0 |
+| Altre rettifiche per perdite non monetarie | 0 | 0 |
+| **2. Flusso Finanziario prima delle variazioni del CCN** | **6.451.188** | **(10.820.833)** |
+| *Variazioni del capitale circolante netto* | **(29.661.689)** | **25.575.029** |
+| Decremento /(Incremento) delle rimanenze | (439.846) | (53.458) |
+| Decremento /(Incremento) dei crediti verso clienti | (769.753) | 17.821.681 |
+| Incremento /(Decremento) dei debiti verso fornitori | (2.650.246) | 308.558 |
+| Decremento /(Incremento) dei ratei e risconti attivi | (1.923.299) | 3.816.431 |
+| Incremento /(Decremento) dei ratei e risconti passivi | (5.571.134) | (24.247.699) |
+| Altre variazioni del capitale circolante netto | (18.307.411) | 27.929.516 |
+| **3. Flusso Finanziario dopo le variazioni del CCN** | **(23.210.501)** | **14.754.196** |
+| *Altre rettifiche* | | |
+| Interessi incassati (pagati) | (190.670) | 1.120 |
+| (Imposte sul reddito pagate) | (3.328.524) | (1.200.000) |
+| Dividendi incassati | 0 | 0 |
+| (Utilizzo dei fondi) | (1.333.657) | (3.420.415) |
+| **Totale Altre Rettifiche** | **(4.852.851)** | **(4.619.295)** |
+| **Flusso Finanziario dell'Attività Operativa (A)** | **(28.063.352)** | **10.134.901** |
+| | | |
+| **B Flussi finanziari derivanti dall'attività di investimento** | | |
+| **Immobilizzazioni materiali** | **(71.576)** | **(139.031)** |
+| (Investimenti) | (71.576) | (139.031) |
+| Disinvestimenti | 0 | 0 |
+| **Diritti pluriennali alle prestazioni dei calciatori** | **(11.771.049)** | **(35.789.438)** |
+| (Acquisizione) diritti pluriennali alla prestazioni dei calciatori | (51.430.000) | (95.003.357) |
+| Cessione diritti pluriennali alla prestazioni dei calciatori | 10.156.540 | 45.700.992 |
+| (Incassi) di crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (63.136.180) | (94.782.690) |
+| Pagamenti dei debiti per cessione diritti pluriennali alle prestazioni dei calciatori | 92.638.591 | 108.295.617 |
+| **Altre Immobilizzazioni Immateriali** | **0** | **(2.266.751)** |
+| (Investimenti) | 0 | (2.266.751) |
+| Disinvestimenti | 0 | 0 |
+| **Immobilizzazioni Finanziarie** | **0** | **0** |
+| (Investimenti) | 0 | 0 |
+| Disinvestimenti | 0 | 0 |
+| **Attività Finanziarie non Immobilizzate** | **0** | **0** |
+| (Investimenti) | 0 | 0 |
+| Disinvestimenti | 0 | 0 |
+| **Totale Altre Attività di Investimento** | **0** | **0** |
+| **Flusso finanziario dell'attività di investimento (B)** | **(11.842.625)** | **(38.195.220)** |
+| | | |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| **Mezzi di terzi** | **51.970.131** | **0** |
+| Incremento (decremento) debiti a breve verso banche | 0 | 0 |
+| Accensione finanziamenti | 52.125.942 | 0 |
+| (Rimborso finanziamenti) | (155.811) | 0 |
+| Finanziamento Soci | 0 | 0 |
+| Accensione finanziamenti | 0 | 0 |
+| (Rimborso finanziamenti) | 0 | 0 |
+| **Mezzi Propri** | **0** | **0** |
+| Aumento di capitale a pagamento | 0 | 0 |
+| (Rimborso di capitale) | 0 | 0 |
+| Cessione (acquisto) di azioni proprie | 0 | 0 |
+| Dividendi (e acconti su dividendi) pagati | 0 | 0 |
+| Altre entrate (uscite) da attività di finanziamento | 0 | 0 |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **51.970.131** | **0** |
+| | | |
+| **Incremento (Decremento) delle disponibilità liquide (A+B+C)** | **12.064.154** | **(28.060.319)** |
+| **Disponibilità liquide all'inizio dell'esercizio** | 95.758.050 | 123.818.369 |
+| **Disponibilità liquide alla fine dell'esercizio** | 107.822.204 | 95.758.050 |
+| **Saldo a pareggio** | 12.064.154 | (28.060.319) |
 
-SSC Napoli S.p.A.
-
+SSC Napoli S.p.A.  
 Pagina 9
 
 --- pág. 10 ---
@@ -988,31 +974,26 @@ Pagina 25
 
 Bilancio al 30.06.2022
 
-# **STATO PATRIMONIALE**
+### STATO PATRIMONIALE
 
-# **ATTIVO**
+#### ATTIVO
 
-# **IMMOBILIZZAZIONI**
+**IMMOBILIZZAZIONI** **Euro 169.871.784**
 
-**Euro 169.871.784**
-
-# **Immobilizzazioni Immateriali**
+**Immobilizzazioni Immateriali** **Euro 169.482.253**  
 (Euro 201.938.061 al 30 giugno 2021)
-
-**Euro 169.482.253**
 
 Di seguito si riporta la tabella di sintesi di composizione della voce:
 
-|  Immobilizzazioni Immateriali | 30-giu-21 |   |   | Costo Storico |   | F.di Amm.to |   | 30-giu-22  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Costo storico | Fondi Amm.to | Valore Netto | Incrementi | Decrementi/Altri movimenti | Incrementi | Decrementi /Altri movimenti | Costo storico | Fondi Amm.to | Valore Netto  |
-|  Diritti brevetto industriale e diritti di ut. opere ing. | 108.200 | (108.200) | 0 | 0 | 0 | 0 | 0 | 108.200 | (108.200) | 0  |
-|  Concessioni, licenze, marchi e diritti simili | 82.743.868 | (7.743.868) | 75.000.000 | 0 | 0 | (3.750.000) | 0 | 82.743.868 | (11.493.868) | 71.250.000  |
-|  Avviamento | 19.538.462 | (19.538.462) | 0 | 0 | 0 | 0 | 0 | 19.538.462 | (19.538.462) | 0  |
-|  Immobilizzazioni in corso e accenti | 5.012 | 0 | 5.012 | 0 | 0 | 0 | 0 | 5.012 | 0 | 5.012  |
-|  Diritti pluriennali prestazioni calciatori | 494.914.471 | (368.821.292) | 126.093.179 | 49.625.000 | (102.840.002) | (70.579.677) | 95.448.001 | 441.699.469 | (343.952.968) | 97.746.501  |
-|  Altre immobilizzazioni Immateriali | 2.057.573 | (1.217.702) | 839.871 | 0 | 0 | (359.131) | 0 | 2.057.573 | (1.576.833) | 480.740  |
-|  **Totale** | **599.367.566** | **(397.429.524)** | **201.938.062** | **49.625.000** | **(102.840.002)** | **(74.688.808)** | **95.448.001** | **546.192.584** | **(376.670.331)** | **169.482.253**  |
+| Immobilizzazioni Immateriali | Costo storico (30-giu-21) | Fondi Amm.to (30-giu-21) | Valore Netto (30-giu-21) | Incrementi (Costo Storico) | Decrementi/Altri movimenti (Costo Storico) | Incrementi (F.di Amm.to) | Decrementi /Altri movimenti (F.di Amm.to) | Costo storico (30-giu-22) | Fondi Amm.to (30-giu-22) | Valore Netto (30-giu-22) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Diritti brevetto industriale e diritti di ut. opere ing. | 108.200 | (108.200) | 0 | 0 | 0 | 0 | 0 | 108.200 | (108.200) | 0 |
+| Concessioni, licenze, marchi e diritti simili | 82.743.868 | (7.743.868) | 75.000.000 | 0 | 0 | (3.750.000) | 0 | 82.743.868 | (11.493.868) | 71.250.000 |
+| Avviamento | 19.538.462 | (19.538.462) | 0 | 0 | 0 | 0 | 0 | 19.538.462 | (19.538.462) | 0 |
+| Immobilizzazioni in corso e acconti | 5.012 | 0 | 5.012 | 0 | 0 | 0 | 0 | 5.012 | 0 | 5.012 |
+| Diritti pluriennali prestazioni calciatori | 494.914.471 | (368.821.292) | 126.093.179 | 49.625.000 | (102.840.002) | (70.579.677) | 95.448.001 | 441.699.469 | (343.952.968) | 97.746.501 |
+| Altre immobilizzazioni immateriali | 2.057.573 | (1.217.702) | 839.871 | 0 | 0 | (359.131) | 0 | 2.057.573 | (1.576.833) | 480.740 |
+| **Totale** | **599.367.586** | **(397.429.524)** | **201.938.062** | **49.625.000** | **(102.840.002)** | **(74.688.808)** | **95.448.001** | **546.152.584** | **(376.670.331)** | **169.482.253** |
 
 Gli incrementi della voce riguardano, principalmente, i "diritti pluriennali alle prestazioni sportive dei calciatori" per i quali, nel corso dell'esercizio in esame, sono stati investiti Euro 49.625.000 (Euro 98.355.358 nel precedente esercizio), comprensivi degli eventuali oneri accessori di diretta imputazione e dei premi riconosciuti ai Club cedenti per il raggiungimento degli obiettivi prefissati in sede di contratto di cessione. Le cessioni dei "diritti pluriennali alle prestazioni sportive dei calciatori", unitamente alle risoluzioni consensuali, pari complessivamente ad un totale netto di Euro 7.502.000 (Euro 2.598.920 nel precedente esercizio) hanno prodotto minusvalenze per un totale di Euro 5.892.000 (plusvalenze di Euro 33.845.571 nel precedente esercizio) al netto del Fondo Svalutazione Diritti Pluriennali alle Prestazioni dei Calciatori di Euro 110.000 stanziato al 30.06.2021.
 
@@ -1020,8 +1001,9 @@ Le informazioni relative alle movimentazioni dei diritti alle prestazioni dei ca
 
 Segnaliamo, inoltre, che nel precedente esercizio il marchio SSCN è stato rivalutato, secondo le modalità descritte nei criteri di valutazione e di iscrizione della presente nota integrativa, per un valore pari a Euro 75.000.000. Da questo esercizio è stato avviato l'ammortamento ventennale.
 
-SSC Napoli S.p.A.
+[Firma]
 
+SSC Napoli S.p.A.  
 Pagina 26
 
 --- pág. 27 ---
@@ -2410,94 +2392,83 @@ Pagina 62
 
 Bilancio al 30.06.2022
 
-# Allegato A - Tabella delle movimentazioni delle immobilizzazioni immateriali al 30 giugno 2022
+**Allegato A - Tabella delle movimentazioni delle immobilizzazioni immateriali al 30 giugno 2022**
 
-|  Immobilizzazioni Immateriali | al 30/06/2021 |   |   |   | Variazioni dell'esercizio |   |   |   |   |   | al 30/06/2022  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Costo | Instalazioni | Fondo | Valore a Bilancio | Variazioni del costo storico |   |   | Variazioni del fondo |   |   | Costo | Fondo | Valore Finale  |
-|   |   |   |   |   |  Innomenuti per Acquisti / Capitalizzazioni | Instalazioni | Devonamenti | Oficzione Fonde | Ammentamenti | Totale variazioni  |   |   |   |
-|  Diritti d'autore | 45.700 | 0 | (45.700) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 45.700 | (45.700) | 0  |
-|  Software - Web Store | 20.000 | 0 | (20.000) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20.000 | (20.000) | 0  |
-|  Software - Mobile | 42.500 | 0 | (42.500) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 42.500 | (42.500) | 0  |
-|  Diritti brevetto industriale e diritti di utilizzazione delle opere dell'ingegno | 108.200 | 0 | (108.200) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 108.200 | (108.200) | 0  |
-|  Marchi d'azienda | 75.000.000 | 0 | 0 | 75.000.000 | 0 | 0 | 0 | 0 | (3.750.000) | (3.750.000) | 75.000.000 | (3.750.000) | 71.250.000  |
-|  Denominazioni ad altri segni distintivi | 5.427.350 | 0 | (5.427.350) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5.427.350 | (5.427.350) | 0  |
-|  Turite | 1.356.838 | 0 | (1.356.838) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.356.838 | (1.356.838) | 0  |
-|  Licenze | 7.180 | 0 | (7.180) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.180 | (7.180) | 0  |
-|  Altri diritti | 952.500 | 0 | (952.500) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 952.500 | (952.500) | 0  |
-|  Concessioni, licenze, marchi e diritti simili | 82.743.868 | 0 | (7.743.868) | 75.000.000 | 0 | 0 | 0 | 0 | (3.750.000) | (3.750.000) | 82.743.868 | (11.493.868) | 71.250.000  |
-|  Avviamento | 19.538.462 | 0 | (19.538.462) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19.538.462 | (19.538.462) | 0  |
-|  Immobilizzazioni in corso e acconti | 5.012 | 0 | 0 | 5.012 | 0 | 0 | 0 | 0 | 0 | 0 | 5.012 | 0 | 5.012  |
-|  Diritti pluriennali prestazioni calciatori - 1° squadra | 494.866.471 | (110.000) | (268.695.092) | 126.061.379 | 49.600.000 | 110.000 | (102.950.000) | 95.448.000 | (70.552.157) | (28.344.158) | 441.516.469 | (343.799.248) | 97.717.221  |
-|  Diritti pluriennali prestazioni calciatori - davanti | 49.000 | 0 | (19.000) | 31.800 | 25.000 | 0 | 0 | 0 | (27.520) | (2.520) | 73.000 | (43.720) | 29.280  |
-|  Diritti pluriennali prestazioni calciatori | 494.914.471 | (110.000) | (268.711.292) | 126.093.179 | 49.625.000 | 110.000 | (102.950.000) | 95.448.000 | (70.579.677) | (28.346.678) | 441.589.469 | (343.842.968) | 97.746.501  |
-|  Altre immobilizzazioni immateriali | 2.057.573 | 0 | (1.217.702) | 839.871 | 0 | 0 | 0 | 0 | (359.131) | (359.131) | 2.057.573 | (1.576.633) | 480.740  |
-|  - Miglioria per immobili ed impianti di terzi | 2.061.573 | 0 | (1.161.702) | 839.871 | 0 | 0 | 0 | 0 | (359.131) | (359.131) | 2.061.573 | (1.520.833) | 480.740  |
-|  Spese incrementative Stadio D.A. Maradona | 4.000 | 0 | (690) | 3.110 | 0 | 0 | 0 | 0 | (444) | (444) | 4.000 | (1.334) | 2.666  |
-|  Spese incrementative Castel Voltrano | 1.912.132 | 0 | (1.075.502) | 836.630 | 0 | 0 | 0 | 0 | (358.556) | (358.556) | 1.912.132 | (1.434.058) | 478.074  |
-|  Spese incrementative Negozia Stazione | 55.792 | 0 | (55.792) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 55.792 | (55.792) | 0  |
-|  Spese incrementative Molo Beverello | 1.900 | 0 | (1.900) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.900 | (1.900) | 0  |
-|  Spese incrementative C.C.C. | 27.749 | 0 | (27.516) | 131 | 0 | 0 | 0 | 0 | (131) | (131) | 27.749 | (27.749) | 0  |
-|  - Portale Web | 56.000 | 0 | (56.000) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 56.000 | (56.000) | 0  |
-|  **Totale** | **599.367.585** | **(110.000)** | **(397.315.524)** | **201.938.062** | **49.625.000** | **110.000** | **(102.950.000)** | **95.448.000** | **(74.688.808)** | **(32.455.809)** | **546.042.584** | **(376.560.331)** | **169.482.253**  |
+(Tabella ruotata. Colonne: al 30/06/2021 [Costo, Svalutazioni, Fondo, Valore a bilancio] | Variazioni dell'esercizio – Variazioni del costo storico [Incrementi per Acquisti/Capitalizzazioni, Svalutazioni, Decrementi] | Variazioni del fondo [Chiusura Fondo, Ammortamenti, Totale variazioni] | al 30/06/2022 [Costo, Fondo, Valore Finale])
 
-Pagina 63
+| Immobilizzazioni Immateriali | Costo 30/06/21 | Svalut. | Fondo | Valore a bilancio | Incrementi per Acquisti/Capitalizz. | Svalutazioni | Decrementi | Chiusura Fondo | Ammortamenti | Totale variazioni | Costo 30/06/22 | Fondo 30/06/22 | Valore Finale |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Diritti d'autore | 45.700 | 0 | (45.700) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 45.700 | (45.700) | 0 |
+| Software - Web Store | 20.000 | 0 | (20.000) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20.000 | (20.000) | 0 |
+| Software - Mobile | 42.500 | 0 | (42.500) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 42.500 | (42.500) | 0 |
+| **Diritti brevetto industriale e diritti di utilizzazione delle opere dell'ingegno** | 108.200 | 0 | (108.200) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 108.200 | (108.200) | 0 |
+| Marchi d'azienda | 75.000.000 | 0 | 0 | 75.000.000 | 0 | 0 | 0 | 0 | (3.750.000) | (3.750.000) | 75.000.000 | (3.750.000) | 71.250.000 |
+| Denominazioni ed altri segni distintivi | 5.427.350 | 0 | (5.427.350) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5.427.350 | (5.427.350) | 0 |
+| Trofei | 1.356.838 | 0 | (1.356.838) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.356.838 | (1.356.838) | 0 |
+| Licenze | 7.180 | 0 | (7.180) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.180 | (7.180) | 0 |
+| Altri diritti | 952.500 | 0 | (952.500) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 952.500 | (952.500) | 0 |
+| **Concessioni, licenze, marchi e diritti simili** | 82.743.868 | 0 | (7.743.868) | 75.000.000 | 0 | 0 | 0 | 0 | (3.750.000) | (3.750.000) | 82.743.868 | (11.493.868) | 71.250.000 |
+| **Avviamento** | 19.538.462 | 0 | (19.538.462) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19.538.462 | (19.538.462) | 0 |
+| **Immobilizzazioni in corso e acconti** | 5.012 | 0 | 0 | 5.012 | 0 | 0 | 0 | 0 | 0 | 0 | 5.012 | 0 | 5.012 |
+| Diritti pluriennali prestazioni calciatori - 1ª squadra | 494.866.471 | (110.000) | (368.695.092) | 126.061.379 | 49.600.000 | 110.000 | (102.950.000) | 95.448.000 | (70.552.157) | (28.344.158) | 441.516.469 | (343.799.248) | 97.717.221 |
+| Diritti pluriennali prestazioni calciatori - giovanili | 48.000 | 0 | (16.200) | 31.800 | 25.000 | 0 | 0 | 0 | (27.520) | (2.520) | 73.000 | (43.720) | 29.280 |
+| **Diritti pluriennali prestazioni calciatori** | 494.914.471 | (110.000) | (368.711.292) | 126.093.179 | 49.625.000 | 110.000 | (102.950.000) | 95.448.000 | (70.579.677) | (28.346.678) | 441.589.469 | (343.842.968) | 97.746.501 |
+| **Altre Immobilizzazioni Immateriali** | 2.057.573 | 0 | (1.217.702) | 839.871 | 0 | 0 | 0 | 0 | (359.131) | (359.131) | 2.057.573 | (1.576.833) | 480.740 |
+| - Migliorie per immobili ed impianti di terzi | 2.001.573 | 0 | (1.161.702) | 839.871 | 0 | 0 | 0 | 0 | (359.131) | (359.131) | 2.001.573 | (1.520.833) | 480.740 |
+| Spese incrementative Stadio D.A. Maradona | 4.000 | 0 | (890) | 3.110 | 0 | 0 | 0 | 0 | (444) | (444) | 4.000 | (1.334) | 2.666 |
+| Spese incrementative Castel Volturno | 1.912.132 | 0 | (1.075.502) | 836.630 | 0 | 0 | 0 | 0 | (358.556) | (358.556) | 1.912.132 | (1.434.058) | 478.074 |
+| Spese incrementative Negozio Stazione | 55.792 | 0 | (55.792) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 55.792 | (55.792) | 0 |
+| Spese incrementative Moio Beverello | 1.900 | 0 | (1.900) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1.900 | (1.900) | 0 |
+| Spese incrementative C.C.C. | 27.749 | 0 | (27.618) | 131 | 0 | 0 | 0 | 0 | (131) | (131) | 27.749 | (27.749) | 0 |
+| - Portale Web | 56.000 | 0 | (56.000) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 56.000 | (56.000) | 0 |
+| **Totale** | **599.367.586** | **(110.000)** | **(397.319.524)** | **201.938.062** | **49.625.000** | **110.000** | **(102.950.000)** | **95.448.000** | **(74.688.808)** | **(32.455.809)** | **546.042.584** | **(376.560.331)** | **169.482.253** |
 
-SSC Napoli S.p.A.
+SSC Napoli S.p.A. — Pagina 63
 
 --- pág. 64 ---
 
 Bilancio al 30.06.2022
 
-# Allegato A - Tabella delle movimentazioni delle immobilizzazioni materiali al 30 giugno 2022
+**Allegato A - Tabella delle movimentazioni delle immobilizzazioni materiali al 30 giugno 2022**
 
-|  Immobilizzazioni Materiali | al 30/06/2021 |   |   |   | Variazioni dell'esercizio |   |   |   | al 30/06/2022  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Costo | Involutazioni | Fondo | Valore a bilancio | Variazioni del costo storico |   |   | Variazioni del fondo |   | Costo | Fondo | Valore Finale  |
-|   |   |   |   |   |  Incrementi per Acquiat. i Capitalizzazioni | Involutazioni | Incrementi | Chiusura Fondo | Ammortamenti  |   |   |   |
-|  Macchinari specifici | 28.047 | 0 | (27.312) | 735 | 0 | 0 | 0 | 0 | (388) | 28.047 | (27.701) | 346  |
-|  Impianti generici | 20.410 | 0 | (10.828) | 3.584 | 0 | 0 | 0 | 0 | (1.179) | 20.410 | (18.000) | 2.405  |
-|  Impianti specifici | 140.257 | 0 | (105.193) | 35.064 | 6.979 | 0 | 0 | 0 | (36.112) | 147.236 | (141.304) | 5.932  |
-|  Impianti e macchinari | 168.714 | 0 | (149.331) | 39.383 | 6.979 | 0 | 0 | 0 | (37.680) | 166.683 | (167.010) | 6.683  |
-|  Attrezzature specifiche | 760.276 | 0 | (533.323) | 226.953 | 43.300 | 0 | 0 | 0 | (56.809) | 803.576 | (590.131) | 213.445  |
-|  Attrezzature varie | 15.770 | 0 | (12.643) | 3.127 | 0 | 0 | 0 | 0 | (2.607) | 15.770 | (15.250) | 520  |
-|  Mozelli e annesi | 608.462 | 0 | (492.378) | 116.108 | 2.753 | 0 | 0 | 0 | (29.503) | 611.235 | (521.679) | 89.356  |
-|  Macchine ufficio ordinarie | 969 | 0 | (969) | 0 | 0 | 0 | 0 | 0 | 0 | 969 | (969) | 0  |
-|  Macchine ufficio elettroniche sistemi telefonici | 189.004 | 0 | (141.651) | 47.353 | 17.845 | 0 | (889) | 889 | (17.481) | 205.960 | (158.243) | 47.717  |
-|  Realizzazione stand mobile | 36.850 | 0 | (36.527) | 323 | 0 | 0 | 0 | 0 | (323) | 36.850 | (36.850) | 0  |
-|  Attrezzatura somministrazione alimenti/bevande | 17.547 | 0 | (8.285) | 9.262 | 697 | 0 | 0 | 0 | (2.684) | 18.244 | (10.969) | 7.275  |
-|  Attrezzature industriali e Commerciali | 1.628.898 | 0 | (1.225.774) | 403.124 | 64.595 | 0 | (889) | 889 | (103.407) | 1.002.004 | (1.334.291) | 356.313  |
-|  Autoveicoli | 35.890 | 0 | (4.486) | 31.404 | 0 | 0 | 0 | 0 | (8.972) | 35.890 | (13.458) | 22.432  |
-|  Automezzi e mezzi di trasporto | 35.890 | 0 | (4.486) | 31.404 | 0 | 0 | 0 | 0 | (8.972) | 35.890 | (13.458) | 22.432  |
-|  **Totale** | **1.853.502** | **0** | **(1.379.591)** | **473.911** | **71.574** | **0** | **(889)** | **889** | **(156.059)** | **1.924.187** | **(1.534.759)** | **389.428**  |
+(Tabella ruotata. Stesse colonne dell'Allegato A precedente.)
 
-SSC Napoli S.p.A.
+| Immobilizzazioni Materiali | Costo 30/06/21 | Svalut. | Fondo | Valore a bilancio | Incrementi per Acquisti/Capitalizz. | Svalutazioni | Decrementi | Chiusura Fondo | Ammortamenti | Totale variazioni | Costo 30/06/22 | Fondo 30/06/22 | Valore Finale |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Macchinari specifici | 28.047 | 0 | (27.312) | 735 | 0 | 0 | 0 | 0 | (389) | (389) | 28.047 | (27.701) | 346 |
+| Impianti generici | 20.410 | 0 | (16.826) | 3.584 | 0 | 0 | 0 | 0 | (1.179) | (1.179) | 20.410 | (18.005) | 2.405 |
+| Impianti specifici | 140.257 | 0 | (105.193) | 35.064 | 6.979 | 0 | 0 | 0 | (36.112) | (29.132) | 147.236 | (141.304) | 5.932 |
+| **Impianti e macchinari** | 188.714 | 0 | (149.331) | 39.383 | 6.979 | 0 | 0 | 0 | (37.680) | (30.700) | 195.693 | (187.010) | 8.683 |
+| Attrezzature specifiche | 760.276 | 0 | (533.323) | 226.953 | 43.300 | 0 | 0 | 0 | (56.809) | (13.508) | 803.576 | (590.131) | 213.445 |
+| Attrezzature varia | 15.770 | 0 | (12.643) | 3.127 | 0 | 0 | 0 | 0 | (2.607) | (2.607) | 15.770 | (15.250) | 520 |
+| Mobili e arredi | 608.482 | 0 | (492.376) | 116.106 | 2.753 | 0 | 0 | 0 | (29.503) | (26.750) | 611.235 | (521.879) | 89.356 |
+| Macchine ufficio ordinarie | 869 | 0 | (869) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 869 | (869) | 0 |
+| Macchine ufficio elettroniche sistemi telefonici | 189.004 | 0 | (141.651) | 47.353 | 17.845 | 0 | (889) | 889 | (17.481) | 364 | 205.960 | (158.243) | 47.717 |
+| Realizzazione stand mobile | 36.850 | 0 | (36.527) | 323 | 0 | 0 | 0 | 0 | (323) | (323) | 36.850 | (36.850) | 0 |
+| Attrezzatura somministrazione alimenti/bevande | 17.547 | 0 | (8.265) | 9.262 | 697 | 0 | 0 | 0 | (2.684) | (1.987) | 18.244 | (10.969) | 7.275 |
+| **Attrezzature Industriali e Commerciali** | 1.628.898 | 0 | (1.225.774) | 403.124 | 64.595 | 0 | (889) | 889 | (109.407) | (44.811) | 1.692.604 | (1.334.291) | 358.313 |
+| ................... | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Autoveicoli | 35.690 | 0 | (4.486) | 31.404 | 0 | 0 | 0 | 0 | (8.972) | (8.972) | 35.690 | (13.458) | 22.432 |
+| **Automezzi e mezzi di trasporto** | 35.690 | 0 | (4.486) | 31.404 | 0 | 0 | 0 | 0 | (8.972) | (8.972) | 35.690 | (13.458) | 22.432 |
+| **Totale** | **1.853.502** | **0** | **(1.379.591)** | **473.911** | **71.574** | **0** | **(889)** | **889** | **(156.059)** | **(84.483)** | **1.924.187** | **(1.534.759)** | **389.428** |
 
-Pagina 64
+SSC Napoli S.p.A. — Pagina 64
 
 --- pág. 65 ---
 
 Bilancio al 30.06.2022
 
-# **Allegato B - Tabella di movimentazione dei diritti pluriennali alle prestazioni dei calciatori al 30 giugno 2022**
+**Allegato B - Tabella di movimentazione dei diritti pluriennali alle prestazioni dei calciatori al 30 giugno 2022**
 
 TABELLA DI MOVIMENTAZIONE DEI DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI AL 30/06/2022
 
-|  MATERIA | DATA DI GESTIONE | RESIDENZA |   | NUMERO | QUOTAZIONE |   | RESIDENZA |   | NUMERO | RESIDENZA |   | NUMERO | RESIDENZA |   | NUMERO | RESIDENZA |   | NUMERO | RESIDENZA |   | NUMERO | RESIDENZA  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA |   | DATA DI GESTIONE | RESIDENZA  |
-|   |  | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA | DATA DI GESTIONE | RESIDENZA  |
-|  Progetto scientifico | 30.06.2022 | 6.762,12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022  |
-|  Progetto scientifico | 6.762,12 | 6.762,12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022  |
-|  Progetto scientifico | 6.762,12 | 6.762,12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022  |
-|  Progetto scientifico | 6.762,12 | 6.762,12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2  |
-|  Progetto scientifico | 6.762,12 | 6.762,12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2022 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2 | 7-12 | 28.06.2  |
+(Tabella ruotata, con un elenco di calciatori in righe y decine de colonnas en cuerpo muy pequeño. Estructura de columnas aproximada: calciatore; data di nascita; Contratto [data inizio prima scadenza contratto, data inizio/scadenza ultimo contratto]; durata/anni; data acquisto; provenienza [società]; data cessione; destinazione [società]; valori inizio periodo 01.07.2021 [costo storico, f.do amm.to e svalutazione, netto]; variazioni di periodo [acquisti e capitalizzazioni, ...]; effetti economici di periodo [ammortamento, minusvalenze, plusvalenze, ...]; valori di fine periodo 30.06.2022 [costo storico, f.do amm.to, netto]; Valore [Corrispettivo Agenti, Altri oneri di acquisizione]; ...)
 
-Data: 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022 - 30.06.2022
+[ilegible] — el contenido de las filas (nombres de calciatori, fechas, sociedades de procedencia/destino y todas las cifras) y la fila TOTALE no son legibles con la resolución del documento.
 
-SSC Napoli S.p.A.
+[ilegible] — nota al pie de la tabla.
 
-Pagina 65
+SSC Napoli S.p.A. — Pagina 65
 
 --- pág. 66 ---
 
@@ -2603,45 +2574,47 @@ Pagina 67
 
 Bilancio al 30.06.2022
 
-# Allegato D 2
+### Allegato D 2
 
-# Dettaglio debiti verso Società Calcistiche per premi diversi al 30 giugno 2022
+#### Dettaglio debiti verso Società Calcistiche per premi diversi al 30 giugno 2022
 
-|  Società | Calciatore | Scadenza ultima | Saldo al 30.06.2022 | scadenze entro 12 mesi dal 30.06.2022 | scadenze oltre 12 mesi dal 30.06.2022  |
-| --- | --- | --- | --- | --- | --- |
-|  Spal S.r.l. | Polagna Andrea | 30-apr-23 | 3.000.000 | 3.000.000 | 0  |
-|  A.C. Chievo Verona S.r.l. | Di Dona Domenico | 30-apr-23 | 7.000 | 7.000 | 0  |
-|  Hellas Verona F.C. S.p.A. | Rrahmani Amir | 30-apr-23 | 700.000 | 700.000 | 0  |
-|  Empoli F.B.C. S.p.A. | Di Lorenzo Giovanni | 30-apr-23 | 500.000 | 500.000 | 0  |
-|  AS Roma S.p.A. | Rui Mario | 30-apr-23 | 250.000 | 250.000 | 0  |
-|  Udinese Calcio S.p.A. | Meret Alex | 30-apr-23 | 1.000.000 | 1.000.000 | 0  |
-|  Udinese Calcio S.p.A. | Zielenski Piotr | 30-apr-23 | 400.000 | 400.000 | 0  |
-|  F.C. Internazionale Milano S.p.A. | Politano Matteo | 30-apr-23 | 500.000 | 500.000 | 0  |
-|  Bologna F.C. 1909 S.p.A. | Verdi Simone | 30-apr-23 | 1.000.000 | 1.000.000 | 0  |
-|  **Totale** |  |  | **7.357.000** | **7.357.000** | **0**  |
+| Società | Calciatore | Scadenza ultima | Saldo al 30.06.2022 | scadenze entro 12 mesi dal 30.06.2022 | scadenze oltre 12 mesi dal 30.06.2022 |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Spal S.r.l. | Petagna Andrea | 30-apr-23 | 3.000.000 | 3.000.000 | 0 |
+| A.C. Chievo Verona S.r.l. | Di Dona Domenico | 30-apr-23 | 7.000 | 7.000 | 0 |
+| Hellas Verona F.C. S.p.A. | Rrahmani Amir | 30-apr-23 | 700.000 | 700.000 | 0 |
+| Empoli F.B.C. S.p.A. | Di Lorenzo Giovanni | 30-apr-23 | 500.000 | 500.000 | 0 |
+| AS Roma S.p.A. | Rui Mario | 30-apr-23 | 250.000 | 250.000 | 0 |
+| Udinese Calcio S.p.A. | Meret Alex | 30-apr-23 | 1.000.000 | 1.000.000 | 0 |
+| Udinese Calcio S.p.A. | Zielenski Piotr | 30-apr-23 | 400.000 | 400.000 | 0 |
+| F.C. Internazionale Milano S.p.A. | Politano Matteo | 30-apr-23 | 500.000 | 500.000 | 0 |
+| Bologna F.C. 1909 S.p.A. | Verdi Simone | 30-apr-23 | 1.000.000 | 1.000.000 | 0 |
+| **Totale** | | | **7.357.000** | **7.357.000** | **0** |
 
-# Allegato E – Dettaglio Costi - Ricavi e Crediti - Debiti verso società controllante e verso società correlate al 30 giugno 2022
+---
 
-|  Conto Economico - Costi (Ricavi) vs ... | Filmauro S.r.l. | Auro Servizi S.r.l. | Cineservices S.r.l. | Cinema Europa S.r.l. | Olimpia 80 Immobiliare S.r.l. | S.S.C. BARI S.p.A. | Totali  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Vendita Prodotti finiti | 0 | 0 | 0 | 0 | 0 | (1.500) | (1.500)  |
-|  Riaddebito commissioni fidejussorie | 13.624 | 0 | 0 | 0 | 0 | 0 | 13.624  |
-|  Riaddebito spese telefoniche | 6.799 | 0 | 0 | 0 | 0 | 0 | 6.799  |
-|  Management fee | 110.000 | 0 | 0 | 0 | 0 | 0 | 110.000  |
-|  Outsourcing servizi amministrativi | 0 | 400.000 | 40.000 | 0 | 0 | 0 | 440.000  |
-|  Altri servizi | 173.277 | 0 | 0 | 0 | 0 | 0 | 173.277  |
-|  **Totale c/economici** | **303.700** | **400.000** | **40.000** | **0** | **0** | **(1.500)** | **742.200**  |
+#### Allegato E – Dettaglio Costi - Ricavi e Crediti - Debiti verso società controllante e verso società correlate al 30 giugno 2022
 
-|  Conti patrimoniali - Crediti (Debiti) vs ... | Filmauro S.r.l. | Auro Servizi S.r.l. | Cineservices S.r.l. | Cinema Europa S.r.l. | Olimpia 80 Immobiliare S.r.l. | S.S.C. BARI S.p.A. | Totali  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Crediti Commerciali | 1.823 | 13.417 | 586 | 12.795 | 31.280 | 1.575 | 61.476  |
-|  Debiti Commerciali | (167.031) | (758.400) | (24.400) | 0 | 0 | 0 | (947.831)  |
-|  Crediti diversi | 196.441 | 0 | 0 | 11.346 | 124.614 | 0 | 332.401  |
-|  Debiti Diversi | (26) | 0 | 0 | 0 | 0 | 0 | (26)  |
-|  Crediti da Consolidato fiscale | 15.195.650 | 0 | 0 | 0 | 0 | 0 | 15.195.650  |
-|  Crediti da Consolidato Iva | 26.535 | 0 | 0 | 0 | 0 | 0 | 26.535  |
-|  Debiti da Consolidato Iva | (694.655) | 0 | 0 | 0 | 0 | 0 | (694.655)  |
-|  **Totale c/patrimoniali** | **14.558.737** | **(742.983)** | **(23.814)** | **24.141** | **155.894** | **1.575** | **13.973.550**  |
+| Conto Economico - Costi (Ricavi) vs ... | Filmauro S.r.l. | Auro Servizi S.r.l. | Cineservices S.r.l. | Cinema Europa S.r.l. | Olimpia 80 Immobiliare S.r.l. | S.S.C. BARI S.p.A. | Totali |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Vendita Prodotti finiti | 0 | 0 | 0 | 0 | 0 | (1.500) | (1.500) |
+| Raddebito commissioni fidejussorie | 13.624 | 0 | 0 | 0 | 0 | 0 | 13.624 |
+| Raddebito spese telefoniche | 6.799 | 0 | 0 | 0 | 0 | 0 | 6.799 |
+| Management fee | 110.000 | 0 | 0 | 0 | 0 | 0 | 110.000 |
+| Outsourcing servizi amministrativi | 0 | 400.000 | 40.000 | 0 | 0 | 0 | 440.000 |
+| Altri servizi | 173.277 | 0 | 0 | 0 | 0 | 0 | 173.277 |
+| **Totale c/economici** | **303.700** | **400.000** | **40.000** | **0** | **0** | **(1.500)** | **742.200** |
+
+| Conti patrimoniali - Crediti (Debiti) vs ... | Filmauro S.r.l. | Auro Servizi S.r.l. | Cineservices S.r.l. | Cinema Europa S.r.l. | Olimpia 80 Immobiliare S.r.l. | S.S.C. BARI S.p.A. | Totali |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Crediti Commerciali | 1.823 | 13.417 | 586 | 12.795 | 31.280 | 1.575 | 61.476 |
+| Debiti Commerciali | (167.031) | (756.400) | (24.400) | 0 | 0 | 0 | (947.831) |
+| Crediti diversi | 196.441 | 0 | 0 | 11.346 | 124.614 | 0 | 332.401 |
+| Debiti Diversi | (26) | 0 | 0 | 0 | 0 | 0 | (26) |
+| Crediti da Consolidato fiscale | 15.195.650 | 0 | 0 | 0 | 0 | 0 | 15.195.650 |
+| Crediti da Consolidato Iva | 26.535 | 0 | 0 | 0 | 0 | 0 | 26.535 |
+| Debiti da Consolidato Iva | (694.655) | 0 | 0 | 0 | 0 | 0 | (694.655) |
+| **Totale c/patrimoniali** | **14.558.737** | **(742.983)** | **(23.814)** | **24.141** | **155.894** | **1.575** | **13.973.550** |
 
 SSC Napoli S.p.A.
 

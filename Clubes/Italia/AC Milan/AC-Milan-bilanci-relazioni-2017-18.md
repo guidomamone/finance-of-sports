@@ -2899,43 +2899,45 @@ Prospetto delle variazioni delle immobilizzazioni materiali
 
 --- pág. 116 ---
 
-# Allegato n. 4
+– 115 –
 
-# Prospetto delle variazioni del patrimonio netto
+Allegato n. 4
 
-(valori in migliaia furo)
+Prospetto delle variazioni del patrimonio netto
 
-|   | Capitale sociale | Riserva sovrapprezzazioni | Riserva legale | Riserva Statutarie | Altre Riserve | Utili (Perdite) portati a nuovo | Utile (Perdita) dell'esercizio | Totale Patrimonio Netto  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Patrimonio netto al 31.12.2014 | 24.960 | — | 124 | — | (28.005) | (17.410) | (91.285) | (111.616)  |
-|  Ripartizione del risultato d'esercizio 2014 | — | — | — | — | (91.285) | — | 91.285 | —  |
-|  Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 150.000 | — | — | 150.000  |
-|  Ripianamenti perdite | — | — | — | — | — | — | — | —  |
-|  Altre variazioni | — | — | — | — | 138 | — | — | 138  |
-|  Risultato del periodo | — | — | — | — | — | — | (89.079) | (89.079)  |
-|  Patrimonio netto al 31.12.2015 | 24.960 | — | 124 | — | 30.848 | (17.410) | (89.079) | (50.557)  |
-|  Ripartizione del risultato d'esercizio 2015 | — | — | — | — | (89.301) | 222 | 89.079 | —  |
-|  Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 75.000 | — | — | 75.000  |
-|  Ripianamenti perdite | — | — | — | — | — | — | — | —  |
-|  Altre variazioni | — | — | — | — | — | 1 | — | 1  |
-|  Risultato del periodo | — | — | — | — | — | — | (74.871) | (74.871)  |
-|  Patrimonio netto al 31.12.2016 | 24.960 | — | 124 | — | 16.547 | (17.187) | (74.871) | (50.427)  |
-|  Ripartizione del risultato d'esercizio 2016 | — | — | — | — | (74.871) | — | 74.871 | —  |
-|  Aumenti di capitale sociale | 49.920 | 9.600 | — | — | — | — | — | 59.520  |
-|  Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 53.500 | — | — | 53.500  |
-|  Ripianamenti perdite | — | — | — | — | — | — | — | —  |
-|  Altre variazioni | — | — | — | — | 1 | (1) | — | —  |
-|  Risultato del periodo | — | — | — | — | — | — | (32.624) | (32.624)  |
-|  Patrimonio netto al 30.06.2017 | 74.880 | 9.600 | 124 | — | (4.823) | (17.188) | (32.624) | 29.969  |
-|  Ripartizione del risultato d'esercizio 2017 | — | — | — | — | (32.624) | — | 32.624 | —  |
-|  Aumenti di capitale sociale | 38.563 | 21.420 | — | — | — | — | — | 59.903  |
-|  Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | — | — | — | —  |
-|  Ripianamenti perdite | — | — | — | — | — | — | — | —  |
-|  Altre variazioni | — | — | — | — | 24 | — | — | 24  |
-|  Risultato del periodo | — | — | — | — | — | — | (126.019) | (126.019)  |
-|  Patrimonio netto al 30.06.2018 | 113.443 | 31.020 | 124 | — | (37.423) | (17.188) | (126.019) | (36.043)  |
+(valori in migliaia Euro)
 
-- 115 -
+| | Capitale sociale | Riserva sovrapprezzo azioni | Riserva legale | Riserve Statutarie | Altre Riserve | Utili (Perdite) portati a nuovo | Utile (Perdita) dell'esercizio | Totale Patrimonio Netto |
+|---|---|---|---|---|---|---|---|---|
+| **Patrimonio netto al 31.12.2014** | 24.960 | — | 124 | — | (28.005) | (17.410) | (91.285) | (111.616) |
+| Ripartizione del risultato d'esercizio 2014 | — | — | — | — | (91.285) | — | 91.285 | — |
+| Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 150.000 | — | — | 150.000 |
+| Ripianamenti perdite | — | — | — | — | — | — | — | — |
+| Altre variazioni | — | — | — | — | 138 | — | — | 138 |
+| Risultato del periodo | — | — | — | — | — | — | (89.079) | (89.079) |
+| **Patrimonio netto al 31.12.2015** | 24.960 | — | 124 | — | 30.848 | (17.410) | (89.079) | (50.557) |
+| Ripartizione del risultato d'esercizio 2015 | — | — | — | — | (89.301) | 222 | 89.079 | — |
+| Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 75.000 | — | — | 75.000 |
+| Ripianamenti perdite | — | — | — | — | — | — | — | — |
+| Altre variazioni | — | — | — | — | — | 1 | — | 1 |
+| Risultato del periodo | — | — | — | — | — | — | (74.871) | (74.871) |
+| **Patrimonio netto al 31.12.2016** | 24.960 | — | 124 | — | 16.547 | (17.187) | (74.871) | (50.427) |
+| Ripartizione del risultato d'esercizio 2016 | — | — | — | — | (74.871) | — | 74.871 | — |
+| Aumenti di capitale sociale | 49.920 | 9.600 | — | — | — | — | — | 59.520 |
+| Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | 53.500 | — | — | 53.500 |
+| Ripianamenti perdite | — | — | — | — | — | — | — | — |
+| Altre variazioni | — | — | — | — | 1 | (1) | — | — |
+| Risultato del periodo | — | — | — | — | — | — | (32.624) | (32.624) |
+| **Patrimonio netto al 30.06.2017** | 74.880 | 9.600 | 124 | — | (4.823) | (17.188) | (32.624) | 29.969 |
+| Ripartizione del risultato d'esercizio 2017 | — | — | — | — | (32.624) | — | 32.624 | — |
+| Aumenti di capitale sociale | 38.563 | 21.420 | — | — | — | — | — | 59.983 |
+| Versamenti soci in c/capitale e/o copertura perdite | — | — | — | — | — | — | — | — |
+| Ripianamenti perdite | — | — | — | — | — | — | — | — |
+| Altre variazioni | — | — | — | — | 24 | — | — | 24 |
+| Risultato del periodo | — | — | — | — | — | — | (126.019) | (126.019) |
+| **Patrimonio netto al 30.06.2018** | 113.443 | 31.020 | 124 | — | (37.423) | (17.188) | (126.019) | (36.043) |
+
+104
 
 --- pág. 117 ---
 

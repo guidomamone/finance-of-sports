@@ -865,96 +865,96 @@ BILANCIO CONSOLIDATO
 
 Gruppo AC MILAN
 
-# **Bilancio consolidato al 30 Giugno 2022**
+**Bilancio consolidato al 30 Giugno 2022**
 
 (in migliaia di Euro)
 
-|  RENOCONTO FINANZIARIO | Importo al 30.06.22 | Importo al 30.06.2021  |
-| --- | --- | --- |
-|  **A. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA'OPERATIVA (METODO INDIRETTO)**  |   |   |
-|  Utile (perdita) dell'esercizio | - 66.537 | - 96.416  |
-|  Imposte sul reddito | 6.475 | 4.864  |
-|  Interessi passivi (interessi attivi) | 4.191 | 3.257  |
-|  (Dividendi) | - | -  |
-|  (Flusvalenze) minusvalenze derivanti dalla cessione di attività | - 17.755 | - 295  |
-|  **1. Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **- 73.626** | **- 88.591**  |
-|  **Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto**  |   |   |
-|  Accantonamenti ai fondi | 11.059 | 10.088  |
-|  Ammontamenti delle immobilizzazioni | 68.345 | 75.740  |
-|  Soalutazione delle perdite durevoli di valore | 8.007 | 1.864  |
-|  Rettifiche di valore di attività e possività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie | - | -  |
-|  Altre rettifiche per elementi non monetari | - | -  |
-|  **2. Flusso finanziario prima delle variazioni del CCN** | **13.785** | **- 899**  |
-|  **Variazione del capitale circolante netto**  |   |   |
-|  Decremento (Incremento) delle rimanenze | 16 | - 150  |
-|  Decremento (Incremento) dei crediti vs clienti | 8.239 | - 3.429  |
-|  Incremento (Decremento) dei debiti vs fornitori | 9.218 | - 6.712  |
-|  Decremento (Incremento) dei ratei e risconti attivi | 1.788 | - 390  |
-|  Incremento (Decremento) dei ratei e risconti passivi | 20.124 | - 6.208  |
-|  Altre variazioni del capitale circolante netto | 8.220 | 25.737  |
-|  **3. Flusso finanziario dopo le variazioni del CCN** | **41.337** | **21.371**  |
-|  **Altre rettifiche**  |   |   |
-|  Interessi incassati (pagati) | - 4.191 | - 3.257  |
-|  (Imposte sul reddito-pagale) | - | -  |
-|  Dividendi incassati | - | -  |
-|  (Utilizzo dei fondi) | 10.059 | - 15.721  |
-|  Altri incassi/(pagamenti) | - | -  |
-|  **FLUSSO FINANZIARIO DELL'ATTIVITA'OPERATIVA (A)** | **47.204** | **2.394**  |
-|  **B. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI INVESTIMENTO**  |   |   |
-|  **Immobilizzazioni materiali**  |   |   |
-|  (Investimenti) | - 7.845 | -  |
-|  Disinvestimenti | 50.599 | - 54.211  |
-|  **Diritti pluriennali alle prestazioni dei calciatori**  |   |   |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | 47.517 | -  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | 11.130 | - 58.699  |
-|  **Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori** | **28.092** | **- 3.060**  |
-|  **Incremento/(decremento) debiti per cessione diritti pluriennali alle prestazioni dei calciatori** | **8.958** | **- 17.277**  |
-|  **Altre immobilizzazioni immateriali**  |   |   |
-|  (Investimenti) | - 3.783 | -  |
-|  Disinvestimenti | - | 4.514  |
-|  **Immobilizzazioni finanziarie**  |   |   |
-|  (Investimenti) | - 479 | - 899  |
-|  Disinvestimenti | - | -  |
-|  **Attività finanziarie non immobilizzate**  |   |   |
-|  (Investimenti) | - | -  |
-|  Disinvestimenti | - | -  |
-|  (Acquisizione di rami d'azienda al netto delle disponibilità liquide) | - | -  |
-|  Cessione di rami d'azienda al netto delle disponibilità liquide | - | -  |
-|  **FLUSSO FINANZIARIO DELLE ATTIVITA' DI INVESTIMENTO (B)** | **21.039** | **- 129.632**  |
-|  **C. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI FINANZIAMENTO**  |   |   |
-|  **Mezzi di terzi**  |   |   |
-|  Incremento (Decremento) debiti a breve vs banche | 0 | - 6  |
-|  Accensione finanziamenti | - | 10.049  |
-|  Rimborso finanziamenti | - 54.105 | -  |
-|  Finanziamento soci | - | -  |
-|  Accensione finanziamenti | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Mezzi propri**  |   |   |
-|  Aumento di capitale a pagamento | 5.000 | 129.500  |
-|  (Rimborso di capitale) | - | -  |
-|  Cessione (Acquisto) di azioni proprie | - | -  |
-|  (Dividendi e acconti su dividendi pagati) | - | -  |
-|  Altre entrate (usute) da attività di finanziamento | - | -  |
-|  **FLUSSO FINANZIARIO DELLE ATTIVITA' DI FINANZIAMENTO (C)** | **49.105** | **139.543**  |
-|  **Incremento (Decremento) delle disponibilità liquide** | **19.139** | **12.305**  |
-|  Effetto carida sulle disponibilità liquide | - | -  |
-|  **Disponibilità liquide a inizio esercizio**  |   |   |
-|  Depositi bancari e postali | 23.551 | 11.246  |
-|  Assegni | - | -  |
-|  Derlare e valori in cassa | 38 | 39  |
-|  **Totale disponibilità liquide a inizio esercizio**  |   |   |
-|  *Di cui non liberamente utilizzabili*  |   |   |
-|  **Disponibilità liquide a fine esercizio**  |   |   |
-|  Depositi bancari e postali | 42.693 | 23.551  |
-|  Assegni | - | -  |
-|  Derlare e valori in cassa | 34 | 38  |
-|  **Totale disponibilità liquide a fine esercizio**  |   |   |
-|  *Di cui non liberamente utilizzabili*  |   |   |
-|  Difference di quadratura | 0 | 0  |
+| RENDICONTO FINANZIARIO | Importo al 30.06.22 | Importo al 30.06.2021 |
+|---|---|---|
+| **A. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA'OPERATIVA (METODO INDIRETTO)** | | |
+| Utile (perdita) dell'esercizio | -66.537 | -96.416 |
+| Imposte sul reddito | 6.475 | 4.864 |
+| Interessi passivi (interessi attivi) | 4.191 | 3.257 |
+| (Dividendi) | - | - |
+| (Plusvalenze) minusvalenze derivanti dalla cessione di attività | -17.755 | -295 |
+| **1. Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **-73.626** | **-88.591** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 11.059 | 10.088 |
+| Ammortamenti delle immobilizzazioni | 68.345 | 75.740 |
+| Svalutazione delle perdite durevoli di valore | 8.007 | 1.864 |
+| Rettifiche di valore di attività e passività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie | - | - |
+| Altre rettifiche per elementi non monetari | - | - |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **13.785** | **-899** |
+| *Variazione del capitale circolante netto* | | |
+| Decremento (Incremento) delle rimanenze | 16 | -150 |
+| Decremento (Incremento) dei crediti vs clienti | -8.239 | -3.429 |
+| Incremento (Decremento) dei debiti vs fornitori | 9.218 | 6.712 |
+| Decremento (Incremento) dei ratei e risconti attivi | -1.788 | -390 |
+| Incremento (Decremento) dei ratei e risconti passivi | 20.124 | -6.208 |
+| Altre variazioni del capitale circolante netto | 8.220 | 25.737 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **41.337** | **21.371** |
+| *Altre rettifiche* | | |
+| Interessi incassati (pagati) | -4.191 | -3.257 |
+| (Imposte sul reddito pagate) | | - |
+| Dividendi incassati | | - |
+| (Utilizzo dei fondi) | 10.059 | -15.721 |
+| Altri incassi/(pagamenti) | | - |
+| **FLUSSO FINANZIARIO DELL'ATTIVITA'OPERATIVA (A)** | **47.204** | **2.394** |
+| **B. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI INVESTIMENTO** | | |
+| **Immobilizzazioni materiali** | | |
+| (Investimenti) | -7.845 | - |
+| Disinvestimenti | 50.399 | -54.211 |
+| **Diritti pluriennali alle prestazioni dei calciatori** | | |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | -47.517 | - |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 11.130 | -58.699 |
+| **Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori** | 28.092 | -3.060 |
+| **Incremento/(decremento) debiti per cessione diritti pluriennali alle prestazioni dei calciatori** | -8.958 | -17.277 |
+| **Altre Immobilizzazioni immateriali** | | |
+| (Investimenti) | -3.783 | - |
+| Disinvestimenti | | 4.514 |
+| **Immobilizzazioni finanziarie** | | |
+| (Investimenti) | -479 | -899 |
+| Disinvestimenti | | - |
+| **Attività finanziarie non immobilizzate** | | |
+| (Investimenti) | | - |
+| Disinvestimenti | | - |
+| (Acquisizione di rami d'azienda al netto delle disponibilità liquide) | | - |
+| Cessione di rami d'azienda al netto delle disponibilità liquide | | - |
+| **FLUSSO FINANZIARIO DELLE ATTIVITA' DI INVESTIMENTO (B)** | **21.039** | **-129.632** |
+| **C. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI FINANZIAMENTO** | | |
+| **Mezzi di terzi** | | |
+| Incremento (Decremento) debiti a breve vs banche | 0 | -6 |
+| Accensione finanziamenti | - | 10.049 |
+| Rimborso finanziamenti | -54.105 | - |
+| **Finanziamento soci** | | |
+| Accensione finanziamenti | | - |
+| (Rimborso finanziamenti) | | - |
+| **Mezzi propri** | | |
+| Aumento di capitale a pagamento | 5.000 | 129.500 |
+| (Rimborso di capitale) | | - |
+| Cessione (Acquisto) di azioni proprie | | - |
+| (Dividendi e acconti su dividendi pagati) | | - |
+| Altre entrate (uscite) da attività di finanziamento | | - |
+| **FLUSSO FINANZIARIO DELLE ATTIVITA' DI FINANZIAMENTO (C)** | **-49.105** | **139.543** |
+| **Incremento (Decremento) delle disponibilità liquide** | **19.139** | **12.305** |
+| Effetto cambi sulle disponibilità liquide | | |
+| **Disponibilità liquide a inizio esercizio** | | |
+| Depositi bancari e postali | 23.551 | 11.246 |
+| Assegni | | - |
+| Denaro e valori in cassa | 38 | 39 |
+| **Totale disponibilità liquide a inizio esercizio** | | |
+| *Di cui non liberamente utilizzabili* | | |
+| **Disponibilità liquide a fine esercizio** | | |
+| Depositi bancari e postali | 42.693 | 23.551 |
+| Assegni | | - |
+| Denaro e valori in cassa | 34 | 38 |
+| **Totale disponibilità liquide a fine esercizio** | | |
+| *Di cui non liberamente utilizzabili* | | - |
+| Differenza di quadratura | 0 | 0 |
 
-per il Consiglio di Amministrazione
-
+per il **Consiglio di Amministrazione**
 l'Amministratore Delegato
+**Ivan Gazidis**
 
 29
 
@@ -2495,75 +2495,75 @@ Tali informazioni sono contenute nei seguenti allegati:
 
 ALLEGATI
 
-# Allegato 1
+Allegato 1
 
-# Prospetto delle variazioni delle immobilizzazioni immateriali
-
-(valori in migliaia di Euro)
-
-|  Costto Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | 3 | — | — | — | — | — | — | 3  |
-|  Diritti di brevetto industriale e utilizzo opere deflingegno | — | — | — | — | — | — | — | —  |
-|  Concessioni, lucrare, marele e diritti simili | 30.713 | 1.530 | — | 174.000 | — | — | — | 226.251  |
-|  Avviamento e Differenza da consolidamento | — | 0 | 0 | — | — | — | — | —  |
-|  Immobilizzazioni in corso ed accorti | 27 | 734 | — | (729) | — | — | — | 32  |
-|  Diritti plurimnali alle prestazioni dei calciatori | 330.721 | 47.517 | (75.362) | — | — | — | — | 322.696  |
-|  Altre immobilizzazioni immateriali | 27.331 | 391 | (178) | 729 | — | — | — | 28.495  |
-|  **Totale** | **429.415** | **51.354** | **(75.000)** | **174.000** | **—** | **—** | **—** | **378.471**  |
-
-|  Fondo Amenortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | (3) | — | — | — | — | — | — | (3)  |
-|  Diritti di brevetto industriale e utilizzo opere deflingegno | — | — | — | — | — | — | — | —  |
-|  Concessioni, lucrare, marele e diritti simili | (39.667) | — | — | — | (1.498) | — | — | (41.165)  |
-|  Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | —  |
-|  Diritti plurimnali alle prestazioni dei calciatori | (188.903) | — | 64.411 | — | (62.555) | (8.007) | — | (187.047)  |
-|  Altre immobilizzazioni immateriali | (19.280) | — | — | — | (1.944) | — | — | (21.204)  |
-|  **Totale** | **(249.697)** | **—** | **64.411** | **—** | **(65.997)** | **(8.007)** | **—** | **(249.419)**  |
-
-|  Valore Netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | — | — | — | — | — | — | — | —  |
-|  Diritti di brevetto industriale e utilizzo opere deflingegno | — | — | — | — | — | — | — | —  |
-|  Concessioni, lucrare, marele e diritti simili | 11.041 | 1.530 | — | 174.000 | (1.498) | — | — | 185.081  |
-|  Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | —  |
-|  Immobilizzazioni in corso ed accorti | 28 | 734 | — | (729) | — | — | — | 54  |
-|  Diritti plurimnali alle prestazioni dei calciatori | 161.818 | 47.517 | (11.131) | — | (62.555) | (8.007) | — | 127.642  |
-|  Altre immobilizzazioni immateriali | 6.291 | 391 | (178) | 729 | (1.944) | — | — | 7.289  |
-|  **Totale** | **179.314** | **51.354** | **(11.407)** | **174.000** | **(65.997)** | **(8.007)** | **—** | **321.842**  |
-
-# Allegato 2
-
-# Prospetto delle variazioni delle immobilizzazioni materiali
+**Prospetto delle variazioni delle immbilizzazioni immateriali**
 
 (valori in migliaia di Euro)
 
-|  Costto Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | 64.459 | 97 | (49.400) | 130 | — | — | — | 15.286  |
-|  Impianti e macchinari | 5.694 | 175 | — | — | — | — | — | 5.869  |
-|  Attrezzature industriali e commerciali | 5.360 | 3.381 | (203) | — | — | — | — | 8.538  |
-|  Altre immobilizzazioni materiali | 3.913 | 959 | (48) | — | — | — | — | 4.824  |
-|  Immobilizzazioni materiali in corso | 229 | 3.591 | (187) | (130) | — | — | — | 3.503  |
-|  **Totale** | **79.655** | **8.203** | **(49.830)** | **—** | **—** | **—** | **—** | **38.020**  |
+| Costo Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | 3 | — | — | — | — | — | — | 3 |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | 50.713 | 1.538 | — | 174.000 | — | — | — | 226.251 |
+| Avviamento e Differenza da consolidamento | — | 0 | 0 | — | — | — | — | — |
+| Immobilizzazioni in corso ed acconti | 27 | 754 | — | (729) | — | — | — | 52 |
+| Diritti pluriennali alle prestazione dei calciatori | 350.721 | 47.517 | (75.542) | — | — | — | — | 322.696 |
+| Altre immobilizzazioni immateriali | 27.551 | 391 | (178) | 729 | — | — | — | 28.493 |
+| **Totale** | **429.015** | **51.354** | **(75.898)** | **174.000** | **—** | **—** | **—** | **578.471** |
 
-|  Fondo Amenortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | (3.071) | — | — | — | (1.045) | — | — | (4.116)  |
-|  Impianti e macchinari | (3.865) | — | — | — | (347) | — | — | (3.412)  |
-|  Attrezzature industriali e commerciali | (3.735) | — | — | — | (573) | — | — | (4.300)  |
-|  Altre immobilizzazioni materiali | (3.089) | — | 48 | — | (382) | — | — | (3.423)  |
-|  **Totale** | **(15.281)** | **—** | **48** | **—** | **(2.347)** | **—** | **—** | **(17.500)**  |
+| Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | (3) | — | — | — | — | — | — | (3) |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | (39.667) | — | — | — | (1.498) | — | — | (41.165) |
+| Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | — |
+| Diritti pluriennali alle prestazione dei calciatori | (188.903) | — | 64.411 | — | (62.555) | (8.007) | — | (187.047) |
+| Altre immobilizzazioni immateriali | (19.260) | — | — | — | (1.944) | — | — | (21.204) |
+| **Totale** | **(249.697)** | **—** | **64.411** | **—** | **(65.997)** | **(8.007)** | **—** | **(249.419)** |
 
-|  Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amore) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | 61.388 | 97 | (49.400) | 130 | (1.045) | — | — | 11.170  |
-|  Impianti e macchinari | 2.629 | 175 | — | — | (347) | — | — | 2.457  |
-|  Attrezzature industriali e commerciali | 1.624 | 3.381 | (203) | — | (573) | — | — | 4.229  |
-|  Altre immobilizzazioni materiali | 822 | 959 | — | — | (382) | — | — | 1.399  |
-|  Immobilizzazioni materiali in corso | 229 | 3.591 | (187) | (130) | — | — | — | 3.503  |
-|  **Totale** | **66.692** | **8.203** | **(49.790)** | **—** | **(2.347)** | **—** | **—** | **22.757**  |
+| Valore Netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | — | — | — | — | — | — | — | — |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | 11.041 | 1.538 | — | 174.000 | (1.498) | — | — | 185.081 |
+| Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | — |
+| Immobilizzazioni in corso ed acconti | 28 | 754 | — | (729) | — | — | — | 54 |
+| Diritti pluriennali alle prestazione dei calciatori | 161.818 | 47.517 | (11.131) | — | (62.555) | (8.007) | — | 127.642 |
+| Altre immobilizzazioni immateriali | 8.291 | 391 | (178) | 729 | (1.944) | — | — | 7.289 |
+| **Totale** | **179.314** | **51.354** | **(11.487)** | **174.000** | **(65.997)** | **(8.007)** | **—** | **321.042** |
+
+Allegato 2
+
+**Prospetto delle variazioni delle immbilizzazioni materiali**
+
+(valori in migliaia di Euro)
+
+| Costo Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | 64.459 | 97 | (49.400) | 130 | — | — | — | 15.286 |
+| Impianti e macchinari | 5.694 | 175 | — | — | — | — | — | 5.869 |
+| Attrezzature industriali e commerciali | 5.360 | 3.381 | (203) | — | — | — | — | 8.538 |
+| Altre immobilizzazioni materiali | 3.913 | 959 | (48) | — | — | — | — | 4.824 |
+| Immobilizzazioni materiali in corso | 229 | 3.591 | (187) | (130) | — | — | — | 3.503 |
+| **Totale** | **79.655** | **8.203** | **(49.838)** | **—** | **—** | **—** | **—** | **38.020** |
+
+| Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | (3.071) | — | — | — | (1.045) | — | — | (4.116) |
+| Impianti e macchinari | (3.065) | — | — | — | (347) | — | — | (3.412) |
+| Attrezzature industriali e commerciali | (3.735) | — | — | — | (573) | — | — | (4.308) |
+| Altre immobilizzazioni materiali | (3.089) | — | 48 | — | (382) | — | — | (3.423) |
+| **Totale** | **(15.281)** | **—** | **48** | **—** | **(2.347)** | **—** | **—** | **(17.580)** |
+
+| Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | 61.388 | 97 | (49.400) | 130 | (1.045) | — | — | 11.170 |
+| Impianti e macchinari | 2.629 | 175 | — | — | (347) | — | — | 2.457 |
+| Attrezzature industriali e commerciali | 1.624 | 3.381 | (203) | — | (573) | — | — | 4.229 |
+| Altre immobilizzazioni materiali | 822 | 959 | — | — | (382) | — | — | 1.399 |
+| Immobilizzazioni materiali in corso | 229 | 3.591 | (187) | (130) | — | — | — | 3.503 |
+| **Totale** | **66.692** | **8.203** | **(49.790)** | **—** | **(2.347)** | **—** | **—** | **22.757** |
 
 73
 
@@ -2571,74 +2571,74 @@ ALLEGATI
 
 RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
-# Allegato 3
+Allegato 3
 
-# Prospetto delle variazioni delle partecipazioni
+**Prospetto delle variazioni delle partecipazioni**
 
-(valori in migliaia di furo)
+(valori in migliaia di Euro)
 
-|  Costo Stretto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Imprese controllate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | —  |
-|  - valutate con il metodo del costo | 104 | — | — | — | — | — | 104  |
-|  Imprese collegate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | 1.337 | — | — | — | 521 | — | 1.858  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  Altre imprese: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | 2.000 | — | — | — | — | — | 2.000  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  **Totale** | **3.441** | **—** | **—** | **—** | **521** | **—** | **3.962**  |
+| Costo Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| **Imprese controllate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | — |
+| - valutate con il metodo del costo | 104 | — | — | — | — | — | 104 |
+| **Imprese collegate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | 1.337 | — | — | — | 521 | — | 1.858 |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Altre imprese:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | 2.000 | — | — | — | — | — | 2.000 |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Totale** | **3.441** | **—** | **—** | **—** | **521** | **—** | **3.962** |
 
-|  Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Imprese controllate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | —  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  Imprese collegate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | —  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  Altre imprese: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | — | — | — | — | (1.000) | — | (1.000)  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  **Totale** | **—** | **—** | **—** | **—** | **(1.000)** | **—** | **(1.000)**  |
+| Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| **Imprese controllate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | — |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Imprese collegate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | — |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Altre imprese:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | — | — | — | — | (1.000) | — | (1.000) |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Totale** | **—** | **—** | **—** | **—** | **(1.000)** | **—** | **(1.000)** |
 
-|  Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Imprese controllate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | —  |
-|  - valutate con il metodo del costo | 104 | — | — | — | — | — | 104  |
-|  Imprese collegate: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | 1.337 | — | — | — | 521 | — | 1.858  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  Altre imprese: |  |  |  |  |  |  |   |
-|  - valutate con il metodo del patrimonio netto | 2.000 | — | — | — | (1.000) | — | 1.000  |
-|  - valutate con il metodo del costo | — | — | — | — | — | — | —  |
-|  **Totale** | **3.441** | **—** | **—** | **—** | **(479)** | **—** | **2.962**  |
+| Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Svalutazioni) / Rivalutazioni | Area di consolidamento | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| **Imprese controllate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | — | — | — | — | — | — | — |
+| - valutate con il metodo del costo | 104 | — | — | — | — | — | 104 |
+| **Imprese collegate:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | 1.337 | — | — | — | 521 | — | 1.858 |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Altre imprese:** | | | | | | | |
+| - valutate con il metodo del patrimonio netto | 2.000 | — | — | — | (1.000) | — | 1.000 |
+| - valutate con il metodo del costo | — | — | — | — | — | — | — |
+| **Totale** | **3.441** | **—** | **—** | **—** | **(479)** | **—** | **2.962** |
 
-# Allegato 4
+Allegato 4
 
-# Prospetto delle variazioni del patrimonio netto
+**Prospetto delle variazioni del patrimonio netto**
 
-(valori in migliaia furo)
+(valori in migliaia Euro)
 
-|   | Capitale sociale | Rinerva ova supporzio azioni | Rinerva da rivalutazione | Rinerva legale | Rinerva Sanitario | Altre Rinerva | Urk (Punita) portaria inerva | Urk (Punita) dell'Intervizio | Totale Patrimonio Netto  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Patrimonio netto al 30.06.2020** | **113.443** | **31.020** | **—** | **124** | **—** | **101.341** | **(17.100)** | **(194.616)** | **34.124**  |
-|  Ripartizione del risultato d'esercizio 2019/2020 | 0 | 0 | 0 | 0 | 0 | (194.616) | 0 | 194.616 | —  |
-|  Aumenti di capitale sociale | 0 | 0 | 0 | 0 | 0 | 129.508 | 0 | 0 | 129.508  |
-|  Vorsamenti soci in c/capitale ova copertura punita | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | —  |
-|  Ripuntamenti perdite | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | —  |
-|  Altre variazioni | 0 | 0 | 0 | 0 | 0 | 86 | 0 | 0 | 86  |
-|  Retufatto del periodo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | (96.416) | (96.416)  |
-|  **Patrimonio netto al 30.06.2021** | **113.443** | **31.020** | **—** | **124** | **—** | **36.311** | **(17.100)** | **(96.416)** | **67.254**  |
-|  Ripartizione del risultato d'esercizio 2020/2021 | 0 | 0 | 0 | 0 | 0 | (36.311) | (60.105) | 36.416 | —  |
-|  Aumenti di capitale sociale | 0 | 0 | 0 | 0 | 0 | — | — | 0 | —  |
-|  Vorsamenti soci in c/capitale ova copertura punita | 0 | 0 | 0 | 0 | 0 | 1.000 | — | 0 | 1.000  |
-|  Ripuntamenti perdite | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | —  |
-|  Altre variazioni | 0 | 0 | (2.664) | 0 | 0 | 18 | 0 | 0 | 125.673  |
-|  Retufatto del periodo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | (66.537) | (66.537)  |
-|  **Patrimonio netto al 30.06.2022** | **113.443** | **31.020** | **125.454** | **124** | **—** | **5.019** | **(77.293)** | **(66.537)** | **131.238**  |
+| | Capitale sociale | Riserva sovrapprezzo azioni | Riserve da rivalutazione | Riserva legale | Riserve Statutarie | Altre Riserve | Utili (Perdite) portati a nuovo | Utile (Perdita) dell'esercizio | Totale Patrimonio Netto |
+|---|---|---|---|---|---|---|---|---|---|
+| **Patrimonio netto al 30.06.2020** | 113.443 | 31.020 | — | 124 | — | 101.341 | (17.188) | (194.616) | 34.124 |
+| Ripartizione del risultato d'esercizio 2019/2020 | 0 | 0 | 0 | 0 | 0 | (194.616) | 0 | 194.616 | — |
+| Aumenti di capitale sociale | 0 | 0 | 0 | 0 | 0 | 129.500 | 0 | 0 | 129.500 |
+| Versamenti soci in c/capitale e/o copertura perdite | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
+| Ripianamenti perdite | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
+| Altre variazioni | 0 | 0 | 0 | 0 | 0 | 86 | 0 | 0 | 86 |
+| Risultato del periodo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | (96.416) | (96.416) |
+| **Patrimonio netto al 30.06.2021** | 113.443 | 31.020 | — | 124 | — | 36.311 | (17.188) | (96.416) | 67.294 |
+| Ripartizione del risultato d'esercizio 2020/2021 | 0 | 0 | 0 | 0 | 0 | (36.311) | (60.105) | 96.416 | — |
+| Aumenti di capitale sociale | 0 | 0 | 0 | 0 | 0 | - | - | 0 | — |
+| Versamenti soci in c/capitale e/o copertura perdite | 0 | 0 | 0 | 0 | 0 | 5.000 | - | 0 | 5.000 |
+| Ripianamenti perdite | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
+| Altre variazioni | 0 | 0 | 125454 | 0 | 0 | 19 | 0 | 0 | 125.473 |
+| Risultato del periodo | 0 | 0 | 0 | 0 | 0 | 0 | 0 | (66.537) | (66.537) |
+| **Patrimonio netto al 30.06.2022** | 113.443 | 31.020 | 125.454 | 124 | — | 5.019 | (77.293) | (66.537) | 131.230 |
 
 74
 
@@ -2646,71 +2646,71 @@ RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
 ALLEGATI
 
-# Allegato 5
+Allegato 5
 
-# Prospetto settoriale
-
-(in migliaia di Euro)
-
-|  Stato Patrimoniale | A.C. Milan | S.p.A. | Milan Entertainment S.p.A. | Milan Real Estate S.p.A. | Casa Milan S.r.l. | AC Milan (Shanghai) Sports Development Co. Ltd. | Rettifiche | Consolidato Gruppo Milan  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Attività**  |   |   |   |   |   |   |   |   |
-|  Crediti verso soci |  | — | — | — | — | — | — | 0  |
-|  Immobilizzazioni:  |   |   |   |   |   |   |   |   |
-|  - immateriali |  | 320.145 | 30.570 | — | — | — | (30.649) | 320.067  |
-|  - materiali |  | 5.036 | 431 | 24.541 | — | 47 | (7.298) | 22.756  |
-|  - finanziarie |  | 199.212 | 1.000 | — | — | — | (197.250) | 2.962  |
-|   |  | — | — | — | — | — | — | 0  |
-|  Altri crediti immobilizzati |  | 363 | 6 | 49 | — | — | — | 418  |
-|  **Totale immobilizzazioni** |  | **524.757** | **32.007** | **24.509** | **0** | **47** | **(235.197)** | **346.203**  |
-|  Attivo circolante:  |   |   |   |   |   |   |   |   |
-|  - rimanenze |  | — | 428 | — | — | — | — | 428  |
-|  - crediti |  | 92.895 | 16.812 | 455 | 6.473 | 142 | (8.318) | 108.459  |
-|  - attività finanziarie non immobilizzate |  | 8.585 | 189.183 | — | — | — | (197.767) | —  |
-|  - disponibilità liquide |  | 28.791 | 7.450 | 181 | 5.665 | 639 | — | 42.727  |
-|  **Totale attivo circolante** |  | **130.271** | **213.873** | **636** | **12.138** | **781** | **(206.005)** | **151.614**  |
-|  Rate e risconti |  | 4.186 | 242 | 755 | 0 | 0 | (100) | 5.082  |
-|  **Totale Attivo** |  | **659.215** | **246.120** | **25.981** | **12.137** | **827** | **(441.384)** | **502.899**  |
-|  **Passività**  |   |   |   |   |   |   |   |   |
-|  Patrimonio Netto:  |   |   |   |   |   |   |   |   |
-|  - capitale sociale |  | 113.443 | 20.000 | 5.000 | 10 | 200 | (25.210) | 113.443  |
-|  - riserve |  | 161.598 | 167.632 | 7.399 | 1.008 | 28 | (176.039) | 161.625  |
-|  - utili / (perdita) portati a nuovo |  | (45.242) | 248 | 1.477 | 7 | (29) | (33.763) | (77.302)  |
-|  - utili / (perdita) del periodo |  | (92.298) | 13.551 | 320 | 4.529 | 674 | 6.887 | (66.516)  |
-|  **Patrimonio Netto** |  | **137.501** | **201.431** | **14.197** | **5.553** | **673** | **(228.125)** | **131.230**  |
-|  Capitale e riserve di terzi |  | — | — | — | — | — | — | 0  |
-|  **Totale Patrimonio Netto** |  | **137.501** | **201.431** | **14.197** | **5.553** | **673** | **(228.125)** | **131.230**  |
-|  Fondi per rischi e oneri |  | 71.529 | 1.004 | 0 | 0 | 0 | 0 | 72.533  |
-|  Trattamento di fine rapporto |  | 1.162 | 886 | 33 | 0 | 0 | — | 2.081  |
-|  Debiti |  | 421.906 | 17.282 | 11.707 | 6.585 | 155 | (213.156) | 244.480  |
-|  Rate e risconti |  | 27.115 | 25.518 | 43 | 0 | 0 | (101) | 52.575  |
-|  **Totale Passivo e Patrimonio Netto** |  | **659.214** | **246.121** | **25.980** | **12.138** | **828** | **(441.382)** | **502.899**  |
+**Prospetto settoriale**
 
 (in migliaia di Euro)
 
-|  Costo Economico | A.C. Milan | S.p.A. | Milan Entertainment S.p.A. | Milan Real Estate S.p.A. | Casa Milan S.r.l. | AC Milan (Shanghai) Sports Development Co. Ltd. | Rettifiche | Consolidato Gruppo Milan  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Valore della produzione:  |   |   |   |   |   |   |   |   |
-|  - risavi delle vendite e delle prestazioni |  | 31.861 | 1.645 | — | — | — | 683 | 34.199  |
-|  - variazioni rimanere p.f., lavori in corso, incrementi di immobilizzazione per lavori interni |  | — | (54) | — | — | — | — | (54)  |
-|  - altri ricavi e presenti |  | 206.728 | 59.699 | 7.208 | 9.694 | 901 | (19.573) | 263.457  |
-|  **Totale valore della produzione** |  | **238.509** | **60.690** | **7.208** | **9.694** | **901** | **(18.890)** | **297.592**  |
-|  Costi della produzione:  |   |   |   |   |   |   |   |   |
-|  - per materie prime, ossidiarie, di consumo e merci |  | 2.975 | 4.618 | 112 | — | — | — | 7.705  |
-|  - per servizi |  | 64.555 | 9.748 | 4.820 | 417 | 254 | (22.156) | 57.737  |
-|  - per godimento beni di terzi |  | 11.770 | 4.112 | 317 | 166 | 37 | (6.018) | 10.384  |
-|  - per il personale |  | 161.095 | 8.813 | 252 | — | 92 | — | 170.254  |
-|  - ammortimenti e ordinazioni |  | 73.911 | 10.185 | 588 | 869 | — | (9.184) | 76.368  |
-|  - variazioni delle rimanenze |  | — | — | — | — | — | — | —  |
-|  - accostituimenti e oneri diverse di gestione |  | 22.758 | 7.188 | 451 | 116 | 0 | (482) | 36.125  |
-|  **Totale costi della produzione** |  | **337.064** | **45.867** | **6.640** | **1.501** | **302** | **(37.760)** | **352.572**  |
-|  **Differenza tra valore e costi della produzione** |  | **(59.179)** | **16.823** | **568** | **7.513** | **519** | **10.070** | **(54.980)**  |
-|  Proventi e (oneri) finanziari |  | 4.768 | 1.982 | (73) | (953) | (14) | (10.330) | (4.599)  |
-|  Rettifiche di valore di attività finanziarie |  | (1.000) | — | — | — | — | 521 | (479)  |
-|  **Rissilato prima delle imposte** |  | **(95.507)** | **10.806** | **496** | **6.580** | **505** | **9.061** | **(60.050)**  |
-|  Imposte sul reddito del periodo |  | 3.288 | (5.255) | (176) | (2.051) | (30) | (2.176) | (6.478)  |
-|  (Utiliz) / Perdita di terzi azionisti |  | — | — | — | — | — | — | —  |
-|  **Utile / (Perdita) del Gruppo** |  | **(92.298)** | **13.552** | **320** | **4.529** | **474** | **6.885** | **(66.537)**  |
+| Stato Patrimoniale | A.C. Milan S.p.A. | Milan Entertainment S.p.A. | Milan Real Estate S.p.A. | Casa Milan S.r.l. | AC Milan (Shanghai) Sports Development Co. Ltd. | Rettifiche | Consolidato Gruppo Milan |
+|---|---|---|---|---|---|---|---|
+| **Attività** | | | | | | | |
+| Crediti verso soci | — | — | — | | | — | 0 |
+| **Immobilizzazioni:** | | | | | | | |
+| - immateriali | 320.145 | 30.570 | — | — | — | (30.649) | 320.067 |
+| - materiali | 5.036 | 431 | 24.541 | — | 47 | (7.298) | 22.756 |
+| - finanziarie | 199.212 | 1.000 | — | — | — | (197.250) | 2.962 |
+| | — | — | — | — | | — | 0 |
+| Altri crediti immobilizzati | 363 | 6 | 49 | — | — | — | 418 |
+| **Totale immobilizzazioni** | **524.757** | **32.007** | **24.589** | **0** | **47** | **(235.197)** | **346.203** |
+| **Attivo circolante:** | | | | | | | |
+| - rimanenze | — | 428 | — | — | — | — | 428 |
+| - crediti | 92.895 | 16.812 | 455 | 6.473 | 142 | (8.318) | 108.459 |
+| - attività finanziarie non immobilizzate | 8.585 | 189.183 | — | | | (197.767) | — |
+| - disponibilità liquide | 28.791 | 7.450 | 181 | 5.665 | 639 | — | 42.727 |
+| **Totale attivo circolante** | **130.271** | **213.873** | **636** | **12.138** | **781** | **(206.085)** | **151.614** |
+| Ratei e risconti | 4.186 | 242 | 755 | 0 | 0 | (100) | 5.082 |
+| **Totale Attivo** | **659.215** | **246.120** | **25.981** | **12.137** | **827** | **(441.384)** | **502.899** |
+| **Passività** | | | | | | | |
+| **Patrimonio Netto:** | | | | | | | |
+| - capitale sociale | 113.443 | 20.000 | 5.000 | 10 | 200 | (25.210) | 113.443 |
+| - riserve | 161.598 | 167.632 | 7.399 | 1.008 | 28 | (176.039) | 161.625 |
+| - utili / (perdite) portati a nuovo | (45.242) | 248 | 1.477 | 7 | (29) | (33.763) | (77.302) |
+| - utile / (perdita) del periodo | (92.298) | 13.551 | 320 | 4.529 | 474 | 6.887 | (66.536) |
+| **Patrimonio Netto** | **137.501** | **201.431** | **14.197** | **5.553** | **673** | **(228.125)** | **131.230** |
+| Capitale e riserve di terzi | — | — | — | | | — | 0 |
+| **Totale Patrimonio Netto** | **137.501** | **201.431** | **14.197** | **5.553** | **673** | **(228.125)** | **131.230** |
+| Fondi per rischi e oneri | 71.529 | 1.004 | 0 | 0 | 0 | 0 | 72.533 |
+| Trattamento di fine rapporto | 1.162 | 886 | 33 | 0 | 0 | — | 2.081 |
+| Debiti | 421.906 | 17.282 | 11.707 | 6.585 | 155 | (213.156) | 244.480 |
+| Ratei e risconti | 27.115 | 25.518 | 43 | 0 | 0 | (101) | 52.575 |
+| **Totale Passivo e Patrimonio Netto** | **659.214** | **246.121** | **25.980** | **12.138** | **828** | **(441.382)** | **502.899** |
+
+(in migliaia di Euro)
+
+| Conto Economico | A.C. Milan S.p.A. | Milan Entertainment S.p.A. | Milan Real Estate S.p.A. | Casa Milan S.r.l. | AC Milan (Shanghai) Sports Development Co. Ltd. | Rettifiche | Consolidato Gruppo Milan |
+|---|---|---|---|---|---|---|---|
+| **Valore della produzione:** | | | | | | | |
+| - ricavi delle vendite e delle prestazioni | 31.861 | 1.645 | — | — | | 683 | 34.189 |
+| - variazioni rimaneze p.f., lavori in corso, incrementi di immobilizzazioni per lavori interni | — | (54) | — | — | — | — | (54) |
+| - altri ricavi e proventi | 206.728 | 59.099 | 7.208 | 9.094 | 901 | (19.573) | 263.457 |
+| **Totale valore della produzione** | **238.589** | **60.690** | **7.208** | **9.094** | **901** | **(18.890)** | **297.592** |
+| **Costi della produzione:** | | | | | | | |
+| - per materie prime, sussidiarie, di consumo e merci | 2.975 | 4.618 | 112 | — | — | — | 7.705 |
+| - per servizi | 64.555 | 9.748 | 4.920 | 417 | 254 | (22.156) | 57.737 |
+| - per godimento beni di terzi | 11.770 | 4.112 | 317 | 166 | 37 | (6.018) | 10.384 |
+| - per il personale | 161.895 | 8.015 | 252 | — | 92 | — | 170.254 |
+| - ammortamenti e svalutazioni | 73.911 | 10.185 | 588 | 869 | — | (9.184) | 76.368 |
+| - variazioni delle rimanenze | — | — | — | — | — | | |
+| - accantonamenti e oneri diversi di gestione | 22.758 | 7.188 | 451 | 130 | 0 | (402) | 30.125 |
+| **Totale costi della produzione** | **337.864** | **43.867** | **6.640** | **1.581** | **382** | **(37.760)** | **352.572** |
+| **Differenza tra valore e costi della produzione** | **(99.275)** | **16.823** | **568** | **7.513** | **519** | **18.870** | **(54.980)** |
+| Proventi e (oneri) finanziari | 4.768 | 1.982 | (73) | (933) | (14) | (10.330) | (4.599) |
+| Rettifiche di valore di attività finanziarie | (1.000) | — | — | — | — | 521 | (479) |
+| **Risultato prima delle imposte** | **(95.507)** | **18.806** | **496** | **6.580** | **505** | **9.061** | **(60.058)** |
+| Imposte sul reddito del periodo | 3.208 | (5.255) | (176) | (2.051) | (30) | (2.176) | (6.478) |
+| (Utile) / Perdita di terzi azionisti | — | — | — | — | — | | |
+| **Utile / (Perdita) del Gruppo** | **(92.298)** | **13.552** | **320** | **4.529** | **474** | **6.885** | **(66.537)** |
 
 75
 
@@ -3046,24 +3046,23 @@ I Costi della produzione dell’esercizio 2021/2022 ammontano a 337,9 milioni di
 
 RELAZIONE SULLA GESTIONE
 
-|   | 2021/2022 |   | 2020/2021 |   | Variazioni  |
-| --- | --- | --- | --- | --- | --- |
-|   |  valore | % | valore | %  |   |
-|  Costo per il personale | 161,9 | 47,90% | 162,2 | 47,40% | -0,3  |
-|  Ammortamenti e svalutazioni | 73,9 | 21,90% | 75,8 | 22,10% | -1,9  |
-|  Costi per servizi e godimento beni di terzi | 76,3 | 22,60% | 71 | 20,70% | 5,3  |
-|  Oneri da gestione diritti calciatori | 10,4 | 3,10% | 16,2 | 4,70% | -5,8  |
-|  Costo acquisto materie prime e merci | 3 | 0,90% | 3,3 | 1,00% | -0,3  |
-|  Altri costi ed oneri | 12,4 | 3,70% | 13,9 | 4,10% | -1,5  |
-|  **Totale** | **337,9** | **100,00%** | **342,5** | **100,00%** | **-4,6**  |
+| | 2021/2022 valore | 2021/2022 % | 2020/2021 valore | 2020/2021 % | Variazioni |
+|---|---|---|---|---|---|
+| Costo per il personale | 161,9 | 47,90% | 162,2 | 47,40% | -0,3 |
+| Ammortamenti e svalutazioni | 73,9 | 21,90% | 75,8 | 22,10% | -1,9 |
+| Costi per servizi e godimento beni di terzi | 76,3 | 22,60% | 71 | 20,70% | 5,3 |
+| Oneri da gestione diritti calciatori | 10,4 | 3,10% | 16,2 | 4,70% | -5,8 |
+| Costo acquisto materie prime e merci | 3 | 0,90% | 3,3 | 1,00% | -0,3 |
+| Altri costi ed oneri | 12,4 | 3,70% | 13,9 | 4,10% | -1,5 |
+| **Totale** | **337,9** | **100,00%** | **342,5** | **100,00%** | **-4,6** |
 
-Il Costo del personale, pari a 161,9 milioni di Euro, evidenzia un decremento complessivo di 0,2% (-0,3 milioni di Euro rispetto all’esercizio 2020/2021).
+Il Costo del personale, pari a 161,9 milioni di Euro, evidenzia un decremento complessivo di 0,2% (-0,3 milioni di Euro rispetto all'esercizio 2020/2021).
 
-Gli Ammortamenti e svalutazioni ammontano a 73,9 milioni di Euro e si riducono di 1,9 milioni di Euro (-2,5% rispetto all’esercizio 2020/2021), prevalentemente a seguito di minori ammortamenti dei diritti alle prestazioni pluriennali dei calciatori per 3 milioni di Euro quale conseguenza dalla campagna trasferimenti 2021/2022, di minori ammortamenti dell’archivio storico immagini televisive (Library Milan) per 5 milioni di Euro, e da maggiori svalutazioni dei diritti pluriennali alle prestazioni di alcuni giocatori, per effetto di cessioni minusvalenti avvenute nel corso della campagna trasferimenti 2022/2023 per 8 milioni di Euro (1,9 milioni di Euro nell’esercizio precedente).
+Gli Ammortamenti e svalutazioni ammontano a 73,9 milioni di Euro e si riducono di 1,9 milioni di Euro (-2,5% rispetto all'esercizio 2020/2021), prevalentemente a seguito di minori ammortamenti dei diritti alle prestazioni pluriennali dei calciatori per 3 milioni di Euro quale conseguenza dalla campagna trasferimenti 2021/2022, di minori ammortamenti dell'archivio storico immagini televisive (Library Milan) per 5 milioni di Euro, e da maggiori svalutazioni dei diritti pluriennali alle prestazioni di alcuni giocatori, per effetto di cessioni minusvalenti avvenute nel corso della campagna trasferimenti 2022/2023 per 8 milioni di Euro (1,9 milioni di Euro nell'esercizio precedente).
 
-La voce Costi per servizi e godimento beni di terzi, pari a 76,3 milioni di Euro, rileva un incremento netto di 5,3 milioni di Euro (+7,46% rispetto all’esercizio 2020/2021) principalmente per maggiori costi per consulenze (+ 1,2 milioni di Euro), spese pubblicitarie (+ 1 milioni di Euro), utenze (+0,6 milioni di Euro) e maggiori costi per l’uso dello stadio San Siro di Milano rispetto al precedente esercizio perché al momento non è stata raggiunta un’intesa con l’Amministrazione Comunale di Milano per la temporanea sospensione degli eventi per il Covid (+ 0,8 milioni di Euro).
+La voce Costi per servizi e godimento beni di terzi, pari a 76,3 milioni di Euro, rileva un incremento netto di 5,3 milioni di Euro (+7,46% rispetto all'esercizio 2020/2021) principalmente per maggiori costi per consulenze (+ 1,2 milioni di Euro), spese pubblicitarie (+ 1 milioni di Euro), utenze (+0,6 milioni di Euro) e maggiori costi per l'uso dello stadio San Siro di Milano rispetto al precedente esercizio perché al momento non è stata raggiunta un' intesa con l'Amministrazione Comunale di Milano per la temporanea sospensione degli eventi per il Covid (+ 0,8 milioni di Euro).
 
-Gli Oneri da gestione diritti calciatori sono pari a 10,4 milioni di Euro e si decrementano di 5,8 milioni di Euro rispetto all’esercizio 2020/2021 per via di minori costi di acquisizione temporanea di calciatori (-4,3 milioni di Euro) e costi su rivendita calciatori (-1,6 milioni di Euro).
+Gli Oneri da gestione diritti calciatori sono pari a 10,4 milioni di Euro e si decrementano di 5,8 milioni di Euro rispetto all'esercizio 2020/2021 per via di minori costi di acquisizione temporanea di calciatori (-4,3 milioni di Euro) e costi su rivendita calciatori (-1,6 milioni di Euro).
 
 89
 
@@ -3588,98 +3587,103 @@ BILANCIO DI ESERCIZIO
 
 AC MILAN
 
-# Bilancio d'esercizio al 30 Giugno 2022
+**Bilancio d'esercizio al 30 Giugno 2022**
 
 (valori in unità di Euro)
 
-|  RENDICONTO FINANZIARIO | Importo al 30.06.2022 | Importo al 30.06.2021  |
-| --- | --- | --- |
-|  **A. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' OPERATIVA (METODO INDIRETTO)** |  |   |
-|  Utile (perdita) dell'esercizio | 92.297.797 - | 97.942.610  |
-|  Imposte sul reddito | 3.208.530 | 1.903.211  |
-|  Interessi passivi (interessi attivi) | 5.235.104 | 4.599.739  |
-|  (Dividendi) | 10.003.300 | 3.100.000  |
-|  (Pluovalenze) minusvalenze derivanti dalla cessione di attività | 200 | -  |
-|  **1. Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **100.274.713** | **98.346.092**  |
-|  **Retifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto** |  |   |
-|  Accantonamenti ai fondi | 9.107.239 | 9.319.347  |
-|  Ammentamenti delle immobilizzazioni | 65.804.018 | 73.058.055  |
-|  Svalutazione delle perdite durevoli di valore | 8.006.816 | 1.863.710  |
-|  Retifiche di valore di attività e passività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie |  |   |
-|  Altre rettifiche per elementi non monetari |  |   |
-|  **2. Flusso finanziario prima delle variazioni del CCN** | **17.256.640** | **13.205.160**  |
-|  **Variazione del capitale circolante netto** |  |   |
-|  Decrimento (Incremento) delle rimanenze |  |   |
-|  Decrimento (Incremento) dei crediti vs clienti | 1.755.789 | 1.627.516  |
-|  Incremento (Decrimento) dei debiti vs fornitori | 3.819.440 | 5.802.889  |
-|  Decrimento (Incremento) dei ratei e risconti attivi | 1.203.830 | 1.085.195  |
-|  Incremento (Decrimento) dei ratei e risconti passivi | 2.141.256 | 0.751.956  |
-|  Altre variazioni del capitale circolante netto | 35.563.843 | 11.526.878  |
-|  **3. Flusso finanziario dopo le variazioni del CCN** | **21.300.280** | **5.350.060**  |
-|  **Altre rettifiche** |  |   |
-|  Interessi inossuti (pagati) | 5.235.104 | 4.599.739  |
-|  (Imposte sul reddito pagato) |  |   |
-|  Dividendi inossuti | 10.003.300 | 3.100.000  |
-|  (Utilizzo dei fondi) | 15.038.021 | 15.648.004  |
-|  Altri inosso/(pagamenti) |  |   |
-|  **FLUSSI FINANZIARIO DELL'ATTIVITA' OPERATIVA (A)** | **11.038.455** | **22.498.722**  |
-|  **B. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI INVESTIMENTO** |  |   |
-|  **Immobilizzazioni materiali** |  |   |
-|  (Investimenti) | 4.114.000 | 1.423.565  |
-|  Disinvestimenti | 346.000 | -  |
-|  **Stritti pluriennali alle prestazioni dei calciatori** |  |   |
-|  (Acquisistero) diritti pluriennali alle prestazioni dei calciatori | 47.517.119 | 58.698.784  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | 11.130.222 | -  |
-|  **Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori** | **28.092.449** | **3.060.319**  |
-|  **Incremento/(Decremento) debiti per cessione diritti pluriennali alle prestazioni dei calciatori** | **8.967.955** | **16.314.367**  |
-|  **Altre immobilizzazioni immateriali** |  |   |
-|  (Investimenti) | 97.719 | -  |
-|  Disinvestimenti | - | 3.576.949  |
-|  **Immobilizzazioni finanziarie** |  |   |
-|  (Investimenti) | 20.619 | 2.465.221  |
-|  Disinvestimenti | - | -  |
-|  **Attività finanziarie non immobilizzate** |  |   |
-|  (Investimenti) | 2.800.810 | 178.827  |
-|  Disinvestimenti | - | -  |
-|  (Acquisistero di rami d'azienda al netto delle disponibilità liquide) | - | -  |
-|  Cessione di rami d'azienda al netto delle disponibilità liquide | - | -  |
-|  **FLUSSI FINANZIARIO DELLE ATTIVITA' DI INVESTIMENTO (B)** | **16.372.313** | **70.208.480**  |
-|  **C. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI FINANZIAMENTO** |  |   |
-|  **Mezzi di rami** |  |   |
-|  Incremento (Decremento) debiti a breve vs banche | - | 5.980  |
-|  Accensione finanziamenti | 28.562.805 | 20.067.100  |
-|  Rimborso finanziamenti | 10.918.604 | -  |
-|  Finanziamento suci | - | -  |
-|  Accensione finanziamenti | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Mezzi propri** |  |   |
-|  Aumento di capitale a pagamento | 5.000.000 | 129.500.000  |
-|  (Rimborso di capitale) | - | -  |
-|  Cessione (Acquisto) di azioni proprie | - | -  |
-|  (Dividendi e acconti su dividendi pagati) | - | -  |
-|  Altre attività (usche) da attività di finanziamento | - | -  |
-|  **FLUSSI FINANZIARIO DELLE ATTIVITA' DI FINANZIAMENTO (C)** | **16.644.201** | **109.426.940**  |
-|  **Incremento (Decremento) delle disponibilità liquide** | **11.310.343** | **8.719.738**  |
-|  Effetto carità sulle disponibilità liquide | - | -  |
-|  **Disponibilità liquide a inizio esercizio** |  |   |
-|  Depositi bancari e postali | 17.448.345 | 8.738.310  |
-|  Assegni | - | -  |
-|  Donare e valori in cassa | 32.759 | 33.046  |
-|  **Tutule disponibilità liquide a inizio esercizio** |  |   |
-|  (Ir cui non/thermmente utilizzabile) |  |   |
-|  **Disponibilità liquide a fine esercizio** |  |   |
-|  Depositi bancari e postali | 28.764.168 | 17.448.345  |
-|  Assegni | - | -  |
-|  Donare e valori in cassa | 27.279 | 32.759  |
-|  **Tutule disponibilità liquide a fine esercizio** |  |   |
-|  (Ir cui non/thermmente utilizzabile) |  |   |
-|  Differenza di quadratura | - | -  |
+| RENDICONTO FINANZIARIO | Importo al 30.06.2022 | Importo al 30.06.2021 |
+|---|---|---|
+| **A. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA'OPERATIVA (METODO INDIRETTO)** | | |
+| Utile (perdita) dell'esercizio | -92.297.797 | -97.942.610 |
+| Imposte sul reddito | -3.208.520 | -1.903.221 |
+| Interessi passivi (interessi attivi) | 5.235.104 | 4.599.739 |
+| (Dividendi) | -10.003.300 | -3.100.000 |
+| (Plusvalenze) minusvalenze derivanti dalla cessione di attività | -200 | - |
+| **1. Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **-100.274.713** | **-98.346.092** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 9.107.239 | 9.319.147 |
+| Ammortamenti delle immobilizzazioni | 65.904.018 | 73.958.055 |
+| Svalutazione delle perdite durevoli di valore | 8.006.816 | 1.863.730 |
+| Rettifiche di valore di attività e passività finanziarie di strumenti finanziari derivati che non comportano movimentazione monetarie | | - |
+| Altre rettifiche per elementi non monetari | - | - |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **-17.256.640** | **-13.205.160** |
+| *Variazione del capitale circolante netto* | | |
+| Decremento (Incremento) delle rimanenze | - | - |
+| Decremento (Incremento) dei crediti vs clienti | -1.755.789 | -1.637.516 |
+| Incremento (Decremento) dei debiti vs fornitori | 3.819.440 | 5.802.889 |
+| Decremento (Incremento) dei ratei e risconti attivi | -1.203.830 | -1.085.195 |
+| Incremento (Decremento) dei ratei e risconti passivi | 2.141.256 | -6.751.956 |
+| Altre variazioni del capitale circolante netto | 35.563.843 | 11.526.878 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **21.308.280** | **-5.350.060** |
+| *Altre rettifiche* | | |
+| Interessi incassati (pagati) | -5.235.104 | -4.599.739 |
+| (Imposte sul reddito pagate) | - | - |
+| Dividendi incassati | 10.003.300 | 3.100.000 |
+| (Utilizzo dei fondi) | -15.038.021 | -15.648.934 |
+| Altri incassi/(pagamenti) | | - |
+| **FLUSSO FINANZIARIO DELL'ATTIVITA'OPERATIVA (A)** | **11.038.455** | **-22.498.722** |
+| **B. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI INVESTIMENTO** | | |
+| **Immobilizzazioni materiali** | | |
+| (Investimenti) | 4.114.000 | -1.425.565 |
+| Disinvestimenti | -346.000 | - |
+| **Diritti pluriennali alle prestazioni dei calciatori** | | |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | -47.517.119 | -58.698.784 |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | 11.130.222 | - |
+| **Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori** | 28.092.449 | -3.060.319 |
+| **Incremento/(decremento) debiti per cessione diritti pluriennali alle prestazioni dei calciatori** | -8.967.955 | -16.314.367 |
+| **Altre Immobilizzazioni immateriali** | | |
+| (Investimenti) | -97.719 | - |
+| Disinvestimenti | - | 3.576.949 |
+| **Immobilizzazioni finanziarie** | | |
+| (Investimenti) | 20.619 | -2.465.221 |
+| Disinvestimenti | | - |
+| **Attività finanziarie non immobilizzate** | | |
+| (Investimenti) | -2.800.810 | 178.827 |
+| Disinvestimenti | | |
+| (Acquisizione di rami d'azienda al netto delle disponibilità liquide) | | - |
+| Cessione di rami d'azienda al netto delle disponibilità liquide | | - |
+| **FLUSSO FINANZIARIO DELLE ATTIVITA' DI INVESTIMENTO (B)** | **-16.372.313** | **-78.208.480** |
+| **C. FLUSSI FINANZIARI DERIVANTI DALL'ATTIVITA' DI FINANZIAMENTO** | | |
+| **Mezzi di terzi** | | |
+| Incremento (Decremento) debiti a breve vs banche | - | -5.960 |
+| Accensione finanziamenti | 28.562.805 | -20.067.100 |
+| Rimborso finanziamenti | -16.918.604 | - |
+| **Finanziamento soci** | | |
+| Accensione finanziamenti | | - |
+| (Rimborso finanziamenti | | - |
+| **Mezzi propri** | | |
+| Aumento di capitale a pagamento | 5.000.000 | 129.500.000 |
+| (Rimborso di capitale) | | - |
+| Cessione (Acquisto) di azioni proprie | | - |
+| (Dividendi e acconti su dividendi pagati) | | - |
+| Altre entrate (uscite) da attività di finanziamento | | - |
+| **FLUSSO FINANZIARIO DELLE ATTIVITA' DI FINANZIAMENTO (C)** | **16.644.201** | **109.426.940** |
+| **Incremento (Decremento) delle disponibilità liquide** | **11.310.343** | **8.719.738** |
+| Effetto cambi sulle disponibilità liquide | | |
+| **Disponibilità liquide a inizio esercizio** | | |
+| Depositi bancari e postali | 17.448.345 | 8.728.320 |
+| Assegni | | - |
+| Denaro e valori in cassa | 32.759 | 33.046 |
+| **Totale disponibilità liquide a inizio esercizio** | | |
+| *Di cui non liberamente utilizzabili* | | |
+| **Disponibilità liquide a fine esercizio** | | |
+| Depositi bancari e postali | 28.764.168 | 17.448.345 |
+| Assegni | | - |
+| Denaro e valori in cassa | 27.279 | 32.759 |
+| **Totale disponibilità liquide a fine esercizio** | | |
+| *Di cui non liberamente utilizzabili* | - | - |
+| Differenza di quadratura | - | - |
 
-per il Consiglio di Amministrazione
+A.C. MILAN S.P.A.
+Sede Sociale: Via Aldo Rossi, 8 - 20149 Milano
+Capitale Sociale: Euro 113.443.200, interamente sottoscritto e versato
+Codice Fiscale e numero di iscrizione al Registro Imprese di Milano, Monza e Brianza e Lodi: 01073200154
 
-7Ammipartitoni Delegato
+BILANCIO D'ESERCIZIO AL 30 GIUGNO 2022
 
-Ivan Guttino
+per il **Consiglio di Amministrazione**
+l'Amministratore Delegato
+**Ivan Gazidis**
 
 107
 
@@ -4894,46 +4898,44 @@ Si tratta di fideiussioni emesse dal sistema bancario e/o assicurativo per compl
 
 RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
-## **COMMENTO ALLE PRINCIPALI VOCI DEL CONTO ECONOMICO**
-
+**COMMENTO ALLE PRINCIPALI VOCI DEL CONTO ECONOMICO**
 (in migliaia di Euro)
 
-### **Premessa**
+**Premessa**
+Prima di procedere all'analisi delle singole voci, si rammenta che i commenti sull'andamento generale dei costi e dei ricavi sono esposti a norma del comma 1° dell'art. 2428 del Codice Civile, nell'ambito della Relazione sulla Gestione. Si ricorda inoltre che le voci di conto economico sono state classificate secondo la struttura di bilancio prevista per le società di calcio professionistiche, in ossequio a quanto disposto dal Comunicato Ufficiale della F.I.G.C. n. 58, pubblicato in data 5 settembre 2006.
 
-Prima di procedere all’analisi delle singole voci, si rammenta che i commenti sull’andamento generale dei costi e dei ricavi sono esposti a norma del comma 1° dell’art. 2428 del Codice Civile, nell’ambito della Relazione sulla Gestione. Si ricorda inoltre che le voci di conto economico sono state classificate secondo la struttura di bilancio prevista per le società di calcio professionistiche, in ossequio a quanto disposto dal Comunicato Ufficiale della F.I.G.C. n. 58, pubblicato in data 5 settembre 2006.
+**VALORE DELLA PRODUZIONE**
 
-## **VALORE DELLA PRODUZIONE**
+Il valore della produzione nell'esercizio 2021/2022 è pari a 238.589 migliaia di Euro (244.835 migliaia di Euro nell'esercizio 2020/2021). La suddivisione di detta voce è di seguito specificata.
 
-Il valore della produzione nell’esercizio 2021/2022 è pari a 238.589 migliaia di Euro (244.835 migliaia di Euro nell’esercizio 2020/2021). La suddivisione di detta voce è di seguito specificata.
-
-### **Ricavi delle vendite e delle prestazioni**
+**Ricavi delle vendite e delle prestazioni**
 
 Si riferiscono ai ricavi conseguiti dalla vendita dei biglietti e degli abbonamenti per assistere agli incontri della prima squadra. In particolare, sono così costituiti:
 
-|   | **Esercizio 2021/2022** | **Esercizio 2020/2021** | **Variazioni**  |
-| --- | --- | --- | --- |
-|  Ricavi da gare in casa: |  |  |   |
-|  • gare Campionato | 21.019 | 0 | 21.019  |
-|  • gare Tim Cup | 2.879 | 0 | 2.879  |
-|  • gare Coppe Internazionali | 7.728 | - | 7.728  |
-|  Abbonamenti | – | 0 | 0  |
-|  Ricavi da altre competizioni | 235 | 0 | 235  |
-|  **Totale** | **31.861** | **0** | **31.861**  |
+| | Esercizio 2021/2022 | Esercizio 2020/2021 | Variazioni |
+|---|---|---|---|
+| Ricavi da gare in casa: | | | |
+| • gare Campionato | 21.019 | 0 | 21.019 |
+| • gare Tim Cup | 2.879 | 0 | 2.879 |
+| • gare Coppe Internazionali | 7.728 | - | 7.728 |
+| Abbonamenti | – | 0 | 0 |
+| Ricavi da altre competizioni | 235 | 0 | 235 |
+| **Totale** | **31.861** | **0** | **31.861** |
 
-La variazione, e contestuale incremento, nei ricavi delle vendite e delle prestazioni deriva sostanzialmente dalla riapertura degli stadi e dalla possibilità, a seguito dell’allentamento delle misure restrittive adottate dal Governo italiano a seguito della pandemia, di disputare le gare in casa di Campionato e Coppe Internazionali con presenza di pubblico sugli spalti.
+La variazione, e contestuale incremento, nei ricavi delle vendite e delle prestazioni deriva sostanzialmente dalla riapertura degli stadi e dalla possibilità, a seguito dell'allentamento delle misure restrittive adottate dal Governo italiano a seguito della pandemia, di disputare le gare in casa di Campionato e Coppe Internazionali con presenza di pubblico sugli spalti.
 
-### **Altri ricavi e proventi**
+**Altri ricavi e proventi**
 
 Tali proventi si compongono di:
 
-|   | **Esercizio 2021/2022** | **Esercizio 2020/2021** | **Variazioni**  |
-| --- | --- | --- | --- |
-|  Contributi in conto esercizio | 173 | 0 | 173  |
-|  Proventi da sponsorizzazioni | 30.972 | 27.868 | 3.104  |
-|  Proventi commerciali e royalties | 8.681 | 6.597 | 2.085  |
-|  Proventi da cessione diritti audiovisivi: |  |  |   |
-|  • Proventi audiovisivi | 88.729 | 121.857 | -33.129  |
-|  • Proventi audiovisivi da partecipazione competizioni U.E.F.A. | 44.272 | 16.404 | 27.868  |
+| | Esercizio 2021/2022 | Esercizio 2020/2021 | Variazioni |
+|---|---|---|---|
+| Contributi in conto esercizio | 173 | 0 | 173 |
+| Proventi da sponsorizzazioni | 30.972 | 27.868 | 3.104 |
+| Proventi commerciali e royalties | 8.681 | 6.597 | 2.085 |
+| Proventi da cessione diritti audiovisivi: | | | |
+| • Proventi audiovisivi | 88.729 | 121.857 | -33.129 |
+| • Proventi audiovisivi da partecipazione competizioni U.E.F.A. | 44.272 | 16.404 | 27.868 |
 
 144
 
@@ -5353,41 +5355,41 @@ Tali informazioni sono contenute nei seguenti allegati:
 
 RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
-# Allegato 1
+Allegato 1
 
-# **Prospetto delle variazioni delle immobilizzazioni immateriali**
+**Prospetto delle variazioni delle immobilizzazioni immateriali**
 
-(valori in migliaia di Paesi)
+(valori in migliaia di Euro)
 
-|  Costо Stetico | 01.07.2021 | Investimenti | (Daiinvestimenti) | Altri movimenti | (Ammi.it) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | —  |
-|  Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | —  |
-|  Concessioni, lizzare, murele e diritti simili | 44.548 | 174.100 | — | — | — | — | — | — | 218.648  |
-|  Immobilizzazioni in corso ed accenti | 3 | 745 | (729) | — | — | — | — | — | 19  |
-|  Diritti pluriennali alle prestazioni dei calciatori | 350.723 | 47.517 | (75.542) | — | — | — | — | — | 322.496  |
-|  Altre immobilizzazioni immateriali | 17.466 | 1.154 | (178) | — | — | — | — | — | 28.442  |
-|  **Totale** | **422.738** | **223.516** | **(76.449)** | **—** | **—** | **—** | **—** | **—** | **569.805**  |
+| Costo Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | — |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | 44.548 | 174.100 | — | — | — | — | — | — | 218.648 |
+| Immobilizzazioni in corso ed acconti | 3 | 745 | (729) | — | — | — | — | — | 19 |
+| Diritti pluriennali alle prestazione dei calciatori | 350.721 | 47.517 | (75.542) | — | — | — | — | — | 322.696 |
+| Altre immobilizzazioni immateriali | 27.466 | 1.154 | (178) | — | — | — | — | — | 28.442 |
+| **Totale** | **422.738** | **223.516** | **(76.449)** | **—** | **—** | **—** | **—** | **—** | **569.805** |
 
-|  Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Daiinvestimenti) | Altri movimenti | (Ammi.it) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | —  |
-|  Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | —  |
-|  Concessioni, lizzare, murele e diritti simili | (34.093) | — | — | — | (532) | — | — | — | (34.625)  |
-|  Diritti pluriennali alle prestazioni dei calciatori | (188.903) | — | 64.411 | — | (62.555) | (8.007) | — | (8.007) | (195.054)  |
-|  Altre immobilizzazioni immateriali | (17.997) | — | — | 6 | (1.991) | — | — | — | (19.982)  |
-|  **Totale** | **(248.993)** | **—** | **64.411** | **6** | **(65.070)** | **(8.007)** | **—** | **(8.007)** | **(249.661)**  |
+| Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | — |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | (34.093) | — | — | — | (532) | — | — | — | (34.625) |
+| Diritti pluriennali alle prestazione dei calciatori | (188.903) | — | 64.411 | — | (62.555) | (8.007) | — | (8.007) | (195.054) |
+| Altre immobilizzazioni immateriali | (17.997) | — | — | 6 | (1.991) | — | — | — | (19.982) |
+| **Totale** | **(240.993)** | **—** | **64.411** | **6** | **(65.078)** | **(8.007)** | **—** | **(8.007)** | **(249.661)** |
 
-|  Valore Netto | 01.07.2021 | Investimenti | (Daiinvestimenti) | Altri movimenti | (Ammi.it) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | —  |
-|  Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | —  |
-|  Concessioni, lizzare, murele e diritti simili | 10.455 | 174.100 | — | — | (532) | — | — | — | 184.023  |
-|  Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | — | —  |
-|  Immobilizzazioni in corso ed accenti | 3 | 745 | (729) | — | — | — | — | — | 19  |
-|  Diritti pluriennali alle prestazioni dei calciatori | 161.818 | 47.517 | (11.131) | — | (62.555) | (8.007) | — | (8.007) | 327.642  |
-|  Altre immobilizzazioni immateriali | 9.469 | 1.154 | (178) | 6 | (1.991) | — | — | — | 9.461  |
-|  **Totale** | **181.745** | **223.516** | **(12.838)** | **6** | **(65.070)** | **(8.007)** | **—** | **(8.007)** | **320.145**  |
+| Valore Netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) | Rivalutazioni | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|---|---|
+| Costi di impianto e ampliamento | — | — | — | — | — | — | — | — | — |
+| Diritti di brevetto industriale e utilizzo opere dell'ingegno | — | — | — | — | — | — | — | — | — |
+| Concessioni, licenze, marchi e diritti simili | 10.455 | 174.100 | — | — | (532) | — | — | — | 184.023 |
+| Avviamento e Differenza da consolidamento | — | — | — | — | — | — | — | — | — |
+| Immobilizzazioni in corso ed acconti | 3 | 745 | (729) | — | — | — | — | — | 19 |
+| Diritti pluriennali alle prestazione dei calciatori | 161.818 | 47.517 | (11.131) | — | (62.555) | (8.007) | — | (8.007) | 127.642 |
+| Altre immobilizzazioni immateriali | 9.469 | 1.154 | (178) | 6 | (1.991) | — | — | — | 8.461 |
+| **Totale** | **181.745** | **223.516** | **(12.038)** | **6** | **(65.078)** | **(8.007)** | **—** | **(8.007)** | **320.145** |
 
 158
 
@@ -5395,61 +5397,116 @@ RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
 ALLEGATI
 
-# Allegato 2
+Allegato 2
 
-# Prospetto delle variazioni dei Diritti pluriennali alle prestazioni dei giocatori
+**Prospetto delle variazioni dei Diritti pluriennali alle prestazioni dei giocatori**
 
-Prospetto delle variazioni dei Diritti pluriennali alle prestazioni dei giocatori
+Allegato n. 2 (valori in Euro)
 
-|  1° Articolo di Mutato | Prevenzione |   | Predicazione |   | Corte di916 |   | Ponte di unicontamento di Pinte di tristitazione |   | Valore di Pinte di tristitazione |   | Valore di Pinte di tristitazione |   | Valore di Pinte di tristitazione |   | Valore di Pinte di tristitazione |   | Valore di Pinte di tristitazione  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore | Data a pagina | Valore  |
-|  1° Articolo di Mutato | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000  |
-|  1° Articolo di Mutato | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000  |
-|  1° Articolo di Mutato | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000 | 1.000.000  |
+Prospetto delle variazioni dei Diritti pluriennali alle prestazioni dei calciatori
+
+**1^ Squadra Italiani**
+
+| 1^ Squadra Italiani | Data acquisto | Provenienza Società | Data cessione | Destinazione Società | Costo storico 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Fondo ammortamento/Fondo Svalutazione 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Valore Netto 30.06.2022 | Amm.ti | Sval. | Minusv. | Plusv. | Varie | Età | Anni ctr. residui | Valore Netto 30.06.2022 Agenti Sportivi |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Calabria Davide | | Settore giovanile | | | 101.600 | 380.000 | | 481.600 | 93.028 | 97.143 | | 190.171 | 291.429 | 97.143 | | | | | 26 | 0,0 | 291.429 |
+| Caldara Mattia | 02/08/2018 | Juventus F.C. | | | 36.870.000 | 870.000 | | 37.740.000 | 21.873.429 | 5.288.857 | | 27.162.286 | 10.577.714 | 5.288.857 | | | | | 28 | 1,0 | 1.244.381 |
+| Conti Andrea | 07/07/2017 | Atalanta B.C. | 10/01/2022 | U.C. Sampdoria | 24.200.000 | | (24.200.000) | 0 | 19.360.000 | 2.420.000 | (21.780.000) | 0 | 0 | 2.420.000 | | 2.420.000 | | | 28 | 0,0 | |
+| Donnarumma Antonio | 11/07/2017 | Asteras Tripolis F.C. | 30/06/2021 | Fine contratto | 978.947 | | (978.947) | 0 | 978.947 | | (978.947) | 0 | 0 | 0 | | | | | 32 | -1,0 | |
+| Donnarumma Gianluigi | | Settore giovanile | 30/06/2021 | Fine contratto | 1.111.000 | | (1.111.000) | 0 | 1.111.000 | | (1.111.000) | 0 | 0 | 0 | | | | | 23 | -1,0 | |
+| Mirante Antonio | 13/10/2021 | Svincolato | | | 0 | 0 | | 0 | 0 | 0 | | 0 | 0 | | | | | | 39 | 0,0 | |
+| Romagnoli Alessio | 11/08/2015 | A.S. Roma | | | 25.250.000 | | | 25.250.000 | 22.725.000 | 2.525.000 | | 25.250.000 | 0 | 2.525.000 | | | | | 27 | 0,0 | |
+| Tonali Sandro | 07/07/2021 | Calcio Brescia Spa | | | 0 | 14.500.000 | | 14.500.000 | 0 | 2.811.111 | | 2.811.111 | 11.688.889 | 2.811.111 | | | | | 22 | 4,0 | 1.200.000 |
+| **Totale 1^ Squadra Italiani** | | | | | 88.511.547 | 15.750.000 | (26.289.947) | 77.971.600 | 66.141.404 | 13.142.111 | (23.869.947) | 55.413.568 | 22.558.032 | 13.142.111 | 0 | 2.420.000 | 0 | | | | 2.735.810 |
+| | | | | | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | | | | | | | |
+
+**1^ Squadra Stranieri**
+
+| 1^ Squadra Stranieri | Data acquisto | Provenienza Società | Data cessione | Destinazione Società | Costo storico 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Fondo ammortamento/Fondo Svalutazione 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Valore Netto 30.06.2022 | Amm.ti | Sval. | Minusv. | Plusv. | Varie | Età | Anni ctr. residui | Agenti Sportivi |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Adli Yacine | 31/08/2021 | Girondins de Bordeaux | | | 0 | 8.500.000 | | 8.500.000 | 0 | 1.655.556 | | 1.655.556 | 6.844.444 | 1.655.556 | | | | | 22 | 4,0 | 400.000 |
+| Ballo Fodè | 17/07/2021 | A.S. Monaco | | | 0 | 5.405.956 | | 5.405.956 | 0 | 1.307.769 | | 1.307.769 | 4.098.187 | 1.307.769 | | | | | 25 | 3,0 | |
+| Bennacer Imsael | 03/08/2019 | Empoli F.C. | | | 17.200.000 | | | 17.200.000 | 6.676.429 | 3.507.857 | | 10.184.286 | 7.015.714 | 3.507.857 | | | | | 25 | 2,0 | 480.000 |
+| Calhanoglu Hakan | 30/06/2017 | Bayer 04 Leverkusen | 30/06/2021 | Fine contratto | 23.311.885 | | (23.311.885) | 0 | 23.311.885 | | (23.311.885) | 0 | 0 | 0 | | | | | 28 | -1,0 | |
+| Castillejo Azuaga Samuel | 16/08/2018 | Villarreal C.F. | | | 21.365.390 | | | 21.365.390 | 12.739.665 | 8.625.722 | | 21.365.387 | 3 | 4.312.861 | 4.312.861 | | | | 27 | 1,0 | |
+| Giroud Olivier | 16/07/2021 | Chelsea Football Club | | | 0 | 2.849.475 | | 2.849.475 | 0 | 949.825 | | 949.825 | 1.899.650 | 949.825 | | | | | 36 | 2,0 | 533.333 |
+| Hauge Jens Petter | 30/09/2020 | Bodo Glimt | 23/04/2022 | Eintracht Frankfurt | 4.800.000 | | (4.800.000) | 0 | 942.222 | 803.704 | (1.745.926) | 0 | 0 | 803.704 | | | 4.809.562 | | 23 | 3,0 | |
+| Hernandez Theo Bernard Francois | 26/07/2019 | Real Madrid Club de Futbol | | | 21.559.674 | 1.250.000 | | 22.809.674 | 8.623.870 | 2.726.050 | | 11.349.920 | 11.459.754 | 2.726.050 | | | | | 25 | 2,0 | 1.111.111 |
+| Kalulu Kyatengwa Pierre Kazaye Rommel | 04/08/2020 | Olympique Lyonnais | | | 1.190.000 | 100.000 | | 1.290.000 | 229.111 | 254.508 | | 483.619 | 806.381 | 254.508 | | | | | 22 | 3,0 | 512.381 |
+| Kessie Franck | 02/06/2017 | Atalanta B.C. | | | 32.000.000 | | | 32.000.000 | 25.600.000 | 6.400.000 | | 32.000.000 | 0 | 6.400.000 | | | | | 26 | 0,0 | 293.333 |
+| Kjaer Simon | 14/07/2020 | Sevilla SC Sad | | | 3.684.211 | | | 3.684.211 | 1.842.105 | 614.035 | | 2.456.140 | 1.228.071 | 614.035 | | | | | 33 | 0,0 | |
+| Krunic Rade | 07/07/2019 | Empoli F.C. | | | 8.600.000 | | | 8.600.000 | 3.440.000 | 1.720.000 | | 5.160.000 | 3.440.000 | 1.720.000 | | | | | 29 | 2,0 | 240.000 |
+| Ibrahimovic Zlatan | 02/01/2020 | Svincolato | | | 800.000 | | | 800.000 | 213.333 | 293.333 | | 506.666 | 293.334 | 293.333 | | | | | 41 | -1,0 | |
+| Laxalt Diego Sebastián | 16/08/2018 | Genoa Cricket and F.C. | 12/07/2021 | Dinamo Mosca | 19.000.000 | | (19.000.000) | 0 | 13.908.333 | | (13.908.333) | 0 | 0 | 0 | | | | | 29 | 0,0 | |
+| Lazetic Marco | 25/01/2022 | Stella Rossa | | | 0 | 4.526.000 | | 4.526.000 | 0 | 502.889 | | 502.889 | 4.023.111 | 502.889 | | | | | 18 | 4,0 | 467.556 |
+| Leonardo Campos Duarte Da Silva | 29/07/2019 | Clube do Flamengo | | | 10.624.000 | | | 10.624.000 | 4.249.600 | 4.711.900 | | 8.961.500 | 1.662.500 | 2.124.800 | 2.587.100 | | | | 26 | 2,0 | |
+| Maignan Mike Peterson | 26/05/2021 | Losc Lille | | | 14.360.904 | 1.016.575 | | 15.377.479 | 0 | 2.985.134 | | 2.985.134 | 12.392.345 | 2.985.134 | | | | | 27 | 4,0 | 1.176.484 |
+| Mandzukic Mario | 01/01/2021 | Svincolato | 30/06/2021 | Fine contratto | 400.000 | | (400.000) | 0 | 400.000 | | (400.000) | 0 | 0 | 0 | | | | | 36 | -1,0 | |
+| Rafael Alexandre Da Conceicao Leao | 30/07/2019 | Losc Lille | | | 29.544.013 | | | 29.544.013 | 11.817.606 | 5.908.803 | | 17.726.409 | 11.817.604 | 5.908.803 | | | | | 23 | 2,0 | |
+| Rebic Ante | 11/09/2020 | Eintracht Frankfurt Fussball | | | 6.700.000 | | | 6.700.000 | 1.340.000 | 1.340.000 | | 2.680.000 | 4.020.000 | 1.340.000 | | | | | 29 | 3,0 | 1.020.000 |
+| Saelemaekers Alexis | 19/06/2020 | Rsc Anderlecht N.V. S.A. | | | 5.250.000 | 2.400.000 | | 7.650.000 | 1.205.357 | 1.288.929 | | 2.494.286 | 5.155.714 | 1.288.929 | | | | | 23 | 2,0 | 1.120.000 |
+| Tatarusanu Ciprian | 11/09/2020 | Olympique Lyonnais | | | 1.026.315 | | | 1.026.315 | 342.105 | 342.105 | | 684.210 | 342.105 | 342.105 | | | | | 36 | 1,0 | 166.667 |
+| Tomori Fikayo | 30/06/2021 | Chelsea Football Club | | | 28.780.948 | 2.825.790 | | 31.606.738 | 0 | 7.478.132 | | 7.478.132 | 24.128.606 | 7.478.132 | | | | | 25 | 3,0 | 222.187 |
+| **Totale 1^ Squadra Stranieri** | | | | | 250.197.340 | 28.873.796 | (47.511.885) | 231.559.251 | 116.881.621 | 53.416.251 | (39.366.144) | 130.931.728 | 100.627.523 | 46.516.290 | 6.899.961 | 0 | 4.809.562 | | | | 7.743.052 |
+| | | | | | 0 | 0 | 0 | 0 | (1 ) | 0 | 0 | (1 ) | 0 | 0 | | | | | | | |
+
+| | Costo storico 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Fondo 01.07.2021 | Incrementi | Decrementi | 30.06.2022 | Valore Netto 30.06.2022 | Amm.ti | Sval. | Minusv. | Plusv. | Agenti Sportivi |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Totale Altri professionisti e Settore Giovanile** | 11.711.688 | 2.893.323 | (1.741.423) | 12.863.588 | 5.880.405 | 4.003.911 | (1.176.942) | 8.707.374 | 4.156.214 | 2.897.057 | 1.106.854 | 29.835 | 759.358 | 781.743 |
+| | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | | | |
+| **Totale Diritti D'opzione** | 300.000 | | | 300.000 | 0 | | | 0 | 300.000 | 0 | | | | |
+| **Contratti in corso di perfezionamento** | 0 | | | 0 | 0 | | | | 0 | | | | | |
+| **Totale Diritti Pluriennali Calciatori** | 350.720.575 | 47.517.119 | (75.543.255) | 322.694.439 | 188.903.430 | 70.562.273 | (64.413.033) | 195.052.670 | 127.641.769 | 62.555.458 | 8.006.815 | 2.449.835 | 5.568.920 | 11.260.605 |
+| | 0 | 0 | 0 | 0 | (1) | 0 | 0 | (1) | 1 | 0 | 0 | | | |
+
+Intestazioni delle colonne (come riportate nel documento): Valore Netto 30.06.2022 – Agenti Sportivi; Data acquisto; Società; Data cessione; Società; Incrementi; Decrementi; 30.06.2022; 01.07.2021; Anni ctr. residui; Fondo ammortamento/Fondo Svalutazione; Effetti economici al 30.06.2022; Varie; Amm.ti; Sval.; Minusv.; Plusv.; Età; Provenienza; Destinazione; Costo storico.
 
 159
 
 --- pág. 160 ---
 
+160
+
 RELAZIONE E BILANCIO AL 30 GIUGNO 2022
 
-# Allegato 3
+Allegato 3
 
-# **Prospetto delle variazioni delle immobilizzazioni materiali**
+**Prospetto delle variazioni delle immobilizzazioni materiali**
 
-(volori in migliaia di Euro)
+Allegato n. 3
 
-|  Conto Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | 34 | — | — | — | — | — | 34  |
-|  Impianti e macchinari | 645 | 92 | — | — | — | — | 737  |
-|  Attrezzature industriali e commerciali | 3.370 | 3.258 | (159) | — | — | — | 6.469  |
-|  Altre immobilizzazioni materiali | 2.946 | 615 | (48) | — | — | — | 3.513  |
-|  Immobilizzazioni materiali in corso | 48 | 149 | (187) | — | — | — | 10  |
-|  **Totale** | **7.043** | **4.114** | **(394)** | **—** | **—** | **—** | **10.763**  |
+(valori in migliaia di Euro)
 
-|  Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | (34) | — | — | — | — | — | (34)  |
-|  Impianti e macchinari | (334) | — | — | — | (69) | — | (403)  |
-|  Attrezzature industriali e commerciali | (2.196) | — | — | — | (473) | — | (2.669)  |
-|  *Automezzi* | (26) | — | — | — | — | — | (26)  |
-|  *Macchine ufficio elettroniche* | (1.153) | — | 48 | — | (63) | — | (1.170)  |
-|  *Mobili e arredi* | (1.197) | — | — | (6) | (222) | — | (1.425)  |
-|  Altre immobilizzazioni materiali | (2.378) | — | 48 | (6) | (284) | — | (2.621)  |
-|  **Totale** | **(4.942)** | **—** | **48** | **(6)** | **(827)** | **—** | **(5.727)**  |
+| Costo Storico | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | 34 | — | — | — | — | — | 34 |
+| Impianti e macchinari | 645 | 92 | — | — | — | — | 737 |
+| Attrezzature industriali e commerciali | 3.370 | 3.258 | (159) | — | — | — | 6.469 |
+| Altre immobilizzazioni materiali | 2.946 | 615 | (48) | — | — | — | 3.513 |
+| Immobilizzazioni materiali in corso | 48 | 149 | (187) | — | — | — | 10 |
+| **Totale** | 7.043 | 4.114 | (394) | — | — | — | 10.763 |
 
-|  Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Terreni e Fabbricati | — | — | — | — | — | — | —  |
-|  Impianti e macchinari | 311 | 92 | — | — | (69) | — | 334  |
-|  Attrezzature industriali e commerciali | 1.174 | 3.258 | (159) | — | (473) | — | 3.799  |
-|  Altre immobilizzazioni materiali | 568 | 615 | — | (6) | (285) | — | 891  |
-|  Immobilizzazioni materiali in corso | 48 | 149 | (187) | — | — | — | 10  |
-|  **Totale** | **2.101** | **4.114** | **(346)** | **(6)** | **(827)** | **—** | **5.035**  |
+| Fondo Ammortamento e Fondo Svalutazione | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | (34) | — | — | — | — | — | (34) |
+| Impianti e macchinari | (334) | — | — | — | (69) | — | (403) |
+| Attrezzature industriali e commerciali | (2.196) | — | — | — | (473) | — | (2.669) |
+| Automezzi | (26) | — | — | — | — | — | (26) |
+| Macchine ufficio elettroniche | (1.155) | — | 48 | — | (63) | — | (1.170) |
+| Mobili e arredi | (1.197) | — | — | (6) | (222) | — | (1.425) |
+| Altre immobilizzazioni materiali | (2.378) | — | 48 | (6) | (284) | — | (2.621) |
+| **Totale** | (4.942) | — | 48 | (6) | (827) | — | (5.727) |
 
-160
+| Valore netto | 01.07.2021 | Investimenti | (Disinvestimenti) | Altri movimenti | (Amm.ti) | (Svalutazioni) / Rivalutazioni | 30.06.2022 |
+|---|---|---|---|---|---|---|---|
+| Terreni e Fabbricati | — | — | — | — | — | — | — |
+| Impianti e macchinari | 311 | 92 | — | — | (69) | — | 334 |
+| Attrezzature industriali e commerciali | 1.174 | 3.258 | (159) | — | (473) | — | 3.799 |
+| Altre immobilizzazioni materiali | 568 | 615 | — | (6) | (285) | — | 891 |
+| Immobilizzazioni materiali in corso | 48 | 149 | (187) | — | — | — | 10 |
+| **Totale** | 2.101 | 4.114 | (346) | (6) | (827) | — | 5.035 |
+
+Prospetto delle variazioni delle immobilizzazioni materiali
 
 --- pág. 161 ---
 

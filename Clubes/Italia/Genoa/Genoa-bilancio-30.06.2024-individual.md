@@ -1278,96 +1278,81 @@ RELAZIONE SULLA GESTIONE AL BILANCIO D’ESERCIZIO AL 30 GIUGNO 2024
 
 --- pág. 31 ---
 
-GENOA
-CRICKET
-AND
-FOOTBALL
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
+- 8 -
 
-### 1.3 COMPOSIZIONE DELLA STRUTTURA PATRIMONIALE
+1.3 COMPOSIZIONE DELLA STRUTTURA PATRIMONIALE
+Dati in unità di Euro
 
-*Dati in unità di Euro*
-
-|  Descrizione | 30/06/24 | 31/12/23 | Variazioni  |
-| --- | --- | --- | --- |
-|  ATTIVITA' | 350.956.130 | 309.165.373 | 41.790.757  |
-|  PASSIVITA' | 349.905.242 | 296.480.423 | 53.424.819  |
-|  PATRIMONIO NETTO | 1.050.888 | 12.684.950 | (11.634.062)  |
-|  **RISULTATO D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)** | **(6.289.418)**  |
+| Descrizione | 30/06/24 | 31/12/23 | Variazioni |
+|---|---|---|---|
+| ATTIVITA' | 350.956.130 | 309.165.373 | 41.790.757 |
+| PASSIVITA' | 349.905.242 | 296.480.423 | 53.424.819 |
+| PATRIMONIO NETTO | 1.050.888 | 12.684.950 | (11.634.062) |
+| **RISULTATO D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)** | **(6.289.418)** |
 
 A livello patrimoniale l'esercizio al 30 giugno 2024 è caratterizzato da:
-
 - un decremento di 6,6 milioni delle immobilizzazioni principalmente a causa dell'effetto ammortamenti sui diritti pluriennali alle prestazioni dei negoziatori, in parte compensato dalle acquisizioni di periodo;
 - un incremento dei crediti per Euro 49 milioni, riconducibili ai crediti verso Lega e società calcistiche estere;
 - un incremento di 3,6 milioni delle disponibilità liquide;
 - un decremento dei ratei e risconti attivi per 4 milioni di Euro;
 - un decremento del patrimonio netto di 11,6 milioni che sconta da un lato le perdite di periodo di 38,8 milioni e che beneficia del supporto in conto capitale dell'Azionista di riferimento per Euro 27,2 milioni in termini di versamenti in conto capitale (Euro 13,8 milioni) e rinunce a crediti verso la Società (Euro 13,4 milioni);
-- un incremento complessivo dei debiti di natura finanziaria per Euro 19,2 milioni (includendo la diminuzione dei fondi per rischi e oneri di natura finanziaria che nel 2023 ammontavano a circa Euro 14 milioni); a questo proposito, si noti tuttavia che la Società ha provveduto ad estinguere nei mesi seguenti il 30 giugno 2024 il prestito di Euro 20 milioni contratto con *Fasanara Investments III S.A., SICAV-RAIF*;
+- un incremento complessivo dei debiti di natura finanziaria per Euro 19,2 milioni (includendo la diminuzione dei fondi per rischi e oneri di natura finanziaria che nel 2023 ammontavano a circa Euro 14 milioni); a questo proposito, si noti tuttavia che la Società ha provveduto ad estinguere nei mesi seguenti il 30 giugno 2024 il prestito di Euro 20 milioni contratto con *Fasanara Investments III S.A., SICAV-RAIF;*
 - un decremento dei debiti verso controllate per Euro 12,3 milioni;
 - un decremento dei debiti tributari e previdenziali per circa 2 milioni per via del puntuale adempimento degli obblighi sia rateali che correnti;
 - un decremento di circa Euro 7 milioni degli altri debiti in seguito in particolare al pagamento di posizioni pregresse verso procuratori e grazie alla diminuzione delle poste di carattere straordinario;
 - un incremento dei ratei e risconti passivi, in funzione dei ricavi non di competenza.
 
 RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
-
 - 8 -
 
 --- pág. 32 ---
 
-GENOA  
-CRICKET  
-AND  
-FOOTBALL  
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
+- 9 -
 
 Si riporta di seguito un prospetto riassuntivo delle voci patrimoniali
 
-|   | 30/06/24 | 31/12/23  |
-| --- | --- | --- |
-|  **ATTIVITA'** | **350.956.130** | **309.165.373**  |
-|  B. IMMOBILIZZAZIONI | 201.911.199 | 208.562.084  |
-|  C. ATTIVO CIRCOLANTE | 142.661.411 | 90.092.637  |
-|  D. RATEI E RISCONTI | 6.383.520 | 10.510.652  |
-|  **PASSIVITA'** | **350.956.131** | **309.165.373**  |
-|  B. FONDI PER RISCHI E ONERI | 794.110 | 14.705.479  |
-|  C. TRATTAMENTO FINE RAPPORTO LAVORO | 825.430 | 770.687  |
-|  D. DEBITI | 318.995.403 | 265.747.611  |
-|  E. RATEI E RISCONTI PASSIVI | 29.290.300 | 15.258.646  |
-|  **PATRIMONIO NETTO** | **1.050.888** | **12.684.950**  |
-|  **UTILE (PERDITA) D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)**  |
+| | 30/06/24 | 31/12/23 |
+|---|---|---|
+| **ATTIVITA'** | **350.956.130** | **309.165.373** |
+| B. IMMOBILIZZAZIONI | 201.911.199 | 208.562.084 |
+| C. ATTIVO CIRCOLANTE | 142.661.411 | 90.092.637 |
+| D. RATEI E RISCONTI | 6.383.520 | 10.510.652 |
+| **PASSIVITA'** | **350.956.131** | **309.165.373** |
+| B. FONDI PER RISCHI E ONERI | 794.110 | 14.703.479 |
+| C. TRATTAMENTO FINE RAPPORTO LAVORO | 825.430 | 770.687 |
+| D. DEBITI | 318.995.403 | 265.747.611 |
+| E. RATEI E RISCONTI PASSIVI | 29.290.300 | 15.258.646 |
+| **PATRIMONIO NETTO** | **1.050.888** | **12.684.950** |
+| **UTILE (PERDITA) D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)** |
 
-#### 1.4 CONTO ECONOMICO
+1.4 CONTO ECONOMICO
+Dati in unità di Euro
 
-*Dati in unità di Euro*
-
-|  *Dati in unità di Euro* **Descrizione** | 30/06/2024 | 31/12/2023 | Variazioni  |
-| --- | --- | --- | --- |
-|  **VALORE DELLA PRODUZIONE** | **85.073.614** | **116.983.485** | **(31.909.871)**  |
-|  COSTI OPERATIVI | (54.357.064) | (114.791.663) | 60.434.599  |
-|  **MOL (EBITDA)** | **30.716.551** | **2.191.822** | **28.524.729**  |
-|  AMMORTAMENTI E SVALUTAZIONI | (62.505.405) | (27.866.728) | (34.638.677)  |
-|  **RO (EBIT)** | **(31.788.854)** | **(25.674.906)** | **(6.113.948)**  |
-|  PROVENTI ONERI FINANZIARI | (4.788.914) | (9.579.460) | 4.790.546  |
-|  PROVENTI ED ONERI STRAORDINARI |  | 0 | 0  |
-|  RETTIFICHE DI ATTIVITÀ FINANZIARIE |  |  | 0  |
-|  **RISULTATO PRIMA DELLE IMPOSTE** | **(36.577.767)** | **(35.254.366)** | **(1.323.401)**  |
-|  IMPOSTE DI ESERCIZIO | 2.253.415 | 2.712.602 | (459.187)  |
-|  **RISULTATO D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)** | **(6.289.418)**  |
+| Dati in unità di Euro — Descrizione | 30/06/2024 | 31/12/2023 | Variazioni |
+|---|---|---|---|
+| **VALORE DELLA PRODUZIONE** | **85.073.614** | **116.983.485** | **(31.909.871)** |
+| COSTI OPERATIVI | (54.357.064) | (114.791.663) | 60.434.599 |
+| **MOL (EBITDA)** | **30.716.551** | **2.191.822** | **28.524.729** |
+| AMMORTAMENTI E SVALUTAZIONI | (62.505.405) | (27.866.728) | (34.638.677) |
+| **RO (EBIT)** | **(31.788.854)** | **(25.674.906)** | **(6.113.948)** |
+| PROVENTI ONERI FINANZIARI | (4.788.914) | (9.579.460) | 4.790.546 |
+| PROVENTI ED ONERI STRAORDINARI | | 0 | 0 |
+| RETTIFICHE DI ATTIVITÀ FINANZIARIE | | | 0 |
+| **RISULTATO PRIMA DELLE IMPOSTE** | **(36.577.767)** | **(35.254.366)** | **(1.323.401)** |
+| IMPOSTE DI ESERCIZIO | 2.253.415 | 2.712.602 | (459.187) |
+| **RISULTATO D'ESERCIZIO** | **(38.831.182)** | **(32.541.764)** | **(6.289.418)** |
 
 Come già argomentato in precedenza, il risultato di esercizio si rende negativo soprattutto a causa della contabilizzazione di ammortamenti e svalutazioni per Euro 62,5 milioni.
-
 Di seguito vengono esaminate le principali poste di conto economico.
 
-#### 1.5 VALORE DELLA PRODUZIONE
-
+1.5 VALORE DELLA PRODUZIONE
 I ricavi della gestione operativa ammontano ad Euro 3,1 milioni e riguardano gli incassi da abbonamenti e biglietteria di competenza del semestre di bilancio.
 
 RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
-
 - 9 -
 
 --- pág. 33 ---
@@ -1655,49 +1640,43 @@ RELAZIONE SULLA GESTIONE AL BILANCIO D’ESERCIZIO AL 30 GIUGNO 2024
 
 --- pág. 40 ---
 
-GENOA
-CRICKET
-AND
-FOOTBALL
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
+- 17 -
 
 value registrati.
 
 Valori in €
 
-|  Calciatore | Società cessionaria | Valore netto contabile | Valore di cessione | Minusvalenza / Impairment  |
-| --- | --- | --- | --- | --- |
-|  Portanova Manolo | A.C. Reggiana 1919 | 8.166.000 | - | 8.166.000  |
-|  Yeboah Kelvin | Minnesota United FC (MLS) | 5.625.000 | 2.500.000 | 3.125.000  |
-|  Hefti Silvan | Hamburg S.V. | 4.210.765 | 1.500.000 | 2.710.765  |
-|  Valietti Federico | Football Club Trapani 1905 | 2.500.000 | 500 | 2.499.500  |
-|  Puscas George | Bodrum Futbol Kulübü | 2.494.500 | - | 2.494.500  |
-|  Buksa Aleksander | Górnik Zabrze | 2.468.000 | - | 2.468.000  |
-|  Czyborra Lennart | WSG Tirol | 3.850.076 | - | 1.500.000  |
-|  Coda Massimo | U.C. Sampdoria | 1.066.000 | - | 1.066.000  |
-|  Jagiello Filip | Lech Poznan | 937.170 | - | 937.170  |
-|  Chierico Luca | Contract Termination | 258.500 | - | 258.500  |
-|  Pajac Marko | Contract Termination | 151.750 | - | 151.750  |
-|  **TOTALE** |  | **31.727.761** | **4.000.500** | **25.377.185**  |
+| Calciatore | Società cessionaria | Valore netto contabile | Valore di cessione | Minusvalenza / Impairment |
+|---|---|---|---|---|
+| Portanova Manolo | A.C. Reggiana 1919 | 8.166.000 | - | 8.166.000 |
+| Yeboah Kelvin | Minnesota United FC (MLS) | 5.625.000 | 2.500.000 | 3.125.000 |
+| Hefti Silvan | Hamburg S.V. | 4.210.765 | 1.500.000 | 2.710.765 |
+| Valietti Federico | Football Club Trapani 1905 | 2.500.000 | 500 | 2.499.500 |
+| Puscas George | Bodrum Futbol Kulübü | 2.494.500 | - | 2.494.500 |
+| Buksa Aleksander | Górnik Zabrze | 2.468.000 | - | 2.468.000 |
+| Czyborra Lennart | WSG Tirol | 3.850.076 | - | 1.500.000 |
+| Coda Massimo | U.C. Sampdoria | 1.066.000 | - | 1.066.000 |
+| Jagiello Filip | Lech Poznan | 937.170 | - | 937.170 |
+| Chierico Luca | *Contract Termination* | 258.500 | - | 258.500 |
+| Pajac Marko | *Contract Termination* | 151.750 | - | 151.750 |
+| **TOTALE** | | **31.727.761** | **4.000.500** | **25.377.185** |
 
-# 5.2 Evoluzione prevedibile della gestione e sviluppi strategici
+5.2 Evoluzione prevedibile della gestione e sviluppi strategici
 
 I principali obiettivi strategici assunti nelle proiezioni del business plan pluriennale della Società, peraltro sotteso al piano di ristrutturazione del debito fiscale omologato dal Tribunale di Genova, si dividono in obiettivi di business e sportivi:
-
 i) obiettivi di business quali:
-a. riorganizzazione societaria con adozione di un modello gestionale moderno e professionale;
-b. rafforzamento patrimoniale della società e riequilibrio della gestione finanziaria;
+ a. riorganizzazione societaria con adozione di un modello gestionale moderno e professionale;
+ b. rafforzamento patrimoniale della società e riequilibrio della gestione finanziaria;
 ii) obiettivi sportivi quali:
-a. permanenza nella massima serie (A) del campionato di calcio italiano e partecipazione alle competizioni Europee;
-b. sviluppo vivaio giovanile e calcio femminile;
-c. gestione accurata del portafoglio calciatori.
+ a. permanenza nella massima serie (A) del campionato di calcio italiano e partecipazione alle competizioni Europee;
+ b. sviluppo vivaio giovanile e calcio femminile;
+ c. gestione accurata del portafoglio calciatori.
 
-Il perseguimento dell’equilibrio finanziario ha trovato certamente grande impulso dalla ristrutturazione dei debiti fiscali attraverso l’accordo di ristrutturazione del debito con l’Agenzia delle Entrate a fine 2023, è assicurato dal supporto del Socio di maggioranza e ha trovato riscontro nel contenimento dei costi operativi, della rosa della prima squadra e nelle risultanze delle due finestre di mercato invernale ed estiva.
+Il perseguimento dell'equilibrio finanziario ha trovato certamente grande impulso dalla ristrutturazione dei debiti fiscali attraverso l'accordo di ristrutturazione del debito con l'Agenzia delle Entrate a fine 2023, è assicurato dal supporto del Socio di maggioranza e ha trovato riscontro nel contenimento dei costi operativi, della rosa della prima squadra e nelle risultanze delle due finestre di mercato invernale ed estiva.
 
-RELAZIONE SULLA GESTIONE AL BILANCIO D’ESERCIZIO AL 30 GIUGNO 2024
-
+RELAZIONE SULLA GESTIONE AL BILANCIO D'ESERCIZIO AL 30 GIUGNO 2024
 - 17 -
 
 --- pág. 41 ---
@@ -3666,54 +3645,53 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2024
 
 --- pág. 100 ---
 
-**GENOA**^{}[] CRICKET AND FOOTBALL CLUB
+GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-**GENOA CRICKET AND FOOTBALL CLUB S.P.A.**
+Esercizio corrente / Esericizio precedente
 
-|  *(Importi in Euro)* | Esercizio corrente |   |   | Esercio precedente  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Ammontare | Aliquota fiscale | Inposte anticipate rilevate | Ammontare | Aliquota fiscale | Imposte anticipate rilevate  |
-|  **Perdite fiscali** |  |  |  |  |  |   |
-|  dell'esercizio | 15.262.386 |  |  | 19.453.667 |  |   |
-|  di esercizi precedenti (post consolidato fiscale) | 77.743.296 |  |  | 58.289.629 |  |   |
-|  di esercizi precedenti (ante consolidato fiscale) | 24.781.111 |  |  | 24.781.111 |  |   |
-|  **Totale perdite fiscali** | **117.786.793** |  |  | **102.524.407** |  |   |
-|  **Perdite fiscali a nuovo recuperabili con ragionevole certezza** | **57.916.667** | **24%** | **13.900.000** | **57.916.667** | **24%** | **13.900.000**  |
+| (Importi in Euro) | Esercizio corrente – Ammontare | Esercizio corrente – Aliquota fiscale | Esercizio corrente – Imposte anticipate rilevate | Esericizio precedente – Ammontare | Esericizio precedente – Aliquota fiscale | Esericizio precedente – Imposte anticipate rilevate |
+|---|---|---|---|---|---|---|
+| **Perdite fiscali** | | | | | | |
+| dell'esercizio | 15.262.386 | | | 19.453.667 | | |
+| di esercizi precedenti (post consolidato fiscale) | 77.743.296 | | | 58.289.629 | | |
+| di esercizi precedenti (ante consolidato fiscale) | 24.781.111 | | | 24.781.111 | | |
+| Totale perdite fiscali | 117.786.793 | | | 102.524.407 | | |
+| Perdite fiscali a nuovo recuperabili con ragionevole certezza | 57.916.667 | 24% | 13.900.000 | 57.916.667 | 24% | 13.900.000 |
 
-## Riconciliazione imposte - IRES
+**Riconciliazione imposte - IRES**
 
 Si riporta un prospetto contenente le informazioni richieste dal principio contabile n. 25, riguardanti la riconciliazione tra l'onere fiscale evidenziato in Bilancio e l'onere fiscale teorico.
 
-|  **Risultato prima delle imposte** | **(35.077.767)**  |
-| --- | --- |
-|  Onere fiscale teorico (aliquota 24%) |   |
-|  **Differenze temporanee imponibili in esercizi successivi** |   |
-|  **Totale** | **0**  |
-|  **Differenze temporanee deducibili in esercizi successivi** |   |
-|  *Svalutazioni e accantonamenti indeducibili in tutto o in parte* | *23.877.685*  |
-|  **Totale** | **23.877.685**  |
-|  **Rigiro delle differenze temporanee da esercizi precedenti** |   |
-|  *Interessi passivi indeducibili* | *(4.548.274)*  |
-|  *fondo rischi e oneri* | *0*  |
-|  **Totale** | **(4.548.274)**  |
-|  **Differenze che non si riverseranno negli esercizi successivi** |   |
-|  *Spese per automezzi* | *90.244*  |
-|  *Spese vitto e alloggio e di rappresentanza* | *33.567*  |
-|  *Spese di telefonia* | *1.430*  |
-|  *Spese vitto e alloggio fuori dal Comune* | *80.038*  |
-|  *sanzioni e interessi ravvedimento* | *162.643*  |
-|  *liberalità indeducibili* | *10.730*  |
-|  *costi vari inded - omaggi* | *19.083*  |
-|  *multe ammende e sanzioni* | *12.976*  |
-|  *oneri esercizi precedenti* | *25.138*  |
-|  *contributi ass non deducibili* | *50.000*  |
-|  *Costi non deducibili* | *120*  |
-|  **Totale** | **485.969**  |
-|  **Imponibile fiscale** | **(15.262.386)**  |
-|  Imposte correnti sul reddito dell'esercizio | 0  |
+| | |
+|---|---|
+| **Risultato prima delle imposte** | (35.077.767) |
+| Onere fiscale teorico (aliquota 24%) | |
+| **Differenze temporanee imponibili in esercizi successivi** | |
+| **Totale** | 0 |
+| **Differenze temporanee deducibili in esercizi successivi** | |
+| Svalutazioni e accantonamenti indeducibili in tutto o in parte | 23.877.685 |
+| **Totale** | 23.877.685 |
+| **Rigiro delle differenze temporanee da esercizi precedenti** | |
+| Interessi passivi indeducibili | (4.548.274) |
+| fondo rischi e oneri | 0 |
+| **Totale** | (4.548.274) |
+| **Differenze che non si riverseranno negli esercizi successivi** | |
+| Spese per automezzi | 90.244 |
+| Spese vitto e alloggio e di rappresentanza | 33.567 |
+| Spese di telefonia | 1.430 |
+| Spese vitto e allogio fuori dal Comune | 80.038 |
+| sanzioni e interessi ravvedimento | 162.643 |
+| liberalità indeducibili | 10.730 |
+| costi vari inded - omaggi | 19.083 |
+| multe ammende e sanzioni | 12.976 |
+| oneri esercizi precedenti | 25.138 |
+| contributi ass non deducibili | 50.000 |
+| Costi non deducibili | 120 |
+| **Totale** | 485.969 |
+| **Imponibile fiscale** | (15.262.386) |
+| Imposte correnti sul reddito dell'esercizio | 0 |
 
 50
-
 NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2024
 
 --- pág. 101 ---
@@ -3924,52 +3902,88 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2024
 
 Docusign Envelope ID: F4B31833-FFA8-4602-97C9-487AC5077452
 
-![img-13.jpeg](img-13.jpeg)
+**VARIAZIONE DEL PATRIMONIO NETTO**
 
-# **VARIAZIONE DEL PATRIMONIO NETTO**
+| Valori in € | Saldo al 31/12/2022 | Incrementi | Decrementi | Saldo al 31/12/2023 | Incrementi | Decrementi | Saldo al 30/06/2024 |
+|---|---|---|---|---|---|---|---|
+| Capitale Sociale | 6.471.355 | - | - | 6.471.355 | | | 6.471.355 |
+| Riserva Legale | 530.622 | - | - | 530.622 | | | 530.622 |
+| Riserva azioni proprie in portafoglio | - | - | - | - | | | - |
+| Riserva da Rivalutazione | 7.236.102 | - | (7.236.102) | - | | | - |
+| Riserva copertura perdite es. Precedenti | - | - | - | - | | | - |
+| Riserva copertura perdita di esercizio | - | - | - | - | | | - |
+| Riserva straordinaria | - | - | - | - | | | - |
+| Ris. versam. c/fut. aum.cap. | 95.470.815 | 39.826.061 | (35.493.994) | 99.802.882 | 27.197.121 | (61.728.621) | 65.271.382 |
+| Riserva ex art. 4, legge 586/96 | 150.476 | - | - | 150.476 | | | 150.476 |
+| Perdite portate a nuovo | (42.730.096) | 42.730.096 | (61.728.621) | (61.728.621) | 61.728.621 | (32.541.764) | (32.541.764) |
+| Perdita dell'esercizio | (61.728.621) | 61.728.621 | (32.541.764) | (32.541.764) | 32.541.764 | (38.831.182) | (38.831.181) |
+| Utile dell'esercizio | - | - | - | - | | | - |
+| **Totale** | **5.400.652** | **144.284.778** | **(137.000.481)** | **12.684.948** | **121.467.506** | **(133.101.567)** | **1.050.888** |
 
-|  Valori in € | Saldo al 31/12/2022 | Incrementi | Decrementi | Saldo al 31/12/2023 | Incrementi | Decrementi | Saldo al 30/06/2024  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Capitale Sociale | 6.471.355 | - | - | 6.471.355 |  |  | 6.471.355  |
-|  Riserva Legale | 530.622 | - | - | 530.622 |  |  | 530.622  |
-|  Riserva azioni proprie in portafoglio | - | - | - | - |  |  | -  |
-|  Riserva da Rivalutazione | 7.236.102 | - | (7.236.102) | - |  |  | -  |
-|  Riserva copertura perdite es. Precedenti | - | - | - | - |  |  | -  |
-|  Riserva copertura perdita di esercizio | - | - | - | - |  |  | -  |
-|  Riserva straordinaria | - | - | - | - |  |  | -  |
-|  Ris. versam. c/fut. aum.cap. | 95.470.815 | 39.826.061 | (35.493.994) | 99.802.882 | 27.197.121 | (61.728.621) | 65.271.382  |
-|  Riserva ex art. 4, legge 586/96 | 150.476 | - | - | 150.476 |  |  | 150.476  |
-|  Perdite portate a nuovo | (42.730.096) | 42.730.096 | (61.728.621) | (61.728.621) | 61.728.621 | (32.541.764) | (32.541.764)  |
-|  Perdita dell'esercizio | (61.728.621) | 61.728.621 | (32.541.764) | (32.541.764) | 32.541.764 | (38.831.182) | (38.831.181)  |
-|  Utile dell'esercizio | - | - | - | - |  |  | -  |
-|  **Totale** | **5.400.652** | **144.284.778** | **(137.000.481)** | **12.684.948** | **121.467.506** | **(133.101.567)** | **1.050.888**  |
-
-![Handwritten signature]()
-
-**GENOA**  
-GROKEY AND FOOTBALL CLUB
-
-Via Ronchi, 67  
-16155 Genova Pagli
-
-Tel. +39 010 612831  
-Fax +39 010 6128345
-
-info@genoacfc.it  
-genoacfc.it
-
-C.F. 80033270101  
-P.IVA 00973790108
-
+GENOA CRICKET AND FOOTBALL CLUB
+Via Ronchi, 67 – 16155 Genova Pegli
+Tel. +39 010 612831 – Fax +39 010 6128345
+info@genoacfc.it – genoacfc.it
+C.F. 80033270101 – P.IVA 00973790108
 Mat. 20980
 
 --- pág. 108 ---
 
-DocuSign Envelope ID: EAB58091-C5FB-4D60-B4A0-E70B9D7FB8E
+Docusign Envelope ID: EAB56091-C9FB-4D60-B4A0-E70B9D7FB89E
 
-# Bilancio al 30/06/2024
+Bilancio al 30/06/2024
+Prospetto delle movimentazioni dei diritti pluriennali alle prestazioni dei calciatori al 30/06/2024
 
-Progetto delle毅力 e le毅力 di un{l} e l'1000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Intestazioni: 01/01/2024 – 31/03/2024 (Quarter Variances: Increases, Decreases) | Values as of 31/03/2024 (Historical Cost, Amortiz. Fund prior period, NBV before Amortization) | P&L impact as of 31/03/2024 (Amortization of the period, Impairment, Capital Loss, Capital Gain) | NBV 31/03/2024 | 01/04/2024 – 30/06/2024 (Quarter Variances: Increases, Decreases) | Values as of 30/06/2024 (Historical Cost, Amortiz. Fund prior period, NBV before Amortization) | P&L impact as of 30/06/2024 (Amortization of the period, Impairment, Capital Loss, Capital Gain) | NBV 30/06/2024
+Colonne anagrafiche: Date of FS 30/06/2024 | Contract Expiring Date | Date Former Club | Sales Info: Date, Club, Sales Value
+
+Righe (valori come stampati, nell'ordine in cui figurano):
+
+1. Accornero Federico | 30/06/2026 | 21/07/23 | Academy | 62.647 - 62.647 6.000 56.647 | 10.000 72.647 6.000 66.647 7.000 59.647
+2. Ankeye David | 30/06/2027 | 26/01/24 | Sheriff | 2.555.000 2.555.000 - 2.555.000 125.000 2.430.000 | 2.555.000 125.000 2.430.000 192.000 2.238.000
+3. Aramu Mattia | 30/06/2026 | 01/02/23 | Venezia | 2.460.000 - 2.460.000 246.000 2.214.000 | 2.460.000 246.000 2.214.000 246.000 1.968.000
+4. Badelj Milan | 30/06/2025 | 14/09/20 | Lazio | 450.000 - 450.000 225.000 225.000 | 450.000 225.000 225.000 45.000 180.000
+5. Bani Mattia | 30/06/2026 | 04/01/21 | Bologna | 5.210.000 - 5.210.000 521.000 4.689.000 | 5.210.000 521.000 4.689.000 521.000 4.168.000
+6. Buksa Aleksander | 30/06/2026 | 28/08/21 | Free transfer | 26/06/24 Gornik - € | 3.040.000 - 3.040.000 304.000 2.736.000 | 40.000 3.080.000 304.000 2.776.000 308.000 2.468.000 -
+7. Chierico Luca | 30/06/2026 | 18/01/21 | Roma | 18/07/24 Termination - € | 322.500 - 322.500 32.000 290.500 | 322.500 32.000 290.500 32.000 258.500 -
+8. Coda Massimo | 30/06/2025 | 01/07/22 | Lecce | 12/07/24 Sampdoria - € | 1.600.000 - 1.600.000 267.000 1.333.000 | 1.600.000 267.000 1.333.000 267.000 1.066.000 -
+9. Czyborra Lennart | 30/06/2025 | 01/02/22 | Atalanta | 5.776.076 - 5.776.076 963.000 4.813.076 | 5.776.076 963.000 4.813.076 963.000 1.500.000 2.350.076
+10. Dragusin Radu Matei | 30/06/2026 | 14/07/22 | Juventus | 10/01/24 Spurs 25.000.000 € | 6.077.670 - - - 2.381.506 21.303.836 | - - - - - -
+11. Ekuban Caleb Ansah | 30/06/2026 | 31/07/21 | Trabzon Sportif | 2.600.000 - 2.600.000 1.300.000 1.300.000 | 200.000 2.800.000 1.300.000 1.500.000 167.000 1.333.000
+12. Favilli Andrea | 30/06/2025 | 10/08/18 | Juventus | 12.050.000 3.384.615 8.665.385 1.444.000 7.221.385 | 12.050.000 4.828.615 7.221.385 1.444.000 5.777.385
+13. Frendrup Morten Wetche | 30/06/2028 | 30/01/22 | Brondby | 127.500 | 4.405.508 - 4.405.508 245.000 4.160.508 | 257.226 4.662.734 245.000 4.417.734 260.000 4.157.734
+14. Galdames Millan Pablo | 30/06/2024 | 01/09/21 | Velez Sarsfield | 25/01/24 Vasco de Gama 700.000 € | 500.000 - - - 424.008 624.008 | - - - - - -
+15. Gudmundsson Albert | 30/06/2026 | 31/01/22 | AZ | 1.625.016 - 1.625.016 163.000 1.462.016 | 1.625.016 163.000 1.462.016 163.000 1.299.016
+16. Hefti Silvan | 30/06/2026 | 03/01/22 | Young Boys | 01/08/24 Hamburg 1.500.000 € | 112.559 5.262.765 - 5.262.765 526.000 4.736.765 | 5.262.765 526.000 4.736.765 526.000 2.710.765 1.500.000
+17. Jagiello Filip | 30/06/2025 | 31/01/19 | Zaglebie Lubin | 12/08/24 Lech Poznan - € | 1.760.000 352.830 1.407.170 235.000 1.172.170 | 1.760.000 587.830 1.172.170 235.000 937.170 -
+18. Leali Nicola | 30/06/2026 | 04/07/23 | Free Agent | 120.000 - 120.000 12.000 108.000 | 120.000 12.000 108.000 12.000 96.000
+19. Malinovskyi Ruslan | 30/06/2026 | 30/01/24 | OMarseille | 10.700.000 10.700.000 - 10.700.000 738.000 9.962.000 | 10.700.000 738.000 9.962.000 1.149.000 8.813.000
+20. Martin Aaron | 30/06/2026 | 03/07/23 | Free Agent | 550.000 - 550.000 55.000 495.000 | 100.000 650.000 55.000 595.000 66.000 529.000
+21. Martinez Riera Josep | 30/06/2025 | 01/07/23 | RB Lipsia | 3.023.526 - 3.023.526 504.000 2.519.526 | 3.023.526 504.000 2.519.526 504.000 2.015.526
+22. Matturro Alan | 30/06/2026 | 19/12/22 | Defensor | 2.927.542 - 2.927.542 293.000 2.634.542 | 2.927.542 293.000 2.634.542 293.000 2.341.542
+23. Melegoni Filippo | 30/06/2025 | 01/02/22 | Atalanta | 4.000.000 - 4.000.000 667.000 3.333.000 | 4.000.000 667.000 3.333.000 667.000 2.666.000
+24. Messias Junior | 30/06/2025 | 02/02/24 | Milan | 1.781.526 - 1.781.526 210.000 1.571.526 | 65.000 1.846.526 210.000 1.636.526 327.000 1.309.526
+25. Pajac Marko | 30/06/2025 | 11/07/22 | Free transfer | 30/08/24 Termination - € | 227.750 - 227.750 38.000 189.750 | 227.750 38.000 189.750 38.000 151.750 -
+26. Petrelli Elia | 30/06/2027 | 28/01/21 | Juventus | 8.340.400 - 8.340.400 596.000 7.744.400 | 8.340.400 596.000 7.744.400 596.000 7.148.400
+27. Portanova Manolo | 30/06/2025 | 28/01/21 | Juventus | 08/08/24 Reggiana | 12.250.000 - 12.250.000 2.042.000 10.208.000 | 12.250.000 2.042.000 10.208.000 2.042.000 8.166.000 -
+28. Puscas George | 30/06/2026 | 01/07/23 | Reading | 08/08/24 Bodrumspor - € | 2.837.500 - 2.837.500 284.000 2.553.500 | 250.000 3.087.500 284.000 2.803.500 309.000 2.494.500 -
+29. Retegui Mateo | 30/06/2027 | 26/07/23 | Tigre | 15.566.346 - 15.566.346 1.112.000 14.454.346 | 500.980 16.067.326 1.112.000 14.955.326 1.148.000 13.807.326
+30. Sommariva Daniele | 30/06/2025 | 03/07/23 | Free Agent | 2.500 - 2.500 400 2.100 | 2.500 5.000 400 4.600 1.000 3.600
+31. Stolz Franz | 30/06/2027 | 16/01/24 | St. Polten | 254.000 254.000 - 254.000 12.000 242.000 | 254.000 12.000 242.000 19.000 223.000
+32. Strootman Kevin | 30/06/2024 | 25/08/22 | OMarseille | 30/06/24 Expiring - € | 775.000 - 775.000 388.000 387.000 | 775.000 388.000 387.000 387.000 -
+33. Valietti Federico | 30/06/2025 | 29/06/18 | Inter | 14/04/49 Trapani - € | 6.000.000 2.250.000 3.750.000 625.000 3.125.000 | 6.000.000 2.875.000 3.125.000 625.000 2.500.000 -
+34. Vasquez Ibarra Johan | 30/06/2027 | 15/08/21 | Club Univers. N | 3.785.469 - 3.785.469 270.000 3.515.469 | 3.785.469 270.000 3.515.469 270.000 3.245.469
+35. Vogliacco Alessandro | 30/06/2025 | 01/02/22 | Pordenone | 750.000 - 750.000 125.000 625.000 | 750.000 125.000 625.000 125.000 500.000
+36. Yeboah Kelvin | 30/06/2026 | 08/01/22 | Sturm Graz | 16/07/24 Minnesota (MLS) $ 2.700.000 | 7.031.000 - 7.031.000 703.000 6.328.000 | 7.031.000 703.000 6.328.000 703.000 3.125.000 2.500.000
+37. Yalcin Guven | 30/06/2026 | 20/07/22 | Free transfer | 122.917 - 122.917 12.000 110.917 | 122.917 12.000 110.917 12.000 98.917
+38. De Winter Koni | 30/06/2028 | 30/06/24 | Juventus | - - - - - | 8.300.000 8.300.000 - 8.300.000 - 8.300.000
+39. Bohinen Emil | 30/06/2026 | 30/06/24 | Salernitana | - - - - - | 2.028.500 2.028.500 - 2.028.500 - 2.028.500
+40. Thorsby Morten | 30/06/2026 | 30/06/24 | Union Berlin | - - - - - | 3.100.000 3.100.000 - 3.100.000 - 3.100.000
+41. Vitinha | 30/06/2028 | 21/06/24 | OMarseille | - - - - - | 30.325.000 30.325.000 - 30.325.000 - 30.325.000
+
+TOTALS: 29.900.000 13.749.059 6.577.670 130.224.989 5.987.446 124.237.543 18.093.914 - - 21.927.844 108.949.143 45.179.205 - 175.404.194 21.275.846 154.128.348 14.669.000 25.377.685 - - 114.081.664
+
+Si segnala che gli ammortamenti dei calciatori, nei precedenti 3 esercizi, sono stati sospesi sulla base del La legge 28 marzo 2022 n. 25 di conversione del DL 4/2022 (c.d. DL Sostegni-ter"), ad eccezione dei calciatori il cui contratto è terminato (oppure il calciatore è stato ceduto) in corso d'anno. Gli ammortamenti sono ripreso regolarmente a partire dal 01 Gennaio 2024.
 
 --- pág. 109 ---
 
