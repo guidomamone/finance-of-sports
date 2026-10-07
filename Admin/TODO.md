@@ -106,6 +106,16 @@ ni en el comentario de ningún archivo de código.
     cola se aceptaron los "no-cierra" de los totales (comparan contra el total del pro-forma). Queda en `Admin/ajustes-manuales.jsonl`.
     Arreglo candidato: que `extraer.mjs`/`localizar.mjs` reciban la columna a usar cuando el bloque tiene columnas por entidad y el
     perímetro está fijado (escalón con compuerta: el total impreso de esa columna).
+    INVESTIGADO (2026-10-07, subagente; conocido, 1 club, sin daño hoy): extraer.mjs no recibe el perímetro ni ninguna columna de entidad
+    (solo columna_ejercicio/columna_anterior del .ubicacion.json, L116); localizar.mjs recibe el perímetro solo como frase para elegir
+    BLOQUES (L80-84). Por eso el ajuste de perímetro + --rehacer no cambió nada. Escaneo de todos los .md: el layout "sociedad | grupo |
+    eliminaciones | pro-forma" está solo en Como 2025 (L354) y Como 2024 (L306, sin cargar); Juventus 2021-25 ("Pro-forma adjustments"),
+    AC Milan ("Rettifiche | Consolidato"), Lazio 2006-07 y Dortmund son ajustes del mismo perímetro, no entidades; Mercedes F1 (Group |
+    Company) está en notas. CUÁNDO HACERLO: al cargar Como 2024 si sale con la columna equivocada, o con un segundo club. DISEÑO: escalón
+    determinístico en extraer.mjs (entre armar `texto` L114-115 y llamarClaude L125; pasar perimetroClub desde lote.mjs L193): con perímetro
+    individual y una cabecera de 4+ columnas cuya primera columna de importes es la del club (con "Eliminazioni"/"Pro-forma" a la derecha),
+    leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como 2025 tiene que dar
+    los 23 ajustes `fila` (después se anulan); en los demás .filas.json no dispara.
 
 155. ITALIA: EL SIGNO DE "17) INTERESSI E ALTRI ONERI FINANZIARI" Y DE LAS IMPOSTE (medido 2026-10-07, lote 14). El formato del Codice
     Civile imprime los costos en positivo y los resta por posición ("TOTALE (C) (15+16-17)", "20) Imposte" como costo); la etapa 6

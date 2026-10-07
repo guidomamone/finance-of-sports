@@ -49,6 +49,10 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
 8. Escribir: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
    commit que su primer año). Después caja y deuda: `node tools/caja-deuda.mjs --club <id>` (ensayo); `--ejecutar --escribir` lo corre
    Guido, porque su escalón 2 usa IA.
+   Club nuevo: antes de cargar su primer año, un subagente Sonnet revisa contra el documento lo que propuso el alta (nombre legal, tipo
+   de documento y fecha de cierre); lo que esté mal se corrige con un ajuste (`name`, `reportType`, `cierre`). Si el nombre legal quedó
+   como pregunta en la cola (la portada y lo más frecuente no coinciden), el subagente propone la respuesta con cita del documento. Se
+   commitean todos los archivos que lista "Alta escrita (...)", también `data/currency-map.js`.
 
 ### b) Mejorar un script
 
