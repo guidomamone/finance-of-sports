@@ -707,8 +707,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (d.tema && d.tema !== 'otro') {
         const club = clubId || pdf.split('/')[2];
         const det = `${club}|${d.tema}|${normalizarRenglon(d.renglon)}`;
-        const ya = respuestaPorDetalle('verificar', 'duda-tema', det);
-        if (ya) { notas.push(`duda de ${origen} ya contestada para el club (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        // ESCALÓN 1 (to-do 153, ok de Guido): la respuesta dada ANTES DEL ALTA del club. Sin alta, la clave lleva el nombre de la carpeta
+        // ("Hellas Verona|escala|"); con alta, el id del sitio ("hellasverona-it|escala|"), y la respuesta vieja no se encontraba: la pregunta
+        // volvía con otro id (56 repetidas en Goiás, Lazio, Hellas Verona...). Compuerta: el caso respondido es de la MISMA carpeta de club
+        // (un "Nacional" de otro país no cuenta). Solo decisiones de verdad: una respuesta automática 'obsoleto' no contesta nada.
+        const mismaCarpeta = (c) => c.pdf.split('/').slice(0, 3).join('/') === pdf.split('/').slice(0, 3).join('/');
+        const antesDelAlta = clubId && clubId !== pdf.split('/')[2] ? respuestaPorDetalle('verificar', 'duda-tema', `${pdf.split('/')[2]}|${d.tema}|${normalizarRenglon(d.renglon)}`, mismaCarpeta) : null;
+        const ya = respuestaPorDetalle('verificar', 'duda-tema', det) || (antesDelAlta && antesDelAlta.resp.decision !== 'obsoleto' ? antesDelAlta : null);
+        if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.

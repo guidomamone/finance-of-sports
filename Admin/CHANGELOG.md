@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 573 — Una pregunta contestada antes del alta del club ya no vuelve (2026-10-07)
+
+- `verificar.mjs`, dudas por tema: escalón 1 que busca la respuesta con la clave de antes del alta (nombre de la carpeta) cuando no la
+  hay con la de después (id del sitio). Compuerta: misma carpeta de club; solo decisiones reales (no "obsoleto"). Causa real del to-do
+  153: no era la IA redactando distinto, era la clave del club que cambia con el alta (56 preguntas repetidas en Goiás, Lazio, Verona...).
+- Medido: 122 `.verificacion.json` idénticos; Hellas Verona 2020 sin la respuesta repetida: COLA con el código viejo, OK con el nuevo;
+  con la respuesta de otra carpeta, COLA. TODO 153 resuelto.
+
 ## Versión 572 — El candado del lote alcanza a pipeline.mjs y cargar.mjs --escribir (2026-10-07)
 
 - `tools/candado.mjs` (nuevo): la lógica del candado de `lote.mjs`, compartida. Lo toman `lote.mjs` y `pipeline.mjs` (también en ensayo)

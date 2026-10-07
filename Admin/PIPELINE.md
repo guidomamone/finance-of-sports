@@ -389,6 +389,8 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Cola humana
 
 - Archivo: `Admin/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.
+- Una duda por tema (escala, perímetro, cuadro duplicado...) contestada para el club vale para todos sus años, también si se contestó antes
+  del alta del club (la clave llevaba el nombre de la carpeta y ahora lleva el id del sitio; to-do 153).
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
 - Una categoría que da 0 porque el documento la junta con otra línea: ajuste `incluye` (`--valor <categoría> --categoria <donde está> [--posible]`); `cargar.mjs` la escribe en `fiscalYearMeta.incluidoEn` y no la revisa como un 0 (Versión 511).

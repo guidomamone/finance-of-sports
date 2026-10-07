@@ -119,14 +119,6 @@ ni en el comentario de ningún archivo de código.
     precedente y las respuestas del mismo club; después, evaluar un precedente por país para etiquetas idénticas. Lo cargado tiene que dar
     idéntico (prueba completa).
 
-153. UNA PREGUNTA YA RESPONDIDA VUELVE CON OTRO ID (Guido, 2026-10-07). Casos: Hellas Verona 2020 (escala de las notas: 372b04d →
-    e7639f2), Lazio 2008-09 (escala del consolidado: 7ce3412 → 19e8b00), Lazio 2022-23 (dejar afuera resultado integral y EPS:
-    70e0974 → 38436d9). Mismo texto de pregunta, id nuevo al re-verificar después de responder otras cosas, y la respuesta vieja no se
-    aplica (hubo que re-responder). El id es un hash de pdf|etapa|motivo|detalle (`tools/cola.mjs`, función que agrega casos ~L70-80; los
-    casos de la IA llevan la pregunta en el detalle, y la IA la redacta distinto entre corridas o cambian las líneas citadas). Ya existe
-    `respuestaPorDetalle()` en `verificar.mjs` (~L699) para "duda ya contestada para el club": mirar por qué no los atrapó. La respuesta
-    tiene que quedar atada a algo estable (como los ajustes: pdf + campo/tema + renglón).
-
 154. UNA RESPUESTA A UNA DUDA DE COLUMNA NO CAMBIA LO EXTRAÍDO (2026-10-07). Caso: Como 2025 (`Como-gruppo-pro-forma-consolidamento-2025`),
     un "Prospetto Pro-forma di Consolidamento" (.md L354-409) con columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma.
     Guido decidió perímetro individual (Como 1907). Ni la respuesta "no" a la duda e4b24c1 ("¿solo la columna pro-forma?"), ni el ajuste
