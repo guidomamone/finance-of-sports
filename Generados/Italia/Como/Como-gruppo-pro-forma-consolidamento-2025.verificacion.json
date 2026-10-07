@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
- "generado": "2026-10-07T01:32:39.539Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:45:38.411Z",
+ "estado": "ok",
  "clubId": "como-it",
  "year": 2025,
  "escala": {
@@ -11,28 +11,338 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "42f99a6",
-  "f13c4fc",
-  "f13c4fc",
-  "fde51f8"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 360,
+   "etiqueta": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "5.213.198",
+   "linea": 363,
+   "etiqueta": "b) sponsorizzazioni (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "b) sponsorizzazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "568.130",
+   "linea": 364,
+   "etiqueta": "d) proventi commerciali e royalties (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "d) proventi commerciali e royalties",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "360.799",
+   "linea": 369,
+   "etiqueta": "i) altri ricavi e proventi diversi (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "i) altri ricavi e proventi diversi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "1.966.288",
+   "linea": 372,
+   "etiqueta": "6) Per materie prime, sussidiarie, di consumo (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "6) Per materie prime, sussidiarie, di consumo",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "26.307.897",
+   "linea": 373,
+   "etiqueta": "7) Per servizi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "7) Per servizi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "1.633.489",
+   "linea": 374,
+   "etiqueta": "8) Per godimento di beni di terzi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "8) Per godimento di beni di terzi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "80.140.300",
+   "linea": 376,
+   "etiqueta": "a) salari e stipendi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) salari e stipendi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.824.772",
+   "linea": 377,
+   "etiqueta": "b) oneri sociali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "b) oneri sociali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "691.136",
+   "linea": 378,
+   "etiqueta": "c) trattamento di fine rapporto (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "c) trattamento di fine rapporto",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "26.618.093",
+   "linea": 380,
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) ammortamento delle immobilizzazioni immateriali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "176.785",
+   "linea": 381,
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "b) ammortamento delle immobilizzazioni materiali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.687.777",
+   "linea": 382,
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "c) altre svalutazioni delle immobilizzazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 383,
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 384,
+   "etiqueta": "11) Variazioni delle rimanenze di materiale di consumo e di merci (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "11) Variazioni delle rimanenze di materiale di consumo e di merci",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 385,
+   "etiqueta": "12) Accantonamenti per rischi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "12) Accantonamenti per rischi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "673.144",
+   "linea": 387,
+   "etiqueta": "a) oneri da organizzazione competizioni (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) oneri da organizzazione competizioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.492.695",
+   "linea": 391,
+   "etiqueta": "e) altri oneri diversi e sopravvenienze passive (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "e) altri oneri diversi e sopravvenienze passive",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "146.607",
+   "linea": 397,
+   "etiqueta": "- altri proventi diversi (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "- altri proventi diversi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(1.862.027)",
+   "linea": 399,
+   "etiqueta": "e) altri oneri finanziari (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "e) altri oneri finanziari",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(98.887)",
+   "linea": 400,
+   "etiqueta": "17-bis) Utile e perdite su cambi (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "17-bis) Utile e perdite su cambi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(37.000)",
+   "linea": 404,
+   "etiqueta": "a) di partecipazioni (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "a) di partecipazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 408,
+   "etiqueta": "a) imposte correnti (Como 1907)",
+   "lado": "impuesto",
+   "reemplaza": "a) imposte correnti",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "resultado-final",
+   "valor": "(105.065.627)",
+   "linea": 409,
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "62.04537 = 62.045226"
+   "ok": false,
+   "detalle": "las líneas suman 55.396762 y el total impreso dice 62.045226"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "192.350264 = 192.346063"
+   "ok": false,
+   "detalle": "las líneas suman 158.610936 y el total impreso dice 192.346063"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "ingresos 55.396762 - gastos 158.610936 ± financiero -1.851307 ± impuesto 0 no da el impreso -132.066776 → aceptado por ajuste manual (resultado final (105.065.627))"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-105.065627 por ajuste manual ((105.065.627): Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)); impuesto deducido 0.000146 (antes de impuestos -105.065481; el documento imprimía 0)"
   },
   {
    "nombre": "año anterior cargado",
@@ -42,15 +352,34 @@
  ],
  "notas": [
   "la nota de \"a) salari e stipendi\" no suma el renglón (78.991 contra 86.178829, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: sale la fila \"2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"b) sponsorizzazioni (Como 1907)\" (ingreso) 5.213.198, en lugar de \"b) sponsorizzazioni\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"d) proventi commerciali e royalties (Como 1907)\" (ingreso) 568.130, en lugar de \"d) proventi commerciali e royalties\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"i) altri ricavi e proventi diversi (Como 1907)\" (ingreso) 360.799, en lugar de \"i) altri ricavi e proventi diversi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"6) Per materie prime, sussidiarie, di consumo (Como 1907)\" (gasto) 1.966.288, en lugar de \"6) Per materie prime, sussidiarie, di consumo\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"7) Per servizi (Como 1907)\" (gasto) 26.307.897, en lugar de \"7) Per servizi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"8) Per godimento di beni di terzi (Como 1907)\" (gasto) 1.633.489, en lugar de \"8) Per godimento di beni di terzi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"a) salari e stipendi (Como 1907)\" (gasto) 80.140.300, en lugar de \"a) salari e stipendi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"b) oneri sociali (Como 1907)\" (gasto) 4.824.772, en lugar de \"b) oneri sociali\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"c) trattamento di fine rapporto (Como 1907)\" (gasto) 691.136, en lugar de \"c) trattamento di fine rapporto\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"a) ammortamento delle immobilizzazioni immateriali (Como 1907)\" (gasto) 26.618.093, en lugar de \"a) ammortamento delle immobilizzazioni immateriali\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"b) ammortamento delle immobilizzazioni materiali (Como 1907)\" (gasto) 176.785, en lugar de \"b) ammortamento delle immobilizzazioni materiali\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"c) altre svalutazioni delle immobilizzazioni (Como 1907)\" (gasto) 4.687.777, en lugar de \"c) altre svalutazioni delle immobilizzazioni\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: sale la fila \"d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: sale la fila \"11) Variazioni delle rimanenze di materiale di consumo e di merci\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: sale la fila \"12) Accantonamenti per rischi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"a) oneri da organizzazione competizioni (Como 1907)\" (gasto) 673.144, en lugar de \"a) oneri da organizzazione competizioni\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"e) altri oneri diversi e sopravvenienze passive (Como 1907)\" (gasto) 4.492.695, en lugar de \"e) altri oneri diversi e sopravvenienze passive\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"- altri proventi diversi (Como 1907)\" (financiero) 146.607, en lugar de \"- altri proventi diversi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"e) altri oneri finanziari (Como 1907)\" (financiero) (1.862.027), en lugar de \"e) altri oneri finanziari\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"17-bis) Utile e perdite su cambi (Como 1907)\" (financiero) (98.887), en lugar de \"17-bis) Utile e perdite su cambi\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: fila \"a) di partecipazioni (Como 1907)\" (financiero) (37.000), en lugar de \"a) di partecipazioni\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: sale la fila \"a) imposte correnti\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
+  "ajuste manual: resultado final (105.065.627) (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
   "línea 359: 2.962.219 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 359: 2.962.219 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 360: 1.438.174 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 360: 1.438.174 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 362: 4.671.024 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 362: 4.671.024 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 363: 6.694.132 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 363: 6.694.132 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 364: 4.047.920 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 365: 31.781.894 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 365: 31.781.894 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 366: 880.488 no está en el texto del PDF, pero las sumas cierran con él",
@@ -59,34 +388,18 @@
   "línea 367: 5.146.957 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 368: 853.053 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 368: 853.053 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 369: 610.509 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 376: 86.178.829 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 377: 6.483.088 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 378: 1.028.195 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 380: 26.824.294 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 381: 802.112 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 382: 4.711.291 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 383: 204.808 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 383: 204.808 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 384: 182.605 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 384: 182.605 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 385: 66.500 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 385: 66.500 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 387: 1.693.982 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 388: 1.542.998 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 388: 1.542.998 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 389: 2.219.836 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 389: 2.219.836 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 390: 2.635.726 no está en el texto del PDF, pero las sumas cierran con él",
   "línea 390: 2.635.726 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 397: 190.298 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 399: 1.862.381 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 400: 93.856 no está en el texto del PDF, pero las sumas cierran con él",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Como-gruppo-pro-forma-consolidamento-2025.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Como-gruppo-pro-forma-consolidamento-2025.pdf",
   "duda de extraer que no afecta la carga: b1, b30 y las líneas L1272/L1276 de b29 repiten en miles los mismos renglones del estado b6, sin desglose adicional.",
   "duda de extraer que no afecta la carga: b2 agrupa los costos del estado b6 sin aportar desglose nuevo (total 192.346 = L392).",
   "duda de extraer que no afecta la carga: b39 L1503-L1506 repiten los renglones a)-d) de oneri diversi y b37 repite salari/oneri/TFR separando Tesserati/Altri; solo se cargó el detalle de 'altri oneri' y de b38.",
-  "duda de extraer que no afecta la carga: El estado pro-forma (L354) solo trae columnas de 2025 por entidad; las notas sí tienen 2024.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El estado pro-forma (L354) solo trae columnas de 2025 por entidad; las notas sí tienen 2024."
  ],
  "reintentar": [
   {
@@ -104,14 +417,21 @@
   }
  ],
  "totales": {
-  "ingresos": 62.04537,
-  "gastos": 192.350264,
-  "financiero": -1.765939,
-  "impuesto": 0,
+  "ingresos": 55.396762,
+  "gastos": 158.610936,
+  "financiero": -1.851307,
+  "impuesto": 0.000146,
   "resultadoImpreso": -132.066776,
-  "resultadoParaCargar": -132.066776,
-  "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "resultadoParaCargar": -105.065627,
+  "resultadoFinal": {
+   "valor": -105.065627,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 0.000146
+  },
+  "lecturaSignos": null
  },
  "lineas": [
   {
@@ -147,35 +467,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
-   "lado": "ingreso",
-   "M": 1.438174,
-   "pagina": 9,
-   "linea": 360,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "a) contributi in conto esercizio",
    "lado": "ingreso",
    "M": 4.671024,
    "pagina": 9,
    "linea": 362,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) sponsorizzazioni",
-   "lado": "ingreso",
-   "M": 6.694132,
-   "pagina": 9,
-   "linea": 363,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "d) proventi commerciali e royalties",
-   "lado": "ingreso",
-   "M": 4.04792,
-   "pagina": 9,
-   "linea": 364,
    "origen": "estado"
   },
   {
@@ -211,372 +507,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "i) altri ricavi e proventi diversi",
+   "etiqueta": "b) sponsorizzazioni (Como 1907)",
    "lado": "ingreso",
-   "M": 0.610509,
+   "M": 5.213198,
+   "pagina": 9,
+   "linea": 363,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "d) proventi commerciali e royalties (Como 1907)",
+   "lado": "ingreso",
+   "M": 0.56813,
+   "pagina": 9,
+   "linea": 364,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "i) altri ricavi e proventi diversi (Como 1907)",
+   "lado": "ingreso",
+   "M": 0.360799,
    "pagina": 9,
    "linea": 369,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Materiale di consumo",
-   "lado": "gasto",
-   "M": 0.293,
-   "pagina": 31,
-   "linea": 1340,
-   "origen": "nota que desglosa \"6) Per materie prime, sussidiarie, di consumo\""
-  },
-  {
-   "etiqueta": "Materiale diverso",
-   "lado": "gasto",
-   "M": 0.213,
-   "pagina": 31,
-   "linea": 1341,
-   "origen": "nota que desglosa \"6) Per materie prime, sussidiarie, di consumo\""
-  },
-  {
-   "etiqueta": "Materiale sanitario",
-   "lado": "gasto",
-   "M": 0.112,
-   "pagina": 31,
-   "linea": 1342,
-   "origen": "nota que desglosa \"6) Per materie prime, sussidiarie, di consumo\""
-  },
-  {
-   "etiqueta": "Materiale per la vendita",
-   "lado": "gasto",
-   "M": 4.03,
-   "pagina": 31,
-   "linea": 1343,
-   "origen": "nota que desglosa \"6) Per materie prime, sussidiarie, di consumo\""
-  },
-  {
-   "etiqueta": "Materiale tecnico",
-   "lado": "gasto",
-   "M": 1.732,
-   "pagina": 31,
-   "linea": 1344,
-   "origen": "nota que desglosa \"6) Per materie prime, sussidiarie, di consumo\""
-  },
-  {
-   "etiqueta": "Commissioni su fidejussioni",
-   "lado": "gasto",
-   "M": 0.594,
-   "pagina": 32,
-   "linea": 1379,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Compenso collegio sindacale",
-   "lado": "gasto",
-   "M": 0.044,
-   "pagina": 32,
-   "linea": 1380,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Compenso società di revisione",
-   "lado": "gasto",
-   "M": 0.041,
-   "pagina": 32,
-   "linea": 1381,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Consulenti esterni",
-   "lado": "gasto",
-   "M": 5.545,
-   "pagina": 32,
-   "linea": 1382,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Diversi",
-   "lado": "gasto",
-   "M": 0.777,
-   "pagina": 32,
-   "linea": 1383,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Legali e notarili",
-   "lado": "gasto",
-   "M": 1.035,
-   "pagina": 32,
-   "linea": 1384,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Manutenzioni ordinarie",
-   "lado": "gasto",
-   "M": 0.215,
-   "pagina": 32,
-   "linea": 1385,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Omaggi, promozionali e rappresentanza",
-   "lado": "gasto",
-   "M": 6.944,
-   "pagina": 32,
-   "linea": 1386,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Postelegrafoniche",
-   "lado": "gasto",
-   "M": 0.048,
-   "pagina": 32,
-   "linea": 1387,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Pubblicità",
-   "lado": "gasto",
-   "M": 2.22,
-   "pagina": 32,
-   "linea": 1388,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Pulizia e vigilanza",
-   "lado": "gasto",
-   "M": 1.075,
-   "pagina": 32,
-   "linea": 1389,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Rimborsi vari",
-   "lado": "gasto",
-   "M": 0.076,
-   "pagina": 32,
-   "linea": 1390,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Servizi da controllante e controllate dalla controllante",
-   "lado": "gasto",
-   "M": 3.731,
-   "pagina": 32,
-   "linea": 1391,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Spese bancarie",
-   "lado": "gasto",
-   "M": 0.219,
-   "pagina": 32,
-   "linea": 1392,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Utenze diverse",
-   "lado": "gasto",
-   "M": 0.422,
-   "pagina": 32,
-   "linea": 1393,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\""
-  },
-  {
-   "etiqueta": "Assicurative e previdenziali",
-   "lado": "gasto",
-   "M": 0.238,
-   "pagina": 31,
-   "linea": 1359,
-   "origen": "nota que desglosa \"7) Per servizi\""
-  },
-  {
-   "etiqueta": "Compensi lavoratori autonomi",
-   "lado": "gasto",
-   "M": 0.906,
-   "pagina": 32,
-   "linea": 1405,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\""
-  },
-  {
-   "etiqueta": "Costi per allenamenti e ritiri",
-   "lado": "gasto",
-   "M": 2.299,
-   "pagina": 32,
-   "linea": 1406,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\""
-  },
-  {
-   "etiqueta": "Spese manutenzione campi sportivi",
-   "lado": "gasto",
-   "M": 0.578,
-   "pagina": 32,
-   "linea": 1408,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\""
-  },
-  {
-   "etiqueta": "Spese sanitarie",
-   "lado": "gasto",
-   "M": 0.19,
-   "pagina": 32,
-   "linea": 1409,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\""
-  },
-  {
-   "etiqueta": "Costi accessori campagna trasferimenti",
-   "lado": "gasto",
-   "M": 4.071,
-   "pagina": 32,
-   "linea": 1419,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi specifici tecnici\""
-  },
-  {
-   "etiqueta": "Osservazione calciatori",
-   "lado": "gasto",
-   "M": 6.931,
-   "pagina": 32,
-   "linea": 1420,
-   "origen": "nota que desglosa \"7) Per servizi\" > desglose de \"Costi specifici tecnici\""
-  },
-  {
-   "etiqueta": "Costi vitto, alloggio, locomozione",
-   "lado": "gasto",
-   "M": 2.615,
-   "pagina": 31,
-   "linea": 1362,
-   "origen": "nota que desglosa \"7) Per servizi\""
-  },
-  {
-   "etiqueta": "Servizio biglietteria, controllo ingressi",
-   "lado": "gasto",
-   "M": 0.608,
-   "pagina": 31,
-   "linea": 1363,
-   "origen": "nota que desglosa \"7) Per servizi\""
-  },
-  {
-   "etiqueta": "Affitti passivi",
-   "lado": "gasto",
-   "M": 1.277,
-   "pagina": 33,
-   "linea": 1440,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Affitto stadio Sinigaglia",
-   "lado": "gasto",
-   "M": 0.199,
-   "pagina": 33,
-   "linea": 1441,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Canoni leasing operativo",
-   "lado": "gasto",
-   "M": 0.066,
-   "pagina": 33,
-   "linea": 1442,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Canoni noleggio",
-   "lado": "gasto",
-   "M": 0.862,
-   "pagina": 33,
-   "linea": 1443,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Canoni licenze",
-   "lado": "gasto",
-   "M": 0.768,
-   "pagina": 33,
-   "linea": 1444,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Concessione impianti sportivi",
-   "lado": "gasto",
-   "M": 0.312,
-   "pagina": 33,
-   "linea": 1445,
-   "origen": "nota que desglosa \"8) Per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "a) salari e stipendi",
-   "lado": "gasto",
-   "M": 86.178829,
-   "pagina": 9,
-   "linea": 376,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) oneri sociali",
-   "lado": "gasto",
-   "M": 6.483088,
-   "pagina": 9,
-   "linea": 377,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "c) trattamento di fine rapporto",
-   "lado": "gasto",
-   "M": 1.028195,
-   "pagina": 9,
-   "linea": 378,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
-   "lado": "gasto",
-   "M": 26.824294,
-   "pagina": 9,
-   "linea": 380,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
-   "lado": "gasto",
-   "M": 0.802112,
-   "pagina": 9,
-   "linea": 381,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
-   "lado": "gasto",
-   "M": 4.711291,
-   "pagina": 9,
-   "linea": 382,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide",
-   "lado": "gasto",
-   "M": 0.204808,
-   "pagina": 9,
-   "linea": 383,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "11) Variazioni delle rimanenze di materiale di consumo e di merci",
-   "lado": "gasto",
-   "M": 0.182605,
-   "pagina": 9,
-   "linea": 384,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "12) Accantonamenti per rischi",
-   "lado": "gasto",
-   "M": 0.0665,
-   "pagina": 9,
-   "linea": 385,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "a) oneri da organizzazione competizioni",
-   "lado": "gasto",
-   "M": 1.693982,
-   "pagina": 9,
-   "linea": 387,
-   "origen": "estado"
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "b) costi per acquisizione temporanea prestazione calciatori",
@@ -603,80 +555,124 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "- Contributi Lega",
+   "etiqueta": "6) Per materie prime, sussidiarie, di consumo (Como 1907)",
    "lado": "gasto",
-   "M": 3.852,
-   "pagina": 34,
-   "linea": 1508,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 1.966288,
+   "pagina": 9,
+   "linea": 372,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "- Diversi",
+   "etiqueta": "7) Per servizi (Como 1907)",
    "lado": "gasto",
-   "M": 0.685,
-   "pagina": 34,
-   "linea": 1509,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 26.307897,
+   "pagina": 9,
+   "linea": 373,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "- Oneri tributari indiretti",
+   "etiqueta": "8) Per godimento di beni di terzi (Como 1907)",
    "lado": "gasto",
-   "M": 0.05,
-   "pagina": 34,
-   "linea": 1510,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 1.633489,
+   "pagina": 9,
+   "linea": 374,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "- Oneri precedenti esercizi",
+   "etiqueta": "a) salari e stipendi (Como 1907)",
    "lado": "gasto",
-   "M": 0.64,
-   "pagina": 34,
-   "linea": 1511,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 80.1403,
+   "pagina": 9,
+   "linea": 376,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "- Spese, ammende e multe gare",
+   "etiqueta": "b) oneri sociali (Como 1907)",
    "lado": "gasto",
-   "M": 0.039,
-   "pagina": 34,
-   "linea": 1512,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 4.824772,
+   "pagina": 9,
+   "linea": 377,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "Differenze da consolidamento",
+   "etiqueta": "c) trattamento di fine rapporto (Como 1907)",
    "lado": "gasto",
-   "M": 1.224,
-   "pagina": 34,
-   "linea": 1513,
-   "origen": "nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\""
+   "M": 0.691136,
+   "pagina": 9,
+   "linea": 378,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali (Como 1907)",
+   "lado": "gasto",
+   "M": 26.618093,
+   "pagina": 9,
+   "linea": 380,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali (Como 1907)",
+   "lado": "gasto",
+   "M": 0.176785,
+   "pagina": 9,
+   "linea": 381,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni (Como 1907)",
+   "lado": "gasto",
+   "M": 4.687777,
+   "pagina": 9,
+   "linea": 382,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "a) oneri da organizzazione competizioni (Como 1907)",
+   "lado": "gasto",
+   "M": 0.673144,
+   "pagina": 9,
+   "linea": 387,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "e) altri oneri diversi e sopravvenienze passive (Como 1907)",
+   "lado": "gasto",
+   "M": 4.492695,
+   "pagina": 9,
+   "linea": 391,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
-   "etiqueta": "- altri proventi diversi",
-   "M": 0.190298,
+   "etiqueta": "- altri proventi diversi (Como 1907)",
+   "M": 0.146607,
    "linea": 397
   },
   {
-   "etiqueta": "e) altri oneri finanziari",
-   "M": -1.862381,
+   "etiqueta": "e) altri oneri finanziari (Como 1907)",
+   "M": -1.862027,
    "linea": 399
   },
   {
-   "etiqueta": "17-bis) Utile e perdite su cambi",
-   "M": -0.093856,
+   "etiqueta": "17-bis) Utile e perdite su cambi (Como 1907)",
+   "M": -0.098887,
    "linea": 400
+  },
+  {
+   "etiqueta": "a) di partecipazioni (Como 1907)",
+   "M": -0.037,
+   "linea": 404
   }
  ],
  "impuesto": [
   {
-   "etiqueta": "a) imposte correnti",
-   "M": null,
-   "linea": 408
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -0.000146
   }
  ]
 }
