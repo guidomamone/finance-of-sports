@@ -475,85 +475,64 @@ TOTALE PASSIVO 50.681.234 10.952.951
 --- pág. 12 ---
 
 COMO 1907 S.R.L.
-
 Sede Legale: Como, Via Volta 70
-
 Iscritta nel Registro delle Imprese di Como al numero 329722
-
 Codice Fiscale 03723750133
 
-Bilancio al 30 giugno 2024
-CONTO ECONOMICO
+Bilancio al 30 giugno 2024 — CONTO ECONOMICO
 
-12 mesi al
-30 giugno 2024
-valori in Euro
-
-12 mesi al
-30 giugno 2023
-valori in Euro
-
-A) VALORE DELLA PRODUZIONE
-
-|  1) Ricavi delle vendite e delle prestazioni |  |   |
-| --- | --- | --- |
-|  a) ricavi da gare | 992.906 | 760.551  |
-|  b) abbonamenti | 552.687 | 397.260  |
-|  5) Altri ricavi e proventi |  |   |
-|  a) contributi in conto esercizio | 7.356.392 | 8.003.146  |
-|  b) sponsorizzazioni | 265.358 | 268.697  |
-|  c) proventi pubblicitari | 287.100 | 580.854  |
-|  d) proventi commerciali e royalties | 100.000 | 500.000  |
-|  e) proventi da cessione diritti televisivi | - | -  |
-|  f) ricavi cessione temporanea calciatori | - | -  |
-|  g) plusvalenze cessione diritti prestazioni calciatori | - | 385.000  |
-|  h) altri proventi da gestione calciatori | - | 121.000  |
-|  i) altri ricavi e proventi diversi | 260.970 | 1.078.096  |
-|  **Totale valore della produzione** | **9.815.414** | **12.094.904**  |
-
-B) COSTI DELLA PRODUZIONE
-
-|  6) Per materie prime, sussidiarie, di consumo | 563.223 | 942.265  |
-| --- | --- | --- |
-|  7) Per servizi | 12.520.814 | 3.853.639  |
-|  8) Per godimento di beni di terzi | 593.339 | 543.663  |
-|  9) Per il personale |  |   |
-|  a) salari e stipendi | 30.392.201 | 19.707.586  |
-|  b) oneri sociali | 2.733.473 | 1.806.513  |
-|  c) trattamento di fine rapporto | 400.195 | 330.252  |
-|  10) Ammortamenti e svalutazioni |  |   |
-|  a) ammortamento delle immobilizzazioni immateriali | 4.746.360 | 631.960  |
-|  b) ammortamento delle immobilizzazioni materiali | 342.459 | 186.033  |
-|  c) altre svalutazioni delle immobilizzazioni | 603.400 | -  |
-|  12) Accantonamenti per rischi | 175.655 | -  |
-|  14) Oneri diversi di gestione |  |   |
-|  a) oneri da organizzazione competizioni | 627.770 | 554.085  |
-|  b) costi per acquisizione temporanea prestazione calciatori | 500.000 | 103.000  |
-|  c) minusvalenze cessione diritti prestaz.calciatori | 585.411 | 9.347  |
-|  d) altri oneri da gestione calciatori | 88.250 | 148.000  |
-|  e) altri oneri diversi e sopravvenienze passive | 2.712.845 | 1.600.106  |
-|  **Totale costi della produzione** | **57.585.395** | **30.416.449**  |
-|  **Differenza fra valore e costi della produzione (A - B)** | **(47.769.962)** | **(18.321.945)**  |
-
-C) PROVENTI E ONERI FINANZIARI
-
-|  16) Altri proventi finanziari |  |   |
-| --- | --- | --- |
-|  d) proventi diversi dai precedenti |  |   |
-|  - altri proventi diversi | 18.250 | -  |
-|  17-bis) Utile e perdite su cambi | 3.793 | (1.078)  |
-|  **Totale proventi e oneri finanziari** | **22.042** | **(1.078)**  |
-
-D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE
-
-|  19) Svalutazioni |  |   |
-| --- | --- | --- |
-|  a) di partecipazioni | (8.695) | (42.000)  |
-|  **Totale rettifiche di valore di attività finanziarie** | **(8.695)** | **(42.000)**  |
-|  **Risultato prima delle imposte** | **(47.756.634)** | **(18.364.923)**  |
-|  20) Imposte sul reddito dell'esercizio |  |   |
-|  a) imposte correnti | - | (110.701)  |
-|  **Utile (Perdita) dell'esercizio** | **(47.756.634)** | **(18.475.624)**  |
+| | 12 mesi al 30 giugno 2024 (valori in Euro) | 12 mesi al 30 giugno 2023 (valori in Euro) |
+|---|---|---|
+| **A) VALORE DELLA PRODUZIONE** | | |
+| 1) Ricavi delle vendite e delle prestazioni | | |
+| a) ricavi da gare | 992.906 | 760.551 |
+| b) abbonamenti | 552.687 | 397.260 |
+| 5) Altri ricavi e proventi | | |
+| a) contributi in conto esercizio | 7.356.392 | 8.003.146 |
+| b) sponsorizzazioni | 265.358 | 268.697 |
+| c) proventi pubblicitari | 287.100 | 580.854 |
+| d) proventi commerciali e royalties | 100.000 | 500.000 |
+| e) proventi da cessione diritti televisivi | - | - |
+| f) ricavi cessione temporanea calciatori | - | - |
+| g) plusvalenze cessione diritti prestazioni calciatori | - | 385.000 |
+| h) altri proventi da gestione calciatori | - | 121.000 |
+| i) altri ricavi e proventi diversi | 260.970 | 1.078.096 |
+| **Totale valore della produzione** | **9.815.414** | **12.094.604** |
+| **B) COSTI DELLA PRODUZIONE** | | |
+| 6) Per materie prime, sussidiarie, di consumo | 563.223 | 942.265 |
+| 7) Per servizi | 12.520.814 | 3.853.639 |
+| 8) Per godimento di beni di terzi | 593.339 | 543.663 |
+| 9) Per il personale | | |
+| a) salari e stipendi | 30.392.201 | 19.707.586 |
+| b) oneri sociali | 2.733.473 | 1.806.513 |
+| c) trattamento di fine rapporto | 400.195 | 330.252 |
+| 10) Ammortamenti e svalutazioni | | |
+| a) ammortamento delle immobilizzazioni immateriali | 4.746.360 | 631.960 |
+| b) ammortamento delle immobilizzazioni materiali | 342.459 | 186.033 |
+| c) altre svalutazioni delle immobilizzazioni | 603.400 | - |
+| 12) Accantonamenti per rischi | 175.655 | - |
+| 14) Oneri diversi di gestione | | |
+| a) oneri da organizzazione competizioni | 627.770 | 554.085 |
+| b) costi per acquisizione temporanea prestazione calciatori | 500.000 | 103.000 |
+| c) minusvalenze cessione diritti prestaz.calciatori | 585.411 | 9.347 |
+| d) altri oneri da gestione calciatori | 88.250 | 148.000 |
+| e) altri oneri diversi e sopravvenienze passive | 2.712.845 | 1.600.106 |
+| **Totale costi della produzione** | **57.585.395** | **30.416.449** |
+| **Differenza fra valore e costi della produzione (A - B)** | **(47.769.982)** | **(18.321.845)** |
+| **C) PROVENTI E ONERI FINANZIARI** | | |
+| 16) Altri proventi finanziari | | |
+| d) proventi diversi dai precedenti | | |
+| - altri proventi diversi | 18.250 | - |
+| 17-bis) Utile e perdite su cambi | 3.793 | (1.078) |
+| **Totale proventi e oneri finanziari** | **22.042** | **(1.078)** |
+| **D) RETTIFICHE DI VALORE DI ATTIVITA' FINANZIARIE** | | |
+| 19) Svalutazioni | | |
+| a) di partecipazioni | (8.695) | (42.000) |
+| **Totale rettifiche di valore di attività finanziarie** | **(8.695)** | **(42.000)** |
+| **Risultato prima delle imposte** | **(47.756.634)** | **(18.364.923)** |
+| 20) Imposte sul reddito dell'esercizio | | |
+| a) imposte correnti | - | (110.701) |
+| **Utile (Perdita) dell'esercizio** | **(47.756.634)** | **(18.475.624)** |
 
 Per il Consiglio di Amministrazione
 Il Presidente
@@ -566,82 +545,82 @@ Sede Legale: Como, Via Volta 70
 Iscritta nel Registro delle Imprese di Como al numero 329722
 Codice Fiscale 03723750133
 
-# Rendiconto Finanziario al 30 giugno 2024
+Rendiconto Finanziario al 30 giugno 2024
 
-|  In Euro | 12 mesi al 30 giugno 2024 | 12 mesi al 30 giugno 2023  |
-| --- | --- | --- |
-|  **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** |  |   |
-|  Utile (perdita) dell'esercizio | (47.756.634) | (18.475.624)  |
-|  Imposte sul reddito | - | 110.701  |
-|  Interessi passivi/(interessi attivi) | (18.250) | -  |
-|  (Dividendi) | - | -  |
-|  (Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | 585.411 | (375.653)  |
-|  (Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività | 127.521 | -  |
-|  **1 Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(47.061.952)** | **(18.746.576)**  |
-|  Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto |  |   |
-|  Accantonamenti ai fondi | 278.450 | 59.003  |
-|  Ammontamenti delle immobilizzazioni | 5.088.819 | 817.993  |
-|  Svalutazioni per perdite durevoli di valore | 603.400 | -  |
-|  Altre rettifiche per elementi non monetari | 8.695 | 42.000  |
-|  **2 Flusso finanziario prima delle variazioni del CCN** | **5.979.364** | **918.996**  |
-|  Variazioni del capitale circolante netto |  |   |
-|  Decremento/(incremento) delle rimanenze | - | -  |
-|  Decremento/(incremento) dei crediti vs clienti | (3.591.010) | 42.767  |
-|  Incremento/(decremento) dei debiti verso fornitori | 791.368 | 92.876  |
-|  Decremento/(incremento) ratei e risconti attivi | (578.766) | (37.063)  |
-|  Incremento/(decremento) ratei e risconti passivi | 3.999.961 | 171.435  |
-|  Altre variazioni del capitale circolante netto | 11.704.691 | 642.179  |
-|  **3 Flusso finanziario dopo le variazioni del CCN** | **12.326.244** | **912.194**  |
-|  Altre rettifiche |  |   |
-|  Interessi incassati/(pagati) | 18.250 | -  |
-|  (Imposte sul reddito pagate) | (160.525) | (199.618)  |
-|  Dividendi incassati | - | -  |
-|  (Utilizzo dei fondi) | (21.359) | (23.497)  |
-|  **Totale Altre rettifiche** | **(163.634)** | **(223.115)**  |
-|  **Flusso finanziario dell'attività operativa (A)** | **(28.919.978)** | **(17.132.501)**  |
-|  **B. Flussi finanziari derivanti dall'attività di investimento** |  |   |
-|  **Immobilizzazioni materiali** | **3.701.791** | **(4.004.346)**  |
-|  (Investimenti) | (2.404.146) | (4.004.346)  |
-|  Disinvestimenti | 6.105.937 | -  |
-|  **Diritti pluriennali alle prestazioni dei calciatori** | **(14.802.846)** | **805.609**  |
-|  (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (38.199.600) | -  |
-|  Cessione diritti pluriennali alle prestazioni dei calciatori | (107.334) | 375.653  |
-|  Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (946.159) | (261.311)  |
-|  Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 24.450.247 | 691.266  |
-|  **Altre immobilizzazioni immateriali** | **(518.226)** | **(2.119.844)**  |
-|  (Investimenti) | (518.226) | (2.119.844)  |
-|  Disinvestimenti | - | -  |
-|  **Immobilizzazioni finanziarie** | **(2.020.495)** | **(70.887)**  |
-|  (Investimenti) | (2.020.495) | (70.887)  |
-|  Disinvestimenti | - | -  |
-|  **Attività finanziarie non immobilizzate** | **-** | **-**  |
-|  (Investimenti) | - | -  |
-|  Disinvestimenti | - | -  |
-|  **Totale Altre attività di investimento** | **(2.538.721)** | **(2.190.731)**  |
-|  **Flusso finanziario dell'attività di investimento (B)** | **(13.639.776)** | **(5.389.468)**  |
-|  **C. Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  **Mezzi di terzi** | **-** | **-**  |
-|  Incremento (decremento) debiti a breve verso banche | - | -  |
-|  Accensione finanziamenti - vi controllate | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Finanziamenti soci** | **-** | **-**  |
-|  Accensione finanziamenti | - | -  |
-|  (Rimborso finanziamenti) | - | -  |
-|  **Mezzi propri** | **45.515.000** | **21.949.000**  |
-|  Aumento di capitale a pagamento | 45.515.000 | 21.949.000  |
-|  (Rimborso di capitale) | - | -  |
-|  Cessione (acquisto) di azioni proprie | - | -  |
-|  (Dividendi (e acconti su dividendi) pagati) | - | -  |
-|  **Altre entrate (uscite) da attività di finanziamento** | **-** | **-**  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **45.515.000** | **21.949.000**  |
-|  **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **2.955.246** | **(572.969)**  |
-|  Disponibilità liquide all'inizio dell'esercizio | 342.600 | 915.569  |
-|  Disponibilità liquide alla fine dell'esercizio | 3.297.846 | 342.600  |
-|  **Saldo a paraggio** | **(2.955.246)** | **572.969**  |
+| In Euro | 12 mesi al 30 giugno 2024 | 12 mesi al 30 giugno 2023 |
+|---|---|---|
+| **A. Flussi finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| Utile (perdita) dell'esercizio | (47.756.634) | (18.475.624) |
+| Imposte sul reddito | - | 110.701 |
+| Interessi passivi/(interessi attivi) | (18.250) | - |
+| (Dividendi) | - | - |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori | 585.411 | (375.653) |
+| (Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività | 127.521 | - |
+| **1. Utile (perdita) dell'esercizio prima d'imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione** | **(47.061.952)** | **(18.740.576)** |
+| *Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto* | | |
+| Accantonamenti ai fondi | 278.450 | 59.003 |
+| Ammortamenti delle immobilizzazioni | 5.088.819 | 817.993 |
+| Svalutazioni per perdite durevoli di valore | 603.400 | - |
+| Altre rettifiche per elementi non monetari | 8.695 | 42.000 |
+| **2. Flusso finanziario prima delle variazioni del CCN** | **5.979.364** | **918.996** |
+| *Variazioni del capitale circolante netto* | | |
+| Decremento/(incremento) delle rimanenze | - | - |
+| Decremento/(incremento) dei crediti vs clienti | (3.591.010) | 42.767 |
+| Incremento/(decremento) dei debiti verso fornitori | 791.368 | 92.876 |
+| Decremento/(incremento) ratei e risconti attivi | (578.766) | (37.063) |
+| Incremento/(decremento) ratei e risconti passivi | 3.999.961 | 171.435 |
+| Altre variazioni del capitale circolante netto | 11.704.691 | 642.179 |
+| **3. Flusso finanziario dopo le variazioni del CCN** | **12.326.244** | **912.194** |
+| *Altre rettifiche* | | |
+| Interessi incassati/(pagati) | 18.250 | - |
+| (Imposte sul reddito pagate) | (160.525) | (199.618) |
+| Dividendi incassati | - | - |
+| (Utilizzo dei fondi) | (21.359) | (23.497) |
+| **Totale Altre rettifiche** | **(163.634)** | **(223.115)** |
+| **Flusso finanziario dell'attività operativa (A)** | **(28.919.978)** | **(17.132.501)** |
+| **B. Flussi finanziari derivanti dall'attività di investimento** | | |
+| ***Immobilizzazioni materiali*** | **3.701.791** | **(4.004.346)** |
+| (Investimenti) | (2.404.146) | (4.004.346) |
+| Disinvestimenti | 6.105.937 | - |
+| ***Diritti pluriennali alle prestazioni dei calciatori*** | **(14.802.846)** | **805.609** |
+| (Acquisizione) diritti pluriennali alle prestazioni dei calciatori | (38.199.600) | - |
+| Cessione diritti pluriennali alle prestazioni dei calciatori | (107.334) | 375.653 |
+| Decremento/(Incremento) crediti per cessione diritti pluriennali alle prestazioni dei calciatori | (946.159) | (261.311) |
+| Incremento/(decremento) debiti per acquisizione diritti pluriennali alle prestazioni dei calciatori | 24.450.247 | 691.266 |
+| ***Altre Immobilizzazioni immateriali*** | **(518.226)** | **(2.119.844)** |
+| (Investimenti) | (518.226) | (2.119.844) |
+| Disinvestimenti | - | - |
+| ***Immobilizzazioni finanziarie*** | **(2.020.495)** | **(70.887)** |
+| (Investimenti) | (2.020.495) | (70.887) |
+| Disinvestimenti | - | - |
+| ***Attività Finanziarie non immobilizzate*** | **-** | **-** |
+| (Investimenti) | - | - |
+| Disinvestimenti | - | - |
+| ***Totale Altre attività di investimento*** | **(2.538.721)** | **(2.190.731)** |
+| **Flusso finanziario dell'attività di investimento (B)** | **(13.639.776)** | **(5.389.468)** |
+| **C. Flussi finanziari derivanti dall'attività di finanziamento** | | |
+| ***Mezzi di terzi*** | **-** | **-** |
+| Incremento (decremento) debiti a breve verso banche | - | - |
+| Accensione finanziamenti - v/controllate | - | - |
+| (Rimborso finanziamenti) | - | - |
+| ***Finanziamenti soci*** | **-** | **-** |
+| Accensione finanziamenti | - | - |
+| (Rimborso finanziamenti) | - | - |
+| ***Mezzi propri*** | **45.515.000** | **21.949.000** |
+| Aumento di capitale a pagamento | 45.515.000 | 21.949.000 |
+| (Rimborso di capitale) | - | - |
+| Cessione (acquisto) di azioni proprie | - | - |
+| (Dividendi (e acconti su dividendi) pagati) | - | - |
+| ***Altre entrate (uscite) da attività di finanziamento*** | **-** | **-** |
+| **Flusso finanziario dell'attività di finanziamento (C)** | **45.515.000** | **21.949.000** |
+| **Incremento (decremento) delle disponibilità liquide (A ± B ± C)** | **2.955.246** | **(572.969)** |
+| Disponibilità liquide all'inizio dell'esercizio | 342.600 | 915.569 |
+| Disponibilità liquide alla fine dell'esercizio | 3.297.846 | 342.600 |
+| **Saldo a pareggio** | **(2.955.246)** | **572.969** |
 
 Per il Consiglio di Amministrazione
 Il Presidente
-Minean
+Mirwan
 
 --- pág. 14 ---
 
@@ -1743,69 +1722,67 @@ Mirwan
 
 --- pág. 38 ---
 
-|  Citation | Date & Months | Citation |   | Prevalence |   | Examination |   | Initial data (current 30/06/2023) |   |   | Interventions & groups |   |   | Final outcome & results |   |   | Initial and post-2023 results |   |   |   | Total  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Date (date prior to collection) | Date (addition to date of collection) | Date (addition to date of collection) | Date (addition to date of collection) | Issued at the beginning | Date (revised) | Issued at the end | ID (date) | ID (revised) | ID (date) | ID (revised) | ID (date) | ID (revised) | ID (date) | ID (revised) | ID (date) | ID (revised) | ID (date) | ID (revised) | ID (date) | ID (revised)  |
-|  Arrigoni Teremopo | 20/05/04 | 10/09/03 | 30/06/25 | 01/09/20 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Balbo Domasi | 10/03/01 | 30/06/24 | 30/06/27 | 24/06/24 | 4-6. 30/06/24 | - | - | - | - | - | 1,882.387 | - | - | 247.181 | - | - | 1,882.387 | 247.181 | - | 3,613.684 | 100.000 | -  |
-|  Balba Podaloca | 01/09/04 | 01/08/03 | 30/06/24 | 01/08/23 | 01/08/23 | - | - | - | - | - | 798.967 | - | - | 250.000 | - | - | 798.967 | 250.000 | - | 564.939 | 70.000 | -  |
-|  Basilii Chomasi | 10/03/02 | 08/08/22 | 30/06/25 | 08/08/22 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Balbana Almasandro | 07/08/06 | 14/07/19 | 30/06/24 | 14/07/19 | 7-9-6. | - | - | 100.000 | 86.667 | - | 33.333 | - | - | 31.111 | - | - | 100.000 | 77.778 | - | 33.333 | - | -  |
-|  Babolo Andriou | 20/12/03 | 01/07/24 | 30/06/24 | 24/06/24 | 4-6. 30/06/24 | - | - | - | - | - | 4,122.058 | - | - | - | - | - | 4,122.058 | - | - | 4,122.058 | - | -  |
-|  Babolo Garzola Almasandro | 16/12/08 | 18/01/22 | 30/06/24 | 18/01/22 | 10/01/22 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Babolo Parno | 27/02/09 | 28/08/23 | 30/06/25 | 28/08/19 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Basanalan Matthias | 27/03/02 | 06/06/24 | 30/06/27 | 06/06/24 | 7-9. 30/06/24 | - | - | - | - | - | 1,600.000 | - | - | 83.595 | - | - | 1,600.000 | 83.595 | - | 1,606.305 | 100.000 | -  |
-|  Cigamara Andriou | 17/08/08 | 12/08/21 | 30/06/24 | 12/08/21 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Colombola Teremopo | 09/03/08 | 14/07/23 | 30/06/27 | 14/07/23 | 12-6. 1/6/2023 | - | - | - | - | - | 850.000 | - | - | 84.675 | - | - | 850.000 | 84.675 | - | 264.625 | - | -  |
-|  Colapito Choro | 22/02/09 | 06/07/21 | 30/06/25 | 06/07/21 | 7-6. 30/06/24 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Coral Alambo | 16/09/06 | 01/07/22 | 30/06/24 | 01/07/22 | 7-6. 30/06/24 | 0.5. 30/06/23 | U.S. Trustees Calico 1318 | - | - | - | - | - | - | 312.540 | - | - | 1,250.000 | 635.000 | - | 635.000 | - | -  |
-|  Chorella Podaloca | 04/11/06 | 14/07/24 | 30/06/24 | 14/07/24 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Curia Abriou | 01/01/04 | 01/07/24 | 30/06/27 | 01/06/24 | 7/6/2023 | - | - | - | - | - | 780.000 | - | - | 60.000 | - | - | 780.000 | 60.000 | - | 720.000 | 80.000 | -  |
-|  Cutman Parno | 01/02/08 | 28/08/22 | 30/06/24 | 24/06/24 | 4/6/2023 | - | - | 150.000 | 45.000 | - | 150.000 | - | - | 85.224 | - | - | 400.000 | 124.724 | - | 265.286 | 150.000 | -  |
-|  Da Cundin Luso | 09/06/01 | 12/01/23 | 30/06/24 | 12/01/23 | 7/6/2023 | - | - | 570.000 | 81.802 | - | 180.814 | - | - | 185.771 | - | - | 700.000 | 267.673 | - | 475.931 | 370.000 | -  |
-|  Desorera Alberto | 11/10/08 | 01/07/24 | 30/06/24 | 01/06/24 | 7/6/2023 | - | - | - | - | - | 9,342.500 | - | - | - | - | - | 9,342.500 | - | - | 9,342.500 | 600.000 | -  |
-|  Farago Anacurino Paola | 12/01/04 | 27/08/22 | 30/06/24 | 27/08/22 | 7/6/2023 | 10/01/24 | Recreazione contrattuale | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Ferraglio Teremopo | 25/01/08 | 29/01/24 | 30/06/27 | 24/06/24 | 4-6. 30/06/24 | - | - | - | - | - | 380.278 | - | - | 49.675 | - | - | 380.278 | 49.675 | - | 158.004 | 71.000 | -  |
-|  Gabriela Colomelora | 10/07/04 | 02/01/28 | 30/06/27 | 02/01/28 | 4-6. 30/06/24 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Gabriela Mazzorilone | 10/10/05 | 17/08/19 | 30/06/24 | 17/08/19 | 7-6. 30/06/24 | 10/01/23 | Recreazione contrattuale | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Ghilarini Simeon | 16/09/08 | 08/07/22 | 30/06/24 | 18/07/22 | 4-6. 30/06/24 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Giaconne Nardoso | 25/07/08 | 22/01/24 | 30/06/27 | 24/06/24 | 4/6/2023 | - | - | - | - | - | 2,500.000 | - | - | 312.000 | - | - | 2,500.000 | 312.000 | - | 2,387.955 | 500.000 | -  |
-|  Garbariggi Marullo | 01/11/04 | 27/01/24 | 30/06/24 | 27/01/24 | 7/6/2023 | - | - | - | - | - | 1,400.000 | - | - | 264.861 | - | - | 1,400.000 | 264.861 | - | 1,376.363 | 600.000 | -  |
-|  Guerrero Nicholas | 10/12/05 | 22/07/22 | 30/06/25 | 22/07/22 | 4/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Guino Alinica | 01/03/01 | 01/09/24 | 30/06/24 | 01/09/24 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Kerngari Laro Thomas | 05/04/08 | 13/07/22 | 30/06/24 | 13/07/22 | 2/6/2023 | 20.000 | 0.250 | - | 16.750 | - | - | - | - | 6.250 | - | - | 20.000 | 12.500 | - | 12.500 | - | -  |
-|  Kone Ben Catalano | 16/09/08 | 24/07/23 | 30/06/27 | 24/07/23 | 7/6/2023 | - | - | - | - | - | 2,100.000 | - | - | 108.816 | - | - | 2,100.000 | 108.816 | - | 1,311.584 | 100.000 | -  |
-|  Kone Al Kheto | 01/12/01 | 01/02/24 | 30/06/24 | 01/02/24 | 7-6. 30/06/24 | - | - | - | - | - | 600.000 | - | - | 120.000 | - | - | 600.000 | 120.000 | - | 400.000 | - | -  |
-|  Macalgiro Giuseppe | 20/09/06 | 06/07/23 | 30/06/27 | 18/06/24 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Macalgiro Sulmico Marten | 24/05/01 | 18/07/23 | 30/06/27 | 18/07/23 | 4/6/2023 | - | - | - | - | - | 911.808 | - | - | 212.500 | - | - | 911.808 | 212.500 | - | 839.308 | - | -  |
-|  Maroto (Bone Idoliguan) | 10/09/06 | 06/07/23 | 30/06/24 | 06/07/23 | 4/6/2023 | - | - | - | - | - | 850.000 | - | - | 219.101 | - | - | 850.000 | 219.101 | - | 618.744 | 850.000 | -  |
-|  Maroto Juan Pierre | 01/05/03 | 23/01/24 | 30/06/24 | 23/01/24 | 8/6. 30/06/24 | 3.500/24 | Legio Marrazzo | - | - | - | 575.000 | 575.000 | 102.000 | 102.082 | 579.036 | - | - | - | - | - | 100.000 | -  |
-|  Oberthal Coa Ruben | 01/09/06 | 13/07/22 | 30/06/25 | 24/07/22 | 7/6/2023 | - | - | - | - | - | 100.000 | - | - | 14.286 | - | - | 100.000 | 14.286 | - | 85.724 | 100.000 | -  |
-|  Roz Napomolina | 28/10/06 | 01/01/24 | 30/06/24 | 31/01/24 | 7/6/2023 | - | - | - | - | - | 500.000 | - | - | 100.000 | - | - | 500.000 | 100.000 | - | 400.000 | - | -  |
-|  Raponi Fabio | 20/09/08 | 12/01/24 | 30/06/24 | 12/01/24 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Ramoli Diego | 31/10/04 | 01/06/23 | 30/06/24 | 01/06/24 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Sala Alonzo | 04/09/09 | 24/07/23 | 30/06/24 | 24/07/24 | 4-6. 30/06/24 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Salgilio Miguel | 01/01/01 | 14/07/21 | 30/06/24 | 13/07/21 | 4-6. 30/06/24 | 10.001/24 | Foods/Club Sultano | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Serrano Adrian | 11/01/08 | 01/07/23 | 30/06/27 | 06/07/23 | 4/6/2023 | - | - | - | - | - | 2,282.911 | - | - | 447.089 | - | - | 2,282.911 | 447.089 | - | 1,836.822 | - | -  |
-|  Salvo Marileo | 09/09/04 | 16/07/24 | 30/06/24 | 15/07/23 | 4-6. 30/06/24 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Stockton Gabriel | 10/04/07 | 18/01/24 | 30/06/27 | 24/01/24 | 4-6. 30/06/24 | - | - | - | - | - | 4,784.211 | - | - | 638.345 | - | - | 4,784.211 | 638.345 | - | 4,145.865 | 600.000 | -  |
-|  Trinidadia Maria Andrea | 01/09/04 | 06/07/23 | 30/06/24 | 06/07/23 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Verdi Simone | 11/07/01 | 20/08/23 | 30/06/24 | 20/08/24 | 7/6/2023 | - | - | - | - | - | 1,800.000 | - | - | 433.333 | - | - | 1,800.000 | 433.333 | - | 1,306.667 | - | -  |
-|  Viganti Luca | 11/01/06 | 18/08/22 | 30/06/24 | 18/08/22 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  Viganto Mauro | 22/05/08 | 01/09/23 | 30/06/25 | 01/09/25 | 7/6/2023 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -  |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+Valori di inizio periodo 30/06/2023 | Variazioni valori di periodo | Effetti economici di periodo
+
+| Calciatori | Data di Nascita | Data inizio primo contratto | Data scadenza ultimo contratto | Data acquisto | Società di Provenienza | Data Cessione | Società di destinazione | (1) Costo storico | (2) Fondo amm.to | (3) Fondo svalutazione | (sin título) | (4) Netto | (5) Acquisti | (6) Cessioni | (sin título) | (7) Variazione Fondo amm.ti | (8) Ammor.ti | (9) Svalutaz. | (10) Minusv. | (10) Plusv. |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Arrigoni Tommaso | 26/02/94 | 01/09/20 | 30/06/25 | 01/09/20 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Ballet Samuel | 12/03/01 | 26/01/24 | 30/06/27 | 26/01/24 | F.C. Winterthur | | | - | - | - | - | | 1.862.867 | | | | 247.181 | | | |
+| Barba Federico | 01/09/93 | 01/08/23 | 30/06/26 | 01/08/23 | Pisa Sporting Club 1909 | | | - | - | - | - | | 798.947 | | | | 234.008 | | | |
+| Baselli Daniele | 12/03/92 | 08/08/22 | 30/06/25 | 08/08/22 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Bellemo Alessandro | 07/08/95 | 14/07/19 | 30/06/26 | 14/07/19 | S.P.A.L. | | | 100.000 | 66.667 | - | - | 33.333 | | | | | 11.111 | | | |
+| Belotti Andrea | 20/12/93 | 01/07/24 | 30/06/26 | 25/06/24 | A.S. Roma | | | - | - | - | - | | 4.122.658 | | | | | | | |
+| Blanco Sanchez Alejandro | 16/12/98 | 18/01/22 | 30/06/24 | 18/01/22 | Valencia C.F. | 31/01/24 | A.C. Reggiana 1919 | - | - | - | - | | | | | | | | | |
+| Bolchini Pierre | 27/02/99 | 28/08/19 | 30/06/25 | 28/08/19 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Braunöder Matthias | 27/03/02 | 06/06/24 | 30/06/27 | 06/06/24 | F.K. Austria Wien | | | - | - | - | - | | 1.650.000 | | | | 44.595 | | | |
+| Cagnano Andrea | 17/06/98 | 12/08/21 | 30/06/24 | 12/08/21 | Tesseramento | 18/07/23 | Fussballclub Sudtirol | - | - | - | - | | | | | | | | | |
+| Cassandro Tommaso | 09/01/00 | 13/07/23 | 30/06/27 | 13/07/23 | U.S. Lecce | | | - | - | - | - | | 350.000 | | | | 84.375 | | | |
+| Celeghin Enrico | 22/02/99 | 06/07/21 | 30/06/25 | 06/07/21 | F.C. Internazionale Milano | 09/08/23 | U.S. Triestina Calcio 1918 | - | - | - | - | | | | | | | | | |
+| Cerri Alberto | 16/04/96 | 01/07/22 | 30/06/26 | 01/07/22 | Cagliari Calcio | | | 1.250.000 | 312.500 | - | - | 937.500 | | | | | 312.500 | | | |
+| Chajia Moutir | 04/06/98 | 12/07/21 | 30/06/25 | 12/07/21 | NK Lokomotiva Zagreb | | | - | - | - | - | | | | | | | | | |
+| Chinetti Federico | 04/11/05 | 12/01/24 | 30/06/26 | 12/01/24 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Curto Marco | 05/01/99 | 01/07/24 | 30/06/27 | 01/04/24 | Fussballclub Sudtirol | | | - | - | - | - | | 780.000 | | | | 60.000 | | | |
+| Cutrone Patrick | 03/01/98 | 26/08/22 | 30/06/28 | 26/08/22 | Wolverhampton Wanderers F.C. | | | 150.000 | 49.500 | - | - | 100.500 | 250.000 | | | | 85.214 | | | |
+| Da Cunha Lucas | 09/06/01 | 12/01/23 | 30/06/26 | 12/01/23 | OGC de Nice Côte d'Azur | | | 572.616 | 81.802 | - | - | 490.814 | 172.388 | | | | 185.771 | | | |
+| Dossena Alberto | 13/10/98 | 01/07/24 | 30/06/28 | 29/06/24 | Cagliari Calcio | | | - | - | - | - | | 9.340.360 | | | | | | | |
+| Faragò Pancrazio Paolo | 12/02/93 | 27/08/22 | 30/06/24 | 27/08/22 | Cagliari Calcio | 22/01/24 | Risoluzione contrattuale | - | - | - | - | | | | | | | | | |
+| Fumagalli Tommaso | 20/02/00 | 29/01/24 | 30/06/27 | 29/01/24 | A.S. Giana Erminio | | | - | - | - | - | | 380.278 | | | | 49.675 | | | |
+| Gabrielloni Alessandro | 10/07/94 | 31/01/18 | 30/06/27 | 31/01/18 | A.S. Bisceglie Calcio 1913 | | | - | - | - | - | | | | | | | | | |
+| Gatto Massimiliano | 28/10/95 | 17/08/19 | 30/06/24 | 17/08/19 | F.C. Pro Vercelli 1892 | 31/08/23 | Risoluzione contrattuale | - | - | - | - | | | | | | | | | |
+| Ghidotti Simone | 19/03/00 | 18/07/22 | 30/06/26 | 18/07/22 | A.C.F. Fiorentina | | | - | - | - | - | | | | | | | | | |
+| Gioacchini Nicholas | 25/07/00 | 22/01/24 | 30/06/27 | 22/01/24 | Major League Soccer | | | - | - | - | - | | 2.500.000 | | | | 312.030 | | | |
+| Goldaniga Edoardo | 02/11/93 | 27/01/24 | 30/06/26 | 27/01/24 | Cagliari Calcio | | | - | - | - | - | | 1.430.928 | | | | 254.465 | | | |
+| Ioannou Nicholas | 10/11/95 | 22/07/22 | 30/06/25 | 22/07/22 | Nottingham Forest F.C. | | | - | - | - | - | | | | | | | | | |
+| Iovine Alessio | 01/02/91 | 01/09/19 | 30/06/26 | 01/09/19 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Kerrigan Liam Thomas | 09/04/00 | 16/07/22 | 30/06/26 | 16/07/22 | University College Dublin | | | 25.000 | 6.250 | - | - | 18.750 | | | | | 6.250 | | | |
+| Kone Ben Lhassine | 14/03/00 | 24/07/23 | 30/06/27 | 24/07/23 | Torino F.C. | | | - | - | - | - | | 2.150.000 | | | | 438.816 | | | |
+| Kovacik Peter | 01/12/01 | 01/02/24 | 30/06/26 | 01/02/24 | FK Zeleziarne Podbrezova | | | - | - | - | - | | 600.000 | | | | 120.000 | | | |
+| Mazzaglia Giuseppe | 20/06/06 | 01/07/24 | 30/06/27 | 18/06/24 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Mustapha Suliman Marlon | 24/05/01 | 10/07/23 | 30/06/27 | 10/07/23 | Mainz 05 | | | - | - | - | - | | 911.808 | | | | 212.500 | | | |
+| Nielsen Oliver Abildgaard | 10/06/96 | 06/07/23 | 30/06/26 | 06/07/23 | Rubin Kazan | | | - | - | - | - | | 850.000 | | | | 219.231 | | | |
+| Nsame Jean-Pierre | 01/05/93 | 25/01/24 | 30/06/26 | 25/01/24 | Bsc Young Boys | 17/06/24 | Legia Warszawa | - | - | - | - | | 575.000 | 575.000 | - | 102.692 | 102.692 | | 579.636 | |
+| Odenthal Cas Ruben | 26/09/00 | 23/07/22 | 30/06/25 | 23/07/22 | Tesseramento | | | - | - | - | - | | 100.000 | | | | 14.286 | | | |
+| Razi Najemedine | 28/10/06 | 31/01/24 | 30/06/26 | 31/01/24 | Shamrock Rovers F.C. | | | - | - | - | - | | 500.000 | | | | 100.000 | | | |
+| Rispoli Fabio | 28/09/06 | 12/01/24 | 30/06/26 | 12/01/24 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Ronco Diego | 21/10/04 | 01/08/23 | 30/06/26 | 01/08/23 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Sala Marco | 04/06/99 | 24/07/23 | 30/06/26 | 24/07/23 | U.S. Sassuolo | | | - | - | - | - | | | | | | | | | |
+| Scaglia Filippo | 31/01/92 | 13/07/21 | 30/06/24 | 13/07/21 | A.C. Monza | 10/01/24 | Fussballclub Sudtirol | - | - | - | - | | | | | | | | | |
+| Semper Adrian | 12/01/98 | 05/07/23 | 30/06/27 | 05/07/23 | Genoa C.F.C. | | | - | - | - | - | | 2.282.911 | | | | 447.089 | | | |
+| Solini Matteo | 09/03/93 | 15/07/19 | 30/06/25 | 15/07/19 | A.C. ChievoVerona | | | - | - | - | - | | | | | | | | | |
+| Strefezza Gabriel | 18/04/97 | 29/01/24 | 30/06/27 | 29/01/24 | U.S. Lecce | | | - | - | - | - | | 4.784.211 | | | | 638.346 | | | |
+| Tremolada Marco Andrea | 02/03/04 | 06/07/23 | 30/06/26 | 06/07/23 | Tesseramento | | | - | - | - | - | | | | | | | | | |
+| Verdi Simone | 12/07/92 | 25/08/23 | 30/06/26 | 25/08/23 | Torino F.C. | | | - | - | - | - | | 1.800.000 | | | | 413.333 | | | |
+| Vignali Luca | 11/01/96 | 18/08/22 | 30/06/25 | 18/08/22 | Spezia Calcio | | | - | - | - | - | | | | | | | | | |
+| Vigorito Mauro | 22/05/90 | 01/09/23 | 30/06/25 | 01/09/23 | Cosenza Calcio | | | - | - | - | - | | | | | | | | | |
+| (subtotale calciatori) | | | | | | | | 2.097.616 | 516.719 | - | - | 1.580.897 | 38.192.356 | 575.000 | - | 102.692 | 4.593.467 | - | 579.636 | |
+| Settore giovanile | | | | | | | | 102.625 | 60.050 | - | - | 42.575 | 7.250 | 44.502 | - | 38.726 | 44.049 | - | 5.776 | |
+| TOTALE | | | | | | | | 2.200.241 | 576.769 | - | - | 1.623.472 | 38.199.606 | 619.502 | - | 141.419 | 4.637.516 | - | 585.411 | |
+
+Sezione a destra della tabella (intestazioni): Valori di fine periodo 30/06/2024 — (11)=1+5-6 Costo storico; (12)=2+7+8 Fondo amm.to; (13) Fondo svalutazione; (14)=11-12-13 Netto; Compenso Agenti; Altri costi di acquisizione; Valore Sell on Fee. Valori di queste colonne: [ilegible]
 
 Per il Consiglio di Amministrazione
 Il Presidente
-Miriam
+Mirwan
 
 --- pág. 39 ---
 
