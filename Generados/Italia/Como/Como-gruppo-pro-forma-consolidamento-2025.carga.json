@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
- "generado": "2026-10-07T01:57:18.251Z",
+ "generado": "2026-10-07T02:02:35.923Z",
  "frena": [
   {
    "etapa": "registro",
@@ -9,14 +9,6 @@
   {
    "etapa": "categorizacion",
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -848,7 +840,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 8,
+  "motivos": 6,
   "lineasIngreso": 0,
   "lineasGasto": 0,
   "metaFilas": 5,

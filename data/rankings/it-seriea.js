@@ -5,9 +5,9 @@
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -53,8 +53,10 @@ window.RANKINGS["it-seriea"] = {
   },
   2024: {
     leagueSize: null,
-    sinDato: ["acmilan-it"],
     clubs: [
+      { id:"acmilan-it", revenue:489.387, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilanci-relazioni-2023-24",
+        mix:[["Comercial / Sponsors",153.634],["Estadio",68.292],["Televisión",163.14],["Premios por competencias",5.982],["Venta de Jugadores",56.264],["Otros ingresos",42.076]] },
       { id:"juventus-it", revenue:418.274, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2023-24",
         mix:[["Comercial / Sponsors",171.906],["Estadio",61.848],["Televisión",106.809],["Venta de Jugadores",36.596],["Otros ingresos",41.113]] },
@@ -83,9 +85,15 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2021-22",
         mix:[["Comercial / Sponsors",173.443],["Estadio",33.544],["Televisión",177.124],["Venta de Jugadores",42.363],["Otros ingresos",30.628]] },
+      { id:"inter-it", revenue:456.676, reportType:"official_balance_sheet",
+        sourceId:"inter-it-fascicolo-bilancio-consolidato-2021-22",
+        mix:[["Cuotas Sociales",2.276],["Comercial / Sponsors",89.102],["Estadio",39.114],["Televisión",161.86],["Venta de Jugadores",113.17],["Otros ingresos",51.154]] },
       { id:"asroma-it", revenue:213.852, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2022-consolidato",
         mix:[["Comercial / Sponsors",40.06],["Estadio",41.505],["Televisión",81.558],["Venta de Jugadores",15.253],["Otros ingresos",35.475]] },
+      { id:"lazio-it", revenue:167.378, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2021-22",
+        mix:[["Comercial / Sponsors",26.75],["Estadio",10.936],["Televisión",88.976],["Venta de Jugadores",26.888],["Otros ingresos",13.828]] },
       { id:"udinese-it", revenue:81.105, reportType:"official_balance_sheet",
         sourceId:"udinese-it-bilancio-2021-22",
         mix:[["Estadio",5.313],["Otros ingresos",75.792]],

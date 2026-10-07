@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.pdf",
   "club": "lazio-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T01:57:47.679Z",
+  "generatedAt": "2026-10-07T02:00:45.694Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         10.5283
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por taquilla y partidos"
     },
     {
       "label": "Diritti radiotelevisivi e proventi media",
@@ -24,7 +24,7 @@
       "values": [
         85.657296
       ],
-      "glosa": "Derechos audiovisuales e ingresos por medios"
+      "glosa": "Derechos de retransmisión e ingresos audiovisuales"
     },
     {
       "label": "Ricavi da sponsorizzazione e pubblicità",
@@ -74,7 +74,7 @@
       "values": [
         24.98463
       ],
-      "glosa": "Plusvalías por traspaso de derechos de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos federativos"
     },
     {
       "label": "Costi per materie prime",
@@ -84,7 +84,7 @@
       "values": [
         3.818452
       ],
-      "glosa": "Consumo de materias primas"
+      "glosa": "Aprovisionamientos y materias primas"
     },
     {
       "label": "Costo del personale",
@@ -104,7 +104,7 @@
       "values": [
         22.204801
       ],
-      "glosa": "Gastos por servicios"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Oneri da gestione diritti calciatori",
