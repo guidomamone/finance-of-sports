@@ -224,3 +224,54 @@ ni en el comentario de ningún archivo de código.
       resultado (53.884.213) (L725 y L1122, en tabla bien formada).
     Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
 
+
+158. `--reemplaza` DE UN AJUSTE `fila` ES POR ETIQUETA, NO POR LÍNEA (2026-10-07). `verificar.mjs` ~L479-480 saca TODAS las filas cuya
+    etiqueta coincide (en ingresos, gastos, financiero e impuesto a la vez). En el formato italiano muchos renglones se llaman igual
+    ("altri" en 16), en 17) y en 5) de ingresos; "a) di partecipazioni" en 18) y 19)). Consecuencias medidas: Bologna 2019-22 no se pudo
+    arreglar (un `--reemplaza "altri"` se llevaba el ingreso "altri" de 79,9 M, L833 de 2020-21; se revirtió), Udinese 2021-22 tuvo que
+    marcar la TV como "incluida en otros ingresos" en vez de separarla, y en Udinese/Cremonese/Parma/Milan hubo que reemplazar las DOS
+    filas homónimas y volver a agregar ambas. Arreglo: que `reemplaza` acepte también la línea (`--linea` del ajuste o `--reemplaza-linea
+    N`) y saque solo esa fila. Destraba directo el to-do 157 (Bologna) y simplifica los ajustes de 155.
+
+159. EL RESULTADO DEL LOTE ESCONDE MOTIVOS DE FRENO (2026-10-07). `lote.mjs` (bloque RESULTADO, ~L370-390) muestra solo `c.frena[0]`. En el
+    lote 15 los 5 documentos decían "el club no existe en el sitio: es un alta", y se mandó a un subagente a dar las altas; al existir el
+    club, `cargar.mjs` reveló 64 preguntas de categoría, socios y gestión que el lote no había mostrado. Además el freno "[registro] el
+    documento no está listo-para-jev (estado listo, jev -)" (cargar.mjs L261) habla del proceso viejo y confunde: en el proceso nuevo
+    quiere decir "la etapa 7 no lo categorizó todavía" (ver 160). Arreglo: listar todos los motivos (o "frena por: alta + 30 categorías +
+    socios") y reescribir ese texto.
+
+160. UN DOCUMENTO QUE CIERRA NO SE CATEGORIZA SI LA ETAPA 4 DEJÓ "NO CONFIRMADOS" FALSOS (2026-10-07). `avisarRegistro()`
+    (`verificar.mjs` ~L805-850) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y
+    SOLO cuando corre dentro del lote (no desde `verificar.mjs` suelto): hubo que correr el lote 20 y el 21 dos veces. Casos: Napoli 2024
+    (el único "no confirmado" era el AÑO "2023" del encabezado de la columna, L276) y Como 2025 (101 números de la tabla pro-forma con
+    encabezados de varias líneas `<br>` que el texto propio no conserva). Se destrabaron con ajustes `confirmado` generados por script desde
+    `.validacion.json` → `noConfirmados` (como Juventus 2021-22). Arreglos candidatos: (1) `validar-bloques.mjs` no cuenta como importe un
+    número de 4 cifras en una fila de encabezado (años); (2) si la etapa 6 cerró al centavo con esos números, que no frenen (misma familia
+    que el to-do 150).
+
+161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
+    - Nombre legal: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
+      Sassuolo Calcio Srl" (truncado), "Roma S.r.l.", "Calcio Monza S.p.A." y varios en MAYÚSCULAS ("BOLOGNA F.C. 1909 S.P.A."). Se corrigieron
+      a mano en `data/clubs.js` y en la cabecera del data file (no hay flag ni ajuste `name`; `ajustes.mjs` lo lista en TIPO_DE_CAMPO de
+      alta-club pero no hay campo). Arreglo: preferir el título del .md / la firma del balance, normalizar mayúsculas, y un ajuste `name`.
+    - reportType: Monza 2022 salió "estado intermedio" por la palabra "semestre" en un comentario de gestión (el doc dice "Bilancio
+      d'Esercizio al 31 dicembre 2022"). Se resolvió con ajustes `reportType` y `cierre`.
+    - Cierre: para Monza propuso 30/06 por el patrón del país cuando el documento cierra el 31/12.
+    - El alta escribe tipos de cambio nuevos en `data/currency-map.js` (FX_CLOSE) que quedan fuera del commit del alta (el subagente los
+      commiteó aparte).
+    - Ya arreglado en la Versión 562: el alta no leía el ajuste de perímetro.
+
+162. NADA IMPIDE CORRER DOS LOTES A LA VEZ (2026-10-07). Guido lanzó el lote 20 dos veces seguidas mientras el primero ya había terminado y
+    otra mientras corría el segundo: dos `lote.mjs` escribieron a la vez el registro (`Admin/transcripciones-estado.jsonl`), la lista
+    temporal (`Admin/.lote-lista-actual.txt`) y la cola (no se rompió nada: las escrituras de la cola son append). Y un lote cortado a
+    mitad (lote 14, la terminal se reinició) deja `.validacion.json` sin `.verificacion.json`, lo que dispara el rearmado del to-do 150.
+    Arreglo: un lockfile (`Admin/.lote.lock` con el PID) que haga salir al segundo con un mensaje claro; y al arrancar, si hay documentos
+    con validación y sin verificación, verificarlos primero (gratis) antes de decidir reintentos.
+
+163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
+    proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
+    difieren en 0,097 M en cómo reparten a) y f), `cerrarNota` no cierra y a) se carga entero como other_income → "Televisión en 0" y el
+    lote pide un `--reintentar` (~US$ 0,50) que no lo arregla. Se resolvió a mano con 2 `fila` (a) sin TV 34.086.540 + TV 16.205.000) y 2
+    `categoria`. Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
+    2,05 M); ahí se usó `incluye` por el to-do 158. Arreglo candidato: si la nota suma exactamente el SUBTOTAL del grupo (aunque no sus
+    renglones uno por uno), que reemplace el grupo entero (compuerta: el subtotal impreso).
