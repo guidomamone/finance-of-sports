@@ -20,6 +20,9 @@ que dice `ESTADO.md` era verdad ese día.
 - Cargados con ajustes manuales: el 17) por línea (`--reemplaza-linea`) y la D de 2019-20; los ingresos abiertos con la nota "Altri
   ricavi e proventi" (10 filas por año generadas por script, to-do 163), categorizadas con `cola.mjs --corregir-categoria` sin otro lote.
 - Cola de Bologna respondida por Claude con los criterios de Italia (ok de Guido): 31 casos más 30 categorías fijadas.
+- TODO 150 medido y cerrado (lotes 14 y 19: 193 "no confirmados" de la etapa 4, todos en páginas que validó la etapa 2, 192 con la
+  etapa 6 cerrada); lo que sigue va en los to-dos 162 (rearmado sin verificación, Milan 2022-23) y 160 (frenar la categorización).
+- Re-correr el script sobre Bologna da idéntico a lo cargado (etapa 6 y propuesta de carga, fila por fila).
 - Italia: 28 ejercicios de 15 clubes además de Juventus. Caja y deuda de Bologna sin dato (escalón 2 con IA, lo corre Guido).
 
 ## Versión 568 — Un ajuste `fila` puede reemplazar una línea, no solo una etiqueta (2026-10-07)

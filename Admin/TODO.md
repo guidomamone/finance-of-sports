@@ -95,27 +95,6 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-150. ¿LA ETAPA 4 REBOTA NÚMEROS QUE LA ETAPA 2 YA VALIDÓ? MEDIRLO (Guido, 2026-10-06). Si casi no hay o son reales, queda como está;
-    si hay falsos positivos, se arregla.
-    QUÉ SE SABE:
-    - Las dos etapas comparan contra la MISMA fuente en un PDF digital (el texto propio, `pdftotext -f N -l N`), pero la etapa 2
-      (`pipeline.mjs` → `resolver-inventario.mjs` + `chequeos-gratis.mjs`) además mira sumas de tabla, columna del año anterior y manda
-      lo dudoso a Claude, y DECIDE; la etapa 4 (`validar-bloques.mjs`, Versión 324, anterior a la validación de la etapa 2) solo busca
-      cada número en el texto de su página, marca `noConfirmados` en `<doc>.validacion.json` y deja decidir a la etapa 6 (sumas). La
-      etapa 4 no lee nada de lo que resolvió la etapa 2 (registro `Admin/transcripciones-estado.jsonl`, historial
-      `Admin/transcripciones-verificaciones.jsonl`).
-    - El daño no es la marca: es que `paginasARearmar()` (`tools/texto-propio-a-md.mjs` ~L235-275) usa esos `noConfirmados` para
-      disparar el escalón 1b (rearmar la página CON el texto propio) cuando no hay `.verificacion.json` con estado ok (L263). Si el
-      texto propio es el que está mal, el rearmado EMPEORA la página.
-    - Caso: Milan 2022-23, pág. 84 del visor (impreso 84), .md L2527, "Minusvalenze da cessione diritti pluriennali": el .md
-      (42 | 2.456 | -2.414) está bien (imagen de la página; las columnas suman 18.566 y 22.232); el texto propio no trae 42 ni 2.456
-      (celda partida en varias líneas; `pdftotext -layout` y `-raw` igual). La etapa 2 la había dejado pasar ("5 dudas respaldadas por
-      los chequeos gratis: 61, 84, 104, 163, 173"). El disparo fue además efecto de un corte: la 1.ª corrida del lote 14 murió antes de
-      la etapa 6, y la 2.ª vio "no confirmado + sin verificación". En una corrida sin cortes la etapa 6 lo habría cerrado.
-    CÓMO MEDIR (gratis, script de solo lectura): para los documentos de Admin/lote-14.txt y lote-19.txt, cruzar cada `noConfirmados` de
-    `Generados/**/<doc>.validacion.json` con el estado de su página en la etapa 2 y con si la etapa 6 cerró (`.verificacion.json`).
-    Arreglo candidato si hace falta: escalón 0 de la etapa 4 = "página validada en la etapa 2" (o que el 1b no se dispare sin etapa 6).
-
 152. LAS RESPUESTAS DE LA COLA NO SE REUSAN ENTRE AÑOS NI ENTRE CLUBES (Guido, 2026-10-07: "por qué pasar por Jev de nuevo si ya sabemos
     las categorías").
     QUÉ SE SABE:
@@ -225,7 +204,8 @@ ni en el comentario de ningún archivo de código.
     2024, L276) ya no frenan desde la Versión 567 (escalón 2b de la etapa 4). Queda Como 2025: 96 números de la tabla pro-forma con
     encabezados de varias líneas `<br>` que el texto propio no conserva (se destrabó con ajustes `confirmado` generados por script desde
     `.validacion.json` → `noConfirmados`, como Juventus 2021-22). Arreglo candidato: si la etapa 6 cerró al centavo con esos números, que no
-    frenen (misma familia que el to-do 150).
+    frenen. Medido 2026-10-07 (ex to-do 150): en los lotes 14 y 19, 192 de 193 "no confirmados" están en documentos donde la etapa 6 cerró y
+    en páginas que la etapa 2 validó; el daño de hoy es Como (79 en bloques que se cargan); Lazio 2021-22 (70) no frena (bloques que no se cargan).
 
 161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
     - Nombre legal: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
@@ -243,6 +223,11 @@ ni en el comentario de ningún archivo de código.
     `.validacion.json` sin `.verificacion.json`, lo que dispara el rearmado del to-do 150 en la corrida siguiente. Desde la Versión 566 el lote
     lo detecta (avisa "quedó el candado de un lote que se cortó"), pero no hace nada distinto. Arreglo: al arrancar, si hay documentos de la
     lista con validación y sin verificación, verificarlos primero (gratis) antes de decidir reintentos.
+    POR QUÉ IMPORTA (medido 2026-10-07, ex to-do 150): `paginasARearmar()` (`tools/texto-propio-a-md.mjs` ~L235-275) usa los "no confirmados"
+    de la etapa 4 para rearmar la página CON el texto propio cuando no hay `.verificacion.json` ok; si el texto propio es el que está mal, el
+    rearmado EMPEORA la página. En los lotes 14 y 19, de 193 números sin confirmar, los 193 están en páginas que la etapa 2 ya había validado
+    y 192 en documentos donde la etapa 6 cerró: casi todos falsos. Caso en riesgo hoy: AC Milan 2022-23 (sin `.verificacion.json` por el
+    corte del lote 14; 1 "no confirmado", el 2.456 de la pág. 84 del visor, impreso 84, .md L2527, celda partida en el texto propio).
 
 163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
     proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
