@@ -44,3 +44,5 @@ como dato complementario o directamente descartarlo por no ser el club entero �
 - Último chequeo: 2026-09-17.
 
 - **Color de marca**: `#00239C` (azul) — nerazzurro (it.wikipedia, Football_Club_Internazionale_Milano); desempate por el theme-color de inter.it (#011ea0); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2021-22`).
