@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.md",
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
-  "club": "bologna",
+  "club": "bologna-it",
   "year": 2020,
-  "generatedAt": "2026-10-07T00:01:59.794Z",
+  "generatedAt": "2026-10-07T16:00:53.496Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         4.493215
       ],
-      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
+      "glosa": "1) Ingresos de ventas y prestaciones de servicios"
     },
     {
       "label": "4) incrementi di immobilizzazioni per lavori interni",
@@ -54,7 +54,7 @@
       "values": [
         1.424157
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -84,7 +84,7 @@
       "values": [
         0.434508
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -104,7 +104,7 @@
       "values": [
         1.311562
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -114,7 +114,7 @@
       "values": [
         4.944371
       ],
-      "glosa": "Gastos administrativos, publicitarios y generales"
+      "glosa": "Gastos de administración, publicidad y generales"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -124,7 +124,7 @@
       "values": [
         2.063853
       ],
-      "glosa": "8) Por arrendamientos y uso de bienes de terceros"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -164,7 +164,7 @@
       "values": [
         32.469132
       ],
-      "glosa": "Derechos federativos sobre las prestaciones de los futbolistas"
+      "glosa": "Derechos federativos y plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "Costi impianto ed ampliamento",
@@ -174,7 +174,7 @@
       "values": [
         0.000246
       ],
-      "glosa": "Gastos de establecimiento y ampliación"
+      "glosa": "Gastos de primer establecimiento y ampliación"
     },
     {
       "label": "Concessioni, licenze e marchi e diritti simili",
@@ -194,7 +194,7 @@
       "values": [
         1.492709
       ],
-      "glosa": "Costes del fútbol base"
+      "glosa": "Gastos de cantera y fútbol base"
     },
     {
       "label": "Costi pluriennali su beni di terzi",
@@ -204,7 +204,7 @@
       "values": [
         1.554083
       ],
-      "glosa": "Costes plurianuales sobre bienes de terceros"
+      "glosa": "Gastos plurianuales sobre bienes de terceros"
     },
     {
       "label": "terreni e fabbricati \"costruzioni leggere\"",
@@ -234,7 +234,7 @@
       "values": [
         0.065181
       ],
-      "glosa": "Equipamiento industrial y comercial"
+      "glosa": "Equipos industriales y comerciales"
     },
     {
       "label": "altri beni",
@@ -254,7 +254,7 @@
       "values": [
         0.126634
       ],
-      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
+      "glosa": "c) Otras correcciones por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
@@ -264,7 +264,7 @@
       "values": [
         1.307014
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y disponibilidades líquidas"
+      "glosa": "d) Correcciones por deterioro de créditos del activo corriente y de disponibilidades líquidas"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -274,7 +274,7 @@
       "values": [
         0.022
       ],
-      "glosa": "12) Provisiones para riesgos"
+      "glosa": "12) Dotación a las provisiones para riesgos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -284,7 +284,7 @@
       "values": [
         0.850743
       ],
-      "glosa": "Gastos varios de organización de partidos"
+      "glosa": "Gastos diversos de organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -304,7 +304,7 @@
       "values": [
         0.384
       ],
-      "glosa": "Costes por cesión temporal de derechos de futbolistas"
+      "glosa": "Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -314,7 +314,7 @@
       "values": [
         0.206012
       ],
-      "glosa": "Pérdidas procedentes de la enajenación de derechos federativos de futbolistas"
+      "glosa": "Pérdidas procedentes de la cesión de derechos sobre futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori:",
@@ -324,7 +324,7 @@
       "values": [
         1.618718
       ],
-      "glosa": "Otros gastos de gestión de futbolistas:"
+      "glosa": "Otros gastos por gestión de futbolistas:"
     },
     {
       "label": "- Spese, ammende e multe gare",
@@ -334,7 +334,7 @@
       "values": [
         0.039547
       ],
-      "glosa": "- Gastos, sanciones y multas en competiciones"
+      "glosa": "- Gastos, sanciones y multas de competición"
     },
     {
       "label": "- Oneri tributari indiretti",

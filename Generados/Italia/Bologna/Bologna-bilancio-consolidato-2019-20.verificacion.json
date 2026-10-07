@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.md",
- "generado": "2026-10-07T15:54:41.133Z",
+ "generado": "2026-10-07T16:04:14.069Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2020,
@@ -37,6 +37,138 @@
    "reemplazaLinea": 958,
    "motivo": "Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).",
    "evidencia": ".md L958, L960 Totale D (1.868.716), L961 risultato prima delle imposte (39.019.149)",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "882.444",
+   "linea": 2311,
+   "etiqueta": "Contributi in conto esercizio",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 907,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2311",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "4.093.425",
+   "linea": 2312,
+   "etiqueta": "Proventi da sponsorizzazioni",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 908,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2312",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "889.771",
+   "linea": 2313,
+   "etiqueta": "Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2313",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "6.495.607",
+   "linea": 2314,
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2314",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "33.871.885",
+   "linea": 2315,
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2315",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "59.484",
+   "linea": 2316,
+   "etiqueta": "Proventi vari",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2316",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "1.291.423",
+   "linea": 2317,
+   "etiqueta": "Ricavi da cessione temporanea calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2317",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "17.164.895",
+   "linea": 2318,
+   "etiqueta": "Plusvalenze da cessione diritti calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2318",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "1.526.886",
+   "linea": 2319,
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2319",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "1.605.715",
+   "linea": 2320,
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).",
+   "evidencia": ".md L2320",
    "autor": "Guido",
    "fecha": "2026-10-07"
   }
@@ -79,11 +211,20 @@
   "el desglose de \"Altri oneri da gestione calciatori:\" (6 filas) no suma la fila: quedó la fila",
   "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (670.894), en lugar de la fila de L952 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
   "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (1.868.716), en lugar de la fila de L958 (2026-10-07, Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).)",
+  "ajuste manual: fila \"Contributi in conto esercizio\" (ingreso) 882.444, en lugar de la fila de L907 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Proventi da sponsorizzazioni\" (ingreso) 4.093.425, en lugar de la fila de L908 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Proventi commerciali e royalties\" (ingreso) 889.771 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Proventi pubblicitari\" (ingreso) 6.495.607 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Proventi da cessione diritti televisivi\" (ingreso) 33.871.885 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Proventi vari\" (ingreso) 59.484 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Ricavi da cessione temporanea calciatori\" (ingreso) 1.291.423 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Plusvalenze da cessione diritti calciatori\" (ingreso) 17.164.895 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Altri proventi da gestione calciatori\" (ingreso) 1.526.886 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
+  "ajuste manual: fila \"Altri ricavi e proventi\" (ingreso) 1.605.715 (2026-10-07, Nota \"Altri ricavi e proventi\" (L2307): abre el grupo 5) entero (contributi L907 + altri L908 = 67.881.535), no cada renglón, y cerrarNota no la usa (to-do 163); sin esto TV, sponsors y plusvalías quedaban en otros ingresos. Generado por script desde la tabla de la nota (suma 67.881.535).)",
   "duda de localizar que no afecta la carga: b77 tiene una sola fila de total, igual al renglón del estado, por lo que no agrega desglose.",
   "duda de localizar que no afecta la carga: Son detalles por jugador, no aportan desglose por categoría.",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale costi per il personale\"): ¿Se deja afuera de la carga el cuadro de personal por categoría Tesserati/Altri dip. (L2462-L2465), ya que repite las filas del estado?",
-  "duda de extraer que no afecta la carga: Sin esas dos filas los sub-ítems no suman 1.618.718 (L2568); con ellas sí, aunque L2585 no lleva guión.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Sin esas dos filas los sub-ítems no suman 1.618.718 (L2568); con ellas sí, aunque L2585 no lleva guión."
  ],
  "reintentar": [
   {
@@ -138,20 +279,84 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "contributi in conto esercizio",
+   "etiqueta": "Contributi in conto esercizio",
    "lado": "ingreso",
    "M": 0.882444,
-   "pagina": 25,
-   "linea": 907,
-   "origen": "estado"
+   "pagina": 56,
+   "linea": 2311,
+   "origen": "ajuste manual"
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 66.999091,
-   "pagina": 25,
-   "linea": 908,
-   "origen": "estado"
+   "M": 4.093425,
+   "pagina": 56,
+   "linea": 2312,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.889771,
+   "pagina": 56,
+   "linea": 2313,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 6.495607,
+   "pagina": 56,
+   "linea": 2314,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "M": 33.871885,
+   "pagina": 56,
+   "linea": 2315,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Proventi vari",
+   "lado": "ingreso",
+   "M": 0.059484,
+   "pagina": 56,
+   "linea": 2316,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea calciatori",
+   "lado": "ingreso",
+   "M": 1.291423,
+   "pagina": 56,
+   "linea": 2317,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione diritti calciatori",
+   "lado": "ingreso",
+   "M": 17.164895,
+   "pagina": 56,
+   "linea": 2318,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "M": 1.526886,
+   "pagina": 56,
+   "linea": 2319,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 1.605715,
+   "pagina": 56,
+   "linea": 2320,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",

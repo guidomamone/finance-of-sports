@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.md",
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf",
-  "club": "bologna",
+  "club": "bologna-it",
   "year": 2021,
-  "generatedAt": "2026-10-07T00:01:59.837Z",
+  "generatedAt": "2026-10-07T16:00:53.561Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.724809
       ],
-      "glosa": "Subvenciones a la explotación"
+      "glosa": "Subvenciones de explotación"
     },
     {
       "label": "altri",
@@ -44,7 +44,7 @@
       "values": [
         1.437327
       ],
-      "glosa": "6) Consumo de materias primas, secundarias, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -104,7 +104,7 @@
       "values": [
         4.917788
       ],
-      "glosa": "Gastos administrativos, publicitarios y generales"
+      "glosa": "Gastos de administración, publicidad y generales"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -144,7 +144,7 @@
       "values": [
         0.634263
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato"
+      "glosa": "c) Indemnización por cese de personal (TFR)"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -154,7 +154,7 @@
       "values": [
         29.480048
       ],
-      "glosa": "Derechos federativos de futbolistas"
+      "glosa": "Derechos federativos y de prestación de futbolistas"
     },
     {
       "label": "Costi impianto ed ampliamento",
@@ -164,7 +164,7 @@
       "values": [
         0.001161
       ],
-      "glosa": "Gastos de establecimiento y ampliación"
+      "glosa": "Gastos de constitución y ampliación"
     },
     {
       "label": "Concessioni, licenze e marchi e diritti simili",
@@ -184,7 +184,7 @@
       "values": [
         1.054562
       ],
-      "glosa": "Gastos de cantera y fútbol base"
+      "glosa": "Gastos de fútbol base y cantera"
     },
     {
       "label": "Costi pluriennali su beni di terzi",
@@ -204,7 +204,7 @@
       "values": [
         0.331557
       ],
-      "glosa": "Terrenos y edificaciones “construcciones ligeras”"
+      "glosa": "Terrenos y construcciones \"construcciones ligeras\""
     },
     {
       "label": "impianti e macchinari",
@@ -244,7 +244,7 @@
       "values": [
         1.427979
       ],
-      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
@@ -254,7 +254,7 @@
       "values": [
         0.375749
       ],
-      "glosa": "d) Deterioro de insolvencias de créditos comerciales y tesorería"
+      "glosa": "d) Correcciones por deterioro de créditos del activo circulante y de tesorería"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -264,7 +264,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Provisiones para riesgos"
+      "glosa": "12) Dotaciones a provisiones para riesgos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -274,7 +274,7 @@
       "values": [
         0.496393
       ],
-      "glosa": "Gastos varios de organización de partidos"
+      "glosa": "Gastos diversos de organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -304,7 +304,7 @@
       "values": [
         0.192929
       ],
-      "glosa": "Pérdidas por venta de derechos federativos de futbolistas"
+      "glosa": "Pérdidas por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "- Contributi solidarietà",
@@ -314,7 +314,7 @@
       "values": [
         0.009829
       ],
-      "glosa": "- Mecanismo de solidaridad"
+      "glosa": "- Contribución de solidaridad"
     },
     {
       "label": "- Premi alla carriera",
@@ -324,7 +324,7 @@
       "values": [
         0.09
       ],
-      "glosa": "- Primas por trayectoria profesional"
+      "glosa": "- Primas de carrera"
     },
     {
       "label": "- Premio di rendimento",
@@ -334,7 +334,7 @@
       "values": [
         1.251
       ],
-      "glosa": "- Primas de rendimiento"
+      "glosa": "- Primas por rendimiento"
     },
     {
       "label": "- Premi di preparazione ex. art. 96 N.O.I.F.",
@@ -344,7 +344,7 @@
       "values": [
         0.136
       ],
-      "glosa": "- Derechos de formación ex art. 96 N.O.I.F."
+      "glosa": "- Indemnizaciones de formación según art. 96 N.O.I.F."
     },
     {
       "label": "- Accantonamento rischi altri oneri gestione calciatori",
@@ -354,7 +354,7 @@
       "values": [
         0.018
       ],
-      "glosa": "- Dotación a la provisión para otros gastos de gestión de futbolistas"
+      "glosa": "- Dotación a provisiones por otros gastos de gestión de futbolistas"
     },
     {
       "label": "- Sopravvenienze attive altri oneri gestione calciatori",
@@ -364,7 +364,7 @@
       "values": [
         -0.015253
       ],
-      "glosa": "- Ingresos extraordinarios por otros gastos de gestión de futbolistas"
+      "glosa": "- Ingresos extraordinarios de otros gastos de gestión de futbolistas"
     },
     {
       "label": "- Spese, ammende e multe gare",

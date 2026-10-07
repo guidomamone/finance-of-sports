@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md",
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
-  "club": "bologna",
+  "club": "bologna-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T00:01:59.875Z",
+  "generatedAt": "2026-10-07T16:00:53.628Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.962486
       ],
-      "glosa": "Subvenciones a la explotación"
+      "glosa": "Subvenciones de explotación"
     },
     {
       "label": "altri",
@@ -74,7 +74,7 @@
       "values": [
         0.613084
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos de partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -84,7 +84,7 @@
       "values": [
         0.131198
       ],
-      "glosa": "Servicio de venta de entradas y control de accesos"
+      "glosa": "Servicio de taquilla y control de accesos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -94,7 +94,7 @@
       "values": [
         0.973454
       ],
-      "glosa": "Seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -144,7 +144,7 @@
       "values": [
         0.697597
       ],
-      "glosa": "c) Indemnización por cese de relación laboral"
+      "glosa": "c) Indemnizaciones por fin de contrato (TFR)"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -154,7 +154,7 @@
       "values": [
         34.448916
       ],
-      "glosa": "Derechos plurianuales sobre las prestaciones de los futbolistas"
+      "glosa": "Derechos federativos sobre futbolistas"
     },
     {
       "label": "Costi impianto ed ampliamento",
@@ -164,7 +164,7 @@
       "values": [
         0.003228
       ],
-      "glosa": "Gastos de constitución y ampliación"
+      "glosa": "Gastos de establecimiento y ampliación"
     },
     {
       "label": "Concessioni, licenze e marchi e diritti simili",
@@ -184,7 +184,7 @@
       "values": [
         0.650639
       ],
-      "glosa": "Gastos de la cantera / fútbol base"
+      "glosa": "Gastos de cantera y fútbol formativo"
     },
     {
       "label": "Costi pluriennali su beni di terzi",
@@ -204,7 +204,7 @@
       "values": [
         0.345997
       ],
-      "glosa": "Terrenos y construcciones \"construcciones ligeras\""
+      "glosa": "Terrenos y construcciones «construcciones ligeras»"
     },
     {
       "label": "impianti e macchinari",
@@ -214,7 +214,7 @@
       "values": [
         0.019518
       ],
-      "glosa": "Instalaciones y maquinaria"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "attrezzature industriali e commerciali",
@@ -284,7 +284,7 @@
       "values": [
         0.013331
       ],
-      "glosa": "Gastos específicos derivados de equipos visitantes:"
+      "glosa": "Gastos específicos hacia equipos visitantes:"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -294,7 +294,7 @@
       "values": [
         0.1885
       ],
-      "glosa": "Gastos por adquisición temporal de derechos de futbolistas"
+      "glosa": "Gastos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -304,7 +304,7 @@
       "values": [
         0.952237
       ],
-      "glosa": "Pérdidas por enajenación de derechos plurianuales sobre futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "- Contributi solidarietà",
@@ -334,7 +334,7 @@
       "values": [
         0.06475
       ],
-      "glosa": "- Derechos de formación según art. 96 N.O.I.F."
+      "glosa": "- Indemnizaciones por formación art. 96 N.O.I.F."
     },
     {
       "label": "- Costi di convocazione in Nazionale",
@@ -364,7 +364,7 @@
       "values": [
         0.0495
       ],
-      "glosa": "- Gastos, sanciones y multas por partidos"
+      "glosa": "- Gastos, sanciones y multas de competiciones"
     },
     {
       "label": "- Oneri tributari indiretti",
