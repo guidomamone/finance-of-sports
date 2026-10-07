@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.md",
- "generado": "2026-10-07T01:05:01.306Z",
+ "generado": "2026-10-07T01:25:09.954Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "sassuolo-it",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,56 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
+   "campo": "fila",
+   "valor": "34.086.540",
+   "linea": 583,
+   "etiqueta": "a) Derivanti da attività accessorie (sin TV)",
+   "lado": "ingreso",
+   "reemplaza": "a) Derivanti da attività accessorie",
+   "motivo": "Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
+   "campo": "fila",
+   "valor": "16.205.000",
+   "linea": 1629,
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "motivo": "Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "a) Derivanti da attività accessorie (sin TV)",
+   "motivo": "Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -37,10 +86,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"a) Derivanti da attività accessorie (sin TV)\" (ingreso) 34.086.540, en lugar de \"a) Derivanti da attività accessorie\" (2026-10-07, Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo)",
+  "ajuste manual: fila \"Proventi da cessione diritti televisivi\" (ingreso) 16.205.000 (2026-10-07, Guido 2026-10-07: el estado agrupa la TV en \"a) Derivanti da attività accessorie\" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer confirmada por las sumas (columna, \"9) Per il personale:\"): ¿Se cargan las filas de b48 (L1742-L1745) con la columna 'Totale' en lugar de las columnas 'Tesserati' y 'Altri dipen.'?"
  ],
@@ -83,14 +134,6 @@
    "origen": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\""
   },
   {
-   "etiqueta": "a) Derivanti da attività accessorie",
-   "lado": "ingreso",
-   "M": 50.29154,
-   "pagina": 20,
-   "linea": 583,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "b) plusvalenze",
    "lado": "ingreso",
    "M": 2.384681,
@@ -105,6 +148,22 @@
    "pagina": 20,
    "linea": 585,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Derivanti da attività accessorie (sin TV)",
+   "lado": "ingreso",
+   "M": 34.08654,
+   "pagina": 20,
+   "linea": 583,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "M": 16.205,
+   "pagina": 49,
+   "linea": 1629,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "6) Per materie prime, sussidiarie, di consumo e di merci",

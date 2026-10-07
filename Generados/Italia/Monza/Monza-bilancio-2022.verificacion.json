@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
  "md": "Clubes/Italia/Monza/Monza-bilancio-2022.md",
- "generado": "2026-10-07T01:05:01.265Z",
+ "generado": "2026-10-07T01:25:08.003Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "monza-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,28 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestre' es un comentario de gestión, no un intermedio",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
+   "campo": "cierre",
+   "valor": "2022-12-31",
+   "linea": null,
+   "motivo": "Guido 2026-10-06: el ejercicio cierra el 31/12/2022",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -32,7 +53,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [],
