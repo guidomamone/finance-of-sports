@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T01:55:04.982Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:56:28.571Z",
+ "estado": "ok",
  "clubId": "inter-it",
  "year": 2022,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "6f2f84b",
-  "36f9d01"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,8 +57,7 @@
   "duda de localizar que no afecta la carga: Son resúmenes en miles del informe de gestión que repiten renglones del estado b6.",
   "duda de localizar que no afecta la carga: Detalla costos capitalizados por naturaleza, no abre un renglón de ingresos útil.",
   "duda de extraer confirmada por las sumas (columna, \"a) salaries and wages\"): ¿Se cargan las filas de b48 (L2347-L2350) tomando como detalle de cada renglón de personal solo la suma de columnas 'Registered' y 'Other', dejándolas por ahora afuera?",
-  "duda de extraer que no afecta la carga: L2491 suma c) y d) del estado (4.800+45.166=49.966).",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L2491 suma c) y d) del estado (4.800+45.166=49.966)."
  ],
  "reintentar": [
   {

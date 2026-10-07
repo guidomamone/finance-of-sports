@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.md",
- "generado": "2026-10-07T01:55:04.434Z",
+ "generado": "2026-10-07T01:56:28.026Z",
  "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2024,
@@ -73,8 +73,7 @@
   "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo y solo reparten los renglones del estado consolidado, sin abrir categorías nuevas.",
   "duda de extraer que no afecta la carga: L877 = L865 + suma de L867-L876; el subtotal del estado agrupa también la línea 2, a diferencia de la nota b36.",
   "duda de extraer que no afecta la carga: L907 = L898 + suma de L901-L906; la nota b46 solo totaliza oneri diversi di gestione.",
-  "duda de extraer que no afecta la carga: L944 repite 'rivalutazioni' pero el importe es negativo, probable error de transcripción del rótulo 'svalutazioni'.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L944 repite 'rivalutazioni' pero el importe es negativo, probable error de transcripción del rótulo 'svalutazioni'."
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
- "generado": "2026-10-07T01:55:06.700Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:56:29.109Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2022,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "4939bb1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,7 +53,7 @@
   "duda de localizar que no afecta la carga: Solo da ventas por segmento, que no abren renglones no desglosados por las notas.",
   "duda de localizar que no afecta la carga: No aparece en el índice una tabla consolidada de proventi da attività di investimento (la separada es b89).",
   "duda de extraer que no afecta la carga: L5917 es un detalle por tipo de una fila que ya está en b182 (L5906, 4.688) y no tiene columnas de ejercicio.",
-  "4 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Variazioni delle rimanenze\"): aceptar, en Lazio-bilancio-separato-consolidato-2021-22.pdf"
  ],
  "reintentar": [
   {
