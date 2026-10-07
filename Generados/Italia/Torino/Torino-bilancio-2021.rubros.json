@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2021.pdf",
-  "club": "torino",
+  "club": "torino-it",
   "year": 2021,
-  "generatedAt": "2026-10-07T00:02:00.845Z",
+  "generatedAt": "2026-10-07T01:51:57.829Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.215
       ],
-      "glosa": "Ingresos por taquilla en partidos nacionales y amistosos"
+      "glosa": "Ingresos de taquilla de partidos nacionales y amistosos"
     },
     {
       "label": "Abbonamenti",
@@ -44,7 +44,7 @@
       "values": [
         0
       ],
-      "glosa": "a) Subvenciones a la explotación"
+      "glosa": "a) subvenciones a la explotación"
     },
     {
       "label": "Sponsor Ufficiali e Tecnico",
@@ -54,7 +54,7 @@
       "values": [
         6.96
       ],
-      "glosa": "Patrocinadores oficiales y técnicos"
+      "glosa": "Patrocinadores oficiales y técnico"
     },
     {
       "label": "Altri proventi da sponsorizzazione",
@@ -74,7 +74,7 @@
       "values": [
         2.281911
       ],
-      "glosa": "c) Ingresos publicitarios"
+      "glosa": "c) ingresos publicitarios"
     },
     {
       "label": "d) proventi commerciali e royalties",
@@ -84,7 +84,7 @@
       "values": [
         0.303936
       ],
-      "glosa": "d) Ingresos comerciales y regalías"
+      "glosa": "d) ingresos comerciales y regalías"
     },
     {
       "label": "e) proventi da cessione diritti audiovisivi",
@@ -94,7 +94,7 @@
       "values": [
         54.314348
       ],
-      "glosa": "e) Ingresos por cesión de derechos audiovisuales"
+      "glosa": "e) ingresos por cesión de derechos audiovisuales"
     },
     {
       "label": "f) ricavi da cessione temporanea prestazioni calciatori",
@@ -104,7 +104,7 @@
       "values": [
         1.8524
       ],
-      "glosa": "f) Ingresos por cesión temporal de derechos de futbolistas"
+      "glosa": "f) ingresos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "g) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -114,7 +114,7 @@
       "values": [
         8.838201
       ],
-      "glosa": "g) Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "g) plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "h) altri proventi da trasferimento diritti calciatori",
@@ -124,7 +124,7 @@
       "values": [
         0.215674
       ],
-      "glosa": "h) Otros ingresos por transferencia de derechos de futbolistas"
+      "glosa": "h) otros ingresos por traspaso de derechos de futbolistas"
     },
     {
       "label": "i) ricavi e proventi diversi",
@@ -134,7 +134,7 @@
       "values": [
         5.939498
       ],
-      "glosa": "i) Ingresos y beneficios diversos"
+      "glosa": "i) otros ingresos y ganancias diversas"
     },
     {
       "label": "Materiale tecnico (divise ufficiali)",
@@ -154,7 +154,7 @@
       "values": [
         0.097
       ],
-      "glosa": "Material de consumo y otros suministros"
+      "glosa": "Material de consumo y otros materiales"
     },
     {
       "label": "Costi per tesserati",
@@ -164,7 +164,7 @@
       "values": [
         0.785
       ],
-      "glosa": "Gastos por licencias federativas"
+      "glosa": "Gastos por deportistas federados"
     },
     {
       "label": "Costi per attività sportiva",
@@ -244,7 +244,7 @@
       "values": [
         0.777
       ],
-      "glosa": "Arrendamiento de instalaciones deportivas"
+      "glosa": "Alquiler de campos deportivos"
     },
     {
       "label": "Affitto sede ed altri locali",
@@ -254,7 +254,7 @@
       "values": [
         0.042
       ],
-      "glosa": "Arrendamiento de sede y otros locales"
+      "glosa": "Alquiler de sede y otros locales"
     },
     {
       "label": "Altri",
@@ -274,7 +274,7 @@
       "values": [
         73.699728
       ],
-      "glosa": "a) Sueldos y salarios"
+      "glosa": "a) sueldos y salarios"
     },
     {
       "label": "b) oneri sociali",
@@ -284,7 +284,7 @@
       "values": [
         2.556709
       ],
-      "glosa": "b) Cargas sociales"
+      "glosa": "b) cargas sociales"
     },
     {
       "label": "c) trattamento fine rapporto",
@@ -294,7 +294,7 @@
       "values": [
         0.282341
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato laboral"
+      "glosa": "c) indemnización por cese de relación laboral"
     },
     {
       "label": "e) altri costi",
@@ -304,7 +304,7 @@
       "values": [
         0.3466
       ],
-      "glosa": "e) Otros gastos de personal"
+      "glosa": "e) otros costes"
     },
     {
       "label": "a) amm.ti immob. immateriali",
@@ -314,7 +314,7 @@
       "values": [
         33.759631
       ],
-      "glosa": "a) Amortización del inmovilizado intangible"
+      "glosa": "a) amortización del inmovilizado intangible"
     },
     {
       "label": "b) amm.ti immob. materiali",
@@ -324,7 +324,7 @@
       "values": [
         0.222369
       ],
-      "glosa": "b) Amortización del inmovilizado material"
+      "glosa": "b) amortización del inmovilizado material"
     },
     {
       "label": "c) svalutazione delle immobilizzazioni",
@@ -334,7 +334,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Deterioro de valor del inmovilizado"
+      "glosa": "c) deterioro del inmovilizado"
     },
     {
       "label": "d) svalut.crediti di attivo circ. e disp.l.",
@@ -344,7 +344,7 @@
       "values": [
         0.1
       ],
-      "glosa": "d) Deterioro de valor de créditos del activo corriente y disponibilidades líquidas"
+      "glosa": "d) deterioro de créditos del activo circulante y tesorería"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -354,7 +354,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Dotación a provisiones para riesgos"
+      "glosa": "12) dotaciones a provisiones para riesgos"
     },
     {
       "label": "13) altri accantonamenti",
@@ -364,7 +364,7 @@
       "values": [
         0
       ],
-      "glosa": "13) Otras dotaciones a provisiones"
+      "glosa": "13) otras provisiones"
     },
     {
       "label": "a) oneri da organizzazione competizioni",
@@ -374,7 +374,7 @@
       "values": [
         1.196917
       ],
-      "glosa": "a) Gastos de organización de competiciones"
+      "glosa": "a) gastos de organización de competiciones"
     },
     {
       "label": "b) costi da cessione temporanea prestazioni calciatori",
@@ -384,7 +384,7 @@
       "values": [
         3.366074
       ],
-      "glosa": "b) Gastos por cesión temporal de derechos de futbolistas"
+      "glosa": "b) gastos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -394,7 +394,7 @@
       "values": [
         0.999484
       ],
-      "glosa": "c) Minusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "c) minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "d) altri oneri da trasferimento diritti calciatori",
@@ -404,7 +404,7 @@
       "values": [
         0.04
       ],
-      "glosa": "d) Otros gastos por transferencia de derechos de futbolistas"
+      "glosa": "d) otros gastos por traspaso de derechos de futbolistas"
     },
     {
       "label": "e) altri oneri diversi di gestione",
@@ -414,7 +414,7 @@
       "values": [
         0.641301
       ],
-      "glosa": "e) Otros gastos de gestión corrientes"
+      "glosa": "e) otros gastos de gestión"
     }
   ]
 }

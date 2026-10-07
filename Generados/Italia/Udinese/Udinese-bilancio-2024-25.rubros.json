@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Udinese/Udinese-bilancio-2024-25.md",
   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf",
-  "club": "udinese",
+  "club": "udinese-it",
   "year": 2025,
-  "generatedAt": "2026-10-07T00:02:00.965Z",
+  "generatedAt": "2026-10-07T01:51:57.997Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         4.32294
       ],
-      "glosa": "- Partidos de liga"
+      "glosa": "- Partidos de Liga"
     },
     {
       "label": "- Gare Coppa Italia",
@@ -24,7 +24,7 @@
       "values": [
         0.069453
       ],
-      "glosa": "- Partidos de Copa Italia"
+      "glosa": "- Partidos de Copa de Italia"
     },
     {
       "label": "- Gare Coppa Italia",
@@ -34,7 +34,7 @@
       "values": [
         0.241685
       ],
-      "glosa": "- Partidos de Copa Italia"
+      "glosa": "- Partidos de Copa de Italia"
     },
     {
       "label": "Abbonamenti",
@@ -74,7 +74,7 @@
       "values": [
         6.68376
       ],
-      "glosa": "Ingresos publicitarios"
+      "glosa": "Ingresos por publicidad"
     },
     {
       "label": "Proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         1.05
       ],
-      "glosa": "Ingresos por cesión temporal de jugadores"
+      "glosa": "Ingresos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Plusvalenze da cessione calciatori",
@@ -114,7 +114,7 @@
       "values": [
         72.321288
       ],
-      "glosa": "Plusvalías por traspaso de jugadores"
+      "glosa": "Plusvalías por traspaso de futbolistas"
     },
     {
       "label": "Altri proventi da trasferimento calciatori",
@@ -124,7 +124,7 @@
       "values": [
         1.849082
       ],
-      "glosa": "Otros ingresos por transferencias de jugadores"
+      "glosa": "Otros ingresos por traspaso de futbolistas"
     },
     {
       "label": "Rimborsi assicurativi",
@@ -184,7 +184,7 @@
       "values": [
         6.762137
       ],
-      "glosa": "Gastos técnicos específicos"
+      "glosa": "Costes técnicos específicos"
     },
     {
       "label": "Costi vitto, alloggio, locomozione gare",
@@ -194,7 +194,7 @@
       "values": [
         2.204748
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos de partidos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -204,7 +204,7 @@
       "values": [
         0.542234
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -234,7 +234,7 @@
       "values": [
         1.036121
       ],
-      "glosa": "8) Arrendamientos y cánones"
+      "glosa": "8) Por arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -264,7 +264,7 @@
       "values": [
         0.189742
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato / TFR"
+      "glosa": "c) Indemnizaciones por fin de contrato de trabajo"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -294,7 +294,7 @@
       "values": [
         2.445613
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otros deterioros de valor del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
@@ -304,7 +304,7 @@
       "values": [
         1.330152
       ],
-      "glosa": "d) Correcciones valorativas de créditos del activo corriente y de tesorería"
+      "glosa": "d) Deterioro de valor de los créditos del activo corriente y de la tesorería"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -314,7 +314,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Dotaciones para riesgos y gastos"
+      "glosa": "12) Dotaciones a provisiones para riesgos"
     },
     {
       "label": "Oneri da organizzazione competizioni",
@@ -324,7 +324,7 @@
       "values": [
         0.850966
       ],
-      "glosa": "Gastos de organización de competiciones"
+      "glosa": "Gastos por organización de competiciones"
     },
     {
       "label": "Minusvalenze da cessioni diritti calciatori",
@@ -334,7 +334,7 @@
       "values": [
         0.482151
       ],
-      "glosa": "Minusvalías por traspaso de derechos de jugadores"
+      "glosa": "Minusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri oneri da trasferimento diritti calciatori",
@@ -344,7 +344,7 @@
       "values": [
         9.700351
       ],
-      "glosa": "Otros gastos por transferencia de derechos de jugadores"
+      "glosa": "Otros gastos por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri oneri diversi di gestione",

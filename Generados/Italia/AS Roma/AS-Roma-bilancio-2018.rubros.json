@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
-  "club": "as-roma",
+  "club": "asroma-it",
   "year": 2018,
-  "generatedAt": "2026-10-07T00:01:59.517Z",
+  "generatedAt": "2026-10-07T01:51:58.405Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         11.598
       ],
-      "glosa": "Campeonato Serie A"
+      "glosa": "Campeonato de Serie A"
     },
     {
       "label": "UEFA Champions League",
@@ -64,7 +64,7 @@
       "values": [
         8.919
       ],
-      "glosa": "Abonos de campeonato"
+      "glosa": "Abonos de liga"
     },
     {
       "label": "Altri ricavi delle vendite e delle prestazioni",
@@ -74,7 +74,7 @@
       "values": [
         7.808
       ],
-      "glosa": "Otros ingresos de explotación y ventas"
+      "glosa": "Otros ingresos de ventas y prestaciones de servicios"
     },
     {
       "label": "b) Sponsorizzazioni",
@@ -94,7 +94,7 @@
       "values": [
         128.557
       ],
-      "glosa": "c) Derechos audiovisuales y de imagen"
+      "glosa": "c) Derechos audiovisuales y derechos de imagen"
     },
     {
       "label": "d) Proventi pubblicitari",
@@ -104,7 +104,7 @@
       "values": [
         13.814
       ],
-      "glosa": "d) Ingresos por publicidad"
+      "glosa": "d) Ingresos publicitarios"
     },
     {
       "label": "Proventi LNP",
@@ -114,7 +114,7 @@
       "values": [
         2.086
       ],
-      "glosa": "Ingresos de la LNP"
+      "glosa": "Ingresos LNP"
     },
     {
       "label": "Indennizzi assicurativi infortuni calciatori",
@@ -134,7 +134,7 @@
       "values": [
         0.201
       ],
-      "glosa": "Refacturaciones a entidades vinculadas"
+      "glosa": "Refacturaciones y partes vinculadas"
     },
     {
       "label": "AS Roma Camp",
@@ -194,7 +194,7 @@
       "values": [
         0.089
       ],
-      "glosa": "Ingresos excepcionales"
+      "glosa": "Ingresos extraordinarios"
     },
     {
       "label": "Biglietti trasferite internazionali",
@@ -214,7 +214,7 @@
       "values": [
         0.149
       ],
-      "glosa": "Tarjeta de aficionado visitante"
+      "glosa": "Abono de aficionado visitante"
     },
     {
       "label": "Altri proventi diversi",
@@ -225,6 +225,26 @@
         0.671
       ],
       "glosa": "Otros ingresos diversos"
+    },
+    {
+      "label": "Gestione operativa netta calciatori",
+      "lado": "revenue",
+      "page": 62,
+      "section": "ajuste manual",
+      "values": [
+        45.922
+      ],
+      "glosa": "Gestión operativa neta de futbolistas"
+    },
+    {
+      "label": "Variazione delle rimanenze (reduce costos)",
+      "lado": "revenue",
+      "page": 62,
+      "section": "ajuste manual",
+      "values": [
+        0.082
+      ],
+      "glosa": "Variación de existencias (reduce costes)"
     },
     {
       "label": "Indumenti sportivi e materiale tecnico",
@@ -254,7 +274,7 @@
       "values": [
         3.504
       ],
-      "glosa": "Bienes y productos destinados a la venta"
+      "glosa": "Mercaderías y productos para comercialización"
     },
     {
       "label": "Materiale vario di consumo",
@@ -267,16 +287,6 @@
       "glosa": "Material diverso de consumo"
     },
     {
-      "label": "Variazione delle rimanenze",
-      "lado": "expense",
-      "page": 62,
-      "section": "estado",
-      "values": [
-        0.082
-      ],
-      "glosa": "Variación de existencias"
-    },
-    {
       "label": "Costi per tesserati",
       "lado": "expense",
       "page": 114,
@@ -284,7 +294,7 @@
       "values": [
         1.542
       ],
-      "glosa": "Gastos por personal federado"
+      "glosa": "Gastos de personal federado"
     },
     {
       "label": "Costi per attività sportiva",
@@ -324,7 +334,7 @@
       "values": [
         5.865
       ],
-      "glosa": "Gastos de seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Consulenze e servizi professionali",
@@ -334,7 +344,7 @@
       "values": [
         6.701
       ],
-      "glosa": "Servicios profesionales independientes"
+      "glosa": "Servicios profesionales y asesoría"
     },
     {
       "label": "Consulenze professionali per servizi commerciali",
@@ -374,7 +384,7 @@
       "values": [
         1.559
       ],
-      "glosa": "Mantenimiento y gestión de sede social y centro deportivo"
+      "glosa": "Mantenimiento y gestión de sede social y ciudad deportiva"
     },
     {
       "label": "Manutenzione e gestione hardware, software e sito internet",
@@ -394,7 +404,7 @@
       "values": [
         0.1
       ],
-      "glosa": "Gastos de asambleas, societarios y cotización bursátil"
+      "glosa": "Gastos societarios, de asambleas y bursátiles"
     },
     {
       "label": "Trasporti e trasferte",
@@ -414,7 +424,7 @@
       "values": [
         0.15
       ],
-      "glosa": "Retribuciones al Consejo de Administración"
+      "glosa": "Retribuciones del Consejo de Administración"
     },
     {
       "label": "Spese di revisione contabile",
@@ -434,7 +444,7 @@
       "values": [
         0.137
       ],
-      "glosa": "Retribuciones a la Comisión de Control / Órgano de Vigilancia"
+      "glosa": "Retribuciones de la Comisión de Control / Órgano de Vigilancia"
     },
     {
       "label": "Costi di produzione *Roma TV e Roma Radio*",
@@ -444,7 +454,7 @@
       "values": [
         4.878
       ],
-      "glosa": "Gastos de producción de Roma TV y Roma Radio"
+      "glosa": "Costes de producción *Roma TV y Roma Radio*"
     },
     {
       "label": "Spese Call Center Stadio ed altri servizi interinali",
@@ -454,7 +464,7 @@
       "values": [
         0.025
       ],
-      "glosa": "Gastos de centro de atención telefónica del estadio y trabajo temporal"
+      "glosa": "Gastos de call center del estadio y otros servicios de trabajo temporal"
     },
     {
       "label": "Altre spese generali e amministrative",
@@ -514,7 +524,7 @@
       "values": [
         0.932
       ],
-      "glosa": "Provisión para indemnizaciones por fin de contrato (TFR)"
+      "glosa": "Indemnizaciones por cese (T.F.R.)"
     },
     {
       "label": "Altri costi (Faifc)",
@@ -524,7 +534,7 @@
       "values": [
         0.498
       ],
-      "glosa": "Otros gastos de personal (FAIFC)"
+      "glosa": "Otros costes (FAIFC)"
     },
     {
       "label": "Oneri tributari indiretti",
@@ -534,7 +544,7 @@
       "values": [
         0.979
       ],
-      "glosa": "Tributos e impuestos indirectos"
+      "glosa": "Tributos indirectos"
     },
     {
       "label": "Sopravvenienze passive",
@@ -544,7 +554,7 @@
       "values": [
         0.107
       ],
-      "glosa": "Gastos excepcionales"
+      "glosa": "Gastos extraordinarios"
     },
     {
       "label": "- Costi accesso segnale televisivo LNP",
@@ -554,7 +564,7 @@
       "values": [
         1.063
       ],
-      "glosa": "- Gastos de acceso a la señal televisiva de la LNP"
+      "glosa": "- Costes de acceso a la señal de televisión LNP"
     },
     {
       "label": "- Mutualità incassi gare TIM Cup",
@@ -564,7 +574,7 @@
       "values": [
         0.109
       ],
-      "glosa": "- Fondo de solidaridad sobre taquilla de la Copa TIM"
+      "glosa": "- Fondo de solidaridad de recaudación por partidos de la Copa TIM"
     },
     {
       "label": "- Contributi, ammende, spese LNP-FIGC-UEFA",
@@ -574,7 +584,7 @@
       "values": [
         1.355
       ],
-      "glosa": "- Aportaciones, sanciones y gastos LNP-FIGC-UEFA"
+      "glosa": "- Cuotas, sanciones y gastos LNP-FIGC-UEFA"
     },
     {
       "label": "- Costi per acquisti biglietti gare in trasferta",
@@ -584,7 +594,7 @@
       "values": [
         0.68
       ],
-      "glosa": "- Gastos por adquisición de entradas para partidos fuera de casa"
+      "glosa": "- Costes por compra de entradas para partidos como visitante"
     },
     {
       "label": "- Erogazioni liberali Roma",
@@ -617,16 +627,6 @@
       "glosa": "- Otros gastos diversos"
     },
     {
-      "label": "Totale Costi di esercizio",
-      "lado": "expense",
-      "page": 62,
-      "section": "estado",
-      "values": [
-        230.056
-      ],
-      "glosa": "Total gastos de explotación"
-    },
-    {
       "label": "Ammortamento delle immobilizzazioni immateriali",
       "lado": "expense",
       "page": 121,
@@ -654,7 +654,7 @@
       "values": [
         1.41
       ],
-      "glosa": "Deterioro de créditos comerciales y corrientes"
+      "glosa": "Deterioro de créditos comerciales"
     },
     {
       "label": "Accantonamenti per rischi",

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.md",
- "generado": "2026-10-07T00:01:59.408Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-07T01:55:04.434Z",
+ "estado": "ok",
+ "clubId": "acmilan-it",
  "year": 2024,
  "escala": {
   "valor": "miles",
@@ -11,10 +11,35 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "b6b77b7"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf",
+   "campo": "fila",
+   "valor": "672",
+   "linea": 942,
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "D) rettifiche quedaban sin lado; las dos filas se llaman igual (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf",
+   "campo": "fila",
+   "valor": "(800)",
+   "linea": 945,
+   "etiqueta": "svalutazioni di partecipazioni (19, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,8 +53,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 456.941 - gastos 443.744 ± financiero -0.797 ± impuesto -8.162 no da el impreso 4.106"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2023",
@@ -39,14 +64,17 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 672 (2026-10-07, D) rettifiche quedaban sin lado; las dos filas se llaman igual (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "ajuste manual: fila \"svalutazioni di partecipazioni (19, costo)\" (financiero) (800) (2026-10-07, ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
   "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo y solo reparten los renglones del estado consolidado, sin abrir categorías nuevas.",
   "duda de extraer que no afecta la carga: L877 = L865 + suma de L867-L876; el subtotal del estado agrupa también la línea 2, a diferencia de la nota b36.",
   "duda de extraer que no afecta la carga: L907 = L898 + suma de L901-L906; la nota b46 solo totaliza oneri diversi di gestione.",
-  "duda de extraer que no afecta la carga: L944 repite 'rivalutazioni' pero el importe es negativo, probable error de transcripción del rótulo 'svalutazioni'."
+  "duda de extraer que no afecta la carga: L944 repite 'rivalutazioni' pero el importe es negativo, probable error de transcripción del rótulo 'svalutazioni'.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -54,12 +82,12 @@
  "totales": {
   "ingresos": 456.941,
   "gastos": 443.744,
-  "financiero": -0.797,
+  "financiero": -0.925,
   "impuesto": -8.162,
   "resultadoImpreso": 4.106,
   "resultadoParaCargar": 4.106,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -415,6 +443,16 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.348,
    "linea": 937
+  },
+  {
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "M": 0.672,
+   "linea": 942
+  },
+  {
+   "etiqueta": "svalutazioni di partecipazioni (19, costo)",
+   "M": -0.8,
+   "linea": 945
   }
  ],
  "impuesto": [

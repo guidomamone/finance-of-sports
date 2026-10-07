@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.md",
- "generado": "2026-10-07T00:01:59.836Z",
+ "generado": "2026-10-07T01:55:35.691Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "bologna-it",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -14,7 +14,7 @@
  "ajustes": null,
  "cola": [
   "917ef39",
-  "06cfdec",
+  "af0191e",
   "ea8ca3e"
  ],
  "chequeos": [
@@ -46,7 +46,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

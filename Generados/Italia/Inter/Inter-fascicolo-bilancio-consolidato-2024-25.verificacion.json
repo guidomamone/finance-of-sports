@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
- "generado": "2026-10-07T00:02:00.215Z",
+ "generado": "2026-10-07T01:55:05.558Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "inter-it",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -11,12 +11,26 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
+   "campo": "fila",
+   "valor": "780.928",
+   "linea": 976,
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "256f55f",
   "2d01cd2",
-  "3cb6445",
-  "c5ded93",
+  "bafa391",
+  "62e4a7c",
   "77e639b"
  ],
  "chequeos": [
@@ -33,18 +47,20 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": false,
-   "detalle": "ingresos 567.012794 - gastos 482.062561 ± financiero -35.879464 ± impuesto -14.491102 no da el impreso 35.398278"
+   "detalle": "ingresos 567.012794 - gastos 482.062561 ± financiero -35.098536 ± impuesto -14.491102 no da el impreso 35.398278"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Amministrative, pubblicitarie e generali\" (18 filas) no suma la fila: quedó la fila",
   "la nota de \"a) salari e stipendi\" no suma el renglón (209.231 contra 231.682534, sumando sus renglones): quedó el renglón del estado",
-  "duda de extraer que no afecta la carga: L2721 dice 'comprendono tra l'altro', las filas no suman 43.638."
+  "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 780.928 (2026-10-07, D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "duda de extraer que no afecta la carga: L2721 dice 'comprendono tra l'altro', las filas no suman 43.638.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -74,7 +90,7 @@
  "totales": {
   "ingresos": 567.012794,
   "gastos": 482.062561,
-  "financiero": -35.879464,
+  "financiero": -35.098536,
   "impuesto": -14.491102,
   "resultadoImpreso": 35.398278,
   "resultadoParaCargar": 35.398278,
@@ -624,6 +640,11 @@
    "etiqueta": "17 bis) Utile e perdite su cambi",
    "M": 0.229762,
    "linea": 972
+  },
+  {
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "M": 0.780928,
+   "linea": 976
   }
  ],
  "impuesto": [

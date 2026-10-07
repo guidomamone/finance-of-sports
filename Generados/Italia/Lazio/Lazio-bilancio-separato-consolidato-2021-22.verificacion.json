@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
- "generado": "2026-10-07T00:02:00.464Z",
+ "generado": "2026-10-07T01:55:06.700Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "lazio-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -13,10 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "f9f4d09",
-  "402c51e",
-  "3c4748f",
-  "0404b98"
+  "4939bb1"
  ],
  "chequeos": [
   {
@@ -41,13 +38,13 @@
   },
   {
    "nombre": "documento del año 2023",
-   "ok": false,
-   "detalle": "ingresos de 2022: 161.134819 en este documento y 186.11826 en Lazio-bilancio-separato-consolidato-2022-23.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2022: 161.134819 en este documento y 161.134819 en Lazio-bilancio-separato-consolidato-2022-23.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -57,7 +54,8 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Solo da ventas por segmento, que no abren renglones no desglosados por las notas.",
   "duda de localizar que no afecta la carga: No aparece en el índice una tabla consolidada de proventi da attività di investimento (la separada es b89).",
-  "duda de extraer que no afecta la carga: L5917 es un detalle por tipo de una fila que ya está en b182 (L5906, 4.688) y no tiene columnas de ejercicio."
+  "duda de extraer que no afecta la carga: L5917 es un detalle por tipo de una fila que ya está en b182 (L5906, 4.688) y no tiene columnas de ejercicio.",
+  "4 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {

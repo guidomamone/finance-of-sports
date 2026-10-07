@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Torino/Torino-bilancio-2018.md",
   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2018.pdf",
-  "club": "torino",
+  "club": "torino-it",
   "year": 2018,
-  "generatedAt": "2026-10-07T00:02:00.793Z",
+  "generatedAt": "2026-10-07T01:51:57.768Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         54.109
       ],
-      "glosa": "Ingresos por retransmisiones audiovisuales"
+      "glosa": "Ingresos audiovisuales y de retransmisión"
     },
     {
       "label": "Proventi da accesso segnale televisivo",
@@ -84,7 +84,7 @@
       "values": [
         1.139
       ],
-      "glosa": "Ingresos por acceso a la señal de televisión"
+      "glosa": "Ingresos por acceso a señal de televisión"
     },
     {
       "label": "Altri ricavi",
@@ -124,7 +124,7 @@
       "values": [
         0.016
       ],
-      "glosa": "Contribuciones de solidaridad"
+      "glosa": "Mecanismo y contribuciones de solidaridad"
     },
     {
       "label": "per materie prime,sussid. e di consumo",
@@ -134,7 +134,7 @@
       "values": [
         0.953338
       ],
-      "glosa": "Materias primas, auxiliares y de consumo"
+      "glosa": "Aprovisionamientos de materias primas, auxiliares y consumibles"
     },
     {
       "label": "Costi per tesserati",
@@ -144,7 +144,7 @@
       "values": [
         0.27
       ],
-      "glosa": "Gastos por jugadores federados"
+      "glosa": "Gastos de personal federado"
     },
     {
       "label": "Costi per attività sportiva",
@@ -204,7 +204,7 @@
       "values": [
         1.158
       ],
-      "glosa": "Gastos de producción televisiva"
+      "glosa": "Costes de producción televisiva"
     },
     {
       "label": "Costi amministrativi, pubblicitari e generali",
@@ -224,7 +224,7 @@
       "values": [
         5.051
       ],
-      "glosa": "Gastos por adquisiciones temporales de futbolistas"
+      "glosa": "Costes por adquisición temporal de futbolistas"
     },
     {
       "label": "Affitto campi sportivi",
@@ -284,7 +284,7 @@
       "values": [
         0.283245
       ],
-      "glosa": "c) Indemnizaciones por cese de relación laboral"
+      "glosa": "c) Indemnizaciones por fin de contrato"
     },
     {
       "label": "e) altri costi",
@@ -294,7 +294,7 @@
       "values": [
         0.289875
       ],
-      "glosa": "e) Otros gastos"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "a) amm.ti immob. immateriali",
@@ -334,7 +334,7 @@
       "values": [
         0.5
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y tesorería"
+      "glosa": "d) Deterioro de créditos del activo circulante y tesorería"
     },
     {
       "label": "accantonamenti per rischi",
@@ -344,7 +344,7 @@
       "values": [
         0
       ],
-      "glosa": "Provisiones para riesgos"
+      "glosa": "Dotaciones a provisiones para riesgos"
     },
     {
       "label": "Minusvalenze",
@@ -384,7 +384,7 @@
       "values": [
         0.042
       ],
-      "glosa": "Porcentaje de taquilla del equipo visitante"
+      "glosa": "Porcentaje de recaudación de taquilla del equipo visitante"
     },
     {
       "label": "Altri oneri",
@@ -394,7 +394,7 @@
       "values": [
         0.711
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de gestión"
     }
   ]
 }

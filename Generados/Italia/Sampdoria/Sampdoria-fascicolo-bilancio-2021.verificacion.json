@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md",
- "generado": "2026-10-07T00:02:00.723Z",
+ "generado": "2026-10-07T01:55:50.184Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "sampdoria-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,44 +11,130 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 892,
+   "etiqueta": "(sale) - altri contributi in conto esercizio",
+   "lado": "ingreso",
+   "reemplaza": "- altri contributi in conto esercizio",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 900,
+   "etiqueta": "(sale) - premi e/o indennizzi attivi ex art. 103, comma 3, NOIF",
+   "lado": "ingreso",
+   "reemplaza": "- premi e/o indennizzi attivi ex art. 103, comma 3, NOIF",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 901,
+   "etiqueta": "(sale) - proventi diversi da trasferimento diritti calciatori",
+   "lado": "ingreso",
+   "reemplaza": "- proventi diversi da trasferimento diritti calciatori",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 938,
+   "etiqueta": "(sale) - premi e/o indennizzi passivi ex art. 103, comma 3, NOIF",
+   "lado": "gasto",
+   "reemplaza": "- premi e/o indennizzi passivi ex art. 103, comma 3, NOIF",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 939,
+   "etiqueta": "(sale) - oneri diversi da trasferimento diritti calciatori",
+   "lado": "gasto",
+   "reemplaza": "- oneri diversi da trasferimento diritti calciatori",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 947,
+   "etiqueta": "(sale) d.5) altri proventi diversi",
+   "lado": "financiero",
+   "reemplaza": "d.5) altri proventi diversi",
+   "motivo": "renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "031ecab",
   "023b2d3",
-  "28bfe8d",
-  "fc90a1f",
+  "d29023b",
+  "e1cc857",
   "6e2fdd8"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"Totale valore della produzione\" 76.310004 cierra; además se suman 17 línea(s) fuera de ese total (160.954895)"
+   "detalle": "\"Totale valore della produzione\" 76.310004 cierra; además se suman 14 línea(s) fuera de ese total (157.388932)"
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Totale costi della produzione\" 100.403219 cierra; además se suman 40 línea(s) fuera de ese total (110.566592)"
+   "detalle": "\"Totale costi della produzione\" 100.403219 cierra; además se suman 38 línea(s) fuera de ese total (109.365954)"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": false,
-   "detalle": "ingresos 237.264899 - gastos 210.969811 ± financiero -3.441981 ± impuesto 3.817955 no da el impreso -24.414986"
+   "detalle": "ingresos 233.698936 - gastos 209.769173 ± financiero -4.139726 ± impuesto 3.817955 no da el impreso -24.414986"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"i) ricavi e proventi diversi\" no suma el renglón (6.362 contra 5.785259, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) oneri da organizzazione competizioni\" no suma el renglón (0.543 contra 0.545115, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"e) altri oneri diversi di gestione\" no suma el renglón (2.655 contra 2.652781, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: sale la fila \"- altri contributi in conto esercizio\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
+  "ajuste manual: sale la fila \"- premi e/o indennizzi attivi ex art. 103, comma 3, NOIF\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
+  "ajuste manual: sale la fila \"- proventi diversi da trasferimento diritti calciatori\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
+  "ajuste manual: sale la fila \"- premi e/o indennizzi passivi ex art. 103, comma 3, NOIF\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
+  "ajuste manual: sale la fila \"- oneri diversi da trasferimento diritti calciatori\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
+  "ajuste manual: sale la fila \"d.5) altri proventi diversi\" (2026-10-07, renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente))",
   "duda de localizar que no afecta la carga: b31 está en pág. 29 tras el conto economico pero parece el inicio del flujo de efectivo (continúa en b32).",
   "duda de extraer que no afecta la carga: L888 solo muestra 1.779.291 en 2020; el total 2021 (76.310.004 = 1.015.668 + 75.294.336) confirma que 2021 es cero.",
   "duda de extraer que no afecta la carga: L2322 total 55.492 coincide con Tesserati de b61 L2309; se marcó detalla_a 'Totale' de b61, que es ambiguo.",
-  "duda de extraer que no afecta la carga: L2138 vs L894: diferencia de 112 mil en el año anterior, posible reclasificación; 2021 coincide."
+  "duda de extraer que no afecta la carga: L2138 vs L894: diferencia de 112 mil en el año anterior, posible reclasificación; 2021 coincide.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -86,9 +172,9 @@
   }
  ],
  "totales": {
-  "ingresos": 237.264899,
-  "gastos": 210.969811,
-  "financiero": -3.441981,
+  "ingresos": 233.698936,
+  "gastos": 209.769173,
+  "financiero": -4.139726,
   "impuesto": 3.817955,
   "resultadoImpreso": -24.414986,
   "resultadoParaCargar": -24.414986,
@@ -134,14 +220,6 @@
    "M": 0,
    "pagina": 27,
    "linea": 891,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "- altri contributi in conto esercizio",
-   "lado": "ingreso",
-   "M": 0.577893,
-   "pagina": 27,
-   "linea": 892,
    "origen": "estado"
   },
   {
@@ -198,22 +276,6 @@
    "M": 8.773329,
    "pagina": 27,
    "linea": 899,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "- premi e/o indennizzi attivi ex art. 103, comma 3, NOIF",
-   "lado": "ingreso",
-   "M": 0.02855,
-   "pagina": 27,
-   "linea": 900,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "- proventi diversi da trasferimento diritti calciatori",
-   "lado": "ingreso",
-   "M": 2.95952,
-   "pagina": 27,
-   "linea": 901,
    "origen": "estado"
   },
   {
@@ -529,22 +591,6 @@
    "origen": "nota que desglosa \"d) altri oneri da trasferimento diritti calciatori\""
   },
   {
-   "etiqueta": "- premi e/o indennizzi passivi ex art. 103, comma 3, NOIF",
-   "lado": "gasto",
-   "M": 0.743928,
-   "pagina": 28,
-   "linea": 938,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "- oneri diversi da trasferimento diritti calciatori",
-   "lado": "gasto",
-   "M": 0.45671,
-   "pagina": 28,
-   "linea": 939,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "e) altri oneri diversi di gestione",
    "lado": "gasto",
    "M": 2.652781,
@@ -578,11 +624,6 @@
    "etiqueta": "d) proventi diversi dai precedenti",
    "M": 0.697745,
    "linea": 946
-  },
-  {
-   "etiqueta": "d.5) altri proventi diversi",
-   "M": 0.697745,
-   "linea": 947
   },
   {
    "etiqueta": "e) altri interessi e oneri finanziari",

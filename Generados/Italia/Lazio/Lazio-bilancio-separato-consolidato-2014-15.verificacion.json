@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.md",
- "generado": "2026-10-07T00:02:00.388Z",
+ "generado": "2026-10-07T01:55:06.172Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "lazio-it",
  "year": 2015,
  "escala": {
   "valor": "unidades",
@@ -11,15 +11,55 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf",
+   "campo": "fila",
+   "valor": "(3.432.429)",
+   "linea": 3461,
+   "etiqueta": "imposte correnti",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "el renglón salió con las columnas corridas y no se extrajo (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf",
+   "campo": "fila",
+   "valor": "172.710",
+   "linea": 3464,
+   "etiqueta": "imposte differite (b)",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "columnas corridas: 933.312 es el total b)+c); b)=172.710, c)=760.602 (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf",
+   "campo": "fila",
+   "valor": "760.602",
+   "linea": 3465,
+   "etiqueta": "imposte anticipate (c)",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "1541cd3",
   "7ab9efe",
   "adbb7d1",
-  "3a700c6",
-  "3c3dd49",
-  "80d26b3",
-  "44c9921"
+  "797f8d0",
+  "a5a7f4a",
+  "fca1c89",
+  "34514d3"
  ],
  "chequeos": [
   {
@@ -35,18 +75,22 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": false,
-   "detalle": "ingresos 110.927488 - gastos 100.79218 ± financiero -2.101739 ± impuesto 1.106022 no da el impreso 5.812193"
+   "detalle": "ingresos 110.927488 - gastos 100.79218 ± financiero -2.101739 ± impuesto -1.393095 no da el impreso 5.812193"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"imposte correnti\" (impuesto) (3.432.429) (2026-10-07, el renglón salió con las columnas corridas y no se extrajo (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "ajuste manual: fila \"imposte differite (b)\" (impuesto) 172.710 (2026-10-07, columnas corridas: 933.312 es el total b)+c); b)=172.710, c)=760.602 (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "ajuste manual: fila \"imposte anticipate (c)\" (impuesto) 760.602 (2026-10-07, ver el anterior (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
   "duda de localizar que no afecta la carga: El cuadro de segmentos de pág. 116 parece repetir importes ya abiertos en notas 31.x consolidadas.",
   "duda de extraer que no afecta la carga: Son aperturas 'di cui' ya incluidas en otras partidas; no se cargaron.",
-  "duda de extraer que no afecta la carga: L5052-L5056 no indican escala; 1.445 coincide con 1.444.895 euro."
+  "duda de extraer que no afecta la carga: L5052-L5056 no indican escala; 1.445 coincide con 1.444.895 euro.",
+  "4 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -55,7 +99,7 @@
   "ingresos": 110.927488,
   "gastos": 100.79218,
   "financiero": -2.101739,
-  "impuesto": 1.106022,
+  "impuesto": -1.393095,
   "resultadoImpreso": 5.812193,
   "resultadoParaCargar": 5.812193,
   "resultadoFinal": null,
@@ -537,6 +581,21 @@
    "etiqueta": "c) imposte anticipate",
    "M": 0.17271,
    "linea": 3464
+  },
+  {
+   "etiqueta": "imposte correnti",
+   "M": -3.432429,
+   "linea": 3461
+  },
+  {
+   "etiqueta": "imposte differite (b)",
+   "M": 0.17271,
+   "linea": 3464
+  },
+  {
+   "etiqueta": "imposte anticipate (c)",
+   "M": 0.760602,
+   "linea": 3465
   }
  ]
 }

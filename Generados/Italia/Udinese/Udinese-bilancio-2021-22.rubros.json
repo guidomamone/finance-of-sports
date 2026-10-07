@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
-  "club": "udinese",
+  "club": "udinese-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T00:02:00.934Z",
+  "generatedAt": "2026-10-07T01:51:57.951Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         2.763664
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Consumo de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -124,7 +124,7 @@
       "values": [
         0.469379
       ],
-      "glosa": "Seguros y previsión social"
+      "glosa": "Seguros y cargas sociales"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -164,7 +164,7 @@
       "values": [
         0.152938
       ],
-      "glosa": "Alquiler de vehículos para uso de la empresa"
+      "glosa": "Arrendamiento de vehículos para uso de la empresa"
     },
     {
       "label": "spese per affitti e utenze locali ad uso foresteria",
@@ -174,7 +174,7 @@
       "values": [
         0.378075
       ],
-      "glosa": "Gastos de alquiler y suministros de residencias deportivas"
+      "glosa": "Gastos de alquiler y suministros de residencia"
     },
     {
       "label": "noleggio attrezzature",
@@ -184,7 +184,7 @@
       "values": [
         0.281153
       ],
-      "glosa": "Alquiler de equipamiento"
+      "glosa": "Arrendamiento de equipamiento"
     },
     {
       "label": "a) salari e stipendi",
@@ -214,7 +214,7 @@
       "values": [
         0.122458
       ],
-      "glosa": "c) Indemnización por fin de contrato"
+      "glosa": "c) Indemnizaciones por fin de contrato laboral"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -244,7 +244,7 @@
       "values": [
         1.522949
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
@@ -254,7 +254,7 @@
       "values": [
         2.31176
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Correcciones valorativas de créditos del activo corriente y disponibilidades líquidas"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -284,7 +284,7 @@
       "values": [
         1.186421
       ],
-      "glosa": "Gastos de organización de competiciones"
+      "glosa": "Gastos por organización de competiciones"
     },
     {
       "label": "Minusvalenze da cessioni diritti calciatori",
@@ -294,7 +294,7 @@
       "values": [
         8.019148
       ],
-      "glosa": "Pérdidas por traspaso de derechos de futbolistas"
+      "glosa": "Pérdidas por traspasos de derechos de futbolistas"
     },
     {
       "label": "Altri oneri da trasferimento diritti calciatori",
@@ -304,7 +304,7 @@
       "values": [
         6.554013
       ],
-      "glosa": "Otros gastos por transferencia de derechos de futbolistas"
+      "glosa": "Otros gastos por transferencias de derechos de futbolistas"
     },
     {
       "label": "Altri oneri diversi di gestione",
@@ -314,7 +314,7 @@
       "values": [
         1.756328
       ],
-      "glosa": "Otros gastos corrientes de gestión"
+      "glosa": "Otros gastos de gestión"
     }
   ]
 }

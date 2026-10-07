@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Napoli/Napoli-bilancio-2025.md",
   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf",
-  "club": "napoli",
+  "club": "napoli-it",
   "year": 2025,
-  "generatedAt": "2026-10-07T00:02:00.624Z",
+  "generatedAt": "2026-10-07T01:51:58.206Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         0.066179
       ],
-      "glosa": "b) Porcentaje sobre taquillas de partidos de equipos visitantes"
+      "glosa": "b) Porcentaje sobre recaudación de taquilla de equipos locales"
     },
     {
       "label": "- Gare Campionato",
@@ -224,7 +224,7 @@
       "values": [
         3.938244
       ],
-      "glosa": "Ingresos de televisión de competiciones UEFA"
+      "glosa": "Ingresos de televisión por competiciones UEFA"
     },
     {
       "label": "Proventi televisivi gare amichevoli",
@@ -234,7 +234,7 @@
       "values": [
         0.194388
       ],
-      "glosa": "Ingresos de televisión de partidos amistosos"
+      "glosa": "Ingresos de televisión por partidos amistosos"
     },
     {
       "label": "Altri Proventi TV",
@@ -254,7 +254,7 @@
       "values": [
         0.9
       ],
-      "glosa": "Ingresos de radiodifusión"
+      "glosa": "Ingresos radiofónicos"
     },
     {
       "label": "Proventi sfruttamento diritti d'immagine",
@@ -284,7 +284,7 @@
       "values": [
         102.550445
       ],
-      "glosa": "h) Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "h) Plusvalías por enajenación de derechos plurianuales de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -294,7 +294,7 @@
       "values": [
         0.57142
       ],
-      "glosa": "i) Otros ingresos por gestión de futbolistas"
+      "glosa": "i) Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "- proventi da enti federali (L.N.P.A.)",
@@ -304,7 +304,7 @@
       "values": [
         0.367821
       ],
-      "glosa": "- Ingresos de organismos federativos (L.N.P.A.)"
+      "glosa": "- Ingresos de entidades federativas (L.N.P.A.)"
     },
     {
       "label": "- proventi produzioni televisive",
@@ -334,7 +334,7 @@
       "values": [
         0.176999
       ],
-      "glosa": "Aprovisionamiento de material deportivo"
+      "glosa": "Compra de material deportivo"
     },
     {
       "label": "Acquisto materiale indumenti",
@@ -344,7 +344,7 @@
       "values": [
         0.822073
       ],
-      "glosa": "Aprovisionamiento de ropa e indumentaria"
+      "glosa": "Compra de prendas deportivas"
     },
     {
       "label": "Acquisto materiale di consumo",
@@ -354,7 +354,7 @@
       "values": [
         0.428446
       ],
-      "glosa": "Aprovisionamiento de material consumible"
+      "glosa": "Compra de material de consumo"
     },
     {
       "label": "Acquisto materiale di cancelleria e stampati",
@@ -364,7 +364,7 @@
       "values": [
         0.02113
       ],
-      "glosa": "Aprovisionamiento de material de oficina e impresos"
+      "glosa": "Compra de material de oficina e impresos"
     },
     {
       "label": "Acquisto medicinali",
@@ -374,7 +374,7 @@
       "values": [
         0.103624
       ],
-      "glosa": "Aprovisionamiento de medicamentos"
+      "glosa": "Compra de medicamentos"
     },
     {
       "label": "Beni destinati alla rivendita",
@@ -384,7 +384,7 @@
       "values": [
         4.900237
       ],
-      "glosa": "Mercaderías destinadas a la reventa"
+      "glosa": "Bienes destinados a la reventa"
     },
     {
       "label": "Costi per tesserati ed attività sportiva",
@@ -434,7 +434,7 @@
       "values": [
         2.847942
       ],
-      "glosa": "Servicio de taquilla y control de accesos"
+      "glosa": "Servicio de venta de entradas y control de accesos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -454,7 +454,7 @@
       "values": [
         2.767828
       ],
-      "glosa": "Retribuciones a administradores"
+      "glosa": "Retribuciones de administradores"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -464,7 +464,7 @@
       "values": [
         5.703665
       ],
-      "glosa": "Gastos de administración, publicidad y generales"
+      "glosa": "Gastos administrativos, publicitarios y generales"
     },
     {
       "label": "Altri",
@@ -504,7 +504,7 @@
       "values": [
         2.31096
       ],
-      "glosa": "Otros costes por uso de bienes ajenos"
+      "glosa": "Otros gastos por arrendamiento y cánones"
     },
     {
       "label": "Compensi contrattuali calciatori",
@@ -554,7 +554,7 @@
       "values": [
         3.975802
       ],
-      "glosa": "Retribuciones contractuales de preparadores, técnicos y otro personal federado"
+      "glosa": "Retribuciones contractuales de preparadores, técnicos y otros federados"
     },
     {
       "label": "Altri salari e stipendi",
@@ -584,7 +584,7 @@
       "values": [
         0.439957
       ],
-      "glosa": "Indemnización por fin de contrato / cese laboral"
+      "glosa": "Indemnización por fin de contrato (TFR)"
     },
     {
       "label": "Indennità fine carriera",
@@ -604,7 +604,7 @@
       "values": [
         1.452043
       ],
-      "glosa": "e) Otros gastos de personal"
+      "glosa": "e) Otros gastos"
     },
     {
       "label": "Concessioni, marchi, licenze e simili",
@@ -624,7 +624,7 @@
       "values": [
         111.470646
       ],
-      "glosa": "Amortización de derechos federativos de futbolistas"
+      "glosa": "Amortización de derechos plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "Altre immobilizzazioni immateriali",
@@ -644,7 +644,7 @@
       "values": [
         0.026083
       ],
-      "glosa": "Instalaciones técnicas"
+      "glosa": "Instalaciones"
     },
     {
       "label": "Macchinari",
@@ -684,7 +684,7 @@
       "values": [
         0.020981
       ],
-      "glosa": "Equipos informáticos y máquinas de oficina"
+      "glosa": "Equipos de oficina"
     },
     {
       "label": "Mobili e arredi",
@@ -714,15 +714,15 @@
       "values": [
         1.478376
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente"
     },
     {
       "label": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.091495
+        -0.091495
       ],
       "glosa": "11) Variación de existencias de materias primas, auxiliares, de consumo y mercaderías"
     },
@@ -744,7 +744,7 @@
       "values": [
         0.419137
       ],
-      "glosa": "b) Cuotas de inscripción en competiciones"
+      "glosa": "b) Tasas de inscripción en competiciones"
     },
     {
       "label": "c) oneri specifici v/squadre ospitate",
@@ -754,7 +754,7 @@
       "values": [
         0.389586
       ],
-      "glosa": "c) Gastos específicos hacia equipos visitantes"
+      "glosa": "c) Gastos específicos frente a equipos visitantes"
     },
     {
       "label": "d) costi per acquisizione temporanea calciatori",
@@ -764,7 +764,7 @@
       "values": [
         2.0016
       ],
-      "glosa": "d) Gastos por cesión temporal de futbolistas"
+      "glosa": "d) Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "e) minus. da cessione diritti plur. alle prest. calciatori",
@@ -774,7 +774,7 @@
       "values": [
         0.065485
       ],
-      "glosa": "e) Pérdidas por traspaso de derechos federativos de futbolistas"
+      "glosa": "e) Pérdidas por enajenación de derechos plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "f) altri oneri di gestione calciatori",
@@ -804,7 +804,7 @@
       "values": [
         0.603975
       ],
-      "glosa": "- Gastos de representación y atenciones protocolarias"
+      "glosa": "- Gastos de representación y atenciones"
     },
     {
       "label": "- diversi",
@@ -815,16 +815,6 @@
         1.312687
       ],
       "glosa": "- Diversos"
-    },
-    {
-      "label": "TOTALE COSTI DELLA PRODUZIONE B)",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        315.547017
-      ],
-      "glosa": "TOTAL GASTOS DE EXPLOTACIÓN B)"
     }
   ]
 }

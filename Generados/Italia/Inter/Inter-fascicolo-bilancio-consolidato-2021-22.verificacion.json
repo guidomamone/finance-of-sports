@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T00:02:00.092Z",
+ "generado": "2026-10-07T01:55:04.982Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "inter-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,11 +11,23 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
+   "campo": "fila",
+   "valor": "521.197",
+   "linea": 688,
+   "etiqueta": "revaluation of investments (18)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "6f2f84b",
-  "37b49f4",
-  "bc49898",
   "36f9d01"
  ],
  "chequeos": [
@@ -31,22 +43,25 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 439.642181 - gastos 527.912354 ± financiero -48.855039 ± impuesto -3.45366 no da el impreso -140.05618"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Administrative, advertising and general\" (18 filas) no suma la fila: quedó la fila",
   "la nota de \"a) salaries and wages\" no suma el renglón (197.542 contra 217.790584, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"revaluation of investments (18)\" (financiero) 521.197 (2026-10-07, D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
   "duda de localizar que no afecta la carga: Es detalle por jugador, no por categoría.",
   "duda de localizar que no afecta la carga: Son resúmenes en miles del informe de gestión que repiten renglones del estado b6.",
   "duda de localizar que no afecta la carga: Detalla costos capitalizados por naturaleza, no abre un renglón de ingresos útil.",
-  "duda de extraer que no afecta la carga: L2491 suma c) y d) del estado (4.800+45.166=49.966)."
+  "duda de extraer confirmada por las sumas (columna, \"a) salaries and wages\"): ¿Se cargan las filas de b48 (L2347-L2350) tomando como detalle de cada renglón de personal solo la suma de columnas 'Registered' y 'Other', dejándolas por ahora afuera?",
+  "duda de extraer que no afecta la carga: L2491 suma c) y d) del estado (4.800+45.166=49.966).",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -76,12 +91,12 @@
  "totales": {
   "ingresos": 439.642181,
   "gastos": 527.912354,
-  "financiero": -48.855039,
+  "financiero": -48.333842,
   "impuesto": -3.45366,
   "resultadoImpreso": -140.05618,
   "resultadoParaCargar": -140.05618,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -695,6 +710,11 @@
    "etiqueta": "c) losses on exchange",
    "M": -0.035754,
    "linea": 681
+  },
+  {
+   "etiqueta": "revaluation of investments (18)",
+   "M": 0.521197,
+   "linea": 688
   }
  ],
  "impuesto": [

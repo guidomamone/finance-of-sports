@@ -199,3 +199,28 @@ ni en el comentario de ningún archivo de código.
       "lectura 4" con las notas abiertas (`signoNormalDe('gasto')` invierte si la mayoría de los ajustes de gasto son negativos) y NO se usó.
     - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
       mismo. Y la prueba completa idéntica.
+
+157. ITALIA: 7 DOCUMENTOS QUE TODAVÍA NO CIERRAN NI CON AJUSTES (2026-10-07; un subagente encontró las causas, ver abajo). Ya cierran con
+    ajustes (cargables): Milan 2023-24 (rettifiche D sin lado: `fila` 672 y (800) del lado financiero), Inter 2021-22 (D 521.197),
+    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando). Los que faltan:
+    - Bologna 2019-20, 2020-21 y 2021-22: el 17) (`altri`, impreso positivo) y las imposte (impresas como costo en positivo, con el
+      crédito de años anteriores entre paréntesis) entran con el signo al revés; 2019-20 además tiene D "19) svalutazioni" 1.868.716
+      sin lado. NO se puede arreglar con `--reemplaza "altri"`: un renglón de INGRESOS de 79,9 M también se llama "altri" (L833 en
+      2020-21) y el reemplazo por etiqueta lo saca (se probó y se revirtió). Hace falta un `reemplaza` por línea (no existe hoy:
+      `verificar.mjs` ~L479 compara solo la etiqueta). Ajustes que cerrarían (calculados por el subagente, al euro): 2019-20 16) 1.931
+      (L948), 17) (670.894) (L952), D (1.868.716) (L958), imposte (591.876) / 94.384 / (1.424) (L976-978) → −39,518066; 2020-21 16)
+      217.766 (L871), 17) (1.297.992) (L875), imposte (905.396) / 94.050 / (1.424) (L886-888) → −30,846228; 2021-22 16) 4.561 (L231),
+      17) (1.384.360) (L235), imposte (779.656) / 50.676 / (1.424) (L241-243) → −46,694141.
+    - Inter 2024-25: D 780.928 (L976) ya cargado como ajuste; falta que el "12) Accantonamenti per rischi" (19.420) entre restando
+      (es un rilascio). Solo la lectura 5 cerraría; hoy gana otra.
+    - Lazio 2014-15 (formato riclassificato): ajustes de impuestos ya cargados (imposte correnti (3.432.429) que no se había extraído;
+      differite/anticipate corridas de columna). Falta que "TOTALE COSTI OPERATIVI" (85,997) no se compare contra líneas que incluyen
+      ammortamenti (14,519) y accantonamenti; "Accantonamenti per rischi" +137.780 es un crédito. Solo la lectura 5 cerraría.
+    - Sampdoria 2021: renglones "di cui" contados además de su padre (6 ajustes `--valor 0` ya cargados) y la lectura 0 acepta los
+      totales como una fila más; con las hojas la cuenta da −24,414987 contra −24,414986, pero no gana la lectura 5.
+    - AS Roma 2025: el año estaba mal (se leyó 2024-06-30; ajuste `cierre` 2025-06-30 ya cargado) y el conto economico consolidato de la
+      pág. 22 (.md L805-1115) quedó transcripto como dos listas sueltas, no como tabla: hay que re-transcribir esa página (o escribirla
+      a mano) y después localizar/extraer/verificar. Datos: A 270.241.005, B 305.201.964, C (13.937.648), impuestos (4.985.606),
+      resultado (53.884.213) (L725 y L1122, en tabla bien formada).
+    Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
+
