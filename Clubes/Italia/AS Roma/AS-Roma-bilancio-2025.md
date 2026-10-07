@@ -806,309 +806,62 @@ BILANCIO CONSOLIDATO
 
 # BILANCIO 2024-25
 
-# CONTO ECONOMICO
+| CONTO ECONOMICO | 01/07/2024 - 30/06/2025 | 01/07/2023 - 30/06/2024 |
+|---|---|---|
+| **A . VALORE DELLA PRODUZIONE** | | |
+| **1) ricavi delle vendite e delle prestazioni** | | |
+| a) ricavi da gare | 28.031.802 | 39.174.069 |
+| b) abbonamenti | 16.434.645 | 16.290.643 |
+| **1) Totale Ricavi delle vendite e delle prestazioni** | **44.466.448** | **55.464.711** |
+| **5) altri ricavi e proventi** | | |
+| a) proventi da sponsorizzazioni | 21.137.526 | 18.399.384 |
+| b) proventi pubblicitari | 24.912.436 | 24.743.181 |
+| c) proventi commerciali e royalties | 25.621.428 | 26.864.751 |
+| d) proventi da cessione diritti audiovisivi | 90.373.519 | 104.146.581 |
+| e) ricavi da cessione temporanea prestazioni calciatori | 5.663.000 | 1.565.535 |
+| f) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 29.888.552 | 25.046.418 |
+| g) altri proventi da trasferimento diritti calciatori | 13.121.622 | 21.038.216 |
+| h) ricavi e proventi diversi | 15.056.475 | 22.613.434 |
+| **5) Totale altri ricavi e proventi** | **225.774.557** | **244.417.500** |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | **270.241.005** | **299.882.211** |
+| **B . COSTI DELLA PRODUZIONE** | | |
+| **6) per materie prime, sussidiarie, di consumo e di merci** | **12.913.508** | **16.902.996** |
+| **7) per servizi** | **54.022.089** | **58.241.122** |
+| **8) per godimento di beni di terzi** | **13.795.869** | **14.451.029** |
+| 9) per il personale | | |
+| a) salari e stipendi | 141.037.828 | 189.464.635 |
+| b) oneri sociali | 9.775.670 | 10.603.306 |
+| c) trattamento di fine rapporto | 914.402 | 890.082 |
+| e) altri costi | 1.006.119 | 1.168.195 |
+| **9) Totale costi per il personale** | **152.734.018** | **202.126.218** |
+| **10) ammortamenti e svalutazioni** | | |
+| a) ammortamenti immobilizzazioni immateriali | 46.505.221 | 39.059.302 |
+| b) ammortamenti immobilizzazioni materiali | 4.865.562 | 4.546.359 |
+| d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide | 829.513 | 287.125 |
+| **10) Totale costi per ammortamenti e svalutazioni** | **52.200.296** | **43.892.786** |
+| **11) variazioni delle rimanenze di prodotti finiti** | **(1.548.221)** | **(1.834.252)** |
+| **12) accantonamenti per rischi** | **7.008.318** | **4.956.295** |
+| **14) oneri diversi di gestione** | | |
+| b) costi per acquisizione temporanea prestazioni calciatori | 930.000 | 10.082.075 |
+| c) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 3.259.849 | 1.135.911 |
+| d) altri oneri da trasferimento diritti calciatori | 6.233.958 | 7.880.849 |
+| e) altri oneri diversi di gestione | 3.652.278 | 6.572.815 |
+| **14) Totale oneri diversi di gestione** | **14.076.085** | **25.671.650** |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | **305.201.964** | **364.407.844** |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)** | **(34.960.959)** | **(64.525.633)** |
+| **C PROVENTI E ONERI FINANZIARI** | | |
+| **16) altri proventi finanziari** | **4.359.403** | **6.045.982** |
+| **17) interessi ed altri oneri finanziari** | **(17.954.026)** | **(17.104.753)** |
+| e) altri interessi e oneri finanziari | (17.954.026) | (17.104.753) |
+| **17 bis) utile e perdite su cambi** | **(343.025)** | **(1.906)** |
+| **TOTALE PROVENTI ED ONERI FINANZIARI (C ) (15+16-17 ± 17 bis )** | **(13.937.648)** | **(11.060.677)** |
+| **RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)** | **(48.898.607)** | **(75.586.309)** |
+| **20) Imposte sul reddito dell'esercizio** | **(4.985.606)** | **(5.778.058)** |
+| a) imposte correnti | (11.367.144) | (8.648.290) |
+| c) imposte differite | (19.536) | 86.612 |
+| e) proventi (oneri) da adesione al regime di consolidato fiscale | 6.401.074 | 2.783.620 |
+| **21) UTILE (PERDITA) DELL'ESERCIZIO** | **(53.884.213)** | **(81.364.367)** |
 
-01/07/2024 -
-
-30/06/2025
-
-01/07/2023 -
-
-30/06/2024
-
-# A. VALORE DELLA PRODUZIONE
-
-1) ricavi delle vendite e delle prestazioni
-
-a) ricavi da gare
-
-b) abbonamenti
-
-28.031.802
-
-16.434.645
-
-39.174.069
-
-16.290.643
-
-1) Totale Ricavi delle vendite e delle prestazioni
-
-5) altri ricavi e proventi
-
-a) proventi da sponsorizzazioni
-
-b) proventi pubblicitari
-
-c) proventi commerciali e royalties
-
-d) proventi da cessione diritti audiovisivi
-
-e) ricavi da cessione temporanea prestazioni calciatori
-
-f) plusvalenze da cessione diritti pluriennali prestazioni calciatori
-
-g) altri proventi da trasferimento diritti calciatori
-
-h) ricavi e proventi diversi
-
-5) Totale altri ricavi e proventi
-
-21.137.526
-
-24.912.436
-
-25.621.428
-
-90.373.519
-
-5.663.000
-
-29.888.552
-
-13.121.622
-
-15.056.475
-
-55.464.711
-
-18.399.384
-
-24.743.181
-
-26.864.751
-
-104.146.581
-
-1.565.535
-
-25.046.418
-
-21.038.216
-
-22.613.434
-
-225.774.557
-
-244.417.500
-
-TOTALE VALORE DELLA PRODUZIONE (A)
-
-270.241.005
-
-299.882.211
-
-# B. COSTI DELLA PRODUZIONE
-
-6) per materie prime, sussidiarie, di consumo e di merci
-
-7) per servizi
-
-8) per godimento di beni di terzi
-
-9) per il personale
-
-a) salari e stipendi
-
-b) oneri sociali
-
-c) trattamento di fine rapporto
-
-e) altri costi
-
-9) Totale costi per il personale
-
-10) ammortamenti e svalutazioni
-
-a) ammortamenti immobilizzazioni immateriali
-
-b) ammortamenti immobilizzazioni materiali
-
-d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide
-
-10) Totale costi per ammortamenti e svalutazioni
-
-11) variazioni delle rimanenze di prodotti finiti
-
-12) accantonamenti per rischi
-
-14) oneri diversi di gestione
-
-b) costi per acquisizione temporanea prestazioni calciatori
-
-c) minusvalenze da cessione diritti pluriennali prestazioni calciatori
-
-d) altri oneri da trasferimento diritti calciatori
-
-e) altri oneri diversi di gestione
-
-14) Totale oneri diversi di gestione
-
-TOTALE COSTI DELLA PRODUZIONE (B)
-
-12.913.508
-
-54.022.089
-
-13.795.869
-
-141.037.828
-
-9.775.670
-
-914.402
-
-1.006.119
-
-152.734.018
-
-152.734.018
-
-46.505.221
-
-4.865.562
-
-829.513
-
-52.200.296
-
-(1.548.221)
-
-7.008.318
-
-930.000
-
-3.259.849
-
-6.233.958
-
-3.652.278
-
-14.076.085
-
-14.076.085
-
-305.201.964
-
-299.882.211
-
-16.902.996
-
-58.241.122
-
-14.451.029
-
-189.464.635
-
-10.603.306
-
-890.082
-
-1.168.195
-
-202.126.218
-
-39.059.302
-
-4.546.359
-
-287.125
-
-43.892.786
-
-(1.834.252)
-
-4.956.295
-
-10.082.075
-
-1.135.911
-
-7.880.849
-
-6.572.815
-
-25.671.650
-
-364.407.844
-
-(64.525.633)
-
-TOTALE COSTI DELLA PRODUZIONE (B)
-
-DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)
-
-(34.960.959)
-
-(64.525.633)
-
-# C PROVENTI E ONERI FINANZIARI
-
-16) altri proventi finanziari
-
-17) interessi ed altri oneri finanziari
-
-e) altri interessi e oneri finanziari
-
-17 bis) utile e perdite su cambi
-
-TOTALE PROVENTI ED ONERI FINANZIARI (C) (15+16-17 ± 17 bis)
-
-RISULTATO PRIMA DELLE IMPOSTE (A - B ± C ± D)
-
-20) Imposte sul reddito dell'esercizio
-
-a) imposte correnti
-
-c) imposte differite
-
-e) proventi (oneri) da adesione al regime di consolidato fiscale
-
-21) UTILE (PERDITA) DELL'ESERCIZIO
-
-4.359.403
-
-(17.954.026)
-
-(17.954.026)
-
-(343.025)
-
-(13.937.648)
-
-(48.898.607)
-
-(4.985.606)
-
-(11.367.144)
-
-(19.536)
-
-6.401.074
-
-(53.884.213)
-
-6.045.982
-
-(17.104.753)
-
-(17.104.753)
-
-(1.906)
-
-(11.060.677)
-
-(75.586.309)
-
-(5.778.058)
-
-(8.648.290)
-
-86.612
-
-2.783.620
-
-(81.364.367)
 
 22
 
