@@ -181,6 +181,20 @@ ni en el comentario de ningún archivo de código.
     - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
       mismo. Y la prueba completa idéntica.
 
+    INVESTIGADO (2026-10-07, subagente, medido en una copia sobre las 122 verificaciones con cada variante): el diagnóstico de arriba es
+    parcial. Los ajustes de Napoli 2024/2025, Cremonese 2025 y Parma 2023 NO tocan la variación (son del financiero, to-do 155, y en Parma
+    "altri" L557): con ellos cierran en la lectura 4 o 5 con los gastos bien. El doble conteo solo existe en las lecturas 0-3 (valor absoluto),
+    y se veía porque cuando nada cierra se muestra la lectura 0. Solo Roma 2018 tiene ajustes de variación/total. Código (verificar.mjs):
+    L312 abs de los renglones; L321 esSumaDe compara la suma con signo solo desde la lectura 3/4; L593-596 ajuste() da un falso ok (la "línea
+    fuera del total" es el propio total); cerrarNota firma las hojas con el signo de la suma (L147: Napoli 2024, nota b72); el rescate de la
+    Versión 409 (L338-356) mira todos los renglones de arriba (Parma: "altri" contado dos veces). Variantes medidas: F1 (esSumaDe firmado) no
+    cierra nada y mueve Lazio 2014-15; F3 (sacar el total de las líneas) cambia 0. ESCALONES RECOMENDADOS (sin tocar las lecturas 0-3):
+    A) cerrarNota conserva el signo impreso de las hojas si el renglón es de signo anómalo (compuerta: total de gastos en la lectura 4; solo
+    cambia Napoli 2024); B) fin5 toma TODOS los ajustes de financiero, no solo los que reemplazan (compuerta: resultado exacto de la lectura
+    5; Roma 2018 cierra sin ajustes de variación/total, e Inter 2024-25 del to-do 157 se arregla igual); C) un subtotal igual al renglón
+    INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos; solo cambia Parma 2023, anular su ajuste "altri" L557). F3 como
+    higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian solo Napoli 2024 (lectura 5 → 4), Roma 2018 y Parma 2023.
+
 157. ITALIA: 4 DOCUMENTOS QUE NO CIERRAN (investigado 2026-10-07 por un subagente, probado en una copia; las causas anotadas antes eran
     otras). Ya cierran con ajustes y están cargados: Milan 2023-24, Inter 2021-22, Lazio 2021-22, Bologna 2019-2022. Los 4 que faltan, y
     3 se cierran con ajustes (gratis; probados en la copia: cierran por la lectura 5):
