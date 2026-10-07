@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md",
- "generado": "2026-10-03T23:14:05.092Z",
+ "generado": "2026-10-07T22:03:17.128Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2003,
@@ -12,19 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf",
-   "campo": "fila",
-   "valor": "-670,013",
-   "linea": 1918,
-   "etiqueta": "d) from others",
-   "lado": "financiero",
-   "reemplaza": "d) from others",
-   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
   {
    "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf",
    "campo": "fila",
@@ -219,6 +206,16 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf",
+   "campo": "caja",
+   "valor": "67,198,129",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L1777 (depósitos 67,184,910 + caja 13,219)",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
   }
  ],
  "cola": [],
@@ -256,7 +253,6 @@
  ],
  "notas": [
   "la nota de \"a) Salaries and wages\" no suma el renglón (123.47 contra 128.222349, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"d) from others\" (financiero) -670,013, en lugar de \"d) from others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"c) of securities entered under current assets other than shareholdings\" (gasto) 196,702, en lugar de \"c) of securities entered under current assets other than shareholdings\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"a) capital gains on disposals\" (ingreso) 48,013,871, en lugar de \"a) capital gains on disposals\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"b) use of reserve art. 25 of the Company By-Laws\" (ingreso) 613,289, en lugar de \"b) use of reserve art. 25 of the Company By-Laws\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 19) write-downs / 20) ingresos / 21) gastos extraordinarios))",
@@ -272,6 +268,7 @@
   "ajuste manual: fila \"Advertising\" (ingreso) 536000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2813))",
   "ajuste manual: fila \"Players' and coach image rights\" (ingreso) 2396000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2814))",
   "ajuste manual: fila \"Sundry income\" (ingreso) 478000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2815))",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Juventus-annual-financial-report-2006-07.pdf",
   "duda de localizar que no afecta la carga: b16 separa operaciones y gestión de jugadores, pero sus renglones ya están abiertos en el estado y sus notas.",

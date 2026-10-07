@@ -587,9 +587,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && !(x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
     const m = mult(estado[0]?.bloque); fin5Todos.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
   }
-  const evaluar = (nivel, conAjustesFin = false) => {
+  const evaluar = (nivel, conAjustesFin = false, finForzado = null) => {
     const ch = []; let ing = [...(nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
-    const finL = nivel >= 5 ? (conAjustesFin ? fin5Todos : fin5) : fin;
+    const finL = finForzado || (nivel >= 5 ? (conAjustesFin ? fin5Todos : fin5) : fin);
     // LECTURA 6 (Versión 434, cambio F, aprobado por Guido el 2026-10-03): la 5 (solo hojas, sin totales, resultado impreso EXACTO) + los
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
@@ -636,7 +636,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // resultado: ingresos - gastos + financiero + impuesto, probando los signos de financiero e impuesto (cada documento los imprime a su manera)
     let objetivo = resFinal; let conImp = true; let nombreRes = 'resultado del ejercicio';
     if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
-    let okRes = null; let lect = null;
+    let okRes = null; let lect = null; let exactoRes = false;
     if (objetivo != null && isFinite(objetivo)) {
       // (to-do 155, escalón 1, aprobado por Guido el 2026-10-07) ESCALERA DE LA COMPUERTA DEL RESULTADO: primero las 4 combinaciones de signo
       // pidiendo el resultado EXACTO (media unidad impresa por fila, como la lectura 5); solo si ninguna es exacta, la tolerancia de siempre
@@ -650,7 +650,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         for (const [sf, si, nm] of COMBOS) {
           if (!conImp && si === -1) continue;
           const pat = patDe(sf, si);
-          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
+          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; exactoRes = exacto; break; }
         }
         if (okRes) break;
       }
@@ -659,17 +659,57 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     } else ch.push({ nombre: 'resultado del ejercicio', ok: null, detalle: 'extraer.mjs no encontró el resultado impreso' });
     const okTot = ch.filter((c) => c.nombre.startsWith('total')).map((c) => c.ok);
     const cierra = okRes === true ? !okTot.includes(false) : okRes === null && okTot.includes(true) && !okTot.includes(false);
-    return { ing, gas, ch, okRes, lect, cierra, nivel, objetivo };
+    return { ing, gas, ch, okRes, lect, cierra, nivel, objetivo, exacto: exactoRes };
   };
   let E = null; let E0 = null;
   let algunaCierraRes = false; let escalonAjFin = false;
   for (const n of [0, 1, 2, 3, 4, 5, 6]) { const e = evaluar(n); if (!E0) E0 = e; if (e.okRes) algunaCierraRes = true; if (e.cierra) { E = e; break; } }
   if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
+  // ESCALÓN "17) resta" (to-do 155, escalón 2, aprobado por Guido el 2026-10-07). El formato del Codice Civile imprime el renglón 17)
+  // "interessi e altri oneri finanziari" en positivo y lo resta por POSICIÓN ("TOTALE (C) (15+16-17)"); el financiero se lee con el signo
+  // impreso y lo suma. Solo corre si el resultado no cerró EXACTO en ninguna lectura. Propone: el 17) y lo que cuelga de él (hasta el 17-bis o
+  // el total de C) como −|valor|; 16) y 17-bis con su signo. Compuerta ÚNICA: la suma da EXACTO el total de C impreso (el último subtotal del
+  // financiero antes de que la extracción salga de la sección). Si pasa, las lecturas 0-6 otra vez con ese financiero, y gana la primera que
+  // cierra el resultado exacto. Caso: Torino 2024 (.md L515-520), 16) 438.730, 17) 3.226.978, TOTALE (C) (2.788.248): 438.730 − 3.226.978 =
+  // −2.788.248; resultado 19.682.867 − 2.788.248 − 6.496.317 = 10.398.302. No corre donde el 17) ya viene entre paréntesis y cierra
+  // (Atalanta, Sassuolo, Monza, Lazio, Roma 2022). No mira la etiqueta del renglón ("oneri"), solo la numeración del formato.
+  let escalon17 = false; let fin17 = null;
+  const finEst = estado.filter((f) => f.lado === 'financiero');
+  // El encabezado del 17) se busca en el .md, no en las filas: la extracción a veces no lo trae (Cremonese 2025: "17) interessi e altri oneri
+  // finanziari" sin importe, L189) o lo trae sin el número (Torino 2018, L568). Se reconoce por la numeración del formato o por su nombre fijo
+  // (art. 2425 del Codice Civile; "17) INTEREST AND OTHER FINANCIAL EXPENSES" en los de Juventus en inglés).
+  const RX17 = /(^|\|)\s*(\*\*)?\s*17\s*\)|interessi\s+e(d)?\s+altri\s+oneri\s+finanziari|interest\s+and\s+other\s+financial\s+(expenses|charges)/i;
+  const RX17BIS = /17\s*[-\s]?\s*bis|utili\s+e\s+(\()?perdite\)?\s+su\s+cambi|exchange\s+(gains|differences)/i;
+  const lineasMd = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
+  const iniC = finEst.length ? Math.min(...finEst.map((f) => f.linea || Infinity)) : null;
+  let cab17 = null;
+  if (iniC != null && isFinite(iniC)) for (let i = iniC - 1; i < Math.min(lineasMd.length, iniC + 80); i++) if (RX17.test(lineasMd[i] || '')) { cab17 = { linea: i + 1, etiqueta: lineasMd[i].trim().slice(0, 60) }; break; }
+  if (cab17 && (!E || !E.exacto)) {
+    // fin de la sección C: el primer encabezado de D (rettifiche), del 18), del E) del formato viejo o el resultado antes de impuestos en el
+    // .md; si no hay, la primera fila de otro lado. El total de C es el último subtotal del financiero antes de ese fin (Torino 2018: la D
+    // vino como financiero, L571-572, y su total 0 no es el de C, L570).
+    const RXFINC = /rettifiche\s+di\s+valor|(^|\|)\s*(\*\*)?\s*18\s*\)|risultato\s+prima\s+delle\s+imposte|adjustments\s+to\s+(the\s+)?(value|financial)|extraordinary|before\s+tax/i;
+    const RXDE = /(^|\|)\s*(\*\*)?\s*[DE]\s*\)/; // D) / E) en mayúscula: "d) oneri diversi" es un renglón del 17)
+    let finC = null; for (let i = cab17.linea; i < Math.min(lineasMd.length, cab17.linea + 80); i++) if (RXFINC.test(lineasMd[i] || '') || RXDE.test(lineasMd[i] || '')) { finC = i + 1; break; }
+    const finSeccion = finC ?? estado.find((f) => f.linea > cab17.linea && f.lado !== 'financiero')?.linea;
+    const totC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => a.linea - b.linea).pop();
+    let bis = null; if (totC) for (let i = cab17.linea; i < totC.linea - 1; i++) if (RX17BIS.test(lineasMd[i] || '')) { bis = i + 1; break; }
+    if (totC) {
+      const hasta = bis || totC.linea;
+      const prop = fin5Todos.map((f) => (f.origen !== 'ajuste manual' && f.linea >= cab17.linea && f.linea < hasta ? { ...f, M: -Math.abs(f.M), origen: 'estado (escalón 17) resta)' } : f));
+      const tolC = Math.max(1e-6, 0.5 * [...prop, totC].reduce((a, f) => a + (f.u || 0), 0));
+      if (Math.abs(conSigno(prop) - totC.M) <= tolC) {
+        fin17 = prop;
+        for (const n of [0, 1, 2, 3, 4, 5, 6]) { const e = evaluar(n, false, fin17); if (e.cierra && e.exacto) { E = e; escalon17 = true; break; } }
+      }
+    }
+  }
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
   if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
-  if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...(escalonAjFin ? fin5Todos : fin5));
+  if (escalon17) { fin.splice(0, fin.length, ...fin17); notas.push(`escalón "17) resta": el financiero con el 17) restando da el total de C impreso; cerró la lectura ${E.nivel}`); }
+  else if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...(escalonAjFin ? fin5Todos : fin5));
   if (escalonAjFin) notas.push('escalón "ajustes del financiero sin reemplaza": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero'); // lectura 5: el financiero también con el signo C/D
   let okRes = E.okRes; let lectura = E.lect; const res = E.objetivo ?? resFinal;
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T20:57:04.836Z",
+ "generado": "2026-10-07T22:03:17.049Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2022,
@@ -11,22 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
-   "campo": "fila",
-   "valor": "(1.384.360)",
-   "linea": 235,
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 235,
-   "motivo": "Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).",
-   "evidencia": ".md L235 (17) altri 1.384.360), L238 Totale C (1.223.922)",
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -57,7 +42,7 @@
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (75.870757): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (1.384.360), en lugar de la fila de L235 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "la nota de \"altri\" cierra solo con sus filas del lado ingreso (8 filas de otro lado dicen abrir un renglón con el mismo nombre)",
   "duda de localizar que no afecta la carga: El conto economico consolidato aparece dos veces: b5 completo en una página y b24+b25+b26 en la nota integrativa.",
   "duda de extraer que no afecta la carga: La tabla b77 sigue en la pág. 64 (b78) con el renglón 'Altri ricavi e proventi' y el Totale 75.870.757; la suma de b77+b78 da el total.",
@@ -457,14 +442,14 @@
    "linea": 231
   },
   {
+   "etiqueta": "altri",
+   "M": -1.38436,
+   "linea": 235
+  },
+  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": 0.155877,
    "linea": 237
-  },
-  {
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "M": -1.38436,
-   "linea": 235
   }
  ],
  "impuesto": [

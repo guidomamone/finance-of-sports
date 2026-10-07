@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md",
- "generado": "2026-10-05T14:17:20.548Z",
+ "generado": "2026-10-07T22:03:17.354Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2006,
@@ -12,32 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
-   "campo": "fila",
-   "valor": "-270,216",
-   "linea": 2070,
-   "etiqueta": "c) From parent companies",
-   "lado": "financiero",
-   "reemplaza": "c) From parent companies",
-   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
-   "campo": "fila",
-   "valor": "-3,386,350",
-   "linea": 2071,
-   "etiqueta": "d) From others",
-   "lado": "financiero",
-   "reemplaza": "d) From others",
-   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
   {
    "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
    "campo": "fila",
@@ -256,8 +230,6 @@
   "la nota de \"a) Capital gains on disposals\" no suma el renglón (4.444 contra 4.444841, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"b) Others\" no suma el renglón (4.873 contra 4.871963, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) Salaries and wages\" no suma el renglón (123.155 contra 128.245135, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"c) From parent companies\" (financiero) -270,216, en lugar de \"c) From parent companies\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
-  "ajuste manual: fila \"d) From others\" (financiero) -3,386,350, en lugar de \"d) From others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"Official and Technical sponsors\" (ingreso) 34470000, en lugar de \"d) Sponsorship and other revenues\" (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3074))",
   "ajuste manual: fila \"Other sponsorships and other commercial contracts\" (ingreso) 17437000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3075))",
   "ajuste manual: fila \"Television and radio revenues\" (ingreso) 95595809 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3076) (incluye -191 € de redondeo de la nota en miles))",
@@ -269,6 +241,7 @@
   "ajuste manual: fila \"Sundry income\" (ingreso) 166000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3082))",
   "ajuste manual: fila \"Option rights granted to RTI (Mediaset), TV 2007/08-2008/09\" (ingreso) 30.000.000, en lugar de \"e) Other revenues and income\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 3: los 30 M de opciones de derechos de TV a RTI van a TV)",
   "ajuste manual: fila \"e) Other revenues and income (resto)\" (ingreso) 21.002.569, en lugar de \"e) Other revenues and income\" (2026-10-05, Auditoría 2026-10-04 (to-do 138), hallazgo 3: 51.002.569 impreso menos los 30.000.000 de RTI)",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b19 es una cuenta de resultados reclasificada en €/000 con columnas por área de negocio; sus importes ya están en el estado oficial y las notas.",
   "duda de localizar que no afecta la carga: Son detalle por jugador de renglones ya abiertos en b62, b64 y b68.",
@@ -618,11 +591,6 @@
    "linea": 2068
   },
   {
-   "etiqueta": "17(b) EXCHANGE GAINS AND LOSSES",
-   "M": -0.004005,
-   "linea": 2072
-  },
-  {
    "etiqueta": "c) From parent companies",
    "M": -0.270216,
    "linea": 2070
@@ -631,6 +599,11 @@
    "etiqueta": "d) From others",
    "M": -3.38635,
    "linea": 2071
+  },
+  {
+   "etiqueta": "17(b) EXCHANGE GAINS AND LOSSES",
+   "M": -0.004005,
+   "linea": 2072
   }
  ],
  "impuesto": [

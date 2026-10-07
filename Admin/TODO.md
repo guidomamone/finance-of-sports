@@ -117,46 +117,16 @@ ni en el comentario de ningún archivo de código.
     leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como 2025 tiene que dar
     los 23 ajustes `fila` (después se anulan); en los demás .filas.json no dispara.
 
-155. ITALIA: EL SIGNO DE "17) INTERESSI E ALTRI ONERI FINANZIARI" Y DE LAS IMPOSTE (medido 2026-10-07, lote 14). El formato del Codice
-    Civile imprime los costos en positivo y los resta por posición ("TOTALE (C) (15+16-17)", "20) Imposte" como costo); la etapa 6
-    (`verificar.mjs`, `conSigno(fin)`) toma el 17) con el signo impreso y lo SUMA. Casos y arreglos manuales (todos en
-    `Admin/ajustes-manuales.jsonl`, 2026-10-07):
-    - Torino 2018/2021/2024: `fila` "d) oneri diversi (17, costo)" con el valor entre paréntesis, `--reemplaza "d) oneri diversi"`
-      (2024: 19,683 + 0,439 − 3,227 − 6,496 = 10,398, el impreso; los tres cierran al centavo).
-    - Udinese 2021-22 y 2024-25: los renglones 16) y 17) se llaman los dos "altri", y `--reemplaza` saca TODAS las filas con esa etiqueta
-      (`verificar.mjs` ~L479-480): se reemplazan los dos ("altri proventi finanziari (16)" positivo y "altri oneri finanziari (17,
-      costo)" negativo); además las imposte con el signo al revés ("imposte correnti (costo)" negativo, "imposte differite e anticipate
-      (ingreso)" positivo).
-    - Napoli 2024 ("e) altri" y "b) perdite su cambi"), Napoli 2025 ("e) altri"), Cremonese 2025 y Parma 2023 ("altri" 16 y 17): igual.
-    - Bologna 2019-20, 2020-21 y 2021-22 (Versión 568): un solo ajuste por año, el 17) con `--reemplaza-linea` (to-do 158, ya existe:
-      los ajustes nuevos no necesitan reemplazar las dos filas homónimas). Ahí las imposte NO hacían falta: entraban netas. O sea, el signo
-      de las imposte no es igual en todos los documentos; el del 17) sí (11 documentos).
-    - Las dudas de la IA en la cola sobre escala/signo de estos documentos se respondieron en coherencia con los ajustes.
-    Arreglo candidato: escalón con el total impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, los
-    renglones bajo 17) restando (y las imposte como costo). Medir con los 11 documentos de arriba que hoy cierran por ajuste: anulando sus
-    ajustes de financiero/impuesto (`ajustes.mjs --anular`, Versión 579) el script tiene que dar lo mismo que lo cargado.
-    INVESTIGADO (2026-10-07, subagente; verificado a mano el caso de Cremonese):
-    - Causa (tools/verificar.mjs): fin se arma con el signo IMPRESO (renglonesOTotal ~L469-472) y la compuerta del resultado prueba 4
-      combinaciones (sf, si) con UN SOLO factor sf para todas las filas financieras (~L626-638): con 16) positivo y 17) a restar no hay
-      combinación que sirva. En los 11 documentos "16) + 17-bis − 17) = C impreso" se cumple y el error es exactamente 2 × 17).
-    - Matices: 17-bis va con su signo (neto utili/perdite); Napoli 2024 desglosa 17-bis y "b) perdite su cambi" 4.559 positivo resta; las
-      hojas de nota del 17) (detalla_a) restan con él; Bologna 2019-20 tiene el mismo patrón en la sección D (19) svalutazioni resta).
-    - Imposte NO necesitan escalón: `si` ya se prueba aparte; con el financiero bien cierra solo. Los 4 ajustes de imposte de Udinese serían
-      redundantes (confirmarlo al medir). Torino imprime el efecto (si=+1); Napoli, Bologna, Cremonese, Udinese como costo (si=-1).
-    - La etiqueta NO es compuerta: Atalanta 2021/2024, Sassuolo 2025, Monza 2022, Lazio 2019-20/2022-23 y Roma 2022 imprimen el 17) entre
-      paréntesis y ya cierran: una regla "17) resta" los rompería. Va como escalón solo si la escalera no cierra.
-    - DATOS MAL HOY por la compuerta floja (valor absoluto + 0,01 M de tolerancia; cierran invirtiendo TODO el financiero, sf=-1):
-      Cremonese 2025 carga netInterest +0,004261 (data/cremonese-it-data.js L119) y el C impreso es (4.261) → −0,004261 (error 8,5 mil EUR);
-      Hellas Verona 2020 −0,027588 contra (27.554) (34 EUR); Bologna 2018-19 (sin cargar) −0,552236 contra (556.520).
-      Cremonese 2025 (y Novorizontino 2010, mismo defecto) se corrigieron con el ESCALÓN 1 (Versión 582: la compuerta prueba primero el
-      resultado exacto). Bologna 2018-19 y Hellas Verona 2020 no tienen combinación exacta: esperan el escalón 2 (el de abajo).
-    - Diseño del ESCALÓN 2 (aprobado por Guido el 2026-10-07, va después del 1): después de la escalera 0-6, si no cierra (o cierra solo con sf=-1) y hay un renglón 17) y un C impreso: re-leer fin con
-      15)/16) con su signo, 17) y sus hojas como −|valor|, 17-bis con su signo (perdite desglosadas restan), D: 19) resta y 18) suma; por
-      posición/bloque, no por etiqueta. Compuerta ÚNICA: |ΣFIN − C impreso| ≤ media unidad impresa por fila (si no hay C impreso: el
-      resultado impreso exacto, como la lectura 5). Después se prueban los 4 (sf, si) con fin ya firmado. Anotar "escalón 17) resta".
-    - Medición: los 11 sin sus ajustes de financiero/impuesto (en una copia; no anular en el repo hasta medir) tienen que dar totales.financiero
-      y lo cargado iguales (Torino 2024 −2,788248; Napoli 2024 +7,442873; Udinese 2021-22 −5,544096); los 57 de Italia: los que cierran sin
-      ajuste no cambian, salvo Cremonese 2025, Bologna 2018-19 y Hellas Verona 2020, que tienen que pasar al signo correcto.
+155. ITALIA: EL SIGNO DEL 17) Y DEL 17-BIS. CONOCIDO, SIN DAÑO HOY (escalones 1 y 2 hechos, Versiones 582 y 583). El escalón "17) resta"
+    de verificar.mjs lee el 17) restando por posición y reemplazó los ajustes manuales de 14 documentos (Torino 2018/2021/2024, Udinese
+    2021-22/2024-25, Napoli 2025, Cremonese 2025, Parma 2023, Bologna 2020-21/2021-22, Juventus 2002-03 a 2005-06). Quedan dos que
+    siguen cerrando con sus ajustes (cargados bien):
+    - Napoli 2024: el 17-bis desglosa "b) perdite su cambi" 4.559 impreso en positivo, que resta. El escalón deja el 17-bis con su signo.
+    - Bologna 2019-20: además del 17), la sección D trae "19) svalutazioni di partecipazioni" (1.868.716) en positivo, que resta; el escalón
+      solo mira la sección C.
+    CUÁNDO HACERLO: si aparece un documento sin cargar con ese patrón (17-bis desglosado o la D con importes) y no cierra. Diseño: el mismo
+    escalón extendido (perdite del 17-bis restan; en la D, 18) suma y 19) resta), con la compuerta del total impreso de esa sección.
+    Bologna 2018-19 (sin cargar) ya lee bien: financiero (556.520), el C impreso.
 
 156. ITALIA: VARIACIÓN DE EXISTENCIAS Y SUBTOTALES REPETIDOS. CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). El doble conteo
     de la "variazione delle rimanenze" solo existe en las lecturas 0-3 (valor absoluto); los documentos cierran bien en la 4 o la 5. El

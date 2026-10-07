@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.md",
- "generado": "2026-10-07T01:58:38.388Z",
+ "generado": "2026-10-07T22:03:16.998Z",
  "estado": "ok",
  "clubId": "parma-it",
  "year": 2023,
@@ -19,34 +19,9 @@
    "linea": 557,
    "etiqueta": "altri",
    "lado": "ingreso",
-   "reemplaza": "altri",
-   "motivo": "el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
-  {
-   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
-   "campo": "fila",
-   "valor": "40.063",
-   "linea": 583,
-   "etiqueta": "altri (proventi finanziari)",
-   "lado": "financiero",
-   "reemplaza": "altri",
-   "motivo": "proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
-  {
-   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
-   "campo": "fila",
-   "valor": "(108.646)",
-   "linea": 587,
-   "etiqueta": "altri (oneri finanziari)",
-   "lado": "financiero",
-   "reemplaza": "altri",
-   "motivo": "ver el anterior (to-do 155/156, arreglo manual 2026-10-07)",
+   "reemplaza": null,
+   "reemplazaLinea": 557,
+   "motivo": "to-do 155: el mismo ajuste (sale el 'altri' de L557, contado dos veces), pero solo esa línea: con --reemplaza 'altri' se llevaba también los 'altri' del financiero (L583, L587) y el escalón '17) resta' no podía leerlos",
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-07"
@@ -81,9 +56,8 @@
   }
  ],
  "notas": [
-  "ajuste manual: sale la fila \"altri\" (2026-10-07, el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07))",
-  "ajuste manual: fila \"altri (proventi finanziari)\" (financiero) 40.063, en lugar de \"altri\" (2026-10-07, proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07))",
-  "ajuste manual: fila \"altri (oneri finanziari)\" (financiero) (108.646), en lugar de \"altri\" (2026-10-07, ver el anterior (to-do 155/156, arreglo manual 2026-10-07))",
+  "ajuste manual: sale la fila \"L557\" (2026-10-07, to-do 155: el mismo ajuste (sale el 'altri' de L557, contado dos veces), pero solo esa línea: con --reemplaza 'altri' se llevaba también los 'altri' del financiero (L583, L587) y el escalón '17) resta' no podía leerlos)",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: Es una reclasificación del conto economico con indicadores, duplica b12.",
   "duda de localizar que no afecta la carga: Resumen UEFA en miles que repite importes ya abiertos en las notas de ingresos y gastos.",
@@ -462,12 +436,12 @@
  },
  "financiero": [
   {
-   "etiqueta": "altri (proventi finanziari)",
+   "etiqueta": "altri",
    "M": 0.040063,
    "linea": 583
   },
   {
-   "etiqueta": "altri (oneri finanziari)",
+   "etiqueta": "altri",
    "M": -0.108646,
    "linea": 587
   }

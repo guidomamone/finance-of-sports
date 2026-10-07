@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 583 — Escalón "17) resta" en verificar.mjs; 25 ajustes manuales anulados (to-do 155, escalón 2) (2026-10-07)
+
+- `verificar.mjs`: si el resultado no cerró exacto, el 17) del Codice Civile (encabezado buscado en el .md: la extracción a veces no lo
+  trae, Cremonese 2025, o lo trae sin número, Torino 2018) y sus hojas restan; compuerta: el total de C impreso exacto; después las
+  lecturas 0-6 con ese financiero. El fin de la sección C se busca en el .md (encabezado D/E en mayúscula, 18), resultado antes de
+  impuestos): en Torino 2018 la D vino como financiero.
+- Medido en una copia: sin los ajustes del 17), 14 de 16 documentos dan lo mismo que lo cargado (12 proponen carga idéntica; Juventus
+  2003-04 y 2004-05 siguen en cola como antes). Con los ajustes, cambia solo Bologna 2018-19 (sin cargar): financiero +552.236 ->
+  (556.520), el C impreso. Prueba completa: 0 de 87.
+- Anulados 24 ajustes de financiero/impuesto de esos 14 documentos; el ajuste de ingresos de Parma 2023 ("altri" L557) pasa a
+  `--reemplaza-linea` (con `--reemplaza "altri"` se llevaba también los "altri" del financiero). Napoli 2024 (17-bis desglosado) y Bologna
+  2019-20 (D 19) siguen con sus ajustes: to-do 155, conocido, sin daño.
+
 ## Versión 582 — La compuerta del resultado prueba primero el resultado exacto (to-do 155, escalón 1) (2026-10-07)
 
 - `verificar.mjs`: de las 4 combinaciones de signo (financiero, impuesto), primero la que da el resultado impreso EXACTO; la tolerancia

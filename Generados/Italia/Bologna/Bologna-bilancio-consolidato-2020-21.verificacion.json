@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.md",
- "generado": "2026-10-07T20:57:04.813Z",
+ "generado": "2026-10-07T22:03:17.026Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2021,
@@ -11,22 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf",
-   "campo": "fila",
-   "valor": "(1.297.992)",
-   "linea": 875,
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 875,
-   "motivo": "Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).",
-   "evidencia": ".md L875 (17) altri 1.297.992), L878 Totale C (1.080.163)",
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -62,7 +47,7 @@
  ],
  "notas": [
   "la nota de \"altri\" cierra solo con sus filas del lado ingreso (8 filas de otro lado dicen abrir un renglón con el mismo nombre)",
-  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (1.297.992), en lugar de la fila de L875 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b64 solo tiene una fila Totale sin detalle; parece referido a ricavi de società immobiliari, no abre categorías.",
   "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en Bologna-bilancio-consolidato-2020-21.pdf",
   "duda de extraer que no afecta la carga: El Totale de b69 coincide con Salari e stipendi Tesserati (L2361), no con el total de la fila."
@@ -469,14 +454,14 @@
    "linea": 871
   },
   {
+   "etiqueta": "altri",
+   "M": -1.297992,
+   "linea": 875
+  },
+  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": 0.000063,
    "linea": 877
-  },
-  {
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "M": -1.297992,
-   "linea": 875
   }
  ],
  "impuesto": [

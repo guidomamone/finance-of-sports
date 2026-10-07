@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.md",
- "generado": "2026-10-03T23:14:05.297Z",
- "estado": "ok",
+ "generado": "2026-10-07T22:03:17.276Z",
+ "estado": "cola",
  "clubId": "juventus-it",
  "year": 2005,
  "escala": {
@@ -12,32 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf",
-   "campo": "fila",
-   "valor": "-148,861",
-   "linea": 1817,
-   "etiqueta": "c) Da imprese controllanti",
-   "lado": "financiero",
-   "reemplaza": "c) Da imprese controllanti",
-   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf",
-   "campo": "fila",
-   "valor": "-1,585,619",
-   "linea": 1818,
-   "etiqueta": "d) From others",
-   "lado": "financiero",
-   "reemplaza": "d) From others",
-   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
   {
    "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf",
    "campo": "fila",
@@ -193,9 +167,21 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.pdf",
+   "campo": "caja",
+   "valor": "6,538,720",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L1680 TOTAL LIQUID FUNDS",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
   }
  ],
- "cola": [],
+ "cola": [
+  "28124e3"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -218,6 +204,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2004 de este documento suma ingresos 215.951335; el sitio tiene 221.313511"
+  },
+  {
    "nombre": "documento del año 2006",
    "ok": false,
    "detalle": "ingresos de 2005: 229.914251 en este documento y 259.082991 en Juventus-annual-financial-report-2005-06.pdf (columna del año anterior)"
@@ -226,16 +217,9 @@
    "nombre": "documento del año 2004",
    "ok": true,
    "detalle": "ingresos de 2004: 215.951335 en Juventus-annual-financial-report-2003-04.pdf y 215.951335 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2004: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "ajuste manual: fila \"c) Da imprese controllanti\" (financiero) -148,861, en lugar de \"c) Da imprese controllanti\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
-  "ajuste manual: fila \"d) From others\" (financiero) -1,585,619, en lugar de \"d) From others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"a) Capital gains on disposals\" (ingreso) 29,168,740, en lugar de \"a) Capital gains on disposals\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"a) Capital losses on disposals\" (gasto) 3,451,549, en lugar de \"a) Capital losses on disposals\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
   "ajuste manual: fila \"c) Others\" (gasto) 100,745, en lugar de \"c) Others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
@@ -248,6 +232,7 @@
   "ajuste manual: fila \"Advertising\" (ingreso) 990000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2810))",
   "ajuste manual: fila \"Technical staff and players' image rights\" (ingreso) 2326000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2811))",
   "ajuste manual: fila \"Sundry income\" (ingreso) 192000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 2812))",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b50 abre la venta de entradas de otra manera que b49.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"1) REVENUES FROM SALES AND SERVICES\"): aceptar, en Juventus-annual-financial-report-2005-06.pdf",
@@ -540,11 +525,6 @@
    "linea": 1815
   },
   {
-   "etiqueta": "17iii) EXCHANGE GAINS AND LOSSES",
-   "M": 0.006055,
-   "linea": 1819
-  },
-  {
    "etiqueta": "c) Da imprese controllanti",
    "M": -0.148861,
    "linea": 1817
@@ -553,6 +533,11 @@
    "etiqueta": "d) From others",
    "M": -1.585619,
    "linea": 1818
+  },
+  {
+   "etiqueta": "17iii) EXCHANGE GAINS AND LOSSES",
+   "M": 0.006055,
+   "linea": 1819
   }
  ],
  "impuesto": [

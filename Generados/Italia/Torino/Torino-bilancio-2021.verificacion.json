@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2021.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
- "generado": "2026-10-07T01:58:24.058Z",
+ "generado": "2026-10-07T22:03:16.867Z",
  "estado": "ok",
  "clubId": "torino-it",
  "year": 2021,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2021.pdf",
-   "campo": "fila",
-   "valor": "(940.101)",
-   "linea": 573,
-   "etiqueta": "d) oneri diversi (17, costo)",
-   "lado": "financiero",
-   "reemplaza": "d) oneri diversi",
-   "motivo": "Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -50,7 +36,7 @@
   }
  ],
  "notas": [
-  "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (940.101), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155))",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar ya contestada para el club (escala, \"-\"): corregir no, en Torino-bilancio-2024.pdf",
   "duda de extraer que no afecta la carga: La nota b37 agrupa distinto que el estado (ej. 'Altri ricavi' 5.616 + rimborso 627 vs 'i) ricavi e proventi diversi' 5.939 y 'd) proventi commerciali' 304); se asignó al total salvo sponsorización."
  ],
@@ -408,12 +394,7 @@
    "linea": 571
   },
   {
-   "etiqueta": "D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE",
-   "M": 0,
-   "linea": 575
-  },
-  {
-   "etiqueta": "d) oneri diversi (17, costo)",
+   "etiqueta": "d) oneri diversi",
    "M": -0.940101,
    "linea": 573
   }

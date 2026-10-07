@@ -218,6 +218,10 @@ Mitigaciones:
  ESCALÓN    si NINGUNA lectura cerró el RESULTADO: la 5 otra vez + los ajustes `fila` del financiero sin `reemplaza` (la 5 solo suma
             los que reemplazan); misma compuerta que la 5 (Versión 581, to-do 156 B; caso Inter 2024-25). No corre si el resultado ya
             cerró en alguna lectura y fallan solo los totales (Roma 2018: así, como regla de la 5, rompía lo cargado)
+ ESCALÓN    si el resultado no cerró EXACTO en ninguna lectura y el documento tiene el formato del Codice Civile: "17) resta". El 17)
+            (encabezado buscado en el .md, por su número o su nombre fijo) y lo que cuelga de él hasta el 17-bis o el total de C, como
+            −|valor|; compuerta: la suma da EXACTO el total de C impreso; después las lecturas 0-6 con ese financiero, gana la primera que
+            cierra exacto (Versión 583, to-do 155; caso Torino 2024)
  nada cierra → reintento (una vez) → cola humana
 ```
 
