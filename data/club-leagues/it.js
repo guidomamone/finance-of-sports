@@ -36,7 +36,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Monza (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Monza".
   'monza-it': { 2022: 'it-seriea' },
   // Napoli (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Napoli".
-  'napoli-it': { 2025: 'it-seriea' },
+  'napoli-it': { 2025: 'it-seriea', 2024: 'it-seriea' }, // 2024: tools/cargar.mjs 2026-10-07, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Parma (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia exacta "Parma".
   'parma-it': { 2023: 'it-serieb' },
   // Sampdoria (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Sampdoria".

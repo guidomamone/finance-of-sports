@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
   "club": "napoli-it",
   "year": 2024,
-  "generatedAt": "2026-10-07T02:04:24.056Z",
+  "generatedAt": "2026-10-07T02:12:10.413Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         15.811801
       ],
-      "glosa": "a) Ingresos por partidos en casa"
+      "glosa": "a) Ingresos por partidos como local"
     },
     {
       "label": "c) abbonamenti",
@@ -44,7 +44,7 @@
       "values": [
         48.650684
       ],
-      "glosa": "b) Ingresos por patrocinio"
+      "glosa": "b) Ingresos por patrocinios"
     },
     {
       "label": "c) proventi pubblicitari",
@@ -54,7 +54,7 @@
       "values": [
         0.005
       ],
-      "glosa": "c) Ingresos por publicidad"
+      "glosa": "c) Ingresos publicitarios"
     },
     {
       "label": "d) proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         70.758785
       ],
-      "glosa": "h) Plusvalías por cesión de derechos plurianuales de futbolistas"
+      "glosa": "h) Plusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -114,7 +114,7 @@
       "values": [
         0.867745
       ],
-      "glosa": "i) Otros ingresos por gestión de futbolistas"
+      "glosa": "i) Otros ingresos de gestión de futbolistas"
     },
     {
       "label": "j) ricavi e proventi diversi",
@@ -124,7 +124,7 @@
       "values": [
         14.153534
       ],
-      "glosa": "j) Ingresos y rendimientos diversos"
+      "glosa": "j) Ingresos y ganancias diversos"
     },
     {
       "label": "per materie prime, sussidiarie, di consumo e merci",
@@ -134,7 +134,7 @@
       "values": [
         10.303501
       ],
-      "glosa": "Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "Consumo de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "per servizi",
@@ -144,7 +144,7 @@
       "values": [
         30.219876
       ],
-      "glosa": "Por servicios"
+      "glosa": "Gastos por servicios exteriores"
     },
     {
       "label": "per godimento beni di terzi",
@@ -154,7 +154,7 @@
       "values": [
         7.412806
       ],
-      "glosa": "Por uso de bienes de terceros"
+      "glosa": "Gastos por uso de bienes de terceros (arrendamientos y cánones)"
     },
     {
       "label": "a) salari e stipendi",
@@ -184,7 +184,7 @@
       "values": [
         0.672057
       ],
-      "glosa": "c) Indemnización por fin de contrato de trabajo"
+      "glosa": "c) Indemnizaciones por fin de contrato laboral"
     },
     {
       "label": "e) altri costi",
@@ -194,7 +194,7 @@
       "values": [
         2.783843
       ],
-      "glosa": "e) Otros costes"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "a) amm.to delle immobilizzazioni immateriali",
@@ -294,7 +294,7 @@
       "values": [
         1.271958
       ],
-      "glosa": "g) Otros gastos diversos de gestión"
+      "glosa": "g) Otros gastos diversos de explotación"
     }
   ]
 }

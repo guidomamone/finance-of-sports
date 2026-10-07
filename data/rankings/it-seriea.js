@@ -4,8 +4,8 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
-//   2025: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -35,7 +35,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["como-it","inter-it"],
+    sinDato: ["inter-it"],
     clubs: [
       { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
@@ -49,6 +49,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"sassuolo-it", revenue:83.067, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2025",
         mix:[["Comercial / Sponsors",0.452],["Estadio",2.617],["Televisión",19.04],["Venta de Jugadores",2.802],["Otros ingresos",58.156]] },
+      { id:"como-it", revenue:64.928, reportType:"official_balance_sheet",
+        sourceId:"como-it-gruppo-pro-forma-consolidamento-2025",
+        mix:[["Comercial / Sponsors",6.776],["Estadio",6.94],["Televisión",37.25],["Venta de Jugadores",8.064],["Otros ingresos",5.898]] },
     ],
   },
   2024: {
@@ -60,6 +63,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:418.274, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2023-24",
         mix:[["Comercial / Sponsors",171.906],["Estadio",61.848],["Televisión",106.809],["Venta de Jugadores",36.596],["Otros ingresos",41.113]] },
+      { id:"napoli-it", revenue:351.494, reportType:"official_balance_sheet",
+        sourceId:"napoli-it-bilancio-2024",
+        mix:[["Comercial / Sponsors",75.21],["Estadio",29.336],["Televisión",152.285],["Venta de Jugadores",78.105],["Otros ingresos",16.559]] },
       { id:"atalanta-it", revenue:261.03, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2024",
         mix:[["Comercial / Sponsors",25.862],["Estadio",18.279],["Televisión",115.174],["Venta de Jugadores",80.889],["Otros ingresos",20.826]] },
