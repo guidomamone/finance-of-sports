@@ -45,4 +45,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'sassuolo-it': { 2025: null },
   // Torino (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Torino".
   'torino-it': { 2024: 'it-seriea' },
+  // Udinese (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Udinese".
+  'udinese-it': { 2025: 'it-seriea' },
 });

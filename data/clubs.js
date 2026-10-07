@@ -444,6 +444,9 @@ const clubs = {
   // Torino: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Torino/Torino-bilancio-2024.pdf.
   // brandColor y su procedencia: fuentes/Italia/Torino.md.
   'torino-it': { id:'torino-it', name:'Torino Football Club S.p.A.', displayName:'Torino', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#8B2A1F' },
+  // Udinese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Udinese.md.
+  'udinese-it': { id:'udinese-it', name:'Udinese Calcio S.p.A.', displayName:'Udinese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
