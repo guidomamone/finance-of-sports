@@ -60,6 +60,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2022: {
     leagueSize: null,
+    sinDato: ["asroma-it"],
     clubs: [
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2021-22",

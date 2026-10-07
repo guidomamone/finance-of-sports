@@ -26,6 +26,7 @@ window.CLUB_INDEX = {
   "antwerp-be": {"n":"Antwerp","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "argentinosjuniors": {"n":"Argentinos Juniors","c":"AR","q":"full","y":5,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"]]},
   "arsenal-gb": {"n":"Arsenal","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "asroma-it": {"n":"AS Roma","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "astonvilla-gb": {"n":"Aston Villa","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "athleticclub": {"n":"Athletic Club","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "athleticoparanaense-br": {"n":"Athletico Paranaense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},

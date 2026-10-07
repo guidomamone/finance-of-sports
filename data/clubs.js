@@ -402,6 +402,9 @@ const clubs = {
   // AC Milan: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf.
   // brandColor y su procedencia: fuentes/Italia/AC Milan.md.
   'acmilan-it': { id:'acmilan-it', name:'A.C. Milan S.p.A.', displayName:'AC Milan', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E4002B' },
+  // AS Roma: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf.
+  // brandColor y su procedencia: fuentes/Italia/AS Roma.md.
+  'asroma-it': { id:'asroma-it', name:'A.S. Roma S.r.l.', displayName:'AS Roma', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#980A2B' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
