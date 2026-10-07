@@ -417,6 +417,9 @@ const clubs = {
   // Cremonese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf.
   // brandColor y su procedencia: fuentes/Italia/Cremonese.md.
   'cremonese-it': { id:'cremonese-it', name:'U.S. Cremonese S.p.A.', displayName:'Cremonese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
+  // Hellas Verona: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Hellas Verona.md.
+  'hellasverona-it': { id:'hellasverona-it', name:'Hellas Verona Football Club S.p.A.', displayName:'Hellas Verona', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#002F6C' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

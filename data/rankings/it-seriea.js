@@ -79,6 +79,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2020: {
     leagueSize: null,
+    sinDato: ["hellasverona-it"],
     clubs: [
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2019-20",
