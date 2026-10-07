@@ -58,8 +58,9 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
 - Italia (onboarding en curso): 16 clubes nuevos dados de alta (Versión 563, algunos todavía sin años), con color de marca y gestiones.
   Cargados 32 ejercicios de 16 clubes además de Juventus: Lazio 7, Torino 3, Bologna 3, AS Roma 3, Atalanta 2, Udinese 2, Napoli 2, Inter 2,
-  AC Milan, Como, Cremonese, Parma, Hellas Verona, Monza, Sassuolo y Sampdoria. Muchos cierran con ajustes manuales del formato italiano
-  (signo del 17) e imposte, variación de existencias, columna de Como): to-dos 154-156. Los ingresos de Bologna, Sassuolo 2025, Udinese
+  AC Milan, Como, Cremonese, Parma, Hellas Verona, Monza, Sassuolo y Sampdoria. El signo del 17) lo lee el script (escalón "17) resta",
+  Versión 583); quedan ajustes manuales en Napoli 2024 y Bologna 2019-20 (to-do 155), la variación de existencias (156) y la columna
+  de Como (154). Los ingresos de Bologna, Sassuolo 2025, Udinese
   2021-22 y Cremonese 2025 los abre el script con la nota (to-do 163, Versión 579): sin ajustes manuales de ingresos.
   Sin cargar del lote 14: Milan 2022-23 (to-do 150). Etapa 2: 35 de 105 documentos
   validados; faltan 70 (~US$ 41, `pipeline.mjs --dir Clubes/Italia --max-paginas 0 --limit 35` dos veces), en otra sesión.
