@@ -117,6 +117,7 @@ window.CLUB_INDEX = {
   "kashimaantlers": {"n":"Kashima Antlers","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "kawasakifrontale": {"n":"Kawasaki Frontale","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "koln-de": {"n":"1. FC Köln","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "lazio-it": {"n":"Lazio","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "leeds-gb": {"n":"Leeds United","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "levante-es": {"n":"Levante UD","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "liverpool-gb": {"n":"Liverpool","c":"GB","q":"mixed","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},

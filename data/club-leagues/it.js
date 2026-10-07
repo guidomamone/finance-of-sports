@@ -31,4 +31,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'hellasverona-it': { 2020: 'it-seriea' },
   // Inter (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Inter Milan" = "Inter".
   'inter-it': { 2025: 'it-seriea' },
+  // Lazio (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Lazio".
+  'lazio-it': { 2023: 'it-seriea' },
 });

@@ -53,6 +53,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2023: {
     leagueSize: null,
+    sinDato: ["lazio-it"],
     clubs: [
       { id:"juventus-it", revenue:547.301, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2022-23",
