@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 576 — El nombre legal del alta: portada y más frecuente tienen que coincidir; si no, a la cola (2026-10-07)
+
+- `alta-club.mjs`, `decidirNombre()`: ajuste `name` (nuevo en `ajustes.mjs`, también por carpeta) o respuesta de la cola → portada y más
+  frecuente coinciden → si no, pregunta a la cola (decisión de Guido: el alta es una sola vez). `nombrePortada()` recorta bien
+  ("ASSOCIAZIONE CALCIO MONZA", "AZUL & BLANCO MILLONARIOS", "1. FC Köln"); `nombreBienEscrito()` arregla las mayúsculas.
+- Medido en los 175 clubes del sitio: 61 se deciden solos (51 iguales al sitio; el resto, nombre desarrollado a mano en el sitio), 55
+  van a la cola (antes se elegía el más frecuente, que acertaba 13 de 48 cuando no coincidían: Hellas Verona Service por Hellas Verona),
+  59 con el nombre de la carpeta como siempre. Propuestas de carga de 122 documentos idénticas.
+- Tipo de documento y cierre (Monza): se revisan con un subagente Sonnet después del alta y se corrigen con ajustes. El tipo de cambio
+  fuera del commit era de proceso (PIPELINE). TODO 161 cerrado.
+
 ## Versión 575 — Las respuestas de categoría se reusan entre clubes del mismo país (2026-10-07)
 
 - `cargar.mjs`, escalón B del to-do 152: una fila que iba a la cola toma la respuesta de otros clubes del mismo país si la misma etiqueta,

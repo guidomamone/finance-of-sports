@@ -287,6 +287,10 @@ Mitigaciones:
   de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
+  Nombre legal (`decidirNombre()`): ajuste `name` (del documento o de la carpeta del club) o respuesta de la cola → si la portada y lo
+  más frecuente del .md coinciden, ese → si no, pregunta a la cola (una por club, se contesta `corregir --valor "<nombre legal>"`).
+  Después de un alta, un subagente Sonnet revisa nombre, tipo de documento y cierre contra el documento (decisión de Guido: el alta es
+  una sola vez y se averigua fácil); lo que esté mal se corrige con un ajuste (`name`, `reportType`, `cierre`).
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
 - d) **Escaleras chicas** (de dónde salió cada dato: `.carga.json` → `procedencia`, y `_escalon` / `_fuenteCat` en cada línea, Versión 525; el conteo: `node tools/estado.mjs --escalones`):
 

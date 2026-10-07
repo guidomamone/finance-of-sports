@@ -166,18 +166,6 @@ ni en el comentario de ningún archivo de código.
     Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
 
 
-161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
-    - Nombre legal (diseño aprobado por Guido el 2026-10-07): escalón 0 ajuste `name` (nuevo); escalón 1 el nombre de la portada (acierta
-      en los 5 casos medidos); escalón 2 según perímetro: individual → el más frecuente, consolidado → Claude con cita. Mayúsculas: la
-      variante bien escrita del propio documento. Casos: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
-      Sassuolo Calcio Srl" (truncado), "Roma S.r.l.", "Calcio Monza S.p.A." y varios en MAYÚSCULAS ("BOLOGNA F.C. 1909 S.P.A."). Se corrigieron
-      a mano en `data/clubs.js` y en la cabecera del data file (no hay flag ni ajuste `name`; `ajustes.mjs` lo lista en TIPO_DE_CAMPO de
-      alta-club pero no hay campo). Arreglo: preferir el título del .md / la firma del balance, normalizar mayúsculas, y un ajuste `name`.
-    - reportType: Monza 2022 salió "estado intermedio" por la palabra "semestre" en un comentario de gestión (el doc dice "Bilancio
-      d'Esercizio al 31 dicembre 2022"). Se resolvió con ajustes `reportType` y `cierre`.
-    - Cierre: para Monza propuso 30/06 por el patrón del país cuando el documento cierra el 31/12.
-    - Ya arreglado en la Versión 562: el alta no leía el ajuste de perímetro.
-
 163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
     proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
     difieren en 0,097 M en cómo reparten a) y f), `cerrarNota` no cierra y a) se carga entero como other_income → "Televisión en 0" y el

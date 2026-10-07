@@ -253,6 +253,7 @@ import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
+import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 export { resumenAltas };
@@ -393,7 +394,7 @@ const ANCLAS_FX = ['moneda extranjera', 'foreign currenc', 'moeda estrangeira', 
 const CIERRE_PALABRAS = ['cierre', 'closing', 'fechamento', 'encerramento', 'chiusura', 'stichtag', 'balansdag', 'closing rate', 'year end', 'year-end', 'al 31', 'al 30', 'em 31', 'at 31', 'at 30', 'на 31', 'на конец', 'станом на', 'kapanış', 'donem sonu', 'dönem sonu', '기말', '期末'];
 
 // Formas societarias, para encontrar el nombre legal en el documento.
-const FORMAS = ['a/s', 'aps', 'asa', 'as', 'ab', 'n\\.v\\.', 'nv', 'b\\.v\\.', 'bv', 'vzw', 'srl', 's\\.a\\.d\\.', 'sad', 's\\.a\\.', 'sa', 'saf', 's\\.p\\.a\\.', 'spa', 's\\.r\\.l\\.', 'gmbh & co\\. kgaa', 'gmbh', 'ag', 'e\\.v\\.', 'plc', 'ltd\\.?', 'limited', 'a\\.s\\.', 's\\.r\\.o\\.', 'z\\.s\\.', 'd\\.d\\.', 's\\.d\\.d\\.', 'd\\.o\\.o\\.', 'a\\.ş\\.', 'p\\.a\\.e\\.', 'π\\.α\\.ε\\.', 'παε', 'fli', 'inc\\.?', 'co\\., ltd\\.?', 'ltda\\.?', 's\\.a\\.s\\.', 'kgaa', 'oyj', 'ооо', 'ао', 'пао', 'тов', 'пат'];
+const FORMAS = ['a/s', 'aps', 'asa', 'as', 'ab', 'n\\.v\\.', 'nv', 'b\\.v\\.', 'bv', 'vzw', 'srl', 's\\.a\\.d\\.', 'sad', 's\\.a\\.', 'sa', 'saf', 's\\.p\\.a\\.', 'spa', 's\\.r\\.l\\.', 'gmbh & co\\.? kgaa', 'gmbh', 'ag', 'e\\.v\\.', 'plc', 'ltd\\.?', 'limited', 'a\\.s\\.', 's\\.r\\.o\\.', 'z\\.s\\.', 'd\\.d\\.', 's\\.d\\.d\\.', 'd\\.o\\.o\\.', 'a\\.ş\\.', 'p\\.a\\.e\\.', 'π\\.α\\.ε\\.', 'παε', 'fli', 'inc\\.?', 'co\\., ltd\\.?', 'ltda\\.?', 's\\.a\\.s\\.', 'kgaa', 'oyj', 'ооо', 'ао', 'пао', 'тов', 'пат'];
 
 // Deportes que NO son fútbol, para no dar de alta como 'futbol' un equipo de F1.
 const DEPORTES_OTROS = {
@@ -719,7 +720,7 @@ function fxDeSerie(moneda, fecha) {
 }
 
 // Nombre legal: línea con un token del nombre del club + una forma societaria.
-function nombreLegal(md, displayName) {
+export function nombreLegal(md, displayName) {
   const tokens = norm(displayName).split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
   if (!tokens.length) return null;
   const formas = FORMAS.join('|');
@@ -745,6 +746,73 @@ function nombreLegal(md, displayName) {
   }
   const orden = Object.entries(cuenta).sort((a, b) => b[1] - a[1] || b[0].length - a[0].length);
   return orden.length ? { nombre: orden[0][0], veces: orden[0][1], otros: orden.slice(1, 4).map(([k, v]) => `${k} (${v})`) } : null;
+}
+
+// NOMBRE DE LA PORTADA (to-do 161, escalón 1 del nombre, diseño aprobado por Guido). La portada (las primeras líneas del .md, hasta la pág. 3)
+// nombra la sociedad que presenta el balance; lo más frecuente del documento entero, no: en un consolidado (y también en un individual, en las
+// notas) las controladas aparecen más veces que el club (Hellas Verona 2020: "Hellas Verona Service S.r.l." 9 veces contra 1). Medido en las
+// 16 altas italianas: la portada acierta la entidad en las 5 que se corrigieron a mano. Recorte: desde la primera palabra del club hacia atrás,
+// mientras sean parte del nombre (abreviaturas "A.S.", "U.S.", palabras con mayúscula), cortando en "di", "of", "bilancio", "organi sociali"...
+// (nombreLegal() suma como mucho UNA palabra de adelante: "CALCIO MONZA S.p.A." de "ASSOCIAZIONE CALCIO MONZA S.p.A.").
+const CORTA_NOMBRE = new Set(['gruppo', 'group', 'grupo', 'groupe', 'di', 'de', 'del', 'della', 'dello', 'dei', 'degli', 'des', 'du', 'do', 'da', 'dos', 'das', 'of', 'von', 'van', 'der', 'al', 'bilancio', 'relazione', 'organi', 'sociali', 'report', 'annual', 'financial', 'statements', 'informe', 'memoria', 'balance', 'jaarverslag', 'jahresabschluss', 'sulla', 'gestione', 'consolidato', 'esercizio', 'societa', 'company', 'sociedad']);
+export function nombrePortada(md, displayName) {
+  const tokens = norm(displayName).split(/[^a-z0-9]+/).filter((x) => x.length >= 4); if (!tokens.length) return null;
+  const re = new RegExp(`([A-Za-zÀ-ÿĀ-žΑ-ωА-я0-9][^\\n|#*]{2,110}?(?<![A-Za-z])(?:${FORMAS.join('|')}))(?![A-Za-z])`, 'gi');
+  const L = md.split('\n'); let fin = L.findIndex((l) => /^---\s*pág\.\s*3\s*---/i.test(l)); if (fin < 0 || fin > 80) fin = Math.min(80, L.length);
+  const cands = [];
+  for (let i = 0; i < fin; i++) {
+    const cruda = L[i]; const linea = cruda.replace(/[*_#>|]/g, ' ').replace(/\s+/g, ' ').trim(); if (!linea || linea.length > 200) continue;
+    if (!tokens.some((x) => norm(linea).includes(x))) continue;
+    for (const m of linea.matchAll(re)) {
+      const pal = m[1].trim().split(/\s+/); const k = pal.findIndex((w) => tokens.some((x) => norm(w).includes(x))); if (k < 0) continue;
+      // un conector ("&", "y", "e", "and") entre dos palabras del nombre también es del nombre ("AZUL & BLANCO MILLONARIOS")
+      const conector = (j) => j > 0 && /^(&|y|e|and|und|et)$/i.test(pal[j]) && /^[A-ZÀ-ÝΑ-ΩА-Я0-9]/.test(pal[j - 1] || '');
+      let ini = k; while (ini > 0 && (conector(ini - 1) || (!CORTA_NOMBRE.has(norm(pal[ini - 1]).replace(/[^a-z]/g, '')) && /^[A-ZÀ-ÝΑ-ΩА-Я0-9]/.test(pal[ini - 1]) && !/[:;,]$/.test(pal[ini - 1])))) ini--;
+      const s = pal.slice(ini).join(' ').replace(/^[)\-–:\s]+/, '').trim(); if (s.length >= 4 && s.length <= 90) cands.push({ s, titulo: /^\s*#/.test(cruda), i });
+    }
+  }
+  const c = cands.find((x) => x.titulo) || cands[0]; return c ? c.s : null;
+}
+// MAYÚSCULAS (to-do 161): un nombre en mayúsculas ("BOLOGNA F.C. 1909 S.P.A.") toma la variante bien escrita que el propio documento use
+// para la misma entidad ("Bologna F.C. 1909 S.p.A.", 4 veces); si no hay, se escribe con inicial mayúscula, sin tocar abreviaturas con punto
+// y con la forma societaria en su escritura usual (S.p.A., S.r.l.).
+const FORMA_BIEN = { 's.p.a.': 'S.p.A.', 'spa': 'S.p.A.', 's.r.l.': 'S.r.l.', 'srl': 'S.r.l.', 's.a.': 'S.A.', 's.a.d.': 'S.A.D.', 'sad': 'S.A.D.', 'gmbh': 'GmbH', 'ag': 'AG', 'e.v.': 'e.V.', 'n.v.': 'N.V.', 'b.v.': 'B.V.', 'plc': 'plc', 'ltd': 'Ltd', 'ltd.': 'Ltd.', 'limited': 'Limited' };
+export function nombreBienEscrito(nombre, md) {
+  if (!nombre) return nombre;
+  const cuerpo = nombre.replace(/\s+\S+$/, ''); if (/[a-zà-ÿ]/.test(cuerpo)) return nombre; // ya tiene minúsculas: se respeta
+  const clave = (s) => norm(s).replace(/[^a-z0-9]+/g, '');
+  const re = new RegExp(`([A-Za-zÀ-ÿ0-9][^\\n|#*]{2,110}?(?<![A-Za-z])(?:${FORMAS.join('|')}))(?![A-Za-z])`, 'gi');
+  const cuenta = {}; for (const l of md.split('\n')) for (const m of l.replace(/[*_#>|]/g, ' ').matchAll(re)) { const s = m[1].trim(); const tail = s.slice(Math.max(0, s.length - nombre.length - 2)).trim(); for (const v of [s, tail]) if (clave(v) === clave(nombre) && /[a-zà-ÿ]/.test(v.replace(/\s+\S+$/, ''))) cuenta[v] = (cuenta[v] || 0) + 1; }
+  const mejor = Object.entries(cuenta).sort((a, b) => b[1] - a[1])[0]; if (mejor) return mejor[0];
+  return nombre.split(/\s+/).map((w, i, arr) => { const k = w.toLowerCase(); if (i === arr.length - 1 && FORMA_BIEN[k]) return FORMA_BIEN[k]; if (/\./.test(w) || /\d/.test(w)) return w; return w.charAt(0) + w.slice(1).toLowerCase(); }).join(' ');
+}
+
+// ESCALERA DEL NOMBRE LEGAL (to-do 161, decidido por Guido el 2026-10-07):
+//   ESCALÓN 0  ajuste manual `name` (del documento o de la carpeta del club) · respuesta de Guido en la cola ── gana siempre
+//   ESCALÓN 1  la portada y lo más frecuente del documento dicen LA MISMA entidad ── se usa, bien escrita
+//   ESCALÓN 2  no coinciden, o hay una sola de las dos ── PREGUNTA A LA COLA (el alta es una sola vez por club y se averigua fácil).
+//              Medido en los 175 clubes del sitio: cuando no coinciden, lo más frecuente acertaba 13 de 48 (Hellas Verona 2020, individual:
+//              portada "Hellas Verona Football Club S.p.A.", más frecuente "Hellas Verona Service S.r.l."). Cuando coinciden, 51 de 63 exactos
+//              (el resto: el sitio tiene el nombre desarrollado a mano, "Nogometni klub" por "NK").
+//   nada (ningún candidato con forma societaria: asociaciones civiles) ── el nombre de la carpeta, pendiente (como siempre)
+// La pregunta va a la cola con la CARPETA del club como documento, así se contesta una sola vez: corregir --valor "<nombre legal>".
+export function decidirNombre(md, displayName, carpeta, pdf, { escribirCola = true, ov = {} } = {}) {
+  const claveN = (s) => norm(s).replace(/^the\s+/, '').replace(/[^a-z0-9]+/g, '');
+  const aj = ajusteDe(carpeta, 'name') || (pdf ? ajusteDe(pdf, 'name') : null);
+  if (aj) return campo('name', aj.valor, `ajuste manual (Admin/ajustes-manuales.jsonl, ${aj.autor} ${aj.fecha}): ${aj.motivo}`);
+  const { caso: cq, resp: rq } = casoYRespuesta(carpeta, 'alta', 'name', carpeta);
+  if (rq && rq.decision === 'corregir' && rq.valor) return campo('name', String(rq.valor).trim(), `respuesta de Guido en la cola (${cq?.id})`);
+  if (rq && rq.decision === 'aceptar' && cq?.nombrePropuesto) return campo('name', cq.nombrePropuesto, `respuesta de Guido en la cola (${cq.id}): aceptó la propuesta`);
+  if (ov.name) return campo('name', ov.name.valor, `claude-api con cita verificada: ${ov.name.fuente}`);
+  const nl = nombreLegal(md, displayName); const frec = nl && nl.veces >= 2 ? nl.nombre : null; const port = nombrePortada(md, displayName);
+  if (port && frec && claveN(port) === claveN(frec)) return campo('name', nombreBienEscrito(port, md), `la portada y lo más frecuente del .md coinciden (${nl.veces} veces)`);
+  if (port || frec) {
+    const prop = nombreBienEscrito(port || frec, md);
+    const pregunta = `¿Cuál es el nombre legal de "${displayName}"? La portada dice ${port ? `"${port}"` : 'nada'} y lo más frecuente del documento es ${frec ? `"${frec}" (${nl.veces} veces)` : 'nada'}${nl?.otros?.length ? ` (otras formas: ${nl.otros.join('; ')})` : ''}. Propuesta: "${prop}".`;
+    if (escribirCola) agregarCaso({ pdf: carpeta, md: pdf ? pdf.replace(/\.pdf$/i, '.md') : null, etapa: 'alta', motivo: 'name', detalle: carpeta, nombrePropuesto: prop, que: pregunta, propuesta: `"${prop}" (responder aceptar si está bien; si no, corregir --valor "<nombre legal>")` });
+    return campo('name', null, 'la portada y lo más frecuente no coinciden: pregunta en la cola (node tools/cola.mjs)', 'pregunta', { pregunta });
+  }
+  return campo('name', displayName, 'no se encontró el nombre legal en el .md; se usa el nombre de la carpeta', 'pendiente', { nota: 'name es el nombre legal completo (pestaña Fuentes)' });
 }
 
 // ============================================================================
@@ -929,10 +997,7 @@ export function analizar(docArg, sitio, ov = {}) {
     else if (sitio.clubs[base]) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: `El id base '${base}' es un id HEREDADO sin país (${sitio.clubs[base].name}, ${sitio.clubs[base].country}). Admin/CONVENCIONES.md (Versión 129): el día que entra un homónimo de otro país hay que renombrar el viejo a '${base}-${String(sitio.clubs[base].country).toLowerCase()}' (su archivo, su clubId y cada sourceId). ¿Se renombra ahora?` }));
     else r.campos.push(campo('id', id, `slug de "${displayName}" + '-${iso}' (convención de clubId, Admin/CONVENCIONES.md Versión 129)`));
     // name
-    const nl = nombreLegal(md, displayName);
-    if (ov.name) r.campos.push(campo('name', ov.name.valor, `claude-api con cita verificada: ${ov.name.fuente}`));
-    else if (nl && nl.veces >= 2) r.campos.push(campo('name', nl.nombre, `el .md, ${nl.veces} veces (nombre del club + forma societaria)`, 'ok', nl.otros.length ? { nota: `otras formas vistas: ${nl.otros.join('; ')}` } : {}));
-    else r.campos.push(campo('name', displayName, nl ? `candidato visto 1 sola vez en el .md: "${nl.nombre}"` : 'no se encontró el nombre legal en el .md; se usa el nombre de la carpeta', 'pendiente', { nota: 'name es el nombre legal completo (pestaña Fuentes); completarlo cuando alguien mire el documento, no bloquea el alta' }));
+    r.campos.push(decidirNombre(md, displayName, r.carpeta, r.pdf, { ov }));
     r.campos.push(campo('displayName', displayName, 'nombre de la carpeta del club en Clubes/'));
     r.campos.push(campo('country', pais ? pais.iso2 : null, pais ? `carpeta de país "${paisCarpeta}" (tabla PAISES)` : null, pais && pais.iso2 ? 'ok' : 'pregunta', pais && pais.iso2 ? {} : { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin entrada en la tabla PAISES.` }));
     // reportingCurrency: la de HOY del país (el ejercicio puede tener otra, ver ejercicio.currency)
