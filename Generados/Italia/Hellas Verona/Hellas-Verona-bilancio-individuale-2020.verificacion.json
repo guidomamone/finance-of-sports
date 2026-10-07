@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf",
  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.md",
- "generado": "2026-10-07T00:02:00.038Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:05:01.232Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "c1e0a0f",
-  "372b04d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,6 +37,7 @@
  ],
  "notas": [
   "la nota de \"Percentuali su incassi da squadre ospitanti\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Hellas-Verona-bilancio-individuale-2020.pdf",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) Per il personale:\"): ¿Se deja afuera de la carga el cuadro de personal por Tesserati/Altri dipendenti (b36, L1178-L1181) y el detalle de tesserati (b37, L1187-L1194), porque sus 'Salari e stipendi' (25.375) no coinciden con el estado (22.858.689) e incluyen otra composición?",
   "duda de extraer que no afecta la carga: Los corrientes de b44 suman -991 mil frente a -995.095 en L263, y el total b44 L1337 (1.481) no cuadra con la suma de impuestos del estado (1.484)."
  ],

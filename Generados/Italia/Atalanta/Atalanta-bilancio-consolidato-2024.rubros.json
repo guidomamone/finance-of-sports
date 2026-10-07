@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.pdf",
   "club": "atalanta",
   "year": 2024,
-  "generatedAt": "2026-10-07T00:01:59.723Z",
+  "generatedAt": "2026-10-07T01:05:01.192Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         0
       ],
-      "glosa": "- Otras subvenciones de explotación"
+      "glosa": "- Otras subvenciones a la explotación"
     },
     {
       "label": "b) proventi da sponsorizzazioni",
@@ -54,7 +54,7 @@
       "values": [
         23.675223
       ],
-      "glosa": "b) Ingresos por patrocinio"
+      "glosa": "b) Ingresos por patrocinios"
     },
     {
       "label": "d) proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         8.14843
       ],
-      "glosa": "- Primas y/o indemnizaciones activas según art. 103, apdo. 3, NOIF"
+      "glosa": "- Primas y/o indemnizaciones activas art. 103, apdo. 3, NOIF"
     },
     {
       "label": "- proventi diversi da trasferimento diritti calciatori",
@@ -114,7 +114,7 @@
       "values": [
         3.649085
       ],
-      "glosa": "- Otros ingresos por traspaso de derechos de futbolistas"
+      "glosa": "- Ingresos diversos por transferencia de derechos de futbolistas"
     },
     {
       "label": "i) ricavi e proventi diversi",
@@ -124,7 +124,7 @@
       "values": [
         7.095469
       ],
-      "glosa": "i) Otros ingresos y beneficios de gestión"
+      "glosa": "i) Ingresos y ganancias diversos"
     },
     {
       "label": "Acquisto materiali vari e di consumo",
@@ -134,7 +134,7 @@
       "values": [
         1.377682
       ],
-      "glosa": "Compras de materiales diversos y de consumo"
+      "glosa": "Compra de materiales diversos y de consumo"
     },
     {
       "label": "Acquisto divise dipendenti",
@@ -144,7 +144,7 @@
       "values": [
         1.245242
       ],
-      "glosa": "Compras de uniformes del personal"
+      "glosa": "Compra de uniformes de empleados"
     },
     {
       "label": "Acquisto materiale pubblicitario e promozionale",
@@ -154,7 +154,7 @@
       "values": [
         0.340638
       ],
-      "glosa": "Compras de material publicitario y promocional"
+      "glosa": "Compra de material publicitario y promocional"
     },
     {
       "label": "Acquisto medicinali",
@@ -164,7 +164,7 @@
       "values": [
         0.034873
       ],
-      "glosa": "Compras de medicamentos"
+      "glosa": "Compra de medicamentos"
     },
     {
       "label": "Sconti e abbuoni su acquisti",
@@ -184,7 +184,7 @@
       "values": [
         16.538177
       ],
-      "glosa": "Honorarios y retribuciones a terceros"
+      "glosa": "Retribuciones a terceros"
     },
     {
       "label": "Altri costi per servizi",
@@ -214,7 +214,7 @@
       "values": [
         2.742316
       ],
-      "glosa": "Gastos administrativos y generales de servicios"
+      "glosa": "Gastos de administración y servicios generales"
     },
     {
       "label": "Spese Pubblicitarie",
@@ -234,7 +234,7 @@
       "values": [
         2.844729
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
     },
     {
       "label": "Costi per utenze",
@@ -244,7 +244,7 @@
       "values": [
         0.706975
       ],
-      "glosa": "Gastos de suministros"
+      "glosa": "Gastos por suministros"
     },
     {
       "label": "Manutenzioni e riparazioni",
@@ -334,7 +334,7 @@
       "values": [
         12.071867
       ],
-      "glosa": "Retribuciones contractuales de entrenadores y cuerpo técnico"
+      "glosa": "Retribuciones contractuales de entrenadores y técnicos"
     },
     {
       "label": "Salari-stipendi",
@@ -374,7 +374,7 @@
       "values": [
         0.54002
       ],
-      "glosa": "Fondo fin de carrera e indemnización por cese (F.A.F.I.C. - T.F.R.)"
+      "glosa": "F.A.F.I.C. - Fondo de indemnización por despido (T.F.R.)"
     },
     {
       "label": "F.A.F.I.C. - T.F.R.",
@@ -384,7 +384,7 @@
       "values": [
         0.630353
       ],
-      "glosa": "Fondo fin de carrera e indemnización por cese (F.A.F.I.C. - T.F.R.)"
+      "glosa": "F.A.F.I.C. - Fondo de indemnización por despido (T.F.R.)"
     },
     {
       "label": "e) altri costi",
@@ -394,7 +394,7 @@
       "values": [
         0.455305
       ],
-      "glosa": "e) Otros gastos"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "Amm. Diritti pluriennali alle prestazioni dei calciatori",
@@ -404,7 +404,7 @@
       "values": [
         48.514863
       ],
-      "glosa": "Amort. Derechos plurianuales de futbolistas"
+      "glosa": "Amort. Derechos plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "Amm. Costi capitalizzati vivaio",
@@ -414,7 +414,7 @@
       "values": [
         1.106782
       ],
-      "glosa": "Amort. Costes capitalizados de cantera"
+      "glosa": "Amort. Gastos capitalizados de cantera"
     },
     {
       "label": "Amm. Altre Immobilizzazioni",
@@ -424,7 +424,7 @@
       "values": [
         1.013991
       ],
-      "glosa": "Amort. Otro inmovilizado"
+      "glosa": "Amort. Otras inmovilizaciones"
     },
     {
       "label": "Amm. Immobili strumentali",
@@ -464,7 +464,7 @@
       "values": [
         0.220712
       ],
-      "glosa": "Amort. Equipamiento y utillaje general"
+      "glosa": "Amort. Maquinaria y utillaje genérico"
     },
     {
       "label": "Amm. Mobili macchine d'ufficio",
@@ -484,7 +484,7 @@
       "values": [
         0.027852
       ],
-      "glosa": "Amort. Equipos informáticos y electrónicos de oficina"
+      "glosa": "Amort. Equipos informáticos y electrónicos"
     },
     {
       "label": "Amm. Altri beni sociali",
@@ -494,7 +494,7 @@
       "values": [
         0.005065
       ],
-      "glosa": "Amort. Otros activos de la sociedad"
+      "glosa": "Amort. Otros bienes societarios"
     },
     {
       "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -504,7 +504,7 @@
       "values": [
         0.420854
       ],
-      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
+      "glosa": "c) Otros deterioros del inmovilizado"
     },
     {
       "label": "d) svalutazione crediti compresi nell'attivo circolante e disp. liquide",
@@ -534,7 +534,7 @@
       "values": [
         0.582109
       ],
-      "glosa": "12) Dotaciones a provisiones para riesgos"
+      "glosa": "12) Provisiones para riesgos"
     },
     {
       "label": "a) oneri da organizzazione competizioni",
@@ -554,7 +554,7 @@
       "values": [
         5.848402
       ],
-      "glosa": "b) Gastos por adquisición temporal de jugadores"
+      "glosa": "b) Gastos por adquisición temporal de prestaciones de futbolistas"
     },
     {
       "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -564,7 +564,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Minusvalías por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "c) Pérdidas por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "- premi e/o indennizzi passivi ex art.103, comma 3, NOIF",
@@ -574,7 +574,7 @@
       "values": [
         2.936943
       ],
-      "glosa": "- Primas y/o indemnizaciones pasivas según art. 103, apdo. 3, NOIF"
+      "glosa": "- Primas y/o indemnizaciones pasivas art. 103, apdo. 3, NOIF"
     },
     {
       "label": "- oneri diversi da trasferimento diritti calciatori",
@@ -584,7 +584,7 @@
       "values": [
         0.066392
       ],
-      "glosa": "- Otros gastos por traspaso de derechos de futbolistas"
+      "glosa": "- Gastos diversos por transferencia de derechos de futbolistas"
     },
     {
       "label": "e) altri oneri diversi di gestione",
@@ -594,7 +594,7 @@
       "values": [
         2.235802
       ],
-      "glosa": "e) Otros gastos de gestión"
+      "glosa": "e) Otros gastos diversos de gestión"
     }
   ]
 }

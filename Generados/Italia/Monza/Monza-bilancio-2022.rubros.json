@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
   "club": "monza",
   "year": 2022,
-  "generatedAt": "2026-10-07T00:02:00.519Z",
+  "generatedAt": "2026-10-07T01:05:01.265Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.412702
       ],
-      "glosa": "Partidos de Liga"
+      "glosa": "Partidos de liga"
     },
     {
       "label": "Gare Coppa Italia",
@@ -24,7 +24,7 @@
       "values": [
         0.010578
       ],
-      "glosa": "Partidos de Copa de Italia"
+      "glosa": "Partidos de Copa Italia"
     },
     {
       "label": "Gare Amichevoli",
@@ -44,7 +44,7 @@
       "values": [
         0.021847
       ],
-      "glosa": "Ingresos por partidos como visitante"
+      "glosa": "Ingresos por partidos fuera de casa"
     },
     {
       "label": "Abbonamenti",
@@ -64,7 +64,7 @@
       "values": [
         2.038
       ],
-      "glosa": "Fondo de mutualidad general LNPB"
+      "glosa": "Mutualidad general LNPB"
     },
     {
       "label": "Contributi Federali",
@@ -154,7 +154,7 @@
       "values": [
         0.305273
       ],
-      "glosa": "Ingresos por cesión temporal de futbolistas"
+      "glosa": "Ingresos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -164,7 +164,7 @@
       "values": [
         0.080722
       ],
-      "glosa": "Otros ingresos por gestión de futbolistas"
+      "glosa": "Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "Ricavi altre attività sportive organizzate dalla società",
@@ -214,7 +214,7 @@
       "values": [
         1.24265
       ],
-      "glosa": "6. Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6. Consumo de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -224,7 +224,7 @@
       "values": [
         1.089306
       ],
-      "glosa": "Gastos por deportistas federados"
+      "glosa": "Gastos de fichas federativas"
     },
     {
       "label": "Costi per attività sportiva",
@@ -254,7 +254,7 @@
       "values": [
         3.36279
       ],
-      "glosa": "Comisiones de agentes deportivos"
+      "glosa": "Honorarios de agentes deportivos"
     },
     {
       "label": "Costi vitto, alloggio, locomozione gare",
@@ -294,7 +294,7 @@
       "values": [
         2.613511
       ],
-      "glosa": "Gastos administrativos y generales"
+      "glosa": "Gastos de administración y generales"
     },
     {
       "label": "Spese pubblicitarie e promozionali",
@@ -304,7 +304,7 @@
       "values": [
         1.819114
       ],
-      "glosa": "Gastos de publicidad y promoción"
+      "glosa": "Gastos publicitarios y promocionales"
     },
     {
       "label": "Servizio biglietteria e controllo ingressi",
@@ -334,7 +334,7 @@
       "values": [
         0.558876
       ],
-      "glosa": "Alquiler de equipamiento deportivo y varios"
+      "glosa": "Alquiler de material deportivo y diverso"
     },
     {
       "label": "Locazione impianti sportivi",
@@ -354,7 +354,7 @@
       "values": [
         0.125089
       ],
-      "glosa": "Cánones por uso de software y similares"
+      "glosa": "Cánones de software y similares"
     },
     {
       "label": "Concessione strutture sportive",
@@ -394,7 +394,7 @@
       "values": [
         0.223423
       ],
-      "glosa": "c) Indemnización por cese laboral"
+      "glosa": "c) Indemnizaciones por fin de contrato"
     },
     {
       "label": "e) altri costi",
@@ -434,7 +434,7 @@
       "values": [
         0.006626
       ],
-      "glosa": "Marca"
+      "glosa": "Marcas"
     },
     {
       "label": "Diritti Pluriennali prest. Calciatori",
@@ -444,7 +444,7 @@
       "values": [
         13.315139
       ],
-      "glosa": "Derechos federativos de futbolistas"
+      "glosa": "Derechos de adquisición de futbolistas"
     },
     {
       "label": "Migliorie Stadio",
@@ -494,7 +494,7 @@
       "values": [
         0.001095
       ],
-      "glosa": "Instalaciones telefónicas"
+      "glosa": "Instalación telefónica"
     },
     {
       "label": "Impianti Generici",
@@ -504,7 +504,7 @@
       "values": [
         0.019703
       ],
-      "glosa": "Instalaciones genéricas"
+      "glosa": "Instalaciones generales"
     },
     {
       "label": "Attrezzatura e dotazioni",
@@ -524,7 +524,7 @@
       "values": [
         0.04659
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Macchine Elettroniche",
@@ -534,7 +534,7 @@
       "values": [
         0.021082
       ],
-      "glosa": "Equipos para procesos de información"
+      "glosa": "Equipos informáticos y electrónicos"
     },
     {
       "label": "Mobili e Arredi",
@@ -574,7 +574,7 @@
       "values": [
         0.283484
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "12. Accantonamenti per rischi",
@@ -584,7 +584,7 @@
       "values": [
         4.70175
       ],
-      "glosa": "12. Provisiones para riesgos"
+      "glosa": "12. Dotaciones a las provisiones para riesgos"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazione calciatori",
@@ -594,7 +594,7 @@
       "values": [
         0.125729
       ],
-      "glosa": "Pérdidas por traspaso de derechos federativos de futbolistas"
+      "glosa": "Pérdidas por traspaso de derechos de futbolistas"
     },
     {
       "label": "Costi per acquisizione temporanea prestazione calciatori",
@@ -604,7 +604,7 @@
       "values": [
         5.228
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Spese organizzazione gare",
@@ -634,7 +634,7 @@
       "values": [
         0.004053
       ],
-      "glosa": "Porcentaje de recaudación a equipos visitantes"
+      "glosa": "Porcentaje de recaudación de partidos a equipos visitantes"
     },
     {
       "label": "Oneri contribuzione Lega",
@@ -644,7 +644,7 @@
       "values": [
         3
       ],
-      "glosa": "Cuotas de contribución a la Liga"
+      "glosa": "Cuotas y aportaciones a la Liga"
     },
     {
       "label": "premi di preparazione",
@@ -654,7 +654,7 @@
       "values": [
         0.081054
       ],
-      "glosa": "Derechos de formación"
+      "glosa": "Derechos de formación y preparación"
     },
     {
       "label": "altri oneri",
@@ -664,7 +664,7 @@
       "values": [
         0.06743
       ],
-      "glosa": "Otras cargas"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "sopravvenienze passive e perdite su crediti",
@@ -674,7 +674,7 @@
       "values": [
         0.246107
       ],
-      "glosa": "Gastos extraordinarios y pérdidas de créditos incobrables"
+      "glosa": "Gastos extraordinarios y pérdidas por insolvencias de créditos"
     },
     {
       "label": "multe e ammende",
@@ -704,7 +704,7 @@
       "values": [
         0.106999
       ],
-      "glosa": "Suscripciones"
+      "glosa": "Suscripciones y abonos"
     },
     {
       "label": "altri",

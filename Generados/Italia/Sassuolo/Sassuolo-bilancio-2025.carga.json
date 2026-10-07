@@ -1,15 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf",
- "generado": "2026-10-07T00:12:57.681Z",
+ "generado": "2026-10-07T01:08:03.648Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
