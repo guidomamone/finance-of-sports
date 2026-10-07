@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 575 — Las respuestas de categoría se reusan entre clubes del mismo país (2026-10-07)
+
+- `cargar.mjs`, escalón B del to-do 152: una fila que iba a la cola toma la respuesta de otros clubes del mismo país si la misma etiqueta,
+  del mismo lado y en el mismo contexto (nota que la abre, o renglón título del estado: `contextoFila()` en `padres-filas.mjs`) se respondió
+  en al menos 2 clubes con la misma categoría. "altri costi" no se generaliza: cada club lo tiene bajo otro título.
+- Medido: sobre las respuestas existentes decide 34 y acierta 34; propuestas de 122 documentos idénticas salvo Bologna 2018-19 (no
+  cargado): 11 -> 7 preguntas de categoría. TODO 152 resuelto.
+
 ## Versión 574 — Una respuesta de categoría vale para los otros años del club aunque cambie la marca de lista (2026-10-07)
 
 - `cargar.mjs`, escalón A del to-do 152: una fila que iba a la cola toma la respuesta de Guido de otro año del club con la misma etiqueta

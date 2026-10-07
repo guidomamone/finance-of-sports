@@ -260,6 +260,9 @@ Mitigaciones:
  ESCALÓN 7a (to-do 152) una fila que iba a la cola toma la respuesta de Guido de OTRO AÑO del club con la misma etiqueta salvo la marca
             de lista ("b) oneri sociali" = "oneri sociali"; claveFamilia igual, sin tolerancia de letras). Compuertas: mismo lado, misma
             nota (o una es el renglón del estado y la otra su hoja en la nota) y una sola categoría entre las respuestas
+ ESCALÓN 7b (to-do 152) si no: la respuesta de OTROS CLUBES DEL MISMO PAÍS. Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo
+            contexto (la nota que la abre o, en el estado, el renglón título de arriba: contextoFila() de padres-filas.mjs), respondida
+            en al menos 2 clubes, todos con la misma categoría. La carga lo dice: "precedente del país: N clubes (...)"
  "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);
             gana la que cierra (Versión 462)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,

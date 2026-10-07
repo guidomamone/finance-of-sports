@@ -95,33 +95,6 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-152. LAS RESPUESTAS DE LA COLA NO SE REUSAN ENTRE AÑOS NI ENTRE CLUBES (Guido, 2026-10-07: "por qué pasar por Jev de nuevo si ya sabemos
-    las categorías").
-    QUÉ SE SABE:
-    - Las respuestas de categoría se aplican en `cargar.mjs` (gratis, sin lote ni Jev): el flujo que funcionó fue responder en
-      `tools/cola.mjs --responder <id> aceptar|corregir --valor <categoría>` y correr `node tools/verificar.mjs "<pdf>"` +
-      `node tools/cargar.mjs "<pdf>" --desde-verificacion` (ensayo) / `--escribir`. El lote solo hace falta cuando el documento nunca se
-      categorizó (quedó frenado en la etapa 6).
-    - Atalanta 2024 volvió a preguntar "Oneri sociali", "F.A.F.I.C. - T.F.R.", "costi per acquisizione temporanea" y "minusvalenze" ya
-      decididos en Atalanta 2021 con etiquetas casi iguales ("b) oneri sociali"): el precedente del club compara la etiqueta EXACTA.
-      Y entre clubes no hay reuso: cada club italiano nuevo volvió a preguntar lo mismo (Atalanta 30, Verona 21, Sassuolo 13, Monza 28,
-      Roma 2022 5, Lazio 26 filas).
-    - Las decisiones de Guido para Italia (2026-10-06/07), útiles como semilla: oneri sociali y TFR → wages_squad; "costi per
-      tesserati" → wages_squad; minusvalenze de jugadores → exceptional_items (como "Capital losses on disposals" de Juventus); costos de
-      préstamo de jugadores ("acquisizione temporanea") → other_expenses; ingresos por préstamo → player_sales; premios a otros clubes
-      por formación ("valorizzazione", "premi di preparazione", "Contributo Solidarietà Fifa", "premi ex art. 103 NOIF") →
-      player_amortisation; alquileres ("godimento di beni di terzi") → admin_general_expense; contribuciones a la Lega, costi specifici
-      tecnici, attività sportiva, % de TV al visitante → match_organisation_expense; provisiones → other_amortisation; amortización de
-      intangibles → player_amortisation; "da L.N.P." y "Mutualità" → broadcasting; "Proventi non audiovisivi" → sponsorship_commercial;
-      abbonamenti → season_tickets. Socios y otras secciones deportivas: "no" en todas las S.p.A. Están en `Admin/cola-revision.jsonl`
-      (líneas `tipo: respuesta`) y en `Admin/categorias-aprendidas.jsonl`.
-    HECHO EL ESCALÓN A (Versión 574): respuesta de otro año del mismo club por familia estricta. FALTA EL ESCALÓN B (diseño aprobado por
-    Guido el 2026-10-07): respuestas de OTROS CLUBES DEL MISMO PAÍS, solo para filas que iban a la cola; compuertas: misma etiqueta por
-    familia estricta Y mismo renglón padre, respondida en al menos 2 clubes, todos con la misma categoría, mismo lado. Ojo: "altri costi"
-    dio wages_squad en 4 clubes porque estaba bajo "9) per il personale"; bajo otro padre es otra cosa. Medición del A: familia con
-    tolerancia de letras confundía "materiali" con "immateriali" (Hellas Verona) y sin "solo filas que iban a la cola" cambiaba categorías
-    cargadas (Fortaleza "Auxilio hotelero").
-
 154. UNA RESPUESTA A UNA DUDA DE COLUMNA NO CAMBIA LO EXTRAÍDO (2026-10-07). Caso: Como 2025 (`Como-gruppo-pro-forma-consolidamento-2025`),
     un "Prospetto Pro-forma di Consolidamento" (.md L354-409) con columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma.
     Guido decidió perímetro individual (Como 1907). Ni la respuesta "no" a la duda e4b24c1 ("¿solo la columna pro-forma?"), ni el ajuste

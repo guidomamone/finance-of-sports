@@ -17,7 +17,7 @@
 
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
-import { normalizar } from './vocabulario.mjs';
+import { normalizar, claveFamilia } from './vocabulario.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { padreDe } from './memoria-categorias.mjs';
 
@@ -78,3 +78,19 @@ export function padres() {
 export const padreEnDoc = (md, lado, label) => padres().porDoc.get(md)?.get(`${lado}|${sinMarca(label)}`) ?? null;
 export const padreEnClub = (club, year, lado, label) => padres().porClub.get(`${club}|${year}|${lado}|${sinMarca(label)}`) ?? null;
 void relative;
+
+// CONTEXTO DE UNA FILA PARA COMPARAR ENTRE CLUBES (to-do 152, escalón B). Si una nota la abre: la nota ("nota:per servizi"). Si es una fila del
+// ESTADO, padreEnDoc() dice solo "estado", que no distingue nada: ahí el contexto es el RENGLÓN TÍTULO más cercano de arriba en la misma tabla
+// (la fila sin importes: "titulo:per il personale"). Caso: "altri costi" es wages_squad bajo "9) per il personale" y otra cosa bajo
+// "14) oneri diversi". Sin contexto, null (y el escalón B no decide).
+const mdLineas = new Map();
+const celdas = (l) => l.split('|').slice(1, -1).map((x) => x.replace(/\*/g, '').trim());
+export function contextoFila(md, label, lado) {
+  const p = padreEnDoc(md, lado, label);
+  if (p && p !== 'estado') return 'nota:' + claveFamilia(p);
+  if (!mdLineas.has(md)) { const abs = resolve(ROOT, md); mdLineas.set(md, existsSync(abs) ? readFileSync(abs, 'utf8').split('\n') : []); }
+  const L = mdLineas.get(md); const k = L.findIndex((x) => x.trim().startsWith('|') && claveFamilia(celdas(x)[0] || '') === claveFamilia(label));
+  if (k < 0) return null;
+  for (let j = k - 1; j >= 0 && L[j].trim().startsWith('|'); j--) { const c = celdas(L[j]); if (/^:?-+:?$/.test(c[0] || '')) continue; if (c[0] && c.slice(1).every((x) => !/\d/.test(x))) return 'titulo:' + claveFamilia(c[0]); }
+  return null;
+}
