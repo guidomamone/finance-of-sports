@@ -414,6 +414,9 @@ const clubs = {
   // Como: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf.
   // brandColor y su procedencia: fuentes/Italia/Como.md.
   'como-it': { id:'como-it', name:'Como 1907 S.r.l.', displayName:'Como', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#10416A' },
+  // Cremonese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Cremonese.md.
+  'cremonese-it': { id:'cremonese-it', name:'U.S. Cremonese S.p.A.', displayName:'Cremonese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#ED1C24' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

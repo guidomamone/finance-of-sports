@@ -25,4 +25,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'bologna-it': { 2019: 'it-seriea' },
   // Como (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Como".
   'como-it': { 2025: 'it-seriea' },
+  // Cremonese (alta-club.mjs, 2026-10-07): SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (it-seriea): puede haber jugado otra división).
+  'cremonese-it': { 2025: null },
 });
