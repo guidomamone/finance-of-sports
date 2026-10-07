@@ -24,6 +24,9 @@ que dice `ESTADO.md` era verdad ese día.
 - Medido: 57 de Italia, cambia solo Inter 2024-25 (mismos totales que con el ajuste manual); prueba completa (87), cambian 0.
 - AS Roma 2025: la página 22 del visor (conto economico consolidato) re-transcripta con Claude, la página sola (US$ 0,027), y
   reemplazada en el .md; lote 24 (US$ 0,36): cierra por la lectura 4. Cola de Roma 2025 e Inter 2024-25 respondida.
+- Lote 25 (categorización, US$ 0,08). Cargados Inter 2024-25 y AS Roma 2025 (auditoría P0 0, P1 0). Roma 2025: Trigoria y Stadio
+  Olimpico (alquiler de instalaciones deportivas) a gastos de partido; otras sedes, bienes y sueldos de empleados y directivos a gastos
+  generales (criterios de Italia y de club-data-mapping). To-do 157 cerrado.
 
 ## Versión 580 — To-do 157: Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra; el escalón B del 156 no entra (2026-10-07)
 

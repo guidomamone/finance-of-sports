@@ -194,10 +194,3 @@ ni en el comentario de ningún archivo de código.
     cambia Parma 2023, anular su ajuste "altri" L557). F3 como higiene opcional. Medir: ningún ok cambia de estado ni de totales; cambian
     solo Napoli 2024 (lectura 5 → 4) y Parma 2023. El escalón B ya entró como troubleshoot (Versión 581): corre solo si ninguna lectura
     cerró el resultado.
-
-157. ITALIA: AS ROMA 2025 NO CIERRA (investigado 2026-10-07 por un subagente). Los otros 3 del lote 14 se resolvieron con ajustes:
-    Lazio 2014-15 y Sampdoria 2021 cargados; Inter 2024-25 cierra por la lectura 5 y espera 4 respuestas en la cola.
-    AS Roma 2025: el conto economico (pág. 22 del visor, impreso 22, .md L805-1113) quedó como etiquetas y listas de números sueltas;
-    texto-propio-a-md.mjs tampoco lo arma (pdftotext -layout sí lo lee limpio). Decisión de Guido (2026-10-07): re-transcribir esa página
-    con Claude (la página sola, extraída con qpdf) y reemplazar ese tramo del .md; después lote --reintentar. Cifras 30/06/2025 verificadas:
-    A 270.241.005, B 305.201.964, C (13.937.648), imposte (4.985.606), utile (53.884.213). Ojo 156: 11) variazione (1.548.221) reduce costos.
