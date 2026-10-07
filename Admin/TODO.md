@@ -135,9 +135,12 @@ ni en el comentario de ningún archivo de código.
     Udinese 2021-22 y 2024-25 cierran restándolo y con el signo de los impuestos también al revés. Arreglo candidato: escalón con el total
     impreso de C (y el de impuestos) como compuerta: probar el signo leído y, si no cierra, el contrario.
 
-156. ITALIA: EL SUBTOTAL IMPRESO DESPUÉS DE SUS RENGLONES SE CUENTA DOS VECES (medido 2026-10-07, lote 14). "Totale costi per il
-    personale (9)", "Totale ammortamenti e svalutazioni (10)", "Totale oneri diversi di gestione (14)" vienen DESPUÉS de sus a)-e) y sin
-    `detalla_a`: los gastos dan el doble. Napoli 2025: 631,3 M contra 315,5 M impresos ("TOTALE COSTI DELLA PRODUZIONE B)"); el mismo
-    síntoma (gastos ≈ 2×) en Napoli 2024, Cremonese 2025, Parma 2023 y Roma 2018. Torino no lo sufre porque su subtotal va ANTES de los
-    renglones. Arreglo candidato: un subtotal "Totale ... (N)" cuyo valor es la suma de los renglones anteriores los detalla (compuerta:
-    el total B impreso).
+156. ITALIA: LOS GASTOS SALEN CASI EL DOBLE (medido 2026-10-07, lote 14; causa encontrada por un subagente). La "variazione delle
+    rimanenze" es negativa (reduce costos) y entra a gastos en valor absoluto: la suma de renglones deja de coincidir con "TOTALE COSTI
+    DELLA PRODUZIONE" por 2 x |variación|, más que la tolerancia de `cerca()` (0,05%), y `lineasDeLado.esSumaDe` no reconoce el total y
+    lo cuenta como una línea más (después `ajuste()` lo acepta por la regla "total + líneas fuera de ese total", pensada para Nottingham
+    Forest). Casos: Napoli 2024 (L255) y 2025 (L289), Cremonese 2025 (L179), Parma 2023 (L575), Roma 2018 (L1912, con costos entre
+    paréntesis). Agravantes: Napoli 2024, `cerrarNota` deja las hojas de la nota de la variación normalizadas a positivo; Parma 2023, el
+    renglón "altri" se cuenta además de su subtotal abierto por la nota b46. Se resolvieron con ajustes manuales (Admin/ajustes-manuales.jsonl,
+    2026-10-07). Arreglo candidato: (1) `esSumaDe` compara también la suma CON signo; (2) las hojas de `cerrarNota` vuelven a tomar el signo
+    impreso del renglón; (3) `ajuste()` nunca acepta el propio total entre las líneas sumadas.
