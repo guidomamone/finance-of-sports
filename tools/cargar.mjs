@@ -242,6 +242,25 @@ export async function proponerConEscalera(pdfArg, opts = {}) {
   P1.avisos.push(`escalón 1 de "no es rubro": excluir ${nombres} no cerraba; incluida, la carga cierra (su categoría va a la cola)`);
   return P1;
 }
+// POR QUÉ UN DOCUMENTO NO ESTÁ `listo-para-jev` (to-do 159, ok de Guido). El texto viejo ("no está listo-para-jev (estado listo, jev -)")
+// hablaba del proceso viejo y no decía la causa. En el proceso nuevo la marca la pone avisarRegistro() de verificar.mjs, y SOLO cuando corre
+// dentro del lote, la etapa 6 cerró y la etapa 4 no dejó números sin confirmar en los bloques que se cargan. Acá se dice cuál de esas falta,
+// con lo que ya está en disco (gratis). El conteo de la etapa 4 es de TODOS los bloques (avisarRegistro filtra por los que se cargan y por
+// los ajustes `confirmado`): por eso dice "hasta".
+function porQueNoListo(e) {
+  if (!e.md || !existsSync(resolve(ROOT, e.md))) return 'no hay .md (etapa 2 del pipeline)';
+  const leer = (suf) => { const p = resolve(ROOT, derivado(e.md, suf, { crear: false })); try { return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
+  const V = leer('.verificacion.json');
+  if (!V) return 'la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote';
+  if (V.estado !== 'ok') return `la etapa 6 (sumas) no cerró: ${(V.cola || []).length} caso(s) en la cola humana (node tools/cola.mjs)`;
+  const val = leer('.validacion.json');
+  if (!val) return 'la etapa 6 cerró, pero no hay .validacion.json (etapa 4): correr el lote';
+  // Misma condición que avisarRegistro(): una validación anterior al .md es de otra versión del .md (UC 2009: .md del 04/10, validación del 01/10).
+  if (!val.generado || new Date(val.generado).getTime() < statSync(resolve(ROOT, e.md)).mtimeMs) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote';
+  const nc = (val.noConfirmados || []).length;
+  if (nc) return `la etapa 6 cerró, pero la etapa 4 dejó hasta ${nc} número(s) sin confirmar (${derivado(e.md, '.validacion.json', { crear: false })}, "noConfirmados"; ver to-do 160)`;
+  return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';
+}
 export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true } = {}) {
   // (Versión 462) escribirCola false: el intento del escalón 1 no escribe casos en la cola; los deja en P.casosPendientes (se escriben si gana).
   const casosPendientes = [];
@@ -250,15 +269,20 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const pdf = relative(ROOT, resolve(ROOT, pdfArg));
   const P = { pdf, generado: new Date().toISOString(), frena: [], avisos: [], ejercicio: null };
   const frena = (etapa, motivo) => P.frena.push({ etapa, motivo });
+  // FRENO QUE CORTA EL ANÁLISIS (to-do 159, ok de Guido): los frenos de abajo que no pueden seguir sin un dato (sin club, sin .md, sin
+  // verificación...) devuelven la propuesta ahí mismo, y lo que viene después (categorías, socios, gestión, tie-out) NO se calculó. Sin esta
+  // marca el lote mostraba "es un alta" como si fuera lo único que faltaba: en el lote 15 se dieron las 5 altas y recién ahí aparecieron 64
+  // preguntas de categoría, socios y gestión. `cortadoEn` es la etapa del freno que cortó; el RESULTADO de lote.mjs avisa con eso.
+  const corta = (etapa, motivo) => { frena(etapa, motivo); P.cortadoEn = etapa; return P; };
 
   // ---- 1. registro
   const e = registro.find((x) => x.pdf === pdf);
-  if (!e) { frena('registro', 'el PDF no está en Admin/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); return P; }
+  if (!e) { return corta('registro', 'el PDF no está en Admin/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); }
   P.md = e.md;
   const reemplaza = REEMPLAZAR && e.cargado;
   if (e.cargado && !REEMPLAZAR) frena('registro', 'el registro dice que el ejercicio ya está cargado en el sitio');
   if (reemplaza) P.avisos.push('--reemplazar: rehace un ejercicio ya cargado');
-  if (e.jev !== 'listo-para-jev' && !reemplaza) frena('registro', `el documento no está listo-para-jev (estado ${e.estado}, jev ${e.jev || '-'})`);
+  if (e.jev !== 'listo-para-jev' && !reemplaza) frena('registro', `todavía no se puede categorizar: ${porQueNoListo(e)}`);
   P.reemplaza = reemplaza;
   // El período se recalcula con tools/periodo.mjs sobre el .md actual: el del registro puede ser de una versión anterior de periodo.mjs
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
@@ -274,7 +298,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
     if (per.nombreNoCoincide) frena('periodo', `el nombre del archivo dice otro cierre que el contenido (${per.cierre || '?'}): confirmar qué ejercicio es antes de cargarlo`);
   }
-  if (!e.md || !existsSync(resolve(ROOT, e.md))) { frena('registro', 'no hay .md en disco'); return P; }
+  if (!e.md || !existsSync(resolve(ROOT, e.md))) { return corta('registro', 'no hay .md en disco'); }
   const mdAbs = resolve(ROOT, e.md);
   const catPath = resolve(ROOT, derivado(e.md, '.categorias.json', { crear: false }));
   if (!existsSync(catPath)) { if (P.reemplaza) P.avisos.push('sin .categorias.json (año cargado a mano): cada fila sale de la escalera de categorías; una fila sin categoría frena igual'); else frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)'); }
@@ -282,19 +306,19 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
   // ---- 2. club y año
   const cr = clubDeRuta(pdf);
-  if (!cr.clubId) { frena('club', cr.via === 'ambigua' ? `la carpeta es ambigua (${cr.fuente})` : 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa'); return P; }
+  if (!cr.clubId) { return corta('club', cr.via === 'ambigua' ? `la carpeta es ambigua (${cr.fuente})` : 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa'); }
   const clubId = cr.clubId; P.clubId = clubId;
   const club = sitio.clubs[clubId]; const cd = sitio.generic[clubId];
-  if (!club || !cd) { frena('club', `${clubId} no tiene data/${clubId}-data.js registrado en CLUB_GENERIC_DATA`); return P; }
+  if (!club || !cd) { return corta('club', `${clubId} no tiene data/${clubId}-data.js registrado en CLUB_GENERIC_DATA`); }
   const alta = analizar(pdf, sitio);
-  if (alta.error) { frena('alta', alta.error); return P; }
+  if (alta.error) { return corta('alta', alta.error); }
   const campo = (n) => alta.ejercicio.campos.find((c) => c.campo === n) || {};
   if (!alta.ejercicio.cierre && per?.cierreDeducido) alta.ejercicio.cierre = per.cierre; // fecha deducida de los vecinos (arriba)
   const year = alta.ejercicio.anio ?? (per?.cierreDeducido ? Number(per.cierre.slice(0, 4)) : null); P.year = year;
   const q = quien(pdf);
   if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y onboard.mjs --quien (el que usa el registro) dice ${q.year}`);
   if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y onboard.mjs --quien dice ${q.clubId}`);
-  if (!year) { frena('año', 'no se pudo determinar el año del ejercicio'); return P; }
+  if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
   for (const n of ['anio', 'cierre', 'currency', 'reportType', 'fx']) { const c = campo(n); if (c.estado === 'pregunta') frena(`alta:${n}`, c.pregunta); }
   if (campo('reportType').valor && campo('reportType').valor !== 'official_balance_sheet') frena('alta:reportType', `reportType ${campo('reportType').valor}: esta etapa solo carga balances anuales`);
@@ -338,9 +362,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   let sf;
   if (DESDE_VERIFICACION) {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
-    if (!existsSync(pv)) { frena('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); return P; }
+    if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
     const VV = JSON.parse(readFileSync(pv, 'utf8'));
-    if (VV.estado !== 'ok') { frena('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); return P; }
+    if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
     P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs (Versión 366): se escriben como comentario en la meta del año
     // Mismo formato que seleccionarFilas(): {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
     // el paso 5 de abajo); financiero e impuesto con su signo impreso y su destino ya decidido por extraer.mjs (no por palabras).
@@ -357,8 +381,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   } else try {
     const briefing = await briefingFor(clubId, year, e.md);
     sf = seleccionarFilas({ briefing, mdText: readFileSync(mdAbs, 'utf8'), clubData: cd, year });
-  } catch (err) { frena('filas', `seleccionarFilas() falló: ${err.message}`); return P; }
-  if (!sf.ok) { frena('filas', sf.motivo); return P; }
+  } catch (err) { return corta('filas', `seleccionarFilas() falló: ${err.message}`); }
+  if (!sf.ok) { return corta('filas', sf.motivo); }
   P.seleccion = { filas: sf.raw.length, notasUsadas: sf.extra?.notasUsadas || [], refM: sf.refM };
 
   // ---- 4. categoría de cada fila

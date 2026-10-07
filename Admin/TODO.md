@@ -233,13 +233,6 @@ ni en el comentario de ningún archivo de código.
     filas homónimas y volver a agregar ambas. Arreglo: que `reemplaza` acepte también la línea (`--linea` del ajuste o `--reemplaza-linea
     N`) y saque solo esa fila. Destraba directo el to-do 157 (Bologna) y simplifica los ajustes de 155.
 
-159. EL RESULTADO DEL LOTE ESCONDE MOTIVOS DE FRENO (2026-10-07). `lote.mjs` (bloque RESULTADO, ~L370-390) muestra solo `c.frena[0]`. En el
-    lote 15 los 5 documentos decían "el club no existe en el sitio: es un alta", y se mandó a un subagente a dar las altas; al existir el
-    club, `cargar.mjs` reveló 64 preguntas de categoría, socios y gestión que el lote no había mostrado. Además el freno "[registro] el
-    documento no está listo-para-jev (estado listo, jev -)" (cargar.mjs L261) habla del proceso viejo y confunde: en el proceso nuevo
-    quiere decir "la etapa 7 no lo categorizó todavía" (ver 160). Arreglo: listar todos los motivos (o "frena por: alta + 30 categorías +
-    socios") y reescribir ese texto.
-
 160. UN DOCUMENTO QUE CIERRA NO SE CATEGORIZA SI LA ETAPA 4 DEJÓ "NO CONFIRMADOS" FALSOS (2026-10-07). `avisarRegistro()`
     (`verificar.mjs` ~L805-850) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y
     SOLO cuando corre dentro del lote (no desde `verificar.mjs` suelto): hubo que correr el lote 20 y el 21 dos veces. Casos: Napoli 2024

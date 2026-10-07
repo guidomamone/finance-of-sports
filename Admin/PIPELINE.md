@@ -25,7 +25,9 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
 - El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,12-0,32).
 - Al final: el gasto por documento y por tarea, con "N.ª vez" si esa tarea ya se había pagado para ese PDF; y el RESULTADO (listos,
-  frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja).
+  frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja). Cada frenado lista TODOS sus motivos, uno por línea; si
+  `cargar.mjs` cortó el análisis en un freno (`cortadoEn` en el `.carga.json`: sin club, sin .md, sin verificación...), lo dice, porque
+  después de resolverlo pueden aparecer más motivos (categorías, socios, gestión) que todavía no se calcularon.
 
 ### 1 Conseguir
 
@@ -264,7 +266,9 @@ Mitigaciones:
 
 ### 8 Cargar
 
-- a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página.
+- a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página. Si el
+  documento no está `listo-para-jev` en el registro, el freno dice por qué (sin `.verificacion.json`, la etapa 6 no cerró, la validación es
+  de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año.
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
 - d) **Escaleras chicas** (de dónde salió cada dato: `.carga.json` → `procedencia`, y `_escalon` / `_fuenteCat` en cada línea, Versión 525; el conteo: `node tools/estado.mjs --escalones`):

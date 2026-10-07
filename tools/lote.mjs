@@ -380,12 +380,19 @@ for (const pdf of docs.filter((d) => !testigos.has(d))) {
   else if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
   else if (!(c.frena || []).length) resultado.listo.push({ anio });
   else if ((c.frena || []).some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) resultado.yaCargado.push({ anio });
-  else resultado.frenado.push({ anio, motivo: `[${c.frena[0].etapa}] ${String(c.frena[0].motivo).slice(0, 110)}` });
+  // (to-do 159, ok de Guido) TODOS los motivos, uno por línea (antes solo c.frena[0]: Sampdoria 2021 frenaba por 4 y mostraba solo el
+  // primero, y el del período quedaba escondido), y si cargar.mjs cortó el análisis en un freno (`cortadoEn`), el aviso de que después de
+  // resolverlo pueden aparecer más (lote 15: las 5 altas escondían 64 preguntas de categoría, socios y gestión que todavía no se calculaban).
+  else resultado.frenado.push({ anio, motivos: c.frena.map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 160)}`), cortadoEn: c.cortadoEn || null });
 }
 const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
 console.log('\n=== RESULTADO ===');
 console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
 console.log(`Frenados ${resultado.frenado.length}`);
-for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(String(b.anio)))) console.log(`   ${x.anio}: ${x.motivo}`);
+for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(String(b.anio)))) {
+  const n = x.motivos.length;
+  console.log(`   ${x.anio}: frena por ${n} motivo${n === 1 ? '' : 's'}${x.cortadoEn ? ` (el análisis se cortó en "${x.cortadoEn}": después de resolverlo pueden aparecer más)` : ''}`);
+  for (const m of x.motivos) console.log(`      ${m}`);
+}
 if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
 if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }

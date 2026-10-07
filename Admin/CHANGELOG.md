@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 565 — El resultado del lote muestra todos los motivos de freno (2026-10-07)
+
+- `lote.mjs`, bloque RESULTADO: cada documento frenado lista todos sus motivos, uno por línea (antes solo el primero), y avisa si el
+  análisis se cortó en un freno y pueden aparecer más motivos después de resolverlo (`cortadoEn`, nuevo en `.carga.json`).
+- `cargar.mjs`: el freno "no está listo-para-jev" ahora dice la causa concreta (etapa 6 sin correr o sin cerrar, validación vieja,
+  números sin confirmar de la etapa 4, registro sin actualizar). Medido en 122 propuestas: mismos frenos, filas y montos; cambia solo ese texto.
+- TODO 159 resuelto.
+
 ## Versión 564 — Italia: 25 ejercicios cargados con ajustes manuales del formato italiano (2026-10-07)
 
 - Cargados AS Roma 2018 y 2022, Atalanta 2021 y 2024, Como 2025, Cremonese 2025, Hellas Verona 2020, Inter 2021-22, Lazio 2006-07,
