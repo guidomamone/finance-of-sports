@@ -5,11 +5,11 @@
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -49,6 +49,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:418.274, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2023-24",
         mix:[["Comercial / Sponsors",171.906],["Estadio",61.848],["Televisión",106.809],["Venta de Jugadores",36.596],["Otros ingresos",41.113]] },
+      { id:"atalanta-it", revenue:261.03, reportType:"official_balance_sheet",
+        sourceId:"atalanta-it-bilancio-consolidato-2024",
+        mix:[["Comercial / Sponsors",25.862],["Estadio",18.279],["Televisión",115.174],["Venta de Jugadores",80.889],["Otros ingresos",20.826]] },
     ],
   },
   2023: {
@@ -83,11 +86,13 @@ window.RANKINGS["it-seriea"] = {
   },
   2020: {
     leagueSize: null,
-    sinDato: ["hellasverona-it"],
     clubs: [
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2019-20",
         mix:[["Comercial / Sponsors",180.611],["Estadio",55.096],["Televisión",186.314],["Venta de Jugadores",192.632],["Otros ingresos",27.479]] },
+      { id:"hellasverona-it", revenue:73.45, reportType:"official_balance_sheet",
+        sourceId:"hellasverona-it-bilancio-individuale-2020",
+        mix:[["Comercial / Sponsors",2.981],["Estadio",3.627],["Televisión",32.656],["Venta de Jugadores",30.835],["Otros ingresos",3.35]] },
     ],
   },
   2019: {
