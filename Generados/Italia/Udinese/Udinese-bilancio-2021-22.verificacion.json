@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
- "generado": "2026-10-07T02:00:05.725Z",
+ "generado": "2026-10-07T20:57:06.401Z",
  "estado": "ok",
  "clubId": "udinese-it",
  "year": 2022,
@@ -63,17 +63,6 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-07"
-  },
-  {
-   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
-   "campo": "incluye",
-   "valor": "broadcasting",
-   "linea": null,
-   "categoria": "other_income",
-   "motivo": "Claude 2026-10-07: la TV (Proventi da cessioni diritti audiovisivi 36.160.511, nota L2442) está dentro del renglón 'altri' 70.918.956 del estado (L857); no se separa porque --reemplaza 'altri' también tocaría el 16) y el 17) (ver to-do 157)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
   }
  ],
  "cola": [],
@@ -81,7 +70,7 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "78.080241 = 78.08024"
+   "detalle": "78.080238 = 78.08024"
   },
   {
    "nombre": "total de gastos",
@@ -94,22 +83,17 @@
    "detalle": "cierra (como impresos)"
   },
   {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
-  },
-  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (72.965184): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "ajuste manual: fila \"altri proventi finanziari (16)\" (financiero) 121.750, en lugar de \"altri\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
   "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (5.856.187) (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
   "ajuste manual: fila \"imposte correnti (costo)\" (impuesto) (2.354.788), en lugar de \"imposte correnti\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
   "ajuste manual: fila \"imposte differite e anticipate (ingreso)\" (impuesto) 5.153.111, en lugar de \"imposte differite e anticipate\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
-  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b103 repite el conto economico con columnas de variaciones y valores UEFA; el estado oficial es b31-b32.",
   "duda de localizar que no afecta la carga: b24 parece repetir el desglose de servicios de la nota b79.",
   "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior."
@@ -118,7 +102,7 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 78.080241,
+  "ingresos": 78.080238,
   "gastos": 144.387713,
   "financiero": -5.544096,
   "impuesto": 2.798323,
@@ -161,20 +145,84 @@
    "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
   },
   {
-   "etiqueta": "contributi in conto esercizio",
+   "etiqueta": "Contributi in conto esercizio",
    "lado": "ingreso",
-   "M": 2.046228,
-   "pagina": 27,
-   "linea": 856,
-   "origen": "estado"
+   "M": 3.85834,
+   "pagina": 64,
+   "linea": 2438,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 70.918956,
-   "pagina": 27,
-   "linea": 857,
-   "origen": "estado"
+   "M": 2.2,
+   "pagina": 64,
+   "linea": 2439,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 5.925334,
+   "pagina": 64,
+   "linea": 2440,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.773293,
+   "pagina": 64,
+   "linea": 2441,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da cessioni diritti audiovisivi",
+   "lado": "ingreso",
+   "M": 36.160511,
+   "pagina": 64,
+   "linea": 2442,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea prestazione calciatori",
+   "lado": "ingreso",
+   "M": 0.0153,
+   "pagina": 64,
+   "linea": 2443,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione calciatori",
+   "lado": "ingreso",
+   "M": 16.928151,
+   "pagina": 64,
+   "linea": 2444,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri proventi da trasferimento calciatori",
+   "lado": "ingreso",
+   "M": 0.534468,
+   "pagina": 64,
+   "linea": 2445,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Rimborsi assicurativi",
+   "lado": "ingreso",
+   "M": 0.116158,
+   "pagina": 65,
+   "linea": 2497,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal) > desglose de \"Ricavi e proventi diversi\""
+  },
+  {
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 6.453626,
+   "pagina": 65,
+   "linea": 2498,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal) > desglose de \"Ricavi e proventi diversi\""
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -414,5 +462,8 @@
    "M": 5.153111,
    "linea": 908
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

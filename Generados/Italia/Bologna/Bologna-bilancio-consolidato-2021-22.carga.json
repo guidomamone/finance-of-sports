@@ -1,22 +1,14 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
- "generado": "2026-10-07T16:02:39.252Z",
+ "generado": "2026-10-07T20:57:52.145Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) ricavi delle vendite e delle prestazi\" -> other_income 0; \"Costi per attività sportiva\" -> match_organisation_expense 0.55; \"c) trattamento di fine rapporto\" -> wages_squad 0.7; \"Costi pluriennali su beni di terzi\" -> other_amortisation 0.75; \"- Contributi solidarietà\" -> other_expenses 0.5"
+   "etapa": "año",
+   "motivo": "bologna-it ya tiene el ejercicio 2022 cargado"
   },
   {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "etapa": "fuente",
+   "motivo": "sources['bologna-it-bilancio-consolidato-2021-22'] ya existe"
   }
  ],
  "avisos": [
@@ -31,33 +23,113 @@
   "revenueLines": [
    {
     "rawLabel": "1) ricavi delle vendite e delle prestazioni",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "matchday_competition",
     "amountNative": 4.50158,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.55 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
-    "rawLabel": "contributi in conto esercizio",
+    "rawLabel": "Contributi in conto esercizio",
     "normalizedCategory": "other_income",
     "amountNative": 1.962486,
     "disclosureLevel": "aggregated",
-    "_pag": 5,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "altri",
-    "normalizedCategory": "other_income",
-    "amountNative": 73.908271,
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 4.051018,
     "disclosureLevel": "aggregated",
-    "_pag": 5,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi commerciali e royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 6.936721,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.921631,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da cessione diritti televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 41.848063,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi vari",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.045,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ricavi da cessione temporanea calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.469115,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione diritti calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 15.237416,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Altri proventi da gestione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.568116,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Altri ricavi e proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.83119,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -77,9 +149,9 @@
     "amountNative": -2.351753,
     "disclosureLevel": "aggregated",
     "_pag": 65,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi specifici tecnici",
@@ -167,9 +239,9 @@
     "amountNative": -0.697597,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -217,9 +289,9 @@
     "amountNative": -0.246995,
     "disclosureLevel": "aggregated",
     "_pag": 68,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "terreni e fabbricati “costruzioni leggere”",
@@ -333,13 +405,13 @@
    },
    {
     "rawLabel": "- Contributi solidarietà",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.143354,
     "disclosureLevel": "aggregated",
     "_pag": 69,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- Premio di rendimento",
@@ -357,9 +429,9 @@
     "amountNative": -0.06475,
     "disclosureLevel": "aggregated",
     "_pag": 69,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- Costi di convocazione in Nazionale",
@@ -367,9 +439,9 @@
     "amountNative": -0.002756,
     "disclosureLevel": "aggregated",
     "_pag": 69,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- Sopravvenienze attive altri oneri di gestione calciatori",
@@ -377,9 +449,9 @@
     "amountNative": 0.007466,
     "disclosureLevel": "aggregated",
     "_pag": 69,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- Spese, ammende e multe gare",
@@ -450,7 +522,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 80.372337,
+   "officialTotalRevenue": 80.372336,
    "officialTotalExpenses": 124.159915,
    "officialPAT": -46.694143
   },
@@ -492,7 +564,7 @@
   }
  ],
  "seleccion": {
-  "filas": 44,
+  "filas": 52,
   "notasUsadas": [],
   "refM": null
  },
@@ -504,45 +576,173 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 4.50158,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.55 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 4.50158
   },
   {
-   "label": "contributi in conto esercizio",
-   "page": 5,
+   "label": "Contributi in conto esercizio",
+   "page": 63,
    "native": 1.962486,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
    "signoFijo": 1.962486,
    "cat": "other_income",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
    "destino": "revenue",
    "amountNative": 1.962486
   },
   {
-   "label": "altri",
-   "page": 5,
-   "native": 73.908271,
+   "label": "Proventi da sponsorizzazioni",
+   "page": 63,
+   "native": 4.051018,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 73.908271,
-   "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 4.051018,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
    "destino": "revenue",
-   "amountNative": 73.908271
+   "amountNative": 4.051018
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "page": 63,
+   "native": 6.936721,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 6.936721,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 6.936721
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 63,
+   "native": 1.921631,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 1.921631,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 1.921631
+  },
+  {
+   "label": "Proventi da cessione diritti televisivi",
+   "page": 63,
+   "native": 41.848063,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 41.848063,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 41.848063
+  },
+  {
+   "label": "Proventi vari",
+   "page": 63,
+   "native": 0.045,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.045,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.045
+  },
+  {
+   "label": "Ricavi da cessione temporanea calciatori",
+   "page": 63,
+   "native": 0.469115,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.469115,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.469115
+  },
+  {
+   "label": "Plusvalenze da cessione diritti calciatori",
+   "page": 63,
+   "native": 15.237416,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 15.237416,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 15.237416
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "page": 63,
+   "native": 2.568116,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 2.568116,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 2.568116
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "page": 64,
+   "native": 0.83119,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.83119,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna sin otro lote, 2026-10-07): fila de la nota Altri ricavi e proventi, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.83119
   },
   {
    "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -567,11 +767,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 2.351753,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): costi per attività sportiva → match_organisation_expense",
    "destino": "expense",
    "amountNative": -2.351753
   },
@@ -703,11 +903,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.697597,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): TFR → wages_squad",
    "destino": "expense",
    "amountNative": -0.697597
   },
@@ -779,11 +979,11 @@
    "origen": "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")",
    "signoFijo": 0.246995,
    "cat": "other_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): amortización inmaterial que no es de jugadores (mejoras en bienes de terceros)",
    "destino": "expense",
    "amountNative": -0.246995
   },
@@ -959,12 +1159,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\")",
    "signoFijo": 0.143354,
-   "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): contributo di solidarietà FIFA → player_amortisation",
    "destino": "expense",
    "amountNative": -0.143354
   },
@@ -991,11 +1191,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\")",
    "signoFijo": 0.06475,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): premi di preparazione → player_amortisation",
    "destino": "expense",
    "amountNative": -0.06475
   },
@@ -1007,11 +1207,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\")",
    "signoFijo": 0.002756,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): otros gastos menores de gestión de jugadores",
    "destino": "expense",
    "amountNative": -0.002756
   },
@@ -1023,11 +1223,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri da gestione calciatori:\")",
    "signoFijo": -0.007466,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (terminar Bologna, 2026-10-07), criterios de Italia (to-do 152): otros gastos menores de gestión de jugadores",
    "destino": "expense",
    "amountNative": 0.007466
   },
@@ -1145,17 +1345,10 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión"
-  },
-  {
-   "categoria": "Estadio"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (nota que desglosa \"7) per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\")": "gastos sin signo (se invierten)",
@@ -1167,9 +1360,9 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 80.372337,
+  "revSum": 80.372336,
   "expSum": -124.159915,
-  "officialTotalRevenue": 80.372337,
+  "officialTotalRevenue": 80.372336,
   "officialTotalExpenses": 124.159915,
   "officialPAT": -46.694143,
   "verificacion": {
@@ -1186,13 +1379,13 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 80.372337
+   "M": 80.372336
   }
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Bologna\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1232,14 +1425,14 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Bologna\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 3,
+  "motivos": 2,
+  "lineasIngreso": 11,
   "lineasGasto": 35,
   "metaFilas": 6,
   "excluidas": 0

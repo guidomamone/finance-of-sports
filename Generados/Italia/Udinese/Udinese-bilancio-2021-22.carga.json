@@ -1,26 +1,12 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
- "generado": "2026-10-07T01:57:17.205Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Costi per attività sportiva\" -> match_organisation_expense 0.6; \"Costi specifici tecnici\" -> match_organisation_expense 0.65; \"Assicurative e previdenziali\" -> admin_general_expense 0.7; \"Altre prestazioni di servizi\" -> admin_general_expense 0.55; \"noleggio attrezzature\" -> match_organisation_expense 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-07T20:57:52.953Z",
+ "frena": [],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-136.368565); queda la suma, verificada por el resultado del ejercicio"
+  "--reemplazar: rehace un ejercicio ya cargado",
+  "udinese-it 2022 ya cargado: se reemplaza",
+  "gastos: ningún total impreso igual a la suma de las líneas (-136.368565); queda la suma, verificada por el resultado del ejercicio",
+  "sources['udinese-it-bilancio-2021-22'] ya existe: se conserva"
  ],
  "ejercicio": {
   "clubId": "udinese-it",
@@ -69,24 +55,104 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "contributi in conto esercizio",
+    "rawLabel": "Contributi in conto esercizio",
     "normalizedCategory": "other_income",
-    "amountNative": 2.046228,
+    "amountNative": 3.85834,
     "disclosureLevel": "aggregated",
-    "_pag": 27,
+    "_pag": 64,
     "_escalon": 1,
     "_conf": 0.97,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "altri",
-    "normalizedCategory": "other_income",
-    "amountNative": 70.918956,
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.2,
     "disclosureLevel": "aggregated",
-    "_pag": 27,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 5.925334,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Proventi commerciali e royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.773293,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Proventi da cessioni diritti audiovisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 36.160511,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Ricavi da cessione temporanea prestazione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.0153,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 16.928151,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Altri proventi da trasferimento calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.534468,
+    "disclosureLevel": "aggregated",
+    "_pag": 64,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Rimborsi assicurativi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.116158,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Altri ricavi e proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.453626,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
    }
   ],
   "expenseLines": [
@@ -106,9 +172,9 @@
     "amountNative": -0.44203,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Spese per organizzazione gare",
@@ -126,9 +192,9 @@
     "amountNative": -8.833332,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi vitto, alloggio, locomozione gare",
@@ -146,9 +212,9 @@
     "amountNative": -0.469379,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Amministrative, pubblicitarie e generali",
@@ -166,9 +232,9 @@
     "amountNative": -3.841433,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "affitto dei campi sportivi",
@@ -206,9 +272,9 @@
     "amountNative": -0.281153,
     "disclosureLevel": "aggregated",
     "_pag": 67,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "a) salari e stipendi",
@@ -379,7 +445,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 78.080241,
+   "officialTotalRevenue": 78.080238,
    "officialTotalExpenses": 136.368565,
    "officialPAT": -69.053247
   },
@@ -393,7 +459,7 @@
   }
  },
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -459,7 +525,7 @@
   }
  ],
  "seleccion": {
-  "filas": 37,
+  "filas": 45,
   "notasUsadas": [],
   "refM": null
  },
@@ -525,34 +591,154 @@
    "amountNative": 2.212326
   },
   {
-   "label": "contributi in conto esercizio",
-   "page": 27,
-   "native": 2.046228,
+   "label": "Contributi in conto esercizio",
+   "page": 64,
+   "native": 3.85834,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 2.046228,
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.85834,
    "cat": "other_income",
    "conf": 0.97,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 2.046228
+   "amountNative": 3.85834
   },
   {
-   "label": "altri",
-   "page": 27,
-   "native": 70.918956,
+   "label": "Proventi da sponsorizzazioni",
+   "page": 64,
+   "native": 2.2,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 70.918956,
-   "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 2.2,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 70.918956
+   "amountNative": 2.2
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 64,
+   "native": 5.925334,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 5.925334,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.925334
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "page": 64,
+   "native": 0.773293,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.773293,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.773293
+  },
+  {
+   "label": "Proventi da cessioni diritti audiovisivi",
+   "page": 64,
+   "native": 36.160511,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 36.160511,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 36.160511
+  },
+  {
+   "label": "Ricavi da cessione temporanea prestazione calciatori",
+   "page": 64,
+   "native": 0.0153,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.0153,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0153
+  },
+  {
+   "label": "Plusvalenze da cessione calciatori",
+   "page": 64,
+   "native": 16.928151,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 16.928151,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.928151
+  },
+  {
+   "label": "Altri proventi da trasferimento calciatori",
+   "page": 64,
+   "native": 0.534468,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.534468,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.534468
+  },
+  {
+   "label": "Rimborsi assicurativi",
+   "page": 65,
+   "native": 0.116158,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal) > desglose de \"Ricavi e proventi diversi\")",
+   "signoFijo": 0.116158,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.116158
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "page": 65,
+   "native": 6.453626,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal) > desglose de \"Ricavi e proventi diversi\")",
+   "signoFijo": 6.453626,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.453626
   },
   {
    "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -577,11 +763,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 0.44203,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.44203
   },
@@ -608,11 +794,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 8.833332,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -8.833332
   },
@@ -639,11 +825,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 0.469379,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.469379
   },
@@ -670,11 +856,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 3.841433,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -3.841433
   },
@@ -731,11 +917,11 @@
    "origen": "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")",
    "signoFijo": 0.281153,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.281153
   },
@@ -1001,14 +1187,11 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))": "gastos con signo",
+   "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal) > desglose de \"Ricavi e proventi diversi\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"7) per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")": "gastos sin signo (se invierten)",
@@ -1018,9 +1201,9 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 78.080241,
+  "revSum": 78.080238,
   "expSum": -136.368565,
-  "officialTotalRevenue": 78.080241,
+  "officialTotalRevenue": 78.080238,
   "officialTotalExpenses": 136.368565,
   "officialPAT": -69.053247,
   "verificacion": {
@@ -1037,13 +1220,13 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 78.080241
+   "M": 78.080238
   }
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Udinese\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1083,14 +1266,14 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Udinese\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 6,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
   "lineasGasto": 25,
   "metaFilas": 6,
   "excluidas": 0

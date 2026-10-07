@@ -1,21 +1,12 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf",
- "generado": "2026-10-07T01:57:20.269Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "14 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"altri\" -> other_income 0; \"Costi per attività sportiva\" -> match_organisation_expense 0.7; \"Costi specifici tecnici\" -> match_organisation_expense 0.7; \"Costi per intermediazioni\" -> other_expenses 0.75; \"Costi per servizi da banche e soc finanz\" -> admin_general_expense 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
+ "generado": "2026-10-07T20:57:53.373Z",
+ "frena": [],
+ "avisos": [
+  "--reemplazar: rehace un ejercicio ya cargado",
+  "cremonese-it 2025 ya cargado: se reemplaza",
+  "sources['cremonese-it-bilancio-2025'] ya existe: se conserva"
  ],
- "avisos": [],
  "ejercicio": {
   "clubId": "cremonese-it",
   "year": 2025,
@@ -73,24 +64,164 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "contributi in conto esercizio",
-    "normalizedCategory": "other_income",
-    "amountNative": 5.47336,
+    "rawLabel": "Provvidenze e contributi dalla mutualità",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.81965,
     "disclosureLevel": "aggregated",
-    "_pag": 5,
-    "_escalon": 1,
-    "_conf": 0.97,
-    "_fuenteCat": "categorias.json"
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "altri",
-    "normalizedCategory": "other_income",
-    "amountNative": 50.276342,
+    "rawLabel": "Contributo solidarietà",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.58371,
     "disclosureLevel": "aggregated",
-    "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Contributo progetto solidarietà lega",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.07,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da sponsors ufficiali e istituzionali",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 37.607005,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da sponsors tecnici e fornitori ufficiali",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.901037,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari e altri sponsors",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.996392,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi televisivi campionato",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.894677,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi televisivi Coppa Italia",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.478553,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da contratto RAI Com",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.030146,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ricavi da cessione temporanea prestaz calciat.",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.8145,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Plusv, da cessione diritti pluriennali calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3.014719,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Premi di valorizz, preparaz, contr solid e altri calc",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.851697,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ricavi da attività varie del SG",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.068245,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Affitti attivi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.03,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ricavi commerciali e royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.422299,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Altri ricavi e proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.167072,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -110,9 +241,9 @@
     "amountNative": -2.481316,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Vitto, alloggio e locomozioni gare",
@@ -130,9 +261,9 @@
     "amountNative": -0.147871,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi per intermediazioni",
@@ -140,9 +271,9 @@
     "amountNative": -2.136098,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Servizio biglietteria, ingressi e stewarding",
@@ -170,9 +301,9 @@
     "amountNative": -0.504455,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi per prestazioni al personale",
@@ -180,9 +311,9 @@
     "amountNative": -0.104616,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi per utenze e spese generali",
@@ -280,9 +411,9 @@
     "amountNative": -1.3723,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Stipendi direzione",
@@ -300,9 +431,9 @@
     "amountNative": -0.288,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Altri stipendi e salari",
@@ -310,9 +441,9 @@
     "amountNative": -1.269474,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "b) oneri sociali",
@@ -330,9 +461,9 @@
     "amountNative": -0.398228,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trattamento di fine rapporto maturato",
@@ -450,9 +581,9 @@
     "amountNative": -0.4208,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Altri costi per premi e indennizzi",
@@ -460,9 +591,9 @@
     "amountNative": -2.244821,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Altri oneri da gestione calciatori",
@@ -480,9 +611,9 @@
     "amountNative": -0.377828,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multe gare ed imposte e tasse varie",
@@ -490,9 +621,9 @@
     "amountNative": -0.085823,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Altri",
@@ -549,7 +680,7 @@
   }
  },
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -589,7 +720,7 @@
   }
  ],
  "seleccion": {
-  "filas": 52,
+  "filas": 66,
   "notasUsadas": [],
   "refM": null
  },
@@ -670,36 +801,260 @@
    "amountNative": 0.009921
   },
   {
-   "label": "contributi in conto esercizio",
-   "page": 5,
-   "native": 5.47336,
+   "label": "Provvidenze e contributi dalla mutualità",
+   "page": 41,
+   "native": 3.81965,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 5.47336,
-   "cat": "other_income",
-   "conf": 0.97,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.81965,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
    "destino": "revenue",
-   "amountNative": 5.47336
+   "amountNative": 3.81965
   },
   {
-   "label": "altri",
-   "page": 5,
-   "native": 50.276342,
+   "label": "Contributo solidarietà",
+   "page": 41,
+   "native": 1.58371,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 50.276342,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 1.58371,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
    "destino": "revenue",
-   "amountNative": 50.276342
+   "amountNative": 1.58371
+  },
+  {
+   "label": "Contributo progetto solidarietà lega",
+   "page": 41,
+   "native": 0.07,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.07,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.07
+  },
+  {
+   "label": "Proventi da sponsors ufficiali e istituzionali",
+   "page": 41,
+   "native": 37.607005,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 37.607005,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 37.607005
+  },
+  {
+   "label": "Proventi da sponsors tecnici e fornitori ufficiali",
+   "page": 41,
+   "native": 0.901037,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.901037,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.901037
+  },
+  {
+   "label": "Proventi pubblicitari e altri sponsors",
+   "page": 41,
+   "native": 3.996392,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.996392,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 3.996392
+  },
+  {
+   "label": "Proventi televisivi campionato",
+   "page": 41,
+   "native": 0.894677,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.894677,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.894677
+  },
+  {
+   "label": "Proventi televisivi Coppa Italia",
+   "page": 42,
+   "native": 0.478553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.478553,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.478553
+  },
+  {
+   "label": "Proventi da contratto RAI Com",
+   "page": 42,
+   "native": 0.030146,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.030146,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.030146
+  },
+  {
+   "label": "Ricavi da cessione temporanea prestaz calciat.",
+   "page": 42,
+   "native": 0.8145,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.8145,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.8145
+  },
+  {
+   "label": "Plusv, da cessione diritti pluriennali calciatori",
+   "page": 42,
+   "native": 3.014719,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.014719,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 3.014719
+  },
+  {
+   "label": "Premi di valorizz, preparaz, contr solid e altri calc",
+   "page": 42,
+   "native": 1.851697,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 1.851697,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 1.851697
+  },
+  {
+   "label": "Ricavi da attività varie del SG",
+   "page": 42,
+   "native": 0.068245,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.068245,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.068245
+  },
+  {
+   "label": "Affitti attivi",
+   "page": 42,
+   "native": 0.03,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.03,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.03
+  },
+  {
+   "label": "Ricavi commerciali e royalties",
+   "page": 42,
+   "native": 0.422299,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.422299,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.422299
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "page": 42,
+   "native": 0.167072,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.167072,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.167072
   },
   {
    "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -724,11 +1079,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 2.481316,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -2.481316
   },
@@ -755,11 +1110,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 0.147871,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.147871
   },
@@ -771,11 +1126,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 2.136098,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -2.136098
   },
@@ -817,11 +1172,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 0.504455,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.504455
   },
@@ -833,11 +1188,11 @@
    "origen": "verificacion (nota que desglosa \"7) per servizi\")",
    "signoFijo": 0.104616,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.104616
   },
@@ -984,11 +1339,11 @@
    "origen": "verificacion (nota que desglosa \"a) salari e stipendi\")",
    "signoFijo": 1.3723,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -1.3723
   },
@@ -1015,11 +1370,11 @@
    "origen": "verificacion (nota que desglosa \"a) salari e stipendi\")",
    "signoFijo": 0.288,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.288
   },
@@ -1031,11 +1386,11 @@
    "origen": "verificacion (nota que desglosa \"a) salari e stipendi\")",
    "signoFijo": 1.269474,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -1.269474
   },
@@ -1062,11 +1417,11 @@
    "origen": "verificacion (nota que desglosa \"c) trattamento di fine rapporto\")",
    "signoFijo": 0.398228,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.398228
   },
@@ -1243,11 +1598,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
    "signoFijo": 0.4208,
    "cat": "player_amortisation",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.4208
   },
@@ -1259,11 +1614,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
    "signoFijo": 2.244821,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -2.244821
   },
@@ -1290,11 +1645,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
    "signoFijo": 0.377828,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.377828
   },
@@ -1306,11 +1661,11 @@
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
    "signoFijo": 0.085823,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
    "destino": "expense",
    "amountNative": -0.085823
   },
@@ -1374,14 +1729,10 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"7) per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"a) salari e stipendi\")": "gastos sin signo (se invierten)",
@@ -1469,9 +1820,9 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 7,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 21,
   "lineasGasto": 41,
   "metaFilas": 4,
   "excluidas": 0
