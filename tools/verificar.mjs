@@ -840,7 +840,13 @@ function avisarRegistro(md, nRubros, registro, out = null) {
       return bs.size ? bs : null;
     } catch { return null; }
   })();
-  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
+  // COMPUERTA DEL ESCALÓN 2b DE LA ETAPA 4 (to-do 160 parte 1, ok de Guido): validar-bloques.mjs marca `propuesta: 'anio-encabezado'` en un año
+  // de la fila de encabezado de una tabla. La marca sola no alcanza: el número deja de frenar solo si su línea NO es la de ninguna fila que
+  // se carga (ingresos, gastos, financiero, impuesto de la lectura que cerró). Sin `out` no se puede saber qué se carga: frena como antes.
+  // Caso: Napoli 2024, "2023" en L276 (encabezado); las filas que se cargan están en L280, L281, L284...
+  const lineasCargadas = out ? new Set([...(out.lineas || []), ...(out.financiero || []), ...(out.impuesto || [])].map((l) => Number(l.linea))) : null;
+  const pasaCompuerta = (n) => n.propuesta === 'anio-encabezado' && lineasCargadas && !lineasCargadas.has(Number(n.linea));
+  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
   if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
   const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',

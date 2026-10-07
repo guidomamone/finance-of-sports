@@ -82,10 +82,17 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
     const b = ub.bloques[id]; const segunda = segundas.get(b.pagina);
     for (let k = b.lineas[0]; k <= b.lineas[1]; k++) {
       for (const m of String(L[k - 1] || '').matchAll(NUM_RE)) {
-        const num = normNum(m[0]); if (num.length < 4) continue; // años y números chicos no se validan acá (lo cubre la suma)
+        const num = normNum(m[0]); if (num.length < 4) continue; // números chicos no se validan acá (lo cubre la suma); los años SÍ (4 cifras)
         if (segunda && segunda.has(num)) { confirmados++; continue; }
         const parecido = segunda ? [...segunda].find((x) => unDigito(x, num)) : null;
-        noConfirmados.push({ bloque: id, pagina: b.pagina, linea: k, numero: m[0], segundaLeyo: parecido || null, sinSegunda: !segunda, texto: String(L[k - 1]).slice(0, 160) });
+        // ESCALÓN 2b (to-do 160 parte 1, ok de Guido; Admin/PIPELINE.md, etapa 4): un 1900-2099 escrito tal cual en la FILA DE ENCABEZADO de una tabla (la línea siguiente
+        // es el separador "| --- |") es un año de columna, no un importe. NO se confirma ni se saca de la lista: solo se marca `propuesta`. La
+        // compuerta está en avisarRegistro() de verificar.mjs (la línea no es la de ninguna fila que se carga). Caso: Napoli 2024, L276
+        // "| C PROVENTI ED ONERI FINANZIARI | al 30.06.2024 | al 30.06.2023 |": Gemini dejó el encabezado vacío y "2023" era el único de 567
+        // números sin confirmar; frenaba la categorización con la etapa 6 cerrada al centavo. Un año dentro de un párrafo (Juventus 2021-22,
+        // L6470, "2019") o un 2.023 en una fila de importes NO se marcan.
+        const anioEncabezado = /^(19|20)\d\d$/.test(String(m[0]).trim()) && /^\|\s*:?-{3,}/.test(L[k] || '');
+        noConfirmados.push({ bloque: id, pagina: b.pagina, linea: k, numero: m[0], segundaLeyo: parecido || null, sinSegunda: !segunda, texto: String(L[k - 1]).slice(0, 160), ...(anioEncabezado ? { propuesta: 'anio-encabezado' } : {}) });
       }
     }
   }

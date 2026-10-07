@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 567 — Un año en el encabezado de una tabla ya no frena la categorización (2026-10-07)
+
+- Etapa 4, escalón 2b (`validar-bloques.mjs`): un 1900-2099 en la fila de encabezado de una tabla sigue sin confirmar pero lleva la
+  propuesta `anio-encabezado`; la compuerta en `avisarRegistro()` (`verificar.mjs`) lo deja pasar solo si su línea no es la de ninguna fila
+  que se carga. Caso: Napoli 2024, "2023" en L276.
+- Medido re-corriendo la etapa 4 (gratis) en los 10 documentos con números sin confirmar: los mismos 235, 9 marcados; con la compuerta solo
+  Napoli 2024 pasaría sin su ajuste manual (ya está cargado). Los `.validacion.json` existentes llevan la marca recién cuando se rehace la etapa 4.
+- TODO 160 queda con la parte 2.
+
 ## Versión 566 — Un solo lote a la vez (2026-10-07)
 
 - `lote.mjs` toma un candado (`Admin/.lote.lock`, en `.gitignore`) al arrancar, también en ensayo: un segundo lote sale sin tocar nada; el

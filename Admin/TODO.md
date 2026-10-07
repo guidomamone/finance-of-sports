@@ -234,13 +234,12 @@ ni en el comentario de ningún archivo de código.
     N`) y saque solo esa fila. Destraba directo el to-do 157 (Bologna) y simplifica los ajustes de 155.
 
 160. UN DOCUMENTO QUE CIERRA NO SE CATEGORIZA SI LA ETAPA 4 DEJÓ "NO CONFIRMADOS" FALSOS (2026-10-07). `avisarRegistro()`
-    (`verificar.mjs` ~L805-850) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y
-    SOLO cuando corre dentro del lote (no desde `verificar.mjs` suelto): hubo que correr el lote 20 y el 21 dos veces. Casos: Napoli 2024
-    (el único "no confirmado" era el AÑO "2023" del encabezado de la columna, L276) y Como 2025 (101 números de la tabla pro-forma con
-    encabezados de varias líneas `<br>` que el texto propio no conserva). Se destrabaron con ajustes `confirmado` generados por script desde
-    `.validacion.json` → `noConfirmados` (como Juventus 2021-22). Arreglos candidatos: (1) `validar-bloques.mjs` no cuenta como importe un
-    número de 4 cifras en una fila de encabezado (años); (2) si la etapa 6 cerró al centavo con esos números, que no frenen (misma familia
-    que el to-do 150).
+    (`verificar.mjs`) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y SOLO cuando
+    corre dentro del lote (no desde `verificar.mjs` suelto): hubo que correr el lote 20 y el 21 dos veces. Los años de encabezado (Napoli
+    2024, L276) ya no frenan desde la Versión 567 (escalón 2b de la etapa 4). Queda Como 2025: 96 números de la tabla pro-forma con
+    encabezados de varias líneas `<br>` que el texto propio no conserva (se destrabó con ajustes `confirmado` generados por script desde
+    `.validacion.json` → `noConfirmados`, como Juventus 2021-22). Arreglo candidato: si la etapa 6 cerró al centavo con esos números, que no
+    frenen (misma familia que el to-do 150).
 
 161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
     - Nombre legal: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva

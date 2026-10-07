@@ -145,6 +145,8 @@ Mitigaciones:
  ESCALÓN 0  texto propio del PDF (digital) ────── ¿el número está en su página? sí → confirmado
  ESCALÓN 1  Gemini lee la imagen de la página ─── ¿coincide? sí → confirmado
  ESCALÓN 2  Claude lee la imagen (si Gemini la rechaza) ── ¿coincide? sí → confirmado
+ ESCALÓN 2b ¿es un 1900-2099 en la fila de encabezado de una tabla? sí → sigue sin confirmar, con propuesta "anio-encabezado"
+            compuerta (avisarRegistro, etapa 6): su línea no es la de ninguna fila que se carga → no frena la categorización
  ESCALÓN 3  las sumas de la etapa 6 lo confirman
  nada → cola con los dos números
 ```
