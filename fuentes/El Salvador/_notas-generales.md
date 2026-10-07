@@ -28,8 +28,10 @@ adjuntos. La consulta es de pago bajo, por documento (verificado en
   (se ve con una "Certificación Extractada"/consulta por nombre) y confirmar que es sociedad.
 - **El CNR publica además listados mensuales "Balance General Depositado"**
   (`cnr.gob.sv/documentos/rc/balances/<año>/<período>/Balance-General-Depositado-<MES>-<AÑO>.pdf`,
-  existe, 660 KB el de ENERO-FEBRERO-2021; sin verificar qué contiene exactamente — es un listado de
-  quién depositó, no los balances). Sirve para confirmar que un club S.A. deposita año a año antes de
+  existe, 660 KB el de ENERO-FEBRERO-2021). VERIFICADO el 2026-10-07 (Guido lo bajó a mano): 339 páginas, una ficha
+  por inscripción ("Persona Jurídica o Natural", número de presentación e inscripción, tipo de balance, fecha del balance; la
+  primera es AZOR'S, S.A. de C.V., balance al 31/12/2007): es un listado de quién depositó, NO trae cifras. En el de
+  enero-febrero 2021 no aparece ningún club de fútbol. Sirve para confirmar que un club S.A. deposita año a año antes de
   pagar. No se pudo leer: el sitio responde con challenge de Cloudflare a `curl`/`WebFetch` (se pasa
   con un Browser pane real) y la descarga desde el Browser pane cae como archivo; el servidor local
   de recepción que se probó para sacarlo del navegador fue bloqueado por el navegador. Sin
