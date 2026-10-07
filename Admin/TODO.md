@@ -180,20 +180,26 @@ ni en el comentario de ningún archivo de código.
     - Para medir el arreglo: los 5 documentos cierran hoy por ajuste; sacando los ajustes de variación/total, el script tiene que dar lo
       mismo. Y la prueba completa idéntica.
 
-157. ITALIA: 4 DOCUMENTOS QUE TODAVÍA NO CIERRAN NI CON AJUSTES (2026-10-07; un subagente encontró las causas, ver abajo). Ya cierran con
-    ajustes (cargables): Milan 2023-24 (rettifiche D sin lado: `fila` 672 y (800) del lado financiero), Inter 2021-22 (D 521.197),
-    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando), Bologna 2019-20, 2020-21 y 2021-22 (cargados en la
-    Versión 569: un ajuste `fila` por línea en el 17), `--reemplaza-linea`, y en 2019-20 la D (1.868.716); las imposte NO hacían falta, ya
-    entraban netas; los ingresos, con la nota de altri ricavi, ver to-do 163). Los que faltan:
-    - Inter 2024-25: D 780.928 (L976) ya cargado como ajuste; falta que el "12) Accantonamenti per rischi" (19.420) entre restando
-      (es un rilascio). Solo la lectura 5 cerraría; hoy gana otra.
-    - Lazio 2014-15 (formato riclassificato): ajustes de impuestos ya cargados (imposte correnti (3.432.429) que no se había extraído;
-      differite/anticipate corridas de columna). Falta que "TOTALE COSTI OPERATIVI" (85,997) no se compare contra líneas que incluyen
-      ammortamenti (14,519) y accantonamenti; "Accantonamenti per rischi" +137.780 es un crédito. Solo la lectura 5 cerraría.
-    - Sampdoria 2021: renglones "di cui" contados además de su padre (6 ajustes `--valor 0` ya cargados) y la lectura 0 acepta los
-      totales como una fila más; con las hojas la cuenta da −24,414987 contra −24,414986, pero no gana la lectura 5.
-    - AS Roma 2025: el año estaba mal (se leyó 2024-06-30; ajuste `cierre` 2025-06-30 ya cargado) y el conto economico consolidato de la
-      pág. 22 (.md L805-1115) quedó transcripto como dos listas sueltas, no como tabla: hay que re-transcribir esa página (o escribirla
-      a mano) y después localizar/extraer/verificar. Datos: A 270.241.005, B 305.201.964, C (13.937.648), impuestos (4.985.606),
-      resultado (53.884.213) (L725 y L1122, en tabla bien formada).
-    Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
+157. ITALIA: 4 DOCUMENTOS QUE NO CIERRAN (investigado 2026-10-07 por un subagente, probado en una copia; las causas anotadas antes eran
+    otras). Ya cierran con ajustes y están cargados: Milan 2023-24, Inter 2021-22, Lazio 2021-22, Bologna 2019-2022. Los 4 que faltan, y
+    3 se cierran con ajustes (gratis; probados en la copia: cierran por la lectura 5):
+    - Inter 2024-25: el 12) no era el problema. El ajuste D ya cargado (L976, +780.928) no lleva `reemplaza` y la lectura 5 solo mete al
+      financiero los ajustes con `reemplaza`/`reemplazaLinea` (verificar.mjs ~L575): agregar el mismo con `--reemplaza-linea 976`:
+      node tools/ajustes.mjs --agregar "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf" fila --valor "780.928"
+        --etiqueta "rivalutazioni di partecipazioni (18)" --lado financiero --linea 976 --reemplaza-linea 976 --motivo "..."
+      567.012.038 − 482.024.122 − 35.879.464 + 780.928 − 14.491.102 = 35.398.278 (L986). Quedan 3 dudas en la cola.
+    - Lazio 2014-15: impuestos DOBLES (.md L3463-3465 con columnas corridas: L3463 933.312 es b)+c), L3464 172.710 b), L3465 760.602 c)):
+      ...ajustes.mjs --agregar "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2014-15.pdf" fila --valor "172.710"
+        --etiqueta "imposte differite (b)" --lado impuesto --linea 3464 --reemplaza-linea 3464 --motivo "..."
+      ...mismo pdf: fila --valor "760.602" --etiqueta "imposte anticipate (c)" --lado impuesto --linea 3465 --reemplaza-linea 3463
+      110.927.383 − 100.514.336 − 2.101.739 − 2.499.117 = 5.812.191 contra 5.812.193 (redondeo). Además en la lectura 0 cuenta el subtotal
+      L3425 (2.284) y el crédito L3427 (137.780) como costo; la lectura 5 no.
+    - Sampdoria 2021: L902 "i) ricavi e proventi diversi" 5.785.259 es otro "di cui" de h) (28.550 + 2.959.520 + 5.785.259 = 8.773.329):
+      ...ajustes.mjs --agregar "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf" fila --valor 0
+        --etiqueta "(sale) i) ricavi e proventi diversi" --lado ingreso --linea 902 --reemplaza-linea 902 --motivo "di cui de h)"
+      76.310.005 − 100.403.221 − 4.139.726 + 3.817.955 = −24.414.987 contra −24.414.986.
+    - AS Roma 2025: no se arregla con ajustes. El conto economico consolidato (pág. 22 del visor, impreso 22, .md L805-1113) quedó como
+      etiquetas y listas de números sueltas; texto-propio-a-md.mjs (columnas y regiones) tampoco lo arma. Opciones: escribir la tabla a mano
+      en el .md o re-transcribir esa página con Claude/Gemini (cuesta); después lote --reintentar. Cifras 30/06/2025 verificadas: A
+      270.241.005, B 305.201.964, C (13.937.648), imposte (4.985.606), utile (53.884.213). Ojo 156: 11) variazione (1.548.221) reduce costos.
+    Cambio de script a considerar (con 155/156): que en la lectura 5 un ajuste `fila` entre aunque no lleve `reemplaza`.
