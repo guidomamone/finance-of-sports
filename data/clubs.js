@@ -399,6 +399,9 @@ const clubs = {
   // Juventus: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf. brandColor AUSENTE a propósito
   // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
   'juventus-it': { id:'juventus-it', name:'Juventus Football Club S.p.A.', displayName:'Juventus', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
+  // AC Milan: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf.
+  // brandColor y su procedencia: fuentes/Italia/AC Milan.md.
+  'acmilan-it': { id:'acmilan-it', name:'A.C. Milan S.p.A.', displayName:'AC Milan', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E4002B' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
