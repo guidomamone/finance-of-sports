@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 582 — La compuerta del resultado prueba primero el resultado exacto (to-do 155, escalón 1) (2026-10-07)
+
+- `verificar.mjs`: de las 4 combinaciones de signo (financiero, impuesto), primero la que da el resultado impreso EXACTO; la tolerancia
+  ancha queda como escalón de abajo. Antes ganaba la primera dentro de la tolerancia.
+- Medido: 57 de Italia, cambia solo Cremonese 2025; prueba completa (87), cambia solo Novorizontino 2010. Los dos tenían el
+  financiero con el signo al revés en el sitio y se recargaron (`cargar.mjs --reemplazar`): Cremonese 2025 netInterest +4.261 ->
+  −4.261 EUR (Totale C impreso (4.261)); Novorizontino 2010 +1.691 -> −1.691 R$ ("Financeiras Líquidas" dentro de las despesas).
+  Auditoría P0 0, P1 0.
+
 ## Versión 581 — Escalón "ajustes del financiero sin reemplaza" en verificar.mjs (to-do 156 B); AS Roma 2025 re-transcripto (2026-10-07)
 
 - `verificar.mjs`: si ninguna lectura 0-6 cerró el RESULTADO, se repite la lectura 5 sumando también los ajustes `fila` del financiero

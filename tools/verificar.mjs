@@ -638,11 +638,21 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
     let okRes = null; let lect = null;
     if (objetivo != null && isFinite(objetivo)) {
-      for (const [sf, si, nm] of [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']]) {
-        if (!conImp && si === -1) continue;
-        const pat = suma(ing) - suma(gas) + sf * conSigno(finL) + (conImp ? si * conSigno(imp) : 0);
-        const tol5 = Math.max(1e-6, 0.5 * [...ing, ...gas, ...finL].reduce((a, f) => a + (f.u || 0), 0)); // lectura 5: exacto, a media unidad por fila
-        if (nivel >= 5 || resCerca ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
+      // (to-do 155, escalón 1, aprobado por Guido el 2026-10-07) ESCALERA DE LA COMPUERTA DEL RESULTADO: primero las 4 combinaciones de signo
+      // pidiendo el resultado EXACTO (media unidad impresa por fila, como la lectura 5); solo si ninguna es exacta, la tolerancia de siempre
+      // (cerca). Antes ganaba la primera que entraba en la tolerancia aunque otra fuera exacta. Caso: Cremonese 2025 (.md L183-198),
+      // ingresos − gastos −8.054.278; "financiero e impuesto invertidos" daba −6.976.885 (8.522 EUR de diferencia, dentro de la tolerancia) y
+      // ganaba, con el financiero cargado +4.261 contra (4.261) impreso; "impuesto invertido" da −6.985.407, el impreso exacto.
+      const COMBOS = [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']];
+      const tol5 = Math.max(1e-6, 0.5 * [...ing, ...gas, ...finL].reduce((a, f) => a + (f.u || 0), 0)); // exacto, a media unidad por fila
+      const patDe = (sf, si) => suma(ing) - suma(gas) + sf * conSigno(finL) + (conImp ? si * conSigno(imp) : 0);
+      for (const exacto of nivel >= 5 || resCerca ? [true] : [true, false]) {
+        for (const [sf, si, nm] of COMBOS) {
+          if (!conImp && si === -1) continue;
+          const pat = patDe(sf, si);
+          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; lect = nm; break; }
+        }
+        if (okRes) break;
       }
       if (!okRes) okRes = false;
       ch.push({ nombre: nombreRes, ok: okRes, detalle: okRes ? `cierra (${lect})` : `ingresos ${r6(suma(ing))} - gastos ${r6(suma(gas))} ± financiero ${r6(conSigno(fin))}${conImp ? ` ± impuesto ${r6(conSigno(imp))}` : ''} no da el impreso ${r6(objetivo)}` });

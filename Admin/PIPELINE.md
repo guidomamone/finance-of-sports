@@ -198,6 +198,9 @@ Mitigaciones:
 - Un ajuste que el script ya resuelve se anula con `node tools/ajustes.mjs --anular "<pdf>" <campo> [--etiqueta] [--valor] --motivo`
   (el archivo es un historial: el registro `anulado` gana sobre el anterior).
 - b) Resultado: ingresos − gastos ± financiero ± impuesto tiene que dar el resultado impreso.
+  Escalera de la compuerta (Versión 582, to-do 155 escalón 1): primero las 4 combinaciones de signo del financiero y del impuesto con el
+  resultado EXACTO (media unidad impresa por fila); solo si ninguna es exacta, la tolerancia de siempre. Caso: Cremonese 2025 ganaba
+  "los dos invertidos" a 8.522 EUR del impreso cuando "impuesto invertido" daba exacto.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".

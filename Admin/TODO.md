@@ -148,8 +148,9 @@ ni en el comentario de ningún archivo de código.
     - DATOS MAL HOY por la compuerta floja (valor absoluto + 0,01 M de tolerancia; cierran invirtiendo TODO el financiero, sf=-1):
       Cremonese 2025 carga netInterest +0,004261 (data/cremonese-it-data.js L119) y el C impreso es (4.261) → −0,004261 (error 8,5 mil EUR);
       Hellas Verona 2020 −0,027588 contra (27.554) (34 EUR); Bologna 2018-19 (sin cargar) −0,552236 contra (556.520).
-      Decisión de Guido (2026-10-07): Cremonese 2025 queda así hasta este escalón; se recarga cuando el script lo lea bien.
-    - Diseño: después de la escalera 0-6, si no cierra (o cierra solo con sf=-1) y hay un renglón 17) y un C impreso: re-leer fin con
+      Cremonese 2025 (y Novorizontino 2010, mismo defecto) se corrigieron con el ESCALÓN 1 (Versión 582: la compuerta prueba primero el
+      resultado exacto). Bologna 2018-19 y Hellas Verona 2020 no tienen combinación exacta: esperan el escalón 2 (el de abajo).
+    - Diseño del ESCALÓN 2 (aprobado por Guido el 2026-10-07, va después del 1): después de la escalera 0-6, si no cierra (o cierra solo con sf=-1) y hay un renglón 17) y un C impreso: re-leer fin con
       15)/16) con su signo, 17) y sus hojas como −|valor|, 17-bis con su signo (perdite desglosadas restan), D: 19) resta y 18) suma; por
       posición/bloque, no por etiqueta. Compuerta ÚNICA: |ΣFIN − C impreso| ≤ media unidad impresa por fila (si no hay C impreso: el
       resultado impreso exacto, como la lectura 5). Después se prueban los 4 (sf, si) con fin ya firmado. Anotar "escalón 17) resta".
