@@ -111,3 +111,20 @@ ni en el comentario de ningún archivo de código.
     29/9/2025 la presidente es Lauren Crampsie (Beckett Layne Ventures). Como: el presidente que firma el bilancio 2024 es Mirwan Suwarso, pero las
     fuentes se contradicen en desde cuándo lo es (noviembre de 2019 o octubre de 2024, money.it); falta la fecha para cargarlo. También quedó
     dudoso Cremonese 2023: cierra el 30/6/2023, Rossi, pero Dini fue nombrado el 6/7/2023 y pudo firmar el balance (¿`firmo`?).
+
+152. LAS RESPUESTAS DE LA COLA NO SE REUSAN ENTRE AÑOS DEL MISMO CLUB (Guido, 2026-10-07: "por qué pasar por Jev de nuevo si ya sabemos
+    las categorías"). Caso: Atalanta 2024 volvió a preguntar "Oneri sociali" (wages_squad), "F.A.F.I.C. - T.F.R.", "costi per acquisizione
+    temporanea" y "minusvalenze" cuando Guido ya los había decidido en Atalanta 2021 con etiquetas casi iguales ("b) oneri sociali"). El
+    precedente del club compara la etiqueta exacta. Arreglo candidato (escalón, con medición antes y después): normalizar la etiqueta (sin
+    "a)", "b)", numeración ni mayúsculas) al buscar el precedente y las respuestas de cola del mismo club; si coincide, se usa la misma
+    categoría sin preguntar. Medir cuántas preguntas de categoría desaparecen en los clubes italianos y que lo cargado dé idéntico.
+
+153. UNA PREGUNTA YA RESPONDIDA VUELVE CON OTRO ID (Guido, 2026-10-07). Casos: Hellas Verona 2020 (escala de las notas: 372b04d y
+    después e7639f2), Lazio 2008-09 (7ce3412 → 19e8b00) y 2022-23 (70e0974 → 38436d9): el mismo texto de pregunta, con id nuevo al
+    re-verificar, y la respuesta vieja no se aplica. Mirar cómo se arma el id del caso en tools/cola.mjs / verificar.mjs (hash de
+    pdf|etapa|motivo|detalle) y qué cambia entre corridas; la respuesta tiene que quedar atada a algo estable (como los ajustes).
+
+154. UNA RESPUESTA "NO" A UNA PREGUNTA DE COLUMNA NO CAMBIA LO EXTRAÍDO. Caso: Como 2025, duda-tema e4b24c1 "¿se carga solo la columna
+    pro-forma?" respondida "no" (Guido quiere la columna Como 1907): verificar.mjs la guarda como nota y la carga seguía con la columna del
+    grupo; se resolvió con un ajuste de perímetro y `lote.mjs --rehacer` (lote 16). Si se repite: que un "no" a una duda de columna
+    dispare el re-extraer con la columna correcta, o que la pregunta no se haga cuando el perímetro ya está fijado.
