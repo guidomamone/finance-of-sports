@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md",
- "generado": "2026-10-07T00:02:00.002Z",
+ "generado": "2026-10-07T01:43:49.474Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "cremonese-it",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -15,9 +15,9 @@
  "cola": [
   "9bad21e",
   "6155034",
-  "2b949ae",
-  "2be5de2",
-  "52ddcca",
+  "54cf874",
+  "e093d3b",
+  "c601048",
   "3fb473e"
  ],
  "chequeos": [
@@ -39,11 +39,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "duda de extraer que no afecta la carga: L1796: 1.269.474-1.201.982=67.492, no 659; el total 35.123.032 sí cuadra con 1.269.474."
+  "duda de extraer que no afecta la carga: L1796: 1.269.474-1.201.982=67.492, no 659; el total 35.123.032 sí cuadra con 1.269.474.",
+  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,

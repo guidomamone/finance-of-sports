@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2024.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2024.md",
- "generado": "2026-10-07T00:02:00.883Z",
+ "generado": "2026-10-07T01:42:17.844Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "torino-it",
  "year": 2024,
  "escala": {
   "valor": "miles",
@@ -11,11 +11,24 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2024.pdf",
+   "campo": "fila",
+   "valor": "(3.226.978)",
+   "linea": 518,
+   "etiqueta": "d) oneri diversi (17, costo)",
+   "lado": "financiero",
+   "reemplaza": "d) oneri diversi",
+   "motivo": "Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17 = (2.788.248)); la etapa 6 lo sumaba como ingreso (to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "2109e63",
-  "1cb18fc",
-  "96ed4be"
+  "b115b8a"
  ],
  "chequeos": [
   {
@@ -30,19 +43,21 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 134.541397 - gastos 114.85737 ± financiero 3.665708 ± impuesto -6.496317 no da el impreso 10.398302"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (3.226.978), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17 = (2.788.248)); la etapa 6 lo sumaba como ingreso (to-do 155))",
   "duda de localizar que no afecta la carga: Ambos cuadros reagrupan importes que ya figuran en el conto economico (b11) y en las notas b36/b42.",
   "duda de extraer que no afecta la carga: L524: el signo de 2023 (1.584.259 positivo) es inconsistente con -10.748.061 → -9.562.667, que implica un beneficio neto de impuestos de 1.185.394.",
-  "duda de extraer que no afecta la carga: L1572-L1576: la nota no se mapea exactamente a los sub-renglones a), d), e) del estado (ej. d) 13.000 no aparece en la nota)."
+  "duda de extraer que no afecta la carga: L1572-L1576: la nota no se mapea exactamente a los sub-renglones a), d), e) del estado (ej. d) 13.000 no aparece en la nota).",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -50,12 +65,12 @@
  "totales": {
   "ingresos": 134.541397,
   "gastos": 114.85737,
-  "financiero": 3.665708,
+  "financiero": -2.788248,
   "impuesto": -6.496317,
   "resultadoImpreso": 10.398302,
   "resultadoParaCargar": 10.398302,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -390,8 +405,8 @@
    "linea": 516
   },
   {
-   "etiqueta": "d) oneri diversi",
-   "M": 3.226978,
+   "etiqueta": "d) oneri diversi (17, costo)",
+   "M": -3.226978,
    "linea": 518
   }
  ],

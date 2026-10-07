@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2018.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2018.md",
- "generado": "2026-10-07T00:02:00.792Z",
+ "generado": "2026-10-07T01:42:32.546Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "torino-it",
  "year": 2018,
  "escala": {
   "valor": "unidades",
@@ -11,11 +11,24 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(400.771)",
+   "linea": 569,
+   "etiqueta": "d) oneri diversi (17, costo)",
+   "lado": "financiero",
+   "reemplaza": "d) oneri diversi",
+   "motivo": "Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "3318636",
-  "d315ca4",
-  "d3b14c7"
+  "24da311"
  ],
  "chequeos": [
   {
@@ -30,18 +43,20 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 93.803 - gastos 108.89391 ± financiero 0.91789 ± impuesto 2.61426 no da el impreso -12.361807"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (400.771), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155))",
   "duda de localizar que no afecta la carga: Mezcla ammortamenti, svalutazioni y plusvalenze ya presentes en el estado y en sus notas, por lo que su contenido es un resumen.",
-  "duda de extraer que no afecta la carga: L1555 menciona 2016 pero la tabla y el importe 2.054 coinciden con 2017 del estado; parece errata."
+  "duda de extraer que no afecta la carga: L1555 menciona 2016 pero la tabla y el importe 2.054 coinciden con 2017 del estado; parece errata.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -49,12 +64,12 @@
  "totales": {
   "ingresos": 93.803,
   "gastos": 108.89391,
-  "financiero": 0.91789,
+  "financiero": 0.116348,
   "impuesto": 2.61426,
   "resultadoImpreso": -12.361807,
   "resultadoParaCargar": -12.361807,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -381,14 +396,14 @@
    "linea": 567
   },
   {
-   "etiqueta": "d) oneri diversi",
-   "M": 0.400771,
-   "linea": 569
-  },
-  {
    "etiqueta": "D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE",
    "M": 0,
    "linea": 571
+  },
+  {
+   "etiqueta": "d) oneri diversi (17, costo)",
+   "M": -0.400771,
+   "linea": 569
   }
  ],
  "impuesto": [

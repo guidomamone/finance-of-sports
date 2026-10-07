@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2024.md",
- "generado": "2026-10-07T00:02:00.584Z",
+ "generado": "2026-10-07T01:43:38.983Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "napoli-it",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -14,9 +14,9 @@
  "ajustes": null,
  "cola": [
   "8192805",
-  "424bf17",
-  "df13bc9",
-  "06d44bf",
+  "8d70324",
+  "ebf40bc",
+  "1fd0266",
   "9105565"
  ],
  "chequeos": [
@@ -43,12 +43,13 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"f) proventi vari\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de extraer que no afecta la carga: En 2023 la nota incluye amichevoli 456.563 que el estado muestra en d) altri ricavi da gare; no afecta 2024."
+  "duda de extraer que no afecta la carga: En 2023 la nota incluye amichevoli 456.563 que el estado muestra en d) altri ricavi da gare; no afecta 2024.",
+  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,

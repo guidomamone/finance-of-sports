@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
- "generado": "2026-10-07T00:02:00.934Z",
+ "generado": "2026-10-07T01:42:56.153Z",
  "estado": "cola",
- "clubId": null,
+ "clubId": "udinese-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,10 +11,62 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "121.750",
+   "linea": 897,
+   "etiqueta": "altri proventi finanziari (16)",
+   "lado": "financiero",
+   "reemplaza": "altri",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(5.856.187)",
+   "linea": 901,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(2.354.788)",
+   "linea": 907,
+   "etiqueta": "imposte correnti (costo)",
+   "lado": "impuesto",
+   "reemplaza": "imposte correnti",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "5.153.111",
+   "linea": 908,
+   "etiqueta": "imposte differite e anticipate (ingreso)",
+   "lado": "impuesto",
+   "reemplaza": "imposte differite e anticipate",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "dac1b31",
-  "61c03d2",
   "5d98c81",
   "dac3ec4"
  ],
@@ -31,19 +83,30 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 78.080241 - gastos 144.387713 ± financiero 6.168278 ± impuesto -2.798323 no da el impreso -69.053247"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"altri proventi finanziari (16)\" (financiero) 121.750, en lugar de \"altri\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (5.856.187) (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
+  "ajuste manual: fila \"imposte correnti (costo)\" (impuesto) (2.354.788), en lugar de \"imposte correnti\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
+  "ajuste manual: fila \"imposte differite e anticipate (ingreso)\" (impuesto) 5.153.111, en lugar de \"imposte differite e anticipate\" (2026-10-07, Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b103 repite el conto economico con columnas de variaciones y valores UEFA; el estado oficial es b31-b32.",
   "duda de localizar que no afecta la carga: b24 parece repetir el desglose de servicios de la nota b79.",
-  "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior."
+  "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -51,12 +114,12 @@
  "totales": {
   "ingresos": 78.080241,
   "gastos": 144.387713,
-  "financiero": 6.168278,
-  "impuesto": -2.798323,
+  "financiero": -5.544096,
+  "impuesto": 2.798323,
   "resultadoImpreso": -69.053247,
   "resultadoParaCargar": -69.053247,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -319,30 +382,30 @@
    "linea": 895
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "17-bis) utili e perdite su cambi",
+   "M": 0.190341,
+   "linea": 903
+  },
+  {
+   "etiqueta": "altri proventi finanziari (16)",
    "M": 0.12175,
    "linea": 897
   },
   {
-   "etiqueta": "altri",
-   "M": 5.856187,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -5.856187,
    "linea": 901
-  },
-  {
-   "etiqueta": "17-bis) utili e perdite su cambi",
-   "M": 0.190341,
-   "linea": 903
   }
  ],
  "impuesto": [
   {
-   "etiqueta": "imposte correnti",
-   "M": 2.354788,
+   "etiqueta": "imposte correnti (costo)",
+   "M": -2.354788,
    "linea": 907
   },
   {
-   "etiqueta": "imposte differite e anticipate",
-   "M": -5.153111,
+   "etiqueta": "imposte differite e anticipate (ingreso)",
+   "M": 5.153111,
    "linea": 908
   }
  ]
