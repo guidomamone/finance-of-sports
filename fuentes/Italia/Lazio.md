@@ -65,3 +65,13 @@ Se completó 2014/15 a 2023/24:
 - **Técnica reutilizable**: si el sitio de un club muestra una lista "cargar más" de documentos, buscar el JSON del widget en la pestaña de red; suele traer el histórico sin tope.
 
 - **Color de marca**: `#74D1EA` (celeste) — biancoceleste (it.wikipedia, Società_Sportiva_Lazio); regla (d); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2007 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2006-07`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2009 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2008-09`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2010 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2009-10.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2009-10`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2020 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2023 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2022-23`).
