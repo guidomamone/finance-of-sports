@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.md",
- "generado": "2026-10-07T01:43:50.040Z",
+ "generado": "2026-10-07T01:49:55.762Z",
  "estado": "cola",
  "clubId": "parma-it",
  "year": 2023,
@@ -11,27 +11,70 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 557,
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "reemplaza": "altri",
+   "motivo": "el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
+   "campo": "fila",
+   "valor": "40.063",
+   "linea": 583,
+   "etiqueta": "altri (proventi finanziari)",
+   "lado": "financiero",
+   "reemplaza": "altri",
+   "motivo": "proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
+   "campo": "fila",
+   "valor": "(108.646)",
+   "linea": 587,
+   "etiqueta": "altri (oneri finanziari)",
+   "lado": "financiero",
+   "reemplaza": "altri",
+   "motivo": "ver el anterior (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
-  "44c308c",
-  "90bb2db",
-  "6057fef"
+  "44c308c"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 54.231102 y el total impreso dice 28.891375"
+   "ok": true,
+   "detalle": "28.891375 = 28.891375"
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Totale costi della produzione\" 109.315074 cierra; además se suman 33 línea(s) fuera de ese total (110.585852)"
+   "detalle": "109.315074 = 109.315074"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 54.231102 - gastos 219.900926 ± financiero 0.148709 ± impuesto 0 no da el impreso -80.492282"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
@@ -40,22 +83,27 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"altri\" (2026-10-07, el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07))",
+  "ajuste manual: fila \"altri (proventi finanziari)\" (financiero) 40.063, en lugar de \"altri\" (2026-10-07, proventi y oneri con la misma etiqueta; el oneri impreso en positivo; Totale C (L589) (68.583) (to-do 155/156, arreglo manual 2026-10-07))",
+  "ajuste manual: fila \"altri (oneri finanziari)\" (financiero) (108.646), en lugar de \"altri\" (2026-10-07, ver el anterior (to-do 155/156, arreglo manual 2026-10-07))",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: Es una reclasificación del conto economico con indicadores, duplica b12.",
   "duda de localizar que no afecta la carga: Resumen UEFA en miles que repite importes ya abiertos en las notas de ingresos y gastos.",
-  "duda de extraer que no afecta la carga: En L1519 y L1521 las variaciones (412.951; 911.706) no coinciden con la resta de columnas, aunque los importes 2023 suman el total 3.551.648 (L1522)."
+  "duda de extraer que no afecta la carga: En L1519 y L1521 las variaciones (412.951; 911.706) no coinciden con la resta de columnas, aunque los importes 2023 suman el total 3.551.648 (L1522).",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 54.231102,
-  "gastos": 219.900926,
-  "financiero": 0.148709,
+  "ingresos": 28.891375,
+  "gastos": 109.315074,
+  "financiero": -0.068583,
   "impuesto": 0,
   "resultadoImpreso": -80.492282,
   "resultadoParaCargar": -80.492282,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -81,14 +129,6 @@
    "pagina": 37,
    "linea": 1521,
    "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
-  },
-  {
-   "etiqueta": "altri",
-   "lado": "ingreso",
-   "M": 25.339727,
-   "pagina": 17,
-   "linea": 557,
-   "origen": "estado"
   },
   {
    "etiqueta": "Proventi da sponsorizzazioni",
@@ -365,10 +405,10 @@
   {
    "etiqueta": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
    "lado": "gasto",
-   "M": 0.635389,
+   "M": -0.635389,
    "pagina": 17,
    "linea": 575,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "13) altri accantonamenti",
@@ -417,14 +457,6 @@
    "pagina": 41,
    "linea": 1695,
    "origen": "nota que desglosa \"14) oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "Totale costi della produzione",
-   "lado": "gasto",
-   "M": 109.315074,
-   "pagina": 17,
-   "linea": 578,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
@@ -433,13 +465,13 @@
  },
  "financiero": [
   {
-   "etiqueta": "altri",
+   "etiqueta": "altri (proventi finanziari)",
    "M": 0.040063,
    "linea": 583
   },
   {
-   "etiqueta": "altri",
-   "M": 0.108646,
+   "etiqueta": "altri (oneri finanziari)",
+   "M": -0.108646,
    "linea": 587
   }
  ],

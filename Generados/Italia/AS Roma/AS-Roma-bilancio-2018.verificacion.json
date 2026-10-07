@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
- "generado": "2026-10-07T01:44:45.142Z",
+ "generado": "2026-10-07T01:50:42.873Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2018,
@@ -11,10 +11,64 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "45.922",
+   "linea": 1918,
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "reemplaza": "Gestione operativa netta calciatori",
+   "motivo": "resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "225",
+   "linea": 1927,
+   "etiqueta": "Risultato di terzi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "el resultado impreso es el del Gruppo (25.498); el consolidado (25.723) incluye la pérdida de terzi; se suma del lado financiero para no inflar ingresos (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 1917,
+   "etiqueta": "Totale Costi di esercizio (no es línea)",
+   "lado": "gasto",
+   "reemplaza": "Totale Costi di esercizio",
+   "motivo": "el total se contaba como una línea más; los costos son sus renglones + Ammortamenti (L1920) y Accantonamenti (L1921), impresos fuera del total (to-do 156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "82",
+   "linea": 1912,
+   "etiqueta": "Variazione delle rimanenze (reduce costos)",
+   "lado": "ingreso",
+   "reemplaza": "Variazione delle rimanenze",
+   "motivo": "la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
   "61cc972",
-  "36e07f5",
+  "bacb766",
+  "9d376b2",
   "489b11d",
   "2d25d25",
   "34c23c4",
@@ -24,18 +78,18 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "250.866 = 250.867"
+   "ok": false,
+   "detalle": "las líneas suman 296.87 y el total impreso dice 250.867"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"Totale Costi di esercizio\" 230.056 cierra; además se suman 43 línea(s) fuera de ese total (289.985)"
+   "ok": false,
+   "detalle": "las líneas suman 289.903 y el total impreso dice 230.056"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 250.866 - gastos 520.041 ± financiero -24.714 ± impuesto -7.976 no da el impreso -25.498"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
@@ -45,8 +99,13 @@
  ],
  "notas": [
   "la nota de \"c) Diritti televisivi e diritti d'immagine\" no suma el renglón (128.566 contra 128.557, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Gestione operativa netta calciatori\" (ingreso) 45.922, en lugar de \"Gestione operativa netta calciatori\" (2026-10-07, resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07))",
+  "ajuste manual: fila \"Risultato di terzi\" (financiero) 225 (2026-10-07, el resultado impreso es el del Gruppo (25.498); el consolidado (25.723) incluye la pérdida de terzi; se suma del lado financiero para no inflar ingresos (to-do 155/156, arreglo manual 2026-10-07))",
+  "ajuste manual: sale la fila \"Totale Costi di esercizio\" (2026-10-07, el total se contaba como una línea más; los costos son sus renglones + Ammortamenti (L1920) y Accantonamenti (L1921), impresos fuera del total (to-do 156, arreglo manual 2026-10-07))",
+  "ajuste manual: fila \"Variazione delle rimanenze (reduce costos)\" (ingreso) 82, en lugar de \"Variazione delle rimanenze\" (2026-10-07, la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156))",
   "duda de localizar que no afecta la carga: El cuadro por segmento parece repetir los renglones del estado consolidado sin abrir categorías nuevas.",
-  "duda de localizar que no afecta la carga: b79 abre derechos centralizados por contraparte, que ya están totalizados en b78."
+  "duda de localizar que no afecta la carga: b79 abre derechos centralizados por contraparte, que ya están totalizados en b78.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -64,14 +123,14 @@
   }
  ],
  "totales": {
-  "ingresos": 250.866,
-  "gastos": 520.041,
-  "financiero": -24.714,
+  "ingresos": 296.87,
+  "gastos": 289.903,
+  "financiero": -24.489,
   "impuesto": -7.976,
   "resultadoImpreso": -25.498,
   "resultadoParaCargar": -25.498,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -251,6 +310,22 @@
    "origen": "nota que desglosa \"e) Altri proventi\""
   },
   {
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "M": 45.922,
+   "pagina": 62,
+   "linea": 1918,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Variazione delle rimanenze (reduce costos)",
+   "lado": "ingreso",
+   "M": 0.082,
+   "pagina": 62,
+   "linea": 1912,
+   "origen": "ajuste manual"
+  },
+  {
    "etiqueta": "Indumenti sportivi e materiale tecnico",
    "lado": "gasto",
    "M": 2.267,
@@ -281,14 +356,6 @@
    "pagina": 113,
    "linea": 4074,
    "origen": "nota que desglosa \"Acquisti materie di consumo\""
-  },
-  {
-   "etiqueta": "Variazione delle rimanenze",
-   "lado": "gasto",
-   "M": 0.082,
-   "pagina": 62,
-   "linea": 1912,
-   "origen": "estado"
   },
   {
    "etiqueta": "Costi per tesserati",
@@ -563,14 +630,6 @@
    "origen": "nota que desglosa \"Oneri diversi di gestione\""
   },
   {
-   "etiqueta": "Totale Costi di esercizio",
-   "lado": "gasto",
-   "M": 230.056,
-   "pagina": 62,
-   "linea": 1917,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Ammortamento delle immobilizzazioni immateriali",
    "lado": "gasto",
    "M": 57.457,
@@ -612,6 +671,11 @@
    "etiqueta": "Proventi e oneri finanziari",
    "M": -24.714,
    "linea": 1923
+  },
+  {
+   "etiqueta": "Risultato di terzi",
+   "M": 0.225,
+   "linea": 1927
   }
  ],
  "impuesto": [

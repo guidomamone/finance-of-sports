@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2025.md",
- "generado": "2026-10-07T01:43:48.847Z",
+ "generado": "2026-10-07T01:49:54.689Z",
  "estado": "cola",
  "clubId": "napoli-it",
  "year": 2025,
@@ -11,9 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf",
+   "campo": "fila",
+   "valor": "(918.251)",
+   "linea": 320,
+   "etiqueta": "e) altri",
+   "lado": "financiero",
+   "reemplaza": "e) altri",
+   "motivo": "oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
-  "f598000",
   "a60b435",
   "18e4dba"
  ],
@@ -26,12 +39,17 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"TOTALE COSTI DELLA PRODUZIONE B)\" 315.547017 cierra; además se suman 49 línea(s) fuera de ese total (315.730007)"
+   "detalle": "315.547017 = 315.547017"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 290.860326 - gastos 631.277024 ± financiero 5.899577 ± impuesto 0.758781 no da el impreso -21.382397"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2024",
@@ -46,21 +64,24 @@
  ],
  "notas": [
   "la nota de \"11) Variaz. delle riman. mat.prime, sussid., di consumo e merci\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"e) altri\" (financiero) (918.251), en lugar de \"e) altri\" (2026-10-07, oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07))",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer que no afecta la carga: L2261 (-8.715.053) no coincide con a) imposte correnti 5.859.119 del estado; sus partes ya están en L329 y L331.",
-  "duda de extraer que no afecta la carga: La nota b88 suma intereses y diferencias de cambio juntos; se cargan solo los renglones de intereses como desglose de e) altri."
+  "duda de extraer que no afecta la carga: La nota b88 suma intereses y diferencias de cambio juntos; se cargan solo los renglones de intereses como desglose de e) altri.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 290.860326,
-  "gastos": 631.277024,
-  "financiero": 5.899577,
+  "gastos": 315.547017,
+  "financiero": 4.063075,
   "impuesto": 0.758781,
   "resultadoImpreso": -21.382397,
   "resultadoParaCargar": -21.382397,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -634,10 +655,10 @@
   {
    "etiqueta": "11) Variaz. delle riman. mat.prime, sussid., di consumo e merci",
    "lado": "gasto",
-   "M": 0.091495,
+   "M": -0.091495,
    "pagina": 6,
    "linea": 289,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "a) spese varie organizzazioni gare",
@@ -710,30 +731,17 @@
    "pagina": 54,
    "linea": 2183,
    "origen": "nota que desglosa \"g) altri oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "TOTALE COSTI DELLA PRODUZIONE B)",
-   "lado": "gasto",
-   "M": 315.547017,
-   "pagina": 6,
-   "linea": 299,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "- altri",
    "M": 4.981326,
    "linea": 316
-  },
-  {
-   "etiqueta": "e) altri",
-   "M": 0.918251,
-   "linea": 320
   },
   {
    "etiqueta": "a) utili su cambi",
@@ -744,32 +752,37 @@
    "etiqueta": "b) perdite su cambi",
    "M": 0,
    "linea": 324
+  },
+  {
+   "etiqueta": "e) altri",
+   "M": -0.918251,
+   "linea": 320
   }
  ],
  "impuesto": [
   {
    "etiqueta": "a) imposte correnti",
-   "M": 5.859119,
+   "M": -5.859119,
    "linea": 329
   },
   {
    "etiqueta": "b) imposte relative a esercizi precedenti",
-   "M": 1.117363,
+   "M": -1.117363,
    "linea": 330
   },
   {
    "etiqueta": "c) oneri (proventi) da consolidato fiscale",
-   "M": -14.574172,
+   "M": 14.574172,
    "linea": 331
   },
   {
    "etiqueta": "d) imposte differite",
-   "M": 15.489341,
+   "M": -15.489341,
    "linea": 332
   },
   {
    "etiqueta": "e) imposte anticipate",
-   "M": -7.13287,
+   "M": 7.13287,
    "linea": 333
   }
  ]
