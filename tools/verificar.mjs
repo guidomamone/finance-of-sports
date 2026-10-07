@@ -154,6 +154,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const F = JSON.parse(readFileSync(pF, 'utf8'));
   const pV = resolve(ROOT, derivado(md, '.validacion.json', { crear: false }));
   const V = existsSync(pV) ? JSON.parse(readFileSync(pV, 'utf8')) : null;
+  // (to-do 163) CAMINO DE ERROR: la última propuesta de carga marcó categorías en 0 que deberían tener número ("Televisión en 0"). Solo así
+  // se prueba el escalón de la nota del subtotal (abajo): donde el estado ya trae la TV con número (Atalanta 2024, Parma 2023) la nota no
+  // agrega nada y repartía distinto (Atalanta: TV 107,5 -> 101,8 M y dejaba de cerrar).
+  const pC = resolve(ROOT, derivado(md, '.carga.json', { crear: false }));
+  // Solo del LADO de la categoría en 0 (TV -> ingresos): en Udinese 2021-22 abría también personal y amortizaciones, 1 a 1 con otro nombre.
+  const LADO_CERO = { 'Televisión': 'ingreso', 'Estadio': 'ingreso', 'Salarios del plantel': 'gasto' }; // propuestas anteriores, sin `lado`
+  const ladosCero = (() => { try { return new Set(existsSync(pC) ? (JSON.parse(readFileSync(pC, 'utf8')).reintentar || []).filter((x) => x.categoria).map((x) => x.lado || LADO_CERO[x.categoria]).filter(Boolean) : []); } catch { return new Set(); } })();
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   const U = existsSync(pU) ? JSON.parse(readFileSync(pU, 'utf8')) : {};
   // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con nota.
@@ -292,7 +299,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     const rengs = delLado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]);
     const signoNormal = rengs.filter((f) => f[campo] < 0).length > rengs.length / 2 ? -1 : 1;
+    const salidaDe = new Map(); // (to-do 163) renglón del estado -> lo que dejó en `out` (él mismo, o las hojas de su nota)
     for (const [k, f] of delLado.entries()) {
+      const antes = out.length;
       if (f.lado === 'otro') continue; // (conOtros) solo cuenta como componente; lo ubica la lectura 3
       // escalón 1 de las notas: el grupo entero se reemplaza por las filas de la nota en el lugar de su primer renglón
       if (grupo && grupo.renglones.includes(f)) {
@@ -305,7 +314,27 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (f.tipo === 'resultado') continue;
         const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado) && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
-        if (esSumaDe(arriba) || esSumaDe(abajo)) continue;
+        if (esSumaDe(arriba) || esSumaDe(abajo)) {
+          // ESCALÓN: LA NOTA DEL SUBTOTAL (to-do 163, problema 2; ok de Guido, como escalón). La extracción puede asignar las filas de una nota
+          // al SUBTOTAL del grupo ("Totale altri ricavi e proventi") y no a un renglón: la nota reparte el grupo distinto que el estado
+          // (Sassuolo 2025: a) 50,29 M y f) 15,41 M en el estado; sponsors, TV, Lega... en la nota) y no cierra ningún renglón. Hasta acá el
+          // subtotal se salteaba (es la suma de los de arriba) y su nota no se usaba nunca: TV y sponsors quedaban en "otros ingresos". Si 2+
+          // filas de la nota, del mismo lado, suman el subtotal IMPRESO (cerrarNota, la compuerta de siempre) y los renglones que lo componen
+          // no se abrieron con una nota propia, esos renglones se reemplazan por las filas de la nota. Casos: Bologna 2019-20 y 2021-22,
+          // Sassuolo 2025, Udinese 2021-22. SOLO EN EL CAMINO DE ERROR (`ladosCero`, decisión de Guido) y del lado de la categoría en 0: donde el estado ya viene desglosado
+          // la nota repartía distinto (Atalanta 2024) o repetía lo mismo con otro nombre (Parma 2023).
+          const hijasSub = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim() && h.lado === lado);
+          let comp = null; { let acc = 0; for (let j = 0; j < arriba.length; j++) { acc += Math.abs(arriba[j][campo] || 0); if (j >= 1 && cerca(acc, Math.abs(f[campo] || 0))) { comp = arriba.slice(0, j + 1); break; } } }
+          const sueltos = comp && comp.every((x) => (salidaDe.get(x) || []).length === 1 && String(salidaDe.get(x)[0].origen || '').startsWith('estado'));
+          const cn = ladosCero.has(lado) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
+          if (cn) {
+            const quitar = new Set(comp.flatMap((x) => salidaDe.get(x))); const pos = Math.min(...[...quitar].map((x) => out.indexOf(x)));
+            for (let i = out.length - 1; i >= 0; i--) if (quitar.has(out[i])) out.splice(i, 1);
+            out.splice(pos, 0, ...conLineas(abrirAnidadas(cn.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}" (escalón: la nota del subtotal)` })), campo, 1), comp));
+            const n = `la nota del subtotal "${f.etiqueta}" suma el subtotal impreso (${r6(Math.abs(f[campo] || 0))}): reemplaza a "${comp.map((x) => x.etiqueta).join('" + "')}"`; if (campo === 'M' && !notas.includes(n)) notas.push(n);
+          }
+          continue;
+        }
         // (Versión 409, solo en la lectura 4) un subtotal igual al ÚNICO renglón que tiene arriba desde el total/subtotal anterior del mismo
         // lado es ese renglón repetido, no una fila más (esSumaDe pide dos o más). Caso: Novorizontino 2024, "Impostos incidentes sobre a
         // receita" (1.303.783) y debajo "(-) Deduções da receita bruta" (1.303.783): se restaba una vez y se sumaba otra.
@@ -332,6 +361,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
       if (c) out.push(...conLineas(abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1), [f]));
       else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M' && !desgloseTrivial(f, hijas)) { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
+      if (f.tipo === 'renglon') salidaDe.set(f, out.slice(antes));
     }
     return out;
   };

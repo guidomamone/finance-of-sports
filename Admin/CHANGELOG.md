@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 578 — La nota del subtotal abre el grupo cuando una categoría sale en 0 (2026-10-07)
+
+- `verificar.mjs`, to-do 163 problema 2: si la nota quedó asignada al subtotal del grupo y la última propuesta de carga marcó una categoría
+  en 0 de ese lado, las filas de la nota que suman el subtotal impreso reemplazan a sus renglones. `cargar.mjs` guarda el lado de cada
+  categoría en 0.
+- Medido: probado sin la condición, cambiaba Atalanta 2024 (TV 107,5 -> 101,8 M y dejaba de cerrar) y Parma 2023 (mismas cifras con otro
+  nombre); con ella, de 122 documentos solo cambian los ingresos de Cremonese 2025 y Udinese 2021-22 (TV que estaba en "altri").
+
 ## Versión 577 — Una nota con nombres repetidos se prueba solo con las filas de su lado (2026-10-07)
 
 - `verificar.mjs`, to-do 163 problema 1: si las filas que dicen abrir un renglón no lo cierran, escalón con solo las del mismo lado.

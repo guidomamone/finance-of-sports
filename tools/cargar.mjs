@@ -594,7 +594,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // de sueldos en 0, y los sueldos (nota 21, "Sueldos 705.432") quedaron adentro de "Total Gastos de Administración".
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
-      for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : lumpIng) && !suma(cats) && !cats.every((c) => incluidoEn[c])) ceros.push({ categoria: nombre });
+      for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : lumpIng) && !suma(cats) && !cats.every((c) => incluidoEn[c])) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
       const perfil = perfilDe(clubId) || {};
       const respPerfil = (campo) => { const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'perfil', `${clubId}:${campo}`); if (!resp || !caso || resp.decision !== 'corregir' || !resp.valor) return undefined; const v = /^s[ií]/i.test(resp.valor) ? true : /^no/i.test(resp.valor) ? false : undefined; if (v !== undefined && perfil[campo] !== v) guardarPerfil(clubId, campo, v, `respuesta de Guido en la cola (${resp.nota || 'sin nota'})`); return v; };
       for (const [campo, nombre, catsIng, catsGas, pregunta] of [
