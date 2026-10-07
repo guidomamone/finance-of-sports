@@ -429,6 +429,9 @@ const clubs = {
   // Monza: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Monza/Monza-bilancio-2022.pdf.
   // brandColor y su procedencia: fuentes/Italia/Monza.md.
   'monza-it': { id:'monza-it', name:'Associazione Calcio Monza S.p.A.', displayName:'Monza', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E10032' },
+  // Napoli: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Napoli.md.
+  'napoli-it': { id:'napoli-it', name:'SSC Napoli S.p.A.', displayName:'Napoli', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00ABE7' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
