@@ -4,14 +4,14 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
-//   2025: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -35,11 +35,17 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2025: {
     leagueSize: null,
-    sinDato: ["como-it","inter-it","napoli-it","udinese-it"],
+    sinDato: ["como-it","inter-it"],
     clubs: [
       { id:"juventus-it", revenue:617.1, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2024-25",
         mix:[["Comercial / Sponsors",135.88],["Estadio",76.665],["Televisión",207.91],["Venta de Jugadores",128.604],["Otros ingresos",68.042]] },
+      { id:"napoli-it", revenue:340.905, reportType:"official_balance_sheet",
+        sourceId:"napoli-it-bilancio-2025",
+        mix:[["Comercial / Sponsors",80.39],["Estadio",28.28],["Televisión",94.188],["Venta de Jugadores",129.353],["Otros ingresos",8.695]] },
+      { id:"udinese-it", revenue:166.075, reportType:"official_balance_sheet",
+        sourceId:"udinese-it-bilancio-2024-25",
+        mix:[["Comercial / Sponsors",12.467],["Estadio",11.017],["Televisión",43.314],["Venta de Jugadores",88.163],["Otros ingresos",11.115]] },
       { id:"sassuolo-it", revenue:83.067, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2025",
         mix:[["Comercial / Sponsors",0.452],["Estadio",2.617],["Televisión",19.04],["Venta de Jugadores",2.802],["Otros ingresos",58.156]] },
@@ -47,7 +53,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2024: {
     leagueSize: null,
-    sinDato: ["acmilan-it","torino-it"],
+    sinDato: ["acmilan-it"],
     clubs: [
       { id:"juventus-it", revenue:418.274, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2023-24",
@@ -55,6 +61,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"atalanta-it", revenue:261.03, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2024",
         mix:[["Comercial / Sponsors",25.862],["Estadio",18.279],["Televisión",115.174],["Venta de Jugadores",80.889],["Otros ingresos",20.826]] },
+      { id:"torino-it", revenue:139.769, reportType:"official_balance_sheet",
+        sourceId:"torino-it-bilancio-2024",
+        mix:[["Comercial / Sponsors",17.323],["Estadio",6.186],["Televisión",50.394],["Venta de Jugadores",61.595],["Otros ingresos",4.27]] },
     ],
   },
   2023: {
@@ -92,6 +101,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"atalanta-it", revenue:274.848, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2021",
         mix:[["Comercial / Sponsors",37.584],["Estadio",6.852],["Televisión",131.103],["Venta de Jugadores",63.549],["Otras secciones deportivas",0.567],["Otros ingresos",35.193]] },
+      { id:"torino-it", revenue:94.82, reportType:"official_balance_sheet",
+        sourceId:"torino-it-bilancio-2021",
+        mix:[["Comercial / Sponsors",12.637],["Estadio",1.586],["Televisión",61.516],["Venta de Jugadores",12.352],["Otras secciones deportivas",0.001],["Otros ingresos",6.727]] },
     ],
   },
   2020: {
@@ -123,6 +135,12 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:588.344, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2017-18",
         mix:[["Comercial / Sponsors",133.71],["Estadio",65.763],["Televisión",233.357],["Venta de Jugadores",119.38],["Otros ingresos",36.134]] },
+      { id:"asroma-it", revenue:346.091, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2018",
+        mix:[["Comercial / Sponsors",29.91],["Estadio",29.399],["Televisión",152.304],["Premios por competencias",61.592],["Venta de Jugadores",53.536],["Otras secciones deportivas",0.992],["Otros ingresos",18.359]] },
+      { id:"torino-it", revenue:107.404, reportType:"official_balance_sheet",
+        sourceId:"torino-it-bilancio-2018",
+        mix:[["Comercial / Sponsors",10.156],["Estadio",6.766],["Televisión",63.259],["Venta de Jugadores",19.542],["Otras secciones deportivas",0.071],["Otros ingresos",7.611]] },
     ],
   },
   2017: {
