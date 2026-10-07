@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.md",
- "generado": "2026-10-07T00:01:59.739Z",
+ "generado": "2026-10-07T22:22:12.057Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "bologna-it",
  "year": 2019,
  "escala": {
   "valor": "unidades",
@@ -17,7 +17,7 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "85.66315 = 85.66315"
+   "detalle": "85.663149 = 85.66315"
   },
   {
    "nombre": "total de gastos",
@@ -27,21 +27,23 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)"
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 85.66315 en este documento y 85.66315 en Bologna-bilancio-consolidato-2019-20.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2019: 85.663149 en este documento y 85.663149 en Bologna-bilancio-consolidato-2019-20.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (78.744181): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "la nota de \"a) ammortamento delle immobilizzazioni immateriali\" no suma el renglón (23.140565 contra 23.142564, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b69 solo muestra una fila Totale, sin apertura por categoría.",
   "duda de extraer que no afecta la carga: L2428 repite la minusvalenza ya incluida en L2376 (sin importe en el ejercicio actual).",
   "duda de extraer que no afecta la carga: El estado no imprime escala; L788 coincide con L2131 y L2107 dice 'Valori in €'."
@@ -62,14 +64,14 @@
   }
  ],
  "totales": {
-  "ingresos": 85.66315,
+  "ingresos": 85.663149,
   "gastos": 105.378569,
-  "financiero": 0.552236,
+  "financiero": -0.55652,
   "impuesto": 1.44418,
   "resultadoImpreso": -21.716119,
   "resultadoParaCargar": -21.716119,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -89,20 +91,84 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "contributi in conto esercizio",
+   "etiqueta": "Contributi in conto esercizio",
    "lado": "ingreso",
    "M": 1.238095,
-   "pagina": 24,
-   "linea": 786,
-   "origen": "estado"
+   "pagina": 53,
+   "linea": 2121,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 77.506086,
-   "pagina": 24,
-   "linea": 787,
-   "origen": "estado"
+   "M": 4.158432,
+   "pagina": 53,
+   "linea": 2122,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.59455,
+   "pagina": 53,
+   "linea": 2123,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 7.021703,
+   "pagina": 53,
+   "linea": 2124,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "M": 44.102006,
+   "pagina": 53,
+   "linea": 2125,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi vari",
+   "lado": "ingreso",
+   "M": 0.040739,
+   "pagina": 53,
+   "linea": 2126,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea calciatori",
+   "lado": "ingreso",
+   "M": 1.674437,
+   "pagina": 53,
+   "linea": 2127,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione diritti calciatori",
+   "lado": "ingreso",
+   "M": 15.154912,
+   "pagina": 53,
+   "linea": 2128,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "M": 1.83184,
+   "pagina": 53,
+   "linea": 2129,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 2.927466,
+   "pagina": 53,
+   "linea": 2130,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -354,18 +420,18 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "altri",
-   "M": -0.000002,
+   "M": 0.000002,
    "linea": 824
   },
   {
    "etiqueta": "altri",
-   "M": -0.006223,
+   "M": 0.006223,
    "linea": 828
   },
   {
@@ -375,7 +441,7 @@
   },
   {
    "etiqueta": "17-bis) utili e perdite su cambi",
-   "M": 0.008367,
+   "M": -0.008367,
    "linea": 834
   }
  ],
@@ -395,5 +461,8 @@
    "M": 0.005014,
    "linea": 840
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }
