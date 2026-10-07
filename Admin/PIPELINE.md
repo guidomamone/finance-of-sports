@@ -285,7 +285,8 @@ Mitigaciones:
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página. Si el
   documento no está `listo-para-jev` en el registro, el freno dice por qué (sin `.verificacion.json`, la etapa 6 no cerró, la validación es
   de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
-- b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año.
+- b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
+  también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
 - c) Después corre `audit.js`; si da un error grave, revierte solo.
 - d) **Escaleras chicas** (de dónde salió cada dato: `.carga.json` → `procedencia`, y `_escalon` / `_fuenteCat` en cada línea, Versión 525; el conteo: `node tools/estado.mjs --escalones`):
 

@@ -167,15 +167,15 @@ ni en el comentario de ningún archivo de código.
 
 
 161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
-    - Nombre legal: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
+    - Nombre legal (diseño aprobado por Guido el 2026-10-07): escalón 0 ajuste `name` (nuevo); escalón 1 el nombre de la portada (acierta
+      en los 5 casos medidos); escalón 2 según perímetro: individual → el más frecuente, consolidado → Claude con cita. Mayúsculas: la
+      variante bien escrita del propio documento. Casos: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
       Sassuolo Calcio Srl" (truncado), "Roma S.r.l.", "Calcio Monza S.p.A." y varios en MAYÚSCULAS ("BOLOGNA F.C. 1909 S.P.A."). Se corrigieron
       a mano en `data/clubs.js` y en la cabecera del data file (no hay flag ni ajuste `name`; `ajustes.mjs` lo lista en TIPO_DE_CAMPO de
       alta-club pero no hay campo). Arreglo: preferir el título del .md / la firma del balance, normalizar mayúsculas, y un ajuste `name`.
     - reportType: Monza 2022 salió "estado intermedio" por la palabra "semestre" en un comentario de gestión (el doc dice "Bilancio
       d'Esercizio al 31 dicembre 2022"). Se resolvió con ajustes `reportType` y `cierre`.
     - Cierre: para Monza propuso 30/06 por el patrón del país cuando el documento cierra el 31/12.
-    - El alta escribe tipos de cambio nuevos en `data/currency-map.js` (FX_CLOSE) que quedan fuera del commit del alta (el subagente los
-      commiteó aparte).
     - Ya arreglado en la Versión 562: el alta no leía el ajuste de perímetro.
 
 163. LA NOTA Y EL ESTADO REPARTEN DISTINTO Y EL DESGLOSE NO SE ABRE (2026-10-07). Sassuolo 2025: el estado separa "5) Altri ricavi e
