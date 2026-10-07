@@ -56,3 +56,5 @@ devolvió): verificar al transcribir. **Falta 2023/24 y 2024/25** (la nota anter
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2020 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf` (sourceId `bologna-it-bilancio-consolidato-2019-20`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf` (sourceId `bologna-it-bilancio-consolidato-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf` (sourceId `bologna-it-bilancio-consolidato-2021-22`).
