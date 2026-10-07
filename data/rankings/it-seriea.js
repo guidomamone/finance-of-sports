@@ -6,10 +6,10 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -19,8 +19,8 @@
 //   2013: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2010: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2010: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2009: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2006: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2005: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -56,20 +56,24 @@ window.RANKINGS["it-seriea"] = {
   },
   2023: {
     leagueSize: null,
-    sinDato: ["lazio-it"],
     clubs: [
       { id:"juventus-it", revenue:547.301, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2022-23",
         mix:[["Comercial / Sponsors",194.34],["Estadio",66.827],["Televisión",170.772],["Venta de Jugadores",76.243],["Otros ingresos",39.12]] },
+      { id:"lazio-it", revenue:166.594, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2022-23",
+        mix:[["Comercial / Sponsors",25.032],["Estadio",19.471],["Televisión",110.825],["Venta de Jugadores",5.569],["Otros ingresos",5.697]] },
     ],
   },
   2022: {
     leagueSize: null,
-    sinDato: ["asroma-it"],
     clubs: [
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2021-22",
         mix:[["Comercial / Sponsors",173.443],["Estadio",33.544],["Televisión",177.124],["Venta de Jugadores",42.363],["Otros ingresos",30.628]] },
+      { id:"asroma-it", revenue:213.852, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2022-consolidato",
+        mix:[["Comercial / Sponsors",40.06],["Estadio",41.505],["Televisión",81.558],["Venta de Jugadores",15.253],["Otros ingresos",35.475]] },
       { id:"monza-it", revenue:34.903, reportType:"official_balance_sheet",
         sourceId:"monza-it-bilancio-2022",
         mix:[["Comercial / Sponsors",11.158],["Estadio",2.926],["Televisión",18.355],["Venta de Jugadores",0.412],["Otros ingresos",2.053]] },
@@ -93,6 +97,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2019-20",
         mix:[["Comercial / Sponsors",180.611],["Estadio",55.096],["Televisión",186.314],["Venta de Jugadores",192.632],["Otros ingresos",27.479]] },
+      { id:"lazio-it", revenue:137.662, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2019-20",
+        mix:[["Comercial / Sponsors",15.255],["Estadio",10.607],["Televisión",87.735],["Venta de Jugadores",20.851],["Otros ingresos",3.214]] },
       { id:"hellasverona-it", revenue:73.45, reportType:"official_balance_sheet",
         sourceId:"hellasverona-it-bilancio-individuale-2020",
         mix:[["Comercial / Sponsors",2.981],["Estadio",3.627],["Televisión",32.656],["Venta de Jugadores",30.835],["Otros ingresos",3.35]] },
@@ -177,6 +184,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:298.553, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2009-10",
         mix:[["Comercial / Sponsors",56.052],["Estadio",22.666],["Televisión",185.827],["Venta de Jugadores",17.995],["Otros ingresos",16.013]] },
+      { id:"lazio-it", revenue:120.872, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2009-10",
+        mix:[["Comercial / Sponsors",30.234],["Estadio",12.27],["Televisión",55.787],["Venta de Jugadores",11.281],["Otros ingresos",11.299]] },
     ],
   },
   2009: {
@@ -185,6 +195,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:339.83, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2008-09",
         mix:[["Comercial / Sponsors",65.205],["Estadio",26.057],["Televisión",212.505],["Venta de Jugadores",24.411],["Otros ingresos",11.651]] },
+      { id:"lazio-it", revenue:130.035, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2008-09",
+        mix:[["Comercial / Sponsors",30.359],["Estadio",13.589],["Televisión",67.767],["Venta de Jugadores",14.505],["Otros ingresos",3.814]] },
     ],
   },
   2008: {
