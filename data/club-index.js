@@ -128,7 +128,7 @@ window.CLUB_INDEX = {
   "millonarios-co": {"n":"Millonarios","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "mirassol": {"n":"Mirassol","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "monchengladbach-de": {"n":"Borussia Mönchengladbach","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
-  "monza-it": {"n":"Monza","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
+  "monza-it": {"n":"Monza","c":"IT","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "nagoyagrampus": {"n":"Nagoya Grampus","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "napoli-it": {"n":"Napoli","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "newcastle-gb": {"n":"Newcastle United","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

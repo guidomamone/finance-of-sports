@@ -60,6 +60,18 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Claudio Lotito', corto:'Lotito', cargo:'Presidente', desde:'2004-06-19', hasta:null,
       fuente:'https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio', confirmada:true },
   ],
+  'como-it': [
+    // Mirwan Suwarso (familia Hartono, dueña desde 2019), firma los bilanci como "Il Presidente". Las fuentes difieren en la fecha de la
+    // presidencia (2019 o 2024); decisión de Guido 2026-10-07: desde 2019 (solo el año; 01/01 por convención).
+    { nombre:'Mirwan Suwarso', corto:'Suwarso', cargo:'Presidente', desde:'2019-01-01', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Como_1907', confirmada:true },
+  ],
+  'monza-it': [
+    // Desde el 8/7/2022 el club no tiene presidente persona: lo controla Fininvest (sociedad de la familia Berlusconi). Decisión de Guido
+    // 2026-10-07: se carga Fininvest como gestión (excepción a "el dueño solo si es una persona con nombre", ver ar.js).
+    { nombre:'Fininvest', corto:'Fininvest', cargo:'Propietario', desde:'2022-07-08', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Associazione_Calcio_Monza', confirmada:true },
+  ],
   'napoli-it': [
     // De Laurentiis: "presidente y dueño desde 2004" tras la quiebra (solo el año; 01/09 aproximado, verano de 2004).
     { nombre:'Aurelio De Laurentiis', corto:'De Laurentiis', cargo:'Presidente', desde:'2004-09-01', hasta:null,

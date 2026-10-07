@@ -7,7 +7,7 @@
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -65,11 +65,14 @@ window.RANKINGS["it-seriea"] = {
   },
   2022: {
     leagueSize: null,
-    sinDato: ["asroma-it","monza-it"],
+    sinDato: ["asroma-it"],
     clubs: [
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2021-22",
         mix:[["Comercial / Sponsors",173.443],["Estadio",33.544],["Televisión",177.124],["Venta de Jugadores",42.363],["Otros ingresos",30.628]] },
+      { id:"monza-it", revenue:34.903, reportType:"official_balance_sheet",
+        sourceId:"monza-it-bilancio-2022",
+        mix:[["Comercial / Sponsors",11.158],["Estadio",2.926],["Televisión",18.355],["Venta de Jugadores",0.412],["Otros ingresos",2.053]] },
     ],
   },
   2021: {

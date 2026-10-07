@@ -14,3 +14,5 @@
 - Último chequeo: 2026-10-03.
 
 - **Color de marca**: `#E10032` (rojo) — biancorosso (it.wikipedia, Associazione_Calcio_Monza); regla (d) y theme-color de acmonza.com. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Monza/Monza-bilancio-2022.pdf` (sourceId `monza-it-bilancio-2022`).
