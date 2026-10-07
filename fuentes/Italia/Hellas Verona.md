@@ -52,3 +52,5 @@ es un consolidado auditado completo). En `Clubes/Italia/Hellas Verona/`.
   verbale) por año; no se bajaron porque no son el bilancio.
 
 - **Color de marca**: `#002F6C` (azul) — gialloblù con azul predominante (it.wikipedia, Hellas_Verona_Football_Club); desempate por el theme-color de hellasverona.it. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2020 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf` (sourceId `hellasverona-it-bilancio-individuale-2020`).
