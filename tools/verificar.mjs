@@ -161,6 +161,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // Solo del LADO de la categoría en 0 (TV -> ingresos): en Udinese 2021-22 abría también personal y amortizaciones, 1 a 1 con otro nombre.
   const LADO_CERO = { 'Televisión': 'ingreso', 'Estadio': 'ingreso', 'Salarios del plantel': 'gasto' }; // propuestas anteriores, sin `lado`
   const ladosCero = (() => { try { return new Set(existsSync(pC) ? (JSON.parse(readFileSync(pC, 'utf8')).reintentar || []).filter((x) => x.categoria).map((x) => x.lado || LADO_CERO[x.categoria]).filter(Boolean) : []); } catch { return new Set(); } })();
+  // La señal se queda prendida: cuando el escalón abrió la nota del subtotal, la propuesta siguiente ya no marca la categoría en 0 y, sin
+  // esto, la corrida siguiente lo apagaba y la TV volvía a 0 (oscilaba; medido en Bologna 2019-20). La verificación anterior lo anota.
+  { const pVf = resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })); try { if (existsSync(pVf)) for (const l of JSON.parse(readFileSync(pVf, 'utf8')).notaSubtotal || []) ladosCero.add(l); } catch { /* sin verificación anterior */ } }
+  const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   const U = existsSync(pU) ? JSON.parse(readFileSync(pU, 'utf8')) : {};
   // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con nota.
@@ -300,7 +304,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const rengs = delLado.filter((f) => f.lado === lado && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]);
     const signoNormal = rengs.filter((f) => f[campo] < 0).length > rengs.length / 2 ? -1 : 1;
     const salidaDe = new Map(); // (to-do 163) renglón del estado -> lo que dejó en `out` (él mismo, o las hojas de su nota)
+    const saltar = new Set(); // (to-do 163) renglones de ABAJO de un subtotal cuya nota ya los reemplazó (subtotal impreso arriba)
     for (const [k, f] of delLado.entries()) {
+      if (saltar.has(f)) continue;
       const antes = out.length;
       if (f.lado === 'otro') continue; // (conOtros) solo cuenta como componente; lo ubica la lectura 3
       // escalón 1 de las notas: el grupo entero se reemplaza por las filas de la nota en el lugar de su primer renglón
@@ -324,13 +330,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // Sassuolo 2025, Udinese 2021-22. SOLO EN EL CAMINO DE ERROR (`ladosCero`, decisión de Guido) y del lado de la categoría en 0: donde el estado ya viene desglosado
           // la nota repartía distinto (Atalanta 2024) o repetía lo mismo con otro nombre (Parma 2023).
           const hijasSub = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim() && h.lado === lado);
-          let comp = null; { let acc = 0; for (let j = 0; j < arriba.length; j++) { acc += Math.abs(arriba[j][campo] || 0); if (j >= 1 && cerca(acc, Math.abs(f[campo] || 0))) { comp = arriba.slice(0, j + 1); break; } } }
-          const sueltos = comp && comp.every((x) => (salidaDe.get(x) || []).length === 1 && String(salidaDe.get(x)[0].origen || '').startsWith('estado'));
+          const componentes = (lista) => { let acc = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); if (j >= 1 && cerca(acc, Math.abs(f[campo] || 0))) return lista.slice(0, j + 1); } return null; };
+          // componentes ARRIBA (Bologna: renglones y después "Totale altri ricavi e proventi") o, si no, ABAJO (Sassuolo 2025: "5) Altri ricavi
+          // e proventi: 68.086.429" impreso arriba de a), b) y f)). Los de abajo todavía no pasaron: se exige que ninguno tenga nota propia.
+          let comp = componentes(arriba); const deAbajo = !comp && (comp = componentes(abajo));
+          const sueltos = comp && (deAbajo ? comp.every((x) => !filas.some((h) => h.detalla_a && h.detalla_a.trim() === String(x.etiqueta).trim())) : comp.every((x) => (salidaDe.get(x) || []).length === 1 && String(salidaDe.get(x)[0].origen || '').startsWith('estado')));
           const cn = ladosCero.has(lado) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
           if (cn) {
-            const quitar = new Set(comp.flatMap((x) => salidaDe.get(x))); const pos = Math.min(...[...quitar].map((x) => out.indexOf(x)));
+            if (deAbajo) for (const x of comp) saltar.add(x);
+            const quitar = new Set(deAbajo ? [] : comp.flatMap((x) => salidaDe.get(x))); const pos = deAbajo ? out.length : Math.min(...[...quitar].map((x) => out.indexOf(x)));
             for (let i = out.length - 1; i >= 0; i--) if (quitar.has(out[i])) out.splice(i, 1);
             out.splice(pos, 0, ...conLineas(abrirAnidadas(cn.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}" (escalón: la nota del subtotal)` })), campo, 1), comp));
+            if (campo === 'M') notaSubtotalLados.add(lado);
             const n = `la nota del subtotal "${f.etiqueta}" suma el subtotal impreso (${r6(Math.abs(f[campo] || 0))}): reemplaza a "${comp.map((x) => x.etiqueta).join('" + "')}"`; if (campo === 'M' && !notas.includes(n)) notas.push(n);
           }
           continue;
@@ -847,6 +858,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
     signosCarga: { financiero: sfCarga, impuesto: siCarga },
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(sfCarga * f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
+  if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // (to-do 163) la señal que se queda prendida, ver ladosCero
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));
   // --rubros: la lista de rubros para la categorización de siempre (etapa 7), con las líneas verificadas. Club: el id del sitio o, si es nuevo,
   // el slug de la carpeta (el mismo id provisorio que usa el pipeline).

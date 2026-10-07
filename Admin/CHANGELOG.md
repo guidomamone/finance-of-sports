@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 579 — La nota del subtotal: componentes abajo, señal estable, negrita y anular ajustes (2026-10-07)
+
+- `verificar.mjs`: el escalón de la nota del subtotal busca los componentes también ABAJO del subtotal (Sassuolo 2025) y la señal de
+  categoría en 0 se queda prendida (`notaSubtotal`): sin eso oscilaba (Bologna 2019-20: TV 33,9 M, después 0, después 33,9 M).
+- `proponer-carga.mjs`, `parseNumber()`: sin las marcas de negrita ("**67.881.535**" se leía 67,881; "**(727.914)**", positivo). Afecta 3
+  documentos; fuera de Bologna 2019-20 no cambia nada cargado.
+- `ajustes.mjs --anular`: saca un ajuste que el script ya resuelve (registro `anulado`). Anulados 35: los ingresos de Bologna 2019-2022, la
+  TV de Sassuolo 2025 y el `incluye` de Udinese 2021-22.
+- Medido: de 122 documentos solo cambian los 6 del to-do; Bologna da sin ajustes exactamente lo cargado. TODO 163 cerrado.
+
 ## Versión 578 — La nota del subtotal abre el grupo cuando una categoría sale en 0 (2026-10-07)
 
 - `verificar.mjs`, to-do 163 problema 2: si la nota quedó asignada al subtotal del grupo y la última propuesta de carga marcó una categoría

@@ -75,7 +75,7 @@ function leer() {
 export function ajustesDe(pdf) {
   const m = new Map();
   for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
-  return [...m.values()];
+  return [...m.values()].filter((a) => !a.anulado); // (to-do 163) un registro `anulado` gana sobre el anterior de la misma clave y lo saca
 }
 export function ajusteDe(pdf, campo) {
   return ajustesDe(pdf).find((a) => a.campo === campo) || null;
@@ -87,8 +87,8 @@ export function ajusteDe(pdf, campo) {
 // (Versión 425) lo mismo para cualquier campo que se pueda fijar para todo el club (perimetro, deuda-incluye).
 export function ajusteClubODoc(pdf, campo) {
   const todos = leer().filter((a) => a.campo === campo);
-  const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length) return delDoc[delDoc.length - 1];
-  const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length ? delClub[delClub.length - 1] : null;
+  const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length && !delDoc[delDoc.length - 1].anulado) return delDoc[delDoc.length - 1];
+  const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length && !delClub[delClub.length - 1].anulado ? delClub[delClub.length - 1] : null;
 }
 // Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
 // perímetro de un club cuando sus documentos coinciden (autor "perimetro-senales"); el motivo cita los documentos y los criterios.
@@ -100,13 +100,25 @@ export function agregarAjuste(a) {
 }
 export function ajustePerimetroDe(pdf) {
   const todos = leer().filter((a) => a.campo === 'perimetro');
-  const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length) return delDoc[delDoc.length - 1];
-  const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length ? delClub[delClub.length - 1] : null;
+  const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length && !delDoc[delDoc.length - 1].anulado) return delDoc[delDoc.length - 1];
+  const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length && !delClub[delClub.length - 1].anulado ? delClub[delClub.length - 1] : null;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2);
   const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  // ANULAR (to-do 163): el archivo es un historial y gana el último registro de cada clave; para sacar un ajuste que ya no hace falta (el
+  // script ahora lo resuelve solo) se agrega un registro `anulado` con la misma clave (pdf + campo + etiqueta en fila/categoria/desglose,
+  // + valor en incluye/cero-real). Caso: los ajustes de ingresos de Bologna 2019-2022, resueltos por la nota del subtotal.
+  if (A.includes('--anular')) {
+    const i = A.indexOf('--anular'); const pdf = A[i + 1]; const campo = A[i + 2];
+    if (!pdf || !CAMPOS.includes(campo) || !flag('--motivo')) { console.error('Uso: --anular "<pdf>" <campo> [--etiqueta "..."] [--valor "..."] --motivo "..."'); process.exit(1); }
+    const vivo = ajustesDe(pdf).find((a) => a.campo === campo && (flag('--etiqueta') == null || a.etiqueta === flag('--etiqueta')) && (flag('--valor') == null || String(a.valor) === flag('--valor')));
+    if (!vivo) { console.error('No hay un ajuste vigente con esa clave.'); process.exit(1); }
+    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || 'Guido', fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+    console.log(`Ajuste anulado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${vivo.etiqueta ? ` "${vivo.etiqueta}"` : ''}${vivo.valor != null ? ` = ${vivo.valor}` : ''}`);
+    process.exit(0);
+  }
   if (A.includes('--agregar')) {
     const i = A.indexOf('--agregar'); const pdf = A[i + 1]; const campo = A[i + 2];
     if (!pdf || !CAMPOS.includes(campo)) { console.error(`Uso: --agregar "<pdf>" <campo> (campos: ${CAMPOS.join(', ')})`); process.exit(1); }

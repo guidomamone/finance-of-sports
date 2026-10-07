@@ -102,7 +102,8 @@ const REV_TOTAL_RE = TOTAL_INGRESOS_RE;
 const RESULT_RE = RESULTADO_EJERCICIO_RE;
 
 export function parseNumber(raw) {
-  let s = String(raw).trim().replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
+  // (to-do 163) sin las marcas de negrita del Markdown: "**67.881.535**" se leía 67,881 y "**(727.914)**" positivo (Bologna 2019-20, UC 2009)
+  let s = String(raw).trim().replace(/\*\*|__/g, '').replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
   if (!/\d/.test(s)) return null;
   s = s.replace(/(\d)\s+(?=\d)/g, '$1');
   let neg = false;

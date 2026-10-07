@@ -192,7 +192,11 @@ Mitigaciones:
   Nota del SUBTOTAL (to-do 163): si la extracción asignó la nota al subtotal del grupo ("Totale altri ricavi e proventi") y la última
   propuesta de carga marcó una categoría en 0 de ese lado ("Televisión en 0"), las filas de la nota que suman el subtotal impreso
   reemplazan a los renglones que lo componen. Solo en ese camino de error: donde el estado ya viene desglosado (Atalanta 2024, Parma 2023)
-  la nota repartía distinto o repetía lo mismo con otro nombre.
+  la nota repartía distinto o repetía lo mismo con otro nombre. Los componentes pueden estar arriba del subtotal (Bologna) o abajo
+  (Sassuolo: "5) Altri ricavi e proventi:" y debajo a), b), f)). La señal se queda prendida (`notaSubtotal` en el .verificacion.json): sin
+  eso, al arreglarse la TV la propuesta dejaba de marcarla en 0 y la corrida siguiente volvía atrás.
+- Un ajuste que el script ya resuelve se anula con `node tools/ajustes.mjs --anular "<pdf>" <campo> [--etiqueta] [--valor] --motivo`
+  (el archivo es un historial: el registro `anulado` gana sobre el anterior).
 - b) Resultado: ingresos − gastos ± financiero ± impuesto tiene que dar el resultado impreso.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
