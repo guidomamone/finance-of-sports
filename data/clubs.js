@@ -441,6 +441,9 @@ const clubs = {
   // Sassuolo: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.pdf.
   // brandColor y su procedencia: fuentes/Italia/Sassuolo.md.
   'sassuolo-it': { id:'sassuolo-it', name:'Unione Sportiva Sassuolo Calcio S.r.l.', displayName:'Sassuolo', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1EA451' },
+  // Torino: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Torino/Torino-bilancio-2024.pdf.
+  // brandColor y su procedencia: fuentes/Italia/Torino.md.
+  'torino-it': { id:'torino-it', name:'Torino Football Club S.p.A.', displayName:'Torino', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#8B2A1F' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

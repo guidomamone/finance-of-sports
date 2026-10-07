@@ -44,7 +44,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2024: {
     leagueSize: null,
-    sinDato: ["acmilan-it"],
+    sinDato: ["acmilan-it","torino-it"],
     clubs: [
       { id:"juventus-it", revenue:418.274, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2023-24",

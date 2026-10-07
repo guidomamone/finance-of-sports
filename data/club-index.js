@@ -174,6 +174,7 @@ window.CLUB_INDEX = {
   "stuttgart-de": {"n":"VfB Stuttgart","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "sunderland-gb": {"n":"Sunderland","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "talleres-ar": {"n":"Talleres","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "torino-it": {"n":"Torino","c":"IT","q":"empty","y":0,"last":null,"yrs":[]},
   "tottenham-gb": {"n":"Tottenham Hotspur","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "udechile-cl": {"n":"Universidad de Chile","c":"CL","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "union": {"n":"Unión","c":"AR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
