@@ -1,35 +1,35 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.pdf",
- "generado": "2026-10-07T00:12:57.551Z",
+ "generado": "2026-10-07T21:35:56.852Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2024-06-30): confirmar qué ejercicio es antes de cargarlo"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+ ],
  "ejercicio": null,
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md",
  "reemplaza": false,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2024-06-30",
-  "evidencia": null,
-  "confianza": "media",
+  "cierre": "2025-06-30",
   "anual": "temporada",
-  "nombreNoCoincide": true
- }
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-07): Claude 2026-10-07: es el BILANCIO 2024-25 (cierre 30/06/2025); periodo.mjs lo leyó como 2024-06-30 (confianza media, el nombre no coincide) y extraer tomó la columna comparativa"
+ },
+ "clubId": "asroma-it",
+ "year": 2025,
+ "cortadoEn": "filas"
 }

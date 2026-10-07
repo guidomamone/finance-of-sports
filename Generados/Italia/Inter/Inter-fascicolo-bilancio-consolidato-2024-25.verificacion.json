@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
- "generado": "2026-10-07T21:27:32.268Z",
- "estado": "cola",
+ "generado": "2026-10-07T21:36:23.215Z",
+ "estado": "ok",
  "clubId": "inter-it",
  "year": 2025,
  "escala": {
@@ -27,11 +27,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "256f55f",
-  "bafa391",
-  "77e639b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -64,9 +60,9 @@
   "la nota de \"a) salari e stipendi\" no suma el renglón (209.231 contra 231.682534, sumando sus renglones): quedó el renglón del estado",
   "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 780.928, en lugar de la fila de L976 (2026-10-07, to-do 157: la lectura 5 solo suma los ajustes del financiero que reemplazan una fila (el escalón B del to-do 156, que los sumaba a todos, rompía Roma 2018); el mismo D) 18) +780.928 con reemplaza-linea (la fila de L976 no se extrajo: no sale nada))",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer confirmada por las sumas (columna, \"a) salari e stipendi\"): ¿Se deja afuera de la carga el cuadro de costo del personal por Tesserati/Altri (b48, L2784-L2789), ya que sus columnas no son un año único sino un split por categoría?",
-  "duda de extraer que no afecta la carga: L2721 dice 'comprendono tra l'altro', las filas no suman 43.638.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
+  "duda de extraer ya contestada para el club (columna, \"a) salari e stipendi\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2024-25.pdf",
+  "duda de extraer que no afecta la carga: L2721 dice 'comprendono tra l'altro', las filas no suman 43.638."
  ],
  "reintentar": [
   {
