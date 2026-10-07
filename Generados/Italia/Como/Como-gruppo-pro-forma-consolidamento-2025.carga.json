@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
- "generado": "2026-10-07T01:33:25.481Z",
+ "generado": "2026-10-07T01:57:18.251Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,14 +11,69 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Gare Campionato\" 2.885 (no está en categorias.json); \"Percentuale squadra ospite\" 0.07 (no está en categorias.json); \"Tornei e amichevoli\" 0.004 (no está en categorias.json)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"b) costi per acquisizione temporanea pre\" 1.542998 (no está en categorias.json); \"c) minusvalenze cessione diritti prestaz\" 2.219836 (no está en categorias.json); \"d) altri oneri da gestione calciatori\" 2.635726 (no está en categorias.json)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-06: individual (Como 1907 S.p.A.); el pro-forma di consolidamento es una planilla del grupo, no se carga)"
+  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-06: individual (Como 1907 S.p.A.); el pro-forma di consolidamento es una planilla del grupo, no se carga)",
+  "ingresos: 12 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Gare Campionato\" (no está en categorias.json); \"Percentuale squadra ospite\" (no está en categorias.json); \"Tornei e amichevoli\" (no está en categorias.json); \"b) abbonamenti\" (no está en categorias.json); \"a) contributi in conto esercizio\" (no está en categorias.json)",
+  "gastos: 14 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"b) costi per acquisizione temporanea prestazione c\" (no está en categorias.json); \"c) minusvalenze cessione diritti prestaz.calciator\" (no está en categorias.json); \"d) altri oneri da gestione calciatori\" (no está en categorias.json); \"6) Per materie prime, sussidiarie, di consumo (Com\" (no está en categorias.json); \"7) Per servizi (Como 1907)\" (no está en categorias.json)",
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "como-it",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "como-it-gruppo-pro-forma-consolidamento-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.851307,
+   "tax": -0.000146,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "como-it-gruppo-pro-forma-consolidamento-2025",
+   "clubId": "como-it",
+   "title": "Como 1907 S.r.l. — Como-gruppo-pro-forma-consolidamento-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -30,5 +85,773 @@
   "anual": "temporada"
  },
  "clubId": "como-it",
- "year": 2025
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 360,
+   "etiqueta": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "5.213.198",
+   "linea": 363,
+   "etiqueta": "b) sponsorizzazioni (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "b) sponsorizzazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "568.130",
+   "linea": 364,
+   "etiqueta": "d) proventi commerciali e royalties (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "d) proventi commerciali e royalties",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "360.799",
+   "linea": 369,
+   "etiqueta": "i) altri ricavi e proventi diversi (Como 1907)",
+   "lado": "ingreso",
+   "reemplaza": "i) altri ricavi e proventi diversi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "1.966.288",
+   "linea": 372,
+   "etiqueta": "6) Per materie prime, sussidiarie, di consumo (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "6) Per materie prime, sussidiarie, di consumo",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "26.307.897",
+   "linea": 373,
+   "etiqueta": "7) Per servizi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "7) Per servizi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "1.633.489",
+   "linea": 374,
+   "etiqueta": "8) Per godimento di beni di terzi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "8) Per godimento di beni di terzi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "80.140.300",
+   "linea": 376,
+   "etiqueta": "a) salari e stipendi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) salari e stipendi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.824.772",
+   "linea": 377,
+   "etiqueta": "b) oneri sociali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "b) oneri sociali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "691.136",
+   "linea": 378,
+   "etiqueta": "c) trattamento di fine rapporto (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "c) trattamento di fine rapporto",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "26.618.093",
+   "linea": 380,
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) ammortamento delle immobilizzazioni immateriali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "176.785",
+   "linea": 381,
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "b) ammortamento delle immobilizzazioni materiali",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.687.777",
+   "linea": 382,
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "c) altre svalutazioni delle immobilizzazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 383,
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "d) svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 384,
+   "etiqueta": "11) Variazioni delle rimanenze di materiale di consumo e di merci (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "11) Variazioni delle rimanenze di materiale di consumo e di merci",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 385,
+   "etiqueta": "12) Accantonamenti per rischi (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "12) Accantonamenti per rischi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "673.144",
+   "linea": 387,
+   "etiqueta": "a) oneri da organizzazione competizioni (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "a) oneri da organizzazione competizioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "4.492.695",
+   "linea": 391,
+   "etiqueta": "e) altri oneri diversi e sopravvenienze passive (Como 1907)",
+   "lado": "gasto",
+   "reemplaza": "e) altri oneri diversi e sopravvenienze passive",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "146.607",
+   "linea": 397,
+   "etiqueta": "- altri proventi diversi (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "- altri proventi diversi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(1.862.027)",
+   "linea": 399,
+   "etiqueta": "e) altri oneri finanziari (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "e) altri oneri finanziari",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(98.887)",
+   "linea": 400,
+   "etiqueta": "17-bis) Utile e perdite su cambi (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "17-bis) Utile e perdite su cambi",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "(37.000)",
+   "linea": 404,
+   "etiqueta": "a) di partecipazioni (Como 1907)",
+   "lado": "financiero",
+   "reemplaza": "a) di partecipazioni",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 408,
+   "etiqueta": "a) imposte correnti (Como 1907)",
+   "lado": "impuesto",
+   "reemplaza": "a) imposte correnti",
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
+   "campo": "resultado-final",
+   "valor": "(105.065.627)",
+   "linea": 409,
+   "motivo": "Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
+ "seleccion": {
+  "filas": 31,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gare Campionato",
+   "page": 29,
+   "native": 2.885,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"a) ricavi da gare\")",
+   "signoFijo": 2.885,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Percentuale squadra ospite",
+   "page": 29,
+   "native": 0.07,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"a) ricavi da gare\")",
+   "signoFijo": 0.07,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Tornei e amichevoli",
+   "page": 29,
+   "native": 0.004,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"a) ricavi da gare\")",
+   "signoFijo": 0.004,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "b) abbonamenti",
+   "page": 9,
+   "native": 2.962219,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.962219,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "a) contributi in conto esercizio",
+   "page": 9,
+   "native": 4.671024,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.671024,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "e) proventi da cessione diritti televisivi",
+   "page": 9,
+   "native": 31.781894,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.781894,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "f) ricavi cessione temporanea calciatori",
+   "page": 9,
+   "native": 0.880488,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.880488,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "g) plusvalenze cessione diritti prestazioni calciatori",
+   "page": 9,
+   "native": 5.146957,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.146957,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "h) altri proventi da gestione calciatori",
+   "page": 9,
+   "native": 0.853053,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.853053,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "b) sponsorizzazioni (Como 1907)",
+   "page": 9,
+   "native": 5.213198,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 5.213198,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "d) proventi commerciali e royalties (Como 1907)",
+   "page": 9,
+   "native": 0.56813,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.56813,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "i) altri ricavi e proventi diversi (Como 1907)",
+   "page": 9,
+   "native": 0.360799,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.360799,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "b) costi per acquisizione temporanea prestazione calciatori",
+   "page": 9,
+   "native": 1.542998,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.542998,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "c) minusvalenze cessione diritti prestaz.calciatori",
+   "page": 9,
+   "native": 2.219836,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.219836,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "d) altri oneri da gestione calciatori",
+   "page": 9,
+   "native": 2.635726,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.635726,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo (Como 1907)",
+   "page": 9,
+   "native": 1.966288,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.966288,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "7) Per servizi (Como 1907)",
+   "page": 9,
+   "native": 26.307897,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 26.307897,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "8) Per godimento di beni di terzi (Como 1907)",
+   "page": 9,
+   "native": 1.633489,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.633489,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "a) salari e stipendi (Como 1907)",
+   "page": 9,
+   "native": 80.1403,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 80.1403,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "b) oneri sociali (Como 1907)",
+   "page": 9,
+   "native": 4.824772,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4.824772,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "c) trattamento di fine rapporto (Como 1907)",
+   "page": 9,
+   "native": 0.691136,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.691136,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali (Como 1907)",
+   "page": 9,
+   "native": 26.618093,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 26.618093,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali (Como 1907)",
+   "page": 9,
+   "native": 0.176785,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.176785,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni (Como 1907)",
+   "page": 9,
+   "native": 4.687777,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4.687777,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "a) oneri da organizzazione competizioni (Como 1907)",
+   "page": 9,
+   "native": 0.673144,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.673144,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "e) altri oneri diversi e sopravvenienze passive (Como 1907)",
+   "page": 9,
+   "native": 4.492695,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4.492695,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "- altri proventi diversi (Como 1907)",
+   "page": null,
+   "native": 0.146607,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "e) altri oneri finanziari (Como 1907)",
+   "page": null,
+   "native": -1.862027,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "17-bis) Utile e perdite su cambi (Como 1907)",
+   "page": null,
+   "native": -0.098887,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) di partecipazioni (Como 1907)",
+   "page": null,
+   "native": -0.037,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "page": null,
+   "native": -0.000146,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel"
+  },
+  {
+   "categoria": "Televisión"
+  },
+  {
+   "categoria": "Estadio"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"a) ricavi da gare\")": "gastos con signo",
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": 0,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (133 de 133 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-07)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "como-it-gruppo-pro-forma-consolidamento-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 8,
+  "lineasIngreso": 0,
+  "lineasGasto": 0,
+  "metaFilas": 5,
+  "excluidas": 0
+ }
 }

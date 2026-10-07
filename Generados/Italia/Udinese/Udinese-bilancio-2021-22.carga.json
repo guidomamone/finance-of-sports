@@ -1,22 +1,397 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
- "generado": "2026-10-07T00:12:57.691Z",
+ "generado": "2026-10-07T01:57:17.205Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "el documento no está listo-para-jev (estado listo, jev -)"
+   "etapa": "categoria-en-cola",
+   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Costi per attività sportiva\" -> match_organisation_expense 0.6; \"Costi specifici tecnici\" -> match_organisation_expense 0.65; \"Assicurative e previdenziali\" -> admin_general_expense 0.7; \"Altre prestazioni di servizi\" -> admin_general_expense 0.55; \"noleggio attrezzature\" -> match_organisation_expense 0.5"
   },
   {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-136.368565); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "udinese-it",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "- Gare Campionato",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2.858916,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "- Gare Coppa Italia",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.027534,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "- Gare Coppa Italia",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.016281,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abbonamenti",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 2.212326,
+    "disclosureLevel": "aggregated",
+    "_pag": 63,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "contributi in conto esercizio",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.046228,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "altri",
+    "normalizedCategory": "other_income",
+    "amountNative": 70.918956,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "6) per materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.763664,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per attività sportiva",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.44203,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per organizzazione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.780382,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi specifici tecnici",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -8.833332,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi vitto, alloggio, locomozione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.766056,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Assicurative e previdenziali",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.469379,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amministrative, pubblicitarie e generali",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.382209,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altre prestazioni di servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.841433,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "affitto dei campi sportivi",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.03565,
+    "disclosureLevel": "aggregated",
+    "_pag": 67,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "noleggio autoveicoli e automezzi per uso aziendale",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.152938,
+    "disclosureLevel": "aggregated",
+    "_pag": 67,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "spese per affitti e utenze locali ad uso foresteria",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.378075,
+    "disclosureLevel": "aggregated",
+    "_pag": 67,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "noleggio attrezzature",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.281153,
+    "disclosureLevel": "aggregated",
+    "_pag": 67,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -39.236173,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.242366,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.122458,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) ammortamento delle immobilizzazioni immateriali",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -57.930334,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) ammortamento delle immobilizzazioni materiali",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.103644,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) altre svalutazioni delle immobilizzazioni",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -1.522949,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.31176,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "12) accantonamenti per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.275818,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "13) altri accantonamenti",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Oneri da organizzazione competizioni",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.186421,
+    "disclosureLevel": "aggregated",
+    "_pag": 69,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Minusvalenze da cessioni diritti calciatori",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -8.019148,
+    "disclosureLevel": "aggregated",
+    "_pag": 69,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri da trasferimento diritti calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.554013,
+    "disclosureLevel": "aggregated",
+    "_pag": 69,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.756328,
+    "disclosureLevel": "aggregated",
+    "_pag": 69,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "udinese-it-bilancio-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.544096,
+   "tax": 2.798323,
+   "extraRows": [
+    {
+     "label": "c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni",
+     "value": null
+    },
+    {
+     "label": "17-bis) utili e perdite su cambi",
+     "value": 0.190341
+    },
+    {
+     "label": "altri proventi finanziari",
+     "value": 0.12175
+    },
+    {
+     "label": "altri oneri finanziari (17, costo)",
+     "value": -5.856187
+    },
+    {
+     "label": "imposte correnti (costo)",
+     "value": -2.354788
+    },
+    {
+     "label": "imposte differite e anticipate (ingreso)",
+     "value": 5.153111
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 78.080241,
+   "officialTotalExpenses": 136.368565,
+   "officialPAT": -69.053247
+  },
+  "source": {
+   "id": "udinese-it-bilancio-2021-22",
+   "clubId": "udinese-it",
+   "title": "Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
  "reemplaza": false,
  "periodo": {
@@ -26,5 +401,698 @@
   "evidencia": null,
   "confianza": "media",
   "anual": "temporada"
+ },
+ "clubId": "udinese-it",
+ "year": 2022,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "121.750",
+   "linea": 897,
+   "etiqueta": "altri proventi finanziari (16)",
+   "lado": "financiero",
+   "reemplaza": "altri",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(5.856.187)",
+   "linea": 901,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(2.354.788)",
+   "linea": 907,
+   "etiqueta": "imposte correnti (costo)",
+   "lado": "impuesto",
+   "reemplaza": "imposte correnti",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
+   "campo": "fila",
+   "valor": "5.153.111",
+   "linea": 908,
+   "etiqueta": "imposte differite e anticipate (ingreso)",
+   "lado": "impuesto",
+   "reemplaza": "imposte differite e anticipate",
+   "motivo": "Guido 2026-10-07: formato Codice Civile: el 17) (interessi e altri oneri finanziari) y las imposte se imprimen como costo en positivo; la etapa 6 los tomaba con el signo impreso (to-do 155). Los dos renglones del estado se llaman 'altri' (16 y 17): se reemplazan los dos",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
+ "seleccion": {
+  "filas": 37,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "- Gare Campionato",
+   "page": 63,
+   "native": 2.858916,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 2.858916,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.858916
+  },
+  {
+   "label": "- Gare Coppa Italia",
+   "page": 63,
+   "native": 0.027534,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.027534,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.027534
+  },
+  {
+   "label": "- Gare Coppa Italia",
+   "page": 63,
+   "native": 0.016281,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.016281,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.016281
+  },
+  {
+   "label": "Abbonamenti",
+   "page": 63,
+   "native": 2.212326,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 2.212326,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.212326
+  },
+  {
+   "label": "contributi in conto esercizio",
+   "page": 27,
+   "native": 2.046228,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.046228,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.046228
+  },
+  {
+   "label": "altri",
+   "page": 27,
+   "native": 70.918956,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 70.918956,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 70.918956
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "page": 27,
+   "native": 2.763664,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.763664,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.763664
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "page": 66,
+   "native": 0.44203,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 0.44203,
+   "cat": "match_organisation_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.44203
+  },
+  {
+   "label": "Spese per organizzazione gare",
+   "page": 66,
+   "native": 0.780382,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 0.780382,
+   "cat": "match_organisation_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.780382
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "page": 66,
+   "native": 8.833332,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 8.833332,
+   "cat": "match_organisation_expense",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -8.833332
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione gare",
+   "page": 66,
+   "native": 1.766056,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 1.766056,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.766056
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "page": 66,
+   "native": 0.469379,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 0.469379,
+   "cat": "admin_general_expense",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.469379
+  },
+  {
+   "label": "Amministrative, pubblicitarie e generali",
+   "page": 66,
+   "native": 2.382209,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 2.382209,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.382209
+  },
+  {
+   "label": "Altre prestazioni di servizi",
+   "page": 66,
+   "native": 3.841433,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) per servizi\")",
+   "signoFijo": 3.841433,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3.841433
+  },
+  {
+   "label": "affitto dei campi sportivi",
+   "page": 67,
+   "native": 0.03565,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")",
+   "signoFijo": 0.03565,
+   "cat": "match_organisation_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03565
+  },
+  {
+   "label": "noleggio autoveicoli e automezzi per uso aziendale",
+   "page": 67,
+   "native": 0.152938,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")",
+   "signoFijo": 0.152938,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.152938
+  },
+  {
+   "label": "spese per affitti e utenze locali ad uso foresteria",
+   "page": 67,
+   "native": 0.378075,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")",
+   "signoFijo": 0.378075,
+   "cat": "admin_general_expense",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.378075
+  },
+  {
+   "label": "noleggio attrezzature",
+   "page": 67,
+   "native": 0.281153,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")",
+   "signoFijo": 0.281153,
+   "cat": "match_organisation_expense",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.281153
+  },
+  {
+   "label": "a) salari e stipendi",
+   "page": 27,
+   "native": 39.236173,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 39.236173,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -39.236173
+  },
+  {
+   "label": "b) oneri sociali",
+   "page": 27,
+   "native": 2.242366,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.242366,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.242366
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "page": 27,
+   "native": 0.122458,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.122458,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.122458
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "page": 28,
+   "native": 57.930334,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 57.930334,
+   "cat": "player_amortisation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -57.930334
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "page": 28,
+   "native": 1.103644,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.103644,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.103644
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "page": 28,
+   "native": 1.522949,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.522949,
+   "cat": "player_impairment",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.522949
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
+   "page": 28,
+   "native": 2.31176,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.31176,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.31176
+  },
+  {
+   "label": "12) accantonamenti per rischi",
+   "page": 28,
+   "native": 0.275818,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.275818,
+   "cat": "other_amortisation",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.275818
+  },
+  {
+   "label": "13) altri accantonamenti",
+   "page": 28,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_amortisation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Oneri da organizzazione competizioni",
+   "page": 69,
+   "native": 1.186421,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 1.186421,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.186421
+  },
+  {
+   "label": "Minusvalenze da cessioni diritti calciatori",
+   "page": 69,
+   "native": 8.019148,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 8.019148,
+   "cat": "exceptional_items",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.019148
+  },
+  {
+   "label": "Altri oneri da trasferimento diritti calciatori",
+   "page": 69,
+   "native": 6.554013,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 6.554013,
+   "cat": "other_expenses",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.554013
+  },
+  {
+   "label": "Altri oneri diversi di gestione",
+   "page": 69,
+   "native": 1.756328,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 1.756328,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.756328
+  },
+  {
+   "label": "c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "17-bis) utili e perdite su cambi",
+   "page": null,
+   "native": 0.190341,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri proventi finanziari (16)",
+   "page": null,
+   "native": 0.12175,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri oneri finanziari (17, costo)",
+   "page": null,
+   "native": -5.856187,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "imposte correnti (costo)",
+   "page": null,
+   "native": -2.354788,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "imposte differite e anticipate (ingreso)",
+   "page": null,
+   "native": 5.153111,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"7) per servizi\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"8) per godimento di beni di terzi\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"14) oneri diversi di gestione\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 78.080241,
+  "expSum": -136.368565,
+  "officialTotalRevenue": 78.080241,
+  "officialTotalExpenses": 136.368565,
+  "officialPAT": -69.053247,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -69.053247,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 78.080241
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Udinese\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (276 de 287 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "udinese-it-bilancio-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Udinese\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 6,
+  "lineasGasto": 25,
+  "metaFilas": 6,
+  "excluidas": 0
  }
 }

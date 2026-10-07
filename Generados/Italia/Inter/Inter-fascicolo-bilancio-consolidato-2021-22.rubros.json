@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
-  "club": "inter",
+  "club": "inter-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T00:02:00.093Z",
+  "generatedAt": "2026-10-07T01:57:47.632Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         3.826
       ],
-      "glosa": "- Partidos de Copa Italia"
+      "glosa": "- Partidos de Copa de Italia"
     },
     {
       "label": "- International Cup matches",
@@ -74,7 +74,7 @@
       "values": [
         2.191
       ],
-      "glosa": "- Tarjetas de socio / Inter Club"
+      "glosa": "- Carnets de socio / Inter Club"
     },
     {
       "label": "- Sponsorship EU in house",
@@ -84,7 +84,7 @@
       "values": [
         16.125
       ],
-      "glosa": "- Patrocinio regional UE propio"
+      "glosa": "- Patrocinio UE interno"
     },
     {
       "label": "- Sponsorship Regional",
@@ -104,7 +104,7 @@
       "values": [
         6.823
       ],
-      "glosa": "- Videoteca Rai-Infront-CSB-Dazn"
+      "glosa": "- Archivo audiovisual Rai-Infront-CSB-Dazn"
     },
     {
       "label": "- Inter TV",
@@ -144,7 +144,7 @@
       "values": [
         8.899515
       ],
-      "glosa": "4) Activación de costes del fútbol base"
+      "glosa": "4) Capitalización de costes del fútbol base"
     },
     {
       "label": "a) grants and contribution",
@@ -154,7 +154,7 @@
       "values": [
         16.612651
       ],
-      "glosa": "a) subvenciones y ayudas"
+      "glosa": "a) subvenciones y transferencias"
     },
     {
       "label": "b) sponsorships",
@@ -174,7 +174,7 @@
       "values": [
         4.039383
       ],
-      "glosa": "c) ingresos publicitarios"
+      "glosa": "c) ingresos por publicidad"
     },
     {
       "label": "d) commercial income and royalties",
@@ -184,7 +184,7 @@
       "values": [
         6.472314
       ],
-      "glosa": "d) ingresos comerciales y regalías"
+      "glosa": "d) ingresos comerciales y cánones"
     },
     {
       "label": "- television revenues",
@@ -194,7 +194,7 @@
       "values": [
         84.239107
       ],
-      "glosa": "- ingresos por derechos de televisión"
+      "glosa": "- ingresos por derechos audiovisuales"
     },
     {
       "label": "- television income from participation in UEFA competitions",
@@ -204,7 +204,7 @@
       "values": [
         62.303836
       ],
-      "glosa": "- ingresos televisivos por participación en competiciones UEFA"
+      "glosa": "- ingresos de televisión por participación en competiciones UEFA"
     },
     {
       "label": "g) revenues from temporary loan of players",
@@ -284,7 +284,7 @@
       "values": [
         0.281
       ],
-      "glosa": "Material de comercio electrónico"
+      "glosa": "Material para comercio electrónico"
     },
     {
       "label": "Other",
@@ -314,7 +314,7 @@
       "values": [
         0.628
       ],
-      "glosa": "Gastos sanitarios"
+      "glosa": "Gastos médicos y sanitarios"
     },
     {
       "label": "Fees for self-employed contractors",
@@ -334,7 +334,7 @@
       "values": [
         0.646
       ],
-      "glosa": "Costes por pensiones y jubilaciones"
+      "glosa": "Gastos por planes de pensiones y jubilación"
     },
     {
       "label": "Expenses for maintenance of sport pitches",
@@ -344,7 +344,7 @@
       "values": [
         0.837
       ],
-      "glosa": "Gastos de mantenimiento de campos de juego"
+      "glosa": "Gastos de mantenimiento de terrenos de juego"
     },
     {
       "label": "Sundry",
@@ -354,7 +354,7 @@
       "values": [
         0.274
       ],
-      "glosa": "Diversos"
+      "glosa": "Varios"
     },
     {
       "label": "Player scouting and trials",
@@ -374,7 +374,7 @@
       "values": [
         0.25
       ],
-      "glosa": "Equipos convenidos"
+      "glosa": "Equipos filiales subvencionados"
     },
     {
       "label": "Transfer market agent fees",
@@ -384,7 +384,7 @@
       "values": [
         22.976
       ],
-      "glosa": "Comisiones de agentes e intermediarios de fichajes"
+      "glosa": "Comisiones de agentes e intermediarios"
     },
     {
       "label": "Sundry",
@@ -394,7 +394,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Diversos"
+      "glosa": "Varios"
     },
     {
       "label": "Costs for accomodation, food, transport",
@@ -414,7 +414,7 @@
       "values": [
         3.683
       ],
-      "glosa": "Servicio de taquilla, acceso y control de seguridad"
+      "glosa": "Servicios de taquilla, accesos y seguridad"
     },
     {
       "label": "Insurance and pension",
@@ -464,7 +464,7 @@
       "values": [
         3.31
       ],
-      "glosa": "Gastos de alquiler"
+      "glosa": "Gastos de arrendamiento"
     },
     {
       "label": "Operating lease payments",
@@ -474,7 +474,7 @@
       "values": [
         0.023
       ],
-      "glosa": "Cánones de arrendamiento operativo"
+      "glosa": "Cuotas de arrendamiento operativo"
     },
     {
       "label": "Other user licence fees",
@@ -484,7 +484,7 @@
       "values": [
         2.19
       ],
-      "glosa": "Otras licencias de uso"
+      "glosa": "Otros cánones por licencias de uso"
     },
     {
       "label": "Concession sports facilities",
@@ -504,7 +504,7 @@
       "values": [
         1.935
       ],
-      "glosa": "Otros cánones de arrendamiento"
+      "glosa": "Otros cánones de alquiler"
     },
     {
       "label": "a) salaries and wages",
@@ -544,7 +544,7 @@
       "values": [
         19.762744
       ],
-      "glosa": "e) otros costes de personal"
+      "glosa": "e) otros gastos de personal"
     },
     {
       "label": "a) amortisation of intangibles assets",
@@ -574,7 +574,7 @@
       "values": [
         16.556314
       ],
-      "glosa": "c) correcciones valorativas por deterioro de activos"
+      "glosa": "c) correcciones de valor del inmovilizado"
     },
     {
       "label": "d) write-downs of doubtful account receivables included in current assets",
@@ -584,7 +584,7 @@
       "values": [
         25.803288
       ],
-      "glosa": "d) deterioro de créditos comerciales del activo corriente"
+      "glosa": "d) correcciones de valor por insolvencias de créditos del activo corriente"
     },
     {
       "label": "12) Provision for risks",
@@ -594,7 +594,7 @@
       "values": [
         0.027146
       ],
-      "glosa": "12) Provisión para riesgos"
+      "glosa": "12) Dotación a las provisiones para riesgos"
     },
     {
       "label": "13) Other provisions",
@@ -604,7 +604,7 @@
       "values": [
         12.006531
       ],
-      "glosa": "13) Otras provisiones"
+      "glosa": "13) Otras dotaciones a las provisiones"
     },
     {
       "label": "a) various costs of organising competitions",
@@ -614,7 +614,7 @@
       "values": [
         4.529072
       ],
-      "glosa": "a) costes diversos de organización de competiciones"
+      "glosa": "a) gastos diversos de organización de competiciones"
     },
     {
       "label": "b) competition registration fees",
@@ -634,7 +634,7 @@
       "values": [
         0.150787
       ],
-      "glosa": "- porcentaje de recaudación liquidado al equipo visitante"
+      "glosa": "- porcentaje de taquilla abonado a los equipos visitantes"
     },
     {
       "label": "d) costs for the temporary acquisition of players",
@@ -654,7 +654,7 @@
       "values": [
         0.050536
       ],
-      "glosa": "e) pérdidas por enajenación de derechos federativos"
+      "glosa": "e) pérdidas por enajenación de derechos federativos de jugadores"
     },
     {
       "label": "f) other expenses from player management",
@@ -664,7 +664,7 @@
       "values": [
         4.723285
       ],
-      "glosa": "f) otros gastos de gestión de jugadores"
+      "glosa": "f) otros gastos de la gestión de jugadores"
     },
     {
       "label": "- Costs, fines and penalties for matches",
@@ -674,7 +674,7 @@
       "values": [
         0.214
       ],
-      "glosa": "- Gastos, multas y sanciones por partidos"
+      "glosa": "- Gastos, multas y sanciones de partidos"
     },
     {
       "label": "- Indirect tax expenses",
@@ -684,7 +684,7 @@
       "values": [
         0.513
       ],
-      "glosa": "- Gastos por tributos indirectos"
+      "glosa": "- Gastos por impuestos indirectos"
     },
     {
       "label": "- Contributions from Football League",
