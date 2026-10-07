@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 574 — Una respuesta de categoría vale para los otros años del club aunque cambie la marca de lista (2026-10-07)
+
+- `cargar.mjs`, escalón A del to-do 152: una fila que iba a la cola toma la respuesta de Guido de otro año del club con la misma etiqueta
+  salvo la marca de lista ("b) oneri sociali" = "oneri sociali"). Compuertas: mismo lado, misma nota (o renglón del estado y su hoja), una
+  sola categoría. `cola.mjs`: `respuestasDonde()`.
+- Medido: sobre 757 respuestas de categoría, decide 7 y acierta 7 (Atalanta 2021/2024, Fortaleza, Novorizontino); propuestas de 122
+  documentos idénticas salvo Bologna 2018-19 (no cargado): una pregunta menos. Dos intentos descartados al medir: familia con tolerancia
+  de letras ("materiali" = "immateriali") y pisar decisiones con confianza (cambiaba Fortaleza "Auxilio hotelero", cargado).
+
 ## Versión 573 — Una pregunta contestada antes del alta del club ya no vuelve (2026-10-07)
 
 - `verificar.mjs`, dudas por tema: escalón 1 que busca la respuesta con la clave de antes del alta (nombre de la carpeta) cuando no la

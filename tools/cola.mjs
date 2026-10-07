@@ -129,6 +129,14 @@ export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true)
   return mejor;
 }
 
+// Todas las respuestas reales (aceptar, corregir, descartar, preguntar-club; nunca 'obsoleto') de una etapa y motivo cuyos casos cumplen el
+// filtro, con su caso. La usa cargar.mjs para buscar respuestas de categoría por FAMILIA de etiqueta (to-do 152), no solo por el detalle exacto.
+export function respuestasDonde(etapa, motivo, filtro = () => true) {
+  const { casos, resp } = leer(); const out = [];
+  for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && resp.has(c.id) && filtro(c)) out.push({ caso: c, resp: resp.get(c.id) });
+  return out;
+}
+
 export function pendientes() { const L = leer(); return [...L.casos.values()].filter((c) => pendiente(c, L)); }
 // OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la

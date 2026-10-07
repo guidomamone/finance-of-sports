@@ -107,7 +107,7 @@ const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { marcarClub } = await import('./dentro-de-otro.mjs'); // (Versión 518) "Posiblemente dentro de otro rubro", ver escribir()
-const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub } = await import('./cola.mjs');
+const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde } = await import('./cola.mjs');
 const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs');
@@ -119,7 +119,7 @@ const { padreEnClub, padreEnDoc, mismoPadre } = await import('./padres-filas.mjs
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe } = await import('./periodo.mjs');
-const { normalizar, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
+const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
 const flagVal = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
@@ -443,7 +443,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   //     toman como precedente gratis (memoria-categorias.mjs).
   // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
-  const respuestaCat = (label, clave = norm(label), padre = null, lado = null) => {
+  const respuestaCat = (label, clave = norm(label), padre = null, lado = null, { familia = false } = {}) => {
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
@@ -452,12 +452,34 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // se aplicaba a 2008-2016, donde está en el bloque administrativo.
     const mismaNota = (c) => { if (!padre || !lado) return true; const otro = padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, label); return otro == null || mismoPadre(otro, padre); };
     if (!resp) { const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c) => dirname(c.pdf) === dirname(pdf) && mismaNota(c)); if (otra) ({ caso, resp } = otra); }
+    // ESCALÓN A (to-do 152, ok de Guido): la respuesta de otro documento del MISMO club con una etiqueta de la MISMA FAMILIA (mismaFamilia() de
+    // tools/vocabulario.mjs: sin la marca de lista "b)", "c)", "-", sin mayúsculas ni acentos). Hasta acá solo valía la etiqueta exacta y la
+    // familia solo se usaba con los años ya CARGADOS. Caso: Atalanta 2024 "oneri sociali" volvió a preguntar lo contestado en 2021 como
+    // "b) oneri sociali" (2021 no estaba cargado todavía). Compuertas: mismo lado (si la clave lo lleva), misma nota (la fila del otro
+    // documento se busca con SU etiqueta) y una sola categoría entre todas las respuestas de la familia; si el club respondió distinto, no decide.
+    // SOLO para una fila que iba a la cola (`familia`): lo que el precedente, Jev o Claude ya decidieron con confianza no se pisa (medido: sin
+    // esto cambiaban categorías de años cargados, ej. Fortaleza "Auxilio hotelero"). Y familia ESTRICTA: claveFamilia() igual, sin la
+    // tolerancia de letras de mismaFamilia() ("materiali" e "immateriali" difieren en 2 letras y son opuestas: Hellas Verona 2020).
+    let viaFamilia = null;
+    if (!resp && familia) {
+      const [base, ladoClave] = String(clave).split('|');
+      // misma nota, o una fila es el RENGLÓN del estado y la otra su HOJA en la nota que lo abre (Atalanta: 2021 "b) oneri sociali" en el
+      // estado; 2024 "oneri sociali", hoja de la nota que abre "b) oneri sociali")
+      const mismaNotaDe = (c, et) => { if (!padre || !lado) return true; const otro = padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, et);
+        return otro == null || mismoPadre(otro, padre) || (otro === 'estado' && claveFamilia(padre) === claveFamilia(et)) || (padre === 'estado' && claveFamilia(otro) === claveFamilia(base)); };
+      const fam = respuestasDonde('cargar', 'categoria', (c) => { const [et, ld] = String(c.detalle).split('|'); return dirname(c.pdf) === dirname(pdf) && ld === ladoClave && et !== base && claveFamilia(et) === claveFamilia(base) && mismaNotaDe(c, et); });
+      const catDe = ({ caso: c, resp: x }) => (x.decision === 'aceptar' ? c.categoriaPropuesta : x.decision === 'corregir' ? String(x.valor || '').trim() : x.decision === 'descartar' ? '(descartar)' : null);
+      // compuerta de lado: una categoría del otro lado no vale (Fortaleza 2017 "transporte", gasto, tomaba "transportes", ingreso)
+      const cats = new Set(fam.map(catDe).filter(Boolean));
+      if (cats.size === 1 && (!lado || [...cats][0] === '(descartar)' || !ladoDeCat([...cats][0]) || ladoDeCat([...cats][0]) === lado)) { const ult = fam.filter((x) => catDe(x)).sort((a, b) => String(b.resp.ts).localeCompare(String(a.resp.ts)))[0]; ({ caso, resp } = ult); viaFamilia = `familia de "${String(caso.detalle).split('|')[0]}" (${caso.pdf.split('/').pop()})`; }
+    }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
     if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', clave, caso);
     if (!resp || !caso) return null;
-    if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: resp.nota || null };
-    if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: resp.nota || null };
+    const notaDe = () => [viaFamilia, resp.nota].filter(Boolean).join(' · ') || null;
+    if (resp.decision === 'aceptar') return { cat: caso.categoriaPropuesta, nota: notaDe() };
+    if (resp.decision === 'corregir' && resp.valor) return { cat: String(resp.valor).trim(), nota: notaDe() };
     if (resp.decision === 'descartar') return { descartar: true };
     return null;
   };
@@ -479,8 +501,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
-    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, norm(r.label), padreDe(r.origen), r.tside); let claveCola = norm(r.label);
-    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside); }
+    let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, norm(r.label), padreDe(r.origen), r.tside, { familia: !aceptable(f) }); let claveCola = norm(r.label);
+    if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${norm(r.label)}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f) }); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);

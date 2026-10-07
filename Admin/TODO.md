@@ -115,9 +115,12 @@ ni en el comentario de ningún archivo de código.
       intangibles → player_amortisation; "da L.N.P." y "Mutualità" → broadcasting; "Proventi non audiovisivi" → sponsorship_commercial;
       abbonamenti → season_tickets. Socios y otras secciones deportivas: "no" en todas las S.p.A. Están en `Admin/cola-revision.jsonl`
       (líneas `tipo: respuesta`) y en `Admin/categorias-aprendidas.jsonl`.
-    Arreglo candidato (escalón, medido antes/después): normalizar la etiqueta (sin "a)", "b)", numeración, mayúsculas) al buscar el
-    precedente y las respuestas del mismo club; después, evaluar un precedente por país para etiquetas idénticas. Lo cargado tiene que dar
-    idéntico (prueba completa).
+    HECHO EL ESCALÓN A (Versión 574): respuesta de otro año del mismo club por familia estricta. FALTA EL ESCALÓN B (diseño aprobado por
+    Guido el 2026-10-07): respuestas de OTROS CLUBES DEL MISMO PAÍS, solo para filas que iban a la cola; compuertas: misma etiqueta por
+    familia estricta Y mismo renglón padre, respondida en al menos 2 clubes, todos con la misma categoría, mismo lado. Ojo: "altri costi"
+    dio wages_squad en 4 clubes porque estaba bajo "9) per il personale"; bajo otro padre es otra cosa. Medición del A: familia con
+    tolerancia de letras confundía "materiali" con "immateriali" (Hellas Verona) y sin "solo filas que iban a la cola" cambiaba categorías
+    cargadas (Fortaleza "Auxilio hotelero").
 
 154. UNA RESPUESTA A UNA DUDA DE COLUMNA NO CAMBIA LO EXTRAÍDO (2026-10-07). Caso: Como 2025 (`Como-gruppo-pro-forma-consolidamento-2025`),
     un "Prospetto Pro-forma di Consolidamento" (.md L354-409) con columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma.

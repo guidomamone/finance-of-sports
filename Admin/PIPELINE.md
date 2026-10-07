@@ -257,6 +257,9 @@ Mitigaciones:
  ESCALÓN 5a ¿Claude ya respondió esto? (caché: carpeta + lado + etiqueta + nota, Versión 404)
  ESCALÓN 5b Claude por API con confianza >= 0,80
  ESCALÓN 6  materialidad: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se cargan con aviso (Versión 386)
+ ESCALÓN 7a (to-do 152) una fila que iba a la cola toma la respuesta de Guido de OTRO AÑO del club con la misma etiqueta salvo la marca
+            de lista ("b) oneri sociali" = "oneri sociali"; claveFamilia igual, sin tolerancia de letras). Compuertas: mismo lado, misma
+            nota (o una es el renglón del estado y la otra su hoja en la nota) y una sola categoría entre las respuestas
  "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);
             gana la que cierra (Versión 462)
  COMPUERTA DEL LADO en todos los escalones (Versiones 374 y 377): la categoría tiene que ser del lado de la fila en el documento; si no,
