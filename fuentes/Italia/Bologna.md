@@ -54,3 +54,5 @@ devolvió): verificar al transcribir. **Falta 2023/24 y 2024/25** (la nota anter
 - **Color de marca**: `#9F1F33` (rojo) — rossoblù en partes iguales (it.wikipedia, Bologna_Football_Club_1909); elegido el rojo (el azul de footylogos, #1B2838, es casi negro); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2020 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf` (sourceId `bologna-it-bilancio-consolidato-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2020-21.pdf` (sourceId `bologna-it-bilancio-consolidato-2020-21`).
