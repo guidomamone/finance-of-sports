@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.md",
- "generado": "2026-10-07T01:49:55.762Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:21.680Z",
+ "estado": "ok",
  "clubId": "parma-it",
  "year": 2023,
  "escala": {
@@ -52,9 +52,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "44c308c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -89,8 +87,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: Es una reclasificación del conto economico con indicadores, duplica b12.",
   "duda de localizar que no afecta la carga: Resumen UEFA en miles que repite importes ya abiertos en las notas de ingresos y gastos.",
-  "duda de extraer que no afecta la carga: En L1519 y L1521 las variaciones (412.951; 911.706) no coinciden con la resta de columnas, aunque los importes 2023 suman el total 3.551.648 (L1522).",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: En L1519 y L1521 las variaciones (412.951; 911.706) no coinciden con la resta de columnas, aunque los importes 2023 suman el total 3.551.648 (L1522)."
  ],
  "reintentar": null,
  "reintentado": false,

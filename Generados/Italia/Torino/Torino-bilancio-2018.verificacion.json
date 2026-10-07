@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2018.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2018.md",
- "generado": "2026-10-07T01:42:32.546Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:29.324Z",
+ "estado": "ok",
  "clubId": "torino-it",
  "year": 2018,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "3318636",
-  "24da311"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -54,9 +51,9 @@
  ],
  "notas": [
   "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (400.771), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155))",
+  "duda de localizar ya contestada para el club (escala, \"-\"): corregir no, en Torino-bilancio-2024.pdf",
   "duda de localizar que no afecta la carga: Mezcla ammortamenti, svalutazioni y plusvalenze ya presentes en el estado y en sus notas, por lo que su contenido es un resumen.",
-  "duda de extraer que no afecta la carga: L1555 menciona 2016 pero la tabla y el importe 2.054 coinciden con 2017 del estado; parece errata.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1555 menciona 2016 pero la tabla y el importe 2.054 coinciden con 2017 del estado; parece errata."
  ],
  "reintentar": null,
  "reintentado": false,

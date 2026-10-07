@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2025.md",
- "generado": "2026-10-07T01:49:54.689Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:20.622Z",
+ "estado": "ok",
  "clubId": "napoli-it",
  "year": 2025,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "a60b435",
-  "18e4dba"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -67,8 +64,7 @@
   "ajuste manual: fila \"e) altri\" (financiero) (918.251), en lugar de \"e) altri\" (2026-10-07, oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07))",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer que no afecta la carga: L2261 (-8.715.053) no coincide con a) imposte correnti 5.859.119 del estado; sus partes ya están en L329 y L331.",
-  "duda de extraer que no afecta la carga: La nota b88 suma intereses y diferencias de cambio juntos; se cargan solo los renglones de intereses como desglose de e) altri.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La nota b88 suma intereses y diferencias de cambio juntos; se cargan solo los renglones de intereses como desglose de e) altri."
  ],
  "reintentar": null,
  "reintentado": false,

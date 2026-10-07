@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2024.md",
- "generado": "2026-10-07T01:49:54.157Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:20.096Z",
+ "estado": "ok",
  "clubId": "napoli-it",
  "year": 2024,
  "escala": {
@@ -39,10 +39,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "8d70324",
-  "9105565"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -80,10 +77,10 @@
   "ajuste manual: fila \"e) altri (oneri finanziari)\" (financiero) (1.063.280), en lugar de \"e) altri\" (2026-10-07, oneri finanziari impresos en positivo bajo 17); Totale C (L290) 7.442.873 (to-do 155/156, arreglo manual 2026-10-07))",
   "ajuste manual: fila \"b) perdite su cambi\" (financiero) (4.559), en lugar de \"b) perdite su cambi\" (2026-10-07, perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07))",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"e) altri\"): ¿Se deja afuera la nota b75 'Interessi attivi' y 'Proventi/Oneri su cambi' (L2156-L2164) por repetir uno a uno renglones del estado, y se cargan solo los 5 componentes de 'e) altri'?",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Napoli-bilancio-2024.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"e) altri\"): aceptar, en Napoli-bilancio-2024.pdf",
   "duda de extraer que no afecta la carga: En 2023 la nota incluye amichevoli 456.563 que el estado muestra en d) altri ricavi da gare; no afecta 2024.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale Altri ricavi e proventi (5)\"): ¿Se dejan afuera las filas de b52 y b60 (L1747-L1864) por duplicar renglones del estado?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Totale Altri ricavi e proventi (5)\"): aceptar, en Napoli-bilancio-2024.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

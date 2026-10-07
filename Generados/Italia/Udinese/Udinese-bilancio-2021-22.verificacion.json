@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf",
  "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
- "generado": "2026-10-07T01:42:56.153Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:30.907Z",
+ "estado": "ok",
  "clubId": "udinese-it",
  "year": 2022,
  "escala": {
@@ -65,11 +65,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "dac1b31",
-  "5d98c81",
-  "dac3ec4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -105,8 +101,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b103 repite el conto economico con columnas de variaciones y valores UEFA; el estado oficial es b31-b32.",
   "duda de localizar que no afecta la carga: b24 parece repetir el desglose de servicios de la nota b79.",
-  "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L2499 total 2021 14.859.478 no cuadra con la suma 189.558+5.822.122=6.011.680 ni con L2446; solo afecta al año anterior."
  ],
  "reintentar": null,
  "reintentado": false,

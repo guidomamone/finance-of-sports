@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
- "generado": "2026-10-07T01:50:42.873Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:22.283Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2018,
  "escala": {
@@ -65,16 +65,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "61cc972",
-  "bacb766",
-  "9d376b2",
-  "489b11d",
-  "2d25d25",
-  "34c23c4",
-  "6a6cd82",
-  "eff090a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -105,7 +96,10 @@
   "ajuste manual: fila \"Variazione delle rimanenze (reduce costos)\" (ingreso) 82, en lugar de \"Variazione delle rimanenze\" (2026-10-07, la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156))",
   "duda de localizar que no afecta la carga: El cuadro por segmento parece repetir los renglones del estado consolidado sin abrir categorías nuevas.",
   "duda de localizar que no afecta la carga: b79 abre derechos centralizados por contraparte, que ya están totalizados en b78.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Gestione operativa netta calciatori\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Spese per il personale\"): aceptar, en AS-Roma-bilancio-2018.pdf"
  ],
  "reintentar": [
   {

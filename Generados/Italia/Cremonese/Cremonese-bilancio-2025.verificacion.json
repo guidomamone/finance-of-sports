@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md",
- "generado": "2026-10-07T01:49:55.248Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:21.165Z",
+ "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2025,
  "escala": {
@@ -39,12 +39,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "9bad21e",
-  "e093d3b",
-  "c601048",
-  "3fb473e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -76,9 +71,10 @@
   "ajuste manual: fila \"altri (proventi finanziari)\" (financiero) 24.755, en lugar de \"altri\" (2026-10-07, proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07))",
   "ajuste manual: fila \"altri (oneri finanziari)\" (financiero) (29.016), en lugar de \"altri\" (2026-10-07, ver el anterior (to-do 155/156, arreglo manual 2026-10-07))",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el conto economico riclassificato FIGC (b12-b13) y se usa solo el esquema civilístico b5?",
-  "duda de extraer que no afecta la carga: L1796: 1.269.474-1.201.982=67.492, no 659; el total 35.123.032 sí cuadra con 1.269.474.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en Cremonese-bilancio-2025.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Ricavi da cessione temporanea prestaz calciat.\"): aceptar, en Cremonese-bilancio-2025.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Altri ricavi e proventi\"): aceptar, en Cremonese-bilancio-2025.pdf",
+  "duda de extraer que no afecta la carga: L1796: 1.269.474-1.201.982=67.492, no 659; el total 35.123.032 sí cuadra con 1.269.474."
  ],
  "reintentar": null,
  "reintentado": false,

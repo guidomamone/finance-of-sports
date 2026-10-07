@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2024.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2024.md",
- "generado": "2026-10-07T01:42:17.844Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:30.378Z",
+ "estado": "ok",
  "clubId": "torino-it",
  "year": 2024,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "2109e63",
-  "b115b8a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,9 +52,9 @@
  "notas": [
   "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (3.226.978), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17 = (2.788.248)); la etapa 6 lo sumaba como ingreso (to-do 155))",
   "duda de localizar que no afecta la carga: Ambos cuadros reagrupan importes que ya figuran en el conto economico (b11) y en las notas b36/b42.",
+  "duda de localizar ya contestada para el club (escala, \"-\"): corregir no, en Torino-bilancio-2024.pdf",
   "duda de extraer que no afecta la carga: L524: el signo de 2023 (1.584.259 positivo) es inconsistente con -10.748.061 → -9.562.667, que implica un beneficio neto de impuestos de 1.185.394.",
-  "duda de extraer que no afecta la carga: L1572-L1576: la nota no se mapea exactamente a los sub-renglones a), d), e) del estado (ej. d) 13.000 no aparece en la nota).",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1572-L1576: la nota no se mapea exactamente a los sub-renglones a), d), e) del estado (ej. d) 13.000 no aparece en la nota)."
  ],
  "reintentar": null,
  "reintentado": false,

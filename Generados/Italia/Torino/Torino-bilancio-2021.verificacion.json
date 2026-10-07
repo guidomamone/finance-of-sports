@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2021.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
- "generado": "2026-10-07T01:42:33.099Z",
- "estado": "cola",
+ "generado": "2026-10-07T01:51:29.857Z",
+ "estado": "ok",
  "clubId": "torino-it",
  "year": 2021,
  "escala": {
@@ -26,12 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "b736941",
-  "1df8456",
-  "bf00684",
-  "e2936cc"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,8 +51,8 @@
  ],
  "notas": [
   "ajuste manual: fila \"d) oneri diversi (17, costo)\" (financiero) (940.101), en lugar de \"d) oneri diversi\" (2026-10-07, Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155))",
-  "duda de extraer que no afecta la carga: La nota b37 agrupa distinto que el estado (ej. 'Altri ricavi' 5.616 + rimborso 627 vs 'i) ricavi e proventi diversi' 5.939 y 'd) proventi commerciali' 304); se asignó al total salvo sponsorización.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): corregir no, en Torino-bilancio-2024.pdf",
+  "duda de extraer que no afecta la carga: La nota b37 agrupa distinto que el estado (ej. 'Altri ricavi' 5.616 + rimborso 627 vs 'i) ricavi e proventi diversi' 5.939 y 'd) proventi commerciali' 304); se asignó al total salvo sponsorización."
  ],
  "reintentar": null,
  "reintentado": false,
