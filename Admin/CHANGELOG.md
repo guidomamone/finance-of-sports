@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 571 — PDF híbrido: una página escaneada dentro de un PDF digital se valida con Gemini (2026-10-07)
+
+- `validar-bloques.mjs`: una página de un PDF digital sin texto propio (menos de 50 caracteres) se valida como escaneo (Gemini; si la
+  rechaza, Claude). Excepción pedida por Guido aunque sea 1 caso en 632 páginas: Como 2025, pág. 9 del visor (sin número impreso), el
+  pro-forma firmado y escaneado entero. Medido en 122 documentos: solo cambia Como (120 sin confirmar -> 0, US$ 0,003).
+- `verificar.mjs` (`avisarRegistro`): un número sin ninguna segunda lectura (Gemini y Claude rechazaron la página) no frena la
+  categorización si la etapa 6 cerró; sin cerrar ya iba a la cola. Hoy hay 0 números así; simulado en Como sin claves: 120 -> 0.
+- TODO 160 resuelto. Los 101 ajustes `confirmado` de Como quedan (ya no hacen falta, no molestan).
+
 ## Versión 570 — Un lote cortado ya no rearma páginas que estaban bien (2026-10-07)
 
 - `lote.mjs` (paso A): un documento con la etapa 4 y sin la 6 (lote cortado) pasa primero por la etapa 6, gratis, también en el ensayo.

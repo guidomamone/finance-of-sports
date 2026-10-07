@@ -151,7 +151,8 @@ Mitigaciones:
  ESCALÓN 2  Claude lee la imagen (si Gemini la rechaza) ── ¿coincide? sí → confirmado
  ESCALÓN 2b ¿es un 1900-2099 en la fila de encabezado de una tabla? sí → sigue sin confirmar, con propuesta "anio-encabezado"
             compuerta (avisarRegistro, etapa 6): su línea no es la de ninguna fila que se carga → no frena la categorización
- ESCALÓN 3  las sumas de la etapa 6 lo confirman
+ ESCALÓN 3  las sumas de la etapa 6 lo confirman (también un número sin ninguna segunda lectura: Gemini y Claude rechazaron la página;
+            con la etapa 6 cerrada no frena la categorización, sin cerrar va a la cola)
  nada → cola con los dos números
 ```
 - Tool: `validar-bloques.mjs`.

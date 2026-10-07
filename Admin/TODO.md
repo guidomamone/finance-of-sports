@@ -198,15 +198,6 @@ ni en el comentario de ningún archivo de código.
     Relacionado: to-dos 155 y 156 (mismas familias de causa) y la elección de lectura en `verificar.mjs` (`ajuste()`).
 
 
-160. UN DOCUMENTO QUE CIERRA NO SE CATEGORIZA SI LA ETAPA 4 DEJÓ "NO CONFIRMADOS" FALSOS (2026-10-07). `avisarRegistro()`
-    (`verificar.mjs`) marca el documento `listo-para-jev` solo si no hay números sin confirmar en los bloques que se cargan, y SOLO cuando
-    corre dentro del lote (no desde `verificar.mjs` suelto): hubo que correr el lote 20 y el 21 dos veces. Los años de encabezado (Napoli
-    2024, L276) ya no frenan desde la Versión 567 (escalón 2b de la etapa 4). Queda Como 2025: 96 números de la tabla pro-forma con
-    encabezados de varias líneas `<br>` que el texto propio no conserva (se destrabó con ajustes `confirmado` generados por script desde
-    `.validacion.json` → `noConfirmados`, como Juventus 2021-22). Arreglo candidato: si la etapa 6 cerró al centavo con esos números, que no
-    frenen. Medido 2026-10-07 (ex to-do 150): en los lotes 14 y 19, 192 de 193 "no confirmados" están en documentos donde la etapa 6 cerró y
-    en páginas que la etapa 2 validó; el daño de hoy es Como (79 en bloques que se cargan); Lazio 2021-22 (70) no frena (bloques que no se cargan).
-
 161. ALTA-CLUB: NOMBRE, TIPO Y CIERRE QUE SALEN MAL (2026-10-06/07, 16 altas italianas). `tools/alta-club.mjs`:
     - Nombre legal: propuso "Hellas Verona Service S.r.l." (una subsidiaria) en vez de "Hellas Verona Football Club S.p.A.", "Sportiva
       Sassuolo Calcio Srl" (truncado), "Roma S.r.l.", "Calcio Monza S.p.A." y varios en MAYÚSCULAS ("BOLOGNA F.C. 1909 S.P.A."). Se corrigieron

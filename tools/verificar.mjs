@@ -857,7 +857,11 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   // Caso: Napoli 2024, "2023" en L276 (encabezado); las filas que se cargan están en L280, L281, L284...
   const lineasCargadas = out ? new Set([...(out.lineas || []), ...(out.financiero || []), ...(out.impuesto || [])].map((l) => Number(l.linea))) : null;
   const pasaCompuerta = (n) => n.propuesta === 'anio-encabezado' && lineasCargadas && !lineasCargadas.has(Number(n.linea));
-  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
+  // SIN NINGUNA SEGUNDA LECTURA (to-do 160 parte 2, ok de Guido): la página es una imagen y Gemini y Claude la rechazaron los dos (RECITATION,
+  // poco probable pero posible), así que no hay contra qué confirmar. Ahí manda el escalón 3 de la etapa 4: las sumas de la etapa 6, y
+  // avisarRegistro() solo corre con la etapa 6 en "ok". Si las sumas no cierran, verificar() ya manda cada número a la cola
+  // ('numero-no-confirmado', "no se pudo confirmar contra el PDF").
+  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && !n.sinSegunda && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
   if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
   const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
