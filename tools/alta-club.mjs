@@ -252,7 +252,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
-import { ajusteDe } from './ajustes.mjs';
+import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 export { resumenAltas };
@@ -765,6 +765,10 @@ export function analizar(docArg, sitio, ov = {}) {
   if (partes.length < 3 || partes[0].startsWith('..')) { r.error = 'el documento no está en Clubes/<País>/<Club>/'; return r; }
   // AJUSTES MANUALES de cierre y reportType (Versión 413): escalón 0, ganan sobre la respuesta de Claude por API y sobre lo detectado.
   for (const c of ['cierre', 'reportType']) { const a = r.pdf ? ajusteDe(r.pdf, c) : null; if (a) ov = { ...ov, [c]: { valor: a.valor, fuente: `ajuste manual (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
+  // (Versión 562) Lo mismo para el PERÍMETRO, del documento o de todo el club (ajustePerimetroDe, el mismo escalón 0 que usa cargar.mjs).
+  // Caso: lote 14, el ajuste "Bologna -> consolidado" (perimetro-senales.mjs) lo leía cargar.mjs pero no el alta, que volvía a preguntar
+  // y bloqueaba --escribir.
+  { const a = r.pdf ? ajustePerimetroDe(r.pdf) : null; if (a) ov = { ...ov, perimetro: { valor: a.valor, fuente: `ajuste manual (Admin/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
   const [paisCarpeta, clubCarpeta] = partes;
   r.carpeta = `Clubes/${paisCarpeta}/${clubCarpeta}/`;
   if (clubCarpeta.startsWith('_')) { r.error = `"${clubCarpeta}" es una carpeta de agregado (empieza con "_"), no un club`; return r; }
@@ -1010,7 +1014,12 @@ export function analizar(docArg, sitio, ov = {}) {
       ? `El documento trae estados CONSOLIDADOS y también individuales/de la sociedad (${nCons} vs ${nInd} menciones). ¿Qué columna se carga? ${sugerencia}`
       : `El documento parece ser solo del GRUPO consolidado (${nCons} menciones, ninguna de estados individuales). ¿El grupo es "el club", o hay que buscar los estados individuales de la sociedad que juega? ${sugerencia}`;
   }
-  if (ov.perimetro && !otraEntidad) { valorPer = ov.perimetro.valor; estadoPer = 'ok'; preguntaPer = null; fuentePer = `claude-api con cita verificada: ${ov.perimetro.fuente}`; }
+  // Con dos entidades en la carpeta el perímetro solo no alcanza (hay que elegir cuál es el club), salvo que el ajuste sea manual y el NOMBRE
+  // de este documento diga ese mismo perímetro (Parma 2023: ajuste individual y "...-individual.pdf"; el "...-consolidato.pdf" del mismo
+  // año sigue preguntando).
+  const perDelNombre = /consolidat/.test(nomNorm) ? 'consolidado' : /individual|separat|einzel|enkelvoudig/.test(nomNorm) ? 'individual' : null;
+  const ajusteCoincide = ov.perimetro?.manual && otraEntidad && perDelNombre === ov.perimetro.valor;
+  if (ov.perimetro && (!otraEntidad || ajusteCoincide)) { valorPer = ov.perimetro.valor; estadoPer = 'ok'; preguntaPer = null; fuentePer = ov.perimetro.manual ? ov.perimetro.fuente : `claude-api con cita verificada: ${ov.perimetro.fuente}`; }
   E.push(campo('perimetro', valorPer, fuentePer, estadoPer, { ...(preguntaPer ? { pregunta: preguntaPer } : {}), ...(otraEntidad ? { dosEntidades: basename(otraEntidad) } : {}) }));
 
   // Moneda del ejercicio
