@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 569 — Bologna 2019-20, 2020-21 y 2021-22 cargados (2026-10-07)
+
+- Cargados con ajustes manuales: el 17) por línea (`--reemplaza-linea`) y la D de 2019-20; los ingresos abiertos con la nota "Altri
+  ricavi e proventi" (10 filas por año generadas por script, to-do 163), categorizadas con `cola.mjs --corregir-categoria` sin otro lote.
+- Cola de Bologna respondida por Claude con los criterios de Italia (ok de Guido): 31 casos más 30 categorías fijadas.
+- Italia: 28 ejercicios de 15 clubes además de Juventus. Caja y deuda de Bologna sin dato (escalón 2 con IA, lo corre Guido).
+
 ## Versión 568 — Un ajuste `fila` puede reemplazar una línea, no solo una etiqueta (2026-10-07)
 
 - `ajustes.mjs fila --reemplaza-linea N` y `verificar.mjs`: sale solo la fila de esa línea del .md (o las hojas de su nota, si estaba

@@ -202,9 +202,9 @@ ni en el comentario de ningún archivo de código.
 
 157. ITALIA: 4 DOCUMENTOS QUE TODAVÍA NO CIERRAN NI CON AJUSTES (2026-10-07; un subagente encontró las causas, ver abajo). Ya cierran con
     ajustes (cargables): Milan 2023-24 (rettifiche D sin lado: `fila` 672 y (800) del lado financiero), Inter 2021-22 (D 521.197),
-    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando), Bologna 2019-20, 2020-21 y 2021-22 (Versión 568:
-    un ajuste `fila` por línea en el 17), `--reemplaza-linea`, y en 2019-20 la D (1.868.716); las imposte NO hacían falta, ya entraban netas;
-    2020-21 y 2021-22 quedan con dudas de extracción en la cola). Los que faltan:
+    Lazio 2021-22 (era un chequeo de año vecino desactualizado: se arregló re-verificando), Bologna 2019-20, 2020-21 y 2021-22 (cargados en la
+    Versión 569: un ajuste `fila` por línea en el 17), `--reemplaza-linea`, y en 2019-20 la D (1.868.716); las imposte NO hacían falta, ya
+    entraban netas; los ingresos, con la nota de altri ricavi, ver to-do 163). Los que faltan:
     - Inter 2024-25: D 780.928 (L976) ya cargado como ajuste; falta que el "12) Accantonamenti per rischi" (19.420) entre restando
       (es un rilascio). Solo la lectura 5 cerraría; hoy gana otra.
     - Lazio 2014-15 (formato riclassificato): ajustes de impuestos ya cargados (imposte correnti (3.432.429) que no se había extraído;
@@ -248,7 +248,10 @@ ni en el comentario de ningún archivo de código.
     proventi" en a) 50,29 M / b) / f) 15,41 M y la nota abre los mismos 68,09 M en otras filas (sponsors, TV 16,205 M, Lega 15,507 M...):
     difieren en 0,097 M en cómo reparten a) y f), `cerrarNota` no cierra y a) se carga entero como other_income → "Televisión en 0" y el
     lote pide un `--reintentar` (~US$ 0,50) que no lo arregla. Se resolvió a mano con 2 `fila` (a) sin TV 34.086.540 + TV 16.205.000) y 2
-    `categoria`. Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
+    `categoria`. Bologna 2019-20 a 2021-22: la nota "Altri ricavi e proventi" abre el grupo 5) entero (contributi + altri, al euro), no cada renglón;
+    sin abrirla, TV (33,9 / 62,7 / 41,8 M) y sponsors quedaban en otros ingresos. Se resolvió con 10 `fila` por año generadas por script desde
+    la tabla de la nota (los dos renglones salen con `--reemplaza-linea`) y `--corregir-categoria` para cada fila nueva (Versión 569).
+    Udinese 2021-22 igual (la nota abre "Totale altri ricavi e proventi" 72.965.182 con contributi 3,86 M donde el estado dice
     2,05 M); ahí se usó `incluye` por el to-do 158. Arreglo candidato: si la nota suma exactamente el SUBTOTAL del grupo (aunque no sus
     renglones uno por uno), que reemplace el grupo entero (compuerta: el subtotal impreso).
 
