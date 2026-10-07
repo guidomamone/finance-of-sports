@@ -95,3 +95,13 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
+
+150. ¿LA ETAPA 4 REBOTA NÚMEROS QUE LA ETAPA 2 YA VALIDÓ? MEDIRLO CON EL LOTE 14 (Guido, 2026-10-06). La pregunta: cuántos "no
+    confirmados" de la etapa 4 (`validar-bloques.mjs`, `.validacion.json` → `noConfirmados`) caen en páginas que la etapa 2 ya había
+    validado (registro: chequeos gratis, segunda voz) y, de esos, cuántos eran falsos (el .md estaba bien). Si casi no hay o son reales,
+    queda como está. Si hay falsos positivos, se arregla (candidato: escalón 0 de la etapa 4 = "página validada en la etapa 2").
+    Caso que lo abrió: Milan 2022-23, pág. 84 del visor (impreso 84), .md L2527, "Minusvalenze da cessione diritti pluriennali": el .md
+    (42 | 2.456 | -2.414) está bien (imagen de la página; las columnas suman 18.566 y 22.232); el texto propio del PDF no trae 42 ni
+    2.456. Parte fue efecto del corte del lote: `paginasARearmar()` (texto-propio-a-md.mjs L263) no rearma si la etapa 6 cerró, y la
+    corrida cortada no llegó a la etapa 6. Medir con el lote 14 terminado (sus 34 documentos). Guido descartó por ahora encadenar el
+    `--reintentar` al final del lote.

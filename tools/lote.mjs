@@ -372,7 +372,8 @@ console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node too
 const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
 for (const pdf of docs.filter((d) => !testigos.has(d))) {
   const e = registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
-  const anio = c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf;
+  // (Versión 562) el club adelante del año: con varios clubes en un lote, "2021" solo no dice cuál (lote 14, 12 clubes italianos).
+  const anio = `${pdf.split('/')[2] || ''} ${c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf}`.trim();
   // (Versión 461) un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (Novorizontino 2018-2021 y
   // 2024, Juventus 2012: propuestas de antes del alta del club decían "el club no existe en el sitio").
   if (e?.md && yaEnSitio(e)) resultado.yaCargado.push({ anio });

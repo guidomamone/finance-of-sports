@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 562 — El alta lee el ajuste de perímetro; el resultado del lote dice el club (2026-10-06)
+
+- `alta-club.mjs`: el ajuste `perimetro` (del documento o del club) es el escalón 0, como ya era en `cargar.mjs`. Con dos entidades en la
+  carpeta, vale solo si el nombre del documento dice ese perímetro (Parma 2023 individual sí; el consolidato del mismo año sigue
+  preguntando). Juventus y Novorizontino dejan de preguntar el perímetro (toman el de su ajuste, igual a lo cargado).
+- `lote.mjs`: cada línea del RESULTADO lleva el club ("Torino 2021", no "2021").
+
 ## Versión 561 — Italia: etapa 2 del primer tercio y el perímetro del club por señales (2026-10-06)
 
 - `pipeline.mjs` sobre 35 de los 105 documentos italianos sin validar (todos "listo"); lista `Admin/lote-14.txt` (34, sin el informe del
