@@ -33,4 +33,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'inter-it': { 2025: 'it-seriea' },
   // Lazio (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Lazio".
   'lazio-it': { 2023: 'it-seriea' },
+  // Monza (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Monza".
+  'monza-it': { 2022: 'it-seriea' },
 });
