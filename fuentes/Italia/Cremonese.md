@@ -45,3 +45,5 @@ devolver 0 resultados / rechazar conexión a mitad de sesión).
 - **Color de marca**: `#ED1C24` (rojo) — grigiorosso a palos iguales (it.wikipedia, Unione_Sportiva_Cremonese); elegido el rojo sobre el gris; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf` (sourceId `cremonese-it-bilancio-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf` (sourceId `cremonese-it-bilancio-2025`).

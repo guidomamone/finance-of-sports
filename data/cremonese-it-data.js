@@ -32,6 +32,8 @@
 // ============================================================================
 
 const cremoneseitRevenueLinesByYear = {
+  // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:,
+  // Generados/Italia/Cremonese/Cremonese-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   // 2025: cargado por tools/cargar.mjs (2026-10-07) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Cremonese/Cremonese-bilancio-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
@@ -40,8 +42,22 @@ const cremoneseitRevenueLinesByYear = {
     { rawLabel:'Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.071304, disclosureLevel:'aggregated' }, // pág. 41, Jev 0.99
     { rawLabel:'Gare del settore giovanile', normalizedCategory:'youth_football', amountNative:0.0139, disclosureLevel:'aggregated' }, // pág. 41, Jev 0.95
     { rawLabel:'Gare amichevoli e altri', normalizedCategory:'matchday_competition', amountNative:0.009921, disclosureLevel:'aggregated' }, // pág. 41, Claude 0.85
-    { rawLabel:'contributi in conto esercizio', normalizedCategory:'other_income', amountNative:5.47336, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.97
-    { rawLabel:'altri', normalizedCategory:'lump_football_operations', amountNative:50.276342, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Provvidenze e contributi dalla mutualità', normalizedCategory:'broadcasting', amountNative:3.81965, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Contributo solidarietà', normalizedCategory:'broadcasting', amountNative:1.58371, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Contributo progetto solidarietà lega', normalizedCategory:'broadcasting', amountNative:0.07, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi da sponsors ufficiali e istituzionali', normalizedCategory:'sponsorship_commercial', amountNative:37.607005, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi da sponsors tecnici e fornitori ufficiali', normalizedCategory:'sponsorship_commercial', amountNative:0.901037, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi pubblicitari e altri sponsors', normalizedCategory:'sponsorship_commercial', amountNative:3.996392, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi televisivi campionato', normalizedCategory:'broadcasting', amountNative:0.894677, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi televisivi Coppa Italia', normalizedCategory:'broadcasting', amountNative:0.478553, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Proventi da contratto RAI Com', normalizedCategory:'broadcasting', amountNative:0.030146, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Ricavi da cessione temporanea prestaz calciat.', normalizedCategory:'player_sales', amountNative:0.8145, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Plusv, da cessione diritti pluriennali calciatori', normalizedCategory:'player_sales', amountNative:3.014719, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Premi di valorizz, preparaz, contr solid e altri calc', normalizedCategory:'player_sales', amountNative:1.851697, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Ricavi da attività varie del SG', normalizedCategory:'youth_football', amountNative:0.068245, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Affitti attivi', normalizedCategory:'other_income', amountNative:0.03, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Ricavi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.422299, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:0.167072, disclosureLevel:'aggregated' }, // pág. 42, precedente
   ],
 };
 const cremoneseitExpenseLinesByYear = {
@@ -90,6 +106,8 @@ const cremoneseitExpenseLinesByYear = {
   ],
 };
 const cremoneseitFiscalYearMeta = {
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07)
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (29.016). ver el anterior (to-do 155/156, arreglo manual 2026-10-07)
   2025: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -104,10 +122,6 @@ const cremoneseitFiscalYearMeta = {
       {label:'altri (oneri finanziari)', value:0.029016},
       {label:'imposte correnti', value:-1.182142},
       {label:'imposte differite e anticipate', value:2.255274},
-    ],
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'altri', lado:'revenue', importe:50.276342, motivo:'Claude 2026-10-07 (Guido delega; criterios del to-do 152)'},
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:57.398341, officialTotalExpenses:65.452619, officialPAT:-6.985407,
