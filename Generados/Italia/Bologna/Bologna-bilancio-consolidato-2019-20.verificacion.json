@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.md",
- "generado": "2026-10-07T01:55:35.119Z",
- "estado": "cola",
+ "generado": "2026-10-07T15:54:41.133Z",
+ "estado": "ok",
  "clubId": "bologna-it",
  "year": 2020,
  "escala": {
@@ -11,11 +11,37 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "e48838a",
-  "223458c"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "(670.894)",
+   "linea": 952,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 952,
+   "motivo": "Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).",
+   "evidencia": ".md L952 (17) altri 670.894), L955 Totale C (666.720)",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
+   "campo": "fila",
+   "valor": "(1.868.716)",
+   "linea": 958,
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 958,
+   "motivo": "Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).",
+   "evidencia": ".md L958, L960 Totale D (1.868.716), L961 risultato prima delle imposte (39.019.149)",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,8 +55,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 72.37475 - gastos 108.858464 ± financiero 0.675068 ± impuesto 0.498916 no da el impreso -39.518065"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2021",
@@ -51,9 +77,13 @@
  "notas": [
   "la nota de \"a) salari e stipendi\" no suma el renglón (45.287885 contra 47.623939, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Altri oneri da gestione calciatori:\" (6 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (670.894), en lugar de la fila de L952 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
+  "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (1.868.716), en lugar de la fila de L958 (2026-10-07, Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).)",
   "duda de localizar que no afecta la carga: b77 tiene una sola fila de total, igual al renglón del estado, por lo que no agrega desglose.",
   "duda de localizar que no afecta la carga: Son detalles por jugador, no aportan desglose por categoría.",
-  "duda de extraer que no afecta la carga: Sin esas dos filas los sub-ítems no suman 1.618.718 (L2568); con ellas sí, aunque L2585 no lleva guión."
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale costi per il personale\"): ¿Se deja afuera de la carga el cuadro de personal por categoría Tesserati/Altri dip. (L2462-L2465), ya que repite las filas del estado?",
+  "duda de extraer que no afecta la carga: Sin esas dos filas los sub-ítems no suman 1.618.718 (L2568); con ellas sí, aunque L2585 no lleva guión.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -83,12 +113,12 @@
  "totales": {
   "ingresos": 72.37475,
   "gastos": 108.858464,
-  "financiero": 0.675068,
+  "financiero": -2.535436,
   "impuesto": 0.498916,
   "resultadoImpreso": -39.518065,
   "resultadoParaCargar": -39.518065,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -374,7 +404,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -388,30 +418,35 @@
    "linea": 948
   },
   {
-   "etiqueta": "altri",
-   "M": 0.670894,
-   "linea": 952
-  },
-  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": 0.002243,
    "linea": 954
+  },
+  {
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -0.670894,
+   "linea": 952
+  },
+  {
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "M": -1.868716,
+   "linea": 958
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 0.591876,
+   "M": -0.591876,
    "linea": 976
   },
   {
    "etiqueta": "imposte relative a esercizi precedenti",
-   "M": -0.094384,
+   "M": 0.094384,
    "linea": 977
   },
   {
    "etiqueta": "imposte differite e anticipate",
-   "M": 0.001424,
+   "M": -0.001424,
    "linea": 978
   }
  ]

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T01:55:36.440Z",
+ "generado": "2026-10-07T15:54:41.233Z",
  "estado": "cola",
  "clubId": "bologna-it",
  "year": 2022,
@@ -11,9 +11,23 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(1.384.360)",
+   "linea": 235,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 235,
+   "motivo": "Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).",
+   "evidencia": ".md L235 (17) altri 1.384.360), L238 Totale C (1.223.922)",
+   "autor": "Guido",
+   "fecha": "2026-10-07"
+  }
+ ],
  "cola": [
-  "5c5cf64",
   "c6cf5ca",
   "e3ab35e"
  ],
@@ -30,8 +44,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 80.372337 - gastos 125.112152 ± financiero 1.544798 ± impuesto 0.730404 no da el impreso -46.694143"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2021",
@@ -45,9 +59,11 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (1.384.360), en lugar de la fila de L235 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
   "duda de localizar que no afecta la carga: El conto economico consolidato aparece dos veces: b5 completo en una página y b24+b25+b26 en la nota integrativa.",
   "duda de extraer que no afecta la carga: La tabla b77 sigue en la pág. 64 (b78) con el renglón 'Altri ricavi e proventi' y el Totale 75.870.757; la suma de b77+b78 da el total.",
-  "duda de extraer que no afecta la carga: Diferencias de 15.595 en el año anterior entre estado y notas, probablemente reclasificación; no afecta el ejercicio pedido."
+  "duda de extraer que no afecta la carga: Diferencias de 15.595 en el año anterior entre estado y notas, probablemente reclasificación; no afecta el ejercicio pedido.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -55,12 +71,12 @@
  "totales": {
   "ingresos": 80.372337,
   "gastos": 125.112152,
-  "financiero": 1.544798,
+  "financiero": -1.223922,
   "impuesto": 0.730404,
   "resultadoImpreso": -46.694143,
   "resultadoParaCargar": -46.694143,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -370,7 +386,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -379,30 +395,30 @@
    "linea": 231
   },
   {
-   "etiqueta": "altri",
-   "M": 1.38436,
-   "linea": 235
-  },
-  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": 0.155877,
    "linea": 237
+  },
+  {
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -1.38436,
+   "linea": 235
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 0.779656,
+   "M": -0.779656,
    "linea": 241
   },
   {
    "etiqueta": "imposte relative a esercizi precedenti",
-   "M": -0.050676,
+   "M": 0.050676,
    "linea": 242
   },
   {
    "etiqueta": "imposte differite e anticipate",
-   "M": 0.001424,
+   "M": -0.001424,
    "linea": 243
   }
  ]
