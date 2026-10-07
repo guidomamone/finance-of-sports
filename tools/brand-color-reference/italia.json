@@ -1,0 +1,384 @@
+{
+ "liga": "serie-a",
+ "source": "https://www.footylogos.com/color-codes/serie-a",
+ "fetchedAt": "2026-10-07T00:49:54.974Z",
+ "note": "Swatches en el mismo orden que la fuente -- NO asumir que el primero es el color de marca (footylogos ordena por el escudo, no la camiseta). Ver club-or-year-onboarding/club-nuevo.md para el proceso de decisión.",
+ "clubs": [
+  {
+   "slug": "udinese",
+   "name": "udinese",
+   "swatches": [
+    {
+     "hex": "#7F7F7F",
+     "label": "Grey #7F7F7F"
+    },
+    {
+     "hex": "#8B7D37",
+     "label": "Gold #8B7D37"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "torino",
+   "name": "torino",
+   "swatches": [
+    {
+     "hex": "#ECAC00",
+     "label": "Orange #ECAC00"
+    },
+    {
+     "hex": "#8B2A1F",
+     "label": "Dark Red #8B2A1F"
+    },
+    {
+     "hex": "#5B8CC1",
+     "label": "Blue #5B8CC1"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "juventus",
+   "name": "juventus",
+   "swatches": [
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "as-roma",
+   "name": "as roma",
+   "swatches": [
+    {
+     "hex": "#980A2B",
+     "label": "Dark Red #980A2B"
+    },
+    {
+     "hex": "#FBB900",
+     "label": "Orange #FBB900"
+    },
+    {
+     "hex": "#FFD500",
+     "label": "Yellow #FFD500"
+    }
+   ]
+  },
+  {
+   "slug": "inter-milan",
+   "name": "inter milan",
+   "swatches": [
+    {
+     "hex": "#00239C",
+     "label": "Dark Blue #00239C"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "ac-milan",
+   "name": "ac milan",
+   "swatches": [
+    {
+     "hex": "#E4002B",
+     "label": "Crimson Red #E4002B"
+    },
+    {
+     "hex": "#101820",
+     "label": "Black #101820"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "sassuolo",
+   "name": "sassuolo",
+   "swatches": [
+    {
+     "hex": "#1EA451",
+     "label": "Green #1EA451"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "pisa",
+   "name": "pisa",
+   "swatches": [
+    {
+     "hex": "#0761AF",
+     "label": "Blue #0761AF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    },
+    {
+     "hex": "#E30613",
+     "label": "Red #E30613"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "parma",
+   "name": "parma",
+   "swatches": [
+    {
+     "hex": "#FFCF01",
+     "label": "Yellow #FFCF01"
+    },
+    {
+     "hex": "#24338A",
+     "label": "Dark Blue #24338A"
+    },
+    {
+     "hex": "#1C1E1C",
+     "label": "Black #1C1E1C"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "napoli",
+   "name": "napoli",
+   "swatches": [
+    {
+     "hex": "#00ABE7",
+     "label": "Blue #00ABE7"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "lecce",
+   "name": "lecce",
+   "swatches": [
+    {
+     "hex": "#263B63",
+     "label": "Dark Blue #263B63"
+    },
+    {
+     "hex": "#D5B978",
+     "label": "Gold #D5B978"
+    },
+    {
+     "hex": "#E10E14",
+     "label": "Red #E10E14"
+    },
+    {
+     "hex": "#FCE803",
+     "label": "Yellow #FCE803"
+    }
+   ]
+  },
+  {
+   "slug": "lazio",
+   "name": "lazio",
+   "swatches": [
+    {
+     "hex": "#74D1EA",
+     "label": "Sky Blue #74D1EA"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#D69A2D",
+     "label": "Gold #D69A2D"
+    },
+    {
+     "hex": "#003A70",
+     "label": "Navy Blue #003A70"
+    }
+   ]
+  },
+  {
+   "slug": "hellas-verona",
+   "name": "hellas verona",
+   "swatches": [
+    {
+     "hex": "#FFD100",
+     "label": "Yellow #FFD100"
+    }
+   ]
+  },
+  {
+   "slug": "genoa",
+   "name": "genoa",
+   "swatches": [
+    {
+     "hex": "#002942",
+     "label": "Dark Blue #002942"
+    },
+    {
+     "hex": "#AB131C",
+     "label": "Dark Red #AB131C"
+    },
+    {
+     "hex": "#FFD600",
+     "label": "Yellow #FFD600"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "como-1907",
+   "name": "como 1907",
+   "swatches": [
+    {
+     "hex": "#10416A",
+     "label": "Navy Blue #10416A"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "bologna",
+   "name": "bologna",
+   "swatches": [
+    {
+     "hex": "#1B2838",
+     "label": "Navy Blue #1B2838"
+    },
+    {
+     "hex": "#9F1F33",
+     "label": "Dark Red #9F1F33"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#DEDEE2",
+     "label": "Light Grey #DEDEE2"
+    }
+   ]
+  },
+  {
+   "slug": "atalanta",
+   "name": "atalanta",
+   "swatches": [
+    {
+     "hex": "#0D68B1",
+     "label": "Blue #0D68B1"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#1E1E1E",
+     "label": "Black #1E1E1E"
+    }
+   ]
+  },
+  {
+   "slug": "cremonese",
+   "name": "cremonese",
+   "swatches": [
+    {
+     "hex": "#ED1C24",
+     "label": "Red #ED1C24"
+    },
+    {
+     "hex": "#808285",
+     "label": "Grey #808285"
+    },
+    {
+     "hex": "#CF9C51",
+     "label": "Gold #CF9C51"
+    },
+    {
+     "hex": "#0A4A9B",
+     "label": "Dark Blue #0A4A9B"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#000000",
+     "label": "Black #000000"
+    }
+   ]
+  },
+  {
+   "slug": "cagliari",
+   "name": "cagliari",
+   "swatches": [
+    {
+     "hex": "#B01028",
+     "label": "Red #B01028"
+    },
+    {
+     "hex": "#082242",
+     "label": "Navy Blue #082242"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    }
+   ]
+  },
+  {
+   "slug": "fiorentina",
+   "name": "fiorentina",
+   "swatches": [
+    {
+     "hex": "#61358B",
+     "label": "Purple #61358B"
+    },
+    {
+     "hex": "#FFFFFF",
+     "label": "White #FFFFFF"
+    },
+    {
+     "hex": "#DD3224",
+     "label": "Red #DD3224"
+    }
+   ]
+  }
+ ]
+}

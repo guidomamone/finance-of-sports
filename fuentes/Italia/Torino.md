@@ -47,3 +47,5 @@ de varios años (no se bajaron: no son el bilancio).
   capa de texto** (17-19 MB). La carátula se leyó con OCR. Esto desmiente "cero escaneos en todo el
   país": Torino los tiene.
 - Torino FC S.p.A. es la entidad; no es la holding (U.T. Communications) ni Cairo Communication.
+
+- **Color de marca**: `#8B2A1F` (granate) — "granata" (it.wikipedia, Torino_Football_Club); hex de footylogos (el #2; el #1 es naranja y no sirve). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

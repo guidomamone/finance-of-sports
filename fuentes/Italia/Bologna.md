@@ -50,3 +50,5 @@ recuperaron con otra captura (2025-01); `retry` por todas las capturas hasta que
 El ejercicio 2021/22 (`2022/11/Fascicolo-di-bilancio-consolidato-al-300622.pdf`) se identificó por la
 URL y por el patrimonio neto, no por una carátula con la fecha (el OCR de las primeras 6 páginas no la
 devolvió): verificar al transcribir. **Falta 2023/24 y 2024/25** (la nota anterior ya lo documentaba).
+
+- **Color de marca**: `#9F1F33` (rojo) — rossoblù en partes iguales (it.wikipedia, Bologna_Football_Club_1909); elegido el rojo (el azul de footylogos, #1B2838, es casi negro); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

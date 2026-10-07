@@ -33,3 +33,5 @@ entre 12,8 MB y 25,2 MB.
 Ninguna. Serie completa 2019/20-2024/25.
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `#00ABE7` (celeste) — "maglia azzurra" (it.wikipedia, Società_Sportiva_Calcio_Napoli); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

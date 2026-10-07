@@ -36,3 +36,5 @@ Si se quiere la serie completa desde el IPO de 1998 (paralelo a lo que se hizo c
 recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `#980A2B` (rojo granate) — giallorosso (it.wikipedia, Associazione_Sportiva_Roma); la camiseta titular es roja; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

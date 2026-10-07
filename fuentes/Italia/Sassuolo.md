@@ -23,3 +23,5 @@ Ninguna. Serie completa y fácil de mantener actualizada (URLs predecibles:
 `.../files/bilancio/<AAAA>1231-bilancio.pdf`).
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `#1EA451` (verde) — neroverde a palos iguales (it.wikipedia, Unione_Sportiva_Sassuolo_Calcio); elegido el verde, que lo distingue; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

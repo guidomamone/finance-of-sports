@@ -91,3 +91,5 @@ de bilancio en sí, no la documentación de auditoría suelta.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-04): ejercicio 2024 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.pdf` (sourceId `juventus-it-annual-financial-report-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-04): ejercicio 2022 desde `Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf` (sourceId `juventus-it-annual-financial-report-2021-22`).
+
+- **Color de marca**: `#000000` (negro) — bianconero (it.wikipedia, Juventus_Football_Club); regla (d): el otro color es blanco; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

@@ -36,3 +36,5 @@ ejercicio puente de 18 meses hasta diciembre 2019 no localizado?) antes de carga
 a `dudas-por-club.md` si no se resuelve leyendo el documento mismo.
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `null` — camiseta blanca con cruz negra desde 2004 (it.wikipedia, Parma_Calcio_1913; el gialloblù fue hasta 2004): identidad blanca, sin color. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

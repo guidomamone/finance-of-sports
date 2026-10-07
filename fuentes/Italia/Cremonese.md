@@ -41,3 +41,5 @@ devolver 0 resultados / rechazar conexión a mitad de sesión).
 ## 2ª tanda (2026-10-03): +1 ejercicio (30/06/2023), total 4
 
 `uscremonese.it/wp-content/uploads/2024/04/Bilancio 30giugno2023.pdf` (10 MB, 43 págs, escaneo; OCR: U.S. Cremonese S.p.A., "Bilancio di esercizio al 30-06-2023"), subido junto con la relazione di revisione, la del collegio sindacale y la relazione sulla gestione del mismo ejercicio. Con 2022, 2023, 2024 y 2025 la serie publicada llega a 4: **no hay nada anterior a 2023 en el sitio** (el primer documento financiero es el de 30/06/2022, subido en 2023-07). Falta un ejercicio para llegar a 5 y no es sourceable por este canal.
+
+- **Color de marca**: `#ED1C24` (rojo) — grigiorosso a palos iguales (it.wikipedia, Unione_Sportiva_Cremonese); elegido el rojo sobre el gris; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

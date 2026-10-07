@@ -41,3 +41,5 @@ Wayback Machine en una sesión futura si se quiere profundizar el histórico.
 ## 2ª tanda (2026-10-03): sin ejercicios nuevos, total 4 (+ comparativos 2021)
 
 El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna comparativa dentro del fascicolo del 31/12/2022 (que ya está en disco). La serie publicada arranca en 31/12/2022 (individual, consolidado y Genoa Image S.r.l.), sigue con 31/12/2023, 30/06/2024 (período de transición, ver duda) y 30/06/2025. Búsqueda web y CDX no mostraron nada anterior. Genoa queda en 4 ejercicios publicados.
+
+- **Color de marca**: `#002942` (azul oscuro) — rossoblù a cuartos (it.wikipedia, Genoa_Cricket_and_Football_Club); elegido el azul para distinguirlo de Bologna; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

@@ -28,3 +28,5 @@ Ninguna. Serie completa desde que el club existe como S.p.A. bajo RedBird (y ant
 Management) — no hay ejercicios anteriores a 2017/18 publicados en este canal.
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `#E4002B` (rojo) — rossonero en rayas iguales (it.wikipedia, Associazione_Calcio_Milan: "rosso e nero"); sin desempate de la regla, elegido el rojo (el "Diavolo"); hex de footylogos (Serie A). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

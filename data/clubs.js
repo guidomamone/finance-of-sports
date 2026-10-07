@@ -398,7 +398,7 @@ const clubs = {
   'aellarissa-gr': { id:'aellarissa-gr', name:'Athlitiki Enosi Larissas AEL P.A.E.', displayName:'AEL Larissa', country:'GR', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
   // Juventus: alta por tools/alta-club.mjs (2026-10-03) desde Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf. brandColor AUSENTE a propósito
   // (nadie lo chequeó todavía: club-or-year-onboarding §3 1b, identidad primero).
-  'juventus-it': { id:'juventus-it', name:'Juventus Football Club S.p.A.', displayName:'Juventus', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol' },
+  'juventus-it': { id:'juventus-it', name:'Juventus Football Club S.p.A.', displayName:'Juventus', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

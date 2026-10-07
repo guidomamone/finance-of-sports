@@ -42,3 +42,5 @@ como dato complementario o directamente descartarlo por no ser el club entero �
 `dudas-por-club.md`.
 
 - Último chequeo: 2026-09-17.
+
+- **Color de marca**: `#00239C` (azul) — nerazzurro (it.wikipedia, Football_Club_Internazionale_Milano); desempate por el theme-color de inter.it (#011ea0); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

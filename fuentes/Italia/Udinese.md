@@ -49,3 +49,5 @@ documentos) o pagar el Registro Imprese para esos dos ejercicios puntuales.
   udinese-bilancio-2019-2020-pubblicato.pdf` (bilancio 2019/20), que ya no responde (404) y no tiene
   captura de Wayback bajo esa URL exacta. **Candidato a mail** (el club tiene los ejercicios, hay
   prensa que cita cifras).
+
+- **Color de marca**: `#000000` (negro) — bianconero (it.wikipedia, Udinese_Calcio); regla (d); hex de footylogos (el #4). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

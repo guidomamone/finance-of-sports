@@ -50,3 +50,5 @@ El lector público de Issuu publica las páginas como JPG (`reader3.isu.pub/<usu
 - `acf_fascicolo_bilancio_30.06.2021_-con_foto_e_rel` (92 págs, publicado 2022-04-19) → `Fiorentina-bilancio-2020-21-issuu.pdf` (al 30/06/2021: el club pasó de dic a jun; **revisar la duración del ejercicio al transcribir**).
 - `acf_fascicolo_bilancio_30.06.2022-_con_relazioni` (90 págs, publicado 2022-12-06) → `Fiorentina-bilancio-2021-22-issuu.pdf`.
 OCR de las primeras páginas confirma las fechas de cierre. El de 2024 de Issuu (`..30.06.24_definitivo_-_co`) es el mismo ejercicio que ya teníamos como PDF. **Falta 2018** (embed viejo `#37847377/69232617`, sin slug localizable) y 2020 (no aparece en la cuenta). Calidad: es una reconstrucción desde imágenes web de ~130 dpi, no el PDF original: marcar así en la transcripción.
+
+- **Color de marca**: `#61358B` (violeta) — "viola" (it.wikipedia, ACF_Fiorentina); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.

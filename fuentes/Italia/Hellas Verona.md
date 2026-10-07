@@ -50,3 +50,5 @@ es un consolidado auditado completo). En `Clubes/Italia/Hellas Verona/`.
   (`bt-hellas-verona-consolidato-30-06-2020_compressed.pdf`) es un escaneo de 3 páginas. No se guardó.
 - Hay más piezas en el mismo CDN (relazione sulla gestione, relazione di revisione, collegio sindacale,
   verbale) por año; no se bajaron porque no son el bilancio.
+
+- **Color de marca**: `#002F6C` (azul) — gialloblù con azul predominante (it.wikipedia, Hellas_Verona_Football_Club); desempate por el theme-color de hellasverona.it. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
