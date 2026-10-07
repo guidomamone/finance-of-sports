@@ -24,6 +24,9 @@ que dice `ESTADO.md` era verdad ese día.
 - `ajustes.mjs --anular`: saca un ajuste que el script ya resuelve (registro `anulado`). Anulados 35: los ingresos de Bologna 2019-2022, la
   TV de Sassuolo 2025 y el `incluye` de Udinese 2021-22.
 - Medido: de 122 documentos solo cambian los 6 del to-do; Bologna da sin ajustes exactamente lo cargado. TODO 163 cerrado.
+- Recargados con el detalle de la nota (auditoría P0 0, P1 0; P2 de 32 a 30): Sassuolo 2025 (sponsors y comerciales 0,4 -> 42,6 M),
+  Udinese 2021-22 (TV 0 -> 36,2 M) y Cremonese 2025 (un balde de 50,3 M -> sponsors 42,9, TV 6,9, jugadores 5,7 M). 24 categorías
+  nuevas fijadas por Claude con los criterios de Italia.
 
 ## Versión 578 — La nota del subtotal abre el grupo cuando una categoría sale en 0 (2026-10-07)
 
