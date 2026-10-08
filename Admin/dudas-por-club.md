@@ -1922,3 +1922,9 @@ sin leerlo.
   págs. 15 y 16 no se leen y el OCR erró unas 25 cifras. El ejercicio 2022 se cargó con la columna "2022" del bilancio al 30/6/2023, que cierra con el resultado
   impreso (-16.787.729). Mismo total de costos operativos (58.952.860) pero ese comparativo está reclasificado: "Oneri per servizi esterni" 6.216.789 y "Altri oneri"
   4.960.945, mientras las notas del propio documento de 2022 dicen 6.489 y 4.689 (miles; la suma de los dos es la misma, 11,18 M).
+
+## Juve Stabia (onboarding de Italia, sesión 2026-10-08, ejercicio 2024 cargado sin gestión)
+
+- **¿Quién presidió Società Sportiva Juve Stabia S.r.l. en el ejercicio 2023-24 (cierre 30/6/2024)?** Los estados (Exhibit 99.2 de un 6-K de Brera Holdings) no nombran al presidente ni a los
+  consejeros, y el club no publica. Mientras tanto el ejercicio queda sin gestión en `data/gestiones/it.js`. De paso, ¿se puede confirmar quién tenía el resto de las cuotas antes de Brera
+  Holdings (Langella, según la ficha de fuentes)?

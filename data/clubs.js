@@ -457,6 +457,9 @@ const clubs = {
   // Salernitana: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf. brandColor AUSENTE a propósito
   // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
   'salernitana-it': { id:'salernitana-it', name:'U.S. Salernitana 1919 S.r.l.', displayName:'Salernitana', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#701D2F' },
+  // Juve Stabia: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
+  'juvestabia-it': { id:'juvestabia-it', name:'Società Sportiva Juve Stabia S.r.l.', displayName:'Juve Stabia', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD200' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

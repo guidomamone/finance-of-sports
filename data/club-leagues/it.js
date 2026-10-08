@@ -55,4 +55,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'chievoverona-it': { 2014: 'it-seriea', 2016: 'it-seriea' }, // 2016: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia ú
   // Salernitana (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Salernitana".
   'salernitana-it': { 2022: 'it-seriea' },
+  // Juve Stabia (alta-club.mjs, 2026-10-08): SIN VERIFICAR (no aparece en los rosters cacheados de 2024 (it-seriea, it-serieb): puede haber jugado otra división).
+  'juvestabia-it': { 2024: 'it-seriec' },
 });

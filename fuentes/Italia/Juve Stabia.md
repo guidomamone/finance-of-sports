@@ -20,3 +20,5 @@ Ejercicio 2024/25 (cierre 30/06/2025): no hay estado propio. El **20-F de Brera 
 Contexto: Comisión independiente (`vigilanzasport.it`) le aplicó puntos de penalización en 2026 y contestó "truffa aggravata" a Domus S.r.l., la dueña anterior; amministrazione giudiziaria desde oct 2025 (ilfattoquotidiano.it, 2025-10-21). Cuidado al leer cifras de prensa: pueden mezclar a Domus con el club.
 
 - Último chequeo: 2026-10-07.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf` (sourceId `juvestabia-it-bilancio-2024-ifrs-sec-6k`).
