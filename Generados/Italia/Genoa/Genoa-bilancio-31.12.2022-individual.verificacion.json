@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md",
- "generado": "2026-10-08T03:20:55.844Z",
+ "generado": "2026-10-08T03:32:09.148Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "genoa-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -89,6 +89,16 @@
    "evidencia": "pág. 10 del visor, .md L486",
    "autor": "Guido",
    "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "resultado-final",
+   "valor": "(61.728.621)",
+   "linea": 496,
+   "motivo": "el resultado del conto economico (pág. 10, transcripta como texto sin tabla) no se detecta; las filas (con el financiero y el impuesto por ajuste) dan -61.728.624 (3 € de redondeo); el impuesto deducido queda igual al impreso",
+   "evidencia": "pág. 10 del visor, .md L496; L287 y L782 lo repiten",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
  "cola": [],
@@ -109,9 +119,14 @@
    "detalle": "extraer.mjs no encontró el resultado impreso"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-61.728621 por ajuste manual ((61.728.621): el resultado del conto economico (pág. 10, transcripta como texto sin tabla) no se detecta; las filas (con el financiero y el impuesto por ajuste) dan -61.728.624 (3 € de redondeo); el impuesto deducido queda igual al impreso); impuesto deducido -9.396313 (antes de impuestos -71.124934; el documento imprimía 9.39631)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -122,6 +137,7 @@
   "ajuste manual: fila \"20) a) imposte correnti\" (impuesto) (847.954) (2026-10-08, idem)",
   "ajuste manual: fila \"20) c) imposte differite e anticipate\" (impuesto) 8.589.283 (2026-10-08, idem)",
   "ajuste manual: fila \"20) d) proventi e oneri da consolidato fiscale\" (impuesto) 1.654.981 (2026-10-08, idem)",
+  "ajuste manual: resultado final (61.728.621) (2026-10-08, el resultado del conto economico (pág. 10, transcripta como texto sin tabla) no se detecta; las filas (con el financiero y el impuesto por ajuste) dan -61.728.624 (3 € de redondeo); el impuesto deducido queda igual al impreso)",
   "duda de extraer confirmada por las sumas (columna, \"2) Variazione delle rimanenze di materiale di prodotti in corso di lavorazione, semilavorati e finiti\"): ¿Se trata la fila 'Variazione delle rimanenze...' (L345) como ingreso solo del año anterior (53.670) sin importe 2022?",
   "duda de extraer que no afecta la carga: El estado no imprime la escala en las líneas dadas; los importes coinciden exactamente con notas en €."
  ],
@@ -132,10 +148,17 @@
   "ingresos": 84.663638,
   "gastos": 150.625802,
   "financiero": -5.16277,
-  "impuesto": 9.39631,
+  "impuesto": -9.396313,
   "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -61.728621,
+  "resultadoFinal": {
+   "valor": -61.728621,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 9.39631,
+   "impuestoDeducido": -9.396313
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -478,7 +501,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -514,19 +537,9 @@
  ],
  "impuesto": [
   {
-   "etiqueta": "20) a) imposte correnti",
-   "M": -0.847954,
+   "etiqueta": "20) a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 9.396313,
    "linea": 478
-  },
-  {
-   "etiqueta": "20) c) imposte differite e anticipate",
-   "M": 8.589283,
-   "linea": 482
-  },
-  {
-   "etiqueta": "20) d) proventi e oneri da consolidato fiscale",
-   "M": 1.654981,
-   "linea": 486
   }
  ]
 }

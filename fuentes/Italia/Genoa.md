@@ -42,4 +42,6 @@ Wayback Machine en una sesión futura si se quiere profundizar el histórico.
 
 El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna comparativa dentro del fascicolo del 31/12/2022 (que ya está en disco). La serie publicada arranca en 31/12/2022 (individual, consolidado y Genoa Image S.r.l.), sigue con 31/12/2023, 30/06/2024 (período de transición, ver duda) y 30/06/2025. Búsqueda web y CDX no mostraron nada anterior. Genoa queda en 4 ejercicios publicados.
 
-- **Color de marca**: `#002942` (azul oscuro) — rossoblù a cuartos (it.wikipedia, Genoa_Cricket_and_Football_Club); elegido el azul para distinguirlo de Bologna; hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
+- **Color de marca**: `#AB131C` (rojo) — colores sociales "rosso e blu, in quest'ordine": el rojo va primero (it.wikipedia, Genoa_Cricket_and_Football_Club). Reemplaza al `#002942` (azul) anotado el 2026-10-06, que era solo una propuesta no cargada; decidido en el alta, 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf` (sourceId `genoa-it-bilancio-31-12-2022-individual`).

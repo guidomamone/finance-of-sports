@@ -447,6 +447,10 @@ const clubs = {
   // Udinese: alta por tools/alta-club.mjs (2026-10-07) desde Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf.
   // brandColor y su procedencia: fuentes/Italia/Udinese.md.
   'udinese-it': { id:'udinese-it', name:'Udinese Calcio S.p.A.', displayName:'Udinese', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
+  // Fiorentina: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf.
+  'fiorentina-it': { id:'fiorentina-it', name:'ACF Fiorentina S.r.l.', displayName:'Fiorentina', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#61358B' },
+  // Genoa: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf.
+  'genoa-it': { id:'genoa-it', name:'Genoa Cricket and Football Club S.p.A.', displayName:'Genoa', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#AB131C' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

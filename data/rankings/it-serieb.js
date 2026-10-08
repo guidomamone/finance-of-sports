@@ -6,7 +6,7 @@
 // Serie B (IT) — 5 ejercicio(s) con ranking:
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2007: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -35,6 +35,9 @@ window.RANKINGS["it-serieb"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"genoa-it", revenue:90.302, reportType:"official_balance_sheet",
+        sourceId:"genoa-it-bilancio-31-12-2022-individual",
+        mix:[["Comercial / Sponsors",2.3],["Estadio",3.318],["Televisión",38.499],["Venta de Jugadores",24.639],["Otros ingresos",21.547]] },
       { id:"parma-it", revenue:34.673, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2022-consolidato",
         mix:[["Comercial / Sponsors",5.208],["Estadio",1.465],["Televisión",3.259],["Venta de Jugadores",1.995],["Otros ingresos",22.747]] },
