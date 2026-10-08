@@ -7,7 +7,7 @@
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -144,6 +144,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:213.852, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2022-consolidato",
         mix:[["Comercial / Sponsors",40.06],["Estadio",41.505],["Televisión",81.558],["Venta de Jugadores",15.253],["Otros ingresos",35.475]] },
+      { id:"napoli-it", revenue:182.814, reportType:"official_balance_sheet",
+        sourceId:"napoli-it-bilancio-2022",
+        mix:[["Comercial / Sponsors",40.159],["Estadio",12.579],["Televisión",93.836],["Venta de Jugadores",23.394],["Otros ingresos",12.847]] },
       { id:"lazio-it", revenue:167.378, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2021-22",
         mix:[["Comercial / Sponsors",26.75],["Estadio",10.936],["Televisión",88.976],["Venta de Jugadores",26.888],["Otros ingresos",13.828]] },

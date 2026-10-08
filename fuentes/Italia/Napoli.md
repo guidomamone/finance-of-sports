@@ -49,3 +49,5 @@ Ninguna. Serie completa 2019/20-2024/25.
 De Wayback (el sitio viejo `sscnapoli.it/shared/UserFiles/`, snapshots de 2022-04-19), PDFs completos y **escaneados (sin capa de texto)**: `https://www.sscnapoli.it/shared/UserFiles/file/Bilancio_30_Giugno_2018/SSCN%20bilancio%20PDF%2030%2006%202018.pdf` (60 págs, 12,3 MB) -> `Napoli-bilancio-2018.pdf`; `https://www.sscnapoli.it/shared/UserFiles/file/Bilancio_30_giugno_2019/Bilancio_al_30.06.2019.pdf` (60 págs, 12,5 MB) -> `Napoli-bilancio-2019.pdf`. El OCR de la pág. 2 confirma "Bilancio al 30 giugno 2018/2019". La CDX de dominio no lista nada anterior a 2018. 2025/26: Napoli publica en enero-marzo del año siguiente.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Napoli/Napoli-bilancio-2021.pdf` (sourceId `napoli-it-bilancio-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf` (sourceId `napoli-it-bilancio-2022`).

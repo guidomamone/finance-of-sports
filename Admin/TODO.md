@@ -158,9 +158,7 @@ ni en el comentario de ningún archivo de código.
     (decisión de Guido, 2026-10-08: documentos viejos, no justifican cambiar el script): ajustes que sacan TOTALE RICAVI / TOTALE COSTI
     OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs; los dos cargados. Lazio 2012-13 está cargado bien (solo
     falla el chequeo del total de gastos: en Italia TOTALE COSTI OPERATIVI deja las amortizaciones debajo).
-    QUEDA: Napoli 2022 (sin cargar). La Versión 592 (to-do 168) le encuentra el resultado impreso y cierra por la lectura 4
-    (2021 ya está cargado, Versión 593); frena por categorización (falta .categorias.json: lote con la etapa 7; "Valore di realizzo"
-    7,79 M y "Sell on Fee" 3,0 M sin categoría).
+    Napoli 2021 y 2022 ya están cargados (Versiones 593 y 594) gracias a la 168.
     DEFECTO DE FONDO, sin resolver: la rama filaTotal de ajuste() acepta como "líneas fuera de ese total" las filas de una nota (Napoli 2022
     sin resultado: gastos 483,2 M, el doble). Hoy se destapa solo si falta el resultado impreso. DISEÑOS posibles (de a uno, como escalón,
     midiendo los 163): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el .md fuera del alcance del escalón 2; (b) la rama

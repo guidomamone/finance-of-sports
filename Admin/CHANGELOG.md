@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 594 — Napoli 2022 cargado (2026-10-08)
+
+- Napoli 2022 cargado tras el lote 38 (etapa 7: 72 rubros, US$ 0,05) con `cargar.mjs --desde-verificacion --escribir`: ingresos 175.995.109,
+  gastos 241.171.517, resultado −51.951.202 exacto. Auditoría P0 0, P1 0.
+
 ## Versión 593 — Napoli 2021 cargado (2026-10-08)
 
 - Napoli 2021 (`Napoli-bilancio-2021.pdf`) cargado con `cargar.mjs --desde-verificacion --escribir`, sin ajustes: ingresos 228.097.847, gastos
