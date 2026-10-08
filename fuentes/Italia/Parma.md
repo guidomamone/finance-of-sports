@@ -42,3 +42,5 @@ a `dudas-por-club.md` si no se resuelve leyendo el documento mismo.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2023 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf` (sourceId `parma-it-bilancio-31-12-2023-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf` (sourceId `parma-it-bilancio-31-12-2021-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf` (sourceId `parma-it-bilancio-31-12-2022-consolidato`).

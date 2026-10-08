@@ -63,6 +63,18 @@ const parmaitRevenueLinesByYear = {
     { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:14.272881, disclosureLevel:'aggregated' }, // pág. 39, precedente
     { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.992988, disclosureLevel:'aggregated' }, // pág. 39, precedente
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'1) Ricavi delle vendite e delle prestazioni', normalizedCategory:'matchday_competition', amountNative:1.373306, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'b) Proventi da Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:2.200339, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'c) Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:2.631202, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'d) Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.050929, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'e) Proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:3.05542, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'h) Plusvalenze cess. diritti pluriennali prest. giocatori', normalizedCategory:'player_sales', amountNative:0.049782, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'i) Altri proventi gest. giocatori', normalizedCategory:'player_sales', amountNative:1.820531, disclosureLevel:'aggregated' }, // pág. 20, Claude 0.9
+    { rawLabel:'l) Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:21.326285, disclosureLevel:'aggregated' }, // pág. 20, precedente
+  ],
 };
 const parmaitExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-07)
@@ -137,6 +149,22 @@ const parmaitExpenseLinesByYear = {
     { rawLabel:'Minusvalenze cessioni calciatori', normalizedCategory:'exceptional_items', amountNative:-1.412457, disclosureLevel:'aggregated' }, // pág. 41, Jev 0.99
     { rawLabel:'Altri oneri di gestione', normalizedCategory:'other_expenses', amountNative:-4.44432, disclosureLevel:'aggregated' }, // pág. 41, precedente
   ],
+  2022: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) Per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-1.667571, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'7) Per servizi', normalizedCategory:'admin_general_expense', amountNative:-14.197493, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'8) Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-0.925826, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'a) Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-49.969951, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'b) Oneri sociali', normalizedCategory:'wages_squad', amountNative:-4.11794, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'c) Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.788346, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'a) Ammortamento delle immobilizzazioni immateriali imm.', normalizedCategory:'player_amortisation', amountNative:-2.388974, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'b) Ammortamento delle immobilizzazioni materiali mat.', normalizedCategory:'depreciation', amountNative:-0.873275, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'c) Altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.780217, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'d) Svalutazione crediti', normalizedCategory:'other_expenses', amountNative:-0.098301, disclosureLevel:'aggregated' }, // pág. 20, Jev 1
+    { rawLabel:'e) Ammortamento costi diritti pluriennali prestazioni calciatori', normalizedCategory:'player_amortisation', amountNative:-39.51541, disclosureLevel:'aggregated' }, // pág. 20, Jev 0.95
+    { rawLabel:'11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:0.310789, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'13) Altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:-0.977598, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'14) Oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-14.500608, disclosureLevel:'aggregated' }, // pág. 20, Jev 0.99
+  ],
 };
 const parmaitFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)
@@ -170,6 +198,22 @@ const parmaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:40.681361, officialTotalExpenses:126.998463, officialPAT:-87.564848,
   },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)
+  2022: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2022-12-31',
+    sourceId:'parma-it-bilancio-31-12-2022-consolidato',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.096083, tax:0,
+    extraRows: [
+      {label:'- Altri', value:0.001204},
+      {label:'Altri', value:-0.097287},
+      {label:'Imposte', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:32.507794, officialTotalExpenses:130.490721, officialPAT:-98.07901,
+  },
 };
 const parmaitPresupuestoOverlayByYear = {};
 
@@ -199,6 +243,12 @@ Object.assign(sources, {
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2021-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'parma-it-bilancio-31-12-2022-consolidato': {
+    id:'parma-it-bilancio-31-12-2022-consolidato', clubId:'parma-it',
+    title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2022-consolidato (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
