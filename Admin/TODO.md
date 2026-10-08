@@ -156,7 +156,7 @@ ni en el comentario de ningún archivo de código.
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
     fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Lazio 2007-08 y 2011-12 se resolvieron A MANO
     (decisión de Guido, 2026-10-08: documentos viejos, no justifican cambiar el script): ajustes que sacan TOTALE RICAVI / TOTALE COSTI
-    OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs. Lazio 2012-13 está cargado bien (solo
+    OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs; los dos cargados. Lazio 2012-13 está cargado bien (solo
     falla el chequeo del total de gastos: en Italia TOTALE COSTI OPERATIVI deja las amortizaciones debajo).
     QUEDA: Napoli 2022 (sin cargar) da "ok" con los gastos al doble (483,2 vs 241,2): un "ok" que no contrasta los totales impresos de
     ingresos y gastos. Guido lo quiere ver en detalle (pendiente). DISEÑO a evaluar después de ese diagnóstico: sacar la fila total de las

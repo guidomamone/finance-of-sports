@@ -21,7 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   (b197, b204, b211) en el .filas.json y TOTALE COSTI OPERATIVI fuera por ajuste; cierra 102.482.030 − 68.609.526 − 4.962.375 −
   15.148.258 = 13.761.871 vs 13.761.874. 2011-12: filas del estado armadas desde el .md (la extracción solo trajo subtotales) con
   `tools/estado-desde-md.mjs` (nuevo, uso a mano, gratis), TOTALE RICAVI / TOTALE COSTI OPERATIVI fuera, 2 ajustes viejos anulados; cierra
-  exacto (4.221.554). Falsas alarmas del año vecino aceptadas en la cola con la explicación. Faltan categorizar (lote 37) y cargar.
+  exacto (4.221.554). Falsas alarmas del año vecino aceptadas en la cola con la explicación. Lote 37 (categorización, US$ 0,05):
+  los dos cargados (auditoría P0 0, P1 0).
 
 ## Versión 590 — El signo del 17-bis lo eligen las sumas (to-do 166, segunda parte) (2026-10-08)
 
