@@ -367,6 +367,17 @@ const lazioitRevenueLinesByYear = {
     { rawLabel:'a) plusvalenze da alienazioni', normalizedCategory:'player_sales', amountNative:83890.414806, disclosureLevel:'aggregated' }, // pág. 54, Jev 0.98
     { rawLabel:'b) altri proventi straordinari', normalizedCategory:'other_income', amountNative:4867.188671, disclosureLevel:'aggregated' }, // pág. 54, Jev 1
   ],
+  // 2014: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2014: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:7.25635, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Diritti radiotelevisivi e proventi media', normalizedCategory:'broadcasting', amountNative:56.268477, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Ricavi da sponsorizzazione e pubblicità', normalizedCategory:'sponsorship_commercial', amountNative:11.77994, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Proventi da gestione diritti calciatori', normalizedCategory:'player_sales', amountNative:23.394877, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:7.730158, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_income', amountNative:0.129423, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Ricavi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.949947, disclosureLevel:'aggregated' }, // pág. 95, precedente
+  ],
 };
 const lazioitExpenseLinesByYear = {
   2007: [ // tools/cargar.mjs (2026-10-07)
@@ -820,6 +831,15 @@ const lazioitExpenseLinesByYear = {
     { rawLabel:'a) minusvalenze da alienazioni', normalizedCategory:'exceptional_items', amountNative:-3140.65997, disclosureLevel:'aggregated' }, // pág. 54, Jev 0.95
     { rawLabel:'b) altri oneri straordinari', normalizedCategory:'exceptional_items', amountNative:-4252.583728, disclosureLevel:'aggregated' }, // pág. 54, Jev 0.99
   ],
+  2014: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Materie prime,sussidiarie,di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-2.783309, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Personale', normalizedCategory:'wages_squad', amountNative:-52.494827, disclosureLevel:'aggregated' }, // pág. 95, Claude 0.88
+    { rawLabel:'Oneri da gestione diritti calciatori', normalizedCategory:'other_expenses', amountNative:-0.091552, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Oneri per servizi esterni', normalizedCategory:'admin_general_expense', amountNative:-21.337091, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Altri oneri', normalizedCategory:'other_expenses', amountNative:-6.053932, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'Ammortamenti e svalutazioni delle immobilizzazioni', normalizedCategory:'player_amortisation', amountNative:-14.667571, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Accantonamenti e altre svalutazioni', normalizedCategory:'other_amortisation', amountNative:0.933139, disclosureLevel:'aggregated' }, // pág. 95, precedente
+  ],
 };
 const lazioitFiscalYearMeta = {
   2007: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -1190,6 +1210,24 @@ const lazioitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:334514.107739, officialTotalExpenses:418268.180256, officialPAT:-77909.271566,
   },
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.185.354). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila del financiero que falta por columnas corridas (pág. 96 del visor); impreso 75.611 + 180.715 - 2.441.681
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.060.898). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 300.414. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
+  2014: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2014-06-30',
+    sourceId:'lazio-it-bilancio-separato-consolidato-2013-14',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.185354, tax:-1.760484,
+    extraRows: [
+      {label:'Oneri finanziari netti e differenze cambio', value:-2.185354},
+      {label:'Imposte correnti', value:-2.060898},
+      {label:'Imposte differite e anticipate', value:0.300414},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:107.509172, officialTotalExpenses:96.495143, officialPAT:7.06819,
+  },
 };
 const lazioitPresupuestoOverlayByYear = {};
 
@@ -1321,6 +1359,12 @@ Object.assign(sources, {
     title:'S.S. Lazio S.p.A. — Lazio-bilancio-2000-01 (ejercicio 2001)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2000-01.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'lazio-it-bilancio-separato-consolidato-2013-14': {
+    id:'lazio-it-bilancio-separato-consolidato-2013-14', clubId:'lazio-it',
+    title:'S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2013-14 (ejercicio 2014)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

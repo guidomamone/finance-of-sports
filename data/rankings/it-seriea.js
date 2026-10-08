@@ -15,7 +15,7 @@
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2014: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2014: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -385,6 +385,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:217.389, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2014",
         mix:[["Comercial / Sponsors",21.215],["Estadio",31.938],["Televisión",93.822],["Venta de Jugadores",41.956],["Otros ingresos",28.458]] },
+      { id:"lazio-it", revenue:146.836, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2013-14",
+        mix:[["Comercial / Sponsors",17.386],["Estadio",9.911],["Televisión",76.851],["Venta de Jugadores",31.953],["Otros ingresos",10.735]] },
     ],
   },
   2013: {
