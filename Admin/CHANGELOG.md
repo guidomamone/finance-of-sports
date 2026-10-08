@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 597 — Atalanta 2018 y 2023 cargados (2026-10-08)
+
+- Atalanta 2018 (calendario, ene-dic) y 2023 (jul 2022 a jun 2023), consolidados, por el pipeline (lote 39; etapa 2 US$ 1,05, etapas 3-5 US$ 1,13) sin
+  ajustes. 2018: ingresos 155.740.626, gastos 120.096.113, resultado 23.958.355. 2023: ingresos 195.386.565, gastos 185.639.201, resultado 5.616.433.
+  Dos dudas de la cola respondidas "no" (Guido): el desglose de Oneri diversi 2018 (las filas suman 6.226.604, el total de la nota 6.408.220 y el
+  estado 6.444.735: el documento no cuadra) y el de Salari-stipendi 2023 (solo la columna Tesserati: desglose parcial). Auditoría P0 0, P1 0.
+
 ## Versión 596 — Parma 2018/19 cargado (2026-10-08)
 
 - Parma 30.06.2019 (individual, jul 2018 a jun 2019; la portada dice por errata "01.07.2019 – 30.06.2019") cargado por el pipeline sin ajustes (lote 39,

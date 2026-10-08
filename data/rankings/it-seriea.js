@@ -6,12 +6,12 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -115,6 +115,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:301.05, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2023",
         mix:[["Comercial / Sponsors",52.804],["Estadio",53.509],["Televisión",118.793],["Venta de Jugadores",60.971],["Otros ingresos",14.973]] },
+      { id:"atalanta-it", revenue:212.307, reportType:"official_balance_sheet",
+        sourceId:"atalanta-it-bilancio-consolidato-2023",
+        mix:[["Comercial / Sponsors",26.508],["Estadio",12.814],["Televisión",72.31],["Venta de Jugadores",77.18],["Otros ingresos",23.496]] },
       { id:"lazio-it", revenue:166.594, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2022-23",
         mix:[["Comercial / Sponsors",25.032],["Estadio",19.471],["Televisión",110.825],["Venta de Jugadores",5.569],["Otros ingresos",5.697]] },
@@ -254,6 +257,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:224.933, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2017-18",
         mix:[["Comercial / Sponsors",24.435],["Estadio",14.198],["Televisión",99.182],["Venta de Jugadores",76.69],["Otros ingresos",10.428]] },
+      { id:"atalanta-it", revenue:178.323, reportType:"official_balance_sheet",
+        sourceId:"atalanta-it-bilancio-consolidato-2018",
+        mix:[["Comercial / Sponsors",19.343],["Estadio",7.82],["Televisión",54.643],["Premios por competencias",7.057],["Venta de Jugadores",43.774],["Otras secciones deportivas",1.139],["Otros ingresos",44.546]] },
       { id:"sampdoria-it", revenue:162.33, reportType:"official_balance_sheet",
         sourceId:"sampdoria-it-fascicolo-bilancio-2018",
         mix:[["Comercial / Sponsors",8.22],["Estadio",4.907],["Televisión",54.607],["Venta de Jugadores",85.919],["Otros ingresos",8.677]] },

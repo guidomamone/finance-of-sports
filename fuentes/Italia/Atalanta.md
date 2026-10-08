@@ -43,3 +43,7 @@ Ninguna. Serie completa desde el primer ejercicio exigido por el manual UEFA vig
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.pdf` (sourceId `atalanta-it-bilancio-consolidato-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf` (sourceId `atalanta-it-bilancio-consolidato-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2018.pdf` (sourceId `atalanta-it-bilancio-consolidato-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.pdf` (sourceId `atalanta-it-bilancio-consolidato-2023`).
