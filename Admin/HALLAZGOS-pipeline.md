@@ -33,3 +33,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Disparar el escalón de la sección D con "el resultado no cerró exacto"** (to-do 166, 2026-10-08): con las notas en miles la tolerancia
   exacta (media unidad por fila) tapa una D chica (Como 2024: 8.695 dentro de ~20 mil). Entró con un gatillo estructural (el encabezado de la D
   impreso). Y sin ese encabezado movía 10 Juventus IFRS, cuyas filas sin lado en esa zona no son la D.
+
+## 2026-10-08, dos trampas que costaron una corrida
+
+- Una respuesta "no" de la cola a una duda de extraer ("¿se cargan las filas de la nota b41?") NO saca filas que la extracción ya trajo: queda como nota y las filas siguen entrando. Para sacarlas se usa un ajuste `fila`
+  con `--reemplaza-linea` sobre el renglón del estado (el ajuste lo deja entero y se lleva las hojas de su nota). Caso: Inter 2018-19, nota b41 "Capitalizzazione costi vivaio" (ingreso 7.147.379).
+- Un ajuste `categoria` sobre filas que la extracción dejó sin lado (`otro`) las MUDA de lado conservando el efecto en el resultado: una fila de +7.147 que en verdad es parte de un ingreso pasaba a ingreso de −7.147 y el resultado
+  quedaba 14 M corrido. Si las filas son el detalle de un renglón, se arregla el renglón (ajuste `fila`), no cada fila.
+
