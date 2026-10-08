@@ -222,8 +222,3 @@ ni en el comentario de ningún archivo de código.
     que se podrían aceptar solos si totales y resultado cierran exactos (Cremonese 2022 a3d272e, Atalanta 2025 939f93c; Milan 2021-22
     5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
     como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
-
-176. ETAPA 4 CON NÚMEROS SIN CONFIRMAR FRENA LA CATEGORIZACIÓN (lote.mjs / validar-bloques.mjs). Con la etapa 6 cerrada, la validación de
-    los bloques contra el PDF dejó números sin confirmar y el lote no categoriza: AS Roma 2021 (13 números; la verificación cierra exacto,
-    −185.573), Atalanta 2019 (12), Torino 2023 (1). Mirar en Generados/Italia/<Club>/<doc>.validacion.json qué números son y por qué
-    validar-bloques no los encuentra en el texto del PDF; si la etapa 6 cierra exacto con ellos, que la compuerta de la etapa 6 los confirme.

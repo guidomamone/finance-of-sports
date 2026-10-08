@@ -154,6 +154,10 @@ Mitigaciones:
             compuerta (avisarRegistro, etapa 6): su línea no es la de ninguna fila que se carga → no frena la categorización
  ESCALÓN 3  las sumas de la etapa 6 lo confirman (también un número sin ninguna segunda lectura: Gemini y Claude rechazaron la página;
             con la etapa 6 cerrada no frena la categorización, sin cerrar va a la cola)
+ ESCALÓN 3a (Versión 588, to-do 176) un número que no es el valor del año de una fila que se carga (fila del resultado, total de una
+            nota, columna del año anterior) no frena la categorización: si estuviera mal leído, la etapa 6 no habría cerrado
+ ESCALÓN 3b (Versión 588) de una fila que se carga: confirmado si el resultado cierra con él y deja de cerrar con el de la segunda
+            lectura (sin segunda lectura parecida, solo con cierre exacto); si las dos cierran → pregunta en la cola (no frena en silencio)
  nada → cola con los dos números
 ```
 - Tool: `validar-bloques.mjs`.

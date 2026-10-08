@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 588 — La etapa 4 ya no frena la categorización en silencio (to-do 176) (2026-10-08)
+
+- `verificar.mjs` (avisarRegistro): un número sin confirmar que no es el valor del año de una fila que se carga no frena (escalón 3a);
+  uno de una fila que se carga queda confirmado si el resultado cierra con él y deja de cerrar con el de la segunda lectura (3b); si
+  las dos lecturas cierran, va a la cola como pregunta en vez de frenar sin avisar. `confirmadosPorSumas` queda en el .verificacion.json.
+- Destrabados: AS Roma 2021 (13 números, ninguno de una fila que se carga) y Torino 2023 (TV L493 52.376.963; con la segunda lectura
+  52.176.963 el resultado se iría 200 mil). Atalanta 2019: L393 y L394 confirmadas por las sumas; L375 (2.875.337 vs 2.875.357) a la cola.
+- Medido sobre 162 documentos (Italia y prueba completa): números idénticos en todos; cambian solo las marcas de 4 (Novorizontino 2016,
+  cargado, pasa a tener 2 preguntas de un dígito que antes se aceptaban en silencio).
+
 ## Versión 587 — Escalón "renglón grande sin abrir" en verificar.mjs; to-do 175 cerrado (2026-10-08)
 
 - Si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o menos (un grupo que

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2023.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2023.md",
- "generado": "2026-10-08T03:20:56.050Z",
+ "generado": "2026-10-08T12:09:01.966Z",
  "estado": "ok",
  "clubId": "torino-it",
  "year": 2023,
@@ -47,7 +47,7 @@
  ],
  "notas": [
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
-  "línea 493: 52.376.963 no está en el segunda lectura, pero las sumas cierran con él",
+  "línea 493: 52.376.963 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (52176963) el resultado daría -9.761983 y no cierra)",
   "duda de localizar que no afecta la carga: b1 reclasifica el mismo resultado en miles de euros con columnas por gestión; el estado oficial es b11 en euros.",
   "duda de localizar que no afecta la carga: b14 resume amortizaciones, plusvalías y minusvalías de jugadores, que ya están abiertas en b11, b36 y b42.",
   "duda de extraer que no afecta la carga: La nota no separa a) oneri da organizzazione competizioni (1.190.650) de e) altri oneri diversi (810.997); la suma 2.001 no se puede repartir línea a línea con certeza (L1564-L1568)."
@@ -405,6 +405,12 @@
    "etiqueta": "Imposte anticipate e differite",
    "M": -0.398865,
    "linea": 534
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 493,
+   "numero": "52.376.963"
   }
  ]
 }

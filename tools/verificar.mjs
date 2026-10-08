@@ -164,6 +164,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // La señal se queda prendida: cuando el escalón abrió la nota del subtotal, la propuesta siguiente ya no marca la categoría en 0 y, sin
   // esto, la corrida siguiente lo apagaba y la TV volvía a 0 (oscilaba; medido en Bologna 2019-20). La verificación anterior lo anota.
   { const pVf = resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })); try { if (existsSync(pVf)) for (const l of JSON.parse(readFileSync(pVf, 'utf8')).notaSubtotal || []) ladosCero.add(l); } catch { /* sin verificación anterior */ } }
+  const confirmadosPorSumas = []; // (to-do 176) números de filas que se cargan confirmados por las sumas
   let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
   const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
@@ -806,7 +807,31 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   for (const nc of V?.noConfirmados || []) {
     const fila = usadas.find((f) => f.linea === nc.linea && normNum(String(f.actual || '')).includes(normNum(nc.numero)));
     if (!fila) continue; // número de otra columna o de una fila que no se usa
-    if (cerro) { notas.push(`línea ${nc.linea}: ${nc.numero} no está en el ${V.modo === 'digital' ? 'texto del PDF' : 'segunda lectura'}, pero las sumas cierran con él`); continue; }
+    // (to-do 176, escalón b, aprobado por Guido el 2026-10-08) con la etapa 6 cerrada, LAS SUMAS ELIGEN ENTRE LAS DOS LECTURAS: el número de
+    // una fila que se carga queda confirmado si el resultado cierra con él y deja de cerrar con el de la segunda lectura (misma compuerta del
+    // resultado: exacta si la lectura cerró exacto, la tolerancia de siempre si no). Sin segunda lectura con un número parecido, solo un cierre
+    // EXACTO lo confirma. Si las dos lecturas cierran (o no hay con qué distinguir), va a la cola como pregunta en vez de frenar en silencio.
+    // Caso: Torino 2023, L493 "e) proventi da cessione diritti audiovisivi": transcripción 52.376.963 (resultado a 684 EUR del impreso),
+    // segunda lectura 52.176.963 (a 200 mil): las sumas eligen la transcripción.
+    if (cerro) {
+      const alt = nc.segundaLeyo != null ? parseNumber(String(nc.segundaLeyo)) : null; const actualN = parseNumber(String(nc.numero));
+      let confirma = false; let porque = '';
+      const objetivo = E.objetivo; const conImpR = !chequeos.some((c) => c.nombre === 'resultado antes de impuestos');
+      if (objetivo != null && isFinite(objetivo) && alt != null && isFinite(alt) && isFinite(actualN) && alt !== actualN) {
+        const [sf, si] = { 'como impresos': [1, 1], 'financiero e impuesto invertidos': [-1, -1], 'impuesto invertido': [1, -1], 'financiero invertido': [-1, 1] }[lectura] || [1, 1];
+        const pat = suma(ing) - suma(gas) + sf * conSigno(fin) + (conImpR ? si * conSigno(imp) : 0);
+        const dM = Math.sign(fila.M || 1) * (Math.abs(alt) - Math.abs(actualN)) * mult(fila.bloque);
+        const efecto = ing.includes(fila) ? dM : gas.includes(fila) ? -dM : fin.includes(fila) ? sf * dM : imp.includes(fila) && conImpR ? si * dM : 0;
+        const tolR = Math.max(1e-6, 0.5 * [...ing, ...gas, ...fin].reduce((a, f) => a + (f.u || 0), 0));
+        const cierraCon = (x) => (E.exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tolR : cerca(Math.abs(x), Math.abs(objetivo)));
+        if (efecto && cierraCon(pat) && !cierraCon(pat + efecto)) { confirma = true; porque = `con la segunda lectura (${nc.segundaLeyo}) el resultado daría ${r6(pat + efecto)} y no cierra`; }
+      } else if (alt == null && E.exacto) { confirma = true; porque = 'sin segunda lectura parecida, y el resultado cierra exacto con él'; }
+      if (confirma) { confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: ${nc.numero} no está en el ${V.modo === 'digital' ? 'texto del PDF' : 'segunda lectura'}; las sumas lo confirman (${porque})`); continue; }
+      const r2 = caso('numero-no-confirmado', `${nc.linea}:${nc.numero}`, `En "${fila.etiqueta}" la transcripción dice ${nc.numero}${nc.segundaLeyo ? ` y la segunda lectura del PDF dice ${nc.segundaLeyo}` : ' y no se pudo confirmar contra el PDF'}. Las sumas cierran, pero no alcanzan para elegir: ${nc.segundaLeyo ? 'con los dos números el resultado cierra' : 'no hay otra lectura y el cierre no es exacto'}. ¿El PDF dice ${nc.numero}?`, { pagina: nc.pagina, lineas: [nc.linea, nc.linea], propuesta: 'sí' });
+      if (r2?.decision === 'aceptar') confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero });
+      else if (r2?.decision === 'corregir' && r2.valor) { fila.M = (parseNumber(r2.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r2.valor})`); }
+      continue;
+    }
     const r = caso('numero-no-confirmado', `${nc.linea}:${nc.numero}`, `En "${fila.etiqueta}" la transcripción dice ${nc.numero}${nc.segundaLeyo ? ` y la segunda lectura del PDF dice ${nc.segundaLeyo}` : ` y no se pudo confirmar contra el PDF${nc.sinSegunda ? ' (sin segunda lectura de esa página)' : ''}`}. Las sumas no cierran.`, { pagina: nc.pagina, lineas: [nc.linea, nc.linea], propuesta: nc.segundaLeyo ? `usar ${nc.segundaLeyo}` : null });
     if (r?.decision === 'corregir' && r.valor) { fila.M = (parseNumber(r.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r.valor})`); }
   }
@@ -985,6 +1010,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     signosCarga: { financiero: sfCarga, impuesto: siCarga },
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(sfCarga * f.M), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
   if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // (to-do 163) la señal que se queda prendida, ver ladosCero
+  if (confirmadosPorSumas.length) out.confirmadosPorSumas = confirmadosPorSumas; // (to-do 176) los lee avisarRegistro()
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));
   // --rubros: la lista de rubros para la categorización de siempre (etapa 7), con las líneas verificadas. Club: el id del sitio o, si es nuevo,
   // el slug de la carpeta (el mismo id provisorio que usa el pipeline).
@@ -1041,11 +1067,20 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   // Caso: Napoli 2024, "2023" en L276 (encabezado); las filas que se cargan están en L280, L281, L284...
   const lineasCargadas = out ? new Set([...(out.lineas || []), ...(out.financiero || []), ...(out.impuesto || [])].map((l) => Number(l.linea))) : null;
   const pasaCompuerta = (n) => n.propuesta === 'anio-encabezado' && lineasCargadas && !lineasCargadas.has(Number(n.linea));
+  // (to-do 176, escalón a, aprobado por Guido el 2026-10-08) UN NÚMERO QUE NO ENTRA EN LA CARGA NO FRENA: el que no es el valor del año de una
+  // fila que se carga (una fila del resultado, el total de una nota, la columna del año anterior). Si fuera el resultado impreso o un total mal
+  // leído, la etapa 6 no habría cerrado (avisarRegistro solo corre con la etapa 6 en "ok"). Caso: AS Roma 2021, 13 números sin confirmar,
+  // ninguno de una fila que se carga (L2157-L2165, el resultado; L4204-L4616, totales de notas). Y (escalón b) los que verificar() confirmó
+  // con las sumas (out.confirmadosPorSumas).
+  const filasX = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(md, '.filas.json', { crear: false })), 'utf8')).filas || []; } catch { return null; } })();
+  const nn = (x) => String(x ?? '').replace(/[^0-9]/g, '');
+  const entraEnLaCarga = (n) => !lineasCargadas || !filasX || filasX.some((f) => Number(f.linea) === Number(n.linea) && lineasCargadas.has(Number(n.linea)) && nn(f.actual) === nn(n.numero));
+  const porSumas = (n) => (out?.confirmadosPorSumas || []).some((c) => Number(c.linea) === Number(n.linea) && nn(c.numero) === nn(n.numero));
   // SIN NINGUNA SEGUNDA LECTURA (to-do 160 parte 2, ok de Guido): la página es una imagen y Gemini y Claude la rechazaron los dos (RECITATION,
   // poco probable pero posible), así que no hay contra qué confirmar. Ahí manda el escalón 3 de la etapa 4: las sumas de la etapa 6, y
   // avisarRegistro() solo corre con la etapa 6 en "ok". Si las sumas no cierran, verificar() ya manda cada número a la cola
   // ('numero-no-confirmado', "no se pudo confirmar contra el PDF").
-  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && !n.sinSegunda && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
+  const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && entraEnLaCarga(n) && !porSumas(n) && !n.sinSegunda && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
   if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
   const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
