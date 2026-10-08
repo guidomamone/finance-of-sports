@@ -11,7 +11,7 @@
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -203,6 +203,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:373.649, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2018",
         mix:[["Comercial / Sponsors",29.91],["Estadio",29.399],["Televisión",152.304],["Premios por competencias",61.592],["Venta de Jugadores",81.094],["Otras secciones deportivas",0.992],["Otros ingresos",18.359]] },
+      { id:"acmilan-it", revenue:298.134, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilanci-relazioni-2017-18",
+        mix:[["Comercial / Sponsors",72.829],["Estadio",38.023],["Televisión",117.254],["Premios por competencias",3.174],["Venta de Jugadores",49.036],["Otros ingresos",17.818]] },
       { id:"lazio-it", revenue:224.933, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2017-18",
         mix:[["Comercial / Sponsors",24.435],["Estadio",14.198],["Televisión",99.182],["Venta de Jugadores",76.69],["Otros ingresos",10.428]] },

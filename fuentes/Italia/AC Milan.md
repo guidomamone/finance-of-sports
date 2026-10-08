@@ -34,3 +34,5 @@ Management) — no hay ejercicios anteriores a 2017/18 publicados en este canal.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2024 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf` (sourceId `acmilan-it-bilanci-relazioni-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.pdf` (sourceId `acmilan-it-bilanci-relazioni-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.pdf` (sourceId `acmilan-it-bilanci-relazioni-2017-18`).
