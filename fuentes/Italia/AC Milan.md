@@ -32,3 +32,5 @@ Management) — no hay ejercicios anteriores a 2017/18 publicados en este canal.
 - **Color de marca**: `#E4002B` (rojo) — rossonero en rayas iguales (it.wikipedia, Associazione_Calcio_Milan: "rosso e nero"); sin desempate de la regla, elegido el rojo (el "Diavolo"); hex de footylogos (Serie A). Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2024 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf` (sourceId `acmilan-it-bilanci-relazioni-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.pdf` (sourceId `acmilan-it-bilanci-relazioni-2022-23`).

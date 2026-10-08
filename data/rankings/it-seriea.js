@@ -6,7 +6,7 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -88,6 +88,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:547.301, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2022-23",
         mix:[["Comercial / Sponsors",194.34],["Estadio",66.827],["Televisión",170.772],["Venta de Jugadores",76.243],["Otros ingresos",39.12]] },
+      { id:"acmilan-it", revenue:439.562, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilanci-relazioni-2022-23",
+        mix:[["Comercial / Sponsors",138.318],["Estadio",77.417],["Televisión",190.054],["Premios por competencias",1.724],["Venta de Jugadores",7.164],["Otros ingresos",24.884]] },
       { id:"lazio-it", revenue:166.594, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2022-23",
         mix:[["Comercial / Sponsors",25.032],["Estadio",19.471],["Televisión",110.825],["Venta de Jugadores",5.569],["Otros ingresos",5.697]] },
