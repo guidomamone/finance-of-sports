@@ -39,6 +39,14 @@ que dice `ESTADO.md` era verdad ese día.
 - Herramientas de la sesión (scripts de scratchpad, no entraron al repo): descargador SIIS de 3 pasos, `cdxdl` (Wayback por dominio con reintentos de capturas y doble codificación de `%`), `czj` (Sbírka listin), `sk_dl` (registeruz.sk), `exa_auto`, `harvest`, `wf_scrape`/`wf_download`. Gotchas nuevos: el CDX devuelve URLs con espacios literales; Wayback pide `%2520` para algunas URLs; el PDF de la BNB belga exige `Accept: */*`; Companies House da 403 si se lanzan varios barridos en paralelo; `cvrapi.dk` bloquea por cuota (se reemplazó por proff.dk vía búsqueda).
 - Sin tocar skills (queda por decidir con Guido cambiar el texto de Colombia/Independiente Medellín, España/Real Sociedad, Suecia/Finlandia y las páginas de WorldFootball en `club-sourcing`).
 
+## Versión 599 — Lote 40: Italia (fútbol), 76 documentos transcriptos y 9 cargados (2026-10-08)
+
+- Etapa 2 de 76 PDFs de 23 clubes de fútbol de Italia (US$ ~53) y etapas 3 a 8 (US$ 30,13). Cargados sin ajustes: AC Milan 2019-20 y 2024-25,
+  Cremonese 2023, Fiorentina 2020-21, Hellas Verona 2020-21, Lazio 2016-17 y 2025-26, Monza 2024 y Napoli 2018-19 (auditoría P0 0, P1 0; 86 ejercicios
+  de Italia). Sassuolo 2018 a 2023 (cinco documentos): ajuste manual del cierre al 31/12 (no se pudo determinar solo). Siete informes sin estado
+  de resultados (auditor, colegio sindical, relación de gestión) a `Admin/documentos-descartados.txt`. Qué frena a los otros 67: to-do 179. Los to-dos
+  170 y 173 pasan de "sin daño" a "con daño".
+
 ## Versión 598 — El CHANGELOG se parte una vez, por época (to-do 178) (2026-10-08)
 
 - `Admin/CHANGELOG.md` (724 KB, 7.139 líneas, con las Versiones 217-597 de la más nueva a la más vieja y las 10-216 al revés) se parte en dos:

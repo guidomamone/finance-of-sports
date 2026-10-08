@@ -183,7 +183,7 @@ ni en el comentario de ningún archivo de código.
     orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
     su padre.
 
-170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (2026-10-08). En los estados IFRS de Roma, "Ricavi/Oneri da
+170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). CON DAÑO (lote 40, 2026-10-08): AS Roma 2012 a 2017 (6 documentos) frenan con el total de gastos que no cierra. Antes: sin daño (2026-10-08). En los estados IFRS de Roma, "Ricavi/Oneri da
     gestione dei diritti pluriennali" quedan sin lado y se pierden; Roma 2021 se cargó con 2 ajustes `fila` (L2148 36.125 ingreso, L2149
     (37.323) gasto): ingresos 226.539, igual a la columna 2021 del documento 2022 (226.537), y resultado a 4 mil EUR del impreso (notas en
     miles). Filas posteriores al resultado (EPS L2161, otro resultado integral L2163) pueden colarse en la lectura 6. CUÁNDO HACERLO: con otro
@@ -210,8 +210,8 @@ ni en el comentario de ningún archivo de código.
     chequeo falla y usa la columna del ejercicio del OTRO documento (el anterior, dy=-1) y ese documento tiene ajustes `fila`, comparar
     contra su totales.ingresos del .verificacion.json; compuerta: la misma tolerancia del chequeo.
 
-173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-08): no frena ni
-    cambia datos, solo agrega casos de más a la cola (~20 de 71 en el lote 28). CUÁNDO HACERLO: si la cola se vuelve inmanejable. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
+173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CON DAÑO desde el lote 40 (2026-10-08): la cola pasó a 267 casos (Salernitana
+    2022: 38, Inter 2024: 23, Genoa 2023: 19) y 15 documentos frenan solo por preguntas. Antes (lote 28): ~20 de 71. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
     por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
     polaridad al revés ("¿se carga además…?" con propuesta sí y el porqué dice que duplica). Ejemplos: Atalanta 2019 a0304c3 (b9),
     Sassuolo 2024 6795125, Inter 2019-20 c672389 y 45d7976, Lazio 2018-19 476c85a, Lazio 2023-24 37997ee, Roma 2023 db1b8e4, Roma 2024
@@ -226,3 +226,20 @@ ni en el comentario de ningún archivo de código.
     fiscalYearStart 01-01: 2018 se muestra "2018" y es 17/18). Un ejercicio de menos de 12 meses no se carga: Atalanta 2022 (1/1 al 30/6/2022) se
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
+
+179. ITALIA, LOTE 40: QUÉ FRENA A CADA UNO (2026-10-08). 76 PDFs de fútbol llevados por las etapas 3 a 8: 9 cargados, 67 frenados. Años = año de cierre
+    (2020 = 2019-20). Grupos:
+    - Solo preguntas de la cola, totales y resultado cierran (15): AC Milan 2021, Bologna 2018 y 2023, Fiorentina 2019, Genoa 2025, Hellas Verona
+      2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Torino 2020 y 2025. Se destraban con el to-do 173.
+    - El resultado o el total de gastos no cierra (24): AC Milan 2008 a 2012 (el resultado falla en todos, causa sin diagnosticar); AS Roma 2007,
+      2009, 2011 (consolidado), 2012 a 2017 (2012 a 2017: to-do 170); Bologna 2024 y 2025; Genoa 2023; Inter 2023 y 2024; Lazio 2005, 2011,
+      2014, 2016 y 2021.
+    - El resultado cierra pero falla el chequeo contra el año vecino (11): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010, 2011 (separato) y 2020,
+      Inter 2021, Lazio 2004 y 2006, Sampdoria 2020. Mirar uno por uno si es falsa alarma (to-do 172) o error real.
+    - Falta el alta del club (6): Chievo Verona 2014 a 2016, Juve Stabia 2024, Salernitana 2022 y 2023. Después de la cola.
+    - Lazio 1999, 2000 y 2001 en liras (ITL): el sitio no tiene una moneda "legado"; decisión de Guido pendiente (cargar en ITL, convertir a
+      euros o dejarlos sin cargar). Lazio 2000 además tiene el cierre del nombre del archivo distinto del contenido.
+    - Sassuolo 2018, 2019, 2020, 2022 y 2023: ajuste de cierre 31/12 ya puesto; falta correr el lote de nuevo (etapa 7).
+    - Hellas Verona 2022 (una fila espera categoría en la cola), Parma 2016 (reintento por "Televisión" en 0, ~US$ 0,50), AC Milan 2013 (la suma
+      de gastos no coincide con el total impreso).
+    - Aparte: Juve Stabia semestral y Catania 2011 (lote 41): solo transcripción, no se cargan.
