@@ -451,6 +451,9 @@ const clubs = {
   'fiorentina-it': { id:'fiorentina-it', name:'ACF Fiorentina S.r.l.', displayName:'Fiorentina', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#61358B' },
   // Genoa: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf.
   'genoa-it': { id:'genoa-it', name:'Genoa Cricket and Football Club S.p.A.', displayName:'Genoa', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#AB131C' },
+  // Chievo Verona: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf. brandColor AUSENTE a propósito
+  // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
+  'chievoverona-it': { id:'chievoverona-it', name:'Associazione Calcio Chievo-Verona S.r.l.', displayName:'Chievo Verona', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD200' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

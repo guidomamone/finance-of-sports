@@ -15,7 +15,7 @@
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2014: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2014: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -406,6 +406,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:146.836, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2013-14",
         mix:[["Comercial / Sponsors",17.386],["Estadio",9.911],["Televisión",76.851],["Venta de Jugadores",31.953],["Otros ingresos",10.735]] },
+      { id:"chievoverona-it", revenue:68.294, reportType:"official_balance_sheet",
+        sourceId:"chievoverona-it-bilancio-30-giugno-2014",
+        mix:[["Comercial / Sponsors",7.212],["Estadio",2.487],["Televisión",38.043],["Venta de Jugadores",14.21],["Otros ingresos",6.343]] },
     ],
   },
   2013: {

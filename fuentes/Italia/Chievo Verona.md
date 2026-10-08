@@ -18,3 +18,5 @@ El sitio viejo (Drupal) colgaba los bilanci de una página institucional como ad
 - No se encontró 2017 ni 2018 (el dominio quedó archivado hasta 2021; CDX de dominio completo por `S.R_`/`2017-06-30` sin resultados). 2013 y anteriores: prensa (sportbusinessmanagement.it, 2014) cita el bilancio 2012/13 pero sin PDF.
 
 - Último chequeo: 2026-10-07.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2014 desde `Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf` (sourceId `chievoverona-it-bilancio-30-giugno-2014`).

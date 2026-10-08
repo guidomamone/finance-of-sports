@@ -10,6 +10,11 @@
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
+  'chievoverona-it': [
+    // Luca Campedelli: presidente desde septiembre de 1992 (murió su padre Luigi) hasta 2022; la fuente da solo mes y año o solo el año: día 01 por convención.
+    { nombre:'Luca Campedelli', corto:'Campedelli', cargo:'Presidente', desde:'1992-09-01', hasta:'2022-01-01',
+      fuente:'https://it.wikipedia.org/wiki/Luca_Campedelli', confirmada:true },
+  ],
   'acmilan-it': [
     // Berlusconi: dueño del 20/2/1986 al 13/4/2017 (presidente 1986-2004 y 2006-2008; de 2008 a 2017 el cargo de presidente estuvo vacante y
     // fue presidente honorario desde el 29/3/2012). Se carga como dueño con nombre (regla de la cabecera de ar.js).
