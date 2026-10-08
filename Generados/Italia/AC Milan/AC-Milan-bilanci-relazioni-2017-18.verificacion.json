@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.md",
- "generado": "2026-10-08T03:20:08.967Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:55.564Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2018,
  "escala": {
@@ -26,9 +26,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "3a475b7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,8 +61,7 @@
   "duda de localizar que no afecta la carga: b40-b41 parece el mismo conto economico consolidado repetido en la nota integrativa, con columna anterior '2016/2017'.",
   "duda de localizar que no afecta la carga: El fondo b31 arranca 'Saldo al 01.01.2017' y el patrimonio b64 parte del 31.12.2014: el comparativo puede no ser de 12 meses.",
   "duda de extraer ya contestada para el club (columna, \"a) ricavi da gare\"): aceptar, en AC-Milan-bilanci-relazioni-2017-18.pdf",
-  "duda de extraer que no afecta la carga: Solo L2691 menciona 'migliaia di Euro'; el estado no imprime escala.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Solo L2691 menciona 'migliaia di Euro'; el estado no imprime escala."
  ],
  "reintentar": null,
  "reintentado": false,

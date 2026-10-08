@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.md",
- "generado": "2026-10-08T03:20:14.452Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:56.168Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -83,11 +83,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "54d4af9",
-  "5a7ed96",
-  "1e83cfa"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -132,8 +128,7 @@
   "duda de localizar que no afecta la carga: Repiten o reclasifican lo que ya abren el estado y la nota integrativa.",
   "duda de extraer ya contestada para el club (perimetro, \"a) salari e stipendi\"): corregir sí, en Fiorentina-bilancio-2024-25.pdf",
   "duda de extraer que no afecta la carga: Repiten importes ya presentes en el estado (L903-L986), no aportan desglose nuevo.",
-  "duda de extraer que no afecta la carga: La nota b54 no trae columna del año anterior; se cargó anterior null y detalla_a al renglón h).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La nota b54 no trae columna del año anterior; se cargó anterior null y detalla_a al renglón h)."
  ],
  "reintentar": [
   {

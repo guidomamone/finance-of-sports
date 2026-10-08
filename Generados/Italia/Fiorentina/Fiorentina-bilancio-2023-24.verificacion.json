@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md",
- "generado": "2026-10-08T03:20:14.082Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:56.125Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -27,11 +27,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "a133301",
-  "36cf6fd",
-  "c1fae42"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,7 +52,7 @@
   {
    "nombre": "documento del año 2025",
    "ok": false,
-   "detalle": "ingresos de 2024: 228.747261 en este documento y 428.635453 en Fiorentina-bilancio-2024-25.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 228.747261 en este documento y 243.030887 en Fiorentina-bilancio-2024-25.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -70,8 +66,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de extraer que no afecta la carga: b48 (L1981-L1991), b54 (L2123-L2138), b57 (L2211-L2215) y parte de b59/b61/b62 replican importes del estado sin desglose adicional.",
   "duda de extraer que no afecta la carga: Los renglones de b49 (L2001-L2009) mezclan partidos y abonos; la suma no se verificó contra 8.535.557/5.762.819.",
-  "duda de extraer que no afecta la carga: Diferencia de reclasificación en 2023 entre L900-L901 y L2252-L2253; no afecta 2024.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Diferencia de reclasificación en 2023 entre L900-L901 y L2252-L2253; no afecta 2024."
  ],
  "reintentar": [
   {

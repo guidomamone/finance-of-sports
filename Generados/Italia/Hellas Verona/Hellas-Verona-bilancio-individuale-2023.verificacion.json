@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md",
- "generado": "2026-10-08T03:20:12.262Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:55.893Z",
+ "estado": "ok",
  "clubId": "hellasverona-it",
  "year": 2023,
  "escala": {
@@ -78,9 +78,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "a1650fd"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -119,8 +117,7 @@
   "duda de extraer ya contestada para el club (columna, \"c) Atre svalutazioni delle immobilizzazioni\"): aceptar, en Hellas-Verona-bilancio-individuale-2023.pdf",
   "duda de extraer que no afecta la carga: L362 sólo muestra un 0 en posición de año anterior.",
   "duda de extraer que no afecta la carga: L2241 no tiene importes y L2242 sólo tiene importe 2022.",
-  "duda de extraer que no afecta la carga: El total 47.584 no coincide con salari (49.183) ni con el total de personal; es un desglose parcial del costo de tesserati.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El total 47.584 no coincide con salari (49.183) ni con el total de personal; es un desglose parcial del costo de tesserati."
  ],
  "reintentar": [
   {

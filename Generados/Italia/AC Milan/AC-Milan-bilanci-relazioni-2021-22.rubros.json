@@ -1,280 +1,310 @@
 {
- "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md",
- "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf",
- "club": "acmilan-it",
- "year": 2022,
- "generatedAt": "2026-10-08T03:20:09.327Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "a) ricavi da gare",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    32.309
-   ]
-  },
-  {
-   "label": "c) ricavi da altre competizioni",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.235
-   ]
-  },
-  {
-   "label": "2 variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    -0.054
-   ]
-  },
-  {
-   "label": "a) contributi in conto esercizio",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.173
-   ]
-  },
-  {
-   "label": "b) proventi da sponsorizzazioni",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    57.799
-   ]
-  },
-  {
-   "label": "d) proventi commerciali e royalties",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    25.07
-   ]
-  },
-  {
-   "label": "e) proventi da cessione diritti audiovisivi",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    133.075
-   ]
-  },
-  {
-   "label": "f) proventi vari",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    7.512
-   ]
-  },
-  {
-   "label": "g) ricavi da cessione temporanea prestazioni calciatori",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    1.661
-   ]
-  },
-  {
-   "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    5.57
-   ]
-  },
-  {
-   "label": "i) altri proventi da gestione calciatori",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    3.227
-   ]
-  },
-  {
-   "label": "l) ricavi e proventi diversi",
-   "lado": "revenue",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    31.015
-   ]
-  },
-  {
-   "label": "6 per materie prime, sussidiarie, di consumo, merci",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    7.705
-   ]
-  },
-  {
-   "label": "7 per servizi",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    57.737
-   ]
-  },
-  {
-   "label": "8 per godimento di beni di terzi",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    10.384
-   ]
-  },
-  {
-   "label": "a) salari e stipendi",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    159.598
-   ]
-  },
-  {
-   "label": "b) oneri sociali",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    8.123
-   ]
-  },
-  {
-   "label": "c) trattamento di fine rapporto",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    2.166
-   ]
-  },
-  {
-   "label": "e) altri costi",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.367
-   ]
-  },
-  {
-   "label": "a) ammortamento delle immobilizzazioni immateriali",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    65.997
-   ]
-  },
-  {
-   "label": "b) ammortamento delle immobilizzazioni materiali",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    2.347
-   ]
-  },
-  {
-   "label": "c) altre svalutazioni delle immobilizzazioni",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    8.007
-   ]
-  },
-  {
-   "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.017
-   ]
-  },
-  {
-   "label": "12 accantonamenti per rischi",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    7.893
-   ]
-  },
-  {
-   "label": "a) spese varie organizzazione gare",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    6.28
-   ]
-  },
-  {
-   "label": "b) tasse iscrizione gare",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.02
-   ]
-  },
-  {
-   "label": "d) costi per acquisizione temporanea calciatori",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    7.443
-   ]
-  },
-  {
-   "label": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    2.456
-   ]
-  },
-  {
-   "label": "f) altri oneri da gestione calciatori",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    0.5
-   ]
-  },
-  {
-   "label": "g) altri oneri diversi di gestione",
-   "lado": "expense",
-   "page": 27,
-   "section": "estado (lectura 5: hoja)",
-   "values": [
-    5.533
-   ]
-  }
- ]
+  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md",
+  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf",
+  "club": "acmilan-it",
+  "year": 2022,
+  "generatedAt": "2026-10-08T03:20:55.611Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "a) ricavi da gare",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        32.309
+      ],
+      "glosa": "a) Ingresos por partidos"
+    },
+    {
+      "label": "c) ricavi da altre competizioni",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.235
+      ],
+      "glosa": "c) Ingresos por otras competiciones"
+    },
+    {
+      "label": "2 variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.054
+      ],
+      "glosa": "2 Variación de existencias de productos en curso de fabricación, semiterminados y terminados"
+    },
+    {
+      "label": "a) contributi in conto esercizio",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.173
+      ],
+      "glosa": "a) Subvenciones a la explotación"
+    },
+    {
+      "label": "b) proventi da sponsorizzazioni",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        57.799
+      ],
+      "glosa": "b) Ingresos por patrocinios"
+    },
+    {
+      "label": "d) proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        25.07
+      ],
+      "glosa": "d) Ingresos comerciales y royalties"
+    },
+    {
+      "label": "e) proventi da cessione diritti audiovisivi",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        133.075
+      ],
+      "glosa": "e) Ingresos por cesión de derechos audiovisuales"
+    },
+    {
+      "label": "f) proventi vari",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.512
+      ],
+      "glosa": "f) Ingresos diversos"
+    },
+    {
+      "label": "g) ricavi da cessione temporanea prestazioni calciatori",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.661
+      ],
+      "glosa": "g) Ingresos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.57
+      ],
+      "glosa": "h) Plusvalías por traspaso de derechos plurianuales de futbolistas"
+    },
+    {
+      "label": "i) altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.227
+      ],
+      "glosa": "i) Otros ingresos de la gestión de futbolistas"
+    },
+    {
+      "label": "l) ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        31.015
+      ],
+      "glosa": "l) Ingresos y rendimientos diversos"
+    },
+    {
+      "label": "6 per materie prime, sussidiarie, di consumo, merci",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.705
+      ],
+      "glosa": "6 Consumo de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "7 per servizi",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        57.737
+      ],
+      "glosa": "7 Servicios exteriores"
+    },
+    {
+      "label": "8 per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.384
+      ],
+      "glosa": "8 Arrendamientos y cánones"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        159.598
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.123
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.166
+      ],
+      "glosa": "c) Indemnización por cese laboral"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.367
+      ],
+      "glosa": "e) Otros gastos de personal"
+    },
+    {
+      "label": "a) ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        65.997
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.347
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "c) altre svalutazioni delle immobilizzazioni",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.007
+      ],
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
+    },
+    {
+      "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.017
+      ],
+      "glosa": "d) Corrección valorativa por deterioro de créditos del activo corriente y de tesorería"
+    },
+    {
+      "label": "12 accantonamenti per rischi",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.893
+      ],
+      "glosa": "12 Dotaciones para riesgos y gastos"
+    },
+    {
+      "label": "a) spese varie organizzazione gare",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.28
+      ],
+      "glosa": "a) Gastos varios por organización de partidos"
+    },
+    {
+      "label": "b) tasse iscrizione gare",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.02
+      ],
+      "glosa": "b) Cuotas de inscripción en competiciones"
+    },
+    {
+      "label": "d) costi per acquisizione temporanea calciatori",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.443
+      ],
+      "glosa": "d) Costes por cesión temporal de futbolistas"
+    },
+    {
+      "label": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.456
+      ],
+      "glosa": "e) Minusvalías por traspaso de derechos plurianuales de futbolistas"
+    },
+    {
+      "label": "f) altri oneri da gestione calciatori",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.5
+      ],
+      "glosa": "f) Otros gastos de la gestión de futbolistas"
+    },
+    {
+      "label": "g) altri oneri diversi di gestione",
+      "lado": "expense",
+      "page": 27,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.533
+      ],
+      "glosa": "g) Otros gastos diversos de explotación"
+    }
+  ]
 }

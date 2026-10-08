@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md",
- "generado": "2026-10-08T03:20:13.722Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:56.084Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -41,9 +41,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "6078d5d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -72,8 +70,7 @@
   "duda de localizar que no afecta la carga: Es detalle por jugador; el total ya figura en el conto economico.",
   "duda de localizar que no afecta la carga: Detalle por jugador de una fila ya abierta en b55.",
   "duda de extraer que no afecta la carga: L970 no trae importe anterior; b45 muestra 0 en 2021 para gare, coherente con celda vacía.",
-  "duda de extraer que no afecta la carga: La tabla b48 (L2146-L2154) solo tiene una columna 'Importo', que se asume 30/06/2022 por coincidir con el total.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La tabla b48 (L2146-L2154) solo tiene una columna 'Importo', que se asume 30/06/2022 por coincidir con el total."
  ],
  "reintentar": null,
  "reintentado": false,

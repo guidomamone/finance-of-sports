@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.md",
- "generado": "2026-10-08T03:20:11.539Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:55.798Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2013,
  "escala": {
@@ -52,9 +52,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "f3709ce"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -92,8 +90,7 @@
   "duda de extraer ya contestada para el club (columna, \"Oneri finanziari netti e differenze cambio\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer ya contestada para el club (columna, \"Imposte correnti\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer que no afecta la carga: L5309 es un 'di cui' incluido en 'Da altri'; cargarlo duplicaría importes.",
-  "duda de extraer que no afecta la carga: La nota b181 L5430-L5431 abre en dos un concepto que en el estado es uno solo; ambos suman el total.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La nota b181 L5430-L5431 abre en dos un concepto que en el estado es uno solo; ambos suman el total."
  ],
  "reintentar": null,
  "reintentado": false,
