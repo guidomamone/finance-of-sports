@@ -56,3 +56,5 @@ La página `parmacalcio1913.com/informativa-finanziaria-parma-calcio-1913/` (ví
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf` (sourceId `parma-it-bilancio-31-12-2025-consolidato`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf` (sourceId `parma-it-bilancio-31-12-2022-consolidato`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf` (sourceId `parma-it-bilancio-30-06-2018`).

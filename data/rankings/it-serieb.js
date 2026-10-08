@@ -3,11 +3,12 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie B (IT) — 5 ejercicio(s) con ranking:
+// Serie B (IT) — 6 ejercicio(s) con ranking:
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2007: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -55,6 +56,14 @@ window.RANKINGS["it-serieb"] = {
       { id:"parma-it", revenue:46.076, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2021-individual",
         mix:[["Comercial / Sponsors",6.595],["Estadio",0.855],["Televisión",17.059],["Venta de Jugadores",2.44],["Otros ingresos",19.126]] },
+    ],
+  },
+  2018: {
+    leagueSize: null,
+    clubs: [
+      { id:"parma-it", revenue:13.357, reportType:"official_balance_sheet",
+        sourceId:"parma-it-bilancio-30-06-2018",
+        mix:[["Comercial / Sponsors",4.894],["Estadio",2.242],["Televisión",1.748],["Venta de Jugadores",0.017],["Otros ingresos",4.456]] },
     ],
   },
   2007: {

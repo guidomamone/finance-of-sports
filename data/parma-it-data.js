@@ -110,6 +110,23 @@ const parmaitRevenueLinesByYear = {
     { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:17.526423, disclosureLevel:'aggregated' }, // pág. 42, precedente
     { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:3.799862, disclosureLevel:'aggregated' }, // pág. 42, Jev 0.98
   ],
+  // 2018: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Parma/Parma-bilancio-30.06.2018.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2018: [
+    { rawLabel:'-Gare Ufficiali Campionato', normalizedCategory:'matchday_competition', amountNative:0.784099, disclosureLevel:'aggregated' }, // pág. 32, precedente
+    { rawLabel:'-Gare Ufficiali Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.026224, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
+    { rawLabel:'-Gare Amichevoli e tornei', normalizedCategory:'matchday_competition', amountNative:0.057235, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.98
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:1.055326, disclosureLevel:'aggregated' }, // pág. 32, precedente
+    { rawLabel:'Biglietti museo', normalizedCategory:'other_income', amountNative:0.002865, disclosureLevel:'aggregated' }, // pág. 32, ? 0.6
+    { rawLabel:'Ricavi merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.198487, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
+    { rawLabel:'4) incrementi di immobilizzazioni per lavori interni', normalizedCategory:'other_income', amountNative:0.506479, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:1.30872, disclosureLevel:'aggregated' }, // pág. 33, precedente
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:2.617276, disclosureLevel:'aggregated' }, // pág. 33, precedente
+    { rawLabel:'Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.073848, disclosureLevel:'aggregated' }, // pág. 33, precedente
+    { rawLabel:'Proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:1.499215, disclosureLevel:'aggregated' }, // pág. 33, precedente
+    { rawLabel:'Altri proventi gestione calciatori', normalizedCategory:'player_sales', amountNative:0.015, disclosureLevel:'aggregated' }, // pág. 33, precedente
+    { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:3.312941, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.98
+  ],
 };
 const parmaitExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-07)
@@ -287,6 +304,43 @@ const parmaitExpenseLinesByYear = {
     { rawLabel:'Altri oneri gestione calciatori', normalizedCategory:'other_expenses', amountNative:-10.722485, disclosureLevel:'aggregated' }, // pág. 46, precedente
     { rawLabel:'Altri oneri di gestione', normalizedCategory:'other_expenses', amountNative:-2.448547, disclosureLevel:'aggregated' }, // pág. 46, precedente
   ],
+  2018: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-0.866222, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-0.572161, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.231676, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-0.067869, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.54282, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.093318, disclosureLevel:'aggregated' }, // pág. 34, Jev 1
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.050446, disclosureLevel:'aggregated' }, // pág. 34, Jev 0.99
+    { rawLabel:'Amministrative, pubblicitarie e generali', normalizedCategory:'admin_general_expense', amountNative:-0.105061, disclosureLevel:'aggregated' }, // pág. 34, Jev 1
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-3.138464, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-1.038377, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'Retribuzione Calciatori', normalizedCategory:'wages_squad', amountNative:-7.412702, disclosureLevel:'aggregated' }, // pág. 35, Jev 1
+    { rawLabel:'Retribuzione Allenatori e Tecnici', normalizedCategory:'wages_squad', amountNative:-2.271753, disclosureLevel:'aggregated' }, // pág. 35, Jev 0.99
+    { rawLabel:'Retribuzione Impiegati', normalizedCategory:'admin_general_expense', amountNative:-0.385668, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Retribuzioni Biglietteria', normalizedCategory:'match_organisation_expense', amountNative:-0.041954, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Retribuzione altro personale', normalizedCategory:'admin_general_expense', amountNative:-0.306541, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Retribuzione operai', normalizedCategory:'admin_general_expense', amountNative:-0.085339, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Retribuzioni Tirocinanti', normalizedCategory:'admin_general_expense', amountNative:-0.01561, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Retribuzione Settore Giovanile', normalizedCategory:'youth_other_sports_expense', amountNative:-0.300528, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Incentivi all\'esodo', normalizedCategory:'wages_squad', amountNative:-0.769874, disclosureLevel:'aggregated' }, // pág. 35, precedente
+    { rawLabel:'Premi', normalizedCategory:'wages_squad', amountNative:-5.473734, disclosureLevel:'aggregated' }, // pág. 35, Jev 0.98
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-1.691348, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.338382, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'e) altri costi', normalizedCategory:'wages_squad', amountNative:-0.0012, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-1.822445, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.056789, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'d) svalutazioni dei crediti compresi nell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.07046, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:0.039356, disclosureLevel:'aggregated' }, // pág. 13, precedente
+    { rawLabel:'Spese varie per organizzazioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.551736, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.99
+    { rawLabel:'Tasse iscrizione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.022441, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'Costi acquisizione temporanea prestazione calciatori', normalizedCategory:'other_expenses', amountNative:-1.3055, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.99
+    { rawLabel:'Minusvalenze Cessione Calciatori', normalizedCategory:'exceptional_items', amountNative:-0.054167, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'- Costi valorizzazione calciatori', normalizedCategory:'player_amortisation', amountNative:-0.25425, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'- Costi Accessori Campagna Trasferimenti', normalizedCategory:'other_expenses', amountNative:-1.123531, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'- Costi per diritti di opzione', normalizedCategory:'other_expenses', amountNative:-0.02, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'Altri oneri gestione', normalizedCategory:'other_expenses', amountNative:-2.701251, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.97
+  ],
 };
 const parmaitFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. el renglón 'altri' 25.339.727 se contaba dos veces: la nota b46 abre 'Totale altri ricavi e proventi' (L558) (to-do 155/156, arreglo manual 2026-10-07)
@@ -373,6 +427,21 @@ const parmaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:32.507794, officialTotalExpenses:130.490721, officialPAT:-98.07901,
   },
+  2018: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2018-06-30',
+    sourceId:'parma-it-bilancio-30-06-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.010573, tax:0,
+    extraRows: [
+      {label:'da imprese controllate', value:0.000227},
+      {label:'verso imprese controllanti', value:-0.004255},
+      {label:'altri', value:-0.006545},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:11.457715, officialTotalExpenses:33.690094, officialPAT:-22.297121,
+  },
 };
 const parmaitPresupuestoOverlayByYear = {};
 
@@ -420,6 +489,12 @@ Object.assign(sources, {
     title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2025-consolidato (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'parma-it-bilancio-30-06-2018': {
+    id:'parma-it-bilancio-30-06-2018', clubId:'parma-it',
+    title:'Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
