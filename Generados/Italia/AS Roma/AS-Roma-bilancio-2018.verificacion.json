@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
- "generado": "2026-10-07T01:58:40.178Z",
+ "generado": "2026-10-08T02:51:55.183Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2018,
@@ -12,19 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
-   "campo": "fila",
-   "valor": "45.922",
-   "linea": 1918,
-   "etiqueta": "Gestione operativa netta calciatori",
-   "lado": "ingreso",
-   "reemplaza": "Gestione operativa netta calciatori",
-   "motivo": "resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
   {
    "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
    "campo": "fila",
@@ -63,6 +50,32 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-07"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "69.561",
+   "linea": 4317,
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "reemplaza": "Gestione operativa netta calciatori",
+   "motivo": "Guido 2026-10-07: gestión de jugadores en bruto (Proventi de la nota 30), como 2019, 2022 y 2025",
+   "evidencia": "nota 30, .md L4309-4317",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(23.639)",
+   "linea": 4317,
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-07: gestión de jugadores en bruto (Oneri de la nota 30)",
+   "evidencia": "nota 30, .md L4309-4317",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
  "cola": [],
@@ -70,17 +83,22 @@
   {
    "nombre": "total de ingresos",
    "ok": false,
-   "detalle": "las líneas suman 296.87 y el total impreso dice 250.867"
+   "detalle": "las líneas suman 320.509 y el total impreso dice 250.867"
   },
   {
    "nombre": "total de gastos",
    "ok": false,
-   "detalle": "las líneas suman 289.903 y el total impreso dice 230.056"
+   "detalle": "las líneas suman 313.542 y el total impreso dice 230.056"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": false,
+   "detalle": "ingresos de 2018: 250.866 en este documento y 320.428 en AS-Roma-bilancio-2019.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -90,10 +108,11 @@
  ],
  "notas": [
   "la nota de \"c) Diritti televisivi e diritti d'immagine\" no suma el renglón (128.566 contra 128.557, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"Gestione operativa netta calciatori\" (ingreso) 45.922, en lugar de \"Gestione operativa netta calciatori\" (2026-10-07, resultado neto de la gestión de jugadores, positivo (EBITDA 66.733 = 250.867 - 230.056 + 45.922) (to-do 155/156, arreglo manual 2026-10-07))",
   "ajuste manual: fila \"Risultato di terzi\" (financiero) 225 (2026-10-07, el resultado impreso es el del Gruppo (25.498); el consolidado (25.723) incluye la pérdida de terzi; se suma del lado financiero para no inflar ingresos (to-do 155/156, arreglo manual 2026-10-07))",
   "ajuste manual: sale la fila \"Totale Costi di esercizio\" (2026-10-07, el total se contaba como una línea más; los costos son sus renglones + Ammortamenti (L1920) y Accantonamenti (L1921), impresos fuera del total (to-do 156, arreglo manual 2026-10-07))",
   "ajuste manual: fila \"Variazione delle rimanenze (reduce costos)\" (ingreso) 82, en lugar de \"Variazione delle rimanenze\" (2026-10-07, la variación de existencias (82) reduce costos; los gastos se toman en valor absoluto, así que va del lado de ingresos con el mismo efecto en el resultado (arreglo manual 2026-10-07; to-do 156))",
+  "ajuste manual: fila \"Ricavi da gestione dei diritti pluriennali prestazioni calciatori\" (ingreso) 69.561, en lugar de \"Gestione operativa netta calciatori\" (2026-10-08, Guido 2026-10-07: gestión de jugadores en bruto (Proventi de la nota 30), como 2019, 2022 y 2025)",
+  "ajuste manual: fila \"Oneri da gestione dei diritti pluriennali prestazioni calciatori\" (gasto) (23.639) (2026-10-08, Guido 2026-10-07: gestión de jugadores en bruto (Oneri de la nota 30))",
   "duda de localizar que no afecta la carga: El cuadro por segmento parece repetir los renglones del estado consolidado sin abrir categorías nuevas.",
   "duda de localizar que no afecta la carga: b79 abre derechos centralizados por contraparte, que ya están totalizados en b78.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
@@ -117,8 +136,8 @@
   }
  ],
  "totales": {
-  "ingresos": 296.87,
-  "gastos": 289.903,
+  "ingresos": 320.509,
+  "gastos": 313.542,
   "financiero": -24.489,
   "impuesto": -7.976,
   "resultadoImpreso": -25.498,
@@ -304,19 +323,19 @@
    "origen": "nota que desglosa \"e) Altri proventi\""
   },
   {
-   "etiqueta": "Gestione operativa netta calciatori",
-   "lado": "ingreso",
-   "M": 45.922,
-   "pagina": 62,
-   "linea": 1918,
-   "origen": "ajuste manual"
-  },
-  {
    "etiqueta": "Variazione delle rimanenze (reduce costos)",
    "lado": "ingreso",
    "M": 0.082,
    "pagina": 62,
    "linea": 1912,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 69.561,
+   "pagina": 119,
+   "linea": 4317,
    "origen": "ajuste manual"
   },
   {
@@ -654,6 +673,14 @@
    "pagina": 62,
    "linea": 1921,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 23.639,
+   "pagina": 119,
+   "linea": 4317,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
