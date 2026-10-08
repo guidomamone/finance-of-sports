@@ -10,7 +10,7 @@
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -234,6 +234,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"bologna-it", revenue:97.485, reportType:"official_balance_sheet",
         sourceId:"bologna-it-bilancio-consolidato-2018-19",
         mix:[["Comercial / Sponsors",13.4],["Estadio",6.574],["Televisión",50.188],["Venta de Jugadores",21.236],["Otros ingresos",6.087]] },
+      { id:"parma-it", revenue:68.556, reportType:"official_balance_sheet",
+        sourceId:"parma-it-bilancio-30-06-2019-individual",
+        mix:[["Comercial / Sponsors",9.21],["Estadio",4.903],["Televisión",40.563],["Venta de Jugadores",8.631],["Otros ingresos",5.249]] },
     ],
   },
   2018: {

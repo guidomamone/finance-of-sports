@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 596 — Parma 2018/19 cargado (2026-10-08)
+
+- Parma 30.06.2019 (individual, jul 2018 a jun 2019; la portada dice por errata "01.07.2019 – 30.06.2019") cargado por el pipeline sin ajustes (lote 39,
+  US$ 0,28 de localizar y extraer): ingresos 60.242.772, gastos 68.442.675, resultado −9.423.000. Auditoría P0 0, P1 0. Etiqueta en el sitio:
+  "2019" (Parma tiene fiscalYearStart 01-01; to-do 177, no se toca).
+
 ## Versión 595 — Atalanta 2022 fuera (ejercicio de 6 meses); lote 39 (2026-10-08)
 
 - Decisión de Guido: un ejercicio de menos de 12 meses no se muestra. Atalanta 2022 (1/1 al 30/6/2022, cambio de cierre) sale de
