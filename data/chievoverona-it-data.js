@@ -51,6 +51,24 @@ const chievoveronaitRevenueLinesByYear = {
     { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:1.074068, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.94
     { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.430237, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
   ],
+  // 2016: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2016: [
+    { rawLabel:'- Gare campionato', normalizedCategory:'matchday_competition', amountNative:1.373813, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'- Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.008015, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.96
+    { rawLabel:'- Altre gare Italia/estero', normalizedCategory:'matchday_competition', amountNative:0.010077, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.91
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:0.644116, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'4) incrementi di immobilizzazioni per lavori interni', normalizedCategory:'other_income', amountNative:3.05026, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:2.126581, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.96
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:4.915909, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:1.007425, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'- Proventi televisivi', normalizedCategory:'broadcasting', amountNative:35.076342, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'Proventi vari', normalizedCategory:'other_income', amountNative:0.13, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Ricavi da cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.1968, disclosureLevel:'aggregated' }, // pág. 50, Jev 0.97
+    { rawLabel:'Plusvalenze da cessione diritti pluriennali calciatori', normalizedCategory:'player_sales', amountNative:18.822898, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.675969, disclosureLevel:'aggregated' }, // pág. 50, Jev 0.94
+    { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.489209, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+  ],
 };
 const chievoveronaitExpenseLinesByYear = {
   2014: [ // tools/cargar.mjs (2026-10-08)
@@ -70,6 +88,25 @@ const chievoveronaitExpenseLinesByYear = {
     { rawLabel:'Minusvalenze da cessione diritti plur. calciatori', normalizedCategory:'exceptional_items', amountNative:-0.718093, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
     { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.195, disclosureLevel:'aggregated' }, // pág. 29, Jev 0.99
     { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-1.217624, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+  ],
+  2016: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-1.035203, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.98
+    { rawLabel:'7) per servizi', normalizedCategory:'admin_general_expense', amountNative:-10.585414, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-2.293589, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.99
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-26.607857, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-1.562244, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.92
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.268687, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-14.921241, disclosureLevel:'aggregated' }, // pág. 30, Claude 0.8
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.101383, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'d) svalutazioni dei crediti compresi nell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.194, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'13) altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:-1.05, disclosureLevel:'aggregated' }, // pág. 30, Claude 0.85
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.308593, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.013833, disclosureLevel:'aggregated' }, // pág. 53, Jev 1
+    { rawLabel:'- Percentuale su incassi gare a squadre ospitate', normalizedCategory:'match_organisation_expense', amountNative:-0.003607, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
+    { rawLabel:'Costo per acquisii.temporanea prestaz.', normalizedCategory:'other_expenses', amountNative:-1.6, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.98
+    { rawLabel:'Minusvalenze da cessione diritti plur. calciatori', normalizedCategory:'exceptional_items', amountNative:-1.516225, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
+    { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.925, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
+    { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.237947, disclosureLevel:'aggregated' }, // pág. 53, Jev 1
   ],
 };
 const chievoveronaitFiscalYearMeta = {
@@ -91,6 +128,26 @@ const chievoveronaitFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:50.002958, officialTotalExpenses:52.065794, officialPAT:0.316064,
+  },
+  2016: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2016-06-30',
+    sourceId:'chievoverona-it-bilancio-30-giugno-2016',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.982643, tax:-0.017256,
+    extraRows: [
+      {label:'altri', value:0.000189},
+      {label:'altri', value:-1.841762},
+      {label:'17-bis) utili e perdite su cambi', value:-0.001302},
+      {label:'plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5', value:0.0002},
+      {label:'altri', value:0.15272},
+      {label:'altri', value:-1.292688},
+      {label:'imposte correnti', value:-0.13492},
+      {label:'imposte differite', value:0.117664},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:68.527414, officialTotalExpenses:63.708598, officialPAT:0.302692,
   },
 };
 const chievoveronaitPresupuestoOverlayByYear = {};
@@ -115,6 +172,12 @@ Object.assign(sources, {
     title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2014 (ejercicio 2014)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'chievoverona-it-bilancio-30-giugno-2016': {
+    id:'chievoverona-it-bilancio-30-giugno-2016', clubId:'chievoverona-it',
+    title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2016 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
