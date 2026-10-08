@@ -57,3 +57,5 @@ Series viejas del sitio anterior, recuperadas de Wayback (CDX de dominio complet
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.pdf` (sourceId `acmilan-it-bilanci-relazioni-2019-20`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.pdf` (sourceId `acmilan-it-bilanci-relazioni-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.pdf` (sourceId `acmilan-it-bilanci-relazioni-2020-21`).

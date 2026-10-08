@@ -8,7 +8,7 @@
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -197,6 +197,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:569.226, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2020-21",
         mix:[["Comercial / Sponsors",203.459],["Estadio",9.212],["Televisión",279.632],["Venta de Jugadores",51.312],["Otros ingresos",25.611]] },
+      { id:"acmilan-it", revenue:310.27, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilanci-relazioni-2020-21",
+        mix:[["Comercial / Sponsors",77.514],["Televisión",164.303],["Venta de Jugadores",33.727],["Otros ingresos",34.726]] },
       { id:"atalanta-it", revenue:274.848, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2021",
         mix:[["Comercial / Sponsors",37.584],["Estadio",6.852],["Televisión",131.103],["Venta de Jugadores",63.549],["Otras secciones deportivas",0.567],["Otros ingresos",35.193]] },
