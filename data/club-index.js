@@ -165,7 +165,7 @@ window.CLUB_INDEX = {
   "santafe-co": {"n":"Independiente Santa Fe","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "santos-br": {"n":"Santos","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "saopaulo-br": {"n":"São Paulo","c":"BR","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
-  "sassuolo-it": {"n":"Sassuolo","c":"IT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "sassuolo-it": {"n":"Sassuolo","c":"IT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "sevillafc": {"n":"Sevilla FC","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "silkeborg-dk": {"n":"Silkeborg IF","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "sinttruiden-be": {"n":"Sint-Truiden","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

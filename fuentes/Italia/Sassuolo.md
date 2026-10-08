@@ -41,3 +41,5 @@ Ninguna. Serie completa y fácil de mantener actualizada (URLs predecibles:
 `https://www.sassuolocalcio.it/wp-content/uploads/files/bilancio/20181231-bilancio.pdf` (65 págs, 8,9 MB, **escaneo sin capa de texto**) y `.../20191231-bilancio.pdf` (67 págs, 3,7 MB, con texto) siguen respondiendo 200 en el sitio vivo aunque la página no los linkea; la CDX los lista junto con un `20201231-bilancio_def.pdf` (21 MB, probable versión definitiva del 2020 ya cargado). Antes de 2018 (`2015-2017*-bilancio.pdf`): 404.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf` (sourceId `sassuolo-it-bilancio-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2020.pdf` (sourceId `sassuolo-it-bilancio-2020`).
