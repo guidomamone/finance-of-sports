@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.md",
- "generado": "2026-10-08T23:17:07.322Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:27:28.722Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2008,
  "escala": {
@@ -12,14 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b96afd6",
-  "91b800c",
-  "bc5175c",
-  "0dbbebd",
-  "8d0a8f5",
-  "4f067b0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,7 +52,10 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (columna, \"Diritti televisivi\"): aceptar, en AS-Roma-bilancio-2008.pdf",
   "duda de localizar que no afecta la carga: Resumen de ricavi que ya están en b95 y en las notas.",
+  "duda de extraer ya contestada para el club (columna, \"c) Diritti televisivi e diritti d'immagine\"): aceptar, en AS-Roma-bilancio-2008.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"ONERI/PROVENTI FINANZIARI NETTI\"): aceptar, en AS-Roma-bilancio-2008.pdf",
   "duda de extraer que no afecta la carga: Hay dos resultados finales impresos (L5811 y L5813), separados por la quota di terzi."
  ],
  "reintentar": null,

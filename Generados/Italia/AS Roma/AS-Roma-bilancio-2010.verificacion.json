@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md",
- "generado": "2026-10-08T23:17:07.422Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:27:28.588Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2010,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "0e161ab"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,8 +53,9 @@
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Los renglones de ingresos consolidados ya se abren en las notas 23-25 (b141-b147).",
-  "duda de extraer confirmada por las sumas (columna, \"b) Sponsorizzazioni\"): ¿Se carga la columna izquierda de b145 (L7107, rotulada '30.06.09' dos veces) como ejercicio 30 06 2010?",
+  "duda de extraer ya contestada para el club (columna, \"b) Sponsorizzazioni\"): aceptar, en AS-Roma-bilancio-2010.pdf",
   "duda de extraer que no afecta la carga: L7437 imprime 24.927 en ambas columnas; las partidas 2010 suman 24.327, parece error de imprenta.",
+  "duda de extraer ya contestada para el club (perimetro, \"Proventi (oneri) finanziari netti\"): aceptar, en AS-Roma-bilancio-2010.pdf",
   "duda de extraer que no afecta la carga: L7098 8.688 = L5466 7.741 + L5467 947; b147 detalla ambos renglones juntos."
  ],
  "reintentar": null,

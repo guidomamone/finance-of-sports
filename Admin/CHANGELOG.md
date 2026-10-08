@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 612 — To-do 179 grupo 2: 10 documentos de Italia con diagnóstico y la cola contestada (2026-10-08)
+
+- Falsas alarmas del año vecino contestadas con la evidencia (reexpresiones del documento siguiente, encabezados mal rotulados, gestión neta de Roma): Roma 2006 a 2008, 2010, 2011, 2012 y 2020, Inter 2021,
+  Sampdoria 2020 y 2021, Lazio 2004. Inter 2021: ajuste `resultado-final`. Lote 53 listo para correr.
+- Roma 2005: el localizador había elegido la tabla de una controlada (en euros); estado corregido a b107-b112 en `ubicacion.json`. Sassuolo 2018: la pág. 17 se reemplazó en el .md por la segunda lectura
+  con etiquetas. Falta re-extraer los dos (`Admin/lote-52.txt`).
+- Punto nuevo 189 (el chequeo del año vecino no usa los ajustes `fila`), sin cambio de script por ahora.
+
 ## Versión 611 — Escalón "financiero sin hojas" en las lecturas 5 y 6 (2026-10-08)
 
 - `tools/verificar.mjs`: sin hojas de financiero, las lecturas 5 y 6 usan sus renglones o su total único. Medido en 242 documentos (ver `Admin/PIPELINE.md`): 4 cambian (Roma 2007, Lazio 2011-12, 2012-13 y

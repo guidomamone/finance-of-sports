@@ -234,13 +234,15 @@ ni en el comentario de ningún archivo de código.
     `node tools/estado.mjs --actualizar`). 161 ejercicios cargados (Juventus 23 y 138 de los otros 21 clubes) y 15 documentos de fútbol pendientes, todos ya transcriptos. Años = año de
     cierre (2020 = 2019-20). El grupo 1 (13 documentos que no cerraban el resultado) se resolvió: 12 cierran (ajustes `fila`, `estado-desde-md.mjs` para Lazio 2021, comparativo de 2023 para
     Salernitana 2022) y 11 ya están cargados. Lo que queda, en el orden en que conviene resolverlo:
-    1. Resultado cerrado, falta contestar la cola (2): AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los totales de ingresos y gastos quedan en rojo porque el
-       impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018).
-    2. Falla el año vecino (8): AS Roma 2005, 2006, 2008, 2010 y 2020, Inter 2021, Sampdoria 2020, Sassuolo 2018 (Milan 2019 y Lazio 2016 se resolvieron con el escalón de la columna anterior con signo). Casi siempre es una reexpresión del año en el
-       documento siguiente (pasó con Milan 2009 y 2010). Mirar uno por uno si es falsa alarma (se acepta en la cola con la explicación) o un error real. Sassuolo 2018 además quedó con la
-       extracción en 0 filas (es un escaneo): `lote.mjs --rehacer` (~US$ 0,5) y OJO con el punto 181.
-    3. AS Roma 2011 (consolidado): 2 preguntas en la cola. Roma 2011 separato se descartó (el perímetro del club es consolidado).
-    4. Catania 2011 (artículo de prensa) y Juve Stabia semestral: solo transcripción (punto 184).
+    1. Resuelto el diagnóstico, falta correr el lote (11): AC Milan 2019, AS Roma 2007, 2008, 2010, 2011 (consolidado), 2012 y 2020, Inter 2021, Lazio 2004 y 2016, Sampdoria 2020. Cierran el resultado
+       y la cola está contestada con la evidencia (falsas alarmas: reexpresiones del documento siguiente, encabezados mal rotulados, la gestión neta de Roma). Falta la marca de registro, la
+       categorización y cargar cada año: `Admin/lote-53.txt` (lo corre Guido, sin `--reintentar`). Roma 2007 y 2012: los totales de ingresos y gastos quedan en rojo porque el impreso excluye
+       amortizaciones y provisiones (respondido como Roma 2018). Inter 2021: ajuste `resultado-final` (245.579.264); le faltan 2 filas de taquilla de 2020 en la columna anterior (ver 189).
+    2. Hay que re-extraer (2): AS Roma 2005 (el localizador eligió la tabla de la controlada Roma International Football Service, en euros; el estado correcto es b107-b112, ya corregido en
+       `ubicacion.json`) y Sassuolo 2018 (el estado de la pág. 17 perdió las etiquetas; se reemplazó en el .md por la segunda lectura de Gemini, que coincide cifra por cifra con la columna anterior
+       de Sassuolo 2019). `Admin/lote-52.txt`: primero `caffeinate -i node tools/extraer.mjs --lista Admin/lote-52.txt --rehacer --ejecutar` (~US$ 0,47) y después `lote.mjs --ejecutar`. Con Roma
+       2005 cargado se cierra Roma 2006 (individual, único estado de ese año; reexpresión IFRS en 2007) y sus casos 27c4256 y 5949b6c esperan a ese lote.
+    3. Catania 2011 (artículo de prensa) y Juve Stabia semestral: solo transcripción (punto 184).
     Ya resueltos, para no rehacerlos: Lazio 1999 a 2001 en liras (180 abajo), Milan 2008 a 2013, Roma 2013 a 2017, Torino 2020 y 2025, Napoli 2018 a 2022, Atalanta, Parma, Sassuolo, Inter
     2018, 2019, 2023 y 2024, Fiorentina 2019, Genoa 2023 y 2025, Hellas Verona 2022 a 2025, Sampdoria 2019, Bologna 2018, 2023, 2024 y 2025, Lazio 2005, 2011, 2014 y 2021, Chievo 2014 a
     2016, Juve Stabia 2024, Salernitana 2022 y 2023 y Lazio 2006. Altas nuevas: Chievo Verona, Salernitana y Juve Stabia (con la liga `it-seriec`, Serie C, tier 3; Juve Stabia 2024 sin gestión: pregunta en
@@ -275,4 +277,10 @@ ni en el comentario de ningún archivo de código.
 188. COSTOS FINANCIEROS DEL CODICE CIVILE QUE SUMAN EN VEZ DE RESTAR (verificar.mjs). El 17) "interessi ed altri oneri finanziari" y el D 19) se imprimen en positivo y se restan por posición; el
     script los suma. Se arregló a mano con ajustes `fila` en Bologna 2019-20, 2020-21, 2024 y 2025 y Genoa 2023 (y Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total
     C impreso solo cierra así, con la compuerta de siempre (el total de la sección impreso). Sin probar; ningún agente lo midió.
+
+189. EL CHEQUEO DEL AÑO VECINO NO USA LOS AJUSTES `fila` (verificar.mjs, `compararVecino` y `vecinoDe`). Lee el `.filas.json` crudo de los dos documentos, sin los ajustes, y un ajuste `fila` solo trae la
+    columna ACTUAL, así que no hay cómo corregir la columna del año anterior. Casos (todos ya aceptados por la cola, sin daño en datos): Roma 2007 contra 2008 (157.589 contra 162.017: 2007 ya lleva
+    la gestión neta por ajuste), Sampdoria 2020 contra 2021 (el ajuste que saca 10,63 M no llega a la columna anterior de 2021 y falta la fila Incrementi 1.779.291, L888), Inter 2021 (faltan 2 filas de
+    taquilla de 2020: L640 27.574.094 y L642 16.802.772). Diseño pendiente: en la columna actual del documento propio y del vecino usar sus ajustes (reemplazar y agregar con la escala de cada uno) y
+    permitir un valor para la columna anterior en un ajuste `fila`. Conocido, sin daño hoy: no se diseña hasta que aparezca un caso que la cola no pueda aceptar.
 

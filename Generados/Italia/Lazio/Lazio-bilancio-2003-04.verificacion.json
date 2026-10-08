@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md",
- "generado": "2026-10-08T23:17:12.739Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:27:28.137Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2004,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "eaa1c52"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,6 +50,7 @@
   "la nota de \"c) Trattamento di fine rapporto\" no suma el renglón (0.478 contra 0.280997, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2022-23.pdf",
+  "duda de extraer ya contestada para el club (escala, \"Totale proventi diversi dai precedenti\"): aceptar, en Lazio-bilancio-2003-04.pdf",
   "duda de extraer que no afecta la carga: 252+1.682=1.934 coincide con d.4) da terzi (L1245); se cargaron con detalla_a al total de proventi diversos.",
   "duda de extraer que no afecta la carga: La nota imprime (7) con signo de costo mientras el estado muestra 6.353 como ingreso; diferencia de signo/redondeo."
  ],

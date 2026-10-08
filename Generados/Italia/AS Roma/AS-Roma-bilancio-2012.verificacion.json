@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.md",
- "generado": "2026-10-08T23:17:07.748Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:27:28.537Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2012,
  "escala": {
@@ -39,16 +39,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "b30f88c",
-  "4ce4cf9",
-  "ba18870",
-  "ea14455",
-  "604fe88",
-  "ea14455",
-  "604fe88",
-  "89804d7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -85,9 +76,14 @@
   "ajuste manual: fila \"Risultato di terzi\" (financiero) (221) (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado (58.253) y el resultado del Gruppo (58.474): resta; criterio de Roma 2018)",
   "ajuste manual: fila \"Gestione operativa netta calciatori\" (ingreso) 9.060 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso, igual que Roma 2009 y 2013 a 2017 (el vecino 2013 usa el mismo régimen))",
   "duda de localizar que no afecta la carga: Parece repetir renglones ya abiertos en el estado y sus notas.",
+  "duda de localizar ya contestada para el club (columna, \"Oneri diversi di gestione\"): aceptar, en AS-Roma-bilancio-2012.pdf",
+  "duda de localizar ya contestada para el club (columna, \"Ammortamenti e svalutazioni\"): aceptar, en AS-Roma-bilancio-2012.pdf",
   "duda de localizar que no afecta la carga: Abre la misma cifra que b79 por cliente, no por categoría.",
   "duda de extraer que no afecta la carga: b73 repite exactamente los importes del estado L2643-L2650.",
-  "duda de extraer que no afecta la carga: b77 repite los renglones b)-e) del estado L2645-L2649."
+  "duda de extraer que no afecta la carga: b77 repite los renglones b)-e) del estado L2645-L2649.",
+  "duda de extraer ya contestada para el club (columna, \"Oneri diversi di gestione\"): aceptar, en AS-Roma-bilancio-2012.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Ammortamenti e svalutazioni\"): aceptar, en AS-Roma-bilancio-2012.pdf",
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"Spese per il personale\"): aceptar, en AS-Roma-bilancio-2012.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

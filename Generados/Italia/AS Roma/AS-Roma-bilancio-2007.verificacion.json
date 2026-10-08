@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md",
- "generado": "2026-10-08T23:17:07.205Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:27:50.572Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2007,
  "escala": {
@@ -67,15 +67,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "b879742",
-  "1387648",
-  "b70206a",
-  "9e9db37",
-  "4b75db3",
-  "86b749f",
-  "dd775d7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -120,7 +112,8 @@
   "ajuste manual: fila \"Risultato (utile) di terzi\" (financiero) (164) (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado 14.175 y el Gruppo 14.011: resta)",
   "ajuste manual: fila \"Gestione operativa netta calciatori\" (ingreso) 4.428 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso (criterio de Roma 2009 y 2013 a 2017); con ella el ingreso de 2007 (162.017) coincide con la columna 2007 del documento de 2008)",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar que no afecta la carga: b100 es el mismo estado consolidado con columnas adicionales de partes relacionadas."
+  "duda de localizar que no afecta la carga: b100 es el mismo estado consolidado con columnas adicionales de partes relacionadas.",
+  "duda de extraer ya contestada para el club (perimetro, \"ONERI/PROVENTI FINANZIARI NETTI\"): aceptar, en AS-Roma-bilancio-2008.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
