@@ -54,3 +54,5 @@ OCR de las primeras páginas confirma las fechas de cierre. El de 2024 de Issuu 
 - **Color de marca**: `#61358B` (violeta) — "viola" (it.wikipedia, ACF_Fiorentina); hex de footylogos. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf` (sourceId `fiorentina-it-bilancio-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.pdf` (sourceId `fiorentina-it-bilancio-2023-24`).

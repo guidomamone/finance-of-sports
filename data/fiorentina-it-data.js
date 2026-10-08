@@ -47,6 +47,22 @@ const fiorentinaitRevenueLinesByYear = {
     { rawLabel:'h) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:3.426567, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.98
     { rawLabel:'l) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.356428, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Fiorentina/Fiorentina-bilancio-2023-24.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:8.535557, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:5.762819, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:28.844321, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.97
+    { rawLabel:'b) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:31.405608, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:10.47712, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:3.683334, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'e) proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:61.547998, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'f) ricavi per cessione temporanea giocatori', normalizedCategory:'player_sales', amountNative:2.2, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.99
+    { rawLabel:'g) plusv. da cessione diritti pluriennali alle prest.di calciatori', normalizedCategory:'player_sales', amountNative:26.057752, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'- premi e/o indennizzi attivi ex art. 103, comma 3 NOIF', normalizedCategory:'other_income', amountNative:6.96996, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.99
+    { rawLabel:'- proventi diversi da trasferimento calciatori', normalizedCategory:'player_sales', amountNative:7.313666, disclosureLevel:'aggregated' }, // pág. 31, Claude 0.8
+    { rawLabel:'l) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:7.104805, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+  ],
 };
 const fiorentinaitExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-08)
@@ -68,6 +84,25 @@ const fiorentinaitExpenseLinesByYear = {
     { rawLabel:'c) minusvalenze da cessione diritti pluriennali dei calciatori', normalizedCategory:'exceptional_items', amountNative:-0.079488, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.99
     { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-3.890894, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
     { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.511391, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
+  ],
+  2024: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-2.416598, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.99
+    { rawLabel:'7) per servizi', normalizedCategory:'admin_general_expense', amountNative:-35.420261, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-2.343529, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.97
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-88.946085, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-6.19764, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.96
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-1.108379, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.99
+    { rawLabel:'e) altri costi', normalizedCategory:'other_expenses', amountNative:-1.326206, disclosureLevel:'aggregated' }, // pág. 31, precedente
+    { rawLabel:'a) ammortamento immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-7.204888, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.9
+    { rawLabel:'b) ammortamento diritti pluriennali calciatori', normalizedCategory:'player_amortisation', amountNative:-44.763804, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'c) ammortamento immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-4.388681, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'d) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.067424, disclosureLevel:'aggregated' }, // pág. 31, Jev 0.9
+    { rawLabel:'11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:0.087751, disclosureLevel:'aggregated' }, // pág. 31, Jev 1
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.04905, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.97
+    { rawLabel:'a) oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-0.305561, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
+    { rawLabel:'b) costi per acquisizione temporanea prestazioni dei calciatori', normalizedCategory:'other_expenses', amountNative:-3.701809, disclosureLevel:'aggregated' }, // pág. 32, Jev 0.99
+    { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-4.027484, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
+    { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.398121, disclosureLevel:'aggregated' }, // pág. 32, Jev 1
   ],
 };
 const fiorentinaitFiscalYearMeta = {
@@ -96,6 +131,27 @@ const fiorentinaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:198.608828, officialTotalExpenses:216.162351, officialPAT:-23.233889,
   },
+  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. hijo de a) contributi, ya abierto por la nota (2025-2031 suman 28.844.322); se contaba dos veces
+  2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'fiorentina-it-bilancio-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.492664, tax:-1.807483,
+    extraRows: [
+      {label:'c) da titoli iscritti nell\'attivo circolante che non costituiscono partecipazioni', value:0.101892},
+      {label:'altri', value:2.532694},
+      {label:'altri', value:-2.140035},
+      {label:'17-bis) utili e perdite su cambi', value:-0.001887},
+      {label:'imposte correnti', value:-3.41954},
+      {label:'imposte anni precedenti', value:-0.00443},
+      {label:'imposte anticipate', value:-1.266178},
+      {label:'imposte differite', value:2.882665},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:199.90294, officialTotalExpenses:204.577769, officialPAT:-5.989648,
+  },
 };
 const fiorentinaitPresupuestoOverlayByYear = {};
 
@@ -119,6 +175,12 @@ Object.assign(sources, {
     title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'fiorentina-it-bilancio-2023-24': {
+    id:'fiorentina-it-bilancio-2023-24', clubId:'fiorentina-it',
+    title:'ACF Fiorentina S.r.l. — Fiorentina-bilancio-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
