@@ -47,3 +47,5 @@ El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf` (sourceId `genoa-it-bilancio-31-12-2022-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf` (sourceId `genoa-it-bilancio-30-06-2025-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf` (sourceId `genoa-it-bilancio-31-12-2023-individual`).

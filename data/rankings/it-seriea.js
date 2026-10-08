@@ -6,7 +6,7 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -139,6 +139,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"sassuolo-it", revenue:154.967, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2023",
         mix:[["Comercial / Sponsors",34.357],["Estadio",4.191],["Televisión",41.807],["Venta de Jugadores",61.713],["Otros ingresos",12.899]] },
+      { id:"genoa-it", revenue:129.264, reportType:"official_balance_sheet",
+        sourceId:"genoa-it-bilancio-31-12-2023-individual",
+        mix:[["Comercial / Sponsors",6.121],["Estadio",6.653],["Televisión",26.519],["Venta de Jugadores",18.148],["Otros ingresos",71.822]] },
       { id:"bologna-it", revenue:127.484, reportType:"official_balance_sheet",
         sourceId:"bologna-it-bilancio-consolidato-2022-23",
         mix:[["Comercial / Sponsors",19.454],["Estadio",6.959],["Televisión",51.092],["Venta de Jugadores",45.357],["Otros ingresos",4.621]] },

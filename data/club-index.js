@@ -93,7 +93,7 @@ window.CLUB_INDEX = {
   "fulham-gb": {"n":"Fulham","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gambaosaka": {"n":"Gamba Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "genk-be": {"n":"Genk","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "gent-be": {"n":"Gent","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "getafe-es": {"n":"Getafe CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gimnasiaesgrima-ar": {"n":"Gimnasia y Esgrima (La Plata)","c":"AR","q":"full","y":4,"last":2026,"yrs":[[2026,"official_budget"],[2025,"official_budget_and_balance"],[2024,"official_budget_and_balance"],[2023,"official_balance_sheet"]]},
