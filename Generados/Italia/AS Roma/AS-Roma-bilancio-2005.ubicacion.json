@@ -1320,7 +1320,12 @@
  },
  "sin_estado": false,
  "estado": [
-  "b85"
+  "b107",
+  "b108",
+  "b109",
+  "b110",
+  "b111",
+  "b112"
  ],
  "notas_ingresos": [
   "b140",
@@ -1355,23 +1360,6 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usa b85 (pág. 95) como estado consolidado en lugar de los bloques b107-b112 (pág. 136-137), que parecen otra transcripción del mismo conto economico consolidato?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b85 y b107-b112 parecen ser el mismo conto economico consolidado transcripto dos veces; se toma uno solo para no duplicar.",
-   "bloques": [
-    "b85",
-    "b107",
-    "b108",
-    "b109",
-    "b110",
-    "b111",
-    "b112"
-   ],
-   "afecta_carga": true
-  },
-  {
    "pregunta": "¿Las columnas rotuladas 'VALORI AL 30.06.04' y '30.06.03' en b159 y b160 corresponden en realidad a 2005 y 2004?",
    "propuesta": "sí",
    "tema": "columna",
@@ -1384,5 +1372,5 @@
    "afecta_carga": true
   }
  ],
- "observaciones": "Individual A.S. Roma S.p.A.: conto economico b19-b20 (pág. 46-47) con notas b51-b74. Consolidado: b85 (pág. 95, también b107-b112) con notas b140-b161; se eligió el consolidado. Excluidos cuadros por jugador (b70, b73, b68) y reclasificados de la relazione."
+ "observaciones": "Individual A.S. Roma S.p.A.: conto economico b19-b20 (pág. 46-47) con notas b51-b74. Consolidado: b85 (pág. 95, también b107-b112) con notas b140-b161; se eligió el consolidado. Excluidos cuadros por jugador (b70, b73, b68) y reclasificados de la relazione. [Claude 2026-10-08 (Guido: to-do 179): el estado es b107-b112 (consolidado, pág. 136-137, valore della produzione 136.532); b85 (pág. 95) es el conto economico de la controlada Roma International Football Service, en euros y no en miles (4.610.527): no es el estado del club. Se corrigió a mano el campo estado.]"
 }
