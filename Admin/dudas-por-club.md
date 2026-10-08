@@ -1915,3 +1915,10 @@ sin leerlo.
 - **Kazajistán**: Kaspiy FK (el DFO solo tiene 2021-2022). **Georgia**: Dinamo Batumi (reportal.ge hasta 2022).
 - **Ucrania**: Dynamo Kyiv (la consolidada bajada de Wayback, ¿es 2020 u otro año?).
 
+
+## Salernitana (onboarding de Italia, sesión 2026-10-08, el ejercicio 2022 se cargó con el comparativo del año siguiente)
+
+- **¿Nos pueden mandar una copia legible del estado de resultados (conto economico) del bilancio al 30/6/2022?** El PDF que tenemos es un escaneo de 72 ppi, las
+  págs. 15 y 16 no se leen y el OCR erró unas 25 cifras. El ejercicio 2022 se cargó con la columna "2022" del bilancio al 30/6/2023, que cierra con el resultado
+  impreso (-16.787.729). Mismo total de costos operativos (58.952.860) pero ese comparativo está reclasificado: "Oneri per servizi esterni" 6.216.789 y "Altri oneri"
+  4.960.945, mientras las notas del propio documento de 2022 dicen 6.489 y 4.689 (miles; la suma de los dos es la misma, 11,18 M).
