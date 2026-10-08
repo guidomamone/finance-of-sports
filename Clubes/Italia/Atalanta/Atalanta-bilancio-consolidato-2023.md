@@ -694,95 +694,94 @@ Con riferimento al carico fiscale le imposte sono accantonate secondo il princip
 
 --- pág. 21 ---
 
+21
+
 norme vigenti e sulla base di una realistica previsione degli oneri da assolvere entro ed oltre i successivi 12 mesi in applicazione della vigente normativa fiscale.
 
-## ANALISI DELLE VOCI DI STATO PATRIMONIALE CONSOLIDATO
+ANALISI DELLE VOCI DI STATO PATRIMONIALE CONSOLIDATO
 
-### IMMOBILIZZAZIONI IMMATERIALI
+IMMOBILIZZAZIONI IMMATERIALI
 
-|   | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione %  |
-| --- | --- | --- | --- | --- |
-|  Immobilizzazioni immateriali | 131.712.573 | 157.117.654 | (25.405.081) | -16,17%  |
-|  **Totale** | **131.712.573** | **157.117.654** | **(25.405.081)** | **-16,17%**  |
+| | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione % |
+|---|---|---|---|---|
+| Immobilizzazioni immateriali | 131.712.573 | 157.117.654 | (25.405.081) | -16,17% |
+| **Totale** | **131.712.573** | **157.117.654** | **(25.405.081)** | **-16,17%** |
 
 Le immobilizzazioni immateriali al 30/06/2023 ammontano a € 131.712.573 (€ 157.117.654 al 30/06/2022) come di seguito dettagliato nella tabella di movimentazione dell'esercizio:
 
-|   | Costo Mortio |   |   |   |   | Fondo Emortamento |   |   |   | Netto Consolato  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  30/06/2023 | Decrociati | Decrociati | 30/06/2022 | 30/06/2021 | Anto.2a | Decrociati | 2022 Mortamento | Sold. al. 2023 | 30/06/2023 | 30/06/2022 | 30/06/2021  |
-|  1) Diritti di trasporto industriale e diritti di calzazione delle opere dell'impegno | 402.497 | 48.909 | 0 | 348.397 | (403.249) | (26.280) | 0 | 0 | 0 | (426.446) | 34.257 | 136.937  |
-|  4) Corrosioni, franze, marchi e diritti uniti | 26.340 | 0 | 0 | 26.340 | (16.159) | (1.822) | 0 | 0 | 0 | (21.082) | 17.760 | 13.807  |
-|  6) Immobilizzazioni in corso e settori | 92.000 | 248.438 | 0 | 238.438 | 0 | 0 | 0 | 0 | 0 | 0 | 92.000 | 238.438  |
-|  7) Diritti pluriennali alle prestazioni dei calciatori | 280.780.000 | 65.424.438 | (65.424.438) | 271.316.832 | (108.372.048) | (57.102.802) | 52.468.492 | 0 | (528.074) | (143.324.032) | (31.414.249) | 127.085.120  |
-|  8) Altre immobilizzazioni immateriali | 48.304.452 | 7.028 | 0 | 48.492.083 | (60.082.023) | (2.162.807) | 0 | 0 | 0 | (45.128.748) | 5.301.352 | 3.272.166  |
-|  **Totale** | **330.405.240** | **65.725.763** | **(65.725.763)** | **330.405.240** | **(100.007.718)** | **(101.007.740)** | **(59.304.412)** | **52.468.492** | **(73.410)** | **(518.974)** | **(109.125.144)** | **157.117.654**  |
+| | Costo Storico: 30/06/2022 | Incrementi | Decrementi | 30/06/2023 | Fondo Ammortamento: 30/06/2022 | Amm.to | Decrementi | Altri Movimenti | Svalutazioni | 30/06/2023 | Netto Contabile: 30/06/2022 | 30/06/2023 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 3) Diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno | 493.497 | 46.900 | 0 | 540.397 | (403.240) | (36.200) | 0 | 0 | 0 | (439.440) | 90.257 | 100.957 |
+| 4) Concessioni, licenze, marchi e diritti simili | 36.949 | 0 | 0 | 36.949 | (19.159) | (1.923) | 0 | 0 | 0 | (21.082) | 17.790 | 15.867 |
+| 6) Immobilizzazioni in corso e acconti | 92.000 | 246.438 | | 338.438 | 0 | 0 | 0 | 0 | 0 | 0 | 92.000 | 338.438 |
+| 7) Diritti pluriennali alle prestazione dei calciatori | 289.788.896 | 65.424.496 | (83.693.440) | 271.519.952 | (138.372.648) | (57.102.602) | 52.468.492 | 0 | (528.074) | (143.534.832) | 151.416.248 | 127.985.120 |
+| 8) Altre immobilizzazioni immateriali | 48.394.052 | 7.929 | 0 | 48.401.981 | (42.892.693) | (2.163.687) | 0 | (73.410) | 0 | (45.129.790) | 5.501.359 | 3.272.191 |
+| **Totale** | **338.805.395** | **65.725.763** | **(83.693.440)** | **320.837.718** | **(181.687.740)** | **(59.304.412)** | **52.468.492** | **(73.410)** | **(528.074)** | **(189.125.144)** | **157.117.654** | **131.712.573** |
 
 Le immobilizzazioni immateriali hanno subito complessivamente un decremento di € 25.405.081 quale risultato netto tra (i) investimenti per € 65.725.763 (legati principalmente alla gestione dei Diritti Pluriennali alle Prestazioni dei Calciatori), (ii) disinvestimenti netti per € 31.224.948 (anch'essi legati principalmente alla gestione dei Diritti Pluriennali alle Prestazioni dei Calciatori), determinati come riduzione del costo storico per € 83.709.140 e del fondo ammortamento per € 52.468.492, (iii) quote di ammortamento (€ 59.468.492) e (iv) svalutazioni (€ 528.074) oltre al altri movimenti per € 73.410. La principale componente delle immobilizzazioni immateriali è costituita dai diritti pluriennali alle prestazioni dei giocatori professionisti impiegati in prima squadra e dai diritti alle prestazioni di alcuni calciatori del settore giovanile.
 
-Nel prospetto "Allegato 1' alla presente Nota Integrativa, per ciascun diritto pluriennale alle prestazioni dei calciatori vengono illustrati i saldi all'inizio dell'esercizio, i movimenti dell'esercizio e i saldi alla fine dell'esercizio (oltre a tutte le informazioni richieste dalla normativa specifica di settore).
-
-21
+Nel prospetto "Allegato 1" alla presente Nota Integrativa, per ciascun diritto pluriennale alle prestazioni dei calciatori vengono illustrati i saldi all'inizio dell'esercizio, i movimenti dell'esercizio e i saldi alla fine dell'esercizio (oltre a tutte le informazioni richieste dalla normativa specifica di settore).
 
 --- pág. 22 ---
 
+22
+
 Di seguito viene riportata la tabella che riepiloga gli acquisti e le cessioni avvenute nel corso dell'esercizio con riferimento a ciascuna società calcistica:
 
-|  COGNOME E NOME | Società Provenienza / Destinazione | Acquisti / incrementi | Prezzi di cessione | Rattifica Costo amm.to | Svel. | Minusvalenze | Plusvalenze  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  DOS SANTOS LOURENC EDERSON JOSE | U.S. SALERANTANA 1919 SRL | 22.942.578 | - | - | - | - | -  |
-|  HEILUND RABASO WINTHER | St. Maris Wirtschaftsberlin GmbH | 16.013.389 | - | - | - | - | -  |
-|  SOMY BRANDON BEANOU JUNIOR | UDINESE CALCIO S.P.A. | 9.935.831 | - | - | - | - | -  |
-|  LOOMANN ADEMOLA OLAJADE | RASENBALLSPORT LEIPZIG GMBH | 9.350.406 | - | - | - | - | -  |
-|  PESSINA MATTEO | ASSOCIAZIONE CALCIO MONZA S.P.A. | 1.553.742 | 11.500.000 | 227.874 | - | - | 9.220.485  |
-|  PEDERSEN JONEM MAEHLE | KBC GENK VZW | 1.188.508 | - | - | - | - | -  |
-|  ROMERO CROTIAN | TOTTENHAM | 1.085.000 | 50.000.000 | 2.434.825 | - | - | 35.849.667  |
-|  ZAPPACOSTA DANIDE | CHELSEA FOOTBALL CLUB LTD | 1.000.000 | - | - | - | - | -  |
-|  MALINOWSKY RUSLAN | OLYMPIQUE DE MARSEILLE S&P | 512.821 | 10.256.410 | 1.036.499 | - | - | 5.275.333  |
-|  VLAHOVIC VIANA | FK PARTIZAN | 225.000 | - | - | - | - | -  |
-|  PREILLER REMO | NOTTRIGHAM FOREST | 206.250 | 8.250.000 | 326.295 | - | - | 7.511.200  |
-|  LAMMERS SAM | The Rangers Football Club Limited | - | 4.100.000 | 249.926 | - | - | 466.818  |
-|  DIWIC RELIA | FK PARTIZAN | 135.000 | - | - | - | - | -  |
-|  SUTALI ROZMO | GRADANSKI NOSOMETNI KLUB DINAMO | 101.722 | 4.000.000 | 126.462 | - | - | 1.704.647  |
-|  CAMARA HENRY NABY JUNIOR | AMENS SPORTING CLUB | 74.000 | - | - | - | - | -  |
-|  BEVILACQUA MARCO | FOUVIANO CALCIO SIDARL | 70.000 | - | - | - | - | -  |
-|  HECKO RICARDO | FK Zalesianne Podbrzozova a.s. | 40.000 | 60.000 | - | - | - | 3.819  |
-|  PEREZ DAVID FERNANDO | IF BRONJAMPOKARNA | 30.000 | - | - | - | - | -  |
-|  CARRARO MARCO | - | 25.000 | - | - | 205.998 | - | -  |
-|  VORLICKY LUKAS | FC ZBROJOVKA BRNO, a.s. | 20.000 | - | - | - | - | -  |
-|  GUTH RODINGO | FORTUNA SITTARO BV | 15.219 | 1.140.000 | 45.885 | - | - | 954.846  |
-|  BABRI LORENZO | - | - | - | - | 70.936 | - | -  |
-|  VIDO LUCA | - | - | - | - | 104.067 | - | -  |
-|  EUA SALVATORE | - | - | - | - | 46.940 | - | -  |
-|  KRESIC ANTON | HRVATSKI NOSOMETNI KLUB RUDIAD.D. | - | 150.000 | - | - | - | 117.521  |
-|  FISIC ADI | - | - | - | - | 76.073 | - | -  |
-|  DEL PRATO ENRICO | PARMA CALCIO 1013 S.R.L. a socio unico | - | 2.750.000 | 45.122 | - | - | 2.704.877  |
-|  LOVATO MATTEO | U.S. SALERANTANA 1919 SRL | - | 7.000.000 | 95.382 | - | - | 1.389.725  |
-|  GUOMUNDISON OLIVER STEINAR | REDSTRANIELAG HAURA EHR. | - | - | - | - | 5.172 | -  |
-|  OMAR SHAKUR | - | - | - | - | 23.160 | - | -  |
-|  Diversi | Diverso | 32 | - | - | - | - | -  |
-|  **TOTALE** |  | **65.426.496** | **99.206.410** | **4.588.270** | **528.074** | **5.172** | **65.198.935**  |
+| COGNOME E NOME | Società Provenienza / Destinazione | Acquisti / incrementi | Prezzi di cessione | Rettifica Costo amm.to | Sval. | Minusvalenze | Plusvalenze |
+|---|---|---|---|---|---|---|---|
+| DOS SANTOS LOURENC EDERSON JOSE | U.S. SALERNITANA 1919 SRL | 22.942.578 | - | - | - | - | - |
+| HØJLUND RASMUS WINTHER | SK Sturm Wirtschaftsbetriebe GmbH | 16.913.389 | - | - | - | - | - |
+| SOPPY BRANDON BEANOU JUNIOR | UDINESE CALCIO S.P.A. | 9.935.831 | - | - | - | - | - |
+| LOOKMAN ADEMOLA OLAJADE | RASENBALLSPORT LEIPZIG GMBH | 9.350.406 | - | - | - | - | - |
+| PESSINA MATTEO | ASSOCIAZIONE CALCIO MONZA S.P.A. | 1.553.742 | 11.500.000 | 227.874 | - | - | 9.220.485 |
+| PEDERSEN JOAKIM MAEHLE | KRC GENK VZW | 1.188.508 | - | - | - | - | - |
+| ROMERO CRISTIAN | TOTTENHAM | 1.085.000 | 50.000.000 | 2.434.825 | - | - | 33.849.667 |
+| ZAPPACOSTA DAVIDE | CHELSEA FOOTBALL CLUB LTD | 1.000.000 | - | - | - | - | - |
+| MALINOVSKYI RUSLAN | OLYMPIQUE DE MARSEILLE SASP | 512.821 | 10.256.410 | 1.036.499 | - | - | 5.275.333 |
+| VLAHOVIC VANJA | FK PARTIZAN | 225.000 | - | - | - | - | - |
+| FREULER REMO | NOTTINGHAM FOREST | 206.250 | 8.250.000 | 326.295 | - | - | 7.511.200 |
+| LAMMERS SAM | The Rangers Football Club Limited | - | 4.100.000 | 249.926 | - | - | 466.818 |
+| OBRIC RELJA | FK PARTIZAN | 135.000 | - | - | - | - | - |
+| SUTALO BOSKO | GRADANSKI NOGOMETNI KLUB DINAMO | 101.722 | 4.000.000 | 126.462 | - | - | 1.704.647 |
+| CAMARA HENRY NABY JUNIOR | AMIENS SPORTING CLUB | 74.000 | - | - | - | - | - |
+| BEVILACQUA MARCO | FOLIGNO CALCIO SSDARL | 70.000 | - | - | - | - | - |
+| HECKO RICHARD | FK Zeleziarne Podbrezova a.s. | 40.000 | 60.000 | - | - | - | 3.819 |
+| PEREZ DAVID FERNANDO | IF BROMMAPOJKARNA | 30.000 | - | - | - | - | - |
+| CARRARO MARCO | - | 25.000 | - | - | 205.998 | - | - |
+| VORLICKY LUKAS | FC ZBROJOVKA BRNO, a.s. | 20.000 | - | - | - | - | - |
+| GUTH RODRIGO | FORTUNA SITTARD BV | 15.219 | 1.140.000 | 45.885 | - | - | 954.846 |
+| BABBI LORENZO | - | - | - | - | 70.936 | - | - |
+| VIDO LUCA | - | - | - | - | 104.967 | - | - |
+| ELIA SALVATORE | - | - | - | - | 46.940 | - | - |
+| KRESIC ANTON | HRVATSKI NOGOMETNI KLUB RIJEKAD.D. | - | 150.000 | - | - | - | 117.521 |
+| FISIC ADI | - | - | - | - | 76.073 | - | - |
+| DEL PRATO ENRICO | PARMA CALCIO 1913 S.R.L. a socio unico | - | 2.750.000 | 45.122 | - | - | 2.704.877 |
+| LOVATO MATTEO | U.S. SALERNITANA 1919 SRL | - | 7.000.000 | 95.382 | - | - | 1.389.725 |
+| GUDMUNDSSON OLIVER STEINAR | REKSTRARFELAG HAUKA EHF. | - | - | - | - | 5.172 | - |
+| OMAR SHAKUR | - | - | - | - | 23.160 | - | - |
+| Diversi | Diverse | 32 | - | - | - | - | - |
+| **TOTALE** | | **65.424.496** | **99.206.410** | **4.588.270** | **528.074** | **5.172** | **63.198.935** |
 
 Di seguito viene riportato il dettaglio della composizione del risultato netto delle operazioni connesse alle attività relative ai diritti pluriennali alle prestazioni dei calciatori:
 
-|  (- costi / + ricavi) valori in Euro | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione  |
-| --- | --- | --- | --- |
-|  a) ammortamento dei diritti pluriennali alle prestazioni dei calciatori | (57.102.602) | (28.353.943) | (28.748.659)  |
-|  b) svalutazione dei diritti pluriennali alle prestazioni dei calciatori | (528.074) | (4.299.805) | 3.771.731  |
-|  c) costi per l'acquisizione dei diritti pluriennali alle prestazioni dei calciatori |  |  |   |
-|  c1) compensi ad agenti | (6.878.880) | (3.085.251) | (3.793.629)  |
-|  c2) premi e/o indennizzi | (4.048.658) | (5.399.820) | 1.351.162  |
-|  c3) oneri da trasferimento temporaneo calciatori | (30.000) | (517.491) | 487.491  |
-|  c4) sopravvenienze passive da risoluzione anticipata | (27) | (1.500.020) | 1.499.993  |
-|  d) plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori | 63.198.935 | 44.231.273 | 18.967.662  |
-|  e) minusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori | (5.172) | 0 | (5.172)  |
-|  f) ricavi da cessione dei diritti pluriennali alle prestazioni dei calciatori |  |  |   |
-|  f1) premi e/o indennizzi | 13.238.987 | 8.952.511 | 4.286.476  |
-|  f2) proventi da trasferimento temporaneo dei diritti pluriennali alle prestazioni dei calciatori | 7.101.722 | 6.000.228 | 1.101.494  |
-|  **g) risultato netto delle operazioni connesse alle attività relative ai diritti pluriennali alle prestazioni dei calciatori (somma delle voci da a) ad f))** | **14.946.231** | **16.027.682** | **(1.081.451)**  |
+| (- costi / + ricavi) valori in Euro | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione |
+|---|---|---|---|
+| a) ammortamento dei diritti pluriennali alle prestazioni dei calciatori | (57.102.602) | (28.353.943) | (28.748.659) |
+| b) svalutazione dei diritti pluriennali alle prestazioni dei calciatori | (528.074) | (4.299.805) | 3.771.731 |
+| c) costi per l'acquisizione dei diritti pluriennali alle prestazioni dei calciatori | | | |
+| c1) compensi ad agenti | (6.878.880) | (3.085.251) | (3.793.629) |
+| c2) premi e/o indennizzi | (4.048.658) | (5.399.820) | 1.351.162 |
+| c3) oneri da trasferimento temporaneo calciatori | (30.000) | (517.491) | 487.491 |
+| c4) sopravvenienze passive da risoluzione anticipata | (27) | (1.500.020) | 1.499.993 |
+| d) plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori | 63.198.935 | 44.231.273 | 18.967.662 |
+| e) minusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori | (5.172) | 0 | (5.172) |
+| f) ricavi da cessione dei diritti pluriennali alle prestazioni dei calciatori | | | |
+| f1) premi e/o indennizzi | 13.238.987 | 8.952.511 | 4.286.476 |
+| f2) proventi da trasferimento temporaneo dei diritti pluriennali alle prestazioni dei calciatori | 7.101.722 | 6.000.228 | 1.101.494 |
+| **g) risultato netto delle operazioni connesse alle attività relative ai diritti pluriennnali alle prestazioni dei calciatori (somma delle voci da a) ad f))** | **14.946.231** | **16.027.682** | **(1.081.451)** |
 
 Infine, come richiesto anche dalle nuove raccomandazioni contabili, nella tabella seguente viene riepilogato l'elenco delle principali potenziali passività connesse ad eventuali integrazioni di prezzo nell'ambito dell'acquisizione dei diritti pluriennali alle prestazioni dei calciatori nel caso di particolari risultati sportivi conseguiti del Gruppo e/o dai calciatori:
-
-22
 
 --- pág. 23 ---
 
@@ -994,58 +993,58 @@ La voce, pari ad € 1.580.803, include costi sospesi per € 791.835 (divise de
 
 --- pág. 28 ---
 
-## PATRIMONIO NETTO
+28
 
-|   | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione %  |
-| --- | --- | --- | --- | --- |
-|  Patrimonio Netto | 185.062.331 | 178.866.485 | 6.195.846 | 3,46%  |
-|  **Totale** | **185.062.331** | **178.866.485** | **6.195.846** | **3,46%**  |
+PATRIMONIO NETTO
+
+| | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione % |
+|---|---|---|---|---|
+| Patrimonio Netto | 185.062.331 | 178.866.485 | 6.195.846 | 3,46% |
+| **Totale** | **185.062.331** | **178.866.485** | **6.195.846** | **3,46%** |
 
 Il Patrimonio netto del Gruppo presenta un valore complessivo di € 185.062.331. Nel corso dell'esercizio 2022-2023 il Gruppo ha conseguito un utile pari a € 5.616.433 e tra l'altro una variazione positiva della riserva per operazioni di copertura dei flussi finanziari attesi pari a € 579.407.
 
-|   | Capitale sociale | Riserva legale | Riserva statutaria | Riserva straordinaria | Riserva per Averso da fusione | Riserva per la nuva | Riserva da un ex euro per riduzione Capitale Sociale | Riserva per operazioni di copertura dei flussi finanziari attesi | Utili/(perdite) portati a nuovo | Utili/(perdite) d'esercizio | Totale  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Saldo al 31/12/2021** | **4.855.750** | **978.750** | **13.084.272** | **8.659** | **13.531** | **5** | **51.545** | **421.400** | **110.643.574** | **35.142.575** | **165.218.861**  |
-|  Destinazione del risultato d'esercizio |  |  |  |  |  |  |  |  |  |  |   |
-|  - Attre deistruzioni | 0 | 0 | 3.522.692 | 0 | 0 | 1 | 0 | 0 | 31.619.882 | (35.142.575) | 0  |
-|  - Arrastandamento euro | 0 | 0 | 0 | 0 | 0 | (4) | 0 | 0 | 0 | 0 | (4)  |
-|  Adeguamento Riserva MTM derivato | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.280.918 | 0 | 0 | 2.280.918  |
-|  Risultato dell'esercizio | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11.367.514 | 11.367.514  |
-|  **Saldo al 30/06/2022** | **4.855.750** | **978.750** | **16.586.964** | **8.659** | **13.531** | **(2)** | **51.545** | **2.702.318** | **142.363.456** | **11.367.514** | **178.866.485**  |
-|  Destinazione del risultato d'esercizio |  |  |  |  |  |  |  |  |  |  |   |
-|  - Attre deistruzioni | 0 | 0 | 1.189.970 | 0 | 0 | (1) | 0 | 0 | 10.257.545 | (11.367.514) | 0  |
-|  - Arrastandamento euro | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |
-|  Adeguamento Riserva MTM derivato | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 579.407 | 0 | 0 | 579.413  |
-|  Risultato dell'esercizio | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5.616.433 | 5.616.433  |
-|  **Saldo al 30/06/2023** | **4.855.750** | **978.750** | **17.686.840** | **8.659** | **13.531** | **4** | **51.545** | **2.281.725** | **152.521.081** | **5.616.433** | **185.062.331**  |
+| | Capitale sociale | Riserva legale | Riserve statutarie | Riserva straordinaria | Riserva per Avanzo da fusione | Riserva Arr.to euro | Riserva da arr.to euro per riduzione Capitale Sociale | Riserva per operazioni di copertura dei flussi finanziari attesi | Utili/(perdite) portati a nuovo | Utile/(perdita) d'esercizio | Totale |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Saldo al 31/12/2021** | 4.893.750 | 978.750 | 13.064.272 | 8.659 | 13.531 | 5 | 51.545 | 421.400 | 110.643.574 | 35.142.575 | 165.218.061 |
+| Destinazione del risultato d'esercizio: | | | | | | | | | | | |
+| - Altre destinazioni | 0 | 0 | 3.522.692 | 0 | 0 | 1 | 0 | 0 | 31.619.882 | (35.142.575) | 0 |
+| - Arrotondamento euro | 0 | 0 | 0 | 0 | 0 | (8) | 0 | 0 | 0 | 0 | (8) |
+| Adeguamento Riserva MTM derivato | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2.280.918 | 0 | 0 | 2.280.918 |
+| Risultato dell'esercizio | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11.367.514 | 11.367.514 |
+| **Saldo al 30/06/2022** | 4.893.750 | 978.750 | 16.586.964 | 8.659 | 13.531 | (2) | 51.545 | 2.702.318 | 142.263.456 | 11.367.514 | 178.866.485 |
+| Destinazione del risultato d'esercizio: | | | | | | | | | | | |
+| - Altre destinazioni | 0 | 0 | 1.109.970 | 0 | 0 | (1) | 0 | 0 | 10.257.545 | (11.367.514) | 0 |
+| - Arrotondamento euro | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Adeguamento Riserva MTM derivato | 0 | 0 | 0 | 0 | 0 | 6 | 0 | 579.407 | 0 | 0 | 579.413 |
+| Risultato dell'esercizio | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5.616.433 | 5.616.433 |
+| **Saldo al 30/06/2023** | 4.893.750 | 978.750 | 17.696.934 | 8.659 | 13.531 | 3 | 51.545 | 3.281.725 | 152.521.001 | 5.616.433 | 185.062.331 |
 
 In relazione alla disponibilità delle riserve di Patrimonio Netto si evidenzia il vincolo di non distribuibilità per il valore dei Costi per capitalizzazione del vivaio non ancora ammortizzati, per la riserva ex. art. 10 comma 3 Legge 91/1981, per le perdite portate a nuovo, nonché per la riserva per operazioni di copertura dei flussi finanziari attesi.
 
-## FONDI PER RISCHI E ONERI
+FONDI PER RISCHI E ONERI
 
-|   | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione %  |
-| --- | --- | --- | --- | --- |
-|  Fondi per rischi e oneri | 29.468.755 | 26.844.695 | 2.624.060 | 9,77%  |
-|  **Totale** | **29.468.755** | **26.844.695** | **2.624.060** | **9,77%**  |
+| | Saldo al 30/06/2023 | Saldo al 30/06/2022 | Variazione | Variazione % |
+|---|---|---|---|---|
+| Fondi per rischi e oneri | 29.468.755 | 26.844.695 | 2.624.060 | 9,77% |
+| **Totale** | **29.468.755** | **26.844.695** | **2.624.060** | **9,77%** |
 
 La voce accoglie il fondo imposte differite e altri fondi rischi e oneri come di seguito descritto.
 
-### Fondo per imposte differite
+Fondo per imposte differite
 
 Il fondo per imposte differite passive – che ammonta a € 25.765.554 è determinato con riferimento alle differenze temporanee tra il valore attribuito ad alcune attività e passività secondo criteri civilistici ed il valore attribuito a quelle attività e passività ai fini fiscali. Nel corso dell'esercizio 2022/2023 tale fondo ha avuto la seguente movimentazione con indicazione della voce di riferimento:
 
-|   | Saldo al 30/06/2022 | Incremento | Decremento | Saldo al 30/06/2023  |
-| --- | --- | --- | --- | --- |
-|  Plusvalenze rateizzate | 23.606.131 | 13.309.846 | (12.245.478) | 24.670.500  |
-|  Variazioni da rettifiche consolidato (IAS17) | 61.698 | 0 | (2.979) | 58.719  |
-|  Valutazione MTM derivato | 853.363 | 182.972 | 0 | 1.036.335  |
-|  **Totale** | **24.521.192** | **13.492.818** | **(12.248.457)** | **25.765.554**  |
+| | Saldo al 30/06/2022 | Incremento | Decremento | Saldo al 30/06/2023 |
+|---|---|---|---|---|
+| Plusvalenze rateizzate | 23.606.131 | 13.309.846 | (12.245.478) | 24.670.500 |
+| Variazioni da rettifiche consolidato (IAS17) | 61.698 | 0 | (2.979) | 58.719 |
+| Valutazione MTM derivato | 853.363 | 182.972 | 0 | 1.036.335 |
+| **Totale** | **24.521.192** | **13.492.818** | **(12.248.457)** | **25.765.554** |
 
-### Altri fondi per rischi e oneri
+Altri fondi per rischi e oneri
 
 Al 30/06/2023 i fondi per rischi e oneri risultano pari a € 3.703.201 ed hanno registrato la seguente movimentazione nel corso dell'esercizio 2022/2023:
-
-28
 
 --- pág. 29 ---
 
@@ -1805,326 +1804,428 @@ Ing. Antonio Percassi
 
 --- pág. 47 ---
 
-# Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
-
-|  Dati diritti pluriennali alle prestazioni dei calciatori |   | Contratto |   | Provenienza |   | Destinazione |   | Vatori al 01/07/2022  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Calciatore COGNOME e NONE | Data di nascita | Data linsia prima contratto | Data Scadenza ultima contratto | Data Acquiemi | Società | Data Cassione | Società | Costo Storico | F.do annvort.  |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6  |
-|  BIOJA ZIRENSE | 03/01/1997 | 01/02/2022 | 30/06/2026 | 14/01/2022 | U.S. SASSUOLO CALCIO S.P.L. |  |  | 23.674.682 | 2.233.472  |
-|  BURGIO RICCARDO FRANCISCO | 05/02/2001 | 01/07/2019 | 30/06/2022 | 01/07/2019 | F.C. INTERNAZIONALE MILANO SPA | 01/07/2023 |  | 1.300.000 | 1.300.000  |
-|  CARDIAS BRYAN ALFREDO | 20/03/1997 | 01/08/2019 | 30/06/2022 | 01/08/2019 |  | 01/07/2022 |  | 2.500.000 | 2.500.000  |
-|  CARMA ROCHI MARCO | 01/07/2000 | 01/02/2017 | 30/06/2026 | 01/02/2017 | JUVENTUS C.C. SPA |  |  | 1.370.000 | 1.352.749  |
-|  CARRARO MARCO | 09/01/1998 | 01/07/2018 | 30/06/2024 | 01/07/2018 | F.C. INTERNAZIONALE MILANO SPA |  |  | 3.065.000 | 4.641.896  |
-|  COLE MILESTARRA ELANDZI | 14/09/2003 | 01/02/2022 | 30/06/2026 | 28/01/2022 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  CITTADINI GIORGIO | 18/04/2002 | 01/07/2016 | 30/06/2026 | 01/07/2016 | Atalanta-Bergamasco Calcio |  |  | 5.001 | 2.334  |
-|  COLLE OBIFFIN | 01/02/2000 | 01/01/2017 | 30/06/2025 | 01/01/2018 | Atalanta-Bergamasco Calcio |  |  | 33.001 | 17.787  |
-|  DE RIDA JACOBS | 27/10/2000 | 01/10/2019 | 30/06/2025 | 01/10/2019 | Atalanta-Bergamasco Calcio |  |  | 25.000 | 12.075  |
-|  DE ROZA MARTEN | 20/03/1991 | 01/08/2017 | 30/06/2024 | 01/08/2017 | MEDILESSROSOJA FOOTBALL & ATHEATIC |  |  | 16.756.474 | 13.152.692  |
-|  DERWAL HEDDI | 05/03/1998 | 04/08/2015 | 30/06/2026 | 17/06/2022 | JUVENTUS F.C. SPA |  |  | 21.853.339 | 1.456  |
-|  DIPIRITI BIRATI | 28/02/1993 | 01/01/2016 | 30/06/2025 | 01/01/2016 |  |  |  | 677.500 | 372.176  |
-|  DOG SANTOS JUANINE EDERSON IC | 07/07/1999 | 01/07/2018 | 30/06/2027 | 08/07/2022 | U.S. SALERENTANA 1819 SRL |  |  |  |   |
-|  DOMILIO BORD | 10/04/1992 | 01/01/2016 | 30/06/2024 | 01/01/2016 | FC LUZIANI-IRABISELINKEZ A.G. | 11/08/2022 | NOTTINGHAM-TOXEST FOOTBALL CLUB LIPETI | 2.112.000 | 887.277  |
-|  DELUINI FEBRUIGI | 18/03/1995 | 01/07/2018 | 30/06/2024 | 01/06/2018 | ASTON VILLA F.C. LIMITED |  |  | 4.828.905 | 3.797.376  |
-|  DA TIBISIO HANS | 09/01/1994 | 01/01/2017 | 30/06/2024 | 01/01/2017 | FC GROMINZIN S.P. |  |  | 1.140.700 | 958.470  |
-|  HERLANO RAFAEL NENTHER | 04/02/2003 | 01/09/2022 | 30/06/2026 | 26/08/2022 | SK Sturm Michelobattenteo GmbH |  |  |  |   |
-|  ELICE JOSE | 29/01/1988 | 01/07/2017 | 30/06/2023 | 01/07/2017 | AGT FERRITIMA S.P.A. | 31/08/2023 |  | 6.500.000 | 6.500.000  |
-|  ELIZABETH BERG THOR | 28/02/1998 | 01/09/2021 | 30/06/2027 | 30/08/2022 | A.C.N.V. |  |  | 19.000.000 | 3.532.374  |
-|  EDVALENIO VATOR | 14/02/1996 | 01/02/2015 | 30/06/2025 | 31/01/2015 | FC SANANTAR SONETSA |  |  | 1.000.000 | 208.213  |
-|  LEMMERS SAM | 30/04/1997 | 01/10/2020 | 30/06/2025 | 24/09/2020 | RSV N.V. | 14/06/2023 | The Rangers Football Club Limited | 8.000.000 | 3.463.230  |
-|  LOUISIANA ADEMICA OULIADE | 20/10/1997 | 01/08/2022 | 30/06/2026 | 04/08/2022 | RAZERNALLSPORT LEIPZIG GMBH |  |  |  |   |
-|  LOVATH MATTEO | 14/02/2000 | 01/08/2021 | 30/06/2025 | 31/07/2021 | MEIJAN VIBENNA FOOTBALL CLUB SPA | 06/07/2022 | U.S. SALERENTANA 1819 SRL | 7.200.000 | 1.685.106  |
-|  LOVATO MARTELO | 04/02/1993 | 01/07/2019 | 30/06/2024 | 16/07/2019 | RIC GENE VOR | 08/01/2021 | OLYMPIQUE DE MARSELLE SASP | 15.114.796 | 10.539.214  |
-|  PAITIBILO FEBSISCO | 14/07/1995 | 01/02/2018 | 30/06/2023 | 01/02/2018 | JUVENTUS F.C. SPA | 31/08/2022 |  | 5.000.000 | 5.000.000  |
-|  PEKANCHIA ALIANT | 17/10/1995 | 01/09/2019 | 30/06/2024 | 07/09/2020 | ZSC FC LONDMO TO |  |  | 15.000.000 | 3.123.912  |
-|  PERREL PROTU LUIS FERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Sevilla Pulber Club S.A.D. |  |  | 21.243.250 | 15.932.437  |
-|  PIEDZO JUAN AGUSTIN | 06/05/1994 | 01/07/2021 | 30/06/2025 | 02/07/2021 | UEINESE CALCIO S.P.A. |  |  | 20.634.700 | 5.134.752  |
-|  PIOLLO MERRI-CALEB | 13/07/2001 | 01/07/2019 | 30/06/2026 | 01/07/2019 | VICENZA CALCIO S.P.A. |  |  | 1 | 1  |
-|  PALOMINO JOSE LUIS | 05/01/1990 | 01/07/2017 | 30/06/2024 | 01/07/2017 | PFC LUDOCORPETS 15HD CAD |  |  | 4.711.474 | 4.236.179  |
-|  PRIALLE MARIO | 09/02/1990 | 01/07/2019 | 30/06/2025 | 22/06/2020 | CHELSEA FOOTBALL CLUB LTD |  |  | 14.537.200 | 5.814.843  |
-|  PEIZEREN JOAON NADILE | 26/05/1997 | 01/01/2015 | 30/06/2025 | 21/12/2020 | RIC GENE VOR |  |  | 13.625.258 | 4.136.144  |
-|  PEISINA MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 01/07/2017 | ASSOCIAZIONE CALCIO MILAN SPA | 13/06/2023 | ASSOCIAZIONE CALCIO MONZA S.P.A. | 3.628.000 | 2.886.695  |
-|  PECIELI ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | 01/01/2017 |  |  |  | 30.001 | 10.000  |
-|  ROMBIO CRISTIAN | 27/04/1998 | 09/09/2020 | 30/06/2026 | 06/08/2021 | JUVENTUS F.C. SPA | 25/08/2022 | TOTTENHAM HOTSPUR FOOTBALL & ATHEATTA | 16.200.000 | 3.029.239  |
-|  ROCEL FRANCISCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | 01/01/2012 |  |  |  | 159.691 | 157.843  |
-|  RHODES MATTEO | 11/07/2002 | 01/07/2019 | 30/06/2025 | 01/07/2019 |  |  |  | 3.001 | 1.880  |
-|  SULLINI GIORGIO | 12/12/2003 | 01/07/2017 | 30/06/2028 | 01/07/2017 |  |  |  | 10.001 | 1.039  |
-|  SDIRY BRANDON BENKOU JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2026 | 19/08/2022 | UEINESE CALCIO S.P.A. |  |  |  |   |
-|  SPORTELLO MARCO | 16/05/1992 | 01/01/2012 | 30/06/2022 | 01/01/2012 |  |  |  | 383.994 | 361.677  |
-|  SUTALO BORD | 01/01/2000 | 01/02/2019 | 30/06/2025 | 29/01/2020 | NOGOMETRE KLUB EDIZIN S.D.D. | 01/07/2022 | GRADANSKI NOGOMETRE KLUB DINAMO | 4.150.000 | 2.882.839  |
-|  STULIO MARIEL | 31/10/1990 | 01/06/2019 | 30/06/2024 | 01/06/2019 |  |  |  | 3.970.000 | 2.849.530  |
-|  TURPERELLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2022 | 01/07/2018 | A.S. ROWA SPA | 17/08/2022 | F.C. CROTONE S.R.L. | 5.040.000 | 5.040.000  |
-|  VAHNER MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | 01/07/2019 | ASSOCIAZIONE SPORTIVA CITTADELLA |  |  | 2.500.000 | 1.459.565  |
-|  VEEO LUCIA | 03/02/1997 | 01/07/2017 | 30/06/2024 | 01/07/2017 | ASSOCIAZIONE CALCIO MILAN SPA |  |  | 1.410.000 | 1.208.065  |
-|  ZAPATA ZAVAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | 14/01/2020 | UNIONE CALCIO SAPIROSIA SPA |  |  | 12.000.000 | 7.029.923  |
-|  ZAPATA DA DAVIDE | 11/06/1992 | 01/09/2021 | 30/06/2025 | 24/08/2021 | CHELSEA FOOTBALL CLUB LTD |  |  | 6.000.000 | 1.304.248  |
-|  ZORTIA NAJOR | 19/06/1999 | 01/07/2019 | 30/06/2027 | 01/07/2019 | Atalanta-Bergamasco Calcio |  |  | 17.001 | 7.591  |
-|  **TOTALE PRIMA SQUADRA** |  |  |  |  |  |  |  | **285.391.088** | **133.932.126**  |
-|  **ABVI calciatori prefessionisti**  |   |   |   |   |   |   |   |   |   |
-|  ALAIN ALBERTO | 21/01/1999 | 01/01/2013 | 30/06/2022 | 01/01/2013 | Atalanta-Bergamasco Calcio | 01/07/2022 |  | 1 | 1  |
-|  AVOGADRI LORENZO | 21/08/2001 | 01/09/2019 | 30/06/2024 | 01/09/2019 | Atalanta-Bergamasco Calcio |  |  | 10.001 | 5.890  |
-|  BARR LORENZO | 21/05/2000 | 01/02/2018 | 30/06/2024 | 01/02/2018 | A.C. CESENA SPA |  |  | 890.000 | 659.129  |
-|  BENZONZI REZEGCO | 12/01/2001 | 01/07/2015 | 30/06/2024 | 01/07/2015 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  BETTI GABRIELI | 20/03/2002 | 01/07/2017 | 30/06/2026 | 01/07/2017 | CALCIO PINDIVA S.P.A. |  |  | 80.000 | 66.667  |
-|  BRION LORENZO | 28/01/2001 | 01/02/2019 | 30/06/2024 | 01/02/2019 | Atalanta-Bergamasco Calcio |  |  | 10.001 | 7.630  |
-|  CAMBAGNI NOGOLF | 28/12/2000 | 01/01/2019 | 30/06/2026 | 01/01/2019 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  CAVONE CHRISTIAN | 28/04/1999 | 01/09/2016 | 30/06/2024 | 01/09/2016 | Atalanta-Bergamasco Calcio |  |  | 68.001 | 56.625  |
-|  CAVALLI TOPPIANO | 30/04/2000 | 01/08/2015 | 30/06/2024 | 20/07/2021 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  CONTINUVO ALESSANDRO | 25/01/2001 | 01/01/2017 | 30/06/2026 | 01/01/2017 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  DEL LUNGO TOPPIANO | 21/11/2003 | 01/08/2021 | 30/06/2025 | 16/07/2021 | ASSOCIAZIONE GIETTAMITISTICA GRASSINI |  |  | 55.000 | 26.304  |
-|  DEL PRATO ENNICO | 10/11/1999 | 01/07/2017 | 30/06/2025 | 01/07/2017 | Atalanta-Bergamasco Calcio | 01/07/2022 | PARMA CALCIO 1915 S.R.L. a sodo unico | 1 | 1  |
-|  DOSTELLA DAVIDE | 28/07/2000 | 01/07/2022 | 30/06/2025 | 10/07/2021 | ACCADEMIA INTERNAZIONALE CALCIO |  |  | 9.000 | 2.250  |
-|  ELIA SALVATORE | 30/06/1999 | 01/11/2019 | 30/06/2025 | 01/11/2019 | Atalanta-Bergamasco Calcio |  |  | 115.001 | 44.591  |
-|  FRANCIS GERASTIANO | 20/02/2001 | 01/01/2019 | 30/06/2024 | 01/01/2019 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  FEEL ALB | 22/12/2003 | 01/07/2013 | 30/06/2024 | 06/07/2021 | GSK B.Villabac Arbideமது |  |  | 228.219 | 76.073  |
-|  GEJRI LUDOVICO | 02/05/2001 | 01/05/2017 | 30/06/2025 | 01/05/2017 |  |  |  | 50.001 | 39.894  |
-|  GHIGLANO DAVIDE ANGELO | 16/06/2001 | 01/07/2019 | 30/06/2025 | 01/07/2019 | Atalanta-Bergamasco Calcio |  |  | 10.001 | 6.001  |
-|  GHISLIERI NOCOLLY | 25/05/2001 | 01/07/2016 | 30/06/2022 | 01/07/2016 | Non-Definiti | 31/01/2023 |  | 1 | 1  |
-|  GRAS ALESSIO | 01/04/2000 | 01/06/2016 | 30/06/2022 | 01/06/2016 | GENOA CROSET AND FOOTBALL CLUB | 01/07/2022 |  | 2.500.000 | 2.500.000  |
-|  GRUS RICHARD | 16/11/2000 | 01/03/2017 | 30/06/2025 | 01/03/2017 | CONTINA POST WILL CLUB | 20/07/2022 | PORTUNA SITTARD BV | 875.100 | 943.941  |
-|  GIYALBAA NANU DPAANUEL | 21/09/2001 | 01/07/2015 | 30/06/2024 | 01/07/2015 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  HIGERMEDDI DAVID | 24/06/2000 | 01/02/2018 | 30/06/2025 | 01/02/2018 | IN-TERLES a.s. |  |  | 73.500 | 60.240  |
-|  ITALINO NASCIA NASCIA JONATHAN | 18/01/2001 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  JONSON BIRIER JAMIN | 14/06/2005 | 01/07/2015 | 30/06/2024 | 05/07/2021 | BRIZOARLIK KOPAVOSUA |  |  | 55.000 | 18.333  |
-|  JOLLA ERICKI | 07/07/2000 | 01/07/2014 | 30/06/2024 | 01/07/2014 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  KREGE ANTON | 26/01/1996 | 01/07/2015 | 30/06/2024 | 01/07/2015 | NOGOMETRE KLUB LOKOMOTIVA 24GREB | 01/07/2022 | HRVATSKI NOGOMETRE KLUB RUDKAD.D. | 203.000 | 175.521  |
-|  LATTIS LEVA SANDIR | 02/01/1996 | 01/01/2017 | 30/06/2024 | 01/01/2017 |  |  |  | 67.001 | 53.558  |
-|  ZARETTA ZARETA ANTONIO | 10/08/1996 | 01/01/2017 | 30/06/2025 | 01/01/2015 | CALCIO LECCO 2015 S.R.L. | 30/08/2022 | HRVATSKI NOGOMETRE KLUB RUDKAD.D. | 44.825 | 44.825  |
-|  PAULIZER SINDRE | 01/01/2000 | 01/07/2018 | 30/06/2024 | 01/07/2018 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  PAULANO ALESSANDRO | 22/02/1999 | 01/11/2019 | 30/06/2025 | 01/11/2019 | Atalanta-Bergamasco Calcio |  |  | 100.001 | 100.627  |
-|  PAZZINI STEFANO | 06/12/1998 | 01/07/2018 | 30/06/2023 | 01/07/2018 | Atalanta-Bergamasco Calcio |  |  | 19.085 | 17.598  |
-|  PAZZINI STEFANO | 17/09/1998 | 01/07/2021 | 30/06/2025 | 01/07/2021 | ROZBALL CLUB SUSTIPROL-DMBH SPA |  |  | 200.000 | 50.000  |
-|  PAZAR RINDOLIV | 20/06/2001 | 01/07/2015 | 30/06/2022 | 01/07/2015 | Atalanta-Bergamasco Calcio | 01/07/2022 |  | 1 | 1  |
-|  PEIRA CHRISTIAN | 31/12/1997 | 01/07/2017 | 30/06/2025 | 01/07/2017 |  |  |  | 35.001 | 30.245  |
-|  PEULYS KHALIDH | 12/04/2000 | 01/01/2019 | 30/06/2023 | 01/01/2019 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  PEZMINI MATTEO | 16/01/2000 | 01/07/2015 | 30/06/2022 | 01/07/2015 | Atalanta-Bergamasco Calcio | 01/07/2022 |  | 1 | 1  |
-|  PEU LORENZO | 24/01/2000 | 01/07/2017 | 30/06/2024 | 01/07/2017 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  SPLUS MATTEO | 20/03/1999 | 01/07/2018 | 30/06/2022 | 01/07/2018 |  |  |  | 50.000 | 50.000  |
-|  SOLCIA DANIELE | 07/03/2001 | 01/09/2020 | 30/06/2024 | 01/09/2020 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  SAVONOC VANJA | 23/03/2004 | 01/01/2023 | 30/06/2026 | 15/08/2022 | IN-PARTIZIA |  |  | 1 | 1  |
-|  ZAPARTANO EYOR | 18/08/1998 | 01/07/2018 | 30/06/2022 | 01/07/2018 | Atalanta-Bergamasco Calcio | 01/07/2022 |  | 44.001 | 44.001  |
-|  ZORENE OMEZO | 23/08/1999 | 01/07/2015 | 30/06/2022 | 01/07/2015 |  |  |  | 5.000 | 5.000  |
-|  **TOTALE ALTRI CALCATORI PROFESSIONISTI** |  |  |  |  |  |  |  | **5.065.192** | **4.173.644**  |
-|  **Vivaldi**  |   |   |   |   |   |   |   |   |   |
-|  AMRETROG DANIEL NICHOLAS | 24/03/2005 | 01/01/2022 | 30/06/2025 | 23/08/2021 | SURIS R.V. |  |  | 50.000 | 10.000  |
-|  BEVLAICQUA MARCO | 09/11/2004 | 01/08/2022 | 30/06/2026 | 03/08/2022 | POLIZMO CALCIO SEDARL |  |  | 1 | 1  |
-|  BAYLA SAPIROSIO | 08/03/2005 | 01/07/2021 | 30/06/2025 | 29/06/2021 | UB CORNELLA SAN |  |  | 60.000 | 20.000  |
-|  CANARA HENRY NAJY JUNIOR | 06/05/2006 | 01/09/2022 | 30/06/2026 | 25/07/2022 | APRENS SPORTSAC CLUB |  |  | 1 | 1  |
-|  CHIMERA MARIANI | 12/12/2003 | 01/08/2023 | 30/06/2025 | 31/07/2023 | A.S.D. SAYMANIESE |  |  | 100.000 | 47.826  |
-|  DAZAR NATEVE | 05/02/2002 | 01/10/2019 | 30/06/2024 | 02/10/2019 | NOGOMETRE KLUB DORQUE |  |  | 207.500 | 131.874  |
-|  EDZANIE DANIEL | 28/03/2002 | 01/07/2017 | 30/06/2025 | 01/07/2017 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  GLORHARDSON OLIVIA STEFANA | 17/05/2004 | 01/02/2021 | 30/06/2023 | 28/01/2021 | RIESTRAHTEJAC-VALMA ENT | 31/01/2023 | AMATTSTYRINURILAGO VALUB | 30.000 | 17.586  |
-|  HEOGI RICHARD | 01/10/2003 | 01/01/2020 | 30/06/2024 | 03/01/2020 | SK SLOVAN BRATOLAYA PUTBAL A.S. | 26/01/2023 | PE Zdsubone Podbrozova a.s. | 90.000 | 56.400  |
-|  FRANNOLI LEONARDO | 13/10/2002 | 01/07/2019 | 30/06/2022 | 01/07/2019 |  |  |  | 20.001 | 20.001  |
-|  FRIDERO ANNAR | 03/03/2002 | 10/09/2020 | 30/06/2024 | 15/09/2020 | Atalanta-Bergamasco Calcio | 31/08/2022 |  | 25.000 | 25.000  |
-|  GIBIC DELIA | 11/04/2006 | 01/02/2022 | 30/06/2026 | 20/02/2022 | IN-PARTIZIA |  |  | 1 | 1  |
-|  GRAR SHANDR | 31/03/2004 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Atalanta-Bergamasco Calcio |  |  | 70.500 | 34.040  |
-|  PARADA SPHENE | 02/06/2002 | 01/07/2016 | 30/06/2025 | 01/07/2016 | Atalanta-Bergamasco Calcio |  |  | 1 | 1  |
-|  PARCEL POTTI MICHAEL | 31/01/2005 | 01/01/2022 | 30/06/2025 | 03/01/2022 | PAOK SECORCIN |  |  | 110.000 | 22.000  |
-|  PAVILLA MARTIN | 17/10/2005 | 01/01/2022 | 30/06/2024 | 07/01/2022 | Atalanta-Bergamasco Calcio |  |  | 100.086 | 20.197  |
-|  PRICE DAVID FERNANDO | 03/07/2004 | 30/06/2020 | 30/06/2025 | 23/05/2021 | IP BROWNSCHEMINA |  |  | 335.000 | 37.237  |
-|  ROUZHOF ALVANDO | 09/06/2004 | 01/10/2020 | 30/06/2024 | 13/09/2020 | DROSKA-ROGON SPORTTEJAS |  |  | 1 | 1  |
-|  ROSA ALESSIO | 14/05/2003 | 01/01/2017 | 30/06/2025 | 01/01/2017 | Atalanta-Bergamasco Calcio |  |  | 150.001 | 37.500  |
-|  STONE ALASSANE | 09/06/2002 | 01/07/2018 | 30/06/2025 | 01/07/2018 |  |  |  | 20.833 | 10.094  |
-|  VIVIANE ANDREA | 16/05/2002 | 01/07/2018 | 30/06/2023 | 01/07/2018 | Atalanta-Bergamasco Calcio |  |  | 15.001 | 9.546  |
-|  VOOLCUT LUISA | 18/01/2002 | 01/01/2018 | 30/06/2025 | 01/01/2018 | FC ZEBUDZVAK BRNO, a.s. |  |  | 107.000 | 83.709  |
-|  ALTRI |  |  |  |  |  |  |  | 1.000 | 1.000  |
-|  **TOTALE VIVADI** |  |  |  |  |  |  |  | **1.134.618** | **607.875**  |
-|   |  |  |  |  |  |  |  | **1.134.618** | **607.875**  |
-|  **TOTALE DIRITTI PLURIENNALE ALLE PRESTAZIONE DEI CALCATORI** |  |  |  |  |  |  |  | **289.788.896** | **139.373.647**  |
-
 47
+
+**Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori**
+
+Dati diritti pluriennali alle prestazioni dei calciatori — Contratto — Provenienza — Destinazione — Valori al 01/07/2022
+
+Colonne numeradas en el original: 1, 2, 3, 4, 5, 6, 7 (5 = Costo Storico, 6 = F.do ammort., 7 = Netto)
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Data Acquisto | Provenienza Società | Data Cessione | Destinazione Società | Costo Storico | F.do ammort. | Netto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| BOGA JEREMIE | 03/01/1997 | 01/02/2022 | 30/06/2026 | 24/01/2022 | U.S. SASSUOLO CALCIO S.R.L. | | | 23.674.802 | 2.233.472 | 21.441.330 |
+| BURGIO RICCARDO FRANCESCO | 05/05/2001 | 01/07/2019 | 30/06/2022 | 01/07/2019 | F.C. INTERNAZIONALE MILANO SPA | 01/07/2022 | | 1.500.000 | 1.500.000 | - |
+| CABEZAS BRYAN ALFREDO | 20/03/1997 | 01/08/2016 | 30/06/2022 | 01/08/2016 | | 01/07/2022 | | 2.500.000 | 2.500.000 | - |
+| CARNESECCHI MARCO | 01/07/2000 | 01/02/2017 | 30/06/2026 | 01/02/2017 | TRAPANI CALCIO S.R.L. | | | 1.370.000 | 1.052.749 | 317.251 |
+| CARRARO MARCO | 09/01/1998 | 01/07/2018 | 30/06/2024 | 01/07/2018 | F.C. INTERNAZIONALE MILANO SPA | | | 5.065.000 | 4.641.806 | 423.194 |
+| CISSE MOUSTAPHA ELHADJI | 14/09/2003 | 01/02/2022 | 30/06/2026 | 28/01/2022 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| CITTADINI GIORGIO | 18/04/2002 | 01/07/2016 | 30/06/2026 | 01/07/2016 | Atalanta Bergamasca Calcio | | | 5.001 | 2.334 | 2.667 |
+| COLLEY EBRIMA | 01/02/2000 | 01/01/2018 | 30/06/2025 | 01/01/2018 | Atalanta Bergamasca Calcio | | | 33.001 | 17.787 | 15.214 |
+| DA RIVA JACOPO | 27/10/2000 | 01/10/2019 | 30/06/2025 | 01/10/2019 | Atalanta Bergamasca Calcio | | | 25.001 | 12.926 | 12.075 |
+| DE ROON MARTEN | 29/03/1991 | 01/08/2017 | 30/06/2024 | 01/08/2017 | MIDDLESBROUGH FOOTBALL & ATHLETIC | | | 16.756.474 | 13.152.692 | 3.603.782 |
+| DEMIRAL MERIH | 05/03/1998 | 06/08/2021 | 30/06/2026 | 17/06/2022 | JUVENTUS F.C. SPA | | | 21.053.339 | - | 21.053.339 |
+| DJIMSITI BERAT | 19/02/1993 | 01/01/2016 | 30/06/2025 | 01/01/2016 | | | | 677.500 | 572.176 | 105.324 |
+| DOS SANTOS LOURENC EDERSON JOSE | 07/07/1999 | 01/07/2022 | 30/06/2027 | 06/07/2022 | U.S. SALERNITANA 1919 SRL | | | - | - | - |
+| FREULER REMO | 15/04/1992 | 01/01/2016 | 30/06/2024 | 01/01/2016 | FC LUZERN-INNERSCHWEIZ AG | 11/08/2022 | NOTTINGHAM FOREST FOOTBALL CLUB LIMITED | 2.112.500 | 1.897.277 | 215.223 |
+| GOLLINI PIERLUIGI | 18/03/1995 | 01/07/2018 | 30/06/2024 | 01/06/2018 | ASTON VILLA F.C. LIMITED | | | 4.828.905 | 3.797.376 | 1.031.529 |
+| HATEBOER HANS | 09/01/1994 | 01/01/2017 | 30/06/2024 | 01/01/2017 | FC GRONINGEN B.V. | | | 1.140.789 | 958.470 | 182.319 |
+| HØJLUND RASMUS WINTHER | 04/02/2003 | 01/09/2022 | 30/06/2026 | 26/08/2022 | SK Sturm Wirtschaftsbetriebe GmbH | | | - | - | - |
+| ILICIC JOSIP | 29/01/1988 | 01/07/2017 | 30/06/2023 | 01/07/2017 | ACF FIORENTINA S.P.A. | 31/08/2022 | | 6.500.000 | 6.500.000 | - |
+| KOOPMEINERS TEUN | 28/02/1998 | 01/09/2021 | 30/06/2027 | 30/08/2021 | AZ N.V. | | | 14.500.000 | 3.152.174 | 11.347.826 |
+| KOVALENKO VIKTOR | 14/02/1996 | 01/02/2021 | 30/06/2025 | 31/01/2021 | FC SHAKHTAR DONETSK | | | 1.000.000 | 308.313 | 691.687 |
+| LAMMERS SAM | 30/04/1997 | 01/10/2020 | 30/06/2025 | 24/09/2020 | PSV N.V. | 14/06/2023 | The Rangers Football Club Limited | 8.050.000 | 3.465.330 | 4.584.670 |
+| LOOKMAN ADEMOLA OLAJADE | 20/10/1997 | 01/08/2022 | 30/06/2026 | 04/08/2022 | RASENBALLSPORT LEIPZIG GMBH | | | - | - | - |
+| LOVATO MATTEO | 14/02/2000 | 01/08/2021 | 30/06/2025 | 31/07/2021 | HELLAS VERONA FOOTBALL CLUB SPA | 06/07/2022 | U.S. SALERNITANA 1919 SRL | 7.200.000 | 1.685.106 | 5.514.894 |
+| MALINOVSKYI RUSLAN | 04/05/1993 | 01/07/2019 | 30/06/2024 | 16/07/2019 | KRC GENK VZW | 08/01/2023 | OLYMPIQUE DE MARSEILLE SASP | 15.114.796 | 10.539.119 | 4.575.677 |
+| MATTIELLO FEDERICO | 14/07/1995 | 01/02/2018 | 30/06/2023 | 01/02/2018 | JUVENTUS F.C. SPA | 31/08/2022 | | 5.000.000 | 5.000.000 | - |
+| MIRANCHUK ALEXEY | 17/10/1995 | 01/09/2020 | 30/06/2024 | 07/09/2020 | JSC FC LOKOMOTIV | | | 15.000.000 | 7.173.912 | 7.826.088 |
+| MURIEL FRUTO LUIS FERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Sevilla Futbol Club S.A.D. | | | 21.243.250 | 15.932.437 | 5.310.813 |
+| MUSSO JUAN AGUSTIN | 06/05/1994 | 01/07/2021 | 30/06/2025 | 02/07/2021 | UDINESE CALCIO S.P.A. | | | 20.634.700 | 5.154.762 | 15.479.938 |
+| OKOLI MEMEH CALEB | 13/07/2001 | 01/07/2019 | 30/06/2026 | 01/07/2019 | VICENZA CALCIO S.P.A. | | | 2.501 | 1.226 | 1.275 |
+| PALOMINO JOSE LUIS | 05/01/1990 | 01/07/2017 | 30/06/2024 | 01/07/2017 | PFC LUDOGORETS 1945 EAD | | | 4.711.474 | 4.236.179 | 475.295 |
+| PASALIC MARIO | 09/02/1995 | 01/07/2019 | 30/06/2025 | 22/06/2020 | CHELSEA FOOTBALL CLUB LTD | | | 14.537.108 | 5.814.843 | 8.722.264 |
+| PEDERSEN JOAKIM MAEHLE | 20/05/1997 | 01/01/2021 | 30/06/2025 | 21/12/2020 | KRC GENK VZW | | | 13.625.258 | 4.336.144 | 9.289.114 |
+| PESSINA MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 01/07/2017 | ASSOCIAZIONE CALCIO MILAN SPA | 13/06/2023 | ASSOCIAZIONE CALCIO MONZA S.P.A. | 3.628.000 | 2.086.695 | 1.541.305 |
+| PICCOLI ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | 01/01/2017 | | | | 50.001 | 10.000 | 40.001 |
+| ROMERO CRISTIAN | 27/04/1998 | 09/09/2020 | 30/06/2026 | 06/08/2021 | JUVENTUS F.C. SPA | 23/08/2022 | TOTTENHAM HOTSPUR FOOTBALL & ATHLETIC CO | 16.200.000 | 3.020.339 | 13.179.661 |
+| ROSSI FRANCESCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | 01/01/2012 | | | | 159.691 | 157.843 | 1.848 |
+| RUGGERI MATTEO | 11/07/2002 | 01/07/2016 | 30/06/2027 | 01/07/2016 | | | | 3.001 | 1.080 | 1.921 |
+| SCALVINI GIORGIO | 11/12/2003 | 01/07/2017 | 30/06/2028 | 01/07/2017 | | | | 18.001 | 1.059 | 16.942 |
+| SOPPY BRANDON BEANOU JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2026 | 19/08/2022 | UDINESE CALCIO S.P.A. | | | - | - | - |
+| SPORTIELLO MARCO | 10/05/1992 | 01/01/2012 | 30/06/2023 | 01/01/2012 | | | | 383.994 | 361.677 | 22.317 |
+| SUTALO BOSKO | 01/01/2000 | 01/02/2020 | 30/06/2025 | 29/01/2020 | NOGOMETNI KLUB OSIJEK S.D.D. | 01/07/2022 | GRADANSKI NOGOMETNI KLUB DINAMO | 4.150.000 | 2.082.830 | 2.067.170 |
+| TOLOI RAFAEL | 10/10/1990 | 01/08/2015 | 30/06/2024 | 01/08/2015 | | | | 3.970.000 | 3.680.530 | 289.470 |
+| TUMMINELLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2023 | 01/07/2018 | A.S. ROMA SPA | 17/08/2022 | F.C. CROTONE S.R.L. | 5.040.000 | 5.040.000 | - |
+| VARNIER MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | 01/07/2019 | ASSOCIAZIONE SPORTIVA CITTADELLA | | | 2.500.000 | 1.469.565 | 1.030.435 |
+| VIDO LUCA | 03/02/1997 | 01/07/2017 | 30/06/2024 | 01/07/2017 | ASSOCIAZIONE CALCIO MILAN SPA | | | 1.410.000 | 1.200.065 | 209.935 |
+| ZAPATA DUVAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | 16/01/2020 | UNIONE CALCIO SAMPDORIA SPA | | | 12.000.000 | 7.529.933 | 4.470.067 |
+| ZAPPACOSTA DAVIDE | 11/06/1992 | 01/09/2021 | 30/06/2025 | 24/08/2021 | CHELSEA FOOTBALL CLUB LTD | | | 6.000.000 | 1.304.348 | 4.695.652 |
+| ZORTEA NADIR | 19/06/1999 | 01/07/2019 | 30/06/2027 | 01/07/2019 | Atalanta Bergamasca Calcio | | | 17.001 | 7.551 | 9.450 |
+| **TOTALE PRIMA SQUADRA** | | | | | | | | **283.391.088** | **133.592.128** | **149.798.960** |
+
+**Altri calciatori professionisti**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Data Acquisto | Provenienza Società | Data Cessione | Destinazione Società | Costo Storico | F.do ammort. | Netto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ALARI ALBERTO | 21/01/1999 | 01/01/2013 | 30/06/2022 | 01/01/2013 | Atalanta Bergamasca Calcio | 01/07/2022 | | 1 | - | 1 |
+| AVOGADRI LORENZO | 21/08/2001 | 01/09/2019 | 30/06/2024 | 01/09/2019 | Atalanta Bergamasca Calcio | | | 10.001 | 5.890 | 4.111 |
+| BABBI LORENZO | 21/05/2000 | 01/02/2018 | 30/06/2024 | 01/02/2018 | A.C. CESENA SPA | | | 800.000 | 658.128 | 141.872 |
+| BERGONZI FEDERICO | 12/01/2001 | 01/07/2015 | 30/06/2024 | 01/07/2015 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| BERTO GABRIELE | 20/03/2003 | 01/07/2017 | 30/06/2026 | 01/07/2017 | CALCIO PADOVA S.P.A. | | | 80.000 | 66.667 | 13.333 |
+| BROGNI GIORGIO | 28/01/2001 | 01/02/2019 | 30/06/2024 | 01/02/2019 | Atalanta Bergamasca Calcio | | | 10.001 | 7.630 | 2.371 |
+| CAMBIAGHI NICOLO' | 28/12/2000 | 01/01/2019 | 30/06/2026 | 01/01/2019 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| CAPONE CHRISTIAN | 28/04/1999 | 01/09/2016 | 30/06/2024 | 01/09/2016 | Atalanta Bergamasca Calcio | | | 68.001 | 50.625 | 17.376 |
+| CAVALLI TOMMASO | 10/04/2000 | 01/08/2021 | 30/06/2024 | 20/07/2021 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| CORTINOVIS ALESSANDRO | 25/01/2001 | 01/01/2017 | 30/06/2026 | 01/01/2017 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| DEL LUNGO TOMMASO | 21/11/2003 | 01/08/2021 | 30/06/2025 | 16/07/2021 | ASSOCIAZIONE DILETTANTISTICA GRASSINA | | | 55.000 | 26.304 | 28.696 |
+| DEL PRATO ENRICO | 10/11/1999 | 01/07/2017 | 30/06/2025 | 01/07/2017 | Atalanta Bergamasca Calcio | 01/07/2022 | PARMA CALCIO 1913 S.R.L. a socio unico | 1 | - | 1 |
+| DONZELLI DAVIDE | 28/07/2005 | 01/07/2021 | 30/06/2025 | 15/07/2021 | ACCADEMIA INTERNAZIONALE CALCIO | | | 9.000 | 2.250 | 6.750 |
+| ELIA SALVATORE | 30/06/1999 | 01/11/2019 | 30/06/2025 | 01/11/2019 | Atalanta Bergamasca Calcio | | | 115.001 | 44.591 | 70.410 |
+| FINARDI SEBASTIANO | 20/02/2001 | 01/01/2019 | 30/06/2024 | 01/01/2019 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| FISIC ADI | 22/12/2003 | 01/07/2021 | 30/06/2024 | 06/07/2021 | ÖSK Elitfotboll Aktiebolag | | | 228.219 | 76.073 | 152.146 |
+| GELMI LUDOVICO | 02/05/2001 | 01/05/2017 | 30/06/2025 | 01/05/2017 | | | | 50.001 | 39.694 | 10.307 |
+| GHISLANDI DAVIDE ANGELO | 16/06/2001 | 01/07/2019 | 30/06/2025 | 01/07/2019 | Atalanta Bergamasca Calcio | | | 10.001 | 6.001 | 4.000 |
+| GHISLENI NICCOLO' | 25/05/2001 | 01/07/2016 | 30/06/2023 | 01/07/2016 | Non Definito | 31/01/2023 | | 1 | - | 1 |
+| GIRGI ALESSIO | 01/04/2000 | 01/09/2016 | 30/06/2022 | 01/09/2016 | GENOA CRICKET AND FOOTBALL CLUB | 01/07/2022 | | 2.000.000 | 2.000.000 | - |
+| GUTH RODRIGO | 10/11/2000 | 01/10/2017 | 30/06/2025 | 01/10/2017 | CORITIBA FOOT BALL CLUB | 20/07/2022 | FORTUNA SITTARD BV | 671.536 | 543.941 | 127.595 |
+| GYABUAA MANU EMMANUEL | 21/09/2001 | 01/07/2015 | 30/06/2024 | 01/07/2015 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| HEIDENREICH DAVID | 24/06/2000 | 01/10/2016 | 30/06/2025 | 01/10/2016 | FK TEPLICE a.s. | | | 73.500 | 60.240 | 13.260 |
+| ITALENG NGOCK NGOCK JONATHAN | 18/01/2001 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| JONSSON BIRKIR JAKOB | 14/06/2005 | 01/07/2021 | 30/06/2024 | 05/07/2021 | BREIDABLIK KOPAVOGUR | | | 55.000 | 18.333 | 36.667 |
+| KRAJA ERDIS | 07/07/2000 | 01/07/2014 | 30/06/2024 | 01/07/2014 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| KRESIC ANTON | 29/01/1996 | 01/07/2015 | 30/06/2024 | 01/07/2015 | NOGOMETNI KLUB LOKOMOTIVA ZAGREB | 01/07/2022 | HRVATSKI NOGOMETNI KLUB RIJEKAD.D. | 203.000 | 170.521 | 32.479 |
+| LATTE LATH JUNIOR | 02/01/1999 | 01/01/2017 | 30/06/2024 | 01/01/2017 | | | | 67.001 | 53.058 | 13.943 |
+| LUNETTA GABRIEL ANTONIO | 10/08/1996 | 01/01/2013 | 30/06/2023 | 01/01/2013 | CALCIO LECCO 1912 S.R.L. | 30/08/2022 | HRVATSKI NOGOMETNI KLUB RIJEKAD.D. | 44.825 | 44.825 | - |
+| MAGLIERI SIMONE | 01/01/2000 | 01/07/2018 | 30/06/2024 | 01/07/2018 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| MALLAMO ALESSANDRO | 22/03/1999 | 01/11/2019 | 30/06/2025 | 01/11/2019 | Atalanta Bergamasca Calcio | | | 160.001 | 100.927 | 59.074 |
+| MAZZINI STEFANO | 06/12/1998 | 01/07/2018 | 30/06/2023 | 01/07/2018 | Atalanta Bergamasca Calcio | | | 19.085 | 17.598 | 1.487 |
+| MAZZOCCHI SIMONE | 17/08/1998 | 01/07/2021 | 30/06/2025 | 01/07/2021 | FUSSBALL CLUB SUEDTIROL GMBH SRL | | | 200.000 | 50.000 | 150.000 |
+| MILANI NICOLO' | 20/06/2001 | 01/07/2015 | 30/06/2022 | 01/07/2015 | Atalanta Bergamasca Calcio | 01/07/2022 | | 1 | - | 1 |
+| MORA CHRISTIAN | 31/12/1997 | 01/07/2017 | 30/06/2025 | 01/07/2017 | | | | 35.001 | 30.345 | 4.656 |
+| NDIAYE KHADIM | 12/04/2000 | 01/01/2019 | 30/06/2023 | 01/01/2019 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| PEDRINI MATTEO | 16/01/2000 | 01/07/2015 | 30/06/2022 | 01/07/2015 | Atalanta Bergamasca Calcio | 01/07/2022 | | 1 | - | 1 |
+| PELI LORENZO | 24/01/2000 | 01/07/2017 | 30/06/2024 | 01/07/2017 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| SALVI MATTEO | 20/03/1999 | 01/07/2018 | 30/06/2022 | 01/07/2018 | | 01/07/2022 | | 50.000 | 50.000 | - |
+| SOLCIA DANIELE | 07/03/2001 | 01/09/2020 | 30/06/2024 | 01/09/2020 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| VLAHOVIC VANJA | 23/03/2004 | 31/01/2023 | 30/06/2026 | 15/06/2023 | FK PARTIZAN | | | - | - | - |
+| ZAMBATARO EYOB | 18/08/1998 | 01/07/2018 | 30/06/2022 | 01/07/2018 | Atalanta Bergamasca Calcio | 01/07/2022 | | 44.001 | 44.001 | - |
+| ZANONI ENRICO | 23/08/1999 | 01/07/2015 | 30/06/2022 | 01/07/2015 | | 01/07/2022 | | 5.000 | 5.000 | - |
+| **TOTALE ALTRI CALCIATORI PROFESSIONISTI** | | | | | | | | **5.063.192** | **4.172.644** | **890.548** |
+
+**Vivaio**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Data Acquisto | Provenienza Società | Data Cessione | Destinazione Società | Costo Storico | F.do ammort. | Netto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ARMSTRONG DANIEL NICHOLAS | 24/03/2005 | 01/01/2022 | 30/06/2025 | 23/08/2021 | ILVES R.Y. | | | 50.000 | 10.000 | 40.000 |
+| BEVILACQUA MARCO | 09/11/2004 | 01/08/2022 | 30/06/2026 | 03/08/2022 | FOLIGNO CALCIO SSDARL | | | - | - | - |
+| BUYLA SAM HUGO | 08/03/2005 | 01/07/2021 | 30/06/2025 | 29/06/2021 | UE CORNELLA SAD | | | 60.000 | 20.000 | 40.000 |
+| CAMARA HENRY NABY JUNIOR | 06/05/2006 | 01/09/2022 | 30/06/2026 | 25/07/2022 | AMIENS SPORTING CLUB | | | - | - | - |
+| CHIWISA MANNAH | 12/12/2003 | 01/08/2021 | 30/06/2025 | 31/07/2021 | A.S.D. SAMMAURESE | | | 100.000 | 47.826 | 52.174 |
+| DAJCAR MATEVZ | 05/02/2002 | 01/10/2019 | 30/06/2024 | 02/10/2019 | NOGOMETNI KLUB DOMZALE | | | 207.500 | 131.874 | 75.626 |
+| GIOVANE SAMUEL | 28/03/2003 | 01/07/2017 | 30/06/2025 | 01/07/2017 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| GUDMUNDSSON OLIVER STEINAR | 17/05/2004 | 01/02/2021 | 30/06/2023 | 28/01/2021 | REKSTRARFELAG HAUKA EHF. | 31/01/2023 | KNATTSPYRNUFELAGIO VALUR | 30.000 | 17.586 | 12.414 |
+| HECKO RICHARD | 01/10/2003 | 01/01/2020 | 30/06/2024 | 03/01/2020 | SK SLOVAN BRATISLAVA FUTBAL A.S. | 26/01/2023 | FK Zeleziarne Podbrezova a.s. | 90.000 | 56.400 | 33.600 |
+| MANFREDI LEONARDO | 13/10/2002 | 01/07/2018 | 30/06/2022 | 01/07/2018 | | 01/07/2022 | | 20.001 | 20.001 | - |
+| MEDIERO ANWAR | 03/03/2002 | 15/09/2020 | 30/06/2024 | 15/09/2020 | Atalanta Bergamasca Calcio | 31/08/2022 | | 25.000 | 25.000 | - |
+| OBRIC RELJA | 11/04/2006 | 01/03/2023 | 30/06/2026 | 20/02/2023 | FK PARTIZAN | | | - | - | - |
+| OMAR SHAKUR | 31/03/2004 | 01/07/2019 | 30/06/2024 | 01/07/2019 | Atalanta Bergamasca Calcio | | | 70.360 | 24.040 | 46.320 |
+| PANADA SIMONE | 02/06/2002 | 01/07/2016 | 30/06/2025 | 01/07/2016 | Atalanta Bergamasca Calcio | | | 1 | - | 1 |
+| PARDEL PIOTR MICHAL | 31/01/2005 | 01/01/2022 | 30/06/2025 | 03/01/2022 | FASE SZCZECIN | | | 110.000 | 22.000 | 88.000 |
+| PARILLA MARTIN | 17/10/2005 | 01/01/2022 | 30/06/2024 | 07/01/2022 | Atalanta Bergamasca Calcio | | | 100.986 | 20.197 | 80.789 |
+| PEREZ DAVID FERNANDO | 10/07/2004 | 30/09/2020 | 30/06/2025 | 25/05/2021 | IF BROMMAPOJKARNA | | | 155.000 | 57.217 | 97.783 |
+| ROALDSOY ALWANDE | 09/06/2004 | 01/10/2020 | 30/06/2024 | 23/09/2020 | DROBAK-FROGN IDRETTSLAG | | | 12.000 | 6.884 | 5.116 |
+| ROSA ALESSIO | 14/05/2003 | 01/01/2017 | 30/06/2025 | 01/01/2017 | Atalanta Bergamasca Calcio | | | 150.001 | 37.500 | 112.501 |
+| SIDIBE ALASSANE | 09/06/2002 | 01/07/2018 | 30/06/2025 | 01/07/2018 | | | | 30.810 | 18.094 | 12.716 |
+| VIVIANI ANDREA | 16/05/2002 | 01/07/2016 | 30/06/2023 | 01/07/2016 | Atalanta Bergamasca Calcio | | | 15.001 | 9.546 | 5.455 |
+| VORLICKY LUKAS | 18/01/2002 | 01/01/2018 | 30/06/2025 | 01/01/2018 | FC ZBROJOVKA BRNO, a.s. | | | 107.809 | 83.709 | 24.100 |
+| ALTRI | | | | | | | | 145 | - | 145 |
+| **TOTALE VIVAIO** | | | | | | | | **1.334.616** | **607.875** | **726.741** |
+| **TOTALE DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI** | | | | | | | | **289.788.896** | **138.372.647** | **151.416.248** |
 
 --- pág. 48 ---
 
-# Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
-
-|  Dati diritti pluriennali alle prestazioni dei calciatori |   | Contratto |   | Variazione valori di periodo |   |   |   | Effetti economici di periodo  |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Calciatore COGNOME e NOME | Data di nascita | Data inizio prima contratto | Data studenza ultima contratto | Acquisti / incrementi | Netto Contabile Ceduto | Prezzo Cessione / Decrementi | Rottifica Costo Annuità su prezzo di cessione | Annuoriamanti | Seprava, Passive | Sostatozioni Inaussistence dell'attivo | Minuavolenze | Planovienze  |
-|   |  |  |  | 8 | 9 | 10 | 10a | 11 | 12 | 13 | 14 | 15 (10-10a-9)  |
-|  ROGA, RINOME | 03/01/1997 | 01/02/2022 | 30/06/2026 | - | - | - | - | 3.360.333 | - | - | - | -  |
-|  BURGIO RICCARDO FRANCESCO | 05/05/2001 | 01/07/2019 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  CARIDINI BRYAN ALFREDO | 20/03/1997 | 01/08/2016 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  CARRESECCHI MARCO | 01/07/2000 | 01/02/2017 | 30/06/2020 | - | - | - | - | 79.513 | - | - | - | -  |
-|  CARRARO MARCO | 09/01/1998 | 01/07/2018 | 30/06/2024 | 25.000 | - | - | - | 242.197 | - | 201.998 | - | -  |
-|  CISSE MOUSTAINA GUIAGLI | 14/09/2003 | 01/02/2022 | 30/06/2026 | - | - | - | - | - | - | - | - | -  |
-|  CITTADINI GIORGIO | 18/04/2002 | 01/07/2016 | 30/06/2026 | - | - | - | - | 709 | - | - | - | -  |
-|  COLLEY ERHINA | 01/02/2000 | 01/01/2018 | 30/06/2025 | - | - | - | - | 5.875 | - | - | - | -  |
-|  DA ROJA JACOFIO | 27/10/2000 | 01/10/2019 | 30/06/2025 | - | - | - | - | 4.620 | - | - | - | -  |
-|  DE ROJIN MARTEN | 29/03/1991 | 01/08/2017 | 30/06/2024 | - | - | - | - | 1.801.891 | - | - | - | -  |
-|  DEMIANI, MERIDI | 05/03/1998 | 06/08/2021 | 30/06/2026 | - | - | - | - | 5.265.335 | - | - | - | -  |
-|  D.DPISITO BERAT | 19/02/1993 | 01/01/2014 | 30/06/2025 | - | - | - | - | 35.108 | - | - | - | -  |
-|  DEIS MARTES LOURDES EDDESON | 07/07/1999 | 01/07/2023 | 30/06/2027 | 22.042.578 | - | - | - | 4.588.517 | - | - | - | -  |
-|  FRELLER HENIL | 15/04/1992 | 01/01/2018 | 30/06/2024 | 206.250 | 412.505 | 8.250.000 | 326.295 | 8.968 | - | - | - | 7.511.200  |
-|  GISLINI PERLUDEZ | 18/03/1995 | 01/07/2018 | 30/06/2024 | - | - | - | - | 515.764 | - | - | - | -  |
-|  HATRIERIE HANS | 09/01/1994 | 01/01/2017 | 30/06/2024 | - | - | - | - | 91.139 | - | - | - | -  |
-|  HIBILINO RAVINUS WENTHER | 04/02/2003 | 01/08/2022 | 30/06/2026 | 16.913.389 | - | - | - | 3.676.823 | - | - | - | -  |
-|  ILLOC, JOSIP | 29/01/1988 | 01/07/2017 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  IKOPPREIMERI TEUN | 28/02/1998 | 01/09/2021 | 30/06/2027 | - | - | - | - | 3.038.719 | - | - | - | -  |
-|  KOVALENKO VIKTOR | 14/02/1996 | 01/02/2021 | 30/06/2025 | - | - | - | - | 230.362 | - | - | - | -  |
-|  LAPMERZI SARA | 30/04/1997 | 01/10/2020 | 30/06/2025 | - | 3.183.798 | 4.100.000 | 249.926 | 1.400.875 | - | - | - | 466.818  |
-|  LODHINIA ADIPICOLA CLAJADE | 20/10/1997 | 01/08/2022 | 30/06/2026 | 9.350.406 | - | - | - | 2.162.391 | - | - | - | -  |
-|  LOVATOI MATTEO | 14/02/2000 | 01/08/2022 | 30/06/2025 | - | 5.314.894 | 7.000.000 | 93.382 | - | - | - | - | 1.389.725  |
-|  MAURICARO GIULIAN | 04/05/1993 | 01/07/2019 | 30/06/2024 | 512.821 | 3.944.578 | 10.256.410 | 1.036.498 | 1.143.919 | - | - | - | 5.275.333  |
-|  MATTEOLO FEDERICO | 14/07/1995 | 01/02/2014 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  MEHANCACA ALENZI | 17/10/1995 | 01/09/2020 | 30/06/2024 | - | - | - | - | 3.913.044 | - | - | - | -  |
-|  MURELL PHOTO LUIS PERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | - | - | - | - | 2.655.406 | - | - | - | -  |
-|  MUSICI JUAN AGUSTEN | 06/05/1994 | 01/07/2021 | 30/06/2025 | - | - | - | - | 5.159.979 | - | - | - | -  |
-|  OASILI PERINI CALBE | 13/07/2001 | 01/07/2019 | 30/06/2026 | - | - | - | - | - | - | - | - | -  |
-|  PALOMINO JOSE LUIS | 05/01/1990 | 01/07/2017 | 30/06/2024 | - | - | - | - | 237.648 | - | - | - | -  |
-|  PAISALIS MARIO | 09/02/1995 | 01/07/2019 | 30/06/2025 | - | - | - | - | 2.907.422 | - | - | - | -  |
-|  PEIZERSON, SHAUN MADHZ | 20/05/1997 | 01/01/2021 | 30/06/2023 | 1.198.508 | - | - | - | 3.204.009 | - | - | - | -  |
-|  PESIGNA MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 1.553.742 | 2.051.641 | 11.500.000 | 227.874 | 1.645.406 | - | - | - | 9.220.485  |
-|  PACOLO ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | - | - | - | - | 10.000 | - | - | - | -  |
-|  ROMERO CRISTIAN | 27/04/1998 | 08/09/2020 | 30/06/2026 | 1.085.000 | 13.715.508 | 50.000.000 | 2.434.825 | 546.153 | - | - | - | 33.849.667  |
-|  ROSIU FRANCISCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | - | - | - | - | 324 | - | - | - | -  |
-|  RASIGINI GIORGIO | 11/07/2002 | 01/07/2019 | 30/06/2027 | - | - | - | - | 324 | - | - | - | -  |
-|  SCALVINI GIORGIO | 12/12/2003 | 01/07/2017 | 30/06/2028 | - | - | - | - | 3.227 | - | - | - | -  |
-|  SCOPPI BRANDON BRANDU JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2026 | 9.935.831 | - | - | - | 2.109.962 | - | - | - | -  |
-|  SPORTELLO MARCO | 10/05/1992 | 01/01/2013 | 30/06/2023 | - | - | - | - | 22.317 | - | - | - | -  |
-|  SOTALO BIONO | 01/01/2000 | 01/02/2020 | 30/06/2025 | 101.722 | 2.168.891 | 4.000.000 | 126.462 | - | - | - | - | 1.704.647  |
-|  TILCA RANOS | 10/10/1992 | 01/08/2019 | 30/06/2024 | - | - | - | - | 144.735 | - | - | - | -  |
-|  TUMMISELLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  VAIGNER MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | - | - | - | - | 510.317 | - | - | - | -  |
-|  VEGO LUZA | 03/02/1997 | 01/07/2017 | 30/06/2024 | - | - | - | - | 104.967 | - | 104.967 | - | -  |
-|  ZAPATA DUVAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | - | - | - | - | 2.29.033 | - | - | - | -  |
-|  ZAPACOSTA DAVIDE | 11/06/1992 | 01/09/2021 | 30/06/2022 | 1.000.000 | - | - | - | - | - | - | - | -  |
-|  ZURTZA NADIR | 19/06/1999 | 01/07/2019 | 30/06/2027 | - | - | - | - | 2.936 | - | - | - | -  |
-|  **TOTALE REGNA SQUADRA** |  |  |  | **64.815.245** | **30.991.817** | **95.106.410** | **4.497.203** | **56.278.988** |  | **310.965** |  | **59.417.874**  |
-|  **Altri calciatori prelassionati**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  ALARD ALBERTO | 21/01/1999 | 01/01/2013 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | -  |
-|  AVOGADRI LORENZO | 21/08/2001 | 01/09/2019 | 30/06/2024 | - | - | - | - | 2.055 | - | - | - | -  |
-|  BARBI LORENZO | 21/05/2000 | 01/02/2018 | 30/06/2024 | - | - | - | - | 70.936 | - | 70.936 | - | -  |
-|  BERGONZI FEDERICO | 12/01/2001 | 01/07/2015 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  BERTO GABRIEL | 20/03/2003 | 01/07/2017 | 30/06/2026 | - | - | - | - | 13.333 | - | - | - | -  |
-|  BROOKI GIORGIO | 28/01/2001 | 01/02/2019 | 30/06/2024 | - | - | - | - | 1.185 | - | - | - | -  |
-|  CARIBAGHI NICOLLO | 28/12/2000 | 01/01/2019 | 30/06/2026 | - | - | - | - | - | - | - | - | -  |
-|  CAYONE CHRISTIAN | 28/04/1999 | 01/09/2016 | 30/06/2024 | - | - | - | - | 8.000 | - | - | - | -  |
-|  CASVALO TOMMASO | 10/04/2000 | 01/08/2021 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  CONTINUVO ALESSANDRO | 25/01/2001 | 01/01/2017 | 30/06/2026 | - | - | - | - | - | - | - | - | -  |
-|  DEL LUNGO TOMMASO | 21/11/2003 | 01/08/2021 | 30/06/2026 | - | - | - | - | 28.696 | - | - | - | -  |
-|  DEL PIAITO ENRICO | 10/11/1999 | 01/07/2017 | 30/06/2025 | - | 1 | 2.750.000 | 45.122 | - | - | - | - | 2.704.877  |
-|  DONZELLI DAVIDE | 28/07/2005 | 01/07/2022 | 30/06/2026 | - | - | - | - | 2.250 | - | - | - | -  |
-|  ELIA SALVATORE | 30/06/1999 | 01/11/2019 | 30/06/2025 | - | - | - | - | 23.470 | - | 46.940 | - | -  |
-|  FINANDI SIBBESTANO | 20/02/2001 | 01/01/2019 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  FISEL ALI | 22/12/2003 | 01/07/2021 | 30/06/2024 | - | - | - | - | 76.073 | - | 76.073 | - | -  |
-|  GELMI LUDOVICO | 02/05/2001 | 01/05/2017 | 30/06/2025 | - | - | - | - | 3.534 | - | - | - | -  |
-|  GHISLAVOS DAVIDE ANGELO | 16/06/2001 | 01/07/2019 | 30/06/2025 | - | - | - | - | 1.333 | - | - | - | -  |
-|  GHISLEINI NICOLLO | 25/05/2001 | 01/07/2016 | 30/06/2023 | - | 1 | - | - | - | 1 | - | - | -  |
-|  GISOLI ALESSIO | 01/04/2000 | 01/09/2016 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  GETTI RICHESIO | 10/11/2000 | 01/10/2017 | 30/06/2025 | 15.219 | 139.270 | 1.140.000 | 45.885 | 3.944 | - | - | - | 954.846  |
-|  GYAIBUKA PAHILI DMINI-NIEL | 21/09/2001 | 01/07/2015 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  HEDENBERGDI DAVID | 24/06/2000 | 01/10/2016 | 30/06/2025 | - | - | - | - | 4.420 | - | - | - | -  |
-|  ITALIANO NASCK NASCK SINATHIAN | 18/01/2001 | 01/07/2019 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  JOHNSON BENON JARDI | 14/06/2005 | 01/07/2023 | 30/06/2024 | - | - | - | - | 18.333 | - | - | - | -  |
-|  KRAJA STEOS | 07/07/2000 | 01/07/2019 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  KRESIC ANTON | 29/01/1996 | 01/07/2015 | 30/06/2024 | - | 32.479 | 150.000 | - | - | - | - | - | 117.521  |
-|  LATTELLATA JUNIOR | 02/01/1995 | 01/01/2017 | 30/06/2024 | - | - | - | - | 6.972 | - | - | - | -  |
-|  LORETTA GABRIEL ANTONIO | 18/08/1996 | 01/01/2013 | 30/06/2023 | - | - | - | - | - | - | - | - | -  |
-|  MAGLIZIO SIMONE | 01/01/2000 | 01/07/2018 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  MALLANO ALESSANDRO | 22/03/1999 | 01/11/2019 | 30/06/2025 | - | - | - | - | 20.254 | - | - | - | -  |
-|  MAZZINI STEFANO | 06/12/1998 | 01/07/2018 | 30/06/2022 | - | - | - | - | 1.487 | - | - | - | -  |
-|  MAZZOCCHI SIMONE | 17/08/1998 | 01/07/2019 | 30/06/2025 | - | - | - | - | 59.000 | - | - | - | -  |
-|  MIAMI NICOLLO | 20/06/2001 | 01/07/2013 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | -  |
-|  MORA CHRISTIAN | 31/12/1997 | 01/07/2017 | 30/06/2025 | - | - | - | - | 1.552 | - | - | - | -  |
-|  NOSHIE KHADIN | 12/09/2000 | 01/01/2019 | 30/06/2023 | - | - | - | - | - | - | - | - | -  |
-|  PEONINI MATTEO | 16/01/2000 | 01/07/2015 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | -  |
-|  PELI LORENZO | 24/01/2000 | 01/07/2017 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  PAUXI MATTEO | 20/03/1999 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  SOLCIA DANIELE | 07/03/2001 | 01/09/2023 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  SUANONE VANJA | 23/03/2004 | 31/01/2023 | 30/06/2026 | 225.000 | - | - | - | 6.081 | - | - | - | -  |
-|  ZAMBATARO EFOR | 18/08/1998 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  ZANONE ENRICO | 23/08/1999 | 01/07/2015 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  **TOTALE ALTRI CALCATORI PROFESSIONISTI** |  |  |  | **269.219** | **175.754** | **4.040.000** | **91.007** | **364.196** | **4** | **193.950** |  | **3.777.243**  |
-|  **Vivaro**  |   |   |   |   |   |   |   |   |   |   |   |   |
-|  ASMETRIZINI DANIEL NICHOLAS | 24/03/2005 | 01/01/2022 | 30/06/2025 | - | - | - | - | 15.000 | - | - | - | -  |
-|  BEVILACQUA MARCO | 09/11/2004 | 01/08/2022 | 30/06/2026 | 70.000 | - | - | - | 15.310 | - | - | - | -  |
-|  BUTLA SAN RUGO | 08/03/2005 | 01/07/2021 | 30/06/2025 | - | - | - | - | 14.945 | - | - | - | -  |
-|  CAPARA HENRY NABY JUNIOR | 06/05/2006 | 01/09/2022 | 30/06/2026 | 74.000 | - | - | - | 21.059 | - | - | - | -  |
-|  CERINSA WARMAH | 12/12/2003 | 01/08/2023 | 30/06/2025 | - | - | - | - | 37.267 | - | - | - | -  |
-|  DALCAR MATTOZ | 05/02/2002 | 01/10/2019 | 30/06/2024 | - | - | - | - | 37.813 | - | - | - | -  |
-|  GOYANN SAMUEL | 28/03/2003 | 01/07/2017 | 30/06/2025 | - | - | - | - | - | - | - | - | -  |
-|  GIZOMARASSEN OLIVER STEINAR | 17/05/2004 | 01/02/2021 | 30/06/2023 | - | 5.172 | - | - | 7.241 | - | - | 5.172 | -  |
-|  HECKO RICHARD | 01/10/2003 | 01/01/2020 | 30/06/2024 | 40.000 | 56.181 | 60.000 | - | 17.419 | - | - | - | 3.819  |
-|  HAUPREDI LEONARDO | 13/10/2002 | 01/07/2019 | 30/06/2022 | - | - | - | - | - | - | - | - | -  |
-|  MEDIEKO ANNAR | 03/03/2002 | 15/09/2020 | 30/06/2024 | - | - | - | - | - | - | - | - | -  |
-|  CHIEF KELA | 11/04/2006 | 01/02/2023 | 30/06/2026 | 135.000 | - | - | - | 13.500 | - | - | - | -  |
-|  OMAR SHAGUR | 31/03/2004 | 01/07/2019 | 30/06/2024 | - | - | - | - | 22.160 | - | 23.160 | - | -  |
-|  PANASA SIMONE | 02/06/2002 | 01/07/2016 | 30/06/2025 | - | - | - | - | - | - | - | - | -  |
-|  PARDEL FOSTE MICHAEL | 31/01/2005 | 01/01/2022 | 30/06/2025 | - | - | - | - | 32.000 | - | - | - | -  |
-|  PARILLA MARTEN | 17/10/2005 | 01/01/2022 | 30/06/2024 | - | - | - | - | 40.300 | - | - | - | -  |
-|  PERLE DAVID FERNANDO | 10/07/2004 | 30/06/2020 | 30/06/2025 | 30.000 | - | - | - | 45.739 | - | - | - | -  |
-|  ROALOSON AUBANDE | 09/06/2004 | 01/10/2020 | 30/06/2025 | - | - | - | - | 4.709 | - | - | - | -  |
-|  ROSA ALESSIO | 14/05/2003 | 01/01/2017 | 30/06/2025 | - | - | - | - | 37.500 | - | - | - | -  |
-|  SCHIM ALASSANE | 09/06/2002 | 01/07/2018 | 30/06/2025 | - | - | - | - | 4.480 | - | - | - | -  |
-|  VIENNE ANDREA | 16/05/2002 | 01/07/2014 | 30/06/2023 | - | - | - | - | 5.455 | - | - | - | -  |
-|  VORLOCK LOMAS | 18/01/2002 | 01/01/2019 | 30/06/2025 | 20.000 | - | - | - | 10.891 | - | - | - | -  |
-|  **ALTRI** |  |  |  | **32** | **23** |  |  |  | **25** |  |  |   |
-|  **TOTALE VIVATO** |  |  |  | **369.032** | **61.376** | **60.000** |  | **379.540** | **23** | **23.160** | **5.172** | **3.819**  |
-|  **TOTALE DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCATORI** |  |  |  | **65.424.496** | **31.224.947** | **99.206.410** | **4.588.270** | **57.102.603** | **27** | **528.074** | **5.172** | **63.198.935**  |
-
 48
+
+**Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori**
+
+Dati diritti pluriennali alle prestazioni dei calciatori | Contratto | Variazione valori di periodo | Effetti economici di periodo
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Acquisti / incrementi (8) | Netto Contabile Ceduto (9) | Prezzo Cessione / Decrementi (10) | Rettifica Costo Amm.to su prezzo di cessione (10a) | Ammortamenti (11) | Sopravv. Passive (12) | Svalutazioni Insussistenza dell'attivo (13) | Minusvalenze (14) | Plusvalenze 15 (10-10a-9) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| BOGA JEREMIE | 03/01/1997 | 01/02/2022 | 30/06/2026 | - | - | - | - | 5.360.333 | - | - | - | - |
+| BURGIO RICCARDO FRANCESCO | 05/05/2001 | 01/07/2019 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| CABEZAS BRYAN ALFREDO | 20/03/1997 | 01/08/2016 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| CARNESECCHI MARCO | 01/07/2000 | 01/02/2017 | 30/06/2026 | - | - | - | - | 79.313 | - | - | - | - |
+| CARRARO MARCO | 09/01/1998 | 01/07/2018 | 30/06/2024 | 25.000 | - | - | - | 242.197 | - | 205.998 | - | - |
+| CISSE MOUSTAPHA ELHADJI | 14/09/2003 | 01/02/2022 | 30/06/2026 | - | - | - | - | - | - | - | - | - |
+| CITTADINI GIORGIO | 18/04/2002 | 01/07/2016 | 30/06/2026 | - | - | - | - | 709 | - | - | - | - |
+| COLLEY EBRIMA | 01/02/2000 | 01/01/2018 | 30/06/2025 | - | - | - | - | 5.071 | - | - | - | - |
+| DA RIVA JACOPO | 27/10/2000 | 01/10/2019 | 30/06/2025 | - | - | - | - | 4.025 | - | - | - | - |
+| DE ROON MARTEN | 29/03/1991 | 01/08/2017 | 30/06/2024 | - | - | - | - | 1.801.891 | - | - | - | - |
+| DEMIRAL MERIH | 05/03/1998 | 06/08/2021 | 30/06/2026 | - | - | - | - | 5.263.335 | - | - | - | - |
+| DJIMSITI BERAT | 19/02/1993 | 01/01/2016 | 30/06/2025 | - | - | - | - | 35.108 | - | - | - | - |
+| DOS SANTOS LOURENC EDERSON JOSE | 07/07/1999 | 01/07/2022 | 30/06/2027 | 22.942.578 | - | - | - | 4.588.517 | - | - | - | - |
+| FREULER REMO | 15/04/1992 | 01/01/2016 | 30/06/2024 | 206.250 | 412.505 | 8.250.000 | 326.295 | 8.968 | - | - | - | 7.511.200 |
+| GOLLINI PIERLUIGI | 18/03/1995 | 01/07/2018 | 30/06/2024 | - | - | - | - | 515.764 | - | - | - | - |
+| HATEBOER HANS | 09/01/1994 | 01/01/2017 | 30/06/2024 | - | - | - | - | 91.159 | - | - | - | - |
+| HØJLUND RASMUS WINTHER | 04/02/2003 | 01/09/2022 | 30/06/2026 | 16.913.389 | - | - | - | 3.676.823 | - | - | - | - |
+| ILICIC JOSIP | 29/01/1988 | 01/07/2017 | 30/06/2023 | - | - | - | - | - | - | - | - | - |
+| KOOPMEINERS TEUN | 28/02/1998 | 01/09/2021 | 30/06/2027 | - | - | - | - | 3.038.719 | - | - | - | - |
+| KOVALENKO VIKTOR | 14/02/1996 | 01/02/2021 | 30/06/2025 | - | - | - | - | 230.562 | - | - | - | - |
+| LAMMERS SAM | 30/04/1997 | 01/10/2020 | 30/06/2025 | - | 3.183.799 | 4.100.000 | 249.926 | 1.400.871 | - | - | - | 466.818 |
+| LOOKMAN ADEMOLA OLAJADE | 20/10/1997 | 01/08/2022 | 30/06/2026 | 9.350.406 | - | - | - | 2.162.391 | - | - | - | - |
+| LOVATO MATTEO | 14/02/2000 | 01/08/2021 | 30/06/2025 | - | 5.514.894 | 7.000.000 | 95.382 | - | - | - | - | 1.389.725 |
+| MALINOVSKYI RUSLAN | 04/05/1993 | 01/07/2019 | 30/06/2024 | 512.821 | 3.944.578 | 10.256.410 | 1.036.499 | 1.143.919 | - | - | - | 5.275.333 |
+| MATTIELLO FEDERICO | 14/07/1995 | 01/02/2018 | 30/06/2023 | - | - | - | - | - | - | - | - | - |
+| MIRANCHUK ALEXEY | 17/10/1995 | 01/09/2020 | 30/06/2024 | - | - | - | - | 3.913.044 | - | - | - | - |
+| MURIEL FRUTO LUIS FERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | - | - | - | - | 2.655.406 | - | - | - | - |
+| MUSSO JUAN AGUSTIN | 06/05/1994 | 01/07/2021 | 30/06/2025 | - | - | - | - | 5.159.979 | - | - | - | - |
+| OKOLI MEMEH CALEB | 13/07/2001 | 01/07/2019 | 30/06/2026 | - | - | - | - | 319 | - | - | - | - |
+| PALOMINO JOSE LUIS | 05/01/1990 | 01/07/2017 | 30/06/2024 | - | - | - | - | 237.648 | - | - | - | - |
+| PASALIC MARIO | 09/02/1995 | 01/07/2019 | 30/06/2025 | - | - | - | - | 2.907.422 | - | - | - | - |
+| PEDERSEN JOAKIM MAEHLE | 20/05/1997 | 01/01/2021 | 30/06/2025 | 1.188.508 | - | - | - | 3.204.069 | - | - | - | - |
+| PESSINA MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 1.553.742 | 2.051.641 | 11.500.000 | 227.874 | 1.043.406 | - | - | - | 9.220.485 |
+| PICCOLI ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | - | - | - | - | 10.000 | - | - | - | - |
+| ROMERO CRISTIAN | 27/04/1998 | 09/09/2020 | 30/06/2026 | 1.085.000 | 13.715.508 | 50.000.000 | 2.434.825 | 549.153 | - | - | - | 33.849.667 |
+| ROSSI FRANCESCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | - | - | - | - | 924 | - | - | - | - |
+| RUGGERI MATTEO | 11/07/2002 | 01/07/2016 | 30/06/2027 | - | - | - | - | 470 | - | - | - | - |
+| SCALVINI GIORGIO | 11/12/2003 | 01/07/2017 | 30/06/2028 | - | - | - | - | 3.227 | - | - | - | - |
+| SOPPY BRANDON BEANOU JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2026 | 9.935.831 | - | - | - | 2.159.963 | - | - | - | - |
+| SPORTIELLO MARCO | 10/05/1992 | 01/01/2012 | 30/06/2023 | - | - | - | - | 22.317 | - | - | - | - |
+| SUTALO BOSKO | 01/01/2000 | 01/02/2020 | 30/06/2025 | 101.722 | 2.168.891 | 4.000.000 | 126.462 | - | - | - | - | 1.704.647 |
+| TOLOI RAFAEL | 10/10/1990 | 01/08/2015 | 30/06/2024 | - | - | - | - | 144.735 | - | - | - | - |
+| TUMMINELLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2023 | - | - | - | - | - | - | - | - | - |
+| VARNIER MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | - | - | - | - | 515.217 | - | - | - | - |
+| VIDO LUCA | 03/02/1997 | 01/07/2017 | 30/06/2024 | - | - | - | - | 104.967 | - | 104.967 | - | - |
+| ZAPATA DUVAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | - | - | - | - | 2.235.033 | - | - | - | - |
+| ZAPPACOSTA DAVIDE | 11/06/1992 | 01/09/2021 | 30/06/2025 | 1.000.000 | - | - | - | 1.859.335 | - | - | - | - |
+| ZORTEA NADIR | 19/06/1999 | 01/07/2019 | 30/06/2027 | - | - | - | - | 2.556 | - | - | - | - |
+| **TOTALE PRIMA SQUADRA** | | | | 64.815.245 | 30.991.817 | 95.106.410 | 4.497.263 | 56.378.866 | - | 310.965 | - | 59.417.874 |
+
+**Altri calciatori professionisti**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Acquisti / incrementi (8) | Netto Contabile Ceduto (9) | Prezzo Cessione / Decrementi (10) | Rettifica Costo Amm.to su prezzo di cessione (10a) | Ammortamenti (11) | Sopravv. Passive (12) | Svalutazioni Insussistenza dell'attivo (13) | Minusvalenze (14) | Plusvalenze 15 (10-10a-9) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ALARI ALBERTO | 21/01/1999 | 01/01/2013 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | - |
+| AVOGADRI LORENZO | 21/08/2001 | 01/09/2019 | 30/06/2024 | - | - | - | - | 2.055 | - | - | - | - |
+| BABBI LORENZO | 21/05/2000 | 01/02/2018 | 30/06/2024 | - | - | - | - | 70.936 | - | 70.936 | - | - |
+| BERGONZI FEDERICO | 12/01/2001 | 01/07/2015 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| BERTO GABRIELE | 20/03/2003 | 01/07/2017 | 30/06/2026 | - | - | - | - | 13.333 | - | - | - | - |
+| BROGNI GIORGIO | 28/01/2001 | 01/02/2019 | 30/06/2024 | - | - | - | - | 1.185 | - | - | - | - |
+| CAMBIAGHI NICOLO' | 28/12/2000 | 01/01/2019 | 30/06/2026 | - | - | - | - | - | - | - | - | - |
+| CAPONE CHRISTIAN | 28/04/1999 | 01/09/2016 | 30/06/2024 | - | - | - | - | 8.688 | - | - | - | - |
+| CAVALLI TOMMASO | 10/04/2000 | 01/08/2021 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| CORTINOVIS ALESSANDRO | 25/01/2001 | 01/01/2017 | 30/06/2026 | - | - | - | - | - | - | - | - | - |
+| DEL LUNGO TOMMASO | 21/11/2003 | 01/08/2021 | 30/06/2025 | - | - | - | - | 28.696 | - | - | - | - |
+| DEL PRATO ENRICO | 10/11/1999 | 01/07/2017 | 30/06/2025 | - | 1 | 2.750.000 | 45.122 | - | - | - | - | 2.704.877 |
+| DONZELLI DAVIDE | 28/07/2005 | 01/07/2021 | 30/06/2025 | - | - | - | - | 2.250 | - | - | - | - |
+| ELIA SALVATORE | 30/06/1999 | 01/11/2019 | 30/06/2025 | - | - | - | - | 23.470 | - | 46.940 | - | - |
+| FINARDI SEBASTIANO | 20/02/2001 | 01/01/2019 | 30/06/2024 | - | - | - | - | - | - | 1 | - | - |
+| FISIC ADI | 22/12/2003 | 01/07/2021 | 30/06/2024 | - | - | - | - | 76.073 | - | 76.073 | - | - |
+| GELMI LUDOVICO | 02/05/2001 | 01/05/2017 | 30/06/2025 | - | - | - | - | 3.534 | - | - | - | - |
+| GHISLANDI DAVIDE ANGELO | 16/06/2001 | 01/07/2019 | 30/06/2025 | - | - | - | - | 1.333 | - | - | - | - |
+| GHISLENI NICCOLO' | 25/05/2001 | 01/07/2016 | 30/06/2023 | - | 1 | - | - | - | 1 | - | - | - |
+| GIRGI ALESSIO | 01/04/2000 | 01/09/2016 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| GUTH RODRIGO | 10/11/2000 | 01/10/2017 | 30/06/2025 | 15.219 | 139.270 | 1.140.000 | 45.885 | 3.544 | - | - | - | 954.846 |
+| GYABUAA MANU EMMANUEL | 21/09/2001 | 01/07/2015 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| HEIDENREICH DAVID | 24/06/2000 | 01/10/2016 | 30/06/2025 | - | - | - | - | 4.420 | - | - | - | - |
+| ITALENG NGOCK NGOCK JONATHAN | 18/01/2001 | 01/07/2019 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| JONSSON BIRKIR JAKOB | 14/06/2005 | 01/07/2021 | 30/06/2024 | - | - | - | - | 18.333 | - | - | - | - |
+| KRAJA ERDIS | 07/07/2000 | 01/07/2014 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| KRESIC ANTON | 29/01/1996 | 01/07/2015 | 30/06/2024 | - | 32.479 | 150.000 | - | - | - | - | - | 117.521 |
+| LATTE LATH JUNIOR | 02/01/1999 | 01/01/2017 | 30/06/2024 | - | - | - | - | 6.972 | - | - | - | - |
+| LUNETTA GABRIEL ANTONIO | 10/08/1996 | 01/01/2013 | 30/06/2023 | - | - | - | - | - | - | - | - | - |
+| MAGLIERI SIMONE | 01/01/2000 | 01/07/2018 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| MALLAMO ALESSANDRO | 22/03/1999 | 01/11/2019 | 30/06/2025 | - | - | - | - | 20.254 | - | - | - | - |
+| MAZZINI STEFANO | 06/12/1998 | 01/07/2018 | 30/06/2023 | - | - | - | - | 1.487 | - | - | - | - |
+| MAZZOCCHI SIMONE | 17/08/1998 | 01/07/2021 | 30/06/2025 | - | - | - | - | 50.000 | - | - | - | - |
+| MILANI NICOLO' | 20/06/2001 | 01/07/2015 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | - |
+| MORA CHRISTIAN | 31/12/1997 | 01/07/2017 | 30/06/2025 | - | - | - | - | 1.552 | - | - | - | - |
+| NDIAYE KHADIM | 12/04/2000 | 01/01/2019 | 30/06/2023 | - | - | - | - | - | - | - | - | - |
+| PEDRINI MATTEO | 16/01/2000 | 01/07/2015 | 30/06/2022 | - | 1 | - | - | - | 1 | - | - | - |
+| PELI LORENZO | 24/01/2000 | 01/07/2017 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| SALVI MATTEO | 20/03/1999 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| SOLCIA DANIELE | 07/03/2001 | 01/09/2020 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| VLAHOVIC VANJA | 23/03/2004 | 31/01/2023 | 30/06/2026 | 225.000 | - | - | - | 6.081 | - | - | - | - |
+| ZAMBATARO EYOB | 18/08/1998 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| ZANONI ENRICO | 23/08/1999 | 01/07/2015 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| **TOTALE ALTRI CALCIATORI PROFESSIONISTI** | | | | 240.219 | 171.754 | 4.040.000 | 91.007 | 344.196 | 4 | 193.950 | - | 3.777.243 |
+
+**Vivaio**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Acquisti / incrementi (8) | Netto Contabile Ceduto (9) | Prezzo Cessione / Decrementi (10) | Rettifica Costo Amm.to su prezzo di cessione (10a) | Ammortamenti (11) | Sopravv. Passive (12) | Svalutazioni Insussistenza dell'attivo (13) | Minusvalenze (14) | Plusvalenze 15 (10-10a-9) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ARMSTRONG DANIEL NICHOLAS | 24/03/2005 | 01/01/2022 | 30/06/2025 | - | - | - | - | 15.000 | - | - | - | - |
+| BEVILACQUA MARCO | 09/11/2004 | 01/08/2022 | 30/06/2026 | 70.000 | - | - | - | 15.510 | - | - | - | - |
+| BUYLA SAM HUGO | 08/03/2005 | 01/07/2021 | 30/06/2025 | - | - | - | - | 14.545 | - | - | - | - |
+| CAMARA HENRY NABY JUNIOR | 06/05/2006 | 01/09/2022 | 30/06/2026 | 74.000 | - | - | - | 21.059 | - | - | - | - |
+| CHIWISA MANNAH | 12/12/2003 | 01/08/2021 | 30/06/2025 | - | - | - | - | 37.267 | - | - | - | - |
+| DAJCAR MATEVZ | 05/02/2002 | 01/10/2019 | 30/06/2024 | - | - | - | - | 37.813 | - | - | - | - |
+| GIOVANE SAMUEL | 28/03/2003 | 01/07/2017 | 30/06/2025 | - | - | - | - | - | - | - | - | - |
+| GUDMUNDSSON OLIVER STEINAR | 17/05/2004 | 01/02/2021 | 30/06/2023 | - | 5.172 | - | - | 7.241 | - | - | 5.172 | - |
+| HECKO RICHARD | 01/10/2003 | 01/01/2020 | 30/06/2024 | 40.000 | 56.181 | 60.000 | - | 17.419 | - | - | - | 3.819 |
+| MANFREDI LEONARDO | 13/10/2002 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - |
+| MEDIERO ANWAR | 03/03/2002 | 15/09/2020 | 30/06/2024 | - | - | - | - | - | - | - | - | - |
+| OBRIC RELJA | 11/04/2006 | 01/03/2023 | 30/06/2026 | 135.000 | - | - | - | 13.500 | - | - | - | - |
+| OMAR SHAKUR | 31/03/2004 | 01/07/2019 | 30/06/2024 | - | - | - | - | 23.160 | - | 23.160 | - | - |
+| PANADA SIMONE | 02/06/2002 | 01/07/2016 | 30/06/2025 | - | - | - | - | - | - | - | - | - |
+| PARDEL PIOTR MICHAL | 31/01/2005 | 01/01/2022 | 30/06/2025 | - | - | - | - | 32.000 | - | - | - | - |
+| PARILLA MARTIN | 17/10/2005 | 01/01/2022 | 30/06/2024 | - | - | - | - | 40.395 | - | - | - | - |
+| PEREZ DAVID FERNANDO | 10/07/2004 | 30/09/2020 | 30/06/2025 | 30.000 | - | - | - | 43.739 | - | - | - | - |
+| ROALDSOY ALWANDE | 09/06/2004 | 01/10/2020 | 30/06/2024 | - | - | - | - | 2.558 | - | - | - | - |
+| ROSA ALESSIO | 14/05/2003 | 01/01/2017 | 30/06/2025 | - | - | - | - | 37.500 | - | - | - | - |
+| SIDIBE ALASSANE | 09/06/2002 | 01/07/2018 | 30/06/2025 | - | - | - | - | 4.488 | - | - | - | - |
+| VIVIANI ANDREA | 16/05/2002 | 01/07/2016 | 30/06/2023 | - | - | - | - | 5.455 | - | - | - | - |
+| VORLICKY LUKAS | 18/01/2002 | 01/01/2018 | 30/06/2025 | 20.000 | - | - | - | 10.891 | - | - | - | - |
+| ALTRI | | | | 32 | 23 | - | - | - | 23 | - | - | - |
+| **TOTALE VIVAIO** | | | | 369.032 | 61.376 | 60.000 | - | 379.540 | 23 | 23.160 | 5.172 | 3.819 |
+
+| | Acquisti / incrementi (8) | Netto Contabile Ceduto (9) | Prezzo Cessione / Decrementi (10) | Rettifica Costo Amm.to su prezzo di cessione (10a) | Ammortamenti (11) | Sopravv. Passive (12) | Svalutazioni Insussistenza dell'attivo (13) | Minusvalenze (14) | Plusvalenze 15 (10-10a-9) |
+|---|---|---|---|---|---|---|---|---|---|
+| **TOTALE DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI** | 65.424.496 | 31.224.947 | 99.206.410 | 4.588.270 | 57.102.603 | 27 | 528.074 | 5.172 | 63.198.935 |
 
 --- pág. 49 ---
 
-Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
-
-|  Data diritti pluriennali alle prestazioni dei calciatori |   | Contratto: cives valori di pe |   |   | Valori al 30/06/2023 |   |   |   |   |   | Varie  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Calciatore COSHOME e NOME | Data di resetto | Data limite prime contratto | Data Scedenza alline contratto | Netto Contratto Calcolo | Carto Storico | Fula amm. | Netto | Anni alla Restitua | Compenso Agenti | Retitifica Costa Arenale su Caricamenti | Altri costi di acquisizione | Compenso agenti liquidato nell'esercizio | Valori sali un risc  |
-|   |  |  |  | 9 | 18 (9+8+9) | 37 (9+13+13) | 38 (18-17) |  |  |  |  |  |   |
-|  BOGA, IRRORE | 03/01/1997 | 01/02/2022 | 30/06/2026 | - | 25.674.982 | 7.955.004 | 18.880.997 | 3 | 1.208.000 | 398.781 | 865.583 | 650.000 |   |
-|  BUNGO SECONDO FRANCESCO | 03/05/2001 | 01/07/2019 | 30/06/2022 | - | - | - | - | - | - | - | - | - | 20% eccedenza 24h  |
-|  CARDINA BRYAN ALFREDO | 20/03/1997 | 01/06/2016 | 30/06/2022 | - | - | - | - | - | 100.000 | - | - | - | -  |
-|  CARROBLOCHAMICO | 01/07/2009 | 01/02/2017 | 30/06/2026 | - | 1.379.000 | 1.132.042 | 237.938 | 3 | 176.000 | - | - | - | 25.000  |
-|  CARRARO MARCO | 09/02/1998 | 01/07/2018 | 30/06/2029 | - | 5.896.000 | 5.896.000 | - | - | 56.000 | - | - | - | -  |
-|  COLE MILISTARNA CLINICO | 14/04/2003 | 01/02/2022 | 30/06/2026 | - | - | - | 1 | 3 | - | - | - | - | -  |
-|  COTTAVIRE GEORGIO | 16/04/2002 | 01/07/2016 | 30/06/2026 | - | 5.000 | 3.040 | 1.988 | 3 | 5.000 | - | - | - | -  |
-|  COLLOF SIMONA | 01/02/2008 | 01/01/2019 | 30/06/2025 | - | 20.000 | 22.059 | 10.742 | 2 | 55.000 | - | - | 100.000 | -  |
-|  DA VERA ALVARE | 27/10/2008 | 01/10/2019 | 30/06/2025 | - | 20.000 | 16.000 | 6.000 | 2 | 35.000 | - | - | - | -  |
-|  DE RIZIA MARTEN | 29/03/1991 | 01/08/2017 | 30/06/2024 | - | 16.756.474 | 14.854.583 | 1.881.891 | 1 | 967.000 | - | 733.526 | 167.000 | -  |
-|  DERBELL RUBIN | 05/03/1998 | 06/06/2015 | 30/06/2026 | - | 21.833.539 | 5.263.535 | 15.790.004 | 3 | 708.000 | 294.029 | 747.248 | 150.000 | 10% eccedenza 10h+ 20 min  |
-|  DIPROTI GIBAFI | 19/02/1993 | 01/01/2019 | 30/06/2025 | - | 677.500 | 607.284 | 70.228 | 2 | 452.500 | - | - | - | -  |
-|  DOU BARTOL GIURINO E BERSION | 07/07/1998 | 01/07/2018 | 30/06/2026 | - | 22.942.576 | 4.588.517 | 18.354.656 | 4 | 1.448.000 | 295.067 | 838.545 | 1.560.000 | -  |
-|  DELLA E RIBUOLO | 15/04/1993 | 01/01/2018 | 30/06/2024 | 422.500 | - | - | - | - | 422.500 | - | 236.250 | 225.000 | 15% prezzo di cesione eccedenza min 1.25€ + bonus  |
-|  GELLINI PERLUCCI | 18/03/1995 | 01/07/2018 | 30/06/2024 | - | 4.828.985 | 4.313.141 | 515.764 | 1 | 400.000 | - | 194.740 | 100.000 | 10% prezzo di cesione eccedenza min 5.25€  |
-|  HA TRINOR MARI | 09/01/1994 | 01/01/2017 | 30/06/2024 | - | 1.168.789 | 1.049.618 | 91.159 | 1 | 155.000 | - | - | 150.000 | -  |
-|  HEILAND GABRIEL NISTHER | 04/02/2003 | 01/06/2022 | 30/06/2026 | - | 16.612.389 | 3.678.823 | 13.236.566 | 3 | - | 308.714 | 483.818 | - | -  |
-|  ILECE, ZAGI | 29/01/1998 | 01/07/2017 | 30/06/2023 | - | - | - | - | - | 750.000 | - | - | 100.000 | -  |
-|  LEONARDENICHLEN | 28/02/1998 | 01/09/2021 | 30/06/2027 | - | 14.500.000 | 6.190.693 | 8.309.337 | 4 | 500.000 | - | 976.500 | 150.000 | 10% eccedenza 10h+ 14 min  |
-|  KOVALDANO VICTOR | 19/02/1994 | 01/02/2021 | 30/06/2025 | - | 1.000.000 | 538.675 | 461.125 | 2 | 400.000 | - | 28.980 | 350.000 | -  |
-|  LAPARINI ZAPA | 30/04/1997 | 01/10/2020 | 30/06/2025 | 1.182.798 | - | - | - | - | 1.000.000 | - | 540.437 | 400.000 | % validità la prezzo di cesione (da 1 a 3 hhr)  |
-|  LOZANNA ANDRELA OLAZADE | 20/10/1997 | 01/06/2022 | 30/06/2026 | - | 9.258.486 | 2.162.391 | 7.388.014 | 3 | 100.000 | 136.627 | 499.239 | 100.000 | 10% su piu lho 20 min ed 15% o lho i 20 min  |
-|  LOZANTO MATTEO | 19/02/2003 | 01/06/2021 | 30/06/2026 | 3.104.894 | - | - | - | - | 100.000 | - | - | - | 10% eccedenza  |
-|  MALBOGIANI E AGLIAN | 04/03/1993 | 01/07/2018 | 30/06/2024 | 3.944.378 | - | - | - | - | 353.000 | - | 1.171.547 | 85.000 | 10% eccedenza 10h+ + bonus  |
-|  MATTIBOLO FEDERICO | 14/07/1995 | 01/02/2018 | 30/06/2023 | - | - | - | - | - | - | - | - | - | -  |
-|  MONACROVA ALBERT | 17/10/1995 | 01/09/2020 | 30/06/2024 | - | 15.000.000 | 11.806.956 | 3.913.044 | 1 | 500.000 | - | 725.000 | 150.000 | 10% eccedenza 15,5 min  |
-|  MURIEL PEPITO LUO PERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | - | 21.243.259 | 30.907.044 | 2.403.406 | 1 | 1.100.000 | - | 935.750 | - | -  |
-|  NASSO JUAN ALVITEN | 06/03/1994 | 01/07/2021 | 30/06/2025 | - | 20.674.750 | 10.214.745 | 10.230.059 | 2 | 125.000 | - | 1.214.730 | 270.000 | -  |
-|  ONZIO BERRY LAZAR | 12/07/2001 | 01/07/2019 | 30/06/2026 | - | 2.000 | - | 997 | 2 | 2.500 | - | - | 52.000 | -  |
-|  PALOMINO JOSE LUIS | 05/01/1998 | 01/07/2017 | 30/06/2024 | - | 4.712.474 | 4.473.626 | 237.648 | 1 | 522.000 | - | 189.474 | 289.500 | 10% su prezzo di cesione  |
-|  PARALEI RAMOS | 09/02/1995 | 01/07/2019 | 30/06/2025 | - | 14.537.108 | 8.732.240 | 8.814.943 | 2 | - | - | 726.855 | 67.500 | -  |
-|  PEERSON, KARAM MADALE | 20/03/1997 | 01/01/2021 | 30/06/2025 | - | 14.813.766 | 7.544.213 | 7.273.022 | 2 | 500.000 | - | 715.680 | - | 12,5% p/av+ bonus  |
-|  PEISSIM MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 2.851.641 | - | - | - | - | 375.000 | 46.250 | - | 100.000 | da 30% a 55% eccedenza  |
-|  PEZZOLI ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | - | 50.000 | 25.000 | 30.000 | 3 | 50.000 | - | - | 50.000 | -  |
-|  REMEDIO CRISTIAN | 27/04/1998 | 06/06/2020 | 30/06/2026 | 13.735.508 | - | - | - | - | 200.000 | - | 1.005.000 | - | -  |
-|  ROSO FRANCESCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | - | 159.661 | 158.767 | 924 | 1 | - | - | - | - | -  |
-|  ROSIERO MATTEO | 11/07/2002 | 01/07/2018 | 30/06/2023 | - | 1.000 | 1.250 | 1.450 | 4 | 3.000 | - | - | 2.750 | -  |
-|  SCALONI GIORGIO | 11/12/2003 | 01/07/2017 | 30/06/2028 | - | 18.000 | 4.286 | 13.753 | 3 | 18.000 | - | - | 18.000 | -  |
-|  SORYV BENEDEN SEANOL JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2025 | - | 9.836.651 | 2.038.662 | 7.775.867 | 3 | 900.000 | 87.475 | 332.484 | 480.000 | 10% eccedenza  |
-|  SPARTILLO MARCO | 10/05/1992 | 01/01/2012 | 30/06/2022 | - | 265.094 | 263.094 | - | - | 267.500 | - | - | 45.000 | -  |
-|  SATALO BOND | 01/01/2008 | 01/02/2020 | 30/06/2025 | 2.188.095 | - | - | - | - | 100.000 | - | 233.322 | 80.000 | 10% eccedenza + bonus  |
-|  TELLO MATTEO | 10/10/1999 | 01/08/2015 | 30/06/2024 | - | 3.979.000 | 3.825.265 | 144.735 | 1 | 975.000 | - | - | 81.000 | 10% su eccedenza in modulo + 3.2 min  |
-|  TURMENDLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2023 | - | - | - | - | - | 40.000 | - | - | - | 50% su eccedenza 5 min  |
-|  VARISSI MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | - | 2.500.000 | 1.864.783 | 515.217 | 1 | - | - | - | - | bonus non malvati su walco sopra 4min  |
-|  VERO LUCA | 03/02/1997 | 01/07/2017 | 30/06/2024 | - | 1.418.000 | 1.418.000 | - | - | 500.000 | - | - | - | da 30% a 55% eccedenza  |
-|  ZAPATA DUNAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | - | 12.000.000 | 9.744.567 | 2.255.033 | 1 | - | - | - | 750.000 | -  |
-|  ZAPRACOSTA ZARIDE | 11/06/1992 | 01/09/2021 | 30/06/2025 | - | 7.000.000 | 5.163.682 | 1.836.318 | 2 | - | - | 238.685 | 250.000 | -  |
-|  ZORTAS RANZE | 19/06/1994 | 01/07/2019 | 30/06/2027 | - | 17.000 | 19.187 | 6.894 | 4 | 2.000 | - | - | - | -  |
-|  ZOTALE PENNI SQUADRA |  |  |  | 38.991.837 | 267.792.183 | 140.858.949 | 126.932.998 |  | 15.833.069 | 1.680.771 | 13.666.174 | 8.798.250 |   |
-
 49
+
+**Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori**
+
+Dati diritti pluriennali alle prestazioni dei calciatori | Contratto | Variazione valori di periodo | Valori al 30/06/2023 | Varie
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Netto Contabile Ceduto (9) | Costo Storico 16 (5+8-9) | F.do amm. 17 (6+11+13) | Netto 18 (16-17) | Anni Vita Residua | Compenso Agenti | Rettifica Costo Amm.to su Caricamenti | Altri costi di acquisizione | Compenso agenti liquidato nell'esercizio | Valori sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| BOGA JEREMIE | 03/01/1997 | 01/02/2022 | 30/06/2026 | - | 23.674.802 | 7.593.804 | 16.080.997 | 3 | 1.200.000 | 390.701 | 865.503 | 650.000 | |
+| BURGIO RICCARDO FRANCESCO | 05/05/2001 | 01/07/2019 | 30/06/2022 | - | - | - | - | - | - | - | - | - | |
+| CABEZAS BRYAN ALFREDO | 20/03/1997 | 01/08/2016 | 30/06/2022 | - | - | - | - | - | 300.000 | - | - | - | 30% eccedenza 2Mln |
+| CARNESECCHI MARCO | 01/07/2000 | 01/02/2017 | 30/06/2026 | - | 1.370.000 | 1.132.062 | 237.938 | 3 | 170.000 | - | - | - | |
+| CARRARO MARCO | 09/01/1998 | 01/07/2018 | 30/06/2024 | - | 5.090.000 | 5.090.000 | - | - | 50.000 | - | - | 15.000 | |
+| CISSE MOUSTAPHA ELHADJI | 14/09/2003 | 01/02/2022 | 30/06/2026 | - | 1 | - | 1 | 3 | - | - | - | - | |
+| CITTADINI GIORGIO | 18/04/2002 | 01/07/2016 | 30/06/2026 | - | 5.001 | 3.043 | 1.958 | 3 | 5.000 | - | - | - | |
+| COLLEY EBRIMA | 01/02/2000 | 01/01/2018 | 30/06/2025 | - | 33.001 | 22.859 | 10.142 | 2 | 33.000 | - | - | 100.000 | |
+| DA RIVA JACOPO | 27/10/2000 | 01/10/2019 | 30/06/2025 | - | 25.001 | 16.951 | 8.050 | 2 | 25.000 | - | - | - | |
+| DE ROON MARTEN | 29/03/1991 | 01/08/2017 | 30/06/2024 | - | 16.756.474 | 14.954.583 | 1.801.891 | 1 | 967.000 | - | 710.526 | 167.000 | |
+| DEMIRAL MERIH | 05/03/1998 | 06/08/2021 | 30/06/2026 | - | 21.053.339 | 5.263.335 | 15.790.004 | 3 | 700.000 | 394.029 | 747.368 | 150.000 | 10% eccedenza ( Oltre i 20 mln) |
+| DJIMSITI BERAT | 19/02/1993 | 01/01/2016 | 30/06/2025 | - | 677.500 | 607.284 | 70.216 | 2 | 452.500 | - | - | - | |
+| DOS SANTOS LOURENC EDERSON JOSE | 07/07/1999 | 01/07/2022 | 30/06/2027 | - | 22.942.578 | 4.588.517 | 18.354.061 | 4 | 1.400.000 | 295.967 | 838.545 | 1.500.000 | |
+| FREULER REMO | 15/04/1992 | 01/01/2016 | 30/06/2024 | 412.505 | - | - | - | - | 612.500 | - | 206.250 | 220.000 | 15% prezzo di cessione eccedenza mln 1.250 + bonus |
+| GOLLINI PIERLUIGI | 18/03/1995 | 01/07/2018 | 30/06/2024 | - | 4.828.905 | 4.313.141 | 515.764 | 1 | 400.000 | - | 154.740 | 100.000 | 10% prezzo di cessione eccedenza mln 5.250 |
+| HATEBOER HANS | 09/01/1994 | 01/01/2017 | 30/06/2024 | - | 1.140.789 | 1.049.630 | 91.159 | 1 | 725.000 | - | - | 150.000 | |
+| HØJLUND RASMUS WINTHER | 04/02/2003 | 01/09/2022 | 30/06/2026 | - | 16.913.389 | 3.676.823 | 13.236.566 | 3 | - | 309.714 | 483.818 | - | |
+| ILICIC JOSIP | 29/01/1988 | 01/07/2017 | 30/06/2023 | - | - | - | - | - | 750.000 | - | - | 100.000 | |
+| KOOPMEINERS TEUN | 28/02/1998 | 01/09/2021 | 30/06/2027 | - | 14.500.000 | 6.190.893 | 8.309.107 | 4 | 500.000 | - | 676.200 | 150.000 | 10% eccedenza ( Oltre i 14 mln) |
+| KOVALENKO VIKTOR | 14/02/1996 | 01/02/2021 | 30/06/2025 | - | 1.000.000 | 538.875 | 461.125 | 2 | 400.000 | - | 28.980 | 350.000 | |
+| LAMMERS SAM | 30/04/1997 | 01/10/2020 | 30/06/2025 | 3.183.799 | - | - | - | - | 1.050.000 | - | 549.457 | 400.000 | % variabile su prezzo di cessione (da 1 a 3 Mln) |
+| LOOKMAN ADEMOLA OLAJADE | 20/10/1997 | 01/08/2022 | 30/06/2026 | - | 9.350.406 | 2.162.391 | 7.188.014 | 3 | 100.000 | 136.627 | 469.259 | 100.000 | 10% su plus fino 20 mln ed 15% oltre i 20 mln |
+| LOVATO MATTEO | 14/02/2000 | 01/08/2021 | 30/06/2025 | 5.514.894 | - | - | - | - | 200.000 | - | - | - | 10% eccedenza |
+| MALINOVSKYI RUSLAN | 04/05/1993 | 01/07/2019 | 30/06/2024 | 3.944.578 | - | - | - | - | 310.000 | - | 1.171.547 | 85.000 | 10% eccedenza 13mln + bonus |
+| MATTIELLO FEDERICO | 14/07/1995 | 01/02/2018 | 30/06/2023 | - | - | - | - | - | - | - | - | - | |
+| MIRANCHUK ALEXEY | 17/10/1995 | 01/09/2020 | 30/06/2024 | - | 15.000.000 | 11.086.956 | 3.913.044 | 1 | 500.000 | - | 725.000 | 150.000 | 10% eccedenza 14,5 mln |
+| MURIEL FRUTO LUIS FERNANDO | 16/04/1991 | 01/07/2019 | 30/06/2024 | - | 21.243.250 | 18.587.844 | 2.655.406 | 1 | 1.100.000 | - | 935.750 | - | |
+| MUSSO JUAN AGUSTIN | 06/05/1994 | 01/07/2021 | 30/06/2025 | - | 20.634.700 | 10.314.741 | 10.319.959 | 2 | 120.000 | - | 1.014.700 | 270.000 | |
+| OKOLI MEMEH CALEB | 13/07/2001 | 01/07/2019 | 30/06/2026 | - | 2.501 | 1.544 | 957 | 3 | 2.500 | - | - | 32.000 | |
+| PALOMINO JOSE LUIS | 05/01/1990 | 01/07/2017 | 30/06/2024 | - | 4.711.474 | 4.473.826 | 237.648 | 1 | 522.000 | - | 189.474 | 209.500 | 10% su prezzo di cessione |
+| PASALIC MARIO | 09/02/1995 | 01/07/2019 | 30/06/2025 | - | 14.537.108 | 8.722.265 | 5.814.843 | 2 | - | - | 726.855 | 67.500 | |
+| PEDERSEN JOAKIM MAEHLE | 20/05/1997 | 01/01/2021 | 30/06/2025 | - | 14.813.766 | 7.540.213 | 7.273.553 | 2 | 500.000 | - | 715.688 | - | 12,5% plus+ bonus |
+| PESSINA MATTEO | 21/04/1997 | 01/07/2017 | 30/06/2025 | 2.051.641 | - | - | - | - | 278.000 | 46.258 | - | 100.000 | da 30% a 50% eccedenza |
+| PICCOLI ROBERTO | 27/01/2001 | 01/01/2017 | 30/06/2026 | - | 50.001 | 20.000 | 30.001 | 3 | 50.000 | - | - | 50.000 | |
+| ROMERO CRISTIAN | 27/04/1998 | 09/09/2020 | 30/06/2026 | 13.715.508 | - | - | - | - | 200.000 | - | 1.085.000 | - | |
+| ROSSI FRANCESCO | 27/04/1991 | 01/01/2012 | 30/06/2024 | - | 159.691 | 158.767 | 924 | 1 | - | - | - | - | |
+| RUGGERI MATTEO | 11/07/2002 | 01/07/2016 | 30/06/2027 | - | 3.001 | 1.551 | 1.450 | 4 | 3.000 | - | - | 2.730 | |
+| SCALVINI GIORGIO | 11/12/2003 | 01/07/2017 | 30/06/2028 | - | 18.001 | 4.286 | 13.715 | 5 | 18.000 | - | - | 18.000 | |
+| SOPPY BRANDON BEANOU JUNIOR | 21/02/2002 | 01/09/2022 | 30/06/2026 | - | 9.935.831 | 2.159.963 | 7.775.867 | 3 | 900.000 | 87.475 | 252.484 | 480.000 | 10% eccedenza |
+| SPORTIELLO MARCO | 10/05/1992 | 01/01/2012 | 30/06/2023 | - | 383.994 | 383.994 | - | - | 267.500 | - | - | 40.000 | |
+| SUTALO BOSKO | 01/01/2000 | 01/02/2020 | 30/06/2025 | 2.168.891 | - | - | - | - | 150.000 | - | 233.322 | 60.500 | 10% eccedenza + bonus |
+| TOLOI RAFAEL | 10/10/1990 | 01/08/2015 | 30/06/2024 | - | 3.970.000 | 3.825.265 | 144.735 | 1 | 470.000 | - | - | 81.000 | 20% su eccedenza se venduto + di 2 mln |
+| TUMMINELLO MARCO | 06/11/1998 | 01/07/2018 | 30/06/2023 | - | - | - | - | - | 40.000 | - | - | - | 50% su eccedenza 5 mln |
+| VARNIER MARCO | 08/06/1998 | 01/07/2019 | 30/06/2024 | - | 2.500.000 | 1.984.783 | 515.217 | 1 | - | - | - | - | bonus non maturati se ceduto sopra 4mln |
+| VIDO LUCA | 03/02/1997 | 01/07/2017 | 30/06/2024 | - | 1.410.000 | 1.410.000 | - | - | 360.000 | - | - | - | da 30% a 50% eccedenza |
+| ZAPATA DUVAN | 01/04/1991 | 01/07/2019 | 30/06/2024 | - | 12.000.000 | 9.764.967 | 2.235.033 | 1 | - | - | - | 750.000 | |
+| ZAPPACOSTA DAVIDE | 11/06/1992 | 01/09/2021 | 30/06/2025 | - | 7.000.000 | 3.163.682 | 3.836.318 | 2 | - | - | 259.805 | 250.000 | |
+| ZORTEA NADIR | 19/06/1999 | 01/07/2019 | 30/06/2027 | - | 17.001 | 10.107 | 6.894 | 4 | 2.000 | - | - | - | |
+| **TOTALE PRIMA SQUADRA** | | | | 30.991.817 | 267.751.503 | 140.818.946 | 126.932.558 | | 15.833.000 | 1.660.771 | 13.040.270 | 6.798.230 | |
+
+**Altri calciatori professionisti**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Netto Contabile Ceduto (9) | Costo Storico 16 (5+8-9) | F.do amm. 17 (6+11+13) | Netto 18 (16-17) | Anni Vita Residua | Compenso Agenti | Rettifica Costo Amm.to su Caricamenti | Altri costi di acquisizione | Compenso agenti liquidato nell'esercizio | Valori sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ALARI ALBERTO | 21/01/1999 | 01/01/2013 | 30/06/2022 | 1 | - | - | - | - | - | - | - | - | |
+| AVOGADRI LORENZO | 21/08/2001 | 01/09/2019 | 30/06/2024 | - | 10.001 | 7.946 | 2.055 | 1 | 10.000 | - | - | - | |
+| BABBI LORENZO | 21/05/2000 | 01/02/2018 | 30/06/2024 | - | 800.000 | 800.000 | - | - | - | - | - | - | |
+| BERGONZI FEDERICO | 12/01/2001 | 01/07/2015 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| BERTO GABRIELE | 20/03/2003 | 01/07/2017 | 30/06/2026 | - | 80.000 | 80.000 | - | - | - | - | - | - | |
+| BROGNI GIORGIO | 28/01/2001 | 01/02/2019 | 30/06/2024 | - | 10.001 | 8.816 | 1.185 | 1 | 10.000 | - | - | - | |
+| CAMBIAGHI NICOLO' | 28/12/2000 | 01/01/2019 | 30/06/2026 | - | 1 | - | 1 | 3 | - | - | - | - | |
+| CAPONE CHRISTIAN | 28/04/1999 | 01/09/2016 | 30/06/2024 | - | 68.001 | 59.313 | 8.688 | 1 | 18.000 | - | - | - | |
+| CAVALLI TOMMASO | 10/04/2000 | 01/08/2021 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| CORTINOVIS ALESSANDRO | 25/01/2001 | 01/01/2017 | 30/06/2026 | 1 | - | - | 1 | 3 | - | - | - | - | |
+| DEL LUNGO TOMMASO | 21/11/2003 | 01/08/2021 | 30/06/2025 | - | 55.000 | 55.000 | - | - | - | - | - | - | |
+| DEL PRATO ENRICO | 10/11/1999 | 01/07/2017 | 30/06/2025 | 1 | - | - | - | - | - | - | - | - | |
+| DONZELLI DAVIDE | 28/07/2005 | 01/07/2021 | 30/06/2025 | - | 9.000 | 4.500 | 4.500 | 2 | - | - | - | - | |
+| ELIA SALVATORE | 30/06/1999 | 01/11/2019 | 30/06/2025 | - | 115.001 | 115.001 | - | - | 15.000 | - | - | 20.000 | |
+| FINARDI SEBASTIANO | 20/02/2001 | 01/01/2019 | 30/06/2024 | - | 1 | 1 | - | - | - | - | - | - | |
+| FISIC ADI | 22/12/2003 | 01/07/2021 | 30/06/2024 | - | 228.219 | 228.219 | - | - | - | - | 228.219 | - | |
+| GELMI LUDOVICO | 02/05/2001 | 01/05/2017 | 30/06/2025 | - | 50.001 | 43.228 | 6.773 | 2 | 50.000 | - | - | 15.000 | |
+| GHISLANDI DAVIDE ANGELO | 16/06/2001 | 01/07/2019 | 30/06/2025 | - | 10.001 | 7.334 | 2.667 | 2 | 10.000 | - | - | - | |
+| GHISLENI NICCOLO' | 25/05/2001 | 01/07/2016 | 30/06/2023 | 1 | - | - | - | - | - | - | - | - | |
+| GIRGI ALESSIO | 01/04/2000 | 01/09/2016 | 30/06/2022 | - | - | - | - | - | - | - | - | - | 50% prezzo di cessione |
+| GUTH RODRIGO | 10/11/2000 | 01/10/2017 | 30/06/2025 | 139.270 | - | - | - | - | 213.750 | - | 15.219 | 20.000 | 10% prezzo di cessione |
+| GYABUAA MANU EMMANUEL | 21/09/2001 | 01/07/2015 | 30/06/2024 | 1 | - | - | 1 | 1 | - | - | - | - | |
+| HEIDENREICH DAVID | 24/06/2000 | 01/10/2016 | 30/06/2025 | - | 73.500 | 64.660 | 8.840 | 2 | 33.500 | - | - | - | 5% eccedenza |
+| ITALENG NGOCK NGOCK JONATHAN | 18/01/2001 | 01/07/2019 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| JONSSON BIRKIR JAKOB | 14/06/2005 | 01/07/2021 | 30/06/2024 | - | 55.000 | 36.667 | 18.333 | 1 | - | - | 699 | - | 5% eccedenza + premi |
+| KRAJA ERDIS | 07/07/2000 | 01/07/2014 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| KRESIC ANTON | 29/01/1996 | 01/07/2015 | 30/06/2024 | 32.479 | - | - | - | - | 40.000 | - | 10.000 | - | |
+| LATTE LATH JUNIOR | 02/01/1999 | 01/01/2017 | 30/06/2024 | - | 67.001 | 60.029 | 6.972 | 1 | 33.000 | - | - | - | |
+| LUNETTA GABRIEL ANTONIO | 10/08/1996 | 01/01/2013 | 30/06/2023 | - | - | - | - | - | - | - | - | - | |
+| MAGLIERI SIMONE | 01/01/2000 | 01/07/2018 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| MALLAMO ALESSANDRO | 22/03/1999 | 01/11/2019 | 30/06/2025 | - | 160.001 | 121.181 | 38.820 | 2 | - | - | - | - | |
+| MAZZINI STEFANO | 06/12/1998 | 01/07/2018 | 30/06/2023 | - | 19.085 | 19.085 | - | - | - | - | - | - | |
+| MAZZOCCHI SIMONE | 17/08/1998 | 01/07/2021 | 30/06/2025 | - | 200.000 | 100.000 | 100.000 | 2 | - | - | - | - | |
+| MILANI NICOLO' | 20/06/2001 | 01/07/2015 | 30/06/2022 | 1 | - | - | - | - | - | - | - | - | |
+| MORA CHRISTIAN | 31/12/1997 | 01/07/2017 | 30/06/2025 | - | 35.001 | 31.897 | 3.104 | 2 | - | - | - | - | |
+| NDIAYE KHADIM | 12/04/2000 | 01/01/2019 | 30/06/2023 | - | 1 | - | 1 | - | - | - | - | - | |
+| PEDRINI MATTEO | 16/01/2000 | 01/07/2015 | 30/06/2022 | 1 | - | - | - | - | - | - | - | - | |
+| PELI LORENZO | 24/01/2000 | 01/07/2017 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| SALVI MATTEO | 20/03/1999 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - | da 5% a 10% eccedenza |
+| SOLCIA DANIELE | 07/03/2001 | 01/09/2020 | 30/06/2024 | - | 1 | - | 1 | 1 | - | - | - | - | |
+| VLAHOVIC VANJA | 23/03/2004 | 31/01/2023 | 30/06/2026 | - | 225.000 | 6.081 | 218.919 | 3 | 75.000 | - | 3.810 | 15.000 | 10% eccedenza |
+| ZAMBATARO EYOB | 18/08/1998 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - | |
+| ZANONI ENRICO | 23/08/1999 | 01/07/2015 | 30/06/2022 | - | - | - | - | - | - | - | - | - | |
+| **TOTALE ALTRI CALCIATORI PROFESSIONISTI** | | | | 171.754 | 2.269.825 | 1.848.958 | 420.867 | | 508.250 | - | 257.947 | 70.000 | |
+
+**Vivaio**
+
+| Calciatore COGNOME e NOME | Data di nascita | Data Inizio primo contratto | Data Scadenza ultimo contratto | Netto Contabile Ceduto (9) | Costo Storico 16 (5+8-9) | F.do amm. 17 (6+11+13) | Netto 18 (16-17) | Anni Vita Residua | Compenso Agenti | Rettifica Costo Amm.to su Caricamenti | Altri costi di acquisizione | Compenso agenti liquidato nell'esercizio | Valori sell-on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ARMSTRONG DANIEL NICHOLAS | 24/03/2005 | 01/01/2022 | 30/06/2025 | - | 50.000 | 25.000 | 25.000 | 2 | - | - | 50.000 | - | 3% eccedenza (fino ad un massimo di 300.000€) |
+| BEVILACQUA MARCO | 09/11/2004 | 01/08/2022 | 30/06/2026 | - | 70.000 | 15.510 | 54.490 | 3 | 25.000 | - | - | 10.000 | |
+| BUYLA SAM HUGO | 08/03/2005 | 01/07/2021 | 30/06/2025 | - | 60.000 | 34.545 | 25.455 | 2 | - | - | 608 | - | |
+| CAMARA HENRY NABY JUNIOR | 06/05/2006 | 01/09/2022 | 30/06/2026 | - | 74.000 | 21.059 | 52.941 | 3 | - | - | 4.000 | - | |
+| CHIWISA MANNAH | 12/12/2003 | 01/08/2021 | 30/06/2025 | - | 100.000 | 85.093 | 14.907 | 2 | - | - | - | - | |
+| DAJCAR MATEVZ | 05/02/2002 | 01/10/2019 | 30/06/2024 | - | 207.500 | 169.687 | 37.813 | 1 | 57.500 | - | - | 3.750 | |
+| GIOVANE SAMUEL | 28/03/2003 | 01/07/2017 | 30/06/2025 | - | 1 | - | 1 | 2 | - | - | - | 1.413 | |
+| GUDMUNDSSON OLIVER STEINAR | 17/05/2004 | 01/02/2021 | 30/06/2023 | 5.172 | - | - | - | - | - | - | 468 | - | 5% > (€ 30.000 + Bonus maturati) max 500k |
+| HECKO RICHARD | 01/10/2003 | 01/01/2020 | 30/06/2024 | 56.181 | - | - | - | - | 70.000 | - | 768 | 42.500 | 10% eccedenza (fino ad un massimo di 2.000.000€) |
+| MANFREDI LEONARDO | 13/10/2002 | 01/07/2018 | 30/06/2022 | - | - | - | - | - | - | - | - | - | |
+| MEDIERO ANWAR | 03/03/2002 | 15/09/2020 | 30/06/2024 | - | - | - | - | - | 25.000 | - | - | - | 10% su importo cessione > 160.000 € |
+| OBRIC RELJA | 11/04/2006 | 01/03/2023 | 30/06/2026 | - | 135.000 | 13.500 | 121.500 | 3 | - | - | - | - | |
+| OMAR SHAKUR | 31/03/2004 | 01/07/2019 | 30/06/2024 | - | 70.360 | 70.360 | - | - | 35.000 | - | 35.359 | 35.000 | |
+| PANADA SIMONE | 02/06/2002 | 01/07/2016 | 30/06/2025 | - | 1 | - | 1 | 2 | - | - | - | 1.335 | |
+| PARDEL PIOTR MICHAL | 31/01/2005 | 01/01/2022 | 30/06/2025 | - | 110.000 | 54.000 | 56.000 | 2 | - | - | 1.661 | - | |
+| PARILLA MARTIN | 17/10/2005 | 01/01/2022 | 30/06/2024 | - | 100.986 | 60.592 | 40.395 | 1 | - | - | 100.986 | - | |
+| PEREZ DAVID FERNANDO | 10/07/2004 | 30/09/2020 | 30/06/2025 | - | 185.000 | 100.956 | 84.044 | 2 | 30.000 | - | 2.139 | 30.000 | 10% su importo cessione > 160.000 € |
+| ROALDSOY ALWANDE | 09/06/2004 | 01/10/2020 | 30/06/2024 | - | 12.000 | 9.442 | 2.558 | 1 | - | - | 194 | - | |
+| ROSA ALESSIO | 14/05/2003 | 01/01/2017 | 30/06/2025 | - | 150.001 | 75.001 | 75.000 | 2 | 150.000 | - | - | 20.000 | |
+| SIDIBE ALASSANE | 09/06/2002 | 01/07/2018 | 30/06/2025 | - | 30.810 | 22.582 | 8.228 | 2 | 15.000 | - | 15.809 | - | |
+| VIVIANI ANDREA | 16/05/2002 | 01/07/2016 | 30/06/2023 | - | 15.001 | 15.001 | - | - | 15.000 | - | - | - | |
+| VORLICKY LUKAS | 18/01/2002 | 01/01/2018 | 30/06/2025 | - | 127.809 | 94.600 | 33.210 | 2 | 40.000 | - | 77.808 | 20.000 | |
+| ALTRI | | | | 23 | 154 | - | 154 | | - | - | - | - | |
+| **TOTALE VIVAIO** | | | | 61.376 | 1.498.624 | 866.927 | 631.696 | | 462.500 | - | 289.801 | 163.998 | |
+
+| | Netto Contabile Ceduto (9) | Costo Storico 16 (5+8-9) | F.do amm. 17 (6+11+13) | Netto 18 (16-17) | Compenso Agenti | Rettifica Costo Amm.to su Caricamenti | Altri costi di acquisizione | Compenso agenti liquidato nell'esercizio |
+|---|---|---|---|---|---|---|---|---|
+| **TOTALE DIRITTI PLURIENNALI ALLE PRESTAZIONI DEI CALCIATORI** | 31.224.947 | 271.519.952 | 143.534.831 | 127.985.120 | 16.803.750 | 1.660.771 | 13.588.017 | 7.032.228 |
 
 --- pág. 50 ---
 
@@ -2342,60 +2443,60 @@ L'individuazione dell'appaltatore delle opere di urbanizzazione secondaria e per
 
 --- pág. 56 ---
 
+56
+
 qualificati, 16 dei quali hanno manifestato il proprio interesse, ricevendo di conseguenza l'invito a presentare offerta. La base d'asta è di € 2.347.811 (oltre IVA), a cui si aggiungono € 61.621 (oltre IVA) relativi a oneri di sicurezza non ribassabili. Il criterio di aggiudicazione è quello del massimo ribasso. I lavori realizzativi delle opere urbanizzative e per *standard* qualitativo dovranno essere completati nel termine massimo di 184 giorni naturali e consecutivi dalla loro consegna, oggi indicativamente immaginata nel mese di marzo 2024, nel rispetto del cronoprogramma di progetto.
 
 Nel paragrafo "EVENTI SUCCESSIVI ALLA CHIUSURA DELL'ESERCIZIO" della nota integrativa vengono dati ulteriori aggiornamenti sullo status del progetto e dell'investimento con le relative coperture finanziarie.
 
-## FATTI DI RILIEVO AVVENUTI NELL'ESERCIZIO
+**FATTI DI RILIEVO AVVENUTI NELL'ESERCIZIO**
 
 In merito ai fatti di rilievo avvenuti nell'esercizio, oltre a quelli già presenti nei commenti della Nota Integrativa per la spiegazione dei dati di Bilancio Consolidato si segnala quanto segue.
 
-### Trasformazione della Società Capogruppo da Società per Azioni a Società a responsabilità Limitata
+*Trasformazione della Società Capogruppo da Società per Azioni a Società a responsabilità Limitata*
 
 In data 27 dicembre 2022 la Società Capogruppo Atalanta Bergamasca Calcio si è trasformata da Società per Azioni in Società a responsabilità limitata e ha adottato un nuovo statuto.
 
-### Campagna trasferimenti stagione sportiva 2022/2023
+*Campagna trasferimenti stagione sportiva 2022/2023*
 
 Il Gruppo, nel corso dell'esercizio, ha posto in essere operazioni di trading player e ha conseguito costi e ricavi derivanti da operazioni di calcio mercato che vengono riepilogati attraverso i principali effetti nelle seguente tabelle.
 
-### Effetto investimenti/disinvestimenti in diritti pluriennali alle prestazioni dei calciatori
+*Effetto investimenti/disinvestimenti in diritti pluriennali alle prestazioni dei calciatori*
 
-|  COGNOME E NOME | Società Provenienza / Destinazione | Acquisti / Incrementi | Prezzi di cessione | Rettifica Costo amm.to | Sval. | Minusvalenze | Plusvalenze  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  DOS SANTOS LOURENC EDERSON JOSE | U.S. SALERNITANA 1919 SRL | 22.942.578 | - | - | - | - | -  |
-|  HØILUND RASMUS WINTHER | SK Sturm Wirtschaftsbetriebe GmbH | 16.913.389 | - | - | - | - | -  |
-|  SOPPY BRANDON BEANOU JUNIOR | UDINESE CALCIO S.P.A. | 9.935.831 | - | - | - | - | -  |
-|  LOORMAN ASEMOLA OLAIADE | RASENBALLSPORT LEIPZIG GMBH | 9.350.406 | - | - | - | - | -  |
-|  PESINA MATTEO | ASSOCIAZIONE CALCIO MONZA S.P.A. | 1.553.742 | 11.300.000 | 227.874 | - | - | 9.220.485  |
-|  PEDERSEN JOAKIM MAEHLE | KRC GENK VZW | 1.188.508 | - | - | - | - | -  |
-|  ROMERO CRISTIAN | TOTTENHAM | 1.085.000 | 50.000.000 | 2.434.825 | - | - | 33.849.667  |
-|  ZAPRACOSTA DAVIDE | CHELSEA FOOTBALL CLUB LTD | 1.000.000 | - | - | - | - | -  |
-|  MALINOVSKYI RUSLAN | OLYMPIQUE DE MARSEILLE SASP | 512.821 | 10.256.410 | 1.036.499 | - | - | 5.275.333  |
-|  VLHREVIC VANIA | FK PARTIZAN | 225.000 | - | - | - | - | -  |
-|  FREULER REMO | NOTTINGHAM FOREST | 206.250 | 8.250.000 | 326.295 | - | - | 7.511.200  |
-|  LAMMERS SAM | The Rangers Football Club Limited | - | 4.100.000 | 249.926 | - | - | 466.818  |
-|  OBRIC RELIA | FK PARTIZAN | 135.000 | - | - | - | - | -  |
-|  SUTALO BOSKO | GRADANSKI NOGOMETNI KLUB DINAMO | 101.722 | 4.000.000 | 126.462 | - | - | 1.704.647  |
-|  CAMARA HENRY NABY JUNIOR | AMENS SPORTING CLUB | 74.000 | - | - | - | - | -  |
-|  BEVILACQUA MARCO | FOLIGNO CALCIO ISIDARL | 70.000 | - | - | - | - | -  |
-|  HECKO RICHARD | FK Zelesianne Podbrezova a.s. | 40.000 | 60.000 | - | - | - | 3.819  |
-|  PEREZ DAVID FERNANDO | IF BROMMAPOUKARNA | 30.000 | - | - | - | - | -  |
-|  CARRARO MARCO | - | 25.000 | - | - | 205.998 | - | -  |
-|  VORLICKY LUKAS | FC ZBROJOVKA BRNO, a.s. | 20.000 | - | - | - | - | -  |
-|  GUTH RODRIGO | FORTUNA SITTARD BV | 15.219 | 1.140.000 | 45.885 | - | - | 954.846  |
-|  BABBI LORENZO | - | - | - | - | 70.936 | - | -  |
-|  VIDO LUCA | - | - | - | - | 104.967 | - | -  |
-|  ELIA SALVATORE | - | - | - | - | 46.940 | - | -  |
-|  KRESIC ANTON | HRVATSKI NOGOMETNI KLUB RUEKAD.D. | - | 150.000 | - | - | - | 117.521  |
-|  FSIC ADI | - | - | - | - | 76.073 | - | -  |
-|  DEL PRATO ENRICO | PARMA CALCIO 1913 S.R.L. a socio unico | - | 2.750.000 | 45.122 | - | - | 2.704.877  |
-|  LOVATO MATTEO | U.S. SALERNITANA 1919 SRL | - | 7.000.000 | 95.382 | - | - | 1.389.725  |
-|  GUDMUNDSSON OUVER STEINAR | REKSTRARFELAG HAUKA EHF. | - | - | - | - | 5.172 | -  |
-|  OMAR SHAKUR | - | - | - | - | 23.160 | - | -  |
-|  Diversi | Diverse | 32 | - | - | - | - | -  |
-|  **TOTALE** |  | **65.424.496** | **99.206.410** | **4.588.270** | **528.074** | **5.172** | **63.198.935**  |
-
-56
+| COGNOME E NOME | Società Provenienza / Destinazione | Acquisti / incrementi | Prezzi di cessione | Rettifica Costo amm.to | Sval. | Minusvalenze | Plusvalenze |
+|---|---|---|---|---|---|---|---|
+| DOS SANTOS LOURENC EDERSON JOSE | U.S. SALERNITANA 1919 SRL | 22.942.578 | - | - | - | - | - |
+| HØJLUND RASMUS WINTHER | SK Sturm Wirtschaftsbetriebe GmbH | 16.913.389 | - | - | - | - | - |
+| SOPPY BRANDON BEANOU JUNIOR | UDINESE CALCIO S.P.A. | 9.935.831 | - | - | - | - | - |
+| LOOKMAN ADEMOLA OLAJADE | RASENBALLSPORT LEIPZIG GMBH | 9.350.406 | - | - | - | - | - |
+| PESSINA MATTEO | ASSOCIAZIONE CALCIO MONZA S.P.A. | 1.553.742 | 11.500.000 | 227.874 | - | - | 9.220.485 |
+| PEDERSEN JOAKIM MAEHLE | KRC GENK VZW | 1.188.508 | - | - | - | - | - |
+| ROMERO CRISTIAN | TOTTENHAM | 1.085.000 | 50.000.000 | 2.434.825 | - | - | 33.849.667 |
+| ZAPPACOSTA DAVIDE | CHELSEA FOOTBALL CLUB LTD | 1.000.000 | - | - | - | - | - |
+| MALINOVSKYI RUSLAN | OLYMPIQUE DE MARSEILLE SASP | 512.821 | 10.256.410 | 1.036.499 | - | - | 5.275.333 |
+| VLAHOVIC VANJA | FK PARTIZAN | 225.000 | - | - | - | - | - |
+| FREULER REMO | NOTTINGHAM FOREST | 206.250 | 8.250.000 | 326.295 | - | - | 7.511.200 |
+| LAMMERS SAM | The Rangers Football Club Limited | - | 4.100.000 | 249.926 | - | - | 466.818 |
+| OBRIC RELJA | FK PARTIZAN | 135.000 | - | - | - | - | - |
+| SUTALO BOSKO | GRADANSKI NOGOMETNI KLUB DINAMO | 101.722 | 4.000.000 | 126.462 | - | - | 1.704.647 |
+| CAMARA HENRY NABY JUNIOR | AMIENS SPORTING CLUB | 74.000 | - | - | - | - | - |
+| BEVILACQUA MARCO | FOLIGNO CALCIO SSDARL | 70.000 | - | - | - | - | - |
+| HECKO RICHARD | FK Zeleziarne Podbrezova a.s. | 40.000 | 60.000 | - | - | - | 3.819 |
+| PEREZ DAVID FERNANDO | IF BROMMAPOJKARNA | 30.000 | - | - | - | - | - |
+| CARRARO MARCO | - | 25.000 | - | - | 205.998 | - | - |
+| VORLICKY LUKAS | FC ZBROJOVKA BRNO, a.s. | 20.000 | - | - | - | - | - |
+| GUTH RODRIGO | FORTUNA SITTARD BV | 15.219 | 1.140.000 | 45.885 | - | - | 954.846 |
+| BABBI LORENZO | - | - | - | - | 70.936 | - | - |
+| VIDO LUCA | - | - | - | - | 104.967 | - | - |
+| ELIA SALVATORE | - | - | - | - | 46.940 | - | - |
+| KRESIC ANTON | HRVATSKI NOGOMETNI KLUB RIJEKAD.D. | - | 150.000 | - | - | - | 117.521 |
+| FISIC ADI | - | - | - | - | 76.073 | - | - |
+| DEL PRATO ENRICO | PARMA CALCIO 1913 S.R.L. a socio unico | - | 2.750.000 | 45.122 | - | - | 2.704.877 |
+| LOVATO MATTEO | U.S. SALERNITANA 1919 SRL | - | 7.000.000 | 95.382 | - | - | 1.389.725 |
+| GUDMUNDSSON OLIVER STEINAR | REKSTRARFELAG HAUKA EHF. | - | - | - | - | 5.172 | - |
+| OMAR SHAKUR | - | - | - | - | 23.160 | - | - |
+| Diversi | Diverse | 32 | - | - | - | - | - |
+| **TOTALE** | | 65.424.496 | 99.206.410 | 4.588.270 | 528.074 | 5.172 | 63.198.935 |
 
 --- pág. 57 ---
 

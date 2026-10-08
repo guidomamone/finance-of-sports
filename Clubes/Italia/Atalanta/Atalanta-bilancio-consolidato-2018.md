@@ -105,190 +105,190 @@ Relazione della Società di Revisione pag. 67
 
 # STATO PATRIMONIALE GRUPPO ATALANTA
 
-|  ATTIVO | 31.12.18 | 31.12.17  |
-| --- | --- | --- |
-|  A) Crediti verso soci per versamenti ancora dovuti |  |   |
-|  B) Immobilizzazioni |  |   |
-|  I Immobilizzazioni immateriali |  |   |
-|  1) Costi di impianto e ampliamento | 1.162 | 2.066  |
-|  2) Costi di Sviluppo | 0 | 0  |
-|  3) Diritti di brevetto industriale e diritti di utilizzazione dell'opera dell'ingegno | 42.669 | 47.386  |
-|  4) Concessioni, lianose, marchi e diritti simili | 6.460 | 8.232  |
-|  5) Avviamento | 0 | 0  |
-|  6) Immobilizzazioni in corso ed acconti | 64.996 | 729.639  |
-|  7) Capitalizzazione costi vivvio | 5.200.367 | 5.157.971  |
-|  8) Diritti pluriennali alle prestazioni dei calciatori | 83.253.511 | 83.636.770  |
-|  9) Oneri pluriennali da rettifiche valore ex art L. 27/03 | 0 | 0  |
-|  10) Altre immobilizzazioni immateriali | 2.928.355 | 1.431.869  |
-|  Totale (I) | 91.497.020 | 91.013.933  |
-|  II Immobilizzazioni materiali |  |   |
-|  1) Terreni e fabbricati | 20.238.784 | 19.162.937  |
-|  2) Impianti e macchinario | 256.339 | 563.980  |
-|  3) Attrezzature industriali e commerciali | 180.656 | 158.462  |
-|  4) Altri beni | 213.903 | 352.928  |
-|  5) Immobilizzazioni in corso e acconti | 4.852.646 | 198.568  |
-|  Totale (II) | 25.742.328 | 20.436.075  |
-|  III Immobilizzazioni finanziarie |  |   |
-|  1) Partecipazioni in: |  |   |
-|  a) imprese controllate | 0 | 0  |
-|  b) imprese collegate | 0 | 0  |
-|  c) imprese controllanti | 0 | 0  |
-|  d) imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  d bis) in altre imprese | 4.000 | 4.000  |
-|  2) Crediti |  |   |
-|  a) verso imprese controllate | 0 | 0  |
-|  b) verso imprese collegate | 0 | 0  |
-|  c) verso imprese controllanti | 0 | 0  |
-|  d) verso imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  d bis) verso altri | 19.929 | 1.408  |
-|  Totale (III) | 23.929 | 5.408  |
-|  TOTALE IMMOBILIZZAZIONI ( B ) | 117.263.777 | 111.456.216  |
-|  C) Attivo circolante |  |   |
-|  I Rimanenze |  |   |
-|  1) materie prime, sussidiarie e di consumo | 0 | 0  |
-|  2) prodotti in corso di lavorazione e semilavorati | 0 | 0  |
-|  3) lavori in corso su ordinazione; | 0 | 0  |
-|  4) prodotti finiti e merci; | 828.234 | 619.306  |
-|  5) acconti | 0 | 0  |
-|  Totale (I) | 828.234 | 619.306  |
-|  II Crediti |  |   |
-|  1) Verso clienti |  |   |
-|  - esigibili entro l'esercizio successivo | 17.289.152 | 12.271.149  |
-|  - esigibili oltre l'esercizio successivo | 457.327 | 189.958  |
-|  2) Verso Imprese controllate |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  3) Verso Imprese collegate |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  4) Verso Imprese controllanti |  |   |
-|  - esigibili entro l'esercizio successivo | 1.200 | 198.012  |
-|  - esigibili oltre l'esercizio successivo | 204.525 | 204.525  |
-|  5) Verso Imprese sottoposte al controllo delle controllanti |  |   |
-|  - esigibili entro l'esercizio successivo | 91.160 | 174.715  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  5-bis) Crediti tributari |  |   |
-|  - esigibili entro l'esercizio successivo | 352.396 | 1.155.312  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  5-ter) Imposte Anticipate |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  5-quater) Verso altri |  |   |
-|  - esigibili entro l'esercizio successivo | 7.223.981 | 13.520.710  |
-|  - esigibili oltre l'esercizio successivo | 10.703.420 | 2.200.000  |
-|  Totale (II) | 36.323.161 | 29.014.381  |
-|  III Attività finanziarie che non costituiscono immobilizzazioni |  |   |
-|  1) Partecipazioni in imprese controllate | 0 | 0  |
-|  2) Partecipazioni in imprese collegate | 0 | 0  |
-|  3) Partecipazioni in imprese controllanti | 0 | 0  |
-|  3 bis ) Partecipazioni in imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  4) Altre partecipazioni | 0 | 0  |
-|  5) Strumenti finanziari derivati attivi | 0 | 0  |
-|  6) Altri titoli | 0 | 0  |
-|  Totale (III) | 0 | 0  |
-|  IV Disponibilità liquide |  |   |
-|  1) Depositi bancari e postali | 9.241.360 | 8.036.205  |
-|  2) Assegni | 0 | 0  |
-|  3) Denaro e valori in cassa | 16.146 | 14.091  |
-|  Totale (IV) | 9.257.586 | 8.050.296  |
-|  TOTALE ATTIVO CIRCOLANTE ( C ) | 46.408.991 | 38.583.903  |
-|  D) Ratei e risconti attivi |  |   |
-|  Risconti Attivi | 11.311.020 | 2.763.359  |
-|  Ratei Attivi | 0 | 0  |
-|  TOTALE RATEI E RISCONTI ( D ) | 11.311.020 | 2.763.359  |
-|  TOTALE ATTIVO ( A+B+C+D ) | 174.983.698 | 152.803.558  |
+| ATTIVO | 31.12.18 | 31.12.17 |
+|---|---:|---:|
+| **A) Crediti verso soci per versamenti ancora dovuti** | | |
+| **B) Immobilizzazioni** | | |
+| I Immobilizzazioni immateriali | | |
+| 1) Costi di impianto e ampliamento | 1.162 | 2.066 |
+| 2) Costi di Sviluppo | 0 | 0 |
+| 3) Diritti di brevetto industriale e diritti di utilizzazione dell'opere dell'ingegno | 42.669 | 47.386 |
+| 4) Concessioni, licenze, marchi e diritti simili | 6.460 | 8.232 |
+| 5) Avviamento | 0 | 0 |
+| 6) Immobilizzazioni in corso ed acconti | 64.996 | 729.639 |
+| 7) Capitalizzazione costi vivaio | 5.200.367 | 5.157.971 |
+| 8) Diritti pluriennali alle prestazioni dei calciatori | 83.253.511 | 83.636.770 |
+| 9) Oneri pluriennali da rettifiche valore ex art L. 27/03 | 0 | 0 |
+| 10) Altre immobilizzazioni immateriali | 2.928.355 | 1.431.869 |
+| **Totale (I)** | **91.497.520** | **91.013.933** |
+| II Immobilizzazioni materiali | | |
+| 1) Terreni e fabbricati | 20.238.784 | 19.162.937 |
+| 2) Impianti e macchinario | 256.339 | 563.980 |
+| 3) Attrezzature industriali e commerciali | 180.656 | 158.462 |
+| 4) Altri beni | 213.903 | 352.928 |
+| 5) Immobilizzazioni in corso e acconti | 4.852.646 | 198.568 |
+| **Totale (II)** | **25.742.328** | **20.436.875** |
+| III Immobilizzazioni finanziarie | | |
+| 1) Partecipazioni in: | | |
+| a) imprese controllate | 0 | 0 |
+| b) imprese collegate | 0 | 0 |
+| c) imprese controllanti | 0 | 0 |
+| d) imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| d bis) in altre imprese | 4.000 | 4.000 |
+| 2) Crediti | | |
+| a) verso imprese controllate | 0 | 0 |
+| b) verso imprese collegate | 0 | 0 |
+| c) verso imprese controllanti | 0 | 0 |
+| d) verso imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| d bis) verso altri | 19.929 | 1.408 |
+| **Totale (III)** | **23.929** | **5.408** |
+| **TOTALE IMMOBILIZZAZIONI ( B )** | **117.263.777** | **111.456.216** |
+| **C) Attivo circolante** | | |
+| I Rimanenze | | |
+| 1) materie prime, sussidiarie e di consumo | 0 | 0 |
+| 2) prodotti in corso di lavorazione e semilavorati | 0 | 0 |
+| 3) lavori in corso su ordinazione; | 0 | 0 |
+| 4) prodotti finiti e merci; | 828.234 | 619.306 |
+| 5) acconti | 0 | 0 |
+| **Totale (I)** | **828.234** | **619.306** |
+| II Crediti | | |
+| 1) Verso clienti | | |
+| - esigibili entro l'esercizio successivo | 17.289.152 | 12.271.149 |
+| - esigibili oltre l'esercizio successivo | 457.327 | 189.958 |
+| 2) Verso Imprese controllate | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 3) Verso Imprese collegate | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 4) Verso Imprese controllanti | | |
+| - esigibili entro l'esercizio successivo | 1.200 | 198.012 |
+| - esigibili oltre l'esercizio successivo | 204.525 | 204.525 |
+| 5) Verso imprese sottoposte al controllo delle controllanti | | |
+| - esigibili entro l'esercizio successivo | 91.160 | 174.715 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 5-bis) Crediti tributari | | |
+| - esigibili entro l'esercizio successivo | 352.396 | 1.155.312 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 5-ter) Imposte Anticipate | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 5-quater) Verso altri | | |
+| - esigibili entro l'esercizio successivo | 7.223.981 | 13.520.710 |
+| - esigibili oltre l'esercizio successivo | 10.703.420 | 2.200.000 |
+| **Totale (II)** | **36.323.161** | **29.914.381** |
+| III Attività finanziarie che non costituiscono immobilizzazioni | | |
+| 1) Partecipazioni in imprese controllate | 0 | 0 |
+| 2) Partecipazioni in imprese collegate | 0 | 0 |
+| 3) Partecipazioni in imprese controllanti | 0 | 0 |
+| 3 bis ) Partecipazioni in imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| 4) Altre partecipazioni | 0 | 0 |
+| 5) Strumenti finanziari derivati attivi | 0 | 0 |
+| 6) Altri titoli | 0 | 0 |
+| **Totale (III)** | **0** | **0** |
+| IV Disponibilità liquide | | |
+| 1) Depositi bancari e postali | 9.241.360 | 8.036.205 |
+| 2) Assegni | 0 | 0 |
+| 3) Denaro e valori in cassa | 16.146 | 14.091 |
+| **Totale (IV)** | **9.257.506** | **8.050.296** |
+| **TOTALE ATTIVO CIRCOLANTE ( C )** | **46.408.901** | **38.583.983** |
+| **D) Ratei e risconti attivi** | | |
+| Risconti Attivi | 11.311.020 | 2.763.359 |
+| Ratei Attivi | 0 | 0 |
+| **TOTALE RATEI E RISCONTI ( D )** | **11.311.020** | **2.763.359** |
+| **TOTALE ATTIVO ( A+B+C+D )** | **174.983.698** | **152.803.558** |
 
 5
 
 --- pág. 10 ---
 
-## STATO PATRIMONIALE GRUPPO ATALANTA
+# STATO PATRIMONIALE GRUPPO ATALANTA
 
-|  PASSIVO | 31.12.18 | 31.12.17  |
-| --- | --- | --- |
-|  **A) Patrimonio netto** |  |   |
-|  I Capitale sociale | 4.893.750 | 4.893.750  |
-|  II Riserva da sopraprezzo delle azioni | 0 | 0  |
-|  III Riserve di rivalutazione | 0 | 0  |
-|  IV Riserva legale | 978.750 | 13.356  |
-|  V Riserve statutarie | 2.699.585 | 26.712  |
-|  VI Altre riserve: |  |   |
-|  - Riserva straordinaria | 8.657 | 8.657  |
-|  - Riserva da arrotondamento euro per riduzione capitale sociale | 51.545 | 51.545  |
-|  - Avanzo di fusione | 13.531 | 13.531  |
-|  - Versamento soci in c/futuro aumento capitale sociale - Socio La Dea S.r.l. | 0 | 7.500.000  |
-|  - Riserva OCI - derivati | (36.562) | (21.302)  |
-|  - Riserva arrotondamento euro | 2 | (3)  |
-|  VII Riserva per operazioni di copertura dei flussi finanziari attesi | 0 | 0  |
-|  VIII Util (perdite) portati a nuovo | 18.814.206 | (4.230.286)  |
-|  IX Util (perdita) dell'esercizio | 23.958.355 | 26.682.658  |
-|  **TOTALE PATRIMONIO NETTO ( A )** | **51.381.819** | **34.938.618**  |
-|  **B) FONDI PER RISCHI ED ONERI** |  |   |
-|  1) per trattamento di quiescenza e obblighi simili |  | 0  |
-|  2) per imposte, anche differite | 12.859.145 | 13.244.389  |
-|  3) strumenti finanziari derivati passivi | 48.108 | 28.029  |
-|  4) altri | 626.131 | 616.816  |
-|  **TOTALE FONDI PER RISCHI E ONERI ( B )** | **13.533.384** | **13.889.234**  |
-|  **C) TRATTAMENTO FINE RAPPORTO DI LAVORO SUBORDINATO** | **292.283** | **222.094**  |
-|  **TOTALE TRATTAMENTO FINE RAPPORTO LAVORO SUB. ( C )** | **292.283** | **222.094**  |
-|  **D) Debiti** |  |   |
-|  1) Obbligazioni |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  2) Obbligazioni convertibili |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  3) Debiti verso soci per finanziamenti |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  4) Debiti verso banche |  |   |
-|  - esigibili entro l'esercizio successivo | 1.385.926 | 1.327.643  |
-|  - esigibili oltre l'esercizio successivo | 14.418.763 | 11.677.757  |
-|  5) Debiti verso altri finanziatori |  |   |
-|  - esigibili entro l'esercizio successivo | 82.336 | 966.570  |
-|  - esigibili oltre l'esercizio successivo | 473.455 | 555.791  |
-|  6) Accordi |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  7) Debiti verso fornitori |  |   |
-|  - esigibili entro l'esercizio successivo | 22.860.412 | 18.856.396  |
-|  - esigibili oltre l'esercizio successivo | 3.844.603 | 10.760.931  |
-|  8) Debiti rappresentati da titoli di credito |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  9) Debiti verso imprese controllate |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  10) Debiti verso imprese collegate |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 30.000  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  11) Debiti verso controllanti |  |   |
-|  - esigibili entro l'esercizio successivo | 5.636.895 | 3.035.999  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  11-bis) Debiti verso imprese sottoposte al controllo delle controllanti |  |   |
-|  - esigibili entro l'esercizio successivo | 71.639 | 209.040  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  12) Debiti tributari |  |   |
-|  - esigibili entro l'esercizio successivo | 3.997.709 | 6.708.879  |
-|  - esigibili oltre l'esercizio successivo | 13.751 | 68.752  |
-|  13) Debiti verso istituti di previdenza e di sicurezza sociale |  |   |
-|  - esigibili entro l'esercizio successivo | 300.116 | 320.125  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  14) Debiti da compartecipazione ex art. 102 bis N.O.I.F. |  |   |
-|  - esigibili entro l'esercizio successivo | 0 | 0  |
-|  - esigibili oltre l'esercizio successivo | 0 | 0  |
-|  15) Debiti verso Enti - Settore specifico |  |   |
-|  - esigibili entro l'esercizio successivo | 7.828.265 | 1.396.209  |
-|  - esigibili oltre l'esercizio successivo | 9.683.203 | 598.578  |
-|  16) Altri debiti |  |   |
-|  - esigibili entro l'esercizio successivo | 11.266.461 | 17.662.664  |
-|  - esigibili oltre l'esercizio successivo | 5.791.991 | 8.165.323  |
-|  **TOTALE DEBITI ( D )** | **87.655.525** | **82.340.657**  |
-|  **E) Ratei e risconti** |  |   |
-|  Risconti passivi | 22.113.997 | 21.402.499  |
-|  Ratei passivi | 6.690 | 10.456  |
-|  **TOTALE RATEI E RISCONTI ( E )** | **22.128.687** | **21.412.955**  |
-|  **TOTALE PASSIVO ( A+B+C+D+E )** | **174.983.698** | **152.803.558**  |
+| PASSIVO | 31.12.18 | 31.12.17 |
+| :--- | :--- | :--- |
+| **A) Patrimonio netto** | | |
+| I Capitale sociale | 4.893.750 | 4.893.750 |
+| II Riserva da sopraprezzo delle azioni | 0 | 0 |
+| III Riserve di rivalutazione | 0 | 0 |
+| IV Riserva legale | 978.750 | 13.356 |
+| V Riserve statutarie | 2.699.585 | 26.712 |
+| VI Altre riserve: | | |
+| - Riserva straordinaria | 8.657 | 8.657 |
+| - Riserva da arrotondamento euro per riduzione capitale sociale | 51.545 | 51.545 |
+| - Riserva da fusione | 13.531 | 13.531 |
+| - Versamento soci in c/futuro aumento capitale sociale - Socio La Dea S.r.l. | 0 | 7.500.000 |
+| - Riserva OCI - derivati | (36.562) | (21.302) |
+| - Riserva arrotondamento euro | 2 | (3) |
+| VII Riserva per operazioni di copertura dei flussi finanziari attesi | 0 | 0 |
+| VIII Utili (perdite) portati a nuovo | 18.814.206 | (4.230.286) |
+| IX Utile (perdita) dell'esercizio | 23.958.355 | 26.682.658 |
+| **TOTALE PATRIMONIO NETTO (A)** | **51.381.819** | **34.938.618** |
+| **B) FONDI PER RISCHI ED ONERI** | | |
+| 1) per trattamento di quiescenza e obblighi simili | 0 | 0 |
+| 2) per imposte, anche differite | 12.859.145 | 13.244.389 |
+| 3) strumenti finanziari derivati passivi | 48.108 | 28.029 |
+| 4) altri | 626.131 | 616.816 |
+| **TOTALE FONDI PER RISCHI E ONERI (B)** | **13.533.384** | **13.889.234** |
+| **C) TRATTAMENTO FINE RAPPORTO DI LAVORO SUBORDINATO** | **292.283** | **222.094** |
+| **TOTALE TRATTAMENTO FINE RAPPORTO LAVORO SUB. (C)** | **292.283** | **222.094** |
+| **D) Debiti** | | |
+| 1) Obbligazioni | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 2) Obbligazioni convertibili | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 3) Debiti verso soci per finanziamenti | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 4) Debiti verso banche | | |
+| - esigibili entro l'esercizio successivo | 1.385.926 | 1.327.643 |
+| - esigibili oltre l'esercizio successivo | 14.418.763 | 11.677.757 |
+| 5) Debiti verso altri finanziatori | | |
+| - esigibili entro l'esercizio successivo | 82.336 | 966.570 |
+| - esigibili oltre l'esercizio successivo | 473.455 | 555.791 |
+| 6) Acconti | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 7) Debiti verso fornitori | | |
+| - esigibili entro l'esercizio successivo | 22.860.412 | 18.856.396 |
+| - esigibili oltre l'esercizio successivo | 3.844.603 | 10.760.931 |
+| 8) Debiti rappresentati da titoli di credito | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 9) Debiti verso imprese controllate | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 10) Debiti verso imprese collegate | | |
+| - esigibili entro l'esercizio successivo | 0 | 30.000 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 11) Debiti verso controllanti | | |
+| - esigibili entro l'esercizio successivo | 5.636.895 | 3.035.999 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 11-bis) Debiti verso imprese sottoposte al controllo delle controllanti | | |
+| - esigibili entro l'esercizio successivo | 71.639 | 209.040 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 12) Debiti tributari | | |
+| - esigibili entro l'esercizio successivo | 3.997.709 | 6.708.879 |
+| - esigibili oltre l'esercizio successivo | 13.751 | 68.752 |
+| 13) Debiti verso istituti di previdenza e di sicurezza sociale | | |
+| - esigibili entro l'esercizio successivo | 300.116 | 320.125 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 14) Debiti da compartecipazione ex art. 102 bis N.O.I.F. | | |
+| - esigibili entro l'esercizio successivo | 0 | 0 |
+| - esigibili oltre l'esercizio successivo | 0 | 0 |
+| 15) Debiti verso Enti - Settore specifico | | |
+| - esigibili entro l'esercizio successivo | 7.828.265 | 1.396.209 |
+| - esigibili oltre l'esercizio successivo | 9.683.203 | 598.578 |
+| 16) Altri debiti | | |
+| - esigibili entro l'esercizio successivo | 11.266.461 | 17.662.664 |
+| - esigibili oltre l'esercizio successivo | 5.791.991 | 8.165.323 |
+| **TOTALE DEBITI (D)** | **87.655.525** | **82.340.657** |
+| **E) Ratei e risconti** | | |
+| Risconti passivi | 22.113.997 | 21.402.499 |
+| Ratei passivi | 6.690 | 10.456 |
+| **TOTALE RATEI E RISCONTI (E)** | **22.120.687** | **21.412.955** |
+| **TOTALE PASSIVO (A+B+C+D+E)** | **174.983.698** | **152.803.558** |
 
 6
 
@@ -296,93 +296,93 @@ Relazione della Società di Revisione pag. 67
 
 # CONTO ECONOMICO GRUPPO ATALANTA
 
-|  CONTO ECONOMICO | 31.12.18 | 31.12.17  |
-| --- | --- | --- |
-|  A) Valore della produzione |  |   |
-|  1) Ricavi delle vendite e delle prestazioni | 8.010.208 | 7.352.661  |
-|  2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti | 0 | 0  |
-|  3) variazioni di lavori in corso su ordinazione | 0 | 0  |
-|  4) Incrementi di immobilizzazioni per lavori interni | 2.689.378 | 2.224.540  |
-|  5) Altri ricavi e proventi | 145.041.040 | 138.119.446  |
-|  Totale Valore della produzione ( A ) | 155.740.626 | 147.696.647  |
-|  B) Costi della produzione |  |   |
-|  6) per materie prime, sussidiarie, di consumo e merci | 2.398.520 | 1.825.467  |
-|  7) per servizi | 18.810.772 | 16.694.925  |
-|  8) per godimento beni di terzi | 6.526.721 | 3.496.503  |
-|  9) per il personale |  |   |
-|  a) salari e stipendi | 42.881.429 | 44.164.744  |
-|  b) oneri sociali | 2.809.913 | 2.827.719  |
-|  c) trattamento di fine rapporto | 617.851 | 558.976  |
-|  d) trattamento di quiescenza e simili | 0 | 0  |
-|  e) altri costi | 3.207.111 | 6.017.262  |
-|  10) Ammortamenti e svalutazioni |  |   |
-|  a) ammortamento delle immobilizzazioni immateriali | 33.697.818 | 23.076.982  |
-|  b) ammortamento delle immobilizzazioni materiali | 1.329.950 | 1.164.552  |
-|  c) altre svalutazioni delle immobilizzazioni | 360.000 | 56.421  |
-|  d) svalutazione crediti compresi nell'attivo circolante e disp. liquide | 1.210.907 | 273.996  |
-|  11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci | (208.929) | (118.185)  |
-|  12) Accantonamenti per rischi ed oneri | 9.315 | 282.343  |
-|  13) Altri accantonamenti | 0 | 0  |
-|  14) Oneri diversi di gestione | 6.444.735 | 4.494.609  |
-|  Totale costi della produzione ( B ) | 120.096.113 | 104.816.313  |
-|  Differenza tra Valore e Costi della Produzione ( A - B ) | 35.644.513 | 42.880.333  |
-|  C) Proventi e oneri finanziari |  |   |
-|  15) Proventi da partecipazioni |  |   |
-|  a) da partecipazioni in imprese controllate | 0 | 0  |
-|  b) da partecipazioni in imprese collegate | 0 | 0  |
-|  c) da partecipazioni in imprese controllante | 0 | 0  |
-|  d) da partecipazioni in imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  Totale 15) Proventi finanziari da partecipazioni | 0 | 0  |
-|  16) Altri proventi finanziari |  |   |
-|  a) da crediti immobilizzati: |  |   |
-|  • da imprese controllate | 0 | 0  |
-|  • da imprese collegate | 0 | 0  |
-|  • da imprese controllanti | 28.219 | 0  |
-|  • da imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  b) da crediti immobilizzati che non costituiscono immobilizzazioni | 0 | 0  |
-|  c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni | 0 | 0  |
-|  d) proventi diversi dai precedenti: |  |   |
-|  • da imprese controllate | 0 | 0  |
-|  • da imprese collegate | 0 | 0  |
-|  • da imprese controllanti | 0 | 0  |
-|  • da imprese sottoposte al controllo delle controllanti | 0 | 0  |
-|  • da altri | 1.719 | 66.119  |
-|  • da compartecipazioni EX ART. 102 bis NCIF | 0 | 0  |
-|  Totale 16) Altri proventi finanziari | 29.938 | 66.119  |
-|  17) Interessi ed altri oneri finanziari |  |   |
-|  a) verso imprese controllate | 0 | 0  |
-|  b) verso imprese collegate | 0 | 0  |
-|  c) verso imprese controllanti | 224.682 | 203.405  |
-|  d) debiti verso altri |  |   |
-|  • da altri | 827.075 | 2.492.617  |
-|  • da compartecipazioni EX ART. 102 bis NCIF | 0 | 0  |
-|  17-bis) Utile e perdite su cambi | (165) | 718  |
-|  Totale 17) Interessi e altri oneri | 1.051.592 | 2.696.740  |
-|  Totale proventi ed oneri finanziari ( C= 15+16-17+/-17-bis ) | (1.021.654) | (2.630.621)  |
-|  D) Rettifiche di valore di attività finanziarie |  |   |
-|  18) Rivalutazioni |  |   |
-|  a) di partecipazioni | 0 | 0  |
-|  b) di immobilizzazioni finanziarie che non costituiscono partecipazioni | 0 | 0  |
-|  c) di titoli iscritti all'attivo circolante che non costituiscono partecipazioni | 0 | 0  |
-|  d) di strumenti finanziari derivati | 0 | 0  |
-|  Totale 18) Rivalutazioni | 0 | 0  |
-|  19) Svalutazioni |  |   |
-|  a) di partecipazioni | 0 | 0  |
-|  b) di immobilizzazioni finanziarie che non costituiscono partecipazioni | 0 | 0  |
-|  c) di titoli iscritti all'attivo circolante che non costituiscono partecipazioni | 0 | 0  |
-|  d) di strumenti finanziari derivati | 0 | 0  |
-|  Totale 19) Svalutazioni | 0 | 0  |
-|  Totale rettifiche di valore di attività finanziarie ( D= 18-19 ) | 0 | 0  |
-|  Rivoltate prima delle imposte ( A - B +/- C +/- D ) | 34.622.859 | 40.249.712  |
-|  20) Imposte sul reddito dell'esercizio, correnti, differite e anticipate |  |   |
-|  Imposte correnti | 3.410.671 | 3.742.947  |
-|  Imposte relative ad esercizi precedenti | (266.490) |   |
-|  Oneri da adesione al consolidato fiscale | 8.059.694 | 2.809.332  |
-|  Proventi da adesione al consolidato fiscale | 0 | 0  |
-|  Imposte differite | 93.657 | 6.637.009  |
-|  Imposta anticipate | (630.028) | 377.766  |
-|  Totale 20) Imposte | 10.664.504 | 13.567.054  |
-|  21) Utile/(perdita) dell'esercizio | 23.958.355 | 26.682.658  |
+| CONTO ECONOMICO | 31.12.18 | 31.12.17 |
+| :--- | :--- | :--- |
+| **A) Valore della produzione** | | |
+| 1) Ricavi delle vendite e delle prestazioni | 8.010.208 | 7.352.661 |
+| 2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti | 0 | 0 |
+| 3) variazioni di lavori in corso su ordinazione | 0 | 0 |
+| 4) Incrementi di immobilizzazioni per lavori interni | 2.689.378 | 2.224.540 |
+| 5) Altri ricavi e proventi | 145.041.040 | 138.119.446 |
+| **Totale Valore della produzione (A)** | **155.740.626** | **147.696.647** |
+| **B) Costi della produzione** | | |
+| 6) per materie prime, sussidiarie, di consumo e merci | 2.398.520 | 1.825.467 |
+| 7) per servizi | 18.810.772 | 16.694.925 |
+| 8) per godimento beni di terzi | 6.526.721 | 3.496.503 |
+| 9) per il personale | | |
+| a) salari e stipendi | 42.881.429 | 44.164.744 |
+| b) oneri sociali | 2.809.913 | 2.827.719 |
+| c) trattamento di fine rapporto | 617.851 | 558.976 |
+| d) trattamento di quiescenza e simili | 0 | 0 |
+| e) altri costi | 3.207.111 | 6.017.262 |
+| 10) Ammortamenti e svalutazioni | | |
+| a) ammortamento delle immobilizzazioni immateriali | 33.697.818 | 23.076.982 |
+| b) ammortamento delle immobilizzazioni materiali | 1.329.950 | 1.164.552 |
+| c) altre svalutazioni delle immobilizzazioni | 360.000 | 56.421 |
+| d) svalutazione crediti compresi nell'attivo circolante e disp. liquide | 1.210.907 | 273.996 |
+| 11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci | (208.929) | (118.185) |
+| 12) Accantonamenti per rischi ed oneri | 9.315 | 282.343 |
+| 13) Altri accantonamenti | 0 | 0 |
+| 14) Oneri diversi di gestione | 6.444.735 | 4.494.609 |
+| **Totale costi della produzione (B)** | **120.096.113** | **104.816.313** |
+| **Differenza tra Valore e Costi della Produzione (A-B)** | **35.644.513** | **42.880.333** |
+| **C) Proventi e oneri finanziari** | | |
+| 15) Proventi da partecipazioni | | |
+| a) da partecipazioni in imprese controllate | 0 | 0 |
+| b) da partecipazioni in imprese collegate | 0 | 0 |
+| c) da partecipazioni in imprese controllanti | 0 | 0 |
+| d) da partecipazioni in imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| **Totale 15) Proventi finanziari da partecipazioni** | **0** | **0** |
+| 16) Altri proventi finanziari | | |
+| a) da crediti immobilizzati: | | |
+| - da imprese controllate | 0 | 0 |
+| - da imprese collegate | 0 | 0 |
+| - da imprese controllanti | 28.219 | 0 |
+| - da imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| b) da crediti immobilizzati che non costituiscono immobilizzazioni | 0 | 0 |
+| c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni | 0 | 0 |
+| d) proventi diversi dai precedenti: | | |
+| - da imprese controllate | 0 | 0 |
+| - da imprese collegate | 0 | 0 |
+| - da imprese controllanti | 0 | 0 |
+| - da imprese sottoposte al controllo delle controllanti | 0 | 0 |
+| - da altri | 1.719 | 66.119 |
+| - da compartecipazioni EX ART. 102 bis NOIF | 0 | 0 |
+| **Totale 16) Altri proventi finanziari** | **29.938** | **66.119** |
+| 17) Interessi ed altri oneri finanziari | | |
+| a) verso imprese controllate | 0 | 0 |
+| b) verso imprese collegate | 0 | 0 |
+| c) verso imprese controllanti | 224.682 | 203.405 |
+| d) debiti verso altri | | |
+| - da altri | 827.075 | 2.492.617 |
+| - da compartecipazioni EX ART. 102 bis NOIF | 0 | 0 |
+| 17-bis) Utile e perdite su cambi | (165) | 718 |
+| **Totale 17) Interessi e altri oneri** | **1.051.592** | **2.696.740** |
+| **Totale proventi ed oneri finanziari (C = 15+16-17+/-17-bis)** | **(1.021.654)** | **(2.630.621)** |
+| **D) Rettifiche di valore di attività finanziarie** | | |
+| 18) Rivalutazioni | | |
+| a) di partecipazioni | 0 | 0 |
+| b) di immobilizzazioni finanziarie che non costituiscono partecipazioni | 0 | 0 |
+| c) di titoli iscritti all'attivo circolante che non costituiscono partecipazioni | 0 | 0 |
+| d) di strumenti finanziari derivati | 0 | 0 |
+| **Totale 18) Rivalutazioni** | **0** | **0** |
+| 19) Svalutazioni | | |
+| a) di partecipazioni | 0 | 0 |
+| b) di immobilizzazioni finanziarie che non costituiscono partecipazioni | 0 | 0 |
+| c) di titoli iscritti all'attivo circolante che non costituiscono partecipazioni | 0 | 0 |
+| d) di strumenti finanziari derivati | 0 | 0 |
+| **Totale 19) Svalutazioni** | **0** | **0** |
+| **Totale rettifiche di valore di attività finanziarie (D= 18-19)** | **0** | **0** |
+| **Risultato prima delle imposte (A-B+/-C+/-D)** | **34.622.859** | **40.249.712** |
+| 20) Imposte sul reddito dell'esercizio, correnti, differite e anticipate | | |
+| Imposte correnti | 3.410.671 | 3.742.947 |
+| Imposte relative ad esercizi precedenti | (269.490) | |
+| Oneri da adesione al consolidato fiscale | 8.059.694 | 2.809.332 |
+| Proventi da adesione al consolidato fiscale | 0 | 0 |
+| Imposte differite | 93.657 | 6.637.009 |
+| Imposte anticipate | (630.028) | 377.766 |
+| **Totale 20) Imposte** | **10.664.504** | **13.567.054** |
+| **21) Utile/(perdita) dell'esercizio** | **23.958.355** | **26.682.658** |
 
 7
 
@@ -1675,41 +1675,68 @@ Il Presidente del Consiglio di Amministrazione
 
 --- pág. 48 ---
 
-# Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
+Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori
 
-|  Salutare CONDITA' (RSE) | Data di verifica | Data stato pisto- nato/25 | Data trattore dell'e- mento/25 | Data mondo | Instituta | Instituta | Istituti di 01.01.2018 |   |   | Instituta e altri displattati |   |   | Istituti e/o di displattati |   |   | Istituti di 01.12.2018 |   |   | Istituti  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |   |   |   |   |  Data trattore | Instituta | Instituta | Data trattore | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta | Instituta  |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 (3+4+4) | 17 (4+5+6+7+8) | 18 (5+6+7) |   |
-|  **Allegato 1 – Diritti Pluriennali alle prestazioni dei calciatori**  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  ANZEZANZE | 12/01/2018 | 10/07/2018 | 30/06/2018 | 10/10/2018 | Non-Atlanta |  |  | 17,00 | 41,00 | 15,00 | - | - | - | 6,00 | - | - | - | - | 9,00 | 9,00 | 6,00 | -  |
-|  ALBEGI | 12/01/2018 | 04/02/2018 | 30/06/2018 | 04/02/2018 | All Time Group L.L. |  |  | 1,23,120 | 174,000 | 58,000 | 27,000 | - | - | 131,140 | - | - | - | - | 1,28,120 | 81,700 | 39,000 | -  |
-|  AMICA BATO | 11/01/2018 | 30/06/2018 | 30/06/2018 | 30/06/2018 | Non-Atlanta |  |  | 17,00 | 6,700 | 10,200 | - | - | - | 9,00 | - | - | - | - | 17,00 | 11,700 | 11,200 | -  |
-|  AMIKAROSI ELO | 12/01/2018 | 10/07/2018 | 30/06/2018 | 10/10/2018 | Non-Atlanta - Open |  |  | 69,000 | 38,000 | 61,200 | 32,000 | - | - | 31,170 | - | - | - | - | 32,000 | 30,100 | 41,700 | 10,000  |
-|  AMIKAROSI | 11/01/2018 | 30/06/2018 | 30/06/2018 | 30/06/2018 | All Time L.L. |  |  | - | - | - | 80,000 | - | - | 80,000 | - | - | - | - | 80,000 | 81,100 | 68,000 | -  |
-|  BASIC MUSIC APIN | 12/01/2018 | 30/06/2018 | 30/06/2018 | 30/06/2018 | Non-Atlanta |  |  | - | - | - | 8,700 | - | - | 4,170 | - | - | - | - | 8,700 | 4,170 | 12,200 | -  |
-|  BASIC MUSIC ARIEL | 04/01/2018 | 30/06/2018 | 30/06/2018 | 30/06/2018 | Non-Atlanta |  |  | 38,000 | 31,000 | 1,200 | - | - | - | 1,200 | - | - | - | - | 38,000 | 8,000 | - | -  |
-|  BASIC MUSIC | 14/01/2018 | 12/07/2018 | 30/06/2018 | 12/07/2018 | Non-Atlanta |  |  | - | - | - | 8,000 | - | - | 4,000 | - | - | - | - | 8,000 | 4,000 | 10,000 | -  |
-|  CANADA FESTICO | 12/08/2018 | 30/06/2018 | 30/06/2018 | 30/06/2018 | Non-Atlanta - Open - Interne - Portale - All L.L. |  |  | 1,00,000 | 78,000 | 1,00,000 | - | - | - | 394,100 | - | - | - | - | 1,00,000 | 1,00,000 | 78,000 | -  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | Non-Atlanta |  |  | 38,000 | 1,000 | 12,000 | 8,000 | - | - | 3,000 | - | - | - | - | 38,000 | 1,000 | 12,000 | -  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | Non-Atlanta |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
-|  CANADA FESTICO | 12/08/2018 | 10/07/2018 | 30/06/2018 | 10/07/2018 | All Time L.L. |  |  | 1,00,000 | 33,000 | 1,00,000 | 17,000 | - | - | 30,000 | - | - | - | - | 1,00,000 | 30,000 | 30,000 | 10,000  |
+[I dati della tabella sottostante risultano stampati a risoluzione ridotta e dimensioni estremamente ridotte e risultano in larga parte non leggibili]
+
+Intestazioni di colonna:
+- Dati relativi alla prestazione del calciatore
+- Dati anagrafici (Data di nascita, Luogo di nascita, Cittadinanza, Ruolo)
+- Contratto (Data inizio, Data termine)
+- Data primo tesseramento professionista
+- Provenienza
+- Destinazione (Data Cessione, Squadra)
+- Valore al 01.01.2018 (Costo Storico, F.do ammort., Valore Netto)
+- Variazioni dell'esercizio:
+  - Acquisti / Incrementi (Risoluz. Compr., Incrementi)
+  - Cessioni (Costo Storico, Fondo Ammort., Decrementi)
+- Effetti Economici di periodo (Svalutazioni, Minusvalenze, Plusvalenze)
+- Valore al 31.12.2018 (Quota ammortamento, Costo Storico, F.do ammort., Valore Netto)
+- Note (Compensi agenti, Premi di rendimento / Valorizzazioni, Valori contrattuali)
+
+Elenco nominativi presenti nel prospetto:
+1. AGAZZI DAVIDE [dati numerici: ilegibile]
+2. ALIMI ISNIK [dati numerici: ilegibile]
+3. ASMAH PATRICK ADDO [dati numerici: ilegibile]
+4. BARRECA ANTONIO [dati numerici: ilegibile]
+5. BASTONI ALESSANDRO [dati numerici: ilegibile]
+6. CABEZAS BRYAN [dati numerici: ilegibile]
+7. CALDARA MATTIA [dati numerici: ilegibile]
+8. CAPANNA FEDERICO [dati numerici: ilegibile]
+9. CARMINATI MARCO [dati numerici: ilegibile]
+10. CARRARO MARCO [dati numerici: ilegibile]
+11. CHIOSSI FEDERICO [dati numerici: ilegibile]
+12. COLY LATYR [dati numerici: ilegibile]
+13. COLLEY EBRIMA [dati numerici: ilegibile]
+14. CRISTANTE BRYAN [dati numerici: ilegibile]
+15. DA SILVA EDUARDO [dati numerici: ilegibile]
+16. DE LUCA MANUEL [dati numerici: ilegibile]
+17. D'ALESSANDRO MARCO [dati numerici: ilegibile]
+18. DJIMSITI BERAT [dati numerici: ilegibile]
+19. EGUELFI FABIO [dati numerici: ilegibile]
+20. EMMANUELLO SIMONE [dati numerici: ilegibile]
+21. GAGLIARDINI ROBERTO [dati numerici: ilegibile]
+22. GATTI FEDERICO [dati numerici: ilegibile]
+23. GOLLINI PIERLUIGI [dati numerici: ilegibile]
+24. HAAS NICOLAS [dati numerici: ilegibile]
+25. ILICIC JOSIP [dati numerici: ilegibile]
+26. KESSIE FRANCK [dati numerici: ilegibile]
+27. KRESIC ANTON [dati numerici: ilegibile]
+28. KRNIC VEDRAN [dati numerici: ilegibile]
+29. KURTIC JASMIN [dati numerici: ilegibile]
+30. LATTE LATH JUNIOR [dati numerici: ilegibile]
+31. LA VIGNA NICHOLAS [dati numerici: ilegibile]
+32. LUNETTA GABRIEL [dati numerici: ilegibile]
+33. MANCINI GIANLUCA [dati numerici: ilegibile]
+34. MARCHETTI FEDERICO [dati numerici: ilegibile]
+35. MASIELLO ANDREA [dati numerici: ilegibile]
+36. MAZZOCCHI SIMONE [dati numerici: ilegibile]
+37. MELEGONI FILIPPO [dati numerici: ilegibile]
+38. MIGLIORELLI MARCO [dati numerici: ilegibile]
+39. MUSAH MOHAMED [dati numerici: ilegibile]
+40. NELLI LUCA [dati numerici: ilegibile]
+41. PALOSCHI ALBERTO [dati numerici: ilegibile]
+42. PEDRINI SALVATORE [dati numerici: ilegibile]
 
 44
 
