@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 589 — Escalón "sección D" en verificar.mjs (to-do 166, primera parte) (2026-10-08)
+
+- Las rettifiche di valore (D del Codice Civile) llegaban sin lado: la lectura 3 las sumaba como ingreso/gasto o la tolerancia las tapaba
+  (Como 2024 y Bologna 2019-20 daban "ok" sin ellas). Con el encabezado de la D impreso (italiano o inglés) y sin ajuste del financiero en
+  esa zona, las filas sin lado de la D van al financiero (18) suma, 19) resta, por el encabezado del .md); compuerta: el total de D impreso
+  exacto; después las lecturas 0-6, gana la primera que cierra exacto. El gatillo es estructural, no "no cerró exacto": con notas en miles
+  la tolerancia exacta tapa una D chica.
+- Medido en una copia sobre 162 documentos con los ajustes puestos: 0 cambian (descartado antes de entrar: sin el encabezado de la D movía
+  10 Juventus IFRS; sin el control del ajuste, Como 2024 contaba la D dos veces). Sin sus ajustes, Inter 2021-22, Bologna 2019-20 y Como
+  2024 dan idéntico: 4 ajustes anulados, cargas idénticas.
+
 ## Versión 588 — La etapa 4 ya no frena la categorización en silencio (to-do 176) (2026-10-08)
 
 - `verificar.mjs` (avisarRegistro): un número sin confirmar que no es el valor del año de una fila que se carga no frena (escalón 3a);

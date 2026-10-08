@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T02:00:45.649Z",
+ "generado": "2026-10-08T12:21:02.038Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2022,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
-   "campo": "fila",
-   "valor": "521.197",
-   "linea": 688,
-   "etiqueta": "revaluation of investments (18)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "motivo": "D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -52,7 +38,7 @@
  "notas": [
   "el desglose de \"Administrative, advertising and general\" (18 filas) no suma la fila: quedó la fila",
   "la nota de \"a) salaries and wages\" no suma el renglón (197.542 contra 217.790584, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"revaluation of investments (18)\" (financiero) 521.197 (2026-10-07, D) rettifiche quedaban sin lado (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155))",
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L688) al financiero; su suma da el total impreso (0.521197, L691), con el 17) restando; cerró la lectura 0",
   "duda de localizar que no afecta la carga: Es detalle por jugador, no por categoría.",
   "duda de localizar que no afecta la carga: Son resúmenes en miles del informe de gestión que repiten renglones del estado b6.",
   "duda de localizar que no afecta la carga: Detalla costos capitalizados por naturaleza, no abre un renglón de ingresos útil.",
@@ -708,7 +694,7 @@
    "linea": 681
   },
   {
-   "etiqueta": "revaluation of investments (18)",
+   "etiqueta": "a) of investments",
    "M": 0.521197,
    "linea": 688
   }

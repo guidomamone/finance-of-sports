@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
  "md": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md",
- "generado": "2026-10-08T02:53:37.985Z",
+ "generado": "2026-10-08T12:21:02.123Z",
  "estado": "ok",
  "clubId": "como-it",
  "year": 2024,
@@ -14,16 +14,13 @@
  "ajustes": [
   {
    "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
-   "campo": "fila",
-   "valor": "(8.695)",
-   "linea": 532,
-   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "motivo": "la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero)",
-   "evidencia": ".md L530-533; −47.769.982 + 22.042 − 8.695 = −47.756.635 contra (47.756.634) L534",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Guido 2026-10-08: el documento imprime 'e) proventi da cessione diritti televisivi -' (Serie B 2023-24); el reparto de la liga está en contributi in conto esercizio",
+   "evidencia": ".md L496",
    "autor": "Guido",
-   "fecha": "2026-10-07"
+   "fecha": "2026-10-08"
   }
  ],
  "cola": [],
@@ -55,7 +52,7 @@
   }
  ],
  "notas": [
-  "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (8.695) (2026-10-07, la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero))",
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L530) al financiero; su suma da el total impreso (-0.008695, L531); cerró la lectura 0",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Como-fascicolo-bilancio-2024.pdf",
   "duda de extraer confirmada por las sumas (columna, \"a) salari e stipendi\"): ¿Se cargan por separado las columnas 'Tesserati' y 'Altri' del cuadro del costo del personale (L1473-L1475) como desglose de cada renglón de personal?",
   "duda de extraer que no afecta la carga: Diferencia de 1 euro en L532 respecto de la suma, atribuible a redondeo."
@@ -579,9 +576,9 @@
    "linea": 526
   },
   {
-   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "etiqueta": "a) di partecipazioni",
    "M": -0.008695,
-   "linea": 532
+   "linea": 530
   }
  ],
  "impuesto": [

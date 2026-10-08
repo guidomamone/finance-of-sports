@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.md",
- "generado": "2026-10-07T20:57:04.786Z",
+ "generado": "2026-10-08T12:21:02.079Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2020,
@@ -11,36 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
-   "campo": "fila",
-   "valor": "(670.894)",
-   "linea": 952,
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 952,
-   "motivo": "Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).",
-   "evidencia": ".md L952 (17) altri 670.894), L955 Totale C (666.720)",
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
-  {
-   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2019-20.pdf",
-   "campo": "fila",
-   "valor": "(1.868.716)",
-   "linea": 958,
-   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 958,
-   "motivo": "Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).",
-   "evidencia": ".md L958, L960 Totale D (1.868.716), L961 risultato prima delle imposte (39.019.149)",
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -59,6 +30,11 @@
    "detalle": "cierra (impuesto invertido)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 85.663149; el sitio tiene 85.663149"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2020: 72.37475 en este documento y 72.37475 en Bologna-bilancio-consolidato-2020-21.pdf (columna del año anterior)"
@@ -67,19 +43,13 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 85.663149 en Bologna-bilancio-consolidato-2018-19.pdf y 85.663149 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (67.881535): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "la nota de \"a) salari e stipendi\" no suma el renglón (45.287885 contra 47.623939, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Altri oneri da gestione calciatori:\" (6 filas) no suma la fila: quedó la fila",
-  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (670.894), en lugar de la fila de L952 (2026-10-07, Formato Codice Civile: el 17) \"interessi ed altri oneri finanziari\" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: \"altri\" también rotula el 5) de ingresos y el 16) (to-do 157/158).)",
-  "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (1.868.716), en lugar de la fila de L958 (2026-10-07, Rettifiche D sin lado en la extracción: 19) a) svalutazioni di partecipazioni 1.868.716, impreso en positivo y restado (Totale D (1.868.716), L960). Va del lado financiero, como las rettifiche D de Milan 2023-24 e Inter 2021-22 (to-do 157).)",
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L958) al financiero; su suma da el total impreso (-1.868716, L960), con el 17) restando; cerró la lectura 0",
   "la nota de \"altri\" cierra solo con sus filas del lado ingreso (8 filas de otro lado dicen abrir un renglón con el mismo nombre)",
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (78.744181): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "duda de localizar que no afecta la carga: b77 tiene una sola fila de total, igual al renglón del estado, por lo que no agrega desglose.",
@@ -475,13 +445,13 @@
  "financiero": [
   {
    "etiqueta": "altri",
-   "M": null,
-   "linea": 944
+   "M": 0.001931,
+   "linea": 948
   },
   {
    "etiqueta": "altri",
-   "M": 0.001931,
-   "linea": 948
+   "M": -0.670894,
+   "linea": 952
   },
   {
    "etiqueta": "17-bis) utili e perdite su cambi",
@@ -489,12 +459,7 @@
    "linea": 954
   },
   {
-   "etiqueta": "altri oneri finanziari (17, costo)",
-   "M": -0.670894,
-   "linea": 952
-  },
-  {
-   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "etiqueta": "a) di partecipazioni",
    "M": -1.868716,
    "linea": 958
   }

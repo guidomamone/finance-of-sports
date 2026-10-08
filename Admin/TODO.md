@@ -146,17 +146,16 @@ ni en el comentario de ningún archivo de código.
     recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
 
-166. ITALIA: SECCIÓN D Y 17-BIS SIN SIGNO (verificar.mjs). Ya pasó lo que el to-do 155 esperaba ("CUÁNDO HACERLO"): documentos sin cargar
-    que no cierran por el patrón. Los informes de los subagentes con el detalle de los to-dos
-    166-173 (causa, ejemplo y escalón por caso): Admin/informes-etapa6-italia/informe-{A,B,C,D}.md. Casos, resueltos con ajustes `fila`:
+166. ITALIA: 17-BIS SIN SIGNO Y 17) SIN NÚMERO (verificar.mjs). La SECCIÓN D ya la lee el script (escalón "sección D", Versión 589):
+    Inter 2021-22, Bologna 2019-20 y Como 2024 dejaron sus ajustes (carga idéntica). Siguen con ajustes, sin daño: AC Milan 2017-18 y
+    2021-22 e Inter 2024-25 (el escalón cierra con otra lectura, con notas abiertas y redondeos de 1-2 mil EUR: no idéntico, se dejan los
+    ajustes) y AC Milan 2023-24 (el escalón no cierra). Informes con el detalle: Admin/informes-etapa6-italia/informe-{A,B,C,D}.md.
+    Falta, como escalón aparte:
     - 17-bis / "b) perdite su cambi" impreso en positivo que resta: Atalanta 2019 (L429, 923), Napoli 2022 (L294, 6.136), Napoli 2023
-      (L280, 212; cargado).
-    - D) rettifiche sin lado: AC Milan 2017-18 (L1016, svalutazioni 218: −125.801 vs −126.019 impreso), AC Milan 2021-22 (L835 +521,
-      L840 (1.000)); hay 5 ajustes iguales de antes (Milan 2023-24 x2, Inter 2021-22 y 2024-25, Bologna 2019-20).
-    - 17) sin la etiqueta "17)" se suma como ingreso: Torino 2019 (L647, 609.108).
-    - D) "a) di partecipazioni (4.000)" entra como INGRESO por el signo y la tolerancia lo tapa: Atalanta 2025 (L251; resultado 8.000 € alto).
-    DISEÑO (escalón, una compuerta): las filas entre "C)"/"D) RETTIFICHE" y "Risultato prima delle imposte" se leen como financiero con su
-    signo (18) suma, 19) resta, perdite del 17-bis restan); compuerta: su suma = el Totale C/D impreso y el resultado cierra EXACTO.
+      (L280, 212; cargado), Napoli 2024 (4.559). Hoy cierran con ajustes `fila`.
+    - 17) sin la etiqueta "17)" se suma como ingreso: Torino 2019 (L647, 609.108); cierra con ajuste.
+    DISEÑO: dentro del escalón "17) resta", las filas del 17-bis con "perdite" (pérdidas) restan |valor|; compuerta: el total de C impreso
+    exacto. Medir con los 4 documentos sin sus ajustes del 17-bis.
 
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
     fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Cuando ninguna otra lectura cierra, el caso que

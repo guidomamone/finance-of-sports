@@ -614,14 +614,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && !(x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
     const m = mult(estado[0]?.bloque); fin5Todos.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
   }
-  const evaluar = (nivel, conAjustesFin = false, finForzado = null, bases = null) => {
+  const evaluar = (nivel, conAjustesFin = false, finForzado = null, bases = null, excluirOtros = null) => {
     const ch = []; let ing = [...(bases ? bases.ing : nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(bases ? bases.gas : nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
     const finL = finForzado || (nivel >= 5 ? (conAjustesFin ? fin5Todos : fin5) : fin);
     // LECTURA 6 (Versión 434, cambio F, aprobado por Guido el 2026-10-03): la 5 (solo hojas, sin totales, resultado impreso EXACTO) + los
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
     // suman pero fallan por el total impreso de ingresos, y la 5 no los suma. Solo se llega acá si fallaron la 0 a la 5.
-    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (nivel >= 6 && reemplazada(f)) continue; const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
+    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (nivel >= 6 && reemplazada(f)) continue; const esGasto = gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
@@ -741,6 +741,46 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
     }
   }
+  // ESCALÓN "sección D" (to-do 166, aprobado por Guido el 2026-10-08). Las rettifiche di valore di attività finanziarie (D del Codice
+  // Civile: 18) rivalutazioni suma, 19) svalutazioni resta) llegan de la extracción sin lado y la lectura 3 las suma como ingreso o gasto
+  // por su signo, o la tolerancia las tapa. Solo corre si el resultado no cerró EXACTO. Propone: las filas sin lado entre la última fila del
+  // financiero y "Risultato prima delle imposte" van al financiero; las que cuelgan de un 18) (encabezado buscado en el .md) suman |valor|,
+  // las de un 19) restan |valor|, las demás con su signo impreso; salen de los renglones sin lado (no se cuentan dos veces). Compuerta: si el
+  // documento imprime el total de D, la suma da exacto ese total; después las lecturas 0-6 con ese financiero (y el del escalón "17) resta"
+  // si pasó su compuerta) y gana la primera que cierra EXACTO. Casos: Bologna 2019-20 (L958 "a) di partecipazioni" 1.868.716 bajo "19)
+  // svalutazioni", total D (1.868.716) L960), Inter 2024-25 (L976 780.928 bajo "18)"), AC Milan 2017-18 y 2021-22, Como 2024 (L530 (8.695)).
+  let escalonD = false; let finD = null;
+  // Gatillo: hay filas sin lado en la posición de la D (entre la última fila del financiero y el primer resultado de abajo) y la lectura que
+  // ganó no las tiene en el financiero. No alcanza con "no cerró exacto": con las notas en miles la tolerancia exacta (media unidad por
+  // fila) tapa una D chica (Como 2024: 8.695 dentro de ~20 mil).
+  const finLinD = estado.filter((f) => f.lado === 'financiero' && isFinite(f.linea)).map((f) => f.linea);
+  const ultFin = finLinD.length ? Math.max(...finLinD) : null;
+  const resD = ultFin ? estado.filter((f) => f.tipo === 'resultado' && f.linea > ultFin).sort((a, b) => a.linea - b.linea)[0] : null;
+  // Solo con una sección D del Codice Civile impresa (su encabezado en el .md entre el financiero y el resultado): los IFRS en inglés
+  // (Juventus 2015-16 a 2024-25) traen filas sin lado en esa zona que no son la D. Y no si ya hay un ajuste `fila` del financiero en esa zona
+  // (la D ya está resuelta a mano: Como 2024 la contaba dos veces).
+  const RXDHEAD = /(^|\|)\s*#*\s*(\*\*)?\s*D\s*\)\s*(\*\*)?\s*(RETTIFICHE|Rettifiche|VALUE ADJUSTMENTS|Value adjustments|VALUATION ADJUSTMENTS|Valuation adjustments)|rettifiche\s+di\s+valore/;
+  const conSeccionD = resD && lineasMd.slice(ultFin, resD.linea - 1).some((t) => RXDHEAD.test(t || ''));
+  const ajusteEnD = resD && ajustesDe(pdf).some((a) => a.campo === 'fila' && a.lado === 'financiero' && [a.linea, a.reemplazaLinea].some((l) => l != null && Number(l) > ultFin && Number(l) <= resD.linea));
+  if (resD && conSeccionD && !ajusteEnD) {
+    const dRows = otros.filter((f) => f.linea > ultFin && f.linea < resD.linea);
+    if (dRows.length) {
+      const dTot = estado.filter((f) => f.lado === 'otro' && f.tipo !== 'renglon' && isFinite(f.M) && f.M && f.linea > ultFin && f.linea < resD.linea).sort((a, b) => a.linea - b.linea).pop();
+      const RX18 = /(^|\|)\s*(\*\*)?\s*18\s*\)?\s+(rivalutaz|revaluat)|rivalutazion|revaluation/i;
+      const RX19 = /(^|\|)\s*(\*\*)?\s*19\s*\)?\s+(svalutaz|write)|svalutazion|write-?downs?|impairment/i;
+      const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
+      const prop = dRows.map((f) => { const sg = signoD(f); return { ...f, lado: 'financiero', M: sg ? sg * Math.abs(f.M) : f.M, origen: 'estado (escalón sección D)' }; });
+      const tolD = Math.max(1e-6, 0.5 * [...prop, ...(dTot ? [dTot] : [])].reduce((a, f) => a + (f.u || 0), 0));
+      if (!dTot || Math.abs(conSigno(prop) - dTot.M) <= tolD) {
+        finD = [...(fin17 || fin), ...prop]; const excl = new Set(dRows);
+        for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+          const e = evaluar(n, false, finD, null, excl); if (e.cierra && e.exacto) { E = e; escalonD = true; escalonSubRep = false; break; }
+          if (n === 4 && hayRepetido) { const er = evaluar(4, false, finD, { ing: ing4r, gas: gas4r }, excl); if (er.cierra && er.exacto) { E = er; escalonD = true; escalonSubRep = true; break; } }
+        }
+        if (escalonD) { notas.push(`escalón "sección D": ${prop.length} fila(s) de rettifiche (L${prop.map((f) => f.linea).join(', L')}) al financiero${dTot ? `; su suma da el total impreso (${r6(dTot.M)}, L${dTot.linea})` : ''}${fin17 ? ', con el 17) restando' : ''}; cerró la lectura ${E.nivel}`); escalon17 = false; }
+      }
+    }
+  }
   // ESCALÓN "renglón grande sin abrir" (to-do 175, escalón 2, aprobado por Guido el 2026-10-08). La nota del subtotal (Versión 578) solo
   // corría en el camino de error (la propuesta de carga marcó una categoría en 0), y un lump_* apaga esa marca: un renglón agregado del
   // modelo italiano ("altri" 42,8 M, el 74% de los ingresos de Cremonese 2024) quedaba entero aunque el documento traiga su desglose.
@@ -762,7 +802,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       } finally { forzarNotaSub = false; }
       const abrio = !ingF.some((f) => f.linea === grande.linea && String(f.origen || '').startsWith('estado'));
       if (abrio) {
-        const e = evaluar(E.nivel, false, escalon17 ? fin17 : null, { ing: ingF, gas: gasF });
+        const e = evaluar(E.nivel, false, escalonD ? finD : escalon17 ? fin17 : null, { ing: ingF, gas: gasF }, escalonD ? new Set(finD.filter((f) => f.origen === 'estado (escalón sección D)').map((f) => otros.find((o) => o.linea === f.linea)).filter(Boolean)) : null);
         if (e.cierra && (e.exacto || !E.exacto)) { E = e; escalonGrande = true; notaSubtotalLados.add('ingreso'); notas.push(...notasNotaSub, `escalón "renglón grande sin abrir": "${grande.etiqueta}" (L${grande.linea}) era el ${Math.round(100 * Math.abs(grande.M) / totIng)}% de los ingresos; la misma lectura cierra con la nota del subtotal abierta`); }
       }
     }
@@ -772,6 +812,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
   if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
   if (escalonSubRep) notas.push(...notasSubRep, 'escalón "subtotal repetido": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba');
+  if (escalonD) fin.splice(0, fin.length, ...finD);
   if (escalon17) { fin.splice(0, fin.length, ...fin17); notas.push(`escalón "17) resta": el financiero con el 17) restando da el total de C impreso; cerró la lectura ${E.nivel}`); }
   else if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...(escalonAjFin ? fin5Todos : fin5));
   if (escalonAjFin) notas.push('escalón "ajustes del financiero sin reemplaza": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero'); // lectura 5: el financiero también con el signo C/D

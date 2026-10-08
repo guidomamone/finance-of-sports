@@ -30,3 +30,6 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Abrir con la nota del subtotal todo renglón de ingresos de 20% o más** (to-do 175, escalón 2, medido 2026-10-08 sobre 98 de Italia):
   cambiaba Atalanta 2022/2024 y Genoa 2022 (cargados), cuyo estado ya viene desglosado en ~9 renglones y la nota reparte distinto (Atalanta
   2024: TV 107,5 -> 101,8 M; Genoa: el paracadute pasaba a "contributi"). Entró con el grupo de 3 renglones o menos como condición.
+- **Disparar el escalón de la sección D con "el resultado no cerró exacto"** (to-do 166, 2026-10-08): con las notas en miles la tolerancia
+  exacta (media unidad por fila) tapa una D chica (Como 2024: 8.695 dentro de ~20 mil). Entró con un gatillo estructural (el encabezado de la D
+  impreso). Y sin ese encabezado movía 10 Juventus IFRS, cuyas filas sin lado en esa zona no son la D.
