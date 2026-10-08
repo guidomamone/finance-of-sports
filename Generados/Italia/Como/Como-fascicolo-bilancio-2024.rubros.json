@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
   "club": "como-it",
   "year": 2024,
-  "generatedAt": "2026-10-07T23:49:20.107Z",
+  "generatedAt": "2026-10-08T02:53:37.985Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.894
       ],
-      "glosa": "Partidos de Liga"
+      "glosa": "Partidos de liga"
     },
     {
       "label": "Percentuale squadra ospite",
@@ -24,7 +24,7 @@
       "values": [
         0.071
       ],
-      "glosa": "Porcentaje para el equipo visitante"
+      "glosa": "Porcentaje del equipo visitante"
     },
     {
       "label": "Tornei e amichevoli",
@@ -114,7 +114,7 @@
       "values": [
         0
       ],
-      "glosa": "g) Plusvalías por cesión de derechos de futbolistas"
+      "glosa": "g) Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "h) altri proventi da gestione calciatori",
@@ -124,7 +124,7 @@
       "values": [
         0
       ],
-      "glosa": "h) Otros ingresos por gestión de futbolistas"
+      "glosa": "h) Otros ingresos de gestión de futbolistas"
     },
     {
       "label": "i) altri ricavi e proventi diversi",
@@ -134,7 +134,7 @@
       "values": [
         0.26097
       ],
-      "glosa": "i) Otros ingresos y rendimientos diversos"
+      "glosa": "i) Otros ingresos de explotación y varios"
     },
     {
       "label": "6) Per materie prime, sussidiarie, di consumo",
@@ -144,7 +144,7 @@
       "values": [
         0.563223
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares y de consumo"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares y consumibles"
     },
     {
       "label": "Costi per allenamenti e ritiri",
@@ -154,7 +154,7 @@
       "values": [
         0.89
       ],
-      "glosa": "Gastos de entrenamientos y concentraciones"
+      "glosa": "Gastos por entrenamientos y concentraciones"
     },
     {
       "label": "Spese sanitarie",
@@ -174,7 +174,7 @@
       "values": [
         0.218
       ],
-      "glosa": "Retribuciones a profesionales autónomos"
+      "glosa": "Retribuciones a profesionales independientes"
     },
     {
       "label": "Spese manutenzione campi sportivi",
@@ -184,7 +184,7 @@
       "values": [
         0.695
       ],
-      "glosa": "Gastos de mantenimiento de terrenos de juego"
+      "glosa": "Gastos de mantenimiento de campos deportivos"
     },
     {
       "label": "Diversi",
@@ -194,7 +194,7 @@
       "values": [
         0.051
       ],
-      "glosa": "Varios"
+      "glosa": "Diversos"
     },
     {
       "label": "Osservazione calciatori",
@@ -204,7 +204,7 @@
       "values": [
         2.326
       ],
-      "glosa": "Seguimiento y ojeo de futbolistas"
+      "glosa": "Ojeo y captación de futbolistas"
     },
     {
       "label": "Costi accessori campagna trasferimenti",
@@ -214,7 +214,7 @@
       "values": [
         1.482
       ],
-      "glosa": "Gastos accesorios del mercado de fichajes"
+      "glosa": "Costes accesorios del mercado de fichajes"
     },
     {
       "label": "Costi vitto, alloggio, locomozione",
@@ -244,7 +244,7 @@
       "values": [
         0.106
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y previsión social"
     },
     {
       "label": "Servizi da controllante e controllate dalla controllante",
@@ -254,7 +254,7 @@
       "values": [
         4.033
       ],
-      "glosa": "Servicios prestados por la sociedad dominante y sus dependientes"
+      "glosa": "Servicios de la sociedad dominante y dependientes de la matriz"
     },
     {
       "label": "Omaggi, promozionali e rappresentanza",
@@ -264,7 +264,7 @@
       "values": [
         0.33
       ],
-      "glosa": "Atenciones protocolarias, gastos de representación y material promocional"
+      "glosa": "Atenciones protocolarias, de promoción y relaciones públicas"
     },
     {
       "label": "Commissioni su fidejussioni",
@@ -274,7 +274,7 @@
       "values": [
         0.301
       ],
-      "glosa": "Comisiones por avales"
+      "glosa": "Comisiones sobre avales y fianzas"
     },
     {
       "label": "Consulenti esterni",
@@ -294,7 +294,7 @@
       "values": [
         0.174
       ],
-      "glosa": "Reembolsos diversos"
+      "glosa": "Reembolsos varios"
     },
     {
       "label": "Diversi",
@@ -304,7 +304,7 @@
       "values": [
         0.135
       ],
-      "glosa": "Varios"
+      "glosa": "Diversos"
     },
     {
       "label": "Utenze diverse",
@@ -334,7 +334,7 @@
       "values": [
         0.05
       ],
-      "glosa": "Gastos legales y notariales"
+      "glosa": "Gastos jurídicos y notariales"
     },
     {
       "label": "Spese bancarie",
@@ -354,7 +354,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Retribución de la comisión fiscalizadora"
+      "glosa": "Retribución del órgano de fiscalización"
     },
     {
       "label": "Manutenzioni ordinarie",
@@ -364,7 +364,7 @@
       "values": [
         0.01
       ],
-      "glosa": "Mantenimiento ordinario y reparaciones"
+      "glosa": "Mantenimiento ordinario"
     },
     {
       "label": "Postelegrafoniche",
@@ -374,7 +374,7 @@
       "values": [
         0.001
       ],
-      "glosa": "Gastos postales y de telecomunicaciones"
+      "glosa": "Gastos de correos y telecomunicaciones"
     },
     {
       "label": "Affitti passivi",
@@ -384,7 +384,7 @@
       "values": [
         0.157
       ],
-      "glosa": "Arrendamientos operativos y alquileres"
+      "glosa": "Arrendamientos y alquileres devengados"
     },
     {
       "label": "Affitto stadio Sinigaglia",
@@ -414,7 +414,7 @@
       "values": [
         0.138
       ],
-      "glosa": "Canon de concesión de instalaciones deportivas"
+      "glosa": "Concesión de instalaciones deportivas"
     },
     {
       "label": "Canoni noleggio",
@@ -424,7 +424,7 @@
       "values": [
         0.187
       ],
-      "glosa": "Cánones de alquiler y renting"
+      "glosa": "Cánones de alquiler"
     },
     {
       "label": "Salari e stipendi (Tesserati)",
@@ -434,7 +434,7 @@
       "values": [
         29.357
       ],
-      "glosa": "Sueldos y salarios (Deportistas federados)"
+      "glosa": "Sueldos y salarios (Personal federado)"
     },
     {
       "label": "Salari e stipendi (Altri)",
@@ -444,7 +444,7 @@
       "values": [
         1.035
       ],
-      "glosa": "Sueldos y salarios (Otros)"
+      "glosa": "Sueldos y salarios (Otro personal)"
     },
     {
       "label": "Oneri sociali (Tesserati)",
@@ -454,7 +454,7 @@
       "values": [
         2.276
       ],
-      "glosa": "Cargas sociales (Deportistas federados)"
+      "glosa": "Cargas sociales (Personal federado)"
     },
     {
       "label": "Oneri sociali (Altri)",
@@ -464,7 +464,7 @@
       "values": [
         0.457
       ],
-      "glosa": "Cargas sociales (Otros)"
+      "glosa": "Cargas sociales (Otro personal)"
     },
     {
       "label": "Trattamento di fine rapporto (Tesserati)",
@@ -474,7 +474,7 @@
       "values": [
         0.302
       ],
-      "glosa": "Indemnización por cese / fin de relación laboral (Deportistas federados)"
+      "glosa": "Indemnización por cese laboral (Personal federado)"
     },
     {
       "label": "Trattamento di fine rapporto (Altri)",
@@ -484,7 +484,7 @@
       "values": [
         0.098
       ],
-      "glosa": "Indemnización por cese / fin de relación laboral (Otros)"
+      "glosa": "Indemnización por cese laboral (Otro personal)"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -514,7 +514,7 @@
       "values": [
         0.6034
       ],
-      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas del inmovilizado"
     },
     {
       "label": "12) Accantonamenti per rischi",
@@ -524,7 +524,7 @@
       "values": [
         0.175655
       ],
-      "glosa": "12) Provisiones para riesgos y gastos"
+      "glosa": "12) Provisiones para riesgos"
     },
     {
       "label": "a) oneri da organizzazione competizioni",
@@ -544,7 +544,7 @@
       "values": [
         0.5
       ],
-      "glosa": "b) Gastos por adquisición temporal de derechos de futbolistas"
+      "glosa": "b) Costes por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "c) minusvalenze cessione diritti prestaz.calciatori",
@@ -554,7 +554,7 @@
       "values": [
         0.585411
       ],
-      "glosa": "c) Pérdidas por cesión de derechos de futbolistas"
+      "glosa": "c) Minusvalías por cesión de derechos de futbolistas"
     },
     {
       "label": "d) altri oneri da gestione calciatori",
@@ -574,7 +574,7 @@
       "values": [
         0.198
       ],
-      "glosa": "- Gastos, sanciones y multas de competiciones"
+      "glosa": "- Gastos, sanciones y multas de competición"
     },
     {
       "label": "- Oneri tributari indiretti",
@@ -614,7 +614,7 @@
       "values": [
         0.974
       ],
-      "glosa": "- Varios"
+      "glosa": "- Diversos"
     }
   ]
 }

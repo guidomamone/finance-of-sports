@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
- "generado": "2026-10-07T23:49:19.990Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:38.082Z",
+ "estado": "ok",
  "clubId": "parma-it",
  "year": 2022,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "a7fb918",
-  "6f5f62f",
-  "b400244",
-  "dfaae7c"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,6 +63,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Parma-bilancio-31.12.2025-consolidato.pdf",
   "duda de extraer que no afecta la carga: b32 reagrupa los renglones de amortización del estado (L1357 = L596 + L600) sin aportar detalle nuevo."
  ],
  "reintentar": null,

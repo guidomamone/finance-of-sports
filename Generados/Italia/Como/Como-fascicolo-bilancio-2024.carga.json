@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
- "generado": "2026-10-07T23:52:44.159Z",
+ "generado": "2026-10-08T02:56:49.954Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "14 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Costi per allenamenti e ritiri\" -> match_organisation_expense 0.6; \"Compensi lavoratori autonomi\" -> admin_general_expense 0.45; \"Spese manutenzione campi sportivi\" -> match_organisation_expense 0.5; \"Diversi\" -> other_expenses 0.6; \"Servizi da controllante e controllate da\" -> admin_general_expense 0.75"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -169,9 +165,9 @@
     "amountNative": -0.89,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Spese sanitarie",
@@ -189,9 +185,9 @@
     "amountNative": -0.218,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Spese manutenzione campi sportivi",
@@ -199,9 +195,9 @@
     "amountNative": -0.695,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diversi",
@@ -209,9 +205,9 @@
     "amountNative": -0.051,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Osservazione calciatori",
@@ -269,9 +265,9 @@
     "amountNative": -4.033,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Omaggi, promozionali e rappresentanza",
@@ -289,9 +285,9 @@
     "amountNative": -0.301,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Consulenti esterni",
@@ -309,9 +305,9 @@
     "amountNative": -0.174,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diversi",
@@ -319,9 +315,9 @@
     "amountNative": -0.135,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utenze diverse",
@@ -409,9 +405,9 @@
     "amountNative": -0.066,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Canoni leasing operativo",
@@ -429,9 +425,9 @@
     "amountNative": -0.138,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Canoni noleggio",
@@ -439,9 +435,9 @@
     "amountNative": -0.187,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Salari e stipendi (Tesserati)",
@@ -479,9 +475,9 @@
     "amountNative": -0.457,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trattamento di fine rapporto (Tesserati)",
@@ -499,9 +495,9 @@
     "amountNative": -0.098,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "a) ammortamento delle immobilizzazioni immateriali",
@@ -619,9 +615,9 @@
     "amountNative": -0.613,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- Diversi",
@@ -674,7 +670,7 @@
    "title": "Como 1907 S.r.l. — Como-fascicolo-bilancio-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md",
@@ -928,11 +924,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\")",
    "signoFijo": 0.89,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.89
   },
@@ -959,11 +955,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\")",
    "signoFijo": 0.218,
    "cat": "admin_general_expense",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.218
   },
@@ -975,11 +971,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\")",
    "signoFijo": 0.695,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.695
   },
@@ -991,11 +987,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Costi per attività sportiva\")",
    "signoFijo": 0.051,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.051
   },
@@ -1082,11 +1078,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\")",
    "signoFijo": 4.033,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -4.033
   },
@@ -1113,11 +1109,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\")",
    "signoFijo": 0.301,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.301
   },
@@ -1144,11 +1140,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\")",
    "signoFijo": 0.174,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.174
   },
@@ -1160,11 +1156,11 @@
    "origen": "verificacion (nota que desglosa \"7) Per servizi\" > desglose de \"Amministrative - pubblicitarie e generali\")",
    "signoFijo": 0.135,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.135
   },
@@ -1296,11 +1292,11 @@
    "origen": "verificacion (nota que desglosa \"8) Per godimento di beni di terzi\")",
    "signoFijo": 0.066,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.066
   },
@@ -1327,11 +1323,11 @@
    "origen": "verificacion (nota que desglosa \"8) Per godimento di beni di terzi\")",
    "signoFijo": 0.138,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.138
   },
@@ -1343,11 +1339,11 @@
    "origen": "verificacion (nota que desglosa \"8) Per godimento di beni di terzi\")",
    "signoFijo": 0.187,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.187
   },
@@ -1404,11 +1400,11 @@
    "origen": "verificacion (nota que desglosa \"b) oneri sociali\")",
    "signoFijo": 0.457,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.457
   },
@@ -1435,11 +1431,11 @@
    "origen": "verificacion (nota que desglosa \"c) trattamento di fine rapporto\")",
    "signoFijo": 0.098,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.098
   },
@@ -1616,11 +1612,11 @@
    "origen": "verificacion (nota que desglosa \"e) altri oneri diversi e sopravvenienze passive\")",
    "signoFijo": 0.613,
    "cat": "exceptional_items",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia ya decidido (alquiler de instalaciones deportivas -> organización; otros alquileres, personal y gastos generales -> administración; ejercicios anteriores -> excepcionales)",
    "destino": "expense",
    "amountNative": -0.613
   },
@@ -1779,7 +1775,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 13,
   "lineasGasto": 48,
   "metaFilas": 4,

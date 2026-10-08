@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.md",
- "generado": "2026-10-07T16:50:17.497Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:37.813Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2023,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "bd0b3c1",
-  "276221b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,6 +35,11 @@
    "detalle": "ingresos de 2023: 404.529 en este documento y 404.529 en AC-Milan-bilanci-relazioni-2023-24.pdf (columna del año anterior)"
   },
   {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 297.7 en AC-Milan-bilanci-relazioni-2021-22.pdf y 297.7 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
@@ -45,7 +47,8 @@
  ],
  "notas": [
   "duda de localizar que no afecta la carga: El título dice 2022 pero el encabezado es 'Esercizio 2022/2023' y la página siguiente dice 30 Giugno 2023; parece error tipográfico.",
-  "duda de localizar que no afecta la carga: Las columnas son por sociedad del grupo y no desglosan renglones por categoría que el estado no abra."
+  "duda de localizar que no afecta la carga: Las columnas son por sociedad del grupo y no desglosan renglones por categoría que el estado no abra.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en AC-Milan-bilanci-relazioni-2022-23.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

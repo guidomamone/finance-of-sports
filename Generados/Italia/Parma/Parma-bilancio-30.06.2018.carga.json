@@ -1,17 +1,222 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf",
- "generado": "2026-10-07T23:52:43.418Z",
+ "generado": "2026-10-08T02:56:50.486Z",
  "frena": [
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) ricavi delle vendite e delle prestazi\" -> lump_football_operations 0.35"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado difiere menos de 1%; 2022 y 2025 solo tienen consolidado)",
   "el documento cierra 2018-06-30 (ejercicio desde el 07-01) y data/clubs.js dice fiscalYearStart 01-01: ¿cambió el cierre del club?"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "parma-it",
+  "year": 2018,
+  "cierre": "2018-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "1) ricavi delle vendite e delle prestazioni",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 2.124235,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 2,
+    "_conf": 0.35,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "4) incrementi di immobilizzazioni per lavori interni",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.506479,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "altri",
+    "normalizedCategory": "other_income",
+    "amountNative": 8.827,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "6) per materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.866222,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "7) per servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.801815,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "8) per godimento di beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.038377,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -17.063704,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.691348,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.338382,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) altri costi",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.0012,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) ammortamento delle immobilizzazioni immateriali",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.822445,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "b) ammortamento delle immobilizzazioni materiali",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.056789,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.07046,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.039356,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "14) oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.032876,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2018-06-30",
+   "sourceId": "parma-it-bilancio-30-06-2018",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.010573,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "da imprese controllate",
+     "value": 0.000227
+    },
+    {
+     "label": "verso imprese controllanti",
+     "value": -0.004255
+    },
+    {
+     "label": "altri",
+     "value": -0.006545
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "1) ricavi delle vendite e delle prestazioni",
+     "lado": "revenue",
+     "importe": 2.124235,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 11.457714,
+   "officialTotalExpenses": 33.744262,
+   "officialPAT": -22.297121
+  },
+  "source": {
+   "id": "parma-it-bilancio-30-06-2018",
+   "clubId": "parma-it",
+   "title": "Parma Calcio 1913 S.r.l. — Parma-bilancio-30.06.2018 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
  "reemplaza": false,
  "periodo": {
@@ -24,5 +229,364 @@
  },
  "clubId": "parma-it",
  "year": 2018,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "1) ricavi delle vendite e delle prestazioni",
+   "page": 13,
+   "native": 2.124235,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.124235,
+   "cat": "lump_football_operations",
+   "conf": 0.35,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 2.124235
+  },
+  {
+   "label": "4) incrementi di immobilizzazioni per lavori interni",
+   "page": 13,
+   "native": 0.506479,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.506479,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.506479
+  },
+  {
+   "label": "altri",
+   "page": 13,
+   "native": 8.827,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.827,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.827
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "page": 13,
+   "native": 0.866222,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.866222,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.866222
+  },
+  {
+   "label": "7) per servizi",
+   "page": 13,
+   "native": 4.801815,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.801815,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.801815
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "page": 13,
+   "native": 1.038377,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.038377,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.038377
+  },
+  {
+   "label": "a) salari e stipendi",
+   "page": 13,
+   "native": 17.063704,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.063704,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -17.063704
+  },
+  {
+   "label": "b) oneri sociali",
+   "page": 13,
+   "native": 1.691348,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.691348,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.691348
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "page": 13,
+   "native": 0.338382,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.338382,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.338382
+  },
+  {
+   "label": "e) altri costi",
+   "page": 13,
+   "native": 0.0012,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.0012,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.0012
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "page": 13,
+   "native": 1.822445,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.822445,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -1.822445
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "page": 13,
+   "native": 0.056789,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.056789,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.056789
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "page": 13,
+   "native": 0.07046,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.07046,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.07046
+  },
+  {
+   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "page": 13,
+   "native": 0.039356,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.039356,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.039356
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "page": 13,
+   "native": 6.032876,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.032876,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.032876
+  },
+  {
+   "label": "da imprese controllate",
+   "page": null,
+   "native": 0.000227,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "verso imprese controllanti",
+   "page": null,
+   "native": -0.004255,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri",
+   "page": null,
+   "native": -0.006545,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 11.457714,
+  "expSum": -33.744262,
+  "officialTotalRevenue": 11.457714,
+  "officialTotalExpenses": 33.744262,
+  "officialPAT": -22.297121,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -22.297121,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 11.457714
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 33.744262
+  }
+ },
+ "liga": {
+  "valor": "it-serieb",
+  "fuente": "roster cacheado de \"2017–18 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2018-06-30) y contenido del .md (150 de 154 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2018-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2018-06-30 = 0.85778 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "parma-it-bilancio-30-06-2018",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-serieb",
+   "fuente": "roster cacheado de \"2017–18 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 12,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

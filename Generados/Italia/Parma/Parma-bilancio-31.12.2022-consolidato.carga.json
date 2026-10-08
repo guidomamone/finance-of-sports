@@ -1,16 +1,291 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
- "generado": "2026-10-07T23:52:43.966Z",
+ "generado": "2026-10-08T02:56:51.198Z",
  "frena": [
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) Ricavi delle vendite e delle prestazi\" -> lump_football_operations 0.35; \"a) Ammortamento delle immobilizzazioni i\" -> other_amortisation 0.55"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-06: Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado difiere menos de 1%; 2022 y 2025 solo tienen consolidado)"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-08: Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual))"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "parma-it",
+  "year": 2022,
+  "cierre": "2022-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "1) Ricavi delle vendite e delle prestazioni",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 1.373306,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.35,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Proventi da Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.200339,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.631202,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Proventi commerciali e royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.050929,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Proventi da cessione diritti televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.05542,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.049782,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "i) Altri proventi gest. giocatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.820531,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "l) Ricavi e proventi diversi",
+    "normalizedCategory": "other_income",
+    "amountNative": 21.326285,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "6) Per materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.667571,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "7) Per servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -14.197493,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "8) Per godimento di beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.925826,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -49.969951,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4.11794,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.788346,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Ammortamento delle immobilizzazioni immateriali imm.",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -2.388974,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Ammortamento delle immobilizzazioni materiali mat.",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.873275,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Altre svalutazioni delle immobilizzazioni",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.780217,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Svalutazione crediti",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.098301,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -39.51541,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.310789,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "13) Altri accantonamenti",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.977598,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "14) Oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -14.500608,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-12-31",
+   "sourceId": "parma-it-bilancio-31-12-2022-consolidato",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.096083,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "- Altri",
+     "value": 0.001204
+    },
+    {
+     "label": "Altri",
+     "value": -0.097287
+    },
+    {
+     "label": "Imposte",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "1) Ricavi delle vendite e delle prestazioni",
+     "lado": "revenue",
+     "importe": 1.373306,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 32.507794,
+   "officialTotalExpenses": 130.490721,
+   "officialPAT": -98.07901
+  },
+  "source": {
+   "id": "parma-it-bilancio-31-12-2022-consolidato",
+   "clubId": "parma-it",
+   "title": "Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2022-consolidato (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
  "reemplaza": false,
  "periodo": {
@@ -23,5 +298,481 @@
  },
  "clubId": "parma-it",
  "year": 2022,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
+ "seleccion": {
+  "filas": 25,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "1) Ricavi delle vendite e delle prestazioni",
+   "page": 20,
+   "native": 1.373306,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.373306,
+   "cat": "lump_football_operations",
+   "conf": 0.35,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.373306
+  },
+  {
+   "label": "b) Proventi da Sponsorizzazioni",
+   "page": 20,
+   "native": 2.200339,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.200339,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.200339
+  },
+  {
+   "label": "c) Proventi pubblicitari",
+   "page": 20,
+   "native": 2.631202,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.631202,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.631202
+  },
+  {
+   "label": "d) Proventi commerciali e royalties",
+   "page": 20,
+   "native": 0.050929,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.050929,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.050929
+  },
+  {
+   "label": "e) Proventi da cessione diritti televisivi",
+   "page": 20,
+   "native": 3.05542,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.05542,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.05542
+  },
+  {
+   "label": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
+   "page": 20,
+   "native": 0.049782,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.049782,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.049782
+  },
+  {
+   "label": "i) Altri proventi gest. giocatori",
+   "page": 20,
+   "native": 1.820531,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.820531,
+   "cat": "player_sales",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.820531
+  },
+  {
+   "label": "l) Ricavi e proventi diversi",
+   "page": 20,
+   "native": 21.326285,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 21.326285,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 21.326285
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+   "page": 20,
+   "native": 1.667571,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.667571,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.667571
+  },
+  {
+   "label": "7) Per servizi",
+   "page": 20,
+   "native": 14.197493,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14.197493,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14.197493
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "page": 20,
+   "native": 0.925826,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.925826,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.925826
+  },
+  {
+   "label": "a) Salari e stipendi",
+   "page": 20,
+   "native": 49.969951,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 49.969951,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.969951
+  },
+  {
+   "label": "b) Oneri sociali",
+   "page": 20,
+   "native": 4.11794,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.11794,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.11794
+  },
+  {
+   "label": "c) Trattamento di fine rapporto",
+   "page": 20,
+   "native": 0.788346,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.788346,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.788346
+  },
+  {
+   "label": "a) Ammortamento delle immobilizzazioni immateriali imm.",
+   "page": 20,
+   "native": 2.388974,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.388974,
+   "cat": "other_amortisation",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -2.388974
+  },
+  {
+   "label": "b) Ammortamento delle immobilizzazioni materiali mat.",
+   "page": 20,
+   "native": 0.873275,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.873275,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.873275
+  },
+  {
+   "label": "c) Altre svalutazioni delle immobilizzazioni",
+   "page": 20,
+   "native": 0.780217,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.780217,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.780217
+  },
+  {
+   "label": "d) Svalutazione crediti",
+   "page": 20,
+   "native": 0.098301,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.098301,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.098301
+  },
+  {
+   "label": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
+   "page": 20,
+   "native": 39.51541,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 39.51541,
+   "cat": "player_amortisation",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -39.51541
+  },
+  {
+   "label": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "page": 20,
+   "native": 0.310789,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.310789,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.310789
+  },
+  {
+   "label": "13) Altri accantonamenti",
+   "page": 20,
+   "native": 0.977598,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.977598,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -0.977598
+  },
+  {
+   "label": "14) Oneri diversi di gestione",
+   "page": 20,
+   "native": 14.500608,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14.500608,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14.500608
+  },
+  {
+   "label": "- Altri",
+   "page": null,
+   "native": 0.001204,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia-sin-lado (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Altri",
+   "page": null,
+   "native": -0.097287,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposte",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 32.507794,
+  "expSum": -130.490721,
+  "officialTotalRevenue": 32.507794,
+  "officialTotalExpenses": 130.490721,
+  "officialPAT": -98.07901,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -98.07901,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 32.507794
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 130.490721
+  }
+ },
+ "liga": {
+  "valor": "it-serieb",
+  "fuente": "roster cacheado de \"2022–23 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-12-31",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2022-12-31) y contenido del .md (94 de 98 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-08)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-12-31 = 0.937559 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2022-12-30, 2022-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "parma-it-bilancio-31-12-2022-consolidato",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-serieb",
+   "fuente": "roster cacheado de \"2022–23 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 8,
+  "lineasGasto": 14,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

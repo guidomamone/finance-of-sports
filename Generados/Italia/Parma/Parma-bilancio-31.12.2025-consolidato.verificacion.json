@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
- "generado": "2026-10-07T23:49:20.032Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:38.121Z",
+ "estado": "ok",
  "clubId": "parma-it",
  "year": 2025,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "c823f0c",
-  "26ad1ac"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Guido 2026-10-07: 2025 solo tiene consolidado; se carga así (el club es individual)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,6 +46,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 41.490983 en Parma-bilancio-31.12.2024-individual.pdf y 41.561271 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
@@ -46,6 +59,7 @@
  "notas": [
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Parma-bilancio-31.12.2025-consolidato.pdf",
   "duda de localizar que no afecta la carga: El encabezado de b30 dice 31.12.2023, probablemente un error tipográfico; solo afecta la comparación del año anterior.",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale valore della produzione\"): ¿Se deja afuera de la carga el cuadro resumen b29 (L1147-L1149), que repite los renglones del estado?",
   "duda de extraer que no afecta la carga: El encabezado dice 2023 pero el total 4.575.508 (L1159) coincide con el 2024 del estado (L523); parece error de rótulo.",

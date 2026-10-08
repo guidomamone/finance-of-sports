@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
   "club": "asroma-it",
   "year": 2019,
-  "generatedAt": "2026-10-07T23:49:19.818Z",
+  "generatedAt": "2026-10-08T02:53:37.894Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         66.284
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Ricavi delle vendite commerciali e licensing",
@@ -74,7 +74,7 @@
       "values": [
         148.262
       ],
-      "glosa": "Ingresos por la gestión de derechos plurianuales de futbolistas"
+      "glosa": "Ingresos por gestión de derechos federativos de futbolistas"
     },
     {
       "label": "Acquisti materie di consumo",
@@ -114,7 +114,7 @@
       "values": [
         10.866
       ],
-      "glosa": "Gastos por arrendamientos y cánones"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Spese per il personale",
@@ -134,7 +134,7 @@
       "values": [
         7.367
       ],
-      "glosa": "Otros costes"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Ammortamenti e svalutazioni",
@@ -144,7 +144,7 @@
       "values": [
         87.412
       ],
-      "glosa": "Amortizaciones y deterioros"
+      "glosa": "Amortizaciones y correcciones de valor"
     },
     {
       "label": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
@@ -154,7 +154,7 @@
       "values": [
         15.934
       ],
-      "glosa": "Gastos por la gestión de derechos plurianuales de futbolistas"
+      "glosa": "Gastos por gestión de derechos federativos de futbolistas"
     },
     {
       "label": "Accantonamenti per rischi",
@@ -164,7 +164,7 @@
       "values": [
         0.6
       ],
-      "glosa": "Provisiones para riesgos"
+      "glosa": "Dotaciones a provisiones para riesgos"
     }
   ]
 }

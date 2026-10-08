@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md",
- "generado": "2026-10-07T23:49:19.857Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:37.942Z",
+ "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2020,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f5480a2"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,6 +33,11 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2020: 241.997996 en este documento y 241.997997 en Atalanta-bilancio-consolidato-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 188.621207 en Atalanta-bilancio-consolidato-2019.pdf y 188.621228 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

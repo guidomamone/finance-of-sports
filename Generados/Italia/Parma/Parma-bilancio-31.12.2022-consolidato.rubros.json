@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
   "club": "parma-it",
   "year": 2022,
-  "generatedAt": "2026-10-07T23:49:19.990Z",
+  "generatedAt": "2026-10-08T02:53:38.082Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         2.200339
       ],
-      "glosa": "b) Ingresos por patrocinio"
+      "glosa": "b) Ingresos por patrocinios"
     },
     {
       "label": "c) Proventi pubblicitari",
@@ -64,7 +64,7 @@
       "values": [
         0.049782
       ],
-      "glosa": "h) Plusvalías por cesión de derechos federativos de jugadores"
+      "glosa": "h) Plusvalías por cesión de derechos plurianuales de jugadores"
     },
     {
       "label": "i) Altri proventi gest. giocatori",
@@ -74,7 +74,7 @@
       "values": [
         1.820531
       ],
-      "glosa": "i) Otros ingresos de gestión de jugadores"
+      "glosa": "i) Otros ingresos por gestión de jugadores"
     },
     {
       "label": "l) Ricavi e proventi diversi",
@@ -84,7 +84,7 @@
       "values": [
         21.326285
       ],
-      "glosa": "l) Ingresos y rendimientos diversos"
+      "glosa": "l) Ingresos y ganancias diversos"
     },
     {
       "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -94,7 +94,7 @@
       "values": [
         1.667571
       ],
-      "glosa": "6) Consumo de materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) Per servizi",
@@ -114,7 +114,7 @@
       "values": [
         0.925826
       ],
-      "glosa": "8) Arrendamientos y cánones"
+      "glosa": "8) Arrendamientos y uso de bienes de terceros"
     },
     {
       "label": "a) Salari e stipendi",
@@ -144,7 +144,7 @@
       "values": [
         0.788346
       ],
-      "glosa": "c) Indemnización por cese de relación laboral"
+      "glosa": "c) Indemnizaciones por fin de contrato (TFR)"
     },
     {
       "label": "a) Ammortamento delle immobilizzazioni immateriali imm.",
@@ -184,7 +184,7 @@
       "values": [
         0.098301
       ],
-      "glosa": "d) Deterioro de créditos comerciales"
+      "glosa": "d) Pérdidas por deterioro de créditos"
     },
     {
       "label": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
@@ -194,7 +194,7 @@
       "values": [
         39.51541
       ],
-      "glosa": "e) Amortización de derechos federativos de futbolistas"
+      "glosa": "e) Amortización de costes por derechos plurianuales de futbolistas"
     },
     {
       "label": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -224,7 +224,7 @@
       "values": [
         14.500608
       ],
-      "glosa": "14) Otros gastos de explotación"
+      "glosa": "14) Otros gastos de gestión"
     }
   ]
 }

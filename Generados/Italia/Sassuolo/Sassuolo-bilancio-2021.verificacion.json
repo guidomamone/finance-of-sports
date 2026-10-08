@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
- "generado": "2026-10-07T23:49:20.073Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:38.162Z",
+ "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2021,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "7928003",
-  "56a9d34"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
+   "campo": "cierre",
+   "valor": "2021-12-31",
+   "linea": null,
+   "motivo": "Bilancio al 31 dicembre 2021",
+   "evidencia": ".md L21",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,6 +53,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Sassuolo-bilancio-2021.pdf",
   "duda de localizar que no afecta la carga: b7 es una reclasificación en Euro/000 del mismo ejercicio.",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) Per il personale:\"): ¿Se deja afuera de la carga el cuadro por tipo de personal b45 (Tesserati / Altri dipen., L1640-L1644), ya que replica los renglones a)-e) de '9) Per il personale:' del estado y su columna Tesserati está desglosada en b46?",
   "duda de extraer que no afecta la carga: b46 suma 65.466, que es la columna Tesserati de b45 (L1644), no el total del renglón 70.269.",

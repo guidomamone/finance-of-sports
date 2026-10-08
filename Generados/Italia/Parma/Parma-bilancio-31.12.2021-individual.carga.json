@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf",
- "generado": "2026-10-07T23:52:43.491Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Costi valorizzazione calciatori\" -> other_expenses 0.55"
-  }
- ],
+ "generado": "2026-10-08T02:56:50.728Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado difiere menos de 1%; 2022 y 2025 solo tienen consolidado)",
   "gastos: ningún total impreso igual a la suma de las líneas (-126.998463); queda la suma, verificada por el resultado del ejercicio"
@@ -451,13 +446,13 @@
    },
    {
     "rawLabel": "Costi valorizzazione calciatori",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.01,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Costi accessori campagna trasferimenti",
@@ -522,7 +517,7 @@
    "title": "Parma Calcio 1913 S.r.l. — Parma-bilancio-31.12.2021-individual (ejercicio 2021)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md",
@@ -1203,12 +1198,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\" > desglose de \"Altri oneri gestione calciatori\")",
    "signoFijo": 0.01,
-   "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente de Guido: Hellas Verona 2020 'Costi di valorizzazione calciatori'",
    "destino": "expense",
    "amountNative": -0.01
   },
@@ -1368,8 +1363,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 35,
   "metaFilas": 2,

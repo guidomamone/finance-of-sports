@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf",
   "club": "parma-it",
   "year": 2021,
-  "generatedAt": "2026-10-07T23:49:19.934Z",
+  "generatedAt": "2026-10-08T02:53:38.042Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.526552
       ],
-      "glosa": "Partidos oficiales de liga"
+      "glosa": "Ingresos por partidos oficiales de liga"
     },
     {
       "label": "Abbonamenti",
@@ -44,7 +44,7 @@
       "values": [
         0
       ],
-      "glosa": "4) Trabajos realizados por la empresa para su activo"
+      "glosa": "4) Trabajos realizados por la empresa para su inmovilizado"
     },
     {
       "label": "Proventi da sponsorizzazioni",
@@ -54,7 +54,7 @@
       "values": [
         2.640706
       ],
-      "glosa": "Ingresos por patrocinios"
+      "glosa": "Ingresos por patrocinio"
     },
     {
       "label": "Proventi pubblicitari",
@@ -94,7 +94,7 @@
       "values": [
         1.394738
       ],
-      "glosa": "Ingresos por cesión de derechos federativos de futbolistas"
+      "glosa": "Ingresos por cesión de derechos plurianuales de futbolistas"
     },
     {
       "label": "Altri proventi gestione calciatori",
@@ -104,7 +104,7 @@
       "values": [
         0.75978
       ],
-      "glosa": "Otros ingresos de gestión de futbolistas"
+      "glosa": "Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "Contributi in conto esercizio",
@@ -134,7 +134,7 @@
       "values": [
         1.802752
       ],
-      "glosa": "6) Consumo de materias primas, secundarias, de consumo y mercaderías"
+      "glosa": "6) Consumo de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -144,7 +144,7 @@
       "values": [
         3.113622
       ],
-      "glosa": "Gastos por actividad deportiva"
+      "glosa": "Gastos por actividades deportivas"
     },
     {
       "label": "Costi specifici Tecnici",
@@ -174,7 +174,7 @@
       "values": [
         0.432246
       ],
-      "glosa": "Gastos por prestación de servicios de personal"
+      "glosa": "Gastos por servicios prestados al personal"
     },
     {
       "label": "Costi vitto, alloggio e locomozione gare",
@@ -184,7 +184,7 @@
       "values": [
         0.738192
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de desplazamiento, alojamiento y manutención para partidos"
     },
     {
       "label": "Compensi e rimborsi spesa a terzi",
@@ -234,7 +234,7 @@
       "values": [
         3.09042
       ],
-      "glosa": "Gastos de suministros y gastos generales"
+      "glosa": "Suministros y gastos generales"
     },
     {
       "label": "Costi per manutenzioni e riparazioni",
@@ -294,7 +294,7 @@
       "values": [
         0.671864
       ],
-      "glosa": "Gastos por actividad deportiva"
+      "glosa": "Gastos por actividades deportivas"
     },
     {
       "label": "Altri costi per il godimento dei beni di terzi",
@@ -304,7 +304,7 @@
       "values": [
         0.042602
       ],
-      "glosa": "Otros gastos por uso de bienes de terceros"
+      "glosa": "Otros gastos por el uso de bienes ajenos"
     },
     {
       "label": "Costi per attività sportiva",
@@ -314,7 +314,7 @@
       "values": [
         0.010497
       ],
-      "glosa": "Gastos por actividad deportiva"
+      "glosa": "Gastos por actividades deportivas"
     },
     {
       "label": "a) salari e stipendi",
@@ -344,7 +344,7 @@
       "values": [
         0.726685
       ],
-      "glosa": "c) Indemnización por cese laboral (TFR)"
+      "glosa": "c) Indemnizaciones por cese"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -374,7 +374,7 @@
       "values": [
         0.21243
       ],
-      "glosa": "d) Correcciones valorativas de créditos del activo corriente y de tesorería"
+      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -384,7 +384,7 @@
       "values": [
         0.112467
       ],
-      "glosa": "11) Variación de existencias de materias primas, secundarias, de consumo y mercaderías"
+      "glosa": "11) Variación de existencias de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -394,7 +394,7 @@
       "values": [
         0.015
       ],
-      "glosa": "12) Dotación a provisiones para riesgos"
+      "glosa": "12) Provisiones para riesgos y gastos"
     },
     {
       "label": "Spese per organizzazione gare",
@@ -414,7 +414,7 @@
       "values": [
         0.012945
       ],
-      "glosa": "Tasas de inscripción a competiciones"
+      "glosa": "Tasas de inscripción en competiciones"
     },
     {
       "label": "Oneri Specifici verso squadre ospitate",
@@ -434,7 +434,7 @@
       "values": [
         2.563786
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Costi valorizzazione calciatori",
@@ -444,7 +444,7 @@
       "values": [
         0.01
       ],
-      "glosa": "Gastos por primas de valorización de futbolistas"
+      "glosa": "Gastos de valorización de futbolistas"
     },
     {
       "label": "Costi accessori campagna trasferimenti",
@@ -464,7 +464,7 @@
       "values": [
         1.412457
       ],
-      "glosa": "Pérdidas en traspasos de futbolistas"
+      "glosa": "Minusvalías por traspaso de futbolistas"
     },
     {
       "label": "Altri oneri di gestione",
@@ -474,7 +474,7 @@
       "values": [
         4.44432
       ],
-      "glosa": "Otros gastos de gestión"
+      "glosa": "Otros gastos de explotación"
     }
   ]
 }

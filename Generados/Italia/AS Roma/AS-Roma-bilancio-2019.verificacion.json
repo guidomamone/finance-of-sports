@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
- "generado": "2026-10-07T23:49:19.818Z",
- "estado": "cola",
+ "generado": "2026-10-08T02:53:37.894Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2019,
  "escala": {
@@ -12,14 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2ac2c3f",
-  "b544b97",
-  "0b99aca",
-  "a168cd5",
-  "6d55bd9",
-  "deb7daa"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,8 +36,8 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": false,
-   "detalle": "la columna 2018 de este documento suma ingresos 320.428; el sitio tiene 296.87"
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 320.428; el sitio tiene 320.509"
   },
   {
    "nombre": "documento del año 2018",
@@ -54,11 +47,14 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (columna, \"-\"): aceptar, en AS-Roma-bilancio-2019.pdf",
   "duda de localizar que no afecta la carga: Las columnas de segmento no abren renglones que no estén desglosados en las notas 23-33.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
   "duda de extraer que no afecta la carga: Ambas columnas de L2098 dicen 01.07.2018 - 30.06.2019; las notas confirman que la segunda es 30.06.2018.",
-  "duda de extraer que no afecta la carga: L4907 menciona 113.064 pero L4918 y L2103 dan 111.919."
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori\"): corregir no, en AS-Roma-bilancio-2019.pdf",
+  "duda de extraer que no afecta la carga: L4907 menciona 113.064 pero L4918 y L2103 dan 111.919.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Variazione delle rimanenze\"): aceptar, en AS-Roma-bilancio-2019.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
