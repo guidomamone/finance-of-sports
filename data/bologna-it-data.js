@@ -127,6 +127,21 @@ const bolognaitRevenueLinesByYear = {
     { rawLabel:'h) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:6.914074, disclosureLevel:'aggregated' }, // pág. 27, Jev 0.99
     { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.645245, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Bologna/Bologna-bilancio-individuale-2023-24.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:5.605794, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:2.989694, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:3.319329, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'b) proventi da sponsorizzazione', normalizedCategory:'sponsorship_commercial', amountNative:5.245655, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:11.88499, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:3.469603, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'e) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:62.645472, disclosureLevel:'aggregated' }, // pág. 29, Jev 1
+    { rawLabel:'f) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:0.000453, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'g) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:24.0133, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'h) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:7.172215, disclosureLevel:'aggregated' }, // pág. 29, precedente
+    { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:1.456947, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const bolognaitExpenseLinesByYear = {
   2020: [ // tools/cargar.mjs (2026-10-07)
@@ -337,6 +352,34 @@ const bolognaitExpenseLinesByYear = {
     { rawLabel:'d) altri oneri da trasferimento calciatori', normalizedCategory:'other_expenses', amountNative:-1.759443, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.92
     { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.003196, disclosureLevel:'aggregated' }, // pág. 28, Jev 1
   ],
+  2024: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-1.566205, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-2.720328, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-2.443669, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-1.003073, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.100622, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-1.057236, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'Amministrative, pubblicitarie e generali', normalizedCategory:'admin_general_expense', amountNative:-5.858302, disclosureLevel:'aggregated' }, // pág. 65, precedente
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-3.343208, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-64.389834, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-5.81673, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.846228, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'player_amortisation', amountNative:-29.721144, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'Concessioni, licenze e marchi e diritti simili', normalizedCategory:'other_amortisation', amountNative:-0.218687, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'Costi pluriennali su beni di terzi', normalizedCategory:'other_amortisation', amountNative:-0.078138, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'impianti e macchinari', normalizedCategory:'depreciation', amountNative:-0.078732, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'attrezzature industriali e commerciali', normalizedCategory:'depreciation', amountNative:-0.101277, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'altri beni', normalizedCategory:'depreciation', amountNative:-0.06878, disclosureLevel:'aggregated' }, // pág. 67, precedente
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-2.188692, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-1.548989, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.03502, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'Oneri specifici verso squadre ospitate:', normalizedCategory:'match_organisation_expense', amountNative:-0.115382, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'b) costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-1.75976, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-0.150747, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-7.779245, disclosureLevel:'aggregated' }, // pág. 30, Jev 1
+    { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-1.769028, disclosureLevel:'aggregated' }, // pág. 30, precedente
+  ],
 };
 const bolognaitFiscalYearMeta = {
   // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (670.894). Formato Codice Civile: el 17) "interessi ed altri oneri finanziari" se imprime en positivo y se resta por posición (C = 15+16-17); el script lo sumaba. Se reemplaza solo la fila de esa línea: "altri" también rotula el 5) de ingresos y el 16) (to-do 157/158).
@@ -485,6 +528,29 @@ const bolognaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:117.323312, officialTotalExpenses:130.289666, officialPAT:-16.316537,
   },
+  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (6.450.122). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba (mismo caso que Bologna 2019-20, 2020-21 y 2025)
+  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (259.314). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): rettifiche D 19) a) svalutazioni di partecipazioni impreso en positivo y restado
+  2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'bologna-it-bilancio-individuale-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.117214, tax:-2.335748,
+    extraRows: [
+      {label:'Imprese controllate', value:0.316104},
+      {label:'b) proventi finanziari da titoli immobilizz.', value:0.000045},
+      {label:'altri', value:5.253267},
+      {label:'17-bis) utili e perdite su cambi', value:0.022806},
+      {label:'altri oneri finanziari (17, costo)', value:-6.450122},
+      {label:'svalutazioni di partecipazioni (D 19, costo)', value:-0.259314},
+      {label:'imposte correnti', value:-2.372575},
+      {label:'imposte relative a esercizi precedenti', value:0.036827},
+      {label:'proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:127.803452, officialTotalExpenses:134.608309, officialPAT:-10.408567,
+  },
 };
 const bolognaitPresupuestoOverlayByYear = {};
 
@@ -538,6 +604,12 @@ Object.assign(sources, {
     title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-consolidato-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'bologna-it-bilancio-individuale-2023-24': {
+    id:'bologna-it-bilancio-individuale-2023-24', clubId:'bologna-it',
+    title:'Bologna F.C. 1909 S.p.A. — Bologna-bilancio-individuale-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

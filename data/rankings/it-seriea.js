@@ -5,7 +5,7 @@
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -107,6 +107,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"torino-it", revenue:139.769, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2024",
         mix:[["Comercial / Sponsors",17.323],["Estadio",6.186],["Televisión",50.394],["Venta de Jugadores",61.595],["Otros ingresos",4.27]] },
+      { id:"bologna-it", revenue:136.878, reportType:"official_balance_sheet",
+        sourceId:"bologna-it-bilancio-individuale-2023-24",
+        mix:[["Comercial / Sponsors",22.063],["Estadio",9.206],["Televisión",67.094],["Venta de Jugadores",33.4],["Otros ingresos",5.115]] },
       { id:"hellasverona-it", revenue:123.479, reportType:"official_balance_sheet",
         sourceId:"hellasverona-it-bilancio-individuale-2024",
         mix:[["Comercial / Sponsors",15.013],["Estadio",5.608],["Televisión",41.117],["Venta de Jugadores",55.174],["Otros ingresos",6.567]] },
