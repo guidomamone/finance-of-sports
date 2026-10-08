@@ -66,3 +66,5 @@ Exa encontró las URLs exactas del 30/06/2024 en el CDN: `https://hellas.hqcdn.i
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.pdf` (sourceId `hellasverona-it-bilancio-individuale-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.pdf` (sourceId `hellasverona-it-bilancio-individuale-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.pdf` (sourceId `hellasverona-it-bilancio-individuale-2024`).
