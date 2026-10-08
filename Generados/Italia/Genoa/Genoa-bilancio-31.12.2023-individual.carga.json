@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
- "generado": "2026-10-08T22:50:10.644Z",
- "frena": [],
+ "generado": "2026-10-08T22:55:33.194Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "genoa-it ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['genoa-it-bilancio-31-12-2023-individual'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-07: individual (Genoa Cricket and Football Club S.p.A.); único perímetro con documento en 2022-2025; el consolidado (+ Genoa Image) difiere 3-6%)",
   "el documento cierra 2023-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
@@ -2106,8 +2119,8 @@
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Genoa\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -2147,13 +2160,13 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Genoa\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 14,
   "lineasGasto": 30,
   "metaFilas": 11,

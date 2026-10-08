@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
- "generado": "2026-10-08T22:50:11.607Z",
- "frena": [],
+ "generado": "2026-10-08T22:55:35.201Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "inter-it ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['inter-it-fascicolo-bilancio-consolidato-2023-24'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (consolidado); 5 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-462.17828); queda la suma, verificada por el resultado del ejercicio"
@@ -1843,8 +1856,8 @@
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Inter Milan\" = \"Inter\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1884,13 +1897,13 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Inter Milan\" = \"Inter\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 17,
   "lineasGasto": 46,
   "metaFilas": 9,

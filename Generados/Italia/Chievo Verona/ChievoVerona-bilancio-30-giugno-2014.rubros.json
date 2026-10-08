@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
   "club": "chievo-verona",
   "year": 2014,
-  "generatedAt": "2026-10-08T22:47:19.877Z",
+  "generatedAt": "2026-10-08T22:51:47.501Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -84,7 +84,7 @@
       "values": [
         4.607875
       ],
-      "glosa": "Ingresos por patrocinios"
+      "glosa": "Ingresos por patrocinio"
     },
     {
       "label": "Proventi pubblicitari",
@@ -104,7 +104,7 @@
       "values": [
         27.853883
       ],
-      "glosa": "- Ingresos televisivos"
+      "glosa": "- Ingresos por derechos audiovisuales"
     },
     {
       "label": "Proventi vari",
@@ -134,7 +134,7 @@
       "values": [
         7.672633
       ],
-      "glosa": "Plusvalías por enajenación de derechos plurianuales de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -144,7 +144,7 @@
       "values": [
         1.074068
       ],
-      "glosa": "Otros ingresos de la gestión de futbolistas"
+      "glosa": "Otros ingresos de gestión de futbolistas"
     },
     {
       "label": "Ricavi e proventi diversi",
@@ -154,7 +154,7 @@
       "values": [
         0.430237
       ],
-      "glosa": "Otros ingresos de explotación y diversos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -174,7 +174,7 @@
       "values": [
         8.178732
       ],
-      "glosa": "7) Por servicios"
+      "glosa": "7) Servicios exteriores"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -184,7 +184,7 @@
       "values": [
         1.524568
       ],
-      "glosa": "8) Por arrendamientos y cánones (uso de bienes de terceros)"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -214,7 +214,7 @@
       "values": [
         0.272088
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato laboral (TFR)"
+      "glosa": "c) Indemnizaciones por fin de contrato"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -244,7 +244,7 @@
       "values": [
         0
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -254,7 +254,7 @@
       "values": [
         0.204822
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -274,7 +274,7 @@
       "values": [
         0.001487
       ],
-      "glosa": "- Porcentaje sobre recaudación de partidos a equipos visitantes"
+      "glosa": "- Porcentaje sobre la recaudación de partidos a equipos visitantes"
     },
     {
       "label": "Costo per acquisiti temporanea prestaz. Calciatori",
@@ -284,7 +284,7 @@
       "values": [
         1.173686
       ],
-      "glosa": "Gastos por adquisición temporal de servicios de futbolistas"
+      "glosa": "Costes por cesión temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti plur. calciatori",
@@ -294,7 +294,7 @@
       "values": [
         0.718093
       ],
-      "glosa": "Minusvalías por enajenación de derechos plurianuales de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -314,7 +314,7 @@
       "values": [
         1.217624
       ],
-      "glosa": "Otros gastos de explotación"
+      "glosa": "Otros gastos de gestión"
     }
   ]
 }

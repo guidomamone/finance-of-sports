@@ -1,0 +1,536 @@
+{
+ "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+ "generatedAt": "2026-10-08T22:55:16.946Z",
+ "rubrosHuella": "6d46be7b28bd215aa9ba9c03cb774e95287fc24d",
+ "rubros": [
+  {
+   "label": "Revenue from Television rights",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Sponsorships - Related party",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Revenue from Contributions",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "member_dues",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "member_dues",
+     0.5
+    ],
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Gain on transfer of players",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Sponsorships",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Revenue from store",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Revenues\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Other incomes",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Ticketing",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Insurance",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 973
+  },
+  {
+   "label": "Accomodation and transportation",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Sports equipment",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "match_organisation_expense",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Player salaries",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Loan of players",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Amortization of multi-year football players rights",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Other cost of revenues",
+   "lado": "expense",
+   "page": 40,
+   "section": "nota que desglosa \"Cost of revenues\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Salaries and social security contributions",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Rental expenses",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Impairment of receivables",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Operating and administrative expenses",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Impairment loss on intangible assets",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "player_impairment",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_impairment",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Penalties and fines",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"General and administrative expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Depreciation costs",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Depreciation and Amortization\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Amortization on Intangible assets",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Depreciation and Amortization\"",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1074
+  }
+ ]
+}

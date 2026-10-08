@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
   "club": "chievo-verona",
   "year": 2015,
-  "generatedAt": "2026-10-08T22:47:19.930Z",
+  "generatedAt": "2026-10-08T22:51:47.567Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         2.055289
       ],
-      "glosa": "4) Trabajos realizados por la empresa para su inmovilizado"
+      "glosa": "4) Trabajos realizados por la empresa para su activo"
     },
     {
       "label": "contributi in conto esercizio",
@@ -84,7 +84,7 @@
       "values": [
         0.938955
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Consumo de materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -94,7 +94,7 @@
       "values": [
         8.073092
       ],
-      "glosa": "7) Por servicios"
+      "glosa": "7) Servicios exteriores"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -104,7 +104,7 @@
       "values": [
         1.712631
       ],
-      "glosa": "8) Por uso de bienes de terceros"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -134,7 +134,7 @@
       "values": [
         0.250637
       ],
-      "glosa": "c) Indemnización por fin de relación laboral"
+      "glosa": "c) Indemnizaciones por fin de contrato laboral"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -164,7 +164,7 @@
       "values": [
         0.068897
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo circulante y de tesorería"
+      "glosa": "d) Deterioro del valor de los créditos comerciales y de la tesorería"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -194,7 +194,7 @@
       "values": [
         1.830263
       ],
-      "glosa": "Coste por cesión temporal de jugadores"
+      "glosa": "Gastos por cesión temporal de derechos de jugadores"
     },
     {
       "label": "Minusvalenza da cessioni diritti plur. calciatori",
@@ -204,7 +204,7 @@
       "values": [
         2.292323
       ],
-      "glosa": "Pérdidas por cesión de derechos plurianuales de futbolistas"
+      "glosa": "Pérdidas por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md",
- "generado": "2026-10-08T22:36:56.160Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:51:47.806Z",
+ "estado": "ok",
  "clubId": "bologna-it",
  "year": 2024,
  "escala": {
@@ -41,9 +41,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "574c2f1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -80,6 +78,7 @@
   "la nota de \"h) altri proventi da trasferimento diritti calciatori\" no suma el renglón (14.34443 contra 7.172215, sumando sus renglones): quedó el renglón del estado",
   "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (6.450.122), en lugar de la fila de L1273 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba (mismo caso que Bologna 2019-20, 2020-21 y 2025))",
   "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (259.314), en lugar de la fila de L1279 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): rettifiche D 19) a) svalutazioni di partecipazioni impreso en positivo y restado)",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Bologna-bilancio-individuale-2024-25.pdf",
   "duda de localizar que no afecta la carga: b10 y b9 son reclasificaciones de la memoria que repiten importes del Conto Economico.",
   "duda de extraer que no afecta la carga: La nota separa 54.000 de 'Proventi vari' que en el estado parece incluido en diritti audiovisivi para 2023 (L1207 vs L2851-L2852); solo afecta el año anterior."
  ],

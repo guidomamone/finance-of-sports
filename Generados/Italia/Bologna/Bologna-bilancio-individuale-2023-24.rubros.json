@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf",
   "club": "bologna-it",
   "year": 2024,
-  "generatedAt": "2026-10-08T18:56:45.096Z",
+  "generatedAt": "2026-10-08T22:51:47.806Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         3.319329
       ],
-      "glosa": "a) Subvenciones de explotación"
+      "glosa": "a) Subvenciones a la explotación"
     },
     {
       "label": "b) proventi da sponsorizzazione",
@@ -84,7 +84,7 @@
       "values": [
         0.000453
       ],
-      "glosa": "f) Ingresos por cesión temporal de derechos de futbolistas"
+      "glosa": "f) Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "g) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -94,7 +94,7 @@
       "values": [
         24.0133
       ],
-      "glosa": "g) Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "g) Plusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "h) altri proventi da trasferimento diritti calciatori",
@@ -104,7 +104,7 @@
       "values": [
         7.172215
       ],
-      "glosa": "h) Otros ingresos por transferencia de derechos de futbolistas"
+      "glosa": "h) Otros ingresos por transferencia de futbolistas"
     },
     {
       "label": "i) ricavi e proventi diversi",
@@ -124,7 +124,7 @@
       "values": [
         1.566205
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercancías"
+      "glosa": "6) Consumo de materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -154,7 +154,7 @@
       "values": [
         1.003073
       ],
-      "glosa": "Gastos de desplazamiento, alojamiento y dietas para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -174,7 +174,7 @@
       "values": [
         1.057236
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y cargas de previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -224,7 +224,7 @@
       "values": [
         0.846228
       ],
-      "glosa": "c) Indemnizaciones por cese laboral"
+      "glosa": "c) Indemnización por cese de la relación laboral (TFR)"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -254,7 +254,7 @@
       "values": [
         0.078138
       ],
-      "glosa": "Gastos plurianuales sobre bienes de terceros"
+      "glosa": "Gastos plurianuales en bienes arrendados"
     },
     {
       "label": "impianti e macchinari",
@@ -294,7 +294,7 @@
       "values": [
         2.188692
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -304,7 +304,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Dotaciones a provisiones para riesgos"
+      "glosa": "12) Dotaciones a las provisiones para riesgos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -314,7 +314,7 @@
       "values": [
         1.548989
       ],
-      "glosa": "Gastos varios de organización de partidos"
+      "glosa": "Gastos diversos de organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -334,7 +334,7 @@
       "values": [
         0.115382
       ],
-      "glosa": "Gastos específicos hacia equipos visitantes:"
+      "glosa": "Gastos específicos relativos a equipos visitantes:"
     },
     {
       "label": "b) costi per acquisizione temporanea prestazioni calciatori",
@@ -344,7 +344,7 @@
       "values": [
         1.75976
       ],
-      "glosa": "b) Gastos por adquisición temporal de derechos de futbolistas"
+      "glosa": "b) Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -354,7 +354,7 @@
       "values": [
         0.150747
       ],
-      "glosa": "c) Pérdidas por traspaso de derechos federativos de futbolistas"
+      "glosa": "c) Minusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "d) altri oneri da trasferimento diritti calciatori",
@@ -364,7 +364,7 @@
       "values": [
         7.779245
       ],
-      "glosa": "d) Otros gastos por transferencia de derechos de futbolistas"
+      "glosa": "d) Otros gastos por transferencia de futbolistas"
     },
     {
       "label": "e) altri oneri diversi di gestione",
@@ -374,7 +374,7 @@
       "values": [
         1.769028
       ],
-      "glosa": "e) Otros gastos diversos de gestión"
+      "glosa": "e) Otros gastos de explotación"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
  "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
- "generado": "2026-10-08T22:47:20.127Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:51:47.753Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "deed782",
-  "e6ac586"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,7 +36,8 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b36 es la conciliación OIC vs IFRS del ejercicio anterior, no del pedido."
+  "duda de localizar que no afecta la carga: b36 es la conciliación OIC vs IFRS del ejercicio anterior, no del pedido.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"General and administrative expenses\"): aceptar, en Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
   "club": "juve-stabia",
   "year": 2024,
-  "generatedAt": "2026-10-08T22:47:20.127Z",
+  "generatedAt": "2026-10-08T22:51:47.753Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         0.074261
       ],
-      "glosa": "Ingresos por tienda"
+      "glosa": "Ingresos de tienda"
     },
     {
       "label": "Other incomes",
@@ -124,7 +124,7 @@
       "values": [
         2.463183
       ],
-      "glosa": "Salarios de jugadores"
+      "glosa": "Sueldos de jugadores"
     },
     {
       "label": "Accomodation and transportation",
@@ -164,7 +164,7 @@
       "values": [
         0.193876
       ],
-      "glosa": "Otros costes de ventas"
+      "glosa": "Otros costes de las ventas"
     },
     {
       "label": "Amortization of multi-year football players rights",
@@ -174,7 +174,7 @@
       "values": [
         0.166
       ],
-      "glosa": "Amortización de derechos federativos de jugadores"
+      "glosa": "Amortización de derechos federativos de jugadores plurianuales"
     },
     {
       "label": "Salaries and social security contributions",
@@ -194,7 +194,7 @@
       "values": [
         0.043785
       ],
-      "glosa": "Gastos de arrendamiento"
+      "glosa": "Gastos por arrendamiento"
     },
     {
       "label": "Impairment of receivables",
@@ -204,7 +204,7 @@
       "values": [
         0.090272
       ],
-      "glosa": "Deterioro de créditos comerciales"
+      "glosa": "Deterioro de cuentas por cobrar"
     },
     {
       "label": "Penalties and fines",
@@ -234,7 +234,7 @@
       "values": [
         0.082667
       ],
-      "glosa": "Pérdidas por deterioro del inmovilizado intangible"
+      "glosa": "Pérdidas por deterioro de activos intangibles"
     },
     {
       "label": "Depreciation costs",
@@ -244,7 +244,7 @@
       "values": [
         0.007872
       ],
-      "glosa": "Gastos de amortización del inmovilizado material"
+      "glosa": "Gastos de depreciación"
     },
     {
       "label": "Amortization on Intangible assets",
@@ -254,7 +254,7 @@
       "values": [
         0.004474
       ],
-      "glosa": "Amortización del inmovilizado intangible"
+      "glosa": "Amortización de activos intangibles"
     }
   ]
 }

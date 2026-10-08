@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md",
- "generado": "2026-10-08T22:36:59.865Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:51:48.048Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2011,
  "escala": {
@@ -69,11 +69,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "2c52af4",
-  "d89b299",
-  "d4af6a6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -120,7 +116,10 @@
   "ajuste manual: fila \"Sopravvenienze passive (non ricorrenti)\" (gasto) 596.497, en lugar de la fila de L3554 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de gastos que falta (columnas corridas))",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale muestran totales de ricavi y resultados, no desglosan un renglón concreto.",
-  "duda de extraer confirmada por las sumas (columna, \"-\"): ¿Se cargan los importes del ejercicio de b112 corriendo la columna 2010/11 una fila hacia arriba (dos en Personale), como confirman las notas b170-b185?",
+  "duda de extraer ya contestada para el club (columna, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2010-11.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Materie prime, sussidiarie, di consumo e di merci\"): corregir no, en Lazio-bilancio-separato-consolidato-2010-11.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Altri oneri\"): corregir no, en Lazio-bilancio-separato-consolidato-2010-11.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Oneri da gestione diritti calciatori\"): corregir no, en Lazio-bilancio-separato-consolidato-2010-11.pdf",
   "duda de extraer que no afecta la carga: Abre 6.650 en condizionati/non condizionati, importe ya cargado en b180 L5267."
  ],
  "reintentar": [

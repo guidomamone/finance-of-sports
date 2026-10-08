@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.pdf",
   "club": "chievo-verona",
   "year": 2016,
-  "generatedAt": "2026-10-08T22:47:19.986Z",
+  "generatedAt": "2026-10-08T22:51:47.611Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.010077
       ],
-      "glosa": "- Otros partidos en Italia y el extranjero"
+      "glosa": "- Otros partidos nacionales e internacionales"
     },
     {
       "label": "Abbonamenti",
@@ -94,7 +94,7 @@
       "values": [
         35.076342
       ],
-      "glosa": "- Ingresos televisivos"
+      "glosa": "- Ingresos por derechos audiovisuales"
     },
     {
       "label": "Proventi vari",
@@ -104,7 +104,7 @@
       "values": [
         0.13
       ],
-      "glosa": "Ingresos varios"
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "Ricavi da cessione temporanea calciatori",
@@ -124,7 +124,7 @@
       "values": [
         18.822898
       ],
-      "glosa": "Plusvalías por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -134,7 +134,7 @@
       "values": [
         0.675969
       ],
-      "glosa": "Otros ingresos de gestión de futbolistas"
+      "glosa": "Otros ingresos derivados de la gestión de futbolistas"
     },
     {
       "label": "Ricavi e proventi diversi",
@@ -144,7 +144,7 @@
       "values": [
         0.489209
       ],
-      "glosa": "Otros ingresos y rendimientos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -154,7 +154,7 @@
       "values": [
         1.035203
       ],
-      "glosa": "6) Por materias primas, secundarias, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -164,7 +164,7 @@
       "values": [
         10.585414
       ],
-      "glosa": "7) Por servicios"
+      "glosa": "7) Servicios exteriores"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -174,7 +174,7 @@
       "values": [
         2.293589
       ],
-      "glosa": "8) Por arrendamientos y cánones"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -204,7 +204,7 @@
       "values": [
         0.268687
       ],
-      "glosa": "c) Indemnización por cese de personal"
+      "glosa": "c) Indemnizaciones por fin de contrato"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -234,7 +234,7 @@
       "values": [
         0.194
       ],
-      "glosa": "d) Correcciones de valor de créditos del activo corriente y de tesorería"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "13) altri accantonamenti",
@@ -274,7 +274,7 @@
       "values": [
         0.003607
       ],
-      "glosa": "- Porcentaje sobre recaudación de partidos a equipos visitantes"
+      "glosa": "- Porcentaje sobre taquillas cedido a equipos visitantes"
     },
     {
       "label": "Costo per acquisii.temporanea prestaz.",
@@ -284,7 +284,7 @@
       "values": [
         1.6
       ],
-      "glosa": "Costes por adquisición temporal de prestaciones deportivas"
+      "glosa": "Coste por cesión temporal de jugadores"
     },
     {
       "label": "Minusvalenze da cessione diritti plur. calciatori",
@@ -294,7 +294,7 @@
       "values": [
         1.516225
       ],
-      "glosa": "Minusvalías por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -304,7 +304,7 @@
       "values": [
         0.925
       ],
-      "glosa": "Otros gastos de gestión de futbolistas"
+      "glosa": "Otros gastos derivados de la gestión de futbolistas"
     },
     {
       "label": "Altri oneri diversi di gestione",

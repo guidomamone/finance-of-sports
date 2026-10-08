@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
   "club": "bologna-it",
   "year": 2025,
-  "generatedAt": "2026-10-08T18:56:45.177Z",
+  "generatedAt": "2026-10-08T22:51:47.887Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,27 +14,7 @@
       "values": [
         8.101739
       ],
-      "glosa": "a) Ingresos por partidos"
-    },
-    {
-      "label": "b) abbonamenti",
-      "lado": "revenue",
-      "page": 25,
-      "section": "estado",
-      "values": [
-        8.66599
-      ],
-      "glosa": "b) Abonos"
-    },
-    {
-      "label": "Totale ricavi delle vendite e delle prestazioni",
-      "lado": "revenue",
-      "page": 25,
-      "section": "estado",
-      "values": [
-        16.757729
-      ],
-      "glosa": "Total ingresos de ventas y prestaciones de servicios"
+      "glosa": "a) Ingresos por taquilla y partidos"
     },
     {
       "label": "a) contributi in conto esercizio",
@@ -44,7 +24,7 @@
       "values": [
         1.064466
       ],
-      "glosa": "a) Subvenciones de explotación"
+      "glosa": "a) Subvenciones a la explotación"
     },
     {
       "label": "b) proventi da sponsorizzazione",
@@ -74,7 +54,7 @@
       "values": [
         2.877283
       ],
-      "glosa": "d) Ingresos comerciales y cánones"
+      "glosa": "d) Ingresos comerciales y regalías"
     },
     {
       "label": "e) proventi da cessione diritti audiovisivi",
@@ -104,7 +84,7 @@
       "values": [
         77.424567
       ],
-      "glosa": "g) Plusvalías por traspaso de derechos de futbolistas"
+      "glosa": "g) Plusvalías por cesión de derechos de futbolistas"
     },
     {
       "label": "h) altri proventi da trasferimento diritti calciatori",
@@ -124,7 +104,17 @@
       "values": [
         1.745884
       ],
-      "glosa": "i) Otros ingresos y rendimientos diversos"
+      "glosa": "i) Ingresos diversos de explotación"
+    },
+    {
+      "label": "b) abbonamenti",
+      "lado": "revenue",
+      "page": 25,
+      "section": "ajuste manual",
+      "values": [
+        8.65599
+      ],
+      "glosa": "b) Abonos"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -164,7 +154,7 @@
       "values": [
         2.063679
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamiento en partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -184,7 +174,7 @@
       "values": [
         1.573627
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -234,7 +224,7 @@
       "values": [
         1.014575
       ],
-      "glosa": "c) Indemnización por cese laboral"
+      "glosa": "c) Indemnización por cese de relación laboral"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -244,7 +234,7 @@
       "values": [
         35.718991
       ],
-      "glosa": "Derechos federativos de futbolistas"
+      "glosa": "Derechos federativos sobre futbolistas"
     },
     {
       "label": "Diritti di brevetto e diritti industriali",
@@ -254,7 +244,7 @@
       "values": [
         0.01513
       ],
-      "glosa": "Patentes y derechos de propiedad industrial"
+      "glosa": "Patentes y propiedad industrial"
     },
     {
       "label": "Concessioni, licenze e marchi e diritti simili",
@@ -284,7 +274,7 @@
       "values": [
         0.04712
       ],
-      "glosa": "Terrenos y construcciones «construcciones ligeras»"
+      "glosa": "Terrenos y construcciones \"construcciones ligeras\""
     },
     {
       "label": "impianti e macchinari",
@@ -294,7 +284,7 @@
       "values": [
         0.207553
       ],
-      "glosa": "Instalaciones y maquinaria"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "attrezzature industriali e commerciali",
@@ -304,7 +294,7 @@
       "values": [
         0.111155
       ],
-      "glosa": "Equipos industriales y comerciales"
+      "glosa": "Equipamiento industrial y comercial"
     },
     {
       "label": "altri beni",
@@ -314,7 +304,7 @@
       "values": [
         0.136704
       ],
-      "glosa": "Otros activos"
+      "glosa": "Otros bienes"
     },
     {
       "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -344,7 +334,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Dotación a las provisiones para riesgos y gastos"
+      "glosa": "12) Provisiones para riesgos"
     },
     {
       "label": "a) oneri da organizzazione competizioni",
@@ -364,7 +354,7 @@
       "values": [
         1.681063
       ],
-      "glosa": "b) Gastos por adquisición temporal de derechos de futbolistas"
+      "glosa": "b) Gastos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -374,7 +364,7 @@
       "values": [
         0.000001
       ],
-      "glosa": "c) Minusvalías por traspaso de derechos de futbolistas"
+      "glosa": "c) Minusvalías por cesión de derechos de futbolistas"
     },
     {
       "label": "d) altri oneri da trasferimento diritti calciatori",
