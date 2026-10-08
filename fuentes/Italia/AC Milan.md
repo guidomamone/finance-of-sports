@@ -55,3 +55,5 @@ Series viejas del sitio anterior, recuperadas de Wayback (CDX de dominio complet
 **Huecos**: dic 2014, dic 2015, dic 2016 y el período de transición hasta el 30/06/2017 (el 2017/18 ya cargado cubre desde ahí); no hay captura de esos PDFs. La prensa (calcioefinanza) comenta el 2016 civilistico pero sin documento. **2025/26**: el club anunció cifras el 2026-09-28; la página oficial todavía lista hasta 2024-25.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.pdf` (sourceId `acmilan-it-bilanci-relazioni-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.pdf` (sourceId `acmilan-it-bilanci-relazioni-2024-25`).

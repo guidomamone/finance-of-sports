@@ -117,6 +117,24 @@ const acmilanitRevenueLinesByYear = {
     { rawLabel:'i) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:2.674, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'l) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:15.965, disclosureLevel:'aggregated' }, // pág. 28, precedente
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:41.113, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:22.118, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'c) ricavi da altre competizioni', normalizedCategory:'competition_bonus', amountNative:6.286, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'2 variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti', normalizedCategory:'other_income', amountNative:0.997, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:0.013, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'b) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:91.111, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0, disclosureLevel:'aggregated' }, // pág. 36, Jev 1
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:61.216, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'e) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:154.216, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'f) proventi vari', normalizedCategory:'other_income', amountNative:12.694, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'g) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:9.496, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'h) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:55.9, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'i) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:17.775, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'l) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:21.595, disclosureLevel:'aggregated' }, // pág. 36, precedente
+  ],
 };
 const acmilanitExpenseLinesByYear = {
   2024: [ // tools/cargar.mjs (2026-10-07)
@@ -252,6 +270,40 @@ const acmilanitExpenseLinesByYear = {
     { rawLabel:'f) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.005, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'g) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-4.561, disclosureLevel:'aggregated' }, // pág. 28, precedente
   ],
+  2025: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6 per materie prime, sussidiarie, di consumo, merci', normalizedCategory:'other_expenses', amountNative:-22.782, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'Costi generali attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-34.126, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Consulenze e collaborazioni', normalizedCategory:'admin_general_expense', amountNative:-14.254, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Pubblicità e spese promozionali', normalizedCategory:'admin_general_expense', amountNative:-8.939, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Assicurazioni', normalizedCategory:'admin_general_expense', amountNative:-0.87, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Emolumenti ad organi sociali', normalizedCategory:'admin_general_expense', amountNative:-4.627, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Spese amministrative e generali', normalizedCategory:'admin_general_expense', amountNative:-8.224, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Mensa e servizi di ristorazione', normalizedCategory:'admin_general_expense', amountNative:-1.861, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Manutenzione e riparazione', normalizedCategory:'admin_general_expense', amountNative:-2.525, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Trasporti, magazzinaggio e spese viaggio', normalizedCategory:'match_organisation_expense', amountNative:-4.286, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Altri costi per servizi', normalizedCategory:'admin_general_expense', amountNative:-11.697, disclosureLevel:'aggregated' }, // pág. 99, precedente
+    { rawLabel:'Affitti passivi', normalizedCategory:'admin_general_expense', amountNative:-11.138, disclosureLevel:'aggregated' }, // pág. 101, precedente
+    { rawLabel:'Noleggi e altre locazioni', normalizedCategory:'admin_general_expense', amountNative:-4.664, disclosureLevel:'aggregated' }, // pág. 101, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-172.324, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-13.376, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-2.584, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'d) trattamento di quiescenza e simili', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.99
+    { rawLabel:'e) altri costi', normalizedCategory:'wages_squad', amountNative:-0.433, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-96.414, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-2.56, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-19.726, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'d) svalutazione dei crediti compresi nell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-1.323, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'11 variazione delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 36, Jev 1
+    { rawLabel:'12 accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-11.789, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'13 altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' }, // pág. 36, Claude 0.85
+    { rawLabel:'a) spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-10.798, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'b) tasse iscrizione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.186, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'c) percentuale su incassi gare a squadre ospiti', normalizedCategory:'match_organisation_expense', amountNative:-0.212, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.99
+    { rawLabel:'d) costi per acquisizione temporanea calciatori', normalizedCategory:'other_expenses', amountNative:-5.373, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'e) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-0.837, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'f) altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-4.22, disclosureLevel:'aggregated' }, // pág. 36, precedente
+    { rawLabel:'g) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-6.331, disclosureLevel:'aggregated' }, // pág. 36, precedente
+  ],
 };
 const acmilanitFiscalYearMeta = {
   // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 672. D) rettifiche quedaban sin lado; las dos filas se llaman igual (arreglo manual 2026-10-07, causa encontrada por subagente; ver to-do 155)
@@ -357,6 +409,25 @@ const acmilanitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:192.315, officialTotalExpenses:374.198, officialPAT:-194.616,
   },
+  2025: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'acmilan-it-bilanci-relazioni-2024-25',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-6.251, tax:-6.804,
+    extraRows: [
+      {label:'- altri', value:8.054},
+      {label:'d) altri oneri finanziari', value:-14.527},
+      {label:'a) utili su cambi', value:0.176},
+      {label:'b) perdite su cambi', value:-0.735},
+      {label:'a) di partecipazioni', value:0.781},
+      {label:'a) imposte correnti', value:-9.193},
+      {label:'b) imposte differite e anticipate', value:2.389},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:494.53, officialTotalExpenses:477.642, officialPAT:2.994,
+  },
 };
 const acmilanitPresupuestoOverlayByYear = {};
 
@@ -404,6 +475,12 @@ Object.assign(sources, {
     title:'A.C. Milan S.p.A. — AC-Milan-bilanci-relazioni-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'acmilan-it-bilanci-relazioni-2024-25': {
+    id:'acmilan-it-bilanci-relazioni-2024-25', clubId:'acmilan-it',
+    title:'A.C. Milan S.p.A. — AC-Milan-bilanci-relazioni-2024-25 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
