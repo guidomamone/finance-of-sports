@@ -16,7 +16,7 @@
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2014: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2013: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2013: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2010: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -348,6 +348,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:371.212, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2012-13",
         mix:[["Comercial / Sponsors",68.799],["Estadio",49.771],["Televisión",213.829],["Venta de Jugadores",14.907],["Otros ingresos",23.906]] },
+      { id:"asroma-it", revenue:177.424, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2013",
+        mix:[["Comercial / Sponsors",26.957],["Estadio",27.782],["Televisión",86.346],["Venta de Jugadores",14.37],["Otros ingresos",21.969]] },
       { id:"lazio-it", revenue:143.611, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2012-13",
         mix:[["Comercial / Sponsors",17.756],["Estadio",14.095],["Televisión",92.533],["Venta de Jugadores",4.086],["Otros ingresos",15.14]] },
