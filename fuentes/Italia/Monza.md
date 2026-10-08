@@ -22,3 +22,5 @@
 ## Sesión de sourcing Italia sección 1 (2026-10-07): sin ejercicios nuevos
 
 El bilancio al 31/12/2025 no está publicado todavía (en 2025 se subió el 2024 antes de mayo; revisar). La CDX de dominio no trae nada anterior a 2022.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Monza/Monza-bilancio-2024.pdf` (sourceId `monza-it-bilancio-2024`).
