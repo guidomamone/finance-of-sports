@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
- "generado": "2026-10-08T20:03:01.875Z",
+ "generado": "2026-10-08T20:29:41.542Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2018,
@@ -26,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": null,
-   "detalle": "extraer.mjs no encontró el resultado impreso"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2019",
@@ -77,12 +77,12 @@
  "totales": {
   "ingresos": 346.990412,
   "gastos": 322.151273,
-  "financiero": 0,
-  "impuesto": 0,
-  "resultadoImpreso": null,
-  "resultadoParaCargar": null,
+  "financiero": -34.726631,
+  "impuesto": -7.865714,
+  "resultadoImpreso": -17.753536,
+  "resultadoParaCargar": -17.753536,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -634,6 +634,58 @@
   "financiero": 1,
   "impuesto": 1
  },
- "financiero": [],
- "impuesto": []
+ "financiero": [
+  {
+   "etiqueta": "- da altre imprese (da crediti iscritti nelle immobilizzazioni)",
+   "M": 0.000209,
+   "linea": 629
+  },
+  {
+   "etiqueta": "- da terzi (proventi diversi dai precedenti)",
+   "M": 4.607689,
+   "linea": 630
+  },
+  {
+   "etiqueta": "c) verso imprese controllanti",
+   "M": -14.091129,
+   "linea": 632
+  },
+  {
+   "etiqueta": "d) altri oneri finanziari",
+   "M": -25.151049,
+   "linea": 633
+  },
+  {
+   "etiqueta": "a) utile su cambi",
+   "M": 0.305048,
+   "linea": 635
+  },
+  {
+   "etiqueta": "c) perdite su cambi",
+   "M": -0.219919,
+   "linea": 636
+  },
+  {
+   "etiqueta": "19) Svalutazioni a) di partecipazioni",
+   "M": -0.17748,
+   "linea": 639
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) imposte correnti",
+   "M": -7.362455,
+   "linea": 643
+  },
+  {
+   "etiqueta": "b) imposte differite",
+   "M": -0.242375,
+   "linea": 644
+  },
+  {
+   "etiqueta": "c) imposte anticipate",
+   "M": -0.260884,
+   "linea": 645
+  }
+ ]
 }

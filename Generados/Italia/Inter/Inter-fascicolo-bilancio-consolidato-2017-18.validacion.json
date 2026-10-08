@@ -1,20 +1,833 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
- "mdSha1": "ee1e7b12d158304e29e7255dd8cdb008ef64a948",
+ "mdSha1": "4dfe620e1a7f7fa07a5baa82203d0b40d8a36415",
  "modo": "escaneo",
  "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
- "generado": "2026-10-08T17:37:46.673Z",
+ "generado": "2026-10-08T20:29:35.261Z",
  "fuentes": {
-  "13": "claude",
-  "47": "gemini",
-  "48": "gemini",
-  "50": "gemini",
-  "51": "gemini",
-  "52": "gemini",
-  "54": "gemini",
-  "55": "gemini"
+  "13": "guardada",
+  "14": "gemini",
+  "47": "guardada",
+  "48": "guardada",
+  "50": "guardada",
+  "51": "guardada",
+  "52": "guardada",
+  "54": "guardada"
  },
- "confirmados": 268,
- "noConfirmados": []
+ "confirmados": 112,
+ "noConfirmados": [
+  {
+   "bloque": "b100",
+   "pagina": 14,
+   "linea": 625,
+   "numero": "2018",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | Esercizio chiuso al 30 giugno 2018 | Esercizio chiuso al 30 giugno 2017 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b100",
+   "pagina": 14,
+   "linea": 625,
+   "numero": "2017",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | Esercizio chiuso al 30 giugno 2018 | Esercizio chiuso al 30 giugno 2017 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2096,
+   "numero": "6.000",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Valietti Federico | Genoa | 2 | 6.000 | (48) | 5.950 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2096,
+   "numero": "5.950",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Valietti Federico | Genoa | 2 | 6.000 | (48) | 5.950 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2097,
+   "numero": "5.199",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Murillo Ceron Jeison | Valencia | 5.199 | 11.938 | (1.399) | 5.340 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2097,
+   "numero": "11.938",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Murillo Ceron Jeison | Valencia | 5.199 | 11.938 | (1.399) | 5.340 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2097,
+   "numero": "1.399",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Murillo Ceron Jeison | Valencia | 5.199 | 11.938 | (1.399) | 5.340 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2097,
+   "numero": "5.340",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Murillo Ceron Jeison | Valencia | 5.199 | 11.938 | (1.399) | 5.340 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2098,
+   "numero": "5.000",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Carraro Marco | Atalanta B.C. S.p.A. | 406 | 5.000 | (139) | 4.455 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2098,
+   "numero": "4.455",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Carraro Marco | Atalanta B.C. S.p.A. | 406 | 5.000 | (139) | 4.455 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2099,
+   "numero": "4.620",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Odgaard Jens | Sassuolo | 994 | 4.620 | (91) | 3.535 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2099,
+   "numero": "3.535",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Odgaard Jens | Sassuolo | 994 | 4.620 | (91) | 3.535 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2100,
+   "numero": "1.528",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Zaniolo Nicolò | Roma | 1.528 | 4.230 | (58) | 2.643 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2100,
+   "numero": "4.230",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Zaniolo Nicolò | Roma | 1.528 | 4.230 | (58) | 2.643 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2100,
+   "numero": "2.643",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Zaniolo Nicolò | Roma | 1.528 | 4.230 | (58) | 2.643 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2101,
+   "numero": "2.500",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Nagatomo Yuto | Galatasaray | 515 | 2.500 | (140) | 1.845 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2101,
+   "numero": "1.845",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Nagatomo Yuto | Galatasaray | 515 | 2.500 | (140) | 1.845 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2102,
+   "numero": "1.975",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Manaj Rei | Albacete Balompie S.A.D. | 340 | 1.975 | (410) | 1.225 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2102,
+   "numero": "1.225",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Manaj Rei | Albacete Balompie S.A.D. | 340 | 1.975 | (410) | 1.225 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2103,
+   "numero": "1.000",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Bardi Francesco | Frosinone Calcio | 265 | 1.000 | (13) | 721 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2104,
+   "numero": "19.358",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Kondogbia Geoffrey | Valencia | 19.358 | 21.893 | (1.994) | 541 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2104,
+   "numero": "21.893",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Kondogbia Geoffrey | Valencia | 19.358 | 21.893 | (1.994) | 541 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2104,
+   "numero": "1.994",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Kondogbia Geoffrey | Valencia | 19.358 | 21.893 | (1.994) | 541 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2106,
+   "numero": "2.270",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Medel Soto Gary Alexis | Besiktas | 2.270 | 2.500 | (40) | 191 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2106,
+   "numero": "2.500",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Medel Soto Gary Alexis | Besiktas | 2.270 | 2.500 | (40) | 191 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2107,
+   "numero": "10.075",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Jovetic Stevan | Monaco | 10.075 | 10.500 | (296) | 129 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2107,
+   "numero": "10.500",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Jovetic Stevan | Monaco | 10.075 | 10.500 | (296) | 129 |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2109,
+   "numero": "49.704",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **Totale** | | [ilegible] | [ilegible] | [ilegible] | **49.704** |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 47,
+   "linea": 2111,
+   "numero": "1.423",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "[ilegible] da [ilegible] campagna trasferimento calciatori maturati nei confronti sia di club nazionali che internazionali, per Euro 1.[ilegible] migliaia [ileg"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2142,
+   "numero": "2.780",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Servizio biglietteria, controllo ingressi | 2.780 | 1.929 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2142,
+   "numero": "1.929",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Servizio biglietteria, controllo ingressi | 2.780 | 1.929 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2143,
+   "numero": "1.299",
+   "segundaLeyo": "1290",
+   "sinSegunda": false,
+   "texto": "| Assicurative e previdenziali | 1.299 | 1.523 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2143,
+   "numero": "1.523",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Assicurative e previdenziali | 1.299 | 1.523 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2145,
+   "numero": "31.628",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Amministrative - pubblicitarie e generali | 31.628 | 26.509 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2145,
+   "numero": "26.509",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Amministrative - pubblicitarie e generali | 31.628 | 26.509 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2146,
+   "numero": "51.977",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 51.977 | 45.986 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2146,
+   "numero": "45.986",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 51.977 | 45.986 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2152,
+   "numero": "2.219",
+   "segundaLeyo": "2019",
+   "sinSegunda": false,
+   "texto": "| Costi per allenamenti e ritiri | 2.219 | 2.214 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2152,
+   "numero": "2.214",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Costi per allenamenti e ritiri | 2.219 | 2.214 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2154,
+   "numero": "1.391",
+   "segundaLeyo": "1397",
+   "sinSegunda": false,
+   "texto": "| Compensi lavoratori autonomi | 1.391 | 2.682 |"
+  },
+  {
+   "bloque": "b40",
+   "pagina": 48,
+   "linea": 2154,
+   "numero": "2.682",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Compensi lavoratori autonomi | 1.391 | 2.682 |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 50,
+   "linea": 2225,
+   "numero": "1.240",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Canoni noleggio | 1.240 | 1.393  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 50,
+   "linea": 2225,
+   "numero": "1.393",
+   "segundaLeyo": "1391",
+   "sinSegunda": false,
+   "texto": "|  Canoni noleggio | 1.240 | 1.393  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 50,
+   "linea": 2226,
+   "numero": "8.352",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 8.352 | 8.237  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 50,
+   "linea": 2226,
+   "numero": "8.237",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 8.352 | 8.237  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2237,
+   "numero": "119.643",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Salari e stipendi | 119.643 | 16.349 | 117.479 | 13.652  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2237,
+   "numero": "16.349",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Salari e stipendi | 119.643 | 16.349 | 117.479 | 13.652  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2237,
+   "numero": "117.479",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Salari e stipendi | 119.643 | 16.349 | 117.479 | 13.652  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2237,
+   "numero": "13.652",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Salari e stipendi | 119.643 | 16.349 | 117.479 | 13.652  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2238,
+   "numero": "3.221",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Oneri sociali | 3.221 | 4.078 | 3.282 | 3.549  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2238,
+   "numero": "4.078",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Oneri sociali | 3.221 | 4.078 | 3.282 | 3.549  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2238,
+   "numero": "3.282",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Oneri sociali | 3.221 | 4.078 | 3.282 | 3.549  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2238,
+   "numero": "3.549",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Oneri sociali | 3.221 | 4.078 | 3.282 | 3.549  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2239,
+   "numero": "1.126",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Trattamento di fine rapporto | 514 | 1.126 | 514 | 1.093  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2239,
+   "numero": "1.093",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Trattamento di fine rapporto | 514 | 1.126 | 514 | 1.093  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2240,
+   "numero": "8.877",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri costi | 8.877 | 2.184 | 8.147 | 3.547  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2240,
+   "numero": "2.184",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri costi | 8.877 | 2.184 | 8.147 | 3.547  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2240,
+   "numero": "8.147",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri costi | 8.877 | 2.184 | 8.147 | 3.547  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2240,
+   "numero": "3.547",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Altri costi | 8.877 | 2.184 | 8.147 | 3.547  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2241,
+   "numero": "132.255",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 132.255 | 23.737 | 129.422 | 21.841  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2241,
+   "numero": "23.737",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 132.255 | 23.737 | 129.422 | 21.841  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2241,
+   "numero": "129.422",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 132.255 | 23.737 | 129.422 | 21.841  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2241,
+   "numero": "21.841",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | 132.255 | 23.737 | 129.422 | 21.841  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2242,
+   "numero": "155.992",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Totale costi del personale |  | 155.992 |  | 151.263  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2242,
+   "numero": "151.263",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Totale costi del personale |  | 155.992 |  | 151.263  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 50,
+   "linea": 2244,
+   "numero": "4.729",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Il costo del personale al 30 giugno 2018, registra un incremento rispetto al medesimo periodo di riferimento per Euro 4.729 migliaia, principalmente riconducibi"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 51,
+   "linea": 2256,
+   "numero": "14.016",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Il decremento dei compensi contrattuali è connesso alla riduzione del monte ingaggi mentre gli altri costi del personale sono connessi prevalentemente ad oneri "
+  },
+  {
+   "bloque": "b45",
+   "pagina": 51,
+   "linea": 2256,
+   "numero": "2019",
+   "segundaLeyo": "2018",
+   "sinSegunda": false,
+   "texto": "Il decremento dei compensi contrattuali è connesso alla riduzione del monte ingaggi mentre gli altri costi del personale sono connessi prevalentemente ad oneri "
+  },
+  {
+   "bloque": "b45",
+   "pagina": 51,
+   "linea": 2256,
+   "numero": "3.923",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Il decremento dei compensi contrattuali è connesso alla riduzione del monte ingaggi mentre gli altri costi del personale sono connessi prevalentemente ad oneri "
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2279,
+   "numero": "88.126",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Gli ammortamenti delle immobilizzazioni immateriali sono pari a Euro 88.126 migliaia rispetto a Euro 83.217 migliaia del precedente esercizio e si compongono di"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2279,
+   "numero": "83.217",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Gli ammortamenti delle immobilizzazioni immateriali sono pari a Euro 88.126 migliaia rispetto a Euro 83.217 migliaia del precedente esercizio e si compongono di"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2282,
+   "numero": "78.114",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "- Euro 78.114 migliaia per l'ammortamento dei diritti pluriennali alle prestazioni sportive calculati con aliquote proportonzionate alla durata dei rispetti con"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2283,
+   "numero": "4.158",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "- Euro 4.158 migliaia per l'ammortamento relativo alla capitalizzazione dei costi del vivario;"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2284,
+   "numero": "5.507",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "- Euro 5.507 migliaia per l'ammortamento relativo alla voce concessioni, licenze e marchi;"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2285,
+   "numero": "1.622",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "- Euro 1.622 migliaia per la quota di ammortamento relativa ad altre immobilizzazioni immateriali."
+  },
+  {
+   "bloque": "b46",
+   "pagina": 51,
+   "linea": 2287,
+   "numero": "1.295",
+   "segundaLeyo": "1294",
+   "sinSegunda": false,
+   "texto": "Si segnala che la quota di ammortamento riferita agli oneri capitalizzati sul finanziamento Goldman Sachs/Unicredit fino alla data di estinzione del medesimo pe"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 52,
+   "linea": 2328,
+   "numero": "2.274",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Spese varie organizzazione gare | 2.274 | 2.397 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 52,
+   "linea": 2328,
+   "numero": "2.397",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Spese varie organizzazione gare | 2.274 | 2.397 |"
+  },
+  {
+   "bloque": "b49",
+   "pagina": 52,
+   "linea": 2338,
+   "numero": "1.037",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| - contributi a Lega Calcio | 1.037 | 875 |"
+  },
+  {
+   "bloque": "b49",
+   "pagina": 52,
+   "linea": 2340,
+   "numero": "2.767",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| - diversi | 2.767 | 2.680 |"
+  },
+  {
+   "bloque": "b49",
+   "pagina": 52,
+   "linea": 2340,
+   "numero": "2.680",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| - diversi | 2.767 | 2.680 |"
+  },
+  {
+   "bloque": "b49",
+   "pagina": 52,
+   "linea": 2341,
+   "numero": "12.637",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **12.637** | **8.814** |"
+  },
+  {
+   "bloque": "b49",
+   "pagina": 52,
+   "linea": 2341,
+   "numero": "8.814",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **12.637** | **8.814** |"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2418,
+   "numero": "7.362",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "- imposte correnti par a Euro 7.362 migliaia;"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2422,
+   "numero": "21.999",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Di conseguenza le imposte sul reddito comprendono anche i proventi e oneri conseguenti all'adesione al Consolidato Fiscale. Il provento netto di F.C. Internazio"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2422,
+   "numero": "21.999",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Di conseguenza le imposte sul reddito comprendono anche i proventi e oneri conseguenti all'adesione al Consolidato Fiscale. Il provento netto di F.C. Internazio"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2422,
+   "numero": "24.581",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Di conseguenza le imposte sul reddito comprendono anche i proventi e oneri conseguenti all'adesione al Consolidato Fiscale. Il provento netto di F.C. Internazio"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2422,
+   "numero": "2.582",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Di conseguenza le imposte sul reddito comprendono anche i proventi e oneri conseguenti all'adesione al Consolidato Fiscale. Il provento netto di F.C. Internazio"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2424,
+   "numero": "427.551",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "L'ammontare delle perdite fiscali di competenza di FC Inter, non valorizzato per prudenza, è pari a Euro 427.551 migliaia, di cui risultano utilizzabili esclusi"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 54,
+   "linea": 2424,
+   "numero": "202.056",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "L'ammontare delle perdite fiscali di competenza di FC Inter, non valorizzato per prudenza, è pari a Euro 427.551 migliaia, di cui risultano utilizzabili esclusi"
+  }
+ ]
 }

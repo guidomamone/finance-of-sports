@@ -622,117 +622,30 @@ Bilancio consolidato al 30 giugno 2018
 
 --- pág. 14 ---
 
-# **C) PROVENTI E ONERI FINANZIARI**
-
-# 16) Altri proventi finanziari
-
-a) da crediti iscritti nelle immobilizzazioni
-- da altre imprese
-
-d) proventi diversi dai precedenti
-- da terzi
-
-209
-
-288
-
-4.607.689
-
-712.549
-
-# 17) Interessi e altri oneri finanziari
-
-c) verso imprese controllanti
-
-(14.091.129)
-
-(13.258.594)
-
-d) altri oneri finanziari
-
-(25.151.049)
-
-(19.810.713)
-
-# 17 bis) Utile e perdite su cambi
-
-a) utile su cambi
-
-305.048
-
-254.608
-
-c) perdite su cambi
-
-(219.919)
-
-(113.128)
-
-**Totale (16 - 17)**
-
-**(34.549.151)**
-
-**(32.214.990)**
-
-# **D) RETTIFICHE DI VALORE DI ATTIVITA' E PASSIVITA' FINANZIARIE**
-
-# 19) Svalutazioni
-
-a) di partecipazioni
-
-(177.480)
-
-(354.717)
-
-**Totale (19)**
-
-**(177.480)**
-
-**(354.717)**
-
-**Risultato prima delle imposte**
-
-**(9.887.822)**
-
-**(16.507.724)**
-
-# 20) Imposte sul reddito dell'esercizio
-
-a) imposte correnti
-
-(7.362.455)
-
-(6.392.477)
-
-b) imposte differite
-
-(242.375)
-
-(1.788)
-
-c) imposte anticipate
-
-(260.884)
-
-(1.674.134)
-
-**Perdita dopo imposte prima della quota dei Terzi**
-
-**(17.753.536)**
-
-**(24.576.123)**
-
-# 21) Perdita di spettanza di Terzi
-
--
-
--
-
-**Perdita d'esercizio di pertinenza del Gruppo**
-
-**(17.753.536)**
-
-**(24.576.123)**
+| | Esercizio chiuso al 30 giugno 2018 | Esercizio chiuso al 30 giugno 2017 |
+| --- | --- | --- |
+| **C) PROVENTI E ONERI FINANZIARI** |  |  |
+| 16) Altri proventi finanziari |  |  |
+| - da altre imprese (da crediti iscritti nelle immobilizzazioni) | 209 | 288 |
+| - da terzi (proventi diversi dai precedenti) | 4.607.689 | 712.549 |
+| 17) Interessi e altri oneri finanziari |  |  |
+| c) verso imprese controllanti | (14.091.129) | (13.258.594) |
+| d) altri oneri finanziari | (25.151.049) | (19.810.713) |
+| 17 bis) Utile e perdite su cambi |  |  |
+| a) utile su cambi | 305.048 | 254.608 |
+| c) perdite su cambi | (219.919) | (113.128) |
+| **Totale (16 - 17)** | **(34.549.151)** | **(32.214.990)** |
+| **D) RETTIFICHE DI VALORE DI ATTIVITA' E PASSIVITA' FINANZIARIE** |  |  |
+| 19) Svalutazioni a) di partecipazioni | (177.480) | (354.717) |
+| **Totale (19)** | **(177.480)** | **(354.717)** |
+| **Risultato prima delle imposte** | **(9.887.822)** | **(16.507.724)** |
+| 20) Imposte sul reddito dell'esercizio |  |  |
+| a) imposte correnti | (7.362.455) | (6.392.477) |
+| b) imposte differite | (242.375) | (1.788) |
+| c) imposte anticipate | (260.884) | (1.674.134) |
+| **Perdita dopo imposte prima della quota dei Terzi** | **(17.753.536)** | **(24.576.123)** |
+| 21) Perdita di spettanza di Terzi | - | - |
+| **Perdita d'esercizio di pertinenza del Gruppo** | **(17.753.536)** | **(24.576.123)** |
 
 Per il Consiglio di Amministrazione
 

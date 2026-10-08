@@ -1,12 +1,13 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
- "mdSha1": "ee1e7b12d158304e29e7255dd8cdb008ef64a948",
- "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T17:39:15.722Z",
+ "mdSha1": "4dfe620e1a7f7fa07a5baa82203d0b40d8a36415",
+ "modelo": "claude-opus-5-5 + página 14 a mano (sesión)",
+ "generado": "2026-10-08T20:29:10.901472Z",
  "ubicacion": {
   "estado": [
-   "b8"
+   "b8",
+   "b100"
   ],
   "notas_ingresos": [
    "b38",
@@ -21,9 +22,7 @@
    "b47",
    "b48",
    "b49",
-   "b51",
-   "b52",
-   "b53"
+   "b51"
   ]
  },
  "escalas": [
@@ -88,14 +87,9 @@
    "evidencia": "L2413: migliaia di Euro"
   },
   {
-   "bloque": "b52",
-   "escala": "miles",
-   "evidencia": "L2448: migliaia di Euro"
-  },
-  {
-   "bloque": "b53",
-   "escala": "miles",
-   "evidencia": "L2477: migliaia di Euro"
+   "bloque": "b100",
+   "escala": "unidades",
+   "evidencia": "Importes completos en euros del estado consolidado (pág. 14 del PDF)"
   }
  ],
  "filas": [
@@ -1390,153 +1384,163 @@
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2450,
-   "etiqueta": "Su debiti verso banche",
-   "actual": "645",
-   "anterior": "1",
+   "bloque": "b100",
+   "linea": 629,
+   "etiqueta": "- da altre imprese (da crediti iscritti nelle immobilizzazioni)",
+   "actual": "209",
+   "anterior": "288",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2451,
-   "etiqueta": "Su debiti verso banche per finanziamenti",
-   "actual": "5.761",
-   "anterior": "12.525",
+   "bloque": "b100",
+   "linea": 630,
+   "etiqueta": "- da terzi (proventi diversi dai precedenti)",
+   "actual": "4.607.689",
+   "anterior": "712.549",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2452,
-   "etiqueta": "Ammortamento oneri accessori su finanziamento G.S.",
-   "actual": "1.295",
-   "anterior": "2.716",
+   "bloque": "b100",
+   "linea": 632,
+   "etiqueta": "c) verso imprese controllanti",
+   "actual": "(14.091.129)",
+   "anterior": "(13.258.594)",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2453,
-   "etiqueta": "Oneri accessori su finanziamenti",
-   "actual": "5.014",
-   "anterior": "1.278",
+   "bloque": "b100",
+   "linea": 633,
+   "etiqueta": "d) altri oneri finanziari",
+   "actual": "(25.151.049)",
+   "anterior": "(19.810.713)",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2454,
-   "etiqueta": "Su Prestito Obbligazionario",
-   "actual": "8.546",
-   "anterior": "-",
+   "bloque": "b100",
+   "linea": 635,
+   "etiqueta": "a) utile su cambi",
+   "actual": "305.048",
+   "anterior": "254.608",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2455,
-   "etiqueta": "Su debiti finanziari verso controllanti",
-   "actual": "14.091",
-   "anterior": "13.259",
+   "bloque": "b100",
+   "linea": 636,
+   "etiqueta": "c) perdite su cambi",
+   "actual": "(219.919)",
+   "anterior": "(113.128)",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b52",
-   "linea": 2456,
-   "etiqueta": "Su debiti verso factoring",
-   "actual": "34",
-   "anterior": "816",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b52",
-   "linea": 2457,
-   "etiqueta": "Su ritardi e dilazioni di pagamento",
-   "actual": "157",
-   "anterior": "20",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b52",
-   "linea": 2458,
-   "etiqueta": "Su accertamenti di natura fiscale",
-   "actual": "182",
-   "anterior": "-",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b52",
-   "linea": 2459,
-   "etiqueta": "Per attualizzazione dei debiti a m/l t.",
-   "actual": "3.504",
-   "anterior": "2.375",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b52",
-   "linea": 2460,
-   "etiqueta": "Altre spese e commissioni bancarie",
-   "actual": "13",
-   "anterior": "80",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b52",
-   "linea": 2461,
-   "etiqueta": "",
-   "actual": "39.242",
-   "anterior": "33.070",
+   "bloque": "b100",
+   "linea": 637,
+   "etiqueta": "Totale (16 - 17)",
+   "actual": "(34.549.151)",
+   "anterior": "(32.214.990)",
    "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b53",
-   "linea": 2479,
-   "etiqueta": "Utili su cambi",
-   "actual": "305",
-   "anterior": "255",
+   "bloque": "b100",
+   "linea": 639,
+   "etiqueta": "19) Svalutazioni a) di partecipazioni",
+   "actual": "(177.480)",
+   "anterior": "(354.717)",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b53",
-   "linea": 2480,
-   "etiqueta": "Perdite su cambi",
-   "actual": "(220)",
-   "anterior": "(113)",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b53",
-   "linea": 2481,
-   "etiqueta": "",
-   "actual": "85",
-   "anterior": "142",
+   "bloque": "b100",
+   "linea": 640,
+   "etiqueta": "Totale (19)",
+   "actual": "(177.480)",
+   "anterior": "(354.717)",
    "tipo": "subtotal",
    "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 641,
+   "etiqueta": "Risultato prima delle imposte",
+   "actual": "(9.887.822)",
+   "anterior": "(16.507.724)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 643,
+   "etiqueta": "a) imposte correnti",
+   "actual": "(7.362.455)",
+   "anterior": "(6.392.477)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 644,
+   "etiqueta": "b) imposte differite",
+   "actual": "(242.375)",
+   "anterior": "(1.788)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 645,
+   "etiqueta": "c) imposte anticipate",
+   "actual": "(260.884)",
+   "anterior": "(1.674.134)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 646,
+   "etiqueta": "Perdita dopo imposte prima della quota dei Terzi",
+   "actual": "(17.753.536)",
+   "anterior": "(24.576.123)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 647,
+   "etiqueta": "21) Perdita di spettanza di Terzi",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b100",
+   "linea": 648,
+   "etiqueta": "Perdita d'esercizio di pertinenza del Gruppo",
+   "actual": "(17.753.536)",
+   "anterior": "(24.576.123)",
+   "tipo": "resultado",
+   "lado": "resultado",
    "detalla_a": null
   }
  ],
@@ -1548,7 +1552,11 @@
   "linea": 620,
   "actual": "322.150.910"
  },
- "resultado": null,
+ "resultado": {
+  "linea": 648,
+  "actual": "(17.753.536)",
+  "anterior": "(24.576.123)"
+ },
  "dudas": [
   {
    "pregunta": "¿Se deja afuera de la carga el cuadro por tesserati/altri del costo del personal (L2324-L2328), cargando solo el total L2329?",

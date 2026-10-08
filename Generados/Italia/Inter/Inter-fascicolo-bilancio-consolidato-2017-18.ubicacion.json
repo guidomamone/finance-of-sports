@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
- "mdSha1": "ee1e7b12d158304e29e7255dd8cdb008ef64a948",
+ "mdSha1": "4dfe620e1a7f7fa07a5baa82203d0b40d8a36415",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T17:35:13.734Z",
+ "generado": "2026-10-08T20:29:10.901472Z",
  "bloques": {
   "b1": {
    "pagina": 6,
@@ -413,22 +413,6 @@
    ],
    "tipo": "tabla"
   },
-  "b52": {
-   "pagina": 55,
-   "lineas": [
-    2448,
-    2461
-   ],
-   "tipo": "tabla"
-  },
-  "b53": {
-   "pagina": 55,
-   "lineas": [
-    2477,
-    2481
-   ],
-   "tipo": "tabla"
-  },
   "b54": {
    "pagina": 57,
    "lineas": [
@@ -468,11 +452,20 @@
     2820
    ],
    "tipo": "texto"
+  },
+  "b100": {
+   "pagina": 14,
+   "lineas": [
+    625,
+    648
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
-  "b8"
+  "b8",
+  "b100"
  ],
  "notas_ingresos": [
   "b38",
@@ -487,9 +480,7 @@
   "b47",
   "b48",
   "b49",
-  "b51",
-  "b52",
-  "b53"
+  "b51"
  ],
  "escala": "unidades",
  "escala_evidencia": "12 mesi al 30 giugno 2018 valori in Euro",
@@ -523,5 +514,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Documento solo consolidado (Gruppo F.C. Internazionale Milano). Estado de resultados en euros (b8); las notas están en miles de euros. Se excluyen detalles por jugador (b41 plusvalenze), parti correlate y balance."
+ "observaciones": "Documento solo consolidado (Gruppo F.C. Internazionale Milano). Estado de resultados en euros (b8); las notas están en miles de euros. Se excluyen detalles por jugador (b41 plusvalenze), parti correlate y balance. Página 14 (financiero, imposte y resultado) re-transcripta a mano desde el PDF: Mistral había separado las etiquetas de los importes."
 }

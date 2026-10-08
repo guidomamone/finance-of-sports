@@ -64,3 +64,5 @@ La página `inter.it/it/club/club-transparency` (no solo `investor-relations`) l
 - **2025/26**: el CdA aprobó el proyecto el 2026-09-24 (utile 22,7 M, ricavi 518 M; asamblea a mediados de octubre); el fascicolo todavía no está publicado. Revisar a partir de noviembre.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2017-18`).
