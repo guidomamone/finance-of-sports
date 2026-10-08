@@ -1,748 +1,82 @@
 {
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
- "generatedAt": "2026-09-30T12:59:26.261Z",
+ "generatedAt": "2026-10-07T23:52:20.295Z",
+ "rubrosHuella": "143bcb4ab61ea3f9384c91102a8e820caab4000e",
  "rubros": [
   {
-   "label": "Proventi da sponsorizzazioni",
+   "label": "Abbonamenti",
    "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "sponsorship_commercial",
+   "page": 42,
+   "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+   "choice": "season_tickets",
    "confidence": 1,
    "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "competition_bonus",
-     0
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 818
-  },
-  {
-   "label": "Contributi in c/esercizio",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.66,
-   "top3": [
-    [
-     "other_income",
-     0.69
-    ],
-    [
-     "lump_football_operations",
-     0.15
-    ],
-    [
-     "sponsorship_commercial",
-     0.07
-    ]
-   ],
-   "tokens": 817
-  },
-  {
-   "label": "Proventi pubblicitari",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.96,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.97
-    ],
-    [
-     "other_income",
-     0.03
-    ],
-    [
-     "lump_football_operations",
-     0
-    ]
-   ],
-   "tokens": 815
-  },
-  {
-   "label": "Altri proventi da gestione calciatori",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "other_income",
-     0.59
-    ],
-    [
-     "player_sales",
-     0.29
-    ],
-    [
-     "lump_football_operations",
-     0.11
-    ]
-   ],
-   "tokens": 819
-  },
-  {
-   "label": "Proventi diversi",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "player_sales",
-     0
-    ],
-    [
-     "lump_football_operations",
-     0
-    ]
-   ],
-   "tokens": 813
-  },
-  {
-   "label": "Ricavi cessione temp. prest.calciatori",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "player_sales",
-   "confidence": 1,
-   "top3": [
-    [
-     "player_sales",
-     1
-    ],
     [
      "season_tickets",
-     0
-    ],
-    [
-     "matchday_competition",
-     0
-    ]
-   ],
-   "tokens": 908
-  },
-  {
-   "label": "Proventi da cessione diritti televisivi collettivi",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "top3": [
-    [
-     "broadcasting",
      1
     ],
     [
-     "education",
+     "stadium_other",
      0
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 823
-  },
-  {
-   "label": "Plusvalenze cessione dir.calciatori",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "player_sales",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "player_sales",
-     0.91
-    ],
-    [
-     "other_income",
-     0.09
-    ],
-    [
-     "matchday_competition",
-     0
-    ]
-   ],
-   "tokens": 819
-  },
-  {
-   "label": "*Valore della produzione*",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "lump_football_operations",
-   "confidence": 0.68,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.71
-    ],
-    [
-     "other_income",
-     0.24000000000000002
-    ],
-    [
-     "player_sales",
-     0.02
-    ]
-   ],
-   "tokens": 813
-  },
-  {
-   "label": "Costi per materie prime suss. cons.",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.84,
-   "top3": [
-    [
-     "other_income",
-     0.86
-    ],
-    [
-     "lump_football_operations",
-     0.13
-    ],
-    [
-     "sponsorship_commercial",
-     0.01
-    ]
-   ],
-   "tokens": 865
-  },
-  {
-   "label": "Oneri diversi di gestione",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.81,
-   "top3": [
-    [
-     "other_income",
-     0.83
-    ],
-    [
-     "lump_football_operations",
-     0.15000000000000002
-    ],
-    [
-     "other_sports",
-     0.02
-    ]
-   ],
-   "tokens": 815
-  },
-  {
-   "label": "Costi per godimento beni di terzi",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "other_income",
-     0.89
-    ],
-    [
-     "lump_football_operations",
-     0.06
-    ],
-    [
-     "broadcasting",
-     0.02
-    ]
-   ],
-   "tokens": 864
-  },
-  {
-   "label": "Costi per servizi",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.84,
-   "top3": [
-    [
-     "other_income",
-     0.86
-    ],
-    [
-     "lump_football_operations",
-     0.09
-    ],
-    [
-     "broadcasting",
-     0.03
-    ]
-   ],
-   "tokens": 859
-  },
-  {
-   "label": "Costo del lavoro",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.8,
-   "top3": [
-    [
-     "other_income",
-     0.83
-    ],
-    [
-     "lump_football_operations",
-     0.17
-    ],
-    [
-     "other_sports",
-     0
-    ]
-   ],
-   "tokens": 1022
-  },
-  {
-   "label": "*Margine operativo lordo – EBITDA*",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.63,
-   "top3": [
-    [
-     "other_income",
-     0.66
-    ],
-    [
-     "lump_football_operations",
-     0.34
-    ],
-    [
-     "other_sports",
-     0
-    ]
-   ],
-   "tokens": 818
-  },
-  {
-   "label": "*Valore aggiunto*",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.83,
-   "top3": [
-    [
-     "other_income",
-     0.85
-    ],
-    [
-     "lump_football_operations",
-     0.13
-    ],
-    [
-     "matchday_competition",
-     0.01
-    ]
-   ],
-   "tokens": 813
-  },
-  {
-   "label": "*Reddito operativo aziendale*",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "lump_football_operations",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.59
-    ],
-    [
-     "other_income",
-     0.41000000000000003
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 815
-  },
-  {
-   "label": "Ammortamento e svalutazioni",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.72,
-   "top3": [
-    [
-     "other_income",
-     0.75
-    ],
-    [
-     "lump_football_operations",
-     0.24000000000000002
-    ],
-    [
-     "other_sports",
-     0.01
-    ]
-   ],
-   "tokens": 818
-  },
-  {
-   "label": "Accantonamento per rischi",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "top3": [
-    [
-     "other_income",
-     0.9400000000000001
-    ],
-    [
-     "lump_football_operations",
-     0.06
-    ],
-    [
-     "broadcasting",
-     0
-    ]
-   ],
-   "tokens": 863
-  },
-  {
-   "label": "Risultato della gestione finanziaria",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.74,
-   "top3": [
-    [
-     "other_income",
-     0.77
-    ],
-    [
-     "lump_football_operations",
-     0.23
-    ],
-    [
-     "other_sports",
-     0
-    ]
-   ],
-   "tokens": 818
-  },
-  {
-   "label": "Variazione delle rimanenze",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.89,
-   "top3": [
-    [
-     "other_income",
-     0.9
-    ],
-    [
-     "lump_football_operations",
-     0.09
-    ],
-    [
-     "player_sales",
-     0.01
-    ]
-   ],
-   "tokens": 816
-  },
-  {
-   "label": "*Reddito operativo lordo competenza*",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "lump_football_operations",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.72
-    ],
-    [
-     "other_income",
-     0.25
-    ],
-    [
-     "player_sales",
-     0.01
-    ]
-   ],
-   "tokens": 817
-  },
-  {
-   "label": "Imposte",
-   "lado": "revenue",
-   "page": 6,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.85,
-   "top3": [
-    [
-     "other_income",
-     0.87
-    ],
-    [
-     "lump_football_operations",
-     0.13
     ],
     [
      "youth_football",
      0
     ]
    ],
-   "tokens": 811
+   "tokens": 1019
   },
   {
-   "label": "*Risultato del periodo*",
+   "label": "f) Contributi in conto esercizio",
    "lado": "revenue",
-   "page": 6,
-   "section": "",
+   "page": 18,
+   "section": "estado",
    "choice": "other_income",
-   "confidence": 0.84,
+   "confidence": 0.98,
    "top3": [
     [
      "other_income",
-     0.85
+     0.98
     ],
     [
      "lump_football_operations",
-     0.15
+     0.02
     ],
     [
-     "womens_football",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1027
+   "tokens": 1047
   },
   {
-   "label": "*Cercol S.p.A.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.43,
+   "label": "Ricavi da gare in casa",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
    "top3": [
     [
-     "sponsorship_commercial",
-     0.46
+     "matchday_competition",
+     1
     ],
     [
-     "other_income",
-     0.26
+     "other_sports",
+     0
     ],
-    [
-     "other_expenses",
-     0.15000000000000002
-    ]
-   ],
-   "tokens": 1248
-  },
-  {
-   "label": "*Adesital S.p.A.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.23,
-   "top3": [
-    [
-     "other_income",
-     0.27
-    ],
-    [
-     "sponsorship_commercial",
-     0.27
-    ],
-    [
-     "other_expenses",
-     0.25
-    ]
-   ],
-   "tokens": 1249
-  },
-  {
-   "label": "*Mapei Stadium S.r.l.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "stadium_other",
-   "confidence": 0.63,
-   "top3": [
     [
      "stadium_other",
-     0.65
-    ],
-    [
-     "other_income",
-     0.15000000000000002
-    ],
-    [
-     "admin_general_expense",
-     0.06999999999999999
+     0
     ]
    ],
-   "tokens": 1249
+   "tokens": 1046
   },
   {
-   "label": "*Polyglass S.p.A.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.84,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.85
-    ],
-    [
-     "other_income",
-     0.09999999999999999
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1249
-  },
-  {
-   "label": "*Mapei S.p.A.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.66
-    ],
-    [
-     "other_income",
-     0.15000000000000002
-    ],
-    [
-     "other_expenses",
-     0.06999999999999999
-    ]
-   ],
-   "tokens": 1248
-  },
-  {
-   "label": "*Vaga*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "other_income",
-     0.61
-    ],
-    [
-     "other_expenses",
-     0.29000000000000004
-    ],
-    [
-     "lump_football_operations",
-     0.07
-    ]
-   ],
-   "tokens": 1244
-  },
-  {
-   "label": "*Vinavil S.p.A.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.57,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.59
-    ],
-    [
-     "other_income",
-     0.23
-    ],
-    [
-     "other_expenses",
-     0.09999999999999999
-    ]
-   ],
-   "tokens": 1248
-  },
-  {
-   "label": "*Master Group Sport S.r.l.*",
-   "lado": null,
-   "page": 13,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.31,
-   "top3": [
-    [
-     "other_income",
-     0.35000000000000003
-    ],
-    [
-     "sponsorship_commercial",
-     0.22
-    ],
-    [
-     "other_expenses",
-     0.19
-    ]
-   ],
-   "tokens": 1249
-  },
-  {
-   "label": "5) Altri ricavi e proventi:",
-   "lado": null,
+   "label": "a) Derivanti da attività accessorie",
+   "lado": "revenue",
    "page": 18,
-   "section": "# CONTO ECONOMICO",
+   "section": "estado",
    "choice": "other_income",
    "confidence": 1,
    "top3": [
@@ -751,237 +85,7 @@
      1
     ],
     [
-     "other_expenses",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "C TRATTAMENTO DI FINE RAPPORTO DI LAVORO SUBORDINATO",
-   "lado": "expense",
-   "page": 17,
-   "section": "# B FONDI PER RISCHI ED ONERI",
-   "choice": "other_expenses",
-   "confidence": 0.44,
-   "top3": [
-    [
-     "other_expenses",
-     0.5
-    ],
-    [
-     "wages_squad",
-     0.36
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ]
-   ],
-   "tokens": 811
-  },
-  {
-   "label": "a) Derivanti da attività accessorie",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.94,
-   "top3": [
-    [
-     "other_income",
-     0.96
-    ],
-    [
-     "stadium_other",
-     0.02
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "1) Ricavi delle vendite e delle prestazioni",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "lump_football_operations",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.89
-    ],
-    [
-     "other_income",
-     0.05
-    ],
-    [
-     "matchday_competition",
-     0.02
-    ]
-   ],
-   "tokens": 1263
-  },
-  {
-   "label": "b) plusvalenze",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "other_income",
-     0.62
-    ],
-    [
-     "player_sales",
-     0.36
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 1257
-  },
-  {
-   "label": "7) Per servizi",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "admin_general_expense",
-   "confidence": 0.4,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.44
-    ],
-    [
-     "other_expenses",
-     0.39
-    ],
-    [
-     "lump_football_operations_expense",
-     0.060000000000000005
-    ]
-   ],
-   "tokens": 1301
-  },
-  {
-   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "other_expenses",
-     0.89
-    ],
-    [
-     "admin_general_expense",
-     0.1
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1487
-  },
-  {
-   "label": "f) Contributi in conto esercizio",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.89,
-   "top3": [
-    [
-     "other_income",
-     0.91
-    ],
-    [
-     "lump_football_operations",
-     0.06
-    ],
-    [
-     "other_expenses",
-     0.01
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "8) Per godimento di beni di terzi",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.57,
-   "top3": [
-    [
-     "other_expenses",
-     0.6
-    ],
-    [
-     "admin_general_expense",
-     0.17
-    ],
-    [
-     "other_income",
-     0.09999999999999999
-    ]
-   ],
-   "tokens": 1307
-  },
-  {
-   "label": "9) Per il personale:",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "wages_squad",
-   "confidence": 0.48,
-   "top3": [
-    [
-     "wages_squad",
-     0.51
-    ],
-    [
-     "admin_general_expense",
-     0.23
-    ],
-    [
-     "other_expenses",
-     0.19
-    ]
-   ],
-   "tokens": 1302
-  },
-  {
-   "label": "a) Salari e stipendi",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "wages_squad",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "wages_squad",
-     1
-    ],
-    [
-     "admin_general_expense",
+     "womens_football",
      0
     ],
     [
@@ -989,726 +93,128 @@
      0
     ]
    ],
-   "tokens": 1258
+   "tokens": 1018
   },
   {
-   "label": "c) Trattamento di fine rapporto",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "wages_squad",
-   "confidence": 0.49,
+   "label": "Ricavi store",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
    "top3": [
     [
-     "wages_squad",
-     0.52
-    ],
-    [
-     "other_expenses",
-     0.36
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ]
-   ],
-   "tokens": 1259
-  },
-  {
-   "label": "b) Oneri sociali",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "admin_general_expense",
-   "confidence": 0.38,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.41000000000000003
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
-    [
-     "wages_squad",
-     0.18
-    ]
-   ],
-   "tokens": 1258
-  },
-  {
-   "label": "e) altri costi",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.95,
-   "top3": [
-    [
-     "other_expenses",
-     0.96
-    ],
-    [
-     "lump_football_operations_expense",
-     0.03
-    ],
-    [
-     "admin_general_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1256
-  },
-  {
-   "label": "10) Ammortamenti e svalutazioni:",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "depreciation",
-   "confidence": 0.47,
-   "top3": [
-    [
-     "depreciation",
-     0.49
-    ],
-    [
-     "player_amortisation",
-     0.36
-    ],
-    [
-     "other_amortisation",
-     0.08
-    ]
-   ],
-   "tokens": 1262
-  },
-  {
-   "label": "a) Ammortamento delle immobilizzazioni immateriali",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_amortisation",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "other_amortisation",
-     0.6
-    ],
-    [
-     "depreciation",
-     0.24
-    ],
-    [
-     "player_amortisation",
-     0.15
-    ]
-   ],
-   "tokens": 1264
-  },
-  {
-   "label": "b) Ammortamento delle immobilizzazioni materiali",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "depreciation",
-   "confidence": 0.93,
-   "top3": [
-    [
-     "depreciation",
-     0.93
-    ],
-    [
-     "other_amortisation",
-     0.05
-    ],
-    [
-     "player_amortisation",
-     0.01
-    ]
-   ],
-   "tokens": 1262
-  },
-  {
-   "label": "d) Svalutazioni crediti dell'attivo",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "other_expenses",
-     0.64
-    ],
-    [
-     "admin_general_expense",
-     0.17
-    ],
-    [
-     "player_impairment",
-     0.11
-    ]
-   ],
-   "tokens": 1263
-  },
-  {
-   "label": "Differenza tra valore e costi della produzione",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "lump_football_operations",
-   "confidence": 0.4,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.44
-    ],
-    [
-     "other_income",
-     0.38
-    ],
-    [
-     "other_expenses",
-     0.12
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "11) Variazioni delle rimanenze",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.41,
-   "top3": [
-    [
-     "other_expenses",
-     0.45
-    ],
-    [
-     "other_income",
-     0.37
-    ],
-    [
-     "lump_football_operations_expense",
-     0.060000000000000005
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "14) Oneri diversi di gestione",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "other_expenses",
-     0.88
-    ],
-    [
-     "admin_general_expense",
-     0.09
-    ],
-    [
-     "lump_football_operations_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1260
-  },
-  {
-   "label": "16) Proventi:",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "other_income",
-     0.52
-    ],
-    [
-     "lump_football_operations",
-     0.44
-    ],
-    [
-     "matchday_competition",
-     0.01
-    ]
-   ],
-   "tokens": 1257
-  },
-  {
-   "label": "d) Proventi diversi dai precedenti:",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
+     "sponsorship_commercial",
      1
     ],
     [
-     "wages_squad",
+     "youth_football",
      0
     ],
     [
-     "youth_other_sports_expense",
+     "player_sales",
      0
     ]
    ],
-   "tokens": 1261
+   "tokens": 1053
   },
   {
-   "label": "17) Oneri:",
-   "lado": null,
+   "label": "b) plusvalenze",
+   "lado": "revenue",
    "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.5,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
    "top3": [
     [
-     "other_expenses",
-     0.53
-    ],
-    [
-     "admin_general_expense",
-     0.22
-    ],
-    [
-     "lump_football_operations_expense",
-     0.19
-    ]
-   ],
-   "tokens": 1257
-  },
-  {
-   "label": "c) verso imprese controllanti",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "other_expenses",
-     0.62
+     "player_sales",
+     0.99
     ],
     [
      "other_income",
-     0.22
-    ],
-    [
-     "admin_general_expense",
-     0.08
-    ]
-   ],
-   "tokens": 1260
-  },
-  {
-   "label": "d) verso altri",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_expenses",
-   "confidence": 0.71,
-   "top3": [
-    [
-     "other_expenses",
-     0.73
-    ],
-    [
-     "other_income",
-     0.19
-    ],
-    [
-     "lump_football_operations_expense",
-     0.04
-    ]
-   ],
-   "tokens": 1255
-  },
-  {
-   "label": "a) Imposte correnti",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "admin_general_expense",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.97
-    ],
-    [
-     "other_expenses",
-     0.03
+     0.01
     ],
     [
      "stadium_other",
      0
     ]
    ],
-   "tokens": 1257
-  },
-  {
-   "label": "Risultato prima delle imposte",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.43,
-   "top3": [
-    [
-     "other_income",
-     0.46
-    ],
-    [
-     "admin_general_expense",
-     0.24000000000000002
-    ],
-    [
-     "lump_football_operations",
-     0.2
-    ]
-   ],
-   "tokens": 1309
-  },
-  {
-   "label": "b) Imposte anticipate e differite",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "admin_general_expense",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.91
-    ],
-    [
-     "other_expenses",
-     0.08
-    ],
-    [
-     "other_income",
-     0.01
-    ]
-   ],
-   "tokens": 1260
-  },
-  {
-   "label": "b) Imposte esercizi precedenti",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "admin_general_expense",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.88
-    ],
-    [
-     "other_expenses",
-     0.1
-    ],
-    [
-     "exceptional_items",
-     0.01
-    ]
-   ],
-   "tokens": 1261
-  },
-  {
-   "label": "d) Provento da Consolidato Fiscale",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "choice": "other_income",
-   "confidence": 0.96,
-   "top3": [
-    [
-     "other_income",
-     0.96
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ],
-    [
-     "other_expenses",
-     0.01
-    ]
-   ],
-   "tokens": 1263
-  },
-  {
-   "label": "Ricavi da gare fuori casa",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "choice": "matchday_competition",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "matchday_competition",
-     0.59
-    ],
-    [
-     "other_income",
-     0.28
-    ],
-    [
-     "lump_football_operations",
-     0.11
-    ]
-   ],
-   "tokens": 907
-  },
-  {
-   "label": "Utile (perdita) dell'esercizio",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "other_income",
-     0.67
-    ],
-    [
-     "lump_football_operations",
-     0.16
-    ],
-    [
-     "other_expenses",
-     0.1
-    ]
-   ],
-   "tokens": 1252
-  },
-  {
-   "label": "Ricavi da gare in casa",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "choice": "matchday_competition",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "matchday_competition",
-     0.97
-    ],
-    [
-     "other_income",
-     0.02
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 907
-  },
-  {
-   "label": "Ricavi store",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.96,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.97
-    ],
-    [
-     "other_income",
-     0.03
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 852
-  },
-  {
-   "label": "Abbonamenti",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "choice": "season_tickets",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "season_tickets",
-     0.99
-    ],
-    [
-     "member_dues",
-     0.01
-    ],
-    [
-     "lump_football_operations",
-     0
-    ]
-   ],
-   "tokens": 851
-  },
-  {
-   "label": "Costi per attività sportiva",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.69,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.72
-    ],
-    [
-     "match_organisation_expense",
-     0.2
-    ],
-    [
-     "other_expenses",
-     0.08
-    ]
-   ],
-   "tokens": 818
+   "tokens": 1084
   },
   {
    "label": "Costi per tesserati",
    "lado": "expense",
    "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "other_expenses",
-   "confidence": 0.28,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "wages_squad",
+   "confidence": 0.86,
    "top3": [
     [
-     "other_expenses",
-     0.34
-    ],
-    [
-     "lump_football_operations_expense",
-     0.27
+     "wages_squad",
+     0.87
     ],
     [
      "match_organisation_expense",
-     0.25
-    ]
-   ],
-   "tokens": 818
-  },
-  {
-   "label": "Compensi per Agenti e intermediari",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "other_expenses",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "other_expenses",
-     0.53
-    ],
-    [
-     "lump_football_operations_expense",
-     0.28
+     0.06
     ],
     [
      "admin_general_expense",
-     0.17
+     0.04
     ]
    ],
-   "tokens": 821
+   "tokens": 1005
   },
   {
-   "label": "Costi specifici tecnici",
+   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
    "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.43,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.48
-    ],
-    [
-     "other_expenses",
-     0.34
-    ],
-    [
-     "match_organisation_expense",
-     0.13
-    ]
-   ],
-   "tokens": 819
-  },
-  {
-   "label": "Costi vitto, alloggio, locomozione gare",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "match_organisation_expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_expenses",
    "confidence": 0.99,
    "top3": [
     [
-     "match_organisation_expense",
-     0.98
-    ],
-    [
      "other_expenses",
-     0.01
+     0.99
     ],
     [
      "lump_football_operations_expense",
      0.01
+    ],
+    [
+     "player_impairment",
+     0
     ]
    ],
-   "tokens": 826
+   "tokens": 1086
   },
   {
-   "label": "Assicurative e previdenziali",
+   "label": "Costi per attività sportiva",
    "lado": "expense",
    "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "other_expenses",
-   "confidence": 0.43,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
    "top3": [
     [
+     "match_organisation_expense",
+     0.55
+    ],
+    [
+     "lump_football_operations_expense",
+     0.39
+    ],
+    [
      "other_expenses",
-     0.49
-    ],
-    [
-     "admin_general_expense",
-     0.32
-    ],
-    [
-     "wages_squad",
-     0.12
+     0.06
     ]
    ],
-   "tokens": 820
+   "tokens": 1020
   },
   {
    "label": "Amministrative e generali",
    "lado": "expense",
    "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
+   "section": "nota que desglosa \"7) Per servizi\"",
    "choice": "admin_general_expense",
    "confidence": 1,
    "top3": [
@@ -1717,72 +223,49 @@
      1
     ],
     [
-     "player_impairment",
+     "lump_football_operations_expense",
      0
     ],
     [
-     "lump_football_operations_expense",
+     "wages_squad",
      0
     ]
    ],
-   "tokens": 819
+   "tokens": 1020
   },
   {
-   "label": "Altri",
+   "label": "Costi vitto, alloggio, locomozione gare",
    "lado": "expense",
    "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "choice": "other_expenses",
-   "confidence": 0.85,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
    "top3": [
     [
-     "other_expenses",
-     0.87
+     "match_organisation_expense",
+     1
     ],
     [
-     "admin_general_expense",
-     0.06
+     "player_amortisation",
+     0
     ],
     [
-     "lump_football_operations_expense",
-     0.04
+     "youth_other_sports_expense",
+     0
     ]
    ],
-   "tokens": 814
+   "tokens": 1103
   },
   {
-   "label": "Oneri sociali",
+   "label": "8) Per godimento di beni di terzi",
    "lado": "expense",
-   "page": 46,
-   "section": "# COSTI PER IL PERSONALE",
-   "choice": "wages_squad",
-   "confidence": 0.58,
+   "page": 18,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
    "top3": [
-    [
-     "wages_squad",
-     0.62
-    ],
-    [
-     "other_expenses",
-     0.26
-    ],
     [
      "admin_general_expense",
-     0.09
-    ]
-   ],
-   "tokens": 793
-  },
-  {
-   "label": "Salari e stipendi",
-   "lado": "expense",
-   "page": 46,
-   "section": "# COSTI PER IL PERSONALE",
-   "choice": "wages_squad",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "wages_squad",
      0.99
     ],
     [
@@ -1790,72 +273,49 @@
      0.01
     ],
     [
-     "depreciation",
+     "player_impairment",
      0
     ]
    ],
-   "tokens": 793
+   "tokens": 1027
   },
   {
-   "label": "T.F.R.",
+   "label": "Costi specifici tecnici",
    "lado": "expense",
-   "page": 46,
-   "section": "# COSTI PER IL PERSONALE",
-   "choice": "wages_squad",
-   "confidence": 0.47,
+   "page": 44,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.81,
    "top3": [
     [
-     "wages_squad",
-     0.53
+     "match_organisation_expense",
+     0.83
     ],
     [
      "other_expenses",
-     0.32
+     0.07
     ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
     [
      "admin_general_expense",
-     0.13
-    ]
-   ],
-   "tokens": 791
-  },
-  {
-   "label": "Premi variabili",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "choice": "wages_squad",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "wages_squad",
-     0.9
+     0.93
     ],
     [
      "other_expenses",
-     0.09
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 807
-  },
-  {
-   "label": "Altri costi",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "choice": "other_expenses",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "other_expenses",
-     0.92
-    ],
-    [
-     "lump_football_operations_expense",
      0.04
     ],
     [
@@ -1863,22 +323,206 @@
      0.03
     ]
    ],
-   "tokens": 807
+   "tokens": 991
   },
   {
-   "label": "Retribuzioni",
+   "label": "Altri",
    "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 972
+  },
+  {
+   "label": "Compensi per Agenti e intermediari",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"7) Per servizi\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "b) Oneri sociali",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
    "choice": "wages_squad",
-   "confidence": 0.99,
+   "confidence": 0.9,
    "top3": [
     [
      "wages_squad",
-     0.99
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.05
     ],
     [
      "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "a) Salari e stipendi",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "b) Ammortamento delle immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "a) Ammortamento delle immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "11) Variazioni delle rimanenze",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "d) Svalutazioni crediti dell'attivo",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_impairment",
      0.01
     ],
     [
@@ -1886,82 +530,36 @@
      0
     ]
    ],
-   "tokens": 807
+   "tokens": 1118
   },
   {
-   "label": "Altri compensi",
+   "label": "c) Trattamento di fine rapporto",
    "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "choice": "other_expenses",
-   "confidence": 0.71,
+   "page": 18,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.88,
    "top3": [
     [
-     "other_expenses",
-     0.74
-    ],
-    [
      "wages_squad",
-     0.19
+     0.89
     ],
-    [
-     "lump_football_operations_expense",
-     0.06
-    ]
-   ],
-   "tokens": 807
-  },
-  {
-   "label": "Accantonamenti F.F.C.",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "choice": "other_expenses",
-   "confidence": 0.39,
-   "top3": [
     [
      "other_expenses",
-     0.44
+     0.07
     ],
     [
-     "lump_football_operations_expense",
-     0.21
-    ],
-    [
-     "wages_squad",
-     0.12
+     "player_amortisation",
+     0.04
     ]
    ],
-   "tokens": 810
+   "tokens": 1029
   },
   {
-   "label": "Contributi",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "choice": "other_expenses",
-   "confidence": 0.51,
-   "top3": [
-    [
-     "other_expenses",
-     0.56
-    ],
-    [
-     "wages_squad",
-     0.21
-    ],
-    [
-     "lump_football_operations_expense",
-     0.13
-    ]
-   ],
-   "tokens": 806
-  },
-  {
-   "label": "Spese organizzazione gare",
+   "label": "Tasse iscrizioni gare",
    "lado": "expense",
    "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
    "choice": "match_organisation_expense",
    "confidence": 0.99,
    "top3": [
@@ -1970,7 +568,7 @@
      0.99
     ],
     [
-     "other_expenses",
+     "admin_general_expense",
      0.01
     ],
     [
@@ -1978,2100 +576,214 @@
      0
     ]
    ],
-   "tokens": 812
-  },
-  {
-   "label": "Tasse iscrizioni gare",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "choice": "match_organisation_expense",
-   "confidence": 0.84,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.87
-    ],
-    [
-     "other_expenses",
-     0.08
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ]
-   ],
-   "tokens": 810
-  },
-  {
-   "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "choice": "exceptional_items",
-   "confidence": 0.26,
-   "top3": [
-    [
-     "exceptional_items",
-     0.34
-    ],
-    [
-     "player_impairment",
-     0.29
-    ],
-    [
-     "other_expenses",
-     0.23
-    ]
-   ],
-   "tokens": 823
-  },
-  {
-   "label": "Costi per acquisizione temporanea prestazioni calciatori",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "choice": "other_expenses",
-   "confidence": 0.36,
-   "top3": [
-    [
-     "other_expenses",
-     0.42
-    ],
-    [
-     "player_amortisation",
-     0.33
-    ],
-    [
-     "lump_football_operations_expense",
-     0.12
-    ]
-   ],
-   "tokens": 819
+   "tokens": 1016
   },
   {
    "label": "Oneri contribuzione Lega",
    "lado": "expense",
    "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "choice": "other_expenses",
-   "confidence": 0.25,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.92,
    "top3": [
-    [
-     "other_expenses",
-     0.32
-    ],
     [
      "match_organisation_expense",
-     0.28
-    ],
-    [
-     "admin_general_expense",
-     0.26
-    ]
-   ],
-   "tokens": 814
-  },
-  {
-   "label": "Interessi passivi v/banche",
-   "lado": null,
-   "page": 49,
-   "section": "# PROVENTI ED ONERI FINANZIARI / # Interessi passivi ed altri oneri finanziari",
-   "choice": "other_expenses",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "other_expenses",
-     0.65
-    ],
-    [
-     "admin_general_expense",
-     0.34
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1279
-  },
-  {
-   "label": "Interessi passivi su finanziamento Mapei",
-   "lado": null,
-   "page": 49,
-   "section": "# PROVENTI ED ONERI FINANZIARI / # Interessi passivi ed altri oneri finanziari",
-   "choice": "other_expenses",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "other_expenses",
-     0.63
-    ],
-    [
-     "admin_general_expense",
-     0.35
-    ],
-    [
-     "exceptional_items",
-     0.01
-    ]
-   ],
-   "tokens": 1282
-  },
-  {
-   "label": "Mapei S.p.A.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.39,
-   "top3": [
-    [
-     "other_income",
-     0.43
-    ],
-    [
-     "sponsorship_commercial",
-     0.37
-    ],
-    [
-     "other_expenses",
-     0.14
-    ]
-   ],
-   "tokens": 1275
-  },
-  {
-   "label": "Interessi passivi su conto corrente di cash pooling",
-   "lado": null,
-   "page": 49,
-   "section": "# PROVENTI ED ONERI FINANZIARI / # Interessi passivi ed altri oneri finanziari",
-   "choice": "other_expenses",
-   "confidence": 0.82,
-   "top3": [
-    [
-     "other_expenses",
-     0.84
-    ],
-    [
-     "admin_general_expense",
-     0.15
-    ],
-    [
-     "other_income",
-     0.01
-    ]
-   ],
-   "tokens": 1356
-  },
-  {
-   "label": "Interessi passivi verso altri",
-   "lado": null,
-   "page": 49,
-   "section": "# PROVENTI ED ONERI FINANZIARI / # Interessi passivi ed altri oneri finanziari",
-   "choice": "other_expenses",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "other_expenses",
-     0.75
-    ],
-    [
-     "admin_general_expense",
-     0.23
-    ],
-    [
-     "exceptional_items",
-     0.01
-    ]
-   ],
-   "tokens": 1277
-  },
-  {
-   "label": "Mapei Stadium S.r.l.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "stadium_other",
-   "confidence": 0.54,
-   "top3": [
-    [
-     "stadium_other",
-     0.56
-    ],
-    [
-     "other_income",
-     0.22
-    ],
-    [
-     "other_expenses",
-     0.1
-    ]
-   ],
-   "tokens": 1276
-  },
-  {
-   "label": "Cercol S.p.A.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "other_income",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.22
+     0.93
     ],
     [
      "admin_general_expense",
      0.05
-    ]
-   ],
-   "tokens": 1275
-  },
-  {
-   "label": "Adesital S.p.A.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "other_income",
-     0.59
     ],
     [
      "other_expenses",
-     0.27
-    ],
-    [
-     "admin_general_expense",
-     0.06999999999999999
-    ]
-   ],
-   "tokens": 1276
-  },
-  {
-   "label": "Vaga S.r.l.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "other_income",
-     0.62
-    ],
-    [
-     "other_expenses",
-     0.24000000000000002
-    ],
-    [
-     "lump_football_operations",
-     0.05
-    ]
-   ],
-   "tokens": 1275
-  },
-  {
-   "label": "Vinavil S.p.A.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.48,
-   "top3": [
-    [
-     "other_income",
-     0.51
-    ],
-    [
-     "sponsorship_commercial",
-     0.22
-    ],
-    [
-     "other_expenses",
-     0.18
-    ]
-   ],
-   "tokens": 1275
-  },
-  {
-   "label": "Master Group",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "other_income",
-     0.64
-    ],
-    [
-     "other_expenses",
-     0.17
-    ],
-    [
-     "sponsorship_commercial",
-     0.11
-    ]
-   ],
-   "tokens": 1272
-  },
-  {
-   "label": "A) Valore della produzione",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "lump_football_operations",
-   "confidence": 0.74,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.75
-    ],
-    [
-     "other_income",
-     0.21
-    ],
-    [
-     "player_sales",
-     0.01
-    ]
-   ],
-   "tokens": 1248
-  },
-  {
-   "label": "B) Costi della produzione",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.75
-    ],
-    [
-     "other_expenses",
-     0.2
-    ],
-    [
-     "wages_squad",
      0.02
     ]
    ],
-   "tokens": 1248
+   "tokens": 1023
   },
   {
-   "label": "Polyglass S.p.A.",
-   "lado": null,
-   "page": 50,
-   "section": "# INFORMAZIONI RELATIVE AD OPERAZIONI REALIZZATE CON PARTI CORRELATE",
-   "choice": "other_income",
-   "confidence": 0.45,
+   "label": "Premi valorizzazione, di addestramento e Carriera",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
    "top3": [
     [
-     "other_income",
-     0.48
+     "player_amortisation",
+     0.91
     ],
     [
-     "sponsorship_commercial",
-     0.38
+     "wages_squad",
+     0.07
     ],
     [
      "other_expenses",
-     0.09
+     0.02
     ]
    ],
-   "tokens": 1276
+   "tokens": 1027
   },
   {
-   "label": "D) Rettifiche di valore di attività finanziarie",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.71,
+   "label": "Spese organizzazione gare",
+   "lado": "expense",
+   "page": 47,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
    "top3": [
     [
-     "other_income",
-     0.73
+     "match_organisation_expense",
+     1
     ],
     [
      "other_expenses",
-     0.18000000000000002
+     0
     ],
     [
-     "exceptional_items",
-     0.04
+     "youth_other_sports_expense",
+     0
     ]
    ],
-   "tokens": 1254
+   "tokens": 1031
   },
   {
-   "label": "C) Proventi e oneri finanziari",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "other_income",
-   "confidence": 0.69,
+   "label": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 47,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
    "top3": [
-    [
-     "other_income",
-     0.71
-    ],
     [
      "other_expenses",
-     0.19
+     0.99
     ],
     [
-     "admin_general_expense",
-     0.1
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
     ]
    ],
-   "tokens": 1253
+   "tokens": 1088
   },
   {
-   "label": "Imposte sul reddito dell'esercizio",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "choice": "admin_general_expense",
-   "confidence": 0.96,
+   "label": "Contributo Solidarietà Fifa",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
    "top3": [
     [
-     "admin_general_expense",
+     "player_amortisation",
      0.97
     ],
     [
      "other_expenses",
-     0.03
+     0.02
     ],
     [
-     "player_sales",
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Spese, ammende e multe gare",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ],
+    [
+     "wages_squad",
      0
     ]
    ],
-   "tokens": 1317
+   "tokens": 1031
   },
   {
-   "label": "CONSIGLI",
+   "label": "Sopravvenienze passive",
    "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.51,
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
    "top3": [
-    [
-     "player_amortisation",
-     0.56
-    ],
-    [
-     "other_expenses",
-     0.3
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "BERARDI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.79,
-   "top3": [
-    [
-     "player_amortisation",
-     0.8
-    ],
-    [
-     "other_expenses",
-     0.13
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "PELUSO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.69,
-   "top3": [
-    [
-     "player_amortisation",
-     0.72
-    ],
-    [
-     "other_expenses",
-     0.21
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "ARTIOLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "CELIA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.53,
-   "top3": [
-    [
-     "player_amortisation",
-     0.56
-    ],
-    [
-     "other_expenses",
-     0.33
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "FERRARI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MAZZITELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "player_amortisation",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.25
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "PILATI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.5,
-   "top3": [
-    [
-     "player_amortisation",
-     0.54
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "FONTANESI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "player_amortisation",
-     0.72
-    ],
-    [
-     "other_expenses",
-     0.18
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "SCAMACCA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.76,
-   "top3": [
-    [
-     "player_amortisation",
-     0.78
-    ],
-    [
-     "other_expenses",
-     0.16
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "RICCI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "player_amortisation",
-     0.61
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "GRUMO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "GOLDANIGA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.53,
-   "top3": [
-    [
-     "player_amortisation",
-     0.58
-    ],
-    [
-     "other_expenses",
-     0.29
-    ],
-    [
-     "wages_squad",
-     0.07
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "MARTINI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.53,
-   "top3": [
-    [
-     "player_amortisation",
-     0.57
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "CISCO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.44,
-   "top3": [
-    [
-     "player_amortisation",
-     0.5
-    ],
-    [
-     "other_expenses",
-     0.41
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "FRATTESI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "player_amortisation",
-     0.73
-    ],
-    [
-     "other_expenses",
-     0.17
-    ],
-    [
-     "wages_squad",
-     0.06
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "MARCHIZZA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6
-    ],
-    [
-     "other_expenses",
-     0.29
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "BABACAR",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.72,
-   "top3": [
-    [
-     "player_amortisation",
-     0.74
-    ],
-    [
-     "other_expenses",
-     0.18
-    ],
-    [
-     "wages_squad",
-     0.06
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "TURATI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.57,
-   "top3": [
-    [
-     "player_amortisation",
-     0.61
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "SERNICOLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "player_amortisation",
-     0.62
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.06
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "ODGAARD",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.77,
-   "top3": [
-    [
-     "player_amortisation",
-     0.79
-    ],
-    [
-     "other_expenses",
-     0.14
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MARGINEAN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.5,
-   "top3": [
-    [
-     "player_amortisation",
-     0.54
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "player_impairment",
-     0.09
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "PINATO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.29
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "BRIGNOLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "player_amortisation",
-     0.67
-    ],
-    [
-     "other_expenses",
-     0.25
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MEHMETAJ",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.67,
-   "top3": [
-    [
-     "player_amortisation",
-     0.71
-    ],
-    [
-     "other_expenses",
-     0.23
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "LOCATELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.8,
-   "top3": [
-    [
-     "player_amortisation",
-     0.82
-    ],
-    [
-     "other_expenses",
-     0.13
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "CAMPANI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.4,
-   "top3": [
-    [
-     "player_amortisation",
-     0.46
-    ],
-    [
-     "other_expenses",
-     0.41000000000000003
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "BOURABIA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.63,
-   "top3": [
-    [
-     "player_amortisation",
-     0.67
-    ],
-    [
-     "other_expenses",
-     0.21
-    ],
-    [
-     "wages_squad",
-     0.08
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "BOGA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "player_amortisation",
-     0.61
-    ],
-    [
-     "other_expenses",
-     0.3
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "MARLON",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.67,
-   "top3": [
-    [
-     "player_amortisation",
-     0.7
-    ],
-    [
-     "other_expenses",
-     0.21
-    ],
-    [
-     "wages_squad",
-     0.06
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "PINELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "PIERAGNOLO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "player_amortisation",
-     0.64
-    ],
-    [
-     "other_expenses",
-     0.26
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "ROGERIO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.68,
-   "top3": [
-    [
-     "player_amortisation",
-     0.71
-    ],
-    [
-     "other_expenses",
-     0.2
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "STEAU",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.29
-    ],
-    [
-     "player_impairment",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MULDUR",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "player_amortisation",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "player_impairment",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "OBIANG",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.51,
-   "top3": [
-    [
-     "player_amortisation",
-     0.55
-    ],
-    [
-     "other_expenses",
-     0.37
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "CAPUTO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6900000000000001
-    ],
-    [
-     "other_expenses",
-     0.24
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "SALA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "player_amortisation",
-     0.54
-    ],
-    [
-     "other_expenses",
-     0.29
-    ],
-    [
-     "wages_squad",
-     0.08
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "RUSSO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "player_amortisation",
-     0.61
-    ],
-    [
-     "other_expenses",
-     0.3
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MERONI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.3
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "TRAORE'",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "player_amortisation",
-     0.67
-    ],
-    [
-     "other_expenses",
-     0.22
-    ],
-    [
-     "wages_squad",
-     0.07
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "MIDOLO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "player_amortisation",
-     0.64
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MITROV",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "player_amortisation",
-     0.68
-    ],
-    [
-     "other_expenses",
-     0.26
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "CHIRICHES",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "player_amortisation",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "KYRIAKOPOULOS",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "player_amortisation",
-     0.76
-    ],
-    [
-     "other_expenses",
-     0.17
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 834
-  },
-  {
-   "label": "HARASLIN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.54,
-   "top3": [
-    [
-     "player_amortisation",
-     0.59
-    ],
-    [
-     "other_expenses",
-     0.34
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "DEFREL",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.76,
-   "top3": [
-    [
-     "player_amortisation",
-     0.79
-    ],
-    [
-     "other_expenses",
-     0.14
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "AYHAN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "player_amortisation",
-     0.68
-    ],
-    [
-     "other_expenses",
-     0.23
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "ROMAGNA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "other_expenses",
-   "confidence": 0.42,
-   "top3": [
-    [
-     "other_expenses",
-     0.47000000000000003
-    ],
-    [
-     "player_amortisation",
-     0.42
-    ],
-    [
-     "admin_general_expense",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "TOLJAN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "player_amortisation",
-     0.66
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MANARELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.27
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "RIPAMONTI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.72,
-   "top3": [
-    [
-     "player_amortisation",
-     0.74
-    ],
-    [
-     "other_expenses",
-     0.2
-    ],
-    [
-     "wages_squad",
-     0.03
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "SCHIAPPACASSE",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.3,
-   "top3": [
-    [
-     "player_amortisation",
-     0.37
-    ],
-    [
-     "other_expenses",
-     0.28
-    ],
-    [
-     "player_impairment",
-     0.21
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "LOPEZ",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "player_amortisation",
-     0.68
-    ],
-    [
-     "other_expenses",
-     0.23
-    ],
-    [
-     "wages_squad",
-     0.05
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MIRANDA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.68,
-   "top3": [
-    [
-     "player_amortisation",
-     0.7
-    ],
-    [
-     "other_expenses",
-     0.22
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 831
-  },
-  {
-   "label": "MANDRELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "player_amortisation",
-     0.64
-    ],
-    [
-     "other_expenses",
-     0.26
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 832
-  },
-  {
-   "label": "PAZ",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "player_amortisation",
-     0.6
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
     [
      "exceptional_items",
-     0.02
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "ERLIC",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.29
+     1
     ],
     [
      "wages_squad",
-     0.03
+     0
+    ],
+    [
+     "other_amortisation",
+     0
     ]
    ],
-   "tokens": 830
+   "tokens": 1023
   },
   {
-   "label": "FORESTA",
+   "label": "Oneri tributari indiretti",
    "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.58,
+   "page": 48,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
    "top3": [
-    [
-     "player_amortisation",
-     0.63
-    ],
-    [
-     "other_expenses",
-     0.28
-    ],
-    [
-     "wages_squad",
-     0.02
-    ]
-   ],
-   "tokens": 830
-  },
-  {
-   "label": "LAURICELLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "player_amortisation",
-     0.67
-    ],
-    [
-     "other_expenses",
-     0.24
-    ],
-    [
-     "wages_squad",
-     0.04
-    ]
-   ],
-   "tokens": 833
-  },
-  {
-   "label": "LOEFFEN",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.45,
-   "top3": [
-    [
-     "other_expenses",
-     0.51
-    ],
-    [
-     "wages_squad",
-     0.29
-    ],
-    [
-     "player_amortisation",
-     0.12
-    ]
-   ],
-   "tokens": 780
-  },
-  {
-   "label": "SUPLJA",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.32,
-   "top3": [
-    [
-     "other_expenses",
-     0.38
-    ],
-    [
-     "youth_other_sports_expense",
-     0.24
-    ],
-    [
-     "wages_squad",
-     0.12
-    ]
-   ],
-   "tokens": 780
-  },
-  {
-   "label": "SAMELE",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "wages_squad",
-   "confidence": 0.4,
-   "top3": [
-    [
-     "wages_squad",
-     0.45
-    ],
-    [
-     "other_expenses",
-     0.36
-    ],
-    [
-     "player_amortisation",
-     0.11
-    ]
-   ],
-   "tokens": 780
-  },
-  {
-   "label": "ZENELAJ",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "other_expenses",
-     0.9
-    ],
-    [
-     "lump_football_operations_expense",
-     0.02
-    ],
     [
      "admin_general_expense",
-     0.02
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
     ]
    ],
-   "tokens": 780
+   "tokens": 998
   },
   {
-   "label": "FLAMINGO",
+   "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
    "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.87,
+   "page": 47,
+   "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
    "top3": [
-    [
-     "other_expenses",
-     0.88
-    ],
     [
      "exceptional_items",
-     0.04
+     0.99
     ],
     [
-     "lump_football_operations_expense",
-     0.02
+     "player_impairment",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
     ]
    ],
-   "tokens": 781
-  },
-  {
-   "label": "RUAN",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.57,
-   "top3": [
-    [
-     "other_expenses",
-     0.6
-    ],
-    [
-     "admin_general_expense",
-     0.09
-    ],
-    [
-     "wages_squad",
-     0.07
-    ]
-   ],
-   "tokens": 779
-  },
-  {
-   "label": "LEONE",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "other_expenses",
-     0.59
-    ],
-    [
-     "wages_squad",
-     0.18
-    ],
-    [
-     "lump_football_operations_expense",
-     0.06
-    ]
-   ],
-   "tokens": 779
-  },
-  {
-   "label": "ARDIZZONE",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.43,
-   "top3": [
-    [
-     "other_expenses",
-     0.49
-    ],
-    [
-     "wages_squad",
-     0.31
-    ],
-    [
-     "player_amortisation",
-     0.14
-    ]
-   ],
-   "tokens": 780
-  },
-  {
-   "label": "PIERINI",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.37,
-   "top3": [
-    [
-     "other_expenses",
-     0.43
-    ],
-    [
-     "wages_squad",
-     0.29000000000000004
-    ],
-    [
-     "player_amortisation",
-     0.22
-    ]
-   ],
-   "tokens": 780
-  },
-  {
-   "label": "CIANCI",
-   "lado": "expense",
-   "page": 55,
-   "section": "",
-   "choice": "other_expenses",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "other_expenses",
-     0.6
-    ],
-    [
-     "wages_squad",
-     0.2
-    ],
-    [
-     "player_amortisation",
-     0.06
-    ]
-   ],
-   "tokens": 780
+   "tokens": 1110
   }
  ]
 }

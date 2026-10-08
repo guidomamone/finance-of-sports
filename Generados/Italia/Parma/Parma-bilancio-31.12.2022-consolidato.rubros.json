@@ -1,1549 +1,230 @@
 {
- "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
- "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
- "club": "parma",
- "year": 2022,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:05:18.215Z",
- "tieOuts": {
-  "cierran": 84,
-  "noCierran": 25
- },
- "warnings": [
-  "25 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-  "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 149,
-  "notasUsadas": [
-   "10",
-   "20"
+  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
+  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
+  "club": "parma-it",
+  "year": 2022,
+  "generatedAt": "2026-10-07T23:49:19.990Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "1) Ricavi delle vendite e delle prestazioni",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.373306
+      ],
+      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
+    },
+    {
+      "label": "b) Proventi da Sponsorizzazioni",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.200339
+      ],
+      "glosa": "b) Ingresos por patrocinio"
+    },
+    {
+      "label": "c) Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.631202
+      ],
+      "glosa": "c) Ingresos publicitarios"
+    },
+    {
+      "label": "d) Proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.050929
+      ],
+      "glosa": "d) Ingresos comerciales y regalías"
+    },
+    {
+      "label": "e) Proventi da cessione diritti televisivi",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.05542
+      ],
+      "glosa": "e) Ingresos por cesión de derechos televisivos"
+    },
+    {
+      "label": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.049782
+      ],
+      "glosa": "h) Plusvalías por cesión de derechos federativos de jugadores"
+    },
+    {
+      "label": "i) Altri proventi gest. giocatori",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.820531
+      ],
+      "glosa": "i) Otros ingresos de gestión de jugadores"
+    },
+    {
+      "label": "l) Ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        21.326285
+      ],
+      "glosa": "l) Ingresos y rendimientos diversos"
+    },
+    {
+      "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.667571
+      ],
+      "glosa": "6) Consumo de materias primas, auxiliares, consumibles y mercaderías"
+    },
+    {
+      "label": "7) Per servizi",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        14.197493
+      ],
+      "glosa": "7) Servicios exteriores"
+    },
+    {
+      "label": "8) Per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.925826
+      ],
+      "glosa": "8) Arrendamientos y cánones"
+    },
+    {
+      "label": "a) Salari e stipendi",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        49.969951
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Oneri sociali",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.11794
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) Trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.788346
+      ],
+      "glosa": "c) Indemnización por cese de relación laboral"
+    },
+    {
+      "label": "a) Ammortamento delle immobilizzazioni immateriali imm.",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.388974
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) Ammortamento delle immobilizzazioni materiali mat.",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.873275
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "c) Altre svalutazioni delle immobilizzazioni",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.780217
+      ],
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
+    },
+    {
+      "label": "d) Svalutazione crediti",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.098301
+      ],
+      "glosa": "d) Deterioro de créditos comerciales"
+    },
+    {
+      "label": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        39.51541
+      ],
+      "glosa": "e) Amortización de derechos federativos de futbolistas"
+    },
+    {
+      "label": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.310789
+      ],
+      "glosa": "11) Variación de existencias de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "13) Altri accantonamenti",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.977598
+      ],
+      "glosa": "13) Otras provisiones"
+    },
+    {
+      "label": "14) Oneri diversi di gestione",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        14.500608
+      ],
+      "glosa": "14) Otros gastos de explotación"
+    }
   ]
- },
- "ladoConocido": 141,
- "rubros": [
-  {
-   "label": "Ricavi per la vendita di beni e servizi",
-   "lado": "revenue",
-   "page": 9,
-   "section": "",
-   "values": [
-    1373.306
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "b) Proventi da Sponsorizzazioni",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    2200.339
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "Altri proventi vari",
-   "lado": "revenue",
-   "page": 9,
-   "section": "",
-   "values": [
-    31134.488
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "c) Proventi pubblicitari",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    2631.202
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "d) Proventi commerciali e royalties",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    50.929
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "e) Proventi da cessione diritti televisivi",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    3055.42
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    49.782
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "i) Altri proventi gest. giocatori",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    1820.531
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "l) Ricavi e proventi diversi",
-   "lado": "revenue",
-   "page": 20,
-   "section": "Bilancio Consolidato al 31.12.2022",
-   "values": [
-    21326.285
-   ],
-   "origen": "nota 10 (ancla 3)",
-   "ancla": "Altri proventi vari"
-  },
-  {
-   "label": "Costi per materie prime, sussidiarie e di consumo",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    1667.571
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Var. rimanenze materie prime, sussidiarie e di consumo",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    -310.789
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Costi per servizi",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    14197.493
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Costi per godimento beni di terzi",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    925.826
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Altri oneri vari",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    15478.206
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "VALORE AGGIUNTO",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    549.487
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Costi del lavoro",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    54876.237
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Ammortamenti",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    43557.876
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Svalutazioni",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    98.301
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Ricavi della gestione finanziaria",
-   "lado": "revenue",
-   "page": 9,
-   "section": "",
-   "values": [
-    1.204
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Costi della gestione finanziaria",
-   "lado": "expense",
-   "page": 9,
-   "section": "",
-   "values": [
-    97.287
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Patrimonio Netto e Risultato dell'esercizio Parma Calcio 1913 S.r.l.",
-   "lado": null,
-   "page": 39,
-   "section": "",
-   "values": [
-    -96503.543
-   ],
-   "origen": "nota 20 (ancla 3)",
-   "ancla": "REDDITO NETTO"
-  },
-  {
-   "label": "REDDITO NETTO",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    -98079.01
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Eliminazione del valore di carico delle partecipazioni consolidate: - Risultati delle partecipate",
-   "lado": null,
-   "page": 39,
-   "section": "",
-   "values": [
-    -1575.467
-   ],
-   "origen": "nota 20 (ancla 3)",
-   "ancla": "REDDITO NETTO"
-  },
-  {
-   "label": "Indice liquidità ((Liquidità immediata+Crediti a breve)/Debiti a breve)",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    0.0008
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Costi del lavoro/Valore della produzione",
-   "lado": null,
-   "page": 9,
-   "section": "",
-   "values": [
-    0.0017
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Proventi da sponsorizzazioni",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    2.200339
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Proventi pubblicitari",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    2.631202
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Proventi commerciali e royalties",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    0.050929
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Proventi da cessione diritti televisivi",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    3.05542
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Proventi da cessione diritti pluriennali prestazioni Calciatori",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    0.049782
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Altri Proventi gestione Calciatori",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    1.820531
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Contributi in conto esercizio",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    17.526423
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Altri ricavi e proventi",
-   "lado": "revenue",
-   "page": 42,
-   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
-   "values": [
-    3.799862
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "- Gare Campionato",
-   "lado": null,
-   "page": 42,
-   "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
-   "values": [
-    0.810341
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Abbonamenti",
-   "lado": null,
-   "page": 42,
-   "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
-   "values": [
-    0.562965
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Ansaldi Cristian Daniel",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    200.986
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Adorante Andrea",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    50.2
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Baraye Yves Bertand",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.692
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Borriello Francesco",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    250.705
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Basili Damiano",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    20.204
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Buffon Gianluigi",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    280.178
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Castaldo Antonio",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    140.206
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Carannante Gabriele",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    270.299
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cavazza Paolo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    170.103
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cheddira Walid",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.198
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cipolletti Davide",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    300.301
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Circati Alessandro",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    101.003
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Colombi Simone",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    10.791
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Corvi Edoardo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    230.301
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cucci Matteo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    200.201
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "De Rinaldis Matteo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    10.403
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Delprato Enrico",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    101.199
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Golfo Francesco Matteo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    50.994
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Grassi Alberto",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    70.395
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Iacoponi Daniele",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    250.302
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Iacoponi Simone",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    300.487
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Inglese Roberto",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    121.191
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Kasa Redi",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    10.901
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Lanini Eric",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    250.294
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Laraspata Michele",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    20.601
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Mallamo Andrea",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    221.002
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Martella Alessandro",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    301.1
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Napoletano Paolo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    40.202
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Palmucci Stefano",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.501
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Pavone Fabian",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    50.2
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Pezzella Giuseppe",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    291.197
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Primavera Luca",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    80.405
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Romagnoli Simone",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    90.29
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Rinaldi Filippo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    41.202
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Rispoli Andrea",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    290.988
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Rossi Alberto",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.703
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Santurro Antonio",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    290.292
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Schiattarella Pasquale",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    300.587
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Sepe Luigi",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    80.691
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Siligardi Luca",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.188
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Sprocati Mattia",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    301.193
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Tutino Gennaro",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    200.896
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Vaglica Giovanni",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    60.203
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Amoran Toluwanimi Peter",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.504
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Azevedo Junior Hernani",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    270.394
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Bernabe' Garcia Adrian",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.501
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Buayi Kiala Nathan",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    290.204
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Balogh Botond",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    60.602
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Benedyczak Adrian Dawid",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    241.1
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Bonny Ange-Yoan Laurent",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    251.003
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Brugman Gaston",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    70.992
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Busi Maxime",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    141.099
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Charpentier Gabriel Andre",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    170.599
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Chichizola Leandro",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    270.39
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Coulibaly Aboubacar-Sama",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    280.206
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Camara Drissa",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    180.202
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cobbaut Elias",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    241.177
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Coulibaly Woyo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.599
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Cyprien Wylan",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    290.195
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Da Cruz Alessio",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    180.197
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Dierckx Daan",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    240.203
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Estevez Alvarez Nahuel",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    141.195
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Fatu Rares Daniel",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    170.106
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Flex Flintholm Frederik",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    110.304
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Fiath Bence",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    180.104
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Hainaut Antoine",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    180.202
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Juric Stanko",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    160.896
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Karamoh Yann",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    80.798
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Kone Moussa",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    191.1
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Kucka Juraj",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.287
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Kurtic Jasmin",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    100.189
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Larangeira Danilo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    100.584
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Laurini Vincent",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    100.689
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Lopes Andrè",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    180.303
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Maliszewski Bartolomiej",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    120.204
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Man Dennis",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.898
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Manisa Lenny",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    40.202
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Mir Garcia Matias",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.503
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Marsetic Enej",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    41.204
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Mihaila Valentin",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    20.2
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Oosterwolde Jayden",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    260.401
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Osorio Jordan Hernando",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    100.594
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Pandev Goran",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    270.783
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Regulfe Alves Bruno Eduardo",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    271.181
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Sahitaj Ledjan",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    120.104
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Sits Dario",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    40.204
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Sohm Simon",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    110.401
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Tehe Olawale",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.299
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Traore Aliou Badara",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    80.101
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Turk Martin",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    210.803
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Valenti Lautaro",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    140.199
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Vazquez Franco Damian",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    220.289
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Zadran Roman",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    80.305
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Zagaritis Vasilios",
-   "lado": "expense",
-   "page": 51,
-   "section": "Aggiornamento alla data del: 31/12/2022",
-   "values": [
-    40.501
-   ],
-   "origen": "estado 34"
-  },
-  {
-   "label": "Costi per attività sportiva",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    2.141724
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi specifici Tecnici",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.999176
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per intermediazioni",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.074298
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per prestazione servizi personale",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.34233
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi vitto, alloggio e locomozione gare",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.93533
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Compensi e rimborsi spesa a terzi",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.376255
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per servizio biglietteria, controllo ingressi",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.318927
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per pubblicità e propaganda",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.87035
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi assicurativi",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.324238
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per utenze e spese generali",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.282394
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per manutenzioni e riparazioni",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.073871
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Costi per servizio da banche e finanz.",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.025354
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Legali e Amministrativi",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    1.99192
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Altri",
-   "lado": "expense",
-   "page": 44,
-   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
-   "values": [
-    0.441326
-   ],
-   "origen": "estado 28"
-  },
-  {
-   "label": "Spese varie per organizzazioni gare",
-   "lado": "expense",
-   "page": 46,
-   "section": "### *Oneri diversi di gestione*",
-   "values": [
-    799.618
-   ],
-   "origen": "estado 31"
-  },
-  {
-   "label": "Tasse iscrizione gare",
-   "lado": "expense",
-   "page": 46,
-   "section": "### *Oneri diversi di gestione*",
-   "values": [
-    6.524
-   ],
-   "origen": "estado 31"
-  },
-  {
-   "label": "Costi acq. temporanea calciatori",
-   "lado": "expense",
-   "page": 46,
-   "section": "### *Oneri diversi di gestione*",
-   "values": [
-    523.434
-   ],
-   "origen": "estado 31"
-  },
-  {
-   "label": "Altri oneri gestione calciatori",
-   "lado": "expense",
-   "page": 46,
-   "section": "### *Oneri diversi di gestione*",
-   "values": [
-    10722.485
-   ],
-   "origen": "estado 31"
-  },
-  {
-   "label": "Altri oneri di gestione",
-   "lado": "expense",
-   "page": 46,
-   "section": "### *Oneri diversi di gestione*",
-   "values": [
-    2448.547
-   ],
-   "origen": "estado 31"
-  },
-  {
-   "label": "Salari e Stipendi",
-   "lado": "expense",
-   "page": 45,
-   "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
-   "values": [
-    49.969951
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Oneri Sociali",
-   "lado": "expense",
-   "page": 45,
-   "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
-   "values": [
-    4.11794
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "TFR",
-   "lado": "expense",
-   "page": 45,
-   "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
-   "values": [
-    0.788346
-   ],
-   "origen": "estado 29"
-  }
- ]
 }

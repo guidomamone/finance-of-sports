@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
+ "generado": "2026-10-07T23:49:19.818Z",
+ "estado": "cola",
+ "clubId": "asroma-it",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "2ac2c3f",
+  "b544b97",
+  "0b99aca",
+  "a168cd5",
+  "6d55bd9",
+  "deb7daa"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2018 de este documento suma ingresos 320.428; el sitio tiene 296.87"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": false,
+   "detalle": "ingresos de 2018: 250.866 en AS-Roma-bilancio-2018.pdf y 320.428 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Las columnas de segmento no abren renglones que no estén desglosados en las notas 23-33.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer que no afecta la carga: Ambas columnas de L2098 dicen 01.07.2018 - 30.06.2019; las notas confirman que la segunda es 30.06.2018.",
+  "duda de extraer que no afecta la carga: L4907 menciona 113.064 pero L4918 y L2103 dan 111.919."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 381.015,
+  "gastos": 368.415,
+  "financiero": -28.092,
+  "impuesto": -8.964,
+  "resultadoImpreso": -24.456,
+  "resultadoParaCargar": -24.456,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 66.284,
+   "pagina": 64,
+   "linea": 2100,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi delle vendite commerciali e licensing",
+   "lado": "ingreso",
+   "M": 7.716,
+   "pagina": 64,
+   "linea": 2101,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 24.22,
+   "pagina": 64,
+   "linea": 2102,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diritti televisivi e diritti d'immagine",
+   "lado": "ingreso",
+   "M": 111.919,
+   "pagina": 64,
+   "linea": 2103,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pubblicità",
+   "lado": "ingreso",
+   "M": 11.395,
+   "pagina": 64,
+   "linea": 2104,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri",
+   "lado": "ingreso",
+   "M": 11.219,
+   "pagina": 64,
+   "linea": 2105,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 148.262,
+   "pagina": 64,
+   "linea": 2116,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Acquisti materie di consumo",
+   "lado": "gasto",
+   "M": 7.195,
+   "pagina": 64,
+   "linea": 2108,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Variazione delle rimanenze",
+   "lado": "gasto",
+   "M": -0.163,
+   "pagina": 64,
+   "linea": 2109,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per servizi",
+   "lado": "gasto",
+   "M": 54.784,
+   "pagina": 64,
+   "linea": 2110,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per godimento beni di terzi",
+   "lado": "gasto",
+   "M": 10.866,
+   "pagina": 64,
+   "linea": 2111,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il personale",
+   "lado": "gasto",
+   "M": 184.42,
+   "pagina": 64,
+   "linea": 2112,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri costi",
+   "lado": "gasto",
+   "M": 7.367,
+   "pagina": 64,
+   "linea": 2113,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 87.412,
+   "pagina": 64,
+   "linea": 2114,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 15.934,
+   "pagina": 64,
+   "linea": 2117,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 0.6,
+   "pagina": 64,
+   "linea": 2119,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Proventi finanziari",
+   "M": 2.614,
+   "linea": 2120
+  },
+  {
+   "etiqueta": "Oneri finanziari",
+   "M": -30.706,
+   "linea": 2121
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte correnti",
+   "M": -8.921,
+   "linea": 2124
+  },
+  {
+   "etiqueta": "Imposte differite",
+   "M": -0.043,
+   "linea": 2125
+  }
+ ]
+}

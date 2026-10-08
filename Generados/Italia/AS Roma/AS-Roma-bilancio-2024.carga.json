@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf",
+ "generado": "2026-10-08T01:23:43.761Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "asroma-it",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

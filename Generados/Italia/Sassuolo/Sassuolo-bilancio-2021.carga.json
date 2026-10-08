@@ -1,0 +1,31 @@
+{
+ "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
+ "generado": "2026-10-07T23:52:44.096Z",
+ "frena": [
+  {
+   "etapa": "alta:cierre",
+   "motivo": "No se pudo determinar la fecha de cierre del ejercicio."
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "sassuolo-it",
+ "year": 2021,
+ "cortadoEn": "filas"
+}

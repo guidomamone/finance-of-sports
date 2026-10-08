@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.pdf",
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md",
+ "generado": "2026-10-08T01:12:56.132Z",
+ "estado": "cola",
+ "clubId": "parma-it",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "36a3982",
+  "6573d39",
+  "7b237fe"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 28.891375; el sitio tiene 28.891375"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 41.490983 en este documento y 41.561271 en Parma-bilancio-31.12.2025-consolidato.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2023: 54.231102 en Parma-bilancio-31.12.2023-individual.pdf y 28.891375 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Es una reclasificación del conto economico b12 para indicadores, no un estado distinto.",
+  "duda de localizar que no afecta la carga: Resume amortizaciones y resultados de jugadores ya incluidos en el conto economico y sus notas, en otra escala.",
+  "duda de extraer que no afecta la carga: Diferencia de 1 unidad atribuible a redondeo (L1677 vs L555).",
+  "duda de extraer que no afecta la carga: Las variaciones de L1533 y L1534 no coinciden con la resta de columnas, pero los importes de 2024 y 2023 cuadran con el total L1535; no se carga la variación."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 41.490983,
+  "gastos": 105.936987,
+  "financiero": 0.069734,
+  "impuesto": 0.961793,
+  "resultadoImpreso": -63.414477,
+  "resultadoParaCargar": -63.414477,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1) ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "M": 4.508008,
+   "pagina": 16,
+   "linea": 533,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 36.982975,
+   "pagina": 16,
+   "linea": 535,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 2.988588,
+   "pagina": 16,
+   "linea": 539,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "7) per servizi",
+   "lado": "gasto",
+   "M": 16.378404,
+   "pagina": 16,
+   "linea": 540,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "8) per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 1.577296,
+   "pagina": 16,
+   "linea": 541,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 43.754572,
+   "pagina": 16,
+   "linea": 543,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 4.614069,
+   "pagina": 16,
+   "linea": 544,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.880784,
+   "pagina": 16,
+   "linea": 545,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 24.94167,
+   "pagina": 16,
+   "linea": 548,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.933733,
+   "pagina": 16,
+   "linea": 549,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 1.101402,
+   "pagina": 16,
+   "linea": 550,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": "gasto",
+   "M": 0.000447,
+   "pagina": 16,
+   "linea": 551,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "gasto",
+   "M": -0.351489,
+   "pagina": 16,
+   "linea": 553,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "13) altri accantonamenti",
+   "lado": "gasto",
+   "M": 1.996713,
+   "pagina": 16,
+   "linea": 554,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "14) oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 7.120798,
+   "pagina": 16,
+   "linea": 555,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "altri",
+   "M": 0.150398,
+   "linea": 561
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.080664,
+   "linea": 565
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale",
+   "M": 0.961793,
+   "linea": 570
+  }
+ ]
+}

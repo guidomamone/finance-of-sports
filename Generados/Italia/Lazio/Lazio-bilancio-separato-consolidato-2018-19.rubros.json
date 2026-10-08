@@ -1,0 +1,440 @@
+{
+  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.md",
+  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.pdf",
+  "club": "lazio-it",
+  "year": 2019,
+  "generatedAt": "2026-10-08T01:12:55.919Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "ricavi da gare in casa",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.208302
+      ],
+      "glosa": "Ingresos por partidos como local"
+    },
+    {
+      "label": "percentuali su incassi gare da squadra ospitanti",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.079307
+      ],
+      "glosa": "Porcentajes sobre recaudación de partidos como equipo visitante"
+    },
+    {
+      "label": "abbonamenti",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.578054
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "-) televisivi",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        61.848172
+      ],
+      "glosa": "-) Derechos de televisión"
+    },
+    {
+      "label": "-) televisivi da partecipazioni comp. U.E.F.A.",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.483702
+      ],
+      "glosa": "-) Derechos de televisión por participación en competiciones UEFA"
+    },
+    {
+      "label": "-) da L.N.P.",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.310479
+      ],
+      "glosa": "-) De la L.N.P."
+    },
+    {
+      "label": "Sponsorizzazioni",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        11.162361
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.352367
+      ],
+      "glosa": "Ingresos publicitarios"
+    },
+    {
+      "label": "Canoni per licenze, marchi, brevetti",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.2566
+      ],
+      "glosa": "Cánones por licencias, marcas y patentes"
+    },
+    {
+      "label": "Cessione temporanea calciatori",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.160409
+      ],
+      "glosa": "Cesión temporal de futbolistas"
+    },
+    {
+      "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        25.964981
+      ],
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.22305
+      ],
+      "glosa": "Otros ingresos por gestión de futbolistas"
+    },
+    {
+      "label": "-) da transazioni con creditori (non ricorrenti)",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.4
+      ],
+      "glosa": "-) Por acuerdos con acreedores (no recurrentes)"
+    },
+    {
+      "label": "-) da altri",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.979865
+      ],
+      "glosa": "-) De otros"
+    },
+    {
+      "label": "Contributi in c/esercizio",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.903226
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Proventi vari",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.309345
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Variazione delle rimanenze",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.316633
+      ],
+      "glosa": "Variación de existencias"
+    },
+    {
+      "label": "Ricavi da merchandising",
+      "lado": "revenue",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.543719
+      ],
+      "glosa": "Ingresos por merchandising"
+    },
+    {
+      "label": "Materie prime,sussidiarie,di consumo e di merci",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.122859
+      ],
+      "glosa": "Materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Salari e stipendi",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        81.89035
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Oneri sociali",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.223127
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.381476
+      ],
+      "glosa": "Indemnizaciones por fin de contrato"
+    },
+    {
+      "label": "Altri costi",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.113073
+      ],
+      "glosa": "Otros costes"
+    },
+    {
+      "label": "Altri oneri da gestione calciatori",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.366991
+      ],
+      "glosa": "Otros gastos por gestión de futbolistas"
+    },
+    {
+      "label": "Costi per tesserati",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.946627
+      ],
+      "glosa": "Gastos por deportistas federados"
+    },
+    {
+      "label": "Costi specifici tecnici",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.372474
+      ],
+      "glosa": "Gastos técnicos específicos"
+    },
+    {
+      "label": "Costi per vitto,alloggio e locomozione",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.871923
+      ],
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos"
+    },
+    {
+      "label": "Servizio biglietteria, controllo ingressi",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.528079
+      ],
+      "glosa": "Servicio de taquilla y control de accesos"
+    },
+    {
+      "label": "Spese assicurative",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.146449
+      ],
+      "glosa": "Gastos de seguros"
+    },
+    {
+      "label": "Spese amministrative",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.801755
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Spese per pubblicità e promozione",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.047378
+      ],
+      "glosa": "Gastos de publicidad y promoción"
+    },
+    {
+      "label": "Spese bancarie",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.45683
+      ],
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.651278
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Spese varie organizzazione gare",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.503883
+      ],
+      "glosa": "Gastos diversos de organización de partidos"
+    },
+    {
+      "label": "Tassa iscrizioni gare",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.004699
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "-) percentuale su incassi gare a squadra ospite",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.036532
+      ],
+      "glosa": "-) Porcentaje sobre recaudación de partidos al equipo visitante"
+    },
+    {
+      "label": "Altri oneri di gestione",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.160505
+      ],
+      "glosa": "Otros gastos de gestión"
+    },
+    {
+      "label": "Sopravvenienze passive (non ricorrenti)",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.050686
+      ],
+      "glosa": "Gastos extraordinarios (no recurrentes)"
+    },
+    {
+      "label": "Amm. delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        30.337066
+      ],
+      "glosa": "Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "Amm. delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.031697
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Svalutaz. Delle immobilizzazioni",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.871498
+      ],
+      "glosa": "Deterioro del inmovilizado"
+    },
+    {
+      "label": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.979214
+      ],
+      "glosa": "Deterioro de créditos del activo corriente y tesorería"
+    },
+    {
+      "label": "Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.25
+      ],
+      "glosa": "Provisiones para riesgos"
+    }
+  ]
+}

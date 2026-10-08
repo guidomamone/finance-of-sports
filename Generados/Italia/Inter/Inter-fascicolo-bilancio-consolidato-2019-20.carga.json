@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.pdf",
+ "generado": "2026-10-08T01:23:44.973Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (consolidado); 5 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Relazione sulla Gestione 01/07/2019 - 30/06/2020"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "inter-it",
+ "year": 2020,
+ "cortadoEn": "filas"
+}

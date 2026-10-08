@@ -1,0 +1,603 @@
+{
+ "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.pdf",
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md",
+ "mdSha1": "a2d5ed9cd742d8a47b327ad151af3c7c392007de",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T00:08:35.315Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    33,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    62,
+    119
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    125,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    187,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    268,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    369,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    479,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 23,
+   "lineas": [
+    682,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    689,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    710,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    760,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    780,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    825,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    858,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    865,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    888,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    901,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    920,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    929,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    936,
+    964
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1000,
+    1003
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1015,
+    1018
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 31,
+   "lineas": [
+    1022,
+    1037
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 31,
+   "lineas": [
+    1043,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1054,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 32,
+   "lineas": [
+    1067,
+    1071
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 32,
+   "lineas": [
+    1086,
+    1091
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 32,
+   "lineas": [
+    1095,
+    1098
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 32,
+   "lineas": [
+    1102,
+    1112
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 33,
+   "lineas": [
+    1122,
+    1129
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 33,
+   "lineas": [
+    1133,
+    1145
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 34,
+   "lineas": [
+    1175,
+    1183
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 34,
+   "lineas": [
+    1196,
+    1204
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 35,
+   "lineas": [
+    1216,
+    1225
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 35,
+   "lineas": [
+    1235,
+    1241
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 36,
+   "lineas": [
+    1261,
+    1271
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 36,
+   "lineas": [
+    1275,
+    1285
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 38,
+   "lineas": [
+    1315,
+    1326
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 38,
+   "lineas": [
+    1332,
+    1347
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 39,
+   "lineas": [
+    1379,
+    1386
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 40,
+   "lineas": [
+    1396,
+    1409
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 40,
+   "lineas": [
+    1419,
+    1424
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 40,
+   "lineas": [
+    1434,
+    1442
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 40,
+   "lineas": [
+    1446,
+    1450
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 41,
+   "lineas": [
+    1462,
+    1467
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 41,
+   "lineas": [
+    1477,
+    1486
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 42,
+   "lineas": [
+    1512,
+    1531
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 42,
+   "lineas": [
+    1548,
+    1553
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 43,
+   "lineas": [
+    1565,
+    1570
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 45,
+   "lineas": [
+    1630,
+    1656
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 45,
+   "lineas": [
+    1660,
+    1676
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 46,
+   "lineas": [
+    1688,
+    1703
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 46,
+   "lineas": [
+    1707,
+    1712
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 47,
+   "lineas": [
+    1729,
+    1750
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 49,
+   "lineas": [
+    1776,
+    1898
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 50,
+   "lineas": [
+    1910,
+    2032
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 51,
+   "lineas": [
+    2044,
+    2166
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 55,
+   "lineas": [
+    2251,
+    2272
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 56,
+   "lineas": [
+    2300,
+    2314
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 57,
+   "lineas": [
+    2322,
+    2337
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 59,
+   "lineas": [
+    2397,
+    2443
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 60,
+   "lineas": [
+    2451,
+    2485
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 61,
+   "lineas": [
+    2493,
+    2506
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 62,
+   "lineas": [
+    2526,
+    2542
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 62,
+   "lineas": [
+    2546,
+    2561
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 63,
+   "lineas": [
+    2571,
+    2575
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 63,
+   "lineas": [
+    2583,
+    2591
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 69,
+   "lineas": [
+    2745,
+    2750
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b39",
+  "b40",
+  "b49"
+ ],
+ "notas_gastos": [
+  "b41",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b47",
+  "b48",
+  "b50",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Notas expresadas en euros (ej. 'valori in Euro' en b12; 'ricavi ... pari a € 27.561.645')",
+ "moneda": "EUR",
+ "columna_ejercicio": "12 mesi al 30/06/25",
+ "columna_anterior": "12 mesi al 30/06/24",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el conto economico b5 está en euros (unidades) y no en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la frase de escala sobre b5; las notas dan importes en euros completos.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de bilancio consolidato del Gruppo Atalanta; b5 es el conto economico consolidado. b12 desglosa el resultado de operaciones con DPC (plusvalenze, ammortamenti, prestiti). Se excluyen cuadros por jugador (b11, b13, b14, b56-b58, b62-b64), balance, flujo, patrimonio, partes relacionadas y la reclasificación de gestión b59."
+}

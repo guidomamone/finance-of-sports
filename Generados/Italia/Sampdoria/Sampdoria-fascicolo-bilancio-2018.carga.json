@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+ "generado": "2026-10-08T01:23:47.734Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2019-03-29): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 1 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-03-29",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "sampdoria-it",
+ "year": 2018,
+ "cortadoEn": "filas"
+}

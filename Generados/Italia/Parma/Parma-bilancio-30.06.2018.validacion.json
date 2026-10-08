@@ -1,0 +1,19 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf",
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
+ "mdSha1": "0900866c9d67d65784afb88a1ecb27f93102ca56",
+ "modo": "digital",
+ "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 1326814 vs 1326815, 2428 vs 2423, 2497 vs 2427; 64 números del .md no están en el PDF (tolerancia 34)",
+ "generado": "2026-10-07T23:42:18.509Z",
+ "fuentes": {
+  "13": "pdftotext",
+  "32": "pdftotext",
+  "33": "pdftotext",
+  "34": "pdftotext",
+  "35": "pdftotext",
+  "36": "pdftotext",
+  "37": "pdftotext"
+ },
+ "confirmados": 256,
+ "noConfirmados": []
+}

@@ -1,0 +1,454 @@
+{
+ "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
+ "generado": "2026-10-08T01:12:56.210Z",
+ "estado": "cola",
+ "clubId": "sampdoria-it",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "addab79",
+  "0b43be9",
+  "f1b4f17",
+  "9414130",
+  "2f9021a",
+  "075611c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "141.773225 = 141.773568"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "120.077712 = 120.080088"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en Sampdoria-fascicolo-bilancio-2021.pdf",
+  "duda de extraer que no afecta la carga: b55 replica en miles los renglones a)-d) del estado (L985-L988) separados por tesserati/altri; b56 desglosa solo la parte tesserati (49.434)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 141.773225,
+  "gastos": 120.077712,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gare Campionato",
+   "lado": "ingreso",
+   "M": 1.209,
+   "pagina": 54,
+   "linea": 2272,
+   "origen": "nota que desglosa \"Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Gare Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.047,
+   "pagina": 54,
+   "linea": 2273,
+   "origen": "nota que desglosa \"Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 3.03,
+   "pagina": 54,
+   "linea": 2280,
+   "origen": "nota que desglosa \"Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Incrementi di immobilizzazione per lavori interni e capitalizzazione costi vivaio",
+   "lado": "ingreso",
+   "M": 1.981108,
+   "pagina": 26,
+   "linea": 973,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Altri",
+   "lado": "ingreso",
+   "M": 79.97797,
+   "pagina": 26,
+   "linea": 975,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "1a) plusvalenze",
+   "lado": "ingreso",
+   "M": 55.528147,
+   "pagina": 26,
+   "linea": 976,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 26,
+   "linea": 977,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materiale di consumo",
+   "lado": "gasto",
+   "M": 0.07,
+   "pagina": 57,
+   "linea": 2369,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Indumenti gioco",
+   "lado": "gasto",
+   "M": 1.061,
+   "pagina": 57,
+   "linea": 2370,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Indumenti",
+   "lado": "gasto",
+   "M": 0.099,
+   "pagina": 57,
+   "linea": 2371,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Medicinali",
+   "lado": "gasto",
+   "M": 0.061,
+   "pagina": 57,
+   "linea": 2372,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Cancelleria e stampati",
+   "lado": "gasto",
+   "M": 0.009,
+   "pagina": 57,
+   "linea": 2373,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Altro",
+   "lado": "gasto",
+   "M": 0.269,
+   "pagina": 57,
+   "linea": 2374,
+   "origen": "nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\""
+  },
+  {
+   "etiqueta": "Costi per tesserati",
+   "lado": "gasto",
+   "M": 1.066,
+   "pagina": 57,
+   "linea": 2385,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 0.209,
+   "pagina": 57,
+   "linea": 2386,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 0.871,
+   "pagina": 57,
+   "linea": 2387,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Compensi per Agenti e intermediari",
+   "lado": "gasto",
+   "M": 11.579,
+   "pagina": 57,
+   "linea": 2388,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi vitto, alloggio, locomozione gare",
+   "lado": "gasto",
+   "M": 0.831,
+   "pagina": 57,
+   "linea": 2389,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Assicurative e previdenziali",
+   "lado": "gasto",
+   "M": 1.015,
+   "pagina": 57,
+   "linea": 2390,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Amministrative, pubblicitarie e generali",
+   "lado": "gasto",
+   "M": 5.323,
+   "pagina": 57,
+   "linea": 2391,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Altri",
+   "lado": "gasto",
+   "M": 0.238,
+   "pagina": 57,
+   "linea": 2393,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi campi sportivi",
+   "lado": "gasto",
+   "M": 1.286,
+   "pagina": 58,
+   "linea": 2424,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Noleggio autovetture",
+   "lado": "gasto",
+   "M": 0.253,
+   "pagina": 58,
+   "linea": 2425,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Locazioni uffici e altri locali",
+   "lado": "gasto",
+   "M": 0.161,
+   "pagina": 58,
+   "linea": 2426,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Noleggi",
+   "lado": "gasto",
+   "M": 0.14,
+   "pagina": 58,
+   "linea": 2427,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Concessione utilizzo marchio",
+   "lado": "gasto",
+   "M": 3,
+   "pagina": 58,
+   "linea": 2428,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "a) Salari e stipendi",
+   "lado": "gasto",
+   "M": 50.809682,
+   "pagina": 26,
+   "linea": 985,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Oneri sociali",
+   "lado": "gasto",
+   "M": 2.705739,
+   "pagina": 26,
+   "linea": 986,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.593002,
+   "pagina": 26,
+   "linea": 987,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) altri costi",
+   "lado": "gasto",
+   "M": 0.033413,
+   "pagina": 26,
+   "linea": 988,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 27.245164,
+   "pagina": 26,
+   "linea": 991,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.349443,
+   "pagina": 26,
+   "linea": 992,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 26,
+   "linea": 993,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Svalutazioni crediti dell'attivo",
+   "lado": "gasto",
+   "M": 1.163971,
+   "pagina": 26,
+   "linea": 995,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 0.755298,
+   "pagina": 26,
+   "linea": 997,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spese varie organizzazione gare",
+   "lado": "gasto",
+   "M": 1.155,
+   "pagina": 60,
+   "linea": 2517,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Tasse iscrizioni gare",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 60,
+   "linea": 2518,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Percentuale su incassi gare a squadre ospitate",
+   "lado": "gasto",
+   "M": 0.021,
+   "pagina": 60,
+   "linea": 2519,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "gasto",
+   "M": 2.775,
+   "pagina": 60,
+   "linea": 2520,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 0.494,
+   "pagina": 60,
+   "linea": 2521,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Premi Preparazione ex art. 96 NOIF",
+   "lado": "gasto",
+   "M": 0.169,
+   "pagina": 60,
+   "linea": 2524,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Contributo Solidarietà Fifa/Indennita' Formazione",
+   "lado": "gasto",
+   "M": 0.065,
+   "pagina": 60,
+   "linea": 2525,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Premi Valorizzazione",
+   "lado": "gasto",
+   "M": 0.447,
+   "pagina": 60,
+   "linea": 2526,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Oneri diversi da gestione calciatori",
+   "lado": "gasto",
+   "M": 1.183,
+   "pagina": 60,
+   "linea": 2527,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Spese, ammende e multe gare",
+   "lado": "gasto",
+   "M": 0.04,
+   "pagina": 60,
+   "linea": 2529,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Oneri tributari indiretti",
+   "lado": "gasto",
+   "M": 0.207,
+   "pagina": 60,
+   "linea": 2530,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri",
+   "lado": "gasto",
+   "M": 2.151,
+   "pagina": 60,
+   "linea": 2531,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Sopravvenienze passive",
+   "lado": "gasto",
+   "M": 0.172,
+   "pagina": 60,
+   "linea": 2532,
+   "origen": "nota que desglosa \"Oneri diversi di gestione\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

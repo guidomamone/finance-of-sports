@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
+ "generado": "2026-10-07T23:52:44.032Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-06: Guido 2026-10-06: individual (Parma Calcio 1913 S.r.l.); en 2023 y 2024 el consolidado difiere menos de 1%; 2022 y 2025 solo tienen consolidado)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "parma-it",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,165 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
+ "generatedAt": "2026-10-07T23:52:15.624Z",
+ "rubrosHuella": "736ec2ec6c205b9b8e0abfe4761c62b84e7fc59c",
+ "rubros": [
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ricavi delle vendite commerciali e licensing",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pubblicità",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per servizi",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per il personale",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri costi",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri",
+   "lado": "revenue",
+   "page": 64,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 984
+  }
+ ]
+}

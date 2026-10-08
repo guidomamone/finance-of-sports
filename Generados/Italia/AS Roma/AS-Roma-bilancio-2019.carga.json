@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
+ "generado": "2026-10-07T23:52:42.569Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "asroma-it",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

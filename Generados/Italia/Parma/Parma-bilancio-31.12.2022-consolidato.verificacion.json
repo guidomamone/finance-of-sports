@@ -1,0 +1,276 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
+ "generado": "2026-10-07T23:49:19.990Z",
+ "estado": "cola",
+ "clubId": "parma-it",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "a7fb918",
+  "6f5f62f",
+  "b400244",
+  "dfaae7c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2022: 32.507794 en este documento y 63.157067 en Parma-bilancio-31.12.2023-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 40.681361 en Parma-bilancio-31.12.2021-individual.pdf y 40.763316 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer que no afecta la carga: b32 reagrupa los renglones de amortización del estado (L1357 = L596 + L600) sin aportar detalle nuevo."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 32.507794,
+  "gastos": 130.490721,
+  "financiero": -0.096083,
+  "impuesto": 0,
+  "resultadoImpreso": -98.07901,
+  "resultadoParaCargar": -98.07901,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1) Ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "M": 1.373306,
+   "pagina": 20,
+   "linea": 573,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Proventi da Sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 2.200339,
+   "pagina": 20,
+   "linea": 576,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 2.631202,
+   "pagina": 20,
+   "linea": 577,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.050929,
+   "pagina": 20,
+   "linea": 578,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Proventi da cessione diritti televisivi",
+   "lado": "ingreso",
+   "M": 3.05542,
+   "pagina": 20,
+   "linea": 579,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
+   "lado": "ingreso",
+   "M": 0.049782,
+   "pagina": 20,
+   "linea": 580,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "i) Altri proventi gest. giocatori",
+   "lado": "ingreso",
+   "M": 1.820531,
+   "pagina": 20,
+   "linea": 581,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "l) Ricavi e proventi diversi",
+   "lado": "ingreso",
+   "M": 21.326285,
+   "pagina": 20,
+   "linea": 582,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "6) Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 1.667571,
+   "pagina": 20,
+   "linea": 586,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "7) Per servizi",
+   "lado": "gasto",
+   "M": 14.197493,
+   "pagina": 20,
+   "linea": 587,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "8) Per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 0.925826,
+   "pagina": 20,
+   "linea": 588,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Salari e stipendi",
+   "lado": "gasto",
+   "M": 49.969951,
+   "pagina": 20,
+   "linea": 590,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Oneri sociali",
+   "lado": "gasto",
+   "M": 4.11794,
+   "pagina": 20,
+   "linea": 591,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.788346,
+   "pagina": 20,
+   "linea": 592,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Ammortamento delle immobilizzazioni immateriali imm.",
+   "lado": "gasto",
+   "M": 2.388974,
+   "pagina": 20,
+   "linea": 596,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Ammortamento delle immobilizzazioni materiali mat.",
+   "lado": "gasto",
+   "M": 0.873275,
+   "pagina": 20,
+   "linea": 597,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0.780217,
+   "pagina": 20,
+   "linea": 598,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Svalutazione crediti",
+   "lado": "gasto",
+   "M": 0.098301,
+   "pagina": 20,
+   "linea": 599,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 39.51541,
+   "pagina": 20,
+   "linea": 600,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "gasto",
+   "M": -0.310789,
+   "pagina": 20,
+   "linea": 602,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "13) Altri accantonamenti",
+   "lado": "gasto",
+   "M": 0.977598,
+   "pagina": 20,
+   "linea": 604,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "14) Oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 14.500608,
+   "pagina": 20,
+   "linea": 605,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "- Altri",
+   "M": 0.001204,
+   "linea": 622
+  },
+  {
+   "etiqueta": "Altri",
+   "M": -0.097287,
+   "linea": 629
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte",
+   "M": 0,
+   "linea": 632
+  }
+ ]
+}

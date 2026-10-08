@@ -1,0 +1,852 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
+ "mdSha1": "5fbef41fee99b927f83a5410242aa02d93af0c99",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T00:00:47.758Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    18,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    80,
+    87
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    282
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    304,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    344,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    366,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    387,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    402,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    420,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    718,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    787,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    850,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    915,
+    981
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1147,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 33,
+   "lineas": [
+    1307,
+    1313
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 33,
+   "lineas": [
+    1319,
+    1328
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 34,
+   "lineas": [
+    1352,
+    1359
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 34,
+   "lineas": [
+    1365,
+    1372
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 35,
+   "lineas": [
+    1401,
+    1410
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 35,
+   "lineas": [
+    1414,
+    1418
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 35,
+   "lineas": [
+    1422,
+    1427
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 35,
+   "lineas": [
+    1437,
+    1446
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 36,
+   "lineas": [
+    1458,
+    1467
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 36,
+   "lineas": [
+    1471,
+    1496
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 37,
+   "lineas": [
+    1520,
+    1526
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 37,
+   "lineas": [
+    1532,
+    1542
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 38,
+   "lineas": [
+    1565,
+    1575
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 38,
+   "lineas": [
+    1584,
+    1591
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 45,
+   "lineas": [
+    1869,
+    1882
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 47,
+   "lineas": [
+    1949,
+    1954
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 47,
+   "lineas": [
+    1964,
+    1970
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 47,
+   "lineas": [
+    1978,
+    1985
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 47,
+   "lineas": [
+    1989,
+    1996
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 48,
+   "lineas": [
+    2008,
+    2027
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 48,
+   "lineas": [
+    2033,
+    2040
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 48,
+   "lineas": [
+    2055,
+    2060
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 49,
+   "lineas": [
+    2074,
+    2081
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 49,
+   "lineas": [
+    2091,
+    2101
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 50,
+   "lineas": [
+    2120,
+    2131
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 50,
+   "lineas": [
+    2140,
+    2149
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 50,
+   "lineas": [
+    2155,
+    2160
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 50,
+   "lineas": [
+    2164,
+    2168
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 51,
+   "lineas": [
+    2182,
+    2191
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 51,
+   "lineas": [
+    2207,
+    2213
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 52,
+   "lineas": [
+    2227,
+    2233
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 52,
+   "lineas": [
+    2237,
+    2242
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 52,
+   "lineas": [
+    2246,
+    2258
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 52,
+   "lineas": [
+    2264,
+    2272
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 52,
+   "lineas": [
+    2282,
+    2288
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 53,
+   "lineas": [
+    2305,
+    2314
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 53,
+   "lineas": [
+    2320,
+    2325
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 53,
+   "lineas": [
+    2331,
+    2339
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 54,
+   "lineas": [
+    2378,
+    2385
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 55,
+   "lineas": [
+    2395,
+    2402
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 58,
+   "lineas": [
+    2490,
+    2551
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 59,
+   "lineas": [
+    2561,
+    2613
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 60,
+   "lineas": [
+    2626,
+    2681
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 61,
+   "lineas": [
+    2692,
+    2759
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 65,
+   "lineas": [
+    2897,
+    2904
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 69,
+   "lineas": [
+    3068,
+    3073
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 69,
+   "lineas": [
+    3077,
+    3086
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 70,
+   "lineas": [
+    3108,
+    3115
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 70,
+   "lineas": [
+    3121,
+    3128
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 71,
+   "lineas": [
+    3161,
+    3170
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 71,
+   "lineas": [
+    3174,
+    3178
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 72,
+   "lineas": [
+    3201,
+    3210
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 72,
+   "lineas": [
+    3214,
+    3223
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 72,
+   "lineas": [
+    3227,
+    3252
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 73,
+   "lineas": [
+    3276,
+    3282
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 73,
+   "lineas": [
+    3288,
+    3298
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 74,
+   "lineas": [
+    3325,
+    3334
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 75,
+   "lineas": [
+    3348,
+    3355
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 82,
+   "lineas": [
+    3635,
+    3648
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 83,
+   "lineas": [
+    3702,
+    3707
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 83,
+   "lineas": [
+    3717,
+    3723
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 84,
+   "lineas": [
+    3739,
+    3746
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 84,
+   "lineas": [
+    3750,
+    3757
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 84,
+   "lineas": [
+    3761,
+    3780
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 84,
+   "lineas": [
+    3786,
+    3792
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 85,
+   "lineas": [
+    3815,
+    3819
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 85,
+   "lineas": [
+    3825,
+    3832
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 85,
+   "lineas": [
+    3838,
+    3848
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 86,
+   "lineas": [
+    3865,
+    3876
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 86,
+   "lineas": [
+    3885,
+    3894
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 86,
+   "lineas": [
+    3900,
+    3904
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 86,
+   "lineas": [
+    3910,
+    3919
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 87,
+   "lineas": [
+    3943,
+    3949
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 87,
+   "lineas": [
+    3955,
+    3961
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 87,
+   "lineas": [
+    3965,
+    3970
+   ],
+   "tipo": "tabla"
+  },
+  "b90": {
+   "pagina": 88,
+   "lineas": [
+    3982,
+    3994
+   ],
+   "tipo": "tabla"
+  },
+  "b91": {
+   "pagina": 88,
+   "lineas": [
+    4004,
+    4012
+   ],
+   "tipo": "tabla"
+  },
+  "b92": {
+   "pagina": 88,
+   "lineas": [
+    4018,
+    4024
+   ],
+   "tipo": "tabla"
+  },
+  "b93": {
+   "pagina": 89,
+   "lineas": [
+    4045,
+    4051
+   ],
+   "tipo": "tabla"
+  },
+  "b94": {
+   "pagina": 89,
+   "lineas": [
+    4059,
+    4065
+   ],
+   "tipo": "tabla"
+  },
+  "b95": {
+   "pagina": 89,
+   "lineas": [
+    4083,
+    4092
+   ],
+   "tipo": "tabla"
+  },
+  "b96": {
+   "pagina": 90,
+   "lineas": [
+    4102,
+    4111
+   ],
+   "tipo": "tabla"
+  },
+  "b97": {
+   "pagina": 91,
+   "lineas": [
+    4169,
+    4184
+   ],
+   "tipo": "tabla"
+  },
+  "b98": {
+   "pagina": 92,
+   "lineas": [
+    4194,
+    4216
+   ],
+   "tipo": "tabla"
+  },
+  "b99": {
+   "pagina": 94,
+   "lineas": [
+    4251,
+    4302
+   ],
+   "tipo": "tabla"
+  },
+  "b100": {
+   "pagina": 94,
+   "lineas": [
+    4304,
+    4319
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b12"
+ ],
+ "notas_ingresos": [
+  "b36",
+  "b37",
+  "b38"
+ ],
+ "notas_gastos": [
+  "b40",
+  "b41",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b48",
+  "b49",
+  "b50",
+  "b51",
+  "b52"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(valori in Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "01/07/2023 - 30/06/2024",
+ "columna_anterior": "01/07/2022 - 30/06/2023",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 'Beni e prodotti da commercializzare' (b42), que es un detalle de una fila ya abierta en b41?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Beni e prodotti da commercializzare",
+   "texto": "b42 reconcilia costo con variación de existencias; no agrega categorías nuevas.",
+   "bloques": [
+    "b42"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Consolidado: estado b12 (pág. 23) y notas 8.x b36-b52 (págs. 48-53). Individual de AS Roma S.p.A.: estado b57 (pág. 60) y notas b80-b94; no elegidos. b3-b5 son cuadros reclasificados de la relazione sulla gestione, en millones, no elegidos. b39/b83 son plusvalías por jugador, excluidos. Las notas se expresan en miles de euros, mientras que el estado está en euros."
+}

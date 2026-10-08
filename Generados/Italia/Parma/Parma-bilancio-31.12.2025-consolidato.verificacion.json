@@ -1,0 +1,218 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
+ "generado": "2026-10-07T23:49:20.032Z",
+ "estado": "cola",
+ "clubId": "parma-it",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "c823f0c",
+  "26ad1ac"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El encabezado de b30 dice 31.12.2023, probablemente un error tipográfico; solo afecta la comparación del año anterior.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale valore della produzione\"): ¿Se deja afuera de la carga el cuadro resumen b29 (L1147-L1149), que repite los renglones del estado?",
+  "duda de extraer que no afecta la carga: El encabezado dice 2023 pero el total 4.575.508 (L1159) coincide con el 2024 del estado (L523); parece error de rótulo.",
+  "duda de extraer que no afecta la carga: L1253-L1254 tienen los importes 2024 cruzados frente a L541-L542; solo afecta al año anterior.",
+  "duda de extraer que no afecta la carga: Diferencia de 189 que corresponde al renglón quiescenza (L536) incluido en la nota; solo año anterior."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 125.567248,
+  "gastos": 125.423922,
+  "financiero": 0.023393,
+  "impuesto": 1.547652,
+  "resultadoImpreso": -1.380934,
+  "resultadoParaCargar": -1.380934,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1) ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "M": 6.680033,
+   "pagina": 16,
+   "linea": 523,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 118.887215,
+   "pagina": 16,
+   "linea": 525,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 3.093108,
+   "pagina": 16,
+   "linea": 529,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "7) per servizi",
+   "lado": "gasto",
+   "M": 24.313603,
+   "pagina": 16,
+   "linea": 530,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "8) per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 1.560568,
+   "pagina": 16,
+   "linea": 531,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 54.745878,
+   "pagina": 16,
+   "linea": 533,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 5.400458,
+   "pagina": 16,
+   "linea": 534,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 1.012199,
+   "pagina": 16,
+   "linea": 535,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 23.264855,
+   "pagina": 16,
+   "linea": 539,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 1.189103,
+   "pagina": 16,
+   "linea": 540,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0.063893,
+   "pagina": 16,
+   "linea": 541,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": "gasto",
+   "M": 0.062345,
+   "pagina": 16,
+   "linea": 542,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "gasto",
+   "M": 0.153386,
+   "pagina": 16,
+   "linea": 544,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "13) altri accantonamenti",
+   "lado": "gasto",
+   "M": 3.077454,
+   "pagina": 16,
+   "linea": 545,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "14) oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 7.487072,
+   "pagina": 16,
+   "linea": 546,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "da imprese controllate",
+   "M": 0.033854,
+   "linea": 556
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.010461,
+   "linea": 560
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": -1.547652,
+   "linea": 581
+  },
+  {
+   "etiqueta": "proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale",
+   "M": null,
+   "linea": 583
+  }
+ ]
+}

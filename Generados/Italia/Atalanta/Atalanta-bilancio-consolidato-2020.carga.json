@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.pdf",
+ "generado": "2026-10-07T23:52:42.794Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados)",
+  "el documento cierra 2020-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-12-31",
+  "evidencia": {
+   "pagina": 7,
+   "texto": "|  ATTIVO | 31/12/2020 | 31/12/2019  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "calendario"
+ },
+ "clubId": "atalanta-it",
+ "year": 2020,
+ "cortadoEn": "filas"
+}

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf",
  "md": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md",
- "generado": "2026-10-07T22:16:49.591Z",
- "estado": "cola",
+ "generado": "2026-10-07T23:49:20.106Z",
+ "estado": "ok",
  "clubId": "como-it",
  "year": 2024,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "3bc5a07",
-  "58c4919"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,6 +56,7 @@
  ],
  "notas": [
   "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (8.695) (2026-10-07, la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero))",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Como-fascicolo-bilancio-2024.pdf",
   "duda de extraer confirmada por las sumas (columna, \"a) salari e stipendi\"): ¿Se cargan por separado las columnas 'Tesserati' y 'Altri' del cuadro del costo del personale (L1473-L1475) como desglose de cada renglón de personal?",
   "duda de extraer que no afecta la carga: Diferencia de 1 euro en L532 respecto de la suma, atribuible a redondeo."
  ],

@@ -1,0 +1,596 @@
+{
+ "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf",
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
+ "mdSha1": "b76bf4040a808da6cdbdc60dbb3f843f4c1f6fe9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T00:53:06.130Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    52,
+    64
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    68,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    77,
+    81
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    87,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    108,
+    112
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    124,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    142,
+    155
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    159,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 6,
+   "lineas": [
+    177,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    331,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    341,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    352,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    460,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    515,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    563,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    608,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    792,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 33,
+   "lineas": [
+    967,
+    972
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 33,
+   "lineas": [
+    991,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 34,
+   "lineas": [
+    1006,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 34,
+   "lineas": [
+    1018,
+    1030
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 34,
+   "lineas": [
+    1036,
+    1045
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 35,
+   "lineas": [
+    1059,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 36,
+   "lineas": [
+    1089,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 36,
+   "lineas": [
+    1102,
+    1104
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 36,
+   "lineas": [
+    1114,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 37,
+   "lineas": [
+    1146,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 37,
+   "lineas": [
+    1160,
+    1164
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 38,
+   "lineas": [
+    1168,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 38,
+   "lineas": [
+    1208,
+    1211
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 39,
+   "lineas": [
+    1215,
+    1221
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 39,
+   "lineas": [
+    1237,
+    1246
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 40,
+   "lineas": [
+    1250,
+    1256
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 40,
+   "lineas": [
+    1262,
+    1270
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 41,
+   "lineas": [
+    1274,
+    1279
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 41,
+   "lineas": [
+    1301,
+    1307
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 42,
+   "lineas": [
+    1323,
+    1332
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 43,
+   "lineas": [
+    1354,
+    1358
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 43,
+   "lineas": [
+    1376,
+    1378
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 44,
+   "lineas": [
+    1382,
+    1391
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 44,
+   "lineas": [
+    1411,
+    1416
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 45,
+   "lineas": [
+    1420,
+    1448
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 45,
+   "lineas": [
+    1462,
+    1466
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 46,
+   "lineas": [
+    1470,
+    1471
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 47,
+   "lineas": [
+    1527,
+    1533
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 48,
+   "lineas": [
+    1545,
+    1556
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 48,
+   "lineas": [
+    1568,
+    1576
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 49,
+   "lineas": [
+    1584,
+    1593
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 49,
+   "lineas": [
+    1611,
+    1617
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 50,
+   "lineas": [
+    1621,
+    1625
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 51,
+   "lineas": [
+    1663,
+    1670
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 51,
+   "lineas": [
+    1676,
+    1684
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 52,
+   "lineas": [
+    1694,
+    1702
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 52,
+   "lineas": [
+    1728,
+    1734
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 53,
+   "lineas": [
+    1738,
+    1748
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 53,
+   "lineas": [
+    1754,
+    1764
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 53,
+   "lineas": [
+    1770,
+    1776
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 54,
+   "lineas": [
+    1796,
+    1803
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 55,
+   "lineas": [
+    1825,
+    1849
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 56,
+   "lineas": [
+    1853,
+    1855
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 56,
+   "lineas": [
+    1879,
+    1882
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 57,
+   "lineas": [
+    1886,
+    1896
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 58,
+   "lineas": [
+    1916,
+    1918
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 63,
+   "lineas": [
+    2065,
+    2088
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 64,
+   "lineas": [
+    2108,
+    2174
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 65,
+   "lineas": [
+    2180,
+    2191
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 66,
+   "lineas": [
+    2197,
+    2205
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b15"
+ ],
+ "notas_ingresos": [
+  "b45",
+  "b46"
+ ],
+ "notas_gastos": [
+  "b49",
+  "b50",
+  "b51",
+  "b52",
+  "b54",
+  "b55",
+  "b58"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "El conto economico (b15) imprime importes completos en euros (ej. Totale valore della produzione 102.103.174), sin indicación de miles; las notas están en Euro/000.",
+ "moneda": "EUR",
+ "columna_ejercicio": "31 dicembre 2024",
+ "columna_anterior": "31 dicembre 2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de plusvalenze por jugador (b47) y de cessioni temporanee por jugador (b48)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "b) plusvalenze",
+   "texto": "Son detalles por jugador que no abren categorías del renglón.",
+   "bloques": [
+    "b47",
+    "b48"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el conto economico riclassificato de la relazione sulla gestione (b7-b8) por duplicar el estado b15?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Es una reclasificación en Euro/000 del mismo estado; el oficial es b15.",
+   "bloques": [
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Bilancio d'esercizio individual de US Sassuolo Calcio (no hay consolidado). Estado oficial b15 en euros; notas en miles de euros (Euro/000): ricavi da gare (b45), altri ricavi e proventi (b46), servizi (b49-b50), personale (b51-b52), oneri diversi (b54-b55), oneri finanziari (b58)."
+}

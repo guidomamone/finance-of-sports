@@ -1,957 +1,160 @@
 {
- "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
- "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf",
- "club": "parma",
- "year": 2018,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:05:04.093Z",
- "tieOuts": {
-  "cierran": 123,
-  "noCierran": 55
- },
- "warnings": [
-  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
-  "15 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
-  "40 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 103,
-  "notasUsadas": [
-   "34",
-   "37",
-   "38",
-   "42",
-   "2"
+  "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
+  "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf",
+  "club": "parma-it",
+  "year": 2018,
+  "generatedAt": "2026-10-07T23:49:19.919Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "1) ricavi delle vendite e delle prestazioni",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.124235
+      ],
+      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
+    },
+    {
+      "label": "4) incrementi di immobilizzazioni per lavori interni",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.506479
+      ],
+      "glosa": "4) Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "altri",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.827
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.866222
+      ],
+      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "7) per servizi",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.801815
+      ],
+      "glosa": "7) Por servicios"
+    },
+    {
+      "label": "8) per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.038377
+      ],
+      "glosa": "8) Por uso de bienes de terceros"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.063704
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.691348
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.338382
+      ],
+      "glosa": "c) Indemnización por cese de relación laboral"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.0012
+      ],
+      "glosa": "e) Otros gastos"
+    },
+    {
+      "label": "a) ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.822445
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.056789
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.07046
+      ],
+      "glosa": "d) Deterioro de créditos comprendidos en el activo corriente y de tesorería"
+    },
+    {
+      "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.039356
+      ],
+      "glosa": "11) Variación de existencias de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "14) oneri diversi di gestione",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.032876
+      ],
+      "glosa": "14) Otros gastos de gestión"
+    }
   ]
- },
- "ladoConocido": 68,
- "rubros": [
-  {
-   "label": "-Gare Ufficiali Campionato",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    784.099
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "1) ricavi delle vendite e delle prestazioni",
-   "lado": "revenue",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    2124.235
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "-Gare Ufficiali Coppa Italia",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    26.224
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "-Gare Amichevoli e tornei",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    57.235
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "Abbonamenti",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    1055.326
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "Biglietti museo",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    2.865
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "Ricavi merchandising",
-   "lado": "revenue",
-   "page": 32,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
-   "values": [
-    198.487
-   ],
-   "origen": "nota 34 (ancla 8)",
-   "ancla": "1) ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "4) incrementi di immobilizzazioni per lavori interni",
-   "lado": "revenue",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    506.479
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Proventi da sponsorizzazioni",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    1308.72
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "5) altri ricavi e proventi altri",
-   "lado": "revenue",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    8827
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Proventi pubblicitari",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    2617.276
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "Proventi commerciali e royalties",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    73.848
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "Proventi da cessione diritti televisivi",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    1499.215
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "Altri proventi gestione calciatori",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    15
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "Altri ricavi e proventi",
-   "lado": "revenue",
-   "page": 33,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    3312.941
-   ],
-   "origen": "nota 37 (ancla 8)",
-   "ancla": "5) altri ricavi e proventi altri"
-  },
-  {
-   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    866.222
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Costi per tesserati",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    572.161
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "7) per servizi",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    4801.815
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Costi per attività sportiva",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    231.676
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Costi specifici tecnici",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    67.869
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Costi vitto, alloggio, locomozione gare",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    542.82
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Servizio biglietteria, controllo ingressi",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    93.318
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Assicurative e previdenziali",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    50.446
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Amministrative, pubblicitarie e generali",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    105.061
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "Altri",
-   "lado": "expense",
-   "page": 34,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
-   "values": [
-    3138.464
-   ],
-   "origen": "nota 38 (ancla 8)",
-   "ancla": "7) per servizi"
-  },
-  {
-   "label": "8) per godimento di beni di terzi",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    1038.377
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "a) salari e stipendi",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    17063.704
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "b) oneri sociali",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    1691.348
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "c) trattamento di fine rapporto",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    338.382
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "e) altri costi",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    1.2
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "a) ammortamento delle immobilizzazioni immateriali",
-   "lado": null,
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    1822.445
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "b) ammortamento delle immobilizzazioni materiali",
-   "lado": null,
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    56.789
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
-   "lado": null,
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    70.46
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    -39.356
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Spese varie per organizzazioni gare",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    551.736
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "14) oneri diversi di gestione",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    6032.876
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Tasse iscrizione gare",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    22.441
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "Costi acquisizione temporanea prestazione calciatori",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    1305.5
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "Minusvalenze Cessione Calciatori",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    54.167
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "Altri oneri gestione Calciatori",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    1397.781
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "Altri oneri gestione",
-   "lado": "expense",
-   "page": 36,
-   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
-   "values": [
-    2701.251
-   ],
-   "origen": "nota 42 (ancla 8)",
-   "ancla": "14) oneri diversi di gestione"
-  },
-  {
-   "label": "RISULTATO DELLA GESTIONE OPERATIVA (EBIT)",
-   "lado": "revenue",
-   "page": 5,
-   "section": "",
-   "values": [
-    -22286.548
-   ],
-   "origen": "nota 2 (ancla 8)",
-   "ancla": "Differenza tra valore e costi della produzione (A - B)"
-  },
-  {
-   "label": "Differenza tra valore e costi della produzione (A - B)",
-   "lado": "revenue",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    -22286.548
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Ricavi della gestione finanziaria",
-   "lado": "revenue",
-   "page": 5,
-   "section": "",
-   "values": [
-    0.227
-   ],
-   "origen": "nota 2 (ancla 8)",
-   "ancla": "Differenza tra valore e costi della produzione (A - B)"
-  },
-  {
-   "label": "Costi della gestione finanziaria",
-   "lado": "revenue",
-   "page": 5,
-   "section": "",
-   "values": [
-    10.8
-   ],
-   "origen": "nota 2 (ancla 8)",
-   "ancla": "Differenza tra valore e costi della produzione (A - B)"
-  },
-  {
-   "label": "a) da crediti iscritti nelle immobilizzazioni da imprese controllate",
-   "lado": "revenue",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    0.227
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "17) interessi e altri oneri finanziari verso imprese controllanti",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    4.255
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "altri",
-   "lado": "expense",
-   "page": 13,
-   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
-   "values": [
-    6.545
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Retribuzione Calciatori",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    7.412702
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzione Allenatori e Tecnici",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    2.271753
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzione Impiegati",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.385668
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzioni Biglietteria",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.041954
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzione altro personale",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.306541
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzione operai",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.085339
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzioni Tirocinanti",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.01561
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Retribuzione Settore Giovanile",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.300528
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Incentivi all'esodo",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    0.769874
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Premi",
-   "lado": null,
-   "page": 35,
-   "section": "Mentre la voce salari e stipendi risulta così ripartita.",
-   "values": [
-    5.473734
-   ],
-   "origen": "estado 40"
-  },
-  {
-   "label": "Costi della produzione (costi non finanziari)",
-   "lado": "expense",
-   "page": 46,
-   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
-   "values": [
-    -33.744262
-   ],
-   "origen": "estado 51"
-  },
-  {
-   "label": "Differenza",
-   "lado": null,
-   "page": 46,
-   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
-   "values": [
-    -22.286548
-   ],
-   "origen": "estado 51"
-  },
-  {
-   "label": "Proventi e oneri finanziari",
-   "lado": null,
-   "page": 46,
-   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
-   "values": [
-    -0.010573
-   ],
-   "origen": "estado 51"
-  },
-  {
-   "label": "Salari e Stipendi",
-   "lado": null,
-   "page": 35,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    17.063704
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Oneri Sociali",
-   "lado": "expense",
-   "page": 35,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    1.691348
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "TFR",
-   "lado": null,
-   "page": 35,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    0.338382
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Altri",
-   "lado": null,
-   "page": 35,
-   "section": "PARMA CALCIO 1913 S.R.L.",
-   "values": [
-    0.0012
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Amm. Imm. Immateriali",
-   "lado": null,
-   "page": 35,
-   "section": "### *Ammortamenti e svalutazioni*",
-   "values": [
-    1.822445
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Amm. Imm. Materiali",
-   "lado": null,
-   "page": 35,
-   "section": "### *Ammortamenti e svalutazioni*",
-   "values": [
-    0.056789
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Svalutazione Crediti",
-   "lado": null,
-   "page": 35,
-   "section": "### *Ammortamenti e svalutazioni*",
-   "values": [
-    0.07046
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Baraye Yves Bertand",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    95
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Barillà Antonino",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    40
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Calaio' Emanuele",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    210
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Evacuo Felice",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    130
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Frediani Marco",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    8
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Iacoponi Simone",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    70
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Nocciolini Manuel",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    7
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Pinto Giovanni",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    10
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Scaglia Luigi Albero",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    400
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Scavone Manuel",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    150
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Scozzarella Matteo",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    280
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Giocatori settore Giovanile",
-   "lado": "expense",
-   "page": 50,
-   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
-   "values": [
-    9
-   ],
-   "origen": "estado 52"
-  },
-  {
-   "label": "Costo",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    308.46
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Ammortamenti (Fondo ammortamento)",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    123.384
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Valore di bilancio",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    185.076
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Ammortamento dell'esercizio",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    61.692
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Ammortamenti (Fondo ammortamento)",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    185.076
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Valore di bilancio",
-   "lado": "expense",
-   "page": 23,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
-   "values": [
-    123.384
-   ],
-   "origen": "estado 12"
-  },
-  {
-   "label": "Valore di inizio esercizio",
-   "lado": "expense",
-   "page": 29,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
-   "values": [
-    48.32
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Altre variazioni",
-   "lado": "expense",
-   "page": 29,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
-   "values": [
-    -13.797
-   ],
-   "origen": "estado 26"
-  },
-  {
-   "label": "Valore di fine esercizio",
-   "lado": "expense",
-   "page": 29,
-   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
-   "values": [
-    34.523
-   ],
-   "origen": "estado 26"
-  }
- ]
 }

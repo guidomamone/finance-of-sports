@@ -1,1193 +1,360 @@
 {
- "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
- "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
- "club": "sassuolo",
- "year": 2021,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:05:35.270Z",
- "tieOuts": {
-  "cierran": 84,
-  "noCierran": 28
- },
- "warnings": [
-  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
-  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
-  "22 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-  "34 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 116,
-  "notasUsadas": [
-   "38",
-   "42",
-   "48"
+  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
+  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
+  "club": "sassuolo-it",
+  "year": 2021,
+  "generatedAt": "2026-10-07T23:49:20.073Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare in casa",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.858
+      ],
+      "glosa": "Ingresos por partidos en casa"
+    },
+    {
+      "label": "Abbonamenti",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.078
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Ricavi store",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.211
+      ],
+      "glosa": "Ingresos de tienda"
+    },
+    {
+      "label": "a) Derivanti da attività accessorie",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        85.204185
+      ],
+      "glosa": "a) Procedentes de actividades accesorias"
+    },
+    {
+      "label": "b) plusvalenze",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        33.929745
+      ],
+      "glosa": "b) Plusvalías"
+    },
+    {
+      "label": "f) Contributi in conto esercizio",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        3.372223
+      ],
+      "glosa": "f) Subvenciones a la explotación"
+    },
+    {
+      "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.819233
+      ],
+      "glosa": "6) Consumo de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Costi per tesserati",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        3.114
+      ],
+      "glosa": "Gastos de personal federado"
+    },
+    {
+      "label": "Costi per attività sportiva",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        0.102
+      ],
+      "glosa": "Gastos por actividad deportiva"
+    },
+    {
+      "label": "Costi specifici tecnici",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        0.267
+      ],
+      "glosa": "Gastos técnicos específicos"
+    },
+    {
+      "label": "Compensi per Agenti e intermediari",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        6.171
+      ],
+      "glosa": "Honorarios de agentes e intermediarios"
+    },
+    {
+      "label": "Costi vitto, alloggio, locomozione gare",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        0.76
+      ],
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos de partidos"
+    },
+    {
+      "label": "Assicurative e previdenziali",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        0.605
+      ],
+      "glosa": "Seguros y previsión social"
+    },
+    {
+      "label": "Amministrative e generali",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        3.806
+      ],
+      "glosa": "Gastos administrativos y generales"
+    },
+    {
+      "label": "Altri",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"7) Per servizi\"",
+      "values": [
+        2.737
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "8) Per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        3.09099
+      ],
+      "glosa": "8) Por uso de bienes de terceros"
+    },
+    {
+      "label": "a) Salari e stipendi",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        66.099495
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Oneri sociali",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        3.376754
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) Trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.793318
+      ],
+      "glosa": "c) Indemnización por fin de contrato"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "e) Otros costes"
+    },
+    {
+      "label": "a) Ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        36.218392
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) Ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.693514
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "d) Svalutazioni crediti dell'attivo",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "d) Deterioro de créditos del activo"
+    },
+    {
+      "label": "11) Variazioni delle rimanenze",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.124627
+      ],
+      "glosa": "11) Variación de existencias"
+    },
+    {
+      "label": "Spese organizzazione gare",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        1.502
+      ],
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Tasse iscrizioni gare",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.021
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "Oneri contribuzione Lega",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        1.517
+      ],
+      "glosa": "Contribuciones a la Liga"
+    },
+    {
+      "label": "Costi per acquisizione temporanea prestazioni calciatori",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        2.318
+      ],
+      "glosa": "Costes por cesión temporal de derechos de futbolistas"
+    },
+    {
+      "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.985
+      ],
+      "glosa": "Minusvalías por cesión de derechos plurianuales de futbolistas"
+    },
+    {
+      "label": "Premi valorizzazione, di addestramento e Carriera",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        1.177
+      ],
+      "glosa": "Primas de formación, entrenamiento y carrera"
+    },
+    {
+      "label": "Contributo Solidarietà Fifa",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.206
+      ],
+      "glosa": "Contribución de solidaridad de la FIFA"
+    },
+    {
+      "label": "Sopravvenienze passive",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.069
+      ],
+      "glosa": "Gastos excepcionales"
+    },
+    {
+      "label": "Spese, ammende e multe gare",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.016
+      ],
+      "glosa": "Gastos, multas y sanciones de partidos"
+    },
+    {
+      "label": "Oneri tributari indiretti",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.015
+      ],
+      "glosa": "Tributos indirectos"
+    },
+    {
+      "label": "Altri",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"14) Oneri diversi di gestione\"",
+      "values": [
+        0.226
+      ],
+      "glosa": "Otros"
+    }
   ]
- },
- "ladoConocido": 107,
- "rubros": [
-  {
-   "label": "Ricavi da gare in casa",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "values": [
-    0.858
-   ],
-   "origen": "nota 38 (ancla 16)",
-   "ancla": "1) Ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "1) Ricavi delle vendite e delle prestazioni",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    1.146987
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Abbonamenti",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "values": [
-    0.078
-   ],
-   "origen": "nota 38 (ancla 16)",
-   "ancla": "1) Ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "Ricavi store",
-   "lado": "revenue",
-   "page": 42,
-   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # VALORE DELLA PRODUZIONE / # Ricavi delle vendite e delle prestazioni",
-   "values": [
-    0.211
-   ],
-   "origen": "nota 38 (ancla 16)",
-   "ancla": "1) Ricavi delle vendite e delle prestazioni"
-  },
-  {
-   "label": "a) Derivanti da attività accessorie",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    85.204185
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "b) plusvalenze",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    33.929745
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "f) Contributi in conto esercizio",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    3.372223
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    1.819233
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "Costi per tesserati",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    3.114
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "7) Per servizi",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    17.561778
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Costi per attività sportiva",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    0.102
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Costi specifici tecnici",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    0.267
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Compensi per Agenti e intermediari",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    6.171
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Costi vitto, alloggio, locomozione gare",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    0.76
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Assicurative e previdenziali",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    0.605
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Amministrative e generali",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    3.806
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "Altri",
-   "lado": "expense",
-   "page": 44,
-   "section": "# COSTI DELLA PRODUZIONE / # Costi per acquisto materiale di consumo e di merci / # Costi per prestazioni di servizi",
-   "values": [
-    2.737
-   ],
-   "origen": "nota 42 (ancla 16)",
-   "ancla": "7) Per servizi"
-  },
-  {
-   "label": "8) Per godimento di beni di terzi",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    3.09099
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "a) Salari e stipendi",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    66.099495
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "b) Oneri sociali",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    3.376754
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "c) Trattamento di fine rapporto",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    0.793318
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "a) Ammortamento delle immobilizzazioni immateriali",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    36.218392
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "b) Ammortamento delle immobilizzazioni materiali",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    0.693514
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "11) Variazioni delle rimanenze",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -0.124627
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "14) Oneri diversi di gestione",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    8.051727
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "Differenza tra valore e costi della produzione",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -13.927434
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "c) verso imprese controllanti",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -1.168688
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "d) verso altri",
-   "lado": null,
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -0.323457
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "a) Imposte correnti",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -2.01919
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "b) Imposte esercizi precedenti",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    -0.54331
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "b) Imposte anticipate e differite",
-   "lado": "expense",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    0.213875
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "d) Provento da Consolidato Fiscale",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# CONTO ECONOMICO",
-   "values": [
-    3.83821
-   ],
-   "origen": "estado 16"
-  },
-  {
-   "label": "Proventi da sponsorizzazioni",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    18.881
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "di cui Mapei S.p.A.",
-   "lado": null,
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    18
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Proventi pubblicitari",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    8.003
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "di cui Mapei S.p.A.",
-   "lado": null,
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    5
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Proventi da cessione diritti televisivi",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    47.393
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
-   "lado": null,
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    33.93
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Proventi da cessioni temporanee calciatori",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    0.403
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Proventi Lega non audiovisivi",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    3.372
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "Proventi diversi",
-   "lado": "revenue",
-   "page": 43,
-   "section": "(Euro/000)",
-   "values": [
-    10.524
-   ],
-   "origen": "estado 39"
-  },
-  {
-   "label": "A) Valore della produzione",
-   "lado": "revenue",
-   "page": 53,
-   "section": "",
-   "values": [
-    561.234902
-   ],
-   "origen": "estado 53"
-  },
-  {
-   "label": "B) Costi della produzione",
-   "lado": "expense",
-   "page": 53,
-   "section": "",
-   "values": [
-    -531.521853
-   ],
-   "origen": "estado 53"
-  },
-  {
-   "label": "C) Proventi e oneri finanziari",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "values": [
-    73.385787
-   ],
-   "origen": "estado 53"
-  },
-  {
-   "label": "D) Rettifiche di valore di attività finanziarie",
-   "lado": null,
-   "page": 53,
-   "section": "",
-   "values": [
-    -29.532951
-   ],
-   "origen": "estado 53"
-  },
-  {
-   "label": "Imposte sul reddito dell'esercizio",
-   "lado": "expense",
-   "page": 53,
-   "section": "",
-   "values": [
-    -9.385184
-   ],
-   "origen": "estado 53"
-  },
-  {
-   "label": "CONSIGLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02701
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PELUSO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02001
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "BERARDI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00108
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "ARTIOLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01206
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "CELIA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00403
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "FERRARI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01505
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PILATI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02603
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "SCAMACCA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00101
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "GRUMO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00802
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MARCHIZZA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02603
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "FRATTESI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02209
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "GOLDANIGA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00211
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MARTINI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01905
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "CISCO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.0081
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "BABACAR",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01703
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "TURATI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00509
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "SERNICOLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.03007
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "ODGAARD",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.03103
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "BRIGNOLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00807
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "LOCATELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00801
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PINATO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00901
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "CAMPANI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01908
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "BOGA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00301
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "BOURABIA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00708
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MARLON",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00709
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "STEAU",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02204
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PIERAGNOLO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00301
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "ROGERIO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01301
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PINELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00301
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "SALA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00406
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MULDUR",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00304
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "CAPUTO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00608
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "TRAORE'",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01602
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MERONI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00901
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MIDOLO",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00904
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "CHIRICHES",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01411
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "KYRIAKOPOULOS",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00502
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "AYHAN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01011
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "DEFREL",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01706
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "ROMAGNA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02605
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "TOLJAN",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00808
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MANARELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00102
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "RIPAMONTI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01601
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "SCHIAPPACASSE",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01201
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MIRANDA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01003
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "PAZ",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01306
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "LOPEZ",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.00412
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "MANDRELLI",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.03004
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "ERLIC",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.02401
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "FORESTA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.03006
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "LAURICELLA",
-   "lado": "expense",
-   "page": 54,
-   "section": "Allegato 1 / Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2021 / U.S. Sassuolo Calcio S.r.l.",
-   "values": [
-    0.01101
-   ],
-   "origen": "estado 54"
-  },
-  {
-   "label": "Retribuzioni",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "values": [
-    55.396
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Premi variabili",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "values": [
-    7.123
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Contributi",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "values": [
-    2.624
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Accantonamenti F.F.C.",
-   "lado": "expense",
-   "page": 46,
-   "section": "Relativamente al personale tesserato il costo è così suddiviso: / (Euro/000)",
-   "values": [
-    0.323
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Spese organizzazione gare",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "values": [
-    1.502
-   ],
-   "origen": "estado 46"
-  },
-  {
-   "label": "Tasse iscrizioni gare",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "values": [
-    0.021
-   ],
-   "origen": "estado 46"
-  },
-  {
-   "label": "Oneri contribuzione Lega",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "values": [
-    1.517
-   ],
-   "origen": "estado 46"
-  },
-  {
-   "label": "Reda A.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.018
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Costi per acquisizione temporanea prestazioni calciatori",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "values": [
-    2.318
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Mandrelli N.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.024
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Quirino R.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.006
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Samele L.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.01
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Anastasini J.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.005
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Sasanelli L.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.005
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Henrique M",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    2
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Harroui A.",
-   "lado": "expense",
-   "page": 48,
-   "section": "(Euro/000)",
-   "values": [
-    0.25
-   ],
-   "origen": "nota 48 (ancla 46)",
-   "ancla": "Costi per acquisizione temporanea prestazioni calciatori"
-  },
-  {
-   "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
-   "lado": "expense",
-   "page": 47,
-   "section": "# AMMORTAMENTI E SVALUTAZIONI / # ONERI DIVERSI DI GESTIONE",
-   "values": [
-    0.985
-   ],
-   "origen": "estado 46"
-  }
- ]
 }

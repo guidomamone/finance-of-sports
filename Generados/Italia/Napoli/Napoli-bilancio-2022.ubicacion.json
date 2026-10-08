@@ -1,0 +1,788 @@
+{
+ "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf",
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2022.md",
+ "mdSha1": "cbdccefd86e1a33fd4b4a9f16192602dbfc31eba",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T00:35:37.810Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    32,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    39,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    73,
+    77
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    89,
+    91
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    97,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    158,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    172,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 5,
+   "lineas": [
+    179,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    184,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 5,
+   "lineas": [
+    208,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 5,
+   "lineas": [
+    213,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    224,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 7,
+   "lineas": [
+    283,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 7,
+   "lineas": [
+    300,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 7,
+   "lineas": [
+    309,
+    310
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 8,
+   "lineas": [
+    322,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 9,
+   "lineas": [
+    374,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    888,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    988,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1017,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1033,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    1058,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1075,
+    1078
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    1091,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1112,
+    1117
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1121,
+    1124
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1138,
+    1145
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1149,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1172,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 31,
+   "lineas": [
+    1185,
+    1188
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 32,
+   "lineas": [
+    1202,
+    1215
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 32,
+   "lineas": [
+    1219,
+    1232
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 33,
+   "lineas": [
+    1250,
+    1258
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 33,
+   "lineas": [
+    1273,
+    1278
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 34,
+   "lineas": [
+    1295,
+    1298
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 34,
+   "lineas": [
+    1302,
+    1308
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 36,
+   "lineas": [
+    1387,
+    1398
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 36,
+   "lineas": [
+    1400,
+    1412
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 37,
+   "lineas": [
+    1436,
+    1446
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 38,
+   "lineas": [
+    1462,
+    1467
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 38,
+   "lineas": [
+    1476,
+    1479
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 38,
+   "lineas": [
+    1485,
+    1491
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 38,
+   "lineas": [
+    1493,
+    1499
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 39,
+   "lineas": [
+    1516,
+    1521
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 39,
+   "lineas": [
+    1529,
+    1533
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 39,
+   "lineas": [
+    1537,
+    1541
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 40,
+   "lineas": [
+    1555,
+    1561
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 40,
+   "lineas": [
+    1567,
+    1571
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 40,
+   "lineas": [
+    1575,
+    1588
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 42,
+   "lineas": [
+    1618,
+    1626
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 43,
+   "lineas": [
+    1644,
+    1658
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 43,
+   "lineas": [
+    1662,
+    1672
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 44,
+   "lineas": [
+    1696,
+    1699
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 44,
+   "lineas": [
+    1709,
+    1713
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 46,
+   "lineas": [
+    1764,
+    1774
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 46,
+   "lineas": [
+    1783,
+    1790
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 47,
+   "lineas": [
+    1802,
+    1811
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 47,
+   "lineas": [
+    1815,
+    1824
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 47,
+   "lineas": [
+    1830,
+    1833
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 48,
+   "lineas": [
+    1845,
+    1850
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 48,
+   "lineas": [
+    1856,
+    1862
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 49,
+   "lineas": [
+    1876,
+    1880
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 49,
+   "lineas": [
+    1886,
+    1892
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 50,
+   "lineas": [
+    1904,
+    1916
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 50,
+   "lineas": [
+    1918,
+    1928
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 51,
+   "lineas": [
+    1948,
+    1956
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 51,
+   "lineas": [
+    1976,
+    1984
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 52,
+   "lineas": [
+    2003,
+    2014
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 53,
+   "lineas": [
+    2042,
+    2047
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 53,
+   "lineas": [
+    2056,
+    2064
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 54,
+   "lineas": [
+    2078,
+    2085
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 54,
+   "lineas": [
+    2091,
+    2098
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 55,
+   "lineas": [
+    2115,
+    2120
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 55,
+   "lineas": [
+    2122,
+    2130
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 55,
+   "lineas": [
+    2132,
+    2135
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 55,
+   "lineas": [
+    2137,
+    2141
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 56,
+   "lineas": [
+    2158,
+    2168
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 56,
+   "lineas": [
+    2177,
+    2188
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 57,
+   "lineas": [
+    2202,
+    2208
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 57,
+   "lineas": [
+    2210,
+    2217
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 57,
+   "lineas": [
+    2226,
+    2240
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 58,
+   "lineas": [
+    2252,
+    2260
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 58,
+   "lineas": [
+    2268,
+    2287
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 63,
+   "lineas": [
+    2399,
+    2424
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 64,
+   "lineas": [
+    2436,
+    2453
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 66,
+   "lineas": [
+    2481,
+    2506
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 66,
+   "lineas": [
+    2512,
+    2520
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 67,
+   "lineas": [
+    2534,
+    2549
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 67,
+   "lineas": [
+    2557,
+    2567
+   ],
+   "tipo": "tabla"
+  },
+  "b90": {
+   "pagina": 68,
+   "lineas": [
+    2581,
+    2592
+   ],
+   "tipo": "tabla"
+  },
+  "b91": {
+   "pagina": 68,
+   "lineas": [
+    2598,
+    2606
+   ],
+   "tipo": "tabla"
+  },
+  "b92": {
+   "pagina": 68,
+   "lineas": [
+    2608,
+    2617
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "notas_ingresos": [
+  "b55",
+  "b56",
+  "b57",
+  "b58",
+  "b59",
+  "b60",
+  "b61",
+  "b62",
+  "b63",
+  "b65"
+ ],
+ "notas_gastos": [
+  "b67",
+  "b68",
+  "b69",
+  "b70",
+  "b71",
+  "b73",
+  "b74",
+  "b75",
+  "b76",
+  "b77",
+  "b78",
+  "b81",
+  "b82",
+  "b83"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 30 giugno 2022 / redatto in unità Euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "al 30.06.2022",
+ "columna_anterior": "al 30.06.2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Bilancio d'esercizio individual de SSC Napoli S.p.A. (no hay consolidado). Conto economico en b12 (A y B), b13 (C, proventi e oneri finanziari) y b14 (imposte y resultado). Se excluyen los cuadros por jugador (b20, b21, b64, b66, b79, b80), los de partes relacionadas (b91), los de plantilla (b72) y los patrimoniales."
+}

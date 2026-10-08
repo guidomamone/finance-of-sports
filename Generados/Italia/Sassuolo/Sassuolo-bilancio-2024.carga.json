@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf",
+ "generado": "2026-10-08T01:23:47.796Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:cierre",
+   "motivo": "No se pudo determinar la fecha de cierre del ejercicio."
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "sassuolo-it",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+ "generado": "2026-10-08T01:23:48.511Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 5 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-07: individual; hay bilancio individuale en todos los años (2020 cargado así); los consolidados 2021 y 2023 van a documentos-descartados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "hellasverona-it",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

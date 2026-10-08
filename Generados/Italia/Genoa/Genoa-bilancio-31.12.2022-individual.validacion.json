@@ -1,0 +1,21 @@
+{
+ "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md",
+ "mdSha1": "d5ac58776ff94f033910c94122fc6cc029545d7d",
+ "modo": "digital",
+ "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 53835025 vs 53835024, 33023526 vs 33023525, 2429 vs 2426; 92 números del .md no están en el PDF (tolerancia 40)",
+ "generado": "2026-10-08T01:10:51.027Z",
+ "fuentes": {
+  "8": "pdftotext",
+  "9": "pdftotext",
+  "78": "pdftotext",
+  "79": "pdftotext",
+  "82": "pdftotext",
+  "84": "pdftotext",
+  "86": "pdftotext",
+  "89": "pdftotext",
+  "90": "pdftotext"
+ },
+ "confirmados": 302,
+ "noConfirmados": []
+}

@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.md",
+ "mdSha1": "99d8de8faa0272d6eb317a23302a4425a7d21050",
+ "modo": "digital",
+ "motivoModo": "68 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 1696875 vs 5696275, 28079 vs 28779, 524792 vs 584792; 461 números del .md no están en el PDF (tolerancia 90)",
+ "generado": "2026-10-07T23:59:33.466Z",
+ "fuentes": {
+  "26": "gemini",
+  "57": "pdftotext",
+  "58": "pdftotext",
+  "59": "pdftotext",
+  "60": "pdftotext",
+  "61": "pdftotext",
+  "62": "pdftotext"
+ },
+ "hibridas": [
+  26
+ ],
+ "confirmados": 335,
+ "noConfirmados": []
+}
