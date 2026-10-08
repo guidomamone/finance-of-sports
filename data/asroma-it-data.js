@@ -113,6 +113,21 @@ const asromaitRevenueLinesByYear = {
     { rawLabel:'g) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:5.563399, disclosureLevel:'aggregated' }, // pág. 26, precedente
     { rawLabel:'h) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:13.527844, disclosureLevel:'aggregated' }, // pág. 26, precedente
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:39.174069, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:16.290643, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'2) variazioni delle rimanenze di prodotti finiti', normalizedCategory:'other_income', amountNative:1.834252, disclosureLevel:'aggregated' }, // pág. 23, Jev 0.99
+    { rawLabel:'a) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:18.399384, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'b) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:24.743181, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'c) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:26.864751, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'d) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:104.146581, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'e) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:1.565535, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'f) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:25.046418, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'g) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:21.038216, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'h) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:22.613434, disclosureLevel:'aggregated' }, // pág. 23, precedente
+  ],
 };
 const asromaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -257,6 +272,37 @@ const asromaitExpenseLinesByYear = {
     { rawLabel:'Sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.825, disclosureLevel:'aggregated' }, // pág. 62, precedente
     { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-2.783, disclosureLevel:'aggregated' }, // pág. 62, precedente
   ],
+  2024: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Indumenti sportivi e divise ufficiale', normalizedCategory:'admin_general_expense', amountNative:-3.367, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Materiali di consumo', normalizedCategory:'admin_general_expense', amountNative:-0.987, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Beni e prodotti da commercializzare', normalizedCategory:'other_expenses', amountNative:-12.549, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-1.799, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-6.734, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-8.54, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Costi di vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-3.743, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Spese assicurative', normalizedCategory:'admin_general_expense', amountNative:-8.216, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Spese amministrative e generali', normalizedCategory:'admin_general_expense', amountNative:-24.163, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Spese di pubblicità e promozione', normalizedCategory:'admin_general_expense', amountNative:-5.045, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Centro sportivo di Trigoria', normalizedCategory:'match_organisation_expense', amountNative:-2.7, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Stadio Olimpico', normalizedCategory:'match_organisation_expense', amountNative:-4.166, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Altre sedi', normalizedCategory:'admin_general_expense', amountNative:-3.516, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Beni', normalizedCategory:'admin_general_expense', amountNative:-4.07, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-189.464635, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-10.603306, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.890082, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'d) trattamento di quiescenza e simili', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'aggregated' }, // pág. 23, Claude 0.8
+    { rawLabel:'e) altri costi', normalizedCategory:'other_expenses', amountNative:-1.168195, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'Ammortamento DPS Calciatori', normalizedCategory:'player_amortisation', amountNative:-38.079, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Ammortamento DPS Calciatrici', normalizedCategory:'player_amortisation', amountNative:-0.029, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Ammortamento altre immob. Immateriali', normalizedCategory:'other_amortisation', amountNative:-0.951, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'b) ammortamenti immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-4.546359, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'d) svalutazioni dei crediti dell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.287125, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-4.956295, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'b) costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-10.082075, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-1.135911, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-7.880849, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-6.572815, disclosureLevel:'aggregated' }, // pág. 23, Jev 1
+  ],
 };
 const asromaitFiscalYearMeta = {
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -355,6 +401,22 @@ const asromaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:277.056595, officialTotalExpenses:347.942501, officialPAT:-102.747288,
   },
+  2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'asroma-it-bilancio-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-11.060677, tax:-5.778058,
+    extraRows: [
+      {label:'16) altri proventi finanziari', value:6.045982},
+      {label:'17) interessi ed altri oneri finanziari', value:-17.104753},
+      {label:'17 bis) utile e perdite su cambi', value:-0.001906},
+      {label:'20) imposte sul reddito dell\'esercizio', value:-5.778058},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:301.716464, officialTotalExpenses:365.105736, officialPAT:-81.364367,
+  },
 };
 const asromaitPresupuestoOverlayByYear = {};
 
@@ -402,6 +464,12 @@ Object.assign(sources, {
     title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'asroma-it-bilancio-2024': {
+    id:'asroma-it-bilancio-2024', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
