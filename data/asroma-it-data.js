@@ -148,6 +148,18 @@ const asromaitRevenueLinesByYear = {
     { rawLabel:'Altri ricavi diversi', normalizedCategory:'other_income', amountNative:2.666, disclosureLevel:'aggregated' }, // pág. 131, Jev 1
     { rawLabel:'Ricavi da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:36.125, disclosureLevel:'aggregated' }, // pág. 74, precedente
   ],
+  // 2009: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2009.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2009: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:31.92, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Altri ricavi delle vendite e delle prestazioni', normalizedCategory:'other_income', amountNative:6.576, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'b) Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:10.988, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'c) Diritti televisivi e diritti d\'immagine', normalizedCategory:'broadcasting', amountNative:88.332, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'d) Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:11.05, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'e) Altri proventi', normalizedCategory:'other_income', amountNative:11.116, disclosureLevel:'aggregated' }, // pág. 182, Jev 1
+    { rawLabel:'f) Contributi in c/esercizio', normalizedCategory:'other_income', amountNative:0.947, disclosureLevel:'aggregated' }, // pág. 182, Jev 0.97
+    { rawLabel:'Gestione operativa netta calciatori', normalizedCategory:'player_sales', amountNative:16.383, disclosureLevel:'aggregated' }, // pág. 182, Claude 0.8
+  ],
 };
 const asromaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -361,6 +373,16 @@ const asromaitExpenseLinesByYear = {
     { rawLabel:'Svalutazioni dei crediti correnti', normalizedCategory:'other_expenses', amountNative:-6.23, disclosureLevel:'aggregated' }, // pág. 136, precedente
     { rawLabel:'Oneri da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-37.323, disclosureLevel:'aggregated' }, // pág. 74, precedente
   ],
+  2009: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Acquisti materie di consumo', normalizedCategory:'admin_general_expense', amountNative:-5.257, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_expenses', amountNative:0.473, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Spese per Servizi', normalizedCategory:'admin_general_expense', amountNative:-20.007, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Spese per godimento beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-6.825, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Spese per il personale', normalizedCategory:'wages_squad', amountNative:-99.213, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-16.704, disclosureLevel:'aggregated' }, // pág. 182, Jev 0.95
+    { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-24.927, disclosureLevel:'aggregated' }, // pág. 182, precedente
+    { rawLabel:'Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-2.661, disclosureLevel:'aggregated' }, // pág. 182, precedente
+  ],
 };
 const asromaitFiscalYearMeta = {
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -492,6 +514,21 @@ const asromaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:226.539, officialTotalExpenses:374.963, officialPAT:-185.573,
   },
+  2009: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2009-06-30',
+    sourceId:'asroma-it-bilancio-2009',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:1.147, tax:-4.627,
+    extraRows: [
+      {label:'Oneri/Proventi finanziari netti', value:1.147},
+      {label:'a) imposte correnti', value:-4.783},
+      {label:'b) imposte anticipate e differite', value:0.156},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:177.312, officialTotalExpenses:175.121, officialPAT:-1.289,
+  },
 };
 const asromaitPresupuestoOverlayByYear = {};
 
@@ -551,6 +588,12 @@ Object.assign(sources, {
     title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'asroma-it-bilancio-2009': {
+    id:'asroma-it-bilancio-2009', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2009 (ejercicio 2009)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

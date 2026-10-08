@@ -62,3 +62,5 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - **Sin encontrar**: antes de 2005 (solo comunicados de asamblea de 2002-2004; no el fascicolo) y 2025/26 (la Roma publica en octubre-noviembre; hoy la página lista hasta 2025).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf` (sourceId `asroma-it-bilancio-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2009 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.pdf` (sourceId `asroma-it-bilancio-2009`).
