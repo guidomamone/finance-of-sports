@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.md",
- "generado": "2026-10-08T23:14:15.409Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:17:06.337Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2018,
  "escala": {
@@ -26,10 +26,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "ef6729f",
-  "4126650"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,8 +50,8 @@
   },
   {
    "nombre": "documento del año 2019",
-   "ok": false,
-   "detalle": "ingresos de 2018: 255.733 en este documento y 511.716 en AC-Milan-bilanci-relazioni-2018-19.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2018: 255.733 en este documento y 255.983 en AC-Milan-bilanci-relazioni-2018-19.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

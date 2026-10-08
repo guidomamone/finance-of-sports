@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.md",
- "generado": "2026-10-08T23:14:22.530Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:17:13.429Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2017,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "3719d88",
-  "bdcddcd"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2016",
-   "ok": false,
-   "detalle": "ingresos de 2016: 93.820508 en Lazio-bilancio-separato-consolidato-2015-16.pdf y 188.856148 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2016: 93.820508 en Lazio-bilancio-separato-consolidato-2015-16.pdf y 95.035641 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

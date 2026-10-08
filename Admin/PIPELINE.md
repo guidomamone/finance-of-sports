@@ -245,7 +245,10 @@ Mitigaciones:
             Versión 611 (to-do 187): ESCALÓN "financiero sin hojas": en las lecturas 5 y 6 (solo hojas), si el estado no trae hojas de financiero, se usan sus renglones o su total único
             (Lazio 2016: "Oneri finanziari netti e differenze cambio (1.866.421)" era una sola fila impresa como subtotal y quedaba en 0). Medido en 242 documentos: Roma 2007 y Lazio 2011-12 y
             2012-13 dejan de marcar totales en rojo; Lazio 2012-13 pasa de cola a ok y su año anterior coincide con 2011-12; Lazio 2012-13 cargado daría ingresos 109.794312 (antes 109.794296) y
-            gastos 114.569607 (antes 114.568051), pero lo ya cargado no se toca; el resto, idéntico
+            gastos 114.569607 (antes 114.568051), pero lo ya cargado no se toca; el resto, idéntico.
+            Versión 611, ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
+            (como la lectura 4 para la columna actual). Cambian solo el chequeo del año vecino y "año anterior cargado" de AC Milan 2017-18 y 2018-19 y Lazio 2015-16 y 2016-17: los
+            totales que se cargan, idénticos; los 4 pasan de cola a ok
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
             menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
             igual (Versión 587, to-do 175; caso Cremonese 2024)

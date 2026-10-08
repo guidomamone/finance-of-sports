@@ -321,7 +321,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // (y tampoco la suma de los renglones que tiene ABAJO: el estilo "Ingresos 500" y debajo sus componentes)
       if (f.tipo !== 'renglon') {
         if (f.tipo === 'resultado') continue;
-        const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado) && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
+        // ESCALÓN "columna anterior con signo" (to-do 187, Lazio 2016-17 y Milan 2018-19): en la columna del año anterior (`campo` 'A') un total también es la suma
+        // de sus renglones si cierra CON SU SIGNO impreso (como la lectura 4 para la actual): una "Variazione delle rimanenze (608.641)" negativa suma en valor
+        // absoluto 95,04 M contra el total impreso de 93,82 M, y el total se contaba además de sus renglones (188,86 M). La compuerta es la misma suma exacta.
+        const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado || campo === 'A') && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
         // ESCALÓN "SUBTOTAL REPETIDO" (to-do 175, escalón 1, aprobado por Guido el 2026-10-08; solo con `subRepetido`, que se prueba después
         // de que falla la lectura 4). Un subtotal con el MISMO importe que el renglón INMEDIATO de arriba (del mismo lado) es ese renglón
