@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie B (IT) — 5 ejercicio(s) con ranking:
-//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -22,6 +22,9 @@ window.RANKINGS["it-serieb"] = {
       { id:"cremonese-it", revenue:61.774, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2024",
         mix:[["Estadio",1.849],["Fútbol profesional (sin desglosar por la fuente)",45.883],["Otros ingresos",14.043]] },
+      { id:"como-it", revenue:10.512, reportType:"official_balance_sheet",
+        sourceId:"como-it-fascicolo-bilancio-2024",
+        mix:[["Comercial / Sponsors",0.699],["Estadio",1.655],["Otros ingresos",8.158]] },
     ],
   },
   2023: {

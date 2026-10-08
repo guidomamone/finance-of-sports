@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
- "generado": "2026-10-08T03:20:09.729Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:35:26.151Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2021,
  "escala": {
@@ -39,13 +39,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "b03fa64",
-  "84e7cb7",
-  "3a46a03",
-  "b6498ac",
-  "e4b35dc"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -80,8 +74,7 @@
   "duda de localizar que no afecta la carga: El cuadro por segmento (b105, b106) tiene los mismos renglones que el estado consolidado b35; no parece abrir renglones nuevos.",
   "duda de localizar que no afecta la carga: b41 es el mismo conto economico consolidado con columnas 'di cui, con parti correlate'.",
   "duda de extraer que no afecta la carga: b81 combina 'Beni e prodotti da commercializzare' (ya en b80 L4286) y 'Variazione delle rimanenze' (ya en el estado L2141).",
-  "duda de extraer que no afecta la carga: L4631 tiene la celda del ejercicio vacía (anterior (12.333)); se omitió.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L4631 tiene la celda del ejercicio vacía (anterior (12.333)); se omitió."
  ],
  "reintentar": [
   {

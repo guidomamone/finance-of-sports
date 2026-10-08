@@ -27,3 +27,20 @@ la sección "trasparenza"/"licenze-uefa" de su propio sitio, cotización aparte.
 - **Varios clubes tienen links propios rotos por migración de CDN sin actualizar** (Inter, Napoli,
   Udinese) — vale la pena probar Wayback Machine antes de descartar, no asumir dead-end por un 404
   directo.
+
+## Mails posibles (no enviados; decisión de Guido, 2026-10-07)
+
+Ninguno se envía por ahora. Cada envío lo aprueba Guido y se hace con `club-outreach`.
+
+- **FIR (Federazione Italiana Rugby):** pedir el bilancio de Zebre 2025 (todavía sin publicar), el consuntivo 2025 (aprobado por el Consejo el 2026-06-09 pero con la página en 404) y la serie 2011-2019. No hay casilla guardada.
+- **Benetton Rugby (Rugby Treviso S.r.l. SSD):** pedir de 3 a 5 ejercicios depositados. PEC: benettonrugby@offipec.it. Alternativa: comprar el bilancio en el Registro Imprese.
+- **Udinese:** 2022/23 y 2023/24 (existen truncados en Wayback) y **Bologna** 2023/24-2024/25.
+- **Cagliari:** el bilancio 2018 está en Issuu y el 2021 en un Drive de solo lectura.
+- **Fiorentina:** 2018.
+- **Rugby, clubes chicos** (Serie A Elite y de abajo): prioridad baja, ninguno publica.
+
+(Se amplía con lo que traigan las otras secciones del sourcing.)
+
+## Federaciones
+
+La FIR entra al sitio (decisión de Guido, 2026-10-07). El canal de una federación es su sección de amministrazione trasparente.
