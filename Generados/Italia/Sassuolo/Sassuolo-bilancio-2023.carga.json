@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2023.pdf",
- "generado": "2026-10-08T19:23:36.267Z",
+ "generado": "2026-10-08T19:41:39.461Z",
  "frena": [
   {
    "etapa": "registro",
@@ -9,10 +9,6 @@
   {
    "etapa": "categorizacion",
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "alta:cierre",
-   "motivo": "No se pudo determinar la fecha de cierre del ejercicio."
   },
   {
    "etapa": "filas",
@@ -29,9 +25,9 @@
   "tipo": "anual",
   "meses": 12,
   "cierre": "2023-12-31",
-  "evidencia": null,
-  "confianza": "media",
-  "anual": "calendario"
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-08): Bilancio al 31 dicembre 2023 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)"
  },
  "clubId": "sassuolo-it",
  "year": 2023,

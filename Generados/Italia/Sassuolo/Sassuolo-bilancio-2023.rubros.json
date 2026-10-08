@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2023.pdf",
   "club": "sassuolo-it",
   "year": 2023,
-  "generatedAt": "2026-10-08T18:56:48.183Z",
+  "generatedAt": "2026-10-08T19:39:49.327Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         2.851
       ],
-      "glosa": "Ingresos por partidos como local"
+      "glosa": "Ingresos por partidos en casa"
     },
     {
       "label": "Abbonamenti",
@@ -34,7 +34,7 @@
       "values": [
         0.299
       ],
-      "glosa": "Ingresos de tienda"
+      "glosa": "Ingresos de tiendas oficiales"
     },
     {
       "label": "Proventi da sponsorizzazioni",
@@ -54,7 +54,7 @@
       "values": [
         8.616
       ],
-      "glosa": "Ingresos publicitarios"
+      "glosa": "Ingresos por publicidad"
     },
     {
       "label": "Proventi da cessione diritti televisivi",
@@ -74,7 +74,7 @@
       "values": [
         51.217
       ],
-      "glosa": "Plusvalías por traspaso de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Proventi da cessioni temporanee calciatori",
@@ -114,7 +114,7 @@
       "values": [
         1.965242
       ],
-      "glosa": "6) Consumo de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Gastos por materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -124,7 +124,7 @@
       "values": [
         2.744
       ],
-      "glosa": "Gastos por federados"
+      "glosa": "Gastos por deportistas federados"
     },
     {
       "label": "Costi per attività sportiva",
@@ -154,7 +154,7 @@
       "values": [
         8.161
       ],
-      "glosa": "Comisiones de agentes e intermediarios"
+      "glosa": "Honorarios de agentes e intermediarios"
     },
     {
       "label": "Costi vitto, alloggio, locomozione gare",
@@ -174,7 +174,7 @@
       "values": [
         0.784
       ],
-      "glosa": "Seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Amministrative e generali",
@@ -234,7 +234,7 @@
       "values": [
         0.959414
       ],
-      "glosa": "c) Indemnización por fin de relación laboral"
+      "glosa": "c) Indemnización por fin de contrato de trabajo (TFR)"
     },
     {
       "label": "e) altri costi",
@@ -274,7 +274,7 @@
       "values": [
         0.447739
       ],
-      "glosa": "d) Deterioro de valor de los créditos del activo"
+      "glosa": "d) Deterioro de valor de créditos del activo"
     },
     {
       "label": "11) Variazioni delle rimanenze",
@@ -314,7 +314,7 @@
       "values": [
         1.383
       ],
-      "glosa": "Aportaciones a la Liga"
+      "glosa": "Gastos por contribuciones a la Liga"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -324,7 +324,7 @@
       "values": [
         1.337
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por adquisición temporal de derechos de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -334,7 +334,7 @@
       "values": [
         0.599
       ],
-      "glosa": "Minusvalías por traspaso de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Premi valorizzazione, di addestramento e Carriera",
@@ -374,7 +374,7 @@
       "values": [
         2.529
       ],
-      "glosa": "Gastos excepcionales"
+      "glosa": "Pérdidas y gastos extraordinarios de ejercicios anteriores"
     },
     {
       "label": "Spese, ammende e multe gare",

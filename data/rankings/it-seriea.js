@@ -10,7 +10,7 @@
 //   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -255,6 +255,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:170.792, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2018-19",
         mix:[["Comercial / Sponsors",25.395],["Estadio",12.365],["Televisión",92.909],["Venta de Jugadores",31.123],["Otros ingresos",9.001]] },
+      { id:"sassuolo-it", revenue:143.322, reportType:"official_balance_sheet",
+        sourceId:"sassuolo-it-bilancio-2019",
+        mix:[["Comercial / Sponsors",31.368],["Estadio",3.765],["Televisión",44.724],["Venta de Jugadores",55.371],["Otros ingresos",8.096]] },
       { id:"torino-it", revenue:108.219, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2019",
         mix:[["Comercial / Sponsors",11.331],["Estadio",7.478],["Televisión",65.349],["Venta de Jugadores",14.402],["Otras secciones deportivas",0.042],["Otros ingresos",9.617]] },

@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf",
- "generado": "2026-10-08T19:23:34.470Z",
- "frena": [
-  {
-   "etapa": "alta:cierre",
-   "motivo": "No se pudo determinar la fecha de cierre del ejercicio."
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: sin fecha de cierre no hay tipo de cambio de cierre"
-  }
- ],
+ "generado": "2026-10-08T19:41:37.571Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-121.370263); queda la suma, verificada por el resultado del ejercicio"
@@ -18,7 +9,7 @@
  "ejercicio": {
   "clubId": "sassuolo-it",
   "year": 2019,
-  "cierre": null,
+  "cierre": "2019-12-31",
   "perimetro": "individual",
   "revenueLines": [
    {
@@ -436,6 +427,7 @@
   ],
   "fiscalYearMeta": {
    "currency": "EUR",
+   "fxRef": "EUR@2019-12-31",
    "sourceId": "sassuolo-it-bilancio-2019",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -498,13 +490,24 @@
   "tipo": "anual",
   "meses": 12,
   "cierre": "2019-12-31",
-  "evidencia": null,
-  "confianza": "media",
-  "anual": "calendario"
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-08): Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)"
  },
  "clubId": "sassuolo-it",
  "year": 2019,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf",
+   "campo": "cierre",
+   "valor": "2019-12-31",
+   "linea": null,
+   "motivo": "Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "seleccion": {
   "filas": 49,
   "notasUsadas": [],
@@ -1263,19 +1266,19 @@
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2018–19 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
+  "fuente": "roster cacheado de \"2019–20 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
   "estado": "ok"
  },
  "procedencia": {
   "anio": {
    "valor": 2019,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)",
    "estado": "ok"
   },
   "cierre": {
-   "valor": null,
-   "fuente": null,
-   "estado": "pregunta"
+   "valor": "2019-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08))",
+   "estado": "ok"
   },
   "reportType": {
    "valor": "official_balance_sheet",
@@ -1292,10 +1295,10 @@
    "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
    "estado": "ok"
   },
-  "fx": {
-   "valor": null,
-   "fuente": "sin fecha de cierre no hay tipo de cambio de cierre",
-   "estado": "pendiente"
+  "fxRef": {
+   "valor": "EUR@2019-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-12-31 = 0.890155 (Tipo de referencia del Banco Central Europeo al 2019-12-31)",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "sassuolo-it-bilancio-2019",
@@ -1304,13 +1307,13 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2018–19 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
+   "fuente": "roster cacheado de \"2019–20 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 10,
   "lineasGasto": 31,
   "metaFilas": 8,

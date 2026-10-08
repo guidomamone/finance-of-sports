@@ -78,6 +78,20 @@ const sassuoloitRevenueLinesByYear = {
     { rawLabel:'Proventi Lega non audiovisivi', normalizedCategory:'sponsorship_commercial', amountNative:13.512, disclosureLevel:'aggregated' }, // pág. 48, precedente
     { rawLabel:'Proventi diversi', normalizedCategory:'other_income', amountNative:5.303, disclosureLevel:'aggregated' }, // pág. 48, precedente
   ],
+  // 2019: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Sassuolo/Sassuolo-bilancio-2019.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2019: [
+    { rawLabel:'Ricavi da gare in casa', normalizedCategory:'matchday_competition', amountNative:2.395, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Ricavi da gare fuori casa', normalizedCategory:'matchday_competition', amountNative:0.035, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:0.921, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:18.852, disclosureLevel:'aggregated' }, // pág. 41, Jev 1
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:9.07, disclosureLevel:'aggregated' }, // pág. 41, Jev 1
+    { rawLabel:'Proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:39.811, disclosureLevel:'aggregated' }, // pág. 41, Jev 1
+    { rawLabel:'Proventi da cessioni temporanee calciatori', normalizedCategory:'player_sales', amountNative:5.889, disclosureLevel:'aggregated' }, // pág. 42, Jev 0.96
+    { rawLabel:'Proventi diversi', normalizedCategory:'other_income', amountNative:5.018, disclosureLevel:'aggregated' }, // pág. 42, Jev 1
+    { rawLabel:'b) plusvalenze', normalizedCategory:'player_sales', amountNative:43.399333, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.99
+    { rawLabel:'f) Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:2.188567, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.98
+  ],
 };
 const sassuoloitExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-07)
@@ -173,6 +187,39 @@ const sassuoloitExpenseLinesByYear = {
     { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.465, disclosureLevel:'aggregated' }, // pág. 53, precedente
     { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-1.035, disclosureLevel:'aggregated' }, // pág. 53, precedente
   ],
+  2019: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) Per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-1.208562, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-1.724, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.093, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-0.251, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Compensi per Agenti e intermediari', normalizedCategory:'other_expenses', amountNative:-6.124, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.603, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.352, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Amministrative e generali', normalizedCategory:'admin_general_expense', amountNative:-3.435, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-3.377, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'8) Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-2.630843, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'a) Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-51.099235, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'b) Oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.809263, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'c) Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.464694, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'e) altri costi', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'a) Ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-30.360448, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'b) Ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.392384, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' }, // pág. 18, Jev 0.98
+    { rawLabel:'d) Svalutazioni crediti dell\'attivo', normalizedCategory:'other_expenses', amountNative:-0.530834, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Spese organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-1.875, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.035, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Oneri contribuzione Lega', normalizedCategory:'match_organisation_expense', amountNative:-0.995, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Percentuale su incassi gare a squadre ospitate', normalizedCategory:'match_organisation_expense', amountNative:-0.007, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.99
+    { rawLabel:'Costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-4.013, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Minusvalenze cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-1.877, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Premi valorizzazione', normalizedCategory:'player_amortisation', amountNative:-0.75, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.96
+    { rawLabel:'Contributo Solidarietà Fifa', normalizedCategory:'player_amortisation', amountNative:-0.586, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Premi rendimento', normalizedCategory:'wages_squad', amountNative:-6.963, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.98
+    { rawLabel:'Sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.155, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Spese, ammende e multe gare', normalizedCategory:'other_expenses', amountNative:-0.053, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.08, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-0.558, disclosureLevel:'aggregated' }, // pág. 46, precedente
+  ],
 };
 const sassuoloitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 34.086.540. Guido 2026-10-07: el estado agrupa la TV en "a) Derivanti da attività accessorie" (50.291.540, L583); la nota (L1629, en miles) la abre: Proventi da cessione diritti televisivi 16.205. La nota y el estado difieren 0,097 M en cómo reparten a) y f), por eso el desglose no se abrió solo
@@ -238,6 +285,27 @@ const sassuoloitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:102.104, officialTotalExpenses:124.658564, officialPAT:-22.125621,
   },
+  // 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2019-12-31. Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
+  2019: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2019-12-31',
+    sourceId:'sassuolo-it-bilancio-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.817006, tax:-2.516655,
+    extraRows: [
+      {label:'d) Proventi diversi dai precedenti:', value:0.000018},
+      {label:'c) verso imprese controllanti', value:-0.522084},
+      {label:'d) verso verso altri', value:-0.29494},
+      {label:'a) differenze attive su cambi', value:0},
+      {label:'b) differenze passive su cambi', value:0},
+      {label:'a) Imposte correnti', value:-2.822069},
+      {label:'b) Imposte relative ad esercizi precedenti', value:0},
+      {label:'c) Imposte anticipate e differite', value:0.305414},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:127.5789, officialTotalExpenses:121.370263, officialPAT:0.842978,
+  },
 };
 const sassuoloitPresupuestoOverlayByYear = {};
 
@@ -273,6 +341,12 @@ Object.assign(sources, {
     title:'Unione Sportiva Sassuolo Calcio S.r.l. — Sassuolo-bilancio-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'sassuolo-it-bilancio-2019': {
+    id:'sassuolo-it-bilancio-2019', clubId:'sassuolo-it',
+    title:'Unione Sportiva Sassuolo Calcio S.r.l. — Sassuolo-bilancio-2019 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

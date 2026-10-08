@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf",
   "club": "sassuolo-it",
   "year": 2019,
-  "generatedAt": "2026-10-08T18:56:48.053Z",
+  "generatedAt": "2026-10-08T19:39:49.197Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         39.811
       ],
-      "glosa": "Ingresos por cesión de derechos televisivos"
+      "glosa": "Ingresos por cesión de derechos audiovisuales"
     },
     {
       "label": "Proventi da cessioni temporanee calciatori",
@@ -74,7 +74,7 @@
       "values": [
         5.889
       ],
-      "glosa": "Ingresos por cesión temporal de futbolistas"
+      "glosa": "Ingresos por cesiones temporales de futbolistas"
     },
     {
       "label": "Proventi diversi",
@@ -84,7 +84,7 @@
       "values": [
         5.018
       ],
-      "glosa": "Otros ingresos"
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "b) plusvalenze",
@@ -114,7 +114,7 @@
       "values": [
         1.208562
       ],
-      "glosa": "6) Por materias primas, auxiliares, consumibles y mercancías"
+      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -164,7 +164,7 @@
       "values": [
         0.603
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos de partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -204,7 +204,7 @@
       "values": [
         2.630843
       ],
-      "glosa": "8) Por uso de bienes de terceros"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) Salari e stipendi",
@@ -234,7 +234,7 @@
       "values": [
         0.464694
       ],
-      "glosa": "c) Indemnización por fin de relación laboral"
+      "glosa": "c) Indemnización por cese de la relación laboral"
     },
     {
       "label": "e) altri costi",
@@ -244,7 +244,7 @@
       "values": [
         0
       ],
-      "glosa": "e) Otros gastos"
+      "glosa": "e) Otros costes"
     },
     {
       "label": "a) Ammortamento delle immobilizzazioni immateriali",
@@ -274,7 +274,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Otros deterioros de valor del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
     },
     {
       "label": "d) Svalutazioni crediti dell'attivo",
@@ -284,7 +284,7 @@
       "values": [
         0.530834
       ],
-      "glosa": "d) Deterioro de valor de créditos del activo"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo"
     },
     {
       "label": "Spese organizzazione gare",
@@ -314,7 +314,7 @@
       "values": [
         0.995
       ],
-      "glosa": "Gastos de contribución a la Liga"
+      "glosa": "Aportaciones a la Liga"
     },
     {
       "label": "Percentuale su incassi gare a squadre ospitate",
@@ -324,7 +324,7 @@
       "values": [
         0.007
       ],
-      "glosa": "Porcentaje sobre taquilla a equipos visitantes"
+      "glosa": "Porcentaje de recaudación de partidos a equipos visitantes"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -334,7 +334,7 @@
       "values": [
         4.013
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -344,7 +344,7 @@
       "values": [
         1.877
       ],
-      "glosa": "Minusvalías por cesión de derechos plurianuales de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Premi valorizzazione",
@@ -354,7 +354,7 @@
       "values": [
         0.75
       ],
-      "glosa": "Primas de revalorización"
+      "glosa": "Primas por valorización"
     },
     {
       "label": "Contributo Solidarietà Fifa",
@@ -364,7 +364,7 @@
       "values": [
         0.586
       ],
-      "glosa": "Contribución de solidaridad FIFA"
+      "glosa": "Contribución de solidaridad de la FIFA"
     },
     {
       "label": "Premi rendimento",
@@ -384,7 +384,7 @@
       "values": [
         0.155
       ],
-      "glosa": "Gastos extraordinarios"
+      "glosa": "Pérdidas extraordinarias"
     },
     {
       "label": "Spese, ammende e multe gare",
@@ -394,7 +394,7 @@
       "values": [
         0.053
       ],
-      "glosa": "Gastos, sanciones y multas de competición"
+      "glosa": "Gastos, multas y sanciones por partidos"
     },
     {
       "label": "Oneri tributari indiretti",

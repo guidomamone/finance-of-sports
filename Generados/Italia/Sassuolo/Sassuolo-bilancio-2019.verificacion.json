@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.md",
- "generado": "2026-10-08T18:56:48.053Z",
+ "generado": "2026-10-08T19:39:49.196Z",
  "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2019,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf",
+   "campo": "cierre",
+   "valor": "2019-12-31",
+   "linea": null,
+   "motivo": "Bilancio al 31 dicembre 2019 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

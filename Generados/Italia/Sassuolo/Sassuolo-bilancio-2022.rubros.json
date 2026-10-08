@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2022.pdf",
   "club": "sassuolo-it",
   "year": 2022,
-  "generatedAt": "2026-10-08T18:56:48.128Z",
+  "generatedAt": "2026-10-08T19:39:49.272Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.082
       ],
-      "glosa": "Ingresos por partidos en casa"
+      "glosa": "Ingresos por partidos como local"
     },
     {
       "label": "Ricavi da gare fuori casa",
@@ -24,7 +24,7 @@
       "values": [
         0.136
       ],
-      "glosa": "Ingresos por partidos fuera de casa"
+      "glosa": "Ingresos por partidos como visitante"
     },
     {
       "label": "Abbonamenti",
@@ -44,7 +44,7 @@
       "values": [
         0.251
       ],
-      "glosa": "Ingresos de tienda oficial"
+      "glosa": "Ingresos por tiendas oficiales"
     },
     {
       "label": "Proventi da sponsorizzazioni",
@@ -54,7 +54,7 @@
       "values": [
         18.855
       ],
-      "glosa": "Ingresos por patrocinio"
+      "glosa": "Ingresos por patrocinios"
     },
     {
       "label": "Proventi pubblicitari",
@@ -74,7 +74,7 @@
       "values": [
         40.008
       ],
-      "glosa": "Ingresos por cesión de derechos televisivos"
+      "glosa": "Ingresos por cesión de derechos audiovisuales"
     },
     {
       "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
@@ -94,7 +94,7 @@
       "values": [
         2.759
       ],
-      "glosa": "Ingresos por cesión temporal de futbolistas"
+      "glosa": "Ingresos por cesiones temporales de futbolistas"
     },
     {
       "label": "Proventi Lega non audiovisivi",
@@ -114,7 +114,7 @@
       "values": [
         10.346
       ],
-      "glosa": "Ingresos diversos"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -124,7 +124,7 @@
       "values": [
         1.936898
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos (materias primas, secundarias, de consumo y mercaderías)"
     },
     {
       "label": "Costi per tesserati",
@@ -134,7 +134,7 @@
       "values": [
         2.839
       ],
-      "glosa": "Gastos por fichas federativas"
+      "glosa": "Gastos por jugadores y técnicos federados"
     },
     {
       "label": "Costi per attività sportiva",
@@ -164,7 +164,7 @@
       "values": [
         6.14
       ],
-      "glosa": "Comisiones a agentes e intermediarios"
+      "glosa": "Honorarios de agentes e intermediarios"
     },
     {
       "label": "Costi vitto, alloggio, locomozione gare",
@@ -194,7 +194,7 @@
       "values": [
         3.86
       ],
-      "glosa": "Gastos de administración y generales"
+      "glosa": "Gastos administrativos y generales"
     },
     {
       "label": "Altri",
@@ -244,7 +244,7 @@
       "values": [
         0.912905
       ],
-      "glosa": "c) Indemnización por fin de contrato"
+      "glosa": "c) Indemnizaciones por cese de personal (TFR)"
     },
     {
       "label": "e) altri costi",
@@ -254,7 +254,7 @@
       "values": [
         0
       ],
-      "glosa": "e) Otros gastos de personal"
+      "glosa": "e) Otros costes de personal"
     },
     {
       "label": "a) Ammortamento delle immobilizzazioni immateriali",
@@ -284,7 +284,7 @@
       "values": [
         0
       ],
-      "glosa": "d) Correcciones valorativas por deterioro de créditos"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo"
     },
     {
       "label": "11) Variazioni delle rimanenze",
@@ -324,7 +324,7 @@
       "values": [
         1.517
       ],
-      "glosa": "Aportaciones y cuotas a la Liga"
+      "glosa": "Cuotas de aportación a la Liga"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -334,7 +334,7 @@
       "values": [
         1.797
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Costes por cesión temporal de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -354,7 +354,7 @@
       "values": [
         1.895
       ],
-      "glosa": "Primas de formación, desarrollo y carrera"
+      "glosa": "Primas de formación, valorización y carrera"
     },
     {
       "label": "Contributo Solidarietà Fifa",
@@ -364,7 +364,7 @@
       "values": [
         2.653
       ],
-      "glosa": "Contribución de solidaridad de la FIFA"
+      "glosa": "Mecanismo de solidaridad de la FIFA"
     },
     {
       "label": "Sopravvenienze passive",
@@ -384,7 +384,7 @@
       "values": [
         0.011
       ],
-      "glosa": "Gastos, multas y sanciones de partidos"
+      "glosa": "Gastos, sanciones y multas de competición"
     },
     {
       "label": "Oneri tributari indiretti",
