@@ -227,3 +227,5 @@ ni en el comentario de ningún archivo de código.
     Parma al revés: 30/06 hasta 2018 y 31/12 después, con fiscalYearStart 01-01. No hay convención en Admin/CONVENCIONES*.md para un club
     que cambia el cierre. Decisión de Guido pendiente: un inicio de ejercicio por año (en fiscalYearMeta) o la etiqueta por la fecha de
     cierre, y qué hacer con un ejercicio de transición (meses ≠ 12). Afecta cómo se ve en el sitio, no los números.
+    Además, revisar Atalanta 2022 contra el documento: periodo.mjs dice 12 meses (confianza media) con cierre 2022-06-30, pero 2021 cerró
+    el 31/12/2021: o es un ejercicio de 6 meses (y el sitio lo compara como un año entero) o los dos se superponen (julio-diciembre 2021).
