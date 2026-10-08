@@ -558,113 +558,54 @@ STATO PATRIMONIALE
 
 # CONTO ECONOMICO
 
-# A VALORE DELLA PRODUZIONE
-
-1) Ricasi delle vendite e delle prestazioni
-
-5) Altri ricavi e proventi:
-
-a) Derivanti da attività occossorie
-b) plusvalenze
-f) Contributi in conto esercizio
-
-Totale valore della produzione
-
-# B COSTI DELLA PRODUZIONE
-
-6) Per materie prime, sussidiarie, di consumo e di merci
-7) Per servizi
-8) Per godimento di beni di terzi
-
-9) Per il personale:
-
-a) Salari e stipendi
-b) Oneri sociali
-c) Trattamento di fine rapporto
-e) altri costi
-
-10) Ammortamenti e svalutazioni:
-
-a) Ammortamento delle immobilizzazioni immateriali
-b) Ammortamento delle immobilizzazioni materiali
-c) alte svalutazioni delle immobilizzazioni
-d) Svalutazioni crediti dell'attivo
-
-14) Oneri diversi di gestione
-
-Totale costi della produzione
-
-Differenza tra valore e costi della produzione
-
-# C PROVENTI E ONERI FINANZIARI
-
-16) Proventi:
-
-d) Proventi diversi dai precedenti:
-
-17) Oneri:
-
-c) verso imprese controllanti
-d) verso verso altri
-
-17 bis) Utili e perdite su cambi:
-
-a) differenze attive su cambi
-b) differenze passive su cambi
-
-Totale proventi e oneri finanziari
-
-Risultato prima delle imposte
-
-22) Imposte sul reddito dell'esercizio:
-
-a) Imposte correnti
-b) Imposte relative ad esercizi precedenti
-e) Imposte anticipate e diferite
-
-Utile (perdita) dell'esercizio
-
-31 dicembre 2018
-
-31 dicembre 2017
-
-|   | 3.059.906 | 3.783.840  |
-| --- | --- | --- |
-|  72.927.502 | 69.059.253 |   |
-|  30.329.307 | 17.025.410 |   |
-|  1.469.510 | 1.557.098 |   |
-|   | 104.726.319 | 87.641.761  |
-|   | 107.786.225 | 91.425.601  |
-|   | 1.382.680 | 1.140.070  |
-|   | 15.055.113 | 12.750.197  |
-|   | 2.289.484 | 2.873.314  |
-|  43.491.036 | 41.695.569 |   |
-|  2.516.687 | 2.156.616 |   |
-|  556.909 | 547.348 |   |
-|  0 | 1.349.250 |   |
-|   | 46.564.632 | 45.748.783  |
-|  22.213.037 | 15.688.597 |   |
-|  111.240 | 109.728 |   |
-|  648.565 | 3.710 |   |
-|  195.052 | 0 |   |
-|   | 23.167.894 | 15.802.035  |
-|   | 5.522.099 | 3.895.942  |
-|   | 93.981.902 | 82.210.341  |
-|   | 13.804.323 | 9.215.260  |
-|  50.054 | 50.054 | 102.608  |
-|   | 50.054 | 102.608  |
-|  (166.914) | (198.450) |   |
-|  (309.156) | (289.118) |   |
-|   | (476.070) | (487.568)  |
-|  0 | 0 |   |
-|  0 | 0 |   |
-|   | 0 | 0  |
-|   | (426.016) | (384.960)  |
-|   | 13.378.307 | 8.830.300  |
-|  (4.787.627) |  | (4.394.437)  |
-|  0 |  | (840.292)  |
-|  (445.808) |  | 486.360  |
-|  8.144.872 |  | 4.081.931  |
+| | 31 dicembre 2018 | 31 dicembre 2017 |
+| :--- | :--- | :--- |
+| **A VALORE DELLA PRODUZIONE** | | |
+| 1) Ricavi delle vendite e delle prestazioni | 3.059.906 | 3.783.840 |
+| 5) Altri ricavi e proventi: | | |
+| a) Derivanti da attività accessorie | 72.927.502 | 69.059.253 |
+| b) plusvalenze | 30.329.307 | 17.025.410 |
+| f) Contributi in conto esercizio | 1.469.510 | 1.557.098 |
+| | 104.726.319 | 87.641.761 |
+| **Totale valore della produzione** | **107.786.225** | **91.425.601** |
+| **B COSTI DELLA PRODUZIONE** | | |
+| 6) Per materie prime, sussidiarie, di consumo e di merci | 1.382.680 | 1.140.070 |
+| 7) Per servizi | 15.055.113 | 12.750.197 |
+| 8) Per godimento di beni di terzi | 2.289.484 | 2.873.314 |
+| 9) Per il personale: | | |
+| a) Salari e stipendi | 43.491.036 | 41.695.569 |
+| b) Oneri sociali | 2.516.687 | 2.156.616 |
+| c) Trattamento di fine rapporto | 556.909 | 547.348 |
+| e) altri costi | 0 | 1.349.250 |
+| | 46.564.632 | 45.748.783 |
+| 10) Ammortamenti e svalutazioni: | | |
+| a) Ammortamento delle immobilizzazioni immateriali | 22.213.037 | 15.688.597 |
+| b) Ammortamento delle immobilizzazioni materiali | 111.240 | 109.728 |
+| c) altre svalutazioni delle immobilizzazioni | 648.565 | 3.710 |
+| d) Svalutazioni crediti dell'attivo | 195.052 | 0 |
+| | 23.167.894 | 15.802.035 |
+| 14) Oneri diversi di gestione | 5.522.099 | 3.895.942 |
+| **Totale costi della produzione** | **93.981.902** | **82.210.341** |
+| **Differenza tra valore e costi della produzione** | **13.804.323** | **9.215.260** |
+| **C PROVENTI E ONERI FINANZIARI** | | |
+| 16) Proventi: | | |
+| d) Proventi diversi dai precedenti | 50.054 | 102.608 |
+| | 50.054 | 102.608 |
+| 17) Oneri: | | |
+| e) verso imprese controllanti | (166.914) | (198.450) |
+| d) verso verso altri | (309.156) | (289.118) |
+| | (476.070) | (487.568) |
+| 17 bis) Utili e perdite su cambi: | | |
+| a) differenze attive su cambi | 0 | 0 |
+| b) differenze passive su cambi | 0 | 0 |
+| | 0 | 0 |
+| **Totale proventi e oneri finanziari** | **(426.016)** | **(384.960)** |
+| **Risultato prima delle imposte** | **13.378.307** | **8.830.300** |
+| 22) Imposte sul reddito dell'esercizio: | | |
+| a) Imposte correnti | (4.787.627) | (4.394.437) |
+| b) Imposte relative ad esercizi precedenti | 0 | (840.292) |
+| c) Imposte anticipate e differite | (445.808) | 486.360 |
+| **Utile (perdita) dell'esercizio** | **8.144.872** | **4.081.931** |
 
 - 4 -
 
