@@ -123,6 +123,42 @@ const napoliitRevenueLinesByYear = {
     { rawLabel:'- proventi produzioni televisive', normalizedCategory:'broadcasting', amountNative:1.507922, disclosureLevel:'aggregated' }, // pág. 47, precedente
     { rawLabel:'- altri ricavi', normalizedCategory:'other_income', amountNative:13.686612, disclosureLevel:'aggregated' }, // pág. 47, precedente
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Napoli/Napoli-bilancio-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Napoli/Napoli-bilancio-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2021: [
+    { rawLabel:'a) ricavi da gare in casa', normalizedCategory:'matchday_competition', amountNative:0, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'c) abbonamenti', normalizedCategory:'season_tickets', amountNative:0, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'d) altri ricavi da gare', normalizedCategory:'matchday_competition', amountNative:0.039148, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Contributi federali', normalizedCategory:'other_income', amountNative:0.015, disclosureLevel:'aggregated' }, // pág. 44, Jev 0.99
+    { rawLabel:'Contributo canoni locazione', normalizedCategory:'other_income', amountNative:0.01675, disclosureLevel:'aggregated' }, // pág. 44, Jev 0.98
+    { rawLabel:'Contributi Investimenti Pubblicitari', normalizedCategory:'other_income', amountNative:0.003828, disclosureLevel:'aggregated' }, // pág. 44, Claude 0.8
+    { rawLabel:'Contributi a fondo perduto - COVID', normalizedCategory:'other_income', amountNative:0.15, disclosureLevel:'aggregated' }, // pág. 44, Jev 1
+    { rawLabel:'Contributi per sanificazione e D.P.I.', normalizedCategory:'other_income', amountNative:0.028297, disclosureLevel:'aggregated' }, // pág. 44, Jev 1
+    { rawLabel:'Sponsor ufficiali', normalizedCategory:'sponsorship_commercial', amountNative:9.15217, disclosureLevel:'aggregated' }, // pág. 45, Jev 1
+    { rawLabel:'Sponsor tecnico', normalizedCategory:'sponsorship_commercial', amountNative:3.839143, disclosureLevel:'aggregated' }, // pág. 45, Jev 1
+    { rawLabel:'Sponsor istituzionali', normalizedCategory:'sponsorship_commercial', amountNative:10.684791, disclosureLevel:'aggregated' }, // pág. 45, precedente
+    { rawLabel:'Partner commerciali', normalizedCategory:'sponsorship_commercial', amountNative:3.065009, disclosureLevel:'aggregated' }, // pág. 45, Jev 0.99
+    { rawLabel:'Altre sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:5.055461, disclosureLevel:'aggregated' }, // pág. 45, precedente
+    { rawLabel:'Regional Sponsor', normalizedCategory:'sponsorship_commercial', amountNative:0.631579, disclosureLevel:'aggregated' }, // pág. 45, precedente
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0.117455, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Proventi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:3.33477, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Proventi da licensing', normalizedCategory:'sponsorship_commercial', amountNative:2.73104, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Altri proventi commerciali', normalizedCategory:'sponsorship_commercial', amountNative:0.13478, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Proventi televisivi', normalizedCategory:'broadcasting', amountNative:100.44614, disclosureLevel:'aggregated' }, // pág. 46, Jev 1
+    { rawLabel:'Proventi televisivi da competizione Uefa', normalizedCategory:'broadcasting', amountNative:17.797225, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Proventi televisivi gare amichevoli', normalizedCategory:'broadcasting', amountNative:0.102329, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Altri Proventi TV', normalizedCategory:'broadcasting', amountNative:5.35, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Proventi radiofonici', normalizedCategory:'broadcasting', amountNative:0.585105, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'Proventi sfruttamento diritti d\'immagine', normalizedCategory:'sponsorship_commercial', amountNative:0.997903, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'g) ricavi per cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:4.817629, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'h) plusvalenza da cessione diritti pluriennali calciatori', normalizedCategory:'player_sales', amountNative:48.743167, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'i) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.078183, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'- proventi da enti federali (L.N.P.)', normalizedCategory:'other_income', amountNative:3.594329, disclosureLevel:'aggregated' }, // pág. 48, precedente
+    { rawLabel:'- proventi produzioni televisive', normalizedCategory:'broadcasting', amountNative:1.699338, disclosureLevel:'aggregated' }, // pág. 48, precedente
+    { rawLabel:'- rilascio fondo rischi', normalizedCategory:'other_income', amountNative:3.420415, disclosureLevel:'aggregated' }, // pág. 48, Jev 0.99
+    { rawLabel:'- partecipazione gare amichevoli', normalizedCategory:'matchday_competition', amountNative:0.04, disclosureLevel:'aggregated' }, // pág. 48, ? 0.75
+    { rawLabel:'- altri ricavi', normalizedCategory:'other_income', amountNative:1.426863, disclosureLevel:'aggregated' }, // pág. 48, precedente
+  ],
 };
 const napoliitExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-07)
@@ -245,6 +281,56 @@ const napoliitExpenseLinesByYear = {
     { rawLabel:'- rappresentanza e omaggi', normalizedCategory:'admin_general_expense', amountNative:-0.629955, disclosureLevel:'aggregated' }, // pág. 54, precedente
     { rawLabel:'- diversi', normalizedCategory:'other_expenses', amountNative:-0.10185, disclosureLevel:'aggregated' }, // pág. 54, precedente
   ],
+  2021: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Acquisto materiale sportivo', normalizedCategory:'other_expenses', amountNative:-0.051707, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Acquisto materiale indumenti', normalizedCategory:'admin_general_expense', amountNative:-2.328067, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Acquisto materiale di consumo', normalizedCategory:'admin_general_expense', amountNative:-0.319092, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Acquisto materiale di cancelleria e stampati', normalizedCategory:'admin_general_expense', amountNative:-0.065089, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Acquisto medicinali', normalizedCategory:'admin_general_expense', amountNative:-0.05539, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Beni destinati alla rivendita', normalizedCategory:'admin_general_expense', amountNative:-1.58093, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi per tesserati ed attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.854628, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.852483, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-12.915281, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.629831, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Servizio biglietteria e controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.784433, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.112028, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Compensi Amministratori', normalizedCategory:'admin_general_expense', amountNative:-2.2506, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Amministrative, pubblicitarie e generali', normalizedCategory:'admin_general_expense', amountNative:-3.206966, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-0.717276, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Locazioni operative', normalizedCategory:'admin_general_expense', amountNative:-2.68463, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Affitto centro tecnico, campi sportivi e canone concessione stadio', normalizedCategory:'match_organisation_expense', amountNative:-1.325411, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Altri costi per godimento beni terzi', normalizedCategory:'admin_general_expense', amountNative:-0.172793, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Compensi contrattuali calciatori', normalizedCategory:'wages_squad', amountNative:-134.732022, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Quota variabile retrib. calc. legata ai risultati sportivi', normalizedCategory:'wages_squad', amountNative:-6.018133, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Compensi contrattuali allenatori', normalizedCategory:'wages_squad', amountNative:-4.341274, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Quota variabile retrib. allen. legata ai risultati sportivi', normalizedCategory:'wages_squad', amountNative:-0.009923, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Compensi contrattuali istruttori, tecnici e altri tess.', normalizedCategory:'wages_squad', amountNative:-4.283638, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Altri salari e stipendi', normalizedCategory:'admin_general_expense', amountNative:-1.30148, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.201352, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.39824, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'Indennità fine carriera', normalizedCategory:'wages_squad', amountNative:-0.230569, disclosureLevel:'aggregated' }, // pág. 52, precedente
+    { rawLabel:'e) altri costi', normalizedCategory:'other_expenses', amountNative:-1.036194, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Amm.to diritti plur. prestazioni calciatori', normalizedCategory:'player_amortisation', amountNative:-111.406313, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Altre immobilizzazioni immateriali', normalizedCategory:'other_amortisation', amountNative:-0.359087, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Impianti', normalizedCategory:'depreciation', amountNative:-0.04335, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Macchinari', normalizedCategory:'depreciation', amountNative:-0.000652, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Attrezzature', normalizedCategory:'depreciation', amountNative:-0.060892, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Automezzi', normalizedCategory:'depreciation', amountNative:-0.004486, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Macchine ufficio', normalizedCategory:'depreciation', amountNative:-0.015125, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'Mobili e arredi', normalizedCategory:'depreciation', amountNative:-0.031705, disclosureLevel:'aggregated' }, // pág. 53, precedente
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.11, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Crediti iscritti nell\'attivo circolante vs Clienti', normalizedCategory:'other_expenses', amountNative:-0.689934, disclosureLevel:'aggregated' }, // pág. 54, Jev 0.98
+    { rawLabel:'Crediti iscritti nell\'attivo circolante vs Club Esteri', normalizedCategory:'other_expenses', amountNative:-0.55, disclosureLevel:'aggregated' }, // pág. 54, Jev 0.92
+    { rawLabel:'Variaz. delle riman. mat.prime, sussid., di consumo e merci', normalizedCategory:'other_expenses', amountNative:0.053458, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'b) tasse iscrizione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.711028, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'c) oneri specifici v/squadre ospitate', normalizedCategory:'match_organisation_expense', amountNative:0, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'d) costi per acquisizione temporanea calciatori', normalizedCategory:'other_expenses', amountNative:-1.758, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'e) minus. da cessione diritti plur. alle prest. calciatori', normalizedCategory:'exceptional_items', amountNative:-1.1035, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'f) altri oneri di gestione calciatori', normalizedCategory:'other_expenses', amountNative:-3.372871, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'- indennizzi Lega e Uefa', normalizedCategory:'match_organisation_expense', amountNative:-0.03626, disclosureLevel:'aggregated' }, // pág. 55, precedente
+    { rawLabel:'- rappresentanza e omaggi', normalizedCategory:'admin_general_expense', amountNative:-0.371994, disclosureLevel:'aggregated' }, // pág. 55, precedente
+    { rawLabel:'- diversi', normalizedCategory:'other_expenses', amountNative:-0.612473, disclosureLevel:'aggregated' }, // pág. 55, precedente
+  ],
 };
 const napoliitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (918.251). oneri finanziari impresos en positivo bajo 17); Totale C (L326) 4.063.075 = 4.981.326 - 918.251 (to-do 155/156, arreglo manual 2026-10-07)
@@ -315,6 +401,27 @@ const napoliitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:359.264354, officialTotalExpenses:242.559928, officialPAT:79.700081,
   },
+  2021: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'napoli-it-bilancio-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.597734, tax:19.006326,
+    extraRows: [
+      {label:'- altri', value:0.649163},
+      {label:'e) altri', value:-0.047765},
+      {label:'a) utili su cambi', value:0.000138},
+      {label:'b) perdite su cambi', value:-0.003802},
+      {label:'a) imposte correnti', value:-3.713189},
+      {label:'b) imposte relative a esercizi precedenti', value:2.541673},
+      {label:'c) oneri (proventi) da consolidato fiscale', value:1.932616},
+      {label:'d) imposte differite', value:-4.927366},
+      {label:'e) imposte anticipate', value:23.172592},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:228.097847, officialTotalExpenses:305.540172, officialPAT:-58.941765,
+  },
 };
 const napoliitPresupuestoOverlayByYear = {};
 
@@ -350,6 +457,12 @@ Object.assign(sources, {
     title:'SSC Napoli S.p.A. — Napoli-bilancio-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Napoli/Napoli-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'napoli-it-bilancio-2021': {
+    id:'napoli-it-bilancio-2021', clubId:'napoli-it',
+    title:'SSC Napoli S.p.A. — Napoli-bilancio-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Napoli/Napoli-bilancio-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

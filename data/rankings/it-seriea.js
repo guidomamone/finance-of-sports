@@ -8,7 +8,7 @@
 //   2024: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -173,6 +173,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"atalanta-it", revenue:274.848, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2021",
         mix:[["Comercial / Sponsors",37.584],["Estadio",6.852],["Televisión",131.103],["Venta de Jugadores",63.549],["Otras secciones deportivas",0.567],["Otros ingresos",35.193]] },
+      { id:"napoli-it", revenue:271.061, reportType:"official_balance_sheet",
+        sourceId:"napoli-it-bilancio-2021",
+        mix:[["Comercial / Sponsors",47.23],["Estadio",0.094],["Televisión",149.709],["Venta de Jugadores",63.742],["Otros ingresos",10.286]] },
       { id:"asroma-it", revenue:269.209, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2021",
         mix:[["Comercial / Sponsors",53.457],["Estadio",0.118],["Televisión",147.626],["Premios por competencias",15.235],["Venta de Jugadores",42.929],["Otros ingresos",9.844]] },

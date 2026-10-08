@@ -56,12 +56,12 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
-- Italia (onboarding en curso): 19 clubes con alta. Cargados 73 ejercicios de 18 clubes además de Juventus (23): Lazio 14, AS Roma 7,
-  Atalanta 6, Parma 6, Torino 6, AC Milan 4, Bologna 4, Cremonese 3, Fiorentina 3, Inter 3, Napoli 3, Sassuolo 3, Como 2, Hellas
+- Italia (onboarding en curso): 19 clubes con alta. Cargados 74 ejercicios de 18 clubes además de Juventus (23): Lazio 14, AS Roma 7,
+  Atalanta 6, Parma 6, Torino 6, AC Milan 4, Bologna 4, Cremonese 3, Fiorentina 3, Inter 3, Napoli 4, Sassuolo 3, Como 2, Hellas
   Verona 2, Monza 2, Sampdoria 2, Udinese 2, Genoa 1. El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D, el
   subtotal repetido, el renglón grande sin abrir (TV escondida en "altri") y la etapa 4 que frenaba en silencio (Versiones 581-590).
-  Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166). Todos los años en "ok" están cargados salvo Napoli 2021
-  y 2022, que dan "ok" sin resultado impreso (to-do 167, diagnóstico listo). Atalanta y Parma cambiaron la fecha de cierre: la
+  Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166). Todos los años en "ok" están cargados salvo Napoli 2022
+  (falta la categorización, lote con la etapa 7). Atalanta y Parma cambiaron la fecha de cierre: la
   temporada se muestra mal (to-do 177, decisión de Guido).
   Sourcing 2026-10-07: ~124 PDFs nuevos sin transcribir (series más largas de Roma, Milan, Lazio, Parma, Inter y otros; Salernitana,
   Chievo, Juve Stabia; rugby FIR/Zebre; tenis FITP y entes; ver `fuentes/Italia/_notas-generales.md`). Las federaciones entran al sitio.
