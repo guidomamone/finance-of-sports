@@ -226,9 +226,3 @@ ni en el comentario de ningún archivo de código.
     fiscalYearStart 01-01: 2018 se muestra "2018" y es 17/18). Un ejercicio de menos de 12 meses no se carga: Atalanta 2022 (1/1 al 30/6/2022) se
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
-
-178. PARTIR EL CHANGELOG (Admin/CHANGELOG.md). Pesa 724 KB y 7.139 líneas; cada sesión agrega entradas arriba y buscar algo lleva a abrir un archivo
-    enorme. Pedido de Guido, 2026-10-08. DISEÑO: dejar en Admin/CHANGELOG.md las versiones recientes (por ejemplo las últimas 100) y mover el resto a
-    Admin/Archive/ en partes por rango de versiones (CHANGELOG-v010-v300.md, etc.), cada una con un banner que diga de qué versiones es. Después
-    ajustar las referencias (CLAUDE.md, las skills, ESTADO.md y el encabezado del propio CHANGELOG, que explica qué contiene). Lo mismo vale
-    para Admin/finance-of-sports-project.md (520 KB) si Guido lo quiere.

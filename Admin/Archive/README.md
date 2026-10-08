@@ -40,3 +40,4 @@ Qué hay hoy:
 - `medicion-caja-deuda-ia.txt` — la salida de una medición de caja y deuda con IA (2026-10-01). Archivado el 2026-10-06 (to-do 109).
 - `auditoria-pipeline-2026-10-02.md` — la auditoría del pipeline del 2026-10-02; sus propuestas pasaron al TODO y a `Admin/PIPELINE.md`. Archivado el 2026-10-06 (to-do 109).
 - `selector-merge-a-produccion.md` — era `Prototyping/Selector/MERGE-A-PRODUCCION.md`: cómo se llevó el prototipo 4 del selector a producción. Archivado el 2026-10-06 (to-do 109).
+- `CHANGELOG-v010-v299.md` — la primera parte de `Admin/CHANGELOG.md`: Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline), de la más nueva a la más vieja. Archivado en la 598.

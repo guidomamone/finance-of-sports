@@ -1237,6 +1237,10 @@ function checkEscala(api) {
   // son deliberadamente altos y solo existen para avisar si algún día se van de escala.
   // EL DÍA QUE SÍ HAYA QUE PARTIRLOS no va a ser por el tamaño: va a ser cuando un grep
   // devuelva decenas de bloques irrelevantes, y eso se arregla con un índice, no partiendo.
+  // (Versión 598, 2026-10-08, decisión de Guido) `Admin/CHANGELOG.md` llegó a 724 KB con dos mitades en orden contrario y se partió UNA vez, por
+  // ÉPOCA y no por tamaño ni por año: las Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline) viven en
+  // `Admin/Archive/CHANGELOG-v010-v299.md`, de la más nueva a la más vieja; el CHANGELOG sigue desde la 300 y su cabecera dice dónde está lo anterior.
+  // No se parte en rangos: una búsqueda tiene que elegir entre dos archivos como mucho.
   for (const [f, limite] of [['Admin/CHANGELOG.md', 400], ['Admin/finance-of-sports-project.md', 1200], ['index.html', 150], ['Admin/ESTADO.md', 60], ['Admin/TODO.md', 60]]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
     if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir`);
