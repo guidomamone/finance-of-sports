@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
-  "club": "chievo-verona",
+  "club": "chievoverona-it",
   "year": 2015,
-  "generatedAt": "2026-10-08T22:51:47.567Z",
+  "generatedAt": "2026-10-08T23:04:15.577Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.084243
       ],
-      "glosa": "Partidos en casa liga 1.er equipo"
+      "glosa": "Partidos en casa de liga 1.er equipo"
     },
     {
       "label": "GARE IN CASA COPPA ITAL 1^ SQUAD",
@@ -24,7 +24,7 @@
       "values": [
         0.001621
       ],
-      "glosa": "Partidos en casa Copa Italia 1.er equipo"
+      "glosa": "Partidos en casa de Copa Italia 1.er equipo"
     },
     {
       "label": "GARE FUORI CASA COPPA ITALIA",
@@ -34,7 +34,7 @@
       "values": [
         0.010182
       ],
-      "glosa": "Partidos fuera de casa Copa Italia"
+      "glosa": "Partidos fuera de casa de Copa Italia"
     },
     {
       "label": "ABBONAMENTI",
@@ -67,14 +67,84 @@
       "glosa": "Subvenciones a la explotación"
     },
     {
-      "label": "altri",
+      "label": "Proventi da sponsorizzazioni",
       "lado": "revenue",
-      "page": 30,
-      "section": "estado",
+      "page": 47,
+      "section": "ajuste manual",
       "values": [
-        50.471344
+        5.577362
       ],
-      "glosa": "Otros"
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        0.965024
+      ],
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Proventi televisivi",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        29.390994
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Proventi vari",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        0.0615
+      ],
+      "glosa": "Ingresos varios"
+    },
+    {
+      "label": "Ricavi da cessione temporanea calciatori",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        0.749
+      ],
+      "glosa": "Ingresos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "Plusvalenze da cessione diritti pluriennali calciatori",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        12.790553
+      ],
+      "glosa": "Plusvalías por traspaso de derechos plurianuales de futbolistas"
+    },
+    {
+      "label": "Altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        0.301239
+      ],
+      "glosa": "Otros ingresos por gestión de futbolistas"
+    },
+    {
+      "label": "Ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 47,
+      "section": "ajuste manual",
+      "values": [
+        0.635672
+      ],
+      "glosa": "Otros ingresos de explotación y diversos"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -84,7 +154,7 @@
       "values": [
         0.938955
       ],
-      "glosa": "6) Consumo de materias primas, secundarias, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -134,7 +204,7 @@
       "values": [
         0.250637
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato laboral"
+      "glosa": "c) Indemnización por cese laboral (TFR)"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -164,7 +234,7 @@
       "values": [
         0.068897
       ],
-      "glosa": "d) Deterioro del valor de los créditos comerciales y de la tesorería"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -174,7 +244,7 @@
       "values": [
         0.195741
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios por organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -194,7 +264,7 @@
       "values": [
         1.830263
       ],
-      "glosa": "Gastos por cesión temporal de derechos de jugadores"
+      "glosa": "Coste por cesión temporal de derechos de futbolistas"
     },
     {
       "label": "Minusvalenza da cessioni diritti plur. calciatori",
@@ -204,7 +274,7 @@
       "values": [
         2.292323
       ],
-      "glosa": "Pérdidas por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -214,7 +284,7 @@
       "values": [
         0.743
       ],
-      "glosa": "Otros gastos de gestión de futbolistas"
+      "glosa": "Otros gastos por gestión de futbolistas"
     },
     {
       "label": "Altri oneri diversi di gestione",

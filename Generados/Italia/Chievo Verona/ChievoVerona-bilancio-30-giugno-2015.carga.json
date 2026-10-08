@@ -1,14 +1,368 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
- "generado": "2026-10-08T22:55:34.062Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
-  }
+ "generado": "2026-10-08T23:05:51.543Z",
+ "frena": [],
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-56.321647); queda la suma, verificada por el resultado del ejercicio"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "chievoverona-it",
+  "year": 2015,
+  "cierre": "2015-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "GARE IN CASA CAMPIONATO 1^ SQUAD",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1.084243,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "GARE IN CASA COPPA ITAL 1^ SQUAD",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.001621,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "GARE FUORI CASA COPPA ITALIA",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.010182,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "ABBONAMENTI",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.66432,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "4) incrementi di immobilizzazioni per lavori interni",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.055289,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "contributi in conto esercizio",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.133333,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 5.577362,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.965024,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 29.390994,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi vari",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0615,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da cessione temporanea calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.749,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione diritti pluriennali calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 12.790553,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri proventi da gestione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.301239,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi e proventi diversi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.635672,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "6) per materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.938955,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "7) per servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.073092,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "8) per godimento di beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.712631,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -26.211042,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.482495,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.250637,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) ammortamento delle immobilizzazioni immateriali",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -13.072042,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) ammortamento delle immobilizzazioni materiali",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.217322,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.068897,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese varie organizzazione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.195741,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tasse iscrizioni gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.011785,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costo per acquist.temporanea prestaz.",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.830263,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Minusvalenza da cessioni diritti plur. calciatori",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -2.292323,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri da gestione calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.743,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.513745,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2015-06-30",
+   "sourceId": "chievoverona-it-bilancio-30-giugno-2015",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 3.867008,
+   "tax": -0.151448,
+   "extraRows": [
+    {
+     "label": "altri",
+     "value": 0.500989
+    },
+    {
+     "label": "altri",
+     "value": -1.625354
+    },
+    {
+     "label": "17-bis) utili e perdite su cambi",
+     "value": -0.000875
+    },
+    {
+     "label": "plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5",
+     "value": 5.533399
+    },
+    {
+     "label": "altri",
+     "value": 0.1992
+    },
+    {
+     "label": "minusvalenze da alienazioni i cui effetti contabili non sono iscrivibili al n 14",
+     "value": -0.0177
+    },
+    {
+     "label": "altri",
+     "value": -0.722651
+    },
+    {
+     "label": "imposte correnti",
+     "value": -0.151448
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 55.420332,
+   "officialTotalExpenses": 56.321647,
+   "officialPAT": 0.521922
+  },
+  "source": {
+   "id": "chievoverona-it-bilancio-30-giugno-2015",
+   "clubId": "chievoverona-it",
+   "title": "Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2015 (ejercicio 2015)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
  "reemplaza": false,
  "periodo": {
@@ -19,5 +373,731 @@
   "confianza": "media",
   "anual": "temporada"
  },
- "cortadoEn": "club"
+ "clubId": "chievoverona-it",
+ "year": 2015,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "5.577.362",
+   "linea": 1736,
+   "etiqueta": "Proventi da sponsorizzazioni",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 870,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1736",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "965.024",
+   "linea": 1737,
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1737",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "29.390.994",
+   "linea": 1739,
+   "etiqueta": "Proventi televisivi",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1739",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "61.500",
+   "linea": 1740,
+   "etiqueta": "Proventi vari",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1740",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "749.000",
+   "linea": 1741,
+   "etiqueta": "Ricavi da cessione temporanea calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1741",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "12.790.553",
+   "linea": 1742,
+   "etiqueta": "Plusvalenze da cessione diritti pluriennali calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1742",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "301.239",
+   "linea": 1743,
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1743",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+   "campo": "fila",
+   "valor": "635.672",
+   "linea": 1744,
+   "etiqueta": "Ricavi e proventi diversi",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón",
+   "evidencia": ".md L1744",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
+ "seleccion": {
+  "filas": 37,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "GARE IN CASA CAMPIONATO 1^ SQUAD",
+   "page": 47,
+   "native": 1.084243,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 1.084243,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.084243
+  },
+  {
+   "label": "GARE IN CASA COPPA ITAL 1^ SQUAD",
+   "page": 47,
+   "native": 0.001621,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.001621,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001621
+  },
+  {
+   "label": "GARE FUORI CASA COPPA ITALIA",
+   "page": 47,
+   "native": 0.010182,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.010182,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.010182
+  },
+  {
+   "label": "ABBONAMENTI",
+   "page": 47,
+   "native": 0.66432,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.66432,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.66432
+  },
+  {
+   "label": "4) incrementi di immobilizzazioni per lavori interni",
+   "page": 30,
+   "native": 2.055289,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.055289,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.055289
+  },
+  {
+   "label": "contributi in conto esercizio",
+   "page": 30,
+   "native": 1.133333,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.133333,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.133333
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "page": 47,
+   "native": 5.577362,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 5.577362,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.577362
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 47,
+   "native": 0.965024,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.965024,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.965024
+  },
+  {
+   "label": "Proventi televisivi",
+   "page": 47,
+   "native": 29.390994,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 29.390994,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 29.390994
+  },
+  {
+   "label": "Proventi vari",
+   "page": 47,
+   "native": 0.0615,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.0615,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0615
+  },
+  {
+   "label": "Ricavi da cessione temporanea calciatori",
+   "page": 47,
+   "native": 0.749,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.749,
+   "cat": "player_sales",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.749
+  },
+  {
+   "label": "Plusvalenze da cessione diritti pluriennali calciatori",
+   "page": 47,
+   "native": 12.790553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 12.790553,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.790553
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "page": 47,
+   "native": 0.301239,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.301239,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.301239
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "page": 47,
+   "native": 0.635672,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.635672,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.635672
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "page": 30,
+   "native": 0.938955,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.938955,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.938955
+  },
+  {
+   "label": "7) per servizi",
+   "page": 30,
+   "native": 8.073092,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.073092,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.073092
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "page": 30,
+   "native": 1.712631,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.712631,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.712631
+  },
+  {
+   "label": "a) salari e stipendi",
+   "page": 30,
+   "native": 26.211042,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 26.211042,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -26.211042
+  },
+  {
+   "label": "b) oneri sociali",
+   "page": 30,
+   "native": 1.482495,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.482495,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.482495
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "page": 30,
+   "native": 0.250637,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.250637,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.250637
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "page": 30,
+   "native": 13.072042,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.072042,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.072042
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "page": 30,
+   "native": 0.217322,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.217322,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.217322
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "page": 30,
+   "native": 0.068897,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.068897,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.068897
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "page": 50,
+   "native": 0.195741,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 0.195741,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.195741
+  },
+  {
+   "label": "Tasse iscrizioni gare",
+   "page": 50,
+   "native": 0.011785,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 0.011785,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.011785
+  },
+  {
+   "label": "Costo per acquist.temporanea prestaz.",
+   "page": 50,
+   "native": 1.830263,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 1.830263,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.830263
+  },
+  {
+   "label": "Minusvalenza da cessioni diritti plur. calciatori",
+   "page": 50,
+   "native": 2.292323,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 2.292323,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.292323
+  },
+  {
+   "label": "Altri oneri da gestione calciatori",
+   "page": 51,
+   "native": 0.743,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 0.743,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.743
+  },
+  {
+   "label": "Altri oneri diversi di gestione",
+   "page": 51,
+   "native": 1.513745,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) oneri diversi di gestione\")",
+   "signoFijo": 1.513745,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.513745
+  },
+  {
+   "label": "altri",
+   "page": null,
+   "native": 0.500989,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri",
+   "page": null,
+   "native": -1.625354,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "17-bis) utili e perdite su cambi",
+   "page": null,
+   "native": -0.000875,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5",
+   "page": null,
+   "native": 5.533399,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri",
+   "page": null,
+   "native": 0.1992,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "minusvalenze da alienazioni i cui effetti contabili non sono iscrivibili al n 14",
+   "page": null,
+   "native": -0.0177,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "altri",
+   "page": null,
+   "native": -0.722651,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "imposte correnti",
+   "page": null,
+   "native": -0.151448,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"1) ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion (nota que desglosa \"14) oneri diversi di gestione\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 55.420332,
+  "expSum": -56.321647,
+  "officialTotalRevenue": 55.420332,
+  "officialTotalExpenses": 56.321647,
+  "officialPAT": 0.521922,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.521922,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 55.420332
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2014–15 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Chievo Verona\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2015,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2015-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2015-06-30) y contenido del .md (122 de 123 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2015-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2015-06-30 = 0.893735 (Tipo de referencia del Banco Central Europeo al 2015-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "chievoverona-it-bilancio-30-giugno-2015",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2014–15 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Chievo Verona\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
+  "lineasGasto": 15,
+  "metaFilas": 8,
+  "excluidas": 0
+ }
 }

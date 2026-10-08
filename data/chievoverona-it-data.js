@@ -69,6 +69,24 @@ const chievoveronaitRevenueLinesByYear = {
     { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.675969, disclosureLevel:'aggregated' }, // pág. 50, Jev 0.94
     { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.489209, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
   ],
+  // 2015: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2015: [
+    { rawLabel:'GARE IN CASA CAMPIONATO 1^ SQUAD', normalizedCategory:'matchday_competition', amountNative:1.084243, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'GARE IN CASA COPPA ITAL 1^ SQUAD', normalizedCategory:'matchday_competition', amountNative:0.001621, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'GARE FUORI CASA COPPA ITALIA', normalizedCategory:'matchday_competition', amountNative:0.010182, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'ABBONAMENTI', normalizedCategory:'season_tickets', amountNative:0.66432, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'4) incrementi di immobilizzazioni per lavori interni', normalizedCategory:'other_income', amountNative:2.055289, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'contributi in conto esercizio', normalizedCategory:'other_income', amountNative:1.133333, disclosureLevel:'aggregated' }, // pág. 30, Jev 0.98
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:5.577362, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0.965024, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'Proventi televisivi', normalizedCategory:'broadcasting', amountNative:29.390994, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'Proventi vari', normalizedCategory:'other_income', amountNative:0.0615, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'Ricavi da cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.749, disclosureLevel:'aggregated' }, // pág. 47, Jev 0.98
+    { rawLabel:'Plusvalenze da cessione diritti pluriennali calciatori', normalizedCategory:'player_sales', amountNative:12.790553, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+    { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.301239, disclosureLevel:'aggregated' }, // pág. 47, Jev 0.99
+    { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.635672, disclosureLevel:'aggregated' }, // pág. 47, Jev 1
+  ],
 };
 const chievoveronaitExpenseLinesByYear = {
   2014: [ // tools/cargar.mjs (2026-10-08)
@@ -107,6 +125,23 @@ const chievoveronaitExpenseLinesByYear = {
     { rawLabel:'Minusvalenze da cessione diritti plur. calciatori', normalizedCategory:'exceptional_items', amountNative:-1.516225, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
     { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.925, disclosureLevel:'aggregated' }, // pág. 53, Jev 0.99
     { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.237947, disclosureLevel:'aggregated' }, // pág. 53, Jev 1
+  ],
+  2015: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-0.938955, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'7) per servizi', normalizedCategory:'admin_general_expense', amountNative:-8.073092, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-1.712631, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-26.211042, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-1.482495, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.250637, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-13.072042, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.217322, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'d) svalutazioni dei crediti compresi nell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.068897, disclosureLevel:'aggregated' }, // pág. 30, precedente
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.195741, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.011785, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Costo per acquist.temporanea prestaz.', normalizedCategory:'other_expenses', amountNative:-1.830263, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Minusvalenza da cessioni diritti plur. calciatori', normalizedCategory:'exceptional_items', amountNative:-2.292323, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.743, disclosureLevel:'aggregated' }, // pág. 51, precedente
+    { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-1.513745, disclosureLevel:'aggregated' }, // pág. 51, precedente
   ],
 };
 const chievoveronaitFiscalYearMeta = {
@@ -149,6 +184,34 @@ const chievoveronaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:68.527414, officialTotalExpenses:63.708598, officialPAT:0.302692,
   },
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.577.362. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 965.024. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 29.390.994. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 61.500. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 749.000. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 12.790.553. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 301.239. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 635.672. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la nota de Altri ricavi e proventi (L1731-L1745) lleva también los Contributi (1.133.333, ya en su renglón) y por eso no suma el renglón 'altri' (50.471.344); sus 8 filas restantes suman exacto 50.471.344. Se cargan en lugar del renglón
+  2015: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2015-06-30',
+    sourceId:'chievoverona-it-bilancio-30-giugno-2015',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:3.867008, tax:-0.151448,
+    extraRows: [
+      {label:'altri', value:0.500989},
+      {label:'altri', value:-1.625354},
+      {label:'17-bis) utili e perdite su cambi', value:-0.000875},
+      {label:'plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5', value:5.533399},
+      {label:'altri', value:0.1992},
+      {label:'minusvalenze da alienazioni i cui effetti contabili non sono iscrivibili al n 14', value:-0.0177},
+      {label:'altri', value:-0.722651},
+      {label:'imposte correnti', value:-0.151448},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:55.420332, officialTotalExpenses:56.321647, officialPAT:0.521922,
+  },
 };
 const chievoveronaitPresupuestoOverlayByYear = {};
 
@@ -178,6 +241,12 @@ Object.assign(sources, {
     title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2016 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'chievoverona-it-bilancio-30-giugno-2015': {
+    id:'chievoverona-it-bilancio-30-giugno-2015', clubId:'chievoverona-it',
+    title:'Associazione Calcio Chievo-Verona S.r.l. — ChievoVerona-bilancio-30-giugno-2015 (ejercicio 2015)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

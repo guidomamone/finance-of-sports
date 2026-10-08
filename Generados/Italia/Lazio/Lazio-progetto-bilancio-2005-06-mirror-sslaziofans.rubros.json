@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.pdf",
   "club": "lazio-it",
   "year": 2006,
-  "generatedAt": "2026-10-08T18:56:47.150Z",
+  "generatedAt": "2026-10-08T23:04:15.689Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.308213
       ],
-      "glosa": "b) Porcentaje de recaudación de partidos de equipos anfitriones"
+      "glosa": "b) Porcentaje sobre la recaudación de partidos de equipos anfitriones"
     },
     {
       "label": "c) abbonamenti",
@@ -114,7 +114,7 @@
       "values": [
         0.054537
       ],
-      "glosa": "e.3) Derechos audiovisuales por participación en competiciones UEFA"
+      "glosa": "e.3) Derechos audiovisuales por participación en competiciones de la UEFA"
     },
     {
       "label": "e.4) da L.N.P.",
@@ -144,7 +144,7 @@
       "values": [
         19.911787
       ],
-      "glosa": "l) Otros ingresos de explotación"
+      "glosa": "l) Otros ingresos y beneficios de gestión"
     },
     {
       "label": "a) plusvalenze da alienazioni",
@@ -154,7 +154,7 @@
       "values": [
         0.003448
       ],
-      "glosa": "a) Plusvalías por enajenaciones"
+      "glosa": "a) Plusvalías por enajenación de inmovilizado"
     },
     {
       "label": "b) sopravvenienze attive straordinarie",
@@ -174,7 +174,7 @@
       "values": [
         0.65779
       ],
-      "glosa": "6 Consumo de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6 Consumo de materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "a) Costi per tesserati",
@@ -184,7 +184,7 @@
       "values": [
         0.137282
       ],
-      "glosa": "a) Gastos de personal deportivo federado"
+      "glosa": "a) Gastos por jugadores y personal federado"
     },
     {
       "label": "b) Costi per attività sportiva",
@@ -214,7 +214,7 @@
       "values": [
         0.519681
       ],
-      "glosa": "d) Gastos de desplazamientos, alojamiento y manutención"
+      "glosa": "d) Gastos de manutención, alojamiento y desplazamientos"
     },
     {
       "label": "e) Servizio biglietteria, controllo ingressi",
@@ -234,7 +234,7 @@
       "values": [
         0.107553
       ],
-      "glosa": "f) Primas de seguros"
+      "glosa": "f) Gastos de seguros"
     },
     {
       "label": "g) Spese amministrative",
@@ -244,7 +244,7 @@
       "values": [
         2.405367
       ],
-      "glosa": "g) Gastos administrativos"
+      "glosa": "g) Gastos de administración"
     },
     {
       "label": "h) Spese per pubblicità e promozione",
@@ -254,7 +254,7 @@
       "values": [
         1.189074
       ],
-      "glosa": "h) Gastos de publicidad y relaciones públicas"
+      "glosa": "h) Gastos de publicidad y promoción"
     },
     {
       "label": "8 Per godimento di beni di terzi",
@@ -294,7 +294,7 @@
       "values": [
         0.117192
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato"
+      "glosa": "c) Indemnización por cese de relación laboral"
     },
     {
       "label": "e) Altri costi",
@@ -324,7 +324,7 @@
       "values": [
         21.291053
       ],
-      "glosa": "a.1) Amortización de gastos plurianuales según DL 282"
+      "glosa": "a.1) Amortización de cargas plurianuales según el DL 282"
     },
     {
       "label": "b) Amm. delle immobilizzazioni materiali",
@@ -344,7 +344,7 @@
       "values": [
         0.010329
       ],
-      "glosa": "c) Deterioro de valor del inmovilizado"
+      "glosa": "c) Pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
@@ -354,7 +354,7 @@
       "values": [
         0.344717
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y tesorería"
+      "glosa": "d) Correcciones valorativas de créditos del activo corriente y disponibilidades líquidas"
     },
     {
       "label": "12 Accantonamenti per rischi",
@@ -364,7 +364,7 @@
       "values": [
         0.648495
       ],
-      "glosa": "12 Dotaciones a las provisiones para riesgos"
+      "glosa": "12 Dotaciones a provisiones para riesgos"
     },
     {
       "label": "a) Spese varie organizzazione gare",
@@ -374,7 +374,7 @@
       "values": [
         0.161046
       ],
-      "glosa": "a) Gastos diversos de organización de partidos"
+      "glosa": "a) Gastos varios de organización de partidos"
     },
     {
       "label": "b) Tassa iscrizioni gare",
@@ -384,7 +384,7 @@
       "values": [
         0.00794
       ],
-      "glosa": "b) Tasas de inscripción en competiciones"
+      "glosa": "b) Cuotas de inscripción en competiciones"
     },
     {
       "label": "c.1) percentuale su incassi gare a squadra ospite",
@@ -394,7 +394,7 @@
       "values": [
         0.610654
       ],
-      "glosa": "c.1) Porcentaje de recaudación de partidos al equipo visitante"
+      "glosa": "c.1) Porcentaje sobre recaudación de partidos al equipo visitante"
     },
     {
       "label": "c.2) percentuale su diritti televisivi a squadra ospite",
@@ -404,7 +404,7 @@
       "values": [
         5.248807
       ],
-      "glosa": "c.2) Porcentaje de derechos audiovisuales al equipo visitante"
+      "glosa": "c.2) Porcentaje sobre derechos audiovisuales al equipo visitante"
     },
     {
       "label": "d) Costi per acquisizione temporanea prestazioni calciatori",
@@ -414,7 +414,7 @@
       "values": [
         0.17
       ],
-      "glosa": "d) Gastos por cesión temporal de derechos de futbolistas"
+      "glosa": "d) Gastos por cesión temporal de derechos federativos de futbolistas"
     },
     {
       "label": "e) Minusvalenze da cessione diritti alle prestazioni dei calciatori",
@@ -424,7 +424,7 @@
       "values": [
         0.197733
       ],
-      "glosa": "e) Pérdidas por enajenación de derechos federativos de futbolistas"
+      "glosa": "e) Minusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "f) Altri oneri da gestione calciatori",
@@ -444,7 +444,7 @@
       "values": [
         0.964596
       ],
-      "glosa": "g) Otros gastos de gestión corriente"
+      "glosa": "g) Otros gastos de explotación"
     },
     {
       "label": "a) di partecipazioni",
@@ -464,7 +464,7 @@
       "values": [
         0.777914
       ],
-      "glosa": "c) Pérdidas extraordinarias"
+      "glosa": "c) Gastos extraordinarios"
     },
     {
       "label": "d) altri oneri straordinari",

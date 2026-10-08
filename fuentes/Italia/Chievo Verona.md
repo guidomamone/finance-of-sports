@@ -22,3 +22,5 @@ El sitio viejo (Drupal) colgaba los bilanci de una página institucional como ad
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2014 desde `Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf` (sourceId `chievoverona-it-bilancio-30-giugno-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2016 desde `Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.pdf` (sourceId `chievoverona-it-bilancio-30-giugno-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2015 desde `Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf` (sourceId `chievoverona-it-bilancio-30-giugno-2015`).
