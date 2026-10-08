@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
- "generado": "2026-10-08T12:09:02.361Z",
- "estado": "cola",
+ "generado": "2026-10-08T12:14:02.937Z",
+ "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2019,
  "escala": {
@@ -27,9 +27,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "dd00567"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -714,6 +712,10 @@
   }
  ],
  "confirmadosPorSumas": [
+  {
+   "linea": 375,
+   "numero": "2.875.337"
+  },
   {
    "linea": 393,
    "numero": "207.540"
