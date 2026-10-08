@@ -309,6 +309,17 @@ const lazioitRevenueLinesByYear = {
     { rawLabel:'Materiale per vendita a terzi', normalizedCategory:'sponsorship_commercial', amountNative:1.208, disclosureLevel:'aggregated' }, // pág. 136, precedente
     { rawLabel:'Altri', normalizedCategory:'sponsorship_commercial', amountNative:0.02, disclosureLevel:'aggregated' }, // pág. 136, precedente
   ],
+  // 2026: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2026: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:18.064454, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Diritti radiotelevisivi e proventi media', normalizedCategory:'broadcasting', amountNative:88.451323, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Ricavi da sponsorizzazione e pubblicità', normalizedCategory:'sponsorship_commercial', amountNative:17.819495, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Proventi da gestione diritti calciatori', normalizedCategory:'player_sales', amountNative:2.93598, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:5.222657, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Ricavi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:1.994375, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati', normalizedCategory:'player_sales', amountNative:39.25095, disclosureLevel:'aggregated' }, // pág. 130, precedente
+  ],
 };
 const lazioitExpenseLinesByYear = {
   2007: [ // tools/cargar.mjs (2026-10-07)
@@ -687,6 +698,14 @@ const lazioitExpenseLinesByYear = {
     { rawLabel:'Svalutazione delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-4.514, disclosureLevel:'aggregated' }, // pág. 141, precedente
     { rawLabel:'Accantonamenti e altre svalutazioni', normalizedCategory:'other_amortisation', amountNative:-4.631864, disclosureLevel:'aggregated' }, // pág. 94, precedente
   ],
+  2026: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Costi per materie prime', normalizedCategory:'other_expenses', amountNative:-3.121558, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Costo del Personale', normalizedCategory:'wages_squad', amountNative:-104.624917, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Costi per servizi', normalizedCategory:'admin_general_expense', amountNative:-23.942081, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Oneri da gestione diritti calciatori', normalizedCategory:'other_expenses', amountNative:-2.385868, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-7.01245, disclosureLevel:'aggregated' }, // pág. 130, precedente
+    { rawLabel:'Ammortamenti, accantonamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-46.288837, disclosureLevel:'aggregated' }, // pág. 130, precedente
+  ],
 };
 const lazioitFiscalYearMeta = {
   2007: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -971,6 +990,22 @@ const lazioitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:129.061368, officialTotalExpenses:114.099514, officialPAT:11.377545,
   },
+  2026: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2026-06-30',
+    sourceId:'lazio-it-relazione-finanziaria-annuale-2025-26',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.555701, tax:9.148935,
+    extraRows: [
+      {label:'Proventi finanziari', value:1.96127},
+      {label:'Oneri finanziari', value:-7.516971},
+      {label:'Imposte correnti', value:-3.178096},
+      {label:'Imposte differite e anticipate', value:12.327031},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:173.739234, officialTotalExpenses:187.375711, officialPAT:-10.043242,
+  },
 };
 const lazioitPresupuestoOverlayByYear = {};
 
@@ -1078,6 +1113,12 @@ Object.assign(sources, {
     title:'S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2016-17 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'lazio-it-relazione-finanziaria-annuale-2025-26': {
+    id:'lazio-it-relazione-finanziaria-annuale-2025-26', clubId:'lazio-it',
+    title:'S.S. Lazio S.p.A. — Lazio-relazione-finanziaria-annuale-2025-26 (ejercicio 2026)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
