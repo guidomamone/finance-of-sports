@@ -251,8 +251,9 @@ Mitigaciones:
 ```
 
   La cadena depende del orden (Fortaleza: 2025 declara → 2024 → 2023): `verificarLista()` repite la pasada si alguno se resolvió así.
-- **Resultado impreso, escalón 2** (Versión 415): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT pegada al último
-  bloque (hasta 4 líneas); compuerta: alguna lectura cierra con él exacto.
+- **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
+  "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
+  compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte".
 - **Chequeos cruzados** (año vecino, año anterior cargado; Versión 416): si ninguna fila trae la columna del año anterior, "no se puede".
 - **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
   documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.

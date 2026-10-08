@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 592 — El resultado impreso en una tabla de una fila, pegada al estado (to-do 168, primera parte) (2026-10-08)
+
+- `verificar.mjs`, escalón 2 del resultado impreso (Versión 415): además de PREJUÍZO / SUPERÁVIT, reconoce "UTILE (PERDITA) DELL'ESERCIZIO" con el
+  signo del importe impreso, y `ANTES_RE` reconoce "prima delle imposte". La compuerta no cambia: alguna lectura tiene que cerrar exacto.
+- Caso: Napoli 2021 (resultado en L299, b14, fuera del estado b12-b13) y 2022 (L309, b15). Antes quedaban "ok" sin resultado impreso; 2022 con
+  gastos 483,2 M (el doble). Ahora cierran por la lectura 4 con el resultado exacto (2021: gastos 306.643.672, resultado −58.941.765;
+  2022: gastos 241.171.517, resultado −51.951.202). Medido sobre los 163 documentos de Generados/: cambian solo esos dos. Ensayo de
+  `cargar.mjs`: 2021 carga; 2022 frena por categorización (falta `.categorias.json`; "Valore di realizzo" y "Sell on Fee" sin categoría).
+
 ## Versión 591 — Lazio 2007-08 y 2011-12 resueltos a mano; tools/estado-desde-md.mjs (2026-10-08)
 
 - Decisión de Guido: documentos viejos, a mano y no con un cambio de script (to-do 167). 2007-08: sin las filas de las notas en miles

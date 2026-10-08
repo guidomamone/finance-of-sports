@@ -509,7 +509,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // número impreso para cerrar (ni totales, ni resultado, ni antes de impuestos), eso también es un fallo: antes pasaba como OK sin chequeo.
   const tI = F.total_ingresos ? Math.abs(parseNumber(F.total_ingresos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
   const tG = F.total_gastos ? Math.abs(parseNumber(F.total_gastos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
-  const ANTES_RE = /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte/i;
+  const ANTES_RE = /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte|prima\s+delle\s+imposte/i;
   // EL RESULTADO IMPRESO SE LEE POR SU ETIQUETA (Versión 361): si la línea que extraer marcó como "resultado del ejercicio" dice "antes de
   // impuestos", es el resultado ANTES de impuestos (lectura 1), no el final. Caso real: Fortaleza CEIF 2023-2025 (las notas hacen de estado):
   // F.resultado apuntaba a L719 "Utilidad contable antes de impuesto" 1.609.817 y se le restaba el impuesto; sin restarlo cierra exacto.
@@ -527,9 +527,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const L = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
       for (let i = finEstado; i < Math.min(finEstado + 4, L.length); i++) { // L[i] es la línea i+1 del .md
         const m = L[i].match(/(PREJU[IÍ]ZO|D[EÉ]FICIT|SUPER[AÁ]VIT|LUCRO)[^0-9(]{0,40}(\(?-?\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?\)?)/i);
-        if (!m) continue;
-        const v = Math.abs(parseNumber(m[2]) ?? NaN) * mult((F.ubicacion?.estado || []).slice(-1)[0]);
-        if (isFinite(v) && v) { resCerca = { M: /PREJU|D[EÉ]FICIT/i.test(m[1]) ? -v : v, linea: i + 1, texto: L[i].trim().slice(0, 80) }; break; }
+        // (to-do 168) italiano: "UTILE (PERDITA) DELL'ESERCIZIO" trae las dos palabras, así que el signo lo da el importe impreso (entre paréntesis o con
+        // menos = pérdida). Caso: Napoli 2021 (L299, tabla de una fila pegada al bloque b13) y 2022 (L309).
+        const mi = m ? null : L[i].match(/UTILE\s*\(\s*PERDITA\s*\)\s*DELL.\s*ESERCIZIO[^0-9(\-]{0,20}(\(?-?\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?\)?)/i);
+        if (!m && !mi) continue;
+        const k = mult((F.ubicacion?.estado || []).slice(-1)[0]);
+        const v = mi ? (parseNumber(mi[1]) ?? NaN) * k : Math.abs(parseNumber(m[2]) ?? NaN) * k;
+        if (isFinite(v) && v) { resCerca = { M: mi ? v : /PREJU|D[EÉ]FICIT/i.test(m[1]) ? -v : v, linea: i + 1, texto: L[i].trim().slice(0, 80) }; break; }
       }
     }
   }

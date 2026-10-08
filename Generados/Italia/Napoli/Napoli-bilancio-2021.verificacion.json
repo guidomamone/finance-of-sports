@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2021.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2021.md",
- "generado": "2026-10-08T01:12:56.025Z",
+ "generado": "2026-10-08T13:01:04.986Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2021,
@@ -22,12 +22,17 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "306.750588 = 306.643672"
+   "detalle": "306.643672 = 306.643672"
   },
   {
-   "nombre": "resultado del ejercicio",
-   "ok": null,
-   "detalle": "extraer.mjs no encontró el resultado impreso"
+   "nombre": "resultado antes de impuestos",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2022",
@@ -38,6 +43,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "antes de impuestos -77.948091 con el impuesto restado = -58.941765, impreso en este documento (L162; escalón 0)"
   }
  ],
  "notas": [
@@ -47,6 +57,9 @@
   "la nota de \"h) plusvalenza da cessione diritti pluriennali calciatori\" no suma el renglón (100.476174 contra 48.743167, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"c) altre svalutazioni delle immobilizzazioni\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Variaz. delle riman. mat.prime, sussid., di consumo e merci\" no suma el renglón (0 contra 0.053458, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"17) resta\": el signo del 17-bis lo eligen las sumas (L285 suma, L286 resta): única combinación que da el total de C impreso",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: Son cuadros por jugador cuyo total ya figura en las notas b63 y b78.",
   "duda de localizar que no afecta la carga: Es desglose por contraparte, no por categoría de ingreso o gasto.",
   "duda de extraer que no afecta la carga: El estado termina en L296 con el total de impuestos; no aparece la línea de resultado del ejercicio.",
@@ -92,13 +105,19 @@
  ],
  "totales": {
   "ingresos": 228.097847,
-  "gastos": 306.750588,
-  "financiero": 0.700868,
+  "gastos": 306.643672,
+  "financiero": 0.597734,
   "impuesto": -19.006326,
-  "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
-  "lecturaSignos": null
+  "resultadoImpreso": -77.948091,
+  "resultadoParaCargar": -58.941765,
+  "resultadoFinal": {
+   "valor": -58.941765,
+   "impuesto": "restado",
+   "escalon": "escalón 0",
+   "donde": "este documento",
+   "linea": 162
+  },
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -672,10 +691,10 @@
   {
    "etiqueta": "Variaz. delle riman. mat.prime, sussid., di consumo e merci",
    "lado": "gasto",
-   "M": 0.053458,
+   "M": -0.053458,
    "pagina": 6,
    "linea": 253,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "b) tasse iscrizione gare",
@@ -744,7 +763,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -754,7 +773,7 @@
   },
   {
    "etiqueta": "e) altri",
-   "M": 0.047765,
+   "M": -0.047765,
    "linea": 282
   },
   {
@@ -764,34 +783,34 @@
   },
   {
    "etiqueta": "b) perdite su cambi",
-   "M": 0.003802,
+   "M": -0.003802,
    "linea": 286
   }
  ],
  "impuesto": [
   {
    "etiqueta": "a) imposte correnti",
-   "M": 3.713189,
+   "M": -3.713189,
    "linea": 291
   },
   {
    "etiqueta": "b) imposte relative a esercizi precedenti",
-   "M": -2.541673,
+   "M": 2.541673,
    "linea": 292
   },
   {
    "etiqueta": "c) oneri (proventi) da consolidato fiscale",
-   "M": -1.932616,
+   "M": 1.932616,
    "linea": 293
   },
   {
    "etiqueta": "d) imposte differite",
-   "M": 4.927366,
+   "M": -4.927366,
    "linea": 294
   },
   {
    "etiqueta": "e) imposte anticipate",
-   "M": -23.172592,
+   "M": 23.172592,
    "linea": 295
   }
  ]

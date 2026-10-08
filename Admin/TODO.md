@@ -158,27 +158,19 @@ ni en el comentario de ningún archivo de código.
     (decisión de Guido, 2026-10-08: documentos viejos, no justifican cambiar el script): ajustes que sacan TOTALE RICAVI / TOTALE COSTI
     OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs; los dos cargados. Lazio 2012-13 está cargado bien (solo
     falla el chequeo del total de gastos: en Italia TOTALE COSTI OPERATIVI deja las amortizaciones debajo).
-    QUEDA: Napoli 2021 y 2022 (sin cargar). Guido lo quiere ver en detalle. PUNTO DE PARTIDA (diagnóstico del 2026-10-08):
-    - Los dos dan "ok" porque (1) extraer.mjs NO encontró el resultado impreso: el chequeo del resultado queda en null en vez de fallar,
-      y el estado "ok" sale solo de los totales; y (2) en 2022 el total de gastos "cierra" por la rama filaTotal de ajuste() ("TOTALE COSTI
-      DELLA PRODUZIONE B) 241.171517 cierra; además se suman 46 línea(s) fuera de ese total (242.051209)"): la regla "total + líneas fuera
-      de ese total" (pensada para Nottingham Forest) acepta las filas de una nota como si fueran líneas aparte. Gastos 483,2 M (el doble).
-    - 2021: ingresos 228.097.847 (= impreso), gastos 306.750.588 vs 306.643.672 impreso, financiero +0,70 M, impuesto −19,0 M, sin
-      resultado impreso encontrado. cargar.mjs frena en tie-out (no hay PAT). 2022: ingresos 175.995.109, ajuste `fila` del 17-bis
-      "b) perdite su cambi"; cargar.mjs frena en tie-out y categorización.
-    - Qué mirar primero: dónde está el "Utile (perdita) dell'esercizio" en el .md (Clubes/Italia/Napoli/Napoli-bilancio-202{1,2}.md;
-      verificar.mjs ANTES_RE no reconoce "prima delle imposte", ver to-do 168) y si fijarlo con un ajuste `resultado-final` (con --linea)
-      alcanza para que la escalera elija la lectura correcta. Cuidado: en 2022 ya se probó un `resultado-final` y verificar dedujo un
-      impuesto de −254,9 M que absorbía el doble conteo (se anuló): el resultado tiene que cerrar con el impuesto IMPRESO, no deducido.
-    - DISEÑOS posibles (de a uno, como escalón, midiendo los 162): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el
-      .md; (b) la rama filaTotal no acepta líneas fuera del total que vienen de una nota; (c) sacar la fila total de las hojas antes de
-      sumar.
+    QUEDA: Napoli 2021 y 2022 (sin cargar). La Versión 592 (to-do 168) ya les encuentra el resultado impreso y cierran por la lectura 4:
+    2021 carga en el ensayo de cargar.mjs; 2022 frena por categorización (falta .categorias.json: lote con la etapa 7; "Valore di realizzo"
+    7,79 M y "Sell on Fee" 3,0 M sin categoría).
+    DEFECTO DE FONDO, sin resolver: la rama filaTotal de ajuste() acepta como "líneas fuera de ese total" las filas de una nota (Napoli 2022
+    sin resultado: gastos 483,2 M, el doble). Hoy se destapa solo si falta el resultado impreso. DISEÑOS posibles (de a uno, como escalón,
+    midiendo los 163): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el .md fuera del alcance del escalón 2; (b) la rama
+    filaTotal no acepta líneas fuera del total que vienen de una nota; (c) sacar la fila total de las hojas antes de sumar.
 
-168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). El estado de resultados queda incompleto cuando el .md lo parte en tablitas o
-    en texto con layout: Napoli 2022 (el resultado L309 quedó en otro bloque, b15), Inter 2019-20 (corta en L910; el resultado está en L912 y
-    L918), Hellas Verona 2023 (huecos: 11) L357, 12) L360 y la sección C L387-L395), Monza 2023 (tabla cortada en el salto de página,
-    b39/b40). DISEÑO: extender el estado a los bloques consecutivos hasta "Utile (perdita) dell'esercizio"; compuerta: con ellos, ingresos −
-    gastos ± financiero ± impuesto = ese resultado exacto. Además verificar.mjs (ANTES_RE) no reconoce "prima delle imposte" (Napoli 2022).
+168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). Primera parte hecha (Versión 592): el resultado impreso en una tabla de una fila
+    pegada al estado ya se lee (Napoli 2021 y 2022). Queda el estado INCOMPLETO cuando el .md lo parte en tablitas o en texto con layout:
+    Inter 2019-20 (corta en L910; el resultado está en L912 y L918), Hellas Verona 2023 (huecos: 11) L357, 12) L360 y la sección C
+    L387-L395), Monza 2023 (tabla cortada en el salto de página, b39/b40). DISEÑO: extender el estado a los bloques consecutivos hasta
+    "Utile (perdita) dell'esercizio"; compuerta: con ellos, ingresos − gastos ± financiero ± impuesto = ese resultado exacto.
 
 169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). Cuando la transcripción deja el estado como texto
     plano o con las etiquetas en una columna y los importes en otra, extraer solo lee tablas y el estado queda sin financiero ni impuesto:
