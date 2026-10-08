@@ -10,7 +10,7 @@
 //   2022: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -165,6 +165,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:707.217, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2018-19",
         mix:[["Comercial / Sponsors",173.965],["Estadio",80.403],["Televisión",235.159],["Venta de Jugadores",178.879],["Otros ingresos",38.811]] },
+      { id:"asroma-it", revenue:433.595, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2019",
+        mix:[["Comercial / Sponsors",49.311],["Estadio",75.431],["Televisión",127.364],["Venta de Jugadores",168.722],["Otros ingresos",12.767]] },
       { id:"bologna-it", revenue:97.485, reportType:"official_balance_sheet",
         sourceId:"bologna-it-bilancio-consolidato-2018-19",
         mix:[["Comercial / Sponsors",13.4],["Estadio",6.574],["Televisión",50.188],["Venta de Jugadores",21.236],["Otros ingresos",6.087]] },
