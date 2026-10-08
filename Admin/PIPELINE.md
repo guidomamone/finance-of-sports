@@ -213,6 +213,8 @@ Mitigaciones:
  LECTURA 3  + renglones sin lado, según su signo ──────────────────────── ¿cierra? sí → OK
  LECTURA 4  + signos impresos; subtotal de un solo renglón; total bruto con deducciones aparte (Versiones 396, 409); los ajustes
             `fila` también con su signo, relativo a la mayoría de los ajustes de su lado (Versión 493)
+ ESCALÓN    si la 4 no cierra: la 4 sin contar el subtotal que repite el renglón INMEDIATO de arriba (mismo importe); si el renglón
+            no se abrió, el subtotal ocupa su lugar con su nota; misma compuerta que la 4 (Versión 586, to-do 175; caso Parma 2025)
  LECTURA 5  solo las hojas, con signo (C/D de balancetes); sin totales; compuerta: resultado impreso exacto (Versión 414)
  LECTURA 6  la 5 + los renglones sin lado, según su signo (Versión 434)
  ESCALÓN    si NINGUNA lectura cerró el RESULTADO: la 5 otra vez + los ajustes `fila` del financiero sin `reemplaza` (la 5 solo suma

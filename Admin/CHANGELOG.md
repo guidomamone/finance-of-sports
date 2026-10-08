@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 586 — Escalón "subtotal repetido" en verificar.mjs (to-do 175, escalón 1) (2026-10-08)
+
+- Si la lectura 4 no cierra, se prueba la 4 sin contar el subtotal que tiene el MISMO importe que el renglón inmediato de arriba (es ese
+  renglón repetido): si el renglón ya se abrió con su nota, el subtotal se saltea; si no, ocupa su lugar y se abre con SU nota. Misma
+  compuerta que la 4. También lo usan los chequeos de año anterior y año vecino, y el escalón "17) resta" prueba esta base después de la 4.
+- Causa en Parma: "Totale altri ricavi e proventi" repite "altri" (2025: L525/L526, 118.887.215); los ingresos daban el doble, ganaba la
+  lectura 5 (sin notas) y la televisión quedaba en 0 aun en el reintento.
+- Medido en una copia: Italia, cambian solo 5 de 98 (Parma 2018, 2022, 2024 y 2025 pasan de la lectura 5 a la 4 con la nota abierta;
+  Parma 2023, solo el texto de un chequeo); prueba completa 0 de 87. Parma 2023 deja su ajuste de "altri" (anulado; carga idéntica).
+
 ## Versión 585 — Cremonese 2022 y 2024 recargados con "altri" abierto (to-do 174 cerrado) (2026-10-08)
 
 - "altri" (21,7 y 42,8 M, el 74% de los ingresos en 2024) entraba entero como lump_football_operations. Arreglo sin reintento pago:

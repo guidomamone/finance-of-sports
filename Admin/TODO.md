@@ -124,8 +124,7 @@ ni en el comentario de ningún archivo de código.
       795.012 − 3.704.825 + 2.816.272 − 5.917 = −99.458) queda +99.458, la lectura 4 falla por 198.916 y gana la 5 (cargado bien, 29 líneas,
       ninguna de nota). Como troubleshoot: si la 4 no cierra, repetirla con las hojas con el signo impreso del renglón; misma compuerta.
       Ganancia: solo detalle de Napoli 2024.
-    - C) un subtotal igual al renglón INMEDIATO de arriba es ese renglón repetido (compuerta: total de ingresos): solo Parma 2023, que hoy
-      cierra con un ajuste ("altri" L557).
+    - C) hecho como escalón del to-do 175 (Versión 586, "subtotal repetido").
     CUÁNDO HACERLO: si aparece un documento que con esto queda mal o frenado. Para arreglarlo a mano: un gasto con valor negativo NO resta
     (los gastos van en valor absoluto); una partida que reduce costos se muda al lado ingreso con el mismo valor (Roma 2018, "Variazione
     delle rimanenze (reduce costos)", 82); un total contado como línea se saca con `fila --valor "0" --reemplaza "<etiqueta>"`.
@@ -227,6 +226,13 @@ ni en el comentario de ningún archivo de código.
     primera pasada, si un renglón other_income/lump_* es más del 20% de los ingresos y el índice de bloques tiene una nota cuyas filas suman
     ese renglón, abrirlo con esa nota; compuerta: la suma de las filas = el renglón (tolerancia de redondeo). Medir: los 6 de arriba deben
     abrirse sin reintento; Bologna 2018-19 y Cremonese 2025 (abiertos por reintento) tienen que dar idéntico.
+    - ESCALÓN 1 HECHO (Versión 586): Parma no abría porque "Totale altri ricavi e proventi" repite "altri" (mismo importe, L526/L525 en
+      2025) y se contaba dos veces; ninguna lectura 0-4 cerraba y ganaba la 5 (sin notas). Ahora, si la 4 no cierra, se prueba sin el
+      subtotal repetido: Parma 2018, 2022, 2024 y 2025 cierran por la 4 con la nota abierta; Parma 2023 ya no necesita su ajuste (anulado).
+      FALTA EL ESCALÓN 2 (aprobado por Guido el 2026-10-08): después de elegir la lectura, si un renglón de ingresos es ≥ 20% del total y
+      una nota del subtotal que lo contiene suma exacto, evaluar la misma lectura con la nota abierta; compuerta: cierra igual. Medir:
+      Bologna 2018-19 y Cremonese 2022/2024/2025 idénticos a lo cargado; Sassuolo 2021/2024 y Sampdoria 2018 abiertos en la primera
+      pasada; Atalanta 2024 y Parma 2023 sin cambios.
     - Resultado del reintento (lote 30, 2026-10-08, US$ 1,19): abrió Sassuolo 2021 (TV 47,4 M), Sassuolo 2024 (17,8 M) y Sampdoria 2018
       (47,7 M), cargados. En Parma NO abrió: 2018 y 2025 siguen con Televisión en 0, y Parma 2024 sale "lista para cargar" con TV en 0 y
       "altri" 37,0 M entero (82% de los ingresos) — no se cargó. Mirar por qué el escalón no toma la nota de Parma (L1530 / L1168).
