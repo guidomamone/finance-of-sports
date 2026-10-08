@@ -39,6 +39,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const USD_PAGINA_GEMINI = 0.003;
+const MIN_NUMS_PAGINA = 10; const COBERTURA_MIN_PAGINA = 0.25; // (to-do 179) ver el escalón "página con texto que no trae sus números"
 const MIN_TEXTO = 50; // caracteres de texto propio (sin espacios) por debajo de los cuales una página de un PDF digital es una imagen
 
 const textoPagina = (pdf, n) => execFileSync('pdftotext', ['-layout', '-f', String(n), '-l', String(n), pdf, '-'], { maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('utf8');
@@ -78,6 +79,17 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
   // 200 dpi) dentro de un PDF de Acrobat; los 120 números de la tabla quedaban sin confirmar. Medido: 1 de 632 páginas de 99 PDFs digitales.
   const textos = new Map(); const hibridas = [];
   if (modo === 'digital') for (const n of paginas) { try { const tx = textoPagina(pdfAbs, n); textos.set(n, tx); if (tx.replace(/\s/g, '').length < MIN_TEXTO) hibridas.push(n); } catch { textos.set(n, null); } }
+  // (to-do 179, Genoa 2023, pág. 13 del visor) ESCALÓN "página con texto que no trae sus números": en un PDF digital, la página del estado
+  // tiene el texto del encabezado y del pie pero la TABLA es una imagen (más de MIN_TEXTO caracteres, así que no cuenta como híbrida), y sus
+  // 71 números quedaban "sin confirmar" con la etapa 6 cerrada al centavo. Compuerta única, la misma de verifyNumbers() para un documento
+  // entero: si de los números de los bloques de la página (de 4 cifras o más) menos del 25% están en su texto propio (y son al menos 10),
+  // la página va a la segunda lectura como una híbrida.
+  if (modo === 'digital') for (const n of paginas) {
+    if (hibridas.includes(n) || !textos.get(n)) continue;
+    const ts = extractNumbers(textos.get(n)); let tot = 0; let en = 0;
+    for (const id of ids) { const b = ub.bloques[id]; if (b.pagina !== n) continue; for (let k = b.lineas[0]; k <= b.lineas[1]; k++) for (const m of String(L[k - 1] || '').matchAll(NUM_RE)) { const num = normNum(m[0]); if (num.length < 4) continue; tot++; if (ts.has(num)) en++; } }
+    if (tot >= MIN_NUMS_PAGINA && en / tot < COBERTURA_MIN_PAGINA) hibridas.push(n);
+  }
   const aPagar = (ps) => ps.filter((n) => !existsSync(resolve(ROOT, derivado(md, `.pag${n}.segunda.md`, { crear: false })))).length * USD_PAGINA_GEMINI;
   if (!ejecutar) return { ensayo: true, modo, motivoModo: v.reason || null, paginas, hibridas, usd: modo === 'digital' ? aPagar(hibridas) : paginas.length * USD_PAGINA_GEMINI };
   const fuentes = {}; const segundas = new Map();

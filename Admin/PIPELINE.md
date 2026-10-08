@@ -143,6 +143,10 @@ Mitigaciones:
 - a) PDF digital: cada número de los bloques elegidos se busca en el texto propio de su página. Gratis.
   Una página de un PDF digital SIN texto propio (menos de 50 caracteres: una hoja escaneada metida en el PDF, como el pro-forma firmado
   de Como 2025, pág. 9 del visor) se valida como un escaneo (b). `.validacion.json` → `hibridas`.
+  Lo mismo una página con texto de encabezado y pie pero con la TABLA en imagen: si de los números de sus bloques (4 cifras o más, al menos 10)
+  menos del 25% están en su texto propio, va a (b) (Versión 610, to-do 179; caso Genoa 2023, pág. 13 del visor, 71 números sin confirmar con la
+  etapa 6 cerrada al centavo). Medido en los 242 documentos con validación: cambian Genoa 2023 (1 página), Inter 2024 (6, notas con la tabla en
+  imagen) y Lazio 2022 (2); los demás, idéntico.
 - b) Escaneo: Gemini lee la imagen de esa página (si la rechaza, Claude). ~US$ 0,003 por página.
 - **Escalera** (en qué escalón quedó cada página: `.validacion.json` → `fuentes`; el conteo, `node tools/estado.mjs --escalones`):
 
