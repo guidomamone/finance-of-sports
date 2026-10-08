@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 604 — Torino 2020 y 2025 cargados con el estado formal re-transcripto a mano (2026-10-08)
+
+- En `Torino-bilancio-2020.md` y `2025.md` Mistral había separado las etiquetas del conto economico de sus importes (columna aparte). Se re-transcribió a mano desde la
+  página 17 y la 15 del PDF, con las sumas comprobadas contra lo impreso, y se armaron a mano en la sesión el `.ubicacion.json` y el `.filas.json` (estado y notas en
+  miles: ricavi, materie prime, servizi, godimento, oneri diversi y, en 2020, altri ricavi). Lote 45: validar-bloques con `--rehacer` (gratis) y categorización con la caché
+  (US$ 0,00). 2020: pérdida −19.069.954; 2025: pérdida −13.104.781, los dos exactos. Auditoría P0 0, P1 0. Un P1 de `fuentes/README.md` desfasado (llegó con el sourcing de Malta)
+  se arregló con `generate-fuentes-index.js`.
+
 ## Versión 603 — Gestiones de Fiorentina, Genoa, AC Milan y Parma; 10 casos de la cola resueltos (2026-10-08)
 
 - `data/gestiones/it.js`: Rocco Commisso (Fiorentina, 6/6/2019 al 16/1/2026), Alberto Zangrillo y Dan Sucu (Genoa, 15/11/2021 al 13/1/2025 y desde ahí), Silvio Berlusconi

@@ -236,8 +236,7 @@ ni en el comentario de ningún archivo de código.
        afuera, columna Totale en cuadros con subcolumnas, notas que no suman o desglosan solo una columna quedan afuera, primer año verificado contra el estado).
        Falta correr el lote 44 (etapa 7, ~US$ 0,6) y cargar: AC Milan 2021, AS Roma 2009 y 2013 a 2017, Bologna 2018 y 2023, Fiorentina 2019, Genoa 2025, Hellas
        Verona 2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Sassuolo 2023. AS Roma 2011 (separato) se descartó (el perímetro de
-       Roma es consolidado). Pendiente de decisión de Guido: Torino 2020 y 2025: el conto economico formal quedó en la transcripción sin los importes (solo las
-       etiquetas, Torino-bilancio-2020.md L640 y 2025 L619) y el estado salió del cuadro riclassificato de la relazione; ¿se carga así o se re-transcribe la página?
+       Roma es consolidado). Torino 2020 y 2025 se cargaron el 2026-10-08 con el estado formal re-transcripto a mano (lote 45).
     2. Lazio 1999, 2000 y 2001 en liras (decidido: ITL): soporte de la moneda (CURRENCY_META, FX_CLOSE con la paridad fija 1.936,27 y la serie del BCE, la
        excepción de la moneda legado en cargar.mjs) y cerrar los tres (2000: ingresos 343.364 contra 245.595 millones en el documento siguiente, parece perímetro).
     3. El resultado o el total de gastos no cierra (17): AC Milan 2008 a 2012 (falla el resultado en los cinco, sin diagnosticar); AS Roma 2007 y 2012; Bologna

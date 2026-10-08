@@ -56,8 +56,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
-- Italia (onboarding en curso): 19 clubes con alta. Cargados 91 ejercicios de 18 clubes además de Juventus (23): Lazio 16, AS Roma 7, Atalanta 7,
-  Parma 8, AC Milan 6, Napoli 6, Torino 6, Bologna 4, Cremonese 4, Fiorentina 4, Hellas Verona 4, Inter 3, Monza 3, Sassuolo 6, Como 2,
+- Italia (onboarding en curso): 19 clubes con alta. Cargados 93 ejercicios de 18 clubes además de Juventus (23): Lazio 16, AS Roma 7, Atalanta 7,
+  Parma 8, AC Milan 6, Napoli 6, Torino 8, Bologna 4, Cremonese 4, Fiorentina 4, Hellas Verona 4, Inter 3, Monza 3, Sassuolo 6, Como 2,
   Sampdoria 2, Udinese 2, Genoa 1. El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D, el subtotal repetido, el
   renglón grande sin abrir (TV escondida en "altri"), la etapa 4 que frenaba en silencio (Versiones 581-590) y el resultado impreso en una
   tabla de una fila pegada al estado (Versión 592). Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166). Atalanta y

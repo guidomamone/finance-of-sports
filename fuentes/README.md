@@ -85,8 +85,8 @@ la línea de ese país acá solo si cambió alguno de sus números.
 
 ## Índice de países
 
-Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **79 países,
-1231 clubes trackeados, 924 con documento encontrado.**
+Un archivo por país en `fuentes/_indice/<País>.md`, con una línea por club. Hoy: **80 países,
+1241 clubes trackeados, 934 con documento encontrado.**
 
 "Con documento" = existe al menos un documento financiero identificado y accesible con cifras de
 ese club — propio, o un agregado de liga con desglose club por club, como la DNCG francesa —
@@ -146,6 +146,7 @@ aunque todavía no esté cargado al sitio. No cuenta un documento confirmado per
 - [Letonia](_indice/Letonia.md) — 9 clubes, 8 con documento — Chequeo más antiguo: 2026-10-03
 - [Lituania](_indice/Lituania.md) — 8 clubes, 7 con documento — Chequeo más antiguo: 2026-10-03
 - [Macedonia del Norte](<_indice/Macedonia del Norte.md>) — 1 club, 1 con documento — Chequeo más antiguo: 2026-10-03
+- [Malta](_indice/Malta.md) — 10 clubes, 10 con documento — Chequeo más antiguo: 2026-10-08
 - [Marruecos](_indice/Marruecos.md) — 2 clubes, 0 con documento — Chequeo más antiguo: 2026-10-03
 - [México](_indice/México.md) — 19 clubes, 5 con documento — Chequeo más antiguo: 2026-09-13
 - [Moldavia](_indice/Moldavia.md) — sin clubes trackeados individualmente, ver el detalle
