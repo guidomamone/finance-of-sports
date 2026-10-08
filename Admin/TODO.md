@@ -146,3 +146,71 @@ ni en el comentario de ningún archivo de código.
     escribe recién en el commit del primer año. Ojo: el registro está desactualizado (lista como pendientes 16 clubes de Italia que ya tienen alta):
     recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
+
+166. ITALIA: SECCIÓN D Y 17-BIS SIN SIGNO (verificar.mjs). Ya pasó lo que el to-do 155 esperaba ("CUÁNDO HACERLO"): documentos sin cargar
+    que no cierran por el patrón. Informes de los subagentes (2026-10-08): scratchpad de la sesión, `cola6/informe-{A,B,C,D}.md` (copiar lo
+    útil antes de que se pierda). Casos, todos resueltos hoy con ajustes `fila` del financiero:
+    - 17-bis / "b) perdite su cambi" impreso en positivo que resta: Atalanta 2019 (L429, 923), Napoli 2022 (L294, 6.136), Napoli 2023
+      (L280, 212; cargado).
+    - D) rettifiche sin lado: AC Milan 2017-18 (L1016, svalutazioni 218: −125.801 vs −126.019 impreso), AC Milan 2021-22 (L835 +521,
+      L840 (1.000)); hay 5 ajustes iguales de antes (Milan 2023-24 x2, Inter 2021-22 y 2024-25, Bologna 2019-20).
+    - 17) sin la etiqueta "17)" se suma como ingreso: Torino 2019 (L647, 609.108).
+    - D) "a) di partecipazioni (4.000)" entra como INGRESO por el signo y la tolerancia lo tapa: Atalanta 2025 (L251; resultado 8.000 € alto).
+    DISEÑO (escalón, una compuerta): las filas entre "C)"/"D) RETTIFICHE" y "Risultato prima delle imposte" se leen como financiero con su
+    signo (18) suma, 19) resta, perdite del 17-bis restan); compuerta: su suma = el Totale C/D impreso y el resultado cierra EXACTO.
+
+167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
+    fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Cuando ninguna otra lectura cierra, el caso que
+    llega a la cola trae números absurdos. Casos: Lazio 2007-08 (TOTALE RICAVI L3413 + sus 18 hojas: 204,96 = 2 × 102,48; el año anterior
+    da 152,54 = 2 × 76,27), AC Milan 2017-18 (ingresos 511.716 vs 255.733), Napoli 2022 (gastos 483,2 vs 241,2), Atalanta 2019 (gastos 295,8
+    vs 147,7), Lazio 2011-12. Napoli 2022 NO se cargó: con un ajuste `resultado-final` verificar deducía un impuesto de −254,9 M que
+    absorbía el doble conteo (ajuste anulado). Variante: Lazio 2012-13 compara el "total de gastos" con TOTALE COSTI OPERATIVI, que en
+    Italia deja las amortizaciones debajo (93,33 vs 114,57; las líneas están bien). DISEÑO: sacar la fila total de las hojas antes de sumar;
+    compuerta: sin ella, la suma de las hojas = el total impreso.
+
+168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). El estado de resultados queda incompleto cuando el .md lo parte en tablitas o
+    en texto con layout: Napoli 2022 (el resultado L309 quedó en otro bloque, b15), Inter 2019-20 (corta en L910; el resultado está en L912 y
+    L918), Hellas Verona 2023 (huecos: 11) L357, 12) L360 y la sección C L387-L395), Monza 2023 (tabla cortada en el salto de página,
+    b39/b40). DISEÑO: extender el estado a los bloques consecutivos hasta "Utile (perdita) dell'esercizio"; compuerta: con ellos, ingresos −
+    gastos ± financiero ± impuesto = ese resultado exacto. Además verificar.mjs (ANTES_RE) no reconoce "prima delle imposte" (Napoli 2022).
+
+169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). Cuando la transcripción deja el estado como texto
+    plano o con las etiquetas en una columna y los importes en otra, extraer solo lee tablas y el estado queda sin financiero ni impuesto:
+    Genoa 2022 (pág. 10 del visor, L425-L497: financiero 0,158 e impuesto 0), Sampdoria 2018 (pág. 27, L1045-L1064), Torino 2019 (pág. 13).
+    También omite las hojas del estado cuando una nota las repite y verificar cae a las notas en miles: Lazio 2011-12 (L3552-L3611), Lazio
+    2012-13 (columnas corridas en pág. 99, L3635-L3661). Y cuenta filas hijo junto con su padre ya abierto por la nota: Fiorentina 2021-22
+    (L970-971, 7.876.653 de más), 2023-24 (L854), 2024-25 (L912, L920-921, L960-961). DISEÑO por escalón: emparejar etiquetas e importes por
+    orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
+    su padre.
+
+170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). En los estados IFRS de Roma, "Ricavi/Oneri da gestione dei diritti pluriennali"
+    quedan sin lado y se pierden (Roma 2021: L2148 36.125 y L2149 (37.323); ingresos 190.414 vs 226.537 de la columna 2021 del documento
+    2022), y filas posteriores al resultado (EPS L2161, otro resultado integral L2163) se cuelan en la lectura 6. DISEÑO: en la lectura 6,
+    solo las filas "otro" entre el total de costos y "Risultato prima delle imposte"; compuerta: resultado impreso exacto y, si el año
+    vecino imprime ingresos, que coincidan.
+
+171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (ajustes.mjs / verificar.mjs). Un gasto con valor negativo (variazione delle rimanenze a
+    favor) entra en valor absoluto, también por ajuste, así que no se puede corregir a mano: Fiorentina 2023-24 (11) L885, +87.751 a favor
+    entra como costo), Hellas 2023 (11) L357, −25.971). Relacionado con el 156. DISEÑO: en `fila` de gasto, un valor impreso negativo resta;
+    compuerta: el resultado cierra exacto con ese signo y no con el otro.
+
+172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). El chequeo "documento del año N" compara contra las filas crudas del otro
+    documento, sin sus ajustes: Parma 2024 individual (36a3982, 6573d39) da 54,23 contra 28,89 porque Parma 2023 tiene un ajuste `fila`
+    (L557, "altri" contado dos veces). Falsa alarma que va a la cola. DISEÑO: si el año está cargado, comparar contra el sitio; si no,
+    aplicar los ajustes del otro documento antes de comparar.
+
+173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
+    por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
+    polaridad al revés ("¿se carga además…?" con propuesta sí y el porqué dice que duplica). Ejemplos: Atalanta 2019 a0304c3 (b9),
+    Sassuolo 2024 6795125, Inter 2019-20 c672389 y 45d7976, Lazio 2018-19 476c85a, Lazio 2023-24 37997ee, Roma 2023 db1b8e4, Roma 2024
+    8c734f1, Fiorentina 2168732, 2daea52, 0980fea, Sampdoria 9414130, 2f9021a, 075611c, Torino 2023 68dc65d. Y "primer año" o "escala"
+    que se podrían aceptar solos si totales y resultado cierran exactos (Cremonese 2022 a3d272e, Atalanta 2025 939f93c; Milan 2021-22
+    5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
+    como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
+
+174. "ALTRI" SIN ABRIR EN CREMONESE 2022 Y 2024 (CARGADOS, con daño de detalle). El renglón "altri" de los ingresos entra entero como
+    lump_football_operations (2022: 21,65 M; 2024: 42,84 M, el 74% de los ingresos) en vez de abrirse con la nota como 2025 (sponsors,
+    televisión, plusvalías). Las cuentas cierran (2024: 2.001.963 vs 2.001.962 impreso). Causa: un lump_* entre los ingresos apaga el
+    escalón de la nota del subtotal (Versión 578; trampa 2 del traspaso del 2026-10-07). Arreglo de datos: corregir la categoría de "altri"
+    para que Televisión quede en 0, `lote --reintentar` y recargar con `cargar.mjs --reemplazar`. Arreglo de script: que el escalón corra
+    también con un lump_* que sea más del X% de los ingresos.
