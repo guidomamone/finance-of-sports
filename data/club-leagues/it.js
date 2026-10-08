@@ -40,7 +40,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Parma (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia exacta "Parma".
   'parma-it': { 2023: 'it-serieb', 2021: 'it-serieb', 2022: 'it-serieb' }, // 2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2021–22 Serie B" (tools/club-league-reference/it.json), coincidencia e // 2022: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2022–23 Serie B" (tools/club-league-reference/it.json), coincidencia e
   // Sampdoria (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Sampdoria".
-  'sampdoria-it': { 2021: 'it-seriea' },
+  'sampdoria-it': { 2021: 'it-seriea', 2018: 'it-seriea' }, // 2018: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2018–19 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Sassuolo (alta-club.mjs, 2026-10-07): SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (it-seriea): puede haber jugado otra división).
   'sassuolo-it': { 2025: 'it-seriea', 2021: 'it-seriea', 2024: null }, // 2025 (cierre 31/12/2025): Serie A 2025-26, ascendido como campeón de la Serie B 2024-25 (it.wikipedia, Serie_B_2024-2025); regla: la categoría al cierre del ejercicio // 2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2024: tools/cargar.mjs 2026-10-08, SIN VERIFICAR
   // Torino (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Torino".
