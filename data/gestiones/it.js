@@ -10,6 +10,11 @@
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
+  'salernitana-it': [
+    // Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021, con un administrador único, condujo antes); firma los balances 2022 y 2023.
+    { nombre:'Danilo Iervolino', corto:'Iervolino', cargo:'Presidente', desde:'2022-01-13', hasta:null,
+      fuente:'https://it.wikipedia.org/wiki/Unione_Sportiva_Salernitana_1919', confirmada:true },
+  ],
   'chievoverona-it': [
     // Luca Campedelli: presidente desde septiembre de 1992 (murió su padre Luigi) hasta 2022; la fuente da solo mes y año o solo el año: día 01 por convención.
     { nombre:'Luca Campedelli', corto:'Campedelli', cargo:'Presidente', desde:'1992-09-01', hasta:'2022-01-01',

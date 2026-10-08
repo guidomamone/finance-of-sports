@@ -18,3 +18,5 @@ La página oficial `https://salernitana.it/societa/bilancio-e-relazioni/` (hoy 4
 - No hay 2021 ni 2024 (junio 2024): la página nunca los listó (últimas capturas 2024-12-26 muestran solo 2022 y 2023). 2024 pendiente: ejercicio de la categoría B con nuevo dueño, candidato a mail.
 
 - Último chequeo: 2026-10-07.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf` (sourceId `salernitana-it-bilancio-30-giugno-2022`).

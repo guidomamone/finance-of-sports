@@ -7,7 +7,7 @@
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -207,6 +207,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"udinese-it", revenue:81.105, reportType:"official_balance_sheet",
         sourceId:"udinese-it-bilancio-2021-22",
         mix:[["Comercial / Sponsors",9.243],["Estadio",5.313],["Televisión",37.562],["Venta de Jugadores",18.155],["Otros ingresos",10.832]] },
+      { id:"salernitana-it", revenue:48.041, reportType:"official_balance_sheet",
+        sourceId:"salernitana-it-bilancio-30-giugno-2022",
+        mix:[["Comercial / Sponsors",5.969],["Estadio",7.145],["Televisión",29.464],["Venta de Jugadores",0.545],["Otros ingresos",4.917]] },
       { id:"monza-it", revenue:34.903, reportType:"official_balance_sheet",
         sourceId:"monza-it-bilancio-2022",
         mix:[["Comercial / Sponsors",11.158],["Estadio",2.926],["Televisión",18.355],["Venta de Jugadores",0.412],["Otros ingresos",2.053]] },

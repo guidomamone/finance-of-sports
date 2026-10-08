@@ -53,4 +53,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'genoa-it': { 2022: 'it-serieb', 2025: 'it-seriea', 2023: 'it-seriea' }, // 2025: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e // 2023: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Chievo Verona (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2013–14 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Chievo" = "Chievo Verona".
   'chievoverona-it': { 2014: 'it-seriea', 2016: 'it-seriea' }, // 2016: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia ú
+  // Salernitana (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Salernitana".
+  'salernitana-it': { 2022: 'it-seriea' },
 });

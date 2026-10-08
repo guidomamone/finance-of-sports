@@ -160,6 +160,7 @@ window.CLUB_INDEX = {
   "rijeka-hr": {"n":"Rijeka","c":"HR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "river": {"n":"River Plate","c":"AR","q":"mixed","y":2,"last":2024,"yrs":[[2024,"unofficial_mirror"],[2021,"official_balance_sheet"]]},
   "rosariocentral": {"n":"Rosario Central","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
+  "salernitana-it": {"n":"Salernitana","c":"IT","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "sampdoria-it": {"n":"Sampdoria","c":"IT","q":"full","y":3,"last":2021,"yrs":[[2021,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "sanfreccehiroshima": {"n":"Sanfrecce Hiroshima","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "sanlorenzo": {"n":"San Lorenzo","c":"AR","q":"full","y":8,"last":2024,"yrs":[[2024,"official_budget"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"]]},
