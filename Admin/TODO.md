@@ -215,13 +215,6 @@ ni en el comentario de ningún archivo de código.
     5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
     como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
 
-174. "ALTRI" SIN ABRIR EN CREMONESE 2022 Y 2024 (CARGADOS, con daño de detalle). El renglón "altri" de los ingresos entra entero como
-    lump_football_operations (2022: 21,65 M; 2024: 42,84 M, el 74% de los ingresos) en vez de abrirse con la nota como 2025 (sponsors,
-    televisión, plusvalías). Las cuentas cierran (2024: 2.001.963 vs 2.001.962 impreso). Causa: un lump_* entre los ingresos apaga el
-    escalón de la nota del subtotal (Versión 578; trampa 2 del traspaso del 2026-10-07). Arreglo de datos: corregir la categoría de "altri"
-    para que Televisión quede en 0, `lote --reintentar` y recargar con `cargar.mjs --reemplazar`. Arreglo de script: que el escalón corra
-    también con un lump_* que sea más del X% de los ingresos.
-
 175. "TELEVISIÓN EN 0" EN ITALIA: UN SUBTOTAL GRANDE SIN ABRIR (cargar.mjs / verificar.mjs). Diagnóstico del 2026-10-08 sobre los 7 frenados
     (Como 2024, Parma 2018, 2024 y 2025, Sassuolo 2021 y 2024, Sampdoria 2018). En 6 de 7 la televisión SÍ está en el documento, escondida
     en un renglón agregado del modelo italiano que entra entero como other_income o lump_*:
@@ -239,8 +232,12 @@ ni en el comentario de ningún archivo de código.
       "altri" 37,0 M entero (82% de los ingresos) — no se cargó. Mirar por qué el escalón no toma la nota de Parma (L1530 / L1168).
     - Como 2024 es otro caso: la televisión está impresa como "-" ("e) proventi da cessione diritti televisivi", .md L496, Serie B
       2023-24); el reintento no va a encontrar nada. Decisión de Guido: ajuste `cero-real` Televisión (el 0 es del documento) o no.
-    - Daño en lo ya cargado (para mirar con este to-do): Cremonese 2022 y 2024 (to-do 174) y Parma 2022 ("l) Ricavi e proventi diversi"
-      21,3 M = 66% de los ingresos como other_income).
+    - Daño en lo ya cargado: Parma 2022 ("l) Ricavi e proventi diversi" 21,3 M = 66% de los ingresos como other_income). Cremonese 2022 y
+      2024 (ex to-do 174) ya se recargaron abiertos (2026-10-08).
+    - CAMINO SIN REINTENTO PAGO (probado en Bologna 2018-19 y Cremonese 2022/2024): si el renglón grande es lump_*, sacarlo del lump por la
+      cola (`cola.mjs --corregir-categoria`); `cargar.mjs --lista <archivo> --desde-verificacion` (propuesta, no escribe el sitio) deja el
+      .carga.json con Televisión en 0; `verificar.mjs "<pdf>"` abre el renglón con la nota del subtotal, gratis; categorizar las filas nuevas
+      que no tengan precedente y `cargar.mjs --reemplazar --escribir`. El reintento pago del lote no hace falta para esto.
 
 176. ETAPA 4 CON NÚMEROS SIN CONFIRMAR FRENA LA CATEGORIZACIÓN (lote.mjs / validar-bloques.mjs). Con la etapa 6 cerrada, la validación de
     los bloques contra el PDF dejó números sin confirmar y el lote no categoriza: AS Roma 2021 (13 números; la verificación cierra exacto,

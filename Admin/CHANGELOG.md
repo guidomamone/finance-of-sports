@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 585 — Cremonese 2022 y 2024 recargados con "altri" abierto (to-do 174 cerrado) (2026-10-08)
+
+- "altri" (21,7 y 42,8 M, el 74% de los ingresos en 2024) entraba entero como lump_football_operations. Arreglo sin reintento pago:
+  categoría fuera del lump por la cola, `cargar.mjs --lista` (propuesta) marca Televisión en 0 y `verificar.mjs` abre la nota del
+  subtotal (Versión 578). Mutualità, concessioni radio televisive y paracadute -> broadcasting por precedente (Cremonese 2025, Genoa 2022).
+- 2022: TV 8,6 M, sponsors 18,6 M; 2024: TV 16,0 M, sponsors 36,3 M, jugadores 2,8 M. Totales y resultado idénticos a lo cargado.
+  Auditoría P0 0, P1 0. El camino quedó anotado en el to-do 175 (sirve para Parma 2022).
+
 ## Versión 584 — Sourcing Italia: más años de Serie A, Serie B-D, rugby y tenis (2026-10-07)
 
 - 6 agentes de sourcing en paralelo; ~124 PDFs nuevos en `Clubes/Italia/` (sin transcribir ni cargar). Más años: AS Roma 2005-2017, AC Milan
