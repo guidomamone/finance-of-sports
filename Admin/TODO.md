@@ -154,20 +154,13 @@ ni en el comentario de ningún archivo de código.
     CUÁNDO HACERLO: si un documento nuevo con este patrón frena.
 
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
-    fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Cuando ninguna otra lectura cierra, el caso que
-    llega a la cola trae números absurdos. Casos: Lazio 2007-08 (TOTALE RICAVI L3413 + sus 18 hojas: 204,96 = 2 × 102,48; el año anterior
-    da 152,54 = 2 × 76,27), AC Milan 2017-18 (ingresos 511.716 vs 255.733), Napoli 2022 (gastos 483,2 vs 241,2), Atalanta 2019 (gastos 295,8
-    vs 147,7), Lazio 2011-12. Napoli 2022 NO se cargó: con un ajuste `resultado-final` verificar deducía un impuesto de −254,9 M que
-    absorbía el doble conteo (ajuste anulado). Variante: Lazio 2012-13 compara el "total de gastos" con TOTALE COSTI OPERATIVI, que en
-    Italia deja las amortizaciones debajo (93,33 vs 114,57; las líneas están bien). DISEÑO: sacar la fila total de las hojas antes de sumar;
-    compuerta: sin ella, la suma de las hojas = el total impreso.
-    Intento con ajustes en Lazio 2007-08 (2026-10-08): con TOTALE RICAVI en 0 (L3413) y el financiero y el impuesto agregados (L3469,
-    L3494), los ingresos dan bien (102.482.030) pero los gastos siguen en 462,2 M: el chequeo dice "TOTALE COSTI OPERATIVI 52.667.128
-    cierra; además se suman 39 línea(s) fuera de ese total (409,6)", con las notas en miles b197/b204 sumadas como si fueran euros. Poner
-    esas filas en 0 por ajuste empeora (29.047.461): no se arregla a mano. Las hojas del estado (L3415-L3454) suman 68.609.526 y con ellas
-    cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 contra 13.761.874 impreso.
-    Lazio 2011-12 tampoco se arregla con ajustes: la extracción omitió las ~40 sub-filas del estado en euros (L3551-L3650); hace falta
-    volver a extraer ese documento (la respuesta "no" a 1896cce ya está).
+    fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Lazio 2007-08 y 2011-12 se resolvieron A MANO
+    (decisión de Guido, 2026-10-08: documentos viejos, no justifican cambiar el script): ajustes que sacan TOTALE RICAVI / TOTALE COSTI
+    OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs. Lazio 2012-13 está cargado bien (solo
+    falla el chequeo del total de gastos: en Italia TOTALE COSTI OPERATIVI deja las amortizaciones debajo).
+    QUEDA: Napoli 2022 (sin cargar) da "ok" con los gastos al doble (483,2 vs 241,2): un "ok" que no contrasta los totales impresos de
+    ingresos y gastos. Guido lo quiere ver en detalle (pendiente). DISEÑO a evaluar después de ese diagnóstico: sacar la fila total de las
+    hojas antes de sumar, como escalón (solo si las lecturas de hoy no cierran o cierran con totales que no coinciden con los impresos).
 
 168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). El estado de resultados queda incompleto cuando el .md lo parte en tablitas o
     en texto con layout: Napoli 2022 (el resultado L309 quedó en otro bloque, b15), Inter 2019-20 (corta en L910; el resultado está en L912 y

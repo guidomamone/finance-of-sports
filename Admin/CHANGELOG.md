@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 591 — Lazio 2007-08 y 2011-12 resueltos a mano; tools/estado-desde-md.mjs (2026-10-08)
+
+- Decisión de Guido: documentos viejos, a mano y no con un cambio de script (to-do 167). 2007-08: sin las filas de las notas en miles
+  (b197, b204, b211) en el .filas.json y TOTALE COSTI OPERATIVI fuera por ajuste; cierra 102.482.030 − 68.609.526 − 4.962.375 −
+  15.148.258 = 13.761.871 vs 13.761.874. 2011-12: filas del estado armadas desde el .md (la extracción solo trajo subtotales) con
+  `tools/estado-desde-md.mjs` (nuevo, uso a mano, gratis), TOTALE RICAVI / TOTALE COSTI OPERATIVI fuera, 2 ajustes viejos anulados; cierra
+  exacto (4.221.554). Falsas alarmas del año vecino aceptadas en la cola con la explicación. Faltan categorizar (lote 37) y cargar.
+
 ## Versión 590 — El signo del 17-bis lo eligen las sumas (to-do 166, segunda parte) (2026-10-08)
 
 - `verificar.mjs`, escalón "17) resta": si la suma no da el total de C impreso, se prueban los signos de las filas del 17-bis (hasta 4) y se
