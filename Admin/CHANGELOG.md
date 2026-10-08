@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 608 — Escalón "sección D y E" y AC Milan 2008 a 2013 cargados (2026-10-08)
+
+- `verificar.mjs`, escalón "sección D" (Versión 589): con una sección E (proventi e oneri straordinari) a continuación de la D, el total que tiene que dar la suma de las filas es la SUMA de
+  los totales "(D)" y "(E)"; y el signo de las filas de la E ya no se hereda del "19) svalutazioni" de la D (corta en el encabezado de la E). Causa de que el resultado no cerrara en AC Milan 2008
+  a 2012: D y E quedaban como filas sin lado y la lectura 3 las sumaba con el signo al revés (plusvalenze +40 contadas como gasto). Medido sobre los 242 documentos de `Generados/`:
+  cambian solo los 6 de Milan (2011 y 2012 pasan a "ok"; 2008, 2009 y 2010 cierran y solo quedaban preguntas de la cola).
+- Milan 2011: ajuste manual `fila` (D −101, la extracción se la había salteado; sin línea a propósito para que el escalón siga trayendo la E). Las 7 preguntas de la cola respondidas (reexpresión
+  de 2009 en el documento 2010: ingresos y costos 20.268 menos con el mismo resultado; el estado prevalece sobre la nota en plusvalenze 2009; rótulo corrido de la nota b40).
+- Cargados AC Milan 2008, 2009, 2010, 2011, 2012 y 2013 con el resultado calculado igual al impreso (−66,838, −9,836, −69,751, −67,334, −6,857 y −15,723 M EUR). Auditoría P0 0, P1 0. Italia: 122 ejercicios.
+
 ## Versión 607 — Lazio 1998-99, 1999-00 y 2000-01 cargados en liras (ITL) (2026-10-08)
 
 - Decisión de Guido: los ejercicios anteriores al euro se cargan en su moneda. Pieza nueva en el pipeline: ajuste manual `moneda` (valor = moneda legado del país), escalón 0 de la pregunta de la
