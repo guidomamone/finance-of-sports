@@ -1,0 +1,702 @@
+{
+ "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.pdf",
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.md",
+ "mdSha1": "edeb56a07eb1d0d1fdc6406b72ccacf9eeeeb3c4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T13:41:45.547Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    31,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    60,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    130,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    191,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    332
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    384,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    499,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    659,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    672,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    705,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    712,
+    719
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    731,
+    764
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    768,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    788,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    810,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    840,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    847,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    864,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    878,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    895,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    904,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    915,
+    946
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    985,
+    988
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 28,
+   "lineas": [
+    1000,
+    1003
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 28,
+   "lineas": [
+    1007,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 28,
+   "lineas": [
+    1027,
+    1030
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 28,
+   "lineas": [
+    1038,
+    1043
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 29,
+   "lineas": [
+    1051,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    1072,
+    1077
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 29,
+   "lineas": [
+    1081,
+    1084
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 30,
+   "lineas": [
+    1092,
+    1102
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 30,
+   "lineas": [
+    1110,
+    1117
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 31,
+   "lineas": [
+    1139,
+    1149
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 31,
+   "lineas": [
+    1162,
+    1171
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 32,
+   "lineas": [
+    1183,
+    1192
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 32,
+   "lineas": [
+    1202,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 33,
+   "lineas": [
+    1224,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 33,
+   "lineas": [
+    1231,
+    1236
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 34,
+   "lineas": [
+    1264,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 34,
+   "lineas": [
+    1282,
+    1298
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 35,
+   "lineas": [
+    1332,
+    1341
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 36,
+   "lineas": [
+    1351,
+    1364
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 36,
+   "lineas": [
+    1372,
+    1377
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 36,
+   "lineas": [
+    1385,
+    1393
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 37,
+   "lineas": [
+    1401,
+    1405
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 37,
+   "lineas": [
+    1413,
+    1418
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 37,
+   "lineas": [
+    1428,
+    1437
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 38,
+   "lineas": [
+    1463,
+    1496
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 39,
+   "lineas": [
+    1518,
+    1523
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 39,
+   "lineas": [
+    1531,
+    1536
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 41,
+   "lineas": [
+    1587,
+    1601
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 43,
+   "lineas": [
+    1661,
+    1675
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 43,
+   "lineas": [
+    1679,
+    1687
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 44,
+   "lineas": [
+    1697,
+    1713
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 44,
+   "lineas": [
+    1717,
+    1741
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 45,
+   "lineas": [
+    1761,
+    1766
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 45,
+   "lineas": [
+    1770,
+    1779
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 45,
+   "lineas": [
+    1783,
+    1789
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 47,
+   "lineas": [
+    1815,
+    1865
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 47,
+   "lineas": [
+    1869,
+    1914
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 47,
+   "lineas": [
+    1918,
+    1944
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 48,
+   "lineas": [
+    1954,
+    2004
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 48,
+   "lineas": [
+    2008,
+    2053
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 48,
+   "lineas": [
+    2057,
+    2082
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 48,
+   "lineas": [
+    2084,
+    2086
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 49,
+   "lineas": [
+    2096,
+    2146
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 49,
+   "lineas": [
+    2150,
+    2195
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 49,
+   "lineas": [
+    2199,
+    2224
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 49,
+   "lineas": [
+    2226,
+    2228
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 52,
+   "lineas": [
+    2300,
+    2320
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 53,
+   "lineas": [
+    2348,
+    2362
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 54,
+   "lineas": [
+    2370,
+    2385
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 56,
+   "lineas": [
+    2466,
+    2499
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 57,
+   "lineas": [
+    2507,
+    2538
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 57,
+   "lineas": [
+    2542,
+    2558
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 58,
+   "lineas": [
+    2576,
+    2592
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 59,
+   "lineas": [
+    2602,
+    2606
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 59,
+   "lineas": [
+    2614,
+    2622
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 67,
+   "lineas": [
+    2802,
+    2807
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b40",
+  "b41",
+  "b50"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b47",
+  "b48",
+  "b49",
+  "b51"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en euros completos (p. ej. 'I costi per servizi ammontano a € 27.427.014'); la nota indica que los valores de las tablas están expresados en euros.",
+ "moneda": "EUR",
+ "columna_ejercicio": "12 mesi al 30/06/23",
+ "columna_anterior": "6 mesi al 30/06/22",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como año anterior la columna '6 mesi al 30/06/22' del conto economico (b5), aunque cubre solo 6 meses?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El ejercicio anterior fue de 6 meses (ene-jun 2022) por cambio de cierre; no es comparable con 12 meses.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de conto economico de b59 (pág. 45), que parece ser el resumen de la sociedad que ejerce dirección y coordinación?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b59 es un resumen de otra entidad (datos 2022), no del grupo consolidado.",
+   "bloques": [
+    "b59"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados consolidado en b5 (pág. 7). b14 desglosa el resultado de operaciones con derechos de jugadores (amortización, plusvalías, préstamos). b71 es un conto economico reclasificado de la relazione sulla gestione; no se elige. Cuadros por jugador (b13, b15, b16, b53-b56, b60-b70, b74-b76) excluidos."
+}
