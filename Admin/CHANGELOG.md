@@ -18,7 +18,8 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 593 — Napoli 2021 cargado (2026-10-08)
 
 - Napoli 2021 (`Napoli-bilancio-2021.pdf`) cargado con `cargar.mjs --desde-verificacion --escribir`, sin ajustes: ingresos 228.097.847, gastos
-  306.643.672, resultado −58.941.765 exacto (lectura 4, Versión 592). Auditoría P0 0, P1 0. Napoli 2022 queda para el lote con la etapa 7.
+  306.643.672, resultado −58.941.765 exacto (lectura 4, Versión 592). Auditoría P0 0, P1 0. Napoli 2022 queda para el lote con la etapa 7 (`Admin/lote-38.txt`).
+- To-do 169 medido: sus 9 documentos ya están cargados y cierran con ajustes; pasa a "conocido, sin daño hoy".
 
 ## Versión 592 — El resultado impreso en una tabla de una fila, pegada al estado (to-do 168, primera parte) (2026-10-08)
 

@@ -172,7 +172,9 @@ ni en el comentario de ningún archivo de código.
     L387-L395), Monza 2023 (tabla cortada en el salto de página, b39/b40). DISEÑO: extender el estado a los bloques consecutivos hasta
     "Utile (perdita) dell'esercizio"; compuerta: con ellos, ingresos − gastos ± financiero ± impuesto = ese resultado exacto.
 
-169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). Cuando la transcripción deja el estado como texto
+169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08): todos los
+    documentos de abajo ya están cargados y cierran con sus ajustes (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13,
+    Fiorentina 2021-22, 2023-24 y 2024-25); ninguno frena. CUÁNDO HACERLO: un documento sin cargar con este patrón que frene. Cuando la transcripción deja el estado como texto
     plano o con las etiquetas en una columna y los importes en otra, extraer solo lee tablas y el estado queda sin financiero ni impuesto:
     Genoa 2022 (pág. 10 del visor, L425-L497: financiero 0,158 e impuesto 0), Sampdoria 2018 (pág. 27, L1045-L1064), Torino 2019 (pág. 13).
     También omite las hojas del estado cuando una nota las repite y verificar cae a las notas en miles: Lazio 2011-12 (L3552-L3611), Lazio
