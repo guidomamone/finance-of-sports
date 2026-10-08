@@ -19,7 +19,7 @@
 //   2013: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2010: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2010: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2009: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2006: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -423,6 +423,9 @@ window.RANKINGS["it-seriea"] = {
   2010: {
     leagueSize: null,
     clubs: [
+      { id:"acmilan-it", revenue:338.32, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilancio-gruppo-dic-2010",
+        mix:[["Comercial / Sponsors",89.145],["Estadio",33.719],["Televisión",146.448],["Premios por competencias",5.732],["Venta de Jugadores",34.785],["Otros ingresos",28.492]] },
       { id:"juventus-it", revenue:298.553, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2009-10",
         mix:[["Comercial / Sponsors",56.052],["Estadio",22.666],["Televisión",185.827],["Venta de Jugadores",17.995],["Otros ingresos",16.013]] },

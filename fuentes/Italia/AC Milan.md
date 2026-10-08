@@ -63,3 +63,5 @@ Series viejas del sitio anterior, recuperadas de Wayback (CDX de dominio complet
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2008 desde `Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2008.pdf` (sourceId `acmilan-it-bilancio-gruppo-dic-2008`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2009 desde `Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2009.pdf` (sourceId `acmilan-it-bilancio-gruppo-dic-2009`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2010 desde `Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.pdf` (sourceId `acmilan-it-bilancio-gruppo-dic-2010`).

@@ -372,6 +372,7 @@ const FX_CLOSE = {
   'EUR@2026-06-30': { fx: 0.877655, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2026-06-30' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'EUR@2008-12-31': { fx: 0.718546, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2008-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
   'EUR@2009-12-31': { fx: 0.694155, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2009-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
+  'EUR@2010-12-31': { fx: 0.748391, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2010-12-31' }, // tools/cargar.mjs 2026-10-08 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
