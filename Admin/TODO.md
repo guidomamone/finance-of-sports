@@ -195,10 +195,15 @@ ni en el comentario de ningún archivo de código.
     solo las filas "otro" entre el total de costos y "Risultato prima delle imposte"; compuerta: resultado impreso exacto y, si el año
     vecino imprime ingresos, que coincidan.
 
-171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (ajustes.mjs / verificar.mjs). Un gasto con valor negativo (variazione delle rimanenze a
-    favor) entra en valor absoluto, también por ajuste, así que no se puede corregir a mano: Fiorentina 2023-24 (11) L885, +87.751 a favor
-    entra como costo), Hellas 2023 (11) L357, −25.971). Relacionado con el 156. DISEÑO: en `fila` de gasto, un valor impreso negativo resta;
-    compuerta: el resultado cierra exacto con ese signo y no con el otro.
+171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Un ajuste `fila` de gasto
+    con valor impreso negativo (variazione delle rimanenze a favor) solo resta en la lectura 4 (lleva el signo relativo a la mayoría de los
+    ajustes de su lado, Versión 493); en las demás lecturas entra en valor absoluto. Los dos casos que lo abrieron cargan bien: Fiorentina
+    2023-24 cierra exacto por la lectura 5 con la variación +87.751 a favor (.md L885, costos impresos en negativo); Hellas Verona 2023
+    cierra por la lectura 4 con su ajuste (25.971) restando (a 618 EUR del impreso; con el signo al revés serían 51.942). Relacionado con
+    el 156 (gastos en valor absoluto en las lecturas 0-3). CUÁNDO HACERLO: si un documento no cierra porque un ajuste de gasto negativo
+    suma. DISEÑO (escalón, no regla): si ninguna lectura cerró el resultado EXACTO y hay ajustes `fila` de gasto con valor impreso
+    negativo, repetir las lecturas con esos ajustes restando; compuerta: el resultado impreso exacto (y gana solo si con el signo de hoy
+    no cierra exacto).
 
 172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). El chequeo "documento del
     año N" compara contra las filas crudas del otro documento, sin sus ajustes `fila`. El caso que lo abrió (Parma 2024 contra Parma 2023)
