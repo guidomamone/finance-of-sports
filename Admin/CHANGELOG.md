@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 605 — Lote 44: 13 ejercicios de Italia cargados (2026-10-08)
+
+- AS Roma 2009 y 2013 a 2017, Bologna 2017-18 y 2022-23, Hellas Verona 2025, Napoli 2018 y 2020, Sampdoria 2019 y Sassuolo 2023, con las 44 respuestas de la cola de ese
+  día; todos con el resultado calculado igual al impreso (Roma 2013 a 2017 por el escalón "gestión de jugadores neta", Versión 601). Auditoría P0 0, P1 0. Italia: 106 ejercicios.
+
 ## Versión 604 — Torino 2020 y 2025 cargados con el estado formal re-transcripto a mano (2026-10-08)
 
 - En `Torino-bilancio-2020.md` y `2025.md` Mistral había separado las etiquetas del conto economico de sus importes (columna aparte). Se re-transcribió a mano desde la
