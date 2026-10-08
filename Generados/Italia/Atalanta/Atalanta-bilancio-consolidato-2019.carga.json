@@ -1,29 +1,12 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
- "generado": "2026-10-08T03:17:38.258Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 12 número(s) sin confirmar (Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.validacion.json, \"noConfirmados\"; ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 188.614458 + gastos -147.57152 + netInterest -0.838256 + tax -13.590922 = 26.61376 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 26.497451)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -146.739471 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-08T12:26:03.757Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados)",
   "el documento cierra 2019-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
-  "ingresos: 3 fila(s) sin categoría aceptable (0.0% del dinero del lado): \"2) Variazioni delle rimanenze di prodotti in corso\" (no está en categorias.json); \"3) variazioni di lavori in corso su ordinazione\" (no está en categorias.json); \"Rimborso spese e ricavi Stadio\" (no está en categorias.json)",
-  "gastos: 5 fila(s) sin categoría aceptable (0.1% del dinero del lado): \"Acquisto materiale sportivo\" (no está en categorias.json); \"Canoni Leasing\" (no está en categorias.json); \"d) trattamento di quiescenza e simili\" (no está en categorias.json); \"12) Accantonamenti per rischi ed oneri\" (no está en categorias.json); \"13) Altri accantonamenti\" (no está en categorias.json)"
+  "materialidad: \"Rimborso spese e ricavi Stadio\" va como stadium_other con 0.6 (las dudas de ingresos suman 0.00% de su lado)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-146.862549); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "atalanta-it",
@@ -42,6 +25,26 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
+    "rawLabel": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "3) variazioni di lavori in corso su ordinazione",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "4) Incrementi di immobilizzazioni per lavori interni",
     "normalizedCategory": "other_income",
     "amountNative": 2.875337,
@@ -49,7 +52,7 @@
     "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi televisivi",
@@ -59,7 +62,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Plusv. Cess. Dir. Plur. Prest. Calciatori",
@@ -69,7 +72,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Sponsorizzazioni",
@@ -79,7 +82,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri ricavi",
@@ -89,7 +92,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Calc. in prestito ad altre squadre prof.",
@@ -119,7 +122,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Sopravvenienze attive",
@@ -129,7 +132,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi per iscrizioni Football camp",
@@ -139,7 +142,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi cess licenze diritti e simili",
@@ -159,7 +162,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri proventi su trasf. Calciatori",
@@ -169,7 +172,7 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi diversi settore giovanile",
@@ -179,7 +182,17 @@
     "_pag": 36,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rimborso spese e ricavi Stadio",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.006749,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.00% (≤ 1%) y esta tiene 0.6"
    }
   ],
   "expenseLines": [
@@ -214,6 +227,16 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
+    "rawLabel": "Acquisto materiale sportivo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.026437,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "Acquisto medicinali",
     "normalizedCategory": "admin_general_expense",
     "amountNative": -0.012573,
@@ -241,7 +264,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Spese Pubblicitarie",
@@ -251,7 +274,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi per attività sportiva",
@@ -271,7 +294,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri costi per servizi",
@@ -291,7 +314,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Servizio biglietteria/controllo ingressi",
@@ -301,7 +324,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Spese varie organizzazioni gare",
@@ -311,7 +334,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Manutenzioni e riparazioni",
@@ -321,7 +344,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi per utenze",
@@ -331,7 +354,7 @@
     "_pag": 37,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Assicurative e previdenziali",
@@ -381,7 +404,7 @@
     "_pag": 38,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Locazioni immobiliari",
@@ -391,7 +414,17 @@
     "_pag": 38,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Canoni Leasing",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.003009,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "a) salari e stipendi",
@@ -401,7 +434,7 @@
     "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "b) oneri sociali",
@@ -424,6 +457,16 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
+    "rawLabel": "d) trattamento di quiescenza e simili",
+    "normalizedCategory": "wages_squad",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "e) altri costi",
     "normalizedCategory": "wages_squad",
     "amountNative": -3.989276,
@@ -441,7 +484,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Costi capitalizzati vivaio",
@@ -461,7 +504,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Immobili strumentali",
@@ -471,7 +514,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Impianti specifici",
@@ -481,7 +524,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Macchine d'ufficio elettroniche",
@@ -491,7 +534,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Mobili macchine d'ufficio",
@@ -501,7 +544,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Altri beni sociali",
@@ -511,7 +554,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amm. Attrezzatura generica",
@@ -521,7 +564,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "c) altre svalutazioni delle immobilizzazioni",
@@ -541,7 +584,7 @@
     "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -551,7 +594,27 @@
     "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "12) Accantonamenti per rischi ed oneri",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.093632,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "13) Altri accantonamenti",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri costi diversi di gestione",
@@ -561,7 +624,7 @@
     "_pag": 40,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Sopravvenienze passive",
@@ -581,7 +644,7 @@
     "_pag": 40,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Contributi Lega Calcio",
@@ -611,7 +674,7 @@
     "_pag": 40,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Ammende - multe gare",
@@ -621,7 +684,7 @@
     "_pag": 40,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Perdite su crediti",
@@ -631,7 +694,7 @@
     "_pag": 40,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Abbuoni e arrotondamenti passivi",
@@ -654,11 +717,45 @@
    "assetSales": 0,
    "netInterest": -0.838256,
    "tax": -13.590922,
+   "extraRows": [
+    {
+     "label": "- da imprese controllanti",
+     "value": 0.175438
+    },
+    {
+     "label": "- da altri",
+     "value": 0.01419
+    },
+    {
+     "label": "c) verso imprese controllanti",
+     "value": -0.189682
+    },
+    {
+     "label": "- da altri",
+     "value": -0.837279
+    },
+    {
+     "label": "17-bis) Utile e perdite su cambi",
+     "value": -0.000923
+    },
+    {
+     "label": "Imposte correnti",
+     "value": -4.313217
+    },
+    {
+     "label": "Oneri da adesione al consolidato fiscale",
+     "value": -6.710851
+    },
+    {
+     "label": "Imposte differite (anticipate)",
+     "value": -2.566854
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 188.621207,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 146.862549,
+   "officialPAT": 26.497451
   },
   "source": {
    "id": "atalanta-it-bilancio-consolidato-2019",
@@ -666,7 +763,7 @@
    "title": "Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2019 (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md; categorías del pipeline (Jev/Claude). Perímetro: consolidado."
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
@@ -685,22 +782,7 @@
  },
  "clubId": "atalanta-it",
  "year": 2019,
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
-   "campo": "fila",
-   "valor": "(923)",
-   "linea": 429,
-   "etiqueta": "17-bis) Utile e perdite su cambi",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 429,
-   "motivo": "17-bis impreso en positivo en el estado pero es pérdida: nota b52 Totale (923); Totale C (838.256) = 189.628 - 1.027.884 (patrón to-do 155)",
-   "evidencia": "pág. 9 del visor, .md L429-431; b52 L1605-1607",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "seleccion": {
   "filas": 77,
   "notasUsadas": [],
@@ -715,10 +797,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 13.50221,
    "cat": "matchday_competition",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
    "notaGuido": "precedente del país: 2 clubes (Bologna, Parma), titulo:valore della produzione · precedente: '1) ricavi delle vendite e delle prestazioni' = ricavi da gare y abbonamenti (Bologna 2019-20 a 2021-22, caso 1457e5e); la nota lo desglosa así",
    "destino": "revenue",
    "amountNative": 13.50221
@@ -730,10 +813,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
   },
   {
    "label": "3) variazioni di lavori in corso su ordinazione",
@@ -742,10 +828,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
   },
   {
    "label": "4) Incrementi di immobilizzazioni per lavori interni",
@@ -757,7 +846,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 2.875337
@@ -772,7 +861,7 @@
    "cat": "broadcasting",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 89.803554
@@ -787,7 +876,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 38.753413
@@ -802,7 +891,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 18.333293
@@ -817,7 +906,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 7.623164
@@ -864,7 +953,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 3.405604
@@ -879,7 +968,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.955623
@@ -894,7 +983,7 @@
    "cat": "youth_football",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.789203
@@ -925,7 +1014,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.400348
@@ -940,7 +1029,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.305891
@@ -955,7 +1044,7 @@
    "cat": "youth_football",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.176617
@@ -967,10 +1056,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi\")",
    "signoFijo": 0.006749,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "stadium_other",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.00% (≤ 1%) y esta tiene 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 0.006749
   },
   {
    "label": "Acquisto materiali vari e di consumo",
@@ -1027,10 +1120,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"6) per materie prime, sussidiarie, di consumo e merci\")",
    "signoFijo": 0.026437,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.026437
   },
   {
    "label": "Acquisto medicinali",
@@ -1074,7 +1170,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -5.985205
@@ -1089,7 +1185,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.130416
@@ -1120,7 +1216,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.785424
@@ -1151,7 +1247,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.085787
@@ -1166,7 +1262,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.063552
@@ -1181,7 +1277,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.839551
@@ -1196,7 +1292,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.803921
@@ -1211,7 +1307,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.573826
@@ -1290,7 +1386,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.846915
@@ -1305,7 +1401,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.1027
@@ -1317,10 +1413,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"8) per godimento beni di terzi\")",
    "signoFijo": 0.003009,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "admin_general_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.003009
   },
   {
    "label": "a) salari e stipendi",
@@ -1332,7 +1431,7 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -61.644235
@@ -1376,10 +1475,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "wages_squad",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
   },
   {
    "label": "e) altri costi",
@@ -1407,7 +1509,7 @@
    "cat": "player_amortisation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -31.346324
@@ -1438,7 +1540,7 @@
    "cat": "other_amortisation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.447769
@@ -1453,7 +1555,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.878549
@@ -1468,7 +1570,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.412405
@@ -1483,7 +1585,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.010376
@@ -1498,7 +1600,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.058084
@@ -1513,7 +1615,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.047366
@@ -1528,7 +1630,7 @@
    "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.094465
@@ -1559,7 +1661,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.055632
@@ -1574,7 +1676,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": 0.20754
@@ -1586,10 +1688,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.093632,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_amortisation",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.093632
   },
   {
    "label": "13) Altri accantonamenti",
@@ -1598,10 +1703,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_amortisation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
   },
   {
    "label": "Altri costi diversi di gestione",
@@ -1613,7 +1721,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -4.798984
@@ -1644,7 +1752,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.406115
@@ -1691,7 +1799,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.219613
@@ -1706,7 +1814,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.14575
@@ -1721,7 +1829,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.002152
@@ -1844,28 +1952,30 @@
    "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 188.614458,
-  "expSum": -146.739471,
+  "revSum": 188.621207,
+  "expSum": -146.862549,
   "officialTotalRevenue": 188.621207,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 146.862549,
+  "officialPAT": 26.497451,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 26.497451,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 188.621207
   }
- },
- "fxCloseNuevo": {
-  "key": "EUR@2019-12-31",
-  "fx": 0.890155,
-  "source": "market_close",
-  "label": "Tipo de referencia del Banco Central Europeo al 2019-12-31"
  },
  "liga": {
   "valor": "it-seriea",
@@ -1900,7 +2010,7 @@
   },
   "fxRef": {
    "valor": "EUR@2019-12-31",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.890155. --escribir agrega 'EUR@2019-12-31' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-12-31 = 0.890155 (Tipo de referencia del Banco Central Europeo al 2019-12-31)",
    "estado": "ok"
   },
   "sourceId": {
@@ -1915,10 +2025,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 15,
-  "lineasGasto": 46,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 18,
+  "lineasGasto": 51,
   "metaFilas": 8,
   "excluidas": 0
  }
