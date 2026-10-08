@@ -7,7 +7,7 @@
 //   2025: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -165,6 +165,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"torino-it", revenue:120.253, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2022",
         mix:[["Comercial / Sponsors",13.439],["Estadio",4.775],["Televisión",56.154],["Venta de Jugadores",41.786],["Otras secciones deportivas",0.002],["Otros ingresos",4.096]] },
+      { id:"hellasverona-it", revenue:87.825, reportType:"official_balance_sheet",
+        sourceId:"hellasverona-it-bilancio-individuale-2022",
+        mix:[["Comercial / Sponsors",10.536],["Estadio",5.522],["Televisión",38.641],["Venta de Jugadores",25.868],["Otros ingresos",7.258]] },
       { id:"bologna-it", revenue:83.486, reportType:"official_balance_sheet",
         sourceId:"bologna-it-bilancio-consolidato-2021-22",
         mix:[["Comercial / Sponsors",13.41],["Estadio",4.676],["Televisión",43.469],["Venta de Jugadores",18.983],["Otros ingresos",2.949]] },
