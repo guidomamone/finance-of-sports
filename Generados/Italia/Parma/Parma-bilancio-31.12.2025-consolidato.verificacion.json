@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
- "generado": "2026-10-08T11:43:47.768Z",
+ "generado": "2026-10-08T11:46:37.518Z",
  "estado": "ok",
  "clubId": "parma-it",
  "year": 2025,
@@ -46,14 +46,14 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 41.561271; el sitio tiene 41.490983"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 41.490983 en Parma-bilancio-31.12.2024-individual.pdf y 41.561271 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [

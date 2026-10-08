@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf",
- "generado": "2026-10-08T02:56:51.198Z",
+ "generado": "2026-10-08T11:48:04.472Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) Ricavi delle vendite e delle prestazi\" -> lump_football_operations 0.35; \"a) Ammortamento delle immobilizzazioni i\" -> other_amortisation 0.55"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "parma-it ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['parma-it-bilancio-31-12-2022-consolidato'] ya existe"
   }
  ],
  "avisos": [
@@ -17,13 +25,33 @@
   "perimetro": "consolidado",
   "revenueLines": [
    {
-    "rawLabel": "1) Ricavi delle vendite e delle prestazioni",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 1.373306,
+    "rawLabel": "- Gare Campionato",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.810341,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abbonamenti",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.562965,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "4) Incrementi di immobilizzazioni per lavori interni",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.35,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -87,13 +115,23 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "l) Ricavi e proventi diversi",
+    "rawLabel": "Contributi in conto esercizio",
     "normalizedCategory": "other_income",
-    "amountNative": 21.326285,
+    "amountNative": 17.526423,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
+    "_pag": 42,
     "_escalon": 0,
     "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi e proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.799862,
+    "disclosureLevel": "aggregated",
+    "_pag": 42,
+    "_escalon": 1,
+    "_conf": 0.98,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -109,12 +147,142 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "7) Per servizi",
-    "normalizedCategory": "admin_general_expense",
-    "amountNative": -14.197493,
+    "rawLabel": "Costi per attività sportiva",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.141724,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
-    "_escalon": 1,
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Costi specifici Tecnici",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.999176,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Costi per intermediazioni",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.074298,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Costi per prestazione servizi personale",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.34233,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi vitto, alloggio e locomozione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.93533,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Compensi e rimborsi spesa a terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.376255,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per servizio biglietteria, controllo ingressi",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.318927,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per pubblicità e propaganda",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.87035,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi assicurativi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.324238,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per utenze e spese generali",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.282394,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per manutenzioni e riparazioni",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.073871,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per servizio da banche e finanz.",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.025354,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Legali e Amministrativi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.99192,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.441326,
+    "disclosureLevel": "aggregated",
+    "_pag": 44,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -159,14 +327,24 @@
     "_fuenteCat": "categorias.json"
    },
    {
+    "rawLabel": "e) Altri costi",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "a) Ammortamento delle immobilizzazioni immateriali imm.",
-    "normalizedCategory": "other_amortisation",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -2.388974,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "b) Ammortamento delle immobilizzazioni materiali mat.",
@@ -219,6 +397,16 @@
     "_fuenteCat": "categorias.json"
    },
    {
+    "rawLabel": "12) Accantonamenti per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "13) Altri accantonamenti",
     "normalizedCategory": "other_amortisation",
     "amountNative": -0.977598,
@@ -229,13 +417,53 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "14) Oneri diversi di gestione",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -14.500608,
+    "rawLabel": "Spese varie per organizzazioni gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.799618,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
+    "_pag": 46,
     "_escalon": 1,
     "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tasse iscrizione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.006524,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi acq. temporanea calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.523434,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri gestione calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.722485,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.448547,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -251,8 +479,24 @@
    "tax": 0,
    "extraRows": [
     {
+     "label": "Verso controllate",
+     "value": 0
+    },
+    {
      "label": "- Altri",
      "value": 0.001204
+    },
+    {
+     "label": "- Da imprese controllate",
+     "value": 0
+    },
+    {
+     "label": "Verso imprese controllanti",
+     "value": 0
+    },
+    {
+     "label": "Verso imprese socie",
+     "value": 0
     },
     {
      "label": "Altri",
@@ -261,14 +505,6 @@
     {
      "label": "Imposte",
      "value": 0
-    }
-   ],
-   "sinDesglose": [
-    {
-     "renglon": "1) Ricavi delle vendite e delle prestazioni",
-     "lado": "revenue",
-     "importe": 1.373306,
-     "motivo": "el documento no desglosa este renglón"
     }
    ],
    "grossDebt": null,
@@ -311,33 +547,62 @@
   }
  ],
  "seleccion": {
-  "filas": 25,
+  "filas": 51,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "1) Ricavi delle vendite e delle prestazioni",
-   "page": 20,
-   "native": 1.373306,
+   "label": "- Gare Campionato",
+   "page": 42,
+   "native": 0.810341,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 1.373306,
-   "cat": "lump_football_operations",
-   "conf": 0.35,
-   "escalon": 2,
+   "origen": "verificacion (nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.810341,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
-   "enCola": true,
    "destino": "revenue",
-   "amountNative": 1.373306
+   "amountNative": 0.810341
+  },
+  {
+   "label": "Abbonamenti",
+   "page": 42,
+   "native": 0.562965,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\")",
+   "signoFijo": 0.562965,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.562965
+  },
+  {
+   "label": "4) Incrementi di immobilizzazioni per lavori interni",
+   "page": 20,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
   },
   {
    "label": "b) Proventi da Sponsorizzazioni",
    "page": 20,
    "native": 2.200339,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 2.200339,
    "cat": "sponsorship_commercial",
    "conf": 1,
@@ -352,7 +617,7 @@
    "page": 20,
    "native": 2.631202,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 2.631202,
    "cat": "sponsorship_commercial",
    "conf": 1,
@@ -367,7 +632,7 @@
    "page": 20,
    "native": 0.050929,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.050929,
    "cat": "sponsorship_commercial",
    "conf": 1,
@@ -382,7 +647,7 @@
    "page": 20,
    "native": 3.05542,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 3.05542,
    "cat": "broadcasting",
    "conf": 1,
@@ -397,7 +662,7 @@
    "page": 20,
    "native": 0.049782,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.049782,
    "cat": "player_sales",
    "conf": 1,
@@ -412,7 +677,7 @@
    "page": 20,
    "native": 1.820531,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 1.820531,
    "cat": "player_sales",
    "conf": 0.9,
@@ -423,26 +688,41 @@
    "amountNative": 1.820531
   },
   {
-   "label": "l) Ricavi e proventi diversi",
-   "page": 20,
-   "native": 21.326285,
+   "label": "Contributi in conto esercizio",
+   "page": 42,
+   "native": 17.526423,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 21.326285,
+   "origen": "verificacion (nota que desglosa \"l) Ricavi e proventi diversi\")",
+   "signoFijo": 17.526423,
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 21.326285
+   "amountNative": 17.526423
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "page": 42,
+   "native": 3.799862,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"l) Ricavi e proventi diversi\")",
+   "signoFijo": 3.799862,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.799862
   },
   {
    "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
    "page": 20,
    "native": 1.667571,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 1.667571,
    "cat": "other_expenses",
    "conf": 1,
@@ -453,26 +733,224 @@
    "amountNative": -1.667571
   },
   {
-   "label": "7) Per servizi",
-   "page": 20,
-   "native": 14.197493,
+   "label": "Costi per attività sportiva",
+   "page": 44,
+   "native": 2.141724,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 14.197493,
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 2.141724,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -2.141724
+  },
+  {
+   "label": "Costi specifici Tecnici",
+   "page": 44,
+   "native": 0.999176,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.999176,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -0.999176
+  },
+  {
+   "label": "Costi per intermediazioni",
+   "page": 44,
+   "native": 1.074298,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.074298,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega; criterios del to-do 152): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -1.074298
+  },
+  {
+   "label": "Costi per prestazione servizi personale",
+   "page": 44,
+   "native": 0.34233,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.34233,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -14.197493
+   "amountNative": -0.34233
+  },
+  {
+   "label": "Costi vitto, alloggio e locomozione gare",
+   "page": 44,
+   "native": 1.93533,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.93533,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.93533
+  },
+  {
+   "label": "Compensi e rimborsi spesa a terzi",
+   "page": 44,
+   "native": 0.376255,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.376255,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.376255
+  },
+  {
+   "label": "Costi per servizio biglietteria, controllo ingressi",
+   "page": 44,
+   "native": 0.318927,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.318927,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.318927
+  },
+  {
+   "label": "Costi per pubblicità e propaganda",
+   "page": 44,
+   "native": 0.87035,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.87035,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.87035
+  },
+  {
+   "label": "Costi assicurativi",
+   "page": 44,
+   "native": 1.324238,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.324238,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.324238
+  },
+  {
+   "label": "Costi per utenze e spese generali",
+   "page": 44,
+   "native": 1.282394,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.282394,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.282394
+  },
+  {
+   "label": "Costi per manutenzioni e riparazioni",
+   "page": 44,
+   "native": 1.073871,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.073871,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.073871
+  },
+  {
+   "label": "Costi per servizio da banche e finanz.",
+   "page": 44,
+   "native": 0.025354,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.025354,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.025354
+  },
+  {
+   "label": "Legali e Amministrativi",
+   "page": 44,
+   "native": 1.99192,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 1.99192,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.99192
+  },
+  {
+   "label": "Altri",
+   "page": 44,
+   "native": 0.441326,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"7) Per servizi\")",
+   "signoFijo": 0.441326,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.441326
   },
   {
    "label": "8) Per godimento di beni di terzi",
    "page": 20,
    "native": 0.925826,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.925826,
    "cat": "admin_general_expense",
    "conf": 1,
@@ -487,7 +965,7 @@
    "page": 20,
    "native": 49.969951,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 49.969951,
    "cat": "wages_squad",
    "conf": 1,
@@ -502,7 +980,7 @@
    "page": 20,
    "native": 4.11794,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 4.11794,
    "cat": "wages_squad",
    "conf": 1,
@@ -517,7 +995,7 @@
    "page": 20,
    "native": 0.788346,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.788346,
    "cat": "wages_squad",
    "conf": 1,
@@ -528,18 +1006,33 @@
    "amountNative": -0.788346
   },
   {
+   "label": "e) Altri costi",
+   "page": 20,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
    "label": "a) Ammortamento delle immobilizzazioni immateriali imm.",
    "page": 20,
    "native": 2.388974,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 2.388974,
-   "cat": "other_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente del club: Parma 2023 y 2024 'a) ammortamento delle immobilizzazioni immateriali' -> player_amortisation",
    "destino": "expense",
    "amountNative": -2.388974
   },
@@ -548,7 +1041,7 @@
    "page": 20,
    "native": 0.873275,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.873275,
    "cat": "depreciation",
    "conf": 1,
@@ -563,7 +1056,7 @@
    "page": 20,
    "native": 0.780217,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.780217,
    "cat": "player_impairment",
    "conf": 1,
@@ -578,7 +1071,7 @@
    "page": 20,
    "native": 0.098301,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.098301,
    "cat": "other_expenses",
    "conf": 1,
@@ -593,7 +1086,7 @@
    "page": 20,
    "native": 39.51541,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 39.51541,
    "cat": "player_amortisation",
    "conf": 0.95,
@@ -608,7 +1101,7 @@
    "page": 20,
    "native": 0.310789,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
    "signoFijo": -0.310789,
    "cat": "other_expenses",
    "conf": 1,
@@ -619,11 +1112,26 @@
    "amountNative": 0.310789
   },
   {
+   "label": "12) Accantonamenti per rischi",
+   "page": 20,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
    "label": "13) Altri accantonamenti",
    "page": 20,
    "native": 0.977598,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.977598,
    "cat": "other_amortisation",
    "conf": 1,
@@ -635,19 +1143,90 @@
    "amountNative": -0.977598
   },
   {
-   "label": "14) Oneri diversi di gestione",
-   "page": 20,
-   "native": 14.500608,
+   "label": "Spese varie per organizzazioni gare",
+   "page": 46,
+   "native": 0.799618,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 14.500608,
-   "cat": "other_expenses",
+   "origen": "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")",
+   "signoFijo": 0.799618,
+   "cat": "match_organisation_expense",
    "conf": 0.99,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -14.500608
+   "amountNative": -0.799618
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "page": 46,
+   "native": 0.006524,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")",
+   "signoFijo": 0.006524,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.006524
+  },
+  {
+   "label": "Costi acq. temporanea calciatori",
+   "page": 46,
+   "native": 0.523434,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")",
+   "signoFijo": 0.523434,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.523434
+  },
+  {
+   "label": "Altri oneri gestione calciatori",
+   "page": 46,
+   "native": 10.722485,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")",
+   "signoFijo": 10.722485,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.722485
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "page": 46,
+   "native": 2.448547,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")",
+   "signoFijo": 2.448547,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.448547
+  },
+  {
+   "label": "Verso controllate",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
   },
   {
    "label": "- Altri",
@@ -663,14 +1242,49 @@
    "destino": "netInterest"
   },
   {
-   "label": "Altri",
+   "label": "- Da imprese controllate",
    "page": null,
-   "native": -0.097287,
+   "native": 0,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Verso imprese controllanti",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Verso imprese socie",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Altri",
+   "page": null,
+   "native": -0.097287,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
    "destino": "netInterest"
   },
   {
@@ -687,7 +1301,12 @@
  ],
  "signos": {
   "porTabla": {
-   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"l) Ricavi e proventi diversi\")": "gastos con signo",
+   "verificacion (nota que desglosa \"7) Per servizi\")": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"14) Oneri diversi di gestione\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -722,8 +1341,8 @@
  },
  "liga": {
   "valor": "it-serieb",
-  "fuente": "roster cacheado de \"2022–23 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -763,16 +1382,16 @@
   },
   "liga": {
    "valor": "it-serieb",
-   "fuente": "roster cacheado de \"2022–23 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Parma\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 8,
-  "lineasGasto": 14,
-  "metaFilas": 3,
+  "motivos": 3,
+  "lineasIngreso": 11,
+  "lineasGasto": 33,
+  "metaFilas": 7,
   "excluidas": 0
  }
 }
