@@ -146,16 +146,12 @@ ni en el comentario de ningún archivo de código.
     recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
 
-166. ITALIA: 17-BIS SIN SIGNO Y 17) SIN NÚMERO (verificar.mjs). La SECCIÓN D ya la lee el script (escalón "sección D", Versión 589):
-    Inter 2021-22, Bologna 2019-20 y Como 2024 dejaron sus ajustes (carga idéntica). Siguen con ajustes, sin daño: AC Milan 2017-18 y
-    2021-22 e Inter 2024-25 (el escalón cierra con otra lectura, con notas abiertas y redondeos de 1-2 mil EUR: no idéntico, se dejan los
-    ajustes) y AC Milan 2023-24 (el escalón no cierra). Informes con el detalle: Admin/informes-etapa6-italia/informe-{A,B,C,D}.md.
-    Falta, como escalón aparte:
-    - 17-bis / "b) perdite su cambi" impreso en positivo que resta: Atalanta 2019 (L429, 923), Napoli 2022 (L294, 6.136), Napoli 2023
-      (L280, 212; cargado), Napoli 2024 (4.559). Hoy cierran con ajustes `fila`.
-    - 17) sin la etiqueta "17)" se suma como ingreso: Torino 2019 (L647, 609.108); cierra con ajuste.
-    DISEÑO: dentro del escalón "17) resta", las filas del 17-bis con "perdite" (pérdidas) restan |valor|; compuerta: el total de C impreso
-    exacto. Medir con los 4 documentos sin sus ajustes del 17-bis.
+166. ITALIA: 17) SIN NÚMERO Y LOS QUE QUEDAN CON AJUSTE (verificar.mjs). CONOCIDO, SIN DAÑO HOY. La sección D (Versión 589) y el signo del
+    17-bis (Versión 590, las sumas eligen) ya los lee el script: Inter 2021-22, Bologna 2019-20, Como 2024, Atalanta 2019 y Napoli 2023/2024
+    dejaron sus ajustes (cargas idénticas). Siguen con ajustes, cargados bien: AC Milan 2017-18 y 2021-22 e Inter 2024-25 (el escalón de la
+    D cierra con otra lectura, con notas y redondeos de 1-2 mil EUR), AC Milan 2023-24 (no cierra sin ajuste), Torino 2019 (L647 609.108: el
+    17) sin el número se suma como ingreso) y Napoli 2022 (sin cargar; to-do 167). Informes: Admin/informes-etapa6-italia/informe-{A,B,C,D}.md.
+    CUÁNDO HACERLO: si un documento nuevo con este patrón frena.
 
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
     fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Cuando ninguna otra lectura cierra, el caso que

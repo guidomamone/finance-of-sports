@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 590 — El signo del 17-bis lo eligen las sumas (to-do 166, segunda parte) (2026-10-08)
+
+- `verificar.mjs`, escalón "17) resta": si la suma no da el total de C impreso, se prueban los signos de las filas del 17-bis (hasta 4) y se
+  usa la única combinación que da exacto el total de C. Sin etiquetas: Napoli 2024 ("b) perdite su cambi" 4.559 impreso en positivo,
+  17bis impreso (4.529)) y Atalanta 2019 (el 17-bis de 923 metido dentro del "Totale 17)").
+- Medido: con los ajustes, 0 de 162 cambian; sin ellos, Atalanta 2019 y Napoli 2023/2024 dan idéntico (4 ajustes anulados, cargas
+  idénticas). Napoli 2022 (sin cargar, to-do 167) sigue con su ajuste.
+
 ## Versión 589 — Escalón "sección D" en verificar.mjs (to-do 166, primera parte) (2026-10-08)
 
 - Las rettifiche di valore (D del Codice Civile) llegaban sin lado: la lectura 3 las sumaba como ingreso/gasto o la tolerancia las tapaba

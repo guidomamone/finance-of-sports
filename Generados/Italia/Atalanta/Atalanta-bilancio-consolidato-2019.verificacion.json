@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
- "generado": "2026-10-08T12:14:02.937Z",
+ "generado": "2026-10-08T12:23:29.039Z",
  "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2019,
@@ -11,22 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
-   "campo": "fila",
-   "valor": "(923)",
-   "linea": 429,
-   "etiqueta": "17-bis) Utile e perdite su cambi",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 429,
-   "motivo": "17-bis impreso en positivo en el estado pero es pérdida: nota b52 Totale (923); Totale C (838.256) = 189.628 - 1.027.884 (patrón to-do 155)",
-   "evidencia": "pág. 9 del visor, .md L429-431; b52 L1605-1607",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -63,7 +48,7 @@
  "notas": [
   "la nota de \"1) Ricavi delle vendite e delle prestazioni\" no suma el renglón (13.50223 contra 13.50221, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) salari e stipendi\" no suma el renglón (58.276118 contra 61.644235, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"17-bis) Utile e perdite su cambi\" (financiero) (923), en lugar de la fila de L429 (2026-10-08, 17-bis impreso en positivo en el estado pero es pérdida: nota b52 Totale (923); Totale C (838.256) = 189.628 - 1.027.884 (patrón to-do 155))",
+  "escalón \"17) resta\": el signo del 17-bis lo eligen las sumas (L429 resta): única combinación que da el total de C impreso",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
   "la lectura base no cerraba; cerró con la lectura 4",
   "línea 393: 207.540 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (207940) el resultado daría 26.497831 y no cierra)",

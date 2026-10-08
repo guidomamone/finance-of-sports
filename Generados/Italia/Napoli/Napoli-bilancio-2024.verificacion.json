@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2024.md",
- "generado": "2026-10-07T02:12:10.413Z",
+ "generado": "2026-10-08T12:23:29.128Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2024,
@@ -12,32 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
-   "campo": "fila",
-   "valor": "(1.063.280)",
-   "linea": 284,
-   "etiqueta": "e) altri (oneri finanziari)",
-   "lado": "financiero",
-   "reemplaza": "e) altri",
-   "motivo": "oneri finanziari impresos en positivo bajo 17); Totale C (L290) 7.442.873 (to-do 155/156, arreglo manual 2026-10-07)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
-  {
-   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
-   "campo": "fila",
-   "valor": "(4.559)",
-   "linea": 288,
-   "etiqueta": "b) perdite su cambi",
-   "lado": "financiero",
-   "reemplaza": "b) perdite su cambi",
-   "motivo": "perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07)",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-07"
-  },
   {
    "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf",
    "campo": "confirmado",
@@ -72,20 +46,25 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 359.264354; el sitio tiene 359.264354"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 328.190374 en este documento y 328.190374 en Napoli-bilancio-2025.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 359.264354 en Napoli-bilancio-2023.pdf y 359.264354 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota de \"f) proventi vari\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "ajuste manual: fila \"e) altri (oneri finanziari)\" (financiero) (1.063.280), en lugar de \"e) altri\" (2026-10-07, oneri finanziari impresos en positivo bajo 17); Totale C (L290) 7.442.873 (to-do 155/156, arreglo manual 2026-10-07))",
-  "ajuste manual: fila \"b) perdite su cambi\" (financiero) (4.559), en lugar de \"b) perdite su cambi\" (2026-10-07, perdite su cambi impresas en positivo; Totale 17bis (4.529) (to-do 155/156, arreglo manual 2026-10-07))",
+  "escalón \"17) resta\": el signo del 17-bis lo eligen las sumas (L287 suma, L288 resta): única combinación que da el total de C impreso",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Napoli-bilancio-2024.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"e) altri\"): aceptar, en Napoli-bilancio-2024.pdf",
@@ -350,14 +329,14 @@
    "linea": 280
   },
   {
+   "etiqueta": "e) altri",
+   "M": -1.06328,
+   "linea": 284
+  },
+  {
    "etiqueta": "a) utili su cambi",
    "M": 0.00003,
    "linea": 287
-  },
-  {
-   "etiqueta": "e) altri (oneri finanziari)",
-   "M": -1.06328,
-   "linea": 284
   },
   {
    "etiqueta": "b) perdite su cambi",

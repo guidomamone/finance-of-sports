@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2023.md",
- "generado": "2026-10-08T03:14:10.458Z",
+ "generado": "2026-10-08T12:23:29.074Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2023,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf",
-   "campo": "fila",
-   "valor": "(212)",
-   "linea": 280,
-   "etiqueta": "b) perdite su cambi",
-   "lado": "financiero",
-   "reemplaza": "b) perdite su cambi",
-   "motivo": "perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024)",
-   "evidencia": "pág. 7 del visor, .md L279-283",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -61,7 +47,7 @@
  ],
  "notas": [
   "la nota de \"11) Variaz. delle riman. mat.prime, sussid., di consumo e merci\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "ajuste manual: fila \"b) perdite su cambi\" (financiero) (212), en lugar de \"b) perdite su cambi\" (2026-10-08, perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024))",
+  "escalón \"17) resta\": el signo del 17-bis lo eligen las sumas (L279 suma, L280 resta): única combinación que da el total de C impreso",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar que no afecta la carga: Desglosa costos/ingresos por contraparte del grupo, no por categoría del estado.",
   "duda de extraer que no afecta la carga: El total L1748 difiere en 507.143 (contributi, en b57) y sus filas repiten importes del estado sin desglosar.",
