@@ -115,6 +115,22 @@ const torinoitRevenueLinesByYear = {
     { rawLabel:'Plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:11.864, disclosureLevel:'aggregated' }, // pág. 36, precedente
     { rawLabel:'Contributi di solidarietà/Indennità formazione', normalizedCategory:'player_sales', amountNative:0.101, disclosureLevel:'aggregated' }, // pág. 36, Claude 0.85
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Torino/Torino-bilancio-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Torino/Torino-bilancio-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Ricavi biglietteria gare nazionali e amichevoli', normalizedCategory:'matchday_competition', amountNative:4.464, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:1.715, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'a) contributi in conto esercizio', normalizedCategory:'other_income', amountNative:1.234817, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Sponsor Ufficiali e Tecnico', normalizedCategory:'sponsorship_commercial', amountNative:7.196, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Altri proventi da sponsorizzazione', normalizedCategory:'sponsorship_commercial', amountNative:1.567, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'c) proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:4.451469, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:2.481185, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'e) proventi da cessione diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:52.376963, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'f) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:1.456513, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'g) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:23.216887, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'h) altri proventi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:0.106192, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:0.878086, disclosureLevel:'aggregated' }, // pág. 15, precedente
+  ],
 };
 const torinoitExpenseLinesByYear = {
   2018: [ // tools/cargar.mjs (2026-10-07)
@@ -267,6 +283,35 @@ const torinoitExpenseLinesByYear = {
     { rawLabel:'Percentuale incassi bigliettazione squadra ospite', normalizedCategory:'match_organisation_expense', amountNative:-0.083, disclosureLevel:'aggregated' }, // pág. 41, precedente
     { rawLabel:'Altri oneri', normalizedCategory:'other_expenses', amountNative:-0.499, disclosureLevel:'aggregated' }, // pág. 41, precedente
   ],
+  2023: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Materiale tecnico (divise ufficiali)', normalizedCategory:'admin_general_expense', amountNative:-1.228, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Materiale di consumo e altri materiali', normalizedCategory:'admin_general_expense', amountNative:-0.169, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-0.339, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.781, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-2.672, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare, lavanderia', normalizedCategory:'match_organisation_expense', amountNative:-3.134, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi assicurativi', normalizedCategory:'admin_general_expense', amountNative:-0.855, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi gestione impianti ed eventi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-2.7, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi per l’energia', normalizedCategory:'admin_general_expense', amountNative:-1.215, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi amministrativi e generali', normalizedCategory:'admin_general_expense', amountNative:-1.841, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Concessioni campi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-1.241, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-0.356, disclosureLevel:'aggregated' }, // pág. 47, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-51.445567, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-3.649465, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'c) trattamento fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.259645, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'e) altri costi', normalizedCategory:'wages_squad', amountNative:-0.324247, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'a) amm.ti immob. immateriali', normalizedCategory:'player_amortisation', amountNative:-28.405293, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'b) amm.ti immob. materiali', normalizedCategory:'depreciation', amountNative:-0.216113, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'c) svalutazione delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'d) svalut.crediti di attivo circ. e disp.l.', normalizedCategory:'other_expenses', amountNative:-0.15, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.2, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'13) altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'a) oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-1.19065, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'b) costi da cessione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-1.036588, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-5.232923, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'d) altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'e) altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-0.810997, disclosureLevel:'aggregated' }, // pág. 15, precedente
+  ],
 };
 const torinoitFiscalYearMeta = {
   // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (400.771). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
@@ -357,6 +402,22 @@ const torinoitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:96.332, officialTotalExpenses:112.975854, officialPAT:-13.971466,
   },
+  2023: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2023-12-31',
+    sourceId:'torino-it-bilancio-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.439001, tax:1.185394,
+    extraRows: [
+      {label:'d) proventi diversi', value:0.620744},
+      {label:'d) oneri diversi', value:-3.059745},
+      {label:'Imposte correnti', value:1.584259},
+      {label:'Imposte anticipate e differite', value:-0.398865},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:101.144112, officialTotalExpenses:104.219565, officialPAT:-9.562667,
+  },
 };
 const torinoitPresupuestoOverlayByYear = {};
 
@@ -404,6 +465,12 @@ Object.assign(sources, {
     title:'Torino Football Club S.p.A. — Torino-bilancio-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Torino/Torino-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'torino-it-bilancio-2023': {
+    id:'torino-it-bilancio-2023', clubId:'torino-it',
+    title:'Torino Football Club S.p.A. — Torino-bilancio-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Torino/Torino-bilancio-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

@@ -59,3 +59,5 @@ de varios años (no se bajaron: no son el bilancio).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Torino/Torino-bilancio-2022.pdf` (sourceId `torino-it-bilancio-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Torino/Torino-bilancio-2019.pdf` (sourceId `torino-it-bilancio-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Torino/Torino-bilancio-2023.pdf` (sourceId `torino-it-bilancio-2023`).

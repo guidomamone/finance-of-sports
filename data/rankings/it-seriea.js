@@ -6,9 +6,9 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -118,6 +118,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:166.594, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2022-23",
         mix:[["Comercial / Sponsors",25.032],["Estadio",19.471],["Televisión",110.825],["Venta de Jugadores",5.569],["Otros ingresos",5.697]] },
+      { id:"torino-it", revenue:111.761, reportType:"official_balance_sheet",
+        sourceId:"torino-it-bilancio-2023",
+        mix:[["Comercial / Sponsors",17.343],["Estadio",6.828],["Televisión",57.875],["Venta de Jugadores",27.381],["Otros ingresos",2.335]] },
       { id:"hellasverona-it", revenue:106.971, reportType:"official_balance_sheet",
         sourceId:"hellasverona-it-bilancio-individuale-2023",
         mix:[["Comercial / Sponsors",13.457],["Estadio",4.842],["Televisión",37.09],["Venta de Jugadores",47.807],["Otros ingresos",3.774]] },
@@ -170,6 +173,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"atalanta-it", revenue:274.848, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2021",
         mix:[["Comercial / Sponsors",37.584],["Estadio",6.852],["Televisión",131.103],["Venta de Jugadores",63.549],["Otras secciones deportivas",0.567],["Otros ingresos",35.193]] },
+      { id:"asroma-it", revenue:269.209, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2021",
+        mix:[["Comercial / Sponsors",53.457],["Estadio",0.118],["Televisión",147.626],["Premios por competencias",15.235],["Venta de Jugadores",42.929],["Otros ingresos",9.844]] },
       { id:"sassuolo-it", revenue:140.049, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2021",
         mix:[["Comercial / Sponsors",34.507],["Estadio",1.06],["Televisión",53.677],["Venta de Jugadores",38.886],["Otros ingresos",11.919]] },
