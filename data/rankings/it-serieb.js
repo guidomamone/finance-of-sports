@@ -21,7 +21,7 @@ window.RANKINGS["it-serieb"] = {
     clubs: [
       { id:"cremonese-it", revenue:61.774, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2024",
-        mix:[["Estadio",1.849],["Fútbol profesional (sin desglosar por la fuente)",45.883],["Otros ingresos",14.043]] },
+        mix:[["Comercial / Sponsors",38.895],["Estadio",1.849],["Televisión",17.178],["Venta de Jugadores",2.967],["Otras secciones deportivas",0.071],["Otros ingresos",0.814]] },
       { id:"como-it", revenue:10.512, reportType:"official_balance_sheet",
         sourceId:"como-it-fascicolo-bilancio-2024",
         mix:[["Comercial / Sponsors",0.699],["Estadio",1.655],["Otros ingresos",8.158]] },
@@ -46,7 +46,7 @@ window.RANKINGS["it-serieb"] = {
         mix:[["Comercial / Sponsors",5.208],["Estadio",1.465],["Televisión",3.259],["Venta de Jugadores",1.995],["Otros ingresos",22.747]] },
       { id:"cremonese-it", revenue:29.196, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2022",
-        mix:[["Estadio",0.703],["Fútbol profesional (sin desglosar por la fuente)",22.491],["Otros ingresos",6.002]] },
+        mix:[["Comercial / Sponsors",19.296],["Estadio",0.703],["Televisión",8.883],["Venta de Jugadores",0.208],["Otros ingresos",0.105]] },
     ],
   },
   2021: {

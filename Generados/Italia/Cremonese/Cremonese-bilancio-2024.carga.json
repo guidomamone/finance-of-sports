@@ -1,7 +1,28 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.pdf",
- "generado": "2026-10-07T23:52:42.932Z",
- "frena": [],
+ "generado": "2026-10-08T11:31:55.419Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "cremonese-it ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['cremonese-it-bilancio-2024'] ya existe"
+  }
+ ],
  "avisos": [
   "materialidad: \"Ricavi tessera tifoso\" va como matchday_competition con 0.7 (las dudas de ingresos suman 0.02% de su lado)"
  ],
@@ -73,13 +94,13 @@
    },
    {
     "rawLabel": "altri",
-    "normalizedCategory": "lump_football_operations",
+    "normalizedCategory": "other_income",
     "amountNative": 42.840695,
     "disclosureLevel": "aggregated",
     "_pag": 4,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -408,14 +429,6 @@
      "value": -1.547347
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "altri",
-     "lado": "revenue",
-     "importe": 42.840695,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 57.678554,
@@ -428,7 +441,7 @@
    "title": "U.S. Cremonese S.p.A. — Cremonese-bilancio-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md",
@@ -548,11 +561,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 42.840695,
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "revenue",
    "amountNative": 42.840695
   },
@@ -1020,11 +1034,12 @@
    "native": 0.030856,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "netInterest"
   },
   {
@@ -1033,11 +1048,12 @@
    "native": -0.079062,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "netInterest"
   },
   {
@@ -1050,6 +1066,12 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -1092,8 +1114,8 @@
  },
  "liga": {
   "valor": "it-serieb",
-  "fuente": "roster cacheado de \"2023–24 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Cremonese\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1133,13 +1155,13 @@
   },
   "liga": {
    "valor": "it-serieb",
-   "fuente": "roster cacheado de \"2023–24 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Cremonese\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 5,
   "lineasIngreso": 7,
   "lineasGasto": 30,
   "metaFilas": 3,

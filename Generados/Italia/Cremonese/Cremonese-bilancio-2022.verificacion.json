@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md",
- "generado": "2026-10-08T03:14:10.491Z",
+ "generado": "2026-10-08T11:31:54.900Z",
  "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2022,
@@ -36,6 +36,7 @@
   }
  ],
  "notas": [
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (27.429928): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿En el cuadro 'Oneri diversi di gestione' (b38) la primera columna, rotulada 'Esercizio 01/07/2020-30/06/2021', corresponde en realidad al ejercicio 2021/22 y se carga como tal?",
   "duda de localizar que no afecta la carga: Es el resumen del resultado de la controlante, no de Cremonese.",
@@ -88,20 +89,100 @@
    "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
   },
   {
-   "etiqueta": "contributi in conto esercizio",
+   "etiqueta": "Provvidenze e contributi in c/esercizio",
    "lado": "ingreso",
    "M": 5.778315,
-   "pagina": 5,
-   "linea": 156,
-   "origen": "estado"
+   "pagina": 28,
+   "linea": 1098,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "Proventi da sponsors ufficiali e istituzionali",
    "lado": "ingreso",
-   "M": 21.651613,
-   "pagina": 5,
-   "linea": 157,
-   "origen": "estado"
+   "M": 17.210186,
+   "pagina": 28,
+   "linea": 1099,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da sponsors tecnici e fornitori ufficiali",
+   "lado": "ingreso",
+   "M": 0.354575,
+   "pagina": 28,
+   "linea": 1100,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi pubblicitari e altri sponsors",
+   "lado": "ingreso",
+   "M": 0.980636,
+   "pagina": 28,
+   "linea": 1101,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Concessioni radio televisive",
+   "lado": "ingreso",
+   "M": 2.736953,
+   "pagina": 28,
+   "linea": 1102,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da contratto RAI Com",
+   "lado": "ingreso",
+   "M": 0.036636,
+   "pagina": 28,
+   "linea": 1103,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea prestaz calciat.",
+   "lado": "ingreso",
+   "M": 0.0135,
+   "pagina": 28,
+   "linea": 1104,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusv, da cessione diritti pluriennali calciatori",
+   "lado": "ingreso",
+   "M": 0.005,
+   "pagina": 28,
+   "linea": 1105,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Premi di valorizz, preparaz, contr solid e altri calc",
+   "lado": "ingreso",
+   "M": 0.182105,
+   "pagina": 28,
+   "linea": 1106,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Affitti attivi",
+   "lado": "ingreso",
+   "M": 0.028414,
+   "pagina": 28,
+   "linea": 1108,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.031222,
+   "pagina": 28,
+   "linea": 1109,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 0.072386,
+   "pagina": 28,
+   "linea": 1110,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -315,5 +396,8 @@
    "M": -0.221933,
    "linea": 190
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

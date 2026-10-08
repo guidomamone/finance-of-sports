@@ -1,7 +1,28 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.pdf",
- "generado": "2026-10-08T03:17:40.705Z",
- "frena": [],
+ "generado": "2026-10-08T11:31:54.126Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "cremonese-it ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['cremonese-it-bilancio-2022'] ya existe"
+  }
+ ],
  "avisos": [
   "materialidad: \"Oneri per accordi transattivi e sopravvenienze\" va como exceptional_items con 0.6 (las dudas de gastos suman 0.06% de su lado)",
   "gastos: ningún total impreso igual a la suma de las líneas (-29.98067); queda la suma, verificada por el resultado del ejercicio"
@@ -64,13 +85,13 @@
    },
    {
     "rawLabel": "altri",
-    "normalizedCategory": "lump_football_operations",
+    "normalizedCategory": "other_income",
     "amountNative": 21.651613,
     "disclosureLevel": "aggregated",
     "_pag": 5,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -333,14 +354,6 @@
      "value": -0.221933
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "altri",
-     "lado": "revenue",
-     "importe": 21.651613,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 28.106539,
@@ -457,11 +470,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 21.651613,
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "revenue",
    "amountNative": 21.651613
   },
@@ -821,11 +835,12 @@
    "native": 0.00438,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "netInterest"
   },
   {
@@ -834,11 +849,12 @@
    "native": -0.125764,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": "lump_football_operations",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-08 (to-do 174, ok de Guido): sale del lump para que cargar marque Televisión en 0 y la verificación abra 'altri' con la nota del subtotal, como Cremonese 2025",
    "destino": "netInterest"
   },
   {
@@ -862,6 +878,12 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -899,8 +921,8 @@
  },
  "liga": {
   "valor": "it-serieb",
-  "fuente": "roster cacheado de \"2021–22 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Cremonese\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -940,13 +962,13 @@
   },
   "liga": {
    "valor": "it-serieb",
-   "fuente": "roster cacheado de \"2021–22 Serie B\" (tools/club-league-reference/it.json), coincidencia exacta \"Cremonese\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 5,
   "lineasIngreso": 6,
   "lineasGasto": 23,
   "metaFilas": 4,
