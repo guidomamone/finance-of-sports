@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
   "club": "atalanta-it",
   "year": 2019,
-  "generatedAt": "2026-10-08T01:12:55.529Z",
+  "generatedAt": "2026-10-08T03:14:10.374Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         13.50221
       ],
-      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
+      "glosa": "1) Ingresos por ventas y prestación de servicios"
     },
     {
       "label": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
@@ -54,7 +54,7 @@
       "values": [
         89.803554
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por retransmisiones televisivas"
     },
     {
       "label": "Plusv. Cess. Dir. Plur. Prest. Calciatori",
@@ -64,7 +64,7 @@
       "values": [
         38.753413
       ],
-      "glosa": "Plusvalías por traspaso de derechos sobre las prestaciones de futbolistas"
+      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Sponsorizzazioni",
@@ -94,7 +94,7 @@
       "values": [
         6.740273
       ],
-      "glosa": "Cesión temporal de futbolistas a otros equipos profesionales"
+      "glosa": "Cesión de futbolistas en préstamo a otros clubes profesionales"
     },
     {
       "label": "Proventi non audiovisivi",
@@ -114,7 +114,7 @@
       "values": [
         3.405604
       ],
-      "glosa": "Aportaciones y subvenciones de ligas y entidades federativas"
+      "glosa": "Subvenciones y aportaciones de Ligas y Entes Federativos"
     },
     {
       "label": "Sopravvenienze attive",
@@ -124,7 +124,7 @@
       "values": [
         0.955623
       ],
-      "glosa": "Ingresos extraordinarios"
+      "glosa": "Ingresos extraordinarios y excepcionales"
     },
     {
       "label": "Proventi per iscrizioni Football camp",
@@ -154,7 +154,7 @@
       "values": [
         0.400348
       ],
-      "glosa": "Indemnizaciones de entidades aseguradoras"
+      "glosa": "Ingresos procedentes de entidades aseguradoras"
     },
     {
       "label": "Altri proventi su trasf. Calciatori",
@@ -194,7 +194,7 @@
       "values": [
         1.352429
       ],
-      "glosa": "Compras de materiales diversos y de consumo"
+      "glosa": "Aprovisionamientos de materiales diversos y de consumo"
     },
     {
       "label": "Acquisto divise dipendenti",
@@ -234,7 +234,7 @@
       "values": [
         0.012573
       ],
-      "glosa": "Compra de medicamentos"
+      "glosa": "Compra de material médico y medicamentos"
     },
     {
       "label": "Sconti e abbuoni su acquisti",
@@ -244,7 +244,7 @@
       "values": [
         -0.008578
       ],
-      "glosa": "Descuentos y bonificaciones sobre compras"
+      "glosa": "Descuentos y rebajas sobre compras"
     },
     {
       "label": "Compensi a terzi",
@@ -254,7 +254,7 @@
       "values": [
         5.985205
       ],
-      "glosa": "Honorarios y retribuciones a terceros"
+      "glosa": "Retribuciones y honorarios a terceros"
     },
     {
       "label": "Spese Pubblicitarie",
@@ -274,7 +274,7 @@
       "values": [
         2.734472
       ],
-      "glosa": "Costes de actividad deportiva"
+      "glosa": "Gastos por actividad deportiva"
     },
     {
       "label": "Spese Amministrative e generali serv.",
@@ -284,7 +284,7 @@
       "values": [
         1.785424
       ],
-      "glosa": "Gastos de administración y servicios generales"
+      "glosa": "Gastos administrativos y generales de servicios"
     },
     {
       "label": "Altri costi per servizi",
@@ -294,7 +294,7 @@
       "values": [
         1.72108
       ],
-      "glosa": "Otros costes por servicios exteriores"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Costi vitto - alloggio - locomozione gare",
@@ -304,7 +304,7 @@
       "values": [
         1.085787
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
     },
     {
       "label": "Servizio biglietteria/controllo ingressi",
@@ -314,7 +314,7 @@
       "values": [
         1.063552
       ],
-      "glosa": "Servicio de taquilla y control de accesos"
+      "glosa": "Servicio de venta de entradas y control de accesos"
     },
     {
       "label": "Spese varie organizzazioni gare",
@@ -324,7 +324,7 @@
       "values": [
         0.839551
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Manutenzioni e riparazioni",
@@ -354,7 +354,7 @@
       "values": [
         0.527105
       ],
-      "glosa": "Primas de seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Costi specifici tecnici",
@@ -374,7 +374,7 @@
       "values": [
         10.292384
       ],
-      "glosa": "Cesión temporal de futbolistas"
+      "glosa": "Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "Locazioni impianti sportivi",
@@ -384,7 +384,7 @@
       "values": [
         1.104545
       ],
-      "glosa": "Arrendamientos de instalaciones deportivas"
+      "glosa": "Arrendamiento de instalaciones deportivas"
     },
     {
       "label": "Noleggi e locazioni varie",
@@ -394,7 +394,7 @@
       "values": [
         0.846915
       ],
-      "glosa": "Alquileres y arrendamientos varios"
+      "glosa": "Arrendamientos y cánones varios"
     },
     {
       "label": "Locazioni immobiliari",
@@ -404,7 +404,7 @@
       "values": [
         0.1027
       ],
-      "glosa": "Arrendamientos inmobiliarios"
+      "glosa": "Arrendamientos de inmuebles"
     },
     {
       "label": "Canoni Leasing",
@@ -414,7 +414,7 @@
       "values": [
         0.003009
       ],
-      "glosa": "Cuotas de leasing"
+      "glosa": "Cuotas de arrendamiento financiero (leasing)"
     },
     {
       "label": "a) salari e stipendi",
@@ -444,7 +444,7 @@
       "values": [
         0.612309
       ],
-      "glosa": "c) Indemnización por fin de contrato (TFR)"
+      "glosa": "c) Indemnización por fin de relación laboral (TFR)"
     },
     {
       "label": "d) trattamento di quiescenza e simili",
@@ -454,7 +454,7 @@
       "values": [
         0
       ],
-      "glosa": "d) Pensiones y compromisos similares"
+      "glosa": "d) Prestaciones por jubilación y similares"
     },
     {
       "label": "e) altri costi",
@@ -474,7 +474,7 @@
       "values": [
         31.346324
       ],
-      "glosa": "Amortización de derechos federativos sobre futbolistas"
+      "glosa": "Amortización de derechos federativos de futbolistas"
     },
     {
       "label": "Amm. Costi capitalizzati vivaio",
@@ -514,7 +514,7 @@
       "values": [
         0.412405
       ],
-      "glosa": "Amortización de instalaciones técnicas y específicas"
+      "glosa": "Amortización de instalaciones técnicas"
     },
     {
       "label": "Amm. Macchine d'ufficio elettroniche",
@@ -524,7 +524,7 @@
       "values": [
         0.010376
       ],
-      "glosa": "Amortización de equipos informáticos y electrónicos de oficina"
+      "glosa": "Amortización de equipos informáticos de oficina"
     },
     {
       "label": "Amm. Mobili macchine d'ufficio",
@@ -534,7 +534,7 @@
       "values": [
         0.058084
       ],
-      "glosa": "Amortización de mobiliario de oficina"
+      "glosa": "Amortización de mobiliario y máquinas de oficina"
     },
     {
       "label": "Amm. Altri beni sociali",
@@ -544,7 +544,7 @@
       "values": [
         0.047366
       ],
-      "glosa": "Amortización de otros activos sociales"
+      "glosa": "Amortización de otros bienes societarios"
     },
     {
       "label": "Amm. Attrezzatura generica",
@@ -554,7 +554,7 @@
       "values": [
         0.094465
       ],
-      "glosa": "Amortización de utillaje y equipamiento genérico"
+      "glosa": "Amortización de equipamiento y utillaje general"
     },
     {
       "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -564,7 +564,7 @@
       "values": [
         0.412363
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazione crediti compresi nell'attivo circolante e disp. liquide",
@@ -574,15 +574,15 @@
       "values": [
         0.055632
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y disponibilidades líquidas"
+      "glosa": "d) Corrección valorativa por deterioro de créditos del activo corriente y tesorería"
     },
     {
       "label": "11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.20754
+        -0.20754
       ],
       "glosa": "11) Variación de existencias de materias primas, auxiliares, de consumo y mercaderías"
     },
@@ -594,7 +594,7 @@
       "values": [
         0.093632
       ],
-      "glosa": "12) Dotaciones a las provisiones para riesgos y gastos"
+      "glosa": "12) Dotación a las provisiones para riesgos y gastos"
     },
     {
       "label": "13) Altri accantonamenti",
@@ -614,7 +614,7 @@
       "values": [
         4.798984
       ],
-      "glosa": "Otros gastos diversos de gestión"
+      "glosa": "Otros gastos corrientes de explotación"
     },
     {
       "label": "Sopravvenienze passive",
@@ -624,7 +624,7 @@
       "values": [
         0.525938
       ],
-      "glosa": "Gastos extraordinarios"
+      "glosa": "Gastos extraordinarios y pérdidas excepcionales"
     },
     {
       "label": "Imposte e tasse varie",
@@ -634,7 +634,7 @@
       "values": [
         0.406115
       ],
-      "glosa": "Tributos e impuestos diversos"
+      "glosa": "Impuestos y tasas diversas"
     },
     {
       "label": "Contributi Lega Calcio",
@@ -644,7 +644,7 @@
       "values": [
         0.375
       ],
-      "glosa": "Aportaciones a la Liga de Fútbol"
+      "glosa": "Cuotas y aportaciones a la Liga de Fútbol"
     },
     {
       "label": "Minusvalenze cess dir plur prest calciatori",
@@ -654,7 +654,7 @@
       "values": [
         0.306111
       ],
-      "glosa": "Minusvalías por traspaso de derechos sobre futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Percentuale squadre ospiti",
@@ -664,7 +664,7 @@
       "values": [
         0.219613
       ],
-      "glosa": "Porcentaje para equipos visitantes"
+      "glosa": "Porcentaje de taquilla a equipos visitantes"
     },
     {
       "label": "Ammende - multe gare",
@@ -674,7 +674,7 @@
       "values": [
         0.14575
       ],
-      "glosa": "Multas y sanciones por competiciones"
+      "glosa": "Sanciones y multas federativas"
     },
     {
       "label": "Perdite su crediti",
@@ -684,7 +684,7 @@
       "values": [
         0.002152
       ],
-      "glosa": "Pérdidas por créditos incobrables"
+      "glosa": "Pérdidas por créditos comerciales incobrables"
     },
     {
       "label": "Abbuoni e arrotondamenti passivi",
@@ -694,17 +694,7 @@
       "values": [
         0.00004
       ],
-      "glosa": "Descuentos y redondeos negativos"
-    },
-    {
-      "label": "Totale costi della produzione ( B )",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        147.694598
-      ],
-      "glosa": "Total costes de la producción ( B )"
+      "glosa": "Rebajas y redondeos negativos"
     }
   ]
 }

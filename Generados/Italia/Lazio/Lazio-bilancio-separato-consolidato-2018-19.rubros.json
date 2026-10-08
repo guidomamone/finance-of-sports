@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.pdf",
   "club": "lazio-it",
   "year": 2019,
-  "generatedAt": "2026-10-08T01:12:55.919Z",
+  "generatedAt": "2026-10-08T03:14:10.629Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.079307
       ],
-      "glosa": "Porcentajes sobre recaudación de partidos como equipo visitante"
+      "glosa": "Porcentajes sobre recaudaciones de partidos de equipos anfitriones"
     },
     {
       "label": "abbonamenti",
@@ -114,7 +114,7 @@
       "values": [
         25.964981
       ],
-      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por cesión de derechos federativos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -224,7 +224,7 @@
       "values": [
         0.381476
       ],
-      "glosa": "Indemnizaciones por fin de contrato"
+      "glosa": "Indemnizaciones por fin de contrato (TFR)"
     },
     {
       "label": "Altri costi",
@@ -344,7 +344,7 @@
       "values": [
         0.503883
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
@@ -364,7 +364,7 @@
       "values": [
         0.036532
       ],
-      "glosa": "-) Porcentaje sobre recaudación de partidos al equipo visitante"
+      "glosa": "-) Porcentaje de recaudación de partidos para el equipo visitante"
     },
     {
       "label": "Altri oneri di gestione",
@@ -384,7 +384,7 @@
       "values": [
         1.050686
       ],
-      "glosa": "Gastos extraordinarios (no recurrentes)"
+      "glosa": "Pérdidas extraordinarias (no recurrentes)"
     },
     {
       "label": "Amm. delle immobilizzazioni immateriali",
@@ -424,7 +424,7 @@
       "values": [
         6.979214
       ],
-      "glosa": "Deterioro de créditos del activo corriente y tesorería"
+      "glosa": "Deterioro de créditos del activo corriente y disponibilidades líquidas"
     },
     {
       "label": "Accantonamenti per rischi",

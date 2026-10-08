@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.pdf",
   "club": "lazio-it",
   "year": 2024,
-  "generatedAt": "2026-10-08T01:12:55.946Z",
+  "generatedAt": "2026-10-08T03:14:10.662Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         27.683913
       ],
-      "glosa": "Ingresos por taquilla y competiciones"
+      "glosa": "Ingresos por partidos"
     },
     {
       "label": "Diritti radiotelevisivi e proventi media",
@@ -24,7 +24,7 @@
       "values": [
         142.107712
       ],
-      "glosa": "Derechos audiovisuales e ingresos de medios"
+      "glosa": "Derechos audiovisuales e ingresos por medios de comunicación"
     },
     {
       "label": "Ricavi da sponsorizzazione e pubblicità",
@@ -74,7 +74,7 @@
       "values": [
         40.901907
       ],
-      "glosa": "Plusvalías por traspaso de derechos federativos"
+      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Costi per materie prime",
@@ -84,7 +84,7 @@
       "values": [
         3.322248
       ],
-      "glosa": "Gastos por materias primas"
+      "glosa": "Consumo de materias primas"
     },
     {
       "label": "Costo del Personale",
@@ -104,7 +104,7 @@
       "values": [
         25.486501
       ],
-      "glosa": "Gastos por servicios"
+      "glosa": "Gastos por servicios exteriores"
     },
     {
       "label": "Oneri da gestione diritti calciatori",

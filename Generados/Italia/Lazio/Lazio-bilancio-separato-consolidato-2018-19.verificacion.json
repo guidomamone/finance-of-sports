@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.md",
- "generado": "2026-10-08T01:12:55.919Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:14:10.629Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2019,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "476c85a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -37,6 +35,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 192.944068; el sitio tiene 192.943084"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 150.080572 en este documento y 149.763939 en Lazio-bilancio-separato-consolidato-2019-20.pdf (columna del año anterior)"
@@ -45,18 +48,13 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 192.943084 en Lazio-bilancio-separato-consolidato-2017-18.pdf y 192.944068 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Costi specifici tecnici\" (2 filas) no suma la fila: quedó la fila",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Los segmentos Sportivo/Commerciale/Immobiliare no parecen desglosar renglones que el estado o sus notas no abran.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga las notas b166, b167, b168, b169, b170, b175, b182 y b183 porque repiten en miles el mismo desglose que el estado ya trae en euros?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir no, en Lazio-bilancio-separato-consolidato-2011-12.pdf",
   "duda de extraer que no afecta la carga: L3638 tiene signo positivo dentro de un bloque de gastos, y L3636 suma -6.729.214 coherente con ese signo.",
   "duda de extraer que no afecta la carga: 0+1.381.120-1.801.072=-419.952 cuadra con L3650."
  ],

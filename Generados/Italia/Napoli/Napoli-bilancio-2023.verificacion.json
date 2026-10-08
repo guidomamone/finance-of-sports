@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2023.md",
- "generado": "2026-10-08T01:12:56.096Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:14:10.458Z",
+ "estado": "ok",
  "clubId": "napoli-it",
  "year": 2023,
  "escala": {
@@ -11,10 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "afca6c2"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf",
+   "campo": "fila",
+   "valor": "(212)",
+   "linea": 280,
+   "etiqueta": "b) perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": "b) perdite su cambi",
+   "motivo": "perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024)",
+   "evidencia": "pág. 7 del visor, .md L279-283",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,8 +40,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 359.264354 - gastos 242.559928 ± financiero 3.506274 ± impuesto 38.105457 no da el impreso 79.700081"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2024",
@@ -49,6 +61,8 @@
  ],
  "notas": [
   "la nota de \"11) Variaz. delle riman. mat.prime, sussid., di consumo e merci\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"b) perdite su cambi\" (financiero) (212), en lugar de \"b) perdite su cambi\" (2026-10-08, perdite su cambi impresas en positivo; Totale 17bis 3.287 = 3.499 - 212 (patrón to-do 155 igual que Napoli 2024))",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar que no afecta la carga: Desglosa costos/ingresos por contraparte del grupo, no por categoría del estado.",
   "duda de extraer que no afecta la carga: El total L1748 difiere en 507.143 (contributi, en b57) y sus filas repiten importes del estado sin desglosar.",
   "duda de extraer que no afecta la carga: L1826-L1830 incluye número de cesiones y valores contables que no suman a la plusvalenza.",
@@ -62,12 +76,12 @@
  "totales": {
   "ingresos": 359.264354,
   "gastos": 242.559928,
-  "financiero": 3.506274,
+  "financiero": 1.101112,
   "impuesto": 38.105457,
   "resultadoImpreso": 79.700081,
   "resultadoParaCargar": 79.700081,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -737,7 +751,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -747,7 +761,7 @@
   },
   {
    "etiqueta": "e) altri",
-   "M": 1.202369,
+   "M": -1.202369,
    "linea": 276
   },
   {
@@ -757,34 +771,34 @@
   },
   {
    "etiqueta": "b) perdite su cambi",
-   "M": 0.000212,
+   "M": -0.000212,
    "linea": 280
   }
  ],
  "impuesto": [
   {
    "etiqueta": "a) imposte correnti",
-   "M": 11.542101,
+   "M": -11.542101,
    "linea": 286
   },
   {
    "etiqueta": "b) imposte relative a esercizi precedenti",
-   "M": -0.004186,
+   "M": 0.004186,
    "linea": 287
   },
   {
    "etiqueta": "c) oneri (proventi) da consolidato fiscale",
-   "M": 16.680415,
+   "M": -16.680415,
    "linea": 288
   },
   {
    "etiqueta": "d) imposte differite",
-   "M": 15.855455,
+   "M": -15.855455,
    "linea": 289
   },
   {
    "etiqueta": "e) imposte anticipate",
-   "M": -5.968328,
+   "M": 5.968328,
    "linea": 290
   }
  ]

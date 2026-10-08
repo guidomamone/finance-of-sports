@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.md",
- "generado": "2026-10-08T01:12:55.946Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:14:10.662Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "37997ee"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,7 +42,7 @@
   {
    "nombre": "documento del año 2025",
    "ok": true,
-   "detalle": "ingresos de 2024: 236.40521 en este documento y 236.406196 en Lazio-relazione-finanziaria-annuale-2024-25.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 236.40521 en este documento y 236.40521 en Lazio-relazione-finanziaria-annuale-2024-25.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",

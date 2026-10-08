@@ -1,0 +1,398 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md",
+ "generatedAt": "2026-10-08T03:17:22.331Z",
+ "rubrosHuella": "d4aa329a738bbc023e7d4630ff49cfbcb12ae6bf",
+ "rubros": [
+  {
+   "label": "a) ricavi da gare",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) altri ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "b) proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "e) proventi da cessione diritti audiovisivi e non audiovisivi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "f) ricavi da cessione temporanea prestazioni calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "g) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- premi e/o indennizzi attivi ex art.103, comma 3, NOIF",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- proventi diversi da trasferimento diritti calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "i) ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_impairment",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "d) svalutazione crediti compresi nell'attivo circolante e disp. liquide",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "12) Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "b) costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "- premi e/o indennizzi passivi ex art.103, comma 3, NOIF",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "a) di partecipazioni (svalutazione)",
+   "lado": "expense",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "player_impairment",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "7) per servizi",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "e) altri oneri diversi di gestione",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "8) per godimento beni di terzi",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "depreciation",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "- oneri diversi da trasferimento diritti calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "a) oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1047
+  }
+ ]
+}

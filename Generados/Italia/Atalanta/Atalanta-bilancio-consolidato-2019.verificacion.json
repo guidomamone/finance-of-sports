@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
- "generado": "2026-10-08T01:12:55.528Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:14:10.374Z",
+ "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2019,
  "escala": {
@@ -11,13 +11,23 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "de662f7",
-  "a0304c3",
-  "7529688",
-  "96179d6"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
+   "campo": "fila",
+   "valor": "(923)",
+   "linea": 429,
+   "etiqueta": "17-bis) Utile e perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 429,
+   "motivo": "17-bis impreso en positivo en el estado pero es pérdida: nota b52 Totale (923); Totale C (838.256) = 189.628 - 1.027.884 (patrón to-do 155)",
+   "evidencia": "pág. 9 del visor, .md L429-431; b52 L1605-1607",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -27,12 +37,17 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Totale costi della produzione ( B )\" 147.694598 cierra; además se suman 51 línea(s) fuera de ese total (148.109678)"
+   "detalle": "147.694598 = 147.694598"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 188.621207 - gastos 295.804276 ± financiero 1.217512 ± impuesto 13.590922 no da el impreso 26.497451"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2020",
@@ -48,10 +63,15 @@
  "notas": [
   "la nota de \"1) Ricavi delle vendite e delle prestazioni\" no suma el renglón (13.50223 contra 13.50221, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) salari e stipendi\" no suma el renglón (58.276118 contra 61.644235, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"17-bis) Utile e perdite su cambi\" (financiero) (923), en lugar de la fila de L429 (2026-10-08, 17-bis impreso en positivo en el estado pero es pérdida: nota b52 Totale (923); Totale C (838.256) = 189.628 - 1.027.884 (patrón to-do 155))",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "línea 375: 2.875.337 no está en el segunda lectura, pero las sumas cierran con él",
   "línea 393: 207.540 no está en el segunda lectura, pero las sumas cierran con él",
   "línea 394: 93.632 no está en el segunda lectura, pero las sumas cierran con él",
   "duda de localizar que no afecta la carga: b55 es un resumen de estados de otra entidad (probablemente la controlante) de ejercicios anteriores, no del grupo 2019.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Atalanta-bilancio-consolidato-2019.pdf",
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"9) per il personale\"): aceptar, en Atalanta-bilancio-consolidato-2019.pdf",
   "duda de extraer que no afecta la carga: El total del estado suma intereses más 17-bis; la nota b51 solo intereses, y el signo de cambios difiere entre b4 (923) y b52 ((923)).",
   "duda de extraer que no afecta la carga: Diferencia de 40.000 en el año anterior entre b4 L379 y b42 L1417; las partidas de b42 suman 2.398.520."
  ],
@@ -82,13 +102,13 @@
  ],
  "totales": {
   "ingresos": 188.621207,
-  "gastos": 295.804276,
-  "financiero": 1.217512,
+  "gastos": 147.694598,
+  "financiero": -0.838256,
   "impuesto": 13.590922,
   "resultadoImpreso": 26.497451,
   "resultadoParaCargar": 26.497451,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -550,10 +570,10 @@
   {
    "etiqueta": "11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci",
    "lado": "gasto",
-   "M": 0.20754,
+   "M": -0.20754,
    "pagina": 9,
    "linea": 393,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "12) Accantonamenti per rischi ed oneri",
@@ -642,19 +662,11 @@
    "pagina": 40,
    "linea": 1556,
    "origen": "nota que desglosa \"14) Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "Totale costi della produzione ( B )",
-   "lado": "gasto",
-   "M": 147.694598,
-   "pagina": 9,
-   "linea": 397,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -669,34 +681,34 @@
   },
   {
    "etiqueta": "c) verso imprese controllanti",
-   "M": 0.189682,
+   "M": -0.189682,
    "linea": 425
   },
   {
    "etiqueta": "- da altri",
-   "M": 0.837279,
+   "M": -0.837279,
    "linea": 427
   },
   {
    "etiqueta": "17-bis) Utile e perdite su cambi",
-   "M": 0.000923,
+   "M": -0.000923,
    "linea": 429
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Imposte correnti",
-   "M": 4.313217,
+   "M": -4.313217,
    "linea": 448
   },
   {
    "etiqueta": "Oneri da adesione al consolidato fiscale",
-   "M": 6.710851,
+   "M": -6.710851,
    "linea": 449
   },
   {
    "etiqueta": "Imposte differite (anticipate)",
-   "M": 2.566854,
+   "M": -2.566854,
    "linea": 450
   }
  ]

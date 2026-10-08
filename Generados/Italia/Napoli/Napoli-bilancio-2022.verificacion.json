@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2022.md",
- "generado": "2026-10-08T01:12:56.068Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:13:44.821Z",
+ "estado": "ok",
  "clubId": "napoli-it",
  "year": 2022,
  "escala": {
@@ -11,10 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "e242286"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf",
+   "campo": "fila",
+   "valor": "(6.136)",
+   "linea": 294,
+   "etiqueta": "b) perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": "b) perdite su cambi",
+   "motivo": "perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155)",
+   "evidencia": "pág. 7 del visor, .md L293-296",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,6 +65,7 @@
   "la nota de \"c) altre svalutazioni delle immobilizzazioni\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"d) svalut.dei crediti compresi nel circolante\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"11) Variaz delle riman. mat.prime, sussid., di consumo e merci\" no suma el renglón (0 contra 0.439846, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"b) perdite su cambi\" (financiero) (6.136), en lugar de \"b) perdite su cambi\" (2026-10-08, perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155))",
   "duda de extraer que no afecta la carga: Es detalle por jugador de una fila ya desglosada en b63 y la tabla está cortada (solo se ve L1915-L1916).",
   "duda de extraer que no afecta la carga: El resultado del ejercicio no aparece en los bloques transcritos (termina en L307 con las imposte); se dejó resultado en null."
  ],
@@ -84,7 +97,7 @@
  "totales": {
   "ingresos": 175.995109,
   "gastos": 483.222726,
-  "financiero": 0.423925,
+  "financiero": 0.411653,
   "impuesto": -13.621427,
   "resultadoImpreso": null,
   "resultadoParaCargar": null,
@@ -699,7 +712,7 @@
   },
   {
    "etiqueta": "b) perdite su cambi",
-   "M": 0.006136,
+   "M": -0.006136,
    "linea": 294
   }
  ],

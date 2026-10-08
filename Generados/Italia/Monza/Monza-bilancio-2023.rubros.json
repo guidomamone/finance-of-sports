@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Monza/Monza-bilancio-2023.pdf",
   "club": "monza-it",
   "year": 2023,
-  "generatedAt": "2026-10-08T01:12:55.996Z",
+  "generatedAt": "2026-10-08T03:14:10.519Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         2.876873
       ],
-      "glosa": "Partidos de Liga"
+      "glosa": "Partidos de Campeonato"
     },
     {
       "label": "Gare Coppa Italia",
@@ -44,7 +44,7 @@
       "values": [
         0.213629
       ],
-      "glosa": "Ingresos por partidos como visitante"
+      "glosa": "Ingresos por partidos fuera de casa"
     },
     {
       "label": "Abbonamenti",
@@ -64,7 +64,7 @@
       "values": [
         0.646346
       ],
-      "glosa": "Aportaciones federativas"
+      "glosa": "Subvenciones federales"
     },
     {
       "label": "Controbuti LNPA",
@@ -74,7 +74,7 @@
       "values": [
         0.137104
       ],
-      "glosa": "Aportaciones LNPA"
+      "glosa": "Aportaciones de la LNPA"
     },
     {
       "label": "Altri contributi sportivi",
@@ -84,7 +84,7 @@
       "values": [
         0.02475
       ],
-      "glosa": "Otras aportaciones deportivas"
+      "glosa": "Otras subvenciones deportivas"
     },
     {
       "label": "Proventi da sponsorizzazioni e altre attività promozionali",
@@ -94,7 +94,7 @@
       "values": [
         15.638678
       ],
-      "glosa": "Ingresos por patrocinio y otras actividades promocionales"
+      "glosa": "Ingresos por patrocinios y otras actividades promocionales"
     },
     {
       "label": "Proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         1.122368
       ],
-      "glosa": "Ingresos comerciales y royalties"
+      "glosa": "Ingresos comerciales y regalías"
     },
     {
       "label": "Proventi da cessione diritti audiovisivi",
@@ -134,7 +134,7 @@
       "values": [
         2.359
       ],
-      "glosa": "Ingresos por cesión temporal de derechos de futbolistas"
+      "glosa": "Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -154,7 +154,7 @@
       "values": [
         0.036906
       ],
-      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Ricavi altre attività sportive organizzate dalla società",
@@ -204,7 +204,7 @@
       "values": [
         1.305978
       ],
-      "glosa": "6. Consumo de materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "6. Compras de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -214,7 +214,7 @@
       "values": [
         1.379374
       ],
-      "glosa": "Gastos por jugadores y técnicos federados"
+      "glosa": "Gastos por jugadores y personal federado"
     },
     {
       "label": "Costi per attività sportiva",
@@ -254,7 +254,7 @@
       "values": [
         0.699782
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
     },
     {
       "label": "Costi assicurativi e servizi finanziari",
@@ -274,7 +274,7 @@
       "values": [
         1.215277
       ],
-      "glosa": "Gastos por servicios relativos al personal"
+      "glosa": "Gastos de servicios relativos al personal"
     },
     {
       "label": "Spese amministrative e generali",
@@ -284,7 +284,7 @@
       "values": [
         2.925992
       ],
-      "glosa": "Gastos administrativos y generales"
+      "glosa": "Gastos generales y de administración"
     },
     {
       "label": "Spese pubblicitarie e promozionali",
@@ -294,7 +294,7 @@
       "values": [
         1.515164
       ],
-      "glosa": "Gastos de publicidad y promoción"
+      "glosa": "Gastos publicitarios y promocionales"
     },
     {
       "label": "Servizio biglietteria e controllo ingressi",
@@ -324,7 +324,7 @@
       "values": [
         0.340398
       ],
-      "glosa": "Alquiler de equipamiento deportivo y diverso"
+      "glosa": "Alquiler de equipamiento deportivo y varios"
     },
     {
       "label": "Locazione impianti sportivi",
@@ -344,7 +344,7 @@
       "values": [
         0.115754
       ],
-      "glosa": "Cánones de uso de software y similares"
+      "glosa": "Cánones por uso de software y similares"
     },
     {
       "label": "Locazioni immobiliari",
@@ -394,7 +394,7 @@
       "values": [
         0.281529
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato y cese"
+      "glosa": "c) Indemnización por cese de la relación laboral"
     },
     {
       "label": "e) altri costi",
@@ -504,7 +504,7 @@
       "values": [
         0.026524
       ],
-      "glosa": "Equipos y dotaciones"
+      "glosa": "Equipamiento y dotaciones"
     },
     {
       "label": "Attrezzatura Sportiva",
@@ -514,7 +514,7 @@
       "values": [
         0.06942
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Macchine Elettroniche",
@@ -564,7 +564,7 @@
       "values": [
         2.386103
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -574,7 +574,7 @@
       "values": [
         0.01208
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de disponibilidades líquidas"
     },
     {
       "label": "12. Accantonamenti per rischi",
@@ -584,7 +584,7 @@
       "values": [
         0
       ],
-      "glosa": "12. Dotaciones a las provisiones para riesgos y gastos"
+      "glosa": "12. Provisiones para riesgos y gastos"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazione calciatori",
@@ -594,7 +594,7 @@
       "values": [
         0.039417
       ],
-      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Costi per acquisizione temporanea prestazione calciatori",
@@ -604,7 +604,7 @@
       "values": [
         4.41275
       ],
-      "glosa": "Gastos por cesión temporal de derechos de futbolistas"
+      "glosa": "Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "Spese organizzazione gare",
@@ -634,7 +634,7 @@
       "values": [
         0.009224
       ],
-      "glosa": "Porcentaje de taquilla a equipos visitantes"
+      "glosa": "Porcentaje de recaudación de taquilla a equipos visitantes"
     },
     {
       "label": "Oneri contribuzione Lega",
@@ -654,7 +654,7 @@
       "values": [
         0.050586
       ],
-      "glosa": "Derechos de formación y preparación"
+      "glosa": "Primas de formación"
     },
     {
       "label": "premi/indennizzi passivi ex art. 103, comma 3, NOIF",
@@ -664,7 +664,7 @@
       "values": [
         1.5483
       ],
-      "glosa": "Primas/indemnizaciones pasivas según art. 103, párr. 3, NOIF"
+      "glosa": "Primas e indemnizaciones a pagar s/art. 103, apartado 3, NOIF"
     },
     {
       "label": "altri oneri",
@@ -684,7 +684,7 @@
       "values": [
         0.296482
       ],
-      "glosa": "Pérdidas extraordinarias y pérdidas por créditos incobrables"
+      "glosa": "Gastos extraordinarios y pérdidas por insolvencias de créditos"
     },
     {
       "label": "multe e ammende",
@@ -704,7 +704,7 @@
       "values": [
         0.246762
       ],
-      "glosa": "Tributos y otros impuestos"
+      "glosa": "Otros impuestos y tasas"
     },
     {
       "label": "abbonamenti",
@@ -714,7 +714,7 @@
       "values": [
         0.116461
       ],
-      "glosa": "Suscripciones"
+      "glosa": "Suscripciones y cuotas"
     },
     {
       "label": "minusvalenze cessione immobilizzazioni materiali",
@@ -724,7 +724,7 @@
       "values": [
         0.000062
       ],
-      "glosa": "Pérdidas por enajenación de inmovilizado material"
+      "glosa": "Pérdidas procedentes del inmovilizado material"
     },
     {
       "label": "altri",
