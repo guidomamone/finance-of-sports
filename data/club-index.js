@@ -109,7 +109,7 @@ window.CLUB_INDEX = {
   "hoffenheim-de": {"n":"TSG Hoffenheim","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "independiente": {"n":"Independiente","c":"AR","q":"full","y":2,"last":2026,"yrs":[[2026,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "instituto": {"n":"Instituto ACC","c":"AR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
-  "inter-it": {"n":"Inter","c":"IT","q":"full","y":6,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "inter-it": {"n":"Inter","c":"IT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "internacional-br": {"n":"Internacional","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "istra-hr": {"n":"Istra 1961","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "ituano": {"n":"Ituano","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},

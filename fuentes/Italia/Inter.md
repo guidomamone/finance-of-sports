@@ -68,3 +68,5 @@ La página `inter.it/it/club/club-transparency` (no solo `investor-relations`) l
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2017-18`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2022-23`).
