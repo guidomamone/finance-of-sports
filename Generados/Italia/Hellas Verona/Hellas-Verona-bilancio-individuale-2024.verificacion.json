@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.pdf",
  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.md",
- "generado": "2026-10-08T18:56:45.853Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.756Z",
+ "estado": "ok",
  "clubId": "hellasverona-it",
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b958f06"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,7 +59,8 @@
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los cuadros b40 y b42 (L1405-L1408, L1455-L1464) por repetir en miles los mismos renglones del estado?",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Per il personale:\"): ¿Se deja afuera el cuadro b49 (L1597-L1601) por repetir los renglones de personale del estado, cargando solo el desglose b50?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Oneri diversi di gestione\"): ¿Se dejan afuera las filas de b52 L1673-L1676 y L1682 y las de b57 L1777-L1779 por duplicar renglones ya cargados del estado?",
-  "duda de extraer que no afecta la carga: El total 35.092 de b50 coincide con Tesserati/Salari e stipendi de b49 L1597, no con el renglón completo."
+  "duda de extraer que no afecta la carga: El total 35.092 de b50 coincide con Tesserati/Salari e stipendi de b49 L1597, no con el renglón completo.",
+  "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"di cui costi diversi da trasferimento calciatori\"): aceptar, en Hellas-Verona-bilancio-individuale-2024.pdf"
  ],
  "reintentar": [
   {

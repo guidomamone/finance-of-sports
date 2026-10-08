@@ -1,0 +1,133 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2013.md",
+ "generatedAt": "2026-10-08T20:09:40.962Z",
+ "rubrosHuella": "ec8cba4632df7b72e8c04ec1f6d4cb1fd8b6176b",
+ "rubros": [
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Altri proventi",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gestione operativa netta calciatori",
+   "lado": "revenue",
+   "page": 66,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "lump_football_operations",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per Servizi",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per il personale",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 66,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.33,
+   "desdeCache": true
+  }
+ ]
+}

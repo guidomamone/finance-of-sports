@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.pdf",
   "club": "hellasverona-it",
   "year": 2025,
-  "generatedAt": "2026-10-08T18:56:45.902Z",
+  "generatedAt": "2026-10-08T20:03:01.818Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         2.126867
       ],
-      "glosa": "Ingresos de tiendas"
+      "glosa": "Ingresos de tiendas oficiales"
     },
     {
       "label": "Contributi in conto esercizio",
@@ -94,7 +94,7 @@
       "values": [
         31.550568
       ],
-      "glosa": "Plusvalías por cesión de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri proventi da trasferimento calciatori",
@@ -104,7 +104,7 @@
       "values": [
         9.481347
       ],
-      "glosa": "Otros ingresos por transferencias de futbolistas"
+      "glosa": "Otros ingresos por traspaso de futbolistas"
     },
     {
       "label": "Ricavi e proventi diversi",
@@ -114,7 +114,7 @@
       "values": [
         4.586882
       ],
-      "glosa": "Otros ingresos y rendimientos diversos"
+      "glosa": "Otros ingresos de explotación y diversos"
     },
     {
       "label": "Per materie prime, sussidiarie, di consumo e di merci",
@@ -124,7 +124,7 @@
       "values": [
         3.074386
       ],
-      "glosa": "Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "Consumo de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Per servizi",
@@ -174,7 +174,7 @@
       "values": [
         0.636719
       ],
-      "glosa": "Indemnizaciones por fin de relación laboral"
+      "glosa": "Indemnizaciones por fin de contrato"
     },
     {
       "label": "altri costi",
@@ -184,7 +184,7 @@
       "values": [
         1.439552
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de personal"
     },
     {
       "label": "Ammortamento delle immobilizzazioni immateriali",
@@ -254,7 +254,7 @@
       "values": [
         2.210526
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti prestazioni calciatori",
@@ -264,7 +264,7 @@
       "values": [
         0.433931
       ],
-      "glosa": "Minusvalías por cesión de derechos de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri oneri da trasferimento diritti calciatori",
@@ -274,7 +274,7 @@
       "values": [
         7.649607
       ],
-      "glosa": "Otros gastos por transferencia de derechos de futbolistas"
+      "glosa": "Otros gastos por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri oneri diversi di gestione",
@@ -294,7 +294,7 @@
       "values": [
         0.3
       ],
-      "glosa": "Deterioro de valor a) de participaciones"
+      "glosa": "Pérdidas por deterioro de participaciones"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2023.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2023.md",
- "generado": "2026-10-08T19:39:49.326Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:02.196Z",
+ "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2023,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "a2dd0b3",
-  "40093d9"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,6 +46,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 138.987; el sitio tiene 138.987"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 140.245 en este documento y 140.245 en Sassuolo-bilancio-2024.pdf (columna del año anterior)"
@@ -57,11 +59,6 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 138.987 en Sassuolo-bilancio-2022.pdf y 138.987 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

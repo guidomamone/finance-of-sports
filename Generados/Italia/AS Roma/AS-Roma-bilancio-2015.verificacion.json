@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.md",
- "generado": "2026-10-08T19:48:07.416Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.357Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2015,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "76f55a8"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2016",
-   "ok": null,
-   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
+   "ok": true,
+   "detalle": "ingresos de 2015: 208.277 en este documento y 208.277 en AS-Roma-bilancio-2016.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2014",
@@ -59,8 +57,8 @@
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale parecen repetir renglones ya abiertos en el estado y en las notas 24-26.",
   "duda de localizar que no afecta la carga: b40 repite el conto economico consolidado con columnas 'di cui con parti correlate'.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "duda de extraer ya contestada para el club (columna, \"Gestione operativa netta calciatori\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (perimetro, \"Risultato Consolidato (inclusa quota di terzi)\"): aceptar, en AS-Roma-bilancio-2015.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Gestione operativa netta calciatori\"): aceptar, en AS-Roma-bilancio-2018.pdf"
  ],
  "reintentar": [
   {

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2017-individual.pdf",
   "club": "parma-it",
   "year": 2017,
-  "generatedAt": "2026-10-08T18:56:47.419Z",
+  "generatedAt": "2026-10-08T20:03:02.097Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -114,7 +114,7 @@
       "values": [
         0.143643
       ],
-      "glosa": "Ingresos por cesión de derechos televisivos"
+      "glosa": "Ingresos por cesión de derechos audiovisuales"
     },
     {
       "label": "Altri proventi gestione calciatori",
@@ -134,7 +134,7 @@
       "values": [
         1.136904
       ],
-      "glosa": "Otros ingresos y rendimientos"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -144,7 +144,7 @@
       "values": [
         0.578536
       ],
-      "glosa": "6) Por materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -154,7 +154,7 @@
       "values": [
         3.475001
       ],
-      "glosa": "7) Por servicios"
+      "glosa": "7) Servicios exteriores"
     },
     {
       "label": "Noleggi vari",
@@ -164,7 +164,7 @@
       "values": [
         0.337381
       ],
-      "glosa": "Arrendamientos diversos"
+      "glosa": "Alquileres diversos"
     },
     {
       "label": "Canone di affitto e locazione",
@@ -174,7 +174,7 @@
       "values": [
         0.349859
       ],
-      "glosa": "Cánones de alquiler y arrendamiento"
+      "glosa": "Cánones de arrendamiento y alquiler"
     },
     {
       "label": "Altri",
@@ -204,7 +204,7 @@
       "values": [
         0.843861
       ],
-      "glosa": "Retribución de entrenadores y técnicos"
+      "glosa": "Retribución de entrenadores y cuerpo técnico"
     },
     {
       "label": "Retribuzione Impiegati",
@@ -224,7 +224,7 @@
       "values": [
         0.034657
       ],
-      "glosa": "Retribución de taquilla"
+      "glosa": "Retribución de personal de taquilla"
     },
     {
       "label": "Retribuzione altro personale",
@@ -254,7 +254,7 @@
       "values": [
         0.005647
       ],
-      "glosa": "Retribuciones de personal en prácticas"
+      "glosa": "Retribución de personas en prácticas"
     },
     {
       "label": "Retribuzione Settore Giovanile",
@@ -284,7 +284,7 @@
       "values": [
         0.041517
       ],
-      "glosa": "Indemnizaciones por cese"
+      "glosa": "Incentivos por rescisión de contrato"
     },
     {
       "label": "Premi",
@@ -294,7 +294,7 @@
       "values": [
         0.902383
       ],
-      "glosa": "Primas"
+      "glosa": "Primas y bonus"
     },
     {
       "label": "b) oneri sociali",
@@ -314,7 +314,7 @@
       "values": [
         0.208405
       ],
-      "glosa": "c) Indemnización por fin de contrato laboral"
+      "glosa": "c) Provisión para indemnizaciones por cese (TFR)"
     },
     {
       "label": "e) altri costi",
@@ -324,7 +324,7 @@
       "values": [
         0.001998
       ],
-      "glosa": "e) Otros costes de personal"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "Amm. Costi di impianto ed ampliamento",
@@ -344,7 +344,7 @@
       "values": [
         0.025239
       ],
-      "glosa": "Derechos de patentes industriales y derechos de propiedad intelectual"
+      "glosa": "Propiedad industrial y derechos de propiedad intelectual"
     },
     {
       "label": "Concessioni, licenze, marchi e diritti simili",
@@ -374,7 +374,7 @@
       "values": [
         0.271227
       ],
-      "glosa": "Derechos plurianuales por prestaciones de futbolistas"
+      "glosa": "Derechos federativos de futbolistas"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori settore giovanile",
@@ -384,7 +384,7 @@
       "values": [
         0.0018
       ],
-      "glosa": "Derechos plurianuales por prestaciones de futbolistas de fútbol base"
+      "glosa": "Derechos federativos de futbolistas del fútbol base"
     },
     {
       "label": "Altre imm. immateriali - Migliorie beni di terzi",
@@ -414,7 +414,7 @@
       "values": [
         0.02433
       ],
-      "glosa": "Amort. Equipamiento industrial y comercial"
+      "glosa": "Amort. Utillaje y equipamiento industrial y comercial"
     },
     {
       "label": "Amm. Altre immobilizzazioni materiali",
@@ -434,7 +434,7 @@
       "values": [
         0.12495
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -444,7 +444,7 @@
       "values": [
         0.05411
       ],
-      "glosa": "11) Variación de existencias de materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "11) Variación de existencias de materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -454,7 +454,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Dotación a provisiones para riesgos"
+      "glosa": "12) Dotaciones a las provisiones para riesgos"
     },
     {
       "label": "13) altri accantonamenti",
@@ -464,7 +464,7 @@
       "values": [
         0
       ],
-      "glosa": "13) Otras provisiones"
+      "glosa": "13) Otras dotaciones a las provisiones"
     },
     {
       "label": "14) oneri diversi di gestione",

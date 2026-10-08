@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.md",
- "generado": "2026-10-08T18:56:43.412Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.126Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2021,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "32643a4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,6 +30,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 192.315; el sitio tiene 192.315"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 261.092 en este documento y 261.092 en AC-Milan-bilanci-relazioni-2021-22.pdf (columna del año anterior)"
@@ -40,11 +43,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 192.315 en AC-Milan-bilanci-relazioni-2019-20.pdf y 192.315 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

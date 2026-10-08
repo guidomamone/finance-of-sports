@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.md",
- "generado": "2026-10-08T19:48:07.523Z",
+ "generado": "2026-10-08T20:03:01.487Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2017,
@@ -56,12 +56,11 @@
   "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L1728 (entre el total de costos L1727 y \"Risultato prima delle imposte\" L1734); las 1 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Las columnas por segmento parecen repetir renglones ya abiertos en el conto economico y sus notas.",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Proventi da Diritti televisivi\"): ¿Se deja afuera el cuadro de desglose de derechos TV por emisora (b72), por ser un detalle alternativo de los mismos 'Proventi da Diritti televisivi' ya abiertos en b71?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale Ricavi di esercizio\"): ¿Se deja afuera de la carga el cuadro de b66 (L3475-L3482) por duplicar exactamente las filas del estado b34?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"e) Altri proventi\"): ¿Se deja afuera el cuadro b70 (L3566-L3570) por repetir el desglose de 'Altri ricavi e proventi' ya presente en el estado, pese a que 'Ricavi e proventi diversi' L3569 dice 9.631 en vez de 9.891?",
-  "duda de extraer confirmada por las sumas (columna, \"Ricavi da gare\"): ¿Se cargan los desgloses de b67, b77 y b80 usando solo la columna 'Totale' de cada año?",
-  "duda de extraer que no afecta la carga: L3692 repite L1722 con signo opuesto y L3693 es la suma de dos renglones del estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"Proventi da Diritti televisivi\"): aceptar, en AS-Roma-bilancio-2017.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Totale Ricavi di esercizio\"): aceptar, en AS-Roma-bilancio-2017.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"e) Altri proventi\"): aceptar, en AS-Roma-bilancio-2017.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Ricavi da gare\"): descartar, en AS-Roma-bilancio-2011-separato.pdf",
+  "duda de extraer que no afecta la carga: L3692 repite L1722 con signo opuesto y L3693 es la suma de dos renglones del estado."
  ],
  "reintentar": [
   {

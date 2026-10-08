@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.pdf",
   "club": "hellasverona-it",
   "year": 2024,
-  "generatedAt": "2026-10-08T18:56:45.853Z",
+  "generatedAt": "2026-10-08T20:03:01.757Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.096307
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por taquilla y partidos"
     },
     {
       "label": "Abbonamenti",
@@ -54,7 +54,7 @@
       "values": [
         11.303402
       ],
-      "glosa": "Ingresos por patrocinios"
+      "glosa": "Ingresos por patrocinio"
     },
     {
       "label": "Proventi pubblicitari",
@@ -94,7 +94,7 @@
       "values": [
         0.2
       ],
-      "glosa": "Ingresos por cesión temporal de futbolistas"
+      "glosa": "Ingresos por cesión temporal de jugadores"
     },
     {
       "label": "Plusvalenze da cessione pluriennale diritti calciatori",
@@ -104,7 +104,7 @@
       "values": [
         45.424013
       ],
-      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por enajenación de derechos de futbolistas"
     },
     {
       "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
@@ -114,7 +114,7 @@
       "values": [
         4.492
       ],
-      "glosa": "de los cuales primas y/o indemnizaciones activas art. 103, ap. 3, NOIF"
+      "glosa": "de las cuales primas y/o indemnizaciones activas art. 103, c. 3, NOIF"
     },
     {
       "label": "di cui proventi diversi da trasferimento calciatori",
@@ -134,7 +134,7 @@
       "values": [
         4.224478
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros ingresos de explotación y varios"
     },
     {
       "label": "Per materie prime, sussidiarie, di consumo e di merci",
@@ -144,7 +144,7 @@
       "values": [
         3.768163
       ],
-      "glosa": "Consumo de materias primas, auxiliares, consumibles y mercaderías"
+      "glosa": "Aprovisionamientos de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -154,7 +154,7 @@
       "values": [
         1.577
       ],
-      "glosa": "Gastos de personal federado"
+      "glosa": "Gastos de personal deportivo con licencia"
     },
     {
       "label": "Costi per attività sportiva",
@@ -194,7 +194,7 @@
       "values": [
         0.284
       ],
-      "glosa": "Servicio de taquilla y control de accesos"
+      "glosa": "Servicio de venta de entradas y control de accesos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -204,7 +204,7 @@
       "values": [
         0.257
       ],
-      "glosa": "Seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -224,7 +224,7 @@
       "values": [
         0.087
       ],
-      "glosa": "Alquiler de campos deportivos"
+      "glosa": "Arrendamiento de campos de fútbol"
     },
     {
       "label": "Affitto impianti sportivi",
@@ -234,7 +234,7 @@
       "values": [
         0.977
       ],
-      "glosa": "Alquiler de instalaciones deportivas"
+      "glosa": "Arrendamiento de instalaciones deportivas"
     },
     {
       "label": "Costi di noleggio",
@@ -244,7 +244,7 @@
       "values": [
         0.911
       ],
-      "glosa": "Gastos de arrendamiento"
+      "glosa": "Gastos de alquiler y renting"
     },
     {
       "label": "Canoni affitto altri locali",
@@ -254,7 +254,7 @@
       "values": [
         0.216
       ],
-      "glosa": "Cánones de arrendamiento de otros locales"
+      "glosa": "Arrendamiento de otros locales"
     },
     {
       "label": "Altre spese su beni di terzi",
@@ -304,7 +304,7 @@
       "values": [
         0.590814
       ],
-      "glosa": "Indemnizaciones por extinción de contrato (TFR)"
+      "glosa": "Indemnizaciones por fin de contrato de trabajo (TFR)"
     },
     {
       "label": "altri costi",
@@ -314,7 +314,7 @@
       "values": [
         2.698679
       ],
-      "glosa": "Otros costes de personal"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Ammortamento delle immobilizzazioni immateriali",
@@ -354,7 +354,7 @@
       "values": [
         1.291524
       ],
-      "glosa": "Pérdidas por deterioro de créditos del activo corriente"
+      "glosa": "Pérdidas por deterioro de créditos comerciales del activo corriente"
     },
     {
       "label": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -394,7 +394,7 @@
       "values": [
         2.656706
       ],
-      "glosa": "Gastos de organización de competiciones"
+      "glosa": "Gastos de organización de partidos y competiciones"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -404,7 +404,7 @@
       "values": [
         1.102929
       ],
-      "glosa": "Costes por cesión temporal de futbolistas"
+      "glosa": "Gastos por cesión temporal de jugadores"
     },
     {
       "label": "Minusvalenze da cessione diritti prestazioni calciatori",
@@ -414,7 +414,7 @@
       "values": [
         0.857397
       ],
-      "glosa": "Minusvalías por traspaso de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
@@ -424,7 +424,7 @@
       "values": [
         0.344546
       ],
-      "glosa": "de los cuales primas y/o indemnizaciones activas art. 103, ap. 3, NOIF"
+      "glosa": "de las cuales primas y/o indemnizaciones activas art. 103, c. 3, NOIF"
     },
     {
       "label": "Sell On/mandati trasferimenti",
@@ -434,7 +434,7 @@
       "values": [
         7.972
       ],
-      "glosa": "Comisiones de intermediación y porcentajes sobre futuros traspasos (Sell-on)"
+      "glosa": "Porcentajes sobre futuras ventas y comisiones de traspaso (Sell-on)"
     },
     {
       "label": "Costi per acquisizione vivaio",
@@ -444,7 +444,7 @@
       "values": [
         0.064
       ],
-      "glosa": "Costes de captación de cantera"
+      "glosa": "Gastos de captación y cantera"
     },
     {
       "label": "Costi di valorizzazione calciatori",
@@ -454,7 +454,7 @@
       "values": [
         0.7
       ],
-      "glosa": "Costes de formación y valorización de futbolistas"
+      "glosa": "Gastos de valorización y desarrollo de futbolistas"
     },
     {
       "label": "Contributi di solidarietà",
@@ -464,7 +464,7 @@
       "values": [
         2.468
       ],
-      "glosa": "Mecanismo de solidaridad"
+      "glosa": "Contribuciones de solidaridad"
     },
     {
       "label": "Altri costi di preparazione, addestramento, formazione",
@@ -484,7 +484,7 @@
       "values": [
         0.041
       ],
-      "glosa": "- Multas y sanciones disciplinarias por partidos"
+      "glosa": "- Multas y sanciones deportivas"
     },
     {
       "label": "- Devoluzione e Servizi Lega",
@@ -494,7 +494,7 @@
       "values": [
         1.488
       ],
-      "glosa": "- Canon y servicios de la Liga"
+      "glosa": "- Cuotas y servicios de la Liga"
     },
     {
       "label": "- Oneri precedenti esercizi e sopravvenienze passive",

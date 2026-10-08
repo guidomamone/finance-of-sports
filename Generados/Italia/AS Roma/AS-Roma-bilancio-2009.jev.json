@@ -1,0 +1,193 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.md",
+ "generatedAt": "2026-10-08T20:09:40.962Z",
+ "rubrosHuella": "2ced29397fc2fe3a997f3176de2960844aae82b2",
+ "rubros": [
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gestione operativa netta calciatori",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "lump_football_operations",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per Servizi",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per il personale",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Altri proventi",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "f) Contributi in c/esercizio",
+   "lado": "revenue",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "broadcasting",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 182,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1005
+  }
+ ]
+}

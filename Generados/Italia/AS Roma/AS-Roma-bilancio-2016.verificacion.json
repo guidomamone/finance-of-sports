@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.md",
- "generado": "2026-10-08T19:48:07.456Z",
+ "generado": "2026-10-08T20:03:01.409Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2016,
@@ -36,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2017",
-   "ok": null,
-   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
+   "ok": true,
+   "detalle": "ingresos de 2016: 283.596 en este documento y 283.596 en AS-Roma-bilancio-2017.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2015",
@@ -56,9 +56,8 @@
   "duda de localizar que no afecta la carga: Las columnas por segmento solo reparten renglones que ya están abiertos en el estado y sus notas (b65, b69, b70); no abren un renglón nuevo.",
   "duda de extraer que no afecta la carga: b65 y b69 repiten exactamente los importes del estado (L1822-L1829); no se extrajeron.",
   "duda de extraer ya contestada para el club (columna, \"Gestione operativa netta calciatori\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "duda de extraer confirmada por las sumas (columna, \"Ricavi da gare\"): ¿Se carga en b66 y b76 solo la columna 'Totale' de cada fila (L3773-L3781, L4120-L4124)?",
-  "duda de extraer que no afecta la carga: L3973 repite con signo invertido el renglón del estado L1831 y L3974 suma dos renglones del estado.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (columna, \"Ricavi da gare\"): descartar, en AS-Roma-bilancio-2011-separato.pdf",
+  "duda de extraer que no afecta la carga: L3973 repite con signo invertido el renglón del estado L1831 y L3974 suma dos renglones del estado."
  ],
  "reintentar": null,
  "reintentado": false,

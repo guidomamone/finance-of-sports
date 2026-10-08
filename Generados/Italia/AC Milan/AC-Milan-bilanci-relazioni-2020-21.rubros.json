@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.pdf",
   "club": "acmilan-it",
   "year": 2021,
-  "generatedAt": "2026-10-08T18:56:43.412Z",
+  "generatedAt": "2026-10-08T20:03:01.126Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0
       ],
-      "glosa": "A) Ingresos por taquilla y partidos"
+      "glosa": "A) Ingresos por partidos"
     },
     {
       "label": "B) ABBONAMENTI",
@@ -94,7 +94,7 @@
       "values": [
         0.063
       ],
-      "glosa": "G) Ingresos por cesión temporal de derechos de futbolistas"
+      "glosa": "G) Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "H) PLUSVALENZE DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI CALCIATORI",
@@ -104,7 +104,7 @@
       "values": [
         20.185
       ],
-      "glosa": "H) Plusvalías por cesión de derechos plurianuales de futbolistas"
+      "glosa": "H) Plusvalías por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "I) ALTRI PROVENTI DA GESTIONE CALCIATORI",
@@ -114,7 +114,7 @@
       "values": [
         8.133
       ],
-      "glosa": "I) Otros ingresos por gestión de futbolistas"
+      "glosa": "I) Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "L) RICAVI E PROVENTI DIVERSI",
@@ -124,7 +124,7 @@
       "values": [
         20.097
       ],
-      "glosa": "L) Ingresos y rendimientos diversos"
+      "glosa": "L) Ingresos y beneficios diversos"
     },
     {
       "label": "6 PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO, MERCI",
@@ -134,7 +134,7 @@
       "values": [
         4.951
       ],
-      "glosa": "6 Materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6 Gastos en materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi generali attività sportiva",
@@ -154,7 +154,7 @@
       "values": [
         5.239
       ],
-      "glosa": "Asesorías y servicios profesionales"
+      "glosa": "Asesorías y colaboraciones"
     },
     {
       "label": "Pubblicità e spese promozionali",
@@ -184,7 +184,7 @@
       "values": [
         3.633
       ],
-      "glosa": "Retribuciones de órganos sociales"
+      "glosa": "Retribuciones a órganos de gobierno y administración"
     },
     {
       "label": "Spese amministrative e generali",
@@ -214,7 +214,7 @@
       "values": [
         2.007
       ],
-      "glosa": "Mantenimiento y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Trasporti, magazzinaggio e spese viaggio",
@@ -234,7 +234,7 @@
       "values": [
         8.693
       ],
-      "glosa": "Otros gastos por servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Affitti passivi",
@@ -254,7 +254,7 @@
       "values": [
         2.129
       ],
-      "glosa": "Alquileres y otros arrendamientos"
+      "glosa": "Alquileres y otros cánones de arrendamiento"
     },
     {
       "label": "A) SALARI E STIPENDI",
@@ -284,7 +284,7 @@
       "values": [
         1.736
       ],
-      "glosa": "C) Indemnizaciones por fin de relación laboral (TFR)"
+      "glosa": "C) Provisión para indemnización por cese de personal (TFR)"
     },
     {
       "label": "E) ALTRI COSTI",
@@ -334,7 +334,7 @@
       "values": [
         3.545
       ],
-      "glosa": "D) Correcciones valorativas de créditos del activo corriente y de tesorería"
+      "glosa": "D) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "12 ACCANTONAMENTI PER RISCHI",
@@ -344,7 +344,7 @@
       "values": [
         8.352
       ],
-      "glosa": "12 Dotaciones a provisiones para riesgos"
+      "glosa": "12 Provisiones para riesgos y gastos"
     },
     {
       "label": "A) SPESE VARIE ORGANIZZAZIONE GARE",
@@ -384,7 +384,7 @@
       "values": [
         11.821
       ],
-      "glosa": "D) Costes por cesión temporal de futbolistas"
+      "glosa": "D) Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "E) MINUSVALENZE DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI CALCIATORI",
@@ -394,7 +394,7 @@
       "values": [
         2.224
       ],
-      "glosa": "E) Minusvalías por cesión de derechos plurianuales de futbolistas"
+      "glosa": "E) Pérdidas por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "F) ALTRI ONERI DA GESTIONE CALCIATORI",
@@ -414,7 +414,7 @@
       "values": [
         6.363
       ],
-      "glosa": "G) Otros gastos diversos de explotación"
+      "glosa": "G) Otros gastos diversos de gestión"
     }
   ]
 }

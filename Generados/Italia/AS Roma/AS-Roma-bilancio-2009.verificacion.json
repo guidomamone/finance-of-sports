@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2009.md",
- "generado": "2026-10-08T19:48:06.851Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.174Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2009,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "728f9ed",
-  "9d23cf3",
-  "5196617"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,8 +54,7 @@
   "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L5149 (entre el total de costos L5148 y \"Risultato prima delle imposte\" L5155); las 1 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: b97 repite el conto economico consolidato de b90 con columnas 'di cui con parti correlate'.",
-  "duda de extraer que no afecta la carga: Repiten importes del estado; b125 L6551 muestra 88.322 vs 88.332 (typo).",
-  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Repiten importes del estado; b125 L6551 muestra 88.322 vs 88.332 (typo)."
  ],
  "reintentar": null,
  "reintentado": false,

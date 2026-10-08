@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.md",
- "generado": "2026-10-08T18:56:45.009Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.521Z",
+ "estado": "ok",
  "clubId": "bologna-it",
  "year": 2018,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "a1b236b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -34,7 +32,7 @@
   {
    "nombre": "documento del año 2019",
    "ok": true,
-   "detalle": "ingresos de 2018: 92.814993 en este documento y 92.814993 en Bologna-bilancio-consolidato-2018-19.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2018: 92.814994 en este documento y 92.814994 en Bologna-bilancio-consolidato-2018-19.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -44,7 +42,6 @@
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (85.418199): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "escalón \"renglón grande sin abrir\": \"altri\" (L928) era el 90% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b8 y b9 reclasifican los mismos importes del conto economico con otra agrupación; b9 podría abrir plusvalenze/altri proventi calciatori que no están en otras notas.",
   "duda de extraer que no afecta la carga: Diferencia de 2 euros entre nota y estado, posiblemente incluye los proventi da partecipazioni (2)."

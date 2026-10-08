@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
- "generado": "2026-10-08T18:56:45.953Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.875Z",
+ "estado": "ok",
  "clubId": "inter-it",
  "year": 2018,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "802008b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -48,6 +46,7 @@
   "duda de localizar que no afecta la carga: b39 detalla costos capitalizados del vivero, que no abren un renglón de ingresos del estado por naturaleza.",
   "duda de localizar que no afecta la carga: b1 y b2 resumen ingresos/costos en miles, ya abiertos en el estado y las notas b38-b53.",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"-\"): ¿Se deja afuera de la carga el cuadro por tesserati/altri del costo del personal (L2324-L2328), cargando solo el total L2329?",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2017-18.pdf",
   "duda de extraer que no afecta la carga: L2267 indica detalle parcial sin total impreso."
  ],
  "reintentar": [

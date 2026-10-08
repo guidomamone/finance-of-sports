@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md",
- "generado": "2026-10-08T18:56:45.529Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.685Z",
+ "estado": "ok",
  "clubId": "genoa-it",
  "year": 2025,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [
-  "76bc4c7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,7 +48,6 @@
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (112.423596): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "escalón \"renglón grande sin abrir\": \"altri\" (L339) era el 90% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se usa el conto economico XBRL (b9-b10) como estado y se deja afuera el esquema FIGC (b15-b17), que es el mismo estado con renglones más abiertos?",
   "duda de localizar que no afecta la carga: El rendiconto b18 indica periodo anterior 01/01/2024-30/06/2024 y la nota habla de limitada comparabilidad.",

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md",
- "generado": "2026-10-08T19:48:07.351Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.292Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2014,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "5163707"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2015",
-   "ok": null,
-   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
+   "ok": true,
+   "detalle": "ingresos de 2014: 159.166 en este documento y 159.166 en AS-Roma-bilancio-2015.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2013",
@@ -59,7 +57,7 @@
   "duda de localizar que no afecta la carga: b38 duplica b32 agregando columnas de partes relacionadas.",
   "duda de extraer que no afecta la carga: El cuadro L4142-L4149 repite los renglones del estado b32 con diferencias de 1 por redondeo.",
   "duda de extraer que no afecta la carga: L4241-L4245 repite Sponsorizzazioni, Diritti, Pubblicitari y Altri proventi ya en b32.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (perimetro, \"Risultato Consolidato (inclusa quota di terzi)\"): aceptar, en AS-Roma-bilancio-2015.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

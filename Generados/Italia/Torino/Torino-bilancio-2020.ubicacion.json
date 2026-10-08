@@ -1,375 +1,63 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2020.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2020.md",
- "mdSha1": "f2d6248fe01356e65b0f7120008ee98f64fe480e",
- "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T18:54:50.427Z",
+ "mdSha1": "e2968cac30175164f687bffbc8a6b4443e16dadc",
+ "modelo": "claude-sonnet-5-5 (sesión, a mano)",
+ "generado": "2026-10-08T20:12:54.425111Z",
  "bloques": {
   "b1": {
-   "pagina": 2,
+   "pagina": 17,
    "lineas": [
-    25,
-    47
+    640,
+    676
    ],
    "tipo": "tabla"
   },
   "b2": {
-   "pagina": 4,
+   "pagina": 45,
    "lineas": [
-    73,
-    89
+    1538,
+    1544
    ],
    "tipo": "tabla"
   },
   "b3": {
-   "pagina": 5,
+   "pagina": 45,
    "lineas": [
-    101,
-    114
+    1552,
+    1565
    ],
    "tipo": "tabla"
   },
   "b4": {
-   "pagina": 6,
+   "pagina": 47,
    "lineas": [
-    120,
-    133
+    1605,
+    1609
    ],
    "tipo": "tabla"
   },
   "b5": {
-   "pagina": 7,
+   "pagina": 48,
    "lineas": [
-    158,
-    163
+    1619,
+    1629
    ],
    "tipo": "tabla"
   },
   "b6": {
-   "pagina": 8,
+   "pagina": 49,
    "lineas": [
-    171,
-    188
+    1660,
+    1665
    ],
    "tipo": "tabla"
   },
   "b7": {
-   "pagina": 12,
-   "lineas": [
-    296,
-    303
-   ],
-   "tipo": "tabla"
-  },
-  "b8": {
-   "pagina": 15,
-   "lineas": [
-    471,
-    505
-   ],
-   "tipo": "tabla"
-  },
-  "b9": {
-   "pagina": 16,
-   "lineas": [
-    599,
-    628
-   ],
-   "tipo": "tabla"
-  },
-  "b10": {
-   "pagina": 18,
-   "lineas": [
-    778,
-    828
-   ],
-   "tipo": "tabla"
-  },
-  "b11": {
-   "pagina": 22,
-   "lineas": [
-    926,
-    930
-   ],
-   "tipo": "tabla"
-  },
-  "b12": {
-   "pagina": 23,
-   "lineas": [
-    936,
-    938
-   ],
-   "tipo": "tabla"
-  },
-  "b13": {
-   "pagina": 28,
-   "lineas": [
-    1084,
-    1092
-   ],
-   "tipo": "tabla"
-  },
-  "b14": {
-   "pagina": 29,
-   "lineas": [
-    1104,
-    1116
-   ],
-   "tipo": "tabla"
-  },
-  "b15": {
-   "pagina": 29,
-   "lineas": [
-    1118,
-    1130
-   ],
-   "tipo": "tabla"
-  },
-  "b16": {
-   "pagina": 30,
-   "lineas": [
-    1154,
-    1160
-   ],
-   "tipo": "tabla"
-  },
-  "b17": {
-   "pagina": 32,
-   "lineas": [
-    1196,
-    1207
-   ],
-   "tipo": "tabla"
-  },
-  "b18": {
-   "pagina": 32,
-   "lineas": [
-    1209,
-    1220
-   ],
-   "tipo": "tabla"
-  },
-  "b19": {
-   "pagina": 33,
-   "lineas": [
-    1242,
-    1246
-   ],
-   "tipo": "tabla"
-  },
-  "b20": {
-   "pagina": 34,
-   "lineas": [
-    1266,
-    1271
-   ],
-   "tipo": "tabla"
-  },
-  "b21": {
-   "pagina": 34,
-   "lineas": [
-    1277,
-    1283
-   ],
-   "tipo": "tabla"
-  },
-  "b22": {
-   "pagina": 34,
-   "lineas": [
-    1291,
-    1298
-   ],
-   "tipo": "tabla"
-  },
-  "b23": {
-   "pagina": 35,
-   "lineas": [
-    1317,
-    1319
-   ],
-   "tipo": "tabla"
-  },
-  "b24": {
-   "pagina": 36,
-   "lineas": [
-    1333,
-    1337
-   ],
-   "tipo": "tabla"
-  },
-  "b25": {
-   "pagina": 36,
-   "lineas": [
-    1347,
-    1356
-   ],
-   "tipo": "tabla"
-  },
-  "b26": {
-   "pagina": 37,
-   "lineas": [
-    1368,
-    1381
-   ],
-   "tipo": "tabla"
-  },
-  "b27": {
-   "pagina": 38,
-   "lineas": [
-    1405,
-    1407
-   ],
-   "tipo": "tabla"
-  },
-  "b28": {
-   "pagina": 39,
-   "lineas": [
-    1434,
-    1439
-   ],
-   "tipo": "tabla"
-  },
-  "b29": {
-   "pagina": 39,
-   "lineas": [
-    1445,
-    1450
-   ],
-   "tipo": "tabla"
-  },
-  "b30": {
-   "pagina": 40,
-   "lineas": [
-    1468,
-    1475
-   ],
-   "tipo": "tabla"
-  },
-  "b31": {
-   "pagina": 40,
-   "lineas": [
-    1484,
-    1491
-   ],
-   "tipo": "tabla"
-  },
-  "b32": {
-   "pagina": 41,
-   "lineas": [
-    1501,
-    1506
-   ],
-   "tipo": "tabla"
-  },
-  "b33": {
-   "pagina": 41,
-   "lineas": [
-    1512,
-    1517
-   ],
-   "tipo": "tabla"
-  },
-  "b34": {
-   "pagina": 42,
-   "lineas": [
-    1539,
-    1541
-   ],
-   "tipo": "tabla"
-  },
-  "b35": {
-   "pagina": 42,
-   "lineas": [
-    1549,
-    1553
-   ],
-   "tipo": "tabla"
-  },
-  "b36": {
-   "pagina": 43,
-   "lineas": [
-    1567,
-    1574
-   ],
-   "tipo": "tabla"
-  },
-  "b37": {
-   "pagina": 45,
-   "lineas": [
-    1627,
-    1633
-   ],
-   "tipo": "tabla"
-  },
-  "b38": {
-   "pagina": 45,
-   "lineas": [
-    1641,
-    1654
-   ],
-   "tipo": "tabla"
-  },
-  "b39": {
-   "pagina": 47,
-   "lineas": [
-    1694,
-    1698
-   ],
-   "tipo": "tabla"
-  },
-  "b40": {
-   "pagina": 48,
-   "lineas": [
-    1708,
-    1718
-   ],
-   "tipo": "tabla"
-  },
-  "b41": {
-   "pagina": 49,
-   "lineas": [
-    1749,
-    1754
-   ],
-   "tipo": "tabla"
-  },
-  "b42": {
-   "pagina": 49,
-   "lineas": [
-    1760,
-    1766
-   ],
-   "tipo": "tabla"
-  },
-  "b43": {
    "pagina": 50,
    "lineas": [
-    1774,
-    1781
-   ],
-   "tipo": "tabla"
-  },
-  "b44": {
-   "pagina": 50,
-   "lineas": [
-    1793,
-    1802
-   ],
-   "tipo": "tabla"
-  },
-  "b45": {
-   "pagina": 52,
-   "lineas": [
-    1846,
-    1882
-   ],
-   "tipo": "tabla"
-  },
-  "b46": {
-   "pagina": 53,
-   "lineas": [
-    1892,
-    1896
+    1704,
+    1713
    ],
    "tipo": "tabla"
   }
@@ -379,49 +67,22 @@
   "b1"
  ],
  "notas_ingresos": [
-  "b37",
-  "b38",
-  "b13"
+  "b2",
+  "b3"
  ],
  "notas_gastos": [
-  "b39",
-  "b40",
-  "b41",
-  "b42",
-  "b44"
+  "b4",
+  "b5",
+  "b6",
+  "b7"
  ],
- "escala": "miles",
- "escala_evidencia": "(valori migliaia di Euro)",
+ "escala": "unidades",
+ "escala_evidencia": "El conto economico (pág. re-transcripta a mano desde el PDF) trae importes completos en euros; las notas están en miles de euros.",
  "moneda": "EUR",
- "columna_ejercicio": "Totale 2020",
- "columna_anterior": "Totale 2019",
+ "columna_ejercicio": "Bilancio al 31 dicembre 2020",
+ "columna_anterior": "Bilancio al 31 dicembre 2019",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿Se carga como estado de resultados el conto economico riclassificato de la relazione sulla gestione (b1, pág. 2), dado que el esquema formal del conto economico (pág. 17) no aparece en el índice?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice salta de b9 (pág. 16, passivo) a b10 (pág. 18, rendiconto), así que el conto economico formal parece no transcrito; b1 es una reclasificación gestione corrente/calciatori.",
-   "bloques": [
-    "b1",
-    "b9",
-    "b10"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se usa el cuadro 'Risultato netto delle operazioni... diritti pluriennali' (b13) como desglose de la gestione calciatori?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Ricavi da cessione di calciatori",
-   "texto": "b13 agrupa amortizaciones, costos y ricavi de cesión de jugadores a nivel categoría, no por jugador.",
-   "bloques": [
-    "b13"
-   ],
-   "afecta_carga": false
-  }
- ],
- "observaciones": "Cuentas individuales de Torino FC S.p.A., en miles de euros. El estado formal no figura en el índice; se propone b1 (reclasificado, columnas Totale). Notas de ingresos: b37 (ricavi vendite e prestazioni), b38 (altri ricavi e proventi), b13 (gestione calciatori). Gastos: b39, b40, b41, b42, b44. Excluidos: balance, rendiconto, partes relacionadas, inmovilizado, Allegato 1 por jugador."
+ "dudas": [],
+ "observaciones": "Documento individual de Torino FC S.p.A. Estado y notas armados a mano en la sesión (el conto economico formal se re-transcribió desde el PDF porque Mistral separó las etiquetas de los importes)."
 }

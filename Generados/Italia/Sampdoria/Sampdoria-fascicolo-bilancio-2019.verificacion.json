@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.md",
- "generado": "2026-10-08T18:56:47.870Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:02.150Z",
+ "estado": "ok",
  "clubId": "sampdoria-it",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "5fab71e",
-  "7897129"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,23 +32,24 @@
   {
    "nombre": "año anterior cargado",
    "ok": true,
-   "detalle": "la columna 2018 de este documento suma ingresos 141.773225; el sitio tiene 141.773108"
+   "detalle": "la columna 2018 de este documento suma ingresos 141.773108; el sitio tiene 141.773108"
   },
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 129.025609 en este documento y 129.026661 en Sampdoria-fascicolo-bilancio-2020.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2019: 129.025726 en este documento y 129.026661 en Sampdoria-fascicolo-bilancio-2020.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",
    "ok": true,
-   "detalle": "ingresos de 2018: 141.773225 en Sampdoria-fascicolo-bilancio-2018.pdf y 141.773225 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2018: 141.773108 en Sampdoria-fascicolo-bilancio-2018.pdf y 141.773108 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota del subtotal \"Altri ricavi e proventi:\" suma el subtotal impreso (121.926882): reemplaza a \"b) Contributi in conto esercizio\" + \"1a) plusvalenze\" + \"a) Altri\"",
-  "escalón \"renglón grande sin abrir\": \"a) Altri\" (L1007) era el 54% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
+  "la nota del subtotal \"Altri ricavi e proventi:\" suma el subtotal impreso (135.506116): reemplaza a \"b) Contributi in conto esercizio\" + \"1a) plusvalenze\" + \"a) Altri\"",
   "duda de localizar que no afecta la carga: b12 (pág. 17) y los resúmenes b6/b7 repiten en Euro/000 cifras del conto economico b20-b21.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Per servizi\"): aceptar, en Sampdoria-fascicolo-bilancio-2019.pdf",
   "duda de extraer que no afecta la carga: b55 desglosa solo la parte Tesserati (57.560) de b54 L2420, no el total del renglón.",
   "duda de extraer confirmada por las sumas (columna, \"Per il personale:\"): ¿Se cargan en b54 solo las columnas Totale (57.348 etc.) y no Tesserati/Altri dipen.?",
   "duda de extraer que no afecta la carga: b63 L2614 neta differite y anticipate con signo opuesto al estado (L1066-L1067)."

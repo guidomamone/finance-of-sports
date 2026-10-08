@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.pdf",
   "club": "bologna-it",
   "year": 2018,
-  "generatedAt": "2026-10-08T18:56:45.009Z",
+  "generatedAt": "2026-10-08T20:03:01.522Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         5.284022
       ],
-      "glosa": "1) Ingresos de ventas y prestaciones de servicios"
+      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
     },
     {
       "label": "4) incrementi di immobilizzazioni per lavori interni",
@@ -54,7 +54,7 @@
       "values": [
         0.558119
       ],
-      "glosa": "Ingresos comerciales y regalías"
+      "glosa": "Ingresos comerciales y regalías (royalties)"
     },
     {
       "label": "Proventi pubblicitari",
@@ -74,7 +74,7 @@
       "values": [
         36.09453
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por cesión de derechos televisivos"
     },
     {
       "label": "Proventi vari",
@@ -114,7 +114,7 @@
       "values": [
         0.826721
       ],
-      "glosa": "Otros ingresos de la gestión de futbolistas"
+      "glosa": "Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "Altri ricavi e proventi",
@@ -124,7 +124,7 @@
       "values": [
         5.812877
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros ingresos y beneficios de explotación"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -134,7 +134,7 @@
       "values": [
         1.330388
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Consumo de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi per attività sportiva",
@@ -164,7 +164,7 @@
       "values": [
         0.477731
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de manutención, alojamiento y transporte para partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -204,7 +204,7 @@
       "values": [
         1.884395
       ],
-      "glosa": "8) Arrendamientos y cánones"
+      "glosa": "8) Arrendamientos y cánones (uso de bienes de terceros)"
     },
     {
       "label": "a) salari e stipendi",
@@ -234,7 +234,7 @@
       "values": [
         0.616113
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato / cese"
+      "glosa": "c) Indemnizaciones por fin de contrato / cese laboral"
     },
     {
       "label": "Diritti pluriennali alle prestazioni dei calciatori",
@@ -244,7 +244,7 @@
       "values": [
         14.529362
       ],
-      "glosa": "Derechos plurianuales por prestaciones de futbolistas"
+      "glosa": "Derechos plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "Concessioni, licenze e marchi e diritti simili",
@@ -264,7 +264,7 @@
       "values": [
         1.991281
       ],
-      "glosa": "Costes del fútbol base y cantera"
+      "glosa": "Gastos del fútbol base y cantera"
     },
     {
       "label": "Costi pluriennali su beni di terzi",
@@ -274,7 +274,7 @@
       "values": [
         1.434066
       ],
-      "glosa": "Costes plurianuales sobre bienes de terceros"
+      "glosa": "Gastos plurianuales sobre bienes de terceros"
     },
     {
       "label": "terreni e fabbricati \"costruzioni leggere\"",
@@ -294,7 +294,7 @@
       "values": [
         0.027132
       ],
-      "glosa": "Instalaciones y maquinaria"
+      "glosa": "Instalaciones técnicas y maquinaria"
     },
     {
       "label": "attrezzature industriali e commerciali",
@@ -304,7 +304,7 @@
       "values": [
         0.063828
       ],
-      "glosa": "Equipamiento industrial y comercial"
+      "glosa": "Equipos industriales y comerciales"
     },
     {
       "label": "altri beni",
@@ -324,7 +324,7 @@
       "values": [
         0.639601
       ],
-      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide",
@@ -334,7 +334,7 @@
       "values": [
         0.124982
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "12) accantonamenti per rischi",
@@ -344,7 +344,7 @@
       "values": [
         1.35
       ],
-      "glosa": "12) Dotación a las provisiones para riesgos y gastos"
+      "glosa": "12) Dotaciones a provisiones para riesgos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -374,7 +374,7 @@
       "values": [
         0.023968
       ],
-      "glosa": "- Porcentaje sobre recaudación de taquilla a equipos visitantes"
+      "glosa": "- Porcentaje sobre la recaudación de partidos a equipos visitantes"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -384,7 +384,7 @@
       "values": [
         0.15277
       ],
-      "glosa": "Costes por adquisición temporal de futbolistas"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -394,7 +394,7 @@
       "values": [
         1.453097
       ],
-      "glosa": "Minusvalías por enajenación de derechos de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos plurianuales sobre las prestaciones de futbolistas"
     },
     {
       "label": "- Contributi a società affiliate",
@@ -404,7 +404,7 @@
       "values": [
         0.058144
       ],
-      "glosa": "- Aportaciones a clubes afiliados"
+      "glosa": "- Aportaciones a entidades afiliadas"
     },
     {
       "label": "- Premio di rendimento",
@@ -424,7 +424,7 @@
       "values": [
         0.087846
       ],
-      "glosa": "- Derechos de formación (art. 96 N.O.I.F.)"
+      "glosa": "- Primas de preparación y formación ex art. 96 N.O.I.F."
     },
     {
       "label": "- Spese, ammende e multe gare",
@@ -434,7 +434,7 @@
       "values": [
         3.06183
       ],
-      "glosa": "- Gastos, sanciones y multas de competiciones"
+      "glosa": "- Gastos, multas y sanciones de partidos"
     },
     {
       "label": "- Oneri tributari indiretti",

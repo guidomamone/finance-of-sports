@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2013.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2013.md",
- "generado": "2026-10-08T19:48:07.310Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:03:01.249Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2013,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "35c63d3",
-  "8778d8b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2014",
-   "ok": null,
-   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
+   "ok": true,
+   "detalle": "ingresos de 2013: 135.645 en este documento y 135.645 en AS-Roma-bilancio-2014.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2012",
@@ -58,11 +55,11 @@
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Los renglones ya están abiertos en las notas 24-35 del consolidado.",
   "duda de localizar que no afecta la carga: b78 ya abre los derechos TV por competición; b79 lo abre por cliente con el mismo total.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Totale Ricavi di esercizio\"): ¿Se deja afuera de la carga el cuadro b71 (L3580-L3587), que repite los renglones de ingresos del estado?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Totale Ricavi di esercizio\"): aceptar, en AS-Roma-bilancio-2017.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Ricavi da gare\"): ¿Se carga la columna 'Totale' de b72/b73 y b84 (cuadros con columnas In casa/Fuori casa y Tesserati/Altri dipendenti) como desglose?",
-  "duda de extraer que no afecta la carga: El desglose financiero se parte en dos bloques y b97 L4117 agrega un renglón sin detalle.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"Ricavi da gare\"): aceptar, en AS-Roma-bilancio-2013.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Risultato Consolidato (inclusa quota di terzi)\"): aceptar, en AS-Roma-bilancio-2015.pdf",
+  "duda de extraer que no afecta la carga: El desglose financiero se parte en dos bloques y b97 L4117 agrega un renglón sin detalle."
  ],
  "reintentar": null,
  "reintentado": false,
