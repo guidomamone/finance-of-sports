@@ -1,6 +1,6 @@
 # Genoa (Genoa CFC)
 
-**Ángulos**: sitio oficial: agotado (`/governance/` solo publica desde 2022) · Wayback CDX: agotado (la CDX no lista ningún PDF financiero previo) · búsqueda web: agotado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (`/governance/` solo publica desde 2022) · Wayback CDX: agotado (dominio completo; confirma 2022-2025) · búsqueda web: Exa (solo prensa 2021) · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)

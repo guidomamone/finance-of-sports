@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 584 — Sourcing Italia: más años de Serie A, Serie B-D, rugby y tenis (2026-10-07)
+
+- 6 agentes de sourcing en paralelo; ~124 PDFs nuevos en `Clubes/Italia/` (sin transcribir ni cargar). Más años: AS Roma 2005-2017, AC Milan
+  grupo 2008-2013, Lazio 1998-2001 y 2003-2005 más 2025/26, Parma 2016-2025, Inter 2017/18-2018/19 y 2020/21, Napoli 2018-19, Sassuolo
+  2018-19, Bologna 2023/24-2024/25, Verona 2024, Sampdoria 2020. Clubes nuevos: Salernitana y Chievo Verona (extintos valen), Juve Stabia
+  (vía la SEC, dueño Brera Holdings), Catania viejo (extracto del Registro Imprese de prensa). Serie B/C/D y Calabria/Sicilia: dead-end
+  reconfirmado. Rugby: FIR y Zebre Parma. Tenis: FITP (consuntivi 2012-2024) y sus entes Business & Media, Sportcast, Mario Belardinelli, más
+  Sport e Salute. Las federaciones entran al sitio (decisión de Guido).
+- `fuentes/_indice/Italia.md` y `fuentes/README.md` regenerados; `fuentes/Italia/_notas-generales.md` con el resumen y los gotchas; mails
+  posibles anotados en `paises/Italia.md` (no se envía nada). `node tools/audit.js`: 0 P0, 0 P1.
+
+---
+
 ## Versión 583 — Escalón "17) resta" en verificar.mjs; 25 ajustes manuales anulados (to-do 155, escalón 2) (2026-10-07)
 
 - `verificar.mjs`: si el resultado no cerró exacto, el 17) del Codice Civile (encabezado buscado en el .md: la extracción a veces no lo

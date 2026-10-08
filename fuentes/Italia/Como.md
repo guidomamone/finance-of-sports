@@ -1,6 +1,6 @@
 # Como (Como 1907)
 
-**Ángulos**: sitio oficial: agotado (`/documenti-societari/` solo trae 2024 y la página de licencias UEFA) · Wayback CDX: muestreado (22 capturas, ninguna con documentos anteriores) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (`/documenti-societari/` solo trae 2024) · Wayback CDX: agotado (dominio completo, 39 PDFs, ninguno financiero) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división) — ascendido en 2024/25, primera vez en Serie A

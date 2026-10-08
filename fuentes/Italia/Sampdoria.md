@@ -1,6 +1,6 @@
 # Sampdoria
 
-**Ángulos**: sitio oficial: parcial — el sitio actual no linkea los fascicoli · Wayback CDX: parcial — solo 2018, 2019, 2021 · búsqueda web: agotado · regulador/país: no aplica — 2026-10-03
+**Ángulos**: sitio oficial: agotado (menú Firecrawl map 101 URLs + /documenti/: solo códigos y POC; los fascicoli 2022-2025 no se publican) · Wayback CDX: agotado (dominio completo, solo 2018-2021) · búsqueda web: agotado (Exa: solo prensa; clubdoria46 posteó el 2022 como 'DOCUMENTO') · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie B (Italia, 2ª división)
@@ -18,3 +18,9 @@ Los fascicoli están en `sampdoria.it/wp-content/uploads/` (`2019/04/Fascicolo_B
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2021 desde `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf` (sourceId `sampdoria-it-fascicolo-bilancio-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf` (sourceId `sampdoria-it-fascicolo-bilancio-2018`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +1 ejercicio (2020), total 4
+
+- **2020 encontrado**: `https://www.sampdoria.it/wp-content/uploads/2021/04/Fascicolo_Bilancio_UC_Sampdoria_31_12_20.pdf` (lo lista el Firecrawl `/v1/map` del dominio; el sitio no lo linkea). Guardado en `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.pdf` (104 págs, 16,4 MB, título interno "01 bis UCS_Bilancio 31 dicembre 2020").
+- **2022-2025 no existen en el sitio**: los comunicados de asamblea (`/news/club/2023/06/16/...`, `/2024/06/14/...`, `/2025/04/30/...`) no adjuntan el fascicolo; `/documenti/` solo trae Codice Etico, MOG, POC. Se probaron por patrón de nombre `Fascicolo_Bilancio_UC_Sampdoria_31_12_<aa>.pdf` en `wp-content/uploads/<año>/<03-08>/` (una vez, todo 404). La prensa (clubdoria46.it, que conseguió el 2022 por otra vía) confirma que desde el 2022 el club dejó de publicarlo. **Candidato a mail** (2022-2025).
+- Antes de 2018: la CDX de dominio no lista nada.

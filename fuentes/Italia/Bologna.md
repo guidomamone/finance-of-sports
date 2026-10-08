@@ -1,6 +1,6 @@
 # Bologna (Bologna FC 1909)
 
-**Ángulos**: sitio oficial: agotado (página desactualizada) · Wayback CDX: agotado para 2018-2023 (`wp-content/uploads`), 2023/24 y 2024/25 sin encontrar · búsqueda web: agotado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (Firecrawl map: la página `/en/financial-informations/` está desactualizada pero los PDFs viven en `wp-content/uploads/`) · Wayback CDX: agotado (2018-2024) · búsqueda web: agotado · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
@@ -60,3 +60,7 @@ devolvió): verificar al transcribir. **Falta 2023/24 y 2024/25** (la nota anter
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf` (sourceId `bologna-it-bilancio-consolidato-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2019 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf` (sourceId `bologna-it-bilancio-consolidato-2018-19`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +2 ejercicios (2023/24, 2024/25), total 8
+
+El Firecrawl `/v1/map` de `bolognafc.it` encontró lo que la página oficial no linkea: `https://www.bolognafc.it/wp-content/uploads/2024/10/Fascicolo-completo-Bilancio-300624.pdf` (2023/24, "Bilancio d'esercizio al 30 giugno 2024", individual, escaneo) -> `Bologna-bilancio-individuale-2023-24.pdf`, y `https://www.bolognafc.it/wp-content/uploads/2025/11/Fascicolo_completo_bilancio.pdf` (2024/25, "Bilancio Ordinario al 30/06/2025", 73 págs, escaneo) -> `Bologna-bilancio-individuale-2024-25.pdf`. **Desde 2023/24 el documento es individual (no consolidado)**. Ejercicio verificado por OCR. `2023/10/Fascicolo-di-bilancio-consolidato-completo.pdf` es el consolidado 2022/23 ya guardado (idéntico por `cmp`). Antes de 2017/18: la CDX no lista fascicoli (solo una relazione degli amministratori de 2011 suelta).

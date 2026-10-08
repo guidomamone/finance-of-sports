@@ -1,6 +1,6 @@
 # Hellas Verona (Hellas Verona FC)
 
-**Ángulos**: sitio oficial: agotado para lo que Wayback conserva · Wayback CDX: agotado (2 CDN: `media.hellas-production.aks.mwd.cloud` y `hellas.hqcdn.it`) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado para lo que Wayback conserva · Wayback CDX: agotado (2 CDN) · búsqueda web: Exa (encontró el 2024) · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
@@ -56,3 +56,7 @@ es un consolidado auditado completo). En `Clubes/Italia/Hellas Verona/`.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2020 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.pdf` (sourceId `hellasverona-it-bilancio-individuale-2020`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf` (sourceId `hellasverona-it-bilancio-individuale-2023`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +1 ejercicio (2024), total 6 ejercicios
+
+Exa encontró las URLs exactas del 30/06/2024 en el CDN: `https://hellas.hqcdn.it/media?f=2025%2F03%2F30.06.2024_bilancio-con-nota-hvfc_compressed.pdf` (bilancio con nota integrativa, 53 págs) -> `Hellas-Verona-bilancio-individuale-2024.pdf`; `...30.06.2024_relazione-sulla-gestione.pdf` (13 págs) -> `Hellas-Verona-relazione-gestione-2024.pdf`; también existe `...30.06.2024_allegati-al-bilancio.pdf` (no bajado). Sin consolidado 2024 localizado. Antes de 2020 y 2022/23 consolidado: sin nada.

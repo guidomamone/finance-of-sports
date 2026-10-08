@@ -1,6 +1,6 @@
 # Torino (Torino FC)
 
-**Ángulos**: sitio oficial: agotado (sección `relazioni_e_bilanci` encontrada) · Wayback CDX: usado solo para descubrir la sección · búsqueda web: no hizo falta · regulador/país: no aplica (Registro Imprese pago) · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (`/relazioni_e_bilanci`, `sites/default/files/bilanci/`) · Wayback CDX: agotado (nada anterior a dic-2018) · búsqueda web: no hizo falta · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)

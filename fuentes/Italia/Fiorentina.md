@@ -1,6 +1,6 @@
 # Fiorentina (ACF Fiorentina)
 
-**Ángulos**: sitio oficial: agotado (los 2 últimos como PDF; el resto en la cuenta oficial `issuu.com/acffiorentina`) · Wayback CDX: agotado · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (los 2 últimos como PDF; el resto en la cuenta oficial `issuu.com/acffiorentina`) · Wayback CDX: agotado (el único bilancio es el 2023/24 ya guardado) · búsqueda web: Exa (sin el 2022/23) · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 
 - **Deporte**: Fútbol
@@ -58,3 +58,7 @@ OCR de las primeras páginas confirma las fechas de cierre. El de 2024 de Issuu 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.pdf` (sourceId `fiorentina-it-bilancio-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf` (sourceId `fiorentina-it-bilancio-2021-22-issuu`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): sin ejercicios nuevos
+
+Huecos: 2022/23 (30/06/2023) y 2018: no aparecen ni en Issuu (`issuu.com/acffiorentina/docs/` lista 2021, 2022 y 2024) ni en Wayback ni por Exa (solo prensa).

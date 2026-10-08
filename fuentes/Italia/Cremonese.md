@@ -1,6 +1,6 @@
 # Cremonese (US Cremonese)
 
-**Ángulos**: sitio oficial: agotado (la sección `/societa/` solo publica desde 2023) · Wayback CDX: agotado (carpetas `wp-content/uploads` 2019-2022 sin PDFs financieros; 132 capturas de `/societa/` muestreadas) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (`/societa/` solo publica desde 2023) · Wayback CDX: agotado (dominio completo; confirma 2022-2025) · búsqueda web: no intentada · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 
 - **Deporte**: Fútbol

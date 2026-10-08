@@ -1,5 +1,7 @@
 # Napoli (SSC Napoli)
 
+**Ángulos**: sitio oficial: agotado (`/en/balance/`, 2020-2025) · Wayback CDX: agotado (`sscnapoli.it/shared/UserFiles/file/Bilancio_30_*`) · búsqueda web: Exa · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Società Sportiva Calcio Napoli S.p.A., propiedad de Filmauro S.r.l. (familia De
@@ -41,3 +43,7 @@ Ninguna. Serie completa 2019/20-2024/25.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2024 desde `Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf` (sourceId `napoli-it-bilancio-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf` (sourceId `napoli-it-bilancio-2023`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +2 ejercicios (2018, 2019), total 8
+
+De Wayback (el sitio viejo `sscnapoli.it/shared/UserFiles/`, snapshots de 2022-04-19), PDFs completos y **escaneados (sin capa de texto)**: `https://www.sscnapoli.it/shared/UserFiles/file/Bilancio_30_Giugno_2018/SSCN%20bilancio%20PDF%2030%2006%202018.pdf` (60 págs, 12,3 MB) -> `Napoli-bilancio-2018.pdf`; `https://www.sscnapoli.it/shared/UserFiles/file/Bilancio_30_giugno_2019/Bilancio_al_30.06.2019.pdf` (60 págs, 12,5 MB) -> `Napoli-bilancio-2019.pdf`. El OCR de la pág. 2 confirma "Bilancio al 30 giugno 2018/2019". La CDX de dominio no lista nada anterior a 2018. 2025/26: Napoli publica en enero-marzo del año siguiente.

@@ -1,5 +1,7 @@
 # Atalanta
 
+**Ángulos**: sitio oficial: agotado (`/licenze-uefa` lista 15 PDFs = los 8 consolidados 2018-2025 ya guardados + suplementarios) · Wayback CDX: agotado (nada anterior a 2018) · búsqueda web: Exa (solo prensa 2017) · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Atalanta Bergamasca Calcio S.p.A., propiedad de la familia Percassi. No cotiza.

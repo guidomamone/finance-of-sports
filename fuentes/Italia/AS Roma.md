@@ -1,5 +1,7 @@
 # AS Roma
 
+**Ángulos**: sitio oficial: agotado (subpáginas `bilanci-e-relazioni-2016/2017` encontradas) · Wayback CDX: agotado (`asroma.it/pdf/corporate/bilanci_e_relazioni/`, 2005-2015) · búsqueda web: no hizo falta · regulador/país: no aplica (cotizó) · barrido: 3 (Sonnet) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: A.S. Roma S.r.l. (hasta 2020, A.S. Roma S.p.A. — **cotizó en Borsa Italiana
@@ -52,3 +54,9 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.pdf` (sourceId `asroma-it-bilancio-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf` (sourceId `asroma-it-bilancio-2024`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +14 archivos / 13 ejercicios (2005-2017), total 21 ejercicios
+
+- **2016 y 2017**, del sitio vivo (subpáginas `https://www.asroma.com/it/club/corporate/bilanci-e-relazioni-2016` y `-2017`; la página principal solo muestra 2018+): relazione finanziaria annuale al 30/06/2016 (264 págs, `s3-eu-west-1.amazonaws.com/prod-media-asroma/prod/files/file/gm-045a8555-c415-4e59-8884-d9bb993a56a2-wy6rzbas91ecefabzivu.pdf`) y 30/06/2017 (256 págs, `.../gm-c9126510-6702-4c91-b85f-10104e60cb19-fv34heazcabixdjpwzwj.pdf`) -> `AS-Roma-bilancio-2016.pdf`, `-2017.pdf`.
+- **2005-2015**, de Wayback (sitio viejo, CDX de dominio): 2005 `corporate/bilanci_e_relazioni/2005-10-14_bilancio_di_esercizio_e_consolidato_al_30_giugno_2005.pdf`; 2006 `.../2006-11-06_bilancio_di_esercizio_al_30_giugno_2006.pdf` (solo separado); 2007 `.../2007-12-07_bilancio_di_esercizio_e_consolidato_al_30_giugno_2007.pdf`; 2008 `.../2008-11-17_bilancio_di_esercizio_e_consolidato_al_30_giugno_2008.pdf`; 2009 `pdf/2009_-10-29_relazione_finanziaria_annuale_al_30_giugno_2009.pdf`; 2010 `pdf/2010_-10-13_relazione_finanziaria_annuale_al_30_giugno_2010.pdf`; 2011 `pdf/2011_-_10_-_06_progetto_di_bilancio_{consolidato,separato}_al_30_giugno_2011.pdf` (dos archivos, son "progetto"; el final no apareció); 2012 `corporate/comunicati_finanziari/2012_31_10_as_relazione_finanziaria_annuale_al_30_giugno_2012.pdf`; 2013 `.../2013-10-07-Progetto-di-bilancio-30.06.13_-Relazione-Gestione_-(IT)-(18).pdf` (progetto); 2014 `.../2014-_10_-_06_Relazione_Finanziaria_Annuale_Al_30_Giugno_2014.pdf`; 2015 `.../2015_10_27_Relazione_Finanzaria_Annuale_Al_30_Giugno_2015.pdf`. Guardados como `AS-Roma-bilancio-<año>.pdf` (2011 con sufijo `-consolidato`/`-separato`). Todos con `pdfinfo` OK (116-296 págs) y año verificado en la carátula.
+- **Sin encontrar**: antes de 2005 (solo comunicados de asamblea de 2002-2004; no el fascicolo) y 2025/26 (la Roma publica en octubre-noviembre; hoy la página lista hasta 2025).

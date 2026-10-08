@@ -1,6 +1,6 @@
 # Monza
 
-**Ángulos**: sitio oficial: agotado · Wayback CDX: agotado (19 capturas de la página) · búsqueda web: confirmó la página · regulador/país: no aplica — 2026-10-03
+**Ángulos**: sitio oficial: agotado (6 PDFs vivos = 3 bilanci 2022-2024 + 3 compensi) · Wayback CDX: agotado (dominio completo) · búsqueda web: no hizo falta · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie B (Italia, 2ª división)
@@ -18,3 +18,7 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Monza/Monza-bilancio-2022.pdf` (sourceId `monza-it-bilancio-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Monza/Monza-bilancio-2023.pdf` (sourceId `monza-it-bilancio-2023`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): sin ejercicios nuevos
+
+El bilancio al 31/12/2025 no está publicado todavía (en 2025 se subió el 2024 antes de mayo; revisar). La CDX de dominio no trae nada anterior a 2022.

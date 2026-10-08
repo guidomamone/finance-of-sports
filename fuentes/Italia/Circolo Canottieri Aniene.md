@@ -1,0 +1,7 @@
+# Circolo Canottieri Aniene (Roma; ASD polideportiva con sección Tennis)
+
+**Ángulos**: sitio oficial ccaniene.com (Firecrawl map + scrape de la nota de la asamblea 2019): agotado · Wayback CDX /wp-content/uploads: agotado (sin bilanci aparte del 2013) · Exa: agotado (readkong y atonsrl.it solo muestran la tapa) · barrido: 1 (Sonnet) — 2026-10-07
+
+- **Entidad**: asociación sportiva dilettantistica sin fin de lucro (fundada 1892), multideportes (remo, natación, tenis, etc.; el tenis es una sección). Publicó **Bilancio Sociale** anual (con "revisione limitata" y relazione de revisor), que "affianca il tradizionale bilancio consuntivo". Hay constancia de bilanci sociali 2013, 2014, 2015, 2016, 2019 (tapas en https://www.atonsrl.it/portfolio/circolo-canottieri-aniene-bilancio-sociale/) y de que la asamblea aprobó el bilancio 2019 (https://www.ccaniene.com/it_it/lassemblea-approva-il-bilancio-2019/), pero **solo el 2013 está como PDF**.
+- Bajado (`Clubes/Italia/Circolo Canottieri Aniene/CCAniene-bilancio-sociale-2013.pdf`, 96 págs, texto nativo): https://www.ccaniene.com/wp-content/uploads/2014/07/bilancio-sociale-2013.pdf. Contenido: informe social + valor añadido reclasificado (avanzo de gestión 153.244 en 2013 vs 295.874) + relazione de revisión; **verificar al transcribir si trae estado patrimonial y conto economico completos** (el grep solo ve el riclassificato). No es tenis puro: el club entero es multideporte.
+- **Candidato a mail** (bilanci sociales 2014-2019+): contacto vía ccaniene.com (no se tomó casilla).

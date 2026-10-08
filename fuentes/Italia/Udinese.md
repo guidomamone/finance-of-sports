@@ -1,6 +1,6 @@
 # Udinese (Udinese Calcio)
 
-**Ángulos**: sitio oficial: parcial — la página `/club/compliance` ya no lista los bilanci en el HTML · Wayback CDX: agotado — 2022/23 y 2023/24 solo existen truncados a 5 MB; el 2019/20 (`udinese.cdn.xpl.io/xsr-img/50929/...`) no tiene captura · búsqueda web: agotado · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: parcial — la página `/club/compliance` ya no lista los bilanci en el HTML · Wayback CDX: agotado — 2022/23 y 2023/24 existen en 3 hosts (`udinese.it`, `udinese.cdn.xpl.io`) pero todos los snapshots vienen truncados (1 MiB o 5 MiB) · búsqueda web: agotado (Exa: solo prensa) · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
@@ -57,3 +57,7 @@ documentos) o pagar el Registro Imprese para esos dos ejercicios puntuales.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf` (sourceId `udinese-it-bilancio-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf` (sourceId `udinese-it-bilancio-2021-22`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): sin ejercicios nuevos
+
+Se re-probó con otros timestamps y con el host espejo `udinese.cdn.xpl.io`: 2023 (`.../codice-etico-societa/bilancio-udinese-calcio-spa-30.06.2023.pdf`) tiene snapshots 2024-10-14 (cortado a 1.048.576 bytes) y 2025-03-16 (5 MB); 2024 (`.../bilancio-esercizio/udinese-bilancio-30.06.2024.pdf`) 2025-12-14 y 2026-02-09 (ambos cortados a 5.242.880, con `warning: ... truncated by "length"`); `qpdf` no puede recuperar nada sin trailer. La página viva solo lista 2024/25. **Candidato firme a mail** (2022/23 y 2023/24), con prensa que cita cifras.

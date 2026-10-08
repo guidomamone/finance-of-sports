@@ -1,5 +1,7 @@
 # Sassuolo (US Sassuolo Calcio)
 
+**Ángulos**: sitio oficial: agotado (`/club/documenti-societari/` lista 2021-2025; 2018 y 2019 siguen vivos en la ruta vieja) · Wayback CDX: agotado · búsqueda web: no hizo falta · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: U.S. Sassuolo Calcio S.r.l. con Socio Unico, propiedad de la familia
@@ -33,3 +35,7 @@ Ninguna. Serie completa y fácil de mantener actualizada (URLs predecibles:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf` (sourceId `sassuolo-it-bilancio-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf` (sourceId `sassuolo-it-bilancio-2024`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +2 ejercicios (2018, 2019), total 8
+
+`https://www.sassuolocalcio.it/wp-content/uploads/files/bilancio/20181231-bilancio.pdf` (65 págs, 8,9 MB, **escaneo sin capa de texto**) y `.../20191231-bilancio.pdf` (67 págs, 3,7 MB, con texto) siguen respondiendo 200 en el sitio vivo aunque la página no los linkea; la CDX los lista junto con un `20201231-bilancio_def.pdf` (21 MB, probable versión definitiva del 2020 ya cargado). Antes de 2018 (`2015-2017*-bilancio.pdf`): 404.

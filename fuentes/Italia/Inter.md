@@ -1,5 +1,7 @@
 # Inter (FC Internazionale Milano)
 
+**Ángulos**: sitio oficial: agotado (investor-relations + club-transparency) · Wayback CDX: usado (FY2018 y FY2019 de Inter Media, otra entidad) · búsqueda web: Exa · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: F.C. Internazionale Milano S.p.A. (Gruppo FC Inter), dueño desde mayo 2024:
@@ -50,3 +52,13 @@ como dato complementario o directamente descartarlo por no ser el club entero �
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2019-20`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +3 ejercicios (2017/18, 2018/19, 2020/21), total 8
+
+La página `inter.it/it/club/club-transparency` (no solo `investor-relations`) lista el consolidado del Gruppo FC Internazionale por partes; `static.inter.it` está muerto pero las mismas rutas sirven en `www.inter.it`.
+
+- **2020/21** (consolidado, traducción al inglés, 76 págs, completo con notas): `https://www.inter.it/media/pdf/Inter-management-report-30.06.2021b.pdf` -> `Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf`. Las partes en italiano están en `inter.it/media/downloads/2022/2022_04_11_16_37_*Consolidato Inter {Nota integrativa|Relazione sulla gestione|IV CEE|Rendiconto Finanziario|Relazione collegio sindacale|Relazione societa revisione} 30.06.2021.pdf` (no bajadas: se prefirió el único PDF completo).
+- **2018/19** (italiano, partes unidas con `pdfunite`, 67 págs): `https://www.inter.it/media/downloads/2020/2020_04_27_09_27_05FC%20Group%20Nota%20Integrativa%2030.06.2019%20ITA.pdf` + `..._09_29_03FC Group Relazione sulla Gestione...`, `..._09_30_04FC Group IV CEE...`, `..._09_32_12FC Group Rendiconto Finanziario...`, `..._09_30_25FC Group Relazione Collegio Sindacale 30.06.2019.pdf`, `..._09_32_42FC Group Auditors Report 30.06.2019 ITA.pdf` -> `Inter-fascicolo-bilancio-consolidato-2018-19.pdf`. Texto nativo salvo el informe de revisión (escaneo).
+- **2017/18** (italiano, partes unidas, 66 págs, **escaneado, sin capa de texto**): `https://www.inter.it/media/jpg/img2017/club-transparency/2017-18/Gruppo_FC_Internazionale_Milano_{Nota_Integrativa|Relazione_sulla_Gestione_e_Schemi_di_Bilancio|Rendiconto_Finanziario|Relazione_Collegio_Sindacale|Relazione_Societ%C3%A0_di_Revisione}.pdf` -> `Inter-fascicolo-bilancio-consolidato-2017-18.pdf`.
+- **Sin encontrar**: 2016/17 y antes (la página no lista nada anterior a 2017-18). Los `Appendix 1 ... Annual Financial Statements` de 2018/2019/2021 en `inter.it/media/downloads/` son de **Inter Media and Communication S.p.A.** (subsidiaria del bond), NO del grupo: no se bajaron.
+- **2025/26**: el CdA aprobó el proyecto el 2026-09-24 (utile 22,7 M, ricavi 518 M; asamblea a mediados de octubre); el fascicolo todavía no está publicado. Revisar a partir de noviembre.

@@ -1,5 +1,7 @@
 # Parma (Parma Calcio 1913)
 
+**Ángulos**: sitio oficial: agotado (`/informativa-finanziaria-parma-calcio-1913/` lista 2016-2025) · Wayback CDX: no hizo falta · búsqueda web: no hizo falta · regulador/país: no aplica · barrido: 3 (Sonnet) — 2026-10-07
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
 - **Entidad legal**: Parma Calcio 1913 S.r.l., propiedad de Kyle Krause (empresario estadounidense).
@@ -44,3 +46,7 @@ a `dudas-por-club.md` si no se resuelve leyendo el documento mismo.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf` (sourceId `parma-it-bilancio-31-12-2021-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.pdf` (sourceId `parma-it-bilancio-31-12-2022-consolidato`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +10 archivos (2016-2022, 2025), total 18 archivos
+
+La página `parmacalcio1913.com/informativa-finanziaria-parma-calcio-1913/` (vía Firecrawl, links reales) lista todo el histórico en `wp-content/uploads/2023/09/` (y 2024/04, 2025/04, 2026/04). Nuevos, todos con `pdfinfo` OK y ejercicio verificado en la carátula: 30/06/2016 individual (`PC1913-Fascicolo-Bilancio-30-6-2016-LR.pdf`), 30/06/2017 individual (`PC1913-Fascicolo-Bilancio-30-62017-LR.pdf`), 30/06/2018 consolidado (`GRUPPO-PC1913-BILANCIO-FASCICOLO-30-06-2018-INTERNET.pdf`), 30/06/2019 individual y consolidado (`PC1913-BILANCIO-FASCICOLO-30-06-2019-POST-ASSEMBLEA.pdf`, `GRUPPO-PC1913-...`), 31/12/2020 individual y consolidado (**período corto 01/09/2020-31/12/2020**, primer bilancio de la nueva gestión), 31/12/2021 consolidado (`GRUPPO-PC1913-BILANCIO-31.12.2021-POST-ASSEMBLEA_website-1_compressed-1.pdf`), 31/12/2022 individual (`PC-1913-Fascicolo-BILANCIO-31.12.22-_POST-CDA.pdf`), 31/12/2025 individual (`.../2026/04/PARMA-CALCIO-1913-Fascicolo-di-Bilancio-31.12.25_2026-03-31_INTERNET_2026-04-23.pdf`). Nombres locales: `Parma-bilancio-<fecha>-{individual|consolidato}.pdf`. Hueco: no hay 30/06/2020 (la página tampoco lo lista; `fin_2020-copy.pdf` es una hoja de 1 pág.).

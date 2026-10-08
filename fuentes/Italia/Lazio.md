@@ -1,6 +1,6 @@
 # Lazio (S.S. Lazio)
 
-**Ángulos**: sitio oficial: agotado (API `sslazio.it/api/widget/attachment?id_category=37/38` + CMS viejo) · Wayback CDX: agotado · búsqueda web: no hizo falta · regulador/país: no aplica (cotiza; la serie completa salió del propio sitio) · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (API `sslazio.it/api/widget/attachment?id_category=37/38`) · Wayback CDX: agotado (`finance.sslazio.it/documents/`, `media.sslazio.it/200507/`) · búsqueda web: Exa (Borsa Italiana 2004) · regulador/país: Borsa Italiana (parcial) · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 
 - **Deporte**: Fútbol
@@ -89,3 +89,10 @@ Se completó 2014/15 a 2023/24:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2023-24`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2013 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2012-13`).
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): +6 ejercicios históricos (1998/99-2004/05) y 2025/26
+
+- **2025/26 ya publicado (2026-10-06)**: `https://mediaverse.sslazio.hiway.media/document/2026/10/06/6ac56583/Copia-di-cortesia-Relazione-finanziaria-annuale-S.S.-Lazio-30_06_2026.pdf` (199 págs) -> `Lazio-relazione-finanziaria-annuale-2025-26.pdf`, más las relaciones de revisión (`.../6ac567f0/Relazione-di-revisione-del-Bilancio-di-esercizio.pdf`, `.../6ac567b0/Relazione-di-revisione-consolidata.pdf`).
+- **Histórico bursátil anterior a 2006/07 (la pista pendiente)**: 1998/99, 1999/00 y 2000/01 salen de Wayback de `finance.sslazio.it/documents/bilancio_990630.pdf`, `bilancio_000630.pdf`, `bilancio_010630.pdf` (snapshots 2003; 92/120/116 págs, texto nativo; el 1999/00 trae cuadros en lire y euro) -> `Lazio-bilancio-1998-99.pdf`, `-1999-00.pdf`, `-2000-01.pdf`. 2003/04 es el "Bilancio al 30 giugno 2004" de Borsa Italiana (`https://www.borsaitaliana.it/media/borsa/db/pdf/new/8385.pdf`, 91 págs) -> `Lazio-bilancio-2003-04.pdf`. 2004/05 es "Bilancio al 30 giugno 2005" (82 págs) de Wayback `http://media.sslazio.it:80/200511/1324.pdf?ver=1` (snapshot 20060217193904) -> `Lazio-bilancio-2004-05.pdf`.
+- **2005/06**: solo el "Progetto di bilancio al 30 giugno 2006" (75 págs) espejado en un sitio de hinchas (`http://www.sslaziofans.it/FILE/PDF/web29484.pdf`), guardado como `Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.pdf`: **fuente NO oficial y es un proyecto, no el bilancio final**; el informe de revisión oficial del 2006 existe en `sslazio.it/images/documents/investors/09.10.06 - relaz società di revisione bilancio al 30.06.06.pdf` pero no el fascicolo.
+- **Sin encontrar**: 2001/02 y 2002/03 (solo prospecto 2002, semestral dic-2002 y comunicados en `finance.sslazio.it`), y el 2005/06 final. Dos exa-queries y el listado de Borsa Italiana (carga por JS, no accesible) no los dieron.

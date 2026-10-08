@@ -1,6 +1,6 @@
 # Cagliari (Cagliari Calcio)
 
-**Ángulos**: sitio oficial: agotado (la sección lista Issuu y Drive, ambos no descargables) · Wayback CDX: agotado · búsqueda web: no intentada · regulador/país: no aplica · barrido: 2 (Sonnet) — 2026-10-03
+**Ángulos**: sitio oficial: agotado (la sección `/casteddu/documenti-societari/` tiene 6 Drive: 5 no financieros + 1 roto) · Wayback CDX: agotado (167 PDFs, ninguno financiero) · búsqueda web: agotado (Exa: solo prensa) · regulador/país: no aplica · barrido: 3 (Sonnet+Exa) — 2026-10-07
 
 - **Deporte**: Fútbol
 - **Liga / competencia**: Serie A (Italia, 1ª división)
@@ -40,3 +40,7 @@ ningún enlace.
 
 **Candidato a mail**: el club tiene al menos 2018 y 2021 publicados como visor; basta pedirle el PDF o
 que active la descarga. No es un dead-end.
+
+## Sesión de sourcing Italia sección 1 (2026-10-07): ángulos nuevos, sin PDF
+
+- Los 6 IDs de Drive de la página vigente son Codice Etico, Bilancio di Sostenibilità, Safeguarding, Codice di condotta 2024, Modulo segnalazioni y el roto `1PEHfI-...` ("Page Not Found"). El Drive del bilancio 2021 (`1TEFS0Qz5hxEjzKZaOdzp9QZ2y4xL8rZI`, "Bilancio d'esercizio al 30 giugno 2021.pdf") existe pero `drive.usercontent.google.com/download` devuelve "Can't download file": el dueño bloqueó la descarga, no se elude. Las notas de prensa del club (`/news/approvazione-del-bilancio-al-30-06-2024/`, `/news/approvato-il-bilancio-al-30-06-2023/`) no adjuntan el documento. **Candidato a mail** (pedir el PDF o activar la descarga; 2018 Issuu, 2021 Drive, y ejercicios 2022-2025 que la prensa cita).

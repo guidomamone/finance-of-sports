@@ -62,6 +62,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   Versión 583); quedan ajustes manuales en Napoli 2024 y Bologna 2019-20 (to-do 155), la variación de existencias (156) y la columna
   de Como (154). Los ingresos de Bologna, Sassuolo 2025, Udinese
   2021-22 y Cremonese 2025 los abre el script con la nota (to-do 163, Versión 579): sin ajustes manuales de ingresos.
+  Sourcing 2026-10-07: ~124 PDFs nuevos sin transcribir (series más largas de Roma, Milan, Lazio, Parma, Inter y otros; Salernitana,
+  Chievo, Juve Stabia; rugby FIR/Zebre; tenis FITP y entes; ver `fuentes/Italia/_notas-generales.md`). Las federaciones entran al sitio.
   Sin cargar del lote 14: Milan 2022-23 (to-do 150). Etapa 2: 35 de 105 documentos
   validados; faltan 70 (~US$ 41, `pipeline.mjs --dir Clubes/Italia --max-paginas 0 --limit 35` dos veces), en otra sesión.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
