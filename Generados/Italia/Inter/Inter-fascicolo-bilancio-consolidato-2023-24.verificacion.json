@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
- "generado": "2026-10-08T22:51:47.713Z",
+ "generado": "2026-10-08T23:14:20.130Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2024,
@@ -30,6 +30,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 425.476173; el sitio tiene 425.475173"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 473.208416 en este documento y 473.209291 en Inter-fascicolo-bilancio-consolidato-2024-25.pdf (columna del año anterior)"
@@ -38,11 +43,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 425.475173 en Inter-fascicolo-bilancio-consolidato-2022-23.pdf y 425.476173 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

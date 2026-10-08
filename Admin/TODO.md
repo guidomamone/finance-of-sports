@@ -235,7 +235,7 @@ ni en el comentario de ningún archivo de código.
     cierre (2020 = 2019-20). El grupo 1 (13 documentos que no cerraban el resultado) se resolvió: 12 cierran (ajustes `fila`, `estado-desde-md.mjs` para Lazio 2021, comparativo de 2023 para
     Salernitana 2022) y 11 ya están cargados. Lo que queda, en el orden en que conviene resolverlo:
     1. Resultado cerrado, falta contestar la cola o el script (3): AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los totales de ingresos y gastos quedan en rojo porque el
-       impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018), Lazio 2016 (cierra; falla el vecino 2017 por el doble conteo del total: to-do 187).
+       impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018), Lazio 2016 (cierra; falla el vecino 2017 por el total duplicado en la columna anterior de ese documento: to-do 187).
     2. Falla el año vecino (10): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010 y 2020, Inter 2021, Lazio 2004, Sampdoria 2020, Sassuolo 2018. Casi siempre es una reexpresión del año en el
        documento siguiente (pasó con Milan 2009 y 2010). Mirar uno por uno si es falsa alarma (se acepta en la cola con la explicación) o un error real. Sassuolo 2018 además quedó con la
        extracción en 0 filas (es un escaneo): `lote.mjs --rehacer` (~US$ 0,5) y OJO con el punto 181.
@@ -272,10 +272,10 @@ ni en el comentario de ningún archivo de código.
 186. PUSH A PRODUCCIÓN. Hay unos 85 commits locales sin subir desde el último push (Guido, 2026-10-08: el último push fue `568eb89d`). Cada push es un deploy de Netlify y lo hace Guido. Antes de
     subir: `node tools/audit.js --quiet` (hoy P0 0 y P1 0) y abrir el sitio local para mirar Lazio (años en liras y Serie A 2005 a 2021), Roma, Milan, Torino, Bologna 2024-25 (individual), Chievo, Salernitana y Juve Stabia (liga Serie C en la pestaña Ligas).
 
-187. DOBLE CONTEO DEL TOTAL Y FINANCIERO VACÍO (verificar.mjs, rama `filaTotal` de ajuste() y `fin5`; medidos en una copia sobre los 177 documentos de Italia, no aplicados). (a) Cuando la fila del total
-    se empareja con ella misma (`deEsa` es solo la propia fila total) y las líneas de afuera suman el total, descartar la fila total (opción (c) del to-do 167). Solo cambia Lazio 2005, 2011, 2016 y 2011-12
-    y un 1e-6 de Fiorentina 2023-24; arregla el vecino 2017 de Lazio 2016 y la columna anterior duplicada. (b) En las lecturas 5 y 6, si no hay hojas de financiero, usar `fin` (renglones o el total único):
-    arregla Lazio 2016 sin ajuste, pero pasa Lazio 2016-17 de ok a cola hasta que se aplique (a). Un cambio por vez, con el ok de Guido y la medida de `Admin/prueba-completa.txt` antes y después.
+187. LA COLUMNA ANTERIOR DUPLICA EL TOTAL (verificar.mjs, `ingresosConLectura` y `lineasDeLado`). Hecho el escalón "financiero sin hojas" (Versión 611). Falta: el chequeo del año vecino lee la
+    columna "año anterior" por otro camino que `ajuste()`, y ahí la fila "TOTALE RICAVI" entra como una línea más además de sus componentes (Lazio 2016-17: 188.856.148 en vez de 93.820.508, y falla
+    el vecino de Lazio 2016). El escalón "el total repite sus componentes" en `ajuste()` se midió y no entró (Admin/HALLAZGOS-pipeline.md): hay que diseñarlo en `lineasDeLado` para la columna A, con
+    el diagnóstico de qué filas entran en Lazio 2017 antes de escribir código. Mientras tanto Lazio 2016 se acepta por la cola con la explicación.
 
 188. COSTOS FINANCIEROS DEL CODICE CIVILE QUE SUMAN EN VEZ DE RESTAR (verificar.mjs). El 17) "interessi ed altri oneri finanziari" y el D 19) se imprimen en positivo y se restan por posición; el
     script los suma. Se arregló a mano con ajustes `fila` en Bologna 2019-20, 2020-21, 2024 y 2025 y Genoa 2023 (y Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total

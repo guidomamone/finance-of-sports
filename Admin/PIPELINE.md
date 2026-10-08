@@ -241,7 +241,11 @@ Mitigaciones:
             Versión 610 (to-do 179): el encabezado también se reconoce con la "D)" y el título en celdas separadas (Inter 2023 y 2024) y con el
             "E) Proventi e oneri straordinari" (Chievo 2014-16, sin D impresa); en esa zona un "21) oneri" resta. Medido en los 177 documentos de Italia:
             cierran Chievo e Inter; Parma 2016 mejora (el total de gastos pasa a coincidir con el impreso); Lazio 2000-01 pasa de la lectura 6 a la 4
-            (sigue OK y sus totales ahora cierran); el resto, idéntico
+            (sigue OK y sus totales ahora cierran); el resto, idéntico.
+            Versión 611 (to-do 187): ESCALÓN "financiero sin hojas": en las lecturas 5 y 6 (solo hojas), si el estado no trae hojas de financiero, se usan sus renglones o su total único
+            (Lazio 2016: "Oneri finanziari netti e differenze cambio (1.866.421)" era una sola fila impresa como subtotal y quedaba en 0). Medido en 242 documentos: Roma 2007 y Lazio 2011-12 y
+            2012-13 dejan de marcar totales en rojo; Lazio 2012-13 pasa de cola a ok y su año anterior coincide con 2011-12; Lazio 2012-13 cargado daría ingresos 109.794312 (antes 109.794296) y
+            gastos 114.569607 (antes 114.568051), pero lo ya cargado no se toca; el resto, idéntico
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
             menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
             igual (Versión 587, to-do 175; caso Cremonese 2024)

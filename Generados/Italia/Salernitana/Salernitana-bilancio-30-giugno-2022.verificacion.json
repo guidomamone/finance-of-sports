@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf",
  "md": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.md",
- "generado": "2026-10-08T22:37:01.335Z",
+ "generado": "2026-10-08T23:14:23.705Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "salernitana-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf",
+   "campo": "name",
+   "valor": "U.S. Salernitana 1919 S.r.l.",
+   "linea": null,
+   "motivo": "Claude 2026-10-08 (revisión Sonnet de las altas de Italia): nombre legal; el escaneo de 2022 lo trae como 'U.S. SALERNITANA 1919 S.R.L' y el documento de 2023 igual",
+   "evidencia": "Salernitana-bilancio-30-giugno-2023-def.md L3 y L640; 2022.md L11 y L19",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -37,7 +48,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

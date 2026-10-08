@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md",
- "generado": "2026-10-08T22:36:59.917Z",
+ "generado": "2026-10-08T23:14:22.244Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2012,
@@ -64,19 +64,19 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2011 de este documento suma ingresos 93.670373; el sitio tiene 93.670373"
+  },
+  {
    "nombre": "documento del año 2013",
-   "ok": false,
-   "detalle": "ingresos de 2012: 95.509291 en este documento y 192.29803 en Lazio-bilancio-separato-consolidato-2012-13.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2012: 95.509291 en este documento y 95.509291 en Lazio-bilancio-separato-consolidato-2012-13.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2011",
    "ok": true,
    "detalle": "ingresos de 2011: 93.670373 en Lazio-bilancio-separato-consolidato-2010-11.pdf y 93.670373 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
   }
  ],
  "notas": [

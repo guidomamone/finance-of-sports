@@ -1,10 +1,17 @@
 {
  "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf",
  "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md",
- "generado": "2026-10-01T19:30:40.325Z",
+ "generado": "2026-10-08T23:14:14.068Z",
  "estado": "ok",
  "clubId": "catolica-cl",
  "year": 2009,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -44,9 +51,14 @@
   "impuesto": 194.459,
   "resultadoImpreso": -727.914,
   "resultadoParaCargar": -727.914,
+  "resultadoFinal": null,
   "lecturaSignos": null
  },
  "lineas": [],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
  "financiero": [],
  "impuesto": [
   {

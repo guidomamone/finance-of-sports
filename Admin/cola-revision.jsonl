@@ -3861,3 +3861,32 @@
 {"tipo":"respuesta","id":"415e5ab","ts":"2026-10-08T23:06:21.580Z","decision":"corregir","valor":"wages_squad","nota":"Claude 2026-10-08: precedente de 8 clubes italianos (Lazio, Roma, Genoa, Torino, Sassuolo, Monza, Verona, Sampdoria): 'Costi per tesserati' es wages_squad."}
 {"tipo":"respuesta","id":"c9f5c78","ts":"2026-10-08T23:06:21.611Z","decision":"aceptar","valor":null,"nota":"Claude 2026-10-08: precedente de Lazio: 'Costi per attività sportiva' es match_organisation_expense."}
 {"tipo":"respuesta","id":"046292f","ts":"2026-10-08T23:06:21.644Z","decision":"aceptar","valor":null,"nota":"Claude 2026-10-08: 1.010 euros de baja de activos materiales: depreciation."}
+{"tipo":"respuesta","id":"ef6729f","ts":"2026-10-08T23:12:38.809Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"4126650","ts":"2026-10-08T23:12:38.824Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"6584e78","ts":"2026-10-08T23:12:39.276Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"ea389ec","ts":"2026-10-08T23:12:40.615Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"49a0476","ts":"2026-10-08T23:12:42.493Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"1280670","ts":"2026-10-08T23:12:43.190Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"b326362","ts":"2026-10-08T23:12:43.200Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"f843eea","ts":"2026-10-08T23:12:43.223Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"caso","id":"a25c312","ts":"2026-10-08T23:12:45.278Z","clave":"Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.pdf|verificar|anio-anterior|2006","pdf":"Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.pdf","md":"Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md","etapa":"verificar","motivo":"anio-anterior","detalle":"2006","que":"La columna del año anterior (2006) de este documento suma ingresos 0 y el sitio tiene 88.658423 para ese año. Puede ser: otra tabla u otro perímetro (revisar el documento), otra escala, o un error del año ya cargado (revisar producción).","pagina":106,"lineas":[3592,3703]}
+{"tipo":"respuesta","id":"c2aa5eb","ts":"2026-10-08T23:12:45.288Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"b7337b9","ts":"2026-10-08T23:12:45.298Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"eb3bdc6","ts":"2026-10-08T23:12:45.308Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"2d36e05","ts":"2026-10-08T23:12:45.317Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"b9d1ffb","ts":"2026-10-08T23:12:45.350Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"ebd254c","ts":"2026-10-08T23:12:45.441Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"873e81d","ts":"2026-10-08T23:12:45.451Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"227da70","ts":"2026-10-08T23:12:45.685Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"56dad1a","ts":"2026-10-08T23:12:45.695Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"55b1c5e","ts":"2026-10-08T23:12:45.709Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"3719d88","ts":"2026-10-08T23:12:45.948Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"bdcddcd","ts":"2026-10-08T23:12:45.957Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"9b19542","ts":"2026-10-08T23:12:47.359Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"44e265c","ts":"2026-10-08T23:12:47.368Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"28667f1","ts":"2026-10-08T23:12:47.378Z","decision":"reabierto","nota":"la etapa volvió a levantar este caso"}
+{"tipo":"respuesta","id":"760edfa","ts":"2026-10-08T23:14:04.607Z","decision":"obsoleto","nota":"la última corrida de la etapa ya no levanta este caso"}
+{"tipo":"respuesta","id":"324072c","ts":"2026-10-08T23:14:04.607Z","decision":"obsoleto","nota":"la última corrida de la etapa ya no levanta este caso"}
+{"tipo":"respuesta","id":"227da70","ts":"2026-10-08T23:14:10.503Z","decision":"obsoleto","nota":"la última corrida de la etapa ya no levanta este caso"}
+{"tipo":"respuesta","id":"56dad1a","ts":"2026-10-08T23:14:10.503Z","decision":"obsoleto","nota":"la última corrida de la etapa ya no levanta este caso"}
+{"tipo":"respuesta","id":"55b1c5e","ts":"2026-10-08T23:14:10.503Z","decision":"obsoleto","nota":"la última corrida de la etapa ya no levanta este caso"}

@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 611 — Escalón "financiero sin hojas" en las lecturas 5 y 6 (2026-10-08)
+
+- `tools/verificar.mjs`: sin hojas de financiero, las lecturas 5 y 6 usan sus renglones o su total único. Medido en 242 documentos (ver `Admin/PIPELINE.md`): 4 cambian (Roma 2007, Lazio 2011-12, 2012-13 y
+  2013-14), el resto idéntico. El escalón "el total repite sus componentes" se midió y no entró (`Admin/HALLAZGOS-pipeline.md`). Lazio 2006, 2005, Chievo 2015 y Salernitana 2023 cargados.
+- To-do 187 reescrito (la columna anterior duplica el total).
+
 ## Versión 610 — To-do 179 grupo 1: 12 documentos de Italia cerrados, 3 clubes nuevos y 2 escalones nuevos (2026-10-08)
 
 - Ajustes manuales `fila` y `confirmado` que cierran el resultado de Bologna 2024 y 2025, Genoa 2023 (71 `confirmado`), Roma 2007 y 2012 (gestión neta), Lazio 2005, 2011, 2014 y 2016; Lazio 2021 con

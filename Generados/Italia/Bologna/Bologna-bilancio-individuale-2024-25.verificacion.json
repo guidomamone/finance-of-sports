@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md",
- "generado": "2026-10-08T22:51:47.887Z",
+ "generado": "2026-10-08T23:14:18.432Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2025,
@@ -87,14 +87,14 @@
    "detalle": "cierra (impuesto invertido)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 127.803452; el sitio tiene 127.803452"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 127.803452 en Bologna-bilancio-individuale-2023-24.pdf y 127.803452 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [

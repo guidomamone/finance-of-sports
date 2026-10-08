@@ -610,7 +610,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     return r.map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === cdResta ? -Math.abs(f.M) : Math.abs(f.M)) : f.M * normal, origen: `estado (lectura 5: hoja${cd ? ` con ${cd}` : ''})` }; }); };
   const ing5 = conSigno5('ingreso', 'D'); const gas5 = conSigno5('gasto', 'C');
   if (reemplazadas.size || lineasReemplazadas.size) aplicarAjustesFila(ing5, gas5, false);
-  const fin5 = hojas5('financiero').map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === 'D' ? -Math.abs(f.M) : Math.abs(f.M)) : f.M }; });
+  // ESCALÓN "financiero sin hojas" (to-do 179 y 187, Lazio 2016): si el estado trae el financiero como UNA fila impresa como subtotal ("Oneri
+  // finanziari netti e differenze cambio (1.866.421)") y no hay hojas debajo, las lecturas 5 y 6 (solo hojas) lo dejaban en 0 y el resultado
+  // no cerraba. Una sola compuerta: sin hojas de financiero, se usan los renglones o el total único de `fin` (el resultado impreso sigue siendo
+  // la compuerta de la lectura).
+  const fin5 = (hojas5('financiero').length ? hojas5('financiero') : fin.filter((f) => isFinite(f.M) && f.M && !reemplazada(f))).map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === 'D' ? -Math.abs(f.M) : Math.abs(f.M)) : f.M }; });
   // (Versión 437, arreglo de G) un ajuste `fila` del lado financiero con `reemplaza` también ENTRA en la lectura 5/6 (antes solo salía la
   // fila vieja). Caso: Juventus 2003-2006, gastos financieros impresos en positivo bajo "17) INTEREST AND OTHER FINANCIAL EXPENSES".
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && (x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {

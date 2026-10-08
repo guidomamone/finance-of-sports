@@ -40,4 +40,9 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   con `--reemplaza-linea` sobre el renglón del estado (el ajuste lo deja entero y se lleva las hojas de su nota). Caso: Inter 2018-19, nota b41 "Capitalizzazione costi vivaio" (ingreso 7.147.379).
 - Un ajuste `categoria` sobre filas que la extracción dejó sin lado (`otro`) las MUDA de lado conservando el efecto en el resultado: una fila de +7.147 que en verdad es parte de un ingreso pasaba a ingreso de −7.147 y el resultado
   quedaba 14 M corrido. Si las filas son el detalle de un renglón, se arregla el renglón (ajuste `fila`), no cada fila.
+- Escalón "el total repite sus componentes" (to-do 187a, medido y descartado el 2026-10-08): en la rama `filaTotal` de `ajuste()`, si las líneas de afuera de la fila total (al menos 3) suman el total
+  con 1% más el redondeo, descartar la fila total. Medido en los 242 documentos con verificación (con los ajustes manuales ya puestos): solo cambia Fiorentina 2023-24 (pasa de la lectura 5 a la 4,
+  con los totales cerrando), y la columna anterior que lee el chequeo del año vecino pasa de 228,7 a 428,7 M (los dos fallan contra los 243,0 M del documento siguiente). No toca Lazio 2016 ni su
+  vecino 2017: ese chequeo lee la columna anterior por otro camino (`ingresosConLectura` y `lineasDeLado`, no `ajuste()`), que es donde se duplica el total. Antes de los ajustes manuales (copia
+  del 2026-10-08) cambiaba Lazio 2005, 2011 y 2016 y 2011-12, pero ya no hay documento al que sirva.
 

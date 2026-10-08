@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
- "generado": "2026-10-08T22:51:47.501Z",
+ "generado": "2026-10-08T23:14:18.474Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "chievoverona-it",
  "year": 2014,
  "escala": {
   "valor": "unidades",
@@ -37,7 +37,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2013: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -45,7 +45,7 @@
   "la nota de \"a) salari e stipendi\" no suma el renglón (21.026638 contra 21.523555, sumando sus renglones): quedó el renglón del estado",
   "escalón \"sección D\": 3 fila(s) de rettifiche (L475, L477, L486) al financiero; su suma da el total impreso (-0.931982, L488), con el 17) restando; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b61 incluye proventi da compartecipazione ex art. 102 bis que desglosan renglones financieros del conto economico.",
-  "duda de extraer ya contestada para el club (fila-ilegible, \"Totale delle partite straordinarie (20 - 21)\"): aceptar, en ChievoVerona-bilancio-30-giugno-2014.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Totale delle partite straordinarie (20 - 21)\"): aceptar, en ChievoVerona-bilancio-30-giugno-2014.pdf",
   "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati."
  ],
  "reintentar": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.md",
- "generado": "2026-10-08T22:37:00.359Z",
+ "generado": "2026-10-08T23:14:22.668Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2021,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Claude 2026-10-08 (Guido: Lazio 2021, ok): el estado imprime Ricavi da gare 0 (L3878; 2020: 9.472.419): los estadios estuvieron cerrados casi toda la temporada 2020-21 por el covid",
+   "evidencia": "pág. 104 del visor, .md L3878",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
