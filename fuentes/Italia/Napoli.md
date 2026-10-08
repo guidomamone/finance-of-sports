@@ -39,3 +39,5 @@ Ninguna. Serie completa 2019/20-2024/25.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Napoli/Napoli-bilancio-2025.pdf` (sourceId `napoli-it-bilancio-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2024 desde `Clubes/Italia/Napoli/Napoli-bilancio-2024.pdf` (sourceId `napoli-it-bilancio-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Napoli/Napoli-bilancio-2023.pdf` (sourceId `napoli-it-bilancio-2023`).
