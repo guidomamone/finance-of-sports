@@ -227,7 +227,7 @@ ni en el comentario de ningún archivo de código.
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
 
-179. ITALIA, LOTE 40: QUÉ FRENA A CADA UNO (2026-10-08). 76 PDFs de fútbol llevados por las etapas 3 a 8: 10 cargados (Hellas Verona 2022 se cargó después, con su duda aceptada), 66 frenados. Años = año de cierre
+179. ITALIA, LOTE 40: QUÉ FRENA A CADA UNO (2026-10-08). 76 PDFs de fútbol llevados por las etapas 3 a 8: 13 cargados (Hellas Verona 2022 y Sassuolo 2019, 2020 y 2022 se cargaron después), 63 frenados. Años = año de cierre
     (2020 = 2019-20). Grupos:
     - Solo preguntas de la cola, totales y resultado cierran (15): AC Milan 2021, Bologna 2018 y 2023, Fiorentina 2019, Genoa 2025, Hellas Verona
       2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Torino 2020 y 2025. Se destraban con el to-do 173.
@@ -239,7 +239,7 @@ ni en el comentario de ningún archivo de código.
     - Falta el alta del club (6): Chievo Verona 2014 a 2016, Juve Stabia 2024, Salernitana 2022 y 2023. Después de la cola.
     - Lazio 1999, 2000 y 2001 en liras (ITL): el sitio no tiene una moneda "legado"; decisión de Guido pendiente (cargar en ITL, convertir a
       euros o dejarlos sin cargar). Lazio 2000 además tiene el cierre del nombre del archivo distinto del contenido.
-    - Sassuolo 2018, 2019, 2020, 2022 y 2023: ajuste de cierre 31/12 ya puesto; falta correr el lote de nuevo (etapa 7).
+    - Sassuolo 2018 (la extracción dejó 0 filas: rehacer localizar y extraer, `--rehacer`; escaneo) y 2023 (2 preguntas en la cola). El ajuste de cierre 31/12 ya está.
     - Parma 2016 (reintento por "Televisión" en 0, ~US$ 0,50), AC Milan 2013 (la suma
       de gastos no coincide con el total impreso).
     - Aparte: Juve Stabia semestral y Catania 2011 (lote 41): solo transcripción, no se cargan.

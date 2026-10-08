@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 - Austria y Alemania: los «NO» del índice de países son clubes cubiertos por la publicación de la liga (Bundesliga `Klub-JA` 2017/18-2024/25 y DFL Finanzkennzahlen hasta GJ2024); no hay nada pendiente de club. `fuentes/README.md` regenerado (1.231 clubes, 924 con documento).
 - Sin tocar skills.
 
+## Versión 600 — Sassuolo 2019, 2020 y 2022 cargados (2026-10-08)
+
+- Con el ajuste manual del cierre (31/12) corrido el lote 42: Sassuolo 2019, 2020 y 2022 cargados sin otros ajustes. Resultados contra lo impreso:
+  2019 0,843 (utile 842.978), 2020 −1,746 (perdita 1.745.898), 2022 1,383 (utile 1.384.006). Sassuolo 2018 (extracción en 0 filas) y 2023 (2 preguntas)
+  siguen frenados. Auditoría P0 0, P1 0.
+
 ## Versión 599 — Sourcing del año 2023 (fútbol, sin Italia): barridos por canal, clubes nuevos y un país nuevo (2026-10-08)
 
 - Sesión de solo sourcing (sin transcribir ni cargar nada; todo queda en `Clubes/` y en `fuentes/`). Primero se midió qué había en disco: el ejercicio 2022/23 ya estaba en casi todos los países con canal; los huecos reales eran clubes sin nada de ese año, clubes nuevos y series cortas. Resultado: ~4.800 archivos nuevos (sin Italia) y ~190 fichas nuevas o ampliadas en `fuentes/`, todas con la línea `**Ángulos**`; `fuentes/README.md` regenerado (79 países, 1.222 clubes, 915 con documento).
