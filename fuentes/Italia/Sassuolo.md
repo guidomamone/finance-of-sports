@@ -43,3 +43,5 @@ Ninguna. Serie completa y fácil de mantener actualizada (URLs predecibles:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.pdf` (sourceId `sassuolo-it-bilancio-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2020.pdf` (sourceId `sassuolo-it-bilancio-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Sassuolo/Sassuolo-bilancio-2022.pdf` (sourceId `sassuolo-it-bilancio-2022`).
