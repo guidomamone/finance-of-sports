@@ -64,3 +64,5 @@ OCR de las primeras páginas confirma las fechas de cierre. El de 2024 de Issuu 
 Huecos: 2022/23 (30/06/2023) y 2018: no aparecen ni en Issuu (`issuu.com/acffiorentina/docs/` lista 2021, 2022 y 2024) ni en Wayback ni por Exa (solo prensa).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-21-issuu.pdf` (sourceId `fiorentina-it-bilancio-2020-21-issuu`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.pdf` (sourceId `fiorentina-it-bilancio-consolidato-2019-issuu`).
