@@ -56,12 +56,13 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
-- Italia (onboarding en curso): 16 clubes nuevos dados de alta (Versión 563, algunos todavía sin años), con color de marca y gestiones.
-  Cargados 32 ejercicios de 16 clubes además de Juventus: Lazio 7, Torino 3, Bologna 3, AS Roma 3, Atalanta 2, Udinese 2, Napoli 2, Inter 2,
-  AC Milan, Como, Cremonese, Parma, Hellas Verona, Monza, Sassuolo y Sampdoria. El signo del 17) lo lee el script (escalón "17) resta",
-  Versión 583); quedan ajustes manuales en Napoli 2024 y Bologna 2019-20 (to-do 155), la variación de existencias (156) y la columna
-  de Como (154). Los ingresos de Bologna, Sassuolo 2025, Udinese
-  2021-22 y Cremonese 2025 los abre el script con la nota (to-do 163, Versión 579): sin ajustes manuales de ingresos.
+- Italia (onboarding en curso): 19 clubes con alta. Cargados 73 ejercicios de 18 clubes además de Juventus (23): Lazio 14, AS Roma 7,
+  Atalanta 6, Parma 6, Torino 6, AC Milan 4, Bologna 4, Cremonese 3, Fiorentina 3, Inter 3, Napoli 3, Sassuolo 3, Como 2, Hellas
+  Verona 2, Monza 2, Sampdoria 2, Udinese 2, Genoa 1. El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D, el
+  subtotal repetido, el renglón grande sin abrir (TV escondida en "altri") y la etapa 4 que frenaba en silencio (Versiones 581-590).
+  Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166). Todos los años en "ok" están cargados salvo Napoli 2021
+  y 2022, que dan "ok" sin resultado impreso (to-do 167, diagnóstico listo). Atalanta y Parma cambiaron la fecha de cierre: la
+  temporada se muestra mal (to-do 177, decisión de Guido).
   Sourcing 2026-10-07: ~124 PDFs nuevos sin transcribir (series más largas de Roma, Milan, Lazio, Parma, Inter y otros; Salernitana,
   Chievo, Juve Stabia; rugby FIR/Zebre; tenis FITP y entes; ver `fuentes/Italia/_notas-generales.md`). Las federaciones entran al sitio.
   Sin cargar del lote 14: Milan 2022-23 (to-do 150). Etapa 2: 35 de 105 documentos
