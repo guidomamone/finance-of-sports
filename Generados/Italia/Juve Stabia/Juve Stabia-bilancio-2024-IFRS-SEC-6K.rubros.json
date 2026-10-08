@@ -1,0 +1,260 @@
+{
+  "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+  "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
+  "club": "juve-stabia",
+  "year": 2024,
+  "generatedAt": "2026-10-08T18:56:46.435Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Sponsorships",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        2.023466
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Sponsorships - Related party",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.15
+      ],
+      "glosa": "Patrocinios - Partes vinculadas"
+    },
+    {
+      "label": "Ticketing",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.727035
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Gain on transfer of players",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.23
+      ],
+      "glosa": "Beneficios por traspaso de jugadores"
+    },
+    {
+      "label": "Revenue from Television rights",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.05
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Revenue from Contributions",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.538644
+      ],
+      "glosa": "Ingresos por subvenciones y aportaciones"
+    },
+    {
+      "label": "Revenue from store",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.074261
+      ],
+      "glosa": "Ingresos por ventas de tienda"
+    },
+    {
+      "label": "Other incomes",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Revenues\"",
+      "values": [
+        0.116954
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Other incomes",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.190721
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ticketing",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.111591
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Sports equipment",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.659782
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Player salaries",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        2.463183
+      ],
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Accomodation and transportation",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.053867
+      ],
+      "glosa": "Alojamiento y transporte"
+    },
+    {
+      "label": "Insurance",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.014157
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Loan of players",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.0075
+      ],
+      "glosa": "Cesión de jugadores"
+    },
+    {
+      "label": "Other cost of revenues",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.193876
+      ],
+      "glosa": "Otros costes de ventas"
+    },
+    {
+      "label": "Amortization of multi-year football players rights",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Cost of revenues\"",
+      "values": [
+        0.166
+      ],
+      "glosa": "Amortización de derechos federativos de jugadores"
+    },
+    {
+      "label": "Salaries and social security contributions",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        1.010865
+      ],
+      "glosa": "Sueldos y cargas sociales"
+    },
+    {
+      "label": "Rental expenses",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        0.043785
+      ],
+      "glosa": "Gastos de arrendamiento"
+    },
+    {
+      "label": "Impairment of receivables",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        0.090272
+      ],
+      "glosa": "Pérdidas por deterioro de créditos"
+    },
+    {
+      "label": "Penalties and fines",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        0.11377
+      ],
+      "glosa": "Sanciones y multas"
+    },
+    {
+      "label": "Operating and administrative expenses",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        0.816133
+      ],
+      "glosa": "Gastos operativos y de administración"
+    },
+    {
+      "label": "Impairment loss on intangible assets",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"General and administrative expenses\"",
+      "values": [
+        0.082667
+      ],
+      "glosa": "Pérdidas por deterioro de activos intangibles"
+    },
+    {
+      "label": "Depreciation costs",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Depreciation and Amortization\"",
+      "values": [
+        0.007872
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Amortization on Intangible assets",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Depreciation and Amortization\"",
+      "values": [
+        0.004474
+      ],
+      "glosa": "Amortización de activos intangibles"
+    }
+  ]
+}

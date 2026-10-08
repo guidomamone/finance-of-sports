@@ -22,3 +22,4 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Los Chankas](../Perú/Los Chankas.md) — sin PDF, única S.A. (cerrada) del barrido, sin obligación de reporte — Último chequeo: 2026-09-13
 - [Sport Huancayo](../Perú/Sport Huancayo.md) — sin PDF, dead-end confirmado vía Exa (fuente terciaria: "no hay información financiera disponible") — Último chequeo: 2026-09-26
 - [Binacional](../Perú/Binacional.md) — sin PDF, dead-end para balance público (mucha cobertura de crisis financiera pero sin documento) — candidato débil a mail — Último chequeo: 2026-09-26
+- [Melgar](<../Perú/Melgar.md>) — 2 documentos, años 2021, 2025; sin cargar aún — Último chequeo: 2026-10-08

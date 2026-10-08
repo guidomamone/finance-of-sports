@@ -14,3 +14,5 @@ Detalle línea-por-club del sourcing de Serbia. El detalle completo de cada club
 - [TSC Backa Topola](<../Serbia/TSC Backa Topola.md>) — 7 ejercicios (2019-2025), todos con revisor; 2022 es escaneo — Último chequeo: 2026-10-03
 - [Vojvodina](<../Serbia/Vojvodina.md>) — 6 ejercicios (2019, 2020, 2022 con revisor; 2023-2025 solo formularios APR); falta 2021 — Último chequeo: 2026-10-03
 - [Zeleznicar Pancevo](<../Serbia/Zeleznicar Pancevo.md>) — 1 ejercicio (2025) — Último chequeo: 2026-10-03
+- [Radnički Niš](<../Serbia/Radnički Niš.md>) — 1 documentos, años 2024; sin cargar aún — Último chequeo: 2026-10-08
+- [FK Novi Pazar](<../Serbia/FK Novi Pazar.md>) — 1 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08

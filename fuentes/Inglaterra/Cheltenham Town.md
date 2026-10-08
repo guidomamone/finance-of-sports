@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Cheltenham Town/` (los PDF no se trackean; son escan
 - `cheltenham-full-accounts-2001-02.pdf`
 - `cheltenham-full-accounts-2000-01.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `--include-small`, pero es "small company" y la cuenta de resultados NO se presentó (omitida del filing copy): sin ingresos no sirve para el sitio. Los años 2022-2024 del registro son todos del mismo tipo.

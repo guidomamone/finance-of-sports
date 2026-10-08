@@ -1,0 +1,251 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
+ "generado": "2026-10-08T18:56:44.982Z",
+ "estado": "cola",
+ "clubId": "asroma-it",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "04e08fa",
+  "26f0576",
+  "da25621",
+  "d3b524c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 381.015; el sitio tiene 381.015"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": false,
+   "detalle": "ingresos de 2020: 173.811 en este documento y 141.247 en AS-Roma-bilancio-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 381.015 en AS-Roma-bilancio-2019.pdf y 381.015 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Altri costi\" (6 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Altri oneri\" (5 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Las filas parecen repetir los renglones del conto economico consolidado, que ya tienen nota propia.",
+  "duda de localizar que no afecta la carga: Mismo estado consolidado con columnas de partes relacionadas adicionales.",
+  "duda de extraer que no afecta la carga: Diferencia de 1 entre el estado y la nota b99 en el año anterior."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Altri costi",
+   "suma": 6.914,
+   "objetivo": 0.054
+  },
+  {
+   "renglon": "Altri oneri",
+   "suma": 6.713,
+   "objetivo": 2.084
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Altri costi",
+   "suma": 6.914,
+   "objetivo": 0.054
+  },
+  {
+   "renglon": "Altri oneri",
+   "suma": 6.713,
+   "objetivo": 2.084
+  }
+ ],
+ "totales": {
+  "ingresos": 173.811,
+  "gastos": 345.751,
+  "financiero": -32.155,
+  "impuesto": -0.396,
+  "resultadoImpreso": -204.492,
+  "resultadoParaCargar": -204.492,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 26.19,
+   "pagina": 76,
+   "linea": 2282,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi delle vendite commerciali e licensing",
+   "lado": "ingreso",
+   "M": 5.743,
+   "pagina": 76,
+   "linea": 2283,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 17.397,
+   "pagina": 76,
+   "linea": 2284,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diritti televisivi e diritti d'immagine",
+   "lado": "ingreso",
+   "M": 80.282,
+   "pagina": 76,
+   "linea": 2285,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pubblicità",
+   "lado": "ingreso",
+   "M": 6.806,
+   "pagina": 76,
+   "linea": 2286,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi",
+   "lado": "ingreso",
+   "M": 4.832,
+   "pagina": 76,
+   "linea": 2287,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 32.561,
+   "pagina": 76,
+   "linea": 2297,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Acquisti materie di consumo",
+   "lado": "gasto",
+   "M": 6.726,
+   "pagina": 76,
+   "linea": 2289,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Variazione delle rimanenze",
+   "lado": "gasto",
+   "M": -0.161,
+   "pagina": 76,
+   "linea": 2290,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per servizi",
+   "lado": "gasto",
+   "M": 50.93,
+   "pagina": 76,
+   "linea": 2291,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per godimento beni di terzi",
+   "lado": "gasto",
+   "M": 5.574,
+   "pagina": 76,
+   "linea": 2292,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il personale",
+   "lado": "gasto",
+   "M": 155.069,
+   "pagina": 76,
+   "linea": 2293,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri costi",
+   "lado": "gasto",
+   "M": 6.914,
+   "pagina": 76,
+   "linea": 2294,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 104.238,
+   "pagina": 76,
+   "linea": 2295,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 16.461,
+   "pagina": 76,
+   "linea": 2298,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Proventi finanziari",
+   "M": 3.075,
+   "linea": 2301
+  },
+  {
+   "etiqueta": "Oneri finanziari",
+   "M": -35.23,
+   "linea": 2302
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": -0.396,
+   "linea": 2305
+  },
+  {
+   "etiqueta": "imposte differite",
+   "M": 0,
+   "linea": 2306
+  }
+ ]
+}

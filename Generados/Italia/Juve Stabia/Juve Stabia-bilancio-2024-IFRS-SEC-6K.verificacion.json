@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
+ "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+ "generado": "2026-10-08T18:56:46.435Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "deed782",
+  "e6ac586"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenues\" 3.91036 cierra; además se suman 1 línea(s) fuera de ese total (0.190721)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b36 es la conciliación OIC vs IFRS del ejercicio anterior, no del pedido."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 4.101081,
+  "gastos": 5.839794,
+  "financiero": -0.120093,
+  "impuesto": -0.127938,
+  "resultadoImpreso": -1.986746,
+  "resultadoParaCargar": -1.986746,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsorships",
+   "lado": "ingreso",
+   "M": 2.023466,
+   "pagina": 37,
+   "linea": 1162,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Sponsorships - Related party",
+   "lado": "ingreso",
+   "M": 0.15,
+   "pagina": 37,
+   "linea": 1163,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 0.727035,
+   "pagina": 37,
+   "linea": 1164,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Gain on transfer of players",
+   "lado": "ingreso",
+   "M": 0.23,
+   "pagina": 37,
+   "linea": 1165,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Revenue from Television rights",
+   "lado": "ingreso",
+   "M": 0.05,
+   "pagina": 37,
+   "linea": 1166,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Revenue from Contributions",
+   "lado": "ingreso",
+   "M": 0.538644,
+   "pagina": 37,
+   "linea": 1167,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Revenue from store",
+   "lado": "ingreso",
+   "M": 0.074261,
+   "pagina": 37,
+   "linea": 1168,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Other incomes",
+   "lado": "ingreso",
+   "M": 0.116954,
+   "pagina": 37,
+   "linea": 1169,
+   "origen": "nota que desglosa \"Revenues\""
+  },
+  {
+   "etiqueta": "Other incomes",
+   "lado": "ingreso",
+   "M": 0.190721,
+   "pagina": 6,
+   "linea": 142,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ticketing",
+   "lado": "gasto",
+   "M": 0.111591,
+   "pagina": 40,
+   "linea": 1258,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Sports equipment",
+   "lado": "gasto",
+   "M": 0.659782,
+   "pagina": 40,
+   "linea": 1260,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Player salaries",
+   "lado": "gasto",
+   "M": 2.463183,
+   "pagina": 40,
+   "linea": 1261,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Accomodation and transportation",
+   "lado": "gasto",
+   "M": 0.053867,
+   "pagina": 40,
+   "linea": 1262,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Insurance",
+   "lado": "gasto",
+   "M": 0.014157,
+   "pagina": 40,
+   "linea": 1263,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Loan of players",
+   "lado": "gasto",
+   "M": 0.0075,
+   "pagina": 40,
+   "linea": 1264,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Other cost of revenues",
+   "lado": "gasto",
+   "M": 0.193876,
+   "pagina": 40,
+   "linea": 1265,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Amortization of multi-year football players rights",
+   "lado": "gasto",
+   "M": 0.166,
+   "pagina": 40,
+   "linea": 1266,
+   "origen": "nota que desglosa \"Cost of revenues\""
+  },
+  {
+   "etiqueta": "Salaries and social security contributions",
+   "lado": "gasto",
+   "M": 1.010865,
+   "pagina": 42,
+   "linea": 1320,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Rental expenses",
+   "lado": "gasto",
+   "M": 0.043785,
+   "pagina": 42,
+   "linea": 1321,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Impairment of receivables",
+   "lado": "gasto",
+   "M": 0.090272,
+   "pagina": 42,
+   "linea": 1322,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Penalties and fines",
+   "lado": "gasto",
+   "M": 0.11377,
+   "pagina": 42,
+   "linea": 1323,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Operating and administrative expenses",
+   "lado": "gasto",
+   "M": 0.816133,
+   "pagina": 42,
+   "linea": 1325,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Impairment loss on intangible assets",
+   "lado": "gasto",
+   "M": 0.082667,
+   "pagina": 42,
+   "linea": 1326,
+   "origen": "nota que desglosa \"General and administrative expenses\""
+  },
+  {
+   "etiqueta": "Depreciation costs",
+   "lado": "gasto",
+   "M": 0.007872,
+   "pagina": 43,
+   "linea": 1369,
+   "origen": "nota que desglosa \"Depreciation and Amortization\""
+  },
+  {
+   "etiqueta": "Amortization on Intangible assets",
+   "lado": "gasto",
+   "M": 0.004474,
+   "pagina": 43,
+   "linea": 1370,
+   "origen": "nota que desglosa \"Depreciation and Amortization\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance costs",
+   "M": -0.120093,
+   "linea": 141
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Provision for income taxes",
+   "M": -0.127938,
+   "linea": 144
+  }
+ ]
+}

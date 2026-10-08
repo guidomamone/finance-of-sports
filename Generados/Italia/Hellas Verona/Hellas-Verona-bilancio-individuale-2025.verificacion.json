@@ -1,0 +1,395 @@
+{
+ "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.pdf",
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md",
+ "generado": "2026-10-08T18:56:45.902Z",
+ "estado": "cola",
+ "clubId": "hellasverona-it",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "ac14903"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 115.292401 en Hellas-Verona-bilancio-individuale-2024.pdf y 115.292401 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Altri proventi da trasferimento calciatori\" no suma el renglón (18.962347 contra 9.481347, sumando sus renglones): quedó el renglón del estado",
+  "el desglose de \"Ricavi e proventi diversi\" (2 filas) no suma la fila: quedó la fila",
+  "la nota de \"Salari e stipendi\" no suma el renglón (71.013 contra 37.560681, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Altri oneri da trasferimento diritti calciatori\" no suma el renglón (15.299607 contra 7.649607, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 6",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: Es un detalle por partido de una fila que ya está en b39; no agrega categorías.",
+  "duda de localizar que no afecta la carga: Es un detalle por jugador de una fila ya abierta en b43.",
+  "duda de extraer confirmada por las sumas (columna, \"-\"): ¿Se confirma que el encabezado de b5 (L248 '30 giugno 2024') es un corte de transcripción y la primera columna de importes corresponde a 30 giugno 2025?",
+  "duda de extraer que no afecta la carga: En L1742 solo se rotula '30.06.2025'; la segunda columna coincide con el 2024 del estado (2.296).",
+  "duda de extraer que no afecta la carga: L1775 no tiene importes impresos."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Altri proventi da trasferimento calciatori",
+   "suma": 18.962347,
+   "objetivo": 9.481347
+  },
+  {
+   "renglon": "Ricavi e proventi diversi",
+   "suma": 4.587,
+   "objetivo": 4.569
+  },
+  {
+   "renglon": "Salari e stipendi",
+   "suma": 71.013,
+   "objetivo": 37.560681
+  },
+  {
+   "renglon": "Altri oneri da trasferimento diritti calciatori",
+   "suma": 15.299607,
+   "objetivo": 7.649607
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Altri proventi da trasferimento calciatori",
+   "suma": 18.962347,
+   "objetivo": 9.481347
+  },
+  {
+   "renglon": "Ricavi e proventi diversi",
+   "suma": 4.587,
+   "objetivo": 4.569
+  },
+  {
+   "renglon": "Salari e stipendi",
+   "suma": 71.013,
+   "objetivo": 37.560681
+  },
+  {
+   "renglon": "Altri oneri da trasferimento diritti calciatori",
+   "suma": 15.299607,
+   "objetivo": 7.649607
+  }
+ ],
+ "totales": {
+  "ingresos": 101.593403,
+  "gastos": 102.700894,
+  "financiero": -1.697382,
+  "impuesto": -1.91949,
+  "resultadoImpreso": -4.724361,
+  "resultadoParaCargar": -4.724361,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 2.882969,
+   "pagina": 7,
+   "linea": 253,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 2.631439,
+   "pagina": 7,
+   "linea": 254,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Corrispettivi Store",
+   "lado": "ingreso",
+   "M": 2.126867,
+   "pagina": 7,
+   "linea": 255,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 1.530688,
+   "pagina": 7,
+   "linea": 258,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi da sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 11.482452,
+   "pagina": 7,
+   "linea": 259,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 1.406566,
+   "pagina": 7,
+   "linea": 261,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi da cessioni diritti audiovisivi",
+   "lado": "ingreso",
+   "M": 33.453625,
+   "pagina": 7,
+   "linea": 262,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 0.46,
+   "pagina": 7,
+   "linea": 263,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione pluriennale diritti calciatori",
+   "lado": "ingreso",
+   "M": 31.550568,
+   "pagina": 7,
+   "linea": 264,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri proventi da trasferimento calciatori",
+   "lado": "ingreso",
+   "M": 9.481347,
+   "pagina": 7,
+   "linea": 265,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi e proventi diversi",
+   "lado": "ingreso",
+   "M": 4.586882,
+   "pagina": 7,
+   "linea": 268,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 3.074386,
+   "pagina": 7,
+   "linea": 272,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Per servizi",
+   "lado": "gasto",
+   "M": 16.770981,
+   "pagina": 7,
+   "linea": 273,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 2.371282,
+   "pagina": 7,
+   "linea": 274,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Salari e stipendi",
+   "lado": "gasto",
+   "M": 37.560681,
+   "pagina": 7,
+   "linea": 276,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri sociali",
+   "lado": "gasto",
+   "M": 3.703567,
+   "pagina": 7,
+   "linea": 277,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.636719,
+   "pagina": 7,
+   "linea": 278,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "altri costi",
+   "lado": "gasto",
+   "M": 1.439552,
+   "pagina": 7,
+   "linea": 279,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 16.009055,
+   "pagina": 7,
+   "linea": 282,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.389553,
+   "pagina": 7,
+   "linea": 283,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Atre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 4.31625,
+   "pagina": 7,
+   "linea": 284,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Svalutazioni cred. incl. nell'attivo circolante",
+   "lado": "gasto",
+   "M": 0.78918,
+   "pagina": 7,
+   "linea": 285,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "gasto",
+   "M": 0.232175,
+   "pagina": 7,
+   "linea": 287,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da organizzazione competizioni",
+   "lado": "gasto",
+   "M": 2.632394,
+   "pagina": 7,
+   "linea": 291,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "gasto",
+   "M": 2.210526,
+   "pagina": 7,
+   "linea": 292,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Minusvalenze da cessione diritti prestazioni calciatori",
+   "lado": "gasto",
+   "M": 0.433931,
+   "pagina": 7,
+   "linea": 293,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri oneri da trasferimento diritti calciatori",
+   "lado": "gasto",
+   "M": 7.649607,
+   "pagina": 7,
+   "linea": 294,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 2.181055,
+   "pagina": 7,
+   "linea": 297,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Svalutazioni a) di partecipazioni",
+   "lado": "gasto",
+   "M": 0.3,
+   "pagina": 8,
+   "linea": 321,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Altri proventi finanziari: d) Proventi diversi dai precedenti d.5) Altri proventi diversi",
+   "M": 3.263055,
+   "linea": 312
+  },
+  {
+   "etiqueta": "Interessi ed altri oneri finanziari e) altri interessi e oneri finanziari",
+   "M": -4.965146,
+   "linea": 314
+  },
+  {
+   "etiqueta": "Utili e perdite su cambi",
+   "M": 0.004709,
+   "linea": 316
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte sul reddito dell'esercizio: a) Imposte correnti Ires/Irap dell'esercizio/Altre imposte e tasse non versate",
+   "M": -4.407941,
+   "linea": 324
+  },
+  {
+   "etiqueta": "b) Proventi e oneri da adesione al regime di consolidato fiscale",
+   "M": 1.316405,
+   "linea": 325
+  },
+  {
+   "etiqueta": "c) Imposte differite",
+   "M": 2.081856,
+   "linea": 326
+  },
+  {
+   "etiqueta": "d) Imposte anticipate",
+   "M": -0.90981,
+   "linea": 327
+  }
+ ]
+}

@@ -45,3 +45,7 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Titanes de Barranquilla](<../Colombia/Titanes de Barranquilla.md>) — 5 ejercicios en disco (2021-2025) vía SIIS, NIT 901213941; básquet (otro deporte) — Último chequeo: 2026-10-03
 - [Toros de Cordoba](<../Colombia/Toros de Cordoba.md>) — 5 ejercicios en disco (2017-2022) vía SIIS, NIT 900477535; béisbol (otro deporte) — Último chequeo: 2026-10-03
 - [Notas generales de Colombia](../Colombia/_notas-generales.md)
+- [Real Sincelejo](<../Colombia/Real Sincelejo.md>) — 3 documentos, años 2017; sin cargar aún — Último chequeo: 2026-10-08
+- [Deportes Quindio](<../Colombia/Deportes Quindio.md>) — 14 documentos, años 2016-2021; sin cargar aún — Último chequeo: 2026-10-08
+- [Patriotas Boyaca](<../Colombia/Patriotas Boyaca.md>) — 23 documentos, años 2016-2020, 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Real Soacha](<../Colombia/Real Soacha.md>) — 26 documentos, años 2016-2025; sin cargar aún — Último chequeo: 2026-10-08

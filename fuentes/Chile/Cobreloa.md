@@ -41,3 +41,12 @@
   Ñublense cmfchile.cl/institucional/mercados/entidad.php?mercado=O&rut=76689160&tipoentidad=OTODP.
 - Último chequeo: 2026-09-12.
 
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (descubierto con búsqueda semántica Exa) · barrido: 1 (Sonnet) — 2026-10-08
+
+2 documentos en carpeta (2007).
+
+- Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar entidad y ejercicio antes de cargar.
+- Balance 2007 (informe y notas).

@@ -46,3 +46,16 @@
   socios) está agrupado dentro de "Prihodi od ulaznica" (ingresos de entradas) en la plantilla
   HNS, no como bloque separado.
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (el sitio nuevo sirve los informes desde `cdn.gnkdinamo.hr/club_1/documents/Dokumenti kluba/...`, con subcarpeta `Nekonsolidirani`) · Wayback CDX de dominio: HIT (completó 2018 y 2023) · barrido: 3 (Sonnet) — 2026-10-08
+
+Resuelto el "pendiente 2023" y el 2025 que figuraba sin publicar. Todos escaneos, en `Clubes/Croacia/Dinamo Zagreb/`:
+- **Consolidados** (los 5 de antes son estos: 2019, 2020, 2021, 2022, 2024, `financijsko-izvjesce-<año>.pdf`; hashes idénticos al CDN): se suman `dinamo-2023-konsolidirano.pdf` (25 págs.) y `dinamo-2025-konsolidirano.pdf` (35 págs., "Konsolidirani financijski izvještaji za 2025. godinu").
+- **No consolidados** (la udruga sola; plantilla GFI-POD de FINA, CIIU 9312): `dinamo-2020-nekonsolidirano.pdf` (8 págs.), `-2021-` (8), `-2022-` (17), `-2023-` (18), `-2024-` (31), `-2025-` (27).
+- **2018**: `dinamo-2018-financijski-izvjestaj.pdf` (8 págs., `gnkdinamo.hr/financijski_izvjestaj_2018-min.pdf`, Wayback 20191107).
+- El 2023 consolidado vino de Wayback (`/content/izvjestaj-konsolidirani.pdf`, captura 20240415) y coincide con el del CDN actual (mismo tamaño).
+- Quedan sin uso dos decisiones de Skupština en el CDN (marzo 2026 y agosto 2025): no son estados financieros.
+- Pendiente: consolidado 2018 (el club presentaba otra cosa entonces) y años anteriores a 2018.
+- Ojo para cargar: hay dos perímetros por año (consolidado vs la udruga sola). El sitio ya tiene el 2024 consolidado.

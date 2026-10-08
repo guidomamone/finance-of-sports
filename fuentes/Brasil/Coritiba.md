@@ -29,3 +29,7 @@
 - Wayback rechazó conexiones (connection refused) en ráfagas: espaciar y reintentar; `dl.sh` con reintentos funcionó.
 - Ejercicios en disco ahora: 2016-2017 (comparativo), 2017-2018, 2018-2019, 2019-2020, 2020-2021, 2022-2023 (comparativo), 2024 → ejercicios 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 - **Falta**: 2025 (déficit R$113,9M según prensa, ver coritibafc.com/noticias/coritiba-deficit-113-milhoes/ como lead de prensa) — no apareció PDF; ángulo pendiente: pedirlo al club o esperar a que lo republique en la FPF/sitio.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 2 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2024-2025; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

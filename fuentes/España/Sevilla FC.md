@@ -41,3 +41,7 @@
 ## Sourcing España/Francia (2026-10-03)
 
 Con archive.org de vuelta se barrió `sevillafc.es` (dominio completo) y salieron 4 informes de auditoría + cuentas del archivo legado `sevillafc.es/sites/default/files/...`: **2014-15** (51 págs., `inline-files/CCAA_e_informe_de_auditoria_a_30_de_junio_del_2015.pdf`), **2015-16** (52 págs., `documents/30.06.2016_ccaa_sfc.pdf`), **2018-19** (59 págs., `inline-files/CCAA e informe de auditoría 2019.pdf`) y **2019-20** (58 págs., `.../2020.pdf`; la primera captura salió truncada a 1.048.576 bytes — gotcha de Wayback ya documentado en `club-sourcing` 0.1 — y se reemplazó por la captura de 2023-05-10). Carátulas verificadas. Con 2021-22 a 2024-25 → **8 ejercicios**. Huecos: 2016-17, 2017-18 y 2020-21. PDFs en `Clubes/España/Sevilla FC/`. Último chequeo: 2026-10-03.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2023-2024; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

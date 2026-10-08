@@ -26,3 +26,5 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Argeș Pitești](<../Rumania/Arges Pitesti.md>) — sin documento: sitio sin sección financiera visible, pendiente de leer — Último chequeo: 2026-10-03
 - [Unirea Slobozia](<../Rumania/Unirea Slobozia.md>) — sin documento: dominio no identificado, club en insolvencia — Último chequeo: 2026-10-03
 - [Notas generales de Rumanía](<../Rumania/_notas-generales.md>)
+- [Farul Constanța](<../Rumania/Farul Constanța.md>) — 1 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Argeș](<../Rumania/FC Argeș.md>) — 2 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08

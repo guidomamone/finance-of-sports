@@ -51,3 +51,16 @@ Agregar a `dudas-por-club.md`: preguntarle directo al club por los 4 PDF (2021/2
 confirmados como existentes mediante Wayback pero irrecuperables en esta sesión.
 
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (sección de relatório e contas / transparência) · búsqueda web (Exa) usada para descubrir las URLs · regulador/país: no hay registro único abierto (ver `paises/Portugal.md`) · barrido: 1 (Sonnet) — 2026-10-08
+
+4 documentos en carpeta (2021-2025).
+
+- Todo descubierto con Exa y bajado del sitio del club. Revisar a qué entidad corresponde cada PDF (SAD vs clube) antes de cargar.
+- Probar los patrones `relatorio-contas-2024-25.pdf` y `2020-21` (no se intentó).
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

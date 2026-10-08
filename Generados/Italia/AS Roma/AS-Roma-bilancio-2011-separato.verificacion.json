@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.md",
+ "generado": "2026-10-08T18:56:44.398Z",
+ "estado": "cola",
+ "clubId": "asroma-it",
+ "year": 2011,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "444cb7c",
+  "3e1d87e",
+  "2e95756",
+  "48b1f7d",
+  "c468524",
+  "bedb868",
+  "ee81ad9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": false,
+   "detalle": "ingresos de 2011: 128.793334 en este documento y 143.878 en AS-Roma-bilancio-2012.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2010",
+   "ok": false,
+   "detalle": "ingresos de 2010: 156.036 en AS-Roma-bilancio-2010.pdf y 136.987632 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2010: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: b29 repite el estado con columnas 'di cui con parti correlate'.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Spese per il personale\"): aceptar, en AS-Roma-bilancio-2018.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 128.793334,
+  "gastos": 159.944791,
+  "financiero": 4.172955,
+  "impuesto": -3.610635,
+  "resultadoImpreso": -30.589137,
+  "resultadoParaCargar": -30.589137,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 31.017179,
+   "pagina": 74,
+   "linea": 1904,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 6,
+   "pagina": 74,
+   "linea": 1905,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Diritti televisivi e diritti d'immagine",
+   "lado": "ingreso",
+   "M": 78.041642,
+   "pagina": 74,
+   "linea": 1906,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Altri proventi",
+   "lado": "ingreso",
+   "M": 9.281197,
+   "pagina": 74,
+   "linea": 1908,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "M": 4.453316,
+   "pagina": 74,
+   "linea": 1918,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Acquisti materie di consumo",
+   "lado": "gasto",
+   "M": 1.951003,
+   "pagina": 74,
+   "linea": 1912,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per Servizi",
+   "lado": "gasto",
+   "M": 19.127612,
+   "pagina": 74,
+   "linea": 1913,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per godimento beni di terzi",
+   "lado": "gasto",
+   "M": 6.923115,
+   "pagina": 74,
+   "linea": 1914,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il personale",
+   "lado": "gasto",
+   "M": 105.434689,
+   "pagina": 74,
+   "linea": 1915,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 2.633446,
+   "pagina": 74,
+   "linea": 1916,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 22.268603,
+   "pagina": 74,
+   "linea": 1920,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 1.606323,
+   "pagina": 74,
+   "linea": 1921,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Oneri/Proventi finanziari netti",
+   "M": 4.172955,
+   "linea": 1923
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) imposte correnti",
+   "M": -3.6,
+   "linea": 1925
+  },
+  {
+   "etiqueta": "b) imposte anticipate e differite",
+   "M": -0.010635,
+   "linea": 1926
+  }
+ ]
+}

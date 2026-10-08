@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
+ "mdSha1": "981a2ac00e9b1f40ffc5e5819a2d40c6cf453662",
+ "modo": "digital",
+ "motivoModo": "32 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 88355948 vs 88355947, 137690101 vs 134990101, 17922296 vs 17922297",
+ "generado": "2026-10-08T16:47:45.663Z",
+ "fuentes": {
+  "76": "pdftotext",
+  "134": "pdftotext",
+  "136": "pdftotext",
+  "137": "pdftotext",
+  "138": "pdftotext",
+  "139": "pdftotext",
+  "140": "pdftotext",
+  "141": "pdftotext",
+  "142": "pdftotext",
+  "143": "pdftotext",
+  "144": "pdftotext",
+  "145": "pdftotext"
+ },
+ "confirmados": 295,
+ "noConfirmados": [
+  {
+   "bloque": "b35",
+   "pagina": 76,
+   "linea": 2304,
+   "numero": "15.493",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Perdita prima delle imposte** |  | **(204.096)** | **(15.493)**  |"
+  },
+  {
+   "bloque": "b35",
+   "pagina": 76,
+   "linea": 2308,
+   "numero": "24.456",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Perdita consolidata** |  | **(204.492)** | **(24.456)**  |"
+  },
+  {
+   "bloque": "b35",
+   "pagina": 76,
+   "linea": 2316,
+   "numero": "25.148",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Perdita complessiva di Gruppo dell'esercizio** |  | **(204.075)** | **(25.148)**  |"
+  }
+ ]
+}

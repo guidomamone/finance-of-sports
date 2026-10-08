@@ -1,0 +1,53 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf",
+ "generado": "2026-10-08T19:23:29.712Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2000-06-30): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:currency",
+   "motivo": "El ejercicio 1999 es anterior a 2002: el documento puede estar en ITL (292 menciones de la moneda vieja, 35 de EUR). El sitio no tiene ninguna moneda \"legado\" cargada: ¿se carga en ITL (con su fx a USD de ese cierre) o se convierte a EUR a la paridad fija?"
+  },
+  {
+   "etapa": "moneda",
+   "motivo": "el ejercicio saldría en ITL y el club reporta en EUR"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 1 ejercicio(s) con un solo perímetro (consolidado); 10 documento(s) mirados)",
+  "los años cargados del club están en EUR y este en ITL"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2000-06-30",
+  "evidencia": {
+   "pagina": 34,
+   "texto": "|   | 30/06/2000 Euro |   | 30/06/1999 Euro  |   |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "lazio-it",
+ "year": 1999,
+ "cortadoEn": "filas"
+}

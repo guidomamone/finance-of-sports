@@ -1,0 +1,180 @@
+{
+  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md",
+  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf",
+  "club": "asroma-it",
+  "year": 2010,
+  "generatedAt": "2026-10-08T18:56:44.233Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        23.821
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Altri ricavi delle vendite e delle prestazioni",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.109
+      ],
+      "glosa": "Otros ingresos de ventas y prestaciones de servicios"
+    },
+    {
+      "label": "b) Sponsorizzazioni",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        12.499
+      ],
+      "glosa": "b) Patrocinios"
+    },
+    {
+      "label": "c) Diritti televisivi e diritti d'immagine",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        75.151
+      ],
+      "glosa": "c) Derechos televisivos y derechos de imagen"
+    },
+    {
+      "label": "d) Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.776
+      ],
+      "glosa": "d) Ingresos publicitarios"
+    },
+    {
+      "label": "e) Altri proventi",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.741
+      ],
+      "glosa": "e) Otros ingresos"
+    },
+    {
+      "label": "f) Contributi in c/esercizio",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.947
+      ],
+      "glosa": "f) Subvenciones a la explotación"
+    },
+    {
+      "label": "Gestione operativa netta calciatori",
+      "lado": "revenue",
+      "page": 194,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        18.992
+      ],
+      "glosa": "Gestión operativa neta de futbolistas"
+    },
+    {
+      "label": "Acquisti materie di consumo",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.532
+      ],
+      "glosa": "Compras de materiales de consumo"
+    },
+    {
+      "label": "Variazione delle rimanenze",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.256
+      ],
+      "glosa": "Variación de existencias"
+    },
+    {
+      "label": "Spese per Servizi",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        21.067
+      ],
+      "glosa": "Gastos por servicios"
+    },
+    {
+      "label": "Spese per godimento beni di terzi",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.107
+      ],
+      "glosa": "Gastos por uso de bienes de terceros"
+    },
+    {
+      "label": "Spese per il personale",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        101.245
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Oneri diversi di gestione",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        16.855
+      ],
+      "glosa": "Otros gastos de gestión"
+    },
+    {
+      "label": "Ammortamenti e svalutazioni",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        24.327
+      ],
+      "glosa": "Amortizaciones y deterioros"
+    },
+    {
+      "label": "Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.236
+      ],
+      "glosa": "Provisiones para riesgos"
+    },
+    {
+      "label": "Risultato (utili) di terzi",
+      "lado": "expense",
+      "page": 194,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+      "values": [
+        0.243
+      ],
+      "glosa": "Resultado (beneficios) de socios externos"
+    }
+  ]
+}

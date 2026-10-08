@@ -27,3 +27,21 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Raith Rovers](../Escocia/Raith Rovers.md) — **Scottish Championship** — 1 ejercicio útil en disco (2012/13); resto sin cuenta de resultados — parcial — Último chequeo: 2026-10-03
 
 - [Notas generales de Escocia](../Escocia/_notas-generales.md) — mismo Companies House que Inglaterra, números `SC`
+- [Dunfermline Athletic](<../Escocia/Dunfermline Athletic.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Greenock Morton](<../Escocia/Greenock Morton.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Ayr United](<../Escocia/Ayr United.md>) — 34 documentos, años 1991-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Arbroath](<../Escocia/Arbroath.md>) — 20 documentos, años 2005-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Airdrieonians](<../Escocia/Airdrieonians.md>) — 39 documentos, años 1984-1987, 1989-1990, 1992-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Cove Rangers](<../Escocia/Cove Rangers.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Queens Park](<../Escocia/Queens Park.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Alloa Athletic](<../Escocia/Alloa Athletic.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Peterhead](<../Escocia/Peterhead.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Montrose](<../Escocia/Montrose.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Elgin City](<../Escocia/Elgin City.md>) — 25 documentos, años 2000-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Forfar Athletic](<../Escocia/Forfar Athletic.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [East Fife](<../Escocia/East Fife.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Albion Rovers](<../Escocia/Albion Rovers.md>) — 32 documentos, años 1985, 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Kelty Hearts](<../Escocia/Kelty Hearts.md>) — 9 documentos, años 2018-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Stirling Albion](<../Escocia/Stirling Albion.md>) — 31 documentos, años 1994-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Edinburgh City](<../Escocia/Edinburgh City.md>) — 33 documentos, años 1981, 1994-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Cowdenbeath](<../Escocia/Cowdenbeath.md>) — 32 documentos, años 1993-2024; sin cargar aún — Último chequeo: 2026-10-08

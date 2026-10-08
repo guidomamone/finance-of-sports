@@ -31,3 +31,7 @@ transparencia de liga — ver `Clubes/Alemania/_DFL-Finanzkennzahlen/` y
 ejercicios (fiscal 2018-2024) ya descargados.
 
 - Último chequeo: 2026-09-17.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas ninguna; `wf-src-*`: 3 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

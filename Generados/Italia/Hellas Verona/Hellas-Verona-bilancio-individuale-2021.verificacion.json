@@ -1,0 +1,471 @@
+{
+ "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.pdf",
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.md",
+ "generado": "2026-10-08T18:56:45.737Z",
+ "estado": "ok",
+ "clubId": "hellasverona-it",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "99.198328 = 99.198328"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "94.728093 = 94.727345"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 65.590796; el sitio tiene 65.590796"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 99.198328 en este documento y 99.198328 en Hellas-Verona-bilancio-individuale-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 65.590796 en Hellas-Verona-bilancio-individuale-2020.pdf y 65.590796 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Ricavi da gare\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
+  "duda de localizar que no afecta la carga: El cuadro b48 detalla los impuestos corrientes y diferidos; podría cargarse como desglose del renglón 22.",
+  "duda de extraer confirmada por las sumas (columna, \"-\"): ¿Se carga el estado b5/b6 asumiendo que la primera columna de importes es '30 giugno 2021' aunque el encabezado transcripto (L217) solo muestra '30 giugno 2020'?",
+  "duda de extraer que no afecta la carga: La nota b43 no indica a qué subrenglón corresponde cada fila; la asignación es por coincidencia de sumas (1.194+8+0=1.202; 178+1.503+632=2.313; 1+4.633+109+133=4.876)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 99.198328,
+  "gastos": 94.728093,
+  "financiero": -0.577757,
+  "impuesto": -2.790442,
+  "resultadoImpreso": 1.102784,
+  "resultadoParaCargar": 1.102784,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 0.006244,
+   "pagina": 7,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 7,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 1.40173,
+   "pagina": 7,
+   "linea": 226,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Proventi da sponsorizzazioni",
+   "lado": "ingreso",
+   "M": 3.361284,
+   "pagina": 7,
+   "linea": 227,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 0.15,
+   "pagina": 7,
+   "linea": 228,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Proventi commerciali e royalties",
+   "lado": "ingreso",
+   "M": 0.907632,
+   "pagina": 7,
+   "linea": 229,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) Proventi da cessioni diritti audiovisivi",
+   "lado": "ingreso",
+   "M": 51.319316,
+   "pagina": 7,
+   "linea": 230,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "f) Ricavi da cessione temporanea prestazione calciatori",
+   "lado": "ingreso",
+   "M": 3.525,
+   "pagina": 7,
+   "linea": 231,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+   "lado": "ingreso",
+   "M": 26.509877,
+   "pagina": 7,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "g) Altri proventi da trasferimento calciatori",
+   "lado": "ingreso",
+   "M": 8.817702,
+   "pagina": 7,
+   "linea": 233,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "i) Ricavi e proventi diversi",
+   "lado": "ingreso",
+   "M": 3.199543,
+   "pagina": 7,
+   "linea": 234,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 0.711881,
+   "pagina": 7,
+   "linea": 238,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costi per tesserati",
+   "lado": "gasto",
+   "M": 2.174,
+   "pagina": 39,
+   "linea": 1334,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 1.12,
+   "pagina": 39,
+   "linea": 1335,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 4.468,
+   "pagina": 39,
+   "linea": 1336,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Costi vitto, alloggio, locomozione gare",
+   "lado": "gasto",
+   "M": 0.509,
+   "pagina": 39,
+   "linea": 1337,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Servizio stewarding, biglietteria, controllo",
+   "lado": "gasto",
+   "M": 0.008,
+   "pagina": 39,
+   "linea": 1338,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Assicurative e previdenziali",
+   "lado": "gasto",
+   "M": 0.169,
+   "pagina": 39,
+   "linea": 1339,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Amministrative, pubblicitarie e generali",
+   "lado": "gasto",
+   "M": 6.9,
+   "pagina": 39,
+   "linea": 1340,
+   "origen": "nota que desglosa \"Per servizi\""
+  },
+  {
+   "etiqueta": "Affitto campi sportivi",
+   "lado": "gasto",
+   "M": 0.06,
+   "pagina": 40,
+   "linea": 1371,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Affitto impianti sportivi",
+   "lado": "gasto",
+   "M": 0.731,
+   "pagina": 40,
+   "linea": 1372,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Costi di noleggio",
+   "lado": "gasto",
+   "M": 0.514,
+   "pagina": 40,
+   "linea": 1373,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Canoni affitto altri locali",
+   "lado": "gasto",
+   "M": 0.012,
+   "pagina": 40,
+   "linea": 1374,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Altre spese su beni di terzi",
+   "lado": "gasto",
+   "M": 0.011,
+   "pagina": 40,
+   "linea": 1375,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "Locazioni finanziarie",
+   "lado": "gasto",
+   "M": 0.019,
+   "pagina": 40,
+   "linea": 1376,
+   "origen": "nota que desglosa \"Per godimento di beni di terzi\""
+  },
+  {
+   "etiqueta": "a) Salari e stipendi",
+   "lado": "gasto",
+   "M": 48.925992,
+   "pagina": 7,
+   "linea": 242,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Oneri sociali",
+   "lado": "gasto",
+   "M": 2.344918,
+   "pagina": 7,
+   "linea": 243,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.482883,
+   "pagina": 7,
+   "linea": 244,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) altri costi",
+   "lado": "gasto",
+   "M": 3.718924,
+   "pagina": 7,
+   "linea": 245,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 6.31514,
+   "pagina": 7,
+   "linea": 248,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.338056,
+   "pagina": 7,
+   "linea": 249,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0.01417,
+   "pagina": 7,
+   "linea": 250,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Svalutazioni cred. incl. nell'attivo circolante",
+   "lado": "gasto",
+   "M": 0.771053,
+   "pagina": 7,
+   "linea": 251,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 7,
+   "linea": 253,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Altri accantonamenti",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 7,
+   "linea": 254,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spese varie organizzazione gare",
+   "lado": "gasto",
+   "M": 1.194,
+   "pagina": 42,
+   "linea": 1457,
+   "origen": "nota que desglosa \"a) Oneri da organizzazione competizioni\""
+  },
+  {
+   "etiqueta": "Tasse iscrizioni gare",
+   "lado": "gasto",
+   "M": 0.008,
+   "pagina": 42,
+   "linea": 1458,
+   "origen": "nota que desglosa \"a) Oneri da organizzazione competizioni\""
+  },
+  {
+   "etiqueta": "b) Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "gasto",
+   "M": 4.577107,
+   "pagina": 7,
+   "linea": 257,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+   "lado": "gasto",
+   "M": 1.441969,
+   "pagina": 7,
+   "linea": 258,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costi di valorizzazione calciatori",
+   "lado": "gasto",
+   "M": 0.178,
+   "pagina": 42,
+   "linea": 1462,
+   "origen": "nota que desglosa \"d) Altri oneri da trasferimento diritti calciatori\""
+  },
+  {
+   "etiqueta": "Premi di rendimento",
+   "lado": "gasto",
+   "M": 1.503,
+   "pagina": 42,
+   "linea": 1463,
+   "origen": "nota que desglosa \"d) Altri oneri da trasferimento diritti calciatori\""
+  },
+  {
+   "etiqueta": "Altri costi da gestione calciatori",
+   "lado": "gasto",
+   "M": 0.632,
+   "pagina": 42,
+   "linea": 1464,
+   "origen": "nota que desglosa \"d) Altri oneri da trasferimento diritti calciatori\""
+  },
+  {
+   "etiqueta": "- Ammende e multe gara",
+   "lado": "gasto",
+   "M": 0.001,
+   "pagina": 42,
+   "linea": 1466,
+   "origen": "nota que desglosa \"e) Altri oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- Devoluzione e Servizi Lega",
+   "lado": "gasto",
+   "M": 4.633,
+   "pagina": 42,
+   "linea": 1467,
+   "origen": "nota que desglosa \"e) Altri oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- Oneri precedenti esercizi e sopravvenienze passive",
+   "lado": "gasto",
+   "M": 0.109,
+   "pagina": 42,
+   "linea": 1468,
+   "origen": "nota que desglosa \"e) Altri oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- Altre spese",
+   "lado": "gasto",
+   "M": 0.133,
+   "pagina": 42,
+   "linea": 1469,
+   "origen": "nota que desglosa \"e) Altri oneri diversi di gestione\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "d) Proventi diversi dai precedenti",
+   "M": 0.133442,
+   "linea": 277
+  },
+  {
+   "etiqueta": "b.1) verso terzi",
+   "M": -0.711199,
+   "linea": 282
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ires/Irap dell'esercizio",
+   "M": -1.243204,
+   "linea": 293
+  },
+  {
+   "etiqueta": "b) Imposte differite",
+   "M": -4.378776,
+   "linea": 294
+  },
+  {
+   "etiqueta": "c) Imposte anticipate",
+   "M": 2.831538,
+   "linea": 295
+  }
+ ]
+}

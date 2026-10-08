@@ -1,0 +1,755 @@
+{
+ "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.pdf",
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2017-18.md",
+ "mdSha1": "e2a762efa6047c0e97db9be95bf9df482322dd22",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T16:49:23.511Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    276,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    295,
+    303
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    307,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    343,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    373,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    416,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    447,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    480,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    537,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    761,
+    769
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    793,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    813,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    860,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    907,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    921,
+    942
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    954,
+    984
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    998,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1040,
+    1069
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1209,
+    1212
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 35,
+   "lineas": [
+    1339,
+    1346
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 38,
+   "lineas": [
+    1449,
+    1459
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 40,
+   "lineas": [
+    1530,
+    1548
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 41,
+   "lineas": [
+    1565,
+    1569
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 41,
+   "lineas": [
+    1571,
+    1575
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 41,
+   "lineas": [
+    1577,
+    1581
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 41,
+   "lineas": [
+    1583,
+    1587
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 41,
+   "lineas": [
+    1589,
+    1594
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 41,
+   "lineas": [
+    1596,
+    1601
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 42,
+   "lineas": [
+    1615,
+    1618
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 42,
+   "lineas": [
+    1620,
+    1624
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 42,
+   "lineas": [
+    1634,
+    1636
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 43,
+   "lineas": [
+    1648,
+    1665
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 44,
+   "lineas": [
+    1689,
+    1692
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 45,
+   "lineas": [
+    1734,
+    1742
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 45,
+   "lineas": [
+    1756,
+    1759
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 46,
+   "lineas": [
+    1771,
+    1772
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 46,
+   "lineas": [
+    1774,
+    1779
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 46,
+   "lineas": [
+    1781,
+    1785
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 46,
+   "lineas": [
+    1787,
+    1790
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 46,
+   "lineas": [
+    1806,
+    1810
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 47,
+   "lineas": [
+    1828,
+    1832
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 47,
+   "lineas": [
+    1856,
+    1860
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 48,
+   "lineas": [
+    1872,
+    1877
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 48,
+   "lineas": [
+    1883,
+    1888
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 48,
+   "lineas": [
+    1894,
+    1901
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 49,
+   "lineas": [
+    1913,
+    1916
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 49,
+   "lineas": [
+    1926,
+    1929
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 49,
+   "lineas": [
+    1935,
+    1939
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 50,
+   "lineas": [
+    1968,
+    1971
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 51,
+   "lineas": [
+    1993,
+    2002
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 51,
+   "lineas": [
+    2008,
+    2011
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 51,
+   "lineas": [
+    2019,
+    2023
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 52,
+   "lineas": [
+    2040,
+    2044
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 52,
+   "lineas": [
+    2057,
+    2061
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 52,
+   "lineas": [
+    2074,
+    2077
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 53,
+   "lineas": [
+    2088,
+    2095
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 53,
+   "lineas": [
+    2115,
+    2120
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 53,
+   "lineas": [
+    2130,
+    2132
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 54,
+   "lineas": [
+    2144,
+    2152
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 54,
+   "lineas": [
+    2164,
+    2168
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 54,
+   "lineas": [
+    2172,
+    2177
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 56,
+   "lineas": [
+    2252,
+    2254
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 56,
+   "lineas": [
+    2264,
+    2276
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 57,
+   "lineas": [
+    2298,
+    2302
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 58,
+   "lineas": [
+    2348,
+    2356
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 59,
+   "lineas": [
+    2409,
+    2414
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 59,
+   "lineas": [
+    2420,
+    2428
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 59,
+   "lineas": [
+    2432,
+    2436
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 60,
+   "lineas": [
+    2447,
+    2452
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 60,
+   "lineas": [
+    2460,
+    2467
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 60,
+   "lineas": [
+    2471,
+    2477
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 61,
+   "lineas": [
+    2515,
+    2533
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 61,
+   "lineas": [
+    2537,
+    2538
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 62,
+   "lineas": [
+    2550,
+    2556
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 62,
+   "lineas": [
+    2560,
+    2566
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 62,
+   "lineas": [
+    2582,
+    2586
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 63,
+   "lineas": [
+    2604,
+    2612
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 64,
+   "lineas": [
+    2646,
+    2653
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 64,
+   "lineas": [
+    2671,
+    2673
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 65,
+   "lineas": [
+    2687,
+    2689
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 65,
+   "lineas": [
+    2695,
+    2697
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 65,
+   "lineas": [
+    2703,
+    2705
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 66,
+   "lineas": [
+    2731,
+    2740
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 67,
+   "lineas": [
+    2774,
+    2782
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 71,
+   "lineas": [
+    2906,
+    2911
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 72,
+   "lineas": [
+    2915,
+    2922
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 72,
+   "lineas": [
+    2926,
+    2934
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 74,
+   "lineas": [
+    2962,
+    3063
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b15",
+  "b16"
+ ],
+ "notas_ingresos": [
+  "b62",
+  "b63"
+ ],
+ "notas_gastos": [
+  "b65",
+  "b66",
+  "b67",
+  "b70",
+  "b71",
+  "b72",
+  "b76",
+  "b77",
+  "b78"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas indican 'Valori in €' con importes en euros completos (ej. costi per il personale Euro 49.689.829); el conto economico consolidato es en euros.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2018",
+ "columna_anterior": "30/06/2017",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de riclassificazione de la Relazione sulla gestione (b8) y el detalle de gestione calciatori (b9), usando solo el Conto Economico Consolidato b15-b16?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b8 y b9 reclasifican los mismos importes del conto economico con otra agrupación; b9 podría abrir plusvalenze/altri proventi calciatori que no están en otras notas.",
+   "bloques": [
+    "b8",
+    "b9"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de bilancio consolidato al 30/06/2018. Estado: Conto Economico Consolidato b15 (pág. 26) continúa en b16 (pág. 27). b87 es un resumen sintético del conto economico (relazione del collegio), no se usa. Excluidos detalles por jugador (b64, b74, b75, b84) y tablas de transacciones."
+}

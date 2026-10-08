@@ -20,35 +20,33 @@ BILANCIO CONSOLIDATO AL 30 GIUGNO 2018
 
 --- pág. 2 ---
 
-![img-0.jpeg](img-0.jpeg)
+pwc
 
-# Relazione della società di revisione indipendente
-
-ai sensi dell'articolo 14 del DLgs 27 gennaio 2010, n° 39
+*Relazione della società di revisione indipendente*
+*ai sensi dell'articolo 14 del DLgs 27 gennaio 2010, n° 39*
 
 Agli Azionisti di
-
 Bologna Football Club 1909 SpA
 
-# Relazione sulla revisione contabile del bilancio consolidato
+**Relazione sulla revisione contabile del bilancio consolidato**
 
-# Giudizio
+**Giudizio**
 
 Abbiamo svolto la revisione contabile del bilancio consolidato del gruppo Bologna Football Club 1909 SpA (di seguito anche il "Gruppo"), costituito dallo stato patrimoniale al 30 giugno 2018, dal conto economico, dal rendiconto finanziario per l'esercizio chiuso a tale data e dalla nota integrativa.
 
 A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria del Gruppo al 30 giugno 2018, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+**Elementi alla base del giudizio**
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio consolidato della presente relazione. Siamo indipendenti rispetto alla società Bologna Football Club 1909 SpA (la Società) in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio consolidato della presente relazione. Siamo indipendenti rispetto alla società Bologna Football Club 1909 SpA (la Società) in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti e appropriati su cui basare il nostro giudizio.
 
-# Responsabilità degli amministratori e del collegio sindacale per il bilancio consolidato
+**Responsabilità degli amministratori e del collegio sindacale per il bilancio consolidato**
 
 Gli amministratori sono responsabili per la redazione del bilancio consolidato che fornisca una rappresentazione veritiera e corretta in conformità alle norme italiane che ne disciplinano i criteri di redazione e, nei termini previsti dalla legge, per quella parte del controllo interno dagli stessi ritenuta necessaria per consentire la redazione di un bilancio che non contenga errori significativi dovuti a frodi o a comportamenti o eventi non intenzionali.
 
-# PricewaterhouseCoopers SpA
+*PricewaterhouseCoopers SpA*
 
-Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. Euro 6.890.000,00 i.v., C.F. e P.IVA e Reg. Imp. Milano 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 0712132311 - Bari 70122 Via Abate Gianna 72 Tel. 0805640211 - Bologna 40126 Via Angelo Finelli 8 Tel. 0516186211 - Brescia 25123 Via Borgo Pietro Wuhner 23 Tel. 0503697501 - Catania 95129 Corso Italia 302 Tel. 0957532311 - Firenze 50121 Viale Gramsci 15 Tel. 0552482811 - Genova 16121 Piazza Piccapietra 9 Tel. 01029041 - Napoli 80121 Via dei Mille 16 Tel. 08136181 - Padova 35138 Via Vicenza 4 Tel. 049873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091349737 - Parma 43121 Viale Tanara 20/A Tel. 0521275911 - Pescara 65127 Piazza Ettore Troilo 8 Tel. 0854545711 - Roma 00154 Largo Fechetti 29 Tel. 06570251 - Torino 10122 Corso Palestro 10 Tel. 011556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461237004 - Treviso 31100 Viale Feliment 90 Tel. 0422696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 0403480781 - Udine 33100 Via Pascolle 43 Tel. 043225789 - Varese 21100 Via Alluzzi 43 Tel. 0332285039 - Verona 37135 Via Francia 21/C Tel. 0458263001 - Vicenza 36100 Piazza Pontelambillo 9 Tel. 0444393311
+Sede legale e amministrativa: Milano 20149 Via Monte Rosa 91 Tel. 0277851 Fax 027785240 Cap. Soc. Euro 6.890.000,00 i.v., C.F. e P.IVA e Reg. Imp. Milano 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 0712132311 - Bari 70122 Via Abate Gimma 72 Tel. 0805640211 - Bologna 40126 Via Angelo Finelli 8 Tel. 0516186211 - Brescia 25123 Via Borgo Pietro Wuhrer 23 Tel. 0303697501 - Catania 95129 Corso Italia 302 Tel. 0957532311 - Firenze 50121 Viale Gramsci 15 Tel. 0552482811 - Genova 16121 Piazza Piccapietra 9 Tel. 01029041 - Napoli 80121 Via dei Mille 16 Tel. 08136181 - Padova 35138 Via Vicenza 4 Tel. 049873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091349737 - Parma 43121 Viale Tanara 20/A Tel. 0521275911 - Pescara 65127 Piazza Ettore Troilo 8 Tel. 0854545711 - Roma 00154 Largo Fochetti 29 Tel. 06570251 - Torino 10122 Corso Palestro 10 Tel. 011556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461237004 - Treviso 31100 Viale Felissent 90 Tel. 0422696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 0403480781 - Udine 33100 Via Poscolle 43 Tel. 043225789 - Varese 21100 Via Albuzzi 43 Tel. 0332285039 - Verona 37135 Via Francia 21/C Tel. 0458263001 - Vicenza 36100 Piazza Pontelandolfo 9 Tel. 0444393311
 
 www.pwc.com/it
 
@@ -630,21 +628,45 @@ In data 18 luglio 2017 la Capogruppo ha vincolato un importo di Euro 2.135.000 a
 
 Per maggiori dettagli si rinvia al Bilancio d'esercizio della Società.
 
-# BFC Real Estate Srl
+
+**BFC Real Estate Srl**
 
 La società è stata costituita in data 14 aprile 2016 ed è stata iscritta il 18 aprile 2016 nel Registro delle Imprese. Il 28 novembre 2017 BFC Real Estate Srl ha acquistato a valore nominale da Seci Real Estate SpA per Euro 5.000 il 50% della società Bologna Sport City Srl. In data 29 dicembre 2017 ha effettuato un versamento in c/capitale di Euro 10.000 ed in data 16 maggio 2018 ha effettuato un versamento in c/capitale di Euro 60.000 a favore di Bologna Sport City Srl.
 
-# RAPPORTI CON IMPRESE CONTROLLATE, COLLEGATE, CONTROLLANTI E SOTTOPOSTE DA QUESTE ULTIME A CONTROLLO
+
+*RAPPORTI CON IMPRESE CONTROLLATE, COLLEGATE, CONTROLLANTI E SOTTOPOSTE DA QUESTE ULTIME A CONTROLLO*
 
 La situazione attuale del Gruppo è la seguente:
 
-![img-1.jpeg](img-1.jpeg)
+```
+┌───────────────────────┐           ┌───────────────────────┐
+│ BFC 1909 LUX SPV      │           │ Associazioni          │
+│ S.A.                  │           │ Rossoblu              │
+└───────────┬───────────┘           └───────────┬───────────┘
+            │                                   │
+            │ 99,9%                             │ 0,1%
+            │       ┌───────────────────┐       │
+            └──────>│ Bologna F.C.      │<──────┘
+                    │ 1909 SpA          │
+                    └─────────┬─────────┘
+  Perimetro del Gruppo        │ 100%
+                    ┌─────────▼─────────┐
+                    │ BFC Real          │
+                    │ Estate Srl        │
+                    └─────────┬─────────┘
+                              │
+                              │ 50%
+                    ┌─────────▼─────────┐
+                    │ Bologna           │
+                    │ Sport City Srl    │
+                    └───────────────────┘
+```
 
 Le operazioni effettuate con parti correlate sono avvenute alle normali condizioni di mercato.
 
-Bilancio consolidato al 30 giugno 2018 - Relazione sulla gestione
+---
 
-Pag.13
+Bilancio consolidato al 30 giugno 2018 - Relazione sulla gestione | Pag. 13
 
 --- pág. 20 ---
 
@@ -1461,22 +1483,21 @@ Bilancio XBRL
 --- pág. 39 ---
 
 BOLOGNA F.C. 1909 S.P.A.
+Bilancio al 30/06/2018
 
-Bilancio al 30/06/2016
-
-# Altre immobilizzazioni materiali
+### Altre immobilizzazioni materiali
 
 La voce è composta da mobili e arredi, macchine ordinarie di ufficio, impianti di telecomunicazione, macchine ufficio elettroniche, coppe e trofei, e beni di valore unitario inferiore a 516,46 Euro.
 
-# Immobilizzazioni in corso e acconti
+### Immobilizzazioni in corso e acconti
 
 L'ammontare di Euro 1.114.133 si riferisce ad i costi relativi alla ristrutturazione del Centro Sportivo 'Niccolò Galli' non ancora terminati.
 
-# Immobilizzazioni finanziarie
+### Immobilizzazioni finanziarie
 
 Tutte le partecipazioni iscritte in Bilancio (non rientranti nel perimetro di consolidamento) sono state valutate con il metodo del costo, dove per costo s'intende l'onere sostenuto per l'acquisto, indipendentemente dalle modalità di pagamento, comprensivo degli eventuali oneri accessori (commissioni e spese bancarie, bolli, intermediazione bancaria, ecc.).
 
-# Crediti
+#### Crediti
 
 I crediti iscritti tra le immobilizzazioni finanziarie sono stati rilevati in Bilancio secondo il criterio del costo ammortizzato, come definito dall'art.2426 c.2 C.C., tenendo conto del fattore temporale e del valore di presumibile realizzo, conformemente a quanto previsto dall'art. 2426, comma 1, n. 8 del Codice Civile.
 
@@ -1484,49 +1505,47 @@ Per i crediti per i quali sia stata verificata l'irrilevanza dell'applicazione d
 
 Peraltro si specifica che, in base alle disposizioni dell'articolo 12 comma 2 del D. Lgs. 139/2015, il Gruppo ha valutato con il criterio del costo ammortizzato esclusivamente i crediti iscritti tra le immobilizzazioni finanziarie sorti nel presente esercizio.
 
-# Altri titoli
+#### Altri titoli
 
 Peraltro si specifica che, in base alle disposizioni dell'articolo 12 comma 2 del D. Lgs. 139/2015, il Gruppo ha applicato il criterio del costo ammortizzato esclusivamente ai titoli iscritti in bilancio nel presente esercizio. Gli altri titoli sono stati valutati a costi specifici.
 
 Si evidenzia che sui titoli non è stato necessario operare svalutazioni ex art. 2426 comma 1 n. 3 del Codice Civile in quanto, come previsto dal principio contabile OIC 9, non sono stati riscontrati indicatori di potenziali perdite di valore.
 
-# Immobilizzazioni immateriali
+### Immobilizzazioni immateriali
 
-# Movimenti delle immobilizzazioni immateriali
+#### Movimenti delle immobilizzazioni immateriali
 
 Dopo l'iscrizione in Conto Economico delle quote di ammortamento dell'esercizio, pari ad Euro 18.191.841 e delle svalutazioni pari ad Euro 639.601 le immobilizzazioni immateriali ammontano ad Euro 63.390.931.
 
 Nella seguente tabella sono esposte le movimentazioni delle immobilizzazioni in oggetto.
 
 Bilancio XBRL
-
 31
 
 --- pág. 40 ---
 
-BOLOGNA F.C. 1909 S.P.A.
+BOLOGNA F.C. 1909 S.P.A.  
+Bilancio al 30/06/2018
 
-Bilancio al 30/06/2016
-
-|   | Costi di impianto e ampliamento | Concessioni, licenze, marchi e diritti simili diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno | Immobilizzazioni immateriali in corso e acconti | Altre immobilizzazioni immateriali | Totale immobilizzazioni immateriali  |
-| --- | --- | --- | --- | --- | --- |
-|  **Valore di inizio esercizio**  |   |   |   |   |   |
-|  Costo |  | 18.886.552 | 483.600 | 107.480.702 | 126.850.854  |
-|  Ammortamenti (Fondo ammortamento) |  | 14.042.955 | - | 59.775.679 | 73.818.634  |
-|  Svalutazioni | - | - | - | 1.234.965 | 1.234.965  |
-|  Valore di bilancio | - | 4.843.597 | 483.600 | 46.470.058 | 51.797.255  |
-|  **Variazioni nell'esercizio**  |   |   |   |   |   |
-|  Incrementi per acquisizioni | - | 29.813 | 363.268 | 32.494.095 | 32.887.176  |
-|  Riclassifiche (del valore di bilancio) | - | - | - | - | -  |
-|  Decrementi per alienazioni e dismissioni (del valore di bilancio) | - | - | - | 2.464.560 | 2.464.560  |
-|  Ammortamento dell'esercizio | - | 237.132 | - | 17.954.709 | 18.191.841  |
-|  Svalutazioni effettuate nell'esercizio | - | - | - | 639.601 | 639.601  |
-|  *Totale variazioni* | - | (207.319) | 363.268 | 11.435.225 | 11.591.174  |
-|  **Valore di fine esercizio**  |   |   |   |   |   |
-|  Costo |  | 18.916.365 | 846.868 | 137.512.739 | 157.293.972  |
-|  Ammortamenti (Fondo ammortamento) |  | 14.280.087 | - | 77.730.388 | 92.028.475  |
-|  Svalutazioni | - | - | - | 1.874.566 | 1.874.566  |
-|  Valore di bilancio | - | 4.636.278 | 846.868 | 57.907.784 | 63.390.931  |
+| | Costi di impianto e ampliamento | Concessioni, licenze, marchi e diritti simili diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno | Immobilizzazioni immateriali in corso e acconti | Altre immobilizzazioni immateriali | Totale immobilizzazioni immateriali |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Valore di inizio esercizio** | | | | | |
+| Costo | - | 18.886.552 | 483.600 | 107.480.702 | 126.850.854 |
+| Ammortamenti (Fondo ammortamento) | - | 14.042.955 | - | 59.775.679 | 73.818.634 |
+| Svalutazioni | - | - | - | 1.234.965 | 1.234.965 |
+| Valore di bilancio | - | 4.843.597 | 483.600 | 46.470.058 | 51.797.255 |
+| **Variazioni nell'esercizio** | | | | | |
+| Incrementi per acquisizioni | - | 29.813 | 363.268 | 32.494.095 | 32.887.176 |
+| Riclassifiche (del valore di bilancio) | - | - | - | - | - |
+| Decrementi per alienazioni e dismissioni (del valore di bilancio) | - | - | - | 2.464.560 | 2.464.560 |
+| Ammortamento dell'esercizio | - | 237.132 | - | 17.954.709 | 18.191.841 |
+| Svalutazioni effettuate nell'esercizio | - | - | - | 639.601 | 639.601 |
+| Totale variazioni | - | (207.319) | 363.268 | 11.435.225 | 11.591.174 |
+| **Valore di fine esercizio** | | | | | |
+| Costo | - | 18.916.365 | 846.868 | 137.512.739 | 157.293.972 |
+| Ammortamenti (Fondo ammortamento) | - | 14.280.087 | - | 77.730.388 | 92.028.475 |
+| Svalutazioni | - | - | - | 1.874.566 | 1.874.566 |
+| Valore di bilancio | - | 4.636.278 | 846.868 | 57.907.784 | 63.390.931 |
 
 Con particolare riferimento alle movimentazioni dei diritti alle prestazioni dei calciatori, intervenute nell'esercizio, viene analiticamente riportato nella tabella allegata in calce alla presente Nota Integrativa, il valore di ogni singolo calciatore che abbia fatto parte della rosa della prima squadra.
 
@@ -1534,8 +1553,7 @@ Relativamente al dettaglio delle svalutazioni dei diritti dei calciatori si rima
 
 Nei prospetti di seguito riportati sono indicate le transazioni registrate con altre società relativamente al trasferimento dei diritti:
 
-Bilancio XBRL
-
+Bilancio XBRL  
 32
 
 --- pág. 41 ---
@@ -1658,54 +1676,45 @@ Bilancio XBRL
 
 --- pág. 44 ---
 
-BOLOGNA F.C. 1900 S.P.A.
-
+BOLOGNA F.C. 1909 S.P.A.  
 Bilancio al 30/06/2018
 
-Immobilizzazioni finanziarie
+### Immobilizzazioni finanziarie
 
-Movimenti di partecipazioni, altri titoli e strumenti finanziari derivati attivi immobilizzati
+#### Movimenti di partecipazioni, altri titoli e strumenti finanziari derivati attivi immobilizzati
 
-# Variazioni e scadenza dei crediti immobilizzati
-
+#### Variazioni e scadenza dei crediti immobilizzati
 Nella seguente tabella vengono esposte le movimentazioni delle immobilizzazioni in oggetto.
 
-|   | Valore di inizio esercizio | Variazioni nell'esercizio | Valore di fine esercizio | Quota scadente oltre l'esercizio  |
-| --- | --- | --- | --- | --- |
-|  Crediti verso altri | 31.014 | 2.210.152 | 2.241.166 | 2.241.166  |
-|  Totale | 31.014 | 2.210.152 | 2.241.166 | 2.241.166  |
+| | Valore di inizio esercizio | Variazioni nell'esercizio | Valore di fine esercizio | Quota scadente oltre l'esercizio |
+| :--- | :--- | :--- | :--- | :--- |
+| Crediti verso altri | 31.014 | 2.210.152 | 2.241.166 | 2.241.166 |
+| Totale | 31.014 | 2.210.152 | 2.241.166 | 2.241.166 |
 
-# Altri Crediti Immobilizzati
-
+#### Altri Crediti Immobilizzati
 La voce comprende:
-
-deposito c/vincolato a favore Bologna Sport City Srl a garanzia di fideiussione Euro 2.135.024;
+- deposito c/vincolato a favore Bologna Sport City Srl a garanzia di fideiussione Euro 2.135.024;
 - depositi cauzionali affitti, per un importo di Euro 19.411;
-partecipazioni in in imprese collegate per un importo di Euro 76.619;
+- partecipazioni in in imprese collegate per un importo di Euro 76.619;
 - depositi a terzi, per un importo di Euro 10.112.
 
-# Altri titoli
-
+#### Altri titoli
 La voce riguarda titoli azionari Emilbanca, per un ammontare pari ad Euro 516.
 
-# Valore delle immobilizzazioni finanziarie
-
+#### Valore delle immobilizzazioni finanziarie
 Le immobilizzazioni finanziarie presenti in bilancio non sono state iscritte ad un valore superiore al loro "fair value".
 
-# Attivo circolante
-
+### Attivo circolante
 Gli elementi dell'attivo circolante sono valutati secondo quanto previsto dai numeri da 8 a 11-bis dell'articolo 2426 del Codice Civile. I criteri utilizzati sono indicati nei paragrafi delle rispettive voci di bilancio.
 
-# Crediti iscritti nell'attivo circolante
-
+#### Crediti iscritti nell'attivo circolante
 I crediti iscritti nell'attivo circolante sono stati rilevati in Bilancio secondo il criterio del costo ammortizzato, come definito dall'art.2426 c.2 C.C., tenendo conto del fattore temporale e del valore di presumibile di realizzo, conformemente a quanto previsto dall'art. 2426, comma 1, n. 8 del Codice Civile.
 
 L'adeguamento a tale valore è stato effettuato mediante stanziamento di un fondo svalutazione crediti dell'ammontare di euro 124.982, iscritto nei crediti verso clienti, che ora ammonta ad Euro 772.995: Resta iscritto un fondo di Euro 1.232.353 tra i crediti verso altri.
 
 Per i crediti per i quali sia stata verificata l'irrilevanza dell'applicazione del metodo del costo ammortizzato e/o dell'attualizzazione ai fini dell'esigenza di dare una rappresentazione veritiera e corretta della situazione patrimoniale ed
 
-Bilancio XBRL
-
+Bilancio XBRL  
 36
 
 --- pág. 45 ---
@@ -2021,57 +2030,53 @@ Bilancio XBRL
 
 --- pág. 52 ---
 
-BOLOGNA F.C. 1908 S.P.A.
-
+BOLOGNA F.C. 1909 S.P.A.  
 Bilancio al 30/06/2018
 
-# Dettaglio dei debiti verso fornitori
+### Dettaglio dei debiti verso fornitori
 
 Di seguito è riportato il dettaglio dei debiti verso fornitori suddiviso tra quota a breve ed a lungo termine.
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Debiti esigibili entro l'esercizio | 10.936.018 | 864.725 | 11.800.743  |
-|  Debiti esigibili oltre l'esercizio successivo | 2.098.021 | 575.292 | 2.673.313  |
-|  Debiti verso fornitori | 13.034.039 | 1.440.017 | 14.474.056  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :---: | :---: | :---: |
+| Debiti esigibili entro l'esercizio | 10.936.018 | 864.725 | 11.800.743 |
+| Debiti esigibili oltre l'esercizio successivo | 2.098.021 | 575.292 | 2.673.313 |
+| **Debiti verso fornitori** | **13.034.039** | **1.440.017** | **14.474.056** |
 
 Il saldo al 30 giugno 2018 dei debiti verso fornitori esigibili entro l'esercizio successivo è composto principalmente da:
-
 - debiti verso procuratori per Euro 5.897 mila (Euro 7.234 mila al 30/06/17);
 - debiti verso fornitori nazionali per Euro 3.114 mila (Euro 3.596 mila al 30/06/17);
 - debiti per fatture da ricevere per Euro 2.627 mila (Euro 2.114 mila al 30/06/17).
 
 I debiti verso fornitori esigibili oltre l'esercizio successivo sono relativi a debiti verso procuratori ed al piano di pagamento del debito verso il Comune di Bologna per le rate scadute degli anni precedenti sull'affitto dello Stadio Dall'Ara.
 
-# Dettaglio dei debiti tributari
+### Dettaglio dei debiti tributari
 
 Di seguito è riportato il dettaglio dei debiti tributari suddiviso tra quota a breve e a lungo termine:
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Debiti esigibili entro l'esercizio | 5.299.387 | 808.415 | 6.107.802  |
-|  Debiti esigibili oltre l'esercizio successivo | 1.429.563 | (720.643) | 708.920  |
-|  Debiti tributari | 6.728.950 | 87.772 | 6.816.722  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :---: | :---: | :---: |
+| Debiti esigibili entro l'esercizio | 5.299.387 | 808.415 | 6.107.802 |
+| Debiti esigibili oltre l'esercizio successivo | 1.429.563 | (720.643) | 708.920 |
+| **Debiti tributari** | **6.728.950** | **87.772** | **6.816.722** |
 
 Il saldo al 30 giugno 2018 dei debiti tributari esigibili entro l'esercizio successivo è composto principalmente da:
-
-- debiti IRPEF, relativiagli stipendi e premi dei lavoratori dipendenti, degli sportivi e dei collaboratori di competenza dell'esercizio, per Euro 4.790 mila (Euro 4.084 mila al 30/06/17);
-- debiti IRAP relativiagli esercizi 2011/12,2012/13e 2013/14 per Euro 721 mila (Euro 582 mila al 30/06/17);
+- debiti IRPEF, relativi agli stipendi e premi dei lavoratori dipendenti, degli sportivi e dei collaboratori di competenza dell'esercizio, per Euro 4.790 mila (Euro 4.084 mila al 30/06/17);
+- debiti IRAP relativi agli esercizi 2011/12, 2012/13 e 2013/14 per Euro 721 mila (Euro 582 mila al 30/06/17);
 - debito IRAP per l'esercizio corrente per Euro 1.569 mila.
 
 I debiti tributari esigibili oltre l'esercizio successivo sono relativi all'IRAP 2012/13 e 2013/14 per i quali è stato ottenuto il pagamento rateizzato.
 
-# Dettaglio degli Altri debiti
+### Dettaglio degli Altri debiti
 
-Di seguito è riportato il dettaglio degli Altri debiti suddiviso tra debiti verso dipendenti e debiti verso entro ente settore specifico, suddiviso ulteriormente tra quota a breve e a lungo termine.
+Di seguito è riportato il dettaglio degli Altri debiti suddiviso tra debiti verso dipendenti e debiti verso altro ente settore specifico, suddiviso ulteriormente tra quota a breve e a lungo termine.
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Debiti verso Personale esigibili entro l'esercizio | 5.848.125 | 1.095.259 | 6.943.384  |
-|  Debiti verso Personale oltre l'esercizio successivo | - | 611.718 | 611.718  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :---: | :---: | :---: |
+| Debiti verso Personale esigibili entro l'esercizio | 5.848.125 | 1.095.259 | 6.943.384 |
+| Debiti verso Personale oltre l'esercizio successivo | - | 611.718 | 611.718 |
 
-Bilancio XBRL
-
+Bilancio XBRL  
 44
 
 --- pág. 53 ---
@@ -2392,50 +2397,45 @@ Bilancio XBRL
 
 --- pág. 59 ---
 
-BOLOGNA F.C. 1906 S.P.A.
-
+BOLOGNA F.C. 1909 S.P.A  
 Bilancio al 30/06/2018
 
-- Canoni diversi
+- Canoni diversi Euro 119.822.
 
-Euro 119.822.
-
-# Costi per il personale
+### Costi per il personale
 
 Il saldo di bilancio al 30 giugno 2018, pari ad Euro 49.689.829, si è incrementato di Euro 3.543.121 rispetto al dato del precedente esercizio, pari ad Euro 46.146.708. Nella voce Salari e Stipendi per Tesserati sono allocati gli importi degli incentivi al trasferimento riconosciuti a giocatori trasferiti dopo il 30.06.2018 ai fini di una migliore imputazione relativa ai criteri previsti da OIC.
 
-|  € | Esercizio in corso |   |   | Esercizio precedente  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   | Tesserati | Altri dip. | Totale | Tesserati | Altri dip. | Totale  |
-|  Salari e stipendi | 44.327.488 | 2.139.482 | 46.466.970 | 41.137.218 | 1.954.010 | 43.091.228  |
-|  Oneri sociali | 2.238.348 | 368.398 | 2.606.746 | 2.124.160 | 323.173 | 2.447.333  |
-|  TFR/FFC | 488.875 | 127.238 | 616.113 | 485.663 | 122.484 | 608.147  |
-|  Totale | 47.054.711 | 2.635.118 | 49.689.829 | 43.747.041 | 2.399.667 | 46.146.708  |
+| € | Esercizio in corso: Tesserati | Esercizio in corso: Altri dip. | Esercizio in corso: Totale | Esercizio precedente: Tesserati | Esercizio precedente: Altri dip. | Esercizio precedente: Totale |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Salari e stipendi | 44.327.488 | 2.139.482 | 46.466.970 | 41.137.218 | 1.954.010 | 43.091.228 |
+| Oneri sociali | 2.238.348 | 368.398 | 2.606.746 | 2.124.160 | 323.173 | 2.447.333 |
+| TFR/FFC | 488.875 | 127.238 | 616.113 | 485.663 | 122.484 | 608.147 |
+| **Totale** | **47.054.711** | **2.635.118** | **49.689.829** | **43.747.041** | **2.399.667** | **46.146.708** |
 
 All'interno del costo complessivo è ricompreso anche il costo di Personale a progetto, che svolge l'attività di istruttore della scuola calcio e che per contiguità con le attività svolte da Personale dipendente sono riclassificate in questa voce, tutto ciò anche per omogeneità con quanto effettuato negli anni passati. Nella voce Salari e Stipendi per Tesserati è compreso l'ammontare di Euro 2.854.692 relativo ad incentivo al trasferimento concesso ad un giocatore trasferito ad altra società, il cui importo è stato rifatturato per pari ammontare alla controllante della società acquirente, in quanto parte correlata.
 
 Il costo del personale tesserato relativo ai calciatori della prima squadra è così suddiviso:
 
-|  Valori in € | Esercizio in corso | Esercizio precedente | Variazione  |
-| --- | --- | --- | --- |
-|  Compensi contrattuali calciatori | 26.507.386 | 25.058.081 | 1.449.305  |
-|  Quota variabile retribuzione legata ai risultati sportivi | 3.831.490 | 4.957.656 | (1.126.166)  |
-|  Compensi contrattuali allenatori | 3.375.847 | 3.342.045 | 33.802  |
-|  Indennizzi | 5.661.461 | 3.992.074 | 1.669.387  |
-|  Compensi contrattuali istruttori, tecnici e altri | 3.379.196 | 3.406.793 | (27.597)  |
-|  Incentivi all'esodo | 1.572.108 | 380.569 | 1.191.539  |
-|  Totale | 44.327.488 | 41.137.218 | 3.190.270  |
+| Valori in € | Esercizio in corso | Esercizio precedente | Variazione |
+| :--- | :--- | :--- | :--- |
+| Compensi contrattuali calciatori | 26.507.386 | 25.058.081 | 1.449.305 |
+| Quota variabile retribuzione legata ai risultati sportivi | 3.831.490 | 4.957.656 | (1.126.166) |
+| Compensi contrattuali allenatori | 3.375.847 | 3.342.045 | 33.802 |
+| Indennizzi | 5.661.461 | 3.992.074 | 1.669.387 |
+| Compensi contrattuali istruttori, tecnici e altri | 3.379.196 | 3.406.793 | (27.597) |
+| Incentivi all'esodo | 1.572.108 | 380.569 | 1.191.539 |
+| **Totale** | **44.327.488** | **41.137.218** | **3.190.270** |
 
 Il personale mediamente in forza nell'esercizio è stato il seguente:
 
-|   | Esercizio in corso | Esercizio precedente | Variazione  |
-| --- | --- | --- | --- |
-|  Calciatori | 39 | 37 | 2  |
-|  Addestramento tecnico | 2 | 3 | (1)  |
-|  Allenatori | 10 | 7 | 3  |
+| | Esercizio in corso | Esercizio precedente | Variazione |
+| :--- | :--- | :--- | :--- |
+| Calciatori | 39 | 37 | 2 |
+| Addestramento tecnico | 2 | 3 | (1) |
+| Allenatori | 10 | 7 | 3 |
 
-Bilancio XBRL
-
+Bilancio XBRL  
 51
 
 --- pág. 60 ---
@@ -2637,46 +2637,42 @@ Bilancio XBRL
 
 --- pág. 64 ---
 
-BOLOGNA F.C. 1909 S.P.A.
+BOLOGNA F.C. 1909 S.P.A. — Bilancio al 30/06/2018
 
-Bilancio al 30/06/2016
-
-# Imposte differite e anticipate
+Imposte differite e anticipate
 
 Nel conto economico non è stato effettuato alcuno stanziamento per le imposte anticipate, in quanto non vi è la ragionevole certezza di poterle recuperare in base alle previsioni disponibili. Peraltro si segnala che l'ammontare nominale sulle sole perdite fiscali accumulate ammonterebbe a circa 18 milioni di Euro.
 
-|  Valori in € | Esercizio in corso | Esercizio precedente | Variazione  |
-| --- | --- | --- | --- |
-|  IRAP corrente | 1.824.249 | 1.240.329 | 590.477  |
-|  IRAP differita | -- | (46.594) | 46.594  |
-|  Imposte esercizi precedenti | 2.011 | -- | 2.011  |
-|  IRES corrente | -- | -- | --  |
-|  Sopravv. attiva/passiva credito imposta IRAP | (239.767) | (60.760) | (179.007)  |
-|  Totale | 1.598.561 | 1.132.925 | 465.636  |
+| Valori in € | Esercizio in corso | Esercizio precedente | Variazione |
+|---|---|---|---|
+| IRAP corrente | 1.824.249 | 1.240.329 | 590.477 |
+| IRAP differita | -- | (46.594) | 46.594 |
+| Imposte esercizi precedenti | 2.011 | -- | 2.011 |
+| IRES corrente | -- | -- | -- |
+| Sopravv. attiva/passiva credito imposta IRAP | (239.767) | (60.760) | (179.007) |
+| **Totale** | 1.598.561 | 1.132.925 | 465.636 |
 
 In particolare, per quanto riguarda la stima dell'IRAP, è stata elaborata conformemente al principio contabile nazionale n. 30, tenendo conto anche dell'aliquota effettiva d'imposta al termine dell'esercizio corrente.
 
-# Nota Integrativa, Rendiconto Finanziario
+**Nota Integrativa, Rendiconto Finanziario**
 
-La società ha predisposto il rendiconto finanziario che rappresenta il documento di sintesi che raccorda le variazioni intervenute nel corso dell'esercizio nel patrimonio aziendale con le variazioni nella situazione finanziaria; esso pone in evidenza i valori relativi alle risorse finanziarie di cui l'impresa ha avuto necessità nel corso dell'esercizio nonchè i relativi impieghi.
+La società ha predisposto il rendiconto finanziario che rappresenta il documento di sintesi che raccorda le variazioni intervenute nel corso dell'esercizio nel patrimonio aziendale con le variazioni nella situazione finanziaria; esso pone in evidenza i valori relativi alle risorse finanziarie di cui l'impresa ha avuto necessità nel corso dell'esercizio nonché i relativi impieghi.
 
 In merito al metodo utilizzato si specifica che la stessa ha adottato, secondo la previsione dell'OIC 10, il metodo indiretto in base al quale il flusso di liquidità è ricostruito rettificando il risultato di esercizio delle componenti non monetarie.
 
-# Nota Integrativa, altre informazioni
+**Nota Integrativa, altre informazioni**
 
 Di seguito vengono riportate le altre informazioni richieste dal codice civile.
 
-# Dati sull'occupazione
+**Dati sull'occupazione**
 
 Nel seguente prospetto è indicato il numero medio dei dipendenti, ripartito per categoria e calcolato considerando la media giornaliera.
 
-|   | Dirigenti | Impiegati | Operai | Altri dipendenti | Totale dipendenti  |
-| --- | --- | --- | --- | --- | --- |
-|  Numero medio | 3 | 54 | 8 | 107 | 172  |
+| | Dirigenti | Impiegati | Operai | Altri dipendenti | Totale dipendenti |
+|---|---|---|---|---|---|
+| Numero medio | 3 | 54 | 8 | 107 | 172 |
 
-Bilancio XBRL
-
-56
+Bilancio XBRL — 56
 
 --- pág. 65 ---
 

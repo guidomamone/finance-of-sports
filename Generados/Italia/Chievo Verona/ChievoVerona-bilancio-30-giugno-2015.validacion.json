@@ -1,0 +1,20 @@
+{
+ "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
+ "mdSha1": "8e27d0732c56f00bda7fd9908101c30b046d9a71",
+ "modo": "digital",
+ "motivoModo": "3 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 2428 vs 2423, 201033 vs 241033, 2425 vs 2423; 108 números del .md no están en el PDF (tolerancia 33)",
+ "generado": "2026-10-08T17:10:03.090Z",
+ "fuentes": {
+  "30": "pdftotext",
+  "31": "pdftotext",
+  "47": "pdftotext",
+  "49": "pdftotext",
+  "50": "pdftotext",
+  "51": "pdftotext",
+  "52": "pdftotext",
+  "53": "pdftotext"
+ },
+ "confirmados": 240,
+ "noConfirmados": []
+}

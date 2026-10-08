@@ -1,0 +1,423 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-2000-01.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2000-01.md",
+ "generado": "2026-10-08T18:56:46.594Z",
+ "estado": "cola",
+ "clubId": "lazio-it",
+ "year": 2001,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "85a8f76"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2000",
+   "ok": true,
+   "detalle": "ingresos de 2000: 343364.726633 en Lazio-bilancio-1999-00.pdf y 343364.726633 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2000: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"b) Oneri sociali\" no suma el renglón (3308 contra 3712.585728, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"c) Trattamento di fine rapporto\" no suma el renglón (799 contra 388.801318, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): corregir no, en Lazio-bilancio-separato-consolidato-2011-12.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2022-23.pdf",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2008-09.pdf",
+  "duda de extraer que no afecta la carga: 9.000+18.102 = 27.102 coincide con c) Oneri su incassi de L1201."
+ ],
+ "reintentar": [
+  {
+   "renglon": "b) Oneri sociali",
+   "suma": 3308,
+   "objetivo": 3712.585728
+  },
+  {
+   "renglon": "c) Trattamento di fine rapporto",
+   "suma": 799,
+   "objetivo": 388.801318
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "b) Oneri sociali",
+   "suma": 3308,
+   "objetivo": 3712.585728
+  },
+  {
+   "renglon": "c) Trattamento di fine rapporto",
+   "suma": 799,
+   "objetivo": 388.801318
+  }
+ ],
+ "totales": {
+  "ingresos": 334514.107739,
+  "gastos": 425661.423954,
+  "financiero": -20710.317351,
+  "impuesto": 33948.362,
+  "resultadoImpreso": -77909.271566,
+  "resultadoParaCargar": -77909.271566,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1 Ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "M": 43075.892723,
+   "pagina": 52,
+   "linea": 1155,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "2 Variazione delle rimanenze",
+   "lado": "ingreso",
+   "M": -8.346807,
+   "pagina": 52,
+   "linea": 1156,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "4 Incrementi di immobilizzazioni per lavori interni",
+   "lado": "ingreso",
+   "M": 4078.840273,
+   "pagina": 52,
+   "linea": 1157,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Cessione temporanea calciatori",
+   "lado": "ingreso",
+   "M": 12300,
+   "pagina": 52,
+   "linea": 1159,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Canoni per licenze, marchi, brevetti",
+   "lado": "ingreso",
+   "M": 2448.75801,
+   "pagina": 52,
+   "linea": 1160,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Sponsorizzazione",
+   "lado": "ingreso",
+   "M": 23451.857406,
+   "pagina": 52,
+   "linea": 1161,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Diritti televisivi e d'immagine",
+   "lado": "ingreso",
+   "M": 134777.367519,
+   "pagina": 52,
+   "linea": 1162,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 11326.042549,
+   "pagina": 52,
+   "linea": 1163,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "f) Contributi in c/esercizio",
+   "lado": "ingreso",
+   "M": 1069.333333,
+   "pagina": 52,
+   "linea": 1164,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "g) Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 13236.759256,
+   "pagina": 52,
+   "linea": 1165,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "lado": "ingreso",
+   "M": 83890.414806,
+   "pagina": 54,
+   "linea": 1234,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "b) altri proventi straordinari",
+   "lado": "ingreso",
+   "M": 4867.188671,
+   "pagina": 54,
+   "linea": 1235,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "6 Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 2562.227959,
+   "pagina": 52,
+   "linea": 1169,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 2773.555503,
+   "pagina": 52,
+   "linea": 1171,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 10765.092946,
+   "pagina": 52,
+   "linea": 1172,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Costi per vitto, alloggio e locomozione",
+   "lado": "gasto",
+   "M": 2363.900677,
+   "pagina": 52,
+   "linea": 1173,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Spese assicurative",
+   "lado": "gasto",
+   "M": 5397.419803,
+   "pagina": 52,
+   "linea": 1174,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Spese amministrative",
+   "lado": "gasto",
+   "M": 12113.65972,
+   "pagina": 52,
+   "linea": 1175,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "f) Spese per pubblicità e promozione",
+   "lado": "gasto",
+   "M": 7455.632567,
+   "pagina": 52,
+   "linea": 1176,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "8 Per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 1453.265696,
+   "pagina": 53,
+   "linea": 1185,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Salari e stipendi",
+   "lado": "gasto",
+   "M": 199695.47365,
+   "pagina": 53,
+   "linea": 1187,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Oneri sociali",
+   "lado": "gasto",
+   "M": 3712.585728,
+   "pagina": 53,
+   "linea": 1188,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 388.801318,
+   "pagina": 53,
+   "linea": 1189,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Altri costi",
+   "lado": "gasto",
+   "M": 6,
+   "pagina": 53,
+   "linea": 1190,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Amm. delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 114309.101344,
+   "pagina": 53,
+   "linea": 1193,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Amm. delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 2073.982857,
+   "pagina": 53,
+   "linea": 1194,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
+   "lado": "gasto",
+   "M": 3017.945036,
+   "pagina": 53,
+   "linea": 1195,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "12 Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 12763.413,
+   "pagina": 53,
+   "linea": 1197,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Oneri tributari indiretti",
+   "lado": "gasto",
+   "M": 709.362547,
+   "pagina": 53,
+   "linea": 1199,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Perdite su cambi",
+   "lado": "gasto",
+   "M": 9604.776446,
+   "pagina": 53,
+   "linea": 1200,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Oneri su incassi",
+   "lado": "gasto",
+   "M": 27101.983459,
+   "pagina": 53,
+   "linea": 1201,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "lado": "gasto",
+   "M": 3140.65997,
+   "pagina": 54,
+   "linea": 1238,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  },
+  {
+   "etiqueta": "b) altri oneri straordinari",
+   "lado": "gasto",
+   "M": 4252.583728,
+   "pagina": 54,
+   "linea": 1239,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "b) da titoli iscritti nelle immob. che non cost. partec.",
+   "M": 1645.637024,
+   "linea": 1218
+  },
+  {
+   "etiqueta": "d.1) da imprese collegate",
+   "M": 2712.626993,
+   "linea": 1220
+  },
+  {
+   "etiqueta": "d.2) da imprese controllanti",
+   "M": 1249.688694,
+   "linea": 1221
+  },
+  {
+   "etiqueta": "d.3) da terzi",
+   "M": 4826.7519,
+   "linea": 1222
+  },
+  {
+   "etiqueta": "d.4) da compart. ex art. 102 NOIF",
+   "M": 4500,
+   "linea": 1223
+  },
+  {
+   "etiqueta": "a) verso imprese collegate",
+   "M": -427.764771,
+   "linea": 1226
+  },
+  {
+   "etiqueta": "b) verso imprese controllanti",
+   "M": -255.88828,
+   "linea": 1227
+  },
+  {
+   "etiqueta": "c) da compartecip.ex art 102 NOIF",
+   "M": -4501,
+   "linea": 1228
+  },
+  {
+   "etiqueta": "d) verso terzi",
+   "M": -30460.368911,
+   "linea": 1229
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) imposte correnti",
+   "M": -2345.117,
+   "linea": 1251
+  },
+  {
+   "etiqueta": "b) imposte differite",
+   "M": 36293.479,
+   "linea": 1252
+  }
+ ]
+}

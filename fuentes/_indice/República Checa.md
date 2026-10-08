@@ -29,3 +29,15 @@ Ver `fuentes/República Checa/_notas-generales.md` y la sección 25 (propuesta) 
 - [Slovan Liberec](<../República Checa/Slovan Liberec.md>) — 12 documentos, 1996-2005 + 2022, 2024, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Pardubice](<../República Checa/Pardubice.md>) — 10 documentos, 2014-2024, único club que sigue siendo z.s. y aun así deposita — Último chequeo: 2026-09-17
 - [Notas generales de República Checa](<../República Checa/_notas-generales.md>)
+- [Dynamo Ceske Budejovice](<../República Checa/Dynamo Ceske Budejovice.md>) — 30 documentos, años 2013-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Zbrojovka Brno](<../República Checa/FC Zbrojovka Brno.md>) — 34 documentos, años 2012-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Vysocina Jihlava](<../República Checa/FC Vysocina Jihlava.md>) — 36 documentos, años 2012-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Hlucin](<../República Checa/FC Hlucin.md>) — 29 documentos, años 2008-2019, 2021-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FK Banik Sokolov](<../República Checa/FK Banik Sokolov.md>) — 6 documentos, años 2020-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [MFK Chrudim](<../República Checa/MFK Chrudim.md>) — 4 documentos, años 2020, 2022-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [FK Varnsdorf](<../República Checa/FK Varnsdorf.md>) — 12 documentos, años 2014-2021; sin cargar aún — Último chequeo: 2026-10-08
+- [FK Usti nad Labem](<../República Checa/FK Usti nad Labem.md>) — 26 documentos, años 2012-2021, 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [1 SK Prostejov](<../República Checa/1 SK Prostejov.md>) — 9 documentos, años 2019-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Vlasim](<../República Checa/FC Vlasim.md>) — 17 documentos, años 2013-2020, 2024-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Taborsko](<../República Checa/FC Taborsko.md>) — 40 documentos, años 2007-2013, 2017-2018, 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Slavia Karlovy Vary](<../República Checa/FC Slavia Karlovy Vary.md>) — 67 documentos, años 2012-2025; sin cargar aún — Último chequeo: 2026-10-08

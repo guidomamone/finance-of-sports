@@ -33,3 +33,15 @@ sus sprawozdania finansowe por la licencia del PZPN (Criterio F.01). Ver
 - [Wisła Kraków](<../Polonia/Wisła Kraków.md>) — 8 ejercicios (2018-2021 calendario, transición 2022, FY 2022/23-2024/25; período de transición dudoso), sin cargar aún — Último chequeo: 2026-10-03
 - [Arka Gdynia](<../Polonia/Arka Gdynia.md>) — 4 ejercicios (FY 2018/19-2021/22, escaneos; faltan 2022/23 en adelante), sin cargar aún — Último chequeo: 2026-10-03
 - [Notas generales de Polonia](<../Polonia/_notas-generales.md>)
+- [LKS Lodz](<../Polonia/LKS Lodz.md>) — 4 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08
+- [Ruch Chorzow](<../Polonia/Ruch Chorzow.md>) — 3 documentos, años 2015-2016, 2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Odra Opole](<../Polonia/Odra Opole.md>) — 2 documentos, años 2022; sin cargar aún — Último chequeo: 2026-10-08
+- [Miedz Legnica](<../Polonia/Miedz Legnica.md>) — 6 documentos, años 2018-2021; sin cargar aún — Último chequeo: 2026-10-08
+- [Termalica Nieciecza](<../Polonia/Termalica Nieciecza.md>) — 7 documentos, años 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Warta Poznan](<../Polonia/Warta Poznan.md>) — 4 documentos, años 2018-2020, 2022-2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Stomil Olsztyn](<../Polonia/Stomil Olsztyn.md>) — 6 documentos, años 2019-2020, 2022-2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Stal Rzeszow](<../Polonia/Stal Rzeszow.md>) — 4 documentos, años 2023-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Polonia Warszawa](<../Polonia/Polonia Warszawa.md>) — 2 documentos, años 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Puszcza Niepolomice](<../Polonia/Puszcza Niepolomice.md>) — 6 documentos, años 2023-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Stal Mielec](<../Polonia/Stal Mielec.md>) — 2 documentos, años 2021-2022; sin cargar aún — Último chequeo: 2026-10-08
+- [Podbeskidzie Bielsko-Biala](<../Polonia/Podbeskidzie Bielsko-Biala.md>) — 2 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08

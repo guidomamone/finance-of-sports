@@ -26,3 +26,18 @@ gratis, sin login, sin bloqueo de Cloudflare, y scripteable con curl — los 12 
 - [Vejle](<../Dinamarca/Vejle.md>) — 18 ejercicios reales, serie completa 2008-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Viborg FF](<../Dinamarca/Viborg FF.md>) — 30 ejercicios reales, serie completa 1995/96-2024/25, sin ninguna transición de ejercicio, sin cargar aún — Último chequeo: 2026-09-17
 - [Notas generales de Dinamarca](<../Dinamarca/_notas-generales.md>)
+- [Lyngby](<../Dinamarca/Lyngby.md>) — 20 documentos, años 2008-2024, 2026; sin cargar aún — Último chequeo: 2026-10-08
+- [AC Horsens](<../Dinamarca/AC Horsens.md>) — 32 documentos, años 1995-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Esbjerg fB](<../Dinamarca/Esbjerg fB.md>) — 32 documentos, años 1995-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [AaB](<../Dinamarca/AaB.md>) — 55 documentos, años 1995-2026; sin cargar aún — Último chequeo: 2026-10-08
+- [Hobro IK](<../Dinamarca/Hobro IK.md>) — 21 documentos, años 2007-2026; sin cargar aún — Último chequeo: 2026-10-08
+- [Vendsyssel FF](<../Dinamarca/Vendsyssel FF.md>) — 16 documentos, años 2011-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Helsingør](<../Dinamarca/FC Helsingør.md>) — 7 documentos, años 2020-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Hvidovre IF](<../Dinamarca/Hvidovre IF.md>) — 31 documentos, años 1995-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Kolding IF](<../Dinamarca/Kolding IF.md>) — 8 documentos, años 2018-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Næstved BK](<../Dinamarca/Næstved BK.md>) — 30 documentos, años 1996-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [HB Køge](<../Dinamarca/HB Køge.md>) — 17 documentos, años 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Thisted FC](<../Dinamarca/Thisted FC.md>) — 20 documentos, años 2006-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Skive IK](<../Dinamarca/Skive IK.md>) — 26 documentos, años 2000-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Aarhus Fremad](<../Dinamarca/Aarhus Fremad.md>) — 24 documentos, años 2002-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Middelfart Boldklub](<../Dinamarca/Middelfart Boldklub.md>) — 10 documentos, años 2016-2025; sin cargar aún — Último chequeo: 2026-10-08

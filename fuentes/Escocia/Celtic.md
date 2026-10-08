@@ -44,3 +44,7 @@ Se bajaron los 4 ejercicios anteriores a `Clubes/Escocia/Celtic/`, así que ahor
 
 Cuenta de resultados: verificada solo en el 2024/25 (Consolidated Statement of Comprehensive Income, ingresos del grupo £143,6 M vs £124,6 M). Los otros cuatro no se abrieron por OCR: son las cuentas consolidadas del mismo plc que cotiza, así que traen el estado consolidado. Como cotiza, además publica Annual Report en su sitio (no se buscó).
 <!-- /ing-sourcing -->
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 4 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024; `wf-src-*`: 2 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

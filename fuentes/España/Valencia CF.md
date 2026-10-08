@@ -33,3 +33,7 @@
 El pendiente de la sesión 2026-09-13 ("probar seguro.valenciacf.com vía Wayback") se resolvió: el subdominio legado SÍ está archivado. Bajados: 2018-19 y 2019-20 (individuales, escaneos de 63-64 págs.; carátula "Valencia Club de Fútbol S.A.D., 30 de junio de 2019/2020" verificada por imagen), 2021-22 (individual + consolidadas "GRUPO con EINF", 67 y 164 págs.) y 2022-23 (individual + consolidadas, 68 y 170 págs., desde `valenciacf.com/public/Attachment/2024/2/`). Con 2023-24 y 2024-25 que ya había → **6 ejercicios 2018-19 a 2024-25** (hueco: 2020-21; no apareció en ningún listado, se podría intentar de nuevo cuando Wayback vuelva).
 
 PDFs guardados en `Clubes/España/Valencia CF/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

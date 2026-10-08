@@ -1,0 +1,218 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.md",
+ "generado": "2026-10-08T18:56:47.186Z",
+ "estado": "ok",
+ "clubId": "lazio-it",
+ "year": 2026,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2025 de este documento suma ingresos 157.532523; el sitio tiene 157.532523"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2025: 157.532523 en Lazio-relazione-finanziaria-annuale-2024-25.pdf y 157.532523 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Ricavi da merchandising\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"RICAVI NETTI DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI TESSERATI\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Costi per servizi\" no suma el renglón (23.942 contra 23.942081, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Las columnas por segmento no parecen abrir renglones que las notas consolidadas no desglosen ya.",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Oneri finanziari\"): ¿Se usa b207 como desglose de Oneri finanziari y no b206, que parece un cuadro resumen de la misma nota 43?",
+  "duda de extraer que no afecta la carga: L7857 imprime 23.492 pero las filas suman 23.942 y el estado (L5378) dice 23.942.081; se cargó tal cual impreso.",
+  "duda de extraer que no afecta la carga: b197 repite L7856-L7857 y desglosa por columnas no anuales una fila ya cargada en b196 (L7851).",
+  "duda de extraer que no afecta la carga: Ambos usan la misma etiqueta y el total 7.514 de b207 coincide con L8084, no con 7.517 del estado."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Costi per servizi",
+   "suma": 23.942,
+   "objetivo": 23.942081
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Costi per servizi",
+   "suma": 23.942,
+   "objetivo": 23.942081
+  }
+ ],
+ "totales": {
+  "ingresos": 173.739234,
+  "gastos": 187.375711,
+  "financiero": -5.555701,
+  "impuesto": 9.148935,
+  "resultadoImpreso": -10.043242,
+  "resultadoParaCargar": -10.043242,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare",
+   "lado": "ingreso",
+   "M": 18.064454,
+   "pagina": 130,
+   "linea": 5364,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diritti radiotelevisivi e proventi media",
+   "lado": "ingreso",
+   "M": 88.451323,
+   "pagina": 130,
+   "linea": 5366,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da sponsorizzazione e pubblicità",
+   "lado": "ingreso",
+   "M": 17.819495,
+   "pagina": 130,
+   "linea": 5367,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi da gestione diritti calciatori",
+   "lado": "ingreso",
+   "M": 2.93598,
+   "pagina": 130,
+   "linea": 5368,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi",
+   "lado": "ingreso",
+   "M": 5.222657,
+   "pagina": 130,
+   "linea": 5369,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da merchandising",
+   "lado": "ingreso",
+   "M": 1.994375,
+   "pagina": 130,
+   "linea": 5370,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
+   "lado": "ingreso",
+   "M": 39.25095,
+   "pagina": 130,
+   "linea": 5387,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi per materie prime",
+   "lado": "gasto",
+   "M": 3.121558,
+   "pagina": 130,
+   "linea": 5375,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costo del Personale",
+   "lado": "gasto",
+   "M": 104.624917,
+   "pagina": 130,
+   "linea": 5377,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi per servizi",
+   "lado": "gasto",
+   "M": 23.942081,
+   "pagina": 130,
+   "linea": 5378,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri da gestione diritti calciatori",
+   "lado": "gasto",
+   "M": 2.385868,
+   "pagina": 130,
+   "linea": 5379,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri costi",
+   "lado": "gasto",
+   "M": 7.01245,
+   "pagina": 130,
+   "linea": 5380,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti, accantonamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 46.288837,
+   "pagina": 130,
+   "linea": 5381,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Proventi finanziari",
+   "M": 1.96127,
+   "linea": 5395
+  },
+  {
+   "etiqueta": "Oneri finanziari",
+   "M": -7.516971,
+   "linea": 5396
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte correnti",
+   "M": -3.178096,
+   "linea": 5398
+  },
+  {
+   "etiqueta": "Imposte differite e anticipate",
+   "M": 12.327031,
+   "linea": 5399
+  }
+ ]
+}

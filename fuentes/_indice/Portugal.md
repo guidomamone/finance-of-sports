@@ -34,3 +34,11 @@ registro societario portugués. Ver `fuentes/Portugal/_notas-generales.md` y la 
 - [Tondela](<../Portugal/Tondela.md>) — sin PDF completo, solo 1 ejercicio parcial vía arquivo.pt (2020/21), ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Arouca](<../Portugal/Arouca.md>) — sin PDF usable, 4 ejercicios confirmados existentes pero truncados en Wayback, ver duda en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Notas generales de Portugal](<../Portugal/_notas-generales.md>)
+- [Vizela](<../Portugal/Vizela.md>) — 6 documentos, años 2021-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Maritimo](<../Portugal/Maritimo.md>) — 2 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Portimonense](<../Portugal/Portimonense.md>) — 4 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08
+- [Belenenses](<../Portugal/Belenenses.md>) — 7 documentos, años 2023-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Leixoes](<../Portugal/Leixoes.md>) — 3 documentos, años 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [União de Leiria](<../Portugal/União de Leiria.md>) — 4 documentos, años 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Mafra](<../Portugal/Mafra.md>) — 1 documentos, años 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Academico Viseu](<../Portugal/Academico Viseu.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08

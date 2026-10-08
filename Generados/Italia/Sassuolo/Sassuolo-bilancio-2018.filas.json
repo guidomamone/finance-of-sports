@@ -1,0 +1,125 @@
+{
+ "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.pdf",
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.md",
+ "mdSha1": "c7b212aac9980bdca6896273214cccda0227030c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T18:45:43.784Z",
+ "ubicacion": {
+  "estado": [
+   "b14"
+  ],
+  "notas_ingresos": [
+   "b35",
+   "b36"
+  ],
+  "notas_gastos": [
+   "b40",
+   "b41",
+   "b42",
+   "b43",
+   "b45",
+   "b48",
+   "b49"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "No hay frase de escala en el bloque; los importes tienen formato de euros enteros (ej. 107.786.225)."
+  },
+  {
+   "bloque": "b35",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1562"
+  },
+  {
+   "bloque": "b36",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1575"
+  },
+  {
+   "bloque": "b40",
+   "escala": "no se sabe",
+   "evidencia": "Sin encabezado de escala visible; el total 15.055 coincide con 15.055.113 del estado, lo que indica miles."
+  },
+  {
+   "bloque": "b41",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1688"
+  },
+  {
+   "bloque": "b42",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1701"
+  },
+  {
+   "bloque": "b43",
+   "escala": "no se sabe",
+   "evidencia": "Continuación de b42 (Euro/000)."
+  },
+  {
+   "bloque": "b45",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1758"
+  },
+  {
+   "bloque": "b48",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1820"
+  },
+  {
+   "bloque": "b49",
+   "escala": "miles",
+   "evidencia": "(Euro/000) L1832"
+  }
+ ],
+ "filas": [],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se puede cargar el estado de resultados b14 (L631-L667) asignando etiquetas desde el PDF, ya que la transcripción no trae las etiquetas de los renglones?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "",
+   "texto": "El bloque b14 tiene solo importes sin etiquetas (L631-L667), así que no se pueden identificar los renglones ni a qué renglón detallan las notas.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La columna de L631-L667 con importes como 107.786.225 es la del 31 dicembre 2018 y la siguiente la del 2017?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b14 muestra solo '31 dicembre 2017' (L629) y las columnas aparecen desalineadas (L654, L664-L667).",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las notas b35-b49 recién una vez que se identifiquen los renglones del estado que desglosan?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Sin etiquetas en b14 no se puede completar detalla_a con la etiqueta exacta del renglón del estado.",
+   "bloques": [
+    "b35",
+    "b36",
+    "b40",
+    "b41",
+    "b42",
+    "b43",
+    "b45",
+    "b48",
+    "b49"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No se extrajeron filas porque el estado b14 carece de etiquetas en la transcripción y las notas dependen de él para detalla_a. Los importes de b14 parecen estar en euros (unidades): total de valor de producción 107.786.225 (L637), costos 93.981.902 (L652), resultado operativo 13.804.323 (L653), resultado antes de impuestos 13.378.307 (L663) y resultado del ejercicio 8.144.872 / 4.081.931 (L667). Esto se infiere y debe verificarse en el PDF."
+}

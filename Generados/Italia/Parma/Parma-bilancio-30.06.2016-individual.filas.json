@@ -1,0 +1,771 @@
+{
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.pdf",
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md",
+ "mdSha1": "68304a8bcd9bb27c5eb548f15dab75abdb01b12a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T18:29:27.930Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b49",
+   "b50"
+  ],
+  "notas_gastos": [
+   "b51",
+   "b52",
+   "b54",
+   "b55",
+   "b56",
+   "b57"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes coinciden con notas en Euro (no se sabe con certeza)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "L2084: columna 'Euro'"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "L2096: columna 'Euro'"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "L2138: 'Ammontano ad Euro 370.299'"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "L2151: columna 'Euro'"
+  },
+  {
+   "bloque": "b54",
+   "escala": "unidades",
+   "evidencia": "L2180: 'pari ad Euro 89.557'"
+  },
+  {
+   "bloque": "b55",
+   "escala": "unidades",
+   "evidencia": "L2189: 'pari ad Euro 45.715'"
+  },
+  {
+   "bloque": "b56",
+   "escala": "unidades",
+   "evidencia": "L2226: columna 'Euro'"
+  },
+  {
+   "bloque": "b57",
+   "escala": "unidades",
+   "evidencia": "L2244: 'Ammontano ad Euro 3.132'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 235,
+   "etiqueta": "1) ricavi delle vendite e delle prestazioni",
+   "actual": "716.564",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 237,
+   "etiqueta": "altri",
+   "actual": "2.385.116",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 238,
+   "etiqueta": "Totale altri ricavi e proventi",
+   "actual": "2.385.116",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 239,
+   "etiqueta": "Totale valore della produzione",
+   "actual": "3.101.680",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 241,
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "actual": "507.845",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 242,
+   "etiqueta": "7) per servizi",
+   "actual": "2.389.965",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 243,
+   "etiqueta": "8) per godimento di beni di terzi",
+   "actual": "370.299",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 245,
+   "etiqueta": "a) salari e stipendi",
+   "actual": "962.638",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 246,
+   "etiqueta": "b) oneri sociali",
+   "actual": "20.948",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 247,
+   "etiqueta": "c) trattamento di fine rapporto",
+   "actual": "9.911",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 248,
+   "etiqueta": "Totale costi per il personale",
+   "actual": "993.497",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 250,
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "actual": "89.557",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 251,
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "actual": "45.715",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 252,
+   "etiqueta": "Totale ammortamenti e svalutazioni",
+   "actual": "135.272",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 253,
+   "etiqueta": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "actual": "(98.402)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 254,
+   "etiqueta": "12) accantonamenti per rischi",
+   "actual": "2.087",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 255,
+   "etiqueta": "13) altri accantonamenti",
+   "actual": "34.523",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 256,
+   "etiqueta": "14) oneri diversi di gestione",
+   "actual": "446.462",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 257,
+   "etiqueta": "Totale costi della produzione",
+   "actual": "4.781.548",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 258,
+   "etiqueta": "Differenza tra valore e costi della produzione (A - B)",
+   "actual": "(1.679.868)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 262,
+   "etiqueta": "altri",
+   "actual": "3.132",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 263,
+   "etiqueta": "Totale proventi finanziari da crediti iscritti nelle immobilizzazioni",
+   "actual": "3.132",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 264,
+   "etiqueta": "Totale altri proventi finanziari",
+   "actual": "3.132",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 266,
+   "etiqueta": "altri",
+   "actual": "1.035",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 267,
+   "etiqueta": "Totale interessi e altri oneri finanziari",
+   "actual": "1.035",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 268,
+   "etiqueta": "Totale proventi e oneri finanziari (15 + 16 - 17 + - 17-bis)",
+   "actual": "2.097",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 271,
+   "etiqueta": "altri",
+   "actual": "1.355",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 272,
+   "etiqueta": "Totale oneri",
+   "actual": "1.355",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 273,
+   "etiqueta": "Totale delle partite straordinarie (20 - 21)",
+   "actual": "(1.355)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 274,
+   "etiqueta": "Risultato prima delle imposte (A - B + - C + - D + - E)",
+   "actual": "(1.679.126)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 275,
+   "etiqueta": "23) Utile (perdita) dell'esercizio",
+   "actual": "(1.679.126)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b49",
+   "linea": 2087,
+   "etiqueta": "- Gare Campionato",
+   "actual": "114.166",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2088,
+   "etiqueta": "- Gare Amichevoli e tornei",
+   "actual": "20.141",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2089,
+   "etiqueta": "Abbonamenti",
+   "actual": "582.257",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2090,
+   "etiqueta": "Totale",
+   "actual": "716.564",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2098,
+   "etiqueta": "Proventi da sponsorizzazioni",
+   "actual": "999.287",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "altri"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2099,
+   "etiqueta": "Proventi pubblicitari",
+   "actual": "1.299.222",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "altri"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2100,
+   "etiqueta": "Proventi commerciali e royalties",
+   "actual": "15.830",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "altri"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2101,
+   "etiqueta": "Altri ricavi e proventi",
+   "actual": "70.777",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "altri"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2102,
+   "etiqueta": "Totale",
+   "actual": "2.385.116",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "altri"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2142,
+   "etiqueta": "Noleggi vari",
+   "actual": "195.253",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento di beni di terzi"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2143,
+   "etiqueta": "Canone di affitto e locazione",
+   "actual": "167.607",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento di beni di terzi"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2144,
+   "etiqueta": "Altri",
+   "actual": "7.439",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento di beni di terzi"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2145,
+   "etiqueta": "Totale",
+   "actual": "370.299",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "8) per godimento di beni di terzi"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2153,
+   "etiqueta": "Salari e stipendi",
+   "actual": "962.638",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Totale costi per il personale"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2154,
+   "etiqueta": "Oneri sociali",
+   "actual": "20.948",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Totale costi per il personale"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2155,
+   "etiqueta": "Trattamento di Fine Rapporto",
+   "actual": "9.911",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Totale costi per il personale"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2184,
+   "etiqueta": "Amm. Costi di impianto ed ampliamento",
+   "actual": "61.692",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) ammortamento delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2185,
+   "etiqueta": "Concessioni, licenze, marchi e diritti simili",
+   "actual": "8.486",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) ammortamento delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2186,
+   "etiqueta": "Altre imm. immateriali - Migliorie beni di terzi",
+   "actual": "19.379",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) ammortamento delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2187,
+   "etiqueta": "Totale",
+   "actual": "89.557",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "a) ammortamento delle immobilizzazioni immateriali"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2193,
+   "etiqueta": "Amm. Impianti e macchinari",
+   "actual": "2.986",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) ammortamento delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2194,
+   "etiqueta": "Amm. Attrezzature industriali e commerciali",
+   "actual": "32.104",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) ammortamento delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2195,
+   "etiqueta": "Amm. Altre immobilizzazioni materiali",
+   "actual": "10.625",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) ammortamento delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2196,
+   "etiqueta": "Totale",
+   "actual": "45.715",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "b) ammortamento delle immobilizzazioni materiali"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2228,
+   "etiqueta": "Spese varie per organizzazioni gare",
+   "actual": "303.024",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2229,
+   "etiqueta": "Tasse iscrizioni gare",
+   "actual": "40.646",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2231,
+   "etiqueta": "- Altri oneri da gestione calciatori:",
+   "actual": "1.187",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2232,
+   "etiqueta": "- Costi valorizzazione calciatori",
+   "actual": "5.900",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2234,
+   "etiqueta": "- Spese, ammende e multe gare",
+   "actual": "12.082",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2235,
+   "etiqueta": "- Imposte e tasse sugli incassi",
+   "actual": "7.283",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2236,
+   "etiqueta": "- Oneri tributari indiretti",
+   "actual": "72.161",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2237,
+   "etiqueta": "-Altri",
+   "actual": "4.179",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2238,
+   "etiqueta": "Totale",
+   "actual": "446.462",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "14) oneri diversi di gestione"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2248,
+   "etiqueta": "Interessi attivi bancari",
+   "actual": "2.395",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Totale altri proventi finanziari"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2249,
+   "etiqueta": "Altri proventi",
+   "actual": "737",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Totale altri proventi finanziari"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2250,
+   "etiqueta": "Totale",
+   "actual": "3.132",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Totale altri proventi finanziari"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 239,
+  "actual": "3.101.680"
+ },
+ "total_gastos": {
+  "linea": 257,
+  "actual": "4.781.548"
+ },
+ "resultado": {
+  "linea": 275,
+  "actual": "(1.679.126)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b4) en unidades de euro, aunque el bloque no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "b4 (L231) no indica escala, pero sus importes coinciden con las notas expresadas en Euro (p.ej. 716.564 en L235 y L2090).",
+   "bloques": [
+    "b4",
+    "b49"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado solo trae la columna 30-06-2016; no hay año anterior. Se asumió que el desglose de b52 corresponde a 'Totale costi per il personale' y el de b57 a 'Totale altri proventi finanziari'. Escala del estado asumida en unidades por coincidencia con las notas."
+}

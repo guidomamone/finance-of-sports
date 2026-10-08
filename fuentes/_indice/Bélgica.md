@@ -31,3 +31,10 @@ encontrado hasta ahora en el proyecto: gratis, sin login, con una API JSON scrip
 - [Zulte Waregem](<../Bélgica/Zulte Waregem.md>) — 14 ejercicios reales, serie 2012-2025 (entidad legal "Grensverleggend NV", no el nombre del club), sin cargar aún — Último chequeo: 2026-09-17
 - Deloitte Pro League Report — 5 ediciones agregadas (2019-2023), estudio socioeconómico de toda la liga, en `Clubes/Bélgica/_Deloitte-ProLeague-Report/` — Último chequeo: 2026-09-17
 - [Notas generales de Bélgica](<../Bélgica/_notas-generales.md>)
+- [Lommel SK](<../Bélgica/Lommel SK.md>) — 9 documentos, años 2018-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Beerschot](<../Bélgica/Beerschot.md>) — 8 documentos, años 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [RWDM](<../Bélgica/RWDM.md>) — 7 documentos, años 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Patro Eisden](<../Bélgica/Patro Eisden.md>) — 15 documentos, años 2013-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Lierse SK](<../Bélgica/Lierse SK.md>) — 7 documentos, años 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Lierse Kempenzonen](<../Bélgica/Lierse Kempenzonen.md>) — 6 documentos, años 2018-2022; sin cargar aún — Último chequeo: 2026-10-08
+- [Lokeren-Temse](<../Bélgica/Lokeren-Temse.md>) — 6 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08

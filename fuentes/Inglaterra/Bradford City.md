@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Bradford City/` (los PDF no se trackean; son escaneo
 - `bradford-other-accounts-2016-17.pdf`
 - `bradford-other-accounts-2004.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `companies-house-fetch.mjs --years 2023 --include-small`: trae cuenta de resultados con turnover (OCR chequeado). Listo para onboarding. Turnover 8.543.419 vs 7.096.690.

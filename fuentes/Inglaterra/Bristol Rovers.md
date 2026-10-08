@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Bristol Rovers/` (los PDF no se trackean; son escane
 - `bristolrovers-full-accounts-2013-14.pdf`
 - `bristolrovers-full-accounts-2012-13.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `companies-house-fetch.mjs --years 2023 --include-small`: trae cuenta de resultados con turnover (OCR chequeado). Listo para onboarding. Turnover 7.281.099 (2023) vs 6.296.232.

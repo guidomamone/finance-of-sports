@@ -1,0 +1,34 @@
+{
+ "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.pdf",
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.md",
+ "mdSha1": "0ce6a28cffe406cc69ff1f779b3b65d3edded6ea",
+ "modo": "digital",
+ "motivoModo": "163 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 53957 vs 51957, 1229 vs 1259, 4247 vs 4277; 529 números del .md no están en el PDF (tolerancia 80)",
+ "generado": "2026-10-08T16:07:40.095Z",
+ "fuentes": {
+  "28": "pdftotext",
+  "29": "pdftotext",
+  "69": "gemini",
+  "70": "gemini",
+  "74": "gemini",
+  "76": "claude",
+  "77": "gemini",
+  "78": "claude",
+  "79": "gemini",
+  "81": "gemini",
+  "82": "gemini"
+ },
+ "hibridas": [
+  69,
+  70,
+  74,
+  76,
+  77,
+  78,
+  79,
+  81,
+  82
+ ],
+ "confirmados": 281,
+ "noConfirmados": []
+}

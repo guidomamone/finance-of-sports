@@ -26,3 +26,12 @@
   cmfchile.cl/portal/principal/623/w4-propertyvalue-48680.html.
 - Último chequeo: 2026-09-12.
 
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (descubierto con búsqueda semántica Exa) · barrido: 1 (Sonnet) — 2026-10-08
+
+3 documentos en carpeta (2008, 2020).
+
+- Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar entidad y ejercicio antes de cargar.
+- Balance 2008 y memorias 2020.

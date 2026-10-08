@@ -1,0 +1,533 @@
+{
+ "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
+ "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+ "mdSha1": "c247c0e5733fb7588338b55b72003e62e9a93e42",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T17:46:46.472Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b26"
+  ],
+  "notas_gastos": [
+   "b27",
+   "b28",
+   "b29"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L133: Amounts in euro"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L1160: Amounts in euro"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "L1256: Amounts in euro"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "L1317: Amounts in euro"
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "L1367: Amounts in euro"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 135,
+   "etiqueta": "Revenues",
+   "actual": "3.910.360",
+   "anterior": "2.780.959",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 136,
+   "etiqueta": "Cost of revenues",
+   "actual": "(3.669.956)",
+   "anterior": "(2.134.467)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 137,
+   "etiqueta": "Gross profit",
+   "actual": "240.404",
+   "anterior": "646.492",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 138,
+   "etiqueta": "General and administrative expenses",
+   "actual": "(2.157.493)",
+   "anterior": "(2.213.461)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 139,
+   "etiqueta": "Depreciation and Amortization",
+   "actual": "(12.346)",
+   "anterior": "(11.258)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 140,
+   "etiqueta": "Operating profit (loss)",
+   "actual": "(1.929.435)",
+   "anterior": "(1.578.227)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 141,
+   "etiqueta": "Finance costs",
+   "actual": "(120.093)",
+   "anterior": "(83.365)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 142,
+   "etiqueta": "Other incomes",
+   "actual": "190.721",
+   "anterior": "265.552",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 143,
+   "etiqueta": "Profit (loss) before tax",
+   "actual": "(1.858.808)",
+   "anterior": "(1.396.040)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 144,
+   "etiqueta": "Provision for income taxes",
+   "actual": "(127.938)",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 145,
+   "etiqueta": "Profit (loss) for the year",
+   "actual": "(1.986.746)",
+   "anterior": "(1.396.040)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 147,
+   "etiqueta": "Items that will not be reclassified to profit or loss",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 148,
+   "etiqueta": "Items that may be reclassified to profit or loss",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 149,
+   "etiqueta": "Total other comprehensive income",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 150,
+   "etiqueta": "Total comprehensive income for the year",
+   "actual": "(1.986.746)",
+   "anterior": "(1.396.040)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 1162,
+   "etiqueta": "Sponsorships",
+   "actual": "2.023.466",
+   "anterior": "1.112.170",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1163,
+   "etiqueta": "Sponsorships - Related party",
+   "actual": "150.000",
+   "anterior": "65.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1164,
+   "etiqueta": "Ticketing",
+   "actual": "727.035",
+   "anterior": "303.269",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1165,
+   "etiqueta": "Gain on transfer of players",
+   "actual": "230.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1166,
+   "etiqueta": "Revenue from Television rights",
+   "actual": "50.000",
+   "anterior": "33.864",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1167,
+   "etiqueta": "Revenue from Contributions",
+   "actual": "538.644",
+   "anterior": "856.059",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1168,
+   "etiqueta": "Revenue from store",
+   "actual": "74.261",
+   "anterior": "21.869",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1169,
+   "etiqueta": "Other incomes",
+   "actual": "116.954",
+   "anterior": "388.729",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1170,
+   "etiqueta": "Revenues",
+   "actual": "3.910.360",
+   "anterior": "2.780.959",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1258,
+   "etiqueta": "Ticketing",
+   "actual": "(111.591)",
+   "anterior": "(38.620)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1259,
+   "etiqueta": "Advertising",
+   "actual": "-",
+   "anterior": "(16.277)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1260,
+   "etiqueta": "Sports equipment",
+   "actual": "(659.782)",
+   "anterior": "(252.689)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1261,
+   "etiqueta": "Player salaries",
+   "actual": "(2.463.183)",
+   "anterior": "(1.500.873)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1262,
+   "etiqueta": "Accomodation and transportation",
+   "actual": "(53.867)",
+   "anterior": "(109.920)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1263,
+   "etiqueta": "Insurance",
+   "actual": "(14.157)",
+   "anterior": "(10.835)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1264,
+   "etiqueta": "Loan of players",
+   "actual": "(7.500)",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1265,
+   "etiqueta": "Other cost of revenues",
+   "actual": "(193.876)",
+   "anterior": "(39.920)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1266,
+   "etiqueta": "Amortization of multi-year football players rights",
+   "actual": "(166.000)",
+   "anterior": "(165.333)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1267,
+   "etiqueta": "Cost of revenues",
+   "actual": "(3.669.956)",
+   "anterior": "(2.134.467)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Cost of revenues"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1319,
+   "etiqueta": "Accommodation and transportation",
+   "actual": "-",
+   "anterior": "(25.700)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1320,
+   "etiqueta": "Salaries and social security contributions",
+   "actual": "(1.010.865)",
+   "anterior": "(854.360)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1321,
+   "etiqueta": "Rental expenses",
+   "actual": "(43.785)",
+   "anterior": "(125.300)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1322,
+   "etiqueta": "Impairment of receivables",
+   "actual": "(90.272)",
+   "anterior": "(118.690)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1323,
+   "etiqueta": "Penalties and fines",
+   "actual": "(113.770)",
+   "anterior": "(194.853)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1324,
+   "etiqueta": "Provision for litigation and disputes",
+   "actual": "-",
+   "anterior": "(200.000)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1325,
+   "etiqueta": "Operating and administrative expenses",
+   "actual": "(816.133)",
+   "anterior": "(694.558)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1326,
+   "etiqueta": "Impairment loss on intangible assets",
+   "actual": "(82.667)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1328,
+   "etiqueta": "General and administrative expenses",
+   "actual": "(2.157.493)",
+   "anterior": "(2.213.461)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "General and administrative expenses"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1369,
+   "etiqueta": "Depreciation costs",
+   "actual": "(7.872)",
+   "anterior": "(7.304)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and Amortization"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1370,
+   "etiqueta": "Amortization on Intangible assets",
+   "actual": "(4.474)",
+   "anterior": "(3.954)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and Amortization"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1371,
+   "etiqueta": "Depreciation and Amortization",
+   "actual": "(12.346)",
+   "anterior": "(11.258)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and Amortization"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 135,
+  "actual": "3.910.360"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 145,
+  "actual": "(1.986.746)",
+  "anterior": "(1.396.040)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la fila 'Litigation and Disputes' (L1327) con importe impreso '(200.00)' en 30.06.2024?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "General and administrative expenses",
+   "texto": "L1327 imprime '(200.00)', formato anómalo; las demás filas del 2024 ya suman 2.157.492 ≈ total 2.157.493, así que 200.000 no cuadraría y el importe es dudoso.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala en euros (unidades) en todos los bloques. El total de gastos no está impreso en el estado. Notas b26, b27 y b29 cuadran con el estado; en b28 la fila L1327 se excluyó por importe anómalo."
+}

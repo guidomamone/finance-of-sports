@@ -1,0 +1,445 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-2004-05.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2004-05.md",
+ "generado": "2026-10-08T18:56:46.730Z",
+ "estado": "cola",
+ "clubId": "lazio-it",
+ "year": 2005,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "5ad791a",
+  "5cec6a0",
+  "681291c",
+  "b0b2468"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Totale valore della produzione (sez.A)\" 85.504496 cierra; además se suman 14 línea(s) fuera de ese total (85.568914)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "112.118655 = 112.118656"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 171.07341 - gastos 112.118655 ± financiero -7.379333 ± impuesto -1.291186 no da el impreso 23.771348"
+  },
+  {
+   "nombre": "documento del año 2006",
+   "ok": true,
+   "detalle": "ingresos de 2005: 171.07341 en este documento y 171.074367 en Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2004",
+   "ok": false,
+   "detalle": "ingresos de 2004: 136.383225 en Lazio-bilancio-2003-04.pdf y 202.152806 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2004: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2022-23.pdf",
+  "duda de localizar que no afecta la carga: El estado está en Euro y las notas dicen 'importi in Euro migliaia'.",
+  "duda de extraer que no afecta la carga: L2314-L2315 suman 10.055 mil, igual a L933; se asignaron al total de oneri diversi.",
+  "duda de extraer que no afecta la carga: Total L2280 45.193 cuadra con L921, pero partidas difieren de L917-L920."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 171.07341,
+  "gastos": 112.118655,
+  "financiero": -7.379333,
+  "impuesto": -1.291186,
+  "resultadoImpreso": 23.771348,
+  "resultadoParaCargar": 23.771348,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 8.216,
+   "pagina": 60,
+   "linea": 2123,
+   "origen": "nota que desglosa \"1 Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Gare di Campionato",
+   "lado": "ingreso",
+   "M": 4.717,
+   "pagina": 60,
+   "linea": 2124,
+   "origen": "nota que desglosa \"1 Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Gare di Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.069,
+   "pagina": 60,
+   "linea": 2125,
+   "origen": "nota que desglosa \"1 Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Gare di Coppe Europee",
+   "lado": "ingreso",
+   "M": 0.362,
+   "pagina": 60,
+   "linea": 2126,
+   "origen": "nota que desglosa \"1 Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Altre gare",
+   "lado": "ingreso",
+   "M": 1.193,
+   "pagina": 60,
+   "linea": 2127,
+   "origen": "nota que desglosa \"1 Ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "2 Variazione delle rimanenze prodotti finiti",
+   "lado": "ingreso",
+   "M": 0.032687,
+   "pagina": 28,
+   "linea": 893,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "4 Incrementi di immobilizzaz. per lavori interni",
+   "lado": "ingreso",
+   "M": 0.561886,
+   "pagina": 28,
+   "linea": 894,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Cessione temporanea calciatori",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 28,
+   "linea": 896,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Canoni per licenze, marchi, brevetti",
+   "lado": "ingreso",
+   "M": 0.553194,
+   "pagina": 28,
+   "linea": 897,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Sponsorizzazione",
+   "lado": "ingreso",
+   "M": 4.899958,
+   "pagina": 28,
+   "linea": 898,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Diritti televisivi e d'immagine",
+   "lado": "ingreso",
+   "M": 44.138493,
+   "pagina": 28,
+   "linea": 899,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 8.990335,
+   "pagina": 28,
+   "linea": 900,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "f) Contributi in c'esercizio",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 28,
+   "linea": 901,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "g) Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 11.835361,
+   "pagina": 28,
+   "linea": 902,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Totale valore della produzione (sez.A)",
+   "lado": "ingreso",
+   "M": 85.504496,
+   "pagina": 28,
+   "linea": 904,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6 Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 0.680841,
+   "pagina": 28,
+   "linea": 906,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Costi per attività sportiva",
+   "lado": "gasto",
+   "M": 0.903612,
+   "pagina": 28,
+   "linea": 908,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Costi specifici tecnici",
+   "lado": "gasto",
+   "M": 2.173394,
+   "pagina": 28,
+   "linea": 909,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Costi per vitto, alloggio e locomozione",
+   "lado": "gasto",
+   "M": 0.639227,
+   "pagina": 28,
+   "linea": 910,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Spese assicurative",
+   "lado": "gasto",
+   "M": 0.457939,
+   "pagina": 28,
+   "linea": 911,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) Spese amministrative",
+   "lado": "gasto",
+   "M": 2.794743,
+   "pagina": 28,
+   "linea": 912,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "f) Spese per pubblicità e promozione",
+   "lado": "gasto",
+   "M": 2.100366,
+   "pagina": 28,
+   "linea": 913,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "8 Per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 0.619381,
+   "pagina": 28,
+   "linea": 915,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Salari e stipendi",
+   "lado": "gasto",
+   "M": 40.843139,
+   "pagina": 28,
+   "linea": 917,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Oneri sociali",
+   "lado": "gasto",
+   "M": 1.992255,
+   "pagina": 28,
+   "linea": 918,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.13866,
+   "pagina": 28,
+   "linea": 919,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) Altri costi",
+   "lado": "gasto",
+   "M": 2.218706,
+   "pagina": 28,
+   "linea": 920,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Amm. delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 10.751668,
+   "pagina": 28,
+   "linea": 923,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a.1) Amm. Oneri pluriennali ex DL 282",
+   "lado": "gasto",
+   "M": 21.291053,
+   "pagina": 28,
+   "linea": 924,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Amm. delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 1.155707,
+   "pagina": 28,
+   "linea": 925,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Svalutaz. Delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 0.786029,
+   "pagina": 28,
+   "linea": 926,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
+   "lado": "gasto",
+   "M": 1.053465,
+   "pagina": 28,
+   "linea": 927,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "12 Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 10.928149,
+   "pagina": 28,
+   "linea": 929,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13 Altri accantonamenti",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 28,
+   "linea": 930,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Oneri tributari indiretti",
+   "lado": "gasto",
+   "M": 0.535138,
+   "pagina": 28,
+   "linea": 932,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Oneri su incassi",
+   "lado": "gasto",
+   "M": 10.055183,
+   "pagina": 28,
+   "linea": 933,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "b) da titoli iscritti nelle immob. che non cost. partec.",
+   "M": 0,
+   "linea": 946
+  },
+  {
+   "etiqueta": "d.1) da imprese controllate",
+   "M": 0.000239,
+   "linea": 948
+  },
+  {
+   "etiqueta": "d.2) da imprese collegate",
+   "M": 0,
+   "linea": 949
+  },
+  {
+   "etiqueta": "d.3) da imprese controllanti",
+   "M": 0,
+   "linea": 950
+  },
+  {
+   "etiqueta": "d.4) da terzi",
+   "M": 0.80324,
+   "linea": 951
+  },
+  {
+   "etiqueta": "d.4.1) da compart. ex art. 102 NOIF",
+   "M": 0,
+   "linea": 952
+  },
+  {
+   "etiqueta": "d.5) da imprese consociate",
+   "M": 0,
+   "linea": 953
+  },
+  {
+   "etiqueta": "a) verso imprese controllate",
+   "M": -0.002111,
+   "linea": 956
+  },
+  {
+   "etiqueta": "b) verso imprese controllanti",
+   "M": 0,
+   "linea": 957
+  },
+  {
+   "etiqueta": "c) da compartecip.ex art 102 NOIF",
+   "M": -1.032914,
+   "linea": 958
+  },
+  {
+   "etiqueta": "d) verso terzi",
+   "M": -7.147787,
+   "linea": 959
+  },
+  {
+   "etiqueta": "f) da imprese consociate",
+   "M": 0,
+   "linea": 960
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) imposte correnti",
+   "M": -1.331065,
+   "linea": 981
+  },
+  {
+   "etiqueta": "b) imposte differite",
+   "M": 0,
+   "linea": 982
+  },
+  {
+   "etiqueta": "c) imposte anticipate",
+   "M": 0.039879,
+   "linea": 983
+  }
+ ]
+}

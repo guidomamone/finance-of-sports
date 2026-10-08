@@ -7,3 +7,11 @@
 - **Por qué no hay más**: ascendió a la SuperSport HNL recién para 2025/26; la obligación del formulario F.02 de la licencia de primera división parece aplicar desde el ascenso. Wayback no tiene ninguna captura del dominio (no es un fallo de archive.org: la consulta devolvió vacío con el servicio funcionando para otros dominios el mismo día). `companywall.hr` muestra cifras de 2024 (ingresos ~995.653 EUR, utilidad neta ~33.346 EUR) sin PDF: no es el documento auditado.
 - **Para pasar de 1 a 5**: no hay canal público conocido para 2020-2024 (segunda división, sin obligación de licencia). Candidato a mail solo si Guido quiere insistir: pedir los balances 2021-2024 depositados en la FINA.
 - Último chequeo: 2026-10-03.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (descubierto con búsqueda semántica Exa) · barrido: 3 (Exa) — 2026-10-08
+
+3 documentos en carpeta (2021, 2025).
+
+- Nuevo: `Biljeske-2021.pdf` (notas a los estados 2021, 14 págs.). Ya había el ejercicio 2025.

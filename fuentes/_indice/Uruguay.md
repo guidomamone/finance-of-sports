@@ -10,3 +10,4 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Nacional](../Uruguay/Nacional.md) — sin PDF, solo cifras confirmadas por prensa · **Barrido 2026-10-03**: sin PDFs; Wayback, fideicomiso y prensa sin hallazgos nuevos — Último chequeo: 2026-10-03
 - [Peñarol](../Uruguay/Peñarol.md) — sin PDF, documento solo para socios · **Barrido 2026-10-03**: ejercicio 2018 (cierre 30-nov) público vía Wayback/aucdocumento; 2019 en adelante solo con login de socios — Último chequeo: 2026-10-03
 - [Notas generales de Uruguay](../Uruguay/_notas-generales.md)
+- [River Plate Montevideo](<../Uruguay/River Plate Montevideo.md>) — 2 documentos, años 2022-2024; sin cargar aún — Último chequeo: 2026-10-08

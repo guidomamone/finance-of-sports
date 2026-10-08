@@ -50,3 +50,12 @@
 - Bolsa de Santiago `ifrs/newobtenerpdf.asp?nemo=PALESTINO|PALESTIN|CDPALEST`: "EL ARCHIVO ... NO ESTA DISPONIBLE" (el club no tiene nemo ahí).
 - La URL de ficha CMF que figuraba en la nota (`cmfchile.cl/institucional/mercados/entidad.php?...`) hoy da 404 con curl
   (el sitio migró de ruta); no se retomó el flujo CMF porque el sitio oficial resolvió la tarea.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (descubierto con búsqueda semántica Exa) · barrido: 1 (Sonnet) — 2026-10-08
+
+10 documentos en carpeta (2017-2024).
+
+- Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar entidad y ejercicio antes de cargar.
+- Memorias (carpeta con 11 archivos, algunos ya existentes).

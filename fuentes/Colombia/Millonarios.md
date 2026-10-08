@@ -30,3 +30,9 @@
 - NIT 900430878 (Azul & Blanco Millonarios FC S.A.), 11 ejercicios en SIIS.
 - Bajado a `Clubes/Colombia/Millonarios/`: estados-financieros 2020, 2021, 2022, 2024 (+certificación y dictamen); 2023 devuelve 404 en documentos-adicionales (sin documentos depositados). Total en disco: 5 ejercicios con estados-financieros.
 - Ninguno transcripto ni cargado todavía.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 9 ejercicios (2016-2022, 2024-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

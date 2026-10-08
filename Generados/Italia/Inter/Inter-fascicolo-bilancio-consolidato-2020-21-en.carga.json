@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
+ "generado": "2026-10-08T19:23:29.258Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 7 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 7 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (consolidado); 5 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Management Report on operations July 1, 2020 - June 30, 2021"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "inter-it",
+ "year": 2021,
+ "cortadoEn": "filas"
+}

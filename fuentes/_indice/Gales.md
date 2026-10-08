@@ -19,3 +19,6 @@ Mismo Companies House que Inglaterra. Cardiff City, Swansea City y Wrexham está
 
 - Cardiff City, Swansea City y Wrexham: cargados bajo `Clubes/Inglaterra/`; ver [Cardiff City](../Inglaterra/Cardiff City.md), [Swansea City](../Inglaterra/Swansea City.md) y [Wrexham](../Inglaterra/Wrexham.md) en el índice de Inglaterra.
 - [Notas generales de Gales](../Gales/_notas-generales.md)
+- [Connahs Quay Nomads](<../Gales/Connahs Quay Nomads.md>) — 32 documentos, años 1993-2004, 2006-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Cardiff City](<../Gales/Cardiff City.md>) — 2 PDF de WorldFootball (temporadas 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Swansea City](<../Gales/Swansea City.md>) — 2 PDF de WorldFootball (temporadas 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08

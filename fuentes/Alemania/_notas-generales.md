@@ -212,3 +212,18 @@ para el final, como pidió Guido.
 Actualizar la tabla de la sección 4 cada vez que se confirme o se descarte un club nuevo. Si el
 bloqueo del Browser pane de la sección 1 vuelve a pasar, no tratarlo como un límite permanente del
 portal — es un estado de la sesión, se resuelve solo cuando el panel vuelve a estar visible.
+
+## Barrido 2026-10-08 (año de sourcing 2023): documentos de liga de WorldFootball
+
+La ficha financiera de cada club en `worldfootball.com/financials` enlaza, además de informes propios, los **documentos de LIGA** (los mismos para todos los clubes del país). Se guardaron una sola vez en `Clubes/Alemania/_WorldFootball-documentos-de-liga/` (9 PDF; fuente secundaria/espejo de los originales oficiales de la liga):
+  - `wf-src-Clubs-der-2.-Bundesliga-2023-24-FINAL-Geschaeftsjahresende-2022.pdf`
+  - `wf-src-Clubs-der-2.-Bundesliga-2024-25-Geschaeftsjahresende-2023.pdf`
+  - `wf-src-Clubs-der-Bundesliga-2023-24-FINAL-Geschaeftsjahresende-2022.pdf`
+  - `wf-src-Clubs-der-Bundesliga-2023-24_Vor-Relegation_Geschaeftsjahresende-2022.pdf`
+  - `wf-src-Clubs-der-Bundesliga-2024-25-Geschaeftsjahresende-2023.pdf`
+  - `wf-src-clubs-der-2-bundesliga-2025-2026-geschaeftsjahresende-2024.pdf`
+  - `wf-src-clubs-der-2-bundesliga-2026-2027-geschaeftsjahresende-2025.pdf`
+  - `wf-src-clubs-der-bundesliga-2025-2026-geschaeftsjahresende-2024.pdf`
+  - `wf-src-clubs-der-bundesliga-2026-2027-geschaeftsjahresende-2025.pdf`
+
+Ojo: son agregados de varios clubes (como los de `_DFL-Finanzkennzahlen`, `_Bundesliga-Finanzkennzahlen`, etc.); no se asignan a ningún club en particular. Años nuevos respecto de lo que había: ver nombres de archivo.

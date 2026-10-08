@@ -979,42 +979,40 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 35 ---
 
-**AS • ROMA**
-
 Il Capitale corrente netto riclassificato, rappresentativo del capitale circolante, che non include le componenti finanziarie (fra cui le disponibilità liquide), è negativo per 178,2 milioni di euro, con una variazione negativa di 56 milioni di euro rispetto al 30 giugno 2019.
 
-|  (€/000) | 30/06/2020 | 30/06/2019 | Variazioni  |
-| --- | --- | --- | --- |
-|  Rimanenze | 1.454 | 1.293 | 161  |
-|  Crediti Commerciali | 73.522 | 58.044 | 15.478  |
-|  Altre attività correnti | 22.022 | 15.973 | 6.049  |
-|  Crediti per Imposte | 4.028 | 1.413 | 2.614  |
-|  Totale attività correnti riclassificate | 101.026 | 76.723 | 24.303  |
-|  Debiti Commerciali | 167.286 | 132.084 | 35.202  |
-|  Debiti Tributari | 15.492 | 11.993 | 3.499  |
-|  Debiti verso istituti previdenziali | 3.035 | 1.706 | 1.329  |
-|  Fondi per rischi ed oneri | 250 | 0 | 250  |
-|  Altre passività correnti | 93.144 | 53.123 | 40.022  |
-|  Totale passività correnti riclassificate | 279.207 | 198.905 | 80.301  |
-|  Capitale corrente netto riclassificato | (178.181) | (122.182) | (55.999)  |
+| (€/000) | 30/06/2020 | 30/06/2019 | Variazioni |
+|---|---|---|---|
+| Rimanenze | 1.454 | 1.293 | 161 |
+| Crediti Commerciali | 73.522 | 58.044 | 15.478 |
+| Altre attività correnti | 22.022 | 15.973 | 6.049 |
+| Crediti per Imposte | 4.028 | 1.413 | 2.614 |
+| Totale attività correnti riclassificate | 101.026 | 76.723 | 24.303 |
+| Debiti Commerciali | 167.286 | 132.084 | 35.202 |
+| Debiti Tributari | 15.492 | 11.993 | 3.499 |
+| Debiti verso istituti previdenziali | 3.035 | 1.706 | 1.329 |
+| Fondi per rischi ed oneri | 250 | 0 | 250 |
+| Altre passività correnti | 93.144 | 53.123 | 40.022 |
+| Totale passività correnti riclassificate | 279.207 | 198.905 | 80.301 |
+| Capitale corrente netto riclassificato | (178.181) | (122.182) | (55.999) |
 
 Si segnala che al 30 giugno 2020, i debiti verso fornitori scaduti sono pari a 23,9 milioni di euro, relativi principalmente ad agenti e consulenti sportivi.
 
 Il Patrimonio netto consolidato al 30 giugno 2020 è negativo per 242,4 milioni di euro, in peggioramento di 115 milioni di euro rispetto al 30 giugno 2019 per effetto (i) della contabilizzazione della perdita del periodo, pari a 204 milioni di euro; (ii) della copertura della perdita d'esercizio di A.S Roma S.p.A. al 30 giugno 2019 pari a 20 milioni di euro mediante compensazione per un pari importo a valere della Riserva copertura perdite infrannuali; (iii) dal riporto a nuovo della residua perdita del Gruppo al 30 giugno 2019 pari a 4,3 milioni di euro (iv) dell'incremento pari a 89,1 milioni di euro della Riserva azionisti c/ aumento di capitale, determinato dal versamento per 60 milioni di euro effettuato dalla controllante NEEP Roma Holding S.p.A., e dalla conversione in "Riserva Azionisti c/ aumento di capitale" dell'intero ammontare, pari a 29,1 milioni di euro, dei finanziamenti soci da questa effettuati in esercizi precedenti.
 
-|  (€/000) | 30/06/2020 | 30/06/2019 | Variazioni  |
-| --- | --- | --- | --- |
-|  Capitale sociale | 93.942 | 93.942 | -  |
-|  Riserva Legale | - | - | -  |
-|  Riserva Azionisti c/Aumento di capitale | 89.080 | - | 89.080  |
-|  Riserva FTA | (85.933) | (85.933) | -  |
-|  Riserve perdite attuariali | (1.039) | (1.455) | 417  |
-|  Riserve copertura perdite infrannuali | 3.394 | 23.393 | (19.999)  |
-|  Perdite portate a nuovo | (136.846) | (132.550) | (4.295)  |
-|  Perdita di esercizio | (204.028) | (24.294) | (179.734)  |
-|  Patrimonio netto del Gruppo | (241.429) | (126.897) | (114.532)  |
-|  Patrimonio di terzi | (1.020) | (555) | (465)  |
-|  Totale Patrimonio Netto | (242.448) | (127.452) | (114.996)  |
+| (€/000) | 30/06/2020 | 30/06/2019 | Variazioni |
+|---|---|---|---|
+| Capitale sociale | 93.942 | 93.942 | - |
+| Riserva Legale | - | - | - |
+| Riserva Azionisti c/Aumento di capitale | 89.080 | - | 89.080 |
+| Riserva FTA | (85.933) | (85.933) | - |
+| Riserve perdite attuariali | (1.039) | (1.455) | 417 |
+| Riserve copertura perdite infrannuali | 3.394 | 23.393 | (19.999) |
+| Perdite portate a nuovo | (136.846) | (132.550) | (4.295) |
+| Perdita di esercizio | (204.028) | (24.294) | (179.734) |
+| Patrimonio netto del Gruppo | (241.429) | (126.897) | (114.532) |
+| Patrimonio di terzi | (1.020) | (555) | (465) |
+| Totale Patrimonio Netto | (242.448) | (127.452) | (114.996) |
 
 I prospetti di raccordo tra il Patrimonio netto separato ed il Risultato d'esercizio dell'A.S. Roma S.p.A. ed il Patrimonio netto consolidato e il Risultato Consolidato dell'esercizio, sono riportati nell'apposita sezione dei Prospetti di informativa supplementari delle Note Illustrative, a cui si fa esplicito rinvio.
 
@@ -1022,9 +1020,7 @@ L'Indebitamento finanziario netto *adjusted* al 30 giugno 2020 evidenzia un inde
 
 Nel dettaglio, l'Indebitamento finanziario netto *adjusted* al 30 giugno 2020 si compone di disponibilità liquide, per 7,7 milioni di euro (18,1 milioni di euro, al 30 giugno 2019), attività finanziarie non correnti, per 10 milioni di euro (16,7 milioni di euro, al 30 giugno 2019), e indebitamento, per complessivi 317,5 milioni di euro (255,5 milioni di euro, al 30 giugno 2019):
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-33
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 33
 
 --- pág. 36 ---
 
@@ -2228,53 +2224,49 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 75 ---
 
-**AS • ROMA**
+SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA (*)
 
-# **SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA (\*)**
+(in €/migliaia)
 
-*(in €/migliaia)*
+| PASSIVO | note | 30/06/2020 | 30/06/2019 |
+|---|---|---|---|
+| **PATRIMONIO NETTO** | | | |
+| Capitale sociale | | 93.942 | 93.942 |
+| Riserva perdite attuariali | | (1.039) | (1.455) |
+| Riserva First Time Adoption | | (85.933) | (85.933) |
+| Riserve copertura perdite infrannuali | | 3.394 | 23.393 |
+| Riserva azionisti c/aumento di capitale | | 89.080 | - |
+| Perdita portata a nuovo | | (136.846) | (132.550) |
+| Perdita di esercizio | | (204.028) | (24.294) |
+| Patrimonio netto del Gruppo AS Roma | | (241.429) | (126.897) |
+| Patrimonio netto di Terzi | | (1.020) | (555) |
+| Totale Patrimonio Netto | 7.11 | (242.448) | (127.452) |
+| **PASSIVITA' NON CORRENTI** | | | |
+| Finanziamenti a medio lungo termine | 7.12 | 262.269 | 211.819 |
+| Debiti finanziari per diritti d'uso | 7.13 | 22.293 | - |
+| Fondo TFR benefici a dipendenti | 7.15 | 4.575 | 4.669 |
+| Debiti commerciali | 7.16 | 87.862 | 96.410 |
+| Fondo rischi per imposte | 7.17 | 0 | 1.465 |
+| Debiti Tributari | 7.18 | 1.538 | 64 |
+| Fondi per rischi ed oneri | 7.19 | 8.373 | 2.671 |
+| Altre passività | 7.21 | 9.353 | 10.765 |
+| Totale Passività non correnti | | 396.264 | 327.863 |
+| **PASSIVITA' CORRENTI** | | | |
+| Debiti commerciali | 7.16 | 167.286 | 132.084 |
+| Finanziamenti a breve termine | 7.12 | 27.601 | 43.632 |
+| Debiti finanziari per diritti d'uso | 7.13 | 5.345 | - |
+| Debiti Tributari | 7.18 | 15.492 | 11.993 |
+| Debiti verso istituti previdenziali | 7.20 | 3.035 | 1.706 |
+| Fondi per rischi ed oneri a breve termine | 7.19 | 250 | - |
+| Altre passività | 7.21 | 93.144 | 53.123 |
+| Totale Passività correnti | | 312.153 | 242.538 |
+| TOTALE PASSIVITA' E PATRIMONIO NETTO | | 465.968 | 442.948 |
 
-|  PASSIVO | note | 30/06/2020 | 30/06/2019  |
-| --- | --- | --- | --- |
-|  **PATRIMONIO NETTO**  |   |   |   |
-|  Capitale sociale |  | 93.942 | 93.942  |
-|  Riserva perdite attuariali |  | (1.039) | (1.455)  |
-|  Riserva First Time Adoption |  | (85.933) | (85.933)  |
-|  Riserve copertura perdite infrannuali |  | 3.394 | 23.393  |
-|  Riserva azionisti c/aumento di capitale |  | 89.080 | -  |
-|  Perdita portata a nuovo |  | (136.846) | (132.550)  |
-|  Perdita di esercizio |  | (204.028) | (24.294)  |
-|  Patrimonio netto del Gruppo AS Roma |  | (241.429) | (126.897)  |
-|  Patrimonio netto di Terzi |  | (1.020) | (555)  |
-|  **Totale Patrimonio Netto** | **7.11** | **(242.448)** | **(127.452)**  |
-|  **PASSIVITA' NON CORRENTI**  |   |   |   |
-|  Finanziamenti a medio lungo termine | 7.12 | 262.269 | 211.819  |
-|  Debiti finanziari per diritti d'uso | 7.13 | 22.293 | -  |
-|  Fondo TFR benefici a dipendenti | 7.15 | 4.575 | 4.669  |
-|  Debiti commerciali | 7.16 | 87.862 | 96.410  |
-|  Fondo rischi per imposte | 7.17 | 0 | 1.465  |
-|  Debiti Tributari | 7.18 | 1.538 | 64  |
-|  Fondi per rischi ed oneri | 7.19 | 8.373 | 2.671  |
-|  Altre passività | 7.21 | 9.353 | 10.765  |
-|  **Totale Passività non correnti** |  | **396.264** | **327.863**  |
-|  **PASSIVITA' CORRENTI**  |   |   |   |
-|  Debiti commerciali | 7.16 | 167.286 | 132.084  |
-|  Finanziamenti a breve termine | 7.12 | 27.601 | 43.632  |
-|  Debiti finanziari per diritti d'uso | 7.13 | 5.345 | -  |
-|  Debiti Tributari | 7.18 | 15.492 | 11.993  |
-|  Debiti verso istituti previdenziali | 7.20 | 3.035 | 1.706  |
-|  Fondi per rischi ed oneri a breve termine | 7.19 | 250 | -  |
-|  Altre passività | 7.21 | 93.144 | 53.123  |
-|  **Totale Passività correnti** |  | **312.153** | **242.538**  |
-|  **TOTALE PASSIVITA' E PATRIMONIO NETTO** |  | **465.968** | **442.948**  |
+(*) Ai sensi della Delibera Consob n. 15519 del 27 luglio 2006, gli effetti dei rapporti con parti correlate sulla Situazione Patrimoniale – Finanziaria Consolidata sono evidenziati nell'apposita Situazione Patrimoniale - Finanziaria consolidata riportata nelle pagine successive
 
-(\*) Ai sensi della Delibera Consob n. 15519 del 27 luglio 2006, gli effetti dei rapporti con parti correlate sulla Situazione Patrimoniale – Finanziaria Consolidata sono evidenziati nell'apposita Situazione Patrimoniale – Finanziaria consolidata riportata nelle pagine successive
+Le note illustrative sono parte integrante del Bilancio Consolidato
 
-*Le note illustrative sono parte integrante del Bilancio Consolidato*
-
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-**73**
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 73
 
 --- pág. 76 ---
 
@@ -2444,96 +2436,88 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 79 ---
 
-**AS • ROMA**
-
-## SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
+SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
 
 Con evidenza dei rapporti con parti correlate, ai sensi della Delibera Consob n. 155/19 del 27 luglio 2006
 
 (in €/migliaia)
 
-|  ATTIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate  |
-| --- | --- | --- | --- | --- | --- |
-|  **ATTIVITA' NON CORRENTI**  |   |   |   |   |   |
-|  Diritti pluriennali alle prestazioni sportive dei calciatori | 7.1 | 268.822 |  | 253.825 |   |
-|  Altre immobilizzazioni immateriali | 7.2 | 19.097 |  | 21.921 |   |
-|  Attività immateriali |  | 287.919 | - | 275.746 | -  |
-|  Fabbricati |  | 4.770 |  | 3.380 |   |
-|  Impianti e macchinari |  | 515 |  | 507 |   |
-|  Attrezzature industriali e commerciali |  | 140 |  | 141 |   |
-|  Altre immobilizzazioni |  | 1.392 |  | 1.386 |   |
-|  Immobilizzazioni in corso ed acconti |  | 3.248 |  | 1.994 |   |
-|  Attività materiali | 7.3 | 10.065 | - | 7.408 | -  |
-|  Diritti d'uso | 7.4 | 25.832 | 10.699 |  |   |
-|  Crediti commerciali | 7.6 | 20.127 |  | 44.398 |   |
-|  Attività finanziarie non correnti | 7.7 | 10.045 |  | 16.733 |   |
-|  Altre attività | 7.8 | 3.248 | 2.700 | 3.851 | 2.700  |
-|  Altre attività non correnti |  | 33.419 | 2.700 | 64.981 | 2.700  |
-|  Totale attività non correnti |  | 357.236 | 13.399 | 348.134 | 2.700  |
-|  **ATTIVITA' CORRENTI**  |   |   |   |   |   |
-|  Rimanenze | 7.5 | 1.454 |  | 1.293 |   |
-|  Crediti commerciali | 7.6 | 73.522 | 2.464 | 58.044 | 2.257  |
-|  Altre attività | 7.8 | 22.022 | 4.220 | 15.973 | 4.146  |
-|  Crediti per imposte | 7.9 | 4.028 |  | 1.413 |   |
-|  Disponibilità liquide e mezzi equivalenti | 7.10 | 7.706 |  | 18.092 |   |
-|  Totale attività correnti |  | 108.732 | 6.684 | 94.815 | 6.403  |
-|  **TOTALE ATTIVITA'** |  | **465.968** | **20.083** | **442.949** | **9.103**  |
-
-*Le note illustrative sono parte integrante del Bilancio Consolidato*
-
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-77
-
---- pág. 80 ---
-
-**AS • ROMA**
-
-## SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
-
-Con evidenza dei rapporti con parti correlate, ai sensi della Delibera Consob n. 155/19 del 27 luglio 2006
-
-(in €/migliaia)
-
-|  PASSIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate  |
-| --- | --- | --- | --- | --- | --- |
-|  **PATRIMONIO NETTO**  |   |   |   |   |   |
-|  Capitale sociale |  | 93.942 |  | 93.942 |   |
-|  Riserva perdite attuariali |  | (1.039) |  | (1.455) |   |
-|  Riserva First Time Adoption |  | (85.933) |  | (85.933) |   |
-|  Riserve copertura perdite infrannuali |  | 3.394 |  | 23.393 |   |
-|  Riserva azionisti c/aumento di capitale |  | 89.080 |  | - |   |
-|  Perdita portata a nuovo |  | (136.846) |  | (132.550) |   |
-|  Perdita dell'esercizio |  | (204.028) | (2.012) | (24.294) | (3.337)  |
-|  Patrimonio netto del Gruppo AS Roma |  | (241.429) | (2.012) | (126.897) | (3.337)  |
-|  Patrimonio netto di Terzi |  | (1.020) |  | (555) |   |
-|  **Totale Patrimonio Netto** | **7.11** | **(242.448)** | **(2.012)** | **(127.452)** | **(3.337)**  |
-|  **PASSIVITA' NON CORRENTI**  |   |   |   |   |   |
-|  Finanziamenti a medio lungo termine | 7.12 | 262.269 |  | 211.819 | 24.400  |
-|  Debiti finanziari per diritti d'uso | 7.13 | 22.293 | 8.735 | - |   |
-|  Fondo TFR benefici a dipendenti | 7.15 | 4.575 |  | 4.669 |   |
-|  Debiti commerciali | 7.16 | 87.862 |  | 96.410 |   |
-|  Fondo rischi per imposte | 7.17 | 0 |  | 1.465 |   |
-|  Debiti Tributari | 7.18 | 1.538 |  | 64 |   |
-|  Fondi per rischi ed oneri | 7.19 | 8.373 |  | 2.671 |   |
-|  Altre passività | 7.21 | 9.353 |  | 10.765 |   |
-|  **Totale Passività non correnti** |  | **396.264** | **8.735** | **327.863** | **24.400**  |
-|  **PASSIVITA' CORRENTI**  |   |   |   |   |   |
-|  Debiti commerciali | 7.16 | 167.286 | 124 | 132.084 | 919  |
-|  Finanziamenti a breve termine | 7.12 | 27.601 | 10.061 | 43.632 | 4.680  |
-|  Debiti finanziari per diritti d'uso | 7.13 | 5.345 | 3.414 | - |   |
-|  Debiti Tributari | 7.18 | 15.492 |  | 11.993 |   |
-|  Debiti verso istituti previdenziali | 7.20 | 3.035 |  | 1.706 |   |
-|  Fondi per rischi ed oneri a breve termine | 7.19 | 250 |  | - |   |
-|  Altre passività | 7.21 | 93.144 | 3.261 | 53.123 | 4.195  |
-|  **Totale Passività correnti** |  | **312.153** | **16.859** | **242.538** | **9.794**  |
-|  **TOTALE PASSIVITA' E PATRIMONIO NETTO** |  | **465.968** | **23.582** | **442.948** | **30.856**  |
+| ATTIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate |
+|---|---|---|---|---|---|
+| **ATTIVITA' NON CORRENTI** | | | | | |
+| Diritti pluriennali alle prestazioni sportive dei calciatori | 7.1 | 268.822 | | 253.825 | |
+| Altre immobilizzazioni immateriali | 7.2 | 19.097 | | 21.921 | |
+| Attività immateriali | | 287.919 | - | 275.746 | - |
+| Fabbricati | | 4.770 | | 3.380 | |
+| Impianti e macchinari | | 515 | | 507 | |
+| Attrezzature industriali e commerciali | | 140 | | 141 | |
+| Altre immobilizzazioni | | 1.392 | | 1.386 | |
+| Immobilizzazioni in corso ed acconti | | 3.248 | | 1.994 | |
+| Attività materiali | 7.3 | 10.065 | - | 7.408 | - |
+| Diritti d'uso | 7.4 | 25.832 | 10.699 | | |
+| Crediti commerciali | 7.6 | 20.127 | | 44.398 | |
+| Attività finanziarie non correnti | 7.7 | 10.045 | | 16.733 | |
+| Altre attività | 7.8 | 3.248 | 2.700 | 3.851 | 2.700 |
+| Altre attività non correnti | | 33.419 | 2.700 | 64.981 | 2.700 |
+| Totale attività non correnti | | 357.236 | 13.399 | 348.134 | 2.700 |
+| **ATTIVITA' CORRENTI** | | | | | |
+| Rimanenze | 7.5 | 1.454 | | 1.293 | |
+| Crediti commerciali | 7.6 | 73.522 | 2.464 | 58.044 | 2.257 |
+| Altre attività | 7.8 | 22.022 | 4.220 | 15.973 | 4.146 |
+| Crediti per imposte | 7.9 | 4.028 | | 1.413 | |
+| Disponibilità liquide e mezzi equivalenti | 7.10 | 7.706 | | 18.092 | |
+| Totale attività correnti | | 108.732 | 6.684 | 94.815 | 6.403 |
+| TOTALE ATTIVITA' | | 465.968 | 20.083 | 442.949 | 9.103 |
 
 Le note illustrative sono parte integrante del Bilancio Consolidato
 
-78
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 77
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+--- pág. 80 ---
+
+SITUAZIONE PATRIMONIALE-FINANZIARIA CONSOLIDATA
+
+Con evidenza dei rapporti con parti correlate, ai sensi della Delibera Consob n. 155/19 del 27 luglio 2006
+
+(in €/migliaia)
+
+| PASSIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate |
+|---|---|---|---|---|---|
+| **PATRIMONIO NETTO** | | | | | |
+| Capitale sociale | | 93.942 | | 93.942 | |
+| Riserva perdite attuariali | | (1.039) | | (1.455) | |
+| Riserva First Time Adoption | | (85.933) | | (85.933) | |
+| Riserve copertura perdite infrannuali | | 3.394 | | 23.393 | |
+| Riserva azionisti c/aumento di capitale | | 89.080 | | - | |
+| Perdita portata a nuovo | | (136.846) | | (132.550) | |
+| Perdita dell'esercizio | | (204.028) | (2.012) | (24.294) | (3.337) |
+| Patrimonio netto del Gruppo AS Roma | | (241.429) | (2.012) | (126.897) | (3.337) |
+| Patrimonio netto di Terzi | | (1.020) | | (555) | |
+| Totale Patrimonio Netto | 7.11 | (242.448) | (2.012) | (127.452) | (3.337) |
+| **PASSIVITA' NON CORRENTI** | | | | | |
+| Finanziamenti a medio lungo termine | 7.12 | 262.269 | | 211.819 | 24.400 |
+| Debiti finanziari per diritti d'uso | 7.13 | 22.293 | 8.735 | - | |
+| Fondo TFR benefici a dipendenti | 7.15 | 4.575 | | 4.669 | |
+| Debiti commerciali | 7.16 | 87.862 | | 96.410 | |
+| Fondo rischi per imposte | 7.17 | 0 | | 1.465 | |
+| Debiti Tributari | 7.18 | 1.538 | | 64 | |
+| Fondi per rischi ed oneri | 7.19 | 8.373 | | 2.671 | |
+| Altre passività | 7.21 | 9.353 | | 10.765 | |
+| Totale Passività non correnti | | 396.264 | 8.735 | 327.863 | 24.400 |
+| **PASSIVITA' CORRENTI** | | | | | |
+| Debiti commerciali | 7.16 | 167.286 | 124 | 132.084 | 919 |
+| Finanziamenti a breve termine | 7.12 | 27.601 | 10.061 | 43.632 | 4.680 |
+| Debiti finanziari per diritti d'uso | 7.13 | 5.345 | 3.414 | - | |
+| Debiti Tributari | 7.18 | 15.492 | | 11.993 | |
+| Debiti verso istituti previdenziali | 7.20 | 3.035 | | 1.706 | |
+| Fondi per rischi ed oneri a breve termine | 7.19 | 250 | | - | |
+| Altre passività | 7.21 | 93.144 | 3.261 | 53.123 | 4.195 |
+| Totale Passività correnti | | 312.153 | 16.859 | 242.538 | 9.794 |
+| TOTALE PASSIVITA' E PATRIMONIO NETTO | | 465.968 | 23.582 | 442.948 | 30.856 |
+
+Le note illustrative sono parte integrante del Bilancio Consolidato
+
+78 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 81 ---
 
@@ -3433,84 +3417,80 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 108 ---
 
-**AS • ROMA**
-
 Nella voce non sono inclusi i valori dei diritti alle prestazioni sportive dei calciatori acquisiti in regime di svincolo, ad eccezione di quelli per cui è stato sostenuto un costo relativo al procuratore sportivo, o provenienti dal settore giovanile.
 
 La tabella che segue riporta il dettaglio degli oneri accessori relativi a compensi non condizionati previsti nei contratti con agenti sportivi e con consulenti legali, oggetto di capitalizzazione nei Diritti pluriennali alle prestazioni sportive dei calciatori, con evidenza di quelli sostenuti nel dell'esercizio 2019/20:
 
-|  Calciatore | Costo di acquisto da società di calcio | Oneri accessori capitalizzati in esercizi precedenti | Oneri accessori capitalizzati nell'esercizio 2019/20 | Totale valore di carico | Fondo ammortamento oneri accessori al 30 giugno 2020 | Disinvestimenti / Svalutazioni | Valore contabile Netto oneri accessori al 30/06/2020  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Agostinelli | - | 120 | - | 120 | (60) | (60) | -  |
-|  Anscic | 150 | 250 | - | 400 | (250) | - | -  |
-|  Antonucci | - | 250 | - | 250 | (180) | - | 70  |
-|  Bamba | - | 35 | - | 35 | (19) | - | 16  |
-|  Besujen | 140 | 130 | - | 270 | (107) | (23) | -  |
-|  Bianda | 6.000 | 245 | - | 6.245 | (98) | - | 147  |
-|  Boer | 450 | - | - | 450 | - | - | -  |
-|  Bouah | - | 125 | 215 | 340 | (85) | - | 255  |
-|  Buso | 9 | 9 | - | 18 | (9) | - | -  |
-|  Calafiori | - | 35 | - | 35 | (19) | - | 16  |
-|  Capradossi | 130 | 60 | - | 190 | (47) | (13) | -  |
-|  Carpinelutti | 17 | - | - | 17 | - | - | -  |
-|  Celar | 810 | 50 | 80 | 940 | (51) | - | 79  |
-|  Celin | 3.000 | - | 1.300 | 4.300 | (223) | - | 1.077  |
-|  Chiussi | 160 | - | - | 160 | - | - | -  |
-|  Coly Sidy Koba | - | 168 | - | 168 | (128) | (40) | -  |
-|  Coric | 8.000 | 1.000 | - | 9.000 | (400) | - | 600  |
-|  Cristante | 29.000 | 600 | - | 29.600 | (224) | - | 376  |
-|  Darbox | 120 | - | - | 120 | - | - | -  |
-|  Defrel | 17.491 | - | - | 17.491 | - | - | -  |
-|  Diawara | 21.000 | - | 1.900 | 22.900 | (380) | - | 1.520  |
-|  D'orazio | - | - | 30 | 30 | (7) | - | 23  |
-|  Dzsiko | 21.053 | - | - | 21.053 | - | - | -  |
-|  El Sharaawy | 13.000 | - | - | 13.000 | - | - | -  |
-|  Fazio | 3.200 | - | - | 3.200 | - | - | -  |
-|  Florenzi | 2.500 | 2.000 | - | 4.500 | (758) | - | 1.242  |
-|  Fuzato | 500 | 1.000 | - | 1.500 | (496) | - | 504  |
-|  Gante | 200 | - | - | 200 | - | - | -  |
-|  Gerson | 18.600 | 1.500 | - | 20.100 | (892) | (608) | -  |
-|  Gonalons | 5.000 | 3.200 | - | 8.200 | (2.400) | - | 800  |
-|  Greco S. | 39 | - | 20 | 59 | (6) | - | 14  |
-|  Ibanez | 9.000 | - | 1.350 | 10.350 | (128) | - | 1.222  |
-|  Juan Jesus | 8.847 | - | - | 8.847 | - | - | -  |
-|  Karsdorp | 16.000 | 600 | - | 16.600 | (360) | - | 240  |
-|  Kluivert | 17.250 | 4.000 | - | 21.250 | (1.600) | - | 2.400  |
-|  Kolarov | 5.263 | 300 | - | 5.563 | (249) | - | 51  |
-|  Mancini | 23.000 | - | 1.700 | 24.700 | (328) | - | 1.372  |
-|  Marcano | - | 2.000 | - | 2.000 | (680) | (1.320) | -  |
-|  Masangu | - | 457 | - | 457 | (457) | - | -  |
-|  Mirante | 4.000 | 450 | - | 4.450 | (300) | - | 150  |
-|  Nani | 298 | 1.063 | - | 1.361 | (1.063) | - | -  |
-|  Nzonzi | 27.931 | 1.500 | - | 29.431 | (727) | - | 773  |
-|  Olsen | 9.000 | 2.300 | - | 11.300 | (952) | - | 1.398  |
-|  Pastore | 24.661 | 1.000 | - | 25.661 | (400) | - | 600  |
-|  Pau Lopez | 24.046 | - | 1.500 | 25.546 | (294) | - | 1.206  |
-|  Pellegrini | 10.000 | 3.165 | - | 13.165 | (1.899) | - | 1.266  |
-|  Peres | 13.719 | - | - | 13.719 | - | - | -  |
-|  Perez | 12.000 | - | 1.500 | 13.500 | (141) | - | 1.359  |
-|  Perotti | 12.000 | 600 | - | 12.600 | (476) | - | 124  |
-|  Persson | 50 | 30 | - | 80 | (18) | - | 12  |
-|  Pezzella | 91 | - | 60 | 151 | (15) | - | 45  |
-|  Providence | 300 | - | 120 | 420 | (38) | - | 82  |
-|  Riccardi | - | 470 | - | 470 | (164) | - | 306  |
-|  Sediq | 2.580 | - | - | 2.580 | - | - | -  |
-|  Santon | 9.500 | 500 | - | 10.000 | (250) | - | 250  |
-|  Schick | 38.393 | 2.730 | - | 41.123 | (1.499) | - | 1.231  |
-|  Seck | - | 1.000 | - | 1.000 | (747) | (153) | 100  |
-|  Spinazzola | 29.500 | - | 1.300 | 30.800 | (222) | - | 1.078  |
-|  Tali | - | - | 150 | 150 | (21) | - | 129  |
-|  Under | 15.532 | 1.350 | - | 16.882 | (744) | - | 606  |
-|  Valeau | 109 | - | 25 | 134 | (6) | - | 19  |
-|  Verde | 200 | - | - | 200 | - | - | -  |
-|  Veretueut | 17.000 | - | 1.500 | 18.500 | (288) | - | 1.212  |
-|  Villar | 4.000 | - | 1.000 | 5.000 | (94) | - | 906  |
-|  Zariolo | 4.500 | 1.200 | 800 | 6.500 | (580) | - | 1.420  |
-|  **TOTALE** | **489.339** | **35.492** | **14.550** | **539.381** | **(21.531)** | **(2.216)** | **26.295**  |
+| Calciatore | Costo di acquisto da società di calcio | Oneri accessori capitalizzati in esercizi precedenti | Oneri accessori capitalizzati nell'esercizio 2019/20 | Totale valore di carico | Fondo ammortamento oneri accessori al 30 giugno 2020 | Disinvestimenti / Svalutazioni | Valore contabile Netto oneri accessori al 30/06/2020 |
+|---|---|---|---|---|---|---|---|
+| Agostinelli | - | 120 | - | 120 | (60) | (60) | - |
+| Anocic | 150 | 250 | - | 400 | (250) | - | - |
+| Antonucci | - | 250 | - | 250 | (180) | - | 70 |
+| Bamba | - | 35 | - | 35 | (19) | - | 16 |
+| Besuijen | 140 | 130 | - | 270 | (107) | (23) | - |
+| Bianda | 6.000 | 245 | - | 6.245 | (98) | - | 147 |
+| Boer | 450 | - | - | 450 | | - | - |
+| Bouah | - | 125 | 215 | 340 | (85) | - | 255 |
+| Buso | 9 | 9 | - | 18 | (9) | - | - |
+| Calafiori | - | 35 | - | 35 | (19) | - | 16 |
+| Capradossi | 130 | 60 | - | 190 | (47) | (13) | - |
+| Cargnelutti | 17 | - | - | 17 | | - | - |
+| Celar | 810 | 50 | 80 | 940 | (51) | - | 79 |
+| Cetin | 3.000 | - | 1.300 | 4.300 | (223) | - | 1.077 |
+| Chiossi | 160 | - | - | 160 | | - | - |
+| Coly Sidy Keba | - | 168 | - | 168 | (128) | (40) | - |
+| Coric | 8.000 | 1.000 | - | 9.000 | (400) | - | 600 |
+| Cristante | 29.000 | 600 | - | 29.600 | (224) | - | 376 |
+| Darboe | 120 | - | - | 120 | | - | - |
+| Defrel | 17.491 | - | - | 17.491 | | - | - |
+| Diawara | 21.000 | - | 1.900 | 22.900 | (380) | - | 1.520 |
+| D'orazio | - | - | 30 | 30 | (7) | - | 23 |
+| Dzeko | 21.053 | - | - | 21.053 | | - | - |
+| El Sharaawy | 13.000 | - | - | 13.000 | | - | - |
+| Fazio | 3.200 | - | - | 3.200 | | - | - |
+| Florenzi | 2.500 | 2.000 | - | 4.500 | (758) | - | 1.242 |
+| Fuzato | 500 | 1.000 | - | 1.500 | (496) | - | 504 |
+| Gante | 200 | - | - | 200 | | - | - |
+| Gerson | 18.600 | 1.500 | - | 20.100 | (892) | (608) | - |
+| Gonalons | 5.000 | 3.200 | - | 8.200 | (2.400) | - | 800 |
+| Greco S. | 39 | - | 20 | 59 | (6) | - | 14 |
+| Ibanez | 9.000 | - | 1.350 | 10.350 | (128) | - | 1.222 |
+| Juan Jesus | 8.847 | - | - | 8.847 | | - | - |
+| Karsdorp | 16.000 | 600 | - | 16.600 | (360) | - | 240 |
+| Kluivert | 17.250 | 4.000 | - | 21.250 | (1.600) | - | 2.400 |
+| Kolarov | 5.263 | 300 | - | 5.563 | (249) | - | 51 |
+| Mancini | 23.000 | - | 1.700 | 24.700 | (328) | - | 1.372 |
+| Marcano | - | 2.000 | - | 2.000 | (680) | (1.320) | - |
+| Masangu | - | 457 | - | 457 | (457) | - | - |
+| Mirante | 4.000 | 450 | - | 4.450 | (300) | - | 150 |
+| Nani | 298 | 1.063 | - | 1.361 | (1.063) | - | - |
+| Nzonzi | 27.931 | 1.500 | - | 29.431 | (727) | - | 773 |
+| Olsen | 9.000 | 2.300 | - | 11.300 | (902) | - | 1.398 |
+| Pastore | 24.661 | 1.000 | - | 25.661 | (400) | - | 600 |
+| Pau Lopez | 24.046 | - | 1.500 | 25.546 | (294) | - | 1.206 |
+| Pellegrini | 10.000 | 3.165 | - | 13.165 | (1.899) | - | 1.266 |
+| Peres | 13.719 | - | - | 13.719 | | - | - |
+| Perez | 12.000 | - | 1.500 | 13.500 | (141) | - | 1.359 |
+| Perotti | 12.000 | 600 | - | 12.600 | (476) | - | 124 |
+| Persson | 50 | 30 | - | 80 | (18) | - | 12 |
+| Pezzella | 91 | - | 60 | 151 | (15) | - | 45 |
+| Providence | 300 | - | 120 | 420 | (38) | - | 82 |
+| Riccardi | - | 470 | - | 470 | (164) | - | 306 |
+| Sadiq | 2.580 | - | - | 2.580 | | - | - |
+| Santon | 9.500 | 500 | - | 10.000 | (250) | - | 250 |
+| Schick | 38.393 | 2.730 | - | 41.123 | (1.499) | - | 1.231 |
+| Seck | - | 1.000 | - | 1.000 | (747) | (153) | 100 |
+| Spinazzola | 29.500 | - | 1.300 | 30.800 | (222) | - | 1.078 |
+| Tall | - | - | 150 | 150 | (21) | - | 129 |
+| Under | 15.532 | 1.350 | - | 16.882 | (744) | - | 606 |
+| Valeau | 109 | - | 25 | 134 | (6) | - | 19 |
+| Verde | 200 | - | - | 200 | - | - | - |
+| Veretuout | 17.000 | - | 1.500 | 18.500 | (288) | - | 1.212 |
+| Villar | 4.000 | - | 1.000 | 5.000 | (94) | - | 906 |
+| Zaniolo | 4.500 | 1.200 | 800 | 6.500 | (580) | - | 1.420 |
+| TOTALE | 489.339 | 35.492 | 14.550 | 539.381 | (21.531) | (2.216) | 26.295 |
 
-106
-
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+106 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 109 ---
 
@@ -4892,81 +4872,78 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 143 ---
 
-**AS • ROMA**
+| 12 mesi stagione 2019/20 – Calciatore / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata |
+|---|---|---|---|
+| El Shaarawy / Shanghai | 16.000 | 3.188 | 12.812 |
+| Gerson / Flamengo | 11.800 | 7.999 | 3.801 |
+| Marcano / Porto | 3.000 | 1.395 | 1.605 |
+| Sadiq/Partizan | 1.750 | 727 | 1.023 |
+| Cangiano / Bologna | 750 | 0 | 750 |
+| Verde / AEK Athene | 700 | 42 | 658 |
+| Agostinelli/Fiorentina | 240 | 61 | 179 |
+| Capradossi / Spezia | 100 | 65 | 35 |
+| Totale | 34.340 | 13.477 | 20.863 |
+| Adeguamento IFRS 9 | | | (711) |
+| Totale plusvalenze nette | 34.340 | 13.477 | 20.152 |
 
-|  12 mesi stagione 2019/20 Calciatorie / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata  |
-| --- | --- | --- | --- |
-|  El Shaarawy / Shanghai | 16.000 | 3.188 | 12.812  |
-|  Gerson / Flamengo | 11.800 | 7.999 | 3.801  |
-|  Marcano / Porto | 3.000 | 1.395 | 1.605  |
-|  Sadiq/Partizan | 1.750 | 727 | 1.023  |
-|  Cangiano / Bologna | 750 | 0 | 750  |
-|  Verde / AEK Athene | 700 | 42 | 658  |
-|  Agostinelli/Fiorentina | 240 | 61 | 179  |
-|  Capradossi / Spezia | 100 | 65 | 35  |
-|  **Totale** | **34.340** | **13.477** | **20.863**  |
-|  Adeguamento IFRS 9 |  |  | (710)  |
-|  **Totale plusvalenze nette** | **34.340** | **13.477** | **20.152**  |
-
-|  12 mesi stagione 2018/19 Calciatorie / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata  |
-| --- | --- | --- | --- |
-|  Alisson / Liverpool | 62.500 | 4.894 | 57.606  |
-|  Manoley/Napoli | 36.000 | 4.876 | 31.124  |
-|  Pellegrini/Juventus | 22.000 | 903 | 21.097  |
-|  Strootman / Ol. Marseille | 24.375 | 7.129 | 17.246  |
-|  Radonjic / Stella Rossa | 2.700 | 789 | 1.911  |
-|  Ponce/Spartak Mosca | 3.000 | 1.510 | 1.490  |
-|  Romagnoli/Spartak Mosca | 3.000 | 0 | 3.000  |
-|  Gyomber / Perugia | 500 | 438 | 62  |
-|  **Totale** | **154.075** | **20.539** | **133.536**  |
-|  Adeguamento IFRS 9 |  |  | (3.456)  |
-|  **Totale plusvalenze nette** | **154.075** | **20.539** | **130.080**  |
+| 12 mesi stagione 2018/19 – Calciatore / Società acquirente | Valore di cessione | Valore netto contabile | Plusvalenza realizzata |
+|---|---|---|---|
+| Alisson / Liverpool | 62.500 | 4.894 | 57.606 |
+| Manolas/Napoli | 36.000 | 4.876 | 31.124 |
+| Pellegrini/Juventus | 22.000 | 903 | 21.097 |
+| Strootman / Ol. Marseille | 24.375 | 7.129 | 17.246 |
+| Radonjic / Stella Rossa | 2.700 | 789 | 1.911 |
+| Ponce/Spartak Mosca | 3.000 | 1.510 | 1.490 |
+| Romagnoli/Spartak Mosca | 3.000 | 0 | 3.000 |
+| Gyomber / Perugia | 500 | 438 | 62 |
+| Totale | 154.075 | 20.539 | 133.536 |
+| Adeguamento IFRS 9 | | | (3.456) |
+| Totale plusvalenze nette | 154.075 | 20.539 | 130.080 |
 
 Le minusvalenze e svalutazioni realizzate, pari a 2.436 migliaia di euro (1.323 migliaia di euro al 30 giugno 2019), sono determinate da operazioni di mercato realizzate nel corso dell'esercizio e da risoluzioni contrattuali. Inoltre, le svalutazioni al 30 giugno 2020 sono state operate anche tenendo conto dei valori di cessione definiti successivamente alla chiusura dell'esercizio, riferite in particolare alla svalutazione del valore dei diritti pluriennali del calciatore Perotti, ceduti a titolo definitivo nel mese di ottobre 2020.
 
 I Ricavi per cessioni temporanee si riferiscono in particolare alla cessione in prestito dei DPS dei calciatori Schick, al RasenBallsport Leipzig, e Defrel al Sassuolo, mentre gli oneri per cessioni temporanee di DPS, si riferiscono in particolare ai prestiti dei DPS dei calciatori Smalling, dal Manchester United, Kalinic dall'Atletico Madrid, e Mkhitaryan dall'Arsenal:
 
-# **Ricavi per cessioni temporanee al 30 giugno 2020:**
+Ricavi per cessioni temporanee al 30 giugno 2020:
 
-|  Schick / RasenBallsport Leipzig | 2.785  |
-| --- | --- |
-|  Defrel / Sassuolo | 2.707  |
-|  Bruno Peres / Sao Paulo | 443  |
-|  Coric / Almeira | 341  |
-|  Sadiq / Partizan | 100  |
-|  **Totale** | **6.376**  |
+| | |
+|---|---|
+| Schick / RasenBallsport Leipzig | 2.785 |
+| Defrel / Sassuolo | 2.707 |
+| Bruno Peres / Sao Paulo | 443 |
+| Coric / Almeira | 341 |
+| Sadiq / Partizan | 100 |
+| Totale | 6.376 |
 
-# **Oneri per acquisti temporanei al 30 giugno 2020:**
+Oneri per acquisti temporanei al 30 giugno 2020:
 
-|  Smalling / Manchester United | (3.000)  |
-| --- | --- |
-|  Mkhitaryan / Arsenal | (2.489)  |
-|  Kalinic / Atletico Madrid | (1.782)  |
-|  Galeazzi / Ferroviaria | (42)  |
-|  **Totale** | **(7.313)**  |
+| | |
+|---|---|
+| Smalling / Manchester United | (3.000) |
+| Mkhitaryan / Arsenal | (2.489) |
+| Kalinic / Atletico Madrid | (1.782) |
+| Galeazzi / Ferroviaria | (42) |
+| Totale | (7.313) |
 
 Si segnala che tali valori risentono dell'estensione della stagione sportiva 2019/20 fino al 31 agosto 2020, operata nell'ambito delle misure restrittive adottate dalla FIGC e dalla UEFA per contrastare la diffusione del virus COVID-19, che ha comportato il rinvio all'esercizio 2020/21 della contabilizzazione di una parte dei ricavi e costi riferiti alla stagione sportiva 2019/20.
 
 Gli altri ricavi/oneri sono relativi a contributi di solidarietà FIFA e bonus riconosciuti da/a squadre di calcio relativamente al trasferimento di calciatori, a commissioni riconosciute ad intermediari sportivi per attività svolte per conto della società nell'ambito delle operazioni di mercato dei DPS, oltre che a premi alla carriera, di preparazione, addestramento e formazione tecnica riconosciuti per la formazione di calciatori del settore giovanile:
 
-|  €/000 | Altri proventi |   |   | Altri oneri  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  30/06/2020 | 30/06/2019 | Variazioni | 30/06/2020 | 30/06/2019 | Variazioni  |
-|  Premi da squadre di calcio | 4.980 | 15.039 | (10.059) | (1.490) | (4.252) | 2.762  |
-|  Contributi di solidarietà FIFA | 608 | 919 | (311) | (633) | (3.535) | 2.902  |
-|  Commissioni riconosciute ad intermediari sportivi | 0 | 0 | 0 | (4.146) | (6.420) | 2.274  |
-|  Altri | 444 | 20 | 424 | (444) | (386) | (58)  |
-|  **Totale** | **6.032** | **15.978** | **(9.946)** | **(6.713)** | **(14.593)** | **7.880**  |
+| €/000 | Altri proventi 30/06/2020 | Altri proventi 30/06/2019 | Altri proventi Variazioni | Altri oneri 30/06/2020 | Altri oneri 30/06/2019 | Altri oneri Variazioni |
+|---|---|---|---|---|---|---|
+| Premi da squadre di calcio | 4.980 | 15.039 | (10.059) | (1.490) | (4.252) | 2.762 |
+| Contributi di solidarietà FIFA | 608 | 919 | (311) | (633) | (3.535) | 2.902 |
+| Commissioni riconosciute ad intermediari sportivi | 0 | 0 | | (4.146) | (6.420) | 2.274 |
+| Altri | 444 | 20 | 424 | (444) | (386) | (58) |
+| Totale | 6.032 | 15.978 | (9.946) | (6.713) | (14.593) | 7.880 |
 
-## 8.15. ACCANTONAMENTI PER RISCHI
+8.15. ACCANTONAMENTI PER RISCHI
 
 Nell'esercizio 2019/20 non sono stati effettuati accantonamenti nella voce accantonamento a fondi rischi (600 migliaia di euro al 30 giugno 2019). Gli accantonamenti, effettuati per adeguare i fondi sulla base della stima di potenziali contenziosi e vertenze legali riferibili alla Capogruppo, sono stati rilevati nelle corrispondenti voci di conto economico in maniera conforme alla loro natura.
 
 Per l'analisi dei principali contenziosi che interessano il Gruppo si rimanda alla nota n. 7.19.
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-141
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 141
 
 --- pág. 144 ---
 
@@ -5829,47 +5806,43 @@ AL 30 GIUGNO 2020**
 
 --- pág. 170 ---
 
-**AS • ROMA**
+# PROSPETTI CONTABILI
 
-## PROSPETTI CONTABILI
+## SITUAZIONE PATRIMONIALE-FINANZIARIA (*)
 
-### SITUAZIONE PATRIMONIALE-FINANZIARIA (*)
+| ATTIVO | note | 30/06/2020 | 30/06/2019 |
+|---|---|---|---|
+| **ATTIVITA' NON CORRENTI** | | | |
+| Diritti pluriennali alle prestazioni sportive dei calci | 6.1 | 268.822.081 | 253.824.574 |
+| Altre immobilizzazioni immateriali | 6.2 | 223.948 | 2.660.453 |
+| Attività immateriali | | 269.046.029 | 256.485.027 |
+| Fabbricati | | 4.194.472 | 2.880.824 |
+| Impianti e macchinari | | 410.787 | 362.241 |
+| Attrezzature industriali e commerciali | | 99.780 | 89.745 |
+| Altre immobilizzazioni | | 1.007.442 | 988.434 |
+| Altre immobilizzazioni in corso ed acconti | | 3.208.089 | 1.993.923 |
+| Attività materiali | 6.3 | 8.920.569 | 6.315.167 |
+| Partecipazioni | 6.4 | 134.990.101 | 134.990.101 |
+| Diritti d'uso | 6.5 | 17.324.674 | - |
+| Crediti commerciali | 6.7 | 20.126.857 | 44.397.640 |
+| Attività finanziarie non correnti | 6.8 | 132.107 | 132.107 |
+| Altre attività non correnti | 6.9 | 2.942.621 | 2.914.652 |
+| Altre attività non correnti | | 23.201.585 | 47.444.398 |
+| Totale attività non correnti | | 453.482.958 | 445.234.694 |
+| **ATTIVITA' CORRENTI** | | | |
+| Rimanenze | 6.6 | 198.528 | - |
+| Crediti commerciali | 6.7 | 95.404.445 | 70.421.635 |
+| Altre attività correnti | 6.9 | 37.698.828 | 28.120.417 |
+| Crediti per imposte | 6.10 | 2.574.704 | 34.473 |
+| Disponibilità liquide e mezzi equivalenti | 6.11 | 4.241.516 | 5.828.007 |
+| Totale attività correnti | | 140.118.020 | 104.404.531 |
+| TOTALE ATTIVITA' | | 593.600.978 | 549.639.225 |
 
-|  ATTIVO | note | 30/06/2020 | 30/06/2019  |
-| --- | --- | --- | --- |
-|  **ATTIVITA' NON CORRENTI**  |   |   |   |
-|  Diritti pluriennali alle prestazioni sportive dei calci | 6.1 | 268.822.081 | 253.824.574  |
-|  Altre immobilizzazioni immateriali | 6.2 | 223.948 | 2.660.453  |
-|  Attività immateriali |  | 269.046.029 | 256.485.027  |
-|  Fabbricati |  | 4.194.472 | 2.880.824  |
-|  Impianti e macchinari |  | 410.787 | 362.241  |
-|  Attrezzature industriali e commerciali |  | 99.780 | 89.745  |
-|  Altre immobilizzazioni |  | 1.007.442 | 988.434  |
-|  Altre immobilizzazioni in corso ed acconti |  | 3.208.089 | 1.993.923  |
-|  Attività materiali | 6.3 | 8.920.569 | 6.315.167  |
-|  Partecipazioni | 6.4 | 134.990.101 | 134.990.101  |
-|  Diritti d'uso | 6.5 | 17.324.674 | -  |
-|  Crediti commerciali | 6.7 | 20.126.857 | 44.397.640  |
-|  Attività finanziarie non correnti | 6.8 | 132.107 | 132.107  |
-|  Altre attività non correnti | 6.9 | 2.942.621 | 2.914.652  |
-|  Altre attività non correnti |  | 23.201.585 | 47.444.398  |
-|  Totale attività non correnti |  | 453.482.958 | 445.234.694  |
-|  **ATTIVITA' CORRENTI**  |   |   |   |
-|  Rimanenze | 6.6 | 198.528 | -  |
-|  Crediti commerciali | 6.7 | 95.404.445 | 70.421.635  |
-|  Altre attività correnti | 6.9 | 37.698.828 | 28.120.417  |
-|  Crediti per imposte | 6.10 | 2.574.704 | 34.473  |
-|  Disponibilità liquide e mezzi equivalenti | 6.11 | 4.241.516 | 5.828.007  |
-|  Totale attività correnti |  | 140.118.020 | 104.404.531  |
-|  **TOTALE ATTIVITA'** |  | **593.600.978** | **549.639.225**  |
-
-(*) Ai sensi della Delibera Consob n. 15519 del 27 luglio 2006, gli effetti dei rapporti con parti correlate sulla Situazione Patrimoniale – Finanziaria Consolidata sono evidenziati nell'apposita Situazione Patrimoniale – Finanziaria consolidata riportata nelle pagine successive
+(*) Ai sensi della Delibera Consob n. 15519 del 27 luglio 2006, gli effetti dei rapporti con parti correlate sulla Situazione Patrimoniale – Finanziaria Consolidata sono evidenziati nell'apposita Situazione Patrimoniale - Finanziaria consolidata riportata nelle pagine successive
 
 *Le note illustrative sono parte integrante del Bilancio d'esercizio*
 
-**168**
-
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+168 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 171 ---
 
@@ -6096,91 +6069,83 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 176 ---
 
-**AS • ROMA**
-
 ## SITUAZIONE PATRIMONIALE-FINANZIARIA
 
 Con evidenza dei rapporti con parti correlate, ai sensi della Delibera Consob n. 155/19 del 27 luglio 2006
 
-|  PASSIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate  |
-| --- | --- | --- | --- | --- | --- |
-|  **PATRIMONIO NETTO**  |   |   |   |   |   |
-|  Capitale sociale |  | 93.942.205 | - | 93.942.205 | -  |
-|  Riserva perdite attuariali |  | (601.570) | - | (913.511) | -  |
-|  Riserva First Time Adoption |  | (85.932.721) | - | (85.932.721) | -  |
-|  Riserva copertura perdite infrannuali |  | 3.394.305 | - | 23.393.205 | -  |
-|  Riserva azionisti c/aumento di capitale |  | 89.079.520 | - | - | -  |
-|  Perdita portata a nuovo |  | - | - | - | -  |
-|  Perdita di esercizio |  | (188.237.687) | (9.942.184) | (19.998.900) | (17.922.297)  |
-|  **Totale Patrimonio Netto** | **6.12** | **(88.355.948)** | **(9.942.184)** | **10.490.278** | **(17.922.297)**  |
-|  **PASSIVITA' NON CORRENTI**  |   |   |   |   |   |
-|  Finanziamenti a medio lungo termine | 6.13 | 251.944.445 | 251.342.125 | 199.805.751 | 199.093.221  |
-|  Debiti finanziari per diritti d'uso | 6.15 | 14.133.576 | 8.735.405 | - | -  |
-|  Fondo TFR benefici a dipendenti | 6.16 | 2.528.895 | - | 2.775.069 | -  |
-|  Debiti commerciali | 6.17 | 85.950.125 | - | 95.236.252 | -  |
-|  Fondo rischi per imposte | 6.18 | 0 | - | 1.464.821 | -  |
-|  Debiti Tributari | 6.19 | 1.538.334 | - | - | -  |
-|  Fondi per rischi ed oneri | 6.20 | 8.372.654 | - | 2.671.113 | -  |
-|  Altre passività | 6.22 | 440.000 | - | 1.763.300 | -  |
-|  **Totale Passività non correnti** |  | **364.908.028** | **260.077.529** | **303.716.306** | **199.093.221**  |
-|  **PASSIVITA' CORRENTI**  |   |   |   |   |   |
-|  Debiti commerciali | 6.17 | 174.788.865 | 12.941.889 | 131.248.830 | 8.585.104  |
-|  Finanziamenti a breve termine | 6.13 | 33.647.846 | 21.843.857 | 47.101.974 | 24.461.996  |
-|  Debiti finanziari per diritti d'uso | 6.15 | 4.867.339 | 3.413.604 | - | -  |
-|  Debiti Tributari | 6.19 | 15.201.996 | - | 11.716.409 | -  |
-|  Debiti verso istituti previdenziali | 6.21 | 2.464.845 | - | 1.163.598 | -  |
-|  Fondi per rischi ed oneri | 6.20 | 250.000 | - | - | -  |
-|  Altre passività | 6.22 | 85.828.006 | 1.074.371 | 44.201.830 | 976.518  |
-|  **Totale Passività correnti** |  | **317.048.897** | **39.273.721** | **235.432.642** | **34.023.618**  |
-|  **TOTALE PASSIVITA' E PATRIMONIO NETTO** |  | **593.600.978** | **289.409.066** | **549.639.225** | **215.194.542**  |
+| PASSIVO | note | 30/06/2020 | di cui, con parti correlate | 30/06/2019 | di cui, con parti correlate |
+|---|---|---|---|---|---|
+| **PATRIMONIO NETTO** | | | | | |
+| Capitale sociale | | 93.942.205 | - | 93.942.205 | - |
+| Riserva perdite attuariali | | (601.570) | - | (913.511) | - |
+| Riserva First Time Adoption | | (85.932.721) | - | (85.932.721) | - |
+| Riserve copertura perdite infrannuali | | 3.394.305 | - | 23.393.205 | - |
+| Riserva azionisti c/aumento di capitale | | 89.079.520 | - | - | - |
+| Perdita portata a nuovo | | - | - | - | - |
+| Perdita di esercizio | | (188.237.687) | (9.942.184) | (19.998.900) | (17.922.297) |
+| Totale Patrimonio Netto | 6.12 | (88.355.948) | (9.942.184) | 10.490.278 | (17.922.297) |
+| **PASSIVITA' NON CORRENTI** | | | | | |
+| Finanziamenti a medio lungo termine | 6.13 | 251.944.445 | 251.342.125 | 199.805.751 | 199.093.221 |
+| Debiti finanziari per diritti d'uso | 6.15 | 14.133.576 | 8.735.405 | - | - |
+| Fondo TFR benefici a dipendenti | 6.16 | 2.528.895 | - | 2.775.069 | - |
+| Debiti commerciali | 6.17 | 85.950.125 | - | 95.236.252 | - |
+| Fondo rischi per imposte | 6.18 | 0 | - | 1.464.821 | - |
+| Debiti Tributari | 6.19 | 1.538.334 | - | - | - |
+| Fondi per rischi ed oneri | 6.20 | 8.372.654 | - | 2.671.113 | - |
+| Altre passività | 6.22 | 440.000 | - | 1.763.300 | - |
+| Totale Passività non correnti | | 364.908.028 | 260.077.529 | 303.716.306 | 199.093.221 |
+| **PASSIVITA' CORRENTI** | | | | | |
+| Debiti commerciali | 6.17 | 174.788.865 | 12.941.889 | 131.248.830 | 8.585.104 |
+| Finanziamenti a breve termine | 6.13 | 33.647.846 | 21.843.857 | 47.101.974 | 24.461.996 |
+| Debiti finanziari per diritti d'uso | 6.15 | 4.867.339 | 3.413.604 | - | - |
+| Debiti Tributari | 6.19 | 15.201.996 | - | 11.716.409 | - |
+| Debiti verso istituti previdenziali | 6.21 | 2.464.845 | - | 1.163.598 | - |
+| Fondi per rischi ed oneri | 6.20 | 250.000 | - | - | - |
+| Altre passività | 6.22 | 85.828.006 | 1.074.371 | 44.201.830 | 976.518 |
+| Totale Passività correnti | | 317.048.897 | 39.273.721 | 235.432.642 | 34.023.618 |
+| TOTALE PASSIVITA' E PATRIMONIO NETTO | | 593.600.978 | 289.409.066 | 549.639.225 | 215.194.542 |
 
 *Le note illustrative sono parte integrante del Bilancio d'esercizio*
 
-174
-
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+174 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 177 ---
-
-**AS • ROMA**
 
 ## CONTO ECONOMICO COMPLESSIVO
 
 Con evidenza dei rapporti con parti correlate, ai sensi della Delibera Consob n. 155/19 del 27 luglio 2006
 
-|   | note | 12 mesi al 30/06/2020 | di cui, con parti correlate | 12 mesi al 30/06/2019 | di cui, con parti correlate  |
-| --- | --- | --- | --- | --- | --- |
-|  Ricavi da gare | 8.2 | 26.189.594 | 4.376.208 | 66.283.871 | -  |
-|  Sponsorizzazioni | 8.4 | 11.324.369 | - | 18.035.000 | -  |
-|  Diritti televisivi e diritti d'immagine | 8.5 | 73.395.551 | - | 105.366.419 | -  |
-|  Altri ricavi | 8.7 | 9.222.944 | 4.871.670 | 14.387.122 | 3.760.527  |
-|  Totale ricavi | 8.1 | 120.132.458 | 9.247.879 | 204.072.412 | 3.760.527  |
-|  Acquisti materie di consumo | 8.8 | (3.944.162) | (155.300) | (3.894.290) | (151.931)  |
-|  Variazione delle rimanenze | 8.8 | 198.528 | - | - | -  |
-|  Spese per servizi | 8.9 | (45.487.268) | (7.582.215) | (51.788.544) | (11.035.817)  |
-|  Spese per godimento beni di terzi | 8.10 | (4.829.082) | - | (8.963.136) | (2.700.000)  |
-|  Spese per il personale | 8.11 | (147.612.488) | - | (176.908.143) | -  |
-|  Altri costi | 8.12 | (7.821.038) | - | (7.112.590) | (1.038.225)  |
-|  Ammortamenti e svalutazioni | 8.13 | (101.391.497) | (2.377.561) | (84.612.719) | -  |
-|  Totale costi operativi |  | (310.887.008) | (10.115.076) | (333.279.421) | (14.925.973)  |
-|  Ricavi da gestione dei diritti pluriennali prestazioni calciatori |  | 32.560.793 | - | 148.262.019 | -  |
-|  Oneri da gestione dei diritti pluriennali prestazioni calciatori |  | (16.461.500) | - | (15.934.464) | -  |
-|  Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori | 8.14 | 16.099.293 | - | 132.327.554 | -  |
-|  Accantonamenti per rischi | 8.15 | - | - | (600.000) | -  |
-|  Proventi finanziari |  | 3.894.937 | 963.432 | 3.822.789 | 1.211.839  |
-|  Oneri finanziari |  | (19.758.711) | (12.289.155) | (21.226.052) | (11.183.689)  |
-|  Oneri finanziari netti | 8.16 | (15.863.775) | (11.325.724) | (17.403.263) | (9.971.850)  |
-|  Perdita prima delle imposte |  | (190.519.032) | (12.192.921) | (14.882.718) | (21.137.296)  |
-|  imposte correnti |  | 2.281.345 | 2.250.737 | (5.116.182) | 3.215.000  |
-|  Imposte di esercizio | 8.17 | 2.281.345 | 2.250.737 | (5.116.182) | 3.215.000  |
-|  Perdita di A.S. Roma |  | (188.237.687) | (9.942.184) | (19.998.900) | (17.922.296)  |
-|  Perdita per azione | 8.18 | (299) |  | (32) |   |
+| | note | 12 mesi al 30/06/2020 | di cui, con parti correlate | 12 mesi al 30/06/2019 | di cui, con parti correlate |
+|---|---|---|---|---|---|
+| Ricavi da gare | 8.2 | 26.189.594 | 4.376.208 | 66.283.871 | - |
+| Sponsorizzazioni | 8.4 | 11.324.369 | - | 18.035.000 | - |
+| Diritti televisivi e diritti d'immagine | 8.5 | 73.395.551 | - | 105.366.419 | - |
+| Altri ricavi | 8.7 | 9.222.944 | 4.871.670 | 14.387.122 | 3.760.527 |
+| Totale ricavi | 8.1 | 120.132.458 | 9.247.879 | 204.072.412 | 3.760.527 |
+| Acquisti materie di consumo | 8.8 | (3.944.162) | (155.300) | (3.894.290) | (151.931) |
+| Variazione delle rimanenze | 8.8 | 198.528 | - | - | - |
+| Spese per servizi | 8.9 | (45.487.268) | (7.582.215) | (51.788.544) | (11.035.817) |
+| Spese per godimento beni di terzi | 8.10 | (4.829.082) | - | (8.963.136) | (2.700.000) |
+| Spese per il personale | 8.11 | (147.612.488) | - | (176.908.143) | - |
+| Altri costi | 8.12 | (7.821.038) | - | (7.112.590) | (1.038.225) |
+| Ammortamenti e svalutazioni | 8.13 | (101.391.497) | (2.377.561) | (84.612.719) | - |
+| Totale costi operativi | | (310.887.008) | (10.115.076) | (333.279.421) | (14.925.973) |
+| Ricavi da gestione dei diritti pluriennali prestazioni calciatori | | 32.560.793 | - | 148.262.019 | - |
+| Oneri da gestione dei diritti pluriennali prestazioni calciatori | | (16.461.500) | - | (15.934.464) | - |
+| Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori | 8.14 | 16.099.293 | - | 132.327.554 | - |
+| Accantonamenti per rischi | 8.15 | - | - | (600.000) | - |
+| Proventi finanziari | | 3.894.937 | 963.432 | 3.822.789 | 1.211.839 |
+| Oneri finanziari | | (19.758.711) | (12.289.155) | (21.226.052) | (11.183.689) |
+| Oneri finanziari netti | 8.16 | (15.863.775) | (11.325.724) | (17.403.263) | (9.971.850) |
+| Perdita prima delle imposte | | (190.519.032) | (12.192.921) | (14.882.718) | (21.137.296) |
+| imposte correnti | | 2.281.345 | 2.250.737 | (5.116.182) | 3.215.000 |
+| Imposte di esercizio | 8.17 | 2.281.345 | 2.250.737 | (5.116.182) | 3.215.000 |
+| Perdita di A.S. Roma | | (188.237.687) | (9.942.184) | (19.998.900) | (17.922.296) |
+| Perdita per azione | 8.18 | (299) | | (32) | |
 
 *Le note illustrative sono parte integrante del Bilancio d'esercizio*
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-**175**
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 175
 
 --- pág. 178 ---
 
@@ -6994,82 +6959,78 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 203 ---
 
-**AS • ROMA**
-
-|  Calciatore | Costo di acquisto da società di calcio | Oneri accessori capitalizzati in esercizi precedenti | Oneri accessori capitalizzati nell'esercizio 2019/20 | Totale valore di carico | Fondo ammortamento oneri accessori al 30 giugno 2020 | Disinvestimenti / Svalutazioni | Valore contabile Netto oneri accessori al 30/06/2020  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Agostinelli | - | 120 | - | 120 | (60) | (60) | -  |
-|  Anocic | 150 | 250 | - | 400 | (250) | - | -  |
-|  Antonucci | - | 250 | - | 250 | (180) | - | 70  |
-|  Bamba | - | 35 | - | 35 | (19) | - | 16  |
-|  Besuijen | 140 | 130 | - | 270 | (107) | (23) | -  |
-|  Bianda | 6.000 | 245 | - | 6.245 | (98) | - | 147  |
-|  Boer | 450 | - | - | 450 | - | - | -  |
-|  Bouah | - | 125 | 215 | 340 | (85) | - | 255  |
-|  Buso | 9 | 9 | - | 18 | (9) | - | -  |
-|  Calafiori | - | 35 | - | 35 | (19) | - | 16  |
-|  Capradossi | 130 | 60 | - | 190 | (47) | (13) | -  |
-|  Cargnelutti | 17 | - | - | 17 | - | - | -  |
-|  Celar | 810 | 50 | 80 | 940 | (51) | - | 79  |
-|  Cetin | 3.000 | - | 1.300 | 4.300 | (223) | - | 1.077  |
-|  Chiossi Andrea | 160 | - | - | 160 | - | - | -  |
-|  Coly Sidy Keba | - | 168 | - | 168 | (128) | (40) | -  |
-|  Coric | 8.000 | 1.000 | - | 9.000 | (400) | - | 600  |
-|  Cristante | 29.000 | 600 | - | 29.600 | (224) | - | 376  |
-|  Darboe | 120 | - | - | 120 | - | - | -  |
-|  Defrel | 17.491 | - | - | 17.491 | - | - | -  |
-|  Diawara | 21.000 | - | 1.900 | 22.900 | (380) | - | 1.520  |
-|  D'orazio | - | - | 30 | 30 | (7) | - | 23  |
-|  Dzoko | 21.053 | - | - | 21.053 | - | - | -  |
-|  El Sharaawy | 13.000 | - | - | 13.000 | - | - | -  |
-|  Fazio | 3.200 | - | - | 3.200 | - | - | -  |
-|  Florenzi | 2.500 | 2.000 | - | 4.500 | (758) | - | 1.242  |
-|  Fuzato | 500 | 1.000 | - | 1.500 | (496) | - | 504  |
-|  Gante | 200 | - | - | 200 | - | - | -  |
-|  Gerson | 18.600 | 1.500 | - | 20.100 | (892) | (608) | -  |
-|  Gonalons | 5.000 | 3.200 | - | 8.200 | (2.400) | - | 800  |
-|  Greco S. | 39 | - | 20 | 59 | (6) | - | 14  |
-|  Ibanez | 9.000 | - | 1.350 | 10.350 | (128) | - | 1.222  |
-|  Juan Jesus | 8.847 | - | - | 8.847 | - | - | -  |
-|  Karsdorp | 16.000 | 600 | - | 16.600 | (360) | - | 240  |
-|  Kluivert | 17.250 | 4.000 | - | 21.250 | (1.600) | - | 2.400  |
-|  Kolarov | 5.263 | 300 | - | 5.563 | (249) | - | 51  |
-|  Mancini | 23.000 | - | 1.700 | 24.700 | (328) | - | 1.372  |
-|  Marcano | - | 2.000 | - | 2.000 | (680) | (1.320) | -  |
-|  Masangu | - | 457 | - | 457 | (457) | - | -  |
-|  Mirante | 4.000 | 450 | - | 4.450 | (300) | - | 150  |
-|  Nani | 298 | 1.063 | - | 1.361 | (1.063) | - | -  |
-|  Nzonzi | 27.931 | 1.500 | - | 29.431 | (727) | - | 773  |
-|  Olsen | 9.000 | 2.300 | - | 11.300 | (902) | - | 1.398  |
-|  Pastore | 24.661 | 1.000 | - | 25.661 | (400) | - | 600  |
-|  Pau Lopez | 24.046 | - | 1.500 | 25.546 | (294) | - | 1.206  |
-|  Pellegrini | 10.000 | 3.165 | - | 13.165 | (1.899) | - | 1.266  |
-|  Peres | 13.719 | - | - | 13.719 | - | - | -  |
-|  Perez | 12.000 | - | 1.500 | 13.500 | (141) | - | 1.359  |
-|  Perotti | 12.000 | 600 | - | 12.600 | (476) | - | 124  |
-|  Persson | 50 | 30 | - | 80 | (18) | - | 12  |
-|  Pezzella | 91 | - | 60 | 151 | (15) | - | 45  |
-|  Providence | 300 | - | 120 | 420 | (38) | - | 82  |
-|  Riccardi | - | 470 | - | 470 | (164) | - | 306  |
-|  Sadiq | 2.580 | - | - | 2.580 | - | - | -  |
-|  Santon | 9.500 | 500 | - | 10.000 | (250) | - | 250  |
-|  Schick | 38.393 | 2.730 | - | 41.123 | (1.499) | - | 1.231  |
-|  Seck | - | 1.000 | - | 1.000 | (747) | (153) | 100  |
-|  Spinazzola | 29.500 | - | 1.300 | 30.800 | (222) | - | 1.078  |
-|  Tall | - | - | 150 | 150 | (21) | - | 129  |
-|  Under | 15.532 | 1.350 | - | 16.882 | (744) | - | 606  |
-|  Valeau | 109 | - | 25 | 134 | (6) | - | 19  |
-|  Verde | 200 | - | - | 200 | - | - | -  |
-|  Veretueut | 17.000 | - | 1.500 | 18.500 | (288) | - | 1.212  |
-|  Villar | 4.000 | - | 1.000 | 5.000 | (94) | - | 906  |
-|  Zaniolo | 4.500 | 1.200 | 800 | 6.500 | (580) | - | 1.420  |
-|  **TOTALE** | **489.339** | **35.492** | **14.550** | **539.381** | **(21.531)** | **(2.216)** | **26.295**  |
+| Calciatore | Costo di acquisto da società di calcio | Oneri accessori capitalizzati in esercizi precedenti | Oneri accessori capitalizzati nell'esercizio 2019/20 | Totale valore di carico | Fondo ammortamento oneri accessori al 30 giugno 2020 | Disinvestimenti / Svalutazioni | Valore contabile Netto oneri accessori al 30/06/2020 |
+|---|---|---|---|---|---|---|---|
+| Agostinelli | - | 120 | - | 120 | (60) | (60) | - |
+| Anocic | 150 | 250 | - | 400 | (250) | - | - |
+| Antonucci | - | 250 | - | 250 | (180) | - | 70 |
+| Bamba | - | 35 | - | 35 | (19) | - | 16 |
+| Besuijen | 140 | 130 | - | 270 | (107) | (23) | - |
+| Bianda | 6.000 | 245 | - | 6.245 | (98) | - | 147 |
+| Boer | 450 | - | - | 450 | | - | - |
+| Bouah | - | 125 | 215 | 340 | (85) | - | 255 |
+| Buso | 9 | 9 | - | 18 | (9) | - | - |
+| Calafiori | - | 35 | - | 35 | (19) | - | 16 |
+| Capradossi | 130 | 60 | - | 190 | (47) | (13) | - |
+| Cargnelutti | 17 | - | - | 17 | | - | - |
+| Celar | 810 | 50 | 80 | 940 | (51) | - | 79 |
+| Cetin | 3.000 | - | 1.300 | 4.300 | (223) | - | 1.077 |
+| Chiossi Andrea | 160 | - | - | 160 | | - | - |
+| Coly Sidy Keba | - | 168 | - | 168 | (128) | (40) | - |
+| Coric | 8.000 | 1.000 | - | 9.000 | (400) | - | 600 |
+| Cristante | 29.000 | 600 | - | 29.600 | (224) | - | 376 |
+| Darboe | 120 | - | - | 120 | | - | - |
+| Defrel | 17.491 | - | - | 17.491 | | - | - |
+| Diawara | 21.000 | - | 1.900 | 22.900 | (380) | - | 1.520 |
+| D'orazio | - | - | 30 | 30 | (7) | - | 23 |
+| Dzeko | 21.053 | - | - | 21.053 | | - | - |
+| El Sharaawy | 13.000 | - | - | 13.000 | | - | - |
+| Fazio | 3.200 | - | - | 3.200 | | - | - |
+| Florenzi | 2.500 | 2.000 | - | 4.500 | (758) | - | 1.242 |
+| Fuzato | 500 | 1.000 | - | 1.500 | (496) | - | 504 |
+| Gante | 200 | - | - | 200 | | - | - |
+| Gerson | 18.600 | 1.500 | - | 20.100 | (892) | (608) | - |
+| Gonalons | 5.000 | 3.200 | - | 8.200 | (2.400) | - | 800 |
+| Greco S. | 39 | - | 20 | 59 | (6) | - | 14 |
+| Ibanez | 9.000 | - | 1.350 | 10.350 | (128) | - | 1.222 |
+| Juan Jesus | 8.847 | - | - | 8.847 | | - | - |
+| Karsdorp | 16.000 | 600 | - | 16.600 | (360) | - | 240 |
+| Kluivert | 17.250 | 4.000 | - | 21.250 | (1.600) | - | 2.400 |
+| Kolarov | 5.263 | 300 | - | 5.563 | (249) | - | 51 |
+| Mancini | 23.000 | - | 1.700 | 24.700 | (328) | - | 1.372 |
+| Marcano | - | 2.000 | - | 2.000 | (680) | (1.320) | - |
+| Masangu | - | 457 | - | 457 | (457) | - | - |
+| Mirante | 4.000 | 450 | - | 4.450 | (300) | - | 150 |
+| Nani | 298 | 1.063 | - | 1.361 | (1.063) | - | - |
+| Nzonzi | 27.931 | 1.500 | - | 29.431 | (727) | - | 773 |
+| Olsen | 9.000 | 2.300 | - | 11.300 | (902) | - | 1.398 |
+| Pastore | 24.661 | 1.000 | - | 25.661 | (400) | - | 600 |
+| Pau Lopez | 24.046 | - | 1.500 | 25.546 | (294) | - | 1.206 |
+| Pellegrini | 10.000 | 3.165 | - | 13.165 | (1.899) | - | 1.266 |
+| Peres | 13.719 | - | - | 13.719 | | - | - |
+| Perez | 12.000 | - | 1.500 | 13.500 | (141) | - | 1.359 |
+| Perotti | 12.000 | 600 | - | 12.600 | (476) | - | 124 |
+| Persson | 50 | 30 | - | 80 | (18) | - | 12 |
+| Pezzella | 91 | - | 60 | 151 | (15) | - | 45 |
+| Providence | 300 | - | 120 | 420 | (38) | - | 82 |
+| Riccardi | - | 470 | - | 470 | (164) | - | 306 |
+| Sadiq | 2.580 | - | - | 2.580 | | - | - |
+| Santon | 9.500 | 500 | - | 10.000 | (250) | - | 250 |
+| Schick | 38.393 | 2.730 | - | 41.123 | (1.499) | - | 1.231 |
+| Seck | - | 1.000 | - | 1.000 | (747) | (153) | 100 |
+| Spinazzola | 29.500 | - | 1.300 | 30.800 | (222) | - | 1.078 |
+| Tall | - | - | 150 | 150 | (21) | - | 129 |
+| Under | 15.532 | 1.350 | - | 16.882 | (744) | - | 606 |
+| Valeau | 109 | - | 25 | 134 | (6) | - | 19 |
+| Verde | 200 | - | - | 200 | | - | - |
+| Veretuout | 17.000 | - | 1.500 | 18.500 | (288) | - | 1.212 |
+| Villar | 4.000 | - | 1.000 | 5.000 | (94) | - | 906 |
+| Zaniolo | 4.500 | 1.200 | 800 | 6.500 | (580) | - | 1.420 |
+| TOTALE | 489.339 | 35.492 | 14.550 | 539.381 | (21.531) | (2.216) | 26.295 |
 
 Le informazioni aggiuntive richieste dalla Covisoc a commento dei Diritti pluriennali alle prestazioni sportive sono riportate nella "Tabella di movimentazione dei diritti pluriennali alle prestazioni dei calciatori" inclusa nel successivo capitolo "Prospetti di informativa supplementare", cui si rimanda.
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
-
-201
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 201
 
 --- pág. 204 ---
 
@@ -7383,38 +7344,33 @@ Il credito per IRAP è relativo ad acconti versati nell'esercizio e registra un 
 
 --- pág. 211 ---
 
-AS • ROMA
-
 ## 6.11. DISPONIBILITÀ LIQUIDE E MEZZI EQUIVALENTI
 
-Pari a 4.242 al 30 giugno 2019 (5.828 migliaia di euro al 30 giugno 2019), registrano un decremento di 1.586 migliaia di euro, rispetto al 30.06.2019. La voce è rappresentativa, per 4.236 migliaia di euro, delle disponibilità liquide in deposito presso primari Istituti di credito, e di disponibilità liquide nelle casse sociali e su carte di credito prepagate, per 6 migliaia di euro. Su tali disponibilità esiste un vincolo potenziale di utilizzo relativamente al conto corrente denominato "UEFA Account", in relazione agli impegni assunti nell'ambito del Prestito Obbligazionario emesso da MediaCo l'8 agosto 2019. Si precisa che tale vincolo opera solo al verificarsi di determinati eventi di default e potrà essere esercitato solo nel limite delle disponibilità esistenti, fino a concorrenza del debito residuo. Al 30 giugno 2020 non si sono verificati gli eventi di default sopra descritti. Si segnala inoltre che il Prestito Obbligazionario prevede un
-
-meccanismo obbligatorio di canalizzazione degli incassi e utilizzi delle disponibilità liquide a garanzia dell'esatto adempimento delle obbligazioni assunte che può limitare temporaneamente l'utilizzo delle disponibilità liquide sui conti correnti bancari intestati a MediaCo e Soccer, oltre che sul cosiddetto "UEFA account" intestato ad AS Roma. Tale meccanismo si definisce attraverso la cessione di crediti pro-soluto o la designazione di MediaCo quale mandatario all'incasso dei crediti di AS Roma e Soccer per diritti televisivi connessi al campionato di Serie A e alle competizioni europee, attività di licensing e sponsorizzazioni, oltre che per i cosiddetti "direct media rights", le cui attività sono ad oggi collegate al canale televisivo "Roma TV" ed al canale radio "Roma Radio".
+Pari a 4.242 al 30 giugno 2019 (5.828 migliaia di euro al 30 giugno 2019), registrano un decremento di 1.586 migliaia di euro, rispetto al 30.06.2019. La voce è rappresentativa, per 4.236 migliaia di euro, delle disponibilità liquide in deposito presso primari Istituti di credito, e di disponibilità liquide nelle casse sociali e su carte di credito prepagate, per 6 migliaia di euro. Su tali disponibilità esiste un vincolo potenziale di utilizzo relativamente al conto corrente denominato "UEFA Account", in relazione agli impegni assunti nell'ambito del Prestito Obbligazionario emesso da MediaCo l'8 agosto 2019. Si precisa che tale vincolo opera solo al verificarsi di determinati eventi di default e potrà essere esercitato solo nel limite delle disponibilità esistenti, fino a concorrenza del debito residuo. Al 30 giugno 2020 non si sono verificati gli eventi di default sopra descritti. Si segnala inoltre che il Prestito Obbligazionario prevede un meccanismo obbligatorio di canalizzazione degli incassi e utilizzi delle disponibilità liquide a garanzia dell'esatto adempimento delle obbligazioni assunte che può limitare temporaneamente l'utilizzo delle disponibilità liquide sui conti correnti bancari intestati a MediaCo e Soccer, oltre che sul cosiddetto "UEFA account" intestato ad AS Roma. Tale meccanismo si definisce attraverso la cessione di crediti pro-soluto o la designazione di MediaCo quale mandatario all'incasso dei crediti di AS Roma e Soccer per diritti televisivi connessi al campionato di Serie A e alle competizioni europee, attività di licensing e sponsorizzazioni, oltre che per i cosiddetti "direct media rights", le cui attività sono ad oggi collegate al canale televisivo "Roma TV" ed al canale radio "Roma Radio".
 
 ## 6.12. PATRIMONIO NETTO
 
-Il Patrimonio netto della Società è negativo per 88.356 migliaia di euro (positivo per 10.490 migliaia di euro al 30 giugno 2019), e si decrementa per 98.846 migliaia di euro nel periodo per effetto di: (i) il risultato economico dell'esercizio, negativo per 188.238 migliaia di euro; (ii) incremento della Riserva Azionisti c/aumento di capitale, per complessivi 89.080 migliaia di euro, in conseguenza dei Versamenti effettuati nell'esercizio dalla controllante NEEP Roma Holding S.p.A., pari complessivamente a 60.000 migliaia di euro, e della conversione dell'intero ammontare dei finanziamenti soci effettuati dalla stessa NEEP in esercizi precedenti, pari a 29.080 migliaia di euro; e (iii) la copertura della perdita d'esercizio di A.S Roma S.p.A. al 30 giugno 2019 pari a 19.999 migliaia di euro mediante compensazione per un pari importo a valere della Riserva copertura perdite infrannuali.
+Il Patrimonio netto della Società è negativo per 88.356 migliaia di euro (positivo per 10.490 migliaia di euro al 30 giugno 2019), e si decrementa per 98.846 migliaia di euro nel periodo per effetto di: (i) il risultato economico dell'esercizio, negativo per 188.238 migliaia di euro; (ii) incremento della Riserva Azionisti c/aumento di capitale, per complessivi 89.080 migliaia di euro, in conseguenza dei Versamenti effettuati nell' esercizio dalla controllante NEEP Roma Holding S.p.A., pari complessivamente a 60.000 migliaia di euro, e della conversione dell'intero ammontare dei finanziamenti soci effettuati dalla stessa NEEP in esercizi precedenti, pari a 29.080 migliaia di euro; e (iii) la copertura della perdita d'esercizio di A.S Roma S.p.A. al 30 giugno 2019 pari a 19.999 migliaia di euro mediante compensazione per un pari importo a valere della Riserva copertura perdite infrannuali.
 
-|  €/000 | 30/06/2020 | 30/06/2019 | Variazioni  |
-| --- | --- | --- | --- |
-|  Capitale sociale | 93.942 | 93.942 | -  |
-|  Riserva Legale | - | - | -  |
-|  Riserva perdite attuariali | (602) | (914) | 312  |
-|  Riserva Azionisti c/ aumento di capitale | 89.080 | - | 89.080  |
-|  Riserva FTA | (85.933) | (85.933) | 0  |
-|  Riserva per copertura perdite infrannuali | 3.394 | 23.393 | (19.999)  |
-|  Utile (perdita) portati a nuovo | - | - | -  |
-|  Utile (perdita) d'esercizio del periodo | (188.238) | (19.999) | (168.239)  |
-|  **TOTALE PATRIMONIO NETTO SEPARATO** | **(88.356)** | **10.490** | **(98.846)**  |
+| €/000 | 30/06/2020 | 30/06/2019 | Variazioni |
+|---|---|---|---|
+| Capitale sociale | 93.942 | 93.942 | - |
+| Riserva Legale | - | - | - |
+| Riserva perdite attuariali | (602) | (914) | 312 |
+| Riserva Azionisti c/ aumento di capitale | 89.080 | - | 89.080 |
+| Riserva FTA | (85.933) | (85.933) | 0 |
+| Riserva per copertura perdite infrannuali | 3.394 | 23.393 | (19.999) |
+| Utile (perdita) portati a nuovo | - | - | - |
+| Utile (perdita) d'esercizio del periodo | (188.238) | (19.999) | (168.239) |
+| TOTALE PATRIMONIO NETTO SEPARATO | (88.356) | 10.490 | (98.846) |
 
 In particolare:
 
-- il Capitale Sociale deliberato è pari a 93.942 migliaia di euro, e include gli effetti della delibera dell'Assemblea straordinaria degli Azionisti della A.S. Roma S.p.A. del 28 ottobre 2019, che ha approvato la proposta di aumento del capitale sociale per un importo massimo pari a 150.000 migliaia di euro, scindibile e a pagamento, mediante emissione di azioni ordinarie della Società, prive di valore nominale espresso, in regime di dematerializzazione, aventi le stesse caratteristiche di quelle in circolazione e godimento regolare, da offrire in opzione agli Azionisti della Società ai sensi dell'Art. 2441, comma 1, del Codice Civile. Il Capitale sociale sottoscritto e versato alla data del 30 giugno 2020 è pari a 93.942 migliaia di euro, invariato rispetto al 30 giugno 2019, e costituito da n. n. 628.882.320 azioni ordinarie senza valore nominale;
-- la Riserva perdite attuariali, per 602 migliaia di euro (914 migliaia di euro, al 30 giugno 2019), in diminuzione di 312 migliaia di euro nell'esercizio, per l'operato adeguamento al 30 giugno 2020 del
+– il Capitale Sociale deliberato è pari a 93.942 migliaia di euro, e include gli effetti della delibera dell'Assemblea straordinaria degli Azionisti della A.S. Roma S.p.A. del 28 ottobre 2019, che ha approvato la proposta di aumento del capitale sociale per un importo massimo pari a 150.000 migliaia di euro, scindibile e a pagamento, mediante emissione di azioni ordinarie della Società, prive di valore nominale espresso, in regime di dematerializzazione, aventi le stesse caratteristiche di quelle in circolazione e godimento regolare, da offrire in opzione agli Azionisti della Società ai sensi dell'Art. 2441, comma 1, del Codice Civile. Il Capitale sociale sottoscritto e versato alla data del 30 giugno 2020 è pari a 93.942 migliaia di euro, invariato rispetto al 30 giugno 2019, e costituito da n. n. 628.882.320 azioni ordinarie senza valore nominale;
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+– la Riserva perdite attuariali, per 602 migliaia di euro (914 migliaia di euro, al 30 giugno 2019), in diminuzione di 312 migliaia di euro nell'esercizio, per l'operato adeguamento al 30 giugno 2020 del
 
-209
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 209
 
 --- pág. 212 ---
 
@@ -8663,55 +8619,53 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 244 ---
 
-**AS • ROMA**
-
 soci con impegno da parte della sola NEEP di convertire tale finanziamento in capitale sociale della Società alla data precedente tra (x) la data dell'Aumento di Capitale e (y) il 31 dicembre 2020.
 
 L'attività di direzione e coordinamento esercitata dalla AS Roma SPV LLC non ha avuto nell'esercizio 2019/20 ulteriori significativi effetti economici e patrimoniali per il Gruppo, e gli altri rapporti in essere sono relativi principalmente a oneri per studi, progettazione e presentazione del nuovo stadio, addebitati fra le due società in forza degli accordi in essere. In particolare, tali costi, inizialmente riaddebitati in parte alla controllante AS Roma SPV, LLC (2,4 milioni di euro al 31.12.2019) e in parte a Stadio TDV S.p.A. (1,6 milioni di euro al 31.12.2019), in virtù di accordi infragruppo, intercorsi successivamente al 31 dicembre 2019, sono ad oggi interamente riaddebitati nei confronti di Stadio TDV S.p.A.
 
-Con riferimento a RRI si segnala che quest'ultima ha supportato le esigenze di working capital della Società attraverso un finanziamento soci, effettuato in favore di AS Roma per il tramite della controllante NEEP, di 10 milioni di euro. Inoltre, nel mese di settembre 2020, RRI ha effettuato – sempre per il tramite di NEEP – un ulteriore finanziamento soci per ulteriori 53 milioni di euro, e poi messo a disposizione del Gruppo ulteriori 14,6 milioni di euro, pari all'ammontare dei costi pagati dalla controllata MediaCo nell'ambito della Consent Solicitation relativa al prestito obbligazionario emesso dalla stessa MediaCo nell'agosto 2019, a seguito dell'approvazione, in data 17 settembre 2020 da parte dell'Assemblea degli Obbligazionisti, della concessione di alcuni waivers e alcune modifiche da apportare all'Indenture. Infine, nel mese di ottobre 2020 RRI ha effettuato, sempre al fine di supportare le esigenze di working capital della Società, un ulteriore finanziamento soci, in favore di AS Roma e per il tramite della controllante NEEP, di 15 milioni di euro.
+Con riferimento a RRI si segnala che quest'ultima ha supportato le esigenze di working capital della Società attraverso un finanziamento soci, effettuato in favore di AS Roma per il tramite della controllante NEEP, di 10 milioni di euro. Inoltre, nel mese di settembre 2020, RRI ha effettuato – sempre per il tramite di NEEP - un ulteriore finanziamento soci per ulteriori 53 milioni di euro, e poi messo a disposizione del Gruppo ulteriori 14,6 milioni di euro, pari all'ammontare dei costi pagati dalla controllata MediaCo nell'ambito della Consent Solicititation relativa al prestito obbligazionario emesso dalla stessa MediaCo nell'agosto 2019, a seguito dell'approvazione, in data 17 settembre 2020 da parte dell'Assemblea degli Obbligazionisti, della concessione di alcuni waivers e alcune modifiche da apportare all'Indenture. Infine, nel mese di ottobre 2020 RRI ha effettuato, sempre al fine di supportare le esigenze di working capital della Società, un ulteriore finanziamento soci, in favore di AS Roma e per il tramite della controllante NEEP, di 15 milioni di euro.
 
 Nei prospetti che seguono sono indicati i valori complessivi relativi ai rapporti patrimoniali ed economici al 30 giugno 2020, intercorsi con le società correlate e con esclusione di quelli infragruppo eliminati nel processo di consolidamento.
 
-#### Rapporti patrimoniali
+*Rapporti patrimoniali*
 
-|  (€/000) Attivo | Attività non correnti |   |   | Attività correnti |   | TOTALE ATTIVITA'  |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Partecipazioni | Altre attività | Diritti d'uso | Crediti commerciali | Altre attività  |   |
-|  AS Roma Real Estate Srl | - | 2.700 | 10.699 | - | 126 | 13.525  |
-|  Neep Roma Holding S.p.A. | - | - | - | - | 2.258 | 2.258  |
-|  AS Roma SPV LLC | - | - | - | - | 40 | 40  |
-|  TDV Real Estate | - | - | - | - | 1 | 1  |
-|  ASR Retail TDV | - | - | - | - | 1 | 1  |
-|  Stadio TDV S.p.A. | - | - | - | 2.242 | 1.577 | 3.820  |
-|  ASR Media and Sponsorship S.p.A. | 8.571 | - | - | 207 | 15.818 | 24.596  |
-|  Soccer SAS | 123.412 | - | - | 40.564 | - | 163.977  |
-|  Roma Studio S.r.l. | 3.007 | - | - | 5 | 824 | 3.836  |
-|  SOS srl (società liquidata) | - | - | - | - | 40 | 40  |
-|  **Totale attività** | **134.990** | **2.700** | **10.699** | **43.019** | **20.685** | **212.093**  |
-|  **Totale di bilancio** | **134.990** | **23.202** | **17.325** | **95.404** | **37.699** | **593.601**  |
-|  **% incidenza** | **100%** | **12%** | **62%** | **45%** | **55%** | **36%**  |
+(€/000)
 
-|  (€/000) Passivo | Passività non correnti |   | Passività correnti |   |   |   | TOTALE PASSIVITA'  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Debiti finanziari | Debiti finanziari per diritti d'uso | Debiti finanziari | Debiti finanziari per diritti d'uso | Debiti commerciali | Altre passività  |   |
-|  AS Roma Real Estate Srl | - | (8.735) | - | (3.414) | (0) | - | (12.149)  |
-|  Neep Roma Holding S.p.A. | - | - | (10.061) | - | (37) | (248) | (10.346)  |
-|  Stadio TDV S.p.A. | - | - | - | - | - | (817) | (817)  |
-|  Gruppo Raptor | - | - | - | - | - | - | -  |
-|  AS Roma SPV LLC | - | - | - | - | - | - | -  |
-|  Brand Management Srl | - | - | - | - | - | (9) | (9)  |
-|  ASR Media and Sponsorship S.p.A. | (68.518) | - | (11.783) | - | (1.418) | - | (81.720)  |
-|  Soccer SAS | (182.824) | - | - | - | (11.418) | - | (194.242)  |
-|  Studio | - | - | - | - | - | - | -  |
-|  AS Roma SPV GP LLC | - | - | - | - | (69) | - | (69)  |
-|  **Totale passività** | **(251.342)** | **(8.735)** | **(21.844)** | **(3.414)** | **(12.942)** | **(1.074)** | **(299.351)**  |
-|  **Totale di bilancio** | **(251.944)** | **(14.134)** | **(33.648)** | **(4.867)** | **(174.789)** | **(85.828)** | **(681.957)**  |
-|  **% incidenza** | **100%** | **62%** | **65%** | **70%** | **7%** | **1%** | **44%**  |
+| Attivo | Attività non correnti: Partecipazioni | Attività non correnti: Altre attività | Attività non correnti: Diritti d'uso | Attività correnti: Crediti commerciali | Attività correnti: Altre attività | TOTALE ATTIVITA' |
+|---|---|---|---|---|---|---|
+| AS Roma Real Estate Srl | - | 2.700 | 10.699 | - | 126 | 13.525 |
+| Neep Roma Holding S.p.A. | - | - | - | - | 2.258 | 2.258 |
+| AS Roma SPV LLC | - | - | - | - | 40 | 40 |
+| TDV Real Estate | - | - | - | - | 1 | 1 |
+| ASR Retail TDV | - | - | - | - | 1 | 1 |
+| Stadio TDV S.p.A | - | - | - | 2.242 | 1.577 | 3.820 |
+| ASR Media and Sponsorship S.p.A. | 8.571 | - | - | 207 | 15.818 | 24.596 |
+| Soccer SAS | 123.412 | - | - | 40.564 | - | 163.977 |
+| Roma Studio S.r.l. | 3.007 | - | - | 5 | 824 | 3.836 |
+| SDS srl (società liquidata) | - | - | - | - | 40 | 40 |
+| Totale attività | 134.990 | 2.700 | 10.699 | 43.019 | 20.685 | 212.093 |
+| *Totale di bilancio* | *134.990* | *23.202* | *17.325* | *95.404* | *37.699* | *593.601* |
+| *% incidenza* | *100%* | *12%* | *62%* | *45%* | *55%* | *36%* |
 
-242
+(€/000)
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+| Passivo | Passività non correnti: Debiti finanziari | Passività non correnti: Debiti finanziari per diritti d'uso | Passività correnti: Debiti finanziari | Passività correnti: Debiti finanziari per diritti d'uso | Passività correnti: Debiti commerciali | Passività correnti: Altre passività | TOTALE PASSIVITA' |
+|---|---|---|---|---|---|---|---|
+| AS Roma Real Estate Srl | - | (8.735) | - | (3.414) | (0) | - | (12.149) |
+| Neep Roma Holding S.p.A. | - | - | (10.061) | - | (37) | (248) | (10.346) |
+| Stadio TDV S.p.A | - | - | - | - | - | (817) | (817) |
+| Gruppo Raptor | - | - | - | - | - | - | - |
+| AS Roma SPV LLC | - | - | - | - | - | - | - |
+| Brand Management Srl | - | - | - | - | - | (9) | (9) |
+| ASR Media and Sponsorship S.p.A. | (68.518) | - | (11.783) | - | (1.418) | - | (81.720) |
+| Soccer SAS | (182.824) | - | - | - | (11.418) | - | (194.242) |
+| Studio | - | - | - | - | - | - | - |
+| AS Roma SPV GP LLC | - | - | - | - | (69) | - | (69) |
+| Totale passività | (251.342) | (8.735) | (21.844) | (3.414) | (12.942) | (1.074) | (299.351) |
+| *Totale di bilancio* | *(251.944)* | *(14.134)* | *(33.648)* | *(4.867)* | *(174.789)* | *(85.828)* | *(681.957)* |
+| *% incidenza* | *100%* | *62%* | *65%* | *70%* | *7%* | *1%* | *44%* |
+
+242 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 245 ---
 
@@ -9297,167 +9251,167 @@ RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 264 ---
 
-**AS • ROMA**
+262 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
-|  CALCATORE | DATOLO NASCITA | Contratto |   | Provenienza |   | Destinazione |   | Valori inizio periodo (Valori in Euro / 000)  |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Data inizio primo contratto | Data scadenza ultimo contratto | Data acquisto | Società | Data Cessione | Società | 30.06.2019  |   |   |
-|   |   |   |   |   |   |   |   |  1) Costo storico | 2) Fondo ammort. | 3) Valore Netto  |
-|  Agostinelli | 21/02/2002 | 21/08/2018 | 30/06/2021 |  | SVINCOLATO | 28/01/2020 | FIORENTINA | 120 | (36) | 84  |
-|  Anocic | 10/09/1997 | 28/08/2014 | 30/06/2020 | 28/08/2014 | NK OSUEK |  |  | 400 | (355) | 45  |
-|  Antenucci | 11/03/1999 | 25/03/2015 | 30/06/2022 |  | SETTORE GIOV. |  |  | 250 | (165) | 105  |
-|  Bamba | 01/06/2002 | 01/07/2018 | 30/06/2022 |  | SETTORE GIOV. |  |  | 35 | (12) | 23  |
-|  Beauljen | 10/04/2001 | 21/08/2017 | 30/06/2020 | 21/08/2017 | FC VOLENDAM |  |  | 270 | (175) | 95  |
-|  Blanda | 30/04/2000 | 01/07/2018 | 30/06/2023 | 28/06/2018 | RACING C. DE LENS |  |  | 6.245 | (1.249) | 4.996  |
-|  Boar | 12/05/2002 | 12/09/2018 | 30/06/2024 | 13/08/2018 | VENEZIA |  |  | 450 | (129) | 321  |
-|  Baua | 13/08/2001 | 07/11/2017 | 30/06/2024 |  | SETTORE GIOV. |  |  | 125 | (25) | 100  |
-|  Buso | 01/02/2000 | 12/09/2018 | 30/06/2020 |  | SVINCOLATO | 06/08/2019 | VINTUS E. | 18 | (18) | 0  |
-|  Calafori | 19/05/2002 | 01/07/2018 | 30/06/2022 |  | SETTORE GIOV. |  |  | 35 | (12) | 23  |
-|  Cangiano | 16/11/2001 | 20/11/2017 | 30/06/2020 |  | SETTORE GIOV. | 24/07/2019 | BOLOGNA FC |  |  |   |
-|  Capradossi | 11/03/1996 | 11/09/2013 | 30/06/2020 | 23/06/2017 | BARI | 01/08/2019 | SPEZIA CALCIO | 190 | (119) | 71  |
-|  Carpnelutti | 08/02/1999 | 07/11/2017 | 30/06/2020 | 22/06/2017 | TORINO | 23/07/2019 | MODENA FC | 17 | (17) | 0  |
-|  Celar | 14/03/1999 | 01/08/2017 | 30/06/2023 | 24/07/2017 | NK MARIBOR |  |  | 750 | (367) | 383  |
-|  Cetin | 01/01/1997 | 16/08/2019 | 30/06/2024 | 16/08/2019 | GENCLERBIRLIGI |  |  |  |  | 0  |
-|  Chiossi | 26/01/2002 |  | 30/06/2021 | 28/01/2020 | FIORENTINA |  |  |  |  |   |
-|  Coly Sidy Keba | 20/02/1998 | 11/08/2016 | 30/06/2021 |  | SVINCOLATO |  |  | 168 | (87) | 81  |
-|  Coric | 14/04/1997 | 01/07/2018 | 30/06/2023 | 10/05/2018 | GNK DINAMO Z. |  |  | 9.000 | (1.800) | 7.200  |
-|  Cristante | 03/03/1995 | 01/07/2018 | 30/06/2024 | 01/07/2018 | ATALANTA |  |  | 27.600 | (5.283) | 22.317  |
-|  Darboe | 06/06/2001 | 10/07/2019 | 30/06/2023 | 10/01/2019 | YOUNG RIETI |  |  |  |  | 0  |
-|  Dehel | 17/06/1991 | 20/07/2017 | 30/06/2022 | 20/07/2017 | SASSUOLO |  |  | 17.491 | (5.491) | 12.000  |
-|  Diawara | 17/07/1997 | 01/07/2019 | 30/06/2024 | 01/07/2019 | NAPOLI |  |  |  |  | 0  |
-|  D'orazio | 19/02/2000 | 17/07/2018 | 30/06/2023 |  | SETTORE GIOV. |  |  |  |  | 0  |
-|  Dzeko | 17/03/1986 | 12/08/2015 | 30/06/2022 | 11/08/2015 | MANCHESTER CITY |  |  | 21.053 | (16.422) | 4.631  |
-|  El Sharawey | 27/10/1992 | 27/01/2016 | 30/06/2020 | 27/01/2016 | MILAN | 07/07/2019 | SHANGHAI FC | 13.000 | (9.750) | 3.250  |
-|  Fazio | 17/03/1987 | 01/08/2016 | 30/06/2022 | 01/08/2016 | TOTTENHAM H. |  |  | 3.200 | (2.134) | 1.066  |
-|  Florenzi | 11/03/1991 | 03/10/2012 | 30/06/2023 | 20/06/2012 | FC CROTONE |  |  | 4.500 | (2.644) | 1.856  |
-|  Fuzato | 04/07/1997 | 12/07/2018 | 30/06/2023 | 12/07/2018 | PALMERAS |  |  | 1.900 | (366) | 1.134  |
-|  Gante | 15/02/2004 | 01/07/2020 | 30/06/2025 | 21/02/2020 | DRADEA |  |  |  |  |   |
-|  Gerson | 20/05/1997 | 01/07/2016 | 30/06/2021 | 21/12/2015 | FLUMINENSE FC |  |  | 20.100 | (11.967) | 8.133  |
-|  Gonalore | 10/03/1989 | 01/07/2017 | 30/06/2021 | 28/06/2017 | OL. LYONNAIS |  |  | 8.200 | (4.100) | 4.100  |
-|  Greco S. | 21/02/1999 | 08/03/2017 | 30/06/2022 |  | SETTORE GIOV. |  |  |  |  | 0  |
-|  Ibanez | 23/11/1998 | 27/01/2020 | 30/06/2024 | 27/01/2020 | ATALANTA |  |  |  |  |   |
-|  Juan Jesus | 10/06/1991 | 13/07/2016 | 30/06/2021 | 13/07/2016 | INTER FC |  |  | 8.847 | (4.833) | 4.014  |
-|  Karsdorp | 11/02/1995 | 01/07/2017 | 30/06/2022 | 28/06/2017 | FEYENDORD R. |  |  | 16.600 | (6.640) | 9.960  |
-|  Kluivert | 05/05/1999 | 01/07/2018 | 30/06/2023 | 22/06/2018 | AFC AJAX NV |  |  | 21.250 | (4.250) | 17.000  |
-|  Kolarov | 10/11/1985 | 22/07/2017 | 30/06/2021 | 21/07/2017 | MANCHESTER CITY |  |  | 5.563 | (3.673) | 1.890  |
-|  Mancini | 17/04/1996 | 17/07/2019 | 30/06/2024 | 17/07/2019 | ATALANTA |  |  |  |  | 0  |
-|  Marciano | 23/06/1987 | 05/07/2018 | 30/06/2021 |  | SVINCOLATO | 10/07/2019 | FC PORTO | 2.000 | (662) | 1.338  |
-|  Marangu | 07/03/2000 | 21/08/2017 | 30/06/2020 |  | SVINCOLATO |  |  | 457 | (297) | 160  |
-|  Mirante | 08/07/1983 | 22/06/2018 | 30/06/2021 | 22/06/2018 | BOLOGNA FC |  |  | 4.450 | (1.483) | 2.967  |
-|  Nani | 26/03/1998 | 12/01/2017 | 30/06/2020 |  | SVINCOLATO |  |  | 1.361 | (920) | 441  |
-|  Nzonzi | 15/12/1988 | 14/08/2018 | 30/06/2022 | 14/08/2018 | SVIOLIA FC |  |  | 29.431 | (6.562) | 22.869  |
-|  Olsen | 08/01/1990 | 24/07/2018 | 30/06/2023 | 24/07/2018 | COPENHAGEN |  |  | 11.300 | (2.105) | 9.195  |
-|  Pastore | 20/06/1989 | 01/07/2018 | 30/06/2023 | 26/06/2018 | PARIS S. GERMAN |  |  | 25.661 | (5.132) | 20.529  |
-|  Pau Lopez | 13/12/1994 | 10/07/2019 | 30/06/2024 | 10/07/2019 | REAL BETIS B. |  |  |  |  | 0  |
-|  Pellegrini | 19/06/1996 | 01/07/2017 | 30/06/2022 | 01/07/2017 | SASSUOLO |  |  | 13.165 | (5.266) | 7.899  |
-|  Peres | 01/03/1990 | 16/08/2016 | 30/06/2021 | 01/07/2017 | TORINO FC |  |  | 13.469 | (7.336) | 6.133  |
-|  Perez | 16/02/1998 | 30/01/2020 | 30/06/2024 |  | BARCELLONA |  |  |  |  |   |
-|  Perotti | 26/07/1988 | 01/02/2016 | 30/06/2021 | 01/02/2016 | GENOA |  |  | 12.600 | (8.409) | 4.191  |
-|  Persson | 15/01/2003 | 24/01/2019 | 30/06/2023 | 24/01/2019 | TRELLEBORGS |  |  | 80 | (10) | 70  |
-|  Pezzella | 11/03/2000 | 23/08/2017 | 30/06/2023 |  | SETTORE GIOV. |  |  |  |  | 0  |
-|  Providence | 07/07/2001 | 29/07/2019 | 30/06/2022 | 29/07/2019 | PARIS S. GERMAN |  |  |  |  | 0  |
-|  Riccardi | 03/04/2001 | 04/04/2017 | 30/06/2023 |  | SETTORE GIOV. |  |  | 470 | (61) | 409  |
-|  Sadiq | 02/02/1997 | 13/07/2015 | 30/06/2021 | 13/07/2015 | SPEZIA CALCIO |  |  | 2.580 | (1.570) | 1.010  |
-|  Santon | 02/01/1991 | 01/07/2018 | 30/06/2022 | 26/06/2018 | INTERNAZIONALE |  |  | 10.000 | (2.500) | 7.500  |
-|  Schick | 24/01/1996 | 29/08/2017 | 30/06/2022 | 29/08/2017 | SAMPOORIA |  |  | 41.123 | (11.565) | 29.559  |
-|  Seck | 23/02/1996 | 01/07/2016 | 30/06/2021 |  | SVINCOLATO |  |  | 1.000 | (595) | 405  |
-|  Spinazzola | 25/03/1993 | 01/07/2019 | 30/06/2024 | 30/06/2019 | FC JUVENTUS |  |  | 29.500 | 0 | 29.500  |
-|  Tali | 05/12/2001 | 07/11/2019 | 30/06/2023 | 07/11/2019 | SVINCOLATO |  |  |  |  |   |
-|  Under | 14/07/1997 | 15/07/2017 | 30/06/2023 | 13/07/2017 | ISTANBUL B. |  |  | 16.882 | (6.141) | 10.741  |
-|  Valeau | 05/03/1999 | 08/03/2017 | 30/06/2023 |  | SETTORE GIOV. |  |  |  |  | 0  |
-|  Verde | 20/06/1996 | 01/10/2014 | 30/06/2020 | 26/06/2016 | DELFINO PESCARA | 17/07/2019 | AEK FC | 200 | (156) | 45  |
-|  Veratucut | 01/03/1993 | 19/07/2019 | 30/06/2024 | 19/07/2019 | ACF FIORENTINA |  |  |  |  | 0  |
-|  Villar | 23/03/1998 | 30/01/2020 | 30/06/2024 | 30/01/2020 | ELCHE |  |  |  |  |   |
-|  Zaniolo | 02/07/1999 | 01/07/2018 | 30/06/2024 | 26/06/2018 | INTERNAZIONALE |  |  | 5.700 | (1.139) | 4.561  |
-|  Calciatori non capitalizzati |  |  |  |  |  |  |  |  |  |   |
-|  **TOTALI** |  |  |  |  |  |  |  | **408.406** | **(144.007)** | **264.399**  |
-|  Attualizzazioni |  |  |  |  |  |  |  | (15.217) | 4.643 | (10.574)  |
-|  **Totale complessivo** |  |  |  |  |  |  |  | **393.189** | **(139.364)** | **253.825**  |
+Valori inizio periodo (Valori in Euro / 000) – 30.06.2019
 
-262
+| CALCIATORE | DATA DI NASCITA | Contratto: Data inizio primo contratto | Contratto: Data scadenza ultimo contratto | Provenienza: Data acquisto | Provenienza: Società | Destinazione: Data Cessione | Destinazione: Società | 1) Costo storico | 2) Fondo ammort. | 3) Valore Netto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Agostinelli | 21/02/2002 | 21/08/2018 | 30/06/2021 | | SVINCOLATO | 28/01/2020 | FIORENTINA | 120 | (36) | 84 |
+| Anocic | 10/09/1997 | 28/08/2014 | 30/06/2020 | 28/08/2014 | NK OSIJEK | | | 400 | (355) | 45 |
+| Antonucci | 11/03/1999 | 25/03/2015 | 30/06/2022 | | SETTORE GIOV. | | | 250 | (145) | 105 |
+| Bamba | 01/06/2002 | 01/07/2018 | 30/06/2022 | | SETTORE GIOV. | | | 35 | (12) | 23 |
+| Besuijen | 10/04/2001 | 21/08/2017 | 30/06/2020 | 21/08/2017 | FC VOLENDAM | | | 270 | (175) | 95 |
+| Bianda | 30/04/2000 | 01/07/2018 | 30/06/2023 | 28/06/2018 | RACING C. DE LENS | | | 6.245 | (1.249) | 4.996 |
+| Boer | 12/05/2002 | 12/09/2018 | 30/06/2021 | 13/08/2018 | VENEZIA | | | 450 | (129) | 321 |
+| Boua | 13/08/2001 | 07/11/2017 | 30/06/2024 | | SETTORE GIOV. | | | 125 | (25) | 100 |
+| Buso | 01/02/2000 | 12/09/2018 | 30/06/2020 | | SVINCOLATO | 06/08/2019 | VIRTUS E. | 18 | (18) | 0 |
+| Calafiori | 19/05/2002 | 01/07/2018 | 30/06/2022 | | SETTORE GIOV. | | | 35 | (12) | 23 |
+| Cangiano | 16/11/2001 | 20/11/2017 | 30/06/2020 | | SETTORE GIOV. | 24/07/2019 | BOLOGNA FC | | | |
+| Capradossi | 11/03/1996 | 11/09/2013 | 30/06/2020 | 23/06/2017 | BARI | 01/08/2019 | SPEZIA CALCIO | 190 | (119) | 71 |
+| Cargnelutti | 08/02/1999 | 07/11/2017 | 30/06/2020 | 22/06/2017 | TORINO | 23/07/2019 | MODENA FC | 17 | (17) | 0 |
+| Celar | 14/03/1999 | 01/08/2017 | 30/06/2023 | 24/07/2017 | NK MARIBOR | | | 750 | (367) | 383 |
+| Cetin | 01/01/1997 | 16/08/2019 | 30/06/2024 | 16/08/2019 | GENÇLERBIRLIĞI | | | | | 0 |
+| Chiossi | 26/01/2002 | | 30/06/2021 | 28/01/2020 | FIORENTINA | | | | | |
+| Coly Sidy Keba | 20/02/1998 | 11/08/2016 | 30/06/2021 | | SVINCOLATO | | | 168 | (87) | 81 |
+| Coric | 14/04/1997 | 01/07/2018 | 30/06/2023 | 10/05/2018 | GNK DINAMO Z. | | | 9.000 | (1.800) | 7.200 |
+| Cristante | 03/03/1995 | 01/07/2018 | 30/06/2024 | 01/07/2018 | ATALANTA | | | 27.600 | (5.283) | 22.317 |
+| Darboe | 06/06/2001 | 10/07/2019 | 30/06/2023 | 10/01/2019 | YOUNG RIETI | | | | | 0 |
+| Defrel | 17/06/1991 | 20/07/2017 | 30/06/2022 | 20/07/2017 | SASSUOLO | | | 17.491 | (5.491) | 12.000 |
+| Diawara | 17/07/1997 | 01/07/2019 | 30/06/2024 | 01/07/2019 | NAPOLI | | | | | 0 |
+| D'orazio | 19/02/2000 | 17/07/2018 | 30/06/2023 | | SETTORE GIOV. | | | | | 0 |
+| Dzeko | 17/03/1986 | 12/08/2015 | 30/06/2020 | 11/08/2015 | MANCHESTER CITY | | | 21.053 | (16.422) | 4.631 |
+| El Sharaawy | 27/10/1992 | 27/01/2016 | 30/06/2020 | 27/01/2016 | MILAN | 07/07/2019 | SHANGHAI FC | 13.000 | (9.750) | 3.250 |
+| Fazio | 17/03/1987 | 01/08/2016 | 30/06/2020 | 01/08/2016 | TOTTENHAM H. | | | 3.200 | (2.134) | 1.066 |
+| Florenzi | 11/03/1991 | 03/10/2012 | 30/06/2020 | 20/06/2012 | FC CROTONE | | | 4.500 | (2.644) | 1.856 |
+| Fuzato | 04/07/1997 | 12/07/2018 | 30/06/2023 | 12/07/2018 | PALMEIRAS | | | 1.500 | (366) | 1.134 |
+| Gante | 15/02/2004 | 01/07/2020 | 30/06/2025 | 21/02/2020 | ORADEA | | | | | |
+| Gerson | 20/05/1997 | 01/07/2016 | 30/06/2021 | 21/12/2015 | FLUMINENSE FC | | | 20.100 | (11.967) | 8.133 |
+| Gonalons | 10/03/1989 | 01/07/2017 | 30/06/2021 | 28/06/2017 | OL. LYONNAIS | | | 8.200 | (4.100) | 4.100 |
+| Greco S. | 21/02/1999 | 08/03/2017 | 30/06/2022 | | SETTORE GIOV. | | | | | 0 |
+| Ibanez | 23/11/1998 | 27/01/2020 | 30/06/2024 | 27/01/2020 | ATALANTA | | | | | |
+| Juan Jesus | 10/06/1991 | 13/07/2016 | 30/06/2021 | 13/07/2016 | INTER FC | | | 8.847 | (4.833) | 4.014 |
+| Karsdorp | 11/02/1995 | 01/07/2017 | 30/06/2023 | 28/06/2017 | FEYENOORD R. | | | 16.600 | (6.640) | 9.960 |
+| Kluivert | 05/05/1999 | 01/07/2018 | 30/06/2023 | 22/06/2018 | AFC AJAX NV | | | 21.250 | (4.250) | 17.000 |
+| Kolarov | 10/11/1985 | 22/07/2017 | 30/06/2021 | 21/07/2017 | MANCHESTER CITY | | | 5.563 | (3.673) | 1.890 |
+| Mancini | 17/04/1996 | 17/07/2019 | 30/06/2024 | 17/07/2019 | ATALANTA | | | | | 0 |
+| Marcano | 23/06/1987 | 05/07/2018 | 30/06/2021 | | SVINCOLATO | 10/07/2019 | FC PORTO | 2.000 | (662) | 1.338 |
+| Masangu | 07/03/2000 | 21/08/2017 | 30/06/2020 | | SVINCOLATO | | | 457 | (297) | 160 |
+| Mirante | 08/07/1983 | 22/06/2018 | 30/06/2021 | 22/06/2018 | BOLOGNA FC | | | 4.450 | (1.483) | 2.967 |
+| Nani | 26/03/1998 | 12/01/2017 | 30/06/2020 | | SVINCOLATO | | | 1.361 | (920) | 441 |
+| Nzonzi | 15/12/1988 | 14/08/2018 | 30/06/2022 | 14/08/2018 | SIVIGLIA FC | | | 29.431 | (6.562) | 22.869 |
+| Olsen | 08/01/1990 | 24/07/2018 | 30/06/2023 | 24/07/2018 | COPENHAGEN | | | 11.300 | (2.105) | 9.195 |
+| Pastore | 20/06/1989 | 01/07/2018 | 30/06/2023 | 26/06/2018 | PARIS S. GERMAN | | | 25.661 | (5.132) | 20.529 |
+| Pau Lopez | 13/12/1994 | 10/07/2019 | 30/06/2024 | 10/07/2019 | REAL BETIS B. | | | | | 0 |
+| Pellegrini | 19/06/1996 | 01/07/2017 | 30/06/2022 | 01/07/2017 | SASSUOLO | | | 13.165 | (5.266) | 7.899 |
+| Peres | 01/03/1990 | 16/08/2016 | 30/06/2021 | 01/07/2017 | TORINO FC | | | 13.469 | (7.336) | 6.133 |
+| Perez | 16/02/1998 | 30/01/2020 | 30/06/2024 | | BARCELONA | | | | | |
+| Perotti | 26/07/1988 | 01/02/2016 | 30/06/2021 | 01/02/2016 | GENOA | | | 12.600 | (8.409) | 4.191 |
+| Persson | 15/01/2003 | 24/01/2019 | 30/06/2023 | 24/01/2019 | TRELLEBORGS | | | 80 | (10) | 70 |
+| Pezzella | 11/03/2000 | 23/08/2017 | 30/06/2023 | | SETTORE GIOV. | | | | | 0 |
+| Providence | 07/07/2001 | 29/07/2019 | 30/06/2022 | 29/07/2019 | PARIS S. GERMAN | | | | | 0 |
+| Riccardi | 03/04/2001 | 04/04/2017 | 30/06/2023 | | SETTORE GIOV. | | | 470 | (61) | 409 |
+| Sadiq | 02/02/1997 | 13/07/2015 | 30/06/2021 | 13/07/2015 | SPEZIA CALCIO | | | 2.580 | (1.570) | 1.010 |
+| Santon | 02/01/1991 | 01/07/2018 | 30/06/2022 | 26/06/2018 | INTERNAZIONALE | | | 10.000 | (2.500) | 7.500 |
+| Schick | 24/01/1996 | 29/08/2017 | 30/06/2022 | 29/08/2017 | SAMPDORIA | | | 41.123 | (11.565) | 29.559 |
+| Seck | 23/02/1996 | 01/07/2016 | 30/06/2021 | | SVINCOLATO | | | 1.000 | (595) | 405 |
+| Spinazzola | 29/03/1993 | 01/07/2019 | 30/06/2024 | 30/06/2019 | FC JUVENTUS | | | 29.500 | 0 | 29.500 |
+| Tall | 05/12/2001 | 07/11/2019 | 30/06/2023 | 07/11/2019 | SVINCOLATO | | | | | |
+| Under | 14/07/1997 | 15/07/2017 | 30/06/2023 | 13/07/2017 | ISTANBUL B. | | | 16.882 | (6.141) | 10.741 |
+| Valeau | 05/03/1999 | 08/03/2017 | 30/06/2023 | | SETTORE GIOV. | | | | | 0 |
+| Verde | 20/06/1996 | 01/10/2014 | 30/06/2020 | 26/06/2016 | DELFINO PESCARA | 17/07/2019 | AEK FC | 200 | (156) | 45 |
+| Veretuout | 01/03/1993 | 19/07/2019 | 30/06/2024 | 19/07/2019 | ACF FIORENTINA | | | | | 0 |
+| Villar | 23/03/1998 | 30/01/2020 | 30/06/2024 | 30/01/2020 | ELCHE | | | | | |
+| Zaniolo | 02/07/1999 | 01/07/2018 | 30/06/2024 | 26/06/2018 | INTERNAZIONALE | | | 5.700 | (1.139) | 4.561 |
+| Calciatori non capitalizzati | | | | | | | | | | |
+| TOTALI | | | | | | | | 408.406 | (144.007) | 264.399 |
+| Attualizzazioni | | | | | | | | (15.217) | 4.643 | (10.574) |
+| Totale complessivo | | | | | | | | 393.189 | (139.364) | 253.825 |
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+262 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 265 ---
 
-AS•ROMA
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 263
 
-|  Variadoni valori di periodo (Valori in Euro / 000) |   |   | Effetti economici di periodo (Valori in Euro / 000) |   |   |   | Valori di fine periodo (Valori in Euro / 000) |   |   | Varie (Valori in Euro/000)  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  4) Acquisti di diritti | 5) Cessioni di diritti e risoluzioni | 5 -bis) Utilizzo Fondi ammortamento | 6) Ammor.it* | 7) Svalutaz.* | 8) Minusv.* | 9) Plusvalenze | Costo storico | Fondo di ammortamento | Valore Netto | Compenso Agenti (Costo storico iniziale) | Altri costi di acquisizione  |
-|   | (120) | 60 | (24) |  |  | 179 | 0 | 0 | 0 | 120 | 0  |
-|   |  |  | (45) |  |  |  | 400 | (400) | 0 | 250 | 0  |
-|   |  |  | (35) |  |  |  | 250 | (180) | 70 | 250 | 0  |
-|   |  |  | (8) |  |  |  | 35 | (20) | 15 | 35 | 0  |
-|   |  |  | (48) | (47) |  |  | 223 | (223) | 0 | 130 | 0  |
-|   |  |  | (1.249) |  |  |  | 6.245 | (2.498) | 3.747 | 245 | 100  |
-|   |  |  | (112) |  |  |  | 450 | (241) | 209 |  | 0  |
-|  215 |  |  | (60) |  |  |  | 340 | (85) | 255 | 340 | 0  |
-|   | (18) | 18 |  |  |  |  | 0 | 0 | 0 | 9 | 0  |
-|   |  |  | (8) |  |  |  | 35 | (20) | 15 | 105 | 0  |
-|   |  |  |  |  |  | 750 | 0 | 0 | 0 |  | 0  |
-|   | (190) | 125 | (6) |  |  | 35 | 0 | 0 | 0 | 60 | 0  |
-|   | (17) | 17 |  |  |  |  | 0 | 0 | 0 |  | 0  |
-|  190 |  |  | (126) |  |  |  | 940 | (493) | 447 | 130 | 0  |
-|  4.300 |  |  | (761) |  |  |  | 4.300 | (761) | 3.539 | 2.000 | 0  |
-|  160 |  |  | (47) |  |  |  | 160 | (47) | 113 | 0 | 0  |
-|   |  |  | (40) | (41) |  |  | 127 | (127) | 0 | 168 | 0  |
-|   |  |  | (1.800) |  |  |  | 9.000 | (3.600) | 5.400 | 1.000 | 0  |
-|  2.000 |  |  | (4.990) |  |  |  | 29.600 | (10.273) | 19.327 | 600 | 125  |
-|  120 |  |  | (29) |  |  |  | 120 | (29) | 91 | 120 | 0  |
-|   |  |  | (4.000) |  |  |  | 17.491 | (9.491) | 8.000 |  | 120  |
-|  22.900 |  |  | (4.580) |  |  |  | 22.900 | (4.580) | 18.320 | 1.900 | 0  |
-|  30 |  |  | (7) |  |  |  | 30 | (7) | 23 | 30 | 0  |
-|   |  |  | (1.821) |  |  |  | 21.053 | (18.243) | 2.810 |  | 350  |
-|   | (13.000) | 9.812 | (62) |  |  | 12.812 | 0 | 0 | 0 |  | 0  |
-|   |  |  | (415) |  |  |  | 3.200 | (2.549) | 651 |  | 150  |
-|   |  |  | (464) |  |  |  | 4.500 | (3.108) | 1.392 | 2.000 | 0  |
-|   |  |  | (379) |  |  |  | 1.500 | (744) | 756 | 1.000 | 0  |
-|  200 |  |  |  |  |  |  | 200 | 0 | 200 |  |   |
-|   | (20.100) | 12.101 | (134) |  |  | 3.801 | 0 | 0 | 0 | 1.500 | 700  |
-|   |  |  | (2.050) |  |  |  | 8.200 | (6.150) | 2.050 | 3.200 | 150  |
-|  59 |  |  | (19) |  |  |  | 59 | (19) | 40 | 20 | 0  |
-|  10.350 |  |  | (986) |  |  |  | 10.350 | (986) | 9.364 | 1.350 | 0  |
-|   |  |  | (2.007) |  |  |  | 8.847 | (6.840) | 2.007 |  | 83  |
-|   |  |  | (3.320) |  |  |  | 16.600 | (9.960) | 6.640 | 600 | 0  |
-|   |  |  | (4.250) |  |  |  | 21.250 | (8.500) | 12.750 | 4.000 | 0  |
-|   |  |  | (1.262) |  |  |  | 5.563 | (4.935) | 628 | 300 | 150  |
-|  24.700 |  |  | (4.764) |  |  |  | 24.700 | (4.764) | 19.936 | 1.700 | 0  |
-|   | (2.000) | 680 | (18) |  |  | 1.605 | 0 | 0 | 0 | 2.000 | 0  |
-|   |  |  | (160) |  |  |  | 457 | (457) | 0 | 457 | 0  |
-|   |  |  | (1.483) |  |  |  | 4.450 | (2.966) | 1.484 | 450 | 60  |
-|   |  |  | (441) |  |  |  | 1.361 | (1.361) | 0 | 1.063 | 0  |
-|   |  |  | (7.623) |  |  |  | 29.431 | (14.185) | 15.246 | 1.500 | 129  |
-|   |  |  | (2.299) |  |  |  | 11.300 | (4.404) | 6.896 | 2.300 | 0  |
-|   |  |  | (5.132) |  |  |  | 25.661 | (10.264) | 15.397 | 1.000 | 0  |
-|  25.546 |  |  | (5.008) |  |  |  | 25.546 | (5.008) | 20.538 | 1.500 | 0  |
-|   |  |  | (2.633) |  |  |  | 13.165 | (7.899) | 5.266 | 3.165 | 165  |
-|  250 |  |  | (3.067) |  |  |  | 13.719 | (10.403) | 3.316 |  | 0  |
-|  13.500 |  |  | (1.273) |  |  |  | 13.500 | (1.273) | 12.227 | 1.500 | 0  |
-|   |  |  | (2.096) | (2.095) |  |  | 10.505 | (10.505) | 0 | 600 | 0  |
-|   |  |  | (35) |  |  |  | 80 | (45) | 35 | 30 | 0  |
-|  151 |  |  | (37) |  |  |  | 151 | (37) | 114 | 60 | 0  |
-|  420 |  |  | (133) |  |  |  | 420 | (133) | 287 | 120 | 0  |
-|   |  |  | (102) |  |  |  | 470 | (163) | 307 | 470 | 0  |
-|   | (2.580) | 1.854 | (284) |  |  | 1.023 | 0 | 0 | 0 |  | 0  |
-|   |  |  | (2.500) |  |  |  | 10.000 | (5.000) | 5.000 | 500 | 60  |
-|   |  |  | (9.853) |  |  |  | 41.123 | (21.417) | 19.706 | 2.730 | 120  |
-|   |  |  | (152) | (253) |  |  | 747 | (747) | 0 | 1.000 | 0  |
-|  1.300 |  |  | (6.340) |  |  |  | 30.800 | (6.340) | 24.460 | 1.300 | 0  |
-|  150 |  |  | (21) |  |  |  | 150 | (21) | 129 |  |   |
-|   |  |  | (2.771) |  |  |  | 16.882 | (8.912) | 7.970 | 1.350 | 487  |
-|  134 |  |  | (16) |  |  |  | 134 | (16) | 118 | 25 | 0  |
-|   | (200) | 158 | (2) |  |  | 658 | 0 | 0 | 0 |  | 350  |
-|  18.500 |  |  | (3.553) |  |  |  | 18.500 | (3.553) | 14.947 | 1.500 | 0  |
-|  5.000 |  |  | (472) |  |  |  | 5.000 | (472) | 4.528 | 1.000 |   |
-|  800 |  |  | (1.079) |  |  |  | 6.500 | (2.218) | 4.282 | 2.000 | 110  |
-|  130.975 | (38.225) | 24.825 | (98.490) | (2.436) | 0 | 20.863 | 498.720 | (217.672) | 281.048 | 50.782 | 3.408  |
-|  (6.142) |  |  | 4.489 |  |  | (711) | (21.359) | 9.132 | -12.226 |  |   |
-|  124.833 | (38.225) | 24.825 |  | (2.436) | 0 | 20.152 | 477.362 | (208.539) | 268.822 | 50.782 | 3.408  |
+(Nota: las filas de esta página siguen el mismo orden de calciatori de la página anterior; en esta página no figuran los nombres.)
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+Variazioni valori di periodo (Valori in Euro / 000) | Effetti economici di periodo (Valori in Euro / 000) | Valori di fine periodo (Valori in Euro / 000) 30.06.2020 | Varie (Valori in Euro/000)
 
-263
+| 4) Acquisti di diritti | 5) Cessioni di diritti e risoluzioni | 5-bis) Utilizzo Fondi ammortamento | 6) Ammort.ti* | 7) Svalutaz.* | 8) Minusv.* | 9) Plusvalenze | Costo storico | Fondo di ammortamento | Valore Netto | Compenso Agenti (Costo storico iniziale) | Altri costi di acquisizione |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| | (120) | 60 | (24) | | | 179 | 0 | 0 | 0 | 120 | 0 |
+| | | | (45) | | | | 400 | (400) | 0 | 250 | 0 |
+| | | | (35) | | | | 250 | (180) | 70 | 250 | 0 |
+| | | | (8) | | | | 35 | (20) | 15 | 35 | 0 |
+| | | | (48) | (47) | | | 223 | (223) | 0 | 130 | 0 |
+| | | | (1.249) | | | | 6.245 | (2.498) | 3.747 | 245 | 100 |
+| | | | (112) | | | | 450 | (241) | 209 | | 0 |
+| 215 | | | (60) | | | | 340 | (85) | 255 | 340 | 0 |
+| | (18) | 18 | | | | | 0 | 0 | 0 | 9 | 0 |
+| | | | (8) | | | | 35 | (20) | 15 | 105 | 0 |
+| | | | | | | 750 | 0 | 0 | 0 | | 0 |
+| | (190) | 125 | (6) | | | 35 | 0 | 0 | 0 | 60 | 0 |
+| | (17) | 17 | | | | | 0 | 0 | 0 | | 0 |
+| 190 | | | (126) | | | | 940 | (493) | 447 | 130 | 0 |
+| 4.300 | | | (761) | | | | 4.300 | (761) | 3.539 | 2.000 | 0 |
+| 160 | | | (47) | | | | 160 | (47) | 113 | 0 | 0 |
+| | | | (40) | (41) | | | 127 | (127) | 0 | 168 | 0 |
+| | | | (1.800) | | | | 9.000 | (3.600) | 5.400 | 1.000 | 0 |
+| 2.000 | | | (4.990) | | | | 29.600 | (10.273) | 19.327 | 600 | 125 |
+| 120 | | | (29) | | | | 120 | (29) | 91 | 120 | 0 |
+| | | | (4.000) | | | | 17.491 | (9.491) | 8.000 | | 120 |
+| 22.900 | | | (4.580) | | | | 22.900 | (4.580) | 18.320 | 1.900 | 0 |
+| 30 | | | (7) | | | | 30 | (7) | 23 | 30 | 0 |
+| | | | (1.821) | | | | 21.053 | (18.243) | 2.810 | | 350 |
+| | (13.000) | 9.812 | (62) | | | 12.812 | 0 | 0 | 0 | | 0 |
+| | | | (415) | | | | 3.200 | (2.549) | 651 | | 150 |
+| | | | (464) | | | | 4.500 | (3.108) | 1.392 | 2.000 | 0 |
+| | | | (378) | | | | 1.500 | (744) | 756 | 1.000 | 0 |
+| 200 | | | | | | | 200 | 0 | 200 | | |
+| | (20.100) | 12.101 | (134) | | | 3.801 | 0 | 0 | 0 | 1.500 | 700 |
+| | | | (2.050) | | | | 8.200 | (6.150) | 2.050 | 3.200 | 150 |
+| 59 | | | (19) | | | | 59 | (19) | 40 | 20 | 0 |
+| 10.350 | | | (986) | | | | 10.350 | (986) | 9.364 | 1.350 | 0 |
+| | | | (2.007) | | | | 8.847 | (6.840) | 2.007 | | 83 |
+| | | | (3.320) | | | | 16.600 | (9.960) | 6.640 | 600 | 0 |
+| | | | (4.250) | | | | 21.250 | (8.500) | 12.750 | 4.000 | 0 |
+| | | | (1.262) | | | | 5.563 | (4.935) | 628 | 300 | 150 |
+| 24.700 | | | (4.764) | | | | 24.700 | (4.764) | 19.936 | 1.700 | 0 |
+| | (2.000) | 680 | (18) | | | 1.605 | 0 | 0 | 0 | 2.000 | 0 |
+| | | | (160) | | | | 457 | (457) | 0 | 457 | 0 |
+| | | | (1.483) | | | | 4.450 | (2.966) | 1.484 | 450 | 60 |
+| | | | (441) | | | | 1.361 | (1.361) | 0 | 1.063 | 0 |
+| | | | (7.623) | | | | 29.431 | (14.185) | 15.246 | 1.500 | 129 |
+| | | | (2.299) | | | | 11.300 | (4.404) | 6.896 | 2.300 | 0 |
+| | | | (5.132) | | | | 25.661 | (10.264) | 15.397 | 1.000 | 0 |
+| 25.546 | | | (5.008) | | | | 25.546 | (5.008) | 20.538 | 1.500 | 0 |
+| | | | (2.633) | | | | 13.165 | (7.899) | 5.266 | 3.165 | 165 |
+| 250 | | | (3.067) | | | | 13.719 | (10.403) | 3.316 | | 0 |
+| 13.500 | | | (1.273) | | | | 13.500 | (1.273) | 12.227 | 1.500 | 0 |
+| | | | (2.096) | (2.095) | | | 10.505 | (10.505) | 0 | 600 | 0 |
+| | | | (35) | | | | 80 | (45) | 35 | 30 | 0 |
+| 151 | | | (37) | | | | 151 | (37) | 114 | 60 | 0 |
+| 420 | | | (133) | | | | 420 | (133) | 287 | 120 | 0 |
+| | | | (102) | | | | 470 | (163) | 307 | 470 | 0 |
+| | (2.580) | 1.854 | (284) | | | 1.023 | 0 | 0 | 0 | | 0 |
+| | | | (2.500) | | | | 10.000 | (5.000) | 5.000 | 500 | 60 |
+| | | | (9.853) | | | | 41.123 | (21.417) | 19.706 | 2.730 | 120 |
+| | | | (152) | (253) | | | 747 | (747) | 0 | 1.000 | 0 |
+| 1.300 | | | (6.340) | | | | 30.800 | (6.340) | 24.460 | 1.300 | 0 |
+| 150 | | | (21) | | | | 150 | (21) | 129 | | |
+| | | | (2.771) | | | | 16.882 | (8.912) | 7.970 | 1.350 | 487 |
+| 134 | | | (16) | | | | 134 | (16) | 118 | 25 | 0 |
+| | (200) | 158 | (2) | | | 658 | 0 | 0 | 0 | | 350 |
+| 18.500 | | | (3.553) | | | | 18.500 | (3.553) | 14.947 | 1.500 | 0 |
+| 5.000 | | | (472) | | | | 5.000 | (472) | 4.528 | 1.000 | |
+| 800 | | | (1.079) | | | | 6.500 | (2.218) | 4.282 | 2.000 | 110 |
+| | | | | | | | | | | | |
+| 130.975 | (38.225) | 24.825 | (98.490) | (2.436) | 0 | 20.863 | 498.720 | (217.672) | 281.048 | 50.782 | 3.408 |
+| (6.142) | | | 4.489 | | | (711) | (21.359) | 9.132 | -12.226 | | |
+| 124.833 | (38.225) | 24.825 | | (2.436) | 0 | 20.152 | 477.362 | (208.539) | 268.822 | 50.782 | 3.408 |
+
+RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 263
 
 --- pág. 266 ---
 
@@ -9476,25 +9430,19 @@ E DELLA SOCIETÀ DI REVISIONE
 
 --- pág. 268 ---
 
-AS • ROMA
+[ilegible]
 
-A.S. ROMA S.p.A.
+266 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
-Sede Sociale: Roma, Piazzale Dino Viola n.1
+**A.S. ROMA S.p.A.**
+**Sede Sociale: Roma, Piazzale Dino Viola n.1**
+**Capitale Sociale versato: Euro 93.942.205,19**
+**Capitale sociale deliberato: € 243.942.205,19**
+**Registro Imprese n. 862/67 - R.E.A. n. 303093**
+**Codice Fiscale 03294210582 - P. IVA. 01180281006**
+**Direzione e coordinamento: Romulus and Remus Investments LLC**
 
-Capitale Sociale versato: Euro 93.942.205,19
-
-Capitale sociale deliberato: € 243.942.205,19
-
-Registro Imprese n. 862/67 - R.E.A. n. 303093
-
-Codice Fiscale 03294210582 - P. IVA. 01180281006
-
-Direzione e coordinamento: Romulus and Remus Investments LLC
-
-RELAZIONE DEL COLLEGIO SINDACALE ALL'ASSEMBLEA DEGLI AZIONISTI AI
-SENSI DEL D. LGS. N. 58/98 E DELL'ART. 2429 C.C. SUL BILANCIO
-DELL'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 ED AL BILANCIO CONSOLIDATO
+RELAZIONE DEL COLLEGIO SINDACALE ALL'ASSEMBLEA DEGLI AZIONISTI AI SENSI DEL D. LGS. N. 58/98 E DELL'ART. 2429 C.C. SUL BILANCIO DELL'ESERCIZIO CHIUSO AL 30 GIUGNO 2020 ED AL BILANCIO CONSOLIDATO
 
 All'Assemblea degli Azionisti della Società
 
@@ -9502,26 +9450,17 @@ A.S. ROMA S.p.A.
 
 Signori Azionisti,
 
-il Collegio Sindacale attualmente in carica è stato nominato con Assemblea del 26 ottobre
-2017, con scadenza dell'incarico alla data dell'Assemblea per l'approvazione del bilancio al
-30 giugno 2020.
+il Collegio Sindacale attualmente in carica è stato nominato con Assemblea del 26 ottobre 2017, con scadenza dell'incarico alla data dell'Assemblea per l'approvazione del bilancio al 30 giugno 2020.
 
-Dopo la chiusura dell'esercizio cui la presente relazione riferisce, in data 17 agosto 2020,
-l'azionista indiretto AS Roma SPV LLC ha ceduto e trasferito a Romulus and Remus LLC
-Investments ("RRI") la titolarità, diretta e indiretta, di complessive n. 544.468.535 azioni
-ordinarie di A.S. Roma S.p.A ("AS Roma" o la "Società"), pari a circa l'86,6% del capitale
-sociale. Si ricorda che la controllante diretta di AS Roma è la società NEEP Roma Holding
-S.p.A ("NEEP"), titolare di azioni pari all'83,284% del Capitale sociale.
+Dopo la chiusura dell'esercizio cui la presente relazione riferisce, in data 17 agosto 2020, l'azionista indiretto AS Roma SPV LLC ha ceduto e trasferito a Romulus and Remus LLC Investments ("RRI") la titolarità, diretta e indiretta, di complessive n. 544.468.535 azioni ordinarie di A.S. Roma S.p.A ("AS Roma" o la "Società"), pari a circa l'86,6% del capitale sociale. Si ricorda che la controllante diretta di AS Roma è la società NEEP Roma Holding S.p.A ("NEEP"), titolare di azioni pari all'83,284% del Capitale sociale.
 
-Alla data attuale, pertanto, sia AS Roma sia NEEP sono soggette all'attività di direzione e
-coordinamento di RRI, ai sensi e per gli effetti di cui agli artt. 2497 e ss. del codice civile.
+Alla data attuale, pertanto, sia AS Roma sia NEEP sono soggette all'attività di direzione e coordinamento di RRI, ai sensi e per gli effetti di cui agli artt. 2497 e ss. del codice civile.
 
-In data 17 agosto 2020 RRI ha comunicato a Consob ed al mercato il verificarsi dei
-presupposti giuridici per la promozione dell'offerta pubblica di acquisto obbligatoria
+In data 17 agosto 2020 RRI ha comunicato a Consob ed al mercato il verificarsi dei presupposti giuridici per la promozione dell'offerta pubblica di acquisto obbligatoria
 
-266
+[firma]
 
-RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
+266 RELAZIONE FINANZIARIA ANNUALE PER L'ESERCIZIO CHIUSO AL 30 GIUGNO 2020
 
 --- pág. 269 ---
 

@@ -139,36 +139,31 @@ BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
 
 --- pág. 9 ---
 
-GENOA  
-CRICKET  
-AND  
-FOOTBALL  
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
+- 2 -
 
 # GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
 Bilancio di esercizio al 31-12-2023
 
-|  Dati anagrafici  |   |
-| --- | --- |
-|  Sede in | VIA RONCHI 67 16155 GENOVA GE  |
-|  Codice Fiscale | 80033270101  |
-|  Numero Rea | Genova 250918  |
-|  P.I. | 00973790108  |
-|  Capitale Sociale Euro | 6.471.355 i.v.  |
-|  Forma giuridica | SOCIETA' PER AZIONI  |
-|  Settore di attività prevalente (ATECO) | 931200 Attività di club sportivi  |
-|  Società in liquidazione | no  |
-|  Società con socio unico | no  |
-|  Società sottoposta ad altrui attività di direzione e coordinamento | no  |
-|  Appartenenza a un gruppo | sì  |
-|  Denominazione della società capogruppo | 777 Italy Sports Holding S.p.A.  |
-|  Paese della capogruppo | Italia  |
+| Dati anagrafici | |
+|---|---|
+| Sede in | VIA RONCHI 67 16155 GENOVA GE |
+| Codice Fiscale | 80033270101 |
+| Numero Rea | Genova 250918 |
+| P.I. | 00973790108 |
+| Capitale Sociale Euro | 6.471.355 i.v. |
+| Forma giuridica | SOCIETA' PER AZIONI |
+| Settore di attività prevalente (ATECO) | 931200 Attività di club sportivi |
+| Società in liquidazione | no |
+| Società con socio unico | no |
+| Società sottoposta ad altrui attività di direzione e coordinamento | no |
+| Appartenenza a un gruppo | si |
+| Denominazione della società capogruppo | 777 Italy Sports Holding S.p.A. |
+| Paese della capogruppo | Italia |
 
 BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
-
 - 2 -
 
 --- pág. 10 ---
@@ -239,115 +234,107 @@ BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
 
 --- pág. 11 ---
 
-GENOA  
-CRICKET  
-AND  
-FOOTBALL  
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
+- 4 -
 
-|  1) depositi bancari e postali | 1.141.519 | 1.163.857  |
-| --- | --- | --- |
-|  2) assegni | 0 | 0  |
-|  3) danaro e valori in cassa | 4.394 | 663  |
-|  Totale disponibilità liquide | 1.145.913 | 1.164.520  |
-|  Totale attivo circolante (C) | 90.092.637 | 90.716.340  |
-|  D) Ratei e risconti | 10.510.652 | 9.326.431  |
-|  Totale attivo | 309.165.373 | 307.119.990  |
-|  **Passivo**  |   |   |
-|  A) Patrimonio netto  |   |   |
-|  I - Capitale | 6.471.355 | 6.471.355  |
-|  II - Riserva da soprapprezzo delle azioni | 0 | 0  |
-|  III - Riserve di rivalutazione | 0 | 7.236.102  |
-|  IV - Riserva legale | 530.622 | 530.622  |
-|  V - Riserve statutarie | 0 | 0  |
-|  VI - Altre riserve, distintamente indicate  |   |   |
-|  Riserva straordinaria | 0 | 0  |
-|  Riserva da deroghe ex articolo 2423 codice civile | 0 | 0  |
-|  Riserva azioni (quote) della società controllante | 0 | 0  |
-|  Riserva da rivalutazione delle partecipazioni | 0 | 0  |
-|  Versamenti in conto aumento di capitale | 99.802.882 | 95.470.816  |
-|  Versamenti in conto futuro aumento di capitale | 0 | 0  |
-|  Versamenti in conto capitale | 0 | 0  |
-|  Versamenti a copertura perdite | 0 | 0  |
-|  Riserva da riduzione capitale sociale | 0 | 0  |
-|  Riserva avanzo di fusione | 0 | 0  |
-|  Riserva per utili su cambi non realizzati | 0 | 0  |
-|  Riserva da conguaglio utili in corso | 0 | 0  |
-|  Varie altre riserve | 150.476 | 150.475  |
-|  Totale altre riserve | 99.953.358 | 95.621.291  |
-|  VII - Riserva per operazioni di copertura dei flussi finanziari attesi | 0 | 0  |
-|  VIII - Utili (perdite) portati a nuovo | (61.728.621) | (42.730.096)  |
-|  IX - Utile (perdita) dell'esercizio | (32.541.764) | (61.728.621)  |
-|  Perdita ripianata nell'esercizio | 0 | 0  |
-|  X - Riserva negativa per azioni proprie in portafoglio | 0 | 0  |
-|  Totale patrimonio netto | 12.684.950 | 5.400.653  |
-|  B) Fondi per rischi e oneri  |   |   |
-|  1) per trattamento di quiescenza e obblighi simili | 0 | 0  |
-|  2) per imposte, anche differite | 0 | 0  |
-|  3) strumenti finanziari derivati passivi | 0 | 0  |
-|  4) altri | 14.703.479 | 1.868.826  |
-|  Totale fondi per rischi ed oneri | 14.703.479 | 1.868.826  |
-|  C) Trattamento di fine rapporto di lavoro subordinato | 770.687 | 729.605  |
-|  D) Debiti  |   |   |
-|  3) debiti verso soci per finanziamenti |  |   |
-|  esigibili entro l'esercizio successivo | 1.300.000 | 0  |
-|  esigibili oltre l'esercizio successivo | 0 | 1.300.000  |
-|  Totale debiti verso soci per finanziamenti | 1.300.000 | 1.300.000  |
-|  4) debiti verso banche |  |   |
-|  esigibili entro l'esercizio successivo | 20.667.997 | 15.678.033  |
-|  esigibili oltre l'esercizio successivo | 37.292.955 | 48.266.122  |
-|  Totale debiti verso banche | 57.960.952 | 63.944.155  |
+| | 31-12-2023 | 31-12-2022 |
+|---|---|---|
+| 1) depositi bancari e postali | 1.141.519 | 1.163.857 |
+| 2) assegni | 0 | 0 |
+| 3) danaro e valori in cassa | 4.394 | 663 |
+| Totale disponibilità liquide | 1.145.913 | 1.164.520 |
+| Totale attivo circolante (C) | 90.092.637 | 90.716.340 |
+| D) Ratei e risconti | 10.510.652 | 9.326.431 |
+| **Totale attivo** | 309.165.373 | 307.119.990 |
+| **Passivo** | | |
+| A) Patrimonio netto | | |
+| I - Capitale | 6.471.355 | 6.471.355 |
+| II - Riserva da soprapprezzo delle azioni | 0 | 0 |
+| III - Riserve di rivalutazione | 0 | 7.236.102 |
+| IV - Riserva legale | 530.622 | 530.622 |
+| V - Riserve statutarie | 0 | 0 |
+| VI - Altre riserve, distintamente indicate | | |
+| Riserva straordinaria | 0 | 0 |
+| Riserva da deroghe ex articolo 2423 codice civile | 0 | 0 |
+| Riserva azioni (quote) della società controllante | 0 | 0 |
+| Riserva da rivalutazione delle partecipazioni | 0 | 0 |
+| Versamenti in conto aumento di capitale | 99.802.882 | 95.470.816 |
+| Versamenti in conto futuro aumento di capitale | 0 | 0 |
+| Versamenti in conto capitale | 0 | 0 |
+| Versamenti a copertura perdite | 0 | 0 |
+| Riserva da riduzione capitale sociale | 0 | 0 |
+| Riserva avanzo di fusione | 0 | 0 |
+| Riserva per utili su cambi non realizzati | 0 | 0 |
+| Riserva da conguaglio utili in corso | 0 | 0 |
+| Varie altre riserve | 150.476 | 150.475 |
+| Totale altre riserve | 99.953.358 | 95.621.291 |
+| VII - Riserva per operazioni di copertura dei flussi finanziari attesi | 0 | 0 |
+| VIII - Utili (perdite) portati a nuovo | (61.728.621) | (42.730.096) |
+| IX - Utile (perdita) dell'esercizio | (32.541.764) | (61.728.621) |
+| Perdita ripianata nell'esercizio | 0 | 0 |
+| X - Riserva negativa per azioni proprie in portafoglio | 0 | 0 |
+| Totale patrimonio netto | 12.684.950 | 5.400.653 |
+| B) Fondi per rischi e oneri | | |
+| 1) per trattamento di quiescenza e obblighi simili | 0 | 0 |
+| 2) per imposte, anche differite | 0 | 0 |
+| 3) strumenti finanziari derivati passivi | 0 | 0 |
+| 4) altri | 14.703.479 | 1.868.826 |
+| Totale fondi per rischi ed oneri | 14.703.479 | 1.868.826 |
+| C) Trattamento di fine rapporto di lavoro subordinato | 770.687 | 729.605 |
+| D) Debiti | | |
+| 3) debiti verso soci per finanziamenti | | |
+| esigibili entro l'esercizio successivo | 1.300.000 | 0 |
+| esigibili oltre l'esercizio successivo | 0 | 1.300.000 |
+| Totale debiti verso soci per finanziamenti | 1.300.000 | 1.300.000 |
+| 4) debiti verso banche | | |
+| esigibili entro l'esercizio successivo | 20.667.997 | 15.678.033 |
+| esigibili oltre l'esercizio successivo | 37.292.955 | 48.266.122 |
+| Totale debiti verso banche | 57.960.952 | 63.944.155 |
 
 BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
-
 - 4 -
 
 --- pág. 12 ---
 
-GENOA  
-CRICKET  
-AND  
-FOOTBALL  
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
+- 5 -
 
-|  5) debiti verso altri finanziatori |  |   |
-| --- | --- | --- |
-|  esigibili entro l'esercizio successivo | 48.061.859 | 22.239.419  |
-|  esigibili oltre l'esercizio successivo | 10.622.294 | 8.211.833  |
-|  Totale debiti verso altri finanziatori | 58.684.153 | 30.451.252  |
-|  7) debiti verso fornitori |  |   |
-|  esigibili entro l'esercizio successivo | 6.909.137 | 4.674.801  |
-|  esigibili oltre l'esercizio successivo | 0 | 542.017  |
-|  Totale debiti verso fornitori | 6.909.137 | 5.216.818  |
-|  9) debiti verso imprese controllate |  |   |
-|  esigibili entro l'esercizio successivo | 12.335.435 | 47.972.386  |
-|  esigibili oltre l'esercizio successivo | 0 | 53.749.591  |
-|  Totale debiti verso imprese controllate | 12.335.435 | 101.721.977  |
-|  10) debiti verso imprese collegate |  |   |
-|  esigibili entro l'esercizio successivo | 485.794 | 1.345.120  |
-|  Totale debiti verso imprese collegate | 485.794 | 1.345.120  |
-|  12) debiti tributari |  |   |
-|  esigibili entro l'esercizio successivo | 12.407.573 | 18.433  |
-|  esigibili oltre l'esercizio successivo | 28.970.379 | 63.304  |
-|  Totale debiti tributari | 41.377.952 | 81.737  |
-|  13) debiti verso istituti di previdenza e di sicurezza sociale |  |   |
-|  esigibili entro l'esercizio successivo | 3.253.303 | 223.352  |
-|  esigibili oltre l'esercizio successivo | 959.593 | 475.365  |
-|  Totale debiti verso istituti di previdenza e di sicurezza sociale | 4.212.896 | 698.717  |
-|  14) altri debiti |  |   |
-|  esigibili entro l'esercizio successivo | 59.869.541 | 70.067.092  |
-|  esigibili oltre l'esercizio successivo | 22.611.751 | 18.942.451  |
-|  Totale altri debiti | 82.481.292 | 89.009.543  |
-|  Totale debiti | 265.747.611 | 293.769.319  |
-|  E) Ratei e risconti | 15.258.646 | 5.351.587  |
-|  Totale passivo | 309.165.373 | 307.119.990  |
+| | 31-12-2023 | 31-12-2022 |
+|---|---|---|
+| 5) debiti verso altri finanziatori | | |
+| esigibili entro l'esercizio successivo | 48.061.859 | 22.239.419 |
+| esigibili oltre l'esercizio successivo | 10.622.294 | 8.211.833 |
+| Totale debiti verso altri finanziatori | 58.684.153 | 30.451.252 |
+| 7) debiti verso fornitori | | |
+| esigibili entro l'esercizio successivo | 6.909.137 | 4.674.801 |
+| esigibili oltre l'esercizio successivo | 0 | 542.017 |
+| Totale debiti verso fornitori | 6.909.137 | 5.216.818 |
+| 9) debiti verso imprese controllate | | |
+| esigibili entro l'esercizio successivo | 12.335.435 | 47.972.386 |
+| esigibili oltre l'esercizio successivo | 0 | 53.749.591 |
+| Totale debiti verso imprese controllate | 12.335.435 | 101.721.977 |
+| 10) debiti verso imprese collegate | | |
+| esigibili entro l'esercizio successivo | 485.794 | 1.345.120 |
+| Totale debiti verso imprese collegate | 485.794 | 1.345.120 |
+| 12) debiti tributari | | |
+| esigibili entro l'esercizio successivo | 12.407.573 | 18.433 |
+| esigibili oltre l'esercizio successivo | 28.970.379 | 63.304 |
+| Totale debiti tributari | 41.377.952 | 81.737 |
+| 13) debiti verso istituti di previdenza e di sicurezza sociale | | |
+| esigibili entro l'esercizio successivo | 3.253.303 | 223.352 |
+| esigibili oltre l'esercizio successivo | 959.593 | 475.365 |
+| Totale debiti verso istituti di previdenza e di sicurezza sociale | 4.212.896 | 698.717 |
+| 14) altri debiti | | |
+| esigibili entro l'esercizio successivo | 59.869.541 | 70.067.092 |
+| esigibili oltre l'esercizio successivo | 22.611.751 | 18.942.451 |
+| Totale altri debiti | 82.481.292 | 89.009.543 |
+| Totale debiti | 265.747.611 | 293.769.319 |
+| E) Ratei e risconti | 15.258.646 | 5.351.587 |
+| **Totale passivo** | 309.165.373 | 307.119.990 |
 
 BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
-
 - 5 -
 
 --- pág. 13 ---
@@ -486,57 +473,50 @@ BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
 
 --- pág. 15 ---
 
-GENOA  
-CRICKET  
-AND  
-FOOTBALL  
-CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
+BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
+- 8 -
 
-|  Disinvestimenti | 0 | 0  |
-| --- | --- | --- |
-|  (Acquisizione di rami d'azienda al netto delle disponibilità liquide) | 0 | 0  |
-|  Cessione di rami d'azienda al netto delle disponibilità liquide | 0 | 0  |
-|  **Flusso finanziario dell'attività di investimento (B)** | **(62.089.428)** | **(20.870.431)**  |
-|  **C) Flussi finanziari derivanti dall'attività di finanziamento** |  |   |
-|  **Mezzi di terzi** |  |   |
-|  Incremento/(Decremento) debiti a breve verso banche | 4.989.964 | 3.641.383  |
-|  Accensione finanziamenti | (10.973.167) | 16.485.686  |
-|  (Rimborso finanziamenti) | 17.765.647 | 5.891.677  |
-|  **Mezzi propri** |  |   |
-|  Aumento di capitale a pagamento | 39.826.061 | 62.447.290  |
-|  (Rimborso di capitale) | 0 | 0  |
-|  Cessione/(Acquisto) di azioni proprie | 0 | 0  |
-|  (Dividendi e acconti su dividendi pagati) | 0 | 0  |
-|  **Flusso finanziario dell'attività di finanziamento (C)** | **51.608.505** | **88.466.036**  |
-|  Incremento (decremento) delle disponibilità liquide (A ± B ± C) | (18.607) | 619.608  |
-|  Effetto cambi sulle disponibilità liquide | 0 | 0  |
-|  **Disponibilità liquide a inizio esercizio** |  |   |
-|  Depositi bancari e postali | 1.163.857 | 543.446  |
-|  Assegni | 0 | 0  |
-|  Danaro e valori in cassa | 663 | 1.466  |
-|  **Totale disponibilità liquide a inizio esercizio** | **1.164.520** | **544.912**  |
-|  Di cui non liberamente utilizzabili | 0 | 0  |
-|  **Disponibilità liquide a fine esercizio** |  |   |
-|  Depositi bancari e postali | 1.141.519 | 1.163.857  |
-|  Assegni | 0 | 0  |
-|  Danaro e valori in cassa | 4.394 | 663  |
-|  **Totale disponibilità liquide a fine esercizio** | **1.145.913** | **1.164.520**  |
-|  Di cui non liberamente utilizzabili | 0 | 0  |
+| | 31-12-2023 | 31-12-2022 |
+|---|---|---|
+| Disinvestimenti | 0 | 0 |
+| (Acquisizione di rami d'azienda al netto delle disponibilità liquide) | 0 | 0 |
+| Cessione di rami d'azienda al netto delle disponibilità liquide | 0 | 0 |
+| Flusso finanziario dell'attività di investimento (B) | (62.089.428) | (20.870.431) |
+| C) Flussi finanziari derivanti dall'attività di finanziamento | | |
+| Mezzi di terzi | | |
+| Incremento/(Decremento) debiti a breve verso banche | 4.989.964 | 3.641.383 |
+| Accensione finanziamenti | (10.973.167) | 16.485.686 |
+| (Rimborso finanziamenti) | 17.765.647 | 5.891.677 |
+| Mezzi propri | | |
+| Aumento di capitale a pagamento | 39.826.061 | 62.447.290 |
+| (Rimborso di capitale) | 0 | 0 |
+| Cessione/(Acquisto) di azioni proprie | 0 | 0 |
+| (Dividendi e acconti su dividendi pagati) | 0 | 0 |
+| Flusso finanziario dell'attività di finanziamento (C) | 51.608.505 | 88.466.036 |
+| Incremento (decremento) delle disponibilità liquide (A ± B ± C) | (18.607) | 619.608 |
+| Effetto cambi sulle disponibilità liquide | 0 | 0 |
+| Disponibilità liquide a inizio esercizio | | |
+| Depositi bancari e postali | 1.163.857 | 543.446 |
+| Assegni | 0 | 0 |
+| Danaro e valori in cassa | 663 | 1.466 |
+| Totale disponibilità liquide a inizio esercizio | 1.164.520 | 544.912 |
+| Di cui non liberamente utilizzabili | 0 | 0 |
+| Disponibilità liquide a fine esercizio | | |
+| Depositi bancari e postali | 1.141.519 | 1.163.857 |
+| Assegni | 0 | 0 |
+| Danaro e valori in cassa | 4.394 | 663 |
+| Totale disponibilità liquide a fine esercizio | 1.145.913 | 1.164.520 |
+| Di cui non liberamente utilizzabili | 0 | 0 |
 
 Firmato
-
 p. il Consiglio di Amministrazione
-
 Il Legale Rappresentante
-
 Andrés Blazquez Ceballos
 
 Genova, 19 marzo 2024
 
 BILANCIO D'ESERCIZIO AL 31 DICEMBRE 2023
-
 - 8 -
 
 --- pág. 16 ---
@@ -991,87 +971,69 @@ Ing. Andres Blazquez Caballos
 
 --- pág. 22 ---
 
-# Allegato - Rendiconto Finanziario ai fini NOIF
+Allegato - Rendiconto Finanziario ai fini NOIF
 
-![img-7.jpeg](img-7.jpeg)
+### Rendiconto Finanziario al 31.12.2023
 
-![img-8.jpeg](img-8.jpeg)
+| AGGREGATI | RENDICONTO Valori effettivi per il periodo 01/01/2023 - 31/12/2023 | RENDICONTO Valori effettivi per il periodo 01/01/2022 - 31/12/2022 |
+| :--- | :--- | :--- |
+| **A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto)** | | |
+| **UTILE (PERDITA) DI PERIODO** | **(32.541.765)** | **(61.728.621)** |
+| Imposte sul reddito | (2.712.601) | (9.396.310) |
+| Interessi passivi /(attivi) | 9.579.460 | 5.162.770 |
+| **1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi,** | **(25.674.906)** | **(65.962.161)** |
+| Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN | | |
+| Accantonamento ai fondi | 0 | 349.732 |
+| Ammortamenti delle immobilizzazioni | 27.866.728 | 19.452.175 |
+| Svalutazioni per perdite durevoli di valore | 0 | 3.845.322 |
+| Totale rettifiche per elementi non monetari che non hanno avuto | 27.866.728 | 23.647.229 |
+| **2)Flusso finanziario prima delle variazioni del CCN** | **2.191.822** | **(42.314.931)** |
+| Variazioni del CCN | | |
+| Decremento / (incremento) delle rimanenze | 304.581 | 411.247 |
+| Decremento / (incremento) crediti vs clienti | (4.746.271) | 1.587.799 |
+| Incremento / (Decremento) debiti vs fornitori | 2.234.336 | (3.976.998) |
+| Decremento / (Incremento) ratei risconti attivi | (1.184.221) | (6.072.748) |
+| Incremento / (Decremento) ratei risconti passivi | 9.907.059 | (1.482.871) |
+| **Totale parziale** | **6.515.484** | **(9.533.571)** |
+| **Se crediti - Altri decrementi / (Altri incrementi) del CCN** | | |
+| Crediti vs controllanti, controllate e collegate | (3.414.293) | (4.538.121) |
+| Debiti vs controllanti, controllate e collegate | (90.245.868) | 98.266.940 |
+| Crediti tributari | 0 | 34 |
+| Imposte anticipate entro | 0 | 0 |
+| Crediti vs altri entro | 41.198.915 | (3.632.679) |
+| Clienti c/ anticipi | 0 | 0 |
+| Debiti tributari | 12.389.140 | (42.474.316) |
+| Debiti previdenziali | 3.029.951 | (4.069.912) |
+| Debiti verso altri finanziatori | 25.822.440 | (8.615.852) |
+| Debiti vs soci per finanziamenti | 1.300.000 | 0 |
+| Debiti diversi | (10.890.800) | (12.313.434) |
+| **Totale altre variazioni CCN** | **(20.810.515)** | **22.622.659** |
+| **3) Flusso finanziario dopo variazioni CCN** | **(12.103.209)** | **(29.225.843)** |
+| Altre rettifiche (trib e prev oltre es) | 29.391.303 | (33.378.027) |
+| Interessi incassati / (pagati) | (8.425.988) | (5.162.770) |
+| (Imposte sul reddito pagate) | 1.559.129 | 847.954 |
+| Altri incassi / (pagamenti) (tfr) | 41.082 | (57.309) |
+| **Totale altre rettifiche** | **22.565.526** | **(37.750.152)** |
+| **Flusso finanziario attività operativa (A)** | **10.462.317** | **(66.975.996)** |
+| **B) Flusso Finanziario attività investimento** | | |
+| Imm.oni materiali (investimenti) | (7.482) | (152.334) |
+| Imm.oni immateriali (investimenti) | (29.344.111) | (38.658.330) |
+| Crediti oltre esercizio | (27.427.118) | 26.529.515 |
+| Imposte anticipate oltre | (5.310.717) | (8.589.283) |
+| **FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ DI INVESTIMENTO (B)** | **(62.089.428)** | **(20.870.432)** |
+| **C) Flusso Finanziario da attività di finanziamento** | | |
+| Incremento / (Decremento) debiti verso banche a breve | 4.989.964 | 3.641.383 |
+| Accensione Finanziamenti | (10.973.167) | 16.485.686 |
+| Debiti Diversi oltre l'esercizio (anche controll oltre) | 17.765.647 | 5.891.677 |
+| Mezzi propri | 39.826.061 | 62.447.290 |
+| **FLUSSO FINANZIARIO DELL'ATTIVITA' DI FINANZIAMENTO (C)** | **51.608.504** | **88.466.037** |
+| **INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (A+B+-C)** | **(18.607)** | **619.608** |
+| Disponibilità liquide all'inizio del periodo (I) | 1.164.520 | 544.912 |
+| Disponibilità liquide alla fine del periodo (L) | 1.145.913 | 1.164.520 |
+| **SALDO A PAREGGIO (M= L - I )** | **(18.607)** | **619.608** |
 
-|  Rendiconto Finanziario al 31.12.2023  |   |   |
-| --- | --- | --- |
-|  AGGREGATI | RENDICONTO | RENDICONTO  |
-|   |  Valori effettivi per il periodo 01/01/2023 - 31/12/2023 | Valori effettivi per il periodo 01/01/2022 - 31/12/2022  |
-|  A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto) |  |   |
-|  **UTILE (PERDITA) DI PERIODO** | (32.541.765) | (61.728.621)  |
-|  Imposte sul reddito | (2.712.601) | (9.396.310)  |
-|  Interessi passivi /(attivi) | 9.579.460 | 5.162.770  |
-|  **1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi,** | **(25.674.906)** | **(65.962.161)**  |
-|  Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN |  |   |
-|  Accantonamento ai fondi | 0 | 349.732  |
-|  Ammortamenti delle immobilizzazioni | 27.866.728 | 19.452.175  |
-|  Svalutazioni per perdite durevoli di valore | 0 | 3.845.322  |
-|  **Totale rettifiche per elementi non monetari che non hanno avuto** | **27.866.728** | **23.647.229**  |
-|  **2) Flusso finanziario prima delle variazioni del CCN** | **2.191.822** | **(42.314.931)**  |
-|  Variazioni del CCN |  |   |
-|  Decremento / (incremento) delle rimanenze | 304.581 | 411.247  |
-|  Decremento / (incremento) crediti vs clienti | (4.746.271) | 1.587.799  |
-|  Incremento / (Decremento) debiti vs fornitori | 2.234.336 | (3.976.998)  |
-|  Decremento / (Incremento) ratei risconti attivi | (1.184.221) | (6.072.748)  |
-|  Incremento / (Decremento) ratei risconti passivi | 9.907.059 | (1.482.871)  |
-|  **Totale parziale** | **6.515.484** | **(9.533.571)**  |
-|  **Se crediti - Altri decrementi / (Altri incrementi) del CCN** |  |   |
-|  Crediti vs controllanti, controllate e collegate | (3.414.293) | (4.538.121)  |
-|  Debiti vs controllanti, controllate e collegate | (90.245.868) | 98.266.940  |
-|  Crediti tributari | 0 | 34  |
-|  Imposte anticipate entro | 0 | 0  |
-|  Crediti vs altri entro | 41.198.915 | (3.632.679)  |
-|  Clienti c/ anticipi | 0 | 0  |
-|  Debiti tributari | 12.389.140 | (42.474.316)  |
-|  Debiti previdenziali | 3.029.951 | (4.069.912)  |
-|  Debiti verso altri finanziatori | 25.822.440 | (8.615.852)  |
-|  Debiti vs soci per finanziamenti | 1.300.000 | 0  |
-|  Debiti diversi | (10.890.800) | (12.313.434)  |
-|  **Totale altre variazioni CCN** | **(20.810.515)** | **22.622.659**  |
-|  **3) Flusso finanziario dopo variazioni CCN** | **(12.103.209)** | **(29.225.843)**  |
-|  Altre rettifiche (trib e prev oltre es) | 29.391.303 | (33.378.027)  |
-|  Interessi incassati / (pagati) | (8.425.988) | (5.162.770)  |
-|  (Imposte sul reddito pagate) | 1.559.129 | 847.954  |
-|  Altri incassi / (pagamenti) (tfr) | 41.082 | (57.309)  |
-|  **Totale altre rettifiche** | **22.565.526** | **(37.750.152)**  |
-|  **Flusso finanziario attività operativa (A)** | **10.462.317** | **(66.975.996)**  |
-|  B) Flusso Finanziario attività investimento |  |   |
-|  Imm.oni materiali (investimenti) | (7.482) | (152.334)  |
-|  Imm.oni immateriali (investimenti) | (29.344.111) | (38.658.330)  |
-|  Crediti oltre esercizio | (27.427.118) | 26.529.515  |
-|  Imposte anticipate oltre | (5.310.717) | (8.589.283)  |
-|  **FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO (B)** | **(62.089.428)** | **(20.870.432)**  |
-|  C) Flusso Finanziario da attività di finanziamento |  |   |
-|  Incremento / (Decremento) debiti verso banche a breve | 4.989.964 | 3.641.383  |
-|  Accensione Finanziamenti | (10.973.167) | 16.485.686  |
-|  Debiti Diversi oltre l'esercizio (anche controlli oltre) | 17.765.647 | 5.891.677  |
-|  Mezzi propri | 39.826.061 | 62.447.290  |
-|  **FLUSSO FINANZIARIO DELL'ATTIVITÀ DI FINANZIAMENTO (C)** | **51.608.504** | **88.466.037**  |
-|  **INCREMENTO (DECREMENTO) DISPONIBILITÀ LIQUIDE (A+B+C))** | **(18.607)** | **619.608**  |
-|  Disponibilità liquide all'inizio del periodo ( I ) | 1.164.520 | 544.912  |
-|  Disponibilità liquide alla fine del periodo ( L ) | 1.145.913 | 1.164.520  |
-|  **SALDO A PAREGGIO (M= L - I )** | **(18.607)** | **619.608**  |
-
-GENOA
-CRICKET AND FOOTBALL CLUB
-
-Via Ronchi, 67
-16155 Genova Pogli
-
-Tel. +39 010 612831
-Fax +39 010 6126345
-
-info@genoacfc.it
-genoacfc.it
-
-C.F. 80033270101
-P.IVA 00973790100
-
-Mat. 20980
+GENOA CRICKET AND FOOTBALL CLUB
+Via Ronchi, 67 16155 Genova Pegli | Tel. +39 010 612831 Fax +39 010 6128345 | info@genoacfc.it genoacfc.it | C.F. 80033270101 P.IVA 00973790108 Mat. 20980
 
 --- pág. 23 ---
 
@@ -4050,22 +4012,54 @@ NOTA INTEGRATIVA – BILANCIO AL 31 DICEMBRE 2023
 
 --- pág. 115 ---
 
-Witnesses of go/no/sonny
+Bilancio al 31/12/2023
+Prospetto delle movimentazioni dei diritti pluriennali alle prestazioni dei calciatori al 31/12/2023 - 2 Semestre 2023
 
-Prospective and/or non-observational data (2018) published with the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of the International Journal of
+| Date of TR | [ilegible] | Contract | [ilegible] | Values as of 30/06/2023 | | | Changes in the period | | Values as of 31/12/2023 | | | Amortisation 01.07.2023 - 31.12.2023 | P&L impact as of 31/12/2023 | | | PEE 31/12/2023 | Changes in the period | | Values as of 30/06/2023 | | | Amortisation 01.01.2023 - 30.06.2023 | P&L impact as of 30/06/2023 | | | PEE 30/06/2023 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **31/12/2023** | **Expiring Date** | **[ilegible]** | **Date** | **Expiring Date** | **Historical Cost** | **Amortiz. Fund** | **NAV** | **Increases** | **Decreases** | **Historical Cost** | **Amortiz. Fund** | **NAV** | | **Impairment** | **Capital Loss** | **Capital Gain** | | **Increases** | **Decreases** | **Historical Cost** | **Amortiz. Fund** | **NAV** | | **Impairment** | **Capital Loss** | **Capital Gain** | |
+| Aramu Mattia | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.560.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.560.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Badelj Milan | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Bani Mattia | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.000.000 | [ilegible] | 2.500.000 | [ilegible] | [ilegible] | 5.000.000 | [ilegible] | 2.500.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.650.000 | 5.000.000 | [ilegible] | 850.000 | 35.710 | 48.835 | [ilegible] | [ilegible] | [ilegible] |
+| Biraschi Davide | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.450.000 | [ilegible] | 490.000 | [ilegible] | [ilegible] | 2.450.000 | [ilegible] | 490.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.450.000 | [ilegible] | 490.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Bohinen Emil | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.513.680 | 1.834.789 | 1.678.891 | [ilegible] | [ilegible] | 3.513.680 | [ilegible] | 1.678.891 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Coda Massimo | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.500.000 | 115.385 | 1.384.615 | [ilegible] | [ilegible] | 1.500.000 | [ilegible] | 1.384.615 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.500.000 | 206.383 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Czyborra Lennart | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 400.000 | [ilegible] | 400.000 | 35.000 | [ilegible] | 435.000 | [ilegible] | 435.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 400.000 | [ilegible] | 400.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Dragusin Radu Matei | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.860.000 | [ilegible] | 5.860.000 | 10.841 | [ilegible] | 5.870.841 | [ilegible] | 5.870.841 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.860.000 | [ilegible] | 5.860.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Frendrup Morten Wetche | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.743.144 | [ilegible] | 3.743.144 | 10.841 | [ilegible] | 3.753.985 | [ilegible] | 3.753.985 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.743.144 | [ilegible] | 3.743.144 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Gudmundsson Albert | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.110.000 | [ilegible] | 2.110.000 | [ilegible] | [ilegible] | 2.110.000 | [ilegible] | 2.110.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 2.110.000 | [ilegible] | 2.110.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Hefti Silvan | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.038.560 | [ilegible] | 5.038.560 | [ilegible] | [ilegible] | 5.038.560 | [ilegible] | 5.038.560 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.038.560 | [ilegible] | 5.038.560 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Ilsanker Stefan | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 4.412.384 | [ilegible] | 4.412.384 | [ilegible] | 2.384.181 | 2.028.203 | [ilegible] | 2.028.203 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 4.412.384 | 2.384.025 | 2.028.359 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Jagiello Filip | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.100.000 | [ilegible] | 3.100.000 | [ilegible] | [ilegible] | 3.100.000 | [ilegible] | 3.100.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.100.000 | [ilegible] | 3.100.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Kallon Yayah | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.000.000 | [ilegible] | 3.000.000 | [ilegible] | [ilegible] | 3.000.000 | [ilegible] | 3.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.000.000 | [ilegible] | 3.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Martinez Rivas Josep | [ilegible] | [ilegible] | [ilegible] | 2.800.000 | 2.800.000 | [ilegible] | 2.800.000 | 35.000 | [ilegible] | 2.835.000 | [ilegible] | 2.835.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.530.000 | [ilegible] | 1.530.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Melegoni Filippo | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.534.161 | [ilegible] | 5.534.161 | 35.000 | [ilegible] | 5.569.161 | [ilegible] | 5.569.161 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Pajac Marko | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.457.700 | [ilegible] | 1.457.700 | 10.841 | [ilegible] | 1.468.541 | [ilegible] | 1.468.541 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.457.700 | [ilegible] | 1.457.700 | 10.375 | 13.411 | [ilegible] | [ilegible] | [ilegible] |
+| Portanova Manolo | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.700.000 | [ilegible] | 1.700.000 | [ilegible] | [ilegible] | 1.700.000 | [ilegible] | 1.700.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Puscas George Alexandru | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 30.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 250.000 | [ilegible] | 350.000 | [ilegible] | 40.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Sabelli Stefano | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.150.000 | [ilegible] | 3.150.000 | 13.911 | 13.911 | 3.150.000 | [ilegible] | 3.150.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.150.000 | [ilegible] | 3.150.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Salcedo Mora Eddie Anthony | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Semper Adrian | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 4.000.000 | [ilegible] | 4.000.000 | [ilegible] | [ilegible] | 4.000.000 | [ilegible] | 4.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 4.000.000 | [ilegible] | 4.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Sommariva Daniele | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 400.000 | [ilegible] | 400.000 | [ilegible] | [ilegible] | 400.000 | [ilegible] | 400.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 400.000 | [ilegible] | 400.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Touré Abdoulaye | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.500.000 | [ilegible] | 3.500.000 | [ilegible] | [ilegible] | 3.500.000 | [ilegible] | 3.500.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Vogliacco Alessandro | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.540.000 | [ilegible] | 3.540.000 | [ilegible] | [ilegible] | 3.540.000 | [ilegible] | 3.540.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.100.000 | 3.540.000 | [ilegible] | 2.440.000 | 1.540.117 | 359.041 | [ilegible] | [ilegible] | [ilegible] |
+| Yalcin Guven | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 8.535.190 | [ilegible] | 8.535.190 | [ilegible] | [ilegible] | 8.535.190 | [ilegible] | 8.535.190 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 8.535.190 | [ilegible] | 8.535.190 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| Yeboah Kelvin Kwasi | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 12.133.000 | [ilegible] | 12.133.000 | [ilegible] | [ilegible] | 12.133.000 | [ilegible] | 12.133.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 12.133.000 | [ilegible] | 12.133.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 119.993 | [ilegible] | 119.993 | [ilegible] | [ilegible] | 119.993 | [ilegible] | 119.993 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 119.993 | [ilegible] | 119.993 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 4.300.000 | [ilegible] | [ilegible] | [ilegible] | 428.171 | 354.444 | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 450.000 | [ilegible] | 450.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 18.000.000 | [ilegible] | 18.000.000 | [ilegible] | [ilegible] | 18.000.000 | [ilegible] | 18.000.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 18.000.000 | [ilegible] | [ilegible] | [ilegible] | 16.442.339 | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.510.000 | [ilegible] | 3.510.000 | [ilegible] | [ilegible] | 3.510.000 | [ilegible] | 3.510.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.510.000 | [ilegible] | 3.510.000 | 584.999 | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.093.461 | [ilegible] | 5.093.461 | [ilegible] | [ilegible] | 5.093.461 | [ilegible] | 5.093.461 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 5.093.461 | 799.000 | 4.294.461 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 3.750.000 | [ilegible] | 3.750.000 | [ilegible] | [ilegible] | 3.750.000 | [ilegible] | 3.750.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 531.750 | [ilegible] | 531.750 | 6.000 | [ilegible] | 537.750 | [ilegible] | 537.750 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 531.750 | [ilegible] | 531.750 | 531.750 | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.838.411 | [ilegible] | 1.838.411 | 20.835 | [ilegible] | 1.859.246 | [ilegible] | 1.859.246 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.838.411 | [ilegible] | 1.838.411 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| [riga ulteriore] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.011.000 | [ilegible] | 1.011.000 | 18.000 | [ilegible] | 1.029.000 | [ilegible] | 1.029.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 1.011.000 | [ilegible] | 1.011.000 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | [ilegible] |
+| **TOTALE** | [ilegible] | [ilegible] | [ilegible] | 2.800.000 | 114.738.107 | 3.945.174 | 110.792.933 | 851.643 | 2.398.092 | 110.457.915 | 4.412.384 | 110.045.531 | [ilegible] | [ilegible] | [ilegible] | [ilegible] | 53.645.247 | 3.141.000 | 29.539.073 | 110.148.800 | 5.426.650 | 104.722.150 | 19.452.175 | 739.308 | 1.870.000 | [ilegible] | 60.104.375 |
 
-|  S&P 500 Index | Funding name | General | State | State | State | Total | Total Value | 2018 |   |   | 2017 |   |   | 2016 |   |   | 2015 |   |   | 2014 |   |   | 2013 |   |   | 2012 |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |   |   |   |   |   |  Historical Cost | Amounts, Fixed | NPV | Increases | Increases | Historical Cost | Amounts, Fixed | NPV | Increases | Increases | Historical Cost | Amounts, Fixed | NPV | Increases | Increases | Historical Cost | Amounts, Fixed | NPV | Increases | Increases | Historical Cost |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  International | g2/2018 | NA | no/sonny | Germany |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   |
-|  International | g2/2018 | NA | no/sonny | Germany |  |  |  | 2,000,000 |  | 2,000,000 | 20,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  |   |
-|  International | g2/2018 | NA | no/sonny | Germany |  |  |  | 400,000 |  | 400,000 |  |  | 400,000 |  | 400,000 |  | 400,000 |  | 400,000 |  | 400,000 |  | 400,000 |  | 400,000 |  | 400,000 |  |   |
-|  International | g2/2018 | NA | no/sonny | Germany |  |  |  | 2,000,000 |  | 2,000,000 |  |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  | 2,000,000 |  |   |
-
-![img-14.jpeg](img-14.jpeg)
-
-![img-15.jpeg](img-15.jpeg)
+[Note at bottom: ilegible]
+[Timbro: GENOA CRICKET AND FOOTBALL CLUB S.P.A.]
+[Firma]
 
 --- pág. 116 ---
 

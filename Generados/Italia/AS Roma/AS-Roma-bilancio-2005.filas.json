@@ -1,0 +1,616 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
+ "mdSha1": "86304655af21e71b74665cd7f6e532e47f229075",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T16:22:36.243Z",
+ "ubicacion": {
+  "estado": [
+   "b85"
+  ],
+  "notas_ingresos": [
+   "b140",
+   "b141",
+   "b142",
+   "b143",
+   "b144",
+   "b145",
+   "b146",
+   "b147",
+   "b156",
+   "b159"
+  ],
+  "notas_gastos": [
+   "b148",
+   "b149",
+   "b150",
+   "b151",
+   "b153",
+   "b154",
+   "b155",
+   "b157",
+   "b160",
+   "b161"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b85",
+   "escala": "no se sabe",
+   "evidencia": "El estado (L3189) no indica escala; importes muy menores a los consolidados en miles (posiblemente otro perímetro/estado de otra sociedad)"
+  },
+  {
+   "bloque": "b140",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5458"
+  },
+  {
+   "bloque": "b141",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5479"
+  },
+  {
+   "bloque": "b142",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5503"
+  },
+  {
+   "bloque": "b143",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5536"
+  },
+  {
+   "bloque": "b144",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5553"
+  },
+  {
+   "bloque": "b145",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5565"
+  },
+  {
+   "bloque": "b146",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5605"
+  },
+  {
+   "bloque": "b147",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5626"
+  },
+  {
+   "bloque": "b156",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5881"
+  },
+  {
+   "bloque": "b159",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5939"
+  },
+  {
+   "bloque": "b148",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5656"
+  },
+  {
+   "bloque": "b149",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5671"
+  },
+  {
+   "bloque": "b150",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5706"
+  },
+  {
+   "bloque": "b151",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5754"
+  },
+  {
+   "bloque": "b153",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5785"
+  },
+  {
+   "bloque": "b154",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5815"
+  },
+  {
+   "bloque": "b155",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5853"
+  },
+  {
+   "bloque": "b157",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5903"
+  },
+  {
+   "bloque": "b160",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5963"
+  },
+  {
+   "bloque": "b161",
+   "escala": "miles",
+   "evidencia": "(Dati in migliaia di Euro) L5983"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b85",
+   "linea": 3192,
+   "etiqueta": "1) Ricavi delle vendite e delle prestazioni",
+   "actual": "4.160.052",
+   "anterior": "5.074.992",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3194,
+   "etiqueta": "a) altri ricavi e proventi",
+   "actual": "193.336",
+   "anterior": "495.882",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3195,
+   "etiqueta": "b) proventi pubblicitari",
+   "actual": "247.300",
+   "anterior": "209.906",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3196,
+   "etiqueta": "c) contributi in conto esercizio",
+   "actual": "9.839",
+   "anterior": "7.437",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3197,
+   "etiqueta": "TOTALE ALTRI RICAVI E PROVENTI",
+   "actual": "450.475",
+   "anterior": "713.225",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3198,
+   "etiqueta": "TOTALE VALORE DELLA PRODUZIONE (A)",
+   "actual": "4.610.527",
+   "anterior": "5.788.217",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3200,
+   "etiqueta": "6) Acquisti materie di consumo",
+   "actual": "(1.818.113)",
+   "anterior": "(4.899.058)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3201,
+   "etiqueta": "7) Spese per servizi",
+   "actual": "(2.148.524)",
+   "anterior": "(2.497.964)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3202,
+   "etiqueta": "8) Spese godimento beni di terzi",
+   "actual": "(481.768)",
+   "anterior": "(470.842)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3204,
+   "etiqueta": "a) Salari e stipendi",
+   "actual": "(507.960)",
+   "anterior": "(451.208)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3205,
+   "etiqueta": "b) Oneri sociali",
+   "actual": "(162.530)",
+   "anterior": "(119.736)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3206,
+   "etiqueta": "c) Trattamento di fine rapporto",
+   "actual": "(34.968)",
+   "anterior": "(33.880)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3207,
+   "etiqueta": "TOTALE SPESE PER IL PERSONALE",
+   "actual": "(705.458)",
+   "anterior": "(604.824)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3209,
+   "etiqueta": "a) Amm.to immobilizzazioni immateriali",
+   "actual": "(82.658)",
+   "anterior": "(124.620)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3210,
+   "etiqueta": "b) Amm.to immobilizzazioni materiali",
+   "actual": "(68.967)",
+   "anterior": "(116.873)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3211,
+   "etiqueta": "c) Altre svalutazione delle immobilizzazioni",
+   "actual": "(31.942)",
+   "anterior": "(37.307)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3212,
+   "etiqueta": "d) Svalutazioni dei crediti dell'Attivo Circolante",
+   "actual": "(16.272)",
+   "anterior": "(62.639)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3213,
+   "etiqueta": "TOTALE AMMORTAMENTI E SVALUTAZIONI",
+   "actual": "(199.839)",
+   "anterior": "(341.439)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3214,
+   "etiqueta": "11) Variazione rimanenze di merci",
+   "actual": "(32.022)",
+   "anterior": "(1.903.129)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3215,
+   "etiqueta": "12) Accantonamento per rischi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3218,
+   "etiqueta": "b) Altri oneri",
+   "actual": "(115.579)",
+   "anterior": "(143.329)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3219,
+   "etiqueta": "TOTALE ONERI DIVERSI DI GESTIONE",
+   "actual": "(115.579)",
+   "anterior": "(143.329)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3220,
+   "etiqueta": "TOTALE COSTI DELLA PRODUZIONE (B)",
+   "actual": "(5.501.303)",
+   "anterior": "(10.860.585)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3221,
+   "etiqueta": "DIFFERENZA TRA VALORE E COSTI DELLA PROD. (A-B)",
+   "actual": "(890.776)",
+   "anterior": "(5.072.368)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3225,
+   "etiqueta": "- da altri",
+   "actual": "15.467",
+   "anterior": "833",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3226,
+   "etiqueta": "TOTALE ALTRI PROVENTI FINANZIARI",
+   "actual": "15.467",
+   "anterior": "833",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3228,
+   "etiqueta": "d) da altri",
+   "actual": "(17.916)",
+   "anterior": "(27.996)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3229,
+   "etiqueta": "TOTALE INTERESSI ED ALTRI ONERI FINANZIARI",
+   "actual": "(17.916)",
+   "anterior": "(27.996)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3230,
+   "etiqueta": "17Bis) Utili e perdite su cambi",
+   "actual": "3",
+   "anterior": "(4)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3231,
+   "etiqueta": "TOTALE PROVENTI ED ONERI FINANZIARI (C)",
+   "actual": "(2.446)",
+   "anterior": "(27.167)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3233,
+   "etiqueta": "TOTALE DELLE RETTIFICHE (D)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3236,
+   "etiqueta": "b) Altri proventi straordinari",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3237,
+   "etiqueta": "TOTALE PROVENTI STRAORDINARI",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3239,
+   "etiqueta": "c) Oneri diversi",
+   "actual": "0",
+   "anterior": "(2.713.347)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3240,
+   "etiqueta": "TOTALE ONERI STRAORDINARI",
+   "actual": "0",
+   "anterior": "(2.713.347)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3241,
+   "etiqueta": "TOTALE PROVENTI ED ONERI STRAORDINARI (E)",
+   "actual": "0",
+   "anterior": "(2.713.347)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3242,
+   "etiqueta": "RISULTATO PRIMA DELLE IMPOSTE",
+   "actual": "(893.222)",
+   "anterior": "(7.812.882)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3244,
+   "etiqueta": "a) Imposte correnti",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b85",
+   "linea": 3246,
+   "etiqueta": "26) UTILE (PERDITA) D'ESERCIZIO",
+   "actual": "(893.222)",
+   "anterior": "(7.812.882)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 3198,
+  "actual": "4.610.527"
+ },
+ "total_gastos": {
+  "linea": 3220,
+  "actual": "(5.501.303)"
+ },
+ "resultado": {
+  "linea": 3246,
+  "actual": "(893.222)",
+  "anterior": "(7.812.882)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga todas las notas b140-b161 por ser del bilancio consolidato (Valore della Produzione 136.532 miles) y no del estado b85?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Las notas hablan de 'Valore della Produzione consolidata' (L5456) y sus importes no concilian con b85 (4.610.527 en L3198).",
+   "bloques": [
+    "b85",
+    "b140",
+    "b141",
+    "b142",
+    "b143",
+    "b144",
+    "b145",
+    "b146",
+    "b147",
+    "b156",
+    "b159",
+    "b148",
+    "b149",
+    "b150",
+    "b151",
+    "b153",
+    "b154",
+    "b155",
+    "b157",
+    "b160",
+    "b161"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Es b85 el estado de resultados de otra sociedad del grupo (no AS Roma) que debe excluirse de la carga?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "TOTALE VALORE DELLA PRODUZIONE (A)",
+   "texto": "b85 muestra ingresos de 4.610.527 sin escala, incompatibles con un club de Serie A; parece una controlada (p.ej. Roma International Football Service) en unidades.",
+   "bloques": [
+    "b85"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La escala de b85 es unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado L3189 no indica escala.",
+   "bloques": [
+    "b85"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Las columnas de b159 y b160 rotuladas 30.06.04/30.06.03 corresponden en realidad a 2005/2004?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El texto (L5937, L5961) dice 2005 y 2004 pero los encabezados L5939 y L5963 dicen 04 y 03.",
+   "bloques": [
+    "b159",
+    "b160"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Se cargó solo el estado b85. Las notas son del consolidado (miles de euro) y no concilian con b85; se excluyen hasta confirmar perímetro."
+}

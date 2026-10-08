@@ -33,3 +33,11 @@
   el informe agregado viejo en `_notas-generales.md`).
 - Contacto: dimoficial.com; info@dimoficial.com; siis.ia.supersociedades.gov.co.
 - Último chequeo: 2026-09-22.
+
+## Barrido 2026-10-08 (año de sourcing 2023) — RESUELTO el dead-end de SIIS
+
+**Ángulos**: regulador/país (SIIS Supersociedades): **HIT** — la sociedad es **EL EQUIPO DEL PUEBLO S.A.** (NIT 900577148, domicilio Medellín, constituida por escritura pública 6722 del 11-dic-2012, CIIU R9312) · barrido: 3 (Sonnet) — 2026-10-08
+
+- La búsqueda previa por "Independiente Medellín" y por el NIT 890900575 daba 0 hits porque la sociedad que opera el club NO lleva ese nombre: "El Equipo del Pueblo" es el apodo del DIM, y Wikipedia (ficha del equipo femenino) lista "El Equipo del Pueblo S.A." como dueña del 100%. La hipótesis de la nota anterior ("corporación fuera de Supersociedades") era incorrecta.
+- **10 ejercicios bajados** en `Clubes/Colombia/Independiente Medellin/` (carpeta antes llamada "El Equipo del Pueblo"): estados financieros 2016-2025 con certificación y dictamen del revisor fiscal. SIIS lista exactamente esos 10 registros.
+- Confirmar contra el primer PDF que el objeto social sea el club (se leyó que el objeto incluye "deporte competitivo de alto rendimiento con deportistas bajo remuneración").

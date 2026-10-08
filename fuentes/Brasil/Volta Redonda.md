@@ -62,3 +62,8 @@
 - **No conseguidos por truncado de Wayback (1.048.576 bytes)**: 2023 (`.../2023/04/Demonstra%C3%A7%C3%B5es%20Financeiras%20-%202023%20DEFINITIVAS.pdf`, captura 20240724113130; también existen `Balanço Patrimonial 2023` y `DRE 2023`) y 2017 (`Demonstracoes-Financeiras-31-de-dezembro-2017.pdf`, captura 20231209145255). El link live ya da 404. Ángulo que falta: pedirlas al club o la FERJ.
 - Existen además (no bajados): pareceres de auditoría 2019/2021/2022/2023, pareceres del Conselho Fiscal 2019-2022, DRE/Balanço sueltos 2019-2022, Orçamento 2021/2022.
 - Ficha FERJ (`servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134`) sigue con un solo balance (2024).
+
+## Ejercicio 2023 (2026-10-08)
+
+- **Bajado**: `balanco-patrimonial-2023.pdf` (Balanço Patrimonial 2023), 2ª captura de Wayback (20240902040016, 1,5 MB, PDF válido, sin capa de texto: hay que transcribirlo). La 1ª captura (20240724) venía truncada a 1 MiB.
+- **No conseguido todavía**: `Demonstração do Resultado do Exercício 2023.pdf` y `Demonstrações Financeiras - 2023 DEFINITIVAS.pdf` (mismo directorio `uploads/2023/04/`): las capturas probadas vuelven truncadas a 1.048.576 bytes. Sin DRE el ejercicio no se puede cargar (el balance solo no alcanza). Archive.org estuvo "Temporarily Offline" durante parte de la sesión, así que no se pudo listar si existen más capturas: reintentar con la CDX (`fl=timestamp,length`) cuando vuelva.

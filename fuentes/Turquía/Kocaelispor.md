@@ -29,3 +29,12 @@ Asamblea General Ordinaria de septiembre 2020.
   ni `kocaelispor.org.tr` (dominio alternativo visto en búsquedas, no confirmado si es el mismo
   club o distinto) por browser tool caído.
 - Último chequeo: 2026-09-18.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: parcial (carpeta `images/upload/<hash>.pdf`, sin índice) · Wayback CDX de dominio: agotado (3 PDFs archivados) · barrido: 2 (Sonnet) — 2026-10-08
+
+- `kocaelispor-upload-c4f8242f.pdf` (45 págs., escaneo, fecha 27.03.2021 en la 1ª página): probablemente documentos del congreso 2021 con el ejercicio 2020. Sin confirmar a ojo.
+- `kocaelispor-upload-d771c965.pdf` (44 págs.): es el ESTATUTO del club, no estados financieros. No sirve para el sitio.
+- `kocaelispor-tzkkocaeli.pdf` (`images/tzkkocaeli.pdf`): todas las capturas de Wayback vuelven truncadas a 1 MiB; no se pudo bajar.
+- No hay nada de 2022 ni 2023 en el dominio archivado. Sigue la duda de continuidad de la entidad (ver arriba).

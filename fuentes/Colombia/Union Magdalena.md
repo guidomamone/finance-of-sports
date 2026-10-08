@@ -50,3 +50,9 @@
 - NIT 891700992, 9 registros en SIIS; 2021 (régimen Pymes) no baja: el subvisor no devuelve ruta de PDF.
 - Bajado a `Clubes/Colombia/Union Magdalena/`: estados-financieros 2022-2025 (+certificación y dictamen), con el 2018 ya existente = 5 ejercicios. Total en disco: 5 ejercicios con estados-financieros.
 - Ninguno transcripto ni cargado todavía.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 5 ejercicios (2018, 2022-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

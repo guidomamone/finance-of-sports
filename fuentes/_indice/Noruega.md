@@ -33,3 +33,14 @@ fútbol profesional real — varios quedaron con perímetro sin confirmar. Ver
 - [KFUM](<../Noruega/KFUM.md>) — solo 2 ejercicios (2018-2019), sin disclosure desde el ascenso, ver duda — Último chequeo: 2026-09-17
 - [Lillestrøm](<../Noruega/Lillestrøm.md>) — solo 4 ejercicios (2008-2011), contradice su propia memoria publicada, ver duda — Último chequeo: 2026-09-17
 - [Notas generales de Noruega](<../Noruega/_notas-generales.md>)
+- [Odd](<../Noruega/Odd.md>) — 18 documentos, años 2008-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Strømsgodset](<../Noruega/Strømsgodset.md>) — 17 documentos, años 2008, 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Haugesund](<../Noruega/Haugesund.md>) — 24 documentos, años 2005-2016, 2018-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Stabæk](<../Noruega/Stabæk.md>) — 18 documentos, años 2007-2013, 2015-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Sogndal](<../Noruega/Sogndal.md>) — 16 documentos, años 2005, 2011-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Lyn](<../Noruega/Lyn.md>) — 5 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Moss](<../Noruega/Moss.md>) — 4 documentos, años 2008-2009, 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Hødd](<../Noruega/Hødd.md>) — 9 documentos, años 2017-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Raufoss](<../Noruega/Raufoss.md>) — 16 documentos, años 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Åsane](<../Noruega/Åsane.md>) — 5 documentos, años 2016-2019, 2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Arendal](<../Noruega/Arendal.md>) — 4 documentos, años 2011-2013, 2018; sin cargar aún — Último chequeo: 2026-10-08

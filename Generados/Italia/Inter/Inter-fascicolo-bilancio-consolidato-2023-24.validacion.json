@@ -1,0 +1,1339 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
+ "mdSha1": "803847f81f7c673ce20f89462362f076c0485724",
+ "modo": "digital",
+ "motivoModo": "108 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 7532311 vs 7512319, 1983 vs 6983, 1985 vs 3985; 501 números del .md no están en el PDF (tolerancia 72)",
+ "generado": "2026-10-08T17:44:39.837Z",
+ "fuentes": {
+  "44": "pdftotext",
+  "45": "pdftotext",
+  "81": "pdftotext",
+  "82": "pdftotext",
+  "83": "pdftotext",
+  "84": "pdftotext",
+  "85": "pdftotext",
+  "86": "pdftotext",
+  "88": "pdftotext",
+  "89": "pdftotext"
+ },
+ "confirmados": 131,
+ "noConfirmados": [
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2825,
+   "numero": "2023",
+   "segundaLeyo": "2024",
+   "sinSegunda": false,
+   "texto": "|   | 12 months as of June 30, 2024 | 12 months as of June 30, 2023  |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2829,
+   "numero": "30.368",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Championship matches | 30.368 | 24.983  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2829,
+   "numero": "24.983",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Championship matches | 30.368 | 24.983  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2830,
+   "numero": "3.866",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - TIM Cup matches | 489 | 3.866  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2831,
+   "numero": "13.195",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - International Cup matches | 13.195 | 27.396  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2831,
+   "numero": "27.396",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - International Cup matches | 13.195 | 27.396  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2832,
+   "numero": "1.583",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Tournaments and friendly matches | 1.583 | 585  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2833,
+   "numero": "25.201",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Season Tickets | 25.201 | 22.139  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2833,
+   "numero": "22.139",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Season Tickets | 25.201 | 22.139  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2834,
+   "numero": "70.836",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **70.836** | **78.969**  |"
+  },
+  {
+   "bloque": "b38",
+   "pagina": 81,
+   "linea": 2834,
+   "numero": "78.969",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **70.836** | **78.969**  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2861,
+   "numero": "17.446",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Operating grants and contributions | 18.244 | 17.446  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2862,
+   "numero": "54.378",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Sponsorships | 79.878 | 54.378  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2863,
+   "numero": "6.964",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Advertising income | 8.112 | 6.964  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2864,
+   "numero": "13.160",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Commercial income and royalties | 24.014 | 13.160  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2866,
+   "numero": "87.069",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - television revenues | 101.065 | 87.069  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2867,
+   "numero": "99.582",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - television income from UEFA competitions | 65.636 | 99.582  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2868,
+   "numero": "9.719",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Other television income | 9.719 | 9.881  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2868,
+   "numero": "9.881",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Other television income | 9.719 | 9.881  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2869,
+   "numero": "1.052",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Revenue from temporary loans of players | 2.250 | 1.052  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2870,
+   "numero": "65.846",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Gains on sale of player registrations | 65.846 | 28.876  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2870,
+   "numero": "28.876",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Gains on sale of player registrations | 65.846 | 28.876  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2871,
+   "numero": "5.776",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Other income from player management | 5.776 | 9.653  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2871,
+   "numero": "9.653",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Other income from player management | 5.776 | 9.653  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2872,
+   "numero": "21.074",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Sundry revenues and income | 21.074 | 18.055  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2872,
+   "numero": "18.055",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Sundry revenues and income | 21.074 | 18.055  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2873,
+   "numero": "401.614",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **401.614** | **346.116**  |"
+  },
+  {
+   "bloque": "b39",
+   "pagina": 82,
+   "linea": 2873,
+   "numero": "346.116",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Total** | **401.614** | **346.116**  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2923,
+   "numero": "3.348",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Technical material | 3.348 | 3.215  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2923,
+   "numero": "3.215",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Technical material | 3.348 | 3.215  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2924,
+   "numero": "3.838",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Consumables | 3.838 | 2.338  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2924,
+   "numero": "2.338",
+   "segundaLeyo": "2330",
+   "sinSegunda": false,
+   "texto": "|  Consumables | 3.838 | 2.338  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2926,
+   "numero": "6.355",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  E-commerce material | 6.355 | 3.576  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2926,
+   "numero": "3.576",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  E-commerce material | 6.355 | 3.576  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2928,
+   "numero": "13.962",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **13.962** | **9.541**  |"
+  },
+  {
+   "bloque": "b41",
+   "pagina": 83,
+   "linea": 2928,
+   "numero": "9.541",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **13.962** | **9.541**  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2943,
+   "numero": "7.118",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for sport activities | 7.118 | 6.530  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2943,
+   "numero": "6.530",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for sport activities | 7.118 | 6.530  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2944,
+   "numero": "16.513",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Specific technical costs | 16.513 | 12.634  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2944,
+   "numero": "12.634",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Specific technical costs | 16.513 | 12.634  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2945,
+   "numero": "2.587",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for accomodation, food, transport | 2.587 | 4.060  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2945,
+   "numero": "4.060",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for accomodation, food, transport | 2.587 | 4.060  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2946,
+   "numero": "4.335",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ticketing service, ground admission, security control | 4.335 | 4.095  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2946,
+   "numero": "4.095",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Ticketing service, ground admission, security control | 4.335 | 4.095  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2947,
+   "numero": "3.274",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Insurance and pension | 3.274 | 2.583  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2947,
+   "numero": "2.583",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Insurance and pension | 3.274 | 2.583  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2949,
+   "numero": "35.872",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Administrative, advertising and general | 35.872 | 31.809  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2949,
+   "numero": "31.809",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Administrative, advertising and general | 35.872 | 31.809  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2950,
+   "numero": "70.061",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **70.061** | **62.080**  |"
+  },
+  {
+   "bloque": "b42",
+   "pagina": 84,
+   "linea": 2950,
+   "numero": "62.080",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **70.061** | **62.080**  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2957,
+   "numero": "2.503",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for training sessions and camps | 2.503 | 2.311  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2957,
+   "numero": "2.311",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for training sessions and camps | 2.503 | 2.311  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2959,
+   "numero": "2.218",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Fees for self-employed contractors | 2.218 | 2.025  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2959,
+   "numero": "2.025",
+   "segundaLeyo": "2023",
+   "sinSegunda": false,
+   "texto": "|  Fees for self-employed contractors | 2.218 | 2.025  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2963,
+   "numero": "7.118",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **7.118** | **6.530**  |"
+  },
+  {
+   "bloque": "b43",
+   "pagina": 84,
+   "linea": 2963,
+   "numero": "6.530",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **7.118** | **6.530**  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2970,
+   "numero": "2.163",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Player scouting and trials | 2.163 | 1.463  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2970,
+   "numero": "1.463",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Player scouting and trials | 2.163 | 1.463  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2972,
+   "numero": "14.100",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Transfer campaign agent fees | 14.100 | 10.884  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2972,
+   "numero": "10.884",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Transfer campaign agent fees | 14.100 | 10.884  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2974,
+   "numero": "16.513",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **16.513** | **12.634**  |"
+  },
+  {
+   "bloque": "b44",
+   "pagina": 84,
+   "linea": 2974,
+   "numero": "12.634",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **16.513** | **12.634**  |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2990,
+   "numero": "7.680",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| External consultant | 7.680 | 6.553 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2990,
+   "numero": "6.553",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| External consultant | 7.680 | 6.553 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2991,
+   "numero": "5.028",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Services from associated | 5.028 | 5.434 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2991,
+   "numero": "5.434",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Services from associated | 5.028 | 5.434 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2992,
+   "numero": "2.980",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Giveaways, promotional and representation gifts | 2.980 | 2.842 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2992,
+   "numero": "2.842",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Giveaways, promotional and representation gifts | 2.980 | 2.842 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2993,
+   "numero": "1.740",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Inter TV | 1.740 | 1.897 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2993,
+   "numero": "1.897",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Inter TV | 1.740 | 1.897 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2994,
+   "numero": "2.394",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Directors fees | 2.394 | 1.892 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2994,
+   "numero": "1.892",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Directors fees | 2.394 | 1.892 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2995,
+   "numero": "2.273",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Legal and notary fees | 2.273 | 1.743 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2995,
+   "numero": "1.743",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Legal and notary fees | 2.273 | 1.743 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2996,
+   "numero": "1.554",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Guarantees fees | 1.554 | 1.360 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2996,
+   "numero": "1.360",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Guarantees fees | 1.554 | 1.360 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2997,
+   "numero": "1.385",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Postal and telephone expenses | 1.385 | 1.299 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2997,
+   "numero": "1.299",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Postal and telephone expenses | 1.385 | 1.299 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2998,
+   "numero": "1.324",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Supervisory and cleaning expenses | 1.324 | 1.309 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2998,
+   "numero": "1.309",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Supervisory and cleaning expenses | 1.324 | 1.309 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2999,
+   "numero": "1.811",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Advertising costs | 1.811 | 1.482 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 2999,
+   "numero": "1.482",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Advertising costs | 1.811 | 1.482 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3000,
+   "numero": "1.168",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Ordinary maintenance and repairs | 1.168 | 1.052 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3000,
+   "numero": "1.052",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Ordinary maintenance and repairs | 1.168 | 1.052 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3001,
+   "numero": "2.169",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Player Image Rights | 2.169 | 1.194 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3001,
+   "numero": "1.194",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Player Image Rights | 2.169 | 1.194 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3002,
+   "numero": "1.202",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other utilities | 1.202 | 998 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3005,
+   "numero": "1.641",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| External events | 1.641 | 1.373 |"
+  },
+  {
+   "bloque": "b45",
+   "pagina": 85,
+   "linea": 3005,
+   "numero": "1.373",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| External events | 1.641 | 1.373 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3030,
+   "numero": "5.509",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Licence to use Meazza Stadium | 5.509 | 5.163 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3030,
+   "numero": "5.163",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Licence to use Meazza Stadium | 5.509 | 5.163 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3031,
+   "numero": "3.854",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Rental expenses | 3.854 | 3.576 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3031,
+   "numero": "3.576",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Rental expenses | 3.854 | 3.576 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3033,
+   "numero": "3.357",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other user licence fees | 3.357 | 2.646 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3033,
+   "numero": "2.646",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other user licence fees | 3.357 | 2.646 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3035,
+   "numero": "2.132",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Rental fees | 2.132 | 1.762 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3035,
+   "numero": "1.762",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Rental fees | 2.132 | 1.762 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3037,
+   "numero": "15.370",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 15.370 | 13.654 |"
+  },
+  {
+   "bloque": "b46",
+   "pagina": 86,
+   "linea": 3037,
+   "numero": "13.654",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 15.370 | 13.654 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3044,
+   "numero": "186.045",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Salaries and wages | 186.045 | 21.658 | 184.790 | 21.170 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3044,
+   "numero": "21.658",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Salaries and wages | 186.045 | 21.658 | 184.790 | 21.170 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3044,
+   "numero": "184.790",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Salaries and wages | 186.045 | 21.658 | 184.790 | 21.170 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3044,
+   "numero": "21.170",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Salaries and wages | 186.045 | 21.658 | 184.790 | 21.170 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3045,
+   "numero": "5.313",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Social security contibution | 5.313 | 5.696 | 3.784 | 5.209 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3045,
+   "numero": "5.696",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Social security contibution | 5.313 | 5.696 | 3.784 | 5.209 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3045,
+   "numero": "3.784",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Social security contibution | 5.313 | 5.696 | 3.784 | 5.209 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3045,
+   "numero": "5.209",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Social security contibution | 5.313 | 5.696 | 3.784 | 5.209 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3046,
+   "numero": "1.756",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Employee severance indemnity | 692 | 1.756 | 619 | 1.510 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3046,
+   "numero": "1.510",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Employee severance indemnity | 692 | 1.756 | 619 | 1.510 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3047,
+   "numero": "3.543",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other costs | 3.543 | 2.681 | 7.760 | 2.078 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3047,
+   "numero": "2.681",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other costs | 3.543 | 2.681 | 7.760 | 2.078 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3047,
+   "numero": "7.760",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other costs | 3.543 | 2.681 | 7.760 | 2.078 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3047,
+   "numero": "2.078",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Other costs | 3.543 | 2.681 | 7.760 | 2.078 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3048,
+   "numero": "195.593",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 195.593 | 31.791 | 196.953 | 29.967 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3048,
+   "numero": "31.791",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 195.593 | 31.791 | 196.953 | 29.967 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3048,
+   "numero": "196.953",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 195.593 | 31.791 | 196.953 | 29.967 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3048,
+   "numero": "29.967",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 195.593 | 31.791 | 196.953 | 29.967 |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 86,
+   "linea": 3049,
+   "numero": "226.920",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Total personnel costs | 227.384 | | 226.920 | |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3058,
+   "numero": "136.566",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Contractual remuneration players | 136.566 | 142.953 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3058,
+   "numero": "142.953",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Contractual remuneration players | 136.566 | 142.953 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3059,
+   "numero": "17.950",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Contractual remuneration coaches and technical staff | 17.950 | 16.330 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3059,
+   "numero": "16.330",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Contractual remuneration coaches and technical staff | 17.950 | 16.330 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3060,
+   "numero": "24.168",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Performance bonuses | 31.529 | 24.168 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3061,
+   "numero": "1.339",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Image rights | - | 1.339 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3062,
+   "numero": "186.045",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 186.045 | 184.790 |"
+  },
+  {
+   "bloque": "b48",
+   "pagina": 86,
+   "linea": 3062,
+   "numero": "184.790",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 186.045 | 184.790 |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3132,
+   "numero": "2024",
+   "segundaLeyo": "2020",
+   "sinSegunda": false,
+   "texto": "|   | 12 months as of June 30, 2024 | 12 months as of June 30, 2023  |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3135,
+   "numero": "6.168",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Sundry match organization costs | 6.168 | 7.224  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3135,
+   "numero": "7.224",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Sundry match organization costs | 6.168 | 7.224  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3136,
+   "numero": "1.500",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for temporary acquisition of players | 1.500 | 10.976  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3136,
+   "numero": "10.976",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Costs for temporary acquisition of players | 1.500 | 10.976  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3137,
+   "numero": "1.164",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Losses on the long-term sale player registration rights | 1.164 | 634  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3138,
+   "numero": "1.669",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Other expenses from player management | 1.669 | 1.493  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3138,
+   "numero": "1.493",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  Other expenses from player management | 1.669 | 1.493  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3140,
+   "numero": "1.518",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Costs, fines and penalties for matches | 144 | 1.518  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3141,
+   "numero": "1.925",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Indirect tax expenses | 1.925 | 582  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3142,
+   "numero": "1.596",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Contributions from Football League | 1.596 | 1.136  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3142,
+   "numero": "1.136",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Contributions from Football League | 1.596 | 1.136  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3144,
+   "numero": "4.420",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Cost of previously years | 2.149 | 4.420  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3145,
+   "numero": "2.308",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  - Sundry costs | 61 | 2.308  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3146,
+   "numero": "16.380",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **16.380** | **30.579**  |"
+  },
+  {
+   "bloque": "b50",
+   "pagina": 88,
+   "linea": 3146,
+   "numero": "30.579",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|   | **16.380** | **30.579**  |"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 89,
+   "linea": 3180,
+   "numero": "29.380",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| On Bond Loan | 29.481 | 29.380 |"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 89,
+   "linea": 3184,
+   "numero": "3.114",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| On actualization | 6.763 | 3.114 |"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 89,
+   "linea": 3186,
+   "numero": "40.368",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 40.368 | 39.658 |"
+  },
+  {
+   "bloque": "b51",
+   "pagina": 89,
+   "linea": 3186,
+   "numero": "39.658",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 40.368 | 39.658 |"
+  }
+ ]
+}

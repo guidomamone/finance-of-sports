@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
+  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
+  "club": "chievo-verona",
+  "year": 2014,
+  "generatedAt": "2026-10-08T18:56:45.226Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "- Gare campionato",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        1.09534
+      ],
+      "glosa": "- Partidos de liga"
+    },
+    {
+      "label": "- Gare Coppa Italia",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.003304
+      ],
+      "glosa": "- Partidos de Copa de Italia"
+    },
+    {
+      "label": "- Gare Coppa Italia",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.03423
+      ],
+      "glosa": "- Partidos de Copa de Italia"
+    },
+    {
+      "label": "- Gare Amichevoli estero",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.069021
+      ],
+      "glosa": "- Partidos amistosos en el extranjero"
+    },
+    {
+      "label": "Abbonamenti",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.618963
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "4) incrementi di immobilizzazioni per lavori interni",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        3.159845
+      ],
+      "glosa": "4) Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "contributi in conto esercizio",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.953032
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "altri",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        44.069223
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.053949
+      ],
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "7) per servizi",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        8.178732
+      ],
+      "glosa": "7) Servicios exteriores"
+    },
+    {
+      "label": "8) per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.524568
+      ],
+      "glosa": "8) Arrendamientos y cánones"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        21.523555
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.526648
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.272088
+      ],
+      "glosa": "c) Indemnizaciones por fin de contrato"
+    },
+    {
+      "label": "a) ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        15.0881
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.092518
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "d) Deterioro de valor de los créditos del activo corriente y de la tesorería"
+    },
+    {
+      "label": "Spese varie organizzazione gare",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.204822
+      ],
+      "glosa": "Gastos varios de organización de partidos"
+    },
+    {
+      "label": "Tasse iscrizioni gare",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.013017
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "- Percentuale su incassi gare a squadre ospitate",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.001487
+      ],
+      "glosa": "- Porcentaje sobre recaudación de partidos a equipos visitantes"
+    },
+    {
+      "label": "Costo per acquisiti temporanea prestaz. Calciatori",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        1.173686
+      ],
+      "glosa": "Gastos por cesión temporal de jugadores"
+    },
+    {
+      "label": "Minusvalenze da cessione diritti plur. calciatori",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.718093
+      ],
+      "glosa": "Pérdidas por traspaso de derechos de jugadores"
+    },
+    {
+      "label": "Altri oneri da gestione calciatori",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.195
+      ],
+      "glosa": "Otros gastos de gestión de jugadores"
+    },
+    {
+      "label": "Altri oneri diversi di gestione",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        1.217624
+      ],
+      "glosa": "Otros gastos diversos de explotación"
+    }
+  ]
+}

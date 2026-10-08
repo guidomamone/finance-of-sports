@@ -34,3 +34,7 @@
 Se bajaron por Wayback (el dominio da 403 al PDF directo): 2021-22 (`wp-content/uploads/2023/02/2.b.ii-CCAA-Villarreal-21-22-firmadas.pdf`, 103 págs. — el pendiente de la sesión anterior), 2018-19 (`images/el-club/transparencia/3.a.v CCAA Villarreal 18-19.pdf`, 64 págs.) y 2024-25 (`wp-content/uploads/2026/02/3.a.v-CCAA-Villarreal-24-25-firmado.pdf`, 104 págs.). Con 2023-24 → **4 ejercicios**. Falta uno para llegar a 5: 2019-20, 2020-21 o 2022-23, que no figuran en el listado de Wayback del dominio (ver aviso de la caída de archive.org en `_notas-generales.md`).
 
 PDFs guardados en `Clubes/España/Villarreal CF/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

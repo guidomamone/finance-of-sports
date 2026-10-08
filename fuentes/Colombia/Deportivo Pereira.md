@@ -31,3 +31,9 @@
   describe como "dominante" del escudo) — es un juicio, no una fuente que declare predominancia
   explícita; si Guido tiene otro criterio, revisar.
 
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 2 ejercicios (2024-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

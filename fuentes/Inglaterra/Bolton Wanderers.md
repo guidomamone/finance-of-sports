@@ -23,3 +23,7 @@ Todos en `Clubes/Inglaterra/Bolton Wanderers/` (los PDF no se trackean; los de C
 - Serie disponible: 6 ejercicios de grupo (2019/20 a 2024/25); en disco los 5 más recientes. No hay nada anterior porque la holding se constituyó el 11/1/2019.
 - Ejercicio de cierre 30 de junio.
 <!-- /ing-sourcing -->
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 2 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2023-2024, 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf",
+ "generado": "2026-10-08T19:23:27.631Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-07: individual (Genoa Cricket and Football Club S.p.A.); único perímetro con documento en 2022-2025; el consolidado (+ Genoa Image) difiere 3-6%)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "genoa-it",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

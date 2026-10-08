@@ -39,3 +39,11 @@ para hacerles llegar.
 - **Pendiente**: la página `/pages/40` se actualiza cada año reemplazando el anterior; los ejercicios 2021-2024 pueden estar en capturas de Wayback de la página HTML (`fcdynamo.com/pages/40`, sin capturas listadas por el CDX consultado) — reintentar con otra consulta. Candidato a mail: pedir los consolidados 2021-2024.
 
 **Lead sin verificar (agregador)**: `opendatabot.ua/c/00305981` (EDRPOU 00305981, "ФК Динамо Київ") muestra cifras 2024 (ingresos 913,7 M UAH, pérdida neta 784,1 M UAH, activos 4.455 M UAH) y ofrece `Баланс_2024.xlsx` / `Фінансові результати_2024.xlsx`. Fuente NO oficial. Encontrado 2026-10-03.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (descubierto con búsqueda semántica Exa) · barrido: 3 (Exa) — 2026-10-08
+
+4 documentos en carpeta (2025).
+
+- Nuevo: «Консолідована фінансова звітність» (50 págs., NSFR/MSFO consolidado); corresponde al ejercicio 2020 (cierre 31-dic-2020, según el informe del auditor).

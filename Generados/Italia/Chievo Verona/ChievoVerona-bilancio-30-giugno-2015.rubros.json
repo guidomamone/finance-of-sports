@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
+  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+  "club": "chievo-verona",
+  "year": 2015,
+  "generatedAt": "2026-10-08T18:56:45.271Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "GARE IN CASA CAMPIONATO 1^ SQUAD",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        1.084243
+      ],
+      "glosa": "Partidos como local campeonato 1.er equipo"
+    },
+    {
+      "label": "GARE IN CASA COPPA ITAL 1^ SQUAD",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.001621
+      ],
+      "glosa": "Partidos como local Copa Italia 1.er equipo"
+    },
+    {
+      "label": "GARE FUORI CASA COPPA ITALIA",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.010182
+      ],
+      "glosa": "Partidos como visitante Copa Italia"
+    },
+    {
+      "label": "ABBONAMENTI",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.66432
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "4) incrementi di immobilizzazioni per lavori interni",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        2.055289
+      ],
+      "glosa": "4) Trabajos realizados por la empresa para su inmovilizado"
+    },
+    {
+      "label": "contributi in conto esercizio",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.133333
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "altri",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        50.471344
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.938955
+      ],
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "7) per servizi",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        8.073092
+      ],
+      "glosa": "7) Servicios exteriores"
+    },
+    {
+      "label": "8) per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.712631
+      ],
+      "glosa": "8) Arrendamientos y cánones"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        26.211042
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.482495
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.250637
+      ],
+      "glosa": "c) Indemnizaciones por cese de relación laboral"
+    },
+    {
+      "label": "a) ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        13.072042
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.217322
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.068897
+      ],
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
+    },
+    {
+      "label": "Spese varie organizzazione gare",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.195741
+      ],
+      "glosa": "Gastos diversos de organización de partidos"
+    },
+    {
+      "label": "Tasse iscrizioni gare",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.011785
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "Costo per acquist.temporanea prestaz.",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        1.830263
+      ],
+      "glosa": "Costes por cesión temporal de jugadores"
+    },
+    {
+      "label": "Minusvalenza da cessioni diritti plur. calciatori",
+      "lado": "expense",
+      "page": 50,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        2.292323
+      ],
+      "glosa": "Pérdidas por traspasos de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Altri oneri da gestione calciatori",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.743
+      ],
+      "glosa": "Otros gastos de gestión de futbolistas"
+    },
+    {
+      "label": "Altri oneri diversi di gestione",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        1.513745
+      ],
+      "glosa": "Otros gastos diversos de gestión"
+    }
+  ]
+}

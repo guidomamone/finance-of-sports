@@ -28,3 +28,4 @@ UEFA). Ver `fuentes/Suiza/_notas-generales.md` y la sección 27 (propuesta) del 
 - [Winterthur](<../Suiza/Winterthur.md>) — dead-end propio, solo agregado SFL (1 solo año, 2023) — Último chequeo: 2026-09-17
 - Agregado SFL Finanzzahlen — 5 ejercicios (2021-2025) con Bilanz+GuV de los clubes con licencia UEFA cada año, en `Clubes/Suiza/_SFL-Finanzzahlen/` — Último chequeo: 2026-09-17
 - [Notas generales de Suiza](<../Suiza/_notas-generales.md>)
+- [_WorldFootball-documentos-de-liga](<../Suiza/_WorldFootball-documentos-de-liga.md>) — 4 PDF de WorldFootball (temporadas 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08

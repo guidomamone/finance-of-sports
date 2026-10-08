@@ -56,3 +56,9 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Pinheiros](<../Brasil/Pinheiros.md>) — otro deporte (poliesportivo): 1 ejercicio (2022) en disco; sitio vivo inaccesible desde la sesión — Último chequeo: 2026-10-03
 - [Praia Clube](<../Brasil/Praia Clube.md>) — otro deporte (vóley): 8 ejercicios 2018-2025 (solo 3 auditados) — Último chequeo: 2026-10-03
 - [Notas generales de Brasil](../Brasil/_notas-generales.md)
+- [Figueirense](<../Brasil/Figueirense.md>) — 5 documentos, años 2021-2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Ypiranga](<../Brasil/Ypiranga.md>) — 3 documentos, años 2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Retrô FC](<../Brasil/Retrô FC.md>) — 2 documentos, años 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Sampaio Corrêa](<../Brasil/Sampaio Corrêa.md>) — 7 documentos, años 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Ceilândia](<../Brasil/Ceilândia.md>) — 2 documentos, años 2022-2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Brasil de Pelotas](<../Brasil/Brasil de Pelotas.md>) — 1 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08

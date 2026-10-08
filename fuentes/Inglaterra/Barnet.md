@@ -20,3 +20,7 @@ Todos en `Clubes/Inglaterra/Barnet/` (los PDF no se trackean; los de Companies H
 - Wayback CDX del dominio `barnetfc.com`: 189 PDFs, fixtures y brochures; la sección "Company Details" del sitio oficial solo da número de sociedad y VAT.
 - Sin señal de que el club publique informe anual: dead-end real para 2017/18 en adelante, sin mail.
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `--include-small`, pero es "small company" y la cuenta de resultados NO se presentó (omitida del filing copy): sin ingresos no sirve para el sitio. Los años 2022-2024 del registro son todos del mismo tipo.

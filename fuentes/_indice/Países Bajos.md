@@ -33,3 +33,19 @@ del skill de sourcing.
 - [Telstar](<../Países Bajos/Telstar.md>) — 3 ejercicios 2022/23-2024/25 (faltan 2018/19-2021/22), sin cargar aún — Último chequeo: 2026-09-17
 - [FC Volendam](<../Países Bajos/FC Volendam.md>) — 5 ejercicios (faltan 2018/19, 2021/22), Stichting no BV/NV, ver duda de fundación en dudas-por-club.md — Último chequeo: 2026-09-17
 - [Notas generales de Países Bajos](<../Países Bajos/_notas-generales.md>)
+- [Willem II](<../Países Bajos/Willem II.md>) — 15 documentos, años 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [RKC Waalwijk](<../Países Bajos/RKC Waalwijk.md>) — 5 documentos, años 2011-2012, 2022-2023; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Emmen](<../Países Bajos/FC Emmen.md>) — 16 documentos, años 2014-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [SC Cambuur](<../Países Bajos/SC Cambuur.md>) — 9 documentos, años 2012-2013, 2020-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Dordrecht](<../Países Bajos/FC Dordrecht.md>) — 6 documentos, años 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Den Bosch](<../Países Bajos/FC Den Bosch.md>) — 9 documentos, años 2014-2017, 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [De Graafschap](<../Países Bajos/De Graafschap.md>) — 4 documentos, años 2021, 2023; sin cargar aún — Último chequeo: 2026-10-08
+- [ADO Den Haag](<../Países Bajos/ADO Den Haag.md>) — 16 documentos, años 2007-2008, 2010-2014, 2016-2021, 2023-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Roda JC](<../Países Bajos/Roda JC.md>) — 8 documentos, años 2009-2012, 2014-2015, 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Almere City](<../Países Bajos/Almere City.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [FC Eindhoven](<../Países Bajos/FC Eindhoven.md>) — 3 PDF de WorldFootball (temporadas 2022-2023, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Helmond Sport](<../Países Bajos/Helmond Sport.md>) — 3 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [NEC Nijmegen](<../Países Bajos/NEC Nijmegen.md>) — 2 PDF de WorldFootball (temporadas 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [VVV-Venlo](<../Países Bajos/VVV-Venlo.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Vitesse](<../Países Bajos/Vitesse.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [MVV Maastricht](<../Países Bajos/MVV Maastricht.md>) — 9 documentos, años 2011-2021; sin cargar aún — Último chequeo: 2026-10-08

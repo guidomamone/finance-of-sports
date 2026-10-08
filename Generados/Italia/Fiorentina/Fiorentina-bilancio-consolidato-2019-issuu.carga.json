@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.pdf",
+ "generado": "2026-10-08T19:23:27.559Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-07: Guido 2026-10-07: el 2019 se carga consolidado (Gruppo Fiorentina: ACF Fiorentina S.p.A. + Promesse Viola S.r.l.), único documento de ese año; desde 2021 la serie es individual)",
+  "el documento cierra 2019-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-07): Guido 2026-10-07: el ejercicio 2019 cierra el 31/12 (después el club pasó a cerrar el 30/06)"
+ },
+ "clubId": "fiorentina-it",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

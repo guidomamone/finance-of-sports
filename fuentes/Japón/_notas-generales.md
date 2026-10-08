@@ -159,3 +159,13 @@ archivos ya están identificados y confirmados.
   consolidado de la liga porque respondía exactamente al objetivo (desglose de ingresos por
   categoría, por club, auditado como condición de licencia).
 - Último chequeo: 2026-09-13.
+
+## Barrido 2026-10-08 (año de sourcing 2023): documentos de liga de WorldFootball
+
+La ficha financiera de cada club en `worldfootball.com/financials` enlaza, además de informes propios, los **documentos de LIGA** (los mismos para todos los clubes del país). Se guardaron una sola vez en `Clubes/Japón/_WorldFootball-documentos-de-liga/` (4 PDF; fuente secundaria/espejo de los originales oficiales de la liga):
+  - `wf-2024-2025-0d670c29.pdf`
+  - `wf-2025-2026-29505015.pdf`
+  - `wf-src-j_kessan-2022.pdf`
+  - `wf-src-j_kessan-2023.pdf`
+
+Ojo: son agregados de varios clubes (como los de `_DFL-Finanzkennzahlen`, `_Bundesliga-Finanzkennzahlen`, etc.); no se asignan a ningún club en particular. Años nuevos respecto de lo que había: ver nombres de archivo.

@@ -34,3 +34,7 @@
 - Color de marca: `#004D98` — tabla por liga de footylogos (LaLiga), 2° color, exacto, verificado
   2026-09-21. Es el azul, NO el granate que la tabla lista primero: el azul gana porque va primero
   en "blaugrana", la lista ordenada del propio club.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024, 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

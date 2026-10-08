@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Leyton Orient/` (los PDF no se trackean; son escaneo
 - `leytonorient-full-accounts-2012-13.pdf`
 - `leytonorient-full-accounts-2011-12.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `companies-house-fetch.mjs --years 2023 --include-small`: trae cuenta de resultados con turnover (OCR chequeado). Listo para onboarding. Revenue 5.903.028 vs 5.601.440.

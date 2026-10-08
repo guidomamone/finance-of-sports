@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Accrington Stanley/` (los PDF no se trackean; son es
 - `accrington-other-accounts-1988-89.pdf`
 - `accrington-other-accounts-1987-88.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `--include-small`, pero es "small company" y la cuenta de resultados NO se presentó (omitida del filing copy): sin ingresos no sirve para el sitio. Los años 2022-2024 del registro son todos del mismo tipo.

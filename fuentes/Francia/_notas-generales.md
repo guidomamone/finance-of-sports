@@ -190,3 +190,31 @@ dueño a un fondo con obligaciones de reporting, como pasó con RC Strasbourg/Bl
 ## Pendientes (venían del TODO)
 
 - (ex to-do 113, 2026-10-03) SOURCING ESPAÑA/FRANCIA — LO QUE QUEDÓ ABIERTO (sesión 2026-10-03, worktree `sourcing-espana-francia`; detalle por club en `fuentes/España/<Club>.md`). (b) Francia: el agregado DNCG ya da 20+ temporadas para los 18 clubes de L1/L2, pero falta 2023/24 (no está en `www.sta.lfp.fr/reports-dncg`, que ahora tiene `www.` — el host sin `www` ya no resuelve) y 2015/16 (solo rapport). (c) Clubes nuevos (resto de LaLiga/LaLiga 2/RFEF y de Ligue 1/Ligue 2) no arrancados.
+
+## Barrido 2026-10-08 (año de sourcing 2023): DNCG 2023/24 sigue sin aparecer
+
+- `www.sta.lfp.fr/reports-dncg` (HTML con los links embebidos) no lista 2023/24 ni 2024/25; sí 2015/16 (`1516_rapport_dncg_all_fr_45c05a1bbe.pdf` y la versión EN, ya teníamos el rapport) y 2016/17.
+- El host `bo-cms.lfp.fr` (que figuraba en resultados de búsqueda como `.../Documents/rapports-dncg/<temporada>/...`) ya no resuelve, y su CDX en Wayback salió vacío.
+- Patrick Bayeux: su `wp-json/wp/v2/media?search=...&mime_type=application/pdf` SÍ funciona para listar PDFs por término (útil como patrón). Para fútbol solo hay 2021/22, 2022/23 y 2024/25; lo de "2023-2024" es de básquet (LNB). Probados los términos "DNCG", "COMPTES INDIVIDUELS", "2324", "2023-2024", "2023_2024", "LFP", "situation football", "comptes clubs".
+- Pendiente real: 2023/24 (rapport presentado por la DNCG en 2025). Prensa lo cita (Europe 1: déficit de 250 M€) pero sin link al PDF.
+
+## Actualización 2026-10-08 (año de sourcing 2023): ¡apareció el DNCG 2023/24 de Ligue 1!
+
+- **Hallado** con Exa: los «Comptes individuels des clubs» de la Ligue 1 **2022/23, 2023/24 y 2024/25** están espejados en `media.worldfootball.com/docs/financials/814/<temporada>/<hash>.pdf` (versión FR) y `.../1721/<temporada>/<hash>.pdf` (versión EN), 24 págs. cada uno. Bajados a `Clubes/Francia/_DNCG-Agregado-Liga/`: `dncg-comptes-individuels-ligue1-2023-24.pdf` (FR), `...-EN.pdf`, y los de 2022/23 y 2024/25 en copia oficial de la LFP.
+- **Corrección 2026-10-08 (sesión siguiente)**: el PDF de 24 págs. (`dncg-comptes-individuels-ligue1-2023-24.pdf`, idéntico por md5 a `lfp.fr/assets/comptes_clubs_24_7ff73eb7c6.pdf` y a `wf-2023-2024-8e3656b0.pdf`) **SÍ trae la sección LIGUE 2** (desde la pág. 13: Guingamp, Laval, Rodez, Concarneau, Dunkerque...). Los comptes individuels de Ligue 2 2023/24 ya estaban en disco; el nombre del archivo dice «ligue1» pero cubre las dos divisiones. No hay nada que buscar.
+- ~~**Limitación**: son solo la sección *Ligue 1*; los comptes individuels de Ligue 2 de 2023/24 siguen sin aparecer (la página de LFP/newstank menciona «Ligue 1 McDonald's y Ligue 2 BKT» juntos, pero el PDF bajado cubre 20 clubes de L1). Probar `media.worldfootball.com/docs/financials/<otro id>/2023-2024/`.~~ (falsa, ver arriba)
+- El rapport DNCG general («situation du football professionnel») 2023/24 sigue pendiente.
+
+## Barrido 2026-10-08 (año de sourcing 2023): documentos de liga de WorldFootball
+
+La ficha financiera de cada club en `worldfootball.com/financials` enlaza, además de informes propios, los **documentos de LIGA** (los mismos para todos los clubes del país). Se guardaron una sola vez en `Clubes/Francia/_WorldFootball-documentos-de-liga/` (8 PDF; fuente secundaria/espejo de los originales oficiales de la liga):
+  - `wf-2022-2023-0e41f82f.pdf`
+  - `wf-2022-2023-bd231231.pdf`
+  - `wf-2023-2024-8e3656b0.pdf`
+  - `wf-2023-2024-b42e67d2.pdf`
+  - `wf-2024-2025-1bde4b20.pdf`
+  - `wf-2024-2025-21e5785a.pdf`
+  - `wf-src-2305-CLUBS-COMPTES-INDIVIDUELS-LFP-2021-22-FR1.pdf`
+  - `wf-src-2405-2223-DNCG-comptes-clubs.pdf`
+
+Ojo: son agregados de varios clubes (como los de `_DFL-Finanzkennzahlen`, `_Bundesliga-Finanzkennzahlen`, etc.); no se asignan a ningún club en particular. Años nuevos respecto de lo que había: ver nombres de archivo.

@@ -26,3 +26,9 @@ sourcing.
 - No se encontró ningún archivo histórico (años anteriores) en este canal — sin explorar a fondo
   si existe una sección de archivo separada.
 - Último chequeo: 2026-09-18.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: agotado (las rutas fijas `/pdf/*.pdf` siguen sirviendo el mismo archivo: el hash del Gelir Tablosu y del Finansal Durum coincide con el que ya teníamos) · Wayback CDX de dominio: agotado (solo 4 tablas, capturas de julio 2024, y logos) · barrido: 2 (Sonnet) — 2026-10-08
+
+- No hay un ejercicio adicional: el sitio sobrescribe la misma ruta cada año y Wayback solo tiene la captura de julio 2024. Sigue sin saberse qué ejercicio cubren los 4 PDFs (pendiente de identificar a ojo).

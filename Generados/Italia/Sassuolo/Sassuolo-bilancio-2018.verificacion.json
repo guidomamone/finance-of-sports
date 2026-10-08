@@ -1,0 +1,80 @@
+{
+ "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.pdf",
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.md",
+ "generado": "2026-10-08T18:56:48.026Z",
+ "estado": "cola",
+ "clubId": "sassuolo-it",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "ec14097",
+  "dba6cc9",
+  "3643cdb",
+  "5c0814a",
+  "4531d8c",
+  "4531d8c",
+  "f29f8c0",
+  "553e545"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "número impreso para cerrar",
+   "ok": false,
+   "detalle": "el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": false,
+   "detalle": "ingresos de 2018: 0 en este documento y 107.785817 en Sassuolo-bilancio-2019.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: Es detalle por jugador, no por categoría."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

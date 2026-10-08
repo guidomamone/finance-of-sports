@@ -137,3 +137,13 @@ Actualizar esta nota si: (a) se consigue el resto de los años de FC Zürich/Sio
 por un canal no probado acá (ninguno de los 4 tiene disclosure propio conocido hoy); (b) aparecen años
 2016-2020 del agregado SFL por un link no adivinado en esta sesión; (c) se resuelve el hueco de FC Thun
 2017 o de BSC Young Boys 2019.
+
+## Barrido 2026-10-08 (año de sourcing 2023): documentos de liga de WorldFootball
+
+La ficha financiera de cada club en `worldfootball.com/financials` enlaza, además de informes propios, los **documentos de LIGA** (los mismos para todos los clubes del país). Se guardaron una sola vez en `Clubes/Suiza/_WorldFootball-documentos-de-liga/` (4 PDF; fuente secundaria/espejo de los originales oficiales de la liga):
+  - `wf-2023-2024-d2a9bdb4.pdf`
+  - `wf-2024-2025-b51cdf91.pdf`
+  - `wf-src-Finanzinformationen_UEFA_2023.pdf`
+  - `wf-src-Publikation_Finanzinformationen_UEFA_2022.pdf`
+
+Ojo: son agregados de varios clubes (como los de `_DFL-Finanzkennzahlen`, `_Bundesliga-Finanzkennzahlen`, etc.); no se asignan a ningún club en particular. Años nuevos respecto de lo que había: ver nombres de archivo.

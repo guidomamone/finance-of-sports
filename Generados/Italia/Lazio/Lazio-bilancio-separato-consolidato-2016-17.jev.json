@@ -1,0 +1,457 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.md",
+ "generatedAt": "2026-10-08T19:22:57.022Z",
+ "rubrosHuella": "ca82b02510b073c77dcdf8cb8ad5bc2f70a03eb3",
+ "rubros": [
+  {
+   "label": "Ricavi da gare in casa",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Ricavi da gare\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "% su incassi gare da squadre ospitanti",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Ricavi da gare\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Ricavi da gare\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Televisivi",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Televisivi da partecipazioni a comp. UEFA",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
+   "choice": "broadcasting",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Da LNP",
+   "lado": "revenue",
+   "page": 134,
+   "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Proventi Pubblicitari",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Canoni per licenze, marchi e brevetti",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cessione temporanea calciatori",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Proventi da gestione diritti calciatori\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Proventi da gestione diritti calciatori\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "lado": "revenue",
+   "page": 135,
+   "section": "nota que desglosa \"Proventi da gestione diritti calciatori\"",
+   "choice": "player_sales",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Transazioni con creditori",
+   "lado": "revenue",
+   "page": 136,
+   "section": "nota que desglosa \"Altri ricavi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Da altri",
+   "lado": "revenue",
+   "page": 136,
+   "section": "nota que desglosa \"Altri ricavi\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Proventi vari",
+   "lado": "revenue",
+   "page": 136,
+   "section": "nota que desglosa \"Altri ricavi\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "revenue",
+   "page": 94,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiale per vendita a terzi",
+   "lado": "revenue",
+   "page": 136,
+   "section": "nota que desglosa \"Ricavi da merchandising\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri",
+   "lado": "revenue",
+   "page": 136,
+   "section": "nota que desglosa \"Ricavi da merchandising\"",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 94,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- Compensi contrattuali calciatori",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- Quota variabile legata ai risultati sportivi",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "- Compensi contrattuali allenatori e tecnici I squadra",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- Compensi contrattuali allenatori e tecnici sq. Minori",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "- Oneri sociali",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "- Trattamento di fine carriera",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "- Altri Costi",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "- Salari e stipendi",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "-Trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Personale\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Costi per acquisizione temporanea calciatori",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri oneri da gestione calciatori",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Costi per intermediazione tesserati",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione gare",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Servizio biglietteria e controllo ingressi",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese assicurative",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese amministrative",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese per pubblicità e promozione",
+   "lado": "expense",
+   "page": 138,
+   "section": "nota que desglosa \"Oneri per servizi esterni\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese bancarie",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "-% su incassi gare a squadre ospitate",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "- oneri tributari indiretti",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- multe e danni",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Oneri straordinari",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Altri oneri\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Ammortamenti e svalutazioni delle immobilizzazioni\"",
+   "choice": "depreciation",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Ammortamenti e svalutazioni delle immobilizzazioni\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Svalutazione delle immobilizzazioni",
+   "lado": "expense",
+   "page": 141,
+   "section": "nota que desglosa \"Ammortamenti e svalutazioni delle immobilizzazioni\"",
+   "choice": "player_impairment",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Accantonamenti e altre svalutazioni",
+   "lado": "expense",
+   "page": 94,
+   "section": "estado",
+   "choice": "player_impairment",
+   "confidence": 0.44,
+   "desdeCache": true
+  }
+ ]
+}

@@ -27,3 +27,4 @@ Finanzkennzahlen de la Österreichische Fußball-Bundesliga, equivalente al DFL 
 - [Blau-Weiß Linz](<../Austria/Blau-Weiß Linz.md>) — Firmenbuch confirmado (bloqueado por pago), solo agregado ÖFBL — Último chequeo: 2026-09-17
 - Bundesliga-Finanzkennzahlen — 8 ejercicios agregados (2017/18-2024/25) con Bilanz+GuV de los 24 clubes de ambas divisiones, en `Clubes/Austria/_Bundesliga-Finanzkennzahlen/` — Último chequeo: 2026-09-17
 - [Notas generales de Austria](<../Austria/_notas-generales.md>)
+- [_WorldFootball-documentos-de-liga](<../Austria/_WorldFootball-documentos-de-liga.md>) — 4 PDF de WorldFootball (temporadas 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08

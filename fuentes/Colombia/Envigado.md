@@ -41,3 +41,9 @@
 - Último chequeo: 2026-09-22.
 - Color de marca: `#ED7039` — tabla por liga de footylogos (Categoría Primera A), 1er color,
   exacto, verificado 2026-09-21.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

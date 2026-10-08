@@ -1,0 +1,130 @@
+{
+  "md": "Clubes/Italia/Torino/Torino-bilancio-2020.md",
+  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2020.pdf",
+  "club": "torino-it",
+  "year": 2020,
+  "generatedAt": "2026-10-08T18:56:48.221Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare nazionali",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.116
+      ],
+      "glosa": "Ingresos por competiciones nacionales"
+    },
+    {
+      "label": "Diritti radiotelevisivi e ricavi collettivi",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        44.065
+      ],
+      "glosa": "Derechos audiovisuales e ingresos colectivos"
+    },
+    {
+      "label": "Ricavi da sponsorizzazioni e proventi commerciali",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.207
+      ],
+      "glosa": "Ingresos por patrocinios e ingresos comerciales"
+    },
+    {
+      "label": "Plusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        19.476
+      ],
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Ricavi da cessione temporanea dei diritti alle prestazioni sportive di calciatori",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.352
+      ],
+      "glosa": "Ingresos por cesión temporal de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Altri ricavi",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.345
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Spese per materie prime, sussidiarie e di consumo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.167
+      ],
+      "glosa": "Gastos en materias primas, auxiliares y de consumo"
+    },
+    {
+      "label": "Spese per servizi",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.526
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Spese per il godimento beni di terzi",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.999
+      ],
+      "glosa": "Gastos por arrendamientos y uso de bienes de terceros"
+    },
+    {
+      "label": "Spese per il personale",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        56.987
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Oneri diversi di gestione",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.75
+      ],
+      "glosa": "Otros gastos de gestión"
+    },
+    {
+      "label": "Ammortamenti, accantonamenti e svalutazioni",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        31.708
+      ],
+      "glosa": "Amortizaciones, provisiones y deterioros"
+    }
+  ]
+}

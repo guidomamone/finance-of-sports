@@ -21,3 +21,6 @@ canal real: sección TAO/gazdálkodás de cada club. Ver `fuentes/Hungria/_notas
 - [Zalaegerszeg ZTE](<../Hungria/Zalaegerszeg ZTE.md>) — 8 ejercicios (2018-2025) en disco, sin cargar — Último chequeo: 2026-10-03
 - [Diosgyor DVTK](<../Hungria/Diosgyor DVTK.md>) — 5 ejercicios (2021-2025) en disco, sin cargar — Último chequeo: 2026-10-03
 - [Nyiregyhaza Spartacus](<../Hungria/Nyiregyhaza Spartacus.md>) — 8 ejercicios (2018-2025) en disco, sin cargar — Último chequeo: 2026-10-03
+- [Fehérvár FC](<../Hungria/Fehérvár FC.md>) — 2 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08
+- [Debreceni VSC](<../Hungria/Debreceni VSC.md>) — 1 documentos, años 2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Mezőkövesd Zsóry FC](<../Hungria/Mezőkövesd Zsóry FC.md>) — 1 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08

@@ -1,0 +1,130 @@
+{
+  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.md",
+  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.pdf",
+  "club": "asroma-it",
+  "year": 2011,
+  "generatedAt": "2026-10-08T18:56:44.398Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare",
+      "lado": "revenue",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        31.017179
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "a) Sponsorizzazioni",
+      "lado": "revenue",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6
+      ],
+      "glosa": "a) Patrocinios"
+    },
+    {
+      "label": "b) Diritti televisivi e diritti d'immagine",
+      "lado": "revenue",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        78.041642
+      ],
+      "glosa": "b) Derechos de televisión y derechos de imagen"
+    },
+    {
+      "label": "d) Altri proventi",
+      "lado": "revenue",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.281197
+      ],
+      "glosa": "d) Otros ingresos"
+    },
+    {
+      "label": "Gestione operativa netta calciatori",
+      "lado": "revenue",
+      "page": 74,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        4.453316
+      ],
+      "glosa": "Gestión operativa neta de futbolistas"
+    },
+    {
+      "label": "Acquisti materie di consumo",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.951003
+      ],
+      "glosa": "Compras de materiales de consumo"
+    },
+    {
+      "label": "Spese per Servizi",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        19.127612
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Spese per godimento beni di terzi",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.923115
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Spese per il personale",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        105.434689
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Oneri diversi di gestione",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.633446
+      ],
+      "glosa": "Otros gastos de gestión"
+    },
+    {
+      "label": "Ammortamenti e svalutazioni",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        22.268603
+      ],
+      "glosa": "Amortizaciones y deterioros"
+    },
+    {
+      "label": "Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 74,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.606323
+      ],
+      "glosa": "Provisiones para riesgos"
+    }
+  ]
+}

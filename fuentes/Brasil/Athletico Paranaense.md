@@ -47,3 +47,7 @@
   También pareceres del Conselho Fiscal 2022-2025 y actas de aprobación de cuentas.
 - Link 2025 en el sitio: `.../2026/05/2559-26-Relatorio-Club-Athletico-Paranaense-2025.pdf` y 2024 `.../2026/04/Relatorio-de-Atividades-e-Demonstracoes-Contabeis-2024.pdf` (re-subidos; los ya en disco vienen de otras fuentes, no se comparó md5).
 - Ejercicios en disco ahora: 2019, 2020, 2021, 2022, 2023, 2024, 2025.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 2 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas ninguna; `wf-src-*`: 2 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

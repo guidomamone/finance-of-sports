@@ -42,3 +42,11 @@
   (fundación, sin obligación de transparencia), `einforma.com/cuentas-anuales/real-futbol` (confirma
   depósito, no da el PDF gratis).
 - Último chequeo: 2026-09-16.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: HIT (sección Ley de Transparencia, que la nota anterior no vio) · Wayback CDX de dominio: HIT · barrido: 2 (Sonnet) — 2026-10-08
+
+8 documentos en carpeta (2016-2017).
+
+- **CORRIGE la nota anterior** ("cuentas gateadas a accionistas"): el sitio publicó `Cuentas anuales T1819` (4 págs., a 30-jun-2019), `cuentas.pdf` (4 págs.), `Estados_financieros_intermedios` (50 págs.), `Memoria_1718` (49 págs.), `Informe de gestión` 2017/18 y 2018/19, e informes de auditoría 2016/17 y otro sin fecha. Los PDF de 4 págs. parecen ser solo estados primarios (resultado del ejercicio visto por OCR). Confirmar si hay balance y PyG completos.

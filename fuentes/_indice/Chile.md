@@ -24,3 +24,8 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Unión La Calera](../Chile/Unión La Calera.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
 - [Ñublense](../Chile/Ñublense.md) — OTODP, sin EEFF auditado descargable — Último chequeo: 2026-09-12
 - [Notas generales de Chile](../Chile/_notas-generales.md)
+- [Audax Italiano](<../Chile/Audax Italiano.md>) — 2 documentos, años 2008, 2020; sin cargar aún — Último chequeo: 2026-10-08
+- [Palestino](<../Chile/Palestino.md>) — 10 documentos, años 2017-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Santiago Wanderers](<../Chile/Santiago Wanderers.md>) — 2 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08
+- [O'Higgins](<../Chile/O'Higgins.md>) — 3 documentos, años 2008, 2020; sin cargar aún — Último chequeo: 2026-10-08
+- [Cobreloa](<../Chile/Cobreloa.md>) — 2 documentos, años 2007; sin cargar aún — Último chequeo: 2026-10-08

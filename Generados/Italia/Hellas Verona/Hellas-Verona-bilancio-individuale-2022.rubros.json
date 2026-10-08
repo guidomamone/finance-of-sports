@@ -1,0 +1,430 @@
+{
+  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.md",
+  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.pdf",
+  "club": "hellasverona-it",
+  "year": 2022,
+  "generatedAt": "2026-10-08T18:56:45.778Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ricavi da gare",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.696165
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Abbonamenti",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.29878
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Corrispettivi",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.320626
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "a) Contributi in conto esercizio",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.952128
+      ],
+      "glosa": "a) Subvenciones a la explotación"
+    },
+    {
+      "label": "b) Proventi da sponsorizzazioni",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        9.073346
+      ],
+      "glosa": "b) Ingresos por patrocinio"
+    },
+    {
+      "label": "c) Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "c) Ingresos publicitarios"
+    },
+    {
+      "label": "d) Proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.06995
+      ],
+      "glosa": "d) Ingresos comerciales y cánones"
+    },
+    {
+      "label": "e) Proventi da cessioni diritti audiovisivi",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        37.199488
+      ],
+      "glosa": "e) Ingresos por cesión de derechos audiovisuales"
+    },
+    {
+      "label": "f) Ricavi da cessione temporanea prestazione calciatori",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.29
+      ],
+      "glosa": "f) Ingresos por cesión temporal de derechos federativos de jugadores"
+    },
+    {
+      "label": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        23.310496
+      ],
+      "glosa": "g) Plusvalías por enajenación de derechos federativos de jugadores"
+    },
+    {
+      "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+      "lado": "revenue",
+      "page": 7,
+      "section": "nota que desglosa \"h) Altri proventi da trasferimento calciatori\"",
+      "values": [
+        0.2085
+      ],
+      "glosa": "de los cuales primas y/o indemnizaciones activas art. 103, c. 3, NOIF"
+    },
+    {
+      "label": "di cui proventi diversi da trasferimento calciatori",
+      "lado": "revenue",
+      "page": 7,
+      "section": "nota que desglosa \"h) Altri proventi da trasferimento calciatori\"",
+      "values": [
+        1.094565
+      ],
+      "glosa": "de los cuales otros ingresos por transferencias de futbolistas"
+    },
+    {
+      "label": "i) Ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        5.034942
+      ],
+      "glosa": "i) Otros ingresos y rendimientos"
+    },
+    {
+      "label": "Per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.036217
+      ],
+      "glosa": "Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Costi per tesserati",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        1.885
+      ],
+      "glosa": "Gastos de personal federado"
+    },
+    {
+      "label": "Costi per attività sportiva",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        1.049
+      ],
+      "glosa": "Gastos por actividad deportiva"
+    },
+    {
+      "label": "Costi specifici tecnici",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        3.035
+      ],
+      "glosa": "Gastos técnicos específicos"
+    },
+    {
+      "label": "Costi vitto, alloggio, locomozione gare",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        0.461
+      ],
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+    },
+    {
+      "label": "Servizio biglietteria e controllo ingressi",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        0.246
+      ],
+      "glosa": "Servicio de taquilla y control de accesos"
+    },
+    {
+      "label": "Assicurative e previdenziali",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        0.264
+      ],
+      "glosa": "Seguros y previsión social"
+    },
+    {
+      "label": "Amministrative, pubblicitarie e generali",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Per servizi\"",
+      "values": [
+        6.881
+      ],
+      "glosa": "Gastos administrativos, publicitarios y generales"
+    },
+    {
+      "label": "Per godimento di beni di terzi",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.085756
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "a) Salari e stipendi",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        32.804689
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Oneri sociali",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.132719
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) Trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.562555
+      ],
+      "glosa": "c) Indemnización por fin de contrato (TFR)"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.387299
+      ],
+      "glosa": "e) Otros gastos"
+    },
+    {
+      "label": "a) Ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        19.643692
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) Ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.420344
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "c) Altre svalutazioni delle immobilizzazioni",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.012099
+      ],
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
+    },
+    {
+      "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.98679
+      ],
+      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente"
+    },
+    {
+      "label": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.15235
+      ],
+      "glosa": "Variación de existencias de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Accantonamenti per rischi",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Dotaciones a provisiones para riesgos"
+    },
+    {
+      "label": "Altri accantonamenti",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otras dotaciones a provisiones"
+    },
+    {
+      "label": "a) Oneri da organizzazione competizioni",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.486523
+      ],
+      "glosa": "a) Gastos de organización de competiciones"
+    },
+    {
+      "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.951056
+      ],
+      "glosa": "b) Gastos por cesión temporal de derechos federativos de jugadores"
+    },
+    {
+      "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.593586
+      ],
+      "glosa": "c) Pérdidas por enajenación de derechos federativos de futbolistas"
+    },
+    {
+      "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"d) Altri oneri da trasferimento diritti calciatori\"",
+      "values": [
+        1.535685
+      ],
+      "glosa": "de los cuales primas y/o indemnizaciones activas art. 103, c. 3, NOIF"
+    },
+    {
+      "label": "di cui proventi diversi da trasferimento calciatori",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"d) Altri oneri da trasferimento diritti calciatori\"",
+      "values": [
+        2.552867
+      ],
+      "glosa": "de los cuales otros ingresos por transferencias de futbolistas"
+    },
+    {
+      "label": "- Ammende e multe gara",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"e) Altri oneri diversi di gestione\"",
+      "values": [
+        0.05
+      ],
+      "glosa": "- Multas y sanciones disciplinarias de partidos"
+    },
+    {
+      "label": "- Devoluzione e Servizi Lega",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"e) Altri oneri diversi di gestione\"",
+      "values": [
+        1.931
+      ],
+      "glosa": "- Cuotas y servicios de la Liga"
+    },
+    {
+      "label": "- Oneri precedenti esercizi e sopravvenienze passive",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"e) Altri oneri diversi di gestione\"",
+      "values": [
+        0.189
+      ],
+      "glosa": "- Gastos de ejercicios anteriores y pérdidas excepcionales"
+    },
+    {
+      "label": "- Altre spese",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"e) Altri oneri diversi di gestione\"",
+      "values": [
+        0.283
+      ],
+      "glosa": "- Otros gastos"
+    }
+  ]
+}

@@ -32,3 +32,12 @@ Escaneos sin capa de texto.
   Guido quiere confirmarlo directo con el club.
 
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: sitio oficial: parcial (`kaaffa.no`, dominio del club; `kfum-kam.no` no responde) · registro Brønnøysund: agotado (0 depósitos bajo 985243638; solo 2018 y 2019 bajo 970013628) · Wayback CDX de dominio: agotado (sin informes financieros) · búsqueda web: sin novedad · barrido: 2 (Sonnet) — 2026-10-08
+
+- **Sitio oficial**: `kaaffa.no/om-kfum/klubbnyheter/oppdatering-fra-arsmotet` publica la **årsrapport 2025** (16 págs., 58 MB, capa de texto): es narrativa; solo da cifras sueltas: **omsetning NOK 104.422.828 y resultado después de finanzas NOK 14.932.207** ("rekordtall"). No trae resultatregnskap ni balance. Guardada como `kfum-arsrapport-2025-narrativo.pdf` (fuente de contexto, NO alcanza para cargar).
+- `kaaffa.no/sok/...Årsregnskap 2024 KFUM-Kameratene Oslo inkl agentkostnader.pdf` NO es el årsregnskap: es solo el "Vedlegg 1" con los honorarios de agentes 2024 (NOK 658.300 sin IVA). Guardado como `kfum-vedlegg-agenthonorarer-2024.pdf`. Confirma que el årsregnskap 2024 existe, pero se reparte a los socios del årsmøte (Spond / Min side, con login de Idrettens ID), no está público.
+- Las páginas de årsmøte 2024, 2025 y 2026 (`/om-kfum/klubbnyheter/arsmote-<año>`) no traen adjuntos.
+- **Candidato a mail** (`club-outreach`, sección 0.3 de club-sourcing): el documento está CONFIRMADO (la propia årsrapport lo cita y el vedlegg dice "Årsregnskap 2024"), pero no es descargable. Pedir a KFUM-Kameratene Oslo el årsregnskap 2023, 2024 y 2025 completos.

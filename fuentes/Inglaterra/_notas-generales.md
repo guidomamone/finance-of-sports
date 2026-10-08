@@ -176,3 +176,13 @@ Championship, League One y League Two con 5 ejercicios cada uno.
 El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
 
 - Surrey CCC: `surrey-ccc-annual-return-and-accounts-2026.pdf` y `...-2025.pdf` son el MISMO archivo. Uno de los dos años falta (probablemente 2026 todavía no está publicado).
+
+
+## Cuentas pequeñas de Companies House: cuáles traen cuenta de resultados (cribado 2026-10-08)
+
+Cribado de las 1.174 cuentas «small/micro/other/total exemption» ya bajadas de 111 clubes de Inglaterra, Escocia y Gales: **todas son imágenes escaneadas** (`pdftotext` sin texto), así que se pasó Tesseract (130 dpi, págs. 1-8) sobre las **2 cuentas más recientes de cada club** (206 PDF) buscando señales de P&L (`gross profit`, o `turnover` junto a `operating profit/loss`/`comprehensive income`). Es un cribado, no una lectura: «Profit and loss account» como reserva del balance NO cuenta; verificar a mano al transcribir.
+
+- **43 clubes con señal fuerte de cuenta de resultados** (candidatos a transcribir primero): Escocia: Airdrieonians, Albion Rovers, Alloa Athletic, Ayr United, Dundee, Falkirk, Forfar Athletic, Greenock Morton, Hamilton Academical, Kelty Hearts, Queen of the South, Raith Rovers, St Johnstone, Stirling Albion. Gales: Bala Town, Penybont, The New Saints. Inglaterra: Accrington Stanley, Altrincham, Barnet, Boreham Wood, Bradford City, Brentford, Brighton (años 80), Bristol City, Cambridge United, Cheltenham, Colchester, Crawley, Doncaster, Grimsby, Hartlepool, Leeds Rugby, Middlesbrough, Millwall, Newcastle, Oxford United, Rochdale, Stockport, Sunderland, Tamworth, Watford, York City.
+- **68 clubes sin señal fuerte** en esas 2 cuentas (solo balance abreviado, o texto que el OCR no resolvió): no hay P&L evidente; si se quiere agotar, probar otros años del club o `--include-small` en años más viejos (algunos clubes cambian de régimen de cuenta con los años).
+- Los años 1980-1990 de clubes grandes (Liverpool, Man City, Tottenham, etc.) son cuentas históricas escaneadas: el OCR las marca con P&L pero hay que mirar a qué entidad corresponden.
+- Resultado del cribado en `Admin/` no se guarda (scratchpad); se rehace con el script de OCR si hace falta.

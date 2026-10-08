@@ -22,3 +22,9 @@
   si alguno es escaneo sin capa de texto. Chequear con `pdftotext`/`pdffonts` antes de transcribir.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 800108152); clubdeportivolaequidadseguros.com.
 - Último chequeo: 2026-09-22.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 9 ejercicios (2016-2017, 2019-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

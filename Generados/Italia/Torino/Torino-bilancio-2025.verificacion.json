@@ -1,0 +1,222 @@
+{
+ "pdf": "Clubes/Italia/Torino/Torino-bilancio-2025.pdf",
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2025.md",
+ "generado": "2026-10-08T18:56:48.250Z",
+ "estado": "cola",
+ "clubId": "torino-it",
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "83598d3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 134.541; el sitio tiene 134.541397"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 134.541397 en Torino-bilancio-2024.pdf y 134.541 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Altri ricavi\" (4 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: b19 resume ammortamenti, plusvalenze y ricavi de cessione que ya están en b1/b43/b49.",
+  "duda de extraer que no afecta la carga: El bloque b49 no imprime la escala; sus importes coinciden con el estado en miles (L39-L41).",
+  "duda de extraer que no afecta la carga: Diferencia de 1 mil entre estado y nota, atribuible a redondeo."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Altri ricavi",
+   "suma": 12.742,
+   "objetivo": 1.847
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Altri ricavi",
+   "suma": 12.742,
+   "objetivo": 1.847
+  }
+ ],
+ "totales": {
+  "ingresos": 122.5,
+  "gastos": 135.029,
+  "financiero": -2.853,
+  "impuesto": 2.277,
+  "resultadoImpreso": -13.105,
+  "resultadoParaCargar": -13.105,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ricavi da gare nazionali",
+   "lado": "ingreso",
+   "M": 6.921,
+   "pagina": 2,
+   "linea": 27,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Proventi da cessione diritti audiovisivi e ricavi collettivi",
+   "lado": "ingreso",
+   "M": 41.993,
+   "pagina": 2,
+   "linea": 28,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da sponsorizzazioni e pubblicitari",
+   "lado": "ingreso",
+   "M": 13.962,
+   "pagina": 2,
+   "linea": 29,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi commerciali",
+   "lado": "ingreso",
+   "M": 3.178,
+   "pagina": 2,
+   "linea": 30,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pluvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "ingreso",
+   "M": 42.984,
+   "pagina": 2,
+   "linea": 31,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea dei diritti alle prestazioni sportive di calciatori",
+   "lado": "ingreso",
+   "M": 0.72,
+   "pagina": 2,
+   "linea": 32,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Altri ricavi",
+   "lado": "ingreso",
+   "M": 12.742,
+   "pagina": 2,
+   "linea": 33,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per materie prime, sussidiarie e di consumo",
+   "lado": "gasto",
+   "M": 1.719,
+   "pagina": 2,
+   "linea": 35,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per servizi",
+   "lado": "gasto",
+   "M": 18.723,
+   "pagina": 2,
+   "linea": 36,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il godimento beni di terzi",
+   "lado": "gasto",
+   "M": 1.772,
+   "pagina": 2,
+   "linea": 37,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spese per il personale",
+   "lado": "gasto",
+   "M": 68.901,
+   "pagina": 2,
+   "linea": 38,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Costi da acquisizione temporanea dei diritti alle prestazioni sportive di calciatori",
+   "lado": "gasto",
+   "M": 2.33,
+   "pagina": 2,
+   "linea": 39,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Minuvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "gasto",
+   "M": 0.125,
+   "pagina": 2,
+   "linea": 40,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 2.441,
+   "pagina": 2,
+   "linea": 41,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ammortamenti, accantonamenti e svalutazioni",
+   "lado": "gasto",
+   "M": 39.018,
+   "pagina": 2,
+   "linea": 44,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Gestione finanziaria",
+   "M": -2.853,
+   "linea": 46
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte sul reddito",
+   "M": 2.277,
+   "linea": 48
+  }
+ ]
+}

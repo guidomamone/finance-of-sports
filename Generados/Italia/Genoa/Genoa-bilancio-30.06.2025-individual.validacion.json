@@ -1,0 +1,26 @@
+{
+ "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf",
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md",
+ "mdSha1": "24bb8c0698f68017de3fdcacfee7bcaa7af15b35",
+ "modo": "digital",
+ "motivoModo": "22 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 1166015 vs 1166016, 137772006 vs 137772005, 2280076 vs 2280077; 144 números del .md no están en el PDF (tolerancia 41)",
+ "generado": "2026-10-08T17:26:46.404Z",
+ "fuentes": {
+  "12": "gemini",
+  "13": "gemini",
+  "89": "pdftotext",
+  "90": "pdftotext",
+  "92": "pdftotext",
+  "93": "pdftotext",
+  "94": "pdftotext",
+  "95": "pdftotext",
+  "97": "pdftotext",
+  "98": "pdftotext"
+ },
+ "hibridas": [
+  12,
+  13
+ ],
+ "confirmados": 331,
+ "noConfirmados": []
+}

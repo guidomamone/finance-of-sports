@@ -36,3 +36,11 @@
 - Pendiente: no se buscó separadamente el sitio oficial del club para complementar (no hace falta,
   DART ya cubre 2 ejercicios completos con cifras auditadas).
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: DART: agotado (confirmado otra vez: código de empresa `00699354`, ver abajo) · sitio oficial: agotado (`hyundai-motorsfc.com`; el CDX de dominio completo solo da la revista del club "Dakgong", cero informes financieros) · barrido: 2 (Sonnet) — 2026-10-08
+
+- **Código DART** de la entidad: `00699354` (전북현대모터스에프씨, 사업자번호 418-81-27460, 업종 스포츠 클럽 운영업). Sirve para ir directo a la ficha de la empresa sin pasar por el buscador por nombre.
+- **Gotcha de herramienta**: el buscador de DART (`dsab007/detailSearch.ax`) por `curl` o por `fetch()` desde la página devuelve "조회 결과가 없습니다" incluso para Samsung Electronics. Llamarlo así no sirve. El nombre solo encuentra a la empresa (tabla "회사명 찾기" con el checkbox y `hiddenCikCD1`), pero la lista de informes no salió con ningún `publicType` probado (F, A, B, I). La vía que ya funcionó en la primera sesión fue el Browser pane con la UI real.
+- 2023 y anteriores: sigue sin haber informe de auditoría público de antes de 2024 (ver arriba: 2 ejercicios).

@@ -24,3 +24,4 @@ de la HNS (que exige publicar los mismos formularios F.01/F.02 en los 10 sitios)
 - [Varaždin](<../Croacia/Varaždin.md>) — 5 ejercicios reales (2021-2025; 2021-2024 de Wayback, informes del auditor escaneados), 2019 truncado y 2020 sin encontrar, sin cargar aún — Último chequeo: 2026-10-03
 - [Vukovar 1991](<../Croacia/Vukovar 1991.md>) — 1 ejercicio real (2025, recién ascendido), Wayback sin ninguna captura del dominio, sin cargar aún — Último chequeo: 2026-10-03
 - [Notas generales de Croacia](<../Croacia/_notas-generales.md>)
+- [Hrvatski dragovoljac](<../Croacia/Hrvatski dragovoljac.md>) — 1 documentos, años 2025; sin cargar aún — Último chequeo: 2026-10-08

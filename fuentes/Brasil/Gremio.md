@@ -25,3 +25,7 @@
 - Más para atrás en el mismo directorio, no bajado: `DF-2016-Gremio-Publicacao1.pdf` (2016/2015), `Demo-contabil-2009..2014-GFPA.pdf`, balancetes trimestrales 2015-2022, orçamentos.
 - **Falta**: ejercicio 2025 standalone (prensa: auditoría Baker Tilly, dívida R$935 mi, marzo 2026) — el PDF no aparece indexado; ángulo pendiente: leerlo desde una sesión con navegador real que pase el 403 de `/documentos/` o desde `conselho.gremio.net`. 2023 existe dentro del comparativo ya en disco.
 - Ejercicios en disco ahora: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

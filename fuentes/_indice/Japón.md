@@ -24,3 +24,6 @@ región confirmada como la más difícil del proyecto hasta ahora (MLS single-en
 mayormente privada, sin tradición de CMF/Supersociedades en Centroamérica), pero con un hallazgo real
 inesperado en México (Club América vía Ollamani, S.A.B., cotizante en BMV). Ver
 `.claude/skills/club-sourcing/SKILL.md` sección 7 para la metodología completa.
+- [Avispa Fukuoka](<../Japón/Avispa Fukuoka.md>) — 2 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08
+- [_WorldFootball-documentos-de-liga](<../Japón/_WorldFootball-documentos-de-liga.md>) — 4 PDF de WorldFootball (temporadas 2024-2025, 2025-2026), sin cargar aún — Último chequeo: 2026-10-08
+- [Urawa Reds](<../Japón/Urawa Reds.md>) — 4 PDF de WorldFootball (temporadas 2024-2025, 2025-2026), sin cargar aún — Último chequeo: 2026-10-08

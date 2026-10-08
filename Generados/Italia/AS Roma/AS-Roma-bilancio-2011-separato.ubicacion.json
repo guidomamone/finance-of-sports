@@ -1,0 +1,774 @@
+{
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.pdf",
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.md",
+ "mdSha1": "7331bf27c9066b6d00176d5adff93579f7f6d9a7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T16:35:44.191Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    88,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    107,
+    116
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    136,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    268,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    322,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    369,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    385,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 22,
+   "lineas": [
+    510,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 23,
+   "lineas": [
+    539,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    601,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 28,
+   "lineas": [
+    671,
+    693
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 30,
+   "lineas": [
+    743,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 30,
+   "lineas": [
+    757,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 31,
+   "lineas": [
+    789,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 32,
+   "lineas": [
+    820,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 33,
+   "lineas": [
+    859,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 33,
+   "lineas": [
+    873,
+    875
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 34,
+   "lineas": [
+    893,
+    901
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 42,
+   "lineas": [
+    1090,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 67,
+   "lineas": [
+    1711,
+    1733
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 72,
+   "lineas": [
+    1826,
+    1854
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 73,
+   "lineas": [
+    1862,
+    1892
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 74,
+   "lineas": [
+    1902,
+    1931
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 75,
+   "lineas": [
+    1939,
+    1947
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 75,
+   "lineas": [
+    1953,
+    1983
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 75,
+   "lineas": [
+    1987,
+    1990
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 76,
+   "lineas": [
+    2004,
+    2031
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 77,
+   "lineas": [
+    2045,
+    2074
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 78,
+   "lineas": [
+    2088,
+    2117
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 84,
+   "lineas": [
+    2257,
+    2263
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 94,
+   "lineas": [
+    2541,
+    2545
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 95,
+   "lineas": [
+    2563,
+    2601
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 97,
+   "lineas": [
+    2638,
+    2643
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 97,
+   "lineas": [
+    2651,
+    2655
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 98,
+   "lineas": [
+    2681,
+    2690
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 99,
+   "lineas": [
+    2714,
+    2723
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 100,
+   "lineas": [
+    2753,
+    2762
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 101,
+   "lineas": [
+    2772,
+    2788
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 101,
+   "lineas": [
+    2798,
+    2804
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 103,
+   "lineas": [
+    2849,
+    2857
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 104,
+   "lineas": [
+    2875,
+    2883
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 104,
+   "lineas": [
+    2891,
+    2903
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 106,
+   "lineas": [
+    2945,
+    2953
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 108,
+   "lineas": [
+    2993,
+    3001
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 109,
+   "lineas": [
+    3023,
+    3033
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 109,
+   "lineas": [
+    3051,
+    3059
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 110,
+   "lineas": [
+    3073,
+    3079
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 110,
+   "lineas": [
+    3091,
+    3099
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 113,
+   "lineas": [
+    3171,
+    3178
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 113,
+   "lineas": [
+    3184,
+    3189
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 114,
+   "lineas": [
+    3201,
+    3223
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 114,
+   "lineas": [
+    3229,
+    3238
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 115,
+   "lineas": [
+    3260,
+    3267
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 115,
+   "lineas": [
+    3271,
+    3273
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 117,
+   "lineas": [
+    3308,
+    3315
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 117,
+   "lineas": [
+    3325,
+    3339
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 118,
+   "lineas": [
+    3358,
+    3367
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 120,
+   "lineas": [
+    3395,
+    3404
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 120,
+   "lineas": [
+    3412,
+    3424
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 121,
+   "lineas": [
+    3434,
+    3440
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 122,
+   "lineas": [
+    3462,
+    3467
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 122,
+   "lineas": [
+    3473,
+    3486
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 123,
+   "lineas": [
+    3496,
+    3505
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 124,
+   "lineas": [
+    3521,
+    3535
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 125,
+   "lineas": [
+    3557,
+    3563
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 125,
+   "lineas": [
+    3573,
+    3582
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 126,
+   "lineas": [
+    3613,
+    3629
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 128,
+   "lineas": [
+    3670,
+    3678
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 129,
+   "lineas": [
+    3688,
+    3699
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 129,
+   "lineas": [
+    3707,
+    3717
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 130,
+   "lineas": [
+    3727,
+    3742
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 131,
+   "lineas": [
+    3764,
+    3772
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 131,
+   "lineas": [
+    3776,
+    3786
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 131,
+   "lineas": [
+    3790,
+    3797
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 132,
+   "lineas": [
+    3811,
+    3817
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 132,
+   "lineas": [
+    3825,
+    3830
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 133,
+   "lineas": [
+    3854,
+    3869
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 136,
+   "lineas": [
+    3926,
+    3954
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 139,
+   "lineas": [
+    4025,
+    4028
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 140,
+   "lineas": [
+    4043,
+    4046
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 141,
+   "lineas": [
+    4058,
+    4078
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 141,
+   "lineas": [
+    4080,
+    4096
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 141,
+   "lineas": [
+    4098,
+    4118
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 142,
+   "lineas": [
+    4127,
+    4132
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 142,
+   "lineas": [
+    4138,
+    4141
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 143,
+   "lineas": [
+    4151,
+    4174
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 144,
+   "lineas": [
+    4182,
+    4188
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 144,
+   "lineas": [
+    4190,
+    4198
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 145,
+   "lineas": [
+    4206,
+    4249
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b23"
+ ],
+ "notas_ingresos": [
+  "b59",
+  "b61",
+  "b62",
+  "b64",
+  "b72",
+  "b77"
+ ],
+ "notas_gastos": [
+  "b65",
+  "b66",
+  "b67",
+  "b68",
+  "b71",
+  "b76"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Valori in Euro (encabezado del Conto Economico Complessivo, pág. 74)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30 06 2011",
+ "columna_anterior": "30 06 2010",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado separado de A.S. Roma S.p.A. (b23) aunque el club tenga cargados años en perímetro consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es el bilancio separato; no contiene conto economico consolidado del gruppo.",
+   "bloques": [
+    "b23"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro 'Conto economico con parti correlate' (b29) por duplicar b23?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b29 repite el estado con columnas 'di cui con parti correlate'.",
+   "bloques": [
+    "b29",
+    "b23"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento solo con estado separado (individual) de AS Roma S.p.A.; estado en euros (b23), notas en miles de euros. b29 es el mismo estado con detalle de partes relacionadas. b4/b83 son el CE de Soccer SAS (participada) y b78 de Compagnia Italpetroli: excluidos. b5/b58 son resúmenes de la relazione. b73-b75 son detalle por jugador, excluidos."
+}

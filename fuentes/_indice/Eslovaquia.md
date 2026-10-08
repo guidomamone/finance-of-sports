@@ -20,3 +20,8 @@ registro, están en [`fuentes/README.md`](../README.md).
 - [Zemplin Michalovce](<../Eslovaquia/Zemplin Michalovce.md>) — 7 ejercicios (2019-2025, sin auditor) en disco, sin cargar — Último chequeo: 2026-10-03
 - [KFC Komarno](<../Eslovaquia/KFC Komarno.md>) — 4 ejercicios (2022-2025; cambio de forma jurídica 2024) en disco, sin cargar — Último chequeo: 2026-10-03
 - [Tatran Presov](<../Eslovaquia/Tatran Presov.md>) — 7 ejercicios (2019-2025, sin auditor) en disco, sin cargar — Último chequeo: 2026-10-03
+- [Dukla Banska Bystrica](<../Eslovaquia/Dukla Banska Bystrica.md>) — 13 documentos, años 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [MFK Skalica](<../Eslovaquia/MFK Skalica.md>) — 37 documentos, años 2015-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Kosice](<../Eslovaquia/FC Kosice.md>) — 25 documentos, años 2018-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [FC Petrzalka](<../Eslovaquia/FC Petrzalka.md>) — 11 documentos, años 2013, 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [MFK Tatran Liptovsky Mikulas](<../Eslovaquia/MFK Tatran Liptovsky Mikulas.md>) — 18 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08

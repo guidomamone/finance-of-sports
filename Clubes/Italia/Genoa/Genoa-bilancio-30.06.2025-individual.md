@@ -932,90 +932,83 @@ d) verso altri
 
 --- pág. 22 ---
 
-Rendiconto Finanziario al 30/06/2025
+[Logo Genoa Cricket and Football Club]
 
-|  AGGREGATI | RENDICONTO Valori e tlettivi per il periodo 31/07/2024 - 30/06/2025 | RENDICONTO Valori e tlettivi per il periodo 31/07/2024 - 30/06/2025  |
-| --- | --- | --- |
-|  A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto) |  |   |
-|  UTILE (PERDITA) DI PERIODO | -33.301.181 | -38.831.182  |
-|  Imposte sul reddito | 299.043 | 2.253.416  |
-|  Interessi passivi (iattivi) | 5.586.783 | 4.788.914  |
-|  1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvolenze da cessione | -27.415.355 | -31.788.853  |
-|  Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN |  |   |
-|  Accantonamento ai fondi | 1.350.000 | 0  |
-|  Ammortamenti delle immobilizzazioni | 53.104.994 | 37.127.721  |
-|  Svalutazioni per perdita durevoli di valore | 0 | 25.377.685  |
-|  Totale rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circulante netto | 54.454.994 | 62.505.405  |
-|  2) Flusso finanziario prima delle variazioni del CCN | 27.039.638 | 30.716.553  |
-|  Variazioni del CCN |  |   |
-|  Decremento / (Incremento) delle rimanenze | -218.018 | 112.862  |
-|  Decremento / (Incremento) crediti vs clienti | -1.156.702 | 4.360.577  |
-|  Incremento / (Decremento) debiti vs fornitori | -459.077 | -2.520.964  |
-|  Decremento / (Incremento) ratei risconti attivi | -3.149.253 | 4.127.132  |
-|  Incremento / (Decremento) ratei risconti passivi | -11.043.060 | 14.031.853  |
-|  Totale parziale | -16.026.110 | 20.111.260  |
-|  Se crediti - Altri decrementi / (Altri Incrementi) del CCN |  |   |
-|  Crediti vs controllanti, controllate e collegate | 2.590.080 | -4.531.973  |
-|  Debiti vs controllanti, controllate e collegate | 235.277 | -11.255.075  |
-|  Crediti tributari | -638.343 | -21.664  |
-|  Imposte anticipate entro | 0 | 0  |
-|  Crediti vs altri entro | -13.322.351 | -52.307.060  |
-|  Clienti c/ anticipi | 0 | 0  |
-|  Debiti tributari | -1.199.467 | -176.587  |
-|  Debiti previdenziali | -915.746 | -548.200  |
-|  Debiti verso altri finanziatori | -9.037.493 | 34.644.532  |
-|  Debiti vs soci per finanziamenti | 0 | -1.300.000  |
-|  Debiti diversi | -12.922.594 | -6.258.213  |
-|  Totale altre variazioni CCN | -35.210.637 | -41.754.239  |
-|  3) Flusso finanziario dopo variazioni CCN | -24.197.109 | 9.073.574  |
-|  Altre rettifiche (trib e prevoltre es) | -3.217.644 | -1.318.313  |
-|  Interessi incassati / (pagati) | -5.689.997 | -4.788.914  |
-|  (Imposte sul reddito pagale) | -299.043 | -2.253.416  |
-|  Altri incassi / (pagamenti) (fr) | 143.183 | 54.743  |
-|  Totale altre rettifiche | -9.054.501 | -9.305.900  |
-|  FLUSSO FINANZIARIO DELL'ATTIVITA' OPERATIVA (A) | -33.251.610 | 767.675  |
-|  B) Flusso Finanziario attività investimento |  |   |
-|  Imm.oni materiali (investimenti) | -4.673.474 | -8.375  |
-|  Imm.oni immateriali (investimenti) | 388.132 | -55.845.367  |
-|  Crediti oltre esercizio | 2.872.511 | 3.459.588  |
-|  Imposte anticipate oltre | 0 | 0  |
-|  FLUSSO DI CASSA GENERATO DALL'ATTIVITÀ DI INVESTIMENTO (B) | -1.412.831 | -52.403.154  |
-|  C) Flusso Finanziario da attività di finanziamento |  |   |
-|  Incremento / (Decremento) debiti verso banche a breve | -8.573.672 | 3.765.967  |
-|  Accensione Finanziamenti | -7.892.808 | -5.121.243  |
-|  Debiti Diversi oltre l'esercizio (anche controlli oltre) | 8.332.200 | 29.426.518  |
-|  Mezzi propri | 40.300.000 | 27.197.121  |
-|  FLUSSO FINANZIARIO DELL'ATTIVITA' DI FINANZIAMENTO (C) | 32.165.720 | 55.208.303  |
-|  INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (A+-B+-C)) | -2.498.721 | 3.632.884  |
-|  Disponibilità liquide all'inizio del periodo (I) | 4.778.797 | 1.145.913  |
-|  Disponibilità liquide alla fine del periodo (L) | 2.280.077 | 4.778.797  |
-|  SALDO A PAREGGIO (M+ L - I) | -2.498.721 | 3.632.884  |
+**Rendiconto Finanziario al 30/06/2025**
+
+AGGREGATI
+
+| | RENDICONTO Valori effettivi per il periodo 01/07/2024 - 30/06/2025 | RENDICONTO Valori effettivi per il periodo 01/01/2024 - 30/06/2024 |
+|---|---:|---:|
+| A) Flussi Finanziari derivanti dall'attività operativa (metodo indiretto) | | |
+| UTILE (PERDITA) DI PERIODO | -33.301.181 | -38.831.182 |
+| Imposte sul reddito | 299.043 | 2.253.416 |
+| Interessi passivi /(attivi) | 5.586.783 | 4.788.914 |
+| 1) Utile (perdita) dell'esercizio prima delle imposte sul reddito, interessi, dividendi e plus/minusvalenze da cessione | -27.415.355 | -31.788.853 |
+| Rettifiche per elementi non monetari che non hanno avuto contropartita nel CCN | | |
+| Accantonamento ai fondi | 1.350.000 | 0 |
+| Ammortamenti delle immobilizzazioni | 53.104.994 | 37.127.721 |
+| Svalutazioni per perdite durevoli di valore | 0 | 25.377.685 |
+| Totale rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto | 54.454.994 | 62.505.405 |
+| 2) Flusso finanziario prima delle variazioni del CCN | 27.039.638 | 30.716.553 |
+| Variazioni del CCN | | |
+| Decremento / (incremento) delle rimanenze | -218.018 | 112.862 |
+| Decremento / (incremento) crediti vs clienti | -1.156.702 | 4.360.577 |
+| Incremento / (Decremento) debiti vs fornitori | -459.077 | -2.520.964 |
+| Decremento / (Incremento) ratei risconti attivi | -3.149.253 | 4.127.132 |
+| Incremento / (Decremento) ratei risconti passivi | -11.043.060 | 14.031.653 |
+| Totale parziale | -16.026.110 | 20.111.260 |
+| Se crediti - Altri decrementi / (Altri incrementi) del CCN | | |
+| Crediti vs controllanti, controllate e collegate | 2.590.080 | -4.531.973 |
+| Debiti vs controllanti, controllate e collegate | 235.277 | -11.255.075 |
+| Crediti tributari | -638.343 | -21.664 |
+| Imposte anticipate entro | 0 | 0 |
+| Crediti vs altri entro | -13.322.351 | -52.307.060 |
+| Clienti c/ anticipi | 0 | 0 |
+| Debiti tributari | -1.199.467 | -176.587 |
+| Debiti previdenziali | -915.746 | -548.200 |
+| Debiti verso altri finanziatori | -9.037.493 | 34.644.532 |
+| Debiti vs soci per finanziamenti | 0 | -1.300.000 |
+| Debiti diversi | -12.922.594 | -6.258.213 |
+| Totale altre variazioni CCN | -35.210.637 | -41.754.239 |
+| 3) Flusso finanziario dopo variazioni CCN | -24.197.109 | 9.073.574 |
+| Altre rettifiche (trib e prev oltre es) | -3.217.644 | -1.318.313 |
+| Interessi incassati / (pagati) | -5.680.997 | -4.788.914 |
+| (Imposte sul reddito pagate) | -299.043 | -2.253.416 |
+| Altri incassi / (pagamenti) (tfr) | 143.183 | 54.743 |
+| Totale altre rettifiche | -9.054.501 | -8.305.900 |
+| FLUSSO FINANZIARIO DELL'ATTIVITA' OPERATIVA (A) | -33.251.610 | 767.675 |
+| B) Flusso Finanziario attività investimento | | |
+| Imm.oni materiali (investimenti) | -4.673.474 | -8.375 |
+| Imm.oni immateriali (investimenti) | 388.132 | -55.845.367 |
+| Crediti oltre esercizio | 2.872.511 | 3.450.588 |
+| Imposte anticipate oltre | 0 | 0 |
+| FLUSSO DI CASSA GENERATO DALL'ATTIVITÁ DI INVESTIMENTO (B) | -1.412.831 | -52.403.154 |
+| C) Flusso Finanziario da attività di finanziamento | | |
+| Incremento / (Decremento) debiti verso banche a breve | -8.573.672 | 3.765.967 |
+| Accensione Finanziamenti | -7.892.808 | -5.121.243 |
+| Debiti Diversi oltre l'esercizio (anche controll oltre) | 8.332.200 | 29.426.518 |
+| Mezzi propri | 40.300.000 | 27.197.121 |
+| FLUSSO FINANZIARIO DELL'ATTIVITA' DI FINANZIAMENTO( C ) | 32.165.720 | 55.268.363 |
+| INCREMENTO (DECREMENTO) DISPONIBILITA' LIQUIDE (A+-B+-C)) | -2.498.721 | 3.632.884 |
+| Disponibilità liquide all'inizio del periodo ( I ) | 4.778.797 | 1.145.913 |
+| Disponibilità liquide alla fine del periodo ( L ) | 2.280.077 | 4.778.797 |
+| SALDO A PAREGGIO (M= L - I) | -2.498.721 | 3.632.884 |
 
 Il Legale Rappresentante
+Ing Andres Blazquez Ceballos [firma manoscritta]
 
-Ing. Andres Bincquez Ceballe
+Genova, 29 Settembre 2025
 
-Genova, 28 Settembre 2025
+GENOA CRICKET AND FOOTBALL CLUB
 
-GENOA
+Via Ronchi, 67 — 16155 Genova Pegli
 
-GREAT AND FOOTBALL CLUB
+Tel. +39 010 612831 — Fax +39 010 6128345
 
-Via Ronchi, 67
+info@genoacfc.it — genoacfc.it
 
-10155 Genova Pogli
-
-Tel. +39 010 612831
-
-Fax +39 010 6128345
-
-info@genoacfc.it
-
-genoacfc.it
-
-C.F. 80033270101
-
-P.IVA 00973790108
+C.F. 80033270101 — P.IVA 00973790108
 
 Mat. 20980
 
@@ -3067,53 +3060,53 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
 --- pág. 86 ---
 
-**GENOA**^{}[] CRICKET AND FOOTBALL CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-# **Debito Tributario**
+**Debito Tributario**
 
-|  Natura del debito | Descrizione | Anno | Saldo al 30/06/2025 | Saldo al 30/06/2024 | Delta  |
-| --- | --- | --- | --- | --- | --- |
-|  Irpef dipendenti | Irpef dipendenti |  | (632.063) | 736.721 | (1.368.784)  |
-|  Irpef tesserati | Irpef tesserati |  | 4.777.644 | 3.113.614 | 1.664.030  |
-|  Ritenute | Ritenute 2021 | 2021 | 4.606.030 | 6.448.442 | (1.842.412)  |
-|  Irap | Irap corrente | 30.06.2024 | 596.009 | 2.566.842 | (1.970.833)  |
-|  Imposta comunale |  |  | - | 29.201 |   |
-|  Cartella Equitalia | Cartella Equitalia |  | 10.946 | - | 10.946  |
-|  Ritenute lavoratori autonomi | Ritenute lavoratori autonomi |  | 1.209.266 | 1.059.632 | 149.634  |
-|  Iva | Iva corrente | 30.06.2024 | 2.031.507 | 1.056.675 | 974.832  |
-|  Dilazione transazione fiscale |  |  | 23.016.259 | 25.690.233 | (2.673.974)  |
-|  **Totale** |  |  | **35.615.597** | **40.701.360** | **(5.056.562)**  |
+| Natura del debito | Descrizione | Anno | Saldo al 30/06/2025 | Saldo al 30/06/2024 | Delta |
+|---|---|---|---|---|---|
+| Irpef dipendenti | Irpef dipendenti | | (632.063) | 736.721 | (1.368.784) |
+| Irpef tesserati | Irpef tesserati | | 4.777.644 | 3.113.614 | 1.664.030 |
+| Ritenute | Ritenute 2021 | 2021 | 4.606.030 | 6.448.442 | (1.842.412) |
+| Irap | Irap corrente | 30.06.2024 | 596.009 | 2.566.842 | (1.970.833) |
+| Imposta comunale | | | - | 29.201 | |
+| Cartella Equitalia | Cartella Equitalia | | 10.946 | - | 10.946 |
+| Ritenute lavoratori autonomi | Ritenute lavoratori autonomi | | 1.209.266 | 1.059.632 | 149.634 |
+| Iva | Iva corrente | 30.06.2024 | 2.031.507 | 1.056.675 | 974.832 |
+| Dilazione transazione fiscale | | | 23.016.259 | 25.690.233 | (2.673.974) |
+| **Totale** | | | **35.615.597** | **40.701.360** | **(5.056.562)** |
 
-# **Debiti previdenziali**
+**Debiti previdenziali**
 
 Al 30 giugno 2025 ed al 30 giugno 2024 ammontano rispettivamente a Euro 2,8 milioni e Euro 4,2 milioni. I Debiti di natura previdenziale nel 2024 si compongono come segue:
 
-|  Debiti Previdenziali | Saldo al 30/06/2025  |
-| --- | --- |
-|  **INPS** |   |
-|  INPS | 2.149.925  |
-|  **INAIL** |   |
-|  INAIL | 94.961  |
-|  **ALTRI DEBITI** |   |
-|  PREVINDAI | (2.859)  |
-|  INPGI | (38.790)  |
-|  FONDO EST | 10.097  |
-|  CASAGIT | 665  |
-|  FASI | 1.436  |
-|  DEBITI ALTRI FONDI | 383.860  |
-|  **Totale (EUR)** | **2.599.294**  |
+| Debiti Previdenziali | Saldo al 30/06/2025 |
+|---|---|
+| **INPS** | |
+| INPS | 2.149.925 |
+| **INAIL** | |
+| INAIL | 94.961 |
+| **ALTRI DEBITI** | |
+| PREVINDAI | (2.859) |
+| INPGI | (38.790) |
+| FONDO EST | 10.097 |
+| CASAGIT | 665 |
+| FASI | 1.436 |
+| DEBITI ALTRI FONDI | 383.860 |
+| **Totale (EUR)** | **2.599.294** |
 
-Le principali categorie dei debiti verso l’INPS sono dettagliate come segue:
+Le principali categorie dei debiti verso l'INPS sono dettagliate come segue:
 
-|  Debiti inps  |   |
-| --- | --- |
-|  Natura del debito | Saldo al 30/06/2025  |
-|  INPS Dipendenti | 291.577  |
-|  INPS Tesserati | 105.310  |
-|  INPS Rateizzato | 40  |
-|  **Totale (EUR)** | **396.926**  |
+| Debiti inps | |
+|---|---|
+| Natura del debito | Saldo al 30/06/2025 |
+| INPS Dipendenti | 291.577 |
+| INPS Tesserati | 105.310 |
+| INPS Rateizzato | 40 |
+| **Totale (EUR)** | **396.926** |
+
+37
 
 NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
@@ -3588,31 +3581,30 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
 --- pág. 99 ---
 
-**GENOA**^{}[] CRICKET AND FOOTBALL CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-# **Fiscalità differita (art. 2427, punto 14 del Codice Civile)**
+**Fiscalità differita (art. 2427, punto 14 del Codice Civile)**
 
 In aggiunta a quanto già riportato in commento alla sezione dedicata alle imposte anticipate e ai crediti da consolidato fiscale, le imposte differite sono state calcolate tenendo conto dell'ammontare di tutte le differenze temporanee generate dall'applicazione di norme fiscali e applicando le aliquote in vigore al momento in cui tali differenze sono sorte.
 
 Le attività per imposte anticipate sono state rilevate in quanto esiste la ragionevole certezza a livello di gruppo dell'esistenza negli esercizi successivi di un reddito imponibile che possa beneficiare dell'utilizzo delle perdite fiscali pregresse e generate nell'anno.
 
-# **Informativa sulle perdite fiscali**
+**Informativa sulle perdite fiscali**
 
 Si riporta di seguito il dettaglio aggiornato delle perdite fiscali totali e di quelle che si ritiene ragionevolmente recuperabili nei prossimi cinque anni.
 
-|  *(Importi in Euro)* | Esercizio corrente |   |   | Esercizio precedente  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |  Ammontare | Aliquota fiscale | Imposte anticipate rilevate | Ammontare | Aliquota fiscale | Imposte anticipate rilevate  |
-|  **Perdite fiscali** |  |  |  |  |  |   |
-|  dell'esercizio | 51.377.219 |  |  | 15.262.386 |  |   |
-|  di esercizi precedenti (post consolidato fiscale) | 96.665.402 |  |  | 81.403.016 |  |   |
-|  di esercizi precedenti (ante consolidato fiscale) | 24.781.111 |  |  | 24.781.111 |  |   |
-|  Totale perdite fiscali | 172.823.732 |  |  | 121.446.513 |  |   |
-|  Perdite fiscali a nuovo recuperabili con ragionevole certezza | 57.916.667 | 24% | 13.900.000 | 57.916.667 | 24% | 13.900.000  |
+(Importi in Euro)
 
-# **Riconciliazione imposte - IRES**
+| | Esercizio corrente: Ammontare | Esercizio corrente: Aliquota fiscale | Esercizio corrente: Imposte anticipate rilevate | Esercizio precedente: Ammontare | Esercizio precedente: Aliquota fiscale | Esercizio precedente: Imposte anticipate rilevate |
+|---|---|---|---|---|---|---|
+| **Perdite fiscali** | | | | | | |
+| dell'esercizio | 51.377.219 | | | 15.262.386 | | |
+| di esercizi precedenti (post consolidato fiscale) | 96.665.402 | | | 81.403.016 | | |
+| di esercizi precedenti (ante consolidato fiscale) | 24.781.111 | | | 24.781.111 | | |
+| Totale perdite fiscali | 172.823.732 | | | 121.446.513 | | |
+| Perdite fiscali a nuovo recuperabili con ragionevole certezza | 57.916.667 | 24% | 13.900.000 | 57.916.667 | 24% | 13.900.000 |
+
+**Riconciliazione imposte - IRES**
 
 Si riporta un prospetto contenente le informazioni richieste dal principio contabile n. 25, riguardanti la riconciliazione tra l'onere fiscale evidenziato in Bilancio e l'onere fiscale teorico.
 
@@ -3622,43 +3614,42 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
 --- pág. 100 ---
 
-**GENOA**^{}[] CRICKET AND FOOTBALL CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-# **Riconciliazione tra onere fiscale corrente e l'onere fiscale teorico (IRES)**
+**Riconciliazione tra onere fiscale corrente e l'onere fiscale teorico (IRES)**
 
-|  **Risultato prima delle imposte** | **(33.002.138)**  |
-| --- | --- |
-|  Onere fiscale teorico (aliquota 24%) |   |
-|  **Differenze temporanee imponibili in esercizi successivi** |   |
-|  **Totale** | **0**  |
-|  **Differenze temporanee deducibili in esercizi successivi** |   |
-|  Svalutazioni e accantonamenti indeducibili in tutto o in parte | 0  |
-|  **Totale** | **0**  |
-|  **Rigiro delle differenze temporanee da esercizi precedenti** |   |
-|  interessi passivi indeducibili | 0  |
-|  fondo rischi e oneri | 0  |
-|  Svalutazione Minuovolenza realizzata | (25.377.685)  |
-|  compense amm non deducibili ex. precedenti | (50.000)  |
-|  **Totale** | **(25.427.685)**  |
-|  **Differenze che non si riverseranno negli esercizi successivi** |   |
-|  Spese per automezzi | 274.050  |
-|  Spese vitto e alloggio e di rappresentanza | 384.420  |
-|  Spese di telefonia | 3.904  |
-|  spasioni e interessi reinvestimento | 597.280  |
-|  liberalità indeducibili | 9.629  |
-|  costi vari indezi - omaggi | 2.154  |
-|  multe ammende e spasioni | 39.598  |
-|  oneri esercizi precedenti | 836.968  |
-|  compense amm non deducibili | 36.000  |
-|  interessi pass indezi | 4.821.988  |
-|  Costi non deducibili | 45.612  |
-|  **Totale** | **7.052.604**  |
-|  **Imponibile fiscale** | **(51.377.219)**  |
-|  Imposte correnti sul reddito dell'esercizio | 0  |
+| | |
+|---|---|
+| **Risultato prima delle imposte** | (33.002.138) |
+| Onere fiscale teorico (aliquota 24%) | |
+| **Differenze temporanee imponibili in esercizi successivi** | |
+| **Totale** | 0 |
+| **Differenze temporanee deducibili in esercizi successivi** | |
+| Svalutazioni e accantonamenti indeducibili in tutto o in parte | 0 |
+| **Totale** | 0 |
+| **Rigiro delle differenze temporanee da esercizi precedenti** | |
+| Interessi passivi indeducibili | 0 |
+| fondo rischi e oneri | 0 |
+| Svalutazione-Minusvalenza realizzato | (25.377.685) |
+| compensi amm non deducibili es. precedenti | (50.000) |
+| **Totale** | **(25.427.685)** |
+| **Differenze che non si riverseranno negli esercizi successivi** | |
+| Spese per automezzi | 274.050 |
+| Spese vitto e alloggio e di rappresentanza | 384.420 |
+| Spese di telefonia | 3.904 |
+| sanzioni e interessi ravvedimento | 597.280 |
+| liberalità indeducibili | 9.629 |
+| costi vari inded - omaggi | 3.154 |
+| multe ammende e sanzioni | 39.598 |
+| oneri esercizi precedenti | 836.968 |
+| compensi amm non deducibili | 36.000 |
+| interessi pass inded. | 4.821.988 |
+| Costi non deducibili | 45.612 |
+| **Totale** | **7.052.604** |
+| **Imponibile fiscale** | (51.377.219) |
+| Imposte correnti sul reddito dell'esercizio | 0 |
 
-# **Riconciliazione imposte - IRAP**
+**Riconciliazione imposte - IRAP**
 
 Si riporta un prospetto contenente i dati richiesti dal principio contabile n. 25, riguardanti le informazioni che consentono di effettuare la riconciliazione tra l'onere fiscale effettivo di Bilancio e l'aliquota fiscale teorica.
 
@@ -3668,48 +3659,47 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
 --- pág. 101 ---
 
-**GENOA**^{}[] CRICKET AND FOOTBALL CLUB
-
 GENOA CRICKET AND FOOTBALL CLUB S.P.A.
 
-# **Determinazione dell'imponibile IRAP**
+**Determinazione dell'imponibile IRAP**
 
-|  Differenza tra valore e costi della produzione | (27.415.355)  |
-| --- | --- |
-|  Costi non rilevanti ai fini IRAP | 62.403.832  |
-|  Deduzione cuneo fiscale | (3.508.108)  |
-|  **Totale** | **31.480.368**  |
-|  Onere fiscale teorico (aliquota 3,9%) | 1.227.734  |
-|  **Differenze temporanee deducibili in esercizi successivi**  |   |
-|  **Totale** |   |
-|  **Rigiro delle differenze temporanee da esercizi precedenti**  |   |
-|  Invalutazione Minuovalenza realizzata | (25.377.685)  |
-|  Invaluta rischi e oneri |   |
-|  **Totale** | **(25.377.685)**  |
-|  **Differenze temporanee imponibili in esercizi successivi**  |   |
-|  **Totale** |   |
-|  **Differenze che non si riverseranno negli esercizi successivi**  |   |
-|  compensi amministratori | 36.000  |
-|  multe ammende e sanzioni | 39.598  |
-|  sanzioni e interessi provvedimento | 597.280  |
-|  liberalità in deducibili | 9.629  |
-|  costi non deducibili | 45.612  |
-|  oneri esercizi precedenti | 836.968  |
-|  **Totale** | **1.565.087**  |
-|  **Imponibile fiscale** | **7.667.770**  |
-|  Imposte correnti sul reddito dell'esercizio | 299.043  |
+| | | |
+|---|---|---|
+| **Differenza tra valore e costi della produzione** | (27.415.355) | |
+| Costi non rilevanti ai fini IRAP | 62.403.832 | |
+| Deduzione cuneo fiscale | (3.508.108) | |
+| **Totale** | **31.480.368** | |
+| Onere fiscale teorico (aliquota 3,9%) | | 1.227.734 |
+| **Differenze temporanee deducibili in esercizi successivi** | | |
+| **Totale** | | |
+| **Rigiro delle differenze temporanee da esercizi precedenti** | | |
+| Svalutazione-Minusvalenza realizzato | (25.377.685) | |
+| fondo rischi e oneri | | |
+| **Totale** | **(25.377.685)** | |
+| **Differenze temporanee imponibili in esercizi successivi** | | |
+| **Totale** | | |
+| **Differenze che non si riverseranno negli esercizi successivi** | | |
+| compensi amministratori | 36.000 | |
+| multe ammende e sanzioni | 39.598 | |
+| sanzioni e interessi ravvedimento | 597.280 | |
+| liberalità indeducibili | 9.629 | |
+| costi non deducibili | 45.612 | |
+| oneri esercizi precedenti | 836.968 | |
+| **Totale** | **1.565.087** | |
+| **Imponibile fiscale** | 7.667.770 | |
+| Imposte correnti sul reddito dell'esercizio | | 299.043 |
 
-# **Compensi, anticipazioni e crediti concessi ad amministratori e sindaci e impegni assunti per loro conto**
+**Compensi, anticipazioni e crediti concessi ad amministratori e sindaci e impegni assunti per loro conto**
 
 Si riporta di seguito l'indicazione dei compensi relativi all'esercizio chiuso al 30 giugno 2025 spettanti agli Amministratori ed ai Sindaci della Società per cariche ricoperte presso la stessa.
 
-|  **Valori in €** | **Saldo al 30/06/2025**  |
-| --- | --- |
-|  Amministratori | 36.000  |
-|  Sindaci | 21.032  |
-|  **Totale** | **57.032**  |
+| Valori in € | Saldo al 30/06/2025 |
+|---|---|
+| Amministratori | 36.000 |
+| Sindaci | 21.032 |
+| **Totale** | **57.032** |
 
-# **Compensi al revisore legale o società di revisione**
+**Compensi al revisore legale o società di revisione**
 
 Ai sensi dell'art. 2427 punto 16-bis si fornisce di seguito il dettaglio dei corrispettivi spettanti al revisore legale (alla società di revisione) per le prestazioni rese.
 
@@ -3853,7 +3843,20 @@ NOTA INTEGRATIVA – BILANCIO AL 30 GIUGNO 2025
 
 --- pág. 107 ---
 
-Blastic oil (po) (m) (mm)[{"box_2d": [95, 46, 471, 960], "label": "table", "caption": "<table><tr><td rowspan=\"2\">Item</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td rowspan=\"2\">Date</td><td></td></tr><tr><td></td></tr><tr><td>1</td><td>2014-03-01</td><td>2014-03-02</td><td>2014-03-03</td><td>2014-03-04</td><td>2014-03-05</td><td>2014-03-06</td><td>2014-03-07</td><td>2014-03-08</td><td>2014-03-09</td><td>2014-03-10</td><td>2014-03-11</td><td>2014-03-12</td><td>2014-03-13</td><td>2014-03-14</td><td>2014-03-15</td><td>2014-03-16</td><td>2014-03-17</td><td>2014-03-18</td><td>2014-03-19</td><td>2014-03-20</td><td>2014-03-21</td><td>2014-03-22</td><td>2014-03-23</td><td>2014-03-24</td><td>2014-03-25</td><td>2014-03-26</td><td>2014-03-27</td><td>2014-03-28</td><td>2014-03-29</td><td>2014-03-30</td><td>2014-03-31</td><td>2014-03-32</td><td>2014-03-33</td><td>2014-03-34</td><td>2014-03-35</td><td>2014-03-36</td><td>2014-03-37</td><td>2014-03-38</td><td>2014-03-39</td><td>2014-03-40</td><td>2014-03-41</td><td>2014-03-42</td><td>2014-03-43</td><td>2014-03-44</td><td>2014-03-45</td><td>2014-03-46</td><td>2014-03-47</td><td>2014-03-48</td><td>2014-03-49</td><td>2014-03-50</td><td>2014-03-51</td><td>2014-03-52</td><td>2014-03-53</td><td>2014-03-54</td><td>2014-03-55</td><td>2014-03-56</td><td>2014-03-57</td><td>2014-03-58</td><td>2014-03-59</td><td>2014-03-60</td><td>2014-03-61</td><td>2014-03-62</td><td>2014-03-63</td><td>2014-03-64</td><td>2014-03-65</td><td>2014-03-66</td><td>2014-03-67</td><td>2014-03-68</td><td>2014-03-69</td><td>2014-03-70</td><td>2014-03-71</td><td>2014-03-72</td><td>2014-03-73</td><td>2014-03-74</td><td>2014-03-75</td><td>2014-03-76</td><td>2014-03-77</td><td>2014-03-78</td><td>2014-03-79</td><td>2014-03-80</td><td>2014-03-81</td><td>2014-03-82</td><td>2014-03-83</td><td>2014-03-84</td><td>2014-03-85</td><td>2014-03-86</td><td>2014-03-87</td><td>2014-03-88</td><td>2014-03-89</td><td>2014-03-90</td><td>2014-03-91</td><td>2014-03-92</td><td>2014-03-93</td><td>2014-03-94</td><td>2014-03-95</td><td>2014-03-96</td><td>2014-03-97</td><td>2014-03-98</td><td>2014-03-99</td><td>2014-03-100</td><td>2014-03-101</td><td>2014-03-102</td><td>2014-03-103</td><td>2014-03-104</td><td>2014-03-105</td><td>2014-03-106</td><td>2014-03-107</td><td>2014-03-108</td><td>2014-03-109</td><td>2014-03-110</td><td>2014-03-111</td><td>2014-03-112</td><td>2014-03-113</td><td>2014-03-114</td><td>2014-03-115</td><td>2014-03-116</td><td>2014-03-117</td><td>2014-03-118</td><td>2014-03-119</td><td>2014-03-120</td><td>2014-03-121</td><td>2014-03-122</td><td>2014-03-123</td><td>2014-03-124</td><td>2014-03-125</td><td>2014-03-126</td><td>2014-03-127</td><td>2014-03-128</td><td>2014-03-129</td><td>2014-03-130</td><td>2014-03-131</td><td>2014-03-132</td><td>2014-03-133</td><td>2014-03-134</td><td>2014-03-135</td><td>2014-03-136</td><td>2014-03-137</td><td>2014-03-138</td><td>2014-03-139</td><td>2014-03-140</td><td>2014-03-141</td><td>2014-03-142</td><td>2014-03-143</td><td>2014-03-144</td><td>2014-03-145</td><td>2014-03-146</td><td>2014-03-147</td><td>2014-03-148</td><td>2014-03-149</td><td>2014-03-150</td><td>2014-03-151</td><td>2014-03-152</td><td>2014-03-153</td><td>2014-03-154</td><td>2014-03-155</td><td>2014-03-156</td><td>2014-03-157</td><td>2014-03-158</td><td>2014-03-159</td><td>2014-03-160</td><td>2014-03-161</td><td>2014-03-162</td><td>2014-03-163</td><td>2014-03-164</td><td>2014-03-165</td><td>2014-03-166</td><td>2014-03-167</td><td>2014-03-168</td><td>2014-03-169</td><td>2014-03-170</td><td>2014-03-171</td><td>2014-03-172</td><td>2014-03-173</td><td>2014-03-174</td><td>2014-03-175</td><td>2014-03-176</td><td>2014-03-177</td><td>2014-03-178</td><td>2014-03-179</td><td>2014-03-180</td><td>2014-03-181</td><td>2014-03-182</td><td>2014-03-183</td><td>2014-03-184</td><td>2014-03-185</td><td>2014-03-186</td><td>2014-03-187</td><td>2014-03-188</td><td>2014-03-189</td><td>2014-03-190</td><td>2014-03-191</td><td>2014-03-192</td><td>2014-03-193</td><td>2014-03-194</td><td>2014-03-195</td><td>2014-03-196</td><td>2014-03-197</td><td>2014-03-198</td><td>2014-03-199</td><td>2014-03-200</td><td>2014-03-201</td><td>2014-03-202</td><td>2014-03-203</td><td>2014-03-204</td><td>2014-03-205</td><td>2014-03-206</td><td>2014-03-207</td><td>2014-03-208</td><td>2014-03-209</td><td>2014-03-210</td><td>2014-03-211</td><td>2014-03-212</td><td>2014-03-213</td><td>2014-03-214</td><td>2014-03-215</td><td>2014-03-216</td><td>2014-03-217</td><td>2014-03-218</td><td>2014-03-219</td><td>2014-03-220</td><td>2014-03-221</td><td>2014-03-222</td><td>2014-03-223</td><td>2014-03-224</td><td>2014-03-225</td><td>2014-03-226</td><td>2014-03-227</td><td>2014-03-228</td><td>2014-03-229</td><td>2014-03-230</td><td>2014-03-231</td><td>2014-03-232</td><td>2014-03-233</td><td>2014-03-234</td><td>2014-03-235</td><td>2014-03-236</td><td>2014-03-237</td><td>2014-03-238</td><td>2014-03-239</td><td>2014-03-240</td><td>2014-03-241</td><td>2014-03-242</td><td>2014-03-243</td><td>2014-03-244</td><td>2014-03-245</td><td>2014-03-246</td><td>2014-03-247</td><td>2014-03-248</td><td>2014-03-249</td><td>2014-03-250</td><td>2014-03-251</td><td>2014-03-252</td><td>2014-03-253</td><td>2014-03-254</td><td>2014-03-255</td><td>2014-03-256</td><td>2014-03-257</td><td>2014-03-258</td><td>2014-03-259</td><td>2014-03-260</td><td>2014-03-261</td><td>2014-03-262</td><td>2014-03-263</td><td>2014-03-264</td><td>2014-03-265</td><td>2014-03-266</td><td>2014-03-267</td><td>2014-03-268</td><td>2014-03-269</td><td>2014-03-270</td><td>2014-03-271</td><td>2014-03-272</td><td>2014-03-273</td><td>2014-03-274</td><td>2014-03-275</td><td>2014-03-276</td><td>2014-03-277</td><td>2014-03-278</td><td>2014-03-279</td><td>2014-03-280</td><td>2014-03-281</td><td>2014-03-282</td><td>2014-03-283</td><td>2014-03-284</td><td>2014-03-285</td><td>2014-03-286</td><td>2014-03-287</td><td>2014-03-288</td><td>2014-03-289</td><td>2014-03-290</td><td>2014-03-291</td><td>2014-03-292</td><td>2014-03-293</td><td>2014-03-294</td><td>2014-03-295</td><td>2014-03-296</td><td>2014-03-297</td><td>2014-03-298</td><td>2014-03-299</td><td>2014-03-300</td><td>2014-03-301</td><td>2014-03-302</td><td>2014-03-303</td><td>2014-03-304</td><td>2014-03-305</td><td>2014-03-306</td><td>2014-03-307</td><td>2014-03-308</td><td>2014-03-309</td><td>2014-03-310</td><td>2014-03-311</td><td>2014-03-312</td><td>2014-03-313</td><td>2014-03-314</td><td>2014-03-315</td><td>2014-03-316</td><td>2014-03-317</td><td>2014-03-318</td><td>2014-03-319</td><td>2014-03-320</td><td>2014-03-321</td><td>2014-03-322</td><td>2014-03-323</td><td>2014-03-324</td><td>2014-03-325</td><td>2014-03-326</td><td>2014-03-327</td><td>2014-03-328</td><td>2014-03-329</td><td>2014-03-330</td><td>2014-03-331</td><td>2014-03-332</td><td>2014-03-333</td><td>2014-03-334</td><td>2014-03-335</td><td>2014-03-336</td><td>2014-03-337</td><td>2014-03-338</td><td>2014-03-339</td><td>2014-03-340</td><td>2014-03-341</td><td>2014-03-342</td><td>2014-03-343</td><td>2014-03-344</td><td>2014-03-345</td><td>2014-03-346</td><td>2014-03-347</td><td>2014-03-348</td><td>2014-03-349</td><td>2014-03-350</td><td>2014-03-351</td><td>2014-03-352</td><td>2014-03-353</td><td>2014-03-354</td><td>2014-03-355</td><td>2014-03-356</td><td>2014-03-357</td><td>2014-03-358</td><td>2014-03-359</td><td>2014-03-360</td><td>2014-03-361</td><td>2014-03-362</td><td>2014-03-363</td><td>2014-03-364</td><td>2014-03-365</td><td>2014-03-366</td><td>2014-03-367</td><td>2014-03-368</td><td>2014-03-369</td><td>2014-03-370</td><td>2014-03-371</td><td>2014-03-372</td><td>2014-03-373</td><td>2014-03-374</td><td>2014-03-375</td><td>2014-03-376</td><td>2014-03-377</td><td>2014-03-378</td><td>2014-03-379</td><td>2014-03-380</td><td>2014-03-381</td><td>2014-03-382</td><td>2014-03-383</td><td>2014-03-384</td><td>2014-03-385</td><td>2014-03-386</td><td>2014-03-387</td><td>2014-03-388</td><td>2014-03-389</td><td>2014-03-390</td><td>2014-03-391</td><td>2014-03-392</td><td>2014-03-393</td><td>2014-03-394</td><td>2014-03-395</td><td>2014-03-396</td><td>2014-03-397</td><td>2014-03-398</td><td>2014-03-399</td><td>2014-03-400</td><td>2014-03-401</td><td>2014-03-402</td><td>2014-03-403</td><td>2014-03-404</td><td>2014-03-405</td><td>2014-03-406</td><td>2014-03-407</td><td>2014-03-408</td><td>2014-03-409</td><td>2014-03-410</td><td>2014-03-411</td><td>2014-03-412</td><td>2014-03-413</td><td>2014-03-414</td><td>2014-03-415</td><td>2014-03-416</td><td>2014-03-417</td><td>2014-03-418</td><td>2014-03-419</td><td>2014-03-420</td><td>2014-03-421</td><td>2014-03-422</td><td>2014-03-423</td><td>2014-03-424</td><td>2014-03-425</td><td>2014-03-426</td><td>2014-03-427</td><td>2014-03-428</td><td>2014-03-429</td><td>2014-03-430</td><td>2014-03-431</td><td>2014-03-432</td><td>2014-03-433</td><td>2014-03-434</td><td>2014-03-435</td><td>2014-03-436</td><td>2014-03-437</td><td>2014-03-438</td><td>2014-03-439</td><td>2014-03-440</td><td>2014-03-441</td><td>2014-03-442</td><td>2014-03-443</td><td>2014-03-444</td><td>2014-03-445</td><td>2014-03-446</td><td>2014-03-447</td><td>2014-03-448</td><td>2014-03-449</td><td>2014-03-450</td><td>2014-03-451</td><td>2014-03-452</td><td>2014-03-453</td><td>2014-03-454</td><td>2014-03-455</td><td>2014-03-456</td><td>2014-03-457</td><td>2014-03-458</td><td>2014-03-459</td><td>2014-03-460</td><td>2014-03-461</td><td>2014-03-462</td><td>2014-03-463</td><td>2014-03-464</td><td>2014-03-465</td><td>2014-03-466</td><td>2014-03-467</td><td>2014-03-468</td><td>2014-03-469</td><td>2014-03-470</td><td>2014-03-471</td><td>2014-03-472</td><td>2014-03-473</td><td>2014-03-474</td><td>2014-03-475</td><td>2014-03-476</td><td>2014-03-477</td><td>2014-03-478</td><td>2014-03-479</td><td>2014-03-480</td><td>2014-03-481</td><td>2014-03-482</td><td>2014-03-483</td><td>2014-03-484</td><td>2014-03-485</td><td>2014-03-486</td><td>2014-03-487</td><td>2014-03-488</td><td>2014-03-489</td><td>2014-03-490</td><td>2014-03-491</td><td>2014-03-492</td><td>2014-03-493</td><td>2014-03-494</td><td>2014-03-495</td><td>2014-03-496</td><td>2014-03-497</td><td>2014-03-498</td><td>2014-03-499</td><td>2014-03-500</td><td>2014-03-501</td><td>2014-03-502</td><td>2014-03-503</td><td>2014-03-504</td><td>2014-03-505</td><td>2014-03-506</td><td>2014-03-507</td><td>2014-03-508</td><td>2014-03-509</td><td>2014-03-510</td><td>2014-03-511</td><td>2014-03-512</td><td>2014-03-513</td><td>2014-03-514</td><td>2014-03-515</td><td>2014-03-516</td><td>2014-03-517</td><td>2014-03-518</td><td>2014-03-519</td><td>2014-03-520</td><td>2014-03-521</td><td>2014-03-522</td><td>2014-03-523</td><td>2014-03-524</td><td>2014-03-525</td><td>2014-03-526</td><td>2014-03-527</td><td>2014-03-528</td><td>2014-03-529</td><td>2014-03-530</td><td>2014-03-531</td><td>2014-03-532</td><td>2014-03-533</td><td>2014-03-534</td><td>2014-03-535</td><td>2014-03-536</td><td>2014-03-537</td><td>2014-03-538</td><td>2014-03-539</td><td>2014-03-540</td><td>2014-03-541</td><td>2014-03-542</td><td>2014-03-543</td><td>2014-03-544</td><td>2014-03-545</td><td>2014-03-546</td><td>2014-03-547</td><td>2014-03-548</td><td>2014-03-549</td><td>2014-03-550</td><td>2014-03-551</td><td>2014-03-552</td><td>2014-03-553</td><td>2014-03-554</td><td>2014-03-555</td><td>2014-03-556</td><td>2014-03-557</td><td>2014-03-558</td><td>2014-03-559</td><td>2014-03-560</td><td>2014-03-561</td><td>2014-03-562</td><td>2014-03-563</td><td>2014-03-564</td><td>2014-03-565</td><td>2014-03-566</td><td>2014-03-567</td><td>2014-03-568</td><td>2014-03-569</td><td>2014-03-570</td><td>2014-03-571</td><td>2014-03-572</td><td>2014-03-573</td><td>2014-03-574</td><td>2014-03-575</td><td>2014-03-576</td><td>2014-03-577</td><td>2014-03-578</td><td>2014-03-579</td><td>2014-03-580</td><td>2014-03-581</td><td>2014-03-582</td><td>2014-03-583</td><td>2014-03-584</td><td>2014-03-585</td><td>2014-03-586</td><td>2014-03-587</td><td>2014-03-588</td><td>2014-03-589</td><td>2014-03-590</td><td>2014-03-591</td><td>2014-03-592</td><td>2014-03-593</td><td>2014-03-594</td><td>2014-03-595</td><td>2014-03-596</td><td>2014-03-597</td><td>2014-03-598</td><td>2014-03-599</td><td>2014-03-600</td><td>2014-03-601</td><td>2014-03-602</td><td>2014-03-603</td><td>2014-03-604</td><td>2014-03-605</td><td>2014-03-606</td><td>2014-03-607</td><td>2014-03-608</td><td>2014-03-609</td><td>2014-03-610</td><td>2014-03-611</td><td>2014-03-612</td><td>2014-03-613</td><td>2014-03-614</td><td>2014-03-615</td><td>2014-03-616</td><td>2014-03-617</td><td>2014-03-618</td><td>2014-03-619</td><td>2014-03-620</td><td>2014-03-621</td><td>2014-03-622</td><td>2014-03-623</td><td>2014-03-624</td><td>2014-03-625</td><td>2014-03-626</td><td>2014-03-627</td><td>2014-03-628</td><td>2014-03-629</td><td>2014-03-630</td><td>2014-03-631</td><td>2014-03-632</td><td>2014-03-633</td><td>2014-03-634</td><td>2014-03-635</td><td>2014-03-636</td><td>2014-03-637</td><td>2014-03-638</td><td>2014-03-639</td><td>2014-03-640</td><td>2014-03-641</td><td>2014-03-642</td><td>2014-03-643</td><td>2014-03-644</td><td>2014-03-645</td><td>2014-03-646</td><td>2014-03-647</td><td>2014-03-648</td><td>2014-03-649</td><td>2014-03-650</td><td>2014-03-651</td><td>2014-03-652</td><td>2014-03-653</td><td>2014-03-654</td><td>2014-03-655</td><td>2014-03-656</td><td>2014-03-657</td><td>2014-03-658</td><td>2014-03-659</td><td>2014-03-660</td><td>2014-03-661</td><td>2014-03-662</td><td>2014-03-663</td><td>2014-03-664</td><td>2014-03-665</td><td>2014-03-666</td><td>2014-03-667</td><td>2014-03-668</td><td>2014-03-669</td><td>2014-03-670</td><td>2014-03-671</td><td>2014-03-672</td><td>2014-03-673</td><td>2014-03-674</td><td>2014-03-675</td><td>2014-03-676</td><td>2014-03-677</td><td>2014-03-678</td><td>2014-03-679</td><td>2014-03-680</td><td>2014-03-681</td><td>2014-03-682</td><td>2014-03-683</td><td>2014-03-684</td><td>2014-03-685</td><td>2014-03-686</td><td>2014-03-687</td><td>2014-03-688</td><td>2014-03-689</td><td>2014-03-690</td><td>2014-03-691</td><td>2014-03-692</td><td>2014-03-693</td><td>2014-03-694</td><td>2014-03-695</td><td>2014-03-696</td><td>2014-03-697</td><td>2014-03-698</td><td>2014-03-699</td><td>2014-03-700</td><td>2014-03-701</td><td>2014-03-702</td><td>2014-03-703</td><td>2014-03-704</td><td>2014-03-705</td><td>2014-03-706</td><td>2014-03-707</td><td>2014-03-708</td><td>2014-03-709</td><td>2014-03-710</td><td>2014-03-711</td><td>2014-03-712</td><td>2014-03-713</td><td>2014-03-714</td><td>2014-03-715</td><td>2014-03-716</td><td>2014-03-717</td><td>2014-03-718</td><td>2014-03-719</td><td>2014-03-720</td><td>2014-03-721</td><td>2014-03-722</td><td>2014-03-723</td><td>2014-03-724</td><td>2014-03-725</td><td>2014-03-726</td><td>2014-03-727</td><td>2014-03-728</td><td>2014-03-729</td><td>2014-03-730</td><td>2014-03-731</td><td>2014-03-732</td><td>2014-03-733</td><td>2014-03-734</td><td>2014-03-735</td><td>2014-03-736</td><td>2014-03-737</td><td>2014-03-738</td><td>2014-03-739</td><td>2014-03-740</td><td>2014-03-741</td><td>2014-03-742</td><td>2014-03-743</td><td>2014-03-744</td><td>2014-03-745</td><td>2014-03-746</td><td>2014-03-747</td><td>2014-03-748</td><td>2014-03-749</td><td>2014-03-750</td><td>2014-03-751</td><td>2014-03-752</td><td>2014-03-753</td><td>2014-03-754</td><td>2014-03-755</td><td>2014-03-756</td><td>2014-03-757</td><td>2014-03-758</td><td>2014-03-759</td><td>2014-03-760</td><td>2014-03-761</td><td>2014-03-762</td><td>2014-03-763</td><td>2014-03-764</td><td>2014-03-765</td><td>2014-03-766</td><td>2014-03-767</td><td>2014-03-768</td><td>2014-03-769</td><td>2014-03-770</td><td>2014-03-771</td><td>2014-03-772</td><td>2014-03-773</td><td>2014-03-774</td><td>2014-03-775</td><td>2014-03-776</td><td>2014-03-777</td><td>2014-03-778</td><td>2014-03-779</td><td>2014-03-780</td><td>2014-03-781</td><td>2014-03-782</td><td>2014-03-783</td><td>2014-03-784</td><td>2014-03-785</td><td>2014-03-786</td><td>2014-03-787</td><td>2014-03-788</td><td>2014-03-789</td><td>2014-03-790</td><td>2014-03-791</td><td>2014-03-792</td><td>2014-03-793</td><td>2014-03-794</td><td>2014-03-795</td><td>2014-03-796</td><td>2014-03-797</td><td>2014-03-798</td><td>2014-03-799</td><td>2014-03-800</td><td>2014-03-801</td><td>2014-03-802</td><td>2014-03-803</td><td>2014-03-804</td><td>2014-03-805</td><td>2014-03-806</td><td>2014-03-807</td><td>2014-03-808</td><td>2014-03-809</td><td>2014-03-810</td><td>2014-03-811</td><td>2014-03-812</td><td>2014-03-813</td><td>2014-03-814</td><td>2014-03-815</td><td>2014-03-816</td><td>2014-03-817</td><td>2014-03-818</td><td>2014-03-819</td><td>2014-03-820</td><td>2014-03-821</td><td>2014-03-822</td><td>2014-03-823</td><td>2014-03-824</td><td>2014-03-825</td><td>2014-03-826</td><td>2014-03-827</td><td>2014-03-828</td><td>2014-03-829</td><td>2014-03-830</td><td>2014-03-831</td><td>2014-03-832</td><td>2014-03-833</td><td>2014-03-834</td><td>2014-03-835</td><td>2014-03-836</td><td>2014-03-837</td><td>2014-03-838</td><td>2014-03-839</td><td>2014-03-840</td><td>2014-03-841</td><td>2014-03-842</td><td>2014-03-843</td><td>2014-03-844</td><td>2014-03-845</td><td>2014-03-846</td><td>2014-03-847</td><td>2014-03-848</td><td>2014-03-849</td><td>2014-03-850</td><td>2014-03-851</td><td>2014-03-852</td><td>2014-03-853</td><td>2014-03-854</td><td>2014-03-855</td><td>2014-03-856</td><td>2014-03-857</td><td>2014-03-858</td><td>2014-03-859</td><td>2014-03-860</td><td>2014-03-861</td><td>2014-03-862</td><td>2014-03-863</td><td>2014-03-864</td><td>2014-03-865</td><td>2014-03-866</td><td>2014-03-867</td><td>2014-03-868</td><td>2014-03-869</td><td>2014-03-870</td><td>2014-03-871</td><td>2014-03-872</td><td>2014-03-873</td><td>2014-03-874</td><td>2014-03-875</td><td>2014-03-876</td><td>2014-03-877</td><td>2014-03-878</td><td>2014-03-879</td><td>2014-03-880</td><td>2014-03-881</td><td>2014-03-882</td><td>2014-03-883</td><td>2014-03-884</td><td>2014-03-885</td><td>2014-03-886</td><td>2014-03-887</td><td>2014-03-888</td><td>2014-03-889</td><td>2014-03-890</td><td>2014-03-891</td><td>2014-03-892</td><td>2014-03-893</td><td>2014-03-894</td><td>2014-03-895</td><td>2014-03-896</td><td>2014-03-897</td><td>2014-03-898</td><td>2014-03-899</td><td>2014-03-900</td><td>2014-03-901</td><td>2014-03-902</td><td>2014-03-903</td><td>2014-03-904</td><td>2014-03-905</td><td>2014-03-906</td><td>2014-03-907</td><td>2014-03-908</td><td>2014-03-909</td><td>2014-03-910</td><td>2014-03-911</td><td>2014-03-912</td><td>2014-03-913</td><td>2014-03-914</td><td>2014-03-915</td><td>2014-03-916</td><td>2014-03-917</td><td>2014-03-918</td><td>2014-03-919</td><td>2014-03-920</td><td>2014-03-921</td><td>2014-03-922</td><td>2014-03-923</td><td>2014-03-924</td><td>2014-03-925</td><td>2014-03-926</td><td>2014-03-927</td><td>2014-03-928</td><td>2014-03-929</td><td>2014-03-930</td><td>2014-03-931</td><td>2014-03-932</td><td>2014-03-933</td><td>2014-03-934</td><td>2014-03-935</td><td>2014-03-936</td><td>2014-03-937</td><td>2014-03-938</td><td>2014-03-939</td><td>2014-03-940</td><td>2014-03-941</td><td>2014-03-942</td><td>2014-03-943</td><td>2014-03-944</td><td>2014-03-945</td><td>2014-03-946</td><td>2014-03-947</td><td>2014-03-948</td><td>2014-03-949</td><td>2014-03-950</td><td>2014-03-951</td><td>2014-03-952</td><td>2014-03-953</td><td>2014-03-954</td><td>2014-03-955</td><td>2014-03-956</td><td>2014-03-957</td><td>2014-03-958</td><td>2014-03-959</td><td>2014-03-960</td><td>2014-03-961</td><td>2014-03-962</td><td>2014-03-963</td><td>2014-03-964</td><td>2014-03-965</td><td>2014-03-966</td><td>2014-03-967</td><td>2014-03-968</td><td>2014-03-969</td><td>2014-03-970</td><td>2014-03-971</td><td>2014-03-972</td><td>2014-03-973</td><td>2014-03-974</td><td>2014-03-975</td><td>2014-03-976</td><td>2014-03-977</td><td>2014-03-978</td><td>2014-03-979</td><td>2014-03-980</td><td>2014-03-981</td><td>2014-03-982</td><td>2014-03-983</td><td>2014-03-984</td><td>2014-03-985</td><td>2014-03-986</td><td>2014-03-987</td><td>2014-03-988</td><td>2014-03-989</td><td>2014-03-990</td><td>2014-03-991</td><td>2014-03-992</td><td>2014-03-993</td><td>2014-03-994</td><td>2014-03-995</td><td>2014-03-996</td><td>2014-03-997</td><td>2014-03-998</td><td>2014-03-999</td><td>2014-04000</td><td>2014-04001</td><td>2014-04002</td><td>2014-04003</td><td>2014-04004</td><td>2014-04005</td><td>2014-04006</td><td>2014-04007</td><td>2014-04008</td><td>2014-04009</td><td>2014-04010</td><td>2014-04011</td><td>2014-04012</td><td>2014-04013</td><td>2014-04014</td><td>2014-04015</td><td>2014-04016</td><td>2014-04017</td><td>2014-04018</td><td>2014-04019</td><td>2014-04020</td><td>2014-04021</td><td>2014-04022</td><td>2014-04023</td><td>2014-04024</td><td>2014-04025</td><td>2014-04026</td><td>2014-04027</td><td>2014-04028</td><td>2014-04029</td><td>2014-04030</td><td>2014-04031</td><td>2014-04032</td><td>2014-04033</td><td>2014-04034</td><td>2014-04035</td><td>2014-04036</td><td>2014-04037</td><td>2014-04038</td><td>2014-04039</td><td>2014-04040</td><td>2014-04041</td><td>2014-04042</td><td>2014-04043</td><td>2014-04044</td><td>2014-04045</td><td>2014-04046</td><td>2014-04047</td><td>2014-04048</td><td>2014-04049</td><td>2014-04050</td><td>2014-04051</td><td>2014-04052</td><td>2014-04053</td><td>2014-04054</td><td>2014-04055</td><td>2014-04056</td><td>2014-04057</td><td>2014-04058</td><td>2014-04059</td><td>2014-04060</td><td>2014-04061</td><td>2014-04062</td><td>2014-04063</td><td>2014-04064</td><td>2014-04065</td><td>2014-04066</td><td>2014-04067</td><td>2014-04068</td><td>2014-04069</td><td>2014-04070</td><td>2014-04071</td><td>2014-04072</td><td>2014-04073</td><td>2014-04074</td><td>2014-04075</td><td>2014-04076</td><td>2014-04077</td><td>2014-04078</td><td>2014-04079</td><td>2014-04080</td><td>2014-04081</td><td>2014-04082</td><td>2014-04083</td><td>2014-04084</td><td>2014-04085</td><td>2014-04086</td><td>2014-04087</td><td>2014-04088</td><td>2014-04089</td><td>2014-04090</td><td>2014-04091</td><td>2014-04092</td><td>2014-04093</td><td>2014-04094</td><td>2014-04095</td><td>2014-04096</td><td>2014-04097</td><td>2014-04098</td><td>2014-04099</td><td>2014-04100</td><td>2014-04101</td><td>2014-04102</td><td>2014-04103</td><td>2014-04104</td><td>2014-04105</td><td>2014-04106</td><td>2014-04107</td><td>2014-04108</td><td>2014-04109</td><td>2014-04110</td><td>2014-04111</td><td>2014-04112</td><td>2014-04113</td><td>2014-04114</td><td>2014-04115</td><td>2014-04116</td><td>2014-04117</td><td>2014-04118</td><td>2014-04119</td><td>2014-04120</td><td>2014-04121</td><td>2014-04122</td><td>2014-04123</td><td>2014-04124</td><td>2014-04125</td><td>2014-04126</td><td>2014-04127</td><td>2014-04128</td><td>2014-04129</td><td>2014-04130</td><td>2014-04131</td><td>2014-04132</td><td>2014-04133</td><td>2014-04134</td><td>2014-04135</td><td>2014-04136</td><td>2014-04137</td><td>2014-04138</td><td>2014-04139</td><td>2014-04140</td><td>2014-04141</td><td>2014-04142</td><td>2014-04143</td><td>2014-04144</td><td>2014-04145</td><td>2014-04146</td><td>2014-04147</td><td>2014-04148</td><td>2014-04149</td><td>2014-04150</td><td>2014-04151</td><td>2014-04152</td><td>2014-04153</td><td>2014-04154</td><td>2014-04155</td><td>2014-04156</td><td>2014-04157</td><td>2014-04158</td><td>2014-04159</td><td>2014-04160</td><td>2014-04161</td><td>2014-04162</td><td>2014-04163</td><td>2014-04164</td><td>2014-04165</td><td>2014-04166</td><td>2014-04167</td><td>2014-04168</td><td>2014-04169</td><td>2014-04170</td><td>2014-04171</td><td>2014-04172</td><td>2014-04173</td><td>2014-04174</td><td>2014-04175</td><td>2014-04176</td><td>2014-04177</td><td>2014-04178</td><td>2014-04179</td><td>2014-04180</td><td>2014-04181</td><td>2014-04182</td><td>2014-04183</td><td>2014-04184</td><td>2014-04185</td><td>2014-04186</td><td>2014-04187</td><td>2014-04188</td><td>2014-04189</td><td>2014-04190</td><td>2014-04191</td><td>2014-04192</td><td>2014-04193</td><td>2014-04194</td><td>2014-04195</td><td>2014-04196</td><td>2014-04197</td><td>2014-04198</td
+Bilancio al 30/06/2025
+
+[Página girada 90°. Tabla de gran tamaño con letra muy pequeña; firma manuscrita a la derecha.]
+
+Data of FS: 30/06/2025
+
+Estructura de columnas (según se alcanza a leer):
+
+| N. | Expiring Date | Player Name | Contract Club | Date | Club | Sales Value | Changes in the period 01/07/2023–30/06/2024: Increases | Decreases | Values as of 30/06/2024: Historical Cost | Amortiz. Fund prior period | NBV before Amortization | Amortization of the period | Impairment | Capital Loss | Capital Gain | NBV | Changes in the period 01/07/2024–30/06/2025: Increases | Decreases | Values as of 30/06/2025: Historical Cost | Amortiz. Fund | NBV before Amortization | Amortization of the period | Impairment | Capital Loss | Capital Gain | NBV |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+Filas de jugadores (aprox. 49 filas numeradas, con nombres, fechas de vencimiento, clubes y montos): [ilegible]
+
+Fila TOTALE / TOTALI: [ilegible]
 
 --- pág. 108 ---
 

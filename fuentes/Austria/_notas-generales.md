@@ -116,3 +116,13 @@ fuente propia, agregar su archivo en `fuentes/Austria/<Club>.md` y sacarlo de la
 sección 5.
 
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023): documentos de liga de WorldFootball
+
+La ficha financiera de cada club en `worldfootball.com/financials` enlaza, además de informes propios, los **documentos de LIGA** (los mismos para todos los clubes del país). Se guardaron una sola vez en `Clubes/Austria/_WorldFootball-documentos-de-liga/` (4 PDF; fuente secundaria/espejo de los originales oficiales de la liga):
+  - `wf-2023-2024-58eb4318.pdf`
+  - `wf-2024-2025-ac6da446.pdf`
+  - `wf-src-Veroeffentlichung_Klub-JA_20220630.pdf`
+  - `wf-src-Veroeffentlichung_Klub-JA_20230630.pdf`
+
+Ojo: son agregados de varios clubes (como los de `_DFL-Finanzkennzahlen`, `_Bundesliga-Finanzkennzahlen`, etc.); no se asignan a ningún club en particular. Años nuevos respecto de lo que había: ver nombres de archivo.

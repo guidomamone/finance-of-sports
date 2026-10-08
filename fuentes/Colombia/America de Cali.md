@@ -35,3 +35,9 @@
 - NIT 890305773, en reorganización, 6 registros en SIIS (2017, 2021-2025).
 - Bajado a `Clubes/Colombia/America de Cali/`: estados-financieros 2021-2024 (+certificación y dictamen); 2017 sin bajar. Total en disco: 5 ejercicios con estados-financieros.
 - Ninguno transcripto ni cargado todavía.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 8 ejercicios (2018-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

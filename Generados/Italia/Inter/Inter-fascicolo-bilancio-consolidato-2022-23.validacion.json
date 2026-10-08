@@ -1,0 +1,59 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.pdf",
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md",
+ "mdSha1": "d81824b4491842382053ad24efbddb05c3f30475",
+ "modo": "digital",
+ "motivoModo": "6 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 406556 vs 408556, 407456 vs 407450, 596604 vs 506604",
+ "generado": "2026-10-08T17:42:53.531Z",
+ "fuentes": {
+  "14": "pdftotext",
+  "15": "pdftotext",
+  "47": "pdftotext",
+  "48": "pdftotext",
+  "49": "pdftotext",
+  "50": "pdftotext",
+  "51": "pdftotext",
+  "52": "pdftotext",
+  "54": "pdftotext",
+  "55": "pdftotext"
+ },
+ "confirmados": 269,
+ "noConfirmados": [
+  {
+   "bloque": "b7",
+   "pagina": 15,
+   "linea": 601,
+   "numero": "85.372.658",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **Loss after taxes before minority share** | **(85.372.658)** | **(140.056.180)** |"
+  },
+  {
+   "bloque": "b7",
+   "pagina": 15,
+   "linea": 601,
+   "numero": "140.056.180",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **Loss after taxes before minority share** | **(85.372.658)** | **(140.056.180)** |"
+  },
+  {
+   "bloque": "b7",
+   "pagina": 15,
+   "linea": 603,
+   "numero": "85.372.658",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **Net Loss attributable to the Group** | **(85.372.658)** | **(140.056.180)** |"
+  },
+  {
+   "bloque": "b7",
+   "pagina": 15,
+   "linea": 603,
+   "numero": "140.056.180",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | **Net Loss attributable to the Group** | **(85.372.658)** | **(140.056.180)** |"
+  }
+ ]
+}

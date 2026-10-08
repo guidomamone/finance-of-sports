@@ -33,3 +33,9 @@
 - NIT 900456729, 10 ejercicios en SIIS (2016-2025); 2020-2022 y 2018 devuelven 404 en documentos-adicionales (sin documentos depositados).
 - Bajado a `Clubes/Colombia/Junior de Barranquilla/`: estados-financieros 2016, 2019 (régimen Pymes), y 2023-2025; 2017 solo certificación y dictamen. Total en disco: 5 ejercicios con estados-financieros.
 - Ninguno transcripto ni cargado todavía.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 5 ejercicios (2016, 2019, 2023-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

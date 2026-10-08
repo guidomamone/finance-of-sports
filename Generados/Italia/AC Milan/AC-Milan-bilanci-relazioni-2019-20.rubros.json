@@ -1,0 +1,420 @@
+{
+  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.md",
+  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.pdf",
+  "club": "acmilan-it",
+  "year": 2020,
+  "generatedAt": "2026-10-08T18:56:43.362Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "a) ricavi da gare",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        13.402
+      ],
+      "glosa": "a) Ingresos por taquilla"
+    },
+    {
+      "label": "b) abbonamenti",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        6.676
+      ],
+      "glosa": "b) Abonos"
+    },
+    {
+      "label": "c) ricavi da altre competizioni",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        3.551
+      ],
+      "glosa": "c) Ingresos por otras competiciones"
+    },
+    {
+      "label": "2 variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.075
+      ],
+      "glosa": "2 Variación de existencias de productos en curso de fabricación, semiterminados y terminados"
+    },
+    {
+      "label": "b) proventi da sponsorizzazioni",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        36.683
+      ],
+      "glosa": "b) Ingresos por patrocinios"
+    },
+    {
+      "label": "d) proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        15.562
+      ],
+      "glosa": "d) Ingresos comerciales y cánones"
+    },
+    {
+      "label": "e) proventi da cessione diritti audiovisivi",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        63.385
+      ],
+      "glosa": "e) Ingresos por cesión de derechos audiovisuales"
+    },
+    {
+      "label": "f) proventi vari",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        8.881
+      ],
+      "glosa": "f) Ingresos varios"
+    },
+    {
+      "label": "g) ricavi da cessione temporanea prestazioni calciatori",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        5.442
+      ],
+      "glosa": "g) Ingresos por cesión temporal de derechos de futbolistas"
+    },
+    {
+      "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        20.019
+      ],
+      "glosa": "h) Plusvalías por traspaso de derechos federativos de futbolistas"
+    },
+    {
+      "label": "i) altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        2.674
+      ],
+      "glosa": "i) Otros ingresos de la gestión de futbolistas"
+    },
+    {
+      "label": "l) ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        15.965
+      ],
+      "glosa": "l) Ingresos y rendimientos diversos"
+    },
+    {
+      "label": "6 per materie prime, sussidiarie, di consumo, merci",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.307
+      ],
+      "glosa": "6 Gastos de materias primas, auxiliares, de consumo y mercaderías"
+    },
+    {
+      "label": "Costi generali attività sportiva",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        23.876
+      ],
+      "glosa": "Gastos generales de la actividad deportiva"
+    },
+    {
+      "label": "Consulenze e collaborazioni",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        6.321
+      ],
+      "glosa": "Consultorías y colaboraciones profesionales"
+    },
+    {
+      "label": "Pubblicità e spese promozionali",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        1.631
+      ],
+      "glosa": "Publicidad y gastos de promoción"
+    },
+    {
+      "label": "Assicurazioni",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        0.568
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Emolumenti ad organi sociali",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        3.784
+      ],
+      "glosa": "Retribuciones a órganos sociales"
+    },
+    {
+      "label": "Spese amministrative e generali",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        5.876
+      ],
+      "glosa": "Gastos administrativos y generales"
+    },
+    {
+      "label": "Mensa e servizi di ristorazione",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        0.757
+      ],
+      "glosa": "Comedor y servicios de restauración"
+    },
+    {
+      "label": "Manutenzione e riparazione",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        1.644
+      ],
+      "glosa": "Mantenimiento y reparaciones"
+    },
+    {
+      "label": "Trasporti, magazzinaggio e spese viaggio",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        0.151
+      ],
+      "glosa": "Transportes, almacenaje y gastos de viaje"
+    },
+    {
+      "label": "Altri costi per servizi",
+      "lado": "expense",
+      "page": 74,
+      "section": "nota que desglosa \"7 per servizi\"",
+      "values": [
+        7.348
+      ],
+      "glosa": "Otros servicios exteriores"
+    },
+    {
+      "label": "Affitti passivi",
+      "lado": "expense",
+      "page": 76,
+      "section": "nota que desglosa \"8 per godimento di beni di terzi\"",
+      "values": [
+        7.971
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Noleggi e altre locazioni",
+      "lado": "expense",
+      "page": 76,
+      "section": "nota que desglosa \"8 per godimento di beni di terzi\"",
+      "values": [
+        2.064
+      ],
+      "glosa": "Alquileres y otros arrendamientos"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        151.663
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        7.136
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.752
+      ],
+      "glosa": "c) Indemnización por cese de la relación laboral (TFR)"
+    },
+    {
+      "label": "e) altri costi",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.327
+      ],
+      "glosa": "e) Otros gastos de personal"
+    },
+    {
+      "label": "a) ammortamento delle immobilizzazioni immateriali",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        103.418
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) ammortamento delle immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.996
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "c) altre svalutazioni delle immobilizzazioni",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        19.851
+      ],
+      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
+    },
+    {
+      "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.418
+      ],
+      "glosa": "d) Deterioro de valor de los créditos del activo corriente y de la tesorería"
+    },
+    {
+      "label": "12 accantonamenti per rischi",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        9.858
+      ],
+      "glosa": "12 Dotaciones a provisiones para riesgos"
+    },
+    {
+      "label": "a) spese varie organizzazione gare",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        3.233
+      ],
+      "glosa": "a) Gastos varios de organización de partidos"
+    },
+    {
+      "label": "b) tasse iscrizione gare",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.003
+      ],
+      "glosa": "b) Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "c) percentuale da riconoscere a squadre ospiti",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.241
+      ],
+      "glosa": "c) Porcentaje a liquidar a equipos visitantes"
+    },
+    {
+      "label": "d) costi per acquisizione temporanea calciatori",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        3.438
+      ],
+      "glosa": "d) Gastos por adquisición temporal de futbolistas"
+    },
+    {
+      "label": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.717
+      ],
+      "glosa": "e) Minusvalías por traspaso de derechos federativos de futbolistas"
+    },
+    {
+      "label": "f) altri oneri da gestione calciatori",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.005
+      ],
+      "glosa": "f) Otros gastos de la gestión de futbolistas"
+    },
+    {
+      "label": "g) altri oneri diversi di gestione",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.561
+      ],
+      "glosa": "g) Otros gastos diversos de gestión"
+    }
+  ]
+}

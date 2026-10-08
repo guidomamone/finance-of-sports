@@ -34,3 +34,5 @@ y la sección 19 (propuesta) del skill de sourcing.
 - [RC Strasbourg Alsace](<../Francia/RC Strasbourg Alsace.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
 - [Toulouse FC](<../Francia/Toulouse FC.md>) — cubierto vía agregado DNCG, sin cargar aún — Último chequeo: 2026-09-17
 - [Notas generales de Francia](<../Francia/_notas-generales.md>)
+- [_WorldFootball-documentos-de-liga](<../Francia/_WorldFootball-documentos-de-liga.md>) — 8 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Amiens SC](<../Francia/Amiens SC.md>) — 1 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08

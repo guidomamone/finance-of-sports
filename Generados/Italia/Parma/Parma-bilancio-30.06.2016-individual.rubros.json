@@ -1,0 +1,340 @@
+{
+  "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md",
+  "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.pdf",
+  "club": "parma-it",
+  "year": 2016,
+  "generatedAt": "2026-10-08T18:56:47.382Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "- Gare Campionato",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.114166
+      ],
+      "glosa": "- Partidos de liga"
+    },
+    {
+      "label": "- Gare Amichevoli e tornei",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.020141
+      ],
+      "glosa": "- Partidos amistosos y torneos"
+    },
+    {
+      "label": "Abbonamenti",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\"",
+      "values": [
+        0.582257
+      ],
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Proventi da sponsorizzazioni",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"altri\"",
+      "values": [
+        0.999287
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"altri\"",
+      "values": [
+        1.299222
+      ],
+      "glosa": "Ingresos publicitarios"
+    },
+    {
+      "label": "Proventi commerciali e royalties",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"altri\"",
+      "values": [
+        0.01583
+      ],
+      "glosa": "Ingresos comerciales y regalías"
+    },
+    {
+      "label": "Altri ricavi e proventi",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"altri\"",
+      "values": [
+        0.070777
+      ],
+      "glosa": "Otros ingresos y rendimientos"
+    },
+    {
+      "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.507845
+      ],
+      "glosa": "6) por materias primas, auxiliares, de consumo y mercancías"
+    },
+    {
+      "label": "7) per servizi",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        2.389965
+      ],
+      "glosa": "7) por servicios"
+    },
+    {
+      "label": "Noleggi vari",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+      "values": [
+        0.195253
+      ],
+      "glosa": "Arrendamientos varios"
+    },
+    {
+      "label": "Canone di affitto e locazione",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+      "values": [
+        0.167607
+      ],
+      "glosa": "Cánones de arrendamiento y alquiler"
+    },
+    {
+      "label": "Altri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+      "values": [
+        0.007439
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "a) salari e stipendi",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.962638
+      ],
+      "glosa": "a) sueldos y salarios"
+    },
+    {
+      "label": "b) oneri sociali",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.020948
+      ],
+      "glosa": "b) cargas sociales"
+    },
+    {
+      "label": "c) trattamento di fine rapporto",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.009911
+      ],
+      "glosa": "c) indemnizaciones por fin de contrato"
+    },
+    {
+      "label": "Amm. Costi di impianto ed ampliamento",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.061692
+      ],
+      "glosa": "Amort. Gastos de constitución y ampliación"
+    },
+    {
+      "label": "Concessioni, licenze, marchi e diritti simili",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.008486
+      ],
+      "glosa": "Concesiones, licencias, marcas y derechos similares"
+    },
+    {
+      "label": "Altre imm. immateriali - Migliorie beni di terzi",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\"",
+      "values": [
+        0.019379
+      ],
+      "glosa": "Otras inmovilizaciones intangibles - Mejoras en bienes de terceros"
+    },
+    {
+      "label": "Amm. Impianti e macchinari",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.002986
+      ],
+      "glosa": "Amort. Instalaciones y maquinaria"
+    },
+    {
+      "label": "Amm. Attrezzature industriali e commerciali",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.032104
+      ],
+      "glosa": "Amort. Equipamiento industrial y comercial"
+    },
+    {
+      "label": "Amm. Altre immobilizzazioni materiali",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"b) ammortamento delle immobilizzazioni materiali\"",
+      "values": [
+        0.010625
+      ],
+      "glosa": "Amort. Otras inmovilizaciones materiales"
+    },
+    {
+      "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.098402
+      ],
+      "glosa": "11) variación de existencias de materias primas, auxiliares, de consumo y mercancías"
+    },
+    {
+      "label": "12) accantonamenti per rischi",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.002087
+      ],
+      "glosa": "12) provisiones para riesgos"
+    },
+    {
+      "label": "13) altri accantonamenti",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.034523
+      ],
+      "glosa": "13) otras provisiones"
+    },
+    {
+      "label": "Spese varie per organizzazioni gare",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.303024
+      ],
+      "glosa": "Gastos varios por organización de partidos"
+    },
+    {
+      "label": "Tasse iscrizioni gare",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.040646
+      ],
+      "glosa": "Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "- Altri oneri da gestione calciatori:",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.001187
+      ],
+      "glosa": "- Otros gastos de gestión de futbolistas:"
+    },
+    {
+      "label": "- Costi valorizzazione calciatori",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.0059
+      ],
+      "glosa": "- Gastos por valorización de futbolistas"
+    },
+    {
+      "label": "- Spese, ammende e multe gare",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.012082
+      ],
+      "glosa": "- Gastos, sanciones y multas de partidos"
+    },
+    {
+      "label": "- Imposte e tasse sugli incassi",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.007283
+      ],
+      "glosa": "- Impuestos y tasas sobre la recaudación"
+    },
+    {
+      "label": "- Oneri tributari indiretti",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.072161
+      ],
+      "glosa": "- Cargas tributarias indirectas"
+    },
+    {
+      "label": "-Altri",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"14) oneri diversi di gestione\"",
+      "values": [
+        0.004179
+      ],
+      "glosa": "-Otros"
+    },
+    {
+      "label": "altri",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.001355
+      ],
+      "glosa": "otros"
+    }
+  ]
+}

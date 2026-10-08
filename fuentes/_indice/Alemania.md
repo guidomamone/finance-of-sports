@@ -34,3 +34,8 @@ completo.
 - [1. FC Heidenheim](<../Alemania/1. FC Heidenheim.md>) — 100% e.V., sin balance descargable, solo el agregado de la DFL — Último chequeo: 2026-09-17
 - DFL Finanzkennzahlen — 7 ejercicios agregados (2018-2024) con Bilanz+GuV de los 18 clubes a la vez, en `Clubes/Alemania/_DFL-Finanzkennzahlen/` — Último chequeo: 2026-09-17
 - [Notas generales de Alemania](<../Alemania/_notas-generales.md>)
+- [FC Schalke 04](<../Alemania/FC Schalke 04.md>) — 6 documentos, años 2021-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Hertha BSC](<../Alemania/Hertha BSC.md>) — 2 documentos, años 2019, 2022; sin cargar aún — Último chequeo: 2026-10-08
+- [Eintracht Braunschweig](<../Alemania/Eintracht Braunschweig.md>) — 2 documentos, años 2023; sin cargar aún — Último chequeo: 2026-10-08
+- [Elversberg](<../Alemania/Elversberg.md>) — 1 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08
+- [_WorldFootball-documentos-de-liga](<../Alemania/_WorldFootball-documentos-de-liga.md>) — 9 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08

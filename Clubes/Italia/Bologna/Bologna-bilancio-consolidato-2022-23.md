@@ -2075,53 +2075,49 @@ Bilancio XBRL
 
 --- pág. 53 ---
 
-BOLOGNA F.C. 1909 S.P.A.
-
+BOLOGNA F.C. 1909 S.P.A.  
 Bilancio al 30/06/2023
 
-- un mutuo dell'importo iniziale di 5 milioni di Euro concessions con la garanzia MCC della durata di 6 anni;
-- un mutuo dell'importo iniziale di 5 milioni di Euro con garanzia SACE, come previsto alla normativa emanata in periodo di pandemia Covid-19, della durata di 5 anni;
-- un mutuo dell'importo di 7,5 milioni di Euro con garanzia SACE come previsto alla normativa emanata in periodo di pandemia Covid-19, della durata di 5 anni comprensivi di due di preammortamento;
+- un mutuo dell'importo iniziale di 5 milioni di Euro concesso con la garanzia MCC della durata di 6 anni;
+- un mutuo dell'importo iniziale di 5 milioni di Euro con garanzia SACE, come previsto dalla normativa emanata in periodo di pandemia Covid-19, della durata di 5 anni;
+- un mutuo dell'importo di 7,5 milioni di Euro con garanzia SACE come previsto dalla normativa emanata in periodo di pandemia Covid-19, della durata di 5 anni comprensivi di due di preammortamento;
 - il debito attuale di 9 milioni di Euro derivante da anticipo di rate future relative alla cessione di un giocatore all'estero effettuato nell'agosto 2022;
-- il debito attualmente di Euro 2,9 milioni relativo alla cessione di crediti effettuata da squadra estera ad istituto bancario a seguito di acquisto di giocatore da parte della nostra società. In consegenza della tipologia del cessionario e per effetto del piano dilazione caratterizzato da interessi finanziari, si è proceduto a riclassificarlo tra i debiti finanziari.
-- tre mutui per un valore attuale di circa 5.2 milioni di Euro concessi alla controllata BFC Real Estate Srl dall'Istituto per il Credito Sportivo per opere di rqualificazione del Centro Sportivo 'N. Galli' di Casteldebole.
+- il debito attualmente di Euro 2,9 milioni relativo alla cessione di crediti effettuata da squadra estera ad istituto bancario a seguito di acquisto di giocatore da parte della nostra società. In conseguenza della tipologia del cessionario e per effetto del piano dilazione caratterizzato da interessi finanziari, si è proceduto a riclassificarlo tra i debiti finanziari.
+- tre mutui per un valore attuale di circa 5.2 milioni di Euro concessi alla controllata BFC Real Estate Srl dall'Istituto per il Credito Sportivo per opere di riqualificazione del Centro Sportivo 'N. Galli' di Casteldebole.
 
 Si segnala che al 30 giugno 2023 sono rispettati i parametri finanziari previsti dai contratti di finanziamento in essere.
 
-# 7) Dettaglio dei debiti verso fornitori
+### 7) Dettaglio dei debiti verso fornitori
 
 Di seguito è riportato il dettaglio dei debiti verso fornitori suddiviso tra quota a breve ed a lungo termine.
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Debiti esigibili entro l'esercizio successivo | 11.811.331 | (2.175.873) | 9.635.458  |
-|  Debiti esigibili oltre l'esercizio successivo | 2.170.574 | (1.045.396) | 1.125.178  |
-|  Debiti verso fornitori | 13.981.905 | (3.221.269) | 10.760.638  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :--- | :--- | :--- |
+| Debiti esigibili entro l'esercizio successivo | 11.811.331 | (2.175.873) | 9.635.458 |
+| Debiti esigibili oltre l'esercizio successivo | 2.170.574 | (1.045.396) | 1.125.178 |
+| **Debiti verso fornitori** | **13.981.905** | **(3.221.269)** | **10.760.636** |
 
 Il saldo al 30 giugno 2023 dei debiti verso fornitori esigibili entro l'esercizio successivo è composto principalmente da:
-
 - debiti verso procuratori per 5.755.475 (Euro 6.598.851 al 30/06/22); nel corso dell'esercizio sono stati effettuati pagamenti per Euro 9.719.649;
 - debiti verso fornitori nazionali per Euro 2.305.871 (Euro 2.435.993 al 30/06/22);
 - debito verso fornitori esteri per Euro 188.720 (Euro 1.054.396 al 30/06/22);
 - debiti per fatture da ricevere per Euro 1.421.096 (Euro 1.732.091 al 30/06/22).
 
 I debiti verso fornitori esigibili oltre l'esercizio successivo sono relativi a:
-
 - debiti verso procuratori per Euro 1.270.500
 - rettifica per costo ammortizzato per Euro 145.322.
 
-# 12) Dettaglio dei debiti tributari
+### 12) Dettaglio dei debiti tributari
 
 Di seguito è riportato il dettaglio dei debiti tributari suddiviso tra quota a breve e a lungo termine:
 
-|   | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio  |
-| --- | --- | --- | --- |
-|  Debiti esigibili entro l'esercizio successivo | 19.519.629 | (9.929.449) | 9.590.180  |
-|  Debiti esigibili oltre l'esercizio successivo | - | 8.301.759 | 8.301.759  |
-|  Debiti tributari | 19.519.629 | (1.627.690) | 17.891.939  |
+| | Valore di inizio esercizio | Variazione nell'esercizio | Valore di fine esercizio |
+| :--- | :--- | :--- | :--- |
+| Debiti esigibili entro l'esercizio successivo | 19.519.629 | (9.929.449) | 9.590.180 |
+| Debiti esigibili oltre l'esercizio successivo | - | 8.301.759 | 8.301.759 |
+| **Debiti tributari** | **19.519.629** | **(1.627.690)** | **17.891.939** |
 
-Bilancio XBRL
-
+Bilancio XBRL  
 49
 
 --- pág. 54 ---

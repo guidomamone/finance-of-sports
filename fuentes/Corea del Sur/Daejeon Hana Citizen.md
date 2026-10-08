@@ -38,3 +38,9 @@
 - **Cómo se descargaron los 4 PDFs**: mismo procedimiento en dos pasos con `curl` + cookie jar
   documentado en `Jeonbuk Hyundai Motors.md` / `_notas-generales.md` de este país.
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: DART: agotado (código de empresa `00544018` = 대전시티즌; las búsquedas "대전하나" y "시티즌" no devuelven ninguna empresa nueva) · sitio oficial: no encontrado (ningún dominio candidato respondió: daejeoncitizen.com, dcfc.co.kr, hanacitizen.com, daejeonhanacitizen.com) · barrido: 2 (Sonnet) — 2026-10-08
+
+- No hay una entidad nueva en DART posterior a 2019; la serie 2016-2019 sigue siendo todo lo público. Para 2020 en adelante el camino que queda es escribirle al club (candidato a mail: la hipótesis es que dejó de ser 소액공모법인 al entrar Hana Financial Group).

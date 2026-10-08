@@ -461,64 +461,66 @@ Consolidated financial statements as of June 30, 2023
 
 --- pág. 13 ---
 
-# GROUP F.C. INTERNAZIONALE MILANO
+**GROUP F.C. INTERNAZIONALE MILANO**
+**Consolidated financial statements as of June 30, 2023**
 
-Consolidated financial statements as of June 30, 2023
+**BALANCE SHEET - LIABILITIES**
+*Translation from the original version issued in Italian*
 
-|  **BALANCE SHEET - LIABILITIES** *Translation from the original version issued in Italian* |   | **30 June 2023** *amounts in Euro* | **30 June 2022** *amounts in Euro*  |
-| --- | --- | --- | --- |
-|  A) | **SHAREHOLDERS' EQUITY** |  |   |
-|  I | Share capital | 19.195.313 | 19.195.313  |
-|  II | Share premium reserve | 26.943.339 | 26.943.339  |
-|  III | Revaluation reserves |  |   |
-|   | - Revaluation reserve art. 110 DL 104/2020 | 203.867.123 | 203.867.123  |
-|  VII | Other reserves |  |   |
-|   | - Reserve for future capital increases | 252.112.089 | 242.112.089  |
-|   | - Reserve to cover future losses | 41.704.748 | 41.704.748  |
-|  VIII | Retained losses | (620.427.804) | (480.371.624)  |
-|  IX | Loss for the year attributable to the Group | (85.372.658) | (140.056.180)  |
-|   | Total Shareholders' equity attributable to the Group | (161.977.850) | (86.605.192)  |
-|   | Shareholders' equity attributable to Minorities | - | -  |
-|   | Total Shareholders' equity attributable to the Group and Minorities | (161.977.850) | (86.605.192)  |
-|  B) | **PROVISIONS FOR RISKS AND CHARGES** |  |   |
-|   | 2) for taxes, including deferred | 7.445.816 | 7.859.649  |
-|   | 4) other | 8.872.563 | 15.113.366  |
-|   | Total Provisions for risks and charges | 16.318.379 | 22.973.015  |
-|  C) | **PROVISIONS FOR EMPLOYEE SEVERANCE INDEMNITIES** | **986.585** | **884.011**  |
-|  D) | **PAYABLES** |  |   |
-|   | 1) Bond loan |  |   |
-|   | a) within 12 months | 3.573.230 | -  |
-|   | b) beyond 12 months | 405.739.236 | 407.944.623  |
-|   | 3) Shareholders' loan |  |   |
-|   | a) within 12 months | 27.505.477 | 21.235.696  |
-|   | b) beyond 12 months | 101.000.000 | 60.000.000  |
-|   | 4) Bank loan |  |   |
-|   | a) within 12 months | 47.715 | 51.897  |
-|   | 6) Advances | 1.897.407 | 3.598.658  |
-|   | 7) Trade payables |  |   |
-|   | a) within 12 months | 56.637.734 | 59.332.628  |
-|   | b) beyond 12 months | 12.573.499 | 36.361.955  |
-|   | 9) To subsidiaries |  |   |
-|   | a) within 12 months | 16.306 | 16.306  |
-|   | 10) To associated companies |  |   |
-|   | a) within 12 months | 1.844.719 | 2.436.047  |
-|   | 11) To parent companies |  |   |
-|   | a) within 12 months | 285.000 | 301.190  |
-|   | 12) Tax payables |  |   |
-|   | a) within 12 months | 39.654.392 | 84.189.106  |
-|   | b) beyond 12 months | 27.205.648 | -  |
-|   | 13) To pension and social security institutions |  |   |
-|   | a) within 12 months | 1.849.523 | 9.508.575  |
-|   | 14) Other payables |  |   |
-|   | a) within 12 months | 30.018.472 | 50.544.252  |
-|   | 15) To specific sector institutions |  |   |
-|   | a) within 12 months | 50.471.094 | 60.150.774  |
-|   | b) beyond 12 months | 47.058.410 | 85.478.355  |
-|   | **Total payables** | **807.377.862** | **881.159.062**  |
-|  E) | **ACCRUALS AND DEFERRED INCOME** |  |   |
-|   | I) Accrued liabilities | 611.615 | 578.889  |
-|   | II) Deferred income | 39.553.750 | 52.084.031  |
-|   | **TOTAL LIABILITIES** | **702.870.341** | **871.064.816**  |
+| | | 30 June 2023 amounts in Euro | 30 June 2022 amounts in Euro |
+|---|---|---|---|
+| **A)** | **SHAREHOLDERS' EQUITY** | | |
+| **I** | **Share capital** | 19.195.313 | 19.195.313 |
+| **II** | **Share premium reserve** | 26.943.339 | 26.943.339 |
+| **III** | **Revaluation reserves** | | |
+| | - Revaluation reserve art. 110 DL 104/2020 | 203.867.123 | 203.867.123 |
+| **VII** | **Other reserves** | | |
+| | - Reserve for future capital increases | 252.112.089 | 242.112.089 |
+| | - Reserve to cover future losses | 41.704.748 | 41.704.748 |
+| **VIII** | **Retained losses** | (620.427.804) | (480.371.624) |
+| **IX** | **Loss for the year attributable to the Group** | (85.372.658) | (140.056.180) |
+| | **Total Shareholders' equity attributable to the Group** | **(161.977.850)** | **(86.605.192)** |
+| | **Shareholders' equity attributable to Minorities** | - | - |
+| | **Total Shareholders' equity attributable to the Group and Minorities** | **(161.977.850)** | **(86.605.192)** |
+| **B)** | **PROVISIONS FOR RISKS AND CHARGES** | | |
+| | 2) for taxes, including deferred | 7.445.816 | 7.859.649 |
+| | 4) other | 8.872.563 | 15.113.366 |
+| | **Total Provisions for risks and charges** | **16.318.379** | **22.973.015** |
+| **C)** | **PROVISIONS FOR EMPLOYEE SEVERANCE INDEMNITIES** | 986.585 | 884.011 |
+| **D)** | **PAYABLES** | | |
+| | 1) Bond loan | | |
+| | a) within 12 months | 3.573.230 | - |
+| | b) beyond 12 months | 405.739.236 | 407.944.623 |
+| | 3) Shareholders' loan | | |
+| | a) within 12 months | 27.505.477 | 21.235.696 |
+| | b) beyond 12 months | 101.000.000 | 60.000.000 |
+| | 4) Bank loan | | |
+| | a) within 12 months | 47.715 | 51.897 |
+| | 6) Advances | 1.897.407 | 3.598.658 |
+| | 7) Trade payables | | |
+| | a) within 12 months | 56.637.734 | 59.332.628 |
+| | b) beyond 12 months | 12.573.499 | 36.361.955 |
+| | 9) To subsidiaries | | |
+| | a) within 12 months | 16.306 | 16.306 |
+| | 10) To associated companies | | |
+| | a) within 12 months | 1.844.719 | 2.436.047 |
+| | 11) To parent companies | | |
+| | a) within 12 months | 285.000 | 301.190 |
+| | 12) Tax payables | | |
+| | a) within 12 months | 39.654.392 | 84.189.106 |
+| | b) beyond 12 months | 27.205.648 | - |
+| | 13) To pension and social security institutions | | |
+| | a) within 12 months | 1.849.523 | 9.508.575 |
+| | 14) Other payables | | |
+| | a) within 12 months | 30.018.472 | 50.544.252 |
+| | 15) To specific sector institutions | | |
+| | a) within 12 months | 50.471.094 | 60.150.774 |
+| | b) beyond 12 months | 47.058.410 | 85.478.355 |
+| | **Total payables** | **807.377.862** | **881.150.062** |
+| **E)** | **ACCRUALS AND DEFERRED INCOME** | | |
+| | I) Accrued liabilities | 611.615 | 578.889 |
+| | II) Deferred income | 39.553.750 | 52.084.031 |
+| | **TOTAL LIABILITIES** | **702.870.341** | **871.064.816** |
 
 --- pág. 14 ---
 
@@ -573,186 +575,107 @@ Consolidated financial statements as of June 30, 2023
 
 --- pág. 15 ---
 
-**C) FINANCIAL INCOME AND EXPENSES**
-
-16) Other financial income
-
-a) from receivables classified as fixed assets
-
-- from other companies
-
-d) other income
-
-- from third parties
-
-17) Interest and other financial charges
-
-c) from parent companies
-
-e) other financial expenses
-
-17-bis) Gains and losses on foreign currency translation
-
-**Total Financial Income and Expense**
-
-270
-
-248
-
-695,256
-
-955,104
-
-(6,269,781)
-
-(4,800,000)
-
-(33,388,426)
-
-(45,165,624)
-
-(53,831)
-
-155,233
-
-(39,016,512)
-
-(48,855,039)
-
-**D) VALUE ADJUSTMENTS TO FINANCIAL ASSETS**
-
-18) Revaluation
-
-a) of investments
-
-**Total value adjustments to financial assets**
-
-1,821,837
-
-521,197
-
-1,821,837
-
-521,197
-
-**Pre-tax results**
-
-(77,228,355)
-
-(136,602,520)
-
-20) Current and deferred income taxes
-
-a) current taxes
-
-b) taxes related to previous fiscal years
-
-c) deferred tax liabilities
-
-d) deferred tax assets
-
-**Loss after taxes before minority share**
-
-21) Net Loss attributable to minority share
-
-**Net Loss attributable to the Group**
-
-(8,745,150)
-
-(5,027,092)
-
-187,014
-
-1,280,152
-
-413,833
-
-413,833
-
--
-
-(120,553)
-
-(85,372,658)
-
-(140,056,180)
-
--
-
--
-
-(85,372,658)
-
-(140,056,180)
+| | | | |
+|---|---|---|---|
+| **C)** | **FINANCIAL INCOME AND EXPENSES** | | |
+| | 16) Other financial income | | |
+| | a) from receivables classified as fixed assets | | |
+| | - from other companies | 270 | 248 |
+| | d) other income | | |
+| | - from third parties | 695.256 | 955.104 |
+| | 17) Interest and other financial charges | | |
+| | c) from parent companies | (6.269.781) | (4.800.000) |
+| | e) other financial expenses | (33.388.426) | (45.165.624) |
+| | 17-bis) Gains and losses on foreign currency traslation | (53.831) | 155.233 |
+| | **Total Financial Income and Expense** | **(39.016.512)** | **(48.855.039)** |
+| **D)** | **VALUE ADJUSTMENTS TO FINANCIAL ASSETS** | | |
+| | 18) Revaluation | | |
+| | a) of investments | 1.821.837 | 521.197 |
+| | **Total value adjustments to financial assets** | **1.821.837** | **521.197** |
+| | **Pre-tax results** | **(77.228.355)** | **(136.602.520)** |
+| | 20) Current and deferred income taxes | | |
+| | a) current taxes | (8.745.150) | (5.027.092) |
+| | b) taxes related to previous fiscal years | 187.014 | 1.280.152 |
+| | c) deferred tax liabilities | 413.833 | 413.833 |
+| | d) deferred tax assets | - | (120.553) |
+| | **Loss after taxes before minority share** | **(85.372.658)** | **(140.056.180)** |
+| | 21) Net Loss attributable to minority share | - | - |
+| | **Net Loss attributable to the Group** | **(85.372.658)** | **(140.056.180)** |
 
 On behalf of the Board of Directors
-
 The President
-
 (Zhang Kangyang)
 
 --- pág. 16 ---
 
-|  Euro | 12 months as of June 30, 2023 | 12 months as of June 30, 2022  |
-| --- | --- | --- |
-|  **A. Cash flow from operating activities** |  |   |
-|  Profit (loss) for the fiscal year | (85.372.658) | (140.056.180)  |
-|  Income taxes | 8.558.136 | 3.746.940  |
-|  Financial expenses | 38.962.681 | 49.010.272  |
-|  (Capital gains)/losses from the sale of players registration rights | (28.241.830) | (105.181.961)  |
-|  (Capital gains)/losses deriving from the disposal of other assets | - | (79)  |
-|  **1. Loss for the fiscal year before taxes, interests, dividends and capital gains/losses** | **(66.093.671)** | **(192.481.008)**  |
-|  *Non cash adjustments* |  |   |
-|  Accruals of provision for risks and charges and employee severance indemnities | 2.658.703 | 14.112.230  |
-|  Amortization | 113.945.291 | 126.375.836  |
-|  Impairments of fixed assets and receivables included in working capital | 8.260.421 | 42.359.602  |
-|  Other adjustments for non cash items | (1.321.931) | (6.391.602)  |
-|  **2. Cash flow from operating activities before changes in Net Working Capital** | **123.542.464** | **176.456.066**  |
-|  *Changes in Net Working Capital* |  |   |
-|  Decrease/(increase) in inventories | (217.127) | (280.769)  |
-|  Decrease/(increase) in trade receivables | 11.411.787 | (7.766.765)  |
-|  Increase/(decrease) in trade payables | (3.788.236) | (4.006.641)  |
-|  Decrease/(increase) in accrued income and prepaid expenses | 7.728.335 | (7.027.488)  |
-|  Increase/(decrease) in accrued expenses and deferred income | (12.497.555) | 12.507.342  |
-|  Other net working capital items | (46.816.525) | 40.178.103  |
-|  **3. Cash flow from operating activities after changes in Net Working Capital** | **(44.179.321)** | **33.603.782**  |
-|  *Other adjustments* |  |   |
-|  Interests paid (collected) | (28.904.926) | (31.156.704)  |
-|  (Taxes paid) | (6.615.006) | (3.870.810)  |
-|  (Usage of provisions) | (6.975.211) | (16.460.177)  |
-|  **Total other adjustments** | **(42.495.143)** | **(51.487.691)**  |
-|  **Cash flow from operating activities (A)** | **(29.225.651)** | **(33.908.851)**  |
-|  **B. Cash flow from investing activities** |  |   |
-|  *Tangible assets* | **(2.658.235)** | **(1.040.990)**  |
-|  (Increase) | (2.658.814) | (1.042.147)  |
-|  (Decrease) | 579 | 1.157  |
-|  *Player registration rights* | **(56.247.631)** | **86.528.745**  |
-|  (Increase) in intangible assets - player registration rights | (22.339.020) | (115.728.672)  |
-|  Decrease in intangible assets - player registration rights | 39.627.816 | 187.923.647  |
-|  Decrease/(Increase) receivables for disposal of players registration rights | (22.830.938) | 24.688.053  |
-|  Increase/(decrease) payables for the acquisition of players registration rights | (50.705.489) | (10.354.283)  |
-|  *Other intangible assets* | **(1.352.519)** | **(10.062.674)**  |
-|  (Increase) | (1.352.519) | (10.062.674)  |
-|  *Financial fixed assets* | **(179.677)** | **(3.962.391)**  |
-|  (Increase) | (179.677) | (3.962.391)  |
-|  **Total cash flow from investing activities** | **(1.532.196)** | **(14.025.065)**  |
-|  **Cash flow from investing activities (B)** | **(60.438.062)** | **71.462.690**  |
-|  **C. Cash flow from financing activities** |  |   |
-|  *Debt Financing* | **(4.182)** | **3.745.757**  |
-|  Increase (decrease) in short-term payables to banks | (4.182) | (50.188.902)  |
-|  New loans | - | 407.432.779  |
-|  (Loans repayment) | - | (353.498.120)  |
-|  *Shareholders' loan* | **51.000.000** | **-**  |
-|  New Shareholders' loan | 51.000.000 | -  |
-|  *Other cash flow from financing activities* | **-** | **-**  |
-|  **Cash flow from financing activities (C)** | **50.995.818** | **3.745.757**  |
-|  **Increase/(Decrease) cash and cash equivalents (A ± B ± C)** | **(38.667.895)** | **41.299.596**  |
-|  Cash and cash equivalents at beginning of the fiscal year | 139.183.539 | 97.883.943  |
-|  Cash and cash equivalents at the end of the fiscal year | 100.515.644 | 139.183.539  |
-|  **Break-even balance** | **38.667.895** | **(41.299.596)**  |
-|  Non monetary transaction during the fiscal year |  |   |
-|  Conversion to Equity of a principal of shareholders' loan | (10.000.000) | -  |
-|  Increase in reserve for future capital increases | 10.000.000 | -  |[{"box_2d": [282, 853, 462, 884], "label": "text", "caption": "On behalf of the Board of Directors\nThe President\n(Zhang Kangyang)"
+| Euro | 12 months as of June 30, 2023 | 12 months as of June 30, 2022 |
+|---|---|---|
+| **A. Cash flow from operating activities** | | |
+| **Profit (loss) for the fiscal year** | (85.372.658) | (140.056.180) |
+| Income taxes | 8.558.136 | 3.746.940 |
+| Financial expenses | 38.962.681 | 49.010.272 |
+| (Capital gains)/losses from the sale of players registration rights | (28.241.830) | (105.181.961) |
+| (Capital gains)/losses deriving from the disposal of other assets | - | (79) |
+| **1. Loss for the fiscal year before taxes, interests, dividends and capital gains/losses** | **(66.093.671)** | **(192.481.008)** |
+| *Non cash adjustments* | | |
+| Accruals of provision for risks and charges and employee severance indemnities | 2.658.703 | 14.112.230 |
+| Amortization | 113.945.291 | 126.375.836 |
+| Impairments of fixed assets and receivables included in working capital | 8.260.421 | 42.359.602 |
+| Other adjustments for non cash items | (1.321.931) | (6.391.602) |
+| **2. Cash flow from operating activities before changes in Net Working Capital** | **123.542.484** | **176.456.066** |
+| *Changes in Net Working Capital* | | |
+| Decrease/(increase) in inventories | (217.127) | (280.769) |
+| Decrease/(increase) in trade receivables | 11.411.787 | (7.766.765) |
+| Increase/(decrease) in trade payables | (3.788.236) | (4.006.641) |
+| Decrease/(increase) in accrued income and prepaid expenses | 7.728.335 | (7.027.488) |
+| Increase/(decrease) in accrued expenses and deferred income | (12.497.555) | 12.507.342 |
+| Other net working capital items | (46.816.525) | 40.178.103 |
+| **3. Cash flow from operating activities after changes in Net Working Capital** | **(44.179.321)** | **33.603.782** |
+| *Other adjustments* | | |
+| Interests paid (collected) | (28.904.926) | (31.156.704) |
+| (Taxes paid) | (6.615.006) | (3.870.810) |
+| (Usage of provisions) | (6.975.211) | (16.460.177) |
+| **Total other adjustments** | **(42.495.143)** | **(51.487.691)** |
+| **Cash flow from operating activities (A)** | **(29.225.651)** | **(33.908.851)** |
+| **B. Cash flow from investing activities** | | |
+| ***Tangible assets*** | **(2.658.235)** | **(1.040.990)** |
+| (Increase) | (2.658.814) | (1.042.147) |
+| (Decrease) | 579 | 1.157 |
+| ***Player registration rights*** | **(56.247.631)** | **86.528.745** |
+| (Increase) in intangible assets - player registration rights | (22.339.020) | (115.728.672) |
+| Decrease in intangible assets - player registration rights | 39.627.816 | 187.923.647 |
+| Decrease/(Increase) receivables for disposal of players registration rights | (22.830.938) | 24.688.053 |
+| Increase/(decrease) payables for the acquisition of players registration rights | (50.705.489) | (10.354.283) |
+| ***Other intangible assets*** | **(1.352.519)** | **(10.062.674)** |
+| (Increase) | (1.352.519) | (10.062.674) |
+| ***Financial fixed assets*** | **(179.677)** | **(3.962.391)** |
+| (Increase) | (179.677) | (3.962.391) |
+| ***Total cash flow from investing activities*** | **(1.532.196)** | **(14.025.065)** |
+| **Cash flow from investing activities (B)** | **(60.438.062)** | **71.462.690** |
+| **C. Cash flow from financing activities** | | |
+| ***Debt Financing*** | **(4.182)** | **3.745.757** |
+| Increase (decrease) in short-term payables to banks | (4.182) | (50.188.902) |
+| New loans | - | 407.432.779 |
+| (Loans repayment) | - | (353.498.120) |
+| ***Shareholders' loan*** | **51.000.000** | **-** |
+| New Shareholders' loan | 51.000.000 | - |
+| ***Other cash flow from financing activities*** | **-** | **-** |
+| **Cash flow from financing activities (C)** | **50.995.818** | **3.745.757** |
+| **Increase/(Decrease) cash and cash equivalents (A ± B ± C)** | **(38.667.895)** | **41.299.596** |
+| Cash and cash equivalents at beginning of the fiscal year | 139.183.539 | 97.883.943 |
+| Cash and cash equivalents at the end of the fiscal year | 100.515.644 | 139.183.539 |
+| **Breakeven balance** | **38.667.895** | **(41.299.596)** |
+
+Non monetary transaction during the fiscal year
+
+| | | |
+|---|---|---|
+| Conversion to Equity of a principal of shareholders' loan | (10.000.000) | - |
+| Increase in reserve for future capital increases | 10.000.000 | - |
+
+On behalf of the Board of Directors
+The President
+(Zhang Kangyang)
 
 --- pág. 17 ---
 
@@ -1231,43 +1154,37 @@ Lastly, with reference to the receivables accrued by virtue of the sponsorship a
 
 --- pág. 29 ---
 
-Analysis of the Balance Sheet line items
+# Analysis of the Balance Sheet line items
 
-# ASSETS
+## ASSETS
 
-# Fixed assets
+### Fixed assets
 
-# Intangible assets
+#### Intangible assets
 
 As of June 30, 2023 and June 30, 2022 intangible assets amounted respectively to Euro 412,999 thousand and to Euro 546,796 thousand.
+The fiscal year amortisation amounted overall to Euro 112,114 thousand (Euro 124,531 thousand as of June 30, 2022).
+Write-downs were made during the fiscal year in the amount of Euro 7,725 thousand (Euro 16,556 thousand as of June 30, 2022).
 
-The fiscal year amortisation amounted overall to Euro 112,114 thousand (Euro 124,531 thousand as of June 30, 2022). Write-downs were made during the fiscal year in the amount of Euro 7,725 thousand (Euro 16,556 thousand as of June 30, 2022).
-
-|  Line Standard | Balance as of June 30, 2022 | Increase | Decrease | Reclassifications | Balance as of June 30, 2023 | Balance as of June 30, 2022 | Impairment | Decrease | Amortisation | Balance as of June 30, 2023 | Net Intangibles  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Ind. Patents and similar intellectual rights | 476 | 13 | - | - | 461 | (388) | - | - | (21) | (407) | 94  |
-|  Concessions, licenses and trademarks | 400.550 | 575 | - | 25 | 407.456 | (131.197) | - | - | (14.903) | (146.100) | 261.388  |
-|  Construction in progress | 26.501 | 165 | (28.283) | (25) | 370 | - | (1) | - | - | (1) | 277  |
-|  Player registration rights | 598.604 | 22.339 | (30.237) | - | 593.708 | (372.056) | (7.724) | 16.849 | (89.925) | (490.956) | 137.950  |
-|  Other intangible assets | 104.355 | 301 | - | - | 104.558 | (83.959) | - | - | (7.285) | (91.224) | 13.332  |
-|  Total | 1.154.594 | 37.467 | (58.520) | - | 1.161.587 | (567.388) | (7.725) | 16.849 | (112.114) | (965.500) | 413.000  |
+| Euro thousand | Balance as of June 30, 2022 | Increase | Decrease | Reclassifications | Balance as of June 30, 2023 | Balance Accumulated Amortisation as of June 30, 2022 | Impairment | Decrease | Amortisation | Balance Accumulated Amortisation as of June 30, 2023 | Net intangibles |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ind. Patents and similar intellectual rights | 478 | 13 | - | - | 491 | (386) | - | - | (21) | (407) | 84 |
+| Concessions, licenses and trademarks | 406.556 | 875 | - | 25 | 407.456 | (131.197) | - | - | (14.903) | (146.100) | 261.356 |
+| Construction in progress | 26.501 | 165 | (26.263) | (25) | 378 | - | (1) | - | - | (1) | 377 |
+| Player registration rights | 596.604 | 22.339 | (30.237) | - | 588.706 | (372.056) | (7.724) | 18.849 | (89.925) | (450.856) | 137.850 |
+| Other intangible assets | 104.255 | 301 | - | - | 104.556 | (83.959) | - | - | (7.265) | (91.224) | 13.332 |
+| Total | 1.134.394 | 23.693 | (56.500) | - | 1.101.587 | (587.598) | (7.725) | 18.849 | (112.114) | (688.588) | 412.999 |
 
 The net residual value of the line item "Industrial patents and similar intellectual property rights", amounting to Euro 84 thousand as of June 30, 2023, mainly refers to rights to the images (photos and video) of the Intercampus projects throughout the world.
 
 The line item "Concessions, licenses and trademarks" mainly derives from the allocation of the F.C. Inter trademark as the result of the merger surplus in the financial statements as of June 30, 2007 due to the incorporation of Inter Capital S.r.l. in F.C. Internazionale Milano S.p.A. In allocating the above surplus amount, reference were made by using the result arose at the time of the assignment of the F.C. Inter trademark to Inter Brand S.r.l.
-
 It should be noted that during the fiscal year ended on June 30, 2021, the Group availed itself of the option set forth in Article 110 of Legislative Decree 104/2020, converted into Law No. 126 of October 13, 2020, and, supported by an independent expert, proceeded to revalue the "Inter" brand and the "Libreria Storica", recognised among intangible assets, for a total of Euro 212,141 thousand. The revaluation was carried out by intervening only on the historical cost, entailing for the "Inter" brand an extension of the amortisation period for a further 20 years, considered in any case consistent with the effective residual useful life of the revalued asset, while for the "Libreria Storica" amortisation is calculated on a straight-line basis for 20 years from the date of revaluation occurred in the financial year, within the time limits of effectiveness of the legal protection of the revalued asset and consistent with what is described in the appraisal.
 
-# Impairment test
-
+*Impairment test*
 The Directors, in accordance with OIC 9, in order to assess the recoverable value of the assets, including intangible fixed assets, recognised in the Group's consolidated financial statements, carried out an impairment test as of June 30, 2023 with the assistance of the independent expert.
-
 In particular, it should be noted that the impairment test was performed by the Directors with the support of an external consultant using the Group's consolidated financial statements as of June 30, 2023 and updated economic-financial projections for the period 2024/2028 ("Group Forecast Data"). The impairment test was carried out through the use of the Discounted Cash Flow Method, i.e. the valuation of the value of the company through the discounting of the cash flows deriving from the aforementioned economic-financial projections, discounted using the WACC (Weighted average Cost of Capital) rate of 9.23% (8.98% as of June 30, 2022), determined using a risk free rate of 3.98%, a market risk premium of 6.00% and a size premium of 3.02%. This impairment test was prepared by the Group's Directors with the support of an independent specialist and approved by the Directors together with the Group's Forecast Data and the approval of the consolidated financial statements on September 26, 2023.
-
 The assumptions adopted in the projection of the Group's revenues and related cash flows take into consideration (i) revenue values consistent with the forecasts of the men's First Team's sports results that foresee, with reference to the European competitions, for the year 2024 the elimination at the UEFA Champions League (UCL) Group Stage, resulting in a subsequent move to the UEFA Europa League (UEL) and elimination at the quarterfinals of the same competition, and for subsequent years a comparable performance consistent with the new format of the UEFA Champions League introduced from the 2024/2025 season; (ii) positive trend for sponsorship revenues due to more favorable negotiations signed with expiring sponsors during the projection period of the Forecast Data; (iii) revenues from ticketing and/or season tickets consistent with a return to full spectator capacity at the stadium (iv) increase of merchandising consistent with the new direct management business model and (v) operating cost trends estimated in line with the Group's current organisational logic.
-
-The long-term growth rate used in the terminal value is 2%, corresponding to the expected inflation rate in Italy in 2028 (source: International Monetary Fund), while changes in working capital were assumed to be zero, with depreciation equal to the investments made.
-
+The long-term growth rate used in the terminal value is 2%, corresponding to the expected inflation rate in Italy in 2028 (*source: International Monetary Fund*), while changes in working capital were assumed to be zero, with depreciation equal to the investments made.
 Finally, it should be noted that the WACC level for which the recoverable value is equal to the book value is 16.23%, confirming the non-existence of potential impairment indicators from the impairment test.
 
 13
@@ -1275,7 +1192,6 @@ Finally, it should be noted that the WACC level for which the recoverable value 
 --- pág. 30 ---
 
 Following the work carried out, also considering the worsening sensitivity analyzes of the scenario included in the Forecast Data and of the WACC, with the aim of carrying out "stress tests" to verify the sensitivity of the" recoverable amount "of the assets as prospective assumptions vary, there was no need to make any adjustment to the values of assets, since as of June 30, 2023 the recoverable amount of the same was higher than the value entered in the Balance Sheet.
-
 It should be noted, however, that the Directors cannot exclude that a worsening of the effects of the geopolitical situation connected with the Russian-Ukrainian crisis, as well as the continuation of a general inflationary context and an increase in interest rates, could lead to results that differ from those estimated; this could determine the need to write down the intangible fixed assets recorded in the financial statements, for which, however, no objective grounds can be seen at present. For this reason, the Directors will monitor the development of the aforementioned forecasts, in order to promptly reflect any impairment losses when they become probable.
 
 The item "Concessions, licenses and trademarks" therefore refers exclusively to software programs in use by the Company and to the sport title of A.S.D. Femminile Inter Milano, acquired during the last 2018/2019 season for the participation in the Women's Youth Championship, in compliance with the applicable regulations issued by the Lega Nazionale Professionisti and the FIGC.
@@ -1284,35 +1200,33 @@ Construction in progress as of June 30, 2023 mainly refer to the extraordinary m
 
 With respect to the line item player registration rights, the main transactions that occurred during the fiscal year are noted below:
 
-|  Club Purchases | Player | Value of the Righ | Actualization effect | Actualized value | Age | Contract Expiry  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  **Euro thousand**  |   |   |   |   |   |   |
-|  Free Transfer | Thuram Ulien Marcus Lilian | 8.000 | (413) | 7.587 | 25 | 2028  |
-|  S.S. Lazio | Acerbi Francesco | 4.000 | (218) | 3.782 | 35 | 2025  |
-|  Remo Stars F.C. | Akinsanmiro Ebenezer Ajodun | 466 | - | 466 | 18 | 2026  |
-|  Other "Player Registration Rights" acquired during the fiscal year (*) |   | 10.504 | - | 10.504 |  |   |
-|  **Total** |   | **22.870** | **(630)** | **22.339** |  |   |
+| Club Purchases | Player | Value of the Righ | Actualization effect | Actualized value | Age | Contract Expiry |
+|---|---|---|---|---|---|---|
+| **Euro thousand** | | | | | | |
+| Free Transfer | Thuram Ulien Marcus Lilian | 8.000 | (413) | 7.587 | 25 | 2028 |
+| S.S. Lazio | Acerbi Francesco | 4.000 | (218) | 3.782 | 35 | 2025 |
+| Remo Stars F.C. | Akinsanmiro Ebenezer Ajodun | 466 | - | 466 | 18 | 2026 |
+| Other "Player Registration Rights" acquired during the fiscal year (*) | | 10.504 | - | 10.504 | | |
+| **Total** | | **22.970** | **(630)** | **22.339** | | |
 
-(*) mainly includes earnings premiums accrued during the fiscal year related to players whose registration rights have been acquired in the preceding seasons
+*(\*) mainly includes earnings premiums accrued during the fiscal year related to players whose registration rights have been acquired in the preceding seasons*
 
-|  Club Sales | Player | Historical Cost | Age  |
-| --- | --- | --- | --- |
-|  **Euro thousand**  |   |   |   |
-|  U.S. Sassuolo Calcio | Pinamonti Andrea | 21.317 | 23  |
-|  U.S. Catanzaro 1929 | Pompetti Marco | 4.085 | 23  |
-|  Free Transfer | Vidal Arturo | 2.250 | 35  |
-|  Free Transfer | Sanchez Alexis | 500 | 34  |
-|  Temana Calcio | Corrado Niccolò | 291 | 22  |
-|  Other "Player Registration Rights" transferred during the fiscal year (*) |   | 1.791 |   |
-|  **Total** |   | **30.235** |   |
+| Club Sales | Player | Historical Cost | Age |
+|---|---|---|---|
+| **Euro thousand** | | | |
+| U.S. Sassuolo Calcio | Pinamonti Andrea | 21.317 | 23 |
+| U.S. Catanzaro 1929 | Pompetti Marco | 4.085 | 23 |
+| Free Transfer | Vidal Arturo | 2.250 | 35 |
+| Free Transfer | Sanchez Alexis | 500 | 34 |
+| Ternana Calcio | Corrado Niccolò | 291 | 22 |
+| Other "Player Registration Rights" transferred during the fiscal year (*) | | 1.791 | |
+| **Total** | | **30.235** | |
 
-(*) The net book value of the disposals made during the fiscal year amounted to Euro 11.4 million
+*(\*) The net book value of the disposals made during the fiscal year amounted to Euro 11.4 million*
 
 It is noted that with reference to the "Player registration rights" whose payments are deferred beyond 12 months, we proceeded to register the player right to a present value which considers the discounted effect as described in the accounting principles. This effect, for purchases made during the fiscal year, amounted to Euro 630 thousand.
-
 More details on the sale of Player Registration Rights can be found in the section "Other revenues and income" in commentary on gains on sale of player registrations rights.
-
-With reference to the players' registration rights, the Group recognised write-downs for Euro 7,724 thousand, mainly related to players transferred or whose contracts were terminated in July and August 2023.
+With reference to the players' registration rights, the Group recognised write-downs for Euro 7,724 thousand, mainy related to players transferred or whose contracts were terminated in July and August 2023.
 
 14
 
@@ -1320,55 +1234,50 @@ With reference to the players' registration rights, the Group recognised write-d
 
 Other intangible assets amount to Euro 13,332 thousand as of June 30, 2023 and mainly refer to the work of building renovation for the new headquarter of Viale della Liberazione and of new football pitches and training room inside the the Suning Sports Centre in memory of Giacinto Facchetti, training centre of the youth sector. The residual amount of "Capitalized youth programme costs" as of June 30, 2023 equal to Euro 10,607 thousand was reclassified within the item in question, for which as of July 1, 2022, with the coming into force of the new "Raccomandazioni Contabili ed il Piano dei Conti FIGC – Edizione 2021", it is no longer permitted to capitalise investments specifically sustained for the management and development of the youth sector and to amortise them for a period of five years; residual amount of Euro 17,313 thousand as of June 30, 2022 consequently continues to be amortised according to the original amortisation plan and for comparative purposes has also been reclassified in the item this under.
 
-## Property, plant and equipment
-
+**Property, plant and equipment**
 As of June 30, 2023 and as of June 30, 2022 property, plant and equipment amounted respectively to Euro 28,944 thousand and to Euro 28,117 thousand.
-
 It is noted that as of June 30, 2023 the Group had outstanding operating leases expiring in 2024 related to electronic office machinery for a total amount of rent that has not matured of Euro 170 thousand.
-
 As of June 30, 2023 no property, plant and equipment are encumbered by restrictions of mortgages or liens.
-
 Depreciation allocated during the fiscal year amounted to Euro 1,831 thousand and was calculated on all of the property, plant and equipment depreciated as of June 30, 2023, applying the tax rates representing the technical-economic life, specified in the measurement criteria.
 
-|  Item (thousand) | Balance as of June 30, 2022 | Increases | Decreases and Reclassifications | Balance as of June 30, 2023 | Balance Accumulated Amortisation as of June 30, 2022 | Debtors | Amortisation | Balance Accumulated Amortisation as of June 30, 2023 | Net Tangibles  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Land and Buildings | 33,516 | 37 | - | 33,058 | (9,361) | - | (926) | (10,227) | 23,326  |
-|  - Land and Sports Centre | 33,367 | 37 | - | 33,434 | (9,244) | - | (911) | (10,155) | 23,249  |
-|  - Light Buildings | 151 | - | - | 151 | (57) | - | (15) | (72) | 79  |
-|  Plant and Machinery | 2,425 | 13 | - | 2,637 | (2,193) | - | (153) | (2,306) | 331  |
-|  - Specific Systems | 815 | - | - | 815 | (648) | - | (35) | (683) | 132  |
-|  - Generic Systems | 1,484 | - | - | 1,484 | (1,285) | - | (62) | (1,347) | 137  |
-|  - Machinery | 328 | 12 | - | 328 | (220) | - | (56) | (276) | 62  |
-|  Industrial and commercial equipment | 1,357 | 191 | - | 1,546 | (1,107) | - | (78) | (1,165) | 363  |
-|  - Sports equipment | 368 | 10 | - | 378 | (276) | - | (26) | (302) | 78  |
-|  - Sanitary equipment | 719 | 29 | - | 748 | (620) | - | (25) | (646) | 103  |
-|  - Various equipment | 270 | 152 | - | 422 | (211) | - | (27) | (238) | 114  |
-|  Other assets | 6,614 | 224 | (5) | 6,633 | (4,165) | 4 | (674) | (4,058) | 1,978  |
-|  - Electronic machinery | 2,717 | 108 | (5) | 2,910 | (1,651) | 4 | (348) | (2,225) | 685  |
-|  - Furniture and Office machines | 3,881 | 28 | - | 3,907 | (2,258) | - | (326) | (2,614) | 1,293  |
-|  - Motor Vehicles | 16 | - | - | 16 | (16) | - | - | (16) | -  |
-|  Under construction and advances | 748 | 2,198 | - | 2,944 | - | - | - | - | 2,944  |
-|  Total | 41,887 | 2,002 | (5) | 47,317 | (18,746) | 4 | (1,591) | (18,573) | 28,998  |
+| Euro thousand | Balance as of June 30, 2022 | Increases | Decreases and Reclassifications | Balance as of June 30, 2023 | Balance Accumulated Amortisation as of June 30, 2022 | Transfers | Amortisation | Balance Accumulated Amortisation as of June 30, 2023 | Net Tangibles |
+|---|---|---|---|---|---|---|---|---|---|
+| **Land and Buildings** | 33.518 | 37 | - | 33.555 | (9.301) | - | (926) | (10.227) | 23.328 |
+| - Land and Sports Centre | 33.367 | 37 | - | 33.404 | (9.244) | - | (911) | (10.155) | 23.249 |
+| - Light Buildings | 151 | - | - | 151 | (57) | - | (15) | (72) | 79 |
+| **Plant and Machinery** | 2.625 | 12 | - | 2.637 | (2.153) | - | (153) | (2.306) | 331 |
+| - Specific Systems | 815 | - | - | 815 | (648) | - | (35) | (683) | 132 |
+| - Generic Systems | 1.484 | - | - | 1.484 | (1.285) | - | (62) | (1.347) | 137 |
+| - Machinery | 326 | 12 | - | 338 | (220) | - | (56) | (276) | 62 |
+| **Industrial and commercial equipment** | 1.357 | 191 | - | 1.548 | (1.107) | - | (78) | (1.185) | 363 |
+| - Sports equipment | 368 | 10 | - | 378 | (276) | - | (26) | (302) | 76 |
+| - Sanitary equipment | 719 | 29 | - | 748 | (620) | - | (25) | (645) | 103 |
+| - Various equipment | 270 | 152 | - | 422 | (211) | - | (27) | (238) | 184 |
+| **Other assets** | 6.614 | 224 | (5) | 6.833 | (4.185) | 4 | (674) | (4.855) | 1.978 |
+| - Electronic machinery | 2.717 | 198 | (5) | 2.910 | (1.881) | 4 | (348) | (2.225) | 685 |
+| - Furniture and Office machines | 3.881 | 26 | - | 3.907 | (2.288) | - | (326) | (2.614) | 1.293 |
+| - Motor Vehicles | 16 | - | - | 16 | (16) | - | - | (16) | - |
+| **Under construction and advances** | 749 | 2.195 | - | 2.944 | - | - | - | - | 2.944 |
+| **Total** | **44.863** | **2.659** | **(5)** | **47.517** | **(16.746)** | **4** | **(1.831)** | **(18.573)** | **28.944** |
 
 It is noted that the line item "Land and buildings" includes the purchase cost for the "Suning Sports Centre in memory of Angelo Moratti" of Appiano Gentile, the men's First Team's usual headquarters for training and retreats.
-
 It is noted that in prior fiscal years, revaluations were made just for statutory purposes and without any tax burden, on real property in accordance with Law Decree 29/11/08, for the total amount of Euro 2,334 thousand on the basis of a specific appraisal.
 
-## Financial fixed assets
+**Financial fixed assets**
 
-### Investments in associated companies
+**Investments in associated companies**
+The balance as of June 30, 2023 represents the value of the 50% stake in M-I Stadio S.r.l.; such equity investment, as already noted in the paragraph "Consolidation Standards", was synthetically consolidated using the equity method.
+The relevant information referring to the associated companies is set forth below:
 
-The balance as of June 30, 2023 represents the value of the 50% stake in M-I Stadio S.r.l.; such equity investment, as already noted in the paragraph "Consolidation Standards", was synthetically consolidated using the equity method. The relevant information referring to the associated companies is set forth below:
-
-|   | M-I Stadio S.r.l.  |
-| --- | --- |
-|  Registered Office | P.le A. Moratti snc Milan  |
-|  Share capital | 1.000.000  |
-|  Shareholders' Equity | 7.339.904  |
-|  Fiscal year result | 3.643.673  |
-|  Shareholding | 50%  |
-|  Shareholding (value) | 3.669.952  |
-|  Value of equity investment | 3.669.952  |
+| | M-I Stadio S.r.l. |
+|---|---|
+| Registered Office | P.le A. Moratti snc Milan |
+| Share capital | 1.000.000 |
+| Shareholders' Equity | 7.339.904 |
+| Fiscal year result | 3.643.673 |
+| Shareholding | 50% |
+| Shareholding (value) | 3.669.952 |
+| Value of equity investment | 3.669.952 |
 
 The associated company as of June 30, 2023 prepares its financial statements on a going concern basis, even without the asset and financial support of the Shareholders, FC Inter and AC Milan, which, moreover, have always shown themselves
 
@@ -1601,18 +1510,17 @@ The line item accrued income and prepaid expense can be analysed as follows:
 
 --- pág. 37 ---
 
-|   | Balance as of June 30, 2021 | Balance as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Prepayments for rent | 1.238 | 1.132  |
-|  Prepaid insurance premiums | 426 | 361  |
-|  Prepaid expenses for guarantees | 2.562 | 2.495  |
-|  Prepaid expenses for loans | - | 55  |
-|  Prepaid expenses for Bond Loan | 172 | 128  |
-|  Prepaid expenses FIFA Agents | 8.667 | 8.753  |
-|  Prepaid expenses for temporary acquisition of football players | - | 7.860  |
-|  Other prepaid expenses for services | 1.318 | 1.326  |
-|  Total | 14.383 | 22.110  |
+| Euro thousand | Balance as of June 30, 2023 | Balance as of June 30, 2022 |
+|---|---|---|
+| Prepayments for rent | 1.238 | 1.132 |
+| Prepaid insurance premiums | 426 | 361 |
+| Prepaid expenses for guarantees | 2.562 | 2.495 |
+| Prepaid expenses for loans | - | 55 |
+| Prepaid expenses for Bond Loan | 172 | 128 |
+| Prepaid expenses FIFA Agents | 8.667 | 8.753 |
+| Prepaid expenses for temporary acquisition of football players | - | 7.860 |
+| Other prepaid expenses for services | 1.318 | 1.326 |
+| **Total** | **14.383** | **22.110** |
 
 FIFA Agents prepaid expenses, amounting to Euro 8,667 thousand, refer to the share of costs to be borne by agents relative to the stipulation of economic contracts and contract renewals of the players assisted by them.
 
@@ -1626,28 +1534,25 @@ Other prepaid expenses for services, equal to Euro 1,318 thousand, mainly includ
 
 It should be noted that the item prepaid expenses also include amounts for Euro 6,876 thousand that expire beyond 12 months. There are no prepaid expenses due beyond 5 years.
 
-## LIABILITIES
+**LIABILITIES**
 
-Shareholders' equity
+**Shareholders' equity**
 
-|   | Share capital | Share premium reserve | Legal reserve | Revaluation reserve art. 119 DL 100/2020 | Reserve for future capital increases | Reserve to cover future losses | Retained earnings (losses) | Fiscal year profit/losses | Total  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Euro thousand  |   |   |   |   |   |   |   |   |   |
-|  Retained as of June 30, 2021 | 19,195 | 28,943 | - | 203,887 | 242,112 | 41,705 | (234,782) | (245,579) | 53,451  |
-|  Resolution ex Shareholders' meeting on October 28, 2021: |  |  |  |  |  |  |  |  |   |
-|  - Retained earnings (losses) |  |  |  |  |  |  | (245,579) | 245,579 | -  |
-|  Result for the fiscal year 2021/2022 |  |  |  |  |  |  |  | (140,056) | (140,056)  |
-|  Retained as of June 30, 2022 | 19,195 | 28,943 | - | 203,887 | 242,112 | 41,705 | (482,371) | (140,056) | (48,855)  |
-|  Resolution ex Shareholders' meeting on October 28, 2022: |  |  |  |  |  |  |  |  |   |
-|  - Retained earnings (losses) |  |  |  |  |  |  | (140,056) | 140,056 | -  |
-|  - Reserve for future capital increases |  |  |  |  | 10,000 |  |  |  | 10,000  |
-|  Result for the fiscal year 2022/2023 |  |  |  |  |  |  |  | (85,373) | (85,373)  |
-|  Retained as of June 30, 2023 | 19,195 | 28,943 | - | 203,887 | 242,112 | 41,705 | (692,427) | (85,373) | (132,797)  |
+| Euro thousand | Share capital | Share premium reserve | Legal reserve | Revaluation reserve art. 110 DL 104/2020 | Reserve for future capital increases | Reserve to cover future losses | Retained earnings (losses) | Fiscal year profit/losses | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| **Balance as of June 30, 2021** | 19.195 | 26.943 | - | 203.867 | 242.112 | 41.705 | (234.792) | (245.579) | 53.451 |
+| Resolution ex Shareholders' meeting of October 28, 2021: | | | | | | | | | |
+| - Retained earnings (losses) | | | | | | | (245.579) | 245.579 | - |
+| Result for the fiscal year 2021/2022 | | | | | | | | (140.056) | (140.056) |
+| **Balance as of June 30, 2022** | 19.195 | 26.943 | - | 203.867 | 242.112 | 41.705 | (480.371) | (140.056) | (86.605) |
+| Resolution ex Shareholders' meeting of October 28, 2022: | | | | | | | | | |
+| - Retained earnings (losses) | | | | | | | (140.056) | 140.056 | - |
+| - Reserve for future capital increases | | | | | 10.000 | | | | |
+| Result for the fiscal year 2022/2023 | | | | | | | | (85.373) | (85.373) |
+| **Balance as of June 30, 2023** | 19.195 | 26.943 | - | 203.867 | 252.112 | 41.705 | (620.427) | (85.373) | (161.978) |
 
 During the fiscal year, the Group posted losses of Euro 85,273 thousand (Euro 140,056 thousand as of June 30, 2022), a significant improvement over the previous fiscal year mainly due to the good sport performance achieved by men's First Team, which allowed for a significant increase in ticket sales and television rights, making it possible to offset the negative effect of lower revenues from capital gains of the sales of the players registration rights compared to the previous fiscal year.
-
 Group's Shareholders' equity as of June 30, 2023 results negative for Euro 161,978 thousand, with cash and cash equivalents of Euro 100,516 thousand.
-
 It should also be noted that the Parent Company, despite the conversion into Shareholders' equity reserves of Shareholders' loans of the current fiscal years and the benefits of revaluations ex lege in the fiscal year ended on June 30, 2021, shows a loss of Euro 83,476 thousand as of June 30, 2023, with a negative Shareholders' equity of Euro 109,756 thousand. In this regard, it should be noted that the Leading Shareholder proceeded to convert shareholder loans totaling Euro 86 million into Shareholders' equity reserves, specifically 10 million Euro on June 30, 2023, and Euro 76 million on
 
 21
@@ -1782,21 +1687,18 @@ The following is the breakdown of payables by foreign currency:
 
 --- pág. 41 ---
 
-|   | Balance as of June 30, 2023 | Balance as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Payables in Euro | 806.938 | 880.570  |
-|  Payables in USD | 342 | 378  |
-|  Payables in GBP | 6 | 184  |
-|  Payables in HK$ | 16 | 16  |
-|  Payables in AUD | 2 | 2  |
-|  Payables in SAR | 74 | 0  |
-|   | 807.378 | 881.159  |
+| Euro thousand | Balance as of June 30, 2023 | Balance as of June 30, 2022 |
+|---|---|---|
+| Payables in Euro | 806.938 | 880.570 |
+| Payables in USD | 342 | 378 |
+| Payables in GBP | 6 | 184 |
+| Payables in HK$ | 16 | 16 |
+| Payables in AUD | 2 | 2 |
+| Payables in SAR | 74 | 0 |
+| | **807.378** | **881.150** |
 
-# Bond Loan
-
-As described in the section "Other information - Debt refinancing" the subsidiary Inter Media on February 9, 2022, issued a New Bond, inter alia, aimed at the early termination of the previous Bond placed with institutional investors, of December 21, 2017 and July 31, 2020, for a nominal amount of Euro 300 million and Euro 75 million at an issue price of 93%, maturing at December 31, 2022 and a nominal fixed rate at 4.875%. The New Bond Loan, senior, guaranteed non-convertible and not subordinated, issued and placed for an amount of Euro 415 million, with an annual interest rate of 6.75% and maturing on February 9, 2027, as the previous issues, has as a guarantee the liquidity flows deriving from sponsorship agreements and media contracts signed by the subsidiary Inter Media as well as the flows from the proceeds of the UEFA rights and the television rights of Serie A and Coppa Italia generated by the Parent Company.
-
+**Bond Loan**
+As described in the section "Other information - Debt refinancing" the subsidiary Inter Media on February 9, 2022, issued a New Bond, *inter alia*, aimed at the early termination of the previous Bond placed with institutional investors, of December 21, 2017 and July 31, 2020, for a nominal amount of Euro 300 million and Euro 75 million at an issue price of 93%, maturing at December 31, 2022 and a nominal fixed rate at 4.875%. The New Bond Loan, senior, guaranteed non-convertible and not subordinated, issued and placed for an amount of Euro 415 million, with an annual interest rate of 6.75% and maturing on February 9, 2027, as the previous issues, has as a guarantee the liquidity flows deriving from sponsorship *agreements and media contracts* signed by the subsidiary Inter Media as well as the flows from the proceeds of the UEFA rights and the television rights of Serie A and Coppa Italia generated by the Parent Company.
 The repayment schedule for the principal in six-monthly instalments is shown below. It starts from June 30, 2024, after a grace period with payment of the interest-bearing line only:
 
 - Euro 3.57 million on June 30, 2024;
@@ -1808,9 +1710,7 @@ The repayment schedule for the principal in six-monthly instalments is shown bel
 - Euro 391.67 million by 9 February 2027.
 
 The total debt is recorded in the financial statements net of ancillary costs, recorded according to the amortized cost criterion, for an amount equal to Euro 409,312 thousand, which represents the current value of future cash flows, less transaction costs equal to Euro 7,567 thousand. The effective interest rate equal to 7,3318% represents the internal rates of return (IRR), constant over the duration of the Bond, which make the present value of future cash flows deriving from the total debt equal to their initial recognition value (thus including the effect of transaction costs). As a result, it should be noted that the Income Statement is not debited with the interest expense paid at maturity to the extent of the nominal interest rate of 6,75% but is integrated on the basis of the effective interest rate, which corresponds to the implicit financial burden of the New Bond Loan.
-
 The interest instalment due on June 30, 2022, on December 30,2022 and June 30,2023, respectively amounting to Euro 10,972 thousand, Euro 14,006 and Euro 14,006 thousand, were duly paid.
-
 The New Bond Loan also provides for compliance with two financial parameters (covenants) respectively the Debt Service Coverage Ratio and the Pro-forma Debt Service Coverage Ratio with reference to the subsidiary Inter Media's results. In brief, the first represents the ratio between the net cash flows from operations and the sum of financial charges and capital payments made in the 12 months prior to the calculation date (or alternatively, if 12 months have not passed since the Bond was stipulated, the period between the stipulation date and the calculation date). The second, on the other hand, is calculated using the same factors, determined on the estimated values - as reported in the budget - for the 12 months following the calculation date. The aforesaid parameters on the basis of the calculations made as of June 30, 2023 are respected; likewise, on the basis of the projections available to date, it is estimated that the same will be respected with reference to the next maturities over the next 12 months, taking into account the commitment to financial support by the Suning group, which makes it possible to neutralize the existing elements of uncertainty, which to date cannot be estimated, also with reference to the effects on cash flow generation deriving from the climate of general instability connected to the conflict in Ukraine, as well as the inflationary context, the increase in interest rates and the cyclical slowdown at a global macroeconomic level.
 
 For the sake of completeness of information, it should be noted that the amount of the obligations due beyond the next financial year is 405,739 thousand, while there are none due beyond 5 years.
@@ -1874,87 +1774,73 @@ The part due beyond 12 months mainly refers to payables to the City of Milan, to
 
 --- pág. 43 ---
 
-## Payables to subsidiaries
-
+**Payables to subsidiaries**
 The line item includes trade payables to the subsidiary Inter Brand China Co., Ltd. in liquidation in the amount of Euro 16 thousand.
 
-## Payables to associated companies
-
+**Payables to associated companies**
 The item amounts to Euro 1,845 thousand and refers mainly to net payables related to activities and services required for the operational management of the G. Meazza Stadium as per the contract currently in force for the 2022/2023 football season and to commercial transactions held with the company M-I Stadio S.r.l.
 
-## Payables to parent companies
-
+**Payables to parent companies**
 The item in question, amounted to Euro 285 thousand, is related to the 60% commission paid to Jiangsu Suning Sports Industry Co., Ltd. on the 2018/2019 and 2019/2020 sponsorship contract with ePrice.
 
-## Tax payables
-
+**Tax payables**
 Tax payables are represented by the following amounts:
 
-|   | Balance as of June 30, 2023 | Balance as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Payables for IRPEF for employees, registered personnel and self-employed | 50.800 | 70.929  |
-|  Payables for IRAP (tax on regional productive activities) | 1.315 | 3.207  |
-|  Payables for VAT | 5.040 | 2.579  |
-|  With Holding Tax | 9.664 | 7.461  |
-|  Other payables | 41 | 13  |
-|   | 66.860 | 84.180  |
+| Euro thousand | Balance as of June 30, 2023 | Balance as of June 30, 2022 |
+|---|---|---|
+| Payables for IRPEF for employees, registered personnel and self-employed | 50.800 | 70.929 |
+| Payables for IRAP (tax on regional productive activities) | 1.315 | 3.207 |
+| Payables for VAT | 5.040 | 2.579 |
+| With Holding Tax | 9.664 | 7.461 |
+| Other payables | 41 | 13 |
+| | 66.860 | 84.189 |
 
 The item "Payables for IRPEF for employees, registered personnel and self-employed", equal to Euro 50,800 thousand as of June 30, 2023 (Euro 70,929 thousand as of June 30, 2022), refers mainly to withholding taxes accrued on remuneration to club members, paid by the Parent Company in the months following June 30, 2023, in addition to those until September 2027, in compliance with the Legislative Decrees of fiscal year 2020 and the next changes, until the Legislative Decrees of December 29, 2022.
-
 The payable due beyond 12 months and classified as long term, amounting to Euro 27,206 thousand, includes IRPEF payables relative to withholdings to be paid in December 2022, accrued in 60 monthly instalments and whose last due date is September 2027.
-
 For the sake of full disclosure, we report that, in order to take advantage of the above-mentioned instalment plan, on December 29, 2022 the Group paid Euro 1,256 thousand as a surcharge equal to 3% of the amount of the overdue debt, the amount of which was recognised in "Other operating expenses" under the item " Costs, fines and penalties for matches".
 
 "Payables for VAT" in the amount of Euro 5,040 thousand, refers to the total amount of VAT settlements for the month of June 2023 of the companies included in the consolidation area, except Inter Brand, as better commented in the previous paragraph "Tax receivables" to which we refer.
 
 The item relating to payables for "With Holding Tax", amounting to Euro 9,664 thousand as of June 30, 2023 (Euro 7,461 thousand as of June 30, 2022), mainly includes the interest expense accrued on the loans granted by the parent companies Great Horizon S.à.r.l. and Grand Tower S.à.r.l.
 
-## Social security payables
-
+**Social security payables**
 This amount, related to contributions for the month of June 2023, can be broken-down as follows:
 
 27
 
 --- pág. 44 ---
 
-|   | Balance as of June 30, 2023 | Balance as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Payables to INPS (national social welfare institution) | 298 | 2.453  |
-|  Payables to INAIL (national institute for insurance against accidents at work) | 302 | 500  |
-|  Payables to PREVINDAI (pension fund for directors) | 114 | 120  |
-|  Payables to ENPALS (entertainment industry employees'pension organization) | 748 | 6.045  |
-|  Expenses for vacations matured but not taken | 385 | 366  |
-|  Payables to other entities | 3 | 25  |
-|   | 1.830 | 9.509  |
+| Euro thousand | Balance as of June 30, 2023 | Balance as of June 30, 2022 |
+|---|---|---|
+| Payables to INPS (national social welfare institution) | 298 | 2.453 |
+| Payables to INAIL (national institute for insurance against accidents at work) | 302 | 500 |
+| Payables to PREVINDAI (pension fund for directors) | 114 | 120 |
+| Payables to ENPALS (entertainment industry employees' pension organization) | 748 | 6.045 |
+| Expenses for vacations matured but not taken | 385 | 366 |
+| Payables to other entities | 3 | 25 |
+| | 1.850 | 9.509 |
 
 This item decreased by a total of Euro 7,659 thousand during the year, mainly as a result of the payment of contributions accrued in previous years, in compliance with the governmental provisions of the Budget Law 2020 and its subsequent amendments and additions.
 
 The balance shown in the financial statements as of June 30, 2023, therefore, refers to contributions to social security institutions accrued as of the same date, paid by the Group in July 2023.
 
-### Other payables
-
+**Other payables**
 Other payables are composed as follows:
 
-|   | Balance as of June 30, 2023 | Balance as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Payables to employees and contractors for remuneration accrued but not yet paid | 28.944 | 49.453  |
-|  Miscellaneous other payables | 1.074 | 1.091  |
-|   | 30.018 | 56.544  |
+| Euro thousand | Balance as of June 30, 2023 | Balance as of June 30, 2022 |
+|---|---|---|
+| Payables to employees and contractors for remuneration accrued but not yet paid | 28.944 | 49.453 |
+| Miscellaneous other payables | 1.074 | 1.091 |
+| | 30.018 | 50.544 |
 
 The item "Payables to employees and contractors for remuneration accrued but not yet paid" mainly includes:
-
-- (i) payables for wages and salaries to registered personnel accrued as of June 30, 2023, amounting to Euro 6,294 thousand and paid in July 2023; and
-- (ii) payables related to the accrual of bonuses accrued by club members and employees related to seasonal objectives achieved, amounting to Euro 20,792 thousand, which will be paid in the 2023/2024 fiscal year.
+(i) payables for wages and salaries to registered personnel accrued as of June 30, 2023, amounting to Euro 6,294 thousand and paid in July 2023; and
+(ii) payables related to the accrual of bonuses accrued by club members and employees related to seasonal objectives achieved, amounting to Euro 20,792 thousand, which will be paid in the 2023/2024 fiscal year.
 
 The decrease for the year, amounting to Euro 20,526 thousand, is directly related to the payment made during the fiscal year of bonuses and redundancies recognised in the financial statements on an accrual basis as of June 30, 2022.
 
-### Payables to specific sector institutions
-
+**Payables to specific sector institutions**
 This refers to relationships with entities and companies in the sector and shows a decrease of Euro 48,099 thousand compared to June 30, 2022. The balance consists of: i) payables to national football clubs in the amount of Euro 75,623 thousand, ii) payables to foreign football clubs in the amount of Euro 10,776 thousand, iii) invoices to be received from football clubs, including solidarity contribution, in the amount of Euro 3,506 thousand and iv) payables for factoring for Euro 7,625 thousand.
-
 In particular, payables to specific sector institutions, settled by offsetting with "Receivables from specific sector institutions" shown on the asset side, are as follows:
 
 28
@@ -2210,43 +2096,40 @@ Costs of raw materials, supplies and consumables
 
 The increase compared to the previous fiscal year is mainly due to the item "E-commerce material", which includes the cost of products intended for sale through the e-commerce platform launched in July 2022.
 
-# Costs of services
+**Costs of services**
 
-|   | 12 months as of June 30, 2023 | 12 months as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Costs for sport activities | 6.530 | 6.418  |
-|  Specific technical costs | 12.634 | 24.280  |
-|  Costs for accomodation, food, transport | 4.060 | 1.983  |
-|  Ticketing service, ground admission, security control | 4.095 | 3.683  |
-|  Insurance and pension | 2.583 | 2.359  |
-|  Intercampus | 369 | 273  |
-|  Administrative, advertising and general | 31.809 | 25.378  |
-|   | 62.080 | 54.374  |
+| Euro thousand | 12 months as of June 30, 2023 | 12 months as of June 30, 2022 |
+|---|---|---|
+| Costs for sport activities | 6.530 | 6.418 |
+| Specific technical costs | 12.634 | 24.280 |
+| Costs for accomodation, food, transport | 4.060 | 1.983 |
+| Ticketing service, ground admission, security control | 4.095 | 3.683 |
+| Insurance and pension | 2.583 | 2.359 |
+| Intercampus | 369 | 273 |
+| Administrative, advertising and general | 31.809 | 25.378 |
+| | 62.080 | 64.374 |
 
 Costs for sports activities include the following:
 
-|   | 12 months as of June 30, 2023 | 12 months as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Costs for training sessions and camps | 2.311 | 2.110  |
-|  Health expenses | 351 | 628  |
-|  Fees for self-employed contractors | 2.025 | 1.923  |
-|  Retirement costs | 767 | 646  |
-|  Expenses for maintenance of sport pitches | 805 | 837  |
-|  Sundry | 271 | 274  |
-|   | 6.530 | 6.418  |
+| Euro thousand | 12 months as of June 30, 2023 | 12 months as of June 30, 2022 |
+|---|---|---|
+| Costs for training sessions and camps | 2.311 | 2.110 |
+| Health expenses | 351 | 628 |
+| Fees for self-employed contractors | 2.025 | 1.923 |
+| Retirement costs | 767 | 646 |
+| Expenses for maintenance of sport pitches | 805 | 837 |
+| Sundry | 271 | 274 |
+| | 6.530 | 6.418 |
 
 The "Specific technical costs" include:
 
-|   | 12 months as of June 30, 2023 | 12 months as of June 30, 2022  |
-| --- | --- | --- |
-|  Euro thousand |  |   |
-|  Player scouting and trials | 1.463 | 979  |
-|  Subsidized teams | 250 | 250  |
-|  Transfer market agent fees | 10.884 | 22.976  |
-|  Sundry | 37 | 75  |
-|   | 12.634 | 24.280  |
+| Euro thousand | 12 months as of June 30, 2023 | 12 months as of June 30, 2022 |
+|---|---|---|
+| Player scouting and trials | 1.463 | 979 |
+| Subsidized teams | 250 | 250 |
+| Transfer market agent fees | 10.884 | 22.976 |
+| Sundry | 37 | 75 |
+| | 12.634 | 24.280 |
 
 The net decrease in specific technical costs is mainly tied to the item "Transfer market agent fees", following lower costs relative to FIFA agents debited to the Income Statement during the fiscal year as a result of the transfers that occurred during the summer and winter transfer market 2022/2023.
 
@@ -2536,10 +2419,8 @@ For completeness of information, it is noted that, as is known, in relation to t
 There are currently no open tax years for which the Parent Company may still receive inquiries in relation to the case "Capital Gains" and all due amounts related to the case were paid and charged in the income statement of the various fiscal years in accordance with tax litigation regulations.
 
 Moreover, with reference to the previous fiscal year, the following is reported:
-
-- on December 13, 2021, the Company received a request for documentation in the context of an investigation conducted against a third party to the Company for omitted tax declarations and money laundering; as at the date of approval of this Interim Financial Statements, the Company is not involved in the context of this investigation, its involvement being limited exclusively to the acquisition of these requested documents;
-
-- on December 21, 2021, the Milan Public Prosecutor's Office began an investigation into the transfer transactions of football players of F.C. Internazionale Milano S.p.A. for the 2017/2018 and 2018/2019 football seasons. On that date, the Company complied with the search and seizure order by officials of the "Guardia di Finanza del Nucleo di Polizia Economico-Finanziaria di Milano", subject to this investigation, in the context of an investigation conducted against unknown persons for the potential crime of false corporate communications in relation to the fiscal years ended on June 30, 2018 and June 30, 2019. As of today, no irregularities have been found in the actions of the club's top management, which is why the Milan Public Prosecutor's Office has asked for the investigation to be archived.
+• on December 13, 2021, the Company received a request for documentation in the context of an investigation conducted against a third party to the Company for omitted tax declarations and money laundering; as at the date of approval of this Interim Financial Statements, the Company is not involved in the context of this investigation, its involvement being limited exclusively to the acquisition of these requested documents;
+• on December 21, 2021, the Milan Public Prosecutor's Office began an investigation into the transfer transactions of football players of F.C. Internazionale Milano S.p.A. for the 2017/2018 and 2018/2019 football seasons. On that date, the Company complied with the search and seizure order by officials of the "Guardia di Finanza del Nucleo di Polizia Economico-Finanziaria di Milano", subject to this investigation, in the context of an investigation conducted against unknown persons for the potential crime of false corporate communications in relation to the fiscal years ended on June 30, 2018 and June 30, 2019. As of today, no irregularities have been found in the actions of the club's top management, which is why the Milan Public Prosecutor's Office has asked for the investigation to be archived.
 
 On July 7, 2022, the Company received a writ of summons from China Construction Bank (Asia) Corporation Limited ("CCB"), whereby CCB brought a revocatory action before the Civil Court of Milan against the Company's shareholders' resolution of February 18, 2019, regarding Directors' emoluments, in the context of broader actions to protect its economic interests in China. The Company, as a party involved in the action brought by CCB, intends to instruct its lawyers to carry out an in-depth analysis of the case and of the case law on ordinary revocatory actions and protect its reasons in the lawsuit brought by CCB, whose first hearing, initially set for 14 November 2022, was postponed to April 2023. Subsequently, in an order dated May 8, 2023, the judge adjourned the hearing for discussion on the possible admission of evidence until September 2023. Based on the information available to date, the Company believes that it has good grounds to have the counterparties' claims dismissed.
 
@@ -2547,32 +2428,26 @@ On August 10, 2022, Inter received a claim for Euro 30 million raised by Sportin
 
 Lastly, with reference to the current fiscal year, on April 3, 2023, the "Agenzia delle Entrate - Direzione Regionale della Lombardia" commenced an audit for the purposes of direct taxes, IRAP, for the tax period 01/07/2018-30/06/2019, VAT and withholding agent obligations for the tax period 2018; audit is still ongoing.
 
-### Transactions with related parties
-
+**Transactions with related parties**
 Transactions carried out by the Group with related parties relate mainly to the financing and sponsorship by the new Leading Shareholder (Great Horizon S.à.r.l. and Grand Tower S.à.r.l. and Jiangsu Suning Sports Industry Co., Ltd.), as specified in the section "Shareholders' loan" and "Receivables from parent companies". No further significant transactions with related parties were made.
-
 All transactions with related parties were made at normal market conditions.
-
 During the fiscal year, the following assets and liabilities were reported with subsidiaries and related companies:
 
-|  Company | Nature of relationship | Receivables/Accounts June 30, 2023 | Payables/Debtors June 30, 2023 | Revenue June 30, 2023 | Costs June 30, 2023  |
-| --- | --- | --- | --- | --- | --- |
-|  Great Horizon S.à.r.l. | Financial | - | 16.058 | - | -  |
-|  Grand Tower S.à.r.l. | Financial | - | 112.447 | - | 6.270  |
-|  Jiangsu Suning Sports Industry Co., Ltd. | Commercial | 6.181 | 285 | 333 | -  |
-|  Jiangsu Inter Business Development Co. Ltd. | Commercial | 260 | - | 260 | -  |
-|  Great Mercury Limited | Commercial | - | - | - | -  |
-|  Inter Brand China Co., Ltd. in liquidazione | Commercial/Financial | 16 | 16 | - | -  |
-|  Shanghai I Brand Trading Co., Ltd. | Commercial | 32 | - | - | -  |
-|  M-I Stadio S.r.l. | Commercial | - | 1.845 | 1.752 | 5.434  |
-|  Total |  | 6.489 | 139.031 | 2.342 | 11.704  |
+| Company | Nature of relationship | Receivables/Accruals June 30, 2023 | Payables/Deferrals June 30, 2023 | Revenue June 30, 2023 | Costs June 30, 2023 |
+|---|---|---|---|---|---|
+| Great Horizon S.à.r.l. | Financial | - | 16.058 | - | - |
+| Grand Tower S.à.r.l. | Financial | - | 112.447 | - | 6.270 |
+| Jiangsu Suning Sports Industry Co., Ltd. | Commercial | 6.181 | 285 | 333 | - |
+| Jiangsu Inter Business Development Co. Ltd. | Commercial | 260 | - | 260 | - |
+| Great Mercury Limited | Commercial | - | - | - | - |
+| Inter Brand China Co., Ltd. in liquidazione | Commercial/Financial | 16 | 16 | - | - |
+| Shanghai I.Brand Trading Co., Ltd. | Commercial | 32 | - | - | - |
+| M-I Stadio S.r.l. | Commercial | - | 1.845 | 1.752 | 5.434 |
+| **Total** | | 6.489 | 130.651 | 2.345 | 11.704 |
 
-### Fees for Directors and Auditors
-
+**Fees for Directors and Auditors**
 The Board of Directors fees amount to Euro 1,892 thousand at June 30, 2023.
-
 The fees to which the Statutory Auditors and Independent Auditing Firm were entitled as of June 30, 2023 amounted respectively to Euro 169 thousand and Euro 267 thousand.
-
 For the sake of full disclosure, it should be noted that all fees paid to the independent auditors are linked to their normal auditing activities.
 
 41
@@ -2837,33 +2712,33 @@ BILANCIO CONSOLIDATO AL 30 GIUGNO 2023
 
 --- pág. 70 ---
 
-![img-3.jpeg](img-3.jpeg)
+pwc
 
-Relazione della società di revisione indipendente
-ai sensi dell'articolo 14 del DLgs 39/2010
+*Relazione della società di revisione indipendente*
+*ai sensi dell'articolo 14 del DLgs 39/2010*
 
 Agli azionisti di
 FC Internazionale Milano SpA
 
-# Relazione sulla revisione contabile del bilancio consolidato
+*Relazione sulla revisione contabile del bilancio consolidato*
 
-# Giudizio
+*Giudizio*
 
 Abbiamo svolto la revisione contabile del bilancio consolidato del gruppo FC Internazionale Milano (il Gruppo), costituito dallo stato patrimoniale al 30 giugno 2023, dal conto economico e dal rendiconto finanziario per l'esercizio chiuso a tale data, e dalla nota integrativa.
 
 A nostro giudizio, il bilancio consolidato fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria del Gruppo al 30 giugno 2023, del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+*Elementi alla base del giudizio*
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio consolidato della presente relazione. Siamo indipendenti rispetto alla società FC Internazionale Milano SpA in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti e appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio consolidato* della presente relazione. Siamo indipendenti rispetto alla società FC Internazionale Milano SpA in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio. Riteniamo di aver acquisito elementi probativi sufficienti e appropriati su cui basare il nostro giudizio.
 
-# Richiamo di informativa
+*Richiamo di informativa*
 
 Richiamiamo l'attenzione sulla nota "Continuità Aziendale" all'interno della Nota Integrativa consolidata, nella quale sono indicate le considerazioni e le valutazioni effettuate dagli amministratori a supporto dell'utilizzo del presupposto della continuità aziendale. Come riportato nella nota, al fine di garantire la continuità aziendale fino al 31 ottobre 2024, gli amministratori hanno considerato sia le risorse finanziarie disponibili sia la volontà, espressa dall'azionista di riferimento, di supportare finanziariamente il Gruppo, tramite la liquidità presente presso la società Grand Tower Sarl, controllante del Gruppo FC Internazionale Milano.
 
-# PricewaterhouseCoopers SpA
+*PricewaterhouseCoopers SpA*
 
-Sede legale: Milano 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 071 2132311 - Bari 70122 Via Abate Gimma 72 Tel. 080 5640211 - Bergamo 24121 Largo Belotti 5 Tel. 035 229691 - Bologna 40126 Via Angelo Finelli 8 Tel. 051 6186211 - Brescia 25121 Viale Duca d'Aosta 28 Tel. 030 3697501 - Catania 95129 Corso Italia 302 Tel. 095 7532311 - Firenze 50121 Viale Gramsci 15 Tel. 055 2482811 - Genova 16121 Piazza Piccapitera 9 Tel. 010 29041 - Napoli 80121 Via dei Mille 16 Tel. 081 36181 - Padova 35138 Via Vicenza 4 Tel. 049 873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091 349737 - Parma 43121 Viale Tanara 20/A Tel. 0521 275911 - Pescara 65127 Piazza Ettore Trello 8 Tel. 085 4545711 - Roma 00154 Largo Fochetti 29 Tel. 06 570251 - Torino 10122 Corso Palestro 10 Tel. 011 556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461 237004 - Treviso 31100 Viale Felissent 90 Tel. 0422 696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 040 3480781 - Udine 33100 Via Poscolle 43 Tel. 0432 25789 - Varese 21100 Via Albuzzi 43 Tel. 0332 285039 - Verona 37135 Via Francia 21/C Tel. 045 8263001 - Vicenza 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
+Sede legale: Milano 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 071 2132311 - Bari 70122 Via Abate Gimma 72 Tel. 080 5640211 - Bergamo 24123 Largo Belotti 5 Tel. 035 229691 - Bologna 40126 Via Angelo Finelli 8 Tel. 051 6186211 - Brescia 25121 Viale Duca d'Aosta 28 Tel. 030 3697501 - Catania 95129 Corso Italia 302 Tel. 095 7532311 - Firenze 50121 Viale Gramsci 15 Tel. 055 2482811 - Genova 16121 Piazza Piccapietra 9 Tel. 010 29041 - Napoli 80121 Via dei Mille 16 Tel. 081 36181 - Padova 35138 Via Vicenza 4 Tel. 049 873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091 349737 - Parma 43121 Viale Tanara 20/A Tel. 0521 275911 - Pescara 65127 Piazza Ettore Troilo 8 Tel. 085 4545711 - Roma 00154 Largo Fochetti 29 Tel. 06 570251 - Torino 10122 Corso Palestro 10 Tel. 011 556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461 237004 - Treviso 31100 Viale Felissent 90 Tel. 0422 696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 040 3480781 - Udine 33100 Via Poscolle 43 Tel. 0432 25789 - Varese 21100 Via Albuzzi 43 Tel. 0332 285039 - Verona 37135 Via Francia 21/C Tel. 045 8263001 - Vicenza 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
 
 www.pwc.com/it
 

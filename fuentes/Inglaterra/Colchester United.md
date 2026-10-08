@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Colchester United/` (los PDF no se trackean; son esc
 - `colchester-full-accounts-2012-13.pdf`
 - `colchester-full-accounts-2011-12.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Confirmado a ojo en el OCR: la sociedad declara que optó por no presentar el estado de resultados integrales. Sin ingresos: no sirve para el sitio.

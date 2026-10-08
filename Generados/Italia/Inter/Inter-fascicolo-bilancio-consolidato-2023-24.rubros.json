@@ -1,0 +1,640 @@
+{
+  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
+  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
+  "club": "inter-it",
+  "year": 2024,
+  "generatedAt": "2026-10-08T18:56:46.399Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "- Championship matches",
+      "lado": "revenue",
+      "page": 81,
+      "section": "nota que desglosa \"a) revenue from matches\"",
+      "values": [
+        30.368
+      ],
+      "glosa": "- Partidos de campeonato"
+    },
+    {
+      "label": "- TIM Cup matches",
+      "lado": "revenue",
+      "page": 81,
+      "section": "nota que desglosa \"a) revenue from matches\"",
+      "values": [
+        0.489
+      ],
+      "glosa": "- Partidos de Copa TIM"
+    },
+    {
+      "label": "- International Cup matches",
+      "lado": "revenue",
+      "page": 81,
+      "section": "nota que desglosa \"a) revenue from matches\"",
+      "values": [
+        13.195
+      ],
+      "glosa": "- Partidos de copas internacionales"
+    },
+    {
+      "label": "- Tournaments and friendly matches",
+      "lado": "revenue",
+      "page": 81,
+      "section": "nota que desglosa \"a) revenue from matches\"",
+      "values": [
+        1.583
+      ],
+      "glosa": "- Torneos y partidos amistosos"
+    },
+    {
+      "label": "b) season tickets",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        25.201115
+      ],
+      "glosa": "b) Abonos"
+    },
+    {
+      "label": "2) Changes in inventories of work in progress, semi-finished and finished products",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        0.759266
+      ],
+      "glosa": "2) Variación de existencias de productos en curso, semiterminados y terminados"
+    },
+    {
+      "label": "a) grants and contribution",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        18.243755
+      ],
+      "glosa": "a) Subvenciones y ayudas"
+    },
+    {
+      "label": "b) sponsorships",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        79.87781
+      ],
+      "glosa": "b) Patrocinios"
+    },
+    {
+      "label": "c) advertising income",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        8.112225
+      ],
+      "glosa": "c) Ingresos por publicidad"
+    },
+    {
+      "label": "d) commercial income and royalties",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        24.013822
+      ],
+      "glosa": "d) Ingresos comerciales y regalías"
+    },
+    {
+      "label": "- television revenues",
+      "lado": "revenue",
+      "page": 82,
+      "section": "nota que desglosa \"e) income from the sale of television rights\"",
+      "values": [
+        101.065
+      ],
+      "glosa": "- Ingresos por retransmisiones televisivas"
+    },
+    {
+      "label": "- television income from UEFA competitions",
+      "lado": "revenue",
+      "page": 82,
+      "section": "nota que desglosa \"e) income from the sale of television rights\"",
+      "values": [
+        65.636
+      ],
+      "glosa": "- Ingresos televisivos de competiciones UEFA"
+    },
+    {
+      "label": "- Other television income",
+      "lado": "revenue",
+      "page": 82,
+      "section": "nota que desglosa \"e) income from the sale of television rights\"",
+      "values": [
+        9.719
+      ],
+      "glosa": "- Otros ingresos televisivos"
+    },
+    {
+      "label": "f) revenues from temporary loan of players",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        2.25
+      ],
+      "glosa": "f) Ingresos por cesión temporal de jugadores"
+    },
+    {
+      "label": "g) gains on sale of player registrations rights",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        65.84578
+      ],
+      "glosa": "g) Plusvalías por traspaso de derechos federativos de jugadores"
+    },
+    {
+      "label": "h) other income from player management",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        5.77553
+      ],
+      "glosa": "h) Otros ingresos de gestión de jugadores"
+    },
+    {
+      "label": "i) sundry revenues and income",
+      "lado": "revenue",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        21.074113
+      ],
+      "glosa": "i) Ingresos diversos y otros ingresos de explotación"
+    },
+    {
+      "label": "Technical material",
+      "lado": "expense",
+      "page": 83,
+      "section": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\"",
+      "values": [
+        3.348
+      ],
+      "glosa": "Material técnico"
+    },
+    {
+      "label": "Consumables",
+      "lado": "expense",
+      "page": 83,
+      "section": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\"",
+      "values": [
+        3.838
+      ],
+      "glosa": "Consumibles"
+    },
+    {
+      "label": "Health material",
+      "lado": "expense",
+      "page": 83,
+      "section": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\"",
+      "values": [
+        0.259
+      ],
+      "glosa": "Material sanitario"
+    },
+    {
+      "label": "E-commerce material",
+      "lado": "expense",
+      "page": 83,
+      "section": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\"",
+      "values": [
+        6.355
+      ],
+      "glosa": "Material de comercio electrónico"
+    },
+    {
+      "label": "Other",
+      "lado": "expense",
+      "page": 83,
+      "section": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\"",
+      "values": [
+        0.162
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Costs for training sessions and camps",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        2.503
+      ],
+      "glosa": "Gastos de concentraciones y entrenamientos"
+    },
+    {
+      "label": "Health expenses",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        0.375
+      ],
+      "glosa": "Gastos sanitarios"
+    },
+    {
+      "label": "Fees for self-employed contractors",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        2.218
+      ],
+      "glosa": "Honorarios de profesionales independientes"
+    },
+    {
+      "label": "Retirement costs",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        0.843
+      ],
+      "glosa": "Gastos por planes de pensiones y jubilación"
+    },
+    {
+      "label": "Expenses for maintenance of sport pitches",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        0.963
+      ],
+      "glosa": "Gastos de mantenimiento de terrenos de juego"
+    },
+    {
+      "label": "Sundry",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\"",
+      "values": [
+        0.216
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Player scouting and trials",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\"",
+      "values": [
+        2.163
+      ],
+      "glosa": "Ojeo y pruebas de jugadores"
+    },
+    {
+      "label": "Subsidized teams",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\"",
+      "values": [
+        0.25
+      ],
+      "glosa": "Equipos subvencionados"
+    },
+    {
+      "label": "Transfer campaign agent fees",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\"",
+      "values": [
+        14.1
+      ],
+      "glosa": "Comisiones de intermediarios y agentes en fichajes"
+    },
+    {
+      "label": "Costs for accomodation, food, transport",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\"",
+      "values": [
+        2.587
+      ],
+      "glosa": "Gastos de alojamiento, manutención y desplazamientos"
+    },
+    {
+      "label": "Ticketing service, ground admission, security control",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\"",
+      "values": [
+        4.335
+      ],
+      "glosa": "Servicio de venta de entradas, accesos y control de seguridad"
+    },
+    {
+      "label": "Insurance and pension",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\"",
+      "values": [
+        3.274
+      ],
+      "glosa": "Seguros y previsión social"
+    },
+    {
+      "label": "Intercampus",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\"",
+      "values": [
+        0.362
+      ],
+      "glosa": "Intercampus"
+    },
+    {
+      "label": "Administrative, advertising and general",
+      "lado": "expense",
+      "page": 84,
+      "section": "nota que desglosa \"7) Cost of services\"",
+      "values": [
+        35.872
+      ],
+      "glosa": "Gastos administrativos, publicitarios y generales"
+    },
+    {
+      "label": "Licence to use Meazza Stadium",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        5.509
+      ],
+      "glosa": "Canon por uso del Estadio Meazza"
+    },
+    {
+      "label": "Rental expenses",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        3.854
+      ],
+      "glosa": "Gastos por arrendamientos"
+    },
+    {
+      "label": "Operating lease payments",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        0.024
+      ],
+      "glosa": "Cánones de arrendamiento operativo"
+    },
+    {
+      "label": "Other user licence fees",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        3.357
+      ],
+      "glosa": "Otros cánones y licencias de uso"
+    },
+    {
+      "label": "Concession sports facilities",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        0.492
+      ],
+      "glosa": "Concesión de instalaciones deportivas"
+    },
+    {
+      "label": "Rental fees",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        2.132
+      ],
+      "glosa": "Cánones de arrendamiento"
+    },
+    {
+      "label": "Other Rental fees",
+      "lado": "expense",
+      "page": 86,
+      "section": "nota que desglosa \"8) Costs of rents and leases\"",
+      "values": [
+        0.002
+      ],
+      "glosa": "Otros alquileres y cánones"
+    },
+    {
+      "label": "a) salaries and wages",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        207.702936
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) social security contributions",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        11.008929
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) employee severance indemnity",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        2.448402
+      ],
+      "glosa": "c) Indemnizaciones por cese del personal"
+    },
+    {
+      "label": "e) other costs",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        6.223714
+      ],
+      "glosa": "e) Otros gastos de personal"
+    },
+    {
+      "label": "a) amortisation of intangibles assets",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        96.321678
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) depreciation of tangible",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        2.064158
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "c) write-downs of assets",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        6.515532
+      ],
+      "glosa": "c) Deterioro de valor de activos"
+    },
+    {
+      "label": "d) write-downs of doubtful account receivables included in current assets",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        6.83259
+      ],
+      "glosa": "d) Deterioro de valor de créditos comerciales del activo corriente"
+    },
+    {
+      "label": "12) Provision for risks",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        0.004098
+      ],
+      "glosa": "12) Dotación a la provisión para riesgos"
+    },
+    {
+      "label": "13) Other provisions",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        9.432241
+      ],
+      "glosa": "13) Otras provisiones"
+    },
+    {
+      "label": "a) various costs of organising competitions",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        6.168241
+      ],
+      "glosa": "a) Gastos diversos de organización de competiciones"
+    },
+    {
+      "label": "b) costs for the temporary acquisition of players",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        1.5
+      ],
+      "glosa": "b) Gastos por cesión temporal de jugadores"
+    },
+    {
+      "label": "c) losses from the sale of player registrations",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        1.163936
+      ],
+      "glosa": "c) Pérdidas por traspaso de derechos federativos de jugadores"
+    },
+    {
+      "label": "d) other expenses from player management",
+      "lado": "expense",
+      "page": 44,
+      "section": "estado",
+      "values": [
+        1.668825
+      ],
+      "glosa": "d) Otros gastos de gestión de jugadores"
+    },
+    {
+      "label": "- Costs, fines and penalties for matches",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        0.144
+      ],
+      "glosa": "- Gastos, multas y sanciones por partidos"
+    },
+    {
+      "label": "- Indirect tax expenses",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        1.925
+      ],
+      "glosa": "- Gastos por tributos indirectos"
+    },
+    {
+      "label": "- Contributions from Football League",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        1.596
+      ],
+      "glosa": "- Aportaciones a la Liga de Fútbol"
+    },
+    {
+      "label": "- Transactions and compensation",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        0.004
+      ],
+      "glosa": "- Transacciones e indemnizaciones"
+    },
+    {
+      "label": "- Cost of previously years",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        2.149
+      ],
+      "glosa": "- Gastos de ejercicios anteriores"
+    },
+    {
+      "label": "- Sundry costs",
+      "lado": "expense",
+      "page": 88,
+      "section": "nota que desglosa \"g) other operating expenses\"",
+      "values": [
+        0.061
+      ],
+      "glosa": "- Gastos diversos"
+    }
+  ]
+}

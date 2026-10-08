@@ -1,0 +1,299 @@
+{
+ "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
+ "generado": "2026-10-08T18:56:45.226Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2014,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "8ea152c",
+  "5c48d3c",
+  "9af2cd9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "50.002958 = 50.002958"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "52.783887 = 52.783887"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 50.002958 - gastos 52.783887 ± financiero 11.579496 ± impuesto 0.156273 no da el impreso 0.316064"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2014: 50.002958 en este documento y 50.002958 en ChievoVerona-bilancio-30-giugno-2015.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"a) salari e stipendi\" no suma el renglón (21.026638 contra 21.523555, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b61 incluye proventi da compartecipazione ex art. 102 bis que desglosan renglones financieros del conto economico.",
+  "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati."
+ ],
+ "reintentar": [
+  {
+   "renglon": "a) salari e stipendi",
+   "suma": 21.026638,
+   "objetivo": 21.523555
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "a) salari e stipendi",
+   "suma": 21.026638,
+   "objetivo": 21.523555
+  }
+ ],
+ "totales": {
+  "ingresos": 50.002958,
+  "gastos": 52.783887,
+  "financiero": 11.579496,
+  "impuesto": 0.156273,
+  "resultadoImpreso": 0.316064,
+  "resultadoParaCargar": 0.316064,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "- Gare campionato",
+   "lado": "ingreso",
+   "M": 1.09534,
+   "pagina": 24,
+   "linea": 1225,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- Gare Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.003304,
+   "pagina": 24,
+   "linea": 1226,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- Gare Coppa Italia",
+   "lado": "ingreso",
+   "M": 0.03423,
+   "pagina": 24,
+   "linea": 1228,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- Gare Amichevoli estero",
+   "lado": "ingreso",
+   "M": 0.069021,
+   "pagina": 24,
+   "linea": 1229,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "Abbonamenti",
+   "lado": "ingreso",
+   "M": 0.618963,
+   "pagina": 24,
+   "linea": 1230,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "4) incrementi di immobilizzazioni per lavori interni",
+   "lado": "ingreso",
+   "M": 3.159845,
+   "pagina": 8,
+   "linea": 380,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 0.953032,
+   "pagina": 8,
+   "linea": 382,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 44.069223,
+   "pagina": 8,
+   "linea": 383,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 1.053949,
+   "pagina": 8,
+   "linea": 387,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "7) per servizi",
+   "lado": "gasto",
+   "M": 8.178732,
+   "pagina": 8,
+   "linea": 388,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "8) per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 1.524568,
+   "pagina": 8,
+   "linea": 389,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 21.523555,
+   "pagina": 8,
+   "linea": 391,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 1.526648,
+   "pagina": 8,
+   "linea": 392,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.272088,
+   "pagina": 8,
+   "linea": 393,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 15.0881,
+   "pagina": 8,
+   "linea": 398,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.092518,
+   "pagina": 8,
+   "linea": 399,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 8,
+   "linea": 401,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spese varie organizzazione gare",
+   "lado": "gasto",
+   "M": 0.204822,
+   "pagina": 29,
+   "linea": 1423,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Tasse iscrizioni gare",
+   "lado": "gasto",
+   "M": 0.013017,
+   "pagina": 29,
+   "linea": 1424,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "- Percentuale su incassi gare a squadre ospitate",
+   "lado": "gasto",
+   "M": 0.001487,
+   "pagina": 29,
+   "linea": 1426,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Costo per acquisiti temporanea prestaz. Calciatori",
+   "lado": "gasto",
+   "M": 1.173686,
+   "pagina": 29,
+   "linea": 1427,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Minusvalenze da cessione diritti plur. calciatori",
+   "lado": "gasto",
+   "M": 0.718093,
+   "pagina": 29,
+   "linea": 1428,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri da gestione calciatori",
+   "lado": "gasto",
+   "M": 0.195,
+   "pagina": 29,
+   "linea": 1429,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 1.217624,
+   "pagina": 29,
+   "linea": 1430,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "altri",
+   "M": 7.882619,
+   "linea": 428
+  },
+  {
+   "etiqueta": "altri",
+   "M": 3.697124,
+   "linea": 448
+  },
+  {
+   "etiqueta": "17-bis) utili e perdite su cambi",
+   "M": -0.000247,
+   "linea": 450
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": 0.156273,
+   "linea": 493
+  }
+ ]
+}

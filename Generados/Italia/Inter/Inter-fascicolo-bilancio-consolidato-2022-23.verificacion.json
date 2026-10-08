@@ -1,0 +1,659 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.pdf",
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md",
+ "generado": "2026-10-08T18:56:46.185Z",
+ "estado": "cola",
+ "clubId": "inter-it",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "267e615",
+  "7041747"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "425.475173 = 425.475461"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "465.578878 = 465.509141"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 425.475173 - gastos 465.578878 ± financiero -39.016512 ± impuesto -8.144303 no da el impreso -85.372658"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 439.642319; el sitio tiene 439.642181"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 425.475173 en este documento y 425.476173 en Inter-fascicolo-bilancio-consolidato-2023-24.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 439.642181 en Inter-fascicolo-bilancio-consolidato-2021-22.pdf y 439.642319 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Administrative, advertising and general\" (18 filas) no suma la fila: quedó la fila",
+  "duda de localizar que no afecta la carga: b1 y b2 son resúmenes de Value of Production y Production Costs en la memoria de gestión; las notas b43/b44 y b46-b55 ya abren esos renglones.",
+  "duda de localizar que no afecta la carga: Es detalle por jugador; el total ya está en la nota b44.",
+  "duda de extraer que no afecta la carga: El cuadro L2201-L2204 separa columnas Registered y Other sin total por fila; solo se cargó el total L2206, y el estado ya trae los renglones.",
+  "duda de extraer que no afecta la carga: Los importes coinciden (10.976 vs 10.975.748) pero la etiqueta difiere.",
+  "duda de extraer que no afecta la carga: 39.658 ≈ 6.269.781+33.388.426; el renglón 17) no tiene importe propio en el estado."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrative, advertising and general",
+   "suma": 31.006,
+   "objetivo": 31.809
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative, advertising and general",
+   "suma": 31.006,
+   "objetivo": 31.809
+  }
+ ],
+ "totales": {
+  "ingresos": 425.475173,
+  "gastos": 465.578878,
+  "financiero": -39.016512,
+  "impuesto": -8.144303,
+  "resultadoImpreso": -85.372658,
+  "resultadoParaCargar": -85.372658,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "- Championship matches",
+   "lado": "ingreso",
+   "M": 23.477,
+   "pagina": 47,
+   "linea": 1995,
+   "origen": "nota que desglosa \"a) revenue from home matches\""
+  },
+  {
+   "etiqueta": "- Coppa Italia matches",
+   "lado": "ingreso",
+   "M": 5.371,
+   "pagina": 47,
+   "linea": 1996,
+   "origen": "nota que desglosa \"a) revenue from home matches\""
+  },
+  {
+   "etiqueta": "- International Cup matches",
+   "lado": "ingreso",
+   "M": 27.396,
+   "pagina": 47,
+   "linea": 1997,
+   "origen": "nota que desglosa \"a) revenue from home matches\""
+  },
+  {
+   "etiqueta": "- Tournaments and friendly matches",
+   "lado": "ingreso",
+   "M": 0.585,
+   "pagina": 47,
+   "linea": 1998,
+   "origen": "nota que desglosa \"a) revenue from home matches\""
+  },
+  {
+   "etiqueta": "b) season tickets",
+   "lado": "ingreso",
+   "M": 22.139373,
+   "pagina": 14,
+   "linea": 537,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "2) Changes in inventories of work in progress, semi-finished and finished products",
+   "lado": "ingreso",
+   "M": 0.390684,
+   "pagina": 14,
+   "linea": 538,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "4) Capitalization of youth programme costs",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 14,
+   "linea": 539,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) grants and contribution",
+   "lado": "ingreso",
+   "M": 17.445533,
+   "pagina": 14,
+   "linea": 541,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) sponsorships",
+   "lado": "ingreso",
+   "M": 54.378034,
+   "pagina": 14,
+   "linea": 542,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) advertising income",
+   "lado": "ingreso",
+   "M": 6.963657,
+   "pagina": 14,
+   "linea": 543,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) commercial income and royalties",
+   "lado": "ingreso",
+   "M": 13.160209,
+   "pagina": 14,
+   "linea": 544,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "- television revenues",
+   "lado": "ingreso",
+   "M": 87.069,
+   "pagina": 48,
+   "linea": 2032,
+   "origen": "nota que desglosa \"e) income from the sale of television rights\""
+  },
+  {
+   "etiqueta": "- television income from UEFA competitions",
+   "lado": "ingreso",
+   "M": 99.582,
+   "pagina": 48,
+   "linea": 2033,
+   "origen": "nota que desglosa \"e) income from the sale of television rights\""
+  },
+  {
+   "etiqueta": "- Other television income",
+   "lado": "ingreso",
+   "M": 9.881,
+   "pagina": 48,
+   "linea": 2034,
+   "origen": "nota que desglosa \"e) income from the sale of television rights\""
+  },
+  {
+   "etiqueta": "f) revenues from temporary loan of players",
+   "lado": "ingreso",
+   "M": 1.0525,
+   "pagina": 14,
+   "linea": 546,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "g) gains on sale of player registrations rights",
+   "lado": "ingreso",
+   "M": 28.875955,
+   "pagina": 14,
+   "linea": 547,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "h) other income from player management",
+   "lado": "ingreso",
+   "M": 9.652751,
+   "pagina": 14,
+   "linea": 548,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "i) sundry revenues and income",
+   "lado": "ingreso",
+   "M": 18.055477,
+   "pagina": 14,
+   "linea": 549,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Technical material",
+   "lado": "gasto",
+   "M": 3.215,
+   "pagina": 49,
+   "linea": 2086,
+   "origen": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\""
+  },
+  {
+   "etiqueta": "Consumables",
+   "lado": "gasto",
+   "M": 2.338,
+   "pagina": 49,
+   "linea": 2087,
+   "origen": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\""
+  },
+  {
+   "etiqueta": "Health material",
+   "lado": "gasto",
+   "M": 0.238,
+   "pagina": 49,
+   "linea": 2088,
+   "origen": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\""
+  },
+  {
+   "etiqueta": "E-commerce material",
+   "lado": "gasto",
+   "M": 3.576,
+   "pagina": 49,
+   "linea": 2089,
+   "origen": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "gasto",
+   "M": 0.174,
+   "pagina": 49,
+   "linea": 2090,
+   "origen": "nota que desglosa \"6) Cost of raw materials, supplies and consumables\""
+  },
+  {
+   "etiqueta": "Costs for training sessions and camps",
+   "lado": "gasto",
+   "M": 2.311,
+   "pagina": 50,
+   "linea": 2116,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Health expenses",
+   "lado": "gasto",
+   "M": 0.351,
+   "pagina": 50,
+   "linea": 2117,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Fees for self-employed contractors",
+   "lado": "gasto",
+   "M": 2.025,
+   "pagina": 50,
+   "linea": 2118,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Retirement costs",
+   "lado": "gasto",
+   "M": 0.767,
+   "pagina": 50,
+   "linea": 2119,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Expenses for maintenance of sport pitches",
+   "lado": "gasto",
+   "M": 0.805,
+   "pagina": 50,
+   "linea": 2120,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Sundry",
+   "lado": "gasto",
+   "M": 0.271,
+   "pagina": 50,
+   "linea": 2121,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Costs for sport activities\""
+  },
+  {
+   "etiqueta": "Player scouting and trials",
+   "lado": "gasto",
+   "M": 1.463,
+   "pagina": 50,
+   "linea": 2128,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\""
+  },
+  {
+   "etiqueta": "Subsidized teams",
+   "lado": "gasto",
+   "M": 0.25,
+   "pagina": 50,
+   "linea": 2129,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\""
+  },
+  {
+   "etiqueta": "Transfer market agent fees",
+   "lado": "gasto",
+   "M": 10.884,
+   "pagina": 50,
+   "linea": 2130,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\""
+  },
+  {
+   "etiqueta": "Sundry",
+   "lado": "gasto",
+   "M": 0.037,
+   "pagina": 50,
+   "linea": 2131,
+   "origen": "nota que desglosa \"7) Cost of services\" > desglose de \"Specific technical costs\""
+  },
+  {
+   "etiqueta": "Costs for accomodation, food, transport",
+   "lado": "gasto",
+   "M": 4.06,
+   "pagina": 50,
+   "linea": 2105,
+   "origen": "nota que desglosa \"7) Cost of services\""
+  },
+  {
+   "etiqueta": "Ticketing service, ground admission, security control",
+   "lado": "gasto",
+   "M": 4.095,
+   "pagina": 50,
+   "linea": 2106,
+   "origen": "nota que desglosa \"7) Cost of services\""
+  },
+  {
+   "etiqueta": "Insurance and pension",
+   "lado": "gasto",
+   "M": 2.583,
+   "pagina": 50,
+   "linea": 2107,
+   "origen": "nota que desglosa \"7) Cost of services\""
+  },
+  {
+   "etiqueta": "Intercampus",
+   "lado": "gasto",
+   "M": 0.369,
+   "pagina": 50,
+   "linea": 2108,
+   "origen": "nota que desglosa \"7) Cost of services\""
+  },
+  {
+   "etiqueta": "Administrative, advertising and general",
+   "lado": "gasto",
+   "M": 31.809,
+   "pagina": 50,
+   "linea": 2109,
+   "origen": "nota que desglosa \"7) Cost of services\""
+  },
+  {
+   "etiqueta": "Licence to use Meazza Stadium",
+   "lado": "gasto",
+   "M": 5.163,
+   "pagina": 51,
+   "linea": 2181,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Rental expenses",
+   "lado": "gasto",
+   "M": 3.576,
+   "pagina": 51,
+   "linea": 2182,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Operating lease payments",
+   "lado": "gasto",
+   "M": 0.022,
+   "pagina": 51,
+   "linea": 2183,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Other user licence fees",
+   "lado": "gasto",
+   "M": 2.646,
+   "pagina": 51,
+   "linea": 2184,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Concession sports facilities",
+   "lado": "gasto",
+   "M": 0.483,
+   "pagina": 51,
+   "linea": 2185,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Rental fees",
+   "lado": "gasto",
+   "M": 1.762,
+   "pagina": 51,
+   "linea": 2186,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "Other Rental fees",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 51,
+   "linea": 2187,
+   "origen": "nota que desglosa \"8) Costs of rents and leases\""
+  },
+  {
+   "etiqueta": "a) salaries and wages",
+   "lado": "gasto",
+   "M": 205.959981,
+   "pagina": 14,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) social security contributions",
+   "lado": "gasto",
+   "M": 8.992735,
+   "pagina": 14,
+   "linea": 557,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) employee severance indemnity",
+   "lado": "gasto",
+   "M": 2.129382,
+   "pagina": 14,
+   "linea": 558,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) other costs",
+   "lado": "gasto",
+   "M": 9.837709,
+   "pagina": 14,
+   "linea": 559,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) amortisation of intangibles assets",
+   "lado": "gasto",
+   "M": 112.114063,
+   "pagina": 14,
+   "linea": 561,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) depreciation of tangible",
+   "lado": "gasto",
+   "M": 1.831228,
+   "pagina": 14,
+   "linea": 562,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) write-downs of assets",
+   "lado": "gasto",
+   "M": 7.725399,
+   "pagina": 14,
+   "linea": 563,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) write-downs of doubtful account receivables included in current assets",
+   "lado": "gasto",
+   "M": 0.535022,
+   "pagina": 14,
+   "linea": 564,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "12) Provision for risks",
+   "lado": "gasto",
+   "M": 0.034679,
+   "pagina": 14,
+   "linea": 565,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13) Other provisions",
+   "lado": "gasto",
+   "M": 0.564,
+   "pagina": 14,
+   "linea": 566,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) various costs of organising competitions",
+   "lado": "gasto",
+   "M": 7.22432,
+   "pagina": 14,
+   "linea": 568,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) costs for the temporary acquisition of players",
+   "lado": "gasto",
+   "M": 10.975748,
+   "pagina": 14,
+   "linea": 569,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) losses from the sale of player registrations",
+   "lado": "gasto",
+   "M": 0.634125,
+   "pagina": 14,
+   "linea": 570,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) other expenses from player management",
+   "lado": "gasto",
+   "M": 1.493487,
+   "pagina": 14,
+   "linea": 571,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "- Costs, fines and penalties for matches",
+   "lado": "gasto",
+   "M": 1.518,
+   "pagina": 54,
+   "linea": 2301,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  },
+  {
+   "etiqueta": "- Indirect tax expenses",
+   "lado": "gasto",
+   "M": 0.582,
+   "pagina": 54,
+   "linea": 2302,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  },
+  {
+   "etiqueta": "- Contributions from Football League",
+   "lado": "gasto",
+   "M": 1.136,
+   "pagina": 54,
+   "linea": 2303,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  },
+  {
+   "etiqueta": "- Transactions and compensation",
+   "lado": "gasto",
+   "M": 0.288,
+   "pagina": 54,
+   "linea": 2304,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  },
+  {
+   "etiqueta": "- Cost of previous years",
+   "lado": "gasto",
+   "M": 4.42,
+   "pagina": 54,
+   "linea": 2305,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  },
+  {
+   "etiqueta": "- Sundry costs",
+   "lado": "gasto",
+   "M": 2.308,
+   "pagina": 54,
+   "linea": 2306,
+   "origen": "nota que desglosa \"e) other operating expenses\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "- from other companies",
+   "M": 0.00027,
+   "linea": 583
+  },
+  {
+   "etiqueta": "- from third parties",
+   "M": 0.695256,
+   "linea": 585
+  },
+  {
+   "etiqueta": "c) from parent companies",
+   "M": -6.269781,
+   "linea": 587
+  },
+  {
+   "etiqueta": "e) other financial expenses",
+   "M": -33.388426,
+   "linea": 588
+  },
+  {
+   "etiqueta": "17-bis) Gains and losses on foreign currency traslation",
+   "M": -0.053831,
+   "linea": 589
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) current taxes",
+   "M": -8.74515,
+   "linea": 597
+  },
+  {
+   "etiqueta": "b) taxes related to previous fiscal years",
+   "M": 0.187014,
+   "linea": 598
+  },
+  {
+   "etiqueta": "c) deferred tax liabilities",
+   "M": 0.413833,
+   "linea": 599
+  },
+  {
+   "etiqueta": "d) deferred tax assets",
+   "M": null,
+   "linea": 600
+  }
+ ]
+}

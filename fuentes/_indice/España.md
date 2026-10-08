@@ -35,3 +35,19 @@ destrabarlos.
 - [Notas generales de España](../España/_notas-generales.md)
 
 ---
+- [CD Leganes](<../España/CD Leganes.md>) — 7 documentos, años 2017, 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [RC Deportivo](<../España/RC Deportivo.md>) — 12 documentos, años 2014-2017, 2019-2021; sin cargar aún — Último chequeo: 2026-10-08
+- [Real Zaragoza](<../España/Real Zaragoza.md>) — 10 documentos, años 2019, 2021; sin cargar aún — Último chequeo: 2026-10-08
+- [Real Valladolid](<../España/Real Valladolid.md>) — 4 documentos, años 2013-2016; sin cargar aún — Último chequeo: 2026-10-08
+- [UD Las Palmas](<../España/UD Las Palmas.md>) — 4 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Cordoba CF](<../España/Cordoba CF.md>) — 4 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08
+- [CD Tenerife](<../España/CD Tenerife.md>) — 4 documentos, años 2021-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Almería](<../España/Almería.md>) — 3 PDF de WorldFootball (temporadas 2022-2023), sin cargar aún — Último chequeo: 2026-10-08
+- [Castellón](<../España/Castellón.md>) — 2 PDF de WorldFootball (temporadas 2023-2024), sin cargar aún — Último chequeo: 2026-10-08
+- [Cádiz](<../España/Cádiz.md>) — 1 PDF de WorldFootball (temporadas 2023-2024), sin cargar aún — Último chequeo: 2026-10-08
+- [Eldense](<../España/Eldense.md>) — 3 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08
+- [Granada](<../España/Granada.md>) — 2 PDF de WorldFootball (temporadas sin temporada), sin cargar aún — Último chequeo: 2026-10-08
+- [Málaga](<../España/Málaga.md>) — 2 PDF de WorldFootball (temporadas 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Racing Santander](<../España/Racing Santander.md>) — 2 PDF de WorldFootball (temporadas 2022-2023, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [SD Eibar](<../España/SD Eibar.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Sabadell](<../España/Sabadell.md>) — 2 PDF de WorldFootball (temporadas 2022-2023, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08

@@ -31,3 +31,15 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
   o si hubo alguna dispensa/atraso de presentación durante esos años.
 
 - Último chequeo: 2026-09-17.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: registro Brønnøysund: agotado (ambas entidades revisadas año por año 2008-2025) · barrido: 2 (Sonnet) — 2026-10-08
+
+- Cerrado el hueco 2018-2022 de la sesión anterior: la entidad **922735654** tiene depósitos 2019, 2020, 2021 y 2022 (`aarsregnskap-2019..2022.pdf`, 8/10/6/6 págs.). La entidad 970189815 solo llega hasta 2017 y reaparece en 2023-2025.
+- **Solo falta 2018**: no está en ninguna de las dos entidades (404 en `kopi/<orgnr>/2018`). Serie 2008-2025 completa salvo 2018.
+- Ojo al cargar: el cambio de entidad en 2019 es un cambio de perímetro (ver la duda en `Admin/dudas-por-club.md`).
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2024-2025; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

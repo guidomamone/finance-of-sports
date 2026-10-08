@@ -22,3 +22,7 @@ Todos en `Clubes/Inglaterra/Grimsby Town/` (los PDF no se trackean; los de Compa
 - Desde 2021/22 la sociedad presenta "Total exemption full accounts" de 12-16 páginas (2021/22-2024/25 y 2025/26 con cierre pasado a 30/6/2025): régimen exento, probablemente sin cuenta de resultados — NO se abrieron. Si hace falta cubrir los años recientes, abrir primero 2021/22 (16p).
 - Serie larguísima en el registro (47 filas, desde 2001); todo lo anterior a 2016 se puede bajar con `--want` mayor.
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `--include-small`, pero es "small company" y la cuenta de resultados NO se presentó (omitida del filing copy): sin ingresos no sirve para el sitio. Los años 2022-2024 del registro son todos del mismo tipo.

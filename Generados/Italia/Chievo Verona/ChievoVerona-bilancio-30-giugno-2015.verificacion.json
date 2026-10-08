@@ -1,0 +1,322 @@
+{
+ "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
+ "generado": "2026-10-08T18:56:45.271Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2015,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1a1470e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "55.420332 = 55.420332"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "58.61397 = 58.61397"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 55.420332 - gastos 58.61397 ± financiero 2.125468 ± impuesto 0.151448 no da el impreso 0.521922"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2015: 55.420332 en este documento y 55.420332 en ChievoVerona-bilancio-30-giugno-2016.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2014: 50.002958 en ChievoVerona-bilancio-30-giugno-2014.pdf y 50.002958 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"altri\" no suma el renglón (53.018549 contra 50.471344, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"a) salari e stipendi\" no suma el renglón (52.422084 contra 26.211042, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"b) oneri sociali\" no suma el renglón (2.96499 contra 1.482495, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"c) trattamento di fine rapporto\" no suma el renglón (0.501274 contra 0.250637, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b52 solo tiene la columna 'Valore esercizio corrente', sin año anterior.",
+  "duda de localizar que no afecta la carga: b66 abre los intereses en 'Debiti verso banche' y 'Altri', solo ejercicio corriente.",
+  "duda de extraer que no afecta la carga: El cuadro del costo del personal está dividido en Tesserati/Altri dipen./Totale; se tomó la columna Totale que coincide con el estado (L1864-L1881).",
+  "duda de extraer que no afecta la carga: La suma 200+5.533.199 cuadra con L903; en 2014 los 820 también son plusvalenza cespiti (L2040).",
+  "duda de extraer que no afecta la carga: 19.256+703.395=722.651 coincide con L908; la etiqueta 'altri' se repite en varios renglones del estado."
+ ],
+ "reintentar": [
+  {
+   "renglon": "altri",
+   "suma": 53.018549,
+   "objetivo": 50.471344
+  },
+  {
+   "renglon": "a) salari e stipendi",
+   "suma": 52.422084,
+   "objetivo": 26.211042
+  },
+  {
+   "renglon": "b) oneri sociali",
+   "suma": 2.96499,
+   "objetivo": 1.482495
+  },
+  {
+   "renglon": "c) trattamento di fine rapporto",
+   "suma": 0.501274,
+   "objetivo": 0.250637
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "altri",
+   "suma": 53.018549,
+   "objetivo": 50.471344
+  },
+  {
+   "renglon": "a) salari e stipendi",
+   "suma": 52.422084,
+   "objetivo": 26.211042
+  },
+  {
+   "renglon": "b) oneri sociali",
+   "suma": 2.96499,
+   "objetivo": 1.482495
+  },
+  {
+   "renglon": "c) trattamento di fine rapporto",
+   "suma": 0.501274,
+   "objetivo": 0.250637
+  }
+ ],
+ "totales": {
+  "ingresos": 55.420332,
+  "gastos": 58.61397,
+  "financiero": 2.125468,
+  "impuesto": 0.151448,
+  "resultadoImpreso": 0.521922,
+  "resultadoParaCargar": 0.521922,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "GARE IN CASA CAMPIONATO 1^ SQUAD",
+   "lado": "ingreso",
+   "M": 1.084243,
+   "pagina": 47,
+   "linea": 1712,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "GARE IN CASA COPPA ITAL 1^ SQUAD",
+   "lado": "ingreso",
+   "M": 0.001621,
+   "pagina": 47,
+   "linea": 1713,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "GARE FUORI CASA COPPA ITALIA",
+   "lado": "ingreso",
+   "M": 0.010182,
+   "pagina": 47,
+   "linea": 1714,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "ABBONAMENTI",
+   "lado": "ingreso",
+   "M": 0.66432,
+   "pagina": 47,
+   "linea": 1715,
+   "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "4) incrementi di immobilizzazioni per lavori interni",
+   "lado": "ingreso",
+   "M": 2.055289,
+   "pagina": 30,
+   "linea": 867,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "contributi in conto esercizio",
+   "lado": "ingreso",
+   "M": 1.133333,
+   "pagina": 30,
+   "linea": 869,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "altri",
+   "lado": "ingreso",
+   "M": 50.471344,
+   "pagina": 30,
+   "linea": 870,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "gasto",
+   "M": 0.938955,
+   "pagina": 30,
+   "linea": 874,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "7) per servizi",
+   "lado": "gasto",
+   "M": 8.073092,
+   "pagina": 30,
+   "linea": 875,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "8) per godimento di beni di terzi",
+   "lado": "gasto",
+   "M": 1.712631,
+   "pagina": 30,
+   "linea": 876,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) salari e stipendi",
+   "lado": "gasto",
+   "M": 26.211042,
+   "pagina": 30,
+   "linea": 878,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) oneri sociali",
+   "lado": "gasto",
+   "M": 1.482495,
+   "pagina": 30,
+   "linea": 879,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) trattamento di fine rapporto",
+   "lado": "gasto",
+   "M": 0.250637,
+   "pagina": 30,
+   "linea": 880,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 13.072042,
+   "pagina": 30,
+   "linea": 883,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "gasto",
+   "M": 0.217322,
+   "pagina": 30,
+   "linea": 884,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": "gasto",
+   "M": 0.068897,
+   "pagina": 30,
+   "linea": 885,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spese varie organizzazione gare",
+   "lado": "gasto",
+   "M": 0.195741,
+   "pagina": 50,
+   "linea": 1932,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Tasse iscrizioni gare",
+   "lado": "gasto",
+   "M": 0.011785,
+   "pagina": 50,
+   "linea": 1933,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Costo per acquist.temporanea prestaz.",
+   "lado": "gasto",
+   "M": 1.830263,
+   "pagina": 50,
+   "linea": 1936,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Minusvalenza da cessioni diritti plur. calciatori",
+   "lado": "gasto",
+   "M": 2.292323,
+   "pagina": 50,
+   "linea": 1938,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri da gestione calciatori",
+   "lado": "gasto",
+   "M": 0.743,
+   "pagina": 51,
+   "linea": 1952,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "Altri oneri diversi di gestione",
+   "lado": "gasto",
+   "M": 1.513745,
+   "pagina": 51,
+   "linea": 1954,
+   "origen": "nota que desglosa \"14) oneri diversi di gestione\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "altri",
+   "M": 0.500989,
+   "linea": 893
+  },
+  {
+   "etiqueta": "altri",
+   "M": 1.625354,
+   "linea": 897
+  },
+  {
+   "etiqueta": "17-bis) utili e perdite su cambi",
+   "M": -0.000875,
+   "linea": 899
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "imposte correnti",
+   "M": 0.151448,
+   "linea": 927
+  }
+ ]
+}

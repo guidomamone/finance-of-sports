@@ -1,0 +1,656 @@
+{
+ "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.pdf",
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md",
+ "mdSha1": "8ac3a2f3fe0c03a7aad7319512300ebf08a32113",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-08T17:51:00.797Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    12
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    177,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    195,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    220,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    250,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    266,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    288,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    344,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    364,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    390,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    415,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    426,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    438,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    446,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    716,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    801,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 38,
+   "lineas": [
+    1058,
+    1113
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 39,
+   "lineas": [
+    1119,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 39,
+   "lineas": [
+    1164,
+    1170
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 41,
+   "lineas": [
+    1182,
+    1230
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 42,
+   "lineas": [
+    1236,
+    1277
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 45,
+   "lineas": [
+    1337,
+    1344
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 49,
+   "lineas": [
+    1481,
+    1497
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 50,
+   "lineas": [
+    1513,
+    1528
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 50,
+   "lineas": [
+    1540,
+    1555
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 51,
+   "lineas": [
+    1563,
+    1571
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 51,
+   "lineas": [
+    1579,
+    1594
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 51,
+   "lineas": [
+    1600,
+    1611
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 52,
+   "lineas": [
+    1619,
+    1626
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 52,
+   "lineas": [
+    1630,
+    1658
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 53,
+   "lineas": [
+    1670,
+    1685
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 53,
+   "lineas": [
+    1701,
+    1707
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 54,
+   "lineas": [
+    1713,
+    1722
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 54,
+   "lineas": [
+    1730,
+    1745
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 54,
+   "lineas": [
+    1753,
+    1768
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 55,
+   "lineas": [
+    1780,
+    1796
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 55,
+   "lineas": [
+    1806,
+    1814
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 57,
+   "lineas": [
+    1856,
+    1861
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 58,
+   "lineas": [
+    1875,
+    1879
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 58,
+   "lineas": [
+    1887,
+    1894
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 59,
+   "lineas": [
+    1928,
+    1936
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 60,
+   "lineas": [
+    1964,
+    1968
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 60,
+   "lineas": [
+    1982,
+    1989
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 60,
+   "lineas": [
+    2001,
+    2012
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 63,
+   "lineas": [
+    2088,
+    2098
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 65,
+   "lineas": [
+    2140,
+    2146
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 65,
+   "lineas": [
+    2160,
+    2168
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 66,
+   "lineas": [
+    2184,
+    2190
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 66,
+   "lineas": [
+    2204,
+    2211
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 67,
+   "lineas": [
+    2237,
+    2243
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 68,
+   "lineas": [
+    2275,
+    2286
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 69,
+   "lineas": [
+    2308,
+    2315
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 69,
+   "lineas": [
+    2333,
+    2338
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 70,
+   "lineas": [
+    2356,
+    2361
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 72,
+   "lineas": [
+    2429,
+    2436
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 72,
+   "lineas": [
+    2454,
+    2463
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 73,
+   "lineas": [
+    2491,
+    2499
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 74,
+   "lineas": [
+    2531,
+    2537
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 75,
+   "lineas": [
+    2543,
+    2558
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 76,
+   "lineas": [
+    2578,
+    2592
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 77,
+   "lineas": [
+    2618,
+    2624
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 77,
+   "lineas": [
+    2640,
+    2642
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 78,
+   "lineas": [
+    2648,
+    2654
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 78,
+   "lineas": [
+    2664,
+    2671
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 79,
+   "lineas": [
+    2701,
+    2707
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 79,
+   "lineas": [
+    2719,
+    2723
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 79,
+   "lineas": [
+    2729,
+    2736
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 79,
+   "lineas": [
+    2742,
+    2755
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 80,
+   "lineas": [
+    2775,
+    2787
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 81,
+   "lineas": [
+    2801,
+    2809
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 81,
+   "lineas": [
+    2817,
+    2824
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 81,
+   "lineas": [
+    2828,
+    2834
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 81,
+   "lineas": [
+    2836,
+    2842
+   ],
+   "tipo": "texto"
+  },
+  "b75": {
+   "pagina": 83,
+   "lineas": [
+    2856,
+    2889
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 89,
+   "lineas": [
+    3092,
+    3097
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b21",
+  "b22"
+ ],
+ "notas_ingresos": [
+  "b56",
+  "b57",
+  "b64"
+ ],
+ "notas_gastos": [
+  "b58",
+  "b61",
+  "b62",
+  "b65",
+  "b66"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "CONTO ECONOMICO | 30/06/2004 in Euro | 30/06/2003 in Euro",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2004 in Euro",
+ "columna_anterior": "30/06/2003 in Euro",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el conto economico individual de S.S. Lazio S.p.A. (b21-b22) aunque el club suele cargarse consolidado, dado que el documento no trae consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo muestra el bilancio d'esercizio de S.S. Lazio S.p.A.; no aparece un conto economico consolidato.",
+   "bloques": [
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en euros (unidades); las notas (b56-b66) están en miles de euros. b64 parece ser la continuación de la nota C.16 de proventi finanziari (se ve solo su parte final). b3 y b4 son reclasificados de la relazione sulla gestione y no se eligen. No se encontró un consolidado."
+}

@@ -7,3 +7,9 @@
 - Verificado solo el número de ejercicios y el NIT contra el índice de SIIS; entidad y año de cada PDF NO abiertos todavía (pendiente al transcribir). Sin transcribir ni cargar al sitio.
 - Categoría/liga actual: sin confirmar en esta sesión.
 - Último chequeo: 2026-10-03.
+
+## Barrido 2026-10-08 (año de sourcing 2023)
+
+**Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
+
+Estados financieros en disco ahora: 9 ejercicios (2017-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.

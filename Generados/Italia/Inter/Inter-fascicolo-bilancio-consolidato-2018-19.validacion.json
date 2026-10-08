@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf",
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md",
+ "mdSha1": "2e79bcca49695fc1be4e3c31292a3ba8b18c7c96",
+ "modo": "digital",
+ "motivoModo": "6 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 1720239 vs 1710259, 87892 vs 37892, 28833 vs 28633",
+ "generado": "2026-10-08T17:39:24.700Z",
+ "fuentes": {
+  "14": "pdftotext",
+  "15": "pdftotext",
+  "47": "pdftotext",
+  "48": "pdftotext",
+  "49": "pdftotext",
+  "50": "pdftotext",
+  "51": "pdftotext",
+  "52": "pdftotext",
+  "53": "pdftotext",
+  "54": "pdftotext"
+ },
+ "confirmados": 309,
+ "noConfirmados": [
+  {
+   "bloque": "b45",
+   "pagina": 50,
+   "linea": 2409,
+   "numero": "58.084",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **Totale** | **58.084** | **51.977**  |"
+  }
+ ]
+}

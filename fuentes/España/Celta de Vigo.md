@@ -27,3 +27,7 @@
 Bajados de `rccelta.es/app/uploads/` (listados por Wayback, los PDFs siguen vivos): 2019-20 (`2020/12/RCCelta.-CCAA-e-inf-audit-maq.pdf`, 118 págs.) y 2020-21 (`2021/12/Annual-Accounts-RCCelta-T20-21.pdf`, 128 págs., **versión en inglés** del informe de auditoría y cuentas — el original en español no apareció). Con 2018-19, 2021-22 (reformulada), 2023-24 y 2024-25 que ya había → **6 ejercicios**; hueco 2022-23. También están en el mismo listado las cuentas del grupo/Afouteza/Fundación 2019-20 y 2020-21 (no bajadas).
 
 PDFs guardados en `Clubes/España/Celta de Vigo/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

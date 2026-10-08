@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Mansfield Town/` (los PDF no se trackean; son escane
 - `mansfield-medium-accounts-2001-02.pdf`
 - `mansfield-full-accounts-2019.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Bajado con `--include-small`, pero es "small company" y la cuenta de resultados NO se presentó (omitida del filing copy): sin ingresos no sirve para el sitio. Los años 2022-2024 del registro son todos del mismo tipo.

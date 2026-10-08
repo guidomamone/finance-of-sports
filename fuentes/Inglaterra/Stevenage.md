@@ -18,3 +18,7 @@ Todos en `Clubes/Inglaterra/Stevenage/` (los PDF no se trackean; son escaneos, h
 - `stevenage-other-accounts-2018-19.pdf`
 - `stevenage-other-accounts-2017-18.pdf`
 <!-- /ing-sourcing -->
+
+## Ejercicio 2022/23 (2026-10-08)
+
+Confirmado en el OCR (12 págs.): el filing trae solo balance y notas, sin cuenta de resultados. No sirve para el sitio.

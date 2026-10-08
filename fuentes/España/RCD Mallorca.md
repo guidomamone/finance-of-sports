@@ -44,3 +44,7 @@ Del CMS (`statics-maker.llt-services.com/mll/documents/`) se bajaron los informe
 PDFs guardados en `Clubes/España/RCD Mallorca/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
 
 **Actualización (mismo día, archive.org de vuelta)**: se re-barrió `rcdmallorca.es` y se bajó `informe-auditoria-cuentas-anuales-2013-2014.pdf` (59 págs., captura Wayback 2015-05-31 de `www.rcdmallorca.es/documentos/informe_auditoria_cuentas_anuales_13-14.pdf`; carátula "Real Club Deportivo Mallorca, S.A.D."). Es el único ejercicio anterior archivado del dominio viejo → **5 ejercicios** (2013-14 + 2021-22 a 2024-25; no contiguos; falta 2014-15 a 2020-21).
+
+## WorldFootball (sourcing 2026-10-08, año 2023)
+
+Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas ninguna; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.

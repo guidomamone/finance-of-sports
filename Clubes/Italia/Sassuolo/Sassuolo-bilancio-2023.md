@@ -2119,81 +2119,79 @@ Allegati alla Nota Integrativa:
 
 --- pág. 61 ---
 
-Allegato 1
+Allegato 1 — Movimentazioni diritti pluriennali prestazioni dei calciatori Bilancio 31/12/2023 — U.S. Sassuolo Calcio S.r.l.
 
-Movimentazioni diritti pluriennali prestazioni dei calcinatori Bilancio 31/12/2023
+Grupos de columnas: contratto | provenienza | destinazione | valori inizio periodo 01/01/2023 | variazione valori di periodo | effetti economici di periodo | valori di fine periodo 31/12/2023 | Varie
 
-U.S. Sassuolo Calcio S.r.l.
+Numeración de columnas: 1 (lordo), 2 (f.do ammort.), 3 (netto), 4 (acquisti / effetto costo ammortizzato), 5 (cessioni), 6 (ammort.ti), 7 (svalutazioni), 8 (minusvalenze / minusvalenze con effetto costo ammortizzato), 9 (plusvalenze / plusvalenze con effetto costo ammortizzato), 10 (1+4) (lordo), 11 (2+6) (f.do amm.), 12 (10-11-7) (netto)
 
-| calcinatore | data nascita | contratto | provenienza | desimazione | valori inula periodo 01/01/2023 | verizione valori di periodo | effetti economici di periodo | valori di fine periodo 31/12/2023 | Vorte |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| data inizio primo contratto | data scedenza ultimo contratto | data | società | data | società | brido | Ldo ammort. | netto | acquisti | Effetto socio commeritario | cessioni | commerit. | scalutazioni | minorazione | Minorazione con effetto socio commeritario | phorazione | Phorazione con effetto socio commeritario | brido | Ldo amm. | netto | Composto Agenti (Con) stazioni | Adj. occhio |
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
-| CONSIOLI | 27.01.87 | 01.09.2014 | 30.06.2024 | 01.09.14 | ATALANTA |  |  | 4.500.000 | 4.218.907 | 281.093 | - | - | 112.407 |  |  |  |  |  | 4.500.000 | 4.131.344 | 168.656 | 400.000 |  |
-| BERARDI | 01.08.94 | 01.07.2015 | 30.06.2024 | 25.06.15 | JUVENTUS |  |  | 20.000.000 | 16.615.399 | 3.388.601 | - | - | 753.023 |  |  |  |  |  | 20.000.000 | 17.364.422 | 2.635.578 |  |  |
-| FERRARI | 15.05.92 | 31.08.2016 | 30.06.2024 | 31.08.16 | CROTONI |  |  | 3.974.690 | 3.413.996 | 540.694 | - | - | 373.795 |  |  |  |  |  | 3.974.690 | 3.787.793 | 186.899 | 140.000 | 20% |
-| MARCHIZZA | 26.05.90 | 13.07.2017 | 30.06.2024 | 13.07.17 | ROMA |  |  | 3.000.000 | 1.409.092 | 1.580.908 | - | 1.380.000 | 318.182 |  |  | 17.354 | 27.274 | 0 | 0 | 0 | 0 | 100.000 | 50% |
-| FRATESI | 22.09.99 | 13.07.2017 | 30.06.2024 | 13.07.17 | ROMA |  |  | 5.000.000 | 3.698.347 | 1.101.653 | - | - | 571.901 |  |  |  |  |  | 5.000.000 | 4.070.248 | 929.732 | 120.000 | 30% |
-| TURATI | 05.09.01 | 01.06.2019 | 30.06.2025 | 31.01.18 | RENATE |  |  | 45.000 | 31.742 | 13.258 | - | - | 5.305 |  |  |  |  |  | 45.000 | 37.045 | 7.955 |  |  |
-| MARGINEAN | 05.07.03 | 31.01.2018 | 30.06.2024 | 31.01.18 | SPORTIV ZLATINA |  |  | 25.000 | 20.129 | 4.871 | - | - | 1.940 |  |  |  |  |  | 25.000 | 22.077 | 2.923 |  |  |
-| CAMPANI | 19.08.00 | 17.08.2018 | 30.06.2023 | 17.08.18 | PSIA |  |  | 900.000 | 808.475 | 91.525 | - | - | 91.525 |  |  |  |  |  | 900.000 | 900.000 | 0 |  |  |
-| STEAU | 22.04.01 | 23.01.2019 | 30.06.2023 | 23.01.19 | VIDOUL |  |  | 40.000 | 40.000 | 0 | - | 0 | 0 |  |  |  |  |  | 0 | 0 | 0 |  |  |
-| PIERAGNOLO | 05.01.03 | 01.01.2023 | 30.06.2027 | 18.06.19 | PADOVA |  |  | 80.000 | 70.000 | 10.000 | - | - | 2.222 |  |  |  |  |  | 80.000 | 72.222 | 7.778 |  |  |
-| ROGERIO | 13.01.98 | 29.06.2019 | 30.06.2024 | 29.06.19 | JUVENTUS |  |  | 6.950.000 | 4.865.000 | 2.085.000 | - | 5.280.000 | 810.853 |  |  |  | 3.925.833 | 3.925.833 | 0 | 0 | 0 |  |  |
-| PINELLI | 03.01.01 | 29.06.2019 | 30.06.2023 | 29.06.19 | JUVENTUS |  |  | 1.875.000 | 1.648.625 | 234.375 | - | - | 234.375 |  |  |  |  |  | 1.875.000 | 1.875.000 | 0 |  |  |
-| SALA | 04.06.99 | 28.06.2019 | 30.06.2024 | 28.06.19 | INTER |  |  | 3.000.000 | 2.196.428 | 803.572 | - | 0 | 512.500 |  | 491.072 |  |  |  | 0 | 0 | 0 |  |  |
-| MELDOR | 05.04.99 | 23.08.2019 | 30.06.2024 | 21.08.19 | RAPID VIENNA |  |  | 5.200.000 | 3.405.003 | 1.794.317 | - | 3.080.000 | 697.712 |  |  | 1.903.595 | 1.312.707 | 0 | 0 | 0 | 0 | 450.000 | 10% |
-| SIBANG | 27.05.92 | 25.07.2019 | 30.06.2025 | 25.07.19 | WESTHAM |  |  | 7.500.000 | 6.514.716 | 985.264 | 250.000 | - | 406.614 |  |  |  |  |  | 7.750.000 | 6.971.336 | 778.670 | 525.000 |  |
-| RUSSO | 31.03.01 | 25.07.2019 | 30.06.2024 | 25.07.19 | GENOA |  |  | 7.000.000 | 4.864.407 | 2.135.593 | - | - | 474.576 |  |  |  |  |  | 7.000.000 | 5.338.983 | 1.661.017 | 140.000 | 50% plus |
-| TRATOLI | 16.02.00 | 13.07.2019 | 30.06.2024 | 13.07.19 | EMPOLI | 31.01.23 | ROBINOWITZ | 16.000.000 | 11.200.000 | 4.800.000 | - | 25.625.000 | 0 |  |  | 20.825.000 | 19.322.705 | 0 | 0 | 0 | 0 | 1.500.000 |  |
-| KYRIAKOPOULOS | 05.02.96 | 03.09.2019 | 30.06.2025 | 03.09.19 | ASTERAS TRIP |  |  | 500.000 | 256.944 | 243.056 | - | - | 97.222 |  |  |  |  |  | 500.000 | 354.164 | 145.834 | 49.000 | 10% plus |
-| AYHAN | 10.11.94 | 10.08.2020 | 30.06.2024 | 10.08.20 | FORTUNA D | 30.06.23 | SALATAMARIS | 2.947.369 | 1.719.174 | 1.228.395 | - | 2.880.000 | 409.399 |  |  | 1.981.284 | 1.374.150 | 0 | 0 | 0 | 0 |  |  |
-| DIFFIEL | 17.06.91 | 31.08.2019 | 30.06.2024 | 31.08.19 | ROMA |  |  | 11.000.000 | 6.500.000 | 4.500.000 | - | - | 3.000.000 |  |  |  |  |  | 11.000.000 | 9.500.000 | 1.500.000 | 1.251.000 |  |
-| ROMAGNA | 26.05.97 | 18.09.2020 | 30.06.2024 | 18.09.20 | CAGLIARI |  |  | 4.000.000 | 2.834.782 | 1.565.218 | - | - | 628.087 |  |  |  |  |  | 4.000.000 | 3.060.869 | 939.131 | 44.800 | 20% plus |
-| POLIAN | 09.08.94 | 12.07.2019 | 30.06.2025 | 12.07.19 | BORUSSIA D |  |  | 4.000.000 | 1.952.540 | 2.867.460 | - | - | 826.904 |  |  |  |  |  | 4.000.000 | 2.759.524 | 1.240.476 | 300.000 | 10% plus |
-| MIRANDA | 10.03.03 | 08.05.2023 | 30.06.2025 | 30.06.21 | CASMINO |  |  | 50.000 | 50.000 | 0 | - | - | 0 |  |  |  |  |  | 50.000 | 50.000 | 0 |  |  |
-| PAZ | 13.06.02 | 02.02.2021 | 30.06.2025 | 02.02.21 | CORTELLIA |  |  | 250.000 | 131.112 | 138.888 | - | - | 55.556 |  |  |  |  |  | 250.000 | 166.668 | 83.332 | 50.000 |  |
-| LOPEZ | 04.12.97 | 05.10.2020 | 30.06.2025 | 05.10.20 | OLYMPIQUE MAESSELIA |  |  | 2.023.700 | 684.492 | 1.339.216 | - | - | 535.687 |  |  |  |  |  | 2.023.700 | 1.220.179 | 803.529 | 1.560.000 |  |
-| MANORELLI | 30.04.04 | GIOVANE DI SERIE |  | 30.06.21 | CESENA |  |  | 60.000 | 45.000 | 15.000 | - | - | 15.000 |  |  |  |  |  | 60.000 | 60.000 | 0 |  |  |
-| ERLIC | 24.01.98 | 10.08.2021 | 30.06.2026 | 10.08.21 | SPEZIA |  |  | 3.000.000 | 864.406 | 2.135.596 | - | - | 610.169 |  |  |  |  |  | 3.000.000 | 1.474.575 | 1.525.425 | 244.000 |  |
-| FORESTA | 30.04.04 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPOORIA |  |  | 500.000 | 255.295 | 264.703 | - | - | 176.471 |  |  |  |  |  | 500.000 | 411.764 | 88.234 |  |  |
-| LEONE | 28.03.03 | 06.09.2021 | 30.06.2028 | 31.08.21 | SAMPOORIA |  |  | 1.000.000 | 369.748 | 630.252 | - | - | 105.042 |  |  |  |  |  | 1.000.000 | 474.790 | 525.210 |  |  |
-| LOEFFEN | 18.01.04 | 16.08.2021 | 30.06.2024 |  | PSV EINDHOVEN |  |  | 165.000 | 43.311 | 101.689 | - | - | 22.597 |  |  |  |  |  | 165.000 | 65.908 | 79.692 |  |  |
-| SAMELE | 09.04.02 | 28.07.2021 | 30.06.2026 | 30.07.21 | MONOPOLI |  |  | 100.000 | 28.814 | 71.186 | - | - | 28.359 |  |  |  |  |  | 100.000 | 45.153 | 30.847 |  |  |
-| SUPLIA | 01.08.06 | GIOVANE DI SERIE |  | 20.08.21 | ENTELLA | 13.01.23 | ENTELLA | 10.000 | 3.750 | 6.250 | - | 30.000 | 0 |  |  | 25.750 | 25.750 | 0 | 0 | 0 | 0 |  |  |
-| ZONILLAI | 11.03.03 | GIOVANE DI SERIE |  | 19.07.21 | MARUGGIO |  |  | 30.000 | 22.500 | 7.500 | - | - | 7.500 |  |  |  |  |  | 30.000 | 30.000 | 0 |  |  |
-| RUAN | 07.06.99 | 11.08.2021 | 30.06.2026 | 06.08.21 | GRENIO |  |  | 3.071.872 | 1.861.387 | 3.610.485 | - | 307.138 | 943.813 |  |  |  |  |  | 4.764.734 | 2.465.208 | 2.359.534 | 500.000 | 10% plus |
-| FLAMINGO | 31.12.02 | 01.02.2021 | 30.06.2025 | 01.07.21 | ALMERICITY |  |  | 70.000 | 26.250 | 43.750 | 100.000 | - | 22.222 |  |  |  |  |  | 170.000 | 48.472 | 121.528 |  |  |
-| ARDIZIONE | 21.03.07 | GIOVANE DI SERIE |  | 10.08.21 | J24 MESSINA |  |  | 10.000 | 3.750 | 6.250 | - | - | 2.500 |  |  |  |  |  | 10.000 | 6.250 | 3.750 |  |  |
-| ALVAREZ | 19.05.01 | 01.07.2022 | 30.06.2027 | 14.06.22 | PENAROL M. |  |  | 12.000.000 | 1.200.000 | 10.800.000 | - | 354.733 | 2.276.726 |  |  |  |  |  | 11.445.261 | 3.476.726 | 7.968.539 | 1.420.000 | 20% plus |
-| MOBO | 25.01.01 | 10.04.2022 | 30.06.2027 | 31.01.22 | PADOVA |  |  | 3.965.000 | 720.909 | 3.244.091 | - | - | 720.909 |  |  |  |  |  | 3.965.000 | 1.441.818 | 2.523.182 | 300.000 |  |
-| CERVIO | 01.04.02 | 28.01.2022 | 30.06.2027 | 28.01.22 | ROMA |  |  | 2.000.000 | 363.636 | 1.636.364 | - | 44.073 | 353.842 |  |  |  |  |  | 1.955.927 | 717.478 | 1.238.449 | 40.000 | 20% plus |
-| PANOREA | 06.09.04 | 31.01.2022 | 30.06.2024 | 31.01.22 | SPAL |  |  | 50.000 | 18.966 | 31.034 | 170.000 | - | 28.146 |  |  |  |  |  | 220.000 | 47.112 | 172.000 |  |  |
-| MATHEUS | 19.12.97 | 06.08.2021 | 30.06.2026 | 06.08.21 | GRENIO |  |  | 7.000.000 | 1.255.294 | 5.764.706 | - | 228.832 | 1.581.907 |  |  |  |  |  | 6.771.968 | 2.817.201 | 3.954.767 | 1.350.000 | 10% plus |
-| CHINI | 03.09.01 | 21.01.2022 | 30.06.2026 | 21.01.22 | ROSENBORG |  |  | 2.850.000 | 356.250 | 2.493.750 | - | - | 712.500 |  |  |  |  |  | 2.850.000 | 1.068.750 | 1.781.250 | 300.000 |  |
-| HARROUI | 13.01.98 | 30.08.2021 | 30.06.2025 | 30.08.21 | SPARTA ROTTERDAM |  |  | 1.000.000 | 166.667 | 833.333 | 100.000 | - | 700.000 | 166.667 |  | 66.666 | 90.778 | 0 | 0 | 0 | 0 | 551.000 | 10% plus |
-| ANASTASINI | 01.01.06 | GIOVANE DI SERIE |  | 01.07.22 | LECCO |  |  | 20.000 | 2.500 | 17.500 | - | - | 5.000 |  |  |  |  |  | 20.000 | 7.500 | 12.500 |  |  |
-| ANTISTE | 18.08.02 | 30.08.2022 | 30.06.2026 | 30.08.22 | SPEZIA |  |  | 5.675.000 | 493.478 | 5.181.522 | - | 176.459 | 1.450.018 |  |  |  |  |  | 5.498.541 | 1.923.496 | 3.575.045 | 47.000 |  |
-| KNIZOVIC | 29.07.03 | 22.07.2022 | 30.06.2025 | 22.07.22 | NE O'DALIA |  |  | 50.000 | 8.333 | 41.667 | - | - | 27.778 |  |  |  |  |  | 50.000 | 36.111 | 13.889 |  |  |
-| LAURINTE' | 04.12.98 | 30.08.2022 | 30.06.2027 | 30.08.22 | LORIENT |  |  | 10.100.000 | 696.552 | 9.403.448 | 500.000 | - | 57.016 |  |  |  |  |  | 10.542.984 | 2.884.648 | 7.658.336 | 500.000 | 10% plus |
-| PINAMONTI | 19.05.99 | 11.08.2022 | 30.06.2027 | 11.08.22 | INTER |  |  | 28.000.000 | 1.694.915 | 18.385.003 | - | - | 559.617 |  |  |  |  |  | 19.440.983 | 5.628.486 | 13.802.497 |  |  |
-| THORSTVET | 13.03.99 | 11.07.2022 | 30.06.2027 | 11.07.22 | GENK |  |  | 10.150.000 | 1.015.000 | 9.135.000 | - | - | 29.557 |  |  |  |  |  | 10.120.443 | 3.038.432 | 7.082.011 | 600.000 | 15% plus |
-| SASANELLI | 15.08.04 | GIOVANE DI SERIE |  | 11.07.22 | MONOPOLI |  |  | 50.000 | 12.500 | 37.500 | - | - | 25.000 |  |  |  |  |  | 50.000 | 37.500 | 12.500 |  |  |
-| ZAKOK | 16.03.04 | 30.08.2022 | 30.06.2025 | 09.08.22 | COLABICKI |  |  | 30.000 | 3.000 | 27.000 | - | - | 10.000 |  |  |  |  |  | 30.000 | 13.000 | 16.200 |  |  |
-| BARAMI | 28.02.99 | 31.01.2023 | 30.06.2027 | 31.01.23 | EMPOLI |  |  | - | - | - | 6.000.000 | - | 440.822 |  |  |  |  |  | 5.559.978 | 1.153.958 | 4.406.020 | 500.000 |  |
-| VOEPATO | 15.11.03 | 29.06.2023 | 30.06.2028 | 01.07.23 | ROMA |  |  | - | - | - | 7.500.000 | - | 426.264 |  |  |  |  |  | 6.973.736 | 697.374 | 6.276.342 | 33.700 | 15% plus |
-| MISIORI | 24.03.04 | 29.06.2023 | 30.06.2028 | 01.07.23 | ROMA |  |  | - | - | - | 2.500.000 | - | 175.421 |  |  |  |  |  | 2.324.579 | 232.458 | 2.092.121 | 21.600 | 15% plus |
-| PUMO | 19.07.06 | GIOVANE DI SERIE |  | 01.07.23 | VIRTUS JUNIOR |  |  | - | - | - | 15.000 | - | 2.500 |  |  |  |  |  | 15.000 | 2.500 | 12.500 |  |  |
-| SANORO | 15.03.06 | 30.01.2023 | 30.06.2025 | 30.01.23 | ORADEA |  |  | - | - | - | 30.000 | - | 12.000 |  |  |  |  |  | 30.000 | 12.000 | 18.000 |  |  |
-| RAPIAOORI | 18.02.00 | - | - | - | SG | 18.02.03 | NAPOLI | 0 | 0 | 0 | 0 | 26.875.000 | 0 |  |  |  |  |  | 26.875.000 | 25.256.810 | 0 | 0 |  |
-| ODDEI | 18.09.02 | - | - | - | SG | 21.06.23 | NK RUDES | 0 | 0 | 0 | 0 | 950 | 0 |  |  |  |  |  | 950 | 950 | 0 | 0 |  |
-| BOLOCA | 22.11.98 | 12.07.2023 | 30.06.2028 | 12.07.23 | FROSINONE |  |  | 0 | 0 | 0 | 6.000.000 | - | 209.176 |  |  |  |  |  | 5.790.838 | 579.083 | 5.211.747 | 150.000 |  |
-| UPANI | 19.05.03 | 07.08.2023 | 30.06.2028 | 07.08.23 | GENOA |  |  | - | - | - | 3.000.000 | - | 111.038 |  |  |  |  |  | 2.880.962 | 244.827 | 2.644.135 |  |  |
-| MILLATTIERI | 07.10.00 | 07.07.2023 | 30.06.2028 | 07.07.23 | INTER |  |  | - | - | - | 6.000.000 | - | 455.594 |  |  |  |  |  | 5.364.406 | 556.441 | 5.087.965 | 150.000 |  |
-| RACIC | 17.05.98 | 16.08.2023 | 30.06.2027 | 15.08.23 | VALENCIA |  |  | - | - | - | 2.250.000 | - | 239.362 |  |  |  |  |  | 2.250.000 | 239.362 | 2.018.638 | 500.000 |  |
-| DIAGNE | 29.01.00 | GIOVANE DI SERIE |  | 16.08.23 | FIORDIZUCKA |  |  | - | - | - | 7.000 | - | 0 |  |  |  |  |  | 7.000 | 0 | 7.000 |  |  |
-| NOWAK | 03.09.95 | 18.07.2022 | 30.06.2024 | 18.07.22 | IBI KOCE |  |  | 1.900 | 0 | 1.900 | 0 | 0 | 0 |  |  |  |  |  | 1.900 | 0 | 1.900 |  |  |
-| **TOTALI** |  |  |  |  |  |  |  | **194.799.539** | **89.798.601** | **105.009.130** | **34.422.000** | **-3.853.535** | **65.530.950** | **31.705.927** | **0** | **557.738** | **599.204** | **55.562.686** | **51.216.905** | **187.128.635** | **93.775.043** | **93.345.592** | **13.445.100** |  |
+| calciatore | data nascita | data inizio primo contratto | data scadenza ultimo contratto | provenienza data | provenienza società | destinazione data | destinazione società | lordo | f.do ammort. | netto | acquisti | Effetto costo ammortizzato | cessioni | ammort.ti | svalutazioni | minusvalenze | Minusvalenze con effetto costo ammortizzato | plusvalenze | Plusvalenze con effetto costo ammortizzato | lordo | f.do amm. | netto | Compenso Agenti (Costo storico) | Sell on fee |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CONSIGLI | 27.01.87 | 01.09.2014 | 30.06.2024 | 01.09.14 | ATALANTA | | | 4.500.000 | 4.218.907 | 281.093 | | - | | 112.437 | | | | | | 4.500.000 | 4.331.344 | 168.656 | 400.000 | |
+| BERARDI | 01.08.94 | 01.07.2015 | 30.06.2024 | 25.06.15 | JUVENTUS | | | 20.000.000 | 16.611.399 | 3.388.601 | | - | | 753.023 | | | | | | 20.000.000 | 17.364.422 | 2.635.578 | | |
+| FERRARI | 15.05.92 | 31.08.2016 | 30.06.2024 | 31.08.16 | CROTONE | | | 3.974.690 | 3.413.996 | 560.694 | | - | | 373.795 | | | | | | 3.974.690 | 3.787.791 | 186.899 | 148.000 | 20% |
+| MARCHIZZA | 26.03.98 | 13.07.2017 | 30.06.2025 | 13.07.17 | ROMA | | | 3.000.000 | 1.409.092 | 1.590.908 | | - | 1.300.000 | 318.182 | | | 17.354 | 27.274 | 0 | 0 | 0 | 0 | 100.000 | 50% |
+| FRATTESI | 22.09.99 | 13.07.2017 | 30.06.2026 | 13.07.17 | ROMA | | | 5.000.000 | 3.698.347 | 1.301.653 | | - | | 371.901 | | | | | | 5.000.000 | 4.070.248 | 929.752 | 120.000 | 30% |
+| TURATI | 05.09.01 | 01.06.2019 | 30.06.2025 | 31.01.18 | RENATE | | | 45.000 | 31.742 | 13.258 | | - | | 5.303 | | | | | | 45.000 | 37.045 | 7.955 | | |
+| MARGINEAN | 03.07.01 | 31.01.2018 | 30.06.2024 | 31.01.18 | SPORTIV ZLATNA | | | 25.000 | 20.129 | 4.871 | | - | | 1.948 | | | | | | 25.000 | 22.077 | 2.923 | | |
+| CAMPANI | 19.08.00 | 17.08.2018 | 30.06.2023 | 17.08.18 | PISA | | | 900.000 | 808.475 | 91.525 | | - | | 91.525 | | | | | | 900.000 | 900.000 | 0 | | |
+| STEAU | 22.04.01 | 23.01.2019 | 30.06.2023 | 23.01.19 | VITORUL | | | 40.000 | 40.000 | 0 | | - | 0 | 0 | | | | | | 0 | 0 | 0 | | |
+| PIERAGNOLO | 03.01.03 | 01.01.2023 | 30.06.2027 | 18.06.19 | PADOVA | | | 80.000 | 70.000 | 10.000 | | - | | 2.222 | | | | | | 80.000 | 72.222 | 7.778 | | |
+| ROGERIO | 13.01.98 | 29.06.2019 | 30.06.2024 | 29.06.19 | JUVENTUS | | | 6.950.000 | 4.865.000 | 2.085.000 | | - | 5.200.000 | 810.833 | | | | 3.925.833 | 3.925.833 | 0 | 0 | 0 | | |
+| PINELLI | 03.01.01 | 29.06.2019 | 30.06.2023 | 29.06.19 | JUVENTUS | | | 1.875.000 | 1.640.625 | 234.375 | | - | | 234.375 | | | | | | 1.875.000 | 1.875.000 | 0 | | |
+| SALA | 04.06.99 | 28.06.2019 | 30.06.2024 | 28.06.19 | INTER | | | 3.000.000 | 2.196.428 | 803.572 | | - | 0 | 312.500 | | 491.072 | 491.072 | | | 0 | 0 | 0 | | |
+| MULDUR | 03.04.99 | 21.08.2019 | 30.06.2024 | 21.08.19 | RAPID VIENNA | | | 5.200.000 | 3.405.883 | 1.794.117 | | - | 3.000.000 | 697.712 | | | | 1.903.595 | 1.312.707 | 0 | 0 | 0 | 450.000 | 10% |
+| OBIANG | 27.03.92 | 25.07.2019 | 30.06.2025 | 25.07.19 | WEST HAM | | | 7.500.000 | 6.514.716 | 985.284 | 250.000 | - | | 456.614 | | | | | | 7.750.000 | 6.971.330 | 778.670 | 525.000 | |
+| RUSSO | 31.03.01 | 25.07.2019 | 30.06.2024 | 25.07.19 | GENOA | | | 7.000.000 | 4.864.407 | 2.135.593 | | - | | 474.576 | | | | | | 7.000.000 | 5.338.983 | 1.661.017 | 140.000 | 50% plus |
+| TRAORE' | 16.02.00 | 13.07.2019 | 30.06.2024 | 13.07.19 | EMPOLI | 31.01.23 | BOURNEMOUTH | 16.000.000 | 11.200.000 | 4.800.000 | | - | 25.625.000 | 0 | | | | 20.825.000 | 19.322.705 | 0 | 0 | 0 | 1.500.000 | |
+| KYRIAKOPOULOS | 05.02.96 | 03.09.2019 | 30.06.2025 | 03.09.19 | ASTERAS TRIP. | | | 500.000 | 256.944 | 243.056 | | - | | 97.222 | | | | | | 500.000 | 354.166 | 145.834 | 49.000 | 10% plus. |
+| AYHAN | 10.11.94 | 10.08.2020 | 30.06.2024 | 10.08.20 | FORTUNA D. | 30.06.23 | GALATASARAY | 2.947.369 | 1.719.174 | 1.228.195 | | - | 2.800.000 | 409.399 | | | | 1.981.204 | 1.374.150 | 0 | 0 | 0 | | |
+| DEFREL | 17.06.91 | 31.08.2019 | 30.06.2024 | 31.08.19 | ROMA | | | 11.000.000 | 6.500.000 | 4.500.000 | | - | | 3.000.000 | | | | | | 11.000.000 | 9.500.000 | 1.500.000 | 1.251.000 | |
+| ROMAGNA | 26.05.97 | 18.09.2020 | 30.06.2024 | 18.09.20 | CAGLIARI | | | 4.000.000 | 2.434.782 | 1.565.218 | | - | | 626.087 | | | | | | 4.000.000 | 3.060.869 | 939.131 | 44.800 | 20% plus. |
+| TOLJAN | 08.08.94 | 12.07.2019 | 30.06.2025 | 12.07.19 | BORUSSIA D. | | | 4.000.000 | 1.932.540 | 2.067.460 | | - | | 826.984 | | | | | | 4.000.000 | 2.759.524 | 1.240.476 | 300.000 | 10% plus. |
+| MIRANDA | 10.03.03 | 08.05.2023 | 30.06.2025 | 30.06.21 | CASSINO | | | 50.000 | 50.000 | 0 | | - | | 0 | | | | | | 50.000 | 50.000 | 0 | | |
+| PAZ | 13.06.02 | 02.02.2021 | 30.06.2025 | 02.02.21 | CORTULUA | | | 250.000 | 111.112 | 138.888 | | - | | 55.556 | | | | | | 250.000 | 166.668 | 83.332 | 50.000 | |
+| LOPEZ | 04.12.97 | 05.10.2020 | 30.06.2025 | 05.10.20 | OLYMPIQUE MARSIGLIA | | | 2.023.708 | 684.492 | 1.339.216 | | - | | 535.687 | | | | | | 2.023.708 | 1.220.179 | 803.529 | 1.360.000 | |
+| MANDRELLI | 30.04.04 | GIOVANE DI SERIE | | 30.06.21 | CESENA | | | 60.000 | 45.000 | 15.000 | | - | | 15.000 | | | | | | 60.000 | 60.000 | 0 | | |
+| ERLIC | 24.01.98 | 10.08.2021 | 30.06.2026 | 10.08.21 | SPEZIA | | | 3.000.000 | 864.406 | 2.135.594 | | - | | 610.169 | | | | | | 3.000.000 | 1.474.575 | 1.525.425 | 244.000 | |
+| FORESTA | 30.06.04 | 06.09.2021 | 30.06.2024 | 31.08.21 | SAMPDORIA | | | 500.000 | 235.295 | 264.705 | | - | | 176.471 | | | | | | 500.000 | 411.766 | 88.234 | | |
+| LEONE | 28.03.05 | 06.09.2021 | 30.06.2028 | 31.08.21 | SAMPDORIA | | | 1.000.000 | 369.748 | 630.252 | | - | | 105.042 | | | | | | 1.000.000 | 474.790 | 525.210 | | |
+| LOEFFEN | 18.01.04 | 16.08.2021 | 30.06.2024 | | PSV EINDHOVEN | | | 145.000 | 43.311 | 101.689 | | - | | 22.597 | | | | | | 145.000 | 65.908 | 79.092 | | |
+| SAMELE | 09.04.02 | 28.07.2021 | 30.06.2026 | 30.07.21 | MONOPOLI | | | 100.000 | 28.814 | 71.186 | | - | | 20.339 | | | | | | 100.000 | 49.153 | 50.847 | | |
+| SUPLJA | 01.08.06 | GIOVANE DI SERIE | | 20.08.21 | ENTELLA | 13.01.23 | ENTELLA | 10.000 | 3.750 | 6.250 | | - | 30.000 | 0 | | | | 23.750 | 23.750 | 0 | 0 | 0 | | |
+| ZENELAJ | 11.03.03 | GIOVANE DI SERIE | | 19.07.21 | MARUGGIO | | | 30.000 | 22.500 | 7.500 | | - | | 7.500 | | | | | | 30.000 | 30.000 | 0 | | |
+| RUAN | 07.06.99 | 11.08.2021 | 30.06.2026 | 06.08.21 | GREMIO | | | 5.071.872 | 1.461.387 | 3.610.485 | | - 307.138 | | 943.813 | | | | | | 4.764.734 | 2.405.200 | 2.359.534 | 500.000 | 10% plus. |
+| FLAMINGO | 31.12.02 | 01.02.2021 | 30.06.2025 | 01.07.21 | ALMERE CITY | | | 70.000 | 26.250 | 43.750 | 100.000 | - | | 22.222 | | | | | | 170.000 | 48.472 | 121.528 | | |
+| ARDIZZONE | 21.03.07 | GIOVANE DI SERIE | | 10.08.21 | F24 MESSINA | | | 10.000 | 3.750 | 6.250 | | - | | 2.500 | | | | | | 10.000 | 6.250 | 3.750 | | |
+| ALVAREZ | 19.05.01 | 01.07.2022 | 30.06.2027 | 14.06.22 | PENAROL M. | | | 12.000.000 | 1.200.000 | 10.800.000 | | - 554.735 | | 2.276.726 | | | | | | 11.445.265 | 3.476.726 | 7.968.539 | 1.420.000 | 20% plus. |
+| MORO | 25.01.01 | 10.04.2022 | 30.06.2027 | 31.01.22 | PADOVA | | | 3.965.000 | 720.909 | 3.244.091 | | - | | 720.909 | | | | | | 3.965.000 | 1.441.818 | 2.523.182 | 300.000 | |
+| CIERVO | 01.04.02 | 28.01.2022 | 30.06.2027 | 28.01.22 | ROMA | | | 2.000.000 | 363.636 | 1.636.364 | | - 44.073 | | 353.842 | | | | | | 1.955.927 | 717.478 | 1.238.449 | 40.000 | 20% plus. |
+| D'ANDREA | 06.09.04 | 31.01.2022 | 30.06.2024 | 31.01.22 | SPAL | | | 50.000 | 18.966 | 31.034 | 170.000 | - | | 28.146 | | | | | | 220.000 | 47.112 | 172.888 | | |
+| MATHEUS | 19.12.97 | 06.08.2021 | 30.06.2026 | 06.08.21 | GREMIO | | | 7.000.000 | 1.235.294 | 5.764.706 | | - 228.032 | | 1.581.907 | | | | | | 6.771.968 | 2.817.201 | 3.954.767 | 1.350.000 | 10% plus. |
+| CEIDE | 03.09.01 | 21.01.2022 | 30.06.2026 | 21.01.22 | ROSENBORG | | | 2.850.000 | 356.250 | 2.493.750 | | - | | 712.500 | | | | | | 2.850.000 | 1.068.750 | 1.781.250 | 300.000 | |
+| HARROUI | 13.01.98 | 30.08.2021 | 30.06.2025 | 30.08.21 | SPARTA ROTTERDAM | | | 1.000.000 | 166.667 | 833.333 | 100.000 | - | 700.000 | 166.667 | | 66.666 | 90.778 | | | 0 | 0 | 0 | 551.000 | 10% plus. |
+| ANASTASINI | 01.01.06 | GIOVANE DI SERIE | | 01.07.22 | LECCO | | | 20.000 | 2.500 | 17.500 | | - | | 5.000 | | | | | | 20.000 | 7.500 | 12.500 | | |
+| ANTISTE | 18.08.02 | 30.08.2022 | 30.06.2026 | 30.08.22 | SPEZIA | | | 5.675.000 | 493.478 | 5.181.522 | | - 176.459 | | 1.430.018 | | | | | | 5.498.541 | 1.923.496 | 3.575.045 | 47.000 | |
+| KNEZOVIC | 29.07.05 | 22.07.2022 | 30.06.2025 | 22.07.22 | NH CIBALIA | | | 50.000 | 8.333 | 41.667 | | - | | 27.778 | | | | | | 50.000 | 36.111 | 13.889 | | |
+| LAURIENTE' | 04.12.98 | 30.08.2022 | 30.06.2027 | 30.08.22 | LORIENT | | | 10.100.000 | 696.552 | 9.403.448 | 500.000 | - 57.016 | | 2.188.096 | | | | | | 10.542.984 | 2.884.648 | 7.658.336 | 500.000 | 10% plus. |
+| PINAMONTI | 19.05.99 | 11.08.2022 | 30.06.2027 | 11.08.22 | INTER | | | 20.000.000 | 1.694.915 | 18.305.085 | | - 559.017 | | 3.943.571 | | | | | | 19.440.983 | 5.638.486 | 13.802.497 | | |
+| THORSTVEDT | 13.03.99 | 11.07.2022 | 30.06.2027 | 11.07.22 | GENK | | | 10.150.000 | 1.015.000 | 9.135.000 | | - 29.557 | | 2.023.432 | | | | | | 10.120.443 | 3.038.432 | 7.082.011 | 600.000 | 15% plus. |
+| SASANELLI | 15.08.04 | GIOVANE DI SERIE | | 11.07.22 | MONOPOLI | | | 50.000 | 12.500 | 37.500 | | - | | 25.000 | | | | | | 50.000 | 37.500 | 12.500 | | |
+| ZAKNIC | 16.03.04 | 09.08.2022 | 30.06.2025 | 09.08.22 | CUKARICKI | | | 30.000 | 3.000 | 27.000 | | - | | 10.800 | | | | | | 30.000 | 13.800 | 16.200 | | |
+| BAJRAMI | 28.02.99 | 31.01.2023 | 30.06.2027 | 31.01.23 | EMPOLI | | | | | | 6.000.000 | - 440.022 | | 1.153.958 | | | | | | 5.559.978 | 1.153.958 | 4.406.020 | 300.000 | |
+| VOLPATO | 15.11.03 | 29.06.2023 | 30.06.2028 | 01.07.23 | ROMA | | | | | | 7.500.000 | - 526.264 | | 697.374 | | | | | | 6.973.736 | 697.374 | 6.276.362 | 33.700 | 15% plus. |
+| MISSORI | 24.03.04 | 29.06.2023 | 30.06.2028 | 01.07.23 | ROMA | | | | | | 2.500.000 | - 175.421 | | 232.458 | | | | | | 2.324.579 | 232.458 | 2.092.121 | 21.600 | 15% plus. |
+| PUMO | 19.07.06 | GIOVANE DI SERIE | | 01.07.23 | VIRTUS JUNIOR | | | | | | 15.000 | - | | 2.500 | | | | | | 15.000 | 2.500 | 12.500 | | |
+| SANDRO | 15.03.06 | 30.01.2023 | 30.06.2025 | 30.01.23 | ORADEA | | | | | | 30.000 | - | | 12.000 | | | | | | 30.000 | 12.000 | 18.000 | | |
+| RASPADORI | 18.02.00 | | | SG | | 18.02.03 | NAPOLI | 0 | 0 | 0 | 0 | | 26.875.000 | 0 | | | | 26.875.000 | 25.256.810 | 0 | 0 | 0 | | |
+| ODDEI | 18.09.02 | | | SG | | 21.06.23 | NK RUDES | 0 | 0 | 0 | 0 | | 950 | 0 | | | | 950 | 950 | 0 | 0 | 0 | | |
+| BOLOCA | 22.11.98 | 12.07.2023 | 30.06.2028 | 12.07.23 | FROSINONE | | | 0 | 0 | 0 | 6.000.000 | -209.170 | | 579.083 | | | | | | 5.790.830 | 579.083 | 5.211.747 | 150.000 | |
+| LIPANI | 18.05.05 | 07.08.2023 | 30.06.2028 | 07.08.23 | GENOA | | | | | | 3.000.000 | -111.038 | | 244.827 | | | | | | 2.888.962 | 244.827 | 2.644.135 | | |
+| MULATTIERI | 07.10.00 | 07.07.2023 | 30.06.2028 | 07.07.23 | INTER | | | | | | 6.000.000 | -435.594 | | 556.441 | | | | | | 5.564.406 | 556.441 | 5.007.965 | 150.000 | |
+| RACIC | 17.03.98 | 16.08.2023 | 30.06.2027 | 15.08.23 | VALENCIA | | | | | | 2.250.000 | | | 239.362 | | | | | | 2.250.000 | 239.362 | 2.010.638 | 500.000 | |
+| DIAGNE | 29.01.08 | GIOVANE DI SERIE | | 16.08.23 | FIORENZUOLA | | | | | | 7.000 | | | 0 | | | | | | 7.000 | 0 | 7.000 | | |
+| NOWAK | 03.09.95 | 18.07.2022 | 30.06.2024 | 18.07.22 | HB KOGE | | | 1.900 | 0 | 1.900 | | | 0 | 0 | | | | | | 1.900 | 0 | 1.900 | | |
+| TOTALI | | | | | | | | 194.799.539 | 89.790.401 | 105.009.138 | 34.422.000 | -3.853.535 | 65.530.950 | 31.705.927 | 0 | 557.738 | 599.204 | 55.562.606 | 51.216.905 | 187.120.635 | 93.775.043 | 93.345.592 | 13.445.100 | |
 
 --- pág. 62 ---
 
@@ -2398,37 +2396,35 @@ Turini Dott.ssa Eleonora
 
 --- pág. 69 ---
 
-![img-3.jpeg](img-3.jpeg)
+pwc
 
 # Relazione della società di revisione indipendente
-
-ai sensi dell'articolo 14 del DLgs 27 gennaio 2010, n°39
+*ai sensi dell'articolo 14 del DLgs 27 gennaio 2010, n°39*
 
 Al Socio Unico di
-
 Unione Sportiva Sassuolo Calcio Srl
 
-# Relazione sulla revisione contabile del bilancio d'esercizio
+## Relazione sulla revisione contabile del bilancio d'esercizio
 
-# Giudizio
+### Giudizio
 
 Abbiamo svolto la revisione contabile del bilancio d'esercizio di Unione Sportiva Sassuolo Calcio Srl (la "Società"), costituito dallo stato patrimoniale al 31 dicembre 2023, dal conto economico e dal rendiconto finanziario per l'esercizio chiuso a tale data e dalla nota integrativa.
 
 A nostro giudizio, il bilancio d'esercizio fornisce una rappresentazione veritiera e corretta della situazione patrimoniale e finanziaria della Società al 31 dicembre 2023 e del risultato economico e dei flussi di cassa per l'esercizio chiuso a tale data in conformità alle norme italiane che ne disciplinano i criteri di redazione.
 
-# Elementi alla base del giudizio
+### Elementi alla base del giudizio
 
-Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione Responsabilità della società di revisione per la revisione contabile del bilancio d'esercizio della presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio d'esercizio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
+Abbiamo svolto la revisione contabile in conformità ai principi di revisione internazionali (ISA Italia). Le nostre responsabilità ai sensi di tali principi sono ulteriormente descritte nella sezione *Responsabilità della società di revisione per la revisione contabile del bilancio d'esercizio* della presente relazione. Siamo indipendenti rispetto alla Società in conformità alle norme e ai principi in materia di etica e di indipendenza applicabili nell'ordinamento italiano alla revisione contabile del bilancio d'esercizio. Riteniamo di aver acquisito elementi probativi sufficienti ed appropriati su cui basare il nostro giudizio.
 
-# Altri aspetti
+### Altri aspetti
 
 Il bilancio d'esercizio di Unione Sportiva Sassuolo Calcio Srl per l'esercizio chiuso al 31 dicembre 2022 è stato sottoposto a revisione contabile da parte di un altro revisore che, in data 18 aprile 2023, ha espresso un giudizio senza modifica su tale bilancio.
 
 La Società, come richiesto dalla legge, ha inserito in nota integrativa i dati essenziali dell'ultimo bilancio della società che esercita su di essa l'attività di direzione e coordinamento. Il giudizio sul bilancio di Unione Sportiva Sassuolo Calcio Srl non si estende a tali dati.
 
-# PricewaterhouseCoopers SpA
+*PricewaterhouseCoopers SpA*
 
-Sede legale: Milano 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: Ancona 60131 Via Sandro Totti 1 Tel. 071 2132311 - Bari 70122 Via Abate Gimma 72 Tel. 080 5640211 - Bergamo 24121 Largo Belotti 5 Tel. 035 229691 - Bologna 40124 Via Luigi Carlo Farini 12 Tel. 051 6186211 - Brescia 25121 Viale Duca d'Aosta 28 Tel. 030 3697301 - Catania 95129 Corso Italia 302 Tel. 095 7532311 - Firenze 50121 Viale Gramsci 15 Tel. 055 2482811 - Genova 16121 Piazza Piccapietra 9 Tel. 010 29041 - Napoli 80121 Via dei Mille 16 Tel. 081 36181 - Padova 35138 Via Vicenza 4 Tel. 049 873481 - Palermo 90141 Via Marchese Ugo 60 Tel. 091 349737 - Parma 43121 Viale Tanara 20/A Tel. 0521 275911 - Pescara 65127 Piazza Ettore Troilo 8 Tel. 085 4545711 - Roma 00154 Largo Fochetti 29 Tel. 06 570251 - Torino 10122 Corso Palestro 10 Tel. 011 556771 - Trento 38122 Viale della Costituzione 33 Tel. 0461 237004 - Treviso 31100 Viale Pelissent 90 Tel. 0422 696911 - Trieste 34125 Via Cesare Battisti 18 Tel. 040 3480781 - Udine 33100 Via Poscolle 43 Tel. 0432 25789 - Varese 21100 Via Albuzzi 43 Tel. 0332 285039 - Verona 37135 Via Francia 21/C Tel. 045 8263001 - Vicenza 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
+Sede legale: **Milano** 20145 Piazza Tre Torri 2 Tel. 02 77851 Fax 02 7785240 Capitale Sociale Euro 6.890.000,00 i.v. C.F. e P.IVA e Reg. Imprese Milano Monza Brianza Lodi 12979880155 Iscritta al n° 119644 del Registro dei Revisori Legali - Altri Uffici: **Ancona** 60131 Via Sandro Totti 1 Tel. 071 2132311 - **Bari** 70122 Via Abate Gimma 72 Tel. 080 5640211 - **Bergamo** 24121 Largo Belotti 5 Tel. 035 229691 - **Bologna** 40124 Via Luigi Carlo Farini 12 Tel. 051 6186211 - **Brescia** 25121 Viale Duca d'Aosta 28 Tel. 030 3697501 - **Catania** 95129 Corso Italia 302 Tel. 095 7532311 - **Firenze** 50121 Viale Gramsci 15 Tel. 055 2482811 - **Genova** 16121 Piazza Piccapietra 9 Tel. 010 29041 - **Napoli** 80121 Via dei Mille 16 Tel. 081 36181 - **Padova** 35138 Via Vicenza 4 Tel. 049 873481 - **Palermo** 90141 Via Marchese Ugo 60 Tel. 091 349737 - **Parma** 43121 Viale Tanara 20/A Tel. 0521 275911 - **Pescara** 65127 Piazza Ettore Troilo 8 Tel. 085 4545711 - **Roma** 00154 Largo Fochetti 29 Tel. 06 570251 - **Torino** 10122 Corso Palestro 10 Tel. 011 556771 - **Trento** 38122 Viale della Costituzione 33 Tel. 0461 237004 - **Treviso** 31100 Viale Felissent 90 Tel. 0422 696911 - **Trieste** 34125 Via Cesare Battisti 18 Tel. 040 3480781 - **Udine** 33100 Via Poscolle 43 Tel. 0432 25789 - **Varese** 21100 Via Albuzzi 43 Tel. 0332 285039 - **Verona** 37135 Via Francia 21/C Tel. 045 8263001 - **Vicenza** 36100 Piazza Pontelandolfo 9 Tel. 0444 393311
 
 www.pwc.com/it
 
