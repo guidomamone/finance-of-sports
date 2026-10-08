@@ -211,7 +211,8 @@ ni en el comentario de ningún archivo de código.
     chequeo falla y usa la columna del ejercicio del OTRO documento (el anterior, dy=-1) y ese documento tiene ajustes `fila`, comparar
     contra su totales.ingresos del .verificacion.json; compuerta: la misma tolerancia del chequeo.
 
-173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
+173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-08): no frena ni
+    cambia datos, solo agrega casos de más a la cola (~20 de 71 en el lote 28). CUÁNDO HACERLO: si la cola se vuelve inmanejable. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
     por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
     polaridad al revés ("¿se carga además…?" con propuesta sí y el porqué dice que duplica). Ejemplos: Atalanta 2019 a0304c3 (b9),
     Sassuolo 2024 6795125, Inter 2019-20 c672389 y 45d7976, Lazio 2018-19 476c85a, Lazio 2023-24 37997ee, Roma 2023 db1b8e4, Roma 2024
