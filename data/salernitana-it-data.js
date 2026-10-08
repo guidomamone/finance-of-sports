@@ -43,6 +43,24 @@ const salernitanaitRevenueLinesByYear = {
     { rawLabel:'Ricavi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.578781, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
     { rawLabel:'RICAVI NETTI DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI TESSERATI', normalizedCategory:'player_sales', amountNative:0.192882, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Ricavi da gare in casa', normalizedCategory:'matchday_competition', amountNative:5.664836, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Ricavi da gare ospitate', normalizedCategory:'matchday_competition', amountNative:0.076979, disclosureLevel:'aggregated' }, // pág. 15, Claude 0.85
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:2.817977, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Audiovisivi', normalizedCategory:'broadcasting', amountNative:33.790659, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:6.784095, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:0.157131, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Canoni per licenze, marchi, brevetti', normalizedCategory:'sponsorship_commercial', amountNative:0.052317, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.1, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:0.068961, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Sopravvenienze attive (non ricorrenti)', normalizedCategory:'other_income', amountNative:1.856368, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Contributi in c/esercizio', normalizedCategory:'other_income', amountNative:1.237855, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.95
+    { rawLabel:'Proventi vari', normalizedCategory:'other_income', amountNative:3.216209, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Ricavi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.692534, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'player_sales', amountNative:14.419294, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+  ],
 };
 const salernitanaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-08)
@@ -53,6 +71,39 @@ const salernitanaitExpenseLinesByYear = {
     { rawLabel:'Altri oneri', normalizedCategory:'other_expenses', amountNative:-4.960945, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
     { rawLabel:'Ammortamenti e svalutazioni delle attività materiali ed immateriali', normalizedCategory:'player_amortisation', amountNative:-5.856426, disclosureLevel:'aggregated' }, // pág. 16, precedente
     { rawLabel:'Accantonamenti e altre svalutazioni', normalizedCategory:'other_amortisation', amountNative:-1.345784, disclosureLevel:'aggregated' }, // pág. 16, precedente
+  ],
+  2023: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Acquisti di materie prime,sussidiarie,di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-2.419612, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_expenses', amountNative:-0.121219, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-60.700403, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.317936, disclosureLevel:'aggregated' }, // pág. 15, Claude 0.85
+    { rawLabel:'Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.229248, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.97
+    { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-0.50217, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.97
+    { rawLabel:'Costi per Acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-4.4675, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.49977, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-0.379036, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-1.318567, disclosureLevel:'aggregated' }, // pág. 15, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-2.678449, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.97
+    { rawLabel:'Costi per vitto,alloggio e locomozione', normalizedCategory:'match_organisation_expense', amountNative:-2.123548, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.863186, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Spese assicurative', normalizedCategory:'admin_general_expense', amountNative:-0.695477, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Spese amministrative', normalizedCategory:'admin_general_expense', amountNative:-3.454188, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Spese per pubblicità e promozione', normalizedCategory:'admin_general_expense', amountNative:-0.821141, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Spese bancarie', normalizedCategory:'admin_general_expense', amountNative:-0.046376, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-1.191882, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.292686, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.99
+    { rawLabel:'Tassa iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.00739, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'- percentuale su incassi gare a squadra ospite', normalizedCategory:'match_organisation_expense', amountNative:-0.037619, disclosureLevel:'aggregated' }, // pág. 15, Jev 0.98
+    { rawLabel:'Altri oneri di gestione', normalizedCategory:'other_expenses', amountNative:-2.415015, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Sopravvenienze passive (non ricorrenti)', normalizedCategory:'exceptional_items', amountNative:-1.126402, disclosureLevel:'aggregated' }, // pág. 15, Jev 1
+    { rawLabel:'Minusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'exceptional_items', amountNative:-0.361351, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Amm. delle attività immateriali', normalizedCategory:'player_amortisation', amountNative:-13.792266, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.92
+    { rawLabel:'Amm. delle attività materiali', normalizedCategory:'depreciation', amountNative:-0.525955, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
+    { rawLabel:'Amm. dei diritti d\'uso', normalizedCategory:'depreciation', amountNative:-0.247922, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.97
+    { rawLabel:'Svalutaz. delle attività immateriali', normalizedCategory:'player_impairment', amountNative:-1.293505, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Svalutaz. delle attività materiali', normalizedCategory:'depreciation', amountNative:-0.00101, disclosureLevel:'aggregated' }, // pág. 16, precedente
+    { rawLabel:'Svalutaz. dei crediti dell\'attivo circolante', normalizedCategory:'other_expenses', amountNative:-1.596799, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
+    { rawLabel:'Accantonamenti per rischi diversi', normalizedCategory:'other_amortisation', amountNative:-0.01, disclosureLevel:'aggregated' }, // pág. 16, Claude 0.85
   ],
 };
 const salernitanaitFiscalYearMeta = {
@@ -70,6 +121,24 @@ const salernitanaitFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:46.248943, officialTotalExpenses:66.155069, officialPAT:-16.787721,
+  },
+  2023: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'salernitana-it-bilancio-30-giugno-2023-def',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.206648, tax:7.183312,
+    extraRows: [
+      {label:'Utili e perdite su cambi', value:-0.004523},
+      {label:'da terzi', value:0.015245},
+      {label:'verso terzi', value:-1.205293},
+      {label:'da attualizzazione', value:-0.012077},
+      {label:'Imposte correnti', value:-1.515571},
+      {label:'imposte anticipate', value:8.698883},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:70.935215, officialTotalExpenses:105.049875, officialPAT:-29.625747,
   },
 };
 const salernitanaitPresupuestoOverlayByYear = {};
@@ -94,6 +163,12 @@ Object.assign(sources, {
     title:'U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'salernitana-it-bilancio-30-giugno-2023-def': {
+    id:'salernitana-it-bilancio-30-giugno-2023-def', clubId:'salernitana-it',
+    title:'U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2023-def (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

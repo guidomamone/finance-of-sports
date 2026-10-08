@@ -54,7 +54,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Chievo Verona (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2013–14 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Chievo" = "Chievo Verona".
   'chievoverona-it': { 2014: 'it-seriea', 2016: 'it-seriea', 2015: 'it-seriea' }, // 2016: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2015–16 Serie A" (tools/club-league-reference/it.json), coincidencia ú // 2015: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2014–15 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Salernitana (alta-club.mjs, 2026-10-08): verificado contra roster cacheado de "2021–22 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Salernitana".
-  'salernitana-it': { 2022: 'it-seriea' },
+  'salernitana-it': { 2022: 'it-seriea', 2023: 'it-seriea' }, // 2023: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2022–23 Serie A" (tools/club-league-reference/it.json), coincidencia e
   // Juve Stabia (alta-club.mjs, 2026-10-08): SIN VERIFICAR (no aparece en los rosters cacheados de 2024 (it-seriea, it-serieb): puede haber jugado otra división).
   'juvestabia-it': { 2024: 'it-seriec' },
 });

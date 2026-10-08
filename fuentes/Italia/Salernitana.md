@@ -20,3 +20,5 @@ La página oficial `https://salernitana.it/societa/bilancio-e-relazioni/` (hoy 4
 - Último chequeo: 2026-10-07.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf` (sourceId `salernitana-it-bilancio-30-giugno-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.pdf` (sourceId `salernitana-it-bilancio-30-giugno-2023-def`).

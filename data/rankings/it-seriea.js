@@ -6,7 +6,7 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -166,6 +166,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"cremonese-it", revenue:96.804, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2023",
         mix:[["Comercial / Sponsors",53.327],["Estadio",4.931],["Televisión",37.123],["Venta de Jugadores",1.055],["Otras secciones deportivas",0.065],["Otros ingresos",0.303]] },
+      { id:"salernitana-it", revenue:77.078, reportType:"official_balance_sheet",
+        sourceId:"salernitana-it-bilancio-30-giugno-2023-def",
+        mix:[["Comercial / Sponsors",8.352],["Estadio",9.301],["Televisión",36.717],["Venta de Jugadores",15.852],["Otros ingresos",6.857]] },
       { id:"monza-it", revenue:75.478, reportType:"official_balance_sheet",
         sourceId:"monza-it-bilancio-2023",
         mix:[["Comercial / Sponsors",19.499],["Estadio",6.365],["Televisión",42.868],["Venta de Jugadores",2.804],["Otros ingresos",3.943]] },
