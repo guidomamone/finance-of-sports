@@ -56,3 +56,5 @@ OCR de las primeras páginas confirma las fechas de cierre. El de 2024 de Issuu 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf` (sourceId `fiorentina-it-bilancio-2024-25`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.pdf` (sourceId `fiorentina-it-bilancio-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf` (sourceId `fiorentina-it-bilancio-2021-22-issuu`).

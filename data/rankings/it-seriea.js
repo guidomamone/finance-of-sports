@@ -7,7 +7,7 @@
 //   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -126,6 +126,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"inter-it", revenue:456.676, reportType:"official_balance_sheet",
         sourceId:"inter-it-fascicolo-bilancio-consolidato-2021-22",
         mix:[["Cuotas Sociales",2.276],["Comercial / Sponsors",89.102],["Estadio",39.114],["Televisión",161.86],["Venta de Jugadores",113.17],["Otros ingresos",51.154]] },
+      { id:"fiorentina-it", revenue:242.27, reportType:"official_balance_sheet",
+        sourceId:"fiorentina-it-bilancio-2021-22-issuu",
+        mix:[["Comercial / Sponsors",39.088],["Estadio",8.453],["Televisión",59.805],["Premios por competencias",3.011],["Venta de Jugadores",125.3],["Otras secciones deportivas",0.266],["Otros ingresos",6.347]] },
       { id:"asroma-it", revenue:213.852, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2022-consolidato",
         mix:[["Comercial / Sponsors",40.06],["Estadio",41.505],["Televisión",81.558],["Venta de Jugadores",15.253],["Otros ingresos",35.475]] },

@@ -84,7 +84,7 @@ window.CLUB_INDEX = {
   "fctokyo": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "ferrocarriloeste-ar": {"n":"Ferro Carril Oeste","c":"AR","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "feyenoord-nl": {"n":"Feyenoord","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "fiorentina-it": {"n":"Fiorentina","c":"IT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "fiorentina-it": {"n":"Fiorentina","c":"IT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "flamengo-br": {"n":"Flamengo","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fluminense-br": {"n":"Fluminense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fortaleza-br": {"n":"Fortaleza","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
