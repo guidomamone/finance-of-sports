@@ -99,6 +99,21 @@ const hellasveronaitRevenueLinesByYear = {
     { rawLabel:'di cui proventi diversi da trasferimento calciatori', normalizedCategory:'player_sales', amountNative:1.094565, disclosureLevel:'aggregated' }, // pág. 7, precedente
     { rawLabel:'i) Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:5.034942, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:2.882969, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:2.631439, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Corrispettivi Store', normalizedCategory:'sponsorship_commercial', amountNative:2.126867, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:1.530688, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:11.482452, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.406566, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Proventi da cessioni diritti audiovisivi', normalizedCategory:'broadcasting', amountNative:33.453625, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:0.46, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Plusvalenze da cessione pluriennale diritti calciatori', normalizedCategory:'player_sales', amountNative:31.550568, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Altri proventi da trasferimento calciatori', normalizedCategory:'player_sales', amountNative:9.481347, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:4.586882, disclosureLevel:'aggregated' }, // pág. 7, precedente
+  ],
 };
 const hellasveronaitExpenseLinesByYear = {
   2020: [ // tools/cargar.mjs (2026-10-07)
@@ -241,6 +256,26 @@ const hellasveronaitExpenseLinesByYear = {
     { rawLabel:'- Oneri precedenti esercizi e sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.189, disclosureLevel:'aggregated' }, // pág. 46, precedente
     { rawLabel:'- Altre spese', normalizedCategory:'other_expenses', amountNative:-0.283, disclosureLevel:'aggregated' }, // pág. 46, precedente
   ],
+  2025: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-3.074386, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Per servizi', normalizedCategory:'admin_general_expense', amountNative:-16.770981, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-2.371282, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-37.560681, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Oneri sociali', normalizedCategory:'wages_squad', amountNative:-3.703567, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.636719, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'altri costi', normalizedCategory:'other_expenses', amountNative:-1.439552, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-16.009055, disclosureLevel:'aggregated' }, // pág. 7, Claude 0.93
+    { rawLabel:'Ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.389553, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
+    { rawLabel:'Atre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-4.31625, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Svalutazioni cred. incl. nell\'attivo circolante', normalizedCategory:'other_expenses', amountNative:-0.78918, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:-0.232175, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Oneri da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-2.632394, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-2.210526, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Minusvalenze da cessione diritti prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-0.433931, disclosureLevel:'aggregated' }, // pág. 7, precedente
+    { rawLabel:'Altri oneri da trasferimento diritti calciatori', normalizedCategory:'other_expenses', amountNative:-7.649607, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.99
+    { rawLabel:'Altri oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-2.181055, disclosureLevel:'aggregated' }, // pág. 7, Jev 0.98
+    { rawLabel:'Svalutazioni a) di partecipazioni', normalizedCategory:'other_expenses', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+  ],
 };
 const hellasveronaitFiscalYearMeta = {
   2020: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -328,6 +363,25 @@ const hellasveronaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:84.548986, officialTotalExpenses:87.835641, officialPAT:-5.057437,
   },
+  2025: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'hellasverona-it-bilancio-individuale-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.697382, tax:-1.91949,
+    extraRows: [
+      {label:'Altri proventi finanziari: d) Proventi diversi dai precedenti d.5) Altri proventi diversi', value:3.263055},
+      {label:'Interessi ed altri oneri finanziari e) altri interessi e oneri finanziari', value:-4.965146},
+      {label:'Utili e perdite su cambi', value:0.004709},
+      {label:'Imposte sul reddito dell\'esercizio: a) Imposte correnti Ires/Irap dell\'esercizio/Altre imposte e tasse non versate', value:-4.407941},
+      {label:'b) Proventi e oneri da adesione al regime di consolidato fiscale', value:1.316405},
+      {label:'c) Imposte differite', value:2.081856},
+      {label:'d) Imposte anticipate', value:-0.90981},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:101.593403, officialTotalExpenses:102.266963, officialPAT:-4.724361,
+  },
 };
 const hellasveronaitPresupuestoOverlayByYear = {};
 
@@ -369,6 +423,12 @@ Object.assign(sources, {
     title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'hellasverona-it-bilancio-individuale-2025': {
+    id:'hellasverona-it-bilancio-individuale-2025', clubId:'hellasverona-it',
+    title:'Hellas Verona Football Club S.p.A. — Hellas-Verona-bilancio-individuale-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
