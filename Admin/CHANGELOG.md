@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 603 — Gestiones de Fiorentina, Genoa, AC Milan y Parma; 10 casos de la cola resueltos (2026-10-08)
+
+- `data/gestiones/it.js`: Rocco Commisso (Fiorentina, 6/6/2019 al 16/1/2026), Alberto Zangrillo y Dan Sucu (Genoa, 15/11/2021 al 13/1/2025 y desde ahí), Silvio Berlusconi
+  (AC Milan, dueño del 20/2/1986 al 13/4/2017) y Nevio Scala (Parma, 30/6/2015 al 22/11/2016), cada uno con su fuente. Respondidos en la cola: 8 de gestión
+  (7 aceptados; Novorizontino 2010 descartado porque ninguna fuente nombra al presidente), el perfil de Cremonese 2024 ("no": sin otras secciones deportivas) y el nombre legal
+  de Chievo ("Associazione Calcio Chievo-Verona S.r.l."). `ASSET_V` 534. La cola pasa de 263 a 253 casos.
+
 ## Versión 602 — Parma 2016 cargado (2026-10-08)
 
 - Parma 30.06.2016 (individual, Serie D) cargado tras el lote 43 (reintento, US$ 0,30): el 0 de Televisión es real (el documento no tiene derechos televisivos),

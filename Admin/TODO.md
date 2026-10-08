@@ -232,17 +232,15 @@ ni en el comentario de ningún archivo de código.
 
 179. ITALIA, LOTE 40: QUÉ FRENA A CADA UNO Y EN QUÉ ORDEN SE RESUELVE (2026-10-08). 76 PDFs de fútbol por las etapas 3 a 8: 14 cargados, 62 frenados.
     Años = año de cierre (2020 = 2019-20). Orden de trabajo:
-    1. Gestiones y perfil en la cola (los resuelvo con fuentes web, sin Guido): 9 casos de gestión (Fiorentina 2021, 2022, 2024, 2025; Genoa 2022; AC Milan;
-       Parma 2016; Novorizontino 2010), perfil de Cremonese 2024 y nombre legal de Chievo. Sin fuente que lo confirme: "descartar".
-    2. Solo preguntas en la cola, totales y resultado cierran (23): AC Milan 2021, AS Roma 2009, 2011 (separato), 2013 a 2017, Bologna 2018 y 2023,
+    1. Solo preguntas en la cola, totales y resultado cierran (23): AC Milan 2021, AS Roma 2009, 2011 (separato), 2013 a 2017, Bologna 2018 y 2023,
        Fiorentina 2019, Genoa 2025, Hellas Verona 2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Sassuolo 2023, Torino 2020 y 2025.
        Revisarlas con los criterios ya decididos y traerle a Guido solo las dudas genuinas; después el lote de categorización y la carga.
-    3. Lazio 1999, 2000 y 2001 en liras (decidido: ITL): soporte de la moneda (CURRENCY_META, FX_CLOSE con la paridad fija 1.936,27 y la serie del BCE, la
+    2. Lazio 1999, 2000 y 2001 en liras (decidido: ITL): soporte de la moneda (CURRENCY_META, FX_CLOSE con la paridad fija 1.936,27 y la serie del BCE, la
        excepción de la moneda legado en cargar.mjs) y cerrar los tres (2000: ingresos 343.364 contra 245.595 millones en el documento siguiente, parece perímetro).
-    4. El resultado o el total de gastos no cierra (17): AC Milan 2008 a 2012 (falla el resultado en los cinco, sin diagnosticar); AS Roma 2007 y 2012; Bologna
+    3. El resultado o el total de gastos no cierra (17): AC Milan 2008 a 2012 (falla el resultado en los cinco, sin diagnosticar); AS Roma 2007 y 2012; Bologna
        2024 y 2025; Genoa 2023; Inter 2023 y 2024; Lazio 2005, 2011, 2014, 2016 y 2021. Un diagnóstico por grupo, diseño antes de código.
-    5. El resultado cierra pero falla el año vecino (12): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010, 2011 (consolidado) y 2020, Inter 2021, Lazio 2004 y 2006,
+    4. El resultado cierra pero falla el año vecino (12): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010, 2011 (consolidado) y 2020, Inter 2021, Lazio 2004 y 2006,
        Sampdoria 2020, Sassuolo 2018 (además extracción en 0 filas: `--rehacer`). Mirar uno por uno si es falsa alarma (to-do 172) o un error real.
-    6. Falta el alta del club (6): Chievo Verona 2014 a 2016, Juve Stabia 2024, Salernitana 2022 y 2023. Después de lo anterior.
-    7. AC Milan 2013: la suma de gastos no coincide con el total impreso.
+    5. Falta el alta del club (6): Chievo Verona 2014 a 2016, Juve Stabia 2024, Salernitana 2022 y 2023. Después de lo anterior.
+    6. AC Milan 2013: la suma de gastos no coincide con el total impreso.
     - Aparte: Juve Stabia semestral y Catania 2011 (lote 41): solo transcripción, no se cargan.

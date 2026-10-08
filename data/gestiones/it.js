@@ -11,6 +11,10 @@ window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
   'acmilan-it': [
+    // Berlusconi: dueño del 20/2/1986 al 13/4/2017 (presidente 1986-2004 y 2006-2008; de 2008 a 2017 el cargo de presidente estuvo vacante y
+    // fue presidente honorario desde el 29/3/2012). Se carga como dueño con nombre (regla de la cabecera de ar.js).
+    { nombre:'Silvio Berlusconi', corto:'Berlusconi', cargo:'Presidente', desde:'1986-02-20', hasta:'2017-04-13',
+      fuente:'https://it.wikipedia.org/wiki/Presidenti_dell%27Associazione_Calcio_Milan', confirmada:true },
     { nombre:'Li Yonghong', corto:'Li', cargo:'Presidente', desde:'2017-04-14', hasta:'2018-07-21',
       fuente:'https://it.wikipedia.org/wiki/Presidenti_dell%27Associazione_Calcio_Milan', confirmada:true },
     // Elliott (fondo) subió a Scaroni a la presidencia el 21/7/2018; RedBird (fondo) lo confirmó desde 2022.
@@ -41,6 +45,18 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://it.wikipedia.org/wiki/Unione_Sportiva_Cremonese', confirmada:true },
     { nombre:'Francesco Dini', corto:'Dini', cargo:'Presidente', desde:'2023-07-06', hasta:null,
       fuente:'https://www.uscremonese.it/francesco-dini-e-il-nuovo-presidente-dellu-s-cremonese/', confirmada:true },
+  ],
+  'fiorentina-it': [
+    // Commisso: compra oficializada el 6/6/2019; presidente hasta su muerte, el 16/1/2026.
+    { nombre:'Rocco Commisso', corto:'Commisso', cargo:'Presidente', desde:'2019-06-06', hasta:'2026-01-16',
+      fuente:'https://it.wikipedia.org/wiki/Rocco_Commisso', confirmada:true },
+  ],
+  'genoa-it': [
+    // Zangrillo: presidente desde el closing de 777 Partners (15/11/2021); lo reemplazó Sucu el 13/1/2025 (sigue en el consejo).
+    { nombre:'Alberto Zangrillo', corto:'Zangrillo', cargo:'Presidente', desde:'2021-11-15', hasta:'2025-01-13',
+      fuente:'https://www.calcioefinanza.it/2021/11/15/ufficiale-777-proprietaria-del-genoa-zangrillo-presidente/', confirmada:true },
+    { nombre:'Dan Sucu', corto:'Sucu', cargo:'Presidente', desde:'2025-01-13', hasta:null,
+      fuente:'https://www.calcioefinanza.it/2025/01/13/genoa-nuovo-presidente-dan-sucu/', confirmada:true },
   ],
   'hellasverona-it': [
     // Setti compró el club el 23/6/2012 (único dueño desde marzo de 2013); presidente hasta el pase a Presidio Investors (15/1/2025).
@@ -78,6 +94,10 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Calcio_Napoli', confirmada:true },
   ],
   'parma-it': [
+    // Scala: presidente del Parma refundado (Serie D) desde el verano de 2015 (la sociedad se constituyó el 30/6/2015) hasta el 22/11/2016.
+    // Entre el 22/11 y el 31/12/2016 la fuente no nombra a nadie (la gestión siguiente arranca el 01/01/2017 por convención): ningún cierre cae ahí.
+    { nombre:'Nevio Scala', corto:'Scala', cargo:'Presidente', desde:'2015-06-30', hasta:'2016-11-22',
+      fuente:'https://it.wikipedia.org/wiki/Nevio_Scala', confirmada:true },
     // Las tres gestiones: la fuente da solo los años (2017-2018, 2018-2020, 2020-); 01/01/2017, 01/10/2018 (control de Nuovo Inizio,
     // octubre de 2018) y 01/09/2020 (septiembre de 2020, entra la familia Krause) por convención.
     { nombre:'Jiang Lizhang', corto:'Jiang', cargo:'Presidente', desde:'2017-01-01', hasta:'2018-10-01',
