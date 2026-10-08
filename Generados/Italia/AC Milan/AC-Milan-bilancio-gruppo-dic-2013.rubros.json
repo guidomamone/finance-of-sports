@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.pdf",
   "club": "acmilan-it",
   "year": 2013,
-  "generatedAt": "2026-10-08T18:56:43.705Z",
+  "generatedAt": "2026-10-08T21:53:16.131Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         14.41
       ],
-      "glosa": "a) Ingresos por partidos"
+      "glosa": "a) Ingresos por taquilla y partidos"
     },
     {
       "label": "b) abbonamenti",
@@ -64,7 +64,7 @@
       "values": [
         34.727
       ],
-      "glosa": "b) Ingresos por patrocinio"
+      "glosa": "b) Ingresos por patrocinios"
     },
     {
       "label": "c) proventi pubblicitari",
@@ -74,7 +74,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Ingresos publicitarios"
+      "glosa": "c) Ingresos por publicidad"
     },
     {
       "label": "d) proventi commerciali e royalties",
@@ -104,7 +104,7 @@
       "values": [
         9.387
       ],
-      "glosa": "f) Ingresos diversos"
+      "glosa": "f) Ingresos varios"
     },
     {
       "label": "g) ricavi da cessione temporanea prestazioni calciatori",
@@ -114,7 +114,7 @@
       "values": [
         0.5
       ],
-      "glosa": "g) Ingresos por cesión temporal de derechos de jugadores"
+      "glosa": "g) Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -124,7 +124,7 @@
       "values": [
         24.148
       ],
-      "glosa": "h) Plusvalías por traspaso de derechos de jugadores"
+      "glosa": "h) Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -134,7 +134,7 @@
       "values": [
         0.126
       ],
-      "glosa": "i) Otros ingresos derivados de la gestión de jugadores"
+      "glosa": "i) Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "l) ricavi e proventi diversi",
@@ -144,7 +144,7 @@
       "values": [
         10.772
       ],
-      "glosa": "l) Ingresos y rendimientos diversos"
+      "glosa": "l) Otros ingresos diversos"
     },
     {
       "label": "6 per materie prime, sussidiarie, di consumo, merci",
@@ -174,7 +174,7 @@
       "values": [
         6.373
       ],
-      "glosa": "Consultoría y colaboraciones profesionales"
+      "glosa": "Servicios profesionales y colaboraciones"
     },
     {
       "label": "Pubblicità e altre spese promozionali",
@@ -204,7 +204,7 @@
       "values": [
         2.208
       ],
-      "glosa": "Retribuciones a órganos sociales"
+      "glosa": "Retribuciones a órganos de administración"
     },
     {
       "label": "Spese amministrative e generali",
@@ -214,7 +214,7 @@
       "values": [
         3.691
       ],
-      "glosa": "Gastos de administración y generales"
+      "glosa": "Gastos administrativos y generales"
     },
     {
       "label": "Mensa e servizi di ristorazione",
@@ -254,7 +254,7 @@
       "values": [
         6.641
       ],
-      "glosa": "Otros gastos por servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Affitti passivi",
@@ -264,7 +264,7 @@
       "values": [
         7.749
       ],
-      "glosa": "Arrendamientos"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Noleggi e altre locazioni",
@@ -304,7 +304,7 @@
       "values": [
         1.377
       ],
-      "glosa": "c) Indemnizaciones por fin de contrato y pensiones (TFR)"
+      "glosa": "c) Indemnizaciones por cese laboral (TFR)"
     },
     {
       "label": "e) altri costi",
@@ -344,7 +344,7 @@
       "values": [
         0.086
       ],
-      "glosa": "c) Otras correcciones por deterioro del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liq.",
@@ -354,7 +354,7 @@
       "values": [
         0.107
       ],
-      "glosa": "d) Deterioro de créditos del activo corriente y de disponibilidades líquidas"
+      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "12 accantonamenti per rischi",
@@ -374,7 +374,7 @@
       "values": [
         5.047
       ],
-      "glosa": "a) Gastos diversos por organización de partidos"
+      "glosa": "a) Gastos varios de organización de partidos"
     },
     {
       "label": "b) tasse iscrizione gare",
@@ -384,7 +384,7 @@
       "values": [
         0.003
       ],
-      "glosa": "b) Cuotas de inscripción en competiciones"
+      "glosa": "b) Tasas de inscripción en competiciones"
     },
     {
       "label": "c) costi per acquisizione temporanea calciatori",
@@ -394,7 +394,7 @@
       "values": [
         0.775
       ],
-      "glosa": "c) Costes por adquisición temporal de jugadores"
+      "glosa": "c) Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "d) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -404,7 +404,7 @@
       "values": [
         0.77
       ],
-      "glosa": "d) Pérdidas por traspaso de derechos de jugadores"
+      "glosa": "d) Pérdidas por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "e) altri oneri da gestione calciatori",
@@ -414,7 +414,7 @@
       "values": [
         0
       ],
-      "glosa": "e) Otros gastos de gestión de jugadores"
+      "glosa": "e) Otros gastos de la gestión de futbolistas"
     },
     {
       "label": "f) altri oneri diversi di gestione",
@@ -424,7 +424,7 @@
       "values": [
         5.17
       ],
-      "glosa": "f) Otros gastos de gestión diversos"
+      "glosa": "f) Otros gastos diversos de gestión"
     }
   ]
 }

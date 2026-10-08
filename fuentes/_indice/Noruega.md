@@ -44,3 +44,10 @@ fútbol profesional real — varios quedaron con perímetro sin confirmar. Ver
 - [Raufoss](<../Noruega/Raufoss.md>) — 16 documentos, años 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
 - [Åsane](<../Noruega/Åsane.md>) — 5 documentos, años 2016-2019, 2025; sin cargar aún — Último chequeo: 2026-10-08
 - [Arendal](<../Noruega/Arendal.md>) — 4 documentos, años 2011-2013, 2018; sin cargar aún — Último chequeo: 2026-10-08
+- [Stjørdals-Blink](<../Noruega/Stjørdals-Blink.md>) — 6 documentos, años 2014, 2019-2021, 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Asker](<../Noruega/Asker.md>) — 5 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Vard Haugesund](<../Noruega/Vard Haugesund.md>) — 5 documentos, años 2020-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Ørn Horten](<../Noruega/Ørn Horten.md>) — 2 documentos, años 2019, 2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Strindheim](<../Noruega/Strindheim.md>) — 7 documentos, años 2019-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Kongsvinger](<../Noruega/Kongsvinger.md>) — 16 documentos, años 2010-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Fana](<../Noruega/Fana.md>) — 5 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08

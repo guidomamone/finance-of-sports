@@ -35,3 +35,7 @@
 
 - Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar entidad y ejercicio antes de cargar.
 - Balance 2008 y memoria SADP 2020.
+
+## Actualización 2026-10-08
+
+**18 documentos** en `Clubes/Chile/Audax Italiano/` (años 2008-2021). - Memorias anuales de la SADP 2008-2021 (`memoria_audax_sadp_<año>.pdf`) en `audaxitaliano.cl/assets/uploads/`; la memoria chilena incluye los estados financieros. Se sumaron 2010-2018 y 2019-2020 a lo ya existente.

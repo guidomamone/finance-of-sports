@@ -1,0 +1,7 @@
+
+## Federación de Chipre (CFA): estados anuales de todos los clubes (sourcing 2026-10-08, 2ª pasada)
+
+- **`cfa.com.cy/images/DownloadsGr/<n>.<CLUB>-Annual Financial Statements <Club|Compined|Consolidated> 2025.pdf`** (página `cfa.com.cy/Gr/downloads`, 17 clubes de las dos primeras divisiones) y, para 2024, `.../DownloadsGr|DownloadsEn/<CLUB>-Annual Financial Statements 2024.pdf`. Para **2023** los archivos están en griego: `.../DownloadsGr/<CLUB en griego> - Οικονομικές Καταστάσεις Έτους 2023.pdf` (ΑΠΟΕΛ, ΑΕΚ Λάρνακας, ΑΕΛ Λεμεσού, ΑΠΟΛΛΩΝ Λεμεσού, ΑΝΟΡΘΩΣΗ Αμμοχώστου, ΑΡΗΣ Λεμεσού, ΟΜΟΝΟΙΑ Λευκωσίας, ΟΜΟΝΟΙΑ Αραδίππου, ΕΝΠ Παραλιμνίου, ΠΑΦΟΣ FC, ΝΕΑ ΣΑΛΑΜΙΝΑ Αμμοχώστου, ΕΘΝΙΚΟΣ Άχνας, ΚΑΡΜΙΩΤΙΣΣΑ Πολεμιδιών, ΔΟΞΑ Κατωκοπιάς): se encontraron con Exa y se probaron nombre por nombre con `HEAD`. No hay 2022 ni anteriores en el sitio ni en Wayback (CDX vacío).
+- **Formato: formulario de 3 páginas escaneado (~1 MB)**, no el informe completo con notas: sirve para cifras agregadas (resultados y balance), no para categorizar fino. Verificar con la transcripción si trae la apertura de ingresos.
+- «Compined/Consolidated» = grupo; «Club» = solo la entidad del club. Elegir una por ejercicio. Ojo: en `Omonia Nicosia/` hay un `wf-src-*` que en realidad es de Omonia Aradippou (error de enlace en WorldFootball).
+- Clubes nuevos con esta fuente: Omonia Aradippou, Omonia 29 Maiou, Akritas Chlorakas, ENP Paralimni, Ethnikos Achnas, Doxa Katokopias.

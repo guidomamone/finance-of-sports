@@ -35,3 +35,7 @@
 
 - Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar entidad y ejercicio antes de cargar.
 - Balance 2008 y memorias 2020.
+
+## Actualización 2026-10-08
+
+**10 documentos** en `Clubes/Chile/O'Higgins/` (años 2008, 2015, 2017-2018, 2020-2022). - Memorias 2015, 2017, 2018, 2020 y 2021 en `ohigginsfc.cl/upfiles/userfiles/file/`; hay además un «BALANCE DE GESTIÓN» (5 MB) que no se pudo bajar.

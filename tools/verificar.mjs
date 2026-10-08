@@ -789,10 +789,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (resD && conSeccionD && !ajusteEnD) {
     const dRows = otros.filter((f) => f.linea > ultFin && f.linea < resD.linea);
     if (dRows.length) {
-      const dTot = estado.filter((f) => f.lado === 'otro' && f.tipo !== 'renglon' && isFinite(f.M) && f.M && f.linea > ultFin && f.linea < resD.linea).sort((a, b) => a.linea - b.linea).pop();
+      // (to-do 166, E) con una sección E (proventi e oneri straordinari) a continuación de la D, el total a igualar es la SUMA de los totales de D y de E
+      // ("TOTALE ... (D)" y "TOTALE ... (E)"); sin E, el último subtotal como siempre. Caso: AC Milan 2008 a 2013 (D y E al final de cada estado).
+      const totalesZona = estado.filter((f) => f.lado === 'otro' && f.tipo !== 'renglon' && isFinite(f.M) && f.M && f.linea > ultFin && f.linea < resD.linea).sort((a, b) => a.linea - b.linea);
+      const totDE = totalesZona.filter((f) => /\(\s*[DE]\s*\)\s*$/i.test(String(f.etiqueta).trim()));
+      const dTot = totDE.length >= 2 ? { ...totDE[totDE.length - 1], M: totDE.reduce((a, f) => a + f.M, 0), combinadoDE: totDE.map((f) => f.linea) } : totalesZona.pop();
       const RX18 = /(^|\|)\s*(\*\*)?\s*18\s*\)?\s+(rivalutaz|revaluat)|rivalutazion|revaluation/i;
       const RX19 = /(^|\|)\s*(\*\*)?\s*19\s*\)?\s+(svalutaz|write)|svalutazion|write-?downs?|impairment/i;
-      const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
+      // (to-do 166, E) la búsqueda hacia arriba se corta en el encabezado de la sección E (proventi e oneri straordinari): sus filas llevan el signo impreso, no el
+      // del 19) de la D que queda más arriba. Caso: AC Milan 2008 a 2013 (plusvalenze +40 contadas como −40).
+      const RXE = /(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/;
+      const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RXE.test(t)) return 0; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
       const prop = dRows.map((f) => { const sg = signoD(f); return { ...f, lado: 'financiero', M: sg ? sg * Math.abs(f.M) : f.M, origen: 'estado (escalón sección D)' }; });
       const tolD = Math.max(1e-6, 0.5 * [...prop, ...(dTot ? [dTot] : [])].reduce((a, f) => a + (f.u || 0), 0));
       if (!dTot || Math.abs(conSigno(prop) - dTot.M) <= tolD) {
@@ -801,7 +808,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           const e = evaluar(n, false, finD, null, excl); if (e.cierra && e.exacto) { E = e; escalonD = true; escalonSubRep = false; break; }
           if (n === 4 && hayRepetido) { const er = evaluar(4, false, finD, { ing: ing4r, gas: gas4r }, excl); if (er.cierra && er.exacto) { E = er; escalonD = true; escalonSubRep = true; break; } }
         }
-        if (escalonD) { notas.push(`escalón "sección D": ${prop.length} fila(s) de rettifiche (L${prop.map((f) => f.linea).join(', L')}) al financiero${dTot ? `; su suma da el total impreso (${r6(dTot.M)}, L${dTot.linea})` : ''}${fin17 ? ', con el 17) restando' : ''}; cerró la lectura ${E.nivel}`); escalon17 = false; }
+        if (escalonD) { notas.push(`escalón "sección D": ${prop.length} fila(s) de rettifiche${dTot?.combinadoDE ? ' y straordinari' : ''} (L${prop.map((f) => f.linea).join(', L')}) al financiero${dTot ? `; su suma da el total impreso (${r6(dTot.M)}, L${dTot.combinadoDE ? dTot.combinadoDE.join(' + L') : dTot.linea})` : ''}${fin17 ? ', con el 17) restando' : ''}; cerró la lectura ${E.nivel}`); escalon17 = false; }
       }
     }
   }

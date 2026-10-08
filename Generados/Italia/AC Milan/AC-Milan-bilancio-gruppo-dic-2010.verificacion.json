@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.md",
- "generado": "2026-10-08T18:56:43.625Z",
- "estado": "cola",
+ "generado": "2026-10-08T21:53:16.009Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2010,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "45d130a",
-  "e70808b",
-  "6ced1ba"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -30,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 253.196 - gastos 330.372 ± financiero -8.076 ± impuesto 15.655 no da el impreso -69.751"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2011",
@@ -50,6 +46,7 @@
   }
  ],
  "notas": [
+  "escalón \"sección D\": 3 fila(s) de rettifiche y straordinari (L944, L949, L952) al financiero; su suma da el total impreso (-0.154, L946 + L954), con el 17) restando; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b70 tiene columnas por sociedad (A.C. Milan, Milan Entertainment, Milan Real Estate, Rettifiche, Consolidato) con renglones agregados que ya están en b18-b19.",
   "duda de extraer que no afecta la carga: Diferencia de 1 miles entre nota b50 y estado, también en el total 17.550 vs 17.551 (L2384 vs L915); es redondeo.",
   "duda de extraer que no afecta la carga: En L959 el impuesto 15.655 positivo mejora la pérdida (L955 a L960): es un beneficio fiscal pese al signo sin paréntesis."
@@ -60,12 +57,12 @@
  "totales": {
   "ingresos": 253.196,
   "gastos": 330.372,
-  "financiero": -8.076,
+  "financiero": -8.23,
   "impuesto": 15.655,
   "resultadoImpreso": -69.751,
   "resultadoParaCargar": -69.751,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -403,11 +400,6 @@
  },
  "financiero": [
   {
-   "etiqueta": "15) proventi da partecipazioni",
-   "M": null,
-   "linea": 924
-  },
-  {
    "etiqueta": "- altri",
    "M": 0.559,
    "linea": 927
@@ -441,6 +433,21 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.022,
    "linea": 937
+  },
+  {
+   "etiqueta": "a) di partecipazioni",
+   "M": -0.186,
+   "linea": 944
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "M": 0.04,
+   "linea": 949
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "M": -0.008,
+   "linea": 952
   }
  ],
  "impuesto": [

@@ -68,7 +68,14 @@ que dice `ESTADO.md` era verdad ese día.
   (2015: 180.626 + 27.651 − 196.660 − 40.215 − 820 − 7.800 − 3.846 = −41.064), 2016 y 2017 pasan a "ok"; 2009 y 2011 (consolidado) también cierran con el escalón;
   2021 y 2022 (consolidado) pasan de "cola" a "ok" por el año vecino. Roma 2012 sigue sin cerrar.
 
-## Versión 600 — Sourcing: recuperación de Vojvodina, Marítimo completo, fichas de WorldFootball reintentadas (2026-10-08)
+## Versión 601b (sourcing) — Sourcing: Malta e Islandia (países nuevos), Chipre (CFA), Portugal 2ª, Noruega, Chile (2026-10-08)
+
+- Solo sourcing. **Malta** (nuevo): estados de 10 clubes de la Premier 2021-2025 desde el CMS de la Malta FA (`cms.mfa.com.mt/media/<id>/<nombre>.pdf`, ids hallados probando con HEAD) y el sitio de Valletta; escaneos. **Islandia** (nuevo): 18 clubes con ársreikningur/ársskýrsla desde sus sitios (Firecrawl `map` + Exa), ~200 PDF; sin documentos KR, FH, Stjarnan, Fylkir, ÍBV, Vestri y otros. **Chipre**: la CFA publica los estados anuales de los clubes (2023 en griego, 2024, 2025; formulario de 3 págs.): 18 clubes, 6 nuevos. **Portugal**: Chaves, Feirense, Paços, Académica, Boavista, Oliveirense, Torreense, Felgueiras por CDX de dominio (Penafiel: captura truncada a 5 MiB). **Noruega**: Stjørdals-Blink, Asker, Vard, Ørn Horten, Strindheim, Kongsvinger, Fana por Brønnøysund. **Chile/Ecuador**: Audax, O'Higgins, Unión La Calera, Barcelona SC por CDX.
+- Aprendizajes: el CDX de dominio filtrado por PDF (`matchType=domain`) rinde en cualquier país; Wayback responde a veces una página «Temporarily Offline» con 200 y trunca a 1 MiB o 5 MiB; Wikipedia limita a 429 si no se espacian las consultas.
+- Error propio corregido: un script de deduplicación borró 9 PDF referenciados por el pipeline; se restauraron copiando sus gemelos idénticos (memoria `no-borrar-pdfs-de-clubes`).
+- Interrumpido por Guido en medio de un barrido automático (Exa + CDX) sobre ~350 clubes sin documento; no se ingestó nada de ese barrido. `fuentes/README.md` regenerado (81 países, 1.282 clubes, 975 con documento). Sin tocar skills.
+
+## Versión 600b (sourcing) — Sourcing: recuperación de Vojvodina, Marítimo completo, fichas de WorldFootball reintentadas (2026-10-08)
 
 - Solo sourcing, sin transcribir ni cargar. **Vojvodina (Serbia)**: carpeta recuperada con Wayback (`web/<ts>id_/`, eligiendo capturas completas: las más nuevas venían truncadas a 1 MiB): ejercicios 2019, 2020, 2022, 2023 y 2024 en disco. **Falta 2025** (`Zavrsni-racun-FKV-2025_260521_170537.pdf`): el sitio da timeout desde esta IP, Wayback no lo tiene y Firecrawl solo devuelve texto; reintentar desde otra red. Regla ya conocida y repetida: nunca borrar una carpeta de `Clubes/` sin mirar antes si ya existía (los PDF no se trackean, no hay `git checkout`).
 - **Marítimo (Portugal)**: SAD 2021, 2022 y 2023 y Club Sport Marítimo (asociación) 2020/21 a 2024/25, todo de Wayback; con 2024 y 2025 de la SAD que ya estaban, quedan ambas entidades completas 2021-2025.

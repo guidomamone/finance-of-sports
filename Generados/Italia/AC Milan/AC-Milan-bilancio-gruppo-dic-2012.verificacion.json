@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2012.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2012.md",
- "generado": "2026-10-08T18:56:43.686Z",
- "estado": "cola",
+ "generado": "2026-10-08T21:53:16.089Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2012,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9488975"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 329.307 - gastos 324.313 ± financiero -13.48 ± impuesto -5.9 no da el impreso -6.857"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2013",
@@ -48,6 +46,7 @@
   }
  ],
  "notas": [
+  "escalón \"sección D\": 5 fila(s) de rettifiche y straordinari (L829, L835, L836, L839, L840) al financiero; su suma da el total impreso (7.529, L832 + L842), con el 17) restando; cerró la lectura 0",
   "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo (A.C. Milan, Milan Entertainment, Milan Real Estate) y no abren renglones que las notas consolidadas no detallen.",
   "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en AC-Milan-bilanci-relazioni-2021-22.pdf",
   "duda de extraer que no afecta la carga: L2151 describe cifras de 2011/2010 mientras la tabla trae 2012 (-13.480); texto no actualizado.",
@@ -59,12 +58,12 @@
  "totales": {
   "ingresos": 329.307,
   "gastos": 324.313,
-  "financiero": -13.48,
+  "financiero": -5.951,
   "impuesto": -5.9,
   "resultadoImpreso": -6.857,
   "resultadoParaCargar": -6.857,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -420,11 +419,6 @@
    "linea": 812
   },
   {
-   "etiqueta": "c) verso imprese controllanti",
-   "M": null,
-   "linea": 815
-  },
-  {
    "etiqueta": "d) altri oneri finanziari",
    "M": -13.335,
    "linea": 816
@@ -443,6 +437,31 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.018,
    "linea": 821
+  },
+  {
+   "etiqueta": "a) di partecipazioni",
+   "M": -0.105,
+   "linea": 829
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "M": 0.007,
+   "linea": 835
+  },
+  {
+   "etiqueta": "b) sopravvenienze attive straordinarie",
+   "M": 7.704,
+   "linea": 836
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "M": -0.012,
+   "linea": 839
+  },
+  {
+   "etiqueta": "b) imposte relative ad esercizi precedenti",
+   "M": -0.065,
+   "linea": 840
   }
  ],
  "impuesto": [

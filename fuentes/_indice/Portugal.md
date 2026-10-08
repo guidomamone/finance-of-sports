@@ -42,3 +42,11 @@ registro societario portugués. Ver `fuentes/Portugal/_notas-generales.md` y la 
 - [União de Leiria](<../Portugal/União de Leiria.md>) — 4 documentos, años 2022-2025; sin cargar aún — Último chequeo: 2026-10-08
 - [Mafra](<../Portugal/Mafra.md>) — 1 documentos, años 2023-2024; sin cargar aún — Último chequeo: 2026-10-08
 - [Academico Viseu](<../Portugal/Academico Viseu.md>) — 4 PDF de WorldFootball (temporadas 2022-2023, 2023-2024, 2024-2025), sin cargar aún — Último chequeo: 2026-10-08
+- [Chaves](<../Portugal/Chaves.md>) — 6 documentos, años 2021-2025; sin cargar aún — Último chequeo: 2026-10-08
+- [Feirense](<../Portugal/Feirense.md>) — 6 documentos, años 2020-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Paços de Ferreira](<../Portugal/Paços de Ferreira.md>) — 5 documentos, años 2022-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Académica](<../Portugal/Académica.md>) — 9 documentos, años 2021-2026; sin cargar aún — Último chequeo: 2026-10-08
+- [Boavista](<../Portugal/Boavista.md>) — 3 documentos, años 2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Oliveirense](<../Portugal/Oliveirense.md>) — 3 documentos, años sin año en el nombre; sin cargar aún — Último chequeo: 2026-10-08
+- [Torreense](<../Portugal/Torreense.md>) — 3 documentos, años 2021-2024; sin cargar aún — Último chequeo: 2026-10-08
+- [Felgueiras](<../Portugal/Felgueiras.md>) — 3 documentos, años 2021-2024; sin cargar aún — Último chequeo: 2026-10-08

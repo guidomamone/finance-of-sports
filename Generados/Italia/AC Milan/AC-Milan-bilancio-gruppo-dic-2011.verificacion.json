@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2011.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2011.md",
- "generado": "2026-10-08T18:56:43.651Z",
- "estado": "cola",
+ "generado": "2026-10-08T21:53:16.043Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2011,
  "escala": {
@@ -11,10 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "143f555"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2011.pdf",
+   "campo": "fila",
+   "valor": "(101)",
+   "linea": null,
+   "etiqueta": "Rettifiche di valore di attività finanziarie (D)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: a mano): la extracción se salteó la sección D de 2011 (.md L1006-L1010: a) di partecipazioni (96), b) di immobilizzazioni finanziarie (5), Totale (101), TOTALE D (101)); sin ella el resultado daba −67,233 M contra −67,334 M impreso. Sin línea a propósito: el escalón de la sección D sigue trayendo las filas de la E",
+   "evidencia": ".md L1006-L1010 (-101)",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,8 +40,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 266.811 - gastos 341.061 ± financiero -4.942 ± impuesto 13.332 no da el impreso -67.334"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2012",
@@ -48,6 +60,8 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Rettifiche di valore di attività finanziarie (D)\" (financiero) (101) (2026-10-08, Claude 2026-10-08 (Guido: a mano): la extracción se salteó la sección D de 2011 (.md L1006-L1010: a) di partecipazioni (96), b) di immobilizzazioni finanziarie (5), Totale (101), TOTALE D (101)); sin ella el resultado daba −67,233 M contra −67,334 M impreso. Sin línea a propósito: el escalón de la sección D sigue trayendo las filas de la E)",
+  "escalón \"sección D\": 3 fila(s) de rettifiche (L1016, L1019, L1020) al financiero; su suma da el total impreso (-1.373, L1022); cerró la lectura 0",
   "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo y no desglosan renglones que no estén ya abiertos en el estado consolidado o en sus notas.",
   "duda de localizar que no afecta la carga: El club carga el consolidado; el documento incluye también el estado individual de la capogruppo en unidades de euro (pág. 94-130).",
   "duda de extraer que no afecta la carga: Las imposte figuran positivas y la pérdida (67.334) es menor que el resultado antes de impuestos (80.666): son un beneficio por consolidado fiscal (L2402)."
@@ -58,12 +72,12 @@
  "totales": {
   "ingresos": 266.811,
   "gastos": 341.061,
-  "financiero": -4.942,
+  "financiero": -6.416,
   "impuesto": 13.332,
   "resultadoImpreso": -67.334,
   "resultadoParaCargar": -67.334,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -434,6 +448,26 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.003,
    "linea": 999
+  },
+  {
+   "etiqueta": "Rettifiche di valore di attività finanziarie (D)",
+   "M": -0.101,
+   "linea": null
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "M": 0.003,
+   "linea": 1016
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "M": -0.007,
+   "linea": 1019
+  },
+  {
+   "etiqueta": "b) imposte relative ad esercizi precedenti",
+   "M": -1.369,
+   "linea": 1020
   }
  ],
  "impuesto": [

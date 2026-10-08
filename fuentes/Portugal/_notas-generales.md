@@ -85,3 +85,8 @@ confirma/descarta el registro `publicacoes.mj.pt`/BDCA como canal de consulta gr
 El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el PDF idéntico a otro de la misma carpeta. Cuando las copias tienen años distintos en el nombre, un año que figuraba como conseguido en realidad falta.
 
 - Benfica: `prestacao-contas-2010-12-06.pdf` y `prestacao-contas-2010-11-11.pdf` son el MISMO archivo. Si eran dos documentos distintos (por ejemplo, el de la SAD y el del club), falta uno.
+
+## Segunda pasada (2026-10-08): clubes de Liga Portugal 2 sin nada → CDX de dominio
+
+- Chaves (`gdchaves.pt`), Feirense (`cdfeirense.pt`), Paços de Ferreira (`fcpf.pt`) y Académica (`academica-oaf.pt`) tenían los R&C en sus sitios y salieron del **CDX de Wayback del dominio completo** filtrando PDF por `contas|relat|rc`. Penafiel (`fcpenafiel.pt`): 3 R&C 2021/22-2023/24 en el CDX pero **la única captura está truncada a 5 MiB** (5.242.880 bytes, ilegible) y el sitio vivo da 404: pendiente pedirlos al club. Boavista, Farense, Felgueiras, Oliveirense y Torreense: dominios probados (`boavistafc.pt`, `sffarense.pt`, `fcfelgueiras1932.pt`, `udoliveirense.pt`, `sctorreense.pt`) sin PDF de contas en el CDX.
+- Gotcha: Wayback intermitentemente responde una página HTML «Temporarily Offline» con código 200; validar con `pdfinfo` y reintentar. Además de 1 MiB, hay capturas truncadas a **5 MiB**.

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2009.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2009.md",
- "generado": "2026-10-08T18:56:43.584Z",
- "estado": "cola",
+ "generado": "2026-10-08T21:53:15.966Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2009,
  "escala": {
@@ -12,13 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "526af7a",
-  "6289fa6",
-  "91e5026",
-  "596eb14",
-  "b7216c0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 327.617 - gastos 323.055 ± financiero -2.978 ± impuesto -11.152 no da el impreso -9.836"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2010",
@@ -52,6 +46,8 @@
   }
  ],
  "notas": [
+  "escalón \"sección D\": 3 fila(s) de rettifiche y straordinari (L999, L1004, L1007) al financiero; su suma da el total impreso (-0.268, L1001 + L1010), con el 17) restando; cerró la lectura 0",
+  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"Costi per godimento beni di terzi\"): aceptar, en AC-Milan-bilancio-gruppo-dic-2009.pdf",
   "duda de localizar que no afecta la carga: b63 abre el conto economico por sociedad del grupo, no por categoría de ingreso o gasto.",
   "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en AC-Milan-bilanci-relazioni-2021-22.pdf",
   "duda de extraer que no afecta la carga: L1015 (11.152) restado a 1.316 da (9.836): los signos de impuestos están invertidos respecto del bloque financiero."
@@ -62,12 +58,12 @@
  "totales": {
   "ingresos": 327.617,
   "gastos": 323.055,
-  "financiero": -2.978,
+  "financiero": -3.246,
   "impuesto": -11.152,
   "resultadoImpreso": -9.836,
   "resultadoParaCargar": -9.836,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -446,6 +442,21 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.082,
    "linea": 992
+  },
+  {
+   "etiqueta": "a) di partecipazioni",
+   "M": -0.262,
+   "linea": 999
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "M": 0.001,
+   "linea": 1004
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "M": -0.007,
+   "linea": 1007
   }
  ],
  "impuesto": [

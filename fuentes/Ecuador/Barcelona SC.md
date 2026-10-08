@@ -42,3 +42,7 @@
 - `https://barcelonasc.com.ec/descargas/pdf/2do_informe_cuatrimestral2018.pdf` (Wayback `20210512081255`, 790 KB comprimido): la captura sale TRUNCADA a 1.048.576 bytes (PDF roto) también con `--compressed`; no guardado. Es un informe cuatrimestral 2018 (parcial), valor bajo. `informeSOCIOSBSC2018mayo.pdf` es 301/404 en Wayback.
 - Las convocatorias a asamblea 2022-2025 (barcelonasc.com.ec/2024/03/04/..., etc.) confirman que cada año se trata "informe anual económico del Directorio" + "informe anual de los Auditores Externos (art. 89 del Estatuto)": EXISTEN auditorías externas anuales, pero el sitio actual no las publica (prensa: el informe económico 2023 se envió por mail a los socios para la asamblea del 19-oct-2024). Wp-json media del sitio actual: sin PDFs financieros.
 - Ejercicios en disco: **1** (2018). Candidato a mail/socio (hay hinchas-socios que pueden compartirlos): estados auditados 2019-2024.
+
+## Actualización 2026-10-08
+
+**3 documentos** en `Clubes/Ecuador/Barcelona SC/` (años 2011, 2018). - Informe de auditoría externa (2013, PKF Ecuador) y convocatoria de asamblea 2011 desde el sitio vía Wayback; el «Informe financiero 2018» y el «2do informe cuatrimestral 2018» figuran en el CDX pero no se pudieron bajar (capturas truncadas).

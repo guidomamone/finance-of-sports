@@ -26,3 +26,7 @@
   cmfchile.cl/portal/principal/623/w4-propertyvalue-48680.html.
 - Último chequeo: 2026-09-12.
 
+
+## Actualización 2026-10-08
+
+**1 documentos** en `Clubes/Chile/Unión La Calera/` (años sin año en el nombre). - Memoria anual (publicada 2025) en `ulc.cl/wp-content/uploads/2025/02/`; ejercicio por confirmar al abrirla.

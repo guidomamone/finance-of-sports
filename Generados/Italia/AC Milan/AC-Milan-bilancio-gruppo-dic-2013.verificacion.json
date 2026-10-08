@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.md",
- "generado": "2026-10-08T18:56:43.705Z",
+ "generado": "2026-10-08T21:53:16.131Z",
  "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2013,
@@ -27,7 +27,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)"
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2012",
@@ -41,6 +41,7 @@
   }
  ],
  "notas": [
+  "escalón \"sección D\": 4 fila(s) de rettifiche y straordinari (L982, L990, L994, L995) al financiero; su suma da el total impreso (-0.109, L987 + L997); cerró la lectura 0",
   "duda de localizar que no afecta la carga: b57 tiene columnas por sociedad del grupo (A.C. Milan, Milan Entertainment, Milan Real Estate); parece repetir los totales del conto economico consolidado.",
   "duda de extraer que no afecta la carga: b28 (L1914-L1917), b29 (L1945-L1955), b34 (L2126-L2130), b36 (L2156-L2160), b37 (L2180-L2186) y b42 (L2286-L2293) reproducen los mismos importes del estado.",
   "duda de extraer que no afecta la carga: El año anterior difiere entre estado y nota b40 (total C 12.506 vs 13.480, L979/L2245); 2013 coincide, se carga el estado.",
@@ -52,12 +53,12 @@
  "totales": {
   "ingresos": 278.713,
   "gastos": 278.655,
-  "financiero": -12.777,
+  "financiero": -12.886,
   "impuesto": -2.895,
   "resultadoImpreso": -15.723,
   "resultadoParaCargar": -15.723,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -398,18 +399,18 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
    "etiqueta": "- altri",
-   "M": -0.018,
+   "M": 0.018,
    "linea": 967
   },
   {
    "etiqueta": "e) proventi da compartecipazioni ex art. 102 bis N.O.I.F.",
-   "M": -0.03,
+   "M": 0.03,
    "linea": 968
   },
   {
@@ -419,12 +420,12 @@
   },
   {
    "etiqueta": "d) altri oneri finanziari",
-   "M": 8.305,
+   "M": -8.305,
    "linea": 972
   },
   {
    "etiqueta": "e) oneri da compartecipazioni ex art. 102 bis N.O.I.F.",
-   "M": 4.489,
+   "M": -4.489,
    "linea": 973
   },
   {
@@ -434,19 +435,39 @@
   },
   {
    "etiqueta": "b) perdite su cambi",
-   "M": 0.031,
+   "M": -0.031,
    "linea": 977
+  },
+  {
+   "etiqueta": "a) di partecipazioni",
+   "M": 0.013,
+   "linea": 982
+  },
+  {
+   "etiqueta": "a) plusvalenze da alienazioni",
+   "M": 0.04,
+   "linea": 990
+  },
+  {
+   "etiqueta": "a) minusvalenze da alienazioni",
+   "M": -0.108,
+   "linea": 994
+  },
+  {
+   "etiqueta": "b) imposte relative ad esercizi precedenti",
+   "M": -0.054,
+   "linea": 995
   }
  ],
  "impuesto": [
   {
    "etiqueta": "a) imposte correnti",
-   "M": 0.174,
+   "M": -0.174,
    "linea": 1000
   },
   {
    "etiqueta": "b) imposte differite e anticipate",
-   "M": 2.721,
+   "M": -2.721,
    "linea": 1001
   }
  ]

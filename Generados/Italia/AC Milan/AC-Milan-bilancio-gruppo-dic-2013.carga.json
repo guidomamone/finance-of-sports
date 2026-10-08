@@ -1,20 +1,11 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.pdf",
- "generado": "2026-10-08T19:23:21.293Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 278.713 + gastos -278.655 + netInterest 12.777 + tax 2.895 = 15.73 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -15.723)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -277.885 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-08T21:55:52.949Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 0 ejercicio(s) con un solo perímetro (—); 5 documento(s) mirados)",
   "el documento cierra 2013-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
-  "gestión: ningún presidente confirmado cubre 2013 (cierre 2013-12-31); pregunta en la cola (no frena)"
+  "gastos: ningún total impreso igual a la suma de las líneas (-277.885); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "acmilan-it",
@@ -453,13 +444,67 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": 12.777,
-   "tax": 2.895,
+   "netInterest": -12.886,
+   "tax": -2.895,
+   "extraRows": [
+    {
+     "label": "- altri",
+     "value": 0.018
+    },
+    {
+     "label": "e) proventi da compartecipazioni ex art. 102 bis N.O.I.F.",
+     "value": 0.03
+    },
+    {
+     "label": "c) verso imprese controllanti",
+     "value": null
+    },
+    {
+     "label": "d) altri oneri finanziari",
+     "value": -8.305
+    },
+    {
+     "label": "e) oneri da compartecipazioni ex art. 102 bis N.O.I.F.",
+     "value": -4.489
+    },
+    {
+     "label": "a) utili su cambi",
+     "value": null
+    },
+    {
+     "label": "b) perdite su cambi",
+     "value": -0.031
+    },
+    {
+     "label": "a) di partecipazioni",
+     "value": 0.013
+    },
+    {
+     "label": "a) plusvalenze da alienazioni",
+     "value": 0.04
+    },
+    {
+     "label": "a) minusvalenze da alienazioni",
+     "value": -0.108
+    },
+    {
+     "label": "b) imposte relative ad esercizi precedenti",
+     "value": -0.054
+    },
+    {
+     "label": "a) imposte correnti",
+     "value": -0.174
+    },
+    {
+     "label": "b) imposte differite e anticipate",
+     "value": -2.721
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 278.713,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 277.885,
+   "officialPAT": -15.723
   },
   "source": {
    "id": "acmilan-it-bilancio-gruppo-dic-2013",
@@ -484,7 +529,7 @@
  "year": 2013,
  "ajustes": null,
  "seleccion": {
-  "filas": 51,
+  "filas": 55,
   "notasUsadas": [],
   "refM": null
  },
@@ -1128,7 +1173,7 @@
   {
    "label": "- altri",
    "page": null,
-   "native": -0.018,
+   "native": 0.018,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1139,7 +1184,7 @@
   {
    "label": "e) proventi da compartecipazioni ex art. 102 bis N.O.I.F.",
    "page": null,
-   "native": -0.03,
+   "native": 0.03,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1161,7 +1206,7 @@
   {
    "label": "d) altri oneri finanziari",
    "page": null,
-   "native": 8.305,
+   "native": -8.305,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1172,7 +1217,7 @@
   {
    "label": "e) oneri da compartecipazioni ex art. 102 bis N.O.I.F.",
    "page": null,
-   "native": 4.489,
+   "native": -4.489,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1194,7 +1239,51 @@
   {
    "label": "b) perdite su cambi",
    "page": null,
-   "native": 0.031,
+   "native": -0.031,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) di partecipazioni",
+   "page": null,
+   "native": 0.013,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) plusvalenze da alienazioni",
+   "page": null,
+   "native": 0.04,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) minusvalenze da alienazioni",
+   "page": null,
+   "native": -0.108,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "b) imposte relative ad esercizi precedenti",
+   "page": null,
+   "native": -0.054,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1205,7 +1294,7 @@
   {
    "label": "a) imposte correnti",
    "page": null,
-   "native": 0.174,
+   "native": -0.174,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1216,7 +1305,7 @@
   {
    "label": "b) imposte differite e anticipate",
    "page": null,
-   "native": 2.721,
+   "native": -2.721,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1232,16 +1321,24 @@
    "verificacion (nota que desglosa \"8 per godimento di beni di terzi\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 278.713,
   "expSum": -277.885,
   "officialTotalRevenue": 278.713,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 277.885,
+  "officialPAT": -15.723,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -15.723,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1303,11 +1400,11 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 28,
-  "metaFilas": 9,
+  "metaFilas": 13,
   "excluidas": 0
  }
 }

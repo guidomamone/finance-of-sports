@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2009.pdf",
   "club": "acmilan-it",
   "year": 2009,
-  "generatedAt": "2026-10-08T18:56:43.584Z",
+  "generatedAt": "2026-10-08T21:53:15.966Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         6.097
       ],
-      "glosa": "4) Trabajos realizados por la empresa para su activo y capitalización de costes de cantera"
+      "glosa": "4) Trabajos realizados por la empresa para su inmovilizado y capitalización de costes de cantera"
     },
     {
       "label": "a) contributi in conto esercizio",
@@ -114,7 +114,7 @@
       "values": [
         20.592
       ],
-      "glosa": "f) Ingresos diversos"
+      "glosa": "f) Ingresos varios"
     },
     {
       "label": "g) ricavi da cessione temporanea prestazioni calciatori",
@@ -124,7 +124,7 @@
       "values": [
         0.076
       ],
-      "glosa": "g) Ingresos por cesión temporal de jugadores"
+      "glosa": "g) Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -134,7 +134,7 @@
       "values": [
         74.025
       ],
-      "glosa": "h) Plusvalías por traspaso de derechos plurianuales de jugadores"
+      "glosa": "h) Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -144,7 +144,7 @@
       "values": [
         0
       ],
-      "glosa": "i) Otros ingresos de la gestión de jugadores"
+      "glosa": "i) Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "l) ricavi e proventi diversi",
@@ -164,7 +164,7 @@
       "values": [
         5.67
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Costi generali attività sportiva",
@@ -174,7 +174,7 @@
       "values": [
         16.797
       ],
-      "glosa": "Gastos generales de la actividad deportiva"
+      "glosa": "Gastos generales de actividad deportiva"
     },
     {
       "label": "Consulenze e collaborazioni",
@@ -184,7 +184,7 @@
       "values": [
         9.941
       ],
-      "glosa": "Consultoría y colaboraciones"
+      "glosa": "Servicios de consultoría y colaboraciones"
     },
     {
       "label": "Pubblicità e propaganda",
@@ -214,7 +214,7 @@
       "values": [
         2.266
       ],
-      "glosa": "Retribuciones a los órganos sociales"
+      "glosa": "Retribuciones de órganos sociales"
     },
     {
       "label": "Spese amministrative e generali",
@@ -234,7 +234,7 @@
       "values": [
         1.474
       ],
-      "glosa": "Comedor, investigación y formación del personal"
+      "glosa": "Comedor, selección y formación del personal"
     },
     {
       "label": "Manutenzione e riparazione",
@@ -244,7 +244,7 @@
       "values": [
         1.715
       ],
-      "glosa": "Mantenimiento y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Trasporti, magazzinaggio e spese viaggio",
@@ -274,7 +274,7 @@
       "values": [
         8.949
       ],
-      "glosa": "8) Por uso de bienes de terceros / Arrendamientos y cánones"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -304,7 +304,7 @@
       "values": [
         1.03
       ],
-      "glosa": "c) Indemnización por cese de la relación laboral (TFR)"
+      "glosa": "c) Indemnizaciones y fondos por cese laboral (TFR)"
     },
     {
       "label": "e) altri costi",
@@ -344,7 +344,7 @@
       "values": [
         1.608
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otros deterioros de valor del inmovilizado"
     },
     {
       "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -354,7 +354,7 @@
       "values": [
         0.546
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Deterioro de créditos del activo corriente y disponibilidades líquidas"
     },
     {
       "label": "a) spese varie organizzazione gare",
@@ -374,7 +374,7 @@
       "values": [
         0.001
       ],
-      "glosa": "b) Cuotas de inscripción en competiciones"
+      "glosa": "b) Tasas de inscripción en competiciones"
     },
     {
       "label": "c) oneri specifici verso squadre ospitate:",
@@ -394,7 +394,7 @@
       "values": [
         5.077
       ],
-      "glosa": "d) Gastos por adquisición temporal de jugadores"
+      "glosa": "d) Costes por cesión temporal de futbolistas"
     },
     {
       "label": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -404,7 +404,7 @@
       "values": [
         0.025
       ],
-      "glosa": "e) Minusvalías por traspaso de derechos plurianuales de jugadores"
+      "glosa": "e) Pérdidas por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "f) altri oneri da gestione calciatori",
@@ -414,7 +414,7 @@
       "values": [
         1.352
       ],
-      "glosa": "f) Otros gastos de la gestión de jugadores"
+      "glosa": "f) Otros gastos por gestión de futbolistas"
     },
     {
       "label": "g) altri oneri diversi di gestione",
@@ -424,7 +424,7 @@
       "values": [
         6.587
       ],
-      "glosa": "g) Otros gastos diversos de gestión"
+      "glosa": "g) Otros gastos de gestión corrientes"
     }
   ]
 }

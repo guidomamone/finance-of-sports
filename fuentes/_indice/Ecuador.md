@@ -26,3 +26,4 @@ lucro.
 - [Técnico Universitario](../Ecuador/Tecnico Universitario.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 500 — Último chequeo: 2026-09-13
 - [Orense SC](../Ecuador/Orense SC.md) — sin PDFs ni fuente pública identificada; sitio devolvió HTTP 503 — Último chequeo: 2026-09-13
 - [Notas generales de Ecuador](../Ecuador/_notas-generales.md)
+- [Barcelona SC](<../Ecuador/Barcelona SC.md>) — 3 documentos, años 2011, 2018; sin cargar aún — Último chequeo: 2026-10-08
