@@ -276,5 +276,5 @@ ni en el comentario de ningún archivo de código.
     (Roma 2009 y 2011: los presidentes anteriores a Pallotta, que arranca en 2012, faltan en data/gestiones/it.js; Inter 2017-18 también). Con fuente que lo confirme se completan en
     `data/gestiones/it.js` (formato en data/gestiones/ar.js) y se responde `aceptar`; sin fuente, `descartar`.
 
-186. PUSH A PRODUCCIÓN. Hay 59 commits locales sin subir desde el último push (Guido, 2026-10-08: el último push fue `568eb89d`). Cada push es un deploy de Netlify y lo hace Guido. Antes de
+186. PUSH A PRODUCCIÓN. Hay unos 60 commits locales sin subir desde el último push (Guido, 2026-10-08: el último push fue `568eb89d`). Cada push es un deploy de Netlify y lo hace Guido. Antes de
     subir: `node tools/audit.js --quiet` (hoy P0 0 y P1 0) y abrir el sitio local para mirar Lazio (años en liras), Roma, Milan y Torino.

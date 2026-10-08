@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 609 — Cierre de sesión: tablas de arranque y pendientes de Italia (2026-10-08)
+
+- `tools/tablas-sesion.mjs` (nuevo, gratis): `--italia` muestra cada club de fútbol de Italia con sus ejercicios cargados y, de lo que falta, en qué etapa del pipeline está cada documento y por qué;
+  `--todo` lista los puntos de `Admin/TODO.md` con su estado. TODO 179 reescrito y 180 a 186 nuevos (liras y monedas legado, lo armado a mano que `--rehacer` pisa, convención de la gestión neta de Roma,
+  Italia fuera del fútbol, lote 41, cola humana, push). Dos trampas del pipeline en `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 608 — Escalón "sección D y E" y AC Milan 2008 a 2013 cargados (2026-10-08)
 
 - `verificar.mjs`, escalón "sección D" (Versión 589): con una sección E (proventi e oneri straordinari) a continuación de la D, el total que tiene que dar la suma de las filas es la SUMA de
