@@ -40,3 +40,5 @@ a `dudas-por-club.md` si no se resuelve leyendo el documento mismo.
 - **Color de marca**: `null` — camiseta blanca con cruz negra desde 2004 (it.wikipedia, Parma_Calcio_1913; el gialloblù fue hasta 2004): identidad blanca, sin color. Elegido por Claude (Guido delega el color, 2026-10-06), verificado 2026-10-06.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2023 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2023-individual.pdf` (sourceId `parma-it-bilancio-31-12-2023-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf` (sourceId `parma-it-bilancio-31-12-2021-individual`).
