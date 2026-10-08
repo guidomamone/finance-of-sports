@@ -148,8 +148,8 @@ ni en el comentario de ningún archivo de código.
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
 
 166. ITALIA: SECCIÓN D Y 17-BIS SIN SIGNO (verificar.mjs). Ya pasó lo que el to-do 155 esperaba ("CUÁNDO HACERLO"): documentos sin cargar
-    que no cierran por el patrón. Informes de los subagentes (2026-10-08): scratchpad de la sesión, `cola6/informe-{A,B,C,D}.md` (copiar lo
-    útil antes de que se pierda). Casos, todos resueltos hoy con ajustes `fila` del financiero:
+    que no cierran por el patrón. Los informes de los subagentes con el detalle de los to-dos
+    166-173 (causa, ejemplo y escalón por caso): Admin/informes-etapa6-italia/informe-{A,B,C,D}.md. Casos, resueltos con ajustes `fila`:
     - 17-bis / "b) perdite su cambi" impreso en positivo que resta: Atalanta 2019 (L429, 923), Napoli 2022 (L294, 6.136), Napoli 2023
       (L280, 212; cargado).
     - D) rettifiche sin lado: AC Milan 2017-18 (L1016, svalutazioni 218: −125.801 vs −126.019 impreso), AC Milan 2021-22 (L835 +521,
