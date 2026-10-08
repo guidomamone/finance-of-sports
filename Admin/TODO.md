@@ -234,7 +234,7 @@ ni en el comentario de ningún archivo de código.
     `node tools/estado.mjs --actualizar`). 161 ejercicios cargados (Juventus 23 y 138 de los otros 21 clubes) y 15 documentos de fútbol pendientes, todos ya transcriptos. Años = año de
     cierre (2020 = 2019-20). El grupo 1 (13 documentos que no cerraban el resultado) se resolvió: 12 cierran (ajustes `fila`, `estado-desde-md.mjs` para Lazio 2021, comparativo de 2023 para
     Salernitana 2022) y 11 ya están cargados. Lo que queda, en el orden en que conviene resolverlo:
-    1. Resultado cerrado, falta contestar la cola o el script (3): AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los totales de ingresos y gastos quedan en rojo porque el
+    1. Resultado cerrado, falta contestar la cola (2): AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los totales de ingresos y gastos quedan en rojo porque el
        impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018), 
     2. Falla el año vecino (8): AS Roma 2005, 2006, 2008, 2010 y 2020, Inter 2021, Sampdoria 2020, Sassuolo 2018 (Milan 2019 y Lazio 2016 se resolvieron con el escalón de la columna anterior con signo). Casi siempre es una reexpresión del año en el
        documento siguiente (pasó con Milan 2009 y 2010). Mirar uno por uno si es falsa alarma (se acepta en la cola con la explicación) o un error real. Sassuolo 2018 además quedó con la
