@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 187 clubes, 460 ejercicios, 16 países.
+TOTAL: 187 clubes, 462 ejercicios, 16 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -215,7 +215,7 @@ IT (19)
   Hellas Verona  2 ejercicios (2019/2020, 2022/2023), balance, EUR, sin deuda/caja
   Inter          3 ejercicios (2019/2020, 2021/2022, 2024/2025), balance, EUR, sin deuda/caja
   Juventus       23 ejercicios (2002/2003 a 2024/2025), balance, EUR
-  Lazio          12 ejercicios (2006/2007, 2008/2009, 2009/2010, 2012/2013, 2014/2015, 2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Lazio          14 ejercicios (2006/2007, 2007/2008, 2008/2009, 2009/2010, 2011/2012, 2012/2013, 2014/2015, 2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Monza          2 ejercicios (2022 a 2023), balance, EUR, sin deuda/caja
   Napoli         3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
   Parma          6 ejercicios (2018, 2021, 2022, 2023, 2024, 2025), balance, EUR, sin deuda/caja

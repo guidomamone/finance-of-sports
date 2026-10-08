@@ -1,24 +1,509 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
- "generado": "2026-10-08T01:23:45.191Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-08T12:45:17.687Z",
+ "frena": [],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 1 ejercicio(s) con un solo perímetro (consolidado); 10 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 1 ejercicio(s) con un solo perímetro (consolidado); 10 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-95.610284); queda la suma, verificada por el resultado del ejercicio"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "lazio-it",
+  "year": 2012,
+  "cierre": "2012-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "ricavi da gare in casa",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 6.430058,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "percentuali su incassi gare da squadra ospitanti",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.046517,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "abbonamenti",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 3.077211,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "-) televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 47.673651,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "-) televisivi da partecipazioni comp. U.E.F.A.",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.610758,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "-) da L.N.P.",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 4.696642,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 4.232649,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.451638,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Canoni per licenze, marchi, brevetti",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.62393,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cessione temporanea calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.146465,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 10.183837,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri proventi da gestione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.029343,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "-) da transazioni con creditori (non ricorrenti)",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.115309,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "-) da altri",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.21745,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi vari",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.390354,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Variazione delle rimanenze",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.639739,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.223218,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Materie prime,sussidiarie,di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.867656,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -51.677494,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.401016,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.192859,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri costi",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.199939,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per Acquisizione temporanea prestazioni calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.021,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri da gestione calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.0806,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per tesserati",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.548043,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi specifici tecnici",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.672962,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costi per vitto,alloggio e locomozione",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.031011,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servizio biglietteria, controllo ingressi",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.093225,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese assicurative",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.162776,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese amministrative",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.146071,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per pubblicità e promozione",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.668216,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese bancarie",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.288388,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Per godimento di beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.455733,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese varie organizzazione gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.406847,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tassa iscrizioni gare",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.006045,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "-) percentuale su incassi gare a squadra ospite",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.021856,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri oneri di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.808042,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sopravvenienze passive (non ricorrenti)",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.620556,
+    "disclosureLevel": "aggregated",
+    "_pag": 98,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amm. delle immobilizzazioni immateriali",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -20.565677,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Amm. delle immobilizzazioni materiali",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.89256,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Svalutaz. Delle immobilizzazioni",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.052785,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.432064,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Accantonamenti per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": 0.082581,
+    "disclosureLevel": "aggregated",
+    "_pag": 99,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2012-06-30",
+   "sourceId": "lazio-it-bilancio-separato-consolidato-2011-12",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.741428,
+   "tax": 7.684529,
+   "extraRows": [
+    {
+     "label": "b) perdite",
+     "value": -0.03072
+    },
+    {
+     "label": "da terzi",
+     "value": 0.15975
+    },
+    {
+     "label": "da attualizzazione",
+     "value": 0.341351
+    },
+    {
+     "label": "verso terzi",
+     "value": -1.803518
+    },
+    {
+     "label": "da attualizzazione",
+     "value": -1.408291
+    },
+    {
+     "label": "Imposte correnti",
+     "value": -1.614354
+    },
+    {
+     "label": "b) imposte differite",
+     "value": 0.255648
+    },
+    {
+     "label": "c) imposte anticipate",
+     "value": 9.043235
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 95.509291,
+   "officialTotalExpenses": 95.610284,
+   "officialPAT": 4.221554
+  },
+  "source": {
+   "id": "lazio-it-bilancio-separato-consolidato-2011-12",
+   "clubId": "lazio-it",
+   "title": "S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2011-12 (ejercicio 2012)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +516,864 @@
  },
  "clubId": "lazio-it",
  "year": 2012,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 3577,
+   "etiqueta": "(sale) TOTALE RICAVI",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 3577,
+   "motivo": "Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167)",
+   "evidencia": ".md L3577",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 3612,
+   "etiqueta": "(sale) TOTALE COSTI OPERATIVI",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 3612,
+   "motivo": "Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167). Cierra: 95.509.291 − 96.230.839 − 2.741.427 + 7.684.529 = 4.221.554",
+   "evidencia": ".md L3612; pág. 98-99 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
+ "seleccion": {
+  "filas": 51,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "ricavi da gare in casa",
+   "page": 98,
+   "native": 6.430058,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.430058,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.430058
+  },
+  {
+   "label": "percentuali su incassi gare da squadra ospitanti",
+   "page": 98,
+   "native": 0.046517,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.046517,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.046517
+  },
+  {
+   "label": "abbonamenti",
+   "page": 98,
+   "native": 3.077211,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.077211,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.077211
+  },
+  {
+   "label": "-) televisivi",
+   "page": 98,
+   "native": 47.673651,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 47.673651,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 47.673651
+  },
+  {
+   "label": "-) televisivi da partecipazioni comp. U.E.F.A.",
+   "page": 98,
+   "native": 2.610758,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.610758,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.610758
+  },
+  {
+   "label": "-) da L.N.P.",
+   "page": 98,
+   "native": 4.696642,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.696642,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "revenue",
+   "amountNative": 4.696642
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "page": 98,
+   "native": 4.232649,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.232649,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.232649
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 98,
+   "native": 8.451638,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.451638,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.451638
+  },
+  {
+   "label": "Canoni per licenze, marchi, brevetti",
+   "page": 98,
+   "native": 0.62393,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.62393,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.62393
+  },
+  {
+   "label": "Cessione temporanea calciatori",
+   "page": 98,
+   "native": 4.146465,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.146465,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.146465
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+   "page": 98,
+   "native": 10.183837,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 10.183837,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.183837
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "page": 98,
+   "native": 0.029343,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.029343,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "revenue",
+   "amountNative": 0.029343
+  },
+  {
+   "label": "-) da transazioni con creditori (non ricorrenti)",
+   "page": 98,
+   "native": 1.115309,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.115309,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.115309
+  },
+  {
+   "label": "-) da altri",
+   "page": 98,
+   "native": 1.21745,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.21745,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.21745
+  },
+  {
+   "label": "Proventi vari",
+   "page": 98,
+   "native": 0.390354,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.390354,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.390354
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "page": 98,
+   "native": 0.639739,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.639739,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.639739
+  },
+  {
+   "label": "Ricavi da merchandising",
+   "page": 98,
+   "native": 1.223218,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.223218,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.223218
+  },
+  {
+   "label": "Materie prime,sussidiarie,di consumo e di merci",
+   "page": 98,
+   "native": 0.867656,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.867656,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.867656
+  },
+  {
+   "label": "Salari e stipendi",
+   "page": 98,
+   "native": 51.677494,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 51.677494,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -51.677494
+  },
+  {
+   "label": "Oneri sociali",
+   "page": 98,
+   "native": 2.401016,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.401016,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.401016
+  },
+  {
+   "label": "Trattamento di fine rapporto",
+   "page": 98,
+   "native": 0.192859,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.192859,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.192859
+  },
+  {
+   "label": "Altri costi",
+   "page": 98,
+   "native": 0.199939,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.199939,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.199939
+  },
+  {
+   "label": "Costi per Acquisizione temporanea prestazioni calciatori",
+   "page": 98,
+   "native": 0.021,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.021,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.021
+  },
+  {
+   "label": "Altri oneri da gestione calciatori",
+   "page": 98,
+   "native": 0.0806,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.0806,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.0806
+  },
+  {
+   "label": "Costi per tesserati",
+   "page": 98,
+   "native": 0.548043,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.548043,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.548043
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "page": 98,
+   "native": 3.672962,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.672962,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.672962
+  },
+  {
+   "label": "Costi per vitto,alloggio e locomozione",
+   "page": 98,
+   "native": 1.031011,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.031011,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.031011
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "page": 98,
+   "native": 1.093225,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.093225,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.093225
+  },
+  {
+   "label": "Spese assicurative",
+   "page": 98,
+   "native": 0.162776,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.162776,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.162776
+  },
+  {
+   "label": "Spese amministrative",
+   "page": 98,
+   "native": 3.146071,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.146071,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.146071
+  },
+  {
+   "label": "Spese per pubblicità e promozione",
+   "page": 98,
+   "native": 3.668216,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.668216,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.668216
+  },
+  {
+   "label": "Spese bancarie",
+   "page": 98,
+   "native": 0.288388,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.288388,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -0.288388
+  },
+  {
+   "label": "Per godimento di beni di terzi",
+   "page": 98,
+   "native": 3.455733,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.455733,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.455733
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "page": 98,
+   "native": 0.406847,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.406847,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.406847
+  },
+  {
+   "label": "Tassa iscrizioni gare",
+   "page": 98,
+   "native": 0.006045,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.006045,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.006045
+  },
+  {
+   "label": "-) percentuale su incassi gare a squadra ospite",
+   "page": 98,
+   "native": 0.021856,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.021856,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.021856
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "page": 98,
+   "native": 0.808042,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.808042,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.808042
+  },
+  {
+   "label": "Sopravvenienze passive (non ricorrenti)",
+   "page": 98,
+   "native": 0.620556,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.620556,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.620556
+  },
+  {
+   "label": "Amm. delle immobilizzazioni immateriali",
+   "page": 99,
+   "native": 20.565677,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 20.565677,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -20.565677
+  },
+  {
+   "label": "Amm. delle immobilizzazioni materiali",
+   "page": 99,
+   "native": 0.89256,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.89256,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.89256
+  },
+  {
+   "label": "Svalutaz. Delle immobilizzazioni",
+   "page": 99,
+   "native": 0.052785,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.052785,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -0.052785
+  },
+  {
+   "label": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
+   "page": 99,
+   "native": 0.432064,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.432064,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.432064
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "page": 99,
+   "native": 0.082581,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.082581,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.082581
+  },
+  {
+   "label": "b) perdite",
+   "page": null,
+   "native": -0.03072,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "da terzi",
+   "page": null,
+   "native": 0.15975,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "da attualizzazione",
+   "page": null,
+   "native": 0.341351,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "verso terzi",
+   "page": null,
+   "native": -1.803518,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "da attualizzazione",
+   "page": null,
+   "native": -1.408291,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposte correnti",
+   "page": null,
+   "native": -1.614354,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "b) imposte differite",
+   "page": null,
+   "native": 0.255648,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "c) imposte anticipate",
+   "page": null,
+   "native": 9.043235,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 95.509291,
+  "expSum": -95.610284,
+  "officialTotalRevenue": 95.509291,
+  "officialTotalExpenses": 95.610284,
+  "officialPAT": 4.221554,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 4.221554,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 95.509291
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2011–12 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Lazio\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2012,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2012-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (408 de 426 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2012-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2012-06-30 = 0.794281 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2012-06-29, 2012-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lazio-it-bilancio-separato-consolidato-2011-12",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2011–12 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Lazio\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 17,
+  "lineasGasto": 26,
+  "metaFilas": 8,
+  "excluidas": 0
+ }
 }
