@@ -3,7 +3,7 @@
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
  "club": "lazio-it",
  "year": 2008,
- "generatedAt": "2026-10-08T03:49:57.429Z",
+ "generatedAt": "2026-10-08T12:39:47.083Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -183,7 +183,7 @@
    "page": 94,
    "section": "nota que desglosa \"Personale\"",
    "values": [
-    26646699
+    26.646699
    ]
   },
   {
@@ -192,7 +192,7 @@
    "page": 94,
    "section": "nota que desglosa \"Personale\"",
    "values": [
-    1820909
+    1.820909
    ]
   },
   {
@@ -201,7 +201,7 @@
    "page": 94,
    "section": "nota que desglosa \"Personale\"",
    "values": [
-    119821
+    0.119821
    ]
   },
   {
@@ -210,106 +210,7 @@
    "page": 94,
    "section": "nota que desglosa \"Personale\"",
    "values": [
-    459941
-   ]
-  },
-  {
-   "label": "- Compensi contrattuali calciatori",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -18266000
-   ]
-  },
-  {
-   "label": "- Quota variabile legata ai risultati sportivi",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -4697000
-   ]
-  },
-  {
-   "label": "- Compensi contrattuali allenatori e tecnici 1° squadra",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -1852000
-   ]
-  },
-  {
-   "label": "- Compensi contrattuali allenatori e tecnici sq. minori",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -433000
-   ]
-  },
-  {
-   "label": "- Oneri sociali",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -1193000
-   ]
-  },
-  {
-   "label": "- Trattamento di fine carriera",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -201000
-   ]
-  },
-  {
-   "label": "- Altri costi",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -335000
-   ]
-  },
-  {
-   "label": "- Salari e stipendi",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -1398000
-   ]
-  },
-  {
-   "label": "- Oneri sociali",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -427000
-   ]
-  },
-  {
-   "label": "- Trattamento di fine rapporto",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -120000
-   ]
-  },
-  {
-   "label": "- Altri costi",
-   "lado": "expense",
-   "page": 138,
-   "section": "nota que desglosa \"Personale\"",
-   "values": [
-    -125000
+    0.459941
    ]
   },
   {
@@ -448,21 +349,12 @@
    ]
   },
   {
-   "label": "- oneri tributi indiretti",
+   "label": "Altri oneri di gestione",
    "lado": "expense",
-   "page": 141,
-   "section": "nota que desglosa \"Altri oneri\" > desglose de \"Altri oneri di gestione\"",
+   "page": 94,
+   "section": "nota que desglosa \"Altri oneri\"",
    "values": [
-    0.203
-   ]
-  },
-  {
-   "label": "- multe e danni",
-   "lado": "expense",
-   "page": 141,
-   "section": "nota que desglosa \"Altri oneri\" > desglose de \"Altri oneri di gestione\"",
-   "values": [
-    0.279
+    0.482418
    ]
   },
   {
@@ -472,15 +364,6 @@
    "section": "nota que desglosa \"Altri oneri\"",
    "values": [
     0.534852
-   ]
-  },
-  {
-   "label": "TOTALE COSTI OPERATIVI",
-   "lado": "expense",
-   "page": 94,
-   "section": "estado",
-   "values": [
-    52.667128
    ]
   },
   {

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.md",
- "generado": "2026-10-08T03:49:57.428Z",
- "estado": "cola",
+ "generado": "2026-10-08T12:39:47.082Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2008,
  "escala": {
@@ -51,16 +51,23 @@
    "evidencia": "pág. 95 del visor, .md L3494-3496",
    "autor": "Guido",
    "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 3444,
+   "etiqueta": "(sale) TOTALE COSTI OPERATIVI",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 3444,
+   "motivo": "Guido 2026-10-08 (documento viejo, a mano): el total se contaba además de sus filas (to-do 167); con el TOTALE RICAVI ya sacado y las notas en miles fuera del .filas.json cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 vs 13.761.874",
+   "evidencia": ".md L3383-3497 (pág. 94-95 del visor)",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "0c669d8",
-  "ad49c68",
-  "11a2615",
-  "131266a",
-  "5642dd6",
-  "4fa2448"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -69,13 +76,13 @@
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"TOTALE COSTI OPERATIVI\" 52.667128 cierra; además se suman 39 línea(s) fuera de ese total (409.561738)"
+   "ok": false,
+   "detalle": "las líneas suman 68.609526 y el total impreso dice 52.667128"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 102.48203 - gastos 462.228866 ± financiero -4.962375 ± impuesto -15.148258 no da el impreso 13.761874"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
@@ -97,6 +104,7 @@
   "ajuste manual: sale la fila \"L3413\" (2026-10-08, total sumado además de sus 18 hojas (doble conteo, to-do 167))",
   "ajuste manual: fila \"Oneri finanziari netti e differenze cambio\" (financiero) (4.224.030) (2026-10-08, el subtotal financiero (hojas en detalla_a) no se sumaba; 55.350 + 1.283.259 - 5.562.639 = -4.224.030)",
   "ajuste manual: fila \"Imposte differite e anticipate\" (impuesto) (12.443.793) (2026-10-08, el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829))",
+  "ajuste manual: sale la fila \"L3444\" (2026-10-08, Guido 2026-10-08 (documento viejo, a mano): el total se contaba además de sus filas (to-do 167); con el TOTALE RICAVI ya sacado y las notas en miles fuera del .filas.json cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 vs 13.761.874)",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale solo dan ventas totales por área, no abren ningún renglón del conto economico.",
   "duda de localizar que no afecta la carga: Estado en 'Valori in Euro', notas en 'in €/000'.",
   "duda de extraer que no afecta la carga: El estado ya trae el desglose 5.x/6.x/7.x/8.x y los detalles financieros en euros; las notas los repiten redondeados en miles.",
@@ -108,13 +116,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 102.48203,
-  "gastos": 462.228866,
+  "gastos": 68.609526,
   "financiero": -4.962375,
   "impuesto": -15.148258,
   "resultadoImpreso": 13.761874,
   "resultadoParaCargar": 13.761874,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -272,7 +280,7 @@
   {
    "etiqueta": "Salari e stipendi",
    "lado": "gasto",
-   "M": 26646699,
+   "M": 26.646699,
    "pagina": 94,
    "linea": 3417,
    "origen": "nota que desglosa \"Personale\""
@@ -280,7 +288,7 @@
   {
    "etiqueta": "Oneri sociali",
    "lado": "gasto",
-   "M": 1820909,
+   "M": 1.820909,
    "pagina": 94,
    "linea": 3418,
    "origen": "nota que desglosa \"Personale\""
@@ -288,7 +296,7 @@
   {
    "etiqueta": "Trattamento di fine rapporto",
    "lado": "gasto",
-   "M": 119821,
+   "M": 0.119821,
    "pagina": 94,
    "linea": 3419,
    "origen": "nota que desglosa \"Personale\""
@@ -296,97 +304,9 @@
   {
    "etiqueta": "Altri costi",
    "lado": "gasto",
-   "M": 459941,
+   "M": 0.459941,
    "pagina": 94,
    "linea": 3420,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Compensi contrattuali calciatori",
-   "lado": "gasto",
-   "M": -18266000,
-   "pagina": 138,
-   "linea": 5108,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Quota variabile legata ai risultati sportivi",
-   "lado": "gasto",
-   "M": -4697000,
-   "pagina": 138,
-   "linea": 5109,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Compensi contrattuali allenatori e tecnici 1° squadra",
-   "lado": "gasto",
-   "M": -1852000,
-   "pagina": 138,
-   "linea": 5110,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Compensi contrattuali allenatori e tecnici sq. minori",
-   "lado": "gasto",
-   "M": -433000,
-   "pagina": 138,
-   "linea": 5112,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Oneri sociali",
-   "lado": "gasto",
-   "M": -1193000,
-   "pagina": 138,
-   "linea": 5113,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Trattamento di fine carriera",
-   "lado": "gasto",
-   "M": -201000,
-   "pagina": 138,
-   "linea": 5114,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Altri costi",
-   "lado": "gasto",
-   "M": -335000,
-   "pagina": 138,
-   "linea": 5115,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Salari e stipendi",
-   "lado": "gasto",
-   "M": -1398000,
-   "pagina": 138,
-   "linea": 5118,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Oneri sociali",
-   "lado": "gasto",
-   "M": -427000,
-   "pagina": 138,
-   "linea": 5119,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Trattamento di fine rapporto",
-   "lado": "gasto",
-   "M": -120000,
-   "pagina": 138,
-   "linea": 5120,
-   "origen": "nota que desglosa \"Personale\""
-  },
-  {
-   "etiqueta": "- Altri costi",
-   "lado": "gasto",
-   "M": -125000,
-   "pagina": 138,
-   "linea": 5121,
    "origen": "nota que desglosa \"Personale\""
   },
   {
@@ -510,20 +430,12 @@
    "origen": "nota que desglosa \"Altri oneri\""
   },
   {
-   "etiqueta": "- oneri tributi indiretti",
+   "etiqueta": "Altri oneri di gestione",
    "lado": "gasto",
-   "M": 0.203,
-   "pagina": 141,
-   "linea": 5254,
-   "origen": "nota que desglosa \"Altri oneri\" > desglose de \"Altri oneri di gestione\""
-  },
-  {
-   "etiqueta": "- multe e danni",
-   "lado": "gasto",
-   "M": 0.279,
-   "pagina": 141,
-   "linea": 5255,
-   "origen": "nota que desglosa \"Altri oneri\" > desglose de \"Altri oneri di gestione\""
+   "M": 0.482418,
+   "pagina": 94,
+   "linea": 3442,
+   "origen": "nota que desglosa \"Altri oneri\""
   },
   {
    "etiqueta": "Sopravvenienze passive (non ricorrenti)",
@@ -532,14 +444,6 @@
    "pagina": 94,
    "linea": 3443,
    "origen": "nota que desglosa \"Altri oneri\""
-  },
-  {
-   "etiqueta": "TOTALE COSTI OPERATIVI",
-   "lado": "gasto",
-   "M": 52.667128,
-   "pagina": 94,
-   "linea": 3444,
-   "origen": "estado"
   },
   {
    "etiqueta": "Amm. delle immobilizzazioni immateriali",
