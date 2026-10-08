@@ -48,3 +48,5 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf` (sourceId `asroma-it-bilancio-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf` (sourceId `asroma-it-bilancio-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.pdf` (sourceId `asroma-it-bilancio-2023`).
