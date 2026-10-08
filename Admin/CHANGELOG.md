@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 587 — Escalón "renglón grande sin abrir" en verificar.mjs; to-do 175 cerrado (2026-10-08)
+
+- Si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o menos (un grupo que
+  el estado no desglosa), se prueba la misma lectura con la nota del subtotal abierta del lado de los ingresos, sin esperar a que la
+  propuesta de carga marque una categoría en 0 (el reintento). Compuerta: la misma lectura cierra igual. No depende de la categorización.
+- Medido en una copia: sin la marca del camino de error, los 11 documentos que hoy se abrieron por reintento o a mano (Bologna 2018-22,
+  Cremonese 2022/2024/2025, Sampdoria 2018, Sassuolo 2021/2024/2025, Udinese 2021-22) dan idéntico a lo cargado en la primera pasada; con
+  las marcas, 0 de 98 cambian; prueba completa 0 de 87. Descartado: el gatillo del 20% solo (rompía Atalanta 2022/2024 y Genoa 2022).
+- Cargados con el escalón 1 (Versión 586): Parma 2018, 2024 y 2025; Parma 2022 recargado. To-do 175 cerrado.
+
 ## Versión 586 — Escalón "subtotal repetido" en verificar.mjs (to-do 175, escalón 1) (2026-10-08)
 
 - Si la lectura 4 no cierra, se prueba la 4 sin contar el subtotal que tiene el MISMO importe que el renglón inmediato de arriba (es ese

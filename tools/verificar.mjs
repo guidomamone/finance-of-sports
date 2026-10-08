@@ -164,6 +164,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // La señal se queda prendida: cuando el escalón abrió la nota del subtotal, la propuesta siguiente ya no marca la categoría en 0 y, sin
   // esto, la corrida siguiente lo apagaba y la TV volvía a 0 (oscilaba; medido en Bologna 2019-20). La verificación anterior lo anota.
   { const pVf = resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })); try { if (existsSync(pVf)) for (const l of JSON.parse(readFileSync(pVf, 'utf8')).notaSubtotal || []) ladosCero.add(l); } catch { /* sin verificación anterior */ } }
+  let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
   const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -350,14 +351,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // e proventi: 68.086.429" impreso arriba de a), b) y f)). Los de abajo todavía no pasaron: se exige que ninguno tenga nota propia.
           let comp = componentes(arriba); const deAbajo = !comp && (comp = componentes(abajo));
           const sueltos = comp && (deAbajo ? comp.every((x) => !filas.some((h) => h.detalla_a && h.detalla_a.trim() === String(x.etiqueta).trim())) : comp.every((x) => (salidaDe.get(x) || []).length === 1 && String(salidaDe.get(x)[0].origen || '').startsWith('estado')));
-          const cn = ladosCero.has(lado) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
+          // (to-do 175, escalón 2) en la primera pasada, solo un grupo que el estado NO desglosa: 3 renglones o menos y uno de ellos de 20% o
+          // más de los ingresos (Cremonese 2024: "altri" 42,8 + contributi 13,1; Sassuolo: a), b), f)). Un grupo ya desglosado en el estado
+          // (Atalanta 2022/2024 y Genoa 2022: ~9 renglones) no se toca: su nota reparte distinto (Atalanta 2024: la TV 107,5 -> 101,8 M).
+          const forzOk = forzarNotaSub && lado === 'ingreso' && comp && comp.length <= 3 && comp.some((x) => Math.abs(x[campo] || 0) >= 0.2 * totIngForz);
+          const cn = (ladosCero.has(lado) || forzOk) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
           if (cn) {
             if (deAbajo) for (const x of comp) saltar.add(x);
             const quitar = new Set(deAbajo ? [] : comp.flatMap((x) => salidaDe.get(x))); const pos = deAbajo ? out.length : Math.min(...[...quitar].map((x) => out.indexOf(x)));
             for (let i = out.length - 1; i >= 0; i--) if (quitar.has(out[i])) out.splice(i, 1);
             out.splice(pos, 0, ...conLineas(abrirAnidadas(cn.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}" (escalón: la nota del subtotal)` })), campo, 1), comp));
-            if (campo === 'M') notaSubtotalLados.add(lado);
-            const n = `la nota del subtotal "${f.etiqueta}" suma el subtotal impreso (${r6(Math.abs(f[campo] || 0))}): reemplaza a "${comp.map((x) => x.etiqueta).join('" + "')}"`; if (campo === 'M' && !notas.includes(n)) notas.push(n);
+            if (campo === 'M' && !(forzarNotaSub && !ladosCero.has(lado))) notaSubtotalLados.add(lado);
+            const n = `la nota del subtotal "${f.etiqueta}" suma el subtotal impreso (${r6(Math.abs(f[campo] || 0))}): reemplaza a "${comp.map((x) => x.etiqueta).join('" + "')}"`;
+            const destinoN = forzarNotaSub && !ladosCero.has(lado) ? notasNotaSub : notas; if (campo === 'M' && !destinoN.includes(n)) destinoN.push(n);
           }
           continue;
         }
@@ -731,6 +737,32 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // la escalera completa también acá: después de la 4, la base del escalón "subtotal repetido" (Parma 2018, 2024 y 2025 necesitan los dos)
           if (n === 4 && hayRepetido) { const er = evaluar(4, false, fin17, { ing: ing4r, gas: gas4r }); if (er.cierra && er.exacto) { E = er; escalon17 = true; escalonSubRep = true; break; } }
         }
+      }
+    }
+  }
+  // ESCALÓN "renglón grande sin abrir" (to-do 175, escalón 2, aprobado por Guido el 2026-10-08). La nota del subtotal (Versión 578) solo
+  // corría en el camino de error (la propuesta de carga marcó una categoría en 0), y un lump_* apaga esa marca: un renglón agregado del
+  // modelo italiano ("altri" 42,8 M, el 74% de los ingresos de Cremonese 2024) quedaba entero aunque el documento traiga su desglose.
+  // Solo corre si la lectura que ganó deja un renglón de ingresos del estado de 20% o más del total. Propone: la MISMA lectura con la nota
+  // del subtotal abierta del lado de los ingresos. Compuerta: esa lectura cierra igual (exacto si antes era exacto) y el renglón grande se
+  // abrió. No depende de la categorización. Casos: Cremonese 2022 y 2024 (hoy abiertas por el camino de error), Sassuolo 2021 y 2024,
+  // Sampdoria 2018 (abiertos por el reintento pago). No toca Atalanta 2024 ni Parma 2023: su estado ya viene desglosado (ningún renglón
+  // llega al 20%) o su nota no suma el subtotal.
+  let escalonGrande = false;
+  if (E && E.cierra && E.nivel <= 4 && !ladosCero.has('ingreso')) {
+    const totIng = E.ing.reduce((a, f) => a + Math.abs(f.M || 0), 0);
+    const grande = totIng ? E.ing.find((f) => String(f.origen || '').startsWith('estado') && Math.abs(f.M || 0) >= 0.2 * totIng) : null;
+    if (grande) {
+      forzarNotaSub = true; totIngForz = totIng; let ingF; let gasF;
+      try {
+        if (E.nivel >= 4) { ingF = lineasDeLado('ingreso', 'M', true, true, escalonSubRep); gasF = lineasDeLado('gasto', 'M', true, true, escalonSubRep); aplicarAjustesFila(ingF, gasF, false, true); }
+        else if (E.nivel === 3 && otros.length) { ingF = lineasDeLado('ingreso', 'M', true); gasF = lineasDeLado('gasto', 'M', true); aplicarAjustesFila(ingF, gasF, false); }
+        else { ingF = lineasDeLado('ingreso'); gasF = lineasDeLado('gasto'); aplicarAjustesFila(ingF, gasF, false); }
+      } finally { forzarNotaSub = false; }
+      const abrio = !ingF.some((f) => f.linea === grande.linea && String(f.origen || '').startsWith('estado'));
+      if (abrio) {
+        const e = evaluar(E.nivel, false, escalon17 ? fin17 : null, { ing: ingF, gas: gasF });
+        if (e.cierra && (e.exacto || !E.exacto)) { E = e; escalonGrande = true; notaSubtotalLados.add('ingreso'); notas.push(...notasNotaSub, `escalón "renglón grande sin abrir": "${grande.etiqueta}" (L${grande.linea}) era el ${Math.round(100 * Math.abs(grande.M) / totIng)}% de los ingresos; la misma lectura cierra con la nota del subtotal abierta`); }
       }
     }
   }

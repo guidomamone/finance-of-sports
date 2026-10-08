@@ -27,3 +27,6 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   57 de Italia): arregla Inter 2024-25 pero rompe Roma 2018, que hoy carga 68 líneas por una lectura con notas; con el ajuste de terzi
   dentro de la lectura 5, esa gana (no usa totales), la carga baja a 15 líneas y `cargar.mjs` deja de cerrar el resultado. Para Inter alcanza
   como escalón aparte que corre solo si ninguna lectura cerró el resultado (Versión 581).
+- **Abrir con la nota del subtotal todo renglón de ingresos de 20% o más** (to-do 175, escalón 2, medido 2026-10-08 sobre 98 de Italia):
+  cambiaba Atalanta 2022/2024 y Genoa 2022 (cargados), cuyo estado ya viene desglosado en ~9 renglones y la nota reparte distinto (Atalanta
+  2024: TV 107,5 -> 101,8 M; Genoa: el paracadute pasaba a "contributi"). Entró con el grupo de 3 renglones o menos como condición.

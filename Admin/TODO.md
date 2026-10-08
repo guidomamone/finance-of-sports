@@ -214,37 +214,6 @@ ni en el comentario de ningún archivo de código.
     5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
     como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
 
-175. "TELEVISIÓN EN 0" EN ITALIA: UN SUBTOTAL GRANDE SIN ABRIR (cargar.mjs / verificar.mjs). Diagnóstico del 2026-10-08 sobre los 7 frenados
-    (Como 2024, Parma 2018, 2024 y 2025, Sassuolo 2021 y 2024, Sampdoria 2018). En 6 de 7 la televisión SÍ está en el documento, escondida
-    en un renglón agregado del modelo italiano que entra entero como other_income o lump_*:
-    - Parma: "altri" (2018: 8,8 M; 2024 individual: 37,0 M = 82% de los ingresos; 2025 consolidado: 118,9 M = 95%); la nota lo abre
-      ("Proventi da cessione diritti audiovisivi" 2018 L1359 1.499.215; 2024 L1530 16.649.069; 2025 L1168 30.702.866).
-    - Sassuolo: "a) Derivanti da attività accessorie" (2021: 85,2 M; 2024: 52,7 M).
-    - Sampdoria 2018: "a) Altri" 80,0 M.
-    El escalón de la nota del subtotal (Versión 578) solo corre en el REINTENTO (otra pasada paga de localizar y extraer, ~US$ 0,30-0,50 por
-    documento) y solo si la propuesta marcó una categoría en 0; un lump_* lo apaga (to-do 174). DISEÑO (escalón, una compuerta): en la
-    primera pasada, si un renglón other_income/lump_* es más del 20% de los ingresos y el índice de bloques tiene una nota cuyas filas suman
-    ese renglón, abrirlo con esa nota; compuerta: la suma de las filas = el renglón (tolerancia de redondeo). Medir: los 6 de arriba deben
-    abrirse sin reintento; Bologna 2018-19 y Cremonese 2025 (abiertos por reintento) tienen que dar idéntico.
-    - ESCALÓN 1 HECHO (Versión 586): Parma no abría porque "Totale altri ricavi e proventi" repite "altri" (mismo importe, L526/L525 en
-      2025) y se contaba dos veces; ninguna lectura 0-4 cerraba y ganaba la 5 (sin notas). Ahora, si la 4 no cierra, se prueba sin el
-      subtotal repetido: Parma 2018, 2022, 2024 y 2025 cierran por la 4 con la nota abierta; Parma 2023 ya no necesita su ajuste (anulado).
-      FALTA EL ESCALÓN 2 (aprobado por Guido el 2026-10-08): después de elegir la lectura, si un renglón de ingresos es ≥ 20% del total y
-      una nota del subtotal que lo contiene suma exacto, evaluar la misma lectura con la nota abierta; compuerta: cierra igual. Medir:
-      Bologna 2018-19 y Cremonese 2022/2024/2025 idénticos a lo cargado; Sassuolo 2021/2024 y Sampdoria 2018 abiertos en la primera
-      pasada; Atalanta 2024 y Parma 2023 sin cambios.
-    - Resultado del reintento (lote 30, 2026-10-08, US$ 1,19): abrió Sassuolo 2021 (TV 47,4 M), Sassuolo 2024 (17,8 M) y Sampdoria 2018
-      (47,7 M), cargados. En Parma NO abrió: 2018 y 2025 siguen con Televisión en 0, y Parma 2024 sale "lista para cargar" con TV en 0 y
-      "altri" 37,0 M entero (82% de los ingresos) — no se cargó. Mirar por qué el escalón no toma la nota de Parma (L1530 / L1168).
-    - Como 2024 es otro caso: la televisión está impresa como "-" ("e) proventi da cessione diritti televisivi", .md L496, Serie B
-      2023-24); el reintento no va a encontrar nada. Decisión de Guido: ajuste `cero-real` Televisión (el 0 es del documento) o no.
-    - Daño en lo ya cargado: Parma 2022 ("l) Ricavi e proventi diversi" 21,3 M = 66% de los ingresos como other_income). Cremonese 2022 y
-      2024 (ex to-do 174) ya se recargaron abiertos (2026-10-08).
-    - CAMINO SIN REINTENTO PAGO (probado en Bologna 2018-19 y Cremonese 2022/2024): si el renglón grande es lump_*, sacarlo del lump por la
-      cola (`cola.mjs --corregir-categoria`); `cargar.mjs --lista <archivo> --desde-verificacion` (propuesta, no escribe el sitio) deja el
-      .carga.json con Televisión en 0; `verificar.mjs "<pdf>"` abre el renglón con la nota del subtotal, gratis; categorizar las filas nuevas
-      que no tengan precedente y `cargar.mjs --reemplazar --escribir`. El reintento pago del lote no hace falta para esto.
-
 176. ETAPA 4 CON NÚMEROS SIN CONFIRMAR FRENA LA CATEGORIZACIÓN (lote.mjs / validar-bloques.mjs). Con la etapa 6 cerrada, la validación de
     los bloques contra el PDF dejó números sin confirmar y el lote no categoriza: AS Roma 2021 (13 números; la verificación cierra exacto,
     −185.573), Atalanta 2019 (12), Torino 2023 (1). Mirar en Generados/Italia/<Club>/<doc>.validacion.json qué números son y por qué

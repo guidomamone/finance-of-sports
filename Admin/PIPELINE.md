@@ -224,6 +224,9 @@ Mitigaciones:
             (encabezado buscado en el .md, por su número o su nombre fijo) y lo que cuelga de él hasta el 17-bis o el total de C, como
             −|valor|; compuerta: la suma da EXACTO el total de C impreso; después las lecturas 0-6 con ese financiero, gana la primera que
             cierra exacto (Versión 583, to-do 155; caso Torino 2024)
+ ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
+            menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
+            igual (Versión 587, to-do 175; caso Cremonese 2024)
  nada cierra → reintento (una vez) → cola humana
 ```
 
