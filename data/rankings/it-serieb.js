@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie B (IT) — 2 ejercicio(s) con ranking:
+// Serie B (IT) — 3 ejercicio(s) con ranking:
+//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2007: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -13,6 +14,14 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-serieb"] = {
+  2024: {
+    leagueSize: null,
+    clubs: [
+      { id:"cremonese-it", revenue:61.774, reportType:"official_balance_sheet",
+        sourceId:"cremonese-it-bilancio-2024",
+        mix:[["Estadio",1.849],["Fútbol profesional (sin desglosar por la fuente)",45.883],["Otros ingresos",14.043]] },
+    ],
+  },
   2023: {
     leagueSize: null,
     clubs: [

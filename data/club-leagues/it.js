@@ -26,7 +26,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Como (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Como".
   'como-it': { 2025: 'it-seriea' },
   // Cremonese (alta-club.mjs, 2026-10-07): SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (it-seriea): puede haber jugado otra división).
-  'cremonese-it': { 2025: null },
+  'cremonese-it': { 2025: null, 2024: 'it-serieb' }, // 2024: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2023–24 Serie B" (tools/club-league-reference/it.json), coincidencia e
   // Hellas Verona (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Hellas Verona".
   'hellasverona-it': { 2020: 'it-seriea' },
   // Inter (alta-club.mjs, 2026-10-07): verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia única por palabras "Inter Milan" = "Inter".

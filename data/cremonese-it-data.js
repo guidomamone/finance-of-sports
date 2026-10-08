@@ -61,6 +61,17 @@ const cremoneseitRevenueLinesByYear = {
     { rawLabel:'Ricavi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.422299, disclosureLevel:'aggregated' }, // pág. 42, precedente
     { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:0.167072, disclosureLevel:'aggregated' }, // pág. 42, precedente
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Cremonese/Cremonese-bilancio-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Gare di campionato part. In casa 1^ squadra', normalizedCategory:'matchday_competition', amountNative:0.793438, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Abbonamenti stagione sportiva', normalizedCategory:'season_tickets', amountNative:0.689539, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Gare Coppa Italia', normalizedCategory:'matchday_competition', amountNative:0.205408, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Gare amichevoli e altri', normalizedCategory:'matchday_competition', amountNative:0.028564, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'Ricavi tessera tifoso', normalizedCategory:'matchday_competition', amountNative:0.009005, disclosureLevel:'aggregated' }, // pág. 41, ? 0.7
+    { rawLabel:'contributi in conto esercizio', normalizedCategory:'other_income', amountNative:13.111905, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.97
+    { rawLabel:'altri', normalizedCategory:'lump_football_operations', amountNative:42.840695, disclosureLevel:'aggregated' }, // pág. 4, precedente
+  ],
 };
 const cremoneseitExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-07)
@@ -106,6 +117,38 @@ const cremoneseitExpenseLinesByYear = {
     { rawLabel:'Multe gare ed imposte e tasse varie', normalizedCategory:'admin_general_expense', amountNative:-0.085823, disclosureLevel:'aggregated' }, // pág. 46, precedente
     { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-0.109739, disclosureLevel:'aggregated' }, // pág. 46, Jev 0.97
   ],
+  2024: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'6) per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-0.547528, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-2.387364, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Vitto, alloggio e locomozioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.636025, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-0.29139, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Costi per intermediazioni', normalizedCategory:'other_expenses', amountNative:-2.202413, disclosureLevel:'aggregated' }, // pág. 43, precedente
+    { rawLabel:'Servizio biglietteria, ingressi e stewarding', normalizedCategory:'match_organisation_expense', amountNative:-0.407424, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi assicurativi', normalizedCategory:'admin_general_expense', amountNative:-0.081961, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi per servizi da banche e soc finanziarie', normalizedCategory:'admin_general_expense', amountNative:-0.230439, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi per prestazioni al personale', normalizedCategory:'admin_general_expense', amountNative:-0.138521, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi per utenze e spese generali', normalizedCategory:'admin_general_expense', amountNative:-0.691016, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Compensi e rimborsi spese a terzi', normalizedCategory:'admin_general_expense', amountNative:-0.584978, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi per pubblicità e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.032408, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'Costi per manutenzioni e riparazioni', normalizedCategory:'admin_general_expense', amountNative:-0.218416, disclosureLevel:'aggregated' }, // pág. 44, precedente
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-0.632628, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-26.118675, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.52916, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.461971, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-11.276373, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.716795, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-0.832573, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'d) svalutazioni dei crediti compresi nell\'attivo circolante e delle disponibilità liquide', normalizedCategory:'other_expenses', amountNative:-0.02, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Oneri vari da organizzazione competizioni', normalizedCategory:'match_organisation_expense', amountNative:-0.202072, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Tasse iscrizioni campionato e gare', normalizedCategory:'match_organisation_expense', amountNative:-0.23599, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi per acquisizione temporanea calciatori', normalizedCategory:'other_expenses', amountNative:-0.6575, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Minusv. da cessione diritti pluriennali calciatori', normalizedCategory:'exceptional_items', amountNative:-0.00787, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Costi per premi ex-art 103 comma 3 NOIF', normalizedCategory:'player_amortisation', amountNative:-0.4767, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Altri oneri da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-0.28829, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Contributo di solidarietà alla Lega B', normalizedCategory:'match_organisation_expense', amountNative:-1, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Multe gare ed imposte e tasse varie', normalizedCategory:'admin_general_expense', amountNative:-0.10835, disclosureLevel:'aggregated' }, // pág. 46, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-0.066208, disclosureLevel:'aggregated' }, // pág. 46, precedente
+  ],
 };
 const cremoneseitFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 24.755. proventi y oneri con la misma etiqueta 'altri'; el oneri (L190) impreso en positivo; Totale C (L192) (4.261) (to-do 155/156, arreglo manual 2026-10-07),
@@ -130,6 +173,25 @@ const cremoneseitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:57.398341, officialTotalExpenses:65.452619, officialPAT:-6.985407,
   },
+  2024: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'cremonese-it-bilancio-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.048206, tax:-1.547347,
+    extraRows: [
+      {label:'altri', value:0.030856},
+      {label:'altri', value:-0.079062},
+      {label:'imposte correnti', value:-1.547347},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'altri', lado:'revenue', importe:42.840695, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:57.678554, officialTotalExpenses:54.081038, officialPAT:2.001962,
+  },
 };
 const cremoneseitPresupuestoOverlayByYear = {};
 
@@ -153,6 +215,12 @@ Object.assign(sources, {
     title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-07) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'cremonese-it-bilancio-2024': {
+    id:'cremonese-it-bilancio-2024', clubId:'cremonese-it',
+    title:'U.S. Cremonese S.p.A. — Cremonese-bilancio-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
