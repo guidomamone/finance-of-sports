@@ -116,3 +116,5 @@ Se completó 2014/15 a 2023/24:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2021 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2020-21`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2011 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2010-11`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2005 desde `Clubes/Italia/Lazio/Lazio-bilancio-2004-05.pdf` (sourceId `lazio-it-bilancio-2004-05`).
