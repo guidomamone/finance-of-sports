@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.md",
- "generado": "2026-10-08T22:37:00.524Z",
+ "generado": "2026-10-08T23:03:06.490Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2006,
@@ -35,6 +35,11 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2005 de este documento suma ingresos 149.07002; el sitio tiene 149.07002"
+  },
+  {
    "nombre": "documento del año 2007",
    "ok": null,
    "detalle": "ingresos de 2006: 88.658423 en este documento y 0 en Lazio-bilancio-separato-consolidato-2006-07.pdf (columna del año anterior)"
@@ -43,11 +48,6 @@
    "nombre": "documento del año 2005",
    "ok": true,
    "detalle": "ingresos de 2005: 149.07002 en Lazio-bilancio-2004-05.pdf y 149.07002 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2005: este chequeo no se puede hacer"
   }
  ],
  "notas": [
