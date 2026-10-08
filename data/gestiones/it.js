@@ -73,6 +73,10 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://it.wikipedia.org/wiki/Football_Club_Internazionale_Milano', confirmada:true },
   ],
   'lazio-it': [
+    // Cragnotti: dueño de la Lazio entre 1992 y 2003; presidente desde el 12/3/1992 y, en su segundo mandato, de 1998 a 2003 (la fuente da solo los años: 01/01
+    // por convención). Los cierres de 1999, 2000 y 2001 caen en ese tramo; el hueco hasta Lotito (2004) es de Ugo Longo y no tiene cierre cargado.
+    { nombre:'Sergio Cragnotti', corto:'Cragnotti', cargo:'Presidente', desde:'1998-01-01', hasta:'2003-01-01',
+      fuente:'https://it.wikipedia.org/wiki/Sergio_Cragnotti', confirmada:true },
     { nombre:'Claudio Lotito', corto:'Lotito', cargo:'Presidente', desde:'2004-06-19', hasta:null,
       fuente:'https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio', confirmada:true },
   ],

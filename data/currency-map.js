@@ -86,6 +86,9 @@ const CURRENCY_META = {
   // fijada al euro (ERM II, tasa central 7,46038 DKK = 1 EUR desde 1982) y el equivalente en USD
   // queda en el mismo orden que EUR/GBP/BRL — scale:1, mismo criterio.
   DKK: { scale: 1, unitSuffix: 'M' },          // Dinamarca
+  // Italia antes del euro (Lazio 1998-99 a 2000-01, Versión 607): la lira rondaba ~1.800-2.300 ITL por USD, mismo orden que ARS/CLP/COP: los
+  // documentos reportan en MILLONES de liras (ej. 154.031 = 154.031 millones) y eso se lee como "154 mil M". scale:1000, mismo criterio que ARS.
+  ITL: { scale: 1000, unitSuffix: 'mil M' },   // Italia (lira, hasta 2001)
 };
 
 // Fallback para cualquier código ISO sin entrada propia todavía: nunca
@@ -349,6 +352,10 @@ const FX_CLOSE = {
   'EUR@2007-06-30': { fx: 0.740466, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2007-06-29, 2007-06-30 no es día hábil)' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2009-06-30': { fx: 0.707514, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2009-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2010-06-30': { fx: 0.81493, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2010-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
+  // Italia antes del euro (Versión 607, Lazio en liras): ITL por 1 USD = 1.936,27 (paridad fija con el euro, Reglamento CE 2866/98) x EUR por USD de la serie del BCE.
+  'ITL@1999-06-30': { fx: 1874.78, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 1,0328 USD, tipo de referencia del BCE al 30/06/1999' },
+  'ITL@2000-06-30': { fx: 2026.23, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 0,9556 USD, tipo de referencia del BCE al 30/06/2000' },
+  'ITL@2001-06-30': { fx: 2283.34, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 0,848 USD, tipo de referencia del BCE al 29/06/2001 (el 30/6/2001 fue sábado: cierre del viernes 29/6)' },
   'EUR@2003-06-30': { fx: 0.87512, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2003-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2004-06-30': { fx: 0.822707, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2004-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)
   'EUR@2005-06-30': { fx: 0.826993, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2005-06-30' }, // tools/cargar.mjs 2026-10-03 (tools/fx-reference/)

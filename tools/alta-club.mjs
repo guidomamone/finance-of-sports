@@ -1089,6 +1089,10 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // Moneda del ejercicio
   if (ov.moneda && pais && ov.moneda.valor === pais.moneda && estadoMoneda === 'pregunta') { moneda = pais.moneda; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `claude-api con cita verificada: ${ov.moneda.fuente}`; }
+  // (Versión 607) AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
+  // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
+  { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
+    if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
   E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
 
   // Tipo de cambio

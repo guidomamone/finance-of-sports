@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-1998-99.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-1998-99.md",
- "generado": "2026-10-08T18:56:46.472Z",
- "estado": "cola",
+ "generado": "2026-10-08T20:38:25.890Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 1999,
  "escala": {
@@ -11,10 +11,29 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "3d8085a"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-1998-99.pdf",
+   "campo": "moneda",
+   "valor": "ITL",
+   "linea": null,
+   "motivo": "Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-1998-99.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,7 +58,7 @@
   {
    "nombre": "documento del año 2000",
    "ok": true,
-   "detalle": "ingresos de 1999: 249135.846781 en este documento y 249135.590112 en Lazio-bilancio-1999-00.pdf (columna del año anterior)"
+   "detalle": "ingresos de 1999: 249135.846781 en este documento y 249135.846781 en Lazio-bilancio-1999-00.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
