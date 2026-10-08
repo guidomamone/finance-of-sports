@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 607 — Lazio 1998-99, 1999-00 y 2000-01 cargados en liras (ITL) (2026-10-08)
+
+- Decisión de Guido: los ejercicios anteriores al euro se cargan en su moneda. Pieza nueva en el pipeline: ajuste manual `moneda` (valor = moneda legado del país), escalón 0 de la pregunta de la
+  moneda en `alta-club.mjs` y excepción en la compuerta `moneda` de `cargar.mjs` (sin el ajuste frena como siempre). `data/currency-map.js`: `ITL` en `CURRENCY_META` (escala "mil M",
+  `euroFijo: 1936.27`) y `ITL@1999-06-30`, `ITL@2000-06-30` e `ITL@2001-06-30` en `FX_CLOSE` (1.936,27 x el EUR por USD de la serie del BCE; el 30/6/2001 fue sábado, se usó el 29).
+  `js/finanzas-calc.js` `toDisplayValue`: única excepción al puente por USD, una moneda legado con `euroFijo` se muestra en EUR por su paridad fija (sin eso el club que reporta en EUR
+  mostraba 249.135 M EUR). Ajustes manuales de los tres documentos: `moneda` ITL, `perimetro` individual (solo traen el bilancio d'esercizio) y, en 1999-00, `anio` 2000 y `cierre` 2000-06-30.
+  Gestión de Sergio Cragnotti en `data/gestiones/it.js` (1998 a 2003). Resultado cargado igual al impreso: 2.580,6, 363,4 y −77.909,3 millones de liras (128,7, 177,3 y 172,8 M EUR de ingresos). En el
+  sitio: 132,9, 169,5 y 146,5 M USD. `auditAll()`: 1.484 checks, 0 advertencias de tipo de cambio, 3 "no cierran" (los de siempre). `ASSET_V` 557.
+
 ## Versión 606 — Lote 44 completo: las 6 preguntas resueltas a mano y guardadas (2026-10-08)
 
 - AC Milan 2021 (`cero-real` de Estadio: puertas cerradas por el Covid), Fiorentina 2019, Genoa 2025, Hellas Verona 2024 y Parma 2017 (respuestas de categoría en la cola, que

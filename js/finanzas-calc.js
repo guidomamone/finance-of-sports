@@ -132,6 +132,11 @@
     if(meta.currency === targetCurrency) return value / curScale;
     if(targetCurrency === 'USD') return meta.currency === 'USD' ? value : value / meta.fx;
     if(meta.currency === 'USD') return (value * meta.fx) / currencyMetaFor(targetCurrency).scale;
+    // ÚNICA excepción al puente por USD (Versión 607, Lazio 1998-99 a 2000-01 en liras): una moneda LEGADO del euro (CURRENCY_META[code].euroFijo, ITL) se
+    // muestra en EUR por su paridad fija legal, que es exacta y no depende de la fecha. Sin esto el club que reporta en EUR mostraba los millones de liras
+    // como si fueran millones de euros (249.135 M EUR) al elegir EUR.
+    const fijo = currencyMetaFor(meta.currency).euroFijo;
+    if(targetCurrency === 'EUR' && fijo) return (value / fijo) / currencyMetaFor('EUR').scale;
     // No debería llegar acá bajo el invariante de arriba (targetCurrency no es ni meta.currency ni
     // 'USD', y meta.currency tampoco es 'USD'): devolver el valor crudo, sin re-escalar a ciegas, es
     // más seguro que inventar una conversión no soportada.

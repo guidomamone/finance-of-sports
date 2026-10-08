@@ -88,7 +88,9 @@ const CURRENCY_META = {
   DKK: { scale: 1, unitSuffix: 'M' },          // Dinamarca
   // Italia antes del euro (Lazio 1998-99 a 2000-01, Versión 607): la lira rondaba ~1.800-2.300 ITL por USD, mismo orden que ARS/CLP/COP: los
   // documentos reportan en MILLONES de liras (ej. 154.031 = 154.031 millones) y eso se lee como "154 mil M". scale:1000, mismo criterio que ARS.
-  ITL: { scale: 1000, unitSuffix: 'mil M' },   // Italia (lira, hasta 2001)
+  // euroFijo = unidades de la moneda legado por 1 EUR (paridad irrevocable del 31/12/1998, Reglamento CE 2866/98): con ella toDisplayValue muestra en EUR un
+  // ejercicio de esa moneda sin necesitar un tipo de cambio de mercado (es una conversión legal exacta, no una cotización).
+  ITL: { scale: 1000, unitSuffix: 'mil M', euroFijo: 1936.27 },   // Italia (lira, hasta 2001)
 };
 
 // Fallback para cualquier código ISO sin entrada propia todavía: nunca
