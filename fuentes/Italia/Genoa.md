@@ -45,3 +45,5 @@ El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna
 - **Color de marca**: `#AB131C` (rojo) — colores sociales "rosso e blu, in quest'ordine": el rojo va primero (it.wikipedia, Genoa_Cricket_and_Football_Club). Reemplaza al `#002942` (azul) anotado el 2026-10-06, que era solo una propuesta no cargada; decidido en el alta, 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf` (sourceId `genoa-it-bilancio-31-12-2022-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf` (sourceId `genoa-it-bilancio-30-06-2025-individual`).

@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
-//   2025: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -63,6 +63,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"udinese-it", revenue:166.075, reportType:"official_balance_sheet",
         sourceId:"udinese-it-bilancio-2024-25",
         mix:[["Comercial / Sponsors",12.467],["Estadio",11.017],["Televisión",43.314],["Venta de Jugadores",88.163],["Otros ingresos",11.115]] },
+      { id:"genoa-it", revenue:141.208, reportType:"official_balance_sheet",
+        sourceId:"genoa-it-bilancio-30-06-2025-individual",
+        mix:[["Comercial / Sponsors",7.927],["Estadio",9.441],["Televisión",51.537],["Venta de Jugadores",64.983],["Otros ingresos",7.32]] },
       { id:"hellasverona-it", revenue:119.073, reportType:"official_balance_sheet",
         sourceId:"hellasverona-it-bilancio-individuale-2025",
         mix:[["Comercial / Sponsors",17.599],["Estadio",6.463],["Televisión",39.21],["Venta de Jugadores",48.631],["Otros ingresos",7.17]] },

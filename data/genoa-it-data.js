@@ -49,6 +49,23 @@ const genoaitRevenueLinesByYear = {
     { rawLabel:'i) altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:9.235531, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.94
     { rawLabel:'l) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:15.282877, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Gare campionato', normalizedCategory:'matchday_competition', amountNative:1.397559, disclosureLevel:'aggregated' }, // pág. 89, precedente
+    { rawLabel:'Gare coppa italia', normalizedCategory:'matchday_competition', amountNative:0.686154, disclosureLevel:'aggregated' }, // pág. 89, precedente
+    { rawLabel:'Altre gare', normalizedCategory:'matchday_competition', amountNative:0.02, disclosureLevel:'aggregated' }, // pág. 89, Jev 0.95
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:5.951414, disclosureLevel:'aggregated' }, // pág. 89, precedente
+    { rawLabel:'Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:3.690013, disclosureLevel:'aggregated' }, // pág. 90, precedente
+    { rawLabel:'Proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:1.589868, disclosureLevel:'aggregated' }, // pág. 90, precedente
+    { rawLabel:'Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:3.2, disclosureLevel:'aggregated' }, // pág. 90, Jev 1
+    { rawLabel:'Proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.973421, disclosureLevel:'aggregated' }, // pág. 90, precedente
+    { rawLabel:'Proventi da cessione diritti televisivi', normalizedCategory:'broadcasting', amountNative:43.971312, disclosureLevel:'aggregated' }, // pág. 90, Jev 1
+    { rawLabel:'Ricavi da cessione temporanea prestazioni calciatori (prestiti)', normalizedCategory:'player_sales', amountNative:7.10925, disclosureLevel:'aggregated' }, // pág. 90, precedente
+    { rawLabel:'Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'player_sales', amountNative:20.783273, disclosureLevel:'aggregated' }, // pág. 90, Jev 0.99
+    { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:27.550635, disclosureLevel:'aggregated' }, // pág. 90, precedente
+    { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:2.555824, disclosureLevel:'aggregated' }, // pág. 90, Jev 0.98
+  ],
 };
 const genoaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-08)
@@ -82,6 +99,40 @@ const genoaitExpenseLinesByYear = {
     { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-6.855563, disclosureLevel:'aggregated' }, // pág. 86, Claude 0.92
     { rawLabel:'Altri (Sopravvenienze Passive)', normalizedCategory:'exceptional_items', amountNative:-15.049305, disclosureLevel:'aggregated' }, // pág. 86, Jev 0.93
   ],
+  2025: [ // tools/cargar.mjs (2026-10-08)
+    { rawLabel:'Materiale sportivo e indumenti', normalizedCategory:'other_expenses', amountNative:-0.577127, disclosureLevel:'aggregated' }, // pág. 92, Claude 0.8
+    { rawLabel:'Altro', normalizedCategory:'other_expenses', amountNative:-0.062526, disclosureLevel:'aggregated' }, // pág. 92, Jev 0.95
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-0.042989, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-1.068111, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-2.587433, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-3.234511, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Servizio biglietteria, controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.361716, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Costi di Service', normalizedCategory:'admin_general_expense', amountNative:-2.351457, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.211906, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Amministrative, pubblicitarie e generali', normalizedCategory:'admin_general_expense', amountNative:-2.764119, disclosureLevel:'aggregated' }, // pág. 92, precedente
+    { rawLabel:'Commissioni Varie', normalizedCategory:'admin_general_expense', amountNative:-6.994497, disclosureLevel:'aggregated' }, // pág. 92, Jev 0.94
+    { rawLabel:'8) per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-2.164129, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-57.169719, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-4.563761, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.670351, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'a) ammortamento delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-52.967396, disclosureLevel:'aggregated' }, // pág. 12, Claude 0.93
+    { rawLabel:'b) ammortamento delle immobilizzazioni materiali', normalizedCategory:'depreciation', amountNative:-0.137598, disclosureLevel:'aggregated' }, // pág. 12, Jev 1
+    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:-0.235646, disclosureLevel:'aggregated' }, // pág. 12, Jev 1
+    { rawLabel:'12) accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-1.35, disclosureLevel:'aggregated' }, // pág. 12, precedente
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.655144, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.004, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Oneri specifici verso squadre ospitate', normalizedCategory:'match_organisation_expense', amountNative:-0.325994, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'Costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-2.9436, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'exceptional_items', amountNative:-0.478715, disclosureLevel:'aggregated' }, // pág. 95, Jev 1
+    { rawLabel:'Costi valorizzazione calciatori', normalizedCategory:'player_amortisation', amountNative:-0.035064, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Contributo di solidarietà', normalizedCategory:'player_amortisation', amountNative:-0.054527, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Premio alla carriera ex art. 99 bis N.O.I.F.', normalizedCategory:'wages_squad', amountNative:-0.030536, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Spese, ammende e multe gare', normalizedCategory:'other_expenses', amountNative:-0.186114, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Oneri lega', normalizedCategory:'match_organisation_expense', amountNative:-2.015683, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.767126, disclosureLevel:'aggregated' }, // pág. 95, precedente
+    { rawLabel:'Altri (Sopravvenienze Passive)', normalizedCategory:'exceptional_items', amountNative:-0.882583, disclosureLevel:'aggregated' }, // pág. 95, precedente
+  ],
 };
 const genoaitFiscalYearMeta = {
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (5.297.416). pág. 10 transcripta sin tabla: importes sin etiqueta (cola 3560b84)
@@ -110,6 +161,28 @@ const genoaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:84.663638, officialTotalExpenses:132.986472, officialPAT:-61.728621,
   },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): name = Genoa Cricket and Football Club S.p.A.. Guido 2026-10-07: la sociedad que juega (perímetro individual)
+  2025: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'genoa-it-bilancio-30-06-2025-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.586783, tax:-0.299043,
+    extraRows: [
+      {label:'b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni', value:0.04725},
+      {label:'c) da titoli iscritti nell\'attivo circolante che non costituiscono partecipazioni', value:0.013119},
+      {label:'da imprese controllanti', value:0.060708},
+      {label:'altri', value:1.55124},
+      {label:'altri', value:-7.194827},
+      {label:'17-bis) utili e perdite su cambi', value:-0.064273},
+      {label:'imposte correnti', value:-0.299043},
+      {label:'imposte relative a esercizi precedenti', value:0},
+      {label:'proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:120.478723, officialTotalExpenses:146.53278, officialPAT:-33.301181,
+  },
 };
 const genoaitPresupuestoOverlayByYear = {};
 
@@ -133,6 +206,12 @@ Object.assign(sources, {
     title:'Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2022-individual (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'genoa-it-bilancio-30-06-2025-individual': {
+    id:'genoa-it-bilancio-30-06-2025-individual', clubId:'genoa-it',
+    title:'Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2025-individual (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
