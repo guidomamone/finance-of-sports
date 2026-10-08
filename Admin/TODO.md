@@ -164,11 +164,13 @@ ni en el comentario de ningún archivo de código.
     midiendo los 163): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el .md fuera del alcance del escalón 2; (b) la rama
     filaTotal no acepta líneas fuera del total que vienen de una nota; (c) sacar la fila total de las hojas antes de sumar.
 
-168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). Primera parte hecha (Versión 592): el resultado impreso en una tabla de una fila
-    pegada al estado ya se lee (Napoli 2021 y 2022). Queda el estado INCOMPLETO cuando el .md lo parte en tablitas o en texto con layout:
-    Inter 2019-20 (corta en L910; el resultado está en L912 y L918), Hellas Verona 2023 (huecos: 11) L357, 12) L360 y la sección C
-    L387-L395), Monza 2023 (tabla cortada en el salto de página, b39/b40). DISEÑO: extender el estado a los bloques consecutivos hasta
-    "Utile (perdita) dell'esercizio"; compuerta: con ellos, ingresos − gastos ± financiero ± impuesto = ese resultado exacto.
+168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Primera parte hecha (Versión 592): el
+    resultado impreso en una tabla de una fila pegada al estado ya se lee (Napoli 2021 y 2022). Queda el estado INCOMPLETO cuando el .md lo
+    parte en tablitas o en texto con layout: Inter 2019-20 (corta en L910; el resultado, "Perdita d'esercizio", en L912 y L918), Hellas Verona
+    2023 (huecos: 11) L357, 12) L360 y la sección C L387-L395), Monza 2023 (tabla cortada en el salto de página, b39/b40). Los tres están
+    cargados y en "ok" (Inter 2019-20: pérdida −102.393.789, igual al impreso). CUÁNDO HACERLO: un documento sin cargar con este patrón que frene.
+    DISEÑO: extender el estado a los bloques consecutivos hasta el resultado del ejercicio; compuerta: con ellos, ingresos − gastos ± financiero
+    ± impuesto = ese resultado exacto.
 
 169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08): todos los
     documentos de abajo ya están cargados y cierran con sus ajustes (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13,
@@ -224,3 +226,9 @@ ni en el comentario de ningún archivo de código.
     fiscalYearStart 01-01: 2018 se muestra "2018" y es 17/18). Un ejercicio de menos de 12 meses no se carga: Atalanta 2022 (1/1 al 30/6/2022) se
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
+
+178. PARTIR EL CHANGELOG (Admin/CHANGELOG.md). Pesa 724 KB y 7.139 líneas; cada sesión agrega entradas arriba y buscar algo lleva a abrir un archivo
+    enorme. Pedido de Guido, 2026-10-08. DISEÑO: dejar en Admin/CHANGELOG.md las versiones recientes (por ejemplo las últimas 100) y mover el resto a
+    Admin/Archive/ en partes por rango de versiones (CHANGELOG-v010-v300.md, etc.), cada una con un banner que diga de qué versiones es. Después
+    ajustar las referencias (CLAUDE.md, las skills, ESTADO.md y el encabezado del propio CHANGELOG, que explica qué contiene). Lo mismo vale
+    para Admin/finance-of-sports-project.md (520 KB) si Guido lo quiere.
