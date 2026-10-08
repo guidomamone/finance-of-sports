@@ -22,7 +22,7 @@
 //   2010: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2009: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2006: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2006: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2005: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2004: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2003: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -516,6 +516,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:333.137, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2005-06",
         mix:[["Comercial / Sponsors",70.26],["Estadio",21.097],["Televisión",177.089],["Premios por competencias",24.047],["Venta de Jugadores",7.539],["Otros ingresos",33.105]] },
+      { id:"lazio-it", revenue:112.712, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-progetto-bilancio-2005-06-mirror-sslaziofans",
+        mix:[["Comercial / Sponsors",20.654],["Estadio",11.653],["Televisión",40.728],["Venta de Jugadores",0.004],["Otros ingresos",39.673]] },
     ],
   },
   2005: {
