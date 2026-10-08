@@ -62,3 +62,5 @@ La página `inter.it/it/club/club-transparency` (no solo `investor-relations`) l
 - **2017/18** (italiano, partes unidas, 66 págs, **escaneado, sin capa de texto**): `https://www.inter.it/media/jpg/img2017/club-transparency/2017-18/Gruppo_FC_Internazionale_Milano_{Nota_Integrativa|Relazione_sulla_Gestione_e_Schemi_di_Bilancio|Rendiconto_Finanziario|Relazione_Collegio_Sindacale|Relazione_Societ%C3%A0_di_Revisione}.pdf` -> `Inter-fascicolo-bilancio-consolidato-2017-18.pdf`.
 - **Sin encontrar**: 2016/17 y antes (la página no lista nada anterior a 2017-18). Los `Appendix 1 ... Annual Financial Statements` de 2018/2019/2021 en `inter.it/media/downloads/` son de **Inter Media and Communication S.p.A.** (subsidiaria del bond), NO del grupo: no se bajaron.
 - **2025/26**: el CdA aprobó el proyecto el 2026-09-24 (utile 22,7 M, ricavi 518 M; asamblea a mediados de octubre); el fascicolo todavía no está publicado. Revisar a partir de noviembre.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2018-19`).

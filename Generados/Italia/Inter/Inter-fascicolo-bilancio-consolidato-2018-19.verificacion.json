@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md",
- "generado": "2026-10-08T20:03:01.953Z",
+ "generado": "2026-10-08T20:27:59.049Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2019,
@@ -11,13 +11,28 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf",
+   "campo": "fila",
+   "valor": "7.147.379",
+   "linea": 795,
+   "etiqueta": "4) Capitalizzazione costi vivaio",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 795,
+   "motivo": "Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso)",
+   "evidencia": "pág. 47 del visor, .md L795 y L2307-L2314",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "417.079137 = 417.080234"
+   "detalle": "417.079516 = 417.080234"
   },
   {
    "nombre": "total de gastos",
@@ -48,6 +63,7 @@
  "notas": [
   "la nota de \"7) Per servizi\" no suma el renglón (56.054 contra 56.054442, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) salari e stipendi\" no suma el renglón (156.098 contra 174.905831, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"4) Capitalizzazione costi vivaio\" (ingreso) 7.147.379, en lugar de la fila de L795 (2026-10-08, Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso))",
   "duda de localizar confirmada por las sumas (columna, \"Totale\"): ¿El cuadro de costi per materie prime (b44), cuyo encabezado dice dos veces '12 mesi al 30.06.2018', tiene en la primera columna los importes del ejercicio 2019?",
   "duda de localizar que no afecta la carga: Es un detalle por jugador y no desglosa por categoría.",
   "duda de extraer confirmada por las sumas (columna, \"6) Per materie prime, sussidiarie, di consumo\"): ¿Se carga la nota b44 (L2386-L2390) como ejercicio 2019 pese a que su encabezado L2384 dice '12 mesi al 30.06.2018' en ambas columnas?",
@@ -81,7 +97,7 @@
   }
  ],
  "totales": {
-  "ingresos": 417.079137,
+  "ingresos": 417.079516,
   "gastos": 428.182238,
   "financiero": -29.218575,
   "impuesto": -8.06666,
@@ -188,62 +204,6 @@
    "origen": "nota que desglosa \"e) altri diversi\""
   },
   {
-   "etiqueta": "Compensi e premi allenatori",
-   "lado": "otro",
-   "M": 3.611,
-   "pagina": 47,
-   "linea": 2307,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "INPS - ENPALS - allenatori",
-   "lado": "otro",
-   "M": 0.949,
-   "pagina": 47,
-   "linea": 2308,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "Indennità fine carriera allenatori",
-   "lado": "otro",
-   "M": 0.184,
-   "pagina": 47,
-   "linea": 2309,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "Assistenza sanitaria",
-   "lado": "otro",
-   "M": 0.014,
-   "pagina": 47,
-   "linea": 2310,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "Gestione pensionato",
-   "lado": "otro",
-   "M": 0.859,
-   "pagina": 47,
-   "linea": 2311,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "Utilizzo impianti",
-   "lado": "otro",
-   "M": 1.317,
-   "pagina": 47,
-   "linea": 2312,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
-   "etiqueta": "Vitto e alloggio - Gare",
-   "lado": "otro",
-   "M": 0.213,
-   "pagina": 47,
-   "linea": 2313,
-   "origen": "nota que desglosa \"4) Capitalizzazione costi vivaio\""
-  },
-  {
    "etiqueta": "a) contributi in conto esercizio",
    "lado": "ingreso",
    "M": 4.28444,
@@ -330,6 +290,14 @@
    "pagina": 14,
    "linea": 808,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "4) Capitalizzazione costi vivaio",
+   "lado": "ingreso",
+   "M": 7.147379,
+   "pagina": 14,
+   "linea": 795,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Materiale tecnico",
