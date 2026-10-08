@@ -96,22 +96,6 @@ const atalantaitRevenueLinesByYear = {
     { rawLabel:'Proventi diversi settore giovanile', normalizedCategory:'youth_football', amountNative:0.135651, disclosureLevel:'aggregated' }, // pág. 36, precedente
     { rawLabel:'Contributi c/impianto', normalizedCategory:'other_income', amountNative:0.00373, disclosureLevel:'aggregated' }, // pág. 36, precedente
   ],
-  // 2022: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-  // Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
-  2022: [
-    { rawLabel:'a) ricavi da gare', normalizedCategory:'matchday_competition', amountNative:5.079167, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'b) abbonamenti', normalizedCategory:'season_tickets', amountNative:1.046178, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'c) altri ricavi delle vendite e delle prestazioni', normalizedCategory:'other_income', amountNative:1.419913, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'4) Incrementi di immobilizzazioni per lavori interni', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'b) proventi da sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:11.851101, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'d) proventi commerciali e royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.281041, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'e) proventi da cessione diritti audiovisivi e non audiovisivi', normalizedCategory:'broadcasting', amountNative:37.613351, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'f) ricavi da cessione temporanea prestazioni calciatori', normalizedCategory:'player_sales', amountNative:6.000228, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'g) plusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:44.231273, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'- premi e/o indennizzi attivi ex art.103, comma 3, NOIF', normalizedCategory:'other_income', amountNative:8.438881, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'- proventi diversi da trasferimento diritti calciatori', normalizedCategory:'player_sales', amountNative:0.51363, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'i) ricavi e proventi diversi', normalizedCategory:'other_income', amountNative:3.834977, disclosureLevel:'aggregated' }, // pág. 8, precedente
-  ],
   // 2025: cargado por tools/cargar.mjs (2026-10-08) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2025: [
@@ -296,61 +280,6 @@ const atalantaitExpenseLinesByYear = {
     { rawLabel:'Perdite su crediti', normalizedCategory:'other_expenses', amountNative:-0.039245, disclosureLevel:'aggregated' }, // pág. 40, precedente
     { rawLabel:'Abbuoni e arrotondamenti passivi', normalizedCategory:'other_expenses', amountNative:-0.000583, disclosureLevel:'aggregated' }, // pág. 40, precedente
   ],
-  2022: [ // tools/cargar.mjs (2026-10-08)
-    { rawLabel:'Acquisto materiali vari e di consumo', normalizedCategory:'admin_general_expense', amountNative:-0.632432, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Acquisto divise dipendenti', normalizedCategory:'admin_general_expense', amountNative:-0.496713, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Acquisto materiale pubblicitario e promozionale', normalizedCategory:'admin_general_expense', amountNative:-0.072785, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Acquisto medicinali', normalizedCategory:'admin_general_expense', amountNative:-0.001186, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Sconti e abbuoni su acquisti', normalizedCategory:'other_expenses', amountNative:0.006931, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Compensi a terzi', normalizedCategory:'admin_general_expense', amountNative:-6.102998, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Spese Pubblicitarie', normalizedCategory:'admin_general_expense', amountNative:-1.193559, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-1.777904, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Spese Amministrative e generali serv.', normalizedCategory:'admin_general_expense', amountNative:-1.399113, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Altri costi per servizi', normalizedCategory:'admin_general_expense', amountNative:-0.571925, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Costi vitto - alloggio - locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.588342, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Servizio biglietteria/controllo ingressi', normalizedCategory:'match_organisation_expense', amountNative:-0.093137, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Manutenzioni e riparazioni', normalizedCategory:'admin_general_expense', amountNative:-0.725584, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Costi per utenze', normalizedCategory:'admin_general_expense', amountNative:-0.498593, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-0.455718, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-0.257523, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Locazioni impianti sportivi', normalizedCategory:'match_organisation_expense', amountNative:-0.011994, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Noleggi e locazioni varie', normalizedCategory:'other_expenses', amountNative:-0.499208, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'Locazioni immobiliari', normalizedCategory:'admin_general_expense', amountNative:-0.112743, disclosureLevel:'aggregated' }, // pág. 36, precedente
-    { rawLabel:'a) salari e stipendi', normalizedCategory:'wages_squad', amountNative:-37.646309, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'b) oneri sociali', normalizedCategory:'wages_squad', amountNative:-1.99216, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'c) trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.414104, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'e) altri costi', normalizedCategory:'wages_squad', amountNative:-4.564311, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'Amm. Diritti pluriennali alle prestazioni dei calciatori', normalizedCategory:'player_amortisation', amountNative:-28.353943, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Costi capitalizzati vivaio', normalizedCategory:'other_amortisation', amountNative:-0.959033, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Altre Immobilizzazioni', normalizedCategory:'other_amortisation', amountNative:-0.350455, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Immobili strumentali', normalizedCategory:'depreciation', amountNative:-0.865314, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Impianti specifici', normalizedCategory:'depreciation', amountNative:-0.124135, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Automezzi e autovetture', normalizedCategory:'depreciation', amountNative:-0.001576, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Attrezzatura generica', normalizedCategory:'depreciation', amountNative:-0.086075, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Mobili macchine d\'ufficio', normalizedCategory:'depreciation', amountNative:-0.088812, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Macchine d\'ufficio elettroniche', normalizedCategory:'depreciation', amountNative:-0.010835, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'Amm. Altri beni sociali', normalizedCategory:'depreciation', amountNative:-0.001168, disclosureLevel:'aggregated' }, // pág. 38, precedente
-    { rawLabel:'c) altre svalutazioni delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-4.299805, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'d) svalutazione crediti compresi nell\'attivo circolante e disp. liquide', normalizedCategory:'other_expenses', amountNative:-0.077793, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:0.161362, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'12) Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.115299, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'Spese varie organizzazioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.821258, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.99
-    { rawLabel:'Tasse iscrizione F.I.G.C.', normalizedCategory:'match_organisation_expense', amountNative:-0.027527, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.97
-    { rawLabel:'Ammende - multe gare', normalizedCategory:'other_expenses', amountNative:-0.09125, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'b) costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-0.517491, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'c) minusvalenze da cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'- premi e/o indennizzi passivi ex art.103, comma 3, NOIF', normalizedCategory:'player_amortisation', amountNative:-2.014135, disclosureLevel:'aggregated' }, // pág. 8, precedente
-    { rawLabel:'Oneri diversi campagna trasferimenti', normalizedCategory:'other_expenses', amountNative:-0.35, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.98
-    { rawLabel:'Premi di preparazione ex art. 96 N.O.I.F.', normalizedCategory:'player_amortisation', amountNative:-0.008035, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.97
-    { rawLabel:'Sell on fee passivo', normalizedCategory:'other_expenses', amountNative:-3.02765, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.92
-    { rawLabel:'Omaggi', normalizedCategory:'admin_general_expense', amountNative:-0.036659, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'Imposte e tasse varie', normalizedCategory:'admin_general_expense', amountNative:-0.229387, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'Altri costi diversi di gestione', normalizedCategory:'other_expenses', amountNative:-0.091401, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'Perdite su crediti', normalizedCategory:'other_expenses', amountNative:-0.000976, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'Sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.281064, disclosureLevel:'aggregated' }, // pág. 39, precedente
-    { rawLabel:'Percentuale squadre ospiti', normalizedCategory:'match_organisation_expense', amountNative:-0.039159, disclosureLevel:'aggregated' }, // pág. 39, Jev 0.98
-    { rawLabel:'Contributi Lega Calcio', normalizedCategory:'match_organisation_expense', amountNative:-0.375, disclosureLevel:'aggregated' }, // pág. 39, precedente
-  ],
   2025: [ // tools/cargar.mjs (2026-10-08)
     { rawLabel:'6) per materie prime, sussidiarie, di consumo e merci', normalizedCategory:'other_expenses', amountNative:-5.008868, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.97
     { rawLabel:'7) per servizi', normalizedCategory:'admin_general_expense', amountNative:-36.715169, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
@@ -496,27 +425,6 @@ const atalantaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:241.997996, officialTotalExpenses:164.313841, officialPAT:51.738249,
   },
-  2022: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'EUR', fxRef:'EUR@2022-06-30',
-    sourceId:'atalanta-it-bilancio-consolidato-2022',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.391444, tax:-5.365499,
-    extraRows: [
-      {label:'- da altri', value:0.137738},
-      {label:'- verso altri', value:-0.527019},
-      {label:'- utili (perdite) su cambi realizzate', value:-0.002163},
-      {label:'- utili (perdite) su cambi da valutazione', value:0},
-      {label:'a) imposte correnti', value:-8.109259},
-      {label:'b) imposte anni precedenti', value:0.091239},
-      {label:'c) oneri/(proventi) da adesione consolidato fiscale', value:0.778125},
-      {label:'d) imposte differite', value:1.432496},
-      {label:'e) imposte anticipate', value:0.4419},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:120.30974, officialTotalExpenses:102.904219, officialPAT:11.367514,
-  },
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 4.000. rettifiche D) impresas en negativo = costo; Risultato prima delle imposte 58.571.254 = 59.105.997 - 530.743 - 4.000
   2025: { // tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'EUR', fxRef:'EUR@2025-06-30',
@@ -594,12 +502,6 @@ Object.assign(sources, {
     title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
-  },
-  'atalanta-it-bilancio-consolidato-2022': {
-    id:'atalanta-it-bilancio-consolidato-2022', clubId:'atalanta-it',
-    title:'Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2022 (ejercicio 2022)',
-    type:'official_balance_sheet', reliability:'primary',
-    note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
   'atalanta-it-bilancio-consolidato-2025': {
     id:'atalanta-it-bilancio-consolidato-2025', clubId:'atalanta-it',

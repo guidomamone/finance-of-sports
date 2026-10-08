@@ -7,7 +7,7 @@
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -150,9 +150,6 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:167.378, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2021-22",
         mix:[["Comercial / Sponsors",26.75],["Estadio",10.936],["Televisión",88.976],["Venta de Jugadores",26.888],["Otros ingresos",13.828]] },
-      { id:"atalanta-it", revenue:124.971, reportType:"official_balance_sheet",
-        sourceId:"atalanta-it-bilancio-consolidato-2022",
-        mix:[["Comercial / Sponsors",12.602],["Estadio",6.363],["Televisión",39.071],["Venta de Jugadores",52.711],["Otros ingresos",14.224]] },
       { id:"torino-it", revenue:120.253, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2022",
         mix:[["Comercial / Sponsors",13.439],["Estadio",4.775],["Televisión",56.154],["Venta de Jugadores",41.786],["Otras secciones deportivas",0.002],["Otros ingresos",4.096]] },

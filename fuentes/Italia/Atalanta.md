@@ -38,7 +38,7 @@ Ninguna. Serie completa desde el primer ejercicio exigido por el manual UEFA vig
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.pdf` (sourceId `atalanta-it-bilancio-consolidato-2020`).
 
-- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.pdf` (sourceId `atalanta-it-bilancio-consolidato-2022`).
+- Ejercicio 2022 (`Atalanta-bilancio-consolidato-2022.pdf`): cubre solo 1/1 al 30/6/2022 (6 meses, cambio de cierre del 31/12 al 30/6). Se cargó el 2026-10-08 y se sacó el mismo día por decisión de Guido: un ejercicio de menos de 12 meses no se muestra.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.pdf` (sourceId `atalanta-it-bilancio-consolidato-2025`).
 

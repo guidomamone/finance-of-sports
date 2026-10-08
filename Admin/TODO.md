@@ -218,12 +218,9 @@ ni en el comentario de ningún archivo de código.
     5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
     como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
 
-177. CLUBES QUE CAMBIARON LA FECHA DE CIERRE: LA TEMPORADA SE MUESTRA MAL (data/clubs.js fiscalYearStart, uno por club). Encontrado el
-    2026-10-08 al cargar Atalanta 2019 (aviso de cargar.mjs: "el documento cierra 2019-12-31 y data/clubs.js dice fiscalYearStart 07-01").
-    Atalanta cerró el 31/12 hasta 2021 y el 30/06 desde 2022 (fxRef EUR@2020-12-31, 2021-12-31, 2022-06-30...; 2022 puede ser un ejercicio
-    de transición de 6 meses); con fiscalYearStart 07-01 los años 2019-2021 (enero a diciembre) se muestran como "2018/2019".."2020/2021".
-    Parma al revés: 30/06 hasta 2018 y 31/12 después, con fiscalYearStart 01-01. No hay convención en Admin/CONVENCIONES*.md para un club
-    que cambia el cierre. Decisión de Guido pendiente: un inicio de ejercicio por año (en fiscalYearMeta) o la etiqueta por la fecha de
-    cierre, y qué hacer con un ejercicio de transición (meses ≠ 12). Afecta cómo se ve en el sitio, no los números.
-    Además, revisar Atalanta 2022 contra el documento: periodo.mjs dice 12 meses (confianza media) con cierre 2022-06-30, pero 2021 cerró
-    el 31/12/2021: o es un ejercicio de 6 meses (y el sitio lo compara como un año entero) o los dos se superponen (julio-diciembre 2021).
+177. CLUBES QUE CAMBIARON LA FECHA DE CIERRE: LA ETIQUETA DE LA TEMPORADA SE VE MAL (data/clubs.js fiscalYearStart, uno por club; js/finanzas-anios.js
+    etiqueta()). CONOCIDO, SIN ARREGLO (decisión de Guido, 2026-10-08: es puntual, no se toca). Atalanta cerró el 31/12 hasta 2021 y el 30/06 desde
+    2023 (fiscalYearStart 07-01: 2019-2021 se muestran como "2018/2019".."2020/2021"); Parma al revés (30/06 hasta 2019, 31/12 desde 2021,
+    fiscalYearStart 01-01: 2018 se muestra "2018" y es 17/18). Un ejercicio de menos de 12 meses no se carga: Atalanta 2022 (1/1 al 30/6/2022) se
+    sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
+    la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.

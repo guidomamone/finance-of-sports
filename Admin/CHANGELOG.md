@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 595 — Atalanta 2022 fuera (ejercicio de 6 meses); lote 39 (2026-10-08)
+
+- Decisión de Guido: un ejercicio de menos de 12 meses no se muestra. Atalanta 2022 (1/1 al 30/6/2022, cambio de cierre) sale de
+  `data/atalanta-it-data.js` y `data/club-leagues/it.js`; ese PDF y los dos de Parma sep-dic 2020 (4 meses) van a
+  `Admin/documentos-descartados.txt`. Generados regenerados, `ASSET_V` 517, auditoría P0 0 y P1 0.
+- Lote 39 (etapa 2): Atalanta 2018 y 2023 y Parma 30.06.2019 individual, para armarlos por fuera del script. La etiqueta de los clubes con cambio
+  de cierre no se toca (to-do 177).
+
 ## Versión 594 — Napoli 2022 cargado (2026-10-08)
 
 - Napoli 2022 cargado tras el lote 38 (etapa 7: 72 rubros, US$ 0,05) con `cargar.mjs --desde-verificacion --escribir`: ingresos 175.995.109,
