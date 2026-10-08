@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
- "generado": "2026-10-08T01:12:56.210Z",
+ "generado": "2026-10-08T03:20:12.645Z",
  "estado": "cola",
  "clubId": "sampdoria-it",
  "year": 2019,
@@ -11,14 +11,101 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "56.853",
+   "linea": 1048,
+   "etiqueta": "16) c) proventi da terzi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "pág. 27: importes sin etiqueta (cola f1b4f17)",
+   "evidencia": "pág. 27 del visor (impreso 27), .md L1048, imagen",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(2.728.204)",
+   "linea": 1051,
+   "etiqueta": "17) b.1) interessi e altri oneri finanziari verso terzi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1051",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "46",
+   "linea": 1053,
+   "etiqueta": "17 bis) a) utile su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1053",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(1)",
+   "linea": 1054,
+   "etiqueta": "17 bis) b) perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1054",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(3.465.535)",
+   "linea": 1061,
+   "etiqueta": "22) a) imposte correnti",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1061",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "(3.943.972)",
+   "linea": 1062,
+   "etiqueta": "22) b) imposte differite",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1062",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "fila",
+   "valor": "440.273",
+   "linea": 1063,
+   "etiqueta": "22) c) imposte anticipate",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 27, .md L1063",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "addab79",
-  "0b43be9",
-  "f1b4f17",
-  "9414130",
-  "2f9021a",
-  "075611c"
+  "addab79"
  ],
  "chequeos": [
   {
@@ -43,8 +130,17 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"16) c) proventi da terzi\" (financiero) 56.853 (2026-10-08, pág. 27: importes sin etiqueta (cola f1b4f17))",
+  "ajuste manual: fila \"17) b.1) interessi e altri oneri finanziari verso terzi\" (financiero) (2.728.204) (2026-10-08, idem)",
+  "ajuste manual: fila \"17 bis) a) utile su cambi\" (financiero) 46 (2026-10-08, idem)",
+  "ajuste manual: fila \"17 bis) b) perdite su cambi\" (financiero) (1) (2026-10-08, idem)",
+  "ajuste manual: fila \"22) a) imposte correnti\" (impuesto) (3.465.535) (2026-10-08, idem)",
+  "ajuste manual: fila \"22) b) imposte differite\" (impuesto) (3.943.972) (2026-10-08, idem)",
+  "ajuste manual: fila \"22) c) imposte anticipate\" (impuesto) 440.273 (2026-10-08, idem)",
   "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en Sampdoria-fascicolo-bilancio-2021.pdf",
-  "duda de extraer que no afecta la carga: b55 replica en miles los renglones a)-d) del estado (L985-L988) separados por tesserati/altri; b56 desglosa solo la parte tesserati (49.434)."
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Utile (perdita) dell'esercizio\"): aceptar, en Sampdoria-fascicolo-bilancio-2018.pdf",
+  "duda de extraer que no afecta la carga: b55 replica en miles los renglones a)-d) del estado (L985-L988) separados por tesserati/altri; b56 desglosa solo la parte tesserati (49.434).",
+  "duda de extraer ya contestada para el club (perimetro, \"Per il personale:\"): corregir no, en Sampdoria-fascicolo-bilancio-2018.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -52,8 +148,8 @@
  "totales": {
   "ingresos": 141.773225,
   "gastos": 120.077712,
-  "financiero": 0,
-  "impuesto": 0,
+  "financiero": -2.671306,
+  "impuesto": -6.969234,
   "resultadoImpreso": null,
   "resultadoParaCargar": null,
   "resultadoFinal": null,
@@ -449,6 +545,43 @@
   "financiero": 1,
   "impuesto": 1
  },
- "financiero": [],
- "impuesto": []
+ "financiero": [
+  {
+   "etiqueta": "16) c) proventi da terzi",
+   "M": 0.056853,
+   "linea": 1048
+  },
+  {
+   "etiqueta": "17) b.1) interessi e altri oneri finanziari verso terzi",
+   "M": -2.728204,
+   "linea": 1051
+  },
+  {
+   "etiqueta": "17 bis) a) utile su cambi",
+   "M": 0.000046,
+   "linea": 1053
+  },
+  {
+   "etiqueta": "17 bis) b) perdite su cambi",
+   "M": -0.000001,
+   "linea": 1054
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "22) a) imposte correnti",
+   "M": -3.465535,
+   "linea": 1061
+  },
+  {
+   "etiqueta": "22) b) imposte differite",
+   "M": -3.943972,
+   "linea": 1062
+  },
+  {
+   "etiqueta": "22) c) imposte anticipate",
+   "M": 0.440273,
+   "linea": 1063
+  }
+ ]
 }

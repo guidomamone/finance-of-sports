@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md",
- "generado": "2026-10-08T01:12:55.352Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:09.327Z",
+ "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2022,
  "escala": {
@@ -11,33 +11,60 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "e7513be",
-  "5a70fe0",
-  "bee3354",
-  "1852272"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf",
+   "campo": "fila",
+   "valor": "521",
+   "linea": 835,
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "D) rettifiche sin lado: 18) a) rivalutazioni di partecipazioni 521 (TOTALE D (479), L844); igual que AC Milan 2023-24 (to-do 155)",
+   "evidencia": "pág. 28 del visor (impreso 28), .md L833-L844",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf",
+   "campo": "fila",
+   "valor": "(1.000)",
+   "linea": 840,
+   "etiqueta": "svalutazioni di partecipazioni (19, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "D) rettifiche sin lado: 19) a) svalutazioni di partecipazioni (1.000); ver el anterior (to-do 155)",
+   "evidencia": "pág. 28 del visor (impreso 28), .md L838-L844",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "297.7 = 297.592"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "352.575 = 352.572"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 297.7 - gastos 352.575 ± financiero -4.6 ± impuesto -6.478 no da el impreso -66.537"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2022: 297.7 en este documento y 297.7 en AC-Milan-bilanci-relazioni-2022-23.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2022: 297.592 en este documento y 297.7 en AC-Milan-bilanci-relazioni-2022-23.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -46,20 +73,26 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo y no categorías de ingreso; los renglones ya están abiertos en el estado consolidado y sus notas."
+  "ajuste manual: fila \"rivalutazioni di partecipazioni (18)\" (financiero) 521 (2026-10-08, D) rettifiche sin lado: 18) a) rivalutazioni di partecipazioni 521 (TOTALE D (479), L844); igual que AC Milan 2023-24 (to-do 155))",
+  "ajuste manual: fila \"svalutazioni di partecipazioni (19, costo)\" (financiero) (1.000) (2026-10-08, D) rettifiche sin lado: 19) a) svalutazioni di partecipazioni (1.000); ver el anterior (to-do 155))",
+  "escalón \"ajustes del financiero sin reemplaza\": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Las columnas son sociedades del grupo y no categorías de ingreso; los renglones ya están abiertos en el estado consolidado y sus notas.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en AC-Milan-bilanci-relazioni-2021-22.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 297.7,
-  "gastos": 352.575,
-  "financiero": -4.6,
+  "ingresos": 297.592,
+  "gastos": 352.573,
+  "financiero": -5.079,
   "impuesto": -6.478,
   "resultadoImpreso": -66.537,
   "resultadoParaCargar": -66.537,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -68,7 +101,7 @@
    "M": 32.309,
    "pagina": 27,
    "linea": 757,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "c) ricavi da altre competizioni",
@@ -76,15 +109,15 @@
    "M": 0.235,
    "pagina": 27,
    "linea": 759,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "2 variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
    "lado": "ingreso",
-   "M": 0.054,
+   "M": -0.054,
    "pagina": 27,
    "linea": 761,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) contributi in conto esercizio",
@@ -92,7 +125,7 @@
    "M": 0.173,
    "pagina": 27,
    "linea": 763,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) proventi da sponsorizzazioni",
@@ -100,7 +133,7 @@
    "M": 57.799,
    "pagina": 27,
    "linea": 764,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) proventi commerciali e royalties",
@@ -108,7 +141,7 @@
    "M": 25.07,
    "pagina": 27,
    "linea": 765,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "e) proventi da cessione diritti audiovisivi",
@@ -116,7 +149,7 @@
    "M": 133.075,
    "pagina": 27,
    "linea": 766,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "f) proventi vari",
@@ -124,7 +157,7 @@
    "M": 7.512,
    "pagina": 27,
    "linea": 767,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "g) ricavi da cessione temporanea prestazioni calciatori",
@@ -132,7 +165,7 @@
    "M": 1.661,
    "pagina": 27,
    "linea": 768,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -140,7 +173,7 @@
    "M": 5.57,
    "pagina": 27,
    "linea": 769,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "i) altri proventi da gestione calciatori",
@@ -148,7 +181,7 @@
    "M": 3.227,
    "pagina": 27,
    "linea": 770,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "l) ricavi e proventi diversi",
@@ -156,7 +189,7 @@
    "M": 31.015,
    "pagina": 27,
    "linea": 771,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "6 per materie prime, sussidiarie, di consumo, merci",
@@ -164,103 +197,23 @@
    "M": 7.705,
    "pagina": 27,
    "linea": 775,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Costi generali attività sportiva",
+   "etiqueta": "7 per servizi",
    "lado": "gasto",
-   "M": 23.133,
-   "pagina": 64,
-   "linea": 2218,
-   "origen": "nota que desglosa \"7 per servizi\""
+   "M": 57.737,
+   "pagina": 27,
+   "linea": 776,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Consulenze e collaborazioni",
+   "etiqueta": "8 per godimento di beni di terzi",
    "lado": "gasto",
-   "M": 7.185,
-   "pagina": 64,
-   "linea": 2219,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Pubblicità e spese promozionali",
-   "lado": "gasto",
-   "M": 2.797,
-   "pagina": 64,
-   "linea": 2220,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Assicurazioni",
-   "lado": "gasto",
-   "M": 0.655,
-   "pagina": 64,
-   "linea": 2221,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Emolumenti ad organi sociali",
-   "lado": "gasto",
-   "M": 4.033,
-   "pagina": 64,
-   "linea": 2222,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Spese amministrative e generali",
-   "lado": "gasto",
-   "M": 6.692,
-   "pagina": 64,
-   "linea": 2223,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Mensa e servizi di ristorazione",
-   "lado": "gasto",
-   "M": 1.116,
-   "pagina": 64,
-   "linea": 2224,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Manutenzione e riparazione",
-   "lado": "gasto",
-   "M": 2.155,
-   "pagina": 64,
-   "linea": 2225,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Trasporti, magazzinaggio e spese viaggio",
-   "lado": "gasto",
-   "M": 0.829,
-   "pagina": 64,
-   "linea": 2226,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Altri costi per servizi",
-   "lado": "gasto",
-   "M": 9.144,
-   "pagina": 64,
-   "linea": 2227,
-   "origen": "nota que desglosa \"7 per servizi\""
-  },
-  {
-   "etiqueta": "Affitti passivi",
-   "lado": "gasto",
-   "M": 7.359,
-   "pagina": 65,
-   "linea": 2267,
-   "origen": "nota que desglosa \"8 per godimento di beni di terzi\""
-  },
-  {
-   "etiqueta": "Noleggi e altre locazioni",
-   "lado": "gasto",
-   "M": 3.025,
-   "pagina": 65,
-   "linea": 2268,
-   "origen": "nota que desglosa \"8 per godimento di beni di terzi\""
+   "M": 10.384,
+   "pagina": 27,
+   "linea": 777,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) salari e stipendi",
@@ -268,7 +221,7 @@
    "M": 159.598,
    "pagina": 27,
    "linea": 780,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) oneri sociali",
@@ -276,7 +229,7 @@
    "M": 8.123,
    "pagina": 27,
    "linea": 781,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "c) trattamento di fine rapporto",
@@ -284,7 +237,7 @@
    "M": 2.166,
    "pagina": 27,
    "linea": 782,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "e) altri costi",
@@ -292,7 +245,7 @@
    "M": 0.367,
    "pagina": 27,
    "linea": 783,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) ammortamento delle immobilizzazioni immateriali",
@@ -300,7 +253,7 @@
    "M": 65.997,
    "pagina": 27,
    "linea": 786,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) ammortamento delle immobilizzazioni materiali",
@@ -308,7 +261,7 @@
    "M": 2.347,
    "pagina": 27,
    "linea": 787,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "c) altre svalutazioni delle immobilizzazioni",
@@ -316,7 +269,7 @@
    "M": 8.007,
    "pagina": 27,
    "linea": 788,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -324,7 +277,7 @@
    "M": 0.017,
    "pagina": 27,
    "linea": 789,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "12 accantonamenti per rischi",
@@ -332,7 +285,7 @@
    "M": 7.893,
    "pagina": 27,
    "linea": 791,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) spese varie organizzazione gare",
@@ -340,7 +293,7 @@
    "M": 6.28,
    "pagina": 27,
    "linea": 793,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) tasse iscrizione gare",
@@ -348,7 +301,7 @@
    "M": 0.02,
    "pagina": 27,
    "linea": 794,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) costi per acquisizione temporanea calciatori",
@@ -356,7 +309,7 @@
    "M": 7.443,
    "pagina": 27,
    "linea": 796,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -364,7 +317,7 @@
    "M": 2.456,
    "pagina": 27,
    "linea": 797,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "f) altri oneri da gestione calciatori",
@@ -372,7 +325,7 @@
    "M": 0.5,
    "pagina": 27,
    "linea": 798,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "g) altri oneri diversi di gestione",
@@ -380,7 +333,7 @@
    "M": 5.533,
    "pagina": 27,
    "linea": 799,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -407,6 +360,16 @@
    "etiqueta": "b) perdite su cambi",
    "M": -0.124,
    "linea": 830
+  },
+  {
+   "etiqueta": "rivalutazioni di partecipazioni (18)",
+   "M": 0.521,
+   "linea": 835
+  },
+  {
+   "etiqueta": "svalutazioni di partecipazioni (19, costo)",
+   "M": -1,
+   "linea": 840
   }
  ],
  "impuesto": [

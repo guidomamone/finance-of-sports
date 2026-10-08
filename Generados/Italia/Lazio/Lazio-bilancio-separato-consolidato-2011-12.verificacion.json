@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md",
- "generado": "2026-10-08T01:12:55.806Z",
+ "generado": "2026-10-08T03:20:11.172Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2012,
@@ -11,11 +11,36 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
+   "campo": "fila",
+   "valor": "(2.741.427)",
+   "linea": 3634,
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "subtotal financiero sin hojas extraídas; (30.720) + 501.101 - 3.211.808 = -2.741.427",
+   "evidencia": "pág. 99 del visor, .md L3634-L3645",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.pdf",
+   "campo": "fila",
+   "valor": "(639.739)",
+   "linea": 3575,
+   "etiqueta": "Variazione delle rimanenze",
+   "lado": "ingreso",
+   "reemplaza": "Variazione delle rimanenze",
+   "motivo": "baja de inventario impresa en negativo; se leía +639.739",
+   "evidencia": "pág. 98 del visor, .md L3575",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "e69220c",
-  "579187b",
-  "1896cce"
+  "e69220c"
  ],
  "chequeos": [
   {
@@ -31,7 +56,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": false,
-   "detalle": "ingresos 192.29803 - gastos 170.601012 ± financiero 0 ± impuesto 7.684529 no da el impreso 4.221554"
+   "detalle": "ingresos 192.29803 - gastos 170.601012 ± financiero -2.741427 ± impuesto 7.684529 no da el impreso 4.221554"
   },
   {
    "nombre": "documento del año 2013",
@@ -46,8 +71,12 @@
  ],
  "notas": [
   "la nota de \"Ammortamenti e svalutazioni delle immobilizzazioni\" no suma el renglón (21.459 contra 21.511022, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Oneri finanziari netti e differenze cambio\" (financiero) (2.741.427) (2026-10-08, subtotal financiero sin hojas extraídas; (30.720) + 501.101 - 3.211.808 = -2.741.427)",
+  "ajuste manual: fila \"Variazione delle rimanenze\" (ingreso) (639.739), en lugar de \"Variazione delle rimanenze\" (2026-10-08, baja de inventario impresa en negativo; se leía +639.739)",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale/Immobiliare no parecen abrir renglones que no estén ya desglosados.",
-  "duda de extraer que no afecta la carga: L5567 repite la etiqueta 'immateriali' pero el importe coincide con 'Amm. delle immobilizzazioni materiali' (L3623)."
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Ammortamenti e svalutazioni delle immobilizzazioni\"): aceptar, en Lazio-bilancio-separato-consolidato-2011-12.pdf",
+  "duda de extraer que no afecta la carga: L5567 repite la etiqueta 'immateriali' pero el importe coincide con 'Amm. delle immobilizzazioni materiali' (L3623).",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir no, en Lazio-bilancio-separato-consolidato-2011-12.pdf"
  ],
  "reintentar": [
   {
@@ -67,7 +96,7 @@
  "totales": {
   "ingresos": 192.29803,
   "gastos": 170.601012,
-  "financiero": 0,
+  "financiero": -2.741427,
   "impuesto": 7.684529,
   "resultadoImpreso": 4.221554,
   "resultadoParaCargar": 4.221554,
@@ -196,14 +225,6 @@
    "origen": "nota que desglosa \"Altri ricavi\""
   },
   {
-   "etiqueta": "Variazione delle rimanenze",
-   "lado": "ingreso",
-   "M": 0.639739,
-   "pagina": 98,
-   "linea": 3575,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Materiale per vendita a terzi",
    "lado": "ingreso",
    "M": 1.147,
@@ -226,6 +247,14 @@
    "pagina": 98,
    "linea": 3577,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Variazione delle rimanenze",
+   "lado": "ingreso",
+   "M": 0.639739,
+   "pagina": 98,
+   "linea": 3575,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Materie prime,sussidiarie,di consumo e di merci",
@@ -512,7 +541,13 @@
   "financiero": 1,
   "impuesto": 1
  },
- "financiero": [],
+ "financiero": [
+  {
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "M": -2.741427,
+   "linea": 3634
+  }
+ ],
  "impuesto": [
   {
    "etiqueta": "Imposte correnti",

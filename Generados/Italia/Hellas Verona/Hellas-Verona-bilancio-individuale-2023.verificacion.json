@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md",
- "generado": "2026-10-08T01:12:56.572Z",
+ "generado": "2026-10-08T03:20:12.262Z",
  "estado": "cola",
  "clubId": "hellasverona-it",
  "year": 2023,
@@ -11,13 +11,75 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+   "campo": "fila",
+   "valor": "8.217.240",
+   "linea": 360,
+   "etiqueta": "12) Accantonamenti per rischi",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "fila fuera del índice de localizar (cola 8c6bea8)",
+   "evidencia": "pág. 7 del visor (impreso 6), .md L360",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+   "campo": "fila",
+   "valor": "(25.971)",
+   "linea": 357,
+   "etiqueta": "11) Variazioni delle rimanenze (a favor)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "idem; costo negativo",
+   "evidencia": "pág. 7 del visor, .md L357",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+   "campo": "fila",
+   "valor": "4.720",
+   "linea": 387,
+   "etiqueta": "16) d.5) Altri proventi diversi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "sección C fuera del índice",
+   "evidencia": "pág. 8 del visor (impreso 7), .md L387",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+   "campo": "fila",
+   "valor": "(4.520.228)",
+   "linea": 390,
+   "etiqueta": "17) e) altri interessi e oneri finanziari",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 8 del visor, .md L390",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+   "campo": "fila",
+   "valor": "(10.210)",
+   "linea": 395,
+   "etiqueta": "17-bis) Utili e perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 8 del visor, .md L395",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "a1650fd",
-  "648450d",
-  "c3ea81e",
-  "8c6bea8",
-  "9143e7a"
+  "a1650fd"
  ],
  "chequeos": [
   {
@@ -32,8 +94,13 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 98.444977 - gastos 106.997053 ± financiero 0 ± impuesto 1.341981 no da el impreso -19.9277"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
@@ -43,9 +110,17 @@
  ],
  "notas": [
   "la nota de \"a) Salari e stipendi\" no suma el renglón (47.583 contra 49.183265, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"12) Accantonamenti per rischi\" (gasto) 8.217.240 (2026-10-08, fila fuera del índice de localizar (cola 8c6bea8))",
+  "ajuste manual: fila \"11) Variazioni delle rimanenze (a favor)\" (gasto) (25.971) (2026-10-08, idem; costo negativo)",
+  "ajuste manual: fila \"16) d.5) Altri proventi diversi\" (financiero) 4.720 (2026-10-08, sección C fuera del índice)",
+  "ajuste manual: fila \"17) e) altri interessi e oneri finanziari\" (financiero) (4.520.228) (2026-10-08, idem)",
+  "ajuste manual: fila \"17-bis) Utili e perdite su cambi\" (financiero) (10.210) (2026-10-08, idem)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer ya contestada para el club (columna, \"c) Atre svalutazioni delle immobilizzazioni\"): aceptar, en Hellas-Verona-bilancio-individuale-2023.pdf",
   "duda de extraer que no afecta la carga: L362 sólo muestra un 0 en posición de año anterior.",
   "duda de extraer que no afecta la carga: L2241 no tiene importes y L2242 sólo tiene importe 2022.",
-  "duda de extraer que no afecta la carga: El total 47.584 no coincide con salari (49.183) ni con el total de personal; es un desglose parcial del costo de tesserati."
+  "duda de extraer que no afecta la carga: El total 47.584 no coincide con salari (49.183) ni con el total de personal; es un desglose parcial del costo de tesserati.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -64,13 +139,13 @@
  ],
  "totales": {
   "ingresos": 98.444977,
-  "gastos": 106.997053,
-  "financiero": 0,
+  "gastos": 115.188322,
+  "financiero": -4.525718,
   "impuesto": 1.341981,
   "resultadoImpreso": -19.9277,
   "resultadoParaCargar": -19.9277,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -416,6 +491,22 @@
    "pagina": 48,
    "linea": 2311,
    "origen": "nota que desglosa \"e) Altri oneri diversi di gestione\""
+  },
+  {
+   "etiqueta": "12) Accantonamenti per rischi",
+   "lado": "gasto",
+   "M": 8.21724,
+   "pagina": 7,
+   "linea": 360,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "11) Variazioni delle rimanenze (a favor)",
+   "lado": "gasto",
+   "M": -0.025971,
+   "pagina": 7,
+   "linea": 357,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -432,6 +523,21 @@
    "etiqueta": "a) di partecipazioni",
    "M": 0,
    "linea": 405
+  },
+  {
+   "etiqueta": "16) d.5) Altri proventi diversi",
+   "M": 0.00472,
+   "linea": 387
+  },
+  {
+   "etiqueta": "17) e) altri interessi e oneri finanziari",
+   "M": -4.520228,
+   "linea": 390
+  },
+  {
+   "etiqueta": "17-bis) Utili e perdite su cambi",
+   "M": -0.01021,
+   "linea": 395
   }
  ],
  "impuesto": [

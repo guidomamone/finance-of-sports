@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md",
- "generado": "2026-10-08T01:12:56.513Z",
+ "generado": "2026-10-08T03:20:11.897Z",
  "estado": "cola",
  "clubId": null,
  "year": 2022,
@@ -11,11 +11,88 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "(5.297.416)",
+   "linea": 433,
+   "etiqueta": "17) e) altri oneri finanziari",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "pág. 10 transcripta sin tabla: importes sin etiqueta (cola 3560b84)",
+   "evidencia": "pág. 10 del visor, .md L433",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "104",
+   "linea": 441,
+   "etiqueta": "17 bis) a) utile su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 10 del visor, .md L441",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "(23.945)",
+   "linea": 442,
+   "etiqueta": "17 bis) b) perdite su cambi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 10 del visor, .md L442",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "(847.954)",
+   "linea": 478,
+   "etiqueta": "20) a) imposte correnti",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 10 del visor, .md L478",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "8.589.283",
+   "linea": 482,
+   "etiqueta": "20) c) imposte differite e anticipate",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 10 del visor, .md L482",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
+   "campo": "fila",
+   "valor": "1.654.981",
+   "linea": 486,
+   "etiqueta": "20) d) proventi e oneri da consolidato fiscale",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "idem",
+   "evidencia": "pág. 10 del visor, .md L486",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "3560b84",
-  "b468624",
-  "6b93eaf"
+  "3560b84"
  ],
  "chequeos": [
   {
@@ -41,6 +118,12 @@
  ],
  "notas": [
   "la nota de \"a) spese varie organizzazione gare\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"17) e) altri oneri finanziari\" (financiero) (5.297.416) (2026-10-08, pág. 10 transcripta sin tabla: importes sin etiqueta (cola 3560b84))",
+  "ajuste manual: fila \"17 bis) a) utile su cambi\" (financiero) 104 (2026-10-08, idem)",
+  "ajuste manual: fila \"17 bis) b) perdite su cambi\" (financiero) (23.945) (2026-10-08, idem)",
+  "ajuste manual: fila \"20) a) imposte correnti\" (impuesto) (847.954) (2026-10-08, idem)",
+  "ajuste manual: fila \"20) c) imposte differite e anticipate\" (impuesto) 8.589.283 (2026-10-08, idem)",
+  "ajuste manual: fila \"20) d) proventi e oneri da consolidato fiscale\" (impuesto) 1.654.981 (2026-10-08, idem)",
   "duda de extraer confirmada por las sumas (columna, \"2) Variazione delle rimanenze di materiale di prodotti in corso di lavorazione, semilavorati e finiti\"): ¿Se trata la fila 'Variazione delle rimanenze...' (L345) como ingreso solo del año anterior (53.670) sin importe 2022?",
   "duda de extraer que no afecta la carga: El estado no imprime la escala en las líneas dadas; los importes coinciden exactamente con notas en €."
  ],
@@ -50,8 +133,8 @@
  "totales": {
   "ingresos": 84.663638,
   "gastos": 150.625802,
-  "financiero": 0.158487,
-  "impuesto": 0,
+  "financiero": -5.16277,
+  "impuesto": 9.39631,
   "resultadoImpreso": null,
   "resultadoParaCargar": null,
   "resultadoFinal": null,
@@ -414,7 +497,38 @@
    "etiqueta": "c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni",
    "M": 0.000042,
    "linea": 415
+  },
+  {
+   "etiqueta": "17) e) altri oneri finanziari",
+   "M": -5.297416,
+   "linea": 433
+  },
+  {
+   "etiqueta": "17 bis) a) utile su cambi",
+   "M": 0.000104,
+   "linea": 441
+  },
+  {
+   "etiqueta": "17 bis) b) perdite su cambi",
+   "M": -0.023945,
+   "linea": 442
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "20) a) imposte correnti",
+   "M": -0.847954,
+   "linea": 478
+  },
+  {
+   "etiqueta": "20) c) imposte differite e anticipate",
+   "M": 8.589283,
+   "linea": 482
+  },
+  {
+   "etiqueta": "20) d) proventi e oneri da consolidato fiscale",
+   "M": 1.654981,
+   "linea": 486
+  }
+ ]
 }

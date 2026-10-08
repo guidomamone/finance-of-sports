@@ -1,410 +1,370 @@
 {
-  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
-  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf",
-  "club": "asroma-it",
-  "year": 2024,
-  "generatedAt": "2026-10-08T01:12:55.468Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "a) ricavi da gare",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        39.174069
-      ],
-      "glosa": "a) Ingresos por partidos"
-    },
-    {
-      "label": "b) abbonamenti",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        16.290643
-      ],
-      "glosa": "b) Abonos"
-    },
-    {
-      "label": "2) variazioni delle rimanenze di prodotti finiti",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        1.834252
-      ],
-      "glosa": "2) Variación de existencias de productos terminados"
-    },
-    {
-      "label": "a) proventi da sponsorizzazioni",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        18.399384
-      ],
-      "glosa": "a) Ingresos por patrocinio"
-    },
-    {
-      "label": "b) proventi pubblicitari",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        24.743181
-      ],
-      "glosa": "b) Ingresos por publicidad"
-    },
-    {
-      "label": "c) proventi commerciali e royalties",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        26.864751
-      ],
-      "glosa": "c) Ingresos comerciales y regalías"
-    },
-    {
-      "label": "d) proventi da cessione diritti audiovisivi",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        104.146581
-      ],
-      "glosa": "d) Ingresos por cesión de derechos audiovisuales"
-    },
-    {
-      "label": "e) ricavi da cessione temporanea prestazioni calciatori",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        1.565535
-      ],
-      "glosa": "e) Ingresos por cesión temporal de derechos de futbolistas"
-    },
-    {
-      "label": "f) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        25.046418
-      ],
-      "glosa": "f) Plusvalías por traspaso de derechos de futbolistas"
-    },
-    {
-      "label": "g) altri proventi da trasferimento diritti calciatori",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        21.038216
-      ],
-      "glosa": "g) Otros ingresos por transferencia de derechos de futbolistas"
-    },
-    {
-      "label": "h) ricavi e proventi diversi",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        22.613434
-      ],
-      "glosa": "h) Otros ingresos y ganancias"
-    },
-    {
-      "label": "Indumenti sportivi e divise ufficiale",
-      "lado": "expense",
-      "page": 50,
-      "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
-      "values": [
-        3.367
-      ],
-      "glosa": "Ropa deportiva y uniformes oficiales"
-    },
-    {
-      "label": "Materiali di consumo",
-      "lado": "expense",
-      "page": 50,
-      "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
-      "values": [
-        0.987
-      ],
-      "glosa": "Material fungible y de consumo"
-    },
-    {
-      "label": "Beni e prodotti da commercializzare",
-      "lado": "expense",
-      "page": 50,
-      "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
-      "values": [
-        12.549
-      ],
-      "glosa": "Mercaderías y productos para comercializar"
-    },
-    {
-      "label": "Costi per tesserati",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        1.799
-      ],
-      "glosa": "Gastos de personal federado"
-    },
-    {
-      "label": "Costi per attività sportiva",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        6.734
-      ],
-      "glosa": "Gastos por actividad deportiva"
-    },
-    {
-      "label": "Costi specifici tecnici",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        8.54
-      ],
-      "glosa": "Gastos técnicos específicos"
-    },
-    {
-      "label": "Costi di vitto, alloggio, locomozione gare",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        3.743
-      ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
-    },
-    {
-      "label": "Spese assicurative",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        8.216
-      ],
-      "glosa": "Primas de seguros"
-    },
-    {
-      "label": "Spese amministrative e generali",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        24.163
-      ],
-      "glosa": "Gastos generales y de administración"
-    },
-    {
-      "label": "Spese di pubblicità e promozione",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"7) per servizi\"",
-      "values": [
-        5.045
-      ],
-      "glosa": "Gastos de publicidad y promoción"
-    },
-    {
-      "label": "Centro sportivo di Trigoria",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
-      "values": [
-        2.7
-      ],
-      "glosa": "Centro deportivo de Trigoria"
-    },
-    {
-      "label": "Stadio Olimpico",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
-      "values": [
-        4.166
-      ],
-      "glosa": "Estadio Olímpico"
-    },
-    {
-      "label": "Altre sedi",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
-      "values": [
-        3.516
-      ],
-      "glosa": "Otras sedes"
-    },
-    {
-      "label": "Beni",
-      "lado": "expense",
-      "page": 51,
-      "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
-      "values": [
-        4.07
-      ],
-      "glosa": "Bienes"
-    },
-    {
-      "label": "a) salari e stipendi",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        189.464635
-      ],
-      "glosa": "a) Sueldos y salarios"
-    },
-    {
-      "label": "b) oneri sociali",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        10.603306
-      ],
-      "glosa": "b) Cargas sociales"
-    },
-    {
-      "label": "c) trattamento di fine rapporto",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        0.890082
-      ],
-      "glosa": "c) Indemnizaciones por fin de contrato laboral"
-    },
-    {
-      "label": "d) trattamento di quiescenza e simili",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "d) Prestaciones por jubilación y similares"
-    },
-    {
-      "label": "e) altri costi",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        1.168195
-      ],
-      "glosa": "e) Otros gastos de personal"
-    },
-    {
-      "label": "Ammortamento DPS Calciatori",
-      "lado": "expense",
-      "page": 52,
-      "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
-      "values": [
-        38.079
-      ],
-      "glosa": "Amortización de derechos federativos de futbolistas"
-    },
-    {
-      "label": "Ammortamento DPS Calciatrici",
-      "lado": "expense",
-      "page": 52,
-      "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
-      "values": [
-        0.029
-      ],
-      "glosa": "Amortización de derechos federativos de futbolistas femeninas"
-    },
-    {
-      "label": "Ammortamento altre immob. Immateriali",
-      "lado": "expense",
-      "page": 52,
-      "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
-      "values": [
-        0.951
-      ],
-      "glosa": "Amortización de otro inmovilizado intangible"
-    },
-    {
-      "label": "b) ammortamenti immobilizzazioni materiali",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        4.546359
-      ],
-      "glosa": "b) Amortización del inmovilizado material"
-    },
-    {
-      "label": "d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        0.287125
-      ],
-      "glosa": "d) Deterioro de valor de créditos del activo corriente y de tesorería"
-    },
-    {
-      "label": "12) accantonamenti per rischi",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        4.956295
-      ],
-      "glosa": "12) Dotaciones a provisiones para riesgos"
-    },
-    {
-      "label": "b) costi per acquisizione temporanea prestazioni calciatori",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        10.082075
-      ],
-      "glosa": "b) Gastos por adquisición temporal de derechos de futbolistas"
-    },
-    {
-      "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        1.135911
-      ],
-      "glosa": "c) Pérdidas por traspaso de derechos de futbolistas"
-    },
-    {
-      "label": "d) altri oneri da trasferimento diritti calciatori",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        7.880849
-      ],
-      "glosa": "d) Otros gastos por transferencia de derechos de futbolistas"
-    },
-    {
-      "label": "e) altri oneri diversi di gestione",
-      "lado": "expense",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        6.572815
-      ],
-      "glosa": "e) Otros gastos de explotación"
-    }
-  ]
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf",
+ "club": "asroma-it",
+ "year": 2024,
+ "generatedAt": "2026-10-08T03:20:10.432Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "a) ricavi da gare",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    39.174069
+   ]
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    16.290643
+   ]
+  },
+  {
+   "label": "2) variazioni delle rimanenze di prodotti finiti",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    1.834252
+   ]
+  },
+  {
+   "label": "a) proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    18.399384
+   ]
+  },
+  {
+   "label": "b) proventi pubblicitari",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    24.743181
+   ]
+  },
+  {
+   "label": "c) proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    26.864751
+   ]
+  },
+  {
+   "label": "d) proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    104.146581
+   ]
+  },
+  {
+   "label": "e) ricavi da cessione temporanea prestazioni calciatori",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    1.565535
+   ]
+  },
+  {
+   "label": "f) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    25.046418
+   ]
+  },
+  {
+   "label": "g) altri proventi da trasferimento diritti calciatori",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    21.038216
+   ]
+  },
+  {
+   "label": "h) ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    22.613434
+   ]
+  },
+  {
+   "label": "Indumenti sportivi e divise ufficiale",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
+   "values": [
+    3.367
+   ]
+  },
+  {
+   "label": "Materiali di consumo",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
+   "values": [
+    0.987
+   ]
+  },
+  {
+   "label": "Beni e prodotti da commercializzare",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"6) per materie prime, sussidiarie, di consumo e di merci\"",
+   "values": [
+    12.549
+   ]
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    1.799
+   ]
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    6.734
+   ]
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    8.54
+   ]
+  },
+  {
+   "label": "Costi di vitto, alloggio, locomozione gare",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    3.743
+   ]
+  },
+  {
+   "label": "Spese assicurative",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    8.216
+   ]
+  },
+  {
+   "label": "Spese amministrative e generali",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    24.163
+   ]
+  },
+  {
+   "label": "Spese di pubblicità e promozione",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"7) per servizi\"",
+   "values": [
+    5.045
+   ]
+  },
+  {
+   "label": "Centro sportivo di Trigoria",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+   "values": [
+    2.7
+   ]
+  },
+  {
+   "label": "Stadio Olimpico",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+   "values": [
+    4.166
+   ]
+  },
+  {
+   "label": "Altre sedi",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+   "values": [
+    3.516
+   ]
+  },
+  {
+   "label": "Beni",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"8) per godimento di beni di terzi\"",
+   "values": [
+    4.07
+   ]
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    189.464635
+   ]
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    10.603306
+   ]
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    0.890082
+   ]
+  },
+  {
+   "label": "d) trattamento di quiescenza e simili",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    1.168195
+   ]
+  },
+  {
+   "label": "Ammortamento DPS Calciatori",
+   "lado": "expense",
+   "page": 52,
+   "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
+   "values": [
+    38.079
+   ]
+  },
+  {
+   "label": "Ammortamento DPS Calciatrici",
+   "lado": "expense",
+   "page": 52,
+   "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
+   "values": [
+    0.029
+   ]
+  },
+  {
+   "label": "Ammortamento altre immob. Immateriali",
+   "lado": "expense",
+   "page": 52,
+   "section": "nota que desglosa \"a) ammortamenti immobilizzazioni immateriali\"",
+   "values": [
+    0.951
+   ]
+  },
+  {
+   "label": "b) ammortamenti immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    4.546359
+   ]
+  },
+  {
+   "label": "d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    0.287125
+   ]
+  },
+  {
+   "label": "12) accantonamenti per rischi",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    4.956295
+   ]
+  },
+  {
+   "label": "b) costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    10.082075
+   ]
+  },
+  {
+   "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    1.135911
+   ]
+  },
+  {
+   "label": "d) altri oneri da trasferimento diritti calciatori",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    7.880849
+   ]
+  },
+  {
+   "label": "e) altri oneri diversi di gestione",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado",
+   "values": [
+    6.572815
+   ]
+  }
+ ]
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
- "generado": "2026-10-08T01:12:55.401Z",
+ "generado": "2026-10-08T03:20:09.729Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2021,
@@ -11,28 +11,56 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "36.125",
+   "linea": 2148,
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado",
+   "evidencia": "pág. 74 del visor (impreso 72), .md L2148-L2150",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
+   "campo": "fila",
+   "valor": "(37.323)",
+   "linea": 2149,
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "gestión de jugadores en bruto (gastos), ver el anterior",
+   "evidencia": "pág. 74 del visor (impreso 72), .md L2148-L2150",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
   "b03fa64",
   "84e7cb7",
-  "713865d",
+  "3a46a03",
+  "b6498ac",
   "e4b35dc"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "190.414 = 190.412"
+   "ok": false,
+   "detalle": "las líneas suman 226.539 y el total impreso dice 190.412"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "337.64 = 337.641"
+   "ok": false,
+   "detalle": "las líneas suman 374.963 y el total impreso dice 337.641"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 190.414 - gastos 337.64 ± financiero -35.969 ± impuesto -1.176 no da el impreso -185.573"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2022",
@@ -47,10 +75,13 @@
  ],
  "notas": [
   "el desglose de \"Altri oneri\" (5 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"Ricavi da gestione dei diritti pluriennali prestazioni calciatori\" (ingreso) 36.125 (2026-10-08, gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado)",
+  "ajuste manual: fila \"Oneri da gestione dei diritti pluriennali prestazioni calciatori\" (gasto) (37.323) (2026-10-08, gestión de jugadores en bruto (gastos), ver el anterior)",
   "duda de localizar que no afecta la carga: El cuadro por segmento (b105, b106) tiene los mismos renglones que el estado consolidado b35; no parece abrir renglones nuevos.",
   "duda de localizar que no afecta la carga: b41 es el mismo conto economico consolidado con columnas 'di cui, con parti correlate'.",
   "duda de extraer que no afecta la carga: b81 combina 'Beni e prodotti da commercializzare' (ya en b80 L4286) y 'Variazione delle rimanenze' (ya en el estado L2141).",
-  "duda de extraer que no afecta la carga: L4631 tiene la celda del ejercicio vacía (anterior (12.333)); se omitió."
+  "duda de extraer que no afecta la carga: L4631 tiene la celda del ejercicio vacía (anterior (12.333)); se omitió.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -68,14 +99,14 @@
   }
  ],
  "totales": {
-  "ingresos": 190.414,
-  "gastos": 337.64,
+  "ingresos": 226.539,
+  "gastos": 374.963,
   "financiero": -35.969,
   "impuesto": -1.176,
   "resultadoImpreso": -185.573,
   "resultadoParaCargar": -185.573,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -197,6 +228,14 @@
    "pagina": 131,
    "linea": 4265,
    "origen": "nota que desglosa \"Altri ricavi\""
+  },
+  {
+   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "ingreso",
+   "M": 36.125,
+   "pagina": 74,
+   "linea": 2148,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Indumenti sportivi e divise ufficiale",
@@ -477,6 +516,14 @@
    "pagina": 136,
    "linea": 4484,
    "origen": "nota que desglosa \"Ammortamenti e svalutazioni\""
+  },
+  {
+   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 37.323,
+   "pagina": 74,
+   "linea": 2149,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md",
- "generado": "2026-10-08T01:12:56.408Z",
+ "generado": "2026-10-08T03:20:13.722Z",
  "estado": "cola",
  "clubId": null,
  "year": 2022,
@@ -11,18 +11,44 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 970,
+   "etiqueta": "(sale) a) ricavi da gare",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 970,
+   "motivo": "hijo de 1) abierto por la nota b45; se contaba dos veces (a+b = 7.876.653; 1) = 7.917.332, dif. 40.680 de Coppa Italia fuori casa)",
+   "evidencia": "pág. 31 del visor, .md L969-L971; nota b45 .md L2064-L2079",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 971,
+   "etiqueta": "(sale) b) abbonamenti",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 971,
+   "motivo": "idem",
+   "evidencia": "idem",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "6078d5d",
-  "03b22c4",
-  "b9c3deb",
-  "2168732"
+  "6078d5d"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 241.109658 y el total impreso dice 233.233006"
+   "ok": true,
+   "detalle": "233.233005 = 233.233006"
   },
   {
    "nombre": "total de gastos",
@@ -31,8 +57,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 241.109658 - gastos 161.476024 ± financiero 1.43304 ± impuesto -26.360073 no da el impreso 46.829946"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
@@ -41,23 +67,26 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"L970\" (2026-10-08, hijo de 1) abierto por la nota b45; se contaba dos veces (a+b = 7.876.653; 1) = 7.917.332, dif. 40.680 de Coppa Italia fuori casa))",
+  "ajuste manual: sale la fila \"L971\" (2026-10-08, idem)",
   "duda de localizar que no afecta la carga: Es detalle por jugador; el total ya figura en el conto economico.",
   "duda de localizar que no afecta la carga: Detalle por jugador de una fila ya abierta en b55.",
   "duda de extraer que no afecta la carga: L970 no trae importe anterior; b45 muestra 0 en 2021 para gare, coherente con celda vacía.",
-  "duda de extraer que no afecta la carga: La tabla b48 (L2146-L2154) solo tiene una columna 'Importo', que se asume 30/06/2022 por coincidir con el total."
+  "duda de extraer que no afecta la carga: La tabla b48 (L2146-L2154) solo tiene una columna 'Importo', que se asume 30/06/2022 por coincidir con el total.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 241.109658,
+  "ingresos": 233.233005,
   "gastos": 161.476024,
   "financiero": 1.43304,
   "impuesto": -26.360073,
   "resultadoImpreso": 46.829946,
   "resultadoParaCargar": 46.829946,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -107,22 +136,6 @@
    "pagina": 61,
    "linea": 2078,
    "origen": "nota que desglosa \"1) ricavi delle vendite e delle prestazioni\""
-  },
-  {
-   "etiqueta": "a) ricavi da gare",
-   "lado": "ingreso",
-   "M": 5.51377,
-   "pagina": 31,
-   "linea": 970,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) abbonamenti",
-   "lado": "ingreso",
-   "M": 2.362883,
-   "pagina": 31,
-   "linea": 971,
-   "origen": "estado"
   },
   {
    "etiqueta": "Ricavi da sponsorizzazioni ufficiali",

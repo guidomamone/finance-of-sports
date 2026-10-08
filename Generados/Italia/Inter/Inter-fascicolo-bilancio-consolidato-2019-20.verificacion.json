@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.md",
- "generado": "2026-10-08T01:12:55.698Z",
+ "generado": "2026-10-08T03:20:10.811Z",
  "estado": "cola",
  "clubId": "inter-it",
  "year": 2020,
@@ -11,12 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.pdf",
+   "campo": "resultado-final",
+   "valor": "(102.393.789)",
+   "linea": 918,
+   "motivo": "el estado cortó en b12 y el resultado impreso (L912 y L918) quedó afuera; cierra exacto con los totales impresos (372.370.111 − 443.923.801 − 26.213.126 + 529.404 − 5.156.377)",
+   "evidencia": "pág. 17 del visor, .md L912 y L918",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "cfce6eb",
-  "c672389",
-  "45d7976",
-  "ca40666"
+  "cfce6eb"
  ],
  "chequeos": [
   {
@@ -35,6 +43,11 @@
    "detalle": "extraer.mjs no encontró el resultado impreso"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-102.393789 por ajuste manual ((102.393.789): el estado cortó en b12 y el resultado impreso (L912 y L918) quedó afuera; cierra exacto con los totales impresos (372.370.111 − 443.923.801 − 26.213.126 + 529.404 − 5.156.377)); impuesto deducido 5.15104 (antes de impuestos -97.242749; el documento imprimía -5.156377)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
@@ -42,9 +55,11 @@
  ],
  "notas": [
   "el desglose de \"Amministrative - pubblicitarie e generali\" (19 filas) no suma la fila: quedó la fila",
+  "ajuste manual: resultado final (102.393.789) (2026-10-08, el estado cortó en b12 y el resultado impreso (L912 y L918) quedó afuera; cierra exacto con los totales impresos (372.370.111 − 443.923.801 − 26.213.126 + 529.404 − 5.156.377))",
   "duda de localizar que no afecta la carga: b68 detalla los costos capitalizados del vivaio, no abre un renglón de gasto por naturaleza.",
   "duda de localizar que no afecta la carga: b1 y b2 resumen valor y costos de la producción ya presentes en b8 y notas.",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"-\"): ¿Se deja afuera de la carga el cuadro por categoría Tesserati/Altri del costo del personal (L2573-L2577) y se carga solo el total L2578?"
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"-\"): ¿Se deja afuera de la carga el cuadro por categoría Tesserati/Altri del costo del personal (L2573-L2577) y se carga solo el total L2578?",
+  "duda de extraer ya contestada para el club (perimetro, \"a) salari e stipendi\"): corregir no, en Inter-fascicolo-bilancio-consolidato-2019-20.pdf"
  ],
  "reintentar": [
   {
@@ -65,10 +80,17 @@
   "ingresos": 372.37016,
   "gastos": 443.929187,
   "financiero": -25.683722,
-  "impuesto": -5.156377,
+  "impuesto": 5.15104,
   "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -102.393789,
+  "resultadoFinal": {
+   "valor": -102.393789,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": -5.156377,
+   "impuestoDeducido": 5.15104
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -643,7 +665,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -689,19 +711,9 @@
  ],
  "impuesto": [
   {
-   "etiqueta": "a) imposte correnti",
-   "M": -6.617614,
+   "etiqueta": "a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -5.15104,
    "linea": 908
-  },
-  {
-   "etiqueta": "b) imposte differite",
-   "M": 0.338158,
-   "linea": 909
-  },
-  {
-   "etiqueta": "c) imposte anticipate",
-   "M": 1.123079,
-   "linea": 910
   }
  ]
 }

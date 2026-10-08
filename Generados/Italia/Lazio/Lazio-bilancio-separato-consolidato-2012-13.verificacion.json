@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.md",
- "generado": "2026-10-08T01:12:55.854Z",
+ "generado": "2026-10-08T03:20:11.539Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2013,
@@ -11,10 +11,49 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
+   "campo": "fila",
+   "valor": "(4.068.181)",
+   "linea": 3638,
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "columnas corridas en L3635-L3661; 105 + 287.471 - 4.355.757 = -4.068.181",
+   "evidencia": "pág. 99 del visor, .md L3638, L3642, L3650, L3654",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
+   "campo": "fila",
+   "valor": "(2.584.541)",
+   "linea": 3656,
+   "etiqueta": "Imposte correnti",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "columnas corridas; el importe 2013 está en la columna del año",
+   "evidencia": "pág. 99 del visor, .md L3656",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
+   "campo": "fila",
+   "valor": "5.533.728",
+   "linea": 3657,
+   "etiqueta": "Imposte differite e anticipate",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "columnas corridas; 5.533.728 = 1.618.551 + 3.915.177 (L3658-L3660); cierra el utile -5.894.288",
+   "evidencia": "pág. 99 del visor, .md L3657-L3660",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "f3709ce",
-  "b79d726"
+  "f3709ce"
  ],
  "chequeos": [
   {
@@ -29,8 +68,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 109.794296 - gastos 114.568051 ± financiero 0 ± impuesto 0 no da el impreso -5.894288"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2012",
@@ -46,11 +85,15 @@
  "notas": [
   "la nota de \"Oneri da gestione diritti calciatori\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Accantonamenti e altre svalutazioni\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Oneri finanziari netti e differenze cambio\" (financiero) (4.068.181) (2026-10-08, columnas corridas en L3635-L3661; 105 + 287.471 - 4.355.757 = -4.068.181)",
+  "ajuste manual: fila \"Imposte correnti\" (impuesto) (2.584.541) (2026-10-08, columnas corridas; el importe 2013 está en la columna del año)",
+  "ajuste manual: fila \"Imposte differite e anticipate\" (impuesto) 5.533.728 (2026-10-08, columnas corridas; 5.533.728 = 1.618.551 + 3.915.177 (L3658-L3660); cierra el utile -5.894.288)",
   "duda de localizar que no afecta la carga: Desglosan renglones financieros del estado consolidado; se incluyen si el esquema carga financieros.",
   "duda de extraer ya contestada para el club (columna, \"Oneri finanziari netti e differenze cambio\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer ya contestada para el club (columna, \"Imposte correnti\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer que no afecta la carga: L5309 es un 'di cui' incluido en 'Da altri'; cargarlo duplicaría importes.",
-  "duda de extraer que no afecta la carga: La nota b181 L5430-L5431 abre en dos un concepto que en el estado es uno solo; ambos suman el total."
+  "duda de extraer que no afecta la carga: La nota b181 L5430-L5431 abre en dos un concepto que en el estado es uno solo; ambos suman el total.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -58,12 +101,12 @@
  "totales": {
   "ingresos": 109.794296,
   "gastos": 114.568051,
-  "financiero": 0,
-  "impuesto": 0,
+  "financiero": -4.068181,
+  "impuesto": 2.949187,
   "resultadoImpreso": -5.894288,
   "resultadoParaCargar": -5.894288,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -495,6 +538,23 @@
   "financiero": 1,
   "impuesto": 1
  },
- "financiero": [],
- "impuesto": []
+ "financiero": [
+  {
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "M": -4.068181,
+   "linea": 3638
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Imposte correnti",
+   "M": -2.584541,
+   "linea": 3656
+  },
+  {
+   "etiqueta": "Imposte differite e anticipate",
+   "M": 5.533728,
+   "linea": 3657
+  }
+ ]
 }

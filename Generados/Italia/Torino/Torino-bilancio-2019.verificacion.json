@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2019.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2019.md",
- "generado": "2026-10-08T01:12:56.314Z",
- "estado": "cola",
+ "generado": "2026-10-08T03:20:13.017Z",
+ "estado": "ok",
  "clubId": "torino-it",
  "year": 2019,
  "escala": {
@@ -11,14 +11,23 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "93ca3b8",
-  "5c25ef2",
-  "5c25ef2",
-  "26b6dbc",
-  "aa559e9"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2019.pdf",
+   "campo": "fila",
+   "valor": "(609.108)",
+   "linea": 647,
+   "etiqueta": "17) d) oneri diversi (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 647,
+   "motivo": "el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)'",
+   "evidencia": "pág. 13 del visor (impreso 13), .md L644-L648",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,8 +41,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 96.332 - gastos 113.076854 ± financiero 1.110172 ± impuesto 2.880636 no da el impreso -13.971466"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
@@ -47,7 +56,13 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b1 es una reclasificación del conto economico en miles que repite los importes de b12."
+  "ajuste manual: fila \"17) d) oneri diversi (17, costo)\" (financiero) (609.108), en lugar de la fila de L647 (2026-10-08, el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)')",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Torino-bilancio-2019.pdf",
+  "duda de localizar que no afecta la carga: b1 es una reclasificación del conto economico en miles que repite los importes de b12.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Torino-bilancio-2019.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"[sin etiqueta] Svalutazione dei crediti\"): aceptar, en Torino-bilancio-2019.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"[sin etiqueta] Imposte correnti\"): aceptar, en Torino-bilancio-2019.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -55,12 +70,12 @@
  "totales": {
   "ingresos": 96.332,
   "gastos": 113.076854,
-  "financiero": 1.110172,
+  "financiero": -0.108044,
   "impuesto": 2.880636,
   "resultadoImpreso": -13.971466,
   "resultadoParaCargar": -13.971466,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -411,14 +426,14 @@
    "linea": 645
   },
   {
-   "etiqueta": "[sin etiqueta] Interessi e altri oneri finanziari - altri",
-   "M": 0.609108,
-   "linea": 647
-  },
-  {
    "etiqueta": "[sin etiqueta] Rettifiche di valore di attività finanziarie",
    "M": 0,
    "linea": 649
+  },
+  {
+   "etiqueta": "17) d) oneri diversi (17, costo)",
+   "M": -0.609108,
+   "linea": 647
   }
  ],
  "impuesto": [
