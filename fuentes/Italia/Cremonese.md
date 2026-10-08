@@ -57,3 +57,5 @@ devolver 0 resultados / rechazar conexión a mitad de sesión).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2022 desde `Clubes/Italia/Cremonese/Cremonese-bilancio-2022.pdf` (sourceId `cremonese-it-bilancio-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Cremonese/Cremonese-bilancio-2024.pdf` (sourceId `cremonese-it-bilancio-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Cremonese/Cremonese-bilancio-2023.pdf` (sourceId `cremonese-it-bilancio-2023`).
