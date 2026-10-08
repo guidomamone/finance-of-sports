@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md",
- "generado": "2026-10-08T22:36:57.824Z",
+ "generado": "2026-10-08T22:47:20.028Z",
  "estado": "cola",
  "clubId": "inter-it",
  "year": 2023,
@@ -60,8 +60,7 @@
   "duda de localizar que no afecta la carga: Es detalle por jugador; el total ya está en la nota b44.",
   "duda de extraer que no afecta la carga: El cuadro L2201-L2204 separa columnas Registered y Other sin total por fila; solo se cargó el total L2206, y el estado ya trae los renglones.",
   "duda de extraer que no afecta la carga: Los importes coinciden (10.976 vs 10.975.748) pero la etiqueta difiere.",
-  "duda de extraer que no afecta la carga: 39.658 ≈ 6.269.781+33.388.426; el renglón 17) no tiene importe propio en el estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: 39.658 ≈ 6.269.781+33.388.426; el renglón 17) no tiene importe propio en el estado."
  ],
  "reintentar": [
   {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.md",
- "generado": "2026-10-08T22:36:56.382Z",
+ "generado": "2026-10-08T22:47:19.986Z",
  "estado": "cola",
  "clubId": null,
  "year": 2016,
@@ -43,13 +43,11 @@
   }
  ],
  "notas": [
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (63.441133): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "la nota de \"a) salari e stipendi\" no suma el renglón (25.962504 contra 26.607857, sumando sus renglones): quedó el renglón del estado",
   "escalón \"sección D\": 3 fila(s) de rettifiche (L984, L985, L989) al financiero; su suma da el total impreso (-1.139768, L1004), con el 17) restando; cerró la lectura 0",
-  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (63.441133): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "escalón \"renglón grande sin abrir\": \"altri\" (L950) era el 89% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "duda de extraer que no afecta la carga: Esos cuadros repiten importes ya presentes en el estado; b68 además tiene la columna 2016 mezclada con la etiqueta.",
-  "duda de extraer que no afecta la carga: Diferencia de 200 en el año anterior entre nota y estado; no afecta el ejercicio pedido.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Diferencia de 200 en el año anterior entre nota y estado; no afecta el ejercicio pedido."
  ],
  "reintentar": [
   {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
- "generado": "2026-10-08T22:36:56.291Z",
+ "generado": "2026-10-08T22:47:19.876Z",
  "estado": "cola",
  "clubId": null,
  "year": 2014,
@@ -44,13 +44,11 @@
   }
  ],
  "notas": [
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (45.022255): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "la nota de \"a) salari e stipendi\" no suma el renglón (21.026638 contra 21.523555, sumando sus renglones): quedó el renglón del estado",
   "escalón \"sección D\": 3 fila(s) de rettifiche (L475, L477, L486) al financiero; su suma da el total impreso (-0.931982, L488), con el 17) restando; cerró la lectura 0",
-  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (45.022255): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "escalón \"renglón grande sin abrir\": \"altri\" (L383) era el 88% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "duda de localizar que no afecta la carga: b61 incluye proventi da compartecipazione ex art. 102 bis que desglosan renglones financieros del conto economico.",
-  "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati."
  ],
  "reintentar": [
   {

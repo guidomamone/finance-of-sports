@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf",
   "club": "juve-stabia",
   "year": 2024,
-  "generatedAt": "2026-10-08T18:56:46.435Z",
+  "generatedAt": "2026-10-08T22:47:20.127Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -64,7 +64,7 @@
       "values": [
         0.538644
       ],
-      "glosa": "Ingresos por subvenciones y aportaciones"
+      "glosa": "Ingresos por aportaciones"
     },
     {
       "label": "Revenue from store",
@@ -74,7 +74,7 @@
       "values": [
         0.074261
       ],
-      "glosa": "Ingresos por ventas de tienda"
+      "glosa": "Ingresos por tienda"
     },
     {
       "label": "Other incomes",
@@ -204,7 +204,7 @@
       "values": [
         0.090272
       ],
-      "glosa": "Pérdidas por deterioro de créditos"
+      "glosa": "Deterioro de créditos comerciales"
     },
     {
       "label": "Penalties and fines",
@@ -234,7 +234,7 @@
       "values": [
         0.082667
       ],
-      "glosa": "Pérdidas por deterioro de activos intangibles"
+      "glosa": "Pérdidas por deterioro del inmovilizado intangible"
     },
     {
       "label": "Depreciation costs",
@@ -244,7 +244,7 @@
       "values": [
         0.007872
       ],
-      "glosa": "Amortización del inmovilizado material"
+      "glosa": "Gastos de amortización del inmovilizado material"
     },
     {
       "label": "Amortization on Intangible assets",
@@ -254,7 +254,7 @@
       "values": [
         0.004474
       ],
-      "glosa": "Amortización de activos intangibles"
+      "glosa": "Amortización del inmovilizado intangible"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
- "generado": "2026-10-08T22:36:56.339Z",
+ "generado": "2026-10-08T22:47:19.930Z",
  "estado": "ok",
  "clubId": null,
  "year": 2015,
@@ -55,8 +55,7 @@
   "duda de localizar que no afecta la carga: b66 abre los intereses en 'Debiti verso banche' y 'Altri', solo ejercicio corriente.",
   "duda de extraer que no afecta la carga: El cuadro del costo del personal está dividido en Tesserati/Altri dipen./Totale; se tomó la columna Totale que coincide con el estado (L1864-L1881).",
   "duda de extraer que no afecta la carga: La suma 200+5.533.199 cuadra con L903; en 2014 los 820 también son plusvalenza cespiti (L2040).",
-  "duda de extraer que no afecta la carga: 19.256+703.395=722.651 coincide con L908; la etiqueta 'altri' se repite en varios renglones del estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: 19.256+703.395=722.651 coincide con L908; la etiqueta 'altri' se repite en varios renglones del estado."
  ],
  "reintentar": [
   {

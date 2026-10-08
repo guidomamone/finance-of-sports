@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
   "club": "genoa-it",
   "year": 2023,
-  "generatedAt": "2026-10-08T22:33:49.520Z",
+  "generatedAt": "2026-10-08T22:47:19.810Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.152549
       ],
-      "glosa": "* Partidos de Copa Italia"
+      "glosa": "* Partidos de Copa de Italia"
     },
     {
       "label": "* Altre gare",
@@ -44,7 +44,7 @@
       "values": [
         0.177797
       ],
-      "glosa": "* Partidos de Copa Italia"
+      "glosa": "* Partidos de Copa de Italia"
     },
     {
       "label": "Abbonamenti",
@@ -74,7 +74,7 @@
       "values": [
         2.635423
       ],
-      "glosa": "Ingresos por patrocinio"
+      "glosa": "Ingresos por patrocinios"
     },
     {
       "label": "Proventi pubblicitari",
@@ -114,7 +114,7 @@
       "values": [
         1.144396
       ],
-      "glosa": "Ingresos por cesión temporal de jugadores (préstamos)"
+      "glosa": "Ingresos por cesión temporal de futbolistas (préstamos)"
     },
     {
       "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
@@ -124,7 +124,7 @@
       "values": [
         6.2625
       ],
-      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -134,7 +134,7 @@
       "values": [
         9.016878
       ],
-      "glosa": "Otros ingresos de la gestión de futbolistas"
+      "glosa": "Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "Altri ricavi e proventi",
@@ -144,7 +144,7 @@
       "values": [
         60.269055
       ],
-      "glosa": "Otros ingresos y rendimientos de explotación"
+      "glosa": "Otros ingresos de explotación"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -154,7 +154,7 @@
       "values": [
         1.015716
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Consumo de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -194,7 +194,7 @@
       "values": [
         2.436368
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
+      "glosa": "Gastos de alojamiento, manutención y desplazamientos para partidos"
     },
     {
       "label": "Servizio biglietteria, controllo ingressi",
@@ -214,7 +214,7 @@
       "values": [
         8.391287
       ],
-      "glosa": "Gastos de servicios exteriores"
+      "glosa": "Costes de externalización de servicios"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -224,7 +224,7 @@
       "values": [
         0.111985
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Primas de seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -274,7 +274,7 @@
       "values": [
         0.554082
       ],
-      "glosa": "c) Indemnizaciones por extinción de contrato"
+      "glosa": "c) Provisión para indemnizaciones por cese laboral"
     },
     {
       "label": "* Diritti pluriennali calciatori 1° squadra",
@@ -294,7 +294,7 @@
       "values": [
         0.07175
       ],
-      "glosa": "* Derechos federativos de futbolistas de categorías inferiores"
+      "glosa": "* Derechos federativos de futbolistas de la cantera"
     },
     {
       "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -304,7 +304,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otras correcciones por deterioro del inmovilizado"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -364,7 +364,7 @@
       "values": [
         2.951382
       ],
-      "glosa": "Gastos por cesión temporal de futbolistas"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -374,7 +374,7 @@
       "values": [
         1.339974
       ],
-      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos de futbolistas"
     },
     {
       "label": "* Costi valorizzazione calciatori",
@@ -384,7 +384,7 @@
       "values": [
         3.707528
       ],
-      "glosa": "* Gastos de valorización de futbolistas"
+      "glosa": "* Gastos de valorización y formación de futbolistas"
     },
     {
       "label": "* Contributo di solidarietà",
@@ -394,7 +394,7 @@
       "values": [
         0.298619
       ],
-      "glosa": "* Contribución de solidaridad"
+      "glosa": "* Mecanismo de solidaridad"
     },
     {
       "label": "* Premio alla carriera *ex art. 99 bis N.O.I.F.*",
@@ -404,7 +404,7 @@
       "values": [
         0.183846
       ],
-      "glosa": "* Premio a la trayectoria profesional según el art. 99 bis N.O.I.F.*"
+      "glosa": "* Premio a la trayectoria deportiva (art. 99 bis N.O.I.F.)"
     },
     {
       "label": "* Spese, ammende e multe gare",
@@ -414,7 +414,7 @@
       "values": [
         0.215257
       ],
-      "glosa": "* Gastos, multas y sanciones por partidos"
+      "glosa": "* Gastos, sanciones y multas disciplinarias de partidos"
     },
     {
       "label": "* Oneri lega",
@@ -424,7 +424,7 @@
       "values": [
         3.80355
       ],
-      "glosa": "* Cuotas y gastos de la liga"
+      "glosa": "* Cuotas y gastos de la Liga"
     },
     {
       "label": "* Oneri tributari indiretti",
@@ -444,7 +444,7 @@
       "values": [
         6.358874
       ],
-      "glosa": "* Otros (Gastos y pérdidas extraordinarias de ejercicios anteriores)"
+      "glosa": "* Otros (Gastos excepcionales)"
     }
   ]
 }

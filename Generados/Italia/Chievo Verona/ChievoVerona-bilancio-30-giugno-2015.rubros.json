@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
   "club": "chievo-verona",
   "year": 2015,
-  "generatedAt": "2026-10-08T18:56:45.271Z",
+  "generatedAt": "2026-10-08T22:47:19.930Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.084243
       ],
-      "glosa": "Partidos como local campeonato 1.er equipo"
+      "glosa": "Partidos en casa liga 1.er equipo"
     },
     {
       "label": "GARE IN CASA COPPA ITAL 1^ SQUAD",
@@ -24,7 +24,7 @@
       "values": [
         0.001621
       ],
-      "glosa": "Partidos como local Copa Italia 1.er equipo"
+      "glosa": "Partidos en casa Copa Italia 1.er equipo"
     },
     {
       "label": "GARE FUORI CASA COPPA ITALIA",
@@ -34,7 +34,7 @@
       "values": [
         0.010182
       ],
-      "glosa": "Partidos como visitante Copa Italia"
+      "glosa": "Partidos fuera de casa Copa Italia"
     },
     {
       "label": "ABBONAMENTI",
@@ -84,7 +84,7 @@
       "values": [
         0.938955
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -94,7 +94,7 @@
       "values": [
         8.073092
       ],
-      "glosa": "7) Servicios exteriores"
+      "glosa": "7) Por servicios"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -104,7 +104,7 @@
       "values": [
         1.712631
       ],
-      "glosa": "8) Arrendamientos y cánones"
+      "glosa": "8) Por uso de bienes de terceros"
     },
     {
       "label": "a) salari e stipendi",
@@ -134,7 +134,7 @@
       "values": [
         0.250637
       ],
-      "glosa": "c) Indemnizaciones por cese de relación laboral"
+      "glosa": "c) Indemnización por fin de relación laboral"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -164,7 +164,7 @@
       "values": [
         0.068897
       ],
-      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo circulante y de tesorería"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -194,7 +194,7 @@
       "values": [
         1.830263
       ],
-      "glosa": "Costes por cesión temporal de jugadores"
+      "glosa": "Coste por cesión temporal de jugadores"
     },
     {
       "label": "Minusvalenza da cessioni diritti plur. calciatori",
@@ -204,7 +204,7 @@
       "values": [
         2.292323
       ],
-      "glosa": "Pérdidas por traspasos de derechos federativos de futbolistas"
+      "glosa": "Pérdidas por cesión de derechos plurianuales de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",

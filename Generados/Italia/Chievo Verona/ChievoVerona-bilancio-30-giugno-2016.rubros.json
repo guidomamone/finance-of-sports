@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2016.pdf",
   "club": "chievo-verona",
   "year": 2016,
-  "generatedAt": "2026-10-08T18:56:45.313Z",
+  "generatedAt": "2026-10-08T22:47:19.986Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         0.008015
       ],
-      "glosa": "- Partidos de Copa Italia"
+      "glosa": "- Partidos de Copa de Italia"
     },
     {
       "label": "- Altre gare Italia/estero",
@@ -34,7 +34,7 @@
       "values": [
         0.010077
       ],
-      "glosa": "- Otros partidos en Italia/extranjero"
+      "glosa": "- Otros partidos en Italia y el extranjero"
     },
     {
       "label": "Abbonamenti",
@@ -57,24 +57,94 @@
       "glosa": "4) Trabajos realizados por la empresa para su activo"
     },
     {
-      "label": "contributi in conto esercizio",
+      "label": "Contributi in conto esercizio",
       "lado": "revenue",
-      "page": 30,
-      "section": "estado",
+      "page": 49,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
       "values": [
         2.126581
       ],
       "glosa": "Subvenciones a la explotación"
     },
     {
-      "label": "altri",
+      "label": "Proventi da sponsorizzazioni",
       "lado": "revenue",
-      "page": 30,
-      "section": "estado",
+      "page": 49,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
       "values": [
-        61.314552
+        4.915909
       ],
-      "glosa": "Otros"
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Proventi pubblicitari",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        1.007425
+      ],
+      "glosa": "Ingresos publicitarios"
+    },
+    {
+      "label": "- Proventi televisivi",
+      "lado": "revenue",
+      "page": 49,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        35.076342
+      ],
+      "glosa": "- Ingresos televisivos"
+    },
+    {
+      "label": "Proventi vari",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        0.13
+      ],
+      "glosa": "Ingresos varios"
+    },
+    {
+      "label": "Ricavi da cessione temporanea calciatori",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        0.1968
+      ],
+      "glosa": "Ingresos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "Plusvalenze da cessione diritti pluriennali calciatori",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        18.822898
+      ],
+      "glosa": "Plusvalías por traspaso de derechos plurianuales de futbolistas"
+    },
+    {
+      "label": "Altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        0.675969
+      ],
+      "glosa": "Otros ingresos de gestión de futbolistas"
+    },
+    {
+      "label": "Ricavi e proventi diversi",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)",
+      "values": [
+        0.489209
+      ],
+      "glosa": "Otros ingresos y rendimientos"
     },
     {
       "label": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -84,7 +154,7 @@
       "values": [
         1.035203
       ],
-      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Por materias primas, secundarias, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -94,7 +164,7 @@
       "values": [
         10.585414
       ],
-      "glosa": "7) Servicios exteriores"
+      "glosa": "7) Por servicios"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -104,7 +174,7 @@
       "values": [
         2.293589
       ],
-      "glosa": "8) Arrendamientos y cánones"
+      "glosa": "8) Por arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -134,7 +204,7 @@
       "values": [
         0.268687
       ],
-      "glosa": "c) Indemnizaciones por cese de contrato"
+      "glosa": "c) Indemnización por cese de personal"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -164,7 +234,7 @@
       "values": [
         0.194
       ],
-      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Correcciones de valor de créditos del activo corriente y de tesorería"
     },
     {
       "label": "13) altri accantonamenti",
@@ -204,7 +274,7 @@
       "values": [
         0.003607
       ],
-      "glosa": "- Porcentaje sobre taquillas a equipos visitantes"
+      "glosa": "- Porcentaje sobre recaudación de partidos a equipos visitantes"
     },
     {
       "label": "Costo per acquisii.temporanea prestaz.",
@@ -214,7 +284,7 @@
       "values": [
         1.6
       ],
-      "glosa": "Gastos por cesión temporal de jugadores"
+      "glosa": "Costes por adquisición temporal de prestaciones deportivas"
     },
     {
       "label": "Minusvalenze da cessione diritti plur. calciatori",
@@ -224,7 +294,7 @@
       "values": [
         1.516225
       ],
-      "glosa": "Pérdidas por traspaso de derechos de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos plurianuales de futbolistas"
     },
     {
       "label": "Altri oneri da gestione calciatori",
@@ -244,7 +314,7 @@
       "values": [
         2.237947
       ],
-      "glosa": "Otros gastos de gestión corrientes"
+      "glosa": "Otros gastos diversos de gestión"
     }
   ]
 }

@@ -1,37 +1,11 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
- "generado": "2026-10-08T22:35:33.263Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 71 número(s) sin confirmar (Generados/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.validacion.json, \"noConfirmados\"; ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "20.2% del dinero de gastos queda sin categoría aceptable (tope 5%): \"6) per materie prime, sussidiarie, di co\" 1.015716 (no está en categorias.json); \"* Diritti pluriennali calciatori 1° squa\" 27.794978 (no está en categorias.json); \"* Diritti pluriennali calciatori settore\" 0.07175 (no está en categorias.json)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 112.253428 + gastos -113.775948 + netInterest -9.57946 + tax 2.712602 = -8.389378 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -32.541764)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 112.253428 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -106.0771 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-08T22:50:10.644Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-07: Guido 2026-10-07: individual (Genoa Cricket and Football Club S.p.A.); único perímetro con documento en 2022-2025; el consolidado (+ Genoa Image) difiere 3-6%)",
   "el documento cierra 2023-12-31 (ejercicio desde el 01-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
-  "ingresos: 1 fila(s) sin categoría aceptable (4.0% del dinero del lado): \"contributi in conto esercizio\" (no está en categorias.json)",
-  "gastos: 3 fila(s) sin categoría aceptable (20.2% del dinero del lado): \"6) per materie prime, sussidiarie, di consumo e di\" (no está en categorias.json); \"* Diritti pluriennali calciatori 1° squadra\" (no está en categorias.json); \"* Diritti pluriennali calciatori settore giovanile\" (no está en categorias.json)"
+  "gastos: ningún total impreso igual a la suma de las líneas (-134.959544); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "genoa-it",
@@ -47,7 +21,7 @@
     "_pag": 93,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Gare coppa italia",
@@ -57,7 +31,7 @@
     "_pag": 93,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altre gare",
@@ -67,7 +41,7 @@
     "_pag": 93,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Gare coppa italia",
@@ -77,7 +51,7 @@
     "_pag": 93,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Abbonamenti",
@@ -87,7 +61,17 @@
     "_pag": 93,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "contributi in conto esercizio",
+    "normalizedCategory": "other_income",
+    "amountNative": 4.730058,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 2,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi da sponsorizzazioni",
@@ -97,7 +81,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi pubblicitari",
@@ -107,7 +91,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi commerciali e royalties",
@@ -117,7 +101,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Proventi da cessione diritti televisivi",
@@ -127,7 +111,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Ricavi da cessione temporanea prestazioni calciatori (prestiti)",
@@ -137,7 +121,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
@@ -147,7 +131,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri proventi da gestione calciatori",
@@ -157,7 +141,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri ricavi e proventi",
@@ -167,10 +151,20 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "6) per materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.015716,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
    {
     "rawLabel": "Costi per tesserati",
     "normalizedCategory": "wages_squad",
@@ -179,7 +173,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi per attività sportiva",
@@ -189,7 +183,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi specifici tecnici",
@@ -199,7 +193,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi vitto, alloggio, locomozione gare",
@@ -209,7 +203,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Servizio biglietteria, controllo ingressi",
@@ -219,7 +213,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi di Service",
@@ -239,7 +233,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Amministrative, pubblicitarie e generali",
@@ -249,7 +243,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "8) per godimento di beni di terzi",
@@ -259,7 +253,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "a) salari e stipendi",
@@ -269,7 +263,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "b) oneri sociali",
@@ -279,7 +273,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "c) trattamento di fine rapporto",
@@ -289,7 +283,27 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diritti pluriennali calciatori 1° squadra",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -27.794978,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diritti pluriennali calciatori settore giovanile",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.07175,
+    "disclosureLevel": "aggregated",
+    "_pag": 100,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "c) altre svalutazioni delle immobilizzazioni",
@@ -299,7 +313,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -309,7 +323,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "12) accantonamenti per rischi",
@@ -319,7 +333,7 @@
     "_pag": 13,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Spese varie organizzazione gare",
@@ -329,7 +343,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Tasse iscrizioni gare",
@@ -339,7 +353,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Oneri specifici verso squadre ospitate",
@@ -349,7 +363,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -359,7 +373,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -369,7 +383,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Costi valorizzazione calciatori",
@@ -379,7 +393,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Contributo di solidarietà",
@@ -399,7 +413,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Spese, ammende e multe gare",
@@ -409,7 +423,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Oneri lega",
@@ -419,7 +433,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Oneri tributari indiretti",
@@ -429,7 +443,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Altri (Sopravvenienze Passive)",
@@ -439,7 +453,7 @@
     "_pag": 101,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -452,11 +466,57 @@
    "assetSales": 0,
    "netInterest": -9.57946,
    "tax": 2.712602,
+   "extraRows": [
+    {
+     "label": "altri",
+     "value": 0.011352
+    },
+    {
+     "label": "b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni",
+     "value": 0.04725
+    },
+    {
+     "label": "c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni",
+     "value": 0
+    },
+    {
+     "label": "da imprese controllanti",
+     "value": 0.186305
+    },
+    {
+     "label": "altri",
+     "value": 0.502708
+    },
+    {
+     "label": "17-bis) utili e perdite su cambi",
+     "value": -0.003316
+    },
+    {
+     "label": "altri oneri finanziari (17, costo)",
+     "value": -10.323759
+    },
+    {
+     "label": "imposte correnti",
+     "value": -1.559129
+    },
+    {
+     "label": "imposte relative a esercizi precedenti",
+     "value": -1.051785
+    },
+    {
+     "label": "imposte differite e anticipate",
+     "value": 5.310717
+    },
+    {
+     "label": "proventi da adesione consolidato fiscale (resta del impuesto)",
+     "value": 0.012799
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 116.983486,
+   "officialTotalExpenses": 134.959544,
+   "officialPAT": -32.541764
   },
   "source": {
    "id": "genoa-it-bilancio-31-12-2023-individual",
@@ -464,7 +524,7 @@
    "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md",
@@ -507,6 +567,716 @@
    "evidencia": ".md L402, L403",
    "autor": "Guido",
    "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "2022",
+   "linea": 352,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "6.021.395",
+   "linea": 356,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.110.505",
+   "linea": 356,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "4.730.058",
+   "linea": 358,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "29.918.278",
+   "linea": 358,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "106.232.032",
+   "linea": 359,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "51.634.857",
+   "linea": 359,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "110.962.090",
+   "linea": 360,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "81.553.135",
+   "linea": 360,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "116.983.485",
+   "linea": 361,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "84.663.640",
+   "linea": 361,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "1.015.716",
+   "linea": 363,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "164.498",
+   "linea": 363,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "23.532.578",
+   "linea": 364,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "15.140.901",
+   "linea": 364,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.785.918",
+   "linea": 365,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.007.074",
+   "linea": 365,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "60.082.004",
+   "linea": 367,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "70.221.072",
+   "linea": 367,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.734.692",
+   "linea": 368,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "4.546.914",
+   "linea": 368,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "554.082",
+   "linea": 369,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "619.956",
+   "linea": 369,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "64.370.778",
+   "linea": 370,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "75.387.942",
+   "linea": 370,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "27.866.728",
+   "linea": 372,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "19.452.175",
+   "linea": 372,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.845.322",
+   "linea": 373,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "27.866.728",
+   "linea": 374,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "23.297.497",
+   "linea": 374,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "304.581",
+   "linea": 375,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "411.247",
+   "linea": 375,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "349.732",
+   "linea": 376,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "21.782.092",
+   "linea": 377,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "32.866.910",
+   "linea": 377,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "142.658.391",
+   "linea": 378,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "150.625.801",
+   "linea": 378,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "25.674.906",
+   "linea": 379,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "65.962.161",
+   "linea": 379,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "11.352",
+   "linea": 383,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "138.916",
+   "linea": 383,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "11.352",
+   "linea": 384,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "138.916",
+   "linea": 384,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "47.250",
+   "linea": 385,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "19.529",
+   "linea": 385,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "186.305",
+   "linea": 388,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "502.708",
+   "linea": 389,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "689.013",
+   "linea": 390,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "747.615",
+   "linea": 391,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "158.487",
+   "linea": 391,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "10.323.759",
+   "linea": 393,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "5.297.416",
+   "linea": 393,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "10.323.759",
+   "linea": 394,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "5.297.416",
+   "linea": 394,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "3.316",
+   "linea": 395,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "23.841",
+   "linea": 395,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "9.579.460",
+   "linea": 396,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "5.162.770",
+   "linea": 396,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "35.254.366",
+   "linea": 397,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "71.124.931",
+   "linea": 397,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "1.559.129",
+   "linea": 399,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "847.954",
+   "linea": 399,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "1.051.785",
+   "linea": 400,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "5.310.717",
+   "linea": 401,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "8.589.283",
+   "linea": 401,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "12.799",
+   "linea": 402,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "1.654.981",
+   "linea": 402,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "2.712.602",
+   "linea": 403,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "9.396.310",
+   "linea": 403,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "32.541.764",
+   "linea": 404,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "confirmado",
+   "valor": "61.728.621",
+   "linea": 404,
+   "motivo": "Claude 2026-10-08 (Guido: Genoa 2023, ok): el PDF figura digital pero el texto de la pág. 13 (el estado) no trae estos números; el estado cierra exacto con el resultado impreso (-32.541.764), con sus totales y con la columna 2022 del documento de 2022",
+   "evidencia": "pág. 13 del visor, validacion.json noConfirmados",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
  "seleccion": {
@@ -525,7 +1295,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.8562
@@ -540,7 +1310,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.152549
@@ -555,7 +1325,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.113135
@@ -570,7 +1340,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.177797
@@ -585,7 +1355,7 @@
    "cat": "season_tickets",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 3.721714
@@ -597,10 +1367,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 4.730058,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "conf": 0.95,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.730058
   },
   {
    "label": "Proventi da sponsorizzazioni",
@@ -612,7 +1385,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 2.635423
@@ -627,7 +1400,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.842
@@ -642,7 +1415,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 2.061781
@@ -657,7 +1430,7 @@
    "cat": "broadcasting",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 24
@@ -672,7 +1445,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.144396
@@ -687,7 +1460,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 6.2625
@@ -702,7 +1475,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 9.016878
@@ -717,7 +1490,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 60.269055
@@ -729,10 +1502,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 1.015716,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.015716
   },
   {
    "label": "Costi per tesserati",
@@ -744,7 +1520,7 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.020482
@@ -759,7 +1535,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.709102
@@ -774,7 +1550,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -5.527073
@@ -789,7 +1565,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.436368
@@ -804,7 +1580,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.401331
@@ -835,7 +1611,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.111985
@@ -850,7 +1626,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -5.93495
@@ -865,7 +1641,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.785918
@@ -880,7 +1656,7 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -60.082004
@@ -895,7 +1671,7 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.734692
@@ -910,34 +1686,40 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.554082
   },
   {
-   "label": "* Diritti pluriennali calciatori 1° squadra",
+   "label": "Diritti pluriennali calciatori 1° squadra",
    "page": 100,
    "native": 27.794978,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")",
    "signoFijo": 27.794978,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "player_amortisation",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -27.794978
   },
   {
-   "label": "* Diritti pluriennali calciatori settore giovanile",
+   "label": "Diritti pluriennali calciatori settore giovanile",
    "page": 100,
    "native": 0.07175,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")",
    "signoFijo": 0.07175,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "player_amortisation",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.07175
   },
   {
    "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -949,7 +1731,7 @@
    "cat": "player_impairment",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": 0
@@ -964,7 +1746,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.304581
@@ -979,7 +1761,7 @@
    "cat": "other_amortisation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": 0
@@ -994,7 +1776,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.862316
@@ -1009,7 +1791,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.03
@@ -1024,7 +1806,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.061865
@@ -1039,7 +1821,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.951382
@@ -1054,7 +1836,7 @@
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.339974
@@ -1069,7 +1851,7 @@
    "cat": "player_amortisation",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.707528
@@ -1100,7 +1882,7 @@
    "cat": "wages_squad",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.183846
@@ -1115,7 +1897,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.215257
@@ -1130,7 +1912,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.80355
@@ -1145,7 +1927,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.968882
@@ -1160,7 +1942,7 @@
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -6.358874
@@ -1293,19 +2075,34 @@
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"altri\")": "gastos con signo",
    "verificacion (nota que desglosa \"7) per servizi\")": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")": "gastos con signo",
+   "verificacion (nota que desglosa \"a) ammortamento delle immobilizzazioni immateriali\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"14) oneri diversi di gestione\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 112.253428,
-  "expSum": -106.0771,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "revSum": 116.983486,
+  "expSum": -134.959544,
+  "officialTotalRevenue": 116.983486,
+  "officialTotalExpenses": 134.959544,
+  "officialPAT": -32.541764,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -32.541764,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 116.983486
+  }
  },
  "liga": {
   "valor": "it-seriea",
@@ -1355,10 +2152,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 6,
-  "lineasIngreso": 13,
-  "lineasGasto": 27,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
+  "lineasGasto": 30,
   "metaFilas": 11,
   "excluidas": 0
  }

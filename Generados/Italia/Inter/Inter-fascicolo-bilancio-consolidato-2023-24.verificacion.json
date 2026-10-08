@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
- "generado": "2026-10-08T22:36:57.864Z",
+ "generado": "2026-10-08T22:47:20.070Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2024,
@@ -74,8 +74,7 @@
   "duda de extraer confirmada por las sumas (columna, \"a) salaries and wages\"): ¿Se deja afuera de la carga el desglose Registered/Other del cuadro de personal (L3044-L3048), cargando solo el total L3049?",
   "duda de extraer que no afecta la carga: L2986 dice 'include, among others'; las partidas listadas no cubren el total del renglón.",
   "duda de extraer que no afecta la carga: 40.368 = 3.789 (L1339) + 36.579 (L1340); asigné 'On payables to parent companies' a c) y el resto a d).",
-  "duda de extraer que no afecta la carga: Minoritarios en '-' (L1356), por lo que L1355 y L1357 coinciden.",
-  "22 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Minoritarios en '-' (L1356), por lo que L1355 y L1357 coinciden."
  ],
  "reintentar": [
   {
