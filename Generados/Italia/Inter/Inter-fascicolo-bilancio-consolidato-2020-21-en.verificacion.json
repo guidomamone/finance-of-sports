@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.md",
- "generado": "2026-10-08T23:17:10.930Z",
- "estado": "cola",
+ "generado": "2026-10-08T23:25:10.165Z",
+ "estado": "ok",
  "clubId": "inter-it",
  "year": 2021,
  "escala": {
@@ -11,16 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "a59f5ad",
-  "f16cb7e",
-  "2a9a0e0",
-  "d855c67",
-  "4d2f2fe",
-  "f157f0c",
-  "1a3eb62"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
+   "campo": "resultado-final",
+   "valor": "(245.579.264)",
+   "linea": 762,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)",
+   "evidencia": "pág. 17 del visor, .md L762, L756 y L775",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -36,6 +39,11 @@
    "nombre": "resultado del ejercicio",
    "ok": null,
    "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-245.579264 por ajuste manual ((245.579.264): Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)); impuesto deducido 8.079691 (antes de impuestos -237.499573; el documento imprimía -6.105235)"
   },
   {
    "nombre": "año anterior cargado",
@@ -56,8 +64,13 @@
  "notas": [
   "el desglose de \"Administrative, advertising and general\" (19 filas) no suma la fila: quedó la fila",
   "la nota de \"a) salaries and wages\" no suma el renglón (215.763 contra 236.686056, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: resultado final (245.579.264) (2026-10-08, Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235))",
   "duda de localizar que no afecta la carga: b1 y b2 (pág. 7-8) son resúmenes por categoría en miles que repiten el estado y notas.",
   "duda de localizar que no afecta la carga: Las demás notas dicen 12 months as of June 30, 2020.",
+  "duda de extraer ya contestada para el club (columna, \"a) revenue from home matches\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"5) Other revenues and income\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"9) Personnel costs\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"d) other financial expenses\"): aceptar, en Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf",
   "duda de extraer que no afecta la carga: b15 L744 muestra total 2020 529.404 sin renglón que lo componga y no se imprime resultado del ejercicio."
  ],
  "reintentar": [
@@ -89,10 +102,17 @@
   "ingresos": 364.712582,
   "gastos": 568.781043,
   "financiero": -33.431112,
-  "impuesto": -6.105235,
+  "impuesto": 8.079691,
   "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -245.579264,
+  "resultadoFinal": {
+   "valor": -245.579264,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": -6.105235,
+   "impuestoDeducido": 8.079691
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -651,7 +671,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -692,19 +712,9 @@
  ],
  "impuesto": [
   {
-   "etiqueta": "a) current taxes",
-   "M": -4.009004,
+   "etiqueta": "a) current taxes (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -8.079691,
    "linea": 751
-  },
-  {
-   "etiqueta": "b) deferred tax liabilities",
-   "M": 0.003805,
-   "linea": 753
-  },
-  {
-   "etiqueta": "c) deferred tax assets",
-   "M": -2.100036,
-   "linea": 754
   }
  ]
 }
