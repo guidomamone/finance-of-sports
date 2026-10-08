@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md",
- "generado": "2026-10-08T18:56:44.233Z",
+ "generado": "2026-10-08T19:48:06.934Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2010,
@@ -14,10 +14,8 @@
  "ajustes": null,
  "cola": [
   "8869b1f",
-  "04b4ea9",
   "98133d7",
   "1c32538",
-  "2c75040",
   "e482c01",
   "0e161ab"
  ],
@@ -49,8 +47,8 @@
   },
   {
    "nombre": "documento del año 2009",
-   "ok": false,
-   "detalle": "ingresos de 2009: 160.929 en AS-Roma-bilancio-2009.pdf y 177.312 en este documento (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "año anterior cargado",
@@ -62,7 +60,8 @@
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Los renglones de ingresos consolidados ya se abren en las notas 23-25 (b141-b147).",
   "duda de extraer que no afecta la carga: L7437 imprime 24.927 en ambas columnas; las partidas 2010 suman 24.327, parece error de imprenta.",
-  "duda de extraer que no afecta la carga: L7098 8.688 = L5466 7.741 + L5467 947; b147 detalla ambos renglones juntos."
+  "duda de extraer que no afecta la carga: L7098 8.688 = L5466 7.741 + L5467 947; b147 detalla ambos renglones juntos.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
- "generado": "2026-10-08T02:51:55.183Z",
+ "generado": "2026-10-08T19:48:07.643Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2018,
@@ -99,6 +99,11 @@
    "nombre": "documento del año 2019",
    "ok": false,
    "detalle": "ingresos de 2018: 250.866 en este documento y 320.428 en AS-Roma-bilancio-2019.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "año anterior cargado",

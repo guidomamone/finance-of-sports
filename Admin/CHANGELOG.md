@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 601 — Escalón "gestión de jugadores neta" (to-do 170) (2026-10-08)
+
+- `verificar.mjs`: si ninguna lectura cerró, de las filas sin lado cuentan solo las que están entre el total de costos y el "resultado antes de impuestos"
+  (la compraventa de jugadores neta de la tabla reclasificada de Roma); las de abajo ("Risultato di terzi", otro resultado integral) salen. Compuerta: las lecturas
+  0-6 y gana la primera que cierra el resultado exacto. La comparación del año vecino aplica la misma ventana y no compara contra un documento que no la usa.
+- Medido sobre los 242 documentos de Generados/: cambian solo 14 de AS Roma, ninguno de los cargados empeora. Roma 2013 a 2017 cierran el resultado exacto
+  (2015: 180.626 + 27.651 − 196.660 − 40.215 − 820 − 7.800 − 3.846 = −41.064), 2016 y 2017 pasan a "ok"; 2009 y 2011 (consolidado) también cierran con el escalón;
+  2021 y 2022 (consolidado) pasan de "cola" a "ok" por el año vecino. Roma 2012 sigue sin cerrar.
+
 ## Versión 600 — Sourcing: recuperación de Vojvodina, Marítimo completo, fichas de WorldFootball reintentadas (2026-10-08)
 
 - Solo sourcing, sin transcribir ni cargar. **Vojvodina (Serbia)**: carpeta recuperada con Wayback (`web/<ts>id_/`, eligiendo capturas completas: las más nuevas venían truncadas a 1 MiB): ejercicios 2019, 2020, 2022, 2023 y 2024 en disco. **Falta 2025** (`Zavrsni-racun-FKV-2025_260521_170537.pdf`): el sitio da timeout desde esta IP, Wayback no lo tiene y Firecrawl solo devuelve texto; reintentar desde otra red. Regla ya conocida y repetida: nunca borrar una carpeta de `Clubes/` sin mirar antes si ya existía (los PDF no se trackean, no hay `git checkout`).

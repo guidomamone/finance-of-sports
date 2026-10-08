@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
- "generado": "2026-10-07T01:43:52.205Z",
+ "generado": "2026-10-08T19:48:07.894Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2022,
@@ -36,8 +36,18 @@
   },
   {
    "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 226.537; el sitio tiene 226.539"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 205.875 en este documento y 206.420809 en AS-Roma-bilancio-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
    "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   }
  ],
  "notas": [
@@ -46,7 +56,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b47 y b48 parecen reclasificar los mismos renglones de ricavi por momento de reconocimiento, sin abrir nuevas categorías.",
   "duda de localizar que no afecta la carga: Son detalles por jugador; el total ya está en b60.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Variazione delle rimanenze\"): ¿Se deja afuera de la carga el cuadro 'Costo netto prodotti da commercializzare' de b53 (L3092-L3094), que combina un renglón de b52 con la variación de existencias?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Variazione delle rimanenze\"): aceptar, en AS-Roma-bilancio-2019.pdf",
   "duda de extraer que no afecta la carga: L1280 imprime el año anterior sin paréntesis pese a ser pérdida; probable error tipográfico, se transcribe tal cual."
  ],
  "reintentar": [

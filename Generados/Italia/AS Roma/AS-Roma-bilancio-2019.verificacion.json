@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
- "generado": "2026-10-08T02:53:37.894Z",
+ "generado": "2026-10-08T19:48:07.726Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2019,
@@ -38,6 +38,11 @@
    "nombre": "año anterior cargado",
    "ok": true,
    "detalle": "la columna 2018 de este documento suma ingresos 320.428; el sitio tiene 320.509"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 381.015 en este documento y 381.015 en AS-Roma-bilancio-2020.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",

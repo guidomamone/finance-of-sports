@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
- "generado": "2026-10-08T03:20:55.688Z",
+ "generado": "2026-10-08T19:48:07.966Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2024,
@@ -30,6 +30,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 277.056595; el sitio tiene 277.056595"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 301.716464 en este documento y 299.882212 en AS-Roma-bilancio-2025.pdf (columna del año anterior)"
@@ -38,11 +43,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 277.056595 en AS-Roma-bilancio-2023.pdf y 277.056595 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

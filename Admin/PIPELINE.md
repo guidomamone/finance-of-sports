@@ -254,6 +254,10 @@ Mitigaciones:
 - **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
   "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
   compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte".
+- **Gestión de jugadores neta** (to-do 170, Versión 601): si ninguna lectura cerró, de las filas sin lado solo cuentan las que están entre el total de
+  costos y el "resultado antes de impuestos" (AS Roma 2013-2017: "Gestione operativa netta calciatori"); un valor positivo entra como ingreso, uno
+  negativo como gasto. Compuerta: las lecturas 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. El año vecino no se compara con un
+  documento que no usa este escalón (otro régimen).
 - **Chequeos cruzados** (año vecino, año anterior cargado; Versión 416): si ninguna fila trae la columna del año anterior, "no se puede".
 - **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
   documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.

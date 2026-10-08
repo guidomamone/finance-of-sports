@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.md",
- "generado": "2026-10-08T18:56:44.799Z",
- "estado": "cola",
+ "generado": "2026-10-08T19:48:07.456Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2016,
  "escala": {
@@ -12,36 +12,37 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d057233",
-  "1d16d91",
-  "55ca4fa"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "219.427 = 219.429"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": false,
-   "detalle": "las líneas suman 272.049 y el total impreso dice 217.308"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 219.427 - gastos 272.049 ± financiero -18.297 ± impuesto -7.385 no da el impreso -14.135"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
    "nombre": "documento del año 2017",
-   "ok": true,
-   "detalle": "ingresos de 2016: 219.427 en este documento y 219.429 en AS-Roma-bilancio-2017.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2015",
    "ok": true,
-   "detalle": "ingresos de 2015: 180.625 en AS-Roma-bilancio-2015.pdf y 180.625 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2015: 208.277 en AS-Roma-bilancio-2015.pdf y 208.277 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -50,64 +51,36 @@
   }
  ],
  "notas": [
+  "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L1837 (entre el total de costos L1836 y \"Risultato prima delle imposte\" L1843); las 1 de abajo salen; cerró la lectura 6",
+  "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Las columnas por segmento solo reparten renglones que ya están abiertos en el estado y sus notas (b65, b69, b70); no abren un renglón nuevo.",
   "duda de extraer que no afecta la carga: b65 y b69 repiten exactamente los importes del estado (L1822-L1829); no se extrajeron.",
   "duda de extraer ya contestada para el club (columna, \"Gestione operativa netta calciatori\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "duda de extraer que no afecta la carga: L3973 repite con signo invertido el renglón del estado L1831 y L3974 suma dos renglones del estado."
+  "duda de extraer confirmada por las sumas (columna, \"Ricavi da gare\"): ¿Se carga en b66 y b76 solo la columna 'Totale' de cada fila (L3773-L3781, L4120-L4124)?",
+  "duda de extraer que no afecta la carga: L3973 repite con signo invertido el renglón del estado L1831 y L3974 suma dos renglones del estado.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 219.427,
+  "ingresos": 283.596,
   "gastos": 272.049,
   "financiero": -18.297,
   "impuesto": -7.385,
   "resultadoImpreso": -14.135,
   "resultadoParaCargar": -14.135,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
-   "etiqueta": "Campionato Serie A",
+   "etiqueta": "Ricavi da gare",
    "lado": "ingreso",
-   "M": 9.531,
-   "pagina": 108,
-   "linea": 3773,
-   "origen": "nota que desglosa \"Ricavi da gare\""
-  },
-  {
-   "etiqueta": "UEFA Champions League",
-   "lado": "ingreso",
-   "M": 29.044,
-   "pagina": 108,
-   "linea": 3774,
-   "origen": "nota que desglosa \"Ricavi da gare\""
-  },
-  {
-   "etiqueta": "Tim Cup",
-   "lado": "ingreso",
-   "M": 0.125,
-   "pagina": 108,
-   "linea": 3776,
-   "origen": "nota que desglosa \"Ricavi da gare\""
-  },
-  {
-   "etiqueta": "Gare amichevoli",
-   "lado": "ingreso",
-   "M": 3.779,
-   "pagina": 108,
-   "linea": 3777,
-   "origen": "nota que desglosa \"Ricavi da gare\""
-  },
-  {
-   "etiqueta": "Abbonamenti Campionato",
-   "lado": "ingreso",
-   "M": 9.659,
-   "pagina": 108,
-   "linea": 3780,
-   "origen": "nota que desglosa \"Ricavi da gare\""
+   "M": 52.138,
+   "pagina": 60,
+   "linea": 1822,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Altri ricavi delle vendite e delle prestazioni",
@@ -115,7 +88,7 @@
    "M": 5.405,
    "pagina": 60,
    "linea": 1823,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) Sponsorizzazioni",
@@ -123,63 +96,15 @@
    "M": 5.064,
    "pagina": 60,
    "linea": 1824,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "LNP Serie A – diritti Campionato Serie A",
+   "etiqueta": "c) Diritti televisivi e diritti d'immagine",
    "lado": "ingreso",
-   "M": 70.281,
-   "pagina": 110,
-   "linea": 3856,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "LNP Serie A – diritti TIM Cup",
-   "lado": "ingreso",
-   "M": 2.651,
-   "pagina": 110,
-   "linea": 3857,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "Diritti Televisivi UEFA",
-   "lado": "ingreso",
-   "M": 51.917,
-   "pagina": 110,
-   "linea": 3858,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "Roma TV",
-   "lado": "ingreso",
-   "M": 2.43,
-   "pagina": 110,
-   "linea": 3859,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "Library AS Roma",
-   "lado": "ingreso",
-   "M": 4.138,
-   "pagina": 110,
-   "linea": 3860,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "Proventi accessori campionato",
-   "lado": "ingreso",
-   "M": 1.93,
-   "pagina": 110,
-   "linea": 3861,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
-  },
-  {
-   "etiqueta": "Altri diritti televisivi minori",
-   "lado": "ingreso",
-   "M": 0.112,
-   "pagina": 110,
-   "linea": 3862,
-   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+   "M": 133.459,
+   "pagina": 60,
+   "linea": 1825,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) Proventi pubblicitari",
@@ -187,159 +112,31 @@
    "M": 10.633,
    "pagina": 60,
    "linea": 1826,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Proventi LNP",
+   "etiqueta": "e) Altri proventi",
    "lado": "ingreso",
-   "M": 1.95,
-   "pagina": 112,
-   "linea": 3909,
-   "origen": "nota que desglosa \"e) Altri proventi\""
+   "M": 12.73,
+   "pagina": 60,
+   "linea": 1827,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Indennizzi assicurativi infortuni calciatori",
+   "etiqueta": "Gestione operativa netta calciatori",
    "lado": "ingreso",
-   "M": 3.675,
-   "pagina": 112,
-   "linea": 3910,
-   "origen": "nota que desglosa \"e) Altri proventi\""
+   "M": 64.167,
+   "pagina": 60,
+   "linea": 1837,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
   },
   {
-   "etiqueta": "Riaddebiti ad entità correlate",
-   "lado": "ingreso",
-   "M": 0.386,
-   "pagina": 112,
-   "linea": 3911,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Adeguamento debiti vs squadre di calcio",
-   "lado": "ingreso",
-   "M": 2.158,
-   "pagina": 112,
-   "linea": 3912,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Ritenute d'acconto da Soccer",
-   "lado": "ingreso",
-   "M": 0.083,
-   "pagina": 112,
-   "linea": 3913,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "AS Roma Camp",
-   "lado": "ingreso",
-   "M": 0.262,
-   "pagina": 112,
-   "linea": 3914,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Ritiri estivi",
-   "lado": "ingreso",
-   "M": 0.325,
-   "pagina": 112,
-   "linea": 3915,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Scuola calcio",
-   "lado": "ingreso",
-   "M": 0.384,
-   "pagina": 112,
-   "linea": 3916,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Organizzazione eventi sportivi",
-   "lado": "ingreso",
-   "M": 0.017,
-   "pagina": 112,
-   "linea": 3917,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Addebiti di materiale sportivo",
-   "lado": "ingreso",
-   "M": 0.194,
-   "pagina": 112,
-   "linea": 3918,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Sopravvenienze attive",
-   "lado": "ingreso",
-   "M": 0.801,
-   "pagina": 112,
-   "linea": 3920,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "UEFA Europei 2016",
-   "lado": "ingreso",
-   "M": 1.5,
-   "pagina": 112,
-   "linea": 3922,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Vendita biglietti trasferte internazionali",
-   "lado": "ingreso",
-   "M": 0.375,
-   "pagina": 112,
-   "linea": 3923,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Tessere away",
-   "lado": "ingreso",
-   "M": 0.208,
-   "pagina": 112,
-   "linea": 3924,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Altri proventi diversi",
-   "lado": "ingreso",
-   "M": 0.41,
-   "pagina": 112,
-   "linea": 3925,
-   "origen": "nota que desglosa \"e) Altri proventi\""
-  },
-  {
-   "etiqueta": "Indumenti sportivi e materiale tecnico",
+   "etiqueta": "Acquisti materie di consumo",
    "lado": "gasto",
-   "M": 1.859,
-   "pagina": 113,
-   "linea": 3968,
-   "origen": "nota que desglosa \"Acquisti materie di consumo\""
-  },
-  {
-   "etiqueta": "Divise sociali ed altri beni",
-   "lado": "gasto",
-   "M": 0.569,
-   "pagina": 113,
-   "linea": 3969,
-   "origen": "nota que desglosa \"Acquisti materie di consumo\""
-  },
-  {
-   "etiqueta": "Beni e prodotti da commercializzare",
-   "lado": "gasto",
-   "M": 1.587,
-   "pagina": 113,
-   "linea": 3970,
-   "origen": "nota que desglosa \"Acquisti materie di consumo\""
-  },
-  {
-   "etiqueta": "Materiale vario di consumo",
-   "lado": "gasto",
-   "M": 0.671,
-   "pagina": 113,
-   "linea": 3971,
-   "origen": "nota que desglosa \"Acquisti materie di consumo\""
+   "M": 4.686,
+   "pagina": 60,
+   "linea": 1830,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Variazione delle rimanenze",
@@ -347,183 +144,15 @@
    "M": 0.663,
    "pagina": 60,
    "linea": 1831,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Costi per tesserati",
+   "etiqueta": "Spese per Servizi",
    "lado": "gasto",
-   "M": 1.508,
-   "pagina": 114,
-   "linea": 3997,
-   "origen": "nota que desglosa \"Spese per Servizi\""
-  },
-  {
-   "etiqueta": "Costi per attività sportiva",
-   "lado": "gasto",
-   "M": 4.527,
-   "pagina": 114,
-   "linea": 3998,
-   "origen": "nota que desglosa \"Spese per Servizi\""
-  },
-  {
-   "etiqueta": "Costi specifici tecnici",
-   "lado": "gasto",
-   "M": 5.863,
-   "pagina": 114,
-   "linea": 3999,
-   "origen": "nota que desglosa \"Spese per Servizi\""
-  },
-  {
-   "etiqueta": "Costi vitto, alloggio, locomozione e trasferte",
-   "lado": "gasto",
-   "M": 1.897,
-   "pagina": 114,
-   "linea": 4000,
-   "origen": "nota que desglosa \"Spese per Servizi\""
-  },
-  {
-   "etiqueta": "Spese assicurative",
-   "lado": "gasto",
-   "M": 4.725,
-   "pagina": 114,
-   "linea": 4001,
-   "origen": "nota que desglosa \"Spese per Servizi\""
-  },
-  {
-   "etiqueta": "Consulenze e servizi professionali",
-   "lado": "gasto",
-   "M": 6.63,
-   "pagina": 115,
-   "linea": 4043,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Consulenze commerciali",
-   "lado": "gasto",
-   "M": 0.713,
-   "pagina": 115,
-   "linea": 4044,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Collaboratori sede",
-   "lado": "gasto",
-   "M": 0.049,
-   "pagina": 115,
-   "linea": 4045,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese postali, telefoniche ed altre utenze",
-   "lado": "gasto",
-   "M": 0.523,
-   "pagina": 115,
-   "linea": 4046,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese di vigilanza",
-   "lado": "gasto",
-   "M": 0.2,
-   "pagina": 115,
-   "linea": 4047,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Manutenzione - gestione sede sociale e centro sportivo",
-   "lado": "gasto",
-   "M": 1.611,
-   "pagina": 115,
-   "linea": 4048,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Manutenzione e gestione hardware, software e sito internet",
-   "lado": "gasto",
-   "M": 1.775,
-   "pagina": 115,
-   "linea": 4049,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese per assemblee, societari e di borsa",
-   "lado": "gasto",
-   "M": 0.182,
-   "pagina": 115,
-   "linea": 4050,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Trasporti e trasferte",
-   "lado": "gasto",
-   "M": 1.778,
-   "pagina": 115,
-   "linea": 4051,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Emolumenti al Consiglio di Amministrazione",
-   "lado": "gasto",
-   "M": 1.354,
-   "pagina": 115,
-   "linea": 4052,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese di revisione contabile",
-   "lado": "gasto",
-   "M": 0.234,
-   "pagina": 115,
-   "linea": 4053,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Emolumenti al collegio sindacale / O.D.V.",
-   "lado": "gasto",
-   "M": 0.119,
-   "pagina": 115,
-   "linea": 4054,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Costi per servizi integrativi Roma TV",
-   "lado": "gasto",
-   "M": 0.36,
-   "pagina": 115,
-   "linea": 4055,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Costi di produzione Roma TV e Roma Radio",
-   "lado": "gasto",
-   "M": 4.13,
-   "pagina": 115,
-   "linea": 4056,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese Call Center Stadio ed altri servizi interinali",
-   "lado": "gasto",
-   "M": 0.124,
-   "pagina": 115,
-   "linea": 4057,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Altre spese generali e amministrative",
-   "lado": "gasto",
-   "M": 0.356,
-   "pagina": 115,
-   "linea": 4058,
-   "origen": "nota que desglosa \"Spese per Servizi\" > desglose de \"Amministrative e generali\""
-  },
-  {
-   "etiqueta": "Spese di pubblicità e promozione",
-   "lado": "gasto",
-   "M": 5.081,
-   "pagina": 114,
-   "linea": 4003,
-   "origen": "nota que desglosa \"Spese per Servizi\""
+   "M": 43.739,
+   "pagina": 60,
+   "linea": 1832,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spese per godimento beni di terzi",
@@ -531,143 +160,31 @@
    "M": 8.302,
    "pagina": 60,
    "linea": 1833,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Salari e stipendi",
+   "etiqueta": "Spese per il personale",
    "lado": "gasto",
-   "M": 148.738,
-   "pagina": 117,
-   "linea": 4120,
-   "origen": "nota que desglosa \"Spese per il personale\""
+   "M": 154.985,
+   "pagina": 60,
+   "linea": 1834,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Oneri sociali",
+   "etiqueta": "Oneri diversi di gestione",
    "lado": "gasto",
-   "M": 5.314,
-   "pagina": 117,
-   "linea": 4121,
-   "origen": "nota que desglosa \"Spese per il personale\""
+   "M": 4.933,
+   "pagina": 60,
+   "linea": 1835,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "T.F.R.",
+   "etiqueta": "Ammortamenti e svalutazioni",
    "lado": "gasto",
-   "M": 0.537,
-   "pagina": 117,
-   "linea": 4122,
-   "origen": "nota que desglosa \"Spese per il personale\""
-  },
-  {
-   "etiqueta": "Altri costi (Faifc)",
-   "lado": "gasto",
-   "M": 0.396,
-   "pagina": 117,
-   "linea": 4123,
-   "origen": "nota que desglosa \"Spese per il personale\""
-  },
-  {
-   "etiqueta": "Oneri tributari indiretti",
-   "lado": "gasto",
-   "M": 1.043,
-   "pagina": 118,
-   "linea": 4164,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "Sopravvenienze passive",
-   "lado": "gasto",
-   "M": 0.567,
-   "pagina": 118,
-   "linea": 4165,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Costi accesso segnale televisivo LNP",
-   "lado": "gasto",
-   "M": 0.765,
-   "pagina": 118,
-   "linea": 4167,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Mutualità incassi gare Tim Cup",
-   "lado": "gasto",
-   "M": 0.056,
-   "pagina": 118,
-   "linea": 4168,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Contributi, ammende, spese LNP-FIGC-UEFA",
-   "lado": "gasto",
-   "M": 1.423,
-   "pagina": 118,
-   "linea": 4169,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Organizzazione /costi eventi sportivi",
-   "lado": "gasto",
-   "M": 0.026,
-   "pagina": 118,
-   "linea": 4170,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Costi per vendita biglietti internazionali",
-   "lado": "gasto",
-   "M": 0.377,
-   "pagina": 118,
-   "linea": 4171,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Oneri di progettazione nuovo Stadio",
-   "lado": "gasto",
-   "M": 0.058,
-   "pagina": 118,
-   "linea": 4172,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Erogazioni liberali Roma Cares",
-   "lado": "gasto",
-   "M": 0.44,
-   "pagina": 118,
-   "linea": 4173,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "- Altri oneri diversi",
-   "lado": "gasto",
-   "M": 0.178,
-   "pagina": 118,
-   "linea": 4174,
-   "origen": "nota que desglosa \"Oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "Ammortamento delle immobilizzazioni immateriali",
-   "lado": "gasto",
-   "M": 47.291,
-   "pagina": 121,
-   "linea": 4300,
-   "origen": "nota que desglosa \"Ammortamenti e svalutazioni\""
-  },
-  {
-   "etiqueta": "Ammortamento delle immobilizzazioni materiali",
-   "lado": "gasto",
-   "M": 0.275,
-   "pagina": 121,
-   "linea": 4301,
-   "origen": "nota que desglosa \"Ammortamenti e svalutazioni\""
-  },
-  {
-   "etiqueta": "Svalutazione dei crediti correnti",
-   "lado": "gasto",
-   "M": 7.015,
-   "pagina": 121,
-   "linea": 4302,
-   "origen": "nota que desglosa \"Ammortamenti e svalutazioni\""
+   "M": 54.581,
+   "pagina": 60,
+   "linea": 1839,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Accantonamenti per rischi",
@@ -675,7 +192,7 @@
    "M": 0.16,
    "pagina": 60,
    "linea": 1840,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {

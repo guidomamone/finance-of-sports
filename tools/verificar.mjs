@@ -421,36 +421,44 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // la lectura con la que cerró el vecino (Versión 398): su columna se lee igual que se leyó la suya
     const lect2 = existsSync(pV2) ? Number(((JSON.parse(readFileSync(pV2, 'utf8')).chequeos || []).find((c) => c.nombre === 'lectura')?.detalle?.match(/lectura (\d)/) || [])[1] || 0) : 0;
     const subRep2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "subtotal repetido"')) : false; // (to-do 175)
-    return { otro, U2, k2, lect2, subRep2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
+    const ventana2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "gestión de jugadores neta"')) : false; // (to-do 170)
+    return { otro, U2, k2, lect2, subRep2, ventana2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
   };
   // Los ingresos de un documento leídos con UNA lectura de la escalera (Versión 398): 3 suma los renglones sin lado por su signo (y lee los
   // subtotales con ellos), 4 además conserva los signos impresos. Lo usa el chequeo del año vecino: hasta la 397 leía los dos documentos con
   // la lectura 0 aunque hubieran cerrado con otra. Caso: Goiás 2011 cerró con la lectura 4 (ingresos 17.096.667, igual al total impreso y a
   // la columna 2011 del documento 2012), y el chequeo comparaba 52.419.680 (lectura 0) contra 17.096.667.
-  const ingresosConLectura = (A, campo, nivel, subRep = false) => { // subRep: la lectura 4 cerró con el escalón "subtotal repetido" (to-do 175)
+  // (to-do 170) VENTANA de las filas sin lado: las que están entre el total de costos y el "resultado antes de impuestos" del estado de A. La usa el
+  // escalón "gestión de jugadores neta" de la lectura 6, en la columna actual y en la del año anterior (y la del documento vecino).
+  const enVentanaOtros = (A) => { const e = A.estado; const tc = e.filter((f) => f.tipo === 'total' && f.lado === 'gasto' && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0]; const an = e.filter((f) => f.tipo === 'resultado' && /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte|prima\s+delle\s+imposte/i.test(f.etiqueta) && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0]; return (f) => !!(tc && an && f.linea > tc.linea && f.linea < an.linea); };
+  const ingresosConLectura = (A, campo, nivel, subRep = false, ventana = false) => { // subRep: la lectura 4 cerró con el escalón "subtotal repetido" (to-do 175)
     if (nivel < 3) return A.lineasDeLado('ingreso', campo);
     if (nivel >= 5) { // (Versión 414) las mismas hojas con signo C/D de la lectura 5, en la columna pedida (actual o año anterior)
       const r = A.estado.filter((f) => f.lado === 'ingreso' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]); const normal = r.filter((f) => f[campo] < 0).length > r.length / 2 ? -1 : 1;
       const hojas = r.map((f) => { const m = String((campo === 'A' ? f.anterior : f.actual) ?? '').trim().match(/\s([CD])$/i); return { ...f, [campo]: m ? (m[1].toUpperCase() === 'D' ? -Math.abs(f[campo]) : Math.abs(f[campo])) : f[campo] * normal }; });
       if (nivel < 6) return hojas;
       const g6 = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg6 = g6.length ? g6.filter((f) => f.M < 0).length >= g6.length / 2 : true;
-      return [...hojas, ...A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && (neg6 ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }))]; // (Versión 434) lectura 6
+      const enV = ventana ? enVentanaOtros(A) : () => true;
+      return [...hojas, ...A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && enV(f) && (neg6 ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }))]; // (Versión 434) lectura 6
     }
     const g = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg = g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true;
     const otrosI = A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && (neg ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }));
     return [...A.lineasDeLado('ingreso', campo, true, nivel >= 4, subRep && nivel === 4), ...otrosI];
   };
   // compara los ingresos del año en común (mi columna actual con la "año anterior" del siguiente, o al revés) con mi documento a escala k
-  const compararVecino = (dy, V2, k, nivelMio = 0, subRepMio = false) => {
+  const compararVecino = (dy, V2, k, nivelMio = 0, subRepMio = false, ventanaMio = false) => {
     const [campoMio, campoSuyo] = dy === 1 ? ['M', 'A'] : ['A', 'M'];
     const sumaDe = (arr, c) => arr.reduce((a, f) => a + (f[c] || 0), 0);
     const Amio = armar(F, U, false, k);
-    const mio = sumaDe(ingresosConLectura(Amio, campoMio, nivelMio, subRepMio), campoMio); const suyo = sumaDe(ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0, V2.subRep2), campoSuyo);
+    const mio = sumaDe(ingresosConLectura(Amio, campoMio, nivelMio, subRepMio, ventanaMio), campoMio); const suyo = sumaDe(ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0, V2.subRep2, V2.ventana2), campoSuyo);
     // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
     // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
     // Novorizontino 2014 y 2015, balancetes de una sola columna: se comparaba 0 contra 1.060.016 y mandaba un falso "no coincide" a la cola.
     const conAnterior = (A) => A.estado.some((f) => f.lado === 'ingreso' && f.A != null && isFinite(f.A) && f.A);
     if (!conAnterior(campoMio === 'A' ? Amio : V2.A2)) return { mio, suyo, ok: null, sinColumna: true };
+    // (to-do 170) uno de los dos documentos cuenta la gestión de jugadores NETA como ingreso (escalón "gestión de jugadores neta") y el otro no: no
+    // definen "ingresos" igual, no se pueden comparar. Caso: Roma 2017 (254.076 con la neta) contra la columna 2017 del documento 2018 (175.000, sin ella).
+    if (!!ventanaMio !== !!V2.ventana2) return { mio, suyo, ok: null, otroRegimen: true };
     return { mio, suyo, ok: suyo ? cerca(mio, suyo, 0.02) : null };
   };
   const vecinosDoc = [[1, vecinoDe(1)], [-1, vecinoDe(-1)]].filter(([, v]) => v);
@@ -797,6 +805,30 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
     }
   }
+  // ESCALÓN "gestión de jugadores neta" (to-do 170, aprobado por Guido el 2026-10-08). En la tabla reclasificada de la relación de gestión
+  // (AS Roma 2012-2017) la compraventa de jugadores sale NETA en una fila sin lado ("Gestione operativa netta calciatori") entre el total de
+  // costos y el EBITDA, y debajo del resultado vienen otras filas sin lado ("Risultato di terzi", "Utili/perdite attuariali", otro resultado
+  // integral) que la lectura 6 también suma. Solo corre si ninguna lectura cerró. Propone: de las filas sin lado, SOLO las que están entre el
+  // total de costos y el "resultado antes de impuestos" (ese es el lugar de la gestión de jugadores); las demás salen. Compuerta: las lecturas
+  // 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. Un valor positivo entra como ingreso y uno negativo como gasto
+  // (la misma convención de signos de la lectura 6). Caso: Roma 2015 (.md L1932-L1957): 180.626 + 27.651 − 196.660 − 40.215 − 820 − 7.800
+  // − 3.846 = −41.064 exacto; sumando también el "Risultato di terzi" (+102) y las "perdite attuariali" (−147) no cierra.
+  let escalonVentanaOtros = false;
+  if (!E) {
+    const totCostos = estado.filter((f) => f.tipo === 'total' && f.lado === 'gasto' && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0];
+    const antesFila = estado.filter((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0];
+    if (totCostos && antesFila && antesFila.linea > totCostos.linea) {
+      const dentro = otros.filter((f) => f.linea > totCostos.linea && f.linea < antesFila.linea);
+      const fuera = otros.filter((f) => !dentro.includes(f));
+      if (dentro.length && fuera.length) {
+        const excl = new Set(fuera);
+        for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+          const e = evaluar(n, false, null, null, excl); if (e.cierra && e.exacto) { E = e; escalonVentanaOtros = true; escalonSubRep = false; break; }
+        }
+        if (escalonVentanaOtros) notas.push(`escalón "gestión de jugadores neta": de las filas sin lado, solo las de L${dentro.map((f) => f.linea).join(', L')} (entre el total de costos L${totCostos.linea} y "${antesFila.etiqueta.trim().slice(0, 40)}" L${antesFila.linea}); las ${fuera.length} de abajo salen; cerró la lectura ${E.nivel}`);
+      }
+    }
+  }
   // ESCALÓN "renglón grande sin abrir" (to-do 175, escalón 2, aprobado por Guido el 2026-10-08). La nota del subtotal (Versión 578) solo
   // corría en el camino de error (la propuesta de carga marcó una categoría en 0), y un lump_* apaga esa marca: un renglón agregado del
   // modelo italiano ("altri" 42,8 M, el 74% de los ingresos de Cremonese 2024) quedaba entero aunque el documento traiga su desglose.
@@ -901,7 +933,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
     // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
     const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
-    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4, escalonSubRep && E.nivel === 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
+    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel, false, escalonVentanaOtros) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4, escalonSubRep && E.nivel === 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
     // Una GANANCIA extraordinaria que un ajuste `categoria` sacó de los ingresos del año anterior (exceptional_items en positivo) también
     // cuenta: el documento la sigue sumando como ingreso. Caso: Goiás 2024 contra 2023 (venta del 20% de la Liga Forte União, 140.214.785).
@@ -921,8 +953,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok, sinColumna } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep);
+    const { mio, suyo, ok, sinColumna, otroRegimen } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros);
     vecinos.push(ok);
+    if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });

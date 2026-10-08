@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md",
- "generado": "2026-10-08T18:56:43.974Z",
+ "generado": "2026-10-08T19:48:06.684Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2007,
@@ -13,8 +13,11 @@
  },
  "ajustes": null,
  "cola": [
+  "b879742",
   "1387648",
+  "b70206a",
   "54c7503",
+  "9e9db37",
   "4b75db3",
   "86b749f",
   "dd775d7"
@@ -37,8 +40,8 @@
   },
   {
    "nombre": "documento del año 2008",
-   "ok": true,
-   "detalle": "ingresos de 2007: 157.589 en este documento y 157.589 en AS-Roma-bilancio-2008.pdf (columna del año anterior)"
+   "ok": false,
+   "detalle": "ingresos de 2007: 157.589 en este documento y 162.017 en AS-Roma-bilancio-2008.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2006",

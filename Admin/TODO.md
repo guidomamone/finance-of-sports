@@ -183,13 +183,16 @@ ni en el comentario de ningún archivo de código.
     orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
     su padre.
 
-170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). CON DAÑO (lote 40, 2026-10-08): AS Roma 2012 a 2017 (6 documentos) frenan con el total de gastos que no cierra. Antes: sin daño (2026-10-08). En los estados IFRS de Roma, "Ricavi/Oneri da
-    gestione dei diritti pluriennali" quedan sin lado y se pierden; Roma 2021 se cargó con 2 ajustes `fila` (L2148 36.125 ingreso, L2149
-    (37.323) gasto): ingresos 226.539, igual a la columna 2021 del documento 2022 (226.537), y resultado a 4 mil EUR del impreso (notas en
-    miles). Filas posteriores al resultado (EPS L2161, otro resultado integral L2163) pueden colarse en la lectura 6. CUÁNDO HACERLO: con otro
-    documento de Roma (u otro IFRS) que frene por esto. DISEÑO (escalón): si ninguna lectura cierra, en la lectura 6 solo las filas "otro"
-    entre el total de costos y "Risultato prima delle imposte"; compuerta: resultado impreso exacto y, si el año vecino imprime ingresos,
-    que coincidan.
+170. GESTIÓN DE JUGADORES SIN LADO (verificar.mjs). Hecho el escalón "gestión de jugadores neta" (Versión 601): AS Roma 2013 a 2017 cierran el resultado
+    exacto y 2016 y 2017 pasan a "ok"; 2013 a 2015 solo conservan preguntas de tema en la cola. QUEDA: (a) Roma 2012 (la tabla reclasificada trae los
+    costos de otra forma: el total de gastos 141.732 no cierra con las líneas 172.731); (b) Roma 2005 a 2011, con otras causas (2005 en unidades sin
+    escala, 2007 y 2009 con el resultado, el año vecino en casi todos); (c) el caso viejo de Roma 2021, que se cargó con 2 ajustes `fila` (L2148
+    36.125 ingreso, L2149 (37.323) gasto): "Ricavi/Oneri da gestione dei diritti pluriennali" BRUTOS en los estados IFRS quedan sin lado y se pierden;
+    filas posteriores al resultado (EPS L2161, otro resultado integral L2163) pueden colarse en la lectura 6. CUÁNDO HACERLO (c): con otro documento
+    IFRS de Roma que frene. DISEÑO (c) (escalón): si ninguna lectura cierra, en la lectura 6 solo las filas "otro" entre el total de costos y
+    "Risultato prima delle imposte" (la misma ventana del escalón ya hecho); compuerta: resultado impreso exacto.
+    Nota de cómo se compara el año vecino: un documento que cuenta la gestión de jugadores NETA como ingreso (Roma 2017: 254.076) no se compara con
+    uno que no la cuenta (la columna 2017 del documento 2018: 175.000); "otro régimen", sin falsa alarma.
 
 171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Un ajuste `fila` de gasto
     con valor impreso negativo (variazione delle rimanenze a favor) solo resta en la lectura 4 (lleva el signo relativo a la mayoría de los
@@ -232,7 +235,7 @@ ni en el comentario de ningún archivo de código.
     - Solo preguntas de la cola, totales y resultado cierran (15): AC Milan 2021, Bologna 2018 y 2023, Fiorentina 2019, Genoa 2025, Hellas Verona
       2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Torino 2020 y 2025. Se destraban con el to-do 173.
     - El resultado o el total de gastos no cierra (24): AC Milan 2008 a 2012 (el resultado falla en todos, causa sin diagnosticar); AS Roma 2007,
-      2009, 2011 (consolidado), 2012 a 2017 (2012 a 2017: to-do 170); Bologna 2024 y 2025; Genoa 2023; Inter 2023 y 2024; Lazio 2005, 2011,
+      2009, 2011 (consolidado), 2012 (2013 a 2017 ya cierran con el to-do 170); Bologna 2024 y 2025; Genoa 2023; Inter 2023 y 2024; Lazio 2005, 2011,
       2014, 2016 y 2021.
     - El resultado cierra pero falla el chequeo contra el año vecino (11): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010, 2011 (separato) y 2020,
       Inter 2021, Lazio 2004 y 2006, Sampdoria 2020. Mirar uno por uno si es falsa alarma (to-do 172) o error real.
