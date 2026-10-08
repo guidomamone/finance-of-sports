@@ -200,10 +200,14 @@ ni en el comentario de ningún archivo de código.
     entra como costo), Hellas 2023 (11) L357, −25.971). Relacionado con el 156. DISEÑO: en `fila` de gasto, un valor impreso negativo resta;
     compuerta: el resultado cierra exacto con ese signo y no con el otro.
 
-172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). El chequeo "documento del año N" compara contra las filas crudas del otro
-    documento, sin sus ajustes: Parma 2024 individual (36a3982, 6573d39) da 54,23 contra 28,89 porque Parma 2023 tiene un ajuste `fila`
-    (L557, "altri" contado dos veces). Falsa alarma que va a la cola. DISEÑO: si el año está cargado, comparar contra el sitio; si no,
-    aplicar los ajustes del otro documento antes de comparar.
+172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). El chequeo "documento del
+    año N" compara contra las filas crudas del otro documento, sin sus ajustes `fila`. El caso que lo abrió (Parma 2024 contra Parma 2023)
+    ya no existe: Parma 2023 dejó su ajuste con el escalón "subtotal repetido" (Versión 586). Medido sobre todo Generados/: 222 chequeos de
+    año vecino, 14 fallan; solo 2 son de este tipo y los dos coinciden contra el total VERIFICADO del otro documento (con sus ajustes): AS
+    Roma 2019 contra 2018 (320.428 vs 320.509) y Juventus 2005-06 contra 2004-05 (259.082.991 vs 259.082.991). Ninguno frena: los dos están
+    cargados, en "ok" y sin casos en la cola. CUÁNDO HACERLO: si una falsa alarma de este tipo frena un documento. DISEÑO (escalón): si el
+    chequeo falla y usa la columna del ejercicio del OTRO documento (el anterior, dy=-1) y ese documento tiene ajustes `fila`, comparar
+    contra su totales.ingresos del .verificacion.json; compuerta: la misma tolerancia del chequeo.
 
 173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
     por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
