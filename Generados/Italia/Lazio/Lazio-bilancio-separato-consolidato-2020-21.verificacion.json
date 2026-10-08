@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.md",
- "generado": "2026-10-08T22:26:04.751Z",
+ "generado": "2026-10-08T22:33:49.631Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2021,
@@ -55,8 +55,7 @@
   "duda de localizar que no afecta la carga: Solo da ventas totales por segmento, sin abrir renglones que el estado consolidado o sus notas no abran ya.",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2008-09.pdf",
   "duda de extraer que no afecta la carga: L6125 tiene columnas condizionati/non condizionati/saldo, no ejercicio actual vs anterior, y solo detalla una fila de b146 (L6114).",
-  "duda de extraer que no afecta la carga: L6113+L6114 suman 3.616 que coincide con L3912; las etiquetas de la nota no calzan una a una con el estado.",
-  "6 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L6113+L6114 suman 3.616 que coincide con L3912; las etiquetas de la nota no calzan una a una con el estado."
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.md",
- "generado": "2026-10-08T22:25:20.940Z",
+ "generado": "2026-10-08T22:33:49.586Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2014,
@@ -103,8 +103,7 @@
   "duda de extraer ya contestada para el club (columna, \"Oneri finanziari netti e differenze cambio\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer ya contestada para el club (columna, \"Imposte correnti\"): aceptar, en Lazio-bilancio-separato-consolidato-2014-15.pdf",
   "duda de extraer que no afecta la carga: L3470 aparece sin paréntesis mientras el resto de costos va entre paréntesis; el resultado operativo cuadra sumándolo positivo.",
-  "duda de extraer que no afecta la carga: b165 repite L5214-L5215 y desglosa en condizionati/non condizionati la fila L5209.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b165 repite L5214-L5215 y desglosa en condizionati/non condizionati la fila L5209."
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md",
- "generado": "2026-10-08T22:25:10.096Z",
+ "generado": "2026-10-08T22:33:49.520Z",
  "estado": "ok",
  "clubId": "genoa-it",
  "year": 2023,
@@ -90,8 +90,7 @@
   "línea 401: 5.310.717 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los cuadros b11-b14 (págs. 18-21), que parecen un esquema de bilancio en formato FIGC/NOIF con estado patrimonial y conto economico detallado?",
   "duda de extraer que no afecta la carga: El total L403 (2.712.602) es negativo y reduce la pérdida de L397 a L404, pero 'proventi da consolidato' figura positivo en b8 (L402) y negativo en b63 (L3737).",
-  "duda de extraer que no afecta la carga: b47 desglosa todo 'Totale altri ricavi e proventi' (L360); las filas distintas de contributi suman 106.232.032 = 'altri' L359.",
-  "18 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b47 desglosa todo 'Totale altri ricavi e proventi' (L360); las filas distintas de contributi suman 106.232.032 = 'altri' L359."
  ],
  "reintentar": null,
  "reintentado": false,

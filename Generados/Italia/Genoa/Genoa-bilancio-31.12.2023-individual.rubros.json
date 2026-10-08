@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
   "club": "genoa-it",
   "year": 2023,
-  "generatedAt": "2026-10-08T18:56:45.705Z",
+  "generatedAt": "2026-10-08T22:33:49.520Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         2.635423
       ],
-      "glosa": "Ingresos por patrocinios"
+      "glosa": "Ingresos por patrocinio"
     },
     {
       "label": "Proventi pubblicitari",
@@ -124,7 +124,7 @@
       "values": [
         6.2625
       ],
-      "glosa": "Plusvalías por enajenación de derechos federativos de jugadores"
+      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Altri proventi da gestione calciatori",
@@ -134,7 +134,7 @@
       "values": [
         9.016878
       ],
-      "glosa": "Otros ingresos de gestión de jugadores"
+      "glosa": "Otros ingresos de la gestión de futbolistas"
     },
     {
       "label": "Altri ricavi e proventi",
@@ -154,7 +154,7 @@
       "values": [
         1.015716
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -174,7 +174,7 @@
       "values": [
         0.709102
       ],
-      "glosa": "Gastos por actividades deportivas"
+      "glosa": "Gastos por actividad deportiva"
     },
     {
       "label": "Costi specifici tecnici",
@@ -214,7 +214,7 @@
       "values": [
         8.391287
       ],
-      "glosa": "Gastos de servicios externos"
+      "glosa": "Gastos de servicios exteriores"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -224,7 +224,7 @@
       "values": [
         0.111985
       ],
-      "glosa": "Primas de seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -244,7 +244,7 @@
       "values": [
         3.785918
       ],
-      "glosa": "8) Por arrendamientos y cánones"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) salari e stipendi",
@@ -274,7 +274,7 @@
       "values": [
         0.554082
       ],
-      "glosa": "c) Indemnizaciones por fin de relación laboral"
+      "glosa": "c) Indemnizaciones por extinción de contrato"
     },
     {
       "label": "* Diritti pluriennali calciatori 1° squadra",
@@ -284,7 +284,7 @@
       "values": [
         27.794978
       ],
-      "glosa": "* Derechos federativos de jugadores del 1.er equipo"
+      "glosa": "* Derechos federativos de futbolistas del 1.er equipo"
     },
     {
       "label": "* Diritti pluriennali calciatori settore giovanile",
@@ -294,7 +294,7 @@
       "values": [
         0.07175
       ],
-      "glosa": "* Derechos federativos de jugadores de fútbol base"
+      "glosa": "* Derechos federativos de futbolistas de categorías inferiores"
     },
     {
       "label": "c) altre svalutazioni delle immobilizzazioni",
@@ -304,7 +304,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras correcciones valorativas del inmovilizado"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -324,7 +324,7 @@
       "values": [
         0
       ],
-      "glosa": "12) Provisiones para riesgos y gastos"
+      "glosa": "12) Dotaciones a provisiones para riesgos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -334,7 +334,7 @@
       "values": [
         0.862316
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos varios de organización de partidos"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -354,7 +354,7 @@
       "values": [
         0.061865
       ],
-      "glosa": "Gastos específicos hacia equipos visitantes"
+      "glosa": "Gastos específicos relativos a equipos visitantes"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -364,7 +364,7 @@
       "values": [
         2.951382
       ],
-      "glosa": "Gastos por cesión temporal de jugadores"
+      "glosa": "Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
@@ -374,7 +374,7 @@
       "values": [
         1.339974
       ],
-      "glosa": "Minusvalías por enajenación de derechos federativos de jugadores"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "* Costi valorizzazione calciatori",
@@ -384,7 +384,7 @@
       "values": [
         3.707528
       ],
-      "glosa": "* Gastos por valorización de jugadores"
+      "glosa": "* Gastos de valorización de futbolistas"
     },
     {
       "label": "* Contributo di solidarietà",
@@ -404,7 +404,7 @@
       "values": [
         0.183846
       ],
-      "glosa": "* Premio a la carrera según art. 99 bis N.O.I.F."
+      "glosa": "* Premio a la trayectoria profesional según el art. 99 bis N.O.I.F.*"
     },
     {
       "label": "* Spese, ammende e multe gare",
@@ -414,7 +414,7 @@
       "values": [
         0.215257
       ],
-      "glosa": "* Gastos, sanciones y multas de competiciones"
+      "glosa": "* Gastos, multas y sanciones por partidos"
     },
     {
       "label": "* Oneri lega",
@@ -424,7 +424,7 @@
       "values": [
         3.80355
       ],
-      "glosa": "* Cuotas y cargas de la liga"
+      "glosa": "* Cuotas y gastos de la liga"
     },
     {
       "label": "* Oneri tributari indiretti",
@@ -444,7 +444,7 @@
       "values": [
         6.358874
       ],
-      "glosa": "* Otros (Pérdidas y gastos extraordinarios)"
+      "glosa": "* Otros (Gastos y pérdidas extraordinarias de ejercicios anteriores)"
     }
   ]
 }

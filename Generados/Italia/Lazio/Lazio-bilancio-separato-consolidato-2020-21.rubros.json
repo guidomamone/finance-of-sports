@@ -3,194 +3,154 @@
   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.pdf",
   "club": "lazio-it",
   "year": 2021,
-  "generatedAt": "2026-10-08T18:56:47.077Z",
+  "generatedAt": "2026-10-08T22:33:49.632Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Ricavi da gare",
+      "label": "-) televisivi",
       "lado": "revenue",
       "page": 104,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0
+        85.377712
       ],
-      "glosa": "Ingresos por competiciones y taquilla"
+      "glosa": "-) Derechos de televisión"
     },
     {
-      "label": "Televisivi",
+      "label": "-) televisivi da partecipazioni comp. U.E.F.A.",
       "lado": "revenue",
-      "page": 155,
-      "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        85.378
+        52.935487
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "-) Derechos de televisión por participación en competiciones UEFA"
     },
     {
-      "label": "Televisivi da partecipazioni a comp. UEFA",
+      "label": "-) da L.N.P.",
       "lado": "revenue",
-      "page": 155,
-      "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        52.935
+        5.49886
       ],
-      "glosa": "Derechos audiovisuales por competiciones UEFA"
-    },
-    {
-      "label": "Da LNP",
-      "lado": "revenue",
-      "page": 155,
-      "section": "nota que desglosa \"Diritti radiotelevisivi e proventi media\"",
-      "values": [
-        5.499
-      ],
-      "glosa": "De la LNP"
+      "glosa": "-) de la L.N.P."
     },
     {
       "label": "Sponsorizzazioni",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        4.72
+        4.719657
       ],
       "glosa": "Patrocinios"
     },
     {
-      "label": "Proventi Pubblicitari",
+      "label": "Proventi pubblicitari",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        12.221
+        12.221319
       ],
       "glosa": "Ingresos publicitarios"
     },
     {
-      "label": "Canoni per licenze, marchi e brevetti",
+      "label": "Canoni per licenze, marchi, brevetti",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Ricavi da sponsorizzazione e pubblicità\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1.208
+        1.207893
       ],
       "glosa": "Cánones por licencias, marcas y patentes"
     },
     {
       "label": "Cessione temporanea calciatori",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Proventi da gestione diritti calciatori\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1.655
+        1.65512
       ],
       "glosa": "Cesión temporal de jugadores"
     },
     {
       "label": "Altri proventi da gestione calciatori",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Proventi da gestione diritti calciatori\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.064
+        0.063664
       ],
-      "glosa": "Otros ingresos de gestión de jugadores"
+      "glosa": "Otros ingresos de la gestión de jugadores"
     },
     {
-      "label": "Da altri",
+      "label": "-) da altri",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Altri ricavi\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1.104
+        1.104131
       ],
-      "glosa": "De otros"
+      "glosa": "-) de otros"
     },
     {
-      "label": "Contributi in conto esercizio LNP",
+      "label": "Contributi in clesercizio",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Altri ricavi\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.076
+        0.076339
       ],
-      "glosa": "Subvenciones a la explotación de la LNP"
+      "glosa": "Subvenciones de explotación"
     },
     {
       "label": "Proventi vari",
       "lado": "revenue",
-      "page": 156,
-      "section": "nota que desglosa \"Altri ricavi\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.001
+        0.000598
       ],
       "glosa": "Ingresos diversos"
     },
     {
-      "label": "Materiale per vendita a terzi",
-      "lado": "revenue",
-      "page": 157,
-      "section": "nota que desglosa \"Ricavi da merchandising\"",
-      "values": [
-        1.522
-      ],
-      "glosa": "Mercaderías para venta a terceros"
-    },
-    {
-      "label": "Altri",
-      "lado": "revenue",
-      "page": 157,
-      "section": "nota que desglosa \"Ricavi da merchandising\"",
-      "values": [
-        0.015
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "TOTALE RICAVI",
+      "label": "Ricavi da merchandising",
       "lado": "revenue",
       "page": 104,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        166.398262
+        1.537481
       ],
-      "glosa": "TOTAL INGRESOS"
+      "glosa": "Ingresos por merchandising"
     },
     {
       "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei tesserati",
       "lado": "revenue",
-      "page": 163,
-      "section": "nota que desglosa \"RICAVI NETTI DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI TESSERATI\"",
+      "page": 104,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        3.426
+        3.426463
       ],
-      "glosa": "Plusvalías por traspaso de derechos de jugadores"
-    },
-    {
-      "label": "Minusvalenze da diritti alle prestazioni dei tesserati",
-      "lado": "expense",
-      "page": 163,
-      "section": "nota que desglosa \"RICAVI NETTI DA CESSIONE DIRITTI PLURIENNALI PRESTAZIONI TESSERATI\"",
-      "values": [
-        0.364
-      ],
-      "glosa": "Minusvalías por derechos de jugadores"
+      "glosa": "Plusvalías por enajenación de derechos federativos de jugadores"
     },
     {
       "label": "Acquisti di materie prime, sussidiarie, di consumo e di merci",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Materie prime, sussidiarie, di consumo e di merci\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         5.597354
       ],
-      "glosa": "Aprovisionamientos de materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "Aprovisionamientos de materias primas, auxiliares, consumibles y mercaderías"
     },
     {
       "label": "Variazione delle rimanenze",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Materie prime, sussidiarie, di consumo e di merci\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         -2.058075
       ],
@@ -200,9 +160,9 @@
       "label": "Salari e stipendi",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Personale\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        131556925
+        131.556925
       ],
       "glosa": "Sueldos y salarios"
     },
@@ -210,9 +170,9 @@
       "label": "Oneri sociali",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Personale\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        3419453
+        3.419453
       ],
       "glosa": "Cargas sociales"
     },
@@ -220,149 +180,29 @@
       "label": "Trattamento di fine rapporto",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Personale\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        377323
+        0.377323
       ],
-      "glosa": "Indemnizaciones por cese laboral"
+      "glosa": "Indemnizaciones por fin de contrato"
     },
     {
       "label": "Altri costi",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Personale\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        69314
+        0.069314
       ],
-      "glosa": "Otros gastos"
-    },
-    {
-      "label": "- Compensi contrattuali calciatori",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -87289000
-      ],
-      "glosa": "- Retribuciones contractuales de futbolistas"
-    },
-    {
-      "label": "- Quota variabile legata ai risultati sportivi",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -22758000
-      ],
-      "glosa": "- Retribución variable ligada a resultados deportivos"
-    },
-    {
-      "label": "- Compensi contrattuali allenatori e tecnici I squadra",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -9835000
-      ],
-      "glosa": "- Retribuciones contractuales de entrenadores y técnicos del primer equipo"
-    },
-    {
-      "label": "- Quota variabile legata ai risultati sportivi",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -1663000
-      ],
-      "glosa": "- Retribución variable ligada a resultados deportivos"
-    },
-    {
-      "label": "- Compensi contrattuali allenatori e tecnici sq. Minori",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -1150000
-      ],
-      "glosa": "- Retribuciones contractuales de entrenadores y técnicos de categorías inferiores"
-    },
-    {
-      "label": "- Oneri sociali",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -2599000
-      ],
-      "glosa": "- Cargas sociales"
-    },
-    {
-      "label": "- Trattamento di fine carriera",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -355000
-      ],
-      "glosa": "- Indemnizaciones por fin de carrera deportiva"
-    },
-    {
-      "label": "- Altri Costi",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -7089000
-      ],
-      "glosa": "- Otros gastos"
-    },
-    {
-      "label": "- Salari e stipendi",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -1760000
-      ],
-      "glosa": "- Sueldos y salarios"
-    },
-    {
-      "label": "- Oneri sociali",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -465000
-      ],
-      "glosa": "- Cargas sociales"
-    },
-    {
-      "label": "- Trattamento di fine rapporto",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -377000
-      ],
-      "glosa": "- Indemnizaciones por cese laboral"
-    },
-    {
-      "label": "- Altri Costi",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Personale\"",
-      "values": [
-        -83000
-      ],
-      "glosa": "- Otros gastos"
+      "glosa": "Otros costes"
     },
     {
       "label": "Costi per Acquisizione temporanea prestazioni calciatori",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        19554
+        0.019554
       ],
       "glosa": "Gastos por cesión temporal de derechos de jugadores"
     },
@@ -370,39 +210,19 @@
       "label": "Altri oneri da gestione calciatori",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1799484
+        1.799484
       ],
-      "glosa": "Otros gastos de gestión de jugadores"
-    },
-    {
-      "label": "Costi per acquisizione temporanea calciatori",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
-      "values": [
-        -20000
-      ],
-      "glosa": "Gastos por cesión temporal de jugadores"
-    },
-    {
-      "label": "Altri oneri da gestione calciatori",
-      "lado": "expense",
-      "page": 158,
-      "section": "nota que desglosa \"Oneri da gestione diritti calciatori\"",
-      "values": [
-        -1799000
-      ],
-      "glosa": "Otros gastos de gestión de jugadores"
+      "glosa": "Otros gastos de la gestión de jugadores"
     },
     {
       "label": "Costi per tesserati",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -1110619
+        1.110619
       ],
       "glosa": "Gastos de personal federado"
     },
@@ -410,9 +230,9 @@
       "label": "Costi specifici tecnici",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -3615918
+        3.615918
       ],
       "glosa": "Gastos técnicos específicos"
     },
@@ -420,9 +240,9 @@
       "label": "Costi per vitto, alloggio e locomozione",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -1551820
+        1.55182
       ],
       "glosa": "Gastos de manutención, alojamiento y desplazamientos"
     },
@@ -430,19 +250,19 @@
       "label": "Servizio biglietteria, controllo ingressi",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -167990
+        0.16799
       ],
-      "glosa": "Servicio de taquilla y control de accesos"
+      "glosa": "Servicios de taquilla y control de accesos"
     },
     {
       "label": "Spese assicurative",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -126820
+        0.12682
       ],
       "glosa": "Gastos de seguros"
     },
@@ -450,99 +270,19 @@
       "label": "Spese amministrative",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -7108600
+        7.1086
       ],
-      "glosa": "Gastos de administración"
+      "glosa": "Gastos administrativos"
     },
     {
       "label": "Spese per pubblicità e promozione",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -3050440
-      ],
-      "glosa": "Gastos de publicidad y promoción"
-    },
-    {
-      "label": "Costi per tesserati",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        1111000
-      ],
-      "glosa": "Gastos de personal federado"
-    },
-    {
-      "label": "Costi specifici tecnici",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        887000
-      ],
-      "glosa": "Gastos técnicos específicos"
-    },
-    {
-      "label": "Costi per intermediazione tesserati",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        2729000
-      ],
-      "glosa": "Gastos por intermediación de jugadores"
-    },
-    {
-      "label": "Costi vitto, alloggio, locomozione gare",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        1552000
-      ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
-    },
-    {
-      "label": "Servizio biglietteria e controllo ingressi",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        168000
-      ],
-      "glosa": "Servicio de taquilla y control de accesos"
-    },
-    {
-      "label": "Spese assicurative",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        127000
-      ],
-      "glosa": "Gastos de seguros"
-    },
-    {
-      "label": "Spese amministrative",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        7109000
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Spese per pubblicità e promozione",
-      "lado": "expense",
-      "page": 159,
-      "section": "nota que desglosa \"Oneri per servizi esterni\"",
-      "values": [
-        3050000
+        3.05044
       ],
       "glosa": "Gastos de publicidad y promoción"
     },
@@ -550,9 +290,9 @@
       "label": "Spese bancarie",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        174.684
+        0.174684
       ],
       "glosa": "Gastos bancarios"
     },
@@ -560,9 +300,9 @@
       "label": "Per godimento di beni di terzi",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1456.381
+        1.456381
       ],
       "glosa": "Arrendamientos y cánones"
     },
@@ -570,19 +310,19 @@
       "label": "Spese varie organizzazione gare",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        377.268
+        0.377268
       ],
-      "glosa": "Gastos varios de organización de partidos"
+      "glosa": "Gastos diversos de organización de partidos"
     },
     {
       "label": "Tassa iscrizioni gare",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.03
+        0.00003
       ],
       "glosa": "Tasas de inscripción en competiciones"
     },
@@ -590,9 +330,9 @@
       "label": "Altri oneri di gestione",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1163.001
+        1.163001
       ],
       "glosa": "Otros gastos de explotación"
     },
@@ -600,99 +340,29 @@
       "label": "Sopravvenienze passive",
       "lado": "expense",
       "page": 104,
-      "section": "nota que desglosa \"Altri oneri\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        94.655
+        0.094655
       ],
       "glosa": "Gastos excepcionales"
     },
     {
-      "label": "Spese bancarie",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -175
-      ],
-      "glosa": "Gastos bancarios"
-    },
-    {
-      "label": "Per godimento di beni di terzi",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -1456
-      ],
-      "glosa": "Arrendamientos y cánones"
-    },
-    {
-      "label": "Spese varie organizzazione gare",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -377
-      ],
-      "glosa": "Gastos varios de organización de partidos"
-    },
-    {
-      "label": "- oneri tributari indiretti",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -658
-      ],
-      "glosa": "- Tributos indirectos"
-    },
-    {
-      "label": "- multe e danni",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -191
-      ],
-      "glosa": "- Multas e indemnizaciones por daños"
-    },
-    {
-      "label": "- perdite su crediti",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -314
-      ],
-      "glosa": "- Pérdidas por insolvencias de créditos"
-    },
-    {
-      "label": "Oneri straordinari",
-      "lado": "expense",
-      "page": 162,
-      "section": "nota que desglosa \"Altri oneri\"",
-      "values": [
-        -95
-      ],
-      "glosa": "Gastos extraordinarios"
-    },
-    {
-      "label": "TOTALE COSTI OPERATIVI",
+      "label": "Minusvalenze da diritti alle prestazioni dei tesserati",
       "lado": "expense",
       "page": 104,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        160.779557
+        0.364407
       ],
-      "glosa": "TOTAL GASTOS DE EXPLOTACIÓN"
+      "glosa": "Minusvalías por enajenación de derechos federativos de jugadores"
     },
     {
       "label": "Amm. delle attività immateriali",
       "lado": "expense",
       "page": 105,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -32826024
+        32.826024
       ],
       "glosa": "Amortización del inmovilizado intangible"
     },
@@ -700,9 +370,9 @@
       "label": "Amm. delle attività materiali",
       "lado": "expense",
       "page": 105,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -1274712
+        1.274712
       ],
       "glosa": "Amortización del inmovilizado material"
     },
@@ -710,9 +380,9 @@
       "label": "Amm. Dei diritti d'uso",
       "lado": "expense",
       "page": 105,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -533146
+        0.533146
       ],
       "glosa": "Amortización de derechos de uso"
     },
@@ -720,61 +390,21 @@
       "label": "Svalutaz. delle attività immateriali",
       "lado": "expense",
       "page": 105,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        -149903
+        0.149903
       ],
-      "glosa": "Deterioro del inmovilizado intangible"
+      "glosa": "Deterioro de valor del inmovilizado intangible"
     },
     {
-      "label": "Ammortamenti immobilizzazioni immateriali",
-      "lado": "expense",
-      "page": 163,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
-      "values": [
-        32826000
-      ],
-      "glosa": "Amortización del inmovilizado intangible"
-    },
-    {
-      "label": "Ammortamenti immobilizzazioni materiali",
-      "lado": "expense",
-      "page": 163,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
-      "values": [
-        1275000
-      ],
-      "glosa": "Amortización del inmovilizado material"
-    },
-    {
-      "label": "Amm. Dei diritti d'uso",
-      "lado": "expense",
-      "page": 163,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
-      "values": [
-        533000
-      ],
-      "glosa": "Amortización de derechos de uso"
-    },
-    {
-      "label": "Svalutazione delle immobilizzazioni",
-      "lado": "expense",
-      "page": 163,
-      "section": "nota que desglosa \"Ammortamenti e svalutazioni delle attività materiali ed immateriali\"",
-      "values": [
-        150000
-      ],
-      "glosa": "Deterioro del inmovilizado"
-    },
-    {
-      "label": "Accantonamenti e altre svalutazioni",
+      "label": "Svalutaz. dei crediti dell'attivo circolante e dispon.liq.",
       "lado": "expense",
       "page": 105,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.836282
       ],
-      "glosa": "Provisiones y otros deterioros"
+      "glosa": "Deterioro de créditos del activo corriente y tesorería"
     }
   ]
 }
