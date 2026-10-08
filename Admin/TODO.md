@@ -232,9 +232,12 @@ ni en el comentario de ningún archivo de código.
 
 179. ITALIA, LOTE 40: QUÉ FRENA A CADA UNO Y EN QUÉ ORDEN SE RESUELVE (2026-10-08). 76 PDFs de fútbol por las etapas 3 a 8: 14 cargados, 62 frenados.
     Años = año de cierre (2020 = 2019-20). Orden de trabajo:
-    1. Solo preguntas en la cola, totales y resultado cierran (23): AC Milan 2021, AS Roma 2009, 2011 (separato), 2013 a 2017, Bologna 2018 y 2023,
-       Fiorentina 2019, Genoa 2025, Hellas Verona 2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Sassuolo 2023, Torino 2020 y 2025.
-       Revisarlas con los criterios ya decididos y traerle a Guido solo las dudas genuinas; después el lote de categorización y la carga.
+    1. Solo preguntas en la cola (22): respondidas el 2026-10-08 con los criterios ya decididos (cuadros que repiten el estado o abren por otro criterio quedan
+       afuera, columna Totale en cuadros con subcolumnas, notas que no suman o desglosan solo una columna quedan afuera, primer año verificado contra el estado).
+       Falta correr el lote 44 (etapa 7, ~US$ 0,6) y cargar: AC Milan 2021, AS Roma 2009 y 2013 a 2017, Bologna 2018 y 2023, Fiorentina 2019, Genoa 2025, Hellas
+       Verona 2024 y 2025, Inter 2018 y 2019, Napoli 2018 y 2020, Parma 2017, Sampdoria 2019, Sassuolo 2023. AS Roma 2011 (separato) se descartó (el perímetro de
+       Roma es consolidado). Pendiente de decisión de Guido: Torino 2020 y 2025: el conto economico formal quedó en la transcripción sin los importes (solo las
+       etiquetas, Torino-bilancio-2020.md L640 y 2025 L619) y el estado salió del cuadro riclassificato de la relazione; ¿se carga así o se re-transcribe la página?
     2. Lazio 1999, 2000 y 2001 en liras (decidido: ITL): soporte de la moneda (CURRENCY_META, FX_CLOSE con la paridad fija 1.936,27 y la serie del BCE, la
        excepción de la moneda legado en cargar.mjs) y cerrar los tres (2000: ingresos 343.364 contra 245.595 millones en el documento siguiente, parece perímetro).
     3. El resultado o el total de gastos no cierra (17): AC Milan 2008 a 2012 (falla el resultado en los cinco, sin diagnosticar); AS Roma 2007 y 2012; Bologna
