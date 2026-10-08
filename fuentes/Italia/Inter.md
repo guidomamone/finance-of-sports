@@ -48,3 +48,5 @@ como dato complementario o directamente descartarlo por no ser el club entero â€
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2022 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-07): ejercicio 2025 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2024-25`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.pdf` (sourceId `inter-it-fascicolo-bilancio-consolidato-2019-20`).
