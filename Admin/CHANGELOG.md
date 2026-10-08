@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 606 — Lote 44 completo: las 6 preguntas resueltas a mano y guardadas (2026-10-08)
+
+- AC Milan 2021 (`cero-real` de Estadio: puertas cerradas por el Covid), Fiorentina 2019, Genoa 2025, Hellas Verona 2024 y Parma 2017 (respuestas de categoría en la cola, que
+  quedan guardadas en `Admin/cola-revision.jsonl`), Inter 2018-19 (ajuste `fila` que deja entero el renglón 4) Capitalizzazione costi vivaio: la nota b41 explica costos
+  capitalizados y sus filas quedaban como gastos; sin él el resultado daba −62,68 M contra −48,39 M impreso) e Inter 2017-18 (página 14 re-transcripta a mano: financiero, imposte y
+  resultado habían quedado separados de sus importes; se rearmó el `.filas.json`). Los 7 cargados con el resultado igual al impreso; correr `verificar.mjs` de nuevo da lo mismo.
+  Auditoría P0 0, P1 0. Italia: 113 ejercicios.
+
 ## Versión 605 — Lote 44: 13 ejercicios de Italia cargados (2026-10-08)
 
 - AS Roma 2009 y 2013 a 2017, Bologna 2017-18 y 2022-23, Hellas Verona 2025, Napoli 2018 y 2020, Sampdoria 2019 y Sassuolo 2023, con las 44 respuestas de la cola de ese

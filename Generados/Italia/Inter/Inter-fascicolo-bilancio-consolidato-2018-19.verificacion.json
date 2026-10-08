@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md",
- "generado": "2026-10-08T20:27:59.049Z",
+ "generado": "2026-10-08T20:30:38.492Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2019,
@@ -45,6 +45,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 346.990178; el sitio tiene 346.990412"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 417.079137 en este documento y 417.079516 en Inter-fascicolo-bilancio-consolidato-2019-20.pdf (columna del año anterior)"
@@ -53,11 +58,6 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 346.990412 en Inter-fascicolo-bilancio-consolidato-2017-18.pdf y 346.990178 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [

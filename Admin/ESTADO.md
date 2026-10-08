@@ -56,12 +56,12 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
-- Italia (onboarding en curso): 19 clubes con alta. Cargados 106 ejercicios de 18 clubes además de Juventus (23): Lazio 16, AS Roma 13, Napoli 8, Parma 8, Torino 8, Atalanta 7, Sassuolo 7, AC Milan 6, Bologna 6, Hellas Verona 5, Cremonese 4, Fiorentina 4, Inter 3, Monza 3, Sampdoria 3, Como 2, Udinese 2, Genoa 1. El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D, el subtotal repetido, el
+- Italia (onboarding en curso): 19 clubes con alta. Cargados 113 ejercicios de 18 clubes además de Juventus (23): Lazio 16, AS Roma 13, Parma 9, Napoli 8, Torino 8, AC Milan 7, Atalanta 7, Sassuolo 7, Bologna 6, Hellas Verona 6, Fiorentina 5, Inter 5, Cremonese 4, Monza 3, Sampdoria 3, Como 2, Genoa 2, Udinese 2. El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D, el subtotal repetido, el
   renglón grande sin abrir (TV escondida en "altri"), la etapa 4 que frenaba en silencio (Versiones 581-590) y el resultado impreso en una
   tabla de una fila pegada al estado (Versión 592). Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166). Atalanta y
   Parma cambiaron la fecha de cierre y la etiqueta de algunos años se ve mal (to-do 177, decisión de Guido: es puntual, no se toca); un
   ejercicio de menos de 12 meses no se carga (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`).
-  Lote 40 (2026-10-08): 76 PDFs de fútbol transcriptos y llevados por las etapas 3 a 8; 27 cargados, 49 frenados. Qué frena a cada uno, por grupo: to-do 179. Sin transcribir: rugby FIR/Zebre, tenis FITP y entes, y
+  Lote 40 (2026-10-08): 76 PDFs de fútbol transcriptos y llevados por las etapas 3 a 8; 34 cargados, 42 frenados. Qué frena a cada uno, por grupo: to-do 179. Sin transcribir: rugby FIR/Zebre, tenis FITP y entes, y
   Juve Stabia semestral y Catania (lote 41, solo transcripción); ver `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
