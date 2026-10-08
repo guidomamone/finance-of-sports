@@ -13,7 +13,7 @@
 // ============================================================================
 
 window.CLUB_INDEX = {
-  "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":4,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":5,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "aellarissa-gr": {"n":"AEL Larissa","c":"GR","q":"full","y":10,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "agf-dk": {"n":"AGF","c":"DK","q":"full","y":1,"last":2021,"yrs":[[2021,"official_balance_sheet"]]},
   "ajax-nl": {"n":"Ajax","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
