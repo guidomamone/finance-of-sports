@@ -9,7 +9,7 @@
 //   2023: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -229,6 +229,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2019-20",
         mix:[["Comercial / Sponsors",180.611],["Estadio",55.096],["Televisión",186.314],["Venta de Jugadores",192.632],["Otros ingresos",27.479]] },
+      { id:"napoli-it", revenue:307.697, reportType:"official_balance_sheet",
+        sourceId:"napoli-it-bilancio-2020",
+        mix:[["Comercial / Sponsors",35.85],["Estadio",14.777],["Televisión",136.11],["Venta de Jugadores",110.197],["Otras secciones deportivas",0.002],["Otros ingresos",10.761]] },
       { id:"atalanta-it", revenue:296.956, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2020",
         mix:[["Comercial / Sponsors",27.84],["Estadio",5.47],["Televisión",143.755],["Venta de Jugadores",86.024],["Otras secciones deportivas",0.324],["Otros ingresos",33.543]] },

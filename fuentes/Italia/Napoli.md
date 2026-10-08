@@ -55,3 +55,5 @@ De Wayback (el sitio viejo `sscnapoli.it/shared/UserFiles/`, snapshots de 2022-0
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Napoli/Napoli-bilancio-2019.pdf` (sourceId `napoli-it-bilancio-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Napoli/Napoli-bilancio-2018.pdf` (sourceId `napoli-it-bilancio-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2020 desde `Clubes/Italia/Napoli/Napoli-bilancio-2020.pdf` (sourceId `napoli-it-bilancio-2020`).
