@@ -6,7 +6,7 @@
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -115,6 +115,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"lazio-it", revenue:166.594, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-separato-consolidato-2022-23",
         mix:[["Comercial / Sponsors",25.032],["Estadio",19.471],["Televisión",110.825],["Venta de Jugadores",5.569],["Otros ingresos",5.697]] },
+      { id:"hellasverona-it", revenue:106.971, reportType:"official_balance_sheet",
+        sourceId:"hellasverona-it-bilancio-individuale-2023",
+        mix:[["Comercial / Sponsors",13.457],["Estadio",4.842],["Televisión",37.09],["Venta de Jugadores",47.807],["Otros ingresos",3.774]] },
       { id:"monza-it", revenue:75.478, reportType:"official_balance_sheet",
         sourceId:"monza-it-bilancio-2023",
         mix:[["Comercial / Sponsors",19.499],["Estadio",6.365],["Televisión",42.868],["Venta de Jugadores",2.804],["Otros ingresos",3.943]] },

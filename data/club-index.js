@@ -105,7 +105,7 @@ window.CLUB_INDEX = {
   "guarani-br": {"n":"Guarani","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "hajduksplit-hr": {"n":"Hajduk Split","c":"HR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "hamburgersv-de": {"n":"Hamburger SV","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "hellasverona-it": {"n":"Hellas Verona","c":"IT","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
+  "hellasverona-it": {"n":"Hellas Verona","c":"IT","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "hoffenheim-de": {"n":"TSG Hoffenheim","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "independiente": {"n":"Independiente","c":"AR","q":"full","y":2,"last":2026,"yrs":[[2026,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "instituto": {"n":"Instituto ACC","c":"AR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
