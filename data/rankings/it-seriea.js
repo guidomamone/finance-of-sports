@@ -13,7 +13,7 @@
 //   2019: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2016: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2014: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -321,6 +321,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"juventus-it", revenue:442.458, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2015-16",
         mix:[["Comercial / Sponsors",92.722],["Estadio",48.48],["Televisión",216.375],["Venta de Jugadores",51.517],["Otros ingresos",33.365]] },
+      { id:"asroma-it", revenue:314.848, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2016",
+        mix:[["Comercial / Sponsors",17.427],["Estadio",57.884],["Televisión",148.166],["Venta de Jugadores",71.238],["Otros ingresos",20.133]] },
     ],
   },
   2015: {

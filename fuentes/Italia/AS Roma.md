@@ -70,3 +70,5 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2014 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.pdf` (sourceId `asroma-it-bilancio-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2015 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.pdf` (sourceId `asroma-it-bilancio-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2016 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2016.pdf` (sourceId `asroma-it-bilancio-2016`).
