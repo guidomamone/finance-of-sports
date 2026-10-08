@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2021.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2021.md",
- "generado": "2026-10-08T13:01:04.986Z",
+ "generado": "2026-10-08T22:37:00.862Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2021,
@@ -35,14 +35,19 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 274.773521; el sitio tiene 274.773521"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 228.097847 en este documento y 228.097847 en Napoli-bilancio-2022.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 274.773521 en Napoli-bilancio-2020.pdf y 274.773521 en este documento (columna del año anterior)"
   },
   {
    "nombre": "resultado final",

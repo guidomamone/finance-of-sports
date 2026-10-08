@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
- "generado": "2026-10-08T18:56:46.399Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:36:57.864Z",
+ "estado": "ok",
  "clubId": "inter-it",
  "year": 2024,
  "escala": {
@@ -12,31 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "26c9296",
-  "71b0e3d",
-  "3f394ba",
-  "06bf6e5",
-  "c5d523f",
-  "7187e19",
-  "3cad5f6",
-  "0a2aeda",
-  "20ac5ce",
-  "701fde6",
-  "6301ad9",
-  "3b48fd5",
-  "c899836",
-  "be04c90",
-  "f8f2fc6",
-  "913d9dc",
-  "8b20383",
-  "d2f058f",
-  "1247606",
-  "eb461a8",
-  "fec6207",
-  "4fb1c63",
-  "fcc3d93"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 473.208416 - gastos 464.32728 ± financiero -36.105652 ± impuesto -9.194137 no da el impreso -35.745922"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2025",
@@ -71,11 +47,35 @@
  ],
  "notas": [
   "el desglose de \"Administrative, advertising and general\" (18 filas) no suma la fila: quedó la fila",
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L1346) al financiero; su suma da el total impreso (0.671642, L1349), con el 17) restando; cerró la lectura 0",
+  "línea 2829: 30.368 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2831: 13.195 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2832: 1.583 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2868: 9.719 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2923: 3.348 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2924: 3.838 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2926: 6.355 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2945: 2.587 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2946: 4.335 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2947: 3.274 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2949: 35.872 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2957: 2.503 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2959: 2.218 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2970: 2.163 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 2972: 14.100 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3030: 5.509 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3031: 3.854 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3033: 3.357 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3035: 2.132 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3141: 1.925 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 3142: 1.596 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar que no afecta la carga: Es un detalle por jugador; el total ya está en el estado y en b39.",
   "duda de localizar que no afecta la carga: b1 y b2 repiten en miles de euros los renglones del estado (b6, b7) que está en euros.",
+  "duda de extraer confirmada por las sumas (columna, \"a) salaries and wages\"): ¿Se deja afuera de la carga el desglose Registered/Other del cuadro de personal (L3044-L3048), cargando solo el total L3049?",
   "duda de extraer que no afecta la carga: L2986 dice 'include, among others'; las partidas listadas no cubren el total del renglón.",
   "duda de extraer que no afecta la carga: 40.368 = 3.789 (L1339) + 36.579 (L1340); asigné 'On payables to parent companies' a c) y el resto a d).",
-  "duda de extraer que no afecta la carga: Minoritarios en '-' (L1356), por lo que L1355 y L1357 coinciden."
+  "duda de extraer que no afecta la carga: Minoritarios en '-' (L1356), por lo que L1355 y L1357 coinciden.",
+  "22 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -95,12 +95,12 @@
  "totales": {
   "ingresos": 473.208416,
   "gastos": 464.32728,
-  "financiero": -36.105652,
+  "financiero": -35.43401,
   "impuesto": -9.194137,
   "resultadoImpreso": -35.745922,
   "resultadoParaCargar": -35.745922,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -637,6 +637,11 @@
    "etiqueta": "c) losses on exchange",
    "M": -0.011002,
    "linea": 1342
+  },
+  {
+   "etiqueta": "a) of investments",
+   "M": 0.671642,
+   "linea": 1346
   }
  ],
  "impuesto": [
@@ -654,6 +659,92 @@
    "etiqueta": "c) deferred tax assets",
    "M": 0.413833,
    "linea": 1354
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 2829,
+   "numero": "30.368"
+  },
+  {
+   "linea": 2831,
+   "numero": "13.195"
+  },
+  {
+   "linea": 2832,
+   "numero": "1.583"
+  },
+  {
+   "linea": 2868,
+   "numero": "9.719"
+  },
+  {
+   "linea": 2923,
+   "numero": "3.348"
+  },
+  {
+   "linea": 2924,
+   "numero": "3.838"
+  },
+  {
+   "linea": 2926,
+   "numero": "6.355"
+  },
+  {
+   "linea": 2945,
+   "numero": "2.587"
+  },
+  {
+   "linea": 2946,
+   "numero": "4.335"
+  },
+  {
+   "linea": 2947,
+   "numero": "3.274"
+  },
+  {
+   "linea": 2949,
+   "numero": "35.872"
+  },
+  {
+   "linea": 2957,
+   "numero": "2.503"
+  },
+  {
+   "linea": 2959,
+   "numero": "2.218"
+  },
+  {
+   "linea": 2970,
+   "numero": "2.163"
+  },
+  {
+   "linea": 2972,
+   "numero": "14.100"
+  },
+  {
+   "linea": 3030,
+   "numero": "5.509"
+  },
+  {
+   "linea": 3031,
+   "numero": "3.854"
+  },
+  {
+   "linea": 3033,
+   "numero": "3.357"
+  },
+  {
+   "linea": 3035,
+   "numero": "2.132"
+  },
+  {
+   "linea": 3141,
+   "numero": "1.925"
+  },
+  {
+   "linea": 3142,
+   "numero": "1.596"
   }
  ]
 }

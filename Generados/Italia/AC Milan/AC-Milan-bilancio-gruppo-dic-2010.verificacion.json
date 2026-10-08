@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2010.md",
- "generado": "2026-10-08T21:53:16.009Z",
- "estado": "ok",
+ "generado": "2026-10-08T22:36:53.743Z",
+ "estado": "cola",
  "clubId": "acmilan-it",
  "year": 2010,
  "escala": {
@@ -12,7 +12,9 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "6584e78"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -30,6 +32,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2009 de este documento suma ingresos 307.349; el sitio tiene 327.617"
+  },
+  {
    "nombre": "documento del año 2011",
    "ok": true,
    "detalle": "ingresos de 2010: 253.196 en este documento y 253.196 en AC-Milan-bilancio-gruppo-dic-2011.pdf (columna del año anterior)"
@@ -38,11 +45,6 @@
    "nombre": "documento del año 2009",
    "ok": false,
    "detalle": "ingresos de 2009: 327.617 en AC-Milan-bilancio-gruppo-dic-2009.pdf y 307.349 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2009: este chequeo no se puede hacer"
   }
  ],
  "notas": [

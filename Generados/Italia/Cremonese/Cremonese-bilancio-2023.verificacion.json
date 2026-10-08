@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2023.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2023.md",
- "generado": "2026-10-08T18:56:45.339Z",
+ "generado": "2026-10-08T22:36:56.589Z",
  "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2023,
@@ -37,7 +37,7 @@
   {
    "nombre": "documento del año 2024",
    "ok": true,
-   "detalle": "ingresos de 2023: 89.089099 en este documento y 89.089099 en Cremonese-bilancio-2024.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2023: 89.089098 en este documento y 89.089099 en Cremonese-bilancio-2024.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2022",
@@ -47,8 +47,8 @@
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (84.551247): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
-  "escalón \"renglón grande sin abrir\": \"altri\" (L154) era el 94% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (27.429928): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en Cremonese-bilancio-2025.pdf",
   "duda de extraer que no afecta la carga: La tabla de servicios se corta en L1448 y sigue en L1456 con su TOTALE 10.722.979; el encabezado de columnas en L1435-L1437 está desordenado."
  ],

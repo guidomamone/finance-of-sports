@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
- "generado": "2026-10-08T18:56:45.271Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:36:56.339Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2015,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "1a1470e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,8 +26,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 55.420332 - gastos 58.61397 ± financiero 2.125468 ± impuesto 0.151448 no da el impreso 0.521922"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2016",
@@ -52,11 +50,13 @@
   "la nota de \"a) salari e stipendi\" no suma el renglón (52.422084 contra 26.211042, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"b) oneri sociali\" no suma el renglón (2.96499 contra 1.482495, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"c) trattamento di fine rapporto\" no suma el renglón (0.501274 contra 0.250637, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"sección D\": 4 fila(s) de rettifiche (L903, L904, L907, L908) al financiero; su suma da el total impreso (4.992248, L910), con el 17) restando; cerró la lectura 0",
   "duda de localizar que no afecta la carga: b52 solo tiene la columna 'Valore esercizio corrente', sin año anterior.",
   "duda de localizar que no afecta la carga: b66 abre los intereses en 'Debiti verso banche' y 'Altri', solo ejercicio corriente.",
   "duda de extraer que no afecta la carga: El cuadro del costo del personal está dividido en Tesserati/Altri dipen./Totale; se tomó la columna Totale que coincide con el estado (L1864-L1881).",
   "duda de extraer que no afecta la carga: La suma 200+5.533.199 cuadra con L903; en 2014 los 820 también son plusvalenza cespiti (L2040).",
-  "duda de extraer que no afecta la carga: 19.256+703.395=722.651 coincide con L908; la etiqueta 'altri' se repite en varios renglones del estado."
+  "duda de extraer que no afecta la carga: 19.256+703.395=722.651 coincide con L908; la etiqueta 'altri' se repite en varios renglones del estado.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -106,12 +106,12 @@
  "totales": {
   "ingresos": 55.420332,
   "gastos": 58.61397,
-  "financiero": 2.125468,
+  "financiero": 3.867008,
   "impuesto": 0.151448,
   "resultadoImpreso": 0.521922,
   "resultadoParaCargar": 0.521922,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -293,7 +293,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -303,19 +303,39 @@
   },
   {
    "etiqueta": "altri",
-   "M": 1.625354,
+   "M": -1.625354,
    "linea": 897
   },
   {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": -0.000875,
    "linea": 899
+  },
+  {
+   "etiqueta": "plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5",
+   "M": 5.533399,
+   "linea": 903
+  },
+  {
+   "etiqueta": "altri",
+   "M": 0.1992,
+   "linea": 904
+  },
+  {
+   "etiqueta": "minusvalenze da alienazioni i cui effetti contabili non sono iscrivibili al n 14",
+   "M": -0.0177,
+   "linea": 907
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.722651,
+   "linea": 908
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 0.151448,
+   "M": -0.151448,
    "linea": 927
   }
  ]

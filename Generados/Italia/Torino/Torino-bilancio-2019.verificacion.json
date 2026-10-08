@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2019.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2019.md",
- "generado": "2026-10-08T03:20:56.022Z",
+ "generado": "2026-10-08T22:37:02.070Z",
  "estado": "ok",
  "clubId": "torino-it",
  "year": 2019,
@@ -48,6 +48,11 @@
    "nombre": "año anterior cargado",
    "ok": true,
    "detalle": "la columna 2018 de este documento suma ingresos 93.803; el sitio tiene 93.803"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 96.332 en este documento y 96.332 en Torino-bilancio-2020.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",

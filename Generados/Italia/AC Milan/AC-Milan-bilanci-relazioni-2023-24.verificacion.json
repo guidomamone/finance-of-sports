@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2023-24.md",
- "generado": "2026-10-07T02:00:45.586Z",
+ "generado": "2026-10-08T22:36:53.561Z",
  "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2024,
@@ -57,14 +57,19 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 404.529; el sitio tiene 404.529"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 456.941 en este documento y 450.162 en AC-Milan-bilanci-relazioni-2024-25.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 404.529 en AC-Milan-bilanci-relazioni-2022-23.pdf y 404.529 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

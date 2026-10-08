@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md",
- "generado": "2026-10-05T15:28:30.964Z",
+ "generado": "2026-10-08T22:36:33.809Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2020,
@@ -399,6 +399,27 @@
    "etiqueta": "Aportes A Entidades Promotoras De Salud (administración)",
    "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
    "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "caja",
+   "valor": "151,365",
+   "linea": 407,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Bancos 148.882 + Caja 2.483 (nota de efectivo; el cuadro de instrumentos financieros del documento 2021 imprime 151.365 para 2020)",
+   "evidencia": ".md L407-408",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio Transporte",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020",
+   "evidencia": "nota de ingresos",
    "autor": "Guido",
    "fecha": "2026-10-05"
   }

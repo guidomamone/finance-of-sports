@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md",
- "generado": "2026-10-03T23:03:06.221Z",
+ "generado": "2026-10-08T22:36:34.008Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2024,
@@ -20,6 +20,50 @@
    "evidencia": null,
    "autor": "Guido",
    "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Derechos Deportivos (7)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: intermediación y pagos a clubes por transferencias (nota 7); precedente de Guido 2020 y 2023",
+   "evidencia": "estados-financieros-2025.md L1171 y nota (7)",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
+   "campo": "categoria",
+   "valor": "match_organisation_expense",
+   "linea": null,
+   "etiqueta": "Alquiler Terrenos",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 2: precedente del club",
+   "evidencia": ".md L1156",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de arbitraje",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
+   "evidencia": "nota de ingresos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de transporte",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025 (en 2024 ninguna fila de gasto se llama igual)",
+   "evidencia": "nota de ingresos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],

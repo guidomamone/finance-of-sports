@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md",
- "generado": "2026-10-08T22:10:02.339Z",
+ "generado": "2026-10-08T22:36:56.239Z",
  "estado": "cola",
  "clubId": "bologna-it",
  "year": 2025,
@@ -110,8 +110,7 @@
   "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (43.130), en lugar de la fila de L1155 (2026-10-08, Claude 2026-10-08 (Guido: Bologna 2025 a mano): rettifiche D 19) a) svalutazioni di partecipazioni 43.130 impreso en positivo y restado (Totale D (43.130), L1157). Del lado financiero como en Bologna 2019-20)",
   "duda de localizar que no afecta la carga: b12 en pág. 9 de la relazione sulla gestione es una reclasificación del mismo conto economico; se usa el esquema oficial b21-b23.",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Totale costi per il personale\"): ¿Se deja afuera de la carga el cuadro por categoría Tesserati/Altri dip. del costo del personal (L2787-L2793), ya que sus totales repiten los renglones del estado?",
-  "duda de extraer que no afecta la carga: La suma de b102-b103 da 8.192.070 pero el total impreso dice 8.192.040; inconsistencia de 30.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La suma de b102-b103 da 8.192.070 pero el total impreso dice 8.192.040; inconsistencia de 30."
  ],
  "reintentar": [
   {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-07T22:03:17.049Z",
+ "generado": "2026-10-08T22:36:56.071Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2022,
@@ -33,6 +33,11 @@
    "nombre": "año anterior cargado",
    "ok": true,
    "detalle": "la columna 2021 de este documento suma ingresos 81.660776; el sitio tiene 81.660776"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 80.372336 en este documento y 80.372337 en Bologna-bilancio-consolidato-2022-23.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2021",

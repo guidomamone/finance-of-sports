@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.md",
- "generado": "2026-10-08T19:48:06.801Z",
+ "generado": "2026-10-08T22:36:54.292Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2008,
@@ -13,10 +13,8 @@
  },
  "ajustes": null,
  "cola": [
-  "6666e0b",
   "b96afd6",
   "91b800c",
-  "23a227b",
   "bc5175c",
   "0dbbebd",
   "8d0a8f5",
@@ -45,8 +43,8 @@
   },
   {
    "nombre": "documento del año 2009",
-   "ok": false,
-   "detalle": "ingresos de 2008: 203.858 en este documento y 189.313 en AS-Roma-bilancio-2009.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2007",

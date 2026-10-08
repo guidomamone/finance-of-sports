@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2018-19.md",
- "generado": "2026-10-07T22:22:12.057Z",
+ "generado": "2026-10-08T22:36:55.957Z",
  "estado": "ok",
  "clubId": "bologna-it",
  "year": 2019,
@@ -30,20 +30,26 @@
    "detalle": "cierra (impuesto invertido)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 92.814994; el sitio tiene 92.814994"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 85.663149 en este documento y 85.663149 en Bologna-bilancio-consolidato-2019-20.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 92.814994 en Bologna-bilancio-consolidato-2017-18.pdf y 92.814994 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (78.744181): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "la nota de \"a) ammortamento delle immobilizzazioni immateriali\" no suma el renglón (23.140565 contra 23.142564, sumando sus renglones): quedó el renglón del estado",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (85.418199): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "duda de localizar que no afecta la carga: b69 solo muestra una fila Totale, sin apertura por categoría.",
   "duda de extraer que no afecta la carga: L2428 repite la minusvalenza ya incluida en L2376 (sin importe en el ejercicio actual).",
   "duda de extraer que no afecta la carga: El estado no imprime escala; L788 coincide con L2131 y L2107 dice 'Valori in €'."

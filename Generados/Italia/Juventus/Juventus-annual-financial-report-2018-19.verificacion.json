@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.md",
- "generado": "2026-10-03T23:14:05.661Z",
+ "generado": "2026-10-08T22:36:58.947Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2019,
@@ -22,6 +22,16 @@
    "reemplaza": "Basic and diluted earning/(loss) per share",
    "motivo": "Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €",
    "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf",
+   "campo": "caja",
+   "valor": "9,744,722",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L1071 Cash",
    "autor": "Guido",
    "fecha": "2026-10-03"
   }

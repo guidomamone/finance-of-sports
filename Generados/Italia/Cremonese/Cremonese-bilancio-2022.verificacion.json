@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md",
- "generado": "2026-10-08T11:31:54.900Z",
+ "generado": "2026-10-08T22:36:56.560Z",
  "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2022,
@@ -28,6 +28,11 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 28.106539 en este documento y 28.106539 en Cremonese-bilancio-2023.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

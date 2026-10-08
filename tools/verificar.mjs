@@ -783,7 +783,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // Solo con una sección D del Codice Civile impresa (su encabezado en el .md entre el financiero y el resultado): los IFRS en inglés
   // (Juventus 2015-16 a 2024-25) traen filas sin lado en esa zona que no son la D. Y no si ya hay un ajuste `fila` del financiero en esa zona
   // (la D ya está resuelta a mano: Como 2024 la contaba dos veces).
-  const RXDHEAD = /(^|\|)\s*#*\s*(\*\*)?\s*D\s*\)\s*(\*\*)?\s*(RETTIFICHE|Rettifiche|VALUE ADJUSTMENTS|Value adjustments|VALUATION ADJUSTMENTS|Valuation adjustments)|rettifiche\s+di\s+valore/;
+  // (to-do 179, Chievo 2014-16 e Inter 2023-24) El encabezado también vale con la "D)" y el título en celdas separadas de la tabla (Inter 2023:
+  // "| **D)** | **VALUE ADJUSTMENTS ...") y con el "E) Proventi e oneri straordinari" (Chievo: sin D impresa); en la zona, un "21) oneri" resta.
+  const RXDHEAD = /(^|\|)\s*#*\s*(\*\*)?\s*D\s*\)\s*(\*\*)?\s*\|?\s*(\*\*)?\s*(RETTIFICHE|Rettifiche|VALUE ADJUSTMENTS|Value adjustments|VALUATION ADJUSTMENTS|Valuation adjustments)|rettifiche\s+di\s+valore|(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/;
   const conSeccionD = resD && lineasMd.slice(ultFin, resD.linea - 1).some((t) => RXDHEAD.test(t || ''));
   const ajusteEnD = resD && ajustesDe(pdf).some((a) => a.campo === 'fila' && a.lado === 'financiero' && [a.linea, a.reemplazaLinea].some((l) => l != null && Number(l) > ultFin && Number(l) <= resD.linea));
   if (resD && conSeccionD && !ajusteEnD) {
@@ -799,7 +801,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // (to-do 166, E) la búsqueda hacia arriba se corta en el encabezado de la sección E (proventi e oneri straordinari): sus filas llevan el signo impreso, no el
       // del 19) de la D que queda más arriba. Caso: AC Milan 2008 a 2013 (plusvalenze +40 contadas como −40).
       const RXE = /(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/;
-      const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RXE.test(t)) return 0; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
+      const RX21 = /(^|\|)\s*#*\s*(\*\*)?\s*21\s*\)\s*(\*\*)?\s*oneri/i; const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RX21.test(t)) return -1; if (RXE.test(t)) return 0; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
       const prop = dRows.map((f) => { const sg = signoD(f); return { ...f, lado: 'financiero', M: sg ? sg * Math.abs(f.M) : f.M, origen: 'estado (escalón sección D)' }; });
       const tolD = Math.max(1e-6, 0.5 * [...prop, ...(dTot ? [dTot] : [])].reduce((a, f) => a + (f.u || 0), 0));
       if (!dTot || Math.abs(conSigno(prop) - dTot.M) <= tolD) {

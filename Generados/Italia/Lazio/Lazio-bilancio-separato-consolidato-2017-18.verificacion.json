@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2017-18.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2017-18.md",
- "generado": "2026-10-08T01:12:55.876Z",
+ "generado": "2026-10-08T22:37:00.258Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2018,
@@ -30,19 +30,24 @@
    "detalle": "cierra (como impresos)"
   },
   {
-   "nombre": "documento del año 2019",
+   "nombre": "año anterior cargado",
    "ok": true,
-   "detalle": "ingresos de 2018: 192.943084 en este documento y 192.943262 en Lazio-bilancio-separato-consolidato-2018-19.pdf (columna del año anterior)"
+   "detalle": "la columna 2017 de este documento suma ingresos 129.061368; el sitio tiene 129.061368"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2018: 192.943084 en este documento y 192.944068 en Lazio-bilancio-separato-consolidato-2018-19.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 129.061368 en Lazio-bilancio-separato-consolidato-2016-17.pdf y 129.061368 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "duda de localizar que no afecta la carga: Solo muestra ventas a terceros e intersectoriales por segmento, sin abrir renglones que las notas no abran.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se cargan solo los renglones principales del estado (b113/b114) y se dejan afuera los sub-desgloses en cursiva/sangría del propio estado (ej. L3481-L3483, L3509-L3512, L3536-L3543, L3557-L3567, L3572-L3573), ya que repiten el detalle de las notas?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir no, en Lazio-bilancio-separato-consolidato-2011-12.pdf",
   "duda de extraer que no afecta la carga: La nota b185 reagrupa la partida del estado en dos líneas; el total coincide (21.225)."
  ],
  "reintentar": null,

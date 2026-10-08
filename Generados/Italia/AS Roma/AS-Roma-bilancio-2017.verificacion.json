@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.md",
- "generado": "2026-10-08T20:03:01.487Z",
+ "generado": "2026-10-08T22:36:54.987Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2017,
@@ -35,6 +35,11 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 283.596; el sitio tiene 283.596"
+  },
+  {
    "nombre": "documento del año 2018",
    "ok": null,
    "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
@@ -43,11 +48,6 @@
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 283.596 en AS-Roma-bilancio-2016.pdf y 283.596 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

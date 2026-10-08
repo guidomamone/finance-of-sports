@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.md",
- "generado": "2026-10-08T03:20:55.798Z",
- "estado": "ok",
+ "generado": "2026-10-08T22:37:00.003Z",
+ "estado": "cola",
  "clubId": "lazio-it",
  "year": 2013,
  "escala": {
@@ -52,7 +52,11 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [],
+ "cola": [
+  "227da70",
+  "56dad1a",
+  "55b1c5e"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -70,14 +74,19 @@
    "detalle": "cierra (como impresos)"
   },
   {
-   "nombre": "documento del año 2012",
-   "ok": true,
-   "detalle": "ingresos de 2012: 192.29803 en Lazio-bilancio-separato-consolidato-2011-12.pdf y 192.29803 en este documento (columna del año anterior)"
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2012 de este documento suma ingresos 192.29803; el sitio tiene 95.509291"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2013: 109.794296 en este documento y 109.794312 en Lazio-bilancio-separato-consolidato-2013-14.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": false,
+   "detalle": "ingresos de 2012: 95.509291 en Lazio-bilancio-separato-consolidato-2011-12.pdf y 192.29803 en este documento (columna del año anterior)"
   }
  ],
  "notas": [

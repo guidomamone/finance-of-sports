@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md",
- "generado": "2026-10-08T22:25:21.315Z",
+ "generado": "2026-10-08T22:37:00.175Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2016,
@@ -75,8 +75,7 @@
   "duda de extraer que no afecta la carga: L5378 es un detalle de una fila ya cargada en b180 (L5367), con columnas distintas.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir no, en Lazio-bilancio-separato-consolidato-2011-12.pdf",
   "duda de extraer que no afecta la carga: Las etiquetas de L3523-L3527 y L5253-L5257 no coinciden en orden; los importes sí.",
-  "duda de extraer que no afecta la carga: L3544 vs L5366-L5367: misma suma, distinta apertura.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L3544 vs L5366-L5367: misma suma, distinta apertura."
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
- "generado": "2026-10-08T03:48:59.134Z",
+ "generado": "2026-10-08T22:37:01.942Z",
  "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2024,
@@ -46,19 +46,25 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 140.245; el sitio tiene 140.245"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 102.104 en este documento y 102.104 en Sassuolo-bilancio-2025.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 140.245 en Sassuolo-bilancio-2023.pdf y 140.245 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (99.071551): reemplaza a \"a) Derivanti da attività accessorie\" + \"b) plusvalenze\" + \"f) Contributi in conto esercizio\"",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (136.153324): reemplaza a \"a) Derivanti da attività accessorie\" + \"b) plusvalenze\" + \"f) Contributi in conto esercizio\"",
   "duda de localizar que no afecta la carga: Es una reclasificación en miles del mismo estado b15, no el estado oficial.",
   "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) Per il personale:\"): ¿Se usa la columna 'Totale' del cuadro por categoría (L1666-L1670) para desglosar los renglones de personal del estado?",
   "duda de extraer que no afecta la carga: El total 57.363 de L1684 coincide con la columna Tesserati de L1670, no con el Totale 63.363; es un sub-desglose de tesserati.",

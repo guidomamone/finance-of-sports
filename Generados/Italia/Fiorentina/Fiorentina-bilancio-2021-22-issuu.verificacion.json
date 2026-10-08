@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md",
- "generado": "2026-10-08T03:20:56.084Z",
+ "generado": "2026-10-08T22:36:56.781Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "fiorentina-it",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -60,8 +60,13 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 160.692424; el sitio tiene 160.692424"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 160.692424 en Fiorentina-bilancio-2020-21-issuu.pdf y 160.692424 en este documento (columna del año anterior)"
   }
  ],
  "notas": [

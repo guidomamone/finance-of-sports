@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md",
- "generado": "2026-10-08T22:25:20.565Z",
+ "generado": "2026-10-08T22:36:59.865Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2011,
@@ -121,8 +121,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale muestran totales de ricavi y resultados, no desglosan un renglón concreto.",
   "duda de extraer confirmada por las sumas (columna, \"-\"): ¿Se cargan los importes del ejercicio de b112 corriendo la columna 2010/11 una fila hacia arriba (dos en Personale), como confirman las notas b170-b185?",
-  "duda de extraer que no afecta la carga: Abre 6.650 en condizionati/non condizionati, importe ya cargado en b180 L5267.",
-  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Abre 6.650 en condizionati/non condizionati, importe ya cargado en b180 L5267."
  ],
  "reintentar": [
   {

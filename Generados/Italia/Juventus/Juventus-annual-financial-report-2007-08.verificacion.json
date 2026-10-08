@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md",
- "generado": "2026-10-03T23:14:05.478Z",
+ "generado": "2026-10-08T22:36:58.518Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2008,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf",
+   "campo": "caja",
+   "valor": "28,104,289",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L1351 Cash and cash equivalents",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -35,6 +46,11 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2007 de este documento suma ingresos 186.685844; el sitio tiene 186.685844"
+  },
+  {
    "nombre": "documento del año 2009",
    "ok": true,
    "detalle": "ingresos de 2008: 203.731662 en este documento y 203.731662 en Juventus-annual-financial-report-2008-09.pdf (columna del año anterior)"
@@ -43,11 +59,6 @@
    "nombre": "documento del año 2007",
    "ok": true,
    "detalle": "ingresos de 2007: 186.685844 en Juventus-annual-financial-report-2006-07.pdf y 186.685844 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2007: este chequeo no se puede hacer"
   }
  ],
  "notas": [

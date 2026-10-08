@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
- "generado": "2026-10-05T15:28:31.486Z",
+ "generado": "2026-10-08T22:36:33.835Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2021,
@@ -75,6 +75,49 @@
    "etiqueta": "Gastos Laborales (administración)",
    "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
    "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "caja",
+   "valor": "20.036",
+   "linea": 504,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5.A) = Bancos 14.963 + Caja 5.073",
+   "evidencia": ".md L504, L515-516",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de arbitraje(*)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
+   "evidencia": "nota de ingresos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio de transporte(*)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020 y los años 2019, 2022 y 2025",
+   "evidencia": "nota de ingresos",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio hotelero(*)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 12: los auxilios de la Dimayor (arbitraje, transporte, hotelero) van a competition_bonus en todos los años, como el ajuste de Guido de 2020",
+   "evidencia": "nota de ingresos",
    "autor": "Guido",
    "fecha": "2026-10-05"
   }

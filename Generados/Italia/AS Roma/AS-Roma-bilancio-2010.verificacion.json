@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md",
- "generado": "2026-10-08T19:48:06.934Z",
+ "generado": "2026-10-08T22:36:54.393Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2010,
@@ -13,10 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "8869b1f",
-  "98133d7",
-  "1c32538",
-  "e482c01",
   "0e161ab"
  ],
  "chequeos": [
@@ -41,27 +37,27 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2009 de este documento suma ingresos 177.312; el sitio tiene 177.312"
+  },
+  {
    "nombre": "documento del año 2011",
-   "ok": false,
-   "detalle": "ingresos de 2010: 156.036 en este documento y 137.044 en AS-Roma-bilancio-2011-consolidato.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2009",
    "ok": null,
    "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2009: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Los renglones de ingresos consolidados ya se abren en las notas 23-25 (b141-b147).",
+  "duda de extraer confirmada por las sumas (columna, \"b) Sponsorizzazioni\"): ¿Se carga la columna izquierda de b145 (L7107, rotulada '30.06.09' dos veces) como ejercicio 30 06 2010?",
   "duda de extraer que no afecta la carga: L7437 imprime 24.927 en ambas columnas; las partidas 2010 suman 24.327, parece error de imprenta.",
-  "duda de extraer que no afecta la carga: L7098 8.688 = L5466 7.741 + L5467 947; b147 detalla ambos renglones juntos.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L7098 8.688 = L5466 7.741 + L5467 947; b147 detalla ambos renglones juntos."
  ],
  "reintentar": null,
  "reintentado": false,

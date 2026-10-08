@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
- "generado": "2026-10-07T01:43:55.649Z",
- "estado": "ok",
+ "generado": "2026-10-08T22:36:59.716Z",
+ "estado": "cola",
  "clubId": "lazio-it",
  "year": 2009,
  "escala": {
@@ -12,7 +12,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "ebd254c",
+  "873e81d"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,14 +38,19 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2008 de este documento suma ingresos 102.48203; el sitio tiene 102.48203"
+  },
+  {
    "nombre": "documento del año 2010",
    "ok": true,
    "detalle": "ingresos de 2009: 92.001361 en este documento y 92.001361 en Lazio-bilancio-separato-consolidato-2009-10.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2008: este chequeo no se puede hacer"
+   "nombre": "documento del año 2008",
+   "ok": false,
+   "detalle": "ingresos de 2008: 204.964061 en Lazio-bilancio-separato-consolidato-2007-08.pdf y 102.48203 en este documento (columna del año anterior)"
   }
  ],
  "notas": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md",
- "generado": "2026-10-08T01:12:55.559Z",
+ "generado": "2026-10-08T22:36:55.732Z",
  "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2022,
@@ -40,6 +40,11 @@
    "detalle": "la columna 2021 de este documento suma ingresos 242.679019; el sitio tiene 242.670019"
   },
   {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 120.30974 en este documento y 120.309738 en Atalanta-bilancio-consolidato-2023.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 242.670019 en Atalanta-bilancio-consolidato-2021.pdf y 242.679019 en este documento (columna del año anterior)"
@@ -49,7 +54,7 @@
   "la nota de \"a) salari e stipendi\" no suma el renglón (35.09346 contra 37.646309, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El encabezado de b4 compara 2022.06 con 2021.12 y la nota indica valores al 01.01.2022, lo que sugiere un ejercicio de transición de 6 meses.",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) per il personale\"): ¿Se deja afuera de la carga el cuadro de costo del personal por Tesserati/Altri dipendenti (b51, L1360-L1365), ya que repite los renglones de '9) per il personale' del estado?",
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"9) per il personale\"): aceptar, en Atalanta-bilancio-consolidato-2019.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro del resultado neto de operaciones con derechos de jugadores (b10, L661-L673)?",
   "duda de extraer que no afecta la carga: Las notas rotulan 'Esercizio 2022/2021' mientras el estado usa 2022.06/2021.12; los totales coinciden (ej. L1258 vs L219)."
  ],

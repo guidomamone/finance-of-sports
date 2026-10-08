@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md",
- "generado": "2026-10-08T03:32:09.148Z",
+ "generado": "2026-10-08T22:36:57.033Z",
  "estado": "ok",
  "clubId": "genoa-it",
  "year": 2022,
@@ -122,6 +122,11 @@
    "nombre": "resultado final",
    "ok": true,
    "detalle": "-61.728621 por ajuste manual ((61.728.621): el resultado del conto economico (pág. 10, transcripta como texto sin tabla) no se detecta; las filas (con el financiero y el impuesto por ajuste) dan -61.728.624 (3 € de redondeo); el impuesto deducido queda igual al impreso); impuesto deducido -9.396313 (antes de impuestos -71.124934; el documento imprimía 9.39631)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 84.663638 en este documento y 84.663638 en Genoa-bilancio-31.12.2023-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

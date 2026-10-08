@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf",
  "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.md",
- "generado": "2026-10-08T03:20:56.168Z",
- "estado": "ok",
- "clubId": null,
+ "generado": "2026-10-08T22:36:56.881Z",
+ "estado": "cola",
+ "clubId": "fiorentina-it",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -83,7 +83,9 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [],
+ "cola": [
+  "49a0476"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -106,14 +108,14 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 243.030887; el sitio tiene 199.90294"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": false,
    "detalle": "ingresos de 2024: 228.747261 en Fiorentina-bilancio-2023-24.pdf y 243.030887 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
@@ -126,7 +128,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Es un detalle por jugador, que no abre la categoría.",
   "duda de localizar que no afecta la carga: Repiten o reclasifican lo que ya abren el estado y la nota integrativa.",
-  "duda de extraer ya contestada para el club (perimetro, \"a) salari e stipendi\"): corregir sí, en Fiorentina-bilancio-2024-25.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"a) salari e stipendi\"): corregir sí, en Fiorentina-bilancio-2024-25.pdf",
   "duda de extraer que no afecta la carga: Repiten importes ya presentes en el estado (L903-L986), no aportan desglose nuevo.",
   "duda de extraer que no afecta la carga: La nota b54 no trae columna del año anterior; se cargó anterior null y detalla_a al renglón h)."
  ],

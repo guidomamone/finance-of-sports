@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.pdf",
  "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.md",
- "generado": "2026-10-08T21:53:16.131Z",
+ "generado": "2026-10-08T22:36:53.825Z",
  "estado": "ok",
  "clubId": "acmilan-it",
  "year": 2013,
@@ -30,14 +30,14 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2012 de este documento suma ingresos 329.307; el sitio tiene 329.307"
+  },
+  {
    "nombre": "documento del año 2012",
    "ok": true,
    "detalle": "ingresos de 2012: 329.307 en AC-Milan-bilancio-gruppo-dic-2012.pdf y 329.307 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.pdf",
  "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md",
- "generado": "2026-10-08T11:31:56.251Z",
+ "generado": "2026-10-08T22:36:56.620Z",
  "estado": "ok",
  "clubId": "cremonese-it",
  "year": 2024,
@@ -30,19 +30,25 @@
    "detalle": "cierra (impuesto invertido)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 89.089099; el sitio tiene 89.089098"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 57.678554 en este documento y 57.678554 en Cremonese-bilancio-2025.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 89.089098 en Cremonese-bilancio-2023.pdf y 89.089099 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (55.9526): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (84.551247): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
   "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en Cremonese-bilancio-2025.pdf",
   "duda de extraer que no afecta la carga: El estado agrupa en L146 contributos y paracadute (3.111.905+10.000.000=13.111.905); el resto de la nota suma 'altri' L147.",
   "duda de extraer que no afecta la carga: Las filas extraídas de b81-b82 suman 7.902.355, pero hay salto de página (L2170-L2178); conviene verificar.",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.pdf",
  "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2022.md",
- "generado": "2026-10-08T18:56:45.778Z",
+ "generado": "2026-10-08T22:36:57.188Z",
  "estado": "ok",
  "clubId": "hellasverona-it",
  "year": 2022,
@@ -30,6 +30,11 @@
    "detalle": "cierra (como impresos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 99.198328; el sitio tiene 99.198328"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 84.548986 en este documento y 84.548986 en Hellas-Verona-bilancio-individuale-2023.pdf (columna del año anterior)"
@@ -38,11 +43,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 99.198328 en Hellas-Verona-bilancio-individuale-2021.pdf y 99.198328 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

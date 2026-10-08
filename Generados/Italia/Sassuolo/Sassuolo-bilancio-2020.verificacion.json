@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2020.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2020.md",
- "generado": "2026-10-08T19:39:49.235Z",
+ "generado": "2026-10-08T22:37:01.794Z",
  "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2020,
@@ -46,6 +46,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 127.579; el sitio tiene 127.5789"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2020: 121.288 en este documento y 121.288 en Sassuolo-bilancio-2021.pdf (columna del año anterior)"
@@ -54,11 +59,6 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 127.5789 en Sassuolo-bilancio-2019.pdf y 127.579 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [

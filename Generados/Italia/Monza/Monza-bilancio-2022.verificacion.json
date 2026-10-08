@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Monza/Monza-bilancio-2022.pdf",
  "md": "Clubes/Italia/Monza/Monza-bilancio-2022.md",
- "generado": "2026-10-07T01:34:06.004Z",
+ "generado": "2026-10-08T22:37:00.619Z",
  "estado": "ok",
  "clubId": "monza-it",
  "year": 2022,
@@ -49,6 +49,11 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 32.723441 en este documento y 32.723441 en Monza-bilancio-2023.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

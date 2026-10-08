@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md",
- "generado": "2026-10-08T18:56:46.185Z",
+ "generado": "2026-10-08T22:36:57.824Z",
  "estado": "cola",
  "clubId": "inter-it",
  "year": 2023,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "267e615",
   "7041747"
  ],
  "chequeos": [
@@ -25,12 +24,17 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "465.578878 = 465.509141"
+   "detalle": "465.50952 = 465.509141"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 425.475173 - gastos 465.578878 ± financiero -39.016512 ± impuesto -8.144303 no da el impreso -85.372658"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
@@ -50,11 +54,14 @@
  ],
  "notas": [
   "el desglose de \"Administrative, advertising and general\" (18 filas) no suma la fila: quedó la fila",
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L593) al financiero; su suma da el total impreso (1.821837, L594), con el 17) restando; cerró la lectura 4",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b1 y b2 son resúmenes de Value of Production y Production Costs en la memoria de gestión; las notas b43/b44 y b46-b55 ya abren esos renglones.",
   "duda de localizar que no afecta la carga: Es detalle por jugador; el total ya está en la nota b44.",
   "duda de extraer que no afecta la carga: El cuadro L2201-L2204 separa columnas Registered y Other sin total por fila; solo se cargó el total L2206, y el estado ya trae los renglones.",
   "duda de extraer que no afecta la carga: Los importes coinciden (10.976 vs 10.975.748) pero la etiqueta difiere.",
-  "duda de extraer que no afecta la carga: 39.658 ≈ 6.269.781+33.388.426; el renglón 17) no tiene importe propio en el estado."
+  "duda de extraer que no afecta la carga: 39.658 ≈ 6.269.781+33.388.426; el renglón 17) no tiene importe propio en el estado.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -73,13 +80,13 @@
  ],
  "totales": {
   "ingresos": 425.475173,
-  "gastos": 465.578878,
-  "financiero": -39.016512,
+  "gastos": 465.50952,
+  "financiero": -37.194675,
   "impuesto": -8.144303,
   "resultadoImpreso": -85.372658,
   "resultadoParaCargar": -85.372658,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -509,10 +516,10 @@
   {
    "etiqueta": "12) Provision for risks",
    "lado": "gasto",
-   "M": 0.034679,
+   "M": -0.034679,
    "pagina": 14,
    "linea": 565,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "13) Other provisions",
@@ -632,6 +639,11 @@
    "etiqueta": "17-bis) Gains and losses on foreign currency traslation",
    "M": -0.053831,
    "linea": 589
+  },
+  {
+   "etiqueta": "a) of investments",
+   "M": 1.821837,
+   "linea": 593
   }
  ],
  "impuesto": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
- "generado": "2026-10-08T03:48:59.097Z",
+ "generado": "2026-10-08T22:37:01.834Z",
  "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2021,
@@ -47,13 +47,24 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 121.288; el sitio tiene 121.288"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 123.653 en este documento y 123.653 en Sassuolo-bilancio-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 121.288 en Sassuolo-bilancio-2020.pdf y 121.288 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (122.506153): reemplaza a \"a) Derivanti da attività accessorie\" + \"b) plusvalenze\" + \"f) Contributi in conto esercizio\"",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (120.777107): reemplaza a \"a) Derivanti da attività accessorie\" + \"b) plusvalenze\" + \"f) Contributi in conto esercizio\"",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Sassuolo-bilancio-2021.pdf",
   "duda de localizar que no afecta la carga: b7 repite en miles los importes del estado; los derechos de TV (47.393) ya están en la nota b41.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"9) Per il personale:\"): corregir no, en Sassuolo-bilancio-2021.pdf"

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md",
- "generado": "2026-10-03T23:03:05.732Z",
+ "generado": "2026-10-08T22:36:32.641Z",
  "estado": "ok",
  "clubId": "goias-br",
  "year": 2025,
@@ -53,6 +53,28 @@
    "evidencia": "demonstracoes-contabeis-2025.md L1224",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Despesas com Earn In (a)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 10: Earn In de la Liga Forte União (nota 22); en 2024 el mismo rubro está en exceptional_items",
+   "evidencia": ".md L1299-1303",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Outras Receitas (b)",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 10: parte de 'Outras Receitas e Despesas Operacionais' (nota 22), créditos tributarios 2021-2024 y otros de la Liga Forte; se muda de ingreso a ítem excepcional",
+   "evidencia": ".md L1300-1304",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.pdf",
  "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
- "generado": "2026-10-08T12:21:02.038Z",
+ "generado": "2026-10-08T22:36:57.785Z",
  "estado": "ok",
  "clubId": "inter-it",
  "year": 2022,
@@ -28,6 +28,16 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 439.642181 en este documento y 439.642319 en Inter-fascicolo-bilancio-consolidato-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 364.712582 en Inter-fascicolo-bilancio-consolidato-2020-21-en.pdf y 364.712249 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

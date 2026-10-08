@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/balanco-2014-b.pdf",
  "md": "Clubes/Brasil/Novorizontino/balanco-2014-b.md",
- "generado": "2026-10-03T23:03:05.780Z",
+ "generado": "2026-10-08T22:36:32.737Z",
  "estado": "ok",
  "clubId": "novorizontino-br",
  "year": 2014,
@@ -139,9 +139,9 @@
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
   "ajuste manual: resultado final -3.108.722,71 (2026-10-03, Guido 2026-10-02: el PREJUIZO viene impreso sin signo; es pérdida)",
-  "línea 33: 21,76 no está en el segunda lectura, pero las sumas cierran con él",
-  "línea 34: 34,40 no está en el segunda lectura, pero las sumas cierran con él",
-  "línea 49: 857,96 no está en el segunda lectura, pero las sumas cierran con él",
+  "línea 33: 21,76 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 34: 34,40 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 49: 857,96 no está en el segunda lectura; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en balanco-2014-b.pdf",
   "duda de extraer que no afecta la carga: L145 se rotula PREJUIZO sin signo; 1.060.072,64 - 2.639.028,84 - 1.529.766,51 = -3.108.722,71 confirma pérdida."
  ],
@@ -797,6 +797,20 @@
   {
    "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
    "M": 0
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 33,
+   "numero": "21,76"
+  },
+  {
+   "linea": 34,
+   "numero": "34,40"
+  },
+  {
+   "linea": 49,
+   "numero": "857,96"
   }
  ]
 }

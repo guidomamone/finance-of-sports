@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.md",
- "generado": "2026-10-03T23:06:05.161Z",
+ "generado": "2026-10-08T22:36:59.021Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2021,
@@ -22,6 +22,16 @@
    "reemplaza": "Basic and diluted loss per share",
    "motivo": "Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €",
    "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf",
+   "campo": "caja",
+   "valor": "10,077,958",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)",
+   "evidencia": "L4349, balance separado (no el consolidado de L1444)",
    "autor": "Guido",
    "fecha": "2026-10-03"
   }
@@ -56,7 +66,7 @@
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2021: 479.00354 en este documento y 481.302925 en Juventus-annual-financial-report-2021-22.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2021: 479.00354 en este documento y 479.00354 en Juventus-annual-financial-report-2021-22.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2020",

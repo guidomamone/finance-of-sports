@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md",
- "generado": "2026-10-08T18:56:47.382Z",
+ "generado": "2026-10-08T22:37:01.063Z",
  "estado": "ok",
  "clubId": "parma-it",
  "year": 2016,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Claude 2026-10-08: el estado de resultados 2015-16 de Parma Calcio 1913 (Serie D, admitido el 30/6/2015) no tiene ningún renglón de derechos televisivos ni audiovisivi (buscado en el .md); el 0 es real",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -22,7 +33,7 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "4.782903 = 4.781548"
+   "detalle": "4.781548 = 4.781548"
   },
   {
    "nombre": "resultado del ejercicio",
@@ -46,9 +57,9 @@
   }
  ],
  "notas": [
+  "escalón \"sección D\": 1 fila(s) de rettifiche (L271) al financiero; su suma da el total impreso (-0.001355, L273), con el 17) restando; cerró la lectura 4",
   "escalón \"subtotal repetido\": \"Totale altri ricavi e proventi\" (L238) repite \"altri\" (L237); se saltea",
   "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
-  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El documento contiene dos juegos del bilancio 30-06-2016 (págs. 4-6 y 22-25); b32 parece duplicar b4.",
   "duda de localizar que no afecta la carga: b16, b17, b18, b19, b20, b21 repiten los desgloses de b49, b50, b52, b54, b55, b56.",
@@ -59,8 +70,8 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 3.10168,
-  "gastos": 4.782903,
-  "financiero": 0.002097,
+  "gastos": 4.781548,
+  "financiero": 0.000742,
   "impuesto": 0,
   "resultadoImpreso": -1.679126,
   "resultadoParaCargar": -1.679126,
@@ -323,14 +334,6 @@
    "pagina": 42,
    "linea": 2237,
    "origen": "nota que desglosa \"14) oneri diversi di gestione\""
-  },
-  {
-   "etiqueta": "altri",
-   "lado": "gasto",
-   "M": 0.001355,
-   "pagina": 6,
-   "linea": 271,
-   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 3)"
   }
  ],
  "signosCarga": {
@@ -347,6 +350,11 @@
    "etiqueta": "altri",
    "M": -0.001035,
    "linea": 266
+  },
+  {
+   "etiqueta": "altri",
+   "M": -0.001355,
+   "linea": 271
   }
  ],
  "impuesto": []

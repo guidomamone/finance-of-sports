@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
  "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
- "generado": "2026-10-03T23:03:05.796Z",
+ "generado": "2026-10-08T22:36:32.766Z",
  "estado": "ok",
  "clubId": "novorizontino-br",
  "year": 2015,
@@ -21,6 +21,16 @@
    "evidencia": "Versión 414-415",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+   "campo": "deuda-incluye",
+   "valor": "partes relacionadas; debitos com partes relacionadas; instituicoes financeiras",
+   "linea": null,
+   "motivo": "Guido 2026-10-04 (ajuste gratis): la deuda de 2015 cargada (10,240466) es 2.2.01 EMPRESTIMOS E FINANCIAMENTOS 10.162.885,71 (no corriente) + 2.1.03 INSTITUICOES FINANCEIRAS 77.580,50 (corriente, bancos); el diccionario no tiene 'instituicoes financeiras'. Repite los términos del club (el ajuste del documento reemplaza al del club).",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
   }
  ],
  "cola": [],

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
  "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
- "generado": "2026-10-05T15:28:32.078Z",
+ "generado": "2026-10-08T22:36:33.910Z",
  "estado": "ok",
  "clubId": "fortalezaceif-co",
  "year": 2022,
@@ -78,6 +78,26 @@
    "etiqueta": "Gastos Laborales (administración)",
    "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 6 (decisión de Guido 2026-10-05): la nómina de la nota de gastos de administración va a admin_general_expense cuando el documento la separa de la del equipo; reemplaza la respuesta anterior de la cola (todo a wages_squad)",
    "evidencia": "nota de gastos de administración",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "caja",
+   "valor": "241.766",
+   "linea": 640,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Efectivo del cuadro de instrumentos financieros (nota 5); el documento 2023 lo abre en Bancos 239.614 + Caja 2.152",
+   "evidencia": ".md L640",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "deuda",
+   "valor": "238.144",
+   "linea": 642,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: el dato no está en las páginas del balance que lee caja-deuda.mjs: Préstamos y sobregiros bancarios del cuadro de instrumentos financieros (nota 5), criterio del club",
+   "evidencia": ".md L642",
    "autor": "Guido",
    "fecha": "2026-10-05"
   }

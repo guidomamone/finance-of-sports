@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md",
- "generado": "2026-10-03T23:03:06.809Z",
+ "generado": "2026-10-08T22:36:58.986Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2020,
@@ -35,19 +35,19 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 621.456394; el sitio tiene 621.456394"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
-   "detalle": "ingresos de 2020: 573.424091 en este documento y 573.424961 en Juventus-annual-financial-report-2020-21.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2020: 573.424091 en este documento y 573.424091 en Juventus-annual-financial-report-2020-21.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 621.456394 en Juventus-annual-financial-report-2018-19.pdf y 621.456394 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [

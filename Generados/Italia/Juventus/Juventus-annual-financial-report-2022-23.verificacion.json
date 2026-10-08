@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md",
- "generado": "2026-10-04T17:44:08.058Z",
+ "generado": "2026-10-08T22:36:59.134Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2023,
@@ -49,6 +49,11 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 440.052159; el sitio tiene 440.052159"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 503.680824 en este documento y 503.680823 en Juventus-annual-financial-report-2023-24.pdf (columna del año anterior)"
@@ -57,11 +62,6 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 440.052159 en Juventus-annual-financial-report-2021-22.pdf y 440.052159 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

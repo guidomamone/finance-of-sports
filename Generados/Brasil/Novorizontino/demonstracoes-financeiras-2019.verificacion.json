@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf",
  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md",
- "generado": "2026-10-03T23:03:05.840Z",
+ "generado": "2026-10-08T22:36:32.873Z",
  "estado": "ok",
  "clubId": "novorizontino-br",
  "year": 2019,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf",
+   "campo": "deuda",
+   "valor": "32.323",
+   "linea": 193,
+   "motivo": "To-do 143 (2026-10-05): caja-deuda.mjs descartaba el 27 de 'Empréstimos |  | 27 | 24' como número de nota y leía 24 (2018); publicó 32,32. Criterio del club: préstamos bancarios + débitos con partes relacionadas; Empréstimos 27 + Débitos com partes relacionadas 32.296 (miles)",
+   "evidencia": "pág. 8 del visor, .md L193 y L204",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

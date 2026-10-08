@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md",
- "generado": "2026-10-07T21:23:23.247Z",
- "estado": "ok",
+ "generado": "2026-10-08T22:37:01.604Z",
+ "estado": "cola",
  "clubId": "sampdoria-it",
- "year": 2022,
+ "year": 2021,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -115,7 +115,11 @@
    "fecha": "2026-10-07"
   }
  ],
- "cola": [],
+ "cola": [
+  "9b19542",
+  "44e265c",
+  "28667f1"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -138,9 +142,14 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "documento del año 2020",
+   "ok": false,
+   "detalle": "ingresos de 2020: 75.719938 en Sampdoria-fascicolo-bilancio-2020.pdf y 84.569915 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

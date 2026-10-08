@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf",
  "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.md",
- "generado": "2026-10-03T23:03:06.314Z",
+ "generado": "2026-10-08T22:36:34.325Z",
  "estado": "ok",
  "clubId": "aellarissa-gr",
  "year": 2025,
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2025-06-30_a.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "motivo": "Auditoría 2026-10-04 (to-do 138), hallazgo 9: el renglón del estado ΕΛΠ 'Λοιπά έξοδα και ζημιές' es 'Έκτακτα κι ανόργανα έξοδα' (gastos extraordinarios y no operativos) según la nota de esos años; mismo renglón en todos los años del club",
+   "evidencia": "nota 'Λοιπά έκτακτα έξοδα και ζημίες' (2019-2025)",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

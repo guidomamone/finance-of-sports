@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.pdf",
  "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
- "generado": "2026-10-08T18:56:45.226Z",
+ "generado": "2026-10-08T22:36:56.291Z",
  "estado": "cola",
  "clubId": null,
  "year": 2014,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "8ea152c",
   "5c48d3c",
   "9af2cd9"
  ],
@@ -30,8 +29,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 50.002958 - gastos 52.783887 ± financiero 11.579496 ± impuesto 0.156273 no da el impreso 0.316064"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2015",
@@ -46,8 +45,12 @@
  ],
  "notas": [
   "la nota de \"a) salari e stipendi\" no suma el renglón (21.026638 contra 21.523555, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"sección D\": 3 fila(s) de rettifiche (L475, L477, L486) al financiero; su suma da el total impreso (-0.931982, L488), con el 17) restando; cerró la lectura 0",
+  "la nota del subtotal \"Totale altri ricavi e proventi\" suma el subtotal impreso (45.022255): reemplaza a \"altri\" + \"contributi in conto esercizio\"",
+  "escalón \"renglón grande sin abrir\": \"altri\" (L383) era el 88% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
   "duda de localizar que no afecta la carga: b61 incluye proventi da compartecipazione ex art. 102 bis que desglosan renglones financieros del conto economico.",
-  "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati."
+  "duda de extraer que no afecta la carga: b55 tiene columnas sin encabezado (probablemente tesserati/non tesserati/total por año) y sus totales ya están en el estado; b56 desglosa la columna de tesserati.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -67,12 +70,12 @@
  "totales": {
   "ingresos": 50.002958,
   "gastos": 52.783887,
-  "financiero": 11.579496,
+  "financiero": 3.253266,
   "impuesto": 0.156273,
   "resultadoImpreso": 0.316064,
   "resultadoParaCargar": 0.316064,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -124,20 +127,76 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "contributi in conto esercizio",
+   "etiqueta": "Contributi in conto esercizio",
    "lado": "ingreso",
    "M": 0.953032,
-   "pagina": 8,
-   "linea": 382,
-   "origen": "estado"
+   "pagina": 25,
+   "linea": 1249,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "altri",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 44.069223,
-   "pagina": 8,
-   "linea": 383,
-   "origen": "estado"
+   "M": 4.607875,
+   "pagina": 25,
+   "linea": 1250,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 0.672307,
+   "pagina": 25,
+   "linea": 1251,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "- Proventi televisivi",
+   "lado": "ingreso",
+   "M": 27.853883,
+   "pagina": 25,
+   "linea": 1253,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi vari",
+   "lado": "ingreso",
+   "M": 0.10092,
+   "pagina": 25,
+   "linea": 1254,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi da cessione temporanea calciatori",
+   "lado": "ingreso",
+   "M": 1.6573,
+   "pagina": 25,
+   "linea": 1255,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione diritti pluriennali calciatori",
+   "lado": "ingreso",
+   "M": 7.672633,
+   "pagina": 25,
+   "linea": 1256,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "M": 1.074068,
+   "pagina": 25,
+   "linea": 1257,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Ricavi e proventi diversi",
+   "lado": "ingreso",
+   "M": 0.430237,
+   "pagina": 25,
+   "linea": 1258,
+   "origen": "nota que desglosa \"Totale altri ricavi e proventi\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -270,7 +329,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -280,20 +339,38 @@
   },
   {
    "etiqueta": "altri",
-   "M": 3.697124,
+   "M": -3.697124,
    "linea": 448
   },
   {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": -0.000247,
    "linea": 450
+  },
+  {
+   "etiqueta": "plusvalenze da alienazioni i cui ricavi non sono iscrivibili al n 5",
+   "M": 0.00082,
+   "linea": 475
+  },
+  {
+   "etiqueta": "altri",
+   "M": 0.47,
+   "linea": 477
+  },
+  {
+   "etiqueta": "altri",
+   "M": -1.402802,
+   "linea": 486
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 0.156273,
+   "M": -0.156273,
    "linea": 493
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

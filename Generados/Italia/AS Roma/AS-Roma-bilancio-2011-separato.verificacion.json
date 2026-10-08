@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-separato.md",
- "generado": "2026-10-08T19:48:07.099Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:36:54.536Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2011,
  "escala": {
@@ -12,15 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "444cb7c",
-  "3e1d87e",
-  "2e95756",
-  "48b1f7d",
-  "c468524",
-  "bedb868",
-  "ee81ad9"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,8 +52,10 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en AS-Roma-bilancio-2011-separato.pdf",
   "duda de localizar que no afecta la carga: b29 repite el estado con columnas 'di cui con parti correlate'.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"Altri ricavi e proventi\"): aceptar, en AS-Roma-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Ricavi da gare\"): descartar, en AS-Roma-bilancio-2011-separato.pdf",
   "duda de extraer ya contestada para el club (columna, \"Spese per il personale\"): aceptar, en AS-Roma-bilancio-2018.pdf"
  ],
  "reintentar": null,

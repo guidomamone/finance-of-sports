@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md",
- "generado": "2026-10-08T19:48:06.580Z",
+ "generado": "2026-10-08T22:36:54.036Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2006,
@@ -17,8 +17,7 @@
   "27c4256",
   "d7945b9",
   "ecc341d",
-  "5949b6c",
-  "99e702d"
+  "5949b6c"
  ],
  "chequeos": [
   {
@@ -59,6 +58,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en AS-Roma-bilancio-2011-separato.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
   "duda de extraer que no afecta la carga: La nota clasifica 22.639 como plusvalenza mientras el estado lo muestra en Altri proventi straordinari (L1497).",
   "duda de extraer que no afecta la carga: Estado: differite 77.811 positivo = 168-90; la nota lo incluye en Totale imposte correnti (L3255)."

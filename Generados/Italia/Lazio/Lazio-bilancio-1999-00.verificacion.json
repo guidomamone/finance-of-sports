@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.md",
- "generado": "2026-10-08T20:38:25.948Z",
+ "generado": "2026-10-08T22:36:59.329Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2000,
@@ -76,6 +76,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 1999 de este documento suma ingresos 249135.846781; el sitio tiene 249135.846781"
+  },
+  {
    "nombre": "documento del año 2001",
    "ok": true,
    "detalle": "ingresos de 2000: 343364.726633 en este documento y 343364.726633 en Lazio-bilancio-2000-01.pdf (columna del año anterior)"
@@ -84,11 +89,6 @@
    "nombre": "documento del año 1999",
    "ok": true,
    "detalle": "ingresos de 1999: 249135.846781 en Lazio-bilancio-1998-99.pdf y 249135.846781 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 1999: este chequeo no se puede hacer"
   }
  ],
  "notas": [

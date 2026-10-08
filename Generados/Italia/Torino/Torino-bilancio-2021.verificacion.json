@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2021.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
- "generado": "2026-10-07T22:03:16.867Z",
+ "generado": "2026-10-08T22:37:02.128Z",
  "estado": "ok",
  "clubId": "torino-it",
  "year": 2021,
@@ -31,8 +31,18 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 80.561147; el sitio tiene 80.561"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 83.718968 en este documento y 83.718968 en Torino-bilancio-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 80.561 en Torino-bilancio-2020.pdf y 80.561147 en este documento (columna del año anterior)"
   }
  ],
  "notas": [

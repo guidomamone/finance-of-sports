@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
- "generado": "2026-10-03T23:03:05.860Z",
+ "generado": "2026-10-08T22:36:32.917Z",
  "estado": "ok",
  "clubId": "novorizontino-br",
  "year": 2021,
@@ -33,6 +33,16 @@
    "evidencia": "demonstracoes-financeiras-2021.md L842",
    "autor": "Guido",
    "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+   "campo": "deuda",
+   "valor": "51.884",
+   "linea": 174,
+   "motivo": "Auditoría 2026-10-04 (to-do 138), caja y deuda: criterio del club (años cargados 2019, 2023-2025): préstamos bancarios + débitos con partes relacionadas (I-9 Sports), corrientes y no corrientes; suma de las filas del balance: Empréstimos e financiamentos 87 + 12 + Débitos com partes relacionadas 51.785 (miles); el documento 2022 imprime 51.883.784 para 2021",
+   "evidencia": ".md L174, L187, L189",
+   "autor": "Guido",
+   "fecha": "2026-10-05"
   }
  ],
  "cola": [],

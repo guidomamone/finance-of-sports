@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.md",
- "generado": "2026-10-08T18:56:47.150Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:37:00.524Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2006,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "16fc2e8",
-  "da2d7ca",
-  "a3f314f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,8 +41,8 @@
   },
   {
    "nombre": "documento del año 2005",
-   "ok": false,
-   "detalle": "ingresos de 2005: 171.07341 en Lazio-bilancio-2004-05.pdf y 149.07002 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2005: 149.07002 en Lazio-bilancio-2004-05.pdf y 149.07002 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.md",
- "generado": "2026-10-07T01:26:02.781Z",
+ "generado": "2026-10-08T22:36:55.850Z",
  "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2024,
@@ -31,15 +31,25 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 195.386565; el sitio tiene 195.386565"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 243.723844 en este documento y 243.723844 en Atalanta-bilancio-consolidato-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 195.386565 en Atalanta-bilancio-consolidato-2023.pdf y 195.386565 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "el desglose de \"Salari-stipendi\" (3 filas) no suma la fila: quedó la fila",
   "duda de localizar que no afecta la carga: b56 parece el resumen del último balance de la sociedad que ejerce dirección y coordinación, no del grupo ni del ejercicio pedido.",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de resultado neto de operaciones con derechos de jugadores (b12, L710-L722)?",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) per il personale\"): ¿Se cargan las filas de b43 (L1356-L1359) separadas por columnas Tesserati y Altri dipendenti como detalle de cada renglón de personal del estado?"
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"9) per il personale\"): aceptar, en Atalanta-bilancio-consolidato-2019.pdf"
  ],
  "reintentar": [
   {

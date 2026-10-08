@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf",
  "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
- "generado": "2026-10-07T02:12:10.345Z",
+ "generado": "2026-10-08T22:36:56.531Z",
  "estado": "ok",
  "clubId": "como-it",
  "year": 2025,
@@ -1357,7 +1357,12 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
+   "detalle": "no se puede comparar: este documento no trae la columna 2024"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
   }
  ],
  "notas": [
@@ -1386,24 +1391,6 @@
   "ajuste manual: fila \"a) di partecipazioni (Como 1907)\" (financiero) (37.000), en lugar de \"a) di partecipazioni\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
   "ajuste manual: sale la fila \"a) imposte correnti\" (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
   "ajuste manual: resultado final (105.065.627) (2026-10-07, Guido 2026-10-06/07: perímetro individual (Como 1907 S.r.l.): se carga la columna \"Como 1907\" del prospetto pro-forma (L356-409), no la del consolidado pro-forma que tomó la extracción (to-do 154))",
-  "línea 359: 2.962.219 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 359: 2.962.219 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 362: 4.671.024 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 362: 4.671.024 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 365: 31.781.894 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 365: 31.781.894 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 366: 880.488 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 366: 880.488 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 367: 5.146.957 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 367: 5.146.957 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 368: 853.053 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 368: 853.053 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 388: 1.542.998 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 388: 1.542.998 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 389: 2.219.836 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 389: 2.219.836 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 390: 2.635.726 no está en el texto del PDF, pero las sumas cierran con él",
-  "línea 390: 2.635.726 no está en el texto del PDF, pero las sumas cierran con él",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Como-gruppo-pro-forma-consolidamento-2025.pdf",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en Como-gruppo-pro-forma-consolidamento-2025.pdf",
   "duda de extraer que no afecta la carga: b1, b30 y las líneas L1272/L1276 de b29 repiten en miles los mismos renglones del estado b6, sin desglose adicional.",

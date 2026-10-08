@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
  "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
- "generado": "2026-10-03T23:03:05.816Z",
- "estado": "ok",
+ "generado": "2026-10-08T22:36:32.835Z",
+ "estado": "cola",
  "clubId": "novorizontino-br",
  "year": 2016,
  "escala": {
@@ -53,7 +53,11 @@
    "fecha": "2026-10-03"
   }
  ],
- "cola": [],
+ "cola": [
+  "2adfc46",
+  "8eb2385",
+  "1845976"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -93,9 +97,6 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
-  "línea 47: 2.204 no está en el segunda lectura, pero las sumas cierran con él",
-  "línea 54: 1.794 no está en el segunda lectura, pero las sumas cierran con él",
-  "línea 55: 1.945 no está en el segunda lectura, pero las sumas cierran con él",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en balanco-2014-b.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en balanco-2016.pdf",
   "duda de extraer que no afecta la carga: L161 imprime -6,207,219.25 y el estado L51 (6.206); diferencia de 1 mil por redondeo del estado."

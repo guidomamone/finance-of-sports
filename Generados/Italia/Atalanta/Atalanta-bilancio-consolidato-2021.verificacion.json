@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.md",
- "generado": "2026-10-07T01:25:03.163Z",
+ "generado": "2026-10-08T22:36:55.686Z",
  "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2021,
@@ -31,13 +31,23 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 241.997997; el sitio tiene 241.997996"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 242.670019 en este documento y 242.679019 en Atalanta-bilancio-consolidato-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 241.997996 en Atalanta-bilancio-consolidato-2020.pdf y 241.997997 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota de \"a) salari e stipendi\" no suma el renglón (78.329722 contra 82.628189, sumando sus renglones): quedó el renglón del estado",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) per il personale\"): ¿Se deja afuera de la carga el desglose Tesserati/Altri dipendenti del cuadro de personal (L1270-L1274), cargando solo el 'Totale costi personale' de L1275?"
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"9) per il personale\"): aceptar, en Atalanta-bilancio-consolidato-2019.pdf"
  ],
  "reintentar": [
   {

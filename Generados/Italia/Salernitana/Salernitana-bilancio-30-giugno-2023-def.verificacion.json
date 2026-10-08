@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.pdf",
  "md": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md",
- "generado": "2026-10-08T18:56:47.814Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:37:01.358Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "26fb904",
-  "89af397",
-  "8618c7d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2022",
-   "ok": false,
-   "detalle": "ingresos de 2022: 140.910679 en Salernitana-bilancio-30-giugno-2022.pdf y 46.249246 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2022: 46.248943 en Salernitana-bilancio-30-giugno-2022.pdf y 46.249246 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
- "generado": "2026-10-08T19:48:07.810Z",
+ "generado": "2026-10-08T22:36:55.281Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2020,
@@ -13,9 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "04e08fa",
-  "26f0576",
-  "da25621",
   "d3b524c"
  ],
  "chequeos": [
@@ -46,8 +43,8 @@
   },
   {
    "nombre": "documento del año 2021",
-   "ok": false,
-   "detalle": "ingresos de 2020: 173.811 en este documento y 141.247 en AS-Roma-bilancio-2021.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2019",
@@ -61,6 +58,7 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: Las filas parecen repetir los renglones del conto economico consolidado, que ya tienen nota propia.",
   "duda de localizar que no afecta la carga: Mismo estado consolidado con columnas de partes relacionadas adicionales.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Acquisti materie di consumo\"): ¿Se deja afuera de la carga el cuadro 'Costo netto prodotti da commercializzare' (L4640-L4642) por repetir filas ya cargadas en el estado y en b84?",
   "duda de extraer que no afecta la carga: Diferencia de 1 entre el estado y la nota b99 en el año anterior."
  ],
  "reintentar": [

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md",
- "generado": "2026-10-03T23:03:06.670Z",
+ "generado": "2026-10-08T22:36:58.661Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2012,
@@ -35,6 +35,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2011 de este documento suma ingresos 172.06645; el sitio tiene 172.06645"
+  },
+  {
    "nombre": "documento del año 2013",
    "ok": true,
    "detalle": "ingresos de 2012: 213.786231 en este documento y 213.786231 en Juventus-annual-financial-report-2012-13.pdf (columna del año anterior)"
@@ -43,11 +48,6 @@
    "nombre": "documento del año 2011",
    "ok": true,
    "detalle": "ingresos de 2011: 172.06645 en Juventus-annual-financial-report-2010-11.pdf y 172.06645 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
   }
  ],
  "notas": [

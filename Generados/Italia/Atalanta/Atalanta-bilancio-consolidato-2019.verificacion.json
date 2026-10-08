@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.pdf",
  "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
- "generado": "2026-10-08T12:25:11.866Z",
+ "generado": "2026-10-08T22:36:55.598Z",
  "estado": "ok",
  "clubId": "atalanta-it",
  "year": 2019,
@@ -35,14 +35,19 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 155.740618; el sitio tiene 155.740626"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 188.621207 en este documento y 188.621228 en Atalanta-bilancio-consolidato-2020.pdf (columna del año anterior)"
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 155.740626 en Atalanta-bilancio-consolidato-2018.pdf y 155.740618 en este documento (columna del año anterior)"
   }
  ],
  "notas": [

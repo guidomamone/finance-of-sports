@@ -233,7 +233,11 @@ Mitigaciones:
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la
-            primera que cierra exacto (caso Bologna 2019-20)
+            primera que cierra exacto (caso Bologna 2019-20).
+            Versión 610 (to-do 179): el encabezado también se reconoce con la "D)" y el título en celdas separadas (Inter 2023 y 2024) y con el
+            "E) Proventi e oneri straordinari" (Chievo 2014-16, sin D impresa); en esa zona un "21) oneri" resta. Medido en los 177 documentos de Italia:
+            cierran Chievo e Inter; Parma 2016 mejora (el total de gastos pasa a coincidir con el impreso); Lazio 2000-01 pasa de la lectura 6 a la 4
+            (sigue OK y sus totales ahora cierran); el resto, idéntico
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
             menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
             igual (Versión 587, to-do 175; caso Cremonese 2024)
