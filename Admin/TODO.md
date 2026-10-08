@@ -231,21 +231,19 @@ ni en el comentario de ningún archivo de código.
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
 
 179. ITALIA: QUÉ FALTA PARA CERRAR EL FÚTBOL, DOCUMENTO POR DOCUMENTO (2026-10-08, cierre de sesión). Cómo se ve hoy: `node tools/tablas-sesion.mjs --italia` (gratis; antes
-    `node tools/estado.mjs --actualizar`). 158 ejercicios cargados (Juventus 23 y 135 de los otros 21 clubes) y 18 documentos de fútbol pendientes, todos ya transcriptos. Años = año de
+    `node tools/estado.mjs --actualizar`). 161 ejercicios cargados (Juventus 23 y 138 de los otros 21 clubes) y 15 documentos de fútbol pendientes, todos ya transcriptos. Años = año de
     cierre (2020 = 2019-20). El grupo 1 (13 documentos que no cerraban el resultado) se resolvió: 12 cierran (ajustes `fila`, `estado-desde-md.mjs` para Lazio 2021, comparativo de 2023 para
     Salernitana 2022) y 11 ya están cargados. Lo que queda, en el orden en que conviene resolverlo:
-    1. Resultado cerrado, falta correr el lote o contestar la cola (6): Chievo 2015 (`--reintentar` en el lote: "Televisión" en 0 porque la nota de "altri" incluye "Contributi" y no suma el
-       renglón; el alta ya está), Salernitana 2023 (`lote.mjs`; el alta ya está), Lazio 2006 (`lote.mjs`), AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los
-       totales de ingresos y gastos quedan en rojo porque el impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018), Lazio 2016 (cierra; falla el vecino 2017
-       por el doble conteo del total: to-do 187).
+    1. Resultado cerrado, falta contestar la cola o el script (3): AS Roma 2007 y 2012 (resultado cierra con ajustes, gestión de jugadores NETA; los totales de ingresos y gastos quedan en rojo porque el
+       impreso excluye amortizaciones y provisiones: aceptarlos por la cola como Roma 2018), Lazio 2016 (cierra; falla el vecino 2017 por el doble conteo del total: to-do 187).
     2. Falla el año vecino (10): AC Milan 2019, AS Roma 2005, 2006, 2008, 2010 y 2020, Inter 2021, Lazio 2004, Sampdoria 2020, Sassuolo 2018. Casi siempre es una reexpresión del año en el
        documento siguiente (pasó con Milan 2009 y 2010). Mirar uno por uno si es falsa alarma (se acepta en la cola con la explicación) o un error real. Sassuolo 2018 además quedó con la
        extracción en 0 filas (es un escaneo): `lote.mjs --rehacer` (~US$ 0,5) y OJO con el punto 181.
     3. AS Roma 2011 (consolidado): 2 preguntas en la cola. Roma 2011 separato se descartó (el perímetro del club es consolidado).
     4. Catania 2011 (artículo de prensa) y Juve Stabia semestral: solo transcripción (punto 184).
     Ya resueltos, para no rehacerlos: Lazio 1999 a 2001 en liras (180 abajo), Milan 2008 a 2013, Roma 2013 a 2017, Torino 2020 y 2025, Napoli 2018 a 2022, Atalanta, Parma, Sassuolo, Inter
-    2018, 2019, 2023 y 2024, Fiorentina 2019, Genoa 2023 y 2025, Hellas Verona 2022 a 2025, Sampdoria 2019, Bologna 2018, 2023, 2024 y 2025, Lazio 2005, 2011, 2014 y 2021, Chievo 2014 y
-    2016, Juve Stabia 2024 y Salernitana 2022. Altas nuevas: Chievo Verona, Salernitana y Juve Stabia (con la liga `it-seriec`, Serie C, tier 3; Juve Stabia 2024 sin gestión: pregunta en
+    2018, 2019, 2023 y 2024, Fiorentina 2019, Genoa 2023 y 2025, Hellas Verona 2022 a 2025, Sampdoria 2019, Bologna 2018, 2023, 2024 y 2025, Lazio 2005, 2011, 2014 y 2021, Chievo 2014 a
+    2016, Juve Stabia 2024, Salernitana 2022 y 2023 y Lazio 2006. Altas nuevas: Chievo Verona, Salernitana y Juve Stabia (con la liga `it-seriec`, Serie C, tier 3; Juve Stabia 2024 sin gestión: pregunta en
     `Admin/dudas-por-club.md`).
 
 180. LIRAS (ITL) Y EL RESTO DE LAS MONEDAS LEGADO. Hecho (Versión 607) para Lazio 1998-99, 1999-00 y 2000-01: ajuste manual `moneda` (tools/ajustes.mjs), ITL en CURRENCY_META con
