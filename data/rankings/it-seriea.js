@@ -5,7 +5,7 @@
 //
 // Serie A (IT) — 22 ejercicio(s) con ranking:
 //   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -80,6 +80,9 @@ window.RANKINGS["it-seriea"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"inter-it", revenue:506.81, reportType:"official_balance_sheet",
+        sourceId:"inter-it-fascicolo-bilancio-consolidato-2023-24",
+        mix:[["Comercial / Sponsors",119.957],["Estadio",75.866],["Televisión",188.947],["Venta de Jugadores",79.117],["Otros ingresos",42.923]] },
       { id:"acmilan-it", revenue:489.387, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilanci-relazioni-2023-24",
         mix:[["Comercial / Sponsors",153.634],["Estadio",68.292],["Televisión",163.14],["Premios por competencias",5.982],["Venta de Jugadores",56.264],["Otros ingresos",42.076]] },
