@@ -637,133 +637,44 @@ Via Dell'Arcivescovado, 1 Torino
 
 Capitale Sociale Euro 883.400
 
-# CONTO ECONOMICO
+| **CONTO ECONOMICO** | **Bilancio al 31 dicembre 2020** | **Bilancio al 31 dicembre 2019** |
+| --- | --- | --- |
+| **A) VALORE DELLA PRODUZIONE:** | | |
+| 1) Ricavi delle vendite e delle prestazioni | 1.116.130 | 6.694.210 |
+| 5) Altri ricavi e proventi | 79.445.188 | 89.638.484 |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | **80.561.318** | **96.332.694** |
+| **B) COSTI DELLA PRODUZIONE:** | | |
+| 6) per materie prime,sussid. e di consumo | 1.166.808 | 1.166.326 |
+| 7) per servizi | 10.525.922 | 14.696.749 |
+| 8) per godimento beni di terzi | 999.080 | 1.273.408 |
+| 9) per il personale | 56.986.696 | 62.022.004 |
+| a) salari e stipendi | 54.099.530 | 59.291.175 |
+| b) oneri sociali | 2.423.245 | 2.217.909 |
+| c) trattamento fine rapporto | 174.737 | 204.104 |
+| e) altri costi | 289.184 | 308.816 |
+| 10) ammortamenti e svalutazioni | 29.965.375 | 29.140.850 |
+| a) amm.ti immob. immateriali | 29.552.875 | 28.306.204 |
+| b) amm.ti immob. materiali | 212.500 | 184.646 |
+| c) svalutazione delle immobilizzazioni | 0 | 0 |
+| d) svalut.crediti di attivo circ. e disp.l. | 200.000 | 650.000 |
+| 12) accantonamenti per rischi | 1.743.555 | 0 |
+| 14) oneri diversi di gestione | 3.749.907 | 4.777.415 |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | **105.137.343** | **113.076.752** |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE** | **(24.576.025)** | **(16.744.058)** |
+| **C) PROVENTI ED ONERI FINANZIARI:** | | |
+| 16) altri proventi finanziari: | | |
+| d) proventi diversi | 712.844 | 501.064 |
+| 17) Interessi e altri oneri finanziari | 706.386 | 609.108 |
+| d) oneri diversi | 706.386 | 609.108 |
+| **TOTALE (C) (15+16-17)** | **6.458** | **(108.044)** |
+| **D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE** | 0 | 0 |
+| **TOTALE RETT.VALORI DI ATT.FINANZ. (D)** | **0** | **0** |
+| **RISULTATO PRIMA DELLE IMPOSTE (A-/+B+C+D)** | **(24.569.567)** | **(16.852.102)** |
+| 20) Imposte sul reddito dell'esercizio | | |
+| Imposte correnti | 1.209.531 | (925.554) |
+| Imposte anticipate e differite | 4.290.082 | 3.806.190 |
+| **23) Utile (perdita) dell'esercizio** | **(19.069.954)** | **(13.971.466)** |
 
-# A) VALORE DELLA PRODUZIONE:
-
-1) Ricavi delle vendite e delle prestazioni
-5) Altri ricavi e proventi
-
-# TOTALE VALORE DELLA PRODUZIONE (A)
-
-# B) COSTI DELLA PRODUZIONE:
-
-6) per materie prime,sussid. e di consumo
-7) per servizi
-8) per godimento beni di terzi
-9) per il personale
-
-a) salari e stipendi
-b) oneri sociali
-c) trattamento fine rapporto
-e) altriosti
-
-10) ammortamenti e svalutazioni
-
-a) amm.ti immob. immateriali
-b) amm.ti immob. materiali
-c) svalutazione delle immobilizzazioni
-d) svalut.crediti di attivo circ. e disp.l.
-
-12) accantonamenti per rischi
-14) oneri diversi di gestione
-
-# TOTALE COSTI DELLA PRODUZIONE (B)
-
-# DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE
-
-# C) PROVENTI ED ONERI FINANZIARI:
-
-16) altri proventi finanziari:
-d) proventi diversi
-17) Interessi e altri oneri finanziari
-d) oneri diversi
-
-# TOTALE (C) (15+16-17)
-
-# D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE
-
-# TOTALE RETT.VALORI DI ATT.FINANZ. (D)
-
-# RISULTATO PRIMA DELLE IMPOSTE (A-/+B+C+D)
-
-20) Imposte sul reddito dell'esercizio
-
-Imposte correnti
-
-Imposte anticipate e differite
-
-23) Utile (perdita) dell'esercizio
-
-Bilancio al
-
-31 dicembre 2020
-
-Bilancio al
-
-31 dicembre 2019
-
-1.116.130 6.694.210
-
-79.445.188 89.638.484
-
-80.561.318 96.332.694
-
-1.166.808 1.166.326
-
-10.525.922 14.696.749
-
-999.080 1.273.408
-
-56.986.696 62.022.004
-
-54.099.530 59.291.175
-
-2.423.245 2.217.909
-
-174.737 204.104
-
-289.184 308.816
-
-29.965.375 29.140.850
-
-29.552.875 28.306.204
-
-212.500 184.646
-
-0 0
-
-200.000 650.000
-
-1.743.555 0
-
-3.749.907 4.777.415
-
-105.137.343 113.076.752
-
-(24.576.025) (16.744.058)
-
-712.844 501.064
-
-712.844 501.064
-
-706.386 609.108
-
-706.386 609.108
-
-6.458 (108.044)
-
-0 0
-
-0 0
-
-(24.569.567) (16.852.102)
-
-1.209.531 (925.554)
-
-4.290.082 3.806.190
-
-(19.069.954) (13.971.466)
 
 17
 

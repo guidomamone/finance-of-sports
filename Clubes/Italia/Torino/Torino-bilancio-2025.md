@@ -616,143 +616,59 @@ Via Visetti, 9 Torino
 
 Capitale Sociale Euro 883.400
 
-# CONTO ECONOMICO
+| **CONTO ECONOMICO** | **Bilancio al 31 dicembre 2025** | **Bilancio al 31 dicembre 2024** |
+| --- | --- | --- |
+| **A) VALORE DELLA PRODUZIONE:** | | |
+| 1) Ricavi delle vendite e delle prestazioni | 6.921.300 | 5.954.731 |
+| 5) altri ricavi e proventi: | 115.578.337 | 128.586.618 |
+| a) contributi in conto esercizio | 769.231 | 3.002.211 |
+| b) proventi da sponsorizzazioni | 9.310.768 | 9.102.221 |
+| c) proventi pubblicitari | 4.650.916 | 5.078.304 |
+| d) proventi commerciali e royalties | 3.177.655 | 2.495.238 |
+| e) proventi da cessione diritti audiovisivi | 41.993.421 | 48.508.991 |
+| f) ricavi da cessione temporanea prestazioni calciatori | 720.267 | 710.816 |
+| g) plusvalenze da cessione diritti pluriennali prestazioni calciatori | 42.983.822 | 58.455.538 |
+| h) altri proventi da trasferimento diritti calciatori | 391.711 | 125.024 |
+| i) ricavi e proventi diversi | 11.580.546 | 1.108.275 |
+| **TOTALE VALORE DELLA PRODUZIONE (A)** | **122.499.637** | **134.541.349** |
+| **B) COSTI DELLA PRODUZIONE:** | | |
+| 6) per materie prime,sussid. e di consumo | 1.718.680 | 1.549.401 |
+| 7) per servizi | 18.723.632 | 15.838.992 |
+| 8) per godimento beni di terzi | 1.771.768 | 1.579.457 |
+| 9) per il personale | 68.900.830 | 58.853.302 |
+| a) salari e stipendi | 63.678.643 | 54.208.625 |
+| b) oneri sociali | 4.440.743 | 3.974.162 |
+| c) trattamento fine rapporto | 416.139 | 323.897 |
+| e) altri costi | 365.305 | 346.618 |
+| 10) ammortamenti e svalutazioni | 38.873.198 | 32.828.404 |
+| a) amm.ti immob. immateriali | 34.332.585 | 32.619.481 |
+| b) amm.ti immob. materiali | 201.739 | 208.923 |
+| c) svalutazione delle immobilizzazioni | 4.138.874 | 0 |
+| d) svalut.crediti di attivo circ. e disp.l. | 200.000 | 0 |
+| 12) accantonamenti per rischi | 144.600 | 80.000 |
+| 13) altri accantonamenti | 0 | 0 |
+| 14) oneri diversi di gestione | 4.895.766 | 4.128.926 |
+| a) oneri da organizzazione competizioni | 919.463 | 1.125.262 |
+| b) costi da cessione temporanea prestazioni calciatori | 2.329.960 | 924.891 |
+| c) minusvalenze da cessione diritti pluriennali prestazioni calciatori | 125.464 | 76.729 |
+| d) altri oneri da trasferimento diritti calciatori | 69.277 | 13.000 |
+| e) altri oneri diversi di gestione | 1.451.602 | 1.989.044 |
+| **TOTALE COSTI DELLA PRODUZIONE (B)** | **135.028.474** | **114.858.482** |
+| **DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE** | **(12.528.837)** | **19.682.867** |
+| **C) PROVENTI ED ONERI FINANZIARI:** | | |
+| 16) altri proventi finanziari: | | |
+| d) proventi diversi | 208.540 | 438.730 |
+| 17) Interessi e altri oneri finanziari | 3.061.468 | 3.226.978 |
+| d) oneri diversi | 3.061.468 | 3.226.978 |
+| **TOTALE (C) (15+16-17)** | **(2.852.928)** | **(2.788.248)** |
+| **D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE** | 0 | 0 |
+| **TOTALE RETT.VALORI DI ATT.FINANZ. (D)** | **0** | **0** |
+| **RISULTATO PRIMA DELLE IMPOSTE (A-/+B+C+D)** | **(15.381.765)** | **16.894.619** |
+| 20) Imposte sul reddito dell'esercizio | | |
+| Imposte correnti | (1.651.281) | (2.323.564) |
+| Imposte anticipate e differite | 3.928.265 | (4.172.753) |
+| **23) Utile (perdita) dell'esercizio** | **(13.104.781)** | **10.398.302** |
 
-# A) VALORE DELLA PRODUZIONE:
-
-1) Ricavi delle vendite e delle prestazioni
-5) altri ricavi e proventi:
-
-a) contributi in conto esercizio
-b) proventi da sponsorizzazioni
-c) proventi publicitari
-d) proventi commerciali e royalties
-e) proventi da cessione diritti audiovisivi
-f) ricavi da cessione temporanea prestazioni calciatori
-g) plusvalenze da cessione diritti pluriannali prestazioni calciatori
-h) altri proventi da trasferimento diritti calciatori
-i) ricavi e proventi diversi
-
-# TOTALE VALORE DELLA PRODUZIONE (A)
-
-# B) COSTI DELLA PRODUZIONE:
-
-6) per materie prime,sussid. e di consumo
-7) per servizi
-8) per godimento beni di terzi
-9) per il personale
-
-a) salari e stipendi
-b) oneri sociali
-c) trattamento fine rapporto
-e) altri costi
-
-10) ammortamenti e svalutazioni
-
-a) amn.ti immob. immateriali
-b) amn.ti immob. materiali
-c) svalutazione delle immobilizzazioni
-d) svalut.crediti di attivo circ. e disp.l.
-
-12) accantonamenti per rischi
-13) altri accantonamenti
-14) oneri diversi di gestione
-
-a) oneri da organizzazione competizioni
-b) costi da cessione temporanea prestazioni calciatori
-c) minavvalenze da cessione diritti pluriannali prestazioni calciatori
-d) altri oneri da trasferimento diritti calciatori
-e) altri oneri diversi di gestione
-
-# TOTALE COSTI DELLA PRODUZIONE (B)
-
-# DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE
-
-# C) PROVENTI ED ONERI FINANZIARI:
-
-16) altri proventi finanziari:
-d) proventi diversi
-17) Interessi e altri oneri finanziari
-d) oneri diversi
-
-# TOTALE (C) (15+16-17)
-
-# D) RETTIFICHE DI VALORI DI ATTIVITA' FINANZIARIE
-
-# TOTALE RETT.VALORI DI ATT.FINANZ. (D)
-
-# RISULTATO PRIMA DELLE IMPOSTE (A+/B+C+D)
-
-20) Imposte sul reddito dell'esercizio
-
-Imposte correnti
-
-Imposte anticipate e differite
-
-23) Utile (perdita) dell'esercizio
-
-Bilancio al 31 dicembre 2025
-
-Bilancio al 31 dicembre 2024
-
-6.921.300 5.954.731
-115.578.337 128.586.618
-769.231 3.002.211
-9.310.768 9.102.221
-4.650.916 5.078.304
-3.177.655 2.495.238
-41.993.421 48.508.991
-720.267 710.816
-42.983.822 58.455.538
-391.711 125.024
-11.580.546 1.108.275
-
-122.499.637 134.541.349
-
-1.718.680 1.549.401
-18.723.632 15.838.992
-1.771.768 1.579.457
-68.900.830 58.853.302
-63.678.643 54.208.625
-4.440.743 3.974.162
-416.139 323.897
-365.305 346.618
-38.873.198 32.828.404
-34.332.585 32.619.481
-201.739 208.923
-4.138.874 0
-200.000 0
-144.600 80.000
-0 0
-4.895.766 4.128.926
-919.463 1.125.262
-2.329.960 924.891
-125.464 76.729
-69.277 13.000
-1.451.602 1.989.044
-
-135.028.474 114.858.482
-
-(12.528.837) 19.682.867
-
-208.540 438.730
-208.540 438.730
-3.061.468 3.226.978
-3.061.468 3.226.978
-
-(2.852.928) (2.788.248)
-
-0 0
-
-0 0
-
-(15.381.765) 16.894.619
-
-(1.651.281) (2.323.564)
-
-3.928.265 (4.172.753)
-
-(13.104.781) 10.398.302
 
 15
 
