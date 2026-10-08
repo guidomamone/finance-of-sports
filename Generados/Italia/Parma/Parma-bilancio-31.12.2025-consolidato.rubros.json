@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
   "club": "parma-it",
   "year": 2025,
-  "generatedAt": "2026-10-08T02:53:38.121Z",
+  "generatedAt": "2026-10-08T03:48:59.056Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         6.680033
       ],
-      "glosa": "1) Ingresos por ventas y prestaciones de servicios"
+      "glosa": "1) Ingresos por ventas y prestación de servicios"
     },
     {
       "label": "altri",
@@ -34,7 +34,7 @@
       "values": [
         3.093108
       ],
-      "glosa": "6) Gastos por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -54,7 +54,7 @@
       "values": [
         1.560568
       ],
-      "glosa": "8) Gastos por arrendamientos y cánones"
+      "glosa": "8) Por uso de bienes de terceros"
     },
     {
       "label": "a) salari e stipendi",
@@ -114,7 +114,7 @@
       "values": [
         0.063893
       ],
-      "glosa": "c) Otras correcciones por deterioro del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -124,7 +124,7 @@
       "values": [
         0.062345
       ],
-      "glosa": "d) Correcciones por deterioro de créditos del activo corriente y de tesorería"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
@@ -144,7 +144,7 @@
       "values": [
         3.077454
       ],
-      "glosa": "13) Otras dotaciones a provisiones"
+      "glosa": "13) Otras provisiones"
     },
     {
       "label": "14) oneri diversi di gestione",

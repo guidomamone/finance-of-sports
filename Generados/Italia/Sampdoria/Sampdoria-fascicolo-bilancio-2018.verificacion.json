@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
- "generado": "2026-10-08T03:20:55.964Z",
+ "generado": "2026-10-08T03:48:59.182Z",
  "estado": "ok",
  "clubId": "sampdoria-it",
- "year": 2019,
+ "year": 2018,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -72,7 +72,8 @@
    "etiqueta": "22) a) imposte correnti",
    "lado": "impuesto",
    "reemplaza": null,
-   "motivo": "idem",
+   "reemplazaLinea": 1061,
+   "motivo": "reemplaza la fila extraída '(sin etiqueta: imposte correnti)' L1061, que se sumaba dos veces con el ajuste",
    "evidencia": "pág. 27, .md L1061",
    "autor": "Guido",
    "fecha": "2026-10-08"
@@ -102,6 +103,16 @@
    "evidencia": "pág. 27, .md L1063",
    "autor": "Guido",
    "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "cierre",
+   "valor": "2018-12-31",
+   "linea": null,
+   "motivo": "Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA",
+   "evidencia": ".md L17-19",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
  "cola": [],
@@ -109,7 +120,7 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "141.773225 = 141.773568"
+   "detalle": "141.773108 = 141.773568"
   },
   {
    "nombre": "total de gastos",
@@ -118,40 +129,40 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": null,
-   "detalle": "extraer.mjs no encontró el resultado impreso"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "la nota del subtotal \"Altri ricavi e proventi:\" suma el subtotal impreso (135.506116): reemplaza a \"b) Contributi in conto esercizio\" + \"1a) plusvalenze\" + \"a) Altri\"",
   "ajuste manual: fila \"16) c) proventi da terzi\" (financiero) 56.853 (2026-10-08, pág. 27: importes sin etiqueta (cola f1b4f17))",
   "ajuste manual: fila \"17) b.1) interessi e altri oneri finanziari verso terzi\" (financiero) (2.728.204) (2026-10-08, idem)",
   "ajuste manual: fila \"17 bis) a) utile su cambi\" (financiero) 46 (2026-10-08, idem)",
   "ajuste manual: fila \"17 bis) b) perdite su cambi\" (financiero) (1) (2026-10-08, idem)",
-  "ajuste manual: fila \"22) a) imposte correnti\" (impuesto) (3.465.535) (2026-10-08, idem)",
+  "ajuste manual: fila \"22) a) imposte correnti\" (impuesto) (3.465.535), en lugar de la fila de L1061 (2026-10-08, reemplaza la fila extraída '(sin etiqueta: imposte correnti)' L1061, que se sumaba dos veces con el ajuste)",
   "ajuste manual: fila \"22) b) imposte differite\" (impuesto) (3.943.972) (2026-10-08, idem)",
   "ajuste manual: fila \"22) c) imposte anticipate\" (impuesto) 440.273 (2026-10-08, idem)",
-  "duda de localizar ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en Sampdoria-fascicolo-bilancio-2021.pdf",
-  "duda de extraer ya contestada para el club (fila-ilegible, \"Utile (perdita) dell'esercizio\"): aceptar, en Sampdoria-fascicolo-bilancio-2018.pdf",
-  "duda de extraer que no afecta la carga: b55 replica en miles los renglones a)-d) del estado (L985-L988) separados por tesserati/altri; b56 desglosa solo la parte tesserati (49.434).",
-  "duda de extraer ya contestada para el club (perimetro, \"Per il personale:\"): corregir no, en Sampdoria-fascicolo-bilancio-2018.pdf"
+  "duda de localizar que no afecta la carga: Es detalle por jugador; el total de plusvalías ya figura en el estado o en b50.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): corregir no, en Sampdoria-fascicolo-bilancio-2018.pdf",
+  "duda de extraer que no afecta la carga: No hay renglón de Televisión en el estado; la TV está dentro de b50 que detalla Altri ricavi e proventi (L978)."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 141.773225,
+  "ingresos": 141.773108,
   "gastos": 120.077712,
   "financiero": -2.671306,
   "impuesto": -6.969234,
-  "resultadoImpreso": null,
-  "resultadoParaCargar": null,
+  "resultadoImpreso": 12.052939,
+  "resultadoParaCargar": 12.052939,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -187,28 +198,84 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "a) Altri",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 79.97797,
-   "pagina": 26,
-   "linea": 975,
-   "origen": "estado"
+   "M": 3.215,
+   "pagina": 55,
+   "linea": 2297,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "1a) plusvalenze",
+   "etiqueta": "Proventi pubblicitari e concessioni varie",
    "lado": "ingreso",
-   "M": 55.528147,
-   "pagina": 26,
-   "linea": 976,
-   "origen": "estado"
+   "M": 3.964,
+   "pagina": 55,
+   "linea": 2298,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "b) Contributi in conto esercizio",
+   "etiqueta": "Proventi da cessione diritti televisivi",
    "lado": "ingreso",
-   "M": 0,
-   "pagina": 26,
-   "linea": 977,
-   "origen": "estado"
+   "M": 47.462,
+   "pagina": 55,
+   "linea": 2299,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+   "lado": "ingreso",
+   "M": 55.528,
+   "pagina": 55,
+   "linea": 2300,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da cessioni temporanee calciatori",
+   "lado": "ingreso",
+   "M": 2.595,
+   "pagina": 55,
+   "linea": 2301,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri proventi da gestione calciatori",
+   "lado": "ingreso",
+   "M": 16.915,
+   "pagina": 55,
+   "linea": 2302,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Contributi federali",
+   "lado": "ingreso",
+   "M": 3.733,
+   "pagina": 55,
+   "linea": 2303,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Altri ricavi e proventi",
+   "lado": "ingreso",
+   "M": 0.281,
+   "pagina": 55,
+   "linea": 2304,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da contratto Rai – Library Sampdoria",
+   "lado": "ingreso",
+   "M": 0.23,
+   "pagina": 55,
+   "linea": 2305,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Sopravvenienze attive",
+   "lado": "ingreso",
+   "M": 1.583,
+   "pagina": 55,
+   "linea": 2306,
+   "origen": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "Materiale di consumo",
@@ -581,5 +648,8 @@
    "M": 0.440273,
    "linea": 1063
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

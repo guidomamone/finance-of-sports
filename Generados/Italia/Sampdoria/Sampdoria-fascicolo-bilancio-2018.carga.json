@@ -1,27 +1,10 @@
 {
  "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
- "generado": "2026-10-08T03:27:04.642Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2019-03-29): confirmar qué ejercicio es antes de cargarlo"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Materiale di consumo\" -> admin_general_expense 0.55; \"Indumenti gioco\" -> admin_general_expense 0.5; \"Indumenti\" -> admin_general_expense 0.5; \"Medicinali\" -> admin_general_expense 0.55; \"Costi campi sportivi\" -> match_organisation_expense 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -119.411712 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-08T03:51:04.310Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 1 documento(s) mirados)",
-  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)"
+  "gastos: ningún total impreso igual a la suma de las líneas (-119.411712); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "sampdoria-it",
@@ -70,32 +53,102 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "a) Altri",
-    "normalizedCategory": "other_income",
-    "amountNative": 79.97797,
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.215,
     "disclosureLevel": "aggregated",
-    "_pag": 26,
-    "_escalon": 1,
-    "_conf": 0.9,
+    "_pag": 55,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "1a) plusvalenze",
-    "normalizedCategory": "player_sales",
-    "amountNative": 55.528147,
+    "rawLabel": "Proventi pubblicitari e concessioni varie",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.964,
     "disclosureLevel": "aggregated",
-    "_pag": 26,
+    "_pag": 55,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi da cessione diritti televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 47.462,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 55.528,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi da cessioni temporanee calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.595,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri proventi da gestione calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 16.915,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contributi federali",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.733,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi e proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.281,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
     "_escalon": 1,
     "_conf": 0.98,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "b) Contributi in conto esercizio",
-    "normalizedCategory": "other_income",
-    "amountNative": 0,
+    "rawLabel": "Proventi da contratto Rai – Library Sampdoria",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.23,
     "disclosureLevel": "aggregated",
-    "_pag": 26,
-    "_escalon": 0,
+    "_pag": 55,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sopravvenienze attive",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.583,
+    "disclosureLevel": "aggregated",
+    "_pag": 55,
+    "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
@@ -107,9 +160,9 @@
     "amountNative": -0.07,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Indumenti gioco",
@@ -117,9 +170,9 @@
     "amountNative": -1.061,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Indumenti",
@@ -127,9 +180,9 @@
     "amountNative": -0.099,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Medicinali",
@@ -137,9 +190,9 @@
     "amountNative": -0.061,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cancelleria e stampati",
@@ -247,9 +300,9 @@
     "amountNative": -1.286,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Noleggio autovetture",
@@ -277,9 +330,9 @@
     "amountNative": -0.14,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Concessione utilizzo marchio",
@@ -287,9 +340,9 @@
     "amountNative": -3,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "a) Salari e stipendi",
@@ -457,9 +510,9 @@
     "amountNative": -0.447,
     "disclosureLevel": "aggregated",
     "_pag": 60,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Oneri diversi da gestione calciatori",
@@ -522,11 +575,41 @@
    "assetSales": 0,
    "netInterest": -2.671306,
    "tax": -6.969234,
+   "extraRows": [
+    {
+     "label": "16) c) proventi da terzi",
+     "value": 0.056853
+    },
+    {
+     "label": "17) b.1) interessi e altri oneri finanziari verso terzi",
+     "value": -2.728204
+    },
+    {
+     "label": "17 bis) a) utile su cambi",
+     "value": 0.000046
+    },
+    {
+     "label": "17 bis) b) perdite su cambi",
+     "value": -0.000001
+    },
+    {
+     "label": "22) a) imposte correnti",
+     "value": -3.465535
+    },
+    {
+     "label": "22) b) imposte differite",
+     "value": -3.943972
+    },
+    {
+     "label": "22) c) imposte anticipate",
+     "value": 0.440273
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 141.773225,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 141.773108,
+   "officialTotalExpenses": 119.411712,
+   "officialPAT": 12.052939
   },
   "source": {
    "id": "sampdoria-it-fascicolo-bilancio-2018",
@@ -542,11 +625,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2019-03-29",
-  "evidencia": null,
-  "confianza": "media",
-  "anual": "temporada",
-  "nombreNoCoincide": true
+  "cierre": "2018-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-08): Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA"
  },
  "clubId": "sampdoria-it",
  "year": 2018,
@@ -611,7 +693,8 @@
    "etiqueta": "22) a) imposte correnti",
    "lado": "impuesto",
    "reemplaza": null,
-   "motivo": "idem",
+   "reemplazaLinea": 1061,
+   "motivo": "reemplaza la fila extraída '(sin etiqueta: imposte correnti)' L1061, que se sumaba dos veces con el ajuste",
    "evidencia": "pág. 27, .md L1061",
    "autor": "Guido",
    "fecha": "2026-10-08"
@@ -641,10 +724,20 @@
    "evidencia": "pág. 27, .md L1063",
    "autor": "Guido",
    "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
+   "campo": "cierre",
+   "valor": "2018-12-31",
+   "linea": null,
+   "motivo": "Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA",
+   "evidencia": ".md L17-19",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
   }
  ],
  "seleccion": {
-  "filas": 55,
+  "filas": 62,
   "notasUsadas": [],
   "refM": null
  },
@@ -710,49 +803,154 @@
    "amountNative": 1.981108
   },
   {
-   "label": "a) Altri",
-   "page": 26,
-   "native": 79.97797,
+   "label": "Proventi da sponsorizzazioni",
+   "page": 55,
+   "native": 3.215,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 79.97797,
-   "cat": "other_income",
-   "conf": 0.9,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 79.97797
-  },
-  {
-   "label": "1a) plusvalenze",
-   "page": 26,
-   "native": 55.528147,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 55.528147,
-   "cat": "player_sales",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 55.528147
-  },
-  {
-   "label": "b) Contributi in conto esercizio",
-   "page": 26,
-   "native": 0,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
-   "cat": "other_income",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.215,
+   "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 0
+   "amountNative": 3.215
+  },
+  {
+   "label": "Proventi pubblicitari e concessioni varie",
+   "page": 55,
+   "native": 3.964,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.964,
+   "cat": "sponsorship_commercial",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.964
+  },
+  {
+   "label": "Proventi da cessione diritti televisivi",
+   "page": 55,
+   "native": 47.462,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 47.462,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 47.462
+  },
+  {
+   "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+   "page": 55,
+   "native": 55.528,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 55.528,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 55.528
+  },
+  {
+   "label": "Proventi da cessioni temporanee calciatori",
+   "page": 55,
+   "native": 2.595,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 2.595,
+   "cat": "player_sales",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.595
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "page": 55,
+   "native": 16.915,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 16.915,
+   "cat": "player_sales",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.915
+  },
+  {
+   "label": "Contributi federali",
+   "page": 55,
+   "native": 3.733,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.733,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.733
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "page": 55,
+   "native": 0.281,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.281,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.281
+  },
+  {
+   "label": "Proventi da contratto Rai – Library Sampdoria",
+   "page": 55,
+   "native": 0.23,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.23,
+   "cat": "broadcasting",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.23
+  },
+  {
+   "label": "Sopravvenienze attive",
+   "page": 55,
+   "native": 1.583,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 1.583,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.583
   },
   {
    "label": "Materiale di consumo",
@@ -762,11 +960,11 @@
    "origen": "verificacion (nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\")",
    "signoFijo": 0.07,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente italiano: 'Acquisto materiale di consumo' -> admin_general_expense",
    "destino": "expense",
    "amountNative": -0.07
   },
@@ -778,11 +976,11 @@
    "origen": "verificacion (nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\")",
    "signoFijo": 1.061,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente italiano: 'Acquisto materiale indumenti' -> admin_general_expense",
    "destino": "expense",
    "amountNative": -1.061
   },
@@ -794,11 +992,11 @@
    "origen": "verificacion (nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\")",
    "signoFijo": 0.099,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "idem 63a73db",
    "destino": "expense",
    "amountNative": -0.099
   },
@@ -810,11 +1008,11 @@
    "origen": "verificacion (nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\")",
    "signoFijo": 0.061,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente italiano: 'Acquisto medicinali' -> admin_general_expense",
    "destino": "expense",
    "amountNative": -0.061
   },
@@ -978,11 +1176,11 @@
    "origen": "verificacion (nota que desglosa \"Per godimento di beni di terzi\")",
    "signoFijo": 1.286,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia: instalaciones deportivas -> organización de partidos",
    "destino": "expense",
    "amountNative": -1.286
   },
@@ -1024,11 +1222,11 @@
    "origen": "verificacion (nota que desglosa \"Per godimento di beni di terzi\")",
    "signoFijo": 0.14,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "criterio de Italia: otros alquileres -> administración",
    "destino": "expense",
    "amountNative": -0.14
   },
@@ -1040,11 +1238,11 @@
    "origen": "verificacion (nota que desglosa \"Per godimento di beni di terzi\")",
    "signoFijo": 3,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "regalía por uso de la marca: gasto general",
    "destino": "expense",
    "amountNative": -3
   },
@@ -1297,11 +1495,11 @@
    "origen": "verificacion (nota que desglosa \"Oneri diversi di gestione\")",
    "signoFijo": 0.447,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente Sassuolo 2025 (Guido): premi valorizzazione -> player_amortisation",
    "destino": "expense",
    "amountNative": -0.447
   },
@@ -1458,37 +1656,40 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Ricavi delle vendite e delle prestazioni\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (nota que desglosa \"Per materie prime, sussidiarie, di consumo e di merci\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Per godimento di beni di terzi\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Oneri diversi di gestione\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 141.773225,
+  "revSum": 141.773108,
   "expSum": -119.411712,
-  "officialTotalRevenue": 141.773225,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalRevenue": 141.773108,
+  "officialTotalExpenses": 119.411712,
+  "officialPAT": 12.052939,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 12.052939,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 141.773225
+   "M": 141.773108
   }
  },
  "liga": {
@@ -1499,12 +1700,12 @@
  "procedencia": {
   "anio": {
    "valor": 2018,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA",
    "estado": "ok"
   },
   "cierre": {
    "valor": "2018-12-31",
-   "fuente": "año del ejercicio + mes de cierre (contenido del .md (105 de 163 fechas de fin de mes caen en el mes 12))",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Fascicolo di Bilancio al 31 dicembre 2018; el 29/03/2019 es la fecha de aprobación del CdA)",
    "estado": "ok"
   },
   "reportType": {
@@ -1539,9 +1740,9 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 7,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
   "lineasGasto": 41,
   "metaFilas": 7,
   "excluidas": 0

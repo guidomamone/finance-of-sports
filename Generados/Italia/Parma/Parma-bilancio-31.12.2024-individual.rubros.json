@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.pdf",
   "club": "parma-it",
   "year": 2024,
-  "generatedAt": "2026-10-08T03:14:10.554Z",
+  "generatedAt": "2026-10-08T03:48:59.016Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         2.988588
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Gastos por materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "7) per servizi",
@@ -44,7 +44,7 @@
       "values": [
         16.378404
       ],
-      "glosa": "7) Por servicios"
+      "glosa": "7) Gastos por servicios"
     },
     {
       "label": "8) per godimento di beni di terzi",
@@ -54,7 +54,7 @@
       "values": [
         1.577296
       ],
-      "glosa": "8) Por uso de bienes de terceros"
+      "glosa": "8) Gastos por uso de bienes de terceros"
     },
     {
       "label": "a) salari e stipendi",
@@ -84,7 +84,7 @@
       "values": [
         0.880784
       ],
-      "glosa": "c) Indemnización por fin de relación laboral"
+      "glosa": "c) Indemnización por cese de la relación laboral"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -114,7 +114,7 @@
       "values": [
         1.101402
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -124,7 +124,7 @@
       "values": [
         0.000447
       ],
-      "glosa": "d) Correcciones de valor de créditos comprendidos en el activo corriente y de las disponibilidades líquidas"
+      "glosa": "d) Deterioro de créditos del activo corriente y de la tesorería"
     },
     {
       "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",

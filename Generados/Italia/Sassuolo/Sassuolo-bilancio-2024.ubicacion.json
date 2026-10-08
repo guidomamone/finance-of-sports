@@ -3,7 +3,8 @@
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
  "mdSha1": "b76bf4040a808da6cdbdc60dbb3f843f4c1f6fe9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T00:53:06.130Z",
+ "generado": "2026-10-08T03:44:14.886Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 3,
@@ -560,7 +561,7 @@
   "b58"
  ],
  "escala": "unidades",
- "escala_evidencia": "El conto economico (b15) imprime importes completos en euros (ej. Totale valore della produzione 102.103.174), sin indicación de miles; las notas están en Euro/000.",
+ "escala_evidencia": "El conto economico (pág. 20) imprime importes completos en euro (ej. 102.103.174); las notas están en (Euro/000)",
  "moneda": "EUR",
  "columna_ejercicio": "31 dicembre 2024",
  "columna_anterior": "31 dicembre 2023",
@@ -568,23 +569,23 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de plusvalenze por jugador (b47) y de cessioni temporanee por jugador (b48)?",
+   "pregunta": "¿Se carga el renglón 'Proventi da cessione diritti televisivi' (17.772 miles) de la nota b46 como Televisión, abriendo 'a) Derivanti da attività accessorie' del estado?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "b) plusvalenze",
-   "texto": "Son detalles por jugador que no abren categorías del renglón.",
+   "renglon": "Proventi da cessione diritti televisivi",
+   "texto": "El estado b15 no separa TV; solo la nota 'Altri ricavi e proventi' (b46) lo abre, en miles de euro mientras el estado está en euro.",
    "bloques": [
-    "b47",
-    "b48"
+    "b46",
+    "b15"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera el conto economico riclassificato de la relazione sulla gestione (b7-b8) por duplicar el estado b15?",
+   "pregunta": "¿Se deja afuera de la carga el conto economico riclassificato de la relazione sulla gestione (b7-b8)?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "Es una reclasificación en Euro/000 del mismo estado; el oficial es b15.",
+   "texto": "Es una reclasificación en miles del mismo estado b15, no el estado oficial.",
    "bloques": [
     "b7",
     "b8"
@@ -592,5 +593,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Bilancio d'esercizio individual de US Sassuolo Calcio (no hay consolidado). Estado oficial b15 en euros; notas en miles de euros (Euro/000): ricavi da gare (b45), altri ricavi e proventi (b46), servizi (b49-b50), personale (b51-b52), oneri diversi (b54-b55), oneri finanziari (b58)."
+ "observaciones": "Bilancio d'esercizio individual de US Sassuolo Calcio. Estado oficial b15 en euro; notas en miles de euro. b46 abre 'Altri ricavi e proventi' (sponsor, publicidad, TV, plusvalías, préstamos, Lega no audiovisivi, diversos); b45 abre ricavi da gare/store. Gastos: servicios b49-b50, personal b51-b52, oneri diversi b54-b55, financieros b58. Se excluyen cuadros por jugador (b1,b21,b47,b48), balance, flujo y partes relacionadas."
 }

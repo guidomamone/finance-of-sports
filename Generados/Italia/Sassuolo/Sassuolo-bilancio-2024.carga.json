@@ -1,20 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf",
- "generado": "2026-10-08T03:17:42.142Z",
- "frena": [
-  {
-   "etapa": "alta:cierre",
-   "motivo": "No se pudo determinar la fecha de cierre del ejercicio."
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: sin fecha de cierre no hay tipo de cambio de cierre"
-  }
- ],
+ "generado": "2026-10-08T03:51:03.749Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-124.658564); queda la suma, verificada por el resultado del ejercicio"
@@ -22,7 +9,7 @@
  "ejercicio": {
   "clubId": "sassuolo-it",
   "year": 2024,
-  "cierre": null,
+  "cierre": "2024-12-31",
   "perimetro": "individual",
   "revenueLines": [
    {
@@ -66,34 +53,74 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "a) Derivanti da attività accessorie",
-    "normalizedCategory": "other_income",
-    "amountNative": 52.72774,
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 18.916,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
-    "_escalon": 1,
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.929,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da cessione diritti televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 17.772,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "b) plusvalenze",
+    "rawLabel": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
     "normalizedCategory": "player_sales",
-    "amountNative": 32.690919,
+    "amountNative": 32.691,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "f) Contributi in conto esercizio",
-    "normalizedCategory": "other_income",
-    "amountNative": 13.652892,
+    "rawLabel": "Proventi da cessioni temporanee calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.949,
     "disclosureLevel": "aggregated",
-    "_pag": 20,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi Lega non audiovisivi",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.512,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi diversi",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.303,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -400,6 +427,7 @@
   ],
   "fiscalYearMeta": {
    "currency": "EUR",
+   "fxRef": "EUR@2024-12-31",
    "sourceId": "sassuolo-it-bilancio-2024",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -439,7 +467,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 102.103551,
+   "officialTotalRevenue": 102.104,
    "officialTotalExpenses": 124.658564,
    "officialPAT": -22.125621
   },
@@ -458,15 +486,26 @@
   "tipo": "anual",
   "meses": 12,
   "cierre": "2024-12-31",
-  "evidencia": null,
-  "confianza": "media",
-  "anual": "calendario"
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-08): Bilancio al 31 dicembre 2024"
  },
  "clubId": "sassuolo-it",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "Bilancio al 31 dicembre 2024",
+   "evidencia": ".md L12, L408",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "seleccion": {
-  "filas": 44,
+  "filas": 48,
   "notasUsadas": [],
   "refM": null
  },
@@ -532,49 +571,115 @@
    "amountNative": 0.271
   },
   {
-   "label": "a) Derivanti da attività accessorie",
-   "page": 20,
-   "native": 52.72774,
+   "label": "Proventi da sponsorizzazioni",
+   "page": 48,
+   "native": 18.916,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 52.72774,
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 18.916,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 18.916
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 48,
+   "native": 7.929,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 7.929,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 7.929
+  },
+  {
+   "label": "Proventi da cessione diritti televisivi",
+   "page": 48,
+   "native": 17.772,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 17.772,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.772
+  },
+  {
+   "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+   "page": 48,
+   "native": 32.691,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 32.691,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): plusvalías de jugadores, criterios de Italia",
+   "destino": "revenue",
+   "amountNative": 32.691
+  },
+  {
+   "label": "Proventi da cessioni temporanee calciatori",
+   "page": 48,
+   "native": 2.949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 2.949,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 2.949
+  },
+  {
+   "label": "Proventi Lega non audiovisivi",
+   "page": 48,
+   "native": 13.512,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 13.512,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 13.512
+  },
+  {
+   "label": "Proventi diversi",
+   "page": 48,
+   "native": 5.303,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 5.303,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
    "destino": "revenue",
-   "amountNative": 52.72774
-  },
-  {
-   "label": "b) plusvalenze",
-   "page": 20,
-   "native": 32.690919,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 32.690919,
-   "cat": "player_sales",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 32.690919
-  },
-  {
-   "label": "f) Contributi in conto esercizio",
-   "page": 20,
-   "native": 13.652892,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 13.652892,
-   "cat": "other_income",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 13.652892
+   "amountNative": 5.303
   },
   {
    "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -1117,15 +1222,10 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"7) Per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
@@ -1135,9 +1235,9 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 102.103551,
+  "revSum": 102.104,
   "expSum": -124.658564,
-  "officialTotalRevenue": 102.103551,
+  "officialTotalRevenue": 102.104,
   "officialTotalExpenses": 124.658564,
   "officialPAT": -22.125621,
   "verificacion": {
@@ -1154,24 +1254,25 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 102.103551
+   "M": 102.104
   }
  },
  "liga": {
-  "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
-  "estado": "ok"
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2024 (it-seriea, it-serieb): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
   "anio": {
    "valor": 2024,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Bilancio al 31 dicembre 2024",
    "estado": "ok"
   },
   "cierre": {
-   "valor": null,
-   "fuente": null,
-   "estado": "pregunta"
+   "valor": "2024-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): Bilancio al 31 dicembre 2024)",
+   "estado": "ok"
   },
   "reportType": {
    "valor": "official_balance_sheet",
@@ -1188,10 +1289,10 @@
    "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
    "estado": "ok"
   },
-  "fx": {
-   "valor": null,
-   "fuente": "sin fecha de cierre no hay tipo de cambio de cierre",
-   "estado": "pendiente"
+  "fxRef": {
+   "valor": "EUR@2024-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-12-31 = 0.9626 (Cierre BCE al 31/12/2024 (1 EUR = 1,0389 USD))",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "sassuolo-it-bilancio-2024",
@@ -1199,15 +1300,15 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2023–24 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Sassuolo\"",
-   "estado": "ok"
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2024 (it-seriea, it-serieb): puede haber jugado otra división",
+   "estado": "pendiente"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 7,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 11,
   "lineasGasto": 30,
   "metaFilas": 7,
   "excluidas": 0

@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf",
- "generado": "2026-10-08T02:56:50.486Z",
+ "generado": "2026-10-08T03:51:02.401Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) ricavi delle vendite e delle prestazi\" -> lump_football_operations 0.35"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -19,13 +19,13 @@
   "revenueLines": [
    {
     "rawLabel": "1) ricavi delle vendite e delle prestazioni",
-    "normalizedCategory": "lump_football_operations",
+    "normalizedCategory": "matchday_competition",
     "amountNative": 2.124235,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.35,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "4) incrementi di immobilizzazioni per lavori interni",
@@ -194,14 +194,6 @@
      "value": -0.006545
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "1) ricavi delle vendite e delle prestazioni",
-     "lado": "revenue",
-     "importe": 2.124235,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 11.457714,
@@ -243,12 +235,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 2.124235,
-   "cat": "lump_football_operations",
-   "conf": 0.35,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente: '1) ricavi delle vendite e delle prestazioni' = ricavi da gare y abbonamenti (Bologna 2019-20 a 2021-22, caso 1457e5e); la nota lo desglosa así",
    "destino": "revenue",
    "amountNative": 2.124235
   },
@@ -497,6 +489,12 @@
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
   }
  ],
  "signos": {

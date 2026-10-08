@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.md",
- "generado": "2026-10-08T01:12:55.755Z",
+ "generado": "2026-10-08T03:49:57.428Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2008,
@@ -11,7 +11,48 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 3413,
+   "etiqueta": "(sale) TOTALE RICAVI",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 3413,
+   "motivo": "total sumado además de sus 18 hojas (doble conteo, to-do 167)",
+   "evidencia": "pág. 94 del visor, .md L3413",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
+   "campo": "fila",
+   "valor": "(4.224.030)",
+   "linea": 3469,
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "el subtotal financiero (hojas en detalla_a) no se sumaba; 55.350 + 1.283.259 - 5.562.639 = -4.224.030",
+   "evidencia": "pág. 95 del visor, .md L3469-3491",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.pdf",
+   "campo": "fila",
+   "valor": "(12.443.793)",
+   "linea": 3494,
+   "etiqueta": "Imposte differite e anticipate",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829)",
+   "evidencia": "pág. 95 del visor, .md L3494-3496",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
   "0c669d8",
   "ad49c68",
@@ -24,7 +65,7 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"TOTALE RICAVI\" 102.482031 cierra; además se suman 18 línea(s) fuera de ese total (102.48203)"
+   "detalle": "102.48203 = 102.482031"
   },
   {
    "nombre": "total de gastos",
@@ -34,7 +75,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": false,
-   "detalle": "ingresos 204.964061 - gastos 462.228866 ± financiero -0.738345 ± impuesto -2.704465 no da el impreso 13.761874"
+   "detalle": "ingresos 102.48203 - gastos 462.228866 ± financiero -4.962375 ± impuesto -15.148258 no da el impreso 13.761874"
   },
   {
    "nombre": "año anterior cargado",
@@ -53,6 +94,9 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"L3413\" (2026-10-08, total sumado además de sus 18 hojas (doble conteo, to-do 167))",
+  "ajuste manual: fila \"Oneri finanziari netti e differenze cambio\" (financiero) (4.224.030) (2026-10-08, el subtotal financiero (hojas en detalla_a) no se sumaba; 55.350 + 1.283.259 - 5.562.639 = -4.224.030)",
+  "ajuste manual: fila \"Imposte differite e anticipate\" (impuesto) (12.443.793) (2026-10-08, el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829))",
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale solo dan ventas totales por área, no abren ningún renglón del conto economico.",
   "duda de localizar que no afecta la carga: Estado en 'Valori in Euro', notas en 'in €/000'.",
   "duda de extraer que no afecta la carga: El estado ya trae el desglose 5.x/6.x/7.x/8.x y los detalles financieros en euros; las notas los repiten redondeados en miles.",
@@ -63,10 +107,10 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 204.964061,
+  "ingresos": 102.48203,
   "gastos": 462.228866,
-  "financiero": -0.738345,
-  "impuesto": -2.704465,
+  "financiero": -4.962375,
+  "impuesto": -15.148258,
   "resultadoImpreso": 13.761874,
   "resultadoParaCargar": 13.761874,
   "resultadoFinal": null,
@@ -215,14 +259,6 @@
    "M": 0,
    "pagina": 94,
    "linea": 3412,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "TOTALE RICAVI",
-   "lado": "ingreso",
-   "M": 102.482031,
-   "pagina": 94,
-   "linea": 3413,
    "origen": "estado"
   },
   {
@@ -560,6 +596,11 @@
    "etiqueta": "Proventi (Oneri) finanziari da partecipazioni",
    "M": -0.738345,
    "linea": 3467
+  },
+  {
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "M": -4.22403,
+   "linea": 3469
   }
  ],
  "impuesto": [
@@ -567,6 +608,11 @@
    "etiqueta": "Imposte correnti",
    "M": -2.704465,
    "linea": 3493
+  },
+  {
+   "etiqueta": "Imposte differite e anticipate",
+   "M": -12.443793,
+   "linea": 3494
   }
  ]
 }

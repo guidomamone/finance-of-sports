@@ -3,7 +3,7 @@
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
  "mdSha1": "b76bf4040a808da6cdbdc60dbb3f843f4c1f6fe9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T00:54:00.305Z",
+ "generado": "2026-10-08T03:45:13.982Z",
  "ubicacion": {
   "estado": [
    "b15"
@@ -26,52 +26,52 @@
   {
    "bloque": "b15",
    "escala": "unidades",
-   "evidencia": "Importes sin indicación de escala, con detalle a la unidad (ej. 3.031.623); se asume euro"
+   "evidencia": "Importes sin indicación de escala, con cifras completas (ej. 3.031.623)"
   },
   {
    "bloque": "b45",
    "escala": "miles",
-   "evidencia": "L1525: (Euro/000)"
+   "evidencia": "(Euro/000) L1525"
   },
   {
    "bloque": "b46",
    "escala": "miles",
-   "evidencia": "L1543: (Euro/000)"
+   "evidencia": "(Euro/000) L1543"
   },
   {
    "bloque": "b49",
    "escala": "miles",
-   "evidencia": "L1609: (Euro/000)"
+   "evidencia": "(Euro/000) L1609"
   },
   {
    "bloque": "b50",
    "escala": "miles",
-   "evidencia": "Continuación de la tabla de b49 (Euro/000)"
+   "evidencia": "continuación de la tabla de b49 (Euro/000)"
   },
   {
    "bloque": "b51",
    "escala": "miles",
-   "evidencia": "L1661: (Euro/000)"
+   "evidencia": "(Euro/000) L1661"
   },
   {
    "bloque": "b52",
    "escala": "miles",
-   "evidencia": "L1674: (Euro/000)"
+   "evidencia": "(Euro/000) L1674"
   },
   {
    "bloque": "b54",
    "escala": "miles",
-   "evidencia": "L1726: (Euro/000)"
+   "evidencia": "(Euro/000) L1726"
   },
   {
    "bloque": "b55",
    "escala": "miles",
-   "evidencia": "Continuación de la tabla de b54 (Euro/000)"
+   "evidencia": "continuación de la tabla de b54 (Euro/000)"
   },
   {
    "bloque": "b58",
    "escala": "miles",
-   "evidencia": "L1794: (Euro/000)"
+   "evidencia": "(Euro/000) L1794"
   }
  ],
  "filas": [
@@ -706,6 +706,76 @@
    "detalla_a": "9) Per il personale:"
   },
   {
+   "bloque": "b52",
+   "linea": 1678,
+   "etiqueta": "Retribuzioni",
+   "actual": "50.455",
+   "anterior": "52.886",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1679,
+   "etiqueta": "Premi variabili",
+   "actual": "2.091",
+   "anterior": "3.017",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1680,
+   "etiqueta": "Altri compensi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Salari e stipendi"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1681,
+   "etiqueta": "Contributi",
+   "actual": "4.346",
+   "anterior": "3.889",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Oneri sociali"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1682,
+   "etiqueta": "Accantonamenti F.F.C.",
+   "actual": "471",
+   "anterior": "417",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "T.F.R."
+  },
+  {
+   "bloque": "b52",
+   "linea": 1683,
+   "etiqueta": "Altri costi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Altri costi"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1684,
+   "etiqueta": "Totale",
+   "actual": "57.363",
+   "anterior": "60.209",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Totale"
+  },
+  {
    "bloque": "b54",
    "linea": 1730,
    "etiqueta": "Spese organizzazione gare",
@@ -911,28 +981,40 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de costo de personal tesserati (L1678-L1684, b52) por ser detalle de la columna 'Tesserati' de b51?",
+   "pregunta": "¿Se usa la columna 'Totale' del cuadro por categoría (L1666-L1670) para desglosar los renglones de personal del estado?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "usar-cuadro-por-segmento",
    "renglon": "9) Per il personale:",
-   "texto": "b52 desglosa la columna Tesserati (57.363) de b51, que está por categoría y no por renglón del estado; cargarlo duplicaría el personal.",
+   "texto": "El cuadro b51 tiene columnas Tesserati/Altri dipen./Totale; los renglones del estado son del total, por eso se tomó Totale (L1666-L1670).",
    "bloques": [
-    "b52",
     "b51"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se cargan en b51 (L1666-L1670) solo los importes de la columna 'Totale' y no las columnas 'Tesserati' y 'Altri dipen.'?",
+   "pregunta": "¿Se trata el cuadro de L1678-L1684 como desglose de la columna 'Tesserati' del cuadro de personal (total 57.363)?",
    "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "9) Per il personale:",
-   "texto": "b51 tiene columnas por categoría de personal; se tomó la columna Totale que concilia con los renglones a)-e) del estado.",
+   "tema": "otro",
+   "renglon": "Totale",
+   "texto": "El total 57.363 de L1684 coincide con la columna Tesserati de L1670, no con el Totale 63.363; es un sub-desglose de tesserati.",
    "bloques": [
+    "b52",
     "b51"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan con signo positivo los oneri finanziari de la nota (L1798-L1803) aunque en el estado figuran entre paréntesis?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "17) Oneri:",
+   "texto": "La nota imprime importes positivos y el estado negativos (L592); se transcriben tal cual.",
+   "bloques": [
+    "b58",
+    "b15"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en euros (unidades) y notas en Euro/000. Las diferencias de 1 mil entre notas y estado son redondeo. 'Altri ricavi e proventi' (b46) desglosa el renglón 5) en conjunto, no sus subrenglones a), b), f). Los encabezados 'Altri oneri da gestione calciatori' y 'Altri oneri di gestione' (L1738, L1743) no tienen importe. La nota de proventi financieros y de 8) godimento/ammortamenti no está en los bloques."
+ "observaciones": "Televisión: 'Proventi da cessione diritti televisivi' (L1551, 17.772 miles) está en la nota b46 que desglosa '5) Altri ricavi e proventi:'. Las filas 'di cui Mapei S.p.A.' (L1548, L1550) son 'de los cuales' y no suman al total. El estado está en euros (unidades) y las notas en miles. La nota de servicios continúa de b49 a b50 y la de oneri diversi de b54 a b55."
 }

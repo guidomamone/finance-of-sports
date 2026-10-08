@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
- "generado": "2026-10-08T02:56:51.742Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-08T03:51:03.203Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-136.527069); queda la suma, verificada por el resultado del ejercicio"
@@ -48,34 +43,74 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "a) Derivanti da attività accessorie",
-    "normalizedCategory": "other_income",
-    "amountNative": 85.204185,
+    "rawLabel": "Proventi da sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 18.881,
     "disclosureLevel": "aggregated",
-    "_pag": 18,
-    "_escalon": 1,
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.003,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi da cessione diritti televisivi",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 47.393,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "b) plusvalenze",
+    "rawLabel": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
     "normalizedCategory": "player_sales",
-    "amountNative": 33.929745,
+    "amountNative": 33.93,
     "disclosureLevel": "aggregated",
-    "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "f) Contributi in conto esercizio",
-    "normalizedCategory": "other_income",
-    "amountNative": 3.372223,
+    "rawLabel": "Proventi da cessioni temporanee calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.403,
     "disclosureLevel": "aggregated",
-    "_pag": 18,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi Lega non audiovisivi",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.372,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Proventi diversi",
+    "normalizedCategory": "other_income",
+    "amountNative": 10.524,
+    "disclosureLevel": "aggregated",
+    "_pag": 43,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -412,7 +447,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 123.653153,
+   "officialTotalRevenue": 123.653,
    "officialTotalExpenses": 136.527069,
    "officialPAT": -13.850755
   },
@@ -450,7 +485,7 @@
   }
  ],
  "seleccion": {
-  "filas": 42,
+  "filas": 46,
   "notasUsadas": [],
   "refM": null
  },
@@ -501,49 +536,115 @@
    "amountNative": 0.211
   },
   {
-   "label": "a) Derivanti da attività accessorie",
-   "page": 18,
-   "native": 85.204185,
+   "label": "Proventi da sponsorizzazioni",
+   "page": 43,
+   "native": 18.881,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 85.204185,
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 18.881,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 18.881
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "page": 43,
+   "native": 8.003,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 8.003,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 8.003
+  },
+  {
+   "label": "Proventi da cessione diritti televisivi",
+   "page": 43,
+   "native": 47.393,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 47.393,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 47.393
+  },
+  {
+   "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+   "page": 43,
+   "native": 33.93,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 33.93,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): plusvalías de jugadores, criterios de Italia",
+   "destino": "revenue",
+   "amountNative": 33.93
+  },
+  {
+   "label": "Proventi da cessioni temporanee calciatori",
+   "page": 43,
+   "native": 0.403,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 0.403,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 0.403
+  },
+  {
+   "label": "Proventi Lega non audiovisivi",
+   "page": 43,
+   "native": 3.372,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 3.372,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
+   "destino": "revenue",
+   "amountNative": 3.372
+  },
+  {
+   "label": "Proventi diversi",
+   "page": 43,
+   "native": 10.524,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))",
+   "signoFijo": 10.524,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude con ok de Guido (to-do 163, 2026-10-07): fila de la nota del subtotal, criterios de Italia (to-do 152)",
    "destino": "revenue",
-   "amountNative": 85.204185
-  },
-  {
-   "label": "b) plusvalenze",
-   "page": 18,
-   "native": 33.929745,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 33.929745,
-   "cat": "player_sales",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 33.929745
-  },
-  {
-   "label": "f) Contributi in conto esercizio",
-   "page": 18,
-   "native": 3.372223,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 3.372223,
-   "cat": "other_income",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 3.372223
+   "amountNative": 10.524
   },
   {
    "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -1071,15 +1172,10 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\")": "gastos con signo",
+   "verificacion (nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"7) Per servizi\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
@@ -1089,9 +1185,9 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 123.653153,
+  "revSum": 123.653,
   "expSum": -136.527069,
-  "officialTotalRevenue": 123.653153,
+  "officialTotalRevenue": 123.653,
   "officialTotalExpenses": 136.527069,
   "officialPAT": -13.850755,
   "verificacion": {
@@ -1108,7 +1204,7 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 123.653153
+   "M": 123.653
   }
  },
  "liga": {
@@ -1159,9 +1255,9 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 6,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 10,
   "lineasGasto": 29,
   "metaFilas": 7,
   "excluidas": 0

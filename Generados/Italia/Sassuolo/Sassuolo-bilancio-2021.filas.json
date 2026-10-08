@@ -3,7 +3,7 @@
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
  "mdSha1": "5e41c11766c0e996b758152ba88d383bc065759d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-07T23:49:19.667Z",
+ "generado": "2026-10-08T03:43:59.106Z",
  "ubicacion": {
   "estado": [
    "b17"
@@ -25,47 +25,47 @@
   {
    "bloque": "b17",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes con detalle a la unidad (ej. 123.653.140), coherentes con euros"
+   "evidencia": "Importes impresos en euros sin indicación de escala (ej. 1.146.987)"
   },
   {
    "bloque": "b40",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1503"
+   "evidencia": "L1503: (Euro/000)"
   },
   {
    "bloque": "b41",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1523"
+   "evidencia": "L1523: (Euro/000)"
   },
   {
    "bloque": "b44",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1578"
+   "evidencia": "L1578: (Euro/000)"
   },
   {
    "bloque": "b45",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1635"
+   "evidencia": "L1635: (Euro/000)"
   },
   {
    "bloque": "b46",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1648"
+   "evidencia": "L1648: (Euro/000)"
   },
   {
    "bloque": "b48",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1700"
+   "evidencia": "L1700: (Euro/000)"
   },
   {
    "bloque": "b49",
    "escala": "miles",
-   "evidencia": "Continuación de la tabla de b48 (Euro/000)"
+   "evidencia": "Continuación de b48 (Euro/000)"
   },
   {
    "bloque": "b52",
    "escala": "miles",
-   "evidencia": "(Euro/000) L1767"
+   "evidencia": "L1767: (Euro/000)"
   }
  ],
  "filas": [
@@ -650,6 +650,56 @@
    "detalla_a": "7) Per servizi"
   },
   {
+   "bloque": "b45",
+   "linea": 1640,
+   "etiqueta": "Salari e stipendi",
+   "actual": "66.099",
+   "anterior": "52.601",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Salari e stipendi"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1641,
+   "etiqueta": "Oneri sociali",
+   "actual": "3.377",
+   "anterior": "3.252",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Oneri sociali"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1642,
+   "etiqueta": "T.F.R.",
+   "actual": "793",
+   "anterior": "707",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "c) Trattamento di fine rapporto"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1643,
+   "etiqueta": "Altri costi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "e) altri costi"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1644,
+   "etiqueta": "Totale",
+   "actual": "70.269",
+   "anterior": "56.560",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "9) Per il personale:"
+  },
+  {
    "bloque": "b46",
    "linea": 1652,
    "etiqueta": "Retribuzioni",
@@ -905,40 +955,17 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro por tipo de personal b45 (Tesserati / Altri dipen., L1640-L1644), ya que replica los renglones a)-e) de '9) Per il personale:' del estado y su columna Tesserati está desglosada en b46?",
-   "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
+   "pregunta": "¿Se carga el cuadro b46 (L1652-L1658) como desglose del personal 'Tesserati' aunque es un detalle de la columna Tesserati de b45?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
    "renglon": "9) Per il personale:",
-   "texto": "b45 abre el costo de personal por columnas Tesserati/Altri dipendenti con los mismos conceptos que el estado (L577-L580); b46 desglosa solo la parte Tesserati (65.466).",
-   "bloques": [
-    "b45",
-    "b46"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se mantiene detalla_a='9) Per il personale:' para las filas de b46 (L1652-L1658) aunque solo cubren el personal tesserato (65.466 de 70.269)?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "9) Per il personale:",
-   "texto": "b46 suma 65.466, que es la columna Tesserati de b45 (L1644), no el total del renglón 70.269.",
+   "texto": "b46 desglosa solo la columna Tesserati (65.466) de b45, no el total del renglón 70.269.567.",
    "bloques": [
     "b46",
     "b45"
    ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se confirma que el estado b17 está en euros (unidades) aunque no imprime la escala?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "b17 no indica escala; las notas (Euro/000) coinciden con los importes del estado divididos por mil.",
-   "bloques": [
-    "b17"
-   ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado en euros y notas en miles de euros. Las filas 'di cui Mapei S.p.A.' (L1528, L1530) son de las que se informa, ya incluidas en su renglón superior. El cuadro b48-b49 es una sola tabla partida entre páginas; los encabezados 'Altri oneri da gestione calciatori:' (L1709) y 'Altri oneri di gestione:' (L1718) no tienen importe. Cuadro b45 por tipo de personal no extraído (ver dudas)."
+ "observaciones": "Televisión: 'Proventi da cessione diritti televisivi' L1531 (47.393 miles). Estado en euros, notas en miles. En b45 se tomó la columna Totale. Las filas 'di cui Mapei' son detalle de sus renglones."
 }

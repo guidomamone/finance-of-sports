@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
   "club": "sassuolo-it",
   "year": 2021,
-  "generatedAt": "2026-10-08T02:53:38.162Z",
+  "generatedAt": "2026-10-08T03:48:59.097Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -37,34 +37,74 @@
       "glosa": "Ingresos de tienda"
     },
     {
-      "label": "a) Derivanti da attività accessorie",
+      "label": "Proventi da sponsorizzazioni",
       "lado": "revenue",
-      "page": 18,
-      "section": "estado",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        85.204185
+        18.881
       ],
-      "glosa": "a) Procedentes de actividades accesorias"
+      "glosa": "Ingresos por patrocinios"
     },
     {
-      "label": "b) plusvalenze",
+      "label": "Proventi pubblicitari",
       "lado": "revenue",
-      "page": 18,
-      "section": "estado",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        33.929745
+        8.003
       ],
-      "glosa": "b) Plusvalías"
+      "glosa": "Ingresos publicitarios"
     },
     {
-      "label": "f) Contributi in conto esercizio",
+      "label": "Proventi da cessione diritti televisivi",
       "lado": "revenue",
-      "page": 18,
-      "section": "estado",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        3.372223
+        47.393
       ],
-      "glosa": "f) Subvenciones a la explotación"
+      "glosa": "Ingresos por cesión de derechos televisivos"
+    },
+    {
+      "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+      "lado": "revenue",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        33.93
+      ],
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Proventi da cessioni temporanee calciatori",
+      "lado": "revenue",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        0.403
+      ],
+      "glosa": "Ingresos por cesiones temporales de futbolistas"
+    },
+    {
+      "label": "Proventi Lega non audiovisivi",
+      "lado": "revenue",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        3.372
+      ],
+      "glosa": "Ingresos de la Liga no audiovisuales"
+    },
+    {
+      "label": "Proventi diversi",
+      "lado": "revenue",
+      "page": 43,
+      "section": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        10.524
+      ],
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -74,7 +114,7 @@
       "values": [
         1.819233
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Aprovisionamientos de materias primas, consumibles y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -134,7 +174,7 @@
       "values": [
         0.605
       ],
-      "glosa": "Seguros y previsión social"
+      "glosa": "Gastos de seguros y previsión social"
     },
     {
       "label": "Amministrative e generali",
@@ -164,7 +204,7 @@
       "values": [
         3.09099
       ],
-      "glosa": "8) Por uso de bienes de terceros"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) Salari e stipendi",
@@ -194,7 +234,7 @@
       "values": [
         0.793318
       ],
-      "glosa": "c) Indemnización por fin de contrato (TFR)"
+      "glosa": "c) Indemnización por fin de contrato"
     },
     {
       "label": "e) altri costi",
@@ -234,7 +274,7 @@
       "values": [
         0
       ],
-      "glosa": "d) Deterioro de valor de los créditos del activo"
+      "glosa": "d) Deterioro del valor de créditos del activo"
     },
     {
       "label": "11) Variazioni delle rimanenze",
@@ -274,7 +314,7 @@
       "values": [
         1.517
       ],
-      "glosa": "Cuotas de contribución a la Liga"
+      "glosa": "Cuotas de aportación a la Liga"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -284,7 +324,7 @@
       "values": [
         2.318
       ],
-      "glosa": "Costes por cesión temporal de derechos de futbolistas"
+      "glosa": "Gastos por cesión temporal de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -294,7 +334,7 @@
       "values": [
         0.985
       ],
-      "glosa": "Minusvalías por traspaso de derechos plurianuales de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Premi valorizzazione, di addestramento e Carriera",
@@ -304,7 +344,7 @@
       "values": [
         1.177
       ],
-      "glosa": "Primas de formación, valorización y carrera"
+      "glosa": "Primas de formación, preparación y carrera deportiva"
     },
     {
       "label": "Contributo Solidarietà Fifa",
@@ -314,7 +354,7 @@
       "values": [
         0.206
       ],
-      "glosa": "Contribución de solidaridad FIFA"
+      "glosa": "Contribución de solidaridad de la FIFA"
     },
     {
       "label": "Sopravvenienze passive",
@@ -324,7 +364,7 @@
       "values": [
         0.069
       ],
-      "glosa": "Pérdidas extraordinarias"
+      "glosa": "Gastos y pérdidas extraordinarias"
     },
     {
       "label": "Spese, ammende e multe gare",
@@ -334,7 +374,7 @@
       "values": [
         0.016
       ],
-      "glosa": "Gastos, sanciones y multas de competición"
+      "glosa": "Gastos, sanciones y multas de partidos"
     },
     {
       "label": "Oneri tributari indiretti",
@@ -344,7 +384,7 @@
       "values": [
         0.015
       ],
-      "glosa": "Cargas tributarias indirectas"
+      "glosa": "Tributos indirectos"
     },
     {
       "label": "Altri",

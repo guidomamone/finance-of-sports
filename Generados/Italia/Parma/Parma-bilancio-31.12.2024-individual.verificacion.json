@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.pdf",
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md",
- "generado": "2026-10-08T03:14:10.554Z",
+ "generado": "2026-10-08T03:48:59.015Z",
  "estado": "ok",
  "clubId": "parma-it",
  "year": 2024,
@@ -53,13 +53,11 @@
  "notas": [
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 5",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar que no afecta la carga: Es una reclasificación del conto economico b12 para indicadores, no un estado distinto.",
-  "duda de localizar que no afecta la carga: Resume amortizaciones y resultados de jugadores ya incluidos en el conto economico y sus notas, en otra escala.",
-  "duda de extraer que no afecta la carga: Diferencia de 1 unidad atribuible a redondeo (L1677 vs L555).",
-  "duda de extraer que no afecta la carga: Las variaciones de L1533 y L1534 no coinciden con la resta de columnas, pero los importes de 2024 y 2023 cuadran con el total L1535; no se carga la variación."
+  "duda de localizar que no afecta la carga: b5 y b2 reexpresan cifras del conto economico b12 en otro formato o escala.",
+  "duda de extraer que no afecta la carga: L570 imprime 961.793 y L571 (961.793); el resultado (63.414.477) vs (64.376.270) indica un provento fiscal."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 41.490983,

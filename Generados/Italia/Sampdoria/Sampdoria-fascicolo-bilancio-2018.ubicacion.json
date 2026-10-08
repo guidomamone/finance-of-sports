@@ -3,7 +3,8 @@
  "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
  "mdSha1": "3377bdc408891e88228c725d8c196354e01df152",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T00:49:24.851Z",
+ "generado": "2026-10-08T03:45:22.009Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 10,
@@ -594,7 +595,7 @@
   "b63"
  ],
  "escala": "unidades",
- "escala_evidencia": "Lo infiero de las cifras del balance (ej. 3.811.489, 224.689.881 en b17) y de los cuadros del CONTO ECONOMICO sin indicación 'Euro/000', a diferencia de las notas, que sí la indican",
+ "escala_evidencia": "El conto economico (b20) se presenta en euros sin indicación de miles (cifras como 3.811.489 en el balance); las notas están en Euro/000.",
  "moneda": "EUR",
  "columna_ejercicio": "31 dicembre 2018",
  "columna_anterior": "31 dicembre 2017",
@@ -602,28 +603,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el conto economico al 31-12-2018 (b20-b21) como el ejercicio pedido, aunque la fecha pedida sea 2019-03-29?",
+   "pregunta": "¿Se cargan los ingresos televisivos desde la fila 'Proventi da cessione diritti televisivi' del cuadro de altri ricavi e proventi (b50)?",
    "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
-   "renglon": "",
-   "texto": "El documento es el bilancio 2018 con cierre al 31/12/2018; la fecha 2019-03-29 parece ser la de aprobación o emisión del documento.",
+   "tema": "otro",
+   "renglon": "Proventi da cessione diritti televisivi",
+   "texto": "En el esquema civilista los derechos TV van dentro de 'Altri ricavi e proventi' (A5) y se abren en b50.",
    "bloques": [
-    "b20",
-    "b21"
+    "b50",
+    "b20"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿El bloque b21 (pág. 27) es la continuación del conto economico de b20 hasta el 'Utile (perdita) dell'esercizio'?",
+   "pregunta": "¿Se deja afuera el cuadro de plusvalías por jugador (b51)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Utile (perdita) dell'esercizio",
-   "texto": "El encabezado de b21 está mal transcripto ('0 | 0'), pero las líneas de arriba muestran las imposte y el utile.",
+   "renglon": "",
+   "texto": "Es detalle por jugador; el total de plusvalías ya figura en el estado o en b50.",
    "bloques": [
-    "b21"
+    "b51"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "Bilancio d'esercizio individual de U.C. Sampdoria S.p.A. con cierre al 31/12/2018. El estado de resultados está en b20 y su continuación b21; está en euro unidades, mientras que las notas están en Euro/000. El b13 es el conto economico riclasificado de la relazione sulla gestione, por eso no se elige. b51 (plusvalenze por jugador) y b59 (préstamos por jugador) son detalles por jugador, por eso se excluyen. b64 y b65 son conciliaciones fiscales, por eso se excluyen. b63 desglosa el renglón de imposte, por eso se incluye. No hay ningún bloque consolidado."
+ "observaciones": "Estado de resultados individual de U.C. Sampdoria S.p.A. en b20 (pág. 26) continuado en b21 (pág. 27), en euros. b13 es un conto economico riclassificato de la relazione sulla gestione (Euro/000), no se usa. b5/b6 son resúmenes de la relazione. Notas en Euro/000: b49 ricavi da gare, b50 altri ricavi (incluye diritti televisivi), b52 materiali, b53 servizi, b54 godimento beni di terzi, b55/b56 personale, b58 oneri diversi, b62 oneri finanziari, b63 imposte."
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
- "generado": "2026-10-08T02:53:38.162Z",
+ "generado": "2026-10-08T03:48:59.097Z",
  "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2021,
@@ -28,7 +28,7 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "123.653153 = 123.65314"
+   "detalle": "123.653 = 123.65314"
   },
   {
    "nombre": "total de gastos",
@@ -52,18 +52,17 @@
   }
  ],
  "notas": [
+  "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (122.506153): reemplaza a \"a) Derivanti da attività accessorie\" + \"b) plusvalenze\" + \"f) Contributi in conto esercizio\"",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Sassuolo-bilancio-2021.pdf",
-  "duda de localizar que no afecta la carga: b7 es una reclasificación en Euro/000 del mismo ejercicio.",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"9) Per il personale:\"): ¿Se deja afuera de la carga el cuadro por tipo de personal b45 (Tesserati / Altri dipen., L1640-L1644), ya que replica los renglones a)-e) de '9) Per il personale:' del estado y su columna Tesserati está desglosada en b46?",
-  "duda de extraer que no afecta la carga: b46 suma 65.466, que es la columna Tesserati de b45 (L1644), no el total del renglón 70.269.",
-  "duda de extraer que no afecta la carga: b17 no indica escala; las notas (Euro/000) coinciden con los importes del estado divididos por mil."
+  "duda de localizar que no afecta la carga: b7 repite en miles los importes del estado; los derechos de TV (47.393) ya están en la nota b41.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"9) Per il personale:\"): corregir no, en Sassuolo-bilancio-2021.pdf"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 123.653153,
+  "ingresos": 123.653,
   "gastos": 137.581069,
   "financiero": -1.412906,
   "impuesto": 1.489585,
@@ -98,28 +97,60 @@
    "origen": "nota que desglosa \"1) Ricavi delle vendite e delle prestazioni\""
   },
   {
-   "etiqueta": "a) Derivanti da attività accessorie",
+   "etiqueta": "Proventi da sponsorizzazioni",
    "lado": "ingreso",
-   "M": 85.204185,
-   "pagina": 18,
-   "linea": 568,
-   "origen": "estado"
+   "M": 18.881,
+   "pagina": 43,
+   "linea": 1527,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "b) plusvalenze",
+   "etiqueta": "Proventi pubblicitari",
    "lado": "ingreso",
-   "M": 33.929745,
-   "pagina": 18,
-   "linea": 569,
-   "origen": "estado"
+   "M": 8.003,
+   "pagina": 43,
+   "linea": 1529,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
-   "etiqueta": "f) Contributi in conto esercizio",
+   "etiqueta": "Proventi da cessione diritti televisivi",
    "lado": "ingreso",
-   "M": 3.372223,
-   "pagina": 18,
-   "linea": 570,
-   "origen": "estado"
+   "M": 47.393,
+   "pagina": 43,
+   "linea": 1531,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+   "lado": "ingreso",
+   "M": 33.93,
+   "pagina": 43,
+   "linea": 1532,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi da cessioni temporanee calciatori",
+   "lado": "ingreso",
+   "M": 0.403,
+   "pagina": 43,
+   "linea": 1533,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi Lega non audiovisivi",
+   "lado": "ingreso",
+   "M": 3.372,
+   "pagina": 43,
+   "linea": 1534,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Proventi diversi",
+   "lado": "ingreso",
+   "M": 10.524,
+   "pagina": 43,
+   "linea": 1535,
+   "origen": "nota que desglosa \"5) Altri ricavi e proventi:\" (escalón: la nota del subtotal)"
   },
   {
    "etiqueta": "6) Per materie prime, sussidiarie, di consumo e di merci",
@@ -396,5 +427,8 @@
    "M": 3.83821,
    "linea": 601
   }
+ ],
+ "notaSubtotal": [
+  "ingreso"
  ]
 }

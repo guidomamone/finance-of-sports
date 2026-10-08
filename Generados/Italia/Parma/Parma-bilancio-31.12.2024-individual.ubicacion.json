@@ -3,7 +3,8 @@
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md",
  "mdSha1": "6cfef96ed2728c9b61b69bfce98692333298062e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T00:48:20.537Z",
+ "generado": "2026-10-08T03:41:43.666Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -465,7 +466,7 @@
   "b53"
  ],
  "escala": "unidades",
- "escala_evidencia": "Importes impresos en euros completos (ej. 'Al 31 dicembre 2024 ammontano ad Euro 2.979.471'; D) Ratei e risconti 2.979.471)",
+ "escala_evidencia": "Los importes del conto economico se presentan en euros enteros (ej. Valore della produzione 41.490.983; Immobilizzazioni materiali 'Euro 14.394.908').",
  "moneda": "EUR",
  "columna_ejercicio": "31-12-2024",
  "columna_anterior": "31-12-2023",
@@ -473,27 +474,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el 'Conto economico a valore aggiunto' de la relazione sulla gestione (b5, pág. 7)?",
+   "pregunta": "¿Se dejan afuera de la carga el conto economico a valore aggiunto (b5) y el cuadro de operaciones de transferencia UEFA en € 000 (b2), por ser reclasificaciones del informe de gestión?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "Es una reclasificación del conto economico b12 para indicadores, no un estado distinto.",
+   "texto": "b5 y b2 reexpresan cifras del conto economico b12 en otro formato o escala.",
    "bloques": [
-    "b5"
+    "b5",
+    "b2"
    ],
    "afecta_carga": false
   },
   {
-   "pregunta": "¿Se deja afuera el cuadro UEFA de riepilogo operazioni di trasferimento (b2, pág. 6), expresado en € 000?",
+   "pregunta": "¿Los derechos televisivos están incluidos en el cuadro b46 (Proventi da sponsorizzazioni... Ricavi e proventi diversi) y no en un cuadro aparte?",
    "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "Resume amortizaciones y resultados de jugadores ya incluidos en el conto economico y sus notas, en otra escala.",
+   "tema": "otro",
+   "renglon": "Televisión",
+   "texto": "El reintento pide filas de Televisión; b46 tiene 9 filas de ingresos y es el candidato más probable para 'Diritti televisivi'.",
    "bloques": [
-    "b2"
+    "b46"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Bilancio d'esercizio individual de Parma Calcio 1913 S.r.l.; no hay consolidado. Estado de resultados en b12 (pág. 16). b43 es solo el saldo del valore della produzione. b55 es texto basura de transcripción, ignorado."
+ "observaciones": "Bilancio d'esercizio individual de Parma Calcio 1913 S.r.l. Estado: b12 (Conto economico, formato civilístico). Notas de ingresos: b44 (composición del valore della produzione), b45 (ricavi da gare/abbonamenti) y b46 (sponsorizzazioni, pubblicità, commerciali, probablemente diritti TV y otros). Notas de gastos: servicios (b47-b48), godimento beni di terzi (b49), personal (b50), amortizaciones y depreciaciones (b51-b52) y oneri diversi (b53). b55 es basura de OCR."
 }

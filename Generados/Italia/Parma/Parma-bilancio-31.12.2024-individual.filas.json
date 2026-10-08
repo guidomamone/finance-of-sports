@@ -3,7 +3,7 @@
  "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md",
  "mdSha1": "6cfef96ed2728c9b61b69bfce98692333298062e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-08T00:49:16.053Z",
+ "generado": "2026-10-08T03:42:46.517Z",
  "ubicacion": {
   "estado": [
    "b12"
@@ -27,32 +27,32 @@
   {
    "bloque": "b12",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes en euro (ej. L1611 'Ammontano ad Euro 1.577.296' coincide con L541)"
+   "evidencia": "No se imprime la escala; los importes coinciden con las notas expresadas en Euro (ej. L1636 'pari ad Euro 26.977.252')"
   },
   {
    "bloque": "b44",
    "escala": "unidades",
-   "evidencia": "Coincide con el estado en euro (L1498 41.490.983)"
+   "evidencia": "Coincide con b12 y con L1636 'Euro 26.977.252'"
   },
   {
    "bloque": "b45",
    "escala": "unidades",
-   "evidencia": "Totale 4.508.008 igual al estado"
+   "evidencia": "Total 4.508.008 igual al estado; notas en Euro"
   },
   {
    "bloque": "b46",
    "escala": "unidades",
-   "evidencia": "Totale 36.982.975 igual al estado"
+   "evidencia": "Total 36.982.975 igual al estado; notas en Euro"
   },
   {
    "bloque": "b47",
    "escala": "unidades",
-   "evidencia": "Continúa en b48 con Totale 16.378.404 igual al estado"
+   "evidencia": "Continúa en b48 con total 16.378.404 igual al estado"
   },
   {
    "bloque": "b48",
    "escala": "unidades",
-   "evidencia": "Totale 16.378.404 igual al estado"
+   "evidencia": "Total 16.378.404 igual al estado"
   },
   {
    "bloque": "b49",
@@ -62,22 +62,22 @@
   {
    "bloque": "b50",
    "escala": "unidades",
-   "evidencia": "Totale 49.249.425 igual al estado"
+   "evidencia": "Total 49.249.425 igual al estado"
   },
   {
    "bloque": "b51",
    "escala": "unidades",
-   "evidencia": "L1636 'pari ad Euro 26.977.252'"
+   "evidencia": "L1636 'è pari ad Euro 26.977.252'"
   },
   {
    "bloque": "b52",
    "escala": "unidades",
-   "evidencia": "Totale 26.977.252 igual al estado"
+   "evidencia": "Total 26.977.252, L1636 en Euro"
   },
   {
    "bloque": "b53",
    "escala": "unidades",
-   "evidencia": "Totale 7.120.797 ≈ estado 7.120.798"
+   "evidencia": "Total 7.120.797 ≈ estado 7.120.798"
   }
  ],
  "filas": [
@@ -392,6 +392,36 @@
    "detalla_a": null
   },
   {
+   "bloque": "b44",
+   "linea": 1496,
+   "etiqueta": "Ricavi vendite e prestazioni",
+   "actual": "4.508.008",
+   "anterior": "3.551.648",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Totale valore della produzione"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1497,
+   "etiqueta": "Altri ricavi e proventi",
+   "actual": "36.982.975",
+   "anterior": "25.339.727",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Totale valore della produzione"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1498,
+   "etiqueta": "Totale",
+   "actual": "41.490.983",
+   "anterior": "28.891.375",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Totale valore della produzione"
+  },
+  {
    "bloque": "b45",
    "linea": 1506,
    "etiqueta": "Gare Ufficiali Campionato",
@@ -439,7 +469,7 @@
    "anterior": "2.104.869",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -449,7 +479,7 @@
    "anterior": "2.824.032",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -459,7 +489,7 @@
    "anterior": "50.727",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -469,7 +499,7 @@
    "anterior": "2.980.680",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -479,7 +509,7 @@
    "anterior": "3.727.064",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -489,7 +519,7 @@
    "anterior": "2.381.525",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -499,7 +529,7 @@
    "anterior": "5.936.768",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -509,7 +539,7 @@
    "anterior": "5.334.062",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b46",
@@ -519,7 +549,7 @@
    "anterior": "25.339.727",
    "tipo": "subtotal",
    "lado": "ingreso",
-   "detalla_a": "altri"
+   "detalla_a": "Totale altri ricavi e proventi"
   },
   {
    "bloque": "b47",
@@ -719,7 +749,7 @@
    "anterior": "38.840.975",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "a) salari e stipendi"
+   "detalla_a": "Totale costi per il personale"
   },
   {
    "bloque": "b50",
@@ -729,7 +759,7 @@
    "anterior": "4.092.251",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "b) oneri sociali"
+   "detalla_a": "Totale costi per il personale"
   },
   {
    "bloque": "b50",
@@ -739,7 +769,7 @@
    "anterior": "865.627",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "c) trattamento di fine rapporto"
+   "detalla_a": "Totale costi per il personale"
   },
   {
    "bloque": "b50",
@@ -759,7 +789,7 @@
    "anterior": "34.306.505",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "a) ammortamento delle immobilizzazioni immateriali"
+   "detalla_a": "Totale ammortamenti e svalutazioni"
   },
   {
    "bloque": "b52",
@@ -769,7 +799,7 @@
    "anterior": "903.215",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "b) ammortamento delle immobilizzazioni materiali"
+   "detalla_a": "Totale ammortamenti e svalutazioni"
   },
   {
    "bloque": "b52",
@@ -779,7 +809,7 @@
    "anterior": "97.591",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "c) altre svalutazioni delle immobilizzazioni"
+   "detalla_a": "Totale ammortamenti e svalutazioni"
   },
   {
    "bloque": "b52",
@@ -789,7 +819,7 @@
    "anterior": "390.589",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide"
+   "detalla_a": "Totale ammortamenti e svalutazioni"
   },
   {
    "bloque": "b52",
@@ -887,39 +917,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga el impuesto de L570 como ingreso (961.793 positivo, ya que el resultado mejora de (64.376.270) a (63.414.477)) pese a que L571 lo imprime entre paréntesis?",
+   "pregunta": "¿Se carga el impuesto como ingreso de 961.793 (L570 positivo, L571 entre paréntesis) dado que el resultado L572 mejora respecto del antes de impuestos?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Totale delle imposte sul reddito dell'esercizio, correnti, differite e anticipate",
-   "texto": "L570 muestra 961.793 y L571 (961.793), signos contradictorios; el resultado L572 implica un ingreso fiscal.",
+   "texto": "L570 imprime 961.793 y L571 (961.793); el resultado (63.414.477) vs (64.376.270) indica un provento fiscal.",
    "bloques": [
     "b12"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera del análisis la diferencia de 1 euro entre el total de b53 (L1677, 7.120.797) y el estado (L555, 7.120.798)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "14) oneri diversi di gestione",
-   "texto": "Diferencia de 1 unidad atribuible a redondeo (L1677 vs L555).",
-   "bloques": [
-    "b53",
-    "b12"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se dejan como están las columnas de variación de 2023 en b46 (L1533-L1534), que no cuadran con los importes impresos?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Contributi in conto esercizio",
-   "texto": "Las variaciones de L1533 y L1534 no coinciden con la resta de columnas, pero los importes de 2024 y 2023 cuadran con el total L1535; no se carga la variación.",
-   "bloques": [
-    "b46"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado individual en euro (unidades). b51 y b52 son la misma tabla partida en dos páginas, igual que b47 y b48. Los renglones de b44 repiten los del estado y no se extrajeron como desglose (sólo totales del valor de producción); se omitieron por ser duplicado exacto del estado. Las notas desglosan '1) ricavi...' (b45) y 'altri' de altri ricavi e proventi (b46)."
+ "observaciones": "Televisión = 'Proventi da cessione diritti audiovisivi' (L1530, 16.649.069). Las notas de servicios (b47-b48) y amortizaciones (b51-b52) son tablas partidas en dos páginas. b53 total 7.120.797 vs estado 7.120.798: redondeo. En b46 la columna Variazione tiene valores incoherentes (L1533-L1534) pero no se carga."
 }

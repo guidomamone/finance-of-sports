@@ -3,7 +3,8 @@
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
  "mdSha1": "5e41c11766c0e996b758152ba88d383bc065759d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-07T23:46:34.544Z",
+ "generado": "2026-10-08T03:43:04.126Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 3,
@@ -527,7 +528,7 @@
   "b52"
  ],
  "escala": "unidades",
- "escala_evidencia": "El stato patrimoniale muestra 'I Capitale 5.000.000' y el rendiconto dice 'unità di euro'; el conto economico b17 se presume en euros unitarios",
+ "escala_evidencia": "Lo indica el encabezado del estado patrimonial y del conto economico (b14: 'I Capitale 5.000.000'), y el rendiconto finanziario (b18) dice 'unità di euro'.",
  "moneda": "EUR",
  "columna_ejercicio": "31 dicembre 2021",
  "columna_anterior": "31 dicembre 2020",
@@ -535,28 +536,30 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El conto economico b17 está expresado en unidades de euro (no en miles)?",
+   "pregunta": "¿Se cargan las notas b40, b41, b44 y siguientes en miles de euro (Euro/000) aunque el conto economico b17 esté en unidades de euro?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "b17 no indica escala arriba; el balance (b14) está en euros y las notas en Euro/000.",
+   "texto": "Las notas están en Euro/000 y el estado en unidades: hay que multiplicar por 1000 al cargarlas.",
    "bloques": [
     "b17",
-    "b14"
+    "b41",
+    "b40",
+    "b44"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera el conto economico riclassificato de la relazione sulla gestione (b7) porque repite el estado oficial b17?",
+   "pregunta": "¿Se deja afuera el conto economico riclassificato de la relazione sulla gestione (b7, pág. 6)?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b7 es una reclasificación en Euro/000 del mismo ejercicio.",
+   "renglon": "Proventi da cessione diritti televisivi collettivi",
+   "texto": "b7 repite en miles los importes del estado; los derechos de TV (47.393) ya están en la nota b41.",
    "bloques": [
     "b7"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Bilancio d'esercizio individual de U.S. Sassuolo Calcio S.r.l.; no hay consolidado. Se excluyen cuadros por jugador (plusvalenze b42/b43, minusvalenze b51, prestiti b50), partes relacionadas y el resumen de Mapei (b55)."
+ "observaciones": "Estado individual de U.S. Sassuolo Calcio S.r.l. (no hay consolidado). Televisión: 'Proventi da cessione diritti televisivi' 47.393 miles en b41, que desglosa 'Altri ricavi e proventi'. b40 desglosa 'Ricavi da gare'. b42/b43/b51/b50 son detalle por jugador y quedan excluidos. b55 es el conto economico de Mapei (controlante) y también queda excluido."
 }

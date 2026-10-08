@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
- "generado": "2026-10-08T02:56:51.497Z",
+ "generado": "2026-10-08T03:51:02.960Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"1) ricavi delle vendite e delle prestazi\" -> lump_football_operations 0.35"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -18,13 +18,13 @@
   "revenueLines": [
    {
     "rawLabel": "1) ricavi delle vendite e delle prestazioni",
-    "normalizedCategory": "lump_football_operations",
+    "normalizedCategory": "matchday_competition",
     "amountNative": 6.680033,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.35,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "altri",
@@ -197,14 +197,6 @@
      "value": null
     }
    ],
-   "sinDesglose": [
-    {
-     "renglon": "1) ricavi delle vendite e delle prestazioni",
-     "lado": "revenue",
-     "importe": 6.680033,
-     "motivo": "el documento no desglosa este renglón"
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 125.567248,
@@ -257,12 +249,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 6.680033,
-   "cat": "lump_football_operations",
-   "conf": 0.35,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "precedente: '1) ricavi delle vendite e delle prestazioni' = ricavi da gare y abbonamenti (Bologna 2019-20 a 2021-22, caso 1457e5e); la nota lo desglosa así",
    "destino": "revenue",
    "amountNative": 6.680033
   },
@@ -523,6 +515,12 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
   }
  ],
  "signos": {

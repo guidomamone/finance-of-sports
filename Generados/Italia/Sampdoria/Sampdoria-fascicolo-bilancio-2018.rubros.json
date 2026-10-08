@@ -2,8 +2,8 @@
   "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
   "pdf": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf",
   "club": "sampdoria-it",
-  "year": 2019,
-  "generatedAt": "2026-10-08T03:20:55.965Z",
+  "year": 2018,
+  "generatedAt": "2026-10-08T03:48:59.183Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.209
       ],
-      "glosa": "Taquilla de partidos de Liga"
+      "glosa": "Partidos de liga"
     },
     {
       "label": "Gare Coppa Italia",
@@ -24,7 +24,7 @@
       "values": [
         0.047
       ],
-      "glosa": "Taquilla de partidos de Copa de Italia"
+      "glosa": "Partidos de Copa de Italia"
     },
     {
       "label": "Abbonamenti",
@@ -47,34 +47,104 @@
       "glosa": "Trabajos realizados por la empresa para su activo y capitalización de costes de cantera"
     },
     {
-      "label": "a) Altri",
+      "label": "Proventi da sponsorizzazioni",
       "lado": "revenue",
-      "page": 26,
-      "section": "estado",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        79.97797
+        3.215
       ],
-      "glosa": "a) Otros"
+      "glosa": "Ingresos por patrocinios"
     },
     {
-      "label": "1a) plusvalenze",
+      "label": "Proventi pubblicitari e concessioni varie",
       "lado": "revenue",
-      "page": 26,
-      "section": "estado",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        55.528147
+        3.964
       ],
-      "glosa": "1a) Plusvalías"
+      "glosa": "Ingresos publicitarios y concesiones diversas"
     },
     {
-      "label": "b) Contributi in conto esercizio",
+      "label": "Proventi da cessione diritti televisivi",
       "lado": "revenue",
-      "page": 26,
-      "section": "estado",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
       "values": [
-        0
+        47.462
       ],
-      "glosa": "b) Subvenciones a la explotación"
+      "glosa": "Ingresos por cesión de derechos audiovisuales"
+    },
+    {
+      "label": "Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        55.528
+      ],
+      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Proventi da cessioni temporanee calciatori",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        2.595
+      ],
+      "glosa": "Ingresos por cesión temporal de futbolistas"
+    },
+    {
+      "label": "Altri proventi da gestione calciatori",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        16.915
+      ],
+      "glosa": "Otros ingresos por gestión de futbolistas"
+    },
+    {
+      "label": "Contributi federali",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        3.733
+      ],
+      "glosa": "Subvenciones federativas"
+    },
+    {
+      "label": "Altri ricavi e proventi",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        0.281
+      ],
+      "glosa": "Otros ingresos y rendimientos de explotación"
+    },
+    {
+      "label": "Proventi da contratto Rai – Library Sampdoria",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        0.23
+      ],
+      "glosa": "Ingresos por contrato Rai – Archivo Sampdoria"
+    },
+    {
+      "label": "Sopravvenienze attive",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Altri ricavi e proventi:\" (escalón: la nota del subtotal)",
+      "values": [
+        1.583
+      ],
+      "glosa": "Ingresos extraordinarios"
     },
     {
       "label": "Materiale di consumo",
@@ -94,7 +164,7 @@
       "values": [
         1.061
       ],
-      "glosa": "Equipaciones de juego"
+      "glosa": "Ropa de juego"
     },
     {
       "label": "Indumenti",
@@ -144,7 +214,7 @@
       "values": [
         1.066
       ],
-      "glosa": "Gastos de personal federado"
+      "glosa": "Gastos por jugadores inscritos"
     },
     {
       "label": "Costi per attività sportiva",
@@ -174,7 +244,7 @@
       "values": [
         11.579
       ],
-      "glosa": "Honorarios de agentes e intermediarios"
+      "glosa": "Comisiones a agentes e intermediarios"
     },
     {
       "label": "Costi vitto, alloggio, locomozione gare",
@@ -184,7 +254,7 @@
       "values": [
         0.831
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos de partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -194,7 +264,7 @@
       "values": [
         1.015
       ],
-      "glosa": "Gastos de seguros y previsión social"
+      "glosa": "Seguros y previsión social"
     },
     {
       "label": "Amministrative, pubblicitarie e generali",
@@ -224,7 +294,7 @@
       "values": [
         1.286
       ],
-      "glosa": "Costes de campos e instalaciones deportivas"
+      "glosa": "Gastos de instalaciones deportivas"
     },
     {
       "label": "Noleggio autovetture",
@@ -244,7 +314,7 @@
       "values": [
         0.161
       ],
-      "glosa": "Arrendamiento de oficinas y otros locales"
+      "glosa": "Arrendamientos de oficinas y otros locales"
     },
     {
       "label": "Noleggi",
@@ -254,7 +324,7 @@
       "values": [
         0.14
       ],
-      "glosa": "Arrendamientos operativos y alquileres"
+      "glosa": "Alquileres y renting"
     },
     {
       "label": "Concessione utilizzo marchio",
@@ -264,7 +334,7 @@
       "values": [
         3
       ],
-      "glosa": "Canon por concesión de uso de marca"
+      "glosa": "Concesión de uso de marca"
     },
     {
       "label": "a) Salari e stipendi",
@@ -294,7 +364,7 @@
       "values": [
         0.593002
       ],
-      "glosa": "c) Indemnización por cese de relación laboral"
+      "glosa": "c) Indemnización por fin de contrato y cese"
     },
     {
       "label": "d) altri costi",
@@ -334,7 +404,7 @@
       "values": [
         0
       ],
-      "glosa": "c) Otros deterioros del inmovilizado"
+      "glosa": "c) Otras pérdidas por deterioro del inmovilizado"
     },
     {
       "label": "d) Svalutazioni crediti dell'attivo",
@@ -344,7 +414,7 @@
       "values": [
         1.163971
       ],
-      "glosa": "d) Correcciones valorativas por deterioro de créditos del activo"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo"
     },
     {
       "label": "Accantonamenti per rischi",
@@ -354,7 +424,7 @@
       "values": [
         0.755298
       ],
-      "glosa": "Dotaciones para provisiones por riesgos"
+      "glosa": "Provisiones para riesgos y gastos"
     },
     {
       "label": "Spese varie organizzazione gare",
@@ -374,7 +444,7 @@
       "values": [
         0.002
       ],
-      "glosa": "Tasas de inscripción en competiciones"
+      "glosa": "Cuotas de inscripción en competiciones"
     },
     {
       "label": "Percentuale su incassi gare a squadre ospitate",
@@ -384,7 +454,7 @@
       "values": [
         0.021
       ],
-      "glosa": "Porcentaje sobre recaudación de partidos a equipos visitantes"
+      "glosa": "Porcentaje sobre recaudaciones de partidos a equipos visitantes"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -394,7 +464,7 @@
       "values": [
         2.775
       ],
-      "glosa": "Costes por cesión temporal de derechos de futbolistas"
+      "glosa": "Gastos por adquisición temporal de derechos federativos de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -404,7 +474,7 @@
       "values": [
         0.494
       ],
-      "glosa": "Pérdidas por enajenación de derechos federativos plurianuales de futbolistas"
+      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "Premi Preparazione ex art. 96 NOIF",
@@ -414,7 +484,7 @@
       "values": [
         0.169
       ],
-      "glosa": "Primas de preparación según el art. 96 NOIF"
+      "glosa": "Primas de formación conforme al art. 96 NOIF"
     },
     {
       "label": "Contributo Solidarietà Fifa/Indennita' Formazione",
@@ -424,7 +494,7 @@
       "values": [
         0.065
       ],
-      "glosa": "Mecanismo de solidaridad FIFA / Indemnización por formación"
+      "glosa": "Contribución de solidaridad FIFA / Indemnización por formación"
     },
     {
       "label": "Premi Valorizzazione",
@@ -434,7 +504,7 @@
       "values": [
         0.447
       ],
-      "glosa": "Primas por valorización de futbolistas"
+      "glosa": "Primas por valorización"
     },
     {
       "label": "Oneri diversi da gestione calciatori",
@@ -444,7 +514,7 @@
       "values": [
         1.183
       ],
-      "glosa": "Otros gastos derivados de la gestión de futbolistas"
+      "glosa": "Otros gastos de gestión de futbolistas"
     },
     {
       "label": "Spese, ammende e multe gare",
@@ -454,7 +524,7 @@
       "values": [
         0.04
       ],
-      "glosa": "Gastos, multas y sanciones disciplinarias de partidos"
+      "glosa": "Gastos, sanciones y multas de competición"
     },
     {
       "label": "Oneri tributari indiretti",
@@ -484,7 +554,7 @@
       "values": [
         0.172
       ],
-      "glosa": "Pérdidas extraordinarias y de ejercicios anteriores"
+      "glosa": "Gastos extraordinarios"
     }
   ]
 }
