@@ -311,3 +311,14 @@ SIN DECISIÓN DE GUIDO, POR PRECEDENTE (Versión 517, to-do 140(i)): si el año 
 borra y las recalcula; nunca se editan a mano. Para corregir una, un ajuste `cero-real` (el 0 es real) o `incluye` (dónde está), y correr
 la tool otra vez.
 
+GESTIÓN DE JUGADORES NETA DE ROMA (Versión 610, to-do 182, decisión de Guido del 2026-10-08). En Roma 2007, 2009, 2012 y 2013 a 2017 la compraventa de jugadores sale neta en el estado
+("Gestione operativa netta calciatori", 4.428 en 2007, 9.060 en 2012) y se carga neta como un ingreso si es positiva (ajuste `fila`, lado ingreso, la línea de esa fila; no la nota con el bruto).
+Desde 2018 el estado IFRS la trae bruta ("Ricavi da gestione dei diritti pluriennali" en ingresos) y se carga bruta. Los ingresos de los dos regímenes no son comparables: el chequeo del año
+vecino los marca "otro régimen" ("no se puede comparar"), no como error. Con el neto, el ingreso de Roma 2007 (162.017 sin las existencias) coincide con la columna 2007 del documento de 2008.
+Sus totales impresos de ingresos y gastos excluyen amortizaciones y provisiones que se imprimen debajo, así que "total de ingresos" y "total de gastos" quedan en rojo aunque el resultado
+cierre: se aceptan por la cola, como Roma 2018. El nombre de la tabla de página pública (nota pública que lo avise) sigue pendiente si Guido la quiere.
+
+UN COMPARATIVO REEXPRESADO NO ES LA TRANSCRIPCIÓN DEL AÑO (Versión 610, Salernitana 2022, decisión de Guido). Si el PDF de un año es un escaneo ilegible, el año se puede cargar con las filas de
+primer nivel de la columna de ese año en el documento del año siguiente, sin sub-filas, si cierra con el resultado impreso. Hay que dejar escrito en `.filas.json` (`observaciones`) de dónde sale, y en
+`Admin/dudas-por-club.md` la pregunta al club por una copia legible. El comparativo puede estar reclasificado entre rubros de costos (Salernitana: servicios externos y otros gastos, misma suma).
+

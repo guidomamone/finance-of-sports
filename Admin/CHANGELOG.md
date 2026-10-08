@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 610 — To-do 179 grupo 1: 12 documentos de Italia cerrados, 3 clubes nuevos y 2 escalones nuevos (2026-10-08)
+
+- Ajustes manuales `fila` y `confirmado` que cierran el resultado de Bologna 2024 y 2025, Genoa 2023 (71 `confirmado`), Roma 2007 y 2012 (gestión neta), Lazio 2005, 2011, 2014 y 2016; Lazio 2021 con
+  `estado-desde-md.mjs`; Salernitana 2022 con las filas de primer nivel del comparativo de 2023. Lazio 2021: `cero-real` en "Estadio" (estadios cerrados por el covid).
+- Cargados: Lazio 2005, 2011, 2014 y 2021; Genoa 2023; Inter 2023 y 2024; Bologna 2024 y 2025 (individual, único estado publicado); Chievo Verona 2014 y 2016, Salernitana 2022 y Juve Stabia 2024
+  con el alta del club (nombres legales corregidos por la revisión de un Sonnet; colores `#FFD200`, `#701D2F`, `#FFD200`; gestiones de Chievo y Salernitana; liga nueva `it-seriec`, Serie C).
+- `tools/verificar.mjs`: el encabezado de la sección D se reconoce con la "D)" y el título en celdas separadas y con "E) Proventi e oneri straordinari"; un "21) oneri" resta (cierran Chievo 2014 a 2016
+  e Inter 2023 y 2024; medido en 177 documentos de Italia).
+- `tools/validar-bloques.mjs`: una página de un PDF digital con menos del 25% de los números de sus bloques en su texto va a la segunda lectura (caso Genoa 2023, pág. 13).
+- Reglas nuevas en `Admin/CONVENCIONES-DATOS.md` (gestión neta de Roma, comparativo reexpresado). To-do 182 resuelto. Puntos nuevos: 187 (doble conteo del total y financiero vacío) y 188 (costos
+  financieros del Codice Civile).
+- Cola respondida por precedente del club cuando había: categorías de Lazio, Salernitana y Juve Stabia; perfiles de Chievo, Salernitana y Juve Stabia (sin socios ni otros deportes).
+
 ## Versión 609 — Cierre de sesión: tablas de arranque y pendientes de Italia (2026-10-08)
 
 - `tools/tablas-sesion.mjs` (nuevo, gratis): `--italia` muestra cada club de fútbol de Italia con sus ejercicios cargados y, de lo que falta, en qué etapa del pipeline está cada documento y por qué;
