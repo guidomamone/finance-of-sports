@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
  "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md",
- "generado": "2026-10-08T18:56:45.705Z",
- "estado": "cola",
+ "generado": "2026-10-08T22:25:10.096Z",
+ "estado": "ok",
  "clubId": "genoa-it",
  "year": 2023,
  "escala": {
@@ -11,28 +11,37 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "44860dc",
-  "f318347",
-  "8444e13",
-  "b669ab4",
-  "04d06ab",
-  "1a8e3db",
-  "f180428",
-  "4fec11f",
-  "685b280",
-  "7e7bc76",
-  "2c41990",
-  "447f35f",
-  "603b773",
-  "295b4fc",
-  "1300f07",
-  "34f0f9f",
-  "75ef55b",
-  "5d22653",
-  "734e996"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "fila",
+   "valor": "(10.323.759)",
+   "linea": 393,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 393,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) altri se imprime en positivo y se resta por posición; el script lo sumaba. C impreso (9.579.460)",
+   "evidencia": ".md L393, L396",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf",
+   "campo": "fila",
+   "valor": "(12.799)",
+   "linea": 402,
+   "etiqueta": "proventi da adesione consolidato fiscale (resta del impuesto)",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "reemplazaLinea": 402,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): es un provento: reduce el total de impuestos, que el documento imprime (2.712.602) en L403; sumaba al revés",
+   "evidencia": ".md L402, L403",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,8 +55,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 116.983486 - gastos 142.658392 ± financiero 11.068058 ± impuesto -2.687004 no da el impreso -32.541764"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "año anterior cargado",
@@ -62,8 +71,27 @@
  ],
  "notas": [
   "la nota de \"c) altre svalutazioni delle immobilizzazioni\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (10.323.759), en lugar de la fila de L393 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) altri se imprime en positivo y se resta por posición; el script lo sumaba. C impreso (9.579.460))",
+  "ajuste manual: fila \"proventi da adesione consolidato fiscale (resta del impuesto)\" (impuesto) (12.799), en lugar de la fila de L402 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): es un provento: reduce el total de impuestos, que el documento imprime (2.712.602) en L403; sumaba al revés)",
+  "línea 358: 4.730.058 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 363: 1.015.716 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 365: 3.785.918 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 367: 60.082.004 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 368: 3.734.692 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 369: 554.082 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 375: 304.581 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 383: 11.352 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 385: 47.250 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 388: 186.305 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 389: 502.708 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 395: 3.316 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 399: 1.559.129 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 400: 1.051.785 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 401: 5.310.717 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los cuadros b11-b14 (págs. 18-21), que parecen un esquema de bilancio en formato FIGC/NOIF con estado patrimonial y conto economico detallado?",
   "duda de extraer que no afecta la carga: El total L403 (2.712.602) es negativo y reduce la pérdida de L397 a L404, pero 'proventi da consolidato' figura positivo en b8 (L402) y negativo en b63 (L3737).",
-  "duda de extraer que no afecta la carga: b47 desglosa todo 'Totale altri ricavi e proventi' (L360); las filas distintas de contributi suman 106.232.032 = 'altri' L359."
+  "duda de extraer que no afecta la carga: b47 desglosa todo 'Totale altri ricavi e proventi' (L360); las filas distintas de contributi suman 106.232.032 = 'altri' L359.",
+  "18 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -71,12 +99,12 @@
  "totales": {
   "ingresos": 116.983486,
   "gastos": 142.658392,
-  "financiero": 11.068058,
-  "impuesto": -2.687004,
+  "financiero": -9.57946,
+  "impuesto": -2.712602,
   "resultadoImpreso": -32.541764,
   "resultadoParaCargar": -32.541764,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -434,7 +462,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -463,36 +491,98 @@
    "linea": 389
   },
   {
-   "etiqueta": "altri",
-   "M": 10.323759,
-   "linea": 393
-  },
-  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": -0.003316,
    "linea": 395
+  },
+  {
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -10.323759,
+   "linea": 393
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 1.559129,
+   "M": -1.559129,
    "linea": 399
   },
   {
    "etiqueta": "imposte relative a esercizi precedenti",
-   "M": 1.051785,
+   "M": -1.051785,
    "linea": 400
   },
   {
    "etiqueta": "imposte differite e anticipate",
-   "M": -5.310717,
+   "M": 5.310717,
    "linea": 401
   },
   {
-   "etiqueta": "proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale",
+   "etiqueta": "proventi da adesione consolidato fiscale (resta del impuesto)",
    "M": 0.012799,
    "linea": 402
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 358,
+   "numero": "4.730.058"
+  },
+  {
+   "linea": 363,
+   "numero": "1.015.716"
+  },
+  {
+   "linea": 365,
+   "numero": "3.785.918"
+  },
+  {
+   "linea": 367,
+   "numero": "60.082.004"
+  },
+  {
+   "linea": 368,
+   "numero": "3.734.692"
+  },
+  {
+   "linea": 369,
+   "numero": "554.082"
+  },
+  {
+   "linea": 375,
+   "numero": "304.581"
+  },
+  {
+   "linea": 383,
+   "numero": "11.352"
+  },
+  {
+   "linea": 385,
+   "numero": "47.250"
+  },
+  {
+   "linea": 388,
+   "numero": "186.305"
+  },
+  {
+   "linea": 389,
+   "numero": "502.708"
+  },
+  {
+   "linea": 395,
+   "numero": "3.316"
+  },
+  {
+   "linea": 399,
+   "numero": "1.559.129"
+  },
+  {
+   "linea": 400,
+   "numero": "1.051.785"
+  },
+  {
+   "linea": 401,
+   "numero": "5.310.717"
   }
  ]
 }

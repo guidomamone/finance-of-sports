@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md",
- "generado": "2026-10-08T18:56:45.096Z",
+ "generado": "2026-10-08T22:25:09.734Z",
  "estado": "cola",
  "clubId": "bologna-it",
  "year": 2024,
@@ -11,9 +11,37 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf",
+   "campo": "fila",
+   "valor": "(6.450.122)",
+   "linea": 1273,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 1273,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba (mismo caso que Bologna 2019-20, 2020-21 y 2025)",
+   "evidencia": ".md L1273, L1276 Totale C (857.900)",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf",
+   "campo": "fila",
+   "valor": "(259.314)",
+   "linea": 1279,
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 1279,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): rettifiche D 19) a) svalutazioni di partecipazioni impreso en positivo y restado",
+   "evidencia": ".md L1279",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "3a08400",
   "574c2f1"
  ],
  "chequeos": [
@@ -29,8 +57,13 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 127.803452 - gastos 134.759056 ± financiero 12.301658 ± impuesto 2.335748 no da el impreso -10.408567"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 117.310811; el sitio tiene 117.323312"
   },
   {
    "nombre": "documento del año 2025",
@@ -41,17 +74,15 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 117.323312 en Bologna-bilancio-consolidato-2022-23.pdf y 117.310811 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"h) altri proventi da trasferimento diritti calciatori\" no suma el renglón (14.34443 contra 7.172215, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (6.450.122), en lugar de la fila de L1273 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba (mismo caso que Bologna 2019-20, 2020-21 y 2025))",
+  "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (259.314), en lugar de la fila de L1279 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): rettifiche D 19) a) svalutazioni di partecipazioni impreso en positivo y restado)",
   "duda de localizar que no afecta la carga: b10 y b9 son reclasificaciones de la memoria que repiten importes del Conto Economico.",
-  "duda de extraer que no afecta la carga: La nota separa 54.000 de 'Proventi vari' que en el estado parece incluido en diritti audiovisivi para 2023 (L1207 vs L2851-L2852); solo afecta el año anterior."
+  "duda de extraer que no afecta la carga: La nota separa 54.000 de 'Proventi vari' que en el estado parece incluido en diritti audiovisivi para 2023 (L1207 vs L2851-L2852); solo afecta el año anterior.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -71,12 +102,12 @@
  "totales": {
   "ingresos": 127.803452,
   "gastos": 134.759056,
-  "financiero": 12.301658,
+  "financiero": -1.117214,
   "impuesto": 2.335748,
   "resultadoImpreso": -10.408567,
   "resultadoParaCargar": -10.408567,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -378,7 +409,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -397,30 +428,30 @@
    "linea": 1258
   },
   {
-   "etiqueta": "altri",
-   "M": 6.450122,
-   "linea": 1273
-  },
-  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": 0.022806,
    "linea": 1275
   },
   {
-   "etiqueta": "a) di partecipazioni",
-   "M": 0.259314,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -6.450122,
+   "linea": 1273
+  },
+  {
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "M": -0.259314,
    "linea": 1279
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 2.372575,
+   "M": -2.372575,
    "linea": 1284
   },
   {
    "etiqueta": "imposte relative a esercizi precedenti",
-   "M": -0.036827,
+   "M": 0.036827,
    "linea": 1285
   },
   {

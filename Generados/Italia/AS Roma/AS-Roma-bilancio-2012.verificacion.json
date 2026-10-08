@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.md",
- "generado": "2026-10-08T19:48:07.229Z",
+ "generado": "2026-10-08T22:25:47.759Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2012,
@@ -11,10 +11,38 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.pdf",
+   "campo": "fila",
+   "valor": "(221)",
+   "linea": 2669,
+   "etiqueta": "Risultato di terzi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado (58.253) y el resultado del Gruppo (58.474): resta; criterio de Roma 2018",
+   "evidencia": ".md L2668-L2670",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.pdf",
+   "campo": "fila",
+   "valor": "9.060",
+   "linea": 2658,
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso, igual que Roma 2009 y 2013 a 2017 (el vecino 2013 usa el mismo régimen)",
+   "evidencia": ".md L2658",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
+  "b30f88c",
+  "4ce4cf9",
   "ba18870",
-  "dd7362d",
   "ea14455",
   "604fe88",
   "ea14455",
@@ -24,8 +52,8 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "115.973 = 115.973"
+   "ok": false,
+   "detalle": "las líneas suman 125.033 y el total impreso dice 115.973"
   },
   {
    "nombre": "total de gastos",
@@ -34,13 +62,13 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 115.973 - gastos 172.731 ± financiero -7.146 ± impuesto -3.409 no da el impreso -58.474"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2013",
-   "ok": true,
-   "detalle": "ingresos de 2012: 115.973 en este documento y 115.973 en AS-Roma-bilancio-2013.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2011",
@@ -54,6 +82,8 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Risultato di terzi\" (financiero) (221) (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado (58.253) y el resultado del Gruppo (58.474): resta; criterio de Roma 2018)",
+  "ajuste manual: fila \"Gestione operativa netta calciatori\" (ingreso) 9.060 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso, igual que Roma 2009 y 2013 a 2017 (el vecino 2013 usa el mismo régimen))",
   "duda de localizar que no afecta la carga: Parece repetir renglones ya abiertos en el estado y sus notas.",
   "duda de localizar que no afecta la carga: Abre la misma cifra que b79 por cliente, no por categoría.",
   "duda de extraer que no afecta la carga: b73 repite exactamente los importes del estado L2643-L2650.",
@@ -63,14 +93,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 115.973,
+  "ingresos": 125.033,
   "gastos": 172.731,
-  "financiero": -7.146,
+  "financiero": -7.367,
   "impuesto": -3.409,
   "resultadoImpreso": -58.474,
   "resultadoParaCargar": -58.474,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -352,6 +382,14 @@
    "pagina": 140,
    "linea": 4582,
    "origen": "nota que desglosa \"e) Altri proventi\""
+  },
+  {
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "M": 9.06,
+   "pagina": 88,
+   "linea": 2658,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Indumenti sportivi e divise ufficiali",
@@ -731,6 +769,11 @@
    "etiqueta": "Oneri/Proventi finanziari netti",
    "M": -7.146,
    "linea": 2663
+  },
+  {
+   "etiqueta": "Risultato di terzi",
+   "M": -0.221,
+   "linea": 2669
   }
  ],
  "impuesto": [

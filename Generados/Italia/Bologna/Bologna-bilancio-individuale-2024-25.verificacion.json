@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
  "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.md",
- "generado": "2026-10-08T18:56:45.177Z",
+ "generado": "2026-10-08T22:10:02.339Z",
  "estado": "cola",
  "clubId": "bologna-it",
  "year": 2025,
@@ -11,19 +11,73 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
+   "campo": "fila",
+   "valor": "8.655.990",
+   "linea": 1075,
+   "etiqueta": "b) abbonamenti",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1075,
+   "motivo": "Claude 2026-10-08 (Guido: Bologna 2025 a mano): error del documento. a) ricavi da gare 8.101.739 + b) abbonamenti 8.665.990 suman 16.767.729 pero el total impreso dice 16.757.729 (10.000 menos); el Totale valore della produzione 224.160.682 y el utile 13.954.040 cierran con el impreso. Se carga abbonamenti 8.655.990 (impreso menos los 10.000 de diferencia): las dos líneas son del mismo rubro, el rubro y el total quedan exactos",
+   "evidencia": "pág. 25 del visor, .md L1074-L1076",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": null,
+   "etiqueta": "Totale ricavi delle vendite e delle prestazioni",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1076,
+   "motivo": "Claude 2026-10-08 (Guido: Bologna 2025 a mano): sale el subtotal de L1076 (16.757.729): ya no es la suma de sus dos renglones por el error de 10.000 del documento y se contaba además de ellos (ver el ajuste de abbonamenti)",
+   "evidencia": "pág. 25 del visor, .md L1076",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
+   "campo": "fila",
+   "valor": "(11.156.522)",
+   "linea": 1138,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 1138,
+   "motivo": "Claude 2026-10-08 (Guido: Bologna 2025 a mano): formato Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba. Mismo caso que Bologna 2019-20 y 2020-21 (to-do 157/158)",
+   "evidencia": ".md L1138 (17 altri 11.156.522), L1152 Totale C (2.964.790)",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf",
+   "campo": "fila",
+   "valor": "(43.130)",
+   "linea": 1155,
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 1155,
+   "motivo": "Claude 2026-10-08 (Guido: Bologna 2025 a mano): rettifiche D 19) a) svalutazioni di partecipazioni 43.130 impreso en positivo y restado (Totale D (43.130), L1157). Del lado financiero como en Bologna 2019-20",
+   "evidencia": ".md L1155, L1157, L1158 risultato prima delle imposte 19.560.066",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
  "cola": [
-  "c12affa",
-  "c3a1851",
   "e6b1529",
-  "48a892a",
   "75a7e0d"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 240.92841 y el total impreso dice 224.160682"
+   "ok": true,
+   "detalle": "224.160681 = 224.160682"
   },
   {
    "nombre": "total de gastos",
@@ -32,8 +86,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 240.92841 - gastos 201.592693 ± financiero 19.391384 ± impuesto 5.606026 no da el impreso 13.95404"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
   },
   {
    "nombre": "documento del año 2024",
@@ -50,8 +104,14 @@
   "la nota de \"h) altri proventi da trasferimento diritti calciatori\" no suma el renglón (13.768922 contra 6.884461, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) salari e stipendi\" no suma el renglón (74.678612 contra 77.930898, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"a) oneri da organizzazione competizioni\" no suma el renglón (2.508495 contra 2.488495, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"b) abbonamenti\" (ingreso) 8.655.990, en lugar de la fila de L1075 (2026-10-08, Claude 2026-10-08 (Guido: Bologna 2025 a mano): error del documento. a) ricavi da gare 8.101.739 + b) abbonamenti 8.665.990 suman 16.767.729 pero el total impreso dice 16.757.729 (10.000 menos); el Totale valore della produzione 224.160.682 y el utile 13.954.040 cierran con el impreso. Se carga abbonamenti 8.655.990 (impreso menos los 10.000 de diferencia): las dos líneas son del mismo rubro, el rubro y el total quedan exactos)",
+  "ajuste manual: sale la fila \"L1076\" (2026-10-08, Claude 2026-10-08 (Guido: Bologna 2025 a mano): sale el subtotal de L1076 (16.757.729): ya no es la suma de sus dos renglones por el error de 10.000 del documento y se contaba además de ellos (ver el ajuste de abbonamenti))",
+  "ajuste manual: fila \"altri oneri finanziari (17, costo)\" (financiero) (11.156.522), en lugar de la fila de L1138 (2026-10-08, Claude 2026-10-08 (Guido: Bologna 2025 a mano): formato Codice Civile: el 17) interessi ed altri oneri finanziari se imprime en positivo y se resta por posición; el script lo sumaba. Mismo caso que Bologna 2019-20 y 2020-21 (to-do 157/158))",
+  "ajuste manual: fila \"svalutazioni di partecipazioni (D 19, costo)\" (financiero) (43.130), en lugar de la fila de L1155 (2026-10-08, Claude 2026-10-08 (Guido: Bologna 2025 a mano): rettifiche D 19) a) svalutazioni di partecipazioni 43.130 impreso en positivo y restado (Totale D (43.130), L1157). Del lado financiero como en Bologna 2019-20)",
   "duda de localizar que no afecta la carga: b12 en pág. 9 de la relazione sulla gestione es una reclasificación del mismo conto economico; se usa el esquema oficial b21-b23.",
-  "duda de extraer que no afecta la carga: La suma de b102-b103 da 8.192.070 pero el total impreso dice 8.192.040; inconsistencia de 30."
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Totale costi per il personale\"): ¿Se deja afuera de la carga el cuadro por categoría Tesserati/Altri dip. del costo del personal (L2787-L2793), ya que sus totales repiten los renglones del estado?",
+  "duda de extraer que no afecta la carga: La suma de b102-b103 da 8.192.070 pero el total impreso dice 8.192.040; inconsistencia de 30.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -89,14 +149,14 @@
   }
  ],
  "totales": {
-  "ingresos": 240.92841,
+  "ingresos": 224.160681,
   "gastos": 201.592693,
-  "financiero": 19.391384,
+  "financiero": -3.00792,
   "impuesto": 5.606026,
   "resultadoImpreso": 13.95404,
   "resultadoParaCargar": 13.95404,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -105,22 +165,6 @@
    "M": 8.101739,
    "pagina": 25,
    "linea": 1074,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) abbonamenti",
-   "lado": "ingreso",
-   "M": 8.66599,
-   "pagina": 25,
-   "linea": 1075,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Totale ricavi delle vendite e delle prestazioni",
-   "lado": "ingreso",
-   "M": 16.757729,
-   "pagina": 25,
-   "linea": 1076,
    "origen": "estado"
   },
   {
@@ -194,6 +238,14 @@
    "pagina": 25,
    "linea": 1088,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "b) abbonamenti",
+   "lado": "ingreso",
+   "M": 8.65599,
+   "pagina": 25,
+   "linea": 1075,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "6) per materie prime, sussidiarie, di consumo e di merci",
@@ -414,7 +466,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -433,30 +485,30 @@
    "linea": 1134
   },
   {
-   "etiqueta": "altri",
-   "M": 11.156522,
-   "linea": 1138
-  },
-  {
    "etiqueta": "17-bis) utili e perdite su cambi",
    "M": -0.000338,
    "linea": 1140
   },
   {
-   "etiqueta": "a) di partecipazioni",
-   "M": 0.04313,
+   "etiqueta": "altri oneri finanziari (17, costo)",
+   "M": -11.156522,
+   "linea": 1138
+  },
+  {
+   "etiqueta": "svalutazioni di partecipazioni (D 19, costo)",
+   "M": -0.04313,
    "linea": 1155
   }
  ],
  "impuesto": [
   {
    "etiqueta": "imposte correnti",
-   "M": 5.668098,
+   "M": -5.668098,
    "linea": 1160
   },
   {
    "etiqueta": "imposte relative a esercizi precedenti",
-   "M": -0.062072,
+   "M": 0.062072,
    "linea": 1161
   }
  ]
