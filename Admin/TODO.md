@@ -189,11 +189,13 @@ ni en el comentario de ningún archivo de código.
     orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
     su padre.
 
-170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). En los estados IFRS de Roma, "Ricavi/Oneri da gestione dei diritti pluriennali"
-    quedan sin lado y se pierden (Roma 2021: L2148 36.125 y L2149 (37.323); ingresos 190.414 vs 226.537 de la columna 2021 del documento
-    2022), y filas posteriores al resultado (EPS L2161, otro resultado integral L2163) se cuelan en la lectura 6. DISEÑO: en la lectura 6,
-    solo las filas "otro" entre el total de costos y "Risultato prima delle imposte"; compuerta: resultado impreso exacto y, si el año
-    vecino imprime ingresos, que coincidan.
+170. GESTIÓN DE JUGADORES BRUTA SIN LADO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (2026-10-08). En los estados IFRS de Roma, "Ricavi/Oneri da
+    gestione dei diritti pluriennali" quedan sin lado y se pierden; Roma 2021 se cargó con 2 ajustes `fila` (L2148 36.125 ingreso, L2149
+    (37.323) gasto): ingresos 226.539, igual a la columna 2021 del documento 2022 (226.537), y resultado a 4 mil EUR del impreso (notas en
+    miles). Filas posteriores al resultado (EPS L2161, otro resultado integral L2163) pueden colarse en la lectura 6. CUÁNDO HACERLO: con otro
+    documento de Roma (u otro IFRS) que frene por esto. DISEÑO (escalón): si ninguna lectura cierra, en la lectura 6 solo las filas "otro"
+    entre el total de costos y "Risultato prima delle imposte"; compuerta: resultado impreso exacto y, si el año vecino imprime ingresos,
+    que coincidan.
 
 171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Un ajuste `fila` de gasto
     con valor impreso negativo (variazione delle rimanenze a favor) solo resta en la lectura 4 (lleva el signo relativo a la mayoría de los
