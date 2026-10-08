@@ -70,3 +70,5 @@ El Firecrawl `/v1/map` de `bolognafc.it` encontró lo que la página oficial no 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2022-23.pdf` (sourceId `bologna-it-bilancio-consolidato-2022-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf` (sourceId `bologna-it-bilancio-individuale-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Bologna/Bologna-bilancio-individuale-2024-25.pdf` (sourceId `bologna-it-bilancio-individuale-2024-25`).
