@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 602 — Parma 2016 cargado (2026-10-08)
+
+- Parma 30.06.2016 (individual, Serie D) cargado tras el lote 43 (reintento, US$ 0,30): el 0 de Televisión es real (el documento no tiene derechos televisivos),
+  ajuste `cero-real`. Ingresos 3.101.681, gastos 4.782.899 y resultado −1.679.126 exacto. Queda abierta en la cola la pregunta de la gestión 2015-16 (el balance
+  no nombra al presidente y Wikipedia tampoco). Dos hallazgos P2 de la auditoría silenciados con la fuente (Parma 2016 es de Serie D; el salto 2018-19 es de Serie B a A).
+
 ## Versión 601 — Escalón "gestión de jugadores neta" (to-do 170) (2026-10-08)
 
 - `verificar.mjs`: si ninguna lectura cerró, de las filas sin lado cuentan solo las que están entre el total de costos y el "resultado antes de impuestos"

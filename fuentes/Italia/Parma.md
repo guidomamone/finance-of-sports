@@ -60,3 +60,5 @@ La página `parmacalcio1913.com/informativa-finanziaria-parma-calcio-1913/` (ví
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2018 desde `Clubes/Italia/Parma/Parma-bilancio-30.06.2018.pdf` (sourceId `parma-it-bilancio-30-06-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Parma/Parma-bilancio-30.06.2019-individual.pdf` (sourceId `parma-it-bilancio-30-06-2019-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2016 desde `Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.pdf` (sourceId `parma-it-bilancio-30-06-2016-individual`).
