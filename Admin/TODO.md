@@ -234,6 +234,9 @@ ni en el comentario de ningún archivo de código.
     primera pasada, si un renglón other_income/lump_* es más del 20% de los ingresos y el índice de bloques tiene una nota cuyas filas suman
     ese renglón, abrirlo con esa nota; compuerta: la suma de las filas = el renglón (tolerancia de redondeo). Medir: los 6 de arriba deben
     abrirse sin reintento; Bologna 2018-19 y Cremonese 2025 (abiertos por reintento) tienen que dar idéntico.
+    - Resultado del reintento (lote 30, 2026-10-08, US$ 1,19): abrió Sassuolo 2021 (TV 47,4 M), Sassuolo 2024 (17,8 M) y Sampdoria 2018
+      (47,7 M), cargados. En Parma NO abrió: 2018 y 2025 siguen con Televisión en 0, y Parma 2024 sale "lista para cargar" con TV en 0 y
+      "altri" 37,0 M entero (82% de los ingresos) — no se cargó. Mirar por qué el escalón no toma la nota de Parma (L1530 / L1168).
     - Como 2024 es otro caso: la televisión está impresa como "-" ("e) proventi da cessione diritti televisivi", .md L496, Serie B
       2023-24); el reintento no va a encontrar nada. Decisión de Guido: ajuste `cero-real` Televisión (el 0 es del documento) o no.
     - Daño en lo ya cargado (para mirar con este to-do): Cremonese 2022 y 2024 (to-do 174) y Parma 2022 ("l) Ricavi e proventi diversi"
