@@ -8,7 +8,7 @@
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -135,6 +135,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"goias-br", revenue:8.397, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2021",
         mix:[["Cuotas Sociales",0.212],["Comercial / Sponsors",0.838],["Estadio",-0.162],["Televisión",4.976],["Premios por competencias",0.143],["Venta de Jugadores",1.51],["Otras secciones deportivas",0.339],["Otros ingresos",0.541]] },
+      { id:"crb-br", revenue:4.197, reportType:"official_balance_sheet",
+        sourceId:"crb-br-balanco-patrimonial-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.197]] },
     ],
   },
   2020: {

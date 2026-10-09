@@ -37,6 +37,11 @@ const crbbrRevenueLinesByYear = {
   2020: [
     { rawLabel:'Receita operacional líquida', normalizedCategory:'lump_football_operations', amountNative:14.902901, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/CRB/balanco-patrimonial-2021.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2021: [
+    { rawLabel:'Receita operacional líquida', normalizedCategory:'lump_football_operations', amountNative:23.41935, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+  ],
 };
 const crbbrExpenseLinesByYear = {
   2020: [ // tools/cargar.mjs (2026-10-09)
@@ -44,6 +49,12 @@ const crbbrExpenseLinesByYear = {
     { rawLabel:'Despesas com pessoal', normalizedCategory:'wages_squad', amountNative:-4.08824, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'Despesas gerais e administrativas', normalizedCategory:'admin_general_expense', amountNative:-6.384108, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.013794, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+  ],
+  2021: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Custo das atividades sociais e esportivas', normalizedCategory:'lump_football_operations_expense', amountNative:-6.628417, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas com pessoal', normalizedCategory:'wages_squad', amountNative:-13.029931, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas gerais e administrativas', normalizedCategory:'admin_general_expense', amountNative:-2.5048, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.0687, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
   ],
 };
 const crbbrFiscalYearMeta = {
@@ -65,6 +76,25 @@ const crbbrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:14.902901, officialTotalExpenses:13.455767, officialPAT:1.219256,
+  },
+  2021: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2021-12-31',
+    sourceId:'crb-br-balanco-patrimonial-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.027842, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:0.050497},
+      {label:'Despesas financeiras', value:-0.022655},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receita operacional líquida', lado:'revenue', importe:23.41935, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:6.628417, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:23.41935, officialTotalExpenses:22.231848, officialPAT:1.215344,
   },
 };
 const crbbrPresupuestoOverlayByYear = {};
@@ -89,6 +119,12 @@ Object.assign(sources, {
     title:'Clube de Regatas Brasil — balanco-patrimonial-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'crb-br-balanco-patrimonial-2021': {
+    id:'crb-br-balanco-patrimonial-2021', clubId:'crb-br',
+    title:'Clube de Regatas Brasil — balanco-patrimonial-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/CRB/balanco-patrimonial-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
