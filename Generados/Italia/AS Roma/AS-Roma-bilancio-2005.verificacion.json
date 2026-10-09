@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
- "generado": "2026-10-09T17:00:14.667Z",
- "estado": "cola",
+ "generado": "2026-10-09T17:03:28.697Z",
+ "estado": "ok",
  "clubId": "asroma-it",
  "year": 2005,
  "escala": {
@@ -65,9 +65,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "9220cf4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -102,7 +100,7 @@
   "ajuste manual: fila \"12) Accantonamento per rischi\" (gasto) 401 (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
   "ajuste manual: fila \"19) Svalutazioni a) di partecipazioni (D, costo)\" (financiero) (547) (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
   "duda de localizar ya contestada para el club (columna, \"Proventi straordinari\"): aceptar, en AS-Roma-bilancio-2005.pdf",
-  "duda de extraer confirmada por las sumas (columna, \"Totale proventi straordinari\"): ¿Se cargan las columnas rotuladas '30.06.04' y '30.06.03' de los cuadros b159 (L5939) y b160 (L5963) como 2005 y 2004 respectivamente?",
+  "duda de extraer ya contestada para el club (columna, \"Totale proventi straordinari\"): aceptar, en AS-Roma-bilancio-2005.pdf",
   "duda de extraer que no afecta la carga: Repiten importes ya presentes en b107 y b108 sin desglose adicional.",
   "duda de extraer que no afecta la carga: Sus totales coinciden con b109; en 2004 separa Premi collettivi 2.511 que el estado incluye en Salari e stipendi (82.887)."
  ],

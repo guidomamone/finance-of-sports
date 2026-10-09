@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.pdf",
  "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.md",
- "generado": "2026-10-09T17:00:14.772Z",
- "estado": "cola",
+ "generado": "2026-10-09T17:03:32.038Z",
+ "estado": "ok",
  "clubId": "sassuolo-it",
  "year": 2018,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [
-  "4531d8c",
-  "3a1ff68",
-  "562fcc7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,8 +53,11 @@
  ],
  "notas": [
   "la nota del subtotal \"5) Altri ricavi e proventi:\" suma el subtotal impreso (104.726319): reemplaza a \"f) Contributi in conto esercizio\" + \"b) plusvalenze\" + \"a) Derivanti da attività accessorie\"",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Sassuolo-bilancio-2018.pdf",
   "duda de localizar que no afecta la carga: Es detalle por jugador, no por categoría.",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"9) Per il personale:\"): corregir no, en Sassuolo-bilancio-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"9) Per il personale:\"): corregir no, en Sassuolo-bilancio-2018.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Proventi Uefa Europa League\"): aceptar, en Sassuolo-bilancio-2018.pdf",
   "duda de extraer que no afecta la carga: b14 no tiene leyenda de escala; las notas en Euro/000 coinciden con sus importes divididos por mil."
  ],
  "reintentar": null,
