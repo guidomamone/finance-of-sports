@@ -1925,5 +1925,5 @@ sin leerlo.
 
 ## Juve Stabia (onboarding de Italia, sesión 2026-10-08, ejercicio 2024 cargado)
 
-- **Gestión resuelta por Guido el 2026-10-09:** Andrea Langella (artículo "2021 - 2026: The Andrea Langella Era", sin URL todavía); cargada en `data/gestiones/it.js` con año solo (día 01).
+- **Gestión resuelta por Guido el 2026-10-09:** Andrea Langella (borsaefinanza.it, 19/4/2024; 2021-2026 por el título de un artículo) y, desde junio de 2026, Alfredo Guerri (dato de Guido, sin URL); cargadas en `data/gestiones/it.js` con año solo (día 01).
   Queda por confirmar la fecha exacta de asunción y de salida, y quién tenía el resto de las cuotas antes de Brera Holdings.
