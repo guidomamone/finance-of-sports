@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 638 — To-do 194: las gestiones de Juventus (2026-10-09)
+
+- `data/gestiones/it.js`: Chiusano (hasta su muerte, 31/7/2003, sitio oficial), Grande Stevens (12/8/2003, UEFA), Cobolli Gigli (asamblea del 29/6/2006, comunicado
+  de IFIL; sin acta encontrada, con `firmo:[2006]` porque su consejo aprobó el balance 2005-06), Blanc (27/10/2009, Sky), Andrea Agnelli (19/5/2010, juventus.com;
+  renunció el 28/11/2022 y siguió hasta el 18/1/2023) y Ferrero (18/1/2023, calciomercato). Verificado en el navegador: 2003 Chiusano, 2004-05 Grande Stevens,
+  2006-09 Cobolli Gigli, 2010-22 Agnelli, 2023-25 Ferrero (Blanc no tiene ningún cierre en su período).
+- `js/finanzas-anios.js`: con más de 4 gestiones, el botón "+N más" ya no dice "+0 más" cuando la selección muestra todas (pasaba en cualquier club con 5 o más).
+  ASSET_V 609.
+
 ## Versión 637 — To-dos 167, 169 y 170 cerrados; ajuste `no-recargar` (2026-10-09)
 
 - Verificados por un Sonnet en una copia: todos sus documentos coinciden con el impreso y una corrida nueva los reproduce, salvo Lazio 2012-13 (167 y 169) y

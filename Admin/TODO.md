@@ -87,8 +87,3 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-194. JUVENTUS SIN GESTIONES (encontrado 2026-10-09 por un Sonnet al recargar en ensayo). `data/gestiones/it.js` no tiene a Juventus: sus 23 ejercicios
-    publicados tienen gestionId null y la fila "Gestión" de Finanzas queda vacía; cada recarga abre en la cola una pregunta "gestion" (no frena). Falta
-    cargar los presidentes con fuente (Grande Stevens, Giraudo/Moggi como directivos no van; Cobolli Gigli, Blanc, Andrea Agnelli, Ferrero...), con el
-    formato y la regla de la cabecera de data/gestiones/ar.js.
-

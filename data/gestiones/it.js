@@ -108,6 +108,26 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Giuseppe Marotta', corto:'Marotta', cargo:'Presidente', desde:'2024-06-04', hasta:null,
       fuente:'https://it.wikipedia.org/wiki/Football_Club_Internazionale_Milano', confirmada:true },
   ],
+  'juventus-it': [
+    // (to-do 194, 2026-10-09) Juventus es una S.p.A. controlada por Exor (sociedad, no persona): la gestión es la del presidente del consejo.
+    // Chiusano: presidente desde 1990 (la fuente da solo el año: 01/01 por convención) hasta su muerte, el 31/7/2003 (sitio oficial). El cierre del 30/6/2003 es suyo.
+    { nombre:'Vittorio Caissotti di Chiusano', corto:'Chiusano', cargo:'Presidente', desde:'1990-01-01', hasta:'2003-07-31',
+      fuente:'https://www.juventus.com/it/news/articoli/in-ricordo-dell-avvocato-chiusano', confirmada:true },
+    // Grande Stevens: elegido por el consejo el 12/8/2003 (UEFA, 12/8/2003).
+    { nombre:'Franzo Grande Stevens', corto:'Grande Stevens', cargo:'Presidente', desde:'2003-08-12', hasta:'2006-06-29',
+      fuente:'https://www.uefa.com/uefachampionsleague/news/025a-0eaadba64f3c-697fede024bb-1000--juventus-appoint-new-president', confirmada:true },
+    // Cobolli Gigli: el consejo que lo hizo presidente lo eligió la asamblea del 29/6/2006 (convocatoria en el comunicado de IFIL del 14/6/2006; no se
+    // encontró el acta). Ese consejo aprobó el balance 2005-06, por eso `firmo:[2006]`. Hasta la asamblea del 27/10/2009, que ratificó a Blanc (Sky, 12/10/2009).
+    { nombre:'Giovanni Cobolli Gigli', corto:'Cobolli Gigli', cargo:'Presidente', desde:'2006-06-29', hasta:'2009-10-27', firmo:[2006],
+      fuente:'https://exor.com/press-releases/2006-06-14/ifil-proposal-stockholder-ifil-juventus-board-directors', confirmada:true },
+    { nombre:'Jean-Claude Blanc', corto:'Blanc', cargo:'Presidente', desde:'2009-10-27', hasta:'2010-05-19',
+      fuente:'https://sport.sky.it/calcio/2009/10/12/juve_blanc_fiducia_in_ferrara', confirmada:true },
+    // Andrea Agnelli: nombrado por el consejo el 19/5/2010; renunció el 28/11/2022 y siguió en el cargo hasta la asamblea del 18/1/2023, que eligió a Ferrero.
+    { nombre:'Andrea Agnelli', corto:'Agnelli', cargo:'Presidente', desde:'2010-05-19', hasta:'2023-01-18',
+      fuente:'https://www.juventus.com/it/news/articoli/andrea-agnelli-e-la-juventus-11-anni-insieme', confirmada:true },
+    { nombre:'Gianluca Ferrero', corto:'Ferrero', cargo:'Presidente', desde:'2023-01-18', hasta:null,
+      fuente:'https://www.calciomercato.com/news/juventus-assemblea-live-il-nuovo-cda-19499', confirmada:true },
+  ],
   'lazio-it': [
     // Cragnotti: dueño de la Lazio entre 1992 y 2003; presidente desde el 12/3/1992 y, en su segundo mandato, de 1998 a 2003 (la fuente da solo los años: 01/01
     // por convención). Los cierres de 1999, 2000 y 2001 caen en ese tramo; el hueco hasta Lotito (2004) es de Ugo Longo y no tiene cierre cargado.

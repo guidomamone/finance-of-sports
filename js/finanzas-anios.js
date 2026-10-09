@@ -214,7 +214,7 @@ const FIN_GESTION = (function(){
     lbl.className = 'fin-years-lbl';
     lbl.textContent = t('finanzas.gest.label', 'Gestión');
     caja.appendChild(lbl);
-    if(gs.length > 4){
+    if(gs.length > 4 && (todas || visibles.length < gs.length)){ // sin "+0 más" cuando la selección ya muestra todas (Juventus con todos los años, 2026-10-09)
       const mas = document.createElement('button');
       mas.type = 'button';
       mas.className = 'fin-years-more';
