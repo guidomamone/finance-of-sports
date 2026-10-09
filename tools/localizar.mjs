@@ -97,6 +97,17 @@ export const PEDIDO_NOTAS_COMO_ESTADO = `REINTENTO SIN ESTADO DE RESULTADOS: en 
 // dónde está impreso el resultado, se le da a la IA el bloque y el valor, y ese bloque se muestra aunque tenga una sola cifra. Caso real:
 // Fortaleza CEIF 2018 y 2019, que quedaron como fuente porque la IA no vio "Resultado Año 2018 (639,077)" (L542) ni "Utilidad Contable
 // (52,122)" (L455).
+// AJUSTE MANUAL `estado` (Versión 614, tools/ajustes.mjs): Guido fijó los bloques del estado de resultados; gana sobre lo que haya elegido la IA (escalón 0), así una corrida
+// con --rehacer no lo deshace. Caso: AS Roma 2005 (la IA tomó b85, la tabla de una controlada en euros; el consolidado es b107-b112).
+export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')) {
+  const ids = String(ajuste?.valor || '').split(/[,\s]+/).filter(Boolean);
+  if (!ids.length) return datos;
+  const antes = (datos.estado || []).join(',');
+  datos.estado = ids; datos.sin_estado = false;
+  if (antes !== ids.join(',')) datos.observaciones = `${datos.observaciones || ''} [ajuste manual \`estado\` (${ajuste.fecha || ''}): los bloques del estado son ${ids.join(',')}; la IA había elegido ${antes || 'ninguno'}. ${ajuste.motivo || ''}]`.trim();
+  return datos;
+}
+
 export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
@@ -119,6 +130,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
   const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  aplicarAjusteEstado(datos, pdf);
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
 }

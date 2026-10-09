@@ -19,6 +19,10 @@
 //                     Con --linea (la del .md donde está impreso), también es la PISTA para localizar (Versión 370): un documento que quedó
 //                     como fuente y tiene este ajuste repite una vez "las notas hacen de estado" con ese dato (lote.mjs --reintentar).
 //                     Casos: Fortaleza 2018 ("Resultado Año 2018 (639,077)", L542) y 2019 ("Utilidad Contable (52,122)", L455).
+//   estado            (Versión 614) valor = los ids de los bloques del estado de resultados de ese documento, separados por coma ("b107,b108,b109"): escalón 0 de tools/localizar.mjs,
+//                     que lo pone en `estado` del .ubicacion.json aunque la IA elija otros (una corrida con --rehacer no lo deshace). Los ids son los del .md actual: si el .md
+//                     cambia, se revisan. Caso: AS Roma 2005, la IA tomó b85 (la tabla de la controlada Roma International Football Service, en euros) y el estado del
+//                     consolidado es b107-b112 (pág. 136-137).
 //   sin-dudas         sin valor: las dudas de localizar/extraer de ese documento quedan como nota y no van a la cola. Caso: Fortaleza
 //                     CEIF 2023 ("que nunca más vuelva como problema o duda").
 //   cero-real         (Versión 381) valor = una categoría del aviso "categorías en 0" ("Estadio", "Televisión", "Salarios del plantel"...):
@@ -68,7 +72,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
+export const CAMPOS = ['estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {
