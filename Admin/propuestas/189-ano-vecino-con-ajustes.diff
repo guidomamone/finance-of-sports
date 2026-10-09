@@ -1,0 +1,127 @@
+--- A0b/tools/verificar.mjs	2026-10-09 13:28:07
++++ V6b/tools/verificar.mjs	2026-10-09 14:00:52
+@@ -192,11 +192,20 @@
+ 
+   // filas con su valor en millones (año actual y anterior). armar() se usa también para el documento vecino (chequeo 4b). `k` es el factor
+   // de la escalera de escala (abajo): multiplica TODO el documento, así que las diferencias entre bloques (1. FC Köln) se conservan.
+-  function armar(F, U, conNotas = false, k = 1) {
++  function armar(F, U, conNotas = false, k = 1, ajAnt = []) {
+   const escalaDe = new Map((F.escalas || []).map((x) => [x.bloque, x.escala]));
+   const mult = (b) => (MULT[escalaDe.get(b)] ?? MULT[U.escala] ?? 1e-6) * k;
+   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
+   const filas = (F.filas || []).map((f) => ({ ...f, pagina: pagDe(f.bloque), M: (parseNumber(f.actual) ?? NaN) * mult(f.bloque), A: f.anterior != null ? (parseNumber(f.anterior) ?? NaN) * mult(f.bloque) : null, u: unidad(f.actual, mult(f.bloque)) }));
++  // (to-do 189) AJUSTE `fila-anterior`: una fila que el documento imprime en la columna del año anterior y la extracción no trajo (Sampdoria 2021, "4) Incrementi"
++  // 1.779.291 en L888, sin importe en 2021; Inter 2020-21, taquilla de 2020 fuera de la tabla). Entra en su lugar del estado, sin importe actual (M = NaN: las
++  // lecturas de la columna actual la saltean), así la columna A se lee con la misma estructura (un total que es suma de los renglones de arriba deja de contarse
++  // además de ellos). SOLO la piden el chequeo del año anterior y el del año vecino: la armar() de las filas que se cargan no recibe `ajAnt`.
++  for (const a of ajAnt) {
++    const bl = F.ubicacion?.estado || []; const i = filas.findLastIndex((f) => bl.includes(f.bloque) && isFinite(f.linea) && a.linea != null && f.linea <= Number(a.linea));
++    const bloque = (i >= 0 ? filas[i] : filas.find((f) => bl.includes(f.bloque)))?.bloque; if (!bloque) continue;
++    filas.splice(i >= 0 ? i + 1 : 0, 0, { etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', actual: null, anterior: a.valor, bloque, linea: a.linea ?? null, detalla_a: null, pagina: pagDe(bloque), M: NaN, A: (parseNumber(a.valor) ?? NaN) * mult(bloque), u: unidad(a.valor, mult(bloque)), origen: 'ajuste manual (año anterior)' });
++  }
+   const estado = filas.filter((f) => !f.detalla_a && (F.ubicacion?.estado || []).includes(f.bloque));
+ 
+   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
+@@ -404,6 +413,24 @@
+   return { filas, estado, lineasDeLado, mult };
+   }
+ 
++  const saleDelAjuste = (a, f) => (a.reemplaza ? String(f.etiqueta).trim() === a.reemplaza.trim() || String(f.origen || '').includes(`desglosa "${a.reemplaza.trim()}"`) : false)
++    || (a.reemplazaLinea != null && (Number(f.linea) === Number(a.reemplazaLinea) || (f.desdeLineas || []).includes(Number(a.reemplazaLinea))));
++  const signoNormalDe = (lado, pdfDoc = pdf) => { const r = ajustesDe(pdfDoc).filter((x) => x.campo === 'fila' && x.lado === lado && isFinite(parseNumber(x.valor)) && parseNumber(x.valor)); return r.filter((x) => parseNumber(x.valor) < 0).length > r.length / 2 ? -1 : 1; };
++  // (to-do 189) El chequeo del año vecino lee las columnas con los ajustes `fila` del documento al que pertenecen (antes, el .filas.json crudo: un ajuste que ya
++  // corrige el año del documento hacía fallar la comparación; Roma 2007 contra 2008). COLUMNA ACTUAL ('M'): reemplazar y agregar, a la escala de ese documento
++  // (A.mult). COLUMNA ANTERIOR ('A'): un ajuste `fila` solo trae la actual, así que acá solo cuentan los que SOLO sacan una fila (valor 0 y reemplaza: una fila repetida
++  // lo está en las dos columnas; uno que la reemplaza por otro importe corrige la actual nada más) y las filas del ajuste `fila-anterior` (entran en armar()).
++  const ajAntDe = (pdfDoc) => ajustesDe(pdfDoc).filter((x) => x.campo === 'fila-anterior' && x.lado === 'ingreso' && isFinite(parseNumber(x.valor)));
++  const ingresosConAjustes = (A, pdfDoc, lineas, campo, firmado = false) => {
++    const m = A.mult(A.estado[0]?.bloque); let out = [...lineas];
++    for (const a of ajustesDe(pdfDoc).filter((x) => x.campo === 'fila' && isFinite(parseNumber(x.valor)))) {
++      const v = parseNumber(a.valor) * m; const saca = a.reemplaza || a.reemplazaLinea != null;
++      if (saca && (campo === 'M' || v === 0)) out = out.filter((f) => !saleDelAjuste(a, f));
++      if (campo !== 'M' || (v === 0 && saca)) continue;
++      if (a.lado === 'ingreso') out.push({ etiqueta: a.etiqueta, lado: 'ingreso', tipo: 'renglon', M: firmado ? v * signoNormalDe(a.lado, pdfDoc) : Math.abs(v), u: unidad(a.valor, m), linea: a.linea ?? null, origen: 'ajuste manual' });
++    }
++    return out;
++  };
+   // EL DOCUMENTO VECINO DEL CLUB (año siguiente dy=1 o anterior dy=-1), si ya pasó por extraer.mjs: lo usan la escalera de escala y el
+   // chequeo 4b. Su factor es el que resolvió SU propia escalera (queda en su .verificacion.json); `anclado` = su escala es conocida (la
+   // declara, escalón 0, o la resolvió por el escalón 1). Uno que dice "no se sabe" y no la resolvió no puede proponerle escala a otro.
+@@ -425,7 +452,7 @@
+     const lect2 = existsSync(pV2) ? Number(((JSON.parse(readFileSync(pV2, 'utf8')).chequeos || []).find((c) => c.nombre === 'lectura')?.detalle?.match(/lectura (\d)/) || [])[1] || 0) : 0;
+     const subRep2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "subtotal repetido"')) : false; // (to-do 175)
+     const ventana2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "gestión de jugadores neta"')) : false; // (to-do 170)
+-    return { otro, U2, k2, lect2, subRep2, ventana2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
++    return { otro, U2, k2, lect2, subRep2, ventana2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2, ajAntDe(otro.pdf)) };
+   };
+   // Los ingresos de un documento leídos con UNA lectura de la escalera (Versión 398): 3 suma los renglones sin lado por su signo (y lee los
+   // subtotales con ellos), 4 además conserva los signos impresos. Lo usa el chequeo del año vecino: hasta la 397 leía los dos documentos con
+@@ -452,8 +479,11 @@
+   const compararVecino = (dy, V2, k, nivelMio = 0, subRepMio = false, ventanaMio = false) => {
+     const [campoMio, campoSuyo] = dy === 1 ? ['M', 'A'] : ['A', 'M'];
+     const sumaDe = (arr, c) => arr.reduce((a, f) => a + (f[c] || 0), 0);
+-    const Amio = armar(F, U, false, k);
+-    const mio = sumaDe(ingresosConLectura(Amio, campoMio, nivelMio, subRepMio, ventanaMio), campoMio); const suyo = sumaDe(ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0, V2.subRep2, V2.ventana2), campoSuyo);
++    const Amio = armar(F, U, false, k, ajAntDe(pdf));
++    // (to-do 189) con los ajustes de cada documento o sin ellos: la columna del vecino casi nunca trae el ajuste (es de la columna actual del otro documento), así que
++    // coincidir CRUDO contra CRUDO sigue valiendo (Juventus 2002-03 a 2005-06: los ajustes suman extraordinarios que la columna anterior del siguiente no tiene).
++    const par = (conAj) => { const f = (A, d, l, c, fi) => (conAj ? ingresosConAjustes(A, d, l, c, fi) : l); return [sumaDe(f(Amio, pdf, ingresosConLectura(Amio, campoMio, nivelMio, subRepMio, ventanaMio), campoMio, nivelMio === 4), campoMio), sumaDe(f(V2.A2, V2.otro.pdf, ingresosConLectura(V2.A2, campoSuyo, V2.lect2 || 0, V2.subRep2, V2.ventana2), campoSuyo, V2.lect2 === 4), campoSuyo)]; };
++    let [mio, suyo] = par(true); if (!(suyo && cerca(mio, suyo, 0.02))) { const [m0, s0] = par(false); if (s0 && cerca(m0, s0, 0.02)) { mio = m0; suyo = s0; } }
+     // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
+     // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
+     // Novorizontino 2014 y 2015, balancetes de una sola columna: se comparaba 0 contra 1.060.016 y mandaba un falso "no coincide" a la cola.
+@@ -564,9 +594,6 @@
+   // imprime los gastos entre paréntesis bajo un estado que los imprime en positivo). En las demás lecturas sigue el valor absoluto. No es una
+   // regla nueva: la escalera de lecturas prueba las dos formas y gana la que cierra. Caso: Goiás 2016, "(-) Deduções das receitas"
+   // (7.401.426,19) entre las partes de la nota 17 (lectura 1: ingresos 97,8 M contra 83,0 M impresos; lectura 4: cierra).
+-  const saleDelAjuste = (a, f) => (a.reemplaza ? String(f.etiqueta).trim() === a.reemplaza.trim() || String(f.origen || '').includes(`desglosa "${a.reemplaza.trim()}"`) : false)
+-    || (a.reemplazaLinea != null && (Number(f.linea) === Number(a.reemplazaLinea) || (f.desdeLineas || []).includes(Number(a.reemplazaLinea))));
+-  const signoNormalDe = (lado) => { const r = ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === lado && isFinite(parseNumber(x.valor)) && parseNumber(x.valor)); return r.filter((x) => parseNumber(x.valor) < 0).length > r.length / 2 ? -1 : 1; };
+   const aplicarAjustesFila = (ingB, gasB, primera, firmado = false) => { for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && isFinite(parseNumber(x.valor)))) {
+     const destino = { ingreso: ingB, gasto: gasB, financiero: primera ? fin : null, impuesto: primera ? imp : null }[a.lado];
+     if (!destino) continue;
+@@ -949,7 +976,8 @@
+     // renglones sin lado entran por su signo (y los subtotales se leen con ellos). Caso: Goiás 2024, la columna 2023 sumaba 89.972.753
+     // (sin "Outras Receitas e Despesas" 140.214.785) y el sitio tiene 230.187.538 (cargado con la lectura 3): falsa alarma.
+     const otrosA = E.nivel >= 3 ? otros.filter((f) => isFinite(f.A) && f.A && (gastosNeg ? f.A > 0 : f.A < 0)).map((f) => ({ ...f, A: Math.abs(f.A) })) : [];
+-    const ingA = E.nivel >= 5 ? ingresosConLectura({ estado, lineasDeLado }, 'A', E.nivel, false, escalonVentanaOtros) : E.nivel >= 3 ? [...lineasDeLado('ingreso', 'A', true, E.nivel >= 4, escalonSubRep && E.nivel === 4), ...otrosA] : lineasDeLado('ingreso', 'A'); const sA = suma(ingA, 'A'); // (Versión 416) la lectura 5 también acá
++    const AA = ajAntDe(pdf).length ? armar(F, U, false, kEsc, ajAntDe(pdf)) : { estado, lineasDeLado, mult };
++    const ingA = E.nivel >= 5 ? ingresosConLectura(AA, 'A', E.nivel, false, escalonVentanaOtros) : E.nivel >= 3 ? [...AA.lineasDeLado('ingreso', 'A', true, E.nivel >= 4, escalonSubRep && E.nivel === 4), ...otrosA] : AA.lineasDeLado('ingreso', 'A'); const sA = suma(ingresosConAjustes(AA, pdf, ingA, 'A'), 'A'); // (Versión 416) la lectura 5 también acá
+     const prodI = (cd.revenueLinesByYear?.[prev] || []).reduce((a, l) => a + l.amountNative, 0);
+     // Una GANANCIA extraordinaria que un ajuste `categoria` sacó de los ingresos del año anterior (exceptional_items en positivo) también
+     // cuenta: el documento la sigue sumando como ingreso. Caso: Goiás 2024 contra 2023 (venta del 20% de la Liga Forte União, 140.214.785).
+--- A0b/tools/ajustes.mjs	2026-10-09 13:28:07
++++ V6b/tools/ajustes.mjs	2026-10-09 14:00:52
+@@ -75,7 +75,7 @@
+ 
+ const ROOT = resolve(import.meta.dirname, '..');
+ const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
+-export const CAMPOS = ['filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
++export const CAMPOS = ['fila-anterior', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
+ export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
+ 
+ function leer() {
+@@ -86,7 +86,7 @@
+ // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
+ export function ajustesDe(pdf) {
+   const m = new Map();
+-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
++  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'fila-anterior' ? `fila-anterior|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
+   return [...m.values()].filter((a) => !a.anulado); // (to-do 163) un registro `anulado` gana sobre el anterior de la misma clave y lo saca
+ }
+ export function ajusteDe(pdf, campo) {
+@@ -161,11 +161,11 @@
+     // el club. Caso: Novorizontino, el préstamo de su controlante I-9 Sports figura como "Débitos com partes relacionadas" / "Partes relacionadas".
+     if (campo === 'deuda-incluye' && !flag('--valor')) { console.error('deuda-incluye necesita --valor "término; término"'); process.exit(1); }
+     if (!['perimetro', 'deuda-incluye', 'name'].includes(campo) && pdf.endsWith('/')) { console.error('solo `perimetro` se fija para la carpeta de un club'); process.exit(1); }
+-    if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
+-    if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
++    if (['resultado-final', 'fila', 'fila-anterior', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
++    if (['fila', 'fila-anterior'].includes(campo) && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
+     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
+     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
+-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
++    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(['fila', 'fila-anterior'].includes(campo) ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
+     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
+     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
+   } else {

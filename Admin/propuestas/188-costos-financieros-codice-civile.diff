@@ -1,0 +1,72 @@
+--- A0b/tools/verificar.mjs	2026-10-09 13:28:07
++++ N4/tools/verificar.mjs	2026-10-09 13:42:43
+@@ -731,11 +731,14 @@
+   // finanziari" sin importe, L189) o lo trae sin el número (Torino 2018, L568). Se reconoce por la numeración del formato o por su nombre fijo
+   // (art. 2425 del Codice Civile; "17) INTEREST AND OTHER FINANCIAL EXPENSES" en los de Juventus en inglés).
+   const RX17 = /(^|\|)\s*(\*\*)?\s*17\s*\)|interessi\s+e(d)?\s+altri\s+oneri\s+finanziari|interest\s+and\s+other\s+financial\s+(expenses|charges)/i;
++  const RX17NOMBRE = /interessi\s+e(d)?\s+altri\s+oneri\s+finanziari|interest\s+and\s+other\s+financial\s+(expenses|charges)/i;
+   const RX17BIS = /17\s*[-\s]?\s*bis|utili\s+e\s+(\()?perdite\)?\s+su\s+cambi|exchange\s+(gains|differences)/i;
+   const lineasMd = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
+   const iniC = finEst.length ? Math.min(...finEst.map((f) => f.linea || Infinity)) : null;
+   let cab17 = null;
+   if (iniC != null && isFinite(iniC)) for (let i = iniC - 1; i < Math.min(lineasMd.length, iniC + 80); i++) if (RX17.test(lineasMd[i] || '')) { cab17 = { linea: i + 1, etiqueta: lineasMd[i].trim().slice(0, 60) }; break; }
++  // (to-do 188) Si el .md no trae el 17) (la tabla llegó sin etiquetas: Torino 2019), vale el nombre fijo del renglón en las filas del financiero.
++  if (!cab17) { const h = finEst.filter((f) => isFinite(f.linea) && RX17NOMBRE.test(String(f.etiqueta))).sort((a, b) => a.linea - b.linea)[0]; if (h) cab17 = { linea: h.linea, etiqueta: String(h.etiqueta).slice(0, 60), deFilas: true }; }
+   if (cab17 && (!E || !E.exacto)) {
+     // fin de la sección C: el primer encabezado de D (rettifiche), del 18), del E) del formato viejo o el resultado antes de impuestos en el
+     // .md; si no hay, la primera fila de otro lado. El total de C es el último subtotal del financiero antes de ese fin (Torino 2018: la D
+@@ -744,9 +747,10 @@
+     const RXDE = /(^|\|)\s*(\*\*)?\s*[DE]\s*\)/; // D) / E) en mayúscula: "d) oneri diversi" es un renglón del 17)
+     let finC = null; for (let i = cab17.linea; i < Math.min(lineasMd.length, cab17.linea + 80); i++) if (RXFINC.test(lineasMd[i] || '') || RXDE.test(lineasMd[i] || '')) { finC = i + 1; break; }
+     const finSeccion = finC ?? estado.find((f) => f.linea > cab17.linea && f.lado !== 'financiero')?.linea;
+-    const totC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => a.linea - b.linea).pop();
+-    let bis = null; if (totC) for (let i = cab17.linea; i < totC.linea - 1; i++) if (RX17BIS.test(lineasMd[i] || '')) { bis = i + 1; break; }
+-    if (totC) {
++    const candTotC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => a.linea - b.linea).reverse(); // el último primero, como siempre; (to-do 188) si su compuerta no cierra, los anteriores (sin etiquetas en el .md no se sabe cuál es el total de C)
++    for (const totC of candTotC) {
++    let bis = null; for (let i = cab17.linea; i < totC.linea - 1; i++) if (RX17BIS.test(lineasMd[i] || '')) { bis = i + 1; break; }
++    {
+       const hasta = bis || totC.linea;
+       let prop = fin5Todos.map((f) => (f.origen !== 'ajuste manual' && f.linea >= cab17.linea && f.linea < hasta ? { ...f, M: -Math.abs(f.M), origen: 'estado (escalón 17) resta)' } : f));
+       const tolC = Math.max(1e-6, 0.5 * [...prop, totC].reduce((a, f) => a + (f.u || 0), 0));
+@@ -754,23 +758,37 @@
+       // las dos en positivo; o el 17-bis metido dentro del total del 17): se prueban las combinaciones de signo de esas filas (hasta 4) y se
+       // usa la ÚNICA que da exacto el total de C impreso. Casos: Napoli 2024 (L287 a) utili 30, L288 b) perdite 4.559, 17bis impreso (4.529));
+       // Atalanta 2019 (L429 "17-bis" 923 dentro de "Totale 17)" 1.027.884). Sin combinación única, como antes.
+-      if (bis && Math.abs(conSigno(prop) - totC.M) > tolC) {
++      const sumaC = () => conSigno(prop.filter((f) => !(f.linea > totC.linea))); // (to-do 188) la compuerta de C mira solo las filas de C
++      if (bis && Math.abs(sumaC() - totC.M) > tolC) {
+         const amb = prop.filter((f) => f.origen !== 'ajuste manual' && f.linea >= bis && f.linea < totC.linea && isFinite(f.M) && f.M);
+         if (amb.length >= 1 && amb.length <= 4) {
+-          const resto = conSigno(prop) - conSigno(amb); const sirven = [];
++          const resto = sumaC() - conSigno(amb); const sirven = [];
+           for (let m = 0; m < 1 << amb.length; m++) { const v = amb.reduce((a, f, i) => a + ((m >> i) & 1 ? -1 : 1) * Math.abs(f.M), 0); if (Math.abs(resto + v - totC.M) <= tolC) sirven.push(m); }
+           if (sirven.length === 1) { const m = sirven[0]; const ids = new Map(amb.map((f, i) => [f, (m >> i) & 1 ? -1 : 1])); prop = prop.map((f) => (ids.has(f) ? { ...f, M: ids.get(f) * Math.abs(f.M), origen: 'estado (escalón 17) resta, 17-bis por las sumas)' } : f)); nota17bis = (`escalón "17) resta": el signo del 17-bis lo eligen las sumas (${amb.map((f) => `L${f.linea} ${ids.get(f) < 0 ? 'resta' : 'suma'}`).join(', ')}): única combinación que da el total de C impreso`); }
+         }
+       }
+-      if (Math.abs(conSigno(prop) - totC.M) <= tolC) {
++      // (to-do 188) La D que la extracción dejó en el FINANCIERO (Bologna 2023-24 y 2024-25: "19) svalutazioni, a) di partecipazioni 259.314" impreso en
++      // positivo y restado por posición: "Totale delle rettifiche (18-19) (259.314)"): después del total de C, el 19) resta y el 18) suma. COMPUERTA, la
++      // misma de C: la suma con ese signo da el total de D impreso (el último subtotal del financiero antes de salir de la sección). Si no cierra, la D queda como estaba.
++      { const dFin = prop.filter((f) => f.origen !== 'ajuste manual' && f.linea > totC.linea && isFinite(f.M) && f.M);
++        const salida = estado.find((f) => f.linea > totC.linea && f.lado !== 'financiero')?.linea;
++        const dTot = dFin.length ? finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > totC.linea && (!salida || f.linea < salida)).sort((a, b) => a.linea - b.linea).pop() : null;
++        if (dTot) {
++          const sg = (f) => { for (let i = f.linea - 1; i > totC.linea; i--) { const t = lineasMd[i - 1] || ''; if (/(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/.test(t)) return 0; if (/(^|\|)\s*(\*\*)?\s*19\s*\)?\s+(svalutaz|write)|svalutazion|write-?downs?|impairment/i.test(t)) return -1; if (/(^|\|)\s*(\*\*)?\s*18\s*\)?\s+(rivalutaz|revaluat)|rivalutazion|revaluation/i.test(t)) return 1; } return 0; };
++          const conD = prop.map((f) => (dFin.includes(f) ? { ...f, M: sg(f) ? sg(f) * Math.abs(f.M) : f.M, origen: 'estado (escalón 17) resta, D por posición)' } : f));
++          if (Math.abs(conSigno(conD.filter((f) => f.origen === 'estado (escalón 17) resta, D por posición)')) - dTot.M) <= Math.max(1e-6, 0.5 * [...dFin, dTot].reduce((a, f) => a + (f.u || 0), 0))) prop = conD;
++        } }
++      if (Math.abs(conSigno(prop) - totC.M) <= tolC || (Math.abs(sumaC() - totC.M) <= tolC && prop.some((f, i) => f.M !== fin5Todos[i].M))) {
+         fin17 = prop;
+         for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+           const e = evaluar(n, false, fin17); if (e.cierra && e.exacto) { E = e; escalon17 = true; escalonSubRep = false; break; }
+           // la escalera completa también acá: después de la 4, la base del escalón "subtotal repetido" (Parma 2018, 2024 y 2025 necesitan los dos)
+           if (n === 4 && hayRepetido) { const er = evaluar(4, false, fin17, { ing: ing4r, gas: gas4r }); if (er.cierra && er.exacto) { E = er; escalon17 = true; escalonSubRep = true; break; } }
+         }
++        break;
+       }
+     }
++    }
+   }
+   // ESCALÓN "sección D" (to-do 166, aprobado por Guido el 2026-10-08). Las rettifiche di valore di attività finanziarie (D del Codice
+   // Civile: 18) rivalutazioni suma, 19) svalutazioni resta) llegan de la extracción sin lado y la lectura 3 las suma como ingreso o gasto
