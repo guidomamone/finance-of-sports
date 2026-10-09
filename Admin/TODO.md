@@ -67,18 +67,6 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-155. ITALIA: EL SIGNO DEL 17) Y DEL 17-BIS. CONOCIDO, SIN DAÑO HOY (escalones 1 y 2 hechos, Versiones 582 y 583). El escalón "17) resta"
-    de verificar.mjs lee el 17) restando por posición y reemplazó los ajustes manuales de 14 documentos (Torino 2018/2021/2024, Udinese
-    2021-22/2024-25, Napoli 2025, Cremonese 2025, Parma 2023, Bologna 2020-21/2021-22, Juventus 2002-03 a 2005-06). Quedan dos que
-    siguen cerrando con sus ajustes (cargados bien):
-    - Napoli 2024: el 17-bis desglosa "b) perdite su cambi" 4.559 impreso en positivo, que resta. El escalón deja el 17-bis con su signo.
-    - Bologna 2019-20: además del 17), la sección D trae "19) svalutazioni di partecipazioni" (1.868.716) en positivo, que resta; el escalón
-      solo mira la sección C.
-    CUÁNDO HACERLO: si aparece un documento sin cargar con ese patrón (17-bis desglosado o la D con importes) y no cierra. Diseño: el mismo
-    escalón extendido (perdite del 17-bis restan; en la D, 18) suma y 19) resta), con la compuerta del total impreso de esa sección.
-    Bologna 2018-19 (sin cargar) ya lee bien: financiero (556.520), el C impreso.
-    COMPROBADO 2026-10-09 (Sonnet): la lista "quedan dos" estaba vieja. Napoli 2024 y Bologna 2019-20 ya no tienen ajuste. Hoy sin su ajuste caen a cola Bologna 2023-24 y 2024-25, Genoa 2023, Torino 2019, Milan 2023-24 y Hellas Verona 2023 (en los cuatro primeros el financiero cambia de signo). Con ajuste solo cambia el detalle en Milan 2017-18 y 2021-22 e Inter 2024-25. Quedarían en "ok" con números mal repartidos (si se quitara el ajuste): Inter 2020-21 (1,973 M de la D pasan al impuesto), Roma 2005 (0,547 M) y Atalanta 2025 (4 mil). El total C impreso coincide con lo publicado en los 83 documentos que se pudieron parsear. Fusionar con 166 y 188; hacerlo si entra un documento con este patrón. Sin daño en datos.
-
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (otra sesión; decisión de Guido, 2026-10-07). `alta-club.mjs` deja 68 clubes sin preguntas
     ("listo-para-alta" en Admin/altas-club.jsonl), ninguno con data/<id>-data.js: Brasil (avai, crb, criciuma, cuiaba, ferroviaria,
     paysandu, remo, vilanova), Colombia (aguilasdoradas, alianzafc, atleticobucaramanga, deportestolima, laequidad), Grecia (aekathens,
@@ -95,14 +83,6 @@ ni en el comentario de ningún archivo de código.
     escribe recién en el commit del primer año. Ojo: el registro está desactualizado (lista como pendientes 16 clubes de Italia que ya tienen alta):
     recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
-
-166. ITALIA: 17) SIN NÚMERO Y LOS QUE QUEDAN CON AJUSTE (verificar.mjs). CONOCIDO, SIN DAÑO HOY. La sección D (Versión 589) y el signo del
-    17-bis (Versión 590, las sumas eligen) ya los lee el script: Inter 2021-22, Bologna 2019-20, Como 2024, Atalanta 2019 y Napoli 2023/2024
-    dejaron sus ajustes (cargas idénticas). Siguen con ajustes, cargados bien: AC Milan 2017-18 y 2021-22 e Inter 2024-25 (el escalón de la
-    D cierra con otra lectura, con notas y redondeos de 1-2 mil EUR), AC Milan 2023-24 (no cierra sin ajuste), Torino 2019 (L647 609.108: el
-    17) sin el número se suma como ingreso) y Napoli 2022 (sin cargar; to-do 167). Informes: Admin/informes-etapa6-italia/informe-{A,B,C,D}.md.
-    CUÁNDO HACERLO: si un documento nuevo con este patrón frena.
-    COMPROBADO 2026-10-09 (Sonnet): Inter 2021-22, Bologna 2019-20, Como 2024, Atalanta 2019 y Napoli 2023 y 2024 ya no tienen ajuste y las cargas son idénticas. Milan 2023-24 y Torino 2019 necesitan el suyo (sin él, cola; Torino 2019 daría financiero +1,110 en vez de −0,108); Milan 2017-18 y 2021-22 e Inter 2024-25 cierran igual con 1-2 mil EUR de diferencia. Napoli 2022 ya está cargado. Sin daño.
 
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
     fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Lazio 2007-08 y 2011-12 se resolvieron A MANO
@@ -141,12 +121,8 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-188. COSTOS FINANCIEROS DEL CODICE CIVILE: LO QUE EL ESCALÓN "17) RESTA" NO RESUELVE. CONOCIDO, SIN DAÑO HOY. Los peldaños A (17) por el nombre de la fila y
-    subtotales anteriores, Versión 621) y B (la D que quedó en el financiero, Versión 623) ya están; Torino 2019 se recargó sin su ajuste. Siguen con ajustes,
-    cargados bien: Milan 2017-18 y 2021-22 e Inter 2024-25 (cierran con la lectura 4 en vez de la 5, mismos totales y distinto detalle), Milan 2023-24 (el
-    documento dice "19 rivalutazioni" en vez de svalutazioni: el signo debería elegirse por las sumas), Inter 2020-21 (la fila de la D no entró) y Roma 2005.
-    CUÁNDO HACERLO: si un documento nuevo con este patrón frena. Cuidado: no probar una guarda genérica "si la propuesta es idéntica no propone nada": rompe Atalanta 2025.
-    NO ANULAR los 4 ajustes del financiero de Bologna 2023-24 y 2024-25 (17) y D 19)) aunque el escalón ya cierre sin ellos (decisión de Guido, 2026-10-09):
-    sin ellos el 17) y los otros proventi se llaman los dos "altri" y Finanzas multi-año (`filaDe`, js/finanzas-multi.js) los suma en una fila (+5,25 y −6,45 M
-    se ven como −1,20 M). Los ajustes solo les dan nombres distintos.
+194. JUVENTUS SIN GESTIONES (encontrado 2026-10-09 por un Sonnet al recargar en ensayo). `data/gestiones/it.js` no tiene a Juventus: sus 23 ejercicios
+    publicados tienen gestionId null y la fila "Gestión" de Finanzas queda vacía; cada recarga abre en la cola una pregunta "gestion" (no frena). Falta
+    cargar los presidentes con fuente (Grande Stevens, Giraudo/Moggi como directivos no van; Cobolli Gigli, Blanc, Andrea Agnelli, Ferrero...), con el
+    formato y la regla de la cabecera de data/gestiones/ar.js.
 

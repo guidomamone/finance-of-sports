@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 636 — To-dos 155, 166 y 188 cerrados; el ajuste `fx` funciona (2026-10-09)
+
+- Los Sonnet marcaron "con daño" a 155, 166 y 188 porque `cargar.mjs --desde-verificacion` frenaba Milan 2021-22 y 2022-23 por el tipo de cambio pese al
+  ajuste manual `fx`. En el repo real no frena: el ajuste se toma (0,9627 y 0,9203) y la recarga da idéntica a lo publicado (30 y 44 filas, financiero e
+  impuesto iguales). Era un efecto de sus copias sin PDFs: `analizar()` (tools/alta-club.mjs) solo busca ajustes si el PDF existe. Sin cambios de código.
+- El resto de sus documentos (Napoli, Bologna, Torino, Udinese, Cremonese, Parma, Genoa, Hellas Verona, Inter, Roma 2005, Atalanta, Juventus 2002-06) reproduce
+  lo publicado. Cerrados. Punto nuevo 194: Juventus no tiene gestiones cargadas (la única otra falla que vieron, ajena a esos puntos).
+
 ## Versión 635 — Roma 2007 y 2012 vuelven a cargarse solos; to-dos 154, 156 y 168 cerrados (2026-10-09)
 
 - Cola (to-do 170, respondidos por Claude por pedido de Guido): Roma 2007 f9da193 (reexpresión real: el sitio carga 2006 del documento 2006, Codice Civile con la
