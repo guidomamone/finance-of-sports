@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.pdf",
   "club": "asroma-it",
   "year": 2012,
-  "generatedAt": "2026-10-08T18:56:44.520Z",
+  "generatedAt": "2026-10-08T23:29:13.784Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         7.236
       ],
-      "glosa": "Campeonato"
+      "glosa": "Campeonato de liga"
     },
     {
       "label": "Coppe europee",
@@ -24,7 +24,7 @@
       "values": [
         0.677
       ],
-      "glosa": "Copas europeas"
+      "glosa": "Competiciones europeas"
     },
     {
       "label": "Tim Cup",
@@ -34,7 +34,7 @@
       "values": [
         0.365
       ],
-      "glosa": "Copa Tim"
+      "glosa": "Copa de Italia (Tim Cup)"
     },
     {
       "label": "Squadre Minori",
@@ -44,7 +44,7 @@
       "values": [
         0.012
       ],
-      "glosa": "Categorías inferiores"
+      "glosa": "Equipos filiales y fútbol base"
     },
     {
       "label": "Gare amichevoli",
@@ -84,7 +84,7 @@
       "values": [
         1.679
       ],
-      "glosa": "Ingresos por ventas de tiendas A.S. Roma Store"
+      "glosa": "Ingresos por ventas de A.S. Roma Store"
     },
     {
       "label": "Ricavi da vendite affiliati",
@@ -104,7 +104,7 @@
       "values": [
         0.001
       ],
-      "glosa": "Ingresos por ventas en corners especializados"
+      "glosa": "Ingresos por ventas en córners especializados"
     },
     {
       "label": "Ricavi per royalties",
@@ -114,7 +114,7 @@
       "values": [
         0.857
       ],
-      "glosa": "Ingresos por regalías"
+      "glosa": "Ingresos por regalías (royalties)"
     },
     {
       "label": "Ricavi vendite per corrispondenza",
@@ -174,7 +174,7 @@
       "values": [
         58.838
       ],
-      "glosa": "LNP Serie A – derechos Campeonato Serie A"
+      "glosa": "LNP Serie A – derechos del Campeonato Serie A"
     },
     {
       "label": "LNP Serie A – diritti TIM Cup",
@@ -184,7 +184,7 @@
       "values": [
         0.278
       ],
-      "glosa": "LNP Serie A – derechos Copa TIM"
+      "glosa": "LNP Serie A – derechos de la TIM Cup"
     },
     {
       "label": "Tornei UEFA (Europa League / Champions League)",
@@ -204,7 +204,7 @@
       "values": [
         1.703
       ],
-      "glosa": "Ingresos Roma Channel"
+      "glosa": "Ingresos por Roma Channel"
     },
     {
       "label": "Commercializzazione Library AS Roma",
@@ -214,7 +214,7 @@
       "values": [
         1.664
       ],
-      "glosa": "Comercialización de la videoteca de AS Roma"
+      "glosa": "Comercialización del archivo audiovisual (Library) AS Roma"
     },
     {
       "label": "Proventi accessori LNP",
@@ -224,7 +224,7 @@
       "values": [
         1.361
       ],
-      "glosa": "Ingresos accesorios LNP"
+      "glosa": "Ingresos accesorios de la LNP"
     },
     {
       "label": "Altri diritti televisivi (amichevoli)",
@@ -254,7 +254,7 @@
       "values": [
         1.902
       ],
-      "glosa": "Subvenciones a la explotación e ingresos LNP"
+      "glosa": "Subvenciones a la explotación e ingresos de la LNP"
     },
     {
       "label": "Indennizzi assicurativi infortuni calciatori",
@@ -274,7 +274,7 @@
       "values": [
         0.053
       ],
-      "glosa": "Repercusión de costes a entidades vinculadas"
+      "glosa": "Refacturaciones a entidades vinculadas"
     },
     {
       "label": "Proventi Campus Estivi",
@@ -314,7 +314,7 @@
       "values": [
         0.57
       ],
-      "glosa": "Repercusión de costes por desplazamientos y material deportivo"
+      "glosa": "Repercusión de gastos por desplazamientos y material deportivo"
     },
     {
       "label": "Sopravvenienze attive",
@@ -324,7 +324,7 @@
       "values": [
         2.426
       ],
-      "glosa": "Ingresos excepcionales"
+      "glosa": "Ingresos extraordinarios"
     },
     {
       "label": "RAI (proventi canale tv Roma Channel)",
@@ -334,7 +334,7 @@
       "values": [
         0.25
       ],
-      "glosa": "RAI (ingresos canal de televisión Roma Channel)"
+      "glosa": "RAI (ingresos del canal de TV Roma Channel)"
     },
     {
       "label": "Proventi FIFA/UEFA/FIGC per tesserati",
@@ -344,7 +344,7 @@
       "values": [
         1.116
       ],
-      "glosa": "Ingresos FIFA/UEFA/FIGC por futbolistas internacionales"
+      "glosa": "Ingresos de FIFA/UEFA/FIGC por jugadores convocados"
     },
     {
       "label": "Altri proventi diversi",
@@ -355,6 +355,16 @@
         0.553
       ],
       "glosa": "Otros ingresos diversos"
+    },
+    {
+      "label": "Gestione operativa netta calciatori",
+      "lado": "revenue",
+      "page": 88,
+      "section": "ajuste manual",
+      "values": [
+        9.06
+      ],
+      "glosa": "Gestión operativa neta de futbolistas"
     },
     {
       "label": "Indumenti sportivi e divise ufficiali",
@@ -454,7 +464,7 @@
       "values": [
         3.056
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Gastos de seguros"
     },
     {
       "label": "Consulenze, professionali, legali e notarili",
@@ -484,7 +494,7 @@
       "values": [
         0.241
       ],
-      "glosa": "Gastos de impresión y servicios editoriales de la revista 'La Roma'"
+      "glosa": "Gastos de imprenta y servicios editoriales de la revista 'La Roma'"
     },
     {
       "label": "Spese di spedizione e distribuzione periodico 'La Roma'",
@@ -504,7 +514,7 @@
       "values": [
         0.456
       ],
-      "glosa": "Colaboradores de sede"
+      "glosa": "Colaboradores de la sede"
     },
     {
       "label": "Spese postali e telefoniche",
@@ -534,7 +544,7 @@
       "values": [
         0.397
       ],
-      "glosa": "Gastos de mantenimiento y gestión de sede social y centro deportivo"
+      "glosa": "Gastos de mantenimiento y gestión de la sede social y centro deportivo"
     },
     {
       "label": "Spese manutenzione e gestione hardware, software e sito internet",
@@ -574,7 +584,7 @@
       "values": [
         0.136
       ],
-      "glosa": "Retribuciones al Consejo de Administración y Órgano de Vigilancia"
+      "glosa": "Retribuciones al Consejo de Administración / Órgano de Control"
     },
     {
       "label": "Onorari alla società di revisione contabile",
@@ -594,7 +604,7 @@
       "values": [
         0.096
       ],
-      "glosa": "Retribuciones al colegio de comisarios de cuentas"
+      "glosa": "Retribuciones a la comisión fiscalizadora (colegio sindical)"
     },
     {
       "label": "Costo digitalizzazione Library AS Roma",
@@ -604,7 +614,7 @@
       "values": [
         0.2
       ],
-      "glosa": "Costes de digitalización de la videoteca de AS Roma"
+      "glosa": "Coste de digitalización del archivo audiovisual (Library) AS Roma"
     },
     {
       "label": "Costi di produzione Roma Channel",
@@ -624,7 +634,7 @@
       "values": [
         0.18
       ],
-      "glosa": "Gastos de proyecto del nuevo estadio"
+      "glosa": "Gastos de diseño y proyecto del nuevo estadio"
     },
     {
       "label": "Altre spese generali e amministrative",
@@ -654,7 +664,7 @@
       "values": [
         7.619
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Gastos por arrendamientos y cánones"
     },
     {
       "label": "Salari e stipendi",
@@ -684,7 +694,7 @@
       "values": [
         0.313
       ],
-      "glosa": "Indemnización por fin de contrato (TFR)"
+      "glosa": "Indemnización por cese laboral (T.F.R.)"
     },
     {
       "label": "Altri costi (Faifc)",
@@ -694,7 +704,7 @@
       "values": [
         0.277
       ],
-      "glosa": "Otros costes (Faifc)"
+      "glosa": "Otros costes de personal (FAIFC)"
     },
     {
       "label": "Oneri tributari indiretti",
@@ -704,7 +714,7 @@
       "values": [
         0.457
       ],
-      "glosa": "Impuestos indirectos"
+      "glosa": "Tributos indirectos"
     },
     {
       "label": "Sopravvenienze passive",
@@ -714,7 +724,7 @@
       "values": [
         0.438
       ],
-      "glosa": "Gastos excepcionales"
+      "glosa": "Pérdidas extraordinarias"
     },
     {
       "label": "- Costi accesso segnale televisivo LNP",
@@ -724,7 +734,7 @@
       "values": [
         1.052
       ],
-      "glosa": "- Gastos de acceso a señal televisiva LNP"
+      "glosa": "- Costes de acceso a la señal televisiva LNP"
     },
     {
       "label": "- Mutualità incassi gare Tim Cup",
@@ -734,7 +744,7 @@
       "values": [
         0.07
       ],
-      "glosa": "- Solidaridad por recaudación en partidos de Copa Tim"
+      "glosa": "- Mutualidad sobre recaudación de taquilla Tim Cup"
     },
     {
       "label": "- Contributi, ammende, spese LNP-Uefa",
@@ -744,7 +754,7 @@
       "values": [
         0.677
       ],
-      "glosa": "- Cuotas, sanciones y gastos LNP-UEFA"
+      "glosa": "- Cuotas, multas y gastos LNP-UEFA"
     },
     {
       "label": "- Acquisto biglietteria gare trasferta",
@@ -804,7 +814,7 @@
       "values": [
         0.654
       ],
-      "glosa": "Deterioro de valor de créditos corrientes"
+      "glosa": "Deterioro de créditos comerciales"
     },
     {
       "label": "Accantonamenti per rischi",

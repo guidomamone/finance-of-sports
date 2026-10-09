@@ -1,24 +1,209 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.pdf",
- "generado": "2026-10-08T19:23:23.489Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-08T23:38:11.406Z",
+ "frena": [],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2011 (cierre 2011-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "asroma-it",
+  "year": 2011,
+  "cierre": "2011-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ricavi da gare",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 31.017,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi delle vendite e delle prestazioni",
+    "normalizedCategory": "other_income",
+    "amountNative": 7.981,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 11.148,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Diritti televisivi e diritti d'immagine",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 78.042,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 9.412,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Altri proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.278,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gestione operativa netta calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.453,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Acquisti materie di consumo",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -7.335,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Variazione delle rimanenze",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.702,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per Servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -22.462,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Spese per godimento beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -7.319,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per il personale",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -106.814,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.423,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ammortamenti e svalutazioni",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -22.614,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Accantonamenti per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -1.606,
+    "disclosureLevel": "aggregated",
+    "_pag": 68,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2011-06-30",
+   "sourceId": "asroma-it-bilancio-2011-consolidato",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.176,
+   "tax": -3.818,
+   "extraRows": [
+    {
+     "label": "Oneri/Proventi finanziari netti",
+     "value": -5.176
+    },
+    {
+     "label": "a) imposte correnti",
+     "value": -3.807
+    },
+    {
+     "label": "b) imposte anticipate e differite",
+     "value": -0.011
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 148.331,
+   "officialTotalExpenses": 169.871,
+   "officialPAT": -30.534
+  },
+  "source": {
+   "id": "asroma-it-bilancio-2011-consolidato",
+   "clubId": "asroma-it",
+   "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2011-consolidato (ejercicio 2011)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +216,365 @@
  },
  "clubId": "asroma-it",
  "year": 2011,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ricavi da gare",
+   "page": 68,
+   "native": 31.017,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 31.017,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 31.017
+  },
+  {
+   "label": "Altri ricavi delle vendite e delle prestazioni",
+   "page": 68,
+   "native": 7.981,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.981,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.981
+  },
+  {
+   "label": "b) Sponsorizzazioni",
+   "page": 68,
+   "native": 11.148,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.148,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.148
+  },
+  {
+   "label": "c) Diritti televisivi e diritti d'immagine",
+   "page": 68,
+   "native": 78.042,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 78.042,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 78.042
+  },
+  {
+   "label": "d) Proventi pubblicitari",
+   "page": 68,
+   "native": 9.412,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.412,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.412
+  },
+  {
+   "label": "e) Altri proventi",
+   "page": 68,
+   "native": 6.278,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.278,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.278
+  },
+  {
+   "label": "Gestione operativa netta calciatori",
+   "page": 68,
+   "native": 4.453,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 4.453,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.453
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "page": 68,
+   "native": 7.335,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.335,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): compras de materiales -> administración",
+   "destino": "expense",
+   "amountNative": -7.335
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "page": 68,
+   "native": 0.702,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.702,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.702
+  },
+  {
+   "label": "Spese per Servizi",
+   "page": 68,
+   "native": 22.462,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 22.462,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -22.462
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "page": 68,
+   "native": 7.319,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.319,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.319
+  },
+  {
+   "label": "Spese per il personale",
+   "page": 68,
+   "native": 106.814,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 106.814,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -106.814
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "page": 68,
+   "native": 2.423,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.423,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.423
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "page": 68,
+   "native": 22.614,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 22.614,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -22.614
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "page": 68,
+   "native": 1.606,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.606,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.606
+  },
+  {
+   "label": "Oneri/Proventi finanziari netti",
+   "page": null,
+   "native": -5.176,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) imposte correnti",
+   "page": null,
+   "native": -3.807,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "b) imposte anticipate e differite",
+   "page": null,
+   "native": -0.011,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 148.331,
+  "expSum": -169.871,
+  "officialTotalRevenue": 148.331,
+  "officialTotalExpenses": 169.871,
+  "officialPAT": -30.534,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -30.534,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 148.331
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 169.871
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2010–11 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2011,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), presente en el .md (el año más citado con fecha de cierre es 2010)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2011-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (611 de 690 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2011-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2011-06-30 = 0.691898 (Tipo de referencia del Banco Central Europeo al 2011-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "asroma-it-bilancio-2011-consolidato",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2010–11 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

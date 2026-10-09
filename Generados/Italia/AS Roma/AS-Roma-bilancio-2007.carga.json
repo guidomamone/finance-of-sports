@@ -1,24 +1,223 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
- "generado": "2026-10-08T19:23:22.452Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 5 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 5 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-08T23:38:09.120Z",
+ "frena": [],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2007 (cierre 2007-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "asroma-it",
+  "year": 2007,
+  "cierre": "2007-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "RICAVI DA GARE",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 36.226,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "ALTRI RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.49,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.216,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Diritti televisivi e diritti d'immagine",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 88.316,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 10.005,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Altri proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 9.336,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "f) Contributi in c/esercizio",
+    "normalizedCategory": "other_income",
+    "amountNative": 1,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Variazione delle rimanenze (reduce costos)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.238,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gestione operativa netta calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.428,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Acquisti materie di consumo",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.054,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Spese per Servizi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -19.088,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Spese per godimento beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.398,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spese per il personale",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -75.757,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Oneri diversi di gestione",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -17.005,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ammortamenti e svalutazioni",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -17.528,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Accantonamenti per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.114,
+    "disclosureLevel": "aggregated",
+    "_pag": 156,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2007-06-30",
+   "sourceId": "asroma-it-bilancio-2007",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.956,
+   "tax": -7.344,
+   "extraRows": [
+    {
+     "label": "ONERI/PROVENTI FINANZIARI NETTI",
+     "value": -0.792
+    },
+    {
+     "label": "Risultato (utile) di terzi",
+     "value": -0.164
+    },
+    {
+     "label": "a) imposte correnti",
+     "value": -3.632
+    },
+    {
+     "label": "b) imposte anticipate e differite",
+     "value": -3.712
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 162.255,
+   "officialTotalExpenses": 139.944,
+   "officialPAT": 14.011
+  },
+  "source": {
+   "id": "asroma-it-bilancio-2007",
+   "clubId": "asroma-it",
+   "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2007 (ejercicio 2007)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +230,447 @@
  },
  "clubId": "asroma-it",
  "year": 2007,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 4810,
+   "etiqueta": "Totale Costi di esercizio (no es línea)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 4810,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el total impreso (122.064) se contaba además de sus renglones; sale la fila (como Roma 2018)",
+   "evidencia": ".md L4810",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
+   "campo": "fila",
+   "valor": "238",
+   "linea": 4805,
+   "etiqueta": "Variazione delle rimanenze (reduce costos)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 4805,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la variación de existencias (+238) reduce costos; los gastos van en absoluto, se resta poniéndola como ingreso (criterio de Roma 2018)",
+   "evidencia": ".md L4805",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
+   "campo": "fila",
+   "valor": "(164)",
+   "linea": 4822,
+   "etiqueta": "Risultato (utile) di terzi",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): diferencia entre el consolidado 14.175 y el Gruppo 14.011: resta",
+   "evidencia": ".md L4821-L4823",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
+   "campo": "fila",
+   "valor": "4.428",
+   "linea": 4811,
+   "etiqueta": "Gestione operativa netta calciatori",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la gestión de jugadores sale neta en el estado y se carga neta como ingreso (criterio de Roma 2009 y 2013 a 2017); con ella el ingreso de 2007 (162.017) coincide con la columna 2007 del documento de 2008",
+   "evidencia": ".md L4811",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
+ "seleccion": {
+  "filas": 20,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "RICAVI DA GARE",
+   "page": 156,
+   "native": 36.226,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 36.226,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 36.226
+  },
+  {
+   "label": "ALTRI RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "page": 156,
+   "native": 5.49,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.49,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.49
+  },
+  {
+   "label": "b) Sponsorizzazioni",
+   "page": 156,
+   "native": 7.216,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.216,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.216
+  },
+  {
+   "label": "c) Diritti televisivi e diritti d'immagine",
+   "page": 156,
+   "native": 88.316,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 88.316,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 88.316
+  },
+  {
+   "label": "d) Proventi pubblicitari",
+   "page": 156,
+   "native": 10.005,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 10.005,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.005
+  },
+  {
+   "label": "e) Altri proventi",
+   "page": 156,
+   "native": 9.336,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.336,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.336
+  },
+  {
+   "label": "f) Contributi in c/esercizio",
+   "page": 156,
+   "native": 1,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1
+  },
+  {
+   "label": "Variazione delle rimanenze (reduce costos)",
+   "page": 156,
+   "native": 0.238,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.238,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.238
+  },
+  {
+   "label": "Gestione operativa netta calciatori",
+   "page": 156,
+   "native": 4.428,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4.428,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.428
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "page": 156,
+   "native": 4.054,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.054,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): compras de materiales -> administración",
+   "destino": "expense",
+   "amountNative": -4.054
+  },
+  {
+   "label": "Spese per Servizi",
+   "page": 156,
+   "native": 19.088,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 19.088,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -19.088
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "page": 156,
+   "native": 6.398,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.398,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.398
+  },
+  {
+   "label": "Spese per il personale",
+   "page": 156,
+   "native": 75.757,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 75.757,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -75.757
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "page": 156,
+   "native": 17.005,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.005,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -17.005
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "page": 156,
+   "native": 17.528,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.528,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -17.528
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "page": 156,
+   "native": 0.114,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.114,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.114
+  },
+  {
+   "label": "ONERI/PROVENTI FINANZIARI NETTI",
+   "page": null,
+   "native": -0.792,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Risultato (utile) di terzi",
+   "page": null,
+   "native": -0.164,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) imposte correnti",
+   "page": null,
+   "native": -3.632,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "b) imposte anticipate e differite",
+   "page": null,
+   "native": -3.712,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 162.255,
+  "expSum": -139.944,
+  "officialTotalRevenue": 162.255,
+  "officialTotalExpenses": 139.944,
+  "officialPAT": 14.011,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 14.011,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 162.255
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 139.944
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2007 (it-serieb): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2007,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2007-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (721 de 780 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2007-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2007-06-30 = 0.740466 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2007-06-29, 2007-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "asroma-it-bilancio-2007",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2007 (it-serieb): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 9,
+  "lineasGasto": 7,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

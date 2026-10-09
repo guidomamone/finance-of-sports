@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf",
   "club": "asroma-it",
   "year": 2010,
-  "generatedAt": "2026-10-08T18:56:44.233Z",
+  "generatedAt": "2026-10-08T23:29:13.603Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         23.821
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por competiciones"
     },
     {
       "label": "Altri ricavi delle vendite e delle prestazioni",
@@ -24,7 +24,7 @@
       "values": [
         7.109
       ],
-      "glosa": "Otros ingresos de ventas y prestaciones de servicios"
+      "glosa": "Otros ingresos por ventas y prestación de servicios"
     },
     {
       "label": "b) Sponsorizzazioni",
@@ -74,7 +74,7 @@
       "values": [
         0.947
       ],
-      "glosa": "f) Subvenciones a la explotación"
+      "glosa": "f) Subvenciones de explotación"
     },
     {
       "label": "Gestione operativa netta calciatori",
@@ -94,7 +94,7 @@
       "values": [
         5.532
       ],
-      "glosa": "Compras de materiales de consumo"
+      "glosa": "Compras de material de consumo"
     },
     {
       "label": "Variazione delle rimanenze",
@@ -114,7 +114,7 @@
       "values": [
         21.067
       ],
-      "glosa": "Gastos por servicios"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Spese per godimento beni di terzi",
@@ -124,7 +124,7 @@
       "values": [
         7.107
       ],
-      "glosa": "Gastos por uso de bienes de terceros"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Spese per il personale",
@@ -174,7 +174,7 @@
       "values": [
         0.243
       ],
-      "glosa": "Resultado (beneficios) de socios externos"
+      "glosa": "Resultado (beneficios) atribuible a minoritarios"
     }
   ]
 }

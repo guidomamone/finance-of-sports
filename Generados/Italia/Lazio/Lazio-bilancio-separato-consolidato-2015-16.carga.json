@@ -1,24 +1,198 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf",
- "generado": "2026-10-08T19:23:30.670Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-08T23:38:15.933Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 5 documento(s) con los dos estados votan consolidado; 1 ejercicio(s) con un solo perímetro (consolidado); 10 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "lazio-it",
+  "year": 2016,
+  "cierre": "2016-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ricavi da gare",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 7.530904,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diritti radiotelevisivi e proventi media",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 67.877949,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da sponsorizzazione e pubblicità",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 11.085293,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Proventi da gestione diritti calciatori",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.037827,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Altri ricavi",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.055756,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Variazione delle rimanenze",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.608641,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ricavi da merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.84142,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Materie prime, sussidiarie, di consumo e di merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.168272,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Personale",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -59.054746,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Oneri da gestione diritti calciatori",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.179717,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Oneri per servizi esterni",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -17.396524,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Altri oneri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.65995,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ammortamenti e svalutazioni delle immobilizzazioni",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -18.147345,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Accantonamenti e altre svalutazioni",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.699477,
+    "disclosureLevel": "aggregated",
+    "_pag": 97,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2016-06-30",
+   "sourceId": "lazio-it-bilancio-separato-consolidato-2015-16",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.866421,
+   "tax": -1.27321,
+   "extraRows": [
+    {
+     "label": "Oneri finanziari netti e differenze cambio",
+     "value": -1.866421
+    },
+    {
+     "label": "Imposte correnti",
+     "value": -1.979115
+    },
+    {
+     "label": "Imposte differite e anticipate",
+     "value": 0.705905
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 93.820508,
+   "officialTotalExpenses": 103.306031,
+   "officialPAT": -12.625154
+  },
+  "source": {
+   "id": "lazio-it-bilancio-separato-consolidato-2015-16",
+   "clubId": "lazio-it",
+   "title": "S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2015-16 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +205,364 @@
  },
  "clubId": "lazio-it",
  "year": 2016,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf",
+   "campo": "fila",
+   "valor": "(1.866.421)",
+   "linea": 3579,
+   "etiqueta": "Oneri finanziari netti e differenze cambio",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 3579,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)",
+   "evidencia": ".md L3579",
+   "autor": "Guido",
+   "fecha": "2026-10-08"
+  }
+ ],
+ "seleccion": {
+  "filas": 17,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ricavi da gare",
+   "page": 97,
+   "native": 7.530904,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.530904,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.530904
+  },
+  {
+   "label": "Diritti radiotelevisivi e proventi media",
+   "page": 97,
+   "native": 67.877949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 67.877949,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 67.877949
+  },
+  {
+   "label": "Ricavi da sponsorizzazione e pubblicità",
+   "page": 97,
+   "native": 11.085293,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.085293,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.085293
+  },
+  {
+   "label": "Proventi da gestione diritti calciatori",
+   "page": 97,
+   "native": 2.037827,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.037827,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.037827
+  },
+  {
+   "label": "Altri ricavi",
+   "page": 97,
+   "native": 5.055756,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.055756,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.055756
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "page": 97,
+   "native": 0.608641,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.608641,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.608641
+  },
+  {
+   "label": "Ricavi da merchandising",
+   "page": 97,
+   "native": 0.84142,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.84142,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.84142
+  },
+  {
+   "label": "Materie prime, sussidiarie, di consumo e di merci",
+   "page": 97,
+   "native": 2.168272,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.168272,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.168272
+  },
+  {
+   "label": "Personale",
+   "page": 97,
+   "native": 59.054746,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 59.054746,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -59.054746
+  },
+  {
+   "label": "Oneri da gestione diritti calciatori",
+   "page": 97,
+   "native": 0.179717,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.179717,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-07 (Guido delega: mismos criterios que Atalanta/Verona/Sassuolo/Monza): aceptada la propuesta",
+   "destino": "expense",
+   "amountNative": -0.179717
+  },
+  {
+   "label": "Oneri per servizi esterni",
+   "page": 97,
+   "native": 17.396524,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.396524,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Precedente de Lazio: el rubro de servicios externos (\"Costi per servizi\") va como admin_general_expense en 2008 a 2013 y 2015 (lazio-it-data.js L494, L503, L539, L612). 'Organización de partidos' era una confianza de 0,55.",
+   "destino": "expense",
+   "amountNative": -17.396524
+  },
+  {
+   "label": "Altri oneri",
+   "page": 97,
+   "native": 5.65995,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.65995,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.65995
+  },
+  {
+   "label": "Ammortamenti e svalutazioni delle immobilizzazioni",
+   "page": 97,
+   "native": 18.147345,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 18.147345,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Precedente de Lazio: la amortización agregada va como player_amortisation (lazio-it-data.js L497, L506, L542, L615).",
+   "destino": "expense",
+   "amountNative": -18.147345
+  },
+  {
+   "label": "Accantonamenti e altre svalutazioni",
+   "page": 97,
+   "native": 0.699477,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.699477,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente: accantonamenti -> other_amortisation (Atalanta 2021, Lazio 2007)",
+   "destino": "expense",
+   "amountNative": -0.699477
+  },
+  {
+   "label": "Oneri finanziari netti e differenze cambio",
+   "page": null,
+   "native": -1.866421,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposte correnti",
+   "page": null,
+   "native": -1.979115,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Imposte differite e anticipate",
+   "page": null,
+   "native": 0.705905,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 93.820508,
+  "expSum": -103.306031,
+  "officialTotalRevenue": 93.820508,
+  "officialTotalExpenses": 103.306031,
+  "officialPAT": -12.625154,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -12.625154,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 93.820508
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 103.306031
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2015–16 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Lazio\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2016,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2016-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (382 de 398 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2016-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2016-06-30 = 0.900739 (Tipo de referencia del Banco Central Europeo al 2016-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lazio-it-bilancio-separato-consolidato-2015-16",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2015–16 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Lazio\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 7,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

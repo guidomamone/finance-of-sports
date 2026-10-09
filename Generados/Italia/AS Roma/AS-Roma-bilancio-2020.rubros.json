@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.pdf",
   "club": "asroma-it",
   "year": 2020,
-  "generatedAt": "2026-10-08T18:56:44.982Z",
+  "generatedAt": "2026-10-08T23:29:13.859Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         26.19
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Ricavi delle vendite commerciali e licensing",
@@ -44,7 +44,7 @@
       "values": [
         80.282
       ],
-      "glosa": "Derechos de televisión y derechos de imagen"
+      "glosa": "Derechos audiovisuales y derechos de imagen"
     },
     {
       "label": "Pubblicità",
@@ -74,7 +74,7 @@
       "values": [
         32.561
       ],
-      "glosa": "Ingresos por gestión de derechos plurianuales de futbolistas"
+      "glosa": "Ingresos por gestión de derechos federativos plurianuales de futbolistas"
     },
     {
       "label": "Acquisti materie di consumo",
@@ -104,7 +104,7 @@
       "values": [
         50.93
       ],
-      "glosa": "Gastos por servicios"
+      "glosa": "Servicios exteriores"
     },
     {
       "label": "Spese per godimento beni di terzi",
@@ -114,7 +114,7 @@
       "values": [
         5.574
       ],
-      "glosa": "Gastos por uso de bienes de terceros"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Spese per il personale",
@@ -154,7 +154,7 @@
       "values": [
         16.461
       ],
-      "glosa": "Gastos por gestión de derechos plurianuales de futbolistas"
+      "glosa": "Gastos por gestión de derechos federativos plurianuales de futbolistas"
     }
   ]
 }

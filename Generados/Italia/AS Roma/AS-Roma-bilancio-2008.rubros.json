@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2008.pdf",
   "club": "asroma-it",
   "year": 2008,
-  "generatedAt": "2026-10-08T18:56:44.082Z",
+  "generatedAt": "2026-10-08T23:29:13.538Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         38.758
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por partidos y competiciones"
     },
     {
       "label": "ALTRI RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
@@ -74,7 +74,7 @@
       "values": [
         1
       ],
-      "glosa": "f) Subvenciones a la explotación"
+      "glosa": "f) Subvenciones de explotación"
     },
     {
       "label": "GESTIONE OPERATIVA NETTA CALCIATORI",
@@ -94,7 +94,7 @@
       "values": [
         4.921
       ],
-      "glosa": "Compras de materias de consumo"
+      "glosa": "Compras de materias y consumibles"
     },
     {
       "label": "Variazione delle rimanenze",
@@ -124,7 +124,7 @@
       "values": [
         6.836
       ],
-      "glosa": "Gastos por uso de bienes de terceros"
+      "glosa": "Gastos por arrendamientos y uso de bienes de terceros"
     },
     {
       "label": "Spese per il personale",
@@ -154,7 +154,7 @@
       "values": [
         24.097
       ],
-      "glosa": "Amortizaciones y correcciones de valor"
+      "glosa": "Amortizaciones y deterioros"
     },
     {
       "label": "Accantonamenti per rischi",

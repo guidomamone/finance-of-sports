@@ -1,0 +1,133 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md",
+ "generatedAt": "2026-10-08T23:37:44.761Z",
+ "rubrosHuella": "11c9f29bbb48c6fb5e7c16f0b1a4b5244f8bd716",
+ "rubros": [
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diritti radiotelevisivi e proventi media",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ricavi da sponsorizzazione e pubblicità",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Proventi da gestione diritti calciatori",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri ricavi",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Ricavi da merchandising",
+   "lado": "revenue",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Personale",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Oneri da gestione diritti calciatori",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Oneri per servizi esterni",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Altri oneri",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ammortamenti e svalutazioni delle immobilizzazioni",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Accantonamenti e altre svalutazioni",
+   "lado": "expense",
+   "page": 97,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_impairment",
+   "confidence": 0.44,
+   "desdeCache": true
+  }
+ ]
+}

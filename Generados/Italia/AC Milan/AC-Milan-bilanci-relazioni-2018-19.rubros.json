@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2018-19.pdf",
   "club": "acmilan-it",
   "year": 2019,
-  "generatedAt": "2026-10-08T18:56:43.332Z",
+  "generatedAt": "2026-10-08T23:29:13.343Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         0.1
       ],
-      "glosa": "2 Variación de las existencias de productos en curso de fabricación, semiterminados y terminados"
+      "glosa": "2 Variación de existencias de productos en curso de fabricación, semiterminados y terminados"
     },
     {
       "label": "b) proventi da sponsorizzazioni",
@@ -84,7 +84,7 @@
       "values": [
         9.09
       ],
-      "glosa": "f) Ingresos varios"
+      "glosa": "f) Ingresos diversos"
     },
     {
       "label": "g) ricavi da cessione temporanea prestazioni calciatori",
@@ -94,7 +94,7 @@
       "values": [
         5.245
       ],
-      "glosa": "g) Ingresos por cesión temporal de prestaciones de jugadores"
+      "glosa": "g) Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "h) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -104,7 +104,7 @@
       "values": [
         12.621
       ],
-      "glosa": "h) Plusvalías por cesión de derechos plurianuales de prestaciones de jugadores"
+      "glosa": "h) Plusvalías por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "i) altri proventi da gestione calciatori",
@@ -114,7 +114,7 @@
       "values": [
         7.67
       ],
-      "glosa": "i) Otros ingresos derivados de la gestión de jugadores"
+      "glosa": "i) Otros ingresos por gestión de futbolistas"
     },
     {
       "label": "l) ricavi e proventi diversi",
@@ -134,7 +134,7 @@
       "values": [
         5.145
       ],
-      "glosa": "6 Materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6 Gastos en materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi generali attività sportiva",
@@ -154,7 +154,7 @@
       "values": [
         6.981
       ],
-      "glosa": "Asesorías y colaboraciones"
+      "glosa": "Asesorías y colaboraciones profesionales"
     },
     {
       "label": "Pubblicità e spese promozionali",
@@ -184,7 +184,7 @@
       "values": [
         2.849
       ],
-      "glosa": "Retribuciones a los órganos sociales"
+      "glosa": "Retribuciones a órganos sociales"
     },
     {
       "label": "Spese amministrative e generali",
@@ -194,7 +194,7 @@
       "values": [
         5.728
       ],
-      "glosa": "Gastos generales y de administración"
+      "glosa": "Gastos administrativos y generales"
     },
     {
       "label": "Mensa e servizi di ristorazione",
@@ -224,7 +224,7 @@
       "values": [
         0.722
       ],
-      "glosa": "Transportes, almacenamiento y gastos de viaje"
+      "glosa": "Transporte, almacenaje y gastos de viaje"
     },
     {
       "label": "Altri costi per servizi",
@@ -234,7 +234,7 @@
       "values": [
         8.588
       ],
-      "glosa": "Otros gastos por servicios"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Affitti passivi",
@@ -244,7 +244,7 @@
       "values": [
         7.658
       ],
-      "glosa": "Arrendamientos pasivos"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Noleggi e altre locazioni",
@@ -254,7 +254,7 @@
       "values": [
         1.502
       ],
-      "glosa": "Alquileres y otros cánones"
+      "glosa": "Alquileres y otros arrendamientos"
     },
     {
       "label": "a) salari e stipendi",
@@ -284,7 +284,7 @@
       "values": [
         1.818
       ],
-      "glosa": "c) Indemnización por fin de contrato laboral"
+      "glosa": "c) Indemnización por cese de relación laboral"
     },
     {
       "label": "e) altri costi",
@@ -294,7 +294,7 @@
       "values": [
         0.269
       ],
-      "glosa": "e) Otros costes"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "a) ammortamento delle immobilizzazioni immateriali",
@@ -324,7 +324,7 @@
       "values": [
         1.934
       ],
-      "glosa": "c) Otras correcciones valorativas por deterioro del inmovilizado"
+      "glosa": "c) Otros deterioros del inmovilizado"
     },
     {
       "label": "d) svalutazione dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
@@ -334,7 +334,7 @@
       "values": [
         0.85
       ],
-      "glosa": "d) Deterioro de valor de los créditos del activo corriente y de las disponibilidades líquidas"
+      "glosa": "d) Deterioro de créditos del activo corriente y de tesorería"
     },
     {
       "label": "12 accantonamenti per rischi",
@@ -364,7 +364,7 @@
       "values": [
         0.002
       ],
-      "glosa": "b) Tasas de inscripción en competiciones"
+      "glosa": "b) Tasas de inscripción a competiciones"
     },
     {
       "label": "c) percentuale da riconoscere a squadre ospiti",
@@ -374,7 +374,7 @@
       "values": [
         0.199
       ],
-      "glosa": "c) Porcentaje a liquidar a equipos visitantes"
+      "glosa": "c) Porcentaje correspondiente a equipos visitantes"
     },
     {
       "label": "d) costi per acquisizione temporanea calciatori",
@@ -384,7 +384,7 @@
       "values": [
         13.18
       ],
-      "glosa": "d) Gastos por adquisición temporal de jugadores"
+      "glosa": "d) Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "e) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
@@ -394,7 +394,7 @@
       "values": [
         0.449
       ],
-      "glosa": "e) Minusvalías por cesión de derechos plurianuales de prestaciones de jugadores"
+      "glosa": "e) Pérdidas por enajenación de derechos federativos de futbolistas"
     },
     {
       "label": "f) altri oneri da gestione calciatori",
@@ -404,7 +404,7 @@
       "values": [
         0.157
       ],
-      "glosa": "f) Otros gastos derivados de la gestión de jugadores"
+      "glosa": "f) Otros gastos por gestión de futbolistas"
     },
     {
       "label": "g) altri oneri diversi di gestione",
