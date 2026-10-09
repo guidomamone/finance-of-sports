@@ -9,7 +9,7 @@
 //   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -274,6 +274,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"acmilan-it", revenue:215.358, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilanci-relazioni-2019-20",
         mix:[["Comercial / Sponsors",58.505],["Estadio",22.484],["Televisión",70.98],["Premios por competencias",3.976],["Venta de Jugadores",31.506],["Otros ingresos",27.907]] },
+      { id:"asroma-it", revenue:194.637, reportType:"official_balance_sheet",
+        sourceId:"asroma-it-bilancio-2020",
+        mix:[["Comercial / Sponsors",33.534],["Estadio",29.328],["Televisión",89.901],["Venta de Jugadores",36.462],["Otros ingresos",5.411]] },
       { id:"sassuolo-it", revenue:148.832, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2020",
         mix:[["Comercial / Sponsors",35.966],["Estadio",0.507],["Televisión",46.042],["Venta de Jugadores",53.733],["Otros ingresos",12.584]] },

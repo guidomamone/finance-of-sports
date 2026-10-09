@@ -251,6 +251,17 @@ const asromaitRevenueLinesByYear = {
     { rawLabel:'e) Altri proventi', normalizedCategory:'other_income', amountNative:6.278, disclosureLevel:'aggregated' }, // pág. 68, precedente
     { rawLabel:'Gestione operativa netta calciatori', normalizedCategory:'player_sales', amountNative:4.453, disclosureLevel:'aggregated' }, // pág. 68, precedente
   ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:26.19, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Ricavi delle vendite commerciali e licensing', normalizedCategory:'sponsorship_commercial', amountNative:5.743, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:17.397, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Diritti televisivi e diritti d\'immagine', normalizedCategory:'broadcasting', amountNative:80.282, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Pubblicità', normalizedCategory:'sponsorship_commercial', amountNative:6.806, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:4.832, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Ricavi da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:32.561, disclosureLevel:'aggregated' }, // pág. 76, precedente
+  ],
 };
 const asromaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -552,6 +563,16 @@ const asromaitExpenseLinesByYear = {
     { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-22.614, disclosureLevel:'aggregated' }, // pág. 68, precedente
     { rawLabel:'Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-1.606, disclosureLevel:'aggregated' }, // pág. 68, precedente
   ],
+  2020: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Acquisti materie di consumo', normalizedCategory:'admin_general_expense', amountNative:-6.726, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_expenses', amountNative:0.161, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Spese per servizi', normalizedCategory:'admin_general_expense', amountNative:-50.93, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Spese per godimento beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-5.574, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Spese per il personale', normalizedCategory:'wages_squad', amountNative:-155.069, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Altri costi', normalizedCategory:'other_expenses', amountNative:-6.914, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-104.238, disclosureLevel:'aggregated' }, // pág. 76, precedente
+    { rawLabel:'Oneri da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-16.461, disclosureLevel:'aggregated' }, // pág. 76, precedente
+  ],
 };
 const asromaitFiscalYearMeta = {
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -823,6 +844,22 @@ const asromaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:148.331, officialTotalExpenses:169.871, officialPAT:-30.534,
   },
+  2020: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'asroma-it-bilancio-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-32.155, tax:-0.396,
+    extraRows: [
+      {label:'Proventi finanziari', value:3.075},
+      {label:'Oneri finanziari', value:-35.23},
+      {label:'imposte correnti', value:-0.396},
+      {label:'imposte differite', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:173.811, officialTotalExpenses:345.751, officialPAT:-204.492,
+  },
 };
 const asromaitPresupuestoOverlayByYear = {};
 
@@ -936,6 +973,12 @@ Object.assign(sources, {
     title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2011-consolidato (ejercicio 2011)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'asroma-it-bilancio-2020': {
+    id:'asroma-it-bilancio-2020', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2020 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
