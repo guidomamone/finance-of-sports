@@ -254,7 +254,7 @@ ni en el comentario de ningún archivo de código.
 185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
 
 188. COSTOS FINANCIEROS DEL CODICE CIVILE QUE SUMAN EN VEZ DE RESTAR (verificar.mjs). El 17) "interessi ed altri oneri finanziari" y el D 19) se imprimen en positivo y se restan por posición; el
-    script los suma. Se arregló a mano con ajustes `fila` en Bologna 2019-20, 2020-21, 2024 y 2025 y Genoa 2023 (y Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total
+    script los suma. Hoy llevan un ajuste `fila` por esto Torino 2019 y Bologna 2023-24 y 2024-25 (ver el diagnóstico; Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total
     C impreso solo cierra así, con la compuerta de siempre (el total de la sección impreso). Sin probar; ningún agente lo midió.
     DIAGNÓSTICO 2026-10-09 (un Sonnet midió en una copia, 242 documentos con verificación; propuesta lista en `Admin/propuestas/188-costos-financieros-codice-civile.diff`, NO aplicada): vale la pena. La lista de arriba está
     vieja: con el código de hoy ya cierran sin ajuste Bologna 2019-20, 2020-21 y 2021-22, Genoa 2023, Torino 2018, 2021 y 2024, Udinese 2021-22 y 2024-25, Como 2024 e Inter 2021-22 (esos ajustes son redundantes). Solo
@@ -293,6 +293,5 @@ ni en el comentario de ningún archivo de código.
     pública que diga de dónde sale cada mitad) y para cuando dos parciales no se pueden unir (tipo de cambio de cierre, perímetro distinto, el primero cerrado con otra moneda); (c) que el tramo se
     busque en sourcing (`fuentes/Italia/<club>.md`): anotar en la ficha del club qué tramo falta. Mientras tanto no se carga ningún parcial: ver `Admin/CONVENCIONES-DATOS.md`, la regla de los 12 meses.
 
-191. LOS DOS HALLAZGOS DE HIGIENE (verificado 2026-10-09 por un Sonnet). (a) Una respuesta vieja de la cola puede tapar una alarma real: Sampdoria 2018 sin sus ajustes queda en "ok" con "resultado del ejercicio"
-    fallando. (b) Hay 8 ajustes `fila` redundantes (el script ya lee esos documentos solo): Roma 2021 (2), Juve 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia por acción, 1 cada uno), Lazio 2015-16 (1) y
-    Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país.
+191. UNA RESPUESTA VIEJA DE LA COLA PUEDE TAPAR UNA ALARMA REAL (verificado 2026-10-09 por un Sonnet): Sampdoria 2018 sin sus ajustes queda en "ok" con
+    "resultado del ejercicio" fallando. No es daño hoy (el ajuste está y la carga es correcta). Los 8 ajustes redundantes que también listaba este punto se anularon (Versión 619).

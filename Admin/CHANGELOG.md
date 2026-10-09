@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 619 — To-do 191(b): 8 ajustes manuales redundantes anulados (2026-10-09)
+
+- Anulados (registro `anulado` en `Admin/ajustes-manuales.jsonl`, el historial queda): Juventus 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia o pérdida por acción),
+  AS Roma 2021 (los 2 de gestión de jugadores en bruto), Lazio 2015-16 (financiero) y Napoli 2022 (perdite su cambi). El script ya los lee solo.
+- Medido documento por documento, con el ajuste y sin él (`verificar.mjs` + `cargar.mjs --desde-verificacion --reemplazar`, ensayo): mismas filas, categorías,
+  financiero, impuesto, extraRows y totales; estado "ok" y 0 casos de cola en los dos. `data/` no cambia. Los comentarios "AJUSTE MANUAL" de esos años en
+  `data/` quedan como estaban (dicen con qué se cargó, igual que los de Napoli 2023 y 2024).
+- To-do 188: la frase que nombraba Bologna 2019-20 y 2020-21 como arreglados a mano se corrigió.
+
 ## Versión 618 — Ligas en inglés: países y divisiones 3 y 4 traducidos (2026-10-09)
 
 - Con el sitio en inglés, la grilla de Ligas mostraba 20 países en castellano ("Alemania", "Países Bajos") y "3ª división" / "4ª división": `data/lang/en.js` tenía
