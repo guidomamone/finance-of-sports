@@ -285,6 +285,17 @@ que se lea como un ejercicio completo raro). El documento y el hallazgo quedan d
 futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una de las 2 temporadas
 y recién ahí cargarla.
 
+**Balances parciales (de menos de 12 meses), to-do 190, Versión 631.** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
+fecha de cierre, un semestral): no se carga solo. Va a `Admin/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
+sirve), con lo que cubre y el tramo que falta; `lote.mjs` lo saltea y `tools/estado.mjs` lo lista en cada corrida con lo que falta, y la ficha del club
+en `fuentes/<País>/<Club>.md` dice qué tramo buscar. CÓMO SE JUNTAN DOS TRAMOS cuando aparece el que falta: (1) tienen que ser el mismo perímetro
+(individual o consolidado), la misma moneda y tramos contiguos que sumen exactamente 12 meses del ejercicio que se quiere armar; (2) ingresos y
+gastos se suman rubro por rubro en moneda local, y el resultado tiene que dar la suma de los dos resultados impresos; (3) el ejercicio queda con
+el cierre del SEGUNDO tramo (su `cierre`/`fxRef`, su caja y su deuda, que son saldos a esa fecha); (4) `publicNote` dice de qué documento sale cada
+tramo y sus fechas. Si alguna de esas condiciones no se cumple (perímetro o moneda distintos, tramos que no son contiguos), no se juntan y los dos
+quedan como parciales. Si un tramo es parte de un ejercicio cuyo balance anual completo existe (Juve Stabia: semestral al 31/12/2024 del ejercicio
+2024-25), lo que se busca es ese balance anual, no el otro semestre.
+
 **Nota aparte encontrada en el mismo documento** (no una regla, un dato suelto para no perder): la
 última columna mensual del PDF de Instituto dice "dic-24" en vez de "dic-25" — es un typo del propio
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa

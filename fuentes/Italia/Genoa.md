@@ -49,3 +49,7 @@ El ejercicio al 31/12/2021 no se publica por separado: solo aparece como columna
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2025 desde `Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf` (sourceId `genoa-it-bilancio-30-06-2025-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2023 desde `Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf` (sourceId `genoa-it-bilancio-31-12-2023-individual`).
+
+## Tramo que falta buscar (balance parcial, to-do 190, 2026-10-09)
+
+`Genoa-bilancio-30.06.2024-individual.pdf` cubre 2024-01-01 a 2024-06-30 (transición de cierre). Falta el tramo 2023-07-01 a 2023-12-31 (un semestral o una situazione al 31/12/2023) para armar la temporada 2023-24. Está en `Admin/documentos-parciales.txt`; cómo se juntan los tramos: `Admin/CONVENCIONES-DATOS.md`.

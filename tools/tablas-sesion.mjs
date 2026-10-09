@@ -27,6 +27,7 @@ const FUTBOL = new Set(['AC Milan', 'AS Roma', 'Atalanta', 'Bologna', 'Catania',
 const leerJson = (e, suf) => { try { const q = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(q) ? JSON.parse(readFileSync(q, 'utf8')) : null; } catch { return null; } };
 
 function motivoCorto(e, r) {
+  if (r.clave === 'parcial') return `parcial, menos de 12 meses: falta ${r.motivo}`; // (to-do 190)
   if (r.clave === 'e6-no-cerro') {
     const v = leerJson(e, '.verificacion.json'); if (!v) return 'etapa 6: no cerró';
     const fallan = (v.chequeos || []).filter((c) => c.ok === false).map((c) => c.nombre);

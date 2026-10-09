@@ -35,6 +35,7 @@ export const ETAPAS_DOC = {
   'e8-lista': [8, 'Etapa 8 · cargar: propuesta lista (falta escribir)'],
   'e9-cargado': [9, 'Etapa 9 · en el sitio'],
   descartado: [0, 'descartado como fuente (Admin/documentos-descartados.txt)'],
+  parcial: [0, 'balance parcial, de menos de 12 meses (Admin/documentos-parciales.txt): falta el otro tramo'],
 };
 const DE_ESTADO = { 'no-es-pdf': 'e1-roto', duplicado: 'e1-duplicado', 'sin-md': 'e2-sin-md', 'sin-tablas': 'e2-sin-tablas', 'sin-verificar': 'e2-sin-verificar', revisar: 'e2-revisar', 'pendiente-segunda-voz': 'e2-segunda-voz', reintentar: 'e2-reintentar', cargado: 'e9-cargado' };
 export const claveDeEstado = (estado) => DE_ESTADO[estado] || null;
@@ -43,9 +44,17 @@ const leerGen = (e, suf) => { try { const q = resolve(ROOT, derivado(e.md, suf, 
 // Descartados por Guido como fuente: lote.mjs los saltea; no son "pendientes".
 export const DESCARTADOS = new Set((existsSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 
+// Balances de menos de 12 meses (to-do 190, Versión 631): tampoco se cargan, pero no son "descartados": falta el otro tramo del ejercicio.
+// Admin/documentos-parciales.txt, una línea por documento: ruta # cubre AAAA-MM-DD a AAAA-MM-DD # falta: ... # quién y cuándo.
+export const PARCIALES = new Map((existsSync(resolve(ROOT, 'Admin', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'documentos-parciales.txt'), 'utf8') : '').split('\n')
+  .filter((l) => l.trim() && !l.trim().startsWith('#')).map((l) => { const [ruta, cubre = '', falta = ''] = l.split(' # ').map((x) => x.trim()); return [ruta, { cubre: cubre.replace(/^cubre\s+/, ''), falta: falta.replace(/^falta:\s*/, '') }]; }));
+
 // { clave, etapa, texto, motivo? } de una entrada del registro.
 export function etapaDe(e) {
   const r = (clave, motivo = null) => ({ clave, etapa: ETAPAS_DOC[clave][0], texto: ETAPAS_DOC[clave][1] + (motivo ? ` por "${motivo}"` : ''), motivo });
+  // un parcial va antes que "cargado": nunca se carga, y el registro infiere "cargado" por club y año (Juve Stabia: el semestral al 31/12/2024
+  // figuraba cargado porque el año 2024 del club se cargó desde el balance anual)
+  if (PARCIALES.has(e.pdf)) return r('parcial', PARCIALES.get(e.pdf).falta);
   if (e.cargado || e.estado === 'cargado') return r('e9-cargado');
   if (DESCARTADOS.has(e.pdf)) return r('descartado');
   if (e.estado !== 'listo') return DE_ESTADO[e.estado] ? r(DE_ESTADO[e.estado]) : { clave: `estado-${e.estado}`, etapa: 2, texto: `estado ${e.estado}` };

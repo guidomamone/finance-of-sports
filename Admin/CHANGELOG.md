@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 631 — To-do 190: los balances parciales, un estado propio (2026-10-09)
+
+- `Admin/documentos-parciales.txt` (nuevo): ruta # lo que cubre # el tramo que falta. Pasaron ahí, desde `documentos-descartados.txt`, Genoa 2024 (1/1-30/6),
+  Atalanta 2022 (1/1-30/6), Parma 2020 individual (1/9-31/12) y el semestral de Juve Stabia al 31/12/2024. El consolidado de Parma 2020 sigue descartado (perímetro).
+- `tools/etapa-doc.mjs`: estado nuevo "parcial" (va antes de "cargado": el registro marcaba el semestral de Juve Stabia como cargado porque infiere por club y año).
+  `lote.mjs` los saltea; `estado.mjs` los cuenta y lista en cada corrida con lo que falta; `tablas-sesion.mjs` los muestra como pendientes "parcial: falta ...".
+- `Admin/CONVENCIONES-DATOS.md`: cómo se juntan dos tramos (mismo perímetro y moneda, contiguos y 12 meses exactos; suma rubro por rubro; cierre, caja y deuda
+  del segundo tramo; publicNote con el origen de cada tramo) y cuándo no. Fichas de sourcing de los 4 clubes: el tramo que falta buscar.
+- Probado: `estado.mjs` cuenta 4 parciales; un lote con Genoa 2024 lo saltea; `audit.js` 0 P0 / 0 P1.
+
 ## Versión 630 — To-do 180(b): Comparar con un año en liras, visto en pantalla (2026-10-09)
 
 - Comparar, Lazio 00/01 (liras) contra Juventus 24/25, armado con clics: Lazio 146,5 M USD de ingresos con las mismas filas que Finanzas (16,3 / 18,9 / 59,0 /
