@@ -262,6 +262,18 @@ const asromaitRevenueLinesByYear = {
     { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:4.832, disclosureLevel:'aggregated' }, // pág. 76, precedente
     { rawLabel:'Ricavi da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'player_sales', amountNative:32.561, disclosureLevel:'aggregated' }, // pág. 76, precedente
   ],
+  // 2010: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/AS Roma/AS-Roma-bilancio-2010.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2010: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:23.821, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Altri ricavi delle vendite e delle prestazioni', normalizedCategory:'other_income', amountNative:7.109, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'b) Sponsorizzazioni', normalizedCategory:'sponsorship_commercial', amountNative:12.499, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'c) Diritti televisivi e diritti d\'immagine', normalizedCategory:'broadcasting', amountNative:75.151, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'d) Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:9.776, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'e) Altri proventi', normalizedCategory:'other_income', amountNative:7.741, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'f) Contributi in c/esercizio', normalizedCategory:'other_income', amountNative:0.947, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Gestione operativa netta calciatori', normalizedCategory:'player_sales', amountNative:18.992, disclosureLevel:'aggregated' }, // pág. 194, precedente
+  ],
 };
 const asromaitExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-07)
@@ -573,6 +585,17 @@ const asromaitExpenseLinesByYear = {
     { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-104.238, disclosureLevel:'aggregated' }, // pág. 76, precedente
     { rawLabel:'Oneri da gestione dei diritti pluriennali prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-16.461, disclosureLevel:'aggregated' }, // pág. 76, precedente
   ],
+  2010: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Acquisti materie di consumo', normalizedCategory:'admin_general_expense', amountNative:-5.532, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_expenses', amountNative:-0.256, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Spese per Servizi', normalizedCategory:'admin_general_expense', amountNative:-21.067, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Spese per godimento beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-7.107, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Spese per il personale', normalizedCategory:'wages_squad', amountNative:-101.245, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Oneri diversi di gestione', normalizedCategory:'other_expenses', amountNative:-16.855, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Ammortamenti e svalutazioni', normalizedCategory:'player_amortisation', amountNative:-24.327, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-0.236, disclosureLevel:'aggregated' }, // pág. 194, precedente
+    { rawLabel:'Risultato (utili) di terzi', normalizedCategory:'other_expenses', amountNative:-0.243, disclosureLevel:'aggregated' }, // pág. 194, precedente
+  ],
 };
 const asromaitFiscalYearMeta = {
   2022: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -860,6 +883,21 @@ const asromaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:173.811, officialTotalExpenses:345.751, officialPAT:-204.492,
   },
+  2010: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2010-06-30',
+    sourceId:'asroma-it-bilancio-2010',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:1.992, tax:-3.167,
+    extraRows: [
+      {label:'Proventi (oneri) finanziari netti', value:1.992},
+      {label:'a) imposte correnti', value:-3.18},
+      {label:'b) imposte anticipate e differite', value:0.013},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:156.036, officialTotalExpenses:176.868, officialPAT:-22.007,
+  },
 };
 const asromaitPresupuestoOverlayByYear = {};
 
@@ -979,6 +1017,12 @@ Object.assign(sources, {
     title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'asroma-it-bilancio-2010': {
+    id:'asroma-it-bilancio-2010', clubId:'asroma-it',
+    title:'A.S. Roma S.r.l. — AS-Roma-bilancio-2010 (ejercicio 2010)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 

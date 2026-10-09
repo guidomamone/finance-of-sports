@@ -82,3 +82,5 @@ recorrer el archivo `investor-relations` completo — no se agotó esta sesión.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2011 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.pdf` (sourceId `asroma-it-bilancio-2011-consolidato`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2020 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.pdf` (sourceId `asroma-it-bilancio-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2010 desde `Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.pdf` (sourceId `asroma-it-bilancio-2010`).
