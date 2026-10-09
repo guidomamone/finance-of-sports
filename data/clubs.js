@@ -460,6 +460,9 @@ const clubs = {
   // Juve Stabia: alta por tools/alta-club.mjs (2026-10-08) desde Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf. brandColor AUSENTE a propósito
   // (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).
   'juvestabia-it': { id:'juvestabia-it', name:'Società Sportiva Juve Stabia S.r.l.', displayName:'Juve Stabia', country:'IT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFD200' },
+  // Criciuma: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf. brandColor:null a propósito:
+  // tricolor amarillo, negro y blanco, mismo criterio que Fortaleza (procedencia en fuentes/Brasil/Criciuma.md).
+  'criciuma-br': { id:'criciuma-br', name:'Criciúma Esporte Clube', displayName:'Criciuma', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

@@ -158,6 +158,11 @@ const LEAGUES = {
   // 30/6, mismo criterio que España/Alemania/Países Bajos. Nombre sin sponsor ("Pro League" es el
   // nombre de la competencia en sí, no lleva sponsor en el nombre oficial actual).
   'be-proleague':      { name:'Pro League',            full:'Pro League de Bélgica',                country:'BE', sport:'futbol', tier:1 },
+  // onboarding to-do 165, 2026-10-09: escalones 2 a 5 de Bélgica (OH Leuven 2017-2020, RAAL La Louvière 2018-2025); nombres sin sponsor.
+  'be-challengerproleague': { name:'Challenger Pro League', full:'Challenger Pro League de Bélgica',  country:'BE', sport:'futbol', tier:2 },
+  'be-div1amateur':    { name:'1. Amateur Division',   full:'Belgian Division 1 (Eerste nationale)', country:'BE', sport:'futbol', tier:3 },
+  'be-div2amateur':    { name:'2. Amateur Division',   full:'Belgian Division 2 (Tweede klasse amateurs)', country:'BE', sport:'futbol', tier:4 },
+  'be-div3amateur':    { name:'3. Amateur Division',   full:'Belgian Division 3 (Derde klasse amateurs)', country:'BE', sport:'futbol', tier:5 },
   'br-serieA':         { name:'Brasileirão Série A',   full:'Campeonato Brasileiro Série A',       country:'BR', sport:'futbol', tier:1 },
   'br-serieB':         { name:'Brasileirão Série B',   full:'Campeonato Brasileiro Série B',       country:'BR', sport:'futbol', tier:2 },
   // 3ª división (Versión 217, onboarding de Volta Redonda 2024, campeón de esa edición): mismo
@@ -212,6 +217,8 @@ const LEAGUES = {
   'at-bundesliga':     { name:'Bundesliga',            full:'Bundesliga de Austria',               country:'AT', sport:'futbol', tier:1 },
   'at-2liga':          { name:'2. Liga',               full:'2. Liga de Austria',                  country:'AT', sport:'futbol', tier:2 },
   'ch-superleague':    { name:'Super League',          full:'Super League de Suiza',               country:'CH', sport:'futbol', tier:1 },
+  // onboarding to-do 165, 2026-10-09: Challenge League de Suiza (Thun 2020-2024).
+  'ch-challengeleague': { name:'Challenge League',     full:'Challenge League de Suiza',           country:'CH', sport:'futbol', tier:2 },
   'cn-csl':            { name:'Super League',          full:'Superliga de China',                  country:'CN', sport:'futbol', tier:1 },
   'cn-league1':        { name:'League One',            full:'China League One',                    country:'CN', sport:'futbol', tier:2 },
   'cz-firstleague':    { name:'Primera Liga',          full:'Primera Liga checa',                  country:'CZ', sport:'futbol', tier:1 },
@@ -230,9 +237,15 @@ const LEAGUES = {
   'kr-kleague2':       { name:'K League 2',            full:'K League 2',                          country:'KR', sport:'futbol', tier:2 },
   'nl-eerstedivisie':  { name:'Eerste Divisie',        full:'Eerste Divisie de los Países Bajos',  country:'NL', sport:'futbol', tier:2 },
   'no-eliteserien':    { name:'Eliteserien',           full:'Eliteserien de Noruega',              country:'NO', sport:'futbol', tier:1 },
+  // onboarding to-do 165, 2026-10-09: 1. divisjon de Noruega (Sandefjord 2008-2019).
+  'no-1divisjon':      { name:'1. divisjon',           full:'Norwegian First Division (Adeccoligaen/OBOS-ligaen)', country:'NO', sport:'futbol', tier:2 },
   'pt-primeiraliga':   { name:'Primeira Liga',         full:'Primeira Liga de Portugal',           country:'PT', sport:'futbol', tier:1 },
   'pt-ligaportugal2':  { name:'Liga Portugal 2',       full:'Liga Portugal 2',                     country:'PT', sport:'futbol', tier:2 },
+  // onboarding to-do 165, 2026-10-09: Liga 3 de Portugal (Alverca 2024).
+  'pt-liga3':          { name:'Liga 3',                full:'Liga 3 de Portugal',                  country:'PT', sport:'futbol', tier:3 },
   'ru-premierliga':    { name:'Premier Liga',          full:'Liga Premier de Rusia',               country:'RU', sport:'futbol', tier:1 },
+  // onboarding to-do 165, 2026-10-09: Primera Liga rusa (Sochi 2024).
+  'ru-pervayaliga':    { name:'Primera Liga',          full:'Primera Liga de Rusia (FNL)',         country:'RU', sport:'futbol', tier:2 },
   'tr-superlig':       { name:'Süper Lig',             full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },
   'tr-1lig':           { name:'1. Lig',                full:'TFF 1. Lig',                          country:'TR', sport:'futbol', tier:2 },
 };

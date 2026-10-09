@@ -13,7 +13,7 @@
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2012: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -165,6 +165,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"goias-br", revenue:23.851, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2012-2011",
         mix:[["Cuotas Sociales",1.627],["Comercial / Sponsors",0.464],["Estadio",1.83],["Televisión",17.969],["Premios por competencias",0.46],["Venta de Jugadores",2.311],["Otros ingresos",-0.81]] },
+      { id:"criciuma-br", revenue:10.052, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-demonstrativo-financeiro-2012",
+        mix:[["Cuotas Sociales",2.752],["Comercial / Sponsors",0.412],["Fútbol profesional (sin desglosar por la fuente)",6.697],["Otros ingresos",0.192]] },
     ],
   },
   2011: {
