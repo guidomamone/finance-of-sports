@@ -10,6 +10,12 @@
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
+  'juvestabia-it': [
+    // Andrea Langella: presidente y dueño; la fuente (título de un artículo aportado por Guido, "2021 - 2026: The Andrea Langella Era") da solo los años: día 01 por convención.
+    // Falta la URL del artículo y la fecha de asunción exacta.
+    { nombre:'Andrea Langella', corto:'Langella', cargo:'Presidente', desde:'2021-01-01', hasta:'2026-01-01',
+      fuente:'artículo "2021 - 2026: The Andrea Langella Era" (aportado por Guido, 2026-10-09; falta la URL)', confirmada:true },
+  ],
   'salernitana-it': [
     // Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021, con un administrador único, condujo antes); firma los balances 2022 y 2023.
     { nombre:'Danilo Iervolino', corto:'Iervolino', cargo:'Presidente', desde:'2022-01-13', hasta:null,
