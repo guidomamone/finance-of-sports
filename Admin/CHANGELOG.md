@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 624 — To-do 188 cerrado en lo que tenía arreglo; Bologna conserva sus ajustes (2026-10-09)
+
+- Bologna 2023-24 y 2024-25: los 4 ajustes del financiero se quedan (decisión de Guido). Sin ellos la carga es idéntica en importes, pero el 17) y los otros
+  proventi financieros quedan los dos como "altri" y la tabla multi-año los suma en una fila. Anotado en el to-do 188 para que no se anulen por redundantes.
+- To-do 188 reescrito: solo lo que el escalón no resuelve (Milan 2017-18, 2021-22 y 2023-24, Inter 2020-21 y 2024-25, Roma 2005).
+
 ## Versión 623 — To-do 188, peldaño B: la D que quedó en el financiero (2026-10-09)
 
 - `tools/verificar.mjs`, escalón "17) resta": la compuerta de C mira solo las filas de C; las filas de la D que la extracción dejó en el financiero van con el

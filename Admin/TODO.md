@@ -253,19 +253,14 @@ ni en el comentario de ningún archivo de código.
 
 185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
 
-188. COSTOS FINANCIEROS DEL CODICE CIVILE QUE SUMAN EN VEZ DE RESTAR (verificar.mjs). El 17) "interessi ed altri oneri finanziari" y el D 19) se imprimen en positivo y se restan por posición; el
-    script los suma. Hoy llevan un ajuste `fila` por esto Torino 2019 y Bologna 2023-24 y 2024-25 (ver el diagnóstico; Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total
-    C impreso solo cierra así, con la compuerta de siempre (el total de la sección impreso). Sin probar; ningún agente lo midió.
-    DIAGNÓSTICO 2026-10-09 (un Sonnet midió en una copia, 242 documentos con verificación; propuesta lista en `Admin/propuestas/188-costos-financieros-codice-civile.diff`, NO aplicada): vale la pena. La lista de arriba está
-    vieja: con el código de hoy ya cierran sin ajuste Bologna 2019-20, 2020-21 y 2021-22, Genoa 2023, Torino 2018, 2021 y 2024, Udinese 2021-22 y 2024-25, Como 2024 e Inter 2021-22 (esos ajustes son redundantes). Solo
-    tres documentos con costo positivo necesitan el escalón: Torino 2019, Bologna 2023-24 y 2024-25. Causas: en Bologna la extracción dejó la sección D (L1279, "a) di partecipazioni 259.314", bajo "19) svalutazioni") como
-    financiero y la compuerta del escalón 17 la suma contra el total de C; en Torino 2019 la tabla llegó sin etiquetas (sin "17)" en el .md) y el total de C no es el último subtotal. Diseño, dentro del escalón "17) resta"
-    existente y sin escalón nuevo: (1) si el .md no trae el 17), tomarlo del nombre del renglón ("interessi e(d) altri oneri finanziari" o la versión en inglés de Juventus); (2) probar los subtotales del financiero del último
-    al primero y quedarse con el primero cuya suma, con el 17) restando, da EXACTO el total impreso de C; (3) la D que quedó en el financiero: después del total de C el 19) resta y el 18) suma, solo si da exacto el último subtotal
-    de D. Medición: con todos los ajustes puestos, 0 diferencias en las 87 de prueba-completa, en los 177 de Italia y en los 242; sin su ajuste, Torino 2019, Bologna 2023-24 y 2024-25 pasan de cola a ok con la carga idéntica.
-    No resuelve (sus ajustes siguen haciendo falta): Milan 2017-18 y 2021-22 e Inter 2024-25 (cierran con la lectura 4 en vez de la 5, mismos totales y distinto detalle), Milan 2023-24 (el documento dice "19 rivalutazioni"
-    en vez de svalutazioni: el signo debería elegirse por las sumas), Inter 2020-21 (la fila de la D no entró) y Roma 2005. Recomendación: hacerla; después, en otro paso, anular los ajustes redundantes. Cuidado: no probar una
-    guarda genérica "si la propuesta es idéntica no propone nada": rompe Atalanta 2025.
+188. COSTOS FINANCIEROS DEL CODICE CIVILE: LO QUE EL ESCALÓN "17) RESTA" NO RESUELVE. CONOCIDO, SIN DAÑO HOY. Los peldaños A (17) por el nombre de la fila y
+    subtotales anteriores, Versión 621) y B (la D que quedó en el financiero, Versión 623) ya están; Torino 2019 se recargó sin su ajuste. Siguen con ajustes,
+    cargados bien: Milan 2017-18 y 2021-22 e Inter 2024-25 (cierran con la lectura 4 en vez de la 5, mismos totales y distinto detalle), Milan 2023-24 (el
+    documento dice "19 rivalutazioni" en vez de svalutazioni: el signo debería elegirse por las sumas), Inter 2020-21 (la fila de la D no entró) y Roma 2005.
+    CUÁNDO HACERLO: si un documento nuevo con este patrón frena. Cuidado: no probar una guarda genérica "si la propuesta es idéntica no propone nada": rompe Atalanta 2025.
+    NO ANULAR los 4 ajustes del financiero de Bologna 2023-24 y 2024-25 (17) y D 19)) aunque el escalón ya cierre sin ellos (decisión de Guido, 2026-10-09):
+    sin ellos el 17) y los otros proventi se llaman los dos "altri" y Finanzas multi-año (`filaDe`, js/finanzas-multi.js) los suma en una fila (+5,25 y −6,45 M
+    se ven como −1,20 M). Los ajustes solo les dan nombres distintos.
 
 189. EL CHEQUEO DEL AÑO VECINO NO USA LOS AJUSTES `fila` (verificar.mjs, `compararVecino` y `vecinoDe`). Lee el `.filas.json` crudo de los dos documentos, sin los ajustes, y un ajuste `fila` solo trae la
     columna ACTUAL, así que no hay cómo corregir la columna del año anterior. Casos (todos ya aceptados por la cola, sin daño en datos): Roma 2007 contra 2008 (157.589 contra 162.017: 2007 ya lleva
