@@ -15,7 +15,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 614 — Roma 2005, Sassuolo 2018 y Roma 2006 cargados; ajuste `estado` (2026-10-09)
+## Versión 614 — Roma 2005, Roma 2006 y Sassuolo 2018 cargados: el fútbol de Italia queda cerrado; ajuste `estado` (2026-10-09)
 
 - AS Roma 2005 (consolidado, b107-b112, con 4 filas fuera de tabla por ajuste) y 2006 cargados; gestión de Roma completa hasta 2010 (Franco Sensi hasta el 17/8/2008, Rosella Sensi desde ahí). Cola
   de Roma 2005 contestada (los oneri pluriennali ex art. 18-bis, como los de DL 282 de Lazio 2005, van como `other_amortisation`).

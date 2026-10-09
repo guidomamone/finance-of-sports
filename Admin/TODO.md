@@ -230,21 +230,10 @@ ni en el comentario de ningún archivo de código.
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
 
-179. ITALIA: QUÉ FALTA PARA CERRAR EL FÚTBOL, DOCUMENTO POR DOCUMENTO (2026-10-09). Cómo se ve hoy: `node tools/tablas-sesion.mjs --italia` (gratis; antes `node tools/estado.mjs --actualizar`).
-    172 ejercicios cargados (Juventus 23 y 149 de los otros 21 clubes) y 4 documentos de fútbol pendientes. Años = año de cierre (2020 = 2019-20). Los grupos 1 y 2 (documentos que no cerraban el
-    resultado o fallaban el año vecino) se resolvieron con ajustes manuales, tres escalones del script (sección D y E, financiero sin hojas, columna anterior con signo), la cola contestada con la
-    evidencia y la corrida de los lotes 42 a 53. Lo que queda:
-    1. AS Roma 2005 y 2006. Roma 2005: el localizador eligió la tabla de la controlada Roma International Football Service (en euros); el estado correcto es b107-b112 (consolidado), ya corregido en
-       `ubicacion.json`. Falta re-extraer: `caffeinate -i node tools/extraer.mjs --lista Admin/lote-52.txt --rehacer --ejecutar` (~US$ 0,47, lo corre Guido) y después `lote.mjs --ejecutar`. Roma 2006
-       (individual, único estado de ese año; el documento de 2007 lo reexpresó a IFRS) espera a que Roma 2005 esté cargado: sus casos 27c4256 y 5949b6c.
-    2. Sassuolo 2018: el estado de la pág. 17 perdió las etiquetas; se reemplazó en el .md por la segunda lectura de Gemini (coincide cifra por cifra con la columna anterior de Sassuolo 2019). Mismo
-       `Admin/lote-52.txt`. OJO con el punto 181.
-    3. Catania 2011 (artículo de prensa) y Juve Stabia semestral: solo transcripción (punto 184).
-    Gestiones pendientes de Roma en `data/gestiones/it.js`: Franco Sensi hasta 2008 (cierres 2007 y 2008) y 2011 (Cappelli y DiBenedetto); la fuente da solo los años. Juve Stabia 2024 sin gestión
-    (pregunta al club en `Admin/dudas-por-club.md`).
-    Ya resueltos, para no rehacerlos: Lazio 1999 a 2001 en liras (180 abajo), Lazio 2004 a 2026, Milan 2008 a 2013 y 2019, Roma 2007 a 2020 (gestión de jugadores NETA hasta 2017, ver CONVENCIONES-DATOS), Inter
-    2018 a 2025, Torino, Napoli, Atalanta, Parma, Sassuolo 2019 a 2025, Fiorentina, Genoa 2022, 2023 y 2025, Hellas Verona, Sampdoria 2018 a 2021, Bologna 2018 a 2025, Chievo 2014 a 2016, Salernitana 2022
-    y 2023 y Juve Stabia 2024. Altas nuevas: Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3).
+179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). Solo queda
+    Catania 2011 (un artículo de prensa) y el Juve Stabia semestral: transcripción, sin cargar (punto 184). Quedaron anotados: las gestiones de Roma 2011 (Cappelli y DiBenedetto: la fuente da solo
+    los años) y de Inter 2017-18 en `data/gestiones/it.js`; la pregunta a Juve Stabia por la fecha exacta del cambio de dueño (Langella hasta junio de 2026, Guerri desde ahí) en `Admin/dudas-por-club.md`;
+    las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); y el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada).
 
 180. LIRAS (ITL) Y EL RESTO DE LAS MONEDAS LEGADO. Hecho (Versión 607) para Lazio 1998-99, 1999-00 y 2000-01: ajuste manual `moneda` (tools/ajustes.mjs), ITL en CURRENCY_META con
     `euroFijo` 1936.27, ITL@AAAA-06-30 en FX_CLOSE y una excepción en `toDisplayValue` (js/finanzas-calc.js) para mostrarlas en EUR. Falta: (a) cualquier otro club o país con ejercicios
@@ -265,9 +254,8 @@ ni en el comentario de ningún archivo de código.
     artículo de prensa). `Admin/lote-41.txt`; lo corre Guido: `caffeinate -i node tools/pipeline.mjs --lista Admin/lote-41.txt --max-paginas 0 --limit 0 --ejecutar`. Después pasarlos a
     Admin/documentos-descartados.txt con esa aclaración, así ningún lote los toma.
 
-185. COLA HUMANA: 41 CASOS EN 20 DOCUMENTOS (2026-10-09). Casi todos son de documentos ya cargados cuyas respuestas quedaron como notas, o de Roma 2005 y 2006 (esperan la re-extracción). Lo que sí es
-    una pregunta propia: las gestiones de Roma 2007, 2008 y 2011 (ver 179) y Inter 2017-18 en `data/gestiones/it.js` (formato en data/gestiones/ar.js); con fuente que lo confirme se completan y se
-    responde `aceptar`; sin fuente, `descartar`.
+185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Lo que sí es una pregunta propia: las gestiones de Roma 2011 e Inter 2017-18 en
+    `data/gestiones/it.js` (formato en data/gestiones/ar.js); con fuente que lo confirme se completan y se responde `aceptar`; sin fuente, `descartar`.
 
 186. PUSH A PRODUCCIÓN. Se subieron 103 commits el 2026-10-08 (`60103db83`) sin mirar el sitio en el navegador; hay unos 25 commits locales más desde entonces. Cada push es un deploy de Netlify y lo hace Guido. Antes de
     subir: `node tools/audit.js --quiet` (hoy P0 0 y P1 0) y abrir el sitio local para mirar Lazio (años en liras y Serie A 2005 a 2021), Roma, Milan, Torino, Bologna 2024-25 (individual), Chievo, Salernitana y Juve Stabia (liga Serie C en la pestaña Ligas).
