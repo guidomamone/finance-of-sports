@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 616 — Deflactores desde 1995: Lazio 1998/99 se ajusta por inflación (2026-10-09)
+
+- Revisión antes del push (to-do 186): en Finanzas de Lazio, con "Valores ajustados por inflación", 1998/99 quedaba en el valor nominal (132,9 M USD)
+  al lado de 1999/00 ajustado (300,4), y el texto decía "100 M USD in 1998/99 equal 100 M in 2024/25". La serie de deflactores arrancaba en 2000 y
+  `fac()` (js/finanzas-multi.js) devuelve 1 si falta el año. Es el único ejercicio del sitio anterior a 2000.
+- `tools/fetch-fx-reference.mjs --deflactores` baja ahora desde 1995 (FRED y Eurostat); `data/deflactores.js` regenerado: los años 2000-2025
+  quedaron idénticos, solo se agregan 1995-1999. Lazio 1998/99 ajustado: 240,9 M USD (Δ real a 2025/26: −18%). ASSET_V 599 y fuentes regeneradas.
+- Lo demás de la revisión, sin cambios: `audit.js` 0 P0 / 0 P1; `auditAll()` 190 clubes, 1.592 checks, solo los 3 de Bayern de siempre, 0 avisos de fx;
+  Lazio (liras), Roma, Milan, Torino, Bologna, Chievo, Salernitana y Juve Stabia cargan bien; Serie C muestra a Juve Stabia 2023/24.
+
 ## Versión 615 — Lazio 2000-01: ajustes manuales para que una corrida nueva dé lo publicado (2026-10-09)
 
 - Lo publicado estaba bien. Los 334.514 millones de liras de ingresos son la sección A (245.757, L1166) más los proventi straordinari de

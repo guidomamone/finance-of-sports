@@ -882,6 +882,8 @@ async function runOne(code, from, to) {
 //   USD: deflactor implícito del PBI de EE.UU. (BEA), vía FRED, serie anual A191RD3A086NBEA, 2017=100.
 //   EUR: deflactor del PBI de la zona euro (Eurostat nama_10_gdp, EA20, PD15_EUR, B1GQ), 2015=100.
 // Se corre una vez por año, cuando las dos fuentes publican el año que cerró.
+// DESDE 1995 (antes 2000): Lazio 1998-99 cierra en 1999 y sin su valor `fac()` de js/finanzas-multi.js devuelve 1, así que ese año
+// quedaba nominal en "ajustado por inflación" sin ningún aviso. Si se carga un ejercicio anterior a 1995, bajar este corte.
 // ============================================================================
 const DEFLACTORES = {
   USD: { file: 'deflactor-usd.json', nombre: 'deflactor del PBI de EE.UU.', fuente: 'BEA, vía FRED (A191RD3A086NBEA), índice 2017 = 100',
@@ -892,12 +894,12 @@ const DEFLACTORES = {
       for (const line of (await r.text()).trim().split('\n').slice(1)) {
         const [fecha, v] = line.split(',');
         const y = Number(fecha.slice(0, 4));
-        if (y >= 2000 && v && v !== '.') out[y] = Number(v);
+        if (y >= 1995 && v && v !== '.') out[y] = Number(v);
       }
       return out;
     } },
   EUR: { file: 'deflactor-eur.json', nombre: 'deflactor del PBI de la zona euro', fuente: 'Eurostat (nama_10_gdp, EA20, PD15_EUR), índice 2015 = 100',
-    url: 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?geo=EA20&unit=PD15_EUR&na_item=B1GQ&sinceTimePeriod=2000&format=JSON&lang=EN',
+    url: 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?geo=EA20&unit=PD15_EUR&na_item=B1GQ&sinceTimePeriod=1995&format=JSON&lang=EN',
     async fetch() {
       const r = await fetchRetry(this.url);
       const j = await r.json();
