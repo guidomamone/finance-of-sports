@@ -102,6 +102,20 @@ const criciumabrRevenueLinesByYear = {
     { rawLabel:'Receita Direitos Condomínio LFU', normalizedCategory:'broadcasting', amountNative:62.25, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
     { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:2.196626, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Criciuma/relatorio-de-balanco-2024.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2024: [
+    { rawLabel:'Receita com transmissão', normalizedCategory:'broadcasting', amountNative:60.386671, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita com sócios', normalizedCategory:'member_dues', amountNative:20.169677, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.9
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:10.039129, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita de subvenções', normalizedCategory:'other_income', amountNative:0.529636, disclosureLevel:'aggregated' }, // pág. 25, precedente
+    { rawLabel:'Receita com negociação de atletas', normalizedCategory:'player_sales', amountNative:1.947359, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita com jogos', normalizedCategory:'matchday_competition', amountNative:2.967683, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Receita com licenciamento – royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.204296, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita Timemania - CEF', normalizedCategory:'other_income', amountNative:0.695093, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+    { rawLabel:'Receita Direitos Condomínio LFU', normalizedCategory:'broadcasting', amountNative:-31.125, disclosureLevel:'aggregated' }, // pág. 25, Jev 0.99
+    { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:3.033903, disclosureLevel:'aggregated' }, // pág. 25, Jev 1
+  ],
 };
 const criciumabrExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-09)
@@ -156,11 +170,19 @@ const criciumabrExpenseLinesByYear = {
     { rawLabel:'Departamento de Patrimônio', normalizedCategory:'admin_general_expense', amountNative:-4.220841, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
     { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.746126, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  2024: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Departamento Futebol Profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-77.261712, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento Futebol de Base', normalizedCategory:'youth_other_sports_expense', amountNative:-3.250239, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Departamento Futebol Feminino', normalizedCategory:'youth_other_sports_expense', amountNative:-0.717369, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Departamento Administrativo', normalizedCategory:'admin_general_expense', amountNative:-4.054096, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Departamento de Patrimônio', normalizedCategory:'admin_general_expense', amountNative:-8.859302, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-3.441472, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+  ],
 };
 const criciumabrFiscalYearMeta = {
   // 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2012-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2012-12-31
   2012: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-09): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2023): Estadio, Televisión, Venta de Jugadores
+    // tools/dentro-de-otro.mjs (2026-10-09): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2023, 2024): Estadio, Televisión, Venta de Jugadores
     incluidoEn:{ matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2012-12-31',
     sourceId:'criciuma-br-demonstrativo-financeiro-2012',
@@ -181,7 +203,7 @@ const criciumabrFiscalYearMeta = {
     officialTotalRevenue:20.542105, officialTotalExpenses:21.274856, officialPAT:-2.088802,
   },
   2013: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-09): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2023): Estadio, Televisión, Venta de Jugadores
+    // tools/dentro-de-otro.mjs (2026-10-09): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2023, 2024): Estadio, Televisión, Venta de Jugadores
     incluidoEn:{ matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2013-12-31',
     sourceId:'criciuma-br-demonstracoes-financeiras-2013',
@@ -277,6 +299,25 @@ const criciumabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:101.742437, officialTotalExpenses:42.80291, officialPAT:57.186452,
   },
+  // 2024: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2024-12-31
+  2024: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2024-12-31',
+    sourceId:'criciuma-br-relatorio-de-balanco-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.259387, tax:0,
+    extraRows: [
+      {label:'Despesas Financeiras', value:-2.161965},
+      {label:'Receitas Financeiras', value:0.902578},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Departamento Futebol Profissional', lado:'expense', importe:77.261712, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:69.848447, officialTotalExpenses:97.58419, officialPAT:-28.995129,
+  },
 };
 const criciumabrPresupuestoOverlayByYear = {};
 
@@ -330,6 +371,12 @@ Object.assign(sources, {
     title:'Criciúma Esporte Clube — relatorio-de-balanco-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'criciuma-br-relatorio-de-balanco-2024': {
+    id:'criciuma-br-relatorio-de-balanco-2024', clubId:'criciuma-br',
+    title:'Criciúma Esporte Clube — relatorio-de-balanco-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

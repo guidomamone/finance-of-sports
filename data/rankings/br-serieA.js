@@ -5,7 +5,7 @@
 //
 // Brasileirão Série A (BR) — 12 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -115,6 +115,9 @@ window.RANKINGS["br-serieA"] = {
         sourceId:"bahia-br-demonstracoes-2024",
         mix:[["Comercial / Sponsors",9.22],["Estadio",13.433],["Televisión",18.214],["Venta de Jugadores",5.764],["Otros ingresos",-1.647]],
         incluidos:[["Cuotas Sociales","Estadio"]] },
+      { id:"criciuma-br", revenue:11.28, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-relatorio-de-balanco-2024",
+        mix:[["Cuotas Sociales",3.257],["Comercial / Sponsors",1.816],["Estadio",0.479],["Televisión",4.725],["Venta de Jugadores",0.314],["Otros ingresos",0.688]] },
     ],
   },
   2023: {
