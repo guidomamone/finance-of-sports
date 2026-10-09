@@ -10,7 +10,7 @@
 //   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -303,6 +303,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"napoli-it", revenue:341.243, reportType:"official_balance_sheet",
         sourceId:"napoli-it-bilancio-2019",
         mix:[["Comercial / Sponsors",46.893],["Estadio",18.063],["Televisión",162.562],["Venta de Jugadores",107.051],["Otros ingresos",6.675]] },
+      { id:"acmilan-it", revenue:274.392, reportType:"official_balance_sheet",
+        sourceId:"acmilan-it-bilanci-relazioni-2018-19",
+        mix:[["Comercial / Sponsors",64.692],["Estadio",34.478],["Televisión",119.545],["Premios por competencias",4.341],["Venta de Jugadores",29.06],["Otros ingresos",22.276]] },
       { id:"atalanta-it", revenue:211.897, reportType:"official_balance_sheet",
         sourceId:"atalanta-it-bilancio-consolidato-2019",
         mix:[["Comercial / Sponsors",26.156],["Estadio",15.176],["Televisión",100.885],["Venta de Jugadores",51.451],["Otras secciones deportivas",1.085],["Otros ingresos",17.143]] },
