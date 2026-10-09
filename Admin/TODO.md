@@ -29,17 +29,6 @@ ni en el comentario de ningún archivo de código.
         (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
         `fuentes/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
 
-82. EVALUAR SI EL FUNNEL DE SOURCING DEBERÍA TENER ARISTAS ESPECÍFICAS POR PAÍS, en vez de una
-    escalera única para todos (pedido de Guido, 2026-09-27, generalizando la distinción que motivó
-    separar los to-dos 80 y 81: Reddit rinde en países angloparlantes y no en LatAm, mismo patrón
-    ya visible en la escalera de `.claude/skills/club-sourcing/SKILL.md` 0.1, donde la familia 2
-    —regulador— ya varía radicalmente por país (CMF en Chile, SIIS en Colombia, IGJ bloqueada en
-    Argentina, nada documentado en Perú). La pregunta a resolver: ¿conviene formalizar un mapa
-    explícito país → ángulos-que-rinden (qué redes sociales, qué tipo de sitio de hinchas, qué
-    idioma de búsqueda) en vez de que cada sesión lo redescubra sola? Es una pregunta de arquitectura
-    del skill, no una herramienta puntual — pensarla junto con Guido antes de tocar
-    `club-sourcing/SKILL.md` (mismo criterio ya establecido: no editar el skill sin avisar).
-
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1 (rediseñado 2026-09-24, decisión de Guido
     tras comparar alternativas: Gmail/MCP, APIs transaccionales, no-code, agentes dedicados). El
     diseño original de este punto ("Claude redacta, Guido aprueba en el chat, envío por Gmail")
@@ -205,9 +194,6 @@ ni en el comentario de ningún archivo de código.
     NO ANULAR los 4 ajustes del financiero de Bologna 2023-24 y 2024-25 (17) y D 19)) aunque el escalón ya cierre sin ellos (decisión de Guido, 2026-10-09):
     sin ellos el 17) y los otros proventi se llaman los dos "altri" y Finanzas multi-año (`filaDe`, js/finanzas-multi.js) los suma en una fila (+5,25 y −6,45 M
     se ven como −1,20 M). Los ajustes solo les dan nombres distintos.
-
-191. UNA RESPUESTA VIEJA DE LA COLA PUEDE TAPAR UNA ALARMA REAL (verificado 2026-10-09 por un Sonnet): Sampdoria 2018 sin sus ajustes queda en "ok" con
-    "resultado del ejercicio" fallando. No es daño hoy (el ajuste está y la carga es correcta). Los 8 ajustes redundantes que también listaba este punto se anularon (Versión 619).
 
 96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
     ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más

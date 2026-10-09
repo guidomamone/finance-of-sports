@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 632 — To-dos 82 y 191 cerrados (2026-10-09)
+
+- 82 (mapa país → canales de sourcing): cerrado por Guido. Ya lo resolvió el to-do 87 (un archivo por país en `.claude/skills/club-sourcing/paises/`).
+- 191 (una respuesta vieja de la cola puede tapar una alarma): verificado por un Sonnet en una copia, SIN DAÑO. Sampdoria 2018 con sus ajustes coincide con el
+  documento (resultado 12.052.939, .md L1045-L1064) y una corrida nueva lo reproduce sin frenar. El mecanismo es real: la respuesta se reconoce por pdf + chequeo,
+  sin cifras (caso 35def6e). Recorridos los 242 documentos: ningún chequeo de resultado de un documento cargado queda tapado (el único es UC 2009, descartado).
+  Cerrado (decisión de Guido: lo que se verifica sin daño se cierra).
+
 ## Versión 631 — To-do 190: los balances parciales, un estado propio (2026-10-09)
 
 - `Admin/documentos-parciales.txt` (nuevo): ruta # lo que cubre # el tramo que falta. Pasaron ahí, desde `documentos-descartados.txt`, Genoa 2024 (1/1-30/6),
