@@ -56,13 +56,13 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`, Versión 561): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el
   ajuste `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de
   perímetro, frena y decide Guido. Reconoce títulos en italiano e inglés; en otros idiomas no decide (frena como antes).
-- Italia (onboarding en curso): 22 clubes con alta. Cargados 161 ejercicios: Juventus 23, Lazio 24, AC Milan 13, AS Roma 13, Parma 9, Napoli 8, Torino 8, Bologna 8, Atalanta 7, Sassuolo 7, Inter 7,
-  Hellas Verona 6, Fiorentina 5, Cremonese 4, Monza 3, Sampdoria 3, Genoa 3, Como 2, Udinese 2, Chievo Verona 2, Juve Stabia 1 (liga `it-seriec`, Serie C) y Salernitana 2 (2022 desde el comparativo
+- Italia (onboarding en curso): 22 clubes con alta. Cargados 172 ejercicios: Juventus 23, Lazio 26, AS Roma 19, AC Milan 14, Parma 9, Napoli 8, Torino 8, Bologna 8, Inter 8, Atalanta 7, Sassuolo 7,
+  Hellas Verona 6, Fiorentina 5, Cremonese 4, Monza 3, Sampdoria 4, Genoa 3, Como 2, Udinese 2, Chievo Verona 2, Juve Stabia 1 (liga `it-seriec`, Serie C) y Salernitana 2 (2022 desde el comparativo
   de 2023, el escaneo no se lee). El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D y la E, el subtotal repetido, el renglón grande sin abrir (TV escondida en
   "altri"), la etapa 4 que frenaba en silencio, el resultado impreso en una tabla de una fila pegada al estado, la gestión de jugadores neta de Roma y las secciones D y E juntas de Milan y Chievo.
   Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166, 179, 187, 188). Atalanta y Parma cambiaron la fecha de cierre y la etiqueta de algunos años se ve mal (to-do 177,
   decisión de Guido: es puntual, no se toca); un ejercicio de menos de 12 meses no se carga; Lazio 1998-99 a 2000-01 están en liras (ITL, con su tipo de cambio de cierre y la paridad fija a euro
-  para mostrarlos en EUR) (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`). Faltan 15 documentos de fútbol (13 con diagnóstico resuelto y lote por correr, 2 por re-extraer): qué frena a cada uno, to-do 179. Sin transcribir: rugby
+  para mostrarlos en EUR) (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`). Faltan 4 documentos de fútbol (Roma 2005 y 2006, Sassuolo 2018 y Catania 2011; qué frena a cada uno, to-do 179): qué frena a cada uno, to-do 179. Sin transcribir: rugby
   FIR/Zebre, tenis FITP y entes, y Juve Stabia semestral y Catania (lote 41, solo transcripción); ver `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.

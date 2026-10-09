@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 613 — To-do 179: 11 años más de Italia cargados (lote 53) y push (2026-10-09)
+
+- Cargados: Milan 2019, Roma 2007, 2008, 2010, 2011, 2012 y 2020, Lazio 2004 y 2016, Inter 2021 y Sampdoria 2020. Inter 2021: la sección D (1.972.728) entra al financiero por ajuste y "Estadio" en 0 por
+  `cero-real` (2021 sin público). Roma 2010 y 2012 con sus categorías contestadas por precedente (Roma Store y afiliados como `sponsorship_commercial`, como el merchandising de otros clubes). Gestión de
+  Rosella Sensi (2008-2011) en `data/gestiones/it.js`.
+- Push a `main` del 2026-10-08 (103 commits, `60103db83`). Quedan 4 documentos de fútbol de Italia (to-do 179).
+
 ## Versión 612 — To-do 179 grupo 2: 10 documentos de Italia con diagnóstico y la cola contestada (2026-10-08)
 
 - Falsas alarmas del año vecino contestadas con la evidencia (reexpresiones del documento siguiente, encabezados mal rotulados, gestión neta de Roma): Roma 2006 a 2008, 2010, 2011, 2012 y 2020, Inter 2021,
