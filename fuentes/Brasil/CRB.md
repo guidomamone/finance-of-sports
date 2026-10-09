@@ -42,3 +42,5 @@ Color de marca: null — rojo y blanco, camiseta titular blanca con faja roja (p
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2020 desde `Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf` (sourceId `crb-br-balanco-patrimonial-2020`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2021 desde `Clubes/Brasil/CRB/balanco-patrimonial-2021.pdf` (sourceId `crb-br-balanco-patrimonial-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2024 desde `Clubes/Brasil/CRB/demonstracoes-contabeis-2024.pdf` (sourceId `crb-br-demonstracoes-contabeis-2024`).

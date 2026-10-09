@@ -5,7 +5,7 @@
 //
 // Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
 //   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -71,6 +71,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"pontepreta-br", revenue:12.863, reportType:"official_balance_sheet",
         sourceId:"pontepreta-br-balanco-2023-2024",
         mix:[["Comercial / Sponsors",0.419],["Estadio",0.224],["Televisión",9.909],["Premios por competencias",0.061],["Venta de Jugadores",1.776],["Otras secciones deportivas",0.167],["Otros ingresos",0.307]] },
+      { id:"crb-br", revenue:9.713, reportType:"official_balance_sheet",
+        sourceId:"crb-br-demonstracoes-contabeis-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",9.713]] },
       { id:"mirassol", revenue:9.583, reportType:"official_balance_sheet",
         sourceId:"mirassol-relatorio-auditoria-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.583]] },
