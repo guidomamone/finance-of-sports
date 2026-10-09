@@ -246,7 +246,7 @@ ni en el comentario de ningún archivo de código.
     `euroFijo` 1936.27, ITL@AAAA-06-30 en FX_CLOSE y una excepción en `toDisplayValue` (js/finanzas-calc.js) para mostrarlas en EUR. Falta: (a) cualquier otro club o país con ejercicios
     anteriores a 2002 (Italia: Roma y Milan tienen PDFs viejos? Juventus ya llega a 2003; otros países europeos: DEM, ESP, FRF, NLG, PTE...) necesita su entrada `euroFijo` y su FX_CLOSE
     del cierre, y un ajuste `moneda` en cada documento; (b) Comparar con un año en liras no se miró en pantalla (usa el mismo `toDisplayValue` a USD que Finanzas, que da bien:
-    2000/01 = 146,5 M USD). En Ligas no aparecen: Lazio 1999-2001 tiene la liga en null (to-do 192).
+    2000/01 = 146,5 M USD; en Ligas, Serie A 2001, también 146,5).
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
@@ -296,9 +296,3 @@ ni en el comentario de ningún archivo de código.
 191. LOS DOS HALLAZGOS DE HIGIENE (verificado 2026-10-09 por un Sonnet). (a) Una respuesta vieja de la cola puede tapar una alarma real: Sampdoria 2018 sin sus ajustes queda en "ok" con "resultado del ejercicio"
     fallando. (b) Hay 8 ajustes `fila` redundantes (el script ya lee esos documentos solo): Roma 2021 (2), Juve 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia por acción, 1 cada uno), Lazio 2015-16 (1) y
     Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país.
-
-192. LIGAS EN NULL EN ITALIA (revisión del 2026-10-09). 17 ejercicios cargados tienen la liga sin verificar (`data/club-leagues/it.js`) y por eso no aparecen
-    en la pestaña Ligas ni en el puesto de Finanzas: Lazio 1999, 2000, 2001, 2007 y 2026; Inter 2018, 2019 y 2020; Parma 2016, 2017 y 2025; AC Milan 2022;
-    AS Roma 2007; Cremonese 2025; Sassuolo 2024; Torino 2025. Varios son de temporadas que no tienen el roster cacheado en `tools/club-league-reference/it.json`
-    (1998-99 a 2000-01, 2006-07, 2025-26); en Inter puede ser el nombre ("Internazionale"). Parma 2016 y 2017 fueron Serie D y Lega Pro. Se completa con
-    `tools/fetch-club-league-reference.mjs` (Wikipedia, gratis) y la verificación de `cargar.mjs`.

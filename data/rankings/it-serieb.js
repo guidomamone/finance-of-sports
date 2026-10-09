@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Serie B (IT) — 6 ejercicio(s) con ranking:
-//   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+// Serie B (IT) — 7 ejercicio(s) con ranking:
+//   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -17,9 +18,20 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-serieb"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"cremonese-it", revenue:67.274, reportType:"official_balance_sheet",
+        sourceId:"cremonese-it-bilancio-2025",
+        mix:[["Comercial / Sponsors",50.313],["Estadio",1.916],["Televisión",8.06],["Venta de Jugadores",6.658],["Otras secciones deportivas",0.096],["Otros ingresos",0.231]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"sassuolo-it", revenue:106.071, reportType:"official_balance_sheet",
+        sourceId:"sassuolo-it-bilancio-2024",
+        mix:[["Comercial / Sponsors",42.207],["Estadio",2.868],["Televisión",18.462],["Venta de Jugadores",37.025],["Otros ingresos",5.509]] },
       { id:"cremonese-it", revenue:61.774, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2024",
         mix:[["Comercial / Sponsors",38.895],["Estadio",1.849],["Televisión",17.178],["Venta de Jugadores",2.967],["Otras secciones deportivas",0.071],["Otros ingresos",0.814]] },

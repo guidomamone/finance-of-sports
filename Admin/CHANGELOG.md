@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 617 — Ligas de Italia: 15 ejercicios que estaban en null (2026-10-09)
+
+- Bajados con `tools/fetch-club-league-reference.mjs` (Wikipedia) los planteles de Serie A 1998-99, 1999-2000, 2000-01, 2006-07 y 2025-26 y de Serie B 2024-25.
+- `data/club-leagues/it.js`: Lazio 1999, 2000, 2001, 2007 y 2026; Roma 2007; Parma 2025 y Torino 2025 (cierre 31/12/2025: 2025-26) en Serie A; Cremonese 2025 y
+  Sassuolo 2024 en Serie B. Inter 2018-2020 ("Internazionale" en Wikipedia) y Milan 2022 ("Milan" también matchea "Inter Milan") tenían el plantel pero el nombre
+  no coincidió: verificados a mano contra el plantel cacheado.
+- Quedan en null, con el motivo en el comentario: Parma 2016 (Serie D, no está en el catálogo) y 2017 (Lega Pro en 3 grupos: el script lee una sola tabla).
+- Rankings regenerados; ASSET_V 600. La Serie A en Ligas arranca ahora en 1999 (Lazio 2000/01: 146,5 M USD, los años en liras se ven bien).
+
 ## Versión 616 — Deflactores desde 1995: Lazio 1998/99 se ajusta por inflación (2026-10-09)
 
 - Revisión antes del push (to-do 186): en Finanzas de Lazio, con "Valores ajustados por inflación", 1998/99 quedaba en el valor nominal (132,9 M USD)
