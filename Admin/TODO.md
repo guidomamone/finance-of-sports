@@ -172,17 +172,6 @@ ni en el comentario de ningún archivo de código.
     Nota de cómo se compara el año vecino: un documento que cuenta la gestión de jugadores NETA como ingreso (Roma 2017: 254.076) no se compara con
     uno que no la cuenta (la columna 2017 del documento 2018: 175.000); "otro régimen", sin falsa alarma.
 
-171. SIGNO DE UN COSTO NEGATIVO EN UN AJUSTE `fila` (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Un ajuste `fila` de gasto
-    con valor impreso negativo (variazione delle rimanenze a favor) solo resta en la lectura 4 (lleva el signo relativo a la mayoría de los
-    ajustes de su lado, Versión 493); en las demás lecturas entra en valor absoluto. Los dos casos que lo abrieron cargan bien: Fiorentina
-    2023-24 cierra exacto por la lectura 5 con la variación +87.751 a favor (.md L885, costos impresos en negativo); Hellas Verona 2023
-    cierra por la lectura 4 con su ajuste (25.971) restando (a 618 EUR del impreso; con el signo al revés serían 51.942). Relacionado con
-    el 156 (gastos en valor absoluto en las lecturas 0-3). CUÁNDO HACERLO: si un documento no cierra porque un ajuste de gasto negativo
-    suma. DISEÑO (escalón, no regla): si ninguna lectura cerró el resultado EXACTO y hay ajustes `fila` de gasto con valor impreso
-    negativo, repetir las lecturas con esos ajustes restando; compuerta: el resultado impreso exacto (y gana solo si con el signo de hoy
-    no cierra exacto).
-    COMPROBADO 2026-10-09 (Sonnet): un solo caso real, Hellas Verona 2023 (25.971), que cierra por la lectura 4 a 618 EUR del impreso (con el signo al revés daría 51.942 más). Los otros 19 ajustes de gasto con valor negativo (Goiás 2012 y 2013, Roma 2018 y 2021) son costos impresos con paréntesis. Sin daño.
-
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 

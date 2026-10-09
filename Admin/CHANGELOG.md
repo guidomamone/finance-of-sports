@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 634 — To-do 171 cerrado: verificado sin daño (2026-10-09)
+
+- Un Sonnet en una copia: Hellas Verona 2023 ("11) Variazioni delle rimanenze" −25.971, L357, restando del costo; utile (19.927.700), L203) y Fiorentina 2023-24
+  (variación +87.751 a favor, L885; utile −5.989.648, L926) coinciden con el documento, una corrida nueva reproduce lo publicado, estado "ok" y sin cola.
+
 ## Versión 633 — To-do 96: en el camino de Finanzas se elige un solo club (2026-10-09)
 
 - Guido lo vio en la compu y eligió la opción "a". `js/selector.js`: el paso de clubes es de elección única cuando el selector se abre para Finanzas (Inicio,
