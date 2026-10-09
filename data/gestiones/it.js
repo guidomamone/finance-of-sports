@@ -41,9 +41,11 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://it.wikipedia.org/wiki/Presidenti_dell%27Associazione_Calcio_Milan', confirmada:true },
   ],
   'asroma-it': [
-    // Rosella Sensi: presidenta 2008-2011 (la fuente da solo los años: desde 2008-01-01 y hasta 2011-01-01 por convención; cubre los cierres del 30/6/2009 y del 30/6/2010).
-    // Pendiente: Franco Sensi hasta 2008 (cierres 2007 y 2008) y el 2011 (Cappelli en 2011 y DiBenedetto 2011-2012): la fuente no da días.
-    { nombre:'Rosella Sensi', corto:'Sensi', cargo:'Presidente', desde:'2008-01-01', hasta:'2011-01-01',
+    // Franco Sensi: dueño y presidente desde el 8/11/1993 hasta su muerte el 17/8/2008 (it.wikipedia, Franco Sensi; el infobox dice 9/11). Rosella Sensi lo sucedió: la fuente da solo el año
+    // (2008-2011); desde = el día de la muerte de su padre, hasta = 2011-01-01 por convención (cubre los cierres del 30/6/2009 y del 30/6/2010; el 2011 queda pendiente: Cappelli y DiBenedetto).
+    { nombre:'Franco Sensi', corto:'F. Sensi', cargo:'Presidente', desde:'1993-11-08', hasta:'2008-08-17',
+      fuente:'https://it.wikipedia.org/wiki/Franco_Sensi', confirmada:true },
+    { nombre:'Rosella Sensi', corto:'R. Sensi', cargo:'Presidente', desde:'2008-08-17', hasta:'2011-01-01',
       fuente:'https://it.wikipedia.org/wiki/Allenatori_e_presidenti_dell%27Associazione_Sportiva_Roma', confirmada:true },
     // Pallotta: la fuente da solo los años (2012-2020); desde = 01/01/2012 por convención.
     { nombre:'James Pallotta', corto:'Pallotta', cargo:'Presidente', desde:'2012-01-01', hasta:'2020-08-17',

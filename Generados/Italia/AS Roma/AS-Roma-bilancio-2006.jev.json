@@ -1,0 +1,751 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md",
+ "generatedAt": "2026-10-09T17:02:18.655Z",
+ "rubrosHuella": "ab285bdbeda94573bfb912500c4919c191ac12ef",
+ "rubros": [
+  {
+   "label": "a) Ricavi da gare",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Altri ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "g) Contributi in c/esercizio",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "d) Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "4) Incrementi immobilizzazioni per capitalizzazione vivaio",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "youth_football",
+     0.06
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1124
+  },
+  {
+   "label": "a) Plusvalenze da alienazioni",
+   "lado": "revenue",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "f) Altri proventi",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "c) Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "e) Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "b) Sopravvenienze attive",
+   "lado": "revenue",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "6) - Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "a) Spese per tesserati",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "b) Costi per attività sportiva",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.85
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "a) Salari e stipendi",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Oneri sociali",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Trattamento di quiescenza e simili",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Altri proventi straordinari",
+   "lado": "revenue",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "c) Costi specifici tecnici",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "c) Altre svalutazioni delle immobilizzazioni",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_impairment",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Costi vitto, alloggio e locomozione",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "e) Spese assicurative",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "g) Spese pubblicità e promozione",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "a) Ammortamento immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_amortisation",
+     0.9
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "b) Ammortamento immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "8) Spese godimento beni di terzi",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "11) - Variazione delle rimanenze di materie prime e merci",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "d) Svalutazione dei crediti compresi nell'attivo circolante",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1156
+  },
+  {
+   "label": "f) Spese amministrative e generali",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "12) - Accantonamento per rischi",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "b) Sopravvenienze passive",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "a) di partecipazioni",
+   "lado": "expense",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "player_impairment",
+     0.05
+    ]
+   ],
+   "tokens": 968
+  },
+  {
+   "label": "a) Oneri tributari indiretti dell'esercizio",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "f) Altri oneri",
+   "lado": "expense",
+   "page": 50,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "a) Minusvalenze relative ad alienazioni",
+   "lado": "expense",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "c) Altri oneri straordinari",
+   "lado": "expense",
+   "page": 51,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

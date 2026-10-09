@@ -1,24 +1,429 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.pdf",
- "generado": "2026-10-08T19:23:22.222Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-09T17:02:23.722Z",
+ "frena": [],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-06: perimetro-senales.mjs: 3 documento(s) con los dos estados votan consolidado; 2 ejercicio(s) con un solo perímetro (consolidado); 8 documento(s) mirados)",
+  "materialidad: \"a) di partecipazioni\" va como other_expenses con 0.6 (las dudas de gastos suman 0.05% de su lado)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-148.541205); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2006 (cierre 2006-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "asroma-it",
+  "year": 2006,
+  "cierre": "2006-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "a) Ricavi da gare",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 21.046826,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Altri ricavi delle vendite e delle prestazioni",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.612966,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "4) Incrementi immobilizzazioni per capitalizzazione vivaio",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.509963,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Sponsorizzazioni",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.55,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Diritti televisivi e diritti d'immagine",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 76.156096,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Proventi pubblicitari",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.070461,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "f) Altri proventi",
+    "normalizedCategory": "other_income",
+    "amountNative": 11.492132,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "g) Contributi in c/esercizio",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.246861,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Plusvalenze da alienazioni",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3.527143,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Sopravvenienze attive",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.585079,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Altri proventi straordinari",
+    "normalizedCategory": "other_income",
+    "amountNative": 22.638915,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "6) - Acquisti materie di consumo",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.892324,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Spese per tesserati",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.492398,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Costi per attività sportiva",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.870772,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Costi specifici tecnici",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -5.478606,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Costi vitto, alloggio e locomozione",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.879206,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "e) Spese assicurative",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.14904,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "f) Spese amministrative e generali",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.643577,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "g) Spese pubblicità e promozione",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.559534,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "8) Spese godimento beni di terzi",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.293919,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Salari e stipendi",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -63.56442,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Oneri sociali",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.615833,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Trattamento di fine rapporto",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.157362,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Trattamento di quiescenza e simili",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.206773,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Ammortamento immobilizzazioni immateriali",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -35.330654,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Ammortamento immobilizzazioni materiali",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.334469,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Altre svalutazioni delle immobilizzazioni",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.108309,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Svalutazione dei crediti compresi nell'attivo circolante",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.5,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "11) - Variazione delle rimanenze di materie prime e merci",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.175289,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "12) - Accantonamento per rischi",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -5.109753,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Oneri tributari indiretti dell'esercizio",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.733608,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Sopravvenienze passive",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.090274,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "f) Altri oneri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -13.714976,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) di partecipazioni",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.080961,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.05% (≤ 1%) y esta tiene 0.6"
+   },
+   {
+    "rawLabel": "a) Minusvalenze relative ad alienazioni",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -2.427995,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Altri oneri straordinari",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -3.314898,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2006-06-30",
+   "sourceId": "asroma-it-bilancio-2006",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.235596,
+   "tax": -3.022189,
+   "extraRows": [
+    {
+     "label": "- da terzi",
+     "value": 1.296643
+    },
+    {
+     "label": "-da terzi",
+     "value": -1.566123
+    },
+    {
+     "label": "17bis) Utili e perdite su cambi",
+     "value": 0.033884
+    },
+    {
+     "label": "a) Imposte dell'esercizio",
+     "value": -3.1
+    },
+    {
+     "label": "b) Imposte differite",
+     "value": 0.077811
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 158.436442,
+   "officialTotalExpenses": 148.541205,
+   "officialPAT": 0.804285
+  },
+  "source": {
+   "id": "asroma-it-bilancio-2006",
+   "clubId": "asroma-it",
+   "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2006 (ejercicio 2006)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +436,695 @@
  },
  "clubId": "asroma-it",
  "year": 2006,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 41,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "a) Ricavi da gare",
+   "page": 50,
+   "native": 21.046826,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 21.046826,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 21.046826
+  },
+  {
+   "label": "c) Altri ricavi delle vendite e delle prestazioni",
+   "page": 50,
+   "native": 3.612966,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.612966,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.612966
+  },
+  {
+   "label": "4) Incrementi immobilizzazioni per capitalizzazione vivaio",
+   "page": 50,
+   "native": 1.509963,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.509963,
+   "cat": "other_income",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.509963
+  },
+  {
+   "label": "c) Sponsorizzazioni",
+   "page": 50,
+   "native": 7.55,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.55,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.55
+  },
+  {
+   "label": "d) Diritti televisivi e diritti d'immagine",
+   "page": 50,
+   "native": 76.156096,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 76.156096,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 76.156096
+  },
+  {
+   "label": "e) Proventi pubblicitari",
+   "page": 50,
+   "native": 7.070461,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 7.070461,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.070461
+  },
+  {
+   "label": "f) Altri proventi",
+   "page": 50,
+   "native": 11.492132,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.492132,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.492132
+  },
+  {
+   "label": "g) Contributi in c/esercizio",
+   "page": 50,
+   "native": 0.246861,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.246861,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.246861
+  },
+  {
+   "label": "a) Plusvalenze da alienazioni",
+   "page": 51,
+   "native": 3.527143,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 3.527143,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.527143
+  },
+  {
+   "label": "b) Sopravvenienze attive",
+   "page": 51,
+   "native": 3.585079,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 3.585079,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.585079
+  },
+  {
+   "label": "c) Altri proventi straordinari",
+   "page": 51,
+   "native": 22.638915,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 22.638915,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 22.638915
+  },
+  {
+   "label": "6) - Acquisti materie di consumo",
+   "page": 50,
+   "native": 2.892324,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.892324,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.892324
+  },
+  {
+   "label": "a) Spese per tesserati",
+   "page": 50,
+   "native": 0.492398,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.492398,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.492398
+  },
+  {
+   "label": "b) Costi per attività sportiva",
+   "page": 50,
+   "native": 1.870772,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.870772,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.870772
+  },
+  {
+   "label": "c) Costi specifici tecnici",
+   "page": 50,
+   "native": 5.478606,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.478606,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.478606
+  },
+  {
+   "label": "d) Costi vitto, alloggio e locomozione",
+   "page": 50,
+   "native": 0.879206,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.879206,
+   "cat": "match_organisation_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.879206
+  },
+  {
+   "label": "e) Spese assicurative",
+   "page": 50,
+   "native": 1.14904,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.14904,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.14904
+  },
+  {
+   "label": "f) Spese amministrative e generali",
+   "page": 50,
+   "native": 5.643577,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.643577,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.643577
+  },
+  {
+   "label": "g) Spese pubblicità e promozione",
+   "page": 50,
+   "native": 0.559534,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.559534,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.559534
+  },
+  {
+   "label": "8) Spese godimento beni di terzi",
+   "page": 50,
+   "native": 5.293919,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.293919,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.293919
+  },
+  {
+   "label": "a) Salari e stipendi",
+   "page": 50,
+   "native": 63.56442,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 63.56442,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -63.56442
+  },
+  {
+   "label": "b) Oneri sociali",
+   "page": 50,
+   "native": 1.615833,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.615833,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.615833
+  },
+  {
+   "label": "c) Trattamento di fine rapporto",
+   "page": 50,
+   "native": 0.157362,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.157362,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.157362
+  },
+  {
+   "label": "d) Trattamento di quiescenza e simili",
+   "page": 50,
+   "native": 0.206773,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.206773,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.206773
+  },
+  {
+   "label": "a) Ammortamento immobilizzazioni immateriali",
+   "page": 50,
+   "native": 35.330654,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 35.330654,
+   "cat": "player_amortisation",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -35.330654
+  },
+  {
+   "label": "b) Ammortamento immobilizzazioni materiali",
+   "page": 50,
+   "native": 0.334469,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.334469,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.334469
+  },
+  {
+   "label": "c) Altre svalutazioni delle immobilizzazioni",
+   "page": 50,
+   "native": 0.108309,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.108309,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.108309
+  },
+  {
+   "label": "d) Svalutazione dei crediti compresi nell'attivo circolante",
+   "page": 50,
+   "native": 0.5,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.5,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.5
+  },
+  {
+   "label": "11) - Variazione delle rimanenze di materie prime e merci",
+   "page": 50,
+   "native": 0.175289,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.175289,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.175289
+  },
+  {
+   "label": "12) - Accantonamento per rischi",
+   "page": 50,
+   "native": 5.109753,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.109753,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.109753
+  },
+  {
+   "label": "a) Oneri tributari indiretti dell'esercizio",
+   "page": 50,
+   "native": 3.733608,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.733608,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.733608
+  },
+  {
+   "label": "b) Sopravvenienze passive",
+   "page": 50,
+   "native": 0.090274,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.090274,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.090274
+  },
+  {
+   "label": "f) Altri oneri",
+   "page": 50,
+   "native": 13.714976,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 13.714976,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.714976
+  },
+  {
+   "label": "a) di partecipazioni",
+   "page": 51,
+   "native": 0.080961,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))",
+   "signoFijo": 0.080961,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.05% (≤ 1%) y esta tiene 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.080961
+  },
+  {
+   "label": "a) Minusvalenze relative ad alienazioni",
+   "page": 51,
+   "native": 2.427995,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))",
+   "signoFijo": 2.427995,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.427995
+  },
+  {
+   "label": "c) Altri oneri straordinari",
+   "page": 51,
+   "native": 3.314898,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))",
+   "signoFijo": 3.314898,
+   "cat": "exceptional_items",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.314898
+  },
+  {
+   "label": "- da terzi",
+   "page": null,
+   "native": 1.296643,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "-da terzi",
+   "page": null,
+   "native": -1.566123,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "17bis) Utili e perdite su cambi",
+   "page": null,
+   "native": 0.033884,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "a) Imposte dell'esercizio",
+   "page": null,
+   "native": -3.1,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "b) Imposte differite",
+   "page": null,
+   "native": 0.077811,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 158.436442,
+  "expSum": -148.541205,
+  "officialTotalRevenue": 158.436442,
+  "officialTotalExpenses": 148.541205,
+  "officialPAT": 0.804285,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.804285,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 158.436442
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2005–06 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2006,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2006-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (343 de 370 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-06)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Italia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2006-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2006-06-30 = 0.786596 (Tipo de referencia del Banco Central Europeo al 2006-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "asroma-it-bilancio-2006",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "it-seriea",
+   "fuente": "roster cacheado de \"2005–06 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 11,
+  "lineasGasto": 25,
+  "metaFilas": 5,
+  "excluidas": 0
+ }
 }

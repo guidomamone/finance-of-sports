@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
- "generado": "2026-10-09T16:59:09.843Z",
+ "generado": "2026-10-09T17:00:14.667Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2005,
@@ -104,8 +104,7 @@
   "duda de localizar ya contestada para el club (columna, \"Proventi straordinari\"): aceptar, en AS-Roma-bilancio-2005.pdf",
   "duda de extraer confirmada por las sumas (columna, \"Totale proventi straordinari\"): ¿Se cargan las columnas rotuladas '30.06.04' y '30.06.03' de los cuadros b159 (L5939) y b160 (L5963) como 2005 y 2004 respectivamente?",
   "duda de extraer que no afecta la carga: Repiten importes ya presentes en b107 y b108 sin desglose adicional.",
-  "duda de extraer que no afecta la carga: Sus totales coinciden con b109; en 2004 separa Premi collettivi 2.511 que el estado incluye en Salari e stipendi (82.887).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Sus totales coinciden con b109; en 2004 separa Premi collettivi 2.511 que el estado incluye en Salari e stipendi (82.887)."
  ],
  "reintentar": [
   {

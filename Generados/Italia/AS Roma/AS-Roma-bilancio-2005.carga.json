@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
- "generado": "2026-10-08T19:23:21.967Z",
+ "generado": "2026-10-09T17:02:23.350Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
@@ -12,7 +12,7 @@
   },
   {
    "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
