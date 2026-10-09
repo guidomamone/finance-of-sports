@@ -257,3 +257,13 @@ ni en el comentario de ningún archivo de código.
     taquilla de 2020: L640 27.574.094 y L642 16.802.772). Diseño pendiente: en la columna actual del documento propio y del vecino usar sus ajustes (reemplazar y agregar con la escala de cada uno) y
     permitir un valor para la columna anterior en un ajuste `fila`. Conocido, sin daño hoy: no se diseña hasta que aparezca un caso que la cola no pueda aceptar.
 
+190. UN TERCER ESTADO PARA LOS BALANCES PARCIALES: "BALANCE DE MENOS DE 12 MESES" (pedido de Guido, 2026-10-09). Hoy un documento de menos de 12 meses va a `Admin/documentos-descartados.txt` junto con los que no sirven
+    (informes del auditor, artículos de prensa), y no se distingue del resto: si algún día aparece el otro tramo del ejercicio, nada lo avisa. Pasaría a ser un estado propio, "parcial", con el período
+    cubierto (desde, hasta) y qué falta. Los casos de hoy: Genoa 01/01 al 30/06/2024 (Genoa-bilancio-30.06.2024-individual, falta 01/07/2023 al 31/12/2023), Atalanta 01/01 al 30/06/2022
+    (Atalanta-bilancio-consolidato-2022, falta 01/07/2021 al 31/12/2021), Parma 01/09 al 31/12/2020 (individual y consolidado, 4 meses; falta 01/01 al 30/06/2020... a confirmar con su cierre anterior) y
+    Juve Stabia 01/07 al 31/12/2024 (Juve Stabia-semestral-2024-12-31-SEC-6K, es un semestre del ejercicio 2025). DISEÑO A PENSAR (con el ok de Guido antes de escribir código): (a) un archivo
+    aparte, p. ej. `Admin/documentos-parciales.txt` (ruta # período # qué falta), que `lote.mjs` saltea igual que los descartados pero que `tablas-sesion.mjs` y `estado.mjs` muestran como "parcial, falta
+    el otro tramo" y no como descartado; (b) la regla para juntar dos tramos que suman 12 meses (suma de ingresos y gastos, el balance de cierre del segundo, un solo ejercicio con su `cierre` y una nota
+    pública que diga de dónde sale cada mitad) y para cuando dos parciales no se pueden unir (tipo de cambio de cierre, perímetro distinto, el primero cerrado con otra moneda); (c) que el tramo se
+    busque en sourcing (`fuentes/Italia/<club>.md`): anotar en la ficha del club qué tramo falta. Mientras tanto no se carga ningún parcial: ver `Admin/CONVENCIONES-DATOS.md`, la regla de los 12 meses.
+
