@@ -45,4 +45,6 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   con los totales cerrando), y la columna anterior que lee el chequeo del año vecino pasa de 228,7 a 428,7 M (los dos fallan contra los 243,0 M del documento siguiente). No toca Lazio 2016 ni su
   vecino 2017: ese chequeo lee la columna anterior por otro camino (`ingresosConLectura` y `lineasDeLado`, no `ajuste()`), que es donde se duplica el total. Antes de los ajustes manuales (copia
   del 2026-10-08) cambiaba Lazio 2005, 2011 y 2016 y 2011-12, pero ya no hay documento al que sirva.
-
+- **Ajuste `fila-anterior`** (to-do 189 paso 2, medido por un Sonnet el 2026-10-09): un importe de la columna del año anterior cargado a mano, solo para el chequeo del año vecino.
+  Cerraría 16 chequeos falsos de Sampdoria 2020-21 e Inter 2019-21 (filas que la extracción no trajo de esa columna: Sampdoria L888 1.779.291; Inter L640 27.574.094 y
+  L642 16.802.772). Descartado por Guido: son alarmas aceptadas en la cola, sin daño en los datos.

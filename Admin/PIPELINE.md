@@ -281,6 +281,9 @@ Mitigaciones:
   negativo como gasto. Compuerta: las lecturas 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. El año vecino no se compara con un
   documento que no usa este escalón (otro régimen).
 - **Chequeos cruzados** (año vecino, año anterior cargado; Versión 416): si ninguna fila trae la columna del año anterior, "no se puede".
+  Versión 625 (to-do 189): escalón 1 de los dos chequeos, solo si las columnas crudas no coinciden: cada columna actual con los ajustes `fila` de
+  su documento (reemplazar y agregar); en la columna anterior solo los ajustes que sacan una fila (valor 0 con reemplaza). Misma compuerta (2%).
+  Caso: Roma 2007 contra 2008 (crudo 157.589 contra 162.017; con el ajuste de 2007, 162.255). Medido en los 242: 14 chequeos pasan a ok, 0 al revés, carga idéntica.
 - **Resultado final** (Versión 364), si cerró contra "antes de impuestos": candidatos antes ± impuesto → escalón 0, impreso en el .md del
   documento; escalón 1, impreso en el documento siguiente (columna del año anterior) → compuerta: uno solo coincide; si no, cola.
 - **Dudas de la IA, escalera** (antes de llegar a la cola):

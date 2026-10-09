@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 625 — To-do 189: el chequeo del año vecino con los ajustes de cada documento (2026-10-09)
+
+- `tools/verificar.mjs`, chequeos "documento del año N" y "año anterior cargado": escalón 1, solo si las columnas crudas no coinciden. Cada columna actual con los
+  ajustes `fila` de su documento (reemplazar y agregar, con la escala de ese documento); en la columna anterior, solo los que sacan una fila. Misma compuerta (2%).
+  Diferencia con la propuesta del Sonnet (`Admin/propuestas/189-...diff`): el crudo va primero; con los ajustes primero, Fortaleza CEIF 2022-23, Fiorentina 2021 e
+  Inter 2019 pasaban de coincidir exacto a coincidir dentro del 2%.
+- Medido en los 242 documentos con verificación: carga idéntica; 14 chequeos pasan de falla a ok y ninguno al revés; Lazio 2008-09 y Fiorentina 2024-25 pasan de
+  "cola" a "ok". Cola humana: de 24 a 20 casos pendientes. To-dos 189 y 172 resueltos (eran el mismo problema).
+- El paso 2 (ajuste `fila-anterior`, Sampdoria 2020-21 e Inter 2019-21) se descartó (decisión de Guido): a `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 624 — To-do 188 cerrado en lo que tenía arreglo; Bologna conserva sus ajustes (2026-10-09)
 
 - Bologna 2023-24 y 2024-25: los 4 ajustes del financiero se quedan (decisión de Guido). Sin ellos la carga es idéntica en importes, pero el 17) y los otros

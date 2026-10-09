@@ -211,16 +211,6 @@ ni en el comentario de ningún archivo de código.
     no cierra exacto).
     COMPROBADO 2026-10-09 (Sonnet): un solo caso real, Hellas Verona 2023 (25.971), que cierra por la lectura 4 a 618 EUR del impreso (con el signo al revés daría 51.942 más). Los otros 19 ajustes de gasto con valor negativo (Goiás 2012 y 2013, Roma 2018 y 2021) son costos impresos con paréntesis. Sin daño.
 
-172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). El chequeo "documento del
-    año N" compara contra las filas crudas del otro documento, sin sus ajustes `fila`. El caso que lo abrió (Parma 2024 contra Parma 2023)
-    ya no existe: Parma 2023 dejó su ajuste con el escalón "subtotal repetido" (Versión 586). Medido sobre todo Generados/: 222 chequeos de
-    año vecino, 14 fallan; solo 2 son de este tipo y los dos coinciden contra el total VERIFICADO del otro documento (con sus ajustes): AS
-    Roma 2019 contra 2018 (320.428 vs 320.509) y Juventus 2005-06 contra 2004-05 (259.082.991 vs 259.082.991). Ninguno frena: los dos están
-    cargados, en "ok" y sin casos en la cola. CUÁNDO HACERLO: si una falsa alarma de este tipo frena un documento. DISEÑO (escalón): si el
-    chequeo falla y usa la columna del ejercicio del OTRO documento (el anterior, dy=-1) y ese documento tiene ajustes `fila`, comparar
-    contra su totales.ingresos del .verificacion.json; compuerta: la misma tolerancia del chequeo.
-    REFUTADO 2026-10-09 (Sonnet, ya no es "sin daño" en la cola): hoy son 5 pares donde el documento anterior tiene ajustes `fila` (Juve 2004-05/2005-06, Roma 2007/2008, Roma 2018/2019, Lazio 2007-08/2008-09, Fiorentina 2023-24/2024-25); el diseño de este punto arregla 3. Lazio 2008-09 tiene 2 casos pendientes. Arreglo en 189.
-
 173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CON DAÑO desde el lote 40 (2026-10-08): la cola pasó a 267 casos (Salernitana
     2022: 38, Inter 2024: 23, Genoa 2023: 19) y 15 documentos frenan solo por preguntas. Antes (lote 28): ~20 de 71. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
     por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
@@ -251,7 +241,7 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
+185. COLA HUMANA: 20 CASOS EN 10 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
 
 188. COSTOS FINANCIEROS DEL CODICE CIVILE: LO QUE EL ESCALÓN "17) RESTA" NO RESUELVE. CONOCIDO, SIN DAÑO HOY. Los peldaños A (17) por el nombre de la fila y
     subtotales anteriores, Versión 621) y B (la D que quedó en el financiero, Versión 623) ya están; Torino 2019 se recargó sin su ajuste. Siguen con ajustes,
@@ -261,22 +251,6 @@ ni en el comentario de ningún archivo de código.
     NO ANULAR los 4 ajustes del financiero de Bologna 2023-24 y 2024-25 (17) y D 19)) aunque el escalón ya cierre sin ellos (decisión de Guido, 2026-10-09):
     sin ellos el 17) y los otros proventi se llaman los dos "altri" y Finanzas multi-año (`filaDe`, js/finanzas-multi.js) los suma en una fila (+5,25 y −6,45 M
     se ven como −1,20 M). Los ajustes solo les dan nombres distintos.
-
-189. EL CHEQUEO DEL AÑO VECINO NO USA LOS AJUSTES `fila` (verificar.mjs, `compararVecino` y `vecinoDe`). Lee el `.filas.json` crudo de los dos documentos, sin los ajustes, y un ajuste `fila` solo trae la
-    columna ACTUAL, así que no hay cómo corregir la columna del año anterior. Casos (todos ya aceptados por la cola, sin daño en datos): Roma 2007 contra 2008 (157.589 contra 162.017: 2007 ya lleva
-    la gestión neta por ajuste), Sampdoria 2020 contra 2021 (el ajuste que saca 10,63 M no llega a la columna anterior de 2021 y falta la fila Incrementi 1.779.291, L888), Inter 2021 (faltan 2 filas de
-    taquilla de 2020: L640 27.574.094 y L642 16.802.772). Diseño pendiente: en la columna actual del documento propio y del vecino usar sus ajustes (reemplazar y agregar con la escala de cada uno) y
-    permitir un valor para la columna anterior en un ajuste `fila`. Conocido, sin daño hoy: no se diseña hasta que aparezca un caso que la cola no pueda aceptar.
-    REFUTADO 2026-10-09 (Sonnet, ya no es "sin daño" en la cola; datos publicados correctos, alarmas falsas explicadas al EUR): de 15 pares que fallan, 9 se deben a ajustes que el chequeo no lee (Juve 2003-04 a 2005-06, Roma 2006 a 2008 y 2018/2019, Lazio 2006-07 a 2008-09, Fiorentina 2023-25, Inter 2019-21, Sampdoria 2020/2021). Dejaron ~35 casos de cola contestados a mano y 8 de los 21 pendientes. Arreglo mínimo propuesto en `tools/verificar.mjs` (`compararVecino` y "año anterior cargado"): si el documento cuya columna anterior se lee tiene ajustes `fila` vigentes, `ok:null` (no comparable) cuando falla; si no, comparar contra `totales.ingresos` del `.verificacion.json` del otro con la tolerancia del 2%. Silencia 9 de los 15 pares y no crea falsos ok. Falta medirlo (otro Sonnet lo está diseñando; ver su informe).
-    DIAGNÓSTICO 2026-10-09 (un Sonnet midió en una copia, 654 chequeos de 242 documentos; propuesta en `Admin/propuestas/189-ano-vecino-con-ajustes.diff`, NO aplicada): hacerla en dos pasos. Hoy hay 28 chequeos "documento del
-    año N" y 14 "año anterior cargado" en falso (25 documentos), todos aceptados por la cola; la carga no cambia con el arreglo. PASO 1: (a) `compararVecino` y `vecinoDe` usan, para la columna ACTUAL de cada documento, sus
-    ajustes `fila` (reemplazar y agregar, con la escala de ese documento y el signo firmado en la lectura 4); (OR) el chequeo da ok si coincide CON ajustes o SIN ellos; (b1) un ajuste `fila` que solo saca una fila (valor 0 con
-    reemplaza) también la saca de la columna anterior (aplicar toda remoción rompe Goiás, Bologna y Chievo: 11 empeoran). Medido: 12 chequeos mejoran, 0 empeoran, sin ajustes nuevos (Roma 2007/2008 y 2018/2019, Lazio 2006-07 a
-    2008-09, Fiorentina 2023-25, Juve 2004-05/2005-06). NO hacer (a) sola: empeora 4 (Juve 2002-03 a 2004-05). PASO 2 (solo si Guido quiere cerrar Sampdoria 2020-21 e Inter 2019-21): campo nuevo `fila-anterior` en
-    tools/ajustes.mjs (--agregar <pdf> fila-anterior --etiqueta --lado ingreso --valor --linea) que inserta la fila con M = NaN y A = valor solo en la copia que lee el chequeo, no en lo que se carga (3 registros a mano:
-    Sampdoria L888 1.779.291; Inter L640 27.574.094 y L642 16.802.772): 16 y con "año anterior cargado" 20 mejoran, 0 empeoran. Si no, descartar `fila-anterior` como conocido sin daño. Quedan 12 "documento del año" falsos
-    por reexpresiones reales (UC 2009, Lazio 2006-08, Milan 2009-10, Juventus 2003-04, 2006-07 y 2009-11, Roma 2006-07, 2011-12 y 2018). Riesgo: el OR quita sensibilidad si dos documentos coinciden en crudo y ambos sin una
-    fila que sus ajustes sí agregan. Nota: el diff toca `tools/ajustes.mjs`, que esta sesión también cambió (`filas-a-mano` y `estado`): revisar el conflicto antes de aplicar.
 
 190. UN TERCER ESTADO PARA LOS BALANCES PARCIALES: "BALANCE DE MENOS DE 12 MESES" (pedido de Guido, 2026-10-09). Hoy un documento de menos de 12 meses va a `Admin/documentos-descartados.txt` junto con los que no sirven
     (informes del auditor, artículos de prensa), y no se distingue del resto: si algún día aparece el otro tramo del ejercicio, nada lo avisa. Pasaría a ser un estado propio, "parcial", con el período
