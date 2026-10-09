@@ -12,7 +12,7 @@
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2014: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2013: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2013: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2010: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2008: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -193,6 +193,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"goias-br", revenue:21.803, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2013-2012",
         mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.785],["Estadio",3.593],["Televisión",13.083],["Premios por competencias",1.836],["Venta de Jugadores",0.108],["Otros ingresos",0.888]] },
+      { id:"criciuma-br", revenue:19.209, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-demonstracoes-financeiras-2013",
+        mix:[["Cuotas Sociales",4.415],["Comercial / Sponsors",0.464],["Fútbol profesional (sin desglosar por la fuente)",13.355],["Otros ingresos",0.975]] },
     ],
   },
   2010: {

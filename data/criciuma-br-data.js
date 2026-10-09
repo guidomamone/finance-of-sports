@@ -43,6 +43,17 @@ const criciumabrRevenueLinesByYear = {
     { rawLabel:'Subvenções', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.088605, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.99
   ],
+  // 2013: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Criciuma/demonstracoes-financeiras-2013.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2013: [
+    { rawLabel:'Futebol', normalizedCategory:'lump_football_operations', amountNative:31.284433, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.92
+    { rawLabel:'Sócios', normalizedCategory:'member_dues', amountNative:10.343313, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'MESP - Projeto Formação Atletas – nota 5', normalizedCategory:'other_income', amountNative:1.422656, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Extraordinárias', normalizedCategory:'other_income', amountNative:0.705478, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.795949, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.292131, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.95
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.155927, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.99
+  ],
 };
 const criciumabrExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-09)
@@ -55,6 +66,17 @@ const criciumabrExpenseLinesByYear = {
     { rawLabel:'Departamento jurídico', normalizedCategory:'admin_general_expense', amountNative:-0.106247, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
     { rawLabel:'Departamento loja Tigre Maníacos', normalizedCategory:'admin_general_expense', amountNative:-0.180738, disclosureLevel:'aggregated' }, // pág. 6, precedente
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.223862, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+  ],
+  2013: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Departamento profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-28.077497, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Departamento amador', normalizedCategory:'youth_other_sports_expense', amountNative:-2.028453, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Departamento administrativo', normalizedCategory:'admin_general_expense', amountNative:-0.856767, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Departamento marketing e comercial', normalizedCategory:'admin_general_expense', amountNative:-0.971574, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Departamento financeiro', normalizedCategory:'admin_general_expense', amountNative:-0.14397, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.98
+    { rawLabel:'Departamento de patrimônio', normalizedCategory:'admin_general_expense', amountNative:-3.331551, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.98
+    { rawLabel:'Departamento jurídico', normalizedCategory:'admin_general_expense', amountNative:-1.271965, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Departamento loja Tigre Maníacos', normalizedCategory:'admin_general_expense', amountNative:-0.25209, disclosureLevel:'aggregated' }, // pág. 6, precedente
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.420794, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
   ],
 };
 const criciumabrFiscalYearMeta = {
@@ -77,6 +99,25 @@ const criciumabrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:20.542105, officialTotalExpenses:21.274856, officialPAT:-2.088802,
+  },
+  2013: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2013-12-31',
+    sourceId:'criciuma-br-demonstracoes-financeiras-2013',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.356872, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras – nota 16', value:0.048876},
+      {label:'Despesas financeiras – nota 16', value:-1.405748},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Futebol', lado:'revenue', importe:31.284433, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Departamento profissional', lado:'expense', importe:28.077497, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:44.999887, officialTotalExpenses:37.354661, officialPAT:6.288354,
   },
 };
 const criciumabrPresupuestoOverlayByYear = {};
@@ -101,6 +142,12 @@ Object.assign(sources, {
     title:'Criciúma Esporte Clube — demonstrativo-financeiro-2012 (ejercicio 2012)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'criciuma-br-demonstracoes-financeiras-2013': {
+    id:'criciuma-br-demonstracoes-financeiras-2013', clubId:'criciuma-br',
+    title:'Criciúma Esporte Clube — demonstracoes-financeiras-2013 (ejercicio 2013)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

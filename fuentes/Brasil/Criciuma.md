@@ -60,3 +60,5 @@
 Color de marca: null — tricolor amarillo, negro y blanco (pt.wikipedia: "cores oficiais são o amarelo, preto e branco"; camiseta titular de la plantilla: cuerpo blanco, mangas FBC404, short negro; escudo amarillo y negro): ambiguo, mismo criterio que Fortaleza, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2012 desde `Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf` (sourceId `criciuma-br-demonstrativo-financeiro-2012`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2013 desde `Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.pdf` (sourceId `criciuma-br-demonstracoes-financeiras-2013`).
