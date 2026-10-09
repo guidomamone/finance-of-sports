@@ -39,6 +39,7 @@ import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-
 import { derivado } from './rutas.mjs';
 import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
 import { ajusteDe } from './ajustes.mjs';
+import { esAMano } from './extraer.mjs';
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -111,6 +112,8 @@ export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')
 export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
   const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
+  // AJUSTE MANUAL `filas-a-mano` (Versión 614): la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
+  if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
   const { bloques } = indiceBloques(mdText, { ampliado }); // ampliado: solo en el reintento (lote.mjs --reintentar)

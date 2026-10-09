@@ -28,6 +28,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
@@ -100,6 +101,9 @@ export function estimarExtraerSinBloques(pdf) {
   return { usd: TECHO_EXTRAER, texto: `~US$ ${MEDIANA_EXTRAER.toFixed(2)}-${TECHO_EXTRAER.toFixed(2)} (club sin historia; el total usa ${TECHO_EXTRAER.toFixed(2)})` };
 }
 
+// `filas-a-mano` con valor distinto de "no" (el último ajuste del documento gana)
+export const esAMano = (pdf) => { const a = ajusteDe(pdf, 'filas-a-mano'); return !!a && String(a.valor ?? '').trim().toLowerCase() !== 'no'; };
+
 export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null } = {}) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -107,6 +111,8 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   const ub = JSON.parse(readFileSync(pUb, 'utf8'));
   if (ub.sin_estado) return { sinEstado: true };
   const out = resolve(ROOT, derivado(md, '.filas.json'));
+  // AJUSTE MANUAL `filas-a-mano` (Versión 614, tools/ajustes.mjs): las filas de este documento se armaron o corrigieron a mano; ni --rehacer las pisa.
+  if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const L = readFileSync(resolve(ROOT, md), 'utf8').split('\n');
   const ids = [...new Set([...ub.estado, ...ub.notas_ingresos, ...ub.notas_gastos])].filter((id) => ub.bloques[id]);

@@ -12,12 +12,12 @@ window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 Object.assign(window.CLUB_GESTIONES, {
   'juvestabia-it': [
     // Andrea Langella: presidente y dueño de la mayoría con su hermano Giuseppe desde 2019 (borsaefinanza.it, 19/4/2024: lo describe como presidente en esa fecha). Las fechas 2021-2026 salen
-    // del título de un artículo que encontró Guido ("2021 - 2026: The Andrea Langella Era"); en junio de 2026 el dueño pasó a Alfredo Guerri (dato de Guido, 2026-10-09, sin fuente escrita):
+    // del título de un artículo que encontró Guido ("2021 - 2026: The Andrea Langella Era"); en junio de 2026 el dueño pasó a Alfredo Guerri (dato de Guido, 2026-10-09; la fuente es la búsqueda que él pasó):
     // solo mes y año: día 01 por convención. Falta la fecha exacta de asunción de Langella y la del cambio.
     { nombre:'Andrea Langella', corto:'Langella', cargo:'Presidente', desde:'2021-01-01', hasta:'2026-06-01',
       fuente:'https://borsaefinanza.it/andrea-langella-chi-e-cosa-fa-presidente-juve-stabia/', confirmada:true },
     { nombre:'Alfredo Guerri', corto:'Guerri', cargo:'Presidente', desde:'2026-06-01', hasta:null,
-      fuente:'Dato de Guido (2026-10-09): en junio de 2026 el dueño de Juve Stabia pasó a Alfredo Guerri; falta la URL', confirmada:true },
+      fuente:'https://search.brave.com/search?q=alfredo+guerri+juve+stabia&source=desktop', confirmada:true },
   ],
   'salernitana-it': [
     // Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021, con un administrador único, condujo antes); firma los balances 2022 y 2023.
@@ -45,11 +45,19 @@ Object.assign(window.CLUB_GESTIONES, {
     // (2008-2011); desde = el día de la muerte de su padre, hasta = 2011-01-01 por convención (cubre los cierres del 30/6/2009 y del 30/6/2010; el 2011 queda pendiente: Cappelli y DiBenedetto).
     { nombre:'Franco Sensi', corto:'F. Sensi', cargo:'Presidente', desde:'1993-11-08', hasta:'2008-08-17',
       fuente:'https://it.wikipedia.org/wiki/Franco_Sensi', confirmada:true },
-    { nombre:'Rosella Sensi', corto:'R. Sensi', cargo:'Presidente', desde:'2008-08-17', hasta:'2011-01-01',
-      fuente:'https://it.wikipedia.org/wiki/Allenatori_e_presidenti_dell%27Associazione_Sportiva_Roma', confirmada:true },
-    // Pallotta: la fuente da solo los años (2012-2020); desde = 01/01/2012 por convención.
-    { nombre:'James Pallotta', corto:'Pallotta', cargo:'Presidente', desde:'2012-01-01', hasta:'2020-08-17',
-      fuente:'https://it.wikipedia.org/wiki/Allenatori_e_presidenti_dell%27Associazione_Sportiva_Roma', confirmada:true },
+    // Rosella Sensi: su renuncia se presentó el 28/6/2011 con efecto el 1/7/2011 (Relazione finanziaria annuale al 30/6/2011 de la A.S. Roma, Corporate Governance); hasta esa fecha cubre el
+    // cierre del 30/6/2011. Desde: el día de la muerte de su padre (la fuente de la sucesión da solo el año, 2008).
+    { nombre:'Rosella Sensi', corto:'R. Sensi', cargo:'Presidente', desde:'2008-08-17', hasta:'2011-07-01',
+      fuente:'https://media.asroma.com/prod/files/file/gm-8897ccba-52de-4323-8fe8-220484f4de88-2011-11-15resocontointermediodigestioneal30settembre2011.pdf', confirmada:true },
+    // Cappelli: abogado de UniCredit, presidente del CdA desde el 4/7/2011 hasta el 27/9/2011 (la misma Relazione, firmada por él el 27/9/2011; Sky Sport, 27/9/2011). No tiene cierre propio.
+    { nombre:'Roberto Cappelli', corto:'Cappelli', cargo:'Presidente', desde:'2011-07-04', hasta:'2011-09-27',
+      fuente:'https://sport.sky.it/calcio/2011/09/27/roma_dibenedetto_nominato_presidente', confirmada:true },
+    // DiBenedetto: nombrado presidente el 27/9/2011 (Sky Sport, 27/9/2011; la asamblea lo ratificó el 27/10/2011) hasta el 27/8/2012, cuando asumió Pallotta (Corriere dello Sport, 30/12/2019).
+    { nombre:'Thomas DiBenedetto', corto:'DiBenedetto', cargo:'Presidente', desde:'2011-09-27', hasta:'2012-08-27',
+      fuente:'https://sport.sky.it/calcio/2011/09/27/roma_dibenedetto_nominato_presidente', confirmada:true },
+    // Pallotta: presidente desde el 27/8/2012 (Corriere dello Sport, 30/12/2019).
+    { nombre:'James Pallotta', corto:'Pallotta', cargo:'Presidente', desde:'2012-08-27', hasta:'2020-08-17',
+      fuente:'https://www.corrieredellosport.it/news/calcio/serie-a/roma/2019/12/30-65027801/roma_sette_anni_di_pallotta_il_racconto_della_sua_presidenza', confirmada:true },
     { nombre:'Dan Friedkin', corto:'Friedkin', cargo:'Presidente', desde:'2020-08-17', hasta:null,
       fuente:'https://it.wikipedia.org/wiki/Associazione_Sportiva_Roma', confirmada:true },
   ],
@@ -91,6 +99,9 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://it.wikipedia.org/wiki/Hellas_Verona_Football_Club', confirmada:true },
   ],
   'inter-it': [
+    // Thohir: presidente desde el 15/11/2013 (LaPresse, 15/11/2013) hasta el 26/10/2018, cuando lo reemplazó Zhang (Calcio e Finanza, 26/10/2018).
+    { nombre:'Erick Thohir', corto:'Thohir', cargo:'Presidente', desde:'2013-11-15', hasta:'2018-10-26',
+      fuente:'https://www.lapresse.it/sport/2013/11/15/inter-thohir-eletto-nuovo-presidente-oggi-e-un-giorno-speciale-moratti-presidente-onorario/', confirmada:true },
     { nombre:'Steven Zhang', corto:'Zhang', cargo:'Presidente', desde:'2018-10-26', hasta:'2024-06-04',
       fuente:'https://www.gazzetta.it/Calcio/Serie-A/Inter/26-10-2018/inter-ufficiale-stevenzhang-presidente-marotta-300989857711.shtml', confirmada:true },
     // Oaktree (fondo) tomó el control en mayo de 2024; Marotta es presidente del consejo desde el 4/6/2024.
