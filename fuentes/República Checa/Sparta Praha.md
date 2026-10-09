@@ -29,3 +29,5 @@ MB. Sin fallos de descarga (única sesión de las 16 con 100% de éxito al prime
   `club-data-mapping`) va a requerir abrir cada PDF igual.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #C81313 — infobox de cs.wikipedia (azul, amarillo, rojo; camiseta local roja, "rudý sparťanský dres"), verificado 2026-10-09. El kit de en.wikipedia trae #8A1014 (bordó 2026/27). El escudo actual es negro/blanco con arco azul-amarillo-rojo: no es de la misma familia.

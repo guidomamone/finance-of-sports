@@ -56,3 +56,4 @@ distintos: `assets.skrapid.at/media/...` (la mayoría) y `res.cloudinary.com/sk-
 reciente, 2024/25) — ambos sirven el PDF directo con `curl`, sin necesitar user-agent especial.
 
 - Último chequeo: 2026-09-17.
+Color de marca: #009150 — infobox de en.wikipedia (body1 de la camiseta local); de.wikipedia: Vereinsfarben Grün und Weiß; escudo verde y blanco coherente, verificado 2026-10-09

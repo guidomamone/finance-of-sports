@@ -1,282 +1,290 @@
 {
- "md": "Clubes/Brasil/Paysandu/dre-2021.md",
- "pdf": "Clubes/Brasil/Paysandu/dre-2021.pdf",
- "club": "paysandu",
- "year": 2021,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:53:47.153Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 26,
-  "notasUsadas": []
- },
- "ladoConocido": 11,
- "rubros": [
-  {
-   "label": "Futebol Profissional",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    10868.442
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Futebol de Base",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    915.43
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Esportes Olímpicos",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    260.353
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Sócio Torcedor",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    1176.437
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Sócio Proprietário",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    320.84
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Doações",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    3432.31
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Royalties e Franquias",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    1753.659
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Outras receita",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    272.893
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Aluguel",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    217.45
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receita com Gratuidades",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    3182.285
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "(-) Deduções da Receita do Futebol",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -423.691
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receita Bruta",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    21976.408
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Custo com Pessoal",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -10352.81
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesa com Pessoal",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -2142.472
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Gerais e Administrativas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -5802.959
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas com Gratuidades",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -3182.285
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Depreciação/Amortização",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -287.647
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Perdas Constituídas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -5
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "PECLD",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -1911.802
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas Tributárias",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -3.463
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Gerais e Administrativas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -33.061
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Depreciação/Amortização",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.88
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "PECLD",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -90.646
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receitas financeiras",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.095
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas financeiras",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -179.393
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receitas financeiras líquidas",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -179.297
-   ],
-   "origen": "estado 0"
-  }
- ]
+  "md": "Clubes/Brasil/Paysandu/dre-2021.md",
+  "pdf": "Clubes/Brasil/Paysandu/dre-2021.pdf",
+  "club": "paysandu",
+  "year": 2021,
+  "generatedAt": "2026-10-09T23:23:29.993Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Futebol Profissional",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        10.868442
+      ],
+      "glosa": "Fútbol profesional"
+    },
+    {
+      "label": "Futebol de Base",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.91543
+      ],
+      "glosa": "Fútbol base"
+    },
+    {
+      "label": "Esportes Olímpicos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.260353
+      ],
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.176437
+      ],
+      "glosa": "Socio aficionado"
+    },
+    {
+      "label": "Sócio Proprietário",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.32084
+      ],
+      "glosa": "Socio propietario"
+    },
+    {
+      "label": "Doações",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.43231
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Royalties e Franquias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.753659
+      ],
+      "glosa": "Regalías y franquicias"
+    },
+    {
+      "label": "Outras receita",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.272893
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.21745
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Receita com Gratuidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.182285
+      ],
+      "glosa": "Ingresos por gratuidades"
+    },
+    {
+      "label": "Recuperação de Receitas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Recuperación de ingresos"
+    },
+    {
+      "label": "(-) Deduções da Receita do Futebol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.423691
+      ],
+      "glosa": "(-) Deducciones de los ingresos del fútbol"
+    },
+    {
+      "label": "Lojas Lobo",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Tiendas Lobo"
+    },
+    {
+      "label": "(-) Deduções da Receita de Venda",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(-) Deducciones de los ingresos por ventas"
+    },
+    {
+      "label": "Custo com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        10.35281
+      ],
+      "glosa": "Costos de personal"
+    },
+    {
+      "label": "CMV",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Costo de mercaderías vendidas"
+    },
+    {
+      "label": "Custo com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Costos de personal"
+    },
+    {
+      "label": "Despesa com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.142472
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Gerais e Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.802959
+      ],
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Despesas com Gratuidades",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.182285
+      ],
+      "glosa": "Gastos por gratuidades"
+    },
+    {
+      "label": "Depreciação/Amortização",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.287647
+      ],
+      "glosa": "Depreciación/Amortización"
+    },
+    {
+      "label": "Perdas Constituídas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.005
+      ],
+      "glosa": "Pérdidas constituidas"
+    },
+    {
+      "label": "PECLD",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.911802
+      ],
+      "glosa": "Pérdidas estimadas por créditos de dudoso cobro"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.003463
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Gerais e Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.033061
+      ],
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Depreciação/Amortização",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00088
+      ],
+      "glosa": "Depreciación/Amortización"
+    },
+    {
+      "label": "PECLD",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.090646
+      ],
+      "glosa": "Pérdidas estimadas por créditos de dudoso cobro"
+    },
+    {
+      "label": "Outras Despesas com Vendas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros gastos de ventas"
+    }
+  ]
 }

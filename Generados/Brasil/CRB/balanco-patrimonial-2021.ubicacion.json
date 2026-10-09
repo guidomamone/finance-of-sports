@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2021.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2021.md",
+ "mdSha1": "e6b294d1df667112dfdf9fc754996ab55b9d15d4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:27:24.749Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    40
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    48,
+    64
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstrações dos resultados exercícios findos de 31 de dezembro de 2021 e 2020 (em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento solo contiene balance patrimonial (b1 activo, b2 pasivo) y la demostração do resultado (b3), sin notas que desglosen ingresos o gastos. Estado individual del club, en reais."
+}

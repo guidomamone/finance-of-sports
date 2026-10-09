@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2025.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2025.md",
+ "mdSha1": "ff65035ef17f0499bbd545b185063397e6462a64",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:09:56.355Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    43
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Em unidades de reais.",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2025",
+ "columna_anterior": "31/12/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de una sola página con la DRE del Paysandu Sport Club (b1), ejercicio 2025 con comparativo 2024, en unidades de reales. No hay notas de desglose en el índice. Perímetro asumido individual (no se menciona consolidación)."
+}

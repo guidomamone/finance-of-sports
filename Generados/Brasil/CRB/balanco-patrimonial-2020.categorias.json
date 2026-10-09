@@ -1,0 +1,81 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "club": "crb",
+ "year": 2020,
+ "generatedAt": "2026-10-09T23:37:35.240Z",
+ "rubrosHuella": "c46e35f570a444bd66d690684c18422c7abaebfb",
+ "jevHuella": "fde4d2e4dd9a7d3ecf5f45ae96acaeaadba2d430",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos operativos netos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costos de las actividades sociales y deportivas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "youth_other_sports_expense",
+   "escalon": 1,
+   "jevConf": 0.91,
+   "categoria": "youth_other_sports_expense",
+   "confianza": 0.91
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 1,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 2,
+   "confCache": 0.5,
+   "motivo": "Despesas com pessoal separada de gerais e administrativas; ambigua entre plantel y administración",
+   "jev": "wages_squad",
+   "jevConf": 0.71,
+   "desdeCache": true,
+   "categoria": "wages_squad",
+   "confianza": 0.5
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos generales y administrativos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos tributarios",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

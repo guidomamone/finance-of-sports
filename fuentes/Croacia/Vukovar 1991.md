@@ -15,3 +15,4 @@
 3 documentos en carpeta (2021, 2025).
 
 - Nuevo: `Biljeske-2021.pdf` (notas a los estados 2021, 14 págs.). Ya había el ejercicio 2025.
+Color de marca: #1496CA — infobox de hr.wikipedia (body1 camiseta local); en.wikipedia trae #89CFF0 (celeste más claro); escudo con base celeste; identidad no confirmada por texto, verificado 2026-10-09

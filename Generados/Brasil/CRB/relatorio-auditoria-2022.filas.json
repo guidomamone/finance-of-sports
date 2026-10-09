@@ -1,0 +1,393 @@
+{
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2022.pdf",
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2022.md",
+ "mdSha1": "d9bd7173e749cf230bb124c9dfd9dbd8a84e492f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:29:18.721Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [
+   "b20",
+   "b23"
+  ],
+  "notas_gastos": [
+   "b21",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "miles",
+   "evidencia": "L406: (Em milhares de reais)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "No impresa; el total L923 14.799 coincide con RECEITA LÍQUIDA de b5 (en milhares)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "No impresa; el total L950 3.288 coincide con Despesas Gerais e Administrativas de b5 (en milhares)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "miles",
+   "evidencia": "No impresa; el total L982 18.425 coincide con Despesas com Pessoal de b5 (en milhares)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "miles",
+   "evidencia": "No impresa; el total L996 13.784 coincide con Outras Receitas de b5 (en milhares)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 410,
+   "etiqueta": "RECEITA LÍQUIDA",
+   "actual": "14.799",
+   "anterior": "15.525",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 411,
+   "etiqueta": "(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS",
+   "actual": "(6.975)",
+   "anterior": "(6.628)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 412,
+   "etiqueta": "RESULTADO BRUTO",
+   "actual": "7.824",
+   "anterior": "8.897",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 413,
+   "etiqueta": "(-) DESPESAS / RECEITAS DA ATIVIDADE CONTINUADA",
+   "actual": "(7.929)",
+   "anterior": "(7.710)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 414,
+   "etiqueta": "(-) Despesas Gerais e Administrativas",
+   "actual": "(3.288)",
+   "anterior": "(2.574)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 415,
+   "etiqueta": "(-) Despesas com Pessoal",
+   "actual": "(18.425)",
+   "anterior": "(13.030)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 416,
+   "etiqueta": "(-) Outras Receitas",
+   "actual": "13.784",
+   "anterior": "7.894",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 417,
+   "etiqueta": "RESULTADO FINANCEIRO LÍQUIDO",
+   "actual": "130",
+   "anterior": "28",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 418,
+   "etiqueta": "(-) Despesas Financeiras",
+   "actual": "(18)",
+   "anterior": "(23)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 419,
+   "etiqueta": "(+) Receitas Financeiras",
+   "actual": "148",
+   "anterior": "51",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 420,
+   "etiqueta": "SUPERÁVIT DO EXERCICIO",
+   "actual": "25",
+   "anterior": "1.215",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 923,
+   "etiqueta": "Total",
+   "actual": "14.799",
+   "anterior": "15.525",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA"
+  },
+  {
+   "bloque": "b23",
+   "linea": 990,
+   "etiqueta": "Patrocínios/Marketing/Royalties/Emendas Parlamentares",
+   "actual": "13.593",
+   "anterior": "214",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 991,
+   "etiqueta": "Doaçoes/contribuições voluntarias",
+   "actual": "127",
+   "anterior": "180",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 992,
+   "etiqueta": "Ajudas de custo/CBF/COVID",
+   "actual": "48",
+   "anterior": "498",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 993,
+   "etiqueta": "Recuperação de despesas",
+   "actual": "16",
+   "anterior": "496",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 994,
+   "etiqueta": "Depósitos Judiciais",
+   "actual": "-",
+   "anterior": "6.495",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 995,
+   "etiqueta": "Loteria esportiva",
+   "actual": "-",
+   "anterior": "11",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 996,
+   "etiqueta": "Total",
+   "actual": "13.784",
+   "anterior": "7.894",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras Receitas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 950,
+   "etiqueta": "Total",
+   "actual": "3.288",
+   "anterior": "2.574",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 973,
+   "etiqueta": "Direito de Arena/Imagem/Bônus Desportivos",
+   "actual": "12.904",
+   "anterior": "7.697",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 974,
+   "etiqueta": "Ordenados e Salários",
+   "actual": "3.099",
+   "anterior": "2.183",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 975,
+   "etiqueta": "Indenizaçoes Trabalhista",
+   "actual": "1.129",
+   "anterior": "386",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 976,
+   "etiqueta": "Férias",
+   "actual": "311",
+   "anterior": "272",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 977,
+   "etiqueta": "Emprestimos de Passes de Atletas",
+   "actual": "259",
+   "anterior": "1.440",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 978,
+   "etiqueta": "Fgts",
+   "actual": "254",
+   "anterior": "194",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 979,
+   "etiqueta": "13º Salário",
+   "actual": "239",
+   "anterior": "175",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 980,
+   "etiqueta": "Inss",
+   "actual": "142",
+   "anterior": "106",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 981,
+   "etiqueta": "Outras despesas com pessoal",
+   "actual": "88",
+   "anterior": "577",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b22",
+   "linea": 982,
+   "etiqueta": "Total",
+   "actual": "18.425",
+   "anterior": "13.030",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 420,
+  "actual": "25",
+  "anterior": "1.215"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas L921 (14.793) y L922 (6) de la nota de receita (b20) completando su etiqueta desde el PDF?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "RECEITA LÍQUIDA",
+   "texto": "La transcripción de b20 perdió la columna de etiquetas de L921-L922; solo se cargó el Total L923.",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las filas L945-L949 de la nota de despesas gerais (b21) completando sus etiquetas desde el PDF?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "(-) Despesas Gerais e Administrativas",
+   "texto": "La transcripción de b21 perdió las etiquetas de L945-L949 (1.556, 1.284, 232, 146, 70); solo se cargó el Total L950.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna el cuadro b22 (L971-L982), titulado 'Despesas Gerais e Administrativas', al renglón '(-) Despesas com Pessoal'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "(-) Despesas com Pessoal",
+   "texto": "El encabezado L971 dice Despesas Gerais pero el total L982 18.425 y las partidas corresponden a Despesas com Pessoal.",
+   "bloques": [
+    "b22",
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala en miles de reales (L406); las notas no indican escala pero sus totales coinciden con el estado. No hay total de ingresos ni de gastos impreso. RECEITA LÍQUIDA tratada como renglón de ingreso. 'Outras Receitas' L416 lleva prefijo (-) pero importe positivo; se cargó tal cual."
+}

@@ -1,0 +1,310 @@
+{
+  "md": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md",
+  "pdf": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf",
+  "club": "remo",
+  "year": 2021,
+  "generatedAt": "2026-10-09T23:23:30.341Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita de Aluguéis",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.757191
+      ],
+      "glosa": "Ingresos por alquileres"
+    },
+    {
+      "label": "Receita de Estacionamento",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.054236
+      ],
+      "glosa": "Ingresos por estacionamiento"
+    },
+    {
+      "label": "Receita de Bilheteria",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        9.533278
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Receita Royalties / Lojas",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        3.209878
+      ],
+      "glosa": "Ingresos por regalías / tiendas"
+    },
+    {
+      "label": "Receita Patrimoniais/Sociais",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.83101
+      ],
+      "glosa": "Ingresos patrimoniales / sociales"
+    },
+    {
+      "label": "Receita da Atividade Social",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        7.212591
+      ],
+      "glosa": "Ingresos de la actividad social"
+    },
+    {
+      "label": "Receita Programa Timemania",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.604689
+      ],
+      "glosa": "Ingresos del programa Timemania"
+    },
+    {
+      "label": "Receita Programa Socio Torcedor",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.882386
+      ],
+      "glosa": "Ingresos del programa de socios"
+    },
+    {
+      "label": "Receita de Patrocínio / Marketing",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        4.35011
+      ],
+      "glosa": "Ingresos por patrocinio / marketing"
+    },
+    {
+      "label": "Receita de Direito de Transmissão",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.046421
+      ],
+      "glosa": "Ingresos por derechos de transmisión"
+    },
+    {
+      "label": "Receitas Royalties / Licenciados",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.627466
+      ],
+      "glosa": "Ingresos por regalías / licenciatarios"
+    },
+    {
+      "label": "Receita com Vendas Materiais",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.13301
+      ],
+      "glosa": "Ingresos por venta de materiales"
+    },
+    {
+      "label": "Demais Receitas",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.224168
+      ],
+      "glosa": "Demás ingresos"
+    },
+    {
+      "label": "Receita com redução juros/multa - Perse",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        13.490829
+      ],
+      "glosa": "Ingresos por reducción de intereses/multas - Perse"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.385967
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Comissões",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.023
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.134117
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Manutenção",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.880265
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Programa Sócio Torcedor",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.036547
+      ],
+      "glosa": "Programa de socios"
+    },
+    {
+      "label": "Serviço de Terceiros",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        2.427815
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Materiais esportivos e premiações",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.101857
+      ],
+      "glosa": "Material deportivo y premios"
+    },
+    {
+      "label": "Despesas com Amortização dos Débitos Trabalhistas",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.003
+      ],
+      "glosa": "Gastos por amortización de deudas laborales"
+    },
+    {
+      "label": "Despesas com tributos",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.173537
+      ],
+      "glosa": "Gastos por tributos"
+    },
+    {
+      "label": "Despesas com depreciação e amortização",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.075833
+      ],
+      "glosa": "Gastos de depreciación y amortización"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.660346
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Despesas com Pessoal",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        6.537288
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Direito de imagem",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        4.643626
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Despesas com Jogos e Competições",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        3.014827
+      ],
+      "glosa": "Gastos por partidos y competiciones"
+    },
+    {
+      "label": "Despesas Programa Socio Torcedor",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.321113
+      ],
+      "glosa": "Gastos del programa de socios"
+    },
+    {
+      "label": "Despesas com Passagens e Hospedagens",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.468095
+      ],
+      "glosa": "Gastos de pasajes y alojamiento"
+    }
+  ]
+}

@@ -33,3 +33,4 @@ nombre no detectado). No se investigó más a fondo esta sesión; si se quiere c
 si existe un informe cubriendo el segundo semestre de 2017 bajo otro título.
 
 - Último chequeo: 2026-09-17.
+Color de marca: #FF0000 — infobox de en.wikipedia (body1 camiseta local); de.wikipedia: Vereinsfarben Rot, Weiss (gana el no blanco); escudo rojo, verificado 2026-10-09

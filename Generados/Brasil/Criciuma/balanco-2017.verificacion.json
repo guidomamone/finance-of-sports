@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2017.pdf",
+ "md": "Clubes/Brasil/Criciuma/balanco-2017.md",
+ "generado": "2026-10-09T23:23:28.437Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2017,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "17.385767 = 17.385767"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "25.174605 = 25.174605"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 17.385767 en este documento y 17.385767 en balanco-2018.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 25.964039 en balanco-auditado-2016.pdf y 25.96404 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿La primera columna de importes de b10 (rotulada '01.JAN.2016 a 31.DEZ.2016') corresponde en realidad al ejercicio 2017?",
+  "duda de extraer confirmada por las sumas (columna, \"RECEITA OPERACIONAL BRUTA\"): ¿Se toma la primera columna del estado (L297, rotulada 01.JAN.2016 a 31.DEZ.2016) como el ejercicio 2017, dado que coincide con la columna 31.dez.2017 de la nota 16 (L1132)?",
+  "duda de extraer que no afecta la carga: Diferencia de 111 en el año anterior entre estado y nota 17 (también resultado financiero 1.412.444 vs 1.412.555 en L1163); la nota detallada suma 1.541.330."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 17.385767,
+  "gastos": 25.174605,
+  "financiero": -1.4869,
+  "impuesto": 0,
+  "resultadoImpreso": -9.275738,
+  "resultadoParaCargar": -9.275738,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita com transmissão televisíveis",
+   "lado": "ingreso",
+   "M": 7.070872,
+   "pagina": 28,
+   "linea": 1123,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com mensalidade de sócios",
+   "lado": "ingreso",
+   "M": 4.047471,
+   "pagina": 28,
+   "linea": 1124,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com Patrocínios",
+   "lado": "ingreso",
+   "M": 2.089015,
+   "pagina": 28,
+   "linea": 1125,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita de mecanismo de solidariedade",
+   "lado": "ingreso",
+   "M": 0.459719,
+   "pagina": 28,
+   "linea": 1126,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Repasse de direitos federativos",
+   "lado": "ingreso",
+   "M": 1.664904,
+   "pagina": 28,
+   "linea": 1127,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Venda de mercadorias",
+   "lado": "ingreso",
+   "M": 0.30484,
+   "pagina": 28,
+   "linea": 1128,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receitas de royalties",
+   "lado": "ingreso",
+   "M": 0.028741,
+   "pagina": 28,
+   "linea": 1129,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receitas Publicidades",
+   "lado": "ingreso",
+   "M": 0.285287,
+   "pagina": 28,
+   "linea": 1130,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Demais Receitas",
+   "lado": "ingreso",
+   "M": 1.434918,
+   "pagina": 28,
+   "linea": 1131,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Departamento Profissional",
+   "lado": "gasto",
+   "M": 14.332058,
+   "pagina": 9,
+   "linea": 301,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Amador",
+   "lado": "gasto",
+   "M": 2.429934,
+   "pagina": 9,
+   "linea": 302,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Administrativo",
+   "lado": "gasto",
+   "M": 0.683967,
+   "pagina": 9,
+   "linea": 303,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de Marketing e Comercial",
+   "lado": "gasto",
+   "M": 0.527402,
+   "pagina": 9,
+   "linea": 304,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de Patrimonio",
+   "lado": "gasto",
+   "M": 3.985009,
+   "pagina": 9,
+   "linea": 306,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Juridico",
+   "lado": "gasto",
+   "M": 2.673868,
+   "pagina": 9,
+   "linea": 307,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Loja - Tigre Maniacos",
+   "lado": "gasto",
+   "M": 0.160993,
+   "pagina": 9,
+   "linea": 308,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.381374,
+   "pagina": 9,
+   "linea": 309,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -1.50713,
+   "linea": 315
+  },
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.02023,
+   "linea": 316
+  }
+ ],
+ "impuesto": []
+}

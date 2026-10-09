@@ -41,3 +41,4 @@ CVR 71 17 21 12, y menciona explícitamente a OB y la Superliga en la sección d
   2014 en adelante, ya dicen consistentemente "Odense Sport & Event A/S").
 
 - Último chequeo: 2026-09-17.
+Color de marca: #005493 — logotyp.us (azul del escudo); camiseta azul y blanco a rayas verticales (en/da.wikipedia), gana el no blanco; verificado 2026-10-09

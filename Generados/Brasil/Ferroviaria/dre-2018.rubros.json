@@ -1,0 +1,2220 @@
+{
+  "md": "Clubes/Brasil/Ferroviaria/dre-2018.md",
+  "pdf": "Clubes/Brasil/Ferroviaria/dre-2018.pdf",
+  "club": "ferroviaria",
+  "year": 2018,
+  "generatedAt": "2026-10-09T23:23:29.711Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Rendas de Jogos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.399641
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Cotas de TV",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        3.44
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Repasse Cessão Temporária dos Atletas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.13
+      ],
+      "glosa": "Ingresos por cesión temporal de jugadores"
+    },
+    {
+      "label": "Venda dos Direitos Econômicos Atletas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.24
+      ],
+      "glosa": "Venta de derechos económicos de jugadores"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.223977
+      ],
+      "glosa": "Abonados y socios"
+    },
+    {
+      "label": "Premios, Outras Receitas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.40865
+      ],
+      "glosa": "Premios y otros ingresos"
+    },
+    {
+      "label": "Mercadorias c/Vendas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.003632
+      ],
+      "glosa": "Ventas de mercaderías"
+    },
+    {
+      "label": "Patrocinios",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        3.889326
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Publicidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.434146
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "(-) Pis",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        -0.00006
+      ],
+      "glosa": "(-) PIS"
+    },
+    {
+      "label": "(-) Cofins",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        -0.000276
+      ],
+      "glosa": "(-) COFINS"
+    },
+    {
+      "label": "(-) Icms",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        -0.000654
+      ],
+      "glosa": "(-) ICMS"
+    },
+    {
+      "label": "Venda dos Vínculos Desportivos Atletas",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.905
+      ],
+      "glosa": "Venta de derechos federativos de jugadores"
+    },
+    {
+      "label": "Aviso Prévio Descontado",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.0065
+      ],
+      "glosa": "Preaviso descontado"
+    },
+    {
+      "label": "Multa Contratual",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.041768
+      ],
+      "glosa": "Multa contractual"
+    },
+    {
+      "label": "Bonificações",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.615865
+      ],
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Indenizações Recebidas",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        1.158485
+      ],
+      "glosa": "Indemnizaciones recibidas"
+    },
+    {
+      "label": "Reversão de Provisão de Férias",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.035032
+      ],
+      "glosa": "Reversión de provisión para vacaciones"
+    },
+    {
+      "label": "Reversão de Provisão INSS Férias",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.001536
+      ],
+      "glosa": "Reversión de provisión INSS sobre vacaciones"
+    },
+    {
+      "label": "Reversão de Provisão FGTS Férias",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.002405
+      ],
+      "glosa": "Reversión de provisión FGTS sobre vacaciones"
+    },
+    {
+      "label": "Reversão de Provisão PIS Férias",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.000347
+      ],
+      "glosa": "Reversión de provisión PIS sobre vacaciones"
+    },
+    {
+      "label": "Ajuste de Correção - FPF",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.006041
+      ],
+      "glosa": "Ajuste de corrección - FPF"
+    },
+    {
+      "label": "Multa Tribunal de Justiça Desportiva",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.027
+      ],
+      "glosa": "Multa del Tribunal de Justicia Deportiva"
+    },
+    {
+      "label": "Despesas Processuais FIFA",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.019215
+      ],
+      "glosa": "Gastos procesales FIFA"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.017697
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Royalties",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.013223
+      ],
+      "glosa": "Regalías"
+    },
+    {
+      "label": "Taxa de Policiamento",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.060652
+      ],
+      "glosa": "Tasa de seguridad policial"
+    },
+    {
+      "label": "Taxas Federações e Confederações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.241398
+      ],
+      "glosa": "Tasas de federaciones y confederaciones"
+    },
+    {
+      "label": "Inss s/Patrocinios",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.083575
+      ],
+      "glosa": "INSS sobre patrocinios"
+    },
+    {
+      "label": "Manutenção, Conservação Estadio",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.065067
+      ],
+      "glosa": "Mantenimiento y conservación del estadio"
+    },
+    {
+      "label": "Agenciamento de Atletas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0645
+      ],
+      "glosa": "Intermediación de jugadores"
+    },
+    {
+      "label": "Inss s/Arbitragens",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.017157
+      ],
+      "glosa": "INSS sobre arbitrajes"
+    },
+    {
+      "label": "Locação de Veiculos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000588
+      ],
+      "glosa": "Alquiler de vehículos"
+    },
+    {
+      "label": "Água Mineral",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014025
+      ],
+      "glosa": "Agua mineral"
+    },
+    {
+      "label": "Exame Anti-Doping",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.004539
+      ],
+      "glosa": "Control antidopaje"
+    },
+    {
+      "label": "Serviços Prest p/Terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.708341
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        1.395875
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Inss s/Cotas de TV",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.241895
+      ],
+      "glosa": "INSS sobre derechos de TV"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.350006
+      ],
+      "glosa": "Alimentación y manutención"
+    },
+    {
+      "label": "Gastos c/ Viagens",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008102
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Gastos c/ Hospedagens",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.194006
+      ],
+      "glosa": "Gastos de alojamiento"
+    },
+    {
+      "label": "Premiações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.207858
+      ],
+      "glosa": "Primas y recompensas"
+    },
+    {
+      "label": "Jogos e Competições",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.538761
+      ],
+      "glosa": "Partidos y competiciones"
+    },
+    {
+      "label": "Direito de Arena",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.1634
+      ],
+      "glosa": "Derecho de arena"
+    },
+    {
+      "label": "Inss s/Premiações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.018533
+      ],
+      "glosa": "INSS sobre primas"
+    },
+    {
+      "label": "Inss s/Publicidade",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0162
+      ],
+      "glosa": "INSS sobre publicidad"
+    },
+    {
+      "label": "Isotônico",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.009774
+      ],
+      "glosa": "Bebidas isotónicas"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        1.259152
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.118747
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.068071
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.029482
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Aviso Prévio Indenizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006627
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.063046
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "FGTS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.109152
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "FGTS Rescisório",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014491
+      ],
+      "glosa": "FGTS por rescisión laboral"
+    },
+    {
+      "label": "13º Salário Indenizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000425
+      ],
+      "glosa": "Paga extraordinaria indemnizada"
+    },
+    {
+      "label": "Agua Mineral",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010272
+      ],
+      "glosa": "Agua mineral"
+    },
+    {
+      "label": "Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.204725
+      ],
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014033
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.02396
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Provisão 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.086625
+      ],
+      "glosa": "Provisión para paga extraordinaria"
+    },
+    {
+      "label": "Provisão INSS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003898
+      ],
+      "glosa": "Provisión INSS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão FGTS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007398
+      ],
+      "glosa": "Provisión FGTS sobre paga extraordinaria"
+    },
+    {
+      "label": "Exames Médicos",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000304
+      ],
+      "glosa": "Reconocimientos médicos"
+    },
+    {
+      "label": "Provisão PIS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000867
+      ],
+      "glosa": "Provisión PIS sobre paga extraordinaria"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.370745
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006311
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.020131
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001917
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Aviso Prévio Indenizado",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000425
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.017062
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "FGTS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.029992
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "FGTS Rescisório",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002602
+      ],
+      "glosa": "FGTS por rescisión laboral"
+    },
+    {
+      "label": "Vale Transporte",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003639
+      ],
+      "glosa": "Vales de transporte"
+    },
+    {
+      "label": "Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001417
+      ],
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003804
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00025
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Provisão 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.031411
+      ],
+      "glosa": "Provisión para paga extraordinaria"
+    },
+    {
+      "label": "Provisão Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.025546
+      ],
+      "glosa": "Provisión para vacaciones"
+    },
+    {
+      "label": "Provisão INSS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001165
+      ],
+      "glosa": "Provisión INSS sobre vacaciones"
+    },
+    {
+      "label": "Provisão FGTS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002044
+      ],
+      "glosa": "Provisión FGTS sobre vacaciones"
+    },
+    {
+      "label": "Provisão INSS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001413
+      ],
+      "glosa": "Provisión INSS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão FGTS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002513
+      ],
+      "glosa": "Provisión FGTS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000314
+      ],
+      "glosa": "Provisión PIS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000255
+      ],
+      "glosa": "Provisión PIS sobre vacaciones"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.146793
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.004194
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006366
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.004423
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006999
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "FGTS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.012443
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001554
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.07145
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Provisão 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007299
+      ],
+      "glosa": "Provisión para paga extraordinaria"
+    },
+    {
+      "label": "Provisão Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007691
+      ],
+      "glosa": "Provisión para vacaciones"
+    },
+    {
+      "label": "Provisão INSS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000306
+      ],
+      "glosa": "Provisión INSS sobre vacaciones"
+    },
+    {
+      "label": "Provisão FGTS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000615
+      ],
+      "glosa": "Provisión FGTS sobre vacaciones"
+    },
+    {
+      "label": "Provisão INSS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001876
+      ],
+      "glosa": "Provisión INSS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão FGTS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000702
+      ],
+      "glosa": "Provisión FGTS sobre paga extraordinaria"
+    },
+    {
+      "label": "Exames Médicos",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000044
+      ],
+      "glosa": "Reconocimientos médicos"
+    },
+    {
+      "label": "Provisão PIS 13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000088
+      ],
+      "glosa": "Provisión PIS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS Férias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000077
+      ],
+      "glosa": "Provisión PIS sobre vacaciones"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.185903
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007486
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003181
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Aviso Prévio Indenizado",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001929
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008499
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "FGTS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.015074
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "FGTS Rescisório",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001566
+      ],
+      "glosa": "FGTS por rescisión laboral"
+    },
+    {
+      "label": "13º Salário Indenizado",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000146
+      ],
+      "glosa": "Paga extraordinaria indemnizada"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001904
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Provisão 13º Salario",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010351
+      ],
+      "glosa": "Provisión para paga extraordinaria"
+    },
+    {
+      "label": "Provisão Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008866
+      ],
+      "glosa": "Provisión para vacaciones"
+    },
+    {
+      "label": "Provisão INSS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000399
+      ],
+      "glosa": "Provisión INSS sobre vacaciones"
+    },
+    {
+      "label": "Provisão FGTS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000709
+      ],
+      "glosa": "Provisión FGTS sobre vacaciones"
+    },
+    {
+      "label": "Provisão INSS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000466
+      ],
+      "glosa": "Provisión INSS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão FGTS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000828
+      ],
+      "glosa": "Provisión FGTS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000103
+      ],
+      "glosa": "Provisión PIS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000088
+      ],
+      "glosa": "Provisión PIS sobre vacaciones"
+    },
+    {
+      "label": "Despesas Pelo Uso da Marca",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.165553
+      ],
+      "glosa": "Gastos por uso de marca"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000596
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Internet",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000932
+      ],
+      "glosa": "Internet"
+    },
+    {
+      "label": "Água",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001808
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007217
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Assinatura TV a Cabo",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002566
+      ],
+      "glosa": "Suscripción a televisión por cable"
+    },
+    {
+      "label": "Uniformes",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00077
+      ],
+      "glosa": "Uniformes y equipaciones"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.557241
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.033047
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.047338
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salario",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0069
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Aviso Prévio Indenizado",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.017717
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.026913
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "FGTS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.046779
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "FGTS Rescisório",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.025034
+      ],
+      "glosa": "FGTS por rescisión laboral"
+    },
+    {
+      "label": "13º Salário Indenizado",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001343
+      ],
+      "glosa": "Paga extraordinaria indemnizada"
+    },
+    {
+      "label": "Vale Transporte",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.019345
+      ],
+      "glosa": "Vales de transporte"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006018
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Provisão 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.042107
+      ],
+      "glosa": "Provisión para paga extraordinaria"
+    },
+    {
+      "label": "Provisão Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.013393
+      ],
+      "glosa": "Provisión para vacaciones"
+    },
+    {
+      "label": "Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008499
+      ],
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Provisão INSS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000603
+      ],
+      "glosa": "Provisión INSS sobre vacaciones"
+    },
+    {
+      "label": "Provisão FGTS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001072
+      ],
+      "glosa": "Provisión FGTS sobre vacaciones"
+    },
+    {
+      "label": "Provisão INSS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001895
+      ],
+      "glosa": "Provisión INSS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão FGTS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003008
+      ],
+      "glosa": "Provisión FGTS sobre paga extraordinaria"
+    },
+    {
+      "label": "Exames Médicos",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000132
+      ],
+      "glosa": "Reconocimientos médicos"
+    },
+    {
+      "label": "Provisão PIS 13º Salário",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000421
+      ],
+      "glosa": "Provisión PIS sobre paga extraordinaria"
+    },
+    {
+      "label": "Provisão PIS Férias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000134
+      ],
+      "glosa": "Provisión PIS sobre vacaciones"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0007
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Licença de Uso de Software",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.057644
+      ],
+      "glosa": "Licencias de software"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014825
+      ],
+      "glosa": "Amortizaciones de inmovilizado material"
+    },
+    {
+      "label": "Bens de Valores Irrelevantes",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008552
+      ],
+      "glosa": "Bienes de escaso valor"
+    },
+    {
+      "label": "Despesas de Viagens",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.079698
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.019793
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção, Conservação de Bens",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.063091
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Publicações",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00412
+      ],
+      "glosa": "Publicaciones"
+    },
+    {
+      "label": "Combustíveis",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.104817
+      ],
+      "glosa": "Combustibles"
+    },
+    {
+      "label": "Propaganda e Publicidade",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.075076
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Internet",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002408
+      ],
+      "glosa": "Internet"
+    },
+    {
+      "label": "Custas e Emolumentos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008781
+      ],
+      "glosa": "Costas y aranceles"
+    },
+    {
+      "label": "Despesas c/Refeições",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001817
+      ],
+      "glosa": "Gastos de comidas"
+    },
+    {
+      "label": "Material de Limpeza, Higiene, Copa, Cozinha",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.053078
+      ],
+      "glosa": "Material de limpieza, higiene y cocina"
+    },
+    {
+      "label": "Locação de Veículos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0026
+      ],
+      "glosa": "Alquiler de vehículos"
+    },
+    {
+      "label": "Registro de Domínio",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000076
+      ],
+      "glosa": "Registro de dominios"
+    },
+    {
+      "label": "Licenciamento de Veículos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001885
+      ],
+      "glosa": "Permisos de circulación vehicular"
+    },
+    {
+      "label": "Locação de Equipamentos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000105
+      ],
+      "glosa": "Alquiler de equipos"
+    },
+    {
+      "label": "Despesas c/ Certificação Digital",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00024
+      ],
+      "glosa": "Gastos de certificación digital"
+    },
+    {
+      "label": "Locação de Equipamentos Eletrônicos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001169
+      ],
+      "glosa": "Alquiler de equipos electrónicos"
+    },
+    {
+      "label": "Despesas c/ Estacionamentos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000162
+      ],
+      "glosa": "Gastos de aparcamiento"
+    },
+    {
+      "label": "Serviços Prestados p/ Terceiros",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00036
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Amortizações",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Despesas c/ TV a Cabo",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002953
+      ],
+      "glosa": "Gastos de televisión por cable"
+    },
+    {
+      "label": "Locação de Móveis e Utensílios",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00108
+      ],
+      "glosa": "Alquiler de mobiliario y enseres"
+    },
+    {
+      "label": "Fotocópias, Autenticações e Rec. Firmas",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0021
+      ],
+      "glosa": "Fotocopias, legalizaciones y compulsa de firmas"
+    },
+    {
+      "label": "Utensílios Copa/Cozinha",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001405
+      ],
+      "glosa": "Utensilios de cocina y comedor"
+    },
+    {
+      "label": "Despesas c/ Eventos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003674
+      ],
+      "glosa": "Gastos de eventos"
+    },
+    {
+      "label": "Despesas c/ Fretes e Carretos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000085
+      ],
+      "glosa": "Gastos de transporte y fletes"
+    },
+    {
+      "label": "Despesas c/ Seguro de Vida",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014013
+      ],
+      "glosa": "Gastos de seguro de vida"
+    },
+    {
+      "label": "Despesas c/ CIEE",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00067
+      ],
+      "glosa": "Gastos con entidades de prácticas (CIEE)"
+    },
+    {
+      "label": "Despesas c/ Estagiários",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0005
+      ],
+      "glosa": "Gastos de becarios y pasantes"
+    },
+    {
+      "label": "Despesas Processuais - FIFA",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.019168
+      ],
+      "glosa": "Gastos procesales - FIFA"
+    },
+    {
+      "label": "Despesas c/ Uniformes",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00214
+      ],
+      "glosa": "Gastos de uniformes"
+    },
+    {
+      "label": "Serviços de Cobrança",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000028
+      ],
+      "glosa": "Servicios de gestión de cobro"
+    },
+    {
+      "label": "Materiais Esportivos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007639
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Uniformes",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.672592
+      ],
+      "glosa": "Uniformes y equipaciones"
+    },
+    {
+      "label": "Medicamentos e Mat.Medicos e Cirurgicos",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.104349
+      ],
+      "glosa": "Medicamentos y material médico-quirúrgico"
+    },
+    {
+      "label": "Agua",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.05101
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.551405
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Bens de Valores Irrelevantes",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.071935
+      ],
+      "glosa": "Bienes de escaso valor"
+    },
+    {
+      "label": "Energia Eletrica",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.020744
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.014809
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção e Conservação de Bens",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00078
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Utensílios, Guarn, Cama, Mesa e Banho",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00038
+      ],
+      "glosa": "Lencería de cama, mesa, baño y enseres"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.017568
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Manutenção e Conservação do Prédio",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.005531
+      ],
+      "glosa": "Mantenimiento y conservación de inmuebles"
+    },
+    {
+      "label": "Internet",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003525
+      ],
+      "glosa": "Internet"
+    },
+    {
+      "label": "Assinatura TV a Cabo",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.005046
+      ],
+      "glosa": "Suscripción a televisión por cable"
+    },
+    {
+      "label": "Condomínio",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.047432
+      ],
+      "glosa": "Gastos de comunidad"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000269
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "IPTU",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.011922
+      ],
+      "glosa": "Impuesto sobre bienes inmuebles (IPTU)"
+    },
+    {
+      "label": "Agua",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000056
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010701
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Assistência Médica",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001534
+      ],
+      "glosa": "Asistencia médica"
+    },
+    {
+      "label": "Impressos e Materiais de Escritorio",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00765
+      ],
+      "glosa": "Material de oficina e impresos"
+    },
+    {
+      "label": "Correios",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003613
+      ],
+      "glosa": "Gastos postales"
+    },
+    {
+      "label": "Homenagens",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00112
+      ],
+      "glosa": "Homenajes y atenciones"
+    },
+    {
+      "label": "Multas de Trânsito",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001127
+      ],
+      "glosa": "Multas de tránsito"
+    },
+    {
+      "label": "Multas por Infração a Legislação",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.026354
+      ],
+      "glosa": "Multas por infracción a la legislación"
+    },
+    {
+      "label": "Despesas Diversas",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.128947
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Despesas c/ Brindes",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000799
+      ],
+      "glosa": "Gastos en obsequios"
+    },
+    {
+      "label": "Contingências Trabalhistas",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.040934
+      ],
+      "glosa": "Contingencias laborales"
+    },
+    {
+      "label": "Honorários Contábeis,Adv e de Auditorias",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.230547
+      ],
+      "glosa": "Honorarios contables, legales y de auditoría"
+    },
+    {
+      "label": "Apoio Administrativo",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.16765
+      ],
+      "glosa": "Apoyo administrativo"
+    },
+    {
+      "label": "Manutenção de Software",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.023495
+      ],
+      "glosa": "Mantenimiento de software"
+    },
+    {
+      "label": "Consultoria",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0882
+      ],
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Multas TJD - Tribunal Justiça Desportiva",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00335
+      ],
+      "glosa": "Multas del Tribunal de Justicia Deportiva (TJD)"
+    },
+    {
+      "label": "ISS e Taxa Poder Polícia",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000107
+      ],
+      "glosa": "Impuesto sobre servicios (ISS) y tasas de fiscalización"
+    },
+    {
+      "label": "Multas, Juros e Correção Monetária",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.011917
+      ],
+      "glosa": "Multas, intereses y corrección monetaria"
+    },
+    {
+      "label": "Multas, Juros - Parcelamento ISS Retido",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000035
+      ],
+      "glosa": "Multas e intereses - Fraccionamiento de ISS retenido"
+    },
+    {
+      "label": "Contribuição Negocial",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.011125
+      ],
+      "glosa": "Contribución sindical negocial"
+    },
+    {
+      "label": "Imposto de Renda s/Remessa ao Exterior",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003383
+      ],
+      "glosa": "Impuesto sobre la renta sobre remesas al exterior"
+    },
+    {
+      "label": "Impostos e Taxas Diversas",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000684
+      ],
+      "glosa": "Impuestos y tasas diversos"
+    }
+  ]
+}

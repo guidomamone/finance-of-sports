@@ -1,0 +1,1266 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md",
+ "mdSha1": "21267da1d8eed41f423198318fc4d8ccc598d6a3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:26:50.860Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b50",
+   "b53",
+   "b55"
+  ],
+  "notas_gastos": [
+   "b51",
+   "b52",
+   "b54"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L190: (Valores expressos em milhares de reais, exceto quando indicado de outra forma)"
+  },
+  {
+   "bloque": "b50",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; coincide con el estado (L1250 = L194), se asume milhares de reais"
+  },
+  {
+   "bloque": "b53",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total L1347 coincide con L198"
+  },
+  {
+   "bloque": "b55",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; L1392 coincide con L201"
+  },
+  {
+   "bloque": "b51",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; L1297 coincide con L195"
+  },
+  {
+   "bloque": "b52",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; L1337 coincide con L196"
+  },
+  {
+   "bloque": "b54",
+   "escala": "miles",
+   "evidencia": "Sin frase propia; L1379 coincide con L199"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 194,
+   "etiqueta": "RECEITA LÍQUIDA DAS ATIVIDADES",
+   "actual": "39.220",
+   "anterior": "29.660",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 195,
+   "etiqueta": "CUSTOS DO FUTEBOL PROFISSIONAL",
+   "actual": "(55.029)",
+   "anterior": "(61.529)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 196,
+   "etiqueta": "CUSTOS DO FUTEBOL DE FORMAÇÃO",
+   "actual": "(9.759)",
+   "anterior": "(9.400)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 197,
+   "etiqueta": "DÉFICIT BRUTO",
+   "actual": "(25.568)",
+   "anterior": "(41.269)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 198,
+   "etiqueta": "OUTRAS RECEITAS OPERACIONAIS",
+   "actual": "4.631",
+   "anterior": "28.162",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 199,
+   "etiqueta": "DESPESAS GERAIS E ADMINISTRATIVAS",
+   "actual": "(19.704)",
+   "anterior": "(20.919)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 200,
+   "etiqueta": "DÉFICIT OPERACIONAL",
+   "actual": "(40.641)",
+   "anterior": "(34.026)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 201,
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "actual": "1.006",
+   "anterior": "254",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 202,
+   "etiqueta": "DESPESAS FINANCEIRAS",
+   "actual": "(2.088)",
+   "anterior": "(2.755)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 203,
+   "etiqueta": "RESULTADO FINANCEIRO ANTES DA ATUALIZAÇÃO TRIBUTÁRIA",
+   "actual": "(1.082)",
+   "anterior": "(2.501)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 204,
+   "etiqueta": "DÉFICIT ANTES DA ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS",
+   "actual": "(41.723)",
+   "anterior": "(36.527)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 205,
+   "etiqueta": "ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS",
+   "actual": "(41.706)",
+   "anterior": "(32.204)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 206,
+   "etiqueta": "DÉFICIT DO EXERCÍCIO",
+   "actual": "(83.429)",
+   "anterior": "(68.731)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1237,
+   "etiqueta": "Arrendamentos",
+   "actual": "2.567",
+   "anterior": "2.554",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1238,
+   "etiqueta": "Bilheteria",
+   "actual": "3.040",
+   "anterior": "2.303",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1239,
+   "etiqueta": "Cota TV e transmissão jogos",
+   "actual": "11.064",
+   "anterior": "8.242",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1240,
+   "etiqueta": "Mensalidades dos Sócios",
+   "actual": "9.830",
+   "anterior": "7.392",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1241,
+   "etiqueta": "Patrocínios",
+   "actual": "6.182",
+   "anterior": "4.658",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1242,
+   "etiqueta": "Participações em competições",
+   "actual": "13",
+   "anterior": "72",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1243,
+   "etiqueta": "Publicidades",
+   "actual": "3.903",
+   "anterior": "3.179",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1244,
+   "etiqueta": "Receitas de locações",
+   "actual": "2.371",
+   "anterior": "752",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1245,
+   "etiqueta": "Repasses da Loteria Timemania",
+   "actual": "312",
+   "anterior": "679",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1246,
+   "etiqueta": "Venda de Material Esportivo",
+   "actual": "36",
+   "anterior": "255",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1247,
+   "etiqueta": "Venda e uso da Marca",
+   "actual": "233",
+   "anterior": "613",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1248,
+   "etiqueta": "Total das receitas das atividades operacionais",
+   "actual": "39.551",
+   "anterior": "30.699",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1249,
+   "etiqueta": "(-) Deduções da Receita operacional",
+   "actual": "(331)",
+   "anterior": "(1.039)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1250,
+   "etiqueta": "Total líquido de Receitas operacionais",
+   "actual": "39.220",
+   "anterior": "29.660",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1345,
+   "etiqueta": "Deságio recuperação judicial",
+   "actual": "-",
+   "anterior": "19.688",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "OUTRAS RECEITAS OPERACIONAIS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1346,
+   "etiqueta": "Resultado líquido na cessão definitiva de direitos profissionais de atletas",
+   "actual": "4.631",
+   "anterior": "8.474",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "OUTRAS RECEITAS OPERACIONAIS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1347,
+   "etiqueta": "Total Outras Receitas",
+   "actual": "4.631",
+   "anterior": "28.162",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "OUTRAS RECEITAS OPERACIONAIS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1388,
+   "etiqueta": "Descontos ativos",
+   "actual": "44",
+   "anterior": "151",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1389,
+   "etiqueta": "Outras receitas financeiras",
+   "actual": "6",
+   "anterior": "100",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1390,
+   "etiqueta": "Rendimentos de aplicações financeiras",
+   "actual": "68",
+   "anterior": "3",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1391,
+   "etiqueta": "Ajuste a valor presente dívidas RJ",
+   "actual": "888",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1392,
+   "etiqueta": "Total das receitas financeiras",
+   "actual": "1.006",
+   "anterior": "254",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1394,
+   "etiqueta": "Juros passivos",
+   "actual": "(338)",
+   "anterior": "(2.264)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1395,
+   "etiqueta": "Encargos de empréstimos",
+   "actual": "(978)",
+   "anterior": "(174)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1396,
+   "etiqueta": "IOF",
+   "actual": "(161)",
+   "anterior": "(176)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1397,
+   "etiqueta": "Descontos passivos",
+   "actual": "(385)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1398,
+   "etiqueta": "IRRF s/aplicação Financeira",
+   "actual": "(23)",
+   "anterior": "(69)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1399,
+   "etiqueta": "Variação monetária passiva",
+   "actual": "-",
+   "anterior": "(72)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1400,
+   "etiqueta": "Tarifas bancárias",
+   "actual": "(202)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1401,
+   "etiqueta": "Resultado financeiro antes da atualização da dívida tributária",
+   "actual": "(2.087)",
+   "anterior": "(2.755)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1402,
+   "etiqueta": "Atualização dívida tributária",
+   "actual": "(41.706)",
+   "anterior": "(32.204)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1403,
+   "etiqueta": "Resultado financeiro líquido final",
+   "actual": "(42.788)",
+   "anterior": "(32.126)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b51",
+   "linea": 1265,
+   "etiqueta": "Salários",
+   "actual": "(17.479)",
+   "anterior": "(23.083)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1266,
+   "etiqueta": "Direito de uso de imagem",
+   "actual": "(11.168)",
+   "anterior": "(11.502)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1267,
+   "etiqueta": "Auxílio moradia",
+   "actual": "(3.173)",
+   "anterior": "(3.448)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1268,
+   "etiqueta": "Férias",
+   "actual": "(2.758)",
+   "anterior": "(1.642)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1269,
+   "etiqueta": "Amortização",
+   "actual": "(1.722)",
+   "anterior": "(1.310)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1270,
+   "etiqueta": "Rescisões",
+   "actual": "(1.680)",
+   "anterior": "(977)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1271,
+   "etiqueta": "Premiação por desempenho",
+   "actual": "(1.510)",
+   "anterior": "(905)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1272,
+   "etiqueta": "FGTS",
+   "actual": "(1.377)",
+   "anterior": "(2.052)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1273,
+   "etiqueta": "Honorários profissionais",
+   "actual": "(1.208)",
+   "anterior": "(1.842)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1274,
+   "etiqueta": "Comissões de negociação de atletas",
+   "actual": "(984)",
+   "anterior": "(459)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1275,
+   "etiqueta": "INSS",
+   "actual": "(981)",
+   "anterior": "(1.401)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1276,
+   "etiqueta": "Empréstimos de jogadores",
+   "actual": "(914)",
+   "anterior": "(879)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1277,
+   "etiqueta": "Viagens",
+   "actual": "(849)",
+   "anterior": "(767)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1278,
+   "etiqueta": "Bônus contratuais",
+   "actual": "(845)",
+   "anterior": "(1.402)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1279,
+   "etiqueta": "13 Salário",
+   "actual": "(833)",
+   "anterior": "(1.943)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1280,
+   "etiqueta": "Direitos econômicos profissionais",
+   "actual": "(517)",
+   "anterior": "(598)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1281,
+   "etiqueta": "Borderô de jogos",
+   "actual": "(496)",
+   "anterior": "(583)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1282,
+   "etiqueta": "Outros custos profissionais",
+   "actual": "(384)",
+   "anterior": "(217)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1283,
+   "etiqueta": "Taxa de registro de atletas",
+   "actual": "(364)",
+   "anterior": "(443)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1284,
+   "etiqueta": "Material esportivo",
+   "actual": "(311)",
+   "anterior": "(395)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1285,
+   "etiqueta": "Hospedagens",
+   "actual": "(283)",
+   "anterior": "(423)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1286,
+   "etiqueta": "Luvas",
+   "actual": "(268)",
+   "anterior": "(377)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1287,
+   "etiqueta": "Ajuda de custo",
+   "actual": "(240)",
+   "anterior": "(218)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1288,
+   "etiqueta": "Alimentação",
+   "actual": "(218)",
+   "anterior": "(863)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1289,
+   "etiqueta": "Pis sobre folha",
+   "actual": "(215)",
+   "anterior": "(288)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1290,
+   "etiqueta": "Concentração",
+   "actual": "(156)",
+   "anterior": "(180)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1291,
+   "etiqueta": "Comissões sobre vendas",
+   "actual": "(127)",
+   "anterior": "(184)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1292,
+   "etiqueta": "Gratificações",
+   "actual": "(113)",
+   "anterior": "(472)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1293,
+   "etiqueta": "Software e consultorias",
+   "actual": "(93)",
+   "anterior": "(94)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1294,
+   "etiqueta": "Futebol feminino",
+   "actual": "(1.801)",
+   "anterior": "(1.213)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1295,
+   "etiqueta": "Esportes Olímpicos",
+   "actual": "(60)",
+   "anterior": "(78)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1296,
+   "etiqueta": "Outros Custos",
+   "actual": "(1.902)",
+   "anterior": "(1.291)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1297,
+   "etiqueta": "Custo esportes profissionais",
+   "actual": "(55.029)",
+   "anterior": "(61.529)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1312,
+   "etiqueta": "13 Salário",
+   "actual": "707",
+   "anterior": "746",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1313,
+   "etiqueta": "Ajuda de custo",
+   "actual": "558",
+   "anterior": "560",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1314,
+   "etiqueta": "Alimentação",
+   "actual": "1.007",
+   "anterior": "984",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1315,
+   "etiqueta": "Aluguéis de campos",
+   "actual": "21",
+   "anterior": "56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1316,
+   "etiqueta": "Auxílio moradia",
+   "actual": "501",
+   "anterior": "469",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1317,
+   "etiqueta": "Comissão em negociações de atletas",
+   "actual": "112",
+   "anterior": "50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1318,
+   "etiqueta": "Direito de imagem",
+   "actual": "189",
+   "anterior": "126",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1319,
+   "etiqueta": "Empréstimos de jogadores",
+   "actual": "47",
+   "anterior": "35",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1320,
+   "etiqueta": "Férias",
+   "actual": "692",
+   "anterior": "595",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1321,
+   "etiqueta": "FGTS",
+   "actual": "297",
+   "anterior": "272",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1322,
+   "etiqueta": "Honorários profissionais",
+   "actual": "333",
+   "anterior": "442",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1323,
+   "etiqueta": "Hospedagens",
+   "actual": "407",
+   "anterior": "283",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1324,
+   "etiqueta": "Impostos e taxas",
+   "actual": "253",
+   "anterior": "211",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1325,
+   "etiqueta": "INSS",
+   "actual": "372",
+   "anterior": "265",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1326,
+   "etiqueta": "Material de consumo",
+   "actual": "27",
+   "anterior": "58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1327,
+   "etiqueta": "Material esportivo",
+   "actual": "24",
+   "anterior": "133",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1328,
+   "etiqueta": "Material médico",
+   "actual": "23",
+   "anterior": "56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1329,
+   "etiqueta": "Outros custos categoria de formação (Base)",
+   "actual": "60",
+   "anterior": "71",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1330,
+   "etiqueta": "Pis sobre folha",
+   "actual": "39",
+   "anterior": "36",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1331,
+   "etiqueta": "Rescisões",
+   "actual": "100",
+   "anterior": "35",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1332,
+   "etiqueta": "Salários",
+   "actual": "3.143",
+   "anterior": "2.996",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1333,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "80",
+   "anterior": "49",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1334,
+   "etiqueta": "Taxas de registro de atletas",
+   "actual": "222",
+   "anterior": "257",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1335,
+   "etiqueta": "Transporte",
+   "actual": "271",
+   "anterior": "362",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1336,
+   "etiqueta": "Viagens",
+   "actual": "274",
+   "anterior": "253",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1337,
+   "etiqueta": "Custos futebol categoria de formação",
+   "actual": "9.759",
+   "anterior": "9.400",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "CUSTOS DO FUTEBOL DE FORMAÇÃO"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1368,
+   "etiqueta": "Administrativas",
+   "actual": "(5.675)",
+   "anterior": "(7.569)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1369,
+   "etiqueta": "Alimentação",
+   "actual": "(348)",
+   "anterior": "(351)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1370,
+   "etiqueta": "Comercialização",
+   "actual": "(140)",
+   "anterior": "(377)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1371,
+   "etiqueta": "Comunicação",
+   "actual": "(341)",
+   "anterior": "(388)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1372,
+   "etiqueta": "Depreciação/Amortização",
+   "actual": "(3.079)",
+   "anterior": "(3.363)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1373,
+   "etiqueta": "Infraestrutura",
+   "actual": "(6.320)",
+   "anterior": "(4.790)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1374,
+   "etiqueta": "Logística de eventos",
+   "actual": "(1.374)",
+   "anterior": "(937)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1375,
+   "etiqueta": "Marketing",
+   "actual": "(371)",
+   "anterior": "(862)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1376,
+   "etiqueta": "Negócios",
+   "actual": "(1.692)",
+   "anterior": "(1.363)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1377,
+   "etiqueta": "Plano de Saúde",
+   "actual": "(328)",
+   "anterior": "(890)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1378,
+   "etiqueta": "Seguros",
+   "actual": "(36)",
+   "anterior": "(29)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1379,
+   "etiqueta": "Total Geral",
+   "actual": "(19.704)",
+   "anterior": "(20.919)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 206,
+  "actual": "(83.429)",
+  "anterior": "(68.731)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la nota 31 (L1312-L1337) como gastos aunque estén impresos sin paréntesis, a diferencia del estado (L196)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "CUSTOS DO FUTEBOL DE FORMAÇÃO",
+   "texto": "La nota 31 imprime los costos en positivo mientras el estado los muestra entre paréntesis; se transcriben tal cual.",
+   "bloques": [
+    "b52",
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta como redondeo la diferencia entre (2.087) en L1401 y (2.088) en L202 para Despesas financeiras?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "DESPESAS FINANCEIRAS",
+   "texto": "Diferencia de 1 entre nota 34 (L1401) y estado (L202).",
+   "bloques": [
+    "b55",
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las columnas sin encabezado de la nota 32 (L1343) corresponden a 2025 y 2024 en ese orden?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "OUTRAS RECEITAS OPERACIONAIS",
+   "texto": "L1343 no rotula columnas, pero el total L1347 coincide con L198 para ambos años.",
+   "bloques": [
+    "b53"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en miles de reais (L190); las notas no indican escala propia pero sus totales coinciden con el estado. No hay total de ingresos ni de gastos impresos. La nota 34 L1401 rotula como 'Resultado financeiro antes...' lo que en realidad es el total de despesas financeiras. No hay impuesto a las ganancias; la actualización de obligaciones tributarias se clasificó como financiero."
+}

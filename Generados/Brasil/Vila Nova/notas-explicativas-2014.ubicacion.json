@@ -1,0 +1,56 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+ "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
+ "mdSha1": "6060da3dc59409417999d895b27b963102f6e173",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:14:17.373Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    41,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    75,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    105,
+    126
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Comparativo ao Exercício Findo em 2.013 - (Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2.014",
+ "columna_anterior": "2.013",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es b3 (Demonstração Resultado do Exercício 2014, en reales). b1 y b2 son el balance y b4 es la DOAR; se excluyen. No hay notas con desgloses de ingresos o gastos."
+}

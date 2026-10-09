@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2019.md",
+ "mdSha1": "934a50eb09b805486470fed30131fced5933f8da",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:10:41.820Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    21
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala en el índice; DRE generado por sistema contable (Fortes Contábil), probablemente en unidades (R$).",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2019 a 31/12/2019",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del DRE (b1) están expresados en reales (unidades), sin escala en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado de b1 no indica escala; los informes de Fortes Contábil suelen salir en unidades con centavos.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de una sola tabla: DRE del Clube do Remo (matriz) del 01/01/2019 al 31/12/2019, sin columna comparativa ni notas de desglose. Perímetro individual (establecimiento 0001 - Matriz)."
+}

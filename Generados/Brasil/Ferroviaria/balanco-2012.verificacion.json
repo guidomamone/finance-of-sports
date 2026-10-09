@@ -1,0 +1,279 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2012.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "generado": "2026-10-09T23:23:29.316Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2012,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2012.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "balanco-2012.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "d914a30",
+  "f80cd7c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"RECEITAS OPERACIONAIS\" 4.262002 cierra; además se suman 13 línea(s) fuera de ese total (4.290239)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 8.552241 - gastos 5.417919 ± financiero 0.153646 ± impuesto 0 no da el impreso -0.208401"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": null,
+   "detalle": "no se puede comparar: balanco-2013-b.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L201 tiene la celda de 2012 vacía y '-' en 2011; equivale a cero."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 8.552241,
+  "gastos": 5.417919,
+  "financiero": 0.153646,
+  "impuesto": 0,
+  "resultadoImpreso": -0.208401,
+  "resultadoParaCargar": -0.208401,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "RECEITAS OPERACIONAIS",
+   "lado": "ingreso",
+   "M": 4.262002,
+   "pagina": 6,
+   "linea": 173,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Renda de jogos",
+   "lado": "ingreso",
+   "M": 0.528637,
+   "pagina": 6,
+   "linea": 174,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Venda de atletas",
+   "lado": "ingreso",
+   "M": 0.217007,
+   "pagina": 6,
+   "linea": 175,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cotas de TV Campeonato Paulista Série A-2",
+   "lado": "ingreso",
+   "M": 0.106,
+   "pagina": 6,
+   "linea": 176,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doação de Materiais esportivos",
+   "lado": "ingreso",
+   "M": 0.067626,
+   "pagina": 6,
+   "linea": 177,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio torcedor",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 6,
+   "linea": 178,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vendas líquidas de produtos",
+   "lado": "ingreso",
+   "M": 0.050868,
+   "pagina": 6,
+   "linea": 179,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "M": 1.061,
+   "pagina": 6,
+   "linea": 180,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Recuperação de despesas",
+   "lado": "ingreso",
+   "M": 0.229608,
+   "pagina": 6,
+   "linea": 181,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contratos de parcerias",
+   "lado": "ingreso",
+   "M": 0.909721,
+   "pagina": 6,
+   "linea": 182,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com doação",
+   "lado": "ingreso",
+   "M": 1,
+   "pagina": 6,
+   "linea": 183,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicidades",
+   "lado": "ingreso",
+   "M": 0.105254,
+   "pagina": 6,
+   "linea": 184,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aviso prévio descontado",
+   "lado": "ingreso",
+   "M": 0.0004,
+   "pagina": 6,
+   "linea": 185,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "deduções das receitas",
+   "lado": "ingreso",
+   "M": 0.014119,
+   "pagina": 6,
+   "linea": 186,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com atividade esportiva - Profissional",
+   "lado": "gasto",
+   "M": 1.834031,
+   "pagina": 6,
+   "linea": 188,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com pessoal - Atletas Profissionais",
+   "lado": "gasto",
+   "M": 1.406851,
+   "pagina": 6,
+   "linea": 189,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com mercadorias",
+   "lado": "gasto",
+   "M": 0.032323,
+   "pagina": 6,
+   "linea": 190,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS-Formação de Atletas",
+   "lado": "gasto",
+   "M": 0.096035,
+   "pagina": 6,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "lado": "gasto",
+   "M": 1.101163,
+   "pagina": 6,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gerais e administrativas",
+   "lado": "gasto",
+   "M": 0.360339,
+   "pagina": 6,
+   "linea": 194,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciações e amortizações",
+   "lado": "gasto",
+   "M": 0.385642,
+   "pagina": 6,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pessoal",
+   "lado": "gasto",
+   "M": 0.136093,
+   "pagina": 6,
+   "linea": 196,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 0.051021,
+   "pagina": 6,
+   "linea": 197,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tributárias",
+   "lado": "gasto",
+   "M": 0.014422,
+   "pagina": 6,
+   "linea": 198,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financeiras",
+   "M": 0.153646,
+   "linea": 199
+  }
+ ],
+ "impuesto": []
+}

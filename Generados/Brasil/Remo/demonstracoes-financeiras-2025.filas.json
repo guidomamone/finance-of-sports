@@ -1,0 +1,385 @@
+{
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf",
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "mdSha1": "79506a40858a1195c18d8b6153eff8e92b8c9a31",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:14:12.870Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [
+   "b20",
+   "b21"
+  ],
+  "notas_gastos": [
+   "b18",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L236: (Em Reais)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el total L807 42.297.318 coincide con 'Receitas recorrentes' del estado en reais (L242)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el total L817 40.616.014 coincide con 'Receitas de futebol' del estado en reais (L241)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; importes de magnitud comparable al estado en reais"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; continuación de la tabla de b18"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 240,
+   "etiqueta": "Receita bruta das atividades",
+   "actual": "82.913.332",
+   "anterior": "35.255.392",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 241,
+   "etiqueta": "Receitas de futebol",
+   "actual": "40.616.014",
+   "anterior": "14.178.863",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 242,
+   "etiqueta": "Receitas recorrentes",
+   "actual": "42.297.318",
+   "anterior": "21.076.529",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 243,
+   "etiqueta": "Receita líquida",
+   "actual": "82.913.332",
+   "anterior": "35.255.392",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 244,
+   "etiqueta": "(-) Custos das atividades esportivas",
+   "actual": "(41.884.585)",
+   "anterior": "(20.212.488)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 245,
+   "etiqueta": "Resultado bruto",
+   "actual": "41.028.747",
+   "anterior": "15.042.904",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 246,
+   "etiqueta": "Despesas administrativas",
+   "actual": "(56.115.841)",
+   "anterior": "(29.384.884)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 247,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(306.245)",
+   "anterior": "(44.554)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 248,
+   "etiqueta": "Outras receitas (despesas)",
+   "actual": "1.566.092",
+   "anterior": "(2.261.632)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 249,
+   "etiqueta": "Resultado antes do resultado financeiro",
+   "actual": "(13.827.248)",
+   "anterior": "(14.386.534)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 250,
+   "etiqueta": "Receitas financeiras",
+   "actual": "1.719.635",
+   "anterior": "26.177",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 251,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(2.853.232)",
+   "anterior": "(908.404)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 252,
+   "etiqueta": "Déficit do exercício",
+   "actual": "(14.960.844)",
+   "anterior": "(13.007.128)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 797,
+   "etiqueta": "Aluguéis",
+   "actual": "1.197.447",
+   "anterior": "1.185.044",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 798,
+   "etiqueta": "Estacionamento",
+   "actual": "888.197",
+   "anterior": "479.836",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 799,
+   "etiqueta": "Royalties de lojas",
+   "actual": "3.715.210",
+   "anterior": "2.201.470",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 800,
+   "etiqueta": "Patrimoniais",
+   "actual": "1.789.439",
+   "anterior": "1.733.668",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 801,
+   "etiqueta": "Atividade sociais e esportivas",
+   "actual": "821.643",
+   "anterior": "806.307",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 802,
+   "etiqueta": "Programa timemania",
+   "actual": "870.607",
+   "anterior": "681.584",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 803,
+   "etiqueta": "Marketing, patrocínio e publicidade",
+   "actual": "23.627.425",
+   "anterior": "9.955.050",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 804,
+   "etiqueta": "Royalties licenciados",
+   "actual": "583.704",
+   "anterior": "225.919",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 805,
+   "etiqueta": "Sócio torcedor",
+   "actual": "6.492.978",
+   "anterior": "2.770.807",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 806,
+   "etiqueta": "Venda de materiais",
+   "actual": "2.310.668",
+   "anterior": "1.036.844",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b20",
+   "linea": 807,
+   "etiqueta": "",
+   "actual": "42.297.318",
+   "anterior": "21.076.529",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receitas recorrentes"
+  },
+  {
+   "bloque": "b21",
+   "linea": 811,
+   "etiqueta": "Cessão de direitos sobre atletas",
+   "actual": "2.294.773",
+   "anterior": "101.058",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 812,
+   "etiqueta": "Receita de bilheteria",
+   "actual": "28.225.935",
+   "anterior": "13.837.805",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 813,
+   "etiqueta": "Receita de premiações",
+   "actual": "1.193.811",
+   "anterior": "95.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 814,
+   "etiqueta": "Multas contratuais/compensatórias",
+   "actual": "922.523",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 815,
+   "etiqueta": "Receita de direito de transmissão",
+   "actual": "7.978.972",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 816,
+   "etiqueta": "Luvas",
+   "actual": "-",
+   "anterior": "145.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  },
+  {
+   "bloque": "b21",
+   "linea": 817,
+   "etiqueta": "",
+   "actual": "40.616.014",
+   "anterior": "14.178.863",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receitas de futebol"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 240,
+  "actual": "82.913.332"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 252,
+  "actual": "(14.960.844)",
+  "anterior": "(13.007.128)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas de la nota 15 de gastos (L773-L788, total 80.035.537 en L789) como desglose conjunto de '(-) Custos das atividades esportivas' y 'Despesas administrativas'?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Despesas administrativas",
+   "texto": "La nota 15 (L769) solo lista 'as mais significativas' y su total 80.035.537 (L789) no coincide con Custos 41.884.585 + Despesas administrativas 56.115.841 (L244, L246), y no indica a qué renglón va cada partida.",
+   "bloques": [
+    "b18",
+    "b19",
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "L806-L807 aparecen repetidas al inicio de b21; se tomaron solo de b20. Los subtotales L807 y L817 no tienen etiqueta impresa. Las filas de gastos de b18/b19 quedaron afuera por la duda sobre a qué renglón del estado detallan; el estado no imprime un total de gastos."
+}

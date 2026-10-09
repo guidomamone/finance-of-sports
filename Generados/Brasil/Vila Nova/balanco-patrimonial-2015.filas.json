@@ -1,0 +1,276 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.pdf",
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md",
+ "mdSha1": "4339c6d24d1d6af6f3ef31b0c6ad941de6c3c757",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:15:45.301Z",
+ "ubicacion": {
+  "estado": [
+   "b2",
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L53: Comparativo ao Exercício Findo em 2.014 - (Em Reais)"
+  },
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Continuación del mismo estado (L53: (Em Reais))"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 57,
+   "etiqueta": "Receitas Atividades Esportivas",
+   "actual": "2.338.517,61",
+   "anterior": "1.965.461,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 58,
+   "etiqueta": "Receitas Escolinha de Futebol",
+   "actual": "81.602,55",
+   "anterior": "126.870,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 59,
+   "etiqueta": "Receitas Doações/Patrocínios",
+   "actual": "193.570,57",
+   "anterior": "630.387,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 60,
+   "etiqueta": "Receitas CBF",
+   "actual": "0,00",
+   "anterior": "1.890.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 61,
+   "etiqueta": "Receitas Publicidade",
+   "actual": "1.130.903,62",
+   "anterior": "288.754,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 62,
+   "etiqueta": "Receitas Sócio Tigrão",
+   "actual": "0,00",
+   "anterior": "1.461,44",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 63,
+   "etiqueta": "Receitas Direitos Federativos Atletas",
+   "actual": "467.925,00",
+   "anterior": "665.997,30",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 64,
+   "etiqueta": "Receitas Alugueis",
+   "actual": "96.016,52",
+   "anterior": "69.207,28",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 65,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "38.324,22",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 66,
+   "etiqueta": "Receitas Extraordinárias",
+   "actual": "0,00",
+   "anterior": "57.820,52",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 67,
+   "etiqueta": "Receitas Contribuições Conselheiros",
+   "actual": "500.735,28",
+   "anterior": "303.171,55",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 68,
+   "etiqueta": "Receitas Time mania",
+   "actual": "181.719,53",
+   "anterior": "78.862,10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 69,
+   "etiqueta": "Receitas Diversas",
+   "actual": "1.899.206,16",
+   "anterior": "38.240,98",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 70,
+   "etiqueta": "TOTAL DAS RECEITAS",
+   "actual": "6.928.521,06",
+   "anterior": "6.116.235,71",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 74,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "4.361.586,62",
+   "anterior": "2.899.832,80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 75,
+   "etiqueta": "Despesas Depto Esportes",
+   "actual": "3.649.580,80",
+   "anterior": "3.268.187,41",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 76,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "5.029,11",
+   "anterior": "4.186,99",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 77,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "46.495,24",
+   "anterior": "157.813,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 78,
+   "etiqueta": "Despesas Serviços Terceiros",
+   "actual": "541.264,67",
+   "anterior": "160.414,94",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 79,
+   "etiqueta": "Ajustes de Exercícios Anteriores",
+   "actual": "0,00",
+   "anterior": "2.718,96",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 80,
+   "etiqueta": "TOTAL DAS DESPESAS",
+   "actual": "8.603.956,44",
+   "anterior": "6.493.155,07",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 81,
+   "etiqueta": "Déficit do Exercício",
+   "actual": "-1.675.435,38",
+   "anterior": "-376.919,36",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 70,
+  "actual": "6.928.521,06"
+ },
+ "total_gastos": {
+  "linea": 80,
+  "actual": "8.603.956,44"
+ },
+ "resultado": {
+  "linea": 81,
+  "actual": "-1.675.435,38",
+  "anterior": "-376.919,36"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Receitas Financeiras' (L65) con anterior vacío (null) porque la celda 2.014 está en blanco en el PDF?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Receitas Financeiras",
+   "texto": "L65 no imprime importe en la columna 2.014; puede ser cero o una celda no transcripta.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados en reais (unidades). L69-L70 repetidas en b3 por solapamiento; se extrajeron una sola vez desde b2. Suma de receitas 2015 = 6.928.521,06 y de despesas = 8.603.956,44, coinciden con los totales impresos; déficit coincide con la diferencia."
+}

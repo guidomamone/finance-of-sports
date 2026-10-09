@@ -1,0 +1,92 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "mdSha1": "1bf7bee0ac36011f0d1be289183124877f3a1415",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:11:10.288Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    136,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    189,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    220,
+    222
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    224,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    260,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    293,
+    313
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre la DRE (b3); probablemente en reais (unidades), por ser un listado contable del sistema Fortes Contábil.",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2020 a 31/12/2020",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la DRE (b3, pág. 8) están en reais, en unidades (sin miles)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay ninguna línea 'em milhares' arriba del cuadro; es un listado contable del sistema que suele imprimir en unidades con centavos.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado de resultados es b3 (DRE del 01/01/2020 al 31/12/2020, establecimiento 0001 - MATRIZ) y tiene una sola columna, sin año anterior. b2 es el balance patrimonial; b4 es la DRA (resultado abrangente); b5 y b6 son la DMPL; b7 es un texto con saldos y firmas. No hay notas que desglosen ingresos ni gastos. El perímetro es individual."
+}

@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2022.pdf",
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2022.md",
+ "generado": "2026-10-09T23:23:28.119Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "eeea428",
+  "620ced6",
+  "5e6876c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 28.583 en este documento y 28.583 en relatorio-auditoria-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 23.41935 en balanco-patrimonial-2021.pdf y 23.419 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿El cuadro b21 (Despesas Gerais / Despesas Tributárias) desglosa un renglón de gastos del estado b5 y no repite el cuadro b22?",
+  "duda de extraer que no afecta la carga: El encabezado L971 dice Despesas Gerais pero el total L982 18.425 y las partidas corresponden a Despesas com Pessoal."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 28.583,
+  "gastos": 28.688,
+  "financiero": 0.13,
+  "impuesto": 0,
+  "resultadoImpreso": 0.025,
+  "resultadoParaCargar": 0.025,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "RECEITA LÍQUIDA",
+   "lado": "ingreso",
+   "M": 14.799,
+   "pagina": 16,
+   "linea": 410,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínios/Marketing/Royalties/Emendas Parlamentares",
+   "lado": "ingreso",
+   "M": 13.593,
+   "pagina": 29,
+   "linea": 990,
+   "origen": "nota que desglosa \"(-) Outras Receitas\""
+  },
+  {
+   "etiqueta": "Doaçoes/contribuições voluntarias",
+   "lado": "ingreso",
+   "M": 0.127,
+   "pagina": 29,
+   "linea": 991,
+   "origen": "nota que desglosa \"(-) Outras Receitas\""
+  },
+  {
+   "etiqueta": "Ajudas de custo/CBF/COVID",
+   "lado": "ingreso",
+   "M": 0.048,
+   "pagina": 29,
+   "linea": 992,
+   "origen": "nota que desglosa \"(-) Outras Receitas\""
+  },
+  {
+   "etiqueta": "Recuperação de despesas",
+   "lado": "ingreso",
+   "M": 0.016,
+   "pagina": 29,
+   "linea": 993,
+   "origen": "nota que desglosa \"(-) Outras Receitas\""
+  },
+  {
+   "etiqueta": "(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS",
+   "lado": "gasto",
+   "M": 6.975,
+   "pagina": 16,
+   "linea": 411,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas Gerais e Administrativas",
+   "lado": "gasto",
+   "M": 3.288,
+   "pagina": 16,
+   "linea": 414,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direito de Arena/Imagem/Bônus Desportivos",
+   "lado": "gasto",
+   "M": 12.904,
+   "pagina": 29,
+   "linea": 973,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Ordenados e Salários",
+   "lado": "gasto",
+   "M": 3.099,
+   "pagina": 29,
+   "linea": 974,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Indenizaçoes Trabalhista",
+   "lado": "gasto",
+   "M": 1.129,
+   "pagina": 29,
+   "linea": 975,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Férias",
+   "lado": "gasto",
+   "M": 0.311,
+   "pagina": 29,
+   "linea": 976,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Emprestimos de Passes de Atletas",
+   "lado": "gasto",
+   "M": 0.259,
+   "pagina": 29,
+   "linea": 977,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.254,
+   "pagina": 29,
+   "linea": 978,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "13º Salário",
+   "lado": "gasto",
+   "M": 0.239,
+   "pagina": 29,
+   "linea": 979,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.142,
+   "pagina": 29,
+   "linea": 980,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Outras despesas com pessoal",
+   "lado": "gasto",
+   "M": 0.088,
+   "pagina": 29,
+   "linea": 981,
+   "origen": "nota que desglosa \"(-) Despesas com Pessoal\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(-) Despesas Financeiras",
+   "M": -0.018,
+   "linea": 418
+  },
+  {
+   "etiqueta": "(+) Receitas Financeiras",
+   "M": 0.148,
+   "linea": 419
+  }
+ ],
+ "impuesto": []
+}

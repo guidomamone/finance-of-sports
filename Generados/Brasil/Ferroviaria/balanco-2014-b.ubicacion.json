@@ -1,0 +1,130 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
+ "mdSha1": "28985d241054afa44710ce24f483237d55fb210c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:48:36.659Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    61
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    71,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    112,
+    122
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    132,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 3,
+   "lineas": [
+    168,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 3,
+   "lineas": [
+    173,
+    178
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 3,
+   "lineas": [
+    180,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 4,
+   "lineas": [
+    197,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 4,
+   "lineas": [
+    201,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 4,
+   "lineas": [
+    208,
+    214
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3",
+  "b4",
+  "b5",
+  "b6",
+  "b7",
+  "b8",
+  "b9",
+  "b11",
+  "b12"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos, ej. '= Receita Líquida: 5.545.525,75 C'",
+ "moneda": "BRL",
+ "columna_ejercicio": "Período: 01/01/2014 a 31/12/2014 (columna única de importes)",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es una Demonstração do Resultado analítica (por cuenta contable) de una sola columna, del período 01/01/2014 a 31/12/2014, repartida en los bloques b1-b12: receitas brutas (b1), deduções (b2), custos (b3-b4), despesas administrativas (b5-b6), despesas com vendas (b7), financeiras (b8), outras despesas (b9), outras receitas (b11) y resultado final (b12). No hay columna del año anterior. Los importes llevan el sufijo D/C (débito/crédito) para el signo. Es de la entidad individual."
+}

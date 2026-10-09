@@ -34,3 +34,5 @@ Los 6 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 957 KB 
   dictamen de auditor (el documento más completo) sí está para los 5 años.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); negro y verde, camiseta local actual negra (ru.wikipedia body1 000000, lista de colores: negro primero) pero el escudo y la identidad histórica son verdes (008000); sin criterio de desempate, verificado 2026-10-09, verificado 2026-10-09

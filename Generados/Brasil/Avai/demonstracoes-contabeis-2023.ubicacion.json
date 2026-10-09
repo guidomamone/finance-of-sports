@@ -1,0 +1,289 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md",
+ "mdSha1": "7957c534a07f2a7628f3cd9eead8abbb2004a50f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:23:20.260Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    46,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    86,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    110,
+    115
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    128,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    149,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    476,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    486,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    508,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    536,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    559,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    585,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    610,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    640,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    664,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    693,
+    725
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    738,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    774,
+    778
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    797,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    806,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    815,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    840,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    853,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    886,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    899,
+    914
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    933,
+    940
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 28,
+   "lineas": [
+    959,
+    986
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 29,
+   "lineas": [
+    1001,
+    1025
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1058,
+    1062
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 30,
+   "lineas": [
+    1069,
+    1073
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 30,
+   "lineas": [
+    1077,
+    1081
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 30,
+   "lineas": [
+    1085,
+    1089
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b24"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b27"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2023",
+ "columna_anterior": "31/12/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro por atleta de direitos econômicos (b25)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Direitos econômicos/Mecanismo de solidariedade (i)",
+   "texto": "Es un detalle por jugador del renglón que ya está en la nota 14 (b24).",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual del clube en b2 (pág. 4). Notas: receitas b24, custos operacionais b26, despesas administrativas b27. b25 es un detalle por atleta, excluido. No hay estados consolidados."
+}

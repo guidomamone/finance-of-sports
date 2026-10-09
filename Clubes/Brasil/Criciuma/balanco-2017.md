@@ -166,52 +166,53 @@ Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@t
 
 --- pág. 7 ---
 
-OMV – AUDITORES INDEPENDENTES S/S
+OMV – AUDITORES INDEPENDENTES S/S  
 CRC/SC – N. 3.628 – CVM AD. 10.028/08
 
 7
 
-CRICIUMA ESPORTE CLUBE
-Criciúma - SC
-CNPJ nº. 83.663.781/0001-21
+### CRICIÚMA ESPORTE CLUBE  
+**Criciúma - SC**  
+**CNPJ nº. 83.663.781/0001-21**
 
-# BALANÇO PATRIMONIAL ENCERRADO EM 31 DEZEMBRO DE 2.017
+### BALANÇO PATRIMONIAL ENCERRADO EM 31 DEZEMBRO DE 2.017
 
-# A T I V O
-(Expresso em unidades de reais)
+### ATIVO  
+**(Expresso em unidades de reais)**
 
-|   | Notas | 31.DEZ.2017 | 31.DEZ.2016  |
-| --- | --- | --- | --- |
-|  **CIRCULANTE** |  | **3.641.644** | **3.080.970**  |
-|  Caixa e Equivalentes de Caixa | (4) | 219.693 | 373.820  |
-|  Valores Vinculados - Lei de Incentivo ao Esporte | (5) | 1.623.839 | 1.330.264  |
-|  Patrocínios a Receber | (6) | 521.525 | 98.888  |
-|  Estoques |  | 275.727 | 845.245  |
-|  Outros Valores a Receber |  | 816.684 | 92.863  |
-|  Adiantamentos Diversos | (7) | 175.896 | 329.620  |
-|  Despesas Antecipadas |  | 8.280 | 10.270  |
-|  **NÃO CIRCULANTE** |  | **56.106.242** | **59.372.172**  |
-|  Depósitos judiciais |  | 236.197 | 198.031  |
-|  Imobilizado | (8) | 48.749.722 | 49.086.726  |
-|  Intangíveis | (9) | 7.120.323 | 10.087.415  |
-
-TOTAL DO ATIVO
+| | Notas | 31.DEZ.2017 | 31.DEZ.2016 |
+| :--- | :---: | :---: | :---: |
+| **CIRCULANTE** | | **3.641.644** | **3.080.970** |
+| Caixa e Equivalentes de Caixa | (4) | 219.693 | 373.820 |
+| Valores Vinculados - Lei de Incentivo ao Esporte | (5) | 1.623.839 | 1.330.264 |
+| Patrocínios a Receber | (6) | 521.525 | 98.888 |
+| Estoques | | 275.727 | 845.245 |
+| Outros Valores a Receber | | 816.684 | 92.863 |
+| Adiantamentos Diversos | (7) | 175.896 | 329.620 |
+| Despesas Antecipadas | | 8.280 | 10.270 |
+| | | | |
+| **NÃO CIRCULANTE** | | **56.106.242** | **59.372.172** |
+| Depósitos judiciais | | 236.197 | 198.031 |
+| Imobilizado | (8) | 48.749.722 | 49.086.726 |
+| Intangíveis | (9) | 7.120.323 | 10.087.415 |
+| | | | |
+| **TOTAL DO ATIVO** | | **59.747.886** | **62.453.142** |
 
 JAIME DAL FARRA  
 PRESIDENTE  
-CRICIUMA ESPORTE CLUBE
+CRICIÚMA ESPORTE CLUBE
 
-Liliane da S. Fernando Mezzaró  
-Contadora - CRC/SC 037746/O-F  
+Liliane da S. Fernando Mezzari  
+Contadora - CRC/SC 037746/O-8  
 CPF 837.997.969-91  
 Criciúma E. C.
 
-![img-1.jpeg](img-1.jpeg)
-
 (As notas explicativas são parte integrante das demonstrações contábeis)
 
-OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203
-Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200
+---
+
+OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203  
+Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200  
 Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@terra.com.br
 
 --- pág. 8 ---
@@ -281,56 +282,61 @@ Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@t
 
 --- pág. 9 ---
 
-OMV – AUDITORES INDEPENDENTES S/S
-CRC/SC – N. 3.628 – CVM AD. 10.028/08
+**OMV – AUDITORES INDEPENDENTES S/S**  
+**CRC/SC – N. 3.628 – CVM AD. 10.028/08**
 
 9
 
-# CRICIUMA ESPORTE CLUBE
+### CRICIUMA ESPORTE CLUBE
+#### Criciúma - SC
+#### CNPJ n°. 83.663.781/0001-21
 
-Criciúma - SC
+**DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE 01 DE JANEIRO DE 2.016 A 31 DE DEZEMBRO DE 2.017**  
+**(Expresso em unidades de reais)**
 
-CNPJ nº. 83.663.781/0001-21
+| | Notas | 01.JAN.2016<br>a<br>31.DEZ.2016 | 01.JAN.2016<br>a<br>31.DEZ.2016 |
+| :--- | :---: | :---: | :---: |
+| **RECEITA OPERACIONAL BRUTA** | (16) | **17.385.767** | **25.964.039** |
+| | | | |
+| Departamento Profissional | | (14.332.058) | (15.124.972) |
+| Departamento Amador | | (2.429.934) | (2.604.620) |
+| Departamento Administrativo | | (683.967) | (860.398) |
+| Departamento de Marketing e Comercial | | (527.402) | (510.526) |
+| Departamento Financeiro | | | |
+| Departamento de Patrimonio | | (3.985.009) | (3.953.431) |
+| Departamento Juridico | | (2.673.868) | (1.099.762) |
+| Departamento Loja - Tigre Maniacos | | (160.993) | (93.578) |
+| Despesas Tributárias | | (381.374) | (268.364) |
+| **CUSTOS E DESPESAS OPERACIONAIS** | | **(25.174.605)** | **(24.515.651)** |
+| | | | |
+| **SUPERAVIT/DEFICIT ANTES DO RESULTADO FINANCEIRO** | | **(7.788.838)** | **1.448.388** |
+| | | | |
+| **RESULTADO FINANCEIRO LÍQUIDO** | (17) | **(1.486.900)** | **(1.412.444)** |
+| Despesas Financeiras | | (1.507.130) | (1.541.219) |
+| Receitas Financeiras | | 20.230 | 128.775 |
+| | | | |
+| **SUPERAVIT / DEFICIT DO EXERCICIO** | | **(9.275.738)** | **35.944** |
 
-# DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE
-01 DE JANEIRO DE 2.016 A 31 DE DEZEMBRO DE 2.017
-
-(Expresso em unidades de reais)
-
-|   | Notas | 01.JAN.2016 | 01.JAN.2016  |
-| --- | --- | --- | --- |
-|   |  | a | a  |
-|   |  | 31.DEZ.2016 | 31.DEZ.2016  |
-|  **RECEITA OPERACIONAL BRUTA** | (16) | 17.385.767 | 25.964.039  |
-|  Departamento Profissional |  | (14.332.058) | (15.124.972)  |
-|  Departamento Amador |  | (2.429.934) | (2.604.620)  |
-|  Departamento Administrativo |  | (683.967) | (860.398)  |
-|  Departamento de Marketing e Comercial |  | (527.402) | (510.526)  |
-|  Departamento Financeiro |  | - | -  |
-|  Departamento de Patrimonio |  | (3.985.009) | (3.953.431)  |
-|  Departamento Jurídico |  | (2.673.868) | (1.099.762)  |
-|  Departamento Loja - Tigre Maniacos |  | (160.993) | (93.578)  |
-|  Despesas Tributárias |  | (381.374) | (268.364)  |
-|  **CUSTOS E DESPESAS OPERACIONAIS** |  | (25.174.605) | (24.515.651)  |
-|  **SUPERAVIT/DEFICIT ANTES DO RESULTADO FINANCEIRO** |  | (7.788.838) | 1.448.388  |
-|  **RESULTADO FINANCEIRO LÍQUIDO** | (17) | (1.486.900) | (1.412.444)  |
-|  Despesas Financeiras |  | (1.507.130) | (1.541.219)  |
-|  Receitas Financeiras |  | 20.230 | 128.775  |
-|  **SUPERAVIT / DEFICIT DO EXERCICIO** |  | (9.275.738) | 35.944  |
-
+\
+[Assinatura]  
 JAIME DAL FARRA  
 PRESIDENTE  
-CRICIUMA ESPORTE CLUBE
+CRICIÚMA ESPORTE CLUBE
 
-Liliane da S. Fernando Mezzan  
-Contadora - CRC/SC 03774/0-8  
+[Assinatura]  
+Liliane da S. Fernando Mezzari  
+Contadora - CRC/SC 037746/O-8  
 CPF 837.997.969-91  
 Criciúma E. C.
 
+[Assinatura]
+
 (As notas explicativas são parte integrante das demonstrações contábeis)
 
-OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203
-Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200
+---
+
+**OMV AUDITORES INDEPENDENTES S/S** – Avenida Santos Dumont, 2465 – Sala 203  
+Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200  
 Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@terra.com.br
 
 --- pág. 10 ---
@@ -378,61 +384,73 @@ Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@t
 
 --- pág. 11 ---
 
-OMV – AUDITORES INDEPENDENTES S/S
+OMV – AUDITORES INDEPENDENTES S/S  
 CRC/SC – N. 3.628 – CVM AD. 10.028/08
 
 11
 
-CRICIUMA ESPORTE CLUBE
-Criciúma - SC
-CNPJ nº. 83.663.781/0001-21
+**CRICIUMA ESPORTE CLUBE**  
+**Criciúma – SC**  
+**CNPJ nº. 83.663.781/0001-21**
 
-# DEMONSTRATIVO DE FLUXO DE CAIXA PELO MÉTODO INDIRETO NOS PERIODOS DE 01
-DE JANEIRO DE 2.016 A 31 DE DEZEMBRO DE 2.017
+**DEMONSTRATIVO DE FLUXO DE CAIXA PELO MÉTODO INDIRETO NOS PERIODOS DE 01 DE JANEIRO DE 2.016 A 31 DE DEZEMBRO DE 2.017**
 
-(Expresso em unidades de reais)
+**(Expresso em unidades de reais)**
 
-|   | 01.JAN.2017 a 31.DEZ.2017 | 01.JAN.2016 a 31.DEZ.2016  |
-| --- | --- | --- |
-|  **1. FLUXO DE CAIXA DAS ATIVIDADES OPERACIONAIS**  |   |   |
-|  Superavit / Deficit do Exercício | (9.275.738) | 35.944  |
-|  Depreciação e amortizações | 1.176.020 | 1.173.218  |
-|  Provisão para contingencias | 2.134.630 | (1.140.319)  |
-|  **Resultado do Deficit / Superavit Ajustados** | **(5.965.088)** | **68.843**  |
-|  **Aumento / Redução das contas de Ativos e Passivos**  |   |   |
-|  Estoques | 569.518 | (625.841)  |
-|  Patrocínios a Receber | (422.637) | 374.792  |
-|  Depositos Judiciais | (38.166) | (24.181)  |
-|  Outros Ativos | (568.107) | (236.918)  |
-|  Fornecedores | 76.610 | 52.098  |
-|  Obrigações Trabalhistas e Encargos Sociais | (203.739) | (100.201)  |
-|  Obrigações Fiscais e Judiciais | (733.877) | 767.156  |
-|  Receitas de Patrocínio a Realizar | (52.274) | (274.727)  |
-|  Receitas de Subvenções | 761.759 | (1.317.088)  |
-|  Antecipação Direitos de Transmissão | 1.652.778 | 3.436.765  |
-|  Contratos Direito de Imagem | (1.795.196) | 2.595.116  |
-|  Outros Passivos | 65.564 | 13.926  |
-|  **Total de Caixa Líquido Gerado nas Atividades Operacionais** | **(6.652.855)** | **4.729.740**  |
-|  **2. FLUXO DE CAIXA NAS ATIVIDADES DE INVESTIMENTOS**  |   |   |
-|  Aplicação no Imobilizado | (839.016) | (197.627)  |
-|  Aplicação / Redução no Intangível | 2.967.092 | (2.134.709)  |
-|  Projetos vinculados | (293.575) | 1.184.524  |
-|  **Total de Caixa Gerado nas Atividades de Investimentos** | **1.834.501** | **(1.147.812)**  |
-|  **3. FLUXO DE CAIXA NAS ATIVIDADES DE FINANCIAMENTOS**  |   |   |
-|  Aumento/Redução de Empréstimos e Financiamentos - Circulante | 4.664.227 | (4.386.764)  |
-|  **Total de Caixa Gerado nas Atividades de Financiamentos** | **4.664.227** | **(4.386.764)**  |
-|  **AUMENTO OU DIMINUIÇÃO NAS DISPONIBILIDADES** | **154.127** | **804.836**  |
-|  **Demonstrativo do aumento do caixa e equivalentes de caixa:**  |   |   |
-|  Caixa e equivalentes de caixa no início do exercício | 373.820 | 1.178.656  |
-|  Caixa e equivalentes de caixa fim do exercício | 219.693 | 373.820  |
+| | 01.JAN.2017<br>a<br>31.DEZ.2017 | 01.JAN.2016<br>a<br>31.DEZ.2016 |
+| :--- | :---: | :---: |
+| **1. FLUXO DE CAIXA DAS ATIVIDADES OPERACIONAIS** | | |
+| Superavit / Deficit do Exercicio | (9.275.738) | 35.944 |
+| Depreciação e amortizações | 1.176.020 | 1.173.218 |
+| Provisão para contingencias | 2.134.630 | (1.140.319) |
+| **Resultado do Deficit / Superavit Ajustados** | **(5.965.088)** | **68.843** |
+| **Aumento / Redução das contas de Ativos e Passivos** | | |
+| Estoques | 569.518 | (625.841) |
+| Patrocinios a Receber | (422.637) | 374.792 |
+| Depositos Judiciais | (38.166) | (24.181) |
+| Outros Ativos | (568.107) | (236.918) |
+| Fornecedores | 76.610 | 52.098 |
+| Obrigações Trabalhistas e Encargos Sociais | (203.739) | (100.201) |
+| Obrigações Fiscais e Judiciais | (733.877) | 767.156 |
+| Receitas de Patrocinio a Realizar | (52.274) | (274.727) |
+| Receitas de Subvenções | 761.759 | (1.317.088) |
+| Antecipação Direitos de Transmissão | 1.652.778 | 3.436.765 |
+| Contratos Direito de Imagem | (1.795.196) | 2.595.116 |
+| Outros Passivos | 65.564 | 13.926 |
+| **Total de Caixa Liquido Gerado nas Atividades Operacionais** | **(6.652.855)** | **4.729.740** |
+| | | |
+| **2. FLUXO DE CAIXA NAS ATIVIDADES DE INVESTIMENTOS** | | |
+| Aplicação no Imobilizado | (839.016) | (197.627) |
+| Aplicação / Redução no Intangivel | 2.967.092 | (2.134.709) |
+| Projetos vinculados | (293.575) | 1.184.524 |
+| **Total de Caixa Gerado nas Atividades de Investimentos** | **1.834.501** | **(1.147.812)** |
+| | | |
+| **3. FLUXO DE CAIXA NAS ATIVIDADES DE FINANCIAMENTOS** | | |
+| Aumento/Redução de Emprestimos e Financiamentos - Circulante | 4.664.227 | (4.386.764) |
+| **Total de Caixa Gerado nas Atividades de Financiamentos** | **4.664.227** | **(4.386.764)** |
+| | | |
+| **AUMENTO OU DIMINUIÇÃO NAS DISPONIBILIDADES** | **154.127** | **804.836** |
+| **Demonstrativo do aumento do caixa e equivalenstes de caixa:** | | |
+| Caixa e equivalentes de caixa no inicio do exercício | 373.820 | 1.178.656 |
+| Caixa e equivalentes de caixa fim do exercício | 219.693 | 373.820 |
 
 (As notas explicativas são parte integrante das demonstrações contábeis)
 
-OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203
+[Assinatura]  
+JAIME DAL FARRA  
+PRESIDENTE  
+CRICIUMA ESPORTE CLUBE
 
-CRICIUMA ESPORTE CLUBE - Frênes - Santa Catarina 17.978 - CEP: 88.803-200
+[Assinatura]  
+Lucas da S. Fernando Mezzari  
+Contador - CRC/SC 037746/O-8
 
-Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvadinteres.com.br; mdviana@terra.com.br
+[Assinatura]
+
+---
+OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203  
+Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200  
+Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@terra.com.br
 
 --- pág. 12 ---
 
@@ -1131,23 +1149,24 @@ As perdas classificadas como possíveis pela Administração estão a seguir dem
 
 --- pág. 29 ---
 
-**OMV – AUDITORES INDEPENDENTES S/S**
+OMV – AUDITORES INDEPENDENTES S/S
 CRC/SC – N. 3.628 – CVM AD. 10.028/08
 
 29
 
-|  Juros sobre Empréstimos | 1.319.446 | 1.340.635  |
-| --- | --- | --- |
-|  Descontos concedidos (perdão de dívidas de sócios) | 36.776 | 89.395  |
-|  Outras despesas financeiras | 2.542 | 1.276  |
-|   | **1.507.130** | **1.541.330**  |
-|  **Resultado Financeiro** | **1.486.900** | **1.412.555**  |
+| | | |
+|---|---|---|
+| Juros sobre Empréstimos | 1.319.446 | 1.340.635 |
+| Descontos concedidos (perdão de dívidas de sócios) | 36.776 | 89.395 |
+| Outras despesas financeiras | 2.542 | 1.276 |
+| | **1.507.130** | **1.541.330** |
+| **Resultado Financeiro** | **1.486.900** | **1.412.555** |
 
-### 18 Instrumentos financeiros
+**18 Instrumentos financeiros**
 
 Os instrumentos financeiros ativos e passivos constantes no balanço patrimonial, como aplicações financeiras, empréstimos e financiamentos e outras contas a receber e pagar estão registrados a valores contábeis, os quais se aproximam dos valores justos, conforme critérios mencionados nas correspondentes notas explicativas das práticas contábeis. O Clube não realizou no exercício operações com derivativos e quaisquer outros ativos em caráter especulativo.
 
-### 19 Cobertura de seguros
+**19 Cobertura de seguros**
 
 A Administração do Clube mantém cobertura de seguros resguardando seus bens patrimoniais, bem como para seus funcionários.
 
@@ -1157,15 +1176,16 @@ A importância segurada deve garantir ao atleta profissional, ou ao beneficiári
 
 Os valores contratados pelo Clube abrangem os atletas profissionais e da base que foram profissionalizados.
 
-JAIME DAL FARRA  
-PRESIDENTE  
-CRICIÚMA ESPORTE CLUBE
+JAIME DAL FARRA
+PRESIDENTE
+CRICIUMA ESPORTE CLUBE
 
-Liliane da S. Fernando Mezza  
-Contadora - CRC/SC 03774G/0-  
-CPF 837.997.969-91  
-Criciúma E. r
+Liliane da S. Fernando Mezzari [parcialmente ilegible]
+Contadora - CRC/SC 037746/O-[ilegible]
+CPF 837.997.969-91
+Criciúma E. C
 
-**OMV AUDITORES INDEPENDENTES S/S** – Avenida Santos Dumont, 2465 – Sala 203
+OMV AUDITORES INDEPENDENTES S/S – Avenida Santos Dumont, 2465 – Sala 203
 Bairro Michel – Criciúma – Santa Catarina – Brasil – CEP: 88.803-200
 Fones/Fax. +55 48 9 9984 4161 – E-mail: mdviana@omvauditores.com.br; mdviana@terra.com.br
+

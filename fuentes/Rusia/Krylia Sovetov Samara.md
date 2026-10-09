@@ -30,3 +30,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 1,2 MB 
 - Ninguna duda de identidad. El hueco puntual de notas 2022 es coherente con el patrón general.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #80C0FE — ru.wikipedia (infobox, camiseta local body1 80C0FE, camisetas celestes 'bajo el color del cielo'; escudo azul), verificado 2026-10-09

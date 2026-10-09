@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md",
+ "mdSha1": "f0f4e643289f270b19ec503645646c47e52eefca",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:15:48.610Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    52,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    85,
+    105
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Comparativo ao Exercício Findo em 2.015 - (Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2.016",
+ "columna_anterior": "2.015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "b2 es la Demonstração do Resultado do Exercício 2016 (en reales). b1 es el balance patrimonial y b3 la demostración de origen y aplicación de recursos: no se eligen. No hay notas de desglose."
+}

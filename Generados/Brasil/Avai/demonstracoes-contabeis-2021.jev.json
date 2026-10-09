@@ -1,0 +1,1032 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
+ "generatedAt": "2026-10-09T23:36:58.881Z",
+ "rubrosHuella": "e8ab8ae58e0eedc5c203803755527abef2ed689c",
+ "rubros": [
+  {
+   "label": "Receitas de Negociação de Atletas Profissionais",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Receitas do Futebol Profissional",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.71
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Receitas de Patrocínio",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Receitas de Publicidade",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Receita Bruta",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.6
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Receitas de Empréstimos de Jogadores",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Receitas de Mensalidades dos Sócios",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Receitas de Arrendamentos e Locações",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "stadium_other",
+     0.38
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Receitas de Repasses da Loteria Timemania",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Ajuda de Custo",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de Uso da Marca",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas de Venda e uso Marca\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Custos Futebol Profissional total",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Receitas TV e transmissão jogos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Receitas de Venda de Material Esportivo",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receitas de Venda e uso Marca\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Custo Operacional Bruto",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.74
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Direito de Uso de Imagem",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Salários e Encargos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Arbitragem/Federação e Confederação",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "INSS s/ Receitas",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Aluguel e manuteção dos campos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Viagens e Hospedagem",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Amortização Custo Atletas Profissionais",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Borderoux de Jogos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Material Esportivo - Patrocínio",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "match_organisation_expense",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Seguros/Plano de Saúde",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 983
+  },
+  {
+   "label": "Premiação Campeonatos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Despesas com jogo",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Direito de Arena",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Taxa de Policiamento",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Materiais e serviços diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Transportes",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Empréstimos de Atletas",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "player_amortisation",
+     0.35000000000000003
+    ],
+    [
+     "wages_squad",
+     0.17
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Manutenção, conservação e reformas",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Custos Diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Desp. Teste Covid - 19",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custos Futebol Profissional\"",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Custos Esportes Olímpicos",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Custos Futebol Feminino",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Futebol Amador (Custos - Transferência)",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.93
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "( - ) Transferência para o Imobilizado",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "depreciation",
+     0.41
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Custos do Futebol Categoria de Base",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Depreciação e Amortização do Imobilizado",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.95
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Materiais e despesas diversas",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "CMV e Icms",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 982
+  }
+ ]
+}

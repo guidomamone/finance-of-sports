@@ -48,3 +48,5 @@
   https://futebolpaulista.com.br/Repositorio/Institucional/<año>/<archivo>.pdf;
   ouvidoria@ferroviariasaf.com.
 - Último chequeo: 2026-09-22.
+
+Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes: "suas cores são grená e branco"; plantilla de camiseta corpo1=58141E), escudo AFE grená, verificado 2026-10-09

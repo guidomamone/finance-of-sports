@@ -1,0 +1,247 @@
+{
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2022.pdf",
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2022.md",
+ "mdSha1": "d9bd7173e749cf230bb124c9dfd9dbd8a84e492f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:27:59.259Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    114,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    330,
+    338
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    360,
+    368
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    372,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    408,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    440,
+    444
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    464,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    486,
+    494
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    498,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    538,
+    545
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    773,
+    778
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    784,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    793,
+    805
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    824,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    833,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    843,
+    851
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    857,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    884,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    901,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    919,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    943,
+    950
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    971,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    988,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 30,
+   "lineas": [
+    1051,
+    1055
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b23"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2022",
+ "columna_anterior": "31/12/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El cuadro b20 (Mensalidades e Contribuições / Receitas Patrimoniais) desglosa la Receita Líquida del estado b5?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA LÍQUIDA",
+   "texto": "El bloque b20 no tiene título visible de nota y su encabezado sólo muestra 2 importes, aunque tiene 3 filas.",
+   "bloques": [
+    "b20",
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro b21 (Despesas Gerais / Despesas Tributárias) desglosa un renglón de gastos del estado b5 y no repite el cuadro b22?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b21 no tiene título visible y b22 abre las Despesas Gerais e Administrativas; podría superponerse.",
+   "bloques": [
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual del club en b5 (en miles de BRL). b6 es el resultado abrangente, que no se elige. Notas: b20 y b23 corresponden a ingresos; b21 y b22 a gastos."
+}

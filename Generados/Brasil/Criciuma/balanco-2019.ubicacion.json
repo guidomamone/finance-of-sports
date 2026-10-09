@@ -1,0 +1,213 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2019.pdf",
+ "md": "Clubes/Brasil/Criciuma/balanco-2019.md",
+ "mdSha1": "4582621a1cb4cf08f71841bd6f321e9094d5ac06",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:36:50.830Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    39
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    51,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    85,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    112,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    130,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    144,
+    183
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    225,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    233,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    249,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    262,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    283,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    295,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    308,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    322,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    331,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    347,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    355,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    363,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    375,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    385,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    398,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    411,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    433,
+    437
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b21",
+  "b22"
+ ],
+ "notas_gastos": [
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/jan./2019 a 31/dez./2019",
+ "columna_anterior": "01/jan./2018 a 31/dez./2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultado individual del Criciúma Esporte Clube en b3 (pág. 4). Nota 14 (b21) desglosa la Receita Operacional Bruta; nota 15 (b22) desglosa el resultado financiero (receitas y despesas financeiras). No hay notas que abran los costos por departamento. b14 (movimiento de subvenciones) no se elige por ser cuadro de movimiento de pasivo."
+}

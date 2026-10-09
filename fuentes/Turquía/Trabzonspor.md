@@ -56,3 +56,5 @@ confirmó el año de IPO, ver abajo).
   (Futbol A.Ş.) se había constituido el 21 de abril de 2004 en Trabzon. Avisar a Guido para que
   actualice `dudas-por-club.md` (esta sesión no lo edita, por instrucción explícita).
 - Último chequeo: 2026-09-18.
+
+Color de marca: #5A0E27 — bordo y celeste (tr.wikipedia infobox, bordo primero; en.wikipedia camiseta 5a1129); coincide con el escudo bordo, verificado 2026-10-09

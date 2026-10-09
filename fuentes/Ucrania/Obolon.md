@@ -7,3 +7,5 @@
 - **Cómo se recuperaron**: CDX de `fc.obolon.ua` (filtro PDF) lista `.../2021/04/Finansova-zvitnist-TOV-FK-Obolon-za-2020-rik.pdf`, `.../2022/05/image.pdf` (2021), `.../2023/06/Zvit-2022_compressed.pdf`, `.../2024/04/Zvit-2023.pdf`, `.../2025/04/Zvit-2024.pdf`, `.../2026/04/Zvit-2025.pdf`. La captura `20220625102042` de `image.pdf` estaba truncada a 1 MiB; la `20230128220439` (4,9 MB) bajó completa.
 - **Para la carga**: son escaneos (OCR en `ukr`); verificar con el dictamen de cada año.
 - Último chequeo: 2026-10-03.
+
+Color de marca: #008000 — en.wikipedia (infobox, camiseta body 008000 verde; local verde con shorts blancos según el texto; escudo verde con cruz blanca), verificado 2026-10-09

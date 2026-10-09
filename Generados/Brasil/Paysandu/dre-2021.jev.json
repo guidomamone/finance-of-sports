@@ -1,173 +1,13 @@
 {
  "md": "Clubes/Brasil/Paysandu/dre-2021.md",
- "generatedAt": "2026-09-30T04:26:47.144Z",
+ "generatedAt": "2026-10-09T23:37:07.066Z",
+ "rubrosHuella": "f93bbc9e450711663d6f91d16e000b1df37f9cf0",
  "rubros": [
   {
-   "label": "Esportes Olímpicos",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "youth_other_sports_expense",
-   "confidence": 0.77,
-   "top3": [
-    [
-     "youth_other_sports_expense",
-     0.79
-    ],
-    [
-     "other_sports",
-     0.16
-    ],
-    [
-     "other_expenses",
-     0.04
-    ]
-   ],
-   "tokens": 1530
-  },
-  {
-   "label": "Sócio Proprietário",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "member_dues",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "member_dues",
-     0.93
-    ],
-    [
-     "other_income",
-     0.07
-    ],
-    [
-     "other_expenses",
-     0
-    ]
-   ],
-   "tokens": 1486
-  },
-  {
-   "label": "Futebol Profissional",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.72
-    ],
-    [
-     "lump_football_operations",
-     0.18000000000000002
-    ],
-    [
-     "other_expenses",
-     0.08
-    ]
-   ],
-   "tokens": 1519
-  },
-  {
-   "label": "Receita da Atividade Desportiva",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "lump_football_operations",
-     1
-    ],
-    [
-     "stadium_other",
-     0
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1474
-  },
-  {
-   "label": "Futebol de Base",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "youth_other_sports_expense",
-   "confidence": 0.89,
-   "top3": [
-    [
-     "youth_other_sports_expense",
-     0.9
-    ],
-    [
-     "youth_football",
-     0.07
-    ],
-    [
-     "admin_general_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1501
-  },
-  {
-   "label": "Royalties e Franquias",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "admin_general_expense",
-     0
-    ],
-    [
-     "other_expenses",
-     0
-    ]
-   ],
-   "tokens": 1468
-  },
-  {
-   "label": "Doações",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "stadium_other",
-     0
-    ]
-   ],
-   "tokens": 1414
-  },
-  {
    "label": "Sócio Torcedor",
-   "lado": null,
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
+   "section": "estado",
    "choice": "member_dues",
    "confidence": 1,
    "top3": [
@@ -176,421 +16,99 @@
      1
     ],
     [
-     "lump_football_operations_expense",
+     "season_tickets",
      0
     ],
     [
-     "other_expenses",
+     "matchday_competition",
      0
     ]
    ],
-   "tokens": 1483
-  },
-  {
-   "label": "Aluguel",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "stadium_other",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "stadium_other",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1367
-  },
-  {
-   "label": "Recuperação de Receitas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.95,
-   "top3": [
-    [
-     "other_income",
-     0.97
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "exceptional_items",
-     0.01
-    ]
-   ],
-   "tokens": 1465
-  },
-  {
-   "label": "Receita de Vendas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "player_sales",
-   "confidence": 0.69,
-   "top3": [
-    [
-     "player_sales",
-     0.71
-    ],
-    [
-     "other_income",
-     0.14
-    ],
-    [
-     "sponsorship_commercial",
-     0.08
-    ]
-   ],
-   "tokens": 1473
+   "tokens": 1040
   },
   {
    "label": "Outras receita",
-   "lado": null,
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
+   "section": "estado",
    "choice": "other_income",
-   "confidence": 1,
+   "confidence": 0.99,
    "top3": [
     [
      "other_income",
-     1
+     0.99
     ],
     [
-     "sponsorship_commercial",
-     0
-    ],
-    [
-     "education_expense",
-     0
-    ]
-   ],
-   "tokens": 1462
-  },
-  {
-   "label": "Receita com Gratuidades",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "other_income",
-     0.89
+     "lump_football_operations",
+     0.01
     ],
     [
      "member_dues",
-     0.05
-    ],
-    [
-     "sponsorship_commercial",
-     0.03
-    ]
-   ],
-   "tokens": 1472
-  },
-  {
-   "label": "Lojas Lobo",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.42,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.45
-    ],
-    [
-     "other_income",
-     0.18000000000000002
-    ],
-    [
-     "other_expenses",
-     0.17
-    ]
-   ],
-   "tokens": 1265
-  },
-  {
-   "label": "(-) Deduções da Receita do Futebol",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.79,
-   "top3": [
-    [
-     "other_income",
-     0.81
-    ],
-    [
-     "other_expenses",
-     0.09
-    ],
-    [
-     "admin_general_expense",
-     0.04
-    ]
-   ],
-   "tokens": 1510
-  },
-  {
-   "label": "(-) Deduções da Receita de Venda",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.74,
-   "top3": [
-    [
-     "other_income",
-     0.76
-    ],
-    [
-     "other_expenses",
-     0.15000000000000002
-    ],
-    [
-     "admin_general_expense",
-     0.060000000000000005
-    ]
-   ],
-   "tokens": 1500
-  },
-  {
-   "label": "CMV",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "admin_general_expense",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.92
-    ],
-    [
-     "sponsorship_commercial",
-     0.02
-    ],
-    [
-     "other_income",
-     0.02
-    ]
-   ],
-   "tokens": 1316
-  },
-  {
-   "label": "Custo com Pessoal",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "wages_squad",
-   "confidence": 0.72,
-   "top3": [
-    [
-     "wages_squad",
-     0.74
-    ],
-    [
-     "admin_general_expense",
-     0.11
-    ],
-    [
-     "other_expenses",
-     0.1
-    ]
-   ],
-   "tokens": 1503
-  },
-  {
-   "label": "Receita Bruta",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations",
-   "confidence": 0.78,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.79
-    ],
-    [
-     "other_income",
-     0.21000000000000002
-    ],
-    [
-     "other_sports",
      0
     ]
    ],
-   "tokens": 1481
+   "tokens": 999
   },
   {
-   "label": "Despesas Operacionais da Atividade Desportiva",
-   "lado": null,
+   "label": "Sócio Proprietário",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.65,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 0.97,
    "top3": [
     [
-     "lump_football_operations_expense",
-     0.67
-    ],
-    [
-     "match_organisation_expense",
-     0.15
-    ],
-    [
-     "other_expenses",
-     0.09
-    ]
-   ],
-   "tokens": 1497
-  },
-  {
-   "label": "Custos da Atividade Desportiva",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.74,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.76
-    ],
-    [
-     "match_organisation_expense",
-     0.19
-    ],
-    [
-     "other_expenses",
-     0.04
-    ]
-   ],
-   "tokens": 1467
-  },
-  {
-   "label": "Lucro Bruto",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.74
+     "member_dues",
+     0.97
     ],
     [
      "other_income",
-     0.22
+     0.03
     ],
     [
-     "lump_football_operations_expense",
-     0.02
+     "season_tickets",
+     0
     ]
    ],
-   "tokens": 1422
+   "tokens": 1038
   },
   {
-   "label": "Despesa com Pessoal",
-   "lado": null,
+   "label": "Royalties e Franquias",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "wages_squad",
-   "confidence": 0.88,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.8,
    "top3": [
     [
-     "wages_squad",
-     0.89
+     "sponsorship_commercial",
+     0.81
     ],
     [
-     "admin_general_expense",
-     0.09999999999999999
+     "youth_football",
+     0.11
     ],
     [
-     "other_expenses",
-     0.01
+     "other_income",
+     0.08
     ]
    ],
-   "tokens": 1488
+   "tokens": 1022
   },
   {
-   "label": "Custos de vendas",
-   "lado": null,
+   "label": "Esportes Olímpicos",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_expenses",
-   "confidence": 0.38,
-   "top3": [
-    [
-     "other_expenses",
-     0.42
-    ],
-    [
-     "player_sales",
-     0.28
-    ],
-    [
-     "lump_football_operations_expense",
-     0.19
-    ]
-   ],
-   "tokens": 1465
-  },
-  {
-   "label": "Despesas com Gratuidades",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_expenses",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "other_expenses",
-     0.65
-    ],
-    [
-     "admin_general_expense",
-     0.25
-    ],
-    [
-     "match_organisation_expense",
-     0.04
-    ]
-   ],
-   "tokens": 1486
-  },
-  {
-   "label": "Gerais e Administrativas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "admin_general_expense",
+   "section": "estado",
+   "choice": "other_sports",
    "confidence": 1,
    "top3": [
     [
-     "admin_general_expense",
+     "other_sports",
      1
     ],
     [
-     "match_organisation_expense",
+     "member_dues",
      0
     ],
     [
@@ -598,128 +116,220 @@
      0
     ]
    ],
-   "tokens": 1491
+   "tokens": 1022
   },
   {
-   "label": "Despesas Tributárias",
-   "lado": null,
+   "label": "Futebol de Base",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "admin_general_expense",
+   "section": "estado",
+   "choice": "youth_football",
    "confidence": 1,
    "top3": [
     [
-     "admin_general_expense",
+     "youth_football",
      1
     ],
     [
-     "other_expenses",
+     "member_dues",
      0
     ],
     [
-     "match_organisation_expense",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1472
+   "tokens": 1016
   },
   {
-   "label": "Depreciação/Amortização",
-   "lado": null,
+   "label": "Doações",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "depreciation",
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Futebol Profissional",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
    "confidence": 0.98,
    "top3": [
     [
-     "depreciation",
-     0.99
-    ],
-    [
-     "player_amortisation",
-     0.01
-    ],
-    [
-     "stadium_other",
-     0
-    ]
-   ],
-   "tokens": 1523
-  },
-  {
-   "label": "PECLD",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "player_impairment",
-   "confidence": 0.51,
-   "top3": [
-    [
-     "player_impairment",
-     0.54
-    ],
-    [
-     "admin_general_expense",
-     0.32
+     "lump_football_operations",
+     0.98
     ],
     [
      "other_income",
-     0.07
-    ]
-   ],
-   "tokens": 1352
-  },
-  {
-   "label": "Perdas Constituídas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "player_impairment",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "player_impairment",
-     0.58
+     0.02
     ],
     [
-     "other_expenses",
-     0.25
-    ],
-    [
-     "player_amortisation",
-     0.17
+     "member_dues",
+     0
     ]
    ],
-   "tokens": 1453
+   "tokens": 1035
   },
   {
-   "label": "Despesas Venda",
-   "lado": null,
+   "label": "Aluguel",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_expenses",
-   "confidence": 0.44,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.71,
    "top3": [
     [
-     "other_expenses",
-     0.47000000000000003
+     "other_income",
+     0.73
+    ],
+    [
+     "stadium_other",
+     0.27
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Receita com Gratuidades",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "member_dues",
+     0.06999999999999999
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "(-) Deduções da Receita do Futebol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Recuperação de Receitas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Lojas Lobo",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 893
+  },
+  {
+   "label": "Custo com Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
     ],
     [
      "admin_general_expense",
-     0.41000000000000003
+     0.06
     ],
     [
-     "player_sales",
-     0.08
+     "other_expenses",
+     0.02
     ]
    ],
-   "tokens": 1473
+   "tokens": 1014
   },
   {
-   "label": "Outras Despesas com Vendas",
-   "lado": null,
+   "label": "CMV",
+   "lado": "expense",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
+   "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.84,
    "top3": [
@@ -728,90 +338,21 @@
      0.85
     ],
     [
-     "admin_general_expense",
-     0.14
-    ],
-    [
-     "player_sales",
-     0.01
-    ]
-   ],
-   "tokens": 1491
-  },
-  {
-   "label": "Resultado financeiro",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "other_income",
-     0.92
-    ],
-    [
-     "other_expenses",
-     0.05
-    ],
-    [
-     "exceptional_items",
-     0.02
-    ]
-   ],
-   "tokens": 1468
-  },
-  {
-   "label": "Superávit (Déficit) do exercício",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "lump_football_operations",
-   "confidence": 0.35,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.38
-    ],
-    [
-     "other_income",
-     0.32
-    ],
-    [
-     "other_expenses",
-     0.24
-    ]
-   ],
-   "tokens": 1368
-  },
-  {
-   "label": "Resultado operacional antes das despesas financeiras líquidas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
-   "confidence": 0.66,
-   "top3": [
-    [
-     "other_income",
-     0.6900000000000001
-    ],
-    [
-     "lump_football_operations",
-     0.11
-    ],
-    [
-     "other_expenses",
+     "player_amortisation",
      0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
     ]
    ],
-   "tokens": 1528
+   "tokens": 1000
   },
   {
-   "label": "Receitas financeiras",
-   "lado": null,
+   "label": "(-) Deduções da Receita de Venda",
+   "lado": "revenue",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
+   "section": "estado",
    "choice": "other_income",
    "confidence": 0.98,
    "top3": [
@@ -820,61 +361,199 @@
      0.98
     ],
     [
-     "lump_football_operations",
-     0.01
+     "sponsorship_commercial",
+     0.02
     ],
     [
-     "broadcasting",
-     0.01
+     "member_dues",
+     0
     ]
    ],
-   "tokens": 1450
+   "tokens": 1044
   },
   {
-   "label": "Receitas financeiras líquidas",
-   "lado": null,
+   "label": "Despesa com Pessoal",
+   "lado": "expense",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "choice": "other_income",
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Gerais e Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
    "confidence": 1,
    "top3": [
     [
-     "other_income",
+     "admin_general_expense",
      1
     ],
     [
-     "depreciation",
+     "wages_squad",
      0
     ],
     [
-     "season_tickets",
+     "player_amortisation",
      0
     ]
    ],
-   "tokens": 1484
+   "tokens": 999
   },
   {
-   "label": "Despesas financeiras",
-   "lado": null,
+   "label": "Depreciação/Amortização",
+   "lado": "expense",
    "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Despesas com Gratuidades",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.74,
+   "confidence": 0.65,
    "top3": [
     [
      "other_expenses",
-     0.75
+     0.68
     ],
     [
      "admin_general_expense",
      0.25
     ],
     [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Perdas Constituídas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "player_impairment",
+     0.18
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "PECLD",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Outras Despesas com Vendas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
      "wages_squad",
      0
     ]
    ],
-   "tokens": 1475
+   "tokens": 1021
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
   }
  ]
 }

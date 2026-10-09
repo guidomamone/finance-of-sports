@@ -1,0 +1,231 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "mdSha1": "1f2d8f2441c3161955b16c2e4d03f195b4c8dc50",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:45:45.549Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L153: (Em Reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 158,
+   "etiqueta": "Receitas de atividades desportivas profissionais",
+   "actual": "576.146,14",
+   "anterior": "933.000,91",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 160,
+   "etiqueta": "Receitas de publicidade e patrocínios",
+   "actual": "1.022.100,00",
+   "anterior": "777.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 161,
+   "etiqueta": "( - ) Impostos",
+   "actual": "(16.726,38)",
+   "anterior": "(174.927,44)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 162,
+   "etiqueta": "Receitas Operacionais Líquidas",
+   "actual": "1.581.519,76",
+   "anterior": "1.535.073,47",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 164,
+   "etiqueta": "Serviços do departamento de esportes profissional",
+   "actual": "(1.196.469,33)",
+   "anterior": "(1.175.976,83)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 165,
+   "etiqueta": "Serviços do departamento de esportes para outras categorias",
+   "actual": "(24.494,58)",
+   "anterior": "(90.584,44)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 166,
+   "etiqueta": "Total dos Custos",
+   "actual": "(1.220.963,91)",
+   "anterior": "(1.266.561,07)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 167,
+   "etiqueta": "Lucro Bruto",
+   "actual": "360.555,85",
+   "anterior": "268.512,40",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 169,
+   "etiqueta": "Despesas com pessoal profissional",
+   "actual": "161.910,45",
+   "anterior": "181.438,34",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 170,
+   "etiqueta": "Despesas administrativa profissional",
+   "actual": "237.178,45",
+   "anterior": "538.364,04",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 171,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "3.097,11",
+   "anterior": "74.961,59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 172,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "402.186,01",
+   "anterior": "794.763,97",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 173,
+   "etiqueta": "Despesas financeiras",
+   "actual": "12.921,96",
+   "anterior": "68.173,25",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 174,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "19.682,75",
+   "anterior": "42.006,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 175,
+   "etiqueta": "",
+   "actual": "32.604,71",
+   "anterior": "110.179,25",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 176,
+   "etiqueta": "Total das Despesas",
+   "actual": "434.790,72",
+   "anterior": "904.943,22",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 177,
+   "etiqueta": "Prejuízos dos exercícios",
+   "actual": "(74.234,87)",
+   "anterior": "(636.430,82)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 162,
+  "actual": "1.581.519,76"
+ },
+ "total_gastos": {
+  "linea": 176,
+  "actual": "434.790,72"
+ },
+ "resultado": {
+  "linea": 177,
+  "actual": "(74.234,87)",
+  "anterior": "(636.430,82)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se trata 'Total das Despesas' (L176, 434.790,72) como total de gastos aunque no incluye 'Total dos Custos' (L166, (1.220.963,91))?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total das Despesas",
+   "texto": "L176 suma solo despesas operativas y L175; los costos de servicios se restan antes en Lucro Bruto (L167), así que el gasto total real incluiría también L166.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la fila sin etiqueta de L175 (32.604,71) como subtotal de 'Despesas financeiras' y 'Serviços de terceiros'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "L175 no tiene etiqueta; su importe coincide con la suma de L173 y L174.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reais con centavos. Los costos van con paréntesis y las despesas sin signo. Resultado: L162 1.581.519,76 menos L166 1.220.963,91 da 360.555,85; menos L176 434.790,72 da (74.234,87), que coincide con lo impreso. 'Despesas financeiras' (L173) se marcó como financiero. Sin notas de desglose."
+}

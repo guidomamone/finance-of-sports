@@ -36,3 +36,5 @@ capturado por las búsquedas de esta sesión — no confirmado. No se investigó
 en liquidación (ΓΕΜΗ 123562027000).
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: null — blanco y negro (en.wikipedia, sección Colours), blanco como color de identidad, verificado 2026-10-09

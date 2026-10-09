@@ -1,0 +1,254 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.md",
+ "mdSha1": "1b0d339ed3cf47aac9782765f262c8cd4577b6fc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:01:24.047Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    30,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    63,
+    66
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    96,
+    99
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    120,
+    123
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    147,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    187,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    260,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    280,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    305,
+    346
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    655,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    686,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    700,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    721,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    734,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    750,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    786,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    794,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    810,
+    820
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    824,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    837,
+    849
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    871,
+    875
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    919,
+    935
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    947,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 28,
+   "lineas": [
+    970,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    999,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1032,
+    1057
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1059,
+    1083
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6",
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b25"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Ferroviária Futebol S.A., estados individuales en reais. DRE en b6 (receita bruta a lucro bruto) y su continuación b7. Las notas 21 (b23, custos operacionais) y 22 (b24, despesas administrativas) abren gastos; la nota 23 (b25, resultado financeiro) abre ingresos y gastos financieros. No se encontró una nota que abra la receita bruta. Se excluyen el balance, el DRA, la DMPL, el flujo de caja, los cuadros de inmovilizado e intangible, los préstamos, la conciliación del IR y las listas por atleta."
+}

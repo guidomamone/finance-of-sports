@@ -1,0 +1,241 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md",
+ "mdSha1": "3ad462ef49c45c838bead2bfd48ec8b1edc41967",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:41:33.646Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    19
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    21,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    43,
+    46
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    61,
+    64
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 1,
+   "lineas": [
+    68,
+    71
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 2,
+   "lineas": [
+    84,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 2,
+   "lineas": [
+    128,
+    131
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    322,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    360,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    405,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    443,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    811,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    820,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    827,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    836,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    860,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    904,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    912,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    924,
+    929
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    933,
+    952
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    970,
+    975
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    979,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    993,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    1026,
+    1034
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    1040,
+    1047
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b24"
+ ],
+ "notas_gastos": [
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em Reais (R$)",
+ "moneda": "BRL",
+ "columna_ejercicio": "Saldo em 31/12/2022",
+ "columna_anterior": "Saldo em 31/12/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa como estado de resultados la DRE detallada de la pág. 2 (b6) en lugar de la DRE resumida de las demonstrações auditadas de la pág. 10 (b10)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Hay dos DRE del mismo ejercicio: b6 (detallada, 36 filas, firmada por contador) y b10 (resumida, 12 filas, con notas); los totales deberían coincidir.",
+   "bloques": [
+    "b6",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento individual (Cuiabá Esporte Clube SAF). b6 es la DRE detallada de la pág. 2; b10 es la DRE resumida de los estados auditados (pág. 10) con referencias a notas 30 (b24, receitas) y 31 (b25, despesas). Escala en reales (unidades)."
+}

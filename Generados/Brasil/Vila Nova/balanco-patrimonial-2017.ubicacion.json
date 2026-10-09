@@ -1,0 +1,64 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf",
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md",
+ "mdSha1": "b5e62e3a399849aafe2abd1316629590ee4af508",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:16:09.193Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    41
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    45,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    80,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    111,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 1,
+   "lineas": [
+    161,
+    165
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Comparativo ao Exercício Findo em 2.016 - (Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2.017",
+ "columna_anterior": "2.016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de una página: balance (b1, b2), demonstração do resultado (b3), DOAR (b4) y firmas (b5). Solo b3 es estado de resultados; no hay notas. El título del balance dice 'Comparativo ao Exercício Findo em 2.015' pero las columnas son 2.017/2.016 (error tipográfico, no afecta)."
+}

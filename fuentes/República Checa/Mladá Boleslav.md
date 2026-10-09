@@ -27,3 +27,5 @@ Los 33 PDF confirmados `PDF document` real. Tamaños entre 55 KB y 6,5 MB.
   para confirmar si son el mismo documento o correcciones — mismo tipo de duda que Slavia/Bohemians.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #0042FF — infobox de en.wikipedia (kit local azul; colores azul y blanco según cs.wikipedia, el otro es blanco), verificado 2026-10-09.

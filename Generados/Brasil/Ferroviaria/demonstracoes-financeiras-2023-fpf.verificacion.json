@@ -1,0 +1,253 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md",
+ "generado": "2026-10-09T23:23:29.807Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf",
+   "campo": "name",
+   "valor": "Ferroviária S.A.F.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)",
+   "evidencia": "demonstracoes-financeiras-2023-fpf.md (FERROVIARIA S.A.F.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "a8333e1",
+  "b0562cd",
+  "4321d57"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2023: 37.56237 en este documento y 117.583289 en demonstracoes-financeiras-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El estado ya abre todos los renglones por naturaleza; las columnas por segmento no agregan desglose de renglones.",
+  "duda de extraer que no afecta la carga: L259 figura en positivo dentro de despesas operacionais y suma positiva al subtotal L261, probablemente una reversión/crédito.",
+  "duda de extraer que no afecta la carga: El estado no imprime un total de gastos que agrupe costos (L232) y despesas operacionais (L261)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 37.56237,
+  "gastos": 40.101565,
+  "financiero": -0.787328,
+  "impuesto": 0,
+  "resultadoImpreso": -3.326523,
+  "resultadoParaCargar": -3.326523,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 5.532582,
+   "pagina": 8,
+   "linea": 217,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 11.163,
+   "pagina": 8,
+   "linea": 218,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 1.415418,
+   "pagina": 8,
+   "linea": 219,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Arrecadação de jogos",
+   "lado": "ingreso",
+   "M": 0.745853,
+   "pagina": 8,
+   "linea": 220,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Cessão temporária dos atletas",
+   "lado": "ingreso",
+   "M": 2.544036,
+   "pagina": 8,
+   "linea": 221,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Cessão definitiva dos atletas",
+   "lado": "ingreso",
+   "M": 0.552391,
+   "pagina": 8,
+   "linea": 222,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Direitos econômicos",
+   "lado": "ingreso",
+   "M": 16.249599,
+   "pagina": 8,
+   "linea": 223,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sócio torcedor",
+   "lado": "ingreso",
+   "M": 0.006822,
+   "pagina": 8,
+   "linea": 225,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "ingreso",
+   "M": 0.769,
+   "pagina": 8,
+   "linea": 226,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.15577,
+   "pagina": 8,
+   "linea": 227,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Impostos incidentes sobre a receita",
+   "lado": "ingreso",
+   "M": -1.572101,
+   "pagina": 8,
+   "linea": 230,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) Custos operacionais",
+   "lado": "gasto",
+   "M": 27.035536,
+   "pagina": 8,
+   "linea": 232,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrativas e gerais",
+   "lado": "gasto",
+   "M": 5.09485,
+   "pagina": 9,
+   "linea": 254,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 1.864064,
+   "pagina": 9,
+   "linea": 255,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Atletas não profissionais",
+   "lado": "gasto",
+   "M": 3.995818,
+   "pagina": 9,
+   "linea": 256,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Com materiais",
+   "lado": "gasto",
+   "M": 0.804482,
+   "pagina": 9,
+   "linea": 257,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Alojamento e moradia",
+   "lado": "gasto",
+   "M": 1.188523,
+   "pagina": 9,
+   "linea": 258,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tributária",
+   "lado": "gasto",
+   "M": -0.732267,
+   "pagina": 9,
+   "linea": 259,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Outras despesas",
+   "lado": "gasto",
+   "M": 0.850559,
+   "pagina": 9,
+   "linea": 260,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita financeira",
+   "M": 0.321606,
+   "linea": 263
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -1.108934,
+   "linea": 264
+  }
+ ],
+ "impuesto": []
+}

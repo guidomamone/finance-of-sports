@@ -40,3 +40,5 @@
 - Pendiente: balanço patrimonial 2019; ejercicios anteriores a 2019.
 - Contacto: clubedoremo.com.br/transparencia → pub-6456b24912b548d4bfaf1426a7c2a97d.r2.dev/transparency/.
 - Último chequeo: 2026-09-22.
+
+Color de marca: #111533 — pt/en.wikipedia (plantilla de camiseta titular body1=111533, "Leão Azul"; azul marino), escudo azul marino casi negro con RC blanco, verificado 2026-10-09

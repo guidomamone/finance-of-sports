@@ -29,3 +29,4 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
   (que es la que sigue activa y la de mayor ingreso).
 
 - Último chequeo: 2026-09-17.
+Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); infobox en.wikipedia da #0000FF (azul puro) pero el escudo es mitad rojo (burdeos) y mitad azul marino; camiseta local azul; verificado 2026-10-09, verificado 2026-10-09

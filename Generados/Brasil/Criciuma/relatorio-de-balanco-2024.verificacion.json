@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.pdf",
+ "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md",
+ "generado": "2026-10-09T23:23:28.704Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2024-12-31",
+   "evidencia": "relatorio-de-balanco-2024.md L45",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "69.848447 = 69.848447"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "97.58419 = 97.58419"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 69.848447 en este documento y 69.848447 en relatorio-auditoria-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 101.742437 en relatorio-de-balanco-2023.pdf y 101.742437 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b12 detalla los cobros y la baja del 50% de los derechos LFU por contrato; el ingreso ya figura en la nota 19 (b27).",
+  "duda de extraer que no afecta la carga: L673 trae un ingreso negativo con referencia #1 (posible reversión del ingreso de 2023); se carga tal cual impreso."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 69.848447,
+  "gastos": 97.58419,
+  "financiero": -1.259387,
+  "impuesto": 0,
+  "resultadoImpreso": -28.995129,
+  "resultadoParaCargar": -28.995129,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita com transmissão",
+   "lado": "ingreso",
+   "M": 60.386671,
+   "pagina": 25,
+   "linea": 665,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com sócios",
+   "lado": "ingreso",
+   "M": 20.169677,
+   "pagina": 25,
+   "linea": 666,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com patrocínios",
+   "lado": "ingreso",
+   "M": 10.039129,
+   "pagina": 25,
+   "linea": 667,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita de subvenções",
+   "lado": "ingreso",
+   "M": 0.529636,
+   "pagina": 25,
+   "linea": 668,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com negociação de atletas",
+   "lado": "ingreso",
+   "M": 1.947359,
+   "pagina": 25,
+   "linea": 669,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com jogos",
+   "lado": "ingreso",
+   "M": 2.967683,
+   "pagina": 25,
+   "linea": 670,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com licenciamento – royalties",
+   "lado": "ingreso",
+   "M": 1.204296,
+   "pagina": 25,
+   "linea": 671,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita Timemania - CEF",
+   "lado": "ingreso",
+   "M": 0.695093,
+   "pagina": 25,
+   "linea": 672,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita Direitos Condomínio LFU",
+   "lado": "ingreso",
+   "M": -31.125,
+   "pagina": 25,
+   "linea": 673,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Demais Receitas",
+   "lado": "ingreso",
+   "M": 3.033903,
+   "pagina": 25,
+   "linea": 674,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Departamento Futebol Profissional",
+   "lado": "gasto",
+   "M": 77.261712,
+   "pagina": 9,
+   "linea": 228,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol de Base",
+   "lado": "gasto",
+   "M": 3.250239,
+   "pagina": 9,
+   "linea": 229,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol Feminino",
+   "lado": "gasto",
+   "M": 0.717369,
+   "pagina": 9,
+   "linea": 230,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Administrativo",
+   "lado": "gasto",
+   "M": 4.054096,
+   "pagina": 9,
+   "linea": 231,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de Patrimônio",
+   "lado": "gasto",
+   "M": 8.859302,
+   "pagina": 9,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 3.441472,
+   "pagina": 9,
+   "linea": 233,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -2.161965,
+   "linea": 238
+  },
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.902578,
+   "linea": 239
+  }
+ ],
+ "impuesto": []
+}

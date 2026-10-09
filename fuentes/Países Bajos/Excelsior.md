@@ -17,3 +17,4 @@ igual con los estados contables).
 
 - Ninguna abierta.
 - Último chequeo: 2026-09-17.
+Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); bicolor rojo y negro en partes iguales (apodo Roodzwarten; escudo mitad negro mitad rojo; infobox en.wikipedia body1 000000, shorts FF0000; teamcolorcodes rojo #E2001A); sin lista ordenada oficial, verificado 2026-10-09, verificado 2026-10-09

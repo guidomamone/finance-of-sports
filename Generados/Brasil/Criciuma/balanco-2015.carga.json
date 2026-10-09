@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2015.pdf",
+ "generado": "2026-10-09T23:38:37.997Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Criciuma/balanco-2015.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2015-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "cortadoEn": "club"
+}

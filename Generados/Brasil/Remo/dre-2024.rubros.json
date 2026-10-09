@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Brasil/Remo/dre-2024.md",
+  "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+  "club": "remo",
+  "year": 2024,
+  "generatedAt": "2026-10-09T23:23:30.541Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita Operacional Bruta",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        38.291717
+      ],
+      "glosa": "Ingresos operativos brutos"
+    },
+    {
+      "label": "Receita Operacional Líquida",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        38.291717
+      ],
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        19.788574
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Despesas Operacionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        30.628045
+      ],
+      "glosa": "Gastos operativos"
+    }
+  ]
+}

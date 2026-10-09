@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "generado": "2026-10-09T23:23:28.643Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+   "campo": "cierre",
+   "valor": "2022-12-31",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2023-04-28); el ejercicio del documento cierra el 2022-12-31",
+   "evidencia": "demonstracoes-financeiras-2022.md L54",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "3313f48",
+  "a27475d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"RECEITA OPERACIONAL BRUTA\" 27.268558 cierra; además se suman 1 línea(s) fuera de ese total (0.032222)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"CUSTOS E DESPESAS OPERACIONAIS\" 23.790402 cierra; además se suman 6 línea(s) fuera de ese total (23.822625)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 27.30078 - gastos 47.613027 ± financiero -1.207001 ± impuesto 0 no da el impreso 2.271155"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 27.30078 en este documento y 27.300783 en relatorio-de-balanco-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 15.285978 en demonstrativo-financeiro-2021.pdf y 15.285977 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"RECEITA OPERACIONAL BRUTA\" no suma el renglón (27.269058 contra 27.268558, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: La tabla de b29 no tiene título propio tras el salto de página (L845); sus renglones más los de b28 suman el Total L856 igual a L240."
+ ],
+ "reintentar": [
+  {
+   "renglon": "RECEITA OPERACIONAL BRUTA",
+   "suma": 27.269058,
+   "objetivo": 27.268558
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "RECEITA OPERACIONAL BRUTA",
+   "suma": 27.269058,
+   "objetivo": 27.268558
+  }
+ ],
+ "totales": {
+  "ingresos": 27.30078,
+  "gastos": 47.613027,
+  "financiero": -1.207001,
+  "impuesto": 0,
+  "resultadoImpreso": 2.271155,
+  "resultadoParaCargar": 2.271155,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "lado": "ingreso",
+   "M": 27.268558,
+   "pagina": 9,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receitas Operacionais",
+   "lado": "ingreso",
+   "M": 0.032222,
+   "pagina": 9,
+   "linea": 248,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": "gasto",
+   "M": 23.790402,
+   "pagina": 9,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol Profissional",
+   "lado": "gasto",
+   "M": 15.977814,
+   "pagina": 9,
+   "linea": 242,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol de Base",
+   "lado": "gasto",
+   "M": 1.902868,
+   "pagina": 9,
+   "linea": 243,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol Feminino",
+   "lado": "gasto",
+   "M": 0.263722,
+   "pagina": 9,
+   "linea": 244,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Administrativo",
+   "lado": "gasto",
+   "M": 1.385459,
+   "pagina": 9,
+   "linea": 245,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de Patrimônio",
+   "lado": "gasto",
+   "M": 3.584477,
+   "pagina": 9,
+   "linea": 246,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.708285,
+   "pagina": 9,
+   "linea": 247,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -1.251577,
+   "linea": 251
+  },
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.044576,
+   "linea": 252
+  }
+ ],
+ "impuesto": []
+}

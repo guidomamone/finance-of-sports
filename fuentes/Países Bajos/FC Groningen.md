@@ -24,3 +24,4 @@ si son perímetros distintos o el mismo documento con dos denominaciones legales
   (holding vs. operativa) con perímetros distintos. Candidato para `dudas-por-club.md` antes de
   cargar este ejercicio a datos.
 - Último chequeo: 2026-09-17.
+Color de marca: #008E5A — teamcolorcodes.com (verde); nl.wikipedia: clubkleuren groen en wit (colores de la ciudad; camiseta blanca con dos franjas verdes); escudo verde coherente, verificado 2026-10-09

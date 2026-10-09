@@ -1,0 +1,268 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md",
+ "mdSha1": "40e566947f9df63e4e90f13eecbee0443e627c28",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:38:22.898Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    11
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    36
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    126,
+    129
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    147,
+    154
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    168,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    220,
+    247
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    279,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    328,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    368,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    404,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    592,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    625,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    638,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    649,
+    662
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    688,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    697,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    706,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    720,
+    728
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    734,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    763,
+    766
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    770,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    788,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 19,
+   "lineas": [
+    832,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 19,
+   "lineas": [
+    845,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 19,
+   "lineas": [
+    854,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    892,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 20,
+   "lineas": [
+    906,
+    916
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    920,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 21,
+   "lineas": [
+    957,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 21,
+   "lineas": [
+    970,
+    977
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b27",
+  "b28",
+  "b29"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/jan./2021 a 31/dez./2021",
+ "columna_anterior": "01/jan./2020 a 31/dez./2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "DRE en b7 (pág. 8). Nota 14 Receitas Operacionais Brutas (b27) abre la receita bruta; Nota 15 Resultado Financeiro (b28, continúa en b29) abre receitas y despesas financieras (incluye gastos financieros). Estados individuales del clube, sin consolidado."
+}

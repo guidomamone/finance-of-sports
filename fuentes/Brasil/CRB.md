@@ -36,3 +36,5 @@
 - Pendiente: ejercicios anteriores a 2019.
 - Contacto: crboficial.com.br/transparencia → docs.crboficial.com.br (Veno File Manager, sin login).
 - Último chequeo: 2026-09-22.
+
+Color de marca: null — rojo y blanco, camiseta titular blanca con faja roja (plantilla pt.wikipedia corpo1=FFFFFF, corpo2=FF0000): blanco con acento, resultado cerrado (la regla de bicolor daría #FF0000 si Guido prefiere el rojo del escudo), verificado 2026-10-09

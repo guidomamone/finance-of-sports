@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "mdSha1": "775f6c1881b0398da00e4ffb74edcc48e5b850c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:27:21.066Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L47: Demonstrações dos resultados exercícios findos de 31 de dezembro de 2020 e 2019 (em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 51,
+   "etiqueta": "Receita operacional líquida",
+   "actual": "14.902.901",
+   "anterior": "14.460.410",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 52,
+   "etiqueta": "Custo das atividades sociais e esportivas",
+   "actual": "(2.969.625)",
+   "anterior": "(2.727.611)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 53,
+   "etiqueta": "Resultado bruto",
+   "actual": "11.933.276",
+   "anterior": "11.732.799",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 55,
+   "etiqueta": "Despesas com pessoal",
+   "actual": "(4.088.240)",
+   "anterior": "(2.829.156)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 56,
+   "etiqueta": "Despesas gerais e administrativas",
+   "actual": "(6.384.108)",
+   "anterior": "(8.810.921)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 57,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(13.794)",
+   "anterior": "(15.592)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 59,
+   "etiqueta": "Resultado operacional antes do resultado financeiro",
+   "actual": "1.447.134",
+   "anterior": "77.130",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 61,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(227.878)",
+   "anterior": "(104.484)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 62,
+   "etiqueta": "Receitas financeiras",
+   "actual": "13.621",
+   "anterior": "12.301",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 63,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(241.499)",
+   "anterior": "(116.785)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 65,
+   "etiqueta": "Superávit (déficit) do exercício",
+   "actual": "1.219.256",
+   "anterior": "(27.354)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 65,
+  "actual": "1.219.256",
+  "anterior": "(27.354)"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados en reais sin notas de desglose. No se imprime total de ingresos ni de gastos; la receita operacional líquida es el único renglón de ingresos operativos."
+}

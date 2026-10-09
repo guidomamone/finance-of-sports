@@ -32,3 +32,5 @@ sourcing.
 **Ángulos**: sitio oficial: agotado (las rutas fijas `/pdf/*.pdf` siguen sirviendo el mismo archivo: el hash del Gelir Tablosu y del Finansal Durum coincide con el que ya teníamos) · Wayback CDX de dominio: agotado (solo 4 tablas, capturas de julio 2024, y logos) · barrido: 2 (Sonnet) — 2026-10-08
 
 - No hay un ejercicio adicional: el sitio sobrescribe la misma ruta cada año y Wayback solo tiene la captura de julio 2024. Sigue sin saberse qué ejercicio cubren los 4 PDFs (pendiente de identificar a ojo).
+
+Color de marca: #FF0000 — rojo y negro (tr.wikipedia infobox 'Kırmızı, Siyah' #FF0000/#000000; en.wikipedia: el rojo es el primario); coincide con el escudo rojo/negro, verificado 2026-10-09

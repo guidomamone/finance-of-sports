@@ -1036,10 +1036,10 @@ O Clube, em obediência a regulamentação em vigor Lei 9.615/98, mantem cobertu
 
 DocuSign Envelope ID: E6581707-8BDA-4937-B6FA-EF98297D7EC7
 
-**Avaí Futebol Clube**  
-**Notas Explicativas da Administração as Demonstrações Financeiras**  
-**Exercícios Findos em 31 de dezembro de 2023 e 2022**  
-(Valores expressos em milhares de reais, exceto quando indicado de outra forma)
+**Avaí Futebol Clube**
+**Notas Explicativas da Administração as Demonstrações Financeiras**
+**Exercícios Findos em 31 de dezembro de 2023 e 2022**
+**(Valores expressos em milhares de reais, exceto quando indicado de outra forma)**
 
 **18. Patrimônio Social**
 
@@ -1051,30 +1051,42 @@ No ano de 2023 o Clube apresentou um resultado superavitário de R$ 19.101 MM, e
 
 A assembleia geral de credores se instalou em primeira convocação, no dia 22 de fevereiro de 2024, oportunidade na qual houve a aprovação do modificativo, apresentado no processo dia 21 de fevereiro de 2024, pela maioria dos credores presentes, conforme imagem abaixo:
 
-### RESULTADO VOTAÇÃO DO PLANO
+**RESULTADO VOTAÇÃO DO PLANO**
 
 **CLASSE I**
-*POR QUANTIDADE*
-- APROVA: 86 (65,15%)
-- NÃO APROVA: 46 (34,85%)
-- Total: 132
+
+| POR QUANTIDADE | | |
+|---|---|---|
+| APROVA | 86 | 65,15% |
+| NÃO APROVA | 46 | 34,85% |
+| | 132 | |
 
 **CLASSE III**
-*POR VALOR*
-- APROVA: R$ 10.267.732,87 (80,52%)
-- NÃO APROVA: R$ 2.484.058,03 (19,48%)
-- Total: R$ 12.751.790,90
 
-*POR QUANTIDADE*
-- APROVA: 18 (66,67%)
-- NÃO APROVA: 9 (33,33%)
-- Total: 27
+POR QUANTIDADE
+POR VALOR
+
+| | | Valor | % |
+|---|---|---|---|
+| APROVA | R$ | 10.267.732,87 | 80,52% |
+| NÃO APROVA | R$ | 2.484.058,03 | 19,48% |
+| | R$ | 12.751.790,90 | |
+
+POR QUANTIDADE
+
+| | | |
+|---|---|---|
+| APROVA | 18 | 66,67% |
+| NÃO APROVA | 9 | 33,33% |
+| | 27 | |
 
 **CLASSE IV**
-*POR QUANTIDADE*
-- APROVA: 19 (73,08%)
-- NÃO APROVA: 7 (26,92%)
-- Total: 26
+
+| POR QUANTIDADE | | |
+|---|---|---|
+| APROVA | 19 | 73,08% |
+| NÃO APROVA | 7 | 26,92% |
+| | 26 | |
 
 O processo agora aguarda homologação pelo juízo responsável, para início dos prazos de pagamento.
 

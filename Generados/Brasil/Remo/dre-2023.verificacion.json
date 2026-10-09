@@ -1,0 +1,111 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2023.md",
+ "generado": "2026-10-09T23:23:30.470Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "623e7a1",
+  "3983b84"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receita Operacional Bruta\" 33.831604 cierra; además se suman 1 línea(s) fuera de ese total (33.831604)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 67.663208 - gastos 34.822632 ± financiero 0.449709 ± impuesto 0 no da el impreso -1.440736"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": null,
+   "detalle": "no se puede comparar: dre-2024.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 67.663208,
+  "gastos": 34.822632,
+  "financiero": 0.449709,
+  "impuesto": 0,
+  "resultadoImpreso": -1.440736,
+  "resultadoParaCargar": -1.440736,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita Operacional Bruta",
+   "lado": "ingreso",
+   "M": 33.831604,
+   "pagina": 1,
+   "linea": 10,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Operacional Líquida",
+   "lado": "ingreso",
+   "M": 33.831604,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Administrativas",
+   "lado": "gasto",
+   "M": 18.418551,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Operacionais",
+   "lado": "gasto",
+   "M": 16.404081,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": 0.449709,
+   "linea": 21
+  }
+ ],
+ "impuesto": []
+}

@@ -1,0 +1,220 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.pdf",
+ "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md",
+ "generado": "2026-10-09T23:23:28.666Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.pdf",
+   "campo": "cierre",
+   "valor": "2023-12-31",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2023-12-31",
+   "evidencia": "relatorio-de-balanco-2023.md L48",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "101.742437 = 101.742437"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "42.80291 = 42.802911"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 101.742437 en este documento y 101.742437 en relatorio-de-balanco-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 27.30078 en demonstracoes-financeiras-2022.pdf y 27.300783 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 101.742437,
+  "gastos": 42.80291,
+  "financiero": -1.753074,
+  "impuesto": 0,
+  "resultadoImpreso": 57.186452,
+  "resultadoParaCargar": 57.186452,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita com transmissão",
+   "lado": "ingreso",
+   "M": 14.011212,
+   "pagina": 25,
+   "linea": 700,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com sócios",
+   "lado": "ingreso",
+   "M": 15.373894,
+   "pagina": 25,
+   "linea": 701,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com patrocínios",
+   "lado": "ingreso",
+   "M": 4.1016,
+   "pagina": 25,
+   "linea": 702,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita de subvenções",
+   "lado": "ingreso",
+   "M": 0.51435,
+   "pagina": 25,
+   "linea": 703,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com negociação de atletas",
+   "lado": "ingreso",
+   "M": 0.461839,
+   "pagina": 25,
+   "linea": 704,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com jogos",
+   "lado": "ingreso",
+   "M": 0.920438,
+   "pagina": 25,
+   "linea": 705,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita com licenciamento – royalties",
+   "lado": "ingreso",
+   "M": 1.1579,
+   "pagina": 25,
+   "linea": 706,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita Timemania - CEF",
+   "lado": "ingreso",
+   "M": 0.754578,
+   "pagina": 25,
+   "linea": 707,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Receita Direitos Condomínio LFU",
+   "lado": "ingreso",
+   "M": 62.25,
+   "pagina": 25,
+   "linea": 708,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Demais Receitas",
+   "lado": "ingreso",
+   "M": 2.196626,
+   "pagina": 25,
+   "linea": 709,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Departamento Futebol Profissional",
+   "lado": "gasto",
+   "M": 31.244024,
+   "pagina": 9,
+   "linea": 229,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol de Base",
+   "lado": "gasto",
+   "M": 3.123933,
+   "pagina": 9,
+   "linea": 230,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Futebol Feminino",
+   "lado": "gasto",
+   "M": 0.457627,
+   "pagina": 9,
+   "linea": 231,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento Administrativo",
+   "lado": "gasto",
+   "M": 3.010359,
+   "pagina": 9,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de Patrimônio",
+   "lado": "gasto",
+   "M": 4.220841,
+   "pagina": 9,
+   "linea": 233,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.746126,
+   "pagina": 9,
+   "linea": 234,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -1.906375,
+   "linea": 237
+  },
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.153301,
+   "linea": 238
+  }
+ ],
+ "impuesto": []
+}

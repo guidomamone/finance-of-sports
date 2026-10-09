@@ -148,56 +148,52 @@ As notas explicativas da Administração são parte integrante destas demonstra�
 --- pág. 5 ---
 
 # Ferroviária Futebol S/A.
+**CNPJ 06.020.811/0001-30**
+**DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO**
+**(Em Reais)**
 
-# CNPJ 06.020.811/0001-30
+| | 31/12/2010 | 31/12/2009 |
+| :--- | :--- | :--- |
+| **Receitas do Desporto** | | |
+| Receitas de atividades desportivas profissionais | 576.146,14 | 933.000,91 |
+| **Receitas Operacionais** | | |
+| Receitas de publicidade e patrocínios | 1.022.100,00 | 777.000,00 |
+| ( - ) Impostos | (16.726,38) | (174.927,44) |
+| **Receitas Operacionais Líquidas** | **1.581.519,76** | **1.535.073,47** |
+| **( - ) Custo dos Serviços Prestados** | | |
+| Serviços do departamento de esportes profissional | (1.196.469,33) | (1.175.976,83) |
+| Serviços do departamento de esportes para outras categorias | (24.494,58) | (90.584,44) |
+| **Total dos Custos** | **(1.220.963,91)** | **(1.266.561,07)** |
+| **Lucro Bruto** | **360.555,85** | **268.512,40** |
+| **Despesas do Desporto Profissional** | | |
+| Despesas com pessoal profissional | 161.910,45 | 181.438,34 |
+| Despesas administrativa profissional | 237.178,45 | 538.364,04 |
+| Despesas Tributárias | 3.097,11 | 74.961,59 |
+| **Despesas Operacionais** | **402.186,01** | **794.763,97** |
+| Despesas financeiras | 12.921,96 | 68.173,25 |
+| Serviços de terceiros | 19.682,75 | 42.006,00 |
+| | 32.604,71 | 110.179,25 |
+| **Total das Despesas** | **434.790,72** | **904.943,22** |
+| **Prejuízos dos exercícios** | **(74.234,87)** | **(636.430,82)** |
 
-# DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO
+### DEMONSTRAÇÃO DAS MUTAÇÕES DO PATRIMÔNIO LÍQUIDO
+**(Em Reais)**
 
-(Em Reais)
+| | Capital Social | Capital a Integralizar | Adiant. para Subscrição de Capital | Prejuízos Acumulados | Total |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Saldo em 31 de dezembro de 2007** | **950.000,00** | **(918.000,00)** | **1.226.900,00** | **(1.290.981,00)** | **(32.081,00)** |
+| Adiantamento para futura subscrição de capital | | | 343.000,00 | | 343.000,00 |
+| Prejuízo do exercício | | | | (678.472,19) | (678.472,19) |
+| **Saldo em 31 de Dezembro de 2008** | **950.000,00** | **(918.000,00)** | **1.569.900,00** | **(1.969.453,19)** | **(367.553,19)** |
+| Capital Integralizado | | 918.000,00 | (728.000,00) | | 190.000,00 |
+| Ajuste de exercícios anteriores | | | | (190.000,00) | (190.000,00) |
+| Adiantamento para futura subscrição de capital | | | 252.916,97 | | 252.916,97 |
+| Prejuízo do exercício | | | | (636.430,82) | (636.430,82) |
+| **Saldo em 31 de Dezembro de 2009** | **950.000,00** | | **1.094.816,97** | **(2.795.884,01)** | **(751.067,04)** |
+| Prejuízo do Exercício | | | | (74.234,87) | (74.234,87) |
+| **Saldo em 31 de Dezembro de 2010** | **950.000,00** | | **1.094.816,97** | **(2.870.118,88)** | **(826.301,81)** |
 
-|   | 31/12/2010 | 31/12/2009  |
-| --- | --- | --- |
-|  Receitas do Desporto |  |   |
-|  Receitas de atividades desportivas profissionais | 576.146,14 | 933.000,91  |
-|  Receitas Operacionais |  |   |
-|  Receitas de publicidade e patrocínios | 1.022.100,00 | 777.000,00  |
-|  (-) Impostos | (16.726,38) | (174.927,44)  |
-|  Receitas Operacionais Líquidas | 1.581.519,76 | 1.535.073,47  |
-|  (-) Custo dos Serviços Prestados |  |   |
-|  Serviços do departamento de esportes profissional | (1.196.469,33) | (1.175.978,83)  |
-|  Serviços do departamento de esportes para outras categorias | (24.494,56) | (90.584,44)  |
-|  Total dos Custos | (1.220.963,91) | (1.266.561,07)  |
-|  Micro Bruto | 360.555,85 | 268.612,40  |
-|  Despesas do Desporto Profissional |  |   |
-|  Despesas com pessoal profissional | 161910,45 | 181.438,34  |
-|  Despesas administrativa profissional | 237178,45 | 538.364,04  |
-|  Despesas Tributárias | 3097,11 | 74.961,59  |
-|  Despesas Operacionais | 402.186,01 | 794.763,97  |
-|  Despesas financeiras | 12921,96 | 88.173,25  |
-|  Serviços de terceiros | 19.682,75 | 42.008,00  |
-|   | 32.604,71 | 110.179,25  |
-|  Total das Despesas | 434.790,72 | 904.943,22  |
-|  Prejuízos dos exercícios | (74.234,87) | (636.430,82)  |
-
-# DEMONSTRAÇÃO DAS MUTAÇÕES DO PATRIMÔNIO LÍQUIDO
-
-(Em Reais)
-
-|   | Capital Social | Capital a Integralizar | Adiant. para Subscrição de Capital | Prejuízos Acumulados | Total  |
-| --- | --- | --- | --- | --- | --- |
-|  Saldo em 31 de dezembro de 2007 | 950.000,00 | (918.000,00) | 1.226.900,00 | (1.290.981,00) | (32.081,00)  |
-|  Adiantamento para futura subscrição de capital |  |  | 343.000,00 |  | 343.000,00  |
-|  Prejuízo do exercício |  |  |  | (678.472,19) | (678.472,19)  |
-|  Saldo em 31 de Dezembro de 2008 | 950.000,00 | (918.000,00) | 1.569.900,00 | (1.969.453,19) | (367.563,19)  |
-|  Capital Integralizado |  | 918.000,00 | (728.000,00) |  | 190.000,00  |
-|  Ajuste de exercícios anteriores |  |  |  | (190.000,00) | (190.000,00)  |
-|  Adiantamento para futura subscrição de capital |  |  | 252.916,97 |  | 252.916,97  |
-|  Prejuízo do exercício |  |  |  | (636.430,82) | (636.430,82)  |
-|  Saldo em 31 de Dezembro de 2009 | 950.000,00 | - | 1.094.816,97 | (2.796.884,01) | (751.067,04)  |
-|  Prejuízo do Exercício |  |  |  | (74.234,87) | (74.234,87)  |
-|  Saldo em 31 de Dezembro de 2010 | 950.000,00 | - | 1.094.816,97 | (2.870.118,88) | (826.301,81)  |
-
-As notas explicativas da Administração, são parte integrante destas demonstrações contábeis
+**As notas explicativas da Administração, são parte integrante destas demonstrações contábeis**
 
 --- pág. 6 ---
 

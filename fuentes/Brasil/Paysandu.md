@@ -30,3 +30,5 @@
   completo.
 - Contacto: www2.paysandu.com.br/transparencia/balancos.php; www2.paysandu.com.br/download/balancete/<año>/.
 - Último chequeo: 2026-09-22.
+
+Color de marca: null — azul y blanco ("Alviceleste"), pero la camiseta titular es blanca (plantilla en.wikipedia body1=FFFFFF) y no hay hex azul de la camiseta: blanco con acento, resultado cerrado (escudo azul), verificado 2026-10-09

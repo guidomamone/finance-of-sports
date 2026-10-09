@@ -1,0 +1,274 @@
+{
+ "md": "Clubes/Brasil/Paysandu/dre-2024.md",
+ "generatedAt": "2026-10-09T23:37:07.692Z",
+ "rubrosHuella": "621c4e4019abe2e2a1e10f62a754479a7f0a1d60",
+ "rubros": [
+  {
+   "label": "Futebol Profissional",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Futebol de Base",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Esportes Olímpicos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_sports",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio Torcedor",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio Proprietário",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Doações",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties e Franquias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remissão de dívida",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Time Mania",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receita",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguel",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com Gratuidades",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Deduções da Receitas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo com Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesa com Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Gerais e Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Gratuidades",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação/Amortização",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas Constituídas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "PECLD",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Operacionais da Atividade Desportiva",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.76
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Perdas de Capital",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "exceptional_items",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "player_impairment",
+     0.02
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Custos Gerais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 990
+  }
+ ]
+}

@@ -45,3 +45,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+Color de marca: #981A26 — vinotinto y dorado (infobox es.wikipedia: Colores #92000A y #CDA434; camiseta local body1 981A26; footylogos #8D3031 burgundy), escudo vinotinto y dorado, verificado 2026-10-09

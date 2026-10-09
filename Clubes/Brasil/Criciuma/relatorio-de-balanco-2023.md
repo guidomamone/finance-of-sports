@@ -735,35 +735,36 @@ Página 20 | 21
 
 --- pág. 26 ---
 
-|  Laudo de Avaliação UTR - Terreno  |   |   |   |
-| --- | --- | --- | --- |
-|  Objeto: Terrenos Estádio Heriberto Hulse  |   |   |   |
-|  Data | Avaliação | Patrimônio | Ajuste de Avaliação  |
-|  18/09/2023 | 68.218.000,00 | 21.744.513,66 | 46.473.486,34  |
+| Laudo de Avaliação UTR - Terreno | | | |
+| :---: | :---: | :---: | :---: |
+| Objeto: Terrenos Estádio Heriberto Hulse | | | |
+| **Data** | **Avaliação** | **Patrimônio** | **Ajuste de Avaliação** |
+| 18/09/2023 | 68.218.000,00 | 21.744.513,66 | 46.473.486,34 |
 
-|  Laudo de Avaliação M-49.153  |   |   |   |
-| --- | --- | --- | --- |
-|  Objeto: Terreno e Construções Centro de Treinamento  |   |   |   |
-|  Data | Avaliação | Patrimônio | Ajuste de Avaliação  |
-|  21/11/2023 | 18.200.000,00 | 11.028.721,38 | 7.171.278,62  |
+| Laudo de Avaliação M-49.153 | | | |
+| :---: | :---: | :---: | :---: |
+| Objeto: Terreno e Construções Centro de Treinamento | | | |
+| **Data** | **Avaliação** | **Patrimônio** | **Ajuste de Avaliação** |
+| 21/11/2023 | 18.200.000,00 | 11.028.721,38 | 7.171.278,62 |
 
-|  **Total = Ajuste de Avaliação Patrimonial** | **53.644.764,96**  |
-| --- | --- |
+| Total = Ajuste de Avaliação Patrimonial | 53.644.764,96 |
+| :--- | :---: |
 
-## 23 Instrumento financeiros
+### 23 Instrumento financeiros
 
 Ativos e passivos constantes no balanço patrimonial, como empréstimos e financiamentos e outras contas a receber e pagar estão registrados a valores contábeis, os quais se aproximam dos valores justos, conforme critérios mencionados nas correspondentes notas explicativas das práticas contábeis. O Clube não realizou no exercício operações com derivativos e quaisquer outros ativos em caráter especulativo.
 
-## 24 Cobertura de seguros
+### 24 Cobertura de seguros
 
-A Administração do Clube mantém cobertura de seguros resguardando seus bens patrimoniais. Mantem, também, seguro para cobertura dos atletas profissionais, que é considerado suficiente pela Administração para cobrir eventuais riscos sobre seus ativos e/ou responsabilidades. A importância segurada deve garantir ao atleta profissional, ou ao beneficiário por ele indicado no contrato de seguro, o direito a indenização mínima correspondente ao valor anual da remuneração pactuada. Os valores contratados pelo Clube abrangem os atletas profissionais e da base que foram profissionalizados.
+A Administração do Clube mantém cobertura de seguros resguardando seus bens patrimoniais. Mantém, também, seguro para cobertura dos atletas profissionais, que é considerado suficiente pela Administração para cobrir eventuais riscos sobre seus ativos e/ou responsabilidades. A importância segurada deve garantir ao atleta profissional, ou ao beneficiário por ele indicado no contrato de seguro, o direito a indenização mínima correspondente ao valor anual da remuneração pactuada. Os valores contratados pelo Clube abrangem os atletas profissionais e da base que foram profissionalizados.
 
 VILMAR GUEDES  
- PRESIDENTE  
- CPF: 298.286.009-00
+PRESIDENTE  
+CPF: 298.286.009-00
 
 VANDERLEI MACHADO  
- CONTADOR CRC/SC 022.860/O-6  
- CPF: 708.513.299-20
+CONTADOR CRC/SC 022.860/O-6  
+CPF: 708.513.289-20
 
 Página 21 | 21
+

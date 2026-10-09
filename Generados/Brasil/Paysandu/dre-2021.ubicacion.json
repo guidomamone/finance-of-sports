@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2021.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2021.md",
+ "mdSha1": "7c5561e2b67580a0dfd68ccc5f009a028276463b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:08:37.404Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    60
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento solo contiene la Demonstração do resultado (b1) del ejercicio 2021 con comparativo 2020, expresada en reales. No hay notas de desglose transcriptas. Perímetro asumido individual (no se menciona consolidado)."
+}

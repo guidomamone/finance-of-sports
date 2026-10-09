@@ -1,282 +1,230 @@
 {
- "md": "Clubes/Brasil/Paysandu/dre-2023.md",
- "pdf": "Clubes/Brasil/Paysandu/dre-2023.pdf",
- "club": "paysandu",
- "year": 2023,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:53:48.010Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 26,
-  "notasUsadas": []
- },
- "ladoConocido": 11,
- "rubros": [
-  {
-   "label": "Futebol Profissional",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    20.164819
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Futebol de Base",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.0055
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Esportes Olímpicos",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.843745
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Sócio Torcedor",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    3.659352
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Sócio Proprietário",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.500273
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Doações",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    1.683667
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Royalties e Franquias",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    3.191832
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Patrocínio",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    8.11171
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Remissão de dívida",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.934741
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Time Mania",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.671711
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Outras receita",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.135599
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Aluguel",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.2507
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receita com Gratuidades",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    5.360617
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "(-) Deduções da Receitas",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.44134
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receita Bruta",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    45.072926
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Custo com Pessoal",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -18.173344
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesa com Pessoal",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -3.446076
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Gerais e Administrativas",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -16.862975
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas com Gratuidades (i)",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -5.360617
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Depreciação/Amortização",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.49864
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Perdas Constituídas (ii)",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.005171
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "PECLD",
-   "lado": null,
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -2.459373
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas Tributárias",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.043202
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receitas financeiras",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    0.009504
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Despesas financeiras",
-   "lado": "expense",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.770205
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Receitas financeiras líquidas",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# PAYSANDU SPORT CLUB / ## Demonstrações do resultado",
-   "values": [
-    -0.7607
-   ],
-   "origen": "estado 0"
-  }
- ]
+  "md": "Clubes/Brasil/Paysandu/dre-2023.md",
+  "pdf": "Clubes/Brasil/Paysandu/dre-2023.pdf",
+  "club": "paysandu",
+  "year": 2023,
+  "generatedAt": "2026-10-09T23:23:30.018Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Futebol Profissional",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        20.164819
+      ],
+      "glosa": "Fútbol profesional"
+    },
+    {
+      "label": "Futebol de Base",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0055
+      ],
+      "glosa": "Fútbol base"
+    },
+    {
+      "label": "Esportes Olímpicos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.843745
+      ],
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.659352
+      ],
+      "glosa": "Socios abonados"
+    },
+    {
+      "label": "Sócio Proprietário",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.500273
+      ],
+      "glosa": "Socios propietarios"
+    },
+    {
+      "label": "Doações",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.683667
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Royalties e Franquias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.191832
+      ],
+      "glosa": "Regalías y franquicias"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8.11171
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Remissão de dívida",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.934741
+      ],
+      "glosa": "Condonación de deuda"
+    },
+    {
+      "label": "Time Mania",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.671711
+      ],
+      "glosa": "Timemania"
+    },
+    {
+      "label": "Outras receita",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.135599
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.2507
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Receita com Gratuidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.360617
+      ],
+      "glosa": "Ingresos por gratuidades"
+    },
+    {
+      "label": "(-) Deduções da Receitas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.44134
+      ],
+      "glosa": "(-) Deducciones de ingresos"
+    },
+    {
+      "label": "Custo com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        18.173344
+      ],
+      "glosa": "Costos de personal"
+    },
+    {
+      "label": "Despesa com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.446076
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Gerais e Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        16.862975
+      ],
+      "glosa": "Generales y administrativos"
+    },
+    {
+      "label": "Despesas com Gratuidades (i)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.360617
+      ],
+      "glosa": "Gastos por gratuidades (i)"
+    },
+    {
+      "label": "Depreciação/Amortização",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.49864
+      ],
+      "glosa": "Depreciación/Amortización"
+    },
+    {
+      "label": "Perdas Constituídas (ii)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.005171
+      ],
+      "glosa": "Pérdidas constituidas (ii)"
+    },
+    {
+      "label": "PECLD",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.459373
+      ],
+      "glosa": "Pérdidas estimadas por créditos de dudoso cobro"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.043202
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
 }

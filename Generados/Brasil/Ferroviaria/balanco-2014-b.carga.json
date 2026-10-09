@@ -1,0 +1,34 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+ "generado": "2026-10-09T23:38:38.041Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2014-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Período: 01/01/2014 a 31/12/2014"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "cortadoEn": "club"
+}

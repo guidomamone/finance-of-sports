@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md",
+ "mdSha1": "40e566947f9df63e4e90f13eecbee0443e627c28",
+ "modo": "digital",
+ "motivoModo": null,
+ "generado": "2026-10-09T22:38:23.065Z",
+ "fuentes": {
+  "8": "pdftotext",
+  "20": "pdftotext",
+  "21": "pdftotext"
+ },
+ "confirmados": 70,
+ "noConfirmados": [
+  {
+   "bloque": "b29",
+   "pagina": 21,
+   "linea": 957,
+   "numero": "2021",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 31/dez./2021 | 31/dez./2020 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b29",
+   "pagina": 21,
+   "linea": 957,
+   "numero": "2020",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| | 31/dez./2021 | 31/dez./2020 |",
+   "propuesta": "anio-encabezado"
+  }
+ ]
+}

@@ -1,0 +1,402 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
+ "generado": "2026-10-09T23:23:30.419Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "46e5dba",
+  "bbeb34f",
+  "059b4dd",
+  "11add63"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receita Bruta Operacional\" 21.545016 cierra; además se suman 17 línea(s) fuera de ese total (42.877035)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 64.422051 - gastos 29.103327 ± financiero 0.420607 ± impuesto 0 no da el impreso -7.964721"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": null,
+   "detalle": "no se puede comparar: dre-2023.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 42.957263 en demonstracoes-contabeis-2021.pdf y 42.957263 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: Los renglones L302-L316 suman 17.449.920 y L318-L335 suman 11.653.407; no hay total de gastos impreso y el renglón L302 repite la etiqueta del subtotal.",
+  "duda de extraer que no afecta la carga: L974 es el total de la nota de gastos 'más significativos' (b21+b22, filas parcialmente cortadas entre páginas) y no cuadra con el estado.",
+  "duda de extraer que no afecta la carga: Diferencia de 13.500 en la columna 2021, que no es la del ejercicio pedido."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 64.422051,
+  "gastos": 29.103327,
+  "financiero": 0.420607,
+  "impuesto": 0,
+  "resultadoImpreso": -7.964721,
+  "resultadoParaCargar": -7.964721,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receitas Operacionais",
+   "lado": "ingreso",
+   "M": 0.95557,
+   "pagina": 29,
+   "linea": 982,
+   "origen": "nota que desglosa \"Receita Bruta Operacional\""
+  },
+  {
+   "etiqueta": "Receitas Ordinárias",
+   "lado": "ingreso",
+   "M": 20.589446,
+   "pagina": 29,
+   "linea": 983,
+   "origen": "nota que desglosa \"Receita Bruta Operacional\""
+  },
+  {
+   "etiqueta": "Receita de Alugueis",
+   "lado": "ingreso",
+   "M": 0.798804,
+   "pagina": 11,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita de Estacionamento",
+   "lado": "ingreso",
+   "M": 0.156767,
+   "pagina": 11,
+   "linea": 283,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita de Bilheteria",
+   "lado": "ingreso",
+   "M": 5.72151,
+   "pagina": 11,
+   "linea": 284,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Royalties / Lojas",
+   "lado": "ingreso",
+   "M": 1.620263,
+   "pagina": 11,
+   "linea": 285,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Patrimoniais/Sociais",
+   "lado": "ingreso",
+   "M": 1.413955,
+   "pagina": 11,
+   "linea": 286,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita da Atividade Social",
+   "lado": "ingreso",
+   "M": 0.991544,
+   "pagina": 11,
+   "linea": 287,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Programa Timemania",
+   "lado": "ingreso",
+   "M": 0.535692,
+   "pagina": 11,
+   "linea": 288,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Programa Socio Torcedor",
+   "lado": "ingreso",
+   "M": 1.552399,
+   "pagina": 11,
+   "linea": 289,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita de Patrocínio / Marketing",
+   "lado": "ingreso",
+   "M": 5.604274,
+   "pagina": 11,
+   "linea": 290,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita de Direito de Transmissão",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 11,
+   "linea": 291,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Royalties / Licenciados",
+   "lado": "ingreso",
+   "M": 0.177819,
+   "pagina": 11,
+   "linea": 292,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita com Vendas Materiais",
+   "lado": "ingreso",
+   "M": 0.11865,
+   "pagina": 11,
+   "linea": 293,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Demais Receitas",
+   "lado": "ingreso",
+   "M": 1.630706,
+   "pagina": 11,
+   "linea": 294,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita com redução juros/multa - Perse",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 11,
+   "linea": 295,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Repasse de Direitos Federativos",
+   "lado": "ingreso",
+   "M": 0.687391,
+   "pagina": 11,
+   "linea": 296,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita de Premiações",
+   "lado": "ingreso",
+   "M": 0.322245,
+   "pagina": 11,
+   "linea": 297,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita Líquida",
+   "lado": "ingreso",
+   "M": 21.545016,
+   "pagina": 11,
+   "linea": 299,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Administrativas",
+   "lado": "gasto",
+   "M": 0.436843,
+   "pagina": 11,
+   "linea": 302,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Comissões",
+   "lado": "gasto",
+   "M": 0.030512,
+   "pagina": 11,
+   "linea": 303,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.069278,
+   "pagina": 11,
+   "linea": 304,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção",
+   "lado": "gasto",
+   "M": 1.229071,
+   "pagina": 11,
+   "linea": 305,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com eventos esportivos",
+   "lado": "gasto",
+   "M": 0.00695,
+   "pagina": 11,
+   "linea": 306,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Programa Sócio Torcedor",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 11,
+   "linea": 307,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo com Contratação",
+   "lado": "gasto",
+   "M": 0.122,
+   "pagina": 11,
+   "linea": 308,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviço de Terceiros",
+   "lado": "gasto",
+   "M": 2.700725,
+   "pagina": 11,
+   "linea": 309,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materiais esportivos e premiações",
+   "lado": "gasto",
+   "M": 0.103753,
+   "pagina": 11,
+   "linea": 310,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortização dos Débitos Trabalhistas",
+   "lado": "gasto",
+   "M": 0.053896,
+   "pagina": 11,
+   "linea": 311,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com tributos",
+   "lado": "gasto",
+   "M": 0.018628,
+   "pagina": 11,
+   "linea": 312,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com depreciação e amortização",
+   "lado": "gasto",
+   "M": 8.19683,
+   "pagina": 11,
+   "linea": 313,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizações - Direitos Econômicos",
+   "lado": "gasto",
+   "M": 1.9643,
+   "pagina": 11,
+   "linea": 314,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesa com Contingências",
+   "lado": "gasto",
+   "M": 1.631109,
+   "pagina": 11,
+   "linea": 315,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras Despesas",
+   "lado": "gasto",
+   "M": 0.886025,
+   "pagina": 11,
+   "linea": 316,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Pessoal",
+   "lado": "gasto",
+   "M": 6.440639,
+   "pagina": 11,
+   "linea": 318,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesa com direito de imagem",
+   "lado": "gasto",
+   "M": 1.578607,
+   "pagina": 12,
+   "linea": 331,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Jogos e Competições",
+   "lado": "gasto",
+   "M": 2.624685,
+   "pagina": 12,
+   "linea": 333,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Programa Sócio Torcedor",
+   "lado": "gasto",
+   "M": 0.54908,
+   "pagina": 12,
+   "linea": 334,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Passagens e Hospedagens",
+   "lado": "gasto",
+   "M": 0.460396,
+   "pagina": 12,
+   "linea": 335,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.014197,
+   "linea": 298
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": 0.40641,
+   "linea": 337
+  }
+ ],
+ "impuesto": []
+}

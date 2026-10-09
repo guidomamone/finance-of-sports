@@ -44,3 +44,5 @@
 - **Código DART** de la entidad: `00699354` (전북현대모터스에프씨, 사업자번호 418-81-27460, 업종 스포츠 클럽 운영업). Sirve para ir directo a la ficha de la empresa sin pasar por el buscador por nombre.
 - **Gotcha de herramienta**: el buscador de DART (`dsab007/detailSearch.ax`) por `curl` o por `fetch()` desde la página devuelve "조회 결과가 없습니다" incluso para Samsung Electronics. Llamarlo así no sirve. El nombre solo encuentra a la empresa (tabla "회사명 찾기" con el checkbox y `hiddenCikCD1`), pero la lista de informes no salió con ningún `publicType` probado (F, A, B, I). La vía que ya funcionó en la primera sesión fue el Browser pane con la UI real.
 - 2023 y anteriores: sigue sin haber informe de auditoría público de antes de 2024 (ver arriba: 2 ejercicios).
+
+Color de marca: #7FC652 — verde (apodo 녹색전사 'Green Warriors'; infobox en.wikipedia camiseta local body1 7FC652); escudo verde oscuro y dorado, misma familia verde, verificado 2026-10-09

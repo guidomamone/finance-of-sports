@@ -1,0 +1,573 @@
+{
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf",
+ "md": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md",
+ "mdSha1": "7722320b2e2785c7dbf0e6b1c33edd03068029f8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:12:12.548Z",
+ "ubicacion": {
+  "estado": [
+   "b18"
+  ],
+  "notas_ingresos": [
+   "b15"
+  ],
+  "notas_gastos": [
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "L653: (Em reais)"
+  },
+  {
+   "bloque": "b15",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; importes coinciden con el estado en reais (L532 42.957.262)"
+  },
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; importes coinciden con el estado en reais (L517 6.537.288)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b18",
+   "linea": 657,
+   "etiqueta": "Receita Bruta Operacional",
+   "actual": "42.957.262",
+   "anterior": "12.352.668",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 658,
+   "etiqueta": "Receita de Aluguéis",
+   "actual": "757.191",
+   "anterior": "201.675",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 659,
+   "etiqueta": "Receita de Estacionamento",
+   "actual": "54.236",
+   "anterior": "19.357",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 660,
+   "etiqueta": "Receita de Bilheteria",
+   "actual": "9.533.278",
+   "anterior": "1.783.322",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 661,
+   "etiqueta": "Receita Royalties / Lojas",
+   "actual": "3.209.878",
+   "anterior": "1.260.266",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 662,
+   "etiqueta": "Receita Patrimoniais/Sociais",
+   "actual": "831.010",
+   "anterior": "456.176",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 663,
+   "etiqueta": "Receita da Atividade Social",
+   "actual": "7.212.591",
+   "anterior": "2.493.438",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 664,
+   "etiqueta": "Receita Programa Timemania",
+   "actual": "604.689",
+   "anterior": "773.830",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 665,
+   "etiqueta": "Receita Programa Socio Torcedor",
+   "actual": "882.386",
+   "anterior": "1.232.119",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 666,
+   "etiqueta": "Receita de Patrocínio / Marketing",
+   "actual": "4.350.110",
+   "anterior": "3.394.949",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 667,
+   "etiqueta": "Receita de Direito de Transmissão",
+   "actual": "46.421",
+   "anterior": "174.729",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 668,
+   "etiqueta": "Receitas Royalties / Licenciados",
+   "actual": "1.627.466",
+   "anterior": "474.099",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 669,
+   "etiqueta": "Receita com Vendas Materiais",
+   "actual": "133.010",
+   "anterior": "40.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 670,
+   "etiqueta": "Demais Receitas",
+   "actual": "224.168",
+   "anterior": "48.708",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 671,
+   "etiqueta": "Receita com redução juros/multa - Perse",
+   "actual": "13.490.829",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 672,
+   "etiqueta": "Receita Líquida",
+   "actual": "42.957.262",
+   "anterior": "12.352.668",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 673,
+   "etiqueta": "Resultado Bruto",
+   "actual": "42.957.262",
+   "anterior": "12.352.668",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 674,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "4.902.284",
+   "anterior": "7.179.744",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 675,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "385.967",
+   "anterior": "265.393",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 676,
+   "etiqueta": "Comissões",
+   "actual": "23.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 677,
+   "etiqueta": "Materiais",
+   "actual": "134.117",
+   "anterior": "420.406",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 678,
+   "etiqueta": "Manutenção",
+   "actual": "880.265",
+   "anterior": "615.353",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 679,
+   "etiqueta": "Programa Sócio Torcedor",
+   "actual": "36.547",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 680,
+   "etiqueta": "Serviço de Terceiros",
+   "actual": "2.427.815",
+   "anterior": "1.704.119",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 681,
+   "etiqueta": "Materiais esportivos e premiações",
+   "actual": "101.857",
+   "anterior": "49.195",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 682,
+   "etiqueta": "Despesas com Amortização dos Débitos Trabalhistas",
+   "actual": "3.000",
+   "anterior": "1.534.286",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 683,
+   "etiqueta": "Despesas com tributos",
+   "actual": "173.537",
+   "anterior": "1.471",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 684,
+   "etiqueta": "Despesas com depreciação e amortização",
+   "actual": "75.833",
+   "anterior": "1.923.969",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 685,
+   "etiqueta": "Outras Despesas",
+   "actual": "660.346",
+   "anterior": "665.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 686,
+   "etiqueta": "Despesas operacionais",
+   "actual": "14.984.950",
+   "anterior": "7.045.949",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 687,
+   "etiqueta": "Despesas com Pessoal",
+   "actual": "6.537.288",
+   "anterior": "3.208.054",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 688,
+   "etiqueta": "Direito de imagem",
+   "actual": "4.643.626",
+   "anterior": "2.355.493",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 689,
+   "etiqueta": "Despesas com Jogos e Competições",
+   "actual": "3.014.827",
+   "anterior": "1.050.580",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 690,
+   "etiqueta": "Despesas Programa Socio Torcedor",
+   "actual": "321.113",
+   "anterior": "187.177",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 691,
+   "etiqueta": "Despesas com Passagens e Hospedagens",
+   "actual": "468.095",
+   "anterior": "244.645",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 692,
+   "etiqueta": "Resultado antes do resultado financeiro",
+   "actual": "23.070.028",
+   "anterior": "-1.873.025",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 693,
+   "etiqueta": "Despesas financeiras",
+   "actual": "250.527",
+   "anterior": "194.128",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 694,
+   "etiqueta": "Outras receitas e despesas não operacionais",
+   "actual": "-",
+   "anterior": "2.650",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 695,
+   "etiqueta": "Outras receitas",
+   "actual": "-",
+   "anterior": "2.650",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 696,
+   "etiqueta": "Superávit/ (Déficit) do exercício",
+   "actual": "22.819.501",
+   "anterior": "-2.064.503",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 529,
+   "etiqueta": "Receitas Operacionais",
+   "actual": "811.427",
+   "anterior": "221.032",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Bruta Operacional"
+  },
+  {
+   "bloque": "b15",
+   "linea": 530,
+   "etiqueta": "Receitas Ordinárias",
+   "actual": "28.430.838",
+   "anterior": "12.130.636",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Bruta Operacional"
+  },
+  {
+   "bloque": "b15",
+   "linea": 531,
+   "etiqueta": "Incentivos Fiscais",
+   "actual": "13.714.997",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Bruta Operacional"
+  },
+  {
+   "bloque": "b15",
+   "linea": 532,
+   "etiqueta": "Total",
+   "actual": "42.957.262",
+   "anterior": "12.351.668",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita Bruta Operacional"
+  },
+  {
+   "bloque": "b14",
+   "linea": 516,
+   "etiqueta": "Serviço de Terceiros",
+   "actual": "2.427.814",
+   "anterior": "1.669.237",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Serviço de Terceiros"
+  },
+  {
+   "bloque": "b14",
+   "linea": 517,
+   "etiqueta": "Despesas com Pessoal",
+   "actual": "6.537.288",
+   "anterior": "3.710.746",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas com Pessoal"
+  },
+  {
+   "bloque": "b14",
+   "linea": 518,
+   "etiqueta": "Direito de imagem",
+   "actual": "4.643.626",
+   "anterior": "2.355.493",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direito de imagem"
+  },
+  {
+   "bloque": "b14",
+   "linea": 519,
+   "etiqueta": "Jogos e Competições",
+   "actual": "3.014.827",
+   "anterior": "1.050.580",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas com Jogos e Competições"
+  },
+  {
+   "bloque": "b14",
+   "linea": 520,
+   "etiqueta": "Manutenção",
+   "actual": "880.264",
+   "anterior": "615.353",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "bloque": "b14",
+   "linea": 521,
+   "etiqueta": "Total",
+   "actual": "17.503.821",
+   "anterior": "8.835.251",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 657,
+  "actual": "42.957.262"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 696,
+  "actual": "22.819.501",
+  "anterior": "-2.064.503"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro de despesas b14 (L514-L521) solo como detalle de los renglones homónimos del estado, sin usar su 'Total' 17.503.821 como total de gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El cuadro b14 lista solo las despesas 'mais significativas' (L512) mezclando renglones de dos subtotales; su total no es el total de gastos.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan los renglones de b15 (L529-L531) como desglose alternativo de 'Receita Bruta Operacional' aunque agrupan distinto que el estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receita Bruta Operacional",
+   "texto": "b15 agrupa en 3 categorías (incluye 'Incentivos Fiscais' 13.714.997 vs 'Perse' 13.490.829 en L671) que no mapean uno a uno con L658-L671.",
+   "bloques": [
+    "b15",
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reais. No hay total de gastos impreso (dos subtotales L674 y L686). Diferencias de 1 entre b14 y estado (Serviço de Terceiros, Manutenção) son redondeo. Total 2020 de b15 (12.351.668) difiere en 1.000 del estado (12.352.668), año anterior. Cifras 2020 de b14 difieren del estado en Pessoal y Terceiros."
+}

@@ -1,0 +1,611 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
+ "mdSha1": "f668f0f6c1ae0e0b0cdfe94759c3e0e1ae638fa5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:43:54.548Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b25",
+   "b26"
+  ],
+  "notas_gastos": [
+   "b23",
+   "b24"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L312: Valores expressos em Reais"
+  },
+  {
+   "bloque": "b25",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en la nota; importes de magnitud similar al estado (Reais)"
+  },
+  {
+   "bloque": "b26",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en la nota"
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en la nota"
+  },
+  {
+   "bloque": "b24",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación en la nota"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 316,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "212.320.997",
+   "anterior": "168.532.840",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 317,
+   "etiqueta": "RECEITA FUTEBOL PROFISSIONAL",
+   "actual": "218.884.345",
+   "anterior": "164.031.359",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 318,
+   "etiqueta": "PATROCÍNIOS",
+   "actual": "20.363.084",
+   "anterior": "14.582.342",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 319,
+   "etiqueta": "PLACAS DE PUBLICIDADE",
+   "actual": "10.500.000",
+   "anterior": "6.050.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 320,
+   "etiqueta": "DIREITOS ECONÔMICOS DE ATLETAS",
+   "actual": "114.423.113",
+   "anterior": "17.252.050",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 321,
+   "etiqueta": "SÓCIO TORCEDOR",
+   "actual": "1.626.578",
+   "anterior": "2.337.031",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 322,
+   "etiqueta": "COTAS/TV",
+   "actual": "56.035.752",
+   "anterior": "103.565.410",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 323,
+   "etiqueta": "BILHETERIA/JOGOS",
+   "actual": "13.075.506",
+   "anterior": "20.181.467",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 324,
+   "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
+   "actual": "2.860.312",
+   "anterior": "63.061",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 325,
+   "etiqueta": "DEMAIS RECEITAS",
+   "actual": "(6.563.348)",
+   "anterior": "4.501.481",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 326,
+   "etiqueta": "LICENCIAMENTOS",
+   "actual": "294.877",
+   "anterior": "1.074.189",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 327,
+   "etiqueta": "ESCOLINHA",
+   "actual": "1.395.352",
+   "anterior": "1.241.567",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 328,
+   "etiqueta": "LOTERIAS",
+   "actual": "757.616",
+   "anterior": "887.110",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 329,
+   "etiqueta": "OUTRAS RECEITAS",
+   "actual": "2.834.560",
+   "anterior": "1.298.615",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 330,
+   "etiqueta": "(-) DIREITOS ECONÔMICOS/ CUSTO INTANGÍVEL",
+   "actual": "(11.845.753)",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 331,
+   "etiqueta": "(-) DEDUÇÕES DAS RECEITAS",
+   "actual": "7.268.369",
+   "anterior": "10.599.427",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 332,
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "actual": "7.268.369",
+   "anterior": "10.599.427",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 333,
+   "etiqueta": "RECEITA OPERACIONAL LÍQUIDA",
+   "actual": "205.052.629",
+   "anterior": "157.933.413",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 334,
+   "etiqueta": "LUCRO BRUTO",
+   "actual": "205.052.629",
+   "anterior": "157.933.413",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 335,
+   "etiqueta": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+   "actual": "129.357.645",
+   "anterior": "105.960.428",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 336,
+   "etiqueta": "CUSTOS COM PESSOAL",
+   "actual": "92.403.479",
+   "anterior": "74.689.520",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 337,
+   "etiqueta": "CUSTOS COM JOGOS",
+   "actual": "15.683.748",
+   "anterior": "9.584.064",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 338,
+   "etiqueta": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "actual": "10.294.730",
+   "anterior": "7.113.916",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 339,
+   "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
+   "actual": "10.975.688",
+   "anterior": "14.572.928",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 340,
+   "etiqueta": "(-) DESPESAS",
+   "actual": "13.680.458",
+   "anterior": "14.010.971",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 341,
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "actual": "3.355.965",
+   "anterior": "7.341.037",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 342,
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "actual": "4.577.698",
+   "anterior": "6.436.016",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 343,
+   "etiqueta": "DESPESAS DEPRECIAÇÃO",
+   "actual": "801.150",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 344,
+   "etiqueta": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "actual": "3.182.101",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 345,
+   "etiqueta": "DESPESAS GERAIS ESCOLINHA",
+   "actual": "819.815",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 346,
+   "etiqueta": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "actual": "222.635",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 347,
+   "etiqueta": "DESPESAS COM VENDAS",
+   "actual": "96.191",
+   "anterior": "107.449",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 348,
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "actual": "624.905",
+   "anterior": "126.468",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 349,
+   "etiqueta": "RESULTADO DA ATIVIDADE",
+   "actual": "62.014.525",
+   "anterior": "37.962.014",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 350,
+   "etiqueta": "(+/-) DESPESAS/(RECEITAS) OPERACIONAIS",
+   "actual": "(2.738.057)",
+   "anterior": "605.998",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 351,
+   "etiqueta": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "actual": "(2.738.057)",
+   "anterior": "605.998",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 352,
+   "etiqueta": "LUCRO OPERACIONAL",
+   "actual": "64.752.582",
+   "anterior": "37.356.016",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 353,
+   "etiqueta": "RESULTADO ANTES DA PROVISÃO DO IR/CS",
+   "actual": "64.752.582",
+   "anterior": "37.356.016",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 354,
+   "etiqueta": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 355,
+   "etiqueta": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 356,
+   "etiqueta": "LUCRO LÍQUIDO DO EXERCÍCIO",
+   "actual": "64.752.582",
+   "anterior": "37.356.016",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 852,
+   "etiqueta": "Juros ativos",
+   "actual": "9.643",
+   "anterior": "3.696",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 853,
+   "etiqueta": "Rendimentos de aplicações financeiras",
+   "actual": "192.778",
+   "anterior": "19.093",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 854,
+   "etiqueta": "(-) Pis e Confins sobre rendimentos financeiros",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 855,
+   "etiqueta": "Juros sobre capital",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 856,
+   "etiqueta": "Descontos obtidos",
+   "actual": "11.761",
+   "anterior": "33.389",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 858,
+   "etiqueta": "IOF",
+   "actual": "55.865",
+   "anterior": "1.204",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 859,
+   "etiqueta": "Descontos concedidos",
+   "actual": "93.008",
+   "anterior": "201.490",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 860,
+   "etiqueta": "Juros e multas",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "DESPESAS/(RECEITAS) FINANCEIRAS"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 316,
+  "actual": "212.320.997"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 356,
+  "actual": "64.752.582",
+  "anterior": "37.356.016"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 14 'Receitas operacionais' (L845-L846, 216.898.382) por no coincidir con RECEITA FUTEBOL PROFISSIONAL (218.884.345) ni con RECEITA OPERACIONAL BRUTA (212.320.997)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA FUTEBOL PROFISSIONAL",
+   "texto": "L846 total 216.898.382 no concilia con L317 ni L316 y su única fila no corresponde a ningún renglón del estado.",
+   "bloques": [
+    "b25",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Custos e despesas com Pessoal' (L820-L827, total 148.014.913) por no conciliar con CUSTOS COM PESSOAL + DESPESAS COM PESSOAL (95.759.444)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "CUSTOS COM PESSOAL",
+   "texto": "L827 suma 148.014.913, muy superior a L336+L341; parece de otro perímetro o criterio.",
+   "bloques": [
+    "b23",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Despesas Administrativas' (L833-L839, total 5.378.848) por no coincidir con DESPESAS ADMINISTRATIVAS (4.577.698)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "DESPESAS ADMINISTRATIVAS",
+   "texto": "L839 5.378.848 = 4.577.698 + depreciación 801.150 (L343); incluye otro renglón del estado.",
+   "bloques": [
+    "b24",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La nota 15 (L852-L860) desglosa DESPESAS/(RECEITAS) FINANCEIRAS aunque sus partidas no suman (2.738.057)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "texto": "Las partidas de L852-L860 netean cifras chicas lejos de 2.738.057 de L351; la nota no imprime total.",
+   "bloques": [
+    "b26",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga DEMAIS RECEITAS (L325) como (6.563.348) aunque su signo depende del (-) L330 incluido como ingreso negativo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "DEMAIS RECEITAS",
+   "texto": "L325 incluye L330 (11.845.753) restando; el subtotal negativo es coherente pero raro.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en Reais. Deducciones y costos impresos en positivo. Notas sin escala explícita. Nota 15 sin total impreso y con encabezado 'Dispêndios e despesas financeiras' (L857) sin importe."
+}

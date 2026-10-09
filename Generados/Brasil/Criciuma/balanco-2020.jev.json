@@ -1,0 +1,115 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2020.md",
+ "generatedAt": "2026-10-09T23:37:00.902Z",
+ "rubrosHuella": "960ce2a8af4265de9433f693e522cdcac67f1b40",
+ "rubros": [
+  {
+   "label": "Receita com transmissão",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com sócios",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "member_dues",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de subvenções",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com negociação de atletas",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com jogos",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

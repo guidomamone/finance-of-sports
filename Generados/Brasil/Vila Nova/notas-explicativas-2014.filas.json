@@ -1,0 +1,248 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+ "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
+ "mdSha1": "6060da3dc59409417999d895b27b963102f6e173",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:15:25.566Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L73: Comparativo ao Exercício Findo em 2.013 - (Em Reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 78,
+   "etiqueta": "Receitas Atividades Esportivas",
+   "actual": "1.965.461,87",
+   "anterior": "2.338.741,92",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 79,
+   "etiqueta": "Receitas de Eventos",
+   "actual": "126.870,00",
+   "anterior": "183.679,10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 80,
+   "etiqueta": "Receitas Doações/Patrocínios",
+   "actual": "630.387,87",
+   "anterior": "971.083,75",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 81,
+   "etiqueta": "Receitas CBF",
+   "actual": "1.880.000,00",
+   "anterior": "359.604,20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 82,
+   "etiqueta": "Receitas Publicidade",
+   "actual": "288.754,80",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 83,
+   "etiqueta": "Receitas Sócio Torcedor",
+   "actual": "1.461,44",
+   "anterior": "80.573,13",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 84,
+   "etiqueta": "Receitas Direitos Federativos Atletas",
+   "actual": "665.997,30",
+   "anterior": "251.911,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 85,
+   "etiqueta": "Receitas Aluguéis",
+   "actual": "69.207,28",
+   "anterior": "38.611,33",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 86,
+   "etiqueta": "Receitas Extraordinárias",
+   "actual": "57.820,52",
+   "anterior": "365.952,66",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 87,
+   "etiqueta": "Receitas Contribuições Conselheiros",
+   "actual": "303.171,55",
+   "anterior": "246.475,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 88,
+   "etiqueta": "Receitas Sindicatos",
+   "actual": "78.862,10",
+   "anterior": "51.773,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 89,
+   "etiqueta": "Receitas Diversas",
+   "actual": "38.240,98",
+   "anterior": "1.336,02",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 90,
+   "etiqueta": "TOTAL DAS RECEITAS",
+   "actual": "6.116.235,71",
+   "anterior": "4.889.742,63",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 92,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "2.899.832,80",
+   "anterior": "2.607.949,80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 93,
+   "etiqueta": "Despesas Depto Esportes",
+   "actual": "3.268.157,41",
+   "anterior": "2.163.127,44",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 94,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "4.186,99",
+   "anterior": "84.550,62",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 95,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "157.813,97",
+   "anterior": "536,69",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 96,
+   "etiqueta": "Despesas Serviços Terceiros",
+   "actual": "160.414,94",
+   "anterior": "134.553,61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 97,
+   "etiqueta": "Ajustes de Exercícios Anteriores",
+   "actual": "2.718,96",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 98,
+   "etiqueta": "TOTAL DAS DESPESAS",
+   "actual": "6.493.155,07",
+   "anterior": "4.990.718,16",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 100,
+   "etiqueta": "Déficit do Exercício",
+   "actual": "-376.919,36",
+   "anterior": "-100.975,53",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 90,
+  "actual": "6.116.235,71"
+ },
+ "total_gastos": {
+  "linea": 98,
+  "actual": "6.493.155,07"
+ },
+ "resultado": {
+  "linea": 100,
+  "actual": "-376.919,36",
+  "anterior": "-100.975,53"
+ },
+ "dudas": [],
+ "observaciones": "Estado en reales (unidades). No hay notas de desglose. 'Despesas Financeiras' incluida dentro del total de despesas, clasificada como financiero. 'Ajustes de Exercícios Anteriores' sin importe en 2013."
+}

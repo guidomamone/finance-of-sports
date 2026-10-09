@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
+  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.pdf",
+  "club": "vila-nova",
+  "year": 2022,
+  "generatedAt": "2026-10-09T23:23:30.919Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        19.961379
+      ],
+      "glosa": "Ingresos por prestación de servicios"
+    },
+    {
+      "label": "RECEITA PATROCINIO E MARKETING",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.431481
+      ],
+      "glosa": "Ingresos por patrocinio y marketing"
+    },
+    {
+      "label": "RECEITAS DIVERSAS",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        12.457555
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -1.051383
+      ],
+      "glosa": "(-) Deducciones de los ingresos brutos"
+    },
+    {
+      "label": "(-) DESPESAS COM PESSOAL",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.312614
+      ],
+      "glosa": "(-) Gastos de personal"
+    },
+    {
+      "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.665202
+      ],
+      "glosa": "(-) Gastos por impuestos, tasas y contribuciones"
+    },
+    {
+      "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.447099
+      ],
+      "glosa": "(-) Provisiones y contingencias"
+    },
+    {
+      "label": "(-) DESPESAS COM VENDAS EM GERAL",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.82054
+      ],
+      "glosa": "(-) Gastos de ventas en general"
+    },
+    {
+      "label": "(-) OUTRAS DESPESAS",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.542741
+      ],
+      "glosa": "(-) Otros gastos"
+    }
+  ]
+}

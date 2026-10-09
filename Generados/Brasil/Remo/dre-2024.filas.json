@@ -1,0 +1,125 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2024.md",
+ "mdSha1": "e80e99cd5be43b4337174bee5ae15d94cfa67b83",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:13:37.847Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L6: (Em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 10,
+   "etiqueta": "Receita Operacional Bruta",
+   "actual": "38.291.717",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Receita Operacional Líquida",
+   "actual": "38.291.717",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Resultado Operacional Bruto",
+   "actual": "38.291.717",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "19.788.574",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "30.628.045",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Resultado Antes do Resultado Financeiro",
+   "actual": "-12.124.901",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "26.177",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "908.404",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Superávit/Déficit do Exercício",
+   "actual": "-13.007.128",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 11,
+  "actual": "38.291.717"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 18,
+  "actual": "-13.007.128",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "El estado solo trae la columna 31/12/2024; no hay año anterior. Los gastos se imprimen sin signo (positivos) aunque restan: 38.291.717 - 19.788.574 - 30.628.045 = -12.124.901, y -12.124.901 + 26.177 - 908.404 = -13.007.128, cuadra. No hay total de gastos impreso. No hay notas de desglose."
+}

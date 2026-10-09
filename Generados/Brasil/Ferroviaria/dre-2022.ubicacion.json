@@ -1,0 +1,188 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "mdSha1": "959429c2c4f51c8ddf43b0f6a87d2bad37ff1053",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:02:27.227Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    15
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    17,
+    86
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    96,
+    104
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    106,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    187,
+    195
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    197,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 4,
+   "lineas": [
+    278,
+    286
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 4,
+   "lineas": [
+    288,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    369,
+    377
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 5,
+   "lineas": [
+    379,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 6,
+   "lineas": [
+    460,
+    468
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    470,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 7,
+   "lineas": [
+    544,
+    552
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 7,
+   "lineas": [
+    554,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 8,
+   "lineas": [
+    635,
+    643
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 8,
+   "lineas": [
+    645,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 9,
+   "lineas": [
+    724,
+    728
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 9,
+   "lineas": [
+    734,
+    751
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b4",
+  "b6",
+  "b8",
+  "b10",
+  "b12",
+  "b14",
+  "b16",
+  "b18"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. RECEITA BRUTA 19.190.545,64), sin indicación de miles",
+ "moneda": "BRL",
+ "columna_ejercicio": "Saldo Atual",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se trata la DRE (b2-b18) como estado individual de Ferroviaria S.A.F. pese al rótulo 'CONSOLIDADO' sobre b18?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b18 lleva arriba 'CONSOLIDADO' pero es la continuación del mismo balancete de una sola empresa (con filial), sin otro estado individual separado.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "La DRE es un listado contable (balancete) que corre de b2 a b18 en una sola columna 'Saldo Atual' del ejercicio 2022; no hay columna del año anterior. Los bloques de texto (b1, b3...) son solo encabezados de página. El rótulo 'CONSOLIDADO' parece referirse a la consolidación de matriz y filial de la misma S.A.F.; se carga como individual, consistente con años previos. Prejuicio del ejercicio (10.937.195,72)."
+}

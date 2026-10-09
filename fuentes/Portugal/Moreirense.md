@@ -29,3 +29,5 @@ flipbook para "publicar" su balance, este es el patrón a repetir.
 Ninguna sobre el canal. Serie completa desde el primer ejercicio publicado por el club.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #008000 — infobox de en.wikipedia (kit local: mangas verdes, cuerpo blanco; camiseta verde y blanca axadrezada según pt.wikipedia; el otro color es blanco, gana el verde), verificado 2026-10-09.

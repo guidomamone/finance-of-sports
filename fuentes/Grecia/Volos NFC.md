@@ -26,3 +26,5 @@ confirmados como `PDF document` real, tamaños entre 32 KB y 599 KB.
 Ninguna. Cobertura completa desde la constitución de la entidad, sin huecos.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: null — bicolor celeste-rojo (apodo Κυανέρυθροι, escudo azul y rojo) y la camiseta en.wikipedia es toda roja (ff0000); sin criterio de desempate, verificado 2026-10-09

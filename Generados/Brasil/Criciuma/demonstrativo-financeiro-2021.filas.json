@@ -1,0 +1,389 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md",
+ "mdSha1": "40e566947f9df63e4e90f13eecbee0443e627c28",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:38:47.855Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b27",
+   "b28",
+   "b29"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L277: ( Valores expressos em unidades de reais )"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; nota 14 coincide con el estado (15.285.977), que está en unidades de reais (L277)"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total 21.709 coincide con Receitas Financeiras del estado en unidades (L277)"
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; continuación de nota 15, -292.431 coincide con el estado (L277)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 281,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "15.285.977",
+   "anterior": "13.829.229",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 283,
+   "etiqueta": "CUSTOS E DESPESAS OPERACIONAIS",
+   "actual": "(18.023.240)",
+   "anterior": "(12.621.667)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 284,
+   "etiqueta": "Departamento Futebol Profissional",
+   "actual": "(11.524.382)",
+   "anterior": "(7.582.374)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 285,
+   "etiqueta": "Departamento Futebol de Base",
+   "actual": "(1.628.007)",
+   "anterior": "(876.913)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 286,
+   "etiqueta": "Departamento Futebol Feminino",
+   "actual": "(306.311)",
+   "anterior": "(85.331)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 287,
+   "etiqueta": "Departamento Administrativo",
+   "actual": "(1.246.346)",
+   "anterior": "(1.059.948)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 288,
+   "etiqueta": "Departamento de Patrimônio",
+   "actual": "(2.960.509)",
+   "anterior": "(2.959.021)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 289,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "(357.685)",
+   "anterior": "(58.080)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 291,
+   "etiqueta": "SUPERÁVIT / DÉFICIT ANTES DO RESULTADO FINANCEIRO",
+   "actual": "(2.737.263)",
+   "anterior": "1.207.562",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 293,
+   "etiqueta": "RESULTADO FINANCEIRO",
+   "actual": "(270.722)",
+   "anterior": "(496.593)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 294,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "(292.431)",
+   "anterior": "(513.598)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 295,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "21.709",
+   "anterior": "17.005",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 297,
+   "etiqueta": "SUPERÁVIT / DÉFICIT DO EXERCÍCIO",
+   "actual": "(3.007.985)",
+   "anterior": "710.969",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 908,
+   "etiqueta": "Receita com transmissão",
+   "actual": "7.707.719",
+   "anterior": "2.390.861",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 909,
+   "etiqueta": "Receita com sócios",
+   "actual": "1.721.452",
+   "anterior": "1.804.347",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 910,
+   "etiqueta": "Receita com patrocínios",
+   "actual": "1.885.235",
+   "anterior": "501.123",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 911,
+   "etiqueta": "Receita de subvenções",
+   "actual": "342.203",
+   "anterior": "449.258",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 912,
+   "etiqueta": "Receita com negociação de atletas",
+   "actual": "227.584",
+   "anterior": "7.895.414",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 913,
+   "etiqueta": "Receita com jogos",
+   "actual": "159.630",
+   "anterior": "90.646",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 914,
+   "etiqueta": "Reversão contingências – Termo de Rescisão Parcial GA",
+   "actual": "2.390.899",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 915,
+   "etiqueta": "Demais Receitas",
+   "actual": "851.256",
+   "anterior": "697.580",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b27",
+   "linea": 916,
+   "etiqueta": "Total",
+   "actual": "15.285.977",
+   "anterior": "13.829.229",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b28",
+   "linea": 923,
+   "etiqueta": "Descontos obtidos",
+   "actual": "4.980",
+   "anterior": "17.005",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 924,
+   "etiqueta": "Demais receitas financeiras",
+   "actual": "16.729",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 925,
+   "etiqueta": "Total",
+   "actual": "21.709",
+   "anterior": "17.005",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 927,
+   "etiqueta": "Juros sobre empréstimos",
+   "actual": "-88.299",
+   "anterior": "-263.526",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 928,
+   "etiqueta": "Despesas e comissões bancárias",
+   "actual": "-90.145",
+   "anterior": "-167.565",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 929,
+   "etiqueta": "Descontos concedidos",
+   "actual": "-4.280",
+   "anterior": "-41.231",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 930,
+   "etiqueta": "Encargos s/ tributos em atraso",
+   "actual": "-105.859",
+   "anterior": "-14.950",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b28",
+   "linea": 931,
+   "etiqueta": "Juros passivos",
+   "actual": "-3.848",
+   "anterior": "-26.325",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b29",
+   "linea": 959,
+   "etiqueta": "Total",
+   "actual": "-292.431",
+   "anterior": "-513.598",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b29",
+   "linea": 960,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "-270.722",
+   "anterior": "-496.593",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "RESULTADO FINANCEIRO"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 281,
+  "actual": "15.285.977"
+ },
+ "total_gastos": {
+  "linea": 283,
+  "actual": "(18.023.240)"
+ },
+ "resultado": {
+  "linea": 297,
+  "actual": "(3.007.985)",
+  "anterior": "710.969"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la fila 'Reversão contingências – Termo de Rescisão Parcial GA' (L914, 2.390.899) como ingreso operativo, tal como la incluye el club en la Receita Operacional Bruta?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA OPERACIONAL BRUTA",
+   "texto": "Es una reversión de provisión, no un ingreso típico de operación, pero el documento la suma en el total de L916.",
+   "bloques": [
+    "b27"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Las notas b27-b29 no imprimen escala; se asume unidades por coincidencia exacta con el estado. b29 es continuación de la nota 15 en la página siguiente (el total -292.431 corresponde a Despesas Financeiras; las líneas L932-L953 faltantes no se ven, pero los renglones visibles suman exactamente -292.431). No hay notas de gastos operativos; los gastos se extraen sólo del estado. Resultado operativo: -2.737.263 (L291)."
+}

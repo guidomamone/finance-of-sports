@@ -1,0 +1,266 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md",
+ "mdSha1": "34b54a459522dce936d99bff077911e02776bd85",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:06:02.883Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    36,
+    39
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    75,
+    78
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    114,
+    117
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    143,
+    146
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    172,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    213,
+    233
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    250,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    282,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    303,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    329,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    391,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    717,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    749,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    763,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    776,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    799,
+    808
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    816,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    853,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    861,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    869,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    894,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    907,
+    921
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    949,
+    953
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1012,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1032,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1065,
+    1079
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1095,
+    1101
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1113,
+    1127
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6",
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2023 Total",
+ "columna_anterior": "2022 (reapresentado)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la columna 'Total' de 2023 del estado de resultados (b6-b7) y no las columnas por segmento (Futebol profissional, feminino, amador, Administrativo)?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El estado ya abre todos los renglones por naturaleza; las columnas por segmento no agregan desglose de renglones.",
+   "bloques": [
+    "b6",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Ferroviária S.A.F., estados individuales en reais. Estado de resultados en b6 (receitas hasta lucro bruto) y b7 (continuación: despesas operacionais, resultado financeiro, lucro líquido). Notas: 22 Custos operacionais (b24), 23 Despesas administrativas e gerais (b25), 24 Resultado financeiro (b26). 2022 reapresentado."
+}

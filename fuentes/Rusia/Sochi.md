@@ -29,3 +29,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 661 KB 
 - Ninguna duda de identidad. El hueco puntual de notas 2021 es coherente con el patrón general.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #0044A8 — ru.wikipedia (sección "Клубные цвета": azul #0044a8 primero y blanco; escudo azul marino con pantera amarilla), verificado 2026-10-09

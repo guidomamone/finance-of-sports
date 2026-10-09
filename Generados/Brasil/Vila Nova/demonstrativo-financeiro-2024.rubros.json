@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
+  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.pdf",
+  "club": "vila-nova",
+  "year": 2024,
+  "generatedAt": "2026-10-09T23:23:31.067Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        49.144011
+      ],
+      "glosa": "Ingresos por derechos de transmisión, participación y premios"
+    },
+    {
+      "label": "RECEITAS DIVERSAS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.069997
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.491419
+      ],
+      "glosa": "(-) Deducciones de los ingresos brutos"
+    },
+    {
+      "label": "(-) DESPESAS COM PESSOAL",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        21.884377
+      ],
+      "glosa": "(-) Gastos de personal"
+    },
+    {
+      "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.465905
+      ],
+      "glosa": "(-) Gastos por impuestos, tasas y contribuciones"
+    },
+    {
+      "label": "(-) PROVISÕES E CONTIGÊNCIAS",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.067055
+      ],
+      "glosa": "(-) Provisiones y contingencias"
+    },
+    {
+      "label": "(-) DESPESAS COM ATIVIDADE EM GERAL",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.237539
+      ],
+      "glosa": "(-) Gastos de la actividad en general"
+    },
+    {
+      "label": "(-) OUTRAS DESPESAS",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        9.776197
+      ],
+      "glosa": "(-) Otros gastos"
+    }
+  ]
+}

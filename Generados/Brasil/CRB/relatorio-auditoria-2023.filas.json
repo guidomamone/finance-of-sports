@@ -1,0 +1,358 @@
+{
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2023.pdf",
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2023.md",
+ "mdSha1": "990d1c31ecae7e4097c710af75fab29368d9275f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:30:10.368Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b21",
+   "b22"
+  ],
+  "notas_gastos": [
+   "b23"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L415: (Em milhares de reais)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime escala en el bloque; el total coincide con la Receita Líquida del estado (en miles)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime escala en el bloque; el total coincide con Outras (Despesas) e Receitas del estado (en miles)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime escala en el bloque; los importes coinciden con el estado (en miles)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 419,
+   "etiqueta": "RECEITA LÍQUIDA",
+   "actual": "18.873",
+   "anterior": "14.799",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 421,
+   "etiqueta": "(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS",
+   "actual": "(6.024)",
+   "anterior": "(6.975)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 423,
+   "etiqueta": "RESULTADO BRUTO",
+   "actual": "12.849",
+   "anterior": "7.824",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 425,
+   "etiqueta": "(-) DESPESAS / RECEITAS DA ATIVIDADE CONTINUADA",
+   "actual": "(7.801)",
+   "anterior": "(7.929)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 426,
+   "etiqueta": "(-) Despesas Gerais e Administrativas",
+   "actual": "(5.058)",
+   "anterior": "(3.288)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 427,
+   "etiqueta": "(-) Despesas com Pessoal",
+   "actual": "(29.434)",
+   "anterior": "(18.425)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 428,
+   "etiqueta": "(-) Outras (Despesas) e Receitas",
+   "actual": "26.691",
+   "anterior": "13.784",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 430,
+   "etiqueta": "RESULTADO FINANCEIRO LÍQUIDO",
+   "actual": "(253)",
+   "anterior": "130",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 431,
+   "etiqueta": "(-) Despesas Financeiras",
+   "actual": "(384)",
+   "anterior": "(18)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 432,
+   "etiqueta": "(+) Receitas Financeiras",
+   "actual": "131",
+   "anterior": "148",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 434,
+   "etiqueta": "SUPERÁVIT DO EXERCICIO",
+   "actual": "4.795",
+   "anterior": "25",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 986,
+   "etiqueta": "Mensalidades E Contribuições",
+   "actual": "18.840",
+   "anterior": "14.793",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA"
+  },
+  {
+   "bloque": "b21",
+   "linea": 987,
+   "etiqueta": "Cursos",
+   "actual": "33",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA"
+  },
+  {
+   "bloque": "b21",
+   "linea": 988,
+   "etiqueta": "Receitas Patrimoniais",
+   "actual": "-",
+   "anterior": "6",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA"
+  },
+  {
+   "bloque": "b21",
+   "linea": 989,
+   "etiqueta": "Total",
+   "actual": "18.873",
+   "anterior": "14.799",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA LÍQUIDA"
+  },
+  {
+   "bloque": "b22",
+   "linea": 997,
+   "etiqueta": "Patrocínios/Marketing/Royalties/Emendas Parlamentais",
+   "actual": "16.613",
+   "anterior": "13.593",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 998,
+   "etiqueta": "Direito de Participação LFF",
+   "actual": "9.829",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 999,
+   "etiqueta": "Doaçoes/contribuições voluntarias",
+   "actual": "223",
+   "anterior": "127",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1000,
+   "etiqueta": "Recuperação de despesas",
+   "actual": "26",
+   "anterior": "16",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1001,
+   "etiqueta": "Ajudas de custo/CBF/COVID",
+   "actual": "-",
+   "anterior": "48",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1002,
+   "etiqueta": "Total",
+   "actual": "26.691",
+   "anterior": "13.784",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "(-) Outras (Despesas) e Receitas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1010,
+   "etiqueta": "Despesas Com Pessoal",
+   "actual": "29.434",
+   "anterior": "18.425",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas com Pessoal"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1011,
+   "etiqueta": "Serviços De Terceiros",
+   "actual": "2.521",
+   "anterior": "1.556",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1012,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "1.937",
+   "anterior": "1.284",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1013,
+   "etiqueta": "Materiais",
+   "actual": "433",
+   "anterior": "232",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1014,
+   "etiqueta": "Despesas Gerais",
+   "actual": "117",
+   "anterior": "146",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1015,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "50",
+   "anterior": "70",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Despesas Gerais e Administrativas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1016,
+   "etiqueta": "Total",
+   "actual": "34.492",
+   "anterior": "21.713",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 434,
+  "actual": "4.795",
+  "anterior": "25"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se asigna 'Despesas Com Pessoal' (L1010, 29.434) de la nota b23 al renglón '(-) Despesas com Pessoal' del estado y el resto de b23 (5.058) a '(-) Despesas Gerais e Administrativas'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "(-) Despesas Gerais e Administrativas",
+   "texto": "La nota b23 (L1008-L1016) suma 34.492 = 29.434 + 5.058, juntando dos renglones del estado (L426 y L427) bajo un mismo título.",
+   "bloques": [
+    "b23",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toman las notas b21, b22 y b23 en miles de reales como el estado aunque no impriman escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las notas (L984, L995, L1008) no indican escala, pero sus totales coinciden con el estado en miles (L415).",
+   "bloques": [
+    "b21",
+    "b22",
+    "b23"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime total de ingresos ni total de gastos. 'Outras (Despesas) e Receitas' (L428) es neto positivo y su nota b22 solo muestra receitas. La nota b23 agrupa Despesas Gerais e Administrativas y Despesas com Pessoal del estado; 29.434 (L1010) coincide con L427 y el resto suma 5.058 = L426. RESULTADO BRUTO + despesas (7.801) − financiero 253 = 4.795."
+}

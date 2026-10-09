@@ -1,0 +1,57 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.pdf",
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.md",
+ "mdSha1": "4339c6d24d1d6af6f3ef31b0c6ad941de6c3c757",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:15:29.087Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    55,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    72,
+    81
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    88,
+    108
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Comparativo ao Exercício Findo em 2.014 - (Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2.015",
+ "columna_anterior": "2.014",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "La DRE está partida en dos bloques: b2 (receitas) y b3 (despesas operacionais y déficit del ejercicio), que la continúa. b1 es el balance patrimonial y b4 es la DOAR (origens e aplicações de recursos), que quedan excluidos. No hay notas de desglose."
+}

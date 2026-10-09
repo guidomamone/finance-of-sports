@@ -1,0 +1,229 @@
+{
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2023.pdf",
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2023.md",
+ "mdSha1": "990d1c31ecae7e4097c710af75fab29368d9275f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:29:22.203Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    116,
+    126
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 15,
+   "lineas": [
+    369,
+    377
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    381,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    417,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    455,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    482,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    512,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    801,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    810,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    821,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    836,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    857,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    882,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    891,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    900,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    926,
+    929
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    935,
+    938
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    944,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    953,
+    957
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    963,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    984,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    995,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1008,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1022,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 31,
+   "lineas": [
+    1097,
+    1103
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b21",
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2023",
+ "columna_anterior": "31/12/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual del Clube de Regatas Brasil en b4 (pág. 16). Notas: 15 Receitas (b21), 16 Outras Receitas (b22), 17 Despesas Gerais e Administrativas (b23). Se excluyen el balance, el resultado abrangente, la DMPL, el flujo de caja y las notas patrimoniales."
+}

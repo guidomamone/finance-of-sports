@@ -1,0 +1,261 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.md",
+ "mdSha1": "2d206a62131a622e2c33ed2864f3e8ee9255e332",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:06:55.102Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    34,
+    37
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    71,
+    74
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    100,
+    103
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    131,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    175,
+    193
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    213,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    249,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    271,
+    281
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    299,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    361,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    673,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    701,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    715,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    738,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    751,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    768,
+    779
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    793,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    805,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    840,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    906,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    929,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    959,
+    974
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1001,
+    1030
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1089,
+    1099
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1115,
+    1123
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    1139,
+    1149
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5",
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la columna total '2024' del estado b5 (y no las columnas por segmento Futebol profissional/feminino/base/Administrativo)?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El estado b5 trae columnas por segmento además de los totales 2024 y 2023; los segmentos no abren renglones nuevos.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿En b6 la columna '2024' es el total del ejercicio y la última columna '2023' la comparativa, con las columnas intermedias por segmento?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b6 tiene columnas vacías entre 2024 y 2023, probablemente segmentos mal transcritos.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Ferroviária S.A.F., estados individuales en reais. Estado de resultados b5 (pág. 7) continúa en b6 (pág. 8). Notas: 19 Custos operacionais (b20), 20 Despesas administrativas e gerais (b21), 21 Resultado financeiro (b22, ingresos y gastos financieros). No se ve nota de desglose de receitas; la receita bruta ya viene abierta en el estado. b23 es lista por atleta, excluida."
+}

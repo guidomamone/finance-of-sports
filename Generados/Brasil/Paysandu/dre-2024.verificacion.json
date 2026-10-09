@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2024.md",
+ "generado": "2026-10-09T23:23:30.062Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2023-12-31; el ejercicio del documento cierra el 2024-12-31",
+   "evidencia": "dre-2024.md L7, L11 (columnas 2024 | 2023)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "32e86b2"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "64.496592 = 64.496592"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 64.496592 - gastos 101.003244 ± financiero -1.100954 ± impuesto 0 no da el impreso -3.885733"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 64.496592 en este documento y 65.776271 en dre-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 45.072926 en dre-2023.pdf y 45.955606 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L43 muestra un ingreso financiero negativo en 2024 mientras en 2023 es positivo; puede ser error de signo o neteo, pero el subtotal L45 lo suma así."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 64.496592,
+  "gastos": 101.003244,
+  "financiero": -1.100954,
+  "impuesto": 0,
+  "resultadoImpreso": -3.885733,
+  "resultadoParaCargar": -3.885733,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Futebol Profissional",
+   "lado": "ingreso",
+   "M": 36.24425,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Futebol de Base",
+   "lado": "ingreso",
+   "M": 0.066421,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Esportes Olímpicos",
+   "lado": "ingreso",
+   "M": 0.643097,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 4.795875,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio Proprietário",
+   "lado": "ingreso",
+   "M": 0.40789,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doações",
+   "lado": "ingreso",
+   "M": 0.791431,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Royalties e Franquias",
+   "lado": "ingreso",
+   "M": 2.118088,
+   "pagina": 1,
+   "linea": 20,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 6.897866,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remissão de dívida",
+   "lado": "ingreso",
+   "M": 0.04488,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Time Mania",
+   "lado": "ingreso",
+   "M": 0.572851,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receita",
+   "lado": "ingreso",
+   "M": 3.598358,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "ingreso",
+   "M": 0.704981,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita com Gratuidades",
+   "lado": "ingreso",
+   "M": 6.965004,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Deduções da Receitas",
+   "lado": "ingreso",
+   "M": 0.6456,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo com Pessoal",
+   "lado": "gasto",
+   "M": 26.060176,
+   "pagina": 1,
+   "linea": 30,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos Gerais",
+   "lado": "gasto",
+   "M": 7.541134,
+   "pagina": 1,
+   "linea": 31,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Operacionais da Atividade Desportiva",
+   "lado": "gasto",
+   "M": 33.680062,
+   "pagina": 1,
+   "linea": 33,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesa com Pessoal",
+   "lado": "gasto",
+   "M": 2.607389,
+   "pagina": 1,
+   "linea": 34,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gerais e Administrativas",
+   "lado": "gasto",
+   "M": 19.854492,
+   "pagina": 1,
+   "linea": 35,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Gratuidades",
+   "lado": "gasto",
+   "M": 6.965004,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciação/Amortização",
+   "lado": "gasto",
+   "M": 4.075733,
+   "pagina": 1,
+   "linea": 37,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Perdas Constituídas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 38,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Perdas de Capital",
+   "lado": "gasto",
+   "M": 0.04181,
+   "pagina": 1,
+   "linea": 39,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "PECLD",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 40,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.177444,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": -0.054695,
+   "linea": 43
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -1.046259,
+   "linea": 44
+  }
+ ],
+ "impuesto": []
+}

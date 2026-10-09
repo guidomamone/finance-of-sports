@@ -1,0 +1,108 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2018.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2018.md",
+ "mdSha1": "53131e072369d746fc5e610e6e0b17b236178e0b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:56:49.002Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    93,
+    144
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    152,
+    155
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    159,
+    213
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    222,
+    279
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    283,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    354,
+    373
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b3",
+  "b5",
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. 'Ajuda de Custo 23.960,00 D'), sin indicación de miles",
+ "moneda": "BRL",
+ "columna_ejercicio": "Valor",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la DRE de las páginas 1-6 (marcada 'CONSOLIDADO' en el encabezado del sistema contable) como si fuera el perímetro individual de Ferroviaria Futebol S/A?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El encabezado dice 'Período: 01/01/2018 a 31/12/2018 - CONSOLIDADO', pero parece un rótulo genérico del software contable para una única empresa (un solo CNPJ).",
+   "bloques": [
+    "b3",
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "La DRE es un listado contable analítico de una sola columna (Valor, con indicador D/C) que se extiende por 6 páginas (b2→b3→b5→b6→b7→b8), terminando en '= Lucro Líquido do Período'. No hay columna de año anterior ni notas separadas. Un solo CNPJ (06.020.811/0001-30); el rótulo 'CONSOLIDADO' probablemente es del sistema y equivale al individual."
+}

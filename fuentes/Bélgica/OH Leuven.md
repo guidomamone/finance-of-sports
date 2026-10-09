@@ -36,3 +36,4 @@ sociedad patrimonial (estadio/estructura), siguiendo el patrón de Hamburger SV 
 se abrió ninguno de los 2 PDFs para confirmarlo por tiempo.
 
 - Último chequeo: 2026-09-17.
+Color de marca: null — nl.wikipedia: camiseta local blanca con acentos verde, rojo y negro (escudo con trazos verde/rojo/negro); blanco con acento, verificado 2026-10-09

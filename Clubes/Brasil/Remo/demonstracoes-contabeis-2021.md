@@ -278,9 +278,7 @@ O Clube do Remo concluiu, no âmbito da PGFN, a consolidação do 0003 - DE-MAIS
 --- pág. 9 ---
 
 CLUBE DO REMO
-
 CNPJ: 04.887.097/0001-57
-
 Notas explicativas às demonstrações contábeis em 31 de dezembro de 2021
 (Valores expressos em Reais, exceto quando indicado de outra forma)
 
@@ -296,25 +294,76 @@ O Clube do Remo concluiu, no âmbito da PGFN, a consolidação do 0003 - DEMAIS 
 
 O Clube do Remo fará em fevereiro de 2022, no âmbito da PGFN, a consolidação do 0024 - DEMAIS PESSOAS JURIDICAS - ATÉ 84 MESES - REDUCAO TOTAL ATÉ 35%, de que trata o LEI N. 13.988, DE 14 DE ABRIL DE 2020. PORTARIA PGFN N. 14.402, DE 16 DE JUNHO DE 2020, ART. 9, INCISO II, ALINEA D., conforme a informação prevista para 01/02/2022.
 
-|  DÉBITOS PERANTE A PROCURADORIA GERAL DA FAZENDA NACIONAL - PGFN  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  VALORES ORIGINAIS DOS DÉBITOS |   |   |   | VALORES DOS DÉBITOS APÓS ADESÃO AO PROGRAMA EMERGENCIAL DE RETOMADA DO  |   |   |   |
-|   | Débitos de Tributos Diversos | Débitos Previdenciários | Débitos Repactuação Profut | Transação de Débito Individual |  | Débitos de Tributos Diversos | Débitos Previdenciários  |
-|  Principal | R$ 1.495.641,09 | R$ 5.750.582,66 | R$ 1.273.473,42 | R$ 91.679,55 | Principal | R$ 1.495.641,09 | R$ 5.750.582,66  |
-|  Multa | R$ 343.634,26 | R$ 2.161.665,00 | R$ 267.857,93 | R$ 18.335,90 | Multa | R$ 0,07 | R$ 128.617,83  |
-|  Juros | R$ 325.584,08 | R$ 7.236.879,04 | R$ 1.058.707,93 | R$ 3.863,47 | Juros | R$ 0,41 | R$ 508.472,02  |
-|  Encargos Legais/Honorários | R$ 246.908,28 | R$ 2.078.134,86 | R$ 515.450,71 | R$ 11.387,89 | Encargos Legais/Honorários | R$ 0,07 | R$ 106.555,73  |
-|  Soma | R$ 2.411.767,71 | R$ 17.227.261,56 | R$ 3.115.489,99 | R$ 125.266,81 | Soma | R$ 1.495.641,64 | R$ 6.494.228,24  |
-|  Total | R$ 22.879.786,07 |   |   | -59,10% | TOTAL | R$ 9.356.712,97  |   |
-|  DÉBITOS PERANTE A RECEITA FEDERAL DO BRASIL - RFB  |   |   |   |   |   |   |   |
-|  VALORES DE DÉBITOS EM ABERTO |   |   |   | VALORES SUSPENSOS  |   |   |   |
-|  TRIBUTO NÃO PAGO |   | DIVERGÊNCIA ENTRE GFIP X GPS |   | TRIBUTO NÃO PAGO E NÃO |   | DÉBITOS INCLUÍDOS NO PROFUT-RFB  |   |
-|  IRRF | R$ 228.952,79 | Soma | R$ 44.165,60 | Contribuição Previdenciária | R$ 22.297,03 | IRRF e PIS | R$ 29.395,80  |
-|  PIS | R$ 35.374,14 |  |  | Contribuição de Terceiros | R$ 12.060,31 | Multa por atraso de OCTF | R$ 500,00  |
-|  CSRF | R$ 609,30 |  |  | Soma | R$ 34.357,34 | Multa por atraso de GFIP | R$ 1.500,00  |
-|  Contribuição Previdenciária | R$ 118.875,16 |  |  |  |  | IRPJ | R$ 495,80  |
-|  Contribuição de Terceiros | R$ 76.763,88 |  |  |  |  | Soma | R$ 31.891,60  |
-|  Soma | R$ 460.575,27 | TOTAL | R$ 570.989,81 |  |  |  |   |
+**DÉBITOS PERANTE A PROCURADORIA GERAL DA FAZENDA NACIONAL - PGFN**
+
+**VALORES ORIGINAIS DOS DÉBITOS**
+
+| | Débitos de Tributos Diversos | Débitos Previdenciários | Débitos Repactuação Profut | Transação de Débito Individual |
+|---|---|---|---|---|
+| Principal | R$ 1.495.641,09 | R$ 5.750.582,66 | R$ 1.273.473,42 | R$ 91.679,55 |
+| Multa | R$ 343.634,26 | R$ 2.161.665,00 | R$ 267.857,93 | R$ 18.335,90 |
+| Juros | R$ 325.584,08 | R$ 7.236.879,04 | R$ 1.058.707,93 | R$ 3.863,47 |
+| Encargos Legais/Honorários | R$ 246.908,28 | R$ 2.078.134,86 | R$ 515.450,71 | R$ 11.387,89 |
+| Soma | R$ 2.411.767,71 | R$ 17.227.261,56 | R$ 3.115.489,99 | R$ 125.266,81 |
+
+**VALORES DOS DÉBITOS APÓS ADESÃO AO PROGRAMA EMERGENCIAL DE RETOMADA DO** [texto cortado no original]
+
+| | Débitos de Tributos Diversos | Débitos Previdenciários | Débitos Repactuação Profut | Transação de Débito Individual |
+|---|---|---|---|---|
+| Principal | R$ 1.495.641,09 | R$ 5.750.582,66 | R$ 1.273.473,42 | R$ 91.679,55 |
+| Multa | R$ 0,07 | R$ 128.617,83 | R$ 0,00 | R$ 733,44 |
+| Juros | R$ 0,41 | R$ 508.472,02 | R$ 265,01 | R$ 154,54 |
+| Encargos Legais/Honorários | R$ 0,07 | R$ 106.555,73 | R$ 81,61 | R$ 455,52 |
+| Soma | R$ 1.495.641,64 | R$ 6.494.228,24 | R$ 1.273.820,04 | R$ 93.023,05 |
+
+| | | | |
+|---|---|---|---|
+| Total | R$ 22.879.786,07 | -59,10% | TOTAL R$ 9.356.712,97 |
+
+**DÉBITOS PERANTE A RECEITA FEDERAL DO BRASIL - RFB**
+
+**VALORES DE DÉBITOS EM ABERTO**
+
+TRIBUTO NÃO PAGO
+
+| | |
+|---|---|
+| IRRF | R$ 228.952,79 |
+| PIS | R$ 35.374,14 |
+| CSRF | R$ 609,30 |
+| Contribuição Previdenciária | R$ 118.875,16 |
+| Contribuição de Terceiros | R$ 76.763,88 |
+| Soma | R$ 460.575,27 |
+
+DIVERGÊNCIA ENTRE GFIP X GPS
+
+| | |
+|---|---|
+| Soma | R$ 44.165,60 |
+
+TOTAL R$ 570.989,81
+
+**VALORES SUSPENSOS**
+
+TRIBUTO NÃO PAGO E NÃO
+
+| | |
+|---|---|
+| Contribuição Previdenciária | R$ 22.297,03 |
+| Contribuição de Terceiros | R$ 12.060,31 |
+| Soma | R$ 34.357,34 |
+
+*Não vencido até 18/02, data do envio da documentação
+
+DÉBITOS INCLUÍDOS NO PROFUT-RFB
+
+| | |
+|---|---|
+| IRRF e PIS | R$ 29.395,80 |
+| Multa por atraso de DCTF | R$ 500,00 |
+| Multa por atraso de GFIP | R$ 1.500,00 |
+| IRPJ | R$ 495,80 |
+| Soma | R$ 31.891,60 |
 
 Página 9 de 14
 

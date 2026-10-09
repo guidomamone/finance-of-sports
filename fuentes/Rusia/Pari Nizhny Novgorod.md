@@ -33,3 +33,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 205 KB 
   general.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #5BB8F8 — ru.wikipedia (infobox, camiseta local body1 5BB8F8; colores del club: celeste primero, blanco, azul), verificado 2026-10-09

@@ -260,25 +260,26 @@ c. R$ 115 outras baixas de conciliações das contas patrimoniais.
 
 Docusign Envelope ID: E8E3F2B2-A9A0-8392-8399-16CDCAF42DAB
 
-Página 5 de 34
+**Avaí Futebol Clube**
+**Demonstração das Mutações do Patrimônio Líquido**
+**Exercícios findos em 31 de dezembro de 2024 e 2023**
+**(Valores expressos em milhares de reais, exceto quando indicado de outra forma)**
 
-**Avaí Futebol Clube**  
-**Demonstração das Mutações do Patrimônio Líquido**  
-**Exercícios findos em 31 de dezembro de 2024 e 2023**  
-(Valores expressos em milhares de reais, exceto quando indicado de outra forma)
-
-| | Patrimônio Social | Ajuste de Avaliação Patrimonial - Reserva de Reavaliação | Ajuste de Avaliação Patrimonial - Ajuste de Avaliação Patrimonial | Ajuste de Avaliação Patrimonial - Total | Reserva de Capital | (Déficit) Acumulado | Superavit (Déficit) do período | TOTAL |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Saldo em 01 de janeiro de 2023** | **3.932** | **16.897** | **24.378** | **41.275** | **1.931** | **(65.556)** | **-** | **(18.418)** |
+| | Ajuste de Avaliação Patrimonial | | | | | | | |
+|---|---|---|---|---|---|---|---|---|
+| | Patrimônio Social | Reserva de Reavaliação | Ajuste de Avaliação Patrimonial | Total | Reserva de Capital | (Déficit) Acumulado | Superavit (Déficit) do período | TOTAL |
+| **Saldo em 01 de janeiro de 2023** | 3.932 | 16.897 | 24.378 | 41.275 | 1.931 | (65.556) | - | (18.418) |
 | Ajuste de exercícios anteriores | | | | | | (5.729) | | (5.729) |
 | Superávit (Déficit) do período | | | | | | | 19.101 | 19.101 |
-| **Saldo em 31 de dezembro de 2023** | **3.932** | **16.897** | **24.378** | **41.275** | **1.931** | **(71.285)** | **19.101** | **(5.046)** |
+| **Saldo em 31 de dezembro de 2023** | 3.932 | 16.897 | 24.378 | 41.275 | 1.931 | (71.285) | 19.101 | (5.046) |
 | Ajuste de exercícios anteriores | | | | | | (17.964) | | (17.964) |
 | Superávit (Déficit) do período | | | | | | | (68.731) | (68.731) |
 | Trasnferencia de saldo entre contas | | | | | | 19.101 | (19.101) | - |
-| **Saldo em 31 de dezembro de 2024** | **3.932** | **16.897** | **24.378** | **41.275** | **1.931** | **(70.149)** | **(68.731)** | **(91.742)** |
+| **Saldo em 31 de dezembro de 2024** | 3.932 | 16.897 | 24.378 | 41.275 | 1.931 | (70.149) | (68.731) | (91.742) |
 
 As notas explicativas são parte integrante destas Demonstrações Contábeis.
+
+Página 5 de 34
 
 --- pág. 12 ---
 

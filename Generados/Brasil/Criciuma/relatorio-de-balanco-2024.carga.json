@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.pdf",
+ "generado": "2026-10-09T23:38:38.019Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2024-12-31"
+ },
+ "cortadoEn": "club"
+}

@@ -30,3 +30,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 159 KB 
   del país (documentado en `_notas-generales.md`).
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #FFDD00 — ru.wikipedia (infobox, camiseta local body1 FFDD00; colores del club: amarillo primero y azul; escudo amarillo y azul), verificado 2026-10-09

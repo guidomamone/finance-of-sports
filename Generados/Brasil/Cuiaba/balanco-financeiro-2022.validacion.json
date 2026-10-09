@@ -1,0 +1,488 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md",
+ "mdSha1": "3ad462ef49c45c838bead2bfd48ec8b1edc41967",
+ "modo": "digital",
+ "motivoModo": "12 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 22713939 vs 22703939, 70187121 vs 78187121, 3017469 vs 3017463; 94 números del .md no están en el PDF (tolerancia 15); el .md solo tiene el 59% de los números del PDF (mínimo 85%): incompleto",
+ "generado": "2026-10-09T22:41:33.726Z",
+ "fuentes": {
+  "2": "pdftotext",
+  "24": "pdftotext"
+ },
+ "confirmados": 46,
+ "noConfirmados": [
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 84,
+   "numero": "2021",
+   "segundaLeyo": "2022",
+   "sinSegunda": false,
+   "texto": "| DEMONSTRAÇÃO DO RESULTADO | Saldo em 31/12/2022 | Saldo em 31/12/2021 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 86,
+   "numero": "70.187.121",
+   "segundaLeyo": "78187121",
+   "sinSegunda": false,
+   "texto": "| **RECEITA OPERACIONAL BRUTA** | **133.342.794** | **70.187.121** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 87,
+   "numero": "130.653.048",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **RECEITA FUTEBOL PROFISSIONAL** | **130.653.048** | **68.955.902** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 87,
+   "numero": "68.955.902",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **RECEITA FUTEBOL PROFISSIONAL** | **130.653.048** | **68.955.902** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 88,
+   "numero": "17.147.045",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| PATROCÍNIOS | 17.147.045 | 18.833.990 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 88,
+   "numero": "18.833.990",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| PATROCÍNIOS | 17.147.045 | 18.833.990 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 89,
+   "numero": "5.500.100",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| PLACAS DE PUBLICIDADE | 5.500.100 | 3.113.498 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 89,
+   "numero": "3.113.498",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| PLACAS DE PUBLICIDADE | 5.500.100 | 3.113.498 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 90,
+   "numero": "1.276.842",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DIREITOS ECONÔMICOS DE ATLETAS | 1.276.842 | 761.900 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 90,
+   "numero": "761.900",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DIREITOS ECONÔMICOS DE ATLETAS | 1.276.842 | 761.900 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 91,
+   "numero": "3.017.469",
+   "segundaLeyo": "3017463",
+   "sinSegunda": false,
+   "texto": "| SOCIO TORCEDOR | 3.017.469 | 1.696.127 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 91,
+   "numero": "1.696.127",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| SOCIO TORCEDOR | 3.017.469 | 1.696.127 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 92,
+   "numero": "39.866.934",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| COTAS/TV | 87.560.832 | 39.866.934 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 93,
+   "numero": "16.116.301",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| BILHETERIA | 16.116.301 | 4.498.054 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 94,
+   "numero": "185.398",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| OUTRAS RECEITAS C/ FUTEBOL | 34.460 | 185.398 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 96,
+   "numero": "137.940",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| LICENCIAMENTOS | 287.757 | 137.940 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 97,
+   "numero": "874.757",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| ESCOLINHA | 874.757 | 453.964 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 97,
+   "numero": "453.964",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| ESCOLINHA | 874.757 | 453.964 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 98,
+   "numero": "981.819",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| LOTERIAS | 981.819 | 96.409 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 98,
+   "numero": "96.409",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| LOTERIAS | 981.819 | 96.409 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 99,
+   "numero": "542.905",
+   "segundaLeyo": "542945",
+   "sinSegunda": false,
+   "texto": "| OUTRAS RECEITAS | 545.413 | 542.905 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 104,
+   "numero": "51.352.265",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **(-) CUSTOS FUTEBOL PROFISSIONAL** | **83.450.280** | **51.352.265** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 105,
+   "numero": "43.305.067",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| CUSTOS COM PESSOAL | 68.268.443 | 43.305.067 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 106,
+   "numero": "8.318.707",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| CUSTOS COM JOGOS | 8.318.707 | 4.986.574 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 107,
+   "numero": "6.863.131",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| OUTROS CUSTOS COM FUTEBOL | 6.863.131 | 3.060.623 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 107,
+   "numero": "3.060.623",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| OUTROS CUSTOS COM FUTEBOL | 6.863.131 | 3.060.623 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 108,
+   "numero": "14.775.866",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **(-) DESPESAS** | **14.775.866** | **16.483.435** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 109,
+   "numero": "2.238.022",
+   "segundaLeyo": "2238422",
+   "sinSegunda": false,
+   "texto": "| DESPESAS COM PESSOAL | 2.238.022 | 2.474.312 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 110,
+   "numero": "12.369.340",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DESPESAS ADMINISTRATIVAS | 12.369.340 | 12.170.401 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 110,
+   "numero": "12.170.401",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DESPESAS ADMINISTRATIVAS | 12.369.340 | 12.170.401 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 111,
+   "numero": "15.268",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DESPESAS COM VENDAS | 15.268 | 92.731 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 112,
+   "numero": "153.237",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DESPESAS TRIBUTÁRIAS | 153.237 | 226.212 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 112,
+   "numero": "226.212",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DESPESAS TRIBUTÁRIAS | 153.237 | 226.212 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 113,
+   "numero": "1.519.779",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| DEMAIS DESPESAS OPERACIONAIS | - | 1.519.779 |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 114,
+   "numero": "4.120.398",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **RESULTADO DA ATIVIDADE** | **25.511.794** | **(4.120.398)** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 117,
+   "numero": "25.790.477",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **LUCRO/(PREJUÍZO) OPERACIONAL** | **25.790.477** | **(4.984.932)** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 118,
+   "numero": "25.790.477",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **RESULTADO ANTES DA PROVISÃO DO IR/CS** | **25.790.477** | **(4.984.932)** |"
+  },
+  {
+   "bloque": "b6",
+   "pagina": 2,
+   "linea": 121,
+   "numero": "25.790.477",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **LUCRO/(PREJUÍZO) LÍQUIDO DO EXERCÍCIO** | **25.790.477** | **(4.984.932)** |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 24,
+   "linea": 1026,
+   "numero": "2022",
+   "segundaLeyo": "2422",
+   "sinSegunda": false,
+   "texto": "| | 2022 | 2021 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 24,
+   "linea": 1026,
+   "numero": "2021",
+   "segundaLeyo": "2421",
+   "sinSegunda": false,
+   "texto": "| | 2022 | 2021 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 24,
+   "linea": 1029,
+   "numero": "13.248.101",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Receita com Bilheteria | 13.248.101 | 3.939.578 |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 24,
+   "linea": 1030,
+   "numero": "8.808.553",
+   "segundaLeyo": "8809553",
+   "sinSegunda": false,
+   "texto": "| Receita com Publicidade/Propaganda | 5.500.100 | 8.808.553 |"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 24,
+   "linea": 1033,
+   "numero": "6.471.819",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| (-) Deduções Receitas | (9.604.852) | (6.471.819) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1040,
+   "numero": "2022",
+   "segundaLeyo": "2422",
+   "sinSegunda": false,
+   "texto": "| | 2022 | 2021 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1040,
+   "numero": "2021",
+   "segundaLeyo": "2421",
+   "sinSegunda": false,
+   "texto": "| | 2022 | 2021 |",
+   "propuesta": "anio-encabezado"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1042,
+   "numero": "66.878.018",
+   "segundaLeyo": "56878018",
+   "sinSegunda": false,
+   "texto": "| Despesas Trabalhistas | (66.878.018) | (44.272.586) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1043,
+   "numero": "15.181.838",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Despesa Futebol Profissional | (15.181.838) | (8.047.198) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1044,
+   "numero": "3.628.447",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Encargos Sociais | (3.628.447) | (1.506.793) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1044,
+   "numero": "1.506.793",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Encargos Sociais | (3.628.447) | (1.506.793) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1045,
+   "numero": "12.170.401",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Despesas Gerais | (12.369.340) | (12.170.401) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1046,
+   "numero": "92.731",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| Despesas Gerais Com Vendas | (15.266) | (92.731) |"
+  },
+  {
+   "bloque": "b25",
+   "pagina": 24,
+   "linea": 1047,
+   "numero": "66.089.709",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "| **Total de Despesas Operacionais** | **(98.072.909)** | **(66.089.709)** |"
+  }
+ ]
+}

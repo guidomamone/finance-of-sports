@@ -1,0 +1,282 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+ "mdSha1": "9e6747feedaa16352975e5f21a69e24442016c41",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:44:06.711Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    40,
+    40
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    80,
+    80
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    108,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    135,
+    155
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    164,
+    167
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    184,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    253,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    266,
+    269
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    286,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    307,
+    310
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    327,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    375,
+    378
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    674,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    687,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    715,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    724,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    757,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    787,
+    795
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    797,
+    805
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    828,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    851,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    872,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    909,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    942,
+    946
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 28,
+   "lineas": [
+    971,
+    973
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 28,
+   "lineas": [
+    987,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 29,
+   "lineas": [
+    1010,
+    1017
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 30,
+   "lineas": [
+    1044,
+    1050
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1077,
+    1087
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 32,
+   "lineas": [
+    1118,
+    1123
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b30"
+ ],
+ "notas_gastos": [
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em Reais (R$)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2025",
+ "columna_anterior": "31/12/2024 Reapresentado",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Lucro bruto' (b30), que solo agrupa renglones ya abiertos en el estado de resultados?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Receita Futebol Profissional",
+   "texto": "b30 resume receita futebol profissional, demais receitas y despesas tributárias, que probablemente ya figuran abiertos en b6; no agrega desglose nuevo.",
+   "bloques": [
+    "b30",
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual del Cuiabá Esporte Clube en b6 (pág. 7), en reais. Notas de gastos: b28 (custos com futebol profissional) y b29 (despesas gerais e administrativas). b30 es un resumen del lucro bruto, incluido como nota de ingresos pero probablemente redundante. b7 (resultado abrangente) no se usa. b15 (clientes) es una nota del balance, no se usa."
+}

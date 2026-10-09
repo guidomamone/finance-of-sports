@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md",
+ "mdSha1": "b4ac16474872c7f57b6886072a9a7c5afda0c5f2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:21:39.560Z",
+ "bloques": {
+  "b1": {
+   "pagina": 15,
+   "lineas": [
+    424,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 27,
+   "lineas": [
+    723,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 28,
+   "lineas": [
+    763,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 29,
+   "lineas": [
+    786,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 30,
+   "lineas": [
+    805,
+    813
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 31,
+   "lineas": [
+    829,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 39,
+   "lineas": [
+    1175,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 39,
+   "lineas": [
+    1186,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 39,
+   "lineas": [
+    1194,
+    1211
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 40,
+   "lineas": [
+    1233,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 41,
+   "lineas": [
+    1263,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 42,
+   "lineas": [
+    1296,
+    1305
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 43,
+   "lineas": [
+    1321,
+    1335
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 44,
+   "lineas": [
+    1353,
+    1412
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 45,
+   "lineas": [
+    1428,
+    1436
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 45,
+   "lineas": [
+    1445,
+    1457
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 46,
+   "lineas": [
+    1475,
+    1492
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 46,
+   "lineas": [
+    1494,
+    1498
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 46,
+   "lineas": [
+    1502,
+    1508
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 47,
+   "lineas": [
+    1526,
+    1531
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 47,
+   "lineas": [
+    1549,
+    1555
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 48,
+   "lineas": [
+    1582,
+    1599
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 49,
+   "lineas": [
+    1621,
+    1645
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 50,
+   "lineas": [
+    1663,
+    1680
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2022",
+ "columna_anterior": "31/12/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Demonstração do (Déficit) Superávit' de la pág. 15 (b1) por ser una repetición del estado de resultados de la pág. 28 (b3)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (pág. 15, probablemente en el informe de gestión) tiene las mismas 10 filas que b3, el estado formal con columna Nota.",
+   "bloques": [
+    "b1",
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual del club (no hay consolidado). b3 es el estado formal (pág. 28); b1 parece un duplicado en la memoria. Notas: 16 Receitas (b22), 17 Custos Futebol (b23), 18 Despesas Administrativas (b24). No aparece nota de resultado financiero desglosado en el índice."
+}

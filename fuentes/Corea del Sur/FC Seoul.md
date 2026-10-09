@@ -37,3 +37,5 @@
   sitio oficial del club por una posible serie más profunda tipo "Transparencia" (no hace falta con
   10 años ya cubiertos).
 - Último chequeo: 2026-09-17.
+
+Color de marca: #C70A1C — rojo y negro (apodo 검붉은 'Dark Red'; infobox en.wikipedia camiseta local body1 C70A1C con rayas negras, shorts 1B1212); escudo rojo y negro. Bicolor: se tomó el rojo de la camiseta, verificado 2026-10-09

@@ -1,0 +1,56 @@
+{
+ "pdf": "Clubes/Brasil/CRB/demonstracoes-contabeis-2024.pdf",
+ "md": "Clubes/Brasil/CRB/demonstracoes-contabeis-2024.md",
+ "mdSha1": "ae8464a02e56ad01f7c29e97ad1fed55ec204def",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:30:14.670Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    118,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    155,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    188,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    212,
+    241
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es b2 (pág. 7), en reales, con columnas 2024 y 2023. No hay bloques de notas que desglosen ingresos o gastos en el índice; b1 es el balance, b3 la mutación del patrimonio y b4 el flujo de caja, que no se eligen. El perímetro es individual (no se menciona consolidado)."
+}

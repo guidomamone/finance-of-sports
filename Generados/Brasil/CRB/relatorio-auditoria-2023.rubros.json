@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Brasil/CRB/relatorio-auditoria-2023.md",
+  "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2023.pdf",
+  "club": "crb",
+  "year": 2023,
+  "generatedAt": "2026-10-09T23:23:28.155Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Mensalidades E Contribuições",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        18.84
+      ],
+      "glosa": "Cuotas sociales y contribuciones"
+    },
+    {
+      "label": "Cursos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        0.033
+      ],
+      "glosa": "Cursos"
+    },
+    {
+      "label": "Patrocínios/Marketing/Royalties/Emendas Parlamentais",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Outras (Despesas) e Receitas\"",
+      "values": [
+        16.613
+      ],
+      "glosa": "Patrocinios/Marketing/Regalías/Enmiendas parlamentarias"
+    },
+    {
+      "label": "Direito de Participação LFF",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Outras (Despesas) e Receitas\"",
+      "values": [
+        9.829
+      ],
+      "glosa": "Derecho de participación LFF"
+    },
+    {
+      "label": "Doaçoes/contribuições voluntarias",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Outras (Despesas) e Receitas\"",
+      "values": [
+        0.223
+      ],
+      "glosa": "Donaciones/contribuciones voluntarias"
+    },
+    {
+      "label": "Recuperação de despesas",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Outras (Despesas) e Receitas\"",
+      "values": [
+        0.026
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        6.024
+      ],
+      "glosa": "(-) COSTES DE LOS PRODUCTOS Y SERVICIOS VENDIDOS"
+    },
+    {
+      "label": "Serviços De Terceiros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Despesas Gerais e Administrativas\"",
+      "values": [
+        2.521
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Despesas Gerais e Administrativas\"",
+      "values": [
+        1.937
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Despesas Gerais e Administrativas\"",
+      "values": [
+        0.433
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Despesas Gerais",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Despesas Gerais e Administrativas\"",
+      "values": [
+        0.117
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"(-) Despesas Gerais e Administrativas\"",
+      "values": [
+        0.05
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "(-) Despesas com Pessoal",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        29.434
+      ],
+      "glosa": "(-) Gastos de personal"
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md",
+ "generado": "2026-10-09T23:23:28.850Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1bb291e",
+  "961f05b",
+  "2291a46",
+  "43d017f",
+  "491a874",
+  "66afc23"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2022: 133.342795 en este documento y 123.737941 en demonstracoes-financeiras-2023-auditadas.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "línea 88: 17.147.045 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 89: 5.500.100 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 90: 1.276.842 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 93: 16.116.301 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 97: 874.757 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 98: 981.819 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 106: 8.318.707 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 107: 6.863.131 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 109: 2.238.022 no está en el texto del PDF; las sumas lo confirman (con la segunda lectura (2238422) el resultado daría 25.790077 y no cierra)",
+  "línea 110: 12.369.340 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 111: 15.268 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 112: 153.237 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se usa como estado de resultados la DRE detallada de la pág. 2 (b6) en lugar de la DRE resumida de las demonstrações auditadas de la pág. 10 (b10)?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 133.342795,
+  "gastos": 107.831001,
+  "financiero": -0.278683,
+  "impuesto": 0,
+  "resultadoImpreso": 25.790477,
+  "resultadoParaCargar": 25.790477,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "PATROCÍNIOS",
+   "lado": "ingreso",
+   "M": 17.147045,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "PLACAS DE PUBLICIDADE",
+   "lado": "ingreso",
+   "M": 5.5001,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DIREITOS ECONÔMICOS DE ATLETAS",
+   "lado": "ingreso",
+   "M": 1.276842,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "SOCIO TORCEDOR",
+   "lado": "ingreso",
+   "M": 3.017469,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "COTAS/TV",
+   "lado": "ingreso",
+   "M": 87.560832,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "BILHETERIA",
+   "lado": "ingreso",
+   "M": 16.116301,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": "ingreso",
+   "M": 0.03446,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "LICENCIAMENTOS",
+   "lado": "ingreso",
+   "M": 0.287757,
+   "pagina": 2,
+   "linea": 96,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "ESCOLINHA",
+   "lado": "ingreso",
+   "M": 0.874757,
+   "pagina": 2,
+   "linea": 97,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "LOTERIAS",
+   "lado": "ingreso",
+   "M": 0.981819,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS",
+   "lado": "ingreso",
+   "M": 0.545413,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "gasto",
+   "M": 9.604853,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "CUSTOS COM PESSOAL",
+   "lado": "gasto",
+   "M": 68.268443,
+   "pagina": 2,
+   "linea": 105,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "CUSTOS COM JOGOS",
+   "lado": "gasto",
+   "M": 8.318707,
+   "pagina": 2,
+   "linea": 106,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": "gasto",
+   "M": 6.863131,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "lado": "gasto",
+   "M": 2.238022,
+   "pagina": 2,
+   "linea": 109,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "lado": "gasto",
+   "M": 12.36934,
+   "pagina": 2,
+   "linea": 110,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS COM VENDAS",
+   "lado": "gasto",
+   "M": 0.015268,
+   "pagina": 2,
+   "linea": 111,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "gasto",
+   "M": 0.153237,
+   "pagina": 2,
+   "linea": 112,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "M": 0.278683,
+   "linea": 116
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+   "M": null,
+   "linea": 119
+  },
+  {
+   "etiqueta": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL",
+   "M": null,
+   "linea": 120
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 88,
+   "numero": "17.147.045"
+  },
+  {
+   "linea": 89,
+   "numero": "5.500.100"
+  },
+  {
+   "linea": 90,
+   "numero": "1.276.842"
+  },
+  {
+   "linea": 93,
+   "numero": "16.116.301"
+  },
+  {
+   "linea": 97,
+   "numero": "874.757"
+  },
+  {
+   "linea": 98,
+   "numero": "981.819"
+  },
+  {
+   "linea": 106,
+   "numero": "8.318.707"
+  },
+  {
+   "linea": 107,
+   "numero": "6.863.131"
+  },
+  {
+   "linea": 109,
+   "numero": "2.238.022"
+  },
+  {
+   "linea": 110,
+   "numero": "12.369.340"
+  },
+  {
+   "linea": 111,
+   "numero": "15.268"
+  },
+  {
+   "linea": 112,
+   "numero": "153.237"
+  }
+ ]
+}

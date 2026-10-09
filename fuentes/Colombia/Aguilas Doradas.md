@@ -30,3 +30,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+Color de marca: #C6A845 — identidad dorada (nombre y escudo dorado/azul oscuro; infobox es.wikipedia: camiseta local histórica DAA520 dorado, 2026 E0D08F; las camisetas recientes son blancas); hex de footylogos (gold), mismo hue que el escudo, verificado 2026-10-09

@@ -26,3 +26,5 @@ El ejercicio 2017/18 solo tiene informe de auditor sin balance/estados adjuntos 
 posible que estén con un nombre de archivo distinto al buscado, no confirmado como hueco real.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: null — bicolor azul y verde (apodo 'Γαλαζοπράσινοι', escudo a rayas celeste/verde claro); el hex de la camiseta (#005754, en.wikipedia) es un verde azulado que no cae claro en ninguno de los dos, verificado 2026-10-09

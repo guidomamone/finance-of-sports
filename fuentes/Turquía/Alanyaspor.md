@@ -37,3 +37,5 @@ no se confirmó cuál).
   combinados como los de 2022-2023 y 2025 — al mapear, atar cada grupo de 6-8 archivos a su mismo
   ejercicio.
 - Último chequeo: 2026-09-18.
+
+Color de marca: #F58220 — naranja y verde (en.wikipedia y tr.wikipedia: 'Turuncu-Yeşil', naranja primero); hex del naranja de logotyp.us (en.wikipedia pone E67019 en las medias); coincide con el escudo naranja/verde, verificado 2026-10-09

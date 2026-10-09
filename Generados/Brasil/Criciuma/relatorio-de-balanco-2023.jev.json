@@ -1,0 +1,151 @@
+{
+ "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md",
+ "generatedAt": "2026-10-09T23:37:02.064Z",
+ "rubrosHuella": "9839e9de2767c34796aad9ec64fd066908b9de55",
+ "rubros": [
+  {
+   "label": "Receita com transmissão",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com sócios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "member_dues",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de subvenções",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com negociação de atletas",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com jogos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com licenciamento – royalties",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Timemania - CEF",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Direitos Condomínio LFU",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Futebol Feminino",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

@@ -1,0 +1,1103 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
+ "generado": "2026-10-09T23:23:29.434Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2014,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "balanco-2014-b.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "1faef49",
+  "93ebd8f",
+  "b241281"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 11.165627 y el total impreso dice 5.602059"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": null,
+   "detalle": "no se puede comparar: balanco-2015-b.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 11.165627,
+  "gastos": 12.187284,
+  "financiero": 0.026113,
+  "impuesto": 0,
+  "resultadoImpreso": 1.05595,
+  "resultadoParaCargar": 1.05595,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Rendas de Jogos",
+   "lado": "ingreso",
+   "M": 0.15099,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cotas de TV Camp Paulista Séria A-2",
+   "lado": "ingreso",
+   "M": 0.135,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Venda de Atletas",
+   "lado": "ingreso",
+   "M": 0.45,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 0.021055,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mercadorias c/Vendas",
+   "lado": "ingreso",
+   "M": 0.054708,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocinios",
+   "lado": "ingreso",
+   "M": 2.83474,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contratos de Parcerias",
+   "lado": "ingreso",
+   "M": 0.15,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicidades",
+   "lado": "ingreso",
+   "M": 0.491249,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doações",
+   "lado": "ingreso",
+   "M": 1.314316,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "= Receita Líquida:",
+   "lado": "ingreso",
+   "M": 5.545526,
+   "pagina": 1,
+   "linea": 31,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Recuperação de Despesas",
+   "lado": "ingreso",
+   "M": 0.009106,
+   "pagina": 4,
+   "linea": 203,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "AVlso Prévio Descontado",
+   "lado": "ingreso",
+   "M": 0.0081,
+   "pagina": 4,
+   "linea": 204,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Multa Contratual",
+   "lado": "ingreso",
+   "M": 0.000836,
+   "pagina": 4,
+   "linea": 205,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pis",
+   "lado": "gasto",
+   "M": 0.007425,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cofins",
+   "lado": "gasto",
+   "M": 0.0342,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pis",
+   "lado": "gasto",
+   "M": 0.000903,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cofins",
+   "lado": "gasto",
+   "M": 0.004158,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Icms",
+   "lado": "gasto",
+   "M": 0.009847,
+   "pagina": 1,
+   "linea": 28,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.066673,
+   "pagina": 1,
+   "linea": 35,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Taxa de Policiamento",
+   "lado": "gasto",
+   "M": 0.022718,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Taxas Federações e Confederações",
+   "lado": "gasto",
+   "M": 0.080286,
+   "pagina": 1,
+   "linea": 37,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Segurança e Vigilancia",
+   "lado": "gasto",
+   "M": 0.047088,
+   "pagina": 1,
+   "linea": 38,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss s/Renda de Jogos",
+   "lado": "gasto",
+   "M": 0.000318,
+   "pagina": 1,
+   "linea": 39,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss s/Patrocinios",
+   "lado": "gasto",
+   "M": 0.0484,
+   "pagina": 1,
+   "linea": 40,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ingressos",
+   "lado": "gasto",
+   "M": 0.009412,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção, Conservação Estadio",
+   "lado": "gasto",
+   "M": 0.025421,
+   "pagina": 1,
+   "linea": 42,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Combustíveis e Lubrificantes",
+   "lado": "gasto",
+   "M": 0.020423,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss s/Arbitragens",
+   "lado": "gasto",
+   "M": 0.005359,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exame Anti-Doping",
+   "lado": "gasto",
+   "M": 0.026775,
+   "pagina": 1,
+   "linea": 45,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços Prest p/Terceiros",
+   "lado": "gasto",
+   "M": 0.692835,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direito de Imagem",
+   "lado": "gasto",
+   "M": 1.085904,
+   "pagina": 1,
+   "linea": 47,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Locação de Estadio",
+   "lado": "gasto",
+   "M": 0.039388,
+   "pagina": 1,
+   "linea": 48,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss s/Cotas de TV",
+   "lado": "gasto",
+   "M": 0.00675,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss/Seguro Torcedor FPF",
+   "lado": "gasto",
+   "M": 0.008255,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 1.02087,
+   "pagina": 1,
+   "linea": 51,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.111479,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Férias Indenizadas",
+   "lado": "gasto",
+   "M": 0.004019,
+   "pagina": 1,
+   "linea": 53,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.09096,
+   "pagina": 1,
+   "linea": 54,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aviso Prévio Indenizado",
+   "lado": "gasto",
+   "M": 0.010368,
+   "pagina": 1,
+   "linea": 55,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.053465,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.092603,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fgts Rescisório",
+   "lado": "gasto",
+   "M": 0.003446,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premios e Gratificações",
+   "lado": "gasto",
+   "M": 0.104625,
+   "pagina": 1,
+   "linea": 59,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Academia",
+   "lado": "gasto",
+   "M": 0.016219,
+   "pagina": 1,
+   "linea": 60,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Agua Mineral",
+   "lado": "gasto",
+   "M": 0.010569,
+   "pagina": 1,
+   "linea": 61,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.248847,
+   "pagina": 2,
+   "linea": 73,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 0.108073,
+   "pagina": 2,
+   "linea": 74,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vale Transporte",
+   "lado": "gasto",
+   "M": 0.008247,
+   "pagina": 2,
+   "linea": 75,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Indenizações Trabalhistas",
+   "lado": "gasto",
+   "M": 0.179078,
+   "pagina": 2,
+   "linea": 76,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas de Hospedagem",
+   "lado": "gasto",
+   "M": 0.109038,
+   "pagina": 2,
+   "linea": 77,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pis s/Folha",
+   "lado": "gasto",
+   "M": 0.011433,
+   "pagina": 2,
+   "linea": 78,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 0.085612,
+   "pagina": 2,
+   "linea": 79,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contingencias Trabalhistas",
+   "lado": "gasto",
+   "M": 0.143289,
+   "pagina": 2,
+   "linea": 80,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Compras Mercadorias a Prazo",
+   "lado": "gasto",
+   "M": 0.038096,
+   "pagina": 2,
+   "linea": 81,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Recuperação Cofins",
+   "lado": "gasto",
+   "M": 0.002896,
+   "pagina": 2,
+   "linea": 82,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Recuperação Pis",
+   "lado": "gasto",
+   "M": 0.000619,
+   "pagina": 2,
+   "linea": 83,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo das Mercadorias Vendidas",
+   "lado": "gasto",
+   "M": 0.00579,
+   "pagina": 2,
+   "linea": 84,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Recuperação de Icms",
+   "lado": "gasto",
+   "M": 0.006857,
+   "pagina": 2,
+   "linea": 85,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 0.101669,
+   "pagina": 2,
+   "linea": 86,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.014014,
+   "pagina": 2,
+   "linea": 87,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.009415,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.004376,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.009927,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fgts Rescisorio",
+   "lado": "gasto",
+   "M": 0.006719,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vale Transporte",
+   "lado": "gasto",
+   "M": 0.001038,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pis s/Folha",
+   "lado": "gasto",
+   "M": 0.001241,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 0.013303,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.001912,
+   "pagina": 2,
+   "linea": 95,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.001386,
+   "pagina": 2,
+   "linea": 96,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.005668,
+   "pagina": 2,
+   "linea": 97,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.001245,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Ativo Fixo",
+   "lado": "gasto",
+   "M": 0.003662,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Assessoria Contábil/Tributaria/Advocatic",
+   "lado": "gasto",
+   "M": 0.079033,
+   "pagina": 2,
+   "linea": 100,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contingencias Cíveis",
+   "lado": "gasto",
+   "M": 0.185211,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contingencias Tributarias",
+   "lado": "gasto",
+   "M": 0.371405,
+   "pagina": 2,
+   "linea": 102,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas pelo uso da Marca",
+   "lado": "gasto",
+   "M": 0.051701,
+   "pagina": 2,
+   "linea": 103,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Indedutíveis",
+   "lado": "gasto",
+   "M": 0.0168,
+   "pagina": 2,
+   "linea": 104,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 0.001544,
+   "pagina": 2,
+   "linea": 105,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medicamentos e Mat Medicos e Cirurgicos",
+   "lado": "gasto",
+   "M": 0.000338,
+   "pagina": 2,
+   "linea": 106,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Servipos prestados p/Terceiros",
+   "lado": "gasto",
+   "M": 0.002819,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Total:",
+   "lado": "gasto",
+   "M": 5.516188,
+   "pagina": 2,
+   "linea": 108,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.03,
+   "pagina": 2,
+   "linea": 114,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciações",
+   "lado": "gasto",
+   "M": 0.033747,
+   "pagina": 2,
+   "linea": 115,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Legais e Judiciais",
+   "lado": "gasto",
+   "M": 0.060074,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 0.000448,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.001591,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção, Conservação de Bens",
+   "lado": "gasto",
+   "M": 0.025367,
+   "pagina": 2,
+   "linea": 119,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicações",
+   "lado": "gasto",
+   "M": 0.00024,
+   "pagina": 2,
+   "linea": 120,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.046114,
+   "pagina": 2,
+   "linea": 121,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Propaganda e Publicidade",
+   "lado": "gasto",
+   "M": 0.032493,
+   "pagina": 2,
+   "linea": 122,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provedor de Internet",
+   "lado": "gasto",
+   "M": 0.006102,
+   "pagina": 3,
+   "linea": 134,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Material de Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.000057,
+   "pagina": 3,
+   "linea": 135,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Condominio",
+   "lado": "gasto",
+   "M": 0.004508,
+   "pagina": 3,
+   "linea": 136,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materiais Esportivos",
+   "lado": "gasto",
+   "M": 0.000387,
+   "pagina": 3,
+   "linea": 137,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materias de Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.001977,
+   "pagina": 3,
+   "linea": 138,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medicamentos e Mat.Medicos e Cirurgicos",
+   "lado": "gasto",
+   "M": 0.073933,
+   "pagina": 3,
+   "linea": 139,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Material de Consumo",
+   "lado": "gasto",
+   "M": 0.001469,
+   "pagina": 3,
+   "linea": 140,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Agua",
+   "lado": "gasto",
+   "M": 0.025461,
+   "pagina": 3,
+   "linea": 141,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.313082,
+   "pagina": 3,
+   "linea": 142,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.00018,
+   "pagina": 3,
+   "linea": 143,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bens de Valores Irrelevantes",
+   "lado": "gasto",
+   "M": 0.003483,
+   "pagina": 3,
+   "linea": 144,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Energia Eletrica",
+   "lado": "gasto",
+   "M": 0.012373,
+   "pagina": 3,
+   "linea": 145,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.001945,
+   "pagina": 3,
+   "linea": 146,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção e Conservação de Bens",
+   "lado": "gasto",
+   "M": 0.065424,
+   "pagina": 3,
+   "linea": 147,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Material de Consumo",
+   "lado": "gasto",
+   "M": 0.000654,
+   "pagina": 3,
+   "linea": 148,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Matrial de Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.000956,
+   "pagina": 3,
+   "linea": 149,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Utensilios, Guarn.Cama, Mesa e Banho",
+   "lado": "gasto",
+   "M": 0.006503,
+   "pagina": 3,
+   "linea": 150,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gas",
+   "lado": "gasto",
+   "M": 0.005376,
+   "pagina": 3,
+   "linea": 151,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Multas",
+   "lado": "gasto",
+   "M": 0.00312,
+   "pagina": 3,
+   "linea": 152,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Multas",
+   "lado": "gasto",
+   "M": 0.000062,
+   "pagina": 3,
+   "linea": 154,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Agua",
+   "lado": "gasto",
+   "M": 0.001031,
+   "pagina": 3,
+   "linea": 156,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Energia Eletrica",
+   "lado": "gasto",
+   "M": 0.001924,
+   "pagina": 3,
+   "linea": 157,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Telefone",
+   "lado": "gasto",
+   "M": 0.018536,
+   "pagina": 3,
+   "linea": 158,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Seguro de Vida",
+   "lado": "gasto",
+   "M": 0.006557,
+   "pagina": 3,
+   "linea": 159,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impressos e Materiais de Escritorio",
+   "lado": "gasto",
+   "M": 0.004155,
+   "pagina": 3,
+   "linea": 160,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Correios",
+   "lado": "gasto",
+   "M": 0.002604,
+   "pagina": 3,
+   "linea": 161,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bens de Valores Irrelevantes",
+   "lado": "gasto",
+   "M": 0.000501,
+   "pagina": 3,
+   "linea": 162,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custas e Emolumentos",
+   "lado": "gasto",
+   "M": 0.019278,
+   "pagina": 3,
+   "linea": 163,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Telefone",
+   "lado": "gasto",
+   "M": 0.002552,
+   "pagina": 3,
+   "linea": 164,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impressos e Matriais de Escritorio",
+   "lado": "gasto",
+   "M": 0.000277,
+   "pagina": 3,
+   "linea": 165,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo Formação Atleta Profissional",
+   "lado": "gasto",
+   "M": 0.144461,
+   "pagina": 3,
+   "linea": 170,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Bancarias",
+   "lado": "gasto",
+   "M": 0.011381,
+   "pagina": 3,
+   "linea": 182,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Encargos Financeiros",
+   "lado": "gasto",
+   "M": 0.10511,
+   "pagina": 3,
+   "linea": 183,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Comissão s/Cartão",
+   "lado": "gasto",
+   "M": 0.002137,
+   "pagina": 3,
+   "linea": 184,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros Passivos",
+   "M": -0.000612,
+   "linea": 153
+  },
+  {
+   "etiqueta": "Juros Passivos",
+   "M": -0.001172,
+   "linea": 155
+  },
+  {
+   "etiqueta": "Juros s/Leasing Bradesco",
+   "M": -0.017391,
+   "linea": 175
+  },
+  {
+   "etiqueta": "Juros e Multas Lei 12996/14",
+   "M": -0.006935,
+   "linea": 176
+  },
+  {
+   "etiqueta": "Encargos Financeiros",
+   "M": -0.000003,
+   "linea": 177
+  }
+ ],
+ "impuesto": []
+}

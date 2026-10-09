@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "mdSha1": "775f6c1881b0398da00e4ffb74edcc48e5b850c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:26:54.336Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    41
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    49,
+    65
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstrações dos resultados exercícios findos de 31 de dezembro de 2020 e 2019 (em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento solo contiene balance (b1, b2) y la demonstração do resultado (b3), en reais. No hay notas que desglosen ingresos ni gastos. Perímetro individual (no se menciona consolidado)."
+}

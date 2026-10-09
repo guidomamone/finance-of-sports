@@ -47,3 +47,5 @@ curl+cookie-jar puro descripto en `_notas-generales.md`, sin depender del navega
   de 12 meses — ver `club-data-mapping/SKILL.md` antes de cargar.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #D7141A — infobox de cs.wikipedia (colores rojo y blanco, el otro es blanco), verificado 2026-10-09.

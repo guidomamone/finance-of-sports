@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+ "generado": "2026-10-09T23:38:38.015Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2023-04-28); el ejercicio del documento cierra el 2022-12-31"
+ },
+ "cortadoEn": "club"
+}

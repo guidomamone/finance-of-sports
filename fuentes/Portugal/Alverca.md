@@ -25,3 +25,5 @@ Ninguna sobre el canal. El formato corto de los primeros 2 ejercicios es consist
 SAD recién constituida en una categoría inferior, no un error de descarga.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #0000FF — infobox de Wikipedia (kit camiseta local, azul con lista vertical roja; colores principales azul y rojo; pt.wikipedia), verificado 2026-10-09. Ojo: es el azul saturado de la plantilla; el escudo (dorado con ondas azules) tiene un azul más oscuro, misma familia.

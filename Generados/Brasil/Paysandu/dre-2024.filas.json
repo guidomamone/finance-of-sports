@@ -1,0 +1,377 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2024.md",
+ "mdSha1": "6ff3df1b95cb691501883e32f9ac43159fcc6020",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:09:52.771Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L9: (Em Reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Futebol Profissional",
+   "actual": "36.244.250,00",
+   "anterior": "20.164.819,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Futebol de Base",
+   "actual": "66.421,00",
+   "anterior": "5.500,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Esportes Olímpicos",
+   "actual": "643.097,00",
+   "anterior": "843.745,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Sócio Torcedor",
+   "actual": "4.795.875,00",
+   "anterior": "3.659.352,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Sócio Proprietário",
+   "actual": "407.890,00",
+   "anterior": "500.273,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Doações",
+   "actual": "791.431,00",
+   "anterior": "1.683.667,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Royalties e Franquias",
+   "actual": "2.118.088,00",
+   "anterior": "3.191.832,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Patrocínio",
+   "actual": "6.897.866,00",
+   "anterior": "8.111.710,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Remissão de dívida",
+   "actual": "44.880,00",
+   "anterior": "934.741,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Time Mania",
+   "actual": "572.851,00",
+   "anterior": "671.711,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Outras receita",
+   "actual": "3.598.358,00",
+   "anterior": "135.599,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Aluguel",
+   "actual": "704.981,00",
+   "anterior": "250.700,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "Receita com Gratuidades",
+   "actual": "6.965.004,00",
+   "anterior": "5.360.617,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 27,
+   "etiqueta": "(-) Deduções da Receitas",
+   "actual": "- 645.600,00",
+   "anterior": "- 441.340,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "Receita Bruta",
+   "actual": "64.496.592,00",
+   "anterior": "45.072.926,00",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "Custos da Atividade Desportiva",
+   "actual": "-33.601.309,54",
+   "anterior": "-18.173.344,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 30,
+   "etiqueta": "Custo com Pessoal",
+   "actual": "- 26.060.175,54",
+   "anterior": "- 18.173.344,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "Custos Gerais",
+   "actual": "- 7.541.134,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 32,
+   "etiqueta": "Lucro Bruto",
+   "actual": "30.895.282,46",
+   "anterior": "26.899.582,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "Despesas Operacionais da Atividade Desportiva",
+   "actual": "- 33.680.062,00",
+   "anterior": "- 28.676.054,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 34,
+   "etiqueta": "Despesa com Pessoal",
+   "actual": "- 2.607.389,00",
+   "anterior": "- 3.446.076,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "Gerais e Administrativas",
+   "actual": "- 19.854.492,00",
+   "anterior": "- 16.862.975,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "Despesas com Gratuidades",
+   "actual": "- 6.965.004,00",
+   "anterior": "- 5.360.617,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 37,
+   "etiqueta": "Depreciação/Amortização",
+   "actual": "- 4.075.733,00",
+   "anterior": "- 498.640,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 38,
+   "etiqueta": "Perdas Constituídas",
+   "actual": "",
+   "anterior": "- 5.171,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 39,
+   "etiqueta": "Perdas de Capital",
+   "actual": "- 41.810,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 40,
+   "etiqueta": "PECLD",
+   "actual": "",
+   "anterior": "- 2.459.373,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 41,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "- 177.444,00",
+   "anterior": "- 43.202,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 42,
+   "etiqueta": "Resultado operacional antes das despesas financeiras líquidas",
+   "actual": "- 2.784.779,54",
+   "anterior": "- 1.776.472,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 43,
+   "etiqueta": "Receitas financeiras",
+   "actual": "- 54.694,89",
+   "anterior": "9.504,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 44,
+   "etiqueta": "Despesas financeiras",
+   "actual": "- 1.046.258,71",
+   "anterior": "- 770.205,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 45,
+   "etiqueta": "Receitas financeiras líquidas",
+   "actual": "- 1.100.953,60",
+   "anterior": "- 760.700,00",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 46,
+   "etiqueta": "Superávit (Déficit) do exercício",
+   "actual": "- 3.885.733,14",
+   "anterior": "- 2.537.173,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 28,
+  "actual": "64.496.592,00"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 46,
+  "actual": "- 3.885.733,14",
+  "anterior": "- 2.537.173,00"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Receitas financeiras' (L43) con el importe negativo '- 54.694,89' tal como está impreso, aunque sea un ingreso?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receitas financeiras",
+   "texto": "L43 muestra un ingreso financiero negativo en 2024 mientras en 2023 es positivo; puede ser error de signo o neteo, pero el subtotal L45 lo suma así.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reales (unidades). Perdas Constituídas (L38) y PECLD (L40) no tienen importe en 2024; se incluyen con actual vacío por tener importe en 2023. No hay total de gastos único impreso (hay subtotales de custos L29 y despesas L33). Receita Bruta (L28) ya incluye la deducción L27."
+}

@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf",
+ "generado": "2026-10-09T23:38:38.085Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": {
+   "pagina": 7,
+   "texto": "|   | Nota | 31/12/2025 | 31/12/2024  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "calendario"
+ },
+ "cortadoEn": "club"
+}

@@ -1,365 +1,600 @@
 {
- "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
- "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf",
- "club": "vila-nova",
- "year": 2025,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:54:12.516Z",
- "tieOuts": {
-  "cierran": 17,
-  "noCierran": 6
- },
- "warnings": [
-  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
-  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 35,
-  "notasUsadas": []
- },
- "ladoConocido": 34,
- "rubros": [
-  {
-   "label": "Receita operacional líquida",
-   "lado": "revenue",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    38.356
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Custo das atividades sociais e esportivas",
-   "lado": "expense",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    -35.518
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Despesas com pessoal",
-   "lado": "expense",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    -3.244
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Despesas com atividades gerais",
-   "lado": "expense",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    -12.732
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Outras receitas, líquidas",
-   "lado": "revenue",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    13.837
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Despesas financeiras",
-   "lado": "expense",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    -4.804
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Receitas financeiras",
-   "lado": "revenue",
-   "page": 34,
-   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
-   "values": [
-    1.263
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Juros pagos",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.002485
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "Multas pagas",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.001157
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "Tarifas bancárias",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.000718
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "Juros sobre empréstimos e financiamentos (i)",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.000359
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "Perdas contratuais",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.000081
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "IOF",
-   "lado": "expense",
-   "page": 56,
-   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
-   "values": [
-    -0.000004
-   ],
-   "origen": "estado 49"
-  },
-  {
-   "label": "Amortização de direitos sobre atletas (i)",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.012077
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Premiações (ii)",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.006676
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Gastos com jogos e competições",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.005898
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Despesas com transações de atletas",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.002686
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Rescisões",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.00089
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Perdas esperadas com processos trabalhistas",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.000681
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Direito de imagem",
-   "lado": "expense",
-   "page": 54,
-   "section": "## 16. Custo das atividades esportivas",
-   "values": [
-    -0.000535
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Custo",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    0.03112
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Imóveis e benfeitorias",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    6.878
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Móveis e utensílios",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    0.676
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Computadores",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    0.06
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Máquinas e equipamentos",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    1.525
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Benfeitorias em imóveis de terceiros",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    4.641
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Terrenos",
-   "lado": "expense",
-   "page": 47,
-   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
-   "values": [
-    84.33
-   ],
-   "origen": "estado 23"
-  },
-  {
-   "label": "Imóveis e benfeitorias",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    0.335
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Móveis e utensílios",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    0.473
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Veículos",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    0.475
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Benfeitorias em imóveis de terceiros",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    0.358
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Terrenos",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    65
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Obras em andamento",
-   "lado": "expense",
-   "page": 47,
-   "section": "### Movimentação 2024",
-   "values": [
-    2.2
-   ],
-   "origen": "estado 25"
-  },
-  {
-   "label": "Trabalhistas",
-   "lado": "revenue",
-   "page": 51,
-   "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
-   "values": [
-    0.005533
-   ],
-   "origen": "estado 37"
-  }
- ]
+  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
+  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf",
+  "club": "vila-nova",
+  "year": 2025,
+  "generatedAt": "2026-10-09T23:23:31.128Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Participação em competições, exposição e performance",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        6.548
+      ],
+      "glosa": "Participación en competiciones, exposición y rendimiento"
+    },
+    {
+      "label": "Direitos de transmissão",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        0.995
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Patrocínios e publicidade",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        7.964
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Licenciamento e *royanties*",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        1.394
+      ],
+      "glosa": "Licencias y regalías"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        5.605
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Sócio Tigrão",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        1.404
+      ],
+      "glosa": "Socio Tigrão"
+    },
+    {
+      "label": "Adesão ao condomínio LFU",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        12.85
+      ],
+      "glosa": "Adhesión al consorcio LFU"
+    },
+    {
+      "label": "Associações quadro social",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        0.866
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Repasse loterias",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        0.795
+      ],
+      "glosa": "Transferencias de loterías"
+    },
+    {
+      "label": "Bares e lanchonetes",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        0.376
+      ],
+      "glosa": "Bares y cafeterías"
+    },
+    {
+      "label": "Incentivos governamentais",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        0.277
+      ],
+      "glosa": "Incentivos gubernamentales"
+    },
+    {
+      "label": "(-) Impostos e deduções da receita",
+      "lado": "revenue",
+      "page": 54,
+      "section": "nota que desglosa \"Receita operacional líquida\"",
+      "values": [
+        -0.717
+      ],
+      "glosa": "(-) Impuestos y deducciones de los ingresos"
+    },
+    {
+      "label": "Venda de atletas e participações em direitos econômicos",
+      "lado": "revenue",
+      "page": 56,
+      "section": "nota que desglosa \"Outras receitas, líquidas\" > desglose de \"Movimentação de atletas (i)\"",
+      "values": [
+        11.749
+      ],
+      "glosa": "Venta de futbolistas y participaciones en derechos económicos"
+    },
+    {
+      "label": "Mecanismo de solidariedade",
+      "lado": "revenue",
+      "page": 56,
+      "section": "nota que desglosa \"Outras receitas, líquidas\" > desglose de \"Movimentação de atletas (i)\"",
+      "values": [
+        0.26
+      ],
+      "glosa": "Mecanismo de solidaridad"
+    },
+    {
+      "label": "(-) Comissões",
+      "lado": "expense",
+      "page": 56,
+      "section": "nota que desglosa \"Outras receitas, líquidas\" > desglose de \"Movimentação de atletas (i)\"",
+      "values": [
+        3.121
+      ],
+      "glosa": "(-) Comisiones"
+    },
+    {
+      "label": "(-) Gastos para viabilizar a venda",
+      "lado": "expense",
+      "page": 56,
+      "section": "nota que desglosa \"Outras receitas, líquidas\" > desglose de \"Movimentação de atletas (i)\"",
+      "values": [
+        0.52
+      ],
+      "glosa": "(-) Gastos para formalizar la venta"
+    },
+    {
+      "label": "Estorno de provisões (ii)",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        2.555
+      ],
+      "glosa": "Reversión de provisiones (ii)"
+    },
+    {
+      "label": "Multas contratuais recebidas (iii)",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        1.884
+      ],
+      "glosa": "Multas contractuales cobradas (iii)"
+    },
+    {
+      "label": "Doações",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.815
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Receita com aluguéis",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.146
+      ],
+      "glosa": "Ingresos por alquileres"
+    },
+    {
+      "label": "Arrecadação do futebol de base",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.144
+      ],
+      "glosa": "Ingresos del fútbol base"
+    },
+    {
+      "label": "Brindes recebidos",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.088
+      ],
+      "glosa": "Obsequios recibidos"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.057
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Reembolsos recebidos",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.052
+      ],
+      "glosa": "Reembolsos recibidos"
+    },
+    {
+      "label": "Taxa de avaliação base",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.035
+      ],
+      "glosa": "Tasas de evaluación de fútbol base"
+    },
+    {
+      "label": "Auxílio custos operacionais",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.033
+      ],
+      "glosa": "Ayudas para costes operativos"
+    },
+    {
+      "label": "Estacionamentos",
+      "lado": "revenue",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.015
+      ],
+      "glosa": "Estacionamientos"
+    },
+    {
+      "label": "Perdas na venda de ativos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Outras receitas, líquidas\"",
+      "values": [
+        0.356
+      ],
+      "glosa": "Pérdidas en la venta de activos"
+    },
+    {
+      "label": "Amortização de direitos sobre atletas (i)",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        12.077
+      ],
+      "glosa": "Amortización de derechos sobre futbolistas (i)"
+    },
+    {
+      "label": "Premiações (ii)",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        6.676
+      ],
+      "glosa": "Primas (ii)"
+    },
+    {
+      "label": "Salários, encargos e benefícios",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        6.076
+      ],
+      "glosa": "Sueldos, cargas sociales y beneficios"
+    },
+    {
+      "label": "Gastos com jogos e competições",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        5.898
+      ],
+      "glosa": "Gastos de partidos y competiciones"
+    },
+    {
+      "label": "Despesas com transações de atletas",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        2.686
+      ],
+      "glosa": "Gastos en transacciones de futbolistas"
+    },
+    {
+      "label": "Rescisões",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        0.89
+      ],
+      "glosa": "Indemnizaciones por rescisión"
+    },
+    {
+      "label": "Perdas esperadas com processos trabalhistas",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        0.681
+      ],
+      "glosa": "Pérdidas esperadas en litigios laborales"
+    },
+    {
+      "label": "Direito de imagem",
+      "lado": "expense",
+      "page": 54,
+      "section": "nota que desglosa \"Custo das atividades sociais e esportivas\"",
+      "values": [
+        0.535
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Salários, encargos e benefícios",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com pessoal\"",
+      "values": [
+        1.708
+      ],
+      "glosa": "Sueldos, cargas sociales y beneficios"
+    },
+    {
+      "label": "Férias e encargos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com pessoal\"",
+      "values": [
+        0.942
+      ],
+      "glosa": "Vacaciones y cargas sociales"
+    },
+    {
+      "label": "13º salário e encargos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com pessoal\"",
+      "values": [
+        0.578
+      ],
+      "glosa": "Paga extraordinaria y cargas sociales"
+    },
+    {
+      "label": "Rescisões",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com pessoal\"",
+      "values": [
+        0.016
+      ],
+      "glosa": "Indemnizaciones por rescisión"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        3.713
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Uso e consumo",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        2.717
+      ],
+      "glosa": "Material de uso y consumo"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.813
+      ],
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Esportes olímpicos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.774
+      ],
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "Publicidades",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.767
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Manutenções de ativos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.743
+      ],
+      "glosa": "Mantenimiento de activos"
+    },
+    {
+      "label": "Gastos administrativos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.73
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Honorários jurídicos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.686
+      ],
+      "glosa": "Honorarios jurídicos"
+    },
+    {
+      "label": "Taxas associativas",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.556
+      ],
+      "glosa": "Tasas asociativas"
+    },
+    {
+      "label": "Multas contratuais",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.435
+      ],
+      "glosa": "Multas contractuales"
+    },
+    {
+      "label": "Reembolsos",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.325
+      ],
+      "glosa": "Reembolsos"
+    },
+    {
+      "label": "Tecnologia da informação",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.093
+      ],
+      "glosa": "Tecnología de la información"
+    },
+    {
+      "label": "Despesas com transporte",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.082
+      ],
+      "glosa": "Gastos de transporte"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.077
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Impostos estaduais",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.069
+      ],
+      "glosa": "Impuestos estatales"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.063
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Honorários contábeis",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.061
+      ],
+      "glosa": "Honorarios contables"
+    },
+    {
+      "label": "Impostos municipais",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.013
+      ],
+      "glosa": "Impuestos municipales"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 55,
+      "section": "nota que desglosa \"Despesas com atividades gerais\"",
+      "values": [
+        0.014
+      ],
+      "glosa": "Otros"
+    }
+  ]
 }

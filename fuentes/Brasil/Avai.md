@@ -42,3 +42,5 @@
   trimestrales si se quiere detalle intra-anual; OCR del PDF de 2022.
 - Contacto: avai.com.br/clube/transparencia/ (PDFs en avai.com.br/wp-content/uploads/<año>/<mes>/).
 - Último chequeo: 2026-09-22.
+
+Color de marca: #0040CF — pt.wikipedia (Avaí Futebol Clube: "cores o azul e o branco"; plantilla de camiseta corpo1=0040CF), escudo de rayas azul y blanco coincide (azul), verificado 2026-10-09

@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Brasil/Remo/dre-2019.md",
+  "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+  "club": "remo",
+  "year": null,
+  "generatedAt": "2026-10-09T23:23:30.173Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "(+) Receita Bruta Operacional",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        17.903353
+      ],
+      "glosa": "(+) Ingresos brutos de explotación"
+    },
+    {
+      "label": "Receita De Atividades Esportivas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        17.903353
+      ],
+      "glosa": "Ingresos por actividades deportivas"
+    },
+    {
+      "label": "(=) Receita Líquida",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        17.903353
+      ],
+      "glosa": "(=) Ingresos netos"
+    },
+    {
+      "label": "(-) Despesas Operacionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        20.911643
+      ],
+      "glosa": "(-) Gastos de explotación"
+    }
+  ]
+}

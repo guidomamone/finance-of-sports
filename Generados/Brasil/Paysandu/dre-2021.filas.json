@@ -1,0 +1,447 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2021.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2021.md",
+ "mdSha1": "7c5561e2b67580a0dfd68ccc5f009a028276463b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:09:04.127Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L9: (Em Reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Futebol Profissional",
+   "actual": "10.868.442",
+   "anterior": "8.586.242",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Futebol de Base",
+   "actual": "915.430",
+   "anterior": "1.168.977",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Esportes Olímpicos",
+   "actual": "260.353",
+   "anterior": "147.352",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Sócio Torcedor",
+   "actual": "1.176.437",
+   "anterior": "1.536.546",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Sócio Proprietário",
+   "actual": "320.840",
+   "anterior": "295.727",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Doações",
+   "actual": "3.432.310",
+   "anterior": "4.475.267",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Royalties e Franquias",
+   "actual": "1.753.659",
+   "anterior": "2.309.743",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Outras receita",
+   "actual": "272.893",
+   "anterior": "907.460",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Aluguel",
+   "actual": "217.450",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Receita com Gratuidades",
+   "actual": "3.182.285",
+   "anterior": "2.881.285",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Recuperação de Receitas",
+   "actual": "-",
+   "anterior": "1.694.702",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "(-) Deduções da Receita do Futebol",
+   "actual": "(423.691)",
+   "anterior": "(307.008)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "",
+   "actual": "21.976.408",
+   "anterior": "23.696.294",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "Lojas Lobo",
+   "actual": "-",
+   "anterior": "1.038.680",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "(-) Deduções da Receita de Venda",
+   "actual": "-",
+   "anterior": "(344.472)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 30,
+   "etiqueta": "",
+   "actual": "-",
+   "anterior": "694.208",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "Receita Bruta",
+   "actual": "21.976.408",
+   "anterior": "24.390.502",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "Custo com Pessoal",
+   "actual": "(10.352.810)",
+   "anterior": "(5.120.679)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "CMV",
+   "actual": "",
+   "anterior": "(198.001)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "Custo com Pessoal",
+   "actual": "",
+   "anterior": "(322.247)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 37,
+   "etiqueta": "",
+   "actual": "",
+   "anterior": "(520.248)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 38,
+   "etiqueta": "Lucro Bruto",
+   "actual": "11.623.597",
+   "anterior": "18.749.576",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 40,
+   "etiqueta": "Despesa com Pessoal",
+   "actual": "(2.142.472)",
+   "anterior": "(1.713.363)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 41,
+   "etiqueta": "Gerais e Administrativas",
+   "actual": "(5.802.959)",
+   "anterior": "(7.993.946)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 42,
+   "etiqueta": "Despesas com Gratuidades",
+   "actual": "(3.182.285)",
+   "anterior": "(2.881.285)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 43,
+   "etiqueta": "Depreciação/Amortização",
+   "actual": "(287.647)",
+   "anterior": "(277.066)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 44,
+   "etiqueta": "Perdas Constituídas",
+   "actual": "(5.000)",
+   "anterior": "(3.174.432)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 45,
+   "etiqueta": "PECLD",
+   "actual": "(1.911.802)",
+   "anterior": "(5.644.155)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 46,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "(3.463)",
+   "anterior": "(24.511)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 47,
+   "etiqueta": "",
+   "actual": "(13.335.628)",
+   "anterior": "(21.708.758)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 49,
+   "etiqueta": "Gerais e Administrativas",
+   "actual": "(33.061)",
+   "anterior": "(164.969)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 50,
+   "etiqueta": "Depreciação/Amortização",
+   "actual": "(880)",
+   "anterior": "(880)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 51,
+   "etiqueta": "PECLD",
+   "actual": "(90.646)",
+   "anterior": "(1.519.138)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 52,
+   "etiqueta": "Outras Despesas com Vendas",
+   "actual": "-",
+   "anterior": "(67.506)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 54,
+   "etiqueta": "",
+   "actual": "(124.587)",
+   "anterior": "(1.773.303)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 55,
+   "etiqueta": "Resultado operacional antes das despesas financeiras líquidas",
+   "actual": "(1.836.617)",
+   "anterior": "(4.732.486)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 57,
+   "etiqueta": "Receitas financeiras",
+   "actual": "95",
+   "anterior": "439.278",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 58,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(179.393)",
+   "anterior": "(2.178.420)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 59,
+   "etiqueta": "Receitas financeiras líquidas",
+   "actual": "(179.297)",
+   "anterior": "(1.739.142)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 60,
+   "etiqueta": "Superávit (Déficit) do exercício",
+   "actual": "(2.015.915)",
+   "anterior": "(6.471.628)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 31,
+  "actual": "21.976.408"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 60,
+  "actual": "(2.015.915)",
+  "anterior": "(6.471.628)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera la fila sin etiqueta de L53 ('-' / (20.811)), que no cuadra como subtotal de Despesas Venda?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "",
+   "texto": "L53 es una fila en negrita sin etiqueta cuyo importe 2020 (20.811) no corresponde a ninguna suma visible; el subtotal real parece ser L54.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reales sin notas de desglose. Subtotales sin etiqueta en L26, L30, L37, L47, L54. Costos de vendas (L35-L37) no tienen importe en 2021. No hay impuesto a las ganancias impreso. Total de gastos no impreso."
+}

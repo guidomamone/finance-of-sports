@@ -7,3 +7,5 @@
 - **No se encontró** balance/resultados/flujo propios en ningún año; agregadores (`zvitnist.com`, `clarity-project.info`) muestran cifras (ingresos 2025 ~282,9 M UAH) de las declaraciones a Держстат, que no tienen PDF público.
 - **Pendiente**: 2019 (`wp-content/uploads/2020/04/Звіт-аудитора-та_фін.-інформаця-за-2019-рік.pdf`, captura `20200929001101`) y 2020 (`wp-content/uploads/2021/04/Фінансовий-звіт-за-2020-р..pdf` captura `20210514102317`; `uploads/organization/fiansovii-zvit-za-2020-r-1.pdf` captura `20220128185113`): las capturas bajaron truncadas a 1.048.576 bytes y se descartaron. La CDX dice 1.033.535 bytes comprimidos para la de 2020: reintentar con otra captura cuando archive.org vuelva. 2021 no apareció en el sitio ni en Wayback.
 - Último chequeo: 2026-10-03.
+
+Color de marca: null — blanco y negro (en.wikipedia; escudo en negro sobre blanco), sin hex de fuente y el blanco no sirve de acento, verificado 2026-10-09

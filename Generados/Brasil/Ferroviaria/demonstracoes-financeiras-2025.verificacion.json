@@ -1,0 +1,399 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-09T23:23:29.946Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.pdf",
+   "campo": "name",
+   "valor": "Ferroviária S.A.F.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)",
+   "evidencia": "demonstracoes-financeiras-2025.md (FERROVIARIA S.A.F.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "total bruto 51.617178 cierra con los renglones de signo normal; 1 deducción(es) restan aparte (-3.481046)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 31.503023 en demonstracoes-financeiras-2024.pdf y 31.503023 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrativas e gerais\" no suma el renglón (2.914949 contra 3.645881, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: El estado b5 trae columnas por segmento además de los totales 2025/2024; los segmentos no abren renglones nuevos, solo reparten los mismos importes.",
+  "duda de extraer que no afecta la carga: L909 muestra 52.990 sin paréntesis en una nota de costos, signo inusual aunque el total L916 cuadra con él positivo.",
+  "duda de extraer que no afecta la carga: L916 imprime 32.752.704 sin paréntesis mientras L208 lo muestra negativo; probable error de impresión.",
+  "duda de extraer que no afecta la carga: El estado de resultados b5/b6 viene abierto por segmentos; se extrajo la columna Total 2025 por ser el estado mismo."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrativas e gerais",
+   "suma": 2.914949,
+   "objetivo": 3.645881
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrativas e gerais",
+   "suma": 2.914949,
+   "objetivo": 3.645881
+  }
+ ],
+ "totales": {
+  "ingresos": 48.136132,
+  "gastos": 62.863305,
+  "financiero": -0.522247,
+  "impuesto": 0,
+  "resultadoImpreso": -15.24942,
+  "resultadoParaCargar": -15.24942,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 10.868006,
+   "pagina": 7,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 19.398966,
+   "pagina": 7,
+   "linea": 194,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direito de gestão comercial da arena",
+   "lado": "ingreso",
+   "M": 3.75,
+   "pagina": 7,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Timemania",
+   "lado": "ingreso",
+   "M": 2.062659,
+   "pagina": 7,
+   "linea": 196,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Auxílio financeiro",
+   "lado": "ingreso",
+   "M": 4.205103,
+   "pagina": 7,
+   "linea": 197,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Arrecadação de jogos",
+   "lado": "ingreso",
+   "M": 0.143336,
+   "pagina": 7,
+   "linea": 198,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cessão temporária dos atletas",
+   "lado": "ingreso",
+   "M": 4.37511,
+   "pagina": 7,
+   "linea": 199,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Negociação de atletas",
+   "lado": "ingreso",
+   "M": 4.3,
+   "pagina": 7,
+   "linea": 200,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio torcedor",
+   "lado": "ingreso",
+   "M": 0.201856,
+   "pagina": 7,
+   "linea": 201,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "ingreso",
+   "M": 1.497,
+   "pagina": 7,
+   "linea": 202,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.815142,
+   "pagina": 7,
+   "linea": 203,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos incidentes sobre a receita",
+   "lado": "ingreso",
+   "M": -3.481046,
+   "pagina": 7,
+   "linea": 206,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 21.144215,
+   "pagina": 25,
+   "linea": 898,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Direito de uso de imagem",
+   "lado": "gasto",
+   "M": 15.081833,
+   "pagina": 25,
+   "linea": 899,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "gasto",
+   "M": 2.565067,
+   "pagina": 25,
+   "linea": 900,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Viagens e hospedagens",
+   "lado": "gasto",
+   "M": 2.265897,
+   "pagina": 25,
+   "linea": 901,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Com jogos",
+   "lado": "gasto",
+   "M": 2.028162,
+   "pagina": 25,
+   "linea": 902,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Com refeições",
+   "lado": "gasto",
+   "M": 0.543584,
+   "pagina": 25,
+   "linea": 903,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 2.152973,
+   "pagina": 25,
+   "linea": 904,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Taxas de federação e confederação",
+   "lado": "gasto",
+   "M": 0.191408,
+   "pagina": 25,
+   "linea": 905,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Agenciamento de atletas",
+   "lado": "gasto",
+   "M": 1.345568,
+   "pagina": 25,
+   "linea": 906,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Manutenção e conservação",
+   "lado": "gasto",
+   "M": 0.140431,
+   "pagina": 25,
+   "linea": 907,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Moradia",
+   "lado": "gasto",
+   "M": 0.254096,
+   "pagina": 25,
+   "linea": 908,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Mercadorias vendidas",
+   "lado": "gasto",
+   "M": -0.05299,
+   "pagina": 25,
+   "linea": 909,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Com atletas (empréstimos, luvas etc.)",
+   "lado": "gasto",
+   "M": 1.00573,
+   "pagina": 25,
+   "linea": 910,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Comissão",
+   "lado": "gasto",
+   "M": 0.302405,
+   "pagina": 25,
+   "linea": 911,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Material esportivo",
+   "lado": "gasto",
+   "M": 0.28083,
+   "pagina": 25,
+   "linea": 912,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Amortização de atletas formados",
+   "lado": "gasto",
+   "M": 0.139314,
+   "pagina": 25,
+   "linea": 913,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Outros custos",
+   "lado": "gasto",
+   "M": 0.289399,
+   "pagina": 25,
+   "linea": 915,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Administrativas e gerais",
+   "lado": "gasto",
+   "M": 3.645881,
+   "pagina": 8,
+   "linea": 234,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 1.824151,
+   "pagina": 8,
+   "linea": 235,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com atletas não profissionais",
+   "lado": "gasto",
+   "M": 4.535951,
+   "pagina": 8,
+   "linea": 236,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com materiais",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 8,
+   "linea": 237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.799397,
+   "pagina": 8,
+   "linea": 238,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tributária",
+   "lado": "gasto",
+   "M": 1.314638,
+   "pagina": 8,
+   "linea": 239,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras despesas",
+   "lado": "gasto",
+   "M": 1.065365,
+   "pagina": 8,
+   "linea": 240,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita financeira",
+   "M": 0.107707,
+   "linea": 243
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.629954,
+   "linea": 244
+  }
+ ],
+ "impuesto": []
+}

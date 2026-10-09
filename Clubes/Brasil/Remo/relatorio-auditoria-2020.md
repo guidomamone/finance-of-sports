@@ -126,310 +126,196 @@ Contador CRC-PA nº 13.605/O-6
 
 --- pág. 7 ---
 
-## Balanço Patrimonial
-
-Licenciado para: CLUBE DO REMO
-
-Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
-
+**Balanço Patrimonial**
 Folha: 1
-
+Licenciado para: CLUBE DO REMO
 DIEGO
+Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
+Fortes Contábil 6.179.0
 
-Fortes Contábil 6.179,0
+| Conta | 31/12/2020 |
+| :--- | :--- |
+| *** Ativo *** | 39.433.055,31 D |
+| Ativo Circulante | 4.681.549,52 D |
+| Disponibilidades | 1.585.173,42 D |
+| Caixa | 336.553,30 D |
+| Bancos | 8.249,49 D |
+| Contas a receber | 1.240.370,63 D |
+| Créditos a Receber | 3.096.376,10 D |
+| Créditos a Receber | 3.096.376,10 D |
+| Ativo não Circulante | 34.751.505,79 D |
+| Imobilizado | 34.751.505,79 D |
+| Bens em Operação | 47.418.218,00 D |
+| (-) Depreciações, Amortizações e Quotas de Exaustão | 12.666.712,21 C |
+| *** Passivo *** | 39.433.055,31 C |
+| Passivo Circulante | 17.988.757,79 C |
+| Passivo Circulante | 17.988.757,79 C |
+| Obrigações de Curto Prazo | 1.166.391,03 C |
+| Obrigações Trabalhistas, Previdenciárias e Fiscais | 12.266.459,13 C |
+| Empréstimos e Financiamentos | 4.211.051,14 C |
+| Antecipação | 303.417,88 C |
+| Outras Contas | 7.290,37 C |
+| Provisões | 34.148,24 C |
+| Passivo não Circulante | 15.204.247,15 C |
+| Obrigações de Longo Prazo | 15.204.247,15 C |
+| Obrigações a Longo Prazo | 15.204.247,15 C |
+| Patrimônio Social | 6.240.050,37 C |
+| Patrimônio Social | 46.400.099,95 C |
+| Patrimônio Social | 46.400.099,95 C |
+| Resultado Acumulado | 40.160.049,58 D |
+| Resultado de Exercícios | 40.160.049,58 D |
 
-|  Conta | 31/12/2020  |
-| --- | --- |
-|  *** Ativo *** | 39.433.055,31 D  |
-|  Ativo Circulante | 4.681.549,52 D  |
-|  Disponibilidades | 1.585.173,42 D  |
-|  Caixa | 336.553,30 D  |
-|  Bancos | 8.249,49 D  |
-|  Contas a receber | 1.240.370,63 D  |
-|  Créditos a Receber | 3.096.376,10 D  |
-|  Créditos a Receber | 3.096.376,10 D  |
-|  Ativo não Circulante | 34.751.505,79 D  |
-|  Imobilizado | 34.751.505,79 D  |
-|  Bens em Operação | 47.418.218,00 D  |
-|  (-) Depreciações, Amortizações e Quotas de Exaustão | 12.666.712,21 C  |
-|  *** Passivo *** | 39.433.055,31 C  |
-|  Passivo Circulante | 17.988.757,79 C  |
-|  Passivo Circulante | 17.988.757,79 C  |
-|  Obrigações de Curto Prazo | 1.166.391,03 C  |
-|  Obrigações Trabalhistas, Previdenciárias e Fiscais | 12.266.459,13 C  |
-|  Empréstimos e Financiamentos | 4.211.051,14 C  |
-|  Antecipação | 303.417,88 C  |
-|  Outras Contas | 7.290,37 C  |
-|  Provisões | 34.148,24 C  |
-|  Passivo não Circulante | 15.204.247,15 C  |
-|  Obrigações de Longo Prazo | 15.204.247,15 C  |
-|  Obrigações a Longo Prazo | 15.204.247,15 C  |
-|  Patrimônio Social | 6.240.050,37 C  |
-|  Patrimônio Social | 46.400.099,95 C  |
-|  Patrimônio Social | 46.400.099,95 C  |
-|  Resultado Acumulado | 40.160.049,58 D  |
-|  Resultado de Exercícios | 40.160.049,58 D  |
+Data de Encerramento: 31/12/2020  
+Valor de Ativo e Passivo: R$ 39.433.055,31 (Trinta e Nove Milhões Quatrocentos e Trinta e Três Mil e Cinqüenta e Cinco Reais e Trinta e Um Centavos).
 
-Data de Encerramento: 31/12/2020
+FABIO OSORIO BENTES:60009330291  
+Assinado de forma digital por FABIO OSORIO BENTES:60009330291  
+Dados: 2022.02.17 15:17:56 -03'00'
 
-Valor de Ativo e Passivo: R$ 39.433.055,31 (Trinta e Nove Milhões Quatrocentos e Trinta e Três Mil e Cinquenta e Cinco Reais e Trinta e Um Centavos) .
-
-FABIO
-OSORIO
-BENTES/60
-009330291
-
-IAN BLOIS
-PINHEIRO:93304102272
-
-Assinado de forma digital por IAN
-BLOIS PINHEIRO:93304102272
-Dados: 2022.03.17 13:49:04 -03'00'
+IAN BLOIS PINHEIRO:93304102272  
+Assinado de forma digital por IAN BLOIS PINHEIRO:93304102272  
+Dados: 2022.02.17 13:45:04 -03'00'
 
 --- pág. 8 ---
 
-# Demonstração do Resultado do Exercício
-
+**Demonstração do Resultado do Exercício**
+Folha: 1
 Licenciado para: CLUBE DO REMO
-
+DIEGO
 Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
-
+Fortes Contábil 6.179.0
 Estabelecimentos: 0001 - MATRIZ; Centros de Resultado: Todos
 
-Folha: 1
+| Conta | 01/01/2020 a 31/12/2020 |
+| :--- | :--- |
+| (+) Receita Bruta Operacional | 12.351.668,08 |
+| Receita De Atividades Esportivas | 12.351.668,08 |
+| (-) Custos das Atividades Esportivas | 7.548.640,50 |
+| Custos das Atividades Esportivas | 7.548.640,50 |
+| (=) Receita Líquida | 4.803.027,58 |
+| (=) Lucro Bruto | 4.803.027,58 |
+| (-) Despesas Operacionais | 4.943.560,99 |
+| Despesas Operacionais | 4.555.340,59 |
+| Resultado Financeiro | 194.092,83 |
+| (-) Despesas c/ drepreciação/amortização | (1.923.969,31) |
+| Despesas c/ drepreciação/amortização | (1.923.969,31) |
+| (=) Res. Antes das Participações e Contrib. | (2.064.502,72) |
+| (=) Res. Antes Imp.Renda e Contrib. Social | (2.064.502,72) |
+| (=) Resultado Líquido do Exercício | (2.064.502,72) |
 
-DIEGO
-
-Fortes Contábil 6.179,0
-
-Conta
-
-01/01/2020
-
-a
-
-31/12/2020
-
-|  (+) Receita Bruta Operacional | 12.351.668,08  |
-| --- | --- |
-|  Receita De Atividades Esportivas | 12.351.668,08  |
-|  (-) Custos das Atividades Esportivas | 7.548.640,50  |
-|  Custos das Atividades Esportivas | 7.548.640,50  |
-|  (=) Receita Líquida | 4.803.027,58  |
-|  (=) Lucro Bruto | 4.803.027,58  |
-|  (-) Despesas Operacionais | 4.943.560,99  |
-|  Despesas Operacionais | 4.555.340,59  |
-|  Resultado Financeiro | 194.092,83  |
-|  (-) Despesas c/ depreciação/amortização | (1.923.969,31)  |
-|  Despesas c/ depreciação/amortização | (1.923.969,31)  |
-|  (=) Res. Antes das Participações e Contrib. | (2.064.502,72)  |
-|  (=) Res. Antes Imp.Renda e Contrib. Social | (2.064.502,72)  |
-|  (=) Resultado Líquido do Exercício | (2.064.502,72)  |
-
-FABIO OSORIO
-
-BENTES:6000933029
-
-Assinado de forma digital por
-
-FABIO OSORIO
-
-BENTES:6000933029
+FABIO OSORIO BENTES:60009330291  
+Assinado de forma digital por FABIO OSORIO BENTES:60009330291  
 Dados: 2022.02.17 15:11:42 -03'00'
 
-IAN BLOIS
-
-PINHEIRO:93304102272
-
-Assinado de forma digital por IAN
-
-BLOIS PINHEIRO:93304102272
-
-Dados: 2022.02.17 13:43:05 -03'00'
+IAN BLOIS PINHEIRO:93304102272  
+Assinado de forma digital por IAN BLOIS PINHEIRO:93304102272  
+Dados: 2022.02.17 13:43:55 -03'00'
 
 --- pág. 9 ---
 
-# DRA - Demonstração de Resultado Abrangente
-
+**DRA - Demonstração de Resultado Abrangente**
+Folha: 1
 Licenciado para: CLUBE DO REMO
-
+DIEGO
 Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
-
+Fortes Contábil 6.179.0
 Visualizando DRA no Período: 01/01/2020 à 31/12/2020
 
-Folha: 1
+| | Capital Social Integralizado | Reserva de Capital, Opções outorgadas e Ações e Tesouraria | Reserva de Lucros | Outros Resultados Abrangentes | Patrimônio Líquido Consolidado | Demonstração do Resultado Abrangente Total da Companhia | Totais |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Aumento de Capital | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Gasto com Emissão de Ações | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Opções Outorgadas Reconhecidas | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Ações em Tesouraria Adquirida | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Ações em Tesouraria Vendidas | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Dividendos | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Transações de Capital com os Sócios | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Tributos s/ Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Equiv. Patrim. s/ Ganhos Abrang. de Coligadas | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Ajuste de Conversão do Período | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Tributo s/ Ajuste de Conversão do Período | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Outros Resultados Abrangentes | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Ajustes de Instrum. Financ. Reclassificação p/ Resultado | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Realização da Reserva de Reavaliação | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Tributos Sobre a Realização da Reserva de Reavaliação | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| Reclassificação de Resultados Abrangentes | 0,00 | 0,00 | 0,00 | | 0,00 | | 0,00 |
+| **Saldos Finais** | **0,00** | **0,00** | **0,00** | | **0,00** | | **0,00** |
 
-DIEGO
+FABIO OSORIO BENTES:60009330291  
+Assinado de forma digital por FABIO OSORIO BENTES:60009330291  
+Dados: 2022.02.17 15:15:43 -03'00'
 
-Fortes Contábil 6.179,0
-
-|   | Capital Social Integralizado | Reserva de Capital - Opções outorgadas e Ações e Tesouraria | Reserva de Lucros | Outros Resultados Abrangentes | Patrimonio - Líquido Consolidado | Demonstração do Resultado Abrangente Total da Companhia | Totais  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Aumento de Capital | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Dados com Emissão de Ações | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Opções Outorgadas Reconhecidas | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Ações em Tesouraria Adquirida | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Ações em Tesouraria Vendidas | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Dividendos | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Transações de Capital com os Socios | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Tributos s/ Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Equív. Patrim. s/ Ganhos Abrang. de Cotigadas | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Ajuste de Convenção do Período | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Tributo s/ Ajuste de Convenção do Período | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Outros Resultados Abrangentes | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Ajustes de Instrum. Financ. Reclassificação p/ Resultado | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Realização da Reserva de Reavaliação | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Tributos Sobre a Realização da Reserva de Reavaliação | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Reclassificação de Resultados Abrangentes | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-|  Seídos Finais | 0,00 | 0,00 | 0,00 |  | 0,00 |  | 0,00  |
-
-FABIO
-
-OSORIO
-
-BENTES:60
-
-009330291
-
-Assinado de forma
-
-digital por FABIO
-
-OSORIO
-
-BENTES:600093302
-
-91 -
-
-Dados: 2022.02.17
-
-15:15:43 -03'00'
-
-IAN BLOIS
-
-PINHEIRO:9
-
-3304102272
-
-Assinado de forma
-
-digital por IAN BLOIS
-
-PINHEIRO:93304102272
-
-Dados: 2022.02.17
-
-13:45:41 -03'00'
+IAN BLOIS PINHEIRO:93304102272  
+Assinado de forma digital por IAN BLOIS PINHEIRO:93304102272  
+Dados: 2022.02.17 13:45:41 -03'00'
 
 --- pág. 10 ---
 
-# DMPL - Demonstração das Mutações do Patrimônio Líquido
-
+**DMPL - Demonstração das Mutações do Patrimônio Líquido**
 Licenciado para: CLUBE DO REMO
-
 Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
-
 Visualizando DMPL no Período: 01/01/2020 à 31/12/2020
 
-|   | Patrimônio Social | Reserva de Capital, Opções outorgadas e Ações e Tesouraria | Reserva de Lucros | (-) Déficit Acumulados | Outros Resultados Abrangentes | Patrimônio Líquido dos Sócios da Controladora | Participação dos Não Controladores no Pat. Líq. das Controladas | Totais  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Saldos Iniciais | 46.400.090,90 | 0,00 | 0,00 | (31.011.104) | 0,00 | 0,00 | 0,00 | 14.588.996,13  |
-|  Demonstração das mutações do Patrimônio Líquido | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Ajustes de Exercícios Anteriores | 0,00 | 0,00 | 0,00 | 10,00 | 0,00 | 0,00 | 0,00 | 10,00  |
-|  Aumento de Capital | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Gasto com Emissão de Ações | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Opções Outorgadas Reconhecidas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Ações em Tesouraria Adquirida | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Ações em Tesouraria Vendidas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Dividendos | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Transações de Capital com os Sócios | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Tributos e/ Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Deficit do Exercício 2019 | 0,00 | 0,00 | 0,00 | (0.340.946) | 0,00 | 0,00 | 0,00 | (0.340.946)  |
-|  Lucro Líquido do Período | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Constituição de Reservas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00  |
-|  Saldos Finais | 46.400.090,90 | 0,00 | 0,00 | (40.160.050) | 0,00 | 0,00 | 0,00 | 9.240.030,37  |
+| | Patrimônio Social | Reserva de Capital, Opções outorgadas e Ações e Tesouraria | Reserva de Lucros | (-) Déficits Acumulados | Outros Resultados Abrangentes | Patrimônio Líquido dos Sócios da Controladora | Participacao dos Não Controladores no Pat. Liq. das Controladas | Totais |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Saldos Iniciais** | **46.400.099,95** | **0,00** | **0,00** | **(31.811.104)** | **0,00** | **0,00** | **0,00** | **14.588.996,13** |
+| Demonstração das mutações do Patrimônio Líquido | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Ajustes de Exercícios Anteriores | 0,00 | 0,00 | 0,00 | 10,00 | 0,00 | 0,00 | 0,00 | 10,00 |
+| Aumento de Capital | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Gasto com Emissão de Ações | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Opções Outorgadas Reconhecidas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Ações em Tesouraria Adquirida | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Ações em Tesouraria Vendidas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Dividendos | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Transações de Capital com os Sócios | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Tributos s/ Ajustes Instrumentos Financeiros | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Déficit do Exercício 2019 | 0,00 | 0,00 | 0,00 | (8.348.946) | 0,00 | 0,00 | 0,00 | (8.348.946) |
+| Lucro Líquido do Período | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| Constituição de Reservas | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |
+| **Saldos Finais** | **46.400.099,95** | **0,00** | **0,00** | **(40.160.050)** | **0,00** | **0,00** | **0,00** | **6.240.050,37** |
 
-FABIO
+FABIO OSORIO BENTES:60009330291  
+Assinado de forma digital por FABIO OSORIO BENTES:60009330291  
+Dados: 2022.02.17 15:17:34 -03'00'
 
-OSORIO
-
-BENTES:60
-
-009330291
-
-Assinado de forma
-
-digital por FABIO OSORIO
-
-BENTES:60009330
-
-Dados: 2022.02.17 13:17:34 -03'00'
-
-IAN BLOIS
-
-PINHEIRO:93
-
-304102272
-
-Assinado de forma
-
-digital por IAN BLOIS
-
-PINHEIRO:93304102272
-
-Dados: 2022.02.17
-
-13:46:08 -03'00'
+IAN BLOIS PINHEIRO:93304102272  
+Assinado de forma digital por IAN BLOIS PINHEIRO:93304102272  
+Dados: 2022.02.17 13:46:08 -03'00'
 
 --- pág. 11 ---
 
-# DFC - Método Direto
-
-Licenciado para: CLUBE DO REMO
-
-Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
-
+**DFC - Método Direto**
 Folha: 1
-
+Licenciado para: CLUBE DO REMO
 DIEGO
+Empresa: CLUBE DO REMO 2018/2020 Presidente Fabio Bentes - CNPJ: 04.887.097/0001-57
+Fortes Contábil 6.176.0
 
-Fortes Contábil 6.176,0
+Saldo Anterior: 351.275,47
 
-Saldo Anterior:
+**Atividades Operacionais**
+Recebimentos: 6.555.960,27
+Caixa Líquido das Atividades Operacionais: 6555960,27
 
-351.275,47
+**Atividades de Investimento**
+Bens em Operação: 670.665,18
+Caixa Líquido das Atividades de Investimento: -670665,18
 
-Atividades Operacionais
+**Atividades Financiamento**
+Emprestimos Contraidos: 445.227,31
+Caixa Líquido das Atividades Financiamento: 445227,31
 
-|  Recebimentos | 6.555.960,27  |
-| --- | --- |
-|  Caixa Líquido das Atividades Operacionais | 6555960,27  |
+Saldo Final: 344.802,79
 
-Atividades de Investimento
-
-|  Bens em Operação | 670.665,18  |
-| --- | --- |
-|  Caixa Líquido das Atividades de Investimento | -670665,18  |
-
-Atividades Financiamento
-
-|  Empréstimos Contrazidos | 445.227,31  |
-| --- | --- |
-|  Caixa Líquido das Atividades Financiamento | 445227,31  |
-
-Saldo Final:
-
-344.802,79
-
-FABIO OSORIO BENTES:60009 330291
-Assinado de forma digital por FABIO OSORIO BENTES:60009330291
+FABIO OSORIO BENTES:60009330291  
+Assinado de forma digital por FABIO OSORIO BENTES:60009330291  
 Dados: 2022.02.17 15:17:18 -03'00'
 
-IAN BLOIS PINHEIRO:933 04102272
-Assinado de forma digital por IAN BLOIS PINHEIRO:933041022272
-Dados: 2022.02.17 13:47:01 -03'00'
+IAN BLOIS PINHEIRO:93304102272  
+Assinado de forma digital por IAN BLOIS PINHEIRO:93304102272  
+Dados: 2022.02.17 13:47:05 -03'00'
 
 --- pág. 12 ---
 

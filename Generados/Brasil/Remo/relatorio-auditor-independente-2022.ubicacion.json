@@ -1,0 +1,243 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
+ "mdSha1": "8719af1c6b31376505e68648caacd5d6526fdda9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:12:19.920Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    209,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    238,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    279,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    331,
+    338
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    355,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    402,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    575,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    584,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    612,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    784,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    809,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    843,
+    849
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    853,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    863,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    872,
+    873
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    886,
+    892
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    894,
+    901
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    907,
+    914
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    933,
+    936
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    942,
+    948
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    954,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    972,
+    974
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    980,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 30,
+   "lineas": [
+    1022,
+    1031
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    1036,
+    1041
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3",
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b23"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em Reais, exceto quando indicado de outra forma)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2022",
+ "columna_anterior": "31/12/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La tabla b22 ('Manutenção' / Total, pág. 29) es la continuación de la nota 12 de Despesas Operacionais (b21)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Manutenção",
+   "texto": "b22 empieza con 'Manutenção' y 'Total' en la página siguiente a b21, sin título propio.",
+   "bloques": [
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Demonstração do resultado en b3 (pág. 11), que continúa en b4 (pág. 12) hasta el Superávit/(Déficit) do exercício. La fila 'Despesa com direito de imagem' de b4 quedó transcrita como encabezado. Nota 12 Despesas Operacionais: b21+b22. Nota 13 Receitas Operacionais: b23. Entidad individual: Clube do Remo."
+}

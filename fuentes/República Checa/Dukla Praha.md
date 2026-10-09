@@ -25,3 +25,5 @@ Los 26 PDF confirmados `PDF document` real. Tamaños entre 156 KB y 13,8 MB.
   antes de asumir definitivo.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #800010 — infobox de en.wikipedia (kit local, cuerpo bordó con mangas amarillas; colores rojo y amarillo según cs.wikipedia, que da #8B0000), verificado 2026-10-09. Rojo/amarillo no tiene predominio explícito: el escudo es bordó con letras amarillas.

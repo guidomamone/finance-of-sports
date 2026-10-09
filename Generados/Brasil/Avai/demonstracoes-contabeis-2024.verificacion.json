@@ -1,0 +1,631 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2024.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2024.md",
+ "generado": "2026-10-09T23:23:27.911Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "8a44d7e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "57.822 = 57.822"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 57.822 en este documento y 57.822 en demonstracoes-contabeis-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 133.342 en demonstracoes-contabeis-2023.pdf y 132.504 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Receita LFU\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Receceita negociação Atletas Profissionais\" no suma el renglón (16.948 contra 8.474, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Deságio Recuperação Judicial\" no suma el renglón (39.376 contra 19.688, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: Diferencia de 2.000 en el año anterior entre L222/L1359 (92.510) y L1438 (90.510).",
+  "duda de extraer que no afecta la carga: L229 (34.959) = Despesa Financeira L1503 (2.755) + Atualização L1510 (32.204), pero la nota la presenta fuera del subtotal Despesa Financeira."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Receceita negociação Atletas Profissionais",
+   "suma": 16.948,
+   "objetivo": 8.474
+  },
+  {
+   "renglon": "Deságio Recuperação Judicial",
+   "suma": 39.376,
+   "objetivo": 19.688
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Receceita negociação Atletas Profissionais",
+   "suma": 16.948,
+   "objetivo": 8.474
+  },
+  {
+   "renglon": "Deságio Recuperação Judicial",
+   "suma": 39.376,
+   "objetivo": 19.688
+  }
+ ],
+ "totales": {
+  "ingresos": 57.822,
+  "gastos": 91.848,
+  "financiero": -34.705,
+  "impuesto": 0,
+  "resultadoImpreso": -68.731,
+  "resultadoParaCargar": -68.731,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Mensalidades dos Sócios",
+   "lado": "ingreso",
+   "M": 7.392,
+   "pagina": 36,
+   "linea": 1342,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Bilheteria",
+   "lado": "ingreso",
+   "M": 2.303,
+   "pagina": 36,
+   "linea": 1343,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Arrendamentos, Patrocínios e Publicidades",
+   "lado": "ingreso",
+   "M": 10.392,
+   "pagina": 36,
+   "linea": 1344,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "TV e transmissão jogos",
+   "lado": "ingreso",
+   "M": 8.242,
+   "pagina": 36,
+   "linea": 1345,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Repasses da Loteria Timemania",
+   "lado": "ingreso",
+   "M": 0.679,
+   "pagina": 36,
+   "linea": 1347,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Venda de Material Esportivo",
+   "lado": "ingreso",
+   "M": 0.255,
+   "pagina": 36,
+   "linea": 1348,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Venda e uso da Marca",
+   "lado": "ingreso",
+   "M": 0.613,
+   "pagina": 36,
+   "linea": 1349,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Receitas de locações",
+   "lado": "ingreso",
+   "M": 0.752,
+   "pagina": 36,
+   "linea": 1350,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Participações em competições",
+   "lado": "ingreso",
+   "M": 0.072,
+   "pagina": 36,
+   "linea": 1351,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "(-) deduções das receitas",
+   "lado": "ingreso",
+   "M": -1.04,
+   "pagina": 36,
+   "linea": 1352,
+   "origen": "nota que desglosa \"Receita liquida das atividades\""
+  },
+  {
+   "etiqueta": "Receita LFU",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 9,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receceita negociação Atletas Profissionais",
+   "lado": "ingreso",
+   "M": 8.474,
+   "pagina": 9,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Deságio Recuperação Judicial",
+   "lado": "ingreso",
+   "M": 19.688,
+   "pagina": 9,
+   "linea": 224,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salários e Encargos Sociais",
+   "lado": "gasto",
+   "M": 36.882,
+   "pagina": 37,
+   "linea": 1379,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Direito de Uso de Imagem",
+   "lado": "gasto",
+   "M": 10.485,
+   "pagina": 37,
+   "linea": 1380,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Empréstimo de Jogadores",
+   "lado": "gasto",
+   "M": 0.879,
+   "pagina": 37,
+   "linea": 1381,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Premiações por Desempenho",
+   "lado": "gasto",
+   "M": 0.905,
+   "pagina": 37,
+   "linea": 1382,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Registro de Atletas",
+   "lado": "gasto",
+   "M": 0.712,
+   "pagina": 37,
+   "linea": 1383,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Amortização",
+   "lado": "gasto",
+   "M": 0.595,
+   "pagina": 37,
+   "linea": 1384,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Honorários Profissionais PJ",
+   "lado": "gasto",
+   "M": 1.465,
+   "pagina": 37,
+   "linea": 1385,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Alimentação/Plano de saúde e seguro",
+   "lado": "gasto",
+   "M": 1.412,
+   "pagina": 37,
+   "linea": 1386,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Serviço de Terceiros",
+   "lado": "gasto",
+   "M": 0.607,
+   "pagina": 37,
+   "linea": 1387,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Comissões em negociação de atletas",
+   "lado": "gasto",
+   "M": 2.027,
+   "pagina": 37,
+   "linea": 1388,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Aluguel campo",
+   "lado": "gasto",
+   "M": 0.117,
+   "pagina": 37,
+   "linea": 1389,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Luvas",
+   "lado": "gasto",
+   "M": 0.377,
+   "pagina": 37,
+   "linea": 1390,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Viagens/hospedagens/Transportes",
+   "lado": "gasto",
+   "M": 1.652,
+   "pagina": 37,
+   "linea": 1391,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Atletas dispensados",
+   "lado": "gasto",
+   "M": 0.459,
+   "pagina": 37,
+   "linea": 1392,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Material esportivo e outros",
+   "lado": "gasto",
+   "M": 0.886,
+   "pagina": 37,
+   "linea": 1393,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Softwares e consultoria",
+   "lado": "gasto",
+   "M": 0.098,
+   "pagina": 37,
+   "linea": 1394,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Outros custos futebol Profissional",
+   "lado": "gasto",
+   "M": 0.68,
+   "pagina": 37,
+   "linea": 1395,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Futebol Feminino",
+   "lado": "gasto",
+   "M": 1.213,
+   "pagina": 37,
+   "linea": 1397,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Espostes Olimpicos",
+   "lado": "gasto",
+   "M": 0.078,
+   "pagina": 37,
+   "linea": 1398,
+   "origen": "nota que desglosa \"Custos futebol profissional\""
+  },
+  {
+   "etiqueta": "Ajuda de custo",
+   "lado": "gasto",
+   "M": 0.56,
+   "pagina": 37,
+   "linea": 1406,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.123,
+   "pagina": 37,
+   "linea": 1407,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Alugueis de Campos",
+   "lado": "gasto",
+   "M": 0.061,
+   "pagina": 37,
+   "linea": 1408,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Arbitragem de Jogos",
+   "lado": "gasto",
+   "M": 0.031,
+   "pagina": 37,
+   "linea": 1409,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Competições Esportivas",
+   "lado": "gasto",
+   "M": 0.016,
+   "pagina": 37,
+   "linea": 1410,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Plano e saúde",
+   "lado": "gasto",
+   "M": 0.641,
+   "pagina": 37,
+   "linea": 1411,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Honorários Profissionais PJ",
+   "lado": "gasto",
+   "M": 0.442,
+   "pagina": 37,
+   "linea": 1412,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Material de uso e Consumo",
+   "lado": "gasto",
+   "M": 0.085,
+   "pagina": 37,
+   "linea": 1413,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Material Esportivo",
+   "lado": "gasto",
+   "M": 0.233,
+   "pagina": 37,
+   "linea": 1414,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Material Médico",
+   "lado": "gasto",
+   "M": 0.072,
+   "pagina": 37,
+   "linea": 1415,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Registro de Atletas",
+   "lado": "gasto",
+   "M": 0.257,
+   "pagina": 37,
+   "linea": 1416,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Salários e Encargos Sociais",
+   "lado": "gasto",
+   "M": 4.731,
+   "pagina": 37,
+   "linea": 1417,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Serviço de Terceiros",
+   "lado": "gasto",
+   "M": 1.612,
+   "pagina": 37,
+   "linea": 1418,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Viagens e Hospedagens",
+   "lado": "gasto",
+   "M": 0.536,
+   "pagina": 37,
+   "linea": 1419,
+   "origen": "nota que desglosa \"Custos do Futebol Categoria de Base\""
+  },
+  {
+   "etiqueta": "Alimentação/Plano de saúde/Seguros",
+   "lado": "gasto",
+   "M": 2.275,
+   "pagina": 38,
+   "linea": 1463,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.675,
+   "pagina": 38,
+   "linea": 1464,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Assessoria de comunicação",
+   "lado": "gasto",
+   "M": 0.388,
+   "pagina": 38,
+   "linea": 1465,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Depreciação",
+   "lado": "gasto",
+   "M": 3.048,
+   "pagina": 38,
+   "linea": 1466,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.419,
+   "pagina": 38,
+   "linea": 1467,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Eventos",
+   "lado": "gasto",
+   "M": 0.937,
+   "pagina": 38,
+   "linea": 1468,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Taxas/Bordero",
+   "lado": "gasto",
+   "M": 1.331,
+   "pagina": 38,
+   "linea": 1469,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Manutenção de Equipamentos",
+   "lado": "gasto",
+   "M": 0.434,
+   "pagina": 38,
+   "linea": 1470,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Manutenção e conservação do Estádio",
+   "lado": "gasto",
+   "M": 0.373,
+   "pagina": 38,
+   "linea": 1471,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Material de consumo",
+   "lado": "gasto",
+   "M": 0.757,
+   "pagina": 38,
+   "linea": 1472,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Material esportivo",
+   "lado": "gasto",
+   "M": 0.222,
+   "pagina": 38,
+   "linea": 1473,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Propaganda e publicidade",
+   "lado": "gasto",
+   "M": 0.287,
+   "pagina": 38,
+   "linea": 1474,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Repasse Bares",
+   "lado": "gasto",
+   "M": 0.274,
+   "pagina": 38,
+   "linea": 1475,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Softwares e consultorias",
+   "lado": "gasto",
+   "M": 1.096,
+   "pagina": 38,
+   "linea": 1476,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Telefone e Internet",
+   "lado": "gasto",
+   "M": 0.096,
+   "pagina": 38,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Salários e Encargos",
+   "lado": "gasto",
+   "M": 3.045,
+   "pagina": 38,
+   "linea": 1478,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Marketing/licenciamento",
+   "lado": "gasto",
+   "M": 0.859,
+   "pagina": 38,
+   "linea": 1479,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Honorários Profissionais PJ",
+   "lado": "gasto",
+   "M": 3.068,
+   "pagina": 38,
+   "linea": 1480,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 1.335,
+   "pagina": 38,
+   "linea": 1481,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.254,
+   "linea": 228
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -34.959,
+   "linea": 229
+  }
+ ],
+ "impuesto": []
+}

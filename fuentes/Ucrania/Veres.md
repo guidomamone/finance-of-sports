@@ -71,3 +71,5 @@ firma del gerente ("Назарук А.Г.") y del contador jefe ("Присмиц
   dato.
 
 - Último chequeo: 2026-09-18.
+
+Color de marca: #FF0000 — en.wikipedia (infobox, camiseta local body1 FF0000) y uk.wikipedia (colores 'rojo-negro', rojo primero; escudo rojo y negro), verificado 2026-10-09

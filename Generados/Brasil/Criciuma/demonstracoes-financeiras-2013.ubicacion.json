@@ -1,0 +1,200 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md",
+ "mdSha1": "2d676ceb5bed3d1b5686221c571483b5c2d39e3c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:31:07.982Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    92,
+    115
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    127,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    166,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    188,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    300,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    308,
+    313
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    325,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    342,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    359,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    372,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    396,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    405,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    446,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    462,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    475,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    499,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    509,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    539,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    548,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    567,
+    583
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2013",
+ "columna_anterior": "2012",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La nota 15 de receitas (referida en 'Receita operacional bruta – nota 15') no aparece como bloque con cifras en el índice, y se carga solo con el estado b2?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receita operacional bruta – nota 15",
+   "texto": "El estado remite a la nota 15 pero ningún bloque del índice la contiene (entre b19 pág. 17 y b20 pág. 18).",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual del clube en b2 (pág. 6, en reais). La nota 16 Resultado financeiro (b20) abre receitas y despesas financeiras. Los demás bloques son balance, mutações, fluxo de caixa y notas patrimoniales; no se eligen."
+}

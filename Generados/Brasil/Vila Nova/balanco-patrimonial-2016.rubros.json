@@ -1,0 +1,200 @@
+{
+  "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md",
+  "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
+  "club": "vila-nova",
+  "year": 2016,
+  "generatedAt": "2026-10-09T23:23:30.738Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receitas Atividades Esportivas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.220891
+      ],
+      "glosa": "Ingresos por actividades deportivas"
+    },
+    {
+      "label": "Receitas Escolinha de Futebol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.119131
+      ],
+      "glosa": "Ingresos por escuela de fútbol"
+    },
+    {
+      "label": "Receitas Doações/Patrocínios",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.50307
+      ],
+      "glosa": "Ingresos por donaciones/patrocinios"
+    },
+    {
+      "label": "Receitas CBF",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.266022
+      ],
+      "glosa": "Ingresos CBF"
+    },
+    {
+      "label": "Receitas Publicidade",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.753607
+      ],
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Receitas Sócio Tigrão",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.368941
+      ],
+      "glosa": "Ingresos por socios Tigrão"
+    },
+    {
+      "label": "Receitas Direitos Federativos Atletas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.6
+      ],
+      "glosa": "Ingresos por derechos federativos de deportistas"
+    },
+    {
+      "label": "Receitas Alugueis",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.269565
+      ],
+      "glosa": "Ingresos por alquileres"
+    },
+    {
+      "label": "Receitas Extraordinárias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Receitas Contribuições Conselheiros",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.389937
+      ],
+      "glosa": "Ingresos por contribuciones de consejeros"
+    },
+    {
+      "label": "Receitas Time mania",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.260774
+      ],
+      "glosa": "Ingresos por Timemania"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.142537
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "TOTAL DAS RECEITAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        12.924983
+      ],
+      "glosa": "TOTAL DE INGRESOS"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        9.801794
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Despesas Depto Esportes",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4.783521
+      ],
+      "glosa": "Gastos del departamento de deportes"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.185638
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Despesas Serviços Terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.535155
+      ],
+      "glosa": "Gastos por servicios de terceros"
+    },
+    {
+      "label": "Despesas Diversas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.013946
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "TOTAL DAS DESPESAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        15.696986
+      ],
+      "glosa": "TOTAL DE GASTOS"
+    }
+  ]
+}

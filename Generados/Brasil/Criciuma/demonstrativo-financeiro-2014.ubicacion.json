@@ -1,0 +1,244 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.md",
+ "mdSha1": "f1572075a8cd447ec609f5e15ba1afb3cc678d69",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:31:35.630Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    74,
+    80
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    90,
+    114
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    128,
+    149
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    163,
+    167
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    181,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    209,
+    250
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    486,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    497,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    524,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    545,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    556,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    581,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    593,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    614,
+    617
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    621,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    669,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    721,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    734,
+    740
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    744,
+    749
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    755,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    772,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    785,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    796,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    812,
+    819
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    823,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    831,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 28,
+   "lineas": [
+    852,
+    865
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b26"
+ ],
+ "notas_gastos": [
+  "b27"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013 / Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2014",
+ "columna_anterior": "31/12/2013",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual del clube en b3 (pág. 6, en reais). La nota 16 (b26) desglosa la receita operacional bruta. La nota 17 (b27) desglosa el resultado financeiro, con receitas y despesas financeiras. No hay estado consolidado. Quedan excluidos: balance (b2), resultado abrangente (b4), mutações (b5), fluxo de caixa (b6) y las notas patrimoniales."
+}

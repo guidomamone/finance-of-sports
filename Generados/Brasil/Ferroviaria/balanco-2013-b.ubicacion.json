@@ -1,0 +1,88 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2013-b.md",
+ "mdSha1": "8e26d8a79a7632fdd2fcbb50efa11446927ec1ef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:46:31.016Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    6
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    58
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    62,
+    65
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    67,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    122,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    127,
+    168
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b4",
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No se indica escala; importes con centavos (ej. '2.618,70 D'), lo que indica unidades de real.",
+ "moneda": "BRL",
+ "columna_ejercicio": "Período: 01/01/2013 a 31/12/2013",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la DRE de las páginas 1-3 (b2, b4, b6), que es un listado contable por departamentos con saldos D/C, como estado de resultados de 2013?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "= Prejuízo",
+   "texto": "El estado tiene formato de balancete de cuentas de resultado (saldos con D/C) y solo una columna, sin año anterior.",
+   "bloques": [
+    "b2",
+    "b4",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de Ferroviaria Futebol S.A., período 01/01/2013 a 31/12/2013, individual. b1, b3 y b5 son solo encabezados de página. El estado continúa de b2 a b4 y b6, terminando en '= Prejuízo'. No hay columna del año anterior ni notas."
+}

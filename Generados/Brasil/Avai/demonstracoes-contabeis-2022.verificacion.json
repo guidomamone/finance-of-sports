@@ -1,0 +1,419 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md",
+ "generado": "2026-10-09T23:23:27.793Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "eec91fc",
+  "f95cecf",
+  "96d6071",
+  "17bc06c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 91.954 en este documento y 92.971 en demonstracoes-contabeis-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": false,
+   "detalle": "ingresos de 2021: 75.882055 en demonstracoes-contabeis-2021.pdf y 24.202 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Receita líquida das atividades\" no suma el renglón (91.908 contra 91.954, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar que no afecta la carga: b1 (pág. 15, probablemente en el informe de gestión) tiene las mismas 10 filas que b3, el estado formal con columna Nota."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Receita líquida das atividades",
+   "suma": 91.908,
+   "objetivo": 91.954
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Receita líquida das atividades",
+   "suma": 91.908,
+   "objetivo": 91.954
+  }
+ ],
+ "totales": {
+  "ingresos": 91.954,
+  "gastos": 88.85,
+  "financiero": -0.709,
+  "impuesto": 0,
+  "resultadoImpreso": 2.396,
+  "resultadoParaCargar": 2.396,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita líquida das atividades",
+   "lado": "ingreso",
+   "M": 91.954,
+   "pagina": 28,
+   "linea": 765,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salários e Encargos",
+   "lado": "gasto",
+   "M": 22.188,
+   "pagina": 49,
+   "linea": 1623,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 1.663,
+   "pagina": 49,
+   "linea": 1624,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Viagens e Hospedagem",
+   "lado": "gasto",
+   "M": 1.239,
+   "pagina": 49,
+   "linea": 1625,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "INSS s/ Receitas",
+   "lado": "gasto",
+   "M": 1.387,
+   "pagina": 49,
+   "linea": 1626,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Aluguel e manutenção dos campos",
+   "lado": "gasto",
+   "M": 0.401,
+   "pagina": 49,
+   "linea": 1627,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Serviços de Terceiros",
+   "lado": "gasto",
+   "M": 1.068,
+   "pagina": 49,
+   "linea": 1628,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Arbitragem/ Federação e Confederação",
+   "lado": "gasto",
+   "M": 0.968,
+   "pagina": 49,
+   "linea": 1629,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Amortização Custo Atletas Profissionais",
+   "lado": "gasto",
+   "M": 2.166,
+   "pagina": 49,
+   "linea": 1630,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Seguros/ Plano de Saúde",
+   "lado": "gasto",
+   "M": 1.45,
+   "pagina": 49,
+   "linea": 1631,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Direito de Uso de Imagem",
+   "lado": "gasto",
+   "M": 7.004,
+   "pagina": 49,
+   "linea": 1632,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Material Esportivo - Patrocínio",
+   "lado": "gasto",
+   "M": 0.389,
+   "pagina": 49,
+   "linea": 1633,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Borderoux de Jogos",
+   "lado": "gasto",
+   "M": 0.904,
+   "pagina": 49,
+   "linea": 1634,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Taxa de Policiamento",
+   "lado": "gasto",
+   "M": 0.334,
+   "pagina": 49,
+   "linea": 1635,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Despesas com jogo",
+   "lado": "gasto",
+   "M": 0.448,
+   "pagina": 49,
+   "linea": 1636,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 1.088,
+   "pagina": 49,
+   "linea": 1637,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Premiação Campeonatos",
+   "lado": "gasto",
+   "M": 1.378,
+   "pagina": 49,
+   "linea": 1638,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Direito de Arena",
+   "lado": "gasto",
+   "M": 2.212,
+   "pagina": 49,
+   "linea": 1639,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Empréstimos de Atletas",
+   "lado": "gasto",
+   "M": 0.4,
+   "pagina": 49,
+   "linea": 1640,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Intermediação e Negociação de Atletas",
+   "lado": "gasto",
+   "M": 3.395,
+   "pagina": 49,
+   "linea": 1641,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Materiais e serviços diversos",
+   "lado": "gasto",
+   "M": 1.416,
+   "pagina": 49,
+   "linea": 1642,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Manutenção, conservação e reformas",
+   "lado": "gasto",
+   "M": 0.732,
+   "pagina": 49,
+   "linea": 1643,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Perda com atletas dispensados",
+   "lado": "gasto",
+   "M": 3.882,
+   "pagina": 49,
+   "linea": 1644,
+   "origen": "nota que desglosa \"Custos operacionais das atividades\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.954,
+   "pagina": 50,
+   "linea": 1665,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.076,
+   "pagina": 50,
+   "linea": 1666,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Comunicação",
+   "lado": "gasto",
+   "M": 0.306,
+   "pagina": 50,
+   "linea": 1667,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.337,
+   "pagina": 50,
+   "linea": 1668,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.283,
+   "pagina": 50,
+   "linea": 1669,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Outras despesas",
+   "lado": "gasto",
+   "M": 3.687,
+   "pagina": 50,
+   "linea": 1670,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "PCLD",
+   "lado": "gasto",
+   "M": 0.854,
+   "pagina": 50,
+   "linea": 1671,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Plano de Saúde",
+   "lado": "gasto",
+   "M": 1.144,
+   "pagina": 50,
+   "linea": 1672,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Provisão para Contingência",
+   "lado": "gasto",
+   "M": 11.554,
+   "pagina": 50,
+   "linea": 1673,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Salários e Encargos",
+   "lado": "gasto",
+   "M": 7.431,
+   "pagina": 50,
+   "linea": 1674,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.094,
+   "pagina": 50,
+   "linea": 1675,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Serviços de Terceiros",
+   "lado": "gasto",
+   "M": 1.601,
+   "pagina": 50,
+   "linea": 1676,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Softwares e Consultoria de TI",
+   "lado": "gasto",
+   "M": 0.806,
+   "pagina": 50,
+   "linea": 1677,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Telefone e Internet",
+   "lado": "gasto",
+   "M": 0.105,
+   "pagina": 50,
+   "linea": 1678,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Viagens e Hospedagens",
+   "lado": "gasto",
+   "M": 0.05,
+   "pagina": 50,
+   "linea": 1679,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Outras receitas (despesas) operacionais",
+   "lado": "gasto",
+   "M": 3.456,
+   "pagina": 28,
+   "linea": 769,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.118,
+   "linea": 771
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.827,
+   "linea": 772
+  }
+ ],
+ "impuesto": []
+}

@@ -1,0 +1,208 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "mdSha1": "7750343fd14f49d87e51a44beec366d97e1922bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:42:15.441Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    183,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    218,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    259,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    295,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    317,
+    346
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    660,
+    665
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    669,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    678,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    687,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    699,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    713,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    728,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    738,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    746,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    762,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    769,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    798,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    807,
+    812
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    816,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    833,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    860,
+    866
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados b3 termina en 'Lucro Líquido antes dos impostos' sin continuar a otro bloque con impuestos y lucro líquido del exercício?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Lucro Líquido antes dos impostos",
+   "texto": "La última fila de b3 es el resultado antes de impuestos y no se indica continuación; podría faltar el renglón de impuestos (TEF).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estados individuales de Cuiabá Esporte Clube SAF, en reales. b3 es la Demonstração dos resultados; b20 (nota 30 Receitas operacionais) desglosa la receita operacional líquida; b21 (nota 31 Despesas) desglosa los gastos. El resto son balance, mutaciones del patrimonio, flujo de caja y notas patrimoniales."
+}

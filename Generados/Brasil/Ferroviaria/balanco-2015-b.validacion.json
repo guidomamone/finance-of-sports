@@ -1,0 +1,34 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2015-b.md",
+ "mdSha1": "33b98799170e9bb1332a12bc2a878f4b2f20049a",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-09T22:52:21.660Z",
+ "fuentes": {
+  "1": "gemini",
+  "2": "gemini",
+  "3": "gemini"
+ },
+ "confirmados": 128,
+ "noConfirmados": [
+  {
+   "bloque": "b2",
+   "pagina": 2,
+   "linea": 113,
+   "numero": "155.070,40",
+   "segundaLeyo": "15507840",
+   "sinSegunda": false,
+   "texto": "| **= Prejuízo Bruto** | **155.070,40 D** |"
+  },
+  {
+   "bloque": "b3",
+   "pagina": 3,
+   "linea": 164,
+   "numero": "493,88",
+   "segundaLeyo": "49389",
+   "sinSegunda": false,
+   "texto": "| Agua | 493,88 D |"
+  }
+ ]
+}

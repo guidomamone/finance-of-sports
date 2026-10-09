@@ -29,446 +29,219 @@ Relatório dos auditores independentes sobre as demonstrações contábeis
 
 --- pág. 3 ---
 
-Vila Nova F.C
-A FOGRA DO CENTRO-DESTE!
-
-# Balanço patrimonial
+Balanço patrimonial
 Em 31 de dezembro de 2023 e 2022
 (Em reais)
 
-|  ATIVO | NOTA | 2023 | 2022  |
-| --- | --- | --- | --- |
-|  **ATIVO CIRCULANTE** |  | **451.483,00** | **792.827,11**  |
-|  Caixa e Equivalentes de Caixa | 4 | 395.459,24 | 741.400,73  |
-|  Contas a Receber | 5 | 0,00 | 21.700,00  |
-|  Adiantamentos diversos | 6 | 15.060,09 | 4.747,97  |
-|  Bloqueio judicial | 7 | 8.946,32 | 0,00  |
-|  Tributos a recuperar/compensar | 8 | 6.906,94 | 0,00  |
-|  Aplicação financeira red. Prefixados | 9 | 858,00 | 726,00  |
-|  Estratue | 10 | 24.252,41 | 24.252,41  |
-|  **ATIVO NÃO CIRCULANTE** |  | **79.242.586,45** | **69.697.964,51**  |
-|  Realizável em longo prazo | 11 | 9.499.476,68 | 171.354,96  |
-|  Investimentos | 12 | 0,00 | 643,00  |
-|  Imobilizado | 13 | 68.314.023,28 | 68.202.517,20  |
-|  Intangível | 14 | 1.429.086,49 | 1.323.449,35  |
-|  **TOTAL DO ATIVO** |  | **79.694.069,45** | **70.490.791,62**  |
-|  **ATIVO COMPENSADO** |  | **0,00** | **285.040,24**  |
-|  Bens Recebidos em Comodato | 29 | 0,00 | 285.040,24  |
-|  **TOTAL DO ATIVO + ATIVO COMPENSADO** |  | **79.694.069,45** | **70.775.831,86**  |
-|  **PASSIVO** |  | **2023** | **2022**  |
-|  **PASSIVO CIRCULANTE** |  | **25.284.253,86** | **24.611.337,93**  |
-|  Empréstimos e Financiamentos | 26 | 1.828.646,99 | 656.442,30  |
-|  Fornecedores Nacionais | 15 | 1.183.036,17 | 1.516.287,51  |
-|  Receita Antecipada a Apropriar | 16 | 123.514,25 | 523.514,25  |
-|  Contrato de Empréstimos de Atletas | 17 | 255.000,00 | 225.000,00  |
-|  Obrigações Sociais | 18 | 3.164.622,25 | 2.664.934,87  |
-|  Obrigações Tributárias | 19 | 1.506.643,29 | 1.348.086,17  |
-|  Obrigações com Pessoal | 20 | 1.321.413,56 | 647.120,53  |
-|  Provisões de férias e encargos | 25 | 268.479,03 | 77.533,28  |
-|  Acordos Judiciais Realizados | 21 | 2.007.468,34 | 2.546.739,74  |
-|  Contas a Pagar | 22 | 25.571,27 | 24.637,50  |
-|  Parcelamentos Impostos e Contrib. Sociais | 23 | 3.324.042,96 | 3.366.940,71  |
-|  Contingências | 24 | 10.275.815,75 | 11.014.101,07  |
-|  **PASSIVO NÃO CIRCULANTE** |  | **98.965.444,48** | **82.845.488,76**  |
-|  **EXIGÍVEL A LONGO PRAZO** |  | **98.965.444,48** | **82.845.488,76**  |
-|  Parcelamento Imposto e Contribuição Social | 23 | 5.012.844,55 | 5.012.844,55  |
-|  Empréstimos e Financiamentos | 26 | 85.005.328,33 | 77.832.644,21  |
-|  Receita Diferida | 27 | 8.947.271,60 | -  |
-|  **PATRIMÔNIO LÍQUIDO** | 28 | **(44.555.628,89)** | **(36.966.035,07)**  |
-|  SUPERÁVIT ACUMULADO |  | 12.909.910,78 | 3.680.007,12  |
-|  (-) Déficit acumulado |  | (110.840.955,85) | (100.186.185,00)  |
-|  SUPERÁVIT/(DÉFICIT) DO EXERCÍCIO |  | (4.460.646,76) | 2.114.536,35  |
-|  Ajuste do exercício anterior |  | (3.128.947,06) | (3.539.403,54)  |
-|  Avaliação Patrimonial |  | 60.965.010,00 | 60.965.010,00  |
-|  **TOTAL DO PASSIVO + PATRIMÔNIO LÍQUIDO** |  | **79.694.069,45** | **70.490.791,62**  |
-|  **PASSIVO COMPENSADO** |  | **0,00** | **285.040,24**  |
-|  Bens Recebidos em Comodato | 29 | 0,00 | 285.040,24  |
-|  **TOTAL DO PASSIVO, PATRIMÔNIO LÍQUIDO + PASSIVO COMPENSADO** |  | **79.694.069,45** | **70.775.831,86**  |
+| ATIVO | NOTA | 2023 | 2022 |
+|---|---|---|---|
+| **ATIVO CIRCULANTE** | | **451.483,00** | **792.827,11** |
+| Caixa e Equivalentes de Caixa | 4 | 395.459,24 | 741.400,73 |
+| Contas a Receber | 5 | 0,00 | 21.700,00 |
+| Adiantamentos diversos | 6 | 15.060,09 | 4.747,97 |
+| Bloqueio judicial | 7 | 8.946,32 | 0,00 |
+| Tributos a recuperar/compensar | 8 | 6.906,94 | 0,00 |
+| Aplicação financeira red. Prefixados | 9 | 858,00 | 726,00 |
+| Estoque | 10 | 24.252,41 | 24.252,41 |
+| **ATIVO NÃO CIRCULANTE** | | **79.242.586,45** | **69.697.964,51** |
+| Realizável em longo prazo | 11 | 9.499.476,68 | 171.354,96 |
+| Investimentos | 12 | 0,00 | 643,00 |
+| Imobilizado | 13 | 68.314.023,28 | 68.202.517,20 |
+| Intangível | 14 | 1.429.086,49 | 1.323.449,35 |
+| **TOTAL DO ATIVO** | | **79.694.069,45** | **70.490.791,62** |
+| | | | |
+| **ATIVO COMPENSADO** | | **0,00** | **285.040,24** |
+| Bens Recebidos em Comodato | 29 | 0,00 | 285.040,24 |
+| | | | |
+| **TOTAL DO ATIVO + ATIVO COMPENSADO** | | **79.694.069,45** | **70.775.831,86** |
+
+| PASSIVO | NOTA | 2023 | 2022 |
+|---|---|---|---|
+| **PASSIVO CIRCULANTE** | | **25.284.253,86** | **24.611.337,93** |
+| Empréstimos e Financiamentos | 26 | 1.828.646,99 | 656.442,30 |
+| Fornecedores Nacionais | 15 | 1.183.036,17 | 1.516.287,51 |
+| Receita Antecipada a Apropriar | 16 | 123.514,25 | 523.514,25 |
+| Contrato de Empréstimos de Atletas | 17 | 255.000,00 | 225.000,00 |
+| Obrigações Sociais | 18 | 3.164.622,25 | 2.664.934,87 |
+| Obrigações Tributárias | 19 | 1.506.643,29 | 1.348.086,17 |
+| Obrigações com Pessoal | 20 | 1.321.413,56 | 647.120,53 |
+| Provisões de férias e encargos | 25 | 268.479,03 | 77.533,28 |
+| Acordos Judiciais Realizados | 21 | 2.007.468,34 | 2.546.739,74 |
+| Contas a Pagar | 22 | 25.571,27 | 24.637,50 |
+| Parcelamentos Impostos e Contrib. Sociais | 23 | 3.324.042,96 | 3.366.940,71 |
+| Contingências | 24 | 10.275.815,75 | 11.014.101,07 |
+| | | | |
+| **PASSIVO NÃO CIRCULANTE** | | **98.965.444,48** | **82.845.488,76** |
+| **EXIGÍVEL A LONGO PRAZO** | | 98.965.444,48 | 82.845.488,76 |
+| Parcelamento Imposto e Contribuição Social | 23 | 5.012.844,55 | 5.012.844,55 |
+| Empréstimos e Financiamentos | 26 | 85.005.328,33 | 77.832.644,21 |
+| Receita Diferida | 27 | 8.947.271,60 | - |
+| **PATRIMÔNIO LÍQUIDO** | 28 | **(44.555.628,89)** | **(36.966.035,07)** |
+| SUPERÁVIT ACUMULADO | | 12.909.910,78 | 3.680.007,12 |
+| (-) Déficit acumulado | | (110.840.955,85) | (100.186.185,00) |
+| SUPERÁVIT/(DÉFICIT) DO EXERCÍCIO | | (4.460.646,76) | 2.114.536,35 |
+| Ajuste do exercício anterior | | (3.128.947,06) | (3.539.403,54) |
+| Avaliação Patrimonial | | 60.965.010,00 | 60.965.010,00 |
+| **TOTAL DO PASSIVO + PATRIMÔNIO LÍQUIDO** | | **79.694.069,45** | **70.490.791,62** |
+| | | | |
+| **PASSIVO COMPENSADO** | | **0,00** | **285.040,24** |
+| Bens Recebidos em Comodato | 29 | 0,00 | 285.040,24 |
+| **TOTAL DO PASSIVO, PATRIMÔNIO LÍQUIDO + PASSIVO COMPENSADO** | | **79.694.069,45** | **70.775.831,86** |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:0040
-4026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO
-JORGE BRAVO DE
-CARVALHO:0040026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mafegla v3, ou=3096809700012, ou=Endereço:primeira, ou=Certificado
-PF A1, cn=HUGO JORGE BRAVO DE
-CARVALHO:0040026141
-Dados: 2024.04.30 21:40:21 -03'00'
-
-LUCIVANDO
-VICENTE
-ALVES:696498391
-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE ALVES:696498391
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mafegla v3, ou=3096809700012,
-ou=Provencial, ou=Certificado PF A1,
-cn=LUCIVANDO VICENTE
-ALVES:696498391
-Dados: 2024.04.30 21:41:04 -03'00'
-
-VINICIUS
-CLEMENTINO
-CIRQUEIRA:002
-03672100
-
-Assinado de forma digital por VINICIUS
-CLEMENTINO CIRQUEIRA:002
-03672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria
-doReceita Federal do Brasil - RFB,
-ou=PPB e CPF A1, ou=2024.004.0125,
-ou=1927.201500197,
-ou=Folha, ou=Previsoria, cn=VINICIUS
-CLEMENTINO CIRQUEIRA:002
-03672100
-Dados: 2024.04.30 21:17:55 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-Diretor presidente
-CPF: 004.040.261-41
-
-Lucivando Vicente Alves
-Contador CRC-GO: 023187
-CPF: 696.498.391-00
-
-Vinicius Clementino Cirqueira
-Vice-presidente financeiro
-CPF: 002.036.721-00
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:40:21 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:41:04 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:17:55 -03'00')
 
 --- pág. 4 ---
 
-Vila Nova F.C
-É PROMULI NO CENTRO-DESTE!
-
-# Demonstração do resultado
+Demonstração do resultado
 Em 31 de dezembro de 2023 e 2022
 (Em reais)
 
-|   | NOTA | 2023 | 2022  |
-| --- | --- | --- | --- |
-|  **RECEITA OPERACIONAL BRUTA** | **30** | **29.625.447,51** | **37.850.414,52**  |
-|  RECEITA COM PRESTAÇÃO DE SERVIÇOS | 30.1 | 24.459.549,21 | 19.961.378,78  |
-|  RECEITA PATROCÍNIO E MARKETING | 30.2 | 0,00 | 5.431.480,93  |
-|  RECEITAS DIVERSAS | 30.3 | 5.165.898,30 | 12.457.554,81  |
-|  **(=) DEDUÇÕES DA RECEITA BRUTA** | **31** | **(279.901,77)** | **(1.051.383,15)**  |
-|  (-) DEDUÇÕES DA RECEITA BRUTA |  | (279.901,77) | (1.051.383,15)  |
-|  **= RESULTADO OPERACIONAL LÍQUIDO** |  | **29.345.545,74** | **36.799.031,37**  |
-|  **(=) CUSTOS COM ATIV. PREST. SERVIÇOS/VENDAS** | **32** | **(3.564,13)** | **0,00**  |
-|  (-) CUSTOS GERAIS |  | (3.564,13) | 0,00  |
-|  **(=) DESPESAS COM ATIVIDADE OPERACIONAL** | **33** | **(33.618.051,11)** | **(30.788.195,68)**  |
-|  (-) DESPESAS COM PESSOAL | 33.1 | (8.719.408,08) | (6.312.614,37)  |
-|  (-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES | 33.2 | (1.201.970,78) | (665.201,56)  |
-|  (-) PROVISÕES E CONTIGÊNCIAS | 33.3 | (4.450.807,44) | (5.447.098,76)  |
-|  (-) DESPESAS COM VENDAS EM GERAL | 33.4 | (9.735.193,59) | (8.820.540,46)  |
-|  (-) OUTRAS DESPESAS | 33.5 | (9.510.671,22) | (9.542.740,53)  |
-|  **= RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO** |  | **(4.276.069,50)** | **6.010.835,69**  |
-|  **(=) RESULTADO FINANCEIRO** | **34** | **(184.577,26)** | **(3.896.299,34)**  |
-|  (-) DESPESAS FINANCEIRAS |  | (4.019.143,82) | (4.429.114,90)  |
-|  RECEITAS FINANCEIRAS |  | 3.834.566,56 | 532.815,56  |
-|  (DÉFICIT) DO EXERCÍCIO/ SUPERÁVIT |  | (4.460.646,76) | 2.114.536,35  |
+| | NOTA | 2023 | 2022 |
+|---|---|---|---|
+| **RECEITA OPERACIONAL BRUTA** | 30 | **29.625.447,51** | **37.850.414,52** |
+| RECEITA COM PRESTAÇÃO DE SERVIÇOS | 30.1 | 24.459.549,21 | 19.961.378,78 |
+| RECEITA PATROCÍNIO E MARKETING | 30.2 | 0,00 | 5.431.480,93 |
+| RECEITAS DIVERSAS | 30.3 | 5.165.898,30 | 12.457.554,81 |
+| | | | |
+| **(=) DEDUÇÕES DA RECEITA BRUTA** | 31 | **(279.901,77)** | **(1.051.383,15)** |
+| (-) DEDUÇÕES DA RECEITA BRUTA | | (279.901,77) | (1.051.383,15) |
+| | | | |
+| **= RESULTADO OPERACIONAL LÍQUIDO** | | **29.345.545,74** | **36.799.031,37** |
+| | | | |
+| **(=) CUSTOS COM ATIV. PREST. SERVIÇOS/VENDAS** | 32 | **(3.564,13)** | **0,00** |
+| (-) CUSTOS GERAIS | | (3.564,13) | 0,00 |
+| | | | |
+| **(=) DESPESAS COM ATIVIDADE OPERACIONAL** | 33 | **(33.618.051,11)** | **(30.788.195,68)** |
+| (-) DESPESAS COM PESSOAL | 33.1 | (8.719.408,08) | (6.312.614,37) |
+| (-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES | 33.2 | (1.201.970,78) | (665.201,56) |
+| (-) PROVISÕES E CONTIGÊNCIAS | 33.3 | (4.450.807,44) | (5.447.098,76) |
+| (-) DESPESAS COM VENDAS EM GERAL | 33.4 | (9.735.193,59) | (8.820.540,46) |
+| (-) OUTRAS DESPESAS | 33.5 | (9.510.671,22) | (9.542.740,53) |
+| | | | |
+| **= RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO** | | **(4.276.069,50)** | **6.010.835,69** |
+| | | | |
+| **(=) RESULTADO FINANCEIRO** | 34 | **(184.577,26)** | **(3.896.299,34)** |
+| (-) DESPESAS FINANCEIRAS | | (4.019.143,82) | (4.429.114,90) |
+| RECEITAS FINANCEIRAS | | 3.834.566,56 | 532.815,56 |
+| | | | |
+| (DÉFICIT) DO EXERCÍCIO/ SUPERÁVIT | | **(4.460.646,76)** | **2.114.536,35** |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:00404
-026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO
-JORGE BRAVO DE
-CARVALHO:00404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Multipla x5, ou=30968597500123,
-cn=3dapp, cn=forense, ou=Certificado PF
-A1, cn=HUGO JORGE BRAVO DE
-CARVALHO:00404026141
-Dados: 2024.04.30 21:42:54 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-Diretor presidente
-CPF: 004.040.261-41
-
-LUCIVANDO
-VICENTE
-ALVES:696498391
-00
-
-Lucivando Vicente Alves
-Contador CRC-GO: 023187
-CPF: 696.498.391-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:696498391
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Multipla x5, ou=30968597500123,
-cn=3dapp, cn=forense, ou=Certificado PF A1,
-cn=LUCIVANDO VICENTE
-ALVES:696498391
-Dados: 2024.04.30 21:41:56 -03'00'
-
-VINICIUS
-CLEMENTINO
-CIRQUEIRA:00
-203672100
-
-Assinado de forma digital por VINICIUS
-CLEMENTINO CIRQUEIRA:00203672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria da
-Receita Federal do Brasil - RFB, ou=RFB
-o-CPF A1, ou=COM BRANCO,
-cn=3dapp, cn=forense, ou=VINICIUS
-CLEMENTINO CIRQUEIRA:00203672100
-Dados: 2024.04.30 22:18:46 -03'00'
-
-Vinicius Clementino Cirqueira
-Vice-presidente financeiro
-CPF: 002.036.721-00
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:42:34 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:41:56 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:18:46 -03'00')
 
 --- pág. 5 ---
 
-Vila Nova F.C
-A PROMA DO CENTRO-OESTE!
-
-# Demonstração do resultado abrangente
+Demonstração do resultado abrangente
 Em 31 de dezembro de 2023 e 2022
 (Em reais)
 
-|   | 2023 | 2022  |
-| --- | --- | --- |
-|  Lucro (prejuízo) líquido do exercício | (4.460.646,76) | 2.114.536,35  |
-|  Ajuste de Exercícios Anteriores | (3.128.947,06) | (3.539.403,54)  |
-|  Outros resultados abrangentes | - | -  |
-|  **Total dos resultados abrangentes** | **(7.589.593,82)** | **(1.424.867,19)**  |
+| | 2023 | 2022 |
+|---|---|---|
+| Lucro (prejuízo) líquido do exercício | (4.460.646,76) | 2.114.536,35 |
+| Ajuste de Exercícios Anteriores | (3.128.947,06) | (3.539.403,54) |
+| Outros resultados abrangentes | - | - |
+| **Total dos resultados abrangentes** | **(7.589.593,82)** | **(1.424.867,19)** |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:0
-0404026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO JORGE
-BRAVO DE CARVALHO:0404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multiple
-v5, ou=30948597000123, cn=ValenciaClemente,
-cn=Certificado PF A1, cn=00/20, 2/20/20 BRAVO
-DE CARVALHO:0404026141
-Dados: 2024.04.30 21:43:41 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-Diretor presidente
-CPF: 004.040.261-41
-
-LUCIVANDO
-VICENTE
-ALVES:6964983
-9100
-
-Lucivando Vicente Alves
-Contador CRC-GO: 023187
-CPF: 696.498.391-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:6964983
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Multiple v5, ou=30948597000123,
-cn=Presencial, cn=Certificado PF A1,
-cn=LUCIANDRO VICENTE
-ALVES:6964983
-Dados: 2024.04.30 21:43:48 -03'00'
-
-VINICIUS
-CLEMENTINO
-CIRQUEIRA:0
-0203672100
-
-Assinado de forma digital por VINICIUS
-CLEMENTINO CIRQUEIRA:0203672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria
-de Receita Federal do Brasil - RFB,
-cn=RFB, cn=CPF A1, cn=IDM BRANCO,
-cn=IDM BRANCO
-cn=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-
-Vinicius Clementino Cirqueira
-Vice-presidente financeiro
-CPF: 002.036.721-00
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:44:25 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:43:48 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:19:28 -03'00')
 
 --- pág. 6 ---
 
-Vila Nova F.C
-A POEM DA CENTRO-DETRE
-
-# Demonstração das mutações do patrimônio líquido
-
+Demonstração das mutações do patrimônio líquido
 Em 31 de dezembro de 2023 e 2022
 (Em reais)
 
-|  EVENTOS | Patrimônio Social | Outras Reservas | Ajustes de Avaliação Patrimonial | Outros Resultados Abrangentes | Ajuste Exercício Anterior | Superávit / (Déficit) Acumulado | Total do Patrimônio Líquido  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Saldo em 01 de janeiro de 2022** | - | - | 60.965.010,00 | 0,00 | (13.761.292,24) | (82.744.885,64) | (35.541.167,88)  |
-|  Movimentação no Período | - | - | - | - | 13.761.292,24 | (13.761.292,24) | -  |
-|  Ajustes do exercício anterior | - | - | - | - | (3.539.403,54) | - | (3.539.403,54)  |
-|  Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | -  |
-|  Superávit / (Déficit) do Período | - | - | - | - | - | 2.114.536,35 | 2.114.536,35  |
-|  Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | -  |
-|  Recursos de Superávit com Restrição | - | - | - | - | - | - | -  |
-|  **Saldo em 31 de dezembro de 2022** | - | - | 60.965.010,00 | 0,00 | (3.539.403,54) | (94.391.641,53) | (36.966.035,07)  |
-|  Movimentação no Período | - | - | - | - | 3.539.403,54 | (3.539.403,54) | -  |
-|  Ajustes do exercício anterior | - | - | - | - | (3.128.947,06) | - | (3.128.947,06)  |
-|  Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | -  |
-|  Superávit / (Déficit) do Período | - | - | - | - | - | (4.460.646,76) | (4.460.646,76)  |
-|  Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | -  |
-|  Recursos de Superávit com Restrição | - | - | - | - | - | - | -  |
-|  **Saldo em 31 de dezembro de 2023** | - | - | 60.965.010,00 | 0,00 | (3.128.947,06) | (102.391.691,83) | (44.555.628,89)  |
+| EVENTOS | Patrimônio Social | Outras Reservas | Ajustes de Avaliação Patrimonial | Outros Resultados Abrangentes | Ajuste Exercício Anterior | Superávit / (Déficit) Acumulado | Total do Patrimônio Líquido |
+|---|---|---|---|---|---|---|---|
+| **Saldo em 01 de janeiro de 2022** | - | - | 60.965.010,00 | 0,00 | (13.761.292,24) | (82.744.885,64) | (35.541.167,88) |
+| Movimentação no Período | - | - | - | - | 13.761.292,24 | (13.761.292,24) | - |
+| Ajustes do exercício anterior | - | - | - | - | (3.539.403,54) | - | (3.539.403,54) |
+| Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | - |
+| Superávit / (Déficit) do Período | - | - | - | - | - | 2.114.536,35 | 2.114.536,35 |
+| Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | - |
+| Recursos de Superávit com Restrição | - | - | - | - | - | - | - |
+| **Saldo em 31 de dezembro de 2022** | - | - | 60.965.010,00 | 0,00 | (3.539.403,54) | (94.391.641,53) | (36.966.035,07) |
+| Movimentação no Período | - | - | - | - | 3.539.403,54 | (3.539.403,54) | - |
+| Ajustes do exercício anterior | - | - | - | - | (3.128.947,06) | - | (3.128.947,06) |
+| Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | - |
+| Superávit / (Déficit) do Período | - | - | - | - | - | (4.460.646,76) | (4.460.646,76) |
+| Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | - |
+| Recursos de Superávit com Restrição | - | - | - | - | - | - | - |
+| **Saldo em 31 de dezembro de 2023** | - | - | 60.965.010,00 | 0,00 | (3.128.947,06) | (102.391.691,83) | (44.555.628,89) |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-HUGO JORGE BRAVO DE CARVALHO:0 0404026141
-Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:0 0404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:0 0404026141
-Dados: 2024.04.30 21:44:55 -03'00'
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Hugo Jorge Bravo de Carvalho
-Diretor presidente
-CPF: 004.040.261-41
-
-LUCIVANDO VICENTE ALVES:69649 839100
-
-Lucivando Vicente Alves
-Contador CRC-GO: 023187
-CPF: 696.498.391-00
-
-Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Presencial, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100
-Dados: 2024.04.30 21:45:33 -03'00'
-
-VINICIUS CLEMENTINO CIRQUEIRA:00 203672100
-
-Vinicius Clementino Cirqueira
-Vice-presidente financeiro
-CPF: 002.036.721-00
-
-Assinado de forma digital por VINICIUS CLEMENTINO CIRQUEIRA:00203672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria da Receita Federal do Brasil - RFB, ou=RFB e-CPF A1, ou=(EM BRANCO), cn=19072361000197, ou=VideoOrferencia, cn=VINICIUS CLEMENTINO CIRQUEIRA:00203672100
-Dados: 2024.04.30 22:29:23 -03'00'
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:44:59 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:45:33 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:20:23 -03'00')
 
 --- pág. 7 ---
 
-Vila Nova F.C
-A FOGHIL DE CENTRO-DESTE!
-
-# Demonstração dos fluxos de caixa - método indireto
-
+Demonstração dos fluxos de caixa - método indireto
 Em 31 de dezembro de 2023 e 2022
 (Em Reais)
 
-|   | 2023 | 2022  |
-| --- | --- | --- |
-|  Resultado do exercício (Déficit) / Superávit | (4.460.646,76) | 2.114.536,35  |
-|  Depreciação e amortização | 3.252.463,51 | 108.493,92  |
-|  Ajuste de exercício anterior | (3.128.947,06) | (3.539.403,54)  |
-|  **SUPERÁVIT / (DÉFICIT) AJUSTADO** | **(4.337.130,31)** | **(1.316.373,27)**  |
-|  **Variações nos Ativos e Passivos** |  |   |
-|  Outros Ativos Circulantes e não Circulantes | (9.331.944,10) | 6.681.215,83  |
-|  Estoques | 0,00 | 64.255,14  |
-|  Outras Obrigações Circulantes e não circulantes | (369.066,23) | (1.694.082,09)  |
-|  Fornecedores | (333.251,34) | (404.697,86)  |
-|  Obrigações sociais | 499.687,38 | 474.417,06  |
-|  Obrigações tributárias | 158.557,12 | 154.295,16  |
-|  Provisão de contingência | (738.285,32) | (9.681.688,35)  |
-|  Provisões de férias e Acordos judiciais | (348.325,65) | (1.231.517,33)  |
-|  Parcelamento Tributário | (42.897,75) | 123.795,95  |
-|  Obrigações com Pessoal | 674.293,03 | (3.378.856,93)  |
-|  **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES OPERACIONAIS** | **(14.168.363,17)** | **(10.209.236,69)**  |
-|  **ATIVIDADES DE INVESTIMENTOS** |  |   |
-|  Imobilizados | (3.363.969,59) | (361.218,99)  |
-|  Intangível - Direitos sobre Atletas | (105.637,14) | (457.649,22)  |
-|  Investimentos | (132,00) | -  |
-|  **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES DE INVESTIMENTOS** | **(3.469.738,73)** | **(818.868,21)**  |
-|  **ATIVIDADES DE FINANCIAMENTOS** |  |   |
-|  Empréstimos/ financiamentos tomados | 8.344.888,81 | 11.429.153,04  |
-|  Receita Diferida | 8.947.271,60 | -  |
-|  **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES DE FINANCIAMENTOS** | **17.292.160,41** | **11.429.153,04**  |
-|  **AUMENTO / (REDUÇÃO) DO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA** | **(345.941,49)** | **401.048,14**  |
-|  **SALDO DE CAIXA E EQUIVALENTES DE CAIXA NO INÍCIO DO EXERCÍCIO** | 741.400,73 | 340.352,59  |
-|  **SALDO DE CAIXA E EQUIVALENTES DE CAIXA NO FINAL DO EXERCÍCIO** | 395.459,24 | 741.400,73  |
-|  **AUMENTO (REDUÇÃO) DO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA** | **(345.941,49)** | **401.048,14**  |
+| | 2023 | 2022 |
+|---|---|---|
+| Resultado do exercício (Déficit) / Superávit | (4.460.646,76) | 2.114.536,35 |
+| Depreciação e amortização | 3.252.463,51 | 108.493,92 |
+| Ajuste de exercício anterior | (3.128.947,06) | (3.539.403,54) |
+| **SUPERÁVIT / (DÉFICIT) AJUSTADO** | **(4.337.130,31)** | **(1.316.373,27)** |
+| **Variações nos Ativos e Passivos** | | |
+| Outros Ativos Circulantes e não Circulantes | (9.331.944,10) | 6.681.215,83 |
+| Estoques | 0,00 | 64.255,14 |
+| Outras Obrigações Circulantes e não circulantes | (369.066,23) | (1.694.082,09) |
+| Fornecedores | (333.251,34) | (404.697,86) |
+| Obrigações sociais | 499.687,38 | 474.417,06 |
+| Obrigações tributárias | 158.557,12 | 154.295,16 |
+| Provisão de contingência | (738.285,32) | (9.681.688,35) |
+| Provisões de férias e Acordos judiciais | (348.325,65) | (1.231.517,33) |
+| Parcelamento Tributário | (42.897,75) | 123.795,95 |
+| Obrigações com Pessoal | 674.293,03 | (3.378.856,93) |
+| **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES OPERACIONAIS** | **(14.168.363,17)** | **(10.209.236,69)** |
+| | | |
+| **ATIVIDADES DE INVESTIMENTOS** | | |
+| Imobilizados | (3.363.969,59) | (361.218,99) |
+| Intangível - Direitos sobre Atletas | (105.637,14) | (457.649,22) |
+| Investimentos | (132,00) | |
+| **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES DE INVESTIMENTOS** | **(3.469.738,73)** | **(818.868,21)** |
+| | | |
+| **ATIVIDADES DE FINANCIAMENTOS** | | |
+| Empréstimos/ financiamentos tomados | 8.344.888,81 | 11.429.153,04 |
+| Receita Diferida | 8.947.271,60 | - |
+| **CAIXA LÍQUIDO CONSUMIDO NAS ATIVIDADES DE FINANCIAMENTOS** | **17.292.160,41** | **11.429.153,04** |
+| | | |
+| **AUMENTO / (REDUÇÃO) DO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA** | **(345.941,49)** | **401.048,14** |
+| | | |
+| **SALDO DE CAIXA E EQUIVALENTES DE CAIXA NO INÍCIO DO EXERCÍCIO** | 741.400,73 | 340.352,59 |
+| **SALDO DE CAIXA E EQUIVALENTES DE CAIXA NO FINAL DO EXERCÍCIO** | 395.459,24 | 741.400,73 |
+| **AUMENTO (REDUÇÃO) DO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA** | **(345.941,49)** | **401.048,14** |
 
 As notas explicativas da administração são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:00404
-026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO
-JORGE BRAVO DE
-CARVALHO:00404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Muthipla v3, ou=3096893710012,0,
-ss=chf, ou=referencia, ou=Certificado PE
-A1, cn=HUGO JORGE BRAVO DE
-CARVALHO:00404026141
-Dados: 2024.04.30 21:48:20 -03'00'
-
-LUCIVANDO
-VICENTE
-ALVES:6964983910
-0
-
-Assinado de forma digital por LUCIVANDO
-VICENTE ALVES:6964983910
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Muthipla v3, ou=3096893710012,0,
-ss=Presencial, ou=Certificado PE A1,
-cn=LUCEVANDO VICENTE
-ALVES:6964983910
-Dados: 2024.04.30 21:48:55 -03'00'
-
-VINICIUS
-CLEMENTINO
-CIRQUEIRA:00
-203672100
-
-Assinado de forma digital por VINICIUS
-CLEMENTINO CIRQUEIRA:00203672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria
-de Receita Federal do Brasil - RFB,
-cn=RFB e-CPF A1, cn=IDN BRANCO,
-cn=1107226.0200-00,
-cn=1106626.0200-00,
-cn=1106626.0200-00
-Data: 2024.04.30 22:21:15 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-
-Diretor presidente
-
-CPF: 004.040.261-41
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Vinicius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:46:20 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:46:55 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:21:13 -03'00')
 
 --- pág. 8 ---
 
@@ -1157,77 +930,17 @@ Para o exercício 2023 houve mudança no critério de apresentação das despesa
 
 --- pág. 24 ---
 
-Vila Nova F.C
-A FOGRA DO CENTRO-DESTE!
-
-### 35 Eventos subsequentes
+**35 Eventos subsequentes**
 
 Até a data de apresentação não houve identificação de eventos que pudessem ser objeto de nota.
 
 Goiânia (GO), 29 de abril de 2024.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:00
-404026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinicius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO
-JORGE BRAVO DE
-CARVALHO:00404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Muthpla v3, ou=30968597000123,
-clasifobroconferencia, ou=Certificado PF
-A1: c=4982727 JORGE BRAVO DE
-CARVALHO:00404026141
-Dados: 2024.04.30 21:48:14 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-
-Diretor presidente
-
-CPF: 004.040.261-41
-
-LUCIVANDO
-VICENTE
-ALVES:6964983
-9100
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:6964983
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Muthpla v3, ou=30968597000123,
-clasifreconferencia, ou=Certificado PF A1:
-cn=LUCIVANDO VICENTE
-ALVES:6964983
-Dados: 2024.04.30 21:49:00 -03'00'
-
-VINICIUS
-CLEMENTINO
-CIRQUEIRA:002
-03672100
-
-Vinicius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado de forma digital por VINICIUS
-CLEMENTINO CIRQUEIRA:00203672100
-DN: c=BR, o=ICP-Brasil, ou=Secretaria
-de Receita Federal do Brasil - RFB,
-ou=RFB e-CPF A1, ou=(EM BRANCO),
-clas1937236100E197,
-ou=vidovoconferencia, cn=VINICIUS
-CLEMENTINO CIRQUEIRA:00203672100
-Dados: 2024.04.30 22:22:55 -03'00'
+(Assinaturas digitais: Hugo Jorge Bravo de Carvalho, Dados: 2024.04.30 21:48:14 -03'00'; Lucivando Vicente Alves, Dados: 2024.04.30 21:49:00 -03'00'; Vinicius Clementino Cirqueira, Dados: 2024.04.30 22:22:55 -03'00')
 
 --- pág. 25 ---
 

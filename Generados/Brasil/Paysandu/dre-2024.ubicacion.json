@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2024.md",
+ "mdSha1": "6ff3df1b95cb691501883e32f9ac43159fcc6020",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:09:30.243Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    46
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento contiene un único bloque: la Demonstração do resultado de 2024 y 2023, en reais. No hay notas que desglosen ingresos o gastos. El perímetro no se indica; probablemente es individual (asociación)."
+}

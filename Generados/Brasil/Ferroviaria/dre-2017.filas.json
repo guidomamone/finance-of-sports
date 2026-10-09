@@ -1,0 +1,222 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
+ "mdSha1": "4c426e11c06ddb47f52af16d8d2e460b6744b91b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:56:42.556Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importes con centavos (ej. 8.676.949,89 C en L21) indican unidades (reais)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Receitas Brutas",
+   "actual": "8.676.949,89 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "(-) Deduções",
+   "actual": "87.334,64 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "= Receita Líquida",
+   "actual": "8.589.615,25 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "(-) Custos",
+   "actual": "7.802.237,36 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "= Lucro Bruto",
+   "actual": "787.377,89 C",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "(-) Despesas Administrativas",
+   "actual": "2.233.261,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 27,
+   "etiqueta": "(-) Despesas Financeiras",
+   "actual": "437.909,72 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "(-) Despesas Gerais",
+   "actual": "55.180,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "(-) Despesas Tributárias",
+   "actual": "13.242,56 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 30,
+   "etiqueta": "(+) Receitas Financeiras",
+   "actual": "7.798,51 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "(+) Outras Receitas Operacionais",
+   "actual": "371.663,59 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 32,
+   "etiqueta": "= Prejuízo Operacional",
+   "actual": "1.572.763,29 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "(+) Outras Receitas",
+   "actual": "14.003,20 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 34,
+   "etiqueta": "= Prejuízo Contábil Líquido antes da Contribuição Social",
+   "actual": "1.558.760,09 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "(-) Contribuição Social",
+   "actual": "46.764,06 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "= Prejuízo Contábil Líquido antes do Imposto de Renda",
+   "actual": "1.605.524,15 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 37,
+   "etiqueta": "(-) Imposto de Renda",
+   "actual": "120.585,87 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 38,
+   "etiqueta": "= Prejuízo",
+   "actual": "1.726.110,02 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 39,
+   "etiqueta": "= Prejuízo Líquido do Período",
+   "actual": "1.726.110,02 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 39,
+  "actual": "1.726.110,02 D",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "Documento con una sola columna de importes (sin año anterior). Signos expresados con sufijo C (crédito) / D (débito). No se imprimen totales de ingresos ni de gastos. L38 y L39 repiten el mismo resultado; se toma L39 como resultado del ejercicio."
+}

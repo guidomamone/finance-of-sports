@@ -405,199 +405,185 @@ Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 16 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912  
 
-Fundada em 30 de Dezembro de 2022
-
-# CLUBE DE REGATAS BRASIL - CRB
-
-CNPJ nº 12.159.281/0001-09
-
-# DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO
-
-Findos em 31 de dezembro de 2023 e 2022
-
+**CLUBE DE REGATAS BRASIL - CRB**  
+**CNPJ nº 12.159.281/0001-09**  
+**DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO**  
+**Findos em 31 de dezembro de 2023 e 2022**  
 (Em milhares de reais)
 
-|   | Notas | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- | --- |
-|  RECEITA LÍQUIDA | 15 | 18.873 | 14.799  |
-|  (-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS |  | (6.024) | (6.975)  |
-|  RESULTADO BRUTO |  | 12.849 | 7.824  |
-|  (-) DESPESAS / RECEITAS DA ATIVIDADE CONTINUADA |  | (7.801) | (7.929)  |
-|  (-) Despesas Gerais e Administrativas | 17 | (5.058) | (3.288)  |
-|  (-) Despesas com Pessoal | 17 | (29.434) | (18.425)  |
-|  (-) Outras (Despesas) e Receitas | 16 | 26.691 | 13.784  |
-|  RESULTADO FINANCEIRO LÍQUIDO | 18 | (253) | 130  |
-|  (-) Despesas Financeiras |  | (384) | (18)  |
-|  (+) Receitas Financeiras |  | 131 | 148  |
-|  SUPERÁVIT DO EXERCICIO |  | 4.795 | 25  |
+| | Notas | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: | :---: |
+| **RECEITA LÍQUIDA** | 15 | **18.873** | **14.799** |
+| | | | |
+| **(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS** | | **(6.024)** | **(6.975)** |
+| | | | |
+| **RESULTADO BRUTO** | | **12.849** | **7.824** |
+| | | | |
+| **(-) DESPESAS / RECEITAS DA ATIVIDADE CONTINUADA** | | **(7.801)** | **(7.929)** |
+| (-) Despesas Gerais e Administrativas | 17 | (5.058) | (3.288) |
+| (-) Despesas com Pessoal | 17 | (29.434) | (18.425) |
+| (-) Outras (Despesas) e Receitas | 16 | 26.691 | 13.784 |
+| | | | |
+| **RESULTADO FINANCEIRO LÍQUIDO** | 18 | **(253)** | **130** |
+| (-) Despesas Financeiras | | (384) | (18) |
+| (+) Receitas Financeiras | | 131 | 148 |
+| | | | |
+| **SUPERÁVIT DO EXERCICIO** | | **4.795** | **25** |
 
-*As notas explicativas são parte integrante das demonstrações financeiras.
+\*As notas explicativas são parte integrante das demonstrações financeiras.
 
-Página | 16
-
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
+---
+Página | 16  
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 17 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Dezembro de 2018
-
-# CLUBE DE REGATAS BRASIL - CRB
-
-# CNPJ nº 12.159.281/0001-09
-
-# DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES
-
-Findos em 31 de dezembro de 2023 e 2022
-
+### CLUBE DE REGATAS BRASIL - CRB
+**CNPJ nº 12.159.281/0001-09**  
+**DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES**  
+**Findos em 31 de dezembro de 2023 e 2022**  
 (Em milhares de reais)
 
-|   | Notas | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- | --- |
-|  RESULTADO LÍQUIDO DO EXERCÍCIO |  | 4.795 | 25  |
-|  Outros Resultados Abrangentes |  | - | -  |
-|  RESULTADO ABRANGENTE TOTAL |  | 4.795 | 25  |
+| | Notas | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: | :---: |
+| **RESULTADO LÍQUIDO DO EXERCÍCIO** | | **4.795** | **25** |
+| Outros Resultados Abrangentes | | - | - |
+| **RESULTADO ABRANGENTE TOTAL** | | **4.795** | **25** |
 
-*As notas explicativas são parte integrante das demonstrações contábeis.
+\*As notas explicativas são parte integrante das demonstrações contábeis.
+
+---
 
 Página | 17
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
-- Instituição Reconhecida de Utilidade Pública -
+Rua Silvério Jorge, 268 - Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br - CNPJ (MF) 12.159.281/0001-09  
+\- Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 18 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 20 de Setembro de 1952
-
-# CLUBE DE REGATAS BRASIL - CRB
-
-# CNPJ nº 12.159.281/0001-09
-
-# DEMONSTRAÇÕES DAS MUTAÇÕES DO PATRIMÔNIO LÍQUIDO
-
-# Findos em 31 de dezembro de 2023 e 2022
-
+### CLUBE DE REGATAS BRASIL - CRB
+**CNPJ nº 12.159.281/0001-09**  
+**DEMONSTRAÇÕES DAS MUTAÇÕES DO PATRIMÔNIO LÍQUIDO**  
+**Findos em 31 de dezembro de 2023 e 2022**  
 (Em milhares de reais)
 
-|   | Nota | Patrimônio Social | Superávit/Déficit do Exercício | Patrimônio Líquido  |
-| --- | --- | --- | --- | --- |
-|  Saldos em 31 de dezembro de 2021 | 13 | 4.822 | 1.215 | 6.037  |
-|  Transferência para o Patrimônio Social |  | 1.215 | (1.215) | -  |
-|  Superávit do Exercício |  |  | 25 | 25  |
-|  Saldos em 31 de Dezembro de 2022 | 13 | 6.037 | 25 | 6.062  |
-|  Transferência para o Patrimônio Social |  | 25 | (25) | -  |
-|  Superávit do Exercício |  |  | 4.795 | 4.795  |
-|  Saldos em 31 de Dezembro de 2023 | 13 | 6.062 | 4.795 | 10.857  |
+| | Nota | Patrimônio Social | Superávit/Déficit do Exercício | Patrimônio Líquido |
+| :--- | :---: | :---: | :---: | :---: |
+| **Saldos em 31 de dezembro de 2021** | 13 | 4.822 | 1.215 | 6.037 |
+| Transferência para o Patrimônio Social | | 1.215 | (1.215) | - |
+| Superávit do Exercício | | | 25 | 25 |
+| **Saldos em 31 de Dezembro de 2022** | 13 | 6.037 | 25 | 6.062 |
+| Transferência para o Patrimônio Social | | 25 | (25) | - |
+| Superávit do Exercício | | | 4.795 | 4.795 |
+| **Saldos em 31 de Dezembro de 2023** | 13 | 6.062 | 4.795 | 10.857 |
 
-*As notas explicativas são parte integrante das demonstrações financeiras.
+\*As notas explicativas são parte integrante das demonstrações financeiras.
+
+---
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
+\- Instituição Reconhecida de Utilidade Pública -
 
 Página | 18
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
-- Instituição Reconhecida da Utilidade Pública -
-
 --- pág. 19 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Dezembro de 1913
-
-# CLUBE DE REGATAS BRASIL - CRB
-
-# CNPJ nº 12.159.281/0001-09
-
-# DEMONSTRAÇÕES DOS FLUXOS DE CAIXA - MÉTODO INDIRETO
-
-# Findos em 31 de dezembro de 2023 e 2022
-
+### CLUBE DE REGATAS BRASIL - CRB
+**CNPJ nº 12.159.281/0001-09**  
+**DEMONSTRAÇÕES DOS FLUXOS DE CAIXA - MÉTODO INDIRETO**  
+**Findos em 31 de dezembro de 2023 e 2022**  
 (Em milhares de reais)
 
-|   | Notas | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- | --- |
-|  Fluxo de Caixa das Atividades Operacionais  |   |   |   |
-|  Superávit Líquido do Exercício |  | 4.795 | 25  |
-|  Superávit Líquido do Exercício Ajustado |  | 4.795 | 25  |
-|  (Aumento) Redução nos Ativos Operacionais  |   |   |   |
-|  Depósitos Judiciais | 5 | 148 | (168)  |
-|  Variação nos Ativos Operacionais |  | 148 | (168)  |
-|  Aumento (Redução) nos Passivos Operacionais  |   |   |   |
-|  Fornecedores | 8 | (46) | 46  |
-|  Obrigações Trabalhistas | 10 | (74) | 19  |
-|  Obrigações Tributárias | 9 | 69 | 29  |
-|  Parcelamento Tributários | 12 | (216) | (190)  |
-|  Variação no Passivo Operacionais |  | (267) | (96)  |
-|  Caixa Gerado nas Atividades Operacionais |  | 4.676 | (239)  |
-|  Fluxo de Caixa das Atividades de Investimentos  |   |   |   |
-|  Aquisição de Imobilizado | 6 | (961) | (468)  |
-|  Caixa Aplicado nas Atividades de Investimentos |  | (961) | (468)  |
-|  Caixa Aplicado nas Atividades de Financiamentos |  | (1.000) | 1.000  |
-|  Empréstimos e financiamentos | 7 | (1.000) | 1.000  |
-|  Caixa e Equivalentes de Caixa (Aplicado) Gerado no Exercício |  | 2.715 | 293  |
-|  Caixa e Equivalentes de Caixa no Início do Exercício | 4 | 1.674 | 1.381  |
-|  Caixa e Equivalentes de Caixa no Final do Exercício | 4 | 4.389 | 1.674  |
-|  Caixa e Equivalentes de Caixa (Aplicado) Gerado no Exercício |  | 2.715 | 293  |
+| | Notas | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: | :---: |
+| **Fluxo de Caixa das Atividades Operacionais** | | | |
+| Superávit Líquido do Exercício | | 4.795 | 25 |
+| **Superávit Líquido do Exercício Ajustado** | | **4.795** | **25** |
+| **(Aumento) Redução nos Ativos Operacionais** | | | |
+| Depósitos Judiciais | 5 | 148 | (168) |
+| **Variação nos Ativos Operacionais** | | **148** | **(168)** |
+| **Aumento (Redução) nos Passivos Operacionais** | | | |
+| Fornecedores | 8 | (46) | 46 |
+| Obrigações Trabalhistas | 10 | (74) | 19 |
+| Obrigações Tributárias | 9 | 69 | 29 |
+| Parcelamento Tributários | 12 | (216) | (190) |
+| **Variação no Passivo Operacionais** | | **(267)** | **(96)** |
+| **Caixa Gerado nas Atividades Operacionais** | | **4.676** | **(239)** |
+| | | | |
+| **Fluxo de Caixa das Atividades de Investimentos** | | | |
+| Aquisição de Imobilizado | 6 | (961) | (468) |
+| **Caixa Aplicado nas Atividades de Investimentos** | | **(961)** | **(468)** |
+| | | | |
+| **Caixa Aplicado nas Atividades de Financiamentos** | | **(1.000)** | **1.000** |
+| Empréstimos e financiamentos | 7 | (1.000) | 1.000 |
+| | | | |
+| **Caixa e Equivalentes de Caixa (Aplicado) Gerado no Exercício** | | **2.715** | **293** |
+| | | | |
+| Caixa e Equivalentes de Caixa no Inicio do Exercício | 4 | 1.674 | 1.381 |
+| Caixa e Equivalentes de Caixa no Final do Exercício | 4 | 4.389 | 1.674 |
+| **Caixa e Equivalentes de Caixa (Aplicado) Gerado no Exercício** | | **2.715** | **293** |
 
-*As notas explicativas são parte integrante das demonstrações financeiras.
+\*As notas explicativas são parte integrante das demonstrações financeiras.
 
+---
 Página | 19
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 20 ---
 
-CLUBE DE REGATAS BRASIL
-Fundada em 30 de Setembro de 1918
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-# CLUBE DE REGATAS BRASIL - CRB
+### CLUBE DE REGATAS BRASIL - CRB
 
-CNPJ nº 12.159.281/0001-09
+**CNPJ nº 12.159.281/0001-09**
 
-# Notas Explicativas às Demonstrações Financeiras
-Findas em 31 de dezembro de 2023
+**Notas Explicativas às Demonstrações Financeiras**  
+**Findas em 31 de dezembro de 2023**
 
-# 1. Contexto Operacional
+#### 1. Contexto Operacional
 
 O Clube de Regatas Brasil – CRB com inscrição no CNPJ de nº 12.159.281/0001-09 é uma entidade civil sem fins lucrativos econômicos e com personalidade própria fundado em 20 de setembro de 1912. Sua principal finalidade é promover a prática de futebol profissional e não profissional, além de outros desportos, olímpicos ou não, engajando-se no fomento de atividades sociais, educativas, recreativas, culturais cívicas e assistenciais.
 
-# 2. Base de Preparação das Demonstrações Financeiras
+#### 2. Base de Preparação das Demonstrações Financeiras
 
-As demonstrações financeiras foram preparadas e estão sendo apresentadas conforme as práticas contábeis adotados no Brasil, aplicáveis às entidades sem finalidade de lucros de acordo com a ITG 2002 (R1) – Contabilidade para entidade sem finalidade de lucros e ITG 2003 (R1) – Entidades desportiva profissional, aprovadas pelas resoluções CFC nº 1.255/09 e 1.429/13 do Conselho Federal de Contabilidade, respectivamente, assim como a OTG 2003 – Orientações sobre a Aplicação da ITG 2003, e legislação específica aplicável.
+As demonstrações financeiras foram preparadas e estão sendo apresentadas conforme as práticas contábeis adotados no Brasil, aplicáveis às entidades sem finalidade de lucros de acordo com a ITG 2002 (R1) – Contabilidade para entidade sem finalidade de lucros e ITG 2003 (R1) – Entidades desportiva profissional, aprovadas pelas resoluções CFC n° 1.255/09 e 1.429/13 do Conselho Federal de Contabilidade, respectivamente, assim como a OTG 2003 – Orientações sobre a Aplicação da ITG 2003, e legislação específica aplicável.
 
 As demonstrações financeiras foram elaboradas alicerçadas em diversas bases de avaliação utilizadas nas estimativas contábeis. As estimativas contábeis envolvidas na preparação das demonstrações financeiras foram baseadas em fatores objetivos e subjetivos, com base no julgamento da administração para determinação do valor adequado a ser registrado e apresentado nas demonstrações.
 
 As demonstrações financeiras findas em 31 de dezembro de 2023 foram assinadas, pela Diretoria Executiva do Clube, em 20 de maio de 2024.
 
-# 3. Principais práticas contábeis adotadas
+#### 3. Principais práticas contábeis adotadas
 
 As operações foram contabilizadas com base nas práticas consubstanciadas das Normas Brasileiras de Contabilidade (NBC), inclusive suas alterações, especialmente no que tange à ITG 2002 – Entidade Sem Finalidade de Lucro, ITG 2003 (R1) – Entidades desportiva profissional, assim como a OTG 2003 – Orientações sobre a Aplicação da ITG 2003, e legislação específica aplicável.
 
-# a) Moeda Funcional e de Apresentação
+**a) Moeda Funcional e de Apresentação**
 
 As demonstrações financeiras estão apresentadas em reais, que é a moeda funcional da entidade e, quando existentes, operações em moeda estrangeira são convertidas para reais, de acordo com as taxas de câmbio da moeda nacional. Ganhos e perdas, quando existentes, resultantes do processo de conversão são alocados no resultado do período.
 
+---
 Página | 20
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 21 ---
@@ -759,355 +745,300 @@ Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
 
 --- pág. 25 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Setembro de 1918
+Devido a sua condição de Clube sem fins lucrativos, goza do benefício de isenção do pagamento da COFINS incidente sobre as receitas relativas às atividades próprias, de acordo com as leis nº 9.718/98 e nº 10.833/03.
 
-Devido a sua condição de Clube sem fins lucrativos, goza do benefício de isenção do pagamento da COFINS incidente sobre as receitas relativas às atividades próprias, de acordo com as leis n° 9.718/98 e n° 10.833/03.
-
-# (iv) Instituto Nacional da Seguridade Social (INSS)
+**(iv) Instituto Nacional da Seguridade Social (INSS)**
 
 O Clube está recolhendo a quota patronal à alíquota de 4,5%, incidente sobre a folha de pagamento. O Clube por manter equipe de futebol profissional tem a contribuição empresarial da Seguridade Social deduzida à alíquota correspondente a 5% da receita bruta decorrente:
 
-a) Dos espetáculos desportivos de que participe no territorio nacional, em qualquer modalidade desportiva, inclusive jogos internacionais;
-b) De qualquer forma de patrocínio, licenciamenti de uso de marcas e símbolos de publicidade, ou propaganda e de transmissão dos espetáculos desportivos
+a) Dos espetáculos desportivos de que participe no território nacional, em qualquer modalidade desportiva, inclusive jogos internacionais;
 
-# (v) Impostos sobre receitas do clube
+b) De qualquer forma de patrocínio, licenciamentos de uso de marcas e símbolos de publicidade, ou propaganda e de transmissão dos espetáculos desportivos
+
+**(v) Impostos sobre receitas do clube**
 
 As receitas estão sujeitas aos seguintes impostos e contribuições, pelas seguintes alíquotas básicas: Imposto/Contribuição Alíquota (%):
 
 a) Seguridade Social (INSS): 5%
 
-# p) Resultado Financeiro
+**p) Resultado Financeiro**
 
 As receitas financeiras são substancialmente representadas por juros de aplicações financeiras, e as despesas financeiras se referem a juros e atualizações monetárias decorrentes de transações bancárias e contas a pagar.
 
-# q) Eventos Subsequentes
+**q) Eventos Subsequentes**
 
 Correspondem aos eventos ocorridos entre a data-base das demonstrações financeiras e a data de autorização para a sua emissão. São compostos por:
 
-Eventos que originam ajustes: são aqueles que evidenciam condições que já existiam na data-base das demonstrações financeiras; e
-Eventos que não originam ajustes: são aqueles que evidenciam condições que não existiam na data-base das demonstrações financeiras.
+✓ Eventos que originam ajustes: são aqueles que evidenciam condições que já existiam na data-base das demonstrações financeiras; e
+
+✓ Eventos que não originam ajustes: são aqueles que evidenciam condições que não existiam na data-base das demonstrações financeiras.
 
 A administração da entidade entende que não houve qualquer evento subsequente que requer ajustes ou divulgações para as demonstrações financeiras encerradas em 31 de dezembro de 2021.
 
 Página | 25
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
+---
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 26 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Setembro de 1952
-
-# r) Continuidade Operacional
+### r) Continuidade Operacional
 
 As demonstrações financeiras foram elaboradas pela entidade de acordo com a base contábil de continuidade operacional, ou seja, com base no pressuposto de que a entidade está operando e continuará em operação num futuro previsível e de que não é pretendido que a entidade seja liquidada ou venha a interromper suas atividades.
 
-# 4. Caixa e Equivalente de Caixa
+### 4. Caixa e Equivalente de Caixa
 
 Os valores que compõem caixa e equivalentes de caixa estão assim constituídos:
 
-|  Caixa e Equivalentes de Caixa | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Caixa | 1.189 | 1.309  |
-|  Bancos Conta Movimento | 233 | 267  |
-|  Aplicações de liquidez imediata | 2.967 | 98  |
-|  Total | 4.389 | 1.674  |
+| Caixa e Equivalentes de Caixa | 31/12/2023 | 31/12/2022 |
+| :--- | :--- | :--- |
+| Caixa | 1.189 | 1.309 |
+| Bancos Conta Movimento | 233 | 267 |
+| Aplicações de liquidez imediata | 2.967 | 98 |
+| Total | 4.389 | 1.674 |
 
 O saldo das contas correntes, estava assim representado:
 
-|  Banco Conta Movimento | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Caixa Econ.Ag.Rosa da Fonseca Ag.1684 | 88 | -  |
-|  Caixa Economica c/c 6232-9 | 63 | -  |
-|  Caixa Economica C/C 06229-9 | 53 | -  |
-|  Caixa Economica c/c 6231 | 26 | 184  |
-|  Caixa Economica-Pajuçara-c/c 68-3 | 3 | 83  |
-|  Total | 233 | 267  |
+| Banco Conta Movimento | 31/12/2023 | 31/12/2022 |
+| :--- | :--- | :--- |
+| Caixa Econ.Ag.Rosa da Fonseca Ag.1684 | 88 | - |
+| Caixa Economica c/c 6232-9 | 63 | - |
+| Caixa Economica C/C 06229-9 | 53 | - |
+| Caixa Economica c/c 6231 | 26 | 184 |
+| Caixa Economica-Pajuçara-c/c 68-3 | 3 | 83 |
+| Total | 233 | 267 |
 
 As aplicações financeiras são assim apresentadas:
 
-|  Aplicações de Liquidez Imediata | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Caixa Economica-Ag.Rosa Aplicaçao | 109 | 82  |
-|  Xp Aplicaçao | 2.760 | -  |
-|  Xp Investimentos | 98 | -  |
-|  Caixa Economica c/Aplicaçao 6229-9 | - | 1  |
-|  Caixa Economica c/Aplicaçao 6258-2 | - | 13  |
-|  Caixa Economica C/Aplicaçao 6227 | - | 1  |
-|  Caixa Economica-c/Aplicacao 68-3 | - | 1  |
-|  Total | 2.967 | 98  |
+| Aplicações de Liquidez Imediata | 31/12/2023 | 31/12/2022 |
+| :--- | :--- | :--- |
+| Caixa Economica-Ag.Rosa Aplicaçao | 109 | 82 |
+| Xp Aplicaçao | 2.760 | - |
+| Xp Investimentos | 98 | - |
+| Caixa Economica c/Aplicaçao 6229-9 | - | 1 |
+| Caixa Economica c/Aplicaçao 6258-2 | - | 13 |
+| Caixa Economica C/Aplicaçao 6227 | - | 1 |
+| Caixa Economica-c/Aplicacao 68-3 | - | 1 |
+| Total | 2.967 | 98 |
 
-# 5. Depósitos Judiciais
+### 5. Depósitos Judiciais
 
 Nesse subgrupo se encontram classificados os valores a título de depósitos judiciais, conforme quadro a seguir:
 
-|  Depósitos Judiciais | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Depositos Judiciais | 49 | 197  |
-|  Total | 49 | 197  |
+| Depósitos Judiciais | 31/12/2023 | 31/12/2022 |
+| :--- | :--- | :--- |
+| Depositos Judiciais | 49 | 197 |
+| Total | 49 | 197 |
 
-# 6. Imobilizado
+### 6. Imobilizado
 
 O imobilizado estava assim composto pelas seguintes movimentações:
 
+---
 Página | 26
 
-Rua Silvério Jorge, 268 - Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br - CNPJ (MF) 12.159.281/0001-09
-
+Rua Silvério Jorge, 268 - Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 27 ---
 
-CLUBE DE REGATAS BRASIL
+CLUBE DE REGATAS BRASIL  
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Dezembro de 2013
-
-|  Descrição | 31/12/2023 | Adições | Baixas | 31/12/2022  |
-| --- | --- | --- | --- | --- |
-|  Imobilizado de Uso |  |  |  |   |
-|  Imóveis | 3.283 | - | - | 3.283  |
-|  Móveis e Utensílios | 264 | 35 | - | 230  |
-|  Veículos | 1.100 | 398 | - | 702  |
-|  Máquinas e Equipamentos | 1.084 | 470 | - | 614  |
-|  Recursos Naturais | 140 | - | - | 140  |
-|  Direito de Uso de Telefone | 2 | - | - | 2  |
-|  Computadores e Periféricos | 25 | 15 | - | 10  |
-|  Programas de Computadores | 51 | 43 | - | 8  |
-|  Obras do Complexo de Treinamento | 1.386 | - | - | 1.386  |
-|  Total das Imobilizações de Uso | 7.336 | 961 | - | 6.375  |
-|  (-) Depreciação Acumulada | - | - | - | -  |
-|  - | - | - | - | -  |
-|  Total da Depreciação Acumulada | - | - | - | -  |
-|  Valor Contábil | 7.336 | 961 | - | 6.375  |
+| Descrição | 31/12/2023 | Adições | Baixas | 31/12/2022 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Imobilizado de Uso** | | | | |
+| Imóveis | 3.283 | - | - | 3.283 |
+| Móveis e Utensílios | 264 | 35 | - | 230 |
+| Veículos | 1.100 | 398 | - | 702 |
+| Máquinas e Equipamentos | 1.084 | 470 | - | 614 |
+| Recursos Naturais | 140 | - | - | 140 |
+| Direito de Uso de Telefone | 2 | - | - | 2 |
+| Computadores e Periféricos | 25 | 15 | - | 10 |
+| Programas de Computadores | 51 | 43 | - | 8 |
+| Obras do Complexo de Treinamento | 1.386 | - | - | 1.386 |
+| **Total das Imobilizações de Uso** | **7.336** | **961** | **-** | **6.375** |
+| **(-) Depreciação Acumulada** | | | | |
+| | - | - | - | - |
+| **Total da Depreciação Acumulada** | **-** | **-** | **-** | **-** |
+| | | | | |
+| **Valor Contábil** | **7.336** | **961** | **-** | **6.375** |
 
 No exercício findo em 31 de dezembro de 2023 o Clube não realizou levantamento patrimonial do seu ativo imobilizado, cuja identificação dos efeitos está sujeita ao referido trabalho (CPC 27 – Ativo Imobilizado), e não realizou o teste de recuperabilidade do ativo imobilizado (CPC 01 – Redução ao Valor Recuperável de Ativos).
 
-# 7. Empréstimos e Financiamentos
+### 7. Empréstimos e Financiamentos
 
 O saldo dos empréstimos, estava representado por operações de empréstimos mantidas junto à MJLM Cobranças Extrajudiciais Eireli, cujas parcelas irão vencer a curto, apresentando a seguinte composição:
 
-|  Empréstimos e Financiamentos  |
-| --- |
-|  Terceiros  |
-|  Total  |
+| Empréstimos e Financiamentos | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Terceiros | - | 1.000 |
+| **Total** | **-** | **1.000** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  - | 1.000  |
-|  - | 1.000  |
-
-# 8. Fornecedores
+### 8. Fornecedores
 
 O saldo dos fornecedores está registrado pelo valor histórico, conforme saldo apresentado no quadro a seguir:
 
-|  Fornecedores  |
-| --- |
-|  Fornecedores Diversos  |
-|  Total  |
+| Fornecedores | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Fornecedores Diversos | - | 46 |
+| **Total** | **-** | **46** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  - | 46  |
-|  - | 46  |
-
-# 9. Obrigações Tributárias
+### 9. Obrigações Tributárias
 
 É representado por obrigações tributárias de curto prazo, conforme quadro a seguir:
 
-|  Obrigações Tributárias  |
-| --- |
-|  Irrf a Recolher  |
-|  Inss a Recolher  |
-|  Grrf a Recolher  |
-|  Fgts a Recolher  |
-|  Pis/Cofins/Csll retido  |
-|  Pis a Recolher  |
-|  Subtotal  |
+| Obrigações Tributárias | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Irrf a Recolher | 71 | 33 |
+| Inss a Recolher | 35 | 23 |
+| Grrf a Recolher | 14 | - |
+| Fgts a Recolher | 20 | 18 |
+| Pis/Cofins/Csll retido | 4 | 3 |
+| Pis a Recolher | 4 | 2 |
+| **Subtotal** | **148** | **79** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  71 | 33  |
-|  35 | 23  |
-|  14 | -  |
-|  20 | 18  |
-|  4 | 3  |
-|  4 | 2  |
-|  148 | 79  |
-
+---
 Página | 27
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (62) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
-- Instituição Reconhecida de Utilidade Pública -
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br - CNPJ (MF) 12.159.281/0001-09  
+\- Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 28 ---
 
 CLUBE DE REGATAS BRASIL
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Dezembro de 1918
-
-# 10. Obrigações Trabalhistas e Previdenciárias
+### 10. Obrigações Trabalhistas e Previdenciárias
 
 Esse subgrupo estava representado por obrigações trabalhistas e previdenciárias de curto prazo, conforme quadro a seguir:
 
-|  Obrigações Trabalhistas  |
-| --- |
-|  Salários  |
-|  Subtotal  |
+| Obrigações Trabalhistas | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Salários | 20 | 108 |
+| **Subtotal** | **20** | **108** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  20 | 108  |
-|  20 | 108  |
-
-# 11. Provisões Trabalhistas
+### 11. Provisões Trabalhistas
 
 Ao término do exercício, o saldo das provisões trabalhistas estava representado da seguinte forma:
 
-|  Obrigações Trabalhistas  |
-| --- |
-|  Provisão p/ Férias  |
-|  Subtotal  |
+| Obrigações Trabalhistas | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Provisão p/ Férias | 14 | - |
+| **Subtotal** | **14** | **-** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  14 | -  |
-|  14 | -  |
-
-# 12. Parcelamentos de Dívidas Trabalhistas
+### 12. Parcelamentos de Dívidas Trabalhistas
 
 O saldo desse subgrupo é representado por parcelamentos e dívidas tributárias federais referente a parcelamento de FGTS, com saldo apresentado conforme quadro a seguir:
 
-|  Parcelamentos  |
-| --- |
-|  Tributos parcelados  |
-|  Subtotal  |
+| Parcelamentos | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Tributos parcelados | 735 | 951 |
+| **Subtotal** | **735** | **951** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  735 | 951  |
-|  735 | 951  |
-
-# 13. Patrimônio Líquido
+### 13. Patrimônio Líquido
 
 O patrimônio líquido do clube está representado pelo patrimônio social e resultados acumulados obtidos ao longo dos períodos sejam déficits e/ou superávits, junto com o superávit do exercício, conforme apresentado a seguir:
 
-|  Patrimônio Líquido  |
-| --- |
-|  Patrimônio Social  |
-|  Superávit do Exercício  |
-|  Total  |
+| Patrimônio Líquido | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Patrimônio Social | 6.062 | 6.037 |
+| Superávit do Exercício | 4.795 | 25 |
+| **Total** | **10.857** | **6.062** |
 
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  6.062 | 6.037  |
-|  4.795 | 25  |
-|  10.857 | 6.062  |
-
-# 14. Resultado do Exercício
+### 14. Resultado do Exercício
 
 No exercício findo em 31 de dezembro de 2023, a entidade apresentou um superávit de R$ 4.795 mil, sendo que em 2022, houve superávit de R$ 25 mil, conforme quadro a seguir:
 
-|  Resultado do Exercício  |
-| --- |
-|  Superávit/Déficit do Exercício  |
-|  Total  |
-
-|  31/12/2023 | 31/12/2022  |
-| --- | --- |
-|  4.795 | 25  |
-|  4.795 | 25  |
+| Resultado do Exercício | 31/12/2023 | 31/12/2022 |
+| :--- | :---: | :---: |
+| Superávit/Déficit do Exercício | 4.795 | 25 |
+| **Total** | **4.795** | **25** |
 
 Página | 28
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
-Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
+---
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254  
+Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09  
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 29 ---
 
 CLUBE DE REGATAS BRASIL
+Fundado em 20 de Setembro de 1912
 
-Fundada em 30 de Dezembro de 2013
-
-# 15. Receitas
+## 15. Receitas
 
 As receitas estavam assim dispostas, em 31 de dezembro de 2023:
 
-|  Receita Bruta | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Mensalidades E Contribuições | 18.840 | 14.793  |
-|  Cursos | 33 | -  |
-|  Receitas Patrimoniais | - | 6  |
-|  Total | 18.873 | 14.799  |
+| Receita Bruta | 31/12/2023 | 31/12/2022 |
+|---|---|---|
+| Mensalidades E Contribuições | 18.840 | 14.793 |
+| Cursos | 33 | - |
+| Receitas Patrimoniais | - | 6 |
+| **Total** | **18.873** | **14.799** |
 
-# 16. Outras Receitas
+## 16. Outras Receitas
 
 No exercício findo em 31 de dezembro de 2023, outras receitas estavam assim dispostas:
 
-|  Outras Receitas | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Patrocínios/Marketing/Royalties/Emendas Parlamentais | 16.613 | 13.593  |
-|  Direito de Participação LFF | 9.829 | -  |
-|  Doações/contribuições voluntarias | 223 | 127  |
-|  Recuperação de despesas | 26 | 16  |
-|  Ajudas de custo/CBF/COVID | - | 48  |
-|  Total | 26.691 | 13.784  |
+| Outras Receitas | 31/12/2023 | 31/12/2022 |
+|---|---|---|
+| Patrocínios/Marketing/Royalties/Emendas Parlamentais | 16.613 | 13.593 |
+| Direito de Participação LFF | 9.829 | - |
+| Doaçoes/contribuições voluntarias | 223 | 127 |
+| Recuperação de despesas | 26 | 16 |
+| Ajudas de custo/CBF/COVID | - | 48 |
+| **Total** | **26.691** | **13.784** |
 
-# 17. Despesas Gerais e Administrativas
+## 17. Despesas Gerais e Administrativas
 
 No exercício findo em 31 de dezembro de 2023, as despesas gerais e administrativas estavam assim dispostas:
 
-|  Despesas Gerais e Administrativas | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Despesas Com Pessoal | 29.434 | 18.425  |
-|  Serviços De Terceiros | 2.521 | 1.556  |
-|  Despesas Administrativas | 1.937 | 1.284  |
-|  Materiais | 433 | 232  |
-|  Despesas Gerais | 117 | 146  |
-|  Despesas Tributárias | 50 | 70  |
-|  Total | 34.492 | 21.713  |
+| Despesas Gerais e Administrativas | 31/12/2023 | 31/12/2022 |
+|---|---|---|
+| Despesas Com Pessoal | 29.434 | 18.425 |
+| Serviços De Terceiros | 2.521 | 1.556 |
+| Despesas Administrativas | 1.937 | 1.284 |
+| Materiais | 433 | 232 |
+| Despesas Gerais | 117 | 146 |
+| Despesas Tributárias | 50 | 70 |
+| **Total** | **34.492** | **21.713** |
 
-# 18. Despesas e Receitas Financeiras
+## 18. Despesas e Receitas Financeiras
 
 A entidade incorreu nas seguintes despesas e receitas financeiras:
 
-|  Despesas e Receitas Financeiras | 31/12/2023 | 31/12/2022  |
-| --- | --- | --- |
-|  Rendimentos Aplic Financeira | 131 | 148  |
-|  Juros e Multa s/impostos | - | -  |
-|  Despesas Bancarias | (22) | (18)  |
-|  Juros Passivos | (362) | -  |
-|  Total | (253) | 130  |
+| Despesas e Receitas Financeiras | 31/12/2023 | 31/12/2022 |
+|---|---|---|
+| Rendimentos Aplic Financeira | 131 | 148 |
+| Juros e Multa s/impostos | - | - |
+| Despesas Bancarias | (22) | (18) |
+| Juros Passivos | (362) | - |
+| **Total** | **(253)** | **130** |
 
-# 19. Isenções no Exercício
+## 19. Isenções no Exercício
 
 Página | 29
 
-Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (62) 3231-4254
-
+Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
 Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 30 ---
 
 CLUBE DE REGATAS BRASIL
-
-Fundada em 30 de Setembro de 1918
+Fundado em 20 de Setembro de 1912
 
 Devido à sua condição de Clube sem fins lucrativos, o clube usufrui da prerrogativa de isenção do ônus tributário federal associado aos resultados, conforme estabelecido nos artigos 178 a 192 do Decreto n° 9.580, de 22 de novembro de 2018.
 
@@ -1137,16 +1068,14 @@ As receitas estão sujeitas aos seguintes impostos e contribuições, pelas segu
 
 a) Seguridade Social (INSS): 5%
 
-# 20. Seguros
+## 20. Seguros
 
-Em 31 de dezembro de 2023, o Clube possuía apenas cobertura de seguros de vida conforme apólice n° 00102904210000006183/2021.
+Em 31 de dezembro de 2023, o Clube possuía apenas cobertura de seguros de vida conforme apólice n° 001029042100006183/2021.
 
 Página | 30
 
 Rua Silvério Jorge, 268 – Jaraguá, Maceió - AL, 57022-110 / Fone: (82) 3231-4254
-
 Site: www.crboficial.com.br – CNPJ (MF) 12.159.281/0001-09
-
 - Instituição Reconhecida de Utilidade Pública -
 
 --- pág. 31 ---

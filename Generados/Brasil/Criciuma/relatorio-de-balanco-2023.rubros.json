@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md",
+  "pdf": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.pdf",
+  "club": "criciuma",
+  "year": 2023,
+  "generatedAt": "2026-10-09T23:23:28.667Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita com transmissão",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        14.011212
+      ],
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Receita com sócios",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        15.373894
+      ],
+      "glosa": "Ingresos por socios"
+    },
+    {
+      "label": "Receita com patrocínios",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        4.1016
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Receita de subvenções",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.51435
+      ],
+      "glosa": "Ingresos por subvenciones"
+    },
+    {
+      "label": "Receita com negociação de atletas",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.461839
+      ],
+      "glosa": "Ingresos por traspaso de jugadores"
+    },
+    {
+      "label": "Receita com jogos",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.920438
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Receita com licenciamento – royalties",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        1.1579
+      ],
+      "glosa": "Ingresos por licencias - regalías"
+    },
+    {
+      "label": "Receita Timemania - CEF",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.754578
+      ],
+      "glosa": "Ingresos por Timemania - CEF"
+    },
+    {
+      "label": "Receita Direitos Condomínio LFU",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        62.25
+      ],
+      "glosa": "Ingresos por derechos de condominio LFU"
+    },
+    {
+      "label": "Demais Receitas",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        2.196626
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Departamento Futebol Profissional",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        31.244024
+      ],
+      "glosa": "Departamento de fútbol profesional"
+    },
+    {
+      "label": "Departamento Futebol de Base",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        3.123933
+      ],
+      "glosa": "Departamento de fútbol base"
+    },
+    {
+      "label": "Departamento Futebol Feminino",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.457627
+      ],
+      "glosa": "Departamento de fútbol femenino"
+    },
+    {
+      "label": "Departamento Administrativo",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        3.010359
+      ],
+      "glosa": "Departamento administrativo"
+    },
+    {
+      "label": "Departamento de Patrimônio",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        4.220841
+      ],
+      "glosa": "Departamento de patrimonio"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.746126
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

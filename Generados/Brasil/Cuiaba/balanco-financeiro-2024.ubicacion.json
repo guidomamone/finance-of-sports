@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
+ "mdSha1": "f668f0f6c1ae0e0b0cdfe94759c3e0e1ae638fa5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:42:54.132Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    55,
+    68
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    79,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    125,
+    132
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    285,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    314,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    370,
+    378
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    392,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    422,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    674,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    697,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    706,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    715,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    727,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    734,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    756,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    763,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    774,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    786,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    797,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    818,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    831,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    843,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    850,
+    860
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b25",
+  "b26"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Valores expressos em Reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2024",
+ "columna_anterior": "31/12/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la DRE de la pág. 2 (b4) por ser la misma que la de la pág. 9 (b8)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b4 y b8 tienen las mismas filas (41) e importes (70); se carga solo b8, la de los estados auditados.",
+   "bloques": [
+    "b4",
+    "b8"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera la demonstração do resultado abrangente (b9) que habla de 'sobras' cooperativas y no parece corresponder al club?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Sobras líquidas do exercício",
+   "texto": "b9, b10 y b11 usan terminología de cooperativa (RATES, ato cooperativo), posible plantilla ajena; no son estado de resultados.",
+   "bloques": [
+    "b9",
+    "b10",
+    "b11"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estados individuales del Cuiabá Esporte Clube SAF en reales. La DRE aparece dos veces (b4 pág. 2 y b8 pág. 9); se elige b8. Notas: 13 (i) pessoal b23, (ii) administrativas b24, 14 receitas operacionais b25, 15 resultado financeiro b26 (ingresos y gastos financieros)."
+}

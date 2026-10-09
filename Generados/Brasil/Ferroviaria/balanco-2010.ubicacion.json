@@ -1,0 +1,96 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "mdSha1": "1f2d8f2441c3161955b16c2e4d03f195b4c8dc50",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:44:53.121Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    113,
+    144
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    155,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    182,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    210,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    288,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    311,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    324,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    344,
+    348
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2010",
+ "columna_anterior": "31/12/2009",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Ferroviária Futebol S.A. en b3 (pág. 5), en reales. No hay notas que desglosen ingresos o gastos; el resto de los bloques son balance, mutaciones del patrimonio, flujo de caja y notas de activo, pasivo y capital."
+}

@@ -1,0 +1,130 @@
+{
+  "md": "Clubes/Brasil/Criciuma/balanco-2020.md",
+  "pdf": "Clubes/Brasil/Criciuma/balanco-2020.pdf",
+  "club": "criciuma",
+  "year": 2020,
+  "generatedAt": "2026-10-09T23:23:28.543Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita com transmissão",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        2.390861
+      ],
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Receita com sócios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        1.804347
+      ],
+      "glosa": "Ingresos por socios"
+    },
+    {
+      "label": "Receita com patrocínios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.501123
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Receita de subvenções",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.449258
+      ],
+      "glosa": "Ingresos por subvenciones"
+    },
+    {
+      "label": "Receita com negociação de atletas",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        7.895414
+      ],
+      "glosa": "Ingresos por traspaso de jugadores"
+    },
+    {
+      "label": "Receita com jogos",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.090646
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Demais Receitas",
+      "lado": "revenue",
+      "page": 17,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.69758
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Departamento Futebol Profissional",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        7.582374
+      ],
+      "glosa": "Departamento de Fútbol Profesional"
+    },
+    {
+      "label": "Departamento Futebol de Base",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.962244
+      ],
+      "glosa": "Departamento de Fútbol Base"
+    },
+    {
+      "label": "Departamento Administrativo",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        1.059948
+      ],
+      "glosa": "Departamento Administrativo"
+    },
+    {
+      "label": "Departamento de Patrimônio",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        2.959021
+      ],
+      "glosa": "Departamento de Patrimonio"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.05808
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

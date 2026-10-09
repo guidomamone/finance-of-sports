@@ -33,3 +33,5 @@ Los 18 PDF confirmados `PDF document` real. Tamaños entre 366 KB y 3,2 MB.
   para `dudas-por-club.md` si se carga este ejercicio.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #009150 — infobox de en.wikipedia (kit local, cuerpo verde; colores verde y blanco según cs.wikipedia, el otro es blanco), verificado 2026-10-09.

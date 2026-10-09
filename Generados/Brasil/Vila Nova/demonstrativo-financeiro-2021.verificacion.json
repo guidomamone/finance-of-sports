@@ -1,0 +1,195 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.pdf",
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md",
+ "generado": "2026-10-09T23:23:30.857Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.pdf",
+   "campo": "cierre",
+   "valor": "2021-12-31",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2021",
+   "evidencia": "demonstrativo-financeiro-2021.md L7",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "1882301",
+  "a76ffa2",
+  "f695a6e",
+  "24f7229"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": false,
+   "detalle": "ingresos de 2021: 22.60414 en este documento y 27.137479 en demonstrativo-financeiro-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"(-) DESPESAS COM VENDAS EM GERAL\" no suma el renglón (6.279929 contra 6.188497, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer que no afecta la carga: Estado L270 y nota 34 L1086 difieren en 60,00; el resultado financiero del estado (5.972.119,11) es consistente con -657.771,38.",
+  "duda de extraer que no afecta la carga: El título de la nota no aparece en la transcripción (L979-L980); el total 2021 coincide con L261 aunque el 2020 (1.124.530,95) difiere del estado (1.134.530,95)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "(-) DESPESAS COM VENDAS EM GERAL",
+   "suma": 6.279929,
+   "objetivo": 6.188497
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "(-) DESPESAS COM VENDAS EM GERAL",
+   "suma": 6.279929,
+   "objetivo": 6.188497
+  }
+ ],
+ "totales": {
+  "ingresos": 22.60414,
+  "gastos": 30.371805,
+  "financiero": 5.972119,
+  "impuesto": 0,
+  "resultadoImpreso": -1.795546,
+  "resultadoParaCargar": -1.795546,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES",
+   "lado": "ingreso",
+   "M": 16.622995,
+   "pagina": 8,
+   "linea": 254,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "RECEITA PATROCÍNIO E MARKETING",
+   "lado": "ingreso",
+   "M": 4.50246,
+   "pagina": 8,
+   "linea": 255,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "RECEITAS DIVERSAS",
+   "lado": "ingreso",
+   "M": 2.989799,
+   "pagina": 8,
+   "linea": 256,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "ingreso",
+   "M": -1.511113,
+   "pagina": 8,
+   "linea": 258,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) CUSTOS GERAIS",
+   "lado": "gasto",
+   "M": 0.09868,
+   "pagina": 8,
+   "linea": 261,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) DESPESAS COM PESSOAL",
+   "lado": "gasto",
+   "M": 6.451134,
+   "pagina": 8,
+   "linea": 263,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "lado": "gasto",
+   "M": 0.372019,
+   "pagina": 8,
+   "linea": 264,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "lado": "gasto",
+   "M": 12.27047,
+   "pagina": 8,
+   "linea": 265,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) DESPESAS COM VENDAS EM GERAL",
+   "lado": "gasto",
+   "M": 6.188497,
+   "pagina": 8,
+   "linea": 266,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) OUTRAS DESPESAS",
+   "lado": "gasto",
+   "M": 4.991006,
+   "pagina": 8,
+   "linea": 267,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(-) DESPESA FINANCEIRA",
+   "M": -0.657771,
+   "linea": 270
+  },
+  {
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "M": 6.62989,
+   "linea": 271
+  }
+ ],
+ "impuesto": []
+}

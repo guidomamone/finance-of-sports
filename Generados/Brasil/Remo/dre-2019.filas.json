@@ -1,0 +1,140 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2019.md",
+ "mdSha1": "934a50eb09b805486470fed30131fced5933f8da",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:11:03.993Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "No se indica la escala; los importes tienen centavos (ej. L13 '17.903.353,17'), lo que sugiere reales en unidades."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "(+) Receita Bruta Operacional",
+   "actual": "17.903.353,17",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Receita De Atividades Esportivas",
+   "actual": "17.903.353,17",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "(=) Receita Líquida",
+   "actual": "17.903.353,17",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "(=) Lucro Bruto",
+   "actual": "17.903.353,17",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "(-) Despesas Operacionais",
+   "actual": "20.911.642,97",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "225.425,57",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "(=) Res. Antes das Participações e Contrib.",
+   "actual": "(3.008.289,80)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "(=) Res. Antes Imp.Renda e Contrib. Social",
+   "actual": "(3.008.289,80)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "(=) Resultado Líquido do Exercicio",
+   "actual": "(3.008.289,80)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 15,
+  "actual": "17.903.353,17"
+ },
+ "total_gastos": {
+  "linea": 17,
+  "actual": "20.911.642,97"
+ },
+ "resultado": {
+  "linea": 21,
+  "actual": "(3.008.289,80)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se trata 'Resultado Financeiro' (L18, 225.425,57) como incluido dentro de '(-) Despesas Operacionais' (L17) y no se suma aparte al resultado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado Financeiro",
+   "texto": "17.903.353,17 − 20.911.642,97 = (3.008.289,80), igual al resultado de L19-L21, por lo que L18 parece ya incluido en L17 y sumarlo aparte duplicaría.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado solo trae la columna 01/01/2019 a 31/12/2019; no hay columna del año anterior ni notas de desglose. Escala no impresa; se asume unidades (reales) por los centavos."
+}

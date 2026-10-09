@@ -36,3 +36,5 @@ el PDF directo) si se retoma.
 ## WorldFootball (sourcing 2026-10-08, año 2023)
 
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas ninguna; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
+
+Color de marca: null — la identidad es el blanco (pt.wikipedia: asociado al blanco desde su formación; el negro es recurrente), verificado 2026-10-09.

@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.md",
+ "generado": "2026-10-09T23:23:28.319Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2014,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "43.279511 = 43.279511"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "42.369596 = 42.369596"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2014: 43.279511 en este documento y 43.279511 en balanco-2015.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": true,
+   "detalle": "ingresos de 2013: 44.999887 en demonstracoes-financeiras-2013.pdf y 44.999887 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 43.279511,
+  "gastos": 42.369596,
+  "financiero": -0.905793,
+  "impuesto": 0,
+  "resultadoImpreso": 0.004122,
+  "resultadoParaCargar": 0.004122,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receitas com transmissões televisivas",
+   "lado": "ingreso",
+   "M": 30.086366,
+   "pagina": 27,
+   "linea": 833,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Receitas com mensalidade dos sócios",
+   "lado": "ingreso",
+   "M": 10.809859,
+   "pagina": 27,
+   "linea": 834,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Receita de mecanismo de solidariedade",
+   "lado": "ingreso",
+   "M": 1.048507,
+   "pagina": 27,
+   "linea": 835,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Repasses de direitos federativos",
+   "lado": "ingreso",
+   "M": 0.505145,
+   "pagina": 27,
+   "linea": 836,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Venda de mercadorias",
+   "lado": "ingreso",
+   "M": 0.441636,
+   "pagina": 27,
+   "linea": 837,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Receitas com royalties",
+   "lado": "ingreso",
+   "M": 0.119377,
+   "pagina": 27,
+   "linea": 838,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Receitas de publicidade",
+   "lado": "ingreso",
+   "M": 0.268621,
+   "pagina": 27,
+   "linea": 839,
+   "origen": "nota que desglosa \"Receita operacional bruta\""
+  },
+  {
+   "etiqueta": "Departamento profissional",
+   "lado": "gasto",
+   "M": 32.953552,
+   "pagina": 6,
+   "linea": 132,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento amador",
+   "lado": "gasto",
+   "M": 2.519771,
+   "pagina": 6,
+   "linea": 133,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento administrativo",
+   "lado": "gasto",
+   "M": 0.884796,
+   "pagina": 6,
+   "linea": 134,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento marketing e comercial",
+   "lado": "gasto",
+   "M": 0.687495,
+   "pagina": 6,
+   "linea": 135,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento financeiro",
+   "lado": "gasto",
+   "M": 0.199486,
+   "pagina": 6,
+   "linea": 136,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento de patrimônio",
+   "lado": "gasto",
+   "M": 4.094848,
+   "pagina": 6,
+   "linea": 137,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento jurídico",
+   "lado": "gasto",
+   "M": 0.716254,
+   "pagina": 6,
+   "linea": 138,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Departamento loja Tigre Maníacos",
+   "lado": "gasto",
+   "M": 0.249772,
+   "pagina": 6,
+   "linea": 139,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.063622,
+   "pagina": 6,
+   "linea": 140,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.106268,
+   "linea": 145
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -1.012061,
+   "linea": 146
+  }
+ ],
+ "impuesto": []
+}

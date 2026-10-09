@@ -1,0 +1,412 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md",
+ "mdSha1": "a50665323feb3dcfa87fc6e44611d224ae169fd9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:31:02.755Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b17"
+  ],
+  "notas_gastos": [
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L168: Em reais"
+  },
+  {
+   "bloque": "b17",
+   "escala": "no se sabe",
+   "evidencia": "No se indica escala en el bloque; importes coinciden con el estado (en reais)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "No se indica escala en el bloque; importes coinciden con el estado (en reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 173,
+   "etiqueta": "Futebol",
+   "actual": "13.684.738",
+   "anterior": "15.318.041",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 174,
+   "etiqueta": "Sócios",
+   "actual": "5.624.029",
+   "anterior": "4.435.465",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 175,
+   "etiqueta": "Extraordinárias",
+   "actual": "303.164",
+   "anterior": "328.656",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 176,
+   "etiqueta": "Venda de mercadorias",
+   "actual": "655.157",
+   "anterior": "47.127",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 177,
+   "etiqueta": "Royalties",
+   "actual": "186.412",
+   "anterior": "99.775",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 178,
+   "etiqueta": "Subvenções",
+   "actual": "-",
+   "anterior": "2.117.827",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 179,
+   "etiqueta": "Outras receitas",
+   "actual": "88.605",
+   "anterior": "248.817",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 180,
+   "etiqueta": "",
+   "actual": "20.542.105",
+   "anterior": "22.595.708",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 182,
+   "etiqueta": "Departamento profissional",
+   "actual": "(15.568.870)",
+   "anterior": "(13.326.821)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 183,
+   "etiqueta": "Departamento amador",
+   "actual": "(1.444.300)",
+   "anterior": "(734.366)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 184,
+   "etiqueta": "Departamento administrativo",
+   "actual": "(318.809)",
+   "anterior": "(221.003)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 185,
+   "etiqueta": "Departamento marketing e comercial",
+   "actual": "(714.485)",
+   "anterior": "(520.677)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 186,
+   "etiqueta": "Departamento financeiro",
+   "actual": "(159.496)",
+   "anterior": "(151.373)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 187,
+   "etiqueta": "Departamento de patrimônio",
+   "actual": "(2.558.049)",
+   "anterior": "(1.462.923)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 188,
+   "etiqueta": "Departamento jurídico",
+   "actual": "(106.247)",
+   "anterior": "(505.286)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 189,
+   "etiqueta": "Departamento loja Tigre Maníacos",
+   "actual": "(180.738)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 190,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(223.862)",
+   "anterior": "(237.679)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 191,
+   "etiqueta": "",
+   "actual": "(21.274.856)",
+   "anterior": "(17.160.128)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 192,
+   "etiqueta": "Superávit/Déficit antes do resultado financeiro",
+   "actual": "(732.751)",
+   "anterior": "5.435.580",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 194,
+   "etiqueta": "Receitas financeiras – nota 15",
+   "actual": "74.328",
+   "anterior": "310.702",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 195,
+   "etiqueta": "Despesas financeiras – nota 15",
+   "actual": "(1.430.379)",
+   "anterior": "(1.275.453)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 196,
+   "etiqueta": "",
+   "actual": "(1.356.051)",
+   "anterior": "(964.751)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 197,
+   "etiqueta": "Superávit/Déficit do exercício",
+   "actual": "(2.088.802)",
+   "anterior": "4.470.829",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 611,
+   "etiqueta": "Descontos obtidos",
+   "actual": "4.165",
+   "anterior": "170.693",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras – nota 15"
+  },
+  {
+   "bloque": "b17",
+   "linea": 612,
+   "etiqueta": "Juros ativos",
+   "actual": "480",
+   "anterior": "70",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras – nota 15"
+  },
+  {
+   "bloque": "b17",
+   "linea": 613,
+   "etiqueta": "Renda de aplicações financeiras",
+   "actual": "53.123",
+   "anterior": "45.905",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras – nota 15"
+  },
+  {
+   "bloque": "b17",
+   "linea": 614,
+   "etiqueta": "Variação monetária ativa",
+   "actual": "16.560",
+   "anterior": "94.034",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras – nota 15"
+  },
+  {
+   "bloque": "b17",
+   "linea": 615,
+   "etiqueta": "",
+   "actual": "74.328",
+   "anterior": "310.702",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 628,
+   "etiqueta": "Juros passivos",
+   "actual": "(675)",
+   "anterior": "(1.037)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 629,
+   "etiqueta": "Despesas e comissões bancárias",
+   "actual": "(115.734)",
+   "anterior": "(122.314)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 630,
+   "etiqueta": "Encargos sobre tributos em atraso",
+   "actual": "(8.268)",
+   "anterior": "(24.918)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 631,
+   "etiqueta": "Juros sobre empréstimos",
+   "actual": "(931.848)",
+   "anterior": "(954.218)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 632,
+   "etiqueta": "Variação monetária passiva",
+   "actual": "(89.220)",
+   "anterior": "(172.080)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 633,
+   "etiqueta": "Descontos concedidos",
+   "actual": "(284.634)",
+   "anterior": "(886)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 634,
+   "etiqueta": "",
+   "actual": "(1.430.379)",
+   "anterior": "(1.275.453)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras – nota 15"
+  },
+  {
+   "bloque": "b18",
+   "linea": 635,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(1.356.051)",
+   "anterior": "(964.751)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 180,
+  "actual": "20.542.105"
+ },
+ "total_gastos": {
+  "linea": 191,
+  "actual": "(21.274.856)"
+ },
+ "resultado": {
+  "linea": 197,
+  "actual": "(2.088.802)",
+  "anterior": "4.470.829"
+ },
+ "dudas": [],
+ "observaciones": "Las notas b17 y b18 (nota 15) desglosan solo el resultado financiero; no hay notas que desglosen ingresos operativos ni gastos departamentales. Los totales de L180 y L191 no tienen etiqueta impresa. Escala de notas no explícita pero los importes coinciden exactamente con el estado en reais."
+}

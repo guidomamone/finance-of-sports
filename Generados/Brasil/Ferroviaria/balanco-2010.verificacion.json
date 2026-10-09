@@ -1,0 +1,171 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "generado": "2026-10-09T23:23:29.268Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2010,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "balanco-2010.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "666b067",
+  "aa3ada7",
+  "e68c064"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receitas Operacionais Líquidas\" 1.58152 cierra; además se suman 3 línea(s) fuera de ese total (1.614973)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Total das Despesas\" 0.434791 cierra; además se suman 6 línea(s) fuera de ese total (1.642833)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 3.196492 - gastos 2.077623 ± financiero 0.012922 ± impuesto 0 no da el impreso -0.074235"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L175 no tiene etiqueta; su importe coincide con la suma de L173 y L174."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.196492,
+  "gastos": 2.077623,
+  "financiero": 0.012922,
+  "impuesto": 0,
+  "resultadoImpreso": -0.074235,
+  "resultadoParaCargar": -0.074235,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receitas de atividades desportivas profissionais",
+   "lado": "ingreso",
+   "M": 0.576146,
+   "pagina": 5,
+   "linea": 158,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de publicidade e patrocínios",
+   "lado": "ingreso",
+   "M": 1.0221,
+   "pagina": 5,
+   "linea": 160,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "( - ) Impostos",
+   "lado": "ingreso",
+   "M": 0.016726,
+   "pagina": 5,
+   "linea": 161,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Operacionais Líquidas",
+   "lado": "ingreso",
+   "M": 1.58152,
+   "pagina": 5,
+   "linea": 162,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços do departamento de esportes profissional",
+   "lado": "gasto",
+   "M": 1.196469,
+   "pagina": 5,
+   "linea": 164,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços do departamento de esportes para outras categorias",
+   "lado": "gasto",
+   "M": 0.024495,
+   "pagina": 5,
+   "linea": 165,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com pessoal profissional",
+   "lado": "gasto",
+   "M": 0.16191,
+   "pagina": 5,
+   "linea": 169,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas administrativa profissional",
+   "lado": "gasto",
+   "M": 0.237178,
+   "pagina": 5,
+   "linea": 170,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.003097,
+   "pagina": 5,
+   "linea": 171,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 0.019683,
+   "pagina": 5,
+   "linea": 174,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Total das Despesas",
+   "lado": "gasto",
+   "M": 0.434791,
+   "pagina": 5,
+   "linea": 176,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": 0.012922,
+   "linea": 173
+  }
+ ],
+ "impuesto": []
+}

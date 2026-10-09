@@ -33,3 +33,5 @@ Los 10 PDF confirmados `PDF document` real. Tamaños entre 151 KB y 4,2 MB.
   exactas).
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #FF0000 — infobox de en.wikipedia (kit local rojo; escudo rojo; cs.wikipedia lista rojo, blanco y azul), verificado 2026-10-09.

@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf",
+ "generado": "2026-10-09T23:38:37.973Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "cortadoEn": "club"
+}

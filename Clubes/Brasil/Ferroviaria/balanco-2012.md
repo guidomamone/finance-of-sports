@@ -126,41 +126,35 @@ www.cokinos.com.br
 --- pág. 5 ---
 
 # FERROVIÁRIA FUTEBOL S/A
+CNPJ/MF 06.020.811/0001-30  
+BALANÇO PATRIMONIAL  
+Em reais  
 
-CNPJ/MF 06.020.811/0001-30
+| ATIVO | N.E. | 31/12/2012 | 31/12/2011 | PASSIVO | N.E. | 31/12/2012 | 31/12/2011 |
+| :--- | :---: | :---: | :---: | :--- | :---: | :---: | :---: |
+| **Circulante** | | **174.566,12** | **94.338,07** | **Circulante** | | **2.155.925,80** | **1.693.463,10** |
+| Caixa e equivalentes de caixa | 4 | 883,77 | 2.680,77 | Empréstimos | 10 | 269.795,65 | 369.169,53 |
+| Contas a receber | 5 | 98.959,25 | 7.997,19 | Fornecedores | | 34.460,75 | 33.706,56 |
+| Estoques | 6 | 74.723,10 | 81.885,80 | Obrigações trabalhistas | 11 | 422.934,03 | 330.326,52 |
+| Impostos a recuperar | | - | 1.774,31 | Obrigações tributárias | 12 | 365.272,35 | 634.252,02 |
+| | | | | Contas a pagar | 13 | 762.901,13 | 27.329,00 |
+| | | | | Provisão de contingências legais | 14 | 196.001,03 | 222.051,03 |
+| | | | | Férias a pagar | 15 | - | 31.628,44 |
+| | | | | Mútuos com partes relacionadas | 16 | 104.560,86 | 45.000,00 |
+| **Não circulante** | | **522.692,67** | **298.614,76** | **Não circulante** | | **50.243,97** | - |
+| Imobilizado | 7 | 8.156,41 | 10.627,23 | | | | |
+| Realizável a longo prazo | 8 | 83.161,44 | 29.704,74 | Exigível a longo prazo | 12 | 50.243,97 | - |
+| Intangível | 9 | 431.374,82 | 258.282,79 | | | | |
+| | | | | **Passivo a descoberto** | 17 | **(1.508.910,98)** | **(1.300.510,27)** |
+| **TOTAL DO ATIVO** | | **697.258,79** | **392.952,83** | **TOTAL DO PASSIVO + P. DESCOBERTO** | | **697.258,79** | **392.952,83** |
 
-# BALANÇO PATRIMONIAL
+WELSON ALVES FERREIRA JÚNIOR  
+Presidente  
+CPF: 020.427.188-66  
 
-Em reais
-
-|  ATIVO | N.E. | 31/12/2012 | 31/12/2011 | PASSIVO | N.E. | 31/12/2012 | 31/12/2011  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Circulante** |  | **174.566,12** | **94.338,07** | **Circulante** |  | **2.155.925,80** | **1.693.463,10**  |
-|  Caixa e equivalentes de caixa | 4 | 883,77 | 2.680,77 | Empréstimos | 10 | 269.795,65 | 369.169,53  |
-|  Contas a receber | 5 | 98.959,25 | 7.997,19 | Fornecedores |  | 34.460,75 | 33.708,56  |
-|  Estoques | 6 | 74.723,10 | 81.885,80 | Obrigações trabalhistas | 11 | 422.934,03 | 330.326,52  |
-|  Impostos a recuperar |  | - | 1.774,31 | Obrigações tributárias | 12 | 365.272,35 | 634.252,02  |
-|   |  |  |  | Contas a pagar | 13 | 762.901,13 | 27.329,00  |
-|   |  |  |  | Provisão de contingências legais | 14 | 196.001,03 | 222.051,03  |
-|   |  |  |  | Férias a pagar | 15 | - | 31.628,44  |
-|   |  |  |  | Mútuos com partes relacionadas | 16 | 104.560,86 | 45.000,00  |
-|  **Não circulante** |  | **522.692,67** | **298.614,76** | **Não circulante** |  | **50.243,97** | **-**  |
-|  Imobilizado | 7 | 8.156,41 | 10.627,23 | Exigível a longo prazo | 12 | 50.243,97 | -  |
-|  Realizável a longo prazo | 8 | 83.161,44 | 29.704,74 |  |  |  |   |
-|  Intangível | 9 | 431.374,82 | 258.282,79 | **Passivo a descoberto** | 17 | **(1.508.910,98)** | **(1.300.510,27)**  |
-|  **TOTAL DO ATIVO** |  | **697.258,79** | **392.952,83** | **TOTAL DO PASSIVO + P. DESCOBERTO** |  | **697.258,79** | **392.952,83**  |
-
-WELSON ALVES FERREIRA JUNIOR
-
-Presidente
-
-CPF: 020.427.188-66
-
-JOSÉ ROBERTO CARLOS
-
-CRC n.º SP266636/04
-
-CPF: 743.216.568-87
+JOSÉ ROBERTO CARLOS  
+CRC/SP 226636/O  
+CPF 743.235.568-87  
 
 As notas explicativas são parte integrante destas demonstrações contábeis
 

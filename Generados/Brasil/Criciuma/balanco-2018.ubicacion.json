@@ -1,0 +1,281 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2018.pdf",
+ "md": "Clubes/Brasil/Criciuma/balanco-2018.md",
+ "mdSha1": "c9da5c7e5897b2b52238b14b87af4fc90b85c2fd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:35:38.522Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    61,
+    65
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    175,
+    181
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    208,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    251,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    298,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    336,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    358,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    387,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    656,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    666,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    690,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    703,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    713,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    735,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    745,
+    753
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    759,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    809,
+    820
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    824,
+    831
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    835,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    849,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    860,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    875,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    888,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 28,
+   "lineas": [
+    899,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    926,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    935,
+    943
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 29,
+   "lineas": [
+    947,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 29,
+   "lineas": [
+    955,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 29,
+   "lineas": [
+    965,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 30,
+   "lineas": [
+    983,
+    987
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b29",
+  "b23",
+  "b24"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/jan./2018 a 31/dez./2018",
+ "columna_anterior": "01/jan./2017 a 31/dez./2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El bloque b23 (pág. 28, encabezado 'Receita com jogos | 518.477 | 690.560') es la continuación de la nota 17 de receitas operacionais brutas (b29) y se carga junto con ella?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA OPERACIONAL BRUTA",
+   "texto": "La transcripción ubica b23 bajo el título de la nota 15 pero sus filas (jogos, timemania, royalties, demais receitas, Total) completan la nota 17 de b29.",
+   "bloques": [
+    "b23",
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual del clube en b5 (pág. 10). Nota 17 de receitas brutas en b29, aparentemente continuada en b23 (desordenada en la transcripción). Nota 18 resultado financeiro en b24. No hay nota que abra los custos e despesas por departamento."
+}

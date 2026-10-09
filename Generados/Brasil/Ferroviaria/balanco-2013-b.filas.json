@@ -1,0 +1,1424 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2013-b.md",
+ "mdSha1": "8e26d8a79a7632fdd2fcbb50efa11446927ec1ef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:48:30.823Z",
+ "ubicacion": {
+  "estado": [
+   "b2",
+   "b4",
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "No hay leyenda de escala; los importes tienen centavos (ej. L10 '134.989,20 C'), lo que indica reales en unidades."
+  },
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "No hay leyenda de escala; importes con centavos (ej. L70 '228.694,61 D')."
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "No hay leyenda de escala; importes con centavos (ej. L168 '1.222.442,07 D')."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 10,
+   "etiqueta": "Depto Profissional",
+   "actual": "134.989,20 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 11,
+   "etiqueta": "Rendas de Jogos",
+   "actual": "134.989,20 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 12,
+   "etiqueta": "Depto Profissional",
+   "actual": "140.000,00 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 13,
+   "etiqueta": "Cotas de TV Camp Paulista Séria A-2",
+   "actual": "140.000,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 14,
+   "etiqueta": "Depto Profissional",
+   "actual": "37.420,16 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 15,
+   "etiqueta": "Sócio Torcedor",
+   "actual": "37.420,16 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 16,
+   "etiqueta": "Filial",
+   "actual": "38.116,50 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 17,
+   "etiqueta": "Mercadorias c/Vendas",
+   "actual": "38.116,50 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 18,
+   "etiqueta": "Depto Profissional",
+   "actual": "3.583.026,71 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 19,
+   "etiqueta": "Patrocínios",
+   "actual": "2.262.274,31 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 20,
+   "etiqueta": "Contratos de Parcerias",
+   "actual": "188.000,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 21,
+   "etiqueta": "Publicidades",
+   "actual": "32.752,40 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 22,
+   "etiqueta": "Doações",
+   "actual": "1.100.000,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 23,
+   "etiqueta": "Depto Amador",
+   "actual": "40.000,00 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 24,
+   "etiqueta": "Patrocínios e Doações",
+   "actual": "40.000,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 25,
+   "etiqueta": "Depto Profissional",
+   "actual": "100,00 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 26,
+   "etiqueta": "Multa Contratual",
+   "actual": "100,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 27,
+   "etiqueta": "Filial",
+   "actual": "10.397,15 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 28,
+   "etiqueta": "Pis",
+   "actual": "630,75 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 29,
+   "etiqueta": "Cofins",
+   "actual": "2.905,50 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 30,
+   "etiqueta": "Icms",
+   "actual": "6.860,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 31,
+   "etiqueta": "Depto Profissional",
+   "actual": "9,20 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 32,
+   "etiqueta": "Descontos Obtidos",
+   "actual": "9,20 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 33,
+   "etiqueta": "Depto Profissional",
+   "actual": "1.910.720,01 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 34,
+   "etiqueta": "Arbitragens",
+   "actual": "65.166,15 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 35,
+   "etiqueta": "Taxa de Policiamento",
+   "actual": "8.348,47 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 36,
+   "etiqueta": "Taxas Federações e Confederações",
+   "actual": "109.139,48 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 37,
+   "etiqueta": "Segurança e Vigilancia",
+   "actual": "28.902,40 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 38,
+   "etiqueta": "Inss s/Renda de Jogos",
+   "actual": "799,50 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 39,
+   "etiqueta": "Inss s/Cotas e Patrocinios",
+   "actual": "41.050,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 40,
+   "etiqueta": "Ingressos",
+   "actual": "11.290,37 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 41,
+   "etiqueta": "Combustiveis e Lubrificantes",
+   "actual": "26.195,02 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 42,
+   "etiqueta": "Inss s/Arbitragens",
+   "actual": "4.999,09 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 43,
+   "etiqueta": "Exame Anti-Doping",
+   "actual": "24.639,26 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 44,
+   "etiqueta": "Serviços Prest p/Terceiros",
+   "actual": "459.734,97 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 45,
+   "etiqueta": "Direito de Imagem",
+   "actual": "1.116.724,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 46,
+   "etiqueta": "Vistoria em Estadio",
+   "actual": "45,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 47,
+   "etiqueta": "Locação de Estadio",
+   "actual": "13.686,30 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 48,
+   "etiqueta": "Depto Profissional",
+   "actual": "1.874.102,79 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 49,
+   "etiqueta": "Salarios e Ordenados",
+   "actual": "894.653,63 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 50,
+   "etiqueta": "Férias Normais",
+   "actual": "159.631,16 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 51,
+   "etiqueta": "Férias Indenizadas",
+   "actual": "9.424,96 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 52,
+   "etiqueta": "13º Salario",
+   "actual": "84.180,06 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 53,
+   "etiqueta": "Aviso Prévio Indenizado",
+   "actual": "6.945,56 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 54,
+   "etiqueta": "Inss",
+   "actual": "53.869,05 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 55,
+   "etiqueta": "Fgts",
+   "actual": "87.507,24 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 56,
+   "etiqueta": "Fgts Rescisório",
+   "actual": "4.554,54 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 57,
+   "etiqueta": "Premios e Gratificações",
+   "actual": "64.050,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 58,
+   "etiqueta": "Academia",
+   "actual": "4.652,50 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 69,
+   "etiqueta": "Agua Mineral",
+   "actual": "2.618,70 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 70,
+   "etiqueta": "Alimentação",
+   "actual": "228.694,61 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 71,
+   "etiqueta": "Despesas de Viagens",
+   "actual": "80.656,01 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 72,
+   "etiqueta": "Vale Transporte",
+   "actual": "10.007,14 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 73,
+   "etiqueta": "Indenizações Trabalhistas",
+   "actual": "30.698,21 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 74,
+   "etiqueta": "Despesas de Hospedagem",
+   "actual": "111.946,19 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 75,
+   "etiqueta": "Pis s/Folha",
+   "actual": "11.598,23 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 76,
+   "etiqueta": "Ajuda de Custo",
+   "actual": "28.415,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 77,
+   "etiqueta": "Depto Amador",
+   "actual": "314.356,33 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 78,
+   "etiqueta": "Custo Formação Atleta",
+   "actual": "314.356,33 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 79,
+   "etiqueta": "Filial",
+   "actual": "27.261,53 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 80,
+   "etiqueta": "Estoque Inicial",
+   "actual": "874.625,96 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 81,
+   "etiqueta": "Compras Mercadorias a Prazo",
+   "actual": "12.493,98 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 82,
+   "etiqueta": "(-) Estoque Final",
+   "actual": "858.242,46 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 83,
+   "etiqueta": "(-) Recuperação Cofins",
+   "actual": "1.327,70 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 84,
+   "etiqueta": "(-) Recuperação Pis",
+   "actual": "288,25 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 85,
+   "etiqueta": "Depto Profissional",
+   "actual": "135.066,09 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 86,
+   "etiqueta": "Salarios e Ordenados",
+   "actual": "83.438,46 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 87,
+   "etiqueta": "Férias Normais",
+   "actual": "22.276,18 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 88,
+   "etiqueta": "13º Salario",
+   "actual": "7.493,98 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 89,
+   "etiqueta": "Inss",
+   "actual": "6.418,88 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 90,
+   "etiqueta": "Fgts",
+   "actual": "11.359,93 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 91,
+   "etiqueta": "Vale Transporte",
+   "actual": "2.479,09 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 92,
+   "etiqueta": "Pis s/Folha",
+   "actual": "1.599,57 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 93,
+   "etiqueta": "Loja",
+   "actual": "34.291,38 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 94,
+   "etiqueta": "Salarios e Ordenados",
+   "actual": "18.285,37 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 95,
+   "etiqueta": "Férias Normais",
+   "actual": "3.535,44 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 96,
+   "etiqueta": "13º Salario",
+   "actual": "1.254,70 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 97,
+   "etiqueta": "Inss",
+   "actual": "5.310,94 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 98,
+   "etiqueta": "Fgts",
+   "actual": "1.467,67 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 99,
+   "etiqueta": "Fgts Rescisorio",
+   "actual": "3.903,06 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 100,
+   "etiqueta": "Vale Transporte",
+   "actual": "534,20 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 101,
+   "etiqueta": "Depto Profissional",
+   "actual": "419.749,60 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 102,
+   "etiqueta": "Aluguel",
+   "actual": "184.580,16 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 103,
+   "etiqueta": "Depreciações",
+   "actual": "27.474,01 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 104,
+   "etiqueta": "Despesas Diversas",
+   "actual": "130,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 105,
+   "etiqueta": "Despesas de Viagens",
+   "actual": "31.671,09 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 106,
+   "etiqueta": "Impostos e Taxas",
+   "actual": "5.756,95 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 107,
+   "etiqueta": "Manutenção, Conservação de Bens",
+   "actual": "28.778,74 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 108,
+   "etiqueta": "Combustiveis",
+   "actual": "23.026,08 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 109,
+   "etiqueta": "Propaganda e Publicidade",
+   "actual": "12.699,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 110,
+   "etiqueta": "Provedor de Internet",
+   "actual": "770,87 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 111,
+   "etiqueta": "Custas e Emolumentos",
+   "actual": "2.000,80 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 112,
+   "etiqueta": "Despesas com Ativo Fixo",
+   "actual": "6.980,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 113,
+   "etiqueta": "Contingencias Tributarias",
+   "actual": "95.881,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 114,
+   "etiqueta": "Filial",
+   "actual": "5.489,82 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 115,
+   "etiqueta": "Condominio",
+   "actual": "5.489,82 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 116,
+   "etiqueta": "Depto Profissional",
+   "actual": "45.883,38 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 117,
+   "etiqueta": "Materiais Esportivos",
+   "actual": "42.679,85 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 118,
+   "etiqueta": "Materias de Limpeza e Higiene",
+   "actual": "501,54 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 129,
+   "etiqueta": "Medicamentos e Mat.Medicos e Cirurgicos",
+   "actual": "2.314,08 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 130,
+   "etiqueta": "Material de Consumo",
+   "actual": "387,91 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 131,
+   "etiqueta": "Alojamento I Profissional",
+   "actual": "119.576,60 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 132,
+   "etiqueta": "Agua",
+   "actual": "20.746,13 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 133,
+   "etiqueta": "Aluguel",
+   "actual": "71.668,86 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 134,
+   "etiqueta": "Bens de Valores Irrelevantes",
+   "actual": "2.000,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 135,
+   "etiqueta": "Energia Eletrica",
+   "actual": "6.870,24 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 136,
+   "etiqueta": "Impostos e Taxas",
+   "actual": "1.736,52 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 137,
+   "etiqueta": "Manutenção e Conservação de Bens",
+   "actual": "12.319,95 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 138,
+   "etiqueta": "Gas",
+   "actual": "4.234,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 139,
+   "etiqueta": "Alojamento II Amador",
+   "actual": "291,06 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 140,
+   "etiqueta": "Agua",
+   "actual": "291,06 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 141,
+   "etiqueta": "Depto Profissional",
+   "actual": "2.886,05 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 142,
+   "etiqueta": "Multas",
+   "actual": "2.870,05 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 143,
+   "etiqueta": "Juros Passivos",
+   "actual": "16,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 144,
+   "etiqueta": "Depto Profissional",
+   "actual": "38.975,78 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 145,
+   "etiqueta": "Agua",
+   "actual": "1.826,27 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 146,
+   "etiqueta": "Energia Eletrica",
+   "actual": "5.301,79 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 147,
+   "etiqueta": "Telefone",
+   "actual": "14.739,92 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 148,
+   "etiqueta": "Seguro de Vida",
+   "actual": "7.994,56 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 149,
+   "etiqueta": "Impressos e Materiais de Escritorio",
+   "actual": "2.476,60 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 150,
+   "etiqueta": "Correios",
+   "actual": "1.740,50 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 151,
+   "etiqueta": "Custas e Emolumentos",
+   "actual": "4.742,30 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 152,
+   "etiqueta": "Material de Cozinha e Copa",
+   "actual": "153,84 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 153,
+   "etiqueta": "Filial",
+   "actual": "3.957,62 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 154,
+   "etiqueta": "Telefone",
+   "actual": "3.329,62 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 155,
+   "etiqueta": "Impressos e Matriais de Escritorio",
+   "actual": "628,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 156,
+   "etiqueta": "Depto Profissional",
+   "actual": "69.347,83 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 157,
+   "etiqueta": "Honorarios Contabeis,Adv e de Auditorias",
+   "actual": "69.347,83 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 158,
+   "etiqueta": "Depto Profissional",
+   "actual": "174.993,15 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 159,
+   "etiqueta": "Despesas Bancarias",
+   "actual": "9.723,38 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 160,
+   "etiqueta": "Encargos Financeiros",
+   "actual": "152.226,61 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 161,
+   "etiqueta": "Juros s/Leasing Bradesco",
+   "actual": "13.043,16 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 162,
+   "etiqueta": "Filial",
+   "actual": "3.107,67 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 163,
+   "etiqueta": "Encargos Financeiros",
+   "actual": "73,32 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 164,
+   "etiqueta": "Comissão s/Cartão",
+   "actual": "3.034,35 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 166,
+   "etiqueta": "Despesas nao Operacionais",
+   "actual": "5.650,00 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 167,
+   "etiqueta": "Baixa de Imobilizado",
+   "actual": "5.650,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 168,
+   "etiqueta": "= Prejuízo",
+   "actual": "1.222.442,07 D",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 168,
+  "actual": "1.222.442,07 D",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "Balancete con una sola columna (2013), sin año anterior. Los encabezados por departamento (Depto Profissional, Filial, Loja, etc.) son subtotales de las cuentas sangradas que siguen; el subtotal L48 continúa en b4 (L69-L76). Signo indicado por sufijo C (crédito/ingreso) o D (débito/gasto); en Filial L79 las líneas con C reducen el costo de mercaderías. No se imprimen totales de ingresos ni de gastos. Resultado: Prejuízo 1.222.442,07 D (L168)."
+}

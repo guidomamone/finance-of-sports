@@ -1,365 +1,270 @@
 {
- "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
- "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
- "club": "cuiaba",
- "year": 2025,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:52:24.969Z",
- "tieOuts": {
-  "cierran": 31,
-  "noCierran": 4
- },
- "warnings": [
-  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 34,
-  "notasUsadas": []
- },
- "ladoConocido": 22,
- "rubros": [
-  {
-   "label": "RECEITA OPERACIONAL BRUTA",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    36625.176
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "RECEITA FUTEBOL PROFISSIONAL",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    29457.74
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "PATROCÍNIOS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    12000
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "PLACAS DE PUBLICIDADE",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    2600.926
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "SÓCIO TORCEDOR",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    303.897
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "COTAS/TV",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    12769.767
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "BILHETERIA/JOGOS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    1472.385
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "OUTRAS RECEITAS C/ FUTEBOL",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    310.765
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DEMAIS RECEITAS",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    7167.435
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "LICENCIAMENTOS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    226.14
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "ESCOLINHA",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    1230.119
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "LOTERIAS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    919.328
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "OUTRAS RECEITAS",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    3739.93
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "VENDAS DE MERCADORIAS",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    1051.917
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "(-) DEDUÇÕES DAS RECEITAS",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    2144.216
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS TRIBUTÁRIAS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    2144.216
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "RECEITA OPERACIONAL LÍQUIDA",
-   "lado": "revenue",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    34480.959
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "(-) CUSTOS FUTEBOL PROFISSIONAL",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    76739.132
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "CUSTOS COM PESSOAL",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    31917.744
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "CUSTOS COM JOGOS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    3388.905
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    19456.556
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "OUTROS CUSTOS COM FUTEBOL",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    21975.926
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "(-) DESPESAS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    18678.825
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS COM PESSOAL",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    5561.472
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS ADMINISTRATIVAS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    4228.214
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS DEPRECIAÇÃO",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    1213.151
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS GERAIS CATEGORIA DE BASE",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    1978.408
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS GERAIS ESCOLINHA",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    480.996
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS GERAIS FUTEBOL FEMININO",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    0.021
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS COM VENDAS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    231.575
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "DESPESAS TRIBUTÁRIAS",
-   "lado": "expense",
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    4984.986
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "(+/-) DESPESAS/(RECEITAS) OPERACIONAIS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    18788.324
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "RECEITAS/(DESPESAS) FINANCEIRAS",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    -2017
-   ],
-   "origen": "estado 1"
-  },
-  {
-   "label": "OUTRAS RECEITAS/(DESPESAS)",
-   "lado": null,
-   "page": 7,
-   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
-   "values": [
-    20805.324
-   ],
-   "origen": "estado 1"
-  }
- ]
+  "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+  "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+  "club": "cuiaba",
+  "year": 2025,
+  "generatedAt": "2026-10-09T23:23:29.210Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "PATROCÍNIOS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        12
+      ],
+      "glosa": "PATROCINIOS"
+    },
+    {
+      "label": "PLACAS DE PUBLICIDADE",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.600926
+      ],
+      "glosa": "VALLAS PUBLICITARIAS"
+    },
+    {
+      "label": "SÓCIO TORCEDOR",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.303897
+      ],
+      "glosa": "SOCIOS ABONADOS"
+    },
+    {
+      "label": "COTAS/TV",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        12.769767
+      ],
+      "glosa": "DERECHOS DE TELEVISIÓN"
+    },
+    {
+      "label": "BILHETERIA/JOGOS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.472385
+      ],
+      "glosa": "TAQUILLA / PARTIDOS"
+    },
+    {
+      "label": "OUTRAS RECEITAS C/ FUTEBOL",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.310765
+      ],
+      "glosa": "OTROS INGRESOS DE FÚTBOL"
+    },
+    {
+      "label": "LICENCIAMENTOS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.22614
+      ],
+      "glosa": "LICENCIAS"
+    },
+    {
+      "label": "ESCOLINHA",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.230119
+      ],
+      "glosa": "ESCUELA DE FÚTBOL"
+    },
+    {
+      "label": "LOTERIAS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.919328
+      ],
+      "glosa": "LOTERÍAS"
+    },
+    {
+      "label": "OUTRAS RECEITAS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.73993
+      ],
+      "glosa": "OTROS INGRESOS"
+    },
+    {
+      "label": "VENDAS DE MERCADORIAS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.051917
+      ],
+      "glosa": "VENTA DE MERCADERÍAS"
+    },
+    {
+      "label": "(-) DEDUÇÕES DAS RECEITAS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.144216
+      ],
+      "glosa": "(-) DEDUCCIONES DE LOS INGRESOS"
+    },
+    {
+      "label": "DESPESAS TRIBUTÁRIAS",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.144216
+      ],
+      "glosa": "GASTOS TRIBUTARIOS"
+    },
+    {
+      "label": "RECEITA OPERACIONAL LÍQUIDA",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        34.480959
+      ],
+      "glosa": "INGRESOS OPERATIVOS NETOS"
+    },
+    {
+      "label": "CUSTOS COM PESSOAL",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        31.917744
+      ],
+      "glosa": "COSTES DE PERSONAL"
+    },
+    {
+      "label": "CUSTOS COM JOGOS",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.388905
+      ],
+      "glosa": "COSTES DE PARTIDOS"
+    },
+    {
+      "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        19.456556
+      ],
+      "glosa": "COSTES DE AMORTIZACIÓN DE CONTRATOS"
+    },
+    {
+      "label": "OUTROS CUSTOS COM FUTEBOL",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        21.975926
+      ],
+      "glosa": "OTROS COSTES DE FÚTBOL"
+    },
+    {
+      "label": "DESPESAS COM PESSOAL",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        5.561472
+      ],
+      "glosa": "GASTOS DE PERSONAL"
+    },
+    {
+      "label": "DESPESAS ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.228214
+      ],
+      "glosa": "GASTOS ADMINISTRATIVOS"
+    },
+    {
+      "label": "DESPESAS DEPRECIAÇÃO",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.213151
+      ],
+      "glosa": "GASTOS DE DEPRECIACIÓN"
+    },
+    {
+      "label": "DESPESAS GERAIS CATEGORIA DE BASE",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.978408
+      ],
+      "glosa": "GASTOS GENERALES FÚTBOL BASE"
+    },
+    {
+      "label": "DESPESAS GERAIS ESCOLINHA",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.480996
+      ],
+      "glosa": "GASTOS GENERALES ESCUELA DE FÚTBOL"
+    },
+    {
+      "label": "DESPESAS GERAIS FUTEBOL FEMININO",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.000021
+      ],
+      "glosa": "GASTOS GENERALES FÚTBOL FEMENINO"
+    },
+    {
+      "label": "DESPESAS COM VENDAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.231575
+      ],
+      "glosa": "GASTOS DE VENTAS"
+    },
+    {
+      "label": "DESPESAS TRIBUTÁRIAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.984986
+      ],
+      "glosa": "GASTOS TRIBUTARIOS"
+    }
+  ]
 }

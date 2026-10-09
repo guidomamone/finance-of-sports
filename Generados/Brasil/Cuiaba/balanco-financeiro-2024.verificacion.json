@@ -1,0 +1,307 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
+ "generado": "2026-10-09T23:23:29.102Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "d184b06",
+  "03019e3",
+  "1404a40",
+  "5a461da",
+  "8b31f1d",
+  "0ef9627",
+  "ddf4911",
+  "efd53a7",
+  "c2344da"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": false,
+   "detalle": "ingresos de 2024: 212.320997 en este documento y 226.755644 en balanco-financeiro-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2023: 157.933413 en demonstracoes-financeiras-2023-auditadas.pdf y 168.532842 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: b4 y b8 tienen las mismas filas (41) e importes (70); se carga solo b8, la de los estados auditados.",
+  "duda de localizar que no afecta la carga: b9, b10 y b11 usan terminología de cooperativa (RATES, ato cooperativo), posible plantilla ajena; no son estado de resultados.",
+  "duda de extraer que no afecta la carga: L325 incluye L330 (11.845.753) restando; el subtotal negativo es coherente pero raro."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 212.320997,
+  "gastos": 150.306474,
+  "financiero": -2.738057,
+  "impuesto": 0,
+  "resultadoImpreso": 64.752582,
+  "resultadoParaCargar": 64.752582,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "PATROCÍNIOS",
+   "lado": "ingreso",
+   "M": 20.363084,
+   "pagina": 9,
+   "linea": 318,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "PLACAS DE PUBLICIDADE",
+   "lado": "ingreso",
+   "M": 10.5,
+   "pagina": 9,
+   "linea": 319,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DIREITOS ECONÔMICOS DE ATLETAS",
+   "lado": "ingreso",
+   "M": 114.423113,
+   "pagina": 9,
+   "linea": 320,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "SÓCIO TORCEDOR",
+   "lado": "ingreso",
+   "M": 1.626578,
+   "pagina": 9,
+   "linea": 321,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "COTAS/TV",
+   "lado": "ingreso",
+   "M": 56.035752,
+   "pagina": 9,
+   "linea": 322,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "BILHETERIA/JOGOS",
+   "lado": "ingreso",
+   "M": 13.075506,
+   "pagina": 9,
+   "linea": 323,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": "ingreso",
+   "M": 2.860312,
+   "pagina": 9,
+   "linea": 324,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "LICENCIAMENTOS",
+   "lado": "ingreso",
+   "M": 0.294877,
+   "pagina": 9,
+   "linea": 326,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "ESCOLINHA",
+   "lado": "ingreso",
+   "M": 1.395352,
+   "pagina": 9,
+   "linea": 327,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "LOTERIAS",
+   "lado": "ingreso",
+   "M": 0.757616,
+   "pagina": 9,
+   "linea": 328,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS",
+   "lado": "ingreso",
+   "M": 2.83456,
+   "pagina": 9,
+   "linea": 329,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "(-) DIREITOS ECONÔMICOS/ CUSTO INTANGÍVEL",
+   "lado": "ingreso",
+   "M": -11.845753,
+   "pagina": 9,
+   "linea": 330,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "gasto",
+   "M": 7.268369,
+   "pagina": 9,
+   "linea": 332,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "CUSTOS COM PESSOAL",
+   "lado": "gasto",
+   "M": 92.403479,
+   "pagina": 9,
+   "linea": 336,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "CUSTOS COM JOGOS",
+   "lado": "gasto",
+   "M": 15.683748,
+   "pagina": 9,
+   "linea": 337,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "lado": "gasto",
+   "M": 10.29473,
+   "pagina": 9,
+   "linea": 338,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": "gasto",
+   "M": 10.975688,
+   "pagina": 9,
+   "linea": 339,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "lado": "gasto",
+   "M": 3.355965,
+   "pagina": 9,
+   "linea": 341,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "lado": "gasto",
+   "M": 4.577698,
+   "pagina": 9,
+   "linea": 342,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS DEPRECIAÇÃO",
+   "lado": "gasto",
+   "M": 0.80115,
+   "pagina": 9,
+   "linea": 343,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "lado": "gasto",
+   "M": 3.182101,
+   "pagina": 9,
+   "linea": 344,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS ESCOLINHA",
+   "lado": "gasto",
+   "M": 0.819815,
+   "pagina": 9,
+   "linea": 345,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "lado": "gasto",
+   "M": 0.222635,
+   "pagina": 9,
+   "linea": 346,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS COM VENDAS",
+   "lado": "gasto",
+   "M": 0.096191,
+   "pagina": 9,
+   "linea": 347,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "gasto",
+   "M": 0.624905,
+   "pagina": 9,
+   "linea": 348,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "M": 2.738057,
+   "linea": 351
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+   "M": null,
+   "linea": 354
+  },
+  {
+   "etiqueta": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL",
+   "M": null,
+   "linea": 355
+  }
+ ]
+}

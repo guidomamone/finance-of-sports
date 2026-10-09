@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2020.pdf",
+ "md": "Clubes/Brasil/Criciuma/balanco-2020.md",
+ "mdSha1": "e61880c836265f467918bc784cf7701f5ee6a252",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:37:15.886Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    30,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    57,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    87,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    110,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    126,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    140,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    264,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    274,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    288,
+    294
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    298,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    306,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    327,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    337,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    345,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    355,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    369,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    378,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    394,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    405,
+    410
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    414,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    428,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    441,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    454,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    478,
+    482
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23"
+ ],
+ "notas_gastos": [
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em unidades de reais )",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/jan./2020 a 31/dez./2020",
+ "columna_anterior": "01/jan./2019 a 31/dez./2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual del Criciúma Esporte Clube en b3 (pág. 4), expresado en reales. La nota 14 (b22) desglosa la Receita Operacional Bruta y la nota 15 (b23) desglosa las receitas y despesas financeiras. Se descartan el balance, la DMPL, el resultado abrangente, el flujo de caixa y las notas patrimoniales."
+}

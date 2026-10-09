@@ -1,0 +1,91 @@
+{
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "club": "remo",
+ "year": 2025,
+ "generatedAt": "2026-10-09T23:38:24.184Z",
+ "rubrosHuella": "aea523a8afa61df2e7c72206f7af329814e56d9a",
+ "jevHuella": "b7cf0af1fac1fd51e2ce466a3b225f2e34a933d3",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.005864,
+ "rubros": [
+  {
+   "label": "Receitas de futebol",
+   "lado": "revenue",
+   "section": "estado (lectura 5: hoja)",
+   "glosa": "Ingresos por fútbol",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.94,
+   "categoria": "lump_football_operations",
+   "confianza": 0.94
+  },
+  {
+   "label": "Receitas recorrentes",
+   "lado": "revenue",
+   "section": "estado (lectura 5: hoja)",
+   "glosa": "Ingresos recurrentes",
+   "page": 9,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.66,
+   "escalon": 2,
+   "categoria": "other_income",
+   "confianza": 0.5,
+   "motivo": "Ingresos recurrentes no futbolísticos separados de receitas de futebol; probable cuotas/otros, sin desglose"
+  },
+  {
+   "label": "Outras receitas (despesas)",
+   "lado": "revenue",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "glosa": "Otros ingresos (gastos)",
+   "page": 9,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "(-) Custos das atividades esportivas",
+   "lado": "expense",
+   "section": "estado (lectura 5: hoja)",
+   "glosa": "(-) Costos de las actividades deportivas",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.99
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "section": "estado (lectura 5: hoja)",
+   "glosa": "Gastos administrativos",
+   "page": 9,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "section": "estado (lectura 5: hoja)",
+   "glosa": "Gastos tributarios",
+   "page": 9,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2015-b.md",
+ "mdSha1": "33b98799170e9bb1332a12bc2a878f4b2f20049a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:51:24.494Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    84,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    149,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    179,
+    182
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    186,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    194,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 3,
+   "lineas": [
+    203,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 3,
+   "lineas": [
+    211,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 4,
+   "lineas": [
+    245,
+    251
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3",
+  "b4",
+  "b5",
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. '1.098.226,35 D'), sin indicación de miles.",
+ "moneda": "BRL",
+ "columna_ejercicio": "Valor",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga este demonstrativo marcado 'CONSOLIDADO' (b1-b8) como si fuera el perímetro individual que usa el club en años anteriores?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El encabezado dice 'Período: 01/01/2015 a 31/12/2015 - CONSOLIDADO', pero probablemente es el rótulo del sistema contable de una única sociedad (Ferroviaria Futebol S.A., un solo CNPJ).",
+   "bloques": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de una sola columna (Valor) sin año anterior. El estado de resultado es un demonstrativo analítico por cuentas que sigue de b1 a b3 y continúa con los grupos de b4 a b8 (despesas com vendas, financeiras, outras operacionais, receitas financeiras, outras receitas). b9 corresponde a las firmas y el resultado final."
+}

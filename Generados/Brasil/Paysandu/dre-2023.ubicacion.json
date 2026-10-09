@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2023.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2023.md",
+ "mdSha1": "ed56cad37f165fd36aa3da2a5ecdfd0b3a8ce348",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:09:07.714Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    47
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento contiene solo la Demonstração do resultado (b1), en reales sin escala, con columnas 2023 y 2022. No hay notas de desglose transcriptas. Se asume perímetro individual (no se indica consolidado)."
+}

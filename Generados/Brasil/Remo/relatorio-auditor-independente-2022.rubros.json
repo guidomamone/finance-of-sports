@@ -1,125 +1,400 @@
 {
- "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
- "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
- "club": "remo",
- "year": 2022,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:53:56.232Z",
- "tieOuts": {
-  "cierran": 12,
-  "noCierran": 8
- },
- "warnings": [
-  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": true,
-  "filas": 10,
-  "notasUsadas": []
- },
- "ladoConocido": 10,
- "rubros": [
-  {
-   "label": "Despesas com Jogos e Competições",
-   "lado": "expense",
-   "page": 12,
-   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
-   "values": [
-    2.624685
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Despesas Programa Sócio Torcedor",
-   "lado": "expense",
-   "page": 12,
-   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
-   "values": [
-    0.54908
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Despesas com Passagens e Hospedagens",
-   "lado": "expense",
-   "page": 12,
-   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
-   "values": [
-    0.460396
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Despesas financeiras",
-   "lado": "expense",
-   "page": 12,
-   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
-   "values": [
-    0.40641
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Serviço de Terceiros",
-   "lado": "expense",
-   "page": 28,
-   "section": "## 12. Despesas Operacionais",
-   "values": [
-    2.706775
-   ],
-   "origen": "estado 20"
-  },
-  {
-   "label": "Despesas com Pessoal",
-   "lado": "expense",
-   "page": 28,
-   "section": "## 12. Despesas Operacionais",
-   "values": [
-    6.440639
-   ],
-   "origen": "estado 20"
-  },
-  {
-   "label": "Direito de imagem",
-   "lado": "expense",
-   "page": 28,
-   "section": "## 12. Despesas Operacionais",
-   "values": [
-    1.578607
-   ],
-   "origen": "estado 20"
-  },
-  {
-   "label": "Jogos e Competições",
-   "lado": "expense",
-   "page": 28,
-   "section": "## 12. Despesas Operacionais",
-   "values": [
-    2.630685
-   ],
-   "origen": "estado 20"
-  },
-  {
-   "label": "Receitas Operacionais",
-   "lado": "revenue",
-   "page": 29,
-   "section": "### 13. Receitas Operacionais",
-   "values": [
-    0.95557
-   ],
-   "origen": "estado 22"
-  },
-  {
-   "label": "Receitas Ordinárias",
-   "lado": "revenue",
-   "page": 29,
-   "section": "### 13. Receitas Operacionais",
-   "values": [
-    20.589446
-   ],
-   "origen": "estado 22"
-  }
- ]
+  "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
+  "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+  "club": "remo",
+  "year": 2022,
+  "generatedAt": "2026-10-09T23:23:30.420Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receitas Operacionais",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita Bruta Operacional\"",
+      "values": [
+        0.95557
+      ],
+      "glosa": "Ingresos operativos"
+    },
+    {
+      "label": "Receitas Ordinárias",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita Bruta Operacional\"",
+      "values": [
+        20.589446
+      ],
+      "glosa": "Ingresos ordinarios"
+    },
+    {
+      "label": "Receita de Alugueis",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.798804
+      ],
+      "glosa": "Ingresos por alquileres"
+    },
+    {
+      "label": "Receita de Estacionamento",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.156767
+      ],
+      "glosa": "Ingresos por estacionamiento"
+    },
+    {
+      "label": "Receita de Bilheteria",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        5.72151
+      ],
+      "glosa": "Ingresos de taquilla"
+    },
+    {
+      "label": "Receita Royalties / Lojas",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.620263
+      ],
+      "glosa": "Ingresos por regalías / tiendas"
+    },
+    {
+      "label": "Receita Patrimoniais/Sociais",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.413955
+      ],
+      "glosa": "Ingresos patrimoniales / sociales"
+    },
+    {
+      "label": "Receita da Atividade Social",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.991544
+      ],
+      "glosa": "Ingresos por actividades sociales"
+    },
+    {
+      "label": "Receita Programa Timemania",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.535692
+      ],
+      "glosa": "Ingresos por programa Timemania"
+    },
+    {
+      "label": "Receita Programa Socio Torcedor",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.552399
+      ],
+      "glosa": "Ingresos por programa de socios abonados"
+    },
+    {
+      "label": "Receita de Patrocínio / Marketing",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        5.604274
+      ],
+      "glosa": "Ingresos por patrocinio / marketing"
+    },
+    {
+      "label": "Receita de Direito de Transmissão",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por derechos de retransmisión"
+    },
+    {
+      "label": "Receitas Royalties / Licenciados",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.177819
+      ],
+      "glosa": "Ingresos por regalías / licencias"
+    },
+    {
+      "label": "Receita com Vendas Materiais",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.11865
+      ],
+      "glosa": "Ingresos por ventas de materiales"
+    },
+    {
+      "label": "Demais Receitas",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.630706
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Receita com redução juros/multa - Perse",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por reducción de intereses/multas - Perse"
+    },
+    {
+      "label": "Receitas Repasse de Direitos Federativos",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.687391
+      ],
+      "glosa": "Ingresos por traspaso de derechos federativos"
+    },
+    {
+      "label": "Receita de Premiações",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.322245
+      ],
+      "glosa": "Ingresos por premios"
+    },
+    {
+      "label": "Receita Líquida",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        21.545016
+      ],
+      "glosa": "Ingresos netos"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.436843
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Comissões",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.030512
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.069278
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Manutenção",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.229071
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Despesas com eventos esportivos",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.00695
+      ],
+      "glosa": "Gastos por eventos deportivos"
+    },
+    {
+      "label": "Programa Sócio Torcedor",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Programa de socios abonados"
+    },
+    {
+      "label": "Custo com Contratação",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.122
+      ],
+      "glosa": "Costes de contratación"
+    },
+    {
+      "label": "Serviço de Terceiros",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        2.700725
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Materiais esportivos e premiações",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.103753
+      ],
+      "glosa": "Material deportivo y premios"
+    },
+    {
+      "label": "Amortização dos Débitos Trabalhistas",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.053896
+      ],
+      "glosa": "Amortización de deudas laborales"
+    },
+    {
+      "label": "Despesas com tributos",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.018628
+      ],
+      "glosa": "Gastos por tributos"
+    },
+    {
+      "label": "Despesas com depreciação e amortização",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        8.19683
+      ],
+      "glosa": "Gastos por depreciación y amortización"
+    },
+    {
+      "label": "Amortizações - Direitos Econômicos",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.9643
+      ],
+      "glosa": "Amortizaciones - Derechos económicos"
+    },
+    {
+      "label": "Despesa com Contingências",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.631109
+      ],
+      "glosa": "Dotación a provisiones por contingencias"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.886025
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Despesas com Pessoal",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        6.440639
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Despesa com direito de imagem",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        1.578607
+      ],
+      "glosa": "Gastos por derechos de imagen"
+    },
+    {
+      "label": "Despesas com Jogos e Competições",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        2.624685
+      ],
+      "glosa": "Gastos de partidos y competiciones"
+    },
+    {
+      "label": "Despesas Programa Sócio Torcedor",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.54908
+      ],
+      "glosa": "Gastos del programa de socios abonados"
+    },
+    {
+      "label": "Despesas com Passagens e Hospedagens",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.460396
+      ],
+      "glosa": "Gastos de desplazamientos y alojamiento"
+    }
+  ]
 }

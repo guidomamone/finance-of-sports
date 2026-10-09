@@ -1,0 +1,1331 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
+ "mdSha1": "464820e46f8194e0921a2fd076431c795764b755",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:20:45.489Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b44",
+   "b45",
+   "b46",
+   "b47",
+   "b54"
+  ],
+  "notas_gastos": [
+   "b48",
+   "b49",
+   "b50",
+   "b51",
+   "b52",
+   "b53"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L103: (Em reais)"
+  },
+  {
+   "bloque": "b44",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (24.459.549,21) coincide con L108 del estado en reais"
+  },
+  {
+   "bloque": "b45",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL coincide con L109 del estado en reais"
+  },
+  {
+   "bloque": "b46",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (5.165.898,30) coincide con L110 en reais"
+  },
+  {
+   "bloque": "b47",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (279.901,77) coincide con L112 en reais"
+  },
+  {
+   "bloque": "b54",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (184.577,26) coincide con L129 en reais"
+  },
+  {
+   "bloque": "b48",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (3.564,13) coincide con L117 en reais"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (8.719.408,08) coincide con L121 en reais"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL coincide con L122 en reais"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; las partidas suman 4.450.807,44 = L123 en reais"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (9.735.193,59) coincide con L124 en reais"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; el TOTAL (9.510.671,22) coincide con L125 en reais"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 107,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "29.625.447,51",
+   "anterior": "37.850.414,52",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 108,
+   "etiqueta": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+   "actual": "24.459.549,21",
+   "anterior": "19.961.378,78",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 109,
+   "etiqueta": "RECEITA PATROCÍNIO E MARKETING",
+   "actual": "0,00",
+   "anterior": "5.431.480,93",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 110,
+   "etiqueta": "RECEITAS DIVERSAS",
+   "actual": "5.165.898,30",
+   "anterior": "12.457.554,81",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 112,
+   "etiqueta": "(=) DEDUÇÕES DA RECEITA BRUTA",
+   "actual": "(279.901,77)",
+   "anterior": "(1.051.383,15)",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 113,
+   "etiqueta": "(-) DEDUÇÕES DA RECEITA BRUTA",
+   "actual": "(279.901,77)",
+   "anterior": "(1.051.383,15)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 115,
+   "etiqueta": "= RESULTADO OPERACIONAL LÍQUIDO",
+   "actual": "29.345.545,74",
+   "anterior": "36.799.031,37",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 117,
+   "etiqueta": "(=) CUSTOS COM ATIV. PREST. SERVIÇOS/VENDAS",
+   "actual": "(3.564,13)",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 118,
+   "etiqueta": "(-) CUSTOS GERAIS",
+   "actual": "(3.564,13)",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 120,
+   "etiqueta": "(=) DESPESAS COM ATIVIDADE OPERACIONAL",
+   "actual": "(33.618.051,11)",
+   "anterior": "(30.788.195,68)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 121,
+   "etiqueta": "(-) DESPESAS COM PESSOAL",
+   "actual": "(8.719.408,08)",
+   "anterior": "(6.312.614,37)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 122,
+   "etiqueta": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "actual": "(1.201.970,78)",
+   "anterior": "(665.201,56)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 123,
+   "etiqueta": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "actual": "(4.450.807,44)",
+   "anterior": "(5.447.098,76)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 124,
+   "etiqueta": "(-) DESPESAS COM VENDAS EM GERAL",
+   "actual": "(9.735.193,59)",
+   "anterior": "(8.820.540,46)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 125,
+   "etiqueta": "(-) OUTRAS DESPESAS",
+   "actual": "(9.510.671,22)",
+   "anterior": "(9.542.740,53)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 127,
+   "etiqueta": "= RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO",
+   "actual": "(4.276.069,50)",
+   "anterior": "6.010.835,69",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 129,
+   "etiqueta": "(=) RESULTADO FINANCEIRO",
+   "actual": "(184.577,26)",
+   "anterior": "(3.896.299,34)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 130,
+   "etiqueta": "(-) DESPESAS FINANCEIRAS",
+   "actual": "(4.019.143,82)",
+   "anterior": "(4.429.114,90)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 131,
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "actual": "3.834.566,56",
+   "anterior": "532.815,56",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 133,
+   "etiqueta": "(DÉFICIT) DO EXERCÍCIO/ SUPERÁVIT",
+   "actual": "(4.460.646,76)",
+   "anterior": "2.114.536,35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 756,
+   "etiqueta": "Venda de atletas",
+   "actual": "2.718.339,04",
+   "anterior": "1.199.337,47",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 757,
+   "etiqueta": "Programa sócio torcedor",
+   "actual": "786.306,37",
+   "anterior": "1.079.868,47",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 758,
+   "etiqueta": "Cota televisiva",
+   "actual": "10.448.424,84",
+   "anterior": "9.320.800,90",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 759,
+   "etiqueta": "Incentivo Governo Federal",
+   "actual": "0,00",
+   "anterior": "1.514.364,23",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 760,
+   "etiqueta": "Premiação",
+   "actual": "0,00",
+   "anterior": "2.654.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 761,
+   "etiqueta": "Bilheteria",
+   "actual": "3.777.180,00",
+   "anterior": "3.251.231,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 762,
+   "etiqueta": "Uso de imagem / royalties",
+   "actual": "0,00",
+   "anterior": "932.899,31",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 763,
+   "etiqueta": "Direito de imagem",
+   "actual": "0,00",
+   "anterior": "8.877,40",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 764,
+   "etiqueta": "Patrocinadores",
+   "actual": "5.017.600,75",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 765,
+   "etiqueta": "Marca própria - Loja Royalties",
+   "actual": "859.339,42",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 766,
+   "etiqueta": "Venda de participações",
+   "actual": "825.365,61",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 767,
+   "etiqueta": "Mecanismo Solidariedade",
+   "actual": "26.993,18",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b44",
+   "linea": 768,
+   "etiqueta": "TOTAL",
+   "actual": "24.459.549,21",
+   "anterior": "19.961.378,78",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA COM PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 774,
+   "etiqueta": "Repasse de direitos federativos",
+   "actual": "0,00",
+   "anterior": "2.655.623,31",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA PATROCÍNIO E MARKETING"
+  },
+  {
+   "bloque": "b45",
+   "linea": 775,
+   "etiqueta": "Patrocínio marketing",
+   "actual": "0,00",
+   "anterior": "2.775.857,62",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA PATROCÍNIO E MARKETING"
+  },
+  {
+   "bloque": "b45",
+   "linea": 776,
+   "etiqueta": "TOTAL",
+   "actual": "0,00",
+   "anterior": "5.431.480,93",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA PATROCÍNIO E MARKETING"
+  },
+  {
+   "bloque": "b46",
+   "linea": 782,
+   "etiqueta": "Receitas Patrimoniais Sociais",
+   "actual": "0,00",
+   "anterior": "148.011,12",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 783,
+   "etiqueta": "Mensalidade Conselho Deliberativo",
+   "actual": "535.741,50",
+   "anterior": "410.790,22",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 784,
+   "etiqueta": "Recuperação de Despesa",
+   "actual": "175.124,65",
+   "anterior": "3.215,42",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 785,
+   "etiqueta": "Outras Receitas Diversas (a)",
+   "actual": "2.318.194,75",
+   "anterior": "2.315.304,51",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 786,
+   "etiqueta": "Recuperação de despesa Contingência",
+   "actual": "2.136.837,40",
+   "anterior": "9.580.233,54",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 787,
+   "etiqueta": "TOTAL",
+   "actual": "5.165.898,30",
+   "anterior": "12.457.554,81",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITAS DIVERSAS"
+  },
+  {
+   "bloque": "b47",
+   "linea": 800,
+   "etiqueta": "Cancelamento e Devoluções",
+   "actual": "77.560,00",
+   "anterior": "501.410,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) DEDUÇÕES DA RECEITA BRUTA"
+  },
+  {
+   "bloque": "b47",
+   "linea": 801,
+   "etiqueta": "Impostos s/ Vendas e Serviços",
+   "actual": "202.341,77",
+   "anterior": "549.972,35",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(-) DEDUÇÕES DA RECEITA BRUTA"
+  },
+  {
+   "bloque": "b47",
+   "linea": 802,
+   "etiqueta": "TOTAL",
+   "actual": "279.901,77",
+   "anterior": "1.051.383,15",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "(-) DEDUÇÕES DA RECEITA BRUTA"
+  },
+  {
+   "bloque": "b54",
+   "linea": 927,
+   "etiqueta": "(-) Despesas Financeiras",
+   "actual": "(4.019.143,82)",
+   "anterior": "(4.429.114,90)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "(=) RESULTADO FINANCEIRO"
+  },
+  {
+   "bloque": "b54",
+   "linea": 928,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "3.834.566,56",
+   "anterior": "532.815,56",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "(=) RESULTADO FINANCEIRO"
+  },
+  {
+   "bloque": "b54",
+   "linea": 929,
+   "etiqueta": "TOTAL",
+   "actual": "(184.577,26)",
+   "anterior": "(3.896.299,34)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "(=) RESULTADO FINANCEIRO"
+  },
+  {
+   "bloque": "b48",
+   "linea": 808,
+   "etiqueta": "Fretes Sobre Compras",
+   "actual": "3.564,13",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS GERAIS"
+  },
+  {
+   "bloque": "b48",
+   "linea": 809,
+   "etiqueta": "TOTAL",
+   "actual": "3.564,13",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS GERAIS"
+  },
+  {
+   "bloque": "b49",
+   "linea": 817,
+   "etiqueta": "Salários e Ordenados",
+   "actual": "4.202.022,01",
+   "anterior": "3.658.557,45",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 818,
+   "etiqueta": "13º Salário",
+   "actual": "62.485,60",
+   "anterior": "3.941,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 819,
+   "etiqueta": "Férias",
+   "actual": "2.143,02",
+   "anterior": "500,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 820,
+   "etiqueta": "Prêmios e Gratificações",
+   "actual": "3.065.662,01",
+   "anterior": "2.348.667,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 821,
+   "etiqueta": "INSS",
+   "actual": "137.866,94",
+   "anterior": "197.878,20",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 822,
+   "etiqueta": "FGTS",
+   "actual": "228.118,06",
+   "anterior": "234.411,19",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 823,
+   "etiqueta": "Assistência Médica e Assistencial",
+   "actual": "6.106,92",
+   "anterior": "8.135,77",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 824,
+   "etiqueta": "Vale Transporte",
+   "actual": "75.833,71",
+   "anterior": "72.824,30",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 825,
+   "etiqueta": "PIS S/ Folha",
+   "actual": "26.670,44",
+   "anterior": "28.180,28",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 826,
+   "etiqueta": "EPI",
+   "actual": "0,00",
+   "anterior": "41.333,46",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 827,
+   "etiqueta": "Auxílio Moradia",
+   "actual": "683.347,62",
+   "anterior": "346.094,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 828,
+   "etiqueta": "(-) Recuperação de Despesa",
+   "actual": "(1.643.022,50)",
+   "anterior": "(3.546.434,66)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 829,
+   "etiqueta": "Rescisões",
+   "actual": "1.400,00",
+   "anterior": "2.359.946,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 830,
+   "etiqueta": "Alimentação",
+   "actual": "27.056,28",
+   "anterior": "18.872,03",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 831,
+   "etiqueta": "Direitos de Imagens",
+   "actual": "3.453,22",
+   "anterior": "538.429,17",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 832,
+   "etiqueta": "Luvas",
+   "actual": "1.664.264,67",
+   "anterior": "1.277,11",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 833,
+   "etiqueta": "Uniformes",
+   "actual": "92.666,76",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 834,
+   "etiqueta": "Despesas compra/Venda de Jogador",
+   "actual": "83.333,32",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b49",
+   "linea": 835,
+   "etiqueta": "TOTAL",
+   "actual": "8.719.408,08",
+   "anterior": "6.312.614,37",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM PESSOAL"
+  },
+  {
+   "bloque": "b50",
+   "linea": 841,
+   "etiqueta": "Impostos, Taxas e Contribuições",
+   "actual": "1.201.970,78",
+   "anterior": "665.201,56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES"
+  },
+  {
+   "bloque": "b50",
+   "linea": 842,
+   "etiqueta": "TOTAL",
+   "actual": "1.201.970,78",
+   "anterior": "665.201,56",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES"
+  },
+  {
+   "bloque": "b51",
+   "linea": 853,
+   "etiqueta": "Despesas Cont. Trabalhista Cíveis Tributária",
+   "actual": "3.682.155,43",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
+   "bloque": "b51",
+   "linea": 854,
+   "etiqueta": "Provisão de Contingências Trabalhista",
+   "actual": "0,00",
+   "anterior": "4.714.112,56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
+   "bloque": "b51",
+   "linea": 855,
+   "etiqueta": "Provisão de Contingências Cíveis",
+   "actual": "0,00",
+   "anterior": "5.543,99",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
+   "bloque": "b51",
+   "linea": 856,
+   "etiqueta": "Provisões de Férias",
+   "actual": "468.285,41",
+   "anterior": "478.111,70",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
+   "bloque": "b51",
+   "linea": 857,
+   "etiqueta": "Provisões de 13º Salário",
+   "actual": "300.366,60",
+   "anterior": "249.330,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
+   "bloque": "b52",
+   "linea": 864,
+   "etiqueta": "Concentração de Jogos",
+   "actual": "8.490,75",
+   "anterior": "1.474,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 865,
+   "etiqueta": "Comissão Sobre Vendas",
+   "actual": "1.148.757,75",
+   "anterior": "1.575.195,34",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 866,
+   "etiqueta": "Propaganda e Publicidade",
+   "actual": "6.966.558,72",
+   "anterior": "7.105.824,81",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 867,
+   "etiqueta": "Despesas com entrega",
+   "actual": "3.360,00",
+   "anterior": "2.723,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 868,
+   "etiqueta": "Despesas com viagens e representações",
+   "actual": "168.883,50",
+   "anterior": "135.323,31",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 869,
+   "etiqueta": "Combustíveis",
+   "actual": "120.717,65",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 870,
+   "etiqueta": "Federação local",
+   "actual": "111.549,16",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 871,
+   "etiqueta": "Aluguel de campo",
+   "actual": "89.854,45",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 872,
+   "etiqueta": "Arbitragem auxiliares delegados",
+   "actual": "52.476,74",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 873,
+   "etiqueta": "Pedágio",
+   "actual": "1.960,90",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 874,
+   "etiqueta": "Alimentação",
+   "actual": "2.000,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 875,
+   "etiqueta": "Quadro móvel",
+   "actual": "449.074,71",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 876,
+   "etiqueta": "Repasse de venda de atleta",
+   "actual": "300.000,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 877,
+   "etiqueta": "Medicamentos",
+   "actual": "10.863,39",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 878,
+   "etiqueta": "Seguros em Geral",
+   "actual": "5.176,06",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 879,
+   "etiqueta": "Confecção de ingressos",
+   "actual": "205.921,49",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 880,
+   "etiqueta": "Manutenção e reparo",
+   "actual": "7.096,24",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 881,
+   "etiqueta": "Aluguel de Campo",
+   "actual": "77.836,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 882,
+   "etiqueta": "Despesas Cartorárias",
+   "actual": "4.616,08",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b52",
+   "linea": 883,
+   "etiqueta": "TOTAL",
+   "actual": "9.735.193,59",
+   "anterior": "8.820.540,46",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS COM VENDAS EM GERAL"
+  },
+  {
+   "bloque": "b53",
+   "linea": 896,
+   "etiqueta": "Transportes e hospedagem de arbitragem",
+   "actual": "0,00",
+   "anterior": "1.828,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 897,
+   "etiqueta": "Brigadista",
+   "actual": "0,00",
+   "anterior": "361,43",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 898,
+   "etiqueta": "Sindicato dos árbitros de Goiás",
+   "actual": "0,00",
+   "anterior": "1.080,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 899,
+   "etiqueta": "Despesas legais e judiciais",
+   "actual": "3.252.463,51",
+   "anterior": "177.638,98",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 900,
+   "etiqueta": "Uso e consumo",
+   "actual": "1.918.751,69",
+   "anterior": "2.002.470,61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 901,
+   "etiqueta": "Aluguel, telefone, energia elétrica e água",
+   "actual": "515.642,41",
+   "anterior": "617.961,49",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 902,
+   "etiqueta": "Serviços prestados por terceiros",
+   "actual": "2.552.545,02",
+   "anterior": "2.702.606,77",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 903,
+   "etiqueta": "Depreciações e amortizações",
+   "actual": "631.855,91",
+   "anterior": "108.493,92",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 904,
+   "etiqueta": "Recuperação de despesas",
+   "actual": "(55.302,47)",
+   "anterior": "(3.226,00)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 905,
+   "etiqueta": "Honorários advocatícios",
+   "actual": "3.232,61",
+   "anterior": "1.683.367,38",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 906,
+   "etiqueta": "Manutenção e reparo",
+   "actual": "326.789,43",
+   "anterior": "165.914,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 907,
+   "etiqueta": "Outras Despesas Operacionais",
+   "actual": "364.693,11",
+   "anterior": "88.018,93",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 908,
+   "etiqueta": "Combustíveis",
+   "actual": "0,00",
+   "anterior": "125.184,59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 909,
+   "etiqueta": "Federação local",
+   "actual": "0,00",
+   "anterior": "304.432,70",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 910,
+   "etiqueta": "Aluguel de campo",
+   "actual": "0,00",
+   "anterior": "256.904,65",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 911,
+   "etiqueta": "Arbitragem auxiliares delegados",
+   "actual": "0,00",
+   "anterior": "62.991,56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 912,
+   "etiqueta": "Pedágio",
+   "actual": "0,00",
+   "anterior": "345,90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 913,
+   "etiqueta": "Alimentação",
+   "actual": "0,00",
+   "anterior": "7.892,27",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 914,
+   "etiqueta": "Quadro móvel",
+   "actual": "0,00",
+   "anterior": "346.648,42",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 915,
+   "etiqueta": "Repasse de venda de atleta",
+   "actual": "0,00",
+   "anterior": "463.745,25",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 916,
+   "etiqueta": "Medicamentos",
+   "actual": "0,00",
+   "anterior": "8.383,19",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 917,
+   "etiqueta": "Seguros em Geral",
+   "actual": "0,00",
+   "anterior": "31.369,37",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 918,
+   "etiqueta": "Confecção de ingressos",
+   "actual": "0,00",
+   "anterior": "388.326,60",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  },
+  {
+   "bloque": "b53",
+   "linea": 919,
+   "etiqueta": "TOTAL",
+   "actual": "9.510.671,22",
+   "anterior": "9.542.740,53",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) OUTRAS DESPESAS"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 107,
+  "actual": "29.625.447,51"
+ },
+ "total_gastos": {
+  "linea": 120,
+  "actual": "(33.618.051,11)"
+ },
+ "resultado": {
+  "linea": 133,
+  "actual": "(4.460.646,76)",
+  "anterior": "2.114.536,35"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el TOTAL 2023 de 768.652,01 de la nota 33.3 (L858), usando las partidas que suman 4.450.807,44 como el estado (L123)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "(-) PROVISÕES E CONTIGÊNCIAS",
+   "texto": "El TOTAL impreso en L858 (768.652,01) no coincide con la suma de sus partidas ni con L123 (4.450.807,44); parece error de tipeo.",
+   "bloques": [
+    "b51",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro sin título de L894-L919 corresponde a la nota 33.5 Outras Despesas del renglón L125?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "(-) OUTRAS DESPESAS",
+   "texto": "El bloque b53 no trae título de nota, pero su TOTAL (L919) coincide con L125 en ambos años.",
+   "bloques": [
+    "b53",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reais. La nota 30.1 se titula 'Receita com direitos de transmissão e premiações' pero su total coincide con 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (L108). Las notas muestran importes en positivo donde el estado los muestra entre paréntesis. No hay impuesto a las ganancias. El total de la nota 33.3 (L858) se omitió por inconsistente."
+}

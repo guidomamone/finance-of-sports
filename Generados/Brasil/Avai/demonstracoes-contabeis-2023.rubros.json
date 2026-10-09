@@ -1,0 +1,580 @@
+{
+  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md",
+  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2023.pdf",
+  "club": "avai",
+  "year": 2023,
+  "generatedAt": "2026-10-09T23:23:27.843Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Mensalidades dos Sócios",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        8.273
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        1.38
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Direitos econômicos/Mecanismo de solidariedade (i)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        7.397
+      ],
+      "glosa": "Derechos económicos / Mecanismo de solidaridad (i)"
+    },
+    {
+      "label": "Empréstimo de jogadores",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        0.265
+      ],
+      "glosa": "Cesión de jugadores"
+    },
+    {
+      "label": "Arrendamentos, Patrocínios e Publicidades",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        10.731
+      ],
+      "glosa": "Arrendamientos, patrocinios y publicidad"
+    },
+    {
+      "label": "TV e transmissão jogos",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        9.867
+      ],
+      "glosa": "TV y retransmisión de partidos"
+    },
+    {
+      "label": "Repasses da Loteria Timemania",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        0.78
+      ],
+      "glosa": "Transferencias de la lotería Timemania"
+    },
+    {
+      "label": "Venda de Material Esportivo",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        1.334
+      ],
+      "glosa": "Venta de material deportivo"
+    },
+    {
+      "label": "Venda e uso Marca",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Receita liquida das atividades\"",
+      "values": [
+        0.583
+      ],
+      "glosa": "Venta y uso de marca"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Outras receitas (despesas) operacionais\"",
+      "values": [
+        0.15
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Outras receitas operacionais (ii)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Outras receitas (despesas) operacionais\"",
+      "values": [
+        92.51
+      ],
+      "glosa": "Otros ingresos de explotación (ii)"
+    },
+    {
+      "label": "Receitas não operacionais",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Outras receitas (despesas) operacionais\"",
+      "values": [
+        0.072
+      ],
+      "glosa": "Ingresos no operativos"
+    },
+    {
+      "label": "Salários e Encargos",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        23.838
+      ],
+      "glosa": "Sueldos y cargas sociales"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.392
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Viagens e Hospedagem",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        2.469
+      ],
+      "glosa": "Viajes y alojamiento"
+    },
+    {
+      "label": "INSS s/ Receitas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.854
+      ],
+      "glosa": "Seguridad Social sobre ingresos (INSS)"
+    },
+    {
+      "label": "Aluguel e manutenção dos campos",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.813
+      ],
+      "glosa": "Alquiler y mantenimiento de campos de juego"
+    },
+    {
+      "label": "Consultoria Esportiva",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.945
+      ],
+      "glosa": "Consultoría deportiva"
+    },
+    {
+      "label": "Honorários Profissionais",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.102
+      ],
+      "glosa": "Honorarios profesionales"
+    },
+    {
+      "label": "Arbitragem/Federação",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.934
+      ],
+      "glosa": "Arbitraje / Federación"
+    },
+    {
+      "label": "Amortização Custo Atletas Profissionais",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.286
+      ],
+      "glosa": "Amortización de derechos federativos de deportistas profesionales"
+    },
+    {
+      "label": "Seguros/Plano de Saúde",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.481
+      ],
+      "glosa": "Seguros / Seguro médico"
+    },
+    {
+      "label": "Direito de Uso de Imagem",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        6.574
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Material Esportivo/Material Médico",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.954
+      ],
+      "glosa": "Material deportivo / Material médico"
+    },
+    {
+      "label": "Borderoux de Jogos",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.569
+      ],
+      "glosa": "Liquidaciones de partidos (Bordereaux)"
+    },
+    {
+      "label": "Taxa de Policiamento",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.26
+      ],
+      "glosa": "Tasa de seguridad policial"
+    },
+    {
+      "label": "Softwares e Consultorias",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.228
+      ],
+      "glosa": "Software y consultoría"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.281
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Premiações",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.696
+      ],
+      "glosa": "Primas y premios"
+    },
+    {
+      "label": "Direito de Arena",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        0.454
+      ],
+      "glosa": "Derechos de arena"
+    },
+    {
+      "label": "Empréstimos de Atletas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.923
+      ],
+      "glosa": "Cesión de deportistas"
+    },
+    {
+      "label": "Intermediação e Negociação de Atletas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.614
+      ],
+      "glosa": "Intermediación y contratación de deportistas"
+    },
+    {
+      "label": "Materiais e serviços diversos",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        2.579
+      ],
+      "glosa": "Materiales y servicios diversos"
+    },
+    {
+      "label": "Manutenção, conservação e reformas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.614
+      ],
+      "glosa": "Mantenimiento, conservación y reformas"
+    },
+    {
+      "label": "Futebol Feminino",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        1.349
+      ],
+      "glosa": "Fútbol femenino"
+    },
+    {
+      "label": "Custo com atletas dispensados",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        6.033
+      ],
+      "glosa": "Costes por rescisión de contratos de deportistas"
+    },
+    {
+      "label": "(-) Transferência para o Intangível",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos operacionais das atividades\"",
+      "values": [
+        -5.605
+      ],
+      "glosa": "(-) Transferencia al inmovilizado intangible"
+    },
+    {
+      "label": "Alimentação/Plano de saúde/Seguros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.701
+      ],
+      "glosa": "Alimentación / Seguro médico / Seguros"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.382
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Assessoria e comunicação",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.234
+      ],
+      "glosa": "Asesoría y comunicación"
+    },
+    {
+      "label": "CMV/ICMS",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.208
+      ],
+      "glosa": "Coste de ventas / ICMS"
+    },
+    {
+      "label": "Demais despesas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.486
+      ],
+      "glosa": "Demás gastos"
+    },
+    {
+      "label": "Depreciação",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.263
+      ],
+      "glosa": "Depreciación"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.431
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Eventos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.329
+      ],
+      "glosa": "Eventos"
+    },
+    {
+      "label": "Impostos e taxas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.24
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção de Equipamentos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.381
+      ],
+      "glosa": "Mantenimiento de equipamiento"
+    },
+    {
+      "label": "Manutenção e conservação do Estádio",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.592
+      ],
+      "glosa": "Mantenimiento y conservación del estadio"
+    },
+    {
+      "label": "Material de consumo",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.986
+      ],
+      "glosa": "Material de consumo"
+    },
+    {
+      "label": "Propaganda e publicidade",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.258
+      ],
+      "glosa": "Propaganda y publicidad"
+    },
+    {
+      "label": "Provisões para contingências",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Provisiones para contingencias"
+    },
+    {
+      "label": "Repasse Bares",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.848
+      ],
+      "glosa": "Concesión de bares"
+    },
+    {
+      "label": "Softwares e consultorias",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.929
+      ],
+      "glosa": "Software y consultorías"
+    },
+    {
+      "label": "Telefone e Internet",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.092
+      ],
+      "glosa": "Teléfono e internet"
+    },
+    {
+      "label": "Salários e Encargos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        4.739
+      ],
+      "glosa": "Sueldos y cargas sociales"
+    },
+    {
+      "label": "Atualização Dívida PGFN (i)",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        41.126
+      ],
+      "glosa": "Actualización de deuda PGFN (i)"
+    },
+    {
+      "label": "Serviços de terceiros + Honorários profissionais",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        2.045
+      ],
+      "glosa": "Servicios de terceros + Honorarios profesionales"
+    }
+  ]
+}

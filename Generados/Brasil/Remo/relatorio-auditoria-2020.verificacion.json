@@ -1,0 +1,143 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "generado": "2026-10-09T23:23:30.288Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2020,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "a2348ad",
+  "bad94f1",
+  "5ad025b",
+  "aafedff",
+  "2409c5b",
+  "fd446e9",
+  "b3245b3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"(+) Receita Bruta Operacional\" 12.351668 cierra; además se suman 1 línea(s) fuera de ese total (12.351668)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 24.703336 - gastos 28.444121 ± financiero 0.194093 ± impuesto 0 no da el impreso -2.064503"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": false,
+   "detalle": "ingresos de 2020: 24.703336 en este documento y 12.352668 en demonstracoes-contabeis-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 24.703336,
+  "gastos": 28.444121,
+  "financiero": 0.194093,
+  "impuesto": 0,
+  "resultadoImpreso": -2.064503,
+  "resultadoParaCargar": -2.064503,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "(+) Receita Bruta Operacional",
+   "lado": "ingreso",
+   "M": 12.351668,
+   "pagina": 8,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita De Atividades Esportivas",
+   "lado": "ingreso",
+   "M": 12.351668,
+   "pagina": 8,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Custos das Atividades Esportivas",
+   "lado": "gasto",
+   "M": 7.54864,
+   "pagina": 8,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos das Atividades Esportivas",
+   "lado": "gasto",
+   "M": 7.54864,
+   "pagina": 8,
+   "linea": 194,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas Operacionais",
+   "lado": "gasto",
+   "M": 4.943561,
+   "pagina": 8,
+   "linea": 197,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Operacionais",
+   "lado": "gasto",
+   "M": 4.555341,
+   "pagina": 8,
+   "linea": 198,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas c/ drepreciação/amortização",
+   "lado": "gasto",
+   "M": 1.923969,
+   "pagina": 8,
+   "linea": 200,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas c/ drepreciação/amortização",
+   "lado": "gasto",
+   "M": 1.923969,
+   "pagina": 8,
+   "linea": 201,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultado Financeiro",
+   "M": 0.194093,
+   "linea": 199
+  }
+ ],
+ "impuesto": []
+}

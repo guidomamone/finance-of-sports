@@ -25,3 +25,4 @@ Todos PDF reales de "Stichting R.K.F.C. Volendam".
   es el club en sí. Candidato para `dudas-por-club.md` antes de usar esos documentos 2013-2019
   para cualquier carga de datos.
 - Último chequeo: 2026-09-17.
+Color de marca: #F97500 — infobox de en.wikipedia (body1 camiseta local); nl.wikipedia: camiseta naranja y pantalón negro; escudo naranja coherente, verificado 2026-10-09

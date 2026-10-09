@@ -1,0 +1,188 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2017.md",
+ "generatedAt": "2026-10-09T23:37:00.901Z",
+ "rubrosHuella": "073c3906f57116aa952d9d4eb999ed9751c9b8e2",
+ "rubros": [
+  {
+   "label": "Receita com transmissão televisíveis",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com mensalidade de sócios",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "member_dues",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com Patrocínios",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Repasse de direitos federativos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de royalties",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Publicidades",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento de Marketing e Comercial",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento de Patrimonio",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Juridico",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Loja - Tigre Maniacos",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamento Amador",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Departamento Profissional",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.56
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 989
+  }
+ ]
+}

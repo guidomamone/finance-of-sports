@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "mdSha1": "1f2d8f2441c3161955b16c2e4d03f195b4c8dc50",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-09T22:45:30.117Z",
+ "fuentes": {
+  "5": "gemini"
+ },
+ "confirmados": 34,
+ "noConfirmados": [
+  {
+   "bloque": "b3",
+   "pagina": 5,
+   "linea": 170,
+   "numero": "538.364,04",
+   "segundaLeyo": "53838404",
+   "sinSegunda": false,
+   "texto": "| Despesas administrativa profissional | 237.178,45 | 538.364,04 |"
+  },
+  {
+   "bloque": "b3",
+   "pagina": 5,
+   "linea": 172,
+   "numero": "794.763,97",
+   "segundaLeyo": "79478397",
+   "sinSegunda": false,
+   "texto": "| **Despesas Operacionais** | **402.186,01** | **794.763,97** |"
+  }
+ ]
+}

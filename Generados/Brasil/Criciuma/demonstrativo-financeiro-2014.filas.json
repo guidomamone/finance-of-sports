@@ -1,0 +1,392 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.md",
+ "mdSha1": "f1572075a8cd447ec609f5e15ba1afb3cc678d69",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:31:58.157Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b26"
+  ],
+  "notas_gastos": [
+   "b27"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L126: Em reais"
+  },
+  {
+   "bloque": "b26",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación de escala; importes coinciden con el estado (en reais)"
+  },
+  {
+   "bloque": "b27",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación de escala; importes coinciden con el estado (en reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 130,
+   "etiqueta": "Receita operacional bruta",
+   "actual": "43.279.511",
+   "anterior": "44.999.887",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 132,
+   "etiqueta": "Departamento profissional",
+   "actual": "(32.953.552)",
+   "anterior": "(28.077.497)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 133,
+   "etiqueta": "Departamento amador",
+   "actual": "(2.519.771)",
+   "anterior": "(2.028.453)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 134,
+   "etiqueta": "Departamento administrativo",
+   "actual": "(884.796)",
+   "anterior": "(856.767)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 135,
+   "etiqueta": "Departamento marketing e comercial",
+   "actual": "(687.495)",
+   "anterior": "(971.574)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 136,
+   "etiqueta": "Departamento financeiro",
+   "actual": "(199.486)",
+   "anterior": "(143.970)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 137,
+   "etiqueta": "Departamento de patrimônio",
+   "actual": "(4.094.848)",
+   "anterior": "(3.331.551)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 138,
+   "etiqueta": "Departamento jurídico",
+   "actual": "(716.254)",
+   "anterior": "(1.271.965)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 139,
+   "etiqueta": "Departamento loja Tigre Maníacos",
+   "actual": "(249.772)",
+   "anterior": "(252.090)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 140,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(63.622)",
+   "anterior": "(420.794)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 141,
+   "etiqueta": "Custos e despesas operacionais",
+   "actual": "(42.369.596)",
+   "anterior": "(37.354.661)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 143,
+   "etiqueta": "Superávit/Déficit antes do resultado financeiro",
+   "actual": "909.915",
+   "anterior": "7.645.226",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 145,
+   "etiqueta": "Receitas financeiras",
+   "actual": "106.268",
+   "anterior": "48.876",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 146,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(1.012.061)",
+   "anterior": "(1.405.748)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 147,
+   "etiqueta": "Resultado financeiro líquido",
+   "actual": "(905.793)",
+   "anterior": "(1.356.872)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 149,
+   "etiqueta": "Superávit/Déficit do exercício",
+   "actual": "4.122",
+   "anterior": "6.288.354",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 833,
+   "etiqueta": "Receitas com transmissões televisivas",
+   "actual": "30.086.366",
+   "anterior": "31.284.433",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 834,
+   "etiqueta": "Receitas com mensalidade dos sócios",
+   "actual": "10.809.859",
+   "anterior": "10.343.313",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 835,
+   "etiqueta": "Receita de mecanismo de solidariedade",
+   "actual": "1.048.507",
+   "anterior": "1.422.656",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 836,
+   "etiqueta": "Repasses de direitos federativos",
+   "actual": "505.145",
+   "anterior": "705.478",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 837,
+   "etiqueta": "Venda de mercadorias",
+   "actual": "441.636",
+   "anterior": "795.949",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 838,
+   "etiqueta": "Receitas com royalties",
+   "actual": "119.377",
+   "anterior": "292.131",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 839,
+   "etiqueta": "Receitas de publicidade",
+   "actual": "268.621",
+   "anterior": "155.927",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b26",
+   "linea": 840,
+   "etiqueta": "Receita operacional líquidas",
+   "actual": "43.279.511",
+   "anterior": "44.999.887",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional bruta"
+  },
+  {
+   "bloque": "b27",
+   "linea": 855,
+   "etiqueta": "Descontos obtidos",
+   "actual": "2.556",
+   "anterior": "2.540",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 856,
+   "etiqueta": "Renda de aplicações financeiras",
+   "actual": "103.340",
+   "anterior": "45.120",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 857,
+   "etiqueta": "Outras receitas financeiras",
+   "actual": "372",
+   "anterior": "1.216",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 858,
+   "etiqueta": "",
+   "actual": "106.268",
+   "anterior": "48.876",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 860,
+   "etiqueta": "Despesas e comissões bancárias",
+   "actual": "(169.104)",
+   "anterior": "(165.233)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 861,
+   "etiqueta": "Juros sobre empréstimos",
+   "actual": "(698.106)",
+   "anterior": "(1.035.929)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 862,
+   "etiqueta": "Descontos concedidos (perdão de dívida sócios)",
+   "actual": "(144.637)",
+   "anterior": "(203.668)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 863,
+   "etiqueta": "Outras despesas financeiras",
+   "actual": "(214)",
+   "anterior": "(918)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 864,
+   "etiqueta": "",
+   "actual": "(1.012.061)",
+   "anterior": "(1.405.748)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 865,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(905.793)",
+   "anterior": "(1.356.872)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 130,
+  "actual": "43.279.511"
+ },
+ "total_gastos": {
+  "linea": 141,
+  "actual": "(42.369.596)"
+ },
+ "resultado": {
+  "linea": 149,
+  "actual": "4.122",
+  "anterior": "6.288.354"
+ },
+ "dudas": [],
+ "observaciones": "Estado en reais (L126). Notas sin escala explícita pero sus totales coinciden exactamente con el estado. Los subtotales L858 y L864 no tienen etiqueta impresa. 909.915 - 905.793 = 4.122, cuadra con L149. El documento no tiene nota de desglose de gastos operativos por departamento; b27 solo desglosa el resultado financiero."
+}

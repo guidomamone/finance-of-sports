@@ -44,3 +44,5 @@ confirmados como `PDF document` real, tamaños entre 293 KB y 9,9 MB.
   `dudas-por-club.md` si se llega a cargar este ejercicio (cuál de las dos versiones usar).
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: #FCD20F — amarillo y negro (en.wikipedia: camisetas casi siempre amarillas/doradas, short negro); hex del amarillo de logotyp.us; coincide con el escudo (amarillo), verificado 2026-10-09

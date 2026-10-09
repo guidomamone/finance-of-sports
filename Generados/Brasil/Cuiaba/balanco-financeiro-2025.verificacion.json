@@ -1,0 +1,301 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+ "generado": "2026-10-09T23:23:29.210Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "8f50786",
+  "695c07d",
+  "c13d72f",
+  "48a94b7",
+  "73349c2",
+  "883c644",
+  "445ac65"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 75.394565 y el total impreso dice 36.625176"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 75.394565 - gastos 95.417954 ± financiero -2.017 ± impuesto 0 no da el impreso -42.148674"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2024: 212.320997 en balanco-financeiro-2024.pdf y 226.755644 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b30 resume receita futebol profissional, demais receitas y despesas tributárias, que probablemente ya figuran abiertos en b6; no agrega desglose nuevo.",
+  "duda de extraer que no afecta la carga: L1120 asigna 36.625.175 (bruta total, diferencia de 1 por redondeo) a Receita Futebol Profissional, cuando el estado muestra 29.457.740 (L187)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 75.394565,
+  "gastos": 95.417954,
+  "financiero": -2.017,
+  "impuesto": 0,
+  "resultadoImpreso": -42.148674,
+  "resultadoParaCargar": -42.148674,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "PATROCÍNIOS",
+   "lado": "ingreso",
+   "M": 12,
+   "pagina": 7,
+   "linea": 188,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "PLACAS DE PUBLICIDADE",
+   "lado": "ingreso",
+   "M": 2.600926,
+   "pagina": 7,
+   "linea": 189,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "SÓCIO TORCEDOR",
+   "lado": "ingreso",
+   "M": 0.303897,
+   "pagina": 7,
+   "linea": 190,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "COTAS/TV",
+   "lado": "ingreso",
+   "M": 12.769767,
+   "pagina": 7,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "BILHETERIA/JOGOS",
+   "lado": "ingreso",
+   "M": 1.472385,
+   "pagina": 7,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": "ingreso",
+   "M": 0.310765,
+   "pagina": 7,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "LICENCIAMENTOS",
+   "lado": "ingreso",
+   "M": 0.22614,
+   "pagina": 7,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "ESCOLINHA",
+   "lado": "ingreso",
+   "M": 1.230119,
+   "pagina": 7,
+   "linea": 196,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "LOTERIAS",
+   "lado": "ingreso",
+   "M": 0.919328,
+   "pagina": 7,
+   "linea": 197,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "OUTRAS RECEITAS",
+   "lado": "ingreso",
+   "M": 3.73993,
+   "pagina": 7,
+   "linea": 198,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "VENDAS DE MERCADORIAS",
+   "lado": "ingreso",
+   "M": 1.051917,
+   "pagina": 7,
+   "linea": 199,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) DEDUÇÕES DAS RECEITAS",
+   "lado": "ingreso",
+   "M": 2.144216,
+   "pagina": 7,
+   "linea": 200,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "ingreso",
+   "M": 2.144216,
+   "pagina": 7,
+   "linea": 201,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "RECEITA OPERACIONAL LÍQUIDA",
+   "lado": "ingreso",
+   "M": 34.480959,
+   "pagina": 7,
+   "linea": 202,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS COM PESSOAL",
+   "lado": "gasto",
+   "M": 31.917744,
+   "pagina": 7,
+   "linea": 205,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS COM JOGOS",
+   "lado": "gasto",
+   "M": 3.388905,
+   "pagina": 7,
+   "linea": 206,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "lado": "gasto",
+   "M": 19.456556,
+   "pagina": 7,
+   "linea": 207,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": "gasto",
+   "M": 21.975926,
+   "pagina": 7,
+   "linea": 208,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "lado": "gasto",
+   "M": 5.561472,
+   "pagina": 7,
+   "linea": 210,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "lado": "gasto",
+   "M": 4.228214,
+   "pagina": 7,
+   "linea": 211,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS DEPRECIAÇÃO",
+   "lado": "gasto",
+   "M": 1.213151,
+   "pagina": 7,
+   "linea": 212,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "lado": "gasto",
+   "M": 1.978408,
+   "pagina": 7,
+   "linea": 213,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS ESCOLINHA",
+   "lado": "gasto",
+   "M": 0.480996,
+   "pagina": 7,
+   "linea": 214,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "lado": "gasto",
+   "M": 0.000021,
+   "pagina": 7,
+   "linea": 215,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS COM VENDAS",
+   "lado": "gasto",
+   "M": 0.231575,
+   "pagina": 7,
+   "linea": 216,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "lado": "gasto",
+   "M": 4.984986,
+   "pagina": 7,
+   "linea": 217,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "RECEITAS/(DESPESAS) FINANCEIRAS",
+   "M": -2.017,
+   "linea": 220
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+   "M": null,
+   "linea": 224
+  },
+  {
+   "etiqueta": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL",
+   "M": null,
+   "linea": 225
+  }
+ ]
+}

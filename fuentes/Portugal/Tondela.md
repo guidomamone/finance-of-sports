@@ -43,3 +43,5 @@ que este único ejercicio de transición 2020/21) pese a tener SAD y jugar en Pr
 pena escribirle directo al club — ninguna otra vía (prensa, Wayback, arquivo.pt) encontró más nada.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); verde y amarillo ("auriverdes"), camiseta local amarilla (#FFDD00 en el kit de en.wikipedia) a rayas verticales amarillas y verdes; escudo verde con amarillo; ningún desempate aplica, verificado 2026-10-09., verificado 2026-10-09

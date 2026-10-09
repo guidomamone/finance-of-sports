@@ -1,0 +1,1250 @@
+{
+  "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
+  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+  "club": "ferroviaria",
+  "year": 2014,
+  "generatedAt": "2026-10-09T23:23:29.434Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Rendas de Jogos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.15099
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Cotas de TV Camp Paulista Séria A-2",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.135
+      ],
+      "glosa": "Derechos de TV Campeonato Paulista Serie A-2"
+    },
+    {
+      "label": "Venda de Atletas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.45
+      ],
+      "glosa": "Venta de futbolistas"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.021055
+      ],
+      "glosa": "Abonados / Socios"
+    },
+    {
+      "label": "Mercadorias c/Vendas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.054708
+      ],
+      "glosa": "Ventas de mercancías"
+    },
+    {
+      "label": "Patrocinios",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.83474
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Contratos de Parcerias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.15
+      ],
+      "glosa": "Contratos de colaboración"
+    },
+    {
+      "label": "Publicidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.491249
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Doações",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.314316
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "= Receita Líquida:",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.545526
+      ],
+      "glosa": "= Ingresos netos:"
+    },
+    {
+      "label": "Recuperação de Despesas",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.009106
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "AVlso Prévio Descontado",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.0081
+      ],
+      "glosa": "Preaviso descontado"
+    },
+    {
+      "label": "Multa Contratual",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.000836
+      ],
+      "glosa": "Multa contractual"
+    },
+    {
+      "label": "Pis",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.007425
+      ],
+      "glosa": "PIS"
+    },
+    {
+      "label": "Cofins",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0342
+      ],
+      "glosa": "COFINS"
+    },
+    {
+      "label": "Pis",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.000903
+      ],
+      "glosa": "PIS"
+    },
+    {
+      "label": "Cofins",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.004158
+      ],
+      "glosa": "COFINS"
+    },
+    {
+      "label": "Icms",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.009847
+      ],
+      "glosa": "ICMS"
+    },
+    {
+      "label": "Arbitragens",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.066673
+      ],
+      "glosa": "Arbitrajes"
+    },
+    {
+      "label": "Taxa de Policiamento",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.022718
+      ],
+      "glosa": "Tasa policial"
+    },
+    {
+      "label": "Taxas Federações e Confederações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.080286
+      ],
+      "glosa": "Tasas de federaciones y confederaciones"
+    },
+    {
+      "label": "Segurança e Vigilancia",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.047088
+      ],
+      "glosa": "Seguridad y vigilancia"
+    },
+    {
+      "label": "Inss s/Renda de Jogos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.000318
+      ],
+      "glosa": "INSS sobre ingresos de partidos"
+    },
+    {
+      "label": "Inss s/Patrocinios",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0484
+      ],
+      "glosa": "INSS sobre patrocinios"
+    },
+    {
+      "label": "Ingressos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.009412
+      ],
+      "glosa": "Entradas"
+    },
+    {
+      "label": "Manutenção, Conservação Estadio",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.025421
+      ],
+      "glosa": "Mantenimiento y conservación del estadio"
+    },
+    {
+      "label": "Combustíveis e Lubrificantes",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.020423
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Inss s/Arbitragens",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.005359
+      ],
+      "glosa": "INSS sobre arbitrajes"
+    },
+    {
+      "label": "Exame Anti-Doping",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.026775
+      ],
+      "glosa": "Control antidopaje"
+    },
+    {
+      "label": "Serviços Prest p/Terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.692835
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.085904
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Locação de Estadio",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.039388
+      ],
+      "glosa": "Alquiler de estadio"
+    },
+    {
+      "label": "Inss s/Cotas de TV",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00675
+      ],
+      "glosa": "INSS sobre derechos de TV"
+    },
+    {
+      "label": "Inss/Seguro Torcedor FPF",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.008255
+      ],
+      "glosa": "INSS / Seguro del aficionado FPF"
+    },
+    {
+      "label": "Salarios e Ordenados",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.02087
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.111479
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.004019
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "13º Salario",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.09096
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Aviso Prévio Indenizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.010368
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "Inss",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.053465
+      ],
+      "glosa": "INSS (Seguridad social)"
+    },
+    {
+      "label": "Fgts",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.092603
+      ],
+      "glosa": "FGTS (Fondo de garantía)"
+    },
+    {
+      "label": "Fgts Rescisório",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.003446
+      ],
+      "glosa": "FGTS por despido"
+    },
+    {
+      "label": "Premios e Gratificações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.104625
+      ],
+      "glosa": "Primas y gratificaciones"
+    },
+    {
+      "label": "Academia",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.016219
+      ],
+      "glosa": "Gimnasio"
+    },
+    {
+      "label": "Agua Mineral",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.010569
+      ],
+      "glosa": "Agua mineral"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.248847
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Despesas de Viagens",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.108073
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Vale Transporte",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.008247
+      ],
+      "glosa": "Vales de transporte"
+    },
+    {
+      "label": "Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.179078
+      ],
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Despesas de Hospedagem",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.109038
+      ],
+      "glosa": "Gastos de alojamiento"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.011433
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.085612
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Contingencias Trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.143289
+      ],
+      "glosa": "Contingencias laborales"
+    },
+    {
+      "label": "Compras Mercadorias a Prazo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.038096
+      ],
+      "glosa": "Compras de mercancías a crédito"
+    },
+    {
+      "label": "(-) Recuperação Cofins",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.002896
+      ],
+      "glosa": "(-) Recuperación de COFINS"
+    },
+    {
+      "label": "(-) Recuperação Pis",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.000619
+      ],
+      "glosa": "(-) Recuperación de PIS"
+    },
+    {
+      "label": "Custo das Mercadorias Vendidas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.00579
+      ],
+      "glosa": "Coste de las mercancías vendidas"
+    },
+    {
+      "label": "(-) Recuperação de Icms",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.006857
+      ],
+      "glosa": "(-) Recuperación de ICMS"
+    },
+    {
+      "label": "Salarios e Ordenados",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.101669
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.014014
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "13º Salario",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.009415
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Inss",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.004376
+      ],
+      "glosa": "INSS (Seguridad social)"
+    },
+    {
+      "label": "Fgts",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.009927
+      ],
+      "glosa": "FGTS (Fondo de garantía)"
+    },
+    {
+      "label": "Fgts Rescisorio",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.006719
+      ],
+      "glosa": "FGTS por despido"
+    },
+    {
+      "label": "Vale Transporte",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001038
+      ],
+      "glosa": "Vales de transporte"
+    },
+    {
+      "label": "Pis s/Folha",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001241
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Salarios e Ordenados",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.013303
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001912
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "13º Salario",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001386
+      ],
+      "glosa": "Paga extraordinaria (13º salario)"
+    },
+    {
+      "label": "Inss",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.005668
+      ],
+      "glosa": "INSS (Seguridad social)"
+    },
+    {
+      "label": "Fgts",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001245
+      ],
+      "glosa": "FGTS (Fondo de garantía)"
+    },
+    {
+      "label": "Despesas com Ativo Fixo",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.003662
+      ],
+      "glosa": "Gastos de activo fijo"
+    },
+    {
+      "label": "Assessoria Contábil/Tributaria/Advocatic",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.079033
+      ],
+      "glosa": "Asesoría contable, fiscal y jurídica"
+    },
+    {
+      "label": "Contingencias Cíveis",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.185211
+      ],
+      "glosa": "Contingencias civiles"
+    },
+    {
+      "label": "Contingencias Tributarias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.371405
+      ],
+      "glosa": "Contingencias fiscales"
+    },
+    {
+      "label": "Despesas pelo uso da Marca",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.051701
+      ],
+      "glosa": "Gastos por uso de marca"
+    },
+    {
+      "label": "Despesas Indedutíveis",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.0168
+      ],
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Despesas de Viagens",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001544
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Medicamentos e Mat Medicos e Cirurgicos",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.000338
+      ],
+      "glosa": "Medicamentos y material médico y quirúrgico"
+    },
+    {
+      "label": "Servipos prestados p/Terceiros",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.002819
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Total:",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        5.516188
+      ],
+      "glosa": "Total:"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.03
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.033747
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Despesas Legais e Judiciais",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.060074
+      ],
+      "glosa": "Gastos legales y judiciales"
+    },
+    {
+      "label": "Despesas de Viagens",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.000448
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.001591
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção, Conservação de Bens",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.025367
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Publicações",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.00024
+      ],
+      "glosa": "Publicaciones"
+    },
+    {
+      "label": "Combustíveis",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.046114
+      ],
+      "glosa": "Combustibles"
+    },
+    {
+      "label": "Propaganda e Publicidade",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.032493
+      ],
+      "glosa": "Propaganda y publicidad"
+    },
+    {
+      "label": "Provedor de Internet",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.006102
+      ],
+      "glosa": "Proveedor de internet"
+    },
+    {
+      "label": "Material de Limpeza e Higiene",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000057
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Condominio",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.004508
+      ],
+      "glosa": "Gastos de comunidad"
+    },
+    {
+      "label": "Materiais Esportivos",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000387
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Materias de Limpeza e Higiene",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.001977
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Medicamentos e Mat.Medicos e Cirurgicos",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.073933
+      ],
+      "glosa": "Medicamentos y material médico y quirúrgico"
+    },
+    {
+      "label": "Material de Consumo",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.001469
+      ],
+      "glosa": "Material de consumo"
+    },
+    {
+      "label": "Agua",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.025461
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.313082
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.00018
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Bens de Valores Irrelevantes",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.003483
+      ],
+      "glosa": "Bienes de escaso valor"
+    },
+    {
+      "label": "Energia Eletrica",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.012373
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.001945
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção e Conservação de Bens",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.065424
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Material de Consumo",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000654
+      ],
+      "glosa": "Material de consumo"
+    },
+    {
+      "label": "Matrial de Limpeza e Higiene",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000956
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Utensilios, Guarn.Cama, Mesa e Banho",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.006503
+      ],
+      "glosa": "Utensilios y ropa de cama, mesa y baño"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.005376
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Multas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.00312
+      ],
+      "glosa": "Multas"
+    },
+    {
+      "label": "Multas",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000062
+      ],
+      "glosa": "Multas"
+    },
+    {
+      "label": "Agua",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.001031
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Energia Eletrica",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.001924
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.018536
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Seguro de Vida",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.006557
+      ],
+      "glosa": "Seguro de vida"
+    },
+    {
+      "label": "Impressos e Materiais de Escritorio",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.004155
+      ],
+      "glosa": "Impresos y material de oficina"
+    },
+    {
+      "label": "Correios",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.002604
+      ],
+      "glosa": "Correos"
+    },
+    {
+      "label": "Bens de Valores Irrelevantes",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000501
+      ],
+      "glosa": "Bienes de escaso valor"
+    },
+    {
+      "label": "Custas e Emolumentos",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.019278
+      ],
+      "glosa": "Costas y aranceles"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.002552
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Impressos e Matriais de Escritorio",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.000277
+      ],
+      "glosa": "Impresos y material de oficina"
+    },
+    {
+      "label": "Custo Formação Atleta Profissional",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.144461
+      ],
+      "glosa": "Coste de formación de deportistas profesionales"
+    },
+    {
+      "label": "Despesas Bancarias",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.011381
+      ],
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Encargos Financeiros",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.10511
+      ],
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Comissão s/Cartão",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.002137
+      ],
+      "glosa": "Comisiones sobre tarjetas"
+    }
+  ]
+}

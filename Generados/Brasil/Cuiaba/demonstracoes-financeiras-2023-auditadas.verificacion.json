@@ -1,0 +1,177 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "generado": "2026-10-09T23:23:28.956Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "2dcf85e",
+  "f948d41",
+  "b85b698",
+  "43a2b0d",
+  "d5ab9c5",
+  "029fe48",
+  "c80e945"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "157.933413 = 157.933413"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2023: 157.933413 en este documento y 326.466255 en balanco-financeiro-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": false,
+   "detalle": "ingresos de 2022: 133.342795 en balanco-financeiro-2022.pdf y 123.737941 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 157.933413,
+  "gastos": 119.971399,
+  "financiero": -0.697486,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Outras Receitas",
+   "lado": "ingreso",
+   "M": 42.021965,
+   "pagina": 22,
+   "linea": 835,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "Receita com Bilheteria",
+   "lado": "ingreso",
+   "M": 16.609467,
+   "pagina": 22,
+   "linea": 836,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "Receita com Publicidade/Propaganda",
+   "lado": "ingreso",
+   "M": 6.336,
+   "pagina": 22,
+   "linea": 837,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "Receitas Cotas de TV",
+   "lado": "ingreso",
+   "M": 74.83541,
+   "pagina": 22,
+   "linea": 838,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)",
+   "lado": "ingreso",
+   "M": 28.73,
+   "pagina": 22,
+   "linea": 839,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "(-) Deduções Receitas – b)",
+   "lado": "ingreso",
+   "M": -10.599429,
+   "pagina": 22,
+   "linea": 840,
+   "origen": "nota que desglosa \"Receita operacional líquida\""
+  },
+  {
+   "etiqueta": "Custo com Futebol Profissional",
+   "lado": "gasto",
+   "M": 98.846512,
+   "pagina": 8,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vendas",
+   "lado": "gasto",
+   "M": 0.107449,
+   "pagina": 8,
+   "linea": 267,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Trabalhistas",
+   "lado": "gasto",
+   "M": 9.945787,
+   "pagina": 23,
+   "linea": 863,
+   "origen": "nota que desglosa \"Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas Gerais",
+   "lado": "gasto",
+   "M": 10.945183,
+   "pagina": 23,
+   "linea": 864,
+   "origen": "nota que desglosa \"Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.126468,
+   "pagina": 8,
+   "linea": 269,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.753664,
+   "linea": 270
+  },
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.056178,
+   "linea": 271
+  }
+ ],
+ "impuesto": []
+}

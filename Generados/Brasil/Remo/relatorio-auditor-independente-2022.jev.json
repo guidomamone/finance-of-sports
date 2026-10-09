@@ -1,0 +1,764 @@
+{
+ "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
+ "generatedAt": "2026-10-09T23:37:09.312Z",
+ "rubrosHuella": "1cb8aad6800ad5376d0f718b8e5d2812239c2c23",
+ "rubros": [
+  {
+   "label": "Receita de Bilheteria",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Estacionamento",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "stadium_other",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "stadium_other",
+     0.56
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Receita da Atividade Social",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "member_dues",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Receita Royalties / Lojas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "sponsorship_commercial",
+     0.35
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Receita de Direito de Transmissão",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Alugueis",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "stadium_other",
+     0.38
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Receitas Ordinárias",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita Bruta Operacional\"",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.67
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Receita Patrimoniais/Sociais",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "member_dues",
+     0.83
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Receita Programa Timemania",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "sponsorship_commercial",
+     0.16
+    ],
+    [
+     "broadcasting",
+     0.04
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Receitas Operacionais",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita Bruta Operacional\"",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.67
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Receita de Premiações",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com redução juros/multa - Perse",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Programa Socio Torcedor",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Receitas Repasse de Direitos Federativos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Manutenção",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Líquida",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Receitas Royalties / Licenciados",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Receita com Vendas Materiais",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.82
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Serviço de Terceiros",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Patrocínio / Marketing",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Programa Sócio Torcedor",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Despesas com eventos esportivos",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 973
+  },
+  {
+   "label": "Materiais esportivos e premiações",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Amortização dos Débitos Trabalhistas",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_amortisation",
+     0.92
+    ],
+    [
+     "wages_squad",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Despesas com Pessoal",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com tributos",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Despesas com Jogos e Competições",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Programa Sócio Torcedor",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Passagens e Hospedagens",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo com Contratação",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Comissões",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Amortizações - Direitos Econômicos",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Despesa com direito de imagem",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Outras Despesas",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Despesa com Contingências",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Despesas com depreciação e amortização",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

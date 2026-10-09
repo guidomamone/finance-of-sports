@@ -1,0 +1,500 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
+ "generado": "2026-10-09T23:23:27.698Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "44e1907",
+  "579b058",
+  "ea37ca9",
+  "704d93a",
+  "4e57c90"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receita Bruta\" 25.303151 cierra; además se suman 12 línea(s) fuera de ese total (50.578904)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 75.882055 - gastos 167.25412 ± financiero 6.71294 ± impuesto 0 no da el impreso -34.467692"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": false,
+   "detalle": "ingresos de 2021: 75.882055 en este documento y 24.202 en demonstracoes-contabeis-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Receitas de Negociação de Atletas Profissionais\" (2 filas) no suma la fila: quedó la fila",
+  "la nota de \"Receitas TV e transmissão jogos\" no suma el renglón (12.650919 contra 12.936521, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Receitas Diversas\" no suma el renglón (1.409993 contra 1.12389, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: En 2021 Diversas del estado (1.123.890) = nota L941 1.076.890 + Premiação 47.500 -500, y bilheteria no encaja exacta; el mapeo es inferido."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Receitas de Negociação de Atletas Profissionais",
+   "suma": 2.509456,
+   "objetivo": 1.921831
+  },
+  {
+   "renglon": "Receitas TV e transmissão jogos",
+   "suma": 12.650919,
+   "objetivo": 12.936521
+  },
+  {
+   "renglon": "Receitas Diversas",
+   "suma": 1.409993,
+   "objetivo": 1.12389
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Receitas de Negociação de Atletas Profissionais",
+   "suma": 2.509456,
+   "objetivo": 1.921831
+  },
+  {
+   "renglon": "Receitas TV e transmissão jogos",
+   "suma": 12.650919,
+   "objetivo": 12.936521
+  },
+  {
+   "renglon": "Receitas Diversas",
+   "suma": 1.409993,
+   "objetivo": 1.12389
+  }
+ ],
+ "totales": {
+  "ingresos": 75.882055,
+  "gastos": 167.25412,
+  "financiero": 6.71294,
+  "impuesto": 0,
+  "resultadoImpreso": -34.467692,
+  "resultadoParaCargar": -34.467692,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita Bruta",
+   "lado": "ingreso",
+   "M": 25.303151,
+   "pagina": 4,
+   "linea": 121,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas do Futebol Profissional",
+   "lado": "ingreso",
+   "M": 25.303151,
+   "pagina": 4,
+   "linea": 122,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de Mensalidades dos Sócios",
+   "lado": "ingreso",
+   "M": 3.488065,
+   "pagina": 4,
+   "linea": 123,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de Negociação de Atletas Profissionais",
+   "lado": "ingreso",
+   "M": 1.921831,
+   "pagina": 25,
+   "linea": 928,
+   "origen": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\""
+  },
+  {
+   "etiqueta": "Receitas de Empréstimos de Jogadores",
+   "lado": "ingreso",
+   "M": 0.587625,
+   "pagina": 25,
+   "linea": 938,
+   "origen": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\""
+  },
+  {
+   "etiqueta": "Receitas de Arrendamentos e Locações",
+   "lado": "ingreso",
+   "M": 0.357676,
+   "pagina": 25,
+   "linea": 929,
+   "origen": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\""
+  },
+  {
+   "etiqueta": "Receitas de Patrocínio",
+   "lado": "ingreso",
+   "M": 2.681328,
+   "pagina": 25,
+   "linea": 930,
+   "origen": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\""
+  },
+  {
+   "etiqueta": "Receitas de Publicidade",
+   "lado": "ingreso",
+   "M": 0.434742,
+   "pagina": 25,
+   "linea": 932,
+   "origen": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\""
+  },
+  {
+   "etiqueta": "Receitas de Repasses da Loteria Timemania",
+   "lado": "ingreso",
+   "M": 0.619095,
+   "pagina": 4,
+   "linea": 126,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas de Venda de Material Esportivo",
+   "lado": "ingreso",
+   "M": 1.038064,
+   "pagina": 25,
+   "linea": 935,
+   "origen": "nota que desglosa \"Receitas de Venda e uso Marca\""
+  },
+  {
+   "etiqueta": "Receitas de Uso da Marca",
+   "lado": "ingreso",
+   "M": 0.086916,
+   "pagina": 25,
+   "linea": 936,
+   "origen": "nota que desglosa \"Receitas de Venda e uso Marca\""
+  },
+  {
+   "etiqueta": "Receitas TV e transmissão jogos",
+   "lado": "ingreso",
+   "M": 12.936521,
+   "pagina": 4,
+   "linea": 128,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Diversas",
+   "lado": "ingreso",
+   "M": 1.12389,
+   "pagina": 4,
+   "linea": 129,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo Operacional Bruto",
+   "lado": "gasto",
+   "M": 43.772256,
+   "pagina": 4,
+   "linea": 131,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos Futebol Profissional total",
+   "lado": "gasto",
+   "M": 41.70736,
+   "pagina": 4,
+   "linea": 132,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salários e Encargos",
+   "lado": "gasto",
+   "M": 21.435476,
+   "pagina": 26,
+   "linea": 969,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 0.0423,
+   "pagina": 26,
+   "linea": 970,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Viagens e Hospedagem",
+   "lado": "gasto",
+   "M": 0.899363,
+   "pagina": 26,
+   "linea": 971,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "INSS s/ Receitas",
+   "lado": "gasto",
+   "M": 0.134731,
+   "pagina": 26,
+   "linea": 972,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Aluguel e manuteção dos campos",
+   "lado": "gasto",
+   "M": 0.309,
+   "pagina": 26,
+   "linea": 973,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Arbitragem/Federação e Confederação",
+   "lado": "gasto",
+   "M": 0.164052,
+   "pagina": 26,
+   "linea": 975,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Amortização Custo Atletas Profissionais",
+   "lado": "gasto",
+   "M": 0.426441,
+   "pagina": 26,
+   "linea": 976,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Seguros/Plano de Saúde",
+   "lado": "gasto",
+   "M": 0.048029,
+   "pagina": 26,
+   "linea": 978,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Direito de Uso de Imagem",
+   "lado": "gasto",
+   "M": 6.137833,
+   "pagina": 26,
+   "linea": 980,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Material Esportivo - Patrocínio",
+   "lado": "gasto",
+   "M": 0.226998,
+   "pagina": 26,
+   "linea": 982,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Borderoux de Jogos",
+   "lado": "gasto",
+   "M": 0.103994,
+   "pagina": 26,
+   "linea": 983,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Taxa de Policiamento",
+   "lado": "gasto",
+   "M": 0.043551,
+   "pagina": 26,
+   "linea": 984,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Despesas com jogo",
+   "lado": "gasto",
+   "M": 0.036973,
+   "pagina": 26,
+   "linea": 985,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.03248,
+   "pagina": 26,
+   "linea": 986,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Premiação Campeonatos",
+   "lado": "gasto",
+   "M": 5.8725,
+   "pagina": 26,
+   "linea": 987,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Direito de Arena",
+   "lado": "gasto",
+   "M": 0.475151,
+   "pagina": 26,
+   "linea": 988,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Empréstimos de Atletas",
+   "lado": "gasto",
+   "M": 0.015,
+   "pagina": 26,
+   "linea": 989,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Materiais e serviços diversos",
+   "lado": "gasto",
+   "M": 0.24906,
+   "pagina": 26,
+   "linea": 992,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Manutenção, conservação e reformas",
+   "lado": "gasto",
+   "M": 0.069865,
+   "pagina": 26,
+   "linea": 994,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "gasto",
+   "M": 0.005996,
+   "pagina": 26,
+   "linea": 997,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Desp. Teste Covid - 19",
+   "lado": "gasto",
+   "M": 0.496344,
+   "pagina": 26,
+   "linea": 998,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Custos Diversos",
+   "lado": "gasto",
+   "M": 0.120567,
+   "pagina": 26,
+   "linea": 999,
+   "origen": "nota que desglosa \"Custos Futebol Profissional\""
+  },
+  {
+   "etiqueta": "Custos Futebol Feminino",
+   "lado": "gasto",
+   "M": 0.354097,
+   "pagina": 4,
+   "linea": 135,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos Esportes Olímpicos",
+   "lado": "gasto",
+   "M": 0.012103,
+   "pagina": 4,
+   "linea": 136,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Futebol Amador (Custos - Transferência)",
+   "lado": "gasto",
+   "M": 2.064896,
+   "pagina": 4,
+   "linea": 137,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custos do Futebol Categoria de Base",
+   "lado": "gasto",
+   "M": 7.805604,
+   "pagina": 4,
+   "linea": 138,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "( - ) Transferência para o Imobilizado",
+   "lado": "gasto",
+   "M": 5.740708,
+   "pagina": 4,
+   "linea": 139,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Operacionais",
+   "lado": "gasto",
+   "M": 15.142893,
+   "pagina": 4,
+   "linea": 141,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrativas",
+   "lado": "gasto",
+   "M": 12.192491,
+   "pagina": 4,
+   "linea": 142,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciação e Amortização do Imobilizado",
+   "lado": "gasto",
+   "M": 0.260315,
+   "pagina": 4,
+   "linea": 143,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materiais e despesas diversas",
+   "lado": "gasto",
+   "M": 0.096396,
+   "pagina": 4,
+   "linea": 146,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CMV e Icms",
+   "lado": "gasto",
+   "M": 0.759297,
+   "pagina": 4,
+   "linea": 147,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita Financeira",
+   "M": 0.027397,
+   "linea": 130
+  },
+  {
+   "etiqueta": "Despesas financeiras deságio",
+   "M": 3.995456,
+   "linea": 134
+  },
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": 2.690087,
+   "linea": 144
+  }
+ ],
+ "impuesto": []
+}

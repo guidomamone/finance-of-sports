@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf",
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "mdSha1": "79506a40858a1195c18d8b6153eff8e92b8c9a31",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:13:43.581Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    148,
+    150
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    166,
+    178
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    196,
+    220
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    270,
+    274
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    292,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    341,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    615,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    625,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    653,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    673,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    694,
+    700
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    706,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    718,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    738,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    761,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    771,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    785,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    795,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    809,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    877,
+    881
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2025",
+ "columna_anterior": "31/12/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El bloque b19 (pág. 24, encabezado 'Despesas judiciais | 5.926.503 | 1.442.975') es la continuación del cuadro de la nota 15 Custos e despesas (b18), por lo que la fila 'Despesas judiciais' se carga con 5.926.503 / 1.442.975?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Despesas judiciais",
+   "texto": "La transcripción partió la tabla de la nota 15 en dos bloques y tomó una fila de datos como encabezado del segundo.",
+   "bloques": [
+    "b18",
+    "b19"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual del Clube do Remo en b5 (pág. 9, en Reais). Notas: nota 15 Custos e despesas (b18 + continuación b19) y nota 16 Receitas, con el detalle de Receitas recorrentes (b20) y Receitas do futebol (b21). No se eligen el balance, el resultado abrangente, el flujo de caja, las mutações del patrimonio ni las notas de saldos patrimoniales."
+}

@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf",
+ "generado": "2026-10-09T23:38:37.989Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2012-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2012-12-31"
+ },
+ "cortadoEn": "club"
+}

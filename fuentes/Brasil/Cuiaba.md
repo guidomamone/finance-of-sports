@@ -40,3 +40,5 @@
 - Contacto: fmfmt.com.br/pt/conteudo/?q=14&sc=11 ("Balanço dos Clubes"; PDFs en
   fmfmt.com.br/assets/uploads/<id>.pdf); cuiabaesporteclube.com.br (SPA, sin links en el HTML).
 - Último chequeo: 2026-09-22.
+
+Color de marca: #006030 — pt.wikipedia (plantilla de camiseta titular corpo1=006030; alcunha "Auriverde", verde y amarillo, camiseta verde), escudo verde y amarillo, verificado 2026-10-09

@@ -1,0 +1,180 @@
+{
+  "md": "Clubes/Brasil/Criciuma/balanco-auditado-2016.md",
+  "pdf": "Clubes/Brasil/Criciuma/balanco-auditado-2016.pdf",
+  "club": "criciuma",
+  "year": 2016,
+  "generatedAt": "2026-10-09T23:23:28.399Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita com transmissão televisíveis",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        5.374282
+      ],
+      "glosa": "Ingresos por derechos de transmisión televisiva"
+    },
+    {
+      "label": "Receita com mensalidade de sócios",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        5.002656
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Receita com Patrocínios",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        2.293138
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Receita de mecanismo de solidariedade",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        1.73834
+      ],
+      "glosa": "Ingresos por mecanismo de solidaridad"
+    },
+    {
+      "label": "Repasse de direitos federativos",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        10.13655
+      ],
+      "glosa": "Cesión de derechos federativos"
+    },
+    {
+      "label": "Venda de mercadorias",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.233375
+      ],
+      "glosa": "Venta de mercaderías"
+    },
+    {
+      "label": "Receitas de royalties",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.029385
+      ],
+      "glosa": "Ingresos por regalías"
+    },
+    {
+      "label": "Receitas Publicidades",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.263119
+      ],
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Demais Receitas",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.893194
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Departamento Profissional",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        15.124972
+      ],
+      "glosa": "Departamento profesional"
+    },
+    {
+      "label": "Departamento Amador",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        2.60462
+      ],
+      "glosa": "Departamento amateur"
+    },
+    {
+      "label": "Departamento Administrativo",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.860398
+      ],
+      "glosa": "Departamento administrativo"
+    },
+    {
+      "label": "Departamento de Marketing e Comercial",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.510526
+      ],
+      "glosa": "Departamento de marketing y comercial"
+    },
+    {
+      "label": "Departamento de Patrimonio",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        3.953431
+      ],
+      "glosa": "Departamento de patrimonio"
+    },
+    {
+      "label": "Departamento Jurídico",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.099762
+      ],
+      "glosa": "Departamento jurídico"
+    },
+    {
+      "label": "Departamento Loja - Tigre Maniacos",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.093578
+      ],
+      "glosa": "Departamento tienda - Tigre Maniacos"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.268364
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

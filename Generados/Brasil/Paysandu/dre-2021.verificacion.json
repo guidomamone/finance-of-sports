@@ -1,0 +1,305 @@
+{
+ "pdf": "Clubes/Brasil/Paysandu/dre-2021.pdf",
+ "md": "Clubes/Brasil/Paysandu/dre-2021.md",
+ "generado": "2026-10-09T23:23:29.992Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "4099231"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "21.976408 = 21.976408"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: L53 es una fila en negrita sin etiqueta cuyo importe 2020 (20.811) no corresponde a ninguna suma visible; el subtotal real parece ser L54."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 21.976408,
+  "gastos": 23.813025,
+  "financiero": -0.179298,
+  "impuesto": 0,
+  "resultadoImpreso": -2.015915,
+  "resultadoParaCargar": -2.015915,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Futebol Profissional",
+   "lado": "ingreso",
+   "M": 10.868442,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Futebol de Base",
+   "lado": "ingreso",
+   "M": 0.91543,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Esportes Olímpicos",
+   "lado": "ingreso",
+   "M": 0.260353,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 1.176437,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sócio Proprietário",
+   "lado": "ingreso",
+   "M": 0.32084,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doações",
+   "lado": "ingreso",
+   "M": 3.43231,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Royalties e Franquias",
+   "lado": "ingreso",
+   "M": 1.753659,
+   "pagina": 1,
+   "linea": 20,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receita",
+   "lado": "ingreso",
+   "M": 0.272893,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "ingreso",
+   "M": 0.21745,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receita com Gratuidades",
+   "lado": "ingreso",
+   "M": 3.182285,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Recuperação de Receitas",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Deduções da Receita do Futebol",
+   "lado": "ingreso",
+   "M": -0.423691,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Lojas Lobo",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 28,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Deduções da Receita de Venda",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 29,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo com Pessoal",
+   "lado": "gasto",
+   "M": 10.35281,
+   "pagina": 1,
+   "linea": 33,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "CMV",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 35,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo com Pessoal",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesa com Pessoal",
+   "lado": "gasto",
+   "M": 2.142472,
+   "pagina": 1,
+   "linea": 40,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gerais e Administrativas",
+   "lado": "gasto",
+   "M": 5.802959,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Gratuidades",
+   "lado": "gasto",
+   "M": 3.182285,
+   "pagina": 1,
+   "linea": 42,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciação/Amortização",
+   "lado": "gasto",
+   "M": 0.287647,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Perdas Constituídas",
+   "lado": "gasto",
+   "M": 0.005,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "PECLD",
+   "lado": "gasto",
+   "M": 1.911802,
+   "pagina": 1,
+   "linea": 45,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.003463,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gerais e Administrativas",
+   "lado": "gasto",
+   "M": 0.033061,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciação/Amortização",
+   "lado": "gasto",
+   "M": 0.00088,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "PECLD",
+   "lado": "gasto",
+   "M": 0.090646,
+   "pagina": 1,
+   "linea": 51,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras Despesas com Vendas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.000095,
+   "linea": 57
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.179393,
+   "linea": 58
+  }
+ ],
+ "impuesto": []
+}

@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.pdf",
+ "md": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.md",
+ "mdSha1": "da7fb4c49d73729a83bfb7f5877b98fef2dbbfd2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:30:35.725Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "(Valores expressos em reais) L156"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 160,
+   "etiqueta": "Receita operacional líquida",
+   "actual": "47.471.422",
+   "anterior": "60.144.551",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 161,
+   "etiqueta": "Custo das atividades sociais e esportivas",
+   "actual": "(43.365.002)",
+   "anterior": "(16.557.833)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 162,
+   "etiqueta": "Resultado bruto",
+   "actual": "4.106.420",
+   "anterior": "43.586.719",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 164,
+   "etiqueta": "Despesas com pessoal",
+   "actual": "(754.228)",
+   "anterior": "(31.531.998)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 165,
+   "etiqueta": "Despesas gerais e administrativas",
+   "actual": "(4.349.905)",
+   "anterior": "(7.923.325)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 166,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(189.484)",
+   "anterior": "(71.413)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 167,
+   "etiqueta": "Resultado operacional antes do resultado financeiro",
+   "actual": "(1.187.196)",
+   "anterior": "4.059.984",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 169,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(80.129)",
+   "anterior": "140.106",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 170,
+   "etiqueta": "Receitas financeiras",
+   "actual": "-",
+   "anterior": "165.118",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 171,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(80.129)",
+   "anterior": "(25.012)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 173,
+   "etiqueta": "Superávit (déficit) do exercício",
+   "actual": "(1.267.325)",
+   "anterior": "4.200.090",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 173,
+  "actual": "(1.267.325)",
+  "anterior": "4.200.090"
+ },
+ "dudas": [],
+ "observaciones": "Estado en reais (unidades). No se imprimen total de ingresos ni de gastos. Se mencionan notas 8 y 9 pero no se entregaron bloques de notas."
+}

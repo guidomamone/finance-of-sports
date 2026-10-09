@@ -1,0 +1,228 @@
+{
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf",
+ "md": "Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md",
+ "mdSha1": "7722320b2e2785c7dbf0e6b1c33edd03068029f8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:11:39.574Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    301,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    311,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    319,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    329,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    340,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    350,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    360,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    405,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    430,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    464,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    473,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    481,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    504,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    514,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    527,
+    532
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    598,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    611,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    655,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    720,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    757,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    796,
+    801
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    859,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    957,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    967,
+    974
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    1069,
+    1078
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b18"
+ ],
+ "notas_ingresos": [
+  "b15"
+ ],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstração do Resultado do Exercício / 31 de Dezembro de 2021 / (Em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2021",
+ "columna_anterior": "31/12/2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual del Clube do Remo en b18 (pág. 16, en reais). Nota 8 Despesas Operacionais (b14) y nota 9 Receitas Operacionais (b15) desglosan renglones del estado. Se excluyen deudas fiscales, balance, patrimonio, mutaciones y flujo de caja (este último dice 'em milhares' pero no se usa)."
+}

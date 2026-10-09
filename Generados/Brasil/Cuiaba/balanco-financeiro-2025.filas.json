@@ -1,0 +1,681 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+ "mdSha1": "9e6747feedaa16352975e5f21a69e24442016c41",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:44:49.843Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b30"
+  ],
+  "notas_gastos": [
+   "b28",
+   "b29"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L182: Valores Expressos em Reais (R$)"
+  },
+  {
+   "bloque": "b30",
+   "escala": "no se sabe",
+   "evidencia": "No indica escala; importes coinciden con el estado en reais"
+  },
+  {
+   "bloque": "b28",
+   "escala": "no se sabe",
+   "evidencia": "No indica escala; importes coinciden con el estado en reais"
+  },
+  {
+   "bloque": "b29",
+   "escala": "no se sabe",
+   "evidencia": "No indica escala; importes coinciden con el estado en reais"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 186,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "36.625.176",
+   "anterior": "109.743.637",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 187,
+   "etiqueta": "RECEITA FUTEBOL PROFISSIONAL",
+   "actual": "29.457.740",
+   "anterior": "104.461.232",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 188,
+   "etiqueta": "PATROCÍNIOS",
+   "actual": "12.000.000",
+   "anterior": "20.363.084",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 189,
+   "etiqueta": "PLACAS DE PUBLICIDADE",
+   "actual": "2.600.926",
+   "anterior": "10.500.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 190,
+   "etiqueta": "SÓCIO TORCEDOR",
+   "actual": "303.897",
+   "anterior": "1.626.578",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 191,
+   "etiqueta": "COTAS/TV",
+   "actual": "12.769.767",
+   "anterior": "56.035.752",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 192,
+   "etiqueta": "BILHETERIA/JOGOS",
+   "actual": "1.472.385",
+   "anterior": "13.075.506",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 193,
+   "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
+   "actual": "310.765",
+   "anterior": "2.860.312",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 194,
+   "etiqueta": "DEMAIS RECEITAS",
+   "actual": "7.167.435",
+   "anterior": "5.282.406",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 195,
+   "etiqueta": "LICENCIAMENTOS",
+   "actual": "226.140",
+   "anterior": "294.877",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 196,
+   "etiqueta": "ESCOLINHA",
+   "actual": "1.230.119",
+   "anterior": "1.395.352",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 197,
+   "etiqueta": "LOTERIAS",
+   "actual": "919.328",
+   "anterior": "757.616",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 198,
+   "etiqueta": "OUTRAS RECEITAS",
+   "actual": "3.739.930",
+   "anterior": "2.834.560",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 199,
+   "etiqueta": "VENDAS DE MERCADORIAS",
+   "actual": "1.051.917",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 200,
+   "etiqueta": "(-) DEDUÇÕES DAS RECEITAS",
+   "actual": "2.144.216",
+   "anterior": "7.268.369",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 201,
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "actual": "2.144.216",
+   "anterior": "7.268.369",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 202,
+   "etiqueta": "RECEITA OPERACIONAL LÍQUIDA",
+   "actual": "34.480.959",
+   "anterior": "102.475.269",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 203,
+   "etiqueta": "LUCRO BRUTO",
+   "actual": "34.480.959",
+   "anterior": "102.475.269",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 204,
+   "etiqueta": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+   "actual": "76.739.132",
+   "anterior": "125.633.110",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 205,
+   "etiqueta": "CUSTOS COM PESSOAL",
+   "actual": "31.917.744",
+   "anterior": "92.403.479",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 206,
+   "etiqueta": "CUSTOS COM JOGOS",
+   "actual": "3.388.905",
+   "anterior": "15.683.748",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 207,
+   "etiqueta": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "actual": "19.456.556",
+   "anterior": "6.570.195",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 208,
+   "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
+   "actual": "21.975.926",
+   "anterior": "10.975.688",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 209,
+   "etiqueta": "(-) DESPESAS",
+   "actual": "18.678.825",
+   "anterior": "13.680.458",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 210,
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "actual": "5.561.472",
+   "anterior": "3.355.965",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 211,
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "actual": "4.228.214",
+   "anterior": "4.577.698",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 212,
+   "etiqueta": "DESPESAS DEPRECIAÇÃO",
+   "actual": "1.213.151",
+   "anterior": "801.150",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 213,
+   "etiqueta": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "actual": "1.978.408",
+   "anterior": "3.182.101",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 214,
+   "etiqueta": "DESPESAS GERAIS ESCOLINHA",
+   "actual": "480.996",
+   "anterior": "819.815",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 215,
+   "etiqueta": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "actual": "21",
+   "anterior": "222.635",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 216,
+   "etiqueta": "DESPESAS COM VENDAS",
+   "actual": "231.575",
+   "anterior": "96.191",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 217,
+   "etiqueta": "DESPESAS TRIBUTÁRIAS",
+   "actual": "4.984.986",
+   "anterior": "624.905",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 218,
+   "etiqueta": "RESULTADO DA ATIVIDADE",
+   "actual": "(60.936.997)",
+   "anterior": "(36.838.299)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 219,
+   "etiqueta": "(+/-) DESPESAS/(RECEITAS) OPERACIONAIS",
+   "actual": "18.788.324",
+   "anterior": "105.315.417",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 220,
+   "etiqueta": "RECEITAS/(DESPESAS) FINANCEIRAS",
+   "actual": "(2.017.000)",
+   "anterior": "2.738.057",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 221,
+   "etiqueta": "OUTRAS RECEITAS/(DESPESAS)",
+   "actual": "20.805.324",
+   "anterior": "102.577.360",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 222,
+   "etiqueta": "LUCRO/(PREJUÍZO) OPERACIONAL",
+   "actual": "(42.148.674)",
+   "anterior": "68.477.117",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 223,
+   "etiqueta": "RESULTADO ANTES DA PROVISÃO DO IR/CS",
+   "actual": "(42.148.674)",
+   "anterior": "68.477.117",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 224,
+   "etiqueta": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 225,
+   "etiqueta": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 226,
+   "etiqueta": "(PREJUÍZO)/LUCRO LÍQUIDO DO EXERCÍCIO",
+   "actual": "(42.148.674)",
+   "anterior": "68.477.117",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 1120,
+   "etiqueta": "Receita Futebol Profissional",
+   "actual": "36.625.175",
+   "anterior": "109.743.637",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 1121,
+   "etiqueta": "Demais Receitas",
+   "actual": "20.805.324",
+   "anterior": "102.577.360",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 1122,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "(2.144.216)",
+   "anterior": "(7.268.369)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DESPESAS TRIBUTÁRIAS"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1123,
+   "etiqueta": "Total",
+   "actual": "55.286.283",
+   "anterior": "205.052.629",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 1046,
+   "etiqueta": "Custos com Pessoal",
+   "actual": "31.917.744",
+   "anterior": "92.403.479",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1047,
+   "etiqueta": "Custos com Jogos",
+   "actual": "3.388.905",
+   "anterior": "15.683.748",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1048,
+   "etiqueta": "Custos com Amortização de Contratos",
+   "actual": "19.456.556",
+   "anterior": "6.570.195",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1049,
+   "etiqueta": "Outros Custos com Futebol",
+   "actual": "21.975.926",
+   "anterior": "10.975.688",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1050,
+   "etiqueta": "Total",
+   "actual": "76.739.132",
+   "anterior": "125.633.110",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) CUSTOS FUTEBOL PROFISSIONAL"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1079,
+   "etiqueta": "Despesas com Pessoal",
+   "actual": "5.561.472",
+   "anterior": "3.355.965",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1080,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "4.228.214",
+   "anterior": "4.577.698",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1081,
+   "etiqueta": "Depreciação",
+   "actual": "1.213.151",
+   "anterior": "801.150",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1082,
+   "etiqueta": "Despesas Gerais Categoria de Base",
+   "actual": "1.978.408",
+   "anterior": "3.182.101",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1083,
+   "etiqueta": "Despesas Gerais Escolinha",
+   "actual": "480.996",
+   "anterior": "819.815",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1084,
+   "etiqueta": "Despesas Gerais Futebol Feminino",
+   "actual": "21",
+   "anterior": "222.635",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1085,
+   "etiqueta": "Despesas com Vendas",
+   "actual": "231.575",
+   "anterior": "96.191",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1086,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "4.984.986",
+   "anterior": "624.905",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1087,
+   "etiqueta": "Total",
+   "actual": "18.678.825",
+   "anterior": "13.680.458",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) DESPESAS"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 186,
+  "actual": "36.625.176"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 226,
+  "actual": "(42.148.674)",
+  "anterior": "68.477.117"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de b30 (L1118-L1123), ya que mezcla 'Demais Receitas' con el importe de 'OUTRAS RECEITAS/(DESPESAS)' y no cuadra con el estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "DEMAIS RECEITAS",
+   "texto": "L1121 da 20.805.324 como Demais Receitas, que es el importe de OUTRAS RECEITAS/(DESPESAS) (L221), no el de DEMAIS RECEITAS (7.167.435, L194); el total L1123 no coincide con ningún renglón del estado.",
+   "bloques": [
+    "b30",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Es correcto que en el estado RECEITA OPERACIONAL BRUTA (36.625.176) es igual a Receita Futebol Profissional + Demais Receitas, y que la nota L1120 la rotula como 'Receita Futebol Profissional'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA FUTEBOL PROFISSIONAL",
+   "texto": "L1120 asigna 36.625.175 (bruta total, diferencia de 1 por redondeo) a Receita Futebol Profissional, cuando el estado muestra 29.457.740 (L187).",
+   "bloques": [
+    "b30",
+    "b6"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se trata 'OUTRAS RECEITAS/(DESPESAS)' (L221, 20.805.324 positivo) como ingreso no operativo y no como gasto?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "OUTRAS RECEITAS/(DESPESAS)",
+   "texto": "El encabezado L219 '(+/-) DESPESAS/(RECEITAS)' es ambiguo en signo, pero el resultado L222 (-60.936.997+18.788.324) indica que suma como ingreso.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en reais (unidades). No hay total de gastos impreso; costos (L204) y despesas (L209) son subtotales desglosados en b28 y b29, que coinciden exactamente. Deducciones y gastos se presentan en positivo en el estado. Nota b30 inconsistente con el estado."
+}

@@ -1,0 +1,273 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2015.pdf",
+ "md": "Clubes/Brasil/Criciuma/balanco-2015.md",
+ "mdSha1": "a862c1c01d4012d790575683fbf4438b3ec03fc7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:32:03.789Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    49,
+    56
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    73,
+    89
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    112,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    158,
+    179
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    200,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    225,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    256,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    587,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    608,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    639,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    655,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    667,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    692,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    705,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    730,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    739,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    746,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    785,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    795,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    808,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    820,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    831,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    850,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    864,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    876,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    895,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    907,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    915,
+    924
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    928,
+    941
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b28"
+ ],
+ "notas_gastos": [
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Expresso em unidades de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "01.JAN.2015 a 31.DEZ.2015",
+ "columna_anterior": "01.JAN.2014 a 31.DEZ.2014",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La nota 16 'Receitas operacionais brutas' (b28) desglosa por tipo la receita bruta que el estado (b4) presenta por departamento (Futebol Profissional, Futebol de Base...)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA OPERACIONAL BRUTA",
+   "texto": "El estado abre la receita por departamento y la nota por naturaleza; hay que confirmar que suman el mismo total.",
+   "bloques": [
+    "b4",
+    "b28"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual del clube en b4 (pág. 5). b28 desglosa ingresos brutos; b29 desglosa el resultado financiero (ingresos y gastos financieros). b5 es resultado abrangente (no se carga). Faltan bloques b15-b18 en el índice, que podrían contener notas."
+}

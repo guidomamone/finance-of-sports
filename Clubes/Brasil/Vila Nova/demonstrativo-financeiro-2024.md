@@ -74,31 +74,26 @@ Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 # ÍNDICE
 
-Relatório Anual e Demonstrações
+Relatório Anual e Demonstrações  
 Contábeis em 31 de dezembro de 2024
 
-1 Carta do Presidente
+**1 Carta do Presidente**  
+**2 Relatório Anual 2024**  
+* Sumário Executivo  
+* Resultado Financeiro  
+* Evolução Jurídica  
+* Investimentos em Estrutura  
+* Material Esportivo  
+* Evolução da Base  
+* Esportes Olímpicos  
+* Ações Sociais  
+* Estrutura Organizacional  
+**3 Demonstrações Contábeis**  
+* Parecer do Conselho Fiscal  
+* Relatório do Auditor Independente  
+* Demonstrações Contábeis  
 
-2 Relatório Anual 2024
-
-- Sumário Executivo
-- Resultado Financeiro
-- Evolução Jurídica
-- Investimentos em Estrutura
-- Material Esportivo
-- Evolução da Base
-- Esportes Olímpicos
-- Ações Sociais
-- Estrutura Organizacional
-
-3 Demonstrações Contábeis
-
-- Parecer do Conselho Fiscal
-- Relatório do Auditor
-  Independente
-- Demonstrações Contábeis
-
-ZapSign b1806567-ee5b-4e5b-b811-378c-b994d567. Documento assinado eletronicamente, conforme MP 2.200-2/2023 e Lei 14.065/2020.
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 5 ---
 
@@ -425,363 +420,199 @@ ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente
 
 --- pág. 19 ---
 
-![img-19.jpeg](img-19.jpeg)
-
 VILA NOVA FUTEBOL CLUBE
 
-## Demonstrações Contábeis
+### Demonstrações Contábeis
 
-31 de dezembro de 2024 e 2023 com relatório do auditor independente
+31 de dezembro de 2024 e 2023  
+com relatório do auditor independente
 
-ZapSe, 0.3567-a, 7-b37, 894d587, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000e, 0.0000
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 20 ---
 
-VILA NOVA FUTEBOL CLUBE
-
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-## Balanço Patrimonial
+VILA NOVA FUTEBOL CLUBE
 
+**Balanço Patrimonial**
 Em 31 de dezembro de 2024 e 2023
-
 (Em reais)
 
-|  ATIVO | NOTA | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  **ATIVO CIRCULANTE** |  | **586.545,76** | **451.483,00**  |
-|  Caixa e equivalentes de caixa | 3 | 496.736,69 | 395.459,24  |
-|  Adiantamentos diversos | 4 | 600,00 | 15.060,09  |
-|  Bloqueio judicial | 5 | 0,00 | 8.946,32  |
-|  Tributos a recuperar/compensar | 6 | 30.769,66 | 6.906,94  |
-|  Aplicação financeira red. prefixados | 7 | 10.826,47 | 858,00  |
-|  Estoque | 8 | 47.612,94 | 24.252,41  |
-|  **ATIVO NÃO CIRCULANTE** |  | **86.073.497,14** | **79.242.586,45**  |
-|  Realizável em longo prazo | 9 | 1.895.949,27 | 9.499.476,68  |
-|  Imobilizado | 10 | 79.482.355,17 | 68.314.023,28  |
-|  Intangível | 11 | 4.695.192,70 | 1.429.086,49  |
-|  **TOTAL DO ATIVO** |  | **86.660.042,90** | **79.694.069,45**  |
+| ATIVO | NOTA | 2024 | 2023 |
+|---|---|---|---|
+| **ATIVO CIRCULANTE** | | 586.545,76 | 451.483,00 |
+| Caixa e equivalentes de caixa | 3 | 496.736,69 | 395.459,24 |
+| Adiantamentos diversos | 4 | 600,00 | 15.060,09 |
+| Bloqueio judicial | 5 | 0,00 | 8.946,32 |
+| Tributos a recuperar/compensar | 6 | 30.769,66 | 6.906,94 |
+| Aplicação financeira red. prefixados | 7 | 10.826,47 | 858,00 |
+| Estoque | 8 | 47.612,94 | 24.252,41 |
+| **ATIVO NÃO CIRCULANTE** | | 86.073.497,14 | 79.242.586,45 |
+| Realizável em longo prazo | 9 | 1.895.949,27 | 9.499.476,68 |
+| Imobilizado | 10 | 79.482.355,17 | 68.314.023,28 |
+| Intangível | 11 | 4.695.192,70 | 1.429.086,49 |
+| **TOTAL DO ATIVO** | | 86.660.042,90 | 79.694.069,45 |
 
-|  PASSIVO | NOTA | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  **PASSIVO CIRCULANTE** |  | **53.669.419,65** | **25.284.253,86**  |
-|  Empréstimos e financiamentos | 12 | 1.050.133,48 | 1.828.646,99  |
-|  Fornecedores nacionais | 13 | 774.861,13 | 1.183.036,17  |
-|  Receita a apropriar de bilheteria | 14 | 51.715,25 | 123.514,25  |
-|  Contrato de empréstimos de atletas | 15 | 5.000,00 | 255.000,00  |
-|  Obrigações sociais | 16 | 25.869.650,24 | 3.164.622,25  |
-|  Obrigações tributárias | 17 | 9.182.103,07 | 1.506.643,29  |
-|  Obrigações com pessoal | 18 | 6.448.475,56 | 1.321.413,56  |
-|  Provisões de férias e encargos | 19 | 315.267,44 | 268.479,03  |
-|  Acordos judiciais realizados | 20 | 905.382,25 | 2.007.468,34  |
-|  Contas a pagar | 21 | 162.210,79 | 25.571,27  |
-|  Parcelamentos impostos e contribuições sociais | 22 | 0,00 | 3.324.042,96  |
-|  Contingências Judiciais | 23 | 8.904.620,44 | 10.275.815,75  |
-
-|  PASSIVO NÃO CIRCULANTE |  | 92.447.968,07 | 98.965.444,48  |
-| --- | --- | --- | --- |
-|  Parcelamentos impostos e contribuições sociais | 22 | 0,00 | 5.012.844,55  |
-|  Empréstimos e financiamentos | 12 | 92.447.968,07 | 85.005.328,33  |
-|  Receita diferida | 24 | 0,00 | 8.947.271,60  |
-
-|  PATRIMÔNIO LÍQUIDO | 25 | (59.457.344,82) | (44.555.628,89)  |
-| --- | --- | --- | --- |
-|  Superávit acumulado |  | 14.946.221,76 | 12.909.910,78  |
-|  (-) Déficit acumulado |  | (120.466.860,65) | (110.840.955,85)  |
-|  Superávit /(Déficit) do exercício |  | (5.369.838,79) | (4.460.646,76)  |
-|  Ajuste do exercício anterior |  | (13.436.391,70) | (3.128.947,06)  |
-|  Avaliação patrimonial |  | 64.869.524,56 | 60.965.010,00  |
-|  **TOTAL DO PASSIVO E PATRIMONIO LÍQUIDO** |  | **86.660.042,90** | **79.694.069,45**  |
+| PASSIVO | NOTA | 2024 | 2023 |
+|---|---|---|---|
+| **PASSIVO CIRCULANTE** | | 53.669.419,65 | 25.284.253,86 |
+| Empréstimos e financiamentos | 12 | 1.050.133,48 | 1.828.646,99 |
+| Fornecedores nacionais | 13 | 774.861,13 | 1.183.036,17 |
+| Receita a apropriar de bilheteria | 14 | 51.715,25 | 123.514,25 |
+| Contrato de empréstimos de atletas | 15 | 5.000,00 | 255.000,00 |
+| Obrigações sociais | 16 | 25.869.650,24 | 3.164.622,25 |
+| Obrigações tributárias | 17 | 9.182.103,07 | 1.506.643,29 |
+| Obrigações com pessoal | 18 | 6.448.475,56 | 1.321.413,56 |
+| Provisões de férias e encargos | 19 | 315.267,44 | 268.479,03 |
+| Acordos judiciais realizados | 20 | 905.382,25 | 2.007.468,34 |
+| Contas a pagar | 21 | 162.210,79 | 25.571,27 |
+| Parcelamentos impostos e contribuições sociais | 22 | 0,00 | 3.324.042,96 |
+| Contingências Judiciais | 23 | 8.904.620,44 | 10.275.815,75 |
+| **PASSIVO NÃO CIRCULANTE** | | 92.447.968,07 | 98.965.444,48 |
+| Parcelamentos impostos e contribuições sociais | 22 | 0,00 | 5.012.844,55 |
+| Empréstimos e financiamentos | 12 | 92.447.968,07 | 85.005.328,33 |
+| Receita diferida | 24 | 0,00 | 8.947.271,60 |
+| **PATRIMÔNIO LÍQUIDO** | 25 | (59.457.344,82) | (44.555.628,89) |
+| Superávit acumulado | | 14.946.221,76 | 12.909.910,78 |
+| (-) Déficit acumulado | | (120.466.860,65) | (110.840.955,85) |
+| Superávit /(Déficit) do exercício | | (5.369.838,79) | (4.460.646,76) |
+| Ajuste do exercício anterior | | (13.436.391,70) | (3.128.947,06) |
+| Avaliação patrimonial | | 64.869.524,56 | 60.965.010,00 |
+| **TOTAL DO PASSIVO E PATRIMONIO LÍQUIDO** | | 86.660.042,90 | 79.694.069,45 |
 
 As notas explicativas são parte integrante das demonstrações contábeis.
 
-**HUGO JORGE**
-**BRAVO DE**
-**CARVALHO:00**
-**404026141**
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinícius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multiplia v1, ou=20460307000125, ou=8d0eeceedcececa, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141
-Dados: 2023.04.30 12:43:30 -03'00'
+Assinado digitalmente: Vinicius Clementino Ci[ilegible] — Data: 30/04/2025 14:38
+Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141 — Dados: 2025.04.30 12:43:30 -03'00'
+Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100 — Dados: 2025.04.30 12:48:49 -03'00'
 
-Hugo Jorge Bravo de Carvalho
+4 — TIME DO POVO
 
-Diretor presidente
-
-CPF: 004.040.261-41
-
-**LUCIVANDO**
-**VICENTE**
-**ALVES:6964983**
-**9100**
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Assinado de forma digital por LUCIVANDO VICENTE ALVES:6964983100 DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multiplia v1, ou=20460307000125, cn=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:6964983100
-Dados: 2023.04.30 12:48:49 -03'00'
-
-Vinícius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado digitalmente
-Vinícius Clementino Cirqueira
-Data: 30/04/2025 14:38
-
-4
-
-TIME DO POVO
-
-Sustitui:11e0b3e7-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 21 ---
 
-VILA NOVA FUTEBOL CLUBE
-
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-## Demonstração do Resultado do Período
+VILA NOVA FUTEBOL CLUBE
 
+**Demonstração do Resultado do Período**
 Em 31 de dezembro de 2024 e 2023
-
 (Em reais)
 
-|   | NOTA | 2024 | 2023  |
-| --- | --- | --- | --- |
-|  **RECEITA OPERACIONAL BRUTA** | **26** | **54.214.007,97** | **29.625.447,51**  |
-|  RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO | 26.1 | 49.144.011,09 | 24.459.549,21  |
-|  RECEITAS DIVERSAS | 26.2 | 5.069.996,88 | 5.165.898,30  |
-|  **(=) DEDUÇÕES DA RECEITA BRUTA** | **27** | **(491.418,76)** | **(279.901,77)**  |
-|  (-) DEDUÇÕES DA RECEITA BRUTA |  | (491.418,76) | (279.901,77)  |
-|  **= RESULTADO OPERACIONAL LÍQUIDO** |  | **53.722.589,21** | **29.345.545,74**  |
-|  **(=) CUSTOS COM ATIV. PREST. SERVIÇOS/VENDAS** | **28** | **0,00** | **(3.564,13)**  |
-|  (-) CUSTOS GERAIS |  | 0,00 | (3.564,13)  |
-|  **(=) DESPESAS COM ATIVIDADE OPERACIONAL** | **29** | **(45.431.072,64)** | **(33.618.051,11)**  |
-|  (-) DESPESAS COM PESSOAL | 29.1 | (21.884.376,63) | (8.719.408,08)  |
-|  (-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES | 29.2 | (1.465.904,71) | (1.201.970,78)  |
-|  (-) PROVISÕES E CONTIGÊNCIAS | 29.3 | (5.067.055,08) | (4.450.807,44)  |
-|  (-) DESPESAS COM ATIVIDADE EM GERAL | 29.4 | (7.237.538,81) | (9.735.193,59)  |
-|  (-) OUTRAS DESPESAS | 29.5 | (9.776.197,41) | (9.510.671,22)  |
-|  **= RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO** |  | **8.291.516,57** | **(4.276.069,50)**  |
-|  **(=) RESULTADO FINANCEIRO** | **30** | **(13.661.355,36)** | **(184.577,26)**  |
-|  (-) DESPESAS FINANCEIRAS |  | (14.367.128,62) | (4.019.143,82)  |
-|  RECEITAS FINANCEIRAS |  | 705.773,26 | 3.834.566,56  |
-|  **SUPERÁVIT/ (DÉFICIT) DO PERIODO** |  | **(5.369.838,79)** | **(4.460.646,76)**  |
+| | NOTA | 2024 | 2023 |
+|---|---|---|---|
+| **RECEITA OPERACIONAL BRUTA** | 26 | 54.214.007,97 | 29.625.447,51 |
+| RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO | 26.1 | 49.144.011,09 | 24.459.549,21 |
+| RECEITAS DIVERSAS | 26.2 | 5.069.996,88 | 5.165.898,30 |
+| **(=) DEDUÇÕES DA RECEITA BRUTA** | 27 | (491.418,76) | (279.901,77) |
+| (-) DEDUÇÕES DA RECEITA BRUTA | | (491.418,76) | (279.901,77) |
+| **= RESULTADO OPERACIONAL LÍQUIDO** | | 53.722.589,21 | 29.345.545,74 |
+| **(=) CUSTOS COM ATIV. PREST. SERVIÇOS/VENDAS** | 28 | 0,00 | (3.564,13) |
+| (-) CUSTOS GERAIS | | 0,00 | (3.564,13) |
+| **(=) DESPESAS COM ATIVIDADE OPERACIONAL** | 29 | (45.431.072,64) | (33.618.051,11) |
+| (-) DESPESAS COM PESSOAL | 29.1 | (21.884.376,63) | (8.719.408,08) |
+| (-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES | 29.2 | (1.465.904,71) | (1.201.970,78) |
+| (-) PROVISÕES E CONTIGÊNCIAS | 29.3 | (5.067.055,08) | (4.450.807,44) |
+| (-) DESPESAS COM ATIVIDADE EM GERAL | 29.4 | (7.237.538,81) | (9.735.193,59) |
+| (-) OUTRAS DESPESAS | 29.5 | (9.776.197,41) | (9.510.671,22) |
+| **= RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO** | | 8.291.516,57 | (4.276.069,50) |
+| **(=) RESULTADO FINANCEIRO** | 30 | (13.661.355,36) | (184.577,26) |
+| (-) DESPESAS FINANCEIRAS | | (14.367.128,62) | (4.019.143,82) |
+| RECEITAS FINANCEIRAS | | 705.773,26 | 3.834.566,56 |
+| **SUPERÁVIT/ (DÉFICIT) DO PERÍODO** | | (5.369.838,79) | (4.460.646,76) |
 
 As notas explicativas são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:0
-0404026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinícius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO JORGE
-BRAVO DE CARVALHO:0
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multiplia
-v3, ou=30964091599123, cn=Valleu CLEMENTINO,
-cn=Certificado PF A1, cn=0404026141
-OLJ@HUGO.CARVALHO.0
-Dados: 2023.04.26 11:41:47 -03'00'
+Assinado digitalmente: Vinicius Clementino Cirq[ilegible] — Data: 30/04/2025 14:38:3[ilegible]
+Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141 — Dados: 2025.04.30 12:43:47 -03'00'
+Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100 — Dados: 2025.04.30 12:48:24 -03'00'
 
-Hugo Jorge Bravo de Carvalho
+5 — TIME DO POVO
 
-Diretor presidente
-
-CPF: 004.040.261-41
-
-LUCIVANDO
-VICENTE
-ALVES:6964983
-9100
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:6964983910
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Multiplia v3, ou=30964091600123,
-cn=Certificado Digital, ou=Certificado
-PF A1, cn=LUCIVANDO VICENTE
-ALVES:6964983910
-Dados: 2023.04.30 12:48:24 -03'00'
-
-Vinícius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado digitalmente na
-Vinícius Clementino Cirqueira
-Data: 30/04/2025 14:38:24
-
-5
-
-TIME DO POVO
-
-Sod2sg1n1f9-0467-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 22 ---
 
-VILA NOVA FUTEBOL CLUBE
-
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-## Demonstração do resultado abrangente
+VILA NOVA FUTEBOL CLUBE
 
+**Demonstração do resultado abrangente**
 Em 31 de dezembro de 2024 e 2023
-
 (Em reais)
 
-|   | 2024 | 2023  |
-| --- | --- | --- |
-|  Lucro (prejuízo) líquido do exercício | (5.369.838,79) | (4.460.646,76)  |
-|  Ajuste de Exercícios Anteriores | (13.436.391,70) | (3.128.947,06)  |
-|  Outros resultados abrangentes | - | -  |
-|  **Total dos resultados abrangentes** | **(18.806.230,49)** | **(7.589.593,82)**  |
+| | 2024 | 2023 |
+|---|---|---|
+| Lucro (prejuízo) líquido do exercício | (5.369.838,79) | (4.460.646,76) |
+| Ajuste de Exercícios Anteriores | (13.436.391,70) | (3.128.947,06) |
+| Outros resultados abrangentes | - | - |
+| **Total dos resultados abrangentes** | (18.806.230,49) | (7.589.593,82) |
 
 As notas explicativas são parte integrante das demonstrações contábeis.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:0
-0404026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinícius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por
-HUGO JORGE BRAVO DE
-CARVALHO:0404026141
-DN: c=BR, o=ICP-Brasil, ou=AC
-SOLUTI/Mulipila v5,
-ou=30968597000123,
-ssn=Valveconferencia,
-ou=Certificado PF A1, cn=HUGO
-JORGE BRAVO DE
-CARVALHO:0404026141
-Dados: 2023.04.30 12:44:05 -03'00'
+Assinado digitalmente: Vinicius Clementino Cirqu[ilegible] — Data: 30/04/2025 14:38:33
+Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141 — Dados: 2025.04.30 12:44:05 -03'00'
+Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100 — Dados: 2025.04.30 12:47:59 -03'00'
 
-LUCIVANDO
-VICENTE
-ALVES:696498
-39100
+6 — TIME DO POVO
 
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:696498039100
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mulipila v5, ou=30968597000123,
-ou=Certificado Digital, ou=Certificado
-PF A1, cn=LUCIVANDO VICENTE
-ALVES:696498039100
-Dados: 2023.04.30 12:47:59 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-
-Diretor presidente
-
-CPF: 004.040.261-41
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Vinícius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado digitalmente na
-Vinícius Clementino Cirqueira
-Data: 30/04/2025 14:38:33
-
-6
-
-TIME DO POVO
-
-Z:\az\Digi\1516\0404-4ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 23 ---
 
-VILA NOVA FUTEBOL CLUBE
-
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-## Demonstração das mutações do patrimônio Líquido
+VILA NOVA FUTEBOL CLUBE
 
+**Demonstração das mutações do patrimônio Líquido**
 Em 31 de dezembro de 2024 e 2023
-
 (Em reais)
 
-|  EVENTOS | Patrimônio Social | Outras Reservas | Ajustes de Avaliação Patrimonial | Outros Resultados Abrangentes | Ajuste Exercício Anterior | Superávit / (Déficit) Acumulado | Total do Patrimônio Líquido  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  **Saldo em 01 de janeiro de 2023** | - | - | 60.965.010,00 | - | (3.539.403,54) | (94.391.641,53) | (36.966.035,07)  |
-|  Movimentação no Período | - | - | - | - | 3.539.403,54 | (3.539.403,54) | -  |
-|  Ajustes do exercício anterior | - | - | - | - | (3.128.947,06) | - | (3.128.947,06)  |
-|  Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | -  |
-|  Superávit / (Déficit) do Período | - | - | - | - | - | (4.460.646,76) | (4.460.646,76)  |
-|  Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | -  |
-|  Recursos de Superávit com Restrição | - | - | - | - | - | - | -  |
-|  **Saldo em 31 de dezembro de 2023** | - | - | 60.965.010,00 | - | (3.128.947,06) | (102.391.691,83) | (44.555.628,89)  |
-|  Movimentação no Período | - | - | - | - | 3.128.947,06 | (3.128.947,06) | -  |
-|  Ajustes do exercício anterior | - | - | - | - | (13.436.391,70) | - | (13.436.391,70)  |
-|  Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | 0,00  |
-|  Superávit / (Déficit) do Período | - | - | - | - | - | (5.369.838,79) | (5.369.838,79)  |
-|  Ajustes de Avaliação Patrimonial | - | - | 3.904.514,56 | - | - | - | 3.904.514,56  |
-|  Recursos de Superávit com Restrição | - | - | - | - | - | - | -  |
-|  **Saldo em 31 de dezembro de 2024** | - | - | 64.869.524,56 | - | (13.436.391,70) | (110.890.477,68) | (59.457.344,82)  |
+| EVENTOS | Patrimônio Social | Outras Reservas | Ajustes de Avaliação Patrimonial | Outros Resultados Abrangentes | Ajuste Exercício Anterior | Superávit / (Déficit) Acumulado | Total do Patrimônio Líquido |
+|---|---|---|---|---|---|---|---|
+| **Saldo em 01 de janeiro de 2023** | - | - | 60.965.010,00 | - | (3.539.403,54) | (94.391.641,53) | (36.966.035,07) |
+| Movimentação no Período | - | - | - | - | 3.539.403,54 | (3.539.403,54) | - |
+| Ajustes do exercício anterior | - | - | - | - | (3.128.947,06) | | (3.128.947,06) |
+| Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | - |
+| Superávit / (Déficit) do Período | - | - | - | - | - | (4.460.646,76) | (4.460.646,76) |
+| Ajustes de Avaliação Patrimonial | - | - | - | - | - | - | - |
+| Recursos de Superávit com Restrição | - | - | - | - | - | - | - |
+| **Saldo em 31 de dezembro de 2023** | - | - | 60.965.010,00 | - | (3.128.947,06) | (102.391.691,83) | (44.555.628,89) |
+| Movimentação no Período | - | - | - | - | 3.128.947,06 | (3.128.947,06) | - |
+| Ajustes do exercício anterior | - | - | - | - | (13.436.391,70) | - | (13.436.391,70) |
+| Incorporação do superávit ao patrimônio social | - | - | - | - | - | - | 0,00 |
+| Superávit / (Déficit) do Período | - | - | - | - | - | (5.369.838,79) | (5.369.838,79) |
+| Ajustes de Avaliação Patrimonial | - | - | 3.904.514,56 | - | - | - | 3.904.514,56 |
+| Recursos de Superávit com Restrição | - | - | - | - | - | - | - |
+| **Saldo em 31 de dezembro de 2024** | - | - | 64.869.524,56 | - | (13.436.391,70) | (110.890.477,68) | (59.457.344,82) |
 
 As notas explicativas são parte integrante das demonstrações contábeis.
 
-**HUGO JORGE BRAVO DE CARVALHO:0 0404026141**
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinícius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:0404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30948597000123, cn=chilecicontabravo(a), ou=CHILE(s) de PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:0404026141
-Dados: 2023.04.30 12:44:27 -03'00'
+Assinado digitalmente: Vinicius Clementino Cirq[ilegible] — Data: 30/04/2025 14:38:[ilegible]
+Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141 — Dados: 2025.04.30 12:44:27 -03'00'
+Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100 — Dados: 2025.04.30 12:47:35 -03'00'
 
-**LUCIVANDO VICENTE ALVES:696498 39100**
+7 — TIME DO POVO
 
-Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30948597000123, cn=Certificado Digital, ou=Certificado PF AT, cn=LUCIVANDO VICENTE ALVES:69649839100
-Dados: 2023.04.30 12:47:35 -03'00'
-
-Hugo Jorge Bravo de Carvalho
-
-Diretor presidente
-
-CPF: 004.040.261-41
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Vinícius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado digitalmente na Vinícius Clementino Cirqueira
-Data: 30/04/2025 14:38:37
-
-7
-
-TIME DO POVO
-
-Sis2021-01-01-0001-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 24 ---
 
@@ -1844,15 +1675,15 @@ ZadSign b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200
 
 --- pág. 44 ---
 
-VILA NOVA FUTEBOL CLUBE
-
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-### 32. Eventos subsequentes
+VILA NOVA FUTEBOL CLUBE
+
+**32. Eventos subsequentes**
 
 Abaixo listamos eventos subsequentes que ocorreram até o momento e trarão impactos nas demonstrações contábeis do próximo exercício:
 
-#### Venda de direitos econômicos
+**Venda de direitos econômicos**
 
 Em 16 de janeiro de 2025, o Clube vendeu os direitos econômicos do atleta Alesson dos Santos Batista para o clube Torpedo Moscou da Rússia por um valor de EUR 325 mil. Na transação, o Clube manteve 10% dos direitos econômicos para futuras transações.
 
@@ -1860,121 +1691,55 @@ Em 21 de janeiro de 2025, o Clube vendeu os direitos econômicos do atleta Crist
 
 Goiânia – GO, 30 de abril de 2025.
 
-HUGO JORGE
-BRAVO DE
-CARVALHO:00
-404026141
+Hugo Jorge Bravo de Carvalho — Diretor presidente — CPF: 004.040.261-41
+Lucivando Vicente Alves — Contador CRC-GO: 023187 — CPF: 696.498.391-00
+Vinícius Clementino Cirqueira — Vice-presidente financeiro — CPF: 002.036.721-00
 
-Assinado de forma digital por HUGO
-JORGE BRAVO DE
-CARVALHO:00404026141
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mufajda v5, ou=3996059500123,
-ssn=jdobocconformica, ou=Certificado
-PF A1, ou=HUGO JORGE BRAVO DE
-CARVALHO:00404026141
-Dados: 2025.04.30 12:45:12 -03'00'
+Assinado digitalmente: Vinicius Clementino Cir[ilegible] — Data: 30/04/2025 14:38
+Assinado de forma digital por HUGO JORGE BRAVO DE CARVALHO:00404026141 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Videoconferencia, ou=Certificado PF A1, cn=HUGO JORGE BRAVO DE CARVALHO:00404026141 — Dados: 2025.04.30 12:45:53 -03'00'
+Assinado de forma digital por LUCIVANDO VICENTE ALVES:69649839100 — DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI Multipla v5, ou=30968597000123, ou=Certificado Digital, ou=Certificado PF A1, cn=LUCIVANDO VICENTE ALVES:69649839100 — Dados: 2025.04.30 12:46:16 -03'00'
 
-Hugo Jorge Bravo de Carvalho
+28 — TIME DO POVO
 
-Diretor presidente
-
-CPF: 004.040.261-41
-
-LUCIVANDO
-VICENTE
-ALVES:69649839
-100
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:69649839100
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mufajda v5, ou=3996059500123,
-ssn=Certificado Digital, ou=Certificado
-PF A1, cn=LUCIVANDO VICENTE
-ALVES:69649839100
-Dados: 2025.04.30 12:46:16 -03'00'
-
-Lucivando Vicente Alves
-
-Contador CRC-GO: 023187
-
-CPF: 696.498.391-00
-
-Assinado de forma digital por
-LUCIVANDO VICENTE
-ALVES:69649839100
-DN: c=BR, o=ICP-Brasil, ou=AC SOLUTI
-Mufajda v5, ou=3996059500123,
-ssn=Certificado Digital, ou=Certificado
-PF A1, cn=LUCIVANDO VICENTE
-ALVES:69649839100
-Dados: 2025.04.30 12:46:16 -03'00'
-
-Vinícius Clementino Cirqueira
-
-Vice-presidente financeiro
-
-CPF: 002.036.721-00
-
-Assinado digitalmente no
-Vinícius Clementino Cirqueira
-Data: 30/04/2025 14:38:00
-
-28
-
-TIME DO POVO
-
-Z:\sc\2\g1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 45 ---
 
-VILA NOVA FUTEBOL CLUBE
-
+VILA NOVA FUTEBOL CLUBE  
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-![img-20.jpeg](img-20.jpeg)
+Work7
 
-WORK7 Auditores Independentes Ltda.
-
-Rua C-137, 1422, Jardim América - Goiânia/GO
-
-Brasil - CEP 74275-060
-
-Telefone - Brasil +55 (XX) 4007-2328
-
+WORK7 Auditores Independentes Ltda.  
+Rua C-137, 1422, Jardim América - Goiânia/GO  
+Brasil - CEP 74275-060  
+Telefone - Brasil +55 (XX) 4007-2328  
 work7.com.br
 
-# RELATÓRIO DOS AUDITORES INDEPENDENTES SOBRE AS DEMONSTRAÇÕES CONTÁBEIS
+RELATÓRIO DOS AUDITORES INDEPENDENTES SOBRE AS  
+DEMONSTRAÇÕES CONTÁBEIS
 
-Aos diretores e conselheiros do
+Aos diretores e conselheiros do  
+VILA NOVA FUTEBOL CLUBE – VNFC  
+Goiânia - GO
 
-VILA NOVA FUTEBOL CLUBE – VNFC
-
-Goiânia – GO
-
-# Opinião
+**Opinião**
 
 Examinamos as demonstrações contábeis do VILA NOVA FUTEBOL CLUBE – VNFC (Clube), que compreendem o balanço patrimonial, em 31 de dezembro de 2024, e as respectivas demonstrações do resultado, do resultado abrangente, das mutações do patrimônio líquido e dos fluxos de caixa, para o exercício findo naquela data, bem como as correspondentes notas explicativas, incluindo o resumo das principais práticas contábeis.
 
-Em nossa opinião, exceto pelos efeitos dos assuntos descritos na seção a seguir, intitulada “Base para opinião com ressalva”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Clube, em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil.
+Em nossa opinião, exceto pelos efeitos dos assuntos descritos na seção a seguir, intitulada “**Base para opinião com ressalva**”, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira do Clube, em 31 de dezembro de 2024, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil.
 
-# Base para opinião com ressalva
+**Base para opinião com ressalva**
 
 Conforme descrito na Nota Explicativa nº “11 Intangível” em específico o item “Atletas elenco Profissional” correlacionada em Nota Explicativa vinculada às Demonstrações Contábeis, não nos foi fornecida documentação adequada que suportasse a composição detalhada do saldo apresentado no grupo do Ativo Intangível, registrado no montante de R$ 3,944 milhões no balanço patrimonial em 31 de dezembro de 2024. Em razão dessa limitação ao alcance de nosso trabalho, não obtivemos evidência de auditoria apropriada e suficiente sobre a existência, a mensuração e a adequada classificação desse ativo, conforme requer o Pronunciamento Técnico CPC 04 (R1) – Ativo Intangível. Consequentemente, não podemos assegurar se ajustes seriam necessários nos saldos apresentados nas demonstrações contábeis.
 
-Conforme descrito na Nota Explicativa nº “12 – Empréstimos e Financiamentos”, especificamente os saldos registrados como “Outros Empréstimos”, no valor de R$ 89,6 mil, e “Empréstimos de Terceiros”, no valor de R$ 953,9 mil, os relatórios gerenciais apresentados pelo Clube foram
+Conforme descrito na Nota Explicativa nº “12 – Empréstimos e Financiamentos”, especificamente os saldos registrados como “Outros Empréstimos”, no valor de R$ 89,6 mil, e “Empréstimos de Terceiros”, no valor de R$ 953,9 mil, os relatórios gerenciais apresentados pelo Clube foram [continua]
 
-Assessoria em Negócios | Auditoria | Consultoria | Cursos | Operações internacionais | Palestras
-
+Assessoria em Negócios | Auditoria | Consultoria | Cursos | Operações Internacionais | Palestras  
 www.work7.com.br
 
-29
-
-TIME DO POVO
-
-Zuc2cgr1frs9-4ee7-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+29 TIME DO POVO  
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 46 ---
 
@@ -2084,13 +1849,10 @@ Zuc2hgh1h9f9d6e7-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente
 
 --- pág. 49 ---
 
-VILA NOVA FUTEBOL CLUBE
-
+VILA NOVA FUTEBOL CLUBE  
 Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-![img-24.jpeg](img-24.jpeg)
-
-![img-25.jpeg](img-25.jpeg)
+Work7
 
 inclusive as divulgações e se as demonstrações contábeis representam as correspondentes transações e os eventos de maneira compatível com o objetivo de apresentação adequada.
 
@@ -2102,35 +1864,35 @@ Dos assuntos que foram objeto de comunicação com os responsáveis pela governa
 
 Goiânia – GO, 30 de abril de 2025.
 
-WORK7 AUDITORES INDEPENDENTES LTDA:11689939000121 Assinado de forma digital por WORK7 AUDITORES INDEPENDENTES LTDA:11689939000121 Dados: 2025.04.30 04:03:05 -03'00'
+WORK7 Auditores Independentes LTDA  
+CRC 1GO 001891  
+[Assinatura digital por WORK7 AUDITORES INDEPENDENTES LTDA:11689939000121 - Dados: 2025.04.30 04:03:05 -03'00']
 
-Work7 Auditores Independentes LTDA CRC 1GO 001891
+Jose Ricardo Xavier  
+Contador CRC GO-013785-O/0  
+CVM 12.424  
+[Assinado de forma digital por JOSE RICARDO XAVIER:87186705120 - Dados: 2025.04.30 04:02:10 -03'00']
 
-JOSE RICARDO XAVIER:8718 6705120 Assinado de forma digital por JOSE RICARDO XAVIER:87186705120 Dados: 2025.04.30 04:02:10 -03'00'
-
-Jose Ricardo Xavier Contador CRC GO-013785-O/0 CVM 12.424
-
-Assessoria em Negócios | Auditoria | Consultoria | Cursos | Operações internacionais | Palestras
-
+Assessoria em Negócios | Auditoria | Consultoria | Cursos | Operações Internacionais | Palestras  
 www.work7.com.br
 
-33
-
-TIME DO POVO
-
-Sudfoj:11689939000122-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
+33 TIME DO POVO  
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 50 ---
 
-# VILA NOVA FUTEBOL CLUBE
+VILA NOVA FUTEBOL CLUBE  
+Demonstrações Contábeis | 31 de dezembro de 2024 e 2023
 
-JOGAREMOS
+VILA NOVA FUTEBOL CLUBE
 
-![img-26.jpeg](img-26.jpeg)
+JOGAREMOS  
+**JUNTOS**  
+torcida  
+VILA NOVA FC
 
-![img-27.jpeg](img-27.jpeg)
-
-Zarellone 1803567-4068-9ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200/2.200/1.000-1/2012/2013.
+34 TIME DO POVO  
+ZapSign b1808567-ee5d-4ee7-b371-576cb994d587. Documento assinado eletronicamente, conforme MP 2.200-2/2001 e Lei 14.063/2020.
 
 --- pág. 51 ---
 

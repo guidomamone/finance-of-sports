@@ -1,0 +1,1028 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2015-b.md",
+ "generado": "2026-10-09T23:23:29.498Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2015,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "balanco-2015-b.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "76b62cb",
+  "0cc73f6",
+  "451bb83"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": false,
+   "detalle": "ingresos de 2015: 4.667066 en este documento y 9.400048 en balanco-2016.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "resultado impreso fuera de los bloques (escalón 2): \"**= Prejuízo Operacional** — 1.098.226,35 D\" (L216); cierra exacto",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "línea 164: 493,88 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (49389) el resultado daría -1.147121 y no cierra)",
+  "duda de localizar que no afecta la carga: El encabezado dice 'Período: 01/01/2015 a 31/12/2015 - CONSOLIDADO', pero probablemente es el rótulo del sistema contable de una única sociedad (Ferroviaria Futebol S.A., un solo CNPJ).",
+  "duda de extraer que no afecta la carga: El documento no imprime un total de gastos global; L111 solo cubre Custos.",
+  "duda de extraer que no afecta la carga: No aparece línea de resultado del ejercicio tras b8; puede estar en una página no transcripta.",
+  "duda de extraer que no afecta la carga: El encabezado de b3 no repite la sección; se asume continuidad con b2."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 4.667066,
+  "gastos": 5.589038,
+  "financiero": -0.176254,
+  "impuesto": 0,
+  "resultadoImpreso": -1.098226,
+  "resultadoParaCargar": -1.098226,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Rendas de Jogos",
+   "lado": "ingreso",
+   "M": 0.45135,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Cotas de TV Camp Paulista Séria A-2",
+   "lado": "ingreso",
+   "M": 0.175,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Rec c/Repasse Direitos Federat/Empréstim",
+   "lado": "ingreso",
+   "M": 0.1,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 0.049323,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Premios, Outras Receitas",
+   "lado": "ingreso",
+   "M": 0.152102,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Mercadorias c/Vendas",
+   "lado": "ingreso",
+   "M": 0.121321,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Patrocinios",
+   "lado": "ingreso",
+   "M": 3.26,
+   "pagina": 1,
+   "linea": 28,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Contratos de Parcerias",
+   "lado": "ingreso",
+   "M": 0.01,
+   "pagina": 1,
+   "linea": 29,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Publicidades",
+   "lado": "ingreso",
+   "M": 0.0008,
+   "pagina": 1,
+   "linea": 30,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Doações",
+   "lado": "ingreso",
+   "M": 0.38,
+   "pagina": 1,
+   "linea": 31,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Pis",
+   "lado": "ingreso",
+   "M": -0.002002,
+   "pagina": 1,
+   "linea": 35,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Cofins",
+   "lado": "ingreso",
+   "M": -0.00922,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Icms",
+   "lado": "ingreso",
+   "M": -0.021838,
+   "pagina": 1,
+   "linea": 37,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Recuperação de Despesas",
+   "lado": "ingreso",
+   "M": 0.00023,
+   "pagina": 3,
+   "linea": 213,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.061195,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Taxa de Policiamento",
+   "lado": "gasto",
+   "M": 0.045397,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Taxas Federações e Confederações",
+   "lado": "gasto",
+   "M": 0.069507,
+   "pagina": 1,
+   "linea": 45,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Segurança e Vigilancia",
+   "lado": "gasto",
+   "M": 0.031814,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss s/Patrocinios",
+   "lado": "gasto",
+   "M": 0.106147,
+   "pagina": 1,
+   "linea": 47,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Ingressos",
+   "lado": "gasto",
+   "M": 0.027657,
+   "pagina": 1,
+   "linea": 48,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Manutenção, Conservação Estadio",
+   "lado": "gasto",
+   "M": 0.07445,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Combustiveis e Lubrificantes",
+   "lado": "gasto",
+   "M": 0.065791,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss s/Arbitragens",
+   "lado": "gasto",
+   "M": 0.002514,
+   "pagina": 1,
+   "linea": 51,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Locação de Veiculos",
+   "lado": "gasto",
+   "M": 0.00688,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Exame Anti-Doping",
+   "lado": "gasto",
+   "M": 0.011525,
+   "pagina": 1,
+   "linea": 53,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Serviços Prest p/Terceiros",
+   "lado": "gasto",
+   "M": 0.44319,
+   "pagina": 1,
+   "linea": 54,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Direito de Imagem",
+   "lado": "gasto",
+   "M": 0.878735,
+   "pagina": 1,
+   "linea": 55,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Locação de Estadio",
+   "lado": "gasto",
+   "M": 0.058381,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss s/Cotas de TV",
+   "lado": "gasto",
+   "M": 0.00725,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 0.846901,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.072431,
+   "pagina": 1,
+   "linea": 59,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Férias Indenizadas",
+   "lado": "gasto",
+   "M": 0.02803,
+   "pagina": 1,
+   "linea": 60,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.12435,
+   "pagina": 1,
+   "linea": 61,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Aviso Prévio Indenizado",
+   "lado": "gasto",
+   "M": 0.007057,
+   "pagina": 1,
+   "linea": 62,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.050074,
+   "pagina": 1,
+   "linea": 63,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.07832,
+   "pagina": 1,
+   "linea": 64,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Fgts Rescisório",
+   "lado": "gasto",
+   "M": 0.004721,
+   "pagina": 1,
+   "linea": 65,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Premios e Gratificações",
+   "lado": "gasto",
+   "M": 0.694485,
+   "pagina": 1,
+   "linea": 66,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Academia",
+   "lado": "gasto",
+   "M": 0.007522,
+   "pagina": 1,
+   "linea": 67,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Agua Mineral",
+   "lado": "gasto",
+   "M": 0.007022,
+   "pagina": 1,
+   "linea": 68,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.197578,
+   "pagina": 1,
+   "linea": 69,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 0.08206,
+   "pagina": 1,
+   "linea": 70,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Vale Transporte",
+   "lado": "gasto",
+   "M": 0.011478,
+   "pagina": 2,
+   "linea": 86,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Suplementação Alimentar",
+   "lado": "gasto",
+   "M": 0.000468,
+   "pagina": 2,
+   "linea": 87,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Indenizações Trabalhistas",
+   "lado": "gasto",
+   "M": 0.188075,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Despesas de Hospedagem",
+   "lado": "gasto",
+   "M": 0.138282,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Pis s/Folha",
+   "lado": "gasto",
+   "M": 0.010353,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 0.00785,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "(-) Recuperação Cofins",
+   "lado": "gasto",
+   "M": -0.006211,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "(-) Recuperação Pis",
+   "lado": "gasto",
+   "M": -0.001348,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Custo das Mercadorias Vendidas",
+   "lado": "gasto",
+   "M": 0.092183,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "(-) Recuperação de Icms",
+   "lado": "gasto",
+   "M": -0.014711,
+   "pagina": 2,
+   "linea": 95,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 0.139305,
+   "pagina": 2,
+   "linea": 96,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.017995,
+   "pagina": 2,
+   "linea": 97,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.023554,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Aviso Prévio Indenizado",
+   "lado": "gasto",
+   "M": 0.001,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.008154,
+   "pagina": 2,
+   "linea": 100,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.025989,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Pis s/Folha",
+   "lado": "gasto",
+   "M": 0.001797,
+   "pagina": 2,
+   "linea": 102,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Salarios e Ordenados",
+   "lado": "gasto",
+   "M": 0.019508,
+   "pagina": 2,
+   "linea": 103,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.004569,
+   "pagina": 2,
+   "linea": 104,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "13º Salario",
+   "lado": "gasto",
+   "M": 0.002863,
+   "pagina": 2,
+   "linea": 105,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.007075,
+   "pagina": 2,
+   "linea": 106,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.002155,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Despesas pelo uso da Marca",
+   "lado": "gasto",
+   "M": 0.046999,
+   "pagina": 2,
+   "linea": 108,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Combustiveis",
+   "lado": "gasto",
+   "M": 0.003366,
+   "pagina": 2,
+   "linea": 109,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Custas e Autenticações",
+   "lado": "gasto",
+   "M": 0.000176,
+   "pagina": 2,
+   "linea": 110,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.043239,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Depreciações",
+   "lado": "gasto",
+   "M": 0.036857,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Despesas Legais e Judiciais",
+   "lado": "gasto",
+   "M": 0.000946,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.009519,
+   "pagina": 2,
+   "linea": 119,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Manutenção, Conservação de Bens",
+   "lado": "gasto",
+   "M": 0.020688,
+   "pagina": 2,
+   "linea": 120,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Publicações",
+   "lado": "gasto",
+   "M": 0.002098,
+   "pagina": 2,
+   "linea": 121,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.006859,
+   "pagina": 2,
+   "linea": 122,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Propaganda e Publicidade",
+   "lado": "gasto",
+   "M": 0.044152,
+   "pagina": 2,
+   "linea": 123,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Provedor de Internet",
+   "lado": "gasto",
+   "M": 0.006859,
+   "pagina": 2,
+   "linea": 124,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Custas e Emolumentos",
+   "lado": "gasto",
+   "M": 0.000014,
+   "pagina": 2,
+   "linea": 125,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Material de Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.000297,
+   "pagina": 2,
+   "linea": 126,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Locação de Veiculos",
+   "lado": "gasto",
+   "M": 0.0003,
+   "pagina": 2,
+   "linea": 127,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Condominio",
+   "lado": "gasto",
+   "M": 0.005961,
+   "pagina": 2,
+   "linea": 128,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Materiais Esportivos",
+   "lado": "gasto",
+   "M": 0.006962,
+   "pagina": 2,
+   "linea": 129,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Materias de Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.000563,
+   "pagina": 2,
+   "linea": 130,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Medicamentos e Mat Medicos e Cirurgicos",
+   "lado": "gasto",
+   "M": 0.004417,
+   "pagina": 2,
+   "linea": 131,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Material de Consumo",
+   "lado": "gasto",
+   "M": 0.000315,
+   "pagina": 2,
+   "linea": 132,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Agua",
+   "lado": "gasto",
+   "M": 0.019959,
+   "pagina": 2,
+   "linea": 133,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.268487,
+   "pagina": 2,
+   "linea": 134,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Bens de Valores Irrelevantes",
+   "lado": "gasto",
+   "M": 0.000333,
+   "pagina": 3,
+   "linea": 151,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Energia Eletrica",
+   "lado": "gasto",
+   "M": 0.012041,
+   "pagina": 3,
+   "linea": 152,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.011667,
+   "pagina": 3,
+   "linea": 153,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Manutenção e Conservação de Bens",
+   "lado": "gasto",
+   "M": 0.061455,
+   "pagina": 3,
+   "linea": 154,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Material de Consumo",
+   "lado": "gasto",
+   "M": 0.00012,
+   "pagina": 3,
+   "linea": 155,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Utensilios, Guarn.Cama, Mesa e Banho",
+   "lado": "gasto",
+   "M": 0.002583,
+   "pagina": 3,
+   "linea": 156,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Gas",
+   "lado": "gasto",
+   "M": 0.004739,
+   "pagina": 3,
+   "linea": 157,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Agua",
+   "lado": "gasto",
+   "M": 0.000032,
+   "pagina": 3,
+   "linea": 158,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.000338,
+   "pagina": 3,
+   "linea": 159,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Multas",
+   "lado": "gasto",
+   "M": 0.000053,
+   "pagina": 3,
+   "linea": 160,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Multas",
+   "lado": "gasto",
+   "M": 0.000312,
+   "pagina": 3,
+   "linea": 162,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Agua",
+   "lado": "gasto",
+   "M": 0.000494,
+   "pagina": 3,
+   "linea": 164,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Energia Eletrica",
+   "lado": "gasto",
+   "M": 0.002816,
+   "pagina": 3,
+   "linea": 165,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Telefone",
+   "lado": "gasto",
+   "M": 0.016917,
+   "pagina": 3,
+   "linea": 166,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Seguro de Vida",
+   "lado": "gasto",
+   "M": 0.009081,
+   "pagina": 3,
+   "linea": 167,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Impressos e Materiais de Escritorio",
+   "lado": "gasto",
+   "M": 0.004229,
+   "pagina": 3,
+   "linea": 168,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Correios",
+   "lado": "gasto",
+   "M": 0.002569,
+   "pagina": 3,
+   "linea": 169,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Bens de Valores Irrelevantes",
+   "lado": "gasto",
+   "M": 0.00018,
+   "pagina": 3,
+   "linea": 170,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Custas e Emolumentos",
+   "lado": "gasto",
+   "M": 0.005123,
+   "pagina": 3,
+   "linea": 171,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Telefone",
+   "lado": "gasto",
+   "M": 0.002355,
+   "pagina": 3,
+   "linea": 172,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Impressos e Matriais de Escritorio",
+   "lado": "gasto",
+   "M": 0.000195,
+   "pagina": 3,
+   "linea": 173,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Honorarios Contabeis,Adv e de Auditorias",
+   "lado": "gasto",
+   "M": 0.13415,
+   "pagina": 3,
+   "linea": 174,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Custo Formação Atleta Profissional",
+   "lado": "gasto",
+   "M": 0.001852,
+   "pagina": 3,
+   "linea": 181,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Despesas Bancarias",
+   "lado": "gasto",
+   "M": 0.010362,
+   "pagina": 3,
+   "linea": 196,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "Comissão s/Cartão",
+   "lado": "gasto",
+   "M": 0.004643,
+   "pagina": 3,
+   "linea": 198,
+   "origen": "estado (lectura 5: hoja con D)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Juros Passivos",
+   "M": -0.000322,
+   "linea": 161
+  },
+  {
+   "etiqueta": "Juros Passivos",
+   "M": -0.002357,
+   "linea": 163
+  },
+  {
+   "etiqueta": "Juros s/Leasing Bradesco",
+   "M": -0.017391,
+   "linea": 188
+  },
+  {
+   "etiqueta": "Juros e Multas Lei 12996/14",
+   "M": -0.050585,
+   "linea": 189
+  },
+  {
+   "etiqueta": "Encargos Financeiros",
+   "M": -0.107,
+   "linea": 197
+  },
+  {
+   "etiqueta": "Rendimentos Aplicações Financeiras",
+   "M": 0.000036,
+   "linea": 205
+  },
+  {
+   "etiqueta": "Descontos Obtidos",
+   "M": 0.001365,
+   "linea": 206
+  }
+ ],
+ "impuesto": [],
+ "confirmadosPorSumas": [
+  {
+   "linea": 164,
+   "numero": "493,88"
+  }
+ ]
+}

@@ -1,0 +1,766 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2016.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2016.md",
+ "generado": "2026-10-09T23:23:29.573Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2016.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "balanco-2016.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "95d7386",
+  "a3548d1",
+  "4251c6d",
+  "99efdba"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"RECEITA LÍQUIDA\" 9.211197 cierra; además se suman 11 línea(s) fuera de ese total (9.232303)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 18.4435 - gastos 10.134897 ± financiero -0.266455 ± impuesto 0 no da el impreso -1.190155"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": null,
+   "detalle": "no se puede comparar: dre-2017.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": false,
+   "detalle": "ingresos de 2015: 4.667066 en balanco-2015-b.pdf y 9.400048 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Impostos / Taxas/Contribuições\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 18.4435,
+  "gastos": 10.134897,
+  "financiero": -0.266455,
+  "impuesto": 0,
+  "resultadoImpreso": -1.190155,
+  "resultadoParaCargar": -1.190155,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Rendas de Jogos",
+   "lado": "ingreso",
+   "M": 0.94459,
+   "pagina": 22,
+   "linea": 948,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Cotas de TV – Paulista Série A-2",
+   "lado": "ingreso",
+   "M": 2.885,
+   "pagina": 22,
+   "linea": 949,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 0.571909,
+   "pagina": 22,
+   "linea": 950,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Venda de Atletas",
+   "lado": "ingreso",
+   "M": 1.943355,
+   "pagina": 22,
+   "linea": 951,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Patrocínios",
+   "lado": "ingreso",
+   "M": 1.759526,
+   "pagina": 22,
+   "linea": 952,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Publicidades",
+   "lado": "ingreso",
+   "M": 0.265,
+   "pagina": 22,
+   "linea": 954,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "ingreso",
+   "M": 0.813643,
+   "pagina": 22,
+   "linea": 956,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "Vendas Mercadorias",
+   "lado": "ingreso",
+   "M": 0.038727,
+   "pagina": 22,
+   "linea": 958,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\""
+  },
+  {
+   "etiqueta": "PIS",
+   "lado": "ingreso",
+   "M": 0.000639,
+   "pagina": 22,
+   "linea": 966,
+   "origen": "nota que desglosa \"(-) Deduções da Receita Bruta\""
+  },
+  {
+   "etiqueta": "COFINS",
+   "lado": "ingreso",
+   "M": 0.002943,
+   "pagina": 22,
+   "linea": 967,
+   "origen": "nota que desglosa \"(-) Deduções da Receita Bruta\""
+  },
+  {
+   "etiqueta": "ICMS",
+   "lado": "ingreso",
+   "M": 0.006971,
+   "pagina": 22,
+   "linea": 968,
+   "origen": "nota que desglosa \"(-) Deduções da Receita Bruta\""
+  },
+  {
+   "etiqueta": "RECEITA LÍQUIDA",
+   "lado": "ingreso",
+   "M": 9.211197,
+   "pagina": 4,
+   "linea": 115,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direito de Imagem",
+   "lado": "gasto",
+   "M": 1.640894,
+   "pagina": 23,
+   "linea": 993,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Salários e Ordenados",
+   "lado": "gasto",
+   "M": 1.341011,
+   "pagina": 23,
+   "linea": 994,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Custo Mercadorias Vendidas",
+   "lado": "gasto",
+   "M": 0.019257,
+   "pagina": 23,
+   "linea": 995,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Serviços Prestados por Terceiros",
+   "lado": "gasto",
+   "M": 1.215516,
+   "pagina": 23,
+   "linea": 996,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.399803,
+   "pagina": 23,
+   "linea": 997,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.112088,
+   "pagina": 23,
+   "linea": 998,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Despesas com Hospedagem",
+   "lado": "gasto",
+   "M": 0.269421,
+   "pagina": 23,
+   "linea": 999,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Taxas Federações e Confederações",
+   "lado": "gasto",
+   "M": 0.377547,
+   "pagina": 23,
+   "linea": 1000,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.113268,
+   "pagina": 23,
+   "linea": 1001,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "13 Salário",
+   "lado": "gasto",
+   "M": 0.111123,
+   "pagina": 23,
+   "linea": 1002,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Despesas com Viagens",
+   "lado": "gasto",
+   "M": 0.197051,
+   "pagina": 23,
+   "linea": 1003,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.071987,
+   "pagina": 23,
+   "linea": 1004,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Prêmios e Gratificações",
+   "lado": "gasto",
+   "M": 0.216492,
+   "pagina": 23,
+   "linea": 1005,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "INSS",
+   "lado": "gasto",
+   "M": 0.070132,
+   "pagina": 23,
+   "linea": 1006,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "INSS sobre Cotas de Patrocínio",
+   "lado": "gasto",
+   "M": 0.271376,
+   "pagina": 23,
+   "linea": 1007,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Indenizações Trabalhistas",
+   "lado": "gasto",
+   "M": 0.32033,
+   "pagina": 23,
+   "linea": 1008,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Segurança e Vigilância",
+   "lado": "gasto",
+   "M": 0.007011,
+   "pagina": 23,
+   "linea": 1009,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Combustíveis e Lubrificantes",
+   "lado": "gasto",
+   "M": 0.065573,
+   "pagina": 23,
+   "linea": 1010,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Ingressos",
+   "lado": "gasto",
+   "M": 0.045281,
+   "pagina": 23,
+   "linea": 1012,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Taxa Policiamento",
+   "lado": "gasto",
+   "M": 0.15524,
+   "pagina": 23,
+   "linea": 1013,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Provisão Contingências Trabalhistas",
+   "lado": "gasto",
+   "M": 0.306172,
+   "pagina": 23,
+   "linea": 1014,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Outros Gastos",
+   "lado": "gasto",
+   "M": 0.614166,
+   "pagina": 23,
+   "linea": 1015,
+   "origen": "nota que desglosa \"(-) Custos Operacionais\""
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.076518,
+   "pagina": 24,
+   "linea": 1041,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Depreciações",
+   "lado": "gasto",
+   "M": 0.04141,
+   "pagina": 24,
+   "linea": 1042,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 0.027217,
+   "pagina": 24,
+   "linea": 1043,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.00807,
+   "pagina": 24,
+   "linea": 1044,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Manutenção, Conservação de Bens",
+   "lado": "gasto",
+   "M": 0.14558,
+   "pagina": 24,
+   "linea": 1045,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Combustíveis",
+   "lado": "gasto",
+   "M": 0.033683,
+   "pagina": 24,
+   "linea": 1046,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Propaganda e Publicidade",
+   "lado": "gasto",
+   "M": 0.091515,
+   "pagina": 24,
+   "linea": 1047,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Provedor Internet",
+   "lado": "gasto",
+   "M": 0.015295,
+   "pagina": 24,
+   "linea": 1048,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Custas e Emolumentos",
+   "lado": "gasto",
+   "M": 0.008139,
+   "pagina": 24,
+   "linea": 1049,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Água",
+   "lado": "gasto",
+   "M": 0.008384,
+   "pagina": 24,
+   "linea": 1051,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.016665,
+   "pagina": 24,
+   "linea": 1052,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Telefone",
+   "lado": "gasto",
+   "M": 0.015668,
+   "pagina": 24,
+   "linea": 1053,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Seguro de Vida",
+   "lado": "gasto",
+   "M": 0.008602,
+   "pagina": 24,
+   "linea": 1054,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Impressos, Materiais Escritório",
+   "lado": "gasto",
+   "M": 0.018499,
+   "pagina": 24,
+   "linea": 1055,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Correios",
+   "lado": "gasto",
+   "M": 0.003918,
+   "pagina": 24,
+   "linea": 1056,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Assessoria Cont./Tributária/Advocatícia",
+   "lado": "gasto",
+   "M": 0.278368,
+   "pagina": 24,
+   "linea": 1057,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas Indedutíveis",
+   "lado": "gasto",
+   "M": 0.004231,
+   "pagina": 24,
+   "linea": 1059,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Material Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.001948,
+   "pagina": 24,
+   "linea": 1060,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas Legais e Judiciais",
+   "lado": "gasto",
+   "M": 0.000466,
+   "pagina": 24,
+   "linea": 1062,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas com Cartão Credito",
+   "lado": "gasto",
+   "M": 0.025881,
+   "pagina": 24,
+   "linea": 1063,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Serviços Prestados por terceiros",
+   "lado": "gasto",
+   "M": 0.022263,
+   "pagina": 24,
+   "linea": 1064,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Despesas Uso da Marca",
+   "lado": "gasto",
+   "M": 0.064407,
+   "pagina": 24,
+   "linea": 1065,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Arbitragens e Inss",
+   "lado": "gasto",
+   "M": 0.003329,
+   "pagina": 24,
+   "linea": 1066,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 0.02611,
+   "pagina": 24,
+   "linea": 1067,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.000837,
+   "pagina": 24,
+   "linea": 1068,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Condomínio",
+   "lado": "gasto",
+   "M": 0.005226,
+   "pagina": 24,
+   "linea": 1069,
+   "origen": "nota que desglosa \"Gerais e Administrativas\""
+  },
+  {
+   "etiqueta": "Salários e Ordenados",
+   "lado": "gasto",
+   "M": 0.367964,
+   "pagina": 25,
+   "linea": 1094,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Férias Normais",
+   "lado": "gasto",
+   "M": 0.077757,
+   "pagina": 25,
+   "linea": 1095,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Fgts",
+   "lado": "gasto",
+   "M": 0.033392,
+   "pagina": 25,
+   "linea": 1096,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "13 Salário",
+   "lado": "gasto",
+   "M": 0.037244,
+   "pagina": 25,
+   "linea": 1097,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Inss",
+   "lado": "gasto",
+   "M": 0.02095,
+   "pagina": 25,
+   "linea": 1098,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Vale Transporte",
+   "lado": "gasto",
+   "M": 0.017567,
+   "pagina": 25,
+   "linea": 1099,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Pís s/ Folha",
+   "lado": "gasto",
+   "M": 0.004129,
+   "pagina": 25,
+   "linea": 1100,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Aviso Previo Indenizado",
+   "lado": "gasto",
+   "M": 0.003352,
+   "pagina": 25,
+   "linea": 1101,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Férias Indenizadas",
+   "lado": "gasto",
+   "M": 0.004299,
+   "pagina": 25,
+   "linea": 1102,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Materiais Esportivos",
+   "lado": "gasto",
+   "M": 0.023621,
+   "pagina": 25,
+   "linea": 1110,
+   "origen": "nota que desglosa \"Despesas com Materiais\""
+  },
+  {
+   "etiqueta": "Medicamentos, Mat. Médicos Cirúrgicos.",
+   "lado": "gasto",
+   "M": 0.018491,
+   "pagina": 25,
+   "linea": 1111,
+   "origen": "nota que desglosa \"Despesas com Materiais\""
+  },
+  {
+   "etiqueta": "Material Limpeza e Higiene",
+   "lado": "gasto",
+   "M": 0.003295,
+   "pagina": 25,
+   "linea": 1112,
+   "origen": "nota que desglosa \"Despesas com Materiais\""
+  },
+  {
+   "etiqueta": "Material Consumo",
+   "lado": "gasto",
+   "M": 0.007299,
+   "pagina": 25,
+   "linea": 1113,
+   "origen": "nota que desglosa \"Despesas com Materiais\""
+  },
+  {
+   "etiqueta": "Uniformes",
+   "lado": "gasto",
+   "M": 0.0045,
+   "pagina": 25,
+   "linea": 1114,
+   "origen": "nota que desglosa \"Despesas com Materiais\""
+  },
+  {
+   "etiqueta": "Aluguel",
+   "lado": "gasto",
+   "M": 0.358135,
+   "pagina": 25,
+   "linea": 1122,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Água",
+   "lado": "gasto",
+   "M": 0.013167,
+   "pagina": 25,
+   "linea": 1123,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Manutenção Conservação Bens",
+   "lado": "gasto",
+   "M": 0.107573,
+   "pagina": 25,
+   "linea": 1125,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.018631,
+   "pagina": 25,
+   "linea": 1126,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Gás",
+   "lado": "gasto",
+   "M": 0.009405,
+   "pagina": 25,
+   "linea": 1127,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Material de Consumo",
+   "lado": "gasto",
+   "M": 0.007642,
+   "pagina": 25,
+   "linea": 1128,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Material Limpeza Higiene",
+   "lado": "gasto",
+   "M": 0.004125,
+   "pagina": 25,
+   "linea": 1129,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Impostos e Taxas",
+   "lado": "gasto",
+   "M": 0.031288,
+   "pagina": 25,
+   "linea": 1131,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Utensílios, Guarn., Cama, Mesa, Banho",
+   "lado": "gasto",
+   "M": 0.064879,
+   "pagina": 25,
+   "linea": 1132,
+   "origen": "nota que desglosa \"Alojamento\""
+  },
+  {
+   "etiqueta": "Impostos / Taxas/Contribuições",
+   "lado": "gasto",
+   "M": 0.003224,
+   "pagina": 4,
+   "linea": 123,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas / Receitas Financeiras",
+   "M": -0.266455,
+   "linea": 124
+  }
+ ],
+ "impuesto": []
+}

@@ -56,3 +56,5 @@
   https://fcf.com.br/categoria/financeiro/balancos/;
   https://fcf-com-br-media.s3.amazonaws.com/wp-content/uploads/.
 - Último chequeo: 2026-09-22.
+
+Color de marca: null — tricolor amarillo, negro y blanco (pt.wikipedia: "cores oficiais são o amarelo, preto e branco"; camiseta titular de la plantilla: cuerpo blanco, mangas FBC404, short negro; escudo amarillo y negro): ambiguo, mismo criterio que Fortaleza, verificado 2026-10-09

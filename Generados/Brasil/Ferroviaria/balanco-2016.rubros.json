@@ -1,0 +1,850 @@
+{
+  "md": "Clubes/Brasil/Ferroviaria/balanco-2016.md",
+  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2016.pdf",
+  "club": "ferroviaria",
+  "year": 2016,
+  "generatedAt": "2026-10-09T23:23:29.573Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Rendas de Jogos",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.94459
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Cotas de TV – Paulista Série A-2",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        2.885
+      ],
+      "glosa": "Derechos de TV – Paulista Serie A-2"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.571909
+      ],
+      "glosa": "Abonados / Socios hinchas"
+    },
+    {
+      "label": "Venda de Atletas",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        1.943355
+      ],
+      "glosa": "Venta de futbolistas"
+    },
+    {
+      "label": "Patrocínios",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        1.759526
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Publicidades",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.265
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Outras",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.813643
+      ],
+      "glosa": "Otras"
+    },
+    {
+      "label": "Vendas Mercadorias",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL BRUTA\"",
+      "values": [
+        0.038727
+      ],
+      "glosa": "Venta de mercancías"
+    },
+    {
+      "label": "PIS",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
+      "values": [
+        0.000639
+      ],
+      "glosa": "PIS"
+    },
+    {
+      "label": "COFINS",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
+      "values": [
+        0.002943
+      ],
+      "glosa": "COFINS"
+    },
+    {
+      "label": "ICMS",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"(-) Deduções da Receita Bruta\"",
+      "values": [
+        0.006971
+      ],
+      "glosa": "ICMS"
+    },
+    {
+      "label": "RECEITA LÍQUIDA",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        9.211197
+      ],
+      "glosa": "INGRESOS NETOS"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        1.640894
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        1.341011
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Custo Mercadorias Vendidas",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.019257
+      ],
+      "glosa": "Coste de las mercancías vendidas"
+    },
+    {
+      "label": "Serviços Prestados por Terceiros",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        1.215516
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.399803
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.112088
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Despesas com Hospedagem",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.269421
+      ],
+      "glosa": "Gastos de alojamiento"
+    },
+    {
+      "label": "Taxas Federações e Confederações",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.377547
+      ],
+      "glosa": "Tasas a federaciones y confederaciones"
+    },
+    {
+      "label": "Fgts",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.113268
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "13 Salário",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.111123
+      ],
+      "glosa": "Paga extraordinaria / Decimotercer sueldo"
+    },
+    {
+      "label": "Despesas com Viagens",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.197051
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Arbitragens",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.071987
+      ],
+      "glosa": "Arbitrajes"
+    },
+    {
+      "label": "Prêmios e Gratificações",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.216492
+      ],
+      "glosa": "Primas y gratificaciones"
+    },
+    {
+      "label": "INSS",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.070132
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "INSS sobre Cotas de Patrocínio",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.271376
+      ],
+      "glosa": "INSS sobre cuotas de patrocinio"
+    },
+    {
+      "label": "Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.32033
+      ],
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Segurança e Vigilância",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.007011
+      ],
+      "glosa": "Seguridad y vigilancia"
+    },
+    {
+      "label": "Combustíveis e Lubrificantes",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.065573
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Ingressos",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.045281
+      ],
+      "glosa": "Entradas"
+    },
+    {
+      "label": "Taxa Policiamento",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.15524
+      ],
+      "glosa": "Tasa policial"
+    },
+    {
+      "label": "Provisão Contingências Trabalhistas",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.306172
+      ],
+      "glosa": "Provisión para contingencias laborales"
+    },
+    {
+      "label": "Outros Gastos",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"(-) Custos Operacionais\"",
+      "values": [
+        0.614166
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.076518
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.04141
+      ],
+      "glosa": "Amortizaciones y depreciaciones"
+    },
+    {
+      "label": "Despesas de Viagens",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.027217
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.00807
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Manutenção, Conservação de Bens",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.14558
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Combustíveis",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.033683
+      ],
+      "glosa": "Combustibles"
+    },
+    {
+      "label": "Propaganda e Publicidade",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.091515
+      ],
+      "glosa": "Propaganda y publicidad"
+    },
+    {
+      "label": "Provedor Internet",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.015295
+      ],
+      "glosa": "Proveedor de internet"
+    },
+    {
+      "label": "Custas e Emolumentos",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.008139
+      ],
+      "glosa": "Costas y aranceles"
+    },
+    {
+      "label": "Água",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.008384
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.016665
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Telefone",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.015668
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Seguro de Vida",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.008602
+      ],
+      "glosa": "Seguro de vida"
+    },
+    {
+      "label": "Impressos, Materiais Escritório",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.018499
+      ],
+      "glosa": "Impresos y material de oficina"
+    },
+    {
+      "label": "Correios",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.003918
+      ],
+      "glosa": "Correos"
+    },
+    {
+      "label": "Assessoria Cont./Tributária/Advocatícia",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.278368
+      ],
+      "glosa": "Asesoría contable / tributaria / jurídica"
+    },
+    {
+      "label": "Despesas Indedutíveis",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.004231
+      ],
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Material Limpeza e Higiene",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.001948
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Despesas Legais e Judiciais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.000466
+      ],
+      "glosa": "Gastos legales y judiciales"
+    },
+    {
+      "label": "Despesas com Cartão Credito",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.025881
+      ],
+      "glosa": "Gastos por tarjetas de crédito"
+    },
+    {
+      "label": "Serviços Prestados por terceiros",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.022263
+      ],
+      "glosa": "Servicios prestados por terceros"
+    },
+    {
+      "label": "Despesas Uso da Marca",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.064407
+      ],
+      "glosa": "Gastos por uso de marca"
+    },
+    {
+      "label": "Arbitragens e Inss",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.003329
+      ],
+      "glosa": "Arbitrajes e INSS"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.02611
+      ],
+      "glosa": "Dietas y asignaciones para gastos"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.000837
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Condomínio",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gerais e Administrativas\"",
+      "values": [
+        0.005226
+      ],
+      "glosa": "Gastos de comunidad / Condominio"
+    },
+    {
+      "label": "Salários e Ordenados",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.367964
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Férias Normais",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.077757
+      ],
+      "glosa": "Vacaciones ordinarias"
+    },
+    {
+      "label": "Fgts",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.033392
+      ],
+      "glosa": "FGTS"
+    },
+    {
+      "label": "13 Salário",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.037244
+      ],
+      "glosa": "Paga extraordinaria / Decimotercer sueldo"
+    },
+    {
+      "label": "Inss",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.02095
+      ],
+      "glosa": "INSS"
+    },
+    {
+      "label": "Vale Transporte",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.017567
+      ],
+      "glosa": "Vales de transporte"
+    },
+    {
+      "label": "Pís s/ Folha",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.004129
+      ],
+      "glosa": "PIS sobre nómina"
+    },
+    {
+      "label": "Aviso Previo Indenizado",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.003352
+      ],
+      "glosa": "Preaviso indemnizado"
+    },
+    {
+      "label": "Férias Indenizadas",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.004299
+      ],
+      "glosa": "Vacaciones indemnizadas"
+    },
+    {
+      "label": "Materiais Esportivos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Materiais\"",
+      "values": [
+        0.023621
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Medicamentos, Mat. Médicos Cirúrgicos.",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Materiais\"",
+      "values": [
+        0.018491
+      ],
+      "glosa": "Medicamentos y material médico-quirúrgico"
+    },
+    {
+      "label": "Material Limpeza e Higiene",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Materiais\"",
+      "values": [
+        0.003295
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Material Consumo",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Materiais\"",
+      "values": [
+        0.007299
+      ],
+      "glosa": "Material de consumo"
+    },
+    {
+      "label": "Uniformes",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Despesas com Materiais\"",
+      "values": [
+        0.0045
+      ],
+      "glosa": "Uniformes"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.358135
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Água",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.013167
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Manutenção Conservação Bens",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.107573
+      ],
+      "glosa": "Mantenimiento y conservación de bienes"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.018631
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Gás",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.009405
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Material de Consumo",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.007642
+      ],
+      "glosa": "Material de consumo"
+    },
+    {
+      "label": "Material Limpeza Higiene",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.004125
+      ],
+      "glosa": "Material de limpieza e higiene"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.031288
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Utensílios, Guarn., Cama, Mesa, Banho",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Alojamento\"",
+      "values": [
+        0.064879
+      ],
+      "glosa": "Utensilios, ajuar, ropa de cama, mesa y baño"
+    },
+    {
+      "label": "Impostos / Taxas/Contribuições",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.003224
+      ],
+      "glosa": "Impuestos / Tasas / Contribuciones"
+    }
+  ]
+}

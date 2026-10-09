@@ -1,0 +1,247 @@
+{
+ "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.md",
+ "generado": "2026-10-09T23:23:30.738Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf",
+   "campo": "cierre",
+   "valor": "2016-12-31",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2016",
+   "evidencia": "balanco-patrimonial-2016.md L49",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "c1021b2",
+  "51ddbca"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TOTAL DAS RECEITAS\" 12.924983 cierra; además se suman 12 línea(s) fuera de ese total (12.894474)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"TOTAL DAS DESPESAS\" 15.696986 cierra; además se suman 5 línea(s) fuera de ese total (15.320054)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 25.819457 - gastos 31.017039 ± financiero 0.063711 ± impuesto 0 no da el impreso -2.772003"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2016: 25.819457 en este documento y 25.819457 en balanco-patrimonial-2017.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2015: 13.818718 en balanco-patrimonial-2015.pdf y 13.818718 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 25.819457,
+  "gastos": 31.017039,
+  "financiero": 0.063711,
+  "impuesto": 0,
+  "resultadoImpreso": -2.772003,
+  "resultadoParaCargar": -2.772003,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receitas Atividades Esportivas",
+   "lado": "ingreso",
+   "M": 2.220891,
+   "pagina": 1,
+   "linea": 54,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Escolinha de Futebol",
+   "lado": "ingreso",
+   "M": 0.119131,
+   "pagina": 1,
+   "linea": 55,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Doações/Patrocínios",
+   "lado": "ingreso",
+   "M": 0.50307,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas CBF",
+   "lado": "ingreso",
+   "M": 5.266022,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Publicidade",
+   "lado": "ingreso",
+   "M": 1.753607,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Sócio Tigrão",
+   "lado": "ingreso",
+   "M": 0.368941,
+   "pagina": 1,
+   "linea": 59,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Direitos Federativos Atletas",
+   "lado": "ingreso",
+   "M": 0.6,
+   "pagina": 1,
+   "linea": 60,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Alugueis",
+   "lado": "ingreso",
+   "M": 0.269565,
+   "pagina": 1,
+   "linea": 61,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Extraordinárias",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 63,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Contribuições Conselheiros",
+   "lado": "ingreso",
+   "M": 0.389937,
+   "pagina": 1,
+   "linea": 64,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Time mania",
+   "lado": "ingreso",
+   "M": 0.260774,
+   "pagina": 1,
+   "linea": 65,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Diversas",
+   "lado": "ingreso",
+   "M": 1.142537,
+   "pagina": 1,
+   "linea": 66,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TOTAL DAS RECEITAS",
+   "lado": "ingreso",
+   "M": 12.924983,
+   "pagina": 1,
+   "linea": 67,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Administrativas",
+   "lado": "gasto",
+   "M": 9.801794,
+   "pagina": 1,
+   "linea": 70,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Depto Esportes",
+   "lado": "gasto",
+   "M": 4.783521,
+   "pagina": 1,
+   "linea": 71,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Tributárias",
+   "lado": "gasto",
+   "M": 0.185638,
+   "pagina": 1,
+   "linea": 73,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Serviços Terceiros",
+   "lado": "gasto",
+   "M": 0.535155,
+   "pagina": 1,
+   "linea": 74,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Diversas",
+   "lado": "gasto",
+   "M": 0.013946,
+   "pagina": 1,
+   "linea": 76,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TOTAL DAS DESPESAS",
+   "lado": "gasto",
+   "M": 15.696986,
+   "pagina": 1,
+   "linea": 77,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.030509,
+   "linea": 62
+  },
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": 0.033202,
+   "linea": 72
+  }
+ ],
+ "impuesto": []
+}

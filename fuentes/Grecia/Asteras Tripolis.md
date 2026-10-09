@@ -26,3 +26,5 @@ confirmados como `PDF document` real, tamaños entre 133 KB y 4,9 MB.
 Ninguna. Serie completa y sin ambigüedad societaria — el caso más limpio del barrido de esta sesión.
 
 - Último chequeo: 2026-09-17.
+
+Color de marca: null — bicolor azul y amarillo (apodo Kitrinoble 'amarillo-azules'; camiseta amarilla pero escudo predominantemente azul), sin criterio de desempate, verificado 2026-10-09

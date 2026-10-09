@@ -1,0 +1,55 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
+ "mdSha1": "4c426e11c06ddb47f52af16d8d2e460b6744b91b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:56:14.185Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    39
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna indicación de escala (no dice 'em milhares' ni similar).",
+ "moneda": "BRL",
+ "columna_ejercicio": "Valor",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la columna 'Valor' de b1 en reales (unidades), sin multiplicar?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ninguna línea cercana a b1 indica la escala; los DRE simples de este tipo suelen venir en reales.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga b1 como estado individual del club, aunque el período diga 'CONSOLIDADO'?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título dice 'Período: 01/01/2017 a 31/12/2017 - CONSOLIDADO', pero es un único DRE con un solo CNPJ y el club carga sus años como individual; probablemente significa 'acumulado del período'.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de una página con un único DRE (b1) del ejercicio 2017, con una sola columna 'Valor' y sin columna del año anterior. 'CONSOLIDADO' en el título del período parece indicar el acumulado del período, no un perímetro de grupo. No hay notas."
+}

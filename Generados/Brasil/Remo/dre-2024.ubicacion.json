@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2024.md",
+ "mdSha1": "e80e99cd5be43b4337174bee5ae15d94cfa67b83",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T23:13:19.926Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    18
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    22
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    26,
+    30
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2024",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "DRE de una sola página con solo la columna 31/12/2024; no hay columna del año anterior ni notas. b2 y b3 son firmas digitales, no son datos financieros."
+}

@@ -1,20 +1,250 @@
 {
- "md": "Clubes/Brasil/Paysandu/dre-2025.md",
- "pdf": "Clubes/Brasil/Paysandu/dre-2025.pdf",
- "club": "paysandu",
- "year": 2025,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:53:49.121Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Brasil/Paysandu/dre-2025.md",
+  "pdf": "Clubes/Brasil/Paysandu/dre-2025.pdf",
+  "club": "paysandu",
+  "year": 2025,
+  "generatedAt": "2026-10-09T23:23:30.100Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "FUTEBOL PROFISSIONAL",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        46.737042
+      ],
+      "glosa": "Fútbol profesional"
+    },
+    {
+      "label": "FUTEBOL DE BASE",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Fútbol base"
+    },
+    {
+      "label": "ESPORTES OLIMPICOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.600196
+      ],
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "SOCIO TORCEDOR",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4.707208
+      ],
+      "glosa": "Socio abonado"
+    },
+    {
+      "label": "SOCIO PROPRIETARIO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.586628
+      ],
+      "glosa": "Socio propietario"
+    },
+    {
+      "label": "DOACOES",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.562082
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "ROYALTIES E FRANQUIAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.513687
+      ],
+      "glosa": "Regalías y franquicias"
+    },
+    {
+      "label": "PATROCINIO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        10.155971
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "REMISSAO DE DIVIDA",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Condonación de deuda"
+    },
+    {
+      "label": "TIMEMANIA",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.819318
+      ],
+      "glosa": "Timemania"
+    },
+    {
+      "label": "OUTRAS RECEITAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "ALUGUEL",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.389368
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "RECEITA COM GRATUIDADES",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por gratuidades"
+    },
+    {
+      "label": "(-) DEDUCOES DE RECEITAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.491022
+      ],
+      "glosa": "(-) Deducciones de ingresos"
+    },
+    {
+      "label": "CUSTOS COM PESSOAL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        30.443508
+      ],
+      "glosa": "Costos de personal"
+    },
+    {
+      "label": "CUSTOS GERAIS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Costos generales"
+    },
+    {
+      "label": "DESPESAS COM PESSOAL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        6.496625
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "GERAIS E ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        29.23796
+      ],
+      "glosa": "Generales y administrativos"
+    },
+    {
+      "label": "DESPESAS COM GRATUIDADE I",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos por gratuidades I"
+    },
+    {
+      "label": "DEPRECIACAO/AMORTIZACAO",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.991902
+      ],
+      "glosa": "Depreciación/Amortización"
+    },
+    {
+      "label": "PERDAS CONSTITUIDAS II",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.087793
+      ],
+      "glosa": "Pérdidas constituidas II"
+    },
+    {
+      "label": "PERDAS DE CAPITAL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.005696
+      ],
+      "glosa": "Pérdidas de capital"
+    },
+    {
+      "label": "PECLD",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Pérdidas estimadas por créditos de dudoso cobro"
+    },
+    {
+      "label": "DESPESAS TRIBUTARIAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.032934
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
 }

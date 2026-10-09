@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "mdSha1": "7750343fd14f49d87e51a44beec366d97e1922bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-09T22:42:47.373Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b20"
+  ],
+  "notas_gastos": [
+   "b21"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L257: (Valores expressos em reais)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; los importes coinciden con el estado en reais (L841 = L262)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; los importes coinciden con el estado en reais (L865 = L267)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 262,
+   "etiqueta": "Receita operacional líquida",
+   "actual": "157.933.413",
+   "anterior": "123.737.941",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 263,
+   "etiqueta": "Custo com Futebol Profissional",
+   "actual": "(98.846.512)",
+   "anterior": "(83.450.280)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 264,
+   "etiqueta": "Lucro bruto",
+   "actual": "59.086.901",
+   "anterior": "40.287.661",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 267,
+   "etiqueta": "Vendas",
+   "actual": "(107.449)",
+   "anterior": "(15.267)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 268,
+   "etiqueta": "Administrativas",
+   "actual": "(20.890.970)",
+   "anterior": "(14.607.362)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 269,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "(126.468)",
+   "anterior": "(153.237)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 270,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(753.664)",
+   "anterior": "(588.903)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 271,
+   "etiqueta": "Receitas financeiras",
+   "actual": "56.178",
+   "anterior": "842.585",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 272,
+   "etiqueta": "Outras Receitas/(Despesas)",
+   "actual": "91.488",
+   "anterior": "25.000",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 273,
+   "etiqueta": "",
+   "actual": "(21.730.885)",
+   "anterior": "(14.497.184)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 275,
+   "etiqueta": "Lucro Líquido antes dos impostos",
+   "actual": "37.356.016",
+   "anterior": "25.790.477",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 835,
+   "etiqueta": "Outras Receitas",
+   "actual": "42.021.965",
+   "anterior": "27.033.759",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 836,
+   "etiqueta": "Receita com Bilheteria",
+   "actual": "16.609.467",
+   "anterior": "13.248.101",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 837,
+   "etiqueta": "Receita com Publicidade/Propaganda",
+   "actual": "6.336.000",
+   "anterior": "5.500.100",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 838,
+   "etiqueta": "Receitas Cotas de TV",
+   "actual": "74.835.410",
+   "anterior": "87.560.833",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 839,
+   "etiqueta": "Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)",
+   "actual": "28.730.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 840,
+   "etiqueta": "(-) Deduções Receitas – b)",
+   "actual": "(10.599.429)",
+   "anterior": "(9.604.852)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b20",
+   "linea": 841,
+   "etiqueta": "Total de Receitas Operacionais",
+   "actual": "157.933.413",
+   "anterior": "123.737.941",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita operacional líquida"
+  },
+  {
+   "bloque": "b21",
+   "linea": 863,
+   "etiqueta": "Despesas Trabalhistas",
+   "actual": "(9.945.787)",
+   "anterior": "(2.238.022)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 864,
+   "etiqueta": "Despesas Gerais",
+   "actual": "(10.945.183)",
+   "anterior": "(12.369.340)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 865,
+   "etiqueta": "Despesas Gerais Com Vendas",
+   "actual": "(107.449)",
+   "anterior": "(15.267)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Vendas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 866,
+   "etiqueta": "Total de Despesas",
+   "actual": "(20.998.419)",
+   "anterior": "(14.622.629)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 262,
+  "actual": "157.933.413"
+ },
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se toma 'Lucro Líquido antes dos impostos' (L275, 37.356.016) como resultado del ejercicio por no figurar impuesto ni resultado neto en el bloque?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Lucro Líquido antes dos impostos",
+   "texto": "El bloque b3 termina en L275 antes de impuestos; el resultado neto puede estar en la página siguiente no transcripta.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Nota 31: Trabalhistas + Gerais = Administrativas (20.890.970) y Gerais Com Vendas = Vendas. L273 es subtotal sin etiqueta de (despesas) receitas operacionais netas. Columna 2022 reapresentada."
+}
