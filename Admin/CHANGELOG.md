@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 623 — To-do 188, peldaño B: la D que quedó en el financiero (2026-10-09)
+
+- `tools/verificar.mjs`, escalón "17) resta": la compuerta de C mira solo las filas de C; las filas de la D que la extracción dejó en el financiero van con el
+  signo de su encabezado en el .md (19) svalutazioni resta, 18) rivalutazioni suma), solo si su suma da exacto el total de D impreso. Nota nueva en la verificación.
+  Caso: Bologna 2023-24 (pág. 31 del visor, .md L1268-L1284): C = (857.900) exacto; D: 19) a) di partecipazioni 259.314 restando = (259.314), L1281.
+- Medido en la copia, 242 documentos, antes (con el peldaño A) y después: idéntico. Bologna 2023-24 y 2024-25 sin sus 2 ajustes del financiero: con el código
+  anterior van a la cola (financiero +12,3 y +19,4 M); con el nuevo, "ok" con la misma carga (−1,117 y −3,008 M).
+
 ## Versión 622 — Torino 2019 recargado sin su ajuste manual (2026-10-09)
 
 - Anulado el ajuste `fila` "17) d) oneri diversi (17, costo)" de Torino 2019 (el peldaño A del to-do 188 ya lo lee solo) y recargado con

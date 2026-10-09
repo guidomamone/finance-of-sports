@@ -726,7 +726,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // −2.788.248; resultado 19.682.867 − 2.788.248 − 6.496.317 = 10.398.302. No corre donde el 17) ya viene entre paréntesis y cierra
   // (Atalanta, Sassuolo, Monza, Lazio, Roma 2022). No mira la etiqueta del renglón ("oneri"), solo la numeración del formato; el nombre fijo del 17) en las filas vale solo si el .md no
   // trae el 17) (to-do 188, peldaño A, abajo).
-  let escalon17 = false; let fin17 = null; let nota17bis = null;
+  let escalon17 = false; let fin17 = null; let nota17bis = null; let nota17D = null;
   const finEst = estado.filter((f) => f.lado === 'financiero');
   // El encabezado del 17) se busca en el .md, no en las filas: la extracción a veces no lo trae (Cremonese 2025: "17) interessi e altri oneri
   // finanziari" sin importe, L189) o lo trae sin el número (Torino 2018, L568). Se reconoce por la numeración del formato o por su nombre fijo
@@ -764,15 +764,32 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // las dos en positivo; o el 17-bis metido dentro del total del 17): se prueban las combinaciones de signo de esas filas (hasta 4) y se
       // usa la ÚNICA que da exacto el total de C impreso. Casos: Napoli 2024 (L287 a) utili 30, L288 b) perdite 4.559, 17bis impreso (4.529));
       // Atalanta 2019 (L429 "17-bis" 923 dentro de "Totale 17)" 1.027.884). Sin combinación única, como antes.
-      if (bis && Math.abs(conSigno(prop) - totC.M) > tolC) {
+      // (to-do 188, peldaño B) la compuerta de C mira solo las filas de C: si la extracción dejó filas de la D en el financiero (Bologna 2023-24,
+      // L1279), quedan después del total de C y no entran en esta suma.
+      const sumaC = () => conSigno(prop.filter((f) => !(f.linea > totC.linea)));
+      if (bis && Math.abs(sumaC() - totC.M) > tolC) {
         const amb = prop.filter((f) => f.origen !== 'ajuste manual' && f.linea >= bis && f.linea < totC.linea && isFinite(f.M) && f.M);
         if (amb.length >= 1 && amb.length <= 4) {
-          const resto = conSigno(prop) - conSigno(amb); const sirven = [];
+          const resto = sumaC() - conSigno(amb); const sirven = [];
           for (let m = 0; m < 1 << amb.length; m++) { const v = amb.reduce((a, f, i) => a + ((m >> i) & 1 ? -1 : 1) * Math.abs(f.M), 0); if (Math.abs(resto + v - totC.M) <= tolC) sirven.push(m); }
           if (sirven.length === 1) { const m = sirven[0]; const ids = new Map(amb.map((f, i) => [f, (m >> i) & 1 ? -1 : 1])); prop = prop.map((f) => (ids.has(f) ? { ...f, M: ids.get(f) * Math.abs(f.M), origen: 'estado (escalón 17) resta, 17-bis por las sumas)' } : f)); nota17bis = (`escalón "17) resta": el signo del 17-bis lo eligen las sumas (${amb.map((f) => `L${f.linea} ${ids.get(f) < 0 ? 'resta' : 'suma'}`).join(', ')}): única combinación que da el total de C impreso`); }
         }
       }
-      if (Math.abs(conSigno(prop) - totC.M) <= tolC) {
+      // (to-do 188, peldaño B) La D que la extracción dejó en el FINANCIERO (Bologna 2023-24 y 2024-25: "19) svalutazioni, a) di partecipazioni
+      // 259.314" impreso en positivo y restado por posición: "Totale delle rettifiche (18-19) (259.314)"). Después del total de C, una fila que cuelga
+      // de un 19) resta y una de un 18) suma (el encabezado se busca en el .md, hacia arriba hasta el total de C). COMPUERTA: la suma de esas filas
+      // con ese signo da EXACTO el total de D impreso (el último subtotal del financiero antes de salir de la sección). Si no cierra, la D queda como estaba.
+      { const dFin = prop.filter((f) => f.origen !== 'ajuste manual' && f.linea > totC.linea && isFinite(f.M) && f.M);
+        const salida = estado.find((f) => f.linea > totC.linea && f.lado !== 'financiero')?.linea;
+        const dTot = dFin.length ? finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > totC.linea && (!salida || f.linea < salida)).sort((a, b) => a.linea - b.linea).pop() : null;
+        if (dTot) {
+          const sg = (f) => { for (let i = f.linea - 1; i > totC.linea; i--) { const t = lineasMd[i - 1] || ''; if (/(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/.test(t)) return 0; if (/(^|\|)\s*(\*\*)?\s*19\s*\)?\s+(svalutaz|write)|svalutazion|write-?downs?|impairment/i.test(t)) return -1; if (/(^|\|)\s*(\*\*)?\s*18\s*\)?\s+(rivalutaz|revaluat)|rivalutazion|revaluation/i.test(t)) return 1; } return 0; };
+          const ORD = 'estado (escalón 17) resta, D por posición)';
+          const conD = prop.map((f) => (dFin.includes(f) ? { ...f, M: sg(f) ? sg(f) * Math.abs(f.M) : f.M, origen: ORD } : f));
+          if (Math.abs(conSigno(conD.filter((f) => f.origen === ORD)) - dTot.M) <= Math.max(1e-6, 0.5 * [...dFin, dTot].reduce((a, f) => a + (f.u || 0), 0))) { prop = conD; nota17D = `escalón "17) resta": la D que quedó en el financiero va con el signo de su encabezado (${dFin.map((f) => `L${f.linea} ${sg(f) < 0 ? 'resta' : sg(f) > 0 ? 'suma' : 'como impresa'}`).join(', ')}): su suma da el total de D impreso (L${dTot.linea})`; }
+        } }
+      // Compuerta: toda la propuesta da el total de C (como siempre) o, si hay filas de D en el financiero, la parte de C lo da y el escalón cambió algo.
+      if (Math.abs(conSigno(prop) - totC.M) <= tolC || (Math.abs(sumaC() - totC.M) <= tolC && prop.some((f, i) => f.M !== fin5Todos[i].M))) {
         fin17 = prop;
         for (const n of [0, 1, 2, 3, 4, 5, 6]) {
           const e = evaluar(n, false, fin17); if (e.cierra && e.exacto) { E = e; escalon17 = true; escalonSubRep = false; break; }
@@ -890,6 +907,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (escalonSubRep) notas.push(...notasSubRep, 'escalón "subtotal repetido": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba');
   if (escalonD) fin.splice(0, fin.length, ...finD);
   if ((escalon17 || escalonD) && nota17bis) notas.push(nota17bis);
+  if (escalon17 && nota17D) notas.push(nota17D);
   if (escalon17) { fin.splice(0, fin.length, ...fin17); notas.push(`escalón "17) resta": el financiero con el 17) restando da el total de C impreso; cerró la lectura ${E.nivel}`); }
   else if (E.cierra && E.nivel >= 5) fin.splice(0, fin.length, ...(escalonAjFin ? fin5Todos : fin5));
   if (escalonAjFin) notas.push('escalón "ajustes del financiero sin reemplaza": ninguna lectura cerraba el resultado; cerró la lectura 5 con todos los ajustes del financiero'); // lectura 5: el financiero también con el signo C/D

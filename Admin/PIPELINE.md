@@ -238,6 +238,9 @@ Mitigaciones:
             del financiero; y si con el último subtotal la compuerta no cierra, se prueban los anteriores, del último al primero (caso Torino
             2019: etiquetas como texto arriba de una tabla sin nombres; el último subtotal es el 0 de la D). Medido en los 242 documentos con
             verificación: idéntico.
+            Versión 623 (to-do 188, peldaño B): si la extracción dejó filas de la D en el financiero, la compuerta de C mira solo las filas de C,
+            y en la D una fila que cuelga de un 19) resta y una de un 18) suma; compuerta: el total de D impreso, exacto (casos Bologna 2023-24
+            y 2024-25, "19) svalutazioni, a) di partecipazioni"). Medido en los 242: idéntico.
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la
