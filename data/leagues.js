@@ -243,15 +243,16 @@ const LEAGUES = {
 // ---------------------------------------------------------------------------
 
 // La división en palabras, para el subtítulo de la fila de liga del selector.
-// i18n (to-do 42): solo tier 1 y tier 2 existen hoy en LEAGUES (grep tier:[0-9] confirma), por eso
-// son 2 claves fijas y no una plantilla con placeholder — la ordinal en inglés (1st/2nd/3rd...) no
-// se puede derivar del número como en castellano ("Nª división" vale para cualquier N), así que el
-// fallback para un tier 3+ que todavía no existe se queda en castellano hasta que haga falta.
+// i18n (to-do 42): una clave fija por escalón y no una plantilla con placeholder, porque la ordinal en
+// inglés (1st/2nd/3rd/4th) no se deriva del número como en castellano ("Nª división" vale para cualquier
+// N). Hoy hay ligas de tier 1 a 4 (grep tier:[0-9]); un tier 5+ sin clave cae al castellano.
 function tierLabel(tier){
   if(tier == null) return '';
   var t = (window.I18N && window.I18N.t) ? window.I18N.t : function(k, es){ return es; };
   if(tier === 1) return t('league.tier1', '1ª división');
   if(tier === 2) return t('league.tier2', '2ª división');
+  if(tier === 3) return t('league.tier3', '3ª división');
+  if(tier === 4) return t('league.tier4', '4ª división');
   return tier + 'ª división';
 }
 

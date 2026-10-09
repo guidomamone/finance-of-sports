@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 618 — Ligas en inglés: países y divisiones 3 y 4 traducidos (2026-10-09)
+
+- Con el sitio en inglés, la grilla de Ligas mostraba 20 países en castellano ("Alemania", "Países Bajos") y "3ª división" / "4ª división": `data/lang/en.js` tenía
+  6 de los 26 países y `tierLabel()` (data/leagues.js) solo traducía los tiers 1 y 2. Agregadas las 20 claves `country.*` y `league.tier3` / `league.tier4`.
+- Una liga sin tier (los estaduales de Brasil) ya no deja un " · " colgado al final ("Brazil ·"): js/liga.js arma el subtítulo con las partes que existen.
+- ASSET_V 602, fuentes regeneradas. Visto en pantalla: toda la grilla en inglés.
+
 ## Versión 617 — Ligas de Italia: 15 ejercicios que estaban en null (2026-10-09)
 
 - Bajados con `tools/fetch-club-league-reference.mjs` (Wikipedia) los planteles de Serie A 1998-99, 1999-2000, 2000-01, 2006-07 y 2025-26 y de Serie B 2024-25.

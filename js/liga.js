@@ -624,7 +624,7 @@ window.LIGA_VIEW = (function(){
     b.appendChild(el('span', 'liga-frio-flag', co.flag || '🏆'));
     b.appendChild(el('span', 'liga-frio-n', lg.name));
     b.appendChild(el('span', 'liga-frio-m',
-      (co.key ? t(co.key, co.name) : '') + ' · ' + (window.tierLabel ? window.tierLabel(lg.tier) : '')));
+      [co.key ? t(co.key, co.name) : '', window.tierLabel ? window.tierLabel(lg.tier) : ''].filter(Boolean).join(' · ')));
     // MODO SIMULACIÓN (to-do 83): si hay club(es) esperando destino, esta
     // grilla ya no navega a la liga elegida, la usa como destino.
     b.addEventListener('click', function(){
