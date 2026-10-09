@@ -170,7 +170,8 @@ window.RANKINGS["br-serieB"] = {
         mix:[["Cuotas Sociales",1.627],["Comercial / Sponsors",0.464],["Estadio",1.83],["Televisión",17.969],["Premios por competencias",0.46],["Venta de Jugadores",2.311],["Otros ingresos",-0.81]] },
       { id:"criciuma-br", revenue:10.052, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstrativo-financeiro-2012",
-        mix:[["Cuotas Sociales",2.752],["Comercial / Sponsors",0.412],["Fútbol profesional (sin desglosar por la fuente)",6.697],["Otros ingresos",0.192]] },
+        mix:[["Cuotas Sociales",2.752],["Comercial / Sponsors",0.412],["Fútbol profesional (sin desglosar por la fuente)",6.697],["Otros ingresos",0.192]],
+        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2011: {

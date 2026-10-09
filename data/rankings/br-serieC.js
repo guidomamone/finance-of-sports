@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série C (BR) — 3 ejercicio(s) con ranking:
+// Brasileirão Série C (BR) — 4 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -36,6 +37,14 @@ window.RANKINGS["br-serieC"] = {
       { id:"novorizontino-br", revenue:1.623, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2021",
         mix:[["Comercial / Sponsors",0.052],["Estadio",0.007],["Televisión",1.364],["Venta de Jugadores",0.116],["Otros ingresos",0.084]] },
+    ],
+  },
+  2020: {
+    leagueSize: null,
+    clubs: [
+      { id:"criciuma-br", revenue:2.661, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-balanco-2020",
+        mix:[["Cuotas Sociales",0.347],["Comercial / Sponsors",0.096],["Estadio",0.017],["Televisión",0.46],["Venta de Jugadores",1.519],["Otros ingresos",0.221]] },
     ],
   },
 };

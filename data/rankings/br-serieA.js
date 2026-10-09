@@ -195,7 +195,8 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.785],["Estadio",3.593],["Televisión",13.083],["Premios por competencias",1.836],["Venta de Jugadores",0.108],["Otros ingresos",0.888]] },
       { id:"criciuma-br", revenue:19.209, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstracoes-financeiras-2013",
-        mix:[["Cuotas Sociales",4.415],["Comercial / Sponsors",0.464],["Fútbol profesional (sin desglosar por la fuente)",13.355],["Otros ingresos",0.975]] },
+        mix:[["Cuotas Sociales",4.415],["Comercial / Sponsors",0.464],["Fútbol profesional (sin desglosar por la fuente)",13.355],["Otros ingresos",0.975]],
+        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2010: {
