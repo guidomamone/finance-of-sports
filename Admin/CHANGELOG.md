@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 615 — Lazio 2000-01: ajustes manuales para que una corrida nueva dé lo publicado (2026-10-09)
+
+- Lo publicado estaba bien. Los 334.514 millones de liras de ingresos son la sección A (245.757, L1166) más los proventi straordinari de
+  la sección E (plusvalenze 83.890 y altri 4.867, L1234-L1235), igual que en los otros años viejos de Lazio. Los 245.757 del `.verificacion.json`
+  eran solo la sección A.
+- Pero una corrida nueva (`verificar.mjs` + `cargar.mjs --desde-verificacion`) frenaba: abría las notas de "1 Ricavi", "a) Salari e stipendi" y
+  "c) Oneri su incassi" (sus filas no están en categorias.json), y el escalón "sección D" mandaba la sección E al financiero. Sin cambiar el
+  script (decisión de Guido: es un documento viejo), van 7 ajustes `fila`: 3 renglones del estado en lugar de su nota y 4 filas de la E
+  a ingresos y gastos. Las 3 alarmas del año vecino (columna 2000 solo sección A contra el 1999-00 con la E) se aceptaron en la cola con su nota.
+- Medido: `cargar.mjs --desde-verificacion --reemplazar` da las mismas 33 filas, las mismas categorías, financiero, impuesto, extraRows y totales
+  que lo publicado. `data/` no cambió. El mismo escalón también deja la E en el financiero en AC Milan 2008-2013 y Chievo 2014-2016: allí son
+  ventas de bienes chicas (la mayor, 7,7 M en Milan 2012), con el resultado igual. No se tocó.
+
 ## Versión 614 — Roma 2005, Roma 2006 y Sassuolo 2018 cargados: el fútbol de Italia queda cerrado; ajuste `estado` (2026-10-09)
 
 - AS Roma 2005 (consolidado, b107-b112, con 4 filas fuera de tabla por ajuste) y 2006 cargados; gestión de Roma completa hasta 2010 (Franco Sensi hasta el 17/8/2008, Rosella Sensi desde ahí). Cola

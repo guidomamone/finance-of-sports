@@ -298,6 +298,5 @@ ni en el comentario de ningún archivo de código.
 
 191. LOS DOS HALLAZGOS DE HIGIENE (verificado 2026-10-09 por un Sonnet). (a) Una respuesta vieja de la cola puede tapar una alarma real: Sampdoria 2018 sin sus ajustes queda en "ok" con "resultado del ejercicio"
     fallando. (b) Hay 8 ajustes `fila` redundantes (el script ya lee esos documentos solo): Roma 2021 (2), Juve 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia por acción, 1 cada uno), Lazio 2015-16 (1) y
-    Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país. Y sin investigar: Lazio 2000-01
-    (liras) publica ingresos 334.514 contra 245.757 en su `.verificacion.json`, con el resultado igual (to-do 180).
+    Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país.
 
