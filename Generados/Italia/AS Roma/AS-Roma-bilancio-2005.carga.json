@@ -1,10 +1,18 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
- "generado": "2026-10-09T17:06:08.892Z",
+ "generado": "2026-10-09T17:20:54.106Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"- vendita altri prodotti editoriali\" -> sponsorship_commercial 0.75; \"Diritti UMTS e prestazioni accessorie\" -> broadcasting 0.55; \"Diritti GSM e GPRS\" -> broadcasting 0.55; \"Addebiti per biglietti trasferte\" -> matchday_competition 0.7; \"Oneri pluriennali ex art. 18 bis L.91/81\" -> other_amortisation 0.75"
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "asroma-it ya tiene el ejercicio 2005 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['asroma-it-bilancio-2005'] ya existe"
   }
  ],
  "avisos": [
@@ -93,9 +101,9 @@
     "amountNative": 0.06,
     "disclosureLevel": "aggregated",
     "_pag": 164,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- vendite negozio Piazza Colonna",
@@ -433,9 +441,9 @@
     "amountNative": 3.5,
     "disclosureLevel": "aggregated",
     "_pag": 166,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diritti GSM e GPRS",
@@ -443,9 +451,9 @@
     "amountNative": 1.139,
     "disclosureLevel": "aggregated",
     "_pag": 166,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utilizzo fondi rischi",
@@ -513,9 +521,9 @@
     "amountNative": 0.086,
     "disclosureLevel": "aggregated",
     "_pag": 166,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Multe a tesserati",
@@ -955,9 +963,9 @@
     "amountNative": -13.365,
     "disclosureLevel": "aggregated",
     "_pag": 169,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Altre immobilizzazioni immateriali",
@@ -1075,9 +1083,9 @@
     "amountNative": -0.063,
     "disclosureLevel": "aggregated",
     "_pag": 137,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "c) Sopravvenienze passive",
@@ -1257,6 +1265,16 @@
    "evidencia": ".md L4448",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "estado",
+   "valor": "b107,b108,b109,b110,b111,b112",
+   "linea": null,
+   "motivo": "Claude 2026-10-09 (Guido: Roma 2005, que una corrida del script no lo deshaga): el estado es el consolidado b107-b112 (pág. 136-137); la IA eligió b85, el conto economico de la controlada Roma International Football Service, en euros y no en miles (4.610.527)",
+   "evidencia": ".md L4332-L4469; índice L77-L78",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
  "seleccion": {
@@ -1378,11 +1396,11 @@
    "origen": "verificacion (nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\")",
    "signoFijo": 0.06,
    "cat": "sponsorship_commercial",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): ventas de productos editoriales del club: sponsorship_commercial (como el merchandising).",
    "destino": "revenue",
    "amountNative": 0.06
   },
@@ -1889,11 +1907,11 @@
    "origen": "verificacion (nota que desglosa \"e) Atri proventi\")",
    "signoFijo": 3.5,
    "cat": "broadcasting",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): diritti UMTS y GSM/GPRS son contenidos para telefonía móvil dentro de 'Diritti televisivi e diritti d'immagine' (L4350): broadcasting.",
    "destino": "revenue",
    "amountNative": 3.5
   },
@@ -1905,11 +1923,11 @@
    "origen": "verificacion (nota que desglosa \"e) Atri proventi\")",
    "signoFijo": 1.139,
    "cat": "broadcasting",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): idem diritti UMTS: contenidos de telefonía móvil, dentro de los derechos televisivos y de imagen.",
    "destino": "revenue",
    "amountNative": 1.139
   },
@@ -2011,11 +2029,11 @@
    "origen": "verificacion (nota que desglosa \"e) Atri proventi\")",
    "signoFijo": 0.086,
    "cat": "matchday_competition",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): entradas de partidos de visitante: matchday_competition.",
    "destino": "revenue",
    "amountNative": 0.086
   },
@@ -2673,11 +2691,11 @@
    "origen": "verificacion (nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\")",
    "signoFijo": 13.365,
    "cat": "other_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): oneri pluriennali ex art. 18-bis L.91/81 (diferimiento de la baja de los derechos de jugadores): other_amortisation, igual que los de DL 282 de Lazio 2005.",
    "destino": "expense",
    "amountNative": -13.365
   },
@@ -2854,11 +2872,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.063,
    "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-09 (Guido: dale, to-do 179): imposte di esercizi precedenti dentro de los proventi e oneri straordinari: exceptional_items.",
    "destino": "expense",
    "amountNative": -0.063
   },
@@ -3080,8 +3098,8 @@
  },
  "liga": {
   "valor": "it-seriea",
-  "fuente": "roster cacheado de \"2004–05 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -3121,13 +3139,13 @@
   },
   "liga": {
    "valor": "it-seriea",
-   "fuente": "roster cacheado de \"2004–05 Serie A\" (tools/club-league-reference/it.json), coincidencia única por palabras \"Roma\" = \"AS Roma\"",
+   "fuente": "data/club-leagues/it.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 1,
+  "motivos": 3,
   "lineasIngreso": 56,
   "lineasGasto": 55,
   "metaFilas": 9,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
- "generado": "2026-10-09T17:04:20.549Z",
+ "generado": "2026-10-09T17:19:22.560Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2005,
@@ -61,6 +61,16 @@
    "reemplaza": null,
    "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)",
    "evidencia": ".md L4448",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "estado",
+   "valor": "b107,b108,b109,b110,b111,b112",
+   "linea": null,
+   "motivo": "Claude 2026-10-09 (Guido: Roma 2005, que una corrida del script no lo deshaga): el estado es el consolidado b107-b112 (pág. 136-137); la IA eligió b85, el conto economico de la controlada Roma International Football Service, en euros y no en miles (4.610.527)",
+   "evidencia": ".md L4332-L4469; índice L77-L78",
    "autor": "Guido",
    "fecha": "2026-10-09"
   }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.pdf",
   "club": "sassuolo-it",
   "year": 2018,
-  "generatedAt": "2026-10-09T17:04:20.631Z",
+  "generatedAt": "2026-10-09T17:19:22.642Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         19.303
       ],
-      "glosa": "Ingresos por patrocinio"
+      "glosa": "Ingresos por patrocinios"
     },
     {
       "label": "Proventi pubblicitari",
@@ -64,7 +64,7 @@
       "values": [
         30.329
       ],
-      "glosa": "Plusvalías por enajenación de derechos federativos de futbolistas"
+      "glosa": "Plusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Proventi da cessioni temporanee calciatori",
@@ -74,7 +74,7 @@
       "values": [
         3.389
       ],
-      "glosa": "Ingresos por cesiones temporales de futbolistas"
+      "glosa": "Ingresos por cesión temporal de futbolistas"
     },
     {
       "label": "Proventi Lega non audiovisivi",
@@ -84,7 +84,7 @@
       "values": [
         1.47
       ],
-      "glosa": "Ingresos no audiovisuales de la Liga"
+      "glosa": "Ingresos de la Liga no audiovisuales"
     },
     {
       "label": "Proventi Uefa Europa League",
@@ -94,7 +94,7 @@
       "values": [
         0.078
       ],
-      "glosa": "Ingresos de la UEFA Europa League"
+      "glosa": "Ingresos por la UEFA Europa League"
     },
     {
       "label": "Proventi diversi",
@@ -114,7 +114,7 @@
       "values": [
         1.38268
       ],
-      "glosa": "6) Por materias primas, auxiliares, de consumo y mercaderías"
+      "glosa": "6) Gastos en materias primas, auxiliares, de consumo y mercaderías"
     },
     {
       "label": "Costi per tesserati",
@@ -144,7 +144,7 @@
       "values": [
         0.175
       ],
-      "glosa": "Costes específicos técnicos"
+      "glosa": "Gastos técnicos específicos"
     },
     {
       "label": "Compensi per Agenti e intermediari",
@@ -164,7 +164,7 @@
       "values": [
         0.65
       ],
-      "glosa": "Gastos de manutención, alojamiento y desplazamientos en partidos"
+      "glosa": "Gastos de manutención, alojamiento y desplazamientos para partidos"
     },
     {
       "label": "Assicurative e previdenziali",
@@ -184,7 +184,7 @@
       "values": [
         3.768
       ],
-      "glosa": "Administrativos y generales"
+      "glosa": "Gastos administrativos y generales"
     },
     {
       "label": "Altri",
@@ -204,7 +204,7 @@
       "values": [
         2.289484
       ],
-      "glosa": "8) Por uso de bienes de terceros"
+      "glosa": "8) Arrendamientos y cánones"
     },
     {
       "label": "a) Salari e stipendi",
@@ -234,7 +234,7 @@
       "values": [
         0.556909
       ],
-      "glosa": "c) Indemnización por fin de contrato laboral"
+      "glosa": "c) Indemnizaciones por cese"
     },
     {
       "label": "e) altri costi",
@@ -244,7 +244,7 @@
       "values": [
         0
       ],
-      "glosa": "e) Otros costes"
+      "glosa": "e) Otros gastos de personal"
     },
     {
       "label": "a) Ammortamento delle immobilizzazioni immateriali",
@@ -274,7 +274,7 @@
       "values": [
         0.648565
       ],
-      "glosa": "c) Otras correcciones valorativas del inmovilizado"
+      "glosa": "c) Otros deterioros del inmovilizado"
     },
     {
       "label": "d) Svalutazioni crediti dell'attivo",
@@ -284,7 +284,7 @@
       "values": [
         0.195052
       ],
-      "glosa": "d) Deterioro de valor de créditos del activo"
+      "glosa": "d) Pérdidas por deterioro de créditos del activo"
     },
     {
       "label": "Tasse iscrizioni gare",
@@ -314,7 +314,7 @@
       "values": [
         0.004
       ],
-      "glosa": "Porcentaje sobre recaudación en partidos a equipos visitantes"
+      "glosa": "Porcentaje sobre taquilla de partidos a equipos visitantes"
     },
     {
       "label": "Costi per acquisizione temporanea prestazioni calciatori",
@@ -324,7 +324,7 @@
       "values": [
         1.124
       ],
-      "glosa": "Costes por cesión temporal de derechos de futbolistas"
+      "glosa": "Gastos por adquisición temporal de futbolistas"
     },
     {
       "label": "Minusvalenze cessione diritti pluriennali prestazioni calciatori",
@@ -334,7 +334,7 @@
       "values": [
         0.009
       ],
-      "glosa": "Minusvalías por enajenación de derechos federativos de futbolistas"
+      "glosa": "Minusvalías por traspaso de derechos federativos de futbolistas"
     },
     {
       "label": "Premi valorizzazione",
@@ -374,7 +374,7 @@
       "values": [
         0.256
       ],
-      "glosa": "Pérdidas extraordinarias"
+      "glosa": "Gastos extraordinarios"
     },
     {
       "label": "Spese, ammende e multe gare",
@@ -384,7 +384,7 @@
       "values": [
         0.013
       ],
-      "glosa": "Gastos, sanciones y multas de partidos"
+      "glosa": "Gastos, multas y sanciones de partidos"
     },
     {
       "label": "Oneri tributari indiretti",
@@ -394,7 +394,7 @@
       "values": [
         0.078
       ],
-      "glosa": "Cargas tributarias indirectas"
+      "glosa": "Impuestos indirectos"
     },
     {
       "label": "Altri",
