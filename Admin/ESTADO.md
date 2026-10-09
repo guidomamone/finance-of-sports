@@ -62,8 +62,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   "altri"), la etapa 4 que frenaba en silencio, el resultado impreso en una tabla de una fila pegada al estado, la gestión de jugadores neta de Roma y las secciones D y E juntas de Milan y Chievo.
   Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166, 179, 187, 188). Atalanta y Parma cambiaron la fecha de cierre y la etiqueta de algunos años se ve mal (to-do 177,
   decisión de Guido: es puntual, no se toca); un ejercicio de menos de 12 meses no se carga; Lazio 1998-99 a 2000-01 están en liras (ITL, con su tipo de cambio de cierre y la paridad fija a euro
-  para mostrarlos en EUR) (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`). Falta 1 documento de fútbol (Catania 2011, un artículo de prensa: solo transcripción; to-do 179): qué frena a cada uno, to-do 179. Sin transcribir: rugby
-  FIR/Zebre, tenis FITP y entes, y Juve Stabia semestral y Catania (lote 41, solo transcripción); ver `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
+  para mostrarlos en EUR) (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`). No falta ningún documento de fútbol (Catania 2011, un artículo de prensa, y el Juve Stabia semestral están en `Admin/documentos-descartados.txt`): qué frena a cada uno, to-do 179. Sin transcribir: rugby
+  FIR/Zebre, tenis FITP y entes; ver `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
   cargados, 4.550 sin `.md`, 663 con la transcripción validada esperando localizar, y el resto en la validación de la etapa 2.
 

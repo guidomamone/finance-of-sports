@@ -230,8 +230,7 @@ ni en el comentario de ningún archivo de código.
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
 
-179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). Solo queda
-    Catania 2011 (un artículo de prensa) y el Juve Stabia semestral: transcripción, sin cargar (punto 184). Quedaron resueltas: las gestiones de Roma (Sensi, Cappelli, DiBenedetto, Pallotta, con fechas de prensa y de la relazione) y de Inter (Thohir) en `data/gestiones/it.js`; Juve Stabia
+179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). No queda nada de fútbol por cargar: Catania 2011 (un artículo de prensa, transcripto) y el Juve Stabia semestral (6 meses) están en `Admin/documentos-descartados.txt`. Quedaron resueltas: las gestiones de Roma (Sensi, Cappelli, DiBenedetto, Pallotta, con fechas de prensa y de la relazione) y de Inter (Thohir) en `data/gestiones/it.js`; Juve Stabia
     (Langella hasta junio de 2026, Guerri desde ahí); las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada); y el ajuste `filas-a-mano` (Torino 2020 y 2025, Inter 2017-18, Lazio 2021 y Salernitana 2022: `localizar` y `extraer` no los pisan ni con `--rehacer`; para rehacerlos hay que agregar el ajuste con `--valor no`).
 
 180. LIRAS (ITL) Y EL RESTO DE LAS MONEDAS LEGADO. Hecho (Versión 607) para Lazio 1998-99, 1999-00 y 2000-01: ajuste manual `moneda` (tools/ajustes.mjs), ITL en CURRENCY_META con
@@ -242,10 +241,6 @@ ni en el comentario de ningún archivo de código.
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
-
-184. LOTE 41: JUVE STABIA SEMESTRAL Y CATANIA 2011. Solo transcripción, no se cargan (la semestral es de 6 meses y la regla es que un ejercicio de menos de 12 meses no entra; Catania es un
-    artículo de prensa). `Admin/lote-41.txt`; lo corre Guido: `caffeinate -i node tools/pipeline.mjs --lista Admin/lote-41.txt --max-paginas 0 --limit 0 --ejecutar`. Después pasarlos a
-    Admin/documentos-descartados.txt con esa aclaración, así ningún lote los toma.
 
 185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
 
