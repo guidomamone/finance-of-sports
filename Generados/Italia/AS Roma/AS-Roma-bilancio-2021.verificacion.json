@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
- "generado": "2026-10-08T23:17:08.414Z",
+ "generado": "2026-10-09T20:06:08.247Z",
  "estado": "ok",
  "clubId": "asroma-it",
  "year": 2021,
@@ -11,34 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
-   "campo": "fila",
-   "valor": "36.125",
-   "linea": 2148,
-   "etiqueta": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
-   "lado": "ingreso",
-   "reemplaza": null,
-   "motivo": "gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado",
-   "evidencia": "pág. 74 del visor (impreso 72), .md L2148-L2150",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  },
-  {
-   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.pdf",
-   "campo": "fila",
-   "valor": "(37.323)",
-   "linea": 2149,
-   "etiqueta": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
-   "lado": "gasto",
-   "reemplaza": null,
-   "motivo": "gestión de jugadores en bruto (gastos), ver el anterior",
-   "evidencia": "pág. 74 del visor (impreso 72), .md L2148-L2150",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -62,6 +35,11 @@
    "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 173.811; el sitio tiene 173.811"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": null,
    "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
@@ -70,17 +48,10 @@
    "nombre": "documento del año 2020",
    "ok": null,
    "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "el desglose de \"Altri oneri\" (5 filas) no suma la fila: quedó la fila",
-  "ajuste manual: fila \"Ricavi da gestione dei diritti pluriennali prestazioni calciatori\" (ingreso) 36.125 (2026-10-08, gestión de jugadores en bruto (ingresos y gastos por separado), como AS Roma 2018/2019/2022/2025; el estado la imprime como renglones sin lado)",
-  "ajuste manual: fila \"Oneri da gestione dei diritti pluriennali prestazioni calciatori\" (gasto) (37.323) (2026-10-08, gestión de jugadores en bruto (gastos), ver el anterior)",
   "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L2148, L2149 (entre el total de costos L2147 y \"Perdita prima delle imposte\" L2154); las 2 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: El cuadro por segmento (b105, b106) tiene los mismos renglones que el estado consolidado b35; no parece abrir renglones nuevos.",

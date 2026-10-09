@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf",
  "md": "Clubes/Italia/Napoli/Napoli-bilancio-2022.md",
- "generado": "2026-10-08T23:17:14.167Z",
+ "generado": "2026-10-09T20:06:07.261Z",
  "estado": "ok",
  "clubId": "napoli-it",
  "year": 2022,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Napoli/Napoli-bilancio-2022.pdf",
-   "campo": "fila",
-   "valor": "(6.136)",
-   "linea": 294,
-   "etiqueta": "b) perdite su cambi",
-   "lado": "financiero",
-   "reemplaza": "b) perdite su cambi",
-   "motivo": "perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155)",
-   "evidencia": "pág. 7 del visor, .md L293-296",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -75,7 +61,7 @@
   "la nota de \"c) altre svalutazioni delle immobilizzazioni\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"d) svalut.dei crediti compresi nel circolante\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"11) Variaz delle riman. mat.prime, sussid., di consumo e merci\" no suma el renglón (0 contra 0.439846, sumando sus renglones): quedó el renglón del estado",
-  "ajuste manual: fila \"b) perdite su cambi\" (financiero) (6.136), en lugar de \"b) perdite su cambi\" (2026-10-08, perdite su cambi impresas en positivo; Totale 17bis 6.743 = 12.879 - 6.136 (patrón to-do 155))",
+  "escalón \"17) resta\": el signo del 17-bis lo eligen las sumas (L293 suma, L294 resta): única combinación que da el total de C impreso",
   "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 4",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer que no afecta la carga: Es detalle por jugador de una fila ya desglosada en b63 y la tabla está cortada (solo se ve L1915-L1916).",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.md",
- "generado": "2026-10-08T23:17:12.202Z",
+ "generado": "2026-10-09T20:06:05.078Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2019,
@@ -12,19 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf",
-   "campo": "fila",
-   "valor": "0",
-   "linea": 1160,
-   "etiqueta": "(sale) ganancia por acción",
-   "lado": "gasto",
-   "reemplaza": "Basic and diluted earning/(loss) per share",
-   "motivo": "Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
   {
    "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.pdf",
    "campo": "caja",
@@ -65,19 +52,19 @@
   },
   {
    "nombre": "documento del año 2020",
-   "ok": true,
-   "detalle": "ingresos de 2019: 621.456394 en este documento y 621.456394 en Juventus-annual-financial-report-2019-20.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2018",
-   "ok": true,
-   "detalle": "ingresos de 2018: 504.66989 en Juventus-annual-financial-report-2017-18.pdf y 504.66989 en este documento (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   }
  ],
  "notas": [
   "el desglose de \"Other revenues\" (9 filas) no suma la fila: quedó la fila",
   "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
-  "ajuste manual: sale la fila \"Basic and diluted earning/(loss) per share\" (2026-10-03, Guido 2026-10-03: indicador por acción, no un importe del estado; '(0,040)' se leía como 40 €)",
+  "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L1155 (entre el total de costos L1148 y \"Income/(loss) before taxes\" L1156); las 1 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de extraer que no afecta la carga: El estado no imprime un total de gastos que incluya amortizaciones y provisiones."
  ],

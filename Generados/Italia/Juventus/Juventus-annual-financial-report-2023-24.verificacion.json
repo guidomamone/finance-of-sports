@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md",
- "generado": "2026-10-08T23:17:12.455Z",
+ "generado": "2026-10-09T20:06:06.726Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2024,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.pdf",
-   "campo": "fila",
-   "valor": "0",
-   "linea": 4412,
-   "etiqueta": "(sale) ganancia por acción",
-   "lado": "gasto",
-   "reemplaza": "BASIC AND DILUTED EARNINGS PER SHARE*",
-   "motivo": "Guido 2026-10-03: indicador por acción, no un importe",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -55,18 +41,18 @@
   },
   {
    "nombre": "documento del año 2025",
-   "ok": true,
-   "detalle": "ingresos de 2024: 390.54205 en este documento y 391.344276 en Juventus-annual-financial-report-2024-25.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2023",
-   "ok": true,
-   "detalle": "ingresos de 2023: 503.680824 en Juventus-annual-financial-report-2022-23.pdf y 503.680823 en este documento (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   }
  ],
  "notas": [
   "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
-  "ajuste manual: sale la fila \"BASIC AND DILUTED EARNINGS PER SHARE*\" (2026-10-03, Guido 2026-10-03: indicador por acción, no un importe)",
+  "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L4407 (entre el total de costos L4400 y \"Income (Loss) before taxes\" L4408); las 1 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en Juventus-annual-financial-report-2022-23.pdf",
   "duda de extraer que no afecta la carga: Las etiquetas de L6107 y L6118 están cortadas en la transcripción, pero los importes cuadran con el total 81,488.",

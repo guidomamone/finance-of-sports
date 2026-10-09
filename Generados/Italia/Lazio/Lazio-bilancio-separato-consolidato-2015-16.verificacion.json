@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md",
- "generado": "2026-10-08T23:29:14.092Z",
+ "generado": "2026-10-09T20:06:08.734Z",
  "estado": "ok",
  "clubId": "lazio-it",
  "year": 2016,
@@ -11,22 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf",
-   "campo": "fila",
-   "valor": "(1.866.421)",
-   "linea": 3579,
-   "etiqueta": "Oneri finanziari netti e differenze cambio",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 3579,
-   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)",
-   "evidencia": ".md L3579",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -66,7 +51,6 @@
   }
  ],
  "notas": [
-  "ajuste manual: fila \"Oneri finanziari netti e differenze cambio\" (financiero) (1.866.421), en lugar de la fila de L3579 (2026-10-08, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421))",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: El cuadro por segmento probablemente solo da totales por sector, que no abren renglones del estado.",
   "duda de extraer que no afecta la carga: L5378 es un detalle de una fila ya cargada en b180 (L5367), con columnas distintas.",

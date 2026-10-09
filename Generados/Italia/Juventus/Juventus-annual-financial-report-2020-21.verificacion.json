@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.md",
- "generado": "2026-10-08T23:17:12.281Z",
+ "generado": "2026-10-09T20:06:05.592Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2021,
@@ -12,19 +12,6 @@
   "de": null
  },
  "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf",
-   "campo": "fila",
-   "valor": "0",
-   "linea": 4434,
-   "etiqueta": "(sale) pérdida por acción",
-   "lado": "gasto",
-   "reemplaza": "Basic and diluted loss per share",
-   "motivo": "Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  },
   {
    "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.pdf",
    "campo": "caja",
@@ -65,18 +52,18 @@
   },
   {
    "nombre": "documento del año 2022",
-   "ok": true,
-   "detalle": "ingresos de 2021: 479.00354 en este documento y 479.00354 en Juventus-annual-financial-report-2021-22.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   },
   {
    "nombre": "documento del año 2020",
-   "ok": true,
-   "detalle": "ingresos de 2020: 573.424091 en Juventus-annual-financial-report-2019-20.pdf y 573.424091 en este documento (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no"
   }
  ],
  "notas": [
   "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
-  "ajuste manual: sale la fila \"Basic and diluted loss per share\" (2026-10-03, Guido 2026-10-03: indicador por acción, no un importe; '(0,157)' se leía como 157 €)",
+  "escalón \"gestión de jugadores neta\": de las filas sin lado, solo las de L4429 (entre el total de costos L4422 y \"Income (loss) before taxes\" L4430); las 1 de abajo salen; cerró la lectura 6",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Las notas 33 y 34 del individual (pág. 87) no figuran en el índice; solo hay texto mencionando e-commerce antes de b124.",
   "duda de extraer que no afecta la carga: El estado solo tiene Current taxes y Deferred and prepaid taxes; la suma (632)+5 cuadra con 628,027 del estado, pero en 2019/2020 los impuestos de años anteriores (685) cuadran con el diferido (53,210) solo combinados.",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf",
  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md",
- "generado": "2026-10-08T23:17:12.399Z",
+ "generado": "2026-10-09T20:06:06.172Z",
  "estado": "ok",
  "clubId": "juventus-it",
  "year": 2023,
@@ -11,21 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf",
-   "campo": "fila",
-   "valor": "0",
-   "linea": 4894,
-   "etiqueta": "(sale) pérdida por acción",
-   "lado": "gasto",
-   "reemplaza": "Basic and diluted loss for the year per share",
-   "motivo": "Guido 2026-10-03: indicador por acción, no un importe",
-   "evidencia": null,
-   "autor": "Guido",
-   "fecha": "2026-10-03"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -66,7 +52,6 @@
  ],
  "notas": [
   "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
-  "ajuste manual: sale la fila \"Basic and diluted loss for the year per share\" (2026-10-03, Guido 2026-10-03: indicador por acción, no un importe)",
   "la lectura base no cerraba; cerró con la lectura 6"
  ],
  "reintentar": null,
