@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 629 — TODO: 179 y 180(a) cerrados (2026-10-09)
+
+- 179 ("Italia: el fútbol está cerrado") era un resumen de estado, no una tarea: ya está en `Admin/ESTADO.md`.
+- 180(a) (otras monedas anteriores al euro) cerrado hasta que aparezca un caso: el procedimiento pasó a `Admin/CONVENCIONES-DATOS.md`.
+
 ## Versión 628 — To-do 173: escalón 2b de las dudas y el to-do resuelto (2026-10-09)
 
 - Medido en una copia: sin las 464 respuestas de Guido a dudas, `verificar` sobre los 242 documentos manda 232 dudas a la cola. Cruzadas con lo que Guido

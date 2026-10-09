@@ -137,6 +137,11 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   sin que nadie escriba una línea. Lo vigila `node tools/audit.js`: `nota-publica-con-interno` (P1)
   si un `publicNote` menciona un nombre propio, una ruta o un detalle de transcripción, y
   `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML.
+- UN EJERCICIO ANTERIOR AL EURO SE CARGA EN SU MONEDA LEGADO (Versión 607, decisión de Guido con Lazio 1998-99 a 2000-01 en liras). Para
+  sumar otra moneda (DEM, ESP, FRF, NLG, PTE...): la entrada en CURRENCY_META con `euroFijo` (unidades por 1 EUR, paridad irrevocable del
+  31/12/1998), su cotización de cierre en FX_CLOSE (`XXX@AAAA-MM-DD`, en data/currency-map.js) y un ajuste manual `moneda` en cada documento
+  (tools/ajustes.mjs). `toDisplayValue` (js/finanzas-calc.js) ya la muestra en EUR por la paridad fija. Los deflactores llegan hasta 1995
+  (tools/fetch-fx-reference.mjs --deflactores): un ejercicio anterior necesita bajar ese corte.
 - PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido:
   "si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si
   salieron de internet o del club, ¿puedo hacerlo sin drama?", la respuesta era que no). Cada
