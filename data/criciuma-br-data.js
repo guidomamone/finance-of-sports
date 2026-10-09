@@ -54,6 +54,17 @@ const criciumabrRevenueLinesByYear = {
     { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.292131, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.95
     { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.155927, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.99
   ],
+  // 2019: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/balanco-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Criciuma/balanco-2019.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2019: [
+    { rawLabel:'Receita com transmissão', normalizedCategory:'broadcasting', amountNative:10.799073, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Receita com sócios', normalizedCategory:'member_dues', amountNative:3.003071, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.9
+    { rawLabel:'Receita com patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:1.264179, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Receita de subvenções', normalizedCategory:'other_income', amountNative:1.417122, disclosureLevel:'aggregated' }, // pág. 16, precedente
+    { rawLabel:'Receita com negociação de atletas', normalizedCategory:'player_sales', amountNative:7.58, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+    { rawLabel:'Receita com jogos', normalizedCategory:'matchday_competition', amountNative:0.73129, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
+    { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:1.344944, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
+  ],
 };
 const criciumabrExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-09)
@@ -77,6 +88,13 @@ const criciumabrExpenseLinesByYear = {
     { rawLabel:'Departamento jurídico', normalizedCategory:'admin_general_expense', amountNative:-1.271965, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
     { rawLabel:'Departamento loja Tigre Maníacos', normalizedCategory:'admin_general_expense', amountNative:-0.25209, disclosureLevel:'aggregated' }, // pág. 6, precedente
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.420794, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+  ],
+  2019: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Departamento Futebol Profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-16.888461, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Departamento Futebol de Base', normalizedCategory:'youth_other_sports_expense', amountNative:-1.999967, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Departamento Administrativo', normalizedCategory:'admin_general_expense', amountNative:-1.519791, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Departamento de Patrimônio', normalizedCategory:'admin_general_expense', amountNative:-3.465363, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.98
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.825209, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
   ],
 };
 const criciumabrFiscalYearMeta = {
@@ -119,6 +137,25 @@ const criciumabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:44.999887, officialTotalExpenses:37.354661, officialPAT:6.288354,
   },
+  // 2019: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2019-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2019-12-31
+  2019: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2019-12-31',
+    sourceId:'criciuma-br-balanco-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.393215, tax:0,
+    extraRows: [
+      {label:'Despesas Financeiras', value:-1.421762},
+      {label:'Receitas Financeiras', value:0.028547},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Departamento Futebol Profissional', lado:'expense', importe:16.888461, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:26.139679, officialTotalExpenses:24.698791, officialPAT:0.047673,
+  },
 };
 const criciumabrPresupuestoOverlayByYear = {};
 
@@ -148,6 +185,12 @@ Object.assign(sources, {
     title:'Criciúma Esporte Clube — demonstracoes-financeiras-2013 (ejercicio 2013)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'criciuma-br-balanco-2019': {
+    id:'criciuma-br-balanco-2019', clubId:'criciuma-br',
+    title:'Criciúma Esporte Clube — balanco-2019 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Brasil/Criciuma/balanco-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

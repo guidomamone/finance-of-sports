@@ -10,7 +10,7 @@
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -141,6 +141,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"rbbragantino-br", revenue:9.718, reportType:"official_balance_sheet",
         sourceId:"rbbragantino-br-balanco-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.718]] },
+      { id:"criciuma-br", revenue:6.485, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-balanco-2019",
+        mix:[["Cuotas Sociales",0.745],["Comercial / Sponsors",0.314],["Estadio",0.181],["Televisión",2.679],["Venta de Jugadores",1.881],["Otros ingresos",0.685]] },
     ],
   },
   2017: {
