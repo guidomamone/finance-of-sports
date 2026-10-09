@@ -60,8 +60,8 @@ dominio es **financeofsports.com** y la carpeta/repo se llama
   Hellas Verona 6, Fiorentina 5, Cremonese 4, Monza 3, Sampdoria 4, Genoa 3, Como 2, Udinese 2, Chievo Verona 2, Juve Stabia 1 (liga `it-seriec`, Serie C) y Salernitana 2 (2022 desde el comparativo
   de 2023, el escaneo no se lee). El script ya lee solo, sin ajustes: el signo del 17) y del 17-bis, la sección D y la E, el subtotal repetido, el renglón grande sin abrir (TV escondida en
   "altri"), la etapa 4 que frenaba en silencio, el resultado impreso en una tabla de una fila pegada al estado, la gestión de jugadores neta de Roma y las secciones D y E juntas de Milan y Chievo.
-  Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166, 179, 187, 188). Atalanta y Parma cambiaron la fecha de cierre y la etiqueta de algunos años se ve mal (to-do 177,
-  decisión de Guido: es puntual, no se toca); un ejercicio de menos de 12 meses no se carga; Lazio 1998-99 a 2000-01 están en liras (ITL, con su tipo de cambio de cierre y la paridad fija a euro
+  Quedan ajustes manuales donde el escalón no da idéntico (to-dos 154, 155, 166, 179, 188). Atalanta, Parma, Milan, Genoa y Fiorentina cambiaron la fecha de cierre algunos años: la etiqueta y la gestión de cada
+  ejercicio salen de su propio cierre (Versión 627); un ejercicio de menos de 12 meses no se carga; Lazio 1998-99 a 2000-01 están en liras (ITL, con su tipo de cambio de cierre y la paridad fija a euro
   para mostrarlos en EUR) (Atalanta 2022 y Parma sep-dic 2020 están en `Admin/documentos-descartados.txt`). No falta ningún documento de fútbol (Catania 2011, un artículo de prensa, y el Juve Stabia semestral están en `Admin/documentos-descartados.txt`): qué frena a cada uno, to-do 179. Sin transcribir: rugby
   FIR/Zebre, tenis FITP y entes; ver `fuentes/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 - Inventario (`node tools/inventario-transcripciones.mjs`, gratis; registro en `Admin/transcripciones-estado.jsonl`): 6.825 PDFs, 517
