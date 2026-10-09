@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md",
- "generado": "2026-10-08T23:17:12.894Z",
+ "generado": "2026-10-09T20:37:57.962Z",
  "estado": "cola",
  "clubId": "lazio-it",
  "year": 2007,
@@ -14,9 +14,7 @@
  "ajustes": null,
  "cola": [
   "a25c312",
-  "c2aa5eb",
   "b7337b9",
-  "eb3bdc6",
   "2d36e05",
   "b9d1ffb"
  ],
@@ -48,8 +46,8 @@
   },
   {
    "nombre": "documento del año 2008",
-   "ok": false,
-   "detalle": "ingresos de 2007: 76.271331 en este documento y 152.542661 en Lazio-bilancio-separato-consolidato-2007-08.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2007: 76.271331 en este documento y 76.271331 en Lazio-bilancio-separato-consolidato-2007-08.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2006",
@@ -62,7 +60,8 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (columna, \"-\"): aceptar, en Lazio-bilancio-separato-consolidato-2010-11.pdf",
   "duda de localizar que no afecta la carga: Las columnas por segmento no parecen abrir renglones que no estén ya desglosados en el conto economico y sus notas.",
-  "duda de extraer que no afecta la carga: Las partidas de la nota (2.217+3.410+126) suman 5.753, por lo que el total 5.735 de L5264 parece error de impresión."
+  "duda de extraer que no afecta la carga: Las partidas de la nota (2.217+3.410+126) suman 5.753, por lo que el total 5.735 de L5264 parece error de impresión.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {

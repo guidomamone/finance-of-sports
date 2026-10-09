@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.pdf",
  "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
- "generado": "2026-10-08T23:17:13.008Z",
- "estado": "cola",
+ "generado": "2026-10-09T20:37:58.070Z",
+ "estado": "ok",
  "clubId": "lazio-it",
  "year": 2009,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ebd254c",
-  "873e81d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,8 +46,8 @@
   },
   {
    "nombre": "documento del año 2008",
-   "ok": false,
-   "detalle": "ingresos de 2008: 204.964061 en Lazio-bilancio-separato-consolidato-2007-08.pdf y 102.48203 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2008: 102.48203 en Lazio-bilancio-separato-consolidato-2007-08.pdf y 102.48203 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
@@ -59,7 +56,8 @@
   "duda de localizar que no afecta la carga: Las columnas Sportivo/Commerciale solo dan totales de ricavi y de risultato por segmento.",
   "duda de extraer que no afecta la carga: El estado b125/b126 ya trae el mismo desglose en unidades; las notas lo repiten redondeado en E/000.",
   "duda de extraer que no afecta la carga: L3476 muestra 12 en la columna actual; 12-40.236=-40.224 vs total -40.225, coherente salvo redondeo.",
-  "duda de extraer que no afecta la carga: b201 desglosa por categoría de personal con total 26.904 igual al renglón Personale (L3422)."
+  "duda de extraer que no afecta la carga: b201 desglosa por categoría de personal con total 26.904 igual al renglón Personale (L3422).",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,

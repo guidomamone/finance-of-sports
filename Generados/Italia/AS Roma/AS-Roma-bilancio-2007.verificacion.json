@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2007.md",
- "generado": "2026-10-08T23:29:13.448Z",
- "estado": "ok",
+ "generado": "2026-10-09T20:37:58.651Z",
+ "estado": "cola",
  "clubId": "asroma-it",
  "year": 2007,
  "escala": {
@@ -67,7 +67,9 @@
    "fecha": "2026-10-08"
   }
  ],
- "cola": [],
+ "cola": [
+  "f9da193"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -90,19 +92,19 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
-   "nombre": "documento del año 2008",
+   "nombre": "año anterior cargado",
    "ok": false,
-   "detalle": "ingresos de 2007: 157.589 en este documento y 162.017 en AS-Roma-bilancio-2008.pdf (columna del año anterior)"
+   "detalle": "la columna 2006 de este documento suma ingresos 128.542; el sitio tiene 158.436442"
+  },
+  {
+   "nombre": "documento del año 2008",
+   "ok": true,
+   "detalle": "ingresos de 2007: 162.255 en este documento y 162.017 en AS-Roma-bilancio-2008.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2006",
    "ok": false,
    "detalle": "ingresos de 2006: 158.436442 en AS-Roma-bilancio-2006.pdf y 128.542 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2006: este chequeo no se puede hacer"
   }
  ],
  "notas": [
