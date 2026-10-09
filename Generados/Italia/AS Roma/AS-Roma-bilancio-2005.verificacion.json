@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
  "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
- "generado": "2026-10-08T23:17:06.983Z",
+ "generado": "2026-10-09T16:59:09.843Z",
  "estado": "cola",
  "clubId": "asroma-it",
  "year": 2005,
@@ -11,24 +11,73 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "fila",
+   "valor": "557",
+   "linea": 4379,
+   "etiqueta": "8) Spese godimento beni di terzi",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)",
+   "evidencia": ".md L4379",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "fila",
+   "valor": "32",
+   "linea": 4401,
+   "etiqueta": "11) Variazioni delle rimanenze di materie prime e merci",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)",
+   "evidencia": ".md L4401",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "fila",
+   "valor": "401",
+   "linea": 4405,
+   "etiqueta": "12) Accantonamento per rischi",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)",
+   "evidencia": ".md L4405",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.pdf",
+   "campo": "fila",
+   "valor": "(547)",
+   "linea": 4448,
+   "etiqueta": "19) Svalutazioni a) di partecipazioni (D, costo)",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)",
+   "evidencia": ".md L4448",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
  "cola": [
-  "5bf1d38",
-  "b3562d9",
-  "4047786",
-  "2f1aa06",
-  "74b6982"
+  "9220cf4"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "4610.527 = 4610.527"
+   "ok": null,
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "5501.303 = 5501.303"
+   "ok": null,
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "resultado del ejercicio",
@@ -37,8 +86,8 @@
   },
   {
    "nombre": "documento del año 2006",
-   "ok": false,
-   "detalle": "ingresos de 2005: 4610.527 en este documento y 179.920344 en AS-Roma-bilancio-2006.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2005: 183.251 en este documento y 179.920344 en AS-Roma-bilancio-2006.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -47,160 +96,930 @@
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en AS-Roma-bilancio-2018.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): corregir no, en AS-Roma-bilancio-2011-separato.pdf",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en AS-Roma-bilancio-2025.pdf",
-  "duda de extraer que no afecta la carga: El texto (L5937, L5961) dice 2005 y 2004 pero los encabezados L5939 y L5963 dicen 04 y 03."
+  "la nota de \"f) Altri oneri\" no suma el renglón (12.892 contra 12.853, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"8) Spese godimento beni di terzi\" (gasto) 557 (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
+  "ajuste manual: fila \"11) Variazioni delle rimanenze di materie prime e merci\" (gasto) 32 (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
+  "ajuste manual: fila \"12) Accantonamento per rischi\" (gasto) 401 (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
+  "ajuste manual: fila \"19) Svalutazioni a) di partecipazioni (D, costo)\" (financiero) (547) (2026-10-09, Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso))",
+  "duda de localizar ya contestada para el club (columna, \"Proventi straordinari\"): aceptar, en AS-Roma-bilancio-2005.pdf",
+  "duda de extraer confirmada por las sumas (columna, \"Totale proventi straordinari\"): ¿Se cargan las columnas rotuladas '30.06.04' y '30.06.03' de los cuadros b159 (L5939) y b160 (L5963) como 2005 y 2004 respectivamente?",
+  "duda de extraer que no afecta la carga: Repiten importes ya presentes en b107 y b108 sin desglose adicional.",
+  "duda de extraer que no afecta la carga: Sus totales coinciden con b109; en 2004 separa Premi collettivi 2.511 que el estado incluye en Salari e stipendi (82.887).",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
- "reintentar": null,
+ "reintentar": [
+  {
+   "renglon": "f) Altri oneri",
+   "suma": 12.892,
+   "objetivo": 12.853
+  }
+ ],
  "reintentado": false,
- "faltasDesglose": null,
+ "faltasDesglose": [
+  {
+   "renglon": "f) Altri oneri",
+   "suma": 12.892,
+   "objetivo": 12.853
+  }
+ ],
  "totales": {
-  "ingresos": 4610.527,
-  "gastos": 5501.303,
-  "financiero": -2.446,
-  "impuesto": 0,
-  "resultadoImpreso": -893.222,
-  "resultadoParaCargar": -893.222,
+  "ingresos": 183.251,
+  "gastos": 168.607,
+  "financiero": -1.665,
+  "impuesto": -2.987,
+  "resultadoImpreso": 9.992,
+  "resultadoParaCargar": 9.992,
   "resultadoFinal": null,
   "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
-   "etiqueta": "1) Ricavi delle vendite e delle prestazioni",
+   "etiqueta": "– Gare campionato",
    "lado": "ingreso",
-   "M": 4160.052,
-   "pagina": 95,
-   "linea": 3192,
+   "M": 7.085,
+   "pagina": 163,
+   "linea": 5482,
+   "origen": "nota que desglosa \"a) Ricavi da gare\""
+  },
+  {
+   "etiqueta": "– Gare coppe",
+   "lado": "ingreso",
+   "M": 6.488,
+   "pagina": 163,
+   "linea": 5483,
+   "origen": "nota que desglosa \"a) Ricavi da gare\""
+  },
+  {
+   "etiqueta": "– Altre gare",
+   "lado": "ingreso",
+   "M": 2.674,
+   "pagina": 163,
+   "linea": 5484,
+   "origen": "nota que desglosa \"a) Ricavi da gare\""
+  },
+  {
+   "etiqueta": "ABBONAMENTI",
+   "lado": "ingreso",
+   "M": 11.616,
+   "pagina": 163,
+   "linea": 5490,
+   "origen": "nota que desglosa \"a) Ricavi da gare\""
+  },
+  {
+   "etiqueta": "b) Ricavi cessione temporanea giocatori",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 136,
+   "linea": 4345,
    "origen": "estado"
   },
   {
-   "etiqueta": "a) altri ricavi e proventi",
+   "etiqueta": "- vendita riviste",
    "lado": "ingreso",
-   "M": 193.336,
-   "pagina": 95,
-   "linea": 3194,
+   "M": 0.183,
+   "pagina": 164,
+   "linea": 5506,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendita abbonamenti riviste",
+   "lado": "ingreso",
+   "M": 0.014,
+   "pagina": 164,
+   "linea": 5507,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendita altri prodotti editoriali",
+   "lado": "ingreso",
+   "M": 0.06,
+   "pagina": 164,
+   "linea": 5508,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite negozio Piazza Colonna",
+   "lado": "ingreso",
+   "M": 0.938,
+   "pagina": 164,
+   "linea": 5511,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite negozio Via Appia",
+   "lado": "ingreso",
+   "M": 0.576,
+   "pagina": 164,
+   "linea": 5512,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite negozio Via Cola di Rienzo",
+   "lado": "ingreso",
+   "M": 0.397,
+   "pagina": 164,
+   "linea": 5513,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite per corrispondenza",
+   "lado": "ingreso",
+   "M": 0.112,
+   "pagina": 164,
+   "linea": 5514,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite con automezzo mobile",
+   "lado": "ingreso",
+   "M": 0.057,
+   "pagina": 164,
+   "linea": 5515,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- vendite corner specializzati e altre attività",
+   "lado": "ingreso",
+   "M": 0.017,
+   "pagina": 164,
+   "linea": 5516,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- ricavi per *royalties*",
+   "lado": "ingreso",
+   "M": 0.442,
+   "pagina": 164,
+   "linea": 5517,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- ricavi contrattuali American Express",
+   "lado": "ingreso",
+   "M": 0.139,
+   "pagina": 164,
+   "linea": 5518,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- ricavi vendite per *franchising*",
+   "lado": "ingreso",
+   "M": 0.434,
+   "pagina": 164,
+   "linea": 5519,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "- ricavi diversi attività commerciale",
+   "lado": "ingreso",
+   "M": 0.317,
+   "pagina": 164,
+   "linea": 5520,
+   "origen": "nota que desglosa \"c) Altri ricavi delle vendite e delle prestazioni\""
+  },
+  {
+   "etiqueta": "4) Incrementi immobilizzazioni per capitalizzazione vivaio",
+   "lado": "ingreso",
+   "M": 1.358,
+   "pagina": 136,
+   "linea": 4348,
    "origen": "estado"
   },
   {
-   "etiqueta": "b) proventi pubblicitari",
+   "etiqueta": "Sponsor ufficiale Mazda Motor Italia",
    "lado": "ingreso",
-   "M": 247.3,
-   "pagina": 95,
-   "linea": 3195,
+   "M": 7.765,
+   "pagina": 165,
+   "linea": 5555,
+   "origen": "nota que desglosa \"b) Sponsorizzazioni\""
+  },
+  {
+   "etiqueta": "Sponsor tecnico Diadora – Invicta",
+   "lado": "ingreso",
+   "M": 6.25,
+   "pagina": 165,
+   "linea": 5556,
+   "origen": "nota que desglosa \"b) Sponsorizzazioni\""
+  },
+  {
+   "etiqueta": "S.D.S. Società Diritti Sportivi S.r.l.",
+   "lado": "ingreso",
+   "M": 37.443,
+   "pagina": 165,
+   "linea": 5567,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "RTI – Reti Televisivi Italia",
+   "lado": "ingreso",
+   "M": 17,
+   "pagina": 165,
+   "linea": 5568,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "UEFA Champion League",
+   "lado": "ingreso",
+   "M": 6.84,
+   "pagina": 165,
+   "linea": 5569,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "S.E.D.S",
+   "lado": "ingreso",
+   "M": 7.5,
+   "pagina": 165,
+   "linea": 5570,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "Sky Italia",
+   "lado": "ingreso",
+   "M": 2.175,
+   "pagina": 165,
+   "linea": 5571,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "RAI - RAI Trade",
+   "lado": "ingreso",
+   "M": 0.2,
+   "pagina": 165,
+   "linea": 5572,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "Lega Nazionale Professionisti",
+   "lado": "ingreso",
+   "M": 1.232,
+   "pagina": 165,
+   "linea": 5573,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "Mutualità diritti televisivi fuori casa",
+   "lado": "ingreso",
+   "M": 4.157,
+   "pagina": 165,
+   "linea": 5576,
+   "origen": "nota que desglosa \"c) Diritti televisivi e diritti d'immagine\""
+  },
+  {
+   "etiqueta": "D.L.S. Media Group",
+   "lado": "ingreso",
+   "M": 5.731,
+   "pagina": 166,
+   "linea": 5607,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Nardelli",
+   "lado": "ingreso",
+   "M": 0.18,
+   "pagina": 166,
+   "linea": 5608,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Sbrizze",
+   "lado": "ingreso",
+   "M": 0.06,
+   "pagina": 166,
+   "linea": 5609,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "5 BI",
+   "lado": "ingreso",
+   "M": 0.035,
+   "pagina": 166,
+   "linea": 5610,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Proventi per inserzioni pubblicitarie 'La Roma'",
+   "lado": "ingreso",
+   "M": 0.247,
+   "pagina": 166,
+   "linea": 5611,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Erica Ceramiche",
+   "lado": "ingreso",
+   "M": 0.027,
+   "pagina": 166,
+   "linea": 5612,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Corriere dello Sport",
+   "lado": "ingreso",
+   "M": 0.03,
+   "pagina": 166,
+   "linea": 5613,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Colt Telecom",
+   "lado": "ingreso",
+   "M": 0.005,
+   "pagina": 166,
+   "linea": 5614,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Sixtus",
+   "lado": "ingreso",
+   "M": 0.055,
+   "pagina": 166,
+   "linea": 5616,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Klesios",
+   "lado": "ingreso",
+   "M": 0.06,
+   "pagina": 166,
+   "linea": 5617,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Centralpol",
+   "lado": "ingreso",
+   "M": 0.1,
+   "pagina": 166,
+   "linea": 5618,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Altri proventi pubblicitari",
+   "lado": "ingreso",
+   "M": 0.041,
+   "pagina": 166,
+   "linea": 5619,
+   "origen": "nota que desglosa \"d) Proventi pubblicitari\""
+  },
+  {
+   "etiqueta": "Diritti UMTS e prestazioni accessorie",
+   "lado": "ingreso",
+   "M": 3.5,
+   "pagina": 166,
+   "linea": 5628,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Diritti GSM e GPRS",
+   "lado": "ingreso",
+   "M": 1.139,
+   "pagina": 166,
+   "linea": 5629,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Utilizzo fondi rischi",
+   "lado": "ingreso",
+   "M": 0.287,
+   "pagina": 166,
+   "linea": 5630,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Indennizzi assicurativi per infortuni a calciatori",
+   "lado": "ingreso",
+   "M": 0.161,
+   "pagina": 166,
+   "linea": 5631,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Sopravvenienze attive",
+   "lado": "ingreso",
+   "M": 0.106,
+   "pagina": 166,
+   "linea": 5632,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Royalties Diadora-Invicta",
+   "lado": "ingreso",
+   "M": 0.412,
+   "pagina": 166,
+   "linea": 5633,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Proventi ritiro estivo",
+   "lado": "ingreso",
+   "M": 0.155,
+   "pagina": 166,
+   "linea": 5635,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Addebito materiale sportivo",
+   "lado": "ingreso",
+   "M": 0.145,
+   "pagina": 166,
+   "linea": 5636,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Addebiti per biglietti trasferte",
+   "lado": "ingreso",
+   "M": 0.086,
+   "pagina": 166,
+   "linea": 5637,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Multe a tesserati",
+   "lado": "ingreso",
+   "M": 0.269,
+   "pagina": 166,
+   "linea": 5638,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "Altri proventi diversi",
+   "lado": "ingreso",
+   "M": 0.232,
+   "pagina": 166,
+   "linea": 5639,
+   "origen": "nota que desglosa \"e) Atri proventi\""
+  },
+  {
+   "etiqueta": "f) Contributi in c'esercizio",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 136,
+   "linea": 4354,
    "origen": "estado"
   },
   {
-   "etiqueta": "c) contributi in conto esercizio",
+   "etiqueta": "a) Plusvalenze da alienazioni",
    "lado": "ingreso",
-   "M": 9.839,
-   "pagina": 95,
-   "linea": 3196,
+   "M": 25.264,
+   "pagina": 137,
+   "linea": 4453,
    "origen": "estado"
   },
   {
-   "etiqueta": "6) Acquisti materie di consumo",
+   "etiqueta": "b) Sopravvenienze attive",
+   "lado": "ingreso",
+   "M": 1.462,
+   "pagina": 137,
+   "linea": 4454,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Altri proventi straordinari",
+   "lado": "ingreso",
+   "M": 19.993,
+   "pagina": 137,
+   "linea": 4455,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Indumenti sportivi e di rappresentanza",
    "lado": "gasto",
-   "M": 1818.113,
-   "pagina": 95,
-   "linea": 3200,
+   "M": 1.316,
+   "pagina": 167,
+   "linea": 5658,
+   "origen": "nota que desglosa \"6) - Acquisti materie di consumo\""
+  },
+  {
+   "etiqueta": "Materiale di consumo",
+   "lado": "gasto",
+   "M": 0.074,
+   "pagina": 167,
+   "linea": 5659,
+   "origen": "nota que desglosa \"6) - Acquisti materie di consumo\""
+  },
+  {
+   "etiqueta": "Beni e prodotti da commercializzare",
+   "lado": "gasto",
+   "M": 1.671,
+   "pagina": 167,
+   "linea": 5660,
+   "origen": "nota que desglosa \"6) - Acquisti materie di consumo\""
+  },
+  {
+   "etiqueta": "a) Spese per tesserati",
+   "lado": "gasto",
+   "M": 0.365,
+   "pagina": 136,
+   "linea": 4368,
    "origen": "estado"
   },
   {
-   "etiqueta": "7) Spese per servizi",
+   "etiqueta": "b) Costi per attività sportiva",
    "lado": "gasto",
-   "M": 2148.524,
-   "pagina": 95,
-   "linea": 3201,
+   "M": 3.474,
+   "pagina": 136,
+   "linea": 4369,
    "origen": "estado"
   },
   {
-   "etiqueta": "8) Spese godimento beni di terzi",
+   "etiqueta": "c) Costi specifici tecnici",
    "lado": "gasto",
-   "M": 481.768,
-   "pagina": 95,
-   "linea": 3202,
+   "M": 7.732,
+   "pagina": 136,
+   "linea": 4370,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Costi vitto, alloggio e locomozione",
+   "lado": "gasto",
+   "M": 0.942,
+   "pagina": 136,
+   "linea": 4371,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "e) Spese assicurative",
+   "lado": "gasto",
+   "M": 1.28,
+   "pagina": 136,
+   "linea": 4372,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Consulenze professionali, legali e notarili",
+   "lado": "gasto",
+   "M": 1.41,
+   "pagina": 168,
+   "linea": 5708,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Collaboratori sede",
+   "lado": "gasto",
+   "M": 0.328,
+   "pagina": 168,
+   "linea": 5709,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese postali e telefoniche",
+   "lado": "gasto",
+   "M": 0.137,
+   "pagina": 168,
+   "linea": 5710,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese di vigilanza",
+   "lado": "gasto",
+   "M": 0.095,
+   "pagina": 168,
+   "linea": 5711,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese di esercizio automezzi",
+   "lado": "gasto",
+   "M": 0.042,
+   "pagina": 168,
+   "linea": 5712,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese manutenzione e gestione sede sociale e centro sportivo",
+   "lado": "gasto",
+   "M": 0.613,
+   "pagina": 168,
+   "linea": 5713,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese assemblee, adempimenti societari e di borsa",
+   "lado": "gasto",
+   "M": 0.08,
+   "pagina": 168,
+   "linea": 5714,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Trasporti e trasferte",
+   "lado": "gasto",
+   "M": 0.163,
+   "pagina": 168,
+   "linea": 5715,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese canale televisivo Roma Channel",
+   "lado": "gasto",
+   "M": 0.516,
+   "pagina": 168,
+   "linea": 5716,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Manutenzione hardware, software e gestione sito internet",
+   "lado": "gasto",
+   "M": 0.083,
+   "pagina": 168,
+   "linea": 5717,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Emolumenti al Consiglio di Amministrazione",
+   "lado": "gasto",
+   "M": 1.536,
+   "pagina": 168,
+   "linea": 5718,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Onorari alla società di revisione contabile",
+   "lado": "gasto",
+   "M": 0.175,
+   "pagina": 168,
+   "linea": 5719,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Emolumenti al collegio sindacale",
+   "lado": "gasto",
+   "M": 0.098,
+   "pagina": 168,
+   "linea": 5720,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Consulenti attività professionali R.I.F.S.",
+   "lado": "gasto",
+   "M": 0.025,
+   "pagina": 168,
+   "linea": 5721,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese per la stampa ed i servizi editoriali dei periodici R.I.F.S.",
+   "lado": "gasto",
+   "M": 0.327,
+   "pagina": 168,
+   "linea": 5722,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Consulenze e servizi da imprese R.I.F.S.",
+   "lado": "gasto",
+   "M": 0.022,
+   "pagina": 168,
+   "linea": 5723,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Spese di spedizione e distribuzione",
+   "lado": "gasto",
+   "M": 0.099,
+   "pagina": 168,
+   "linea": 5724,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Servizi e commissioni bancarie",
+   "lado": "gasto",
+   "M": 0.041,
+   "pagina": 168,
+   "linea": 5726,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "Altre spese generali e amministrative",
+   "lado": "gasto",
+   "M": 0.182,
+   "pagina": 168,
+   "linea": 5727,
+   "origen": "nota que desglosa \"f) Spese amministrative e generali\""
+  },
+  {
+   "etiqueta": "g) Spese pubblicità e promozione",
+   "lado": "gasto",
+   "M": 0.804,
+   "pagina": 136,
+   "linea": 4374,
    "origen": "estado"
   },
   {
    "etiqueta": "a) Salari e stipendi",
    "lado": "gasto",
-   "M": 507.96,
-   "pagina": 95,
-   "linea": 3204,
+   "M": 73.359,
+   "pagina": 136,
+   "linea": 4383,
    "origen": "estado"
   },
   {
    "etiqueta": "b) Oneri sociali",
    "lado": "gasto",
-   "M": 162.53,
-   "pagina": 95,
-   "linea": 3205,
+   "M": 1.638,
+   "pagina": 136,
+   "linea": 4385,
    "origen": "estado"
   },
   {
    "etiqueta": "c) Trattamento di fine rapporto",
    "lado": "gasto",
-   "M": 34.968,
-   "pagina": 95,
-   "linea": 3206,
+   "M": 0.163,
+   "pagina": 136,
+   "linea": 4386,
    "origen": "estado"
   },
   {
-   "etiqueta": "a) Amm.to immobilizzazioni immateriali",
+   "etiqueta": "d) Trattamento di quiescenza e simili",
    "lado": "gasto",
-   "M": 82.658,
-   "pagina": 95,
-   "linea": 3209,
+   "M": 0.186,
+   "pagina": 136,
+   "linea": 4387,
    "origen": "estado"
   },
   {
-   "etiqueta": "b) Amm.to immobilizzazioni materiali",
+   "etiqueta": "Costi d'impianto e di ampliamento",
    "lado": "gasto",
-   "M": 68.967,
-   "pagina": 95,
-   "linea": 3210,
+   "M": 0.011,
+   "pagina": 169,
+   "linea": 5787,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Marchi",
+   "lado": "gasto",
+   "M": 0.041,
+   "pagina": 169,
+   "linea": 5788,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Avviamento",
+   "lado": "gasto",
+   "M": 0.001,
+   "pagina": 169,
+   "linea": 5789,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Capitalizzazioni costi del vivaio",
+   "lado": "gasto",
+   "M": 1.653,
+   "pagina": 169,
+   "linea": 5791,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Diritti pluriennali prestazioni calciatori",
+   "lado": "gasto",
+   "M": 28.601,
+   "pagina": 169,
+   "linea": 5792,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Oneri pluriennali ex art. 18 bis L.91/81",
+   "lado": "gasto",
+   "M": 13.365,
+   "pagina": 169,
+   "linea": 5793,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Altre immobilizzazioni immateriali",
+   "lado": "gasto",
+   "M": 0.078,
+   "pagina": 169,
+   "linea": 5794,
+   "origen": "nota que desglosa \"a) Ammortamento immobilizzazioni immateriali\""
+  },
+  {
+   "etiqueta": "Terreni e fabbricati",
+   "lado": "gasto",
+   "M": 0.37,
+   "pagina": 170,
+   "linea": 5819,
+   "origen": "nota que desglosa \"b) Ammortamento immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "Impianti e macchinario",
+   "lado": "gasto",
+   "M": 0.07,
+   "pagina": 170,
+   "linea": 5820,
+   "origen": "nota que desglosa \"b) Ammortamento immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "Attrezzature Industriali e commerciali",
+   "lado": "gasto",
+   "M": 0.017,
+   "pagina": 170,
+   "linea": 5821,
+   "origen": "nota que desglosa \"b) Ammortamento immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "Altri beni",
+   "lado": "gasto",
+   "M": 0.102,
+   "pagina": 170,
+   "linea": 5822,
+   "origen": "nota que desglosa \"b) Ammortamento immobilizzazioni materiali\""
+  },
+  {
+   "etiqueta": "c) Altre svalutazioni delle immobilizzazioni",
+   "lado": "gasto",
+   "M": 3.876,
+   "pagina": 136,
+   "linea": 4395,
    "origen": "estado"
   },
   {
-   "etiqueta": "c) Altre svalutazione delle immobilizzazioni",
+   "etiqueta": "d) Svalutazione dei crediti compresi nell'attivo circolante",
    "lado": "gasto",
-   "M": 31.942,
-   "pagina": 95,
-   "linea": 3211,
+   "M": 1.194,
+   "pagina": 136,
+   "linea": 4396,
    "origen": "estado"
   },
   {
-   "etiqueta": "d) Svalutazioni dei crediti dell'Attivo Circolante",
+   "etiqueta": "a) Oneri tributari indiretti dell'esercizio",
    "lado": "gasto",
-   "M": 16.272,
-   "pagina": 95,
-   "linea": 3212,
+   "M": 1.015,
+   "pagina": 136,
+   "linea": 4409,
    "origen": "estado"
   },
   {
-   "etiqueta": "11) Variazione rimanenze di merci",
+   "etiqueta": "b) Sopravvenienze passive",
    "lado": "gasto",
-   "M": 32.022,
-   "pagina": 95,
-   "linea": 3214,
+   "M": 0.668,
+   "pagina": 136,
+   "linea": 4411,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "f) Altri oneri",
+   "lado": "gasto",
+   "M": 12.853,
+   "pagina": 136,
+   "linea": 4412,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Minusvalenze relative ad alienazioni",
+   "lado": "gasto",
+   "M": 1.551,
+   "pagina": 137,
+   "linea": 4458,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Imposte esercizi precedenti",
+   "lado": "gasto",
+   "M": 0.063,
+   "pagina": 137,
+   "linea": 4459,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Sopravvenienze passive",
+   "lado": "gasto",
+   "M": 3.022,
+   "pagina": 137,
+   "linea": 4460,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Altri oneri",
+   "lado": "gasto",
+   "M": 0.09,
+   "pagina": 137,
+   "linea": 4461,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "8) Spese godimento beni di terzi",
+   "lado": "gasto",
+   "M": 0.557,
+   "pagina": 136,
+   "linea": 4379,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "11) Variazioni delle rimanenze di materie prime e merci",
+   "lado": "gasto",
+   "M": 0.032,
+   "pagina": 136,
+   "linea": 4401,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "12) Accantonamento per rischi",
    "lado": "gasto",
-   "M": 0,
-   "pagina": 95,
-   "linea": 3215,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) Altri oneri",
-   "lado": "gasto",
-   "M": 115.579,
-   "pagina": 95,
-   "linea": 3218,
-   "origen": "estado"
+   "M": 0.401,
+   "pagina": 136,
+   "linea": 4405,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -209,26 +1028,51 @@
  },
  "financiero": [
   {
-   "etiqueta": "- da altri",
-   "M": 15.467,
-   "linea": 3225
+   "etiqueta": "- da controllanti",
+   "M": 0,
+   "linea": 4434
   },
   {
-   "etiqueta": "d) da altri",
-   "M": -17.916,
-   "linea": 3228
+   "etiqueta": "- da collegate",
+   "M": 0,
+   "linea": 4435
   },
   {
-   "etiqueta": "17Bis) Utili e perdite su cambi",
-   "M": 0.003,
-   "linea": 3230
+   "etiqueta": "- da terzi",
+   "M": 2.614,
+   "linea": 4436
+  },
+  {
+   "etiqueta": "- da imprese controllanti",
+   "M": -0.005,
+   "linea": 4439
+  },
+  {
+   "etiqueta": "- da terzi",
+   "M": -3.824,
+   "linea": 4440
+  },
+  {
+   "etiqueta": "17bis) Utili e perdite su cambi",
+   "M": 0.097,
+   "linea": 4442
+  },
+  {
+   "etiqueta": "19) Svalutazioni a) di partecipazioni (D, costo)",
+   "M": -0.547,
+   "linea": 4448
   }
  ],
  "impuesto": [
   {
    "etiqueta": "a) Imposte correnti",
-   "M": 0,
-   "linea": 3244
+   "M": -2.442,
+   "linea": 4466
+  },
+  {
+   "etiqueta": "b) Imposte differite",
+   "M": -0.545,
+   "linea": 4467
   }
  ]
 }
