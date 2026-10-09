@@ -9,7 +9,7 @@
 //   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -286,6 +286,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"torino-it", revenue:98.856, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2020",
         mix:[["Comercial / Sponsors",10.071],["Estadio",1.367],["Televisión",55.001],["Venta de Jugadores",26.093],["Otras secciones deportivas",0.002],["Otros ingresos",6.322]] },
+      { id:"sampdoria-it", revenue:92.916, reportType:"official_balance_sheet",
+        sourceId:"sampdoria-it-fascicolo-bilancio-2020",
+        mix:[["Comercial / Sponsors",7.045],["Estadio",2.022],["Televisión",45.581],["Venta de Jugadores",32.656],["Otros ingresos",5.612]] },
       { id:"bologna-it", revenue:81.047, reportType:"official_balance_sheet",
         sourceId:"bologna-it-bilancio-consolidato-2019-20",
         mix:[["Comercial / Sponsors",12.854],["Estadio",5.032],["Televisión",37.93],["Venta de Jugadores",22.378],["Otros ingresos",2.853]] },

@@ -82,6 +82,24 @@ const sampdoriaitRevenueLinesByYear = {
     { rawLabel:'Proventi da contratto Rai – Library Sampdoria', normalizedCategory:'broadcasting', amountNative:0.117, disclosureLevel:'aggregated' }, // pág. 59, precedente
     { rawLabel:'Sopravvenienze attive', normalizedCategory:'other_income', amountNative:1.878, disclosureLevel:'aggregated' }, // pág. 59, precedente
   ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Gare Campionato', normalizedCategory:'matchday_competition', amountNative:0.163, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'Abbonamenti', normalizedCategory:'season_tickets', amountNative:1.485, disclosureLevel:'aggregated' }, // pág. 68, precedente
+    { rawLabel:'4) Incrementi di immobilizzazione per', normalizedCategory:'other_income', amountNative:1.779291, disclosureLevel:'aggregated' }, // pág. 34, Jev 1
+    { rawLabel:'Proventi da sponsorizzazioni:', normalizedCategory:'sponsorship_commercial', amountNative:2.149, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Proventi pubblicitari e concessioni varie:', normalizedCategory:'sponsorship_commercial', amountNative:3.592, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Diritti radiotelevisivi e proventi media', normalizedCategory:'broadcasting', amountNative:36.908, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Proventi da cessioni temporanee calciatori', normalizedCategory:'player_sales', amountNative:4.119, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Altri proventi da gestione calciatori', normalizedCategory:'player_sales', amountNative:7.781, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Contributi federali', normalizedCategory:'other_income', amountNative:1.559, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:0.592, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Proventi da contratto Rai – Library Sampdoria', normalizedCategory:'broadcasting', amountNative:0.237, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'Sopravvenienze attive', normalizedCategory:'other_income', amountNative:0.643, disclosureLevel:'aggregated' }, // pág. 69, precedente
+    { rawLabel:'1a) plusvalenze', normalizedCategory:'player_sales', amountNative:14.712647, disclosureLevel:'aggregated' }, // pág. 34, Jev 0.98
+    { rawLabel:'b) Contributi in conto esercizio', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' }, // pág. 34, precedente
+  ],
 };
 const sampdoriaitExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-07)
@@ -188,6 +206,47 @@ const sampdoriaitExpenseLinesByYear = {
     { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-2.182, disclosureLevel:'aggregated' }, // pág. 65, precedente
     { rawLabel:'Sopravvenienze passive', normalizedCategory:'exceptional_items', amountNative:-0.506, disclosureLevel:'aggregated' }, // pág. 65, precedente
   ],
+  2020: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Materiale di consumo', normalizedCategory:'admin_general_expense', amountNative:-0.088, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Indumenti gioco', normalizedCategory:'admin_general_expense', amountNative:-0.718, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Indumenti', normalizedCategory:'admin_general_expense', amountNative:-0.139, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Medicinali', normalizedCategory:'admin_general_expense', amountNative:-0.094, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Cancelleria e stampati', normalizedCategory:'admin_general_expense', amountNative:-0.009, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Altro', normalizedCategory:'other_expenses', amountNative:-0.876, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Costi per tesserati', normalizedCategory:'wages_squad', amountNative:-1.129, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-0.314, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-0.41, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Compensi per Agenti e intermediari', normalizedCategory:'other_expenses', amountNative:-8.988, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Costi vitto, alloggio, locomozione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.475, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Assicurative e previdenziali', normalizedCategory:'admin_general_expense', amountNative:-1.174, disclosureLevel:'aggregated' }, // pág. 71, precedente
+    { rawLabel:'Amministrative, pubblicitarie e generali di cui a favore Sport Spettacolo Holding Srl', normalizedCategory:'admin_general_expense', amountNative:-6.066, disclosureLevel:'aggregated' }, // pág. 71, Jev 1
+    { rawLabel:'Altri di cui a favore Sport Spettacolo Holding Srl', normalizedCategory:'other_expenses', amountNative:-0.114, disclosureLevel:'aggregated' }, // pág. 71, Jev 0.92
+    { rawLabel:'Costi campi sportivi', normalizedCategory:'match_organisation_expense', amountNative:-1.379, disclosureLevel:'aggregated' }, // pág. 72, precedente
+    { rawLabel:'Noleggio autovetture', normalizedCategory:'admin_general_expense', amountNative:-0.157, disclosureLevel:'aggregated' }, // pág. 72, precedente
+    { rawLabel:'Locazioni uffici e altri locali', normalizedCategory:'admin_general_expense', amountNative:-0.156, disclosureLevel:'aggregated' }, // pág. 72, precedente
+    { rawLabel:'Noleggi', normalizedCategory:'admin_general_expense', amountNative:-0.099, disclosureLevel:'aggregated' }, // pág. 72, precedente
+    { rawLabel:'Concessione utilizzo marchio', normalizedCategory:'admin_general_expense', amountNative:-1.25, disclosureLevel:'aggregated' }, // pág. 72, precedente
+    { rawLabel:'a) Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-50.0633, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'b) Oneri sociali', normalizedCategory:'wages_squad', amountNative:-2.940463, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'c) Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.601912, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'d) altri costi', normalizedCategory:'wages_squad', amountNative:-0.028517, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'a) Ammortamento delle', normalizedCategory:'player_amortisation', amountNative:-1.739451, disclosureLevel:'aggregated' }, // pág. 34, Claude 0.9
+    { rawLabel:'b) Ammortamento delle', normalizedCategory:'depreciation', amountNative:-0.405389, disclosureLevel:'aggregated' }, // pág. 34, Claude 0.9
+    { rawLabel:'c) altre svalutazioni delle', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' }, // pág. 34, Jev 0.9
+    { rawLabel:'d) Svalutazioni crediti dell\'attivo', normalizedCategory:'other_expenses', amountNative:-0.387245, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'11) Variazione delle rimanenze di', normalizedCategory:'other_expenses', amountNative:0.439269, disclosureLevel:'aggregated' }, // pág. 34, Jev 1
+    { rawLabel:'12) Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-2.101323, disclosureLevel:'aggregated' }, // pág. 34, precedente
+    { rawLabel:'Spese varie organizzazione gare', normalizedCategory:'match_organisation_expense', amountNative:-0.338, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Tasse iscrizioni gare', normalizedCategory:'match_organisation_expense', amountNative:-0.005, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Costi per acquisizione temporanea prestazioni calciatori', normalizedCategory:'other_expenses', amountNative:-1.945, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Minusvalenze cessione diritti pluriennali prestazioni calciatori', normalizedCategory:'exceptional_items', amountNative:-0.545, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Premi Preparazione ex art. 96 NOIF', normalizedCategory:'player_amortisation', amountNative:-0.075, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Premi Valorizzazione', normalizedCategory:'player_amortisation', amountNative:-0.568, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Oneri diversi da gestione calciatori', normalizedCategory:'other_expenses', amountNative:-2.528, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Spese, ammende e multe gare', normalizedCategory:'other_expenses', amountNative:-0.023, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-0.05, disclosureLevel:'aggregated' }, // pág. 75, precedente
+    { rawLabel:'Altri', normalizedCategory:'other_expenses', amountNative:-2.493, disclosureLevel:'aggregated' }, // pág. 75, precedente
+  ],
 };
 const sampdoriaitFiscalYearMeta = {
   // 2021: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-07): fila = 0. renglón 'di cui' que ya está dentro de su padre: se contaba dos veces (arreglo manual 2026-10-07, causa encontrada por subagente)
@@ -269,6 +328,29 @@ const sampdoriaitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:129.025726, officialTotalExpenses:137.272221, officialPAT:-13.064222,
   },
+  2020: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2020-12-31',
+    sourceId:'sampdoria-it-fascicolo-bilancio-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.90916, tax:2.518655,
+    extraRows: [
+      {label:'a) Da compartecipazioni ex Art. 102', value:0},
+      {label:'b.2) da titoli immobilizzati che non', value:0},
+      {label:'c) Da terzi', value:0.007161},
+      {label:'a) Da compartecipazioni ex Art. 102', value:0},
+      {label:'b.1) verso terzi', value:-2.91609},
+      {label:'a) utile su cambi', value:0.716072},
+      {label:'b) perdite su cambi', value:-0.716303},
+      {label:'a) Imposte correnti', value:-0.132504},
+      {label:'b) Imposte relative a es\' precedenti', value:0.182062},
+      {label:'c) Imposte differite e anticipate', value:-2.723487},
+      {label:'d) Proventi da consolidamento', value:5.192584},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:75.719938, officialTotalExpenses:89.488331, officialPAT:-14.703708,
+  },
 };
 const sampdoriaitPresupuestoOverlayByYear = {};
 
@@ -304,6 +386,12 @@ Object.assign(sources, {
     title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'sampdoria-it-fascicolo-bilancio-2020': {
+    id:'sampdoria-it-fascicolo-bilancio-2020', clubId:'sampdoria-it',
+    title:'U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2020 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

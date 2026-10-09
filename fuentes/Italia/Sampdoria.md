@@ -26,3 +26,5 @@ Los fascicoli están en `sampdoria.it/wp-content/uploads/` (`2019/04/Fascicolo_B
 - Antes de 2018: la CDX de dominio no lista nada.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2019 desde `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.pdf` (sourceId `sampdoria-it-fascicolo-bilancio-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2020 desde `Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.pdf` (sourceId `sampdoria-it-fascicolo-bilancio-2020`).
