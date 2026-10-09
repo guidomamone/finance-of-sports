@@ -662,6 +662,7 @@
   .op-grid.tipo{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
   .op-grid.tipo .op{flex-direction:column;align-items:flex-start;gap:5px;padding:14px;}
   .op-grid.tipo .op-check{display:none;}
+  .op-grid.unico .op-check{display:none;} /* elección única (el club en el camino de Finanzas, to-do 96): tocar avanza, no hay casilla */
   .op-grid.tipo .op-icon{font-size:24px;}
   .op-grid.tipo .op-label{font-size:15px;font-weight:800;}
   .op-grid.tipo .op-meta{margin-left:0;}

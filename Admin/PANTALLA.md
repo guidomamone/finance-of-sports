@@ -688,6 +688,10 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
+- EN EL CAMINO DE FINANZAS EL SELECTOR ELIGE UN SOLO CLUB (Versión 633, to-do 96, decisión de Guido). El paso de clubes (`PASO_CLUBES` en
+  js/selector.js) es de elección única cuando `origen === 'finanzas'`: tocar un club avanza (`unico`, sin casillas ni "Elegir todos"). La multi-selección
+  es solo de Comparar, donde un lado puede ser un conjunto. Antes se podían marcar varios y el card final decía "2 clubes", "suma(2 clubes)" y "Ver los
+  números de AC Milan" a la vez. La fórmula ("suma(…)") tampoco se muestra fuera de Comparar.
 - LA ETIQUETA DE UN EJERCICIO ("2021" O "23/24") Y SU GESTIÓN SALEN DE LA FECHA DE CIERRE DE ESE EJERCICIO, NO DEL CLUB (Versión 627,
   to-do 177, decisión de Guido). Se pregunta con `esEjercicioCalendario(clubId, y)` / `cierreEjercicio(clubId, y)` (js/finanzas-calc.js), nunca con
   `clubs[id].fiscalYearStart === '01-01'`: Parma, Atalanta, Milan, Genoa y Fiorentina cambiaron la fecha de cierre algunos años, y con la regla por

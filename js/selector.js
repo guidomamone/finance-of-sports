@@ -441,13 +441,17 @@ window.CLUB_SELECTOR = (function(){
 
   var PASO_CLUBES = {
     clave:'club',
-    titulo:function(){ return t('sel.paso.club', 'Elegí uno o más clubes'); },
+    // EN EL CAMINO DE FINANZAS SE ELIGE UN SOLO CLUB (to-do 96, decisión de Guido, 2026-10-09). Finanzas muestra un club por vez, y dejar marcar
+    // varios terminaba en un card que decía "2 clubes", "suma(2 clubes)" y "Ver los números de AC Milan" a la vez. La multi-selección queda para
+    // Comparar, donde un lado sí puede ser un conjunto de clubes. Con `unico`, tocar un club avanza (el mismo mecanismo del paso "¿Qué querés medir?").
+    titulo:function(){ return origen === 'finanzas' ? t('sel.paso.club.uno', 'Elegí el club') : t('sel.paso.club', 'Elegí uno o más clubes'); },
     ayuda:function(){
       return origen === 'vs'
         ? t('sel.paso.club.ayuda.vs', 'Marcá los que quieras. Si marcás más de uno, este lado los mide como un conjunto, y en el paso siguiente elegís si los suma o los promedia.')
-        : t('sel.paso.club.ayuda', 'Marcá los que quieras. Si marcás más de uno, en el paso siguiente elegís el ejercicio de cada uno.');
+        : t('sel.paso.club.ayuda.uno', 'Finanzas muestra un club por vez. Para ver varios juntos está Comparar.');
     },
-    todos:true,
+    get unico(){ return origen === 'finanzas'; },
+    get todos(){ return origen !== 'finanzas'; },
     etiqueta:function(id){ return nameOf(id); },
     opciones:function(){
       return ordenados(clubsQueQuedan('club')).map(function(id){
@@ -467,7 +471,7 @@ window.CLUB_SELECTOR = (function(){
   // Los pasos 6 y el constructor no tienen `opciones()`: su cuerpo es propio, porque
   // no son una grilla de casillas sino una fila por sujeto.
   var PASO_LIGA_ANIO = { clave:'armado', titulo:function(){ return t('sel.paso.temporada', 'Elegí la temporada de cada liga'); }, cuerpo:cuerpoLigaAnio };
-  var PASO_CLUB_ANIO = { clave:'armado', titulo:function(){ return t('sel.paso.anio', 'Elegí el ejercicio de cada club'); }, cuerpo:cuerpoClubAnio };
+  var PASO_CLUB_ANIO = { clave:'armado', titulo:function(){ return origen === 'finanzas' ? t('sel.paso.anio.uno', 'Elegí el ejercicio') : t('sel.paso.anio', 'Elegí el ejercicio de cada club'); }, cuerpo:cuerpoClubAnio };
   var PASO_MEZCLA    = { clave:'armado', titulo:function(){ return t('sel.paso.mezcla', 'Armá este lado'); }, cuerpo:cuerpoMezcla };
 
   function pasosActivos(){
@@ -628,6 +632,16 @@ window.CLUB_SELECTOR = (function(){
   function resumenDe(p){
     var s = st[p.clave];
     if(s.saltado) return t('sel.later', 'Elegir más tarde');
+    // El paso del ejercicio no marca casillas: su resumen sale de los bloques (antes decía "—"; to-do 96).
+    if(p.cuerpo){
+      var partes = [];
+      bloques.forEach(function(b){
+        if(b.kind === 'liga') partes.push(((window.LEAGUES[b.league] || {}).name || b.league) + ' ' + (b.years || []).join(', '));
+        else (b.pares || []).forEach(function(par){ partes.push(nameOf(par[0]) + ' ' + (par[1] != null ? etiquetaEj(par[0], par[1]) : t('sel.latest.one', 'el más reciente'))); });
+      });
+      if(!partes.length) return '—';
+      return partes.length <= 3 ? partes.join(' + ') : partes.slice(0, 2).join(' + ') + ' + ' + (partes.length - 2) + ' ' + t('sel.more', 'más');
+    }
     if(!s.sel.length) return '—';
     var nombres = s.sel.map(p.etiqueta);
     if(nombres.length <= 3) return nombres.join(' + ');
@@ -678,7 +692,7 @@ window.CLUB_SELECTOR = (function(){
         } else {
           var botones = botonesDeSeleccion(p, ops);
           if(botones) body.appendChild(botones);
-          var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : '') + (p.clave === 'tipo' ? ' tipo' : ''));
+          var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : '') + (p.clave === 'tipo' ? ' tipo' : '') + (p.unico ? ' unico' : '')); // `unico`: sin casilla (to-do 96)
           ops.forEach(function(op){
             grid.appendChild(opcionBtn(op, tiene(p.clave, op.id), function(id){
               // El paso 4 es de elección única y avanza solo: es una bifurcación, no
@@ -687,6 +701,7 @@ window.CLUB_SELECTOR = (function(){
                 st[p.clave].sel = [id];
                 marcarResuelto(p.clave, false);
                 bloques = [];
+                if(p.alResolver) p.alResolver(); // el paso del club (camino de Finanzas) arma su bloque, como su botón "Continuar"
                 renderModal();
                 return;
               }
@@ -1342,8 +1357,9 @@ window.CLUB_SELECTOR = (function(){
     }
 
     body.appendChild(el('p', 'res-msg', bloques.map(nombreBloque).join(' + ')));
+    // La fórmula ("suma(…)", "promedio(…)") es de Comparar: en Finanzas no se suma nada (to-do 96).
     body.appendChild(el('p', 'res-sub', nEjercicios(pares.length) + ' ' + t('sel.of', 'de') + ' '
-      + nClubes(ids.length) + '. ' + formulaDe(l) + '.'));
+      + nClubes(ids.length) + (origen === 'vs' ? '. ' + formulaDe(l) : '') + '.'));
 
     // Peras con manzanas: se avisa, no se prohíbe (decisión explícita de Guido:
     // "suma peras con manzanas pero no es mi tema, yo tengo que dar la funcionalidad").

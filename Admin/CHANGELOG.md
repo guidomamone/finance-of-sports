@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 633 — To-do 96: en el camino de Finanzas se elige un solo club (2026-10-09)
+
+- Guido lo vio en la compu y eligió la opción "a". `js/selector.js`: el paso de clubes es de elección única cuando el selector se abre para Finanzas (Inicio,
+  header): tocar un club avanza, sin casillas (clase `unico` en la grilla, js/styles.css) ni "Elegir todos"; título "Elegí el club" y la aclaración "Finanzas
+  muestra un club por vez. Para ver varios juntos está Comparar". El paso del ejercicio dice "Elegí el ejercicio".
+- Card final: la fórmula de Comparar ("suma(2 clubes)") ya no aparece fuera de Comparar. El resumen del paso del ejercicio decía "—" (en cualquier camino):
+  ahora dice el club y su ejercicio ("AS Roma el más reciente").
+- Visto en pantalla: Finanzas avanza al tocar AS Roma y termina en "AS Roma · 1 ejercicio de 1 club · Ver los números de AS Roma"; Comparar sigue con
+  casillas y "Elegir todos (22)". ASSET_V 607. Regla en `Admin/PANTALLA.md`.
+
 ## Versión 632 — To-dos 82 y 191 cerrados (2026-10-09)
 
 - 82 (mapa país → canales de sourcing): cerrado por Guido. Ya lo resolvió el to-do 87 (un archivo por país en `.claude/skills/club-sourcing/paises/`).

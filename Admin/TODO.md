@@ -195,19 +195,3 @@ ni en el comentario de ningún archivo de código.
     sin ellos el 17) y los otros proventi se llaman los dos "altri" y Finanzas multi-año (`filaDe`, js/finanzas-multi.js) los suma en una fila (+5,25 y −6,45 M
     se ven como −1,20 M). Los ajustes solo les dan nombres distintos.
 
-96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
-    ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
-    pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
-    todos los clubes seleccionados o solo el que dice el botón"*). CHEQUEADO EN VIVO antes de anotar
-    esto: `js/selector.js` línea ~1386 (Versión 106, 2026-09-16, commit `7450c93`) YA tiene, con 2+
-    clubes y camino "Finanzas": un texto arriba del botón ("Finanzas muestra un club por vez, así que
-    vas a ver el primero. Para verlos juntos está Comparar") Y el botón nombra el club exacto ("Ver
-    los números de Almagro", no un "X" genérico) — confirmado en local, debería verse igual en
-    producción. O sea, la ambigüedad LITERAL ya no existe tal cual — pero Guido la sintió de todos
-    modos usando el sitio real, así que la aclaración no está funcionando en la práctica. Hipótesis a
-    evaluar, sin asumir cuál es: (a) jerarquía visual invertida — el texto aclaratorio es chico/gris,
-    el botón es grande/azul, y se lee el botón primero; (b) 2 botones de peso similar (uno primario
-    para 1 club, uno secundario para "llevar los N a Comparar") no resuelve la pregunta real, que es
-    ANTES de llegar a esta pantalla. ANTES DE TOCAR CÓDIGO: preguntarle a Guido en qué pantalla/
-    dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
-    gotchas de caché) y qué jerarquía visual preferiría.
