@@ -245,16 +245,13 @@ ni en el comentario de ningún archivo de código.
 180. LIRAS (ITL) Y EL RESTO DE LAS MONEDAS LEGADO. Hecho (Versión 607) para Lazio 1998-99, 1999-00 y 2000-01: ajuste manual `moneda` (tools/ajustes.mjs), ITL en CURRENCY_META con
     `euroFijo` 1936.27, ITL@AAAA-06-30 en FX_CLOSE y una excepción en `toDisplayValue` (js/finanzas-calc.js) para mostrarlas en EUR. Falta: (a) cualquier otro club o país con ejercicios
     anteriores a 2002 (Italia: Roma y Milan tienen PDFs viejos? Juventus ya llega a 2003; otros países europeos: DEM, ESP, FRF, NLG, PTE...) necesita su entrada `euroFijo` y su FX_CLOSE
-    del cierre, y un ajuste `moneda` en cada documento; (b) en las comparaciones y rankings de ligas de 1999 a 2001 conviene mirar que las liras se conviertan bien (se probó la pestaña
-    Finanzas, no Comparar ni Ligas).
+    del cierre, y un ajuste `moneda` en cada documento; (b) Comparar con un año en liras no se miró en pantalla (usa el mismo `toDisplayValue` a USD que Finanzas, que da bien:
+    2000/01 = 146,5 M USD). En Ligas no aparecen: Lazio 1999-2001 tiene la liga en null (to-do 192).
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
 185. COLA HUMANA: 26 CASOS EN 14 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
-
-186. PUSH A PRODUCCIÓN. Se subieron 103 commits el 2026-10-08 (`60103db83`) sin mirar el sitio en el navegador; hay unos 25 commits locales más desde entonces. Cada push es un deploy de Netlify y lo hace Guido. Antes de
-    subir: `node tools/audit.js --quiet` (hoy P0 0 y P1 0) y abrir el sitio local para mirar Lazio (años en liras y Serie A 2005 a 2021), Roma, Milan, Torino, Bologna 2024-25 (individual), Chievo, Salernitana y Juve Stabia (liga Serie C en la pestaña Ligas).
 
 188. COSTOS FINANCIEROS DEL CODICE CIVILE QUE SUMAN EN VEZ DE RESTAR (verificar.mjs). El 17) "interessi ed altri oneri finanziari" y el D 19) se imprimen en positivo y se restan por posición; el
     script los suma. Se arregló a mano con ajustes `fila` en Bologna 2019-20, 2020-21, 2024 y 2025 y Genoa 2023 (y Chievo lo resuelve el escalón de la sección E). Diseño pendiente: restarlos si el total
@@ -300,3 +297,8 @@ ni en el comentario de ningún archivo de código.
     fallando. (b) Hay 8 ajustes `fila` redundantes (el script ya lee esos documentos solo): Roma 2021 (2), Juve 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia por acción, 1 cada uno), Lazio 2015-16 (1) y
     Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país.
 
+192. LIGAS EN NULL EN ITALIA (revisión del 2026-10-09). 17 ejercicios cargados tienen la liga sin verificar (`data/club-leagues/it.js`) y por eso no aparecen
+    en la pestaña Ligas ni en el puesto de Finanzas: Lazio 1999, 2000, 2001, 2007 y 2026; Inter 2018, 2019 y 2020; Parma 2016, 2017 y 2025; AC Milan 2022;
+    AS Roma 2007; Cremonese 2025; Sassuolo 2024; Torino 2025. Varios son de temporadas que no tienen el roster cacheado en `tools/club-league-reference/it.json`
+    (1998-99 a 2000-01, 2006-07, 2025-26); en Inter puede ser el nombre ("Internazionale"). Parma 2016 y 2017 fueron Serie D y Lega Pro. Se completa con
+    `tools/fetch-club-league-reference.mjs` (Wikipedia, gratis) y la verificación de `cargar.mjs`.
