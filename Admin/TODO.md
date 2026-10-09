@@ -241,8 +241,6 @@ ni en el comentario de ningún archivo de código.
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
-185. COLA HUMANA: 20 CASOS EN 10 DOCUMENTOS (2026-10-09). Son de documentos ya cargados cuyas respuestas quedaron como notas. Las gestiones de Roma y de Inter ya están completas.
-
 188. COSTOS FINANCIEROS DEL CODICE CIVILE: LO QUE EL ESCALÓN "17) RESTA" NO RESUELVE. CONOCIDO, SIN DAÑO HOY. Los peldaños A (17) por el nombre de la fila y
     subtotales anteriores, Versión 621) y B (la D que quedó en el financiero, Versión 623) ya están; Torino 2019 se recargó sin su ajuste. Siguen con ajustes,
     cargados bien: Milan 2017-18 y 2021-22 e Inter 2024-25 (cierran con la lectura 4 en vez de la 5, mismos totales y distinto detalle), Milan 2023-24 (el
@@ -264,3 +262,7 @@ ni en el comentario de ningún archivo de código.
 
 191. UNA RESPUESTA VIEJA DE LA COLA PUEDE TAPAR UNA ALARMA REAL (verificado 2026-10-09 por un Sonnet): Sampdoria 2018 sin sus ajustes queda en "ok" con
     "resultado del ejercicio" fallando. No es daño hoy (el ajuste está y la carga es correcta). Los 8 ajustes redundantes que también listaba este punto se anularon (Versión 619).
+
+193. LAZIO 2006-07: LA TRANSCRIPCIÓN PERDIÓ LA COLUMNA 2005/06 DEL ESTADO (pág. 106 del visor, .md L3586-L3703). CONOCIDO, SIN DAÑO HOY. El PDF la trae
+    (TOTALE RICAVI 2005/06 87.945.533; el sitio tiene 88.658.423 del documento 2005-06, 0,8%), pero el .md tiene una sola cifra por renglón (la de 2006/07), así que los
+    chequeos del año vecino comparan contra 0 (respondidos en la cola el 2026-10-09). La carga de 2006/07 no cambia. CUÁNDO HACERLO: si se vuelve a transcribir el documento.

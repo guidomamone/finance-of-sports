@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 626 — To-do 185: la cola humana vacía (2026-10-09)
+
+- Los 20 casos respondidos por Claude (pedido de Guido), con la evidencia en cada nota:
+  - Inter 2018-19 (6, descartar): las filas no son del estado; son el cuadro "Capitalizzazione costi del vivaio" (pág. 47 del visor, impreso 31), detalle del
+    ingreso de 7,147 M ya cargado.
+  - Novorizontino 2016 (3, aceptar): el PDF imprime el estado dos veces, el resumen en miles de la pág. 1 (2.201, 1.795; también 607 y 208) y el detalle en
+    reais (2.204.550, 1.794.004; 605.485 y 206.875). Se carga el detalle, como confirmó Guido el 2026-10-02.
+  - Año anterior de Juventus 2003-04, 2004-05, 2006-07 y 2010-11, Milan 2010 y Roma 2018 (6, aceptar): sección E cargada en el sitio (Juve 2003 y 2004),
+    reexpresiones impresas (Juve IFRS 2006, Juve 2010, Milan 2009: 3.214 + 17.054 = la diferencia exacta) y gestión neta (Roma 2017).
+  - Inter 2019-20 (1, aceptar) y Lazio 2006-07 (4, aceptar): cuadro Tesserati/Altri que repite el estado; columna 2005/06 que perdió la transcripción (to-do 193).
+- To-do 185 resuelto.
+
 ## Versión 625 — To-do 189: el chequeo del año vecino con los ajustes de cada documento (2026-10-09)
 
 - `tools/verificar.mjs`, chequeos "documento del año N" y "año anterior cargado": escalón 1, solo si las columnas crudas no coinciden. Cada columna actual con los
