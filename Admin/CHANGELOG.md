@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 630 — To-do 180(b): Comparar con un año en liras, visto en pantalla (2026-10-09)
+
+- Comparar, Lazio 00/01 (liras) contra Juventus 24/25, armado con clics: Lazio 146,5 M USD de ingresos con las mismas filas que Finanzas (16,3 / 18,9 / 59,0 /
+  42,1 / 10,2); ajustado por inflación, 253,9 M USD de 2025 (= 146,5 × 128,893 / 74,360). To-do 180 resuelto entero.
+
 ## Versión 629 — TODO: 179 y 180(a) cerrados (2026-10-09)
 
 - 179 ("Italia: el fútbol está cerrado") era un resumen de estado, no una tarea: ya está en `Admin/ESTADO.md`.

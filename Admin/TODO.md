@@ -194,9 +194,6 @@ ni en el comentario de ningún archivo de código.
     no cierra exacto).
     COMPROBADO 2026-10-09 (Sonnet): un solo caso real, Hellas Verona 2023 (25.971), que cierra por la lectura 4 a 618 EUR del impreso (con el signo al revés daría 51.942 más). Los otros 19 ajustes de gasto con valor negativo (Goiás 2012 y 2013, Roma 2018 y 2021) son costos impresos con paréntesis. Sin daño.
 
-180. COMPARAR CON UN AÑO EN LIRAS: falta mirarlo en pantalla (usa el mismo `toDisplayValue` a USD que Finanzas, que da bien: Lazio 2000/01 = 146,5 M USD;
-    en Ligas, Serie A 2001, también 146,5). Cómo sumar otra moneda anterior al euro: `Admin/CONVENCIONES-DATOS.md`.
-
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 
