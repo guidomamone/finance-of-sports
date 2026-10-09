@@ -724,18 +724,24 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // financiero antes de que la extracción salga de la sección). Si pasa, las lecturas 0-6 otra vez con ese financiero, y gana la primera que
   // cierra el resultado exacto. Caso: Torino 2024 (.md L515-520), 16) 438.730, 17) 3.226.978, TOTALE (C) (2.788.248): 438.730 − 3.226.978 =
   // −2.788.248; resultado 19.682.867 − 2.788.248 − 6.496.317 = 10.398.302. No corre donde el 17) ya viene entre paréntesis y cierra
-  // (Atalanta, Sassuolo, Monza, Lazio, Roma 2022). No mira la etiqueta del renglón ("oneri"), solo la numeración del formato.
+  // (Atalanta, Sassuolo, Monza, Lazio, Roma 2022). No mira la etiqueta del renglón ("oneri"), solo la numeración del formato; el nombre fijo del 17) en las filas vale solo si el .md no
+  // trae el 17) (to-do 188, peldaño A, abajo).
   let escalon17 = false; let fin17 = null; let nota17bis = null;
   const finEst = estado.filter((f) => f.lado === 'financiero');
   // El encabezado del 17) se busca en el .md, no en las filas: la extracción a veces no lo trae (Cremonese 2025: "17) interessi e altri oneri
   // finanziari" sin importe, L189) o lo trae sin el número (Torino 2018, L568). Se reconoce por la numeración del formato o por su nombre fijo
   // (art. 2425 del Codice Civile; "17) INTEREST AND OTHER FINANCIAL EXPENSES" en los de Juventus en inglés).
   const RX17 = /(^|\|)\s*(\*\*)?\s*17\s*\)|interessi\s+e(d)?\s+altri\s+oneri\s+finanziari|interest\s+and\s+other\s+financial\s+(expenses|charges)/i;
+  const RX17NOMBRE = /interessi\s+e(d)?\s+altri\s+oneri\s+finanziari|interest\s+and\s+other\s+financial\s+(expenses|charges)/i;
   const RX17BIS = /17\s*[-\s]?\s*bis|utili\s+e\s+(\()?perdite\)?\s+su\s+cambi|exchange\s+(gains|differences)/i;
   const lineasMd = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
   const iniC = finEst.length ? Math.min(...finEst.map((f) => f.linea || Infinity)) : null;
   let cab17 = null;
   if (iniC != null && isFinite(iniC)) for (let i = iniC - 1; i < Math.min(lineasMd.length, iniC + 80); i++) if (RX17.test(lineasMd[i] || '')) { cab17 = { linea: i + 1, etiqueta: lineasMd[i].trim().slice(0, 60) }; break; }
+  // (to-do 188, peldaño A) Si el .md no trae el 17) a la altura de la tabla (Torino 2019: la transcripción dejó las etiquetas como texto arriba,
+  // L600-612, y los importes en una tabla sin nombres, L644-650), vale el nombre fijo del renglón que le puso la extracción a la fila del
+  // financiero ("Interessi e altri oneri finanziari", L646). Misma compuerta de abajo.
+  if (!cab17) { const h = finEst.filter((f) => isFinite(f.linea) && RX17NOMBRE.test(String(f.etiqueta))).sort((a, b) => a.linea - b.linea)[0]; if (h) cab17 = { linea: h.linea, etiqueta: String(h.etiqueta).slice(0, 60), deFilas: true }; }
   if (cab17 && (!E || !E.exacto)) {
     // fin de la sección C: el primer encabezado de D (rettifiche), del 18), del E) del formato viejo o el resultado antes de impuestos en el
     // .md; si no hay, la primera fila de otro lado. El total de C es el último subtotal del financiero antes de ese fin (Torino 2018: la D
@@ -744,9 +750,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const RXDE = /(^|\|)\s*(\*\*)?\s*[DE]\s*\)/; // D) / E) en mayúscula: "d) oneri diversi" es un renglón del 17)
     let finC = null; for (let i = cab17.linea; i < Math.min(lineasMd.length, cab17.linea + 80); i++) if (RXFINC.test(lineasMd[i] || '') || RXDE.test(lineasMd[i] || '')) { finC = i + 1; break; }
     const finSeccion = finC ?? estado.find((f) => f.linea > cab17.linea && f.lado !== 'financiero')?.linea;
-    const totC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => a.linea - b.linea).pop();
-    let bis = null; if (totC) for (let i = cab17.linea; i < totC.linea - 1; i++) if (RX17BIS.test(lineasMd[i] || '')) { bis = i + 1; break; }
-    if (totC) {
+    // (to-do 188, peldaño A) El total de C es el último subtotal antes del fin de la sección; si con él la compuerta no cierra, se prueban los
+    // anteriores, del último al primero, y vale el primero que cierra. Hace falta cuando el .md no tiene etiquetas y no se sabe dónde termina C
+    // (Torino 2019: el último es el 0 de la D, L650; el de C es (108.044), L648). La compuerta es la misma: el total impreso, exacto.
+    const candTotC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => b.linea - a.linea);
+    for (const totC of candTotC) {
+    let bis = null; for (let i = cab17.linea; i < totC.linea - 1; i++) if (RX17BIS.test(lineasMd[i] || '')) { bis = i + 1; break; }
+    {
       const hasta = bis || totC.linea;
       let prop = fin5Todos.map((f) => (f.origen !== 'ajuste manual' && f.linea >= cab17.linea && f.linea < hasta ? { ...f, M: -Math.abs(f.M), origen: 'estado (escalón 17) resta)' } : f));
       const tolC = Math.max(1e-6, 0.5 * [...prop, totC].reduce((a, f) => a + (f.u || 0), 0));
@@ -769,7 +779,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // la escalera completa también acá: después de la 4, la base del escalón "subtotal repetido" (Parma 2018, 2024 y 2025 necesitan los dos)
           if (n === 4 && hayRepetido) { const er = evaluar(4, false, fin17, { ing: ing4r, gas: gas4r }); if (er.cierra && er.exacto) { E = er; escalon17 = true; escalonSubRep = true; break; } }
         }
+        break; // la compuerta cerró con este total de C: no se prueban los anteriores
       }
+    }
     }
   }
   // ESCALÓN "sección D" (to-do 166, aprobado por Guido el 2026-10-08). Las rettifiche di valore di attività finanziarie (D del Codice

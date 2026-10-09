@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 621 — To-do 188, peldaño A: el escalón "17) resta" sin el 17) en el .md (2026-10-09)
+
+- `tools/verificar.mjs`, escalón "17) resta": si el .md no trae el 17) a la altura de la tabla, lo reconoce por el nombre fijo del renglón en las filas del
+  financiero ("interessi e altri oneri finanziari"); y si con el último subtotal la compuerta (total de C impreso, exacto) no cierra, prueba los subtotales
+  anteriores, del último al primero. Caso: Torino 2019 (pág. 13 del visor, .md L600-L652): 501.064 − 609.108 = (108.044), L648; el último subtotal era el 0 de la D (L650).
+- Medido en una copia, los 242 documentos con verificación (incluye prueba-completa y los 177 de Italia), antes y después: carga, chequeos, cola y estado idénticos.
+  Torino 2019 sin su ajuste manual: con el código viejo va a la cola (financiero +1,110 M); con el nuevo, "ok" con la misma carga (financiero −0,108 M).
+
 ## Versión 620 — Serie D de Italia en el catálogo; Parma 2016 y 2017 con liga (2026-10-09)
 
 - Liga nueva `it-seried` (Serie D, tier 4) en `data/leagues.js`, pedido de Guido. Parma 2016 (2015-16, girone D) en Serie D y 2017 (2016-17 Lega Pro, girone B) en Serie C.

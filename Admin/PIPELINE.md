@@ -234,6 +234,10 @@ Mitigaciones:
             cierra exacto (Versión 583, to-do 155; caso Torino 2024)
             Si la suma no da el total de C, las sumas eligen el signo de las filas del 17-bis: la ÚNICA combinación (hasta 4 filas) que da
             exacto el total de C (Versión 590, to-do 166; casos Napoli 2024 "b) perdite su cambi", Atalanta 2019)
+            Versión 621 (to-do 188, peldaño A): si el .md no trae el 17) a la altura de la tabla, vale el nombre fijo del renglón en las filas
+            del financiero; y si con el último subtotal la compuerta no cierra, se prueban los anteriores, del último al primero (caso Torino
+            2019: etiquetas como texto arriba de una tabla sin nombres; el último subtotal es el 0 de la D). Medido en los 242 documentos con
+            verificación: idéntico.
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la
