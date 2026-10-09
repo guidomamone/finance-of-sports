@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 635 — Roma 2007 y 2012 vuelven a cargarse solos; to-dos 154, 156 y 168 cerrados (2026-10-09)
+
+- Cola (to-do 170, respondidos por Claude por pedido de Guido): Roma 2007 f9da193 (reexpresión real: el sitio carga 2006 del documento 2006, Codice Civile con la
+  sección extraordinaria, 158,4 M; el documento 2007 reexpresa 2006 sin ella, 128.542, .md L4803) y Roma 2012 4d3939c (143.878 + gestione netta 4.453 = 148.331
+  exacto: el sitio cuenta la gestión neta como ingreso y el Totale ricavi del documento 2012 no). Una corrida nueva de los dos reproduce lo publicado (16 y 82 filas,
+  financiero, impuesto y extraRows idénticos) sin frenar.
+- Verificados por un Sonnet en una copia (45 documentos): 154 (Como 2025) y 168 (Inter 2019-20, Hellas Verona 2023, Monza 2023) sin daño; 156 sin daño una vez
+  resuelto Roma 2007. Cerrados.
+
 ## Versión 634 — To-do 171 cerrado: verificado sin daño (2026-10-09)
 
 - Un Sonnet en una copia: Hellas Verona 2023 ("11) Variazioni delle rimanenze" −25.971, L357, restando del costo; utile (19.927.700), L203) y Fiorentina 2023-24

@@ -67,18 +67,6 @@ ni en el comentario de ningún archivo de código.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-154. COLUMNAS POR ENTIDAD (Como 2025). CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). En un "Prospetto Pro-forma di
-    Consolidamento" (columnas Como 1907 | Società del Gruppo | Eliminazioni | Pro-forma) `extraer.mjs` toma la columna pro-forma aunque el
-    perímetro fijado sea individual: no recibe el perímetro ni una columna de entidad (solo columna_ejercicio/columna_anterior del
-    .ubicacion.json); `localizar.mjs` usa el perímetro solo para elegir BLOQUES. Las respuestas a una duda de columna quedan como nota.
-    Único caso: Como 2025, cargado bien con 23 ajustes `fila` de la columna 1 (Admin/ajustes-manuales.jsonl). Como 2024 NO lo necesita: se
-    carga desde el bilancio individual (Como-fascicolo-bilancio-2024) y el pro-forma 2024 quedó en Admin/documentos-descartados.txt.
-    CUÁNDO HACERLO: con un segundo documento con columnas por entidad y perímetro individual fijado. DISEÑO (como escalón): en extraer.mjs,
-    con perímetro individual y una cabecera de 4+ columnas cuya primera columna de importes es la del club (con "Eliminazioni"/"Pro-forma"
-    a la derecha), leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como
-    2025 tiene que dar los 23 ajustes `fila`; en los demás .filas.json no dispara.
-    COMPROBADO 2026-10-09 (informe de un Sonnet, aritmética sin revalidar): único documento Como 2025; sus 23 ajustes `fila` coinciden con la columna "Como 1907" (.md L356-L409) y el resultado publicado es el impreso. Sin ellos cargaría la pro-forma (ingresos 62,05 M y gastos 192,35 M contra 55,40 M y 158,61 M). Los otros "Eliminazioni" de `Clubes/**/*.md` son tablas de segmentos. Italia está cerrada: no crece. Re-medir solo si aparece un Como 2026 u otro documento con columnas por entidad.
-
 155. ITALIA: EL SIGNO DEL 17) Y DEL 17-BIS. CONOCIDO, SIN DAÑO HOY (escalones 1 y 2 hechos, Versiones 582 y 583). El escalón "17) resta"
     de verificar.mjs lee el 17) restando por posición y reemplazó los ajustes manuales de 14 documentos (Torino 2018/2021/2024, Udinese
     2021-22/2024-25, Napoli 2025, Cremonese 2025, Parma 2023, Bologna 2020-21/2021-22, Juventus 2002-03 a 2005-06). Quedan dos que
@@ -90,19 +78,6 @@ ni en el comentario de ningún archivo de código.
     escalón extendido (perdite del 17-bis restan; en la D, 18) suma y 19) resta), con la compuerta del total impreso de esa sección.
     Bologna 2018-19 (sin cargar) ya lee bien: financiero (556.520), el C impreso.
     COMPROBADO 2026-10-09 (Sonnet): la lista "quedan dos" estaba vieja. Napoli 2024 y Bologna 2019-20 ya no tienen ajuste. Hoy sin su ajuste caen a cola Bologna 2023-24 y 2024-25, Genoa 2023, Torino 2019, Milan 2023-24 y Hellas Verona 2023 (en los cuatro primeros el financiero cambia de signo). Con ajuste solo cambia el detalle en Milan 2017-18 y 2021-22 e Inter 2024-25. Quedarían en "ok" con números mal repartidos (si se quitara el ajuste): Inter 2020-21 (1,973 M de la D pasan al impuesto), Roma 2005 (0,547 M) y Atalanta 2025 (4 mil). El total C impreso coincide con lo publicado en los 83 documentos que se pudieron parsear. Fusionar con 166 y 188; hacerlo si entra un documento con este patrón. Sin daño en datos.
-
-156. ITALIA: VARIACIÓN DE EXISTENCIAS Y SUBTOTALES REPETIDOS. CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). El doble conteo
-    de la "variazione delle rimanenze" solo existe en las lecturas 0-3 (valor absoluto); los documentos cierran bien en la 4 o la 5. El
-    escalón B ya entró (Versión 581). Quedan dos escalones medidos por un subagente que NO corrigen ningún dato cargado:
-    - A) `cerrarNota` firma las hojas con el signo de la SUMA (verificar.mjs ~L147): Napoli 2024, nota b72 (pág. 52, .md L2097-2107,
-      795.012 − 3.704.825 + 2.816.272 − 5.917 = −99.458) queda +99.458, la lectura 4 falla por 198.916 y gana la 5 (cargado bien, 29 líneas,
-      ninguna de nota). Como troubleshoot: si la 4 no cierra, repetirla con las hojas con el signo impreso del renglón; misma compuerta.
-      Ganancia: solo detalle de Napoli 2024.
-    - C) hecho como escalón del to-do 175 (Versión 586, "subtotal repetido").
-    CUÁNDO HACERLO: si aparece un documento que con esto queda mal o frenado. Para arreglarlo a mano: un gasto con valor negativo NO resta
-    (los gastos van en valor absoluto); una partida que reduce costos se muda al lado ingreso con el mismo valor (Roma 2018, "Variazione
-    delle rimanenze (reduce costos)", 82); un total contado como línea se saca con `fila --valor "0" --reemplaza "<etiqueta>"`.
-    COMPROBADO 2026-10-09 (Sonnet): Napoli 2024 cierra con la lectura 5 (29 líneas del estado, variación −0,099458; nota b72 .md L2097-L2107) y el signo de las 90 líneas de existencias de Italia coincide con lo impreso. Solo Roma 2007 y 2018 llevan un ajuste que mueve la variación al lado ingreso (+238 y +82), por convención, sin efecto en el resultado. Sin daño.
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (otra sesión; decisión de Guido, 2026-10-07). `alta-club.mjs` deja 68 clubes sin preguntas
     ("listo-para-alta" en Admin/altas-club.jsonl), ninguno con data/<id>-data.js: Brasil (avai, crb, criciuma, cuiaba, ferroviaria,
@@ -139,15 +114,6 @@ ni en el comentario de ningún archivo de código.
     sin resultado: gastos 483,2 M, el doble). Hoy se destapa solo si falta el resultado impreso. DISEÑOS posibles (de a uno, como escalón,
     midiendo los 163): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el .md fuera del alcance del escalón 2; (b) la rama
     filaTotal no acepta líneas fuera del total que vienen de una nota; (c) sacar la fila total de las hojas antes de sumar.
-
-168. LOCALIZAR: EL ESTADO PARTIDO EN BLOQUES (localizar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). Primera parte hecha (Versión 592): el
-    resultado impreso en una tabla de una fila pegada al estado ya se lee (Napoli 2021 y 2022). Queda el estado INCOMPLETO cuando el .md lo
-    parte en tablitas o en texto con layout: Inter 2019-20 (corta en L910; el resultado, "Perdita d'esercizio", en L912 y L918), Hellas Verona
-    2023 (huecos: 11) L357, 12) L360 y la sección C L387-L395), Monza 2023 (tabla cortada en el salto de página, b39/b40). Los tres están
-    cargados y en "ok" (Inter 2019-20: pérdida −102.393.789, igual al impreso). CUÁNDO HACERLO: un documento sin cargar con este patrón que frene.
-    DISEÑO: extender el estado a los bloques consecutivos hasta el resultado del ejercicio; compuerta: con ellos, ingresos − gastos ± financiero
-    ± impuesto = ese resultado exacto.
-    COMPROBADO 2026-10-09 (Sonnet): sin daño en datos, pero dependen de ajustes manuales Inter 2019-20 (`resultado-final` −102.393.789, .md L912 y L918, y una pregunta pendiente que no es de este defecto), Inter 2020-21 (`resultado-final` 245.579.264 más un ajuste de la sección D) y Hellas Verona 2023 (5 `fila` en L357, L360 y L387-L395; sin ellos cae a cola). Monza 2023 cierra solo. Italia está cerrada: no crece.
 
 169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08): todos los
     documentos de abajo ya están cargados y cierran con sus ajustes (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13,
