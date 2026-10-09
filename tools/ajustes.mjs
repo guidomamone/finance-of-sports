@@ -22,6 +22,8 @@
 //   filas-a-mano      (Versión 614) sin valor: el .ubicacion.json y el .filas.json de ese documento se armaron o se corrigieron a mano. Escalón 0 de tools/localizar.mjs y de
 //                     tools/extraer.mjs: con --rehacer (y con lote.mjs --rehacer) NO se vuelven a pedir a la IA ni se pisan; quedan como están. Para rehacerlos de verdad hay
 //                     que quitar este ajuste a conciencia (se agrega otro con --valor no). Casos: Torino 2020 y 2025, Inter 2017-18, Lazio 2021, Salernitana 2022.
+//   no-recargar       (Versión 637) sin valor: lo publicado de ese año es mejor que lo que da una corrida nueva (más desglose, de notas que el script no abre)
+//                     y no se reproduce con ajustes razonables. tools/cargar.mjs frena (también con --reemplazar). Casos: Lazio 2012-13, Roma 2021.
 //   estado            (Versión 614) valor = los ids de los bloques del estado de resultados de ese documento, separados por coma ("b107,b108,b109"): escalón 0 de tools/localizar.mjs,
 //                     que lo pone en `estado` del .ubicacion.json aunque la IA elija otros (una corrida con --rehacer no lo deshace). Los ids son los del .md actual: si el .md
 //                     cambia, se revisan. Caso: AS Roma 2005, la IA tomó b85 (la tabla de la controlada Roma International Football Service, en euros) y el estado del
@@ -75,7 +77,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
+export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 function leer() {

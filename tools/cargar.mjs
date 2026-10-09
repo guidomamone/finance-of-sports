@@ -320,6 +320,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (q.clubId && q.clubId !== clubId) frena('club', `carpetas-clubes.mjs dice ${clubId} y onboard.mjs --quien dice ${q.clubId}`);
   if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
+  // (Versión 637) ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el
+  // desglose de las notas en miles, que el script no abre). `--reemplazar` frena; para recargar de verdad hay que anular el ajuste a conciencia.
+  { const nr = ajusteDe(pdf, 'no-recargar'); if (nr && (cd.fiscalYearMeta || {})[year]) frena('no-recargar', `ajuste manual no-recargar (${nr.fecha}): ${nr.motivo}`); }
   for (const n of ['anio', 'cierre', 'currency', 'reportType', 'fx']) { const c = campo(n); if (c.estado === 'pregunta') frena(`alta:${n}`, c.pregunta); }
   if (campo('reportType').valor && campo('reportType').valor !== 'official_balance_sheet') frena('alta:reportType', `reportType ${campo('reportType').valor}: esta etapa solo carga balances anuales`);
   // perímetro

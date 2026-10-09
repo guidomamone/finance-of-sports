@@ -84,40 +84,6 @@ ni en el comentario de ningún archivo de código.
     recalcular con `node tools/alta-club.mjs --todos` antes de armar lotes. Proceso: skill club-or-year-onboarding (club nuevo:
     subagente Sonnet por club que propone; color, liga y perímetro según club-nuevo.md).
 
-167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
-    fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Lazio 2007-08 y 2011-12 se resolvieron A MANO
-    (decisión de Guido, 2026-10-08: documentos viejos, no justifican cambiar el script): ajustes que sacan TOTALE RICAVI / TOTALE COSTI
-    OPERATIVI, y en 2011-12 las filas del estado armadas desde el .md con tools/estado-desde-md.mjs; los dos cargados. Lazio 2012-13 está cargado bien (solo
-    falla el chequeo del total de gastos: en Italia TOTALE COSTI OPERATIVI deja las amortizaciones debajo).
-    Napoli 2021 y 2022 ya están cargados (Versiones 593 y 594) gracias a la 168.
-    DEFECTO DE FONDO, sin resolver: la rama filaTotal de ajuste() acepta como "líneas fuera de ese total" las filas de una nota (Napoli 2022
-    sin resultado: gastos 483,2 M, el doble). Hoy se destapa solo si falta el resultado impreso. DISEÑOS posibles (de a uno, como escalón,
-    midiendo los 163): (a) un "ok" sin resultado impreso no es "ok" si hay un resultado en el .md fuera del alcance del escalón 2; (b) la rama
-    filaTotal no acepta líneas fuera del total que vienen de una nota; (c) sacar la fila total de las hojas antes de sumar.
-
-169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08): todos los
-    documentos de abajo ya están cargados y cierran con sus ajustes (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13,
-    Fiorentina 2021-22, 2023-24 y 2024-25); ninguno frena. CUÁNDO HACERLO: un documento sin cargar con este patrón que frene. Cuando la transcripción deja el estado como texto
-    plano o con las etiquetas en una columna y los importes en otra, extraer solo lee tablas y el estado queda sin financiero ni impuesto:
-    Genoa 2022 (pág. 10 del visor, L425-L497: financiero 0,158 e impuesto 0), Sampdoria 2018 (pág. 27, L1045-L1064), Torino 2019 (pág. 13).
-    También omite las hojas del estado cuando una nota las repite y verificar cae a las notas en miles: Lazio 2011-12 (L3552-L3611), Lazio
-    2012-13 (columnas corridas en pág. 99, L3635-L3661). Y cuenta filas hijo junto con su padre ya abierto por la nota: Fiorentina 2021-22
-    (L970-971, 7.876.653 de más), 2023-24 (L854), 2024-25 (L912, L920-921, L960-961). DISEÑO por escalón: emparejar etiquetas e importes por
-    orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
-    su padre.
-    COMPROBADO 2026-10-09 (Sonnet): los datos coinciden con el .md (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13, Fiorentina 2021-22, 2023-24 y 2024-25). Fiorentina 2024-25 (hijos contados: 28.844.321 y 14.283.626 en la columna 2024) daba una alarma falsa de año vecino; desde la Versión 625 la resuelve el escalón 1 del año vecino y queda en "ok". Sin sus ajustes Genoa 2022 y Sampdoria 2018 quedarían en "ok" con el financiero y el impuesto mal repartidos, porque un `resultado-final` o una respuesta vieja de la cola tapa la alarma (ver 191).
-
-170. GESTIÓN DE JUGADORES SIN LADO (verificar.mjs). Hecho el escalón "gestión de jugadores neta" (Versión 601): AS Roma 2013 a 2017 cierran el resultado
-    exacto y 2016 y 2017 pasan a "ok"; 2013 a 2015 solo conservan preguntas de tema en la cola. QUEDA: (a) Roma 2012 (la tabla reclasificada trae los
-    costos de otra forma: el total de gastos 141.732 no cierra con las líneas 172.731); (b) Roma 2005 a 2011, con otras causas (2005 en unidades sin
-    escala, 2007 y 2009 con el resultado, el año vecino en casi todos); (c) el caso viejo de Roma 2021, que se cargó con 2 ajustes `fila` (L2148
-    36.125 ingreso, L2149 (37.323) gasto): "Ricavi/Oneri da gestione dei diritti pluriennali" BRUTOS en los estados IFRS quedan sin lado y se pierden;
-    filas posteriores al resultado (EPS L2161, otro resultado integral L2163) pueden colarse en la lectura 6. CUÁNDO HACERLO (c): con otro documento
-    IFRS de Roma que frene. DISEÑO (c) (escalón): si ninguna lectura cierra, en la lectura 6 solo las filas "otro" entre el total de costos y
-    "Risultato prima delle imposte" (la misma ventana del escalón ya hecho); compuerta: resultado impreso exacto.
-    Nota de cómo se compara el año vecino: un documento que cuenta la gestión de jugadores NETA como ingreso (Roma 2017: 254.076) no se compara con
-    uno que no la cuenta (la columna 2017 del documento 2018: 175.000); "otro régimen", sin falsa alarma.
-
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
 

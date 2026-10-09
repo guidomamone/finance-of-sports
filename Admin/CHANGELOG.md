@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 637 — To-dos 167, 169 y 170 cerrados; ajuste `no-recargar` (2026-10-09)
+
+- Verificados por un Sonnet en una copia: todos sus documentos coinciden con el impreso y una corrida nueva los reproduce, salvo Lazio 2012-13 (167 y 169) y
+  Roma 2021 (170), donde la corrida nueva lee solo el estado (las notas en miles tienen columnas corridas) y junta categorías que lo publicado separa (Roma: premios
+  UEFA 12,8 M aparte de las entradas, amortizaciones de bienes de uso 6,5 M; Lazio: abonos 2,9 M, organización de partidos 4,7 M, juveniles 0,9 M). Lo publicado
+  cierra contra el impreso a 1,5 y 4 mil EUR. Decisión de Guido (opción a): queda como está.
+- Ajuste manual nuevo `no-recargar` (tools/ajustes.mjs; frena en tools/cargar.mjs aunque sea con `--reemplazar`), puesto en esos dos documentos. Probado: los dos frenan con su motivo.
+- Roma 2022 separato y Parma 2023 consolidado a `Admin/documentos-descartados.txt` (el otro perímetro de años ya cargados, sin .filas.json; encontrados por el Sonnet).
+
 ## Versión 636 — To-dos 155, 166 y 188 cerrados; el ajuste `fx` funciona (2026-10-09)
 
 - Los Sonnet marcaron "con daño" a 155, 166 y 188 porque `cargar.mjs --desde-verificacion` frenaba Milan 2021-22 y 2022-23 por el tipo de cambio pese al
