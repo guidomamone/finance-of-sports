@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 622 — Torino 2019 recargado sin su ajuste manual (2026-10-09)
+
+- Anulado el ajuste `fila` "17) d) oneri diversi (17, costo)" de Torino 2019 (el peldaño A del to-do 188 ya lo lee solo) y recargado con
+  `cargar.mjs --desde-verificacion --reemplazar --escribir` (decisión de Guido: lo publicado tiene que ser lo que da una corrida nueva).
+- Ingresos, gastos, financiero (−0,108 M), impuesto y totales idénticos. En el detalle del financiero la fila de 609.108 pasa a llamarse como la nombró la
+  extracción ("[sin etiqueta] Interessi e altri oneri finanziari - altri") y sale una fila en 0 ("Rettifiche di valore di attività finanziarie"). ASSET_V 604.
+
 ## Versión 621 — To-do 188, peldaño A: el escalón "17) resta" sin el 17) en el .md (2026-10-09)
 
 - `tools/verificar.mjs`, escalón "17) resta": si el .md no trae el 17) a la altura de la tabla, lo reconoce por el nombre fijo del renglón en las filas del

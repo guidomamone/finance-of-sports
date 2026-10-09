@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Italia/Torino/Torino-bilancio-2019.pdf",
  "md": "Clubes/Italia/Torino/Torino-bilancio-2019.md",
- "generado": "2026-10-08T23:17:15.375Z",
+ "generado": "2026-10-09T20:24:50.627Z",
  "estado": "ok",
  "clubId": "torino-it",
  "year": 2019,
@@ -11,22 +11,7 @@
   "factor": 1,
   "de": null
  },
- "ajustes": [
-  {
-   "pdf": "Clubes/Italia/Torino/Torino-bilancio-2019.pdf",
-   "campo": "fila",
-   "valor": "(609.108)",
-   "linea": 647,
-   "etiqueta": "17) d) oneri diversi (17, costo)",
-   "lado": "financiero",
-   "reemplaza": null,
-   "reemplazaLinea": 647,
-   "motivo": "el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)'",
-   "evidencia": "pág. 13 del visor (impreso 13), .md L644-L648",
-   "autor": "Guido",
-   "fecha": "2026-10-08"
-  }
- ],
+ "ajustes": null,
  "cola": [],
  "chequeos": [
   {
@@ -61,7 +46,7 @@
   }
  ],
  "notas": [
-  "ajuste manual: fila \"17) d) oneri diversi (17, costo)\" (financiero) (609.108), en lugar de la fila de L647 (2026-10-08, el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)')",
+  "escalón \"17) resta\": el financiero con el 17) restando da el total de C impreso; cerró la lectura 0",
   "duda de localizar ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Torino-bilancio-2019.pdf",
   "duda de localizar que no afecta la carga: b1 es una reclasificación del conto economico en miles que repite los importes de b12.",
   "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): aceptar, en Torino-bilancio-2019.pdf",
@@ -430,12 +415,7 @@
    "linea": 645
   },
   {
-   "etiqueta": "[sin etiqueta] Rettifiche di valore di attività finanziarie",
-   "M": 0,
-   "linea": 649
-  },
-  {
-   "etiqueta": "17) d) oneri diversi (17, costo)",
+   "etiqueta": "[sin etiqueta] Interessi e altri oneri finanziari - altri",
    "M": -0.609108,
    "linea": 647
   }
