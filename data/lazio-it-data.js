@@ -449,6 +449,21 @@ const lazioitRevenueLinesByYear = {
     { rawLabel:'a) plusvalenze da alienazioni', normalizedCategory:'player_sales', amountNative:0.003448, disclosureLevel:'aggregated' }, // pág. 27, precedente
     { rawLabel:'b) sopravvenienze attive straordinarie', normalizedCategory:'other_income', amountNative:7.457781, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
   ],
+  // 2004: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Lazio/Lazio-bilancio-2003-04.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2004: [
+    { rawLabel:'1 Ricavi delle vendite e delle prestazioni', normalizedCategory:'matchday_competition', amountNative:20.341259, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'2 Variazione delle rimanenze prodotti finiti', normalizedCategory:'other_income', amountNative:-0.289385, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'4 Incrementi di immobilizzaz. per lavori interni', normalizedCategory:'other_income', amountNative:1.604068, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) Cessione temporanea calciatori', normalizedCategory:'player_sales', amountNative:0.075, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'b) Canoni per licenze, marchi, brevetti', normalizedCategory:'sponsorship_commercial', amountNative:0.829787, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'c) Sponsorizzazione', normalizedCategory:'sponsorship_commercial', amountNative:7.922415, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'d) Diritti televisivi e d\'immagine', normalizedCategory:'broadcasting', amountNative:57.414538, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'e) Proventi pubblicitari', normalizedCategory:'sponsorship_commercial', amountNative:8.561079, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'g) Altri ricavi e proventi', normalizedCategory:'other_income', amountNative:4.328387, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) plusvalenze da alienazioni', normalizedCategory:'player_sales', amountNative:24.656093, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'b) altri proventi straordinari', normalizedCategory:'other_income', amountNative:10.939984, disclosureLevel:'aggregated' }, // pág. 42, precedente
+  ],
 };
 const lazioitExpenseLinesByYear = {
   2007: [ // tools/cargar.mjs (2026-10-07)
@@ -1025,6 +1040,33 @@ const lazioitExpenseLinesByYear = {
     { rawLabel:'c) sopravvenienze passive straordinarie', normalizedCategory:'exceptional_items', amountNative:-0.777914, disclosureLevel:'aggregated' }, // pág. 27, Jev 1
     { rawLabel:'d) altri oneri straordinari', normalizedCategory:'exceptional_items', amountNative:-0.3, disclosureLevel:'aggregated' }, // pág. 27, precedente
   ],
+  2004: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'6 Per materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-0.676678, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) Costi per attività sportiva', normalizedCategory:'match_organisation_expense', amountNative:-1.422625, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'b) Costi specifici tecnici', normalizedCategory:'match_organisation_expense', amountNative:-3.808205, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'c) Costi per vitto, alloggio e locomozione', normalizedCategory:'match_organisation_expense', amountNative:-0.980203, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'d) Spese assicurative', normalizedCategory:'admin_general_expense', amountNative:-1.746921, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'e) Spese amministrative', normalizedCategory:'admin_general_expense', amountNative:-7.520955, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'f ) Spese per pubblicità e promozione', normalizedCategory:'admin_general_expense', amountNative:-4.694007, disclosureLevel:'aggregated' }, // pág. 41, Jev 1
+    { rawLabel:'8 Per godimento di beni di terzi', normalizedCategory:'admin_general_expense', amountNative:-0.627628, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) Salari e stipendi', normalizedCategory:'wages_squad', amountNative:-82.617434, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'b) Oneri sociali', normalizedCategory:'wages_squad', amountNative:-3.589585, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'c) Trattamento di fine rapporto', normalizedCategory:'wages_squad', amountNative:-0.280997, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'e) Altri costi', normalizedCategory:'other_expenses', amountNative:-14.568685, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) Amm. delle immobilizzazioni immateriali', normalizedCategory:'player_amortisation', amountNative:-16.347741, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a.1) Amm. Oneri pluriennali ex DL 282', normalizedCategory:'other_amortisation', amountNative:-21.291053, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'b) Amm. delle immobilizzazioni materiali', normalizedCategory:'player_amortisation', amountNative:-1.189811, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'c) Svalutaz. Delle immobilizzazioni', normalizedCategory:'player_impairment', amountNative:-3.580885, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'d) Svalutaz. dei crediti dell\'attivo circolante e dispon.liq.', normalizedCategory:'other_expenses', amountNative:-5.338549, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'12 Accantonamenti per rischi', normalizedCategory:'other_amortisation', amountNative:-17.756086, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'13 Altri accantonamenti', normalizedCategory:'other_amortisation', amountNative:-0.490123, disclosureLevel:'aggregated' }, // pág. 41, Claude 0.88
+    { rawLabel:'a) Oneri tributari indiretti', normalizedCategory:'admin_general_expense', amountNative:-2.080385, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'b) Perdite su cambi', normalizedCategory:'other_expenses', amountNative:-0.319985, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'c) Oneri su incassi', normalizedCategory:'match_organisation_expense', amountNative:-14.860012, disclosureLevel:'aggregated' }, // pág. 41, precedente
+    { rawLabel:'a) minusvalenze da alienazioni', normalizedCategory:'exceptional_items', amountNative:-0.332079, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'b) altri oneri straordinari', normalizedCategory:'exceptional_items', amountNative:-8.56429, disclosureLevel:'aggregated' }, // pág. 42, precedente
+    { rawLabel:'a) di partecipazioni', normalizedCategory:'other_expenses', amountNative:-0.274123, disclosureLevel:'aggregated' }, // pág. 42, precedente
+  ],
 };
 const lazioitFiscalYearMeta = {
   2007: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -1500,6 +1542,28 @@ const lazioitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:88.658423, officialTotalExpenses:81.207502, officialPAT:2.078705,
   },
+  2004: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2004-06-30',
+    sourceId:'lazio-it-bilancio-2003-04',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-6.531888, tax:-1.146394,
+    extraRows: [
+      {label:'b) da titoli iscritti nelle immob. che non cost. partec.', value:0.001351},
+      {label:'d.1) da imprese controllate', value:0.000029},
+      {label:'d.4) da terzi', value:1.933822},
+      {label:'d.4.1) da compart. ex art. 102 NOIF', value:1.710166},
+      {label:'a) verso imprese controllate', value:-0.002594},
+      {label:'c) da compartecip.ex art 102 NOIF', value:-0.090965},
+      {label:'d) verso terzi', value:-10.083697},
+      {label:'a) imposte correnti', value:-1.152747},
+      {label:'b) imposte differite', value:0},
+      {label:'c) imposte anticipate', value:0.006353},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:136.383225, officialTotalExpenses:206.062676, officialPAT:-86.254108,
+  },
 };
 const lazioitPresupuestoOverlayByYear = {};
 
@@ -1661,6 +1725,12 @@ Object.assign(sources, {
     title:'S.S. Lazio S.p.A. — Lazio-progetto-bilancio-2005-06-mirror-sslaziofans (ejercicio 2006)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'lazio-it-bilancio-2003-04': {
+    id:'lazio-it-bilancio-2003-04', clubId:'lazio-it',
+    title:'S.S. Lazio S.p.A. — Lazio-bilancio-2003-04 (ejercicio 2004)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
