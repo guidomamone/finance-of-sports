@@ -72,3 +72,5 @@ Color de marca: null — tricolor amarillo, negro y blanco (pt.wikipedia: "cores
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2023 desde `Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.pdf` (sourceId `criciuma-br-relatorio-de-balanco-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2024 desde `Clubes/Brasil/Criciuma/relatorio-de-balanco-2024.pdf` (sourceId `criciuma-br-relatorio-de-balanco-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2025 desde `Clubes/Brasil/Criciuma/relatorio-auditoria-2025.pdf` (sourceId `criciuma-br-relatorio-auditoria-2025`).
