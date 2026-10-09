@@ -11,10 +11,10 @@ window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
   'juvestabia-it': [
-    // Andrea Langella: presidente y dueño; la fuente (título de un artículo aportado por Guido, "2021 - 2026: The Andrea Langella Era") da solo los años: día 01 por convención.
-    // Falta la URL del artículo y la fecha de asunción exacta.
+    // Andrea Langella: presidente y dueño de la mayoría con su hermano Giuseppe desde 2019 (borsaefinanza.it, 19/4/2024: lo describe como presidente en esa fecha). Las fechas 2021-2026 salen
+    // del título de un artículo que encontró Guido ("2021 - 2026: The Andrea Langella Era"), solo con años: día 01 por convención. Falta la fecha exacta de asunción y de salida.
     { nombre:'Andrea Langella', corto:'Langella', cargo:'Presidente', desde:'2021-01-01', hasta:'2026-01-01',
-      fuente:'artículo "2021 - 2026: The Andrea Langella Era" (aportado por Guido, 2026-10-09; falta la URL)', confirmada:true },
+      fuente:'https://borsaefinanza.it/andrea-langella-chi-e-cosa-fa-presidente-juve-stabia/', confirmada:true },
   ],
   'salernitana-it': [
     // Iervolino: presidente del consejo desde el 13/1/2022 (el trust Salernitana 2021, con un administrador único, condujo antes); firma los balances 2022 y 2023.
