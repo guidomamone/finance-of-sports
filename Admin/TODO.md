@@ -21,23 +21,6 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
-    ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
-    pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
-    todos los clubes seleccionados o solo el que dice el botón"*). CHEQUEADO EN VIVO antes de anotar
-    esto: `js/selector.js` línea ~1386 (Versión 106, 2026-09-16, commit `7450c93`) YA tiene, con 2+
-    clubes y camino "Finanzas": un texto arriba del botón ("Finanzas muestra un club por vez, así que
-    vas a ver el primero. Para verlos juntos está Comparar") Y el botón nombra el club exacto ("Ver
-    los números de Almagro", no un "X" genérico) — confirmado en local, debería verse igual en
-    producción. O sea, la ambigüedad LITERAL ya no existe tal cual — pero Guido la sintió de todos
-    modos usando el sitio real, así que la aclaración no está funcionando en la práctica. Hipótesis a
-    evaluar, sin asumir cuál es: (a) jerarquía visual invertida — el texto aclaratorio es chico/gris,
-    el botón es grande/azul, y se lee el botón primero; (b) 2 botones de peso similar (uno primario
-    para 1 club, uno secundario para "llevar los N a Comparar") no resuelve la pregunta real, que es
-    ANTES de llegar a esta pantalla. ANTES DE TOCAR CÓDIGO: preguntarle a Guido en qué pantalla/
-    dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
-    gotchas de caché) y qué jerarquía visual preferiría.
-
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
     escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
@@ -263,6 +246,19 @@ ni en el comentario de ningún archivo de código.
 191. UNA RESPUESTA VIEJA DE LA COLA PUEDE TAPAR UNA ALARMA REAL (verificado 2026-10-09 por un Sonnet): Sampdoria 2018 sin sus ajustes queda en "ok" con
     "resultado del ejercicio" fallando. No es daño hoy (el ajuste está y la carga es correcta). Los 8 ajustes redundantes que también listaba este punto se anularon (Versión 619).
 
-193. LAZIO 2006-07: LA TRANSCRIPCIÓN PERDIÓ LA COLUMNA 2005/06 DEL ESTADO (pág. 106 del visor, .md L3586-L3703). CONOCIDO, SIN DAÑO HOY. El PDF la trae
-    (TOTALE RICAVI 2005/06 87.945.533; el sitio tiene 88.658.423 del documento 2005-06, 0,8%), pero el .md tiene una sola cifra por renglón (la de 2006/07), así que los
-    chequeos del año vecino comparan contra 0 (respondidos en la cola el 2026-10-09). La carga de 2006/07 no cambia. CUÁNDO HACERLO: si se vuelve a transcribir el documento.
+96. EL CTA DE FINANZAS CON 2+ CLUBES ELEGIDOS SIGUE GENERANDO CONFUSIÓN, AUNQUE YA TIENE UNA
+    ACLARACIÓN (reportado por Guido, 2026-09-28: *"el selector me deja seleccionar dos equipos o más
+    pero al final dice 'ver los números de X'... es confuso, no queda claro si va a terminar viendo
+    todos los clubes seleccionados o solo el que dice el botón"*). CHEQUEADO EN VIVO antes de anotar
+    esto: `js/selector.js` línea ~1386 (Versión 106, 2026-09-16, commit `7450c93`) YA tiene, con 2+
+    clubes y camino "Finanzas": un texto arriba del botón ("Finanzas muestra un club por vez, así que
+    vas a ver el primero. Para verlos juntos está Comparar") Y el botón nombra el club exacto ("Ver
+    los números de Almagro", no un "X" genérico) — confirmado en local, debería verse igual en
+    producción. O sea, la ambigüedad LITERAL ya no existe tal cual — pero Guido la sintió de todos
+    modos usando el sitio real, así que la aclaración no está funcionando en la práctica. Hipótesis a
+    evaluar, sin asumir cuál es: (a) jerarquía visual invertida — el texto aclaratorio es chico/gris,
+    el botón es grande/azul, y se lee el botón primero; (b) 2 botones de peso similar (uno primario
+    para 1 club, uno secundario para "llevar los N a Comparar") no resuelve la pregunta real, que es
+    ANTES de llegar a esta pantalla. ANTES DE TOCAR CÓDIGO: preguntarle a Guido en qué pantalla/
+    dispositivo vio la confusión (para descartar mobile o una versión vieja en caché, ver CLAUDE.md
+    gotchas de caché) y qué jerarquía visual preferiría.
