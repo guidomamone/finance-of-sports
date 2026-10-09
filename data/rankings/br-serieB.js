@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
-//   2025: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -41,6 +41,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"criciuma-br", revenue:10.228, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-relatorio-auditoria-2025",
         mix:[["Cuotas Sociales",3.253],["Comercial / Sponsors",1.182],["Estadio",0.176],["Televisión",3.555],["Venta de Jugadores",1.152],["Otros ingresos",0.911]] },
+      { id:"crb-br", revenue:8.627, reportType:"official_balance_sheet",
+        sourceId:"crb-br-demonstracoes-contabeis-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.627]] },
       { id:"goias-br", revenue:8.246, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2025",
         mix:[["Comercial / Sponsors",3.622],["Televisión",3.069],["Venta de Jugadores",0.197],["Otros ingresos",1.358]] },
