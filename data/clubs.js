@@ -463,6 +463,8 @@ const clubs = {
   // Criciuma: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf. brandColor:null a propósito:
   // tricolor amarillo, negro y blanco, mismo criterio que Fortaleza (procedencia en fuentes/Brasil/Criciuma.md).
   'criciuma-br': { id:'criciuma-br', name:'Criciúma Esporte Clube', displayName:'Criciuma', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // CRB: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf. brandColor:null a propósito (procedencia en fuentes/Brasil/CRB.md).
+  'crb-br': { id:'crb-br', name:'Clube de Regatas Brasil', displayName:'CRB', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

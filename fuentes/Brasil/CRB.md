@@ -38,3 +38,5 @@
 - Último chequeo: 2026-09-22.
 
 Color de marca: null — rojo y blanco, camiseta titular blanca con faja roja (plantilla pt.wikipedia corpo1=FFFFFF, corpo2=FF0000): blanco con acento, resultado cerrado (la regla de bicolor daría #FF0000 si Guido prefiere el rojo del escudo), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2020 desde `Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf` (sourceId `crb-br-balanco-patrimonial-2020`).

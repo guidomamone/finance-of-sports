@@ -9,7 +9,7 @@
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -143,6 +143,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"juventude-br", revenue:6.232, reportType:"official_balance_sheet",
         sourceId:"juventude-br-demonstracoes-2020",
         mix:[["Comercial / Sponsors",0.632],["Estadio",0.102],["Televisión",2.968],["Venta de Jugadores",1.834],["Otros ingresos",0.696]] },
+      { id:"crb-br", revenue:2.868, reportType:"official_balance_sheet",
+        sourceId:"crb-br-balanco-patrimonial-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.868]] },
     ],
   },
   2019: {
