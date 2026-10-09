@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
  "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
- "generado": "2026-10-09T23:23:28.643Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-09T23:50:18.131Z",
+ "estado": "ok",
+ "clubId": "criciuma-br",
  "year": 2022,
  "escala": {
   "valor": "unidades",
@@ -21,12 +21,22 @@
    "evidencia": "demonstracoes-financeiras-2022.md L54",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 241,
+   "etiqueta": "(sale) subtotal CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": "gasto",
+   "reemplaza": "CUSTOS E DESPESAS OPERACIONAIS",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el subtotal 23.790.402 (L241) es NETO de 'Outras receitas Operacionais' 32.222 (L248); se cargan los departamentos (L242-L247, 23.822.624) y la otra receita como ingreso: 27.268.558 + 32.222 - 23.822.624 - 1.207.001 = 2.271.155 (L253)",
+   "evidencia": "pág. 9 del visor, .md L240-L253",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "3313f48",
-  "a27475d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,13 +45,18 @@
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"CUSTOS E DESPESAS OPERACIONAIS\" 23.790402 cierra; además se suman 6 línea(s) fuera de ese total (23.822625)"
+   "ok": false,
+   "detalle": "las líneas suman 23.822625 y el total impreso dice 23.790402"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 27.30078 - gastos 47.613027 ± financiero -1.207001 ± impuesto 0 no da el impreso 2.271155"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 15.285977; el sitio tiene 15.285978"
   },
   {
    "nombre": "documento del año 2023",
@@ -52,15 +67,11 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 15.285978 en demonstrativo-financeiro-2021.pdf y 15.285977 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
   "la nota de \"RECEITA OPERACIONAL BRUTA\" no suma el renglón (27.269058 contra 27.268558, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: sale la fila \"CUSTOS E DESPESAS OPERACIONAIS\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el subtotal 23.790.402 (L241) es NETO de 'Outras receitas Operacionais' 32.222 (L248); se cargan los departamentos (L242-L247, 23.822.624) y la otra receita como ingreso: 27.268.558 + 32.222 - 23.822.624 - 1.207.001 = 2.271.155 (L253))",
   "duda de extraer que no afecta la carga: La tabla de b29 no tiene título propio tras el salto de página (L845); sus renglones más los de b28 suman el Total L856 igual a L240."
  ],
  "reintentar": [
@@ -80,13 +91,13 @@
  ],
  "totales": {
   "ingresos": 27.30078,
-  "gastos": 47.613027,
+  "gastos": 23.822625,
   "financiero": -1.207001,
   "impuesto": 0,
   "resultadoImpreso": 2.271155,
   "resultadoParaCargar": 2.271155,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -103,14 +114,6 @@
    "M": 0.032222,
    "pagina": 9,
    "linea": 248,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "CUSTOS E DESPESAS OPERACIONAIS",
-   "lado": "gasto",
-   "M": 23.790402,
-   "pagina": 9,
-   "linea": 241,
    "origen": "estado"
   },
   {

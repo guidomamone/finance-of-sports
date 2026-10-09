@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Criciuma/balanco-auditado-2016.pdf",
  "md": "Clubes/Brasil/Criciuma/balanco-auditado-2016.md",
- "generado": "2026-10-09T23:23:28.399Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-09T23:49:19.361Z",
+ "estado": "ok",
+ "clubId": "criciuma-br",
  "year": 2016,
  "escala": {
   "valor": "unidades",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "773c4b4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,7 +42,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [],

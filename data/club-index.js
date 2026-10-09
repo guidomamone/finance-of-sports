@@ -67,7 +67,7 @@ window.CLUB_INDEX = {
   "corinthians-br": {"n":"Corinthians","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "coritiba": {"n":"Coritiba","c":"BR","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "cremonese-it": {"n":"Cremonese","c":"IT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "criciuma-br": {"n":"Criciuma","c":"BR","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"]]},
+  "criciuma-br": {"n":"Criciuma","c":"BR","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"]]},
   "cruzeiro": {"n":"Cruzeiro","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "crystalpalace-gb": {"n":"Crystal Palace","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "dender-be": {"n":"Dender EH","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
