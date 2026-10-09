@@ -105,6 +105,7 @@ ni en el comentario de ningún archivo de código.
     con perímetro individual y una cabecera de 4+ columnas cuya primera columna de importes es la del club (con "Eliminazioni"/"Pro-forma"
     a la derecha), leer esa columna fila por fila; compuerta: su total impreso = la suma de sus filas; si no, la IA como hoy. Medir: Como
     2025 tiene que dar los 23 ajustes `fila`; en los demás .filas.json no dispara.
+    COMPROBADO 2026-10-09 (informe de un Sonnet, aritmética sin revalidar): único documento Como 2025; sus 23 ajustes `fila` coinciden con la columna "Como 1907" (.md L356-L409) y el resultado publicado es el impreso. Sin ellos cargaría la pro-forma (ingresos 62,05 M y gastos 192,35 M contra 55,40 M y 158,61 M). Los otros "Eliminazioni" de `Clubes/**/*.md` son tablas de segmentos. Italia está cerrada: no crece. Re-medir solo si aparece un Como 2026 u otro documento con columnas por entidad.
 
 155. ITALIA: EL SIGNO DEL 17) Y DEL 17-BIS. CONOCIDO, SIN DAÑO HOY (escalones 1 y 2 hechos, Versiones 582 y 583). El escalón "17) resta"
     de verificar.mjs lee el 17) restando por posición y reemplazó los ajustes manuales de 14 documentos (Torino 2018/2021/2024, Udinese
@@ -116,6 +117,7 @@ ni en el comentario de ningún archivo de código.
     CUÁNDO HACERLO: si aparece un documento sin cargar con ese patrón (17-bis desglosado o la D con importes) y no cierra. Diseño: el mismo
     escalón extendido (perdite del 17-bis restan; en la D, 18) suma y 19) resta), con la compuerta del total impreso de esa sección.
     Bologna 2018-19 (sin cargar) ya lee bien: financiero (556.520), el C impreso.
+    COMPROBADO 2026-10-09 (Sonnet): la lista "quedan dos" estaba vieja. Napoli 2024 y Bologna 2019-20 ya no tienen ajuste. Hoy sin su ajuste caen a cola Bologna 2023-24 y 2024-25, Genoa 2023, Torino 2019, Milan 2023-24 y Hellas Verona 2023 (en los cuatro primeros el financiero cambia de signo). Con ajuste solo cambia el detalle en Milan 2017-18 y 2021-22 e Inter 2024-25. Quedarían en "ok" con números mal repartidos (si se quitara el ajuste): Inter 2020-21 (1,973 M de la D pasan al impuesto), Roma 2005 (0,547 M) y Atalanta 2025 (4 mil). El total C impreso coincide con lo publicado en los 83 documentos que se pudieron parsear. Fusionar con 166 y 188; hacerlo si entra un documento con este patrón. Sin daño en datos.
 
 156. ITALIA: VARIACIÓN DE EXISTENCIAS Y SUBTOTALES REPETIDOS. CONOCIDO, SIN DAÑO HOY (decisión de Guido, 2026-10-07). El doble conteo
     de la "variazione delle rimanenze" solo existe en las lecturas 0-3 (valor absoluto); los documentos cierran bien en la 4 o la 5. El
@@ -128,6 +130,7 @@ ni en el comentario de ningún archivo de código.
     CUÁNDO HACERLO: si aparece un documento que con esto queda mal o frenado. Para arreglarlo a mano: un gasto con valor negativo NO resta
     (los gastos van en valor absoluto); una partida que reduce costos se muda al lado ingreso con el mismo valor (Roma 2018, "Variazione
     delle rimanenze (reduce costos)", 82); un total contado como línea se saca con `fila --valor "0" --reemplaza "<etiqueta>"`.
+    COMPROBADO 2026-10-09 (Sonnet): Napoli 2024 cierra con la lectura 5 (29 líneas del estado, variación −0,099458; nota b72 .md L2097-L2107) y el signo de las 90 líneas de existencias de Italia coincide con lo impreso. Solo Roma 2007 y 2018 llevan un ajuste que mueve la variación al lado ingreso (+238 y +82), por convención, sin efecto en el resultado. Sin daño.
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (otra sesión; decisión de Guido, 2026-10-07). `alta-club.mjs` deja 68 clubes sin preguntas
     ("listo-para-alta" en Admin/altas-club.jsonl), ninguno con data/<id>-data.js: Brasil (avai, crb, criciuma, cuiaba, ferroviaria,
@@ -152,6 +155,7 @@ ni en el comentario de ningún archivo de código.
     D cierra con otra lectura, con notas y redondeos de 1-2 mil EUR), AC Milan 2023-24 (no cierra sin ajuste), Torino 2019 (L647 609.108: el
     17) sin el número se suma como ingreso) y Napoli 2022 (sin cargar; to-do 167). Informes: Admin/informes-etapa6-italia/informe-{A,B,C,D}.md.
     CUÁNDO HACERLO: si un documento nuevo con este patrón frena.
+    COMPROBADO 2026-10-09 (Sonnet): Inter 2021-22, Bologna 2019-20, Como 2024, Atalanta 2019 y Napoli 2023 y 2024 ya no tienen ajuste y las cargas son idénticas. Milan 2023-24 y Torino 2019 necesitan el suyo (sin él, cola; Torino 2019 daría financiero +1,110 en vez de −0,108); Milan 2017-18 y 2021-22 e Inter 2024-25 cierran igual con 1-2 mil EUR de diferencia. Napoli 2022 ya está cargado. Sin daño.
 
 167. LECTURA 0: EL TOTAL CONTADO COMO UNA LÍNEA MÁS (verificar.mjs). La lectura 0 (y la rama "filaTotal" del chequeo de totales) suma la
     fila TOTAL además de sus hojas, y toma los renglones entre paréntesis en valor absoluto. Lazio 2007-08 y 2011-12 se resolvieron A MANO
@@ -171,6 +175,7 @@ ni en el comentario de ningún archivo de código.
     cargados y en "ok" (Inter 2019-20: pérdida −102.393.789, igual al impreso). CUÁNDO HACERLO: un documento sin cargar con este patrón que frene.
     DISEÑO: extender el estado a los bloques consecutivos hasta el resultado del ejercicio; compuerta: con ellos, ingresos − gastos ± financiero
     ± impuesto = ese resultado exacto.
+    COMPROBADO 2026-10-09 (Sonnet): sin daño en datos, pero dependen de ajustes manuales Inter 2019-20 (`resultado-final` −102.393.789, .md L912 y L918, y una pregunta pendiente que no es de este defecto), Inter 2020-21 (`resultado-final` 245.579.264 más un ajuste de la sección D) y Hellas Verona 2023 (5 `fila` en L357, L360 y L387-L395; sin ellos cae a cola). Monza 2023 cierra solo. Italia está cerrada: no crece.
 
 169. EXTRAER: ETIQUETAS SEPARADAS DE LOS IMPORTES Y SUB-FILAS OMITIDAS (extraer.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08): todos los
     documentos de abajo ya están cargados y cierran con sus ajustes (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13,
@@ -182,6 +187,7 @@ ni en el comentario de ningún archivo de código.
     (L970-971, 7.876.653 de más), 2023-24 (L854), 2024-25 (L912, L920-921, L960-961). DISEÑO por escalón: emparejar etiquetas e importes por
     orden solo si la aritmética del estado cierra con ese emparejamiento; sacar una fila cuyo importe = la suma de las filas que desglosan a
     su padre.
+    COMPROBADO 2026-10-09 (Sonnet): los datos coinciden con el .md (Genoa 2022, Sampdoria 2018, Torino 2019, Lazio 2011-12 y 2012-13, Fiorentina 2021-22, 2023-24 y 2024-25). "Ninguno frena" no era cierto para Fiorentina 2024-25: los hijos contados (28.844.321 y 14.283.626 en la columna 2024) dan una alarma falsa de año vecino y un caso de cola pendiente (49a0476). Sin sus ajustes Genoa 2022 y Sampdoria 2018 quedarían en "ok" con el financiero y el impuesto mal repartidos, porque un `resultado-final` o una respuesta vieja de la cola tapa la alarma. Ver 189.
 
 170. GESTIÓN DE JUGADORES SIN LADO (verificar.mjs). Hecho el escalón "gestión de jugadores neta" (Versión 601): AS Roma 2013 a 2017 cierran el resultado
     exacto y 2016 y 2017 pasan a "ok"; 2013 a 2015 solo conservan preguntas de tema en la cola. QUEDA: (a) Roma 2012 (la tabla reclasificada trae los
@@ -203,6 +209,7 @@ ni en el comentario de ningún archivo de código.
     suma. DISEÑO (escalón, no regla): si ninguna lectura cerró el resultado EXACTO y hay ajustes `fila` de gasto con valor impreso
     negativo, repetir las lecturas con esos ajustes restando; compuerta: el resultado impreso exacto (y gana solo si con el signo de hoy
     no cierra exacto).
+    COMPROBADO 2026-10-09 (Sonnet): un solo caso real, Hellas Verona 2023 (25.971), que cierra por la lectura 4 a 618 EUR del impreso (con el signo al revés daría 51.942 más). Los otros 19 ajustes de gasto con valor negativo (Goiás 2012 y 2013, Roma 2018 y 2021) son costos impresos con paréntesis. Sin daño.
 
 172. AÑO VECINO SIN LOS AJUSTES DEL OTRO DOCUMENTO (verificar.mjs). CONOCIDO, SIN DAÑO HOY (medido 2026-10-08). El chequeo "documento del
     año N" compara contra las filas crudas del otro documento, sin sus ajustes `fila`. El caso que lo abrió (Parma 2024 contra Parma 2023)
@@ -212,6 +219,7 @@ ni en el comentario de ningún archivo de código.
     cargados, en "ok" y sin casos en la cola. CUÁNDO HACERLO: si una falsa alarma de este tipo frena un documento. DISEÑO (escalón): si el
     chequeo falla y usa la columna del ejercicio del OTRO documento (el anterior, dy=-1) y ese documento tiene ajustes `fila`, comparar
     contra su totales.ingresos del .verificacion.json; compuerta: la misma tolerancia del chequeo.
+    REFUTADO 2026-10-09 (Sonnet, ya no es "sin daño" en la cola): hoy son 5 pares donde el documento anterior tiene ajustes `fila` (Juve 2004-05/2005-06, Roma 2007/2008, Roma 2018/2019, Lazio 2007-08/2008-09, Fiorentina 2023-24/2024-25); el diseño de este punto arregla 3. Lazio 2008-09 tiene 2 casos pendientes. Arreglo en 189.
 
 173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CON DAÑO desde el lote 40 (2026-10-08): la cola pasó a 267 casos (Salernitana
     2022: 38, Inter 2024: 23, Genoa 2023: 19) y 15 documentos frenan solo por preguntas. Antes (lote 28): ~20 de 71. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
@@ -229,6 +237,7 @@ ni en el comentario de ningún archivo de código.
     fiscalYearStart 01-01: 2018 se muestra "2018" y es 17/18). Un ejercicio de menos de 12 meses no se carga: Atalanta 2022 (1/1 al 30/6/2022) se
     sacó y Parma sep-dic 2020 (4 meses) no se carga; los dos en Admin/documentos-descartados.txt. DISEÑO si algún día se hace: la etiqueta sale de
     la fecha de cierre de cada ejercicio (31/12 = "2021", 30/6 = "23/24") y no del valor por club.
+    REFUTADO 2026-10-09 (Sonnet, leyendo y replicando el código; no visto en pantalla): ya no es "puntual". Son 17 ejercicios de 5 clubes (AC Milan 2008-2013, Atalanta 2018-2021, Fiorentina 2019, Genoa 2022-2023, Parma 2016-2019). Además de la etiqueta, `cierre()` de `js/finanzas-anios.js` asigna mal la gestión de Parma 2016 (sin gestión) y 2018 (Pizzarotti en vez de Jiang). Arreglo mínimo: tomar la fecha de cierre del `fxRef` de cada ejercicio (p. ej. `EUR@2018-06-30`) en `etiqueta()` y `cierre()` y dejar de usar `fiscalYearStart` por club. Necesita decisión de Guido (había dicho que no se tocaba) y medir de nuevo con cada club que cambie el cierre.
 
 179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). No queda nada de fútbol por cargar: Catania 2011 (un artículo de prensa, transcripto) y el Juve Stabia semestral (6 meses) están en `Admin/documentos-descartados.txt`. Quedaron resueltas: las gestiones de Roma (Sensi, Cappelli, DiBenedetto, Pallotta, con fechas de prensa y de la relazione) y de Inter (Thohir) en `data/gestiones/it.js`; Juve Stabia
     (Langella hasta junio de 2026, Guerri desde ahí); las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada); y el ajuste `filas-a-mano` (Torino 2020 y 2025, Inter 2017-18, Lazio 2021 y Salernitana 2022: `localizar` y `extraer` no los pisan ni con `--rehacer`; para rehacerlos hay que agregar el ajuste con `--valor no`).
@@ -256,6 +265,7 @@ ni en el comentario de ningún archivo de código.
     la gestión neta por ajuste), Sampdoria 2020 contra 2021 (el ajuste que saca 10,63 M no llega a la columna anterior de 2021 y falta la fila Incrementi 1.779.291, L888), Inter 2021 (faltan 2 filas de
     taquilla de 2020: L640 27.574.094 y L642 16.802.772). Diseño pendiente: en la columna actual del documento propio y del vecino usar sus ajustes (reemplazar y agregar con la escala de cada uno) y
     permitir un valor para la columna anterior en un ajuste `fila`. Conocido, sin daño hoy: no se diseña hasta que aparezca un caso que la cola no pueda aceptar.
+    REFUTADO 2026-10-09 (Sonnet, ya no es "sin daño" en la cola; datos publicados correctos, alarmas falsas explicadas al EUR): de 15 pares que fallan, 9 se deben a ajustes que el chequeo no lee (Juve 2003-04 a 2005-06, Roma 2006 a 2008 y 2018/2019, Lazio 2006-07 a 2008-09, Fiorentina 2023-25, Inter 2019-21, Sampdoria 2020/2021). Dejaron ~35 casos de cola contestados a mano y 8 de los 21 pendientes. Arreglo mínimo propuesto en `tools/verificar.mjs` (`compararVecino` y "año anterior cargado"): si el documento cuya columna anterior se lee tiene ajustes `fila` vigentes, `ok:null` (no comparable) cuando falla; si no, comparar contra `totales.ingresos` del `.verificacion.json` del otro con la tolerancia del 2%. Silencia 9 de los 15 pares y no crea falsos ok. Falta medirlo (otro Sonnet lo está diseñando; ver su informe).
 
 190. UN TERCER ESTADO PARA LOS BALANCES PARCIALES: "BALANCE DE MENOS DE 12 MESES" (pedido de Guido, 2026-10-09). Hoy un documento de menos de 12 meses va a `Admin/documentos-descartados.txt` junto con los que no sirven
     (informes del auditor, artículos de prensa), y no se distingue del resto: si algún día aparece el otro tramo del ejercicio, nada lo avisa. Pasaría a ser un estado propio, "parcial", con el período
@@ -266,4 +276,9 @@ ni en el comentario de ningún archivo de código.
     el otro tramo" y no como descartado; (b) la regla para juntar dos tramos que suman 12 meses (suma de ingresos y gastos, el balance de cierre del segundo, un solo ejercicio con su `cierre` y una nota
     pública que diga de dónde sale cada mitad) y para cuando dos parciales no se pueden unir (tipo de cambio de cierre, perímetro distinto, el primero cerrado con otra moneda); (c) que el tramo se
     busque en sourcing (`fuentes/Italia/<club>.md`): anotar en la ficha del club qué tramo falta. Mientras tanto no se carga ningún parcial: ver `Admin/CONVENCIONES-DATOS.md`, la regla de los 12 meses.
+
+191. LOS DOS HALLAZGOS DE HIGIENE (verificado 2026-10-09 por un Sonnet). (a) Una respuesta vieja de la cola puede tapar una alarma real: Sampdoria 2018 sin sus ajustes queda en "ok" con "resultado del ejercicio"
+    fallando. (b) Hay 8 ajustes `fila` redundantes (el script ya lee esos documentos solo): Roma 2021 (2), Juve 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia por acción, 1 cada uno), Lazio 2015-16 (1) y
+    Napoli 2022 (1); y el to-do 188 nombra Bologna 2019-20 y 2020-21 como arreglados a mano cuando ya no tienen ajuste. No es daño: limpiar a mano y revisar al cerrar cada país. Y sin investigar: Lazio 2000-01
+    (liras) publica ingresos 334.514 contra 245.757 en su `.verificacion.json`, con el resultado igual (to-do 180).
 
