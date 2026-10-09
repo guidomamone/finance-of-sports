@@ -232,19 +232,13 @@ ni en el comentario de ningún archivo de código.
 
 179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). Solo queda
     Catania 2011 (un artículo de prensa) y el Juve Stabia semestral: transcripción, sin cargar (punto 184). Quedaron resueltas: las gestiones de Roma (Sensi, Cappelli, DiBenedetto, Pallotta, con fechas de prensa y de la relazione) y de Inter (Thohir) en `data/gestiones/it.js`; Juve Stabia
-    (Langella hasta junio de 2026, Guerri desde ahí); las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); y el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada).
+    (Langella hasta junio de 2026, Guerri desde ahí); las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada); y el ajuste `filas-a-mano` (Torino 2020 y 2025, Inter 2017-18, Lazio 2021 y Salernitana 2022: `localizar` y `extraer` no los pisan ni con `--rehacer`; para rehacerlos hay que agregar el ajuste con `--valor no`).
 
 180. LIRAS (ITL) Y EL RESTO DE LAS MONEDAS LEGADO. Hecho (Versión 607) para Lazio 1998-99, 1999-00 y 2000-01: ajuste manual `moneda` (tools/ajustes.mjs), ITL en CURRENCY_META con
     `euroFijo` 1936.27, ITL@AAAA-06-30 en FX_CLOSE y una excepción en `toDisplayValue` (js/finanzas-calc.js) para mostrarlas en EUR. Falta: (a) cualquier otro club o país con ejercicios
     anteriores a 2002 (Italia: Roma y Milan tienen PDFs viejos? Juventus ya llega a 2003; otros países europeos: DEM, ESP, FRF, NLG, PTE...) necesita su entrada `euroFijo` y su FX_CLOSE
     del cierre, y un ajuste `moneda` en cada documento; (b) en las comparaciones y rankings de ligas de 1999 a 2001 conviene mirar que las liras se conviertan bien (se probó la pestaña
     Finanzas, no Comparar ni Ligas).
-
-181. LO ARMADO A MANO EN `Generados/` SE PISA CON `--rehacer`. Torino 2020 y 2025, Inter 2017-18, Lazio 2021 (`estado-desde-md.mjs` más dos filas corregidas en el `.filas.json`) y Salernitana 2022 (22 filas de primer nivel del comparativo de 2023, a mano) tienen el estado armado a mano en la sesión (Torino-bilancio-2020/2025 y
-    Inter-fascicolo-bilancio-consolidato-2017-18: `.ubicacion.json` y `.filas.json`, con el `.md` re-transcripto de la página del estado). Está commiteado y `verificar.mjs` lo reproduce, pero un
-    `lote.mjs --rehacer` sobre esos documentos vuelve a pedirle la extracción a la IA y lo pisa. Decisión pendiente de Guido: o se protegen (que el lote no los rehaga si `modelo` dice
-    "a mano") o se vuelve a correr la extracción con el `.md` ya arreglado y se compara. Lo que sí sobrevive a todo: las respuestas de la cola (`Admin/cola-revision.jsonl`) y los ajustes
-    (`Admin/ajustes-manuales.jsonl`).
 
 183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
     Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.

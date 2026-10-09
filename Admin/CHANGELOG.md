@@ -21,6 +21,9 @@ que dice `ESTADO.md` era verdad ese día.
   de Roma 2005 contestada (los oneri pluriennali ex art. 18-bis, como los de DL 282 de Lazio 2005, van como `other_amortisation`).
 - Ajuste manual nuevo `estado` (`tools/ajustes.mjs`, escalón 0 de `tools/localizar.mjs`, función `aplicarAjusteEstado`): fija los bloques del estado y una corrida con `--rehacer` no lo deshace. Probado
   sobre un resultado simulado de la IA; en Roma 2005 deja b107-b112 aunque la IA elija b85.
+- Ajuste manual `filas-a-mano` (escalón 0 de `localizar.mjs` y `extraer.mjs`): lo armado a mano no se pisa ni con `--rehacer`. Puesto en Torino 2020 y 2025, Inter 2017-18, Lazio 2021 y Salernitana 2022; to-do 181
+  resuelto. Probado sin API con Torino 2020 y Salernitana 2022 (costo 0); la prueba también corrió la IA sobre Sassuolo 2018 (sin ajuste, US$ 0,33) y sus archivos se restauraron de git.
+- Gestiones de Roma (Sensi hasta el 1/7/2011, Cappelli, DiBenedetto, Pallotta desde el 27/8/2012) e Inter (Thohir hasta el 26/10/2018) con fuentes de prensa y de la relazione de la Roma.
 - Juve Stabia: Andrea Langella hasta junio de 2026 y Alfredo Guerri desde ahí (dato de Guido).
 
 ## Versión 613 — To-do 179: 11 años más de Italia cargados (lote 53) y push (2026-10-09)

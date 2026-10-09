@@ -448,7 +448,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 ### Ajustes manuales (Versión 366)
 
 - `Admin/ajustes-manuales.jsonl`, se lee y se agrega con `node tools/ajustes.mjs`. Una decisión de Guido atada al documento y al campo
-  (`estado` (los bloques del estado de resultados, escalón 0 de `localizar.mjs`; Versión 614, AS Roma 2005), `resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
+  (`filas-a-mano` (`localizar.mjs` y `extraer.mjs` no pisan la ubicación ni las filas armadas a mano, ni con `--rehacer`; Versión 614), `estado` (los bloques del estado de resultados, escalón 0 de `localizar.mjs`; Versión 614, AS Roma 2005), `resultado-final`, `sin-dudas`, `fila`, `fx`, `cero-real`, `desglose`, `categoria`, `perimetro` — este también para todo el club —, `cierre`, `reportType`, `confirmado`, `caja`, `deuda-incluye` — este también para todo el club); es el escalón 0 de cada escalera y queda escrita en el `.verificacion.json` y en la meta del año.
 - `fila` saca la fila que trajo mal la extracción con `--reemplaza "<etiqueta>"` (TODAS las que se llaman así) o `--reemplaza-linea N`
   (SOLO la de esa línea del .md, o las hojas de su nota si estaba abierta). Con etiquetas repetidas (en el formato italiano "altri" es
   ingreso, financiero + y financiero −), siempre por línea.
