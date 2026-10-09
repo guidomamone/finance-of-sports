@@ -225,6 +225,7 @@ const LEAGUES = {
   'it-seriea':         { name:'Serie A',               full:'Serie A de Italia',                   country:'IT', sport:'futbol', tier:1 },
   'it-serieb':         { name:'Serie B',               full:'Serie B de Italia',                   country:'IT', sport:'futbol', tier:2 },
   'it-seriec':         { name:'Serie C',               full:'Serie C de Italia',                   country:'IT', sport:'futbol', tier:3 },
+  'it-seried':         { name:'Serie D',               full:'Serie D de Italia',                   country:'IT', sport:'futbol', tier:4 },
   'kr-kleague1':       { name:'K League 1',            full:'K League 1',                          country:'KR', sport:'futbol', tier:1 },
   'kr-kleague2':       { name:'K League 2',            full:'K League 2',                          country:'KR', sport:'futbol', tier:2 },
   'nl-eerstedivisie':  { name:'Eerste Divisie',        full:'Eerste Divisie de los Países Bajos',  country:'NL', sport:'futbol', tier:2 },

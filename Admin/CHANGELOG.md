@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 620 — Serie D de Italia en el catálogo; Parma 2016 y 2017 con liga (2026-10-09)
+
+- Liga nueva `it-seried` (Serie D, tier 4) en `data/leagues.js`, pedido de Guido. Parma 2016 (2015-16, girone D) en Serie D y 2017 (2016-17 Lega Pro, girone B) en Serie C.
+- Los dos planteles se armaron a mano desde el wikitext de Wikipedia, con todos los grupos (Serie D: 9 gironi, 170 clubes; Lega Pro: 3 grupos, 60), porque
+  `fetch-club-league-reference.mjs` lee una sola tabla. Guardados en `tools/club-league-reference/it.json` con esa aclaración en `section`.
+- Rankings regenerados (`data/rankings/it-seried.js` nuevo), ASSET_V 603. Ya no queda ningún ejercicio de Italia con la liga en null.
+
 ## Versión 619 — To-do 191(b): 8 ajustes manuales redundantes anulados (2026-10-09)
 
 - Anulados (registro `anulado` en `Admin/ajustes-manuales.jsonl`, el historial queda): Juventus 2018-19, 2020-21, 2022-23 y 2023-24 (la ganancia o pérdida por acción),
