@@ -13,7 +13,7 @@
 //   2019: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2016: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2016: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2014: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -390,6 +390,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"asroma-it", revenue:314.848, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2016",
         mix:[["Comercial / Sponsors",17.427],["Estadio",57.884],["Televisión",148.166],["Venta de Jugadores",71.238],["Otros ingresos",20.133]] },
+      { id:"lazio-it", revenue:104.159, reportType:"official_balance_sheet",
+        sourceId:"lazio-it-bilancio-separato-consolidato-2015-16",
+        mix:[["Comercial / Sponsors",13.241],["Estadio",8.361],["Televisión",75.358],["Venta de Jugadores",2.262],["Otros ingresos",4.937]] },
       { id:"chievoverona-it", revenue:76.079, reportType:"official_balance_sheet",
         sourceId:"chievoverona-it-bilancio-30-giugno-2016",
         mix:[["Comercial / Sponsors",6.576],["Estadio",2.26],["Televisión",38.942],["Venta de Jugadores",21.866],["Otros ingresos",6.435]] },

@@ -464,6 +464,17 @@ const lazioitRevenueLinesByYear = {
     { rawLabel:'a) plusvalenze da alienazioni', normalizedCategory:'player_sales', amountNative:24.656093, disclosureLevel:'aggregated' }, // pág. 42, precedente
     { rawLabel:'b) altri proventi straordinari', normalizedCategory:'other_income', amountNative:10.939984, disclosureLevel:'aggregated' }, // pág. 42, precedente
   ],
+  // 2016: cargado por tools/cargar.mjs (2026-10-09) desde Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2016: [
+    { rawLabel:'Ricavi da gare', normalizedCategory:'matchday_competition', amountNative:7.530904, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Diritti radiotelevisivi e proventi media', normalizedCategory:'broadcasting', amountNative:67.877949, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Ricavi da sponsorizzazione e pubblicità', normalizedCategory:'sponsorship_commercial', amountNative:11.085293, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Proventi da gestione diritti calciatori', normalizedCategory:'player_sales', amountNative:2.037827, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Altri ricavi', normalizedCategory:'other_income', amountNative:5.055756, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Variazione delle rimanenze', normalizedCategory:'other_income', amountNative:-0.608641, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Ricavi da merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.84142, disclosureLevel:'aggregated' }, // pág. 97, precedente
+  ],
 };
 const lazioitExpenseLinesByYear = {
   2007: [ // tools/cargar.mjs (2026-10-07)
@@ -1067,6 +1078,15 @@ const lazioitExpenseLinesByYear = {
     { rawLabel:'b) altri oneri straordinari', normalizedCategory:'exceptional_items', amountNative:-8.56429, disclosureLevel:'aggregated' }, // pág. 42, precedente
     { rawLabel:'a) di partecipazioni', normalizedCategory:'other_expenses', amountNative:-0.274123, disclosureLevel:'aggregated' }, // pág. 42, precedente
   ],
+  2016: [ // tools/cargar.mjs (2026-10-09)
+    { rawLabel:'Materie prime, sussidiarie, di consumo e di merci', normalizedCategory:'other_expenses', amountNative:-2.168272, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Personale', normalizedCategory:'wages_squad', amountNative:-59.054746, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Oneri da gestione diritti calciatori', normalizedCategory:'other_expenses', amountNative:-0.179717, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Oneri per servizi esterni', normalizedCategory:'admin_general_expense', amountNative:-17.396524, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Altri oneri', normalizedCategory:'other_expenses', amountNative:-5.65995, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Ammortamenti e svalutazioni delle immobilizzazioni', normalizedCategory:'player_amortisation', amountNative:-18.147345, disclosureLevel:'aggregated' }, // pág. 97, precedente
+    { rawLabel:'Accantonamenti e altre svalutazioni', normalizedCategory:'other_amortisation', amountNative:-0.699477, disclosureLevel:'aggregated' }, // pág. 97, precedente
+  ],
 };
 const lazioitFiscalYearMeta = {
   2007: { // tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -1564,6 +1584,22 @@ const lazioitFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:136.383225, officialTotalExpenses:206.062676, officialPAT:-86.254108,
   },
+  // 2016: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.866.421). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)
+  2016: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'EUR', fxRef:'EUR@2016-06-30',
+    sourceId:'lazio-it-bilancio-separato-consolidato-2015-16',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.866421, tax:-1.27321,
+    extraRows: [
+      {label:'Oneri finanziari netti e differenze cambio', value:-1.866421},
+      {label:'Imposte correnti', value:-1.979115},
+      {label:'Imposte differite e anticipate', value:0.705905},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:93.820508, officialTotalExpenses:103.306031, officialPAT:-12.625154,
+  },
 };
 const lazioitPresupuestoOverlayByYear = {};
 
@@ -1731,6 +1767,12 @@ Object.assign(sources, {
     title:'S.S. Lazio S.p.A. — Lazio-bilancio-2003-04 (ejercicio 2004)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
+  },
+  'lazio-it-bilancio-separato-consolidato-2015-16': {
+    id:'lazio-it-bilancio-separato-consolidato-2015-16', clubId:'lazio-it',
+    title:'S.S. Lazio S.p.A. — Lazio-bilancio-separato-consolidato-2015-16 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-09) desde la transcripción Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.',
   },
 });
 
