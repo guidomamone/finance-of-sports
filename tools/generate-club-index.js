@@ -41,6 +41,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { cierreEjercicio, cierreDelClub, esCalendario } = require('./cierre-ejercicio.js');
 
 const ROOT = path.resolve(__dirname, '..');
 // Versión 138: el destino pasó a ser Admin/ESTADO.md (hasta la 137 esta sección vivía dentro del
@@ -113,11 +114,10 @@ const COUNTRY_NAME = {
   PE: 'Perú', UY: 'Uruguay',
 };
 
-function fmtYears(years, clubEntry) {
-  // Un club de año calendario muestra el año suelto ("2024"); uno de temporada,
-  // el rango ("2023/2024"). Mismo criterio que `ejercicioLabel()` en el sitio.
-  const calendar = clubEntry && clubEntry.fiscalYearStart === '01-01';
-  const label = y => (calendar ? String(y) : `${y - 1}/${y}`);
+function fmtYears(years, clubEntry, meta = {}) {
+  // Un ejercicio que cierra en diciembre muestra el año suelto ("2024"); uno de temporada,
+  // el rango ("2023/2024"). Mismo criterio que `ejercicioLabel()` en el sitio (to-do 177: por ejercicio).
+  const label = y => (esCalendario(meta[y], clubEntry, y) ? String(y) : `${y - 1}/${y}`);
   if (years.length === 1) return label(years[0]);
   // rango contiguo -> "2015/2016 a 2019/2020"; con huecos -> lista
   const contiguous = years.every((y, i) => i === 0 || y === years[i - 1] + 1);
@@ -148,7 +148,7 @@ function buildIndex({ clubs, sources, generic }) {
       clubId,
       name: entry.displayName || entry.name,
       years,
-      line: `${years.length} ejercicio${years.length > 1 ? 's' : ''} (${fmtYears(years, entry)}), ` +
+      line: `${years.length} ejercicio${years.length > 1 ? 's' : ''} (${fmtYears(years, entry, meta)}), ` +
             `${kinds.join(' + ')}, ${currencies.join('/')}${hasDebt ? '' : ', sin deuda/caja'}`,
     });
   }
@@ -248,6 +248,12 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       // que el transporte ya ahorra.
       yrs: years.slice().reverse().map(y => [y, meta[y].reportType]),
     };
+    // `ci` (to-do 177, Versión 627): los ejercicios cuya fecha de cierre NO es la de la regla del club, como { año: 'MM-DD' }. Es lo que
+    // usa cierreEjercicio() del sitio (js/finanzas-calc.js) cuando el data file del club todavía no se cargó (Ligas, el selector, Comparar).
+    // Solo las excepciones (hoy 18 ejercicios de 6 clubes), para que el índice no crezca con un dato que ya da la regla.
+    const ci = {};
+    for (const y of years) { const c = cierreEjercicio(meta[y], clubs[id], y); if (c !== cierreDelClub(clubs[id], y)) ci[y] = c.slice(5); }
+    if (Object.keys(ci).length) idx[id].ci = ci;
   }
   const filas = Object.keys(idx).map(id => `  ${JSON.stringify(id)}: ${JSON.stringify(idx[id])},`);
   return `// ============================================================================
@@ -261,7 +267,8 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
 //
 //   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
 //   data/sources-view.js) · y: ejercicios cargados · last: el más reciente ·
-//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType]
+//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
+//   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
 // ============================================================================
 
 window.CLUB_INDEX = {

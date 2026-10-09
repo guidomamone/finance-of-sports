@@ -9,11 +9,12 @@
 //
 //   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en
 //   data/sources-view.js) · y: ejercicios cargados · last: el más reciente ·
-//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType]
+//   yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
+//   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
 // ============================================================================
 
 window.CLUB_INDEX = {
-  "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":14,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]]},
+  "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":14,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]],"ci":{"2008":"12-31","2009":"12-31","2010":"12-31","2011":"12-31","2012":"12-31","2013":"12-31"}},
   "aellarissa-gr": {"n":"AEL Larissa","c":"GR","q":"full","y":10,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "agf-dk": {"n":"AGF","c":"DK","q":"full","y":1,"last":2021,"yrs":[[2021,"official_balance_sheet"]]},
   "ajax-nl": {"n":"Ajax","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
@@ -28,7 +29,7 @@ window.CLUB_INDEX = {
   "arsenal-gb": {"n":"Arsenal","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "asroma-it": {"n":"AS Roma","c":"IT","q":"full","y":21,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"],[2007,"official_balance_sheet"],[2006,"official_balance_sheet"],[2005,"official_balance_sheet"]]},
   "astonvilla-gb": {"n":"Aston Villa","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "atalanta-it": {"n":"Atalanta","c":"IT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "atalanta-it": {"n":"Atalanta","c":"IT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]],"ci":{"2018":"12-31","2019":"12-31","2020":"12-31","2021":"12-31"}},
   "athleticclub": {"n":"Athletic Club","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "athleticoparanaense-br": {"n":"Athletico Paranaense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "atleticogoianiense": {"n":"Atlético Goianiense","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
@@ -85,7 +86,7 @@ window.CLUB_INDEX = {
   "fctokyo": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "ferrocarriloeste-ar": {"n":"Ferro Carril Oeste","c":"AR","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "feyenoord-nl": {"n":"Feyenoord","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "fiorentina-it": {"n":"Fiorentina","c":"IT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "fiorentina-it": {"n":"Fiorentina","c":"IT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"]],"ci":{"2019":"12-31"}},
   "flamengo-br": {"n":"Flamengo","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fluminense-br": {"n":"Fluminense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fortaleza-br": {"n":"Fortaleza","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
@@ -94,7 +95,7 @@ window.CLUB_INDEX = {
   "fulham-gb": {"n":"Fulham","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gambaosaka": {"n":"Gamba Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "genk-be": {"n":"Genk","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]],"ci":{"2022":"12-31","2023":"12-31"}},
   "gent-be": {"n":"Gent","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "getafe-es": {"n":"Getafe CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gimnasiaesgrima-ar": {"n":"Gimnasia y Esgrima (La Plata)","c":"AR","q":"full","y":4,"last":2026,"yrs":[[2026,"official_budget"],[2025,"official_budget_and_balance"],[2024,"official_budget_and_balance"],[2023,"official_balance_sheet"]]},
@@ -146,7 +147,7 @@ window.CLUB_INDEX = {
   "osijek-hr": {"n":"Osijek","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "palmeiras-br": {"n":"Palmeiras","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "panathinaikos-gr": {"n":"Panathinaikos","c":"GR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "parma-it": {"n":"Parma","c":"IT","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
+  "parma-it": {"n":"Parma","c":"IT","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]],"ci":{"2016":"06-30","2017":"06-30","2018":"06-30","2019":"06-30"}},
   "pontepreta-br": {"n":"Ponte Preta","c":"BR","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "psv-nl": {"n":"PSV","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "racing": {"n":"Racing Club","c":"AR","q":"mixed","y":17,"last":2027,"yrs":[[2027,"official_budget"],[2026,"official_budget"],[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_budget_and_balance"],[2019,"official_budget"],[2018,"official_budget_and_balance"],[2017,"official_balance_sheet"],[2016,"official_budget_and_balance"],[2015,"official_balance_sheet"],[2014,"official_budget_and_balance"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"]]},
@@ -200,7 +201,7 @@ window.CLUB_INDEX = {
   "werderbremen-de": {"n":"Werder Bremen","c":"DE","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "westerlo-be": {"n":"Westerlo","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "westham-gb": {"n":"West Ham United","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "wolves-gb": {"n":"Wolverhampton Wanderers","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "wolves-gb": {"n":"Wolverhampton Wanderers","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]],"ci":{"2025":"06-30"}},
   "yokohamafmarinos": {"n":"Yokohama F. Marinos","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "zultewaregem-be": {"n":"Zulte Waregem","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
 };

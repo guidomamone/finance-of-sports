@@ -276,7 +276,7 @@ window.LIGA_VIEW = (function(){
   // de cada línea simulada: no necesita el prefijo "Balance"/"Presupuesto" de
   // `etiquetaEjercicio()`, un dropdown compacto solo necesita distinguir años.
   function temporadaLabel(clubId, year){
-    return clubDe(clubId).fiscalYearStart === '01-01' ? String(year) : (year - 1) + '/' + year;
+    return (window.esEjercicioCalendario ? window.esEjercicioCalendario(clubId, year) : clubDe(clubId).fiscalYearStart === '01-01') ? String(year) : (year - 1) + '/' + year; // (to-do 177)
   }
 
   // Como `show()`, pero además calcula la(s) fila(s) simulada(s) y las deja en

@@ -75,7 +75,7 @@
   function seasonLabel(clubId, year) {
     if (!year) return '';
     var club = (typeof clubs !== 'undefined' && clubs[clubId]) || null;
-    var isCalendarYear = !!(club && club.fiscalYearStart === '01-01');
+    var isCalendarYear = window.esEjercicioCalendario ? window.esEjercicioCalendario(clubId, year) : !!(club && club.fiscalYearStart === '01-01'); // (to-do 177)
     return isCalendarYear ? String(year) : (year - 1) + '/' + year;
   }
 

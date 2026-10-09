@@ -622,7 +622,7 @@
     return null;
   }
   function labelEjercicioCorto(clubId, y){
-    return isCalendarYearClub(clubId) ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    return esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
   }
 
 
@@ -669,7 +669,7 @@
     // temporada "AAAA-1/AAAA" para un club cuyo ejercicio es el año calendario — mismo criterio que
     // ejercicioLabel(), ver su comentario para el detalle de por qué el rango sería falso acá.
     const years = yearKeys.slice().sort((a,b) => b - a).map(y => ({
-      value:y, label: (isCalendarYearClub(clubId) ? String(y) : (y-1)+'/'+y)+anioDropdownSuffix((meta[y]||{}).reportType),
+      value:y, label: (esEjercicioCalendario(clubId, y) ? String(y) : (y-1)+'/'+y)+anioDropdownSuffix((meta[y]||{}).reportType),
     }));
     anioSelect.innerHTML = years.map(y => `<option value="${y.value}">${y.label}</option>`).join('');
     if(!isNaN(previousYear) && years.length){

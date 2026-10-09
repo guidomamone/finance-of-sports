@@ -53,8 +53,7 @@ const FIN_ANIOS = (function(){
     return lista.filter(e => e.tipo === 'B' || e.tipo === 'PB').slice(-n).map(e => e.y);
   }
   function etiqueta(clubId, y){
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    return cal ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2);
+    return esEjercicioCalendario(clubId, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
   }
   function tipoTexto(tipo){
     return tipo === 'B' ? t('finanzas.card.balance', 'Balance')
@@ -184,13 +183,9 @@ const FIN_GESTION = (function(){
     return pedidos[pais];
   }
   // La fecha de cierre del ejercicio `y`: el día anterior al arranque del ejercicio siguiente.
-  function cierre(clubId, y){
-    const ini = (clubs[clubId] || {}).fiscalYearStart || '07-01';
-    if(ini === '01-01') return y + '-12-31';
-    const d = new Date(Date.UTC(y, Number(ini.slice(0, 2)) - 1, Number(ini.slice(3, 5))));
-    d.setUTCDate(d.getUTCDate() - 1);
-    return d.toISOString().slice(0, 10);
-  }
+  // (to-do 177) la fecha de cierre real de ESE ejercicio (cierreEjercicio, js/finanzas-calc.js), no la regla del club: Parma 2018 cierra el
+  // 30/6/2018 y su gestión es la de Jiang, no la de Pizzarotti (que asumió el 1/10/2018).
+  function cierre(clubId, y){ return cierreEjercicio(clubId, y); }
   // Las gestiones confirmadas del club, cada una con sus ejercicios cargados (no "Sin publicar").
   function deClub(clubId){
     const lista = ((window.CLUB_GESTIONES || {})[clubId] || []).filter(g => g.confirmada);

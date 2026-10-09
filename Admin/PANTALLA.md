@@ -688,6 +688,13 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
+- LA ETIQUETA DE UN EJERCICIO ("2021" O "23/24") Y SU GESTIÓN SALEN DE LA FECHA DE CIERRE DE ESE EJERCICIO, NO DEL CLUB (Versión 627,
+  to-do 177, decisión de Guido). Se pregunta con `esEjercicioCalendario(clubId, y)` / `cierreEjercicio(clubId, y)` (js/finanzas-calc.js), nunca con
+  `clubs[id].fiscalYearStart === '01-01'`: Parma, Atalanta, Milan, Genoa y Fiorentina cambiaron la fecha de cierre algunos años, y con la regla por
+  club Parma 2018 se veía "2018" y se le asignaba Pizzarotti (es 17/18, de Jiang). Escalera: `cierre` del fiscalYearMeta, la fecha del `fxRef`, y si el
+  data file no está cargado (Ligas, selector, Comparar) `CLUB_INDEX[id].ci` (lo genera tools/generate-club-index.js con el mismo criterio, desde
+  tools/cierre-ejercicio.js, que también usa generate-fuentes-page.js); al final, la regla del club. Una serie puede quedar mezclada (Atalanta
+  "2018 … 2021, 22/23 …"): es correcto, no se avisa aparte.
 - REGLA DEL COLOR DE CADA CLUB (Versión 178, decisión de Guido al cerrar el to-do
   23(e)): `clubs[id].brandColor` es el color del club en el círculo de iniciales, y
   **es opcional a propósito — un club sin un color primario claro y sin ambigüedad se

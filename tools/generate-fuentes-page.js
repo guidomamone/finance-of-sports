@@ -38,6 +38,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { esCalendario } = require('./cierre-ejercicio.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const SALIDA_INDICE = path.join(ROOT, 'fuentes.html');
@@ -83,10 +84,10 @@ const fmtFx = fx => fx.toLocaleString('es-AR', {
 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-// El ejercicio se nombra como en el resto del sitio: año suelto si el club
-// cierra en diciembre, rango si es temporada.
-function etiquetaEjercicio(year, club) {
-  return (club && club.fiscalYearStart === '01-01') ? String(year) : `${year - 1}/${year}`;
+// El ejercicio se nombra como en el resto del sitio: año suelto si ESE ejercicio
+// cierra en diciembre, rango si es temporada (to-do 177: por ejercicio, no por club).
+function etiquetaEjercicio(year, club, ym) {
+  return esCalendario(ym, club, year) ? String(year) : `${year - 1}/${year}`;
 }
 
 // Nota corta con "Ver más": se corta en el primer punto que caiga después de
@@ -215,7 +216,7 @@ function construir(api) {
       if (!ym.sourceId) continue;
       const f = api.fxMetaFor(ym);
       (usos[ym.sourceId] = usos[ym.sourceId] || []).push({
-        year, ym, etiqueta: etiquetaEjercicio(year, clubs[clubId]),
+        year, ym, etiqueta: etiquetaEjercicio(year, clubs[clubId], ym),
         fx: f.fx, moneda: ym.currency, fxLabel: f.label, fxSource: f.source,
       });
     }

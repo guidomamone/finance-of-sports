@@ -204,15 +204,15 @@ HR (8)
   Varaždin       1 ejercicio (2025), balance, EUR
 
 IT (22)
-  AC Milan       14 ejercicios (2007/2008, 2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  AC Milan       14 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   AS Roma        21 ejercicios (2004/2005 a 2024/2025), balance, EUR, sin deuda/caja
-  Atalanta       7 ejercicios (2017/2018, 2018/2019, 2019/2020, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Atalanta       7 ejercicios (2018, 2019, 2020, 2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Bologna        8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
   Chievo Verona  3 ejercicios (2013/2014 a 2015/2016), balance, EUR, sin deuda/caja
   Como           2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
   Cremonese      4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Fiorentina     5 ejercicios (2018/2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Genoa          3 ejercicios (2021/2022, 2022/2023, 2024/2025), balance, EUR, sin deuda/caja
+  Fiorentina     5 ejercicios (2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Genoa          3 ejercicios (2022, 2023, 2024/2025), balance, EUR, sin deuda/caja
   Hellas Verona  6 ejercicios (2019/2020 a 2024/2025), balance, EUR, sin deuda/caja
   Inter          8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
   Juve Stabia    1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
@@ -220,7 +220,7 @@ IT (22)
   Lazio          26 ejercicios (1998/1999, 1999/2000, 2000/2001, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025, 2025/2026), balance, ITL/EUR, sin deuda/caja
   Monza          3 ejercicios (2022 a 2024), balance, EUR, sin deuda/caja
   Napoli         8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
-  Parma          9 ejercicios (2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025), balance, EUR, sin deuda/caja
+  Parma          9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2021, 2022, 2023, 2024, 2025), balance, EUR, sin deuda/caja
   Salernitana    2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
   Sampdoria      4 ejercicios (2018 a 2021), balance, EUR, sin deuda/caja
   Sassuolo       8 ejercicios (2018 a 2025), balance, EUR, sin deuda/caja

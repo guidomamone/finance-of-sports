@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 627 — To-do 177: la etiqueta y la gestión de cada ejercicio salen de SU fecha de cierre (2026-10-09)
+
+- Funciones nuevas `cierreEjercicio(clubId, y)` y `esEjercicioCalendario(clubId, y)` (js/finanzas-calc.js), con escalera: campo `cierre` del ejercicio,
+  la fecha del `fxRef`, `CLUB_INDEX[id].ci` si el data file no está cargado, y la regla del club. Las usan los 14 lugares que armaban la etiqueta del año con la
+  regla por club (Finanzas: cards, tabla, gráfico, KPIs, inflación, desplegable, gestión; Ligas, selector, Comparar, cuenta) y los generadores
+  (tools/cierre-ejercicio.js, nuevo, en generate-club-index.js y generate-fuentes-page.js). `data/club-index.js` gana `ci`: los 18 ejercicios de 6 clubes que no
+  cierran en la fecha de su club.
+- Medido en el navegador sobre los 541 ejercicios, antes y después: cambian exactamente 17 etiquetas (Milan 2008-2013, Atalanta 2018-2021, Genoa 2022-2023 y
+  Fiorentina 2019 pasan a año suelto; Parma 2016-2019 a 15/16 … 18/19) y 2 gestiones (Parma 2016: sin gestión → Scala; Parma 2018: Pizzarotti → Jiang).
+  Wolves 2025 (13 meses, cierre 30/6) cambia de fecha de cierre pero no de etiqueta ni de gestión. Visto en pantalla (Parma) y con el data file sin cargar.
+  ASSET_V 605. Regla nueva en `Admin/PANTALLA.md`.
+
 ## Versión 626 — To-do 185: la cola humana vacía (2026-10-09)
 
 - Los 20 casos respondidos por Claude (pedido de Guido), con la evidencia en cada nota:

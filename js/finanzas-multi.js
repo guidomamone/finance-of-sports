@@ -51,7 +51,7 @@ const FIN_REAL = (function(){
   function unidad(clubId){
     if(!activo()) return 'M ' + currentCurrency;
     const b = base();
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
+    const cal = esEjercicioCalendario(clubId, b); // (to-do 177) el formato del ejercicio del año base de ese club
     return 'M ' + currentCurrency + ' ' + t('finanzas.real.of', 'de') + ' ' + (cal ? String(b) : (b - 1) + '/' + String(b).slice(2));
   }
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
@@ -82,8 +82,7 @@ const FIN_MULTI_PL = (function(){
     estado.years = years; estado.tableId = tableId;
     graficos.forEach(g => g.destroy()); graficos = [];
 
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
     const pct = estado.unidad === 'pct';
 
     const datos = years.map(y => {
@@ -471,8 +470,7 @@ const FIN_MULTI_KPIS = (function(){
   function render(clubId, years){
     const caja = document.getElementById('finanzasStats');
     if(!caja || !years.length) return;
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
     const datos = years.map(y => delAnio(clubId, y));
     const ultimo = datos[datos.length - 1];
     const multi = datos.length > 1;
@@ -546,8 +544,7 @@ const FIN_MULTI_DEBT = (function(){
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
 
   function render(clubId, years, tableId){
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
     const datos = years.map(y => {
       const c = computeYearGeneric(clubId, y);
       const meta = yearMetaFor(clubId, y);
@@ -641,8 +638,7 @@ const FIN_MULTI_CHART = (function(){
     card.hidden = false;
     if(inst){ inst.destroy(); inst = null; }
 
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
     const datos = years.map(y => FIN_MULTI_KPIS.delAnio(clubId, y));
     const unidad = FIN_REAL.unidad(clubId);
     const punteado = ctx => {
@@ -789,8 +785,7 @@ const FIN_REAL_UI = (function(){
     });
     if(!ok || !FIN_REAL.activo()){ nota.hidden = true; return; }
     const s = FIN_REAL.serie(), base = FIN_REAL.base();
-    const cal = clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01';
-    const lab = y => cal ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
     const a = years[0];
     const ej = Math.round(100 * FIN_REAL.fac(a));
     let txt = t('finanzas.real.note', 'Todo en {u}, ajustado con el {serie}: 100 M {cur} de {a} equivalen a {x} M de {b}. Los Δ% pasan a ser crecimiento real.')

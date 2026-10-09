@@ -331,7 +331,7 @@ window.CLUB_SELECTOR = (function(){
     // Con clubes de año calendario (Japón, Brasil) mezclados con clubes de
     // temporada partida, "2024/2025" sería una fecha falsa para la mitad: ahí va
     // el año pelado.
-    var calendario = conEse.map(function(id){ return clubs[id].fiscalYearStart === '01-01'; });
+    var calendario = conEse.map(function(id){ return window.esEjercicioCalendario(id, y); }); // (to-do 177) por ejercicio
     if(calendario.some(Boolean) && calendario.some(function(x){ return !x; })) return String(y);
     var par = yearsOf(conEse[0]).filter(function(p){ return p[0] === y; })[0];
     return window.ejercicioLabel(y, par[1], conEse[0]);
@@ -1811,8 +1811,7 @@ window.CLUB_SELECTOR = (function(){
     return par[1] === 'official_budget' ? 'P' : BAL_TIPOS[par[1]] ? 'B' : null;
   }
   function etiquetaEj(id, y){
-    var cal = clubs[id] && clubs[id].fiscalYearStart === '01-01';
-    return cal ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2);
+    return window.esEjercicioCalendario(id, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
   }
   // Los ejercicios de un club, del primero al último cargado, con los años vacíos del medio
   // como "Sin publicar" (mismo criterio que FIN_ANIOS.ejercicios, pero desde CLUB_INDEX: el
@@ -2898,8 +2897,7 @@ window.CLUB_SELECTOR = (function(){
       if(BAL[p[1]] || PRE[p[1]]) anios.push(p[0]);
     });
     if(anios.length){
-      var calendario = clubs[id] && clubs[id].fiscalYearStart === '01-01';
-      var ej = function(y){ return calendario ? String(y) : (y - 1) + '/' + String(y).slice(2); };
+      var ej = function(y){ return window.esEjercicioCalendario(id, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); }; // (to-do 177)
       var cuantos = [];
       if(nb) cuantos.push(nb === 1 ? t('finanzas.head.bal1', '1 balance') : t('finanzas.head.baln', '{n} balances').replace('{n}', nb));
       if(np) cuantos.push(np === 1 ? t('finanzas.head.pre1', '1 presupuesto') : t('finanzas.head.pren', '{n} presupuestos').replace('{n}', np));

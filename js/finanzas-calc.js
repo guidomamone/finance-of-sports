@@ -184,6 +184,35 @@
     return !!(clubs[clubId] && clubs[clubId].fiscalYearStart === '01-01');
   }
 
+  // cierreEjercicio(clubId, y) (to-do 177, Versión 627): la fecha de cierre (AAAA-MM-DD) de UN ejercicio, no la del club. Hace falta porque
+  // hay clubes que cambiaron la fecha de cierre (Parma cerraba el 30/6 hasta 2019 y el 31/12 desde 2021; Atalanta, Milan, Genoa y Fiorentina
+  // cerraron algunos años el 31/12) y con la regla por club la etiqueta del año y la gestión salían mal (Parma 2018 se veía "2018" y se le
+  // asignaba Pizzarotti; es 17/18 y le corresponde Jiang). ESCALERA, gana el primero que exista:
+  //   1. el campo `cierre` del ejercicio en su fiscalYearMeta (a mano; hoy no lo usa nadie, es la salida para un caso sin fxRef);
+  //   2. la fecha de su `fxRef` ("EUR@2018-06-30"): el pipeline la escribe siempre con el cierre real;
+  //      (1 y 2 solo con el data file del club cargado; si no, la misma información viene en CLUB_INDEX[id].ci, que genera
+  //      tools/generate-club-index.js con este mismo criterio y solo para los ejercicios que no siguen la regla del club)
+  //   3. la regla del club (`fiscalYearStart` de data/clubs.js), como antes.
+  function cierreEjercicio(clubId, y){
+    const m = (((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta || {})[y];
+    if(m && m.cierre) return m.cierre;
+    const ref = m && m.fxRef && String(m.fxRef).split('@')[1];
+    if(ref && /^\d{4}-\d{2}-\d{2}$/.test(ref)) return ref;
+    const ci = (((window.CLUB_INDEX || {})[clubId] || {}).ci || {})[y];
+    if(ci) return y + '-' + ci;
+    const ini = (clubs[clubId] || {}).fiscalYearStart || '07-01';
+    if(ini === '01-01') return y + '-12-31';
+    const d = new Date(Date.UTC(y, Number(ini.slice(0, 2)) - 1, Number(ini.slice(3, 5))));
+    d.setUTCDate(d.getUTCDate() - 1);
+    return d.toISOString().slice(0, 10);
+  }
+  // Un ejercicio que cierra en diciembre es de año calendario: se muestra el año suelto ("2021"), no la temporada ("20/21").
+  function esEjercicioCalendario(clubId, y){
+    return cierreEjercicio(clubId, y).slice(5, 7) === '12';
+  }
+  window.cierreEjercicio = cierreEjercicio;
+  window.esEjercicioCalendario = esEjercicioCalendario;
+
   // 3er parámetro `clubId` (opcional, retrocompatible: todo call site viejo que no lo pasa sigue
   // viendo el formato de temporada de siempre). Si `clubId` corresponde a un club de ejercicio
   // calendario (`isCalendarYearClub`, ver arriba), el label es solo el prefijo + el año suelto
@@ -198,7 +227,7 @@
     const prefix = reportType === 'official_budget' ? t('ejercicio.budget', 'Presupuesto')
       : (reportType === 'official_budget_and_balance' || reportType === 'official_balance_sheet') ? t('ejercicio.balance', 'Balance')
       : t('ejercicio.default', 'Ejercicio');
-    if(clubId && isCalendarYearClub(clubId)) return prefix+' '+year;
+    if(clubId && esEjercicioCalendario(clubId, year)) return prefix+' '+year; // (to-do 177) por ejercicio, no por club
     return prefix+' '+(year-1)+'/'+year;
   }
 
