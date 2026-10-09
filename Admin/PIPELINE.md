@@ -292,8 +292,11 @@ Mitigaciones:
  ESCALÓN 0  ¿afecta la carga? ── no ──► nota
  ESCALÓN 1  ¿Guido ya la contestó para este club? (club + tema + renglón) ── sí ──► se aplica
  ESCALÓN 2  ¿la aritmética la confirma? (la escalera de lecturas cerró, ningún año vecino da distinto, tema = cuadro por segmento /
-            cuadro duplicado / columna / escala, y la propuesta "sí" ya está aplicada) ── sí ──► se acepta sola, con nota
- COLA HUMANA (perímetro, cuadro de otro año, fila ilegible y "otro" siempre llegan)
+            cuadro duplicado / columna, y la propuesta "sí" ya está aplicada) ── sí ──► se acepta sola, con nota
+ ESCALÓN 2b lo mismo cuando lo único que falla es el año vecino (Versión 628, to-do 173: medido contra las respuestas de Guido,
+            21 de 21 aceptadas tal cual) ── sí ──► se acepta sola, con nota
+ COLA HUMANA (escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan: medido el 2026-10-09,
+            un tercio de esas dudas terminó corregido, así que son preguntas legítimas)
 ```
 - g) Sin fecha de cierre detectada: se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).
 - h) **Compuerta del registro** (deja el documento "listo" para categorizar): exige confirmados solo los números de los bloques que usa la

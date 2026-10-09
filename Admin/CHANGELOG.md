@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 628 — To-do 173: escalón 2b de las dudas y el to-do resuelto (2026-10-09)
+
+- Medido en una copia: sin las 464 respuestas de Guido a dudas, `verificar` sobre los 242 documentos manda 232 dudas a la cola. Cruzadas con lo que Guido
+  respondió: las sin tema (43 aceptadas / 31 corregidas), de localizar (18/13), fila ilegible (16/5), escala (22/2) y perímetro (17/4) son preguntas legítimas
+  (un tercio terminó corregido); ninguna regla general las cierra sin meter errores. Solo un grupo da limpio: columna, cuadro duplicado y cuadro por segmento con
+  propuesta "sí", que el escalón 2 ya acepta salvo cuando un año vecino da distinto (21 de 21 aceptadas tal cual).
+- `tools/verificar.mjs`: escalón 2b, esos 3 temas con propuesta "sí" y el resultado cerrado, aunque un año vecino dé distinto. Medido: sin respuestas, la cola baja
+  de 238 a 221 casos (9 documentos, 3 pasan a "ok"); con la cola real, idéntico; carga idéntica en los dos.
+- La premisa del to-do estaba vencida ("267 casos en la cola"): hoy la cola está vacía y las preguntas repetidas se reconocen por club + tema + renglón.
+  To-do 173 resuelto (decisión de Guido: no se deja como "conocido"). `Admin/PIPELINE.md`: escalera de dudas al día (la escala ya no estaba en el escalón 2 desde la Versión 372).
+
 ## Versión 627 — To-do 177: la etiqueta y la gestión de cada ejercicio salen de SU fecha de cierre (2026-10-09)
 
 - Funciones nuevas `cierreEjercicio(clubId, y)` y `esEjercicioCalendario(clubId, y)` (js/finanzas-calc.js), con escalera: campo `cierre` del ejercicio,

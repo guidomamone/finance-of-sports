@@ -194,16 +194,6 @@ ni en el comentario de ningún archivo de código.
     no cierra exacto).
     COMPROBADO 2026-10-09 (Sonnet): un solo caso real, Hellas Verona 2023 (25.971), que cierra por la lectura 4 a 618 EUR del impreso (con el signo al revés daría 51.942 más). Los otros 19 ajustes de gasto con valor negativo (Goiás 2012 y 2013, Roma 2018 y 2021) son costos impresos con paréntesis. Sin daño.
 
-173. DUDAS QUE NO DEBERÍAN IR A LA COLA (extraer.mjs / verificar.mjs). CON DAÑO desde el lote 40 (2026-10-08): la cola pasó a 267 casos (Salernitana
-    2022: 38, Inter 2024: 23, Genoa 2023: 19) y 15 documentos frenan solo por preguntas. Antes (lote 28): ~20 de 71. De los 71 casos de la etapa 6 del lote 28, ~20 eran dudas ya resueltas
-    por un criterio decidido o por el propio cierre: cuadro de nota que repite el estado, desglose parcial (solo tesserati), dudas con la
-    polaridad al revés ("¿se carga además…?" con propuesta sí y el porqué dice que duplica). Ejemplos: Atalanta 2019 a0304c3 (b9),
-    Sassuolo 2024 6795125, Inter 2019-20 c672389 y 45d7976, Lazio 2018-19 476c85a, Lazio 2023-24 37997ee, Roma 2023 db1b8e4, Roma 2024
-    8c734f1, Fiorentina 2168732, 2daea52, 0980fea, Sampdoria 9414130, 2f9021a, 075611c, Torino 2023 68dc65d. Y "primer año" o "escala"
-    que se podrían aceptar solos si totales y resultado cierran exactos (Cremonese 2022 a3d272e, Atalanta 2025 939f93c; Milan 2021-22
-    5a70fe0: la escala está impresa en L749, fuera de la ventana del bloque). DISEÑO: aplicar el criterio antes de crear la duda y dejarla
-    como nota; compuerta: el chequeo del resultado que la toca cierra exacto.
-
 179. ITALIA: EL FÚTBOL ESTÁ CERRADO (2026-10-09). 175 ejercicios cargados (Juventus 23 y 152 de los otros 21 clubes; `node tools/tablas-sesion.mjs --italia`). Años = año de cierre (2020 = 2019-20). No queda nada de fútbol por cargar: Catania 2011 (un artículo de prensa, transcripto) y el Juve Stabia semestral (6 meses) están en `Admin/documentos-descartados.txt`. Quedaron resueltas: las gestiones de Roma (Sensi, Cappelli, DiBenedetto, Pallotta, con fechas de prensa y de la relazione) y de Inter (Thohir) en `data/gestiones/it.js`; Juve Stabia
     (Langella hasta junio de 2026, Guerri desde ahí); las altas nuevas de Chievo Verona, Salernitana y Juve Stabia (liga `it-seriec`, Serie C, tier 3); el ajuste manual `estado` (Roma 2005: b107-b112 en vez de la tabla de una controlada); y el ajuste `filas-a-mano` (Torino 2020 y 2025, Inter 2017-18, Lazio 2021 y Salernitana 2022: `localizar` y `extraer` no los pisan ni con `--rehacer`; para rehacerlos hay que agregar el ajuste con `--valor no`).
 

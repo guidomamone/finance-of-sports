@@ -1085,6 +1085,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // NO confirman una escala (cerrar es invariante a la escala del documento entero; Fortaleza CEIF 2023 tenía aceptadas a la vez "¿están
         // en miles?" y "¿están en unidades y no en miles?"), así que el tema 'escala' no está en la lista de abajo y va a la cola (o a un ajuste).
         if (E.cierra && !vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas (${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
+        // ESCALÓN 2b (to-do 173, aprobado por Guido el 2026-10-09): lo mismo cuando lo ÚNICO que frenó al escalón 2 es un año vecino que da distinto.
+        // En estos 3 temas la duda es qué cuadro o qué columna del MISMO documento se usa, y eso lo confirma la suma del propio documento; el
+        // vecino falla por reexpresiones o columnas perdidas (Juventus 2005-06, Inter 2019-21, Roma 2012 y 2018, Lazio 2006-07). Compuerta: la del
+        // escalón 2 sin la condición del vecino (la escalera de lecturas cerró el resultado). Medido contra las respuestas de Guido en los 242 documentos
+        // con verificación: 21 dudas de este grupo, 21 aceptadas tal cual (Roma 2011 separato se descartó por el documento entero, no por la duda).
+        if (E.cierra && vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas aunque un año vecino da distinto (escalón 2b; ${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         caso('duda-tema', det, que, { pagina, lineas, propuesta });
         continue;
       }
