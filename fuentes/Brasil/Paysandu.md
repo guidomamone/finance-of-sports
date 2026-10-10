@@ -32,3 +32,5 @@
 - Último chequeo: 2026-09-22.
 
 Color de marca: null — azul y blanco ("Alviceleste"), pero la camiseta titular es blanca (plantilla en.wikipedia body1=FFFFFF) y no hay hex azul de la camiseta: blanco con acento, resultado cerrado (escudo azul), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Brasil/Paysandu/dre-2021.pdf` (sourceId `paysandu-br-dre-2021`).

@@ -6,7 +6,7 @@
 // Brasileirão Série C (BR) — 4 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -34,6 +34,9 @@ window.RANKINGS["br-serieC"] = {
   2021: {
     leagueSize: null,
     clubs: [
+      { id:"paysandu-br", revenue:3.938, reportType:"official_balance_sheet",
+        sourceId:"paysandu-br-dre-2021",
+        mix:[["Cuotas Sociales",0.268],["Comercial / Sponsors",0.314],["Otras secciones deportivas",0.211],["Fútbol profesional (sin desglosar por la fuente)",1.948],["Otros ingresos",1.197]] },
       { id:"criciuma-br", revenue:2.739, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstrativo-financeiro-2021",
         mix:[["Cuotas Sociales",0.308],["Comercial / Sponsors",0.338],["Estadio",0.029],["Televisión",1.381],["Venta de Jugadores",0.041],["Otros ingresos",0.642]] },
