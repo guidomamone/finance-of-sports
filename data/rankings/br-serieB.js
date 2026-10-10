@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
-//   2025: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -61,6 +61,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"avai-br", revenue:7.969, reportType:"official_balance_sheet",
         sourceId:"avai-br-demonstracoes-contabeis-2025",
         mix:[["Cuotas Sociales",1.786],["Comercial / Sponsors",1.882],["Estadio",0.552],["Televisión",2.011],["Premios por competencias",0.002],["Otros ingresos",1.736]] },
+      { id:"vilanova-br", revenue:7.88, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-demonstrativo-financeiro-2025",
+        mix:[["Cuotas Sociales",0.413],["Comercial / Sponsors",1.701],["Estadio",1.087],["Televisión",0.181],["Premios por competencias",1.191],["Venta de Jugadores",2.183],["Otras secciones deportivas",0.033],["Otros ingresos",1.091]] },
       { id:"operarioferroviario-br", revenue:7.181, reportType:"official_balance_sheet",
         sourceId:"operarioferroviario-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",0.896],["Comercial / Sponsors",1.321],["Estadio",0.413],["Televisión",2.55],["Premios por competencias",0.96],["Venta de Jugadores",0.657],["Otras secciones deportivas",0.092],["Otros ingresos",0.293]] },

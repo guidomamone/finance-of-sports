@@ -47,3 +47,5 @@
 - Probado sin éxito: FGF-GO `q=11&sc=11&p=1..7` (solo VNFC 2022-2025); listados Joomla `?start=12/18/24` (solo balanços 2014-2017, ya en disco; los ids 54/55 son comunicados, 59/60 son parecer y balanço 2016 duplicados, 26/31 son notas 2014); el listado 2019 solo trae "Movimentação Financeira" mensual de 2019, no balanço 2018/2019. **Faltan 2018-2020** (no hay noticia equivalente a la 238 para esos años; el PDF 2021 trae 2020 como comparativo).
 
 Color de marca: #F00000 — pt.wikipedia ("cores tradicionais são o vermelho e branco"; plantilla de camiseta titular corpo1=F00000; el otro color es blanco, gana el rojo), escudo rojo con faja blanca, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf` (sourceId `vilanova-br-demonstrativo-financeiro-2025`).
