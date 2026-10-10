@@ -49,6 +49,11 @@ const avaibrRevenueLinesByYear = {
     { rawLabel:'(-) Deduções da Receita operacional', normalizedCategory:'other_income', amountNative:-0.331, disclosureLevel:'aggregated' }, // pág. 33, Jev 0.99
     { rawLabel:'OUTRAS RECEITAS OPERACIONAIS', normalizedCategory:'other_income', amountNative:4.631, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Avai/demonstracoes-contabeis-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'Receita líquida das atividades', normalizedCategory:'lump_football_operations', amountNative:91.954, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99
+  ],
 };
 const avaibrExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-10)
@@ -121,6 +126,46 @@ const avaibrExpenseLinesByYear = {
     { rawLabel:'Plano de Saúde', normalizedCategory:'admin_general_expense', amountNative:-0.328, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.94
     { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.036, disclosureLevel:'aggregated' }, // pág. 36, Jev 0.94
   ],
+  2022: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Salários e Encargos', normalizedCategory:'wages_squad', amountNative:-22.188, disclosureLevel:'aggregated' }, // pág. 49, Claude 0.8
+    { rawLabel:'Ajuda de Custo', normalizedCategory:'wages_squad', amountNative:-1.663, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Viagens e Hospedagem', normalizedCategory:'match_organisation_expense', amountNative:-1.239, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.95
+    { rawLabel:'INSS s/ Receitas', normalizedCategory:'admin_general_expense', amountNative:-1.387, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Aluguel e manutenção dos campos', normalizedCategory:'admin_general_expense', amountNative:-0.401, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Serviços de Terceiros', normalizedCategory:'youth_other_sports_expense', amountNative:-1.068, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Arbitragem/ Federação e Confederação', normalizedCategory:'match_organisation_expense', amountNative:-0.968, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'Amortização Custo Atletas Profissionais', normalizedCategory:'player_amortisation', amountNative:-2.166, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'Seguros/ Plano de Saúde', normalizedCategory:'admin_general_expense', amountNative:-1.45, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.96
+    { rawLabel:'Direito de Uso de Imagem', normalizedCategory:'wages_squad', amountNative:-7.004, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Material Esportivo - Patrocínio', normalizedCategory:'other_expenses', amountNative:-0.389, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Borderoux de Jogos', normalizedCategory:'match_organisation_expense', amountNative:-0.904, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.96
+    { rawLabel:'Taxa de Policiamento', normalizedCategory:'match_organisation_expense', amountNative:-0.334, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+    { rawLabel:'Despesas com jogo', normalizedCategory:'match_organisation_expense', amountNative:-0.448, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.99
+    { rawLabel:'Alimentação', normalizedCategory:'match_organisation_expense', amountNative:-1.088, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Premiação Campeonatos', normalizedCategory:'wages_squad', amountNative:-1.378, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.97
+    { rawLabel:'Direito de Arena', normalizedCategory:'match_organisation_expense', amountNative:-2.212, disclosureLevel:'aggregated' }, // pág. 49, Jev 1
+    { rawLabel:'Empréstimos de Atletas', normalizedCategory:'wages_squad', amountNative:-0.4, disclosureLevel:'aggregated' }, // pág. 49, Claude 0.8
+    { rawLabel:'Intermediação e Negociação de Atletas', normalizedCategory:'other_expenses', amountNative:-3.395, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.98
+    { rawLabel:'Materiais e serviços diversos', normalizedCategory:'other_expenses', amountNative:-1.416, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Manutenção, conservação e reformas', normalizedCategory:'admin_general_expense', amountNative:-0.732, disclosureLevel:'aggregated' }, // pág. 49, Jev 0.9
+    { rawLabel:'Perda com atletas dispensados', normalizedCategory:'player_impairment', amountNative:-3.882, disclosureLevel:'aggregated' }, // pág. 49, precedente
+    { rawLabel:'Alimentação', normalizedCategory:'match_organisation_expense', amountNative:-0.954, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Aluguéis', normalizedCategory:'admin_general_expense', amountNative:-0.076, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.306, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Energia Elétrica', normalizedCategory:'admin_general_expense', amountNative:-0.337, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Impostos e Taxas', normalizedCategory:'admin_general_expense', amountNative:-0.283, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-3.687, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'PCLD', normalizedCategory:'other_expenses', amountNative:-0.854, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Plano de Saúde', normalizedCategory:'admin_general_expense', amountNative:-1.144, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Provisão para Contingência', normalizedCategory:'admin_general_expense', amountNative:-11.554, disclosureLevel:'aggregated' }, // pág. 50, Jev 0.99
+    { rawLabel:'Salários e Encargos', normalizedCategory:'wages_squad', amountNative:-7.431, disclosureLevel:'aggregated' }, // pág. 50, Claude 0.8
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.094, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Serviços de Terceiros', normalizedCategory:'youth_other_sports_expense', amountNative:-1.601, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Softwares e Consultoria de TI', normalizedCategory:'admin_general_expense', amountNative:-0.806, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Telefone e Internet', normalizedCategory:'admin_general_expense', amountNative:-0.105, disclosureLevel:'aggregated' }, // pág. 50, Jev 1
+    { rawLabel:'Viagens e Hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-0.05, disclosureLevel:'aggregated' }, // pág. 50, precedente
+    { rawLabel:'Outras receitas (despesas) operacionais', normalizedCategory:'other_expenses', amountNative:-3.456, disclosureLevel:'aggregated' }, // pág. 28, Jev 0.99
+  ],
 };
 const avaibrFiscalYearMeta = {
   2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -137,6 +182,24 @@ const avaibrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:43.851, officialTotalExpenses:84.492, officialPAT:-83.429,
+  },
+  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2022-12-31',
+    sourceId:'avai-br-demonstracoes-contabeis-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.709, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:0.118},
+      {label:'Despesas financeiras', value:-0.827},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receita líquida das atividades', lado:'revenue', importe:91.954, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:91.954, officialTotalExpenses:88.85, officialPAT:2.396,
   },
 };
 const avaibrPresupuestoOverlayByYear = {};
@@ -161,6 +224,12 @@ Object.assign(sources, {
     title:'Avaí Futebol Clube — demonstracoes-contabeis-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'avai-br-demonstracoes-contabeis-2022': {
+    id:'avai-br-demonstracoes-contabeis-2022', clubId:'avai-br',
+    title:'Avaí Futebol Clube — demonstracoes-contabeis-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

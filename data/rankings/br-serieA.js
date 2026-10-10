@@ -7,7 +7,7 @@
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -156,6 +156,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"goias-br", revenue:20.333, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2022-fgf-go",
         mix:[["Cuotas Sociales",0.397],["Comercial / Sponsors",2.398],["Estadio",0.232],["Televisión",12.223],["Premios por competencias",1.382],["Venta de Jugadores",0.574],["Otras secciones deportivas",0.637],["Otros ingresos",2.489]] },
+      { id:"avai-br", revenue:17.623, reportType:"official_balance_sheet",
+        sourceId:"avai-br-demonstracoes-contabeis-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.623]] },
     ],
   },
   2021: {
