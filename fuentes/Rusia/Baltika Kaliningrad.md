@@ -45,3 +45,5 @@ Color de marca: #0000FF — ru.wikipedia (sección "Цвета клуба": blan
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Baltika Kaliningrad/bfo-2023-datos.json` (sourceId `baltikakaliningrad-ru-bfo-2023-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Baltika Kaliningrad/bfo-2024-datos.json` (sourceId `baltikakaliningrad-ru-bfo-2024-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Rusia/Baltika Kaliningrad/bfo-2025-datos.json` (sourceId `baltikakaliningrad-ru-bfo-2025-datos`).
