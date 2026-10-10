@@ -6,7 +6,7 @@
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -114,6 +114,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"orenburg-ru", revenue:29.378, reportType:"official_balance_sheet",
         sourceId:"orenburg-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",22.252],["Otros ingresos",7.126]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"baltikakaliningrad-ru", revenue:14.984, reportType:"official_balance_sheet",
+        sourceId:"baltikakaliningrad-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",9.558],["Otros ingresos",5.426]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"parinizhnynovgorod-ru", revenue:10.782, reportType:"official_balance_sheet",
         sourceId:"parinizhnynovgorod-ru-bfo-2023-datos",
