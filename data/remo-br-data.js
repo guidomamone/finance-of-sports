@@ -90,6 +90,11 @@ const remobrRevenueLinesByYear = {
   2019: [
     { rawLabel:'Receita De Atividades Esportivas', normalizedCategory:'lump_football_operations', amountNative:17.903353, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
+  // 2020: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Remo/relatorio-auditoria-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Remo/relatorio-auditoria-2020.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2020: [
+    { rawLabel:'Receita De Atividades Esportivas', normalizedCategory:'lump_football_operations', amountNative:12.351668, disclosureLevel:'aggregated' }, // pág. 8, precedente
+  ],
 };
 const remobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -138,6 +143,11 @@ const remobrExpenseLinesByYear = {
   ],
   2019: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'(-) Despesas Operacionais (sin Resultado Financeiro)', normalizedCategory:'lump_football_operations_expense', amountNative:-20.686217, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
+  2020: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Custos das Atividades Esportivas', normalizedCategory:'lump_football_operations_expense', amountNative:-7.54864, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Despesas c/ drepreciação/amortização', normalizedCategory:'depreciation', amountNative:-1.923969, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'(-) Despesas Operacionais (sin Resultado Financeiro)', normalizedCategory:'admin_general_expense', amountNative:-4.749468, disclosureLevel:'aggregated' }, // pág. 8, precedente
   ],
 };
 const remobrFiscalYearMeta = {
@@ -228,6 +238,33 @@ const remobrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:17.903353, officialTotalExpenses:20.686217, officialPAT:-3.00829,
   },
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L191 (12.351.668,08) es el subtotal de L192 (Receita De Atividades Esportivas, único componente, mismo importe): se cargaba dos veces; el ingreso es 12.351.668,08
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L193 (7.548.640,50) es el subtotal de L194 (mismo importe, único componente): se cargaba dos veces
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L200 ((1.923.969,31)) es el subtotal de L201 (mismo importe, único componente): se cargaba dos veces; se carga L201 como gasto (depreciación)
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L198 (4.555.340,59) es parte del subtotal L197 (4.943.560,99); el subtotal se carga entero en una fila, sin el Resultado Financeiro (L199): ver el ajuste de L197
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 4.749.468,16. Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L199, 194.092,83) está incluido en Despesas Operacionais (L197, 4.943.560,99): 4.803.027,58 - 4.943.560,99 - 1.923.969,31 = -2.064.502,72 = resultado impreso (L202-L204), sin restar el financiero aparte. Se separa: 4.943.560,99 - 194.092,83 = 4.749.468,16 de gastos operativos + 194.092,83 de costo financiero. Ojo: los hijos impresos (4.555.340,59 + 194.092,83 = 4.749.433,42) no suman el subtotal: faltan 194.127,57 sin renglón impreso
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = wages_squad. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = youth_other_sports_expense. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = broadcasting. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = matchday_competition. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza
+  // 2020: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = member_dues. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza
+  2020: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2020-12-31',
+    sourceId:'remo-br-relatorio-auditoria-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.194093, tax:0,
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022): Comercial / Sponsors, Otras secciones deportivas, Organización de partidos
+    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true},"youth_other_sports_expense":{"en":"lump_football_operations_expense","posible":true},"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true}, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } }, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receita De Atividades Esportivas', lado:'revenue', importe:12.351668, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
+      {renglon:'Custos das Atividades Esportivas', lado:'expense', importe:7.54864, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:12.351668, officialTotalExpenses:14.222078, officialPAT:-2.064503,
+  },
 };
 const remobrPresupuestoOverlayByYear = {};
 
@@ -269,6 +306,12 @@ Object.assign(sources, {
     title:'Clube do Remo — dre-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'remo-br-relatorio-auditoria-2020': {
+    id:'remo-br-relatorio-auditoria-2020', clubId:'remo-br',
+    title:'Clube do Remo — relatorio-auditoria-2020 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/relatorio-auditoria-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

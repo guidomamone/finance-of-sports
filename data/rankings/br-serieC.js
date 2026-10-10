@@ -9,7 +9,7 @@
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -74,6 +74,10 @@ window.RANKINGS["br-serieC"] = {
       { id:"criciuma-br", revenue:2.661, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2020",
         mix:[["Cuotas Sociales",0.347],["Comercial / Sponsors",0.096],["Estadio",0.017],["Televisión",0.46],["Venta de Jugadores",1.519],["Otros ingresos",0.221]] },
+      { id:"remo-br", revenue:2.377, reportType:"official_balance_sheet",
+        sourceId:"remo-br-relatorio-auditoria-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.377]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2019: {
