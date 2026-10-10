@@ -53,3 +53,5 @@ este club en 2025.
 Color de marca: #00782F — ru.wikipedia (sección "Клубные цвета": verde y blanco, gana el no blanco; camiseta local body1 00782F; escudo verde), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.json` (sourceId `akhmatgrozny-ru-bfo-2022-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.json` (sourceId `akhmatgrozny-ru-bfo-2023-datos`).
