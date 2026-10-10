@@ -38,10 +38,6 @@ const akrontolyattiruRevenueLinesByYear = {
   // Generados/Rusia/Akron Tolyatti/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Akron Tolyatti/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2024: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:337.147, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:56.645, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Akron Tolyatti/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
@@ -71,14 +67,17 @@ const akrontolyattiruRevenueLinesByYear = {
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:0.253, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:466.986, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Akron Tolyatti/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2024: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:337.147, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:56.645, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:0.634, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:1345.02, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:67.764, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akrontolyattiruExpenseLinesByYear = {
-  2024: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-201.568, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-125.022, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-35.145, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-42.105, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2025: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-244.247, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-432.555, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -115,28 +114,18 @@ const akrontolyattiruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-10.774, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-59.467, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2024: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-201.568, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-125.022, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-35.145, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-42.105, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-1172.825, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-51.423, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-20.377, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-93.929, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akrontolyattiruFiscalYearMeta = {
-  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2024-12-31',
-    sourceId:'akrontolyatti-ru-bfo-2024-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:8.58, tax:3.354,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:8.58},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:3.354},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:337.147, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:201.568, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:1.886,
-  },
   2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2025-12-31',
     sourceId:'akrontolyatti-ru-bfo-2025-datos',
@@ -220,6 +209,27 @@ const akrontolyattiruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-59.746,
+  },
+  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2024-12-31',
+    sourceId:'akrontolyatti-ru-bfo-2024-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:8.58, tax:3.354,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:8.58},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:3.354},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:337.147, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:201.568, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1172.825, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:76.75,
   },
 };
 const akrontolyattiruPresupuestoOverlayByYear = {};
