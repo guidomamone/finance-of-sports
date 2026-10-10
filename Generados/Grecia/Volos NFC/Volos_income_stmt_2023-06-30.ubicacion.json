@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md",
+ "mdSha1": "7964cb9650b7036c80c1c0e801ce205342e9deac",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T14:00:12.592Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales (ej. 4198075,44), sin indicación de miles: están en unidades de euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022-2023",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan 'Έξοδα διοίκησης' 4432911,74 y 'Φόροι εισοδήματος' 246871,67 como gastos aunque estén impresos sin signo negativo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Έξοδα διοίκησης",
+   "texto": "4198075,44 + 1356712,45 - 4432911,74 = 1121876,15 cuadra con el resultado antes de intereses e impuestos, así que los gastos van sin signo en el cuadro.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Hay un único estado de resultados por función (Κατάσταση αποτελεσμάτων κατά λειτουργία) de la ΠΑΕ, ejercicio 2022-2023, que cierra el 30/06/2023. No tiene columna del año anterior. No hay notas que desglosen los renglones. Los importes de gastos van sin signo y la aritmética del cuadro cuadra: 1121876,15 + 63,73 - 7464,46 = 1114475,42, y 1114475,42 - 246871,67 = 867603,75."
+}

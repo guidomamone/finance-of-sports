@@ -1,0 +1,164 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.md",
+ "mdSha1": "fd73dd56558cf0aa801c783cc49bc417a191b1e2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:58:46.788Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con decimales (1.454.696,63), formato Υπόδειγμα Β.6 en euros con céntimos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "1.454.696,63",
+   "anterior": "405.846,23",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "63.431,18",
+   "anterior": "44.523,99",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Μεταβολές αποθεμάτων (εμπορεύματα, προϊόντα, ημικατ/μένα)",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Αγορές εμπορευμάτων και υλικών",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Παροχές σε εργαζόμενους",
+   "actual": "481.982,86",
+   "anterior": "206.287,62",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Αποσβέσεις ενσωμάτων παγίων και άυλων στοιχείων",
+   "actual": "46.582,66",
+   "anterior": "3.950,28",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "actual": "1.246.395,45",
+   "anterior": "404.707,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Τόκοι και συναφή κονδύλια (καθαρό ποσό)",
+   "actual": "1.781,44",
+   "anterior": "1.045,89",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-258.614,60",
+   "anterior": "-165.620,89",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Φόροι",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-258.614,60",
+   "anterior": "-165.620,89",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 24,
+  "actual": "-258.614,60",
+  "anterior": "-165.620,89"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Τόκοι και συναφή κονδύλια (καθαρό ποσό)' (L21, 1.781,44) como gasto financiero neto (resta del resultado)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Τόκοι και συναφή κονδύλια (καθαρό ποσό)",
+   "texto": "El importe se imprime positivo pero cuadra el resultado solo si se resta (L21).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado abreviado sin notas. No hay totales de ingresos ni gastos impresos. Los gastos figuran en positivo y se restan: 1.518.127,81 - 481.982,86 - 46.582,66 - 1.246.395,45 - 1.781,44 = -258.614,60, coincide con L22."
+}

@@ -1,12 +1,36 @@
 {
  "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
- "generatedAt": "2026-09-30T04:30:10.257Z",
+ "generatedAt": "2026-10-10T14:09:21.685Z",
+ "rubrosHuella": "324a296afd741f43c07a151d9f0b662b84935cef",
  "rubros": [
   {
-   "label": "Χορηγίες και διαφημίσεις",
-   "lado": null,
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
    "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
    "choice": "sponsorship_commercial",
    "confidence": 1,
    "top3": [
@@ -15,429 +39,245 @@
      1
     ],
     [
-     "stadium_other",
+     "member_dues",
      0
     ],
     [
-     "womens_football",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1421
+   "tokens": 1054
   },
   {
-   "label": "Εμπορικές δραστηριότητες",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.72,
+   "label": "Λοιπά έσοδα/έξοδα μετεγγραφών",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.61,
    "top3": [
     [
-     "sponsorship_commercial",
-     0.74
+     "other_income",
+     0.64
+    ],
+    [
+     "player_sales",
+     0.34
     ],
     [
      "lump_football_operations",
-     0.09999999999999999
-    ],
-    [
-     "admin_general_expense",
-     0.07
+     0.02
     ]
    ],
-   "tokens": 1424
-  },
-  {
-   "label": "Άλλα λειτουργικά έσοδα",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "match_organisation_expense",
-     0
-    ],
-    [
-     "sponsorship_commercial",
-     0
-    ]
-   ],
-   "tokens": 1421
+   "tokens": 1050
   },
   {
    "label": "Αποζημίωση ειδικού σκοπού COVID",
-   "lado": null,
+   "lado": "revenue",
    "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
+   "section": "estado (lectura 5: hoja)",
    "choice": "other_income",
-   "confidence": 0.97,
+   "confidence": 0.99,
    "top3": [
     [
      "other_income",
-     0.97
+     0.99
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_sales",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.5
     ],
     [
      "other_expenses",
-     0.02
+     0.23
     ],
     [
-     "exceptional_items",
-     0.01
+     "admin_general_expense",
+     0.15
     ]
    ],
-   "tokens": 1723
+   "tokens": 1063
   },
   {
    "label": "Δικαιώματα αναμετάδοσης",
-   "lado": null,
+   "lado": "revenue",
    "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
+   "section": "estado (lectura 5: hoja)",
    "choice": "broadcasting",
-   "confidence": 0.99,
+   "confidence": 1,
    "top3": [
     [
      "broadcasting",
      1
     ],
     [
-     "wages_squad",
+     "member_dues",
      0
     ],
     [
-     "youth_other_sports_expense",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 1423
+   "tokens": 1034
   },
   {
-   "label": "Έσοδα από εισιτήρια",
-   "lado": null,
+   "label": "Άλλα λειτουργικά έσοδα",
+   "lado": "revenue",
    "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "matchday_competition",
-   "confidence": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
    "top3": [
     [
-     "matchday_competition",
-     1
+     "other_income",
+     0.99
     ],
     [
-     "player_sales",
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
      0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_amortisation",
+     0.9
     ],
     [
      "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1416
-  },
-  {
-   "label": "Επίδομα μηχανισμού Αλληλεγγύης και χρηματικά έπαθλα UEFA",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "competition_bonus",
-   "confidence": 1,
-   "top3": [
-    [
-     "competition_bonus",
-     1
-    ],
-    [
-     "wages_squad",
-     0
+     0.09
     ],
     [
      "other_expenses",
-     0
-    ]
-   ],
-   "tokens": 1715
-  },
-  {
-   "label": "Επιχορηγήσεις από Εθνικό φορέα ποδοσφαίρου η Κυβέρνηση",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "other_income",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "other_income",
-     0.72
-    ],
-    [
-     "lump_football_operations",
-     0.27
-    ],
-    [
-     "competition_bonus",
      0.01
     ]
    ],
-   "tokens": 1447
+   "tokens": 1139
   },
   {
-   "label": "Σύνολο λειτουργικών εσόδων",
-   "lado": null,
+   "label": "Άλλα λειτουργικά έξοδα",
+   "lado": "expense",
    "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "lump_football_operations",
-   "confidence": 0.75,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.62,
    "top3": [
-    [
-     "lump_football_operations",
-     0.77
-    ],
-    [
-     "other_income",
-     0.21000000000000002
-    ],
-    [
-     "matchday_competition",
-     0.01
-    ]
-   ],
-   "tokens": 1425
-  },
-  {
-   "label": "Κόστος πωλήσεων/υλικών",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.36,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.39
-    ],
     [
      "other_expenses",
-     0.27
+     0.65
     ],
     [
-     "match_organisation_expense",
-     0.22
-    ]
-   ],
-   "tokens": 1422
-  },
-  {
-   "label": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "wages_squad",
-   "confidence": 0.95,
-   "top3": [
-    [
-     "wages_squad",
-     0.95
-    ],
-    [
-     "other_expenses",
-     0.03
+     "admin_general_expense",
+     0.32
     ],
     [
      "lump_football_operations_expense",
      0.02
     ]
    ],
-   "tokens": 1461
+   "tokens": 1029
   },
   {
-   "label": "Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "depreciation",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "depreciation",
-     0.65
-    ],
-    [
-     "player_amortisation",
-     0.18
-    ],
-    [
-     "other_amortisation",
-     0.12
-    ]
-   ],
-   "tokens": 1454
-  },
-  {
-   "label": "Σύνολο λειτουργικών εξόδων",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.69,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.71
-    ],
-    [
-     "other_expenses",
-     0.19
-    ],
-    [
-     "admin_general_expense",
-     0.08
-    ]
-   ],
-   "tokens": 1425
-  },
-  {
-   "label": "Άλλα λειτουργικά έξοδα",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
+   "label": "Μη λειτουργικά έσοδα / έξοδα",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
    "choice": "other_expenses",
-   "confidence": 0.71,
+   "confidence": 0.84,
    "top3": [
     [
      "other_expenses",
-     0.73
-    ],
-    [
-     "admin_general_expense",
-     0.15000000000000002
-    ],
-    [
-     "lump_football_operations_expense",
-     0.1
-    ]
-   ],
-   "tokens": 1421
-  },
-  {
-   "label": "Απόσβεση και απομείωση λοιπών αύλων στοιχείων ενεργητικού (εξαιρουμένων των εγγραφών ποδοσφαιριστών)",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "other_amortisation",
-   "confidence": 0.79,
-   "top3": [
-    [
-     "other_amortisation",
-     0.81
-    ],
-    [
-     "depreciation",
-     0.18
-    ],
-    [
-     "other_expenses",
-     0.01
-    ]
-   ],
-   "tokens": 1486
-  },
-  {
-   "label": "Αποτελέσματα εκμετάλλευσης (Ζημίες)(λειτουργικά έσοδα μείον λειτουργικά έξοδα)",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "other_expenses",
-   "confidence": 0.32,
-   "top3": [
-    [
-     "other_expenses",
-     0.35000000000000003
-    ],
-    [
-     "lump_football_operations_expense",
-     0.21000000000000002
-    ],
-    [
-     "lump_football_operations",
-     0.19
-    ]
-   ],
-   "tokens": 1471
-  },
-  {
-   "label": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "player_amortisation",
-   "confidence": 0.78,
-   "top3": [
-    [
-     "player_amortisation",
-     0.8
-    ],
-    [
-     "player_impairment",
-     0.15
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1463
-  },
-  {
-   "label": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "choice": "player_sales",
-   "confidence": 0.82,
-   "top3": [
-    [
-     "player_sales",
-     0.84
-    ],
-    [
-     "other_income",
-     0.11
+     0.85
     ],
     [
      "exceptional_items",
-     0.04
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.01
     ]
    ],
-   "tokens": 1459
+   "tokens": 1060
   },
   {
-   "label": "Σύνολο καθαρού αποτελέσματος από εγγραφές ποδοσφαιριστών",
-   "lado": null,
-   "page": 2,
-   "section": "",
-   "choice": "player_amortisation",
-   "confidence": 0.32,
+   "label": "Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
    "top3": [
     [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
      "player_amortisation",
-     0.36
-    ],
-    [
-     "player_sales",
-     0.3
-    ],
-    [
-     "other_income",
-     0.15000000000000002
+     0
     ]
    ],
-   "tokens": 1292
+   "tokens": 1105
   }
  ]
 }

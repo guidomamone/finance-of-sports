@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.md",
+ "mdSha1": "4d48711d7dfe536353212abac2a3c7e55ff20354",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:58:52.119Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el bloque b1.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2020-2021",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b1) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece leyenda de escala sobre la tabla b1; los estados griegos de una ΠΑΕ suelen presentarse en euros.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de Volos NFC ΠΑΕ, solo columna 2020-2021, sin año anterior ni notas de desglose. Se asume perímetro individual (sociedad anónima de fútbol)."
+}

@@ -1,112 +1,130 @@
 {
- "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
- "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf",
- "club": "panserraikos",
- "year": 2023,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:03:39.438Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 14,
-  "notasUsadas": []
- },
- "ladoConocido": 8,
- "rubros": [
-  {
-   "label": "Έσοδα από εισιτήρια",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    0.173084
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Χορηγίες και διαφημίσεις",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    0.387016
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Δικαιώματα αναμετάδοσης",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    0.077492
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Άλλα λειτουργικά έσοδα",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    0.043795
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Αποζημίωση ειδικού σκοπού COVID",
-   "lado": "revenue",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    0.005336
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
-   "lado": "expense",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    -0.514544
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού",
-   "lado": "expense",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    -0.002435
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Άλλα λειτουργικά έξοδα",
-   "lado": "expense",
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    -0.495685
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
-   "lado": null,
-   "page": 1,
-   "section": "# Κατάσταση Αποτελεσματων χρήσης 1/7/2022-30/6/2023 / ΜΟΥΣΙΚΟΓΥΜΝΑΣΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΠΑΝΣΕΡΡΑΙΚΟΣ ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΕΙΑ 1946 / Δημοτικό Γήπεδο Σερρών ΤΚ 62125 , Σέρρες",
-   "values": [
-    -0.63656
-   ],
-   "origen": "estado 0"
-  }
- ]
+  "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
+  "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf",
+  "club": "panserraikos",
+  "year": 2023,
+  "generatedAt": "2026-10-10T14:02:01.263Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Έσοδα από εισιτήρια",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.173084
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.387016
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.077492
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Άλλα λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.043795
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Αποζημίωση ειδικού σκοπού COVID",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.005336
+      ],
+      "glosa": "Compensación para fines específicos por COVID"
+    },
+    {
+      "label": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.186319
+      ],
+      "glosa": "Ganancias/pérdidas por traspasos y bajas de futbolistas"
+    },
+    {
+      "label": "Λοιπά έσοδα/έξοδα μετεγγραφών",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.1
+      ],
+      "glosa": "Otros ingresos/gastos por traspasos"
+    },
+    {
+      "label": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.514544
+      ],
+      "glosa": "Gastos de personal (futbolistas y otros empleados)"
+    },
+    {
+      "label": "Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.002435
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Άλλα λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.495685
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.63656
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Μη λειτουργικά έσοδα / έξοδα",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+      "values": [
+        0.102569
+      ],
+      "glosa": "Ingresos / gastos no operativos"
+    }
+  ]
 }

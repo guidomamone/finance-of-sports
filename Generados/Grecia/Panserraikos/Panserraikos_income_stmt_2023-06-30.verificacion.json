@@ -1,0 +1,177 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
+ "generado": "2026-10-10T14:02:01.262Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "43cf08c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 6"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.973043,
+  "gastos": 1.751793,
+  "financiero": -0.00318,
+  "impuesto": 0,
+  "resultadoImpreso": -0.78193,
+  "resultadoParaCargar": -0.78193,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 0.173084,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "lado": "ingreso",
+   "M": 0.387016,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "lado": "ingreso",
+   "M": 0.077492,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Άλλα λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 0.043795,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αποζημίωση ειδικού σκοπού COVID",
+   "lado": "ingreso",
+   "M": 0.005336,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
+   "lado": "ingreso",
+   "M": 0.186319,
+   "pagina": 1,
+   "linea": 30,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα/έξοδα μετεγγραφών",
+   "lado": "ingreso",
+   "M": 0.1,
+   "pagina": 2,
+   "linea": 34,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
+   "lado": "gasto",
+   "M": 0.514544,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού",
+   "lado": "gasto",
+   "M": 0.002435,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Άλλα λειτουργικά έξοδα",
+   "lado": "gasto",
+   "M": 0.495685,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 0.63656,
+   "pagina": 1,
+   "linea": 29,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Μη λειτουργικά έσοδα / έξοδα",
+   "lado": "gasto",
+   "M": 0.102569,
+   "pagina": 2,
+   "linea": 42,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρηματοοικονομικά έσοδα και έξοδα",
+   "M": -0.00318,
+   "linea": 41
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φορολογικά έσοδα / δαπάνες",
+   "M": 0,
+   "linea": 43
+  }
+ ]
+}

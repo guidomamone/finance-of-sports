@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.md",
+ "mdSha1": "a56b558a470a396c388def0536ee5c5c931ec593",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:52:15.078Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con decimales (ej. 729.300,80), se asumen euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 81,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "729.300,80",
+   "anterior": "2.762.545,51",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 82,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "(2.303.644,63)",
+   "anterior": "(3.042.118,60)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 83,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "(1.574.343,83)",
+   "anterior": "(279.573,09)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 84,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "2.006.147,90",
+   "anterior": "781.106,75",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 85,
+   "etiqueta": "",
+   "actual": "431.804,07",
+   "anterior": "501.533,66",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 86,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "(22.975,98)",
+   "anterior": "(34.185,31)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 87,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "(294.681,20)",
+   "anterior": "(334.886,52)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 88,
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "actual": "(39.848,10)",
+   "anterior": "(46.651,26)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 89,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "43.131,36",
+   "anterior": "105.118,57",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 90,
+   "etiqueta": "",
+   "actual": "117.430,15",
+   "anterior": "190.929,14",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 91,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "3,25",
+   "anterior": "1,19",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 92,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(5.628,99)",
+   "anterior": "(7.692,86)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 93,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "111.804,41",
+   "anterior": "183.237,47",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 94,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "(29.305,92)",
+   "anterior": "(17.174,92)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 95,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "82.498,49",
+   "anterior": "166.062,55",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 95,
+  "actual": "82.498,49",
+  "anterior": "166.062,55"
+ },
+ "dudas": [],
+ "observaciones": "Estado por función sin notas de desglose. Subtotales sin etiqueta en L85 y L90 (este último es el resultado operativo). No se imprimen totales de ingresos ni de gastos. Escala no indicada; se asumen unidades (euros) por los decimales."
+}

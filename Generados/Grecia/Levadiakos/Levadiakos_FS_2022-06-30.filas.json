@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2022-06-30.md",
+ "mdSha1": "67d833186868b0e17848f5dcc8f8a163621f4033",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:51:07.219Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Importes con dos decimales (ej. 36.775,20, L565); no se indica escala, se infiere euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 565,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "36.775,20",
+   "anterior": "3.080,65",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 566,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "(1.354.066,29)",
+   "anterior": "(772.824,51)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 567,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "(1.317.291,09)",
+   "anterior": "(769.743,86)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 568,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "1.372.612,70",
+   "anterior": "963.746,07",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 569,
+   "etiqueta": "",
+   "actual": "55.321,61",
+   "anterior": "194.002,21",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 570,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "(25.340,72)",
+   "anterior": "(3.464,17)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 571,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "(190.877,38)",
+   "anterior": "(243.569,14)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 572,
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "actual": "(73.518,49)",
+   "anterior": "(292.844,93)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 573,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "559.186,29",
+   "anterior": "344.552,78",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 574,
+   "etiqueta": "",
+   "actual": "324.771,31",
+   "anterior": "(1.323,25)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 575,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "0,36",
+   "anterior": "37,30",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 576,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(5.185,17)",
+   "anterior": "(761,48)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 577,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "319.586,50",
+   "anterior": "(2.047,43)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 578,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 579,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "319.586,50",
+   "anterior": "(2.047,43)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 579,
+  "actual": "319.586,50",
+  "anterior": "(2.047,43)"
+ },
+ "dudas": [],
+ "observaciones": "Estado por función; no imprime totales de ingresos ni de gastos. Columnas 30/6/2022 y 30/6/2021 corresponden a los ejercicios pedido y anterior. Las líneas L569 y L574 son subtotales sin etiqueta impresa (L574 equivale al resultado operativo). No hay notas de desglose."
+}

@@ -1,0 +1,143 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
+ "generado": "2026-10-10T14:02:00.877Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "c1e365b",
+  "c918250"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 6.207699 en OFI_income_stmt_2024-06-30.pdf y 6.207699 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 8.187733,
+  "gastos": 9.585516,
+  "financiero": -0.016748,
+  "impuesto": 0,
+  "resultadoImpreso": -1.41453,
+  "resultadoParaCargar": -1.41453,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 5.33344,
+   "pagina": 8,
+   "linea": 200,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 2.538213,
+   "pagina": 8,
+   "linea": 203,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.31608,
+   "pagina": 8,
+   "linea": 207,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 8.199058,
+   "pagina": 8,
+   "linea": 201,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.659694,
+   "pagina": 8,
+   "linea": 204,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.565452,
+   "pagina": 8,
+   "linea": 205,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.161311,
+   "pagina": 8,
+   "linea": 206,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.016748,
+   "linea": 210
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 212
+  }
+ ]
+}

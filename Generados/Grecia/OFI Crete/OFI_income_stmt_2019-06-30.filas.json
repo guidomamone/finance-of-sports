@@ -1,0 +1,184 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md",
+ "mdSha1": "0b3c92db0001b4ed8eec3b60075c75319bdd7e50",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:54:13.539Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales (ej. 1.399.916,86 en L7); el cuadro no indica escala explícita"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 7,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "1.399.916,86",
+   "anterior": "527.892,56",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 8,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "-4.843.609,72",
+   "anterior": "-1.577.618,91",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 9,
+   "etiqueta": "Μικτό Αποτέλεσμα",
+   "actual": "-3.443.692,86",
+   "anterior": "-1.049.726,35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 10,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "691.068,22",
+   "anterior": "122.035,27",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "-350.335,19",
+   "anterior": "-95.471,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "-264.950,86",
+   "anterior": "-79.766,57",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "actual": "-262.880,29",
+   "anterior": "-211.419,24",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "122.072,69",
+   "anterior": "80.266,07",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Αποτέλεσμα προ τόκων και φόρων",
+   "actual": "-3.508.718,29",
+   "anterior": "-1.234.082,34",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-6.121,23",
+   "anterior": "-3.579,98",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-3.514.839,52",
+   "anterior": "-1.237.662,32",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-3.514.839,52",
+   "anterior": "-1.237.662,32",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 20,
+  "actual": "-3.514.839,52",
+  "anterior": "-1.237.662,32"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b1) en unidades de euro, tal como aparecen con decimales (ej. L7 1.399.916,86)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El cuadro no declara escala; los decimales sugieren euros en unidades (L5-L20).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado por función sin totales de ingresos ni gastos impresos. La nota 11 citada en L7, L13 y L14 no fue provista."
+}

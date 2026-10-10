@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.md",
+ "mdSha1": "f25f332aeef72b1a6f6405e46e92d49dac13b320",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:52:39.006Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "Importes con dos decimales (ej. 2.978.159,90), sin indicación de miles; se infiere unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 619,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "2.978.159,90",
+   "anterior": "729.300,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 620,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "(4.664.283,37)",
+   "anterior": "(2.303.644,63)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 621,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "(1.686.123,47)",
+   "anterior": "(1.574.343,83)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 622,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "2.516.929,15",
+   "anterior": "2.006.147,90",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 623,
+   "etiqueta": "",
+   "actual": "830.805,68",
+   "anterior": "431.804,07",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 624,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "(34.283,63)",
+   "anterior": "(22.975,98)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 625,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "(392.455,17)",
+   "anterior": "(294.681,20)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 626,
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "actual": "(36.136,73)",
+   "anterior": "(39.848,10)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 627,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "121.809,72",
+   "anterior": "43.131,36",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 628,
+   "etiqueta": "",
+   "actual": "489.739,87",
+   "anterior": "117.430,15",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 629,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "1,55",
+   "anterior": "3,25",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 630,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(9.429,51)",
+   "anterior": "(5.628,99)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 631,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "480.311,91",
+   "anterior": "111.804,41",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 632,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "(92.852,27)",
+   "anterior": "(29.305,92)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 633,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "387.459,64",
+   "anterior": "82.498,49",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 633,
+  "actual": "387.459,64",
+  "anterior": "82.498,49"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados por función, sin notas de desglose. Las líneas L623 y L628 son subtotales sin etiqueta impresa (L628 equivale al resultado operativo). No hay total de ingresos ni de gastos impreso. Escala inferida en unidades (euros) por los decimales."
+}

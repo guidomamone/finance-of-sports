@@ -1,0 +1,26 @@
+{
+ "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.pdf",
+ "generado": "2026-10-10T14:10:08.086Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "χρήσεως 1 Ιουλίου 2021 έως 30 Ιουνίου 2022"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "cortadoEn": "club"
+}

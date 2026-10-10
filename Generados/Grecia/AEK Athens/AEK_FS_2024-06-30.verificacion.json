@@ -1,0 +1,197 @@
+{
+ "pdf": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.pdf",
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md",
+ "generado": "2026-10-10T14:01:59.314Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "f23b223",
+  "bc2ad7f"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 58.768559 en este documento y 58.768559 en AEK_NOTES_IFRS_2025-06-30_a.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 38.985157 en AEK_FS_2023-06-30.pdf y 38.985157 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer que no afecta la carga: Los encabezados L1452, L1466, L1479 dicen 30/8 pero los totales coinciden con el estado; parece error tipográfico."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 58.768559,
+  "gastos": 56.899256,
+  "financiero": -2.150954,
+  "impuesto": 0.212803,
+  "resultadoImpreso": -0.068848,
+  "resultadoParaCargar": -0.068848,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "lado": "ingreso",
+   "M": 21.603121,
+   "pagina": 14,
+   "linea": 467,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "lado": "ingreso",
+   "M": 9.524532,
+   "pagina": 14,
+   "linea": 468,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "lado": "ingreso",
+   "M": 5.39399,
+   "pagina": 14,
+   "linea": 469,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Εμπορικά",
+   "lado": "ingreso",
+   "M": 0.010044,
+   "pagina": 14,
+   "linea": 470,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "ingreso",
+   "M": 11.406695,
+   "pagina": 14,
+   "linea": 471,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "lado": "ingreso",
+   "M": 1.68441,
+   "pagina": 14,
+   "linea": 472,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 1.388442,
+   "pagina": 14,
+   "linea": 473,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κέρδος/ζημία από πώληση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+   "lado": "ingreso",
+   "M": 7.757325,
+   "pagina": 14,
+   "linea": 483,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων / υλικών",
+   "lado": "gasto",
+   "M": 0.218712,
+   "pagina": 14,
+   "linea": 475,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "lado": "gasto",
+   "M": 35.77883,
+   "pagina": 14,
+   "linea": 476,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Απομείωση και απόσβεση",
+   "lado": "gasto",
+   "M": 6.590993,
+   "pagina": 14,
+   "linea": 477,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "lado": "gasto",
+   "M": 1.548923,
+   "pagina": 14,
+   "linea": 478,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "lado": "gasto",
+   "M": 12.761798,
+   "pagina": 14,
+   "linea": 479,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρηματοοικονομικά Έξοδα",
+   "M": -2.150954,
+   "linea": 482
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Αναβαλλόμενος Φόρος",
+   "M": 0.212803,
+   "linea": 485
+  }
+ ]
+}

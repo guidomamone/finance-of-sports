@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.md",
+ "mdSha1": "da1b8ea586db78e7ac2288361b052db7ef25efae",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:57:54.351Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con dos decimales (405.846,23), sin indicación de miles: unidades de euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2018-2019",
+ "columna_anterior": "2017-2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Τόκοι και συναφή κονδύλια (καθαρό ποσό)' 1.045,89 como gasto financiero neto (resta del resultado)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Τόκοι και συναφή κονδύλια (καθαρό ποσό)",
+   "texto": "El signo no se imprime; el resultado -165.620,89 cuadra solo si los intereses netos restan (450.370,22 - 614.945,22 - 1.045,89).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Primer ejercicio (24/07/2018-30/06/2019), modelo B.6 para entidades muy pequeñas; la columna 2017-2018 está toda en cero. Los gastos se imprimen en positivo. No hay notas de desglose."
+}

@@ -1,0 +1,26 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf",
+ "generado": "2026-10-10T14:10:08.147Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1 Ιουλίου 2024 έως 30 Ιουνίου 2025"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "cortadoEn": "club"
+}

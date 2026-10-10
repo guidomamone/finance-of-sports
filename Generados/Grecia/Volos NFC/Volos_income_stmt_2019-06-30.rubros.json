@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.md",
+  "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf",
+  "club": "volos-nfc",
+  "year": 2019,
+  "generatedAt": "2026-10-10T14:02:01.387Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.405846
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.044524
+      ],
+      "glosa": "Otros ingresos ordinarios"
+    },
+    {
+      "label": "Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Μεταβολές αποθεμάτων (εμπορεύματα, προϊόντα, ημικατ/μένα)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Variación de existencias (mercaderías, productos, semielaborados)"
+    },
+    {
+      "label": "Αγορές εμπορευμάτων και υλικών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Compras de mercaderías y materiales"
+    },
+    {
+      "label": "Παροχές σε εργαζόμενους",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.206288
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Αποσβέσεις ενσωμάτων παγίων και άυλων στοιχείων",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00395
+      ],
+      "glosa": "Amortización del inmovilizado material e intangible"
+    },
+    {
+      "label": "Λοιπά έξοδα και ζημιές",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.404707
+      ],
+      "glosa": "Otros gastos y pérdidas"
+    }
+  ]
+}

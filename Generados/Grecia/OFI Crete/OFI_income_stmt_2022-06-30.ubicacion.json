@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2022-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2022-06-30.md",
+ "mdSha1": "5e2fe61b782070822c00ccfe41ddfa2ebf0980ec",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:54:54.755Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    25
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase sobre la escala (ni 'σε ευρώ' ni 'σε χιλιάδες ευρώ') arriba del cuadro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2022",
+ "columna_anterior": "30/6/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del cuadro 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ' (b1) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay texto que indique la escala; los estados griegos en formato ΕΛΠ (ν.4308/2014) de PAE suelen presentarse en euros.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de una sola página con el estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ) de OFI Crete, columnas 30/6/2022 y 30/6/2021. No hay notas de desglose en el documento. Se asume perímetro individual (sociedad anónima de fútbol, sin indicación de consolidado)."
+}

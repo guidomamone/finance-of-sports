@@ -1,0 +1,169 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
+ "mdSha1": "38a48fcfc0f8c8fdc6c02ed2b45b65d894ca5f57",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:52:44.492Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    131,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    159,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    198,
+    213
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    471,
+    492
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    500,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    533,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    549,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    560,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    580,
+    584
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    596,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    607,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    624,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    631,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    655,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    663,
+    671
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b13"
+ ],
+ "notas_gastos": [
+  "b14",
+  "b16"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el estado de resultados (b4); los estados griegos de este tipo suelen expresarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2025",
+ "columna_anterior": "30/6/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la Κατάσταση Αποτελεσμάτων (b4, pág. 8) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece ninguna leyenda de escala encima del estado ni de las notas.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado de resultados por función es b4 (estados individuales de la sociedad, no se ve consolidado). b13 desglosa los ingresos (nota 11) y b14 desglosa los gastos por naturaleza. b16 abre los gastos de personal (que aparecen como Αμοιβές & έξοδα προσωπικού en b14). Se excluyen el balance (b2, b3), los cuadros de activo fijo (b5, b6) y las notas de saldos de balance (b7-b12)."
+}

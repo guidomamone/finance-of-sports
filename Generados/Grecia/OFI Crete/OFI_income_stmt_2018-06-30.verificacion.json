@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.md",
+ "generado": "2026-10-10T14:02:00.933Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2018,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "99c17bc"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2018: 0.730194 en este documento y 0.730194 en OFI_income_stmt_2019-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: El estado (L5) no imprime la escala; los decimales sugieren unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.730194,
+  "gastos": 1.964276,
+  "financiero": -0.00358,
+  "impuesto": 0,
+  "resultadoImpreso": -1.237662,
+  "resultadoParaCargar": -1.237662,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 0.527893,
+   "pagina": 1,
+   "linea": 7,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.122035,
+   "pagina": 1,
+   "linea": 10,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.080266,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 1.577619,
+   "pagina": 1,
+   "linea": 8,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.095472,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.079767,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.211419,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0,
+   "linea": 16
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.00358,
+   "linea": 17
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 19
+  }
+ ]
+}

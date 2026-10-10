@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2023-06-30.md",
+ "mdSha1": "789e5f07bc30b1f916a9f5ec7f71babf1ccb14c9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:55:24.740Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    20
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con dos decimales (ej. 4.726.104,54), en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2023",
+ "columna_anterior": "30/6/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de una sola página con el estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ). Los renglones remiten a la nota 10, pero esa nota no figura en el documento. Los totales cuadran. El perímetro se asume individual porque no hay mención de consolidación."
+}

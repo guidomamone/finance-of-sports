@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.md",
+ "mdSha1": "a1a0fa433da5b924f8d3e490b6f7914b8db26059",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:56:01.418Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    25
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala (ni 'σε ευρώ' ni 'σε χιλιάδες ευρώ') sobre el cuadro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2024",
+ "columna_anterior": "30/6/2023",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ' (pág. 1) están expresados en euros unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve indicación de escala sobre el cuadro b1; los estados griegos según ΕΛΠ suelen presentarse en euros unidades.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de una sola página con el estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ) del ejercicio cerrado el 30/6/2024, con comparativo 30/6/2023. No hay notas que desglosen ingresos o gastos. El perímetro no se indica; probablemente sea individual (sociedad anónima del club)."
+}

@@ -1,0 +1,50 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
+ "mdSha1": "99103566d2471d7e71b911569de5a88f3899fa82",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:56:29.918Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    34,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    38,
+    45
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε Ευρώ)",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2022- 30/6/2023",
+ "columna_anterior": "1/7/2021- 30/6/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados de la SAD Panserraikos comienza en la página 1 (b1) y continúa en la página 2 con el resultado neto por fichajes de jugadores (b2) y con otros resultados hasta la pérdida después de impuestos (b3). Es un estado individual. No hay notas de desglose."
+}

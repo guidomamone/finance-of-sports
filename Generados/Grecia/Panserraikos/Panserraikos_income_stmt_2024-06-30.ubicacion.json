@@ -1,0 +1,60 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2024-06-30.md",
+ "mdSha1": "30cc69ecc1d151db38e7a6d3c242608b4c75eaa0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:57:03.573Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    37,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    48,
+    76
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas: '1/7/2023- 30/06/2024 (ΕΥΡΩ)' (importes con decimales, en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2023- 30/06/2024 (ΕΥΡΩ)",
+ "columna_anterior": "1/7/2022- 30/06/2023 (ΕΥΡΩ)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el PDF no contiene la cuenta de resultados (solo el balance en b1-b3) y por lo tanto no se carga nada?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Αποτέλεσμα χρήσης (1.7.2023-30.6.2024)",
+   "texto": "Los tres bloques son activo, pasivo y patrimonio; solo aparece el resultado del ejercicio -120.750,97 en el patrimonio (b3), pese a que el archivo se llama income_stmt.",
+   "bloques": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento solo contiene el balance (ενεργητικό en b1, pasivo en b2-b3 y patrimonio en b3) de la SAD Panserraikos al 30/06/2024. No hay estado de resultados ni notas de ingresos o gastos. El resultado del ejercicio que figura en el patrimonio es -120.750,97 EUR (anterior: -781.930,48)."
+}

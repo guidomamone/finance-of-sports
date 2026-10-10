@@ -1,0 +1,104 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.md",
+ "mdSha1": "f9a9e979c8c97d7555f0494947f240017c5bbcad",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:51:16.340Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    114,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    292,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    399,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    450,
+    454
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    464,
+    470
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    476,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    509,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    519,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    567,
+    571
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con dos decimales (253.444,35), expresados en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2023",
+ "columna_anterior": "30/6/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por función (b2) de la ΠΑΕ Levadiakos, ejercicio 1/7/2022-30/6/2023, individual. Ningún bloque del índice desglosa ingresos o gastos: b1 es balance, b3-b4 activo fijo, b5-b9 cuentas de balance. No hay notas de desglose de ingresos/gastos en el índice."
+}

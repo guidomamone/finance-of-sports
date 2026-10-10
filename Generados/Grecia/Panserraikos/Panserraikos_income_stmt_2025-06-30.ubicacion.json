@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md",
+ "mdSha1": "84fd9236278ee76a8741764c0a1c2403b6a1ba21",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:57:07.282Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    36
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε Ευρώ, εκτός εάν αναφέρονται διαφορετικά)",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2024 - 30/6/2025",
+ "columna_anterior": "1/7/2023 - 30/6/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de una sola tabla: estado de resultados por función (Κατάσταση αποτελεσμάτων κατά λειτουργία) del ejercicio 1/7/2024-30/6/2025, en euros. No hay notas que desglosen renglones. Se asume perímetro individual porque no hay indicación de consolidación."
+}

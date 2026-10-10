@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.md",
+ "mdSha1": "64282b34d95523bacc2808582d229214335a140f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T14:00:51.900Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    25
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales (3.377.521,91); no hay leyenda de escala, se infiere unidades de euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023-2024",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de Volos NFC PAE, ejercicio 2023-2024 (cierre 30-06-2024). Sin columna del año anterior ni notas de desglose. Perímetro individual (sociedad única, sin mención de consolidación). Cuadra: 5.872.569,47 - 5.379.127,72 = 493.441,75."
+}

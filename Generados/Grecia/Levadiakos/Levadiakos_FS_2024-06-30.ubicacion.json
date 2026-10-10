@@ -1,0 +1,120 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.md",
+ "mdSha1": "a56b558a470a396c388def0536ee5c5c931ec593",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:51:45.245Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    15,
+    59
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    72,
+    76
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    78,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    239,
+    246
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    325,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    380,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    390,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    402,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    435,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    445,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    582,
+    585
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes se imprimen con dos decimales (ej. 729.300,80), lo que indica euros en unidades; no hay leyenda de 'en miles'.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2024",
+ "columna_anterior": "30/6/2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΆ ΛΕΙΤΟΥΡΓΙΑ) en b4, ejercicio 1/7/2023-30/6/2024. b3 es solo el título. El documento no trae notas que desglosen ingresos o gastos: b5-b11 son vidas útiles, activo fijo, cuentas por cobrar, caja y pasivos. Se trata de estados individuales de la sociedad."
+}

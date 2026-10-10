@@ -1,178 +1,64 @@
 {
  "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.md",
- "generatedAt": "2026-09-30T04:29:32.556Z",
+ "generatedAt": "2026-10-10T14:09:20.838Z",
+ "rubrosHuella": "48c155593573d6fadc8b8e8438f5c12be1ef7391",
  "rubros": [
   {
-   "label": "Έξοδα διοίκησης",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "admin_general_expense",
-   "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "player_impairment",
-     0
-    ],
-    [
-     "stadium_other",
-     0
-    ]
-   ],
-   "tokens": 1332
-  },
-  {
-   "label": "Έξοδα διάθεσης",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "admin_general_expense",
-   "confidence": 0.66,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.68
-    ],
-    [
-     "other_expenses",
-     0.15000000000000002
-    ],
-    [
-     "match_organisation_expense",
-     0.13
-    ]
-   ],
-   "tokens": 1331
-  },
-  {
-   "label": "Λοιπά συνήθη έσοδα",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "player_sales",
-     0
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1334
-  },
-  {
-   "label": "Μικτό αποτέλεσμα",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_income",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "other_income",
-     0.52
-    ],
-    [
-     "lump_football_operations",
-     0.35000000000000003
-    ],
-    [
-     "other_expenses",
-     0.05
-    ]
-   ],
-   "tokens": 1324
-  },
-  {
    "label": "Κόστος πωλήσεων",
-   "lado": null,
+   "lado": "expense",
    "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "section": "estado",
    "choice": "lump_football_operations_expense",
-   "confidence": 0.45,
+   "confidence": 0.42,
    "top3": [
     [
      "lump_football_operations_expense",
-     0.48
+     0.47
     ],
     [
      "other_expenses",
-     0.22
+     0.43
     ],
     [
-     "match_organisation_expense",
-     0.12
-    ]
-   ],
-   "tokens": 1332
-  },
-  {
-   "label": "Κύκλος εργασιών (καθαρός)",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "lump_football_operations",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.89
-    ],
-    [
-     "other_income",
+     "player_amortisation",
      0.09
-    ],
-    [
-     "matchday_competition",
-     0.01
     ]
    ],
-   "tokens": 1340
+   "tokens": 998
   },
   {
    "label": "Άλλα έξοδα και ζημίες",
-   "lado": null,
+   "lado": "expense",
    "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.88,
+   "confidence": 0.95,
    "top3": [
     [
      "other_expenses",
-     0.89
+     0.95
     ],
     [
      "exceptional_items",
-     0.1
+     0.05
     ],
     [
-     "admin_general_expense",
-     0.01
+     "wages_squad",
+     0
     ]
    ],
-   "tokens": 1334
+   "tokens": 1018
   },
   {
-   "label": "Λοιπά έσοδα και κέρδη",
-   "lado": null,
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
    "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_income",
+   "section": "estado",
+   "choice": "admin_general_expense",
    "confidence": 1,
    "top3": [
     [
-     "other_income",
+     "admin_general_expense",
      1
     ],
     [
@@ -180,402 +66,103 @@
      0
     ],
     [
-     "youth_other_sports_expense",
+     "player_amortisation",
      0
     ]
    ],
-   "tokens": 1334
+   "tokens": 1009
   },
   {
-   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
-   "lado": null,
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
    "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_expenses",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "other_expenses",
-     0.67
-    ],
-    [
-     "admin_general_expense",
-     0.32
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1345
-  },
-  {
-   "label": "Αποτέλεσμα προ φόρων",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_income",
-   "confidence": 0.34,
-   "top3": [
-    [
-     "other_income",
-     0.38
-    ],
-    [
-     "admin_general_expense",
-     0.33
-    ],
-    [
-     "other_expenses",
-     0.16
-    ]
-   ],
-   "tokens": 1334
-  },
-  {
-   "label": "Φόρος εισοδήματος",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "section": "estado",
    "choice": "admin_general_expense",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "stadium_other",
-     0
-    ]
-   ],
-   "tokens": 1334
-  },
-  {
-   "label": "Υπόλοιπο 1.7.2017",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "other_expenses",
-   "confidence": 0.56,
-   "top3": [
-    [
-     "other_expenses",
-     0.6
-    ],
-    [
-     "depreciation",
-     0.35
-    ],
-    [
-     "admin_general_expense",
-     0.02
-    ]
-   ],
-   "tokens": 886
-  },
-  {
-   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "education_expense",
-     0
-    ],
-    [
-     "womens_football",
-     0
-    ]
-   ],
-   "tokens": 1345
-  },
-  {
-   "label": "Αναπροσαρμογή",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
-   "confidence": 0.51,
-   "top3": [
-    [
-     "depreciation",
-     0.55
-    ],
-    [
-     "other_expenses",
-     0.32
-    ],
-    [
-     "other_amortisation",
-     0.05
-    ]
-   ],
-   "tokens": 882
-  },
-  {
-   "label": "Συντελεστής απόσβεσης",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "depreciation",
-     0.99
-    ],
-    [
-     "other_expenses",
-     0.01
-    ],
-    [
-     "lump_football_operations_expense",
-     0
-    ]
-   ],
-   "tokens": 889
-  },
-  {
-   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
-   "lado": null,
-   "page": 2,
-   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
-   "choice": "admin_general_expense",
-   "confidence": 0.44,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.46
-    ],
-    [
-     "other_income",
-     0.28
-    ],
-    [
-     "other_expenses",
-     0.16
-    ]
-   ],
-   "tokens": 1344
-  },
-  {
-   "label": "Πωλήσεις-διαγραφές-μεταφορές",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
-   "confidence": 0.34,
-   "top3": [
-    [
-     "depreciation",
-     0.4
-    ],
-    [
-     "other_expenses",
-     0.37
-    ],
-    [
-     "exceptional_items",
-     0.15
-    ]
-   ],
-   "tokens": 897
-  },
-  {
-   "label": "Προσθήκες",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "other_expenses",
-   "confidence": 0.83,
-   "top3": [
-    [
-     "other_expenses",
-     0.85
-    ],
-    [
-     "depreciation",
-     0.07
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ]
-   ],
-   "tokens": 878
-  },
-  {
-   "label": "Υπόλοιπο 30.6.2018",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "other_expenses",
    "confidence": 0.5,
    "top3": [
     [
-     "other_expenses",
+     "admin_general_expense",
      0.54
     ],
     [
-     "depreciation",
-     0.4
+     "other_expenses",
+     0.34
     ],
     [
-     "admin_general_expense",
-     0.02
+     "match_organisation_expense",
+     0.1
     ]
    ],
-   "tokens": 887
+   "tokens": 993
   },
   {
-   "label": "Αποσβέσεις χρήσεως",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "lump_football_operations",
    "confidence": 1,
    "top3": [
     [
-     "depreciation",
+     "lump_football_operations",
      1
     ],
     [
-     "lump_football_operations_expense",
+     "member_dues",
      0
     ],
     [
-     "admin_general_expense",
+     "season_tickets",
      0
     ]
    ],
-   "tokens": 886
+   "tokens": 1132
   },
   {
-   "label": "Αναπόσβεστη αξία 30.6.2018",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
-   "confidence": 0.43,
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
    "top3": [
     [
-     "depreciation",
-     0.48
+     "other_income",
+     1
     ],
     [
-     "other_expenses",
-     0.45
+     "member_dues",
+     0
     ],
     [
-     "other_amortisation",
-     0.04
+     "season_tickets",
+     0
     ]
    ],
-   "tokens": 894
+   "tokens": 1029
   },
   {
-   "label": "Αναπόσβεστη αξία 30.6.2019",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "depreciation",
-   "confidence": 0.46,
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
    "top3": [
     [
-     "depreciation",
-     0.51
+     "other_income",
+     0.99
     ],
     [
-     "other_expenses",
-     0.42
+     "lump_football_operations",
+     0.01
     ],
     [
-     "other_amortisation",
-     0.05
+     "member_dues",
+     0
     ]
    ],
-   "tokens": 894
-  },
-  {
-   "label": "Υπόλοιπο 30.6.2019",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "other_expenses",
-   "confidence": 0.52,
-   "top3": [
-    [
-     "other_expenses",
-     0.56
-    ],
-    [
-     "depreciation",
-     0.39
-    ],
-    [
-     "other_amortisation",
-     0.02
-    ]
-   ],
-   "tokens": 887
-  },
-  {
-   "label": "Υπόλοιπο 1.7.2018",
-   "lado": "expense",
-   "page": 11,
-   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
-   "choice": "other_expenses",
-   "confidence": 0.58,
-   "top3": [
-    [
-     "other_expenses",
-     0.62
-    ],
-    [
-     "depreciation",
-     0.33
-    ],
-    [
-     "other_amortisation",
-     0.02
-    ]
-   ],
-   "tokens": 886
-  },
-  {
-   "label": "Προμηθευτές Εξωτερικού",
-   "lado": "expense",
-   "page": 12,
-   "section": "### 5.7.2.3 Προπληρωμένα έξοδα",
-   "choice": "other_expenses",
-   "confidence": 0.7,
-   "top3": [
-    [
-     "other_expenses",
-     0.74
-    ],
-    [
-     "admin_general_expense",
-     0.13
-    ],
-    [
-     "lump_football_operations_expense",
-     0.09
-    ]
-   ],
-   "tokens": 828
+   "tokens": 1014
   }
  ]
 }

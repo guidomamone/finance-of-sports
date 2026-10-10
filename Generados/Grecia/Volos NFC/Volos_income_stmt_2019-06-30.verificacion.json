@@ -1,0 +1,146 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.md",
+ "generado": "2026-10-10T14:02:01.387Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "166b656",
+  "abe82a9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 0.45037 en este documento y 0.45037 en Volos_income_stmt_2020-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: No hay frase de escala en b1 (L9-L24); los decimales sugieren unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.45037,
+  "gastos": 0.614945,
+  "financiero": 0.001046,
+  "impuesto": 0,
+  "resultadoImpreso": -0.165621,
+  "resultadoParaCargar": -0.165621,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 0.405846,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.044524,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 20,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Μεταβολές αποθεμάτων (εμπορεύματα, προϊόντα, ημικατ/μένα)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αγορές εμπορευμάτων και υλικών",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Παροχές σε εργαζόμενους",
+   "lado": "gasto",
+   "M": 0.206288,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποσβέσεις ενσωμάτων παγίων και άυλων στοιχείων",
+   "lado": "gasto",
+   "M": 0.00395,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0.404707,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Τόκοι και συναφή κονδύλια (καθαρό ποσό)",
+   "M": -0.001046,
+   "linea": 21
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι",
+   "M": 0,
+   "linea": 23
+  }
+ ]
+}

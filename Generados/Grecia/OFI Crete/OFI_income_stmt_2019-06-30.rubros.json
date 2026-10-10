@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md",
+  "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf",
+  "club": "ofi-crete",
+  "year": 2019,
+  "generatedAt": "2026-10-10T14:02:00.995Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.399917
+      ],
+      "glosa": "Cifra de negocios (neta)"
+    },
+    {
+      "label": "Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.691068
+      ],
+      "glosa": "Otros ingresos ordinarios"
+    },
+    {
+      "label": "Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.122073
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Κόστος πωλήσεων",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4.84361
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.350335
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.264951
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Λοιπά έξοδα και ζημίες",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.26288
+      ],
+      "glosa": "Otros gastos y pérdidas"
+    }
+  ]
+}

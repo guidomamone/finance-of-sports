@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.md",
+ "mdSha1": "cee093eceffff71cb719fb0dda81e819b8cf3c2f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:53:18.251Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    20
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre la tabla (solo el título 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ'); los estados griegos bajo ΕΛΠ suelen presentarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2018",
+ "columna_anterior": "30/6/2017",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la tabla 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' (b1) están expresados en euros (unidades) y no en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay ninguna línea 'σε ευρώ' o 'σε χιλιάδες ευρώ' visible sobre b1, por lo que no se puede confirmar la escala.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento tiene un único bloque: el estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ) con las columnas 30/6/2018 y 30/6/2017. No hay notas de desglose de ingresos ni de gastos. El perímetro no se indica; probablemente son estados individuales de la sociedad."
+}

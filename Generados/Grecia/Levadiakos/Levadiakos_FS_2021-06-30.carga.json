@@ -1,0 +1,26 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf",
+ "generado": "2026-10-10T14:10:08.107Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": {
+   "pagina": 2,
+   "texto": "4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "cortadoEn": "club"
+}

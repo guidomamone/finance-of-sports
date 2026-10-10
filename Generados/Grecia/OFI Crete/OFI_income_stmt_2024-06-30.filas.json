@@ -1,0 +1,172 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.md",
+ "mdSha1": "a1a0fa433da5b924f8d3e490b6f7914b8db26059",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:56:26.208Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con dos decimales (ej. 4.019.073,10) indican euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 7,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "4.019.073,10",
+   "anterior": "4.726.104,54",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 8,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "-7.852.901,10",
+   "anterior": "-7.782.645,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 9,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "-3.833.828,00",
+   "anterior": "-3.056.540,99",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "2.149.271,26",
+   "anterior": "1.940.020,03",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "-585.663,58",
+   "anterior": "-535.391,65",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "-640.947,26",
+   "anterior": "-450.901,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "actual": "-499.968,30",
+   "anterior": "-528.109,63",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "39.354,67",
+   "anterior": "41.469,29",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Αποτέλεσμα προ τόκων και φόρων",
+   "actual": "-3.371.781,21",
+   "anterior": "-2.589.454,48",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-86.109,08",
+   "anterior": "-20.562,04",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-3.457.890,29",
+   "anterior": "-2.610.016,52",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-3.457.890,29",
+   "anterior": "-2.610.016,52",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 25,
+  "actual": "-3.457.890,29",
+  "anterior": "-2.610.016,52"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados por función, sin notas de desglose provistas. No se imprimen totales de ingresos ni de gastos. La escala no se declara; se asume unidades (euros) por los decimales."
+}

@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md",
+ "mdSha1": "55eceb22502eccc6cfda4fef0de6ea5e9749cb6c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T14:01:31.360Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    25
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024-2025",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' (b1) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna frase que indique la escala sobre la tabla b1.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento con un único bloque: estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ) de ΒΟΛΟΣ Ν.Π.Σ. ΠΑΕ, columna 2024-2025, sin columna del año anterior. No hay notas de desglose. Perímetro presumiblemente individual (sociedad anónima de fútbol, normas griegas)."
+}

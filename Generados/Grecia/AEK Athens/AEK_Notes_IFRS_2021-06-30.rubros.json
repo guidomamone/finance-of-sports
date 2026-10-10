@@ -1,0 +1,300 @@
+{
+  "md": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.md",
+  "pdf": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.pdf",
+  "club": "aek-athens",
+  "year": 2021,
+  "generatedAt": "2026-10-10T14:01:59.777Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Έσοδα από εισπήρια",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        8.626964
+      ],
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        3.105
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.014417
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        7.38145
+      ],
+      "glosa": "Solidaridad UEFA y premios en metálico"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        7.056214
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Ανάλυση αθλητικού υλικού",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+      "values": [
+        0.437098
+      ],
+      "glosa": "Consumo de material deportivo"
+    },
+    {
+      "label": "Έξοδα φαρμακείου αθλητών",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Κόστος πωλήσεων / υλικών\"",
+      "values": [
+        0.07533
+      ],
+      "glosa": "Gastos médicos y farmacéuticos"
+    },
+    {
+      "label": "Μισθοδοσία",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        7.971473
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Αποσβέσεις συμβολαίων ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες\"",
+      "values": [
+        8.588351
+      ],
+      "glosa": "Amortización de contratos de futbolistas"
+    },
+    {
+      "label": "Απομείωση και απόσβεση",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        3.01759
+      ],
+      "glosa": "Amortizaciones y deterioros"
+    },
+    {
+      "label": "Αποσβέσεις ιδιαιροπροσωπικούμενων κτιρίων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.050883
+      ],
+      "glosa": "Amortización de inmuebles de uso propio"
+    },
+    {
+      "label": "Αποσβέσεις μηχανημάτων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.00002
+      ],
+      "glosa": "Amortización de maquinaria"
+    },
+    {
+      "label": "Αποσβέσεις μεταφορικών μεσών",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.030547
+      ],
+      "glosa": "Amortización de elementos de transporte"
+    },
+    {
+      "label": "Αποσβέσεις επιπλών & λοιπίου εξοπλισμού",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.059165
+      ],
+      "glosa": "Amortización de mobiliario y otros equipos"
+    },
+    {
+      "label": "Αποσβέσεις λογισμικού",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Απομείωση παγίων περιουσιακών στοιχείων\"",
+      "values": [
+        0.005802
+      ],
+      "glosa": "Amortización de aplicaciones informáticas"
+    },
+    {
+      "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.020157
+      ],
+      "glosa": "Provisión para indemnizaciones al personal"
+    },
+    {
+      "label": "Έξοδα αγώνων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.251711
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        2.765407
+      ],
+      "glosa": "Servicios de profesionales independientes"
+    },
+    {
+      "label": "Τηλεπικοινωνίες",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.056603
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Μισθώματα",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.587428
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Ασφάλιστρα",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.066367
+      ],
+      "glosa": "Primas de seguros"
+    },
+    {
+      "label": "Επισκευές & συντηρήσεις",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.018695
+      ],
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Διάφοροι φοροι-τελή",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.136152
+      ],
+      "glosa": "Otros tributos y tasas"
+    },
+    {
+      "label": "Έξοδα μετακινήσεων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.749357
+      ],
+      "glosa": "Gastos de desplazamiento"
+    },
+    {
+      "label": "Διαφημίσεις και εκδηλώσεις",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.35807
+      ],
+      "glosa": "Publicidad y eventos"
+    },
+    {
+      "label": "Συνδρομές",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.000505
+      ],
+      "glosa": "Cuotas y suscripciones"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        1.027452
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Προβλέψεις επισφαλείων",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Λοιπά λειτουργικά έξοδα\"",
+      "values": [
+        0.575205
+      ],
+      "glosa": "Provisión por insolvencias"
+    }
+  ]
+}

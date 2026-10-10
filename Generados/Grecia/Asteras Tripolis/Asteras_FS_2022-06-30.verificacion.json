@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2022-06-30.md",
+ "generado": "2026-10-10T14:02:00.224Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "d5a94bf"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 2.745118 en este documento y 2.745118 en Asteras_FS_2023-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 5.039553 en Asteras_FS_2021-06-30.pdf y 5.039553 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Λοιπά έσοδα και κέρδη\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: El cuadro b52 abre la remuneración por categoría de personal; podría duplicar el renglón de gastos de personal de la nota b45."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.745118,
+  "gastos": 5.53377,
+  "financiero": -0.012382,
+  "impuesto": 0,
+  "resultadoImpreso": -2.801035,
+  "resultadoParaCargar": -2.801035,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Έσοδα αγώνων",
+   "lado": "ingreso",
+   "M": 0.072441,
+   "pagina": 34,
+   "linea": 1813,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Έσοδα από τηλεοπτικές μεταδόσεις αγώνων",
+   "lado": "ingreso",
+   "M": 0.925,
+   "pagina": 34,
+   "linea": 1814,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Έσοδα από παραχώρηση ποδοσφαιριστών",
+   "lado": "ingreso",
+   "M": 0.2,
+   "pagina": 34,
+   "linea": 1815,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Επιχορηγήσεις",
+   "lado": "ingreso",
+   "M": 0.430855,
+   "pagina": 34,
+   "linea": 1825,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "lado": "ingreso",
+   "M": 1.060297,
+   "pagina": 34,
+   "linea": 1828,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
+   "lado": "ingreso",
+   "M": 0.035175,
+   "pagina": 34,
+   "linea": 1829,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Άλλα λειτουργικά έσοδα",
+   "lado": "ingreso",
+   "M": 0.000102,
+   "pagina": 34,
+   "linea": 1830,
+   "origen": "nota que desglosa \"Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "ingreso",
+   "M": 0.000134,
+   "pagina": 18,
+   "linea": 874,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα συμμετοχών και επενδύσεων",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 18,
+   "linea": 876,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 18,
+   "linea": 877,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.021114,
+   "pagina": 18,
+   "linea": 878,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "lado": "gasto",
+   "M": 3.959304,
+   "pagina": 18,
+   "linea": 866,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 1.361903,
+   "pagina": 18,
+   "linea": 870,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.027559,
+   "pagina": 18,
+   "linea": 871,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Πρόβλεψη για επισφαλείς απαιτήσεις",
+   "lado": "gasto",
+   "M": 0.035,
+   "pagina": 35,
+   "linea": 1908,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημιές\""
+  },
+  {
+   "etiqueta": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "lado": "gasto",
+   "M": 0.000004,
+   "pagina": 35,
+   "linea": 1909,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημιές\""
+  },
+  {
+   "etiqueta": "Έκτακτα έξοδα από οριστικοποίηση δικαστικής αξίωσης προηγούμενης χρήσης",
+   "lado": "gasto",
+   "M": 0.15,
+   "pagina": 35,
+   "linea": 1910,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημιές\""
+  },
+  {
+   "etiqueta": "Λοιπά έκτακτα έξοδα",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 35,
+   "linea": 1913,
+   "origen": "nota que desglosa \"Λοιπά έξοδα και ζημιές\""
+  },
+  {
+   "etiqueta": "Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 18,
+   "linea": 873,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000136,
+   "linea": 880
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.012518,
+   "linea": 881
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 883
+  }
+ ]
+}

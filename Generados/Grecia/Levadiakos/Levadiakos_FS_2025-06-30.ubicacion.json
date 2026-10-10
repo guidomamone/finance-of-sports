@@ -1,0 +1,149 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.md",
+ "mdSha1": "f25f332aeef72b1a6f6405e46e92d49dac13b320",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:52:27.324Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    64
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    132,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    181,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    247,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    551,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    616,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    806,
+    813
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    892,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    943,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    953,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    965,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    998,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    1008,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1054,
+    1058
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes se imprimen con dos decimales (ej. 2.978.159,90), por lo que están en euros sin escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2025",
+ "columna_anterior": "30/6/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'ΣΥΓΚΡΙΤΙΚΗ ΕΠΙΣΚΟΠΗΣΗ ΚΑΤΑΣΤΑΣΗΣ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' del informe de gestión (pág. 5) por repetir el estado de la pág. 17?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b3 parece una copia comparativa del estado de resultados b6 con columnas de variación, dentro del informe de gestión.",
+   "bloques": [
+    "b3",
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por función individual de la sociedad (pág. 17, b6). b3 es la versión comparativa del informe de gestión, duplicada. No se encontraron notas que desglosen ingresos o gastos en el índice; las notas listadas son de balance (b8-b13). b2/b5 son balance y b4 son indicadores."
+}

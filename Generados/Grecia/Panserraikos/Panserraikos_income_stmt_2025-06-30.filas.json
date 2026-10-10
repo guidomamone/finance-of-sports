@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md",
+ "mdSha1": "84fd9236278ee76a8741764c0a1c2403b6a1ba21",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:57:38.609Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con dos decimales (ej. 4.700.403,44), lo que indica euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Κύκλος εργασιών",
+   "actual": "4.700.403,44",
+   "anterior": "2.312.994,45",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "actual": "2.407.197,70",
+   "anterior": "1.577.842,26",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "2.293.205,74",
+   "anterior": "735.152,19",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "actual": "1.501.129,12",
+   "anterior": "1.505.600,97",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "",
+   "actual": "3.794.334,86",
+   "anterior": "2.240.753,16",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "2.153.244,64",
+   "anterior": "1.411.384,03",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "1.741.122,31",
+   "anterior": "1.141.250,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "actual": "120.578,88",
+   "anterior": "25.229,69",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "",
+   "actual": "4.014.945,83",
+   "anterior": "2.577.864,55",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "Κέρδη από διάθεση μη κυκλοφορούντων",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 27,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "0,00",
+   "anterior": "240.024,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "",
+   "actual": "0,00",
+   "anterior": "240.024,87",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "Αποτελέσματα (ζημιές) προ τόκων και φόρων",
+   "actual": "-220.610,97",
+   "anterior": "-97.086,52",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "11.171,53",
+   "anterior": "23.664,45",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 32,
+   "etiqueta": "(-) Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "",
+   "actual": "11.171,53",
+   "anterior": "23.664,45",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 34,
+   "etiqueta": "Αποτελέσματα (ζημιές) προ φόρων",
+   "actual": "-231.782,50",
+   "anterior": "-120.750,97",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "Μείον: Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "Αποτέλεσμα (ζημιές) περιόδου μετά από φόρους",
+   "actual": "-231.782,50",
+   "anterior": "-120.750,97",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 36,
+  "actual": "-231.782,50",
+  "anterior": "-120.750,97"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toma el estado en unidades de euro (sin escala impresa, importes con céntimos, L13-L36)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b1 no declara escala; los dos decimales sugieren unidades.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado por función griego sin notas de desglose. Subtotales sin etiqueta en L19, L24, L28 y L33. No hay total de ingresos ni de gastos impreso como tal; L24 suma solo gastos operativos de administración, comercialización y otros (sin costo de ventas)."
+}

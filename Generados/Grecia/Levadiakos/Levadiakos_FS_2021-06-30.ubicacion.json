@@ -1,0 +1,104 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "mdSha1": "a7ec7a208b65112a56674fc2b77f14c76f9f0fd4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:50:36.802Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    66
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    80,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    291,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    391,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    427,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    447,
+    454
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    460,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    492,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    502,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    546,
+    550
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con dos decimales (ej. 3.080,65; 963.746,07), expresados en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2021",
+ "columna_anterior": "30/06/2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por función (Κατάσταση Αποτελεσμάτων κατά λειτουργία) en b2, individual de la ΠΑΕ Λεβαδειακός. No hay notas que desglosen ingresos o gastos; los demás bloques son balance, activo fijo, vidas útiles y notas de cuentas por cobrar/pagar y caja."
+}

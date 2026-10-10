@@ -1,0 +1,165 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2022-06-30.md",
+ "mdSha1": "67d833186868b0e17848f5dcc8f8a163621f4033",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:50:56.039Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    35,
+    56
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    117,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    165,
+    182
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    226,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    236,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    242,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    495,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    562,
+    579
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    741,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    810,
+    838
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    846,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    873,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    886,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    915,
+    919
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    925,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    968,
+    972
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. 574.573,19) en los índices; no hay leyenda 'en miles'",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2021-30/6/2022",
+ "columna_anterior": "1/7/2020-30/6/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'ΣΥΓΚΡΙΤΙΚΗ ΕΠΙΣΚΟΠΗΣΗ ΚΑΤΑΣΤΑΣΗΣ ΑΠΟΤΕΛΕΣΜΑΤΩΝ' de la pág. 5 (b3) por ser una repetición del estado de resultados de la pág. 16 (b8) en el informe de gestión?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b3 parece la comparativa del informe de gestión con las mismas filas que b8; tiene más importes (62 vs 32), quizá incluye variaciones.",
+   "bloques": [
+    "b3",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por función (b8, pág. 16) de la PAE Levadiakos, cuentas individuales. b3 es la versión comparativa del informe de gestión. No hay notas que desglosen ingresos o gastos en el índice; b10 es inmovilizado, b11-b15 son partidas del balance, b4-b6 son indicadores."
+}

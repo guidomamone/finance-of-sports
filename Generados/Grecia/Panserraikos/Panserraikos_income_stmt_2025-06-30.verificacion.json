@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md",
+ "generado": "2026-10-10T14:02:01.315Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "2e7b662"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: El bloque b1 no declara escala; los dos decimales sugieren unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 6.201533,
+  "gastos": 6.422144,
+  "financiero": 0.011172,
+  "impuesto": 0,
+  "resultadoImpreso": -0.231783,
+  "resultadoParaCargar": -0.231783,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών",
+   "lado": "ingreso",
+   "M": 4.700403,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 1.501129,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κέρδη από διάθεση μη κυκλοφορούντων",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 2.407198,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 2.153245,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 1.741122,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0.120579,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.011172,
+   "linea": 31
+  },
+  {
+   "etiqueta": "(-) Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0,
+   "linea": 32
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Μείον: Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 35
+  }
+ ]
+}

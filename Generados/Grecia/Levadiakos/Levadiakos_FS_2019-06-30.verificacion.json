@@ -1,0 +1,143 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.md",
+ "generado": "2026-10-10T14:02:00.498Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "44e2542",
+  "deb99b7"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 2.550664 en este documento y 2.550664 en Levadiakos_FS_2020-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: El cuadro se corta entre páginas (L583 a L600) y la cabecera de L600 no se repite."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.550664,
+  "gastos": 2.827374,
+  "financiero": -0.001356,
+  "impuesto": 0,
+  "resultadoImpreso": -0.278066,
+  "resultadoParaCargar": -0.278066,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 0.076361,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 2.37042,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.103883,
+   "pagina": 2,
+   "linea": 96,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 2.256353,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.141222,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.315689,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "lado": "gasto",
+   "M": 0.11411,
+   "pagina": 2,
+   "linea": 95,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000023,
+   "linea": 98
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.001379,
+   "linea": 99
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόρος εισοδήματος",
+   "M": 0,
+   "linea": 101
+  }
+ ]
+}

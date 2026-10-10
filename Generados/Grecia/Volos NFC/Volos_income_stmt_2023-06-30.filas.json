@@ -1,0 +1,155 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md",
+ "mdSha1": "7964cb9650b7036c80c1c0e801ce205342e9deac",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T14:00:37.912Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "no se sabe",
+   "evidencia": "No se indica escala; importes con decimales (ej. 4198075,44) sugieren unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 9,
+   "etiqueta": "Κύκλος εργασιών",
+   "actual": "4198075,44",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "4198075,44",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "1356712,45",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "4432911,74",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "1121876,15",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "63,73",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "7464,46",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "1114475,42",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "246871,67",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "867603,75",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 24,
+  "actual": "867603,75",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b1 en unidades (euros), dado que no se imprime la escala y tienen decimales?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El estado (L5-L24) no indica escala; los decimales sugieren unidades.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga sin dudar el resultado operativo 1121876,15 (L19) aunque 4198075,44+1356712,45-4432911,74 da 1121876,15 y cierra?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Αποτελέσματα προ τόκων και φόρων",
+   "texto": "Verificado: el operativo cuadra con los renglones L11-L13, signos de gastos impresos sin paréntesis.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay columna 2022-2023; no hay año anterior. Los gastos e intereses se imprimen en positivo sin signo. No hay totales de ingresos ni gastos impresos."
+}

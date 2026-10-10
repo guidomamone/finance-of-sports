@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.md",
+ "mdSha1": "fd73dd56558cf0aa801c783cc49bc417a191b1e2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:58:19.967Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala; los estados de micro-entidades griegas suelen expresarse en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019-2020",
+ "columna_anterior": "2018-2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b1) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece ninguna leyenda de escala sobre la tabla b1 en la página 1.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento contiene solamente el estado de resultados (Υπόδειγμα Β.6, para entidades muy pequeñas) del 2º ejercicio, del 01/07/2019 al 30/06/2020. No hay notas que desglosen los renglones. Se trata de un estado individual."
+}

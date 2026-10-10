@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.md",
+ "mdSha1": "53b40a5a5f4757e22e6760ef16945f96812e8fc9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:59:30.008Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase sobre la escala (ni 'σε ευρώ' ni 'σε χιλιάδες ευρώ').",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021-2022",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del cuadro 'ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΕΙΑ' (b1) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece ninguna indicación de la escala arriba del cuadro ni en su encabezado; los estados griegos según los ΕΛΠ suelen presentarse en euros.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento tiene un único bloque: el estado de resultados por función de la ΠΑΕ (S.A.D.) Volos N.P.S., ejercicio 2021-2022, que es el que cierra el 30-06-2022. Muestra una sola columna; no hay año anterior ni notas de desglose. El perímetro es individual (estado de la propia sociedad)."
+}

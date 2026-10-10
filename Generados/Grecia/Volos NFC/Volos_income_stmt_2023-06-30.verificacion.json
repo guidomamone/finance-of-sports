@@ -1,0 +1,128 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.md",
+ "generado": "2026-10-10T14:02:01.766Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro no trae periodo; el estado cubre la temporada 2022-2023 y el balance de la misma serie cierra al 30/6",
+   "evidencia": "Volos_income_stmt_2023-06-30.md L1-8",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "6732117",
+  "7894519"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": null,
+   "detalle": "no se puede comparar: Volos_income_stmt_2024-06-30.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: 4198075,44 + 1356712,45 - 4432911,74 = 1121876,15 cuadra con el resultado antes de intereses e impuestos, así que los gastos van sin signo en el cuadro.",
+  "duda de extraer que no afecta la carga: Verificado: el operativo cuadra con los renglones L11-L13, signos de gastos impresos sin paréntesis."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.554788,
+  "gastos": 4.432912,
+  "financiero": 0.007528,
+  "impuesto": 0.246872,
+  "resultadoImpreso": 0.867604,
+  "resultadoParaCargar": 0.867604,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών",
+   "lado": "ingreso",
+   "M": 4.198075,
+   "pagina": 1,
+   "linea": 9,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 1.356712,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 4.432912,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": -0.000064,
+   "linea": 20
+  },
+  {
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.007464,
+   "linea": 21
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Φόροι εισοδήματος",
+   "M": -0.246872,
+   "linea": 23
+  }
+ ]
+}

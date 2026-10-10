@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "mdSha1": "a7ec7a208b65112a56674fc2b77f14c76f9f0fd4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:50:49.689Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los importes tienen dos decimales (ej. 3.080,65), lo que sugiere unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "3.080,65",
+   "anterior": "15.805,58",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "(772.824,51)",
+   "anterior": "(1.155.648,32)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "(769.743,86)",
+   "anterior": "(1.139.842,74)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "963.746,07",
+   "anterior": "1.247.264,79",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "",
+   "actual": "194.002,21",
+   "anterior": "107.422,05",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "(3.464,17)",
+   "anterior": "(33.281,92)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "(243.569,14)",
+   "anterior": "(193.973,60)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 90,
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "actual": "(292.844,93)",
+   "anterior": "(16.489,64)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 91,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "344.552,78",
+   "anterior": "69.638,37",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 92,
+   "etiqueta": "",
+   "actual": "(1.323,25)",
+   "anterior": "(66.684,74)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 93,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "37,30",
+   "anterior": "3,43",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 94,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(761,48)",
+   "anterior": "(968,32)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 95,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "(2.047,43)",
+   "anterior": "(67.649,63)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 96,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 97,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "(2.047,43)",
+   "anterior": "(67.649,63)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 97,
+  "actual": "(2.047,43)",
+  "anterior": "(67.649,63)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toman los importes del estado (b2, L83-L97) como expresados en unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b2 no declara la escala; los dos decimales en todos los importes indican unidades.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por función, sin notas de desglose. Las filas L87 y L92 no tienen etiqueta (subtotales intermedios); L92 es el resultado operativo. No hay total de ingresos ni de gastos impreso."
+}

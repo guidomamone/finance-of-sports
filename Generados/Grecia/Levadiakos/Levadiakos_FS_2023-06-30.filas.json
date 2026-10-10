@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2023-06-30.md",
+ "mdSha1": "f9a9e979c8c97d7555f0494947f240017c5bbcad",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T13:51:28.903Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "no se sabe",
+   "evidencia": "No hay frase de escala impresa; los importes llevan decimales (ej. 253.444,35), lo que sugiere unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 117,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "253.444,35",
+   "anterior": "36.775,20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 118,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "(3.042.118,60)",
+   "anterior": "(1.354.066,29)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 119,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "(2.788.674,25)",
+   "anterior": "(1.317.291,09)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 120,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "3.233.068,30",
+   "anterior": "1.372.612,70",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 121,
+   "etiqueta": "",
+   "actual": "444.394,05",
+   "anterior": "55.321,61",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 122,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "(34.185,31)",
+   "anterior": "(25.340,72)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 123,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "(334.886,52)",
+   "anterior": "(190.877,38)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 124,
+   "etiqueta": "Άλλα έξοδα και ζημίες",
+   "actual": "(46.651,26)",
+   "anterior": "(73.518,49)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 125,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "162.258,18",
+   "anterior": "559.186,29",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 126,
+   "etiqueta": "",
+   "actual": "190.929,14",
+   "anterior": "324.771,31",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 127,
+   "etiqueta": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "actual": "1,19",
+   "anterior": "0,36",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 128,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "(7.692,86)",
+   "anterior": "(5.185,17)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 129,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "183.237,47",
+   "anterior": "319.586,50",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 130,
+   "etiqueta": "Φόρος εισοδήματος",
+   "actual": "(17.174,92)",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 131,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "166.062,55",
+   "anterior": "319.586,50",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 131,
+  "actual": "166.062,55",
+  "anterior": "319.586,50"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (L117-L131) en unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b2 no imprime la escala; los importes con dos decimales indican unidades (euros).",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por función (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ) del 1/7/2022 al 30/6/2023. No se imprimen totales de ingresos ni de gastos. Las líneas L121 y L126 son subtotales sin etiqueta (L126 equivale al resultado operativo). No hay notas de desglose."
+}
