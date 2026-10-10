@@ -42,6 +42,7 @@ window.CLUB_INDEX = {
   "avai-br": {"n":"Avai","c":"BR","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "az-nl": {"n":"AZ","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "bahia-br": {"n":"Bahia","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "baltikakaliningrad-ru": {"n":"Baltika Kaliningrad","c":"RU","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "banfield-ar": {"n":"Banfield","c":"AR","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
   "bayernmunich-de": {"n":"Bayern Munich","c":"DE","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "boca": {"n":"Boca Juniors","c":"AR","q":"full","y":4,"last":2027,"yrs":[[2027,"official_budget"],[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
