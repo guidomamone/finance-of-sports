@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 667 — Mediciones que faltaban (2026-10-10)
+
+- To-do 197: ensayo de `prueba-completa` con y sin el escalón del tope de extraer, idéntico (to-do cerrado). To-do 198: las 306
+  verificaciones con y sin el escalón del signo del resultado, idénticas (antes se había medido sobre 91).
+
 ## Versión 666 — Cabeceras de los años en `data/`: Rusia y repetidas (to-do 206) (2026-10-10)
 
 - `escribir()` (`cargar.mjs`) acepta `P.herramienta` y `P.origenFilas`; `bfo-rusia.mjs` los pasa (filas del formulario 2 del GIR BO, no de

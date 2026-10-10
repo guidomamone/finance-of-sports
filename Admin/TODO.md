@@ -91,12 +91,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-197. EXTRAER: FALTA EL ENSAYO DE `prueba-completa` del escalón del tope de salida (después de la corrida del lote 66: el ensayo reescribe el
-    registro). El escalón ya se probó de verdad (2026-10-10, Ferroviária dre-2022 con el tope del escalón 0 bajado a 1.500 en una copia:
-    se cortó, reintentó por streaming y terminó; US$ 0,24). Dato de la prueba sin forzar: la misma extracción de dre-2022 esta vez trajo solo
-    los 13 grupos en negrita del balancete (2.213 tokens, US$ 0,14) en vez de las ~580 cuentas, con la pregunta en dudas: en balancetes la
-    IA no siempre elige el mismo nivel de detalle.
-
 199. SUBTOTAL QUE INCLUYE FILAS DEL FINANCIERO (conocido, sin daño hoy). Patrones A y B resueltos. El C (Avaí 2021: "Receitas do Futebol
     Profesional" 25.303.151 = ingresos + "Receita Financeira" 27.397; en gastos, "Despesas financeiras" dentro de los costos) necesita dos
     escalones: no contar el subtotal que suma renglones de cualquier lado, y además el signo del financiero según el bloque que lo contiene
