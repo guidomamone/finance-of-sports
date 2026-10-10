@@ -8,7 +8,7 @@
 //   2024: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -232,6 +232,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"lokomotivmoscow-ru", revenue:93.044, reportType:"official_balance_sheet",
         sourceId:"lokomotivmoscow-ru-bfo-2021-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",74.125],["Otros ingresos",18.919]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"rubinkazan-ru", revenue:69.665, reportType:"official_balance_sheet",
+        sourceId:"rubinkazan-ru-bfo-2021-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",42.388],["Otros ingresos",27.276]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"krasnodar-ru", revenue:63.972, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2021-datos",
