@@ -36,9 +36,6 @@ const akhmatgroznyruRevenueLinesByYear = {
   // Generados/Rusia/Akhmat Grozny/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Akhmat Grozny/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2023: [
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:963.028, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Akhmat Grozny/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
@@ -57,11 +54,14 @@ const akhmatgroznyruRevenueLinesByYear = {
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:130, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:52.758, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Akhmat Grozny/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2023: [
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:963.028, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:651.192, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akhmatgroznyruExpenseLinesByYear = {
-  2023: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1009.451, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2024: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1178.79, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
@@ -72,26 +72,12 @@ const akhmatgroznyruExpenseLinesByYear = {
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-634.641, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-598.534, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1009.451, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-332.718, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const akhmatgroznyruFiscalYearMeta = {
-  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2023-12-31',
-    sourceId:'akhmatgrozny-ru-bfo-2023-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:83.495, tax:-4.85,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:83.495},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-4.85},
-    ],
-    incluidoEn:{}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:32.222,
-  },
   2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2024-12-31',
     sourceId:'akhmatgrozny-ru-bfo-2024-datos',
@@ -144,6 +130,25 @@ const akhmatgroznyruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:337.605,
+  },
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2023-12-31',
+    sourceId:'akhmatgrozny-ru-bfo-2023-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:83.495, tax:-4.85,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:83.495},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-4.85},
+    ],
+    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:332.718, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:350.696,
   },
 };
 const akhmatgroznyruPresupuestoOverlayByYear = {};
