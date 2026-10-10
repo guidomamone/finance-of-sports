@@ -33,3 +33,5 @@ Los 7 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 2,7 MB 
 - Último chequeo: 2026-09-18.
 
 Color de marca: #EB2F2D — ru.wikipedia (sección "Клубные цвета": rojo-azules desde 1939, rojo primero, camiseta local body1 eb2f2d; antes de 1938 azul oscuro; escudo rojo/azul/amarillo), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/CSKA Moscow/bfo-2021-datos.json` (sourceId `cskamoscow-ru-bfo-2021-datos`).

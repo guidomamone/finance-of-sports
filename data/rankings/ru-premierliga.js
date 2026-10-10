@@ -8,7 +8,7 @@
 //   2024: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -173,6 +173,10 @@ window.RANKINGS["ru-premierliga"] = {
     leagueSize: null,
     sinDato: ["dynamomakhachkala-ru"],
     clubs: [
+      { id:"cskamoscow-ru", revenue:108.128, reportType:"official_balance_sheet",
+        sourceId:"cskamoscow-ru-bfo-2021-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",57.844],["Otros ingresos",50.284]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"krasnodar-ru", revenue:63.972, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2021-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",45.343],["Otros ingresos",18.629]],
