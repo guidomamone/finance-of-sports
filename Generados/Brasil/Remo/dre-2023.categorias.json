@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Brasil/Remo/dre-2023.md",
+ "club": "remo-br",
+ "year": 2023,
+ "generatedAt": "2026-10-10T02:03:24.609Z",
+ "rubrosHuella": "3d1909424c4d4efaf1fcaa839b623e7d6dbc6b4d",
+ "jevHuella": "45bb1b7380d06bcde429d2e9ce0275caff2ed737",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.011572,
+ "rubros": [
+  {
+   "label": "Receita Operacional Bruta",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos operativos brutos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos administrativos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos operativos",
+   "page": 1,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.83,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.45,
+   "motivo": "Estado resumido: ingreso cargado como bolsón; gastos operativos sin desglosar, espejo del lump de ingresos."
+  }
+ ]
+}

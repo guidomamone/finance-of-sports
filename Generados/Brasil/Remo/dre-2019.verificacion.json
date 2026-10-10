@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
  "md": "Clubes/Brasil/Remo/dre-2019.md",
- "generado": "2026-10-10T00:53:58.421Z",
+ "generado": "2026-10-10T02:02:14.916Z",
  "estado": "ok",
  "clubId": "remo-br",
  "year": 2019,
@@ -71,6 +71,66 @@
    "linea": null,
    "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício firmada por el contador (una página); el balance del año está en otro PDF (descartado para la carga)",
    "evidencia": "dre-2019.md L1-L20",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "youth_other_sports_expense",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
    "autor": "Guido",
    "fecha": "2026-10-10"
   }

@@ -1,0 +1,34 @@
+{
+ "md": "Clubes/Brasil/Remo/dre-2024.md",
+ "generatedAt": "2026-10-10T02:03:18.673Z",
+ "rubrosHuella": "25ad9e7823e2c96c4f165b3cdea83443c919c5f7",
+ "rubros": [
+  {
+   "label": "Receita Operacional Bruta",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  }
+ ]
+}

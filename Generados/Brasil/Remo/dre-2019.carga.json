@@ -1,37 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
- "generado": "2026-10-10T00:55:22.999Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales, Otras secciones deportivas. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Receita De Atividades Esportivas\" 17.903353 (no está en categorias.json)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"(-) Despesas Operacionais (sin Resultado\" 20.686217 (no está en categorias.json)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ninguna fila de ingresos con categoría aceptable"
-  }
- ],
+ "generado": "2026-10-10T02:03:26.468Z",
+ "frena": [],
  "avisos": [
-  "ingresos: 1 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Receita De Atividades Esportivas\" (no está en categorias.json)",
-  "gastos: 1 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"(-) Despesas Operacionais (sin Resultado Financeir\" (no está en categorias.json)",
-  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
-  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -39,8 +10,30 @@
   "year": 2019,
   "cierre": "2019-12-31",
   "perimetro": "individual",
-  "revenueLines": [],
-  "expenseLines": [],
+  "revenueLines": [
+   {
+    "rawLabel": "Receita De Atividades Esportivas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 17.903353,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -20.686217,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
   "fiscalYearMeta": {
    "currency": "BRL",
    "fxRef": "BRL@2019-12-31",
@@ -51,11 +44,47 @@
    "assetSales": 0,
    "netInterest": -0.225426,
    "tax": 0,
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "lump_football_operations_expense",
+     "posible": true
+    },
+    "youth_other_sports_expense": {
+     "en": "lump_football_operations_expense",
+     "posible": true
+    },
+    "broadcasting": {
+     "en": "lump_football_operations",
+     "posible": true
+    },
+    "matchday_competition": {
+     "en": "lump_football_operations",
+     "posible": true
+    },
+    "member_dues": {
+     "en": "lump_football_operations",
+     "posible": true
+    }
+   },
+   "sinDesglose": [
+    {
+     "renglon": "Receita De Atividades Esportivas",
+     "lado": "revenue",
+     "importe": 17.903353,
+     "motivo": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+    },
+    {
+     "renglon": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+     "lado": "expense",
+     "importe": 20.686217,
+     "motivo": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 17.903353,
+   "officialTotalExpenses": 20.686217,
+   "officialPAT": -3.00829
   },
   "source": {
    "id": "remo-br-dre-2019",
@@ -63,7 +92,7 @@
    "title": "Clube do Remo — dre-2019 (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2019.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Brasil/Remo/dre-2019.md",
@@ -140,6 +169,66 @@
    "evidencia": "dre-2019.md L1-L20",
    "autor": "Guido",
    "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "youth_other_sports_expense",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (dre-2019) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "dre-2019.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "seleccion": {
@@ -155,10 +244,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 17.903353,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+   "destino": "revenue",
+   "amountNative": 17.903353
   },
   {
    "label": "(-) Despesas Operacionais (sin Resultado Financeiro)",
@@ -167,10 +260,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (ajuste manual)",
    "signoFijo": 20.686217,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+   "destino": "expense",
+   "amountNative": -20.686217
   },
   {
    "label": "Resultado Financeiro",
@@ -184,41 +281,41 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
-  },
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Cuotas sociales"
-  },
-  {
-   "categoria": "Otras secciones deportivas"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado (lectura 5: hoja))": "gastos con signo",
-   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 0,
-  "expSum": 0,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "revSum": 17.903353,
+  "expSum": -20.686217,
+  "officialTotalRevenue": 17.903353,
+  "officialTotalExpenses": 20.686217,
+  "officialPAT": -3.00829,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.00829,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 17.903353
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 20.686217
+  }
  },
  "liga": {
   "valor": "br-serieC",
@@ -268,10 +365,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 6,
-  "lineasIngreso": 0,
-  "lineasGasto": 0,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 1,
   "metaFilas": 1,
   "excluidas": 0
  }

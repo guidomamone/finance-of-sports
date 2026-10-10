@@ -48,3 +48,5 @@ Color de marca: #111533 — pt/en.wikipedia (plantilla de camiseta titular body1
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf` (sourceId `remo-br-demonstracoes-financeiras-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf` (sourceId `remo-br-relatorio-auditor-independente-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2019 desde `Clubes/Brasil/Remo/dre-2019.pdf` (sourceId `remo-br-dre-2019`).

@@ -1,0 +1,53 @@
+{
+ "md": "Clubes/Brasil/Remo/dre-2019.md",
+ "generatedAt": "2026-10-10T02:03:18.321Z",
+ "rubrosHuella": "d1cb025d2681949b723c08d9260572a149dd6e30",
+ "rubros": [
+  {
+   "label": "Receita De Atividades Esportivas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "expense",
+   "page": 1,
+   "section": "ajuste manual",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "lump_football_operations_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1037
+  }
+ ]
+}

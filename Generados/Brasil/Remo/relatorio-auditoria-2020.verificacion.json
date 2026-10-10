@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
  "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
- "generado": "2026-10-10T00:53:58.509Z",
+ "generado": "2026-10-10T02:02:15.004Z",
  "estado": "ok",
  "clubId": "remo-br",
  "year": 2020,
@@ -81,6 +81,66 @@
    "evidencia": "pág. 8 del visor, .md L191-L204",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "relatorio-auditoria-2020.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "incluye",
+   "valor": "youth_other_sports_expense",
+   "linea": null,
+   "categoria": "lump_football_operations_expense",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "relatorio-auditoria-2020.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "relatorio-auditoria-2020.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "relatorio-auditoria-2020.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la DRE de Remo (relatorio-auditoria-2020) trae los ingresos y los gastos en uno o dos renglones, sin desglose por naturaleza",
+   "evidencia": "relatorio-auditoria-2020.md, DRE",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],

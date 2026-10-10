@@ -1,0 +1,69 @@
+{
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "club": "remo-br",
+ "year": 2020,
+ "generatedAt": "2026-10-10T02:03:26.140Z",
+ "rubrosHuella": "00ef7e30444e9e308cbe5429ca3060739ffc3dc0",
+ "jevHuella": "50b322515f0417882b78e953c92a83d877958331",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.011604,
+ "rubros": [
+  {
+   "label": "Receita De Atividades Esportivas",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos por actividades deportivas",
+   "page": 8,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Custos das Atividades Esportivas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costos de las actividades deportivas",
+   "page": 8,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas c/ drepreciação/amortização",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos por depreciación/amortización",
+   "page": 8,
+   "pendiente": true,
+   "jev": "depreciation",
+   "jevConf": 0.8,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.9,
+   "motivo": "igual a 'Despesas com depreciação e amortização' del club -> depreciation"
+  },
+  {
+   "label": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "(-) Gastos operativos (sin resultado financiero)",
+   "page": 8,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.5,
+   "motivo": "Ajuste manual que agrupa gastos operativos sin desglose; ingreso del año también es bolsón lump.",
+   "jev": "admin_general_expense",
+   "jevConf": 0.43,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.5
+  }
+ ]
+}

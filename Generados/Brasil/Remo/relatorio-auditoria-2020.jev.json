@@ -1,0 +1,71 @@
+{
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "generatedAt": "2026-10-10T02:03:18.940Z",
+ "rubrosHuella": "00ef7e30444e9e308cbe5429ca3060739ffc3dc0",
+ "rubros": [
+  {
+   "label": "Receita De Atividades Esportivas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "expense",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas c/ drepreciação/amortização",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "depreciation",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Custos das Atividades Esportivas",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  }
+ ]
+}
