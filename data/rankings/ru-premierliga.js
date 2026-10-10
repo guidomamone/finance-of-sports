@@ -7,7 +7,7 @@
 //   2025: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -78,6 +78,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"kryliasovetovsamara-ru", revenue:39.129, reportType:"official_balance_sheet",
         sourceId:"kryliasovetovsamara-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.766],["Otros ingresos",29.363]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"orenburg-ru", revenue:24.803, reportType:"official_balance_sheet",
+        sourceId:"orenburg-ru-bfo-2022-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",18.987],["Otros ingresos",5.817]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
