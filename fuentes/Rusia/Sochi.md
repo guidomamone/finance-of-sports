@@ -31,3 +31,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 661 KB 
 - Último chequeo: 2026-09-18.
 
 Color de marca: #0044A8 — ru.wikipedia (sección "Клубные цвета": azul #0044a8 primero y blanco; escudo azul marino con pantera amarilla), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Sochi/bfo-2021-datos.json` (sourceId `sochi-ru-bfo-2021-datos`).

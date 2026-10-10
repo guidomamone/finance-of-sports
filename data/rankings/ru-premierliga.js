@@ -8,7 +8,7 @@
 //   2024: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -140,6 +140,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"rostov-ru", revenue:46.887, reportType:"official_balance_sheet",
         sourceId:"rostov-ru-bfo-2021-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",24.941],["Otros ingresos",21.946]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"sochi-ru", revenue:30.85, reportType:"official_balance_sheet",
+        sourceId:"sochi-ru-bfo-2021-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",28.137],["Otros ingresos",2.714]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"kryliasovetovsamara-ru", revenue:20.875, reportType:"official_balance_sheet",
         sourceId:"kryliasovetovsamara-ru-bfo-2021-datos",

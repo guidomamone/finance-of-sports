@@ -187,6 +187,7 @@ window.CLUB_INDEX = {
   "silkeborg-dk": {"n":"Silkeborg IF","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "sinttruiden-be": {"n":"Sint-Truiden","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "slavenbelupo-hr": {"n":"Slaven Belupo","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "sochi-ru": {"n":"Sochi","c":"RU","q":"full","y":1,"last":2021,"yrs":[[2021,"official_balance_sheet"]]},
   "sonderjyske-dk": {"n":"SønderjyskE","c":"DK","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "sportrecife-br": {"n":"Sport Recife","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "standardliege-be": {"n":"Standard Liège","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
