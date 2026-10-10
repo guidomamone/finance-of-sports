@@ -528,6 +528,9 @@ const clubs = {
   // Spartak Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md. brandColor #FF0000
   // (procedencia en fuentes/Rusia/Spartak Moscow.md; tools/bfo-rusia.mjs).
   'spartakmoscow-ru': { id:'spartakmoscow-ru', name:'AO Football Club Spartak-Moscow', displayName:'Spartak Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
+  // Zenit: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Zenit/bfo-2021-datos.md. brandColor #74DAF7
+  // (procedencia en fuentes/Rusia/Zenit.md; tools/bfo-rusia.mjs).
+  'zenit-ru': { id:'zenit-ru', name:'AO Football Club Zenit', displayName:'Zenit', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#74DAF7' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

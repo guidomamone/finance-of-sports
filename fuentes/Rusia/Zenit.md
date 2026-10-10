@@ -38,3 +38,5 @@ y 3,3 MB. 2021 es el ejercicio más antiguo disponible en el recurso (no es lím
 - Último chequeo: 2026-09-18.
 
 Color de marca: #74DAF7 — ru.wikipedia (sección "Клубные цвета": azul, blanco y celeste; camiseta local body1 74DAF7 celeste; misma familia azul que el escudo celeste), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Zenit/bfo-2021-datos.json` (sourceId `zenit-ru-bfo-2021-datos`).
