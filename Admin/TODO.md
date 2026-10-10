@@ -91,9 +91,9 @@ ni en el comentario de ningún archivo de código.
 
 
 
-197. EXTRAER CORTA POR EL TOPE DE SALIDA EN DOCUMENTOS LARGOS (mejora de script). `extraer.mjs` pide todas las filas en una respuesta (maxTokens 32.000): un
-    libro contable de 9 páginas y ~580 cuentas (Ferroviária dre-2022) llegó cortado y se descartó (US$ 0,79 sin resultado). Partir en varias llamadas
-    por bloque, o pedir solo los renglones de primer nivel cuando el bloque es un balancete. Ferroviária 2022 se cargó a mano mientras tanto.
+197. EXTRAER: PROBAR EL ESCALÓN DEL TOPE DE SALIDA. Escrito (reintento con 128.000 por streaming si se corta); falta medir: ensayo de
+    `prueba-completa` (idéntico) y la prueba real con Ferroviária dre-2022 (~US$ 2; ese año ya está cargado a mano: comparar contra lo
+    publicado). Comando: `node tools/extraer.mjs "Clubes/Brasil/Ferroviaria/dre-2022.pdf" --ejecutar --rehacer`.
 
 199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización de tokens de sesión). Patrón A (el mismo importe en dos filas seguidas)
     resuelto. Quedan: B, renglón del estado + las filas de su nota sin vincular (Ferroviária 2016: "RECEITA LÍQUIDA" 9.211.197 y el desglose

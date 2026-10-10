@@ -128,7 +128,18 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // LAS NOTAS HACEN DE ESTADO (Versión 360; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO): solo si localizar las eligió así.
   const notasComoEstado = ub.estadoDesdeNotas ? `\n\n${INSTRUCCION_NOTAS_COMO_ESTADO}` : '';
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
-  const r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: reintento?.length ? 'extraer-reintento' : 'extraer', pdf, maxTokens: 32000 });
+  // TOPE DE SALIDA, ESCALERA (to-do 197). Escalón 0: una llamada con tope de 32.000 tokens (cubre casi todos: de 389 extracciones medidas se
+  // cortó una sola; las más largas, Napoli 2018-2022, rondan los 21.000-24.000). Escalón 1: SOLO si la respuesta se cortó por el tope, se
+  // reintenta una vez con 128.000 (el máximo del modelo) por streaming, que hace falta para salidas largas. Compuerta, la misma de siempre:
+  // la respuesta termina sola y el JSON es válido; si tampoco, el error sigue como antes (cola). Caso: Ferroviária dre-2022, libro contable
+  // de 9 páginas y ~580 cuentas, cortado a los 32.000 (US$ 0,72 sin resultado).
+  const tarea = reintento?.length ? 'extraer-reintento' : 'extraer';
+  let r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea, pdf, maxTokens: 32000 });
+  if (r.error && /max_tokens/.test(r.error)) {
+    const costo0 = r.costo || 0;
+    r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: `${tarea}-tope-largo`, pdf, maxTokens: 128000, stream: true, timeoutMs: 45 * 60000 });
+    r = { ...r, costo: (r.costo || 0) + costo0 };
+  }
   if (r.error) return { error: r.error, costo: r.costo };
   const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos };
   writeFileSync(out, JSON.stringify(datos, null, 1));

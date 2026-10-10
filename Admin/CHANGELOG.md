@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 661 — `extraer.mjs`: escalón del tope de salida (to-do 197) (2026-10-10)
+
+- Escalón 0: tope de 32.000 tokens, como antes. Escalón 1: solo si la respuesta se cortó por el tope, un reintento con 128.000 por
+  streaming (`claude-llamada.mjs` acepta `stream: true`; tarea `extraer-tope-largo`, que `gasto-doc.mjs` cuenta como otra vez extraer).
+  Probado el streaming con una llamada mínima (US$ 0,003). Falta: ensayo de `prueba-completa` (después de la corrida del lote 66) y la
+  prueba real con Ferroviária dre-2022.
+
 ## Versión 660 — Referencias viejas fuera de las skills (2026-10-10)
 
 - `dudas-por-club.md` sin dudas de `brandColor` (Crystal Palace, Levante, Sport Recife: quedan en `null`, ambiguos); ARQUITECTURA y
