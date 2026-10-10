@@ -38,11 +38,21 @@ const kryliasovetovsamararuRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:241.394, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1309.452, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Krylia Sovetov Samara/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2022: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:686.891, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:2065.318, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const kryliasovetovsamararuExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-1508.704, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-6.803, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2022: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-1993.276, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-25.348, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const kryliasovetovsamararuFiscalYearMeta = {
@@ -65,6 +75,26 @@ const kryliasovetovsamararuFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:2.106,
+  },
+  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2022-12-31',
+    sourceId:'kryliasovetovsamara-ru-bfo-2022-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-4.662, tax:-146.543,
+    extraRows: [
+      {label:'Проценты к уплате (2330)', value:-4.662},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-146.543},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:686.891, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1993.276, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:582.38,
   },
 };
 const kryliasovetovsamararuPresupuestoOverlayByYear = {};
@@ -89,6 +119,12 @@ Object.assign(sources, {
     title:'AO Professional Football Club Krylia Sovetov — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.md.',
+  },
+  'kryliasovetovsamara-ru-bfo-2022-datos': {
+    id:'kryliasovetovsamara-ru-bfo-2022-datos', clubId:'kryliasovetovsamara-ru',
+    title:'AO Professional Football Club Krylia Sovetov — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Krylia Sovetov Samara/bfo-2022-datos.md.',
   },
 });
 

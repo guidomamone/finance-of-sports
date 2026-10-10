@@ -34,3 +34,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 1,2 MB 
 Color de marca: #80C0FE — ru.wikipedia (infobox, camiseta local body1 80C0FE, camisetas celestes 'bajo el color del cielo'; escudo azul), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.json` (sourceId `kryliasovetovsamara-ru-bfo-2021-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Krylia Sovetov Samara/bfo-2022-datos.json` (sourceId `kryliasovetovsamara-ru-bfo-2022-datos`).
