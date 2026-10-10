@@ -46,3 +46,5 @@ Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Krasnodar/bfo-2024-datos.json` (sourceId `krasnodar-ru-bfo-2024-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Rusia/Krasnodar/bfo-2025-datos.json` (sourceId `krasnodar-ru-bfo-2025-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Krasnodar/bfo-2024-datos.json` (sourceId `krasnodar-ru-bfo-2024-datos`).
