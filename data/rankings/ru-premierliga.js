@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
-//   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -19,6 +19,10 @@ window.RANKINGS["ru-premierliga"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"spartakmoscow-ru", revenue:194.269, reportType:"official_balance_sheet",
+        sourceId:"spartakmoscow-ru-bfo-2025-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",186.768],["Otros ingresos",7.501]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"dynamomoscow-ru", revenue:191.243, reportType:"official_balance_sheet",
         sourceId:"dynamomoscow-ru-bfo-2025-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",171.897],["Otros ingresos",19.346]],
