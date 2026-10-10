@@ -8,7 +8,7 @@
 //   2025: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -220,6 +220,9 @@ window.RANKINGS["it-seriea"] = {
       { id:"sassuolo-it", revenue:148.243, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2022",
         mix:[["Comercial / Sponsors",32.885],["Estadio",3.97],["Televisión",42.673],["Venta de Jugadores",57.681],["Otros ingresos",11.035]] },
+      { id:"atalanta-it", revenue:124.971, reportType:"official_balance_sheet",
+        sourceId:"atalanta-it-bilancio-consolidato-2022",
+        mix:[["Comercial / Sponsors",12.602],["Estadio",6.363],["Televisión",39.071],["Venta de Jugadores",52.711],["Otros ingresos",14.224]] },
       { id:"torino-it", revenue:120.253, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2022",
         mix:[["Comercial / Sponsors",13.439],["Estadio",4.775],["Televisión",56.154],["Venta de Jugadores",41.786],["Otras secciones deportivas",0.002],["Otros ingresos",4.096]] },
