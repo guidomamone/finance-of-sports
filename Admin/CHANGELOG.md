@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 670 — Comentarios internos fuera de lo publicado: regla, chequeo y piloto en `finanzas-calc.js` (to-do 208) (2026-10-10)
+
+- Regla nueva en `Admin/PANTALLA.md` ("Comentarios en lo que se publica"): en `index.html` y `js/` solo el porqué técnico, corto, sin
+  nombres, versiones, to-dos, fechas ni contadores.
+- `tools/comparar-sin-comentarios.js`: compara un archivo sin comentarios contra HEAD (prueba que una limpieza no tocó código).
+  `audit.js` suma `comentario-interno-publicado` (P2, un hallazgo por archivo).
+- `js/finanzas-calc.js`: 814 → 443 líneas, 58,8 → 26 KB, mismo código. La historia que se borró ya estaba en este CHANGELOG y en
+  `Admin/Archive/CHANGELOG-v010-v299.md`; las dos reglas que solo vivían ahí (revertir la fusión de abonos; aviso de deuda y caja en
+  0/0) pasaron a `Admin/PANTALLA.md`. To-do 209 nuevo: lo mismo en `data/*.js`. ASSET_V 805.
+
 ## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
 
 - Último escalón de la escalera: un subtotal que suma renglones de su lado y una fila del financiero no se cuenta, el financiero toma el
