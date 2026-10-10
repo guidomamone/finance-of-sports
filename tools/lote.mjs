@@ -37,7 +37,7 @@ import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
 import { pendientes } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
-import { tomarCandado } from './candado.mjs';
+import { tomarCandado, soltarCandado } from './candado.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { verificarLista } = await import('./verificar.mjs');
 const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
@@ -51,6 +51,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); const REHACER = ARGS.includes('--rehacer');
+const CARGAR = ARGS.includes('--cargar'); // (Versión 642) al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
 // --reintentar (Versión 336, CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
@@ -76,7 +77,7 @@ const verifDe = (e, { detalle = DETALLE } = {}) => {
   const r = [...(v.estado === 'ok' && !detalle ? [] : desgl), ...categoriasPendientes(e)];
   return { ...v, reintentar: r.length ? r : null, detalle: opcional.length ? opcional : null };
 };
-if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer]'); process.exit(1); }
+if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecutar] [--rehacer] [--cargar]'); process.exit(1); }
 // CANDADO: un solo proceso a la vez escribiendo el registro, también en el ensayo (to-dos 162 y 164; el porqué y el cómo, en
 // tools/candado.mjs). Lo comparten lote.mjs, pipeline.mjs y cargar.mjs --escribir.
 tomarCandado('lote.mjs', { lista: LISTA, modo: EJECUTAR ? '--ejecutar' : 'ensayo' });
@@ -412,3 +413,11 @@ for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(St
 }
 if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
 if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }
+
+// ETAPA 8 DE VERDAD (Versión 642, ok de Guido el 2026-10-09): con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
+// tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin
+// --ejecutar es su ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
+if (CARGAR) {
+  soltarCandado();
+  spawnSync('node', [resolve(ROOT, 'tools/cargar-lote.mjs'), '--lista', LISTA, ...(EJECUTAR ? ['--escribir'] : [])], { cwd: ROOT, stdio: 'inherit' });
+}

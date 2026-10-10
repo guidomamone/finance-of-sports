@@ -1,0 +1,143 @@
+#!/usr/bin/env node
+// ============================================================================
+// tools/cargar-lote.mjs — ETAPA 8 DE PUNTA A PUNTA: escribe en el sitio cada documento de una lista que quedó "listo para cargar", con el
+// alta del club si es nuevo, y un commit por año.
+//
+// POR QUÉ (Versión 642, pedido de Guido el 2026-10-09: "¿por qué cuando dice 'listo para cargar' no se carga solo directamente si es todo
+// muy mecánico ya?"). Hasta acá el lote terminaba en una PROPUESTA y una sesión hacía a mano lo que faltaba: el alta del club nuevo, el color
+// de marca, `cargar.mjs --escribir` y el commit. En el onboarding de Brasil (to-do 165, 37 años) eso se hizo con un script de scratchpad, y
+// su paso del color falló una vez y dejó un alta a medias. Nada de eso es una decisión: el alta la propone `alta-club.mjs`, el color ya lo
+// eligió la revisión del alta (Admin/altas-revision.jsonl) y `cargar.mjs --escribir` corre la auditoría y revierte solo si da P0/P1.
+//
+// LA ESCALERA DE CADA DOCUMENTO (gratis salvo lo que ya hace cargar.mjs, que es gratis):
+//   0. descartado (Admin/documentos-descartados.txt) o el año ya está en el sitio      -> no se toca
+//   1. el ensayo de cargar.mjs (--desde-verificacion) frena por algo que no es el club  -> queda frenado, con su primer motivo
+//   2. frena SOLO por el club (club nuevo)                                              -> candidato con alta
+//   3. no frena                                                                         -> candidato
+// LA COMPUERTA, una sola y la misma para todos: la de `cargar.mjs --escribir` (auditoría con 0 P0 / 0 P1, y si no, revierte). Si escribió,
+// commit de ese año; si no, nada.
+//
+// CLUB NUEVO. El alta se hace con el primer candidato del club (el año más viejo) y va en el MISMO commit que ese año (regla del proyecto).
+// Solo si el registro de altas lo da `listo-para-alta` y la revisión del alta tiene su color (un hex, o `null` = "se miró y no lleva color").
+// Sin eso, el club no se da de alta: queda frenado con el motivo. Si después del alta ningún año escribe (con el club dado de alta pueden
+// aparecer frenos que el ensayo no mostraba: cargar.mjs corta el análisis en el club), el alta se revierte: no queda un club vacío.
+//
+// GIT. Exige `data/`, `index.html` y `fuentes/` sin cambios al empezar (si no, no escribe nada: el revertir del alta no puede pisar
+// trabajo ajeno). Cada commit lleva los archivos del sitio y los de Admin/ y Generados/ que toca la carga. Sin push (cada push a main es un
+// deploy y lo hace Guido).
+//
+// USO:
+//   node tools/cargar-lote.mjs --lista Admin/lote-NN.txt              # ENSAYO: qué haría con cada documento (no escribe nada)
+//   node tools/cargar-lote.mjs --lista Admin/lote-NN.txt --escribir   # de verdad: altas, cargas y commits
+//   node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --cargar # lo mismo al final del lote
+// ============================================================================
+import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+
+const ROOT = resolve(import.meta.dirname, '..');
+const ARGS = process.argv.slice(2);
+const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
+const LISTA = flag('--lista');
+const ESCRIBIR = ARGS.includes('--escribir');
+if (!LISTA) { console.error('Uso: node tools/cargar-lote.mjs --lista <archivo> [--escribir]'); process.exit(1); }
+
+const run = (cmd, args) => spawnSync(cmd, args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
+const node = (script, args) => run('node', [resolve(ROOT, script), ...args]);
+const git = (...args) => run('git', args);
+const leerLineas = (p) => (existsSync(resolve(ROOT, p)) ? readFileSync(resolve(ROOT, p), 'utf8').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')) : []);
+const leerJsonl = (p) => (existsSync(resolve(ROOT, p)) ? readFileSync(resolve(ROOT, p), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : []);
+const jsonDe = (salida) => { const s = String(salida || ''); const i = s.indexOf('{'); if (i < 0) return null; try { return JSON.parse(s.slice(i)); } catch { return null; } };
+// La línea de cierre de cargar.mjs ("Escrito (...). Auditoría: ...") y la de alta-club.mjs ("Alta escrita ...") salen por stderr y el JSON
+// por stdout: se busca en las dos (primera prueba de --escribir: se miraba solo stdout y no se escribió nada).
+const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.split('\n').map((l) => l.trim()).filter(Boolean); return ls.find((l) => /^(Escrito|Alta escrita|No se escribe)/.test(l)) || ls.pop() || ''; };
+
+// Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
+const SITIO = ['data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml'];
+const ADMIN = ['Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl'];
+
+const descartados = new Set(leerLineas('Admin/documentos-descartados.txt'));
+const docs = leerLineas(LISTA).filter((d) => !descartados.has(d));
+const altas = new Map(leerJsonl('Admin/altas-club.jsonl').map((o) => [o.carpeta, o]));
+const revision = new Map(leerJsonl('Admin/altas-revision.jsonl').map((o) => [o.clubId, o]));
+
+// 1) El ensayo de cada documento (cargar.mjs sin --escribir: no toma el candado ni escribe el sitio).
+const clubes = new Map(); // carpeta -> [{ pdf, year, alta }]
+const frenados = []; let yaEnSitio = 0;
+for (const pdf of docs) {
+  const j = jsonDe(node('tools/cargar.mjs', [pdf, '--desde-verificacion']).stdout);
+  if (!j) { frenados.push({ pdf, motivo: 'cargar.mjs no devolvió una propuesta' }); continue; }
+  const fr = j.frena || [];
+  if (fr.some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) { yaEnSitio++; continue; }
+  const otros = fr.filter((f) => f.etapa !== 'club');
+  if (otros.length) { frenados.push({ pdf, motivo: `[${otros[0].etapa}] ${String(otros[0].motivo).slice(0, 140)}${otros.length > 1 ? ` (y ${otros.length - 1} más)` : ''}` }); continue; }
+  const carpeta = pdf.split('/').slice(0, 3).join('/') + '/';
+  if (!clubes.has(carpeta)) clubes.set(carpeta, []);
+  clubes.get(carpeta).push({ pdf, year: j.year || Number((pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1]) || 0, alta: fr.some((f) => f.etapa === 'club') });
+}
+
+// 2) Por club: si hace falta alta, ¿se puede? (registro de altas listo + color elegido en la revisión).
+const plan = [];
+for (const [carpeta, xs] of clubes) {
+  xs.sort((a, b) => a.year - b.year || a.pdf.localeCompare(b.pdf));
+  const alta = xs.some((x) => x.alta);
+  if (!alta) { plan.push({ carpeta, xs }); continue; }
+  const reg = altas.get(carpeta);
+  if (!reg || reg.estado !== 'listo-para-alta' || !reg.clubId) { for (const x of xs) frenados.push({ pdf: x.pdf, motivo: `[alta] el registro de altas da "${reg?.estado || 'sin línea'}" (node tools/alta-club.mjs --todos)` }); continue; }
+  const rev = revision.get(reg.clubId);
+  const color = rev && Object.prototype.hasOwnProperty.call(rev, 'brandColor') ? rev.brandColor : undefined;
+  if (!(color === null || /^#[0-9A-F]{6}$/i.test(String(color)))) { for (const x of xs) frenados.push({ pdf: x.pdf, motivo: `[alta] ${reg.clubId} sin color elegido en Admin/altas-revision.jsonl (${color === undefined ? 'no está' : JSON.stringify(color)})` }); continue; }
+  plan.push({ carpeta, xs, alta: { clubId: reg.clubId, color, club: reg.club, pais: reg.pais } });
+}
+
+console.log(`\n=== Etapa 8: escribir (${ESCRIBIR ? 'DE VERDAD' : 'ENSAYO'}) — ${LISTA} ===`);
+for (const p of plan) console.log(`  ${p.carpeta.split('/').slice(1).join('/')}${p.alta ? `  [alta ${p.alta.clubId}, color ${p.alta.color === null ? 'null' : p.alta.color}]` : ''}: ${p.xs.map((x) => x.year).join(', ')}`);
+if (yaEnSitio) console.log(`  (${yaEnSitio} documento(s) con el año ya en el sitio: no se tocan)`);
+if (frenados.length) { console.log(`Frenados ${frenados.length}:`); for (const f of frenados) console.log(`   ${f.pdf.split('/').slice(2).join('/')}: ${f.motivo}`); }
+if (!ESCRIBIR) { console.log(`\nENSAYO: ${plan.reduce((n, p) => n + p.xs.length, 0)} año(s) se escribirían. Agregá --escribir.`); process.exit(0); }
+
+// 3) De verdad.
+const sucio = String(git('status', '--porcelain', '--', ...SITIO).stdout || '').trim();
+if (sucio) { console.error(`\nNo escribo: hay cambios sin commitear en el sitio (data/, index.html o fuentes/). Commitealos o descartalos primero:\n${sucio.split('\n').slice(0, 10).join('\n')}`); process.exit(1); }
+
+// El color de marca en la entrada del club recién escrita por alta-club.mjs (que lo deja AUSENTE a propósito).
+function ponerColor({ clubId, color, club, pais }) {
+  const p = resolve(ROOT, 'data', 'clubs.js'); const L = readFileSync(p, 'utf8').split('\n');
+  const k = L.findIndex((l) => l.startsWith(`  '${clubId}': {`));
+  if (k < 0 || !L[k].trimEnd().endsWith(' },') || L[k].includes('brandColor')) return false;
+  L[k] = `${L[k].trimEnd().slice(0, -3)}, brandColor:${color === null ? 'null' : `'${color}'`} },`;
+  for (const n of [k - 2, k - 1]) if (n >= 0) L[n] = L[n].replace('brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`)
+    .replace('// (nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `// (procedencia en fuentes/${pais}/${club}.md; tools/cargar-lote.mjs).`);
+  writeFileSync(p, L.join('\n')); return true;
+}
+function revertirAlta(clubId) {
+  git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
+  git('checkout', '-q', '--', 'fuentes');
+  for (const f of [`data/${clubId}-data.js`, `fuentes/${clubId}.html`]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
+}
+
+let commits = 0; const noEscritos = [];
+for (const p of plan) {
+  const nombre = p.carpeta.split('/')[2];
+  if (p.alta) {
+    const r = node('tools/alta-club.mjs', [p.xs[0].pdf, '--escribir']);
+    console.log(`  alta ${p.alta.clubId}: ${ultimaLinea(r).slice(0, 200)}`);
+    if (!existsSync(resolve(ROOT, 'data', `${p.alta.clubId}-data.js`))) { for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'el alta no se escribió' }); continue; }
+    if (!ponerColor(p.alta)) { revertirAlta(p.alta.clubId); for (const x of p.xs) noEscritos.push({ pdf: x.pdf, motivo: 'no pude poner el color en data/clubs.js: alta revertida' }); continue; }
+  }
+  let escritos = 0;
+  for (const x of p.xs) {
+    const r = node('tools/cargar.mjs', [x.pdf, '--desde-verificacion', '--escribir']);
+    const fin = ultimaLinea(r);
+    if (!/^Escrito/.test(fin) || !/P0 0 · P1 0/.test(fin)) { const j = jsonDe(r.stdout); noEscritos.push({ pdf: x.pdf, motivo: (j?.frena || []).map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 120)}`)[0] || fin.slice(0, 160) }); continue; }
+    git('add', '-A', '--', ...SITIO, ...ADMIN.filter((a) => existsSync(resolve(ROOT, a))), `Generados/${p.carpeta.split('/').slice(1).join('/')}`);
+    const msg = `${nombre} ${x.year} por el pipeline${p.alta && !escritos ? ` (alta de ${p.alta.clubId}, color ${p.alta.color === null ? 'null' : p.alta.color})` : ''} — tools/cargar-lote.mjs, ${LISTA}`;
+    const c = git('commit', '-q', '-m', msg);
+    if (c.status !== 0) { noEscritos.push({ pdf: x.pdf, motivo: `escrito pero el commit falló: ${String(c.stderr).slice(0, 120)}` }); continue; }
+    escritos++; commits++;
+    console.log(`  ${nombre} ${x.year}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)})`);
+  }
+  if (p.alta && !escritos) { revertirAlta(p.alta.clubId); console.log(`  ${nombre}: ningún año se escribió; alta de ${p.alta.clubId} revertida`); }
+}
+console.log(`\nEscritos y commiteados: ${commits} año(s). Sin push.`);
+if (noEscritos.length) { console.log(`No escritos ${noEscritos.length}:`); for (const x of noEscritos) console.log(`   ${x.pdf.split('/').slice(2).join('/')}: ${x.motivo}`); }

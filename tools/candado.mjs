@@ -42,3 +42,9 @@ export function tomarCandado(herramienta, { lista = null, modo = null } = {}) {
   }
   process.on('exit', () => { try { if (JSON.parse(readFileSync(LOCK, 'utf8')).pid === process.pid) unlinkSync(LOCK); } catch { /* sin candado */ } });
 }
+
+// (Versión 642) Suelta el candado ANTES de terminar, solo si es de este proceso. Lo usa lote.mjs --cargar: al final del lote corre
+// tools/cargar-lote.mjs, que llama a cargar.mjs --escribir, y cargar.mjs toma el candado (con el del lote vivo, se negaría).
+export function soltarCandado() {
+  try { if (JSON.parse(readFileSync(LOCK, 'utf8')).pid === process.pid) unlinkSync(LOCK); } catch { /* sin candado */ }
+}

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 642 — `lote.mjs --cargar` / `tools/cargar-lote.mjs`: lo que queda "listo para cargar" se escribe solo (2026-10-09)
+
+- Nueva `tools/cargar-lote.mjs --lista <lista> [--escribir]`: por documento, el ensayo de `cargar.mjs`; los que no frenan (o frenan solo por el club) se escriben con `cargar.mjs --escribir` y un commit por año; club nuevo: `alta-club.mjs --escribir` + color de `Admin/altas-revision.jsonl`, en el commit del primer año, y se revierte si ningún año escribe. `lote.mjs --cargar` la corre al final (suelta su candado antes: `soltarCandado()` en `tools/candado.mjs`).
+- Primera corrida (lote 56): Ferroviária 2012-2016, 2018, 2021 y 2024 escritos y commiteados; el alta de Remo se hizo y se revirtió sola (sus 3 años candidatos frenaron después del alta). Primera prueba no escribió nada: la línea "Escrito" de `cargar.mjs` sale por stderr y se miraba solo stdout.
+
 ## Versión 641 — Registro de altas: los clubes ya dados de alta pasan a `existe` (2026-10-09)
 
 - `tools/alta-club.mjs --todos`: una carpeta cuyo club ya está en el sitio pasa a `existe` (antes su línea "listo-para-alta" quedaba congelada: el resumen del pipeline ofrecía dar de alta a Atalanta, Inter, Lazio...). Medido con el mismo registro de entrada, código viejo contra nuevo: 28 líneas pasan a `existe` (21 italianas y 7 de Brasil) y las otras 816 salen idénticas.

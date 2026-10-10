@@ -13,6 +13,7 @@ Los comandos:
 ```bash
 node tools/lote.mjs --lista Admin/lote-NN.txt                               # ensayo: qué haría y cuánto cuesta (gratis)
 caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar      # de verdad (lo corre Guido)
+caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --cargar   # además escribe lo que queda listo (altas, cargas, commits)
 caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
 node tools/cola.mjs                                                         # la cola humana
 node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
@@ -388,7 +389,10 @@ Mitigaciones:
                   Reescribe sus propias marcas: el año nuevo nace marcado y un año viejo gana o pierde las suyas si el nuevo le cambia el
                   precedente.
 ```
-- Hoy en el lote es solo propuesta: no escribe el sitio.
+- En el lote es propuesta; con `lote.mjs --ejecutar --cargar` (o `node tools/cargar-lote.mjs --lista <lista> [--escribir]`) lo que quedó
+  "listo para cargar" se escribe solo (Versión 642): alta del club nuevo si el registro de altas lo da listo y `Admin/altas-revision.jsonl`
+  tiene su color, `cargar.mjs --escribir` con su auditoría, y un commit por año (el alta en el del primer año). Si ningún año de un club
+  nuevo escribe, el alta se revierte. Exige `data/`, `index.html` y `fuentes/` sin cambios al empezar. Sin push.
 - Escribir: `cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año; después `caja-deuda.mjs --club <id> [--ejecutar] --escribir`.
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
