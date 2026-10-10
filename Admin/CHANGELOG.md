@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 663 — `verificar.mjs`: total que suma un subtotal y renglones de arriba (to-do 199, patrón B) (2026-10-10)
+
+- Dentro del escalón "subtotal repetido": una fila que no es renglón y es la suma con signo de las filas de arriba de su lado, contando los
+  subtotales, no se cuenta. Medido en una copia aislada (el lote 66 corría): 306 verificaciones idénticas; Ferroviária 2016 sin su ajuste a
+  mano pasa de cola (ingresos 18,4 M) a OK (9.211.197).
+
 ## Versión 662 — `club-data-mapping` partida: SKILL.md + `referencia/` (2026-10-10)
 
 - SKILL.md (lo que se usa siempre, con un resumen de conversión a USD y la regla "no decidas solo") + `referencia/fx.md`,

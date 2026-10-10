@@ -338,6 +338,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // total). Casos: Remo 2023 y 2024 ("Receita Operacional Bruta" 33.831.604 y "Receita Operacional Líquida" 33.831.604, sin deducciones,
         // L10 y L12); Remo 2020 (total "(+) Receita Bruta Operacional" 12.351.668,08, L191, y su único renglón con el mismo importe, L192).
         // esSumaDe pide dos renglones, así que un subtotal de un solo renglón o repetido por el total se contaba además.
+        // (to-do 199, patrón B) Y una fila que no es renglón y es la suma CON SIGNO de las filas de arriba de su lado CONTANDO LOS SUBTOTALES
+        // (esSumaDe(arriba) mira solo renglones): "RECEITA LÍQUIDA" = "RECEITA OPERACIONAL BRUTA" (subtotal, abierto con su nota) − "Deduções".
+        // No se cuenta: sus partes ya están. Caso: Ferroviária 2016 (.md L113-115: 9.221.750 − 10.553 = 9.211.197), se sumaba además de la nota.
+        if (subRepetido && !esSumaDe(arriba) && !esSumaDe(abajo) && esSumaDe(delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).reverse())) {
+          if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) es la suma de las filas de arriba (con su subtotal); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
+          continue;
+        }
         const sigEst = subRepetido ? estado[estado.indexOf(f) + 1] : null;
         if (sigEst && sigEst.lado === lado && sigEst.tipo !== 'resultado' && Math.abs(f[campo] || 0) > 0 && cerca(Math.abs(sigEst[campo] || 0), Math.abs(f[campo] || 0)) && !esSumaDe(arriba) && !esSumaDe(abajo)) {
           if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) repite la fila de abajo "${sigEst.etiqueta}" (L${sigEst.linea}); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }

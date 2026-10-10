@@ -98,8 +98,7 @@ ni en el comentario de ningún archivo de código.
     IA no siempre elige el mismo nivel de detalle.
 
 199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización de tokens de sesión). Patrón A (el mismo importe en dos filas seguidas)
-    resuelto. Quedan: B, renglón del estado + las filas de su nota sin vincular (Ferroviária 2016: "RECEITA LÍQUIDA" 9.211.197 y el desglose
-    L948-958, sumados); C, subtotal que incluye filas del financiero (Avaí 2021: "Receita Bruta" 25.303.151 = ingresos + "Receita Financeira"
+    y B (total = subtotal ± renglones de arriba, Ferroviária 2016) resueltos. Queda: C, subtotal que incluye filas del financiero (Avaí 2021: "Receita Bruta" 25.303.151 = ingresos + "Receita Financeira"
     27.397, se queda junto con sus componentes). Remo 2020 sigue en la cola con el patrón A resuelto: sus gastos también tienen subtotales.
     Para medir: simular sin los ajustes "(sale) subtotal ..." de esos documentos.
 
