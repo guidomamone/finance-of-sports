@@ -540,7 +540,7 @@ function checkDeployInterno() {
 // Todo comentario de index.html y js/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja solo el
 // porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y el
 // primer caso; la lista completa sale con --json.
-const COMENTARIO_INTERNO = /\bGuido\b|\bVersi[oó]n(es)? \d+|\bto-do \d+|(?<!@)\b20\d\d-\d\d-\d\d\b|\b\d+ clubes\b/i;
+const COMENTARIO_INTERNO = /\bGuido\b|\bVersi[oó]n(es)? \d+|\bto-do \d+|(?<!@)\b20\d\d-\d\d-\d\d\b|\b\d{2,} clubes\b/i;
 function checkComentariosPublicados() {
   const { comentarios, publicados } = require('./comparar-sin-comentarios.js');
   for (const rel of publicados()) {

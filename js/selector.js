@@ -1,32 +1,19 @@
 // ============================================================================
-// js/selector.js — EL SELECTOR DE CLUB, PASO A PASO (Versión 146).
+// js/selector.js — EL SELECTOR DE CLUB, PASO A PASO, y la pestaña Comparar.
 //
-// QUÉ REEMPLAZA. Hasta la Versión 145 esto era un panel de Miller columns
-// (Deporte › Región › País › Liga › Equipo) con un buscador arriba: cinco
-// columnas a la vez, ~67 opciones en pantalla, y cinco decisiones simultáneas.
-// Era el prototipo 1 de los cuatro que se probaron; ganó el 4 y esto es su
-// etapa 3. El handoff completo — el modelo, qué cambia archivo por archivo, los
-// gotchas — está en `Admin/Archive/selector-merge-a-produccion.md`.
-//
-// LA IDEA: una pregunta por vez, adentro de un modal. Los pasos se apilan; el
-// que está resuelto se encoge a una línea con lo que elegiste y un "Cambiar".
-// Ninguno es obligatorio: "Elegir más tarde" está en todos, y por eso ninguno
-// dice "opcional" — todos lo son.
+// LA IDEA: una pregunta por vez, adentro de un modal. Los pasos se apilan; el que está resuelto se encoge a una línea con lo que
+// elegiste y un "Cambiar". Ninguno es obligatorio: "Elegir más tarde" está en todos, y por eso ninguno dice "opcional".
 //
 //   1 Deporte → 2 Región → 3 País → 4 Clubes → 5 Ejercicio de cada uno
 //
-// Y arriba de todo, el buscador: el que ya sabe que quiere Boca escribe "boca"
-// y llega en un paso, sin recorrer los cinco. El árbol es para explorar, no un
-// peaje.
+// Y arriba de todo, el buscador: el que ya sabe que quiere Boca escribe "boca" y llega en un paso. El árbol es para explorar,
+// no un peaje.
 //
-// LOS DOS CAMINOS (Versión 148, etapa 4). El modal es el mismo; lo único que
-// cambia es a dónde va lo elegido, y eso es `origen`:
+// LOS DOS CAMINOS. El modal es el mismo; lo que cambia es a dónde va lo elegido, y eso es `origen`:
 //
-//   'finanzas' -> lo abrió Inicio ("ver un club"), el botón del header o el card
-//                 de Finanzas. Los pasos son los filtros + clubes + ejercicio, y
-//                 al confirmar se carga un club y la pantalla salta a Finanzas.
-//   'vs'       -> lo abrió uno de los dos cards de la pestaña Comparar. Acá sí
-//                 aparece el paso 4, "¿QUÉ QUERÉS MEDIR?", que bifurca:
+//   'finanzas' -> lo abrió Inicio ("ver un club"), el botón del header o el card de Finanzas. Filtros + club + ejercicio, y al
+//                 confirmar se carga un club y la pantalla salta a Finanzas (o a la pestaña Ligas, si se eligió una liga).
+//   'vs'       -> lo abrió uno de los dos cards de Comparar. Acá aparece el paso 4, "¿QUÉ QUERÉS MEDIR?", que bifurca:
 //
 //     1 Deporte → 2 Región → 3 País → 4 ¿QUÉ TIPO? → 5 cuál(es) → 6 año y agregador
 //                                          │
@@ -36,37 +23,21 @@
 //        6 temporada de cada una    6 ejercicio de cada    (cada bloque trae
 //          + agregador                club                  lo suyo adentro)
 //
-// UN LADO ES UNA SUMA DE BLOQUES, y esa es la idea de fondo:
+// UN LADO ES UNA SUMA DE BLOQUES:
 //
 //   lado = { nombre, bloques:[ … ] }
 //   { kind:'liga',   league:'ar-primera', years:[2025],      agg:'promedio'|'suma' }
 //   { kind:'clubes', pares:[['boca',2025], ['river',null]],  agg:'promedio'|'suma' }
 //
-// Ligas y Clubes son ATAJOS que producen un lado de un solo bloque; la mezcla es
-// el modelo completo. Un motor, tres puertas de entrada. El caso que la motivó,
-// de Guido: "promedio de clubes colombianos + sumatoria de 6 clubes brasileros"
-// contra Real Madrid. Consecuencia directa: el agregador no es del lado sino de
-// cada bloque, así que el card no tiene un toggle Promedio/Sumatoria — muestra la
-// FÓRMULA (`promedio(Primera 2025) + suma(6 clubes)`).
+// Ligas y Clubes son ATAJOS que producen un lado de un solo bloque; la mezcla es el modelo completo (ej. "promedio de clubes
+// colombianos + suma de N clubes brasileros" contra Real Madrid). El agregador es de cada bloque, no del lado, así que el card
+// no tiene un toggle Promedio/Suma: muestra la FÓRMULA (`promedio(Primera 2025) + suma(N clubes)`).
 //
-// `año === null` significa "el ejercicio más reciente de ESE club": los clubes no
-// cierran todos el mismo día (uno argentino cierra en junio y uno japonés en
-// diciembre). En un bloque de liga el año NO puede ser null: define QUIÉNES la
-// integraban esa temporada.
+// `año === null` = "el ejercicio más reciente de ESE club": los clubes no cierran todos el mismo día. En un bloque de liga el año
+// NO puede ser null: define QUIÉNES la integraban esa temporada.
 //
-// LOS DOS CARDS SON LA ÚNICA FORMA DE COMPARAR (Versión 152). `js/comparar-clubes.js`
-// —la bandeja de chips de la Versión 137, con sus tres puntos de entrada— se
-// borró: contestaba la misma pregunta de otra manera y convivían mal. Lo que ese
-// archivo hacía mejor sí se conservó, y vive acá: los 6 indicadores con sus
-// barras y sus notas, las 3 reglas de comparabilidad escritas en pantalla, y la
-// composición de ingresos. Lo que NO sobrevivió es su modelo: un sujeto era un
-// club o el promedio de una liga, y un lado que suma partes no es un sujeto.
-//
-// OJO CON `clubs`: se declara con `const` en `data/clubs.js`, así que NO es una
-// propiedad de `window` (a diferencia de `CLUB_INDEX`, que se asigna, y de las
-// funciones de leagues.js/club-leagues.js, que quedan en window por ser
-// declaraciones de función). `window.clubs` da undefined y rompe todo. Esta
-// trampa ya costó media hora dos veces en este repo.
+// OJO CON `clubs`: se declara con `const` en data/clubs.js, así que NO es una propiedad de `window` (a diferencia de CLUB_INDEX
+// y de las funciones de leagues.js/club-leagues.js). `window.clubs` da undefined y rompe todo.
 // ============================================================================
 
 window.CLUB_SELECTOR = (function(){
@@ -76,12 +47,9 @@ window.CLUB_SELECTOR = (function(){
   var LS_RECENTS = 'fos_recent_clubs';
   var LS_COACH   = 'fos_coach_club';
 
-  // LOGGING DE BÚSQUEDAS Y COMPARACIONES (Versión 216). Worker + KV propios
-  // (`Admin/CHANGELOG.md`), NO Cloudflare Web Analytics: ese solo mide
-  // pageviews/referrers, no puede loggear texto libre tipeado en el buscador.
-  // Gateado por hostname A PROPÓSITO: cualquier sesión de trabajo (preview
-  // local, `financeofsports.com` visitado a mano para debug) NO es un
-  // visitante real, y sin este freno esas pruebas ensucian las cuentas.
+  // LOGGING DE BÚSQUEDAS Y COMPARACIONES: Worker + KV propios (Cloudflare Web Analytics no puede loggear el texto tipeado).
+  // Gateado por hostname a propósito: una sesión de trabajo (preview local, el sitio visitado a mano para debug) no es un visitante
+  // real y ensuciaría las cuentas.
   var LOG_ENDPOINT = 'https://square-sky-ca25.guidomamone91.workers.dev';
   function logEvent(payload){
     if(location.hostname !== 'financeofsports.com') return;
@@ -93,16 +61,9 @@ window.CLUB_SELECTOR = (function(){
   }
   var logBusquedaTimer = null;
 
-  // FUNNEL DEL SELECTOR EN MIXPANEL (to-do 67, pedido de Guido 2026-09-28: "me gustaría ver
-  // cómo interactúa la gente con el selector"). Instrumentado A MANO, nunca con el Autocapture
-  // de Mixpanel (loguea cada click/scroll de la página entera y puede inflar el conteo de
-  // eventos sin necesidad) — a este volumen de tráfico, los eventos puntuales de acá ni se
-  // acercan al free tier de 1M eventos/mes. `track_pageview:false` a propósito: los
-  // pageviews/referrers ya los da Cloudflare Web Analytics gratis y sin tope (Versión 166), no
-  // hace falta duplicarlos acá. Mismo gateo por hostname que logEvent(), mismo motivo: una
-  // sesión de trabajo (preview local, financeofsports.com visitado a mano para debug) no es un
-  // visitante real. El token NO es secreto (a diferencia de un API Secret): es el mismo tipo de
-  // credencial pública que ya explica el comentario de supabase.js en index.html.
+  // FUNNEL DEL SELECTOR EN MIXPANEL, instrumentado a mano (nunca con Autocapture, que loguea cada click y scroll de la página).
+  // `track_pageview:false`: los pageviews ya los da Cloudflare Web Analytics. Mismo gateo por hostname que logEvent(). El token
+  // NO es secreto: es una credencial pública, como la de supabase.js en index.html.
   var MIXPANEL_TOKEN = '76f860e7f23b4bbd0d19cd4b2a2cb922';
   var mixpanelReady = false;
   function mpInit(){
@@ -131,9 +92,8 @@ window.CLUB_SELECTOR = (function(){
   var api = {
     getClub: function(){ return null; },
     pickClub: function(){ return Promise.resolve(); },
-    // Versión 183: qué hacer cuando lo elegido es una LIGA y no un club. El
-    // default no hace nada a propósito — si index.html no lo cablea, elegir una
-    // liga no rompe, simplemente no navega.
+    // Qué hacer cuando lo elegido es una LIGA y no un club. El default no hace nada: si index.html no lo cablea, elegir una liga no
+    // rompe, simplemente no navega.
     pickLeague: function(){}
   };
 
@@ -143,8 +103,8 @@ window.CLUB_SELECTOR = (function(){
   // LOS DOS LADOS de la pestaña Comparar. `null` = card vacío.
   var lado = [null, null];
   var mostrando = false;          // ¿ya se apretó "Comparar"?
-  // "Valores ajustados por inflación" de Comparar (to-do 23). Es un estado APARTE del de Finanzas
-  // (FIN_REAL, js/finanzas-multi.js): Comparar siempre muestra USD, sin importar la moneda elegida.
+  // "Valores ajustados por inflación" de Comparar: un estado APARTE del de Finanzas (FIN_REAL, js/finanzas-multi.js), porque
+  // Comparar siempre muestra USD.
   var cmpReal = false;
   // Clubes cuyo archivo de datos no se pudo bajar (ni con un reintento): el resultado los avisa
   // arriba en vez de mostrar un promedio parcial como si estuviera completo.
@@ -162,14 +122,9 @@ window.CLUB_SELECTOR = (function(){
   // Los bloques que se están armando: el paso 5 los CREA y el paso 6 (o el
   // constructor de la mezcla) los edita. Al confirmar, son el lado.
   var bloques = [];
-  // ¿EL VISITANTE TOCÓ LOS CHIPS DE TEMPORADA, o está mirando el prellenado?
-  // (Versión 183.) `pararseEnLiga()` preselecciona la temporada MÁS RECIENTE, que
-  // casi siempre es la que MENOS clubes tiene: la Primera argentina tiene 5 en
-  // 2025 y 8 en 2024, porque los balances tardan en publicarse. La pestaña Ligas
-  // elige sola la de más clubes, así que sin esta distinción la misma página abría
-  // en 2024 llegando por el nav y en 2025 llegando por el selector. Con el flag,
-  // un prellenado que nadie tocó deja decidir a la vista, y una temporada elegida
-  // a mano se respeta. NO se cambió el prellenado en sí: Comparar sigue igual.
+  // ¿EL VISITANTE TOCÓ LOS CHIPS DE TEMPORADA, o está mirando el prellenado? pararseEnLiga() preselecciona la temporada más
+  // reciente, que casi siempre es la que menos clubes tiene, y la pestaña Ligas elige sola la de más clubes. Con el flag, un
+  // prellenado que nadie tocó deja decidir a la vista, y una temporada elegida a mano se respeta.
   var ligaAnioTocado = false;
 
   function reset(){
@@ -193,7 +148,7 @@ window.CLUB_SELECTOR = (function(){
   }
   function idx(id){ return (window.CLUB_INDEX || {})[id] || {}; }
   function nameOf(id){ return (clubs[id] && clubs[id].displayName) || idx(id).n || id; }
-  // Etiqueta de una fila de Formato simplificado, traducida (mismo helper que js/liga.js; Versión 510, para el aviso de "incluido en").
+  // Etiqueta de una fila de Formato simplificado, traducida (mismo helper que js/liga.js).
   function tLabel(label){ var key = (window.SITE_LABEL_KEYS || {})[label]; return key ? t(key, label) : label; }
   function countryOf(id){ return (clubs[id] && clubs[id].country) || idx(id).c || null; }
   function regionOf(id){ return window.regionOfCountry(countryOf(id)); }
@@ -214,11 +169,9 @@ window.CLUB_SELECTOR = (function(){
     var w = String(name || '').replace(/[^A-Za-zÀ-ÿ ]/g, '').split(/\s+/).filter(Boolean);
     return (w.slice(0, 2).map(function(x){ return x[0]; }).join('') || '··').toUpperCase();
   }
-  // EL CÍRCULO DE INICIALES, PINTADO CON EL COLOR DEL CLUB (Versión 178, to-do 23(e)).
-  // `brandColor` es opcional a propósito (ver la cabecera de data/clubs.js: un club sin un
-  // color primario claro no lo lleva), así que `pintarCrest` tiene que saber VOLVER al azul
-  // del sitio, no solo pintar: `#cbCrest` es UN solo nodo del header que se reusa en cada
-  // cambio de club, y sin el reset el visitante se queda con el color del club anterior.
+  // EL CÍRCULO DE INICIALES, PINTADO CON EL COLOR DEL CLUB. `brandColor` es opcional (ver la cabecera de data/clubs.js), así que
+  // pintarCrest tiene que saber VOLVER al azul del sitio: #cbCrest es UN solo nodo del header que se reusa en cada cambio de club, y
+  // sin el reset se queda con el color del club anterior.
   function brandOf(id){ return (clubs[id] && clubs[id].brandColor) || null; }
 
   // Luminancia relativa (fórmula de WCAG 2.x): con qué color se leen las iniciales arriba del
@@ -233,19 +186,13 @@ window.CLUB_SELECTOR = (function(){
     });
     return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
   }
-  // La regla es "blancas mientras se lean, negras cuando no": iniciales blancas salvo que el
-  // contraste contra el fondo baje de 4:1 (la razón de WCAG), y ahí negras. Las dos
-  // alternativas que se probaron y NO sirven:
-  //   - Un umbral de luminancia a ojo (0,35) dejaba blanco sobre el celeste de Racing y el de
-  //     Kawasaki Frontale a 2,8:1, ilegible, cuando en negro dan 6,8:1.
-  //   - "Siempre el color que más contraste dé" parte a la familia de los rojos al medio: los
-  //     rojos de los clubes caen justo en el cruce (4,3 contra 4,7), así que Independiente y
-  //     Unión quedaban con iniciales NEGRAS y River, Estudiantes y Argentinos —del mismo rojo,
-  //     a dos puntos de diferencia— con blancas. Se veía como un error, no como una regla.
-  // El piso real que quedó, medido sobre los 39 clubes con color, es 4,11:1 (Atlético
-  // Goianiense; después Athletic Club 4,26 y Grêmio 4,32): abajo de los 4,5 de WCAG para
-  // texto chico, pero son dos iniciales en negrita y la alternativa era oscurecerles el
-  // color de marca, que es justo lo que este campo no puede hacer.
+  // La regla es "blancas mientras se lean, negras cuando no": iniciales blancas salvo que el contraste contra el fondo baje de 4:1,
+  // y ahí negras. Las dos alternativas que NO sirven:
+  //   - Un umbral de luminancia a ojo (0,35) dejaba blanco sobre celestes a 2,8:1, ilegible.
+  //   - "Siempre el color que más contraste dé" parte a la familia de los rojos al medio (caen justo en el cruce, 4,3 contra 4,7):
+  //     clubes del mismo rojo quedaban unos con iniciales negras y otros con blancas. Se veía como un error.
+  // El piso medido queda apenas arriba de 4:1, abajo de los 4,5 de WCAG para texto chico; son dos iniciales en negrita y la
+  // alternativa era oscurecer el color de marca, que es justo lo que este campo no puede hacer.
   function textoSobre(hex){
     return 1.05 / (luminancia(hex) + 0.05) >= 4 ? '#fff' : '#111';
   }
@@ -331,7 +278,7 @@ window.CLUB_SELECTOR = (function(){
     // Con clubes de año calendario (Japón, Brasil) mezclados con clubes de
     // temporada partida, "2024/2025" sería una fecha falsa para la mitad: ahí va
     // el año pelado.
-    var calendario = conEse.map(function(id){ return window.esEjercicioCalendario(id, y); }); // (to-do 177) por ejercicio
+    var calendario = conEse.map(function(id){ return window.esEjercicioCalendario(id, y); }); // por ejercicio, no por club
     if(calendario.some(Boolean) && calendario.some(function(x){ return !x; })) return String(y);
     var par = yearsOf(conEse[0]).filter(function(p){ return p[0] === y; })[0];
     return window.ejercicioLabel(y, par[1], conEse[0]);
@@ -387,8 +334,7 @@ window.CLUB_SELECTOR = (function(){
         }).map(function(cid){
           return { id:cid, icon:window.COUNTRIES[cid].flag,
                    label:t(window.COUNTRIES[cid].key, window.COUNTRIES[cid].name), meta:nClubes(cuenta[cid]),
-                   // to-do 47: México aparece con muy pocos clubes (hoy 1, América) y no es un hueco
-                   // de sourcing sin resolver: la Liga MX exige balances auditados Y los declara
+                   // México aparece con muy pocos clubes y no es un hueco de sourcing: la Liga MX exige balances auditados Y los declara
                    // confidenciales en el mismo reglamento. El tooltip explica la ausencia, no la tapa.
                    info: cid === 'MX' ? t('sel.country.mx.info', 'Los balances de los clubes de Liga MX existen: el reglamento de la liga exige presentarlos auditados (art. 26), pero el mismo reglamento los declara confidenciales (art. 12). Por eso el sitio no puede mostrarlos. Excepción parcial: Club América, que reporta resultados dentro del grupo que cotiza en bolsa.') : null };
         });
@@ -441,9 +387,8 @@ window.CLUB_SELECTOR = (function(){
 
   var PASO_CLUBES = {
     clave:'club',
-    // EN EL CAMINO DE FINANZAS SE ELIGE UN SOLO CLUB (to-do 96, decisión de Guido, 2026-10-09). Finanzas muestra un club por vez, y dejar marcar
-    // varios terminaba en un card que decía "2 clubes", "suma(2 clubes)" y "Ver los números de AC Milan" a la vez. La multi-selección queda para
-    // Comparar, donde un lado sí puede ser un conjunto de clubes. Con `unico`, tocar un club avanza (el mismo mecanismo del paso "¿Qué querés medir?").
+    // EN EL CAMINO DE FINANZAS SE ELIGE UN SOLO CLUB: Finanzas muestra un club por vez. La multi-selección queda para Comparar, donde
+    // un lado sí puede ser un conjunto. Con `unico`, tocar un club avanza (el mismo mecanismo del paso "¿Qué querés medir?").
     titulo:function(){ return origen === 'finanzas' ? t('sel.paso.club.uno', 'Elegí el club') : t('sel.paso.club', 'Elegí uno o más clubes'); },
     ayuda:function(){
       return origen === 'vs'
@@ -480,12 +425,8 @@ window.CLUB_SELECTOR = (function(){
     // camino es de clubes por definición, y preguntarlo sería un peaje. El paso
     // "¿Qué querés medir?" sigue sin aparecer acá, a propósito.
     if(origen === 'finanzas'){
-      // VERSIÓN 183: salvo que el visitante YA haya elegido una liga desde el
-      // buscador. Hasta acá eso era imposible —el buscador solo ofrecía ligas en
-      // el camino de Comparar— porque no existía ninguna pantalla de liga; ahora
-      // existe (la pestaña Ligas), así que el camino tiene que poder terminar
-      // ahí. Sin esta rama, `pararseEnLiga()` dejaba el estado marcado con una
-      // liga y los pasos mostrando clubes, que es un modal que se contradice.
+      // Salvo que el visitante YA haya elegido una liga desde el buscador: ese camino termina en la pestaña Ligas. Sin esta rama,
+      // pararseEnLiga() dejaba el estado marcado con una liga y los pasos mostrando clubes.
       if(st.tipo.sel[0] === 'liga') return out.concat([PASO_LIGAS, PASO_LIGA_ANIO]);
       return out.concat([PASO_CLUBES, PASO_CLUB_ANIO]);
     }
@@ -510,16 +451,11 @@ window.CLUB_SELECTOR = (function(){
   // ---------------------------------------------------------------------------
   function isOpen(){ return $('clubPanel').classList.contains('open'); }
 
-  // Abrir el modal. `i` es el card que lo pide (0 o 1) y `desde` a dónde va lo
-  // elegido: 'finanzas' carga un club, 'vs' llena ese card.
-  // LA ÚNICA FRONTERA ASYNC DEL SELECTOR (Versión 164). Las filas de
-  // `data/club-leagues/<iso2>.js` ya no vienen en la primera visita: se bajan acá,
-  // antes de dibujar. Se puso el await en la apertura y no adentro de los 6 helpers
-  // a propósito: si los helpers devolvieran promesas habría que volver async cada
-  // función de render del modal, y son muchas. Acá es una sola.
-  // `loadClubLeagues()` cachea su promesa, así que reabrir el modal no vuelve a
-  // pedir nada. Si un archivo de país falla, la promesa igual resuelve (avisa por
-  // consola) y el modal abre sin esas ligas, en vez de no abrir.
+  // Abrir el modal. `i` es el card que lo pide (0 o 1) y `desde` a dónde va lo elegido: 'finanzas' carga un club, 'vs' llena ese
+  // card.
+  // LA ÚNICA FRONTERA ASYNC DEL SELECTOR: las filas de data/club-leagues/<iso2>.js se bajan acá, antes de dibujar, y no adentro de
+  // los helpers (si devolvieran promesas habría que volver async cada render del modal). loadClubLeagues() cachea su promesa; si un
+  // archivo de país falla, el modal abre igual, sin esas ligas.
   function abrirModal(i, desde){
     if(!inited) return;
     window.loadClubLeagues().then(function(){
@@ -600,7 +536,7 @@ window.CLUB_SELECTOR = (function(){
     if(op.meta) b.appendChild(el('span', 'op-meta', op.meta));
     if(op.disabled) b.disabled = true;
     else b.addEventListener('click', function(){ onClick(op.id); });
-    // `op.info` es el círculo "?" de explicación (to-do 47: por qué México casi no
+    // `op.info` es el círculo "?" de explicación (por qué México casi no
     // tiene clubes). Va FUERA de `b`, nunca adentro: `b` ya es un <button>, y un
     // <button> no puede anidar otro. Envolver los dos en `.op-cell` es lo que le
     // permite a `.op-info` quedar clickeable por su cuenta sin también seleccionar
@@ -614,9 +550,8 @@ window.CLUB_SELECTOR = (function(){
     return b;
   }
 
-  // El botón "?" de info: hover en desktop, click/tap en mobile. El bocadillo vive en js/info-tip.js (Versión 515: compartido
-  // con las celdas "Dentro de otro rubro" de Finanzas y Ligas); ahí está el porqué de que no sea descendiente del botón.
-  // Llamado desde `renderModal()`: si el paso se repinta, el botón pineado ya no existe y el bocadillo se cierra con él.
+  // El botón "?" de info: hover en desktop, click/tap en mobile. El bocadillo vive en js/info-tip.js (compartido con las celdas
+  // "Dentro de otro rubro"). Al repintarse el paso, el botón pineado ya no existe y el bocadillo se cierra con él.
   function cerrarInfosAbiertas(){ window.INFO_TIP.cerrar(); }
 
   function infoBtn(texto){
@@ -632,7 +567,7 @@ window.CLUB_SELECTOR = (function(){
   function resumenDe(p){
     var s = st[p.clave];
     if(s.saltado) return t('sel.later', 'Elegir más tarde');
-    // El paso del ejercicio no marca casillas: su resumen sale de los bloques (antes decía "—"; to-do 96).
+    // El paso del ejercicio no marca casillas: su resumen sale de los bloques.
     if(p.cuerpo){
       var partes = [];
       bloques.forEach(function(b){
@@ -692,7 +627,7 @@ window.CLUB_SELECTOR = (function(){
         } else {
           var botones = botonesDeSeleccion(p, ops);
           if(botones) body.appendChild(botones);
-          var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : '') + (p.clave === 'tipo' ? ' tipo' : '') + (p.unico ? ' unico' : '')); // `unico`: sin casilla (to-do 96)
+          var grid = el('div', 'op-grid' + (p.clave === 'club' ? ' clubes' : '') + (p.clave === 'tipo' ? ' tipo' : '') + (p.unico ? ' unico' : '')); // `unico`: sin casilla
           ops.forEach(function(op){
             grid.appendChild(opcionBtn(op, tiene(p.clave, op.id), function(id){
               // El paso 4 es de elección única y avanza solo: es una bifurcación, no
@@ -720,10 +655,8 @@ window.CLUB_SELECTOR = (function(){
     if(todoResuelto()) wrap.appendChild(cardFinal());
   }
 
-  // Los dos botones de arriba de la grilla. "Elegir todos" solo donde marcar todo
-  // significa algo (el paso del club: arma el conjunto); "Deseleccionar todos" en
-  // cualquier paso donde haya algo marcado, porque destildar de a uno cuando
-  // marcaste once es un castigo (pedido de Guido).
+  // Los dos botones de arriba de la grilla. "Elegir todos" solo donde marcar todo significa algo (el paso del club); "Deseleccionar
+  // todos" en cualquier paso con algo marcado.
   function botonesDeSeleccion(p, ops){
     var fila = el('div', 'paso-todos-fila');
     var libres = ops.filter(function(o){ return !o.disabled; });
@@ -809,10 +742,8 @@ window.CLUB_SELECTOR = (function(){
     return pie;
   }
 
-  // "Cambiar" en un paso ya resuelto borra ESE y todos los de abajo. Volver atrás
-  // sin invalidar lo que dependía de esa elección era justo el bug del selector de
-  // columnas (to-do 29, que muere con este archivo): elegías Europa › España,
-  // cambiabas la región a Asia, y LaLiga seguía en la columna.
+  // "Cambiar" en un paso ya resuelto borra ESE y todos los de abajo: volver atrás sin invalidar lo que dependía de esa elección
+  // dejaba, por ejemplo, LaLiga elegida después de cambiar la región a Asia.
   function volverA(i){
     var ps = PASOS();
     for(var j = i; j < ps.length; j++){
@@ -827,14 +758,11 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // LOS CUERPOS PROPIOS DE LOS PASOS 6. Los tres arman la MISMA estructura (una
-  // lista de bloques); lo único que cambia es qué se pregunta de cada uno.
+  // LOS CUERPOS PROPIOS DE LOS PASOS 6. Los tres arman la MISMA estructura (una lista de bloques); lo único que cambia es qué se
+  // pregunta de cada uno.
   //
-  // LA REGLA DE COPY QUE LOS UNE, y que vale más de lo que parece: un ejercicio
-  // nunca aparece suelto, siempre cuelga de su club o de su liga ("Boca Juniors:
-  // [Balance 2024/2025 ▾]"). Viene de una queja concreta de Guido sobre una
-  // versión anterior del prototipo: "si no, el usuario pierde noción de quién son
-  // los balances".
+  // LA REGLA DE COPY QUE LOS UNE: un ejercicio nunca aparece suelto, siempre cuelga de su club o de su liga ("Boca Juniors:
+  // [Balance 2024/2025 ▾]"); si no, el visitante pierde noción de quién son los balances.
   // ---------------------------------------------------------------------------
   function bloqueCompleto(b){
     return b.kind === 'liga' ? b.years.length > 0 : b.pares.length > 0;
@@ -887,11 +815,8 @@ window.CLUB_SELECTOR = (function(){
         if(!n){ c.disabled = true; c.title = t('sel.liga.sindatos', 'Ningún club de esa temporada tiene datos cargados'); }
         else c.addEventListener('click', function(){
           ligaAnioTocado = true;
-          // EN EL CAMINO QUE TERMINA EN LA PESTAÑA LIGAS, UNA SOLA TEMPORADA
-          // (Versión 183): un ranking es (liga, UN ejercicio), así que marcar dos
-          // no significa nada y confirmar tomaría la primera, en silencio. En
-          // Comparar sí son varias, porque ahí el bloque las SUMA (o promedia) y
-          // el card lo dice con la fórmula.
+          // EN EL CAMINO QUE TERMINA EN LA PESTAÑA LIGAS, UNA SOLA TEMPORADA: un ranking es (liga, UN ejercicio). En Comparar sí son
+          // varias, porque ahí el bloque las suma (o promedia) y el card lo dice con la fórmula.
           if(origen !== 'vs'){ b.years = [y]; renderModal(); return; }
           var i = b.years.indexOf(y);
           if(i >= 0) b.years.splice(i, 1); else b.years.push(y);
@@ -900,10 +825,7 @@ window.CLUB_SELECTOR = (function(){
         chips.appendChild(c);
       });
       fila.appendChild(chips);
-      // EL AGREGADOR (Promedio / Suma) ES UNA PREGUNTA DE COMPARAR, no del camino
-      // que termina en la pestaña Ligas (Versión 183). Un ranking no promedia ni
-      // suma la liga: la lista club por club. Mostrar el control ahí sería ofrecer
-      // una decisión que no cambia nada de lo que el visitante va a ver.
+      // EL AGREGADOR (Promedio / Suma) ES UNA PREGUNTA DE COMPARAR: un ranking no promedia ni suma la liga, la lista club por club.
       if(origen === 'vs'){
         var agg = selectorAgg(b);
         if(agg) fila.appendChild(agg);
@@ -997,18 +919,12 @@ window.CLUB_SELECTOR = (function(){
   // --- RAMA MEZCLA: el constructor, con forma de tabla dinámica ----------------
   // Filas = bloques, y cada fila trae QUÉ, QUÉ AÑO, CÓMO SE AGREGA y QUÉ ENTRA.
   //
-  // "QUÉ ENTRA" y no "cuánto aporta" (que era la idea original): el aporte en plata
-  // obliga a bajar el `data/<club>-data.js` de cada club del bloque, y eso es justo
-  // lo que el selector NO hace mientras elegís — son 41 archivos y el sitio los
-  // carga por demanda. El conteo de ejercicios sale del índice liviano y ya dice si
-  // el bloque tiene sustancia. La plata aparece al comparar.
+  // "QUÉ ENTRA" y no "cuánto aporta": el aporte en plata obliga a bajar el data file de cada club del bloque, y eso es justo lo
+  // que el selector NO hace mientras elegís. El conteo de ejercicios sale del índice liviano; la plata aparece al comparar.
   var mezclaAbierto = null;   // 'liga' | 'clubes' | null — el panel de agregar
   var mezclaTmp = { league:null, years:[], ids:[] };
-  // ESTADO PROPIO DEL PANEL, NO COMPARTIDO CON EL BUSCADOR DEL MODAL (Versión 174).
-  // `mostrarTodos` (abajo, en la zona del buscador) es de módulo y lo miran TODAS las
-  // grillas con tope: si esta grilla lo prendiera, abrir "Mostrar más" acá dejaría el
-  // buscador del modal ya expandido sin que nadie lo pidiera. Mismo criterio para el
-  // texto del filtro: es de este panel, no del modal.
+  // ESTADO PROPIO DEL PANEL, NO COMPARTIDO CON EL BUSCADOR DEL MODAL: `mostrarTodos` es de módulo y lo miran todas las grillas con
+  // tope; si esta grilla lo prendiera, el buscador del modal quedaría expandido sin que nadie lo pidiera. Lo mismo para el texto.
   var mezclaQ = '';           // lo que hay escrito en el filtro de la grilla de clubes
   var mezclaTodos = false;    // lo prende el "Mostrar más" de esa grilla, y sólo ese
 
@@ -1116,26 +1032,17 @@ window.CLUB_SELECTOR = (function(){
         caja.appendChild(chips);
       }
     } else {
-      // MISMO TOPE QUE EL BUSCADOR (Versión 165), pero con una diferencia que no se
-      // puede saltear: acá el visitante está SELECCIONANDO, así que los clubes que ya
-      // marcó van primero y nunca quedan escondidos detrás del tope. Esconderle algo
-      // que marcó se leería como que se le borró la selección.
+      // MISMO TOPE QUE EL BUSCADOR, con una diferencia: acá el visitante está SELECCIONANDO, así que los clubes ya marcados van primero
+      // y nunca quedan detrás del tope (se leería como que se le borró la selección).
       //
-      // Y CON SU PROPIO FILTRO (Versión 174), porque el tope arregla el jank y no el
-      // problema de fondo: a 1000 clubes una grilla para elegir a ojo no sirve aunque
-      // sea rápida. Tres cosas propias de acá, y ninguna es un descuido:
+      // Y CON SU PROPIO FILTRO, porque el tope arregla el jank y no el problema de fondo: con muchos clubes una grilla para elegir a
+      // ojo no sirve. Tres cosas propias de acá:
       //
-      // 1. LOS YA MARCADOS NO SE FILTRAN NUNCA. Van primero, matcheen o no el texto:
-      //    el filtro achica sólo el "resto", por lo mismo que el tope no los toca.
-      // 2. NO BUSCA LIGAS, a diferencia del buscador del modal (donde una liga es un
-      //    lado posible). Acá sólo se eligen clubes y cada botón imprime nombre +
-      //    país, así que el filtro mira exactamente eso: `indiceClubPais()`, no
-      //    `indiceBusqueda()`, que trae los nombres de las ligas adentro.
-      // 3. EL INPUT SE CREA ACÁ. El #modalQ del modal principal no existe en este
-      //    panel: el constructor de mezcla es otro modal, a propósito (ver el
-      //    comentario arriba de esta función). Por eso su texto y su "Mostrar más"
-      //    viven en estado propio del panel: renderModal() rehace este DOM entero en
-      //    cada tilde, y sin ese estado el filtro se borraría al marcar un club.
+      // 1. LOS YA MARCADOS NO SE FILTRAN NUNCA: van primero, matcheen o no el texto.
+      // 2. NO BUSCA LIGAS: cada botón imprime nombre + país, así que el filtro mira eso (indiceClubPais(), no indiceBusqueda(), que
+      //    trae los nombres de las ligas adentro).
+      // 3. EL INPUT SE CREA ACÁ: el #modalQ del modal principal no existe en este panel. renderModal() rehace este DOM en cada tilde,
+      //    así que el texto y su "Mostrar más" viven en estado propio; si no, el filtro se borraría al marcar un club.
       var busca = el('div', 'modal-busca');
       var lupa = el('span', 'lupa', '\uD83D\uDD0D');
       lupa.setAttribute('aria-hidden', 'true');
@@ -1331,13 +1238,9 @@ window.CLUB_SELECTOR = (function(){
       return card;
     }
 
-    // ELEGISTE UNA LIGA Y NO VENÍS DE COMPARAR (Versión 183): lo que querías ver es
-    // la liga, no el primer club de la liga por orden alfabético. Este botón es el
-    // to-do 23(c) entero, y sale ANTES de las dos líneas de abajo a propósito: esas
-    // dicen "5 ejercicios de 5 clubes. promedio(Primera División 2025)", que es el
-    // vocabulario de Comparar. Un ranking no promedia nada, así que acá esa frase
-    // no describe lo que el visitante va a ver.
-    // Solo con UN bloque de liga: una mezcla de bloques no es una liga.
+    // ELEGISTE UNA LIGA Y NO VENÍS DE COMPARAR: lo que querías ver es la liga, no su primer club por orden alfabético. Sale antes
+    // de las dos líneas de abajo, que usan el vocabulario de Comparar ("promedio(Primera División 2025)"): un ranking no promedia
+    // nada. Solo con UN bloque de liga: una mezcla de bloques no es una liga.
     if(origen === 'finanzas' && bloques.length === 1 && bloques[0].kind === 'liga'){
       var lgId = bloques[0].league;
       var lgN = (window.LEAGUES[lgId] || {}).name || lgId;
@@ -1357,12 +1260,11 @@ window.CLUB_SELECTOR = (function(){
     }
 
     body.appendChild(el('p', 'res-msg', bloques.map(nombreBloque).join(' + ')));
-    // La fórmula ("suma(…)", "promedio(…)") es de Comparar: en Finanzas no se suma nada (to-do 96).
+    // La fórmula ("suma(…)", "promedio(…)") es de Comparar: en Finanzas no se suma nada.
     body.appendChild(el('p', 'res-sub', nEjercicios(pares.length) + ' ' + t('sel.of', 'de') + ' '
       + nClubes(ids.length) + (origen === 'vs' ? '. ' + formulaDe(l) : '') + '.'));
 
-    // Peras con manzanas: se avisa, no se prohíbe (decisión explícita de Guido:
-    // "suma peras con manzanas pero no es mi tema, yo tengo que dar la funcionalidad").
+    // Peras con manzanas: se avisa, no se prohíbe.
     var aggs = {};
     bloques.forEach(function(b){ aggs[b.agg] = 1; });
     if(Object.keys(aggs).length > 1){
@@ -1448,13 +1350,8 @@ window.CLUB_SELECTOR = (function(){
     if(!ids.length) return;
     destino = destino || origen;
 
-    // LA PESTAÑA LIGAS (Versión 183, to-do 23(c)). Hasta acá, elegir una liga y
-    // confirmar terminaba en Finanzas DEL PRIMER CLUB de esa liga: la liga se
-    // usaba como filtro para llegar a un club, y no había ninguna pantalla que
-    // fuera sobre la liga. Ahora hay, y este es el único camino que lleva a ella
-    // desde el selector.
-    // El bloque tiene que ser UNO y de tipo liga: una mezcla de bloques no es una
-    // liga, es un sujeto armado a mano, y eso ya tiene su pantalla (Comparar).
+    // LA PESTAÑA LIGAS: el único camino del selector que lleva a ella. El bloque tiene que ser UNO y de tipo liga: una mezcla de
+    // bloques no es una liga, es un sujeto armado a mano, y eso ya tiene su pantalla (Comparar).
     if(destino === 'liga'){
       var b = bloques[0];
       if(!b || b.kind !== 'liga') return;
@@ -1471,8 +1368,7 @@ window.CLUB_SELECTOR = (function(){
     if(destino === 'vs'){
       lado[modalLado] = ladoDesde(JSON.parse(JSON.stringify(bloques)));
       stGuardado[modalLado] = { st:JSON.parse(JSON.stringify(st)), bloques:JSON.parse(JSON.stringify(bloques)) };
-      // Se loggea recién con LOS DOS lados puestos: un solo lado no es una
-      // comparación todavía, es la mitad de una (Versión 216).
+      // Se loggea recién con LOS DOS lados puestos: un solo lado no es una comparación todavía.
       if(lado[0] && lado[1]){
         logEvent({ type:'compare', a:lado[0].nombre, b:lado[1].nombre });
       }
@@ -1533,11 +1429,10 @@ window.CLUB_SELECTOR = (function(){
     });
   }
 
-  // VALORES AJUSTADOS POR INFLACIÓN (to-do 23): el mismo criterio que FIN_REAL en Finanzas, con la serie
-  // del dólar de data/deflactores.js. Cada ejercicio se ajusta por el año en que cierra (`year`, la misma
-  // clave que usa el tipo de cambio) ANTES de sumarse o promediarse con los demás de su lado; año base =
-  // el último de la serie; un ejercicio que cierra en el año base o después (un presupuesto futuro) no se
-  // ajusta. Con el toggle apagado, 1.
+  // VALORES AJUSTADOS POR INFLACIÓN: el mismo criterio que FIN_REAL en Finanzas, con la serie del dólar de data/deflactores.js.
+  // Cada ejercicio se ajusta por el año en que cierra (`year`, la misma clave que el tipo de cambio) ANTES de sumarse o
+  // promediarse; año base = el último de la serie; un ejercicio que cierra en el año base o después no se ajusta. Con el toggle
+  // apagado, 1.
   function serieUSD(){ return ((window.DEFLACTORES || {}).USD) || null; }
   function baseReal(){
     var s = serieUSD();
@@ -1562,12 +1457,9 @@ window.CLUB_SELECTOR = (function(){
     // en null, o los dos en CERO exacto (así lo escriben los presupuestos).
     var sinDeuda = (c.meta.grossDebt == null && c.meta.cash == null)
                 || (c.meta.grossDebt === 0 && c.meta.cash === 0);
-    // Y LO MISMO PARA LOS GASTOS: los 10 clubes japoneses tienen ingresos cargados y
-    // `expenseLines: []`, porque la J.League publica el ingreso de cada club y no su
-    // estructura de costos. Sin este test la columna diría "Gastos 0,0 M USD" y un
-    // resultado igual a los ingresos, que no es un dato incompleto sino uno FALSO.
-    // El resultado cae con los gastos: es el final de una cascada que arranca ahí.
-    // (El mismo arreglo le falta a los KPIs de Finanzas: to-do 31.)
+    // Y LO MISMO PARA LOS GASTOS: un club con ingresos y sin estructura de costos (la J.League publica solo el ingreso de cada club)
+    // diría "Gastos 0,0" y un resultado igual a los ingresos, que no es un dato incompleto sino uno FALSO. El resultado cae con los
+    // gastos.
     var sinGastos = !(c.expenseLines || []).length
                  && c.meta.officialTotalExpenses == null
                  && !c.expenses && !c.nonCash;
@@ -1604,18 +1496,14 @@ window.CLUB_SELECTOR = (function(){
     var f = facReal(year);
     return rows.map(function(r){
       return { label:r.label, value: window.toDisplayValue(r.value, meta, 'USD') * f };
-    // OJO: se descartan los CEROS exactos (una fila en 0 no dibuja nada), pero NO
-    // los negativos. Botafogo 2024, Cruzeiro 2025 y Envigado 2025 reportan ingreso
-    // BRUTO y una línea de deducciones que cae en el catch-all y queda negativa —
-    // filtrar por `> 0` (to-do 41) tiraba ese rubro entero y el total de la mezcla
-    // quedaba inflado ~5% en esos 3 clubes. Mismo criterio que ya usa
-    // `tools/generate-rankings.js` para el mismo dato.
+    // OJO: se descartan los CEROS exactos, pero NO los negativos. Hay clubes que reportan ingreso BRUTO y una línea de deducciones
+    // que cae en el catch-all negativa; filtrar por `> 0` tiraba ese rubro y la mezcla quedaba inflada. Mismo criterio que
+    // tools/generate-rankings.js.
     }).filter(function(r){ return r.value !== 0; });
   }
 
-  // Los gastos de un club-ejercicio por rubro del formato simplificado, en USD (to-do 23,
-  // paso 5: la tabla de Comparar tiene las mismas filas que la de Finanzas). Vienen en
-  // NEGATIVO, como en el reporte, y se muestran entre paréntesis.
+  // Los gastos de un club-ejercicio por rubro del formato simplificado, en USD (la tabla de Comparar tiene las mismas filas que la
+  // de Finanzas). Vienen en NEGATIVO, como en el reporte, y se muestran entre paréntesis.
   function gastosDe(id, year){
     var rows = (window.simplifiedReportForClub(id, year) || {}).gastos || [];
     var meta = window.yearMetaFor(id, year);
@@ -1664,8 +1552,8 @@ window.CLUB_SELECTOR = (function(){
       var rep = window.simplifiedReportForClub(id, y) || {};
       (rep.ingresos || []).forEach(function(r){ anotarOrden(out.ordenIng, r.label); });
       (rep.gastos || []).forEach(function(r){ anotarOrden(out.ordenGas, r.label); });
-      // "Dentro de otro rubro" (Versión 510): con UN ejercicio, la celda va en "—" con el
-      // bocadillo, como en Finanzas. Con varios, va como aviso del lado (no hay una celda única).
+      // "Dentro de otro rubro": con UN ejercicio, la celda va en "—" con el bocadillo, como en Finanzas. Con varios, va como aviso
+      // del lado (no hay una celda única).
       [['i', rep.ingresos], ['g', rep.gastos]].forEach(function(par){
         (par[1] || []).forEach(function(r){
           if(r.incluidoEn) out.incl[par[0] + '|' + r.label] = { en:r.incluidoEn, posible:!!r.incluidoPosible };
@@ -1682,7 +1570,7 @@ window.CLUB_SELECTOR = (function(){
           out.gastos[r.label] = (out.gastos[r.label] || 0) + r.value;
         });
       }
-      // Versión 510: las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
+      // Las filas que el documento junta con otra (fiscalYearMeta.incluidoEn) van como aviso: en la mezcla suman donde están.
       var repI = window.simplifiedReportForClub(id, y) || {};
       (repI.ingresos || []).concat(repI.gastos || []).forEach(function(r){
         if(r.incluidoEn) out.incluidos.push(nameOf(id) + ' ' + y + ': ' + tLabel(r.label) + ' ' + (r.incluidoPosible ? t('sel.res.inclPosible', 'posiblemente está dentro de') : t('sel.res.incl', 'está dentro de')) + ' ' + tLabel(r.incluidoEn));
@@ -1778,8 +1666,7 @@ window.CLUB_SELECTOR = (function(){
     wrap.querySelectorAll('.fin-years-row').forEach(function(f){ f.scrollLeft = f.scrollWidth; });
     renderPie();
     renderControles();
-    // SIN BOTÓN "COMPARAR" (to-do 23): con los dos lados llenos, el resultado se arma solo y se
-    // rehace con cada cambio de un card, como Finanzas con sus cards de ejercicio.
+    // Sin botón "Comparar": con los dos lados llenos, el resultado se arma solo y se rehace con cada cambio de un card.
     if(lado[0] && lado[1]) aplicar();
     else { mostrando = false; renderResultado(); }
   }
@@ -1813,11 +1700,9 @@ window.CLUB_SELECTOR = (function(){
     return b;
   }
 
-  // LOS CHIPS DE EJERCICIO (to-do 23): el mismo componente que los cards de Finanzas
-  // (js/finanzas-anios.js, clases .fin-year*), para que las dos pantallas se lean igual.
-  // Dos formas de lado los tienen: UN club (un chip por ejercicio, varios a la vez) y UNA
-  // liga (un chip por temporada). Cualquier otra forma (varios clubes, varias ligas, una
-  // mezcla) sigue con la fórmula y "Ejercicios: …": cambiar eso es volver al modal.
+  // LOS CHIPS DE EJERCICIO: el mismo componente que los cards de Finanzas (js/finanzas-anios.js, clases .fin-year*). Los tienen
+  // dos formas de lado: UN club (un chip por ejercicio) y UNA liga (un chip por temporada). Cualquier otra forma sigue con la
+  // fórmula y "Ejercicios: …": cambiarla es volver al modal.
   var BAL_TIPOS = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
   var cdExpandido = [false, false];   // "+N más" abierto, por card
 
@@ -1827,7 +1712,7 @@ window.CLUB_SELECTOR = (function(){
     return par[1] === 'official_budget' ? 'P' : BAL_TIPOS[par[1]] ? 'B' : null;
   }
   function etiquetaEj(id, y){
-    return window.esEjercicioCalendario(id, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    return window.esEjercicioCalendario(id, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // por ejercicio, no por club
   }
   // Los ejercicios de un club, del primero al último cargado, con los años vacíos del medio
   // como "Sin publicar" (mismo criterio que FIN_ANIOS.ejercicios, pero desde CLUB_INDEX: el
@@ -1930,8 +1815,7 @@ window.CLUB_SELECTOR = (function(){
     return caja;
   }
 
-  // La línea de abajo del nombre: cómo se arma el lado, en una frase. Es lo único que queda
-  // de la vieja bajada "A contra B" (Guido: el título son los cards).
+  // La línea de abajo del nombre: cómo se arma el lado, en una frase (el título son los cards).
   function comoSeArma(l, unClub, unaLiga){
     var pares = paresDe(l);
     var partes = [];
@@ -1956,15 +1840,9 @@ window.CLUB_SELECTOR = (function(){
     var l = lado[i];
     var caja = el('div', 'cd-elegido');
     var ids = clubesDe(l);
-    // "ESTE LADO ES UN CLUB" SE DECIDE POR LO QUE ES EL BLOQUE, NO CONTANDO CLUBES.
-    // Contando (ids.length === 1) parecía equivalente y no lo es: una temporada de
-    // liga puede tener UN solo equipo con datos cargados — el Brasileirão Série A
-    // 2025 tiene uno, Mirassol — y ahí el lado seguía siendo una liga, pero el card
-    // lo trataba como un club y le pedía `bloques[0].pares`, que en un bloque de
-    // liga no existe. TypeError, y como render() va agregando los tres hijos de a
-    // uno, el card B desaparecía dejando A y el VS. Bug real, encontrado por Guido
-    // comparando la liga argentina contra la brasilera.
-    // Desde el to-do 23 un club puede tener VARIOS ejercicios: sigue siendo "un club".
+    // "ESTE LADO ES UN CLUB" SE DECIDE POR LO QUE ES EL BLOQUE, NO CONTANDO CLUBES: una temporada de liga puede tener UN solo
+    // equipo con datos cargados y sigue siendo una liga (contando, el card le pedía `bloques[0].pares`, que en un bloque de liga no
+    // existe). Un club con VARIOS ejercicios sigue siendo "un club".
     var b0 = l.bloques[0];
     var soloClubes = l.bloques.length === 1 && b0.kind === 'clubes';
     var unClub = (soloClubes && ids.length === 1) ? ids[0] : null;
@@ -2025,9 +1903,8 @@ window.CLUB_SELECTOR = (function(){
     return lista[lista.length - 1] + '-' + lista[0] + ' (' + lista.length + ')';
   }
 
-  // LA BARRA (to-do 23, paso 3): formato fijo y "Valores: Nominales | Ajustados por
-  // inflación", como en Finanzas. La franja verde explica el ajuste con el ejercicio más
-  // viejo de la comparación y avisa si hay presupuestos posteriores al año base.
+  // LA BARRA: formato fijo y "Valores: Nominales | Ajustados por inflación", como en Finanzas. La franja verde explica el ajuste con
+  // el ejercicio más viejo de la comparación y avisa si hay presupuestos posteriores al año base.
   function renderControles(){
     var barra = $('cdControles'), nota = $('cdRealNote');
     if(!barra || !nota) return;
@@ -2049,7 +1926,7 @@ window.CLUB_SELECTOR = (function(){
     nota.hidden = false;
   }
 
-  // Sin botón "Comparar" (to-do 23): el pie solo avisa mientras falte un lado.
+  // Sin botón "Comparar": el pie solo avisa mientras falte un lado.
   function renderPie(){
     var pie = $('cdPie');
     if(!pie) return;
@@ -2081,9 +1958,8 @@ window.CLUB_SELECTOR = (function(){
     }
     mostrando = true;
 
-    // Pero SOLO si todavía no había uno (to-do 23): sin botón, la comparación se rehace con
-    // cada chip, y pisar el club que el visitante estaba mirando en cada toque lo sacaba de
-    // su club sin que lo pidiera.
+    // Pero SOLO si todavía no había uno: la comparación se rehace con cada chip, y pisar el club activo en cada toque sacaba al
+    // visitante de su club sin que lo pidiera.
     var hayClub = !!api.getClub();
     Promise.resolve(hayClub ? null : api.pickClub(primerClub)).then(function(){
       if(!hayClub){
@@ -2105,21 +1981,17 @@ window.CLUB_SELECTOR = (function(){
       })).then(function(){ cmpFallidos = fallidos; });
     }).then(function(){
       renderResultado();
-      // La página no se mueve sola: el resultado aparece abajo y el visitante decide
-      // si baja. (El scroll automático fue una queja de Guido en el prototipo 2.)
-      // to-do 70, "Saved Searches": js/selector.js no sabe de Supabase ni de cuentas —
-      // solo avisa que una comparación se confirmó, con los dos `lado` tal cual (ya son
-      // JSON puro, ver ladoDesde()). Si no hay sesión, notifyStateChange no hace nada.
+      // La página no se mueve sola: el resultado aparece abajo y el visitante decide si baja.
+      // Guardado en Mi Cuenta: este archivo no sabe de Supabase, solo avisa que una comparación se armó, con los dos `lado` (JSON
+      // puro). Sin sesión, notifyStateChange no hace nada.
       if(window.CUENTA) window.CUENTA.notifyStateChange({ view:'vs', ladoA:lado[0], ladoB:lado[1] });
     });
   }
 
   // ---------------------------------------------------------------------------
-  // EL GRÁFICO (to-do 23, paso 4): A y B en el MISMO eje, no un gráfico por lado (pedido de
-  // Guido: separados pierden la gracia de la comparación). Eje X = año de cierre, en escala
-  // real: un año que no se eligió deja su hueco y el tramo que lo cruza va punteado. Mismo
-  // código visual que el gráfico de Finanzas (FIN_MULTI_CHART): presupuesto = punto hueco y
-  // tramo punteado. "De qué vive cada lado" son las barras apiladas de Finanzas, una por lado.
+  // EL GRÁFICO: A y B en el MISMO eje (separados pierden la comparación). Eje X = año de cierre, en escala real: un año no elegido
+  // deja su hueco y el tramo que lo cruza va punteado. Mismo código visual que FIN_MULTI_CHART: presupuesto = punto hueco y tramo
+  // punteado. "De qué vive cada lado" son las barras apiladas de Finanzas, una por lado.
   // ---------------------------------------------------------------------------
   var cmpModo = 'ing';
   var cmpCharts = [];
@@ -2303,12 +2175,9 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // LA TABLA (to-do 23, paso 5): las filas de la de Finanzas en formato simplificado (rubro por
-  // rubro, totales, resultado, deuda) y abajo los dos indicadores que solo tiene Comparar.
-  // Columnas A, B y B / A, sin verde ni rojo en B / A: en una comparación ningún lado es el
-  // bueno. Mismas clases que la tabla multi-año de Finanzas (.pl-multi): unidad en el
-  // encabezado, gastos entre paréntesis, columna de presupuesto en amarillo y cursiva, rubro
-  // desplegable con su gráfico (acá, A contra B por año de cierre).
+  // LA TABLA: las filas de la de Finanzas en formato simplificado (rubros, totales, resultado, deuda) y abajo los dos indicadores
+  // que solo tiene Comparar. Columnas A, B y B / A, sin verde ni rojo en B / A: en una comparación ningún lado es el bueno. Mismas
+  // clases que la tabla multi-año de Finanzas (.pl-multi).
   // ---------------------------------------------------------------------------
   var cmpPct = false;
   var cmpFila = null;   // 'i|<rubro>' o 'g|<rubro>': la fila abierta
@@ -2369,10 +2238,9 @@ window.CLUB_SELECTOR = (function(){
         ? '<span class="cd-cnt">' + tt.nEj[k] + ' ' + t('sel.of', 'de') + ' ' + tt.conDato + '</span>' : '';
     }
 
-    // Encabezado: el nombre de cada lado; con el ajuste, el factor de cada año; la etiqueta de
-    // presupuesto si el lado lo mezcla con balances. Con una LIGA de por medio va además cómo se
-    // junta: "Brasileirão 2025: 114,1" a secas se lee como lo que factura la liga entera (hoy esa
-    // temporada tiene un solo club cargado, Mirassol); "promedio de 1 ejercicio" dice lo que es.
+    // Encabezado: el nombre de cada lado; con el ajuste, el factor de cada año; la etiqueta de presupuesto si el lado lo mezcla con
+    // balances. Con una LIGA de por medio va además cómo se junta: "Brasileirão 2025: 114,1" a secas se leería como lo que factura
+    // la liga entera.
     var h = '<thead><tr><th>' + escH(t('th.line', 'Rubro')) + '<small>' + escH(unidadCmp()) + '</small></th>';
     tots.forEach(function(tt, i){
       h += '<th' + tdCls(i) + '><span class="cd-letra chica' + (i ? ' b' : '') + '">' + LETRAS[i] + '</span>' + escH(tt.nombre);
@@ -2517,8 +2385,7 @@ window.CLUB_SELECTOR = (function(){
     caja.innerHTML = '';
     var tots = activos.map(totalesDe);
 
-    // Sin título "A contra B" ni párrafo de reglas (to-do 23, paso 6): los cards ya dicen qué es
-    // cada lado, y la barra dice el formato y la moneda. El resultado arranca con el gráfico.
+    // Sin título "A contra B" ni párrafo de reglas: los cards ya dicen qué es cada lado, y la barra dice el formato y la moneda.
     if(cmpFallidos.length){
       var falla = el('div', 'cd-falla');
       falla.appendChild(el('span', null, t('sel.res.fail', 'No se pudieron cargar los datos de {c}: el resultado está incompleto.')
@@ -2576,8 +2443,7 @@ window.CLUB_SELECTOR = (function(){
     document.querySelectorAll('#cdWrap .cd-avisos-lado').forEach(function(c){ c.innerHTML = ''; });
   }
 
-  // FUENTES (to-do 23, paso 6): como en Finanzas, un renglón por ejercicio, agrupado por lado.
-  // Cada renglón dice el documento y linkea a él; abajo, la página de fuentes de cada club.
+  // FUENTES: como en Finanzas, un renglón por ejercicio, agrupado por lado, y abajo la página de fuentes de cada club.
   function bloqueFuentes(tots){
     var caja = el('div', 'cd-fuentes');
     caja.appendChild(el('h3', null, t('fuentes.card.title', 'Fuentes')));
@@ -2636,36 +2502,21 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // EL BUSCADOR. El atajo de un paso para el que ya sabe qué club quiere:
-  // escribir "boca" y tocarlo, sin recorrer los cinco pasos.
-  // ---------------------------------------------------------------------------
-  // ---------------------------------------------------------------------------
-  // EL BUSCADOR A ESCALA (Versión 165). Tres cosas, y ninguna cambia qué encuentra:
+  // EL BUSCADOR: el atajo de un paso para el que ya sabe qué club quiere. A escala, tres cosas que no cambian qué encuentra:
   //
-  // 1. TOPE DE RESULTADOS. La grilla pintaba un botón por cada club que matcheara,
-  //    con su propio listener. Con 41 es invisible; con 1000-3000, escribir una
-  //    letra reconstruye cientos de nodos. Se muestran TOPE_RESULTADOS y el resto
-  //    queda detrás de "Mostrar más", con el conteo real al lado para que el
-  //    visitante sepa que hay más y cuántos (esconder sin decirlo se lee como "no
-  //    está").
-  // 2. CACHÉ DEL TEXTO BUSCABLE. El filtro llamaba a `ligasDe(id)` para CADA club
-  //    en CADA tecla, y esa función ordena las ligas del club cada vez. A 3000
-  //    clubes eso pesa más que el DOM. Ahora el texto de cada club (nombre + país +
-  //    ligas, ya normalizado) se arma una vez y se guarda.
-  // 3. DEBOUNCE, que NO está acá sino en el listener (ver `init()`). Es a propósito:
-  //    esta función también se llama desde adentro de sí misma al elegir un club o
-  //    una liga, justo después de vaciar el input, y esas llamadas tienen que correr
-  //    YA. Debouncear la función en vez del evento dejaría los resultados viejos en
-  //    pantalla mientras `confirmar()` cambia de club.
+  // 1. TOPE DE RESULTADOS: se muestran TOPE_RESULTADOS y el resto queda detrás de "Mostrar más", con el conteo real al lado
+  //    (esconder sin decirlo se lee como "no está").
+  // 2. CACHÉ DEL TEXTO BUSCABLE: el texto de cada club (nombre + país + ligas, normalizado) se arma una vez, no en cada tecla.
+  // 3. DEBOUNCE, en el listener y no acá (ver init()): esta función también se llama al elegir un club o una liga, después de
+  //    vaciar el input, y esas llamadas tienen que correr YA.
   // ---------------------------------------------------------------------------
   var TOPE_RESULTADOS = 30;
   var mostrarTodos = false;      // lo prende "Mostrar más", se apaga en cada búsqueda nueva
   function verTodosResultados(v){ mostrarTodos = !!v; }
   var textoBuscable = null;      // { clubId: 'nombre pais ligas' }, normalizado
 
-  // Se arma una vez por sesión de modal. Se invalida al cargar la tabla de ligas
-  // (Versión 164, `loadClubLeagues()`), porque hasta entonces `ligasDe()` devuelve
-  // vacío y el texto quedaría sin las ligas adentro.
+  // Se arma una vez por sesión de modal. Se invalida al cargar la tabla de ligas (loadClubLeagues()): hasta entonces ligasDe()
+  // devuelve vacío y el texto quedaría sin las ligas.
   function indiceBusqueda(){
     if(textoBuscable) return textoBuscable;
     textoBuscable = {};
@@ -2678,13 +2529,9 @@ window.CLUB_SELECTOR = (function(){
     return textoBuscable;
   }
 
-  // EL OTRO ÍNDICE: NOMBRE + PAÍS, SIN LIGAS (Versión 174). Es el que filtra la grilla
-  // de "elegir clubes" del constructor de mezcla. No puede reusar `textoBuscable`
-  // porque ese incluye los nombres de las ligas de cada club, y en esa grilla cada
-  // botón imprime nombre + país nada más: filtrar por un texto que no está escrito en
-  // ninguna parte del botón devuelve clubes que parecen no tener nada que ver.
-  // Cacheado por el mismo motivo que el otro (a 3000 clubes, normalizar en cada tecla
-  // pesa más que el DOM), y se invalida junto con él porque el país va traducido.
+  // EL OTRO ÍNDICE: NOMBRE + PAÍS, SIN LIGAS, para la grilla de clubes del constructor de mezcla, donde cada botón imprime nombre +
+  // país nada más (filtrar por un texto que no está en el botón devuelve clubes que parecen no tener nada que ver). Cacheado igual,
+  // y se invalida junto con el otro porque el país va traducido.
   var textoClubPais = null;   // { clubId: 'nombre pais' }, normalizado
   function indiceClubPais(){
     if(textoClubPais) return textoClubPais;
@@ -2698,10 +2545,8 @@ window.CLUB_SELECTOR = (function(){
   }
   function invalidarIndiceBusqueda(){ textoBuscable = null; textoClubPais = null; }
 
-  // La grilla de clubes con tope: devuelve el <div> y, si sobran, el botón.
-  // `estado` (Versión 174) es opcional y sirve para que una grilla traiga su PROPIO
-  // "mostrar todos" — `{ ver:bool, expandir:fn }` — en vez del `mostrarTodos` de
-  // módulo, que es de acá y lo comparten todas las grillas que no pasen nada.
+  // La grilla de clubes con tope: devuelve el <div> y, si sobran, el botón. `estado` (opcional) le da a una grilla su PROPIO
+  // "mostrar todos" ({ ver:bool, expandir:fn }) en vez del `mostrarTodos` de módulo.
   function grillaConTope(ids, caja, hazBoton, repintar, estado){
     var todos = estado ? !!estado.ver : mostrarTodos;
     var visibles = todos ? ids : ids.slice(0, TOPE_RESULTADOS);
@@ -2729,19 +2574,8 @@ window.CLUB_SELECTOR = (function(){
     $('modalWrap').hidden = !!q;
     if(!q) return;
 
-    // LAS LIGAS TAMBIÉN SE BUSCAN (Versión 152). El placeholder promete "un club,
-    // una liga o un país" desde siempre, pero hasta acá escribir "primera div"
-    // devolvía los 11 clubes argentinos y no la liga: el nombre de la liga entraba
-    // en la búsqueda solo como un atributo de sus clubes. Lo levantó Guido probando
-    // la etapa 4 ("puse 'primera div' y no me trajo Primera División, así que busqué
-    // con el flow"). Una liga es un lado posible, así que tiene que poder elegirse
-    // igual que un club.
-    // HASTA LA VERSIÓN 182 ESTO ESTABA LIMITADO AL CAMINO DE COMPARAR, con el
-    // motivo "Finanzas muestra un club por vez". Era cierto y dejó de serlo: desde
-    // la Versión 183 una liga tiene su propia pantalla (la pestaña Ligas), así que
-    // buscar "LaLiga" desde el botón del header tiene que encontrarla igual que
-    // desde Comparar. Buscar una liga y que el buscador conteste con sus 9 clubes
-    // era justo el síntoma que el to-do 23(c) describía.
+    // LAS LIGAS TAMBIÉN SE BUSCAN, en los dos caminos: una liga es un lado posible en Comparar y tiene su pantalla (la pestaña
+    // Ligas) desde Finanzas. Buscar una liga y recibir sus clubes sería no encontrarla.
     var hits = 0;
     {
       var ligas = ligasConClubes().filter(function(lid){
@@ -2763,10 +2597,8 @@ window.CLUB_SELECTOR = (function(){
             sub:window.tierLabel(lg.tier),
             meta:temporadasDe(lid).length + ' ' + t('sel.seasons', 'temporadas')
           }, false, function(id){
-            // Una liga NO se confirma de una, a diferencia de un club: sin temporada
-            // no es un sujeto (Admin/CONVENCIONES.md, "no existe ninguna arista club ->
-            // liga sin año"). Se deja parado en el paso de la temporada, con la más
-            // reciente ya marcada, para que se vea y se pueda cambiar.
+            // Una liga NO se confirma de una: sin temporada no es un sujeto (Admin/CONVENCIONES.md, "no existe ninguna arista club -> liga
+            // sin año"). Se deja parado en el paso de la temporada, con la más reciente marcada.
             pararseEnLiga(id);
             $('modalQ').value = '';
             renderBusqueda();
@@ -2807,10 +2639,8 @@ window.CLUB_SELECTOR = (function(){
         t('sel.nohits', 'Ningún club, liga ni país con ese nombre. Probá con menos letras.')));
     }
 
-    // Se loggea con un debounce PROPIO, más largo que el de renderBusqueda()
-    // (Versión 165): loggear en cada tecla mandaría "b", "bi", "bil"… de un
-    // mismo "bilbao" como búsquedas separadas. Este timer se reinicia en cada
-    // letra nueva y solo dispara si el visitante se quedó quieto 900ms.
+    // Se loggea con un debounce PROPIO, más largo que el de renderBusqueda(): en cada tecla mandaría "b", "bi", "bil"… como
+    // búsquedas separadas. Solo dispara si el visitante se quedó quieto 900 ms.
     clearTimeout(logBusquedaTimer);
     logBusquedaTimer = setTimeout(function(){
       logEvent({ type:'search', q:q, hits:hits > 0 });
@@ -2852,8 +2682,7 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // RECIENTES. No se muestran (el modal no tiene esa fila), pero se siguen
-  // guardando: los va a querer la vidriera de Inicio (to-do 33).
+  // RECIENTES. No se muestran (el modal no tiene esa fila), pero se siguen guardando.
   // ---------------------------------------------------------------------------
   function recentsList(){
     try {
@@ -2887,14 +2716,11 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // EL SELECTOR DENTRO DE FINANZAS (Versión 143). Sin club es lo único que hay
-  // para hacer en esa pantalla; con club, es cómo se cambia.
+  // EL SELECTOR DENTRO DE FINANZAS. Sin club es lo único que hay para hacer en esa pantalla; con club, es cómo se cambia.
   // ---------------------------------------------------------------------------
-  // La bajada del título con club (to-do 147, paso 1): liga · país · cuántos balances y
-  // presupuestos hay y de qué ejercicio a qué ejercicio. Sale del índice liviano
-  // (CLUB_INDEX), así que no necesita los datos del club cargados. La liga es la del
-  // ejercicio más reciente que tenga una asignada; si la tabla de ligas de ese país
-  // todavía no cargó, la bajada sale sin liga en vez de esperar.
+  // La bajada del título con club: liga · país · cuántos balances y presupuestos hay y de qué ejercicio a qué ejercicio. Sale del
+  // índice liviano (CLUB_INDEX). La liga es la del ejercicio más reciente que tenga una; si la tabla de ligas de ese país todavía
+  // no cargó, sale sin liga en vez de esperar.
   function finSubtitle(id){
     var partes = [];
     var yrs = (idx(id).yrs || []);
@@ -2913,7 +2739,7 @@ window.CLUB_SELECTOR = (function(){
       if(BAL[p[1]] || PRE[p[1]]) anios.push(p[0]);
     });
     if(anios.length){
-      var ej = function(y){ return window.esEjercicioCalendario(id, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); }; // (to-do 177)
+      var ej = function(y){ return window.esEjercicioCalendario(id, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); }; // por ejercicio
       var cuantos = [];
       if(nb) cuantos.push(nb === 1 ? t('finanzas.head.bal1', '1 balance') : t('finanzas.head.baln', '{n} balances').replace('{n}', nb));
       if(np) cuantos.push(np === 1 ? t('finanzas.head.pre1', '1 presupuesto') : t('finanzas.head.pren', '{n} presupuestos').replace('{n}', np));
@@ -2934,9 +2760,8 @@ window.CLUB_SELECTOR = (function(){
     var sec = $('finanzas');
     if(sec) sec.classList.toggle('sin-club', !id);
 
-    // Con club, el club ES el título y se cambia desde el chip del header: el card de acá
-    // repetía el mismo control (to-do 147, paso 1). Sin club, el card sigue siendo lo único
-    // que hay para hacer en la pantalla.
+    // Con club, el club ES el título y se cambia desde el chip del header. Sin club, el card sigue siendo lo único que hay para hacer
+    // en la pantalla.
     var h1 = $('finTitle'), bajada = $('finSub');
     if(h1) h1.textContent = id ? nameOf(id) : t('finanzas.title', 'Finanzas');
     if(bajada){
@@ -2995,8 +2820,7 @@ window.CLUB_SELECTOR = (function(){
       + (co ? ' · ' + nameOf(id) + ', ' + t(co.key, co.name) : '');
   }
 
-  // Soltar el club y volver a la portada, que desde la Versión 144 es la pestaña
-  // Inicio (la bifurcación), no un hero suelto.
+  // Soltar el club y volver a la portada (la pestaña Inicio).
   function goHome(){
     close();
     lado = [null, null];
@@ -3024,21 +2848,15 @@ window.CLUB_SELECTOR = (function(){
     if(inited) return;
     api.getClub  = hooks.getClub  || api.getClub;
     api.pickClub = hooks.pickClub || api.pickClub;
-    // Versión 183: el selector no sabe navegar ni cargar un ranking, igual que no
-    // sabe renderizar un club. index.html le pasa qué hacer cuando se eligió una
-    // liga, y este archivo solo decide CUÁNDO se eligió una.
+    // El selector no sabe navegar ni cargar un ranking: index.html le pasa qué hacer cuando se eligió una liga, y este archivo solo
+    // decide CUÁNDO se eligió una.
     api.pickLeague = hooks.pickLeague || api.pickLeague;
 
     $('clubBtn').addEventListener('click', function(){ open(false); });
     $('modalX').addEventListener('click', close);
     $('clubBackdrop').addEventListener('click', close);
-    // DEBOUNCE ACÁ Y NO ADENTRO DE renderBusqueda() (Versión 165): esa función
-    // también se llama desde adentro de sí misma al elegir un club o una liga,
-    // después de vaciar el input, y esas llamadas tienen que correr YA. Si se
-    // debounceara la función, los resultados viejos quedarían en pantalla mientras
-    // `confirmar()` cambia de club.
-    // 160 ms: por debajo de eso no ahorra teclas reales, por arriba se empieza a
-    // sentir el retraso al escribir.
+    // DEBOUNCE ACÁ Y NO ADENTRO DE renderBusqueda(): esa función también se llama al elegir un club o una liga, después de vaciar el
+    // input, y esas llamadas tienen que correr YA. 160 ms: por debajo no ahorra teclas reales, por arriba se siente el retraso.
     var debQ = null;
     $('modalQ').addEventListener('input', function(){
       clearTimeout(debQ);
@@ -3060,7 +2878,7 @@ window.CLUB_SELECTOR = (function(){
         isOpen() ? close() : open(false);
       }
     });
-    // (El click afuera del "?" que cierra el bocadillo lo escucha js/info-tip.js desde la Versión 515.)
+    // (El click afuera del "?" que cierra el bocadillo lo escucha js/info-tip.js.)
 
     inited = true;
     renderButton();
@@ -3076,24 +2894,18 @@ window.CLUB_SELECTOR = (function(){
     renderButton: renderButton,
     goHome: goHome,
     savedClub: savedClub,
-    // to-do 70, "Saved Searches": reabrir una comparación guardada en Mi Cuenta sin pasar por
-    // el modal de pasos — `a`/`b` son los mismos objetos `lado` ({nombre, bloques}) que guardó
-    // notifyStateChange() en aplicar(). index.html todavía tiene que navegar a la pestaña 'vs'.
+    // Reabrir una comparación guardada en Mi Cuenta sin pasar por el modal: `a`/`b` son los mismos objetos `lado` ({nombre,
+    // bloques}) que guardó notifyStateChange() en aplicar(). index.html tiene que navegar a la pestaña 'vs'.
     reopenComparacion: function(a, b){
       lado[0] = a; lado[1] = b;
-      // render() dibuja los dos cards de arriba (#cdWrap) leyendo `lado[i]` directo — sin esto
-      // quedaban vacíos, aunque aplicar() sí mostrara bien la tabla de resultado de abajo
-      // (encontrado por Guido probando la reapertura). Desde el to-do 23, render() con los
-      // dos lados llenos llama a aplicar() solo, que carga los data files que hagan falta.
+      // render() dibuja los dos cards leyendo `lado[i]`, y con los dos lados llenos llama a aplicar() solo, que carga los data files
+      // que hagan falta.
       render();
     },
-    // to-do 70: pares [clubId, year] YA RESUELTOS de un lado — un bloque puede guardar el año
-    // en `null` ("el más reciente que haya", ver paresDeBloque()) y ese default se calcula acá
-    // adentro, no en el bloque en sí. js/cuenta.js necesita el año real para el label
-    // ("Real Betis, 2025/2026"), así que pide la versión ya resuelta en vez de leer `bloques`
-    // crudo.
+    // Pares [clubId, year] YA RESUELTOS de un lado: un bloque puede guardar el año en null ("el más reciente") y el default se calcula
+    // acá. js/cuenta.js necesita el año real para el label ("Real Betis, 2025/2026").
     paresDeLado: function(l){ return paresDe(l); },
-    // to-do 23: "Valores ajustados por inflación" de Comparar. Lo usa el toggle de la barra (paso 3).
+    // "Valores ajustados por inflación" de Comparar: lo usa el toggle de la barra.
     setReal: function(v){ cmpReal = !!v; renderControles(); if(mostrando) renderResultado(); },
     baseReal: baseReal
   };

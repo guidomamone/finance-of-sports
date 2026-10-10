@@ -26,6 +26,8 @@ que dice `ESTADO.md` era verdad ese día.
   0/0) pasaron a `Admin/PANTALLA.md`. To-do 209 nuevo: lo mismo en `data/*.js`. ASSET_V 805.
 - `js/finanzas-render.js` (1227 → 921 líneas, 84 → 58 KB) y `js/liga.js` (1233 → 941 líneas, 66 → 48 KB), mismo código; sus reglas ya
   estaban en PANTALLA y CONVENCIONES-DATOS, los comentarios apuntan ahí. ASSET_V 806.
+- `js/selector.js` (3100 → 2912 líneas, 160 → 148 KB) y `js/finanzas-multi.js` (801 → 772 líneas), mismo código. El chequeo
+  `comentario-interno-publicado` cuenta "N clubes" solo desde 2 cifras ("4 Clubes" es un paso del selector, no un contador). ASSET_V 808.
 
 ## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
 

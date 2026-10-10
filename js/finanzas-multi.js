@@ -1,38 +1,28 @@
 // ============================================================================
-// js/finanzas-multi.js — el Estado de resultados con UNA COLUMNA POR EJERCICIO (to-do 147, pasos 5a y 5b).
+// js/finanzas-multi.js — el Estado de resultados con UNA COLUMNA POR EJERCICIO, y los KPIs, la deuda y el gráfico de la vista
+// multi-año. Reglas de pantalla: Admin/PANTALLA.md, "Finanzas multi-año".
 //
-// Se usa solo en la vista multi-año y más de un ejercicio elegido (FIN_SEL). Con uno solo sigue la tabla de
-// siempre, `renderNativePLTable()` (js/finanzas-render.js), que además es la que devuelve los totales
-// del ejercicio más nuevo para los KPIs: esa tabla se sigue armando (escondida) para que KPIs y tabla
-// nunca puedan decir números distintos.
+// Se usa solo en la vista multi-año con más de un ejercicio elegido (FIN_SEL). renderNativePLTable() (js/finanzas-render.js) se
+// sigue armando escondida porque devuelve los totales del ejercicio más nuevo para los KPIs: así KPIs y tabla nunca dicen números
+// distintos. Es una tabla aparte y no una generalización de esa: aquella tiene 5 columnas fijas con sus reglas de ancho, esta
+// tiene N columnas y otra lógica.
 //
-// Por qué una tabla aparte y no generalizar renderNativePLTable(): esa función tiene 5 columnas fijas
-// (colgroup, colspan, CSS por nth-child) con reglas de ancho que Guido pidió una por una (ver sus
-// comentarios), y la columna de presupuesto del mismo año. Esta tabla tiene N columnas y otra lógica
-// de anchos; mezclarlas era tocar código ya verificado para todos los clubes.
-//
-// Qué muestra (mockup: Prototyping/Finanzas/mockup-147.html, notas 5 y 11):
+// Qué muestra:
 //   - Rubro | un ejercicio por columna (más viejo a la izquierda) | Δ primero→último | tendencia.
 //   - Un "…" angosto entre dos ejercicios elegidos que no son consecutivos.
-//   - Filas: la unión de las filas de todos los ejercicios elegidos, en el orden en que aparecen. En
-//     formato simplificado son siempre las mismas; en formato del club, una fila que un año no tiene
-//     sale "—" ese año (un rubro que el club renombró queda como dos filas: es lo que dice cada
-//     documento). Si un documento repite una etiqueta en la misma sección, se suman.
+//   - Filas: la unión de las de todos los ejercicios elegidos, en orden de aparición. En formato del club, una fila que un año
+//     no tiene sale "—" (un rubro renombrado queda como dos filas: es lo que dice cada documento).
 //   - Un ejercicio que es solo presupuesto: columna en amarillo y cursiva.
-//   - Los montos de cada ejercicio se convierten con SU tipo de cambio (nativeDisplayVal + yearMetaFor),
-//     igual que en la tabla de un año.
-//   - Paso 5b: tocar un rubro abre su gráfico (Chart.js) debajo de la fila; "M USD | % del total"; y
-//     "Presupuesto al lado del balance" (apagado por default), que abre cada año que tiene las dos
-//     fuentes en presupuesto | balance | desvío. Manda siempre el balance: es lo que pasó.
+//   - Cada ejercicio se convierte con SU tipo de cambio (nativeDisplayVal + yearMetaFor).
+//   - Tocar un rubro abre su gráfico debajo de la fila; "M USD | % del total"; y "Presupuesto al lado del balance" (apagado por
+//     default): presupuesto | balance | desvío en cada año con las dos fuentes. Manda siempre el balance: es lo que pasó.
 // ============================================================================
 
 // ============================================================================
-// VALORES AJUSTADOS POR INFLACIÓN (to-do 147, paso 11). Ver data/deflactores.js para el criterio y las
-// fuentes. `fac(y)` es el factor que lleva un monto del ejercicio que cierra en `y` a moneda del año
-// base: 1 con el toggle apagado, en una moneda sin serie (solo USD y EUR tienen), o para un ejercicio
-// posterior al año base (un presupuesto futuro no se ajusta). Todo lo de este archivo que convierte
-// un monto para mostrarlo lo multiplica por `fac` del año; un cociente (% del total, desvío
-// presupuesto vs. balance del MISMO año, salarios / ingresos) no cambia, porque el factor se cancela.
+// VALORES AJUSTADOS POR INFLACIÓN (criterio y fuentes: data/deflactores.js). `fac(y)` lleva un monto del ejercicio que cierra en
+// `y` a moneda del año base: 1 con el toggle apagado, en una moneda sin serie (solo USD y EUR tienen) o para un ejercicio posterior
+// al año base. Todo monto que se muestra se multiplica por `fac` de su año; un cociente (% del total, desvío del mismo año,
+// salarios / ingresos) no cambia, porque el factor se cancela.
 // ============================================================================
 const FIN_REAL = (function(){
   let prendido = false;
@@ -51,7 +41,7 @@ const FIN_REAL = (function(){
   function unidad(clubId){
     if(!activo()) return 'M ' + currentCurrency;
     const b = base();
-    const cal = esEjercicioCalendario(clubId, b); // (to-do 177) el formato del ejercicio del año base de ese club
+    const cal = esEjercicioCalendario(clubId, b); // el formato del ejercicio del año base de ese club
     return 'M ' + currentCurrency + ' ' + t('finanzas.real.of', 'de') + ' ' + (cal ? String(b) : (b - 1) + '/' + String(b).slice(2));
   }
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
@@ -68,9 +58,8 @@ const FIN_MULTI_PL = (function(){
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
-  // La fila `label` de una lista. Si el documento repite una etiqueta en la misma sección (Juventus
-  // 2002/03 tiene dos "- from others" en los resultados financieros), se suman: si no, la columna
-  // mostraría una sola y el total no cerraría contra la tabla de un año.
+  // La fila `label` de una lista. Si el documento repite una etiqueta en la misma sección, se suman: si no, la columna mostraría
+  // una sola y el total no cerraría contra la tabla de un año.
   function filaDe(lista, label){
     const iguales = (lista || []).filter(r => r.label === label);
     if(iguales.length <= 1) return iguales[0] || null;
@@ -82,7 +71,7 @@ const FIN_MULTI_PL = (function(){
     estado.years = years; estado.tableId = tableId;
     graficos.forEach(g => g.destroy()); graficos = [];
 
-    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
     const pct = estado.unidad === 'pct';
 
     const datos = years.map(y => {
@@ -124,7 +113,7 @@ const FIN_MULTI_PL = (function(){
     function resultadoDe(d, src){
       const i = totalDe(d, src, 'ingresos'), g = totalDe(d, src, 'gastos');
       if(i == null || g == null) return null;
-      return src === 'ov' ? i + g : i + g + extraDe(d);   // el presupuesto no tiene filas de abajo (Versión 60)
+      return src === 'ov' ? i + g : i + g + extraDe(d); // el presupuesto no tiene filas de abajo
     }
     function numero(d, src, row, key){
       if(!row || row.unknown || row.incluidoEn) return null;
@@ -232,8 +221,8 @@ const FIN_MULTI_PL = (function(){
     const ingHtml = seccion('ingresos', t('section.revenue', 'Ingresos'));
     const gasHtml = seccion('gastos', t('section.expenses', 'Gastos'));
 
-    // Filas de abajo (Intereses netos, Impuestos…): la unión; "Intereses netos" siempre, las demás si
-    // algún año tiene un valor distinto de cero (misma regla que la tabla de un año, Versiones 60 y 61).
+    // Filas de abajo (Intereses netos, Impuestos…): la unión; "Intereses netos" siempre, las demás si algún año tiene un valor
+    // distinto de cero (misma regla que la tabla de un año).
     const extraLabels = [];
     datos.forEach(d => (d.rep.extraRows || []).forEach(e => { if(!extraLabels.includes(e.label)) extraLabels.push(e.label); }));
     let extraHtml = '';
@@ -274,8 +263,7 @@ const FIN_MULTI_PL = (function(){
     });
     head += `<th class="pl-delta">Δ ${lab(primero.y)}→${lab(ultimo.y)}</th><th class="pl-spark">${t('pl.multi.trend', 'Tendencia')}</th></tr>`;
 
-    // Paso 12: una fila arriba que agrupa las columnas por gestión. Un "…" queda adentro del grupo si
-    // los dos vecinos son de la misma gestión (son años salteados del mismo presidente).
+    // Una fila arriba que agrupa las columnas por gestión. Un "…" queda adentro del grupo si los dos vecinos son de la misma gestión.
     let filaGest = '';
     if(window.FIN_GESTION){
       const grupos = [];
@@ -411,24 +399,19 @@ const FIN_MULTI_PL = (function(){
 })();
 window.FIN_MULTI_PL = FIN_MULTI_PL;
 
-// Nombre que usa js/finanzas-render.js desde el paso 5a.
+// Nombre que usa js/finanzas-render.js.
 function renderMultiPLTable(clubId, years, tableId){ FIN_MULTI_PL.render(clubId, years, tableId); }
 
 
 // ============================================================================
-// LOS KPIs DE ARRIBA EN MODO MULTI-AÑO (to-do 147, paso 6).
-//
-// renderFinanzasStatsGeneric() (js/finanzas-render.js) sigue armando los 5 cards con el ejercicio más
-// nuevo elegido, y con los totales de la tabla de un año: el número grande no cambia. Esto les agrega:
+// LOS KPIs DE ARRIBA EN MODO MULTI-AÑO. renderFinanzasStatsGeneric() (js/finanzas-render.js) sigue armando los cards con el
+// ejercicio más nuevo y los totales de la tabla de un año: el número grande no cambia. Esto les agrega:
 //   - de qué ejercicio es cada número ("Ingresos · 2024/25");
-//   - con más de un ejercicio elegido, la comparación contra el primero ("vs. 2020/21 +10%") y una
-//     sparkline con todos los elegidos. Ingresos y gastos en %; resultado y deuda neta en plata, porque
-//     pueden cambiar de signo y un % ahí no significa nada (mismo criterio que el desvío del paso 5b);
-//   - si el más nuevo es SOLO presupuesto, los cards van punteados con "Presupuesto", y la deuda neta
-//     en "—": un presupuesto no informa deuda.
-// Los totales por año salen igual que en la tabla multi-año (nativeReportFor + nativeDisplayVal con el
-// tipo de cambio de cada ejercicio), y la deuda de computeYearGeneric, con el mismo test de "no
-// desglosada" que el card de un año (deudaNoDesglosada).
+//   - con más de un ejercicio, la comparación contra el primero y una sparkline. Ingresos y gastos en %; resultado y deuda neta
+//     en plata, porque pueden cambiar de signo y un % ahí no significa nada;
+//   - si el más nuevo es SOLO presupuesto, cards punteados con "Presupuesto" y la deuda neta en "—".
+// Los totales por año salen igual que en la tabla multi-año, y la deuda con el mismo test que el card de un año
+// (deudaNoDesglosada).
 // ============================================================================
 const FIN_MULTI_KPIS = (function(){
   const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
@@ -470,7 +453,7 @@ const FIN_MULTI_KPIS = (function(){
   function render(clubId, years){
     const caja = document.getElementById('finanzasStats');
     if(!caja || !years.length) return;
-    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
     const datos = years.map(y => delAnio(clubId, y));
     const ultimo = datos[datos.length - 1];
     const multi = datos.length > 1;
@@ -528,23 +511,18 @@ window.FIN_MULTI_KPIS = FIN_MULTI_KPIS;
 
 
 // ============================================================================
-// LA TABLA DE DEUDA CON UNA COLUMNA POR EJERCICIO (to-do 147, paso 8).
-//
-// En la vista multi-año y más de un ejercicio elegido reemplaza en pantalla a la tabla de deuda de un año
-// (renderDebtBlockGeneric, que se sigue armando escondida). Mismas 4 filas: Salarios / Ingresos,
-// Deuda bruta, Caja, Deuda neta. Diferencias con la de un año, a propósito:
-//   - un ejercicio cuyo documento no desglosa deuda ni caja (deudaNoDesglosada) o que es solo
-//     presupuesto muestra "—", no "0.0": con varios años lado a lado, un cero en el medio se leería
-//     como "ese año no debía nada". La nota de abajo dice qué ejercicios son;
-//   - Δ: Salarios / Ingresos en puntos; deuda bruta y caja en %; deuda neta en plata (puede cambiar de
-//     signo, mismo criterio que el KPI).
+// LA TABLA DE DEUDA CON UNA COLUMNA POR EJERCICIO: en la vista multi-año con más de un ejercicio reemplaza en pantalla a la de
+// un año (renderDebtBlockGeneric, que se sigue armando escondida). Mismas 4 filas. Diferencias, a propósito:
+//   - un ejercicio que no desglosa deuda ni caja, o que es solo presupuesto, muestra "—" y no "0.0": con varios años lado a
+//     lado, un cero se leería como "ese año no debía nada". La nota de abajo dice qué ejercicios son;
+//   - Δ: Salarios / Ingresos en puntos; deuda bruta y caja en %; deuda neta en plata (puede cambiar de signo).
 // ============================================================================
 const FIN_MULTI_DEBT = (function(){
   const BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
 
   function render(clubId, years, tableId){
-    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
     const datos = years.map(y => {
       const c = computeYearGeneric(clubId, y);
       const meta = yearMetaFor(clubId, y);
@@ -613,17 +591,12 @@ window.FIN_MULTI_DEBT = FIN_MULTI_DEBT;
 
 
 // ============================================================================
-// EL GRÁFICO DE EVOLUCIÓN ARRIBA DE LA TABLA (to-do 147, paso 7).
-//
-// En la vista multi-año reemplaza a la sección "Gráficos" de abajo (que en este modo se esconde por CSS). Sigue a
-// los ejercicios elegidos y usa los mismos totales por año que los KPIs (FIN_MULTI_KPIS.delAnio), así
-// que gráfico, cards y tabla dicen lo mismo. Dos vistas:
+// EL GRÁFICO DE EVOLUCIÓN ARRIBA DE LA TABLA. En la vista multi-año reemplaza a la sección "Gráficos" de abajo (que se esconde
+// por CSS) y usa los mismos totales por año que los KPIs (FIN_MULTI_KPIS.delAnio): gráfico, cards y tabla dicen lo mismo.
 //   - "Totales": ingresos y gastos (líneas) y resultado neto (barras verdes o rojas).
-//   - "De qué vive el club": barras apiladas con los rubros de ingreso del formato simplificado, un
-//     ejercicio por barra. Reemplaza a la torta de un año, que no puede mostrar cómo cambia la mezcla.
-//     Siempre en formato simplificado: las etiquetas del club cambian de un año a otro y no se apilan.
-// Igual que en la tabla: tramo punteado donde la selección saltea años o una punta es presupuesto,
-// punto hueco en los presupuestos. Las franjas por gestión llegan con el paso 12.
+//   - "De qué vive el club": barras apiladas con los rubros de ingreso del formato simplificado, un ejercicio por barra. Siempre
+//     en formato simplificado: las etiquetas del club cambian de un año a otro y no se apilan.
+// Tramo punteado donde la selección saltea años o una punta es presupuesto; punto hueco en los presupuestos; una franja por gestión.
 // ============================================================================
 const FIN_MULTI_CHART = (function(){
   let inst = null, modo = 'tot', club = null;
@@ -638,7 +611,7 @@ const FIN_MULTI_CHART = (function(){
     card.hidden = false;
     if(inst){ inst.destroy(); inst = null; }
 
-    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
     const datos = years.map(y => FIN_MULTI_KPIS.delAnio(clubId, y));
     const unidad = FIN_REAL.unidad(clubId);
     const punteado = ctx => {
@@ -710,7 +683,7 @@ const FIN_MULTI_CHART = (function(){
         })) },
       };
     }
-    // Paso 12: una franja por gestión detrás de las barras y las líneas, con el apellido arriba si entra.
+    // Una franja por gestión detrás de las barras y las líneas, con el apellido arriba si entra.
     const franjas = [];
     if(window.FIN_GESTION){
       datos.forEach((d, i) => {
@@ -765,11 +738,10 @@ const FIN_MULTI_CHART = (function(){
 window.FIN_MULTI_CHART = FIN_MULTI_CHART;
 
 
-
 // ============================================================================
-// EL TOGGLE "Nominales | Ajustados por inflación" Y SU EXPLICACIÓN (paso 11). Solo en la vista
-// multi-año y con una moneda que tiene serie (USD, EUR). La franja verde dice con qué serie se
-// ajustó y da un ejemplo con el primer ejercicio elegido, para que "ajustado" no sea una caja negra.
+// EL TOGGLE "Nominales | Ajustados por inflación" Y SU EXPLICACIÓN: solo en la vista multi-año y con una moneda que tiene serie
+// (USD, EUR). La franja verde dice con qué serie se ajustó y da un ejemplo con el primer ejercicio elegido, para que "ajustado"
+// no sea una caja negra.
 // ============================================================================
 const FIN_REAL_UI = (function(){
   function t(k, es){ return (window.I18N && I18N.t) ? I18N.t(k, es) : es; }
@@ -785,7 +757,7 @@ const FIN_REAL_UI = (function(){
     });
     if(!ok || !FIN_REAL.activo()){ nota.hidden = true; return; }
     const s = FIN_REAL.serie(), base = FIN_REAL.base();
-    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    const lab = y => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2); // por ejercicio, no por club
     const a = years[0];
     const ej = Math.round(100 * FIN_REAL.fac(a));
     let txt = t('finanzas.real.note', 'Todo en {u}, ajustado con el {serie}: 100 M {cur} de {a} equivalen a {x} M de {b}. Los Δ% pasan a ser crecimiento real.')
