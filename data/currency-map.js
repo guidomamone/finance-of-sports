@@ -380,6 +380,7 @@ const FX_CLOSE = {
   'RUB@2021-12-31': { fx: 74.2926, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2021-12-31' }, // alta-club.mjs 2026-10-10 (tools/fx-reference/)
   'RUB@2022-12-31': { fx: 70.3375, source: 'market_close', label: 'Tipo oficial del Banco de Rusia al 2022-12-31' }, // tools/cargar.mjs 2026-10-10 (tools/fx-reference/)
   'RUB@2023-12-31': { fx: 89.6883, source: 'market_close', label: 'Tipo oficial del Banco de Rusia, última rueda hábil antes del cierre (2023-12-30, 2023-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-10 (tools/fx-reference/)
+  'RUB@2024-12-31': { fx: 101.6797, source: 'market_close', label: 'Tipo oficial del Banco de Rusia, última rueda hábil antes del cierre (2024-12-29, 2024-12-31 no es día hábil)' }, // tools/cargar.mjs 2026-10-10 (tools/fx-reference/)
 };
 
 // fxMetaFor(meta): resuelve el tipo de cambio de un ejercicio (o de un overlay
