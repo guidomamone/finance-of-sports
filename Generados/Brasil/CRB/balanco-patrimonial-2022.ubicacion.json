@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2022.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+ "mdSha1": "e92215dc81324503108af8ae9af08af04adb6d56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T00:01:26.690Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    50,
+    64
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstrações dos resultados exercícios findos de 31 de dezembro de 2022 e 2021 (em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2022",
+ "columna_anterior": "2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento solo contiene balance (b1, b2) y la demonstração do resultado (b3), sin notas explicativas que desglosen ingresos o gastos. Perímetro individual (único ente, sin mención de consolidación)."
+}

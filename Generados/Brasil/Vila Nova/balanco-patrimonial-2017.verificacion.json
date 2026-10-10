@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf",
  "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md",
- "generado": "2026-10-09T23:23:30.770Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:01:02.762Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2017,
  "escala": {
@@ -21,31 +21,74 @@
    "evidencia": "balanco-patrimonial-2017.md L77",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 105,
+   "etiqueta": "(sale) total TOTAL DAS DESPESAS",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 105,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L105 (39.541.429,69) es el total de los renglones de despesas (L98-L104, con la financiera 67.298,36): se contaba dos veces; 7.215.652,32 + 31.235.464,33 + 146.866,71 + 867.856,64 + 0 + 8.291,33 = 39.474.131,33; + 67.298,36 = 39.541.429,69",
+   "evidencia": "pág. 1 del visor, .md L83-L106",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf",
+   "campo": "fila",
+   "valor": "2.019,64",
+   "linea": 91,
+   "etiqueta": "Receitas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Receitas Financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receitas suman 37.956.311,55 = TOTAL DAS RECEITAS (L97) con las financeiras adentro",
+   "evidencia": "pág. 1 del visor, .md L83-L106",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf",
+   "campo": "fila",
+   "valor": "-67.298,36",
+   "linea": 100,
+   "etiqueta": "Despesas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Despesas Financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 37.954.291,91 - 39.474.131,33 + 2.019,64 - 67.298,36 = -1.585.118,14 = déficit impreso (L106)",
+   "evidencia": "pág. 1 del visor, .md L83-L106",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
- "cola": [
-  "cf5ecfd"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "37.954292 = 37.956312"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"TOTAL DAS DESPESAS\" 39.54143 cierra; además se suman 5 línea(s) fuera de ese total (39.474131)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 37.954292 - gastos 79.015561 ± financiero 0.069318 ± impuesto 0 no da el impreso -1.585118"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2016",
    "ok": true,
-   "detalle": "ingresos de 2016: 25.819457 en balanco-patrimonial-2016.pdf y 25.819457 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2016: 12.894474 en balanco-patrimonial-2016.pdf y 12.894474 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -53,19 +96,24 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: sale la fila \"L105\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): L105 (39.541.429,69) es el total de los renglones de despesas (L98-L104, con la financiera 67.298,36): se contaba dos veces; 7.215.652,32 + 31.235.464,33 + 146.866,71 + 867.856,64 + 0 + 8.291,33 = 39.474.131,33; + 67.298,36 = 39.541.429,69)",
+  "ajuste manual: fila \"Receitas Financeiras\" (financiero) 2.019,64, en lugar de \"Receitas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receitas suman 37.956.311,55 = TOTAL DAS RECEITAS (L97) con las financeiras adentro)",
+  "ajuste manual: fila \"Despesas Financeiras\" (financiero) -67.298,36, en lugar de \"Despesas Financeiras\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 37.954.291,91 - 39.474.131,33 + 2.019,64 - 67.298,36 = -1.585.118,14 = déficit impreso (L106))",
+  "la lectura base no cerraba; cerró con la lectura 5"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 37.954292,
-  "gastos": 79.015561,
-  "financiero": 0.069318,
+  "gastos": 39.474131,
+  "financiero": -0.065279,
   "impuesto": 0,
   "resultadoImpreso": -1.585118,
   "resultadoParaCargar": -1.585118,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -74,7 +122,7 @@
    "M": 3.342234,
    "pagina": 1,
    "linea": 83,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Escolinha de Futebol",
@@ -82,7 +130,7 @@
    "M": 0.110915,
    "pagina": 1,
    "linea": 84,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Doações/Patrocínios",
@@ -90,7 +138,7 @@
    "M": 2.280957,
    "pagina": 1,
    "linea": 85,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas CBF",
@@ -98,7 +146,7 @@
    "M": 5.539438,
    "pagina": 1,
    "linea": 86,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Publicidade",
@@ -106,7 +154,7 @@
    "M": 1.839,
    "pagina": 1,
    "linea": 87,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Sócio Tigrão",
@@ -114,7 +162,7 @@
    "M": 0.739465,
    "pagina": 1,
    "linea": 88,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Direitos Federativos Atletas",
@@ -122,7 +170,7 @@
    "M": 0.105638,
    "pagina": 1,
    "linea": 89,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Alugueis",
@@ -130,7 +178,7 @@
    "M": 0.086921,
    "pagina": 1,
    "linea": 90,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Federação Goiana",
@@ -138,7 +186,7 @@
    "M": 0.405,
    "pagina": 1,
    "linea": 92,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Contribuições Conselheiros",
@@ -146,7 +194,7 @@
    "M": 0.39385,
    "pagina": 1,
    "linea": 93,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Time mania",
@@ -154,7 +202,7 @@
    "M": 0.346337,
    "pagina": 1,
    "linea": 94,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Diversas",
@@ -162,7 +210,7 @@
    "M": 22.764537,
    "pagina": 1,
    "linea": 95,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Administrativas",
@@ -170,7 +218,7 @@
    "M": 7.215652,
    "pagina": 1,
    "linea": 98,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Depto Esportes",
@@ -178,7 +226,7 @@
    "M": 31.235464,
    "pagina": 1,
    "linea": 99,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Tributárias",
@@ -186,7 +234,7 @@
    "M": 0.146867,
    "pagina": 1,
    "linea": 101,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Serviços Terceiros",
@@ -194,7 +242,7 @@
    "M": 0.867857,
    "pagina": 1,
    "linea": 102,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Diversas",
@@ -202,15 +250,7 @@
    "M": 0.008291,
    "pagina": 1,
    "linea": 104,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "TOTAL DAS DESPESAS",
-   "lado": "gasto",
-   "M": 39.54143,
-   "pagina": 1,
-   "linea": 105,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -225,7 +265,7 @@
   },
   {
    "etiqueta": "Despesas Financeiras",
-   "M": 0.067298,
+   "M": -0.067298,
    "linea": 100
   }
  ],

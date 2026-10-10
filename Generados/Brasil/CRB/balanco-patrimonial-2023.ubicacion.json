@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+ "mdSha1": "9c0b77e57a7109b412d28a811a073381e82d46ea",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T00:02:02.831Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    20
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    50,
+    65
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Demonstrações dos resultados exercícios findos de 31 de dezembro de 2023 e 2022 (em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de una página con balance (b1, b2) y demonstração do resultado (b3) del Clube de Regatas Brasil; no hay notas que desglosen ingresos o gastos. Estado individual, en reais."
+}

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2015-b.md",
- "generado": "2026-10-09T23:23:29.498Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:19.816Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2015,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "76b62cb",
-  "0cc73f6",
-  "451bb83"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,8 +47,8 @@
   },
   {
    "nombre": "documento del año 2016",
-   "ok": false,
-   "detalle": "ingresos de 2015: 4.667066 en este documento y 9.400048 en balanco-2016.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2015: 4.667066 en este documento y 4.742034 en balanco-2016.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2014",

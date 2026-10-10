@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf",
  "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
- "generado": "2026-10-09T23:23:29.102Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:55.438Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -12,17 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d184b06",
-  "03019e3",
-  "1404a40",
-  "5a461da",
-  "8b31f1d",
-  "0ef9627",
-  "ddf4911",
-  "efd53a7",
-  "c2344da"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,7 +37,7 @@
   {
    "nombre": "documento del año 2025",
    "ok": false,
-   "detalle": "ingresos de 2024: 212.320997 en este documento y 226.755644 en balanco-financeiro-2025.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 212.320997 en este documento y 117.012006 en balanco-financeiro-2025.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
@@ -64,6 +54,8 @@
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b4 y b8 tienen las mismas filas (41) e importes (70); se carga solo b8, la de los estados auditados.",
   "duda de localizar que no afecta la carga: b9, b10 y b11 usan terminología de cooperativa (RATES, ato cooperativo), posible plantilla ajena; no son estado de resultados.",
+  "duda de extraer ya contestada para el club (perimetro, \"CUSTOS COM PESSOAL\"): aceptar, en balanco-financeiro-2024.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"DESPESAS ADMINISTRATIVAS\"): aceptar, en balanco-financeiro-2024.pdf",
   "duda de extraer que no afecta la carga: L325 incluye L330 (11.845.753) restando; el subtotal negativo es coherente pero raro."
  ],
  "reintentar": null,

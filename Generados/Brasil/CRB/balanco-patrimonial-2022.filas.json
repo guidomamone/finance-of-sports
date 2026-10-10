@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2022.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+ "mdSha1": "e92215dc81324503108af8ae9af08af04adb6d56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T00:01:59.350Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Demonstrações dos resultados exercícios findos de 31 de dezembro de 2022 e 2021 (em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 52,
+   "etiqueta": "Receita operacional líquida",
+   "actual": "28.583.332",
+   "anterior": "23.419.350",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 53,
+   "etiqueta": "Custo das atividades sociais e esportivas",
+   "actual": "(6.974.826)",
+   "anterior": "(6.628.417)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 54,
+   "etiqueta": "Resultado bruto",
+   "actual": "21.608.506",
+   "anterior": "16.790.933",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 56,
+   "etiqueta": "Despesas com pessoal",
+   "actual": "(18.425.275)",
+   "anterior": "(13.029.931)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 57,
+   "etiqueta": "Despesas gerais e administrativas",
+   "actual": "(3.217.749)",
+   "anterior": "(2.504.800)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 58,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(70.314)",
+   "anterior": "(68.700)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 59,
+   "etiqueta": "Resultado operacional antes do resultado financeiro",
+   "actual": "(104.832)",
+   "anterior": "1.187.502",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 61,
+   "etiqueta": "Resultado financeiro",
+   "actual": "129.574",
+   "anterior": "27.842",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 62,
+   "etiqueta": "Receitas financeiras",
+   "actual": "147.148",
+   "anterior": "50.497",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 63,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(17.574)",
+   "anterior": "(22.655)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 64,
+   "etiqueta": "Superávit (déficit) do exercício",
+   "actual": "24.743",
+   "anterior": "1.215.344",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 64,
+  "actual": "24.743",
+  "anterior": "1.215.344"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados en reales (unidades). No hay notas de desglose. No se imprimen totales de ingresos ni de gastos; el ingreso operativo es una sola línea (L52)."
+}

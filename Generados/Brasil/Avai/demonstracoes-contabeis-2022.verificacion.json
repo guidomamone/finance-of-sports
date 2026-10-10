@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.pdf",
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2022.md",
- "generado": "2026-10-09T23:23:27.793Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:57:24.691Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "eec91fc",
-  "f95cecf",
-  "96d6071",
-  "17bc06c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,7 +42,7 @@
   {
    "nombre": "documento del año 2021",
    "ok": false,
-   "detalle": "ingresos de 2021: 75.882055 en demonstracoes-contabeis-2021.pdf y 24.202 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2021: 25.275753 en demonstracoes-contabeis-2021.pdf y 24.202 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -58,7 +53,8 @@
  "notas": [
   "la nota de \"Receita líquida das atividades\" no suma el renglón (91.908 contra 91.954, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 3",
-  "duda de localizar que no afecta la carga: b1 (pág. 15, probablemente en el informe de gestión) tiene las mismas 10 filas que b3, el estado formal con columna Nota."
+  "duda de localizar que no afecta la carga: b1 (pág. 15, probablemente en el informe de gestión) tiene las mismas 10 filas que b3, el estado formal con columna Nota.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Superávit / (Déficit) do exercício\"): corregir sí, en demonstracoes-contabeis-2022.pdf"
  ],
  "reintentar": [
   {

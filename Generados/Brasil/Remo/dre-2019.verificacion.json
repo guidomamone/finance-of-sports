@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
  "md": "Clubes/Brasil/Remo/dre-2019.md",
- "generado": "2026-10-09T23:23:30.173Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:55:37.544Z",
+ "estado": "ok",
  "clubId": null,
- "year": null,
+ "year": 2019,
  "escala": {
   "valor": "no se sabe",
   "escalon": 0,
@@ -21,29 +21,76 @@
    "evidencia": "dre-2019.md L11",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 13,
+   "etiqueta": "(sale) subtotal (+) Receita Bruta Operacional",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 13,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L13 (subtotal 17.903.353,17) repite L14 (Receita De Atividades Esportivas, único componente) y L15 (Receita Líquida) repite otra vez: el ingreso es uno solo, 17.903.353,17; se carga L14",
+   "evidencia": "pág. 1 del visor, .md L13-L16",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 15,
+   "etiqueta": "(sale) total (=) Receita Líquida",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 15,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): ídem: L15 Receita Líquida 17.903.353,17 es el mismo ingreso de L14 (sin deducciones)",
+   "evidencia": "pág. 1 del visor, .md L13-L16",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
+   "campo": "fila",
+   "valor": "20.686.217,40",
+   "linea": 17,
+   "etiqueta": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 17,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L18, 225.425,57) está incluido en Despesas Operacionais (L17, 20.911.642,97): 17.903.353,17 - 20.911.642,97 = -3.008.289,80 = resultado impreso (L19-L21). Se separa: 20.911.642,97 - 225.425,57 = 20.686.217,40 de gastos operativos + 225.425,57 de costo financiero",
+   "evidencia": "pág. 1 del visor, .md L13-L21",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "73d5f00",
-  "e080e14",
-  "4cd0761",
-  "61b1236"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"(+) Receita Bruta Operacional\" 17.903353 cierra; además se suman 2 línea(s) fuera de ese total (35.806706)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "20.911643 = 20.911643"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 53.71006 - gastos 20.911643 ± financiero 0.225426 ± impuesto 0 no da el impreso -3.00829"
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": null,
+   "detalle": "no se puede comparar: relatorio-auditoria-2020.pdf no trae la columna del año anterior"
   },
   {
    "nombre": "año anterior cargado",
@@ -51,62 +98,52 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: sale la fila \"L13\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L13 (subtotal 17.903.353,17) repite L14 (Receita De Atividades Esportivas, único componente) y L15 (Receita Líquida) repite otra vez: el ingreso es uno solo, 17.903.353,17; se carga L14)",
+  "ajuste manual: sale la fila \"L15\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): ídem: L15 Receita Líquida 17.903.353,17 es el mismo ingreso de L14 (sin deducciones))",
+  "ajuste manual: fila \"(-) Despesas Operacionais (sin Resultado Financeiro)\" (gasto) 20.686.217,40, en lugar de la fila de L17 (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L18, 225.425,57) está incluido en Despesas Operacionais (L17, 20.911.642,97): 17.903.353,17 - 20.911.642,97 = -3.008.289,80 = resultado impreso (L19-L21). Se separa: 20.911.642,97 - 225.425,57 = 20.686.217,40 de gastos operativos + 225.425,57 de costo financiero)",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en dre-2019.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 53.71006,
-  "gastos": 20.911643,
+  "ingresos": 17.903353,
+  "gastos": 20.686217,
   "financiero": 0.225426,
   "impuesto": 0,
   "resultadoImpreso": -3.00829,
   "resultadoParaCargar": -3.00829,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
-  {
-   "etiqueta": "(+) Receita Bruta Operacional",
-   "lado": "ingreso",
-   "M": 17.903353,
-   "pagina": 1,
-   "linea": 13,
-   "origen": "estado"
-  },
   {
    "etiqueta": "Receita De Atividades Esportivas",
    "lado": "ingreso",
    "M": 17.903353,
    "pagina": 1,
    "linea": 14,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "(=) Receita Líquida",
-   "lado": "ingreso",
-   "M": 17.903353,
-   "pagina": 1,
-   "linea": 15,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(-) Despesas Operacionais",
+   "etiqueta": "(-) Despesas Operacionais (sin Resultado Financeiro)",
    "lado": "gasto",
-   "M": 20.911643,
+   "M": 20.686217,
    "pagina": 1,
    "linea": 17,
-   "origen": "estado"
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Resultado Financeiro",
-   "M": 0.225426,
+   "M": -0.225426,
    "linea": 18
   }
  ],

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
  "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
- "generado": "2026-10-09T23:23:30.288Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:57:40.887Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -11,21 +11,84 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "a2348ad",
-  "bad94f1",
-  "5ad025b",
-  "aafedff",
-  "2409c5b",
-  "fd446e9",
-  "b3245b3"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 191,
+   "etiqueta": "(sale) subtotal (+) Receita Bruta Operacional",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 191,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L191 (12.351.668,08) es el subtotal de L192 (Receita De Atividades Esportivas, único componente, mismo importe): se cargaba dos veces; el ingreso es 12.351.668,08",
+   "evidencia": "pág. 8 del visor, .md L191-L204",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 193,
+   "etiqueta": "(sale) subtotal (-) Custos das Atividades Esportivas",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 193,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L193 (7.548.640,50) es el subtotal de L194 (mismo importe, único componente): se cargaba dos veces",
+   "evidencia": "pág. 8 del visor, .md L191-L204",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 200,
+   "etiqueta": "(sale) subtotal (-) Despesas c/ depreciação/amortização",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 200,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L200 ((1.923.969,31)) es el subtotal de L201 (mismo importe, único componente): se cargaba dos veces; se carga L201 como gasto (depreciación)",
+   "evidencia": "pág. 8 del visor, .md L191-L204",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 198,
+   "etiqueta": "(sale) detalle Despesas Operacionais",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 198,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L198 (4.555.340,59) es parte del subtotal L197 (4.943.560,99); el subtotal se carga entero en una fila, sin el Resultado Financeiro (L199): ver el ajuste de L197",
+   "evidencia": "pág. 8 del visor, .md L191-L204",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+   "campo": "fila",
+   "valor": "4.749.468,16",
+   "linea": 197,
+   "etiqueta": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 197,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L199, 194.092,83) está incluido en Despesas Operacionais (L197, 4.943.560,99): 4.803.027,58 - 4.943.560,99 - 1.923.969,31 = -2.064.502,72 = resultado impreso (L202-L204), sin restar el financiero aparte. Se separa: 4.943.560,99 - 194.092,83 = 4.749.468,16 de gastos operativos + 194.092,83 de costo financiero. Ojo: los hijos impresos (4.555.340,59 + 194.092,83 = 4.749.433,42) no suman el subtotal: faltan 194.127,57 sin renglón impreso",
+   "evidencia": "pág. 8 del visor, .md L191-L204",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"(+) Receita Bruta Operacional\" 12.351668 cierra; además se suman 1 línea(s) fuera de ese total (12.351668)"
+   "detalle": "12.351668 = 12.351668"
   },
   {
    "nombre": "total de gastos",
@@ -34,13 +97,18 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 24.703336 - gastos 28.444121 ± financiero 0.194093 ± impuesto 0 no da el impreso -2.064503"
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
   },
   {
    "nombre": "documento del año 2021",
-   "ok": false,
-   "detalle": "ingresos de 2020: 24.703336 en este documento y 12.352668 en demonstracoes-contabeis-2021.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2020: 12.351668 en este documento y 12.352668 en demonstracoes-contabeis-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
   },
   {
    "nombre": "año anterior cargado",
@@ -48,43 +116,34 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: sale la fila \"L191\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L191 (12.351.668,08) es el subtotal de L192 (Receita De Atividades Esportivas, único componente, mismo importe): se cargaba dos veces; el ingreso es 12.351.668,08)",
+  "ajuste manual: sale la fila \"L193\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L193 (7.548.640,50) es el subtotal de L194 (mismo importe, único componente): se cargaba dos veces)",
+  "ajuste manual: sale la fila \"L200\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L200 ((1.923.969,31)) es el subtotal de L201 (mismo importe, único componente): se cargaba dos veces; se carga L201 como gasto (depreciación))",
+  "ajuste manual: sale la fila \"L198\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L198 (4.555.340,59) es parte del subtotal L197 (4.943.560,99); el subtotal se carga entero en una fila, sin el Resultado Financeiro (L199): ver el ajuste de L197)",
+  "ajuste manual: fila \"(-) Despesas Operacionais (sin Resultado Financeiro)\" (gasto) 4.749.468,16, en lugar de la fila de L197 (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L199, 194.092,83) está incluido en Despesas Operacionais (L197, 4.943.560,99): 4.803.027,58 - 4.943.560,99 - 1.923.969,31 = -2.064.502,72 = resultado impreso (L202-L204), sin restar el financiero aparte. Se separa: 4.943.560,99 - 194.092,83 = 4.749.468,16 de gastos operativos + 194.092,83 de costo financiero. Ojo: los hijos impresos (4.555.340,59 + 194.092,83 = 4.749.433,42) no suman el subtotal: faltan 194.127,57 sin renglón impreso)",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-auditoria-2020.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 24.703336,
-  "gastos": 28.444121,
+  "ingresos": 12.351668,
+  "gastos": 14.222078,
   "financiero": 0.194093,
   "impuesto": 0,
   "resultadoImpreso": -2.064503,
   "resultadoParaCargar": -2.064503,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
-  {
-   "etiqueta": "(+) Receita Bruta Operacional",
-   "lado": "ingreso",
-   "M": 12.351668,
-   "pagina": 8,
-   "linea": 191,
-   "origen": "estado"
-  },
   {
    "etiqueta": "Receita De Atividades Esportivas",
    "lado": "ingreso",
    "M": 12.351668,
    "pagina": 8,
    "linea": 192,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(-) Custos das Atividades Esportivas",
-   "lado": "gasto",
-   "M": 7.54864,
-   "pagina": 8,
-   "linea": 193,
    "origen": "estado"
   },
   {
@@ -96,46 +155,30 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "(-) Despesas Operacionais",
-   "lado": "gasto",
-   "M": 4.943561,
-   "pagina": 8,
-   "linea": 197,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Despesas Operacionais",
-   "lado": "gasto",
-   "M": 4.555341,
-   "pagina": 8,
-   "linea": 198,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(-) Despesas c/ drepreciação/amortização",
-   "lado": "gasto",
-   "M": 1.923969,
-   "pagina": 8,
-   "linea": 200,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Despesas c/ drepreciação/amortização",
    "lado": "gasto",
    "M": 1.923969,
    "pagina": 8,
    "linea": 201,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas Operacionais (sin Resultado Financeiro)",
+   "lado": "gasto",
+   "M": 4.749468,
+   "pagina": 8,
+   "linea": 197,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Resultado Financeiro",
-   "M": 0.194093,
+   "M": -0.194093,
    "linea": 199
   }
  ],

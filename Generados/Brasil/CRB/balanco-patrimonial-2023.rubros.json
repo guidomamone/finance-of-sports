@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+  "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf",
+  "club": "crb-br",
+  "year": 2023,
+  "generatedAt": "2026-10-10T00:02:35.293Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        45.563569
+      ],
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Custo das atividades sociais e esportivas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8.358054
+      ],
+      "glosa": "Costos de las actividades sociales y deportivas"
+    },
+    {
+      "label": "Despesas com pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        27.068659
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.038184
+      ],
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.050353
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

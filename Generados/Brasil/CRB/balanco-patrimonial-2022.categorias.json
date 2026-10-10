@@ -1,0 +1,81 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+ "club": "crb-br",
+ "year": 2022,
+ "generatedAt": "2026-10-10T00:03:49.561Z",
+ "rubrosHuella": "4686057d4e85e77c8e4fba5530a32e175178313e",
+ "jevHuella": "a8f3582c3bba83b1ce5037addd8f241d4a026771",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos operativos netos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costos de las actividades sociales y deportivas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 1,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 2,
+   "confCache": 0.5,
+   "motivo": "Despesas com pessoal separada de gerais e administrativas; ambigua entre plantel y administración",
+   "jev": "wages_squad",
+   "jevConf": 0.75,
+   "desdeCache": true,
+   "categoria": "wages_squad",
+   "confianza": 0.5
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos generales y administrativos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos tributarios",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

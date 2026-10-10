@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+ "mdSha1": "9c0b77e57a7109b412d28a811a073381e82d46ea",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-10T00:02:35.215Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L48: Demonstrações dos resultados exercícios findos de 31 de dezembro de 2023 e 2022 (em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 52,
+   "etiqueta": "Receita operacional líquida",
+   "actual": "45.563.569",
+   "anterior": "28.583.332",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 53,
+   "etiqueta": "Custo das atividades sociais e esportivas",
+   "actual": "(8.358.054)",
+   "anterior": "(6.974.826)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 54,
+   "etiqueta": "Resultado bruto",
+   "actual": "37.205.516",
+   "anterior": "21.608.506",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 56,
+   "etiqueta": "Despesas com pessoal",
+   "actual": "(27.068.659)",
+   "anterior": "(18.425.275)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 57,
+   "etiqueta": "Despesas gerais e administrativas",
+   "actual": "(5.038.184)",
+   "anterior": "(3.217.749)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 58,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(50.353)",
+   "anterior": "(70.314)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 59,
+   "etiqueta": "Resultado operacional antes do resultado financeiro",
+   "actual": "5.048.320",
+   "anterior": "(104.832)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 61,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(252.817)",
+   "anterior": "129.574",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 62,
+   "etiqueta": "Receitas financeiras",
+   "actual": "131.346",
+   "anterior": "147.148",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 63,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(384.163)",
+   "anterior": "(17.574)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 65,
+   "etiqueta": "Superávit (déficit) do exercício",
+   "actual": "4.795.503",
+   "anterior": "24.743",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 65,
+  "actual": "4.795.503",
+  "anterior": "24.743"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados en reais (unidades). No se imprimen totales de ingresos ni de gastos. Resultado bruto 2023 impreso 37.205.516 vs suma 37.205.515: diferencia de 1 por redondeo. No hay notas de desglose."
+}

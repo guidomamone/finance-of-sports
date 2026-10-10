@@ -7,7 +7,7 @@
 //   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -129,6 +129,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"novorizontino-br", revenue:5.75, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2022",
         mix:[["Comercial / Sponsors",0.584],["Estadio",0.147],["Televisión",2.291],["Premios por competencias",0.114],["Venta de Jugadores",2.442],["Otros ingresos",0.173]] },
+      { id:"crb-br", revenue:5.478, reportType:"official_balance_sheet",
+        sourceId:"crb-br-balanco-patrimonial-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.478]] },
       { id:"criciuma-br", revenue:5.232, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstracoes-financeiras-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.226],["Otros ingresos",0.006]],

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
  "md": "Clubes/Brasil/Remo/dre-2024.md",
- "generado": "2026-10-09T23:23:30.541Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:57.372Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -11,18 +11,54 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "5b7a418",
-  "4a54fc6",
-  "5248d9b",
-  "b58a915"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 11,
+   "etiqueta": "(sale) total Receita Operacional Líquida",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 11,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L11 Receita Operacional Líquida 38.291.717 repite L10 (Bruta, sin deducciones) y L12 Resultado Operacional Bruto: el ingreso es uno solo, 38.291.717, y se contaba dos veces",
+   "evidencia": "pág. 1 del visor, .md L10-L12",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+   "campo": "fila",
+   "valor": "26.177",
+   "linea": 16,
+   "etiqueta": "Receitas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Receitas Financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la extracción sumó receitas y despesas financeiras con el mismo signo (0,934581). Receita financeira es positiva: -12.124.901 + 26.177 - 908.404 = -13.007.128 (L18)",
+   "evidencia": "pág. 1 del visor, .md L15-L18",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2024.pdf",
+   "campo": "fila",
+   "valor": "-908.404",
+   "linea": 17,
+   "etiqueta": "Despesas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Despesas Financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): costo financiero, resta: -12.124.901 + 26.177 - 908.404 = -13.007.128 (L18)",
+   "evidencia": "pág. 1 del visor, .md L15-L18",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"Receita Operacional Bruta\" 38.291717 cierra; además se suman 1 línea(s) fuera de ese total (38.291717)"
+   "detalle": "38.291717 = 38.291717"
   },
   {
    "nombre": "total de gastos",
@@ -31,8 +67,8 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 76.583434 - gastos 50.416619 ± financiero 0.934581 ± impuesto 0 no da el impreso -13.007128"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2025",
@@ -50,19 +86,23 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: sale la fila \"L11\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L11 Receita Operacional Líquida 38.291.717 repite L10 (Bruta, sin deducciones) y L12 Resultado Operacional Bruto: el ingreso es uno solo, 38.291.717, y se contaba dos veces)",
+  "ajuste manual: fila \"Receitas Financeiras\" (financiero) 26.177, en lugar de \"Receitas Financeiras\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): la extracción sumó receitas y despesas financeiras con el mismo signo (0,934581). Receita financeira es positiva: -12.124.901 + 26.177 - 908.404 = -13.007.128 (L18))",
+  "ajuste manual: fila \"Despesas Financeiras\" (financiero) -908.404, en lugar de \"Despesas Financeiras\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): costo financiero, resta: -12.124.901 + 26.177 - 908.404 = -13.007.128 (L18))"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 76.583434,
+  "ingresos": 38.291717,
   "gastos": 50.416619,
-  "financiero": 0.934581,
+  "financiero": -0.882227,
   "impuesto": 0,
   "resultadoImpreso": -13.007128,
   "resultadoParaCargar": -13.007128,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -71,14 +111,6 @@
    "M": 38.291717,
    "pagina": 1,
    "linea": 10,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Receita Operacional Líquida",
-   "lado": "ingreso",
-   "M": 38.291717,
-   "pagina": 1,
-   "linea": 11,
    "origen": "estado"
   },
   {
@@ -110,7 +142,7 @@
   },
   {
    "etiqueta": "Despesas Financeiras",
-   "M": 0.908404,
+   "M": -0.908404,
    "linea": 17
   }
  ],

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
- "generado": "2026-10-09T23:23:30.997Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:01:56.604Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2ed84bd",
-  "28834aa",
-  "569f147"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,8 +36,8 @@
   },
   {
    "nombre": "documento del año 2024",
-   "ok": false,
-   "detalle": "ingresos de 2023: 29.345546 en este documento y 30.185251 en demonstrativo-financeiro-2024.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2023: 29.345546 en este documento y 29.345546 en demonstrativo-financeiro-2024.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2022",
@@ -59,6 +55,7 @@
   "la nota de \"(-) CUSTOS GERAIS\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"(-) PROVISÕES E CONTIGÊNCIAS\"): aceptar, en demonstrativo-financeiro-2023.pdf",
   "duda de extraer que no afecta la carga: El bloque b53 no trae título de nota, pero su TOTAL (L919) coincide con L125 en ambos años."
  ],
  "reintentar": null,

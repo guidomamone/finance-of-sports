@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.pdf",
  "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.md",
- "generado": "2026-10-09T23:23:29.909Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:22.679Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -23,13 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "2936edb",
-  "7a724e4",
-  "a754c41",
-  "5bd1d97",
-  "db86b03"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,8 +47,8 @@
   },
   {
    "nombre": "documento del año 2025",
-   "ok": false,
-   "detalle": "ingresos de 2024: 31.503023 en este documento y 34.584055 en demonstracoes-financeiras-2025.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2024: 31.503023 en este documento y 31.503023 en demonstracoes-financeiras-2025.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",

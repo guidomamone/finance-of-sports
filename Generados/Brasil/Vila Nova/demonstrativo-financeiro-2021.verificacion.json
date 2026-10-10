@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md",
- "generado": "2026-10-09T23:23:30.857Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:01:55.653Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2021,
  "escala": {
@@ -23,12 +23,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "1882301",
-  "a76ffa2",
-  "f695a6e",
-  "24f7229"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,8 +47,8 @@
   },
   {
    "nombre": "documento del año 2022",
-   "ok": false,
-   "detalle": "ingresos de 2021: 22.60414 en este documento y 27.137479 en demonstrativo-financeiro-2022.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2021: 22.60414 en este documento y 22.60414 en demonstrativo-financeiro-2022.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -65,6 +60,7 @@
   "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) DESPESAS COM VENDAS EM GERAL\" no suma el renglón (6.279929 contra 6.188497, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"(-) DESPESAS COM VENDAS EM GERAL\"): aceptar, en demonstrativo-financeiro-2021.pdf",
   "duda de extraer que no afecta la carga: Estado L270 y nota 34 L1086 difieren en 60,00; el resultado financiero del estado (5.972.119,11) es consistente con -657.771,38.",
   "duda de extraer que no afecta la carga: El título de la nota no aparece en la transcripción (L979-L980); el total 2021 coincide con L261 aunque el 2020 (1.124.530,95) difiere del estado (1.134.530,95)."
  ],

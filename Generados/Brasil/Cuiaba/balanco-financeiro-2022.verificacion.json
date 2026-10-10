@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf",
  "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md",
- "generado": "2026-10-09T23:23:28.850Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:54.276Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -12,14 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "1bb291e",
-  "961f05b",
-  "2291a46",
-  "43d017f",
-  "491a874",
-  "66afc23"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -270,6 +263,10 @@
   {
    "linea": 90,
    "numero": "1.276.842"
+  },
+  {
+   "linea": 91,
+   "numero": "3.017.469"
   },
   {
    "linea": 93,

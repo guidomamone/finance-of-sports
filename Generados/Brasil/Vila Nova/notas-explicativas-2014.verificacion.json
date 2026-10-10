@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
  "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
- "generado": "2026-10-09T23:23:30.659Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:01:01.129Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2014,
  "escala": {
@@ -21,26 +21,89 @@
    "evidencia": "notas-explicativas-2014.md L72",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "1.890.000,00",
+   "linea": 81,
+   "etiqueta": "Receitas CBF",
+   "lado": "ingreso",
+   "reemplaza": "Receitas CBF",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "3.268.187,41",
+   "linea": 93,
+   "etiqueta": "Despesas Depto Esportes",
+   "lado": "gasto",
+   "reemplaza": "Despesas Depto Esportes",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "126.870,00",
+   "linea": 79,
+   "etiqueta": "Receitas Escolinha de Futebol",
+   "lado": "ingreso",
+   "reemplaza": "Receitas de Eventos",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "1.461,44",
+   "linea": 83,
+   "etiqueta": "Receitas Sócio Tigrão",
+   "lado": "ingreso",
+   "reemplaza": "Receitas Sócio Torcedor",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "78.862,10",
+   "linea": 88,
+   "etiqueta": "Receitas Timemania",
+   "lado": "ingreso",
+   "reemplaza": "Receitas Sindicatos",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
- "cola": [
-  "e471da0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 6.106236 y el total impreso dice 6.116236"
+   "ok": true,
+   "detalle": "6.116236 = 6.116236"
   },
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "6.488938 = 6.493155"
+   "detalle": "6.488968 = 6.493155"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)"
+   "detalle": "cierra (financiero e impuesto invertidos)"
   },
   {
    "nombre": "documento del año 2015",
@@ -54,22 +117,25 @@
   }
  ],
  "notas": [
-  "línea 81: 1.880.000,00 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (189000000) el resultado daría 186.741485 y no cierra)",
-  "línea 82: 288.754,80 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (28975480) el resultado daría 28.30821 y no cierra)",
-  "línea 93: 3.268.157,41 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (326818741) el resultado daría -323.929099 y no cierra)"
+  "ajuste manual: fila \"Receitas CBF\" (ingreso) 1.890.000,00, en lugar de \"Receitas CBF\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71)",
+  "ajuste manual: fila \"Despesas Depto Esportes\" (gasto) 3.268.187,41, en lugar de \"Despesas Depto Esportes\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos))",
+  "ajuste manual: fila \"Receitas Escolinha de Futebol\" (ingreso) 126.870,00, en lugar de \"Receitas de Eventos\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00))",
+  "ajuste manual: fila \"Receitas Sócio Tigrão\" (ingreso) 1.461,44, en lugar de \"Receitas Sócio Torcedor\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44))",
+  "ajuste manual: fila \"Receitas Timemania\" (ingreso) 78.862,10, en lugar de \"Receitas Sindicatos\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10))",
+  "línea 82: 288.754,80 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (28975480) el resultado daría 28.309806 y no cierra)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 6.106236,
-  "gastos": 6.488938,
+  "ingresos": 6.116236,
+  "gastos": 6.488968,
   "financiero": 0.004187,
   "impuesto": 0,
   "resultadoImpreso": -0.376919,
   "resultadoParaCargar": -0.376919,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
   {
@@ -81,14 +147,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Receitas de Eventos",
-   "lado": "ingreso",
-   "M": 0.12687,
-   "pagina": 1,
-   "linea": 79,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Receitas Doações/Patrocínios",
    "lado": "ingreso",
    "M": 0.630388,
@@ -97,27 +155,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Receitas CBF",
-   "lado": "ingreso",
-   "M": 1.88,
-   "pagina": 1,
-   "linea": 81,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Receitas Publicidade",
    "lado": "ingreso",
    "M": 0.288755,
    "pagina": 1,
    "linea": 82,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Receitas Sócio Torcedor",
-   "lado": "ingreso",
-   "M": 0.001461,
-   "pagina": 1,
-   "linea": 83,
    "origen": "estado"
   },
   {
@@ -153,14 +195,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Receitas Sindicatos",
-   "lado": "ingreso",
-   "M": 0.078862,
-   "pagina": 1,
-   "linea": 88,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Receitas Diversas",
    "lado": "ingreso",
    "M": 0.038241,
@@ -169,19 +203,43 @@
    "origen": "estado"
   },
   {
+   "etiqueta": "Receitas CBF",
+   "lado": "ingreso",
+   "M": 1.89,
+   "pagina": 1,
+   "linea": 81,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas Escolinha de Futebol",
+   "lado": "ingreso",
+   "M": 0.12687,
+   "pagina": 1,
+   "linea": 79,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas Sócio Tigrão",
+   "lado": "ingreso",
+   "M": 0.001461,
+   "pagina": 1,
+   "linea": 83,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Receitas Timemania",
+   "lado": "ingreso",
+   "M": 0.078862,
+   "pagina": 1,
+   "linea": 88,
+   "origen": "ajuste manual"
+  },
+  {
    "etiqueta": "Despesas Administrativas",
    "lado": "gasto",
    "M": 2.899833,
    "pagina": 1,
    "linea": 92,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Despesas Depto Esportes",
-   "lado": "gasto",
-   "M": 3.268157,
-   "pagina": 1,
-   "linea": 93,
    "origen": "estado"
   },
   {
@@ -207,32 +265,32 @@
    "pagina": 1,
    "linea": 97,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas Depto Esportes",
+   "lado": "gasto",
+   "M": 3.268187,
+   "pagina": 1,
+   "linea": 93,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Despesas Financeiras",
-   "M": 0.004187,
+   "M": -0.004187,
    "linea": 94
   }
  ],
  "impuesto": [],
  "confirmadosPorSumas": [
   {
-   "linea": 81,
-   "numero": "1.880.000,00"
-  },
-  {
    "linea": 82,
    "numero": "288.754,80"
-  },
-  {
-   "linea": 93,
-   "numero": "3.268.157,41"
   }
  ]
 }

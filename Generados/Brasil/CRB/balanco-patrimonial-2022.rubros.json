@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+  "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2022.pdf",
+  "club": "crb-br",
+  "year": 2022,
+  "generatedAt": "2026-10-10T00:02:35.246Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        28.583332
+      ],
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Custo das atividades sociais e esportivas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        6.974826
+      ],
+      "glosa": "Costos de las actividades sociales y deportivas"
+    },
+    {
+      "label": "Despesas com pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        18.425275
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.217749
+      ],
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.070314
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

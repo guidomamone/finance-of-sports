@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
  "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
- "generado": "2026-10-09T23:23:30.419Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:58.148Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -11,28 +11,96 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "46e5dba",
-  "bbeb34f",
-  "059b4dd",
-  "11add63"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 281,
+   "etiqueta": "(sale) total Receita Bruta Operacional y su nota 13",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 281,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L281 (21.545.016) es el total de los renglones de ingreso impresos debajo (L282-L298); la nota 13 (L982-L985) lo reparte en otras categorías (Operacionais/Ordinárias) y se contaba dos veces junto a los 17 renglones. Se cargan los renglones del estado",
+   "evidencia": "pág. 11 del visor, .md L281-L299",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 299,
+   "etiqueta": "(sale) subtotal Receita Líquida",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 299,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L299 Receita Líquida 21.545.016 repite el total de L281 (sin deducciones): se contaba otra vez",
+   "evidencia": "pág. 11 del visor, .md L281-L299",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+   "campo": "fila",
+   "valor": "198.800",
+   "linea": 281,
+   "etiqueta": "Diferencia en el documento: total Receita Bruta Operacional vs sus renglones",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el total impreso L281/L299 es 21.545.016 pero los renglones L282-L298 suman 21.346.216 (17 renglones, incluidas las Receitas Financeiras 14.197); falta 198.800 que el documento no abre. Sin esa diferencia el resultado no cierra: 21.545.016 - 29.103.327 - 406.410 = -7.964.721 (L337-L338). La versión anterior descartada sí sumaba (patrocinio 5.311.429 y demais 906.122, total 20.328.785); en la final sube el total en 1.216.231 y los renglones en 1.017.429",
+   "evidencia": "pág. 11 del visor, .md L281-L338",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+   "campo": "fila",
+   "valor": "14.197",
+   "linea": 298,
+   "etiqueta": "Receitas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Receitas Financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): lo cuenta el total de L281; con el signo bien el resultado cierra",
+   "evidencia": "pág. 11 del visor, .md L281-L338",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+   "campo": "fila",
+   "valor": "-406.410",
+   "linea": 337,
+   "etiqueta": "Despesas financeiras",
+   "lado": "financiero",
+   "reemplaza": "Despesas financeiras",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): -7.558.310 - 406.410 = -7.964.720 (impreso -7.964.721, L338)",
+   "evidencia": "pág. 11 del visor, .md L281-L338",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"Receita Bruta Operacional\" 21.545016 cierra; además se suman 17 línea(s) fuera de ese total (42.877035)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 64.422051 - gastos 29.103327 ± financiero 0.420607 ± impuesto 0 no da el impreso -7.964721"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2023",
@@ -51,6 +119,12 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"L281\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L281 (21.545.016) es el total de los renglones de ingreso impresos debajo (L282-L298); la nota 13 (L982-L985) lo reparte en otras categorías (Operacionais/Ordinárias) y se contaba dos veces junto a los 17 renglones. Se cargan los renglones del estado)",
+  "ajuste manual: sale la fila \"L299\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L299 Receita Líquida 21.545.016 repite el total de L281 (sin deducciones): se contaba otra vez)",
+  "ajuste manual: fila \"Diferencia en el documento: total Receita Bruta Operacional vs sus renglones\" (ingreso) 198.800 (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el total impreso L281/L299 es 21.545.016 pero los renglones L282-L298 suman 21.346.216 (17 renglones, incluidas las Receitas Financeiras 14.197); falta 198.800 que el documento no abre. Sin esa diferencia el resultado no cierra: 21.545.016 - 29.103.327 - 406.410 = -7.964.721 (L337-L338). La versión anterior descartada sí sumaba (patrocinio 5.311.429 y demais 906.122, total 20.328.785); en la final sube el total en 1.216.231 y los renglones en 1.017.429)",
+  "ajuste manual: fila \"Receitas Financeiras\" (financiero) 14.197, en lugar de \"Receitas Financeiras\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): lo cuenta el total de L281; con el signo bien el resultado cierra)",
+  "ajuste manual: fila \"Despesas financeiras\" (financiero) -406.410, en lugar de \"Despesas financeiras\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): -7.558.310 - 406.410 = -7.964.720 (impreso -7.964.721, L338))",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de extraer que no afecta la carga: Los renglones L302-L316 suman 17.449.920 y L318-L335 suman 11.653.407; no hay total de gastos impreso y el renglón L302 repite la etiqueta del subtotal.",
   "duda de extraer que no afecta la carga: L974 es el total de la nota de gastos 'más significativos' (b21+b22, filas parcialmente cortadas entre páginas) y no cuadra con el estado.",
   "duda de extraer que no afecta la carga: Diferencia de 13.500 en la columna 2021, que no es la del ejercicio pedido."
@@ -59,39 +133,23 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 64.422051,
+  "ingresos": 21.530819,
   "gastos": 29.103327,
-  "financiero": 0.420607,
+  "financiero": -0.392213,
   "impuesto": 0,
   "resultadoImpreso": -7.964721,
   "resultadoParaCargar": -7.964721,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
-  {
-   "etiqueta": "Receitas Operacionais",
-   "lado": "ingreso",
-   "M": 0.95557,
-   "pagina": 29,
-   "linea": 982,
-   "origen": "nota que desglosa \"Receita Bruta Operacional\""
-  },
-  {
-   "etiqueta": "Receitas Ordinárias",
-   "lado": "ingreso",
-   "M": 20.589446,
-   "pagina": 29,
-   "linea": 983,
-   "origen": "nota que desglosa \"Receita Bruta Operacional\""
-  },
   {
    "etiqueta": "Receita de Alugueis",
    "lado": "ingreso",
    "M": 0.798804,
    "pagina": 11,
    "linea": 282,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita de Estacionamento",
@@ -99,7 +157,7 @@
    "M": 0.156767,
    "pagina": 11,
    "linea": 283,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita de Bilheteria",
@@ -107,7 +165,7 @@
    "M": 5.72151,
    "pagina": 11,
    "linea": 284,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita Royalties / Lojas",
@@ -115,7 +173,7 @@
    "M": 1.620263,
    "pagina": 11,
    "linea": 285,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita Patrimoniais/Sociais",
@@ -123,7 +181,7 @@
    "M": 1.413955,
    "pagina": 11,
    "linea": 286,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita da Atividade Social",
@@ -131,7 +189,7 @@
    "M": 0.991544,
    "pagina": 11,
    "linea": 287,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita Programa Timemania",
@@ -139,7 +197,7 @@
    "M": 0.535692,
    "pagina": 11,
    "linea": 288,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita Programa Socio Torcedor",
@@ -147,7 +205,7 @@
    "M": 1.552399,
    "pagina": 11,
    "linea": 289,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita de Patrocínio / Marketing",
@@ -155,15 +213,7 @@
    "M": 5.604274,
    "pagina": 11,
    "linea": 290,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Receita de Direito de Transmissão",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 11,
-   "linea": 291,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Royalties / Licenciados",
@@ -171,7 +221,7 @@
    "M": 0.177819,
    "pagina": 11,
    "linea": 292,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita com Vendas Materiais",
@@ -179,7 +229,7 @@
    "M": 0.11865,
    "pagina": 11,
    "linea": 293,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Demais Receitas",
@@ -187,15 +237,7 @@
    "M": 1.630706,
    "pagina": 11,
    "linea": 294,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Receita com redução juros/multa - Perse",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 11,
-   "linea": 295,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas Repasse de Direitos Federativos",
@@ -203,7 +245,7 @@
    "M": 0.687391,
    "pagina": 11,
    "linea": 296,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receita de Premiações",
@@ -211,15 +253,15 @@
    "M": 0.322245,
    "pagina": 11,
    "linea": 297,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Receita Líquida",
+   "etiqueta": "Diferencia en el documento: total Receita Bruta Operacional vs sus renglones",
    "lado": "ingreso",
-   "M": 21.545016,
+   "M": 0.1988,
    "pagina": 11,
-   "linea": 299,
-   "origen": "estado"
+   "linea": 281,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Despesas Administrativas",
@@ -227,7 +269,7 @@
    "M": 0.436843,
    "pagina": 11,
    "linea": 302,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Comissões",
@@ -235,7 +277,7 @@
    "M": 0.030512,
    "pagina": 11,
    "linea": 303,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Materiais",
@@ -243,7 +285,7 @@
    "M": 0.069278,
    "pagina": 11,
    "linea": 304,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Manutenção",
@@ -251,7 +293,7 @@
    "M": 1.229071,
    "pagina": 11,
    "linea": 305,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com eventos esportivos",
@@ -259,15 +301,7 @@
    "M": 0.00695,
    "pagina": 11,
    "linea": 306,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Programa Sócio Torcedor",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 11,
-   "linea": 307,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Custo com Contratação",
@@ -275,7 +309,7 @@
    "M": 0.122,
    "pagina": 11,
    "linea": 308,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Serviço de Terceiros",
@@ -283,7 +317,7 @@
    "M": 2.700725,
    "pagina": 11,
    "linea": 309,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Materiais esportivos e premiações",
@@ -291,7 +325,7 @@
    "M": 0.103753,
    "pagina": 11,
    "linea": 310,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Amortização dos Débitos Trabalhistas",
@@ -299,7 +333,7 @@
    "M": 0.053896,
    "pagina": 11,
    "linea": 311,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com tributos",
@@ -307,7 +341,7 @@
    "M": 0.018628,
    "pagina": 11,
    "linea": 312,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com depreciação e amortização",
@@ -315,7 +349,7 @@
    "M": 8.19683,
    "pagina": 11,
    "linea": 313,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Amortizações - Direitos Econômicos",
@@ -323,7 +357,7 @@
    "M": 1.9643,
    "pagina": 11,
    "linea": 314,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesa com Contingências",
@@ -331,7 +365,7 @@
    "M": 1.631109,
    "pagina": 11,
    "linea": 315,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Outras Despesas",
@@ -339,7 +373,7 @@
    "M": 0.886025,
    "pagina": 11,
    "linea": 316,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com Pessoal",
@@ -347,7 +381,7 @@
    "M": 6.440639,
    "pagina": 11,
    "linea": 318,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesa com direito de imagem",
@@ -355,7 +389,7 @@
    "M": 1.578607,
    "pagina": 12,
    "linea": 331,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com Jogos e Competições",
@@ -363,7 +397,7 @@
    "M": 2.624685,
    "pagina": 12,
    "linea": 333,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Programa Sócio Torcedor",
@@ -371,7 +405,7 @@
    "M": 0.54908,
    "pagina": 12,
    "linea": 334,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com Passagens e Hospedagens",
@@ -379,7 +413,7 @@
    "M": 0.460396,
    "pagina": 12,
    "linea": 335,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -394,7 +428,7 @@
   },
   {
    "etiqueta": "Despesas financeiras",
-   "M": 0.40641,
+   "M": -0.40641,
    "linea": 337
   }
  ],

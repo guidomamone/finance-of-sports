@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
  "md": "Clubes/Brasil/Paysandu/dre-2024.md",
- "generado": "2026-10-09T23:23:30.062Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:59.712Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -21,11 +21,35 @@
    "evidencia": "dre-2024.md L7, L11 (columnas 2024 | 2023)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 33,
+   "etiqueta": "Despesas Operacionais da Atividade Desportiva",
+   "lado": "gasto",
+   "reemplaza": "Despesas Operacionais da Atividade Desportiva",
+   "motivo": "Claude 2026-10-09: el renglon 'Despesas Operacionais da Atividade Desportiva' 33.680.062 (L33) es el subtotal de L34-L41 y la extraccion lo sumaba ademas de sus componentes (gastos 101.003.244 en vez de ~67,3M). Se saca el subtotal y quedan los componentes. Resultado impreso: 64.496.592 - 33.601.309,54 - 33.680.062 = -2.784.779,54 (L42); -2.784.779,54 - 1.100.953,60 = -3.885.733,14 (L46).",
+   "evidencia": "pág. 1 del visor, .md L14-46",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Paysandu/dre-2024.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 39,
+   "etiqueta": "(sale) Perdas de Capital",
+   "lado": "gasto",
+   "reemplaza": "Perdas de Capital",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el documento imprime 'Perdas de Capital' (41.810, L39) pero no la suma: el subtotal L33 es 33.680.062 = sus renglones sin ella (33.721.872 - 41.810), y el resultado operacional (-2.784.779,54, L41) y el del ejercicio (-3.885.733,14, L45) cierran sin ella. Se carga lo que el documento suma",
+   "evidencia": "pág. 1 del visor, .md L33-L45",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "32e86b2"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,13 +63,13 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 64.496592 - gastos 101.003244 ± financiero -1.100954 ± impuesto 0 no da el impreso -3.885733"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
   },
   {
    "nombre": "documento del año 2025",
    "ok": true,
-   "detalle": "ingresos de 2024: 64.496592 en este documento y 65.776271 en dre-2025.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 64.496592 en este documento y 64.485071 en dre-2025.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
@@ -59,6 +83,8 @@
   }
  ],
  "notas": [
+  "ajuste manual: sale la fila \"Despesas Operacionais da Atividade Desportiva\" (2026-10-09, Claude 2026-10-09: el renglon 'Despesas Operacionais da Atividade Desportiva' 33.680.062 (L33) es el subtotal de L34-L41 y la extraccion lo sumaba ademas de sus componentes (gastos 101.003.244 en vez de ~67,3M). Se saca el subtotal y quedan los componentes. Resultado impreso: 64.496.592 - 33.601.309,54 - 33.680.062 = -2.784.779,54 (L42); -2.784.779,54 - 1.100.953,60 = -3.885.733,14 (L46).)",
+  "ajuste manual: sale la fila \"Perdas de Capital\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el documento imprime 'Perdas de Capital' (41.810, L39) pero no la suma: el subtotal L33 es 33.680.062 = sus renglones sin ella (33.721.872 - 41.810), y el resultado operacional (-2.784.779,54, L41) y el del ejercicio (-3.885.733,14, L45) cierran sin ella. Se carga lo que el documento suma)",
   "duda de extraer que no afecta la carga: L43 muestra un ingreso financiero negativo en 2024 mientras en 2023 es positivo; puede ser error de signo o neteo, pero el subtotal L45 lo suma así."
  ],
  "reintentar": null,
@@ -66,13 +92,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 64.496592,
-  "gastos": 101.003244,
+  "gastos": 67.281372,
   "financiero": -1.100954,
   "impuesto": 0,
   "resultadoImpreso": -3.885733,
   "resultadoParaCargar": -3.885733,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -204,14 +230,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Despesas Operacionais da Atividade Desportiva",
-   "lado": "gasto",
-   "M": 33.680062,
-   "pagina": 1,
-   "linea": 33,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Despesa com Pessoal",
    "lado": "gasto",
    "M": 2.607389,
@@ -249,14 +267,6 @@
    "M": 0,
    "pagina": 1,
    "linea": 38,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Perdas de Capital",
-   "lado": "gasto",
-   "M": 0.04181,
-   "pagina": 1,
-   "linea": 39,
    "origen": "estado"
   },
   {

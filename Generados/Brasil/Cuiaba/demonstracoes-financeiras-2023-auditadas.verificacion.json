@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
  "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
- "generado": "2026-10-09T23:23:28.956Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:54.840Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2023,
  "escala": {
@@ -11,16 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "2dcf85e",
-  "f948d41",
-  "b85b698",
-  "43a2b0d",
-  "d5ab9c5",
-  "029fe48",
-  "c80e945"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
+   "campo": "resultado-final",
+   "valor": "37.356.016",
+   "linea": 302,
+   "motivo": "Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).",
+   "evidencia": "pág. 8 y 9 del visor, .md L261-L275, L302, L321",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,9 +41,14 @@
    "detalle": "extraer.mjs no encontró el resultado impreso"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "37.356016 por ajuste manual (37.356.016: Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).); impuesto deducido -0.091488 (antes de impuestos 37.264528; el documento imprimía 0)"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": false,
-   "detalle": "ingresos de 2023: 157.933413 en este documento y 326.466255 en balanco-financeiro-2024.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2023: 157.933413 en este documento y 168.532842 en balanco-financeiro-2024.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2022",
@@ -53,7 +61,9 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: resultado final 37.356.016 (2026-10-09, Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).)"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -61,10 +71,17 @@
   "ingresos": 157.933413,
   "gastos": 119.971399,
   "financiero": -0.697486,
-  "impuesto": 0,
+  "impuesto": -0.091488,
   "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
+  "resultadoParaCargar": 37.356016,
+  "resultadoFinal": {
+   "valor": 37.356016,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": -0.091488
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -159,7 +176,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -173,5 +190,10 @@
    "linea": 271
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 0.091488
+  }
+ ]
 }

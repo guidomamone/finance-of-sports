@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
- "generado": "2026-10-09T23:23:29.268Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:18.074Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2010,
  "escala": {
@@ -21,28 +21,55 @@
    "evidencia": "balanco-2010.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+   "campo": "fila",
+   "valor": "1.196.469,33",
+   "linea": 164,
+   "etiqueta": "Serviços do departamento de esportes profissional",
+   "lado": "gasto",
+   "reemplaza": "Serviços do departamento de esportes profissional",
+   "motivo": "Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).",
+   "evidencia": "pág. 5 del visor, .md L158-177",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2010.pdf",
+   "campo": "fila",
+   "valor": "24.494,58",
+   "linea": 165,
+   "etiqueta": "Serviços do departamento de esportes para outras categorias",
+   "lado": "gasto",
+   "reemplaza": "Serviços do departamento de esportes para outras categorias",
+   "motivo": "Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).",
+   "evidencia": "pág. 5 del visor, .md L158-177",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "666b067",
-  "aa3ada7",
-  "e68c064"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "\"Receitas Operacionais Líquidas\" 1.58152 cierra; además se suman 3 línea(s) fuera de ese total (1.614973)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"Total das Despesas\" 0.434791 cierra; además se suman 6 línea(s) fuera de ese total (1.642833)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 3.196492 - gastos 2.077623 ± financiero 0.012922 ± impuesto 0 no da el impreso -0.074235"
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "año anterior cargado",
@@ -51,20 +78,23 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Serviços do departamento de esportes profissional\" (gasto) 1.196.469,33, en lugar de \"Serviços do departamento de esportes profissional\" (2026-10-09, Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).)",
+  "ajuste manual: fila \"Serviços do departamento de esportes para outras categorias\" (gasto) 24.494,58, en lugar de \"Serviços do departamento de esportes para outras categorias\" (2026-10-09, Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).)",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de extraer que no afecta la carga: L175 no tiene etiqueta; su importe coincide con la suma de L173 y L174."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 3.196492,
-  "gastos": 2.077623,
+  "ingresos": 1.58152,
+  "gastos": 1.642833,
   "financiero": 0.012922,
   "impuesto": 0,
   "resultadoImpreso": -0.074235,
   "resultadoParaCargar": -0.074235,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
   {
@@ -73,7 +103,7 @@
    "M": 0.576146,
    "pagina": 5,
    "linea": 158,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Receitas de publicidade e patrocínios",
@@ -81,39 +111,15 @@
    "M": 1.0221,
    "pagina": 5,
    "linea": 160,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "( - ) Impostos",
    "lado": "ingreso",
-   "M": 0.016726,
+   "M": -0.016726,
    "pagina": 5,
    "linea": 161,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Receitas Operacionais Líquidas",
-   "lado": "ingreso",
-   "M": 1.58152,
-   "pagina": 5,
-   "linea": 162,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Serviços do departamento de esportes profissional",
-   "lado": "gasto",
-   "M": 1.196469,
-   "pagina": 5,
-   "linea": 164,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Serviços do departamento de esportes para outras categorias",
-   "lado": "gasto",
-   "M": 0.024495,
-   "pagina": 5,
-   "linea": 165,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas com pessoal profissional",
@@ -121,7 +127,7 @@
    "M": 0.16191,
    "pagina": 5,
    "linea": 169,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas administrativa profissional",
@@ -129,7 +135,7 @@
    "M": 0.237178,
    "pagina": 5,
    "linea": 170,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Despesas Tributárias",
@@ -137,7 +143,7 @@
    "M": 0.003097,
    "pagina": 5,
    "linea": 171,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Serviços de terceiros",
@@ -145,25 +151,33 @@
    "M": 0.019683,
    "pagina": 5,
    "linea": 174,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Total das Despesas",
+   "etiqueta": "Serviços do departamento de esportes profissional",
    "lado": "gasto",
-   "M": 0.434791,
+   "M": 1.196469,
    "pagina": 5,
-   "linea": 176,
-   "origen": "estado"
+   "linea": 164,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Serviços do departamento de esportes para outras categorias",
+   "lado": "gasto",
+   "M": 0.024495,
+   "pagina": 5,
+   "linea": 165,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Despesas financeiras",
-   "M": 0.012922,
+   "M": -0.012922,
    "linea": 173
   }
  ],

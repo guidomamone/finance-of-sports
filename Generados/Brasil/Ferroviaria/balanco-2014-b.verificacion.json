@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
  "md": "Clubes/Brasil/Ferroviaria/balanco-2014-b.md",
- "generado": "2026-10-09T23:23:29.434Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:19.347Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2014,
  "escala": {
@@ -21,28 +21,43 @@
    "evidencia": "balanco-2014-b.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf",
+   "campo": "fila",
+   "valor": "412,27",
+   "linea": 198,
+   "etiqueta": "Descontos Obtidos",
+   "lado": "financiero",
+   "reemplaza": null,
+   "reemplazaLinea": 199,
+   "motivo": "Claude 2026-10-09: 'Descontos Obtidos 412,27 C' bajo '(+) Receitas Financeiras' (L197-199, pág. 3-4 del visor) no salió como renglón (solo su 'Total:' de L199); se reemplaza el total por su único renglón. Cuenta: receitas 5.620.101,05 - gastos 6.650.350 - financiero (24.328,43 D - 412,27 C) = -1.055.949,71 = '= Prejuízo 1.055.949,71 D' (L213).",
+   "evidencia": "pág. 4 del visor, .md L197-199",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "1faef49",
-  "93ebd8f",
-  "b241281"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 11.165627 y el total impreso dice 5.602059"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)"
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2015",
@@ -60,19 +75,23 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: fila \"Descontos Obtidos\" (financiero) 412,27, en lugar de la fila de L199 (2026-10-09, Claude 2026-10-09: 'Descontos Obtidos 412,27 C' bajo '(+) Receitas Financeiras' (L197-199, pág. 3-4 del visor) no salió como renglón (solo su 'Total:' de L199); se reemplaza el total por su único renglón. Cuenta: receitas 5.620.101,05 - gastos 6.650.350 - financiero (24.328,43 D - 412,27 C) = -1.055.949,71 = '= Prejuízo 1.055.949,71 D' (L213).)",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Total:\"): aceptar, en balanco-2014-b.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 11.165627,
-  "gastos": 12.187284,
-  "financiero": 0.026113,
+  "ingresos": 5.620101,
+  "gastos": 6.65035,
+  "financiero": -0.0257,
   "impuesto": 0,
   "resultadoImpreso": 1.05595,
   "resultadoParaCargar": 1.05595,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -81,7 +100,7 @@
    "M": 0.15099,
    "pagina": 1,
    "linea": 11,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Cotas de TV Camp Paulista Séria A-2",
@@ -89,7 +108,7 @@
    "M": 0.135,
    "pagina": 1,
    "linea": 12,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Venda de Atletas",
@@ -97,7 +116,7 @@
    "M": 0.45,
    "pagina": 1,
    "linea": 13,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Sócio Torcedor",
@@ -105,7 +124,7 @@
    "M": 0.021055,
    "pagina": 1,
    "linea": 14,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Mercadorias c/Vendas",
@@ -113,7 +132,7 @@
    "M": 0.054708,
    "pagina": 1,
    "linea": 15,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Patrocinios",
@@ -121,7 +140,7 @@
    "M": 2.83474,
    "pagina": 1,
    "linea": 16,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Contratos de Parcerias",
@@ -129,7 +148,7 @@
    "M": 0.15,
    "pagina": 1,
    "linea": 17,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Publicidades",
@@ -137,7 +156,7 @@
    "M": 0.491249,
    "pagina": 1,
    "linea": 18,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Doações",
@@ -145,15 +164,7 @@
    "M": 1.314316,
    "pagina": 1,
    "linea": 19,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "= Receita Líquida:",
-   "lado": "ingreso",
-   "M": 5.545526,
-   "pagina": 1,
-   "linea": 31,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Recuperação de Despesas",
@@ -161,7 +172,7 @@
    "M": 0.009106,
    "pagina": 4,
    "linea": 203,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "AVlso Prévio Descontado",
@@ -169,7 +180,7 @@
    "M": 0.0081,
    "pagina": 4,
    "linea": 204,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Multa Contratual",
@@ -177,7 +188,7 @@
    "M": 0.000836,
    "pagina": 4,
    "linea": 205,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Pis",
@@ -185,7 +196,7 @@
    "M": 0.007425,
    "pagina": 1,
    "linea": 24,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Cofins",
@@ -193,7 +204,7 @@
    "M": 0.0342,
    "pagina": 1,
    "linea": 25,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Pis",
@@ -201,7 +212,7 @@
    "M": 0.000903,
    "pagina": 1,
    "linea": 26,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Cofins",
@@ -209,7 +220,7 @@
    "M": 0.004158,
    "pagina": 1,
    "linea": 27,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Icms",
@@ -217,7 +228,7 @@
    "M": 0.009847,
    "pagina": 1,
    "linea": 28,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Arbitragens",
@@ -225,7 +236,7 @@
    "M": 0.066673,
    "pagina": 1,
    "linea": 35,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Taxa de Policiamento",
@@ -233,7 +244,7 @@
    "M": 0.022718,
    "pagina": 1,
    "linea": 36,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Taxas Federações e Confederações",
@@ -241,7 +252,7 @@
    "M": 0.080286,
    "pagina": 1,
    "linea": 37,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Segurança e Vigilancia",
@@ -249,7 +260,7 @@
    "M": 0.047088,
    "pagina": 1,
    "linea": 38,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss s/Renda de Jogos",
@@ -257,7 +268,7 @@
    "M": 0.000318,
    "pagina": 1,
    "linea": 39,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss s/Patrocinios",
@@ -265,7 +276,7 @@
    "M": 0.0484,
    "pagina": 1,
    "linea": 40,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Ingressos",
@@ -273,7 +284,7 @@
    "M": 0.009412,
    "pagina": 1,
    "linea": 41,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Manutenção, Conservação Estadio",
@@ -281,7 +292,7 @@
    "M": 0.025421,
    "pagina": 1,
    "linea": 42,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Combustíveis e Lubrificantes",
@@ -289,7 +300,7 @@
    "M": 0.020423,
    "pagina": 1,
    "linea": 43,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss s/Arbitragens",
@@ -297,7 +308,7 @@
    "M": 0.005359,
    "pagina": 1,
    "linea": 44,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Exame Anti-Doping",
@@ -305,7 +316,7 @@
    "M": 0.026775,
    "pagina": 1,
    "linea": 45,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Serviços Prest p/Terceiros",
@@ -313,7 +324,7 @@
    "M": 0.692835,
    "pagina": 1,
    "linea": 46,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Direito de Imagem",
@@ -321,7 +332,7 @@
    "M": 1.085904,
    "pagina": 1,
    "linea": 47,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Locação de Estadio",
@@ -329,7 +340,7 @@
    "M": 0.039388,
    "pagina": 1,
    "linea": 48,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss s/Cotas de TV",
@@ -337,7 +348,7 @@
    "M": 0.00675,
    "pagina": 1,
    "linea": 49,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss/Seguro Torcedor FPF",
@@ -345,7 +356,7 @@
    "M": 0.008255,
    "pagina": 1,
    "linea": 50,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Salarios e Ordenados",
@@ -353,7 +364,7 @@
    "M": 1.02087,
    "pagina": 1,
    "linea": 51,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Férias Normais",
@@ -361,7 +372,7 @@
    "M": 0.111479,
    "pagina": 1,
    "linea": 52,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Férias Indenizadas",
@@ -369,7 +380,7 @@
    "M": 0.004019,
    "pagina": 1,
    "linea": 53,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "13º Salario",
@@ -377,7 +388,7 @@
    "M": 0.09096,
    "pagina": 1,
    "linea": 54,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Aviso Prévio Indenizado",
@@ -385,7 +396,7 @@
    "M": 0.010368,
    "pagina": 1,
    "linea": 55,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss",
@@ -393,7 +404,7 @@
    "M": 0.053465,
    "pagina": 1,
    "linea": 56,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Fgts",
@@ -401,7 +412,7 @@
    "M": 0.092603,
    "pagina": 1,
    "linea": 57,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Fgts Rescisório",
@@ -409,7 +420,7 @@
    "M": 0.003446,
    "pagina": 1,
    "linea": 58,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Premios e Gratificações",
@@ -417,7 +428,7 @@
    "M": 0.104625,
    "pagina": 1,
    "linea": 59,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Academia",
@@ -425,7 +436,7 @@
    "M": 0.016219,
    "pagina": 1,
    "linea": 60,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Agua Mineral",
@@ -433,7 +444,7 @@
    "M": 0.010569,
    "pagina": 1,
    "linea": 61,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Alimentação",
@@ -441,7 +452,7 @@
    "M": 0.248847,
    "pagina": 2,
    "linea": 73,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas de Viagens",
@@ -449,7 +460,7 @@
    "M": 0.108073,
    "pagina": 2,
    "linea": 74,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Vale Transporte",
@@ -457,7 +468,7 @@
    "M": 0.008247,
    "pagina": 2,
    "linea": 75,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Indenizações Trabalhistas",
@@ -465,7 +476,7 @@
    "M": 0.179078,
    "pagina": 2,
    "linea": 76,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas de Hospedagem",
@@ -473,7 +484,7 @@
    "M": 0.109038,
    "pagina": 2,
    "linea": 77,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Pis s/Folha",
@@ -481,7 +492,7 @@
    "M": 0.011433,
    "pagina": 2,
    "linea": 78,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Ajuda de Custo",
@@ -489,7 +500,7 @@
    "M": 0.085612,
    "pagina": 2,
    "linea": 79,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Contingencias Trabalhistas",
@@ -497,7 +508,7 @@
    "M": 0.143289,
    "pagina": 2,
    "linea": 80,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Compras Mercadorias a Prazo",
@@ -505,23 +516,23 @@
    "M": 0.038096,
    "pagina": 2,
    "linea": 81,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(-) Recuperação Cofins",
    "lado": "gasto",
-   "M": 0.002896,
+   "M": -0.002896,
    "pagina": 2,
    "linea": 82,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "(-) Recuperação Pis",
    "lado": "gasto",
-   "M": 0.000619,
+   "M": -0.000619,
    "pagina": 2,
    "linea": 83,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Custo das Mercadorias Vendidas",
@@ -529,15 +540,15 @@
    "M": 0.00579,
    "pagina": 2,
    "linea": 84,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(-) Recuperação de Icms",
    "lado": "gasto",
-   "M": 0.006857,
+   "M": -0.006857,
    "pagina": 2,
    "linea": 85,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "Salarios e Ordenados",
@@ -545,7 +556,7 @@
    "M": 0.101669,
    "pagina": 2,
    "linea": 86,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Férias Normais",
@@ -553,7 +564,7 @@
    "M": 0.014014,
    "pagina": 2,
    "linea": 87,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "13º Salario",
@@ -561,7 +572,7 @@
    "M": 0.009415,
    "pagina": 2,
    "linea": 88,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss",
@@ -569,7 +580,7 @@
    "M": 0.004376,
    "pagina": 2,
    "linea": 89,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Fgts",
@@ -577,7 +588,7 @@
    "M": 0.009927,
    "pagina": 2,
    "linea": 90,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Fgts Rescisorio",
@@ -585,7 +596,7 @@
    "M": 0.006719,
    "pagina": 2,
    "linea": 91,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Vale Transporte",
@@ -593,7 +604,7 @@
    "M": 0.001038,
    "pagina": 2,
    "linea": 92,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Pis s/Folha",
@@ -601,7 +612,7 @@
    "M": 0.001241,
    "pagina": 2,
    "linea": 93,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Salarios e Ordenados",
@@ -609,7 +620,7 @@
    "M": 0.013303,
    "pagina": 2,
    "linea": 94,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Férias Normais",
@@ -617,7 +628,7 @@
    "M": 0.001912,
    "pagina": 2,
    "linea": 95,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "13º Salario",
@@ -625,7 +636,7 @@
    "M": 0.001386,
    "pagina": 2,
    "linea": 96,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Inss",
@@ -633,7 +644,7 @@
    "M": 0.005668,
    "pagina": 2,
    "linea": 97,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Fgts",
@@ -641,7 +652,7 @@
    "M": 0.001245,
    "pagina": 2,
    "linea": 98,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas com Ativo Fixo",
@@ -649,7 +660,7 @@
    "M": 0.003662,
    "pagina": 2,
    "linea": 99,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Assessoria Contábil/Tributaria/Advocatic",
@@ -657,7 +668,7 @@
    "M": 0.079033,
    "pagina": 2,
    "linea": 100,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Contingencias Cíveis",
@@ -665,7 +676,7 @@
    "M": 0.185211,
    "pagina": 2,
    "linea": 101,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Contingencias Tributarias",
@@ -673,7 +684,7 @@
    "M": 0.371405,
    "pagina": 2,
    "linea": 102,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas pelo uso da Marca",
@@ -681,7 +692,7 @@
    "M": 0.051701,
    "pagina": 2,
    "linea": 103,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas Indedutíveis",
@@ -689,7 +700,7 @@
    "M": 0.0168,
    "pagina": 2,
    "linea": 104,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas de Viagens",
@@ -697,7 +708,7 @@
    "M": 0.001544,
    "pagina": 2,
    "linea": 105,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Medicamentos e Mat Medicos e Cirurgicos",
@@ -705,7 +716,7 @@
    "M": 0.000338,
    "pagina": 2,
    "linea": 106,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Servipos prestados p/Terceiros",
@@ -713,15 +724,7 @@
    "M": 0.002819,
    "pagina": 2,
    "linea": 107,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Total:",
-   "lado": "gasto",
-   "M": 5.516188,
-   "pagina": 2,
-   "linea": 108,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Aluguel",
@@ -729,7 +732,7 @@
    "M": 0.03,
    "pagina": 2,
    "linea": 114,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Depreciações",
@@ -737,7 +740,7 @@
    "M": 0.033747,
    "pagina": 2,
    "linea": 115,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas Legais e Judiciais",
@@ -745,7 +748,7 @@
    "M": 0.060074,
    "pagina": 2,
    "linea": 116,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas de Viagens",
@@ -753,7 +756,7 @@
    "M": 0.000448,
    "pagina": 2,
    "linea": 117,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Impostos e Taxas",
@@ -761,7 +764,7 @@
    "M": 0.001591,
    "pagina": 2,
    "linea": 118,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Manutenção, Conservação de Bens",
@@ -769,7 +772,7 @@
    "M": 0.025367,
    "pagina": 2,
    "linea": 119,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Publicações",
@@ -777,7 +780,7 @@
    "M": 0.00024,
    "pagina": 2,
    "linea": 120,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Combustíveis",
@@ -785,7 +788,7 @@
    "M": 0.046114,
    "pagina": 2,
    "linea": 121,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Propaganda e Publicidade",
@@ -793,7 +796,7 @@
    "M": 0.032493,
    "pagina": 2,
    "linea": 122,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Provedor de Internet",
@@ -801,7 +804,7 @@
    "M": 0.006102,
    "pagina": 3,
    "linea": 134,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Material de Limpeza e Higiene",
@@ -809,7 +812,7 @@
    "M": 0.000057,
    "pagina": 3,
    "linea": 135,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Condominio",
@@ -817,7 +820,7 @@
    "M": 0.004508,
    "pagina": 3,
    "linea": 136,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Materiais Esportivos",
@@ -825,7 +828,7 @@
    "M": 0.000387,
    "pagina": 3,
    "linea": 137,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Materias de Limpeza e Higiene",
@@ -833,7 +836,7 @@
    "M": 0.001977,
    "pagina": 3,
    "linea": 138,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Medicamentos e Mat.Medicos e Cirurgicos",
@@ -841,7 +844,7 @@
    "M": 0.073933,
    "pagina": 3,
    "linea": 139,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Material de Consumo",
@@ -849,7 +852,7 @@
    "M": 0.001469,
    "pagina": 3,
    "linea": 140,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Agua",
@@ -857,7 +860,7 @@
    "M": 0.025461,
    "pagina": 3,
    "linea": 141,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Aluguel",
@@ -865,7 +868,7 @@
    "M": 0.313082,
    "pagina": 3,
    "linea": 142,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Alimentação",
@@ -873,7 +876,7 @@
    "M": 0.00018,
    "pagina": 3,
    "linea": 143,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Bens de Valores Irrelevantes",
@@ -881,7 +884,7 @@
    "M": 0.003483,
    "pagina": 3,
    "linea": 144,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Energia Eletrica",
@@ -889,7 +892,7 @@
    "M": 0.012373,
    "pagina": 3,
    "linea": 145,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Impostos e Taxas",
@@ -897,7 +900,7 @@
    "M": 0.001945,
    "pagina": 3,
    "linea": 146,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Manutenção e Conservação de Bens",
@@ -905,7 +908,7 @@
    "M": 0.065424,
    "pagina": 3,
    "linea": 147,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Material de Consumo",
@@ -913,7 +916,7 @@
    "M": 0.000654,
    "pagina": 3,
    "linea": 148,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Matrial de Limpeza e Higiene",
@@ -921,7 +924,7 @@
    "M": 0.000956,
    "pagina": 3,
    "linea": 149,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Utensilios, Guarn.Cama, Mesa e Banho",
@@ -929,7 +932,7 @@
    "M": 0.006503,
    "pagina": 3,
    "linea": 150,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Gas",
@@ -937,7 +940,7 @@
    "M": 0.005376,
    "pagina": 3,
    "linea": 151,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Multas",
@@ -945,7 +948,7 @@
    "M": 0.00312,
    "pagina": 3,
    "linea": 152,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Multas",
@@ -953,7 +956,7 @@
    "M": 0.000062,
    "pagina": 3,
    "linea": 154,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Agua",
@@ -961,7 +964,7 @@
    "M": 0.001031,
    "pagina": 3,
    "linea": 156,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Energia Eletrica",
@@ -969,7 +972,7 @@
    "M": 0.001924,
    "pagina": 3,
    "linea": 157,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Telefone",
@@ -977,7 +980,7 @@
    "M": 0.018536,
    "pagina": 3,
    "linea": 158,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Seguro de Vida",
@@ -985,7 +988,7 @@
    "M": 0.006557,
    "pagina": 3,
    "linea": 159,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Impressos e Materiais de Escritorio",
@@ -993,7 +996,7 @@
    "M": 0.004155,
    "pagina": 3,
    "linea": 160,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Correios",
@@ -1001,7 +1004,7 @@
    "M": 0.002604,
    "pagina": 3,
    "linea": 161,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Bens de Valores Irrelevantes",
@@ -1009,7 +1012,7 @@
    "M": 0.000501,
    "pagina": 3,
    "linea": 162,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Custas e Emolumentos",
@@ -1017,7 +1020,7 @@
    "M": 0.019278,
    "pagina": 3,
    "linea": 163,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Telefone",
@@ -1025,7 +1028,7 @@
    "M": 0.002552,
    "pagina": 3,
    "linea": 164,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Impressos e Matriais de Escritorio",
@@ -1033,7 +1036,7 @@
    "M": 0.000277,
    "pagina": 3,
    "linea": 165,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Custo Formação Atleta Profissional",
@@ -1041,7 +1044,7 @@
    "M": 0.144461,
    "pagina": 3,
    "linea": 170,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Despesas Bancarias",
@@ -1049,7 +1052,7 @@
    "M": 0.011381,
    "pagina": 3,
    "linea": 182,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Encargos Financeiros",
@@ -1057,7 +1060,7 @@
    "M": 0.10511,
    "pagina": 3,
    "linea": 183,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "Comissão s/Cartão",
@@ -1065,12 +1068,12 @@
    "M": 0.002137,
    "pagina": 3,
    "linea": 184,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -1097,6 +1100,11 @@
    "etiqueta": "Encargos Financeiros",
    "M": -0.000003,
    "linea": 177
+  },
+  {
+   "etiqueta": "Descontos Obtidos",
+   "M": 0.000412,
+   "linea": 198
   }
  ],
  "impuesto": []

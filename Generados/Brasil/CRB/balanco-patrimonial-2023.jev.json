@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+ "generatedAt": "2026-10-10T00:03:49.098Z",
+ "rubrosHuella": "391dc787ddcbcf0572e3e50bf781f55673510239",
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  }
+ ]
+}

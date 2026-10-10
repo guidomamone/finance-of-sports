@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
  "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
- "generado": "2026-10-09T23:23:29.657Z",
- "estado": "cola",
+ "generado": "2026-10-10T00:02:20.827Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2017,
  "escala": {
@@ -31,29 +31,42 @@
    "evidencia": "dre-2017.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "fila",
+   "valor": "371.653,59",
+   "linea": 31,
+   "etiqueta": "(+) Outras Receitas Operacionais",
+   "lado": "ingreso",
+   "reemplaza": "(+) Outras Receitas Operacionais",
+   "motivo": "Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).",
+   "evidencia": "pág. 1 del visor, .md L31 y L25-32",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
- "cola": [
-  "520d700",
-  "fc6b2e6",
-  "e2ce4f4",
-  "502b797"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 17.739567 - gastos 10.103921 ± financiero 0.445708 ± impuesto 0.16735 no da el impreso 1.72611"
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2018",
@@ -72,20 +85,23 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"(+) Outras Receitas Operacionais\" (ingreso) 371.653,59, en lugar de \"(+) Outras Receitas Operacionais\" (2026-10-10, Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).)",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en dre-2017.pdf",
   "duda de localizar que no afecta la carga: El título dice 'Período: 01/01/2017 a 31/12/2017 - CONSOLIDADO', pero es un único DRE con un solo CNPJ y el club carga sus años como individual; probablemente significa 'acumulado del período'."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 17.739567,
+  "ingresos": 8.975272,
   "gastos": 10.103921,
-  "financiero": 0.445708,
+  "financiero": -0.430111,
   "impuesto": 0.16735,
   "resultadoImpreso": 1.72611,
   "resultadoParaCargar": 1.72611,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -94,31 +110,15 @@
    "M": 8.67695,
    "pagina": 1,
    "linea": 21,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
   },
   {
    "etiqueta": "(-) Deduções",
    "lado": "ingreso",
-   "M": 0.087335,
+   "M": -0.087335,
    "pagina": 1,
    "linea": 22,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "= Receita Líquida",
-   "lado": "ingreso",
-   "M": 8.589615,
-   "pagina": 1,
-   "linea": 23,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "(+) Outras Receitas Operacionais",
-   "lado": "ingreso",
-   "M": 0.371664,
-   "pagina": 1,
-   "linea": 31,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(+) Outras Receitas",
@@ -126,7 +126,15 @@
    "M": 0.014003,
    "pagina": 1,
    "linea": 33,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "(+) Outras Receitas Operacionais",
+   "lado": "ingreso",
+   "M": 0.371654,
+   "pagina": 1,
+   "linea": 31,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "(-) Custos",
@@ -134,7 +142,7 @@
    "M": 7.802237,
    "pagina": 1,
    "linea": 24,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(-) Despesas Administrativas",
@@ -142,7 +150,7 @@
    "M": 2.233261,
    "pagina": 1,
    "linea": 26,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(-) Despesas Gerais",
@@ -150,7 +158,7 @@
    "M": 0.05518,
    "pagina": 1,
    "linea": 28,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   },
   {
    "etiqueta": "(-) Despesas Tributárias",
@@ -158,17 +166,17 @@
    "M": 0.013243,
    "pagina": 1,
    "linea": 29,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja con D)"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "(-) Despesas Financeiras",
-   "M": 0.43791,
+   "M": -0.43791,
    "linea": 27
   },
   {
@@ -180,12 +188,12 @@
  "impuesto": [
   {
    "etiqueta": "(-) Contribuição Social",
-   "M": 0.046764,
+   "M": -0.046764,
    "linea": 35
   },
   {
    "etiqueta": "(-) Imposto de Renda",
-   "M": 0.120586,
+   "M": -0.120586,
    "linea": 37
   }
  ]

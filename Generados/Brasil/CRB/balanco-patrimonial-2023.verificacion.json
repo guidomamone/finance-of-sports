@@ -1,0 +1,121 @@
+{
+ "pdf": "Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf",
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+ "generado": "2026-10-10T00:02:35.292Z",
+ "estado": "ok",
+ "clubId": "crb-br",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 45.563569 en este documento y 45.563569 en demonstracoes-contabeis-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 28.583332 en balanco-patrimonial-2022.pdf y 28.583332 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 45.563569,
+  "gastos": 40.51525,
+  "financiero": -0.252817,
+  "impuesto": 0,
+  "resultadoImpreso": 4.795503,
+  "resultadoParaCargar": 4.795503,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita operacional líquida",
+   "lado": "ingreso",
+   "M": 45.563569,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Custo das atividades sociais e esportivas",
+   "lado": "gasto",
+   "M": 8.358054,
+   "pagina": 1,
+   "linea": 53,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com pessoal",
+   "lado": "gasto",
+   "M": 27.068659,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas gerais e administrativas",
+   "lado": "gasto",
+   "M": 5.038184,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.050353,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 0.131346,
+   "linea": 62
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.384163,
+   "linea": 63
+  }
+ ],
+ "impuesto": []
+}

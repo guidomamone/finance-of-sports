@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
  "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
- "generado": "2026-10-09T23:23:29.210Z",
- "estado": "cola",
+ "generado": "2026-10-09T23:58:56.010Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,36 +11,61 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "8f50786",
-  "695c07d",
-  "c13d72f",
-  "48a94b7",
-  "73349c2",
-  "883c644",
-  "445ac65"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+   "campo": "fila",
+   "valor": "2.144.216",
+   "linea": 201,
+   "etiqueta": "DESPESAS TRIBUTÁRIAS (deduções da receita)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 201,
+   "motivo": "Claude 2026-10-09: la extracción puso la deducción de la receita (L200-L201) del lado ingreso; el estado la resta de la receita bruta y en 2022 y 2024 se carga como gasto. Cuenta (L186-L226): ingresos 36.625.174 (suma de L188-L193 29.457.738 + L195-L199 7.167.435) + OUTRAS RECEITAS/(DESPESAS) 20.805.324 (L221) - custos 76.739.132 (L204) - despesas 18.678.825 (L209) - deduções 2.144.216 (L200) - financeiras 2.017.000 (L220) = -42.148.673 contra -42.148.674 impreso (L222, L226).",
+   "evidencia": "pág. 7 del visor, .md L186-226",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf",
+   "campo": "fila",
+   "valor": "20.805.324",
+   "linea": 221,
+   "etiqueta": "OUTRAS RECEITAS/(DESPESAS)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-09: renglón no operativo impreso en positivo que SUMA al resultado: (60.936.997) + 18.788.324 (L219 = (2.017.000) financeiras + 20.805.324 outras) = (42.148.673) y el resultado impreso es (42.148.674) (L222). La nota 15 (L1118-L1123) lo cuenta junto con la receita (total 2024 205.052.629 = receita líquida original). Misma cuenta que en el ajuste de DESPESAS TRIBUTÁRIAS (deduções).",
+   "evidencia": "pág. 7 del visor, .md L219-222 y L1118-L1123",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 75.394565 y el total impreso dice 36.625176"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 75.394565 - gastos 95.417954 ± financiero -2.017 ± impuesto 0 no da el impreso -42.148674"
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2024",
    "ok": false,
-   "detalle": "ingresos de 2024: 212.320997 en balanco-financeiro-2024.pdf y 226.755644 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2024: 212.320997 en balanco-financeiro-2024.pdf y 117.012006 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -49,6 +74,9 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"DESPESAS TRIBUTÁRIAS (deduções da receita)\" (gasto) 2.144.216, en lugar de la fila de L201 (2026-10-09, Claude 2026-10-09: la extracción puso la deducción de la receita (L200-L201) del lado ingreso; el estado la resta de la receita bruta y en 2022 y 2024 se carga como gasto. Cuenta (L186-L226): ingresos 36.625.174 (suma de L188-L193 29.457.738 + L195-L199 7.167.435) + OUTRAS RECEITAS/(DESPESAS) 20.805.324 (L221) - custos 76.739.132 (L204) - despesas 18.678.825 (L209) - deduções 2.144.216 (L200) - financeiras 2.017.000 (L220) = -42.148.673 contra -42.148.674 impreso (L222, L226).)",
+  "ajuste manual: fila \"OUTRAS RECEITAS/(DESPESAS)\" (ingreso) 20.805.324 (2026-10-09, Claude 2026-10-09: renglón no operativo impreso en positivo que SUMA al resultado: (60.936.997) + 18.788.324 (L219 = (2.017.000) financeiras + 20.805.324 outras) = (42.148.673) y el resultado impreso es (42.148.674) (L222). La nota 15 (L1118-L1123) lo cuenta junto con la receita (total 2024 205.052.629 = receita líquida original). Misma cuenta que en el ajuste de DESPESAS TRIBUTÁRIAS (deduções).)",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b30 resume receita futebol profissional, demais receitas y despesas tributárias, que probablemente ya figuran abiertos en b6; no agrega desglose nuevo.",
   "duda de extraer que no afecta la carga: L1120 asigna 36.625.175 (bruta total, diferencia de 1 por redondeo) a Receita Futebol Profissional, cuando el estado muestra 29.457.740 (L187)."
  ],
@@ -56,14 +84,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 75.394565,
-  "gastos": 95.417954,
+  "ingresos": 57.430498,
+  "gastos": 97.56217,
   "financiero": -2.017,
   "impuesto": 0,
   "resultadoImpreso": -42.148674,
   "resultadoParaCargar": -42.148674,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -72,7 +100,7 @@
    "M": 12,
    "pagina": 7,
    "linea": 188,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "PLACAS DE PUBLICIDADE",
@@ -80,7 +108,7 @@
    "M": 2.600926,
    "pagina": 7,
    "linea": 189,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "SÓCIO TORCEDOR",
@@ -88,7 +116,7 @@
    "M": 0.303897,
    "pagina": 7,
    "linea": 190,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "COTAS/TV",
@@ -96,7 +124,7 @@
    "M": 12.769767,
    "pagina": 7,
    "linea": 191,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "BILHETERIA/JOGOS",
@@ -104,7 +132,7 @@
    "M": 1.472385,
    "pagina": 7,
    "linea": 192,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "OUTRAS RECEITAS C/ FUTEBOL",
@@ -112,7 +140,7 @@
    "M": 0.310765,
    "pagina": 7,
    "linea": 193,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "LICENCIAMENTOS",
@@ -120,7 +148,7 @@
    "M": 0.22614,
    "pagina": 7,
    "linea": 195,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "ESCOLINHA",
@@ -128,7 +156,7 @@
    "M": 1.230119,
    "pagina": 7,
    "linea": 196,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "LOTERIAS",
@@ -136,7 +164,7 @@
    "M": 0.919328,
    "pagina": 7,
    "linea": 197,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "OUTRAS RECEITAS",
@@ -144,7 +172,7 @@
    "M": 3.73993,
    "pagina": 7,
    "linea": 198,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "VENDAS DE MERCADORIAS",
@@ -152,31 +180,15 @@
    "M": 1.051917,
    "pagina": 7,
    "linea": 199,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "(-) DEDUÇÕES DAS RECEITAS",
+   "etiqueta": "OUTRAS RECEITAS/(DESPESAS)",
    "lado": "ingreso",
-   "M": 2.144216,
+   "M": 20.805324,
    "pagina": 7,
-   "linea": 200,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "DESPESAS TRIBUTÁRIAS",
-   "lado": "ingreso",
-   "M": 2.144216,
-   "pagina": 7,
-   "linea": 201,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "RECEITA OPERACIONAL LÍQUIDA",
-   "lado": "ingreso",
-   "M": 34.480959,
-   "pagina": 7,
-   "linea": 202,
-   "origen": "estado"
+   "linea": 221,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "CUSTOS COM PESSOAL",
@@ -184,7 +196,7 @@
    "M": 31.917744,
    "pagina": 7,
    "linea": 205,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "CUSTOS COM JOGOS",
@@ -192,7 +204,7 @@
    "M": 3.388905,
    "pagina": 7,
    "linea": 206,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
@@ -200,7 +212,7 @@
    "M": 19.456556,
    "pagina": 7,
    "linea": 207,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "OUTROS CUSTOS COM FUTEBOL",
@@ -208,7 +220,7 @@
    "M": 21.975926,
    "pagina": 7,
    "linea": 208,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS COM PESSOAL",
@@ -216,7 +228,7 @@
    "M": 5.561472,
    "pagina": 7,
    "linea": 210,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS ADMINISTRATIVAS",
@@ -224,7 +236,7 @@
    "M": 4.228214,
    "pagina": 7,
    "linea": 211,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS DEPRECIAÇÃO",
@@ -232,7 +244,7 @@
    "M": 1.213151,
    "pagina": 7,
    "linea": 212,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS GERAIS CATEGORIA DE BASE",
@@ -240,7 +252,7 @@
    "M": 1.978408,
    "pagina": 7,
    "linea": 213,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS GERAIS ESCOLINHA",
@@ -248,7 +260,7 @@
    "M": 0.480996,
    "pagina": 7,
    "linea": 214,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS GERAIS FUTEBOL FEMININO",
@@ -256,7 +268,7 @@
    "M": 0.000021,
    "pagina": 7,
    "linea": 215,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS COM VENDAS",
@@ -264,7 +276,7 @@
    "M": 0.231575,
    "pagina": 7,
    "linea": 216,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "DESPESAS TRIBUTÁRIAS",
@@ -272,7 +284,15 @@
    "M": 4.984986,
    "pagina": 7,
    "linea": 217,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "DESPESAS TRIBUTÁRIAS (deduções da receita)",
+   "lado": "gasto",
+   "M": 2.144216,
+   "pagina": 7,
+   "linea": 201,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
