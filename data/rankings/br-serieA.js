@@ -158,7 +158,8 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",0.397],["Comercial / Sponsors",2.398],["Estadio",0.232],["Televisión",12.223],["Premios por competencias",1.382],["Venta de Jugadores",0.574],["Otras secciones deportivas",0.637],["Otros ingresos",2.489]] },
       { id:"avai-br", revenue:17.623, reportType:"official_balance_sheet",
         sourceId:"avai-br-demonstracoes-contabeis-2022",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.623]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.623]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {

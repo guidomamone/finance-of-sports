@@ -6,7 +6,7 @@
 // Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
 //   2025: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -117,6 +117,9 @@ window.RANKINGS["br-serieB"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"avai-br", revenue:27.543, reportType:"official_balance_sheet",
+        sourceId:"avai-br-demonstracoes-contabeis-2023",
+        mix:[["Cuotas Sociales",1.709],["Comercial / Sponsors",2.613],["Estadio",0.285],["Televisión",2.038],["Venta de Jugadores",1.583],["Otros ingresos",19.315]] },
       { id:"criciuma-br", revenue:21.016, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-relatorio-de-balanco-2023",
         mix:[["Cuotas Sociales",3.176],["Comercial / Sponsors",1.086],["Estadio",0.19],["Televisión",15.752],["Venta de Jugadores",0.095],["Otros ingresos",0.716]] },
