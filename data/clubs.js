@@ -507,6 +507,9 @@ const clubs = {
   // Akhmat Grozny: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akhmat Grozny/bfo-2022-datos.md. brandColor #00782F
   // (procedencia en fuentes/Rusia/Akhmat Grozny.md; tools/bfo-rusia.mjs).
   'akhmatgrozny-ru': { id:'akhmatgrozny-ru', name:'ANO Republican Football Club Akhmat', displayName:'Akhmat Grozny', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#00782F' },
+  // Akron Tolyatti: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Akron Tolyatti/bfo-2021-datos.md. brandColor #FF0000
+  // (procedencia en fuentes/Rusia/Akron Tolyatti.md; tools/bfo-rusia.mjs).
+  'akrontolyatti-ru': { id:'akrontolyatti-ru', name:'ANO Football Club Akron', displayName:'Akron Tolyatti', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
