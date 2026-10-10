@@ -495,6 +495,9 @@ const clubs = {
   // Orenburg: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2021-datos.md. brandColor #0000FF
   // (procedencia en fuentes/Rusia/Orenburg.md; tools/bfo-rusia.mjs).
   'orenburg-ru': { id:'orenburg-ru', name:'ANO Football Club Orenburg', displayName:'Orenburg', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0000FF' },
+  // Pari Nizhny Novgorod: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md. brandColor #5BB8F8
+  // (procedencia en fuentes/Rusia/Pari Nizhny Novgorod.md; tools/bfo-rusia.mjs).
+  'parinizhnynovgorod-ru': { id:'parinizhnynovgorod-ru', name:'ANO Football Club Pari Nizhny Novgorod', displayName:'Pari Nizhny Novgorod', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#5BB8F8' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
