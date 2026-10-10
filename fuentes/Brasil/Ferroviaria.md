@@ -68,3 +68,5 @@ Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2016 desde `Clubes/Brasil/Ferroviaria/balanco-2016.pdf` (sourceId `ferroviaria-br-balanco-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2018 desde `Clubes/Brasil/Ferroviaria/dre-2018.pdf` (sourceId `ferroviaria-br-dre-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.pdf` (sourceId `ferroviaria-br-demonstracoes-financeiras-2021`).

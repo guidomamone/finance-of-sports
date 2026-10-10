@@ -3,8 +3,9 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série D (BR) — 4 ejercicio(s) con ranking:
+// Brasileirão Série D (BR) — 5 ejercicio(s) con ranking:
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -21,6 +22,14 @@ window.RANKINGS["br-serieD"] = {
       { id:"ferroviaria-br", revenue:7.759, reportType:"official_balance_sheet",
         sourceId:"ferroviaria-br-demonstracoes-financeiras-2023-fpf",
         mix:[["Cuotas Sociales",0.001],["Comercial / Sponsors",2.598],["Estadio",0.154],["Televisión",1.143],["Premios por competencias",0.159],["Venta de Jugadores",3.996],["Otros ingresos",-0.293]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"ferroviaria-br", revenue:3.217, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-demonstracoes-financeiras-2021",
+        mix:[["Cuotas Sociales",0.021],["Comercial / Sponsors",0.382],["Televisión",1.118],["Premios por competencias",0.227],["Venta de Jugadores",1.445],["Otros ingresos",0.024]] },
     ],
   },
   2020: {
