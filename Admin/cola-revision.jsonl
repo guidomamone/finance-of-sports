@@ -5363,3 +5363,4 @@
 {"tipo":"respuesta","id":"d85a90f","ts":"2026-10-10T02:06:07.610Z","decision":"aceptar","valor":null,"nota":"Claude 2026-10-09: total de costos del fútbol profesional del estado"}
 {"tipo":"respuesta","id":"3ab4d9a","ts":"2026-10-10T02:06:07.644Z","decision":"aceptar","valor":null,"nota":"Claude 2026-10-09: costos del fútbol amador (base), neto de lo transferido al inmovilizado"}
 {"tipo":"respuesta","id":"9c4e68d","ts":"2026-10-10T02:06:07.678Z","decision":"corregir","valor":"other_income","nota":"Claude 2026-10-09: deducciones de la receita bruta; precedente de Brasil (Vila Nova 2021-2023 y otros) en other_income negativo"}
+{"tipo":"respuesta","id":"9c4e68d","ts":"2026-10-10T02:06:30.452Z","decision":"aceptar","valor":null,"nota":"Claude 2026-10-09: reemplaza 'other_income': en este documento la fila está del lado gasto y pasarla a ingreso le invertía el signo (el resultado dejaba de cerrar); queda como otros gastos"}
