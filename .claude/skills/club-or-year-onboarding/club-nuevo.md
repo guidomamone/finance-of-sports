@@ -53,11 +53,12 @@ Cuatro trampas ya pagadas en la barrida de los 41, que son de donde sale ese ord
   primero (el caso japonés, muy limpio); (b) Wikipedia dice explícitamente cuál predomina
   ("con predominancia del primero", Argentinos); (c) el `theme-color` propio (San Lorenzo,
   `#00325A`); (d) si el otro color es blanco, gana el que no es blanco (Estudiantes,
-  Instituto, Unión). Si no aplica ninguno de los cuatro, es pregunta para Guido (Rosario
-  Central).
+  Instituto, Unión). Si no aplica ninguno de los cuatro, elegí el que más identifica al
+  club y contale a Guido qué elegiste, sin pedirle confirmación.
 - **Camiseta blanca con un acento fuerte: no se resuelve buscando más, es decisión de
   producto.** Fueron 6 de los primeros 41 (River, Vélez, Sevilla, Real Madrid, Valencia, Once
-  Caldas), o sea ~15% de los clubes. Mandala directo a Guido en vez de gastar fetches.
+  Caldas), o sea ~15% de los clubes. La decide la sesión (`brandColor: null` si la identidad es
+  el blanco) y se la cuenta a Guido.
 
 **Si queda ambiguo, o el color que lo identifica es el blanco: `brandColor: null`, que es un
 RESULTADO CERRADO, no un pendiente.** `pintarCrest()` (`js/selector.js`) trata el `null` igual
@@ -91,16 +92,14 @@ hex por TEXTO (infobox de Wikipedia, `theme-color`, agregadores como footylogos/
 mirar nunca el escudo en sí — y esa falta de verificación visual dejó pasar 2 errores reales que una
 auditoría posterior encontró recién a ojo, mirando el escudo (`godoycruz-ar`: `#0000FF` azul saturado
 en vez del celeste real del escudo; `fortaleza-br`: `#FF0000` rojo puro para un club tricolor que
-debía ir a `null` como sus pares `saopaulo-br`/`bahia-br` — ver `Admin/TODO.md` to-do 64 para el
-detalle de los dos). Antes de cerrar el onboarding: abrí el escudo real (Wikimedia Commons, sitio
+debía ir a `null` como sus pares `saopaulo-br`/`bahia-br`). Antes de cerrar el onboarding: abrí el escudo real (Wikimedia Commons, sitio
 oficial) en el Browser pane y confirmá a ojo que el HUE del `brandColor` elegido cae en la misma
 familia — no hace falta que el hex sea idéntico al del escudo (la fuente de identidad sigue siendo la
 CAMISETA, no el escudo, ver sección 3), pero un hue claramente distinto (azul violáceo vs. celeste,
 rojo puro vs. un club multicolor) es la señal de que el paso de texto se equivocó, y hay que revisar
 de nuevo con el proceso de la sección 3. **Este chequeo se hace UNA VEZ, al cargar el club — no es
-parte de ninguna auditoría periódica futura** (decisión de Guido, to-do 56: el eje `datos` de
-`auditoria-finance-of-sports/SKILL.md` ya no vuelve a pedir `brandColor` de "los clubes nuevos desde
-la última auditoría"), porque a diferencia de categorización/catch-all (que sí se benefician de mirar
+parte de ninguna auditoría periódica** (el eje `datos` de `auditoria-finance-of-sports/SKILL.md` no
+pide `brandColor`), porque a diferencia de categorización/catch-all (que sí se benefician de mirar
 muchos clubes juntos) es una comparación 1 a 1 que no gana nada de esperar a acumular un lote.
 
 ## Liga de cada temporada (ex §17)

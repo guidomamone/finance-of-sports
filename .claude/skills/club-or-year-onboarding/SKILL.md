@@ -36,17 +36,22 @@ Lo que no se puede resolver solo va a una **cola humana**, con instrucciones exa
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
 2. Armar la lista (`Admin/lote-NN.txt`). Con un club de varios años: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/documentos-descartados.txt`
-   (el lote los saltea) y entra ahí solo con su ok.
+   (el lote los saltea) y entra ahí solo con su ok. Antes de crear la lista, `ls Admin/lote-*.txt | sort -V | tail -3` y tomar el
+   número siguiente; nunca reusar uno.
 3. Club nuevo: fijar perímetro y cierre (`node tools/ajustes.mjs`) antes del primer lote, para no pagar dos veces la localización.
    `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis).
 4. Ensayo: `node tools/lote.mjs --lista Admin/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
-5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar`. Si el final del lote pide `--reintentar` o
-   `--rehacer`, va con una lista que tenga SOLO los documentos que lo necesitan, y se lo digo.
+5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar`, y con `--cargar` si lo que quede listo se
+   escribe en esa misma corrida (`tools/cargar-lote.mjs`: alta del club, un commit por año; si ningún año entra, revierte el alta). Si el
+   final del lote pide `--reintentar`, va con una lista que tenga SOLO los documentos que lo necesitan, y se lo digo.
 6. Leer el resultado: el bloque final que pega Guido (no la terminal entera), `Generados/`, `estado.mjs` y `cola.mjs`. Mostrarlo en un solo mensaje,
-   con una tabla año → etapa → por qué frenó → qué necesita, y las decisiones numeradas con la recomendación al lado.
+   con una tabla etapa · ejercicios · qué significa la etapa · qué falta (solo lo pendiente: los cargados y descartados van en una línea
+   aparte), y las decisiones numeradas con la recomendación al lado.
 7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); una pregunta de sí o no de la cola para Guido; si es
-   un defecto de un script, una sesión del tipo b).
-8. Escribir: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
+   un defecto de un script, una sesión del tipo b). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
+   `corregir --valor no_es_rubro`, y vale solo para ese documento. Un ajuste manual lo firma quien corre `tools/ajustes.mjs` (Claude si lo
+   corre Claude Code, Guido si no; `--autor` lo fuerza).
+8. Escribir: lo que el lote dejó listo entra con `--cargar`. Lo que no, a mano: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
    commit que su primer año). Después caja y deuda: `node tools/caja-deuda.mjs --club <id>` (ensayo); `--ejecutar --escribir` lo corre
    Guido, porque su escalón 2 usa IA.
    Club nuevo: antes de cargar su primer año, un subagente Sonnet revisa contra el documento lo que propuso el alta (nombre legal, tipo
@@ -118,6 +123,8 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - **Presupuestos:** `localizar.mjs` no los elige, así que el pipeline no los carga. A mano: `Admin/ARQUITECTURA.md` (ex §11, presupuesto y
   balance del mismo año) y `Admin/CONVENCIONES.md` (ex §15, presupuesto en año calendario).
 - **Buscar el PDF:** skill `club-sourcing`.
+- **Rusia:** no sale de PDFs. `tools/bfo-rusia.mjs` lee los JSON del fisco (`Clubes/Rusia/<Club>/bfo-AAAA-datos.json`); el detalle, en
+  `Admin/PIPELINE.md`, sección Rusia.
 - **Cómo se ve el club en el sitio:** `Admin/PANTALLA.md`.
 
 ## 8. Al cerrar la sesión

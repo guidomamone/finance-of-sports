@@ -79,23 +79,20 @@ Por qué importa: los clubes se cargan por demanda, así que una carga normal de
 Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible.
 
 **Correlo siempre antes de pushear algo que toque datos.** El número de clubes y de checks sube con
-cada sesión de onboarding (161 clubes / 842 checks al 2026-09-26), así que no es ese total el que hay
-que comparar: es que "no cierran" y "warnings" no crezcan sin explicación. Hoy hay 3 checks que no
-cierran (Bayern Munich, Revenue y PAT 2025 — la única fuente es un comunicado de prensa que redondea a
-1 decimal, documentado en `data/bayernmunich-de-data.js`) y 0 warnings de fx. Un "no cierra" nuevo que
-no tenga ya un comentario en el `data/<club>-data.js` correspondiente es el que amerita parar.
+cada sesión, así que no se compara contra un total: lo que importa es que los "no cierran" y los
+"warnings" no crezcan sin explicación. Un "no cierra" nuevo que no tenga ya un comentario en su
+`data/<club>-data.js` es el que amerita parar.
 
-**`node tools/audit.js` es el otro lado de lo mismo** (Versión 122). `auditAll()` verifica que cada
+**`node tools/audit.js` es el otro lado de lo mismo.** `auditAll()` verifica que cada
 ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Hoy (2026-09-26, 161 clubes): 0 P0,
-0 P1, 2 P2, 9 P3 (ver `auditorias/2026-09-26.md` para el detalle de cada uno). El número exacto sube y
-baja con cada sesión — lo que importa es que siga en 0 P0/P1, no el conteo de P2/P3. **Desde la
-Versión 183 también chequea que los 4 generadores estén al día** (`checkGenerados()`, P1): si tocaste
-`js/` o `data/` y subiste `ASSET_V`, hay que regenerar `fuentes.html` y sus páginas de club (161 hoy),
-porque ese generador LEE `ASSET_V` de `index.html`.
+Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
+0 P1; el conteo de P2 y P3 sube y baja con cada sesión. **También chequea que los 4 generadores estén
+al día** (`checkGenerados()`, P1): rankings, `fuentes.html` y sus páginas de club, el índice de clubes
+y el índice de `fuentes/README.md`. Si tocaste `js/` o `data/` y subiste `ASSET_V`, hay que regenerar
+`fuentes.html` y sus páginas de club, porque ese generador LEE `ASSET_V` de `index.html`.
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
 el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en
@@ -114,7 +111,7 @@ Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido
 
 1. **`Admin/ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
    se apila una línea nueva al lado de la vieja. El detalle "QUÉ ES REAL POR CLUB" vive en
-   `Admin/ESTADO-clubes.md` (Versión 239) y se GENERA (`node tools/generate-club-index.js`), no se escribe.
+   `Admin/ESTADO-clubes.md` y se GENERA (`node tools/generate-club-index.js`), no se escribe.
 2. **`Admin/TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
    terminó con la mitad de los puntos siendo cosas ya hechas), agregar lo que quedó pendiente,
    reordenar si cambió la prioridad. Los números son identificadores estables, no prioridad.
@@ -127,18 +124,20 @@ Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido
 No dupliques la to-do list en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sports-project.md`: la lista oficial vive sólo en
 `Admin/TODO.md`.
 
-**SI TOCASTE DATOS DE UN CLUB, HAY 3 ARCHIVOS GENERADOS QUE HAY QUE REGENERAR** (Versión 184; lo
-chequea `node tools/audit.js` como P1, así que no hace falta acordarse — pero sí saber qué correr):
+**SI TOCASTE DATOS DE UN CLUB, HAY ARCHIVOS GENERADOS QUE REGENERAR** (`node tools/audit.js` lo
+chequea como P1). `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos
+(`generate-club-index`, `generate-fuentes-page`, `generate-rankings`, `generate-como-corre-stats`), y
+`cargar.mjs` sube `ASSET_V`: ahí no los repitas. Si cargaste o corregiste a mano:
 
 ```
 node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO-clubes.md
-node tools/generate-fuentes-page.js    # fuentes.html, las 41 páginas de club y sitemap.xml
+node tools/generate-fuentes-page.js    # fuentes.html, las páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
 ```
 
 Y **si subiste `ASSET_V`** —aunque no hayas tocado un solo dato— hay que correr
-`generate-fuentes-page.js` igual: ese generador LEE `ASSET_V` de `index.html` y lo escribe en las 42
-páginas, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
+`generate-fuentes-page.js` igual: ese generador LEE `ASSET_V` de `index.html` y lo escribe en todas las
+páginas de club, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
 página de fuentes.
 
 ---
@@ -161,7 +160,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   `--json` para la lista completa, `--quiet` para usarlo como gate antes de un push.
   `tools/audit-ignore.json` silencia un hallazgo YA verificado a mano contra el documento, con el
   motivo escrito — nunca uno sin verificar, que es justo el atajo que este proyecto no se puede dar.
-  `--fx` (Versión 125) no audita: LISTA. Imprime los 89 tipos de cambio, uno por club-ejercicio,
+  `--fx` no audita: LISTA. Imprime los tipos de cambio, uno por club-ejercicio,
   agrupados por moneda y ordenados por año, con de dónde salió cada uno (lo declara el balance, es
   la premisa de un presupuesto, es una cotización de mercado de `FX_CLOSE`, o todavía no se sabe).
   Es la respuesta a "¿de dónde salió este número?" sin abrir un solo archivo de club.
@@ -173,11 +172,11 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
-- `node tools/generate-rankings.js` (Versión 182) — precalcula el ranking de ingresos de cada
+- `node tools/generate-rankings.js` — precalcula el ranking de ingresos de cada
   liga-ejercicio en `data/rankings/<liga>.js`, uno por liga. Corrélo después de cargar un club o
   un ejercicio. `--check` avisa si quedó viejo (y `audit.js` lo corre solo, como P1), `--print`
   imprime los rankings para verificarlos contra la fuente. Es lo que alimenta la pestaña Ligas.
-- `node tools/generate-fuentes-index.js` (Versión 175) — regenera, desde los propios
+- `node tools/generate-fuentes-index.js` — regenera, desde los propios
   `fuentes/_indice/<País>.md`, la sección "Índice de países" de `fuentes/README.md`: la línea de
   cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el
   párrafo de totales. Corrélo después de CUALQUIER sesión de sourcing, en vez de actualizar la línea
@@ -186,7 +185,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
   del agente de sourcing, así que se infiere con dos listas de regex (señales de SÍ / señales de NO).
   Cuando una línea matchea señales de los dos lados o de ninguno, el script ABORTA en vez de
   adivinar, y la decisión se toma a mano leyendo el `fuentes/<País>/<Club>.md` y se escribe en
-  `OVERRIDES`, adentro del script, con el motivo. Hoy hay 12 overrides, de la corrida original. Si
+  `OVERRIDES`, adentro del script, con el motivo de cada decisión. Si
   aborta, no es un bug: es el diseño.
 
 ---

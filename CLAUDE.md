@@ -4,7 +4,7 @@ Este es un proyecto SEPARADO del sitio profesional de Guido (`Guidomamone-pm`, r
 código ni decisiones de deploy. Son dos repos hermanos dentro de `Claude/Projects/`; si hay dudas al arrancar, chequeá `pwd` y el
 remote antes de editar o commitear. Repo: `guidomamone/finance-of-sports`; dominio: `financeofsports.com`.
 
-**YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las 1144 notas de `fuentes/**/*.md`, `auditorias/` y `Prototyping/`. O sea: todo se trackea —el respaldo en GitHub está completo— y lo interno no se publica. Las 169 páginas `fuentes/<clubId>.html` SÍ se publican, son parte del sitio. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
+**`netlify.toml` define qué se publica.** Netlify publica la raíz, pero antes de publicar corre un comando que BORRA DEL ARTEFACTO DE DEPLOY lo interno: la carpeta `Admin/` entera, `CLAUDE.md`, las notas `fuentes/**/*.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`. Todo se trackea (el respaldo en GitHub está completo) y lo interno no se publica. Se publican, a propósito, las páginas `fuentes/<clubId>.html` y las transcripciones `Clubes/**/*.md`. Ver `netlify.toml`, que explica por qué destrackear estaba mal y por qué hacer el repo privado no alcanzaba.
 
 **DÓNDE PONER UN DOCUMENTO NUEVO.** Si es interno (cualquier cosa escrita para Guido o para una sesión futura: estado, reglas, notas,
 planes) va adentro de `Admin/`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`).
