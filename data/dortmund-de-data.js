@@ -32,7 +32,7 @@
 // Gastos: Personnel expenses (nota por segmento, pág. 217): Match operations=plantel profesional
 // (wages_squad), Retail and administration (admin_general_expense), Amateur and youth football
 // (youth_other_sports_expense) — separación POR SEGMENTO disponible en la fuente, mismo patrón que
-// Vélez Sarsfield (club-data-mapping sección 14). Amortisation/depreciation (pág. 217-218): la
+// Vélez Sarsfield (club-data-mapping/referencia/formato-simplificado.md). Amortisation/depreciation (pág. 217-218): la
 // porción de "player registrations" (amortización + write-downs) es player_amortisation, el resto
 // (tangible fixed assets) es depreciation. Other operating expenses (nota, pág. 218): Match
 // operations (match_organisation_expense), Advertising (admin_general_expense, costo comercial/

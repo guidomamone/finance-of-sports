@@ -262,7 +262,7 @@ const alianzalimaPeExpenseLinesByYear = {
 // los distinga, igual que hace River. grossDebt = "Deuda concursal" (corriente + no corriente): es la
 // única línea de pasivo que es deuda financiera de verdad (el resto — cuentas por pagar comerciales,
 // impuestos por pagar, ingresos diferidos — es pasivo operativo, no deuda), mismo criterio que
-// Boca/Vélez (club-data-mapping sección 14). cash = "Efectivo y equivalente de efectivo".
+// Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md). cash = "Efectivo y equivalente de efectivo".
 const alianzalimaPeFiscalYearMeta = {
   2019: {
     currency:'PEN', fx:3.314, fxSource:'document_close',

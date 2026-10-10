@@ -7,7 +7,7 @@
 //
 // EL PROBLEMA QUE RESUELVE: cada club nuevo que no declara su propio `fx` en el
 // documento dispara una búsqueda web puntual de la cotización de SU fecha de
-// cierre (`club-data-mapping/SKILL.md` sección 5) — pasó de nuevo onboardeando
+// cierre (`club-data-mapping/referencia/fx.md`) — pasó de nuevo onboardeando
 // Almagro, 6 búsquedas para 6 cierres de 31/10 que la serie histórica completa
 // ya tiene todas juntas en un solo lugar.
 //

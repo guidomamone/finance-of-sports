@@ -35,7 +35,7 @@
 //     necesita confirmar el título exacto a mano (resolve-wikipedia-season-
 //     page.mjs), un nombre ambiguo puede traer el torneo equivocado.
 //   - El tipo de cambio a USD -- se lista dónde puede estar (fxHints), pero
-//     leerlo sigue siendo de Claude (club-data-mapping sección 5, regla 0).
+//     leerlo sigue siendo de Claude (club-data-mapping/referencia/fx.md, regla 0).
 //
 // USO:
 //   node tools/prepare-onboarding.mjs oncecaldas 2025 "Clubes/Colombia/Once Caldas/estados-financieros-2025.md"
@@ -288,7 +288,7 @@ function lookupLeague(clubId, year) {
 
 // ----------------------------------------------------------------------------
 // Bonus barato: dónde puede estar el tipo de cambio declarado por el propio
-// documento (club-data-mapping sección 5, regla 0) -- no lo interpreta, solo
+// documento (club-data-mapping/referencia/fx.md, regla 0) -- no lo interpreta, solo
 // dice en qué página buscar en vez de que Claude lea el documento entero.
 // ----------------------------------------------------------------------------
 function findFxHints(raw) {
@@ -328,7 +328,7 @@ function main() {
   const fxHints = findFxHints(raw);
 
   const warnings = [];
-  if (scannedWarning) warnings.push('Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).');
+  if (scannedWarning) warnings.push('Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/referencia/leer-pdf.md).');
   const noCierran = tieOuts.filter((t) => t.closes === false || t.error);
   const noCierranRelevantes = noCierran.filter((t) => t.likelyRelevant);
   if (noCierranRelevantes.length) warnings.push(`${noCierranRelevantes.length} tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver "tieOuts").`);

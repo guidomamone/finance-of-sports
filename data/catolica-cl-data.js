@@ -157,8 +157,7 @@
 // angosta, NO el "TOTAL PASIVOS" completo, porque el balance SÍ separa la
 // deuda financiera de otras categorías de pasivo (cuentas por pagar
 // comerciales, provisiones por beneficios a empleados, pasivos por
-// impuestos) — mismo criterio que ya usa Boca/Vélez (ver club-data-mapping
-// sección 14).
+// impuestos) — mismo criterio que ya usa Boca/Vélez (ver club-data-mapping/referencia/formato-simplificado.md, "grossDebt").
 // ============================================================================
 
 const catolicaRevenueLinesByYear = {

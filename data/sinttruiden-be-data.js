@@ -69,7 +69,7 @@
 //     carga línea.
 //   Andere bedrijfskosten (código 640/8, total 236.106) — PROMOVIDO a 2
 //     líneas según Nota 6.10 pág. 26 (impuestos SIEMPRE admin_general_expense,
-//     club-data-mapping sección 17):
+//     club-data-mapping/referencia/casos-por-pais-y-formato.md):
 //     - Bedrijfsbelastingen en -taksen (640)                       -0.222326 → admin_general_expense
 //     - Andere (641/8)                                             -0.013780 → other_expenses
 //     (suma 0.236106, exacto)

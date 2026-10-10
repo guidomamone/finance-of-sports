@@ -113,13 +113,13 @@
 //   'Despesas com competições' -> match_organisation_expense; el resto de líneas NO salariales
 //   propias del plantel (Outros custos com futebol, Lanches e refeições, Materiais esportivos,
 //   Materiais médico-cirúrgicos e medicamento, Serviços médicos/exames PJ) -> wages_squad, mismo
-//   criterio que Banfield Anexo IV / Boca 2027 / Racing (club-data-mapping sección 13, "CASO
+//   criterio que Banfield Anexo IV / Boca 2027 / Racing (club-data-mapping/referencia/formato-simplificado.md, "CASO
 //   CONSULTADO": costos no salariales del plantel profesional mezclados en el mismo departamento
 //   de fútbol van con Sueldos); las líneas claramente administrativas/de oficina/instalaciones
 //   (Custo Sócio Torcedor, Energia elétrica, Licenciamento de Software, Manutenção –
 //   equipamentos/imóveis, Marketing/Publicidade/Mídias Sociais, Materiais de escritório e
 //   expediente, Outros custos gerais) -> admin_general_expense; 'Impostos e taxas' -> SIEMPRE
-//   admin_general_expense (regla ya establecida, club-data-mapping sección 17).
+//   admin_general_expense (regla ya establecida, club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // - Nota "Custos com pessoal" (atividades patrimoniais, personal FUERA del plantel de fútbol) ->
 //   admin_general_expense completo.
 // - Nota "Custos gerais" (atividades patrimoniais) -> admin_general_expense completo (a diferencia
@@ -140,8 +140,7 @@
 // grossDebt = 'Empréstimos e financiamentos' (circulante + não circulante) + 'Operações de
 // debêntures' (circulante + não circulante, existe desde el balance 2024), Controladora — el
 // balance separa estas líneas de "Fornecedores e outras obrigações"/"Tributos e contribuições
-// sociais"/"Contas a pagar na transferência de jogadores", mismo criterio de sección 14 de
-// club-data-mapping (preferir la línea angosta de deuda financiera real). cash = "Caixa e
+// sociais"/"Contas a pagar na transferência de jogadores", mismo criterio de club-data-mapping/referencia/formato-simplificado.md, "grossDebt" (preferir la línea angosta de deuda financiera real). cash = "Caixa e
 // equivalentes de caixa", Controladora.
 //
 // Escala: documento "Em milhares de Reais" (miles de reales) los 3 años — acá en MILLONES de BRL

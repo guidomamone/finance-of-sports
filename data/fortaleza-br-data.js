@@ -38,8 +38,7 @@
 // operacionais, líquidas" (Nota 20, neto +41.740), un bloque de "Outras receitas operacionais"
 // (123.927, incluye venta/préstamo de jugadores) contra "Outras despesas operacionais" (-82.187,
 // incluye 2 bajas contables no recurrentes). Las 2 líneas "Receita bruta de futebol" (290.679) y
-// "Receita bruta diversas" (12.789) de la Nota 17 son SUBTOTALES de sus propios ítems (ver sección
-// 10 de club-data-mapping/SKILL.md, "fila acumulada") — NO se cargaron como líneas propias, solo sus
+// "Receita bruta diversas" (12.789) de la Nota 17 son SUBTOTALES de sus propios ítems (ver club-data-mapping/referencia/leer-pdf.md, "fila acumulada") — NO se cargaron como líneas propias, solo sus
 // componentes, para no duplicar.
 //
 // CATEGORIZACIÓN (Nota 17, Receita operacional líquida):
@@ -92,7 +91,7 @@
 //
 // CATEGORIZACIÓN (Nota 18, "Custo das atividades sociais e esportivas por natureza", -327.259 M BRL):
 // costos NO salariales del plantel profesional mezclados en la misma nota que sueldos/primas van
-// TODOS a wages_squad, mismo criterio "CASO CONSULTADO" de club-data-mapping sección 13 (Racing/Boca
+// TODOS a wages_squad, mismo criterio "CASO CONSULTADO" de club-data-mapping/referencia/formato-simplificado.md (Racing/Boca
 // 2027/Banfield/Atlético Mineiro): 'Salários, encargos e benefícios'/'Direito de imagem'/'Prêmios e
 // gratificações'/'Gastos com premiação de atletas'/'Viagens e estadias'/'Outros gastos com atletas'
 // -> wages_squad. 'Gastos com jogos e competições' -> match_organisation_expense. Costos
@@ -115,7 +114,7 @@
 //
 // 'Despesas tributárias' (-14.470 M BRL): línea suelta de la DRE, sin nota de detalle propia (no es
 // IRPJ/CSLL — no aparece ninguna línea de impuesto a las ganancias en la DRE, la SAF arrastra
-// pérdidas acumuladas) -> admin_general_expense, regla permanente de club-data-mapping sección 17
+// pérdidas acumuladas) -> admin_general_expense, regla permanente de club-data-mapping/referencia/casos-por-pais-y-formato.md
 // ("Impuestos... SIEMPRE admin_general_expense").
 //
 // netInterest/tax: 'Resultado financeiro, líquido' (Nota 21: Receitas financeiras 4.888 − Despesas
@@ -124,7 +123,7 @@
 // grossDebt = 'Empréstimos e financiamentos' (Nota 10, circulante 35.966 + não circulante 24.200 =
 // 60.166) — el balance separa esta línea de 'Contas a pagar de transferência de jogadores' (Nota 9,
 // deuda por pases, no deuda financiera) y de 'Passivos de arrendamentos' (Nota 11, obligación de
-// leasing del centro de treinamento, no préstamo), mismo criterio de sección 14 de club-data-mapping
+// leasing del centro de treinamento, no préstamo), mismo criterio de club-data-mapping/referencia/formato-simplificado.md, "grossDebt"
 // (preferir la línea angosta de deuda financiera real). cash = 'Caixa e equivalentes de caixa' (Nota
 // 4, 4.074).
 //

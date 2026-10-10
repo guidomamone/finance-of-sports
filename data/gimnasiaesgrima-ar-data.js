@@ -24,7 +24,7 @@
 // (Fútbol Profesional, Deportes y Actividades Sociales, Jardín de Infantes y Escuela, Generales,
 // Financieros y por Tenencia) cruzado con RUBRO como eje de FILAS (Anexo IV/V de Recursos/Gastos,
 // numeración de Anexo varía por año) — mismo patrón de matriz 2 ejes que Vélez Sarsfield (ver
-// club-data-mapping SKILL.md sección 14). Cuando una fila tiene columnas en más de un sector CON
+// club-data-mapping/referencia/formato-simplificado.md). Cuando una fila tiene columnas en más de un sector CON
 // LA MISMA normalizedCategory (ej. "Derechos de Televisión" en Fútbol Profesional + Deportes), se
 // cargó como UNA sola línea con el total combinado. Cuando los sectores de una fila mapean a
 // categorías DISTINTAS (ej. "Sueldos y Cargas Sociales", "Varios", "Atención Médica"), se partió en
@@ -32,7 +32,7 @@
 //
 // CRITERIO DE SECTOR → CATEGORÍA usado en los 3 ejercicios (igual en los 3, no varía):
 //   Fútbol Profesional → wages_squad (sueldos/primas/premios/médico/viáticos del plantel, mismo
-//     criterio "CASO CONSULTADO" de club-data-mapping sección 13: costos no salariales del plantel
+//     criterio "CASO CONSULTADO" de club-data-mapping/referencia/formato-simplificado.md: costos no salariales del plantel
 //     profesional se suman a wages_squad, como ya hace Racing/Boca 2027/Banfield/Talleres) o
 //     player_amortisation/player_impairment/other_expenses según el concepto puntual (ver abajo).
 //   Deportes y Actividades Sociales → youth_other_sports_expense (gasto) / other_sports (ingreso).
@@ -43,7 +43,7 @@
 //     Diferencia de Cambio, Rendimiento Inversiones del lado de Ingresos; Intereses y Gastos
 //     Financieros, Diferencia de Cambio del lado de Gastos). "Cargas Fiscales" es la EXCEPCIÓN: pese
 //     a aparecer bajo la columna Financieros en el documento, es un impuesto (Impuesto a los
-//     Débitos/Créditos Bancarios), así que sigue la regla fija de club-data-mapping sección 17
+//     Débitos/Créditos Bancarios), así que sigue la regla fija de club-data-mapping/referencia/casos-por-pais-y-formato.md
 //     ("Impuestos → SIEMPRE admin_general_expense") en vez del criterio de columna.
 //
 // RECPAM (Resultado por Exposición al Cambio del Poder Adquisitivo de la Moneda): en el balance
@@ -85,8 +85,7 @@
 // centralizada (2026-09-23): la primera versión de este archivo reusaba el `fx` document_close del
 // BALANCE pareado para los 2 overlays, pero eso etiqueta mal la procedencia — `document_close`
 // significa específicamente "ESTE documento lo declara", y el presupuesto no declara nada. Un
-// documento que no declara TC y cuyo ejercicio ya cerró cae en la regla 1/2 de club-data-mapping
-// SKILL.md sección 5: cotización de mercado a la fecha de CIERRE del ejercicio, exactamente lo que
+// documento que no declara TC y cuyo ejercicio ya cerró cae en la regla 1/2 de club-data-mapping/referencia/fx.md: cotización de mercado a la fecha de CIERRE del ejercicio, exactamente lo que
 // ya existía en FX_CLOSE (`ARS@2024-06-30`:909, `ARS@2025-06-30`:1203 — agregadas en la Versión 207
 // para otro club, reusables sin tocar nada). Los 2 overlays quedaron entonces `fxSource:
 // 'market_close'` con esas referencias, NO 'document_close'. Para el standalone 2026 (sin balance

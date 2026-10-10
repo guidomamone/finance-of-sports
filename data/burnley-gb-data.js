@@ -32,7 +32,7 @@
 // GBP ya es moneda cargada en el sitio (Arsenal/Liverpool/Man City/Everton/Tottenham). Ninguno de
 // los 2 documentos declara un tipo de cambio propio GBP/USD (solo hay exposición a riesgo de tipo
 // de cambio genérica en el texto de going concern, sin cifra), así que corresponde `market_close` +
-// `fxRef` (regla #0 de club-data-mapping sección 5 no aplica). El cierre 31/7 es una fecha NUEVA
+// `fxRef` (regla #0 de club-data-mapping/referencia/fx.md no aplica). El cierre 31/7 es una fecha NUEVA
 // para GBP en FX_CLOSE (hasta ahora solo había 31/5 y 30/6): se agregaron 'GBP@2024-07-31' (0,7793)
 // y 'GBP@2025-07-31' (0,7556) a data/currency-map.js, cruzando el Boletín BCE de esas fechas exactas
 // (GBP/EUR y EUR/USD publicados por el BCE, mismo método que las entradas ya existentes).
@@ -84,7 +84,7 @@
 // "grossDebt" = Note 18 "Loans and overdrafts", TOTAL (Bank loans + Other loans/Proceeds from
 // factored debts, corriente + no corriente) — se prefirió esta línea angosta de deuda financiera
 // real en vez del total de "Creditors" (que mezcla acreedores comerciales de otros clubes,
-// impuestos, anticipos, etc.), mismo criterio de club-data-mapping sección 14. "cash" = "Cash at
+// impuestos, anticipos, etc.), mismo criterio de club-data-mapping/referencia/formato-simplificado.md. "cash" = "Cash at
 // bank and in hand" (Balance Sheet).
 //
 // VERIFICACIÓN (a mano, sumando cada línea contra los totales impresos — los 2 ejercicios

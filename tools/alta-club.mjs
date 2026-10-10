@@ -131,7 +131,7 @@
 //                  para esa liga-temporada -> `pendiente` y la fila se escribe en `null`
 //                  (= "nadie lo verificó", P3).
 // currency         la del país, o la que el documento muestra (ver arriba).
-// fx               REGLA #0 de `club-data-mapping` §5: el tipo de cambio que declara
+// fx               REGLA #0 de `club-data-mapping/referencia/fx.md`: el tipo de cambio que declara
 //                  el propio documento gana siempre. Se buscan en el `.md` líneas
 //                  con una palabra de tipo de cambio (tipo de cambio, taxa de
 //                  câmbio, PTAX, exchange rate, Wechselkurs, tečaj, kurz, курс,
@@ -602,7 +602,7 @@ function numerosDe(linea) {
   return out;
 }
 
-// REGLA #0 de club-data-mapping §5: ¿el documento declara su propio tipo de cambio a USD?
+// REGLA #0 de club-data-mapping/referencia/fx.md: ¿el documento declara su propio tipo de cambio a USD?
 // COMPUERTA DE FECHA (Versión 373, escalera del tipo de cambio aprobada por Guido el 2026-10-02): una cotización cuya frase (la línea y sus
 // vecinas) trae una fecha completa que NO es la del cierre no es la de cierre: es la de una operación. Se descarta y la escalera sigue (tabla,
 // serie oficial). Caso real: Fortaleza CEIF 2025, L534 "El 20 de noviembre del año 2025, se realizó un traslado de dineros ... por USD
@@ -1185,7 +1185,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   const mercado = serie.fx || (sitio.FX_CLOSE[`${moneda}@${cierre}`] || {}).fx || null;
   const dec = fxDeclarado(md, moneda, mercado, cierre);
   if (reportType === 'official_budget') {
-    out.push(campo('fx', dec.grupos && dec.grupos.length ? dec.grupos.map((g) => g.valor) : null, 'presupuesto: el tipo de cambio es la PREMISA que declara el propio documento (fxSource document_assumption)', 'pregunta', { pregunta: 'Presupuesto: ¿qué tipo de cambio asume el documento? (si declara dos puntos, se promedian — club-data-mapping §5 regla 3)' }));
+    out.push(campo('fx', dec.grupos && dec.grupos.length ? dec.grupos.map((g) => g.valor) : null, 'presupuesto: el tipo de cambio es la PREMISA que declara el propio documento (fxSource document_assumption)', 'pregunta', { pregunta: 'Presupuesto: ¿qué tipo de cambio asume el documento? (si declara dos puntos, se promedian — club-data-mapping/referencia/fx.md, regla 3)' }));
     return out;
   }
   if (dec.grupos && dec.grupos.length) {

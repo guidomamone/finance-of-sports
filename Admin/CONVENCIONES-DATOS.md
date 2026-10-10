@@ -146,7 +146,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 - PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido:
   "si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si
   salieron de internet o del club, ¿puedo hacerlo sin drama?", la respuesta era que no). Cada
-  ejercicio lleva `fxSource` con uno de los 6 valores de `FX_SOURCE` (`data/currency-map.js`), o
+  ejercicio lleva `fxSource` con uno de los 7 valores de `FX_SOURCE` (`data/currency-map.js`), o
   `fxRef` apuntando a `FX_CLOSE`. **La regla de cuál de las dos formas usar**: si el tipo de cambio
   lo declara el propio documento, el número va LITERAL en el archivo del club (`fx:909,
   fxSource:'document_close'`), porque es un dato de ESE club y dos clubes pueden declarar valores
@@ -155,84 +155,29 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   (`fxRef:'EUR@2025-06-30'`), porque es un dato del mercado y antes se copiaba club por club (33
   copias de 9 valores). `document_assumption` (la premisa de un presupuesto) es una categoría
   aparte de `document_close` a propósito: un presupuesto declara un pronóstico que puede terminar
-  equivocado, no un cierre ya ocurrido. Detalle completo y tabla de los 6 valores en
-  `.claude/skills/club-data-mapping/SKILL.md` sección 5. Lo chequea `node tools/audit.js`: un `fx`
+  equivocado, no un cierre ya ocurrido. Detalle completo y tabla de los 7 valores en
+  `.claude/skills/club-data-mapping/referencia/fx.md`. Lo chequea `node tools/audit.js`: un `fx`
   sin procedencia sale listado, y una cotización de mercado que contradiga a la tabla para la misma
   fecha también.
-- SEGUNDO EJERCICIO NUEVO DE SAN LORENZO + REGLA DE PRESUPUESTOS EN CAJA (Versión 97, Guido: "quiero
-  onboardear todos los pdf que tengamos"): 2 decisiones de arquitectura documentadas y 1 ejercicio
-  nuevo cargado. (1) Instituto: el Presupuesto 2025 (año calendario, ya transcripto) NO se carga —
-  regla nueva: un presupuesto calendario se reconstruye a temporada combinando 2 documentos
-  calendario consecutivos, y con uno solo no hay forma de completar ninguna temporada, así que se
-  mantiene la info transcripta sin subir nada incompleto (ver al final de este archivo, "ex §15").
-  (2) San Lorenzo: Presupuesto 2023/2024 cargado como
-  3er ejercicio del club (antes solo 2013/2014) — la transcripción `.md` original salió mal
-  alineada por un artefacto de `pdftotext -layout` (números de filas anchas cayendo en líneas
-  separadas), así que se re-leyó directo de imágenes renderizadas de la página (300dpi, 3 crops) en
-  vez de confiar en el texto extraído. El documento separa una sección "Ordinaria" de una
-  "Extraordinaria" (financiamiento/capital) — regla nueva: solo se carga la Ordinaria (ver
-  `club-data-mapping/SKILL.md` secciones 16-17), "Resultado Ordinario" es el PAT del ejercicio.
-  Categorización verificada con Guido antes de cargar (ping-pong de preguntas concretas, no
-  asumido). Gestión dividida casi a la mitad entre Tinelli y Moretti — se usó Moretti (a cargo al
-  cierre), duda anotada. `verifyTieOuts()` da 243/243 checks, 0 errores, en los 11 clubes. Detalle completo en `Admin/finance-of-sports-project.md`.
-- REGLA PERMANENTE (Versión 189, pedido explícito de Guido, REEMPLAZA a la regla de la Versión 49
-  que decía lo contrario y quedó abajo como historia): **"Estadio" en Formato simplificado es UNA
-  sola fila** que junta las 3 formas que tiene un club de monetizar su estadio — recaudación
-  partido a partido (`matchday_competition`), abonos de temporada (`season_tickets`) y uso o
-  alquiler del estadio fuera del fútbol (`stadium_other`, categoría nueva de esta versión:
-  recitales, eventos, concesiones del estadio, licitación de palcos). **El acordeón de esa fila las
-  separa**, con el `rawLabel` de cada club, así que la distinción no se pierde: deja de ser una
-  fila y pasa a ser un click. Guido: *"tengamos Estadio a secas, y si se presiona en el acordeón de
-  estadio, sale el desagregado"* y *"pongamos abonos dentro de Estadio. O sea, el acordeón de
-  estadio tiene 3 cosas y abonos deja de ser su propia fila"*.
-  POR QUÉ ESTO NO REABRE LA CONFUSIÓN QUE MOTIVÓ LA REGLA DE LA VERSIÓN 49: esa regla existía
-  porque el label viejo ("Entradas / Abonos") sugería que las entradas estaban repartidas entre dos
-  filas. Ahora no hay dos filas que repartir: hay una sola, y el desglose está adentro. Lo que la
-  regla vieja protegía —que el visitante pueda ver cuánto es abono y cuánto es venta por partido—
-  lo sigue dando el acordeón.
-  **CÓMO SE REVIERTE, si Guido cambia de idea**: `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`
-  pasa a `false` y vuelve la fila "Abonos" en su posición histórica (6ta). **No hay que tocar ningún
-  archivo de datos**: `season_tickets` sigue siendo la misma categoría en los dos escenarios, lo
-  único que cambia es en qué fila se muestra. Sí hay que correr `node tools/generate-rankings.js`
-  después (los rankings hornean el nombre de cada fila) — y si te olvidás, `node tools/audit.js` lo
-  marca como P1. Los colores y las claves i18n de "Abonos" y de "Estadio: recaudación de partidos"
-  se dejaron vivas a propósito para que revertir no obligue a volver a elegirlas.
-- REGLA PERMANENTE (Versión 189): Ingresos tiene 2 filas nuevas, **"Educación"** (`education`) y
-  **"Otras secciones deportivas"** (`other_sports` + `youth_football` + `womens_football`), y el
-  catch-all pasa a llamarse **"Otros ingresos"** a secas. Las dos filas son el espejo, del lado de
-  Ingresos, de lo que la Versión 53 ya había hecho del lado de Gastos: hasta la 188, las 4
-  categorías que no son fútbol profesional caían ENTERAS al catch-all, así que el colegio de Vélez
-  (20% de sus ingresos) no aparecía en ninguna fila. El relevamiento que lo midió club por club
-  está en `auditorias/2026-09-22-catchall-no-futbol.md`: 13 de los 41 clubes tienen negocio no
-  futbolístico con plata ahí, incluidos **los 11 argentinos, los 11**. El catch-all se renombró
-  porque "Otras secciones deportivas y otros ingresos" quedaba a un renglón de su casi homónimo
-  (Guido: *"se me hacen muy parecidos 'otros' y 'otras' al lado del otro"*) — y de paso queda
-  simétrico con Gastos, cuyo catch-all ya era "Otros gastos" a secas.
-  QUÉ VA EN CADA UNA, para no tener que re-decidirlo por club: `education` es el colegio/escuela
-  del club (aranceles de enseñanza, subsidios estatales a la educación), NO una escuela o academia
-  de fútbol (eso es `youth_football`) ni un departamento de educación física (eso es
-  `other_sports`). `other_sports` en Ingresos son las secciones y actividades deportivo-recreativas
-  del socio (básquet, tenis, polideportivo, ciudad deportiva, pileta, náutica, colonia de
-  vacaciones, subcomisiones) — mismo recorte que ya usa `youth_other_sports_expense` del lado de
-  Gastos, que por ejemplo ya tenía la colonia de vacaciones de Estudiantes adentro. Lo que es
-  negocio comercial y no una sección del club (eventos, salones, hotelería, estacionamiento) se
-  queda en `other_income` → "Otros ingresos".
-  CRITERIO CONSERVADOR PARA `stadium_other`, que conviene no aflojar: solo entra la línea cuyo
-  rótulo nombra el estadio o una parte de él. Un "Alquileres" o "Arrendamientos" genérico NO entra
-  aunque probablemente sea el estadio — queda en "Otros ingresos" y la pregunta va a
-  `Admin/dudas-por-club.md`. Es la diferencia entre lo que el documento dice y lo que suponemos.
-- REGLA (Versión 38, corrige un bug real de categorización): antes de meter algo adentro de
-  `items` (sub-ítems de desglose de un revenueLine/expenseLine), confirmar que esos sub-ítems NO
-  tengan cada uno su propia categoría real distinta, si la tienen, van como líneas de PRIMER
-  NIVEL con su propio `normalizedCategory`, no adentro de `items` de una línea `lump_football_
-  operations(_expense)`. `items` nunca lo mira `sumCat()`/`computeYearGeneric()`, así que cualquier
-  cálculo por categoría (incluido "Formato simplificado") ignora lo que quede ahí adentro. Bug real:
-  Racing 2026/2027 tenía Televisión/Comercial/Venta de jugadores/Salarios del plantel en $0 en
-  "Formato simplificado" porque esa plata estaba enterrada en `items` de una línea mal categorizada
-  como bolsón sin desglosar, cuando el documento SÍ la desglosaba. Ver
-  `.claude/skills/club-data-mapping/SKILL.md` sección 1 (regla completa) y
-  `Admin/PANTALLA.md`, ex §8 (cómo detectarlo probando en el
-  navegador: mirar CADA bucket de "Formato simplificado", no solo el total).
+- PRESUPUESTOS EN CAJA Y EN AÑO CALENDARIO: un presupuesto de caja con sección "Extraordinaria" se carga SOLO en su parte Ordinaria ("Resultado
+  Ordinario" es el PAT del ejercicio): regla completa en `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md`, "Un presupuesto
+  de CAJA...". Un presupuesto en año calendario no se carga con un solo documento: ver al final de este archivo ("ex §15"). Cuando la
+  gestión de un ejercicio queda dividida entre dos presidentes, se atribuye la que está a cargo al cierre y la duda va a
+  `Admin/dudas-por-club.md`.
+- "ESTADIO" EN FORMATO SIMPLIFICADO ES UNA SOLA FILA que junta `matchday_competition`, `season_tickets` y `stadium_other`; el acordeón las
+  separa por `rawLabel` de cada club (criterio y filas: `club-data-mapping/referencia/formato-simplificado.md`). **Cómo se revierte, si Guido
+  cambia de idea**: `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js` pasa a `false` y vuelve la fila "Abonos" en su posición histórica
+  (6ta). No hay que tocar ningún archivo de datos: `season_tickets` es la misma categoría en los dos escenarios, solo cambia en qué fila se
+  muestra. Sí hay que correr `node tools/generate-rankings.js` después (los rankings hornean el nombre de cada fila); si te olvidás,
+  `node tools/audit.js` lo marca como P1. Los colores y las claves i18n de "Abonos" y de "Estadio: recaudación de partidos" se dejaron
+  vivas a propósito para que revertir no obligue a volver a elegirlas.
+- INGRESOS TIENE LAS FILAS "Educación" (`education`) y "Otras secciones deportivas" (`other_sports` + `youth_football` + `womens_football`),
+  y el catch-all se llama "Otros ingresos" a secas (simétrico con "Otros gastos"). Qué va en cada una, y el criterio conservador para
+  `stadium_other`: tabla de `.claude/skills/club-data-mapping/SKILL.md`, sección 1.
+- SUB-ÍTEMS EN `items`: solo si son todos la misma categoría que el padre; si cada uno tiene su categoría real distinta, van como líneas de
+  PRIMER NIVEL (`items` no lo mira `sumCat()`/`computeYearGeneric()`, así que lo enterrado ahí desaparece de "Formato simplificado"). Regla
+  completa: `.claude/skills/club-data-mapping/SKILL.md` sección 1; el ejemplo de Racing: `referencia/casos-por-pais-y-formato.md`, "Ejemplo
+  largo"; cómo detectarlo probando en el navegador (mirar CADA bucket, no solo el total): `Admin/PANTALLA.md`, ex §8.
 - OJO REGLA REFORZADA (bug real, Versión 30): NUNCA cargar datos al sitio
   extrayendo un PDF directo, sin pasar antes por una transcripción completa
   a Markdown (CLAUDE.md ya lo decía, pero se saltó una vez con el

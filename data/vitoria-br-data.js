@@ -82,8 +82,7 @@
 //   youth_other_sports_expense.
 // - 'Serviços' (segmento futebol, sin nota propia, prestação de serviços PJ contra Nota 25(a)) ->
 //   admin_general_expense.
-// - Nota 26 (Despesas tributárias, segmento futebol) -> admin_general_expense (impuestos, sección 17
-//   del skill).
+// - Nota 26 (Despesas tributárias, segmento futebol) -> admin_general_expense (impuestos, club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // - Nota 27 (Despesas diretas, segmento futebol): 'Direito de imagem' -> wages_squad (mismo criterio
 //   que Botafogo/Athletico); 'Despesas com jogos' -> match_organisation_expense; 'Empréstimos de
 //   atletas'/'Intermediação'/'Multas contratuais'/'Luvas'/'Outras despesas diretas'/'Custo das
@@ -122,7 +121,7 @@
 // porção não circulante en este balance (no aparece en la lista de pasivo no corriente). Línea
 // angosta, separada de Fornecedores/Imagens-intermediações-luvas a pagar/Obrigações e encargos
 // sociais/Tributos parcelados/Acordos a pagar/Provisão para contingências en el propio Balanço,
-// mismo criterio que Boca/Athletico Paranaense (sección 14 del skill). cash = 'Caixa e equivalentes
+// mismo criterio que Boca/Athletico Paranaense (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). cash = 'Caixa e equivalentes
 // de caixa' Controladora (0,066; Nota 8) — extremadamente bajo, consistente con la situación de
 // patrimonio neto negativo del club (ver comentario de cabecera).
 //

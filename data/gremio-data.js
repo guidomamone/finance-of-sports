@@ -63,7 +63,7 @@
 //   en category-map.js, other_income es el catch-all correcto para un ítem no operativo.
 // - 'Negociação de atletas' (Nota 25, NEGATIVO — comisiones/costos de intermediación, distinto de la
 //   ganancia de 'Venda de Atletas') -> other_expenses, mismo criterio que Racing (ver
-//   club-data-mapping SKILL.md sección 13, "Pago de gastos por compraventa de jugadores" se dejó en
+//   club-data-mapping/referencia/formato-simplificado.md, bloque "CASO CONSULTADO": "Pago de gastos por compraventa de jugadores" se dejó en
 //   other_expenses, no en player_amortisation, porque esa categoría en Boca es solo
 //   amortización/deterioro contable, no comisiones).
 // - 'Ingressos a Sócios' y 'CMV – Grêmio Mania' (dentro de Nota 23, Custo Operacional) ->

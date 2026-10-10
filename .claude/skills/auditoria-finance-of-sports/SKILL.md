@@ -118,7 +118,7 @@ es una mala operación, siempre.**
 
 **PROHIBIDO recortar acá. No es negociable por sesión, ni "solo esta vez":**
 
-- Verificar el OCR fila por fila antes de cargar un ejercicio (`club-data-mapping` §15).
+- Verificar el OCR fila por fila antes de cargar un ejercicio (`club-data-mapping/referencia/leer-pdf.md`).
 - Re-sumar las líneas en vez de confiar en el total impreso.
 - Resumir o saltear partes de una transcripción de PDF (`CLAUDE.md`: es transcripción fiel, no resumen).
 - Saltear un tie-out, o cargar un ejercicio sin `officialTotal*` habiendo un total impreso disponible.

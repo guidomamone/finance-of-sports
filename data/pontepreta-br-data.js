@@ -49,7 +49,7 @@
 // exacto R$15.215.627, pero el "Total Geral" impreso dice R$15.275.627 — un dígito transpuesto).
 // En cada uno de estos casos se usó la SUMA de los sub-ítems (que además reconcilia exacto contra
 // el nivel superior, el total de "Demais Gastos"/Profissional/Departamento), no el total impreso
-// aislado — mismo criterio que club-data-mapping sección 10 (fila acumulada / total que no
+// aislado — mismo criterio que club-data-mapping/referencia/leer-pdf.md (fila acumulada / total que no
 // reconcilia: buscar la explicación en el propio documento antes de forzar el número impreso).
 //
 // CATEGORIZACIÓN (Profissional, con detalle de Nota 18/18.(a)/19.(b) por año, ver cada año abajo
@@ -68,14 +68,14 @@
 //   (derecho de imagen del plantel, mismo criterio que Operário Ferroviário/Guarani);
 //   'Intermediação / Comissão' -> other_expenses (comisiones de intermediación de pases — Racing
 //   dejó este mismo tipo de gasto FUERA de player_amortisation por decisión explícita de Guido,
-//   club-data-mapping sección 13 CASO CONSULTADO: Boca tampoco separa comisiones dentro de su
+//   club-data-mapping/referencia/formato-simplificado.md CASO CONSULTADO: Boca tampoco separa comisiones dentro de su
 //   bucket "Compra de jugadores", así que meterlo ahí sería MENOS fiel, no más homologado);
 //   'Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos' -> match_organisation_
 //   expense; 'Taxas CBF / FPF' -> match_organisation_expense; 'Outras Despesas' ->
 //   other_expenses (catch-all de la propia nota, compuesto mayormente por provisión de
 //   contingencias nueva del ejercicio, Nota 18.(a)(d)); 'Fenapaf/INSS' -> admin_general_expense
 //   (cargas descontadas en la fuente de las cuotas de TV, mismo espíritu que "impuestos" de
-//   club-data-mapping sección 17, aunque técnicamente es una contribución social, no un impuesto
+//   club-data-mapping/referencia/casos-por-pais-y-formato.md, aunque técnicamente es una contribución social, no un impuesto
 //   puro); 'Amortização / Depreciação' -> depreciation; 'Acordo Trabalhista e outros' ->
 //   wages_squad (acuerdos/distratos laborales con ex-jugadores y personal, Nota 16).
 // - Departamentos NO Profissional: 'Administrativo - Estadio' (ingreso) -> stadium_other (el

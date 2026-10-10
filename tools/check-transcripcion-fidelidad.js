@@ -45,7 +45,7 @@
 // NÚMERO está bien contra el PDF — esto es fidelidad de la TRANSCRIPCIÓN (¿está
 // todo el texto?), no verificación de datos (eso es club-data-mapping, al
 // onboardear). No reemplaza la verificación humana obligatoria de un documento
-// marcado como escaneado (club-data-mapping sección 6, punto 6).
+// marcado como escaneado (club-data-mapping/referencia/leer-pdf.md, "Documento transcripto con Mistral OCR").
 //
 // LIMITACIÓN REAL DEL CHEQUEO DE COBERTURA (encontrada verificando este mismo
 // script contra Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md,

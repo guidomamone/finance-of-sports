@@ -78,8 +78,7 @@
 //     que Zulte Waregem/Charleroi (provisión → exceptional_items)   0.089665 → exceptional_items
 //   Andere bedrijfskosten (código 640/8, total 269.439) — Nota 6.10 pág. 25
 //     desglosa 640 (Bedrijfsbelastingen) = 269.439 y 641/8 (Andere) = 0 este
-//     ejercicio (impuestos SIEMPRE admin_general_expense, club-data-mapping
-//     sección 17):
+//     ejercicio (impuestos SIEMPRE admin_general_expense, club-data-mapping/referencia/casos-por-pais-y-formato.md):
 //     - Bedrijfsbelastingen en -taksen (640)                      -0.269439 → admin_general_expense
 //   Niet-recurrente bedrijfskosten (código 66A, 6.012.965, todo bajo el
 //     código 6690 "Andere niet-recurrente bedrijfskosten" según Nota 6.12,

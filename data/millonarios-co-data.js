@@ -30,7 +30,7 @@
 // .md, "Las tasas tomadas para estos estados financieros son"): TRM USD al
 // 31/12/2025 = $3.757,50 — LIGERAMENTE distinto de la TRM oficial genérica ya
 // cargada en FX_CLOSE (COP@2025-12-31 = 3757,08). Por la Regla 0 de
-// club-data-mapping/SKILL.md sección 5 (el tipo de cambio que el propio
+// club-data-mapping/referencia/fx.md (el tipo de cambio que el propio
 // documento declara gana siempre sobre una cotización externa), se usa el
 // literal 3757,50 con fxSource:'document_close', NO fxRef.
 //
@@ -136,7 +136,7 @@ const millonariosCoExpenseLinesByYear = {
 const millonariosCoFiscalYearMeta = {
   2025: {
     // El documento declara su propio TRM de cierre (pág. 3 del .md): $3.757,50 al 31/12/2025 —
-    // literal, no fxRef (ver comentario de cabecera, Regla 0 de club-data-mapping sección 5).
+    // literal, no fxRef (ver comentario de cabecera, Regla 0 de club-data-mapping/referencia/fx.md).
     currency:'COP', fx:3757.50, fxSource:'document_close',
     sourceId:'millonarios-co-estados-financieros-2025',
     reportType:'official_balance_sheet',

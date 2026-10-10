@@ -68,8 +68,7 @@
 //   - "Remuneraciones"/"Remuneraciones Administración" → wages_squad (plantel,
 //     dentro de Costo de Ventas) / admin_general_expense (administración,
 //     dentro de Gasto de Administración) respectivamente — mismo criterio de
-//     "cargas/sueldos van con su sector" de club-data-mapping SKILL.md sección
-//     17.
+//     "cargas/sueldos van con su sector" de club-data-mapping/referencia/casos-por-pais-y-formato.md.
 //   - "Amortización de pases" / "Costo de venta de pases de jugadores" →
 //     player_amortisation (igual criterio que Once Caldas/Racing: costo de
 //     adquirir/vender el derecho federativo del jugador).
@@ -97,7 +96,7 @@
 //
 // grossDebt = "Otros pasivos financieros" corrientes + no corrientes (línea
 // angosta de deuda financiera real, NO el Total Pasivos completo — mismo
-// criterio que Boca/Vélez, ver club-data-mapping SKILL.md sección 14: el
+// criterio que Boca/Vélez, ver club-data-mapping/referencia/formato-simplificado.md: el
 // Estado de Situación Financiera de Azul Azul separa esta deuda financiera de
 // "Cuentas por pagar comerciales"/"Otros pasivos no financieros"/
 // "Provisiones", así que se usa la línea angosta). cash = "Efectivo y

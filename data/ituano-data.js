@@ -69,7 +69,7 @@
 // não circulante (9.695.588,24, Nota 20) = 10.847.428,72. Quedan fuera a
 // propósito las obligaciones laborales, tributarias, con proveedores y el
 // Parcelamento de Impostos Federais: son pasivos operativos/fiscales, no deuda
-// financiera (mismo criterio que Grêmio, ver SKILL.md sección 14).
+// financiera (mismo criterio que Grêmio, ver club-data-mapping/referencia/formato-simplificado.md, "grossDebt").
 // cash = 'Caixa e Bancos' (Nota 4) = 54.008,22. OJO, cayó desde 1.471.333,83 en
 // 2023: el club cerró 2024 prácticamente sin caja.
 //

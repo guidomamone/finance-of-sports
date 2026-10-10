@@ -75,7 +75,7 @@
 //     sin flags de página; se re-verificó línea por línea contra la página 24
 //     del PDF):
 //     - Bedrijfsbelastingen en -taksen (impuestos/tasas empresariales,
-//       mismo criterio que club-data-mapping sección 17: impuestos SIEMPRE
+//       mismo criterio que club-data-mapping/referencia/casos-por-pais-y-formato.md: impuestos SIEMPRE
 //       admin_general_expense)                                   -0.499055 → admin_general_expense
 //     - Andere (sin más desglose)                                -0.105779 → other_expenses
 //     Suma 0.499055+0.105779 = 0.604834, EXACTO contra el total impreso.

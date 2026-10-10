@@ -123,7 +123,7 @@
 //   real), EXCLUYENDO obveze prema agentima/dobavljačima/zaposlenicima
 //   (pasivos operativos, no deuda financiera) y obračunati troškovi/
 //   rezerviranja (devengados/previsiones) — mismo criterio angosto que
-//   Boca/Vélez/Köln/Ajax (club-data-mapping SKILL.md sección 14). cash:
+//   Boca/Vélez/Köln/Ajax (club-data-mapping/referencia/formato-simplificado.md). cash:
 //   Novac i novčani ekvivalenti = 562.542.
 //
 // GESTIÓN: la Uprava (directorio ejecutivo) cambió de composición DENTRO del

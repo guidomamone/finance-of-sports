@@ -19,7 +19,7 @@
 // con la suma de las 13 líneas de gasto que la preceden (GASTOS MANTENIMIENTO
 // INST. DEPORTIVAS ... DESCUENTOS EN RECIBOS SOCIALES) — confirmado con cálculo
 // exacto. Se excluyó de expenseLines (sumarla habría duplicado esas 13 líneas).
-// Ver club-data-mapping SKILL.md sección 10 ("la fila acumulada").
+// Ver club-data-mapping/referencia/leer-pdf.md ("la fila acumulada").
 //
 // RESULTADOS FINANCIEROS: el documento NO separa "Recursos"/"Gastos" financieros
 // en una nota aparte (a diferencia de Vélez/Estudiantes LP) — los presenta como
@@ -60,8 +60,7 @@
 //  - "Cargas Sociales" (línea de Gastos standalone, sin desglose por sector) ->
 //    wages_squad (asumido como cargas del plantel profesional, no confirmado).
 //  - "Departamento Médico" -> wages_squad (costo no salarial del plantel
-//    profesional, mismo criterio "CASO CONSULTADO" de club-data-mapping sección
-//    13 y del precedente de Gimnasia y Esgrima LP, que agrupa médico dentro de
+//    profesional, mismo criterio "CASO CONSULTADO" de club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO" y del precedente de Gimnasia y Esgrima LP, que agrupa médico dentro de
 //    Fútbol Profesional -> wages_squad).
 //  - "Ingreso Acuerdo Deuda Clubes" -> other_income (acuerdo de deuda entre
 //    clubes, naturaleza puntual no confirmada).

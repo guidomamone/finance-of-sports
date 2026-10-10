@@ -533,8 +533,7 @@ export const VOCABULARIO = {
   },
 
   // ---- CAJA y DEUDA FINANCIERA del balance (Versión 352, tools/caja-deuda.mjs, escalón 1). Al comienzo de una etiqueta. Caja: lo que el sitio
-  // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping,
-  // sección 14, ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
+  // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping/referencia/formato-simplificado.md, "grossDebt", ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
   CAJA: {
     es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos'],
     en: ['cash and cash equivalent*', 'cash at bank*', 'cash and bank*', 'cash'], de: ['flussige mittel', 'kassenbestand*', 'guthaben bei kreditinstitut*', 'liquide mittel'],

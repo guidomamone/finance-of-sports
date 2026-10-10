@@ -64,8 +64,7 @@
 //   jugadores — el club no capitaliza/amortiza un intangible de formación propia significativo,
 //   Nota 10, así que es la aproximación más fiel al "costo de compra de jugadores" que muestra
 //   el documento, mismo criterio que Racing/Operário Ferroviário); 'Gerais e administrativas' /
-//   'Despesas Tributárias' -> admin_general_expense (impuestos siempre acá, club-data-mapping
-//   sección 17); 'Contingências' (reversión de previsión) -> exceptional_items.
+//   'Despesas Tributárias' -> admin_general_expense (impuestos siempre acá, club-data-mapping/referencia/casos-por-pais-y-formato.md); 'Contingências' (reversión de previsión) -> exceptional_items.
 // - Receita Financeira / Despesas financiamentos -> netInterest (nunca revenueLine/expenseLine,
 //   club-data-mapping sección 2). tax:0 los 2 años: associação sem fins lucrativos, isenta de
 //   tributos federales sobre el resultado (Nota explicativa 3.h / 3.j, art. 178-192 Decreto

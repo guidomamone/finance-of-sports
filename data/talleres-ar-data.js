@@ -130,7 +130,7 @@
 //   Prestamos, comisiones, gto. transferencias / gto. mercado y rescisiones
 //                                                       → other_expenses
 //     (comisiones e intermediación de compraventa — MISMO criterio que
-//     Racing, club-data-mapping SKILL.md sección 13: Boca tampoco separa
+//     Racing, club-data-mapping/referencia/formato-simplificado.md: Boca tampoco separa
 //     comisiones dentro de su bucket "Compra de jugadores", que es solo
 //     amortización/deterioro de pases; meterlo ahí sería menos fiel, no más)
 //   Otros gastos (fútbol profesional: utilería, alquiler de canchas, service
@@ -167,8 +167,7 @@
 // moneda al MISMO cierre (ej. 2024: ~912 para "Deudas con clubes" USD vs.
 // ~1.060 para "Provisión de fútbol profesional" USD; 2025: entre ~1.060 y
 // ~1.458 según la línea) — no hay un tipo de cambio de cierre único y
-// declarado que citar como document_close (regla 0 de club-data-mapping
-// SKILL.md sección 5 exige un número EXPLÍCITO, no uno inferido y
+// declarado que citar como document_close (regla 0 de club-data-mapping/referencia/fx.md exige un número EXPLÍCITO, no uno inferido y
 // contradictorio entre líneas). fxSource:'market_close', fxRef apuntando a
 // FX_CLOSE (data/currency-map.js) para 'ARS@2024-12-31'/'ARS@2025-12-31' —
 // NINGUNA de las 2 fechas existe todavía ahí (se revisó currency-map.js
@@ -181,8 +180,7 @@
 // (2024, Nota 2.6: proveedores + deudas con clubes + tarjetas + cheques
 // diferidos + AFA/LCF + provisión de fútbol profesional — deuda operativa y
 // de pases) de "Remuneraciones y cargas sociales", "Cargas fiscales", "Otros
-// pasivos" y "Previsiones" — mismo criterio que Boca/Vélez (club-data-mapping
-// SKILL.md sección 14): se usó la línea más angosta "Cuentas por pagar"
+// pasivos" y "Previsiones" — mismo criterio que Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"): se usó la línea más angosta "Cuentas por pagar"
 // (corriente+no corriente), NO el Total del Pasivo completo. 2025 usa el
 // equivalente "Deudas con proveedores" (el balance 2025 reordenó los rubros
 // del pasivo respecto de 2024, pero mantiene la misma separación conceptual).
@@ -489,7 +487,7 @@ const talleresArFiscalYearMeta = {
     // grossDebt = "Cuentas por pagar" (Nota 2.6, corriente+no corriente: proveedores + deudas con
     // clubes + tarjetas + cheques diferidos + AFA/LCF + provisión de fútbol profesional),
     // EXCLUYE Remuneraciones y cargas sociales, Cargas fiscales, Otros pasivos y Previsiones —
-    // mismo criterio de "línea más angosta" que Boca/Vélez (club-data-mapping SKILL.md sección 14).
+    // mismo criterio de "línea más angosta" que Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md).
     // cash = Caja y bancos (Estado de Situación Patrimonial, Activo Corriente).
     grossDebt:21486.534385, cash:220.025129,
     officialTotalRevenue:66852.071667, officialTotalExpenses:51795.390034, officialPAT:13196.433268,

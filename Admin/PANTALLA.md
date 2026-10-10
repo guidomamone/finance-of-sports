@@ -554,12 +554,12 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
   NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
   la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
-  `.claude/skills/club-data-mapping/SKILL.md` sección 13 y `Admin/finance-of-sports-project.md`.
+  `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` y `Admin/finance-of-sports-project.md`.
 - REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER
   club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
   (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
   fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
-  nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/SKILL.md` sección 13 y en
+  nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` y en
   `Admin/finance-of-sports-project.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
   `AskUserQuestion` antes de tocar nada, y ya están resueltas: Racing separó "Estadio: recaudación
   de partidos" de un bucket nuevo "Premios por competencias" (el dato fuente ya los distinguía);

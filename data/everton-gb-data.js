@@ -35,7 +35,7 @@
 // "OTHER COMMERCIAL ACTIVITIES" (turnover, nota 2): el documento la define como "hospitality,
 // catering, events and all other revenue sources" — no nombra el estadio ni tampoco es sponsorship
 // específico, así que va a `other_income` (catch-all), no a `stadium_other` (criterio conservador de
-// club-data-mapping sección 1/13: `stadium_other` solo si el rótulo nombra el estadio o una parte).
+// club-data-mapping sección 1: `stadium_other` solo si el rótulo nombra el estadio o una parte).
 //
 // EXCEPCIONALES (`exceptional_items`, ninguno es CAPEX de estadio): 2024 = "Refinancing and legal
 // costs" (£10.371m, relacionados a la refinanciación previa al cambio de dueño y a la defensa ante
@@ -53,7 +53,7 @@
 // construction", Notas 11), no un gasto operativo del ejercicio, y el propio documento lo separa de
 // "Operating expenses" en toda su Strategic Report. El financiamiento de esa obra (préstamos, la
 // colocación privada de £350m con JPMorgan para Hill Dickinson Stadium) tampoco se carga: es
-// financiamiento/capital, mismo criterio que club-data-mapping sección 16.
+// financiamiento/capital, mismo criterio que club-data-mapping/referencia/casos-por-pais-y-formato.md.
 //
 // PROFIT ON DISPOSAL OF INVESTMENTS (2025 solamente, £49.161m): ganancia por la venta de Everton
 // Football Club Women Limited y Goodison Park Stadium Limited (subsidiarias) a Roundhouse Capital
@@ -130,7 +130,7 @@ const evertonGbFiscalYearMeta = {
     gestionId:'moshiri',
     // grossDebt = "Other loans" (Nota 16, Borrowings: dentro de 1 año 229.736 + entre 1-5 años
     // 364.036 = 593.772), NO el total de "Creditors" (que incluye trade creditors/accruals) — mismo
-    // criterio que Boca/Vélez (club-data-mapping sección 14). Coincide EXACTO con la propia Nota 26
+    // criterio que Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md). Coincide EXACTO con la propia Nota 26
     // "Net Debt Reconciliation" del documento. cash = "Cash at bank and in hand" (balance
     // consolidado, pág. 15).
     grossDebt:593.772, cash:26.423,

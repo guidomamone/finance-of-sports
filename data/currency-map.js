@@ -25,7 +25,7 @@
 //    presentación). "El USD de Boca 2025" y "el USD de River 2024" NO son la
 //    misma cifra de conversión, son dos tipos de cambio de cierre distintos,
 //    cada uno el que ESE documento imprimió. Ver
-//    `.claude/skills/club-data-mapping/SKILL.md` sección 5 para el criterio de
+//    `.claude/skills/club-data-mapping/referencia/fx.md` para el criterio de
 //    qué tipo de cambio preferir dentro de un mismo documento (el que el propio
 //    documento declara, antes que uno externo investigado a mano).
 //
@@ -119,7 +119,7 @@ function currencyMetaFor(code){
 //
 // LAS 6 PROCEDENCIAS, y por qué son 6 y no 2 (pedido explícito de Guido: "para
 // Presupuesto, los clubes toman assumption de FX siempre"). Las 4 primeras son
-// las 4 reglas de `.claude/skills/club-data-mapping/SKILL.md` sección 5, en su
+// las 4 reglas de `.claude/skills/club-data-mapping/referencia/fx.md`, en su
 // mismo orden de preferencia:
 const FX_SOURCE = {
   // Regla 0: el balance declara su propio tipo de cambio de cierre (Anexo de

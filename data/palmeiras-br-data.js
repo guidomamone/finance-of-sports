@@ -134,7 +134,7 @@
 //
 // grossDebt = 'Empréstimos e financiamentos' (circulante + não circulante), línea angosta separada
 // de Fornecedores/Contas a pagar/Antecipação de contratos/Provisão para contingências en el propio
-// Balanço Patrimonial (mismo criterio que Corinthians/Botafogo/club-data-mapping sección 14): 2024 =
+// Balanço Patrimonial (mismo criterio que Corinthians/Botafogo/club-data-mapping/referencia/formato-simplificado.md): 2024 =
 // 39,759 M BRL (circulante; não circulante = 0); 2025 = 0,234 M BRL (circulante; não circulante = 0)
 // — OJO: Palmeiras financia una porción grande de su operación vía 'Antecipação de contratos'
 // (factoring de recibíveis de transferencias/patrocinios: 2024 = 266,150 + 366,726 = 632,876 M BRL;

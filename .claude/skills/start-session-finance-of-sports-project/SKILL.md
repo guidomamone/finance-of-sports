@@ -27,7 +27,7 @@ permanentes. Esto es el procedimiento.
 | 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
 | 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS |
-| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline |
+| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline, o revisás la cola de categorías (el SKILL.md indica qué archivo de `referencia/` abrir) |
 | 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
 | 7 | `fuentes/README.md` (índice de países) → `fuentes/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |

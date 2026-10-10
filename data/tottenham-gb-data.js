@@ -25,7 +25,7 @@
 // ninguno de los dos documentos declara un tipo de cambio propio GBP/USD de cierre para todo el
 // balance (la Nota de "Financial risk management"/"Financial instruments" solo habla de exposición
 // cualitativa a moneda extranjera por transferencias de jugadores, sin cotización de cierre), así
-// que no aplica la regla #0 de club-data-mapping sección 5 y corresponde `market_close`/`fxRef` en
+// que no aplica la regla #0 de club-data-mapping/referencia/fx.md y corresponde `market_close`/`fxRef` en
 // vez de `fx` literal. El sitio va a tirar un console.warn hasta que se agreguen esas 2 entradas a
 // FX_CLOSE — esperado, no es trabajo de esta sesión.
 //
@@ -53,7 +53,7 @@
 //   quiebre Sponsorship/Merchandising/Other revenue solo aparece en la prosa del Strategic report,
 //   redondeado a £0,1 M, y sus tres partes no reconcilian centavo a centavo contra el "Commercial"
 //   de la Nota 2 (244,5 vs. 244,744 en 2024). Por eso, siguiendo el criterio conservador de
-//   club-data-mapping sección 1/13 ("stadium_other solo si el rótulo nombra el estadio
+//   club-data-mapping sección 1 ("stadium_other solo si el rótulo nombra el estadio
 //   explícitamente"), NO se promovió "Other revenue" a `stadium_other`: el rótulo real de la Nota 2
 //   es "Commercial" a secas, sin nombrar el estadio, y no hay cifra exacta que separar. Se cargó
 //   "Commercial" como UNA sola línea (sponsorship_commercial) por su monto exacto de Nota 2. Si en
@@ -104,7 +104,7 @@
 // inversores de EE.UU. + préstamo de Bank of America Merrill Lynch), la línea angosta de deuda
 // FINANCIERA que el propio balance separa de "Trade and other payables"/"Deferred income"/
 // "Deferred tax liabilities"/"Provisions"/"FVTPL liabilities" (mismo criterio que Boca/Arsenal, ver
-// club-data-mapping sección 14). En 2024 es 100% no corriente (851,448); en 2025 aparece por
+// club-data-mapping/referencia/formato-simplificado.md). En 2024 es 100% no corriente (851,448); en 2025 aparece por
 // primera vez una porción CORRIENTE (3,986, Nota 15) además de la no corriente (847,666, Nota 16) —
 // grossDebt 2025 = 3,986+847,666 = 851,652. "cash" = "Cash and cash equivalents" (Balance Sheet).
 //

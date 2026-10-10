@@ -22,7 +22,7 @@
 // hasta ahora, importante para no duplicar plata): la DRE de Santos reporta CADA línea partida en 3
 // columnas de DEPARTAMENTO ("Futebol profissional" / "Futebol amador" / "Clube social,
 // administrativo e outros desportos"), con una columna "Total" que es la suma de las 3 — mismo
-// espíritu que el Anexo III de Vélez (club-data-mapping sección 14: "un balance que desglosa un
+// espíritu que el Anexo III de Vélez (club-data-mapping/referencia/formato-simplificado.md: "un balance que desglosa un
 // rubro de gasto por SECTOR/DEPARTAMENTO permite separar salarios del plantel del resto, sin
 // inventar nada"). Se usó la columna Total para la mayoría de las líneas (una sola revenueLine/
 // expenseLine por rubro), EXCEPTO 'Pessoal e encargos sociais' de "Custos do departamento de
@@ -65,7 +65,7 @@
 //   other_income por ser la única línea de este tipo disponible, análoga a "Quadro social" de
 //   Flamengo.
 // - 'Receitas de aluguéis' -> other_income: "Alquileres" genérico, sin nombrar el estadio (Vila
-//   Belmiro) ni una parte de él — criterio conservador de club-data-mapping sección 1/13 (NO
+//   Belmiro) ni una parte de él — criterio conservador de club-data-mapping sección 1 (NO
 //   stadium_other sin que el rótulo nombre el estadio explícitamente).
 // - 'Receitas Timemania' -> other_income: ingreso de la lotería federal brasileña Timemania,
 //   programa de reparto de recaudación a clubes de fútbol para ayudar a pagar deuda (ligado al
@@ -85,8 +85,7 @@
 // - 'Pessoal e encargos sociais (Futebol amador)' -> youth_other_sports_expense (formación,
 //   categorías inferiores).
 // - 'Pessoal e encargos sociais (Clube social, administrativo e outros desportos)' ->
-//   youth_other_sports_expense: mismo criterio que el Anexo III de Vélez (club-data-mapping sección
-//   14) para la columna "resto" cuando el documento no separa más fino — cubre personal de áreas no
+//   youth_other_sports_expense: mismo criterio que el Anexo III de Vélez (club-data-mapping/referencia/formato-simplificado.md, "grossDebt") para la columna "resto" cuando el documento no separa más fino — cubre personal de áreas no
 //   futbolísticas/no administrativas puras que caen en esta columna combinada.
 // - 'Jogos e bonificações' -> match_organisation_expense (columna Total, las 3 áreas).
 // - 'Direitos de imagem e arena' -> wages_squad: combina 'Direito de imagem' (estructura habitual de

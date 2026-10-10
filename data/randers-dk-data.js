@@ -51,7 +51,7 @@
 //       -1.066.125).
 //     - Suma: 6.877.926+479.431+586.694=7.944.051, contra el total impreso
 //       -7.944.052 — diferencia de 1 DKK (redondeo del propio documento, ver
-//       club-data-mapping SKILL.md sección 9.3), se usa el total impreso para
+//       club-data-mapping/referencia/leer-pdf.md.3), se usa el total impreso para
 //       officialTotalExpenses.
 //
 // "RESULTAT AF KAPITALANDELE I TILKNYTTEDE VIRKSOMHEDER" (Nota 8, +2.628.176):

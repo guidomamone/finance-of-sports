@@ -86,7 +86,7 @@
 // `fxSource:'market_close'` (no `fxRef`), en vez de la forma preferida
 // (agregar la entrada compartida). PENDIENTE PARA QUIEN INTEGRE: mover este
 // valor a `FX_CLOSE` como 'DKK@2019-12-31' es lo correcto a mediano plazo
-// (ver `club-data-mapping` sección 5, "si la moneda y fecha que necesitás no
+// (ver `club-data-mapping/referencia/fx.md`, "si la moneda y fecha que necesitás no
 // está en FX_CLOSE, agregala ahí, no en el archivo del club"). Cálculo:
 // cruce DKK/EUR (7,4715, cierre BCE 31/12/2019) ÷ EUR/USD (1,1234, cierre
 // BCE 31/12/2019) = 6,6508 (1 DKK ≈ 0,1504 USD). Fuentes: ECB Euro foreign

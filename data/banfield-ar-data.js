@@ -15,7 +15,7 @@
 // categoría real (Predio, Instituto CAB).
 //
 // ANEXO IV (Sector Fútbol Profesional, 204.927.334,97): igual criterio que Racing/Boca 2027 (ver
-// club-data-mapping/SKILL.md sección 13, "CASO CONSULTADO"): los costos NO salariales del plantel
+// club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO"): los costos NO salariales del plantel
 // profesional (médico, indumentaria, pretemporada, proveduría/comida, seguro y viáticos,
 // concentraciones) se cargan junto con "Sueldos y Cargas Sociales"/"Primas Anuales" en
 // `wages_squad`, porque ESE es el criterio que ya usa Boca 2027 para el mismo tipo de línea mixta.
@@ -83,7 +83,7 @@
 // ANEXO XII (Gastos Generales, 240.372.992,58): SE PROMOVIERON 2 líneas del Anexo con categoría
 // real propia distinta del resto: "Depreciaciones" (113.965.732,45) -> `depreciation`, y
 // "Objetivos" (25.469.312,28, premios por objetivos deportivos al plantel/cuerpo técnico) ->
-// `wages_squad` (mismo criterio que Racing con "Fútbol profesional", club-data-mapping sección 13).
+// `wages_squad` (mismo criterio que Racing con "Fútbol profesional", club-data-mapping/referencia/formato-simplificado.md).
 // El resto (Abonos/Mantenimiento, Honorarios, Insumos Generales, Juicios, Socios/Comunicación) ->
 // `admin_general_expense`. "Juicios" (73.552.707,54, litigios/contingencias legales) es la línea más
 // grande del resto — no hay categoría más específica en el sitio para litigios, se cargó como

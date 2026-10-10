@@ -132,7 +132,7 @@
 // notas del documento 2024 (ahí Nota 22 era personal/costos y Nota 23 era
 // administrativas). Mismo criterio de fondo: fútbol -> categoría de fútbol,
 // administrativo -> admin_general_expense, salvo Impuestos/Tasas que SIEMPRE
-// van a admin_general_expense sin importar el sector (SKILL.md sección 17),
+// van a admin_general_expense sin importar el sector (club-data-mapping/referencia/casos-por-pais-y-formato.md),
 // igual que ya se hizo con las 2 líneas "Impostos e taxas (futebol/
 // administrativo)" del ejercicio 2024.
 //
@@ -153,7 +153,7 @@
 //   versión "administrativo" de la Nota 22 va a admin_general_expense) ->
 //   match_organisation_expense; 'Gastos com Cessão Temporária de Atletas' ->
 //   player_amortisation; 'Impostos e Taxas' -> admin_general_expense (regla
-//   fija, sección 17); 'Outros Custos' -> other_expenses.
+//   fija, club-data-mapping/referencia/casos-por-pais-y-formato.md); 'Outros Custos' -> other_expenses.
 // - RESTO DE CUSTOS OPERACIONAIS (fuera de la Nota 21, forman parte del
 //   subtotal impreso "(92.413.676)" junto con Futebol Profissional +
 //   Categorias de Base): 'Custos das Mercadorias Vendidas' ->
@@ -166,7 +166,7 @@
 //   negativas de la Nota 20.
 // - DESPESAS ADMINISTRATIVAS E DE MARKETING (Nota 22, 10 líneas) ->
 //   admin_general_expense todas (incluida 'Impostos e Taxas' administrativo,
-//   regla fija sección 17).
+//   regla fija, club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // - OUTRAS (DESPESAS)/RECEITAS OPERACIONAIS (Nota 23): a diferencia de 2024
 //   (una sola línea agregada `other_expenses`), acá el propio texto de la
 //   Nota SÍ desglosa 2 montos exactos: una RECEITA de R$159.180.000 líquida

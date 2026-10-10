@@ -33,7 +33,7 @@
 // de miles, o sea menores a 1.000 miles, se escribieron manualmente como 0,XXX).
 //
 // ESTRUCTURA REAL DEL DOCUMENTO: la DRE de São Paulo tiene 4 "unidades de negócio"/departamentos
-// como encabezados de FILA ACUMULADA (club-data-mapping sección 10 — cada header es exactamente la
+// como encabezados de FILA ACUMULADA (club-data-mapping/referencia/leer-pdf.md — cada header es exactamente la
 // suma de sus líneas de detalle, verificado exacto para los 8 bloques, los 2 años): "Futebol
 // profissional e da base" (Ingresos) / "Futebol profissional e de base" (Gastos), "Sociais e
 // esportes amadores" (Ingresos; "Sociais e esportes profissionais" en el rótulo de Gastos del
@@ -51,8 +51,7 @@
 // (confirmado exacto: 2023 total impreso 731.221 − Encargos financeiros 77.544 = 653.677 = suma de
 // los 4 bloques operativos reales; 2024 ídem, 908.116 − 93.386 = 814.730).
 //
-// Categorización (Ingresos), idéntica estructura/etiquetas en los 2 documentos (club-data-mapping
-// sección 9 — mismo formato año a año, mismo mapeo):
+// Categorización (Ingresos), idéntica estructura/etiquetas en los 2 documentos (mismo formato año a año, mismo mapeo):
 // - 'Negociação de atestados liberatórios de atletas' (nota 21/22) -> player_sales (ingreso neto de
 //   negociación de derechos de jugadores — el club NO netea del lado de Gastos, ver "Intermediações
 //   sobre negociações c/atletas" abajo, mismo criterio Flamengo/Botafogo: ingreso bruto y comisión
@@ -81,7 +80,7 @@
 // - 'Patrocínios' (dentro de Esportes Profissionais) -> sponsorship_commercial.
 // - 'Camarotes e cadeiras cativas' (dentro de Estádio) -> season_tickets: acceso fijo por temporada
 //   completa (palcos/butacas cautivas), no venta partido por partido — mismo criterio que la
-//   distinción Estadio/Abonos de club-data-mapping sección 13 (Versión 49).
+//   distinción Estadio/Abonos de club-data-mapping/referencia/formato-simplificado.md (Versión 49).
 // - 'Publicidade' (dentro de Estádio) -> sponsorship_commercial (misma categoría que la publicidad
 //   del bloque Futebol profissional, el agrupamiento bajo "Estádio" es solo visual del documento).
 // - 'Aluguéis' (dentro de Estádio) -> stadium_other: uso del estadio FUERA del partido (alquiler de

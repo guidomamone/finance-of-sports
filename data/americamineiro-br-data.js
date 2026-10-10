@@ -112,7 +112,7 @@
 // - 'Salários, encargos e benefícios (demais funcionários)' -> `admin_general_expense` (personal
 //   FUERA del plantel de fútbol — administración/otras áreas).
 // - 'Impostos, taxas e contribuições' -> `admin_general_expense` (regla ya establecida en
-//   club-data-mapping sección 17: impuestos siempre acá).
+//   club-data-mapping/referencia/casos-por-pais-y-formato.md: impuestos siempre acá).
 // - 'Serviços prestados para terceiros' -> `admin_general_expense`.
 // - 'Demais despesas gerais e administrativas' -> `admin_general_expense`.
 // - 'Despesas administrativas' (línea única combinada, 2025 — el balance 2025 no desagrega
@@ -122,7 +122,7 @@
 //   de Despesas Administrativas) -> `player_amortisation`: coincide casi exacto con la ADICIÓN 2023
 //   de "Atletas em formação" en la Nota 10 (R$11.549.785, diferencia de 0,5%) — es la contrapartida
 //   de capitalizar costos de formación de juveniles que se habían expensado, reclasificándolos al
-//   intangible. Mismo patrón que club-data-mapping sección 15 describe para Vélez 2015 (un crédito
+//   intangible. Mismo patrón que club-data-mapping/referencia/leer-pdf.md describe para Vélez 2015 (un crédito
 //   de reclasificación más grande que la amortización real del año, "nonCash" neto positivo) — no
 //   es un error, es un patrón ya documentado.
 // - 'Outras despesas operacionais' (2024/2025) -> `other_expenses`.
@@ -130,7 +130,7 @@
 // grossDebt = "Empréstimos e financiamentos"/"Empréstimos a pagar" (Nota 11 en 2023/2024, Nota 10
 // en 2025), Consolidado, deuda financiera circulante+não circulante — línea específica que el
 // balance separa de "Obrigações trabalhistas"/"Obrigações tributárias"/etc., mismo criterio que
-// Boca/Vélez (sección 14 de club-data-mapping: preferir la línea angosta cuando el balance la
+// Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md, "grossDebt": preferir la línea angosta cuando el balance la
 // separa). cash = "Caixa e equivalentes de caixa" (Nota 4), Consolidado.
 //
 // FX: el documento NO declara un tipo de cambio propio en ningún año (no hay Anexo de moeda

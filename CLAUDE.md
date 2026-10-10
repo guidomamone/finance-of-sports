@@ -22,7 +22,7 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
 - **Usá la skill que corresponde a la tarea; es obligatorio.** Sin ella, una sesión contradice un criterio ya decidido sin saber que
   existía (pasó de verdad). Empezá por `start-session-finance-of-sports-project`, salvo que la tarea sea onboardear clubes o tocar
   las tools del pipeline: ahí `club-or-year-onboarding`, que trae su propio arranque. Las demás: `club-sourcing` (buscar documentos),
-  `club-data-mapping` (categorizar o cargar a mano, fuera del pipeline), `club-outreach` (mails a clubes),
+  `club-data-mapping` (categorizar, revisar la cola de categorías o cargar a mano; el criterio está en su SKILL.md y los casos de tipo de cambio, formato simplificado, PDFs difíciles y casos por país en `referencia/`, que su índice dice cuándo abrir), `club-outreach` (mails a clubes),
   `auditoria-finance-of-sports` y `escala-finance-of-sports`.
 - Mirá si hay algo nuevo en `fuentes/README.md`: Guido deja ahí links a documentos antes de que se carguen. Si algo de ahí no figura
   como cargado en `Admin/ESTADO-clubes.md`, es trabajo pendiente.

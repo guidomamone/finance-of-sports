@@ -17,8 +17,7 @@
 // la parte final de la cuenta (Impuestos/Resultado del ejercicio) salió
 // directamente ilegible en el .md ("ZBOIZASO", "22OBOUOTS"). Se re-renderizó
 // la página 12 del PDF a imagen (pdftoppm -r 300) y se leyó directo con el
-// Read tool para confirmar cada cifra — ver club-data-mapping SKILL.md
-// sección 9. Todos los números de abajo para el ejercicio 2025 salen de esa
+// Read tool para confirmar cada cifra — ver club-data-mapping/referencia/leer-pdf.md. Todos los números de abajo para el ejercicio 2025 salen de esa
 // lectura directa de imagen, no de la transcripción .md original (que sigue
 // teniendo las cifras viejas sin corregir, uso interno solamente).
 //

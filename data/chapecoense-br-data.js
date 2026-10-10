@@ -125,7 +125,7 @@
 //   Gastos Logísticos, Doações/Ajudas de Custo, Água/Luz/Telefone, Despesas Bancárias,
 //   Mensalidades/Periódicos, Demais Gastos) -> admin_general_expense.
 // - 'Tributárias' (solo en el DRE, sin Nota propia) -> admin_general_expense (impuestos, mismo
-//   criterio que club-data-mapping sección 17).
+//   criterio que club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // - 'Despesas diversas' / 'Custo dos Bens Patrimoniais Vendidos' (Nota 28, créditos positivos chicos
 //   dentro de "Outras Despesas") -> other_expenses, con su signo real (positivo = reversión/crédito).
 // - 'Acidente Aéreo Chapecoense' (Nota 28, -45,672 — el 100,9% del total de "Outras Despesas" de
@@ -151,8 +151,7 @@
 // ligada en gran parte al accidente aéreo de 2016), 'Obrigações tributárias', 'Fornecedores', etc.
 // Se usó SOLO 'Empréstimos' (Nota 18, Controladora 2021: Circulante 8,310 + Não circulante 5,715 =
 // 14,025 M BRL), NO el Total do Passivo completo (que daría 25,408, dominado por las contingencias
-// no financieras) — mismo criterio "línea angosta de deuda financiera real" de club-data-mapping
-// sección 14. OJO: el Balanço Patrimonial impreso (pág. 6, imagen, releído a 300dpi) muestra
+// no financieras) — mismo criterio "línea angosta de deuda financiera real" de club-data-mapping/referencia/formato-simplificado.md, "grossDebt". OJO: el Balanço Patrimonial impreso (pág. 6, imagen, releído a 300dpi) muestra
 // 'Empréstimos' circulante = 10,837 para 2021, que NO coincide con el desglose de la Nota 18
 // (8,310) — otra instancia de la inconsistencia documentada arriba entre el cuerpo de estados
 // financieros (imagen/difícil de releer con precisión) y sus Notas (texto nativo, confiable); se
@@ -214,7 +213,7 @@
 //   promover a línea de primer nivel un sub-ítem con categoría real distinta y peso significativo).
 //   Se PROMOVIÓ a su propia línea `player_amortisation` (-10.931989). El resto de la Nota 20
 //   (Ordenados e Salários, Premiação, Impostos [cargas sociales sobre nómina, se pegan al sueldo
-//   por club-data-mapping sección 17], Indenizações, Aluguel, Alimentação, Despesas Médicas,
+//   por club-data-mapping/referencia/casos-por-pais-y-formato.md], Indenizações, Aluguel, Alimentação, Despesas Médicas,
 //   Seguros, Outros Gastos c/ Pessoal) se mantuvo como UNA línea `wages_squad` (-37.660567) con
 //   items de desglose.
 // - 'Direito de Imagem' (Nota 23) -> wages_squad (mismo criterio 2021).
@@ -229,7 +228,7 @@
 // - 'Depreciação e Bens Pq Valor' (sin nota propia) -> depreciation (mismo criterio 2021).
 // - 'Gerais e Administrativas' (Nota 24) -> admin_general_expense, con items (se omitieron
 //   'Contribuição Sindical' y 'Academia', ambas en $0 en 2017).
-// - 'Despesas Tributárias' (sin nota propia) -> admin_general_expense (impuestos, sección 17).
+// - 'Despesas Tributárias' (sin nota propia) -> admin_general_expense (impuestos, club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // - 'Outras Despesas' (Nota 26): 'Despesas diversas' y 'Custo dos Bens Patrimoniais Vendidos' ->
 //   other_expenses (catch-all chico); 'Contingência Processos' (7.710.137, el 70% del total de
 //   Outras Despesas, una provisión por litigios/procesos judiciales) -> exceptional_items, no

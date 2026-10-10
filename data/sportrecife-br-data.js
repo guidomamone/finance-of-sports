@@ -116,7 +116,7 @@
 //   (administrativo, distinto del "Gastos com pessoal do futebol" de la Nota 19), 'Despesas gerais',
 //   'Despesas com alimentação', 'Despesas com manutenção', 'Despesas c/alugueis' (genérico, sin
 //   nombrar el estádio -> admin_general_expense, no stadium_other) y 'Despesas tributárias'
-//   (impuestos -> admin_general_expense, club-data-mapping sección 17) -> TODAS admin_general_expense.
+//   (impuestos -> admin_general_expense, club-data-mapping/referencia/casos-por-pais-y-formato.md) -> TODAS admin_general_expense.
 //   'Depreciação' -> depreciation. ('Repasse financeiro de direito econômico' fue 0 en 2025, solo
 //   tuvo valor en 2024 -R$22.177 mil, no aplica a este ejercicio.)
 // - Nota 21 "Outras (Despesas)/Receitas Operacionais": se cargó como UNA sola línea combinada
@@ -171,7 +171,7 @@
 // (circulante 17.661 + não circulante 9.125 = 26.786), las 2 líneas de deuda financiera angostas que
 // el propio Balanço Patrimonial separa de Fornecedores/Obrigações tributárias/Provisão para
 // contingências/Receitas antecipadas (mismo criterio "línea angosta" que Boca/Vélez/Palmeiras,
-// club-data-mapping sección 14) = 26.786 M BRL. cash = 'Caixa e equivalentes de caixa' = 2.388 M BRL
+// club-data-mapping/referencia/formato-simplificado.md) = 26.786 M BRL. cash = 'Caixa e equivalentes de caixa' = 2.388 M BRL
 // (coincide con el "Caixa ao Final do exercício R$ 2,3 mi" del Relatório da Administração).
 //
 // FX: el documento no declara un tipo de cambio de cierre propio en ningún Anexo dedicado (solo

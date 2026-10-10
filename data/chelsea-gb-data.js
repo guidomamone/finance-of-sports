@@ -34,7 +34,7 @@
 // GROSSDEBT: Chelsea no tiene ninguna línea "Bank loans"/"Borrowings" en el balance. Lo único
 // remotamente "deuda" son trade creditors por pases de jugadores a pagar (£396.135m) y "amounts
 // owed to group undertakings" (£0 al cierre 2025). Se usa `grossDebt:0` (criterio estricto de
-// excluir trade creditors, club-data-mapping sección 14) — duda anotada sobre si conviene el
+// excluir trade creditors, club-data-mapping/referencia/formato-simplificado.md) — duda anotada sobre si conviene el
 // tratamiento alternativo (tratar transfer fees payable como deuda económica real).
 // ============================================================================
 

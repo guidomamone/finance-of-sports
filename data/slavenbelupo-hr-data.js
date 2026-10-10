@@ -70,7 +70,7 @@
 //     amortiza, así que esta es la aproximación más fiel al bucket "Compra de
 //     jugadores"). Troškovi agenata/posrednika 140.345 → other_expenses (mismo criterio
 //     que Racing: comisiones de compraventa NO entran al bucket player_amortisation,
-//     porque Boca tampoco las separa ahí — club-data-mapping SKILL.md sección 13).
+//     porque Boca tampoco las separa ahí — club-data-mapping/referencia/formato-simplificado.md).
 //   Ukupno cargado (bez registracija + registracija): 6.185.609 + 101.836 + 140.345 =
 //     6.427.790.
 //

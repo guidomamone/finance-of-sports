@@ -116,7 +116,7 @@
 // Despesas de Serviços (Nota 18/20: Informática, Marketing, Jurídico, Manutenção, Consultoria e
 // Auditoria, Segurança, Transporte, Médico) -> `admin_general_expense` completas (mismo criterio que
 // Botafogo: costos de oficina/administración/servicios profesionales, no del plantel).
-// 'Despesas tributárias' -> `admin_general_expense` (regla fija, club-data-mapping sección 17).
+// 'Despesas tributárias' -> `admin_general_expense` (regla fija, club-data-mapping/referencia/casos-por-pais-y-formato.md).
 // 'Depreciação e amortização' (2024, línea única del imobilizado — la de intangible/jugadores está
 // en Custo das Atividades, ver arriba) / 'Depreciação' (2025, Nota 7, ya separada de 'Amortização'
 // que es Nota 8 de intangible) -> `depreciation`.

@@ -297,7 +297,7 @@ Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
   que todos tienen desde que Boca se migró al motor genérico.
 - **Para que el toggle de moneda funcione de verdad, `amountNative` tiene que estar en la moneda
   NATIVA del club** (la que declara `reportingCurrency`), no pre-convertido a USD, ver
-  `club-data-mapping` sección 5. Este es el cambio de fondo que habilitó el toggle de moneda para
+  `club-data-mapping/referencia/fx.md`. Este es el cambio de fondo que habilitó el toggle de moneda para
   cualquier club.
 - **`computeYearGeneric(clubId, year)`**: agnóstico de moneda a propósito, solo suma lo que hay en
   `amountNative`, sin convertir. La conversión pasa SIEMPRE en la capa de display (funciones que
@@ -345,7 +345,7 @@ limpieza de una sola vez:
   `youth_football` + `womens_football`), el bolsón sin desglosar, y el catch-all **"Otros
   ingresos"**. Al mapear un club nuevo: antes de mandar una línea de colegio, polideportivo o uso
   del estadio a `other_income` por descarte, mirá esas 3 categorías — el criterio de cuál va en cuál
-  está en `club-data-mapping` sección 1 y sección 13. Y si vas a tocar la fusión de abonos, el
+  está en `club-data-mapping` sección 1 y `club-data-mapping/referencia/formato-simplificado.md`. Y si vas a tocar la fusión de abonos, el
   interruptor es `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`, no los datos.
 - **Lazy-loading: sumar el club a la carga bajo demanda, NUNCA al `<head>` fijo.** El archivo
   `data/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
@@ -647,13 +647,13 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   en ningún lado (el único consumidor de `sources{}` era el banner de
   advertencia, que no aparece cuando el dato es oficial).
 - PROCEDENCIA DEL TIPO DE CAMBIO (Versión 125): cada ejercicio declara de dónde
-  salió su `fx`, `fxSource` con uno de los 6 valores de `FX_SOURCE`
+  salió su `fx`, `fxSource` con uno de los 7 valores de `FX_SOURCE`
   (`data/currency-map.js`), o `fxRef` apuntando a `FX_CLOSE`, la tabla de
   cotizaciones de mercado por moneda y fecha de cierre. La regla: lo que declara
   el documento va literal en el archivo del club; lo que es cotización pública se
   dice una vez en la tabla y se referencia. Antes esto vivía en prosa, con 10
   redacciones distintas, y 18 de los 89 valores no decían nada. Ver
-  `Admin/CONVENCIONES.md` y `club-data-mapping/SKILL.md` sección 5.
+  `Admin/CONVENCIONES.md` y `club-data-mapping/referencia/fx.md`.
 ## Dónde está cada cosa
 
 **La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes

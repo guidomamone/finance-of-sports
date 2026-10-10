@@ -27,7 +27,7 @@
 // operacionais) SEGMENTAN cada rubro en 2 columnas (Futebol Profissional / Administração, Clube
 // Social e esportes amadores) + Total, para los 2 ejercicios. Se aprovechó esta granularidad para
 // separar Pessoal e Encargos por sector (ver Gastos abajo), igual que Vélez/Palmeiras
-// (club-data-mapping sección 14).
+// (club-data-mapping/referencia/formato-simplificado.md).
 //
 // GOTCHA DE EXTRACCIÓN ENCONTRADO EN ESTA SESIÓN, para que no haya que redescubrirlo: la tabla de
 // Nota 24 (Custos e despesas operacionais) viene con las filas 2024 de "Amortizações - Recompra
@@ -90,8 +90,7 @@
 // - 'Pessoal e Encargos': columna Futebol Profissional -> wages_squad; columna Administração,
 //   Clube Social e esportes amadores -> admin_general_expense (el documento NO separa más fino
 //   "clube social" de "esportes amadores" en esta columna, a diferencia de Palmeiras que sí tiene
-//   columnas propias para futebol feminino/de base — documentado, ver club-data-mapping sección
-//   14).
+//   columnas propias para futebol feminino/de base — documentado, ver club-data-mapping/referencia/formato-simplificado.md, "grossDebt").
 // - 'Gerais e Administrativas' se desagregó en sus 4 componentes propios (Nota 24 los desglosa):
 //   'Materiais e Manutenção', 'Serviços de Terceiros' y 'Gerais' -> admin_general_expense; 'Custos
 //   gerais com negociação de atletas' -> player_amortisation (el Relatório da Administração
@@ -106,7 +105,7 @@
 //   (SOLO 2025, 0 en 2024).
 // - 'Jogos e Competições' -> match_organisation_expense (mismo bucket que Boca "Organización de
 //   partidos").
-// - 'Despesas com Tributos' -> admin_general_expense (club-data-mapping sección 17: impuestos
+// - 'Despesas com Tributos' -> admin_general_expense (club-data-mapping/referencia/casos-por-pais-y-formato.md: impuestos
 //   siempre van ahí). 'Despesas programa de Sócio Torcedor' -> admin_general_expense (costo
 //   operativo de correr el programa, no hay categoría de "gasto de cuotas sociales" separada —
 //   mismo criterio que Palmeiras "Despesas sócio torcedor Avanti"). 'Outros Resultados

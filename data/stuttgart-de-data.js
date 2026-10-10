@@ -57,7 +57,7 @@
 // "Handel und Sonstiges" en sponsorship_commercial + player_sales con ese
 // número inventaría una precisión que el documento no tiene. Se optó por
 // NO forzar la separación (mismo criterio que Racing 2009-2011 y los
-// catch-alls de J.League, ver club-data-mapping SKILL.md secciones 1 y 18):
+// catch-alls de J.League, ver club-data-mapping SKILL.md sección 1 y club-data-mapping/referencia/casos-por-pais-y-formato.md):
 // se carga como UNA sola línea, categoría `lump_football_operations`,
 // disclosureLevel 'aggregated_residual'. Consecuencia conocida: "Venta de
 // Jugadores" en Formato Simplificado muestra $0 para Stuttgart aunque el
@@ -237,7 +237,7 @@ const stuttgartDeFiscalYearMeta = {
     // = 125.909.849,45 EUR), EXCLUYE C. Rückstellungen (provisiones, 19.069.886,69) y
     // B. Beteiligungskapital/Stille Beteiligungen (7.753.000,00, capital mezzanine) y
     // E. Rechnungsabgrenzungsposten (ingresos diferidos, 28.060.275,06) — mismo criterio que
-    // Boca/Vélez (club-data-mapping SKILL.md sección 14): la línea más angosta de "Deudas".
+    // Boca/Vélez (club-data-mapping/referencia/formato-simplificado.md): la línea más angosta de "Deudas".
     // cash = III. Kassenbestand und Guthaben bei Kreditinstituten (Konzernbilanz Aktiva).
     grossDebt:125.909849, cash:9.153243,
     officialTotalRevenue:217.622653, officialTotalExpenses:210.074841, officialPAT:0.679300,

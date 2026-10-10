@@ -68,7 +68,7 @@
 // expenseLines de cada año reconciliaron con ±0,001-0,002 M BRL (±R$1.000-2.000) contra los
 // subtotales impresos de la propia DRE ("Custos e despesas - futebol profissional"/"...esportes
 // amadores") — redondeo del propio documento a nivel de línea (mismo patrón que Racing 2026/27,
-// club-data-mapping sección 9.3), no error de carga: revenue+expenses+netInterest reconcilia
+// club-data-mapping/referencia/leer-pdf.md.3), no error de carga: revenue+expenses+netInterest reconcilia
 // exacto contra el Superávit/Déficit del exercício impreso en los 2 años (ver detalle por año en
 // fiscalYearMeta abajo).
 //

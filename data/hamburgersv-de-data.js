@@ -71,7 +71,7 @@
 // admin_general_expense; "Vermarktungsprovisionen" y "Transferaufwendungen" →
 // other_expenses (comisiones comerciales/de intermediación de pases, mismo
 // criterio que Racing no separa comisiones de compraventa dentro de "Compra de
-// jugadores", club-data-mapping SKILL.md sección 13). El resto (no nombrado
+// jugadores", club-data-mapping/referencia/formato-simplificado.md). El resto (no nombrado
 // explícitamente) queda como línea residual other_expenses.
 //
 // MONEDA: EUR los 2 ejercicios, cierre 30/6. fxRef contra FX_CLOSE

@@ -27,7 +27,7 @@
 //     `onboard.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
 //  3. FILAS Y MONTOS: `seleccionarFilas()` de tools/proponer-carga.mjs con la estrategia ganadora del test (ancla-listas: cada línea del
 //     estado de resultados se abre en la nota o la lista que la desglosa) y la escala por plausibilidad contra los años ya cargados del club.
-//     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping §5).
+//     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
 //  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
 //     la fila no está en esa lista (hasta la Versión 320 la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
 //     Admin/tests/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),

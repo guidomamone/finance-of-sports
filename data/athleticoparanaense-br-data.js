@@ -68,7 +68,7 @@
 //   com pessoal' -> admin_general_expense (personal administrativo, distinto del plantel de la Nota
 //   19); 'Depreciação' -> depreciation; 'Amortização' (intangibles generales, no jugadores) ->
 //   other_amortisation; 'Despesas administrativas'/'Despesas gerais'/'Despesas tributárias'
-//   (impuestos, sección 17 del skill)/'Tecnologia da informação' -> admin_general_expense.
+//   (impuestos, club-data-mapping/referencia/casos-por-pais-y-formato.md)/'Tecnologia da informação' -> admin_general_expense.
 // - Nota 21 (Outras despesas/receitas — venta de jugadores): 'Receita com venda de atletas'/'Receita
 //   com transações com atletas' (préstamos) -> player_sales (ingreso). 'Despesas com transações de
 //   atletas' se desglosa en la Nota 21.2 en 6 conceptos (Repasse de Direitos Econômicos, Comissões,
@@ -109,7 +109,7 @@
 // grossDebt = 'Empréstimos e financiamentos' Controladora, circulante + não circulante (Nota 13) —
 // línea angosta de deuda financiera real, separada de Fornecedores/Contas a pagar/Obrigações
 // sociais e fiscais/Parcelamentos fiscais en el propio Balanço, mismo criterio que Boca/Vélez
-// (sección 14 del skill). Es chica porque la deuda real del club vive mayormente en la CAP S/A
+// (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). Es chica porque la deuda real del club vive mayormente en la CAP S/A
 // (Consolidado), no en la Controladora. cash = 'Disponibilidades' Controladora (Nota 5).
 //
 // FX: ningún documento declara tipo de cambio propio (Nota "Conversão de operações em moeda

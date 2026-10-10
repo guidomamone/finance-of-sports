@@ -209,7 +209,7 @@ const bocaRevenueLinesByYear = {
 // y 2025 el sueldo de cada departamento va a la MISMA categoría que los otros gastos de ese departamento.
 // Solo "Fútbol profesional" queda en wages_squad. Estadio, Casa Amarilla, Departamento médico y Gastos de
 // estructura operativa → admin_general_expense; Educación física, Fútbol juvenil y Básquet →
-// youth_other_sports_expense. Es lo que dice club-data-mapping §17 y lo que hacen Vélez, Rosario Central y
+// youth_other_sports_expense. Es lo que dice club-data-mapping/referencia/casos-por-pais-y-formato.md y lo que hacen Vélez, Rosario Central y
 // San Lorenzo. Antes de esta decisión los 8 sueldos iban a wages_squad (2025: 67.870 M de sueldos del plantel;
 // ahora 46.452 M). Totales sin cambio.
 const bocaExpenseLinesByYear = {
@@ -661,7 +661,7 @@ const bocaExpenseLinesByYear = {
 const bocaFiscalYearMeta = {
   // Ejercicio 2022 = Estados Contables auditados, Ejercicio N°118 (sources['boca-balance-2021-22']).
   // fx = USD activo al 30/06/2022 ($125,03), declarado por el propio balance en su Anexo III
-  // (Activos y Pasivos en Moneda Extranjera) — regla 0 de club-data-mapping sección 5, se prefiere
+  // (Activos y Pasivos en Moneda Extranjera) — regla 0 de club-data-mapping/referencia/fx.md, se prefiere
   // siempre al de mercado. grossDebt = "Deudas" corriente + no corriente (nota 6.1, $2.413.758.080 +
   // $449.885.280), EXCLUYE Obligaciones de hacer y Previsiones, mismo criterio que Boca 2025.
   // officialTotalRevenue/officialTotalExpenses/officialPAT = Total de Recursos/Total de

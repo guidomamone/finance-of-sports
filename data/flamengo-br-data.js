@@ -52,7 +52,7 @@
 //
 // "Receita operacional bruta por atividade": el documento imprime 3 CABECERAS DE GRUPO ("Mídia e
 // publicidade convencional", "Licenciamento, Patrocínio e Publicidade", "Operações de jogos",
-// "Diversos") que son FILAS ACUMULADAS (club-data-mapping sección 10): su valor es exactamente la
+// "Diversos") que son FILAS ACUMULADAS (club-data-mapping/referencia/leer-pdf.md): su valor es exactamente la
 // suma de las líneas de detalle que traen debajo (verificado exacto para los 4 grupos, los 2 años).
 // Como cada línea de detalle tiene una categoría real DISTINTA de sus hermanas (regla de la sección
 // 1: "si los sub-ítems tienen cada uno una categoría real distinta, promoverlos a líneas de primer
@@ -153,7 +153,7 @@
 // NETA de caja y de cuentas a cobrar por venta de jugadores), pero su desglose viene en un gráfico
 // del PDF con valores no confiablemente legibles en esta transcripción (OCR del gráfico, no una
 // tabla). Ante la ausencia de una línea "Deudas financieras" angosta y confiable, se usó el criterio
-// de Racing (club-data-mapping sección 14): grossDebt = Total do passivo completo, Controladora
+// de Racing (club-data-mapping/referencia/formato-simplificado.md): grossDebt = Total do passivo completo, Controladora
 // (2024: 912,581 M BRL; 2025: 1.038,223 M BRL). cash = 'Caixa e equivalentes de caixa' Controladora
 // (2024: 70,557 M BRL; 2025: 143,941 M BRL), EXCLUYENDO 'Caixa restrito' (fondos de proyectos
 // incentivados, uso restringido) — este corte coincide EXACTO con lo que el propio Relatório de

@@ -116,7 +116,7 @@
 // grossDebt = "Empréstimos e Financiamentos" (Passivo circulante, la única línea de deuda
 // FINANCIERA del balance — distinta de "Tributos e Encargos Sociais"/"Regime Centralizado de
 // Execução"/"Recursos Parceria em Projetos", que son deuda impositiva/laboral/de proyectos, no
-// financiera, mismo criterio de sección 14 club-data-mapping SKILL.md). Para 2024 esta línea del
+// financiera, mismo criterio de club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). Para 2024 esta línea del
 // Balanço (1.846.486,86) NO coincidía con el total de su propia Nota 10 en balanco-2024.md
 // (1.671.326,45, solo "Empréstimos... Pessoas Físicas e Jurídicas") — la Nota 10 de
 // demonstracoes-financeiras-2025.md (comparativo 2024) agrega una sub-línea "Conta Corrente FERJ"

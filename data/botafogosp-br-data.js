@@ -89,7 +89,7 @@
 // (incluye 'Sócio Torcedor', la contraparte de gasto de administrar el programa — DISTINTA
 // de 'Despesas Sócio Torcedor' de la Nota 21, que es una deducción de receita).
 // Nota 25 ("Despesas Tributárias"): todas las líneas (incluye 'ICMS', único ítem positivo/
-// crédito neto del grupo) -> admin_general_expense (club-data-mapping sección 17: impuestos
+// crédito neto del grupo) -> admin_general_expense (club-data-mapping/referencia/casos-por-pais-y-formato.md: impuestos
 // SIEMPRE admin_general_expense).
 // Nota 26 ("Despesas com Depreciações e Amortizações"): 'Amortização de Direito de Uso'
 // (amortización de un derecho de uso de superfície/arrendamiento, CPC 06/IFRS16, no

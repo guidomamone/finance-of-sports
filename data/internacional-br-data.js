@@ -62,7 +62,7 @@
 // ser, en efecto, un ingreso real que el documento reconoce todos los años, pero sin certeza sobre
 // su naturaleza económica exacta (¿reconocimiento de un activo por la obra recibida? ¿un servicio
 // prestado al SPE?). No se forzó a stadium_other pese a estar ligado al Complexo Beira-Rio, porque
-// el rawLabel no nombra el estadio y el criterio conservador de la sección 13 del skill exige que lo
+// el rawLabel no nombra el estadio y el criterio conservador de club-data-mapping sección 1 (stadium_other) exige que lo
 // haga.
 //
 // Categorización (Ingresos, Nota "Receita líquida das atividades"):
@@ -76,7 +76,7 @@
 // - 'Estacionamento' / 'Locações' / 'Promoções/eventos' / 'Loteria esportiva' / 'Indenizações' ->
 //   other_income: NINGUNO de estos rótulos nombra el estadio o una parte de él (a diferencia de
 //   'Aluguel do Maracanã'/'Estádio' de Flamengo), así que no calificaron para stadium_other bajo el
-//   criterio conservador de la sección 13 del skill, aunque 'Estacionamento' probablemente sea
+//   criterio conservador de club-data-mapping sección 1 (stadium_other), aunque 'Estacionamento' probablemente sea
 //   estacionamiento del estadio en día de partido — queda como duda genuina.
 // - Nota "Outras receitas e despesas operacionais": 'Negociação de atletas - líquido' -> player_sales
 //   (ver comentario extenso arriba); 'Realização da cessão por direito de exploração' -> other_income
@@ -85,7 +85,7 @@
 // Categorización (Gastos), de las Notas "Custos operacionais das atividades" (todo bajo el
 // encabezado único "Futebol", sin sub-secciones por departamento) / "Despesas comerciais" /
 // "Despesas gerais e administrativas": se usó el MISMO criterio ya establecido para Racing/Boca 2027
-// (club-data-mapping sección 13, "CASO CONSULTADO") y Banfield Anexo IV (sección 14): los costos NO
+// (club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO") y Banfield Anexo IV (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"): los costos NO
 // salariales del plantel profesional que el documento agrupa bajo el mismo centro de costos
 // "Futebol" que "Pessoal e benefícios" se cargan en wages_squad, salvo que el rótulo indique
 // claramente otra naturaleza (organización de partidos, administración, amortización):
@@ -135,8 +135,7 @@
 // de ingreso) — diferencia de 20 mil BRL (0,003%), rastreada a que la propia Nota 22 del PDF 2025 no
 // cierra perfecto: sus 4 líneas de "Deduções" (11.104+44.446+3.123+14.439 = 73.112 mil) suman 20 mil
 // menos que el total "Deduções" que el documento imprime (73.132 mil) — un redondeo del propio
-// documento, no un error de carga (mismo espíritu que el ejemplo de Racing 2026/27 en club-data-
-// mapping sección 9, "$10.000 de diferencia es redondeo del propio documento"). expenseLines suman
+// documento, no un error de carga (mismo espíritu que los redondeos del propio documento anotados en data/racing-data.js). expenseLines suman
 // -527,236 M BRL contra un officialTotalExpenses de 527,237 M BRL (diferencia de 1 mil BRL,
 // rastreada de la misma forma a la Nota 23: la suma de sus 21 líneas da 437.229 mil contra el
 // 437.230 mil impreso). Con los officialTotal* tomados de los SUBTOTALES IMPRESOS (no de mi propia
@@ -146,7 +145,7 @@
 //
 // grossDebt/cash: el Balanço Patrimonial separa una línea angosta "Empréstimos e financiamentos"
 // (circulante + não circulante) del resto del pasivo — se usó ESA línea (más fiel, criterio Boca/
-// Vélez/Botafogo, club-data-mapping sección 14), no el Total do Passivo completo: 2024 = 133,162
+// Vélez/Botafogo, club-data-mapping/referencia/formato-simplificado.md), no el Total do Passivo completo: 2024 = 133,162
 // (circulante) + 55,869 (não circulante) = 189,031 M BRL; 2025 = 141,337 + 47,638 = 188,975 M BRL.
 // cash = 'Caixa e equivalentes de caixa' (única línea, sin distinción de caixa restrito en este
 // balance): 2024 = 3,770 M BRL; 2025 = 2,261 M BRL.

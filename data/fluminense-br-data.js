@@ -129,7 +129,7 @@
 // - 'Depreciações/amortizações de imobilizado e outros intangíveis' -> depreciation.
 // - 'Tributos incidentes sobre operações de câmbio' -> admin_general_expense: es un IMPUESTO (no una
 //   diferencia de cambio en sí — la diferença cambial real ya está dentro de 'Receitas'/'Despesas
-//   financeiras', ver netInterest abajo), mismo criterio que club-data-mapping sección 17 (impuestos
+//   financeiras', ver netInterest abajo), mismo criterio que club-data-mapping/referencia/casos-por-pais-y-formato.md (impuestos
 //   siempre a admin_general_expense).
 // - 'Gastos gerais' -> admin_general_expense (bolsón de mantenimiento/materiales/servicios/eventos,
 //   mismo criterio Botafogo/Flamengo).
@@ -173,7 +173,7 @@
 //
 // grossDebt = 'Empréstimos e financiamentos' (circulante + não circulante), línea angosta que el
 // Balanço separa de 'Fornecedores', 'Tributos parcelados', 'Obrigações trabalhistas', etc. — mismo
-// criterio que Botafogo (skill sección 14): 2024 = 1,479+30,000 = 31,479 M BRL; 2025 = 17,125+20,650 =
+// criterio que Botafogo (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"): 2024 = 1,479+30,000 = 31,479 M BRL; 2025 = 17,125+20,650 =
 // 37,775 M BRL. cash = 'Caixa e equivalentes de caixa' (Nota 5(a)/4) — no hay distinción de "caixa
 // restrito" en ninguno de los 2 años (a diferencia de Flamengo): 2024 = 10,423 M BRL; 2025 = 34,526 M
 // BRL.

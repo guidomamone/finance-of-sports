@@ -3,7 +3,7 @@
 To-do 106 de `Admin/TODO.md`, corrido el 2026-09-28. Sigue del to-do 103 (cerrado el mismo día): el
 caso puntual que lo disparó (River Ejercicio 2021, "Amortización de software") era una sola celda de
 un solo documento — no alcanzaba para decidir si conviene cambiar el DEFAULT Mistral→Gemini para
-escaneos que documenta CLAUDE.md ("Cada PDF nuevo") y `club-data-mapping/SKILL.md` sección 15. Este
+escaneos que documenta CLAUDE.md ("Cada PDF nuevo") y `club-data-mapping/referencia/leer-pdf.md`. Este
 test corre el mismo head-to-head contra una muestra bastante más amplia.
 
 ## Resumen ejecutivo
@@ -81,8 +81,7 @@ impidió alucinar con confianza en otro.
 ## Qué significa esto para el proyecto
 
 1. **El DEFAULT no cambia**: seguir con Mistral primero, Gemini como segunda pasada para lo que
-   Mistral marca como escaneo y amerita más cuidado (CLAUDE.md, `club-data-mapping/SKILL.md` sección
-   15). Ninguno de los dos motores es sistemáticamente más confiable — cambiar el orden solo
+   Mistral marca como escaneo y amerita más cuidado (CLAUDE.md, `club-data-mapping/referencia/leer-pdf.md`). Ninguno de los dos motores es sistemáticamente más confiable — cambiar el orden solo
    cambiaría CUÁL de los dos tipos de error silencioso es más probable encontrarse primero, no lo
    eliminaría.
 2. **La verificación manual obligatoria para documentos escaneados (`club-data-mapping` sección 6,

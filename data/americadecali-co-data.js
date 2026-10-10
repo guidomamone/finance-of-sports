@@ -17,8 +17,7 @@
 // OJO — el club está formalmente "en reorganización" (Ley 1116) desde
 // 2014-2015. Esto no cambió la estructura del Estado de Resultados (sigue
 // siendo un P&L ordinario, sin secciones de "Ordinario"/"Extraordinario" como
-// el presupuesto de caja de San Lorenzo, ver club-data-mapping SKILL.md
-// sección 16) — el único efecto visible es un pasivo "Pasivos acuerdo de
+// el presupuesto de caja de San Lorenzo, ver club-data-mapping/referencia/casos-por-pais-y-formato.md) — el único efecto visible es un pasivo "Pasivos acuerdo de
 // Reorganizacion" en el Estado de Situación Financiera (no cargado, no es
 // parte del P&L) y un patrimonio con "Adopción Por Primera Vez" negativo.
 //

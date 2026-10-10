@@ -155,7 +155,7 @@ const unionmagdalenaCoFiscalYearMeta = {
     // (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2018: $3.249,75
     // COP/USD. Esta entrada TODAVÍA NO EXISTE en data/currency-map.js (COP@2018-12-31) al momento
     // de cargar este archivo — reportada a la sesión orquestadora para que la agregue una sola vez
-    // en FX_CLOSE, no acá (ver Admin/CLAUDE.md / club-data-mapping sección 5).
+    // en FX_CLOSE, no acá (ver Admin/CLAUDE.md / club-data-mapping/referencia/fx.md).
     currency:'COP', fxRef:'COP@2018-12-31',
     sourceId:'unionmagdalena-co-estados-financieros-2018',
     reportType:'official_balance_sheet',

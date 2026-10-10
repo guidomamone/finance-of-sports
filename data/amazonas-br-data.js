@@ -40,7 +40,7 @@
 // - 'Despesas Administrativas' -> admin_general_expense.
 // - 'Despesas Comerciais' -> admin_general_expense (category-map.js incluye "comerciales"
 //   explícitamente en la descripción de esta categoría).
-// - 'Despesas Tributárias' -> admin_general_expense (club-data-mapping sección 17: impuestos
+// - 'Despesas Tributárias' -> admin_general_expense (club-data-mapping/referencia/casos-por-pais-y-formato.md: impuestos
 //   SIEMPRE admin_general_expense).
 // - 'Outras Despesas Operacionais' (R$601,56, marginal) -> other_expenses.
 // - 'Receitas Financeiras' (R$16,99) − 'Despesas Financeiras' (R$14.036,03) = netInterest,
@@ -64,8 +64,7 @@
 //
 // grossDebt = 'Empréstimos e Financiamentos' (circulante R$0 + não circulante R$923.007,50,
 // única línea de deuda financiera propiamente dicha del Passivo, separada de Fornecedores/
-// Encargos e Obrigações Sociais/Provisões Fiscais, mismo criterio que club-data-mapping
-// sección 14). cash = 'Disponibilidades' (R$127.598,33).
+// Encargos e Obrigações Sociais/Provisões Fiscais, mismo criterio que club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). cash = 'Disponibilidades' (R$127.598,33).
 //
 // FX: el documento no declara su propio tipo de cambio de cierre (no tiene Anexo de moneda
 // extranjera) — PTAX de cierre BCB, referenciado a FX_CLOSE (BRL@2024-12-31, ya existía

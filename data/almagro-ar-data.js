@@ -82,11 +82,11 @@
 //   Cuerpo Medico y Tecnico" / "Sueldos y Jornales" / "Cargas Sociales" / "Cargas Sociales
 //   Seg Soc." / "Primas por contrato privado" -> wages_squad. "Gastos de alimentos" (comida
 //   del plantel) NO está explícitamente cubierto por el skill; se agrupó con wages_squad
-//   seguindo el precedente de Racing (club-data-mapping sección 13, "CASO CONSULTADO":
+//   seguindo el precedente de Racing (club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO":
 //   costos no salariales del plantel — médico, viáticos, comida — que Boca/Racing ya
 //   mezclan dentro de su propio wages_squad) — JUDGMENT CALL, señalado en el reporte.
 // - "Comision por compra Jugadores" / "Comision por Representante" -> other_expenses, NO
-//   player_amortisation: precedente de Racing (sección 13, Boca tampoco mezcla comisiones
+//   player_amortisation: precedente de Racing (referencia/formato-simplificado.md, "CASO CONSULTADO"; Boca tampoco mezcla comisiones
 //   de compraventa dentro de "Compra de jugadores").
 // - "Gastos Compra Jugadores" (2023, costo directo de adquisición, $6,43M) -> SÍ
 //   player_amortisation (a diferencia de las comisiones de arriba, es el costo del pase en
@@ -94,7 +94,7 @@
 // - Impuestos (Ley 25413, Impuestos y Contribuciones, IVA no computable), honorarios
 //   (abogados, contador), seguros, gastos administrativos/generales, gastos bancarios,
 //   limpieza -> admin_general_expense (impuestos/honorarios/seguros/administrativos, ver
-//   club-data-mapping sección 17) salvo gastos bancarios (sin precedente explícito,
+//   club-data-mapping/referencia/casos-por-pais-y-formato.md) salvo gastos bancarios (sin precedente explícito,
 //   quedaron en other_expenses junto con Interese perdidos, mismo tipo de costo financiero
 //   operativo).
 // - Estadías y traslados / movilidad / Gastos de Policía / Servicios de Emergencia /
@@ -103,7 +103,7 @@
 // - Mantenimiento, gastos varios, lavandería, eventos, transmisión radio, alquiler
 //   equipo electrógeno, alquiler vivienda para jugadores, Juicios, Multa, Percepciones
 //   Perdidas, Servicio de Lavandería -> other_expenses (sin categoría más específica; ver
-//   club-data-mapping sección 17 para Juicios/Moratoria — acá no hay moratoria, y Juicios
+//   club-data-mapping/referencia/casos-por-pais-y-formato.md para Juicios/Moratoria — acá no hay moratoria, y Juicios
 //   no tiene un contexto de agrupación del propio balance que sugiera admin_general_expense
 //   como si tuvo Racing en algunos años).
 //
@@ -115,7 +115,7 @@
 // grossDebt = TOTAL DEL PASIVO completo de cada año (el balance de Almagro no separa una
 // línea "Deudas" angosta de otras categorías de pasivo tipo Previsiones/Ingresos
 // anticipados — Deudas Fiscales + Remuneraciones y C. Sociales + AFA a Pagar son, los tres,
-// deuda real — mismo criterio que Racing en club-data-mapping sección 14). cash = Caja y
+// deuda real — mismo criterio que Racing en club-data-mapping/referencia/formato-simplificado.md). cash = Caja y
 // Bancos de cada año.
 //
 // GESTIÓN: la NÓMINA DE COMISIÓN DIRECTIVA impresa en cada balance confirma 2 presidencias

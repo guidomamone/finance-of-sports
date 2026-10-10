@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 662 — `club-data-mapping` partida: SKILL.md + `referencia/` (2026-10-10)
+
+- SKILL.md (lo que se usa siempre, con un resumen de conversión a USD y la regla "no decidas solo") + `referencia/fx.md`,
+  `formato-simplificado.md`, `leer-pdf.md`, `casos-por-pais-y-formato.md`, que el índice dice cuándo abrir. Validado por un Sonnet: nada
+  perdido. Referencias a las secciones viejas actualizadas en `data/`, `js/`, `tools/`, `Admin/` y otras skills (solo comentarios); `CLAUDE.md`
+  y `start-session` mencionan `referencia/`. `FX_SOURCE` tiene 7 valores (faltaba `document_average`). `CONVENCIONES-DATOS.md` sin los
+  bloques de historia que repetían la skill. ASSET_V 798 (comentarios en `data/` y `js/`).
+
 ## Versión 661 — `extraer.mjs`: escalón del tope de salida (to-do 197) (2026-10-10)
 
 - Escalón 0: tope de 32.000 tokens, como antes. Escalón 1: solo si la respuesta se cortó por el tope, un reintento con 128.000 por

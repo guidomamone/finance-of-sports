@@ -187,6 +187,9 @@ Mitigaciones:
 - c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
   abre un renglón (UC: "Comerciales").
 - d) No suma, no convierte, no categoriza.
+- e) Tope de salida, escalera: escalón 0, una llamada con tope de 32.000 tokens; escalón 1, solo si la respuesta se cortó por el tope, un
+  reintento con 128.000 por streaming (tarea `extraer-tope-largo`). Compuerta: la respuesta termina sola y el JSON es válido; si no, error
+  como antes. Caso: Ferroviária dre-2022 (libro contable de ~580 cuentas).
 
 Riesgos:
 - i) lado o tipo equivocados;
@@ -652,7 +655,7 @@ imágenes, instalar Tesseract (`brew install tesseract tesseract-lang`) y
 generar la transcripción con `pdftoppm -png -r 300` + `tesseract -l spa
 --psm 6` página por página — mucho más barato en tokens, y el OCR de tablas
 numéricas resultó muy confiable en la práctica. Ver
-`.claude/skills/club-data-mapping/SKILL.md` sección 15 para el flujo
+`.claude/skills/club-data-mapping/referencia/leer-pdf.md` para el flujo
 completo (incluye qué hacer con tablas anchas rotadas 90° en el escaneo, y
 cómo verificar los números del OCR fila por fila antes de cargarlos).
 

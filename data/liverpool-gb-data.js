@@ -18,7 +18,7 @@
 // vez de un fx literal — ninguno de los dos documentos declara un tipo de
 // cambio propio (no hay nota de moneda extranjera con un TC GBP declarado, ya
 // que GBP es la propia moneda de reporte del club), así que no aplica la regla
-// #0 de club-data-mapping/SKILL.md sección 5 (no hay TC propio del documento
+// #0 de club-data-mapping/referencia/fx.md (no hay TC propio del documento
 // para usar). El día que alguien agregue GBP a currency-map.js, estas
 // referencias ya están listas para resolverse solas.
 //
@@ -91,7 +91,7 @@
 // Intercompany loan con la controlante FSG Football Group, LLC), NO el Total
 // de "Creditors" completo (que incluye deuda comercial, impuestos, ingresos
 // diferidos, etc. — mismo criterio de "línea más angosta" que Boca/Vélez, ver
-// club-data-mapping sección 14). Coincide exacto con la propia "Consolidated
+// club-data-mapping/referencia/formato-simplificado.md). Coincide exacto con la propia "Consolidated
 // Analysis of Net Debt" que imprime el Estado de Flujo de Efectivo de cada año.
 // cash = "Cash at bank and in hand" del Balance consolidado.
 //

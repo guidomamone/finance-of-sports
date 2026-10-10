@@ -63,7 +63,7 @@
 //   Autres charges d'exploitation (código 640/8, -0.625359 total) SE PROMOVIÓ
 //   a 2 líneas según la Nota C-cap 6.10 (pág. 28), que sí desglosa este
 //   código en Impôts et taxes (640) vs. Autres (641/8) — Impuestos va SIEMPRE
-//   a admin_general_expense (club-data-mapping sección 17):
+//   a admin_general_expense (club-data-mapping/referencia/casos-por-pais-y-formato.md):
 //     Impôts et taxes relatifs à l'exploitation                  -0.561662 → admin_general_expense
 //     Autres                                                     -0.063697 → other_expenses
 //     (suma 0.625359, exacto contra el código 640/8 impreso)

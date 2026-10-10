@@ -168,7 +168,7 @@ const santafecoFiscalYearMeta = {
     // (Nota 20, 1.242561656) — se excluye el resto de esa nota (Costos y Gastos Por Pagar,
     // Impuestos, Obligaciones Laborales, Fideicomiso, Litigios), que es pasivo de reorganización
     // no financiero, mismo criterio de "usar la línea de deuda financiera real" que ya aplica el
-    // sitio (ver club-data-mapping SKILL.md sección 14). cash = Nota 5, Total efectivo y
+    // sitio (ver club-data-mapping/referencia/formato-simplificado.md). cash = Nota 5, Total efectivo y
     // equivalentes al efectivo.
     grossDebt:4645.154895, cash:684.927123,
     officialTotalRevenue:67655.505401, officialTotalExpenses:65604.607974, officialPAT:1971.333366,

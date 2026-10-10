@@ -25,8 +25,7 @@
 //
 // ESTRUCTURA DEL "CUADRO DE GASTOS" (ambos ejercicios): matriz 2 ejes, CUENTAS
 // (concepto) x ESTADIO/FUTBOL/GASTOS ADMIN-SEDE/GASTOS OTROS DPTOS (sector),
-// mismo patrón que Vélez/Gimnasia y Esgrima LP (club-data-mapping SKILL.md
-// sección 14). Cada celda no vacía se cargó como línea propia, con el sector
+// mismo patrón que Vélez/Gimnasia y Esgrima LP (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). Cada celda no vacía se cargó como línea propia, con el sector
 // aclarado entre paréntesis en el rawLabel. Criterio de sector -> categoría
 // (igual espíritu que Gimnasia y Esgrima LP, sección "CRITERIO DE SECTOR" de
 // gimnasiaesgrima-ar-data.js): columna FUTBOL -> wages_squad para sueldos/
@@ -104,7 +103,7 @@
 // (Operativas + Soc. y previsionales, corriente y no corriente, + Otras
 // Deudas), EXCLUYENDO "Provisiones para Juicios" (10.026.535,49, es una
 // previsión contingente, no deuda financiera real — mismo criterio que excluye
-// "Obligaciones de hacer"/Previsiones de Boca, club-data-mapping sección 14):
+// "Obligaciones de hacer"/Previsiones de Boca, club-data-mapping/referencia/formato-simplificado.md):
 // 12.919.866,02 + 28.048.575,07 + 24.393.663,95 + 2.634.848,27 = 67.996.953,31.
 // 2020: cash = Caja (74.976,00) + Bancos (2.401.240,39) = 2.476.216,39.
 // grossDebt = Deudas Operativas corriente (16.824.397,70) + Soc. y

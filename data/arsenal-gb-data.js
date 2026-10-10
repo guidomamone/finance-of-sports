@@ -20,8 +20,7 @@
 // ('GBP@2024-05-31'/'GBP@2025-05-31') en vez de un `fx` literal: ninguno de los dos documentos
 // declara un tipo de cambio propio a USD en su nota de moneda extranjera (Nota 17/18, "Foreign
 // currency management" — solo cuantifica exposición en EUR/USD/AUD de partidas puntuales, no un TC
-// de cierre GBP/USD para todo el balance), así que no aplica la regla #0 de club-data-mapping
-// sección 5 (TC declarado por el documento) y corresponde `market_close`/`fxRef` en vez de un `fx`
+// de cierre GBP/USD para todo el balance), así que no aplica la regla #0 de club-data-mapping/referencia/fx.md (TC declarado por el documento) y corresponde `market_close`/`fxRef` en vez de un `fx`
 // literal con `fxSource:'document_close'`. El sitio va a tirar un console.warn hasta que se agregue
 // la entrada GBP@... a FX_CLOSE — esperado, no es trabajo de esta sesión.
 //
@@ -64,10 +63,10 @@
 //   - "Staff costs" (Note 6): el documento da la plantilla por ÁREA (Playing/Training/Commercial
 //     and Administrative/Ground staff) pero el COSTO ("Wages and salaries"+"Social security
 //     costs"+"Other pension costs") viene en UN solo número agregado, sin desglose de costo por
-//     área — a diferencia de Vélez (club-data-mapping sección 14), no hay una matriz costo×área
+//     área — a diferencia de Vélez (club-data-mapping/referencia/formato-simplificado.md), no hay una matriz costo×área
 //     que permita separar plantel profesional del resto del personal. Se cargó el total completo a
 //     wages_squad (mismo criterio ya usado en el proyecto cuando la fuente no separa costo de
-//     personal por sector, ver club-data-mapping sección 17 sobre "Fútbol profesional" de Racing).
+//     personal por sector, ver club-data-mapping/referencia/casos-por-pais-y-formato.md sobre "Fútbol profesional" de Racing).
 //   - "Other operating charges" (catch-all sin desglose adicional en las notas: incluye costo de
 //     mercadería de retail, tarifas profesionales, gastos de organización de partidos, etc.
 //     mezclados sin una nota que los separe) -> other_expenses.
@@ -87,7 +86,7 @@
 // EXACTO con el que da esta cuenta) — se preferyó esta línea angosta (deuda financiera real: las
 // debentures cotizadas + el préstamo del accionista controlante) en vez del Total de "Creditors"
 // completo (que mezcla acreedores comerciales, impuestos, anticipos de abonos, etc., ver criterio
-// de club-data-mapping sección 14). NO se incluyó el préstamo del Barclays de working capital
+// de club-data-mapping/referencia/formato-simplificado.md). NO se incluyó el préstamo del Barclays de working capital
 // (£100 M) porque la Nota 17 aclara que estaba SIN USAR ("undrawn committed bank borrowing
 // facilities") en las dos fechas de cierre. "cash" = "Cash at bank and in hand" (Balance Sheet).
 //

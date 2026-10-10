@@ -97,8 +97,7 @@
 // grossDebt: C. Verbindlichkeiten (Bilanz Passiva) completo — Verbindlichkeiten
 // gegenüber Kreditinstituten + aus Lieferungen und Leistungen + sonstige
 // Verbindlichkeiten — EXCLUYE B. Rückstellungen y D. Rechnungsabgrenzungsposten,
-// mismo criterio angosto que Boca/Vélez/Köln (club-data-mapping SKILL.md sección
-// 14). cash = III. Kassenbestand, Bundesbankguthaben, Guthaben bei
+// mismo criterio angosto que Boca/Vélez/Köln (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). cash = III. Kassenbestand, Bundesbankguthaben, Guthaben bei
 // Kreditinstituten und Schecks (Bilanz Aktiva, Umlaufvermögen).
 //
 // LIGA: Bundesliga los 2 ejercicios (7° puesto 2023/24, 15° puesto 2024/25, sin

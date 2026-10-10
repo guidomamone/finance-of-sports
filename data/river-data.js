@@ -39,7 +39,7 @@
 // columna "Cambio vigente al cierre") para convertir sus partidas en USD a pesos. Antes se usaba
 // $953,50 (Rava Bursátil/BCRA, investigado externamente) — se corrigió en la Versión 32 siguiendo
 // la misma regla nueva que Racing (preferir el tipo de cambio que declara el propio documento antes
-// que uno externo, ver finance-of-sports/.claude/skills/club-data-mapping/SKILL.md sección 5). La
+// que uno externo, ver finance-of-sports/.claude/skills/club-data-mapping/referencia/fx.md). La
 // diferencia es chica (~0,3%) pero la fuente primaria es más fiel. El balance también declara tipos
 // de cambio propios para EUR ($1.049,5421) y CHF ($1.122,36) en el mismo Anexo — no se usan acá
 // porque el sitio solo modela una moneda de reporte (ARS) y una de display (USD), no multi-moneda
@@ -189,7 +189,7 @@ const riverExpenseLinesByYear = {
     // sea el 16,3% de esa columna: pasa a `wages_squad` y el resto sigue en el bolsón.
     // CÓMO SE RECUPERÓ, que es lo que la sesión anterior no pudo: las 4 páginas del Anexo (59-62)
     // están ROTADAS 90° en el escaneo — es la tabla ancha impresa en horizontal que describe
-    // club-data-mapping §15. OCRearlas sin enderezar mezcla columnas, y eso explica las
+    // club-data-mapping/referencia/leer-pdf.md. OCRearlas sin enderezar mezcla columnas, y eso explica las
     // "diferencias no explicadas al sumar celdas individuales" que hicieron abortar el intento
     // anterior. `tesseract --psm 0` las detecta (Rotate: 90 las cuatro); rotando con PIL y
     // OCReando con `-l spa --psm 3` las filas salen limpias.

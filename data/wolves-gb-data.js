@@ -33,7 +33,7 @@
 // un solo ejercicio real. PERO: cualquier comparación "año a año" entre 2024 (12 meses) y 2025 (13
 // meses) de este club va a sobreestimar el crecimiento real (hay un mes extra de ingresos/gastos
 // metido en 2025) — no se intentó prorratear a 12 meses porque el propio documento no ofrece un
-// desglose mensual que permita hacerlo con precisión (ver club-data-mapping sección 15, mismo
+// desglose mensual que permita hacerlo con precisión (ver club-data-mapping/referencia/leer-pdf.md, mismo
 // espíritu: no inventar una reconstrucción sin la granularidad para hacerla bien). Pregunta abierta
 // para Guido en Admin/dudas-por-club.md: si prefiere marcar este ejercicio con una nota visible de
 // "13 meses" en el sitio, o dejarlo como está con esta documentación interna.

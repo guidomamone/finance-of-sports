@@ -6,7 +6,7 @@
 // cargar.mjs escribía grossDebt y cash en null ("sin dato no es cero"), así que todo año cargado por el script quedaba sin el cuadro "Deuda
 // bruta / Caja / Deuda neta" del sitio (UC 2018-2021 y 2025), mientras 289 de los 310 años cargados a mano los tienen.
 //
-// QUÉ ES CADA COSA (club-data-mapping, sección 14). El criterio de "deuda" es POR CLUB: Boca usa "Deudas", River "Préstamos", UC "Otros pasivos
+// QUÉ ES CADA COSA (club-data-mapping/referencia/formato-simplificado.md, "grossDebt"). El criterio de "deuda" es POR CLUB: Boca usa "Deudas", River "Préstamos", UC "Otros pasivos
 // financieros" (corriente + no corriente), Racing el TOTAL del pasivo. Por eso el primer escalón aprende del propio club; para un club sin
 // precedente, el criterio por defecto es DEUDA FINANCIERA (préstamos y obligaciones bancarias/financieras, corriente + no corriente), nunca el
 // total del pasivo (ok de Guido, 2026-10-01). Caja: efectivo y equivalentes / caja y bancos / disponibilidades.
@@ -466,7 +466,7 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
 }
 
 // De la respuesta de la IA a un dato: las cifras salen de las filas del .md (no de la IA), con chequeos y confirmación por año vecino.
-// El criterio de deuda que se le pasa a la IA: el del club si hay precedente aprendido, si no el por defecto (sección 14).
+// El criterio de deuda que se le pasa a la IA: el del club si hay precedente aprendido, si no el por defecto (club-data-mapping/referencia/formato-simplificado.md, "grossDebt").
 export function criterioDeudaDe(familias) {
   return familias.length ? `el que el club usa en otros años: la suma de las líneas "${familias.join('" + "')}" (o sus equivalentes en este documento).`
     : 'DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).';

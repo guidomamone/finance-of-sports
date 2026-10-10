@@ -3,7 +3,7 @@
 // tools/lookup-fx-close.js — busca LOCAL, contra la serie de tools/fx-reference/,
 // el tipo de cambio de cierre de una fecha puntual (to-do 91). Reemplaza la
 // búsqueda web ad-hoc que hasta ahora se repetía club por club (ver
-// club-data-mapping/SKILL.md sección 5, regla 1).
+// club-data-mapping/referencia/fx.md, regla 1).
 //
 // Si la fecha pedida no tiene cotización (fin de semana/feriado), devuelve la
 // del día hábil anterior más cercano -- mismo criterio que ya usa el proyecto
@@ -177,7 +177,7 @@ function main() {
     : `${fuente}, última rueda hábil antes del cierre (${found.date}, ${date} no es día hábil)`;
   console.log(`  '${key}': { fx:${found.fx}, source:'market_close', label:'${label}' },`);
   console.log('');
-  console.log(`En el archivo del club: fxRef:'${key}'  (ver club-data-mapping/SKILL.md sección 5 para cuándo corresponde market_close vs. document_close).`);
+  console.log(`En el archivo del club: fxRef:'${key}'  (ver club-data-mapping/referencia/fx.md para cuándo corresponde market_close vs. document_close).`);
 }
 
 main();

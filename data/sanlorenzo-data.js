@@ -12,7 +12,7 @@
 // deportiva/Subsedes), mismo mecanismo de columna-por-sector que Vélez/Instituto/2013 (Sueldos y
 // cargas sociales, Primas y premios de jugadores → columna Fútbol = wages_squad, resto =
 // youth_other_sports_expense). El Anexo VI está rotado 90° dentro del PDF (2 hojas) — se rotó con
-// PIL antes de re-OCRear, mismo criterio que club-data-mapping/SKILL.md sección 15. Su fila
+// PIL antes de re-OCRear, mismo criterio que club-data-mapping/referencia/leer-pdf.md. Su fila
 // "Transporte" es, otra vez, un subtotal "a transportar" de la Hoja 1 (no un gasto real) —
 // excluida, mismo hallazgo que ya existía para 2013.
 // 2011 (comparativo DENTRO del balance de 2012, no hay archivo propio descargado para este año):
@@ -71,13 +71,13 @@
 // la tabla real. El documento separa una sección "Ordinaria" (operación normal) de una sección
 // "Orígenes y Aplicaciones Extraordinarias" (aportes bancarios/dirigenciales y su cancelación,
 // obras de capital, compra/venta de jugadores en términos de DESEMBOLSO de caja, cancelación de
-// deuda vieja) — REGLA (ver `.claude/skills/club-data-mapping/SKILL.md` sección 16): se cargó SOLO
+// deuda vieja) — REGLA (ver `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md`): se cargó SOLO
 // la sección Ordinaria, la Extraordinaria es financiamiento/capital, no ingreso o gasto real del
 // ejercicio. "Resultado Ordinario" (no "Saldo Final por Período", que sí mezcla con financiamiento)
 // es el PAT del ejercicio. Pregunta anotada en Admin/dudas-por-club.md sobre por qué el club presupuesta
 // así en vez de devengado, como sus propios balances auditados.
 // "Impuestos/Moratoria/Cargas sociales" es UNA sola fila combinada en el documento (Pauta N°18) —
-// no se puede separar, se cargó entera como admin_general_expense (ver SKILL.md sección 17 para el
+// no se puede separar, se cargó entera como admin_general_expense (ver club-data-mapping/referencia/casos-por-pais-y-formato.md para el
 // precedente completo de cómo se categoriza cada uno de esos 3 conceptos por separado en otros
 // clubes). "Remuneraciones" excluye plantel profesional/cuerpo técnico/becas deportivas (Pauta N°8,
 // eso va aparte en "Fútbol Profesional" → wages_squad) — es el resto de la estructura del club, va a
@@ -548,7 +548,7 @@ Object.assign(sources, {
       id:'sanlorenzo-presupuesto-2023-24', clubId:'sanlorenzo',
       title:'Presupuesto (caja mensual), Ejercicio 1°/7/2023 al 30/6/2024',
       type:'official_budget', reliability:'primary',
-      note:'PDF oficial (1 página, texto nativo pero mal extraído por pdftotext -layout, re-leído de imágenes renderizadas de la página). Presupuesto de CAJA con sección Ordinaria (operación normal) y una sección Extraordinaria de financiamiento/capital que NO se cargó (ver data/sanlorenzo-data.js y `.claude/skills/club-data-mapping/SKILL.md` sección 16). Resultado Ordinario proyectado: $5.947.747.189 ARS. Convertido a USD con $909 (dólar mayorista de cierre 30/6/2024, investigado externamente, mismo valor usado en Instituto/Independiente/Racing para la misma fecha — este documento no declara tipo de cambio propio).',
+      note:'PDF oficial (1 página, texto nativo pero mal extraído por pdftotext -layout, re-leído de imágenes renderizadas de la página). Presupuesto de CAJA con sección Ordinaria (operación normal) y una sección Extraordinaria de financiamiento/capital que NO se cargó (ver data/sanlorenzo-data.js y `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md`). Resultado Ordinario proyectado: $5.947.747.189 ARS. Convertido a USD con $909 (dólar mayorista de cierre 30/6/2024, investigado externamente, mismo valor usado en Instituto/Independiente/Racing para la misma fecha — este documento no declara tipo de cambio propio).',
     },
 });
 

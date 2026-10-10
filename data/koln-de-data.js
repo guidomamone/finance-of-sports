@@ -121,7 +121,7 @@
 // Leistungen + gegenüber Gesellschaftern + sonstige Verbindlichkeiten),
 // EXCLUYENDO "B. RÜCKSTELLUNGEN" (previsiones) y "D. RECHNUNGSABGRENZUNGSPOSTEN"
 // (ingresos diferidos) — mismo criterio más angosto que ya usan Boca/Vélez
-// (ver club-data-mapping SKILL.md sección 14), no el total-pasivo amplio de
+// (ver club-data-mapping/referencia/formato-simplificado.md), no el total-pasivo amplio de
 // Racing. cash: "Kassenbestand und Guthaben bei Kreditinstituten" (Bilanz,
 // Activo circulante).
 //

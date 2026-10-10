@@ -131,7 +131,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   presupuesto-2023-2024.md`) es un presupuesto de CAJA mensual, con una sección "Extraordinaria"
   separada para financiamiento (aportes bancarios/dirigenciales y su cancelación), obras de capital,
   compra/venta de jugadores en términos de desembolso de caja, y cancelación de deuda vieja — nada
-  de eso se cargó al sitio (ver `.claude/skills/club-data-mapping/SKILL.md` sección 16), solo la
+  de eso se cargó al sitio (ver `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md`), solo la
   sección Ordinaria. Vale preguntarle al club: ¿por qué presupuestan en base caja separando
   ordinario/extraordinario en vez de un presupuesto económico devengado, como si sus propios
   balances auditados sí lo hacen? ¿Es una decisión de gestión (foco en liquidez/caja para
@@ -1446,8 +1446,7 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   deterioro (12,097) = 225,990. Se usó el número del P&L porque es el único que hace cerrar el
   resultado exacto — el origen de la diferencia no está explicado en el documento.
 - **`grossDebt`**: Chelsea no tiene ninguna línea de deuda bancaria — se usó `grossDebt:0`, excluyendo
-  los £396,135m de "transfer fee payables" (trade creditors por pases) siguiendo el criterio estricto
-  de la sección 14 del skill. Muchos análisis de finanzas de fútbol tratan esos payables como deuda
+  los £396,135m de "transfer fee payables" (trade creditors por pases) siguiendo el criterio estricto de club-data-mapping/referencia/formato-simplificado.md, "grossDebt". Muchos análisis de finanzas de fútbol tratan esos payables como deuda
   económica real — decisión pendiente si Guido prefiere ese criterio alternativo.
 
 ## Brighton & Hove Albion (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
@@ -1868,7 +1867,7 @@ excepcional o un aporte de otro tipo (ej. alivio post-pandemia). Ver comentario 
 
 **"Gastos de alimentos" (Ejercicio 2018, Anexo V, $3.911.226,61)**: costo de comida del plantel, sin
 precedente explícito en `club-data-mapping/SKILL.md`. Se agrupó con `wages_squad` siguiendo el
-precedente de Racing (sección 13 del skill: costos no salariales del plantel bundle-ados con
+precedente de Racing (club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO": costos no salariales del plantel bundle-ados con
 salarios cuando no hay categoría más específica) — confirmar si es el criterio correcto o si
 debería ir a `match_organisation_expense`/`other_expenses`.
 

@@ -50,8 +50,7 @@
 //
 // SONSTIGE STEUERN (línea 11 de la Konzern-GuV, "otros impuestos" no ligados
 // al resultado — no es Steuern vom Einkommen/vom Ertrag) → admin_general_expense,
-// mismo criterio que Impuestos/tasas en el resto del sitio (club-data-mapping
-// sección 17). Se carga como expenseLine (no como `tax`) para que
+// mismo criterio que Impuestos/tasas en el resto del sitio (club-data-mapping/referencia/casos-por-pais-y-formato.md). Se carga como expenseLine (no como `tax`) para que
 // officialTotalExpenses/PAT cierren con la fórmula estándar del sitio.
 //
 // AUFLÖSUNG UNTERSCHIEDSBETRAG AUS DER KAPITALKONSOLIDIERUNG (línea 12,
@@ -74,7 +73,7 @@
 //
 // grossDebt = D. Verbindlichkeiten (línea angosta de deuda, excluye
 // Rückstellungen/Rechnungsabgrenzungsposten — mismo criterio que Boca, ver
-// club-data-mapping sección 14). cash = C. Kassenbestand, Guthaben bei
+// club-data-mapping/referencia/formato-simplificado.md). cash = C. Kassenbestand, Guthaben bei
 // Kreditinstituten (Schecks en 2024).
 //
 // Moneda: EUR, sin tipo de cambio propio declarado por el documento (ningún

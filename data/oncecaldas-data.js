@@ -58,7 +58,7 @@
 // a `netInterest` — mismo criterio que carveó Ingresos Financieros aparte en
 // 2025). "Taquilla" se separó en sus 2 sub-componentes impresos (partidos
 // oficiales -> matchday_competition, venta de abonos -> season_tickets, ver
-// SKILL.md sección 13: son 2 conceptos distintos) — 2025 no tenía este nivel
+// club-data-mapping/referencia/formato-simplificado.md: son 2 conceptos distintos) — 2025 no tenía este nivel
 // de desglose disponible en su documento, así que quedó como una sola línea
 // ese año; no es una inconsistencia entre ejercicios, es lo que cada
 // documento permitió separar.
@@ -90,7 +90,7 @@
 //
 // FX 2024: el documento SÍ declara su propio cierre, en prosa dentro de la
 // Nota 24 ("...terminando el año 2023 en $3.822,05 y en el año 2024 a
-// $4.409,15" -- diferencia en cambio) -- SKILL.md sección 5 regla #0, se usa
+// $4.409,15" -- diferencia en cambio) -- club-data-mapping/referencia/fx.md regla #0, se usa
 // ESE valor (fxSource:'document_close'), no una TRM externa como sí hizo
 // falta para 2025 (que no declaraba el propio).
 //
@@ -400,8 +400,7 @@ const oncecaldasFiscalYearMeta = {
   },
   2024: {
     // El documento declara su propio cierre, en prosa dentro de la Nota 24 ("...terminando el año
-    // 2023 en $3.822,05 y en el año 2024 a $4.409,15" -- diferencia en cambio). SKILL.md sección 5
-    // regla #0: se usa ESE valor, no una TRM externa.
+    // 2023 en $3.822,05 y en el año 2024 a $4.409,15" -- diferencia en cambio). club-data-mapping/referencia/fx.md regla #0: se usa ESE valor, no una TRM externa.
     currency:'COP', fx:4409.15, fxSource:'document_close',
     sourceId:'oncecaldas-estados-financieros-2024',
     reportType:'official_balance_sheet',
@@ -423,8 +422,7 @@ const oncecaldasFiscalYearMeta = {
     // cierre del ejercicio: $3.757,08 COP/USD. El documento NO declara su propio tipo de cambio (a
     // diferencia de los balances argentinos, este balance no tiene un Anexo de "activos y pasivos en
     // moneda extranjera"), así que se usa la TRM de cierre oficial, mismo criterio que ya aplica el
-    // sitio cuando un balance argentino no declara su propio fx (ver club-data-mapping SKILL.md
-    // sección 5, regla 1). Fuente: Superintendencia Financiera de Colombia
+    // sitio cuando un balance argentino no declara su propio fx (ver club-data-mapping/referencia/fx.md, regla 1). Fuente: Superintendencia Financiera de Colombia
     // (superfinanciera.gov.co/powerbi/reportes/514/482/), cruzado contra dolar-colombia.com.
     currency:'COP', fxRef:'COP@2025-12-31',
     sourceId:'oncecaldas-estados-financieros-2025',

@@ -65,7 +65,7 @@
 // en el propio texto de la nota (pág. 31 del .md/PDF): "Impuestos" ahí es
 // explícitamente el impuesto a los espectáculos públicos POR PARTIDO (no un
 // impuesto administrativo genérico, por eso NO sigue el default de
-// club-data-mapping sección 17 y va a `match_organisation_expense`, no
+// club-data-mapping/referencia/casos-por-pais-y-formato.md y va a `match_organisation_expense`, no
 // `admin_general_expense` — el propio documento lo liga a "poder disputar cada
 // partido"), igual que Arrendamientos (alquiler del Estadio), Honorarios
 // (arbitrajes + médicos), Afiliaciones (bus del equipo, inscripciones a
@@ -94,7 +94,7 @@
 // línea aislada de la Nota 3.19, acá no se puede separar el componente
 // cambiario. Se dejó completa en `admin_general_expense`, mismo criterio que
 // Banfield con su Anexo VII (línea mixta, tamaño marginal, ~2,7% del total) —
-// ver club-data-mapping SKILL.md sección 5.
+// ver club-data-mapping/referencia/fx.md.
 //
 // netInterest = SOLO la "Diferencia en cambio" aislada de la Nota 3.19
 // (+$0,284862 M) — ver caveat de "Gastos financieros" arriba (esa pieza sigue

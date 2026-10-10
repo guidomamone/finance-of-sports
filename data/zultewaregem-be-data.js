@@ -79,7 +79,7 @@
 //     código/criterio que Charleroi: provisión → exceptional_items)  -0.063715 → exceptional_items
 //   Andere bedrijfskosten (código 640/8, total 177.913) — PROMOVIDO a 2 líneas
 //     según Nota 6.10 pág. 25 (impuestos SIEMPRE admin_general_expense,
-//     club-data-mapping sección 17):
+//     club-data-mapping/referencia/casos-por-pais-y-formato.md):
 //     - Bedrijfsbelastingen en -taksen (640)                       -0.151095 → admin_general_expense
 //     - Andere (641/8)                                             -0.026818 → other_expenses
 //     (suma 0.177913, exacto)

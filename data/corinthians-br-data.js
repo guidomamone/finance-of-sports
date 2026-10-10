@@ -117,7 +117,7 @@
 //   movimiento de altas/bajas — se usó ese dato para separar: depreciation = $11.259 mil (todo el
 //   Imobilizado del Clube, sin discriminar por segmento, ya que la Nota 7 no lo separa);
 //   player_amortisation = resto ($85.554 − $11.259 = $74.295 mil). Aproximación documentada
-//   (club-data-mapping sección 5, "una aproximación documentada es mejor que forzar una separación
+//   (club-data-mapping/referencia/fx.md, "una aproximación documentada es mejor que forzar una separación
 //   que el dato no tiene del todo limpia"), NO un dato inventado: el monto de depreciación de bienes
 //   de uso es real y viene de la Nota 7, solo su atribución a "futebol" vs. "clube social" no está
 //   disponible.
@@ -172,7 +172,7 @@
 //
 // grossDebt = 'Empréstimos e financiamentos' (circulante + não circulante), línea angosta separada
 // de Fornecedores/Tributos parcelados/Provisão para contingências en el propio Balanço Patrimonial
-// (mismo criterio que Botafogo/Flamengo/club-data-mapping sección 14): 2024 = 227,722 + 16,950 =
+// (mismo criterio que Botafogo/Flamengo/club-data-mapping/referencia/formato-simplificado.md): 2024 = 227,722 + 16,950 =
 // 244,672 M BRL (Notas 10/10, doc. propio de 2024); 2025 = 146,782 + 103,250 = 250,032 M BRL (Notas
 // 11/11, doc. propio de 2025 — la numeración de notas del pasivo cambió entre los 2 documentos,
 // confirmado por el VALOR de 'Fornecedores' 2024 idéntico en los 2 documentos: 372,927 M BRL).

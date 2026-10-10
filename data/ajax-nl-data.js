@@ -54,7 +54,7 @@
 //
 // GASTOS: Lonen, salarissen en sociale lasten (nota 27) SÍ separa por sector
 // ("Voetbal" vs "Overige") con montos propios — mismo patrón de 2do eje que
-// Vélez (club-data-mapping SKILL.md sección 14): "Voetbal" (84.153/78.583, plantel
+// Vélez (club-data-mapping/referencia/formato-simplificado.md): "Voetbal" (84.153/78.583, plantel
 // + cuerpo técnico/médico) → wages_squad; "Overige" (24.957/23.293, resto del
 // personal) se sumó a los otros 3 rubros de "Overige bedrijfskosten" (nota 29:
 // Overige personeelskosten, Huisvestingskosten, Beheer- en administratiekosten)
@@ -93,7 +93,7 @@
 // (CT), EXCLUYENDO Belastinglatenties (pasivo por impuesto diferido, análogo a
 // una previsión) y Overlopende passiva (pasivo devengado/diferido, análogo a
 // Rechnungsabgrenzungsposten) — mismo criterio angosto que ya usan Boca/Vélez/
-// Köln (club-data-mapping SKILL.md sección 14), extendido acá a los pasivos por
+// Köln (club-data-mapping/referencia/formato-simplificado.md), extendido acá a los pasivos por
 // lease (el equivalente holandés de deuda financiera, sin línea de préstamo
 // bancario tradicional en este balance). cash: Liquide middelen.
 // ============================================================================

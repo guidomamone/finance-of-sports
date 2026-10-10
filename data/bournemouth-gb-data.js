@@ -37,7 +37,7 @@
 //   - "Shop merchandise" -> sponsorship_commercial (merchandising, mismo criterio que Eintracht
 //     Frankfurt/Köln).
 //   - "Hospitality and events" -> other_income (NO stadium_other: el rótulo no nombra el estadio,
-//     criterio conservador de club-data-mapping sección 1/13 — mismo tratamiento que le dio Everton
+//     criterio conservador de club-data-mapping sección 1 — mismo tratamiento que le dio Everton
 //     a su línea "hospitality, catering, events").
 //   - "Other income" (Note 4/5, catch-all explícito) -> other_income.
 //   - "Other operating income": el documento NO la separa en columnas como Burnley, pero SÍ

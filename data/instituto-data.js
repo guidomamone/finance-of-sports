@@ -13,7 +13,7 @@
 // esta sesión.
 //
 // Categorización del Anexo V ("Gastos Específicos de Sectores"): mismo mecanismo de columna-por-
-// sector que Vélez (Anexo III), ver club-data-mapping/SKILL.md sección 14. Este Anexo tiene 6
+// sector que Vélez (Anexo III), ver club-data-mapping/referencia/formato-simplificado.md. Este Anexo tiene 6
 // columnas (Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda) y CADA fila se carga partida en hasta 3
 // líneas de primer nivel, según qué columnas tenga con plata: Fútbol (-> wages_squad para
 // "Remuneraciones y cargas", -> other_expenses para el resto), Colegio (-> education_expense desde
@@ -23,14 +23,14 @@
 // una estimación — y cada grupo de líneas partidas cierra exacto contra el total impreso de su fila.
 //
 // "Comisiones y acuerdos de rescisión" (rubro de pases, 3.284,765346 M) se dejó en `other_expenses`,
-// NO en `player_amortisation`, siguiendo el precedente de Racing (club-data-mapping sección 13:
+// NO en `player_amortisation`, siguiendo el precedente de Racing (club-data-mapping/referencia/formato-simplificado.md:
 // Boca tampoco mezcla comisiones de compraventa dentro de "Compra de jugadores"). "Compras y
 // préstamos de jugadores" (costo directo de adquisición, 213,545381 M) sí va a `player_amortisation`.
 //
 // grossDebt: el Estado de Situación Patrimonial de Instituto no separa una línea "Deudas" de otras
 // categorías de pasivo (a diferencia de Boca/Vélez), pero SÍ tiene una "Previsión juicios" (pasivo
 // contingente por causas judiciales, Nota 4) que no es deuda financiera real. Se excluyó esa previsión
-// del cálculo (mismo espíritu que excluir Previsiones en Boca/Vélez, ver sección 14 del skill):
+// del cálculo (mismo espíritu que excluir Previsiones en Boca/Vélez, ver club-data-mapping/referencia/formato-simplificado.md, "grossDebt"):
 // grossDebt = TOTAL DEL PASIVO (3.336,889854 M) - Previsión juicios corriente+no corriente
 // (391,878758 + 180,641203 = 572,519961 M) = 2.764,369893 M.
 //
@@ -80,7 +80,7 @@ const institutoExpenseLinesByYear = {
     // (FUTBOL / BASQUET / LA AGUSTINA / SEDE / COLEGIO / TIENDA) para TODAS sus filas, no solo
     // para las de personal. Con el desglose sin usar, 2.425,8 M ARS que el propio balance
     // atribuye a sectores no-fútbol quedaban en el catch-all "Otros gastos", que se llevaba el
-    // 42% del ejercicio y no decía nada. Es el criterio de club-data-mapping §14 (Vélez), que
+    // 42% del ejercicio y no decía nada. Es el criterio de club-data-mapping/referencia/formato-simplificado.md (Vélez), que
     // este archivo ya aplicaba a Remuneraciones y a Honorarios y no al resto.
     // NINGÚN PESO SE MUEVE: `other_expenses`, `education_expense` y `youth_other_sports_expense`
     // son las tres gasto operativo en efectivo y las tres suman a `otherExpenses` en
@@ -114,7 +114,7 @@ const institutoExpenseLinesByYear = {
     { rawLabel:'Viajes y concentraciones', normalizedCategory:'match_organisation_expense', amountNative:-1022.310864, disclosureLevel:'detailed' },
     { rawLabel:'Compras de mercadería (Tienda)', normalizedCategory:'youth_other_sports_expense', amountNative:-669.262280, disclosureLevel:'detailed' },
     // Comisiones/rescisiones de pases: en `other_expenses`, NO en `player_amortisation` (precedente
-    // de Racing, ver club-data-mapping sección 13 — Boca tampoco mezcla comisiones ahí).
+    // de Racing, ver club-data-mapping/referencia/formato-simplificado.md — Boca tampoco mezcla comisiones ahí).
     // RE-CONFIRMADO el 2026-09-20 contra el Anexo V: esta fila es 100% de la columna FUTBOL
     // (3.284.765.346 y cero en las otras cinco), o sea que NO hay un desglose por sector que
     // aprovechar como en las filas de arriba. Se queda donde está, y es la línea que sola explica

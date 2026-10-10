@@ -113,7 +113,7 @@
  {
   "code": "catchall-dominante",
   "match": "sonderjyske-dk 2022 Ingresos",
-  "motivo": "VERIFICADO (onboarding de SønderjyskE, 2da tanda de 20 transcripts, 2026-09-25). El documento usa la exención §32 de la Årsregnskabsloven danesa: la Resultatopgørelse arranca directo en \"Bruttofortjeneste\" (ya neto), sin desglose de Nettoomsætning disponible en ningún lado — mismo patrón documentado en club-data-mapping sección 20 (FCN/Randers/Vejle tienen el mismo límite de fuente)."
+  "motivo": "VERIFICADO (onboarding de SønderjyskE, 2da tanda de 20 transcripts, 2026-09-25). El documento usa la exención §32 de la Årsregnskabsloven danesa: la Resultatopgørelse arranca directo en \"Bruttofortjeneste\" (ya neto), sin desglose de Nettoomsætning disponible en ningún lado — mismo patrón documentado en club-data-mapping/referencia/casos-por-pais-y-formato.md (FCN/Randers/Vejle tienen el mismo límite de fuente)."
  },
  {
   "code": "catchall-dominante",
@@ -263,7 +263,7 @@
  {
   "code": "categoria-cruzada",
   "match": "athleticoparanaense-br 2024 ingreso \"Doações/bonificações\"",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Athletico Paranaense, 2026-09-24). Ingreso extraordinario/no recurrente sin categoría propia en REVENUE_CATEGORIES, cargado a 'exceptional_items' — MISMO criterio ya aceptado para Racing (ver las entradas 'categoria-cruzada' de Racing 2009/2010 más abajo en este archivo, decisión de Guido documentada en club-data-mapping SKILL.md sección 13): el total del ejercicio cierra igual (el motor suma por monto, no por bucket), y en Formato Simplificado cae al catch-all de Ingresos, consecuencia aceptada."
+  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Athletico Paranaense, 2026-09-24). Ingreso extraordinario/no recurrente sin categoría propia en REVENUE_CATEGORIES, cargado a 'exceptional_items' — MISMO criterio ya aceptado para Racing (ver las entradas 'categoria-cruzada' de Racing 2009/2010 más abajo en este archivo, decisión de Guido documentada en club-data-mapping/referencia/formato-simplificado.md): el total del ejercicio cierra igual (el motor suma por monto, no por bucket), y en Formato Simplificado cae al catch-all de Ingresos, consecuencia aceptada."
  },
  {
   "code": "categoria-cruzada",
@@ -438,7 +438,7 @@
  {
   "code": "signo-invertido",
   "match": "gasto \"Costo de desarrollo de jugadores propios (reclasificación)\"",
-  "motivo": "VERIFICADO contra Clubes/Argentina/Velez Sarsfield/balance-general-2024.md, Nota 1.g y Anexo III (to-do 20(c), 2026-09-20). ESTA ENTRADA CUBRE LOS 11 EJERCICIOS DE VÉLEZ (2015 a 2025): es la MISMA línea repetida, con un solo motivo. No es un gasto con el signo dado vuelta: es un CRÉDITO contra los gastos del ejercicio. El costo de formar jugadores propios se capitaliza en el intangible 'Plantel profesional de fútbol' en vez de quedar como gasto del período, y el Anexo lo imprime negativo por eso — ej. 2024: '(5.536.859.420)'. Como los gastos se guardan en negativo, el crédito entra en POSITIVO, que es justo lo que el chequeo marca. Ya estaba descrito en club-data-mapping §15, que documenta el bug de verifyTieOuts() que este mismo crédito destapó."
+  "motivo": "VERIFICADO contra Clubes/Argentina/Velez Sarsfield/balance-general-2024.md, Nota 1.g y Anexo III (to-do 20(c), 2026-09-20). ESTA ENTRADA CUBRE LOS 11 EJERCICIOS DE VÉLEZ (2015 a 2025): es la MISMA línea repetida, con un solo motivo. No es un gasto con el signo dado vuelta: es un CRÉDITO contra los gastos del ejercicio. El costo de formar jugadores propios se capitaliza en el intangible 'Plantel profesional de fútbol' en vez de quedar como gasto del período, y el Anexo lo imprime negativo por eso — ej. 2024: '(5.536.859.420)'. Como los gastos se guardan en negativo, el crédito entra en POSITIVO, que es justo lo que el chequeo marca. Ya estaba descrito en club-data-mapping/referencia/leer-pdf.md, que documenta el bug de verifyTieOuts() que este mismo crédito destapó."
  },
  {
   "code": "clubid-hardcodeado",

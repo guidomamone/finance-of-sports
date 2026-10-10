@@ -82,8 +82,7 @@
 //   Tenis de Mesa/Voley/Otros — sin línea "Futbol" propia) -> youth_other_sports_expense completo
 //   (la etiqueta de esta categoría incluye explícitamente "básquet", ver category-map.js).
 // - '3- Gastos Especificos Departamento Fútbol': 'Departamento de Futbol Profesional' (la línea más
-//   grande de todo el archivo) -> wages_squad, mismo criterio que Racing/Boca 2027 (club-data-
-//   mapping sección 13, "CASO CONSULTADO": el documento no separa sueldos de otros costos
+//   grande de todo el archivo) -> wages_squad, mismo criterio que Racing/Boca 2027 (club-data-mapping/referencia/formato-simplificado.md, "CASO CONSULTADO": el documento no separa sueldos de otros costos
 //   operativos del plantel profesional dentro de esta línea, así que se carga entera junto con los
 //   sueldos, como ya se hace para ese tipo de línea mixta en otros clubes). 'Departamento de Futbol
 //   Femenino'/'...Infantil'/'...Amateur' -> youth_other_sports_expense (espejo de gasto de
@@ -101,7 +100,7 @@
 // - '7- Otros Egresos: Egresos Departamento Cultural' (Ej. 119 solamente, Ej. 118 = $0, sin línea) ->
 //   other_expenses (catch-all, el propio documento ya lo llama "Otros").
 // - Anexo E (Gastos Generales de Administración): TODAS admin_general_expense, incluyendo
-//   'Impuestos / Tasas / Contribuciones' (regla permanente de club-data-mapping sección 17) y
+//   'Impuestos / Tasas / Contribuciones' (regla permanente de club-data-mapping/referencia/casos-por-pais-y-formato.md) y
 //   'Cargas Sociales' (adosada al sueldo administrativo de este mismo Anexo, no al del plantel,
 //   mismo criterio de esa sección). 'Gastos Bancarios' se mantiene acá (no a netInterest): son
 //   comisiones/gastos de acreditación de tarjeta, no intereses de deuda financiera — el documento ya

@@ -16,8 +16,7 @@
 // Verlustrechnung im Einzelabschluss") que sí tienen los comunicados de 2023/24 y 2024/25. Se
 // confirmó ANTES de mapear (pedido explícito de la consigna) que el documento efectivamente no tiene
 // ese nivel de detalle — es igual de "chico" que 2020/21, solo que además de traer el Konzern trae el
-// Einzelabschluss (2020/21 solo traía Konzern). Mismo criterio de club-data-mapping SKILL.md sección
-// 13 que ya usa 2020/21: se cargó con el máximo detalle que el documento permite (1 línea de ingreso
+// Einzelabschluss (2020/21 solo traía Konzern). Mismo criterio de club-data-mapping SKILL.md sección 1 que ya usa 2020/21: se cargó con el máximo detalle que el documento permite (1 línea de ingreso
 // sin desglosar + 2 de gasto derivadas matemáticamente), usando el nivel Einzelabschluss AG (no
 // Konzern) para ser consistente con 2023/24 y 2024/25 — ver "NIVEL DE CUENTAS ELEGIDO" abajo.
 //
@@ -37,7 +36,7 @@
 // und Verlustrechnung im Einzelabschluss der FC Bayern München AG"), el Konzern solo imprime 4
 // cifras agregadas (Umsatz/EBITDA/EBT/Jahresüberschuss) sin desglose. Sin el desglose no hay forma
 // de categorizar por normalizedCategory, así que se usa el nivel de cuentas que SÍ lo tiene — mismo
-// criterio de club-data-mapping SKILL.md sección 13 ("cuando una estructura no alcanza para
+// criterio de club-data-mapping/referencia/formato-simplificado.md ("cuando una estructura no alcanza para
 // categorizar, buscar el nivel de detalle que sí distingue, no forzar sobre la que no alcanza").
 // officialTotalRevenue/officialTotalExpenses/officialPAT son también los de la AG Einzelabschluss
 // (908,1 M€ / 926,6 M€ de Umsatz), NO los 951,5 M€ / 978,3 M€ del Konzern — coherencia entre el

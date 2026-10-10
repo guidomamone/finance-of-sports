@@ -14,8 +14,7 @@
 // ESTRUCTURA DEL DOCUMENTO (balance auditado real, "Memoria y Balance General"): Estado de
 // Situación Patrimonial + Estado de Recursos y Gastos + Estado de Evolución del Patrimonio Neto +
 // notas + Anexos I-VIII. El Estado de Recursos y Gastos separa RECURSOS/GASTOS ORDINARIOS de un
-// resultado EXTRAORDINARIO (Nota 13) — a diferencia del caso de San Lorenzo (club-data-mapping
-// SKILL.md sección 16, un PRESUPUESTO de caja donde la sección extraordinaria es financiamiento y
+// resultado EXTRAORDINARIO (Nota 13) — a diferencia del caso de San Lorenzo (club-data-mapping/referencia/casos-por-pais-y-formato.md, un PRESUPUESTO de caja donde la sección extraordinaria es financiamiento y
 // se descarta), este es un BALANCE con devengado real en las dos secciones, así que ambas suman
 // directo al resultado final: Superávit Ordinario 205.980.660 + Superávit Extraordinario 2.982.903
 // = Superávit Final 208.963.563 (los 3 números impresos tal cual en el documento, pág. 2 del PDF /
@@ -51,10 +50,10 @@
 //
 // GASTOS (Anexo VII "Gastos Generales de Administración", pág. 26, TODO admin_general_expense; y
 // Anexo VIII "Gastos Específico de Sectores", pág. 27, con columnas Fútbol/Otros por rubro —
-// mismo patrón de "2do eje" que ya usó Vélez, club-data-mapping sección 14). Columna Fútbol:
+// mismo patrón de "2do eje" que ya usó Vélez, club-data-mapping/referencia/formato-simplificado.md). Columna Fútbol:
 // remuneraciones + cargas sociales del plantel profesional → wages_squad; "Estadía, concentración y
 // otros" (viajes/concentración del plantel) → wages_squad, mismo criterio que Racing para costos NO
-// salariales del plantel (club-data-mapping sección 13); "Gastos Edificio Jorge Griffa" → wages_squad
+// salariales del plantel (club-data-mapping/referencia/formato-simplificado.md); "Gastos Edificio Jorge Griffa" → wages_squad
 // TAMBIÉN: la Memoria narrativa (pág. 1 y varias más del .md) confirma que "edificio Griffa" es el
 // HOTEL/centro de entrenamiento del PLANTEL PROFESIONAL donado por Marcelo Bielsa, no la academia
 // juvenil (a pesar del nombre "Griffa", asociado también a las inferiores) — se verificó el uso
@@ -72,7 +71,7 @@
 // capitalizados) → player_amortisation.
 //
 // TIPO DE CAMBIO: el Anexo I ("Activos y Pasivos en Moneda Extranjera", pág. 19) declara SU PROPIO
-// TC de cierre al 30/06/2019, `fxSource:'document_close'` (regla #0 de club-data-mapping sección 5).
+// TC de cierre al 30/06/2019, `fxSource:'document_close'` (regla #0 de club-data-mapping/referencia/fx.md).
 // El documento usa DOS tasas de USD distintas según el lado del balance: 41,50 (comprador, para los
 // Créditos/Activos en USD, ej. "Deudores por transferencia jugadores") y 43,50 (vendedor, para las
 // Deudas/Pasivos en USD) — el mismo spread comprador/vendedor que ya documentó Unión

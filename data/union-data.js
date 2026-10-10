@@ -9,7 +9,7 @@
 // reales — Situación Patrimonial, Recursos y Gastos, Anexos) son un escaneo sin capa de texto,
 // transcripto vía OCR (Tesseract, español, 300-600dpi). Varias páginas de Anexo (Bienes de Uso,
 // Activos Intangibles, Situación Patrimonial) estaban rotadas 90° dentro del escaneo — se corrigió
-// con PIL antes de re-OCRear, mismo criterio que club-data-mapping/SKILL.md sección 15. El Anexo V
+// con PIL antes de re-OCRear, mismo criterio que club-data-mapping/referencia/leer-pdf.md. El Anexo V
 // (moneda extranjera) no se pudo leer de forma confiable ni rotado ni a 600dpi (tabla multi-columna
 // resistente al OCR) — se usó el dólar oficial vendedor BNA de cierre en su lugar (investigado
 // externamente, ver fx abajo).

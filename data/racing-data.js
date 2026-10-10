@@ -38,7 +38,7 @@
 // Racing (antes solo existía para Boca).
 //
 // Tipo de cambio por ejercicio — REGLA NUEVA (Versión 32, ver también
-// finance-of-sports/.claude/skills/club-data-mapping/SKILL.md sección 5):
+// finance-of-sports/.claude/skills/club-data-mapping/referencia/fx.md):
 // para un ejercicio CERRADO, si el propio balance declara su tipo de cambio
 // de cierre (buscar "Activos y pasivos en moneda extranjera" / Anexo con
 // columna "Tipo de Cambio" cerca de Caja y bancos en moneda extranjera), se
@@ -209,7 +209,7 @@ const racingRevenueLinesByYear = {
   // (Anexo II) que 2009-2011, sin decisiones nuevas de categorización. Escaneo puro (25 páginas),
   // transcripto con el Read tool sobre imágenes de página — sin inclinación diagonal, pero los
   // Anexos II/III y el de Moneda Extranjera estaban en landscape rotado dentro de la página
-  // portrait (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // portrait (`club-data-mapping/referencia/leer-pdf.md`). Fuente completa:
   // `Clubes/Argentina/Racing/racing-balance-2012.md`.
   //
   // Suma exacta a $184.791.901 (11 líneas ordinarias + "Desafectación de Previsiones/Provisiones"
@@ -240,7 +240,7 @@ const racingRevenueLinesByYear = {
   // declara el propio balance en su Anexo de Moneda Extranjera. Escaneo puro (28 páginas, calidad
   // de escaneo más baja que otros años pero legible), transcripto con el Read tool sobre imágenes
   // de página — sin inclinación diagonal, pero los Anexos II/III y el de Moneda Extranjera estaban
-  // en landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md` sección 9).
+  // en landscape rotado dentro de la página portrait (`club-data-mapping/referencia/leer-pdf.md`).
   //
   // Suma exacta a $188.690.953, el "TOTAL DE RECURSOS" impreso — 11 líneas ordinarias, sin
   // Recursos Extraordinarios este ejercicio (ambas líneas del Anexo II en $0).
@@ -269,7 +269,7 @@ const racingRevenueLinesByYear = {
   // el propio balance en su Anexo de Moneda Extranjera. Escaneo puro (38 páginas), transcripto con
   // el Read tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos II/III y el
   // de Moneda Extranjera estaban en landscape rotado dentro de la página portrait
-  // (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // (`club-data-mapping/referencia/leer-pdf.md`). Fuente completa:
   // `Clubes/Argentina/Racing/racing-balance-2014.md`.
   //
   // Suma exacta a $301.631.868, el "TOTAL DE RECURSOS" impreso — 11 líneas ordinarias +
@@ -299,7 +299,7 @@ const racingRevenueLinesByYear = {
   // distinto (Notas 1-8 + Anexos I-V), pero Anexo II/III mantienen la misma estructura de
   // columnas que los ejercicios anteriores. Escaneo puro (36 páginas), transcripto con el Read
   // tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos II/III/V estaban en
-  // landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md` sección 9). Fuente
+  // landscape rotado dentro de la página portrait (`club-data-mapping/referencia/leer-pdf.md`). Fuente
   // completa: `Clubes/Argentina/Racing/racing-balance-2016.md` — incluye una nota importante sobre
   // por qué la columna comparativa "31/08/2015" de ESTE documento no coincide con
   // `racingRevenueLinesByYear[2015]` (reclasificación de exposición por el nuevo auditor externo,
@@ -331,7 +331,7 @@ const racingRevenueLinesByYear = {
   // ejercicio, no se usaron). Escaneo puro (25 páginas), transcripto con el Read tool sobre
   // imágenes de página — sin inclinación diagonal, pero los Anexos I/II/III y el de Moneda
   // Extranjera estaban en landscape rotado dentro de la página portrait
-  // (`club-data-mapping/SKILL.md` sección 9). Fuente completa:
+  // (`club-data-mapping/referencia/leer-pdf.md`). Fuente completa:
   // `Clubes/Argentina/Racing/racing-balance-2014-15.md`.
   //
   // Suma exacta a $430.314.984 (redondeo de $1 contra el "TOTAL DE RECURSOS" impreso,
@@ -358,8 +358,7 @@ const racingRevenueLinesByYear = {
   // Gastos los muestra por separado (netInterest). fx=17,21, la tasa dominante que declara el
   // propio balance en su Anexo V (Moneda Extranjera). Escaneo puro (34 páginas), transcripto con
   // el Read tool sobre imágenes de página — sin inclinación diagonal, pero los Anexos I/II/III/V
-  // estaban en landscape rotado dentro de la página portrait (`club-data-mapping/SKILL.md`
-  // sección 9). Fuente completa: `Clubes/Argentina/Racing/racing-balance-2017.md` — confirma que
+  // estaban en landscape rotado dentro de la página portrait (`club-data-mapping/referencia/leer-pdf.md`). Fuente completa: `Clubes/Argentina/Racing/racing-balance-2017.md` — confirma que
   // la columna comparativa "31/08/2016" de este documento coincide EXACTO con
   // `racingRevenueLinesByYear[2016]` ya cargado (a diferencia de la transición 2015→2016, acá no
   // hubo reclasificación).
@@ -579,7 +578,7 @@ const racingRevenueLinesByYear = {
 // bucket.
 //
 // DOS CASOS QUE QUEDAN A PROPÓSITO EN `other_expenses` (consultados a Guido con AskUserQuestion
-// antes de decidir, ver también .claude/skills/club-data-mapping/SKILL.md sección 1 y 10):
+// antes de decidir, ver también .claude/skills/club-data-mapping/SKILL.md sección 1 y .claude/skills/club-data-mapping/referencia/leer-pdf.md):
 // - "Pago de gastos por compraventa de jugadores" (2026, 2027): son comisiones/intermediación de
 //   la operación, no el costo del pase en sí. Boca no desglosa este tipo de comisión dentro de su
 //   bucket "Compra de jugadores" (que es solo amortización + deterioro de pases), así que meterlo
@@ -1017,7 +1016,7 @@ const racingFiscalYearMeta = {
     // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
     // detectado nadie, nunca.
     // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
-    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // de cabecera y la excepción documentada en club-data-mapping/referencia/fx.md), así que los totales van
     // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
     // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
     // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
@@ -1046,7 +1045,7 @@ const racingFiscalYearMeta = {
     // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
     // detectado nadie, nunca.
     // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
-    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // de cabecera y la excepción documentada en club-data-mapping/referencia/fx.md), así que los totales van
     // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
     // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
     // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
@@ -1076,7 +1075,7 @@ const racingFiscalYearMeta = {
     // qué compararlos, así que un dígito mal transcripto en cualquiera de sus líneas no lo hubiera
     // detectado nadie, nunca.
     // EN QUÉ MONEDA VAN: estos 3 ejercicios están guardados en USD ya-convertido (ver el comentario
-    // de cabecera y la excepción documentada en club-data-mapping §5), así que los totales van
+    // de cabecera y la excepción documentada en club-data-mapping/referencia/fx.md), así que los totales van
     // también en USD, dividiendo el número impreso en pesos por el MISMO fx con el que se
     // convirtió cada línea. Eso no vuelve circular el chequeo: como todas las líneas usan ese
     // mismo fx, la división es exacta y lo que se verifica sigue siendo lo que importa — que la
@@ -1340,8 +1339,7 @@ const racingFiscalYearMeta = {
 // "Estado de resultados" (ver `presupuestoOverlayFor()`/`presupuestoOverlayReportFor()` en
 // js/finanzas-calc.js). Formato: mismo shape que racingRevenueLinesByYear/racingExpenseLinesByYear
 // (rawLabel/normalizedCategory/amountNative/items), más su propio currency/fx (puede declarar un
-// tipo de cambio distinto al del balance del mismo ejercicio, ver club-data-mapping SKILL.md
-// sección 5).
+// tipo de cambio distinto al del balance del mismo ejercicio, ver club-data-mapping/referencia/fx.md).
 //
 // Ejercicio 2020 (Versión 58): primer overlay real cargado, `presupuesto2019-20.pdf` (mismo
 // ejercicio 1°/9/2019 al 31/8/2020 que el balance real ya cargado en racingRevenueLinesByYear
@@ -1885,7 +1883,7 @@ Object.assign(sources, {
       title:'Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2019/2020 (1°/9/2019 al 31/8/2020)',
       type:'official_budget', reliability:'primary',
       url:'https://www.racingclub.com.ar/informes/presupuesto2019-20.pdf',
-      note:'PDF oficial (8 páginas), a diferencia de la mayoría de los presupuestos de este archivo es un ESCANEO puro (sin texto extraíble), transcripto con el Read tool sobre imágenes de página, corrigiendo primero una inclinación diagonal real del escaneo (~0,78°, ver `.claude/skills/club-data-mapping/SKILL.md` sección 9 para la receta de deskew). Mismo ejercicio que `racing-balance-2019-20` (el balance real, dato primario) — este presupuesto es la columna "Presupuesto" de comparación en "Estado de resultados". Convertido a USD con $70, el tipo de cambio que el propio presupuesto declara como premisa (distinto al $73,98 del balance). Copia local y transcripción completa en finance-of-sports/Clubes/Argentina/Racing/ (presupuesto2019-20.pdf + racing-presupuesto-2019-20.md).',
+      note:'PDF oficial (8 páginas), a diferencia de la mayoría de los presupuestos de este archivo es un ESCANEO puro (sin texto extraíble), transcripto con el Read tool sobre imágenes de página, corrigiendo primero una inclinación diagonal real del escaneo (~0,78°, ver `.claude/skills/club-data-mapping/referencia/leer-pdf.md` para la receta de deskew). Mismo ejercicio que `racing-balance-2019-20` (el balance real, dato primario) — este presupuesto es la columna "Presupuesto" de comparación en "Estado de resultados". Convertido a USD con $70, el tipo de cambio que el propio presupuesto declara como premisa (distinto al $73,98 del balance). Copia local y transcripción completa en finance-of-sports/Clubes/Argentina/Racing/ (presupuesto2019-20.pdf + racing-presupuesto-2019-20.md).',
     },
   'racing-balance-2021': {
       id:'racing-balance-2021', clubId:'racing',

@@ -45,7 +45,7 @@
 // — no reconciliaba contra el Umsatzerlöse total de la GuV (línea 1, pág. 5, SIEMPRE confiable). El
 // valor correcto es 7.292 (SIN el "1"), confirmado cruzando contra `fuentes/Alemania/RB Leipzig.md`
 // (que ya lo tenía anotado correcto desde el sourcing original) — con 7.292 la suma cierra EXACTO.
-// Moraleja de club-data-mapping SKILL.md sección 10 aplicada al revés: acá SÍ había una fila que
+// Moraleja de club-data-mapping/referencia/leer-pdf.md aplicada al revés: acá SÍ había una fila que
 // "no explicaba la diferencia" de otra fila, sino un dígito de más en la propia transcripción —
 // conviene cruzar contra fuentes/<País>/<Club>.md antes de asumir que el documento fuente está mal.
 //

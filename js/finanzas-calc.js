@@ -295,7 +295,7 @@
   // entradas/tickets), solo se renombra para que todas las vistas usen el mismo vocabulario. Todos
   // los clubes del motor genérico comparten esta misma lista (es la gracia de "Formato simplificado":
   // buckets consistentes entre clubes).
-  // REGLA PERMANENTE (Versión 47, ver .claude/skills/club-data-mapping/SKILL.md sección 13): estos
+  // REGLA PERMANENTE (Versión 47, ver .claude/skills/club-data-mapping/referencia/formato-simplificado.md): estos
   // labels Y ESTE ORDEN tienen que coincidir entre todos los clubes para el mismo concepto (Guido:
   // "la tabla tiene que quedar exactamente igual ordenada tambien. el orden importa"), así "Formato
   // simplificado" se lee igual entre clubes. Orden de referencia: Cuotas Sociales, Comercial/
@@ -373,7 +373,7 @@
   // identificable (antes de esto, Racing tenía SOLO 4 filas de gastos, nunca las mismas que Boca
   // mostraba para 2027, que tenía 7). Mapeo real hecho en `data/racing-data.js` (ver comentario ahí
   // antes de `racingExpenseLinesByYear`) y documentado en
-  // `.claude/skills/club-data-mapping/SKILL.md` sección 13.
+  // `.claude/skills/club-data-mapping/referencia/formato-simplificado.md`.
   // Versión 194 (to-do 42): se agrega "Educación" del lado de Gastos, espejo de la fila que
   // Ingresos ya tiene desde la Versión 189. Hasta acá el sitio podía mostrar cuánto INGRESA un
   // colegio de club pero no cuánto CUESTA (esa plata caía en "Otras secciones deportivas" o en
@@ -767,7 +767,7 @@
   // "Formato simplificado" de cualquier club, misma función que ya usa nativeReportFor() cuando el
   // toggle está activo — acá se llama SIEMPRE (sin depender del toggle global `simplifyFormat`),
   // porque los gráficos de Inicio necesitan las categorías homologadas entre clubes (ver
-  // `club-data-mapping/SKILL.md` sección 13), no el desglose "tal cual la fuente".
+  // `club-data-mapping/referencia/formato-simplificado.md`), no el desglose "tal cual la fuente".
   function simplifiedReportForClub(clubId, year){
     return simplifiedReportForGeneric(clubId, year);
   }
