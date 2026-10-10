@@ -42,3 +42,5 @@
 - Último chequeo: 2026-09-22.
 
 Color de marca: #111533 — pt/en.wikipedia (plantilla de camiseta titular body1=111533, "Leão Azul"; azul marino), escudo azul marino casi negro con RC blanco, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf` (sourceId `remo-br-demonstracoes-contabeis-2021`).

@@ -480,6 +480,9 @@ const clubs = {
   // Vila Nova: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf. brandColor #F00000
   // (procedencia en fuentes/Brasil/Vila Nova.md, club-or-year-onboarding/club-nuevo.md).
   'vilanova-br': { id:'vilanova-br', name:'Vila Nova Futebol Clube', displayName:'Vila Nova', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#F00000' },
+  // Remo: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Remo/demonstracoes-contabeis-2021.pdf. brandColor #111533
+  // (procedencia en fuentes/Brasil/Remo.md; tools/cargar-lote.mjs).
+  'remo-br': { id:'remo-br', name:'Clube do Remo', displayName:'Remo', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#111533' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
