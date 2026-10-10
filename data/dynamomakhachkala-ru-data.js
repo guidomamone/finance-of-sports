@@ -48,15 +48,6 @@ const dynamomakhachkalaruRevenueLinesByYear = {
   // Generados/Rusia/Dynamo Makhachkala/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Dynamo Makhachkala/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2024: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:401.924, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Трансферные платежи', normalizedCategory:'player_sales', amountNative:0.8, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Призовые ФНЛ, РФС', normalizedCategory:'competition_bonus', amountNative:58.079, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Курсовые разницы', normalizedCategory:'other_income', amountNative:9.383, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Прочее', normalizedCategory:'other_income', amountNative:1.281, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:344.622, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:500, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Dynamo Makhachkala/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2025: [
@@ -88,17 +79,19 @@ const dynamomakhachkalaruRevenueLinesByYear = {
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:51.845, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:300, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Dynamo Makhachkala/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2024: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:401.924, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Трансферные платежи', normalizedCategory:'player_sales', amountNative:0.8, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Призовые ФНЛ, РФС', normalizedCategory:'competition_bonus', amountNative:58.079, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Курсовые разницы', normalizedCategory:'other_income', amountNative:9.383, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Прочее', normalizedCategory:'other_income', amountNative:1.281, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:344.622, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:500, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const dynamomakhachkalaruExpenseLinesByYear = {
-  2024: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-60.103, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Курсовые разницы', normalizedCategory:'other_expenses', amountNative:-12.713, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы', normalizedCategory:'other_expenses', amountNative:-2.717, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-1127.11, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-133.776, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-15.219, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-3.071, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2025: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-123.419, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Курсовые разницы', normalizedCategory:'other_expenses', amountNative:-8.278, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -130,30 +123,17 @@ const dynamomakhachkalaruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-45.606, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-3.376, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2024: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-60.103, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Курсовые разницы', normalizedCategory:'other_expenses', amountNative:-12.713, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы', normalizedCategory:'other_expenses', amountNative:-2.717, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-1127.11, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-133.776, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-15.219, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-3.071, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const dynamomakhachkalaruFiscalYearMeta = {
-  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2024-12-31',
-    sourceId:'dynamomakhachkala-ru-bfo-2024-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:7.752, tax:-72.037,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:8.425},
-      {label:'Проценты к уплате (2330)', value:-0.673},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-72.037},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:401.924, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:60.103, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1127.11, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-102.905,
-  },
   2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2025-12-31',
     sourceId:'dynamomakhachkala-ru-bfo-2025-datos',
@@ -231,6 +211,28 @@ const dynamomakhachkalaruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:31.489,
+  },
+  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2024-12-31',
+    sourceId:'dynamomakhachkala-ru-bfo-2024-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:7.752, tax:-72.037,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:8.425},
+      {label:'Проценты к уплате (2330)', value:-0.673},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-72.037},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:401.924, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:60.103, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1127.11, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-102.905,
   },
 };
 const dynamomakhachkalaruPresupuestoOverlayByYear = {};
