@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 658 — `verificar.mjs`: subtotal repetido también por la fila de abajo (to-do 199, patrón A) (2026-10-10)
+
+- Una fila que no es renglón con el mismo importe que la fila inmediata de abajo (mismo lado, nada en el medio) no se cuenta; dentro del
+  escalón "subtotal repetido" (después de la lectura 4, misma compuerta). Simulado sin los ajustes a mano: Remo 2023 y 2024 pasan de cola a
+  OK. 306 verificaciones: cambian 2 de Cuiabá, con lo cargado idéntico (Cuiabá 2024 cierra con la lectura 4 en vez de la 5).
+
 ## Versión 657 — `extraer.mjs`: costo de extraer sin historia medido de nuevo (2026-10-10)
 
 - `MEDIANA_EXTRAER` 0,12 → 0,20 y `TECHO_EXTRAER` 0,32 → 0,33 (389 extracciones: mediana 0,196, percentil 90 0,332). Solo cambia lo que

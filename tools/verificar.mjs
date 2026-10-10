@@ -333,6 +333,16 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // nota si la tiene, o entra entero: el mismo importe). Casos: Parma 2025 (.md L525 "altri" 118.887.215, L526 "Totale altri ricavi e
         // proventi" 118.887.215; "altri" abierto con la nota b31) y Parma 2024 (la nota b46, L1527-L1534, cuelga del subtotal): sin esto los
         // ingresos daban el doble, ninguna lectura 0-4 cerraba y ganaba la 5, que no abre notas (Televisión en 0).
+        // (to-do 199, patrón A) Y una fila que no es renglón con el MISMO importe que la fila INMEDIATA DE ABAJO del estado (mismo lado, nada
+        // en el medio: ni otra fila de otro lado) es el mismo número impreso dos veces: no se cuenta y queda la de abajo (la más detallada, o el
+        // total). Casos: Remo 2023 y 2024 ("Receita Operacional Bruta" 33.831.604 y "Receita Operacional Líquida" 33.831.604, sin deducciones,
+        // L10 y L12); Remo 2020 (total "(+) Receita Bruta Operacional" 12.351.668,08, L191, y su único renglón con el mismo importe, L192).
+        // esSumaDe pide dos renglones, así que un subtotal de un solo renglón o repetido por el total se contaba además.
+        const sigEst = subRepetido ? estado[estado.indexOf(f) + 1] : null;
+        if (sigEst && sigEst.lado === lado && sigEst.tipo !== 'resultado' && Math.abs(f[campo] || 0) > 0 && cerca(Math.abs(sigEst[campo] || 0), Math.abs(f[campo] || 0)) && !esSumaDe(arriba) && !esSumaDe(abajo)) {
+          if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) repite la fila de abajo "${sigEst.etiqueta}" (L${sigEst.linea}); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
+          continue;
+        }
         const previo = subRepetido && k > 0 ? delLado[k - 1] : null;
         if (previo && previo.tipo === 'renglon' && previo.lado === lado && !esSumaDe(arriba) && !esSumaDe(abajo) && cerca(Math.abs(previo[campo] || 0), Math.abs(f[campo] || 0))) {
           const salio = salidaDe.get(previo) || [];

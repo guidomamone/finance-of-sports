@@ -228,6 +228,8 @@ Mitigaciones:
             `fila` también con su signo, relativo a la mayoría de los ajustes de su lado (Versión 493)
  ESCALÓN    si la 4 no cierra: la 4 sin contar el subtotal que repite el renglón INMEDIATO de arriba (mismo importe); si el renglón
             no se abrió, el subtotal ocupa su lugar con su nota; misma compuerta que la 4 (Versión 586, to-do 175; caso Parma 2025)
+            También una fila que no es renglón con el mismo importe que la fila inmediata de abajo (mismo lado, nada en el medio): no se
+            cuenta (to-do 199, patrón A; casos Remo 2023 y 2024, "Receita Operacional Bruta" = "Receita Operacional Líquida")
  ESCALÓN    si la 4 no cierra: los ajustes `fila` con el signo comparado contra cómo IMPRIME EL ESTADO su lado (la mayoría de sus
             renglones), no contra la mayoría de los ajustes: un ajuste con el valor tal cual impreso y el signo contrario resta. Misma
             compuerta que la 4; solo si cambia algún signo (to-do 200; caso Criciúma 2022, "Outras receitas Operacionais" 32.222 dentro de

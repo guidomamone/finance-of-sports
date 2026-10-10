@@ -100,11 +100,14 @@ ni en el comentario de ningún archivo de código.
     libro contable de 9 páginas y ~580 cuentas (Ferroviária dre-2022) llegó cortado y se descartó (US$ 0,79 sin resultado). Partir en varias llamadas
     por bloque, o pedir solo los renglones de primer nivel cuando el bloque es un balancete. Ferroviária 2022 se cargó a mano mientras tanto.
 
-199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización: el mayor gasto de tokens de sesión del lote 56). Subtotal y sus componentes juntos
-    (Avaí 2021: ingresos 75,9 M contra 25,3 M reales; Remo 2019-2024; Ferroviária; Vila Nova 2015-2017): decenas de ajustes `fila` a mano para sacar
-    el subtotal. Ver si verificar.mjs puede detectar "renglón = suma de los siguientes" y proponer sacarlo antes de la cola.
+199. SUBTOTALES CONTADOS DOS VECES EN LA EXTRACCIÓN (optimización de tokens de sesión). Patrón A (el mismo importe en dos filas seguidas)
+    resuelto. Quedan: B, renglón del estado + las filas de su nota sin vincular (Ferroviária 2016: "RECEITA LÍQUIDA" 9.211.197 y el desglose
+    L948-958, sumados); C, subtotal que incluye filas del financiero (Avaí 2021: "Receita Bruta" 25.303.151 = ingresos + "Receita Financeira"
+    27.397, se queda junto con sus componentes). Remo 2020 sigue en la cola con el patrón A resuelto: sus gastos también tienen subtotales.
+    Para medir: simular sin los ajustes "(sale) subtotal ..." de esos documentos.
 
-201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
+201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Cuiabá 2024: la columna 2023 da 326,47 M
+    contra 157,93 M cargados (con el escalón del subtotal repetido; 168,53 M sin él). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
     contra el documento 2025, y Ferroviária 2024 da 114,4 M para la columna 2023 (37,56 M real). Cada uno levanta un caso que hay que contestar a mano.
 
 202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
