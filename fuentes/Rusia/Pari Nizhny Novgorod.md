@@ -37,3 +37,5 @@ Los 9 PDF confirmados `PDF document` real vía `pdfinfo`. Tamaños entre 205 KB 
 Color de marca: #5BB8F8 — ru.wikipedia (infobox, camiseta local body1 5BB8F8; colores del club: celeste primero, blanco, azul), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.json` (sourceId `parinizhnynovgorod-ru-bfo-2021-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.json` (sourceId `parinizhnynovgorod-ru-bfo-2022-datos`).
