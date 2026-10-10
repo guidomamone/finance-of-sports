@@ -56,6 +56,12 @@ const lokomotivmoscowruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:6718.143, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1727.029, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Lokomotiv Moscow/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Lokomotiv Moscow/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2025: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:7425.193, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1325.186, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const lokomotivmoscowruExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -81,6 +87,12 @@ const lokomotivmoscowruExpenseLinesByYear = {
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-27.221, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-704.497, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1904.767, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-8377.362, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-35.314, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-600.601, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-938.988, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const lokomotivmoscowruFiscalYearMeta = {
@@ -168,6 +180,27 @@ const lokomotivmoscowruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-798.528,
   },
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2025-12-31',
+    sourceId:'lokomotivmoscow-ru-bfo-2025-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:107.701, tax:234.746,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:305.011},
+      {label:'Проценты к уплате (2330)', value:-197.31},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:234.746},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:7425.193, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:8377.362, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-859.439,
+  },
 };
 const lokomotivmoscowruPresupuestoOverlayByYear = {};
 
@@ -209,6 +242,12 @@ Object.assign(sources, {
     title:'AO Football Club Lokomotiv — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Lokomotiv Moscow/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Lokomotiv Moscow/bfo-2024-datos.md.',
+  },
+  'lokomotivmoscow-ru-bfo-2025-datos': {
+    id:'lokomotivmoscow-ru-bfo-2025-datos', clubId:'lokomotivmoscow-ru',
+    title:'AO Football Club Lokomotiv — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Lokomotiv Moscow/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Lokomotiv Moscow/bfo-2025-datos.md.',
   },
 });
 
