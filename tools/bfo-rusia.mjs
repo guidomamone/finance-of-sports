@@ -17,6 +17,13 @@
 //     ser el aporte del dueño o la venta de jugadores), reemplazar el renglón por su desglose con la misma compuerta. Los PDFs ya están
 //     transcriptos (lote 60). Decisión de Guido: si hay información útil fuera del JSON, se usa.
 //
+//   escalón 3 (Versión 647, ok de Guido el 2026-10-09): el FORMULARIO 6 (Отчет о целевом использовании средств). Los clubes que son ANO
+//     (sin fines de lucro: Akhmat, Akron) o que reciben aportes del dueño o del gobierno regional (Dynamo Makhachkala, Pari NN, Orenburg) los
+//     reportan ahí y no en el formulario 2: Akron 2024, 337 M de ingresos en el 2110 contra 1.415 M de aportes en el 6200. Se suman: aportes
+//     6210/6215 (cuotas) → member_dues, 6220/6230/6250 → other_income; usos 6310 (programa: el fútbol) → costo del fútbol sin desglosar, 6320
+//     (administración) → admin_general_expense, 6330 (compra de bienes) y 6350 → other_expenses. El 6240 ("ganancia de la actividad comercial")
+//     NO se suma: es la ganancia del formulario 2 trasladada (se contaría dos veces). Compuerta del propio formulario: 6100 + 6200 − 6300 = 6400
+//     (± 2). El resultado del año pasa a ser 2400 + (6200 − 6240) − 6300.
 // QUÉ ESCRIBE. Por cada JSON, una TRANSCRIPCIÓN `bfo-AAAA-datos.md` al lado (generada, fiel al JSON: es el documento fuente legible y lo
 // que lee `analizar()` de alta-club.mjs para el nombre, el cierre, la moneda, el tipo de cambio y la liga). Después, con --escribir:
 //   - club nuevo: `alta-club.mjs --escribir` con el año más viejo y el color de `Admin/altas-revision.jsonl` (sin color, no hay alta);
@@ -78,7 +85,10 @@ function leerAnio(jsonPath) {
   const ing = abs(2110) + abs(2340); const gas = abs(2120) + abs(2210) + abs(2220) + abs(2350);
   const fin = abs(2310) + abs(2320) - abs(2330);
   const pre = ing - gas + fin;
-  return { j, v, p, ing, gas, fin, pre, pre2300: v(2300), neto: v(2400), cierra: v(2300) != null && Math.abs(pre - v(2300)) <= 2 };
+  const t6 = j.targetedFundsUsing || {}; const f6 = (c) => Number(t6[`current${c}`] || 0);
+  const aportes = Math.abs(f6(6200)) - Math.abs(f6(6240)); const usos = Math.abs(f6(6300));
+  const hay6 = aportes + usos > 0; const cierra6 = hay6 && Math.abs(f6(6100) + f6(6200) - f6(6300) - f6(6400)) <= 2;
+  return { j, v, p, ing, gas, fin, pre, pre2300: v(2300), neto: v(2400), cierra: v(2300) != null && Math.abs(pre - v(2300)) <= 2, f6, hay6, cierra6, aportes, usos };
 }
 
 // La transcripción legible del JSON (el "documento" que lee analizar() y que queda como fuente).
@@ -93,6 +103,10 @@ function transcribir(jsonPath, mdPath, anio) {
   const b = A.j.balance || {}; const bv = (c, k = 'current') => (b[`${k}${c}`] == null ? null : Number(b[`${k}${c}`]));
   L.push('', `## Бухгалтерский баланс на 31 декабря ${anio} г. (форма 0710001, итоги)`, '', `| Код | Показатель | На 31.12.${anio} | На 31.12.${anio - 1} |`, '| --- | --- | ---: | ---: |');
   for (const [c, t] of [[1100, 'Итого внеоборотных активов'], [1250, 'Денежные средства и денежные эквиваленты'], [1200, 'Итого оборотных активов'], [1600, 'БАЛАНС (актив)'], [1300, 'Итого капитал и резервы'], [1410, 'Заемные средства (долгосрочные)'], [1400, 'Итого долгосрочных обязательств'], [1510, 'Заемные средства (краткосрочные)'], [1500, 'Итого краткосрочных обязательств'], [1700, 'БАЛАНС (пассив)']]) L.push(`| ${c} | ${t} | ${fmt(bv(c))} | ${fmt(bv(c, 'previous'))} |`);
+  if (A.hay6) {
+    L.push('', `## Отчет о целевом использовании средств за ${anio} год (форма 0710006)`, '', '| Код | Показатель | За отчетный год |', '| --- | --- | ---: |');
+    for (const [c, t] of [[6100, 'Остаток средств на начало отчетного года'], [6210, 'Вступительные взносы'], [6215, 'Членские взносы'], [6220, 'Целевые взносы'], [6230, 'Добровольные имущественные взносы и пожертвования'], [6240, 'Прибыль от приносящей доход деятельности'], [6250, 'Прочие'], [6200, 'Всего поступило средств'], [6310, 'Расходы на целевые мероприятия'], [6320, 'Расходы на содержание аппарата управления'], [6330, 'Приобретение основных средств, инвентаря и иного имущества'], [6350, 'Прочие'], [6300, 'Всего использовано средств'], [6400, 'Остаток средств на конец отчетного года']]) L.push(`| ${c} | ${t} | ${fmt(A.f6(c) || null)} |`);
+  }
   L.push('', `Аудитор: ${A.j.auditReport?.name || '—'}. Обязательный аудит: ${A.j.requiredAudit ? 'да' : 'нет'}.`, '');
   writeFileSync(mdPath, L.join('\n'));
   return A;
@@ -124,7 +138,14 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
     ...(T.ingresos_por_tipo ? deTabla(T.ingresos_por_tipo, 1) : []), ...(T.otros_ingresos ? deTabla(T.otros_ingresos, 1) : [])];
   const exp = [...MAPA.filter((m) => m.lado === 'gasto' && A.v(m.cod) && !tapados.has(m.cod)).map((m) => ({ rawLabel: `${m.ru} (${m.cod})`, normalizedCategory: m.cat, amountNative: -M(m.cod), disclosureLevel: 'aggregated' })),
     ...(T.gastos_por_elemento ? deTabla(T.gastos_por_elemento, -1) : []), ...(T.otros_gastos ? deTabla(T.otros_gastos, -1) : [])];
-  const netInterest = r6(A.fin / 1000); const pat = r6(A.neto / 1000); const tax = r6(pat - A.pre / 1000);
+  // Escalón 3: el formulario 6 (si cierra su propia compuerta).
+  const F6 = A.cierra6;
+  if (F6) {
+    const m6 = (c) => r6(Math.abs(A.f6(c)) / 1000);
+    for (const [c, ru, cat] of [[6210, 'Вступительные взносы', 'member_dues'], [6215, 'Членские взносы', 'member_dues'], [6220, 'Целевые взносы', 'other_income'], [6230, 'Добровольные имущественные взносы и пожертвования', 'other_income'], [6250, 'Прочие поступления', 'other_income']]) if (A.f6(c)) rev.push({ rawLabel: `${ru} (${c}, форма 6)`, normalizedCategory: cat, amountNative: m6(c), disclosureLevel: 'aggregated' });
+    for (const [c, ru, cat] of [[6310, 'Расходы на целевые мероприятия', 'lump_football_operations_expense'], [6320, 'Расходы на содержание аппарата управления', 'admin_general_expense'], [6330, 'Приобретение основных средств, инвентаря и иного имущества', 'other_expenses'], [6350, 'Прочие расходы', 'other_expenses']]) if (A.f6(c)) exp.push({ rawLabel: `${ru} (${c}, форма 6)`, normalizedCategory: cat, amountNative: -m6(c), disclosureLevel: 'aggregated' });
+  }
+  const netInterest = r6(A.fin / 1000); const pat = r6((A.neto + (F6 ? A.aportes - A.usos : 0)) / 1000); const tax = r6(A.neto / 1000 - A.pre / 1000);
   const extraRows = MAPA.filter((m) => /^fin/.test(m.lado) && A.v(m.cod)).map((m) => ({ label: `${m.ru} (${m.cod})`, value: (m.lado === 'fin-' ? -1 : 1) * M(m.cod) }));
   if (Math.abs(tax) > 1e-6) extraRows.push({ label: `Налог на прибыль и прочее (2300 − 2400)`, value: tax });
   const presentes = new Set([...rev, ...exp].map((l) => l.normalizedCategory)); const enLump = (en) => presentes.has(en);
@@ -132,14 +153,14 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const sinDesglose = [...rev, ...exp].filter((l) => /^lump_football_operations/.test(l.normalizedCategory)).map((l) => ({ renglon: l.rawLabel, lado: l.amountNative < 0 ? 'gasto' : 'ingreso', importe: Math.abs(l.amountNative), motivo: 'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)' }));
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
-    pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: Object.keys(T),
+    pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: [...Object.keys(T), ...(F6 ? ['formulario 6'] : [])],
     totales: { patImpreso: { label: `Чистая прибыль (убыток), código 2400 (suma verificada contra el 2300)`, pag: null } },
     fxCloseNuevo: fxRef.fxClose ? { key: fxRef.valor, ...fxRef.fxClose } : null,
     liga: { valor: liga.valor ?? null, fuente: liga.fuente || 'sin caché de la liga', estado: liga.estado || 'pendiente' },
     ejercicio: {
       clubId, year: anio, cierre: `${anio}-12-31`, perimetro: 'individual', revenueLines: rev, expenseLines: exp,
       fiscalYearMeta: { currency: 'RUB', ...(fxRef.valor ? { fxRef: fxRef.valor } : {}), sourceId, reportType: 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest, tax, extraRows, incluidoEn, sinDesglose, grossDebt: null, cash: null, officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: pat },
-      source: { id: sourceId, clubId, title: `${club.name || club.displayName} — отчетность ${anio} в ГИР БО (bo.nalog.gov.ru), ejercicio ${anio}`, type: 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/bfo-rusia.mjs (${HOY}) desde ${carpeta}/bfo-${anio}-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: ${md}.${Object.keys(T).length ? ` Escalón 2: ${Object.entries(T).map(([k, t]) => `${k} de ${t.nota}`).join('; ')} (la suma de sus filas da el código del formulario).` : ''}` },
+      source: { id: sourceId, clubId, title: `${club.name || club.displayName} — отчетность ${anio} в ГИР БО (bo.nalog.gov.ru), ejercicio ${anio}`, type: 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/bfo-rusia.mjs (${HOY}) desde ${carpeta}/bfo-${anio}-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso.${F6 ? ' Más el formulario 6 (uso de fondos con fin específico: aportes y gastos del programa, sin el 6240; 6100 + 6200 − 6300 = 6400); resultado = 2400 + (6200 − 6240) − 6300.' : ''} Transcripción legible: ${md}.${Object.keys(T).length ? ` Escalón 2: ${Object.entries(T).map(([k, t]) => `${k} de ${t.nota}`).join('; ')} (la suma de sus filas da el código del formulario).` : ''}` },
     },
   };
 }
@@ -171,7 +192,7 @@ for (const nombre of carpetas) {
   const color = rev && Object.prototype.hasOwnProperty.call(rev, 'brandColor') ? rev.brandColor : undefined;
   const okColor = color === null || /^#[0-9A-F]{6}$/i.test(String(color));
   const yaEnSitio = (y) => !!sitio.generic?.[clubId]?.fiscalYearMeta?.[y];
-  const linea = filas.map(({ y, A }) => `${y}${A.cierra ? '' : ' (NO CIERRA)'}${yaEnSitio(y) ? ' (ya está)' : ''}${Object.keys(tablasDe(carpeta, y)).length ? ` [escalón 2: ${Object.keys(tablasDe(carpeta, y)).join('+')}]` : ''}: ingresos ${fmt(A.v(2110))} + otros ${fmt(Math.abs(A.v(2340) || 0))}; neto ${fmt(A.neto)}`).join(' | ');
+  const linea = filas.map(({ y, A }) => `${y}${A.cierra ? '' : ' (NO CIERRA)'}${A.hay6 ? (A.cierra6 ? ` [form. 6: +${fmt(A.aportes)} −${fmt(A.usos)}]` : ' [form. 6 NO CIERRA]') : ''}${yaEnSitio(y) ? ' (ya está)' : ''}${Object.keys(tablasDe(carpeta, y)).length ? ` [escalón 2: ${Object.keys(tablasDe(carpeta, y)).join('+')}]` : ''}: ingresos ${fmt(A.v(2110))} + otros ${fmt(Math.abs(A.v(2340) || 0))}; neto ${fmt(A.neto)}`).join(' | ');
   // Las preguntas del alta se miran sobre la transcripción del JSON (no sobre el registro, que analiza el documento "base" de la carpeta: en
   // Krylia y Rubin es una nota explicativa con varios tipos de cambio declarados, una duda que no existe en el JSON).
   const preguntasAlta = esNuevo && clubId ? (() => { try { const a = analizar(`${carpeta}/bfo-${anios[anios.length - 1]}-datos.md`, sitio, {}); return [...(a.campos || []), ...(a.ejercicio?.campos || [])].filter((c) => c.estado === 'pregunta').map((c) => c.campo); } catch (e) { return [`analizar falló: ${e.message.slice(0, 80)}`]; } })() : [];
@@ -180,7 +201,7 @@ for (const nombre of carpetas) {
   if (!ESCRIBIR || freno) continue;
 
   // Alta (club nuevo) con el año más viejo que cierra.
-  const aCargar = filas.filter(({ y, A }) => A.cierra && (!yaEnSitio(y) || (REEMPLAZAR && Object.keys(tablasDe(carpeta, y)).length)));
+  const aCargar = filas.filter(({ y, A }) => A.cierra && (!yaEnSitio(y) || (REEMPLAZAR && (Object.keys(tablasDe(carpeta, y)).length || A.cierra6))));
   if (!aCargar.length) continue;
   let altaHecha = false;
   const sinTrackAntes = new Set(String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes').stdout || '').split('\n').filter(Boolean));
