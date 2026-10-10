@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 653 — `COMO-CORRE-EL-PROYECTO.html`: los escalones de cada etapa, Rusia y los flags del lote (2026-10-09)
+
+- Sección 03 reescrita (Sonnet): un bloque por etapa con su escalera (cómo se hace hoy, sin historia), camino de error, caja y deuda como
+  escalera, el pipeline de Rusia (`bfo-rusia.mjs`) y qué son `--reintentar`, `--rehacer` y `--cargar`.
+
 ## Versión 652 — `verificar.mjs`: signo del resultado impreso sin el signo de la pérdida (to-do 198) (2026-10-09)
 
 - Escalón 2 del resultado que se carga: el signo de las filas cuando el resultado cerró exacto con el signo opuesto y el documento lo marca

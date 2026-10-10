@@ -431,8 +431,9 @@
 <section class="flow" id="onboarding">
   <div class="col">
     <div class="flow-head"><span class="step-no">03</span><h2>Onboardear un club</h2></div>
-    <p>Es el proceso que más se va a repetir. Lleva un PDF de un club hasta un año cargado en el sitio, con un pipeline de scripts de nueve etapas. El PDF lo trae el sourcing (<a href="#sourcing">paso 02</a>). Cada etapa guarda su resultado en <code>Generados/</code>, así que lo que ya está hecho no se vuelve a pagar.</p>
-    <p>Lo que gasta API lo corre Guido en su terminal. La sesión de Claude prepara la lista de documentos, ensaya gratis cuánto va a costar, lee lo que quedó y la cola humana, y escribe en el sitio con <code>cargar.mjs</code>. Cada etapa tiene una escalera de intentos con una sola compuerta: cada escalón propone y la compuerta decide. El detalle de cada una está en <code>Admin/PIPELINE.md</code>.</p>
+    <p>Es el proceso que más se va a repetir. Lleva un PDF de un club hasta un año cargado en el sitio, con un pipeline de scripts de nueve etapas. El PDF lo trae el sourcing (<a href="#sourcing">paso 02</a>). Cada etapa guarda su resultado en <code>Generados/</code>, así que lo que ya está hecho no se vuelve a pagar. Rusia es la excepción: entra por otro camino, sin PDF (ver <a href="#rusia">Rusia</a> más abajo).</p>
+    <p>Lo que gasta API lo corre Guido en su terminal. La sesión de Claude prepara la lista de documentos, ensaya gratis cuánto va a costar, lee lo que quedó y la cola humana, y escribe en el sitio con <code>cargar.mjs</code>. El detalle de cada etapa está en <code>Admin/PIPELINE.md</code>.</p>
+    <p><strong>Cada etapa es una escalera.</strong> El escalón 0 es el camino limpio: reglas pocas y estrictas, sin interpretar nada; si todo cierra, el documento sigue solo. Si no cierra, baja un escalón: una IA a la que se le pregunta algo puntual, con cita del documento. Si tampoco alcanza, la pregunta cae en la cola humana. En todos los escalones manda la misma regla: <strong>el escalón propone y una compuerta decide</strong> (casi siempre una suma que tiene que cerrar contra un número impreso). Y el escalón 0 de cada escalera es siempre una decisión de Guido ya tomada (un ajuste manual de <code>ajustes.mjs</code> o una respuesta de la cola): gana sobre todo lo demás.</p>
   </div>
 
   <figure>
@@ -508,18 +509,18 @@
       <path d="M78,208 L78,244 L746,244 L746,212" fill="none" stroke="var(--cost)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a2)" color="var(--cost)"/>
       <text x="92" y="238" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--cost)">no cierra, o no hay con qué confirmarlo → cola humana; nunca se ajusta una línea para que cierre</text>
     </svg>
-    <figcaption>Un documento sigue solo mientras todo cierra. Cuando algo no cierra pasa una vez por el camino de error (reintento con una lectura más permisiva) y, si sigue sin cerrar, llega a la cola humana con la pregunta ya armada.</figcaption>
+    <figcaption>Un documento sigue solo mientras todo cierra. Cuando algo no cierra baja de escalón (ver más abajo los de cada etapa) y, si ningún escalón lo resuelve, llega a la cola humana con la pregunta ya armada.</figcaption>
   </figure>
 
   <div class="col">
     <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">Las nueve etapas, de un vistazo</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Las etapas 3 a 8 las corre juntas <code>tools/lote.mjs</code> sobre una lista chica de documentos. Sin <code>--ejecutar</code> es un ensayo gratis que dice qué haría y cuánto costaría.</p>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">La etapa 2 la corre <code>tools/pipeline.mjs</code>. Las etapas 3 a 7, y la propuesta de la 8, las corre juntas <code>tools/lote.mjs</code> sobre una lista chica de documentos (saltea los que no tienen transcripción). Sin <code>--ejecutar</code> es un ensayo gratis que dice qué haría y cuánto costaría. Escribir en el sitio (etapa 8) y el commit (etapa 9) es el flag <code>--cargar</code>: ver <a href="#flags">los flags del lote</a>.</p>
   </div>
   <div class="tbl-wrap"><table class="ledger">
     <thead><tr><th>Etapa</th><th>Qué entra → qué sale</th><th>Quién · costo</th></tr></thead>
     <tbody>
       <tr><td class="mono">1 Conseguir</td><td>Una búsqueda → el documento oficial guardado en <code>Clubes/&lt;País&gt;/&lt;Club&gt;/</code>. El año se lee del contenido, no del nombre del archivo.</td><td class="num">sourcing,<br>sesión de Claude</td></tr>
-      <tr><td class="mono">2 Transcribir</td><td>PDF → texto Markdown con marca de página. Un escaneo se marca como tal; si el texto sale roto se trata como escaneo.</td><td class="num"><code>pipeline.mjs</code> (Mistral; Gemini o Claude donde hay dudas),<br>lo corre Guido</td></tr>
+      <tr><td class="mono">2 Transcribir</td><td>PDF → texto Markdown con marca de página. Un escaneo se marca como tal; si el texto sale roto se trata como escaneo. Cada página con números se valida antes de seguir.</td><td class="num"><code>pipeline.mjs</code> (Mistral; Gemini o Claude donde hay dudas),<br>lo corre Guido</td></tr>
       <tr><td class="mono">3 Localizar</td><td>Un índice gratis de las tablas del texto → la elección de cuáles son el estado de resultados, las notas de ingresos y gastos, la escala, la moneda y el perímetro. Si no hay estado de resultados, el documento queda como fuente.</td><td class="num">IA,<br>~US$ 0,05</td></tr>
       <tr><td class="mono">4 Validar</td><td>Cada número de esos bloques → confirmado contra una lectura independiente: el texto propio del PDF si es digital, la imagen de la página si es un escaneo.</td><td class="num">gratis (digital);<br>centavos (escaneo)</td></tr>
       <tr><td class="mono">5 Extraer</td><td>Solo los bloques elegidos → las filas tal cual, con tipo, lado (ingreso o gasto) y escala. No suma, no convierte, no categoriza.</td><td class="num">IA,<br>~US$ 0,12–0,35</td></tr>
@@ -531,14 +532,278 @@
   </table></div>
 
   <div class="col">
-    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">La cola humana</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Es el lugar donde cae lo que el pipeline no puede resolver solo: un número que no se confirma, una suma que no cierra, un año vecino que da distinto, una categoría con poca confianza. Cada caso llega como una <strong>pregunta de sí o no</strong>, con la propuesta del sistema, la página del PDF a abrir y las líneas del texto. Se ve con <code>node tools/cola.mjs</code> y Guido contesta con el mismo comando: aceptar, corregir, descartar o preguntarle al club. La próxima corrida toma la respuesta, y una respuesta de categoría queda como precedente para los años siguientes del club. Para forzar una decisión que no es una respuesta puntual (un perímetro, una fecha de cierre, un tipo de cambio) existen los ajustes manuales, <code>node tools/ajustes.mjs</code>.</p>
-    <p style="color:var(--ink-soft);margin:12px 0 0;">Para ver en qué etapa está cada documento: <code>node tools/estado.mjs</code> (gratis).</p>
+    <h3 style="font-size:18px;margin:34px 0 6px;font-weight:600;" id="escalones">Los escalones de cada etapa</h3>
+    <p style="color:var(--ink-soft);margin:0 0 18px;">Así corre hoy cada escalera, de arriba (el camino limpio) hacia abajo (lo que se prueba si el de arriba no cierra). La tercera columna es la compuerta: qué tiene que pasar para que ese escalón se dé por bueno. Si ninguno pasa, el documento termina en la cola humana o queda como fuente. Con <code>node tools/estado.mjs --escalones</code> (gratis) se ve en qué escalón quedó cada dato.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 1 · Conseguir</h3>
+    <p class="gnote">La escalera de búsqueda es la del sourcing (<a href="#sourcing">paso 02</a>). Acá solo se agrega la compuerta del documento ya guardado: que sea el correcto y que no esté repetido.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Sourcing</td><td>Las 5 familias de ángulo del paso 02, cada una a fondo antes de la siguiente.</td><td>Aparece el documento oficial del club (si no, una de las 5 salidas del paso 02).</td></tr>
+        <tr><td class="mono">Identificar el documento</td><td>El año sale del contenido (<code>periodo.mjs</code>). Cada PDF tiene su huella (sha1): de varios PDFs idénticos queda uno (el cargado; si no, el que tiene transcripción; si no, el que no se llama como un anexo; si no, la primera ruta) y los demás quedan como <code>duplicado</code>.</td><td>No es una copia, ni de otro club, año o perímetro. Si las copias tienen años distintos en el nombre, falta un año: se reabre el sourcing.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 2 · Transcribir (y validar la transcripción)</h3>
+    <p class="gnote">El escalón 0 es lo que hay: Mistral transcribe el documento entero y <code>pipeline.mjs</code> valida gratis cada página con números (contra el texto propio del PDF, las sumas de sus tablas, el año anterior ya cargado y el balance). Lo que esos chequeos no respaldan es lo que paga IA. Si nada de esto alcanza, el documento queda como fuente (memoria, dictamen, balance solo).</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · la que hay</td><td>La transcripción existente, ya validada gratis.</td><td>La etapa 3 (localizar) encuentra el estado de resultados.</td></tr>
+        <tr><td class="mono">1 · re-transcribir</td><td>Si la transcripción no es de Mistral y el PDF tiene páginas interiores en imagen: se transcribe de nuevo con Mistral y se vuelve a localizar (<code>--reintentar</code>).</td><td>Localizar lo encuentra.</td></tr>
+        <tr><td class="mono">1a · las voces</td><td>El inventario de transcripciones dice "revisar": <code>resolver-inventario.mjs</code> manda a una IA solo las páginas con cifras que no coinciden con el texto del PDF (Claude si el PDF tiene texto; Gemini, con Claude de desempate, si es un escaneo). Ignora las dudas en prosa. Una página con la misma huella que en la última validación "listo" no se paga otra vez. Si el .md cambió ("sin verificar"), primero va la validación gratis.</td><td>El inventario queda "listo".</td></tr>
+        <tr><td class="mono">1b · rearmar con el texto propio</td><td>Camino de error, solo PDF digital: la etapa 4 dice que el .md no coincide con el texto propio y la verificación no cerró. <code>texto-propio-a-md.mjs</code> rearma esas páginas, gratis: primero el método "columnas"; si la etapa 6 sigue sin cerrar, el método "regiones" (una vez cada uno). Solo cuentan los números sin confirmar de bloques elegidos hoy.</td><td>Por página, la rearmada conserva al menos la mitad de las filas de tabla (si no, queda la anterior); y al final cierran las etapas 4 y 6.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Ejemplos reales.</strong> UC 2015 era un PDF híbrido: los estados eran páginas en imagen y la transcripción vieja había salido solo del texto propio del PDF; el escalón 1 la rehízo con Mistral. En Novorizontino 2025 el estado de resultados está girado 90°: el rearmado salía con menos de la mitad de las filas y la compuerta por página dejó la transcripción anterior.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 3 · Localizar</h3>
+    <p class="gnote">Antes de pagar, una compuerta gratis (<code>antes-de-localizar.mjs</code>, solo para documentos sin ubicación previa) se asegura de que estén fijados el cierre y el perímetro. Perímetro es "individual" o "consolidado" (el estado de un solo club o el del grupo con sus controladas). Después, la escalera de localizar.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Antes de pagar · cierre</td><td>Ajuste <code>cierre</code> → lo que lee <code>periodo.mjs</code> del documento.</td><td>Hay fecha de cierre. Si no, no se localiza y se sugiere la de los documentos vecinos.</td></tr>
+        <tr><td class="mono">Antes de pagar · perímetro</td><td>Ajuste (del documento o del club) → el .md trae un solo perímetro → trae consolidado y el año cargado más cercano es consolidado.</td><td>Alguno de los tres decide. Si no, no se localiza y el lote imprime el ajuste que falta.</td></tr>
+        <tr><td class="mono">Perímetro del club por señales</td><td><code>perimetro-senales.mjs</code>, para cada club que frenaría por perímetro, mirando todos sus .md. Paso A (gratis): qué estados trae cada documento como tabla (la fila del total de ingresos con un título que nombra el perímetro); si hay uno solo, ese. Paso B (voto) si hay los dos: C1, el consolidado supera al individual en 5% o más; C2, los crecimientos difieren en 15 puntos o más (señal de fusión); C3, Jev responde si una controlada hace negocio del fútbol.</td><td>2 o 3 votos: consolidado. 0 votos: individual. 1 voto o sin respuesta: no decide. Fija el ajuste del club solo si ningún ejercicio tiene únicamente el otro perímetro; si no (cambio de perímetro en la serie), decide Guido.</td></tr>
+        <tr><td class="mono">0 · índice normal</td><td><code>indice-bloques.mjs</code> (gratis) arma una ficha de cada tabla; <code>localizar.mjs</code> (IA) elige estado de resultados, notas, escala, moneda, columnas y perímetro.</td><td>La etapa 6 cierra y no faltan categorías.</td></tr>
+        <tr><td class="mono">1 · índice ampliado</td><td>Un índice más permisivo (cuenta también las filas que terminan en "-") y la lista de lo que faltó. Con <code>--reintentar</code>, una vez por documento.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">2 · las notas hacen de estado</td><td>Sin estado de resultados pero con notas de ingresos y de gastos: el total de cada nota es un renglón. Con <code>--reintentar</code>, una vez; en el mismo modo si ya había una localización así.</td><td>Cierra contra el resultado impreso (en Colombia, la conciliación del impuesto). Un resultado "sin estado" nunca pisa una localización que sí tenía estado.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Ejemplos reales.</strong> UC 2013: el cuadro por segmento tenía las etiquetas partidas en dos renglones y el índice normal perdía filas; el índice ampliado las recuperó. Fortaleza (Colombia) tiene años con solo notas: el escalón 2 los localiza. Si después del reintento un desglose sigue sin sumar, el documento se carga con el renglón sin abrir y <code>node tools/diagnostico-desglose.mjs "&lt;pdf&gt;"</code> (gratis) dice si el problema es del índice (etapa 3) o de la transcripción (etapa 2).</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 4 · Validar</h3>
+    <p class="gnote">Cada número de los bloques elegidos tiene que estar confirmado por una segunda lectura independiente. En <code>.validacion.json</code> queda en qué escalón terminó cada página. Una página de PDF digital sin texto propio (menos de 50 caracteres: una hoja escaneada metida en el PDF) se valida como escaneo; también una con encabezado y pie en texto pero la tabla en imagen (si de sus números de 4 cifras o más, al menos 10, menos del 25% están en el texto propio).</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · texto propio</td><td>El número se busca en el texto propio de su página (PDF digital). Gratis.</td><td>Está en su página.</td></tr>
+        <tr><td class="mono">1 · Gemini</td><td>Gemini lee la imagen de la página (~US$ 0,003 por página).</td><td>Coincide.</td></tr>
+        <tr><td class="mono">2 · Claude</td><td>Claude lee la imagen, si Gemini la rechaza.</td><td>Coincide.</td></tr>
+        <tr><td class="mono">2b · un año</td><td>¿Es un 1900-2099 en la fila de encabezado de una tabla? Sigue sin confirmar, con la propuesta "anio-encabezado".</td><td>Su línea no es la de ninguna fila que se carga: no frena la categorización.</td></tr>
+        <tr><td class="mono">3 · las sumas</td><td>Las sumas de la etapa 6 lo confirman (también un número sin ninguna segunda lectura, porque Gemini y Claude rechazaron la página).</td><td>Con la etapa 6 cerrada no frena; sin cerrar, va a la cola.</td></tr>
+        <tr><td class="mono">3a · no es de una fila que se carga</td><td>Un número que no es el valor del año de una fila que se carga (fila del resultado, total de una nota, columna del año anterior).</td><td>No frena: si estuviera mal leído, la etapa 6 no habría cerrado.</td></tr>
+        <tr><td class="mono">3b · el resultado decide</td><td>De una fila que se carga: se prueba el resultado con el número de la primera lectura y con el de la segunda.</td><td>Confirmado si cierra con uno y deja de cerrar con el otro (sin segunda lectura parecida, solo con cierre exacto). Si cierran los dos, pregunta en la cola.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">Si nada confirma, el caso va a la cola con los dos números. <strong>Ejemplo real:</strong> Genoa 2023 tenía una página con la tabla de notas en imagen: 71 números sin confirmar con la etapa 6 cerrada al centavo. Hoy esa página se valida como escaneo.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 5 · Extraer</h3>
+    <p class="gnote">Es la única etapa sin una escalera propia: <code>extraer.mjs</code> (IA) recibe solo los bloques elegidos, con cada línea numerada, y devuelve las filas tal cual. Su red es la etapa 6: lo que extrajo mal (lado o tipo equivocado, una fila de nota pegada al renglón equivocado) no cierra y se frena ahí.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · extraer</td><td>Las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto, financiero, impuesto), qué renglón del estado desglosa cada fila de nota (también notas que desglosan notas) y la escala de cada bloque. De un cuadro por segmento toma solo la columna del segmento que abre un renglón.</td><td>La etapa 6 cierra.</td></tr>
+        <tr><td class="mono">1 · reintento</td><td>Con <code>--reintentar</code>, vuelve a extraer con la lista de lo que faltó y la regla de usar la columna de totales de un cuadro por segmento para un renglón del estado.</td><td>La etapa 6 cierra. Una sola vez por documento.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">Para una fila que la extracción trajo mal, el ajuste manual <code>fila</code> la saca (por etiqueta o por línea del .md). Si las filas se armaron a mano, el ajuste <code>filas-a-mano</code> hace que ni <code>--rehacer</code> las pise.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 6 · Verificar</h3>
+    <p class="gnote"><code>verificar.mjs</code> es gratis y no usa IA (un modelo de lenguaje no sirve para verificar sumas). Acá viven varias escaleras chicas, una por cada pregunta. Las compuertas son siempre aritméticas. Si el documento no tiene ningún total ni resultado impreso en los bloques elegidos, es un fallo: no se carga sin confirmar las sumas.</p>
+
+    <p class="gnote" style="margin-top:18px;"><strong>1. ¿Cierra el resultado?</strong> Se prueban "lecturas" de las filas, en orden. Gana la primera que cierra y queda escrita. La compuerta mira primero, con el resultado exacto (media unidad impresa por fila), las 4 combinaciones de signo del financiero y del impuesto; solo si ninguna es exacta, usa la tolerancia común.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Lectura</th><th>Qué suma</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0</td><td>Las filas tal cual.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">1</td><td>Más el "resultado antes de impuestos", si no hay resultado final.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">2</td><td>Más la posibilidad de que el total impreso sea un renglón más del estado.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">3</td><td>Más los renglones sin lado, según su signo.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">4</td><td>Más los signos impresos, el subtotal de un solo renglón, el total bruto con deducciones aparte y los ajustes <code>fila</code> con su signo.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">4 sin el subtotal repetido</td><td>Si la 4 no cierra: la 4 sin contar el subtotal que repite el renglón inmediato de arriba (mismo importe).</td><td>La misma compuerta que la 4.</td></tr>
+        <tr><td class="mono">nota del subtotal abierta</td><td>Si la lectura ganadora (0 a 4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o menos: la misma lectura con la nota del subtotal abierta.</td><td>Cierra igual.</td></tr>
+        <tr><td class="mono">5</td><td>Solo las hojas, con signo (los balancetes, balances de comprobación, traen columnas débito/crédito); sin totales.</td><td>Resultado impreso exacto.</td></tr>
+        <tr><td class="mono">6</td><td>La 5 más los renglones sin lado, según su signo.</td><td>Resultado impreso exacto.</td></tr>
+        <tr><td class="mono">financiero sin reemplaza</td><td>Si ninguna lectura cerró el resultado: la 5 con los ajustes <code>fila</code> del financiero que no reemplazan nada. No corre si el resultado ya cerró y fallan solo los totales.</td><td>La misma compuerta que la 5.</td></tr>
+        <tr><td class="mono">financiero sin hojas</td><td>En las lecturas 5 y 6, si el estado no trae hojas del financiero, se usan sus renglones o su total único.</td><td>Cierra.</td></tr>
+        <tr><td class="mono">formato italiano: C) financiero</td><td>Si el resultado no cerró exacto y el documento tiene el formato del Código Civil italiano: el "17)" (oneri finanziari) y lo que cuelga de él hasta el 17-bis o el total de C, restando. Si el .md no trae el 17) a la altura de la tabla, vale el nombre fijo del renglón; si con el último subtotal no cierra, se prueban los anteriores. Si la suma no da el total de C, las sumas eligen el signo de las filas del 17-bis: la única combinación (hasta 4 filas) que da exacto.</td><td>La suma da exacto el total de C impreso; después gana la primera lectura 0 a 6 que cierra exacto.</td></tr>
+        <tr><td class="mono">formato italiano: D) rectificaciones</td><td>Con el encabezado "D) Rettifiche di valore" (o "Value adjustments", o el "E) Proventi e oneri straordinari") impreso entre el financiero y el resultado: las filas sin lado de esa zona van al financiero (un 18) suma, un 19) resta, un 21) resta). Si la extracción dejó filas de la D dentro del financiero, la compuerta de C mira solo las filas de C.</td><td>La suma da exacto el total de D impreso; después gana la primera lectura que cierra exacto.</td></tr>
+        <tr><td class="mono">gestión de jugadores neta</td><td>Si ninguna lectura cerró: de las filas sin lado cuentan las que están entre el total de costos y el "resultado antes de impuestos"; un valor positivo entra como ingreso, uno negativo como gasto.</td><td>Alguna lectura de la 0 a la 6 con esa selección cierra el resultado exacto. El año vecino no se compara con un documento que no usa este escalón.</td></tr>
+        <tr><td class="mono">resultado impreso, escalón 2</td><td>Si no hay resultado en los bloques: una línea PREJUÍZO / SUPERÁVIT / "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis es pérdida). El "antes de impuestos" se reconoce también en italiano, checo y griego.</td><td>Alguna lectura cierra con él exacto.</td></tr>
+        <tr><td class="mono">resultado final</td><td>Si cerró contra el "antes de impuestos": candidatos antes ± impuesto. Escalón 0, el resultado impreso en el .md del documento; escalón 1, el impreso en el documento siguiente (su columna del año anterior).</td><td>Uno solo coincide. Si no, cola.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Ejemplos reales.</strong> Cremonese 2025: la tolerancia común elegía "los dos signos invertidos" a 8.522 EUR del impreso, cuando "impuesto invertido" daba exacto; por eso las 4 combinaciones exactas van antes. Torino 2024: los oneri finanziari del 17) se leen restando y la suma da exacto el total de C. AS Roma 2013 a 2017: la "gestione operativa netta calciatori" (el neto de jugadores) está entre costos y resultado antes de impuestos.</p>
+
+    <p class="gnote" style="margin-top:22px;"><strong>2. ¿Una nota abre un renglón?</strong> Una nota reemplaza a su renglón solo si suma (también las anidadas). Si las filas que dicen abrir un renglón no lo cierran, se prueba con las del mismo lado. Si la extracción asignó la nota al subtotal del grupo y la última propuesta de carga marcó una categoría en 0 de ese lado (por ejemplo televisión), las filas de la nota que suman el subtotal impreso reemplazan a los renglones que lo componen. Si no suma, queda el renglón del estado: menos detalle, pero correcto. Si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".</p>
+
+    <p class="gnote" style="margin-top:22px;"><strong>3. ¿En qué escala está?</strong> Queda en el <code>.verificacion.json</code> como <code>escala</code>.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · declarada</td><td>La del bloque, o si no la del documento.</td><td>Si está declarada, manda y nunca se pisa.</td></tr>
+        <tr><td class="mono">1 · año vecino anclado</td><td>Si el documento dice "no se sabe": la escala del año vecino anclado (el que la declara o la resolvió acá), si los ingresos del año en común dan exactamente x1.000 o x1.000.000.</td><td>Pasa el chequeo de año vecino. Si no, queda en unidades y va a la cola.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">La cadena depende del orden: en Fortaleza, 2025 declara su escala, de ahí sale 2024 y de ahí 2023; por eso <code>verificarLista()</code> repite la pasada si algún documento se resolvió así.</p>
+
+    <p class="gnote" style="margin-top:22px;"><strong>4. ¿Coincide con los otros años?</strong> Dos chequeos cruzados: la columna del año anterior contra lo ya cargado, y contra la del documento del año vecino. Si ninguna fila trae la columna del año anterior, "no se puede".</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · columnas crudas</td><td>Los números tal cual del documento y del año comparado.</td><td>Coinciden dentro de 2%.</td></tr>
+        <tr><td class="mono">1 · con los ajustes</td><td>Solo si las crudas no coinciden: cada columna actual con los ajustes <code>fila</code> de su documento (reemplazar y agregar); en la columna anterior, solo los ajustes que sacan una fila (valor 0 con reemplaza). También la columna anterior acepta la suma con el signo impreso al decidir si un total es la suma de sus renglones.</td><td>La misma compuerta (2%).</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">Ejemplo real: Roma 2007 contra 2008 da 157.589 contra 162.017 en crudo; con el ajuste de 2007 da 162.255, dentro de la tolerancia. Sin fecha de cierre detectada, se deduce si el documento anterior y el siguiente del club cierran el mismo día (con aviso).</p>
+
+    <p class="gnote" style="margin-top:22px;"><strong>5. Las dudas que dejó la IA al localizar y extraer.</strong> Antes de llegar a la cola:</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · ¿afecta?</td><td>¿La duda afecta la carga?</td><td>No: queda como nota.</td></tr>
+        <tr><td class="mono">1 · ¿ya contestada?</td><td>¿Guido ya la contestó para este club (club + tema + renglón), en cualquier año?</td><td>Sí: se aplica sola.</td></tr>
+        <tr><td class="mono">2 · la aritmética</td><td>La escalera de lecturas cerró, ningún año vecino da distinto, el tema es cuadro por segmento, cuadro duplicado o columna, y la propuesta "sí" ya está aplicada.</td><td>Se acepta sola, con nota.</td></tr>
+        <tr><td class="mono">2b · solo falla el vecino</td><td>Lo mismo cuando lo único que falla es el año vecino.</td><td>Se acepta sola, con nota.</td></tr>
+        <tr><td class="mono">cola humana</td><td>Escala, perímetro, cuadro de otro año, fila ilegible, "otro" y las propuestas "no" siempre llegan.</td><td>Contesta Guido.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Compuerta final del registro:</strong> deja el documento "listo" para categorizar solo si están confirmados los números de los bloques que usa la lectura que cerró (las filas que se cargan); un número de una nota que no se carga no frena.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 7 · Categorizar</h3>
+    <p class="gnote">Cada fila baja por esta escalera hasta que un escalón le pone categoría. Jev es una IA barata y de volumen (<code>jev-categorizar.mjs</code>); Claude entra por API. Jev y Claude reciben como "sección" de dónde sale la fila, incluido "sin lado en el documento: entra como gasto por su signo". <strong>Compuerta de todos los escalones:</strong> la categoría tiene que ser del lado que la fila tiene en el documento (ingreso o gasto); si no, baja de escalón.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · Guido</td><td>Ajuste manual, o su respuesta en la cola para esa fila.</td><td>Gana siempre.</td></tr>
+        <tr><td class="mono">1 · precedente con contexto</td><td>Misma etiqueta y mismo renglón que desglosa.</td><td>Hay precedente exacto.</td></tr>
+        <tr><td class="mono">2 · precedente exacto</td><td>Misma etiqueta en el club.</td><td>Una sola categoría.</td></tr>
+        <tr><td class="mono">3 · precedente por familia</td><td>Familia de palabras de la etiqueta.</td><td>Una sola categoría.</td></tr>
+        <tr><td class="mono">4 · Jev</td><td>Jev categoriza.</td><td>Confianza de 0,90 o más.</td></tr>
+        <tr><td class="mono">5a · caché de Claude</td><td>¿Claude ya respondió esto? (carpeta + lado + etiqueta + nota)</td><td>Sí: se reusa.</td></tr>
+        <tr><td class="mono">5b · Claude</td><td>Claude categoriza por API.</td><td>Confianza de 0,80 o más.</td></tr>
+        <tr><td class="mono">6 · materialidad</td><td>Las dudas de un lado suman 1% o menos de ese lado.</td><td>Las de confianza 0,60 o más se cargan con aviso.</td></tr>
+        <tr><td class="mono">7a · otro año del club</td><td>Una fila que iba a la cola toma la respuesta de Guido de otro año del club con la misma etiqueta, salvo la marca de lista ("b) oneri sociali" es "oneri sociali").</td><td>Mismo lado, misma nota (o una es el renglón del estado y la otra su hoja en la nota) y una sola categoría entre las respuestas.</td></tr>
+        <tr><td class="mono">7b · otros clubes del país</td><td>La respuesta de otros clubes del mismo país. La carga lo dice: "precedente del país: N clubes (...)".</td><td>Misma etiqueta, lado y contexto (la nota que la abre o, en el estado, el renglón título de arriba), respondida en al menos 2 clubes y todos con la misma categoría.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">Si nada decide, es una pregunta de sí o no en la cola (con la clave "etiqueta|lado"). <strong>"No es rubro":</strong> si la IA dice que una fila verificada con lado no es un rubro, se la excluye; si la carga no cierra, se prueba incluirla (a la cola); gana la que cierra. Sacar una fila a propósito (<code>descartar</code> o <code>corregir --valor no_es_rubro</code>) vale solo para su documento: la respuesta de otro año o de otro club no decide eso. <strong>Ejemplo real:</strong> si la misma etiqueta tiene categorías distintas en el club, el precedente sin contexto no decide y baja de escalón: "Remuneraciones" dentro del costo de ventas (sueldos del plantel) no se confunde con "Remuneración" dentro de gastos de administración.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 8 · Cargar</h3>
+    <p class="gnote"><code>cargar.mjs --desde-verificacion</code> carga solo lo que la etapa 6 dejó en "ok". Cada dato que no sale del documento tiene su propia escalera chica; de dónde salió cada uno queda en el <code>.carga.json</code> (<code>procedencia</code>) y en cada línea del año.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Dato</th><th>Escalones, en orden</th><th>Compuerta / nota</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Tipo de cambio</td><td>Ajuste → el que declara el documento → el de una tabla (gana la fecha más nueva) → la serie oficial del banco central (<code>tools/fx-reference/</code>) → cola.</td><td>La frase del tipo de cambio declarado no trae otra fecha que el cierre. Nunca una cotización dada por Claude.</td></tr>
+        <tr><td class="mono">Perímetro</td><td>Heredado del año cargado más cercano → cola.</td><td>—</td></tr>
+        <tr><td class="mono">Fecha de cierre</td><td>Títulos → encabezados de las tablas (ejercicio | un año antes) → documentos vecinos → cola.</td><td>No más de 2 años después de hoy.</td></tr>
+        <tr><td class="mono">Año (alta de club)</td><td>Ajuste <code>anio</code> → si el nombre tiene dos años seguidos que bajan ("2017-2016", ambiguo), el de las fechas de cierre del .md si es uno de los dos → la regla del nombre (el segundo de un par, el de una fecha ISO…) → el contenido → cola.</td><td>—</td></tr>
+        <tr><td class="mono">Presidentes</td><td><code>data/gestiones/&lt;país&gt;.js</code> tiene una gestión confirmada que cubre el cierre → si no, un caso <code>gestion</code> en la cola (no frena; lo contesta un subagente con nombre, desde, hasta y fuente).</td><td>"Descartar" marca un club sin presidente persona (una SAF, una sociedad anónima) y no se vuelve a preguntar.</td></tr>
+        <tr><td class="mono">Categorías en 0</td><td>Ajuste <code>cero-real</code> → salarios, televisión o estadio; o socios / otros deportes según el perfil del club → reintento (una vez) → aviso.</td><td>Ver "Camino de error" abajo.</td></tr>
+        <tr><td class="mono">Lo que cerró en la etapa 6</td><td>Financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve por palabras ni se excluye sola por un "no es rubro" dudoso.</td><td>—</td></tr>
+        <tr><td class="mono">"Posiblemente dentro de otro rubro"</td><td>Una fila en "—" por un renglón sin desglosar: ajuste <code>incluye</code> o <code>cero-real</code> → precedente del club (plata en todos sus otros balances desglosados, al menos 2) → queda "—". Lo pone <code>--escribir</code> solo, con <code>dentro-de-otro.mjs</code>.</td><td>No cambia ningún número.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Club nuevo.</strong> <code>alta-club.mjs</code> lo da de alta en el mismo commit que su primer año (con todos los archivos que lista "Alta escrita (...)", también <code>data/currency-map.js</code>). El nombre legal sale de <code>decidirNombre()</code>: ajuste <code>name</code> o respuesta de la cola → si la portada y lo más frecuente del .md coinciden, ese → si no, una pregunta a la cola por club. Un subagente Sonnet revisa contra el documento el nombre, el tipo de documento y el cierre; lo que esté mal se corrige con un ajuste. <strong>Compuerta final de la carga:</strong> después de escribir corre <code>node tools/audit.js</code>; si da un error grave, revierte solo.</p>
+  </div>
+
+  <div class="group">
+    <h3>Etapa 9 · Publicar</h3>
+    <p class="gnote">No tiene escalera: un commit local por año cargado. El push lo hace Guido.</p>
+  </div>
+
+  <div class="group">
+    <h3>Camino de error · el reintento</h3>
+    <p class="gnote">El camino limpio no cambia: si todo suma y nada falta, el documento sigue. Las reglas extra viven en el reintento, que es lo que activa <code>--reintentar</code> (ver <a href="#flags">los flags del lote</a>). Un documento queda marcado para reintentar por dos motivos.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Motivo</th><th>Quién lo detecta</th><th>Qué lo dispara</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Un desglose no suma</td><td>Etapa 6</td><td>Una nota, o un cuadro que abre una fila de una nota, no cierra su renglón.</td></tr>
+        <tr><td class="mono">Una categoría da 0 y debería tener número</td><td>Etapa 8 (ahí ya hay categorías)</td><td>Salarios del plantel, televisión o estadio en 0: siempre. Cuotas sociales en 0: solo si el perfil del club dice que tiene socios. Otras secciones deportivas en 0: solo si el perfil dice que tiene otros deportes (básquet, vóley, futsal…). Educación nunca dispara. Un documento con una línea "sin desglosar por la fuente" no se revisa.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;">Qué hace el reintento: vuelve a localizar con el índice ampliado y la lista de lo que faltó, y extrae con esa misma lista; va en el mismo modo que la localización vigente (si es "las notas hacen de estado", en ese modo). Se hace <strong>una sola vez por documento</strong> (también por categoría en 0: queda la marca <code>.reintento-categorias.json</code>); si sigue faltando, se carga con aviso. Antes del primer pago de cada documento corre la compuerta de la etapa 3 (perímetro y cierre fijados). Un año que ya está en el sitio solo se reintenta por categoría en 0, y solo si su propuesta de carga está al día (ningún ajuste manual del mismo documento o de su club con fecha igual o posterior). Si el club no tiene perfil o dice "no se sabe" y la categoría da 0, es una pregunta de sí o no en la cola; la respuesta queda en <code>Admin/perfil-clubes.jsonl</code> para todos los años del club.</p>
   </div>
 
   <div class="col">
-    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">Caja y deuda</h3>
-    <p style="color:var(--ink-soft);margin:0 0 4px;">Van aparte, con el club ya publicado: <code>tools/caja-deuda.mjs</code> completa la caja y la deuda bruta de cada año donde el sitio tiene vacío, sin pisar nunca un valor cargado y sin frenar nada. Escribirlas usa IA en su último escalón, así que lo corre Guido.</p>
+    <h3 style="font-size:18px;margin:30px 0 6px;font-weight:600;">La cola humana</h3>
+    <p style="color:var(--ink-soft);margin:0 0 4px;">Es el lugar donde cae lo que el pipeline no puede resolver solo: un número que no se confirma, una suma que no cierra, un año vecino que da distinto, una categoría con poca confianza. Cada caso llega como una <strong>pregunta de sí o no</strong>, con la propuesta del sistema, la página del PDF a abrir y las líneas del texto. Se ve con <code>node tools/cola.mjs</code> y Guido contesta con el mismo comando: aceptar, corregir, descartar o preguntarle al club. En un caso de categoría, <code>descartar</code> se rechaza (parece "descarto la pregunta" pero saca la fila): para sacar la fila se usa <code>corregir --valor no_es_rubro</code>. La próxima corrida toma la respuesta, y una respuesta de categoría queda como precedente para los años siguientes del club. Para forzar una decisión que no es una respuesta puntual (un perímetro, una fecha de cierre, un tipo de cambio) existen los ajustes manuales, <code>node tools/ajustes.mjs</code>.</p>
+    <p style="color:var(--ink-soft);margin:12px 0 0;">Para ver en qué etapa está cada documento: <code>node tools/estado.mjs</code> (gratis).</p>
+  </div>
+
+  <div class="group" style="margin-top:34px;">
+    <h3>Caja y deuda</h3>
+    <p class="gnote">Van aparte, con el club ya publicado: <code>tools/caja-deuda.mjs</code> completa la caja y la deuda bruta de cada año donde el sitio tiene vacío, sin pisar nunca un valor cargado, y <strong>nunca frena nada</strong>: si ningún escalón pasa, el dato queda en null. Cada dato (caja, deuda) tiene su propia escalera, con una sola escala por documento (la del estado de resultados de ese documento, la que hace coincidir sus cifras con lo ya cargado; si no es plausible, se prueban las otras y se acepta si una sola da ok). Solo se leen las páginas del balance (las que tienen su título o un total del activo o del pasivo, no el flujo de efectivo). Si el .md trae consolidado e individual, con el ajuste <code>perimetro</code> solo cuenta ese. Escribirlas usa IA en el último escalón, así que <code>--ejecutar --escribir</code> lo corre Guido; <code>node tools/caja-deuda.mjs --club &lt;id&gt;</code> es el ensayo.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">0 · Guido y el club</td><td>Ajuste manual <code>caja</code> o <code>deuda</code> del año; o el precedente del club: qué filas del balance de otro año suman lo cargado, y se proponen las filas con las mismas familias de etiqueta en este documento.</td><td>La compuerta común (abajo).</td></tr>
+        <tr><td class="mono">1 · diccionario</td><td>El vocabulario del proyecto (<code>vocabulario.mjs</code>) y los términos del club o del documento (ajuste <code>deuda-incluye</code>); en un balancete, la hija no se suma con su padre y una cuenta D no es deuda. También propone: deuda corriente + no corriente de la misma etiqueta (exactamente dos filas, a cada lado del total del pasivo no corriente); las filas de la nota de efectivo si la caja es una parte; el total de la nota de deuda si no hay otra fila de deuda.</td><td>La compuerta común.</td></tr>
+        <tr><td class="mono">2 · IA</td><td>Una llamada a Claude (~US$ 0,03 por documento) que propone solo números de línea del balance; nada más (ni importes, ni escala, ni "no hay").</td><td>La compuerta común.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Compuerta común:</strong> la familia de la fila es la del dato, y el año anterior ya cargado o el documento siguiente dicen lo mismo (las mismas filas, en su columna del año anterior, dan lo cargado; o las mismas familias en el documento siguiente dan este valor). Pasa si al menos uno coincide y ninguno contradice. El vecino es siempre lo cargado en el sitio o el documento vecino, nunca un valor aceptado en la misma corrida. <strong>Ejemplo real:</strong> Novorizontino 2019 imprime "Empréstimos | | 27 | 24"; como la tabla tiene una columna de notas antes de la cifra, el 27 es un importe (sin esa evidencia, el primer entero de 1 o 2 dígitos se descarta como referencia a una nota).</p>
+  </div>
+
+  <div class="group" id="rusia">
+    <h3>Rusia · otro camino de entrada (<code>tools/bfo-rusia.mjs</code>)</h3>
+    <p class="gnote">En Rusia no hay un PDF de estados contables por año: lo que hay en <code>Clubes/Rusia/&lt;Club&gt;/</code> son informes del auditor (muchos de 3 páginas, solo la opinión) y notas explicativas. Lo que sí hay, para los 16 clubes, es el JSON que publica el fisco ruso en el GIR BO (el recurso estatal donde las empresas presentan su contabilidad, <code>bo.nalog.gov.ru</code>), guardado como <code>bfo-AAAA-datos.json</code>. Trae el <strong>formulario 2</strong> ruso (el estado de resultados): renglones de código fijo, iguales para todos los clubes y años, en miles de rublos. Es un dato oficial y estructurado: sin OCR ni IA en el escalón base, y la compuerta de la suma la trae el propio formulario. Por eso <code>bfo-rusia.mjs</code> <strong>reemplaza las etapas 2 a 7</strong> con un mapa fijo de código a categoría, y comparte con el resto la etapa 8 (escribir) y la 9 (un commit por año, sin push).</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Etapa</th><th>Qué pasa en Rusia</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1 Conseguir</td><td>El JSON ya está en la carpeta del club.</td></tr>
+        <tr><td class="mono">2 Transcribir</td><td>Reemplazada: el script genera <code>bfo-AAAA-datos.md</code> al lado de cada JSON, fiel a él (renglones del formulario 2, totales del balance y, si hay, el formulario 6). Es el documento fuente legible y lo que lee <code>alta-club.mjs</code> para el nombre, el cierre, la moneda, el tipo de cambio y la liga. Gratis. Solo se reescribe si cambió algo más que la fecha de la primera línea.</td></tr>
+        <tr><td class="mono">3 Localizar · 5 Extraer</td><td>Reemplazadas por el mapa fijo: 2110 (ingresos) y 2120 (costo de ventas) van a fútbol sin desglosar; 2210 y 2220 (gastos comerciales y de administración) a gastos de administración; 2340 (otros ingresos) y 2350 (otros gastos) a otros; 2310, 2320 y 2330 (participaciones e intereses) al resultado financiero; 2410, el impuesto.</td></tr>
+        <tr><td class="mono">4 Validar</td><td>No hay una segunda lectura que confirmar: el dato viene estructurado del fisco, no de leer un PDF.</td></tr>
+        <tr><td class="mono">6 Verificar</td><td>Se mantiene, con su propia compuerta (escalón 1, abajo). Un año que no cierra no se carga.</td></tr>
+        <tr><td class="mono">7 Categorizar</td><td>Reemplazada por el mapa fijo. Los ingresos del 2110 no vienen abiertos: van a "fútbol sin desglosar" con la marca "posiblemente incluido en" televisión, entradas, socios y sponsors (decisión de Guido).</td></tr>
+        <tr><td class="mono">8 Cargar · 9 Publicar</td><td>Con <code>--escribir</code>: club nuevo con <code>alta-club.mjs</code> (usa el año más viejo que cierra y el color de <code>Admin/altas-revision.jsonl</code>; sin color elegido no hay alta); cada año con la misma función <code>escribir()</code> de <code>cargar.mjs</code> (corre los generadores y la auditoría, y revierte si da P0 o P1); un commit por año, el alta en el del primero; sin push. Exige <code>data/</code>, <code>index.html</code> y <code>fuentes/</code> sin cambios al empezar. Si ningún año de un club nuevo se escribe, revierte el alta.</td></tr>
+        <tr><td class="mono">Cola humana</td><td>No pasa por ella: lo que no cierra o falta (sin color, sin tipo de cambio, preguntas del alta sin resolver) se imprime como "FRENA" o "NO CIERRA" y ese año no se carga.</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="gnote" style="margin-top:22px;"><strong>La escalera de cada año.</strong></p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Escalón</th><th>Qué prueba</th><th>Pasa si…</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1 · formulario 2</td><td><code>bfo-rusia.mjs</code>, gratis y determinista: el formulario 2 con el mapa fijo de código a categoría.</td><td>La suma de los renglones da el 2300 impreso (resultado antes de impuestos, con 2 mil de tolerancia). La diferencia hasta el 2400 es el impuesto. Si no cierra, el año no se carga.</td></tr>
+        <tr><td class="mono">2 · las notas explicativas</td><td><code>bfo-rusia-notas.mjs</code> abre los renglones 2110, 2340, 2350 y los costos (2120 + 2210 + 2220) con las tablas de las notas (<code>&lt;año&gt;-poyasneniya.md</code>), que ya están transcriptas. Primero una ventana gratis de las líneas alrededor de los títulos que interesan; después Claude (una llamada por nota, esfuerzo bajo) devuelve cada tabla con sus filas, la línea del .md y una categoría propuesta. Se usa la nota del año (su columna actual) y, si no hay, la del año siguiente (su columna del año anterior). Los gastos por elemento (códigos 5610 a 5660) se leen sin IA, por código.</td><td>Sin IA: la suma de las filas da exacto (con 2 mil de tolerancia) el código del formulario 2 de ese año. Para los gastos por elemento, además, el total 5660 es igual a 2120 + 2210 + 2220. Si no da, la tabla no se usa y el año queda con el renglón entero del escalón 1.</td></tr>
+        <tr><td class="mono">3 · formulario 6</td><td>El formulario 6 (informe del uso de fondos con destino específico). Los clubes sin fines de lucro (ANO: Akhmat, Akron) o que reciben aportes del dueño o del gobierno regional (Dynamo Makhachkala, Pari NN, Orenburg) los reportan ahí y no en el formulario 2. Se suman los aportes (6210 y 6215, cuotas, a cuotas de socios; 6220, 6230 y 6250 a otros ingresos) y los usos (6310, el programa del fútbol, a costo del fútbol; 6320, administración; 6330 y 6350 a otros gastos). El 6240 no se suma: es la ganancia del formulario 2 trasladada, y se contaría dos veces.</td><td>El propio formulario cierra: 6100 + 6200 − 6300 = 6400 (con 2 de tolerancia). El resultado del año pasa a ser 2400 + (6200 − 6240) − 6300.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Ejemplos reales.</strong> Escalón 2, Krasnodar 2025: la tabla de ventas por tipo trae sponsors 1.815.143, televisión 1.199.719, publicidad 914.103, merchandising 525.112, entradas 519.266, abonos 419.637 y otros 59.877, que suman 5.452.857: exacto el 2110. Escalón 3, Akron 2024: el formulario 2 muestra 337 millones de ingresos (2110), pero el formulario 6 trae 1.415 millones de aportes (6200).</p>
+    <p class="gnote" style="margin-top:12px;"><strong>Cómo se corre.</strong> El orden es este; solo el segundo paso con <code>--ejecutar</code> gasta API, y lo corre Guido.</p>
+    <div class="term">
+<span class="rem"># 1. Ensayo: qué cargaría cada club y si las sumas cierran. Escribe solo las transcripciones bfo-AAAA-datos.md, no el sitio.</span>
+node tools/bfo-rusia.mjs [--club Krasnodar]
+<span class="rem"># 2. Escalón 2: ensayo (no llama a la API, estima el costo) y de verdad; --sin-ia hace solo los gastos por elemento, gratis.</span>
+node tools/bfo-rusia-notas.mjs [--club Krasnodar]
+node tools/bfo-rusia-notas.mjs --ejecutar [--sin-ia]
+<span class="rem"># 3. Escribir en el sitio. --reemplazar reescribe los años ya cargados que tienen tablas de notas o formulario 6.</span>
+node tools/bfo-rusia.mjs --club Krasnodar --escribir [--reemplazar]
+    </div>
+  </div>
+
+  <div class="group" id="flags">
+    <h3>Los flags del lote: <code>--reintentar</code>, <code>--rehacer</code> y <code>--cargar</code></h3>
+    <p class="gnote">Los tres se agregan a <code>lote.mjs --lista … --ejecutar</code>, pero no son lo mismo. <code>--reintentar</code> y <code>--cargar</code> son parte del pipeline: el primero es el camino de error de las etapas 2, 3 y 5; el segundo es la etapa 8 (y el commit de la 9). <code>--rehacer</code> no es una etapa ni un escalón: es un interruptor de caché.</p>
+    <div class="tbl-wrap"><table class="ledger">
+      <thead><tr><th>Flag</th><th>Qué es</th><th>Qué hace</th><th>Cuándo y cuánto cuesta</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">--reintentar</td><td>El camino de error del pipeline (etapas 2, 3 y 5).</td><td>Toma solo los documentos que una etapa marcó: desglose que no suma (etapa 6) o categoría en 0 (etapa 8), o transcripciones que no coinciden con el texto propio o sin sus páginas en imagen (etapa 2). Les aplica los escalones de reintento: rearmar con el texto propio (gratis), re-transcribir con Mistral, índice ampliado, las notas hacen de estado, y volver a extraer con la lista de lo que faltó. Una sola vez por documento. <code>--detalle</code> suma los desgloses que no suman en un documento cuya etapa 6 ya cerró (el año se carga igual con el renglón sin abrir).</td><td>Cuando el final del lote lo propone: imprime dos listas, con el comando listo para pegar. Cuesta ~US$ 0,50 por documento (re-transcribir: ~US$ 0,004 por página más localizar y extraer).</td></tr>
+        <tr><td class="mono">--rehacer</td><td>Un interruptor de caché; no es un escalón.</td><td>Cada etapa de IA (3 localizar, 4 validar, 5 extraer) guarda su resultado en <code>Generados/</code> y no lo repite. Con <code>--rehacer</code> las vuelve a pagar para toda la lista, con los mismos insumos. No pisa un documento con el ajuste <code>filas-a-mano</code>.</td><td>Cuando sabés que lo guardado es de otra cosa. El lote nunca lo propone solo. Si el .md cambió desde que se extrajo, un año sin cargar se rehace solo, sin el flag (y uno ya cargado solo avisa). Paga de nuevo localizar y extraer (y la validación de las páginas escaneadas) de cada documento de la lista.</td></tr>
+        <tr><td class="mono">--cargar</td><td>Las etapas 8 y 9 del pipeline.</td><td>Al terminar el lote llama a <code>cargar-lote.mjs</code>: para cada documento que quedó "listo para cargar", el alta del club nuevo si el registro de altas la da lista y hay color elegido, <code>cargar.mjs --escribir</code> con su auditoría, y un commit por año. Sin push. No toca los años que ya están en el sitio. Sin <code>--ejecutar</code> es el ensayo. También se corre solo: <code>node tools/cargar-lote.mjs --lista … [--escribir]</code>.</td><td>Gratis (no llama a ninguna API). Es el único paso que modifica <code>data/</code> y hace commits; todo lo anterior solo escribe en <code>Generados/</code>. Exige <code>data/</code>, <code>index.html</code> y <code>fuentes/</code> sin cambios al empezar.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="gnote" style="margin-top:12px;"><strong>Dos flags de nombre parecido que son otra cosa:</strong> <code>cargar.mjs --reemplazar</code> rehace con el script un ejercicio que ya está en el sitio (borra los bloques del año y escribe los nuevos, conservando lo que el script no genera: deuda, caja, gestión y la fuente existente); <code>bfo-rusia.mjs --reemplazar</code> hace lo mismo con los años rusos que tienen tablas de notas o formulario 6. Los dos cambian datos publicados; <code>--rehacer</code> y <code>--reintentar</code> solo tocan <code>Generados/</code>.</p>
   </div>
 
   <div class="col">
