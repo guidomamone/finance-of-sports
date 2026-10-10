@@ -5,7 +5,7 @@
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 6 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 7 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -72,6 +72,9 @@ window.RANKINGS["ru-premierliga"] = {
         sourceId:"parinizhnynovgorod-ru-bfo-2024-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",7.585],["Otros ingresos",2.927]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"akhmatgrozny-ru", revenue:9.242, reportType:"official_balance_sheet",
+        sourceId:"akhmatgrozny-ru-bfo-2024-datos",
+        mix:[["Otros ingresos",9.242]] },
       { id:"dynamomakhachkala-ru", revenue:4.637, reportType:"official_balance_sheet",
         sourceId:"dynamomakhachkala-ru-bfo-2024-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.953],["Otros ingresos",0.684]],
