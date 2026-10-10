@@ -44,6 +44,12 @@ const krasnodarruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:3180.351, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:4500.664, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Krasnodar/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2023: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:4030.342, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:6625.309, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const krasnodarruExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -57,6 +63,12 @@ const krasnodarruExpenseLinesByYear = {
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-172.376, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-125.734, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-9089.867, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-3987.725, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-240.986, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-121.486, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-3085.193, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const krasnodarruFiscalYearMeta = {
@@ -103,6 +115,28 @@ const krasnodarruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-4809.252,
   },
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2023-12-31',
+    sourceId:'krasnodar-ru-bfo-2023-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:881.4, tax:212.724,
+    extraRows: [
+      {label:'Доходы от участия в других организациях (2310)', value:767.606},
+      {label:'Проценты к получению (2320)', value:149.475},
+      {label:'Проценты к уплате (2330)', value:-35.681},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:212.724},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:4030.342, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:3987.725, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:4314.385,
+  },
 };
 const krasnodarruPresupuestoOverlayByYear = {};
 
@@ -132,6 +166,12 @@ Object.assign(sources, {
     title:'OOO Football Club Krasnodar — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2022-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Krasnodar/bfo-2022-datos.md.',
+  },
+  'krasnodar-ru-bfo-2023-datos': {
+    id:'krasnodar-ru-bfo-2023-datos', clubId:'krasnodar-ru',
+    title:'OOO Football Club Krasnodar — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Krasnodar/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Krasnodar/bfo-2023-datos.md.',
   },
 });
 

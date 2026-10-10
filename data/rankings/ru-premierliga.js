@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Premier Liga (RU) — 2 ejercicio(s) con ranking:
+// Premier Liga (RU) — 3 ejercicio(s) con ranking:
+//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -13,6 +14,15 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ru-premierliga"] = {
+  2023: {
+    leagueSize: null,
+    clubs: [
+      { id:"krasnodar-ru", revenue:118.808, reportType:"official_balance_sheet",
+        sourceId:"krasnodar-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",44.937],["Otros ingresos",73.87]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2022: {
     leagueSize: null,
     clubs: [
