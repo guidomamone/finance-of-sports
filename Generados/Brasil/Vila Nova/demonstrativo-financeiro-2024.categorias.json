@@ -1,12 +1,12 @@
 {
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
- "club": "vila-nova",
+ "club": "vilanova-br",
  "year": 2024,
- "generatedAt": "2026-10-10T00:15:50.270Z",
- "rubrosHuella": "d95bcc5374469bdb3f415d3c5b22c528313a54b2",
- "jevHuella": "8d32041a729b03818857bde392fe4af5c81f1392",
+ "generatedAt": "2026-10-10T01:03:18.267Z",
+ "rubrosHuella": "613d3906231a5d7b4ff428455c8ba21f775db055",
+ "jevHuella": "005fcdfcd8a67691d174fd3519c736954a795c7a",
  "modelo": "claude-opus-5-5",
- "costUsd": 0.008964,
+ "costUsd": 0.015348,
  "rubros": [
   {
    "label": "RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO",
@@ -14,13 +14,12 @@
    "section": "estado (lectura 5: hoja)",
    "glosa": "Ingresos por derechos de transmisión, participación y premios",
    "page": 21,
-   "pendiente": true,
-   "jev": "broadcasting",
-   "jevConf": 0.89,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 1,
+   "jevConf": 0.97,
    "categoria": "broadcasting",
-   "confianza": 0.8,
-   "motivo": "Rubro combinado de transmisión, participación y premios; predomina derechos de TV"
+   "confianza": 0.97
   },
   {
    "label": "RECEITAS DIVERSAS",
@@ -30,23 +29,24 @@
    "page": 21,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
   {
    "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
-   "lado": "revenue",
+   "lado": "expense",
    "section": "estado (lectura 5: hoja)",
    "glosa": "(-) Deducciones de los ingresos brutos",
    "page": 21,
-   "pendiente": false,
-   "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.95,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.8,
+   "escalon": 2,
    "categoria": "other_income",
-   "confianza": 0.95
+   "confianza": 0.55,
+   "motivo": "Club cargó '(-) Impostos e deduções da receita' como other_income; alternativa admin_general_expense por ser gasto."
   },
   {
    "label": "(-) DESPESAS COM PESSOAL",
@@ -56,14 +56,10 @@
    "page": 21,
    "pendiente": false,
    "ya": "wages_squad",
-   "escalon": 2,
-   "confCache": 0.6,
-   "motivo": "Gastos de personal sin desglose; en club chico predominan sueldos del plantel, como Chapecoense.",
-   "jev": "wages_squad",
-   "jevConf": 0.69,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
    "categoria": "wages_squad",
-   "confianza": 0.6
+   "confianza": 1
   },
   {
    "label": "(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
@@ -86,28 +82,27 @@
    "page": 21,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 2,
-   "confCache": 0.6,
-   "motivo": "Provisiones para contingencias suelen ir a administración en clubes brasileños.",
-   "jev": "admin_general_expense",
-   "jevConf": 0.8,
-   "desdeCache": true,
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.6
+   "confianza": 1
   },
   {
    "label": "(-) DESPESAS COM ATIVIDADE EM GERAL",
    "lado": "expense",
    "section": "estado (lectura 5: hoja)",
-   "glosa": "(-) Gastos de la actividad general",
+   "glosa": "(-) Gastos de la actividad en general",
    "page": 21,
-   "pendiente": true,
-   "jev": "admin_general_expense",
-   "jevConf": 0.41,
+   "pendiente": false,
+   "ya": "admin_general_expense",
    "escalon": 2,
+   "confCache": 0.5,
+   "motivo": "Gastos de actividad en general, genérico; podría ser organización de partidos",
+   "jev": "admin_general_expense",
+   "jevConf": 0.87,
+   "desdeCache": true,
    "categoria": "admin_general_expense",
-   "confianza": 0.5,
-   "motivo": "Gastos de actividad en general, genérico; podría ser organización de partidos"
+   "confianza": 0.5
   },
   {
    "label": "(-) OUTRAS DESPESAS",
@@ -118,9 +113,9 @@
    "pendiente": false,
    "ya": "other_expenses",
    "escalon": 1,
-   "jevConf": 0.99,
+   "jevConf": 0.98,
    "categoria": "other_expenses",
-   "confianza": 0.99
+   "confianza": 0.98
   }
  ]
 }

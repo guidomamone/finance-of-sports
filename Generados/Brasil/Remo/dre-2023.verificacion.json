@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
  "md": "Clubes/Brasil/Remo/dre-2023.md",
- "generado": "2026-10-10T00:40:10.136Z",
+ "generado": "2026-10-10T00:53:58.556Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "remo-br",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -55,6 +55,11 @@
    "detalle": "cierra (financiero e impuesto invertidos)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna 2022"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": null,
    "detalle": "no se puede comparar: dre-2024.pdf no trae la columna del año anterior"
@@ -63,11 +68,6 @@
    "nombre": "documento del año 2022",
    "ok": null,
    "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [

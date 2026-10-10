@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
- "generado": "2026-10-10T00:15:54.883Z",
+ "generado": "2026-10-10T00:55:23.830Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,12 +11,62 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Receitas Brutas\" 8.67695 (no está en categorias.json); \"(-) Deduções\" 0.087335 (no está en categorias.json); \"(+) Outras Receitas\" 0.014003 (no está en categorias.json)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"(-) Custos\" 7.802237 (no está en categorias.json); \"(-) Despesas Administrativas\" 2.233261 (no está en categorias.json); \"(-) Despesas Gerais\" 0.05518 (no está en categorias.json)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Ferroviária Futebol S.A. luego SAF); 'CONSOLIDADO' es el membrete del reporte contable (consolida filiales/centros de costo), no un grupo. Mismo criterio que Novorizontino)",
+  "ingresos: 4 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Receitas Brutas\" (no está en categorias.json); \"(-) Deduções\" (no está en categorias.json); \"(+) Outras Receitas\" (no está en categorias.json); \"(+) Outras Receitas Operacionais\" (no está en categorias.json)",
+  "gastos: 4 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"(-) Custos\" (no está en categorias.json); \"(-) Despesas Administrativas\" (no está en categorias.json); \"(-) Despesas Gerais\" (no está en categorias.json); \"(-) Despesas Tributárias\" (no está en categorias.json)",
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
+  "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "ferroviaria-br",
+  "year": 2017,
+  "cierre": "2017-12-31",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2017-12-31",
+   "sourceId": "ferroviaria-br-dre-2017",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.430111,
+   "tax": -0.16735,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "ferroviaria-br-dre-2017",
+   "clubId": "ferroviaria-br",
+   "title": "Ferroviária Futebol S.A. — dre-2017 (ejercicio 2017)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2017.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
  "reemplaza": false,
  "periodo": {
@@ -27,5 +77,287 @@
   "confianza": "alta",
   "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31"
  },
- "cortadoEn": "club"
+ "clubId": "ferroviaria-br",
+ "year": 2017,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "cierre",
+   "valor": "2017-12-31",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31",
+   "evidencia": "dre-2017.md L15",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "name",
+   "valor": "Ferroviária Futebol S.A.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)",
+   "evidencia": "dre-2017.md (Ferroviária Futebol S/A.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "fila",
+   "valor": "371.653,59",
+   "linea": 31,
+   "etiqueta": "(+) Outras Receitas Operacionais",
+   "lado": "ingreso",
+   "reemplaza": "(+) Outras Receitas Operacionais",
+   "motivo": "Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).",
+   "evidencia": "pág. 1 del visor, .md L31 y L25-32",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
+   "evidencia": "dre-2017.md L15, L34-L39",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "seleccion": {
+  "filas": 12,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Receitas Brutas",
+   "page": 1,
+   "native": 8.67695,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja con C))",
+   "signoFijo": 8.67695,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Deduções",
+   "page": 1,
+   "native": 0.087335,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja con D))",
+   "signoFijo": -0.087335,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(+) Outras Receitas",
+   "page": 1,
+   "native": 0.014003,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja con C))",
+   "signoFijo": 0.014003,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(+) Outras Receitas Operacionais",
+   "page": 1,
+   "native": 0.371654,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.371654,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Custos",
+   "page": 1,
+   "native": 7.802237,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja con D))",
+   "signoFijo": 7.802237,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Despesas Administrativas",
+   "page": 1,
+   "native": 2.233261,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja con D))",
+   "signoFijo": 2.233261,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Despesas Gerais",
+   "page": 1,
+   "native": 0.05518,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja con D))",
+   "signoFijo": 0.05518,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Despesas Tributárias",
+   "page": 1,
+   "native": 0.013243,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja con D))",
+   "signoFijo": 0.013243,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "(-) Despesas Financeiras",
+   "page": null,
+   "native": -0.43791,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "(+) Receitas Financeiras",
+   "page": null,
+   "native": 0.007799,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "(-) Contribuição Social",
+   "page": null,
+   "native": -0.046764,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "(-) Imposto de Renda",
+   "page": null,
+   "native": -0.120586,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Cuotas sociales"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja con C))": "gastos con signo",
+   "verificacion (estado (lectura 5: hoja con D))": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": 0,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "liga": {
+  "valor": "br-paulistaA1",
+  "fuente": "roster cacheado de \"2017 Campeonato Paulista\" (tools/club-league-reference/br.json), coincidencia exacta \"Ferroviária\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2017,
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2017-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2017-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2017-12-31 = 3.308 (PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2017 (último día hábil del año))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "ferroviaria-br-dre-2017",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-paulistaA1",
+   "fuente": "roster cacheado de \"2017 Campeonato Paulista\" (tools/club-league-reference/br.json), coincidencia exacta \"Ferroviária\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 6,
+  "lineasIngreso": 0,
+  "lineasGasto": 0,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

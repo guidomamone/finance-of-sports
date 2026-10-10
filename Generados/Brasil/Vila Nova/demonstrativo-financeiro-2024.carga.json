@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.pdf",
- "generado": "2026-10-10T00:15:54.922Z",
+ "generado": "2026-10-10T01:03:18.899Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
@@ -19,5 +19,7 @@
   "confianza": "alta",
   "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2025-04-30); el ejercicio del documento cierra el 2024-12-31"
  },
- "cortadoEn": "club"
+ "clubId": "vilanova-br",
+ "year": 2024,
+ "cortadoEn": "filas"
 }

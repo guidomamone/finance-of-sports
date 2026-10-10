@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
- "generado": "2026-10-10T00:15:54.905Z",
+ "generado": "2026-10-10T00:55:24.308Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,12 +11,226 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "tie-out-resultado",
+   "motivo": "resultado: ingresos 6.058415 + gastos -6.488968 + netInterest -0.004187 + tax 0 = -0.43474 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -0.376919)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ingresos: las filas suman 6.058415 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "ingresos: 1 fila(s) sin categoría aceptable (0.9% del dinero del lado): \"Receitas Extraordinárias\" (no está en categorias.json)",
+  "gestión: ningún presidente confirmado cubre 2014 (cierre 2014-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "vilanova-br",
+  "year": 2014,
+  "cierre": "2014-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Receitas Atividades Esportivas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 1.965462,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Doações/Patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.630388,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.288755,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Direitos Federativos Atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.665997,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Aluguéis",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.069207,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Contribuições Conselheiros",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.303172,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Diversas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.038241,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas CBF",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.89,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Receitas Escolinha de Futebol",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.12687,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Sócio Tigrão",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.001461,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Receitas Timemania",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.078862,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.899833,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Despesas Tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.157814,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Despesas Serviços Terceiros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.160415,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Ajustes de Exercícios Anteriores",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.002719,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Despesas Depto Esportes",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -3.268187,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2014-12-31",
+   "sourceId": "vilanova-br-notas-explicativas-2014",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.004187,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Receitas Atividades Esportivas",
+     "lado": "revenue",
+     "importe": 1.965462,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Despesas Depto Esportes",
+     "lado": "expense",
+     "importe": 3.268187,
+     "motivo": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": 6.488968,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "vilanova-br-notas-explicativas-2014",
+   "clubId": "vilanova-br",
+   "title": "Vila Nova Futebol Clube — notas-explicativas-2014 (ejercicio 2014)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
  "reemplaza": false,
  "periodo": {
@@ -27,5 +241,434 @@
   "confianza": "alta",
   "evidencia": "ajuste manual (2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014"
  },
- "cortadoEn": "club"
+ "clubId": "vilanova-br",
+ "year": 2014,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "cierre",
+   "valor": "2014-12-31",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014",
+   "evidencia": "notas-explicativas-2014.md L72",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "1.890.000,00",
+   "linea": 81,
+   "etiqueta": "Receitas CBF",
+   "lado": "ingreso",
+   "reemplaza": "Receitas CBF",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "3.268.187,41",
+   "linea": 93,
+   "etiqueta": "Despesas Depto Esportes",
+   "lado": "gasto",
+   "reemplaza": "Despesas Depto Esportes",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "126.870,00",
+   "linea": 79,
+   "etiqueta": "Receitas Escolinha de Futebol",
+   "lado": "ingreso",
+   "reemplaza": "Receitas de Eventos",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "1.461,44",
+   "linea": 83,
+   "etiqueta": "Receitas Sócio Tigrão",
+   "lado": "ingreso",
+   "reemplaza": "Receitas Sócio Torcedor",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "fila",
+   "valor": "78.862,10",
+   "linea": 88,
+   "etiqueta": "Receitas Timemania",
+   "lado": "ingreso",
+   "reemplaza": "Receitas Sindicatos",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)",
+   "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Receitas Atividades Esportivas",
+   "page": 1,
+   "native": 1.965462,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.965462,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.965462
+  },
+  {
+   "label": "Receitas Doações/Patrocínios",
+   "page": 1,
+   "native": 0.630388,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.630388,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.630388
+  },
+  {
+   "label": "Receitas Publicidade",
+   "page": 1,
+   "native": 0.288755,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.288755,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.288755
+  },
+  {
+   "label": "Receitas Direitos Federativos Atletas",
+   "page": 1,
+   "native": 0.665997,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.665997,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.665997
+  },
+  {
+   "label": "Receitas Aluguéis",
+   "page": 1,
+   "native": 0.069207,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.069207,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.069207
+  },
+  {
+   "label": "Receitas Extraordinárias",
+   "page": 1,
+   "native": 0.057821,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.057821,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Receitas Contribuições Conselheiros",
+   "page": 1,
+   "native": 0.303172,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.303172,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.303172
+  },
+  {
+   "label": "Receitas Diversas",
+   "page": 1,
+   "native": 0.038241,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.038241,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.038241
+  },
+  {
+   "label": "Receitas CBF",
+   "page": 1,
+   "native": 1.89,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.89,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: en Série B la CBF reparte a los clubes la cuota de TV del campeonato (5,27 M en 2016 y 5,54 M en 2017; 1,88 M en 2014); la Federação Goiana, la del Goiano. Precedente del sitio del lado ingreso: 'Federação' en broadcasting (7), 'CBF' en broadcasting (2 de 3)",
+   "destino": "revenue",
+   "amountNative": 1.89
+  },
+  {
+   "label": "Receitas Escolinha de Futebol",
+   "page": 1,
+   "native": 0.12687,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.12687,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.12687
+  },
+  {
+   "label": "Receitas Sócio Tigrão",
+   "page": 1,
+   "native": 0.001461,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.001461,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001461
+  },
+  {
+   "label": "Receitas Timemania",
+   "page": 1,
+   "native": 0.078862,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.078862,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.078862
+  },
+  {
+   "label": "Despesas Administrativas",
+   "page": 1,
+   "native": 2.899833,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.899833,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.899833
+  },
+  {
+   "label": "Despesas Tributárias",
+   "page": 1,
+   "native": 0.157814,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.157814,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.157814
+  },
+  {
+   "label": "Despesas Serviços Terceiros",
+   "page": 1,
+   "native": 0.160415,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.160415,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.160415
+  },
+  {
+   "label": "Ajustes de Exercícios Anteriores",
+   "page": 1,
+   "native": 0.002719,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.002719,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002719
+  },
+  {
+   "label": "Despesas Depto Esportes",
+   "page": 1,
+   "native": 3.268187,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3.268187,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense",
+   "destino": "expense",
+   "amountNative": -3.268187
+  },
+  {
+   "label": "Despesas Financeiras",
+   "page": null,
+   "native": -0.004187,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 6.058415,
+  "expSum": -6.486249,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": 6.488968,
+  "officialPAT": null,
+  "verificacion": {
+   "gastos": "impreso"
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 6.488968
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2014,
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2014-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2014-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2014-12-31 = 2.6562 (PTAX de cierre (venda) del Banco Central do Brasil al 2014-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "vilanova-br-notas-explicativas-2014",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2014 (br-serieA, br-paulistaA3): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 11,
+  "lineasGasto": 5,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
 }

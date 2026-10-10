@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.pdf",
-  "club": "vila-nova",
+  "club": "vilanova-br",
   "year": 2024,
-  "generatedAt": "2026-10-10T00:07:02.366Z",
+  "generatedAt": "2026-10-10T01:02:33.281Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -28,11 +28,11 @@
     },
     {
       "label": "(-) DEDUÇÕES DA RECEITA BRUTA",
-      "lado": "revenue",
+      "lado": "expense",
       "page": 21,
       "section": "estado (lectura 5: hoja)",
       "values": [
-        -0.491419
+        0.491419
       ],
       "glosa": "(-) Deducciones de los ingresos brutos"
     },
@@ -74,7 +74,7 @@
       "values": [
         7.237539
       ],
-      "glosa": "(-) Gastos de la actividad general"
+      "glosa": "(-) Gastos de la actividad en general"
     },
     {
       "label": "(-) OUTRAS DESPESAS",

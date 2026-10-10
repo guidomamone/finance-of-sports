@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
- "generado": "2026-10-10T00:39:31.212Z",
+ "generado": "2026-10-10T01:47:03.641Z",
  "estado": "ok",
  "clubId": "vilanova-br",
  "year": 2024,
@@ -48,12 +48,12 @@
   {
    "nombre": "documento del año 2025",
    "ok": false,
-   "detalle": "ingresos de 2024: 53.722589 en este documento y 49.033 en demonstrativo-financeiro-2025.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 54.214008 en este documento y 49.033 en demonstrativo-financeiro-2025.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2023: 29.345546 en demonstrativo-financeiro-2023.pdf y 29.345546 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2023: 29.345546 en demonstrativo-financeiro-2023.pdf y 29.625448 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -67,11 +67,11 @@
   "la lectura base no cerraba; cerró con la lectura 5"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 53.722589,
-  "gastos": 45.431073,
+  "ingresos": 54.214008,
+  "gastos": 45.922491,
   "financiero": -13.661355,
   "impuesto": 0,
   "resultadoImpreso": -5.369839,
@@ -98,8 +98,8 @@
   },
   {
    "etiqueta": "(-) DEDUÇÕES DA RECEITA BRUTA",
-   "lado": "ingreso",
-   "M": -0.491419,
+   "lado": "gasto",
+   "M": 0.491419,
    "pagina": 21,
    "linea": 514,
    "origen": "estado (lectura 5: hoja)"

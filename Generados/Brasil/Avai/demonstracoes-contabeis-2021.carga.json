@@ -1,13 +1,15 @@
 {
  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
- "generado": "2026-10-09T23:38:37.915Z",
+ "generado": "2026-10-10T01:03:18.589Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola entidad (associação civil); las menciones a 'consolidadas' son texto estándar del dictamen, no hay estados consolidados)"
+ ],
  "ejercicio": null,
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
  "reemplaza": false,
@@ -19,5 +21,7 @@
   "confianza": "media",
   "anual": "calendario"
  },
- "cortadoEn": "club"
+ "clubId": "avai-br",
+ "year": 2021,
+ "cortadoEn": "filas"
 }

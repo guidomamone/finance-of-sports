@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
- "generado": "2026-10-10T00:39:30.419Z",
+ "generado": "2026-10-10T01:47:02.867Z",
  "estado": "ok",
  "clubId": "vilanova-br",
  "year": 2022,
@@ -53,14 +53,10 @@
  "notas": [
   "la nota de \"(-) CUSTOS GERAIS\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar que no afecta la carga: La nota 30.1 empieza en b38 (pág. 18) y sigue en b39 (pág. 19) con el TOTAL.",
-  "duda de localizar que no afecta la carga: b49 no tiene TOTAL y b50 (pág. 21) cierra con TOTAL.",
-  "duda de extraer que no afecta la carga: La tabla de L821 empieza sin encabezado tras un salto de página; su TOTAL L829 coincide con L141.",
-  "duda de extraer que no afecta la carga: Encabezado vacío en L954; el TOTAL L962 coincide con L154."
+  "la lectura base no cerraba; cerró con la lectura 5"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 36.799031,

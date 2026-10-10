@@ -3,7 +3,8 @@
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
  "mdSha1": "589d86607235f7c16e64a7cb650a7c9ac5b7e8a3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-09T23:17:53.232Z",
+ "generado": "2026-10-10T00:58:09.643Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 3,
@@ -453,29 +454,41 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se trata b38 (Venta/Empréstimos de atletas) y b39 como una sola nota 30.1 partida por salto de página?",
+   "pregunta": "¿Los bloques b38 y b39 forman una sola nota 30.1, en la que la fila 'Programa socio-torcedor' quedó como encabezado de b39 y debe cargarse como renglón?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
-   "texto": "La nota 30.1 empieza en b38 (pág. 18) y sigue en b39 (pág. 19) con el TOTAL.",
+   "renglon": "Programa socio-torcedor",
+   "texto": "El encabezado de b39 contiene importes (1.079.868,47 / 328.306,45), por lo que parece ser una fila de datos.",
    "bloques": [
     "b38",
     "b39"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   },
   {
-   "pregunta": "¿Se trata b49 y b50 como una sola nota 33.5 Outras Despesas continuada?",
+   "pregunta": "¿Los bloques b44 y b45 son la misma nota 33.1, en la que 'Vale Transporte' es una fila de datos?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "OUTRAS DESPESAS",
-   "texto": "b49 no tiene TOTAL y b50 (pág. 21) cierra con TOTAL.",
+   "renglon": "Vale Transporte",
+   "texto": "El encabezado de b45 tiene importes y continúa la nota de pessoal de b44.",
+   "bloques": [
+    "b44",
+    "b45"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los bloques b49 y b50 son la misma nota 33.5, en la que 'Confecção de ingressos' es una fila de datos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Confecção de ingressos",
+   "texto": "El encabezado de b50 tiene importes y continúa la nota 33.5.",
    "bloques": [
     "b49",
     "b50"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultado individual del club en reais (b3). Notas 30-34 desglosan ingresos, deducciones, costos, gastos y resultado financiero. Las notas 30.1, 33.1 y 33.5 continúan en la página siguiente (b38→b39, b44→b45, b49→b50)."
+ "observaciones": "Estado de resultados individual del club, expresado en reales. Las filas de 'Televisión' (Cota televisiva) y de 'Cuotas sociales' (Programa socio-torcedor, Mensalidade) están en b39 y b41. No se ve un renglón específico de 'Estadio' o bilheteria: puede estar dentro de la nota 30.1 (b39) o en 'Receitas Patrimoniais' (b41)."
 }

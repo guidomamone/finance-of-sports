@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
- "generado": "2026-10-09T23:57:06.981Z",
+ "generado": "2026-10-10T01:47:02.067Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "avai-br",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -199,7 +199,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -218,27 +218,10 @@
   "ajuste manual: fila \"Receita Financeira\" (financiero) 27.397, en lugar de \"Receita Financeira\" (2026-10-09, Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.)",
   "ajuste manual: fila \"Despesas financeiras deságio\" (financiero) (3.995.456), en lugar de \"Despesas financeiras deságio\" (2026-10-09, Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.)",
   "ajuste manual: fila \"Despesas Financeiras\" (financiero) (2.690.087), en lugar de \"Despesas Financeiras\" (2026-10-09, Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.)",
-  "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer que no afecta la carga: En 2021 Diversas del estado (1.123.890) = nota L941 1.076.890 + Premiação 47.500 -500, y bilheteria no encaja exacta; el mapeo es inferido."
+  "la lectura base no cerraba; cerró con la lectura 5"
  ],
- "reintentar": [
-  {
-   "renglon": "Receitas de Negociação de Atletas Profissionais",
-   "suma": 2.509456,
-   "objetivo": 1.921831
-  },
-  {
-   "renglon": "Receitas TV e transmissão jogos",
-   "suma": 12.650919,
-   "objetivo": 12.936521
-  },
-  {
-   "renglon": "Receitas Diversas",
-   "suma": 1.409993,
-   "objetivo": 1.12389
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Receitas de Negociação de Atletas Profissionais",

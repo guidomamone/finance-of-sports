@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
  "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
- "generado": "2026-10-10T00:36:23.953Z",
+ "generado": "2026-10-10T00:53:58.705Z",
  "estado": "ok",
  "clubId": "ferroviaria-br",
  "year": 2017,
@@ -79,6 +79,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna 2016"
+  },
+  {
    "nombre": "documento del año 2018",
    "ok": null,
    "detalle": "no se puede comparar: dre-2018.pdf no trae la columna del año anterior"
@@ -87,11 +92,6 @@
    "nombre": "documento del año 2016",
    "ok": null,
    "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

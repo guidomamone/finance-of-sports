@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
  "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
- "generado": "2026-10-10T00:40:08.998Z",
+ "generado": "2026-10-10T00:53:58.509Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "remo-br",
  "year": 2020,
  "escala": {
   "valor": "no se sabe",
@@ -113,7 +113,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -122,7 +122,7 @@
   "ajuste manual: sale la fila \"L200\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L200 ((1.923.969,31)) es el subtotal de L201 (mismo importe, único componente): se cargaba dos veces; se carga L201 como gasto (depreciación))",
   "ajuste manual: sale la fila \"L198\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): L198 (4.555.340,59) es parte del subtotal L197 (4.943.560,99); el subtotal se carga entero en una fila, sin el Resultado Financeiro (L199): ver el ajuste de L197)",
   "ajuste manual: fila \"(-) Despesas Operacionais (sin Resultado Financeiro)\" (gasto) 4.749.468,16, en lugar de la fila de L197 (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L199, 194.092,83) está incluido en Despesas Operacionais (L197, 4.943.560,99): 4.803.027,58 - 4.943.560,99 - 1.923.969,31 = -2.064.502,72 = resultado impreso (L202-L204), sin restar el financiero aparte. Se separa: 4.943.560,99 - 194.092,83 = 4.749.468,16 de gastos operativos + 194.092,83 de costo financiero. Ojo: los hijos impresos (4.555.340,59 + 194.092,83 = 4.749.433,42) no suman el subtotal: faltan 194.127,57 sin renglón impreso)",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-auditoria-2020.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-auditoria-2020.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

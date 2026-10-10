@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
- "generado": "2026-10-10T00:15:54.920Z",
+ "generado": "2026-10-10T01:03:18.831Z",
  "frena": [
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
@@ -19,5 +19,7 @@
   "confianza": "media",
   "anual": "calendario"
  },
- "cortadoEn": "club"
+ "clubId": "vilanova-br",
+ "year": 2023,
+ "cortadoEn": "filas"
 }

@@ -1,36 +1,16 @@
 {
   "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
-  "club": "avai",
+  "club": "avai-br",
   "year": 2021,
-  "generatedAt": "2026-10-09T23:23:27.699Z",
+  "generatedAt": "2026-10-10T01:02:32.967Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "Receita Bruta",
-      "lado": "revenue",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        25.303151
-      ],
-      "glosa": "Ingresos brutos"
-    },
-    {
-      "label": "Receitas do Futebol Profissional",
-      "lado": "revenue",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        25.303151
-      ],
-      "glosa": "Ingresos del fútbol profesional"
-    },
     {
       "label": "Receitas de Mensalidades dos Sócios",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.488065
       ],
@@ -39,418 +19,108 @@
     {
       "label": "Receitas de Negociação de Atletas Profissionais",
       "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\"",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1.921831
+        2.509456
       ],
-      "glosa": "Ingresos por traspaso de jugadores profesionales"
+      "glosa": "Ingresos por traspasos de futbolistas profesionales"
     },
     {
-      "label": "Receitas de Empréstimos de Jogadores",
+      "label": "Receitas Arrendaments, Patrocínios e Publicidades",
       "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas de Negociação de Atletas Profissionais\"",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.587625
+        3.473746
       ],
-      "glosa": "Ingresos por cesión de jugadores"
-    },
-    {
-      "label": "Receitas de Arrendamentos e Locações",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
-      "values": [
-        0.357676
-      ],
-      "glosa": "Ingresos por arrendamientos y alquileres"
-    },
-    {
-      "label": "Receitas de Patrocínio",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
-      "values": [
-        2.681328
-      ],
-      "glosa": "Ingresos por patrocinio"
-    },
-    {
-      "label": "Receitas de Publicidade",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas Arrendaments, Patrocínios e Publicidades\"",
-      "values": [
-        0.434742
-      ],
-      "glosa": "Ingresos por publicidad"
+      "glosa": "Ingresos por arrendamientos, patrocinios y publicidad"
     },
     {
       "label": "Receitas de Repasses da Loteria Timemania",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.619095
       ],
       "glosa": "Ingresos por transferencias de la lotería Timemania"
     },
     {
-      "label": "Receitas de Venda de Material Esportivo",
+      "label": "Receitas de Venda e uso Marca",
       "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas de Venda e uso Marca\"",
+      "page": 4,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        1.038064
+        1.12498
       ],
-      "glosa": "Ingresos por venta de material deportivo"
-    },
-    {
-      "label": "Receitas de Uso da Marca",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Receitas de Venda e uso Marca\"",
-      "values": [
-        0.086916
-      ],
-      "glosa": "Ingresos por uso de marca"
+      "glosa": "Ingresos por venta y uso de marca"
     },
     {
       "label": "Receitas TV e transmissão jogos",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         12.936521
       ],
-      "glosa": "Ingresos por TV y retransmisión de partidos"
+      "glosa": "Ingresos por televisión y transmisión de partidos"
     },
     {
       "label": "Receitas Diversas",
       "lado": "revenue",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.12389
       ],
       "glosa": "Ingresos diversos"
     },
     {
-      "label": "Custo Operacional Bruto",
+      "label": "Custos Futebol Profissional",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        43.772256
+        37.345703
       ],
-      "glosa": "Costes operativos brutos"
-    },
-    {
-      "label": "Custos Futebol Profissional total",
-      "lado": "expense",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        41.70736
-      ],
-      "glosa": "Costes totales del fútbol profesional"
-    },
-    {
-      "label": "Salários e Encargos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        21.435476
-      ],
-      "glosa": "Sueldos y cargas sociales"
-    },
-    {
-      "label": "Ajuda de Custo",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.0423
-      ],
-      "glosa": "Dietas y asignaciones"
-    },
-    {
-      "label": "Viagens e Hospedagem",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.899363
-      ],
-      "glosa": "Viajes y alojamiento"
-    },
-    {
-      "label": "INSS s/ Receitas",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.134731
-      ],
-      "glosa": "Seguridad Social sobre ingresos (INSS)"
-    },
-    {
-      "label": "Aluguel e manuteção dos campos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.309
-      ],
-      "glosa": "Alquiler y mantenimiento de campos"
-    },
-    {
-      "label": "Arbitragem/Federação e Confederação",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.164052
-      ],
-      "glosa": "Arbitraje / Federación y Confederación"
-    },
-    {
-      "label": "Amortização Custo Atletas Profissionais",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.426441
-      ],
-      "glosa": "Amortización de costes de jugadores profesionales"
-    },
-    {
-      "label": "Seguros/Plano de Saúde",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.048029
-      ],
-      "glosa": "Seguros / Plan de salud"
-    },
-    {
-      "label": "Direito de Uso de Imagem",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        6.137833
-      ],
-      "glosa": "Derechos de imagen"
-    },
-    {
-      "label": "Material Esportivo - Patrocínio",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.226998
-      ],
-      "glosa": "Material deportivo - Patrocinio"
-    },
-    {
-      "label": "Borderoux de Jogos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.103994
-      ],
-      "glosa": "Liquidación de partidos (Bordereaux)"
-    },
-    {
-      "label": "Taxa de Policiamento",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.043551
-      ],
-      "glosa": "Tasa policial"
-    },
-    {
-      "label": "Despesas com jogo",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.036973
-      ],
-      "glosa": "Gastos de partidos"
-    },
-    {
-      "label": "Alimentação",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.03248
-      ],
-      "glosa": "Alimentación"
-    },
-    {
-      "label": "Premiação Campeonatos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        5.8725
-      ],
-      "glosa": "Primas por competiciones"
-    },
-    {
-      "label": "Direito de Arena",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.475151
-      ],
-      "glosa": "Derechos de arena"
-    },
-    {
-      "label": "Empréstimos de Atletas",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.015
-      ],
-      "glosa": "Cesiones de jugadores"
-    },
-    {
-      "label": "Materiais e serviços diversos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.24906
-      ],
-      "glosa": "Materiales y servicios diversos"
-    },
-    {
-      "label": "Manutenção, conservação e reformas",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.069865
-      ],
-      "glosa": "Mantenimiento, conservación y reformas"
-    },
-    {
-      "label": "Transportes",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.005996
-      ],
-      "glosa": "Transportes"
-    },
-    {
-      "label": "Desp. Teste Covid - 19",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.496344
-      ],
-      "glosa": "Gastos por pruebas de Covid-19"
-    },
-    {
-      "label": "Custos Diversos",
-      "lado": "expense",
-      "page": 26,
-      "section": "nota que desglosa \"Custos Futebol Profissional\"",
-      "values": [
-        0.120567
-      ],
-      "glosa": "Costes diversos"
+      "glosa": "Costos del fútbol profesional"
     },
     {
       "label": "Custos Futebol Feminino",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.354097
       ],
-      "glosa": "Costes del fútbol femenino"
+      "glosa": "Costos del fútbol femenino"
     },
     {
       "label": "Custos Esportes Olímpicos",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.012103
       ],
-      "glosa": "Costes de deportes olímpicos"
-    },
-    {
-      "label": "Futebol Amador (Custos - Transferência)",
-      "lado": "expense",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        2.064896
-      ],
-      "glosa": "Fútbol amateur (Costes - Transferencias)"
-    },
-    {
-      "label": "Custos do Futebol Categoria de Base",
-      "lado": "expense",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        7.805604
-      ],
-      "glosa": "Costes del fútbol base"
-    },
-    {
-      "label": "( - ) Transferência para o Imobilizado",
-      "lado": "expense",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        5.740708
-      ],
-      "glosa": "( - ) Transferencia al inmovilizado"
-    },
-    {
-      "label": "Despesas Operacionais",
-      "lado": "expense",
-      "page": 4,
-      "section": "estado",
-      "values": [
-        15.142893
-      ],
-      "glosa": "Gastos operativos"
+      "glosa": "Costos de deportes olímpicos"
     },
     {
       "label": "Administrativas",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         12.192491
       ],
-      "glosa": "Gastos de administración"
+      "glosa": "Gastos administrativos"
     },
     {
       "label": "Depreciação e Amortização do Imobilizado",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.260315
       ],
@@ -460,7 +130,7 @@
       "label": "Materiais e despesas diversas",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.096396
       ],
@@ -470,11 +140,21 @@
       "label": "CMV e Icms",
       "lado": "expense",
       "page": 4,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.759297
       ],
-      "glosa": "Coste de ventas e ICMS"
+      "glosa": "Costo de ventas e ICMS"
+    },
+    {
+      "label": "Futebol Amador (Custos - Transferência)",
+      "lado": "expense",
+      "page": 4,
+      "section": "ajuste manual",
+      "values": [
+        2.064896
+      ],
+      "glosa": "Fútbol amateur (Costos - Transferencia)"
     }
   ]
 }

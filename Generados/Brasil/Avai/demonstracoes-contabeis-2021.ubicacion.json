@@ -3,9 +3,18 @@
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
  "mdSha1": "f60c96bc760004b80d5112d4b66a40912220689f",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-09T22:20:41.748Z",
+ "generado": "2026-10-10T00:55:36.558Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
+   "pagina": 1,
+   "lineas": [
+    27,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
    "pagina": 2,
    "lineas": [
     40,
@@ -13,7 +22,15 @@
    ],
    "tipo": "tabla"
   },
-  "b2": {
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    62,
+    66
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
    "pagina": 3,
    "lineas": [
     75,
@@ -21,7 +38,15 @@
    ],
    "tipo": "tabla"
   },
-  "b3": {
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    106,
+    110
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
    "pagina": 4,
    "lineas": [
     119,
@@ -29,7 +54,15 @@
    ],
    "tipo": "tabla"
   },
-  "b4": {
+  "b7": {
+   "pagina": 4,
+   "lineas": [
+    154,
+    158
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
    "pagina": 5,
    "lineas": [
     167,
@@ -37,7 +70,7 @@
    ],
    "tipo": "tabla"
   },
-  "b5": {
+  "b9": {
    "pagina": 5,
    "lineas": [
     182,
@@ -45,7 +78,15 @@
    ],
    "tipo": "tabla"
   },
-  "b6": {
+  "b10": {
+   "pagina": 5,
+   "lineas": [
+    191,
+    195
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
    "pagina": 6,
    "lineas": [
     204,
@@ -53,7 +94,63 @@
    ],
    "tipo": "tabla"
   },
-  "b7": {
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    241,
+    245
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 7,
+   "lineas": [
+    269,
+    273
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 8,
+   "lineas": [
+    293,
+    297
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 9,
+   "lineas": [
+    325,
+    329
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    345,
+    349
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    371,
+    375
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    395,
+    399
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
    "pagina": 13,
    "lineas": [
     423,
@@ -61,7 +158,15 @@
    ],
    "tipo": "tabla"
   },
-  "b8": {
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    432,
+    436
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
    "pagina": 14,
    "lineas": [
     444,
@@ -69,7 +174,7 @@
    ],
    "tipo": "tabla"
   },
-  "b9": {
+  "b22": {
    "pagina": 14,
    "lineas": [
     449,
@@ -77,7 +182,7 @@
    ],
    "tipo": "tabla"
   },
-  "b10": {
+  "b23": {
    "pagina": 14,
    "lineas": [
     456,
@@ -85,7 +190,7 @@
    ],
    "tipo": "tabla"
   },
-  "b11": {
+  "b24": {
    "pagina": 14,
    "lineas": [
     464,
@@ -93,7 +198,15 @@
    ],
    "tipo": "tabla"
   },
-  "b12": {
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    475,
+    479
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
    "pagina": 15,
    "lineas": [
     489,
@@ -101,7 +214,7 @@
    ],
    "tipo": "tabla"
   },
-  "b13": {
+  "b27": {
    "pagina": 15,
    "lineas": [
     513,
@@ -109,7 +222,15 @@
    ],
    "tipo": "tabla"
   },
-  "b14": {
+  "b28": {
+   "pagina": 15,
+   "lineas": [
+    527,
+    531
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
    "pagina": 16,
    "lineas": [
     541,
@@ -117,7 +238,7 @@
    ],
    "tipo": "tabla"
   },
-  "b15": {
+  "b30": {
    "pagina": 16,
    "lineas": [
     552,
@@ -125,7 +246,15 @@
    ],
    "tipo": "tabla"
   },
-  "b16": {
+  "b31": {
+   "pagina": 16,
+   "lineas": [
+    565,
+    569
+   ],
+   "tipo": "texto"
+  },
+  "b32": {
    "pagina": 17,
    "lineas": [
     573,
@@ -133,7 +262,15 @@
    ],
    "tipo": "tabla"
   },
-  "b17": {
+  "b33": {
+   "pagina": 17,
+   "lineas": [
+    615,
+    619
+   ],
+   "tipo": "texto"
+  },
+  "b34": {
    "pagina": 18,
    "lineas": [
     623,
@@ -141,7 +278,15 @@
    ],
    "tipo": "tabla"
   },
-  "b18": {
+  "b35": {
+   "pagina": 18,
+   "lineas": [
+    677,
+    681
+   ],
+   "tipo": "texto"
+  },
+  "b36": {
    "pagina": 19,
    "lineas": [
     691,
@@ -149,7 +294,7 @@
    ],
    "tipo": "tabla"
   },
-  "b19": {
+  "b37": {
    "pagina": 19,
    "lineas": [
     711,
@@ -157,7 +302,15 @@
    ],
    "tipo": "tabla"
   },
-  "b20": {
+  "b38": {
+   "pagina": 19,
+   "lineas": [
+    723,
+    727
+   ],
+   "tipo": "texto"
+  },
+  "b39": {
    "pagina": 20,
    "lineas": [
     737,
@@ -165,7 +318,7 @@
    ],
    "tipo": "tabla"
   },
-  "b21": {
+  "b40": {
    "pagina": 20,
    "lineas": [
     753,
@@ -173,7 +326,15 @@
    ],
    "tipo": "tabla"
   },
-  "b22": {
+  "b41": {
+   "pagina": 20,
+   "lineas": [
+    775,
+    779
+   ],
+   "tipo": "texto"
+  },
+  "b42": {
    "pagina": 21,
    "lineas": [
     793,
@@ -181,7 +342,7 @@
    ],
    "tipo": "tabla"
   },
-  "b23": {
+  "b43": {
    "pagina": 21,
    "lineas": [
     805,
@@ -189,7 +350,15 @@
    ],
    "tipo": "tabla"
   },
-  "b24": {
+  "b44": {
+   "pagina": 21,
+   "lineas": [
+    821,
+    825
+   ],
+   "tipo": "texto"
+  },
+  "b45": {
    "pagina": 22,
    "lineas": [
     835,
@@ -197,7 +366,31 @@
    ],
    "tipo": "tabla"
   },
-  "b25": {
+  "b46": {
+   "pagina": 22,
+   "lineas": [
+    863,
+    867
+   ],
+   "tipo": "texto"
+  },
+  "b47": {
+   "pagina": 23,
+   "lineas": [
+    891,
+    895
+   ],
+   "tipo": "texto"
+  },
+  "b48": {
+   "pagina": 24,
+   "lineas": [
+    911,
+    915
+   ],
+   "tipo": "texto"
+  },
+  "b49": {
    "pagina": 25,
    "lineas": [
     924,
@@ -205,7 +398,15 @@
    ],
    "tipo": "tabla"
   },
-  "b26": {
+  "b50": {
+   "pagina": 25,
+   "lineas": [
+    953,
+    957
+   ],
+   "tipo": "texto"
+  },
+  "b51": {
    "pagina": 26,
    "lineas": [
     967,
@@ -213,24 +414,32 @@
    ],
    "tipo": "tabla"
   },
-  "b27": {
+  "b52": {
+   "pagina": 26,
+   "lineas": [
+    1007,
+    1011
+   ],
+   "tipo": "texto"
+  },
+  "b53": {
    "pagina": 27,
    "lineas": [
     1017,
-    1028
+    1030
    ],
    "tipo": "texto"
   }
  },
  "sin_estado": false,
  "estado": [
-  "b3"
+  "b6"
  ],
  "notas_ingresos": [
-  "b25"
+  "b49"
  ],
  "notas_gastos": [
-  "b26"
+  "b51"
  ],
  "escala": "unidades",
  "escala_evidencia": "(Em reais)",
@@ -239,6 +448,18 @@
  "columna_anterior": "31.12.2020",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Estado individual del clube (Demonstração do Déficit e Superávit, pág. 4). La nota 21 Receitas (b25) desglosa los ingresos, y la de Custos do Futebol Profissional (b26) desglosa los costos. b5 (resultado abrangente) no aporta desglose."
+ "dudas": [
+  {
+   "pregunta": "¿El cuadro 'Custos do Futebol Profissional' (b51) abre en filas propias los salarios del plantel y los gastos de estadio, de modo que se carguen desde ahí?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": ". Salários e Encargos",
+   "texto": "El reintento pide salarios del plantel y estadio; b51 es el único desglose de costos visible y empieza con 'Salários e Encargos'.",
+   "bloques": [
+    "b51"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual del Avaí (Demonstração do Déficit e Superávit, b6), en reales. b49 desglosa receitas operacionais y b51 los costos del futebol profissional y de los esportes olímpicos (salarios, viajes, etc.). No se encontró un cuadro específico de estadio; si existe, estaría dentro de b51 o de las despesas administrativas de b6. Se excluyen el balance, el flujo de caja, el imobilizado, el intangível y los cuadros de deudas."
 }

@@ -3,7 +3,7 @@
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
  "mdSha1": "464820e46f8194e0921a2fd076431c795764b755",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-09T23:20:45.489Z",
+ "generado": "2026-10-10T01:00:54.351Z",
  "ubicacion": {
   "estado": [
    "b4"
@@ -33,57 +33,57 @@
   {
    "bloque": "b44",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (24.459.549,21) coincide con L108 del estado en reais"
+   "evidencia": "Importes con centavos, coinciden con el estado en reais"
   },
   {
    "bloque": "b45",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL coincide con L109 del estado en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b46",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (5.165.898,30) coincide con L110 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b47",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (279.901,77) coincide con L112 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b54",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (184.577,26) coincide con L129 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b48",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (3.564,13) coincide con L117 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b49",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (8.719.408,08) coincide con L121 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b50",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL coincide con L122 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b51",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; las partidas suman 4.450.807,44 = L123 en reais"
+   "evidencia": "Importes con centavos en reais"
   },
   {
    "bloque": "b52",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (9.735.193,59) coincide con L124 en reais"
+   "evidencia": "Coincide con estado en reais"
   },
   {
    "bloque": "b53",
    "escala": "unidades",
-   "evidencia": "Sin frase de escala; el TOTAL (9.510.671,22) coincide con L125 en reais"
+   "evidencia": "Coincide con estado en reais"
   }
  ],
  "filas": [
@@ -848,6 +848,16 @@
    "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
   },
   {
+   "bloque": "b51",
+   "linea": 858,
+   "etiqueta": "TOTAL",
+   "actual": "768.652,01",
+   "anterior": "5.447.098,76",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) PROVISÕES E CONTIGÊNCIAS"
+  },
+  {
    "bloque": "b52",
    "linea": 864,
    "etiqueta": "Concentração de Jogos",
@@ -1303,23 +1313,23 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el TOTAL 2023 de 768.652,01 de la nota 33.3 (L858), usando las partidas que suman 4.450.807,44 como el estado (L123)?",
+   "pregunta": "¿Se carga el renglón '(-) PROVISÕES E CONTIGÊNCIAS' con el importe del estado (4.450.807,44) aunque la nota 33.3 (L853-L858) suma 768.652,01 y sus partidas suman 4.450.807,44?",
    "propuesta": "sí",
-   "tema": "fila-ilegible",
+   "tema": "otro",
    "renglon": "(-) PROVISÕES E CONTIGÊNCIAS",
-   "texto": "El TOTAL impreso en L858 (768.652,01) no coincide con la suma de sus partidas ni con L123 (4.450.807,44); parece error de tipeo.",
+   "texto": "El TOTAL impreso en L858 (768.652,01) no coincide con el estado (L123) ni con la suma de sus partidas, que sí da 4.450.807,44.",
    "bloques": [
-    "b51",
-    "b4"
+    "b4",
+    "b51"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿El cuadro sin título de L894-L919 corresponde a la nota 33.5 Outras Despesas del renglón L125?",
+   "pregunta": "¿Se asigna la tabla sin título de L894-L919 a la nota 33.5 '(-) OUTRAS DESPESAS'?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "(-) OUTRAS DESPESAS",
-   "texto": "El bloque b53 no trae título de nota, pero su TOTAL (L919) coincide con L125 en ambos años.",
+   "texto": "El cuadro b53 no tiene título visible, pero su TOTAL (L919) coincide con L125.",
    "bloques": [
     "b53",
     "b4"
@@ -1327,5 +1337,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado en reais. La nota 30.1 se titula 'Receita com direitos de transmissão e premiações' pero su total coincide con 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (L108). Las notas muestran importes en positivo donde el estado los muestra entre paréntesis. No hay impuesto a las ganancias. El total de la nota 33.3 (L858) se omitió por inconsistente."
+ "observaciones": "No existen renglones específicos de 'Televisión', 'Estadio' ni 'Cuotas sociales' con esas etiquetas: sus equivalentes están en la nota 30.1 (b44): 'Cota televisiva' (L758), 'Bilheteria' (L761) y 'Programa sócio torcedor' (L757), todos extraídos. La nota 30.1 se titula 'RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES' pero desglosa 'RECEITA COM PRESTAÇÃO DE SERVIÇOS'. Gastos totales tomados de L120 (sin costos de L117). No hay impuesto a las ganancias."
 }

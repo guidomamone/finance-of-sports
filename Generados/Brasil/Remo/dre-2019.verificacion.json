@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2019.pdf",
  "md": "Clubes/Brasil/Remo/dre-2019.md",
- "generado": "2026-10-10T00:40:08.604Z",
+ "generado": "2026-10-10T00:53:58.421Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "remo-br",
  "year": 2019,
  "escala": {
   "valor": "no se sabe",
@@ -105,7 +105,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -113,7 +113,7 @@
   "ajuste manual: sale la fila \"L15\" (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): ídem: L15 Receita Líquida 17.903.353,17 es el mismo ingreso de L14 (sin deducciones))",
   "ajuste manual: fila \"(-) Despesas Operacionais (sin Resultado Financeiro)\" (gasto) 20.686.217,40, en lugar de la fila de L17 (2026-10-09, Onboarding to-do 165 (Claude, 2026-10-09): el Resultado Financeiro (L18, 225.425,57) está incluido en Despesas Operacionais (L17, 20.911.642,97): 17.903.353,17 - 20.911.642,97 = -3.008.289,80 = resultado impreso (L19-L21). Se separa: 20.911.642,97 - 225.425,57 = 20.686.217,40 de gastos operativos + 225.425,57 de costo financiero)",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en relatorio-auditoria-2020.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-auditoria-2020.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

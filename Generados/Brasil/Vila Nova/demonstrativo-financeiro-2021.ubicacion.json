@@ -3,7 +3,8 @@
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md",
  "mdSha1": "9a0e0b8b48c2704617b6c80e46201047bb87dc61",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-09T23:16:28.138Z",
+ "generado": "2026-10-10T00:56:43.023Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 7,
@@ -449,6 +450,31 @@
  "columna_anterior": "2020",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Estado de resultados (DRE) en b4, pág. 8, en reais. Notas 30 a 34: desglose de ingresos (b40-b42), deducciones (b43), costos (b44), gastos operativos (b45-b50) y resultado financiero (b51). b48 es la continuación de la nota 33.3 de provisiones (b47). Solo hay estados individuales del club."
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Programa socio-torcedor' de la nota 30.1 (b40) como cuotas sociales?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Programa socio-torcedor",
+   "texto": "El reintento pide cuotas sociales; la fila socio-torcedor de b40 y 'Mensalidade Conselho Deliberativo' de b42 parecen ser ese concepto.",
+   "bloques": [
+    "b40",
+    "b42"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Hay alguna fila de bilheteria/estadio dentro de b40 o b42 (p.ej. 'Receitas Patrimoniais Sociais')?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receitas Patrimoniais Sociais",
+   "texto": "No se ve renglón explícito de estadio en el índice; puede estar en filas intermedias de b40 o en b42.",
+   "bloques": [
+    "b40",
+    "b42"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual del clube (DRE en b4, en reais). Notas 30-34 desglosan ingresos, deducciones, costos, gastos y resultado financiero. b47 continúa en b48 (provisiones). Cuotas sociales probablemente en b40 (Programa socio-torcedor) y b42 (Mensalidade Conselho)."
 }

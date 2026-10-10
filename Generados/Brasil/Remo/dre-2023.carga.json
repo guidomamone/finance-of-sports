@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
- "generado": "2026-10-10T00:15:54.899Z",
+ "generado": "2026-10-10T00:55:23.467Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,12 +11,75 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales, Otras secciones deportivas. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Receita Operacional Bruta\" 33.831604 (no está en categorias.json)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "47.1% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Despesas Operacionais\" 16.404081 (no está en categorias.json)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "gastos: las filas suman -18.418551 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
- "avisos": [],
- "ejercicio": null,
+ "avisos": [
+  "ingresos: 1 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Receita Operacional Bruta\" (no está en categorias.json)",
+  "gastos: 1 fila(s) sin categoría aceptable (47.1% del dinero del lado): \"Despesas Operacionais\" (no está en categorias.json)",
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "remo-br",
+  "year": 2023,
+  "cierre": "2023-12-31",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -18.418551,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2023-12-31",
+   "sourceId": "remo-br-dre-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.449709,
+   "tax": 0,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "remo-br-dre-2023",
+   "clubId": "remo-br",
+   "title": "Clube do Remo — dre-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/dre-2023.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Brasil/Remo/dre-2023.md",
  "reemplaza": false,
  "periodo": {
@@ -27,5 +90,179 @@
   "confianza": "media",
   "anual": "calendario"
  },
- "cortadoEn": "club"
+ "clubId": "remo-br",
+ "year": 2023,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 12,
+   "etiqueta": "(sale) total Receita Operacional Líquida",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 12,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): L12 Receita Operacional Líquida 33.831.604 repite L10 (Bruta, sin deducciones) y L14 Resultado Operacional Bruto: el ingreso es uno solo, 33.831.604, y se contaba dos veces",
+   "evidencia": "pág. 1 del visor, .md L10-L14",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício firmada por el contador (una página); el balance del año está en otro PDF (descartado para la carga)",
+   "evidencia": "dre-2023.md L1-L20",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "seleccion": {
+  "filas": 4,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Receita Operacional Bruta",
+   "page": 1,
+   "native": 33.831604,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 33.831604,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Despesas Administrativas",
+   "page": 1,
+   "native": 18.418551,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 18.418551,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -18.418551
+  },
+  {
+   "label": "Despesas Operacionais",
+   "page": 1,
+   "native": 16.404081,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 16.404081,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Despesas Financeiras",
+   "page": null,
+   "native": -0.449709,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Cuotas sociales"
+  },
+  {
+   "categoria": "Otras secciones deportivas"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": -18.418551,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "liga": {
+  "valor": "br-serieC",
+  "fuente": "roster cacheado de \"2023 Campeonato Brasileiro Série C\" (tools/club-league-reference/br.json), coincidencia exacta \"Remo\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (2 de 2 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício firmada por el contador (una página); el balance del año está en otro PDF (descartado para la carga)",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2023-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2023-12-31 = 4.8413 (PTAX de cierre (venda) del Banco Central do Brasil, 29/12/2023 (último día hábil del año; 30 y 31/12 cayeron sábado y domingo))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "remo-br-dre-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieC",
+   "fuente": "roster cacheado de \"2023 Campeonato Brasileiro Série C\" (tools/club-league-reference/br.json), coincidencia exacta \"Remo\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 7,
+  "lineasIngreso": 0,
+  "lineasGasto": 1,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
 }

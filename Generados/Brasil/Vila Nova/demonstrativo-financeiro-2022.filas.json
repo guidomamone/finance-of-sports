@@ -3,7 +3,7 @@
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
  "mdSha1": "589d86607235f7c16e64a7cb650a7c9ac5b7e8a3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-09T23:19:09.764Z",
+ "generado": "2026-10-10T00:59:23.739Z",
  "ubicacion": {
   "estado": [
    "b3"
@@ -36,7 +36,7 @@
   {
    "bloque": "b38",
    "escala": "unidades",
-   "evidencia": "Sin indicación; importes con centavos coinciden con el estado en reais"
+   "evidencia": "Importes con centavos, misma escala que el estado (Em reais)"
   },
   {
    "bloque": "b39",
@@ -46,62 +46,62 @@
   {
    "bloque": "b40",
    "escala": "unidades",
-   "evidencia": "Total L837 coincide con L142 en reais"
+   "evidencia": "Total L837 coincide con L142"
   },
   {
    "bloque": "b41",
    "escala": "unidades",
-   "evidencia": "Total L848 coincide con L143 en reais"
+   "evidencia": "Total L848 coincide con L143"
   },
   {
    "bloque": "b42",
    "escala": "unidades",
-   "evidencia": "Total L858 coincide con L145 en reais"
+   "evidencia": "Total L858 coincide con L144"
   },
   {
    "bloque": "b51",
    "escala": "unidades",
-   "evidencia": "Total L970 coincide con L156 en reais"
+   "evidencia": "Total L970 coincide con L156"
   },
   {
    "bloque": "b43",
    "escala": "unidades",
-   "evidencia": "Total L867 coincide con L147 en reais"
+   "evidencia": "Total L867 coincide con L147"
   },
   {
    "bloque": "b44",
    "escala": "unidades",
-   "evidencia": "Continúa en b45 cuyo total coincide con L150 en reais"
+   "evidencia": "Continúa en b45, total L898 coincide con L150"
   },
   {
    "bloque": "b45",
    "escala": "unidades",
-   "evidencia": "Total L898 coincide con L150 en reais"
+   "evidencia": "Total L898 coincide con L150"
   },
   {
    "bloque": "b46",
    "escala": "unidades",
-   "evidencia": "Total L905 coincide con L151 en reais"
+   "evidencia": "Total L905 coincide con L151"
   },
   {
    "bloque": "b47",
    "escala": "unidades",
-   "evidencia": "Total L915 coincide con L152 en reais"
+   "evidencia": "Total L915 coincide con L152"
   },
   {
    "bloque": "b48",
    "escala": "unidades",
-   "evidencia": "Total L927 coincide con L153 en reais"
+   "evidencia": "Total L927 coincide con L153"
   },
   {
    "bloque": "b49",
    "escala": "unidades",
-   "evidencia": "Continúa en b50 cuyo total coincide con L154 en reais"
+   "evidencia": "Continúa en b50, total L962 coincide con L154"
   },
   {
    "bloque": "b50",
    "escala": "unidades",
-   "evidencia": "Total L962 coincide con L154 en reais"
+   "evidencia": "Total L962 coincide con L154"
   }
  ],
  "filas": [
@@ -201,7 +201,7 @@
    "etiqueta": "(=) DESPESAS COM ATIVIDADE OPERACIONAL",
    "actual": "(30.788.195,68)",
    "anterior": "(30.273.125,70)",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "gasto",
    "detalla_a": null
   },
@@ -523,7 +523,7 @@
    "anterior": "(657.771,38)",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "(-) DESPESA FINANCEIRA"
+   "detalla_a": "(=) RESULTADO FINANCEIRO"
   },
   {
    "bloque": "b51",
@@ -533,7 +533,7 @@
    "anterior": "6.629.890,49",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "RECEITAS FINANCEIRA"
+   "detalla_a": "(=) RESULTADO FINANCEIRO"
   },
   {
    "bloque": "b51",
@@ -1169,31 +1169,6 @@
   "actual": "2.114.536,35",
   "anterior": "(1.795.545,82)"
  },
- "dudas": [
-  {
-   "pregunta": "¿Se asume que la tabla de b39 (L821-L829) es continuación de la nota 30.1 de b38 y que sus columnas son 2022 y 2021 aunque no tenga encabezado?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
-   "texto": "La tabla de L821 empieza sin encabezado tras un salto de página; su TOTAL L829 coincide con L141.",
-   "bloques": [
-    "b38",
-    "b39"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se asume que la tabla de b50 (L956-L962) es continuación de la nota 33.5 Outras Despesas con columnas 2022 y 2021?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "(-) OUTRAS DESPESAS",
-   "texto": "Encabezado vacío en L954; el TOTAL L962 coincide con L154.",
-   "bloques": [
-    "b49",
-    "b50"
-   ],
-   "afecta_carga": false
-  }
- ],
- "observaciones": "Importes en reais con centavos. Las notas presentan gastos y deducciones en positivo mientras el estado los muestra entre paréntesis. El total de ingresos impreso es la receita bruta (L140); el total de gastos se tomó como Despesas com atividade operacional (L149), sin incluir custos (0,00 en 2022). L960 no tiene importe 2021. No hay impuesto a las ganancias."
+ "dudas": [],
+ "observaciones": "No existen renglones literales 'Televisión', 'Estadio' ni 'Cuotas sociales': sus equivalentes son 'Cota televisiva' (L823), 'Bilheteria' (L826) y 'Programa socio-torcedor' (L821), todos en la nota 30.1 (b38-b39, tabla partida entre páginas) que desglosa 'RECEITA COM PRESTAÇÃO DE SERVIÇOS'. Las notas 33.1 (b44-b45) y 33.5 (b49-b50) también continúan entre páginas. No hay cuadros por segmento. No hay impuesto a las ganancias. L960 sin importe 2021."
 }

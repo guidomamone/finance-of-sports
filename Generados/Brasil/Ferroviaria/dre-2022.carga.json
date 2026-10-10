@@ -1,0 +1,842 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+ "generado": "2026-10-10T00:55:24.708Z",
+ "frena": [
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Ferroviária Futebol S.A. luego SAF); 'CONSOLIDADO' es el membrete del reporte contable (consolida filiales/centros de costo), no un grupo. Mismo criterio que Novorizontino)",
+  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "ferroviaria-br",
+  "year": 2022,
+  "cierre": "2022-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Rendas de competições - futebol feminino: Campeonato Paulista",
+    "normalizedCategory": "womens_football",
+    "amountNative": 0.481934,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Rendas de competições - futebol feminino: Copa Libertadores",
+    "normalizedCategory": "womens_football",
+    "amountNative": 0.039236,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transmissões esportivas - futebol masculino: Campeonato Paulista",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5.126695,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transmissões esportivas - futebol masculino: Copa do Brasil",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.558,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transações de atletas: venda dos direitos federativos e econômicos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.839047,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transações de atletas: repasse de cessão temporária",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.9,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transações de atletas - exterior: venda dos direitos federativos e econômicos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.393859,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transações de atletas - exterior: repasse de cessão temporária",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3.62043,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Receita com formação",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.15,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Premiações - futebol masculino: Campeonato Paulista",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.18,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Premiações - futebol feminino: Campeonato Brasileiro",
+    "normalizedCategory": "womens_football",
+    "amountNative": 0.065,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Premiações - futebol feminino: Campeonato Paulista",
+    "normalizedCategory": "womens_football",
+    "amountNative": 0.08,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Outras premiações - futebol masculino: Programa de excelência FPF",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.08,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Publicidade - futebol masculino: Campeonato Paulista",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.873305,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Patrocínios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.5231,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Permuta",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.047111,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Mensalidade sócio torcedor",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.108724,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Venda de mercadorias",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.044605,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Lucro na alienação do ativo imobilizado",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0795,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "DEDUÇÕES DA RECEITA BRUTA",
+    "normalizedCategory": "other_income",
+    "amountNative": -1.033091,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "OUTRAS RECEITAS OPERACIONAIS",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.045969,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "RECEITAS NÃO OPERACIONAIS",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.306892,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "CUSTOS",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -23.267062,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "DESPESAS OPERACIONAIS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.6554,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2022-12-31",
+   "sourceId": "ferroviaria-br-dre-2022",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.47495,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "CUSTOS",
+     "lado": "expense",
+     "importe": 23.267062,
+     "motivo": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 18.510316,
+   "officialTotalExpenses": 29.922462,
+   "officialPAT": -10.937196
+  },
+  "source": {
+   "id": "ferroviaria-br-dre-2022",
+   "clubId": "ferroviaria-br",
+   "title": "Ferroviária Futebol S.A. — dre-2022 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Período: 01/01/2022 - 31/12/2022"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "ferroviaria-br",
+ "year": 2022,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "name",
+   "valor": "Ferroviária S.A.F.",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)",
+   "evidencia": "dre-2022.md (FERROVIARIA S.A.F.; CNPJ 06.020.811/0001-30)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude en sesión, 2026-10-09, pedido de Guido): extraer.mjs cortó por el tope de salida (balancete de ~580 cuentas, to-do 197); .filas.json armado a mano con la receita bruta abierta y los renglones de primer nivel",
+   "evidencia": "dre-2022.md L19-L50, L77, L492, L736-L751",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)",
+   "evidencia": "dre-2022.md L1-L15",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "seleccion": {
+  "filas": 25,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Rendas de competições - futebol feminino: Campeonato Paulista",
+   "page": 1,
+   "native": 0.481934,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.481934,
+   "cat": "womens_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.481934
+  },
+  {
+   "label": "Rendas de competições - futebol feminino: Copa Libertadores",
+   "page": 1,
+   "native": 0.039236,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.039236,
+   "cat": "womens_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.039236
+  },
+  {
+   "label": "Transmissões esportivas - futebol masculino: Campeonato Paulista",
+   "page": 1,
+   "native": 5.126695,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.126695,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 5.126695
+  },
+  {
+   "label": "Transmissões esportivas - futebol masculino: Copa do Brasil",
+   "page": 1,
+   "native": 0.558,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.558,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.558
+  },
+  {
+   "label": "Transações de atletas: venda dos direitos federativos e econômicos",
+   "page": 1,
+   "native": 2.839047,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.839047,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 2.839047
+  },
+  {
+   "label": "Transações de atletas: repasse de cessão temporária",
+   "page": 1,
+   "native": 0.9,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.9,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.9
+  },
+  {
+   "label": "Transações de atletas - exterior: venda dos direitos federativos e econômicos",
+   "page": 1,
+   "native": 0.393859,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.393859,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.393859
+  },
+  {
+   "label": "Transações de atletas - exterior: repasse de cessão temporária",
+   "page": 1,
+   "native": 3.62043,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.62043,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 3.62043
+  },
+  {
+   "label": "Receita com formação",
+   "page": 1,
+   "native": 0.15,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.15,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.15
+  },
+  {
+   "label": "Premiações - futebol masculino: Campeonato Paulista",
+   "page": 1,
+   "native": 0.18,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.18,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.18
+  },
+  {
+   "label": "Premiações - futebol feminino: Campeonato Brasileiro",
+   "page": 1,
+   "native": 0.065,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.065,
+   "cat": "womens_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.065
+  },
+  {
+   "label": "Premiações - futebol feminino: Campeonato Paulista",
+   "page": 1,
+   "native": 0.08,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.08,
+   "cat": "womens_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.08
+  },
+  {
+   "label": "Outras premiações - futebol masculino: Programa de excelência FPF",
+   "page": 1,
+   "native": 0.08,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.08,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.08
+  },
+  {
+   "label": "Publicidade - futebol masculino: Campeonato Paulista",
+   "page": 1,
+   "native": 0.873305,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.873305,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.873305
+  },
+  {
+   "label": "Patrocínios",
+   "page": 1,
+   "native": 3.5231,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.5231,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 3.5231
+  },
+  {
+   "label": "Permuta",
+   "page": 1,
+   "native": 0.047111,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.047111,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.047111
+  },
+  {
+   "label": "Mensalidade sócio torcedor",
+   "page": 1,
+   "native": 0.108724,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.108724,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.108724
+  },
+  {
+   "label": "Venda de mercadorias",
+   "page": 1,
+   "native": 0.044605,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.044605,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.044605
+  },
+  {
+   "label": "Lucro na alienação do ativo imobilizado",
+   "page": 1,
+   "native": 0.0795,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.0795,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.0795
+  },
+  {
+   "label": "DEDUÇÕES DA RECEITA BRUTA",
+   "page": 1,
+   "native": 1.033091,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -1.033091,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": -1.033091
+  },
+  {
+   "label": "OUTRAS RECEITAS OPERACIONAIS",
+   "page": 9,
+   "native": 0.045969,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.045969,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.045969
+  },
+  {
+   "label": "RECEITAS NÃO OPERACIONAIS",
+   "page": 9,
+   "native": 0.306892,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.306892,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "revenue",
+   "amountNative": 0.306892
+  },
+  {
+   "label": "CUSTOS",
+   "page": 1,
+   "native": 23.267062,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 23.267062,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "expense",
+   "amountNative": -23.267062
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "page": 6,
+   "native": 6.6554,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.6554,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+   "destino": "expense",
+   "amountNative": -6.6554
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "page": null,
+   "native": 0.47495,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 18.510316,
+  "expSum": -29.922462,
+  "officialTotalRevenue": 18.510316,
+  "officialTotalExpenses": 29.922462,
+  "officialPAT": -10.937196,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -10.937196,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 18.510316
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 29.922462
+  }
+ },
+ "liga": {
+  "valor": "br-serieD",
+  "fuente": "roster cacheado de \"2022 Campeonato Brasileiro Série D\" (tools/club-league-reference/br.json), coincidencia exacta \"Ferroviária\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (18 de 18 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): Onboarding to-do 165 (Claude, 2026-10-09): DRE del sistema contable de la SAF, 01/01 a 31/12/2022 (mismo formato que 2013-b a 2018)",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2022-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2022-12-31 = 5.2177 (PTAX de cierre (venda) del Banco Central do Brasil, 30/12/2022 (último día hábil del año; 31/12 cayó sábado))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "ferroviaria-br-dre-2022",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieD",
+   "fuente": "roster cacheado de \"2022 Campeonato Brasileiro Série D\" (tools/club-league-reference/br.json), coincidencia exacta \"Ferroviária\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 22,
+  "lineasGasto": 2,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}
