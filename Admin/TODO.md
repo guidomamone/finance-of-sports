@@ -104,10 +104,6 @@ ni en el comentario de ningún archivo de código.
     cambia Ferroviária 2012 (una fila "Sócio torcedor" en 0 que pasaría a cargarse). Un solo caso y ya cargado a mano: no se hace. Remo 2020
     sigue en la cola sin sus ajustes (subtotales de gastos). Si aparecen más casos como Avaí, rediseñar con los dos escalones juntos.
 
-202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
-    ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
-
-
 206. CABECERA DE LOS AÑOS DE RUSIA EN data/ (cosmético). Los años escritos por tools/bfo-rusia.mjs llevan el comentario de cargar.mjs ("Filas:
     proponer-carga.mjs (ancla-listas); categorías: <md>.categorias.json"), que no es cierto para ellos (sale del JSON del fisco). `escribir()`
     podría recibir el texto de la cabecera en P.

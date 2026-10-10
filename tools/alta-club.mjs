@@ -1047,8 +1047,23 @@ export function analizar(docArg, sitio, ov = {}) {
   const filasPipe = lineasMd.filter((l) => l.trim().startsWith('|') && (l.match(/\|\s*\(?-?\s*\d[\d.,\s]*\)?\s*(?=\|)/g) || []).length >= 2).length;
   const filasMontos = lineasMd.filter((l) => (l.match(/(?<![\d.,])\(?-?\d{1,3}(?:[.,   ]\d{3})+(?:[.,]\d{1,2})?\)?(?![\d])/g) || []).length >= 2).length;
   const filasNumericas = Math.max(filasPipe, filasMontos);
-  const tieneEstado = (STATEMENT.test(mdNorm) || STATEMENT.test(nomNorm)) && filasNumericas >= 10;
-  let reportType = 'official_balance_sheet'; let estadoRT = 'ok'; let fuenteRT = 'el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo'; let preguntaRT = null;
+  // ESCALÓN 1 del estado contable (to-do 202): un estado de resultados CORTO de una sola columna (un monto por fila) no llega a las 10 filas
+  // con 2+ montos. Vale si la PRIMERA PÁGINA trae el título de un estado de resultados y un PERÍODO impreso de 12 meses ("01/01/2019 a
+  // 31/12/2019"), con al menos 5 filas con un monto. Un informe del auditor nombra el estado pero no imprime ese encabezado de período.
+  // Casos: Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018 (DRE del sistema contable), que preguntaban reportType y se fijaban a mano.
+  const estadoCorto = (() => {
+    if (filasNumericas >= 10) return false;
+    const pag1 = md.split(/^--- pág\. 2 ---$/m)[0].replace(/<br\s*\/?>/gi, ' ');
+    if (!/demonstra[cç][aã]o\s+d[oe]s?\s+resultados?|estado\s+de\s+resultados|income\s+statement|profit\s+and\s+loss|conto\s+economico/i.test(pag1)) return false;
+    // el ejercicio anual: un período impreso de 12 meses, o el nombre del estado anual en portugués ("... do Exercício", Remo 2023 y 2024:
+    // "Demonstração do Resultado do Exercício / Em 31 de Dezembro de 2023", sin período "de-a")
+    const per = pag1.match(/(\d{2})\/(\d{2})\/(\d{4})\s*(?:a|até|al|to|-)\s*(\d{2})\/(\d{2})\/(\d{4})/i);
+    const anual = (per && (Number(per[6]) - Number(per[3])) * 12 + Number(per[5]) - Number(per[2]) + 1 === 12) || /demonstra[cç][aã]o\s+do\s+resultado\s+do\s+exerc[ií]cio/i.test(pag1);
+    const conMonto = lineasMd.filter((l) => /(?<![\d.,])\(?-?\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?\)?(?![\d])/.test(l)).length;
+    return anual && conMonto >= 5;
+  })();
+  const tieneEstado = (STATEMENT.test(mdNorm) || STATEMENT.test(nomNorm)) && (filasNumericas >= 10 || estadoCorto);
+  let reportType = 'official_balance_sheet'; let estadoRT = 'ok'; let fuenteRT = estadoCorto ? 'escalón 1: estado de resultados corto de una columna, con título y período de 12 meses en la primera página' : 'el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo'; let preguntaRT = null;
   if (esPresupuesto) { reportType = 'official_budget'; estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = 'El documento parece un PRESUPUESTO: se carga como official_budget y el tipo de cambio es la premisa del propio presupuesto (document_assumption), no un cierre. ¿Confirmar que es un presupuesto y cuál es su premisa de tipo de cambio?'; }
   else if (esIntermedio) { estadoRT = 'pregunta'; fuenteRT = `el documento parece un estado intermedio (${nIntermedio} señales en el texto: semestral, seis meses, interim...)`; preguntaRT = 'El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?'; }
   else if (NO_BALANCE.test(nomNorm)) { estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = `El nombre del archivo ("${nombreArchivo}") sugiere que no es un estado contable anual (acta, informe intermedio, memoria, dictamen...). ¿Trae un estado de resultados anual cargable, o es un documento de contexto?`; }

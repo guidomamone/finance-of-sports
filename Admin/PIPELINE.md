@@ -384,6 +384,9 @@ Mitigaciones:
   de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
+  El tipo de documento (`reportType`) del alta: escalón 0 el ajuste; si no, el `.md` tiene que tener un estado contable con 10+ filas de 2+
+  montos; escalón 1 (to-do 202): un estado de resultados corto de una columna vale si la primera página trae su título y el ejercicio anual
+  (período impreso de 12 meses, o "Demonstração do Resultado do Exercício") con 5+ filas con monto. Si no, pregunta.
   Nombre legal (`decidirNombre()`): ajuste `name` (del documento o de la carpeta del club) o respuesta de la cola → si la portada y lo
   más frecuente del .md coinciden, ese → si no, pregunta a la cola (una por club, se contesta `corregir --valor "<nombre legal>"`).
   Después de un alta, un subagente Sonnet revisa nombre, tipo de documento y cierre contra el documento (decisión de Guido: el alta es

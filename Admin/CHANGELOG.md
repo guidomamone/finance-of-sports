@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 665 — `alta-club.mjs`: escalón 1 del tipo de documento para estados de resultados cortos (to-do 202) (2026-10-10)
+
+- Un estado de resultados de una columna con pocas filas vale como estado del ejercicio si la primera página trae su título y el ejercicio
+  anual (período de 12 meses o "Demonstração do Resultado do Exercício") y 5+ filas con monto. Medido sobre las 2.829 transcripciones de
+  `Clubes/`: 18 pasan de pregunta a ok, todas DRE (Remo 2019-2024, Ferroviária 2013-b a 2023, Mirassol, Volta Redonda, Athletic Club,
+  Novorizontino 2014-b y 2015); ninguna al revés.
+
 ## Versión 664 — `verificar.mjs`: escalón 2 de los chequeos del año en común (to-do 201) (2026-10-10)
 
 - Si los escalones 0 y 1 no coinciden, la columna del año en común se compara con las mismas filas que cerraron la columna que se carga
