@@ -54,7 +54,7 @@ const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.s
 
 // Los archivos que toca un alta o una carga (generadores incluidos), para el commit y para revertir un alta.
 const SITIO = ['data', 'index.html', 'fuentes', 'fuentes.html', 'sitemap.xml'];
-const ADMIN = ['Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl'];
+const ADMIN = ['Admin/ajustes-manuales.jsonl', 'Admin/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/categorias-aprendidas.jsonl', 'Admin/perfil-clubes.jsonl', 'Admin/cola-revision.jsonl', 'Admin/cargar-ultimo.jsonl', 'Admin/altas-club.jsonl'];
 
 const descartados = new Set(leerLineas('Admin/documentos-descartados.txt'));
 const docs = leerLineas(LISTA).filter((d) => !descartados.has(d));
