@@ -166,6 +166,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   { const pVf = resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })); try { if (existsSync(pVf)) for (const l of JSON.parse(readFileSync(pVf, 'utf8')).notaSubtotal || []) ladosCero.add(l); } catch { /* sin verificación anterior */ } }
   const confirmadosPorSumas = []; // (to-do 176) números de filas que se cargan confirmados por las sumas
   let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
+  const signoFinBloque = new Map(); const notasFinBloque = []; let escalonFinBloque = false; // (to-do 199, patrón C) fila del financiero (por línea) -> signo según el bloque que la contiene
   const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -296,7 +297,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // `fila` con `reemplazaLinea` saque las hojas si el renglón estaba abierto. Propiedad NO enumerable: no se escribe en el .verificacion.json
   // ni cambia nada de lo que se carga (se pierde en un {...spread}, y no hace falta después de aplicarAjustesFila).
   const conLineas = (hojas, renglones) => { const ls = renglones.map((x) => Number(x.linea)).filter(Number.isFinite); for (const h of hojas) Object.defineProperty(h, 'desdeLineas', { value: ls, enumerable: false, configurable: true }); return hojas; };
-  const lineasDeLado = (lado, campo = 'M', conOtros = false, firmado = false, subRepetido = false) => {
+  const lineasDeLado = (lado, campo = 'M', conOtros = false, firmado = false, subRepetido = false, finEnBloque = false) => {
     const out = [];
     const delLado = estado.filter((f) => f.lado === lado || (conOtros && f.lado === 'otro' && f.tipo === 'renglon'));
     const grupo = lado === 'gasto' ? notaDeGrupo(delLado, campo) : null;
@@ -344,6 +345,25 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (subRepetido && !esSumaDe(arriba) && !esSumaDe(abajo) && esSumaDe(delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).reverse())) {
           if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) es la suma de las filas de arriba (con su subtotal); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
           continue;
+        }
+        // (to-do 199, patrón C) Y una fila que no es renglón y es la suma de los RENGLONES DE ABAJO DE CUALQUIER LADO, cuando esa suma incluye
+        // una fila del financiero distinta de cero (esSumaDe(abajo) mira solo su lado): un subtotal de ingresos o de gastos que tiene adentro
+        // una fila del financiero. No se cuenta (cada parte está en su lado) y esa fila del financiero toma el signo de su bloque: suma dentro
+        // de los ingresos, resta dentro de los gastos (impresas las dos en positivo). Caso: Avaí 2021 (.md L121-148): "Receitas do Futebol
+        // Profissional" 25.303.151 = ingresos + "Receita Financeira" 27.397; "Custos Futebol Profissional total" 41.707.360 incluye
+        // "Despesas financeiras deságio" 3.995.456; "Despesas Operacionais" 15.142.893 incluye "Despesas Financeiras" 2.690.087.
+        if (finEnBloque && campo === 'M' && (lado === 'ingreso' || lado === 'gasto') && !esSumaDe(arriba) && !esSumaDe(abajo)) {
+          const abajoTodo = estado.slice(estado.indexOf(f) + 1).filter((x) => x.tipo === 'renglon' && x.lado !== 'resultado');
+          let acc = 0; let n = -1; const obj = Math.abs(f.M || 0); const tolS = Math.max(TOL, 0.5 * (f.u || 0));
+          for (let j = 0; j < abajoTodo.length; j++) { acc += Math.abs(abajoTodo[j].M || 0) * (abajoTodo[j].lado === lado || abajoTodo[j].lado === 'financiero' ? Math.sign(abajoTodo[j].M || 0) || 1 : 1); if (j >= 1 && Math.abs(Math.abs(acc) - obj) <= tolS + 0.5 * abajoTodo.slice(0, j + 1).reduce((a, x) => a + (x.u || 0), 0)) { n = j; break; } }
+          const tramo = n >= 0 ? abajoTodo.slice(0, n + 1) : [];
+          const finAdentro = tramo.filter((x) => x.lado === 'financiero' && Math.abs(x.M || 0) > 0);
+          if (finAdentro.length) {
+            for (const x of finAdentro) signoFinBloque.set(x.linea, lado === 'ingreso' ? 1 : -1);
+            const n2 = `escalón "financiero dentro de un subtotal": "${f.etiqueta}" (L${f.linea}) es la suma de los renglones de abajo con ${finAdentro.length} fila(s) del financiero adentro; no se cuenta y esas filas del financiero ${lado === 'ingreso' ? 'suman' : 'restan'}`;
+            if (!notasFinBloque.includes(n2)) notasFinBloque.push(n2);
+            continue;
+          }
         }
         const sigEst = subRepetido ? estado[estado.indexOf(f) + 1] : null;
         if (sigEst && sigEst.lado === lado && sigEst.tipo !== 'resultado' && Math.abs(f[campo] || 0) > 0 && cerca(Math.abs(sigEst[campo] || 0), Math.abs(f[campo] || 0)) && !esSumaDe(arriba) && !esSumaDe(abajo)) {
@@ -649,6 +669,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const ing4r = lineasDeLado('ingreso', 'M', true, true, true); const gas4r = lineasDeLado('gasto', 'M', true, true, true);
   aplicarAjustesFila(ing4, gas4, false, true);
   aplicarAjustesFila(ing4r, gas4r, false, true);
+  // (to-do 199, patrón C) base del escalón "financiero dentro de un subtotal" (el último de la escalera) y el financiero con el signo de su bloque
+  const ing4c = lineasDeLado('ingreso', 'M', true, true, true, true); const gas4c = lineasDeLado('gasto', 'M', true, true, true, true);
+  aplicarAjustesFila(ing4c, gas4c, false, true);
+  const finBloque = signoFinBloque.size ? fin.map((f) => (signoFinBloque.has(f.linea) ? { ...f, M: signoFinBloque.get(f.linea) * Math.abs(f.M), origen: `${f.origen || 'estado'} (signo de su bloque)` } : f)) : null;
   // ESCALÓN "signo del documento" en los ajustes `fila` (to-do 200), después de la lectura 4 (y de su escalón del subtotal repetido) y antes
   // de la 5. La 4 compara el signo de cada ajuste con la MAYORÍA DE LOS AJUSTES de su lado (signoNormalDe): con un solo ajuste en el lado,
   // ese ajuste es la mayoría y nunca resta. Este escalón lo compara con cómo IMPRIME EL ESTADO ese lado (la mayoría de sus renglones): un
@@ -744,7 +768,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       return arr;
     };
     if (nivel >= 5) for (const nm of ['ingresos', 'gastos']) ch.push({ nombre: `total de ${nm}`, ok: null, detalle: 'la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso' });
-    else { ing = ajuste(ing, tI, 'ingresos', F.total_ingresos?.linea); gas = ajuste(gas, tG, 'gastos', F.total_gastos?.linea); }
+    // (to-do 199, patrón C) con filas del financiero adentro de los subtotales, los totales impresos también mezclan lados: como en la lectura 5,
+    // no son compuerta y el resultado tiene que cerrar EXACTO
+    else if (bases?.sinTotales) for (const nm of ['ingresos', 'gastos']) ch.push({ nombre: `total de ${nm}`, ok: null, detalle: 'el total impreso incluye filas del financiero (escalón "subtotal repetido"): la compuerta es el resultado impreso exacto' });
+    else if (!bases?.sinTotales) { ing = ajuste(ing, tI, 'ingresos', F.total_ingresos?.linea); gas = ajuste(gas, tG, 'gastos', F.total_gastos?.linea); }
     // resultado: ingresos - gastos + financiero + impuesto, probando los signos de financiero e impuesto (cada documento los imprime a su manera)
     let objetivo = resFinal; let conImp = true; let nombreRes = 'resultado del ejercicio';
     if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
@@ -758,7 +785,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const COMBOS = [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']];
       const tol5 = Math.max(1e-6, 0.5 * [...ing, ...gas, ...finL].reduce((a, f) => a + (f.u || 0), 0)); // exacto, a media unidad por fila
       const patDe = (sf, si) => suma(ing) - suma(gas) + sf * conSigno(finL) + (conImp ? si * conSigno(imp) : 0);
-      for (const exacto of nivel >= 5 || resCerca ? [true] : [true, false]) {
+      for (const exacto of nivel >= 5 || resCerca || bases?.sinTotales ? [true] : [true, false]) {
         for (const [sf, si, nm] of COMBOS) {
           if (!conImp && si === -1) continue;
           const pat = patDe(sf, si);
@@ -950,7 +977,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // Sampdoria 2018 (abiertos por el reintento pago). No toca Atalanta 2024 ni Parma 2023: su estado ya viene desglosado (ningún renglón
   // llega al 20%) o su nota no suma el subtotal.
   let escalonGrande = false;
-  if (E && E.cierra && E.nivel <= 4 && !ladosCero.has('ingreso')) {
+  if (E && E.cierra && E.nivel <= 4 && !escalonFinBloque && !ladosCero.has('ingreso')) {
     const totIng = E.ing.reduce((a, f) => a + Math.abs(f.M || 0), 0);
     const grande = totIng ? E.ing.find((f) => String(f.origen || '').startsWith('estado') && Math.abs(f.M || 0) >= 0.2 * totIng) : null;
     if (grande) {
@@ -967,12 +994,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
     }
   }
+  // ESCALÓN "FINANCIERO DENTRO DE UN SUBTOTAL" (to-do 199, patrón C; el último: solo si ninguna lectura ni ningún escalón cerró). Un subtotal de
+  // ingresos o de gastos que es la suma de los renglones de abajo con una fila del financiero adentro no se cuenta (cada parte está en su
+  // lado), esa fila del financiero toma el signo de su bloque, y como los totales impresos mezclan lados, la compuerta es el resultado impreso
+  // EXACTO (como en la lectura 5). Caso: Avaí 2021 sin sus ajustes a mano: cierra exacto con lo mismo que dejaron los ajustes. Más arriba en
+  // la escalera (dentro del "subtotal repetido") le ganaba a la lectura 5 en Ferroviária 2012 y le cambiaba el signo del financiero.
+  if (!E && finBloque) { const ec = evaluar(4, false, finBloque, { ing: ing4c, gas: gas4c, sinTotales: true }); if (ec.cierra && ec.exacto) { E = ec; escalonFinBloque = true; } }
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
   if (resCerca) notas.push(`resultado impreso fuera de los bloques (escalón 2): "${resCerca.texto}" (L${resCerca.linea}); ${E.okRes ? 'cierra exacto' : 'no cierra exacto: no se usa para confirmar'}`);
   if (escalonSubRep) notas.push(...notasSubRep, 'escalón "subtotal repetido": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba');
   if (escalonD) fin.splice(0, fin.length, ...finD);
+  if (escalonFinBloque) { fin.splice(0, fin.length, ...finBloque); notas.push(...notasFinBloque, 'escalón "financiero dentro de un subtotal": cerró el resultado exacto (los totales impresos mezclan lados)'); }
   if ((escalon17 || escalonD) && nota17bis) notas.push(nota17bis);
   if (escalon17 && nota17D) notas.push(nota17D);
   if (escalon17) { fin.splice(0, fin.length, ...fin17); notas.push(`escalón "17) resta": el financiero con el 17) restando da el total de C impreso; cerró la lectura ${E.nivel}`); }

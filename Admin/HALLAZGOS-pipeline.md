@@ -51,3 +51,4 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - 2026-10-09 (Versión 640, `--solo`): medir un cambio de `lote.mjs` solo con el ENSAYO no alcanza: las líneas que tocan el registro después de pagar (resolver, re-transcribir, etapa 7) corren solo con `--ejecutar`. El comentario agregado en esas 3 líneas se tragó `registro = leerRegistro()` y el ensayo de `prueba-completa` dio idéntico; se vio leyendo el diff. Para un cambio en esos caminos: leer el diff línea por línea y, si se puede, simular con `--ejecutar` sobre una copia.
 - 2026-10-10, to-do 199 patrón C (subtotal que suma renglones de cualquier lado, Avaí 2021): no entró. Solo no cierra Avaí (falta el signo
   del financiero según su bloque) y cambia Ferroviária 2012 (agrega una fila "Sócio torcedor" en 0). Medido en las 306 verificaciones.
+  (Resuelto después como último escalón de la escalera: ver CHANGELOG, Versión 669.)

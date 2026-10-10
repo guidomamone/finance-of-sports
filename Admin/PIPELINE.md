@@ -257,6 +257,10 @@ Mitigaciones:
             Versión 623 (to-do 188, peldaño B): si la extracción dejó filas de la D en el financiero, la compuerta de C mira solo las filas de C,
             y en la D una fila que cuelga de un 19) resta y una de un 18) suma; compuerta: el total de D impreso, exacto (casos Bologna 2023-24
             y 2024-25, "19) svalutazioni, a) di partecipazioni"). Medido en los 242: idéntico.
+ ESCALÓN    "financiero dentro de un subtotal" (to-do 199, patrón C), el ÚLTIMO: solo si ninguna lectura ni escalón cerró. Un subtotal de
+            ingresos o gastos que es la suma de los renglones de abajo con una fila del financiero adentro no se cuenta; esa fila toma el
+            signo de su bloque (suma en ingresos, resta en gastos); compuerta: resultado impreso exacto (los totales mezclan lados). Caso
+            Avaí 2021. Más arriba en la escalera le ganaba a la lectura 5 (Ferroviária 2012).
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la

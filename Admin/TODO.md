@@ -91,13 +91,6 @@ ni en el comentario de ningún archivo de código.
 
 
 
-199. SUBTOTAL QUE INCLUYE FILAS DEL FINANCIERO (conocido, sin daño hoy). Patrones A y B resueltos. El C (Avaí 2021: "Receitas do Futebol
-    Profesional" 25.303.151 = ingresos + "Receita Financeira" 27.397; en gastos, "Despesas financeiras" dentro de los costos) necesita dos
-    escalones: no contar el subtotal que suma renglones de cualquier lado, y además el signo del financiero según el bloque que lo contiene
-    (suma dentro de ingresos, resta dentro de gastos); con el primero solo el resultado no cierra (55 mil = 2 × 27.397). Medido el primero:
-    cambia Ferroviária 2012 (una fila "Sócio torcedor" en 0 que pasaría a cargarse). Un solo caso y ya cargado a mano: no se hace. Remo 2020
-    sigue en la cola sin sus ajustes (subtotales de gastos). Si aparecen más casos como Avaí, rediseñar con los dos escalones juntos.
-
 207. ESCALA: REMEDIR "OTROS NEGOCIOS DEL CLUB" (revisión de la skill `escala-finance-of-sports`, sección I). La señal para evaluar un eje
     separado de otros negocios del club era "~300 clubes cargados" y la proporción (~10 %) se midió con 161 clubes; hoy hay más (ver
     `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill

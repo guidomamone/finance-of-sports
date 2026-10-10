@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
+
+- Último escalón de la escalera: un subtotal que suma renglones de su lado y una fila del financiero no se cuenta, el financiero toma el
+  signo de su bloque y la compuerta es el resultado exacto. Avaí 2021 sin sus ajustes cierra exacto con lo mismo que dejaron los ajustes.
+  306 verificaciones idénticas (puesto antes de la lectura 5 cambiaba Ferroviária 2012 y Avaí con ajustes: por eso va último).
+
 ## Versión 668 — Resumen de altas: un club ya dado de alta cuenta como "existe" (2026-10-10)
 
 - `altas-registro.mjs` (`resumenAltas`, lo que imprime `pipeline.mjs`): si `data/<id>-data.js` existe, el club cuenta como "existe" aunque
