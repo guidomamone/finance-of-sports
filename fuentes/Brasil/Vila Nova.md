@@ -49,3 +49,5 @@
 Color de marca: #F00000 — pt.wikipedia ("cores tradicionais são o vermelho e branco"; plantilla de camiseta titular corpo1=F00000; el otro color es blanco, gana el rojo), escudo rojo con faja blanca, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf` (sourceId `vilanova-br-demonstrativo-financeiro-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2015 desde `Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.pdf` (sourceId `vilanova-br-balanco-patrimonial-2015`).

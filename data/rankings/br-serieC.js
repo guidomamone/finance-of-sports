@@ -3,12 +3,13 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série C (BR) — 5 ejercicio(s) con ranking:
+// Brasileirão Série C (BR) — 6 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -63,6 +64,14 @@ window.RANKINGS["br-serieC"] = {
       { id:"criciuma-br", revenue:2.661, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2020",
         mix:[["Cuotas Sociales",0.347],["Comercial / Sponsors",0.096],["Estadio",0.017],["Televisión",0.46],["Venta de Jugadores",1.519],["Otros ingresos",0.221]] },
+    ],
+  },
+  2015: {
+    leagueSize: null,
+    clubs: [
+      { id:"vilanova-br", revenue:1.765, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-balanco-patrimonial-2015",
+        mix:[["Cuotas Sociales",0.128],["Comercial / Sponsors",0.339],["Venta de Jugadores",0.12],["Otras secciones deportivas",0.021],["Fútbol profesional (sin desglosar por la fuente)",0.599],["Otros ingresos",0.558]] },
     ],
   },
 };

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
- "generado": "2026-10-10T00:07:02.297Z",
+ "generado": "2026-10-10T00:39:30.814Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "vilanova-br",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -47,7 +47,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -55,7 +55,7 @@
   "la nota de \"(-) CUSTOS GERAIS\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer ya contestada para el club (fila-ilegible, \"(-) PROVISÕES E CONTIGÊNCIAS\"): aceptar, en demonstrativo-financeiro-2023.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"(-) PROVISÕES E CONTIGÊNCIAS\"): aceptar, en demonstrativo-financeiro-2023.pdf",
   "duda de extraer que no afecta la carga: El bloque b53 no trae título de nota, pero su TOTAL (L919) coincide con L125 en ambos años."
  ],
  "reintentar": null,
