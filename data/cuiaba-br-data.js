@@ -78,6 +78,16 @@ const cuiababrRevenueLinesByYear = {
     { rawLabel:'VENDAS DE MERCADORIAS', normalizedCategory:'sponsorship_commercial', amountNative:1.051917, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
     { rawLabel:'OUTRAS RECEITAS/(DESPESAS)', normalizedCategory:'player_sales', amountNative:20.805324, disclosureLevel:'aggregated' }, // pág. 7, precedente
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Outras Receitas', normalizedCategory:'other_income', amountNative:42.021965, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'Receita com Bilheteria', normalizedCategory:'matchday_competition', amountNative:16.609467, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'Receita com Publicidade/Propaganda', normalizedCategory:'sponsorship_commercial', amountNative:6.336, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'Receitas Cotas de TV', normalizedCategory:'broadcasting', amountNative:74.83541, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
+    { rawLabel:'Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)', normalizedCategory:'other_income', amountNative:28.73, disclosureLevel:'aggregated' }, // pág. 22, Claude 0.8
+    { rawLabel:'(-) Deduções Receitas – b)', normalizedCategory:'other_income', amountNative:-10.599429, disclosureLevel:'aggregated' }, // pág. 22, Jev 0.99
+  ],
 };
 const cuiababrExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-10)
@@ -120,6 +130,13 @@ const cuiababrExpenseLinesByYear = {
     { rawLabel:'DESPESAS COM VENDAS', normalizedCategory:'admin_general_expense', amountNative:-0.231575, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
     { rawLabel:'DESPESAS TRIBUTÁRIAS', normalizedCategory:'admin_general_expense', amountNative:-4.984986, disclosureLevel:'aggregated' }, // pág. 7, Jev 1
     { rawLabel:'DESPESAS TRIBUTÁRIAS (deduções da receita)', normalizedCategory:'admin_general_expense', amountNative:-2.144216, disclosureLevel:'aggregated' }, // pág. 7, precedente
+  ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Custo com Futebol Profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-98.846512, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Vendas', normalizedCategory:'admin_general_expense', amountNative:-0.107449, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Despesas Trabalhistas', normalizedCategory:'admin_general_expense', amountNative:-9.945787, disclosureLevel:'aggregated' }, // pág. 23, precedente
+    { rawLabel:'Despesas Gerais', normalizedCategory:'admin_general_expense', amountNative:-10.945183, disclosureLevel:'aggregated' }, // pág. 23, Jev 1
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.126468, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
   ],
 };
 const cuiababrFiscalYearMeta = {
@@ -170,6 +187,28 @@ const cuiababrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:57.430498, officialTotalExpenses:97.56217, officialPAT:-42.148674,
   },
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): resultado-final = 37.356.016. Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2023-12-31',
+    sourceId:'cuiaba-br-demonstracoes-financeiras-2023-auditadas',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.697486, tax:0.091488,
+    extraRows: [
+      {label:'Despesas financeiras', value:-0.753664},
+      {label:'Receitas financeiras', value:0.056178},
+      {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:0.091488},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Custo com Futebol Profissional', lado:'expense', importe:98.846512, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:157.933413, officialTotalExpenses:119.971399, officialPAT:37.356016,
+  },
 };
 const cuiababrPresupuestoOverlayByYear = {};
 
@@ -205,6 +244,12 @@ Object.assign(sources, {
     title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'cuiaba-br-demonstracoes-financeiras-2023-auditadas': {
+    id:'cuiaba-br-demonstracoes-financeiras-2023-auditadas', clubId:'cuiaba-br',
+    title:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol — demonstracoes-financeiras-2023-auditadas (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

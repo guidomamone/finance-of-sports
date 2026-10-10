@@ -48,3 +48,5 @@ Color de marca: #006030 — pt.wikipedia (plantilla de camiseta titular corpo1=0
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf` (sourceId `cuiaba-br-balanco-financeiro-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf` (sourceId `cuiaba-br-balanco-financeiro-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf` (sourceId `cuiaba-br-demonstracoes-financeiras-2023-auditadas`).

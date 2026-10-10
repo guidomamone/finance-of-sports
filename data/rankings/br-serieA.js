@@ -6,7 +6,7 @@
 // Brasileirão Série A (BR) — 12 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 8 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -145,6 +145,9 @@ window.RANKINGS["br-serieA"] = {
         sourceId:"americamineiro-br-demonstracoes-2023",
         mix:[["Comercial / Sponsors",6.791],["Estadio",0.65],["Televisión",15.058],["Venta de Jugadores",12.896],["Otros ingresos",3.413]],
         incluidos:[["Cuotas Sociales","Otros ingresos",1]] },
+      { id:"cuiaba-br", revenue:32.622, reportType:"official_balance_sheet",
+        sourceId:"cuiaba-br-demonstracoes-financeiras-2023-auditadas",
+        mix:[["Comercial / Sponsors",1.309],["Estadio",3.431],["Televisión",15.458],["Otros ingresos",12.425]] },
       { id:"goias-br", revenue:18.584, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2023",
         mix:[["Cuotas Sociales",0.287],["Comercial / Sponsors",2.627],["Estadio",0.722],["Televisión",9.342],["Premios por competencias",2.226],["Venta de Jugadores",0.943],["Otros ingresos",2.436]] },

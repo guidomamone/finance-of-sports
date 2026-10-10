@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
  "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
- "generado": "2026-10-09T23:58:54.840Z",
+ "generado": "2026-10-10T00:39:52.089Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "cuiaba-br",
  "year": 2023,
  "escala": {
   "valor": "unidades",
@@ -46,6 +46,11 @@
    "detalle": "37.356016 por ajuste manual (37.356.016: Claude 2026-10-09: el estado de resultados (L261-L275) termina en 'Lucro Líquido antes dos impostos' 37.356.016 y no imprime renglón de impuesto a la renta ni resultado neto aparte; el resultado del ejercicio es el mismo 37.356.016 en la DMPL (L302 'Lucro do Exercício') y en el flujo de caja (L321 'Resultado do Exercício'). Cuenta: 157.933.413 - 98.846.512 - 107.449 - 20.890.970 - 126.468 - 753.664 + 56.178 + 91.488 = 37.356.016; impuesto 0 (los tributos del SAF, TEF 5%, están en Despesas Tributárias, nota 30 b).); impuesto deducido -0.091488 (antes de impuestos 37.264528; el documento imprimía 0)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2022 de este documento suma ingresos 123.737941; el sitio tiene 133.342795"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": false,
    "detalle": "ingresos de 2023: 157.933413 en este documento y 168.532842 en balanco-financeiro-2024.pdf (columna del año anterior)"
@@ -54,11 +59,6 @@
    "nombre": "documento del año 2022",
    "ok": false,
    "detalle": "ingresos de 2022: 133.342795 en balanco-financeiro-2022.pdf y 123.737941 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
   }
  ],
  "notas": [
