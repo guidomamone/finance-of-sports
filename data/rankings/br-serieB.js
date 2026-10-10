@@ -3,7 +3,7 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
+// Brasileirão Série B (BR) — 12 ejercicio(s) con ranking:
 //   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -13,6 +13,7 @@
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2011: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -195,6 +196,14 @@ window.RANKINGS["br-serieB"] = {
       { id:"goias-br", revenue:25.474, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2016-2015",
         mix:[["Cuotas Sociales",0.989],["Comercial / Sponsors",0.991],["Estadio",0.519],["Televisión",16.552],["Premios por competencias",0.147],["Venta de Jugadores",7.403],["Otros ingresos",-1.128]] },
+    ],
+  },
+  2015: {
+    leagueSize: null,
+    clubs: [
+      { id:"criciuma-br", revenue:4.799, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-balanco-2015",
+        mix:[["Cuotas Sociales",1.723],["Comercial / Sponsors",0.139],["Televisión",2.248],["Venta de Jugadores",0.689]] },
     ],
   },
   2012: {
