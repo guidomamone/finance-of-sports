@@ -62,3 +62,5 @@ Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2013 desde `Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf` (sourceId `ferroviaria-br-balanco-2013-b`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2014 desde `Clubes/Brasil/Ferroviaria/balanco-2014-b.pdf` (sourceId `ferroviaria-br-balanco-2014-b`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2015 desde `Clubes/Brasil/Ferroviaria/balanco-2015-b.pdf` (sourceId `ferroviaria-br-balanco-2015-b`).
