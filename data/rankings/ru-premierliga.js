@@ -8,7 +8,7 @@
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -72,6 +72,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"krasnodar-ru", revenue:63.972, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2021-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",45.343],["Otros ingresos",18.629]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"kryliasovetovsamara-ru", revenue:20.875, reportType:"official_balance_sheet",
+        sourceId:"kryliasovetovsamara-ru-bfo-2021-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.249],["Otros ingresos",17.626]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },

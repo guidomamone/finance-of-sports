@@ -489,6 +489,9 @@ const clubs = {
   // Dynamo Makhachkala: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. brandColor #0030FF
   // (procedencia en fuentes/Rusia/Dynamo Makhachkala.md; tools/bfo-rusia.mjs).
   'dynamomakhachkala-ru': { id:'dynamomakhachkala-ru', name:'ANO Football Club Dynamo', displayName:'Dynamo Makhachkala', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0030FF' },
+  // Krylia Sovetov Samara: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Krylia Sovetov Samara/bfo-2021-datos.md. brandColor #80C0FE
+  // (procedencia en fuentes/Rusia/Krylia Sovetov Samara.md; tools/bfo-rusia.mjs).
+  'kryliasovetovsamara-ru': { id:'kryliasovetovsamara-ru', name:'AO Professional Football Club Krylia Sovetov', displayName:'Krylia Sovetov Samara', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#80C0FE' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al
