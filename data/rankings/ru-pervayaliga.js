@@ -53,9 +53,9 @@ window.RANKINGS["ru-pervayaliga"] = {
   2021: {
     leagueSize: null,
     clubs: [
-      { id:"orenburg-ru", revenue:12.022, reportType:"official_balance_sheet",
+      { id:"orenburg-ru", revenue:12.785, reportType:"official_balance_sheet",
         sourceId:"orenburg-ru-bfo-2021-datos",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",11.767],["Otros ingresos",0.255]],
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",11.767],["Otros ingresos",1.018]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"akrontolyatti-ru", revenue:4.379, reportType:"official_balance_sheet",
         sourceId:"akrontolyatti-ru-bfo-2021-datos",
