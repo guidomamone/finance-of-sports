@@ -75,7 +75,7 @@ window.CLUB_INDEX = {
   "criciuma-br": {"n":"Criciuma","c":"BR","q":"full","y":14,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"]]},
   "cruzeiro": {"n":"Cruzeiro","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "crystalpalace-gb": {"n":"Crystal Palace","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "cskamoscow-ru": {"n":"CSKA Moscow","c":"RU","q":"full","y":3,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
+  "cskamoscow-ru": {"n":"CSKA Moscow","c":"RU","q":"full","y":4,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "cuiaba-br": {"n":"Cuiaba","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "dender-be": {"n":"Dender EH","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "depcali-co": {"n":"Deportivo Cali","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
