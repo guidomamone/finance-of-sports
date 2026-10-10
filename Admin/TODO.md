@@ -104,10 +104,6 @@ ni en el comentario de ningún archivo de código.
     (Avaí 2021: ingresos 75,9 M contra 25,3 M reales; Remo 2019-2024; Ferroviária; Vila Nova 2015-2017): decenas de ajustes `fila` a mano para sacar
     el subtotal. Ver si verificar.mjs puede detectar "renglón = suma de los siguientes" y proponer sacarlo antes de la cola.
 
-200. AJUSTE `fila` DEL LADO GASTO NO ACEPTA UN RENGLÓN QUE RESTA (mejora de script). verificar.mjs toma el valor absoluto, así que un crédito dentro de un
-    subtotal de gastos (Criciúma 2022 "Outras receitas Operacionais" dentro de custos; Avaí 2021 "Transferência para o Imobilizado") obliga a sacar el
-    subtotal y cargar los componentes. Aceptar el signo impreso en `fila`.
-
 201. EL CHEQUEO DE AÑO VECINO SUMA DE MÁS EN ALGUNOS DOCUMENTOS (optimización: casos falsos en la cola). Remo dre-2024 da 76,58 M de ingresos 2024 (2 × 38,29)
     contra el documento 2025, y Ferroviária 2024 da 114,4 M para la columna 2023 (37,56 M real). Cada uno levanta un caso que hay que contestar a mano.
 

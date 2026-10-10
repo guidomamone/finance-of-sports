@@ -228,6 +228,10 @@ Mitigaciones:
             `fila` también con su signo, relativo a la mayoría de los ajustes de su lado (Versión 493)
  ESCALÓN    si la 4 no cierra: la 4 sin contar el subtotal que repite el renglón INMEDIATO de arriba (mismo importe); si el renglón
             no se abrió, el subtotal ocupa su lugar con su nota; misma compuerta que la 4 (Versión 586, to-do 175; caso Parma 2025)
+ ESCALÓN    si la 4 no cierra: los ajustes `fila` con el signo comparado contra cómo IMPRIME EL ESTADO su lado (la mayoría de sus
+            renglones), no contra la mayoría de los ajustes: un ajuste con el valor tal cual impreso y el signo contrario resta. Misma
+            compuerta que la 4; solo si cambia algún signo (to-do 200; caso Criciúma 2022, "Outras receitas Operacionais" 32.222 dentro de
+            los gastos impresos entre paréntesis)
  LECTURA 5  solo las hojas, con signo (C/D de balancetes); sin totales; compuerta: resultado impreso exacto (Versión 414)
  LECTURA 6  la 5 + los renglones sin lado, según su signo (Versión 434)
  ESCALÓN    si NINGUNA lectura cerró el RESULTADO: la 5 otra vez + los ajustes `fila` del financiero sin `reemplaza` (la 5 solo suma

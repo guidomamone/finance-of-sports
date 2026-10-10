@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 654 — `verificar.mjs`: escalón "signo del documento" para los ajustes `fila` (to-do 200) (2026-10-09)
+
+- Después de la lectura 4: el signo de un ajuste `fila` se compara con cómo imprime el estado su lado; el contrario resta. Medido:
+  prueba-completa + los 5 del 198 + Criciúma 2022 + Avaí 2021, 93 verificaciones idénticas. Simulado en Criciúma 2022 (subtotal afuera y
+  "Outras receitas Operacionais" en gastos con 32.222 tal cual impreso): antes cola (gastos 23.854.847), ahora cierra (23.790.402).
+
 ## Versión 653 — `COMO-CORRE-EL-PROYECTO.html`: los escalones de cada etapa, Rusia y los flags del lote (2026-10-09)
 
 - Sección 03 reescrita (Sonnet): un bloque por etapa con su escalera (cómo se hace hoy, sin historia), camino de error, caja y deuda como

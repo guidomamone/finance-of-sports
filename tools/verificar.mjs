@@ -604,7 +604,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // (Versión 435, cambio G) con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
     // de la ganancia por acción "(0,040)", .md L1160, no es un importe del estado)
     if (v === 0 && (a.reemplaza || a.reemplazaLinea != null)) { if (primera) notas.push(`ajuste manual: sale la fila "${a.reemplaza ?? `L${a.reemplazaLinea}`}" (${a.fecha}, ${a.motivo})`); continue; }
-    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado === 'estado' ? v * signoDelEstado(a.lado) : firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
     if (primera) notas.push(`ajuste manual: fila "${a.etiqueta}" (${a.lado}) ${a.valor}${a.reemplaza ? `, en lugar de "${a.reemplaza}"` : ''}${a.reemplazaLinea != null ? `, en lugar de la fila de L${a.reemplazaLinea}` : ''} (${a.fecha}, ${a.motivo})`);
   } };
   aplicarAjustesFila(ing0, gas0, true);
@@ -617,6 +617,16 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const ing4r = lineasDeLado('ingreso', 'M', true, true, true); const gas4r = lineasDeLado('gasto', 'M', true, true, true);
   aplicarAjustesFila(ing4, gas4, false, true);
   aplicarAjustesFila(ing4r, gas4r, false, true);
+  // ESCALÓN "signo del documento" en los ajustes `fila` (to-do 200), después de la lectura 4 (y de su escalón del subtotal repetido) y antes
+  // de la 5. La 4 compara el signo de cada ajuste con la MAYORÍA DE LOS AJUSTES de su lado (signoNormalDe): con un solo ajuste en el lado,
+  // ese ajuste es la mayoría y nunca resta. Este escalón lo compara con cómo IMPRIME EL ESTADO ese lado (la mayoría de sus renglones): un
+  // ajuste con el valor tal cual impreso y el signo contrario al de su lado resta. Misma compuerta que la 4 (totales impresos y resultado).
+  // Solo se prueba si cambia algún signo. Caso: Criciúma 2022 (.md L241-248), gastos impresos entre paréntesis y "Outras receitas
+  // Operacionais" 32.222 sin paréntesis dentro de CUSTOS E DESPESAS OPERACIONAIS (23.790.402 = 23.822.624 − 32.222).
+  const signoDelEstado = (lado) => (lado === 'gasto' ? (gastosNeg ? -1 : 1) : (() => { const r = estado.filter((f) => f.lado === 'ingreso' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return r.length && r.filter((f) => f.M < 0).length > r.length / 2 ? -1 : 1; })());
+  const ing4e = lineasDeLado('ingreso', 'M', true, true); const gas4e = lineasDeLado('gasto', 'M', true, true);
+  aplicarAjustesFila(ing4e, gas4e, false, 'estado');
+  const cambiaSigno4e = ajustesDe(pdf).some((a) => a.campo === 'fila' && ['ingreso', 'gasto'].includes(a.lado) && parseNumber(a.valor) && signoDelEstado(a.lado) !== signoNormalDe(a.lado));
   const hayRepetido = notasSubRep.length > 0;
   const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo', 'signos impresos (un renglón negativo resta en su lado)', 'solo las hojas con su signo (C/D del balancete), sin subtotales ni totales', 'la 5 más los renglones sin lado según su signo'];
   // LECTURA 5 (Versión 414, escalera aprobada por Guido el 2026-10-02): SOLO LAS HOJAS del estado (renglones), ningún subtotal ni total, cada
@@ -733,12 +743,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   };
   let E = null; let E0 = null;
   let algunaCierraRes = false; let escalonAjFin = false;
-  let escalonSubRep = false;
+  let escalonSubRep = false; let escalonSignoDoc = false;
   for (const n of [0, 1, 2, 3, 4, 5, 6]) {
     const e = evaluar(n); if (!E0) E0 = e; if (e.okRes) algunaCierraRes = true; if (e.cierra) { E = e; break; }
     // (to-do 175, escalón 1) después de la lectura 4 y antes de la 5: la 4 sin los subtotales que repiten el renglón de arriba. Misma
     // compuerta que la 4 (totales impresos y resultado). Solo si la base cambia (hay un subtotal repetido).
     if (n === 4 && hayRepetido) { const er = evaluar(4, false, null, { ing: ing4r, gas: gas4r }); if (er.okRes) algunaCierraRes = true; if (er.cierra) { E = er; escalonSubRep = true; break; } }
+    if (n === 4 && cambiaSigno4e) { const es = evaluar(4, false, null, { ing: ing4e, gas: gas4e }); if (es.okRes) algunaCierraRes = true; if (es.cierra) { E = es; escalonSignoDoc = true; notas.push('escalón "signo del documento": los ajustes `fila` con el signo contrario al de su lado en el estado restan; cerró la lectura 4'); break; } }
   }
   if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
   // ESCALÓN "17) resta" (to-do 155, escalón 2, aprobado por Guido el 2026-10-07). El formato del Codice Civile imprime el renglón 17)
@@ -913,7 +924,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (grande) {
       forzarNotaSub = true; totIngForz = totIng; let ingF; let gasF;
       try {
-        if (E.nivel >= 4) { ingF = lineasDeLado('ingreso', 'M', true, true, escalonSubRep); gasF = lineasDeLado('gasto', 'M', true, true, escalonSubRep); aplicarAjustesFila(ingF, gasF, false, true); }
+        if (E.nivel >= 4) { ingF = lineasDeLado('ingreso', 'M', true, true, escalonSubRep); gasF = lineasDeLado('gasto', 'M', true, true, escalonSubRep); aplicarAjustesFila(ingF, gasF, false, escalonSignoDoc ? 'estado' : true); }
         else if (E.nivel === 3 && otros.length) { ingF = lineasDeLado('ingreso', 'M', true); gasF = lineasDeLado('gasto', 'M', true); aplicarAjustesFila(ingF, gasF, false); }
         else { ingF = lineasDeLado('ingreso'); gasF = lineasDeLado('gasto'); aplicarAjustesFila(ingF, gasF, false); }
       } finally { forzarNotaSub = false; }
