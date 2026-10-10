@@ -34,6 +34,7 @@
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
@@ -73,7 +74,10 @@ for (const pdf of docs) {
   if (otros.length) { frenados.push({ pdf, motivo: `[${otros[0].etapa}] ${String(otros[0].motivo).slice(0, 140)}${otros.length > 1 ? ` (y ${otros.length - 1} más)` : ''}` }); continue; }
   const carpeta = pdf.split('/').slice(0, 3).join('/') + '/';
   if (!clubes.has(carpeta)) clubes.set(carpeta, []);
-  clubes.get(carpeta).push({ pdf, year: j.year || Number((pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1]) || 0, alta: fr.some((f) => f.etapa === 'club') });
+  // el año: el de la propuesta; en un club nuevo (la propuesta frena antes de saberlo), el que dejó verificar.mjs; si no, el del nombre del
+  // archivo. Antes un archivo sin año en el nombre salía como "0" en el ensayo (AEK_oikonomikes_katastaseis.pdf, que verificar fecha en 2016).
+  const anioVer = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(pdf.replace(/\.pdf$/i, '.md'), '.verificacion.json', { crear: false })), 'utf8')).year || null; } catch { return null; } })();
+  clubes.get(carpeta).push({ pdf, year: j.year || anioVer || Number((pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1]) || 0, alta: fr.some((f) => f.etapa === 'club') });
 }
 
 // 2) Por club: si hace falta alta, ¿se puede? (registro de altas listo + color elegido en la revisión).
