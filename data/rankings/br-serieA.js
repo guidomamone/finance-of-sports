@@ -118,9 +118,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"cuiaba-br", revenue:36.201, reportType:"official_balance_sheet",
         sourceId:"cuiaba-br-balanco-financeiro-2024",
         mix:[["Cuotas Sociales",0.263],["Comercial / Sponsors",5.032],["Estadio",2.112],["Televisión",9.049],["Venta de Jugadores",18.478],["Otras secciones deportivas",0.225],["Otros ingresos",1.042]] },
-      { id:"criciuma-br", revenue:11.28, reportType:"official_balance_sheet",
+      { id:"criciuma-br", revenue:16.306, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-relatorio-de-balanco-2024",
-        mix:[["Cuotas Sociales",3.257],["Comercial / Sponsors",1.816],["Estadio",0.479],["Televisión",4.725],["Venta de Jugadores",0.314],["Otros ingresos",0.688]] },
+        mix:[["Cuotas Sociales",3.257],["Comercial / Sponsors",1.816],["Estadio",0.479],["Televisión",9.752],["Venta de Jugadores",0.314],["Otros ingresos",0.688]] },
     ],
   },
   2023: {
