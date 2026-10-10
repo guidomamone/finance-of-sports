@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 11 ejercicio(s) con ranking:
-//   2025: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 4 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -47,6 +47,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"goias-br", revenue:8.246, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2025",
         mix:[["Comercial / Sponsors",3.622],["Televisión",3.069],["Venta de Jugadores",0.197],["Otros ingresos",1.358]] },
+      { id:"avai-br", revenue:7.969, reportType:"official_balance_sheet",
+        sourceId:"avai-br-demonstracoes-contabeis-2025",
+        mix:[["Cuotas Sociales",1.786],["Comercial / Sponsors",1.882],["Estadio",0.552],["Televisión",2.011],["Premios por competencias",0.002],["Otros ingresos",1.736]] },
       { id:"operarioferroviario-br", revenue:7.181, reportType:"official_balance_sheet",
         sourceId:"operarioferroviario-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",0.896],["Comercial / Sponsors",1.321],["Estadio",0.413],["Televisión",2.55],["Premios por competencias",0.96],["Venta de Jugadores",0.657],["Otras secciones deportivas",0.092],["Otros ingresos",0.293]] },
@@ -143,6 +146,7 @@ window.RANKINGS["br-serieB"] = {
   },
   2021: {
     leagueSize: null,
+    sinDato: ["avai-br"],
     clubs: [
       { id:"goias-br", revenue:8.397, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2021",

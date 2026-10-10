@@ -465,6 +465,9 @@ const clubs = {
   'criciuma-br': { id:'criciuma-br', name:'Criciúma Esporte Clube', displayName:'Criciuma', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   // CRB: alta por tools/alta-club.mjs (2026-10-09) desde Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf. brandColor:null a propósito (procedencia en fuentes/Brasil/CRB.md).
   'crb-br': { id:'crb-br', name:'Clube de Regatas Brasil', displayName:'CRB', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  // Avai: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf. brandColor #0040CF
+  // (procedencia en fuentes/Brasil/Avai.md, club-or-year-onboarding/club-nuevo.md).
+  'avai-br': { id:'avai-br', name:'Avaí Futebol Clube', displayName:'Avai', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0040CF' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

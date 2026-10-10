@@ -44,3 +44,5 @@
 - Último chequeo: 2026-09-22.
 
 Color de marca: #0040CF — pt.wikipedia (Avaí Futebol Clube: "cores o azul e o branco"; plantilla de camiseta corpo1=0040CF), escudo de rayas azul y blanco coincide (azul), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2025 desde `Clubes/Brasil/Avai/demonstracoes-contabeis-2025.pdf` (sourceId `avai-br-demonstracoes-contabeis-2025`).
