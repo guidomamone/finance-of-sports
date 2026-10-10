@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 651 — `cargar.mjs`: sacar una fila vale solo para su documento (to-do 205, cambio 2) (2026-10-09)
+
+- Una respuesta `descartar` (o `corregir --valor no_es_rubro`) de otro documento del club, de la familia o de otros clubes ya no decide:
+  la fila sigue su camino normal. Medido en 146 documentos (6 clubes con `descartar` + prueba-completa): cambian 4, ninguno cambia de
+  carga/frena; Novorizontino 2022, 2023 y 2025 recuperan "Com pessoal", "Convênios", "Material esportivo" y "Fomento do futebol"
+  (como están publicados); Inter 2019-20, 6 filas de nota siguen afuera (no-rubro en vez de "descartada").
+
 ## Versión 650 — `cola.mjs`: `descartar` no se acepta en un caso de categoría (to-do 205, cambio 1) (2026-10-09)
 
 - En un caso `cargar · categoria`, `descartar` sacaba la FILA de la carga (y de los otros años del club con la misma etiqueta), no la

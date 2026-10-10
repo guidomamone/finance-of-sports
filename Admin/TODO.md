@@ -119,11 +119,6 @@ ni en el comentario de ningún archivo de código.
     ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
 
 
-205. RESPONDER "descartar" A UN CASO DE CATEGORÍA SACA LA FILA DE LA CARGA (mejora de script, trampa). En la cola, `descartar` quiere decir "el
-    documento o esa fila no se carga"; en un caso `cargar · categoria` es fácil usarlo creyendo que descarta la PREGUNTA (pasó con Vila Nova 2025
-    "Adesão ao condomínio LFU", corregido a tiempo). Propuesta: en los casos de categoría, `descartar` pide confirmación o se rechaza y se
-    sugiere `aceptar` / `corregir`.
-
 206. CABECERA DE LOS AÑOS DE RUSIA EN data/ (cosmético). Los años escritos por tools/bfo-rusia.mjs llevan el comentario de cargar.mjs ("Filas:
     proponer-carga.mjs (ancla-listas); categorías: <md>.categorias.json"), que no es cierto para ellos (sale del JSON del fisco). `escribir()`
     podría recibir el texto de la cabecera en P.

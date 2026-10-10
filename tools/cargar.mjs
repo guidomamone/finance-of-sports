@@ -496,6 +496,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
+    // SACAR UNA FILA VALE SOLO PARA SU DOCUMENTO (to-do 205, cambio 2). Una respuesta que saca la fila (`descartar`, o `corregir --valor
+    // no_es_rubro`, que la reemplaza desde cola.mjs) decide en el escalón 0 (el caso de ESTE documento) y en ningún otro: si viene de otro
+    // documento del club (escalón 1), de la familia (A) o de otros clubes (B), no decide y la fila sigue su camino normal (precedente, Jev, la
+    // cola). Caso: diez `descartar` de Novorizontino 2020/2021/2024 con nota "obsoleto: año ya cargado" sacaban "Com pessoal" (wages_squad,
+    // −12,08 M en 2022) de 2022, 2023 y 2025; el tie-out frenaba esos años, pero una fila chica o compensada habría pasado.
+    const sacaFila = (x) => x && (x.decision === 'descartar' || (x.decision === 'corregir' && String(x.valor || '').trim() === 'no_es_rubro'));
+    if (resp && caso && caso.pdf !== pdf && sacaFila(resp)) return null;
     if (resp && caso && caso.pdf !== pdf) cerrarResueltoPorClub(pdf, 'cargar', 'categoria', clave, caso);
     if (!resp || !caso) return null;
     const notaDe = () => [viaFamilia, resp.nota].filter(Boolean).join(' · ') || null;
