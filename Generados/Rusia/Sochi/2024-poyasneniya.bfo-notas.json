@@ -1,0 +1,216 @@
+{
+ "nota": "Clubes/Rusia/Sochi/2024-poyasneniya.md",
+ "generado": "2026-10-10T02:25:17.125Z",
+ "tablas": [
+  {
+   "tipo": "ingresos_por_tipo",
+   "titulo": "Выручка от продаж, тыс. руб.",
+   "linea_titulo": 366,
+   "total_actual": 3084013,
+   "total_anterior": 2895934,
+   "filas": [
+    {
+     "etiqueta": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+     "linea": 370,
+     "valor_actual": 2844563,
+     "valor_anterior": 2134126,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      2844563,
+      2134126
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи билетов на игры",
+     "linea": 371,
+     "valor_actual": 35961,
+     "valor_anterior": 50176,
+     "categoria": "matchday_competition",
+     "valores": [
+      35961,
+      50176
+     ]
+    },
+    {
+     "etiqueta": "Доходы от продажи прав на трансляцию",
+     "linea": 372,
+     "valor_actual": 187354,
+     "valor_anterior": 700241,
+     "categoria": "broadcasting",
+     "valores": [
+      187354,
+      700241
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи сувенирной продукции",
+     "linea": 373,
+     "valor_actual": 9445,
+     "valor_anterior": 9156,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      9445,
+      9156
+     ]
+    },
+    {
+     "etiqueta": "Прочая реализация",
+     "linea": 374,
+     "valor_actual": 6691,
+     "valor_anterior": 2184,
+     "categoria": "other_income",
+     "valores": [
+      6691,
+      2184
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2024,
+    2023
+   ],
+   "total": [
+    3084013,
+    2895934
+   ],
+   "pasa": {
+    "2023": false,
+    "2024": true
+   },
+   "detalle": {
+    "2023": "filas 2895883 · objetivo 2110 = 2895934 · total impreso 2895934",
+    "2024": "filas 3084014 · objetivo 2110 = 3084013 · total impreso 3084013"
+   }
+  },
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы, тыс. руб.",
+   "linea_titulo": 432,
+   "total_actual": 192752,
+   "total_anterior": 523273,
+   "filas": [
+    {
+     "etiqueta": "Доход от выбытия регистраций игроков (включая доход аренды)",
+     "linea": 435,
+     "valor_actual": 163766,
+     "valor_anterior": 385808,
+     "categoria": "player_sales",
+     "valores": [
+      163766,
+      385808
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 436,
+     "valor_actual": 5781,
+     "valor_anterior": 66523,
+     "categoria": "other_income",
+     "valores": [
+      5781,
+      66523
+     ]
+    },
+    {
+     "etiqueta": "Призовые средства (выплаты РФС, прочих организаций)",
+     "linea": 437,
+     "valor_actual": 12600,
+     "valor_anterior": 60200,
+     "categoria": "competition_bonus",
+     "valores": [
+      12600,
+      60200
+     ]
+    },
+    {
+     "etiqueta": "Прочие доходы",
+     "linea": 438,
+     "valor_actual": 10605,
+     "valor_anterior": 10742,
+     "categoria": "other_income",
+     "valores": [
+      10605,
+      10742
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2024,
+    2023
+   ],
+   "total": [
+    192752,
+    523273
+   ],
+   "pasa": {
+    "2023": true,
+    "2024": true
+   },
+   "detalle": {
+    "2023": "filas 523273 · objetivo 2340 = 523273 · total impreso 523273",
+    "2024": "filas 192752 · objetivo 2340 = 192752 · total impreso 192752"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы, тыс. руб.",
+   "linea_titulo": 447,
+   "total_actual": 145601,
+   "total_anterior": 134902,
+   "filas": [
+    {
+     "etiqueta": "Благотворительная помощь",
+     "linea": 450,
+     "valor_actual": 2474,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      2474,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Резерв по сомнительным долгам",
+     "linea": 451,
+     "valor_actual": 9723,
+     "valor_anterior": 41333,
+     "categoria": "other_expenses",
+     "valores": [
+      9723,
+      41333
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 452,
+     "valor_actual": 133404,
+     "valor_anterior": 93569,
+     "categoria": "other_expenses",
+     "valores": [
+      133404,
+      93569
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2024,
+    2023
+   ],
+   "total": [
+    145601,
+    134902
+   ],
+   "pasa": {
+    "2023": true,
+    "2024": true
+   },
+   "detalle": {
+    "2023": "filas 134902 · objetivo 2350 = 134903 · total impreso 134902",
+    "2024": "filas 145601 · objetivo 2350 = 145601 · total impreso 145601"
+   }
+  }
+ ]
+}

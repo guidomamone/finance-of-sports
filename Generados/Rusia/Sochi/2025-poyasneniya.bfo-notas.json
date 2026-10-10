@@ -1,0 +1,205 @@
+{
+ "nota": "Clubes/Rusia/Sochi/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:25:24.438Z",
+ "tablas": [
+  {
+   "tipo": "ingresos_por_tipo",
+   "titulo": "Выручка (доходы от обычных видов деятельности) в разрезе видов деятельности",
+   "linea_titulo": 488,
+   "total_actual": 2603403,
+   "total_anterior": 3084013,
+   "filas": [
+    {
+     "etiqueta": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+     "linea": 492,
+     "valor_actual": 2341194,
+     "valor_anterior": 2844563,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      2341194,
+      2844563
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи билетов на игры",
+     "linea": 493,
+     "valor_actual": 50092,
+     "valor_anterior": 35961,
+     "categoria": "matchday_competition",
+     "valores": [
+      50092,
+      35961
+     ]
+    },
+    {
+     "etiqueta": "Доходы от продажи прав на трансляцию",
+     "linea": 494,
+     "valor_actual": 197117,
+     "valor_anterior": 187354,
+     "categoria": "broadcasting",
+     "valores": [
+      197117,
+      187354
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи сувенирной продукции",
+     "linea": 495,
+     "valor_actual": 9757,
+     "valor_anterior": 9445,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      9757,
+      9445
+     ]
+    },
+    {
+     "etiqueta": "Прочая реализация",
+     "linea": 496,
+     "valor_actual": 5243,
+     "valor_anterior": 6691,
+     "categoria": "other_income",
+     "valores": [
+      5243,
+      6691
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    2603403,
+    3084013
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 3084014 · objetivo 2110 = 3084013 · total impreso 3084013",
+    "2025": "filas 2603403 · objetivo 2110 = 2603403 · total impreso 2603403"
+   }
+  },
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы",
+   "linea_titulo": 556,
+   "total_actual": 122765,
+   "total_anterior": 192752,
+   "filas": [
+    {
+     "etiqueta": "Призовые выплаты (выплаты РФС, прочих организаций)",
+     "linea": 562,
+     "valor_actual": 49772,
+     "valor_anterior": 12600,
+     "categoria": "competition_bonus",
+     "valores": [
+      49772,
+      12600
+     ]
+    },
+    {
+     "etiqueta": "Доход от выбытия регистраций игроков (включая доход аренды и компенсационные выплаты)",
+     "linea": 563,
+     "valor_actual": 60353,
+     "valor_anterior": 163766,
+     "categoria": "player_sales",
+     "valores": [
+      60353,
+      163766
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 567,
+     "valor_actual": 12640,
+     "valor_anterior": 16386,
+     "categoria": "other_income",
+     "valores": [
+      12640,
+      16386
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    122765,
+    192752
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 192752 · objetivo 2340 = 192752 · total impreso 192752",
+    "2025": "filas 122765 · objetivo 2340 = 122765 · total impreso 122765"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы",
+   "linea_titulo": 571,
+   "total_actual": 681865,
+   "total_anterior": 145601,
+   "filas": [
+    {
+     "etiqueta": "Расходы на развитие молодежного футбола",
+     "linea": 577,
+     "valor_actual": 660250,
+     "valor_anterior": 141162,
+     "categoria": "youth_other_sports_expense",
+     "valores": [
+      660250,
+      141162
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 578,
+     "valor_actual": 12252,
+     "valor_anterior": 0,
+     "categoria": "other_expenses",
+     "valores": [
+      12252,
+      0
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 579,
+     "valor_actual": 9363,
+     "valor_anterior": 4439,
+     "categoria": "other_expenses",
+     "valores": [
+      9363,
+      4439
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    681865,
+    145601
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 145601 · objetivo 2350 = 145601 · total impreso 145601",
+    "2025": "filas 681865 · objetivo 2350 = 681865 · total impreso 681865"
+   }
+  }
+ ]
+}

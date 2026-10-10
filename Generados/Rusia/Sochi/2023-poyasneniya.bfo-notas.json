@@ -1,0 +1,282 @@
+{
+ "nota": "Clubes/Rusia/Sochi/2023-poyasneniya.md",
+ "generado": "2026-10-10T02:25:08.966Z",
+ "tablas": [
+  {
+   "tipo": "ingresos_por_tipo",
+   "titulo": "Выручка от продаж, тыс. руб.",
+   "linea_titulo": 312,
+   "total_actual": 2895934,
+   "total_anterior": 2829903,
+   "filas": [
+    {
+     "etiqueta": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+     "linea": 316,
+     "valor_actual": 2134126,
+     "valor_anterior": 2120139,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      2134126,
+      2120139
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи билетов на игры",
+     "linea": 317,
+     "valor_actual": 50176,
+     "valor_anterior": 61567,
+     "categoria": "matchday_competition",
+     "valores": [
+      50176,
+      61567
+     ]
+    },
+    {
+     "etiqueta": "Доходы от продажи прав на трансляцию",
+     "linea": 318,
+     "valor_actual": 700241,
+     "valor_anterior": 610611,
+     "categoria": "broadcasting",
+     "valores": [
+      700241,
+      610611
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи сувенирной продукции",
+     "linea": 319,
+     "valor_actual": 9156,
+     "valor_anterior": 8316,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      9156,
+      8316
+     ]
+    },
+    {
+     "etiqueta": "Прочая реализация",
+     "linea": 320,
+     "valor_actual": 2184,
+     "valor_anterior": 29270,
+     "categoria": "other_income",
+     "valores": [
+      2184,
+      29270
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2023,
+    2022
+   ],
+   "total": [
+    2895934,
+    2829903
+   ],
+   "pasa": {
+    "2022": true,
+    "2023": false
+   },
+   "detalle": {
+    "2022": "filas 2829903 · objetivo 2110 = 2829903 · total impreso 2829903",
+    "2023": "filas 2895883 · objetivo 2110 = 2895934 · total impreso 2895934"
+   }
+  },
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы, тыс. руб.",
+   "linea_titulo": 380,
+   "total_actual": 523273,
+   "total_anterior": 897920,
+   "filas": [
+    {
+     "etiqueta": "Доход от выбытия регистраций игроков (включая доход аренды)",
+     "linea": 384,
+     "valor_actual": 385808,
+     "valor_anterior": 709070,
+     "categoria": "player_sales",
+     "valores": [
+      385808,
+      709070
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 385,
+     "valor_actual": 66523,
+     "valor_anterior": 80638,
+     "categoria": "other_income",
+     "valores": [
+      66523,
+      80638
+     ]
+    },
+    {
+     "etiqueta": "Расформирование резерва под обесценивание МПЗ",
+     "linea": 386,
+     "valor_actual": null,
+     "valor_anterior": 26241,
+     "categoria": "other_income",
+     "valores": [
+      null,
+      26241
+     ]
+    },
+    {
+     "etiqueta": "Призовые средства (выплаты РФС, прочих организаций)",
+     "linea": 387,
+     "valor_actual": 60200,
+     "valor_anterior": 48458,
+     "categoria": "competition_bonus",
+     "valores": [
+      60200,
+      48458
+     ]
+    },
+    {
+     "etiqueta": "Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование",
+     "linea": 388,
+     "valor_actual": null,
+     "valor_anterior": 13178,
+     "categoria": "youth_football",
+     "valores": [
+      null,
+      13178
+     ]
+    },
+    {
+     "etiqueta": "Прочие доходы",
+     "linea": 389,
+     "valor_actual": 10742,
+     "valor_anterior": 20335,
+     "categoria": "other_income",
+     "valores": [
+      10742,
+      20335
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2023,
+    2022
+   ],
+   "total": [
+    523273,
+    897920
+   ],
+   "pasa": {
+    "2022": true,
+    "2023": true
+   },
+   "detalle": {
+    "2022": "filas 897920 · objetivo 2340 = 897920 · total impreso 897920",
+    "2023": "filas 523273 · objetivo 2340 = 523273 · total impreso 523273"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы, тыс. руб.",
+   "linea_titulo": 396,
+   "total_actual": 134903,
+   "total_anterior": 93793,
+   "filas": [
+    {
+     "etiqueta": "Благотворительная помощь",
+     "linea": 400,
+     "valor_actual": null,
+     "valor_anterior": 46233,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      46233
+     ]
+    },
+    {
+     "etiqueta": "Расходы по целевому финансированию",
+     "linea": 401,
+     "valor_actual": null,
+     "valor_anterior": 13178,
+     "categoria": "youth_other_sports_expense",
+     "valores": [
+      null,
+      13178
+     ]
+    },
+    {
+     "etiqueta": "Солидарные выплаты на подготовку спортсменов",
+     "linea": 402,
+     "valor_actual": null,
+     "valor_anterior": 13042,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      13042
+     ]
+    },
+    {
+     "etiqueta": "Членские взносы",
+     "linea": 403,
+     "valor_actual": null,
+     "valor_anterior": 17500,
+     "categoria": "admin_general_expense",
+     "valores": [
+      null,
+      17500
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 404,
+     "valor_actual": null,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Резерв по сомнительным долгам",
+     "linea": 405,
+     "valor_actual": 41333,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      41333,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 406,
+     "valor_actual": 90538,
+     "valor_anterior": 3840,
+     "categoria": "other_expenses",
+     "valores": [
+      90538,
+      3840
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2023,
+    2022
+   ],
+   "total": [
+    134903,
+    93793
+   ],
+   "pasa": {
+    "2022": true,
+    "2023": false
+   },
+   "detalle": {
+    "2022": "filas 93793 · objetivo 2350 = 93793 · total impreso 93793",
+    "2023": "filas 131871 · objetivo 2350 = 134903 · total impreso 134903"
+   }
+  }
+ ]
+}

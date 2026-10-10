@@ -1,0 +1,113 @@
+{
+ "nota": "Clubes/Rusia/Pari Nizhny Novgorod/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:24:04.670Z",
+ "tablas": [
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы стр.2340",
+   "linea_titulo": 553,
+   "total_actual": 131465,
+   "total_anterior": null,
+   "filas": [
+    {
+     "etiqueta": "поступления по трансферам",
+     "linea": 554,
+     "valor_actual": 6214,
+     "valor_anterior": null,
+     "categoria": "player_sales",
+     "valores": [
+      6214,
+      null
+     ]
+    },
+    {
+     "etiqueta": "призовые от РФС",
+     "linea": 555,
+     "valor_actual": 39958,
+     "valor_anterior": null,
+     "categoria": "competition_bonus",
+     "valores": [
+      39958,
+      null
+     ]
+    },
+    {
+     "etiqueta": "поступления от ФНЛ",
+     "linea": 556,
+     "valor_actual": null,
+     "valor_anterior": null,
+     "categoria": "competition_bonus",
+     "valores": [
+      null,
+      null
+     ]
+    },
+    {
+     "etiqueta": "прочие поступления (бартер, списание просроченной задолженности, услуги за сдачу в аренду и предоставление прочих услуг)",
+     "linea": 557,
+     "valor_actual": 85293,
+     "valor_anterior": null,
+     "categoria": "other_income",
+     "valores": [
+      85293,
+      null
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    131465,
+    null
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 0 · objetivo 2340 = 297629",
+    "2025": "filas 131465 · objetivo 2340 = 131465 · total impreso 131465"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы",
+   "linea_titulo": 519,
+   "total_actual": null,
+   "total_anterior": null,
+   "filas": [
+    {
+     "etiqueta": "На содержание организации (выездные и домашние матчи, перелёт во время УТС, питание и проживание, информационные и консультационные услуги, медицинские услуги, медикаменты, охрана матчей, коммунальные услуги, лицензирование, аудит)",
+     "linea": 521,
+     "valor_actual": 197875,
+     "valor_anterior": 182623,
+     "categoria": "admin_general_expense",
+     "valores": [
+      197875,
+      182623
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    null,
+    null
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 182623 · objetivo 2350 = 136558",
+    "2025": "filas 197875 · objetivo 2350 = 308952"
+   }
+  }
+ ]
+}

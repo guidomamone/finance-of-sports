@@ -1,0 +1,135 @@
+{
+ "nota": "Clubes/Rusia/Krylia Sovetov Samara/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:23:47.231Z",
+ "tablas": [
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы, в т.ч:",
+   "linea_titulo": 469,
+   "total_actual": null,
+   "total_anterior": null,
+   "filas": [
+    {
+     "etiqueta": "Доходы от выбытия игроков",
+     "linea": 470,
+     "valor_actual": 735593,
+     "valor_anterior": 226537,
+     "categoria": "player_sales",
+     "valores": [
+      735593,
+      226537
+     ]
+    },
+    {
+     "etiqueta": "Безвозмездные поступления в рамках договора финансирования уставной деятельности клуба от Фонда Поддержки и развития футбола в Самарской области",
+     "linea": 471,
+     "valor_actual": 535243,
+     "valor_anterior": 1478051,
+     "categoria": "other_income",
+     "valores": [
+      535243,
+      1478051
+     ]
+    },
+    {
+     "etiqueta": "Выплаты УЭФА и РФС",
+     "linea": 472,
+     "valor_actual": 60558,
+     "valor_anterior": 39180,
+     "categoria": "competition_bonus",
+     "valores": [
+      60558,
+      39180
+     ]
+    },
+    {
+     "etiqueta": "Прочие доходы",
+     "linea": 473,
+     "valor_actual": 87103,
+     "valor_anterior": 78903,
+     "categoria": "other_income",
+     "valores": [
+      87103,
+      78903
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    null,
+    null
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 1822671 · objetivo 2340 = 1822170",
+    "2025": "filas 1418497 · objetivo 2340 = 1417999"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы, в т.ч:",
+   "linea_titulo": 503,
+   "total_actual": null,
+   "total_anterior": null,
+   "filas": [
+    {
+     "etiqueta": "Проценты по займам и кредитам",
+     "linea": 504,
+     "valor_actual": 138797,
+     "valor_anterior": 4343,
+     "categoria": "other_expenses",
+     "valores": [
+      138797,
+      4343
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 505,
+     "valor_actual": 60696,
+     "valor_anterior": 21217,
+     "categoria": "other_expenses",
+     "valores": [
+      60696,
+      21217
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 506,
+     "valor_actual": 72699,
+     "valor_anterior": 8576,
+     "categoria": "other_expenses",
+     "valores": [
+      72699,
+      8576
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    null,
+    null
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 34136 · objetivo 2350 = 29793",
+    "2025": "filas 272192 · objetivo 2350 = 133395"
+   }
+  }
+ ]
+}

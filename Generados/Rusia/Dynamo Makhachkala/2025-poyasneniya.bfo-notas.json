@@ -1,0 +1,157 @@
+{
+ "nota": "Clubes/Rusia/Dynamo Makhachkala/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:22:59.322Z",
+ "tablas": [
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы",
+   "linea_titulo": 835,
+   "total_actual": 341255,
+   "total_anterior": 69543,
+   "filas": [
+    {
+     "etiqueta": "Трансферные платежи",
+     "linea": 839,
+     "valor_actual": 233026,
+     "valor_anterior": 800,
+     "categoria": "player_sales",
+     "valores": [
+      233026,
+      800
+     ]
+    },
+    {
+     "etiqueta": "Призовые ФНЛ, РФС",
+     "linea": 840,
+     "valor_actual": 88080,
+     "valor_anterior": 58079,
+     "categoria": "competition_bonus",
+     "valores": [
+      88080,
+      58079
+     ]
+    },
+    {
+     "etiqueta": "Безвозмездные поступления",
+     "linea": 841,
+     "valor_actual": null,
+     "valor_anterior": null,
+     "categoria": "other_income",
+     "valores": [
+      null,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 842,
+     "valor_actual": 19969,
+     "valor_anterior": 9383,
+     "categoria": "other_income",
+     "valores": [
+      19969,
+      9383
+     ]
+    },
+    {
+     "etiqueta": "Прочее",
+     "linea": 843,
+     "valor_actual": 180,
+     "valor_anterior": 1281,
+     "categoria": "other_income",
+     "valores": [
+      180,
+      1281
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    341255,
+    69543
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 69543 · objetivo 2340 = 69543 · total impreso 69543",
+    "2025": "filas 341255 · objetivo 2340 = 341255 · total impreso 341255"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы",
+   "linea_titulo": 846,
+   "total_actual": -250815,
+   "total_anterior": 15430,
+   "filas": [
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 850,
+     "valor_actual": -8278,
+     "valor_anterior": -12713,
+     "categoria": "other_expenses",
+     "valores": [
+      -8278,
+      -12713
+     ]
+    },
+    {
+     "etiqueta": "Трансферные расходы",
+     "linea": 851,
+     "valor_actual": -220356,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      -220356,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Формирование резерва по сомнительной дебиторской задолженности",
+     "linea": 852,
+     "valor_actual": -20317,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      -20317,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 860,
+     "valor_actual": -1864,
+     "valor_anterior": -2717,
+     "categoria": "other_expenses",
+     "valores": [
+      -1864,
+      -2717
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    -250815,
+    15430
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 15430 · objetivo 2350 = 15430 · total impreso 15430",
+    "2025": "filas 250815 · objetivo 2350 = 250815 · total impreso 250815"
+   }
+  }
+ ]
+}

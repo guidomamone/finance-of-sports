@@ -1,0 +1,605 @@
+{
+ "nota": "Clubes/Rusia/Krasnodar/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:23:21.899Z",
+ "tablas": [
+  {
+   "tipo": "ingresos_por_tipo",
+   "titulo": "Структура продаж по видам",
+   "linea_titulo": 1320,
+   "total_actual": 5452857,
+   "total_anterior": 4499909,
+   "filas": [
+    {
+     "etiqueta": "Размещение спонсорской рекламы",
+     "linea": 1324,
+     "valor_actual": 1815143,
+     "valor_anterior": 1905084,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      1815143,
+      1905084
+     ]
+    },
+    {
+     "etiqueta": "Реализация коммерческих прав на трансляцию",
+     "linea": 1325,
+     "valor_actual": 1199719,
+     "valor_anterior": 920893,
+     "categoria": "broadcasting",
+     "valores": [
+      1199719,
+      920893
+     ]
+    },
+    {
+     "etiqueta": "Размещение рекламной продукции",
+     "linea": 1326,
+     "valor_actual": 914103,
+     "valor_anterior": 692181,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      914103,
+      692181
+     ]
+    },
+    {
+     "etiqueta": "Атрибутика",
+     "linea": 1327,
+     "valor_actual": 525112,
+     "valor_anterior": 340684,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      525112,
+      340684
+     ]
+    },
+    {
+     "etiqueta": "Продажа билетов",
+     "linea": 1328,
+     "valor_actual": 519266,
+     "valor_anterior": 311228,
+     "categoria": "matchday_competition",
+     "valores": [
+      519266,
+      311228
+     ]
+    },
+    {
+     "etiqueta": "Продажа абонементов",
+     "linea": 1329,
+     "valor_actual": 419637,
+     "valor_anterior": 254062,
+     "categoria": "season_tickets",
+     "valores": [
+      419637,
+      254062
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 1330,
+     "valor_actual": 59877,
+     "valor_anterior": 75777,
+     "categoria": "other_income",
+     "valores": [
+      59877,
+      75777
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    5452857,
+    4499909
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 4499909 · objetivo 2110 = 4499909 · total impreso 4499909",
+    "2025": "filas 5452857 · objetivo 2110 = 5452857 · total impreso 5452857"
+   }
+  },
+  {
+   "tipo": "gastos_por_elemento",
+   "titulo": "Структура расходов по обычным видам деятельности",
+   "linea_titulo": 1335,
+   "total_actual": 6834466,
+   "total_anterior": 5729471,
+   "filas": [
+    {
+     "etiqueta": "Материальные затраты",
+     "linea": 1339,
+     "valor_actual": 487343,
+     "valor_anterior": 341694,
+     "categoria": "admin_general_expense",
+     "valores": [
+      487343,
+      341694
+     ]
+    },
+    {
+     "etiqueta": "Расходы, связанные с основным видом деятельности (в том числе расходы по организации тренировочного процесса, подготовке к соревнованиям)",
+     "linea": 1340,
+     "valor_actual": 1245217,
+     "valor_anterior": 972149,
+     "categoria": "match_organisation_expense",
+     "valores": [
+      1245217,
+      972149
+     ]
+    },
+    {
+     "etiqueta": "Расходы на оплату труда",
+     "linea": 1341,
+     "valor_actual": 4599209,
+     "valor_anterior": 3961420,
+     "categoria": "wages_squad",
+     "valores": [
+      4599209,
+      3961420
+     ]
+    },
+    {
+     "etiqueta": "Отчисления на социальные нужды",
+     "linea": 1342,
+     "valor_actual": 413407,
+     "valor_anterior": 362808,
+     "categoria": "wages_squad",
+     "valores": [
+      413407,
+      362808
+     ]
+    },
+    {
+     "etiqueta": "Амортизация",
+     "linea": 1343,
+     "valor_actual": 89290,
+     "valor_anterior": 91400,
+     "categoria": "depreciation",
+     "valores": [
+      89290,
+      91400
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    6834466,
+    5729471
+   ],
+   "pasa": {
+    "2024": true,
+    "2025": true
+   },
+   "detalle": {
+    "2024": "filas 5729471 · objetivo 2120+2210+2220 = 5729471 · total impreso 5729471",
+    "2025": "filas 6834466 · objetivo 2120+2210+2220 = 6834466 · total impreso 6834466"
+   }
+  },
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы",
+   "linea_titulo": 1360,
+   "total_actual": 7075680,
+   "total_anterior": 8509808,
+   "filas": [
+    {
+     "etiqueta": "Проценты к получению",
+     "linea": 1364,
+     "valor_actual": 108155,
+     "valor_anterior": 29027,
+     "categoria": "other_income",
+     "valores": [
+      108155,
+      29027
+     ]
+    },
+    {
+     "etiqueta": "Дивиденды по ценным бумагам",
+     "linea": 1365,
+     "valor_actual": 1185951,
+     "valor_anterior": 1294480,
+     "categoria": "other_income",
+     "valores": [
+      1185951,
+      1294480
+     ]
+    },
+    {
+     "etiqueta": "доходы от реализации ценных бумаг",
+     "linea": 1366,
+     "valor_actual": 279350,
+     "valor_anterior": 5885,
+     "categoria": "other_income",
+     "valores": [
+      279350,
+      5885
+     ]
+    },
+    {
+     "etiqueta": "Положительные курсовые разницы и доходы, связанные с продажей валюты",
+     "linea": 1367,
+     "valor_actual": 1435418,
+     "valor_anterior": 1938230,
+     "categoria": "other_income",
+     "valores": [
+      1435418,
+      1938230
+     ]
+    },
+    {
+     "etiqueta": "Доходы по трансферной деятельности, солидарные выплаты",
+     "linea": 1368,
+     "valor_actual": 1481220,
+     "valor_anterior": 2531065,
+     "categoria": "player_sales",
+     "valores": [
+      1481220,
+      2531065
+     ]
+    },
+    {
+     "etiqueta": "Дооценка ценных бумаг",
+     "linea": 1369,
+     "valor_actual": 2240234,
+     "valor_anterior": 2390795,
+     "categoria": "other_income",
+     "valores": [
+      2240234,
+      2390795
+     ]
+    },
+    {
+     "etiqueta": "Бонусы за участие в Лиге Европы, Лиге Чемпионов, РФС, РПЛ, ФНЛ",
+     "linea": 1370,
+     "valor_actual": 136529,
+     "valor_anterior": 92115,
+     "categoria": "competition_bonus",
+     "valores": [
+      136529,
+      92115
+     ]
+    },
+    {
+     "etiqueta": "Бонус по договору купли - продажи",
+     "linea": 1371,
+     "valor_actual": 83334,
+     "valor_anterior": null,
+     "categoria": "player_sales",
+     "valores": [
+      83334,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Реализация и ликвидация внеоборотных активов",
+     "linea": 1372,
+     "valor_actual": 157,
+     "valor_anterior": 434,
+     "categoria": "other_income",
+     "valores": [
+      157,
+      434
+     ]
+    },
+    {
+     "etiqueta": "Восстановление оценочных обязательств по предстоящим отпускам",
+     "linea": 1373,
+     "valor_actual": 14062,
+     "valor_anterior": 1791,
+     "categoria": "other_income",
+     "valores": [
+      14062,
+      1791
+     ]
+    },
+    {
+     "etiqueta": "Компенсация за расторжение трудового контракта",
+     "linea": 1374,
+     "valor_actual": 7413,
+     "valor_anterior": 110169,
+     "categoria": "player_sales",
+     "valores": [
+      7413,
+      110169
+     ]
+    },
+    {
+     "etiqueta": "Штрафы, неустойки по хоз.договорам",
+     "linea": 1375,
+     "valor_actual": 7324,
+     "valor_anterior": 86518,
+     "categoria": "other_income",
+     "valores": [
+      7324,
+      86518
+     ]
+    },
+    {
+     "etiqueta": "Признанные доходы по целевому финансированию (РФС)",
+     "linea": 1376,
+     "valor_actual": 14761,
+     "valor_anterior": 11373,
+     "categoria": "other_income",
+     "valores": [
+      14761,
+      11373
+     ]
+    },
+    {
+     "etiqueta": "Компенсация за обучение (РФС)",
+     "linea": 1377,
+     "valor_actual": 7351,
+     "valor_anterior": null,
+     "categoria": "player_sales",
+     "valores": [
+      7351,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Исправление ошибок прошлых лет",
+     "linea": 1378,
+     "valor_actual": 16722,
+     "valor_anterior": 3791,
+     "categoria": "other_income",
+     "valores": [
+      16722,
+      3791
+     ]
+    },
+    {
+     "etiqueta": "Уменьшение стоимости агентского вознаграждения согласно условиям контракта, списание солидарных расходов в связи с истечением сроков для их оплаты",
+     "linea": 1379,
+     "valor_actual": 56864,
+     "valor_anterior": 10082,
+     "categoria": "other_income",
+     "valores": [
+      56864,
+      10082
+     ]
+    },
+    {
+     "etiqueta": "прочие",
+     "linea": 1380,
+     "valor_actual": 835,
+     "valor_anterior": 4053,
+     "categoria": "other_income",
+     "valores": [
+      835,
+      4053
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    7075680,
+    8509808
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 8509808 · objetivo 2340 = 7186301 · total impreso 8509808",
+    "2025": "filas 7075680 · objetivo 2340 = 5781574 · total impreso 7075680"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы",
+   "linea_titulo": 1385,
+   "total_actual": 5232354,
+   "total_anterior": 7374628,
+   "filas": [
+    {
+     "etiqueta": "Процентные расходы",
+     "linea": 1389,
+     "valor_actual": 45238,
+     "valor_anterior": 43917,
+     "categoria": "other_expenses",
+     "valores": [
+      45238,
+      43917
+     ]
+    },
+    {
+     "etiqueta": "Расходы по трансферам с учетом компенсаций и солидарных взносов",
+     "linea": 1390,
+     "valor_actual": 1463078,
+     "valor_anterior": 1955289,
+     "categoria": "player_amortisation",
+     "valores": [
+      1463078,
+      1955289
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы по расчетам, и расходы, связанные с продажей (покупкой) валюты",
+     "linea": 1391,
+     "valor_actual": 1719223,
+     "valor_anterior": 1806751,
+     "categoria": "other_expenses",
+     "valores": [
+      1719223,
+      1806751
+     ]
+    },
+    {
+     "etiqueta": "Штрафы, неустойки по хозяйственным договорам",
+     "linea": 1392,
+     "valor_actual": 845,
+     "valor_anterior": 75095,
+     "categoria": "other_expenses",
+     "valores": [
+      845,
+      75095
+     ]
+    },
+    {
+     "etiqueta": "Банковские услуги",
+     "linea": 1393,
+     "valor_actual": 5207,
+     "valor_anterior": 5597,
+     "categoria": "other_expenses",
+     "valores": [
+      5207,
+      5597
+     ]
+    },
+    {
+     "etiqueta": "Расходы по реализации ценных бумаг",
+     "linea": 1394,
+     "valor_actual": 275341,
+     "valor_anterior": 5817,
+     "categoria": "other_expenses",
+     "valores": [
+      275341,
+      5817
+     ]
+    },
+    {
+     "etiqueta": "Комиссия брокера",
+     "linea": 1395,
+     "valor_actual": 992,
+     "valor_anterior": 411,
+     "categoria": "other_expenses",
+     "valores": [
+      992,
+      411
+     ]
+    },
+    {
+     "etiqueta": "Дооценка финансовых вложений (ценных бумаг)",
+     "linea": 1396,
+     "valor_actual": 1261386,
+     "valor_anterior": 2506172,
+     "categoria": "other_expenses",
+     "valores": [
+      1261386,
+      2506172
+     ]
+    },
+    {
+     "etiqueta": "Формирование резерва по сомнительным долгам",
+     "linea": 1397,
+     "valor_actual": 3052,
+     "valor_anterior": 50,
+     "categoria": "other_expenses",
+     "valores": [
+      3052,
+      50
+     ]
+    },
+    {
+     "etiqueta": "Агентские услуги",
+     "linea": 1398,
+     "valor_actual": 434824,
+     "valor_anterior": 797218,
+     "categoria": "player_amortisation",
+     "valores": [
+      434824,
+      797218
+     ]
+    },
+    {
+     "etiqueta": "Налог на прибыль с полученных дивидендов",
+     "linea": 1399,
+     "valor_actual": null,
+     "valor_anterior": 167975,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      167975
+     ]
+    },
+    {
+     "etiqueta": "Исправление ошибок прошлого периода",
+     "linea": 1400,
+     "valor_actual": 416,
+     "valor_anterior": 5841,
+     "categoria": "other_expenses",
+     "valores": [
+      416,
+      5841
+     ]
+    },
+    {
+     "etiqueta": "Списание брака, морально устаревших МПЗ",
+     "linea": 1401,
+     "valor_actual": 8480,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      8480,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Комиссия по трансферной выплате за перевод средств",
+     "linea": 1402,
+     "valor_actual": 8570,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      8570,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Реализация и ликвидация внеоборотных активов",
+     "linea": 1403,
+     "valor_actual": 157,
+     "valor_anterior": 247,
+     "categoria": "other_expenses",
+     "valores": [
+      157,
+      247
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 1404,
+     "valor_actual": 5545,
+     "valor_anterior": 4248,
+     "categoria": "other_expenses",
+     "valores": [
+      5545,
+      4248
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    5232354,
+    7374628
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 7374628 · objetivo 2350 = 7330711 · total impreso 7374628",
+    "2025": "filas 5232354 · objetivo 2350 = 5187116 · total impreso 5232354"
+   }
+  }
+ ]
+}

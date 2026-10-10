@@ -1,0 +1,293 @@
+{
+ "nota": "Clubes/Rusia/Sochi/2022-poyasneniya.md",
+ "generado": "2026-10-10T02:24:58.588Z",
+ "tablas": [
+  {
+   "tipo": "ingresos_por_tipo",
+   "titulo": "Выручка от продаж, тыс. руб.",
+   "linea_titulo": 329,
+   "total_actual": 2829903,
+   "total_anterior": 2090345,
+   "filas": [
+    {
+     "etiqueta": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+     "linea": 333,
+     "valor_actual": 2120139,
+     "valor_anterior": 1847808,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      2120139,
+      1847808
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи билетов на игры",
+     "linea": 334,
+     "valor_actual": 61567,
+     "valor_anterior": 59968,
+     "categoria": "matchday_competition",
+     "valores": [
+      61567,
+      59968
+     ]
+    },
+    {
+     "etiqueta": "Доходы от продажи прав на трансляцию",
+     "linea": 335,
+     "valor_actual": 610611,
+     "valor_anterior": 154672,
+     "categoria": "broadcasting",
+     "valores": [
+      610611,
+      154672
+     ]
+    },
+    {
+     "etiqueta": "Выручка от продажи сувенирной продукции",
+     "linea": 336,
+     "valor_actual": 8316,
+     "valor_anterior": 5202,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      8316,
+      5202
+     ]
+    },
+    {
+     "etiqueta": "Прочая реализация",
+     "linea": 337,
+     "valor_actual": 29270,
+     "valor_anterior": 22695,
+     "categoria": "other_income",
+     "valores": [
+      29270,
+      22695
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2022,
+    2021
+   ],
+   "total": [
+    2829903,
+    2090345
+   ],
+   "pasa": {
+    "2021": true,
+    "2022": true
+   },
+   "detalle": {
+    "2021": "filas 2090345 · objetivo 2110 = 2090345 · total impreso 2090345",
+    "2022": "filas 2829903 · objetivo 2110 = 2829903 · total impreso 2829903"
+   }
+  },
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы, тыс. руб.",
+   "linea_titulo": 395,
+   "total_actual": 897920,
+   "total_anterior": 201594,
+   "filas": [
+    {
+     "etiqueta": "Доход от выбытия регистраций игроков (включая доход от аренды)",
+     "linea": 399,
+     "valor_actual": 709070,
+     "valor_anterior": 32660,
+     "categoria": "player_sales",
+     "valores": [
+      709070,
+      32660
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 400,
+     "valor_actual": 80638,
+     "valor_anterior": 6112,
+     "categoria": "other_income",
+     "valores": [
+      80638,
+      6112
+     ]
+    },
+    {
+     "etiqueta": "Расформирование резерва под обесценение МПЗ",
+     "linea": 401,
+     "valor_actual": 26241,
+     "valor_anterior": null,
+     "categoria": "other_income",
+     "valores": [
+      26241,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Призовые средства (выплаты РФС, прочих организаций)",
+     "linea": 402,
+     "valor_actual": 48458,
+     "valor_anterior": 66385,
+     "categoria": "competition_bonus",
+     "valores": [
+      48458,
+      66385
+     ]
+    },
+    {
+     "etiqueta": "Доходы от выбытия ЦБ",
+     "linea": 403,
+     "valor_actual": null,
+     "valor_anterior": 50808,
+     "categoria": "other_income",
+     "valores": [
+      null,
+      50808
+     ]
+    },
+    {
+     "etiqueta": "Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование",
+     "linea": 404,
+     "valor_actual": 13178,
+     "valor_anterior": 31338,
+     "categoria": "youth_football",
+     "valores": [
+      13178,
+      31338
+     ]
+    },
+    {
+     "etiqueta": "Прочие доходы",
+     "linea": 405,
+     "valor_actual": 20335,
+     "valor_anterior": 14291,
+     "categoria": "other_income",
+     "valores": [
+      20335,
+      14291
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2022,
+    2021
+   ],
+   "total": [
+    897920,
+    201594
+   ],
+   "pasa": {
+    "2021": true,
+    "2022": true
+   },
+   "detalle": {
+    "2021": "filas 201594 · objetivo 2340 = 201594 · total impreso 201594",
+    "2022": "filas 897920 · objetivo 2340 = 897920 · total impreso 897920"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы, тыс. руб.",
+   "linea_titulo": 414,
+   "total_actual": 93793,
+   "total_anterior": 40908,
+   "filas": [
+    {
+     "etiqueta": "Благотворительная помощь",
+     "linea": 418,
+     "valor_actual": 46233,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      46233,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Расходы по целевому финансированию",
+     "linea": 419,
+     "valor_actual": 13178,
+     "valor_anterior": null,
+     "categoria": "youth_other_sports_expense",
+     "valores": [
+      13178,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Солидарные выплаты на подготовку спортсменов",
+     "linea": 423,
+     "valor_actual": 13042,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      13042,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Членские взносы",
+     "linea": 425,
+     "valor_actual": 17500,
+     "valor_anterior": null,
+     "categoria": "admin_general_expense",
+     "valores": [
+      17500,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 426,
+     "valor_actual": null,
+     "valor_anterior": 8306,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      8306
+     ]
+    },
+    {
+     "etiqueta": "Резерв под обесценение МПЗ",
+     "linea": 427,
+     "valor_actual": null,
+     "valor_anterior": 26241,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      26241
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 428,
+     "valor_actual": 3840,
+     "valor_anterior": 6361,
+     "categoria": "other_expenses",
+     "valores": [
+      3840,
+      6361
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2022,
+    2021
+   ],
+   "total": [
+    93793,
+    40908
+   ],
+   "pasa": {
+    "2021": true,
+    "2022": true
+   },
+   "detalle": {
+    "2021": "filas 40908 · objetivo 2350 = 40908 · total impreso 40908",
+    "2022": "filas 93793 · objetivo 2350 = 93793 · total impreso 93793"
+   }
+  }
+ ]
+}

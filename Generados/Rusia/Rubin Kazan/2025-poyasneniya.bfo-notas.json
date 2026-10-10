@@ -1,0 +1,245 @@
+{
+ "nota": "Clubes/Rusia/Rubin Kazan/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:24:42.453Z",
+ "tablas": [
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы (тыс. руб.)",
+   "linea_titulo": 1081,
+   "total_actual": 2880532,
+   "total_anterior": 492864,
+   "filas": [
+    {
+     "etiqueta": "Проценты к получению (депозиты, займы)",
+     "linea": 1085,
+     "valor_actual": 179581,
+     "valor_anterior": 166172,
+     "categoria": "other_income",
+     "valores": [
+      179581,
+      166172
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 1086,
+     "valor_actual": null,
+     "valor_anterior": 177141,
+     "categoria": "other_income",
+     "valores": [
+      null,
+      177141
+     ]
+    },
+    {
+     "etiqueta": "Трансферные поступления",
+     "linea": 1087,
+     "valor_actual": 109803,
+     "valor_anterior": 18952,
+     "categoria": "player_sales",
+     "valores": [
+      109803,
+      18952
+     ]
+    },
+    {
+     "etiqueta": "Восстановление резерва по сомнительным долгам",
+     "linea": 1088,
+     "valor_actual": null,
+     "valor_anterior": 46217,
+     "categoria": "other_income",
+     "valores": [
+      null,
+      46217
+     ]
+    },
+    {
+     "etiqueta": "Бонусы футбольных лиг, участие игроков в сборных",
+     "linea": 1089,
+     "valor_actual": 63500,
+     "valor_anterior": 68709,
+     "categoria": "competition_bonus",
+     "valores": [
+      63500,
+      68709
+     ]
+    },
+    {
+     "etiqueta": "Прочие доходы",
+     "linea": 1090,
+     "valor_actual": 27648,
+     "valor_anterior": 15673,
+     "categoria": "other_income",
+     "valores": [
+      27648,
+      15673
+     ]
+    },
+    {
+     "etiqueta": "Денежные средства от единственного участника по договорам дарения",
+     "linea": 1096,
+     "valor_actual": 2500000,
+     "valor_anterior": null,
+     "categoria": "other_income",
+     "valores": [
+      2500000,
+      null
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    2880532,
+    492864
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 492864 · objetivo 2340 = 1086189 · total impreso 492864",
+    "2025": "filas 2880532 · objetivo 2340 = 2700951 · total impreso 2880532"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы (тыс. руб.)",
+   "linea_titulo": 1102,
+   "total_actual": 567982,
+   "total_anterior": 199294,
+   "filas": [
+    {
+     "etiqueta": "Проценты к уплате по аренде",
+     "linea": 1106,
+     "valor_actual": 2615,
+     "valor_anterior": 6108,
+     "categoria": "other_expenses",
+     "valores": [
+      2615,
+      6108
+     ]
+    },
+    {
+     "etiqueta": "Курсовые разницы",
+     "linea": 1107,
+     "valor_actual": 459673,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      459673,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Компенсация по трансферному контракту, списание НМА в связи с расторжением контракта",
+     "linea": 1108,
+     "valor_actual": null,
+     "valor_anterior": 49617,
+     "categoria": "player_impairment",
+     "valores": [
+      null,
+      49617
+     ]
+    },
+    {
+     "etiqueta": "Солидарные выплаты",
+     "linea": 1109,
+     "valor_actual": 15099,
+     "valor_anterior": 13472,
+     "categoria": "other_expenses",
+     "valores": [
+      15099,
+      13472
+     ]
+    },
+    {
+     "etiqueta": "Резерв сомнительных долгов",
+     "linea": 1110,
+     "valor_actual": 10308,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      10308,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Формирование/восстановление оценочного обязательства по отпускам",
+     "linea": 1111,
+     "valor_actual": null,
+     "valor_anterior": 90287,
+     "categoria": "wages_squad",
+     "valores": [
+      null,
+      90287
+     ]
+    },
+    {
+     "etiqueta": "Прибыль (убыток) прошлых лет",
+     "linea": 1112,
+     "valor_actual": 7537,
+     "valor_anterior": 2917,
+     "categoria": "other_expenses",
+     "valores": [
+      7537,
+      2917
+     ]
+    },
+    {
+     "etiqueta": "Расходы на услуги банков",
+     "linea": 1113,
+     "valor_actual": 7223,
+     "valor_anterior": 1633,
+     "categoria": "admin_general_expense",
+     "valores": [
+      7223,
+      1633
+     ]
+    },
+    {
+     "etiqueta": "Штрафы, пени, неустойки",
+     "linea": 1114,
+     "valor_actual": 1506,
+     "valor_anterior": 17429,
+     "categoria": "other_expenses",
+     "valores": [
+      1506,
+      17429
+     ]
+    },
+    {
+     "etiqueta": "Прочие расходы",
+     "linea": 1115,
+     "valor_actual": 64021,
+     "valor_anterior": 17831,
+     "categoria": "other_expenses",
+     "valores": [
+      64021,
+      17831
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    567982,
+    199294
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 199294 · objetivo 2350 = 952683 · total impreso 199294",
+    "2025": "filas 567982 · objetivo 2350 = 565367 · total impreso 567982"
+   }
+  }
+ ]
+}

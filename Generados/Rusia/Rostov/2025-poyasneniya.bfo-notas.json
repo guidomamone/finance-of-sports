@@ -1,0 +1,333 @@
+{
+ "nota": "Clubes/Rusia/Rostov/2025-poyasneniya.md",
+ "generado": "2026-10-10T02:24:21.540Z",
+ "tablas": [
+  {
+   "tipo": "otros_ingresos",
+   "titulo": "Прочие доходы",
+   "linea_titulo": 1086,
+   "total_actual": 1766881,
+   "total_anterior": 1383685,
+   "filas": [
+    {
+     "etiqueta": "Бюджетное и целевое финансирование",
+     "linea": 1087,
+     "valor_actual": 722135,
+     "valor_anterior": 772288,
+     "categoria": "other_income",
+     "valores": [
+      722135,
+      772288
+     ]
+    },
+    {
+     "etiqueta": "Возмещение затрат на развитие молодежной и детско-юношеских команд",
+     "linea": 1088,
+     "valor_actual": null,
+     "valor_anterior": 457,
+     "categoria": "youth_football",
+     "valores": [
+      null,
+      457
+     ]
+    },
+    {
+     "etiqueta": "Выплаты клубам от участия в Лиге Чемпионов и Лиге Европы УЕФА",
+     "linea": 1089,
+     "valor_actual": 160720,
+     "valor_anterior": 101416,
+     "categoria": "competition_bonus",
+     "valores": [
+      160720,
+      101416
+     ]
+    },
+    {
+     "etiqueta": "Благотворительная помощь",
+     "linea": 1090,
+     "valor_actual": 550,
+     "valor_anterior": 54500,
+     "categoria": "other_income",
+     "valores": [
+      550,
+      54500
+     ]
+    },
+    {
+     "etiqueta": "Право использования товарного знака",
+     "linea": 1091,
+     "valor_actual": 188,
+     "valor_anterior": 500,
+     "categoria": "sponsorship_commercial",
+     "valores": [
+      188,
+      500
+     ]
+    },
+    {
+     "etiqueta": "Реализация прочего имущества (материалов)",
+     "linea": 1092,
+     "valor_actual": 1660,
+     "valor_anterior": 9,
+     "categoria": "other_income",
+     "valores": [
+      1660,
+      9
+     ]
+    },
+    {
+     "etiqueta": "Курсовая разница",
+     "linea": 1093,
+     "valor_actual": 110924,
+     "valor_anterior": 113809,
+     "categoria": "other_income",
+     "valores": [
+      110924,
+      113809
+     ]
+    },
+    {
+     "etiqueta": "Списание кредиторской задолженности по сроку давности",
+     "linea": 1094,
+     "valor_actual": 93021,
+     "valor_anterior": 92090,
+     "categoria": "other_income",
+     "valores": [
+      93021,
+      92090
+     ]
+    },
+    {
+     "etiqueta": "Доходы, связанные с продажей (покупкой) валюты",
+     "linea": 1095,
+     "valor_actual": 24515,
+     "valor_anterior": 180194,
+     "categoria": "other_income",
+     "valores": [
+      24515,
+      180194
+     ]
+    },
+    {
+     "etiqueta": "Проценты к получению (уплате)",
+     "linea": 1096,
+     "valor_actual": 3992,
+     "valor_anterior": 1957,
+     "categoria": "other_income",
+     "valores": [
+      3992,
+      1957
+     ]
+    },
+    {
+     "etiqueta": "Прощение долга (% по займам)",
+     "linea": 1097,
+     "valor_actual": 11124,
+     "valor_anterior": 65059,
+     "categoria": "other_income",
+     "valores": [
+      11124,
+      65059
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 1098,
+     "valor_actual": 352132,
+     "valor_anterior": 1079,
+     "categoria": "other_income",
+     "valores": [
+      352132,
+      1079
+     ]
+    },
+    {
+     "etiqueta": "Компенсация за нарушение контракта",
+     "linea": 1099,
+     "valor_actual": 279774,
+     "valor_anterior": null,
+     "categoria": "other_income",
+     "valores": [
+      279774,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Реализация основных средств",
+     "linea": 1100,
+     "valor_actual": 6146,
+     "valor_anterior": 327,
+     "categoria": "other_income",
+     "valores": [
+      6146,
+      327
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    1766881,
+    1383685
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 1383685 · objetivo 2340 = 1381728 · total impreso 1383685",
+    "2025": "filas 1766881 · objetivo 2340 = 790726 · total impreso 1766881"
+   }
+  },
+  {
+   "tipo": "otros_gastos",
+   "titulo": "Прочие расходы",
+   "linea_titulo": 1160,
+   "total_actual": 219943,
+   "total_anterior": 655971,
+   "filas": [
+    {
+     "etiqueta": "Услуги банка",
+     "linea": 1162,
+     "valor_actual": 3070,
+     "valor_anterior": 4006,
+     "categoria": "other_expenses",
+     "valores": [
+      3070,
+      4006
+     ]
+    },
+    {
+     "etiqueta": "Курсовая разница",
+     "linea": 1163,
+     "valor_actual": 62790,
+     "valor_anterior": 133508,
+     "categoria": "other_expenses",
+     "valores": [
+      62790,
+      133508
+     ]
+    },
+    {
+     "etiqueta": "Отклонения курса продажи (покупки) иностранной валюты от официального курса",
+     "linea": 1164,
+     "valor_actual": null,
+     "valor_anterior": 4778,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      4778
+     ]
+    },
+    {
+     "etiqueta": "Продажа (покупка) иностранной валюты",
+     "linea": 1165,
+     "valor_actual": 1121,
+     "valor_anterior": 184021,
+     "categoria": "other_expenses",
+     "valores": [
+      1121,
+      184021
+     ]
+    },
+    {
+     "etiqueta": "Штрафы, пени и неустойки к получению (оплате)",
+     "linea": 1166,
+     "valor_actual": null,
+     "valor_anterior": 109730,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      109730
+     ]
+    },
+    {
+     "etiqueta": "Штрафы, пени, неустойки РФС, РФПЛ, УЕФА, ИФНС, ПФР, приставы",
+     "linea": 1167,
+     "valor_actual": 7955,
+     "valor_anterior": 48690,
+     "categoria": "other_expenses",
+     "valores": [
+      7955,
+      48690
+     ]
+    },
+    {
+     "etiqueta": "Начисление процентов за пользованием заемными средствами и кредитами",
+     "linea": 1168,
+     "valor_actual": 81176,
+     "valor_anterior": 88417,
+     "categoria": "other_expenses",
+     "valores": [
+      81176,
+      88417
+     ]
+    },
+    {
+     "etiqueta": "Кейтеринг",
+     "linea": 1169,
+     "valor_actual": 33376,
+     "valor_anterior": 60895,
+     "categoria": "match_organisation_expense",
+     "valores": [
+      33376,
+      60895
+     ]
+    },
+    {
+     "etiqueta": "Списание дебиторской задолженности по истечении срока исковой давности",
+     "linea": 1170,
+     "valor_actual": null,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Резервы по сомнительным долгам",
+     "linea": 1171,
+     "valor_actual": 30455,
+     "valor_anterior": null,
+     "categoria": "other_expenses",
+     "valores": [
+      30455,
+      null
+     ]
+    },
+    {
+     "etiqueta": "Прочие",
+     "linea": 1172,
+     "valor_actual": null,
+     "valor_anterior": 21926,
+     "categoria": "other_expenses",
+     "valores": [
+      null,
+      21926
+     ]
+    }
+   ],
+   "origen": "claude",
+   "columnas": [
+    2025,
+    2024
+   ],
+   "total": [
+    219943,
+    655971
+   ],
+   "pasa": {
+    "2024": false,
+    "2025": false
+   },
+   "detalle": {
+    "2024": "filas 655971 · objetivo 2350 = 567554 · total impreso 655971",
+    "2025": "filas 219943 · objetivo 2350 = 116290 · total impreso 219943"
+   }
+  }
+ ]
+}
