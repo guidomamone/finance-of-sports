@@ -12,7 +12,7 @@
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2017: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2017: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2016: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2012: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -218,6 +218,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"goias-br", revenue:17.73, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2017-2016",
         mix:[["Cuotas Sociales",1.262],["Comercial / Sponsors",1.403],["Estadio",0.588],["Televisión",13.918],["Premios por competencias",0.742],["Venta de Jugadores",0.35],["Otros ingresos",-0.534]] },
+      { id:"vilanova-br", revenue:11.473, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-balanco-patrimonial-2017",
+        mix:[["Cuotas Sociales",0.343],["Comercial / Sponsors",1.245],["Televisión",1.797],["Venta de Jugadores",0.032],["Otras secciones deportivas",0.034],["Fútbol profesional (sin desglosar por la fuente)",1.01],["Otros ingresos",7.013]] },
       { id:"criciuma-br", revenue:5.256, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2017",
         mix:[["Cuotas Sociales",1.224],["Comercial / Sponsors",0.819],["Televisión",2.138],["Venta de Jugadores",0.642],["Otros ingresos",0.434]] },

@@ -53,3 +53,5 @@ Color de marca: #F00000 — pt.wikipedia ("cores tradicionais são o vermelho e 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2015 desde `Clubes/Brasil/Vila Nova/balanco-patrimonial-2015.pdf` (sourceId `vilanova-br-balanco-patrimonial-2015`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2016 desde `Clubes/Brasil/Vila Nova/balanco-patrimonial-2016.pdf` (sourceId `vilanova-br-balanco-patrimonial-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2017 desde `Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.pdf` (sourceId `vilanova-br-balanco-patrimonial-2017`).
