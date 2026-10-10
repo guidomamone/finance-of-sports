@@ -70,10 +70,13 @@ ni en el comentario de ningún archivo de código.
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-09). Un país por vez, con el pipeline
     (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/altas-revision.jsonl, que ya tiene nombre, color, perímetro, cierres
     y ligas de los 56 "listo-para-alta" de ese día). `alta-club.mjs --todos` del 2026-10-09: 50 listos, 74 con preguntas, 35 ya en el sitio.
-    HECHO: Brasil completo (8 clubes, 61 años, lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs: 7 clubes, 34 años).
+    HECHO: Brasil completo (8 clubes, 61 años, lotes 56-63) y Rusia desde el fisco (tools/bfo-rusia.mjs: 16 clubes, 76 años; no entran
+    Akhmat 2021, Akron 2021 y Dynamo Makhachkala 2021, con el JSON casi vacío). Escalón 2 sin IA aplicado: costos por elemento de Rostov 2021-2024 y Orenburg 2021-2023.
     FALTA, en este orden:
-    a) Rusia: los 9 clubes restantes (Zenit, Spartak, CSKA, Lokomotiv, Dynamo Moscú, Rubin, Akhmat, Akron, Baltika): la revisión del alta
-       (color, nombre, ligas) la está haciendo un subagente; después `node tools/bfo-rusia.mjs --club <Club> --escribir` (gratis).
+    a) Rusia, clubes ANO (Akhmat, Akron): son organizaciones sin fines de lucro y casi todo su dinero va por el formulario 6 (целевое
+       использование средств: aportes 6200 y gastos de programa 6300), que el formulario 2 no ve (Akron 2024: ingresos 337 M en el 2110 contra
+       1.345 M de aportes en el 6230). Cargados hoy solo con el formulario 2: decidir si se suma el formulario 6 (escalón aparte, con su
+       compuerta 6100 + 6200 − 6300 = 6400) o se sacan del sitio hasta tenerlo.
     b) Rusia, escalón 2 (tools/bfo-rusia-notas.mjs): abrir 2110 / 2340 / 2350 y los costos con las tablas de las notas explicativas
        (24 notas, 48 tablas candidatas, ensayo ~US$ 1,60). Falta escribir la llamada, la compuerta (la suma da el código del formulario 2) y la
        reescritura del año en bfo-rusia.mjs. Las tablas estándar "Затраты на производство" (códigos 5610-5660, gastos por elemento: salarios
