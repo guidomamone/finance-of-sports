@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 644 — Documentos de pocos renglones: escalón para la marca de categorizar (to-do 203) (2026-10-09)
+
+- `tools/verificar.mjs` (avisarRegistro): además del escalón de siempre (5 rubros o más → `listo-para-jev`), uno nuevo: menos de 5 rubros pero la etapa 6 cerró contra el resultado impreso → `listo-para-jev`. Medido sobre las 295 verificaciones en ok de Generados/: cambian 4 (Remo dre-2019, dre-2023, dre-2024 y relatorio-auditoria-2020, DRE de una página que quedaban `sin-rubros` para siempre); las otras 291, igual.
+- `tools/lote.mjs`: arreglo de la Versión 640 (el comentario se había tragado `registro = leerRegistro()` en 3 líneas; ver Admin/HALLAZGOS-pipeline.md).
+
 ## Versión 642 — `lote.mjs --cargar` / `tools/cargar-lote.mjs`: lo que queda "listo para cargar" se escribe solo (2026-10-09)
 
 - Nueva `tools/cargar-lote.mjs --lista <lista> [--escribir]`: por documento, el ensayo de `cargar.mjs`; los que no frenan (o frenan solo por el club) se escriben con `cargar.mjs --escribir` y un commit por año; club nuevo: `alta-club.mjs --escribir` + color de `Admin/altas-revision.jsonl`, en el commit del primer año, y se revierte si ningún año escribe. `lote.mjs --cargar` la corre al final (suelta su candado antes: `soltarCandado()` en `tools/candado.mjs`).

@@ -1248,7 +1248,15 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   // ('numero-no-confirmado', "no se pudo confirmar contra el PDF").
   const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && entraEnLaCarga(n) && !porSumas(n) && !n.sinSegunda && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
   if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
-  const jev = nRubros >= 5 ? 'listo-para-jev' : 'sin-rubros';
+  // ESCALERA DE LA MARCA (Versión 644, to-do 203, ok de Guido el 2026-10-09: "como escalón, no manta corta").
+  //   escalón 1 (el de siempre): 5 rubros o más -> listo-para-jev.
+  //   escalón 2 (nuevo): menos de 5 rubros, pero la etapa 6 cerró CONTRA EL RESULTADO IMPRESO (el chequeo "resultado del ejercicio" en ok, no
+  //     uno forzado por ajuste) -> listo-para-jev. Un documento de pocos renglones cuya suma da exacto el resultado que imprime no es una
+  //     extracción a medias: es un DRE de una página. Caso: Remo dre-2019, 2 renglones (ingresos 17.903.353 y gastos 20.686.217) + el
+  //     financiero, y cierra con el déficit impreso de 3.008.290; quedaba `sin-rubros` y cargar.mjs frenaba para siempre.
+  //   si no -> sin-rubros (como antes).
+  const cerroContraImpreso = !!(out?.chequeos || []).find((c) => c.nombre === 'resultado del ejercicio' && c.ok === true);
+  const jev = nRubros >= 5 || (nRubros >= 1 && cerroContraImpreso) ? 'listo-para-jev' : 'sin-rubros';
   appendFileSync(histPath, JSON.stringify({ ...prev, ts: new Date().toISOString(), md, mdSha1: sha, status: 'listo', method: 'validar-bloques (proceso nuevo)',
     detail: `validar-bloques: solo los bloques que se cargan (${v.confirmados ?? '?'} números confirmados, modo ${v.modo || '?'}); el resto del .md no se validó`, jev, rubros: nRubros }) + '\n');
   return true;

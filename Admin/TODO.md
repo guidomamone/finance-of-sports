@@ -119,8 +119,3 @@ ni en el comentario de ningún archivo de código.
 202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
     ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
 
-203. LOS DOCUMENTOS DE MENOS DE 5 RENGLONES NUNCA SE CATEGORIZAN (mejora de script, frena carga). `verificar.mjs` (avisarRegistro) marca `sin-rubros` en vez
-    de `listo-para-jev` si el documento tiene menos de 5 rubros, y `cargar.mjs` frena "todavía no se puede categorizar" para siempre. Casos: Remo dre-2019
-    (2 rubros), dre-2023 y dre-2024 (3), relatorio-auditoria-2020 (4): DRE de una página con los ingresos y gastos en 1-2 renglones; sus categorías y
-    los "posiblemente incluido en" ya están fijados a mano. Escalón posible: con la etapa 6 cerrada contra el resultado impreso, un documento de pocos
-    renglones pasa a listo-para-jev.
