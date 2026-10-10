@@ -46,12 +46,6 @@ const parinizhnynovgorodruRevenueLinesByYear = {
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2022: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:647.871, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:195.082, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:876, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:100, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2023: [
@@ -86,16 +80,16 @@ const parinizhnynovgorodruRevenueLinesByYear = {
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:574.553, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:100, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Pari Nizhny Novgorod/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2022: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:647.871, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:195.082, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:876, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:100, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const parinizhnynovgorodruExpenseLinesByYear = {
-  2022: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-237.925, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-140.194, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-179.869, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-754.41, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-105.656, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-2.192, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2023: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-369.708, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-226.598, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -131,28 +125,16 @@ const parinizhnynovgorodruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-5.515, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-0.414, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2022: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-237.925, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-140.194, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-179.869, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-754.41, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-105.656, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-2.192, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const parinizhnynovgorodruFiscalYearMeta = {
-  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2022-12-31',
-    sourceId:'parinizhnynovgorod-ru-bfo-2022-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:0, tax:-76.12,
-    extraRows: [
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-76.12},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:647.871, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:237.925, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:754.41, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:322.587,
-  },
   2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2023-12-31',
     sourceId:'parinizhnynovgorod-ru-bfo-2023-datos',
@@ -235,6 +217,26 @@ const parinizhnynovgorodruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:74.248,
+  },
+  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2022-12-31',
+    sourceId:'parinizhnynovgorod-ru-bfo-2022-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-76.12,
+    extraRows: [
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-76.12},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:647.871, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:237.925, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:754.41, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:322.587,
   },
 };
 const parinizhnynovgorodruPresupuestoOverlayByYear = {};
