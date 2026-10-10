@@ -54,6 +54,12 @@ const dynamomakhachkalaruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:787.097, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:341.255, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Dynamo Makhachkala/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2021: [
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:0.5, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:59.077, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const dynamomakhachkalaruExpenseLinesByYear = {
   2022: [ // tools/cargar.mjs (2026-10-10)
@@ -69,6 +75,12 @@ const dynamomakhachkalaruExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-123.419, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-250.815, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2021: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-0.034, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-5.368, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-43.121, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-13.544, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const dynamomakhachkalaruFiscalYearMeta = {
@@ -150,6 +162,24 @@ const dynamomakhachkalaruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:566.595,
   },
+  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2021-12-31',
+    sourceId:'dynamomakhachkala-ru-bfo-2021-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-0.008,
+    extraRows: [
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-0.008},
+    ],
+    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:5.368, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-2.497,
+  },
 };
 const dynamomakhachkalaruPresupuestoOverlayByYear = {};
 
@@ -191,6 +221,12 @@ Object.assign(sources, {
     title:'ANO Football Club Dynamo — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2025-datos.md.',
+  },
+  'dynamomakhachkala-ru-bfo-2021-datos': {
+    id:'dynamomakhachkala-ru-bfo-2021-datos', clubId:'dynamomakhachkala-ru',
+    title:'ANO Football Club Dynamo — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Más el formulario 6 (uso de fondos con fin específico: aportes y gastos del programa, sin el 6240; 6100 + 6200 − 6300 = 6400); resultado = 2400 + (6200 − 6240) − 6300. Transcripción legible: Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md.',
   },
 });
 

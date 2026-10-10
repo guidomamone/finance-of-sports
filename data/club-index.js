@@ -83,7 +83,7 @@ window.CLUB_INDEX = {
   "deportivopereira-co": {"n":"Deportivo Pereira","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "dinamozagreb-hr": {"n":"Dinamo Zagreb","c":"HR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "dortmund-de": {"n":"Borussia Dortmund","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "dynamomakhachkala-ru": {"n":"Dynamo Makhachkala","c":"RU","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "dynamomakhachkala-ru": {"n":"Dynamo Makhachkala","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "dynamomoscow-ru": {"n":"Dynamo Moscow","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "eintrachtfrankfurt-de": {"n":"Eintracht Frankfurt","c":"DE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "elche-es": {"n":"Elche CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
