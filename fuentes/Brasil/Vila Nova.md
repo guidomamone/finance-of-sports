@@ -67,3 +67,5 @@ Color de marca: #F00000 — pt.wikipedia ("cores tradicionais são o vermelho e 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf` (sourceId `vilanova-br-demonstrativo-financeiro-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.pdf` (sourceId `vilanova-br-demonstrativo-financeiro-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2014 desde `Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf` (sourceId `vilanova-br-notas-explicativas-2014`).

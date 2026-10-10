@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
- "generado": "2026-10-10T02:03:27.440Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 5 número(s) sin confirmar (Generados/Brasil/Vila Nova/notas-explicativas-2014.validacion.json, \"noConfirmados\"; ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  }
- ],
+ "generado": "2026-10-10T02:09:41.100Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2014 (cierre 2014-12-31); pregunta en la cola (no frena)"
  ],
@@ -28,7 +19,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Doações/Patrocínios",
@@ -38,7 +29,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Publicidade",
@@ -48,7 +39,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Direitos Federativos Atletas",
@@ -58,7 +49,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Aluguéis",
@@ -68,7 +59,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Extraordinárias",
@@ -88,7 +79,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Diversas",
@@ -98,7 +89,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas CBF",
@@ -118,7 +109,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Sócio Tigrão",
@@ -128,7 +119,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Receitas Timemania",
@@ -138,7 +129,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -150,7 +141,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Despesas Tributárias",
@@ -160,7 +151,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Despesas Serviços Terceiros",
@@ -170,7 +161,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Ajustes de Exercícios Anteriores",
@@ -180,7 +171,7 @@
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Despesas Depto Esportes",
@@ -229,7 +220,7 @@
    "title": "Vila Nova Futebol Clube — notas-explicativas-2014 (ejercicio 2014)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
@@ -319,6 +310,56 @@
    "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
    "autor": "Guido",
    "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "2.338.741,92",
+   "linea": 78,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 2.338.741,82",
+   "evidencia": "notas-explicativas-2014.md L78, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "1.880.000,00",
+   "linea": 81,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 1.890.000,00; la fila que se carga va corregida por el ajuste fila",
+   "evidencia": "notas-explicativas-2014.md L81, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "288.754,80",
+   "linea": 82,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): Receitas Publicidade 2014, confirmado en la imagen de la pág. 1",
+   "evidencia": "notas-explicativas-2014.md L82, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "365.952,66",
+   "linea": 86,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 365.952,68",
+   "evidencia": "notas-explicativas-2014.md L86, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "3.268.157,41",
+   "linea": 93,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 3.268.187,41; la fila que se carga va corregida por el ajuste fila",
+   "evidencia": "notas-explicativas-2014.md L93, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "seleccion": {
@@ -337,7 +378,7 @@
    "cat": "lump_football_operations",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.965462
@@ -352,7 +393,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.630388
@@ -367,7 +408,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.288755
@@ -382,7 +423,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.665997
@@ -397,7 +438,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.069207
@@ -410,10 +451,10 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.057821,
    "cat": "other_income",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
    "notaGuido": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
    "destino": "revenue",
    "amountNative": 0.057821
@@ -428,7 +469,7 @@
    "cat": "member_dues",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.303172
@@ -443,7 +484,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.038241
@@ -474,7 +515,7 @@
    "cat": "youth_football",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.12687
@@ -489,7 +530,7 @@
    "cat": "member_dues",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.001461
@@ -504,7 +545,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.078862
@@ -519,7 +560,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.899833
@@ -534,7 +575,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.157814
@@ -549,7 +590,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.160415
@@ -564,7 +605,7 @@
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.002719
@@ -682,8 +723,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 5,
   "metaFilas": 1,

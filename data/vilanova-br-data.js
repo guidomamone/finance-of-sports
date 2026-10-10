@@ -151,6 +151,22 @@ const vilanovabrRevenueLinesByYear = {
     { rawLabel:'RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO', normalizedCategory:'broadcasting', amountNative:49.144011, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.97
     { rawLabel:'RECEITAS DIVERSAS', normalizedCategory:'other_income', amountNative:5.069997, disclosureLevel:'aggregated' }, // pág. 21, precedente
   ],
+  // 2014: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/notas-explicativas-2014.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Vila Nova/notas-explicativas-2014.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2014: [
+    { rawLabel:'Receitas Atividades Esportivas', normalizedCategory:'lump_football_operations', amountNative:1.965462, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Doações/Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:0.630388, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.288755, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Direitos Federativos Atletas', normalizedCategory:'player_sales', amountNative:0.665997, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Aluguéis', normalizedCategory:'other_income', amountNative:0.069207, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Extraordinárias', normalizedCategory:'other_income', amountNative:0.057821, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Contribuições Conselheiros', normalizedCategory:'member_dues', amountNative:0.303172, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Diversas', normalizedCategory:'other_income', amountNative:0.038241, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas CBF', normalizedCategory:'broadcasting', amountNative:1.89, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Escolinha de Futebol', normalizedCategory:'youth_football', amountNative:0.12687, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Sócio Tigrão', normalizedCategory:'member_dues', amountNative:0.001461, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Receitas Timemania', normalizedCategory:'other_income', amountNative:0.078862, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
 };
 const vilanovabrExpenseLinesByYear = {
   2025: [ // tools/cargar.mjs (2026-10-10)
@@ -241,6 +257,13 @@ const vilanovabrExpenseLinesByYear = {
     { rawLabel:'(-) PROVISÕES E CONTIGÊNCIAS', normalizedCategory:'admin_general_expense', amountNative:-5.067055, disclosureLevel:'aggregated' }, // pág. 21, precedente
     { rawLabel:'(-) DESPESAS COM ATIVIDADE EM GERAL', normalizedCategory:'admin_general_expense', amountNative:-7.237539, disclosureLevel:'aggregated' }, // pág. 21, precedente
     { rawLabel:'(-) OUTRAS DESPESAS', normalizedCategory:'other_expenses', amountNative:-9.776197, disclosureLevel:'aggregated' }, // pág. 21, Jev 0.98
+  ],
+  2014: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-2.899833, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.157814, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas Serviços Terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.160415, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Ajustes de Exercícios Anteriores', normalizedCategory:'exceptional_items', amountNative:-0.002719, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Despesas Depto Esportes', normalizedCategory:'lump_football_operations_expense', amountNative:-3.268187, disclosureLevel:'aggregated' }, // pág. 1, precedente
   ],
 };
 const vilanovabrFiscalYearMeta = {
@@ -407,6 +430,34 @@ const vilanovabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:54.214008, officialTotalExpenses:45.922491, officialPAT:-5.369839,
   },
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2014-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2014
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.890.000,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L81) lee 1.880.000,00; el PDF imprime 1.890.000,00. Con 1.890.000,00 los 12 renglones suman 6.116.235,71 = TOTAL DAS RECEITAS impreso (con 1.880.000,00 suman 6.106.235,71) y la columna 2014 del balance 2015 también dice 6.116.235,71
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.268.187,41. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L93) lee 3.268.157,41; el PDF imprime 3.268.187,41. Con 3.268.187,41 los 6 renglones suman 6.493.155,07 = TOTAL DAS DESPESAS impreso (con 3.268.157,41 suman 6.493.125,07, 30 menos)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 126.870,00. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L79) rotula 'Receitas de Eventos'; el PDF dice 'Receitas Escolinha de Futebol' (126.870,00)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.461,44. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L83) rotula 'Receitas Sócio Torcedor'; el PDF dice 'Receitas Sócio Tigrão' (1.461,44)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 78.862,10. Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 2.338.741,92. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 2.338.741,82
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 1.880.000,00. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 1.890.000,00; la fila que se carga va corregida por el ajuste fila
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 288.754,80. Onboarding to-do 165 (Claude, 2026-10-09): Receitas Publicidade 2014, confirmado en la imagen de la pág. 1
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 365.952,66. Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 365.952,68
+  // 2014: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 3.268.157,41. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 3.268.187,41; la fila que se carga va corregida por el ajuste fila
+  2014: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2014-12-31',
+    sourceId:'vilanova-br-notas-explicativas-2014',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.004187, tax:0,
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receitas Atividades Esportivas', lado:'revenue', importe:1.965462, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Despesas Depto Esportes', lado:'expense', importe:3.268187, motivo:'Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:6.116236, officialTotalExpenses:6.488968, officialPAT:-0.376919,
+  },
 };
 const vilanovabrPresupuestoOverlayByYear = {};
 
@@ -472,6 +523,12 @@ Object.assign(sources, {
     title:'Vila Nova Futebol Clube — demonstrativo-financeiro-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'vilanova-br-notas-explicativas-2014': {
+    id:'vilanova-br-notas-explicativas-2014', clubId:'vilanova-br',
+    title:'Vila Nova Futebol Clube — notas-explicativas-2014 (ejercicio 2014)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Vila Nova/notas-explicativas-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

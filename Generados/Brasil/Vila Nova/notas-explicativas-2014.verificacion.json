@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
  "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
- "generado": "2026-10-10T02:02:15.265Z",
+ "generado": "2026-10-10T02:09:19.200Z",
  "estado": "ok",
  "clubId": "vilanova-br",
  "year": 2014,
@@ -84,6 +84,56 @@
    "reemplaza": "Receitas Sindicatos",
    "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): la transcripción (.md L88) rotula 'Receitas Sindicatos'; el PDF dice 'Receitas Timemania' (78.862,10)",
    "evidencia": "pág. 1 del visor (DRE 2014), .md L78-L97",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "2.338.741,92",
+   "linea": 78,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 2.338.741,82",
+   "evidencia": "notas-explicativas-2014.md L78, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "1.880.000,00",
+   "linea": 81,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 1.890.000,00; la fila que se carga va corregida por el ajuste fila",
+   "evidencia": "notas-explicativas-2014.md L81, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "288.754,80",
+   "linea": 82,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): Receitas Publicidade 2014, confirmado en la imagen de la pág. 1",
+   "evidencia": "notas-explicativas-2014.md L82, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "365.952,66",
+   "linea": 86,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): columna 2013 (no se carga); el PDF dice 365.952,68",
+   "evidencia": "notas-explicativas-2014.md L86, pág. 1 del visor",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf",
+   "campo": "confirmado",
+   "valor": "3.268.157,41",
+   "linea": 93,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 3.268.187,41; la fila que se carga va corregida por el ajuste fila",
+   "evidencia": "notas-explicativas-2014.md L93, pág. 1 del visor",
    "autor": "Guido",
    "fecha": "2026-10-10"
   }
