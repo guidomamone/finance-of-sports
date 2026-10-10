@@ -74,3 +74,5 @@ Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.pdf` (sourceId `ferroviaria-br-demonstracoes-financeiras-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Brasil/Ferroviaria/dre-2022.pdf` (sourceId `ferroviaria-br-dre-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2017 desde `Clubes/Brasil/Ferroviaria/dre-2017.pdf` (sourceId `ferroviaria-br-dre-2017`).

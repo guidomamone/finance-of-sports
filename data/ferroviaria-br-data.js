@@ -232,6 +232,14 @@ const ferroviariabrRevenueLinesByYear = {
     { rawLabel:'OUTRAS RECEITAS OPERACIONAIS', normalizedCategory:'other_income', amountNative:0.045969, disclosureLevel:'aggregated' }, // pág. 9, precedente
     { rawLabel:'RECEITAS NÃO OPERACIONAIS', normalizedCategory:'other_income', amountNative:0.306892, disclosureLevel:'aggregated' }, // pág. 9, precedente
   ],
+  // 2017: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/dre-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/dre-2017.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2017: [
+    { rawLabel:'Receitas Brutas', normalizedCategory:'lump_football_operations', amountNative:8.67695, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Deduções', normalizedCategory:'other_income', amountNative:-0.087335, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(+) Outras Receitas', normalizedCategory:'other_income', amountNative:0.014003, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(+) Outras Receitas Operacionais', normalizedCategory:'other_income', amountNative:0.371654, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
 };
 const ferroviariabrExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-10)
@@ -905,6 +913,12 @@ const ferroviariabrExpenseLinesByYear = {
     { rawLabel:'CUSTOS', normalizedCategory:'lump_football_operations_expense', amountNative:-23.267062, disclosureLevel:'aggregated' }, // pág. 1, precedente
     { rawLabel:'DESPESAS OPERACIONAIS', normalizedCategory:'admin_general_expense', amountNative:-6.6554, disclosureLevel:'aggregated' }, // pág. 6, precedente
   ],
+  2017: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'(-) Custos', normalizedCategory:'lump_football_operations_expense', amountNative:-7.802237, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-2.233261, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Despesas Gerais', normalizedCategory:'admin_general_expense', amountNative:-0.05518, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'(-) Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.013243, disclosureLevel:'aggregated' }, // pág. 1, precedente
+  ],
 };
 const ferroviariabrFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
@@ -1160,6 +1174,38 @@ const ferroviariabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:18.510316, officialTotalExpenses:29.922462, officialPAT:-10.937196,
   },
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2017-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2017-12-31
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 371.653,59. Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2017 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = wages_squad. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = broadcasting. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = matchday_competition. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): incluye = member_dues. Onboarding to-do 165 (Claude, 2026-10-09): la DRE de 2017 solo imprime los totales por grupo (Receitas Brutas, Custos...); el desglose no está en el documento
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): resultado-final = -1.726.110,02. Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida
+  // 2017: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): confirmado = 371.663,59. Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 371.653,59 (pág. 1); la fila que se carga ya va corregida por el ajuste fila de la misma línea, así que este número del .md no entra en la carga
+  2017: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2017-12-31',
+    sourceId:'ferroviaria-br-dre-2017',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.430111, tax:-0.16735,
+    extraRows: [
+      {label:'(-) Despesas Financeiras', value:-0.43791},
+      {label:'(+) Receitas Financeiras', value:0.007799},
+      {label:'(-) Contribuição Social (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-0.16735},
+    ],
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Organización de partidos
+    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true},"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true}, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } }, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receitas Brutas', lado:'revenue', importe:8.67695, motivo:'Claude 2026-10-09: renglón de primer nivel sin desglose en el documento'},
+      {renglon:'(-) Custos', lado:'expense', importe:7.802237, motivo:'Claude 2026-10-09: renglón de primer nivel sin desglose en el documento'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:8.975272, officialTotalExpenses:10.103921, officialPAT:-1.72611,
+  },
 };
 const ferroviariabrPresupuestoOverlayByYear = {};
 
@@ -1249,6 +1295,12 @@ Object.assign(sources, {
     title:'Ferroviária Futebol S.A. — dre-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'ferroviaria-br-dre-2017': {
+    id:'ferroviaria-br-dre-2017', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — dre-2017 (ejercicio 2017)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

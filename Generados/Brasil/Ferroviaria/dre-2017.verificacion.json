@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
  "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
- "generado": "2026-10-10T02:02:15.203Z",
+ "generado": "2026-10-10T02:09:19.130Z",
  "estado": "ok",
  "clubId": "ferroviaria-br",
  "year": 2017,
@@ -102,6 +102,26 @@
    "evidencia": "dre-2017.md L16-L40",
    "autor": "Guido",
    "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "resultado-final",
+   "valor": "-1.726.110,02",
+   "linea": 38,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida",
+   "evidencia": "dre-2017.md L38",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Ferroviaria/dre-2017.pdf",
+   "campo": "confirmado",
+   "valor": "371.663,59",
+   "linea": 31,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): el PDF dice 371.653,59 (pág. 1); la fila que se carga ya va corregida por el ajuste fila de la misma línea, así que este número del .md no entra en la carga",
+   "evidencia": "dre-2017.md L31",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
   }
  ],
  "cola": [],
@@ -127,6 +147,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-1.72611 por ajuste manual (-1.726.110,02: Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida); impuesto deducido 0.16735 (antes de impuestos -1.55876; el documento imprimía 0.16735)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "no se puede comparar: este documento no trae la columna 2016"
@@ -145,6 +170,7 @@
  "notas": [
   "ajuste manual: fila \"(+) Outras Receitas Operacionais\" (ingreso) 371.653,59, en lugar de \"(+) Outras Receitas Operacionais\" (2026-10-10, Claude 2026-10-09: la transcripción dice 371.663,59 y la segunda lectura 371.653,59; solo con 371.653,59 cierra el Prejuízo Operacional impreso: 787.377,89 (L25) - 2.233.261,00 - 437.909,72 - 55.180,00 - 13.242,56 + 7.798,51 + 371.653,59 = -1.572.763,29 (L32).)",
   "la lectura base no cerraba; cerró con la lectura 5",
+  "ajuste manual: resultado final -1.726.110,02 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): DRE de balancete: imprime el prejuízo en positivo con 'D' (L38); la cuenta 8.975.272 - 10.103.921 - 430.111 - 167.350 = -1.726.110 es pérdida)",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en dre-2017.pdf",
   "duda de localizar que no afecta la carga: El título dice 'Período: 01/01/2017 a 31/12/2017 - CONSOLIDADO', pero es un único DRE con un solo CNPJ y el club carga sus años como individual; probablemente significa 'acumulado del período'."
  ],
@@ -157,8 +183,15 @@
   "financiero": -0.430111,
   "impuesto": 0.16735,
   "resultadoImpreso": 1.72611,
-  "resultadoParaCargar": 1.72611,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -1.72611,
+  "resultadoFinal": {
+   "valor": -1.72611,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0.16735,
+   "impuestoDeducido": 0.16735
+  },
   "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
@@ -245,14 +278,9 @@
  ],
  "impuesto": [
   {
-   "etiqueta": "(-) Contribuição Social",
-   "M": -0.046764,
+   "etiqueta": "(-) Contribuição Social (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -0.16735,
    "linea": 35
-  },
-  {
-   "etiqueta": "(-) Imposto de Renda",
-   "M": -0.120586,
-   "linea": 37
   }
  ]
 }

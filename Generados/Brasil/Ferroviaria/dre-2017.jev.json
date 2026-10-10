@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/dre-2017.md",
+ "generatedAt": "2026-10-10T02:09:38.963Z",
+ "rubrosHuella": "b94e63d94a280fc3f84f62e09add2e21dafeb1c2",
+ "rubros": [
+  {
+   "label": "(+) Outras Receitas Operacionais",
+   "lado": "revenue",
+   "page": 1,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "(-) Despesas Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Receitas Brutas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "(-) Despesas Tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "(+) Outras Receitas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "(-) Deduções",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "(-) Custos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "(-) Despesas Gerais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  }
+ ]
+}
