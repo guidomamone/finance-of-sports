@@ -107,3 +107,8 @@ ni en el comentario de ningún archivo de código.
     Antes de limpiar: decidir a dónde se muda esa evidencia (¿`fuentes/<club>`? ¿`Generados/`?) y cambiar los scripts para que dejen de
     escribirla en `data/`. Hacerlo después del 208, con la regla de PANTALLA ("Comentarios en lo que se publica") como base.
 
+210. EL ENSAYO DE `cargar-lote.mjs` PROMETE AÑOS DE CLUBES NUEVOS QUE DESPUÉS NO ENTRAN (mejora de script). Con un club que no existe,
+    `cargar.mjs --desde-verificacion` frena en "el club no existe" y no mira los demás frenos (casos de la verificación pendientes, categorías
+    en la cola); el ensayo los cuenta como "se escribirían". Caso: lote 67 (Grecia), el ensayo dijo 21 años y `--escribir` no escribió ninguno
+    (alta hecha y revertida 5 veces). Escalón posible: en el ensayo, para un club nuevo, evaluar el resto de los frenos como si el club existiera.
+
