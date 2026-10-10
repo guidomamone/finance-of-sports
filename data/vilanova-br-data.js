@@ -114,18 +114,36 @@ const vilanovabrRevenueLinesByYear = {
   ],
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2022: [
-    { rawLabel:'RECEITA COM PRESTAÇÃO DE SERVIÇOS', normalizedCategory:'other_income', amountNative:19.961379, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.97
     { rawLabel:'RECEITA PATROCINIO E MARKETING', normalizedCategory:'sponsorship_commercial', amountNative:5.431481, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
     { rawLabel:'RECEITAS DIVERSAS', normalizedCategory:'other_income', amountNative:12.457555, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
     { rawLabel:'(-) DEDUÇÕES DA RECEITA BRUTA', normalizedCategory:'other_income', amountNative:-1.051383, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.95
+    { rawLabel:'Venda/Empréstimos de atletas', normalizedCategory:'player_sales', amountNative:1.199337, disclosureLevel:'aggregated' }, // pág. 18, precedente
+    { rawLabel:'Programa socio-torcedor', normalizedCategory:'member_dues', amountNative:1.079868, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Cota televisiva', normalizedCategory:'broadcasting', amountNative:9.320801, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Incentivo Governo Federal', normalizedCategory:'other_income', amountNative:1.514364, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Premiação', normalizedCategory:'competition_bonus', amountNative:2.654, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:3.251231, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Uso de imagem / royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.932899, disclosureLevel:'aggregated' }, // pág. 19, precedente
+    { rawLabel:'Direito de imagem', normalizedCategory:'sponsorship_commercial', amountNative:0.008877, disclosureLevel:'aggregated' }, // pág. 19, precedente
   ],
   // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Brasil/Vila Nova/demonstrativo-financeiro-2023.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
   2023: [
-    { rawLabel:'RECEITA COM PRESTAÇÃO DE SERVIÇOS', normalizedCategory:'other_income', amountNative:24.459549, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.97
     { rawLabel:'RECEITAS DIVERSAS', normalizedCategory:'other_income', amountNative:5.165898, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
     { rawLabel:'(-) DEDUÇÕES DA RECEITA BRUTA', normalizedCategory:'other_income', amountNative:-0.279902, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.95
+    { rawLabel:'Venda de atletas', normalizedCategory:'player_sales', amountNative:2.718339, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Programa sócio torcedor', normalizedCategory:'member_dues', amountNative:0.786306, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Cota televisiva', normalizedCategory:'broadcasting', amountNative:10.448425, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:3.77718, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Patrocinadores', normalizedCategory:'sponsorship_commercial', amountNative:5.017601, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Marca própria - Loja Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.859339, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Venda de participações', normalizedCategory:'player_sales', amountNative:0.825366, disclosureLevel:'aggregated' }, // pág. 20, precedente
+    { rawLabel:'Mecanismo Solidariedade', normalizedCategory:'player_sales', amountNative:0.026993, disclosureLevel:'aggregated' }, // pág. 20, precedente
   ],
 };
 const vilanovabrExpenseLinesByYear = {
@@ -231,8 +249,8 @@ const vilanovabrFiscalYearMeta = {
   // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 38.324,22. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): los 13 renglones de receita suman 6.928.521,06 = TOTAL DAS RECEITAS (L70), con las Receitas Financeiras 38.324,22 adentro; la extracción las sumaba con el mismo signo que el costo financiero
   // 2015: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = -5.029,11. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): 6.890.197 - 8.598.927 + 38.324 - 5.029 = -1.675.435 (L79, -1.675.435,38)
   2015: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2025): Salarios y primas (plantel y cuerpo técnico)
-    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2025): Televisión, Salarios y primas (plantel y cuerpo técnico)
+    incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2015-12-31',
     sourceId:'vilanova-br-balanco-patrimonial-2015',
     reportType:'official_balance_sheet',
@@ -316,6 +334,14 @@ const vilanovabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:22.60414, officialTotalExpenses:30.371805, officialPAT:-1.795546,
   },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.199.337,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.079.868,47. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 9.320.800,90. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.514.364,23. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.654.000,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.251.231,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 932.899,31. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 8.877,40. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (19.961.378,78, L141) se abre con la nota 30.1 (L811-829), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
   2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2022-12-31',
     sourceId:'vilanova-br-demonstrativo-financeiro-2022',
@@ -330,6 +356,14 @@ const vilanovabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:36.799031, officialTotalExpenses:30.788196, officialPAT:2.114536,
   },
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.718.339,04. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 786.306,37. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 10.448.424,84. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.777.180,00. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 5.017.600,75. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 859.339,42. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 825.365,61. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 26.993,18. Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió
   2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'BRL', fxRef:'BRL@2023-12-31',
     sourceId:'vilanova-br-demonstrativo-financeiro-2023',

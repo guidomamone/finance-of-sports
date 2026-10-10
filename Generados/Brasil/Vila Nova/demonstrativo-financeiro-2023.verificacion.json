@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
  "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
- "generado": "2026-10-10T02:03:43.452Z",
+ "generado": "2026-10-10T02:05:22.127Z",
  "estado": "ok",
  "clubId": "vilanova-br",
  "year": 2023,
@@ -11,7 +11,112 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "2.718.339,04",
+   "linea": 756,
+   "etiqueta": "Venda de atletas",
+   "lado": "ingreso",
+   "reemplaza": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "786.306,37",
+   "linea": 757,
+   "etiqueta": "Programa sócio torcedor",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "10.448.424,84",
+   "linea": 758,
+   "etiqueta": "Cota televisiva",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "3.777.180,00",
+   "linea": 761,
+   "etiqueta": "Bilheteria",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "5.017.600,75",
+   "linea": 764,
+   "etiqueta": "Patrocinadores",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "859.339,42",
+   "linea": 765,
+   "etiqueta": "Marca própria - Loja Royalties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "825.365,61",
+   "linea": 766,
+   "etiqueta": "Venda de participações",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  },
+  {
+   "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.pdf",
+   "campo": "fila",
+   "valor": "26.993,18",
+   "linea": 767,
+   "etiqueta": "Mecanismo Solidariedade",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió",
+   "evidencia": ".md L108, L752-768",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -35,6 +140,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 36.799031; el sitio tiene 36.799032"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 29.345546 en este documento y 29.625448 en demonstrativo-financeiro-2024.pdf (columna del año anterior)"
@@ -43,17 +153,20 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 36.799031 en demonstrativo-financeiro-2022.pdf y 36.799031 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"RECEITA PATROCÍNIO E MARKETING\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) CUSTOS GERAIS\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Venda de atletas\" (ingreso) 2.718.339,04, en lugar de \"RECEITA COM PRESTAÇÃO DE SERVIÇOS\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Programa sócio torcedor\" (ingreso) 786.306,37 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Cota televisiva\" (ingreso) 10.448.424,84 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Bilheteria\" (ingreso) 3.777.180,00 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Patrocinadores\" (ingreso) 5.017.600,75 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Marca própria - Loja Royalties\" (ingreso) 859.339,42 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Venda de participações\" (ingreso) 825.365,61 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
+  "ajuste manual: fila \"Mecanismo Solidariedade\" (ingreso) 26.993,18 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): 'RECEITA COM PRESTAÇÃO DE SERVIÇOS' (24.459.549,21, L108) se abre con la nota 30.1 (L752-768), cuyas filas suman exacto; el reintento por categorías en 0 no la abrió)",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de extraer que no afecta la carga: El cuadro b53 no tiene título visible, pero su TOTAL (L919) coincide con L125."
  ],
@@ -72,14 +185,6 @@
  },
  "lineas": [
   {
-   "etiqueta": "RECEITA COM PRESTAÇÃO DE SERVIÇOS",
-   "lado": "ingreso",
-   "M": 24.459549,
-   "pagina": 4,
-   "linea": 108,
-   "origen": "estado (lectura 5: hoja)"
-  },
-  {
    "etiqueta": "RECEITAS DIVERSAS",
    "lado": "ingreso",
    "M": 5.165898,
@@ -94,6 +199,70 @@
    "pagina": 4,
    "linea": 113,
    "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Venda de atletas",
+   "lado": "ingreso",
+   "M": 2.718339,
+   "pagina": 20,
+   "linea": 756,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Programa sócio torcedor",
+   "lado": "ingreso",
+   "M": 0.786306,
+   "pagina": 20,
+   "linea": 757,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cota televisiva",
+   "lado": "ingreso",
+   "M": 10.448425,
+   "pagina": 20,
+   "linea": 758,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Bilheteria",
+   "lado": "ingreso",
+   "M": 3.77718,
+   "pagina": 20,
+   "linea": 761,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Patrocinadores",
+   "lado": "ingreso",
+   "M": 5.017601,
+   "pagina": 20,
+   "linea": 764,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Marca própria - Loja Royalties",
+   "lado": "ingreso",
+   "M": 0.859339,
+   "pagina": 20,
+   "linea": 765,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Venda de participações",
+   "lado": "ingreso",
+   "M": 0.825366,
+   "pagina": 20,
+   "linea": 766,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Mecanismo Solidariedade",
+   "lado": "ingreso",
+   "M": 0.026993,
+   "pagina": 20,
+   "linea": 767,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "(-) CUSTOS GERAIS",

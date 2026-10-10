@@ -1,16 +1,223 @@
 {
  "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
- "generado": "2026-10-10T01:03:18.589Z",
+ "generado": "2026-10-10T02:04:27.667Z",
  "frena": [
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Custos Futebol Profissional\" -> lump_football_operations_expense 0.75; \"Futebol Amador (Custos - Transferência)\" -> youth_other_sports_expense 0.65"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola entidad (associação civil); las menciones a 'consolidadas' son texto estándar del dictamen, no hay estados consolidados)"
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): una sola entidad (associação civil); las menciones a 'consolidadas' son texto estándar del dictamen, no hay estados consolidados)",
+  "categorías en 0 aun después del reintento (se carga así): Estadio",
+  "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "avai-br",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Receitas de Mensalidades dos Sócios",
+    "normalizedCategory": "member_dues",
+    "amountNative": 3.488065,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de Negociação de Atletas Profissionais",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.509456,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas Arrendaments, Patrocínios e Publicidades",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.473746,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de Repasses da Loteria Timemania",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.619095,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas de Venda e uso Marca",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.12498,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas TV e transmissão jogos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 12.936521,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas Diversas",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.12389,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custos Futebol Profissional",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -37.345703,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos Futebol Feminino",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.354097,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos Esportes Olímpicos",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.012103,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -12.192491,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciação e Amortização do Imobilizado",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.260315,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Materiais e despesas diversas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.096396,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "CMV e Icms",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.759297,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Futebol Amador (Custos - Transferência)",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -2.064896,
+    "disclosureLevel": "aggregated",
+    "_pag": 4,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2021-12-31",
+   "sourceId": "avai-br-demonstracoes-contabeis-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -6.658146,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Receita Financeira",
+     "value": 0.027397
+    },
+    {
+     "label": "Despesas financeiras deságio",
+     "value": -3.995456
+    },
+    {
+     "label": "Despesas Financeiras",
+     "value": -2.690087
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Custos Futebol Profissional",
+     "lado": "expense",
+     "importe": 37.345703,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 25.275753,
+   "officialTotalExpenses": 53.085298,
+   "officialPAT": -34.467692
+  },
+  "source": {
+   "id": "avai-br-demonstracoes-contabeis-2021",
+   "clubId": "avai-br",
+   "title": "Avaí Futebol Clube — demonstracoes-contabeis-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
  "reemplaza": false,
  "periodo": {
@@ -23,5 +230,522 @@
  },
  "clubId": "avai-br",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 121,
+   "etiqueta": "Receita Bruta",
+   "lado": "ingreso",
+   "reemplaza": "Receita Bruta",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 122,
+   "etiqueta": "Receitas do Futebol Profissional",
+   "lado": "ingreso",
+   "reemplaza": "Receitas do Futebol Profissional",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 131,
+   "etiqueta": "Custo Operacional Bruto",
+   "lado": "gasto",
+   "reemplaza": "Custo Operacional Bruto",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 132,
+   "etiqueta": "Custos Futebol Profissional total",
+   "lado": "gasto",
+   "reemplaza": "Custos Futebol Profissional total",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 141,
+   "etiqueta": "Despesas Operacionais",
+   "lado": "gasto",
+   "reemplaza": "Despesas Operacionais",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 145,
+   "etiqueta": "Despesas Avaí Store",
+   "lado": "gasto",
+   "reemplaza": "Despesas Avaí Store",
+   "motivo": "Claude 2026-10-09: subtotal impreso que se sumaba ademas de sus componentes (ingresos 75,9M y gastos 167,3M en vez de 25,3M y 53,1M). Se saca y quedan sus componentes. Cuenta completa del estado (L121-148): ingresos 25.303.151 - custo bruto 43.772.256 = -18.469.105 (L140); -18.469.105 - despesas operacionais 15.142.893 - Avai Store 855.694 = -34.467.692 (L148, impreso).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "2.064.896",
+   "linea": 137,
+   "etiqueta": "Futebol Amador (Custos - Transferência)",
+   "lado": "gasto",
+   "reemplaza": "Futebol Amador (Custos - Transferência)",
+   "motivo": "Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 138,
+   "etiqueta": "Custos do Futebol Categoria de Base",
+   "lado": "gasto",
+   "reemplaza": "Custos do Futebol Categoria de Base",
+   "motivo": "Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 139,
+   "etiqueta": "( - ) Transferência para o Imobilizado",
+   "lado": "gasto",
+   "reemplaza": "( - ) Transferência para o Imobilizado",
+   "motivo": "Claude 2026-10-09: 'Futebol Amador (Custos - Transferência)' 2.064.896 (L137) es el subtotal de Custos do Futebol Categoria de Base 7.805.604 (L138) menos Transferência para o Imobilizado (5.740.708) (L139): 7.805.604 - 5.740.708 = 2.064.896. La transferencia RESTA y no se puede cargar negativa dentro de gastos, asi que se carga el neto de L137 y salen L138 y L139. Custo bruto: 41.707.360 + 2.064.896 = 43.772.256 (L131).",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "27.397",
+   "linea": 130,
+   "etiqueta": "Receita Financeira",
+   "lado": "financiero",
+   "reemplaza": "Receita Financeira",
+   "motivo": "Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "(3.995.456)",
+   "linea": 134,
+   "etiqueta": "Despesas financeiras deságio",
+   "lado": "financiero",
+   "reemplaza": "Despesas financeiras deságio",
+   "motivo": "Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+   "campo": "fila",
+   "valor": "(2.690.087)",
+   "linea": 144,
+   "etiqueta": "Despesas Financeiras",
+   "lado": "financiero",
+   "reemplaza": "Despesas Financeiras",
+   "motivo": "Claude 2026-10-09: financiero con su signo: Receita Financeira +27.397 (L130), despesas financeiras deságio (3.995.456) (L134, dentro de los 41.707.360 de Custos Futebol Profissional total: 37.345.703 + 3.995.456 + 354.097 + 12.103 = 41.707.359) y Despesas Financeiras (2.690.087) (L144). Neto -6.658.146. Cierre: ingresos 25.275.754 (25.303.151 - 27.397) - gastos 53.085.300 (43.772.256 - 3.995.456 + 12.192.491 + 260.315 + 855.694) - 6.658.146 = -34.467.692.",
+   "evidencia": "pág. 4 del visor, .md L121-148",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Receitas de Mensalidades dos Sócios",
+   "page": 4,
+   "native": 3.488065,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.488065,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.488065
+  },
+  {
+   "label": "Receitas de Negociação de Atletas Profissionais",
+   "page": 4,
+   "native": 2.509456,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.509456,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.509456
+  },
+  {
+   "label": "Receitas Arrendaments, Patrocínios e Publicidades",
+   "page": 4,
+   "native": 3.473746,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.473746,
+   "cat": "sponsorship_commercial",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.473746
+  },
+  {
+   "label": "Receitas de Repasses da Loteria Timemania",
+   "page": 4,
+   "native": 0.619095,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.619095,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.619095
+  },
+  {
+   "label": "Receitas de Venda e uso Marca",
+   "page": 4,
+   "native": 1.12498,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.12498,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.12498
+  },
+  {
+   "label": "Receitas TV e transmissão jogos",
+   "page": 4,
+   "native": 12.936521,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.936521,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.936521
+  },
+  {
+   "label": "Receitas Diversas",
+   "page": 4,
+   "native": 1.12389,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.12389,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.12389
+  },
+  {
+   "label": "Custos Futebol Profissional",
+   "page": 4,
+   "native": 37.345703,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 37.345703,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -37.345703
+  },
+  {
+   "label": "Custos Futebol Feminino",
+   "page": 4,
+   "native": 0.354097,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.354097,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.354097
+  },
+  {
+   "label": "Custos Esportes Olímpicos",
+   "page": 4,
+   "native": 0.012103,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.012103,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.012103
+  },
+  {
+   "label": "Administrativas",
+   "page": 4,
+   "native": 12.192491,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.192491,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.192491
+  },
+  {
+   "label": "Depreciação e Amortização do Imobilizado",
+   "page": 4,
+   "native": 0.260315,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.260315,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.260315
+  },
+  {
+   "label": "Materiais e despesas diversas",
+   "page": 4,
+   "native": 0.096396,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.096396,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: precedente mayoritario del sitio para esa etiqueta",
+   "destino": "expense",
+   "amountNative": -0.096396
+  },
+  {
+   "label": "CMV e Icms",
+   "page": 4,
+   "native": 0.759297,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.759297,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-09: precedente mayoritario del sitio para esa etiqueta (CMV en admin_general_expense): costo de mercadería de la tienda",
+   "destino": "expense",
+   "amountNative": -0.759297
+  },
+  {
+   "label": "Futebol Amador (Custos - Transferência)",
+   "page": 4,
+   "native": 2.064896,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.064896,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -2.064896
+  },
+  {
+   "label": "Receita Financeira",
+   "page": null,
+   "native": 0.027397,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas financeiras deságio",
+   "page": null,
+   "native": -3.995456,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas Financeiras",
+   "page": null,
+   "native": -2.690087,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 25.275753,
+  "expSum": -53.085298,
+  "officialTotalRevenue": 25.275753,
+  "officialTotalExpenses": 53.085298,
+  "officialPAT": -34.467692,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -34.467692,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 25.275753
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 53.085298
+  }
+ },
+ "liga": {
+  "valor": "br-serieB",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (71 de 72 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2021-12-31 = 5.5805 (PTAX de cierre (venda) del Banco Central do Brasil al 31/12/2021)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "avai-br-demonstracoes-contabeis-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieB",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 7,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }
