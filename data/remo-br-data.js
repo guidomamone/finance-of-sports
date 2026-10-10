@@ -66,6 +66,25 @@ const remobrRevenueLinesByYear = {
     { rawLabel:'Venda de materiais', normalizedCategory:'sponsorship_commercial', amountNative:2.310668, disclosureLevel:'aggregated' }, // pág. 24, precedente
     { rawLabel:'Outras receitas (despesas)', normalizedCategory:'other_income', amountNative:1.566092, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
   ],
+  // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Remo/relatorio-auditor-independente-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2022: [
+    { rawLabel:'Receita de Alugueis', normalizedCategory:'other_income', amountNative:0.798804, disclosureLevel:'aggregated' }, // pág. 11, Claude 0.85
+    { rawLabel:'Receita de Estacionamento', normalizedCategory:'other_income', amountNative:0.156767, disclosureLevel:'aggregated' }, // pág. 11, Claude 0.85
+    { rawLabel:'Receita de Bilheteria', normalizedCategory:'matchday_competition', amountNative:5.72151, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Receita Royalties / Lojas', normalizedCategory:'sponsorship_commercial', amountNative:1.620263, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Receita Patrimoniais/Sociais', normalizedCategory:'other_sports', amountNative:1.413955, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Receita da Atividade Social', normalizedCategory:'other_income', amountNative:0.991544, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.96
+    { rawLabel:'Receita Programa Timemania', normalizedCategory:'other_income', amountNative:0.535692, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Receita Programa Socio Torcedor', normalizedCategory:'member_dues', amountNative:1.552399, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Receita de Patrocínio / Marketing', normalizedCategory:'sponsorship_commercial', amountNative:5.604274, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Receitas Royalties / Licenciados', normalizedCategory:'other_income', amountNative:0.177819, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.95
+    { rawLabel:'Receita com Vendas Materiais', normalizedCategory:'sponsorship_commercial', amountNative:0.11865, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:1.630706, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.99
+    { rawLabel:'Receitas Repasse de Direitos Federativos', normalizedCategory:'player_sales', amountNative:0.687391, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Receita de Premiações', normalizedCategory:'competition_bonus', amountNative:0.322245, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Diferencia en el documento: total Receita Bruta Operacional vs sus renglones', normalizedCategory:'other_income', amountNative:0.1988, disclosureLevel:'aggregated' }, // pág. 11, precedente
+  ],
 };
 const remobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -91,6 +110,27 @@ const remobrExpenseLinesByYear = {
     { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-56.115841, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
     { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.306245, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
   ],
+  2022: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-0.436843, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.030512, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.069278, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.91
+    { rawLabel:'Manutenção', normalizedCategory:'admin_general_expense', amountNative:-1.229071, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.99
+    { rawLabel:'Despesas com eventos esportivos', normalizedCategory:'match_organisation_expense', amountNative:-0.00695, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Custo com Contratação', normalizedCategory:'player_amortisation', amountNative:-0.122, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Serviço de Terceiros', normalizedCategory:'admin_general_expense', amountNative:-2.700725, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.95
+    { rawLabel:'Materiais esportivos e premiações', normalizedCategory:'other_expenses', amountNative:-0.103753, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Amortização dos Débitos Trabalhistas', normalizedCategory:'other_amortisation', amountNative:-0.053896, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.91
+    { rawLabel:'Despesas com tributos', normalizedCategory:'admin_general_expense', amountNative:-0.018628, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Despesas com depreciação e amortização', normalizedCategory:'depreciation', amountNative:-8.19683, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.98
+    { rawLabel:'Amortizações - Direitos Econômicos', normalizedCategory:'player_amortisation', amountNative:-1.9643, disclosureLevel:'aggregated' }, // pág. 11, Jev 1
+    { rawLabel:'Despesa com Contingências', normalizedCategory:'admin_general_expense', amountNative:-1.631109, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Outras Despesas', normalizedCategory:'other_expenses', amountNative:-0.886025, disclosureLevel:'aggregated' }, // pág. 11, Jev 0.99
+    { rawLabel:'Despesas com Pessoal', normalizedCategory:'wages_squad', amountNative:-6.440639, disclosureLevel:'aggregated' }, // pág. 11, precedente
+    { rawLabel:'Despesa com direito de imagem', normalizedCategory:'wages_squad', amountNative:-1.578607, disclosureLevel:'aggregated' }, // pág. 12, Claude 0.9
+    { rawLabel:'Despesas com Jogos e Competições', normalizedCategory:'match_organisation_expense', amountNative:-2.624685, disclosureLevel:'aggregated' }, // pág. 12, Jev 0.99
+    { rawLabel:'Despesas Programa Sócio Torcedor', normalizedCategory:'admin_general_expense', amountNative:-0.54908, disclosureLevel:'aggregated' }, // pág. 12, Jev 1
+    { rawLabel:'Despesas com Passagens e Hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-0.460396, disclosureLevel:'aggregated' }, // pág. 12, Jev 0.99
+  ],
 };
 const remobrFiscalYearMeta = {
   2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -114,6 +154,8 @@ const remobrFiscalYearMeta = {
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 6.492.978. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
   // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.310.668. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
   2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2025-12-31',
     sourceId:'remo-br-demonstracoes-financeiras-2025',
     reportType:'official_balance_sheet',
@@ -131,6 +173,25 @@ const remobrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:84.479424, officialTotalExpenses:98.306671, officialPAT:-14.960844,
+  },
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L281 (21.545.016) es el total de los renglones de ingreso impresos debajo (L282-L298); la nota 13 (L982-L985) lo reparte en otras categorías (Operacionais/Ordinárias) y se contaba dos veces junto a los 17 renglones. Se cargan los renglones del estado
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): L299 Receita Líquida 21.545.016 repite el total de L281 (sin deducciones): se contaba otra vez
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 198.800. Onboarding to-do 165 (Claude, 2026-10-09): el total impreso L281/L299 es 21.545.016 pero los renglones L282-L298 suman 21.346.216 (17 renglones, incluidas las Receitas Financeiras 14.197); falta 198.800 que el documento no abre. Sin esa diferencia el resultado no cierra: 21.545.016 - 29.103.327 - 406.410 = -7.964.721 (L337-L338). La versión anterior descartada sí sumaba (patrocinio 5.311.429 y demais 906.122, total 20.328.785); en la final sube el total en 1.216.231 y los renglones en 1.017.429
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 14.197. Onboarding to-do 165 (Claude, 2026-10-09): ingreso financiero (suma): lo cuenta el total de L281; con el signo bien el resultado cierra
+  // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = -406.410. Onboarding to-do 165 (Claude, 2026-10-09): costo financiero (resta): -7.558.310 - 406.410 = -7.964.720 (impreso -7.964.721, L338)
+  2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2022-12-31',
+    sourceId:'remo-br-relatorio-auditor-independente-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.392213, tax:0,
+    extraRows: [
+      {label:'Receitas Financeiras', value:0.014197},
+      {label:'Despesas financeiras', value:-0.40641},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:21.530819, officialTotalExpenses:29.103327, officialPAT:-7.964721,
   },
 };
 const remobrPresupuestoOverlayByYear = {};
@@ -161,6 +222,12 @@ Object.assign(sources, {
     title:'Clube do Remo — demonstracoes-financeiras-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'remo-br-relatorio-auditor-independente-2022': {
+    id:'remo-br-relatorio-auditor-independente-2022', clubId:'remo-br',
+    title:'Clube do Remo — relatorio-auditor-independente-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Brasileirão Série C (BR) — 6 ejercicio(s) con ranking:
+// Brasileirão Série C (BR) — 7 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -42,6 +43,14 @@ window.RANKINGS["br-serieC"] = {
       { id:"paysandu-br", revenue:9.31, reportType:"official_balance_sheet",
         sourceId:"paysandu-br-dre-2023",
         mix:[["Cuotas Sociales",0.859],["Comercial / Sponsors",2.335],["Otras secciones deportivas",0.175],["Fútbol profesional (sin desglosar por la fuente)",4.165],["Otros ingresos",1.775]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"remo-br", revenue:4.126, reportType:"official_balance_sheet",
+        sourceId:"remo-br-relatorio-auditor-independente-2022",
+        mix:[["Cuotas Sociales",0.298],["Comercial / Sponsors",1.407],["Estadio",1.097],["Premios por competencias",0.062],["Venta de Jugadores",0.132],["Otras secciones deportivas",0.271],["Otros ingresos",0.861]] },
     ],
   },
   2021: {
