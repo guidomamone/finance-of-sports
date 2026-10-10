@@ -6,7 +6,7 @@
 // Brasileirão Série C (BR) — 8 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -44,6 +44,10 @@ window.RANKINGS["br-serieC"] = {
       { id:"paysandu-br", revenue:9.31, reportType:"official_balance_sheet",
         sourceId:"paysandu-br-dre-2023",
         mix:[["Cuotas Sociales",0.859],["Comercial / Sponsors",2.335],["Otras secciones deportivas",0.175],["Fútbol profesional (sin desglosar por la fuente)",4.165],["Otros ingresos",1.775]] },
+      { id:"remo-br", revenue:6.988, reportType:"official_balance_sheet",
+        sourceId:"remo-br-dre-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.988]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2022: {
