@@ -3,10 +3,11 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Primera Liga (RU) — 3 ejercicio(s) con ranking:
+// Primera Liga (RU) — 4 ejercicio(s) con ranking:
 //   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -46,6 +47,16 @@ window.RANKINGS["ru-pervayaliga"] = {
       { id:"akrontolyatti-ru", revenue:0.203, reportType:"official_balance_sheet",
         sourceId:"akrontolyatti-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.187],["Otros ingresos",0.015]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    sinDato: ["akrontolyatti-ru"],
+    clubs: [
+      { id:"orenburg-ru", revenue:12.022, reportType:"official_balance_sheet",
+        sourceId:"orenburg-ru-bfo-2021-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",11.767],["Otros ingresos",0.255]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
