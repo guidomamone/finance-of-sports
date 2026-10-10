@@ -474,6 +474,9 @@ const clubs = {
   // Cuiaba: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf. brandColor #006030
   // (procedencia en fuentes/Brasil/Cuiaba.md, club-or-year-onboarding/club-nuevo.md).
   'cuiaba-br': { id:'cuiaba-br', name:'Cuiabá Esporte Clube - Sociedade Anônima do Futebol', displayName:'Cuiaba', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#006030' },
+  // Ferroviaria: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/balanco-2010.pdf. brandColor #58141E
+  // (procedencia en fuentes/Brasil/Ferroviaria.md, club-or-year-onboarding/club-nuevo.md).
+  'ferroviaria-br': { id:'ferroviaria-br', name:'Ferroviária Futebol S.A.', displayName:'Ferroviaria', country:'BR', reportingCurrency:'BRL', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#58141E' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

@@ -1,0 +1,109 @@
+// ============================================================================
+// data/ferroviaria-br-data.js — Ferroviária Futebol S.A. (Brasil).
+// ALTA POR SCRIPT (tools/alta-club.mjs, 2026-10-10), SIN EJERCICIOS CARGADOS TODAVÍA:
+// las estructuras de abajo están vacías a propósito. Los rubros, los totales
+// oficiales y el resto del fiscalYearMeta los agrega la etapa de carga
+// (tools/proponer-carga.mjs / sesión de onboarding), que es también la que
+// reemplaza esta cabecera por la de siempre (fuente, perímetro, categorización).
+//
+// Documento que originó el alta: Clubes/Brasil/Ferroviaria/balanco-2010.pdf
+//
+// De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
+//   id                 ok        "ferroviaria-br" — slug de "Ferroviaria" + '-br' (convención de clubId, Admin/CONVENCIONES.md Versión 129)
+//   name               ok        "Ferroviária Futebol S.A." — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Fe
+//   displayName        ok        "Ferroviaria" — nombre de la carpeta del club en Clubes/
+//   country            ok        "BR" — carpeta de país "Brasil" (tabla PAISES)
+//   reportingCurrency  ok        "BRL" — moneda de curso legal de Brasil
+//   fiscalYearStart    ok        "01-01" — cierre del ejercicio: contenido del .md (26 de 26 fechas de fin de mes caen en el mes 12)
+//   sport              ok        "futbol" — el .md nombra el fútbol 16 veces y ningún otro deporte más que eso
+//   brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+//   anio               ok        2010 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
+//   cierre             ok        "2010-12-31" — año del ejercicio + mes de cierre (contenido del .md (26 de 26 fechas de fin de mes caen en el mes 12))
+//   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo
+//   perimetro          ok        "individual" — ajuste manual (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): una sola sociedad (CNPJ 06.020.811/0001-30, Fe
+//   currency           ok        "BRL" — moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)
+//   fxRef              ok        "BRL@2010-12-31" — el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2010-12-31 = 1.6662 (PTAX de cierre (venda) del Banco Central do Brasil al 2010-12-31)
+//   sourceId           ok        "ferroviaria-br-balanco-2010" — clubId + nombre del archivo en slug
+//   liga               pendiente null — no aparece en los rosters cacheados de 2010 (br-serieA): puede haber jugado otra división
+//
+// FISCAL YEAR META PROPUESTO para 2010 (NO registrado: un ejercicio con meta y
+// sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
+//   2010: {"reportType":"official_balance_sheet","currency":"BRL","fxRef":"BRL@2010-12-31","sourceId":"ferroviaria-br-balanco-2010"}
+// ============================================================================
+
+const ferroviariabrRevenueLinesByYear = {
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2023: [
+    { rawLabel:'Direitos de transmissão de TV', normalizedCategory:'broadcasting', amountNative:5.532582, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:11.163, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:1.415418, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Arrecadação de jogos', normalizedCategory:'matchday_competition', amountNative:0.745853, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Cessão temporária dos atletas', normalizedCategory:'player_sales', amountNative:2.544036, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Cessão definitiva dos atletas', normalizedCategory:'player_sales', amountNative:0.552391, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Direitos econômicos', normalizedCategory:'player_sales', amountNative:16.249599, disclosureLevel:'aggregated' }, // pág. 8, Claude 0.8
+    { rawLabel:'Sócio torcedor', normalizedCategory:'member_dues', amountNative:0.006822, disclosureLevel:'aggregated' }, // pág. 8, Claude 0.9
+    { rawLabel:'Premiações', normalizedCategory:'competition_bonus', amountNative:0.769, disclosureLevel:'aggregated' }, // pág. 8, Jev 1
+    { rawLabel:'Outras receitas', normalizedCategory:'other_income', amountNative:0.15577, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+    { rawLabel:'Impostos incidentes sobre a receita', normalizedCategory:'other_income', amountNative:-1.572101, disclosureLevel:'aggregated' }, // pág. 8, Jev 0.99
+  ],
+};
+const ferroviariabrExpenseLinesByYear = {
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'(-) Custos operacionais', normalizedCategory:'lump_football_operations_expense', amountNative:-27.035536, disclosureLevel:'aggregated' }, // pág. 8, precedente
+    { rawLabel:'Administrativas e gerais', normalizedCategory:'admin_general_expense', amountNative:-5.09485, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Com pessoal', normalizedCategory:'admin_general_expense', amountNative:-1.864064, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Atletas não profissionais', normalizedCategory:'youth_other_sports_expense', amountNative:-3.995818, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
+    { rawLabel:'Com materiais', normalizedCategory:'admin_general_expense', amountNative:-0.804482, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.97
+    { rawLabel:'Alojamento e moradia', normalizedCategory:'admin_general_expense', amountNative:-1.188523, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Tributária', normalizedCategory:'admin_general_expense', amountNative:0.732267, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
+    { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-0.850559, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.98
+  ],
+};
+const ferroviariabrFiscalYearMeta = {
+  // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2023-12-31',
+    sourceId:'ferroviaria-br-demonstracoes-financeiras-2023-fpf',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.787328, tax:0,
+    extraRows: [
+      {label:'Receita financeira', value:0.321606},
+      {label:'Despesas financeiras', value:-1.108934},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'(-) Custos operacionais', lado:'expense', importe:27.035536, motivo:'Claude 2026-10-09: \'(-) Custos operacionais\' es el costo de la actividad futbolística de la SAF sin desglose en el estado; la categoría \'sin desglosar\' es la que corresponde (la nota lo abre, pero sin reintento pago)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:37.56237, officialTotalExpenses:40.101565, officialPAT:-3.326523,
+  },
+};
+const ferroviariabrPresupuestoOverlayByYear = {};
+
+const ferroviariabrPasesData = [];
+const ferroviariabrResultadosData = {};
+const ferroviariabrTitulosData = [];
+
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA['ferroviaria-br'] = {
+  revenueLinesByYear: ferroviariabrRevenueLinesByYear, expenseLinesByYear: ferroviariabrExpenseLinesByYear,
+  fiscalYearMeta: ferroviariabrFiscalYearMeta, pasesData: ferroviariabrPasesData,
+  resultadosData: ferroviariabrResultadosData, titulosData: ferroviariabrTitulosData,
+  presupuestoOverlayByYear: ferroviariabrPresupuestoOverlayByYear,
+};
+
+// Fuentes de cada ejercicio: las agrega tools/cargar.mjs adentro de este bloque (Versión 379: hasta la 378 el esqueleto no lo traía y la
+// primera carga de un club dado de alta por script se revertía, "no encontré Object.assign(sources, {"; caso: Fortaleza CEIF).
+Object.assign(sources, {
+  'ferroviaria-br-demonstracoes-financeiras-2023-fpf': {
+    id:'ferroviaria-br-demonstracoes-financeiras-2023-fpf', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — demonstracoes-financeiras-2023-fpf (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+});
+
+memberCountByClub['ferroviaria-br'] = null;
