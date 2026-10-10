@@ -38,10 +38,6 @@ const sochiruRevenueLinesByYear = {
   // Generados/Rusia/Sochi/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Sochi/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2023: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2895.934, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:523.273, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Sochi/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2024: [
@@ -84,14 +80,17 @@ const sochiruRevenueLinesByYear = {
     { rawLabel:'Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование', normalizedCategory:'youth_football', amountNative:13.178, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:20.335, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
+  // 2023: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Sochi/bfo-2023-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Sochi/bfo-2023-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2023: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2895.934, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Доход от выбытия регистраций игроков (включая доход аренды)', normalizedCategory:'player_sales', amountNative:385.808, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Курсовые разницы', normalizedCategory:'other_income', amountNative:66.523, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Призовые средства (выплаты РФС, прочих организаций)', normalizedCategory:'competition_bonus', amountNative:60.2, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы', normalizedCategory:'other_income', amountNative:10.742, disclosureLevel:'detailed' }, // pág. ?, ?
+  ],
 };
 const sochiruExpenseLinesByYear = {
-  2023: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2326.957, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-31.077, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-71.486, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-134.903, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2024: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2830.285, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-53.618, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -122,29 +121,15 @@ const sochiruExpenseLinesByYear = {
     { rawLabel:'Членские взносы', normalizedCategory:'admin_general_expense', amountNative:-17.5, disclosureLevel:'detailed' }, // pág. ?, ?
     { rawLabel:'Прочие расходы', normalizedCategory:'other_expenses', amountNative:-3.84, disclosureLevel:'detailed' }, // pág. ?, ?
   ],
+  2023: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2326.957, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-31.077, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-71.486, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Резерв по сомнительным долгам', normalizedCategory:'other_expenses', amountNative:-41.333, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы', normalizedCategory:'other_expenses', amountNative:-93.569, disclosureLevel:'detailed' }, // pág. ?, ?
+  ],
 };
 const sochiruFiscalYearMeta = {
-  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2023-12-31',
-    sourceId:'sochi-ru-bfo-2023-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:175.96, tax:-223.4,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:175.96},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-223.4},
-    ],
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022): Premios por competencias, Venta de Jugadores, Otras secciones deportivas
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' } }, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:2895.934, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2326.957, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:807.344,
-  },
   2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2024-12-31',
     sourceId:'sochi-ru-bfo-2024-datos',
@@ -225,6 +210,27 @@ const sochiruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:590.509,
+  },
+  2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2023-12-31',
+    sourceId:'sochi-ru-bfo-2023-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:175.96, tax:-223.4,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:175.96},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-223.4},
+    ],
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022): Otras secciones deportivas
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' } }, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:2895.934, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2326.957, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:807.344,
   },
 };
 const sochiruPresupuestoOverlayByYear = {};
