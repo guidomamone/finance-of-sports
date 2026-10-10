@@ -42,3 +42,5 @@ Color de marca: #74DAF7 — ru.wikipedia (sección "Клубные цвета": 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Zenit/bfo-2021-datos.json` (sourceId `zenit-ru-bfo-2021-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Zenit/bfo-2022-datos.json` (sourceId `zenit-ru-bfo-2022-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Zenit/bfo-2023-datos.json` (sourceId `zenit-ru-bfo-2023-datos`).

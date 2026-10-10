@@ -6,7 +6,7 @@
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2023: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -139,6 +139,10 @@ window.RANKINGS["ru-premierliga"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"zenit-ru", revenue:243.387, reportType:"official_balance_sheet",
+        sourceId:"zenit-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",161.933],["Otros ingresos",81.454]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"spartakmoscow-ru", revenue:127.352, reportType:"official_balance_sheet",
         sourceId:"spartakmoscow-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",102.773],["Otros ingresos",24.579]],
