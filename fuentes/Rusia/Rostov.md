@@ -46,3 +46,5 @@ Color de marca: #FFDD00 — ru.wikipedia (infobox, camiseta local body1 FFDD00; 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Rostov/bfo-2021-datos.json` (sourceId `rostov-ru-bfo-2021-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Rostov/bfo-2022-datos.json` (sourceId `rostov-ru-bfo-2022-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Rostov/bfo-2023-datos.json` (sourceId `rostov-ru-bfo-2023-datos`).
