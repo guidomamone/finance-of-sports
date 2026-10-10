@@ -185,6 +185,19 @@ const criciumabrRevenueLinesByYear = {
     { rawLabel:'Receitas de publicidades', normalizedCategory:'sponsorship_commercial', amountNative:0.208933, disclosureLevel:'aggregated' }, // pág. 28, precedente
     { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:0.393393, disclosureLevel:'aggregated' }, // pág. 28, precedente
   ],
+  // 2016: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Criciuma/balanco-auditado-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Criciuma/balanco-auditado-2016.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2016: [
+    { rawLabel:'Receita com transmissão televisíveis', normalizedCategory:'broadcasting', amountNative:5.374282, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Receita com mensalidade de sócios', normalizedCategory:'member_dues', amountNative:5.002656, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Receita com Patrocínios', normalizedCategory:'sponsorship_commercial', amountNative:2.293138, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Receita de mecanismo de solidariedade', normalizedCategory:'player_sales', amountNative:1.73834, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Repasse de direitos federativos', normalizedCategory:'player_sales', amountNative:10.13655, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Venda de mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.233375, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Receitas de royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.029385, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Receitas Publicidades', normalizedCategory:'sponsorship_commercial', amountNative:0.263119, disclosureLevel:'aggregated' }, // pág. 28, precedente
+    { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:0.893194, disclosureLevel:'aggregated' }, // pág. 28, precedente
+  ],
 };
 const criciumabrExpenseLinesByYear = {
   2012: [ // tools/cargar.mjs (2026-10-09)
@@ -302,11 +315,21 @@ const criciumabrExpenseLinesByYear = {
     { rawLabel:'Departamento de Patrimônio', normalizedCategory:'admin_general_expense', amountNative:-3.970588, disclosureLevel:'aggregated' }, // pág. 10, precedente
     { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.466372, disclosureLevel:'aggregated' }, // pág. 10, precedente
   ],
+  2016: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Departamento Profissional', normalizedCategory:'lump_football_operations_expense', amountNative:-15.124972, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento Amador', normalizedCategory:'youth_other_sports_expense', amountNative:-2.60462, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento Administrativo', normalizedCategory:'admin_general_expense', amountNative:-0.860398, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento de Marketing e Comercial', normalizedCategory:'admin_general_expense', amountNative:-0.510526, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento de Patrimonio', normalizedCategory:'admin_general_expense', amountNative:-3.953431, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento Jurídico', normalizedCategory:'admin_general_expense', amountNative:-1.099762, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Departamento Loja - Tigre Maniacos', normalizedCategory:'other_expenses', amountNative:-0.093578, disclosureLevel:'aggregated' }, // pág. 9, precedente
+    { rawLabel:'Despesas Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.268364, disclosureLevel:'aggregated' }, // pág. 9, precedente
+  ],
 };
 const criciumabrFiscalYearMeta = {
   // 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2012-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2012-12-31
   2012: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Televisión, Venta de Jugadores
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Televisión, Venta de Jugadores
     incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2012-12-31',
     sourceId:'criciuma-br-demonstrativo-financeiro-2012',
@@ -327,7 +350,7 @@ const criciumabrFiscalYearMeta = {
     officialTotalRevenue:20.542105, officialTotalExpenses:21.274856, officialPAT:-2.088802,
   },
   2013: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Televisión, Venta de Jugadores
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Televisión, Venta de Jugadores
     incluidoEn:{ broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2013-12-31',
     sourceId:'criciuma-br-demonstracoes-financeiras-2013',
@@ -464,7 +487,7 @@ const criciumabrFiscalYearMeta = {
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2022-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2023-04-28); el ejercicio del documento cierra el 2022-12-31
   // 2022: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Onboarding to-do 165 (Claude, 2026-10-09): el subtotal 23.790.402 (L241) es NETO de 'Outras receitas Operacionais' 32.222 (L248); se cargan los departamentos (L242-L247, 23.822.624) y la otra receita como ingreso: 27.268.558 + 32.222 - 23.822.624 - 1.207.001 = 2.271.155 (L253)
   2022: { // tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Televisión, Venta de Jugadores
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Televisión, Venta de Jugadores
     incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2022-12-31',
     sourceId:'criciuma-br-demonstracoes-financeiras-2022',
@@ -555,6 +578,24 @@ const criciumabrFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:28.912398, officialTotalExpenses:20.930595, officialPAT:6.412915,
+  },
+  2016: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2016-12-31',
+    sourceId:'criciuma-br-balanco-auditado-2016',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.412444, tax:0,
+    extraRows: [
+      {label:'Despesas Financeiras', value:-1.541219},
+      {label:'Receitas Financeiras', value:0.128775},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Departamento Profissional', lado:'expense', importe:15.124972, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:25.964039, officialTotalExpenses:24.515651, officialPAT:0.035944,
   },
 };
 const criciumabrPresupuestoOverlayByYear = {};
@@ -651,6 +692,12 @@ Object.assign(sources, {
     title:'Criciúma Esporte Clube — balanco-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'criciuma-br-balanco-auditado-2016': {
+    id:'criciuma-br-balanco-auditado-2016', clubId:'criciuma-br',
+    title:'Criciúma Esporte Clube — balanco-auditado-2016 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Criciuma/balanco-auditado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

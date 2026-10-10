@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Paysandu/dre-2025.pdf",
  "md": "Clubes/Brasil/Paysandu/dre-2025.md",
- "generado": "2026-10-10T00:07:01.160Z",
+ "generado": "2026-10-10T00:16:38.745Z",
  "estado": "ok",
  "clubId": "paysandu-br",
  "year": 2025,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Paysandu/dre-2025.pdf",
+   "campo": "resultado-final",
+   "valor": "-2.175.575,20",
+   "linea": 45,
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14",
+   "evidencia": "pág. 1 del visor, .md L8-L45",
+   "autor": "Guido",
+   "fecha": "2026-10-10"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -35,6 +46,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-2.175575 por ajuste manual (-2.175.575,20: Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14); impuesto deducido 2.919267 (antes de impuestos 0.743692; el documento imprimía 0)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": true,
    "detalle": "la columna 2024 de este documento suma ingresos 64.485071; el sitio tiene 64.496592"
@@ -47,6 +63,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 4",
+  "ajuste manual: resultado final -2.175.575,20 (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): este DRE de 2025 imprime con signos de balancete (receitas negativas, custos positivos), así que el déficit sale como '2.175.575,20' positivo (L8 y L45). La cuenta: 69.580.477,67 - 30.443.507,96 - 39.852.911,20 - 1.459.633,71 = -2.175.575,20; dre-2024 (formato normal) imprime 2024 como déficit -3.885.733,14 y este documento lo trae como 3.885.733,14)",
   "duda de extraer que no afecta la carga: L23 y L33 son la misma cifra de gratuidades en ingreso y gasto en 2024; en 2025 ambas son 0,00."
  ],
  "reintentar": null,
@@ -56,10 +73,17 @@
   "ingresos": 69.580478,
   "gastos": 70.296419,
   "financiero": 1.459634,
-  "impuesto": 0,
+  "impuesto": 2.919267,
   "resultadoImpreso": 2.175575,
-  "resultadoParaCargar": 2.175575,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -2.175575,
+  "resultadoFinal": {
+   "valor": -2.175575,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 2.919267
+  },
   "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
@@ -257,20 +281,25 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "RECEITAS FINANCEIRAS",
-   "M": 0.019125,
+   "M": -0.019125,
    "linea": 41
   },
   {
    "etiqueta": "DESPESAS FINANCEIRAS",
-   "M": -1.478759,
+   "M": 1.478759,
    "linea": 42
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -2.919267
+  }
+ ]
 }
