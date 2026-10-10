@@ -7,7 +7,7 @@
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 10 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -195,6 +195,10 @@ window.RANKINGS["ru-premierliga"] = {
       { id:"cskamoscow-ru", revenue:145.071, reportType:"official_balance_sheet",
         sourceId:"cskamoscow-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",76.404],["Otros ingresos",68.666]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"spartakmoscow-ru", revenue:134.823, reportType:"official_balance_sheet",
+        sourceId:"spartakmoscow-ru-bfo-2022-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",82.882],["Otros ingresos",51.941]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"dynamomoscow-ru", revenue:113.12, reportType:"official_balance_sheet",
         sourceId:"dynamomoscow-ru-bfo-2022-datos",
