@@ -519,6 +519,9 @@ const clubs = {
   // Dynamo Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Moscow/bfo-2021-datos.md. brandColor #0044FF
   // (procedencia en fuentes/Rusia/Dynamo Moscow.md; tools/bfo-rusia.mjs).
   'dynamomoscow-ru': { id:'dynamomoscow-ru', name:'AO Football Club Dynamo-Moscow', displayName:'Dynamo Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#0044FF' },
+  // Lokomotiv Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Lokomotiv Moscow/bfo-2021-datos.md. brandColor #FF0000
+  // (procedencia en fuentes/Rusia/Lokomotiv Moscow.md; tools/bfo-rusia.mjs).
+  'lokomotivmoscow-ru': { id:'lokomotivmoscow-ru', name:'AO Football Club Lokomotiv', displayName:'Lokomotiv Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

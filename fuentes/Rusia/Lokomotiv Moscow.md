@@ -32,3 +32,5 @@ el archivo más pesado de todo el barrido ruso).
 - Último chequeo: 2026-09-18.
 
 Color de marca: #FF0000 — ru.wikipedia (sección "Клубные цвета": rojo, verde y blanco, rojo primero; principales rojo y blanco desde 1936; camiseta local body1 FF0000; escudo rojo con locomotora verde), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Lokomotiv Moscow/bfo-2021-datos.json` (sourceId `lokomotivmoscow-ru-bfo-2021-datos`).
