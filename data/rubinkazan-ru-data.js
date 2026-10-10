@@ -50,6 +50,12 @@ const rubinkazanruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2139.986, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1770.225, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2024: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2024-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Rubin Kazan/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2024: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:4137.976, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1086.189, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const rubinkazanruExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -69,6 +75,12 @@ const rubinkazanruExpenseLinesByYear = {
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-72.158, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-216.81, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-1381.255, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
+  2024: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-4056.276, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-5.079, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-152.92, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-952.683, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
 };
 const rubinkazanruFiscalYearMeta = {
@@ -135,6 +147,27 @@ const rubinkazanruFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-236.411,
   },
+  2024: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2024-12-31',
+    sourceId:'rubinkazan-ru-bfo-2024-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:160.064, tax:-81.108,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:166.172},
+      {label:'Проценты к уплате (2330)', value:-6.108},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-81.108},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:4137.976, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:4056.276, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:136.163,
+  },
 };
 const rubinkazanruPresupuestoOverlayByYear = {};
 
@@ -170,6 +203,12 @@ Object.assign(sources, {
     title:'OOO Football Club Rubin — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2023-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Rubin Kazan/bfo-2023-datos.md.',
+  },
+  'rubinkazan-ru-bfo-2024-datos': {
+    id:'rubinkazan-ru-bfo-2024-datos', clubId:'rubinkazan-ru',
+    title:'OOO Football Club Rubin — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/bfo-rusia.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2024-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso. Transcripción legible: Clubes/Rusia/Rubin Kazan/bfo-2024-datos.md.',
   },
 });
 
