@@ -5,7 +5,7 @@
 //
 // Premier Liga (RU) — 5 ejercicio(s) con ranking:
 //   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 9 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -79,6 +79,10 @@ window.RANKINGS["ru-premierliga"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"spartakmoscow-ru", revenue:120.284, reportType:"official_balance_sheet",
+        sourceId:"spartakmoscow-ru-bfo-2024-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",101.335],["Otros ingresos",18.949]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"krasnodar-ru", revenue:114.932, reportType:"official_balance_sheet",
         sourceId:"krasnodar-ru-bfo-2024-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",44.256],["Otros ingresos",70.676]],
