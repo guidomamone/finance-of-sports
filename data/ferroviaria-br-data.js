@@ -147,6 +147,36 @@ const ferroviariabrRevenueLinesByYear = {
     { rawLabel:'Vendas Mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:0.038727, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
     { rawLabel:'Publicidades', normalizedCategory:'sponsorship_commercial', amountNative:0.265, disclosureLevel:'aggregated' }, // pág. 22, Jev 1
   ],
+  // 2018: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Ferroviaria/dre-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Ferroviaria/dre-2018.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2018: [
+    { rawLabel:'Rendas de Jogos', normalizedCategory:'matchday_competition', amountNative:0.399641, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Cotas de TV', normalizedCategory:'broadcasting', amountNative:3.44, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Repasse Cessão Temporária dos Atletas', normalizedCategory:'player_sales', amountNative:0.13, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Venda dos Direitos Econômicos Atletas', normalizedCategory:'player_sales', amountNative:0.24, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:0.223977, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Premios, Outras Receitas', normalizedCategory:'competition_bonus', amountNative:0.40865, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Mercadorias c/Vendas', normalizedCategory:'sponsorship_commercial', amountNative:0.003632, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Patrocinios', normalizedCategory:'sponsorship_commercial', amountNative:3.889326, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Publicidades', normalizedCategory:'sponsorship_commercial', amountNative:0.434146, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'(-) Pis', normalizedCategory:'other_income', amountNative:-0.00006, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
+    { rawLabel:'(-) Cofins', normalizedCategory:'other_income', amountNative:-0.000276, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.94
+    { rawLabel:'(-) Icms', normalizedCategory:'other_income', amountNative:-0.000654, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.96
+    { rawLabel:'Venda dos Vínculos Desportivos Atletas', normalizedCategory:'player_sales', amountNative:0.905, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Aviso Prévio Descontado', normalizedCategory:'other_income', amountNative:0.0065, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.9
+    { rawLabel:'Multa Contratual', normalizedCategory:'other_income', amountNative:0.041768, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.99
+    { rawLabel:'Bonificações', normalizedCategory:'competition_bonus', amountNative:0.615865, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.97
+    { rawLabel:'Indenizações Recebidas', normalizedCategory:'other_income', amountNative:1.158485, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Reversão de Provisão de Férias', normalizedCategory:'other_income', amountNative:0.035032, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.92
+    { rawLabel:'Reversão de Provisão INSS Férias', normalizedCategory:'other_income', amountNative:0.001536, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Reversão de Provisão FGTS Férias', normalizedCategory:'other_income', amountNative:0.002405, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Reversão de Provisão PIS Férias', normalizedCategory:'other_income', amountNative:0.000347, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Ajuste de Correção - FPF', normalizedCategory:'other_income', amountNative:0.006041, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.99
+    { rawLabel:'Multa Tribunal de Justiça Desportiva', normalizedCategory:'other_income', amountNative:0.027, disclosureLevel:'aggregated' }, // pág. 6, Jev 1
+    { rawLabel:'Despesas Processuais FIFA', normalizedCategory:'other_income', amountNative:0.019215, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.97
+    { rawLabel:'Outras Receitas', normalizedCategory:'other_income', amountNative:0.017697, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.99
+    { rawLabel:'Royalties', normalizedCategory:'sponsorship_commercial', amountNative:0.013223, disclosureLevel:'aggregated' }, // pág. 6, Jev 0.98
+  ],
 };
 const ferroviariabrExpenseLinesByYear = {
   2023: [ // tools/cargar.mjs (2026-10-10)
@@ -584,11 +614,208 @@ const ferroviariabrExpenseLinesByYear = {
     { rawLabel:'Utensílios, Guarn., Cama, Mesa, Banho', normalizedCategory:'admin_general_expense', amountNative:-0.064879, disclosureLevel:'aggregated' }, // pág. 25, precedente
     { rawLabel:'Impostos / Taxas/Contribuições', normalizedCategory:'admin_general_expense', amountNative:-0.003224, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
   ],
+  2018: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Taxa de Policiamento', normalizedCategory:'match_organisation_expense', amountNative:-0.060652, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.98
+    { rawLabel:'Taxas Federações e Confederações', normalizedCategory:'match_organisation_expense', amountNative:-0.241398, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
+    { rawLabel:'Inss s/Patrocinios', normalizedCategory:'admin_general_expense', amountNative:-0.083575, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Manutenção, Conservação Estadio', normalizedCategory:'admin_general_expense', amountNative:-0.065067, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Agenciamento de Atletas', normalizedCategory:'other_expenses', amountNative:-0.0645, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Inss s/Arbitragens', normalizedCategory:'match_organisation_expense', amountNative:-0.017157, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Locação de Veiculos', normalizedCategory:'admin_general_expense', amountNative:-0.000588, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.96
+    { rawLabel:'Água Mineral', normalizedCategory:'match_organisation_expense', amountNative:-0.014025, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Exame Anti-Doping', normalizedCategory:'match_organisation_expense', amountNative:-0.004539, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Serviços Prest p/Terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.708341, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.97
+    { rawLabel:'Direito de Imagem', normalizedCategory:'wages_squad', amountNative:-1.395875, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Inss s/Cotas de TV', normalizedCategory:'admin_general_expense', amountNative:-0.241895, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Alimentação', normalizedCategory:'match_organisation_expense', amountNative:-0.350006, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Gastos c/ Viagens', normalizedCategory:'match_organisation_expense', amountNative:-0.008102, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Gastos c/ Hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-0.194006, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Premiações', normalizedCategory:'wages_squad', amountNative:-0.207858, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Jogos e Competições', normalizedCategory:'match_organisation_expense', amountNative:-0.538761, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Direito de Arena', normalizedCategory:'match_organisation_expense', amountNative:-0.1634, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Inss s/Premiações', normalizedCategory:'wages_squad', amountNative:-0.018533, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Inss s/Publicidade', normalizedCategory:'admin_general_expense', amountNative:-0.0162, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.93
+    { rawLabel:'Isotônico', normalizedCategory:'match_organisation_expense', amountNative:-0.009774, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Salários e Ordenados', normalizedCategory:'wages_squad', amountNative:-1.259152, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.8
+    { rawLabel:'Férias Normais', normalizedCategory:'wages_squad', amountNative:-0.118747, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Férias Indenizadas', normalizedCategory:'wages_squad', amountNative:-0.068071, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.95
+    { rawLabel:'13º Salário', normalizedCategory:'wages_squad', amountNative:-0.029482, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'Aviso Prévio Indenizado', normalizedCategory:'wages_squad', amountNative:-0.006627, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'INSS', normalizedCategory:'wages_squad', amountNative:-0.063046, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.96
+    { rawLabel:'FGTS', normalizedCategory:'wages_squad', amountNative:-0.109152, disclosureLevel:'aggregated' }, // pág. 1, Jev 1
+    { rawLabel:'FGTS Rescisório', normalizedCategory:'wages_squad', amountNative:-0.014491, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'13º Salário Indenizado', normalizedCategory:'wages_squad', amountNative:-0.000425, disclosureLevel:'aggregated' }, // pág. 1, Claude 0.85
+    { rawLabel:'Agua Mineral', normalizedCategory:'match_organisation_expense', amountNative:-0.010272, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Indenizações Trabalhistas', normalizedCategory:'wages_squad', amountNative:-0.204725, disclosureLevel:'aggregated' }, // pág. 1, precedente
+    { rawLabel:'Pis s/Folha', normalizedCategory:'admin_general_expense', amountNative:-0.014033, disclosureLevel:'aggregated' }, // pág. 1, Jev 0.99
+    { rawLabel:'Ajuda de Custo', normalizedCategory:'wages_squad', amountNative:-0.02396, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'Provisão 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.086625, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão INSS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.003898, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão FGTS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.007398, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Exames Médicos', normalizedCategory:'admin_general_expense', amountNative:-0.000304, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Provisão PIS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000867, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Salários e Ordenados', normalizedCategory:'wages_squad', amountNative:-0.370745, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Férias Normais', normalizedCategory:'wages_squad', amountNative:-0.006311, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Férias Indenizadas', normalizedCategory:'wages_squad', amountNative:-0.020131, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'13º Salário', normalizedCategory:'wages_squad', amountNative:-0.001917, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Aviso Prévio Indenizado', normalizedCategory:'wages_squad', amountNative:-0.000425, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'INSS', normalizedCategory:'wages_squad', amountNative:-0.017062, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'FGTS', normalizedCategory:'wages_squad', amountNative:-0.029992, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'FGTS Rescisório', normalizedCategory:'wages_squad', amountNative:-0.002602, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Vale Transporte', normalizedCategory:'wages_squad', amountNative:-0.003639, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Indenizações Trabalhistas', normalizedCategory:'wages_squad', amountNative:-0.001417, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Pis s/Folha', normalizedCategory:'admin_general_expense', amountNative:-0.003804, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Ajuda de Custo', normalizedCategory:'wages_squad', amountNative:-0.00025, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'Provisão 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.031411, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão Férias', normalizedCategory:'wages_squad', amountNative:-0.025546, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão INSS Férias', normalizedCategory:'wages_squad', amountNative:-0.001165, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão FGTS Férias', normalizedCategory:'wages_squad', amountNative:-0.002044, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Provisão INSS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.001413, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão FGTS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.002513, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Provisão PIS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000314, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Provisão PIS Férias', normalizedCategory:'wages_squad', amountNative:-0.000255, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Salários e Ordenados', normalizedCategory:'wages_squad', amountNative:-0.146793, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Férias Normais', normalizedCategory:'wages_squad', amountNative:-0.004194, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Férias Indenizadas', normalizedCategory:'wages_squad', amountNative:-0.006366, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'13º Salário', normalizedCategory:'wages_squad', amountNative:-0.004423, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'INSS', normalizedCategory:'wages_squad', amountNative:-0.006999, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'FGTS', normalizedCategory:'wages_squad', amountNative:-0.012443, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Pis s/Folha', normalizedCategory:'admin_general_expense', amountNative:-0.001554, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Ajuda de Custo', normalizedCategory:'wages_squad', amountNative:-0.07145, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'Provisão 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.007299, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão Férias', normalizedCategory:'wages_squad', amountNative:-0.007691, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão INSS Férias', normalizedCategory:'wages_squad', amountNative:-0.000306, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão FGTS Férias', normalizedCategory:'wages_squad', amountNative:-0.000615, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.99
+    { rawLabel:'Provisão INSS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.001876, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Provisão FGTS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000702, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Exames Médicos', normalizedCategory:'admin_general_expense', amountNative:-0.000044, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Provisão PIS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000088, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Provisão PIS Férias', normalizedCategory:'wages_squad', amountNative:-0.000077, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'Salários e Ordenados', normalizedCategory:'wages_squad', amountNative:-0.185903, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.8
+    { rawLabel:'Férias Indenizadas', normalizedCategory:'wages_squad', amountNative:-0.007486, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.95
+    { rawLabel:'13º Salário', normalizedCategory:'wages_squad', amountNative:-0.003181, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'Aviso Prévio Indenizado', normalizedCategory:'wages_squad', amountNative:-0.001929, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'INSS', normalizedCategory:'wages_squad', amountNative:-0.008499, disclosureLevel:'aggregated' }, // pág. 2, Jev 0.96
+    { rawLabel:'FGTS', normalizedCategory:'wages_squad', amountNative:-0.015074, disclosureLevel:'aggregated' }, // pág. 2, Jev 1
+    { rawLabel:'FGTS Rescisório', normalizedCategory:'wages_squad', amountNative:-0.001566, disclosureLevel:'aggregated' }, // pág. 2, precedente
+    { rawLabel:'13º Salário Indenizado', normalizedCategory:'wages_squad', amountNative:-0.000146, disclosureLevel:'aggregated' }, // pág. 2, Claude 0.85
+    { rawLabel:'Pis s/Folha', normalizedCategory:'admin_general_expense', amountNative:-0.001904, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Provisão 13º Salario', normalizedCategory:'wages_squad', amountNative:-0.010351, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão Férias', normalizedCategory:'wages_squad', amountNative:-0.008866, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão INSS Férias', normalizedCategory:'wages_squad', amountNative:-0.000399, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão FGTS Férias', normalizedCategory:'wages_squad', amountNative:-0.000709, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Provisão INSS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000466, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão FGTS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000828, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Provisão PIS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000103, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Provisão PIS Férias', normalizedCategory:'wages_squad', amountNative:-0.000088, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Despesas Pelo Uso da Marca', normalizedCategory:'admin_general_expense', amountNative:-0.165553, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Telefone', normalizedCategory:'admin_general_expense', amountNative:-0.000596, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Internet', normalizedCategory:'admin_general_expense', amountNative:-0.000932, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.001808, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Energia Elétrica', normalizedCategory:'admin_general_expense', amountNative:-0.007217, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Assinatura TV a Cabo', normalizedCategory:'admin_general_expense', amountNative:-0.002566, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Uniformes', normalizedCategory:'other_expenses', amountNative:-0.00077, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Salários e Ordenados', normalizedCategory:'wages_squad', amountNative:-0.557241, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Férias Normais', normalizedCategory:'wages_squad', amountNative:-0.033047, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Férias Indenizadas', normalizedCategory:'wages_squad', amountNative:-0.047338, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.95
+    { rawLabel:'13º Salario', normalizedCategory:'wages_squad', amountNative:-0.0069, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Aviso Prévio Indenizado', normalizedCategory:'wages_squad', amountNative:-0.017717, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'INSS', normalizedCategory:'wages_squad', amountNative:-0.026913, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.96
+    { rawLabel:'FGTS', normalizedCategory:'wages_squad', amountNative:-0.046779, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'FGTS Rescisório', normalizedCategory:'wages_squad', amountNative:-0.025034, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'13º Salário Indenizado', normalizedCategory:'wages_squad', amountNative:-0.001343, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.85
+    { rawLabel:'Vale Transporte', normalizedCategory:'wages_squad', amountNative:-0.019345, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Pis s/Folha', normalizedCategory:'admin_general_expense', amountNative:-0.006018, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Provisão 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.042107, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão Férias', normalizedCategory:'wages_squad', amountNative:-0.013393, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Indenizações Trabalhistas', normalizedCategory:'wages_squad', amountNative:-0.008499, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Provisão INSS Férias', normalizedCategory:'wages_squad', amountNative:-0.000603, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão FGTS Férias', normalizedCategory:'wages_squad', amountNative:-0.001072, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Provisão INSS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.001895, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.8
+    { rawLabel:'Provisão FGTS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.003008, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Exames Médicos', normalizedCategory:'admin_general_expense', amountNative:-0.000132, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Provisão PIS 13º Salário', normalizedCategory:'wages_squad', amountNative:-0.000421, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Provisão PIS Férias', normalizedCategory:'wages_squad', amountNative:-0.000134, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Ajuda de Custo', normalizedCategory:'wages_squad', amountNative:-0.0007, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.95
+    { rawLabel:'Licença de Uso de Software', normalizedCategory:'admin_general_expense', amountNative:-0.057644, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Depreciações', normalizedCategory:'depreciation', amountNative:-0.014825, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Bens de Valores Irrelevantes', normalizedCategory:'admin_general_expense', amountNative:-0.008552, disclosureLevel:'aggregated' }, // pág. 3, precedente
+    { rawLabel:'Despesas de Viagens', normalizedCategory:'match_organisation_expense', amountNative:-0.079698, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Impostos e Taxas', normalizedCategory:'admin_general_expense', amountNative:-0.019793, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Manutenção, Conservação de Bens', normalizedCategory:'admin_general_expense', amountNative:-0.063091, disclosureLevel:'aggregated' }, // pág. 3, Claude 0.9
+    { rawLabel:'Publicações', normalizedCategory:'admin_general_expense', amountNative:-0.00412, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.104817, disclosureLevel:'aggregated' }, // pág. 3, Jev 0.99
+    { rawLabel:'Propaganda e Publicidade', normalizedCategory:'admin_general_expense', amountNative:-0.075076, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Internet', normalizedCategory:'admin_general_expense', amountNative:-0.002408, disclosureLevel:'aggregated' }, // pág. 3, Jev 1
+    { rawLabel:'Custas e Emolumentos', normalizedCategory:'admin_general_expense', amountNative:-0.008781, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/Refeições', normalizedCategory:'match_organisation_expense', amountNative:-0.001817, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Material de Limpeza, Higiene, Copa, Cozinha', normalizedCategory:'admin_general_expense', amountNative:-0.053078, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Locação de Veículos', normalizedCategory:'admin_general_expense', amountNative:-0.0026, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.96
+    { rawLabel:'Registro de Domínio', normalizedCategory:'admin_general_expense', amountNative:-0.000076, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Licenciamento de Veículos', normalizedCategory:'admin_general_expense', amountNative:-0.001885, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.98
+    { rawLabel:'Locação de Equipamentos', normalizedCategory:'admin_general_expense', amountNative:-0.000105, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ Certificação Digital', normalizedCategory:'admin_general_expense', amountNative:-0.00024, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Locação de Equipamentos Eletrônicos', normalizedCategory:'admin_general_expense', amountNative:-0.001169, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ Estacionamentos', normalizedCategory:'admin_general_expense', amountNative:-0.000162, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Serviços Prestados p/ Terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.00036, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.97
+    { rawLabel:'Amortizações', normalizedCategory:'other_amortisation', amountNative:-0.003, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ TV a Cabo', normalizedCategory:'admin_general_expense', amountNative:-0.002953, disclosureLevel:'aggregated' }, // pág. 4, Claude 0.8
+    { rawLabel:'Locação de Móveis e Utensílios', normalizedCategory:'admin_general_expense', amountNative:-0.00108, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Fotocópias, Autenticações e Rec. Firmas', normalizedCategory:'admin_general_expense', amountNative:-0.0021, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.98
+    { rawLabel:'Utensílios Copa/Cozinha', normalizedCategory:'admin_general_expense', amountNative:-0.001405, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Despesas c/ Eventos', normalizedCategory:'other_expenses', amountNative:-0.003674, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ Fretes e Carretos', normalizedCategory:'admin_general_expense', amountNative:-0.000085, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.91
+    { rawLabel:'Despesas c/ Seguro de Vida', normalizedCategory:'admin_general_expense', amountNative:-0.014013, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ CIEE', normalizedCategory:'admin_general_expense', amountNative:-0.00067, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ Estagiários', normalizedCategory:'admin_general_expense', amountNative:-0.0005, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas Processuais - FIFA', normalizedCategory:'other_expenses', amountNative:-0.019168, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Despesas c/ Uniformes', normalizedCategory:'other_expenses', amountNative:-0.00214, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Serviços de Cobrança', normalizedCategory:'admin_general_expense', amountNative:-0.000028, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Materiais Esportivos', normalizedCategory:'other_expenses', amountNative:-0.007639, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Uniformes', normalizedCategory:'other_expenses', amountNative:-0.672592, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Medicamentos e Mat.Medicos e Cirurgicos', normalizedCategory:'admin_general_expense', amountNative:-0.104349, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Agua', normalizedCategory:'admin_general_expense', amountNative:-0.05101, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Aluguel', normalizedCategory:'admin_general_expense', amountNative:-0.551405, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Bens de Valores Irrelevantes', normalizedCategory:'admin_general_expense', amountNative:-0.071935, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Energia Eletrica', normalizedCategory:'admin_general_expense', amountNative:-0.020744, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Impostos e Taxas', normalizedCategory:'admin_general_expense', amountNative:-0.014809, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Manutenção e Conservação de Bens', normalizedCategory:'admin_general_expense', amountNative:-0.00078, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Utensílios, Guarn, Cama, Mesa e Banho', normalizedCategory:'admin_general_expense', amountNative:-0.00038, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Gas', normalizedCategory:'admin_general_expense', amountNative:-0.017568, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Manutenção e Conservação do Prédio', normalizedCategory:'admin_general_expense', amountNative:-0.005531, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Internet', normalizedCategory:'admin_general_expense', amountNative:-0.003525, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Assinatura TV a Cabo', normalizedCategory:'admin_general_expense', amountNative:-0.005046, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Condomínio', normalizedCategory:'admin_general_expense', amountNative:-0.047432, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Telefone', normalizedCategory:'admin_general_expense', amountNative:-0.000269, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'IPTU', normalizedCategory:'admin_general_expense', amountNative:-0.011922, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Agua', normalizedCategory:'admin_general_expense', amountNative:-0.000056, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Telefone', normalizedCategory:'admin_general_expense', amountNative:-0.010701, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Assistência Médica', normalizedCategory:'wages_squad', amountNative:-0.001534, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Impressos e Materiais de Escritorio', normalizedCategory:'admin_general_expense', amountNative:-0.00765, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Correios', normalizedCategory:'admin_general_expense', amountNative:-0.003613, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.99
+    { rawLabel:'Homenagens', normalizedCategory:'other_expenses', amountNative:-0.00112, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Multas de Trânsito', normalizedCategory:'other_expenses', amountNative:-0.001127, disclosureLevel:'aggregated' }, // pág. 4, precedente
+    { rawLabel:'Multas por Infração a Legislação', normalizedCategory:'other_expenses', amountNative:-0.026354, disclosureLevel:'aggregated' }, // pág. 4, Jev 0.96
+    { rawLabel:'Despesas Diversas', normalizedCategory:'other_expenses', amountNative:-0.128947, disclosureLevel:'aggregated' }, // pág. 4, Jev 1
+    { rawLabel:'Despesas c/ Brindes', normalizedCategory:'other_expenses', amountNative:-0.000799, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Contingências Trabalhistas', normalizedCategory:'admin_general_expense', amountNative:-0.040934, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Honorários Contábeis,Adv e de Auditorias', normalizedCategory:'admin_general_expense', amountNative:-0.230547, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Apoio Administrativo', normalizedCategory:'admin_general_expense', amountNative:-0.16765, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'Manutenção de Software', normalizedCategory:'admin_general_expense', amountNative:-0.023495, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.92
+    { rawLabel:'Consultoria', normalizedCategory:'admin_general_expense', amountNative:-0.0882, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.97
+    { rawLabel:'Multas TJD - Tribunal Justiça Desportiva', normalizedCategory:'other_expenses', amountNative:-0.00335, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+    { rawLabel:'ISS e Taxa Poder Polícia', normalizedCategory:'admin_general_expense', amountNative:-0.000107, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.95
+    { rawLabel:'Multas, Juros e Correção Monetária', normalizedCategory:'other_expenses', amountNative:-0.011917, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.91
+    { rawLabel:'Multas, Juros - Parcelamento ISS Retido', normalizedCategory:'other_expenses', amountNative:-0.000035, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Contribuição Negocial', normalizedCategory:'wages_squad', amountNative:-0.011125, disclosureLevel:'aggregated' }, // pág. 5, precedente
+    { rawLabel:'Imposto de Renda s/Remessa ao Exterior', normalizedCategory:'admin_general_expense', amountNative:-0.003383, disclosureLevel:'aggregated' }, // pág. 5, Jev 0.96
+    { rawLabel:'Impostos e Taxas Diversas', normalizedCategory:'admin_general_expense', amountNative:-0.000684, disclosureLevel:'aggregated' }, // pág. 5, Jev 1
+  ],
 };
 const ferroviariabrFiscalYearMeta = {
   // 2023: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária S.A.F.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A.F. desde 2022)
   2023: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
     incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2023-12-31',
     sourceId:'ferroviaria-br-demonstracoes-financeiras-2023-fpf',
@@ -626,7 +853,7 @@ const ferroviariabrFiscalYearMeta = {
   // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 1.196.469,33. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
   // 2010: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 24.494,58. Claude 2026-10-09: el costo está impreso entre paréntesis (resta de la receita) y el resto de los gastos en positivo; la lectura 5 invertía su signo. Cuenta: Receitas líquidas 1.581.519,76 (L162) - Custos 1.220.963,91 (L166) - Despesas Operacionais 402.186,01 (L172) - Serviços de terceiros 19.682,75 (L174) - Despesas financeiras 12.921,96 (L173) = -74.234,87 (L177).
   2010: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2023, 2025): Estadio, Televisión, Organización de partidos
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2023, 2025): Estadio, Televisión, Organización de partidos
     incluidoEn:{ matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2010-12-31',
     sourceId:'ferroviaria-br-balanco-2010',
@@ -648,7 +875,7 @@ const ferroviariabrFiscalYearMeta = {
   // 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 32.323,39. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
   // 2012: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 96.034,75. Claude 2026-10-09: los CUSTOS están impresos entre paréntesis (restan de la receita) y las despesas en positivo; la lectura 5 invertía su signo. Cuenta (L173-200): receitas 4.262.001,99 (suma de L174-186 con deduções -14.118,59) - custos 3.369.240,06 - despesas sin financeiras 947.516,67 (1.101.162,64 - 153.645,97) - financeiras 153.645,97 = -208.400,71 (L200 y L202).
   2012: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2025): Organización de partidos
+    // tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2025): Organización de partidos
     incluidoEn:{ match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'BRL', fxRef:'BRL@2012-12-31',
     sourceId:'ferroviaria-br-balanco-2012',
@@ -746,6 +973,42 @@ const ferroviariabrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:9.211197, officialTotalExpenses:10.134897, officialPAT:-1.190155,
   },
+  // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
+  // 2018: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2018 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
+  2018: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2018-12-31',
+    sourceId:'ferroviaria-br-dre-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.451022, tax:-0.061593,
+    extraRows: [
+      {label:'Juros Passivos', value:-0.015195},
+      {label:'Despesas Bancarias', value:-0.024227},
+      {label:'Encargos Financeiros', value:-0.311399},
+      {label:'Juros s/Leasing Bradesco', value:-0.004579},
+      {label:'Juros e Multas Lei 12996/14', value:-0.006118},
+      {label:'IOF', value:-0.00016},
+      {label:'Indenizações - Contratos de Aluguéis', value:-0.027},
+      {label:'Perdas Eventuais', value:-0.006963},
+      {label:'Juros e Multas Parcel. PIS s/Folha Pagto', value:-0.002001},
+      {label:'Juros e Multas Parcel. IRRF s/Salários', value:-0.001927},
+      {label:'Anuidade Cartão de Crédito', value:-0.000286},
+      {label:'Despesas c/ Cartão de Crédito', value:-0.000202},
+      {label:'Juros e Multas Parcelamento INSS', value:-0.040446},
+      {label:'Juros e Multas Parcelamento FGTS', value:-0.004779},
+      {label:'Juros e Multas Parcelamento PERT', value:-0.003513},
+      {label:'Juros e Multas Parcelamento IRRF', value:-0.003935},
+      {label:'Juros e Multas Parcel. ICMS 20319835-0', value:-0.000519},
+      {label:'Banco Bradesco S/A', value:0.000536},
+      {label:'Descontos Obtidos', value:0.001691},
+      {label:'Rendas Eventuais', value:0},
+      {label:'Contribuição Social', value:-0.022657},
+      {label:'IRPJ', value:-0.038936},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:12.018497, officialTotalExpenses:11.409354, officialPAT:0.09653,
+  },
 };
 const ferroviariabrPresupuestoOverlayByYear = {};
 
@@ -811,6 +1074,12 @@ Object.assign(sources, {
     title:'Ferroviária Futebol S.A. — balanco-2016 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/balanco-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'ferroviaria-br-dre-2018': {
+    id:'ferroviaria-br-dre-2018', clubId:'ferroviaria-br',
+    title:'Ferroviária Futebol S.A. — dre-2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Ferroviaria/dre-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 

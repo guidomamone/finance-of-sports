@@ -7,7 +7,7 @@
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2019: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2018: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2018: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
 // documento (ver `fxSource`/`fxRef` en el archivo de cada club) y agrupados en
@@ -42,6 +42,9 @@ window.RANKINGS["br-serieD"] = {
   2018: {
     leagueSize: null,
     clubs: [
+      { id:"ferroviaria-br", revenue:3.102, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-dre-2018",
+        mix:[["Cuotas Sociales",0.058],["Comercial / Sponsors",1.12],["Estadio",0.103],["Televisión",0.888],["Premios por competencias",0.264],["Venta de Jugadores",0.329],["Otros ingresos",0.339]] },
       { id:"novorizontino-br", revenue:1.848, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2018",
         mix:[["Comercial / Sponsors",0.042],["Estadio",0.282],["Televisión",1.014],["Venta de Jugadores",0.446],["Otros ingresos",0.065]] },
