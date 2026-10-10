@@ -34,10 +34,6 @@
 const rostovruRevenueLinesByYear = {
   // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Rostov/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2021: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:1852.908, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1630.427, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Rostov/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
@@ -62,14 +58,14 @@ const rostovruRevenueLinesByYear = {
     { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2798.413, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:790.726, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Rostov/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Rostov/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2021: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:1852.908, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:1630.427, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const rostovruExpenseLinesByYear = {
-  2021: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2710.822, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-79.969, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-109.547, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-747.87, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2022: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2409.578, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-93.197, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -94,29 +90,16 @@ const rostovruExpenseLinesByYear = {
     { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-198.887, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-116.29, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2021: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-747.87, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Материальные затраты (5610)', normalizedCategory:'other_expenses', amountNative:-100.843, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Расходы на оплату труда (5620)', normalizedCategory:'wages_squad', amountNative:-1473.968, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Отчисления на социальные нужды (5630)', normalizedCategory:'wages_squad', amountNative:-185.042, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Амортизация (5640)', normalizedCategory:'depreciation', amountNative:-5.243, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Прочие затраты (5650)', normalizedCategory:'other_expenses', amountNative:-1135.242, disclosureLevel:'detailed' }, // pág. ?, ?
+  ],
 };
 const rostovruFiscalYearMeta = {
-  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2021-12-31',
-    sourceId:'rostov-ru-bfo-2021-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-77.642, tax:24.745,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:1.295},
-      {label:'Проценты к уплате (2330)', value:-78.937},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:24.745},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:1852.908, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2710.822, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-217.77,
-  },
   2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2022-12-31',
     sourceId:'rostov-ru-bfo-2022-datos',
@@ -200,6 +183,26 @@ const rostovruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:413.157,
+  },
+  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2021-12-31',
+    sourceId:'rostov-ru-bfo-2021-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-77.642, tax:24.745,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:1.295},
+      {label:'Проценты к уплате (2330)', value:-78.937},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:24.745},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:1852.908, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-217.77,
   },
 };
 const rostovruPresupuestoOverlayByYear = {};
