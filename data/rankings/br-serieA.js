@@ -11,7 +11,7 @@
 //   2021: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2017: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2015: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2014: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2014: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2013: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2010: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2009: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -188,6 +188,9 @@ window.RANKINGS["br-serieA"] = {
       { id:"goias-br", revenue:23.569, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2014-2013",
         mix:[["Cuotas Sociales",1.315],["Comercial / Sponsors",1.093],["Estadio",2.319],["Televisión",12.483],["Premios por competencias",0.384],["Venta de Jugadores",2.523],["Otros ingresos",3.451]] },
+      { id:"criciuma-br", revenue:16.294, reportType:"official_balance_sheet",
+        sourceId:"criciuma-br-demonstrativo-financeiro-2014",
+        mix:[["Cuotas Sociales",4.07],["Comercial / Sponsors",0.312],["Televisión",11.327],["Venta de Jugadores",0.585]] },
     ],
   },
   2013: {
@@ -199,7 +202,7 @@ window.RANKINGS["br-serieA"] = {
       { id:"criciuma-br", revenue:19.209, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstracoes-financeiras-2013",
         mix:[["Cuotas Sociales",4.415],["Comercial / Sponsors",0.464],["Fútbol profesional (sin desglosar por la fuente)",13.355],["Otros ingresos",0.975]],
-        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2010: {

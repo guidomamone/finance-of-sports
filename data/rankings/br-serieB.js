@@ -144,7 +144,7 @@ window.RANKINGS["br-serieB"] = {
       { id:"criciuma-br", revenue:5.232, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstracoes-financeiras-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.226],["Otros ingresos",0.006]],
-        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {
@@ -206,7 +206,7 @@ window.RANKINGS["br-serieB"] = {
       { id:"criciuma-br", revenue:10.052, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstrativo-financeiro-2012",
         mix:[["Cuotas Sociales",2.752],["Comercial / Sponsors",0.412],["Fútbol profesional (sin desglosar por la fuente)",6.697],["Otros ingresos",0.192]],
-        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2011: {
