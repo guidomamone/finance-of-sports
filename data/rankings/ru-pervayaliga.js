@@ -3,7 +3,8 @@
 // NO EDITAR A MANO: se sobrescribe. Para cambiar un número hay que cambiar el
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
-// Primera Liga (RU) — 2 ejercicio(s) con ranking:
+// Primera Liga (RU) — 3 ejercicio(s) con ranking:
+//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
@@ -13,6 +14,15 @@
 // ============================================================================
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ru-pervayaliga"] = {
+  2024: {
+    leagueSize: null,
+    clubs: [
+      { id:"baltikakaliningrad-ru", revenue:19.783, reportType:"official_balance_sheet",
+        sourceId:"baltikakaliningrad-ru-bfo-2024-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",12.468],["Otros ingresos",7.315]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2023: {
     leagueSize: null,
     clubs: [
