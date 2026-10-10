@@ -68,6 +68,7 @@
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
 //   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
 //        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída" | --reemplaza-linea N]
+//        [--autor X]: quién lo decidió. Sin --autor firma quien corre el comando (autorPorDefecto, abajo).
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
 
@@ -104,11 +105,16 @@ export function ajusteClubODoc(pdf, campo) {
   const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length && !delDoc[delDoc.length - 1].anulado) return delDoc[delDoc.length - 1];
   const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length && !delClub[delClub.length - 1].anulado ? delClub[delClub.length - 1] : null;
 }
+// QUIÉN FIRMA (to-do 204). Escalón 0: --autor X (o `autor` cuando lo escribe un script, como perimetro-senales.mjs). Escalón 1: sin --autor,
+// quien corre el comando: los comandos que corre Claude Code (la sesión y sus subagentes) llevan la variable CLAUDECODE=1 y firman "Claude";
+// la terminal de Guido no la tiene (comprobado el 2026-10-09) y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió
+// Claude el 2026-10-07/09 dicen "Guido" en el jsonl y en el comentario del año en data/ (Guido: el histórico queda como está).
+export const autorPorDefecto = () => (process.env.CLAUDECODE === '1' ? 'Claude' : 'Guido');
 // Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
 // perímetro de un club cuando sus documentos coinciden (autor "perimetro-senales"); el motivo cita los documentos y los criterios.
 export function agregarAjuste(a) {
   if (!CAMPOS.includes(a.campo)) throw new Error(`campo desconocido: ${a.campo}`);
-  const linea = { pdf: a.pdf, campo: a.campo, valor: a.valor ?? null, linea: a.linea ?? null, motivo: a.motivo, evidencia: a.evidencia ?? null, autor: a.autor, fecha: new Date().toISOString().slice(0, 10) };
+  const linea = { pdf: a.pdf, campo: a.campo, valor: a.valor ?? null, linea: a.linea ?? null, motivo: a.motivo, evidencia: a.evidencia ?? null, autor: a.autor || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
   appendFileSync(ARCHIVO, JSON.stringify(linea) + '\n');
   return linea;
 }
@@ -129,7 +135,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!pdf || !CAMPOS.includes(campo) || !flag('--motivo')) { console.error('Uso: --anular "<pdf>" <campo> [--etiqueta "..."] [--valor "..."] --motivo "..."'); process.exit(1); }
     const vivo = ajustesDe(pdf).find((a) => a.campo === campo && (flag('--etiqueta') == null || a.etiqueta === flag('--etiqueta')) && (flag('--valor') == null || String(a.valor) === flag('--valor')));
     if (!vivo) { console.error('No hay un ajuste vigente con esa clave.'); process.exit(1); }
-    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || 'Guido', fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
     console.log(`Ajuste anulado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${vivo.etiqueta ? ` "${vivo.etiqueta}"` : ''}${vivo.valor != null ? ` = ${vivo.valor}` : ''}`);
     process.exit(0);
   }
@@ -167,7 +173,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: 'Guido', fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {

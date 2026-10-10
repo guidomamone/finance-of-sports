@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 649 — `ajustes.mjs` firma quien corre el comando (to-do 204) (2026-10-09)
+
+- `--agregar` acepta `--autor`; sin él firma "Claude" si el comando lo corre Claude Code (variable `CLAUDECODE=1`) y "Guido" si no
+  (antes, "Guido" siempre). Lo mismo `--anular` y `agregarAjuste()`. Solo hacia adelante: el histórico queda como está (pedido de Guido).
+
 ## Versión 648 — `ANTES_RE` en checo y griego (2026-10-09)
 
 - `tools/verificar.mjs`: el resultado antes de impuestos se reconoce también por "před zdaněním" y "προ φόρων" (sin el EBIT griego,
