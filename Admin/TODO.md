@@ -83,6 +83,7 @@ ni en el comentario de ningún archivo de código.
        Tondela, Pardubice, Gaziantep, Alanyaspor, Trabzonspor, La Equidad, nombres romanizados) están en Admin/altas-revision.jsonl.
     d) Las 16 preguntas de nombre legal de los clubes que bajaron a "con-preguntas" el 2026-10-09 (Noruega 7, Portugal 3, Chequia 2, Baltika,
        Basel, Go Ahead Eagles, Başakşehir): contestarlas con cita del documento las devuelve a "listo-para-alta".
+    PRÓXIMOS: Grecia (lote 64, etapa 2 ~US$ 3,31) y Rep. Checa (lote 65, etapa 2 ~US$ 31: 129 documentos, casi todos sin .md).
     Herramientas de la sesión: `lote.mjs --cargar` (escribe solo lo que queda listo, un commit por año), inventario `--solo`, `--reintentar`
     con propuestas frescas, escalón de documentos de pocos renglones. Las mejoras de script vistas quedan en los to-dos 197-202.
 
@@ -117,3 +118,17 @@ ni en el comentario de ningún archivo de código.
 202. LAS ALTAS DE DRE DE UNA PÁGINA PREGUNTAN `reportType` (optimización). Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018: 8 ajustes iguales a mano
     ("es la DRE del ejercicio, el balance está en otro PDF"). Escalón: si el .md trae "Demonstração do Resultado" con el período completo del año, ok.
 
+
+204. `tools/ajustes.mjs` FIRMA TODO COMO "Guido" (mejora de script, trazabilidad). No tiene `--autor`: los ~600 ajustes que agregaron Claude y los
+    subagentes el 2026-10-09 (Brasil, Rusia, revisión de altas) quedaron con `autor: "Guido"`, y `cargar.mjs` copia eso al comentario del año en
+    data/ ("AJUSTE MANUAL (..., Guido 2026-10-10)"), aunque el motivo diga "Claude". Agregar `--autor` (por defecto el de quien corre) y
+    corregir los existentes cuyo motivo empieza con "Claude" o "Revisión del alta (Claude". Medir: cuántos años de data/ cambian de comentario.
+
+205. RESPONDER "descartar" A UN CASO DE CATEGORÍA SACA LA FILA DE LA CARGA (mejora de script, trampa). En la cola, `descartar` quiere decir "el
+    documento o esa fila no se carga"; en un caso `cargar · categoria` es fácil usarlo creyendo que descarta la PREGUNTA (pasó con Vila Nova 2025
+    "Adesão ao condomínio LFU", corregido a tiempo). Propuesta: en los casos de categoría, `descartar` pide confirmación o se rechaza y se
+    sugiere `aceptar` / `corregir`.
+
+206. CABECERA DE LOS AÑOS DE RUSIA EN data/ (cosmético). Los años escritos por tools/bfo-rusia.mjs llevan el comentario de cargar.mjs ("Filas:
+    proponer-carga.mjs (ancla-listas); categorías: <md>.categorias.json"), que no es cierto para ellos (sale del JSON del fisco). `escribir()`
+    podría recibir el texto de la cabecera en P.
