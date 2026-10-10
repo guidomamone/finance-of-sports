@@ -525,6 +525,9 @@ const clubs = {
   // Rubin Kazan: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Rubin Kazan/bfo-2021-datos.md. brandColor #AA2704
   // (procedencia en fuentes/Rusia/Rubin Kazan.md; tools/bfo-rusia.mjs).
   'rubinkazan-ru': { id:'rubinkazan-ru', name:'OOO Football Club Rubin', displayName:'Rubin Kazan', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#AA2704' },
+  // Spartak Moscow: alta por tools/alta-club.mjs (2026-10-10) desde Clubes/Rusia/Spartak Moscow/bfo-2021-datos.md. brandColor #FF0000
+  // (procedencia en fuentes/Rusia/Spartak Moscow.md; tools/bfo-rusia.mjs).
+  'spartakmoscow-ru': { id:'spartakmoscow-ru', name:'AO Football Club Spartak-Moscow', displayName:'Spartak Moscow', country:'RU', reportingCurrency:'RUB', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
 };
 
 // Source: de dónde sale cada número. reliability es lo que le permite al

@@ -34,3 +34,5 @@ llamativamente chico — revisar si son notas reales o un documento mínimo) y 2
 - Último chequeo: 2026-09-18.
 
 Color de marca: #FF0000 — ru.wikipedia (sección "Клубные цвета": rojo y blanco, gana el no blanco; camiseta local body1 FF0000; en.wikipedia: color principal rojo; escudo rojo), verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2021 desde `Clubes/Rusia/Spartak Moscow/bfo-2021-datos.json` (sourceId `spartakmoscow-ru-bfo-2021-datos`).
