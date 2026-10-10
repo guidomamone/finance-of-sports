@@ -27,9 +27,9 @@ window.RANKINGS["ru-pervayaliga"] = {
   2023: {
     leagueSize: null,
     clubs: [
-      { id:"akrontolyatti-ru", revenue:1.174, reportType:"official_balance_sheet",
+      { id:"akrontolyatti-ru", revenue:6.383, reportType:"official_balance_sheet",
         sourceId:"akrontolyatti-ru-bfo-2023-datos",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.617],["Otros ingresos",0.557]],
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.617],["Otros ingresos",5.766]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
