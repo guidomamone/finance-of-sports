@@ -97,5 +97,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   // Vila Nova (alta-club.mjs, 2026-10-10): SIN VERIFICAR (no aparece en los rosters cacheados de 2014 (br-serieA, br-paulistaA3): puede haber jugado otra división).
   'vilanova-br': { 2014: null, 2025: 'br-serieB', 2015: 'br-serieC', 2016: 'br-serieB', 2017: 'br-serieB' }, // 2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js // 2015: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2015 Campeonato Brasileiro Série C" (tools/club-league-reference/br.js // 2016: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2016 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js // 2017: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2017 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
   // Remo (alta-club.mjs, 2026-10-10): verificado contra roster cacheado de "2021 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Remo".
-  'remo-br': { 2021: 'br-serieB' },
+  'remo-br': { 2021: 'br-serieB', 2025: 'br-serieB' }, // 2025: tools/cargar.mjs 2026-10-10, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 });

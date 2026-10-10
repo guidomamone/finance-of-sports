@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf",
  "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
- "generado": "2026-10-10T00:40:10.958Z",
+ "generado": "2026-10-10T00:43:21.498Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "remo-br",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -19,9 +19,9 @@
    "linea": 797,
    "etiqueta": "Aluguéis",
    "lado": "ingreso",
-   "reemplaza": null,
-   "motivo": "Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.",
-   "evidencia": "pág. 24 del visor (nota 16), .md L797-807; DRE L242",
+   "reemplaza": "Receitas recorrentes",
+   "motivo": "Onboarding to-do 165 (Claude, 2026-10-09): corrige el ajuste anterior de la misma fila, que no sacaba 'Receitas recorrentes' (42.297.318, L242) y la sumaba dos veces con sus 10 componentes de la nota 16 (L797-L806, suman 42.297.318)",
+   "evidencia": ".md L242, L797-L806",
    "autor": "Guido",
    "fecha": "2026-10-10"
   },
@@ -173,11 +173,11 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "ajuste manual: fila \"Aluguéis\" (ingreso) 1.197.447 (2026-10-10, Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.)",
+  "ajuste manual: fila \"Aluguéis\" (ingreso) 1.197.447, en lugar de \"Receitas recorrentes\" (2026-10-10, Onboarding to-do 165 (Claude, 2026-10-09): corrige el ajuste anterior de la misma fila, que no sacaba 'Receitas recorrentes' (42.297.318, L242) y la sumaba dos veces con sus 10 componentes de la nota 16 (L797-L806, suman 42.297.318))",
   "ajuste manual: fila \"Estacionamento\" (ingreso) 888.197 (2026-10-10, Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.)",
   "ajuste manual: fila \"Royalties de lojas\" (ingreso) 3.715.210 (2026-10-10, Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.)",
   "ajuste manual: fila \"Patrimoniais\" (ingreso) 1.789.439 (2026-10-10, Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.)",
@@ -212,12 +212,84 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Receitas recorrentes",
+   "etiqueta": "Aluguéis",
    "lado": "ingreso",
-   "M": 42.297318,
-   "pagina": 9,
-   "linea": 242,
-   "origen": "estado (lectura 5: hoja)"
+   "M": 1.197447,
+   "pagina": 24,
+   "linea": 797,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Estacionamento",
+   "lado": "ingreso",
+   "M": 0.888197,
+   "pagina": 24,
+   "linea": 798,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Royalties de lojas",
+   "lado": "ingreso",
+   "M": 3.71521,
+   "pagina": 24,
+   "linea": 799,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Patrimoniais",
+   "lado": "ingreso",
+   "M": 1.789439,
+   "pagina": 24,
+   "linea": 800,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Atividade sociais e esportivas",
+   "lado": "ingreso",
+   "M": 0.821643,
+   "pagina": 24,
+   "linea": 801,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Programa timemania",
+   "lado": "ingreso",
+   "M": 0.870607,
+   "pagina": 24,
+   "linea": 802,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Marketing, patrocínio e publicidade",
+   "lado": "ingreso",
+   "M": 23.627425,
+   "pagina": 24,
+   "linea": 803,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Royalties licenciados",
+   "lado": "ingreso",
+   "M": 0.583704,
+   "pagina": 24,
+   "linea": 804,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Sócio torcedor",
+   "lado": "ingreso",
+   "M": 6.492978,
+   "pagina": 24,
+   "linea": 805,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Venda de materiais",
+   "lado": "ingreso",
+   "M": 2.310668,
+   "pagina": 24,
+   "linea": 806,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Outras receitas (despesas)",

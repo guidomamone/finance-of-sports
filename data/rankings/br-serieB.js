@@ -4,7 +4,7 @@
 // `data/<club>-data.js` que lo origina y volver a correr el generador.
 //
 // Brasileirão Série B (BR) — 13 ejercicio(s) con ranking:
-//   2025: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2025: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2022: 5 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -30,6 +30,9 @@ window.RANKINGS["br-serieB"] = {
       { id:"athleticoparanaense-br", revenue:81.597, reportType:"official_balance_sheet",
         sourceId:"athleticoparanaense-br-demonstracoes-2025",
         mix:[["Cuotas Sociales",8.803],["Comercial / Sponsors",13.597],["Estadio",13.785],["Televisión",1.783],["Premios por competencias",2.52],["Venta de Jugadores",36.948],["Otras secciones deportivas",0.227],["Otros ingresos",3.935]] },
+      { id:"remo-br", revenue:15.353, reportType:"official_balance_sheet",
+        sourceId:"remo-br-demonstracoes-financeiras-2025",
+        mix:[["Cuotas Sociales",1.329],["Comercial / Sponsors",5.495],["Estadio",0.161],["Otras secciones deportivas",0.325],["Fútbol profesional (sin desglosar por la fuente)",7.382],["Otros ingresos",0.66]] },
       { id:"atleticogoianiense", revenue:14.303, reportType:"official_balance_sheet",
         sourceId:"atleticogoianiense-demonstracoes-2024-2025",
         mix:[["Cuotas Sociales",0.185],["Comercial / Sponsors",1.604],["Estadio",0.182],["Televisión",2.778],["Premios por competencias",0.531],["Venta de Jugadores",6.844],["Otros ingresos",2.179]] },

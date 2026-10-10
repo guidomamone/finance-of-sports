@@ -50,6 +50,22 @@ const remobrRevenueLinesByYear = {
     { rawLabel:'Demais Receitas', normalizedCategory:'other_income', amountNative:0.224168, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
     { rawLabel:'Receita com redução juros/multa - Perse', normalizedCategory:'other_income', amountNative:13.490829, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Brasil/Remo/demonstracoes-financeiras-2025.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+  2025: [
+    { rawLabel:'Receitas de futebol', normalizedCategory:'lump_football_operations', amountNative:40.616014, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.94
+    { rawLabel:'Aluguéis', normalizedCategory:'other_income', amountNative:1.197447, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Estacionamento', normalizedCategory:'stadium_other', amountNative:0.888197, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Royalties de lojas', normalizedCategory:'sponsorship_commercial', amountNative:3.71521, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Patrimoniais', normalizedCategory:'other_sports', amountNative:1.789439, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Atividade sociais e esportivas', normalizedCategory:'member_dues', amountNative:0.821643, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Programa timemania', normalizedCategory:'other_income', amountNative:0.870607, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Marketing, patrocínio e publicidade', normalizedCategory:'sponsorship_commercial', amountNative:23.627425, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Royalties licenciados', normalizedCategory:'sponsorship_commercial', amountNative:0.583704, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Sócio torcedor', normalizedCategory:'member_dues', amountNative:6.492978, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Venda de materiais', normalizedCategory:'sponsorship_commercial', amountNative:2.310668, disclosureLevel:'aggregated' }, // pág. 24, precedente
+    { rawLabel:'Outras receitas (despesas)', normalizedCategory:'other_income', amountNative:1.566092, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
+  ],
 };
 const remobrExpenseLinesByYear = {
   2021: [ // tools/cargar.mjs (2026-10-10)
@@ -70,6 +86,11 @@ const remobrExpenseLinesByYear = {
     { rawLabel:'Despesas Programa Socio Torcedor', normalizedCategory:'admin_general_expense', amountNative:-0.321113, disclosureLevel:'aggregated' }, // pág. 16, Jev 1
     { rawLabel:'Despesas com Passagens e Hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-0.468095, disclosureLevel:'aggregated' }, // pág. 16, Jev 0.99
   ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'(-) Custos das atividades esportivas', normalizedCategory:'lump_football_operations_expense', amountNative:-41.884585, disclosureLevel:'aggregated' }, // pág. 9, Jev 0.99
+    { rawLabel:'Despesas administrativas', normalizedCategory:'admin_general_expense', amountNative:-56.115841, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+    { rawLabel:'Despesas tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.306245, disclosureLevel:'aggregated' }, // pág. 9, Jev 1
+  ],
 };
 const remobrFiscalYearMeta = {
   2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
@@ -81,6 +102,35 @@ const remobrFiscalYearMeta = {
     netInterest:-0.250527, tax:0,
     grossDebt:null, cash:null,
     officialTotalRevenue:42.957263, officialTotalExpenses:19.887233, officialPAT:22.819501,
+  },
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.197.447. Onboarding to-do 165 (Claude, 2026-10-09): corrige el ajuste anterior de la misma fila, que no sacaba 'Receitas recorrentes' (42.297.318, L242) y la sumaba dos veces con sus 10 componentes de la nota 16 (L797-L806, suman 42.297.318)
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 888.197. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 3.715.210. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 1.789.439. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 821.643. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 870.607. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 23.627.425. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 583.704. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 6.492.978. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  // 2025: AJUSTE MANUAL (Admin/ajustes-manuales.jsonl, Guido 2026-10-10): fila = 2.310.668. Claude 2026-10-09: la DRE (L242) imprime 'Receitas recorrentes' 42.297.318 en un solo renglón y la nota 16 (L795-807) lo abre en 10 conceptos: 1.197.447 + 888.197 + 3.715.210 + 1.789.439 + 821.643 + 870.607 + 23.627.425 + 583.704 + 6.492.978 + 2.310.668 = 42.297.318 exacto. Se saca el subtotal y se cargan sus componentes.
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'remo-br-demonstracoes-financeiras-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.133597, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:1.719635},
+      {label:'Despesas financeiras', value:-2.853232},
+    ],
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Receitas de futebol', lado:'revenue', importe:40.616014, motivo:'el documento no desglosa este renglón'},
+      {renglon:'(-) Custos das atividades esportivas', lado:'expense', importe:41.884585, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:84.479424, officialTotalExpenses:98.306671, officialPAT:-14.960844,
   },
 };
 const remobrPresupuestoOverlayByYear = {};
@@ -105,6 +155,12 @@ Object.assign(sources, {
     title:'Clube do Remo — demonstracoes-contabeis-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
     note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/demonstracoes-contabeis-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
+  },
+  'remo-br-demonstracoes-financeiras-2025': {
+    id:'remo-br-demonstracoes-financeiras-2025', clubId:'remo-br',
+    title:'Clube do Remo — demonstracoes-financeiras-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+    note:'Cargado por tools/cargar.mjs (2026-10-10) desde la transcripción Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.',
   },
 });
 
