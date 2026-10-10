@@ -544,7 +544,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // número impreso para cerrar (ni totales, ni resultado, ni antes de impuestos), eso también es un fallo: antes pasaba como OK sin chequeo.
   const tI = F.total_ingresos ? Math.abs(parseNumber(F.total_ingresos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
   const tG = F.total_gastos ? Math.abs(parseNumber(F.total_gastos.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
-  const ANTES_RE = /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte|prima\s+delle\s+imposte/i;
+  const ANTES_RE = /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte|prima\s+delle\s+imposte|p[řr]ed\s+zdan[ěe]n[íi]m|προ\s+φ[οό]ρων(?![\s,]*(και\s+)?(τόκων|τοκων|χρηματοδοτ))/i;
+  // Checo "před zdaněním" (Výsledek hospodaření před zdaněním) y griego "προ φόρων" (Αποτέλεσμα / Κέρδη προ φόρων): to-do 165 c, antes de los
+  // lotes 64 y 65. El griego excluye "προ φόρων, χρηματοδοτικών..." y "προ φόρων και τόκων" (resultado operativo / EBIT, no el resultado antes
+  // de impuestos), igual que "antes de impuestos" no toma "antes de intereses e impuestos". Mayúsculas griegas sin acento: φ[οό]ρων.
   // EL RESULTADO IMPRESO SE LEE POR SU ETIQUETA (Versión 361): si la línea que extraer marcó como "resultado del ejercicio" dice "antes de
   // impuestos", es el resultado ANTES de impuestos (lectura 1), no el final. Caso real: Fortaleza CEIF 2023-2025 (las notas hacen de estado):
   // F.resultado apuntaba a L719 "Utilidad contable antes de impuesto" 1.609.817 y se le restaba el impuesto; sin restarlo cierra exacto.

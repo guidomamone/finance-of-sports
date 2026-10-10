@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 648 — `ANTES_RE` en checo y griego (2026-10-09)
+
+- `tools/verificar.mjs`: el resultado antes de impuestos se reconoce también por "před zdaněním" y "προ φόρων" (sin el EBIT griego,
+  "προ φόρων, χρηματοδοτικών…" / "προ φόρων και τόκων"), antes de los lotes 64 y 65. `prueba-completa` (87): verificaciones idénticas.
+
 ## Versión 643 — `lote.mjs --reintentar` regenera primero las propuestas de carga (to-do 196) (2026-10-09)
 
 - El reintento por "categoría en 0" sale de `<doc>.carga.json`, que solo escribe el lote: si el club se dio de alta fuera del lote, la propuesta guardada decía "el club no existe" y `--reintentar` no veía los ceros (Vila Nova 2021-2024, Avaí 2021). Ahora, con `--reintentar`, el lote vuelve a proponer (gratis) la carga de los documentos de su lista que no están en el sitio antes de decidir. Medido: ensayo de `--reintentar` sobre `prueba-completa` idéntico antes y después; con la propuesta fresca, el lote 62 tomó los 5 documentos.

@@ -280,7 +280,7 @@ Mitigaciones:
   La cadena depende del orden (Fortaleza: 2025 declara → 2024 → 2023): `verificarLista()` repite la pasada si alguno se resolvió así.
 - **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
   "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
-  compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte".
+  compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte", el checo "před zdaněním" y el griego "προ φόρων" (sin "προ φόρων, χρηματοδοτικών…" ni "προ φόρων και τόκων", que son el resultado operativo).
 - **Gestión de jugadores neta** (to-do 170, Versión 601): si ninguna lectura cerró, de las filas sin lado solo cuentan las que están entre el total de
   costos y el "resultado antes de impuestos" (AS Roma 2013-2017: "Gestione operativa netta calciatori"); un valor positivo entra como ingreso, uno
   negativo como gasto. Compuerta: las lecturas 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. El año vecino no se compara con un
