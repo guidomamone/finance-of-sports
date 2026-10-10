@@ -38,3 +38,5 @@ Color de marca: #80C0FE — ru.wikipedia (infobox, camiseta local body1 80C0FE, 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2022 desde `Clubes/Rusia/Krylia Sovetov Samara/bfo-2022-datos.json` (sourceId `kryliasovetovsamara-ru-bfo-2022-datos`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Rusia/Krylia Sovetov Samara/bfo-2023-datos.json` (sourceId `kryliasovetovsamara-ru-bfo-2023-datos`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2024 desde `Clubes/Rusia/Krylia Sovetov Samara/bfo-2024-datos.json` (sourceId `kryliasovetovsamara-ru-bfo-2024-datos`).
