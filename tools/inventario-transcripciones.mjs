@@ -43,6 +43,17 @@
 //   node tools/inventario-transcripciones.mjs --verificar --estado sin-verificar   # revalida solo los de ese estado
 //   node tools/inventario-transcripciones.mjs --listar revisar    # lista los PDFs en ese estado
 //   node tools/inventario-transcripciones.mjs --listar pendiente-segunda-voz --dir Clubes/Colombia
+//   node tools/inventario-transcripciones.mjs --solo Admin/lote-56.txt          # ALCANCE: recalcula solo esos PDFs (ver abajo)
+//   node tools/inventario-transcripciones.mjs --solo "Clubes/Brasil/Remo"       # ... o los de esa carpeta
+//
+// ALCANCE (--solo, Versión 640, aprobado por Guido el 2026-10-09). Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
+// son `onboard.mjs --all --dry-run` para saber qué está cargado) y pipeline.mjs y lote.mjs lo disparaban varias veces por corrida
+// aunque la corrida fuera de 62 PDFs (lote 56, Brasil). Con --solo <lista|carpeta> se recalculan SOLO esos PDFs (también la pregunta
+// a onboard.mjs, acotada a sus carpetas) y las demás líneas del registro se copian tal cual de la versión anterior; los duplicados se
+// siguen buscando contra el registro entero (la huella de cada PDF ya está guardada). La escalera: escalón 0 = --solo (lo usan
+// pipeline.mjs --lista/--dir y lote.mjs con su lista); escalón 1 = el recálculo completo (estado.mjs --actualizar, o sin alcance).
+// Compuerta medida: las líneas de los PDFs del alcance salen idénticas a las del recálculo completo, y las demás, idénticas a las
+// anteriores. Un PDF borrado del disco fuera del alcance sigue en el registro hasta el próximo recálculo completo.
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
@@ -62,6 +73,7 @@ const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] 
 const doVerify = args.includes('--verificar');
 const listState = flagVal('--listar');
 const dirFilter = flagVal('--dir');
+const soloArg = flagVal('--solo');
 const limit = flagVal('--limit') ? Number(flagVal('--limit')) : Infinity;
 
 const statePath = resolve(root, 'Admin', 'transcripciones-estado.jsonl');
@@ -90,11 +102,16 @@ function walkPdfs(dir, out = []) {
 // Qué ejercicios ya están cargados en el sitio: el mismo criterio que usa tools/onboard.mjs (lo que
 // ese comando NO lista como "necesita trabajo" es lo que ya está cargado). Se le pregunta a él en vez
 // de duplicar la lógica de resolver club+año, que ya tiene sus casos raros resueltos.
-function pendingByOnboard() {
-  const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--all', '--dry-run', '--confirm'], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, env: { ...process.env, ONBOARD_IGNORE_BRIEFING: '1' } });
+// Con `dirs` (el alcance de --solo) se le pregunta solo por esas carpetas (una corrida por carpeta, --dir). Una carpeta sin nada pendiente
+// devuelve 0 documentos y es válido (todo cargado); el control de "no devolvió nada" queda para el recálculo completo.
+function pendingByOnboard(dirs = null) {
   const set = new Set();
-  for (const m of (r.stdout || '').matchAll(/^=== (.+?) ===$/gm)) set.add(m[1]);
-  if (set.size === 0) throw new Error('onboard.mjs --dry-run no devolvió ningún documento: no puedo saber qué está cargado');
+  for (const dir of dirs || [null]) {
+    const r = spawnSync('node', [resolve(root, 'tools/onboard.mjs'), '--all', ...(dir ? ['--dir', dir] : []), '--dry-run', '--confirm'], { cwd: root, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024, env: { ...process.env, ONBOARD_IGNORE_BRIEFING: '1' } });
+    if (r.status !== 0) throw new Error(`onboard.mjs --dry-run${dir ? ` --dir ${dir}` : ''} falló: ${(r.stderr || '').slice(0, 300)}`);
+    for (const m of (r.stdout || '').matchAll(/^=== (.+?) ===$/gm)) set.add(m[1]);
+  }
+  if (!dirs && set.size === 0) throw new Error('onboard.mjs --dry-run no devolvió ningún documento: no puedo saber qué está cargado');
   return set;
 }
 
@@ -183,8 +200,12 @@ function runVerification(entry) {
 
 // ---------------------------------------------------------------------------
 // Se incluyen TAMBIÉN los PDFs sin ningún .md (estado 'sin-md'): el script único tools/pipeline.mjs los transcribe.
-const pdfsAll = walkPdfs(resolve(root, 'Clubes')).sort();
-const pending = pendingByOnboard();
+// ALCANCE (--solo): la lista de PDFs (un archivo con una ruta por línea, como Admin/lote-NN.txt) o una carpeta.
+const soloPdfs = !soloArg ? null
+  : existsSync(resolve(root, soloArg)) && statSync(resolve(root, soloArg)).isDirectory() ? walkPdfs(resolve(root, soloArg)).sort()
+  : readFileSync(resolve(root, soloArg), 'utf8').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')).map((l) => resolve(root, l)).filter((a) => existsSync(a)).sort();
+const pdfsAll = soloPdfs || walkPdfs(resolve(root, 'Clubes')).sort();
+const pending = pendingByOnboard(soloPdfs ? [...new Set(soloPdfs.map((a) => relative(root, dirname(a))))] : null);
 const prov = loadProvenance();
 const verifs = latestVerifications();
 
@@ -252,6 +273,13 @@ entries = entries.map((e) => {
   const jev = vv && vv.mdSha1 === e.mdSha1 && vv.jev ? { jev: vv.jev, rubros: vv.rubros ?? null } : {};
   return { ...rest, ...jev, ...(mf ? { motor: mf.motor, motorOriginal: e.motor, paginasReemplazadas: mf.paginasReemplazadas, reserva: mf.reserva, previo: mf.previo } : {}), estado: s.status, metodo: s.method, detalle: s.detail, mdSha1 };
 });
+// ALCANCE (--solo): las líneas de afuera del alcance se copian tal cual del registro anterior (ya traen su estado, su huella y su marca de
+// duplicado; el bloque de abajo vuelve a marcar los duplicados contra el registro entero, igual que en el recálculo completo).
+if (soloPdfs) {
+  const enAlcance = new Set(entries.map((e) => e.pdf));
+  entries = [...[...previoHuella.values()].filter((x) => x && x.pdf && !enAlcance.has(x.pdf)), ...entries]
+    .sort((a, b) => (a.pdf < b.pdf ? -1 : a.pdf > b.pdf ? 1 : 0));
+}
 // DUPLICADOS (Versión 521): de cada grupo de PDFs con la misma huella queda UNO (el cargado, si no el que tiene .md, si no la primera
 // ruta); los demás pasan al estado `duplicado` con `duplicadoDe` (salvo uno ya cargado: Elche y Mirassol tienen las dos copias
 // registradas como cargadas y ahí no hay nada que ahorrar). Ninguna etapa los procesa (pipeline.mjs elige por estado; lote.mjs los

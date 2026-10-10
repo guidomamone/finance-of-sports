@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 640 — Registro de transcripciones por alcance (`--solo`) (2026-10-09)
+
+- `tools/inventario-transcripciones.mjs --solo <lista|carpeta>`: recalcula solo esos PDFs (la pregunta a `onboard.mjs`, acotada a sus carpetas) y copia el resto del registro; los duplicados se siguen marcando contra el registro entero.
+- `pipeline.mjs` (con `--lista`/`--dir`) y `lote.mjs` (su lista) lo usan. Medido: ensayo de `pipeline.mjs --lista Admin/lote-56.txt` 54,9 s → 1,2 s con salida y registro idénticos; `--solo` sobre `prueba-completa`, `lote-56` y `lote-58` da el registro idéntico al recálculo completo; `lote.mjs --lista Admin/prueba-completa.txt` sin diferencias.
+
 ## Versión 638 — To-do 194: las gestiones de Juventus (2026-10-09)
 
 - `data/gestiones/it.js`: Chiusano (hasta su muerte, 31/7/2003, sitio oficial), Grande Stevens (12/8/2003, UEFA), Cobolli Gigli (asamblea del 29/6/2006, comunicado

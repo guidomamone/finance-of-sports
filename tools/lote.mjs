@@ -142,7 +142,7 @@ for (const pdf of docs) {
   // directo a localizar sobre una transcripción sin validar. Caso: Juventus 2021-22 quedó así al rearmar 3 páginas.
   if (e.estado === 'sin-verificar' && !e.cargado) {
     const carpeta = pdf.split('/').slice(0, 3).join('/');
-    node('tools/inventario-transcripciones.mjs', ['--verificar', '--estado', 'sin-verificar', '--dir', carpeta], { silencioso: true });
+    node('tools/inventario-transcripciones.mjs', ['--verificar', '--estado', 'sin-verificar', '--dir', carpeta, '--solo', carpeta], { silencioso: true });
     registro = leerRegistro(); e = registro.find((x) => x.pdf === pdf) || e;
     console.log(`  ${pdf}: "sin verificar" -> validación gratis del inventario (etapa 2, escalón 1a): ahora "${e.estado}"`);
   }
@@ -156,7 +156,7 @@ for (const pdf of docs) {
       console.log(`  ${pdf}: el inventario dice "revisar" -> resolver-inventario (etapa 2, escalón 1a): ${l.replace(pdf, '').replace(/\s+/g, ' ').trim()}`);
       resolverEnsayo = true;
     } else {
-      node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
+      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); // (Versión 640) solo la lista del lote registro = leerRegistro();
       e = registro.find((x) => x.pdf === pdf) || e;
       console.log(`  ${pdf}: resolver-inventario (etapa 2, escalón 1a): el inventario ahora dice "${e.estado}"${e.estado === 'listo' ? '' : ` (${String(e.detalle || '').slice(0, 120)}): sigue el escalón 1b`}`);
     }
@@ -281,7 +281,7 @@ for (const pdf of docs) {
       console.log(`  ${pdf}: re-transcribiendo con Mistral (páginas en imagen: ${enImagen.join(', ')})...`);
       const r = node('tools/mistral-ocr-transcribe.mjs', [pdf]);
       if (r.status !== 0 || !existsSync(mdAbs)) { if (!existsSync(mdAbs)) copyFileSync(previo, mdAbs); estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló (se restauró la transcripción anterior)'; continue; }
-      node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
+      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); // (Versión 640) solo la lista del lote registro = leerRegistro();
       const L2 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
       if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
       const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += anotarValidar(pdf, V2);
@@ -327,7 +327,7 @@ console.log('\n=== Etapa 7: categorizar (Jev y Claude, con precedente y memoria)
 const conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
 if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
-  node('tools/inventario-transcripciones.mjs', [], { silencioso: true }); registro = leerRegistro();
+  node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); // (Versión 640) solo la lista del lote registro = leerRegistro();
   node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/.lote-lista-actual.txt']);
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);
   node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/.lote-lista-actual.txt']);

@@ -79,7 +79,9 @@ const node = (script, argv, opts = {}) => spawnSync('node', [resolve(root, scrip
 
 function refreshLedger() {
   process.stdout.write('Actualizando el registro de transcripciones (qué está cargado, qué tiene .md, en qué estado)... ');
-  const r = node('tools/inventario-transcripciones.mjs', [], { stdio: ['ignore', 'pipe', 'inherit'] });
+  // (Versión 640) con --lista o --dir, solo esos PDFs (inventario --solo: ~1 s en vez de ~1 min; las demás líneas quedan como estaban).
+  const alcance = listFile || dirFilter;
+  const r = node('tools/inventario-transcripciones.mjs', alcance ? ['--solo', alcance] : [], { stdio: ['ignore', 'pipe', 'inherit'] });
   if (r.status !== 0) { console.error('FALLÓ\n' + (r.stderr || r.stdout)); process.exit(1); }
   console.log('listo.');
   return readJsonl(statePath);

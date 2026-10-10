@@ -17,10 +17,14 @@ caffeinate -i node tools/lote.mjs --lista Admin/lote-NN.txt --ejecutar --reinten
 node tools/cola.mjs                                                         # la cola humana
 node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
 node tools/inventario-transcripciones.mjs                                   # el registro, con la etapa de cada estado (gratis)
+node tools/inventario-transcripciones.mjs --solo <lista|carpeta>          # solo esos PDFs (~1 s); lo usan pipeline.mjs --lista/--dir y lote.mjs
 node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # lo gastado por documento en una corrida pasada
 ```
 
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica.
+- El registro (`Admin/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (12.184 PDFs, sobre todo `onboard.mjs --all` para saber
+  qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
+  líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.
 - Un solo proceso a la vez escribiendo el registro: `lote.mjs` y `pipeline.mjs` (también en ensayo) y `cargar.mjs --escribir` toman el
   mismo candado (`Admin/.candado.lock`, `tools/candado.mjs`). Si otro lo tiene, sale sin hacer nada y dice cuál; si quedó el de uno que
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
