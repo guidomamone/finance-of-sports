@@ -80,3 +80,5 @@ Color de marca: null — tricolor amarillo, negro y blanco (pt.wikipedia: "cores
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2014 desde `Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.pdf` (sourceId `criciuma-br-demonstrativo-financeiro-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2015 desde `Clubes/Brasil/Criciuma/balanco-2015.pdf` (sourceId `criciuma-br-balanco-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2017 desde `Clubes/Brasil/Criciuma/balanco-2017.pdf` (sourceId `criciuma-br-balanco-2017`).
