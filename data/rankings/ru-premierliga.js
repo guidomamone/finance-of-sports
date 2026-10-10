@@ -7,7 +7,7 @@
 //   2025: 16 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2024: 14 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 15 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2022: 12 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2022: 13 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 11 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //
 // Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada
@@ -210,7 +210,6 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2022: {
     leagueSize: null,
-    sinDato: ["dynamomakhachkala-ru"],
     clubs: [
       { id:"zenit-ru", revenue:246.323, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2022-datos",
@@ -259,6 +258,9 @@ window.RANKINGS["ru-premierliga"] = {
         sourceId:"parinizhnynovgorod-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.211],["Otros ingresos",2.774]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"dynamomakhachkala-ru", revenue:3.839, reportType:"official_balance_sheet",
+        sourceId:"dynamomakhachkala-ru-bfo-2022-datos",
+        mix:[["Otros ingresos",3.839]] },
     ],
   },
   2021: {
