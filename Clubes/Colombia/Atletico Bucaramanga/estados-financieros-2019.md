@@ -378,10 +378,8 @@ Continua, en la próxima pagina.
 
 --- pág. 12 ---
 
-**Flujos de efectivo procedentes de (utilizados en) Actividades de Financiacion**
-
-| Concepto | 2019 | 2018 |
-|---|---|---|
+| **Flujos de efectivo procedentes de (utilizados en) Actividades de Financiacion** | | |
+| :--- | :---: | :---: |
 | (+) Importes procedentes de aumento de capital y/o recolocación de acciones | $ - | $ - |
 | (-) Disminucion de capital social y/o readquisicion de acciones | $ - | -$ 1.358.740 |
 | (-) Pagos de otras participaciones en el patrimonio | $ - | $ - |
@@ -394,29 +392,24 @@ Continua, en la próxima pagina.
 | (-) Intereses pagados | $ - | $ - |
 | (+/-) Otras entradas (salidas) de efectivo | $ - | -$ 2.852.927 |
 | **Flujos de efectivo netos procedentes de (utilizados en) actividades de Financiacion** | **$ -** | **-$ 4.211.667** |
-
-| Concepto | 2019 | 2018 |
-|---|---|---|
-| **Incremento (disminución) neto de efectivo y equivalentes al efectivo** | -$ 390.397 | $ 319.911 |
-| Efectivo y equivalentes al efectivo al principio del periodo | $ 1.619.405 | $ 1.299.494 |
-| Efectivo y equivalentes al efectivo al final del periodo | $ 1.229.008 | $ 1.619.405 |
+| **Incremento (disminución) neto de efectivo y equivalentes al efectivo** | **-$ 390.397** | **$ 319.911** |
+| **Efectivo y equivalentes al efectivo al principio del periodo** | **$ 1.619.405** | **$ 1.299.494** |
+| **Efectivo y equivalentes al efectivo al final del periodo** | **$ 1.229.008** | **$ 1.619.405** |
 
 Las notas son parte integral de los estados financieros.
 
 (*) Los suscritos representante legal y contador certificamos que hemos verificado previamente las afirmaciones contenidas en los estados financieros y que los mismos han sido tomados fielmente de los libros de contabilidad.
 
-[firmas]
+Oscar Enrique Alvarez Ascanio  
+Representante Legal  
 
-Oscar Enrique Alvarez Ascanio
-Representante Legal
+German Gonzalo Alvarez Alvarez  
+Contador Público  
+T.P.N°. 256558-T  
 
-German Gonzalo Alvarez Alvarez
-Contador Publico
-T.P.N°. 256558-T
-
-Orlando Bravo Afanador
-Revisor Fiscal
-T.P.N°. 78280-T
+Orlando Bravo Afanador  
+Revisor Fiscal  
+T.P.N°. 78280-T  
 
 10
 
@@ -951,45 +944,34 @@ Informe de otros procesos laborales en curso en contra del Club Atletico Bucaram
 
 --- pág. 29 ---
 
-NOTA 10 – PASIVOS POR IMPUESTOS DIFERIDOS
-Nota 10
+27
 
-Detalle de los saldos de pasivos por impuestos diferidos
-
-| Concepto | 31 de diciembre de 2019 | 31 de diciembre de 2018 |
-|---|---|---|
-| Pasivos por impuestos diferidos | | |
-| Pasivo por impuestos diferido | $ 408.480 | $ 408.480 |
-| **Totales** | **$ 408.480** | **$ 408.480** |
-
-Ver Nota 5.
-
-NOTA 11 – PASIVO RESTRINGIDO
+*NOTA 11 – PASIVO RESTRINGIDO*
 
 El saldo por pasivo restringido hace referencia a ingresos recibidos por anticipado por los siguientes conceptos que se detallan a continuación.
 
-Nota 11
+**Nota 11**
 
-Detalle de los saldos de pasivos restringidos
+**Detalle de los saldos de pasivos restringidos**
 
 | Concepto | 31 de diciembre de 2019 | 31 de diciembre de 2018 |
 |---|---|---|
-| Pasivos restringidos | | |
+| **Pasivos restringidos** | | |
 | Anticipo controlado Dimayor | $ 72.000 | $ 1.197.606 |
 | Anticipo controlado Dimayor, Bavaria patrocinio liga Aguila | $ - | $ 307.107 |
 | **Totales** | **$ 72.000** | **$ 1.504.713** |
 
 La variación del año 2018 a 2019 se debe a que los ingresos recibidos por anticipado de vigencias anteriores se reconocieron como ingreso del periodo 2019, en esta vigencia se recibe un nuevo ingreso por valor de $ 72.000.000 por concepto de televisión internacional el cual será reconocido en periodos posteriores.
 
-NOTA 12 – PATRIMONIO
+*NOTA 12 – PATRIMONIO*
 
-Nota 12
+**Nota 12**
 
-Detalle de los saldos del patrimonio
+**Detalle de los saldos del patrimonio**
 
 | Concepto | 31 de diciembre de 2019 | 31 de diciembre de 2018 |
 |---|---|---|
-| Patrimonio | | |
+| **Patrimonio** | | |
 | Capital emitido | $ 800.000 | $ 800.000 |
 | Reserva legal | $ 203.974 | $ - |
 | Utilidad y/o perdidas acumuladas | $ 1.835.763 | $ 7.201 |
@@ -997,8 +979,6 @@ Detalle de los saldos del patrimonio
 | **Totales** | **$ 2.105.847** | **$ 2.580.653** |
 
 El capital accionario de la Empresa al 31 de diciembre de 2019 consta de 80.000 acciones ordinarias totalmente pagadas con un valor nominal de ($10.000). Todas las acciones son igualmente elegibles para recibir dividendos y reembolsos de capital y representan un voto en la asamblea de accionistas.
-
-27
 
 --- pág. 30 ---
 

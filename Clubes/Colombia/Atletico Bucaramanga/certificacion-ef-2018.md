@@ -134,49 +134,76 @@ PÁGINA 6
 
 --- pág. 7 ---
 
-**ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2018**
+# ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2018
 
-CLUB ATLETICO BUCAMANGA S.A  
-ESTADO DE SITUACION FINANCIERA INDIVIDUAL (corriente y no corriente)  
-Del 01 de Enero al 31 de Diciembre de 2018  
-Cifras en miles de pesos colombianos
+**CLUB ATLETICO BUCAMANGA S.A**
+**ESTADO DE SITUACION FINANCIERA**
+**INDIVIDUAL. ( corriente y no corriente)**
+**Del 01 de Enero al 31 de Diciembre de 2018**
+*Cifras en miles de pesos colombianos*
 
-| Referencia | Activos | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| | **Activos corrientes** | | | | | |
-| NIC 1.54 i 4.2a | Efectivo y equivalentes al efectivo | 1 | $1.619.405 | $1.299.494 | $319.910 | 25% |
-| NIC 1.54 h 4.2 I | Cuentas comerciales por cobrar y otras cuentas por cobrar | 2 | $3.762.805 | $1.448.166 | $2.314.639 | 160% |
+**Activos**
+
+**Activos corrientes**
+
+| Ref. NIC | Concepto | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|---|---|
+| NIC 1. 54 i 4.2 a | Efectivo y equivalentes al efectivo | 1 | $1.619.405 | $1.299.494 | $319.910 | 25% |
+| NIC 1.54 k 4.2 l | Cuentas comerciales por cobrar y otras cuentas por cobrar | 2 | $3.762.805 | $1.448.166 | $2.314.639 | 160% |
 | NIC 1.54 n 4.2 n | Activos por impuestos corrientes | 3 | $242.377 | $0 | $242.377 | 100% |
-| NIC 1.55 (P.C) 4.3 (P.C) | Otros activos financieros corrientes | 4 | $0 | $255.131 | -$255.131 | -100% |
-| | **Activos corrientes totales** | | **$5.624.587** | **$3.002.791** | **$2.621.795** | **87%** |
-| | **Activos no corrientes** | | | | | |
+| NIC 1.55 (P.C.) 4.3 (P.C.) | Otros activos financieros corrientes | 4 | $0 | $255.131 | -$255.131 | -100% |
+| | **Activos corrientes totales** | | $5.624.587 | $3.002.791 | $2.621.795 | 87% |
+
+**Activos no corrientes**
+
+| Ref. NIC | Concepto | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|---|---|
 | NIC 1.54 a 4.2 e | Propiedades, planta y equipo | 5 | $847.143 | $885.750 | -$38.607 | -4% |
 | | Activos por impuestos diferidos | 6 | $496.452 | $496.452 | $0 | 100% |
-| | **Total de activos no corrientes** | | **$1.343.595** | **$1.382.202** | **-$38.607** | **-3%** |
-| | **Total de activos** | | **$6.968.182** | **$4.384.994** | **$2.583.188** | **100%** |
+| | **Total de activos no corrientes** | | $1.343.595 | $1.382.202 | -$38.607 | -3% |
 
-| Referencia | Pasivos y Patrimonio | | | | | |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| | **Pasivos** | | | | | |
-| | **Pasivos corrientes** | | **Diciembre 31 2018** | **Diciembre 31 2017** | **Variación** | **%** |
-| NIC 1.54 k 4.2 I | Cuentas comerciales por pagar y otras cuentas por pagar | 7 | $236.046 | $371.977 | -$135.131 | -36% |
+| Concepto | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|
+| **Total de activos** | $6.968.182 | $4.384.994 | $2.583.188 | 100% |
+
+**Pasivos y Patrimonio**
+
+**Pasivos**
+
+**Pasivos corrientes**
+
+| Ref. NIC | Concepto | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|---|---|
+| NIC 1.54 k 4.2 f | Cuentas comerciales por pagar y otras cuentas por pagar | 7 | $236.846 | $371.977 | -$135.131 | -36% |
 | NIC 1.54 n 4.2 n | Pasivos por impuestos corrientes | 8 | $1.001.642 | $29.227 | $972.415 | 3327% |
 | 4.3 | Otros pasivos no financieros | 9 | $17.059 | $44.608 | -$27.549 | -62% |
-| | **Pasivos corrientes totales** | | **$1.255.547** | **$445.811** | **$809.736** | **182%** |
-| | **Pasivos y Provisiones no corrientes** | | | | | |
-| NIC 37. E 10 21A.D | Otras provisiones | 10 | $1.218.789 | $1.218.789 | $0 | 100% |
-| | Pasivo por impuesto diferido | 11 | $408.480 | $408.480 | $0 | 100% |
-| 1.78 (P.C) 4.11 d | Pasivo restringido | 12 | $1.504.713 | $1.504.713 | $0 | 100% |
-| | **Total de pasivos no corrientes** | | **$3.131.982** | **$3.131.982** | **$0** | **100%** |
-| | **Total pasivos** | | **$4.387.529** | **$3.577.793** | **$809.736** | **23%** |
+| | **Pasivos corrientes totales** | | $1.255.547 | $445.811 | $809.736 | 182% |
 
-| Referencia | Patrimonio | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| NIC 1.78 e 4.5f | Capital emitido | | $800.000 | $2.158.740 | -$1.358.740 | -63% |
-| NIC 1.78 e Ejemplo, NIC 1.G18 | Ganancias acumuladas | 13 | $7.201 | -$1.743.641 | -$1.736.440 | 100% |
-| 4.5f | Utilidad del periodo | | $1.773.452 | $392.102 | $1.381.350 | 352% |
-| | **Patrimonio total** | | **$2.580.653** | **$807.201** | **$1.773.452** | **220%** |
-| | **Total de patrimonio y pasivos** | | **$6.968.182** | **$4.384.994** | **$2.583.188** | **59%** |
+**Pasivos y Provisiones no corrientes**
+
+| Ref. NIC | Concepto | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|---|---|
+| NIC 37. E 10 21A.9 | Otras provisiones | 10 | $1.218.789 | $1.218.789 | $0 | 100% |
+| | Pasivo por impuesto diferido | 11 | $408.480 | $408.480 | $0 | 100% |
+| 1.78 (P.C.) 4.11 d | Pasivo restringido | 12 | $1.504.713 | $1.504.713 | $0 | 100% |
+| | **Total de pasivos no corrientes** | | $3.131.982 | $3.131.982 | $0 | 100% |
+
+| Concepto | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|
+| **Total pasivos** | $4.387.529 | $3.577.793 | $809.736 | 23% |
+
+**Patrimonio**
+
+| Ref. NIC | Concepto | Nota | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|---|---|
+| NIC 1.78 e 4.5 f | Capital emitido | 13 | $800.000 | $2.158.740 | -$1.358.740 | -63% |
+| NIC 1.78 e Ejemplo, NIC 1.G16 | Ganancias acumuladas | 13 | $7.201 | -$1.743.641 | -$1.736.440 | 100% |
+| 4.5 f | Utilidad del periodo | 13 | $1.773.452 | $392.102 | $1.381.350 | 352% |
+| | **Patrimonio total** | | $2.580.653 | $807.201 | $1.773.452 | 220% |
+
+| Concepto | Diciembre 31 2018 | Diciembre 31 2017 | Variación | % |
+|---|---|---|---|---|
+| **Total de patrimonio y pasivos** | $6.968.182 | $4.384.994 | $2.583.188 | 69% |
 
 PÁGINA 7
 

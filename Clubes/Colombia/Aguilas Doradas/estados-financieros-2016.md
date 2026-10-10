@@ -345,16 +345,16 @@ www.aguilasdoradasoficial.com
 --- pág. 10 ---
 
 # Talento DORADO S.A.
+
 Nit. 900.456.885-3
 
 a) El activo se mantiene dentro de un modelo de negocio cuyo objetivo es mantener los activos para obtener los flujos de efectivo contractuales.
 
 b) Las condiciones contractuales del activo financiero dan lugar, en fechas especificadas, a flujos de efectivo que son únicamente pagos del principal e intereses sobre el importe del principal pendiente.
 
-#### *14.2 Exenciones a la aplicación retroactiva de las NIIF*
+## 14.2 Exenciones a la aplicación retroactiva de las NIIF
 
-##### *14.2.1 Costo atribuido*
-La NIIF 1 permite la opción de utilizar una revaluación según los PCGA anteriores de una partida de propiedad, planta y equipo ya sea a la fecha de transición o anterior, como costo atribuido a la fecha de la revaluación, si esta fue a esa fecha sustancialmente comparable:
+*14.2.1 Costo atribuido* - La NIIF 1 permite la opción de utilizar una revaluación según los PCGA anteriores de una partida de propiedad, planta y equipo ya sea a la fecha de transición o anterior, como costo atribuido a la fecha de la revaluación, si esta fue a esa fecha sustancialmente comparable:
 
 a) al valor razonable; o
 
@@ -362,28 +362,26 @@ b) al costo, o al costo depreciado según las NIIF
 
 Para la propiedad, planta y equipo, la Compañía ha considerado, el costo depreciado bajo PCGA anteriores como costo atribuido a la fecha de transición, con las vidas útiles reales, ya que este es comparable con su costo depreciado de acuerdo a NIIF.
 
-#### *14.3 Conciliación del patrimonio de la Compañía al 1 de enero de 2015 (fecha de transición a las NCIF)*
+## 14.3 Conciliación del patrimonio de la Compañía al 1 de enero de 2015 (fecha de transición a las NCIF)
 
-| *Concepto* | 2014 |
-| :--- | :--- |
-| ***PATRIMONIO PCGA ANTERIORES*** | 4.365.287.300 |
+| Concepto | 2014 |
+|---|---|
+| **PATRIMONIO PCGA ANTERIORES** | **4.365.287.300** |
 | Corrección error en cálculo depreciación | -14.761.188 |
-| | |
-| ***PATRIMONIO COLNIIF*** | **4.380.048.488** |
+| **PATRIMONIO COLNIIF** | **4.380.048.488** |
 
-#### *14.4 Conciliación del patrimonio de la Compañía al 31 diciembre 2015 (fecha de transición a las NCIF)*
+## 14.4 Conciliación del patrimonio de la Compañía al 31 diciembre 2015 (fecha de transición a las NCIF)
 
-| *Concepto* | 2015 |
-| :--- | :--- |
-| ***PATRIMONIO PCGA ANTERIORES*** | 4.042.147.386 |
+| Concepto | 2015 |
+|---|---|
+| **PATRIMONIO PCGA ANTERIORES** | **4.042.147.386** |
 | Eliminación de activos que no cumplen criterios de reconocimiento | 1.779.378.851 |
-| ***PATRIMONIO COLNIIF*** | 2.320.858.016 |
+| **PATRIMONIO COLNIIF** | [ilegible] |
 
----
-Transversal 39 B No. 73 A 21  
-Edificio Centro 39 Oficina 201  
-PBX: 3661672  
-Medellín - Antioquia  
+Transversal 39 B No. 73 A 21
+Edificio Centro 39 Oficina 201
+PBX: 3661672
+Medellín - Antioquia
 www.aguilasdoradasoficial.com
 
 --- pág. 11 ---

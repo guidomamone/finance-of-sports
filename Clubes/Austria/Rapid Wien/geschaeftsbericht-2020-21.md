@@ -2110,193 +2110,76 @@ am
 
 --- pág. 22 ---
 
-SK RAPID
-
-Ticketing
-Sponsoring
-Hospitality - VIP
-Merchandising
-Rechteverwertung
-Transfererlöse
-Fanreisen
-sonstige Erlöse
-
-Umsatzerlöse
-
-Umsetzung Sponsorleistungen
-Aufwand Heimspiele
-
-Aufwand Hospitality - VIP
-Wareneinsatz Merchandising
-
-eigene Medien und Produktionskosten
-Fanreisen
-
-Materialaufwand und bezogene Leistungen
-
-ROHERTRAG
-
-Personalaufwand
-
-Abgaben, Gebühren, Strafen
-
-Spiel- und Trainingsbetrieb
-
-Managementgebühren und Vermittlungsprovisionen
-Stadion-, Miet- und Instandhaltungsaufwand
-Klubservice, Events, PR und Marketing
-Verwaltungs-, Versicherungs- und sonst. Aufwand
-
-Sachaufwand
-
-Abschreibungen für Abnutzung
-Transferaufwendungen
-Finanzergebnis
-
-Steuern aus Erträgen
-
-JAHRESERGEBNIS
-
-4.3 GEWINN-UND-VERLUST-RECHNUNG 2020/21
-
-GESAMT
-2020/21
-
-1.198.953
-8.676.083
-2.639.493
-2.487.302
-11.306.474
-3.289.014
-
-10.877.710
-
--276.707
--772.285
--463.176
--1.152.097
--252.324
-
--2.916.588
-37.558.441
--21.227.213
-
--148.524
--1.412.781
--971.683
--2.391.454
--610.954
--4.081.457
--9.616.852
-
--1.901.944
--3.000.604
--1.112.662
--1.750
-697.416
-
-GESAMT
-2019/20
-
-3.798.377
-9.035.109
-7.187.286
-2.777.108
-4.518.253
-10.716.155
-9.522
-4.025.332
-
--294.417
--1.950.712
--1.576.214
--1.365.283
-
--271.417
--6.726
--5.464.769
-
-36.602.972
--18.312.942
-
--299.623
--1.192.212
--1.110.660
-
--2.260.106
-
--550.278
--4.539.199
--9.952.078
-
--2.129.832
--4.919.562
--1.050.301
--437.364
--199.107
-
-ALLGEMEINE BEGRIFFSBESTIMMUNGEN
-
-Erklärung Finanzberichte
-
-Für die Darstellung der Gewinn-und-Verlust-Rechnung
-in den Finanzberichten dieses Geschäftsberichtes
-wurde abweichend von den Strukturen gemäß UGB eine
-Form gewählt, die dem Leser eine bessere Erfassbarkeit
-der Geschäftsgebarung des SK Rapid ermöglicht.
-
-Die Gewinn-und-Verlust-Rechnung wird nach betriebs-
-wirtschaftlichen, insbesondere fußballspezifischen
-Grundsätzen in Staffelform dargestellt.
-
-Sämtliche Beträge wurden kaufmännisch auf ganze
-Eurobeträge gerundet. Somit kann es bei Summen-
-bildungen zu Rundungsdifferenzen kommen, die jedoch
-in keiner Weise die Aussagekraft reduzieren.
-
-Bei allen Finanzdaten handelt es sich, soweit nicht expli-
-zit anders angegeben, um die konsolidierte Betrachtung
-des SK Rapid gemeinsam mit der 100%igen Tochter der
-SK Rapid GmbH.
-
-Einleitende Bemerkung
-In der Berichtssaison 2020/21 konnte sich der SK Rapid
-für den Europacup qualifizieren. Weitere Veränderungen
+SK RAPID | GESCHÄFTSBERICHT 2020/21
 
 4 | FINANZEN
 
-4.4 ERLÄUTERUNGEN ZUR GEWINN-UND-VERLUST-RECHNUNG
-
-zur Vergleichsperiode ergeben sich aufgrund der
-Einschränkungen im Spielbetrieb (Geisterspiele) zur
-Bekämpfung der Coronapandemiie. In der Vergleichs-
-periode sind die Auswirkungen der Coronapandemie
-erst ab März 2020 eingetreten. Dies hat Auswirkungen
-auf eine Vielzahl an Positionen der GuV.
-
-Ticketing
-
-Umfasst alle Erlöse aus Ticketverkäufen. Die Zuschauer-
-einnahmen von Rapid II-Spielen sind ebenso wie
-Ticketingversandgebühren in dieser Position enthalten.
-
-Sponsoring
-
-Diese Position umfasst sämtliche Sponsorenerlöse,
-Erlöse aus Inseraten, Bandenwerbung und sonstige
-Werbeleistungen. Seit der Saison 2016/17 wurden alle
-Hospitality-Leistungen unter der Position Erlöse
-Hospitality ausgewiesen.
-
-Hospitality - VIP
-
-Unter dieser Position werden die Erlöse aus Logen,
-Business Club sowie VIP-Jahres- und VIP-Tageskarten
-zusammengefasst. VIP-Karten, die in Sponsoren-
-verträgen enthalten sind, werden seit der Saison
-2016/17 hier erfasst.
+42
 
 43
+
+## 4.3 GEWINN-UND-VERLUST-RECHNUNG 2020/21
+
+| SK RAPID | GESAMT 2020/21 | | GESAMT 2019/20 | |
+|---|---|---|---|---|
+| Ticketing | 1.198.953 | 3% | 3.798.377 | 9% |
+| Sponsoring | 8.676.083 | 21% | 9.035.109 | 21% |
+| Hospitality - VIP | 2.639.493 | 7% | 7.187.286 | 17% |
+| Merchandising | 2.487.302 | 6% | 2.777.708 | 7% |
+| Rechteverwertung | 11.306.474 | 28% | 4.518.253 | 11% |
+| Transfererlöse | 3.289.014 | 8% | 10.716.155 | 25% |
+| Fanreisen | – | 0% | 9.522 | 0% |
+| sonstige Erlöse | 10.877.710 | 27% | 4.025.332 | 10% |
+| **Umsatzerlöse** | **40.475.029** | **100%** | **42.067.741** | **100%** |
+| Umsetzung Sponsorleistungen | -276.707 | -1% | -294.417 | -1% |
+| Aufwand Heimspiele | -772.285 | -2% | -1.950.712 | -5% |
+| Aufwand Hospitality - VIP | -463.176 | -1% | -1.576.214 | -4% |
+| Wareneinsatz Merchandising | -1.152.097 | -3% | -1.365.283 | -4% |
+| eigene Medien und Produktionskosten | -252.324 | -1% | -271.417 | -1% |
+| Fanreisen | – | 0% | -6.726 | 0% |
+| **Materialaufwand und bezogene Leistungen** | **-2.916.588** | **-8%** | **-5.464.769** | **-15%** |
+| **ROHERTRAG** | **37.558.441** | **92%** | **36.602.972** | **85%** |
+| **Personalaufwand** | **-21.227.213** | **-58%** | **-18.312.942** | **-49%** |
+| Abgaben, Gebühren, Strafen | -148.524 | 0% | -299.623 | -1% |
+| Spiel- und Trainingsbetrieb | -1.412.781 | -4% | -1.192.212 | -3% |
+| Managementgebühren und Vermittlungsprovisionen | -971.683 | -3% | -1.110.660 | -3% |
+| Stadion-, Miet- und Instandhaltungsaufwand | -2.391.454 | -7% | -2.260.106 | -6% |
+| Klubservice, Events, PR und Marketing | -610.954 | -2% | -550.278 | -1% |
+| Verwaltungs-, Versicherungs- und sonst. Aufwand | -4.081.457 | -11% | -4.539.199 | -12% |
+| **Sachaufwand** | **-9.616.852** | **-26%** | **-9.952.078** | **-27%** |
+| Abschreibungen für Abnutzung | -1.901.944 | -5% | -2.129.832 | -6% |
+| Transferaufwendungen | -3.000.604 | -8% | -4.919.562 | -13% |
+| Finanzergebnis | -1.112.662 | -3% | -1.050.301 | -3% |
+| Steuern aus Erträgen | -1.750 | 0% | -437.364 | -1% |
+| **JAHRESERGEBNIS** | **697.416** | **2%** | **-199.107** | **0%** |
+
+## 4.4 ERLÄUTERUNGEN ZUR GEWINN-UND-VERLUST-RECHNUNG
+
+### ALLGEMEINE BEGRIFFSBESTIMMUNGEN
+
+**Erklärung Finanzberichte**
+
+Für die Darstellung der Gewinn-und-Verlust-Rechnung in den Finanzberichten dieses Geschäftsberichtes wurde abweichend von den Strukturen gemäß UGB eine Form gewählt, die dem Leser eine bessere Erfassbarkeit der Geschäftsgebarung des SK Rapid ermöglicht. Die Gewinn-und-Verlust-Rechnung wird nach betriebswirtschaftlichen, insbesondere fußballspezifischen Grundsätzen in Staffelform dargestellt.
+
+Sämtliche Beträge wurden kaufmännisch auf ganze Eurobeträge gerundet. Somit kann es bei Summenbildungen zu Rundungsdifferenzen kommen, die jedoch in keiner Weise die Aussagekraft reduzieren.
+
+Bei allen Finanzdaten handelt es sich, soweit nicht explizit anders angegeben, um die konsolidierte Betrachtung des SK Rapid gemeinsam mit der 100%igen Tochter der SK Rapid GmbH.
+
+**Einleitende Bemerkung**
+
+In der Berichtssaison 2020/21 konnte sich der SK Rapid für den Europacup qualifizieren. Weitere Veränderungen zur Vergleichsperiode ergeben sich aufgrund der Einschränkungen im Spielbetrieb (Geisterspiele) zur Bekämpfung der Coronapandemie. In der Vergleichsperiode sind die Auswirkungen der Coronapandemie erst ab März 2020 eingetreten. Dies hat Auswirkungen auf eine Vielzahl an Positionen der GuV.
+
+**Ticketing**
+
+Umfasst alle Erlöse aus Ticketverkäufen. Die Zuschauereinnahmen von Rapid II-Spielen sind ebenso wie Ticketingversandgebühren in dieser Position enthalten.
+
+**Sponsoring**
+
+Diese Position umfasst sämtliche Sponsorenerlöse, Erlöse aus Inseraten, Bandenwerbung und sonstige Werbeleistungen. Seit der Saison 2016/17 wurden alle Hospitality-Leistungen unter der Position Erlöse Hospitality ausgewiesen.
+
+**Hospitality – VIP**
+
+Unter dieser Position werden die Erlöse aus Logen, Business Club sowie VIP-Jahres- und VIP-Tageskarten zusammengefasst. VIP-Karten, die in Sponsorenverträgen enthalten sind, werden seit der Saison 2016/17 hier erfasst.
 
 --- pág. 23 ---
 

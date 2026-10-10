@@ -1135,69 +1135,66 @@ Saison 2013/14
 
 2 | Zahlen, Daten & Fakten
 
-Spielpläne:
+# Spielpläne:
 
-BUNDESLIGA TORSCHÜTZEN ZUSCHAUER
-1 20.07.2013 RZ Pellets WAC SK RAPID Wien Burgstaller, Schaub 6.800
-2 27.07.2013 SK RAPID Wien SC Wiener Neustadt Burgstaller (2x), Boyd (2x) 11.500
-3 04.08.2013 SK Puntigamer Sturm Graz SK RAPID Wien Trimmel, Burgstaller, Behrendt, Schaub 10.250
-4 11.08.2013 SK RAPID Wien FK Austria Wien 16.700
-5 18.08.2013 FC Admira Wacker Mödling SK RAPID Wien 6.500
-6 25.08.2013 SK RAPID Wien SV Scholz Grödig 12.300
-7 01.09.2013 FC Red Bull Salzburg SK RAPID Wien Boyd 16.500
-8 14.09.2013 FC Wacker Innsbruck SK RAPID Wien Sonnleitner, Boyd, Petsos, Burgstaller 10.642
-9 22.09. 2013 SK RAPID Wien SV Josko Ried Burgstaller, Boyd 11.300
-10 28.09.2013 SK RAPID Wien RZ Pellets WAC Schaub, Petsos 12.200
-11 06.10. 2013 SC Wiener Neustadt SK RAPID Wien 3.800
-12 20.10. 2013 SK RAPID Wien SK Puntigamer Sturm Graz Hofmann, Boyd 15.400
-13 27.10. 2013 FK Austria Wien SK RAPID Wien Boyd 11.500
-14 02.11.2013 SK RAPID Wien FC Admira Wacker Mödling Hofmann (2x), Burgstaller, Boskovic 12.700
-15 10.11.2013 SV Scholz Grödig SK RAPID Wien Starkl, Hofmann 3.700
-16 24.11.2013 SK RAPID Wien FC Red Bull Salzburg Trimmel, Sabitzer 15.300
-17 01.12.2013 SK RAPID Wien FC Wacker Innsbruck Starkl, Wydra, Sonnleitner 10.500
-18 04.12.2013 SV Josko Ried SK RAPID Wien 4.100
-19 08.12.2013 RZ Pellets WAC SK RAPID Wien Burgstaller 4.300
-20 15.12. 2013 SK RAPID Wien SC Wiener Neustadt 9.200
-21 18.12.2013 SK Puntigamer Sturm Graz SK RAPID Wien 6.274
-22 09.02.2014 SK RAPID Wien FK Austria Wien Rogulj (Eigentor), Sabitzer, Sonnleitner 17.000
-23 16.02. 2014 FC Admira Wacker Mödling W SK RAPID Wien Boyd 5.461
-24 22.02.2014 SKRAPIDWien 0 : 0 SVScholz Grödig 11.200
-25 02.03. 2014 FC Red Bull Salzburg SK RAPID Wien Boyd, Petsos, Trimmel 17.612
-26 09.03. 2014 FC Wacker Innsbruck 1 1. SK RAPID Wien Alar 6.213
-27 15.03. 2014 SK RAPID Wien Wi 0 SV Josko Ried Sabitzer 10.200
-28 22.03. 2014 SK RAPID Wien WE RZ Pellets WAC Alar, Sabitzer, Rnic (Eigentor) 13.100
-29 26.03. 2014 SC Wiener Neustadt 9) 5 SK RAPID Wien Sabitzer, Boskovic (2x) 3.450
-30 29.03. 2014 SK RAPID Wien Wi SK Puntigamer Sturm Graz Hofmann, Sonnleitner 15.700
-31 06.04. 2014 FK Austria Wien 0) SK RAPID Wien Sabitzer 12.500
-32 12.04. 2014 SK RAPID Wien O0 0 FC Admira Wacker Mödling 15.500
-33 20.04. 2014 SV Scholz Grödig 2 2 SK RAPID Wien Boyd (2x) 2.749
-34 26.04. 2014 SK RAPID Wien Wi FC Red Bull Salzburg Boyd (2x) 17.200
-35 04.05. 2014 SK RAPID Wien W FC Wacker Innsbruck Boyd, Sabitzer 17.200
-36 11.05.2014 SV Josko Ried W SK RAPID Wien Burgstaller (3x), Boyd, Trimmel 5.400
+**BUNDESLIGA** | | | | | | **TORSCHÜTZEN** | **ZUSCHAUER**
 
-ÖFB CUP
+| # | Datum | Heim | Ergebnis | Gast | Torschützen | Zuschauer |
+|---|---|---|---|---|---|---|
+| 1 | 20.07.2013 | RZ Pellets WAC | 2 : 2 | SK RAPID Wien | Burgstaller, Schaub | 6.800 |
+| 2 | 27.07.2013 | SK RAPID Wien | 4 : 0 | SC Wiener Neustadt | Burgstaller (2x), Boyd (2x) | 11.500 |
+| 3 | 04.08.2013 | SK Puntigamer Sturm Graz | 2 : 4 | SK RAPID Wien | Trimmel, Burgstaller, Behrendt, Schaub | 10.250 |
+| 4 | 11.08.2013 | SK RAPID Wien | 0 : 0 | FK Austria Wien | | 16.700 |
+| 5 | 18.08.2013 | FC Admira Wacker Mödling | 2 : 0 | SK RAPID Wien | | 6.500 |
+| 6 | 25.08.2013 | SK RAPID Wien | 0 : 1 | SV Scholz Grödig | | 12.800 |
+| 7 | 01.09.2013 | FC Red Bull Salzburg | 1 : 1 | SK RAPID Wien | Boyd | 16.500 |
+| 8 | 14.09.2013 | FC Wacker Innsbruck | 0 : 4 | SK RAPID Wien | Sonnleitner, Boyd, Petsos, Burgstaller | 10.642 |
+| 9 | 22.09. 2013 | SK RAPID Wien | 2 : 0 | SV Josko Ried | Burgstaller, Boyd | 11.800 |
+| 10 | 28.09. 2013 | SK RAPID Wien | 2 : 4 | RZ Pellets WAC | Schaub, Petsos | 12.200 |
+| 11 | 06.10. 2013 | SC Wiener Neustadt | 0 : 0 | SK RAPID Wien | | 3.800 |
+| 12 | 20.10. 2013 | SK RAPID Wien | 2 : 2 | SK Puntigamer Sturm Graz | Hofmann, Boyd | 15.400 |
+| 13 | 27.10. 2013 | FK Austria Wien | 0 : 1 | SK RAPID Wien | Boyd | 11.500 |
+| 14 | 02.11. 2013 | SK RAPID Wien | 4 : 2 | FC Admira Wacker Mödling | Hofmann (2x), Burgstaller, Boskovic | 12.700 |
+| 15 | 10.11. 2013 | SV Scholz Grödig | 2 : 2 | SK RAPID Wien | Starkl, Hofmann | 3.700 |
+| 16 | 24.11. 2013 | SK RAPID Wien | 2 : 1 | FC Red Bull Salzburg | Trimmel, Sabitzer | 15.800 |
+| 17 | 01.12. 2013 | SK RAPID Wien | 3 : 0 | FC Wacker Innsbruck | Starkl, Wydra, Sonnleitner | 10.500 |
+| 18 | 04.12. 2013 | SV Josko Ried | 2 : 0 | SK RAPID Wien | | 4.100 |
+| 19 | 08.12. 2013 | RZ Pellets WAC | 2 : 1 | SK RAPID Wien | Burgstaller | 4.300 |
+| 20 | 15.12. 2013 | SK RAPID Wien | 0 : 0 | SC Wiener Neustadt | | 9.200 |
+| 21 | 18.12. 2013 | SK Puntigamer Sturm Graz | 2 : 0 | SK RAPID Wien | | 6.274 |
+| 22 | 09.02.2014 | SK RAPID Wien | 3 : 1 | FK Austria Wien | Rogulj (Eigentor), Sabitzer, Sonnleitner | 17.000 |
+| 23 | 16.02. 2014 | FC Admira Wacker Mödling | 2 : 1 | SK RAPID Wien | Boyd | 5.461 |
+| 24 | 22.02. 2014 | SK RAPID Wien | 0 : 0 | SV Scholz Grödig | | 11.200 |
+| 25 | 02.03. 2014 | FC Red Bull Salzburg | 6 : 3 | SK RAPID Wien | Boyd, Petsos, Trimmel | 17.612 |
+| 26 | 09.03. 2014 | FC Wacker Innsbruck | 1 : 1 | SK RAPID Wien | Alar | 6.213 |
+| 27 | 15.03. 2014 | SK RAPID Wien | 1 : 0 | SV Josko Ried | Sabitzer | 10.200 |
+| 28 | 22.03. 2014 | SK RAPID Wien | 3 : 0 | RZ Pellets WAC | Alar, Sabitzer, Rnic (Eigentor) | 13.100 |
+| 29 | 26.03. 2014 | SC Wiener Neustadt | 0 : 3 | SK RAPID Wien | Sabitzer, Boskovic (2x) | 3.450 |
+| 30 | 29.03. 2014 | SK RAPID Wien | 2 : 0 | SK Puntigamer Sturm Graz | Hofmann, Sonnleitner | 15.700 |
+| 31 | 06.04. 2014 | FK Austria Wien | 0 : 1 | SK RAPID Wien | Sabitzer | 12.500 |
+| 32 | 12.04. 2014 | SK RAPID Wien | 0 : 0 | FC Admira Wacker Mödling | | 15.500 |
+| 33 | 20.04. 2014 | SV Scholz Grödig | 2 : 2 | SK RAPID Wien | Boyd (2x) | 2.749 |
+| 34 | 26.04. 2014 | SK RAPID Wien | 2 : 1 | FC Red Bull Salzburg | Boyd (2x) | 17.200 |
+| 35 | 04.05. 2014 | SK RAPID Wien | 2 : 0 | FC Wacker Innsbruck | Boyd, Sabitzer | 17.200 |
+| 36 | 11.05.2014 | SV Josko Ried | 2 : 5 | SK RAPID Wien | Burgstaller (3x), Boyd, Trimmel | 5.400 |
 
-1 14.07.2013
+**ÖFB CUP**
 
-LASK ©
+| # | Datum | Heim | Ergebnis | Gast | Torschützen | Zuschauer |
+|---|---|---|---|---|---|---|
+| 1 | 14.07.2013 | LASK | 5 : 4 | SK RAPID WIEN | | 6.200 |
 
-SPIELE UNGESCHLAGEN
-(Runde 26-36)
+**11 SPIELE UNGESCHLAGEN** (Runde 26-36)
 
-22 SK RAPID WIEN
+**5 LÄNGSTE SIEGESSERIE** (Runde 27-31)
 
-LÄNGSTE SIEGESSERIE
-(Runde 27-31)
+**3 DERBYSIEGE**
 
-6.200
+**3 VEREINE GEGEN DIE NICHT VERLOREN WURDE** (FK Austria, SC Wiener Neustadt, FC Wacker Innsbruck)
 
-3 DERBYSIEGE
+**1 VEREIN GEGEN DEN NICHT GEWONNEN WURDE** (SV Scholz Grödig)
 
-VEREINE GEGEN DIE NICHT VERLOREN WURDE
-(FK Austria, SC Wiener Neustadt, FC Wacker Innsbruck)
-
-VEREIN GEGEN DEN NICHT GEWONNEN WURDE
-(SV Scholz Grödig)
+26
 
 --- pág. 27 ---
 
@@ -1671,143 +1668,50 @@ Präsident f Finanzreferent
 
 2 | Zahlen, Daten & Fakten
 
-2.2.2) Gewinn- und Verlustrechnung
+# 2.2.2) Gewinn- und Verlustrechnung
 
-Die nachfolgende Aufstellung zeigt die konsolidierte Gewinn- und Verlustrechnung der Saison 2013/14 (1.7.2013 -
-30.6.2014) getrennt nach den Hauptgeschäftsfeldern „nationale Wettbewerbe‘, „internationaler Wettbewerb“ sowie
-Transfergeschäft. Die angegebenen Prozentwerte bedeuten den Anteil der jeweiligen Position an den Umsatzerlösen.
+Die nachfolgende Aufstellung zeigt die konsolidierte Gewinn- und Verlustrechnung der Saison 2013/14 (1.7.2013 – 30.6.2014) getrennt nach den Hauptgeschäftsfeldern „nationale Wettbewerbe", „internationaler Wettbewerb" sowie Transfergeschäft. Die angegebenen Prozentwerte bedeuten den Anteil der jeweiligen Position an den Umsatzerlösen. Beachten Sie bitte die Erläuterungen jeder Position auf den folgenden Seiten.
 
-Beachten Sie bitte die Erläuterungen jeder Position auf den folgenden Seiten.
+| SAISON 2013/14 | Nationale Wettbewerbe | Internationaler Wettbewerb | GESAMT | [%] | Vgl. Vorjahr (Saison 2012/13) | Anm. |
+|---|---|---|---|---|---|---|
+| Sponsoring | 6.914.187 | 361.134 | 7.275.321 | 33% | 7.582.439 | 1) |
+| + Ticketing & Fanreisen | 3.260.403 | 3.151.624 | 6.412.027 | 29% | 6.671.377 | 2) |
+| + Rechteverwertung | 1.961.516 | 2.330.764 | 4.292.280 | 19% | 3.992.629 | 3) |
+| + Merchandising | 1.852.899 | 0 | 1.852.899 | 8% | 2.057.954 | 4) |
+| + Hospitality (VIP) | 580.023 | 272.751 | 852.774 | 4% | 924.482 | 5) |
+| + Sonstige Erlöse | 1.507.266 | 4.940 | 1.512.206 | 7% | 2.401.842 | 6) |
+| **= ∑ Umsatzerlöse** | **16.076.294** | **6.121.213** | **22.197.507** | **100%** | 23.630.724 | 7) |
+| Aufwand Heimspiele und Fanreisen | -1.260.156 | -1.297.896 | -2.558.052 | -12% | -2.006.370 | 8) |
+| + Wareneinsatz Merchandising | -1.118.089 | 0 | -1.118.089 | -5% | -1.202.881 | 9) |
+| + Aufwand Hospitality VIP | -399.316 | -189.739 | -589.055 | -3% | -569.035 | 10) |
+| + Umsetzung Sponsorleistungen | -498.044 | -10.290 | -508.334 | -2% | -585.346 | 11) |
+| + Eigene Medien und Produktionskosten | -259.625 | -46.863 | -306.488 | -1% | -323.565 | 12) |
+| **= ∑ Materialaufwand und bezogene Leistungen** | **-3.535.229** | **-1.544.788** | **-5.080.017** | **-23%** | -4.687.197 | 13) |
+| **ROHERTRAG** | **12.541.065** | **4.576.425** | **17.117.490** | **77%** | 18.943.527 | 14) |
+| Personalaufwand Sport | -9.827.945 | -1.262.257 | -11.090.202 | -50% | -10.232.786 | 15) |
+| + Sonstiger Personalaufwand | -2.311.579 | 0 | -2.311.579 | -10% | -2.267.346 | 16) |
+| **= ∑ Personalaufwand** | **-12.139.524** | **-1.262.257** | **-13.401.781** | **-60%** | -12.500.132 | |
+| Verwaltungs-, Versicherungs- und sonst. Aufwand | -2.059.997 | -19.577 | -2.079.574 | -9% | -1.304.881 | 17) |
+| + Stadion-, Miet- und Instandhaltungsaufwand | -1.596.860 | -150.761 | -1.747.621 | -8% | -2.022.204 | 18) |
+| + Spiel- und Trainingsbetrieb | -1.071.122 | -224.651 | -1.295.773 | -6% | -1.921.012 | 19) |
+| + Klubservice, Events, PR und Marketing | -680.902 | -51.091 | -731.993 | -3% | -867.967 | 20) |
+| + Management-Gebühren und Vermittlungsprovisionen | -390.470 | 0 | -390.470 | -2% | -502.050 | 21) |
+| + Abgaben, Gebühren & Strafen | -94.122 | -3.750 | -97.872 | 0% | -146.398 | 22) |
+| **= ∑ Sachaufwand** | **-5.893.472** | **-449.831** | **-6.343.303** | **-29%** | -6.764.513 | 23) |
+| Abschreibungen für Abnutzung | -351.044 | -342 | -351.386 | -2% | -494.352 | 24) |
+| Finanzergebnis | -10.826 | -286 | -11.112 | 0% | 1.471 | 25) |
+| a.o. Erträge | 223.636 | 0 | 223.636 | 1% | 500.094 | 26) |
+| Steuern aus Erträgen | -22.250 | 0 | -22.250 | 0% | -3.000 | 27) |
+| **GESCHÄFTSERGEBNIS** | **-5.652.415** | **2.863.708** | **-2.788.707** | **-13%** | -316.905 | 28) |
+| Transfererlöse | | | 5.224.711 | 24% | 1.291.147 | 29) |
+| Transferaufwendungen | | | -2.255.285 | -10% | -636.162 | 30) |
+| **TRANSFERERGEBNIS** | | | **2.969.426** | 13% | 654.985 | 31) |
+| **JAHRESERGEBNIS** | | | **180.719** | **1%** | 338.080 | 32) |
 
-Nationale
+Michael Krammer, Präsident
+Martin Bruckner, Finanzreferent
 
-Internationaler
-
-Vgl. Vorjahr
-
-SAISON 2013/14 Wettbewerbe Wettbewerb GESAMT Pe] (Saison 2012/13)
-
-Sponsoring 6.914.187 361.134 7.275.321 33% 7.582.439 1)
-+ Ticketing & Fanreisen 3.260.403 3.151.624 6.412.027 29% 6.671.377 2)
-+ Rechteverwertung 1.961.516 2.350.764 4.292.280 19% 3.992.629 3)
-+ Merchandising 1.852.899 0 1.852.899 8% 2.057.954 6)
-+ Hospitality (VIP) 580.023 272.751 852.774 4% 924.482 5)
-+ Sonstige Erlöse 1.507.266 4.940 1.512.206 7% 2.401.842 6)
-
-=) Umsatzerlöse
-
-16.076.294
-
-6.121.213
-
-22.197.507
-
-100%
-
-23.630.724
-
-Aufwand Heimspiele und Fanreisen -1.260.156 -1.297.896 -2.558.052  -12% -2.006.370 8)
-+ Wareneinsatz Merchandising -1.118.089 0 -1.118.089 -5% -1.202.881 9)
-+ Aufwand Hospitality VIP -399.316 -189.739 -589.055 -3% -569.035 10)
-+ Umsetzung Sponsorleistungen -498.044 -10.290 -508.334 -2% -585.346 11)
-+ Eigene Medien und Produktionskosten -259.625 -46.863 -306.488 -1% -323.565 12)
-
-=) Materialaufwand und bezogene Leistungen
-
-ROHERTRAG
-
--3.535.229
-12.541.065
-
--1.544.788
-4.576.425
-
--5.080.017
-17.117.490
-
-"25%
-77%
-
-4.687.197
-18.943.527
-
-Personalaufwand Sport
-
-+ Sonstiger Personalaufwand
-
-=) Personalaufwand
-
--9.827.945
--2.311.579
-
--12.139.524
-
--1.262.257
-
-0
--1.262.257
-
-11.090.202
-
--2.511.579
--13.401.781
-
--50%
--10%
--60%
-
--10.232.786 15)
--2.267.346 16)
--12.500.132
-
-Verwaltungs- Versicherungs- und sonst. Aufwand -2.059.997 -19.577 -2.079.574 -9% -1.304.881 17)
-+ Stadion-, Miet- und Instandhaltungsaufwand -1.596.860 -150.761 -1.747.621 -8% -2.022.204 18)
-+ Spiel- und Trainingsbetrieb -1.071.122 -224.651 -1.295.773 -6% -1.921.012 19)
-+ Klubservice, Events, PR und Marketing -680.902 -51.091 -7351.993 -3% -867.967 20)
-+ Management-Gebühren und Vermittlungsprovisionen -390.470 0 -390.470 -2% -502.050 21)
-+ Abgaben, Gebühren & Strafen -94.122 -3.750 -97.872 0% -146.398 22)
-
-=) Sachaufwand
-
-Abschreibungen für Abnutzung
-Finanzergebnis
-a.o. Erträge
-
-Steuern aus Erträgen
-
--5.893.472
-
--351.044
--10.826
-223.636
--22.250
-
--449.831
-
--6.343.303
-
--351.386
--11.112
-223.636
--22.250
-
--6.764.513
-
--494.352
-1.471
-500.094
--3.000
-
-Transfererlöse 5.224.711 24% 1.291.147 29)
-Transferaufwendungen -2.255.285 -10% -636.162 30)
-JAHRESERGEBNIS 180.719 1% 338.080 32)
-
-Präsident
-
-Michael Krammer |
-
-/ Martin Bruckner
-! Finanzreferent
+34
 
 --- pág. 35 ---
 
@@ -2179,114 +2083,84 @@ kapital auf 1.282.785 Euro.
 
 2 | Zahlen, Daten & Fakten
 
-2.2.3) Ergebnis internationaler Wettbewerb
+# 2.2.3) Ergebnis internationaler Wettbewerb
 
-In der Saison 2013/14 qualifizierte sich der SK Rapid genauso wie in der Vorsaison für die Gruppenphase der Europa
-League und konnte somit folgende Erlöse und Aufwendungen aus dem internationalen Wettbewerb verbuchen:
+In der Saison 2013/14 qualifizierte sich der SK Rapid genauso wie in der Vorsaison für die Gruppenphase der Europa League und konnte somit folgende Erlöse und Aufwendungen aus dem internationalen Wettbewerb verbuchen:
 
-Saison 2013/14 Saison 2012/13 [%] zur Vorsaison
-Ticketing & Fanreisen 3.151.624 2.863.824 +10%
-+ Rechteverwertung 2.330.764 2.278.886 +2%
-+ Sponsoring 361.134 356.051 +1%
-+ Hospitality (VIP) 272.751 269.075 +1%
-+ Sonstige Erlöse 4.940 3.000 +65%
-+ Merchandising 0 0 0
-= Summe Umsatzerlöse 6.121.213 5.770.836 +6%
-Aufwand Heimspiele und Fanreisen -1.297.396 -659.553 +97%
-+ Aufwand Hospitality VIP -189.739 -146.821 +29%
-+ Eigene Medien und Produktionskosten -46.863 -11.660 +302%
-+ Umsetzung Sponsorleistungen -10.290 -13.181 -22%
-+ Wareneinsatz Merchandising 0 0 0
-= Summe Materialaufwand und bezogene Leistungen -1.544.788 -831.215
-ROHERTRAG 4.576.425 4.939.621
-Personalaufwand Sport -1.262.257 -1.278.436 -1%
-+ Sonstiger Personalaufwand 0 0 0
-= Summe Personalaufwand -1.262.257 -1.278.436
-Spiel- und Trainingsbetrieb -224.651 -864.379 -74%
-+ Stadion-, Miet- und Instandhaltungsaufwand -150.761 -126.003 +20%
-+ Klubservice, Events, PR und Marketing -51.091 -73.190 -30%
-+ Verwaltungs-, Versicherungs- und sonst. Aufwand -19.577 -35.175 -44%
-+ Abgaben, Gebühren & Strafen -3.750 -92.000 -96%
-+ Management-Gebühren und Vermittlungsprovisionen 0 0 0
+| | Saison 2013/14 | Saison 2012/13 | [%] zur Vorsaison |
+|---|---|---|---|
+| Ticketing & Fanreisen | 3.151.624 | 2.863.824 | +10% |
+| + Rechteverwertung | 2.330.764 | 2.278.886 | +2% |
+| + Sponsoring | 361.134 | 356.051 | +1% |
+| + Hospitality (VIP) | 272.751 | 269.075 | +1% |
+| + Sonstige Erlöse | 4.940 | 3.000 | +65% |
+| + Merchandising | 0 | 0 | 0 |
+| **= Summe Umsatzerlöse** | **6.121.213** | **5.770.836** | **+6%** |
+| Aufwand Heimspiele und Fanreisen | -1.297.896 | -659.553 | +97% |
+| + Aufwand Hospitality VIP | -189.739 | -146.821 | +29% |
+| + Eigene Medien und Produktionskosten | -46.863 | -11.660 | +302% |
+| + Umsetzung Sponsorleistungen | -10.290 | -13.181 | -22% |
+| + Wareneinsatz Merchandising | 0 | 0 | 0 |
+| **= Summe Materialaufwand und bezogene Leistungen** | **-1.544.788** | **-831.215** | **+86%** |
+| **ROHERTRAG** | **4.576.425** | **4.939.621** | **-7%** |
+| Personalaufwand Sport | -1.262.257 | -1.278.436 | -1% |
+| + Sonstiger Personalaufwand | 0 | 0 | 0 |
+| **= Summe Personalaufwand** | **-1.262.257** | **-1.278.436** | **-1%** |
+| Spiel- und Trainingsbetrieb | -224.651 | -864.379 | -74% |
+| + Stadion-, Miet- und Instandhaltungsaufwand | -150.761 | -126.003 | +20% |
+| + Klubservice, Events, PR und Marketing | -51.091 | -73.190 | -30% |
+| + Verwaltungs-, Versicherungs- und sonst. Aufwand | -19.577 | -35.175 | -44% |
+| + Abgaben, Gebühren & Strafen | -3.750 | -92.000 | -96% |
+| + Management-Gebühren und Vermittlungsprovisionen | 0 | 0 | 0 |
+| **= Summe Sachaufwand** | **-449.831** | **-1.190.747** | **-62%** |
+| Abschreibungen für Abnutzung | -342 | -143 | +139% |
+| Finanzergebnis | -286 | -414 | -31% |
+| a.o. Erträge | 0 | 0 | 0 |
+| Steuern aus Erträgen | 0 | 0 | 0 |
+| **GESCHÄFTSERGEBNIS** | **2.863.708** | **2.469.880** | **+16%** |
 
-= Summe Sachaufwand -449.831 -1.190.747
+Anmerkung: Merchandising stellt eine eigene Kostenstelle dar und somit ist eine Unterscheidung, ob im Vorfeld eines nationalen oder internationalen Spieles Fanartikel verkauft werden, nicht darstellbar. Folglich werden alle Erlöse bzw. Aufwendungen den nationalen Wettbewerben zugeordnet.
 
-Abschreibungen für Abnutzung +139%
-Finanzergebnis -31%
-a.o. Erträge
-
-Steuern aus Erträgen
-GESCHÄFTSERGEBNIS 2.863.708
-
-Anmerkung: Merchandising stellt eine eigene Kostenstelle dar und somit ist eine Unterscheidung, ob im Vorfeld
-eines nationalen oder internationalen Spieles Fanartikel verkauft werden, nicht darstellbar. Folglich werden alle
-Erlöse bzw. Aufwendungen den nationalen Wettbewerben zugeordnet.
-
+38
 
 --- pág. 39 ---
 
 2 | Zahlen, Daten & Fakten
 
-2.2.4) Ergebnis nach Geschäftsfeldern
+# 2.2.4) Ergebnis nach Geschäftsfeldern
 
-Wir teilen unser Jahresergebnis in drei Hauptgeschäftsfelder auf: das Ergebnis aus den nationalen Wettbewerben
-(„Kerngeschäft“), aus dem internationalen Wettbewerb und aus Transfergeschäften.
+**Wir teilen unser Jahresergebnis in drei Hauptgeschäftsfelder auf: das Ergebnis aus den nationalen Wettbewerben („Kerngeschäft"), aus dem internationalen Wettbewerb und aus Transfergeschäften.**
 
-Durch die positiven Ergebnisse aus dem internationalen Geschäft sowie über die letzten 15 Jahre gesehen durch-
-schnittlich positiven Transferersalden, kann sich der SK Rapid ein negatives Ergebnis im nationalen Bewerb finan-
-zieren.
+Durch die positiven Ergebnisse aus dem internationalen Geschäft sowie über die letzten 15 Jahre gesehen durchschnittlich positiven Transferersalden, kann sich der SK Rapid ein negatives Ergebnis im nationalen Bewerb finanzieren.
 
-ERGEBNIS NACH GESCHÄFTSFELDERN Saison 2013/14 Saison 2012/13 [%] zur Vorsaison
+| ERGEBNIS NACH GESCHÄFTSFELDERN | Saison 2013/14 | Saison 2012/13 | [%] zur Vorsaison |
+|---|---|---|---|
+| **A) Internationaler Wettbewerb** | | | |
+| Erträge | 6.121.213 | 5.770.836 | +6% |
+| - Aufwendungen | -3.257.505 | -3.300.956 | -1% |
+| **= Ergebnis internationaler Wettbewerb** | **2.863.708** | **2.469.880** | **+16%** |
+| **B) Nationale Bewerbe** | | | |
+| Erträge | 16.076.294 | 17.859.888 | -10% |
+| - Aufwendungen | -21.728.709 | -20.646.672 | +5% |
+| **= Ergebnis nationale Wettbewerbe** | **-5.652.415** | **-2.786.784** | **+103%** |
+| **C) Transfergeschäft** | | | |
+| Erträge | 5.224.711 | 1.291.147 | +305% |
+| - Aufwendungen | -2.255.285 | -636.162 | +255% |
+| **= Ergebnis Transfergeschäft** | **2.969.426** | **654.985** | **+353%** |
+| **JAHRESERGEBNIS** | **180.719** | **338.080** | **-47%** |
 
-A) Internationaler Wettbewerb
+**Ergebnis Internationaler Wettbewerb**
+Die Umsatzerlöse sind gegenüber der Vorsaison gestiegen, da wir in der Vergleichsperiode ein „Geisterspiel" in der EL-Gruppenphase ohne Einnahmen hatten. Die Aufwandssituation ist nur bedingt vergleichbar, da die Reisekosten in der Vorsaison noch unter „Spiel und Trainingsbetrieb" verbucht und in der Berichtsperiode unter dem Aufwand „Heimspiele & Auswärtsfahrten" dargestellt wurden.
 
-Erträge 6.121.213 5.770.836 +6%
-- Aufwendungen -3.257.505 -3.500.956 -1%
+Per Saldo ergibt sich eine Steigerung von knapp 400.000 Euro und entspricht somit dem Ergebnis, welches wir in der Saison 2010/11 (kein Geisterspiel) verzeichnet haben.
 
-= Ergebnis internationaler Wettbewerb 2.863.708 2.469.880
+**Ergebnis nationaler Wettbewerb**
+Ergänzend zu den Erläuterungen auf den Seiten 33-35 erklären wir die deutliche Verschlechterung des Ergebnisses durch folgende wesentliche Punkte: Umsatzrückgang in fast allen Geschäftsbereichen, Wegfall eines Einmaleffektes aus der Vorsaison (Investitionskostenrückerstattung), Steigerung der Personalkosten Sport durch Trainerwechsel und Vertragsauflösungskosten. Weiters wurde im Aufwandsbereich zwar ein Einsparungsprogramm erfolgreich umgesetzt, dennoch kam es im Zuge der Umstrukturierung und zukunftsorientierter Aufwendungen im Zusammenhang mit dem Stadionbau zu Belastungen, die unter der Verwaltungs-, Versicherungs- und sonstiger Aufwandsposition verbucht wurden. Zudem wurde bereits Vorsorge für die Auflösung von Buchwerten der Investitionen in das Gerhard-Hanappi-Stadion in Form von Rückstellungen getroffen.
 
-B) Nationale Bewerbe
+**Ergebnis Transfergeschäft**
+Durch die Verkäufe der Spieler Sabitzer, Boyd, Burgstaller sowie durch Transfer- und Verleiherlöse untergeordneter Bedeutung konnten Erlöse von 5,2 Mio. verbucht werden. Dem gegenüber stehen Aufwendungen durch Transferbeteiligungen, Leihgebühren, Abschreibungen von Transferwerten sowie durch das Ausbuchen der Buchwerte der abgegebenen Spieler in Höhe von 1,8 Mio.
 
-Erträge 16.076.294 17.859.888 -10%
-- Aufwendungen -21.728.709 -20.646.672 +5%
-= Ergebnis nationale Wettbewerbe -5.652.415 -2.786.784
-
-C) Transfergeschäft
-
-Erträge 5.224.711 1.291.147 +305%
-- Aufwendungen -2.255.285 -636.162 +255%
-= Ergebnis Transfergeschäft 2.969.426 654.985 +353%
-JAHRESERGEBNIS 180.719 338.080 -47%
-
-Ergebnis Internationaler Wettbewerb
-
-Die Umsatzerlöse sind gegenüber der Vorsaison gestiegen, da wir in der Vergleichsperiode ein „Geisterspiel“ in der
-EL-Gruppenphase ohne Einnahmen hatten. Die Aufwandssituation ist nur bedingt vergleichbar, da die Reisekosten
-in der Vorsaison noch unter „Spiel und Trainingsbetrieb” verbucht und in der Berichtsperiode unter dem Aufwand
-„Heimspiele & Auswärtsfahrten“ dargestellt wurden.
-
-Per Saldo ergibt sich eine Steigerung von knapp 400.000 Euro und entspricht somit dem Ergebnis, welches wir in
-der Saison 2010/11 (kein Geisterspiel) verzeichnet haben.
-
-Ergebnis nationaler Wettbewerb
-
-Ergänzend zu den Erläuterungen auf den Seiten 33-35 erklären wir die deutliche Verschlechterung des Ergeb-
-nisses durch folgende wesentliche Punkte: Umsatzrückgang in fast allen Geschäftsbereichen, Wegfall eines Ein-
-maleffektes aus der Vorsaison (Investitionskostenrückerstattung), Steigerung der Personalkosten Sport durch
-Trainerwechsel und Vertragsauflösungskosten. Weiters wurde im Aufwandsbereich zwar ein Einsparungsprogramm
-erfolgreich umgesetzt, dennoch kam es im Zuge der Umstrukturierung und zukunftsorientierter Aufwendungen
-
-im Zusammenhang mit dem Stadionbau zu Belastungen, die unter der Verwaltungs-, Versicherungs- und sonstiger
-Aufwandsposition verbucht wurden. Zudem wurde bereits Vorsorge für die Auflösung von Buchwerten der Investi-
-tionen in das Gerhard-Hanappi-Stadion in Form von Rückstellungen getroffen.
-
-Ergebnis Transfergeschäft
-
-Durch die Verkäufe der Spieler Sabitzer, Boyd, Burgstaller sowie durch Transfer- und Verleiherlöse untergeordneter
-Bedeutung konnten Erlöse von 5,2 Mio. verbucht werden. Dem gegenüber stehen Aufwendungen durch Transfer-
-beteiligungen, Leihgebühren, Abschreibungen von Transferwerten sowie durch das Ausbuchen der Buchwerte der
-abgegebenen Spieler in Höhe von 1,8 Mio.
-
+39
 
 --- pág. 40 ---
 
@@ -2352,80 +2226,79 @@ Jahresergebnis: +0,18 Mio. €
 
 2 | Zahlen, Daten & Fakten
 
-C) Details zu den Mitgliedern STAND 30.06.2014
-Entwicklung der Mitgliederzahlen:
+# C) Details zu den Mitgliedern
 
-Die nachfolgende Grafik zeigt sehr eindrucksvoll, dass die verkündete Mitglieder-Offensive erfolgreich läuft und
-positive Momente rasch Wirkung zeigen. Die Grafik berücksichtigt nur zahlende Voll-Mitglieder:
+STAND 30.06.2014
 
-6.8577
+**Entwicklung der Mitgliederzahlen:**
 
-6.000 I. --- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 0... a |
+Die nachfolgende Grafik zeigt sehr eindrucksvoll, dass die verkündete Mitglieder-Offensive erfolgreich läuft und positive Momente rasch Wirkung zeigen. Die Grafik berücksichtigt nur zahlende Voll-Mitglieder:
 
-Allianz Stadion
-PRÄSENTATION DER STADION-PLÄNE
-UND NEUES MITGLIEDER-VIDEO
+[Liniendiagramm, Y-Achse: 4.000 / 5.000 / 6.000; X-Achse: 30.06.2013, JUL AUG SEP OKT NOV DEZ JAN FEB MRZ APR MAI JUN, 30.06.2014]
+- Startwert 30.06.2013: 5.126
+- Endwert 30.06.2014: 6.857
+- Markierung „Hauptversammlung – WAHL VON MICHAEL KRAMMER ZUM NEUEN PRÄSIDENTEN"
+- Markierung „Allianz Stadion – PRÄSENTATION DER STADION-PLÄNE UND NEUES MITGLIEDER-VIDEO"
 
-5.000 =... NR nn  — - - - - - - nn
+**Entwicklung der Erlöse durch Mitgliedschaften:**
 
->
-> Hauptversammlung
+In den ersten Monaten bis zur Hauptversammlung waren die Erlöse aus Mitgliedsbeiträgen praktisch konstant gegenüber dem Vergleichszeitraum des Vorjahres. Seit der Hauptversammlung im November konnten die Mitgliedsbeiträge um 60% gegenüber dem Vorjahr gesteigert werden. Für die gesamte Saison betrachtet ergibt sich somit eine Steigerung von 40%.
 
-WAHL VON MICHAEL KRAMMER
-ZUM NEUEN PRÄSIDENTEN
-
-JUL AUG SEP OKT NOV DEZ JAN FEB MRZ APR MAI JUN
-4.000 F 4 H 4
-30.06.2013 30.06.2014
-
-Entwicklung der Erlöse durch Mitgliedschaften:
-
-. . .. . . . .. . Y
-In den ersten Monaten bis zur Hauptversammlung waren die Erlöse aus Mitgliedsbeiträgen praktisch 0%
-konstant gegenüber dem Vergleichszeitraum des Vorjahres. Seit der Hauptversammlung im November
-konnten die Mitgliedsbeiträge um 60% gegenüber dem Vorjahr gesteigert werden. Für die gesamte B65.550€
-Saison betrachtet ergibt sich somit eine Steigerung von 40%. i
-+123%
 Entwicklung im Vergleich zu den Vorjahres-Quartalen:
-+28% +32%
-+2,6%
-JUL-SEP 2013 OKT-DEZ 2013 JAN - MRZ 2014 APR -JUN 2014 2013 2014
 
-Herkunft der Mitglieder:
+| JUL - SEP 2013 | OKT - DEZ 2013 | JAN - MRZ 2014 | APR - JUN 2014 |
+|---|---|---|---|
+| +2,6% | +28% | +32% | +123% |
 
-Wohl kaum überraschend zeigt nachfolgende Grafik, dass über 90% aller Mitglieder (inkl. Greenies und Jugend) aus den östlichen Bundes-
-ländern Wien, Niederösterreich und Burgenland stammen. Interessant, dass sich auch im Ausland einige Rapidmitglieder befinden.
+| 2013 | 2014 |
+|---|---|
+| 565.550€ | +40% 794.558€ |
 
-TOP BEZIRKE (WIEN) TOP BEZIRKE (AUSSER WIEN)
-529 Wien 22 (Donaustadt) 401 Wien-Umgebung (NÖ)
+**Herkunft der Mitglieder:**
 
-494 Wien 14 (Penzing) 352 Baden (NÖ)
+Wohl kaum überraschend zeigt nachfolgende Grafik, dass über 90% aller Mitglieder (inkl. Greenies und Jugend) aus den östlichen Bundesländern Wien, Niederösterreich und Burgenland stammen. Interessant, dass sich auch im Ausland einige Rapidmitglieder befinden.
 
-433 Wien 21 (Floridsdorf) 336 Mödling (NÖ)
+- 47% – 4.509 – W
+- 39% – 3.744 – NÖ
+- 14% – 1.370 – REST
 
-407 Wien 10 (Favoriten) 299 Gänserndorf (NÖ)
+REST:
+- 518 Burgenland
+- 443 Oberösterreich
+- 209 Steiermark
+- 52 Ausland
+- 48 Salzburg
+- 45 Kärnten
+- 39 Tirol
+- 16 Vorarlberg
 
-371 Wien 23 (Liesing) 271 Korneuburg (NÖ)
+**TOP BEZIRKE (WIEN)**
+- 529 Wien 22 (Donaustadt)
+- 494 Wien 14 (Penzing)
+- 433 Wien 21 (Floridsdorf)
+- 407 Wien 10 (Favoriten)
+- 371 Wien 23 (Liesing)
 
-205 Mistelbach (NÖ)
-202 St.Pölten (NÖ)
+**TOP BEZIRKE (AUSSER WIEN)**
+- 401 Wien-Umgebung (NÖ)
+- 352 Baden (NÖ)
+- 336 Mödling (NÖ)
+- 299 Gänserndorf (NÖ)
+- 271 Korneuburg (NÖ)
+- 205 Mistelbach (NÖ)
+- 202 St. Pölten (NÖ)
+- 173 Neusiedl am See (B)
+- 170 Amstetten (NÖ)
+- 167 Melk (NÖ)
+- 165 Tulln (NÖ)
+- 149 Bruck an der Leitha (NÖ)
+- 141 Wiener Neustadt (NÖ)
+- 122 Hollabrunn (NÖ)
+- 116 Neunkirchen (NÖ)
+- 109 Scheibbs (NÖ)
+- 106 Krems an der Donau (NÖ)
 
-173 Neusiedl am See (B)
-170 Amstetten (NÖ)
-
-518 GH Burgenland 167 Melk (NÖ)
-
-443 Oberösterreich 165 Tulln (NÖ)
-
-209 8 Steiermark 149 Bruck an der Leitha (NÖ)
-52 | Ausland 141 Wiener Neustadt (NÖ)
-48 | Salzburg 1
-45 | Kärnten 122 Hollabrunn (NO)
-
-39 | Tirol 116 Neunkirchen (NÖ)
-16 | Vorarlberg 109 Scheibbs (NÖ)
-106 Krems an der Donau (NÖ)
-
+41
 
 --- pág. 42 ---
 

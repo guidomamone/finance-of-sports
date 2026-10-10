@@ -588,13 +588,15 @@ A 31 de diciembre de 2023 en este rubro los saldos de bancos se desglosan así:
 
 --- pág. 22 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
+
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
 
 **7. Cuentas comerciales por cobrar y otras cuentas por cobrar**
-
-*(tabla insertada como imagen; usa coma como separador de miles, a diferencia del resto del documento)*
 
 | Cuentas comerciales por cobrar y otras cuentas por cobrar | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
@@ -620,9 +622,12 @@ A continuación, se desglosan los componentes que hacen parte de esta partida
 | Mensualidades | 1.010 | 181 a 365 días |
 | Mensualidades | 12.604 | 91 a 180 días |
 | Mensualidades | 30.152 | 1 a 90 días |
-| **Total** | **409.627** | |
+| | 409.627 | |
 
 La cartera con tiempo superior a 365 días se provisiono totalmente, la cartera que se presenta de 1 a 180 días es cartera con acuerdos de pago con los padres de familia de los jugadores, se ha trabajado para que la cartera de periodos pasado ya no super el 1% de lo facturado del año fiscal, por el rubro de escuelas de formación.
+
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
 
 --- pág. 23 ---
 
@@ -821,14 +826,16 @@ En cumplimiento de la Circular Externa No.003 de 2016 de Coldeportes se revelan 
 
 --- pág. 28 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
+
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
 
 - GARCIA ZABALA JOHN EDISON
-
 - CARLOS ANDRES PERALTA
-
 - ZAPATA ZAPE HANSEL ORLANDO
 
 En cumplimiento de la Circular Externa No.003 de 2016 de Coldeportes se revelan el estado de los derechos deportivos a cierre del año 2023 por concepto de transferencia definitiva onerosa:
@@ -837,7 +844,7 @@ En cumplimiento de la Circular Externa No.003 de 2016 de Coldeportes se revelan 
 
 A continuación, detallamos los derechos deportivos que hacen parte de los activos intangibles
 
-**Jugadores Profesionales**
+*Jugadores Profesionales*
 
 CORREA VALENCIA ANDRES $600.000.000 - Amortización a 7 años
 Amortización de 6 años $514.285.714
@@ -853,8 +860,6 @@ Amortización de 4 años $ 637.714.285
 
 **Nota 12. Otros Activos**
 
-*(tabla insertada como imagen)*
-
 | Otros Activos | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
 | Jugadores Profesionales | 0 | 490,055 | 490,055 |
@@ -863,17 +868,22 @@ Amortización de 4 años $ 637.714.285
 | Acumulado Prestamo Jugadores | 23,077 | -490,055 | -490,055 |
 | **Total Cargos Diferidos** | **23,077** | **0** | **0** |
 
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
+
 --- pág. 29 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
+
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
 
 Para el cierre 2023 la cuenta acumulado prestamos jugadores presenta un saldo de $ 23.077 M/cop, por concepto de un derecho de préstamo deportivo del jugador Juan Diego Ceballos cedido por Leones Futbol Club en el mes de diciembre a un periodo de 12 meses.
 
 **Nota 13. Obligaciones financieras**
-
-*(tabla insertada como imagen)*
 
 | Obligaciones Financieras | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
@@ -888,43 +898,44 @@ Los sobregiros son de las cuentas corriente de los bancos Bancoomeva y Coopcentr
 
 A continuación, se detalla el desglose de las obligaciones financieras con las tarjetas de créditos.
 
-*(tabla insertada como imagen)*
-
-| # Tarjeta | Tasa Promedio | Banco | Cupo Total | Total de Obligación | Cupo disponible |
+| # Tarjeta | Tasa Promedio | Banco | Cupo Total | Total de Oligacion | Cupo disponible |
 |---|---|---|---|---|---|
 | TC ***0670 | 26,15% | Banco de Bogotá | $ 10,000 | $ 4,112 | $ 5,888 |
 | TC ***3688 | 27,00% | Banco Coopcentral | $ 95,000 | $ 29,391 | $ 65,609 |
-| | | | | **$ 33,503** | |
+| | | | | $ 33,503 | |
 
 **Nota 14. Beneficios a empleados**
 
-*(tabla insertada como imagen)*
-
 | Beneficios a Empleados | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
-| Salarios por Pagar | 1.645 | 3.573 | 3.573 |
-| Cesantias Consolidadas | 126.678 | 129.228 | 129.228 |
-| Intereses Sobre Cesantias | 14.341 | 17.627 | 17.627 |
-| Vacaciones Consolidadas | -4.031 | 38.543 | 38.543 |
-| Obligaciones Laborales - Parafiscales | 27.514 | 28.614 | 28.614 |
+| Salarios por Pagar | 1,645 | 3,573 | 3,573 |
+| Cesantias Consolidadas | 126.678 | 129,228 | 129,228 |
+| Intereses Sobre Cesantías | 14,341 | 17,627 | 17,627 |
+| Vacaciones Consolidadas | -4,031 | 38,543 | 38,543 |
+| Obligaciones Laborales - Parafiscales | 27,514 | 28,614 | 28,614 |
 | **Total Beneficios a Empleados** | **166.146** | **217.585** | **217.585** |
 
-Al 31 de diciembre 2023 los salarios por pagar se cancelaron el 29 de
+Al 31 de diciembre 2023 los salarios por pagar se cancelaron el 29 de diciembre 2022, quedando por pagar una liquidación definitiva, el
+
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
 
 --- pág. 30 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
 
-diciembre 2022, quedando por pagar una liquidación definitiva, el pago por cesantías se realizará según la fecha estipulada por el gobierno nacional esto antes del 14 de febrero 2024.
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
+
+pago por cesantías se realizará según la fecha estipulada por el gobierno nacional esto antes del 14 de febrero 2024.
 Intereses a las cesantías se pagará antes del 31 de enero 2024.
 El concepto vacaciones se encuentra negativo ya que a 31 de diciembre a los empleados que pertenecen a la parte deportiva se les concede estas vacaciones de forma anticipada.
 En obligaciones parafiscales se encuentran los saldos por pagar que se realizan para el mes de enero antes del 9° día hábil de mes siguiente.
 
 **Nota 15. Cuentas comerciales por pagar y otras cuentas por pagar**
-
-*(tabla insertada como imagen; usa coma como separador de miles)*
 
 | Cuentas Comerciales Por Pagar y Otras Cuentas por Pagar | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
@@ -950,6 +961,9 @@ Las cuentas por pagar en promedio se pagan a 30 días de acuerdo con la negociac
 Retenciones por pagar con corte a 31 de diciembre 2023, arrojan un saldo así: por el periodo 10 $138.772, por el periodo 11 $108.749, y por el periodo 12 $144.774, para un total de $ 392.295.
 El pago por seguridad social como lo son ARL, Salud, Fondo de pensiones, se pagó en los primeros 9 días del mes de enero 2024.
 En concepto otros se encuentran los saldos pendientes por cancelar de logística, $576.659, gastos jugadores, $262.414, gastos administrativos, por $ 24.536, Publicidad $5.391.
+
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
 
 --- pág. 31 ---
 
@@ -1000,11 +1014,13 @@ A 31 de diciembre de 2023 El rubro acreedores varios por $49.219 corresponde al 
 
 --- pág. 32 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
 
-*(tabla insertada como imagen — detalle de obligaciones con Banco Coopcentral)*
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
 
 | # OBLIGACION | TASA DE INTERES | VLR OBLIGACION | SALDO ACTUAL CREDITO |
 |---|---|---|---|
@@ -1025,40 +1041,41 @@ Notas a los Estados Financieros
 | 390880003970 | DTF+5.50% E.A | $ 400,000,000 | $ 258,333,230 |
 | 39088000910 | DTF+6.00% E.A | $ 6,000,000,000 | $ 3,300,000,000 |
 | 390880002340 | DTF+5.00% E.A | $ 699,000,000 | $ 230,959,409 |
-| **TOTAL** | | **$ 16,459,000,000** | **$ 9,170,123,959** |
-
-> Nota: el número de obligación "39088000910" tiene un dígito menos que el patrón del resto de la columna (390880XXXXXX); se transcribe exactamente como figura impreso, sin corregir.
+| | | **$ 16,459,000,000** | **$ 9,170,123,959** |
 
 **Nota 19. Pasivo por impuesto diferido**
 
 | Pasivo Por Impuesto Diferido | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
-| Pasivo Por Impuesto Diferido | 697.238 | 651.974 | 651.974 |
-| **Total Otros Pasivos** | **697.238** | **651.974** | **651.974** |
+| Pasivo Por Impuesto Diferido | 697,238 | 651,974 | 651,974 |
+| **Total Otros Pasivos** | **697,238** | **651,974** | **651,974** |
 
-A continuación, se desglosa el detalle del impuesto diferido año 2023:
+continuación, se desglosa el detalle del impuesto diferido año 2023:
 
 | Concepto | Dif temporaria | Tasa | Impto Diferido Activo | Impto Diferido Pasivo |
 |---|---|---|---|---|
 | Urbanos | 4.383.000.000 | 15% | 0 | 657.450.000 |
 | Propiedad De Inversion | 265.252.771 | 15% | 0 | 39.787.916 |
-| **Subtotal** | | | **0** | **697.237.916** |
+| | | | **0** | **697.237.916** |
 
-**Total Neto Diferido Pasivo a 31 diciembre 2022: 697.238.000**
+**Total Neto Diferido Pasivo a 31 diciembre 2022 697.238.000**
+
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
 
 --- pág. 33 ---
 
-Notas a los Estados Financieros
-31 de diciembre de 2023 y 31 de diciembre de 2022
-(Cifras expresadas en miles de pesos colombianos)
+Afiliado a: DIMAYOR / FCF
+CLUB DEPORTIVO LA EQUIDAD SEGUROS — WWW.EQUIDADCLUBDEPORTIVO.COOP
+
+**Club Deportivo la Equidad Seguros S.A.**
+**Notas a los Estados Financieros**
+**31 de diciembre de 2023 y 31 de diciembre de 2022**
+**(Cifras expresadas en miles de pesos colombianos)**
 
 **Nota 20. Patrimonio**
 
-**Capital emitidos**
-
-*(tabla insertada como imagen; los encabezados de columna dicen literalmente "2022 / 2021 Reexpresado / 2021" pese a que el texto siguiente se refiere a 2023 y 2022 — se transcribe tal cual figura impreso, sin corregir)*
-
-| Concepto | 2022 | 2021 Reexpresado | 2021 |
+| Capital emitidos | 2022 | 2021 Reexpresado | 2021 |
 |---|---|---|---|
 | Capital Autorizado | 1.650.000 | 1.650.000 | 1.650.000 |
 | Capital Por Suscribir (Db) Acciones Propias en Cartera | -135.700 | -135.700 | -135.700 |
@@ -1068,9 +1085,7 @@ El capital emitido de la Compañía, al 31 de diciembre de 2023 y 2022 está con
 
 **Aplicación de los resultados**
 
-**Resultado Del Ejercicio**
-
-| Concepto | 2023 | 2022 Reexpresado | 2022 |
+| Resultado Del Ejercicio | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
 | Resultado Del Ejercicio | 571.732 | -1.073.012 | -1.038.666 |
 | **Total Resultado del Ejercicio** | **571.732** | **-1.073.012** | **-1.038.666** |
@@ -1079,14 +1094,15 @@ En la asamblea de accionistas del 18 de marzo 2022 no se autoriza ninguna distri
 
 **Reserva Legal**
 
-*(tabla insertada como imagen; usa coma como separador de miles)*
-
-| Concepto | 2023 | 2022 Reexpresado | 2022 |
+| Reserva Legal | 2023 | 2022 Reexpresado | 2022 |
 |---|---|---|---|
 | Reserva Legal | 703,185 | 901,994 | 901,994 |
 | **Total Reserva Legal** | **703,185** | **901,994** | **901,994** |
 
 El club deportivo La Equidad Seguros está obligado a apropiar como reserva el 10% de sus utilidades netas anuales, hasta que el saldo de la reserva sea equivalente hasta el 50% del capital suscrito. La reserva no es distribuible antes de la liquidación del club, pero puede utilizarse para absorber o reducir perdidas.
+
+Calle 193 º 9 - 20 | Bogotá D.C. - Colombia | +57 (1) 6345230
+Patrocinadores oficiales: equidad Seguros, Cotrafa, Colanta, COMEDAL BetPlay, PROGRAMA DE FORMACION, GOLTY
 
 --- pág. 34 ---
 

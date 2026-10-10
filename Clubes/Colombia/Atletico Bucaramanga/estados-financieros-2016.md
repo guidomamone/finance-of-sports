@@ -209,32 +209,32 @@ PÁGINA 9
 --- pág. 10 ---
 
 | Concepto | Vr Fiscal | Vr contable NIIF | Diferencia | Diferencia temporaria Imponible | Diferencia temporaria Deducible | Tarifa | Impuesto Diferido Pasivo | Impuesto Diferido Activo |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Bancos y otras Inversiones | $126.174.000 | $126.174.000 | $0 | | $0 | 25% | - | - |
+|---|---|---|---|---|---|---|---|---|
+| Bancos y otras inversiones | $126.174.000 | $126.174.000 | $0 | | $0 | 25% | - | - |
 | Bonos | $411.000 | $0 | $411.000 | | $411.000 | 25% | - | 102.750 |
 | Cartera clientes | $865.908.000 | $865.908.000 | $0 | $0 | $0 | | - | - |
-| Rurales | $80.000.000 | $80.315.000 | -$315.000 | $315.000 | | 10% | 31.500 | |
-| Maquinaria y equipo | $1.484.465 | $1.484.465 | $0 | $0 | | 25% | - | |
-| Muebles enseres y equipo de oficina | $15.426.164 | $15.426.164 | $0 | $0 | | 25% | - | |
-| Equipos de comunicación y computación | $8.056.821 | $8.056.821 | $0 | $0 | | 25% | - | |
-| Equipos de transporte tracción y elevación incluye | $358.644.451 | $508.287.426 | -$149.642.975 | $149.642.975 | | 25% | 37.410.744 | |
-| Pasivos | $464.288.000 | $466.047.852 | -$1.759.852 | $1.759.852 | | 25% | 439.963 | |
-| Pasivo Leasing | | $149.642.975 | -$149.642.975 | $149.642.975 | | | | |
-| **Totales** | **Total a reconocer** | | | | | | **37.882.207** | **102.750** |
+| Rurales | $80.000.000 | $80.315.000 | -$315.000 | $315.000 | | 10% | 31.500 | - |
+| Maquinaria y equipo | $1.484.465 | $1.484.465 | $0 | $0 | | 25% | - | - |
+| Muebles enseres y equipo de oficina | $15.426.164 | $15.426.164 | $0 | $0 | | 25% | - | - |
+| Equipos de comunicación y computación | $8.056.821 | $8.056.821 | $0 | $0 | | 25% | - | - |
+| Equipos de transporte tracción y elevación incluye | $358.644.451 | $508.287.426 | -$149.642.975 | $149.642.975 | | 25% | 37.410.744 | - |
+| Pasivos | $464.288.000 | $466.047.852 | -$1.759.852 | $1.759.852 | | 25% | 439.963 | - |
+| Pasivo Leasing | | $149.642.975 | -$149.642.975 | $149.642.975 | | | - | - |
+| Totales | Total a reconocer | | | | | | 37.882.207 | 102.750 |
 
-### 6. Declaración de cumplimiento con las NIIFs para las Pymes
+**6. Declaración de cumplimiento con las NIIFs para las Pymes**
 
 Los estados financieros del CLUB ATLETICO BUCARAMANGA entidad individual, correspondientes a los años terminados el 31 de diciembre de 2016 y 2015 han sido preparados de conformidad con las Normas Internacionales de Información Financiera para las Pequeñas y Medianas Entidades (IFRSs, por sus siglas en inglés – en español NIIF Pymes) emitidas por el Consejo Internacional de Normas de Contabilidad (IASB por sus siglas en inglés) y adoptadas en Colombia mediante el Decreto 3022 del 27 de diciembre de 2013. Estos estados financieros se presentan en miles de pesos colombianos, que es también la moneda funcional de la compañía.
 
-### 7. BASES DE ELABORACIÓN Y POLÍTICAS CONTABLES (NIIF PYMES 8.2a, 3.3; NIC1.112a, NIC 1.16)
+**7. BASES DE ELABORACIÓN Y POLÍTICAS CONTABLES** (NIIF PYMES 8.2a, 3.3; NIC1.112a, NIC 1.16)
 
 Los Estados Financieros se han elaborado de acuerdo con las Normas Internacionales de Información Financiera emitidas por el Consejo de Normas Internacionales de contabilidad (IASB) para PYMES [aprobadas en Colombia mediante el marco normativo establecido en el Decreto 2420 de 2015, modificado por el Decreto 2496 de 2015 y por los Decretos 2101, 2131 de 2016, que deben auditarse bajo especificaciones del Decreto 302 de 2015 y 2132 de 2016].
 
-### Resumen principals Políticas contables aplicadas (NIC 1.114 c, ii, NIIF PYMES 8.4 b)
+**Resumen principals Políticas contables aplicadas (NIC 1.114 c, ii, NIIF PYMES 8.4 b)**
 
 Las principales políticas contables que se han utilizado en la preparación de estos estados financieros se resumen a continuación. Estas políticas contables se han aplicado a lo largo de todos los períodos presentados en los estados financieros. (NIC 1.117 a, NIIF PYMES 8.4)
 
-#### a) Moneda de presentación:
+**a) Moneda de presentación:**
 
 PÁGINA 10
 

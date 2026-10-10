@@ -2212,75 +2212,136 @@ L1/9L0Z IHJIM3GSLAYHISIY | QIdY MS
 
 --- pág. 13 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2016/17 2 | ZAHLEN, DATEN & FAKTEN
+SK RAPID | GESCHÄFTSBERICHT 2016/17 — 2 | ZAHLEN, DATEN & FAKTEN
 
-2.1 PROFIS EINGESETZTE SPIELER 2016/17
+## 2.1 PROFIS
 
-KADERPLANUNG, ENTWICKLUNG UND STRATEGIE SPIELER BUNDESLIGA ÖFB CUP EUROPA LEAGUE GESAMT
-. VORNAME NACHNAME EINSÄTZE TORE EINSÄTZE TORE EINSÄTZE TORE EINSÄTZE TORE
-ZUGÄNGE AUS EIGENREKRUTIERUNG 2014/15 2015/16 2016/17 _ | 3-JAHRES-SCHNITT
-15 19 18
+### KADERPLANUNG, ENTWICKLUNG UND STRATEGIE
 
-. . Tobias Knoflach 15 0 3 0 1 0 19 0
-Spieler aus Vorjahreskader 17,3 cc
-. © Jan Novota 4 0 2 0 5 0 11 0
-Rückholung v. Leihspielern 0 0 1 0,3
-Richard Strebinger 17 0 1 0 4 0 22 0
-Spieler aus Nachwuchs 3 3 5 3,7
-ZUGÄNGE AUS FREMDREKRUTIERUNG Stephan Auer 18 0 5 0 3 0 26 0
-Spielerkauf 7 3 5 5,0 Christopher Dibon 26 1 4 0 9 0 30 1
-ablösefreie Verpflichtung 1 4 1 2,0 © Maximilian Hofmann 19 0 3 0 4 0 26 1
-Spielerausleihe 0 0 1 03 3 Mario Pavelic 28 1 5 1 7 1 40 3
-’ [0)
-m m 8 Christoph hö t 22 4 1 7 2
-ABGÄNGE MIT ENTSCHADIGUNGEN E Ohristop Sehösswendter ° o ° >
-" ü Thomas Schrammel 26 0 5 0 10 1 41 1
-Abgänge durch Vertragsablauf 6 1 5 4,0 eu
-. j . Mario Sonnleitner 20 2 1 0 3 0 24 2
-Abgänge durch Spielerverkäufe 3 5 3 3,7
-Manuel Thurnwald 11 0 0 0 2 0 13 0
-Abgänge durch Verleihungen 0 2 5 2,3 =.
-Maximilian Wöber 11 0 4 1 2 0 16 1
-KADER GESAMT 24 26 29 26,3
-nn Kelvin Arase 2 0 1 0 0 0 3 0
-Srdjan Grahovac 20 2 2 0 9 0 31 2
-HOME TOBIAS KNOFLACH LOUISSCHAUB 2 MANUEL THURNWALD Ste of 15 > j \ 3 0 20 2
-GROWN THOMAS SCHRANIMEL PAUL GARTLER MARIO PAVELIG . en man
-MAXIMILIAN HOFMANN TAMAS SZANTO MAXIMILIAN WOBER Andreas _ Kuen 8 0 2 0 0 0 10 0
-PLAYERS OSARENREN OKUNGBOWA KEVIN ARASE Philipp Malicsek 9 2 2 0 om 2
-nn 9 Ivan Mocinic 14 0 2 0 8 0 24 0
-LWwL
-Ss 2 SE 5 ü Thomas Murg 26 3 6 2 7 0 39 5
-= 538 Ft: E
-Ö = UNE 5323 = Osarenren Okungbowa 2 0 0 0 0 0 2 0
-BE SsE> So:
-En EB S5= Louis Schaub 28 5 3 1 10 5 4 1
-=B ps SES
-+ SE3 erE Philipp Schobesberger 5 0 1 0 4 0 10 0
-Stefan Schwab 27 5 5 2 7 2 39 9
-ABGÄNGE Tamäs Szanto 29 5 5 0 4 0 38 5
-Arnör Ingvi Traustason 22 3 3 0 8 0 33 3
-SPIELER KOMMT VON SPIELER WECHSELT ZU
-VORNAME NACHNAME VEREIN VORNAME NACHNAME VEREIN Tomi Correa Miranda 2 1 0 0 1 0 3 1
-Arnör Ingvi Traustason IFK Norrköping Florian Kainz Werder Bremen Maximilian Entrup 2 0 0 0 1 0 3 0
-Ivan Moeinic HNK Rijeka Stefan Stangl RB Salzburg m Joelinton 33 8 5 3 10 2 48 13
-Giorgi Kvilitaia Dinamo Tiflis Thanos Petsos Werder Bremen 2 Matej Jelic 10 0 3 1 4 1 17 2
-Joelinton TSG Hoffenheim (Leine) Michael Schimpelsberger Wacker Innsbruck Giorgi Kvilitaia 26 7 4 1 5 1 35 9
-Philipp Malicsek Admira Wacker Deni Alar SK Sturm Alex Sobczyk 1 0 0 0 0 0 1 0
-Maximilian Entrup Floridsdorfer AC Philipp Huspek SK Sturm ALTERSSTRUKTUR DURCHSCHNITTSALTER
-Christoph Schösswendter Admira Wacker Stefan Nutz SV Ried
-38% 17% 24%
-Paul Gartler SK Rapid Il Dominik Starkl Admira Wacker 46% 62% N 41%
-. . . 13% N 14% N 24%
-Kelvin Arase SK Rapid AKA U18 Andreas Kuen Floridsdorfer AC (Leihe) 4% 7% 10% N EI < 21 Jahre LEE 22,5 JAHRE
-Osarenren Okungbowa SK Rapid Il Maximilian _Entrup SKN St. Pölten (Leihe) En 2015/16 ZZuWE
-25-30 Jahre 2016/17 23,9 JAHRE
-Manuel Thurnwald SK Rapid Il Srdjan Grahovac FC Astana (Leihe) > 30 Jahre
-Andreas Kuen Floridsdorfer AC (Leine) Philipp Prosenik Wolfsberger AC (Leihe)
-2014/15 2015/16 2016/17
+| ZUGÄNGE AUS EIGENREKRUTIERUNG | 2014/15 | 2015/16 | 2016/17 | 3-JAHRES-SCHNITT |
+|---|---|---|---|---|
+| Spieler aus Vorjahreskader | 15 | 19 | 18 | 17,3 |
+| Rückholung v. Leihspielern | 0 | 0 | 1 | 0,3 |
+| Spieler aus Nachwuchs | 3 | 3 | 5 | 3,7 |
+| **ZUGÄNGE AUS FREMDREKRUTIERUNG** | | | | |
+| Spielerkauf | 7 | 3 | 5 | 5,0 |
+| ablösefreie Verpflichtung | 1 | 4 | 1 | 2,0 |
+| Spielerausleihe | 0 | 0 | 1 | 0,3 |
+| **ABGÄNGE MIT ENTSCHÄDIGUNGEN** | | | | |
+| Abgänge durch Vertragsablauf | 6 | 1 | 5 | 4,0 |
+| Abgänge durch Spielerverkäufe | 3 | 5 | 3 | 3,7 |
+| Abgänge durch Verleihungen | 0 | 2 | 5 | 2,3 |
+| **KADER GESAMT** | **24** | **26** | **29** | **26,3** |
 
-Paul Gartler SV Kapfenberg (Leihe)
+**11 HOME GROWN PLAYERS**
 
+TOBIAS KNOFLACH
+THOMAS SCHRAMMEL
+MAXIMILIAN HOFMANN
+OSARENREN OKUNGBOWA
+
+LOUIS SCHAUB
+PAUL GARTLER
+TAMAS SZANTO
+KELVIN ARASE
+
+MANUEL THURNWALD
+MARIO PAVELIC
+MAXIMILIAN WÖBER
+
+**83%** EIGENREKRUTIERUNG 2016/17
+
+**37%** DER ABGÄNGE SEIT DER SAISON 2014/15 LUKRIEREN ERLÖSE
+
+**27%** ALLER ZUGÄNGE DER LETZTEN 3 JAHRE KAMEN ABLÖSEFREI
+
+### ZUGÄNGE
+
+| VORNAME | NACHNAME | VEREIN (KOMMT VON) |
+|---|---|---|
+| Arnór Ingvi | Traustason | IFK Norrköping |
+| Ivan | Mocinic | HNK Rijeka |
+| Giorgi | Kvilitaia | Dinamo Tiflis |
+| Joelinton | | TSG Hoffenheim (Leihe) |
+| Philipp | Malicsek | Admira Wacker |
+| Maximilian | Entrup | Floridsdorfer AC |
+| Christoph | Schösswendter | Admira Wacker |
+| Paul | Gartler | SK Rapid II |
+| Kelvin | Arase | SK Rapid AKA U18 |
+| Osarenren | Okungbowa | SK Rapid II |
+| Manuel | Thurnwald | SK Rapid II |
+| Andreas | Kuen | Floridsdorfer AC (Leihe) |
+
+### ABGÄNGE
+
+| VORNAME | NACHNAME | VEREIN (WECHSELT ZU) |
+|---|---|---|
+| Florian | Kainz | Werder Bremen |
+| Stefan | Stangl | RB Salzburg |
+| Thanos | Petsos | Werder Bremen |
+| Michael | Schimpelsberger | Wacker Innsbruck |
+| Deni | Alar | SK Sturm |
+| Philipp | Huspek | SK Sturm |
+| Stefan | Nutz | SV Ried |
+| Dominik | Starkl | Admira Wacker |
+| Andreas | Kuen | Floridsdorfer AC (Leihe) |
+| Maximilian | Entrup | SKN St. Pölten (Leihe) |
+| Srdjan | Grahovac | FC Astana (Leihe) |
+| Philipp | Prosenik | Wolfsberger AC (Leihe) |
+| Paul | Gartler | SV Kapfenberg (Leihe) |
+
+### EINGESETZTE SPIELER 2016/17
+
+| POSITION | VORNAME | NACHNAME | BUNDESLIGA EINSÄTZE | BUNDESLIGA TORE | ÖFB CUP EINSÄTZE | ÖFB CUP TORE | EUROPA LEAGUE EINSÄTZE | EUROPA LEAGUE TORE | GESAMT EINSÄTZE | GESAMT TORE |
+|---|---|---|---|---|---|---|---|---|---|---|
+| TOR | Tobias | Knoflach | 15 | 0 | 3 | 0 | 1 | 0 | 19 | 0 |
+| TOR | Ján | Novota | 4 | 0 | 2 | 0 | 5 | 0 | 11 | 0 |
+| TOR | Richard | Strebinger | 17 | 0 | 1 | 0 | 4 | 0 | 22 | 0 |
+| VERTEIDIGUNG | Stephan | Auer | 18 | 0 | 5 | 0 | 3 | 0 | 26 | 0 |
+| VERTEIDIGUNG | Christopher | Dibon | 26 | 1 | 4 | 0 | 9 | 0 | 30 | 1 |
+| VERTEIDIGUNG | Maximilian | Hofmann | 19 | 0 | 3 | 0 | 4 | 0 | 26 | 1 |
+| VERTEIDIGUNG | Mario | Pavelic | 28 | 1 | 5 | 1 | 7 | 1 | 40 | 3 |
+| VERTEIDIGUNG | Christoph | Schösswendter | 22 | 4 | 3 | 1 | 7 | 0 | 32 | 5 |
+| VERTEIDIGUNG | Thomas | Schrammel | 26 | 0 | 5 | 0 | 10 | 1 | 41 | 1 |
+| VERTEIDIGUNG | Mario | Sonnleitner | 20 | 2 | 1 | 0 | 3 | 0 | 24 | 2 |
+| VERTEIDIGUNG | Manuel | Thurnwald | 11 | 0 | 0 | 0 | 2 | 0 | 13 | 0 |
+| VERTEIDIGUNG | Maximilian | Wöber | 11 | 0 | 4 | 1 | 2 | 0 | 16 | 1 |
+| MITTELFELD | Kelvin | Arase | 2 | 0 | 1 | 0 | 0 | 0 | 3 | 0 |
+| MITTELFELD | Srdjan | Grahovac | 20 | 2 | 2 | 0 | 9 | 0 | 31 | 2 |
+| MITTELFELD | Steffen | Hofmann | 15 | 2 | 4 | 1 | 3 | 0 | 22 | 3 |
+| MITTELFELD | Andreas | Kuen | 8 | 0 | 2 | 0 | 0 | 0 | 10 | 0 |
+| MITTELFELD | Philipp | Malicsek | 9 | 2 | 2 | 0 | 1 | 0 | 12 | 2 |
+| MITTELFELD | Ivan | Mocinic | 14 | 0 | 2 | 0 | 8 | 0 | 24 | 0 |
+| MITTELFELD | Thomas | Murg | 26 | 3 | 6 | 2 | 7 | 0 | 39 | 5 |
+| MITTELFELD | Osarenren | Okungbowa | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
+| MITTELFELD | Louis | Schaub | 28 | 5 | 3 | 1 | 10 | 5 | 41 | 11 |
+| MITTELFELD | Philipp | Schobesberger | 5 | 0 | 1 | 0 | 4 | 0 | 10 | 0 |
+| MITTELFELD | Stefan | Schwab | 27 | 5 | 5 | 2 | 7 | 2 | 39 | 9 |
+| MITTELFELD | Tamás | Szanto | 29 | 5 | 5 | 0 | 4 | 0 | 38 | 5 |
+| MITTELFELD | Arnór Ingvi | Traustason | 22 | 3 | 3 | 0 | 8 | 0 | 33 | 3 |
+| ANGRIFF | Tomi | Correa Miranda | 2 | 1 | 0 | 0 | 1 | 0 | 3 | 1 |
+| ANGRIFF | Maximilian | Entrup | 2 | 0 | 0 | 0 | 1 | 0 | 3 | 0 |
+| ANGRIFF | | Joelinton | 33 | 8 | 5 | 3 | 10 | 2 | 48 | 13 |
+| ANGRIFF | Matej | Jelic | 10 | 0 | 3 | 1 | 4 | 1 | 17 | 2 |
+| ANGRIFF | Giorgi | Kvilitaia | 26 | 7 | 4 | 1 | 5 | 1 | 35 | 9 |
+| ANGRIFF | Alex | Sobczyk | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+
+### ALTERSSTRUKTUR
+
+| | 2014/15 | 2015/16 | 2016/17 |
+|---|---|---|---|
+| < 21 Jahre | 38% | 17% | 24% |
+| 21-24 Jahre | 46% | 62% | 41% |
+| 25-30 Jahre | 13% | 14% | 24% |
+| > 30 Jahre | 4% | 7% | 10% |
+
+### DURCHSCHNITTSALTER
+
+- 2014/15: 22,5 JAHRE
+- 2015/16: 23,3 JAHRE
+- 2016/17: 23,9 JAHRE
+
+24 (Seitenzahl links) · 25 (Seitenzahl rechts)
 
 --- pág. 14 ---
 
@@ -7817,286 +7878,69 @@ NZI
 
 --- pág. 40 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2016/17
+SK RAPID | GESCHÄFTSBERICHT 2016/17 — 2 | ZAHLEN, DATEN & FAKTEN
 
-2.7 KOMMUNIKATION, MEDIEN & PR
+## 2.7 KOMMUNIKATION, MEDIEN & PR
 
-Auch 2016/17 Top-Medienwerte
+**Auch 2016/17 Top-Medienwerte**
 
-Wie schon in den vergangenen Spiel-
-zeiten war der SK Rapid auch 2016/17
-wieder Dauerbrenner und Quotengarant
-bei den ORF-Live-Spielen der Runde!
-Gleich 15 Partien mit grün-weißer
-Beteiligung wurden im öffentlich-recht-
-lichen Rundfunk in voller Länge aus-
-gestrahlt, kein Verein der heimischen
-Bundesliga war öfter zu sehen.
+Wie schon in den vergangenen Spielzeiten war der SK Rapid auch 2016/17 wieder Dauerbrenner und Quotengarant bei den ORF-Live-Spielen der Runde! Gleich 15 Partien mit grün-weißer Beteiligung wurden im öffentlich-rechtlichen Rundfunk in voller Länge ausgestrahlt, kein Verein der heimischen Bundesliga war öfter zu sehen.
 
-Sowohl was Reichweite als auch Markt-
-anteil betrifft waren die Top-5-Werte
-jeweils Spiele mit Rapid. Im Schnitt
-sahen 323.000 TV-Zuschauer jene
-Matches, bei denen Stefan Schwab
-& Co zu beobachten waren, auf Rang
-2 folgen Partien mit Beteiligung der
-SV Ried, die es auf durchschnittlich
-273.000 TV-Zuschauer brachten, aller-
-dings wurden von den Innviertlern nur
-zwei Spiele live übertragen, darunter
-ein Heimspiel gegen Grün-Weiß!
+Sowohl was Reichweite als auch Marktanteil betrifft waren die Top-5-Werte jeweils Spiele mit Rapid. Im Schnitt sahen 323.000 TV-Zuschauer jene Matches, bei denen Stefan Schwab & Co zu beobachten waren, auf Rang 2 folgen Partien mit Beteiligung der SV Ried, die es auf durchschnittlich 273.000 TV-Zuschauer brachten, allerdings wurden von den Innviertlern nur zwei Spiele live übertragen, darunter ein Heimspiel gegen Grün-Weiß!
 
-Die höchste Reichweite überhaupt er-
-reichte die Übertragung der Partie Rap-
-id gegen Sturm (397.000) im November
-2016, den höchsten Marktanteil das
-Heimspiel gegen Salzburg im August
-2016!
+Die höchste Reichweite überhaupt erreichte die Übertragung der Partie Rapid gegen Sturm (397.000) im November 2016, den höchsten Marktanteil das Heimspiel gegen Salzburg im August 2016!
 
-Insgesamt wurde über den SK Rapid
-in den diversen TV-Kanälen über 373
-Stunden (plus drei Stunden im Vergleich
-zu 2015/16) berichtet, zudem wurden
-fast 960 Millionen Sportleserkontakte
-in diversen Printmedien generiert und
-errechnete United Synergies einen Ge-
-samt-Medienwert für den SK Rapid in
-der beeindruckenden Höhe von 87,95
-Millionen Euro!
+Insgesamt wurde über den SK Rapid in den diversen TV-Kanälen über 373 Stunden (plus drei Stunden im Vergleich zu 2015/16) berichtet, zudem wurden fast 960 Millionen Sportleserkontakte in diversen Printmedien generiert und errechnete United Synergies einen Gesamt-Medienwert für den SK Rapid in der beeindruckenden Höhe von 87,95 Millionen Euro!
 
-Eigene Medien und Kooperationen
+**Eigene Medien und Kooperationen**
 
-Nach dem erfolgreichen Launch der
-Rapid-Homepage mit Ixolit GmbH und
-raum42 OG im August 2015 wurde
-mit den gleichen Partnern im Frühjahr
-2017 eine eigene Homepage für das Al-
-lianz Stadion ins Leben gerufen. Unter
-www.allianz-stadion.at ist nunmehr al-
+Nach dem erfolgreichen Launch der Rapid-Homepage mit Ixolit GmbH und raum42 OG im August 2015 wurde mit den gleichen Partnern im Frühjahr 2017 eine *eigene Homepage für das Allianz Stadion* ins Leben gerufen. Unter www.allianz-stadion.at ist nunmehr alles Wissenswerte über das neue grün-weiße Zuhause zu finden, redaktionell erstellt und betreut wird die Seite zum Einen von der Direktion Kommunikation, Medien & PR des SK Rapid und zum Anderen auch von den KollegInnen des Naming Right-Partners Allianz.
 
-219.892
+Die *klassische Homepage* unter www.skrapid.at erfreut sich weiter größter Beliebtheit, die Rekordzahlen aus der Saison 2015/16 konnten sogar weiter gesteigert werden. Interessant, dass mittlerweile rund zwei Drittel der Zugriffe über mobile Endgeräte generiert werden, umso besser bewährt sich, dass bei der Erstellung der Website vor zwei Jahren besonderes Augenmerk auf ein responsives Webdesign gelegt wurde.
 
-FANS (+6%)
+Zuwächse konnten auch sämtliche *Social-Media-Kanäle* des SK Rapid verbuchen. Besonders populär sind die im Herbst 2016 gestarteten Livestreams auf Facebook, so ist mittlerweile jede relevante Rapid-Pressekonferenz im größten sozialen Netzwerk der Welt direkt zu sehen und meldet sich das Social-Media-Team auch direkt im Vorfeld der Heimspiele aus dem Allianz Stadion mit den aktuellsten Infos und News. Mit *Snapchat* bedient der SK Rapid seit der Saison 2016/17 neben *Facebook, Instagram und Twitter* einen weiteren Social-Media-Kanal, der sich vor allem bei der jungen Zielgruppe größter Beliebtheit erfreut. Eingestellt wurde hingegen aufgrund fehlender Resonanz das Engagement auf *Google+*, intensiviert die Aktivitäten auf *Youtube*, der größten Videoplattform des Planeten, auf der im Berichtszeitraum fast 500 neue Clips auf den Rapid-Kanal online gestellt wurden!
 
-Neuigkeiten
+Sehr populär ist weiterhin die eigene TV-Sendung *RAPIDVIERTELSTUNDE*, die 40mal jährlich immer Freitags um 19.15 Uhr im *Wiener Stadtfernsehen W24* erstausgestrahlt und in weiterer Folge mehrmals wiederholt wird. Alle Sendungen sind zudem in der Mediathek auf der Homepage von W24 zu sehen. Im November 2016 wurde die bereits 100. Folge der grün-weißen TV-Sendung ausgestrahlt und dieses Jubiläum mit einer 90 Minuten langen Sondersendung unter dem Titel „RAPIDVIERTELSTUNDE von A bis Z" gebührend begangen. Moderiert wird die Sendung nach wie vor von Andy Marek, der als Direktor Klubservice und jahrzehntelanger Stadionmodertor nicht umsonst als die „Stimme Rapids" gilt. Laut W24 erreicht jede Folge via TV und Mediathek bzw. Livestream rund 80.000 Zuschauer, ein toller Wert, auf den man wirklich stolz sein darf!
 
-les Wissenswerte über das neue grün-
-weiße Zuhause zu finden, redaktionell
-erstellt und betreut wird die Seite zum
-Einen von der Direktion Kommunika-
-tion, Medien & PR des SK Rapid und
-zum Anderen auch von den Kollegin-
-nen des Naming Right-Partners Allianz.
+Zu verantworten hat die Direktion Kommunikation, Medien & PR weiterhin die *klassischen Printprodukte* des Rekordmeisters in Kooperation mit Styria Medienhaus Sport GmbH & Co KG. So erscheint einmal im Quartal das *Rapid Magazin*, die offizielle Vereinszeitschrift des SK Rapid, in einer Auflage von 30.000 Stück und zu jedem Heimspiel *Rapid heute*, die offizielle Stadionzeitung, die den Besuchern gratis zur Verfügung gestellt wird. Im November 2016 wurde zudem zum bereits vierten Mal der *Geschäftsbericht* redaktionell begleitet.
 
-Die klassische Homepage unter www.
-skrapid.at erfreut sich weiter größter
-Beliebtheit, die Rekordzahlen aus der
-Saison 2015/16 konnten sogar weiter
-gesteigert werden. Interessant, dass
-mittlerweile rund zwei Drittel der Zu-
-griffe über mobile Endgeräte generi-
-ert werden, umso besser bewährt sich,
-dass bei der Erstellung der Website vor
-zwei Jahren besonderes Augenmerk
-auf ein responsives Webdesign gelegt
-wurde.
+Die *klassische Medienarbeit* lief auch 2016/17 auf Hochtouren, vor allem über das eigene Online-Pressecenter konnten fast 200 Pressemeldungen und zahllose Fotos und Grafiken von der Direktion Kommunikation, Medien & PR an Medienvertreter aus Österreich und ganz Europa zur Verfügung gestellt werden!
 
-Zuwächse konnten auch sämtliche So-
-cial-Media-Kanäle des SK Rapid verbu-
-chen. Besonders populär sind die im
-Herbst 2016 gestarteten Livestreams
-auf Facebook, so ist mittlerweile jede
-relevante Rapid-Pressekonferenz im
-größten sozialen Netzwerk der Welt di-
-rekt zu sehen und meldet sich das So-
-cial-Media-Team auch direkt im Vorfeld
-der Heimspiele aus dem Allianz Stadion
-mit den aktuellsten Infos und News.
+Des weiteren konnten wir im Zuge des Projekts *„Bundesliga on Ear"*, an dem unser Klub seit 2010 unter dem Motto *„Rapid on Ear"* teilnimmt, blinden und sehbehinderten Menschen ein besonderes Service anbieten. Alle Heimspiele in Bundesliga, ÖFB-Cup und Europacup wurden von speziell geschulten Radiosprechern kommentiert und in all seinen Facetten beschrieben. Diesen Audiokommentar können Fans im Stadion über ein FM-Radio auf der Frequenz 99,2 MHz wahrnehmen, darüber hinaus ist der Audio-Livestream auch über die Homepage und die offizielle Rapid-App empfangbar.
 
-19.113
+**Nominierung zum Staatspreis PR**
 
-FOLLOWER (+26%)
+Eine besondere Auszeichnung gab es im November 2016. Gemeinsam mit der PR- und Public Affairs-Agentur Ecker und Partner wurde der SK Rapid zum *Staatspreis PR in der Kategorie „Corporate PR"* nominiert. Somit fand die Kommunikation zum Neubau des Allianz Stadions, die über rund zwei Jahre unter dem Titel „Alte Heimat – Neues Zuhause: Das grün-weiße Jahrhundertprojekt des SK Rapid" Maßstäbe setzen konnte, auch bei einer hochkarätigen Jury großen Anklang. Am Ende gab es einen Platz unter den Top-3, geschlagen nur von der ÖBB-Kampagne „Menschlichkeit fährt Bahn" rund um die große Flüchtlingsbewegung im Sommer 2015.
 
-Der aktuelle Terminkalender
+**Das neue Media Center im Allianz Stadion**
 
-1 4
+Nach zwei Jahren im Ernst-Happel-Stadion fand der SK Rapid durch die Inbetriebnahme des Allianz Stadions endlich einen würdigen Platz für seine Pressekonferenzen. Im *hochmodernen Media Center*, das alle Voraussetzungen der höchsten UEFA-Kategorie erfüllt, gehen seither alle relevanten Medientermine rund um den Klub über die Bühne. Zwischen Juli 2016 und Juni 2017 fanden dort *65 Pressekonferenzen* statt, am öftesten als Podiumsgast waren Mike Büskens (28 mal), Christoph Peschek (24), Damir Canadi (21), Goran Djuricin (13) und Fredy Bickel (12) vertreten. Der Großteil der Pressekonferenzen wurde via Livestream auf Facebook und teilweise auch Youtube ausgestrahlt, die Aufzeichnung all dieser Veranstaltungen wurde kurz danach am grün-weißen Youtube-Kanal zur Verfügung gestellt.
 
-v4
+**Das Team**
 
-Terminübersicht
+Personell hat sich das Team der Direktion Kommunikation, Medien & PR in der Saison 2016/17 nicht verändert und wurde von Peter Klinglmüller (Direktor), Günther Bitschnau und Christian Wiesmayr gebildet. Diesen beiden engagierten Mitarbeitern möchte ich für Ihre großartige Arbeit und für überdurchschnittliches Engagement auch an dieser Stelle einen herzlichen Dank aussprechen!
 
-Mit Snapchat bedient der SK Rapid seit
-der Saison 2016/17 neben Facebook,
-Instagram und Twitter einen weiteren
-Social-Media-Kanal, der sich vor al-
-lem bei der jungen Zielgruppe größter
-Beliebtheit erfreut. Eingestellt wurde
-hingegen aufgrund fehlender Resonanz
-das Engagement auf Google+, inten-
-siviert die Aktivitäten auf Youtube, der
-größten Videoplattform des Planeten,
-auf der im Berichtszeitraum fast 500
-neue Clips auf den Rapid-Kanal online
-gestellt wurden!
+[Unterschrift]
 
-Sehr populär ist weiterhin die eigene
-TV-Sendung RAPIDVIERTELSTUNDE,
-die 40mal jährlich immer Freitags um
-19.15 Uhr im Wiener Stadtfernseh-
-en W24 erstausgestrahlt und in weit-
-erer Folge mehrmals wiederholt wird.
-Alle Sendungen sind zudem in der Me-
-diathek auf der Homepage von W24
-zu sehen. Im November 2016 wurde
-die bereits 100. Folge der grün-weißen
-TV-Sendung ausgestrahlt und dieses
-Jubiläum mit einer 90 Minuten lang-
-en Sondersendung unter dem Titel
-„RAPIDVIERTELSTUNDE von A bis Z“
-gebührend begangen. Moderiert wird
-die Sendung nach wie vor von Andy
-Marek, der als Direktor Klubservice
-und jahrzehntelanger Stadionmodertor
-nicht umsonst als die „Stimme Rapids“
-
-You
-
-11.609
-
-gilt. Laut W24 erreicht jede Folge via TV
-und Mediathek bzw. Livestream rund
-80.000 Zuschauer, ein toller Wert, auf
-den man wirklich stolz sein darf!
-
-Zu verantworten hat die Direktion Kom-
-munikation, Medien & PR weiterhin die
-klassischen Printprodukte des Rekord-
-meisters in Kooperation mit Styria Me-
-dienhaus Sport GmbH & Co KG. So er-
-scheint einmal im Quartal das Rapid
-Magazin, die offizielle Vereinszeitschrift
-des SK Rapid, in einer Auflage von
-30.000 Stück und zu jedem Heimspiel
-Rapid heute, die offizielle Stadionzei-
-tung, die den Besuchern gratis zur
-Verfügung gestellt wird. Im November
-2016 wurde zudem zum bereits vierten
-Mal der Geschäftsbericht redaktionell
-begleitet.
-
-Die klassische Medienarbeit lief auch
-2016/17 auf Hochtouren, vor allem
-über das eigene Online-Pressecent-
-er konnten fast 200 Pressemeldungen
-und zahllose Fotos und Grafiken von
-der Direktion Kommunikation, Medien
-& PR an Medienvertreter aus Österreich
-und ganz Europa zur Verfügung gestellt
-werden!
-
-In Iran
-
-us Offize.e ZEITSCHRIFT Des x men
-
-DIE EINE, DIE
-IMMER WEHT
-
-IN WEHEN, MIA WERDEN
-NIEMALS GEHEN: SCHUNERSGEN WOCHEN FOLGT
-NUN EIN NEUER AUFSCHWUNG
-
-Des weiteren konnten wir im Zuge des
-Projekts „Bundesliga on Ear“, an dem
-unser Klub seit 2010 unter dem Motto
-„Rapid on Ear“ teilnimmt, blinden und
-sehbehinderten Menschen ein beson-
-deres Service anbieten. Alle Heimspiele
-in Bundesliga, ÖFB-Cup und Europa-
-cup wurden von speziell geschulten
-Radiosprechern kommentiert und in
-all seinen Facetten beschrieben. Dies-
-en Audiokommentar können Fans im
-Stadion über ein FM-Radio auf der Fre-
-quenz 99,2 MHz wahrnehmen, darüber
-hinaus ist der Audio-Livestream auch
-über die Homepage und die offizielle
-Rapid-App empfangbar.
-
-Nominierung zum Staatspreis PR
-Eine besondere Auszeichnung gab
-es im November 2016. Gemeinsam
-mit der PR- und Public Affairs-Agen-
-tur Ecker und Partner wurde der SK
-Rapid zum Staatspreis PR in der Kat-
-egorie „Corporate PR“ nominiert. Somit
-fand die Kommunikation zum Neubau
-des Allianz Stadions, die über rund
-zwei Jahre unter dem Titel „Alte Hei-
-mat - Neues Zuhause: Das grün-weiße
-Jahrhundertprojekt des SK Rapid“
-Maßstäbe setzen konnte, auch bei ein-
-er hochkarätigen Jury großen Anklang.
-Am Ende gab es einen Platz unter den
-Top-3, geschlagen nur von der ÖBB-
-Kampagne „Menschlichkeit fährt Bahn“
-rund um die große Flüchtlingsbewe-
-gung im Sommer 2015.
-
-Das neue Media Center im Allianz
-Stadion
-
-Nach zwei Jahren im Ernst-Happel-
-Stadion fand der SK Rapid durch die
-Inbetriebnahme des Allianz Stadions
-endlich einen würdigen Platz für seine
-Pressekonferenzen. Im hochmodernen
-Media Center, das alle Voraussetzung-
-en der höchsten UEFA-Kategorie er-
-füllt, gehen seither alle relevanten Me-
-dientermine rund um den Klub über die
-
-41.125
-
-ABONNENTEN (+22%)
-
-FOLLOWER (+46%)
-
-2 | ZAHLEN, DATEN & FAKTEN
-
-Bühne. Zwischen Juli 2016 und Juni
-2017 fanden dort 65 Pressekonferen-
-zen statt, am Öftesten als Podiumsgast
-waren Mike Büskens (28 mal), Chris-
-toph Peschek (24), Damir Canadi (21),
-Goran Djuricin (13) und Fredy Bickel
-(12) vertreten. Der Großteil der Presse-
-konferenzen wurde via Livestream auf
-Facebook und teilweise auch Youtube
-ausgestrahlt, die Aufzeichnung all dies-
-er Veranstaltungen wurde kurz danach
-am grün-weißen Youtube-Kanal zur
-Verfügung gestellt.
-
-Das Team
-
-Personell hat sich das Team der Di-
-rektion Kommunikation, Medien & PR
-in der Saison 2016/17 nicht verändert
-und wurde von Peter Klinglmüller (Di-
-rektor), Günther Bitschnau und Chris-
-tian Wiesmayr gebildet. Diesen beiden
-engagierten Mitarbeitern möchte ich
-für Ihre großartige Arbeit und für über-
-durchschnittliches Engagement auch
-an dieser Stelle einen herzlichen Dank
-aussprechen!
-
-Peter Klinglmüller
+**Peter Klinglmüller**
 Direktor Kommunikation, Medien & PR
 
-3.000
+Bildtexte / Grafiken:
 
-FOLLOWER/VIEWS
+- Screenshot der Website allianz-stadion.at (u. a. „Neuigkeiten", „Terminübersicht", „Die aktuelle Terminkalender", „allianz-stadion.at in neuem Gewand!")
+- Titelseite Rapid Magazin: „DIE EINE, DIE IMMER WEHT" – Untertitel: „SEHT UNSERE FAHNEN WEHEN. WIR WERDEN NIEMALS GEHEN. SCHWERE WOCHEN [ilegible] FOLGT NUN EIN NEUER AUFSCHWUNG." (teilweise [ilegible])
+
+Social-Media-Kennzahlen:
+
+| Kanal | Wert | Veränderung |
+|---|---|---|
+| Facebook | 215.892 FANS | (+6%) |
+| Twitter | 19.119 FOLLOWER | (+26%) |
+| YouTube | 11.609 ABONNENTEN | (+22%) |
+| Instagram | 41.125 FOLLOWER | (+46%) |
+| Snapchat | 3.000 FOLLOWER/VIEWS | |
+
+78 (Seitenzahl links) · 79 (Seitenzahl rechts)
 
 --- pág. 41 ---
 

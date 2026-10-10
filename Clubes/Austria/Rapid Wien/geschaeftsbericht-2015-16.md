@@ -1483,285 +1483,221 @@ Präsident Leo Windtner) (26., 27.)
 
 --- pág. 15 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2015/16
+SK RAPID | GESCHÄFTSBERICHT 2015/16 — 2 | ZAHLEN, DATEN & FAKTEN
 
-2.1.1 PROFIS
+## 2.1.1 PROFIS
 
-Auch in diesem Jahr wurde wieder sehr großer Wert
-auf Kontinuität in der Kaderplanung gelegt. Obwohl
-es in den Transferfenstern in diesem Geschäftsjahr zu
-doch größeren Veränderungen im Mannschaftskader
-der Profis gekommen ist, blieb der Stamm der
-Mannschaft jedoch großteils unverändert. 73,1%
-der Spieler aus der Vorsaison standen auch wie
-schon im Jahr davor im neuen Mannschaftskader
-für die Bundesliga-Spielsaison 2015/2016. Was
+Auch in diesem Jahr wurde wieder sehr großer Wert auf Kontinuität in der Kaderplanung gelegt. Obwohl es in den Transferfenstern in diesem Geschäftsjahr zu doch größeren Veränderungen im Mannschaftskader der Profis gekommen ist, blieb der Stamm der Mannschaft jedoch großteils unverändert. 73,1% der Spieler aus der Vorsaison standen auch wie schon im Jahr davor im neuen Mannschaftskader für die Bundesliga-Spielsaison 2015/2016. Was der sportlichen Leitung des SK Rapid in diesem Zusammenhang immer sehr wichtig ist, dass auch wieder drei Spieler aus der vereinseigenen Entwicklungsschiene - sprich aus dem eigenen Nachwuchs - den Sprung über die Rapid II-Mannschaft in den Kader unserer Bundesliga-Mannschaft geschafft haben. Erwähnenswert und auch beachtlich ist, dass mit Gashi, Hofmann M., Knoflach, Pavelic, Prosenik, Schaub, Schrammel, Szanto und Wöber gleich 9 (!!) - sogenannte - Home Grown Players im Profikader stehen. Damit wurde auch ein sehr wichtiger Schritt für eine erfolgreiche sportliche Entwicklung in naher Zukunft des Vereins gesetzt. Mit ein wenig mehr Erfahrung und Routine wird diese Rapid-Mannschaft aus jungen und überaus talentierten Spielern mit Sicherheit schon sehr bald den gesetzten Zielen einen großen Schritt näher kommen.
 
-der sportlichen Leitung des SK Rapid in diesem
-Zusammenhang immer sehr wichtig ist, dass
+### KADERPLANUNG, ENTWICKLUNG & STRATEGIE
 
-auch wieder drei Spieler aus der vereinseigenen
-Entwicklungsschiene - sprich aus dem eigenen
+| ZUGÄNGE AUS EIGENREKRUTIERUNG | 2013/14 | 2014/15 | 2015/16 | 3-JAHRES-SCHNITT |
+|---|---|---|---|---|
+| Spieler aus Vorjahreskader | 18 | 15 | 19 | 17,3 |
+| Rückholung v. Leihspielern | 1 | 0 | 0 | 0,3 |
+| Spieler aus Nachwuchs | 1 | 3 | 3 | 2,3 |
+| **ZUGÄNGE AUS FREMDREKRUTIERUNG** | | | | |
+| Spielerkauf | 1 | 7 | 3 | 3,7 |
+| ablösefreie Verpflichtung | 1 | 1 | 4 | 2,0 |
+| Spielerausleihe | 2 | 0 | 0 | 0,7 |
+| **ABGÄNGE MIT ENTSCHÄDIGUNGEN** | | | | |
+| Abgänge durch Vertragsablauf | 5 | 6 | 1 | 4,0 |
+| Abgänge durch Spielerverkäufe | 1 | 3 | 5 | 3,0 |
+| Abgänge durch Verleihungen | 1 | 0 | 2 | 1,0 |
+| **KADER GESAMT** | 24 | 24 | 26 | 24,7 |
 
-Nachwuchs - den Sprung über die Rapid Il-
+**9 HOME GROWN PLAYERS** ▶▶▶ GASHI, HOFMANN M., KNOFLACH, PAVELIC, PROSENIK, SCHAUB, SCHRAMMEL, SZANTO, WÖBER
 
-Mannschaft in den Kader unserer Bundesliga-
-Mannschaft geschafft haben. Erwähnenswert und
-auch beachtlich ist, dass mit Gashi, Hofmann M.,
-Knoflach, Pavelic, Prosenik, Schaub, Schrammel,
-Szanto und Wöber gleich 9 (!!) - sogenannte - Home
-Grown Players im Profikader stehen. Damit wurde
-auch ein sehr wichtiger Schritt für eine erfolgreiche
-sportliche Entwicklung in naher Zukunft des Vereins
-gesetzt. Mit ein wenig mehr Erfahrung und Routine
-wird diese Rapid-Mannschaft aus jungen und
-überaus talentierten Spielern mit Sicherheit schon
-sehr bald den gesetzten Zielen einen großen Schritt
+- **85%** EIGENREKRUTIERUNG 2015/16
+- **32%** DER ABGÄNGE SEIT DER SAISON 2013/14 LUKRIEREN ERLÖSE
+- **31%** ALLER ZUGÄNGE DER LETZTEN 3 JAHRE KAMEN ABLÖSEFREI
 
-näher kommen.
+### KADERLISTE
 
-KADERPLANUNG, ENTWICKLUNG & STRATEGIE
+| Position | Vorname | Nachname | Bundesliga Einsätze | Bundesliga Tore | ÖFB Cup Einsätze | ÖFB Cup Tore | Europa League Einsätze | Europa League Tore | Gesamt Einsätze | Gesamt Tore |
+|---|---|---|---|---|---|---|---|---|---|---|
+| TOR | Tobias | Knoflach | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
+| TOR | Ján | Novota | 12 | 0 | 0 | 0 | 9 | 0 | 21 | 0 |
+| TOR | Richard | Strebinger | 23 | 0 | 4 | 0 | 4 | 0 | 31 | 0 |
+| VERTEIDIGUNG | Stephan | Auer | 19 | 0 | 3 | 0 | 6 | 0 | 28 | 0 |
+| VERTEIDIGUNG | Christopher | Dibon | 23 | 1 | 2 | 0 | 0 | 8 | 33 | 1 |
+| VERTEIDIGUNG | Maximilian | Hofmann | 22 | 0 | 3 | 0 | 8 | 1 | 33 | 1 |
+| VERTEIDIGUNG | Mario | Pavelic | 26 | 2 | 2 | 0 | 10 | 0 | 38 | 2 |
+| VERTEIDIGUNG | Michael | Schimpelsberger | 2 | 0 | 1 | 0 | 0 | 0 | 3 | 0 |
+| VERTEIDIGUNG | Thomas | Schrammel | 5 | 1 | 1 | 0 | 0 | 0 | 6 | 1 |
+| VERTEIDIGUNG | Mario | Sonnleitner | 27 | 3 | 4 | 0 | 10 | 0 | 41 | 3 |
+| VERTEIDIGUNG | Stefan | Stangl | 26 | 5 | 2 | 0 | 9 | 0 | 37 | 5 |
+| VERTEIDIGUNG | Attila | Szalai | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| VERTEIDIGUNG | Maximilian | Wöber | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
+| MITTELFELD | Srdjan | Grahovac | 26 | 2 | 2 | 0 | 11 | 0 | 39 | 2 |
+| MITTELFELD | Steffen | Hofmann | 29 | 4 | 2 | 0 | 11 | 4 | 42 | 8 |
+| MITTELFELD | Philipp | Huspek | 6 | 0 | 1 | 0 | 3 | 0 | 10 | 0 |
+| MITTELFELD | Florian | Kainz | 33 | 7 | 3 | 3 | 11 | 1 | 47 | 11 |
+| MITTELFELD | Dino | Kovacec | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| MITTELFELD | Andreas | Kuen | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
+| MITTELFELD | Thomas | Murg | 7 | 1 | 1 | 0 | 2 | 0 | 10 | 1 |
+| MITTELFELD | Stefan | Nutz | 11 | 1 | 2 | 0 | 0 | 0 | 13 | 1 |
+| MITTELFELD | Thanos | Petsos | 20 | 1 | 3 | 0 | 10 | 1 | 33 | 2 |
+| MITTELFELD | Louis | Schaub | 24 | 5 | 2 | 0 | 8 | 4 | 34 | 9 |
+| MITTELFELD | Philipp | Schobesberger | 33 | 6 | 3 | 3 | 10 | 2 | 46 | 11 |
+| MITTELFELD | Stefan | Schwab | 36 | 8 | 4 | 0 | 10 | 1 | 50 | 9 |
+| MITTELFELD | Tamás | Szanto | | | | | | | | |
+| MITTELFELD | Dominik | Wydra | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
+| ANGRIFF | Deni | Alar | 19 | 3 | 2 | 1 | 6 | 0 | 27 | 4 |
+| ANGRIFF | Robert | Beric | 5 | 3 | 1 | 1 | 4 | 2 | 10 | 6 |
+| ANGRIFF | Matej | Jelic | 27 | 6 | 3 | 0 | 7 | 1 | 37 | 7 |
+| ANGRIFF | Philipp | Prosenik | 22 | 4 | 3 | 1 | 10 | 0 | 35 | 5 |
+| ANGRIFF | Tomi | Correa Miranda | 12 | 3 | 1 | 1 | 0 | 0 | 13 | 4 |
 
-ZUGÄNGE AUS EIGENREKRUTIERUNG 2013/14 2014/15 2015/16 3-JAHRES-SCHNITT
-18 15 19
+### ALTERSSTRUKTUR
 
-Spieler aus Vorjahreskader
+Legende: < 21 JAHRE; 21-24 JAHRE; 25-30 JAHRE; > 30 JAHRE (Grafik ohne weitere Zahlenangaben)
 
-Rückholung v. Leihspielern
+### DURCHSCHNITTSALTER
 
-Spieler aus Nachwuchs
+| Saison | Durchschnittsalter |
+|---|---|
+| 2013/14 | 22,8 JAHRE |
+| 2014/15 | 22,5 JAHRE |
+| 2015/16 | 23,3 JAHRE |
 
-17,3
-0 0 0,3
-3 3 2,3
-
-ZUGÄNGE AUS FREMDREKRUTIERUNG
-
-MITTELFELD
-
-Spielerkauf
-ablösefreie Verpflichtung
-
-Spielerausleihe
-
-ABGÄNGE MIT ENTSCHÄDIGUNGEN
-
-Abgänge durch Vertragsablauf
-Abgänge durch Spielerverkäufe
-
-Abgänge durch Verleihungen
-
-KADER GESAMT
-
-7 3 3,7
-1 4 2,0
-0 0 0,7
-6 1 4,0
-3 5 3,0
-0 2 1,0
-24 26 24,7
-
-HOME
-GROWN
-PLAYERS
-
-GASHI
-
-PAVELIG SCHRANIMEL
-
-HOFMANN M. PROSENIK SZANTO
-KNOFLACH
-
-SCHAUB WOBER
-
-EIGENREKRUTIERUNG
-
-2015/16
-
-0970
-
-32%
-
-DER ABGÄNGE SEIT
-DER SAISON 2013/14
-LUKRIEREN ERLÖSE
-LETZTEN 3 JAHRE
-KAMEN ABLÖSEFREI
-
-31%
-
-ALLER ZUGÄNGE DER
-
-TOR
-
-VERTEIDIGUNG
-
-ANGRIFF
-
-2 | ZAHLEN, DATEN & FAKTEN
-
-KADERLISTE
-
-VORNAME NACHNAME EINSÄTZE TORE EINSÄTZE TORE EINSÄTZE TORE EINSÄTZE TORE
-Tobias Knoflach 2 [0] [0] [0] [0] [0] 2 [0]
-Jan Novota 12 0 0 0 9 0 21 0
-Richard Strebinger 23 [0] 4 [0] 4 [0] 31 0
-Stephan Auer 19 [0] 3 [0] 6 0 28 0
-Christopher Dibon 23 1 2 [0] 0 8 33 1
-Maximilian Hofmann 22 [0] 3 [0] 8 1 33 1
-Mario Pavelic 26 2 2 0 10 0 38 2
-Michael Schimpelsberger 2 [0] 1 [0] [0] 0 3 0
-Thomas Schrammel 5 1 1 [0] [0] [0] 6 1
-Mario Sonnleitner 27 3 4 [0] 10 [0] 41 3
-Stefan Stangl 26 5 2 [0] 9 0 37 5
-Attila Szalai 1 0 0 0 0 0 1 0
-Maximilian Wöber [0] [0] [0] [0] 1 [0] 1 [0]
-Srdjan Grahovac 26 2 2 [0] 11 0 39 2
-Steffen Hofmann 29 4 2 [0] 11 4 42 8
-Philipp Huspek 6 0 1 0 3 0 10 0
-Florian Kainz 33 7 3 3 11 1 47 11
-Dino Kovacec 1 [0] [0] [0] [0] [0] 1 [0]
-Andreas Kuen 2 [0] [0] [0] [0] [0] 2 [0]
-Thomas Murg 7 1 1 0 2 0 10 1
-Stefan Nutz 11 1 2 0 0 0 13 1
-Thanos Petsos 20 1 3 [0] 10 1 33 2
-Louis Schaub 24 5 2 0 8 4 34 9
-Philipp Schobesberger 33 6 3 3 10 2 46 11
-Stefan Schwab 36 8 4 0 10 1 50 9
-Tamäs Szanto
-
-Dominik Wydra 0 0 1 0 0 0 1 0
-Deni Alar 19 3 2 1 6 0 27 4
-Robert Beric 5 3 1 1 4 2 10 6
-Matej Jelic 27 6 3 0 7 1 37 7
-Philipp Prosenik 22 4 3 1 10 0 35 5
-Tomi Correa Miranda 12 3 1 1 [0] [0] 13 4
-
-<21 JAHRE
-a2 NN 2013/14 22,8 JAHRE
->30 JAHRE N 2014/15 22,5 JAHRE
-2015/16 23,3 JAHRE
-
-ALTERSSTRUKTUR DURCHSCHNITTSALTER
-
+28 | 29
 
 --- pág. 16 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2015/16
-En
+SK RAPID | GESCHÄFTSBERICHT 2015/16 — 2 | ZAHLEN, DATEN & FAKTEN
 
-NATIONAL
+## NATIONAL
 
-TIPICO BUNDESLIGA, RÜCKRUNDE
+### TIPICO BUNDESLIGA, HINRUNDE
 
-TIPCIO BUNDESLIGA, HINRUNDE
-1 25.07.2015 SK RAPID FH)
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| 1 | 25.07.2015 | SK RAPID | 3:0 | SV Ried |
+| 2 | 01.08.2015 | RB Salzburg | 1:2 | SK RAPID |
+| 3 | 09.08.2015 | SK RAPID | 2:1 | WAC |
+| 4 | 12.08.2015 | FK Austria | 2:5 | SK RAPID |
+| 5 | 16.08.2015 | SK Sturm | 2:2 | SK RAPID |
+| 6 | 22.08.2015 | SK RAPID | 3:0 | SV Grödig |
+| 7 | 29.08.2015 | SK RAPID | 2:4 | SV Mattersburg |
+| 8 | 12.09.2015 | SCR Altach | 2:0 | SK RAPID |
+| 9 | 20.09.2015 | SK RAPID | 2:0 | Admira Wacker |
+| 10 | 26.09.2015 | SV Ried | 0:1 | SK RAPID |
+| 11 | 04.10.2015 | SK RAPID | 1:2 | RB Salzburg |
+| 12 | 18.10.2015 | WAC | 2:1 | SK RAPID |
+| 13 | 25.10.2015 | SK RAPID | 1:2 | FK Austria |
+| 14 | 31.10.2015 | SK RAPID | 2:1 | SK Sturm |
+| 15 | 08.11.2015 | SV Grödig | 2:1 | SK RAPID |
+| 16 | 21.11.2015 | SV Mattersburg | 1:6 | SK RAPID |
+| 17 | 29.11.2015 | SK RAPID | 3:1 | SCR Altach |
+| 18 | 02.12.2015 | Admira Wacker | 2:1 | SK RAPID |
 
-SV Ried 05.12.2015 SKRAPID BA SV Ried
+### TIPICO BUNDESLIGA, RÜCKRUNDE
 
-2 01.08.2015 RB Salzburg SK RAPID 20 13.12.2015 RB Salzburg E40 SK RAPID
-3 09.08.2015 SKRAPID BASE WAC 21 06.02.2016 SK RAPID Ki WAC
-4 12.08.2015 FK Austria SK RAPID 22 14.02.2016 FK Austria SK RAPID
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| 19 | 05.12.2015 | SK RAPID | 2:1 | SV Ried |
+| 20 | 13.12.2015 | RB Salzburg | 2:0 | SK RAPID |
+| 21 | 06.02.2016 | SK RAPID | 3:0 | WAC |
+| 22 | 14.02.2016 | FK Austria | 0:3 | SK RAPID |
+| 23 | 21.02.2016 | SK Sturm | 0:2 | SK RAPID |
+| 24 | 27.02.2016 | SK RAPID | 3:2 | SV Grödig |
+| 25 | 02.03.2016 | SK RAPID | 3:0 | SV Mattersburg |
+| 26 | 06.03.2016 | SCR Altach | 0:0 | SK RAPID |
+| 27 | 12.03.2016 | SK RAPID | 0:4 | Admira Wacker |
+| 28 | 12.04.2016 | SV Ried | 1:0 | SK RAPID |
+| 29 | 02.04.2016 | SK RAPID | 1:1 | RB Salzburg |
+| 30 | 09.04.2016 | WAC | 2:2 | SK RAPID |
+| 31 | 17.04.2016 | SK RAPID | 1:0 | FK Austria |
+| 32 | 23.04.2016 | SK RAPID | 2:0 | SK Sturm |
+| 33 | 30.04.2016 | SV Grödig | 2:0 | SK RAPID |
+| 34 | 08.05.2016 | SV Mattersburg | 0:2 | SK RAPID |
+| 35 | 11.05.2016 | SK RAPID | 1:1 | SCR Altach |
+| 36 | 15.05.2016 | Admira Wacker | 1:3 | SK RAPID |
 
-5 16.08.2015 SK Sturm SK RAPID 23 21.02.2016 SK Sturm SK RAPID
+### TABELLE
 
-6 22.08.2015 SK RAPID SV Grödig 24 27.02.2016 SK RAPID : 2 SV Grödig
+| | TIPICO BUNDESLIGA | S | U | N | +/- | PKT. |
+|---|---|---|---|---|---|---|
+| 1 | RB Salzburg | 21 | 11 | 4 | 38 | 74 |
+| 2 | SK RAPID | 20 | 5 | 11 | 24 | 65 |
+| 3 | FK Austria | 17 | 8 | 11 | 17 | 59 |
+| 4 | Admira Wacker | 13 | 11 | 12 | -6 | 50 |
+| 5 | SK Sturm | 12 | 12 | 12 | 0 | 48 |
+| 6 | WAC | 11 | 10 | 15 | -3 | 43 |
+| 7 | SV Ried | 11 | 9 | 16 | -16 | 42 |
+| 8 | SCR Altach | 11 | 7 | 18 | -10 | 40 |
+| 9 | Admira Wacker | 10 | 9 | 17 | -30 | 39 |
+| 10 | SV Grödig | 9 | 8 | 19 | -14 | 35 |
 
-7 29.08.2015 SK RAPID % SV Mattersburg 25 02.03.2016 SK RAPID 30 SV Mattersburg
-8 12.09.2015 SCR Altach j SK RAPID 26 06.03.2016 SCR Altach 0:0 SK RAPID
+- **6** SPIELE UNGESCHLAGEN (RUNDE 1-6 & 21-26)
+- **23** VON 36 PUNKTEN VS. RBS, FAK & STURM
+- **17** PUNKTE VS. ALTACH, ADMIRA & GRÖDIG
+- **5** LÄNGSTE SIEGESSERIE (RUNDE 21-25)
 
-9 20.09.2015 SK RAPID BA Admira Wacker 27 12.03.2016 SKRAPID DRS Admira Wacker
-10 26.09.2015 SV Ried | SK RAPID 28 12.04.2016 SV Ried 1:0 | SK RAPID
+### ÖFB CUP
 
-11 04.10.2015 SK RAPID : j RB Salzburg 29 02.04.2016 SKRAPID 1:1 RB Salzburg
-12 18.10.2015 WAC 21 SK RAPID 30 09.04.2016 WAC 2:2 SK RAPID
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| 1 | 17.07.2015 | SC Weiz | 1:5 | SK RAPID |
+| 2 | 23.09.2015 | SKU Amstetten | 1:2 | SK RAPID (n.V.) |
+| AF | 28.10.2015 | SK RAPID | 5:1 | Austria Salzburg |
+| VF | 10.02.2016 | SK RAPID | 0:1 | Admira Wacker |
 
-13 25.10.2015 SK RAPID - > FK Austria 31 17.04.2016 SK RAPID FK Austria
+- **3** CUP-TORE ERZIELTEN KAINZ & SCHOBESBERGER
+- **13** ERZIELTE TORE BIS ZUM AUS IM VIERTELFINALE
 
-14 31.10.2015 SK RAPID 21 SK Sturm 32 23.04.2016 sk RAPID PE SK Sturm
+(Grafik mit Prozentangaben: 40% und 52% — Zuordnung/Beschriftung [ilegible])
 
-15 08.11.2015 SV Grödig SK RAPID 33 30.04.2016 SV Grödig PM SK RAPID
+## INTERNATIONAL
 
-16 21.11.2015 SV Mattersburg SK RAPID 34 08.05.2016 SV Mattersburg 02 SK RAPID
+### UEFA CHAMPIONS LEAGUE, QUALIFIKATION
 
-17 29.11.2015 SK RAPID SCR Altach 35 11.05.2016 SKRAPID 1:1 SCR Altach
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| 3 | 29.07.2015 | SK RAPID | 2:2 | Ajax Amsterdam |
+| 3 | 04.08.2015 | Ajax Amsterdam | 2:3 | SK RAPID |
+| PO | 19.08.2015 | SK RAPID | 0:1 | Shakhtar Donezk |
+| PO | 25.08.2015 | Shakhtar Donezk | 2:2 | SK RAPID |
 
-18 02.12.2015 Admira Wacker SK RAPID 36 15.05.2016 Admira Wacker BR: SK RAPID
+### UEFA EUROPA LEAGUE, GRUPPENPHASE
 
-TABELLE
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| 1 | 17.09.2015 | SK RAPID | 2:1 | Villarreal CF |
+| 2 | 01.10.2015 | Dinamo Minsk | 0:1 | SK RAPID |
+| 3 | 22.10.2015 | SK RAPID | 3:2 | Viktoria Pilsen |
+| 4 | 05.11.2015 | Viktoria Pilsen | 1:2 | SK RAPID |
+| 5 | 26.11.2015 | Villarreal CF | 1:0 | SK RAPID |
+| 6 | 10.12.2015 | SK RAPID | 2:1 | Dinamo Minsk |
 
-mırico sunpesuisa | s | u | | w- |prr.| SPIELE UNGESCHLAGEN
-1 21 11 4 38 74
+### TABELLE, GRUPPE E
 
-RB Salzburg (RUNDE 1-6 & 21-26)
+| | | S | U | N | +/- | PKT. |
+|---|---|---|---|---|---|---|
+| 1 | SK RAPID | 5 | 0 | 1 | 4 | 15 |
+| 2 | Villarreal CF | 4 | 4 | 4 | 6 | 13 |
+| 3 | Viktoria Pilsen | 1 | 1 | 4 | -2 | 4 |
+| 4 | Dinamo Minsk | 1 | 0 | 5 | -8 | 3 |
 
-3 FK Austria 171 8 117.9 VoN 36 PUNKTEN VS.
-4 _Admira Wacker 3 12-6 50 RBS FAK & STURM
-5 SK Sturm 212 22 0 48 ’
+- **200** TAUSEND FANS KAMEN ZU DEN EC-HEIMSPIELEN
+- **1995** ÜBERWINTERTE RAPID ZULETZT IM EUROPACUP
 
-7 _SVRied 11 9 16 -16 42
+### UEFA EUROPA LEAGUE, K.O.-RUNDE
 
-6 WAC 11 10 15 -3 43 1 7 PUNKTE VS. ALTACH,
-ADMIRA & GRODIG
+| Runde | Datum | Heim | Ergebnis | Gast |
+|---|---|---|---|---|
+| R32 | 18.02.2016 | Valencia CF | 6:0 | SK RAPID |
+| R32 | 25.02.2016 | SK RAPID | 0:4 | Valencia CF |
 
-9 _Admira Wacker 10 9 17 -30 39 LANGSTE SIEGESSERIE
-10 SV Grödig 908 9 14 3 (RUNDE 21-25)
+### DAS TEAM HINTER DEM TEAM
 
-8  SCR Altach 11 7 18 -10 40
+Fotos mit Namensbeschriftungen: ZORAN BARISIC (CHEFTRAINER); weitere Beschriftungen unter den Fotos [ilegible]
 
-CUP-TORE ERZIELTEN er =
-KAINZ & SCHOBESBERGER — ' "205 sen BES scan
+*weiters*
+Maurizio Zoccola (Videoanalyst), Dr. Thomas Balzer (Teamarzt), Dr. Benno Zifko (Unfallchirurg), Dr. Andreas Mondl (Unfallchirurg), Wojtek Burzec (Physiotherapeut), Wolfgang Frey (Masseur), Wolfgang Skalsky (Masseur), Andreas Lorbek (Utensilien Manager)
 
-2 23.09.2015 SKU Amstetten EP SK RAPID n.V.
-
-1 ERZIELTE TORE BIS ZUM AUS AF 28.10.2015 SK RAPID 5: | Austria Salzburg
-
-IM VIERTELFINALE VF 10.02.2016 SK RAPID EB Admira Wacker
-
-2 | ZAHLEN, DATEN & FAKTEN
-
-INTERNATIONAL
-
-UEFA CHAMPIONS LEAGUE, QUALIFIKATION
-
-3 29.07.2015 SKRAPID 2:2 Ajax Amsterdam
-3 04.08.2015 Ajax Amsterdam Bi SK RAPID
-PO 19.08.2015 SK RAPID EHE Shakhtar Donezk
-
-PO 25.08.2015 Shakhtar Donezk 2:2 SK RAPID
-
-UEFA EUROPA LEAGUE, GRUPPENPHASE
-
-1 17.09.2015 SKRAPID HE Villarreal CF 1 SK RAPID 5 0 4
-
-2 01.10.2015 Dinamo Minsk on SK RAPID 2  Villarreal CF 4 4 4 6 13
-3 22.10.2015 SK RAPID 32 | Viktoria Pilsen 3 Viktoria Pilsen 1 1 4 -2 4
-4 05.11.2015 Viktoria Pilsen 4 2 | SK RAPID 4 Dinamo Minsk 1 0 5 -8 3
-5 26.11.2015 Villarreal CF 4 0 | SK RAPID
-
-6 10.12.2015 SK RAPID 2 | Dinamo Minsk 2 0 TAUSEND FANS KAMEN
-ZU DEN EG-HEIMSPIELEN
-
-R32 18.02.2016 Valencia CF u SK RAPID ÜBERWINTERTE RAPID
-R32 25.02.2016 SK RAPID MIY Valencia CF ZULETZT IM EUROPACUP
-
-DAS TEAM HINTER DEM TEAM
-
-f
-
-za BARISIC MIKE BÜSKENS EARSTEN JANCKER
-
-SEFTRER
-
-RAIMUND HEDL ALEXANDER STEINBICHLER
-TERMAANET LAGER ATLETICTRAMER
-
-weiters
-Maurizio Zoccola (Videoanalyst), Dr. Thomas Balzer (Teamarzt), Dr. Benno Zifko (Unfallchirurg),
-
-Dr. Andreas Mondl (Unfallchirurg), Wojtek Burzec (Physiotherapeut), Wolfgang Frey (Masseur),
-Wolfgang Skalsky (Masseur), Andreas Lorbek (Utensilien Manager)
-
+30 | 31
 
 --- pág. 17 ---
 
@@ -2368,63 +2304,86 @@ SK Rapid U15 VARTA-Turniers maßgeblich waren.
 
 --- pág. 22 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2015/16 2 | ZAHLEN, DATEN & FAKTEN
+SK RAPID | GESCHÄFTSBERICHT 2015/16 — 2 | ZAHLEN, DATEN & FAKTEN
 
-2.2 FINANZEN UND ORGANISATION
-2.2.1 KONSOLIDIERTE BILANZ DES SK RAPID
+## 2.2 FINANZEN UND ORGANISATION
 
-Transferrechte 2.456.513 1.397.111 Vereinskapital zum 01. Juli -1.232.441 -1.282.785
-Software-Lizenzen 88.514 8.613 Unterschiedsbetrag aus der Verschmelzung -91.264 -
-Immaterielle Vermögensgegenstände 2.545.026 1.405.723 Jahresgewinn/Jahresverlust 11.589.417 50.344
-A. VEREINSKAPITAL 10.265.713 -1.232.441
-Bauten auf fremden Grund 379.952 439.120
-andere Anlagen, Betriebs- und Geschäftsausstattung 559.162 472.746
-Anlagen in Bau 54.538.103 16.925.546 .
-B. SONDERPOSTEN INVESTITIONSZUSCHUSSE 21.608.014 21.685.292
-Sachanlagen 55.477.216 17.837.412
-\ Rückstellungen für Abfertigungen 288.723 325.520
-A. SUMME ANLAGEVERMÖGEN 58.022.243 19.243.135
-Steuerrückstellungen 29.333 31.890
-sonstige Rückstellungen 2.108.893 2.476.899
-Waren 1.535.027 788.122 .
-FERUPIUUEDFEUBEUUELIEEUEEDELUEEUPELEEDREUPEEUEERERRERUEEIEEREDELDEEURELEEDEEEREEUEEEEERERDELEREURELERDREEREEUEERERRERUERIERREEDELGREURELEELEEERELUEEEEEREEDEEREERELURDREREELUEEREERERUEREEERERDELUREERELEEEREERELUEEREREUELEEREERRERDERERERREEDELGREERELUEEREREEEUEEEEEURELEERREEUERDEEEREURELUERERUEEDEEUREERELTELEREURELERREERREERREE C. RUCKSTELLUNGEN 2.426.948 2.834.309
-Forderungen aus L+L 3.998.941 1.554.528
-Forderungen aus Spielertransfers 8.114.150 1.576.650
-Verbindlichkeiten gegenüber Kreditinstituten 30.159.961 950.071
-sonstige Forderungen und Vermögensgegenstände 2.234.372 6.546.405
-Verbindlichkeiten aus L+L 5.682.560 3.992.764
-Forderungen 14.347.462 9.677.583
-Verbindlichkeiten aus Spielertransfers 375.000 350.000
-Kassabestand, Guthaben bei Kreditinstituten 8.806.217 1.485.051 sonstige Verbindlichkeiten 4.264.728 879.055
-D. VERBINDLICHKEITEN 40.482.248 6.171.890
-B. SUMME UMLAUFVERMÖGEN 24.688.706 11.950.756
-C. RECHNUNGSABGRENZUNGSPOSTEN 1.324.479 756.960 E. RECHNUNGSABGRENZUNGSPOSTEN 9.252.504 2.491.802
-SUMME AKTIVA 84.035.428 31.950.852 SUMME PASSIVA 84.035.428 31.950.852
+### 2.2.1 KONSOLIDIERTE BILANZ DES SK RAPID
 
-1 2 0 y/ LIQUIDITÄT WORKING CAPITAL BILANZSUMMENENTWICKLUNG ENTWICKLUNG DER EK-BILANZ
+| AKTIVA | 30. Juni 2016 | 30. Juni 2015 |
+|---|---|---|
+| Transferrechte | 2.456.513 | 1.397.111 |
+| Software-Lizenzen | 88.514 | 8.613 |
+| **Immaterielle Vermögensgegenstände** | 2.545.026 | 1.405.723 |
+| Bauten auf fremden Grund | 379.952 | 439.120 |
+| andere Anlagen, Betriebs- und Geschäftsausstattung | 559.162 | 472.746 |
+| Anlagen in Bau | 54.538.103 | 16.925.546 |
+| **Sachanlagen** | 55.477.216 | 17.837.412 |
+| **A. SUMME ANLAGEVERMÖGEN** | 58.022.243 | 19.243.135 |
+| **Waren** | 1.535.027 | 788.122 |
+| Forderungen aus L+L | 3.998.941 | 1.554.528 |
+| Forderungen aus Spielertransfers | 8.114.150 | 1.576.650 |
+| sonstige Forderungen und Vermögensgegenstände | 2.234.372 | 6.546.405 |
+| **Forderungen** | 14.347.462 | 9.677.583 |
+| **Kassabestand, Guthaben bei Kreditinstituten** | 8.806.217 | 1.485.051 |
+| **B. SUMME UMLAUFVERMÖGEN** | 24.688.706 | 11.950.756 |
+| **C. RECHNUNGSABGRENZUNGSPOSTEN** | 1.324.479 | 756.960 |
+| **SUMME AKTIVA** | 84.035.428 | 31.950.852 |
 
-12.000.000
-1 GRADES y RATIO 84.035.428 90.000.000 10.265.713
--
-80.000.000 10.000.000
-’6 7 y/ LIQUIDITAT £ ° MILLIONEN 70.000.000 8.000.000
-0 2. GRADES y WORKING CAPITAL 60.000.000 6.000.000
-50.000.000
+| PASSIVA | 30. Juni 2016 | 30. Juni 2015 |
+|---|---|---|
+| Vereinskapital zum 01. Juli | -1.232.441 | -1.282.785 |
+| Unterschiedsbetrag aus der Verschmelzung | -91.264 | - |
+| Jahresgewinn/Jahresverlust | 11.589.417 | 50.344 |
+| **A. VEREINSKAPITAL** | 10.265.713 | -1.232.441 |
+| **B. SONDERPOSTEN INVESTITIONSZUSCHÜSSE** | 21.608.014 | 21.685.292 |
+| Rückstellungen für Abfertigungen | 288.723 | 325.520 |
+| Steuerrückstellungen | 29.333 | 31.890 |
+| sonstige Rückstellungen | 2.108.893 | 2.476.899 |
+| **C. RÜCKSTELLUNGEN** | 2.426.948 | 2.834.309 |
+| Verbindlichkeiten gegenüber Kreditinstituten | 30.159.961 | 950.071 |
+| Verbindlichkeiten aus L+L | 5.682.560 | 3.992.764 |
+| Verbindlichkeiten aus Spielertransfers | 375.000 | 350.000 |
+| sonstige Verbindlichkeiten | 4.264.728 | 879.055 |
+| **D. VERBINDLICHKEITEN** | 40.482.248 | 6.171.890 |
+| **E. RECHNUNGSABGRENZUNGSPOSTEN** | 9.252.504 | 2.491.802 |
+| **SUMME PASSIVA** | 84.035.428 | 31.950.852 |
 
-1 2 DIENSTNEHMER £ 7 MILLIONEN 31.950.852 «0.000.000 1.496.370 Tr
-PER 30. JUNI „3 CASH FLOW 2015/16 om | g zum
+Kennzahlen:
+- **120%** LIQUIDITÄT 1. GRADES
+- **267%** LIQUIDITÄT 2. GRADES
+- **128** DIENSTNEHMER PER 30. JUNI
+- **1,5** WORKING CAPITAL RATIO
+- **€ 8,1 MILLIONEN** WORKING CAPITAL
+- **€ 7,3 MILLIONEN** CASH FLOW 2015/16
 
-20.000.000 u | u |
-12.133.819
+### BILANZSUMMENENTWICKLUNG
 
-9.966.407 9.318.648 11.273.530
+Balkendiagramm (Achse: 10.000.000 bis 90.000.000 in Schritten von 10.000.000):
 
--1.282.785 -1.232.441 -2.000.000
-u I u E 10.000.000 1.801.592 1.463.502
--4.000.000
+| Geschäftsjahr | Bilanzsumme |
+|---|---|
+| 2010/11 | 9.966.407 |
+| 2011/12 | 12.133.819 |
+| 2012/13 | 9.318.648 |
+| 2013/14 | 11.273.530 |
+| 2014/15 | 31.950.852 |
+| 2015/16 | 84.035.428 |
 
-2010/11 2011/12 2012/13 2013/14 2014/15 2015/16 2010/11 2011/12 2012/13 2013/14 2014/15 2015/16
+### ENTWICKLUNG DER EK-BILANZ
 
+Balkendiagramm (Achse: -4.000.000 bis 12.000.000 in Schritten von 2.000.000):
+
+| Geschäftsjahr | EK-Bilanz |
+|---|---|
+| 2010/11 | 1.496.370 |
+| 2011/12 | -1.801.582 |
+| 2012/13 | -1.463.502 |
+| 2013/14 | -1.282.785 |
+| 2014/15 | -1.232.441 |
+| 2015/16 | 10.265.713 |
+
+42 | 43
 
 --- pág. 23 ---
 
@@ -3366,224 +3325,65 @@ Hosnpitalit IP
 
 --- pág. 28 ---
 
-SK RAPID | GESCHÄFTSBERICHT 2015/16
+SK RAPID | GESCHÄFTSBERICHT 2015/16 — 2 | ZAHLEN, DATEN & FAKTEN
 
-BENCHMARKING-REPORT: LIGENVERGLEICH
+### BENCHMARKING-REPORT: LIGENVERGLEICH
 
-Um zu sehen, wie wir im Branchenvergleich liegen
-und wie sich die Branche als Gesamtes entwickelt,
-vergleichen wir regelmäßig unsere Geschäftszahlen
+Um zu sehen, wie wir im Branchenvergleich liegen und wie sich die Branche als Gesamtes entwickelt, vergleichen wir regelmäßig unsere Geschäftszahlen mit jenen anderer Vereine.
 
-mit jenen anderer Vereine.
+Basierend auf Daten der UEFA haben wir die Geschäftszahlen der Top-20 Nationen untersucht:
 
-Basierend auf Daten der UEFA haben wir die Ge-
+Wir sehen, dass es starke Unterschiede in den Wachstumsraten gibt. Länder mit wirtschaftspolitischen Problemen wie Griechenland und Ukraine verlieren sehr stark, während die Top-Nationen, mit Ausnahme von Italien, ein starkes Umsatzwachstum in den letzten vier Saisonen verzeichnen konnten. Die österreichische Bundesliga ist von einem außerordentlich hohen Sponsoringumsatzanteil und einem geringen TV-Erlösanteil geprägt. Lediglich in Russland und der Ukraine gibt es einen höheren Anteil an Sponsoringerlösen. Dies mag auch damit zusammenhängen, dass die Erlösstruktur des umsatzstärksten Clubs RB Salzburg überwiegend mit Sponsoringmitteln finanziert wird.
 
-schäftszahlen der Top-20 Nationen untersucht:
+Bei den Erlösen aus TV-Rechten, die ja bekanntlich von der Bundesliga zentralvermarktet werden, liegt Österreich sowohl bei den absoluten Erlösen (15 Mio. Euro) als auch beim relativen Umsatzanteil (9%) nur an 18. Stelle. Vergleichbare Länder wie Schweden, Schottland, Norwegen, Polen, Rumänien, Dänemark, Griechenland und Belgien haben allesamt höhere Erlöse.
 
-Wir sehen, dass es starke Unterschiede in den
-Wachstumsraten gibt. Länder mit wirtschafts-
-politischen Problemen wie Griechenland und Ukraine
-verlieren sehr stark, während die Top-
-
-Nationen, mit Ausnahme von Italien, ein starkes
-Umsatzwachstum in den letzten vier Saisonen ver-
-zeichnen konnten. Die österreichische Bundesliga ist
-
-von einem außerordentlich hohen Sponsoringumsatz-
-
-100%
-90%
-80%
-70%
-60%
-50%
-40%
-30%
-20%
-10%
-0%
-&E Kı RR RS eo Pr gr AS I E S
-
-es r>
-Fa E “gs vo
-
-°
-
-Sponsoring MUEFA Preisgeld
-
-.%
-
-Norwegen
-
-21 Mio.
-
-Österreich Schweden
-
-15 Mio. 18 Mio.
-
-- — —
-- En u [)
-
-=TV Broadcasting "Tageskassen-Einnahmen
-
-Os,
-
-Rumänien Polen Russland
-24 Mio. 24 Mio. 24 Mio.
-y =
-
-anteil und einem geringen TV-Erlösanteil geprägt.
-Lediglich in Russland und der Ukraine gibt es einen
-höheren Anteil an Sponsoringerlösen. Dies mag auch
-damit zusammenhängen, dass die Erlösstruktur des
-umsatzstärksten Clubs RB Salzburg überwiegend mit
-
-Sponsoringmitteln finanziert wird.
-
-Bei den Erlösen aus TV-Rechten, die ja bekanntlich
-von der Bundesliga zentralvermarktet werden, liegt
-Österreich sowohl bei den absoluten Erlösen (15 Mio.
-Euro) als auch beim relativen Umsatzanteil (9%) nur
-an 18. Stelle. Vergleichbare Länder wie Schweden,
-Schottland, Norwegen, Polen, Rumänien, Dänemark,
-
-Griechenland und Belgien haben allesamt höhere
-
-ra
-
-BS
-ar
-E gr Fi n ee ef
-
-Erlöse.
-
-mwSonstige "Merchandising
-
-Portugal
-94 Mio.
-
-Türkei
-
-234 Mio.
-
-NAME
-
-3
-3
-En
-5
-®
-
-2 | ZAHLEN, DATEN & FAKTEN
-
-Spanien 1.640 1.990 um 21% 219
-Deutschland 1.640 2.270 EEE 35% 568 477 658 159
-England 2.680 3.900 EEE 46% 1911 702 741 156
-Italien 1.580 1.740 10% 887 191 313 122
-Portugal 274 293 17% 94 38 47 47
-Frankreich 1.070 1.480 BEE 38% 503 163 222 89
-Russland 615 803 BEE 31% 24 24 466 48
-Ukraine 246 157 -36% EEE 6 3 83 31
-Türkei 515 520 11% 234 57 120 31
-Schweiz 148 209 EEE 41% 10 73 46 23
-Griechenland 210 137 -35% 36 19 27 37
-Rumänien 84 66 -21% 24 3 17 12
-Österreich 146 162 11% 15 24 83 23
-Polen 84 99 18% 24 15 33 6
-Schweden 107 147 BE 37% 18 29 41 21
-Dänemark 160 154 -4% I 31 11 48 14
-Schottland 208 148 -29% 19 50 18 22
-Norwegen 168 152 -10% u 21 29 61 2
-
-Frankreich
-
-503 Mio.
-
-DIES TIITE EEE BIT TEE TIERE BU IDEE TE TERTTE BT TEL TE FEIERTE BIT SE TEE Br
-
-!
-
-AT br TEEWTEN
-
-Dart BIT IEO I ETTERU N RTIUETEDATE N
-
-\
-=
-z
-=
-=
-5
-e3
-5
--
-=
-EN
->
-3
-
-Spanien
-
-736 Mio.
-
-.
-E
-=
-=
-==
-
-3
-
--
-
--
-Z
-.
-B*
->
-z
-Ei
-E }
-
-{
-
-al aha anf aka
-
-LET TR
-
-DEU LEESTERDRE TE ET TETT UT IE DIE DEE) BTSTTET IT TTZIE NE EFT SI TIETTTEITI TEE BEP TISLIIE TEEN ET SITE EEE)
-
-Aauptuihukang Ki A in EEE EEE ET UI
-
-Italien
-
-887 Mio.
+| LAND | 2010 | 2014 | Umsatzentwicklung | TV | Ticketing | Sponsoring | UEFA Preisgeld |
+|---|---|---|---|---|---|---|---|
+| Spanien | 1.640 | 1.990 | 21% | 736 | 398 | 338 | 219 |
+| Deutschland | 1.640 | 2.270 | 38% | 568 | 477 | 658 | 159 |
+| England | 2.680 | 3.900 | 46% | 1911 | 702 | 741 | 156 |
+| Italien | 1.580 | 1.740 | 10% | 887 | 191 | 313 | 122 |
+| Portugal | 274 | 293 | 7% | 94 | 38 | 47 | 47 |
+| Frankreich | 1.070 | 1.480 | 38% | 503 | 163 | 222 | 89 |
+| Russland | 615 | 803 | 31% | 24 | 24 | 466 | 48 |
+| Ukraine | 246 | 157 | -36% | 6 | 3 | 83 | 31 |
+| Türkei | 515 | 520 | 1% | 234 | 57 | 120 | 31 |
+| Schweiz | 148 | 209 | 41% | 10 | 73 | 46 | 23 |
+| Griechenland | 210 | 137 | -35% | 36 | 19 | 27 | 37 |
+| Rumänien | 84 | 66 | -21% | 24 | 3 | 17 | 12 |
+| Österreich | 146 | 162 | 11% | 15 | 24 | 83 | 23 |
+| Polen | 84 | 99 | 18% | 24 | 15 | 33 | 6 |
+| Schweden | 107 | 147 | 37% | 18 | 29 | 41 | 21 |
+| Dänemark | 160 | 154 | -4% | 31 | 11 | 48 | 14 |
+| Schottland | 208 | 148 | -29% | 19 | 50 | 18 | 22 |
+| Norwegen | 168 | 152 | -10% | 21 | 29 | 61 | 2 |
 
 Quelle: UEFA Club Licensing 2016
 Angaben in Mio. Euro; Reihung der Länder nach dem UEFA-Koeffizienten
 
-ve eo v0
+Gestapeltes Balkendiagramm (Achse 0% bis 100% in 10%-Schritten; Legende: Sponsoring, UEFA Preisgeld, TV Broadcasting, Tageskassen-Einnahmen, Sonstige, Merchandising). Länderbeschriftungen auf der Achse (kleingedruckt): Spanien, Deutschland, England, Italien, Portugal, Frankreich, Russland, Ukraine, Belgien, Niederlande, Türkei, Schweiz, Tschechien, Griechenland, Rumänien, Kroatien, Österreich, Zypern, Polen, Schweden, Dänemark, Schottland, Norwegen, Kasachstan [teilweise ilegible]. Einzelne Prozentwerte der Balken [ilegible].
 
-Deutschland
+### TV-ERLÖSE IM LIGENVERGLEICH
 
-568 Mio.
+(Grafik mit Münzstapeln und Flaggen)
 
-England
-1.911 Mio.
+| Land | TV-Erlöse |
+|---|---|
+| Österreich | 15 Mio. |
+| Schweden | 18 Mio. |
+| Norwegen | 21 Mio. |
+| Rumänien | 24 Mio. |
+| Polen | 24 Mio. |
+| Russland | 24 Mio. |
+| Portugal | 94 Mio. |
+| Türkei | 234 Mio. |
+| Frankreich | 503 Mio. |
+| Deutschland | 568 Mio. |
+| Spanien | 736 Mio. |
+| Italien | 887 Mio. |
+| England | 1.911 Mio. |
 
-IT RT STEH
-
-PEIESIIITPFRUDBTTIT RTN IT IPUFERRBTE BR ITIE ID TRITT RT
-
-lan
-
-a BE HEISE UI TRIEFIT ETN ETF SPEER BETT ES NERTT EITTIETEI TE
-“RER KB IT BETT STETTEN TEE BF ITEI SPRIT BETTSETITTTTE DIET EFT TIP TIET EETTULTTTTEETE Er
-
-ana BI REN ITIUTETBFIN EI IE STERNE BETZ IT TEZETS ET TEE
-
-I
-TV-enlüse m LIGENVERGLEI CH
-
+54 | 55
 
 --- pág. 29 ---
 
