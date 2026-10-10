@@ -52,14 +52,6 @@ const parinizhnynovgorodruRevenueLinesByYear = {
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2025: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:657.779, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'поступления по трансферам', normalizedCategory:'player_sales', amountNative:6.214, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'призовые от РФС', normalizedCategory:'competition_bonus', amountNative:39.958, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'прочие поступления (бартер, списание просроченной задолженности, услуги за сдачу в аренду и предоставление прочих услуг)', normalizedCategory:'other_income', amountNative:85.293, disclosureLevel:'detailed' }, // pág. ?, ?
-    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:1646.878, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:150, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Pari Nizhny Novgorod/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2021: [
@@ -92,17 +84,18 @@ const parinizhnynovgorodruRevenueLinesByYear = {
     { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:1487.999, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:100, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Pari Nizhny Novgorod/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2025: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:657.779, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'поступления по трансферам', normalizedCategory:'player_sales', amountNative:6.214, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'призовые от РФС', normalizedCategory:'competition_bonus', amountNative:39.958, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'прочие поступления (бартер, списание просроченной задолженности, услуги за сдачу в аренду и предоставление прочих услуг)', normalizedCategory:'other_income', amountNative:85.293, disclosureLevel:'detailed' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:1646.878, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:150, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const parinizhnynovgorodruExpenseLinesByYear = {
-  2025: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-234.785, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-254.441, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-308.952, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-1478.802, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-351.481, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-0.168, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-7.379, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2021: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-117.293, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-22.797, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -137,29 +130,17 @@ const parinizhnynovgorodruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-30.736, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-0.223, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-234.785, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-254.441, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-308.952, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-1478.802, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-351.481, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-0.168, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-7.379, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const parinizhnynovgorodruFiscalYearMeta = {
-  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2025-12-31',
-    sourceId:'parinizhnynovgorod-ru-bfo-2025-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:4.073, tax:-2.518,
-    extraRows: [
-      {label:'Проценты к получению (2320)', value:4.073},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-2.518},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:657.779, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:234.785, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1478.802, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-48.332,
-  },
   2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2021-12-31',
     sourceId:'parinizhnynovgorod-ru-bfo-2021-datos',
@@ -241,6 +222,27 @@ const parinizhnynovgorodruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:81.613,
+  },
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2025-12-31',
+    sourceId:'parinizhnynovgorod-ru-bfo-2025-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:4.073, tax:-2.518,
+    extraRows: [
+      {label:'Проценты к получению (2320)', value:4.073},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-2.518},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:657.779, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:234.785, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1478.802, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-48.332,
   },
 };
 const parinizhnynovgorodruPresupuestoOverlayByYear = {};
