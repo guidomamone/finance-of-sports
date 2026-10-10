@@ -15,7 +15,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 670 — Comentarios internos fuera de lo publicado: regla, chequeo y piloto en `finanzas-calc.js` (to-do 208) (2026-10-10)
+## Versión 670 — Comentarios internos fuera de lo publicado: `index.html` y `js/` limpios, regla y chequeo (to-do 208) (2026-10-10)
 
 - Regla nueva en `Admin/PANTALLA.md` ("Comentarios en lo que se publica"): en `index.html` y `js/` solo el porqué técnico, corto, sin
   nombres, versiones, to-dos, fechas ni contadores.
@@ -28,6 +28,10 @@ que dice `ESTADO.md` era verdad ese día.
   estaban en PANTALLA y CONVENCIONES-DATOS, los comentarios apuntan ahí. ASSET_V 806.
 - `js/selector.js` (3100 → 2912 líneas, 160 → 148 KB) y `js/finanzas-multi.js` (801 → 772 líneas), mismo código. El chequeo
   `comentario-interno-publicado` cuenta "N clubes" solo desde 2 cifras ("4 Clubes" es un paso del selector, no un contador). ASSET_V 808.
+- `js/cuenta.js`, `js/finanzas-anios.js`, `js/i18n.js`, `js/info-tip.js` e `index.html` (1648 → 1334 líneas, 107 → 83 KB; la cabecera con
+  instrucciones para retomar el proyecto se borró: eso es CLAUDE.md), mismo código. Se corrigieron de paso comentarios que describían
+  cosas que ya no existen (Boca cargada eager, "solo Boca" en el toggle de formato, los "41 clubes"). `comentario-interno-publicado`
+  queda en 0. To-do 208 cerrado. ASSET_V 809.
 
 ## Versión 669 — `verificar.mjs`: escalón "financiero dentro de un subtotal" (to-do 199, patrón C) (2026-10-10)
 

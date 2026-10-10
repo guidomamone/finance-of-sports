@@ -1,34 +1,10 @@
 <!DOCTYPE html>
-<!--
-==================================================================================
-finance-of-sports — el HTML/CSS/JS principal del sitio.
-
-ESTE COMENTARIO YA NO ES LA MEMORIA DEL PROYECTO. Hasta la Versión 137 acá vivían el
-estado, la lista de qué es real por club y la to-do list entera: 80 KB de los 183 KB
-de este archivo, que además se bajaba cada visitante en cada pageview. Se movieron a
-archivos propios el 2026-09-14 (Versión 138), a pedido de Guido: "Index NO es el
-archivo para tener to do. Eso era al inicio".
-
-PARA RETOMAR EL PROYECTO, leé en este orden:
-  1. `Admin/ESTADO.md`         qué hay armado hoy, y qué hay cargado de cada club.
-  2. `Admin/CONVENCIONES.md`   reglas vigentes y trampas ya encontradas. Siempre.
-  3. `Admin/TODO.md`           qué falta hacer. Es la ÚNICA lista de próximos pasos.
-Y `.claude/skills/start-session-finance-of-sports-project/` es el checklist de
-arranque y de cierre de cualquier sesión acá. Empezá por ahí.
-
-`Admin/CHANGELOG.md` (qué cambió y cuándo) y `Admin/finance-of-sports-project.md` (por qué) son
-consulta puntual, nunca lectura de corrido.
-==================================================================================
--->
-
-
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="js/styles.css?v=808">
+<link rel="stylesheet" href="js/styles.css?v=809">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -40,35 +16,25 @@ consulta puntual, nunca lectura de corrido.
     <div class="logo"><span class="dot"></span> <span data-i18n="site.name">El deporte en Números</span></div>
     <nav id="mainNav">
       <button data-section="inicio" class="active" data-i18n="nav.inicio">Inicio</button>
-      <!-- `data-section="vs"` y NO "comparar": ese id ya existe y es "Comparar Gestiones"
-           (dos presidencias del MISMO club, escondida del nav desde la Versión 56). Son dos
-           cosas distintas y el id no se puede pisar; lo que el visitante lee sí dice "Comparar". -->
+      <!-- `data-section="vs"` y NO "comparar": ese id ya existe y es "Comparar Gestiones" (dos presidencias del MISMO club,
+           escondida del nav). El id no se puede pisar; lo que el visitante lee sí dice "Comparar". -->
       <button data-section="vs" data-i18n="nav.vs">Comparar</button>
-      <!-- LIGAS (Versión 183, to-do 23(c)). Va ANTES de Finanzas a propósito: el par se
-           lee de lo general a lo particular, la liga y después el club. Se llama "Ligas"
-           y no "Finanzas de liga" por decisión de Guido (2026-09-22), que además dejó
-           anotado revisar los nombres de todo el nav a futuro (to-do 40). -->
+      <!-- LIGAS va ANTES de Finanzas a propósito: el par se lee de lo general a lo particular, la liga y después el club. -->
       <button data-section="liga" data-i18n="nav.liga">Ligas</button>
       <button data-section="finanzas" data-i18n="nav.finanzas">Finanzas</button>
       <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
       <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
     </nav>
     <div class="header-right">
-      <!-- Versión 103: ya no 2 <button> fijos ("USD"/"ARS") — se generan por club en
-           populateCurrencyToggle() (ver <script> principal), porque cada club puede tener una
+      <!-- Los botones de moneda se generan por club en populateCurrencyToggle() (ver <script> principal): cada club puede tener una
            moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
       <div class="segmented header-currency-toggle" id="currencyToggleGlobal" data-i18n-title="header.currency" title="Moneda: aplica a Inicio y Finanzas"></div>
-      <!-- SELECTOR JERÁRQUICO DE CLUB (Versión 137). Acá había un <select id="clubSelect">
-           plano, generado en runtime desde `clubs{}` (populateClubSelect(), borrada en esta
-           versión). Con 41 clubes ya era incómodo y al objetivo declarado de 1000 es inusable:
-           no se puede buscar, no agrupa, y no dice nada de qué vas a encontrar adentro. Lo
-           reemplaza este botón + el panel de abajo (ver #clubPanel, después de </header>).
-           El botón muestra el club activo y la palabra "Cambiar": ver el comentario del CSS
-           (.club-btn) para por qué se lee así y no como un título. -->
+      <!-- SELECTOR DE CLUB: este botón + el modal de abajo (#clubPanel, después de </header>). El botón muestra el club activo y la
+           palabra "Cambiar": ver el comentario del CSS (.club-btn) para por qué se lee así y no como un título. -->
       <div class="cb-wrap">
-        <!-- (Versión 530, to-do 146) el title, la línea de arriba y el nombre NO llevan data-i18n: los escribe renderButton() de
-             js/selector.js con t(). Con data-i18n, I18N.apply() guardaba como "castellano original" el texto que hubiera la primera vez (el
-             nombre de un club) y lo volvía a poner en cada cambio de idioma: el chip decía "AEL Larissa" con el escudo de América Mineiro. -->
+        <!-- El title, la línea de arriba y el nombre NO llevan data-i18n: los escribe renderButton() de js/selector.js con t(). Con
+             data-i18n, I18N.apply() guardaría como "castellano original" el nombre del primer club y lo volvería a poner en cada cambio
+             de idioma (Admin/PANTALLA.md, "Un texto que escribe JS no lleva data-i18n"). -->
         <button class="club-btn" id="clubBtn" title="Cambiar de club (Ctrl+K)" aria-haspopup="dialog" aria-expanded="false">
           <span class="crest" id="cbCrest" aria-hidden="true">··</span>
           <span class="cb-txt">
@@ -80,9 +46,8 @@ consulta puntual, nunca lectura de corrido.
         <div class="coach" id="coachMark" hidden><span data-i18n="selector.coach">Elegí tu club acá</span> <span class="coach-x" id="coachX" role="button" aria-label="Cerrar">&#215;</span></div>
       </div>
       <button id="contactBtn" data-i18n-title="header.contact" title="Contacto">&#9993;</button>
-      <!-- Selector de idioma (Versión 115). El <button> y el menú se llenan en runtime
-           desde `window.LANGS` (data/lang/langs.js), igual que el panel del selector se llena
-           desde `clubs` (data/clubs.js): agregar un idioma NO toca este HTML. -->
+      <!-- Selector de idioma. El <button> y el menú se llenan en runtime desde `window.LANGS` (data/lang/langs.js): agregar un idioma
+           NO toca este HTML. -->
       <div class="lang-wrap">
         <button id="langBtn" data-i18n-title="header.lang" title="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
           <span class="lang-globe" aria-hidden="true">&#127760;</span><span id="langBtnLabel">ES</span>
@@ -93,19 +58,10 @@ consulta puntual, nunca lectura de corrido.
   </div>
 </header>
 
-<!-- ===================== EL SELECTOR DE CLUB (Versión 146) =====================
-     Un modal con los pasos apilados: Deporte › Región › País › Clubes › Ejercicio,
-     una pregunta por vez, y el buscador arriba como atajo para el que ya sabe qué
-     club quiere. Reemplaza al panel de Miller columns de la Versión 137 (cinco
-     columnas y ~67 opciones a la vez). Es la etapa 3 del merge del prototipo 4;
-     el handoff está en `Admin/Archive/selector-merge-a-produccion.md`.
-
-     TODO el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
-     `data/leagues.js` + `data/club-leagues.js`; NO se baja ningún
-     `data/<club>-data.js` para dibujarlo (41 clubes en el modal, 0 archivos).
-
-     Hasta la Versión 151 este markup arrastraba además el banner y la barra de
-     confirmación de js/comparar-clubes.js; se fueron con ese archivo. -->
+<!-- ===================== EL SELECTOR DE CLUB =====================
+     Un modal con los pasos apilados: Deporte › Región › País › Clubes › Ejercicio, una pregunta por vez, y el buscador arriba
+     como atajo para el que ya sabe qué club quiere. TODO el contenido lo genera js/selector.js desde `clubs{}` + `CLUB_INDEX` +
+     `data/leagues.js` + `data/club-leagues.js`; NO se baja ningún `data/<club>-data.js` para dibujarlo. -->
 <div class="sel-backdrop" id="clubBackdrop"></div>
 <div class="sel-modal" id="clubPanel" role="dialog" aria-modal="true" data-i18n-aria-label="selector.aria" aria-label="Elegir club">
   <div class="modal-panel">
@@ -131,28 +87,15 @@ consulta puntual, nunca lectura de corrido.
 
 <main>
 
-  <!-- EL AVISO DE "NO SE PUDO CARGAR EL CLUB" VIVE ACÁ, ARRIBA DE LAS SECCIONES, Y NO ADENTRO
-       DE UNA (to-do 40, auditoría de código del 2026-09-20). Historia corta: nació adentro del
-       #coldHero, la Versión 144 lo movió a #inicio cuando ese hero dejó de mostrarse, y ahí
-       seguía teniendo el mismo problema con otra cara. `selectClub()` lo destapa cuando el
-       data/<club>-data.js de un club no se puede bajar, pero `#inicio` está en `display:none`
-       mientras el visitante mira otra pestaña, así que el aviso quedaba con `hidden=false` y
-       `offsetParent === null`: invisible. Y el lugar MÁS probable para cambiar de club es el
-       botón del header estando parado en Finanzas, o sea justo el caso que no se veía — el
-       visitante apretaba "Racing", la pantalla seguía mostrando Boca, y no había ninguna
-       explicación en ningún lado. Verificado forzando un 404 con CLUB_DATA_SCRIPT_OVERRIDE.
-       Acá adentro de <main> y afuera de toda <section> se ve pase lo que pase, y hereda el
-       ancho de la página sin CSS nuevo. -->
+  <!-- EL AVISO DE "NO SE PUDO CARGAR EL CLUB" VIVE ACÁ, ARRIBA DE LAS SECCIONES, Y NO ADENTRO DE UNA: selectClub() lo destapa
+       cuando el data/<club>-data.js de un club no se puede bajar, y adentro de una sección escondida (el visitante cambia de club
+       parado en otra pestaña) quedaba invisible. Acá, adentro de <main> y afuera de toda <section>, se ve pase lo que pase. -->
   <p class="aviso-error" id="clubLoadError" hidden></p>
 
   <!-- INICIO -->
   <section id="inicio" class="active">
-    <!-- INICIO = LA PREGUNTA (Versión 144, etapa 2 del merge del prototipo 4).
-         Hasta acá la primera pantalla era el #coldHero: un buscador más dos filas de
-         atajos, o sea 67 opciones y ninguna pregunta. Ahora la portada hace UNA sola
-         pregunta de dos opciones, y cada respuesta lleva a una pantalla que hace una
-         sola cosa. El que viene por un club nunca ve una pantalla partida al medio.
-         Los dos caminos los cablea el <script> del final del body. -->
+    <!-- INICIO = LA PREGUNTA: la portada hace UNA sola pregunta de dos opciones, y cada respuesta lleva a una pantalla que hace una
+         sola cosa. Los dos caminos los cablea el <script> del final del body. -->
     <div class="bifurca" id="bifurca">
       <h1 data-i18n="bif.title">¿Qué querés hacer?</h1>
       <p class="bif-lead" data-i18n="bif.lead">Los dos caminos llegan a los mismos números, sacados del balance oficial de cada club. Cambia por dónde entrás.</p>
@@ -172,42 +115,25 @@ consulta puntual, nunca lectura de corrido.
       </div>
     </div>
 
-    <!-- LA VIDRIERA (Versión 184, to-do 33). Acá abajo vivían los KPIs y los 3 gráficos
-         del club activo (`#inicioClub`), escondidos mientras no hubiera club — o sea,
-         nada, justo para el visitante que llega por primera vez. Decisión de Guido
-         (2026-09-22): "en Inicio quedan las ligas que dejamos predeterminadas como para
-         mostrar de qué es capaz y qué tiene la página". Los KPIs y los gráficos NO se
-         mudaron a otro lado: se borraron. Los dos de evolución ("Ingresos por año" y
-         "Gastos por año") ya duplicaban al `trendChart` de Finanzas, que es lo que el
-         propio to-do 33 anotaba como "conviene resolver cuando se haga esto".
-         Lo llena `LIGA_VIEW.renderDestacados()` desde `data/destacados.js`. -->
+    <!-- LA VIDRIERA: rankings de ligas elegidas a mano en data/destacados.js, para mostrar de qué es capaz la página al que llega por
+         primera vez. La llena LIGA_VIEW.renderDestacados(). -->
     <div class="vidriera" id="vidriera"></div>
   </section>
 
-  <!-- COMPARAR (Versión 144, etapa 2 del merge del prototipo 4).
-       La comparación entre clubes vivía adentro de #inicio, abajo de los KPIs. Con Inicio
-       convertido en la pregunta, se muda acá, que es la pestaña que la bifurcación ofrece.
-       En la Versión 152 esa comparación vieja se borró y los dos cards son la única forma
-       de comparar; lo que ese archivo hacía mejor (los 6 indicadores con sus barras y sus
-       notas, las 3 reglas de comparabilidad, la composición de ingresos) vive ahora en
-       js/selector.js. -->
+  <!-- COMPARAR: los dos cards son la única forma de comparar. Los indicadores, las reglas de comparabilidad y la composición de
+       ingresos viven en js/selector.js. -->
   <section id="vs">
     <h1 data-i18n="vs.title">Comparar</h1>
     <p class="subtitle" data-i18n="vs.sub">Dos clubes lado a lado, o un club contra el promedio de su liga. Todo en USD y en formato simplificado: son las dos condiciones para que la comparación signifique algo.</p>
 
-    <!-- LOS DOS CARDS (Versión 148, etapa 4 del merge del prototipo 4). Cada uno es un
-         LADO, y un lado es una suma de bloques: una liga-temporada, un puñado de clubes,
-         o una mezcla de los dos, cada bloque con su propio agregador. Los llena
-         js/selector.js con el mismo modal de pasos que usa el camino "ver un club";
-         lo único que cambia es a dónde va lo elegido.
-         NO necesitan club activo: por eso el aviso "primero elegí un club" que había acá
-         hasta la Versión 147 desapareció. -->
+    <!-- LOS DOS CARDS. Cada uno es un LADO, y un lado es una suma de bloques: una liga-temporada, un puñado de clubes, o una mezcla de
+         los dos, cada bloque con su propio agregador. Los llena js/selector.js con el mismo modal de pasos que usa el camino "ver un
+         club". NO necesitan club activo. -->
     <div class="cd-wrap" id="cdWrap"></div>
     <div class="cd-pie" id="cdPie"></div>
 
-    <!-- to-do 23, paso 3: la barra de Finanzas. El formato va fijo (es la condición para comparar
-         clubes de países distintos) y "Valores" es el mismo toggle de Finanzas, con la serie del
-         dólar. La maneja renderControles() en js/selector.js; se ve con los dos lados llenos. -->
+    <!-- La barra, como en Finanzas. El formato va fijo (es la condición para comparar clubes de países distintos) y "Valores" es el
+         mismo toggle de Finanzas, con la serie del dólar. La maneja renderControles() en js/selector.js; se ve con los dos lados llenos. -->
     <div class="controls cd-controles" id="cdControles" hidden>
       <span class="cd-ctl">
         <label data-i18n="sel.fmt.label">Formato:</label>
@@ -228,11 +154,9 @@ consulta puntual, nunca lectura de corrido.
 
   </section>
 
-  <!-- LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de los clubes de una liga
-       en UN ejercicio. Lo llena entero js/liga.js desde `data/rankings/<liga>.js`
-       (precalculado, Versión 182): esta vista NO baja ningún data/<club>-data.js.
-       NO necesita club activo — una liga no es un club — así que está en TABS_SIN_CLUB
-       y su botón del nav se ve siempre. -->
+  <!-- LIGAS: el ranking de ingresos de los clubes de una liga en UN ejercicio. Lo llena entero js/liga.js desde
+       `data/rankings/<liga>.js` (precalculado): esta vista NO baja ningún data/<club>-data.js. NO necesita club activo, así que está
+       en TABS_SIN_CLUB y su botón del nav se ve siempre. -->
   <section id="liga">
     <h1 data-i18n="liga.title">Ligas</h1>
     <p class="subtitle" data-i18n="liga.pagesub">Cuánto factura cada club de una liga, en el mismo ejercicio. Es la única forma de que dos números de clubes distintos signifiquen lo mismo: mismo año, misma moneda, misma taxonomía.</p>
@@ -241,18 +165,16 @@ consulta puntual, nunca lectura de corrido.
 
   <!-- FINANZAS -->
   <section id="finanzas">
-    <!-- El título es el club, no la pestaña (to-do 147, paso 1): la pestaña "Finanzas" ya está
-         resaltada en el header. Sin club dice "Finanzas" y abajo queda el card para elegir uno.
-         Los tres los llena renderFinSelector() de js/selector.js en cada renderButton(), o sea
-         cada vez que cambia el club activo o el idioma. Sin data-i18n a propósito: el texto lo
-         pone el JS, y I18N.apply() lo pisaría con "Finanzas". -->
+    <!-- El título es el club, no la pestaña: la pestaña "Finanzas" ya está resaltada en el header. Sin club dice "Finanzas" y abajo
+         queda el card para elegir uno. Los llena renderFinSelector() de js/selector.js en cada renderButton(). Sin data-i18n a
+         propósito: el texto lo pone el JS, y I18N.apply() lo pisaría con "Finanzas". -->
     <h1 id="finTitle">Finanzas</h1>
     <p class="subtitle" id="finSub" hidden></p>
     <div class="fin-sel" id="finSelector"></div>
 
 
-    <!-- Los cards de ejercicios (to-do 147, paso 4), de la vista multi-año (FIN_MULTI). Los llena js/finanzas-anios.js
-         desde refreshFinanzas(); sin el parámetro quedan escondidos y manda el dropdown "Año". -->
+    <!-- Los cards de ejercicios de la vista multi-año (FIN_MULTI). Los llena js/finanzas-anios.js desde refreshFinanzas(); con
+         ?multi=0 quedan escondidos y manda el dropdown "Año". -->
     <div class="fin-years" id="finYears" hidden>
       <div class="fin-years-head">
         <span class="fin-years-lbl" data-i18n="finanzas.card.label">Ejercicios</span>
@@ -262,20 +184,15 @@ consulta puntual, nunca lectura de corrido.
           <button type="button" data-p="1" data-i18n="finanzas.card.last1">Solo el último</button>
         </div>
       </div>
-      <!-- Fila "Gestión" (to-do 147, paso 12): la llena FIN_GESTION (js/finanzas-anios.js) desde data/gestiones/. -->
+      <!-- Fila "Gestión": la llena FIN_GESTION (js/finanzas-anios.js) desde data/gestiones/. -->
       <div class="fin-years-gest" id="finGest" hidden></div>
       <div class="fin-years-row"></div>
       <p class="fin-years-empty" hidden data-i18n="finanzas.card.empty">Ningún ejercicio elegido. Tocá un año para sumarlo.</p>
     </div>
 
     <div class="controls">
-      <!-- "Por gestión" oculto desde la Versión 112 (pedido de Guido, escalando a 1000 clubes: la
-           mayoría de los clubes nuevos no tienen presidencia/gestión real confirmada, solo una
-           entrada sintética "Gestión actual" — el toggle dejó de aportar valor). Mismo criterio que
-           ya se usa para las pestañas Pases/Resultados/Comparar (Versión 56, "ocultos por ahora"):
-           se esconde la UI, NO se borra gestionesByClub ni el código de cálculo por gestión, para
-           poder traerlo de vuelta sin reconstruir nada si en el futuro hace falta para los clubes
-           argentinos que sí tienen gestión real. -->
+      <!-- "Por gestión" oculto: la mayoría de los clubes no tiene una gestión real confirmada. Se esconde la UI, NO se borra
+           gestionesByClub ni el cálculo por gestión, para poder traerlo de vuelta sin reconstruir nada. -->
       <div class="segmented" id="viewToggle" style="display:none;">
         <button data-view="anio" class="active" data-i18n="finanzas.view.year">Año a año</button>
         <button data-view="gestion" data-i18n="finanzas.view.board">Por gestión</button>
@@ -298,8 +215,8 @@ consulta puntual, nunca lectura de corrido.
         </select>
       </span>
 
-      <!-- to-do 147, paso 11: valores ajustados por inflación (data/deflactores.js). Lo muestra y lo maneja
-           FIN_REAL_UI (js/finanzas-multi.js): solo en la vista multi-año y en USD o EUR. -->
+      <!-- Valores ajustados por inflación (data/deflactores.js). Lo muestra y lo maneja FIN_REAL_UI (js/finanzas-multi.js): solo en la
+           vista multi-año y en USD o EUR. -->
       <span id="realToggleWrap" hidden>
         <label data-i18n="finanzas.real.label">Valores:</label>
         <div class="segmented" id="realToggle">
@@ -322,9 +239,9 @@ consulta puntual, nunca lectura de corrido.
 
     <div class="grid" id="finanzasStats"></div>
 
-    <!-- to-do 147, paso 7: en la vista multi-año, el gráfico de evolución va acá, arriba de la tabla, y sigue a
-         los ejercicios elegidos. "De qué vive el club" reemplaza a la torta de un año. Lo arma
-         FIN_MULTI_CHART (js/finanzas-multi.js); la sección "Gráficos" de más abajo se esconde. -->
+    <!-- En la vista multi-año, el gráfico de evolución va acá, arriba de la tabla, y sigue a los ejercicios elegidos. "De qué vive el
+         club" reemplaza a la torta de un año. Lo arma FIN_MULTI_CHART (js/finanzas-multi.js); la sección "Gráficos" de más abajo se
+         esconde. -->
     <div class="card fin-mchart" id="finTrendCard" hidden>
       <div class="fin-mchart-head">
         <div>
@@ -342,7 +259,7 @@ consulta puntual, nunca lectura de corrido.
     <div class="card">
       <h2 data-i18n="finanzas.pl.title">Estado de resultados</h2>
       <p class="subtitle" data-i18n="finanzas.pl.sub">En ingresos ves cuánta plata entró y en gastos ves cuánta salió del club en este ejercicio, categoría por categoría.</p>
-      <!-- Controles de la tabla multi-año (to-do 147, paso 5b): los arma js/finanzas-multi.js. -->
+      <!-- Controles de la tabla multi-año: los arma js/finanzas-multi.js. -->
       <div class="pl-multi-ctrls" id="plMultiCtrls" hidden></div>
       <div class="table-scroll">
       <table id="finanzasPLTable">
@@ -350,8 +267,8 @@ consulta puntual, nunca lectura de corrido.
         <thead><tr><th data-i18n="th.line">Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th>% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th>% del<br>total</th></tr></thead>
         <tbody></tbody>
       </table>
-      <!-- En la vista multi-año y más de un ejercicio elegido, esta tabla reemplaza a la de arriba: una columna
-           por ejercicio (to-do 147, paso 5a). La llena renderMultiPLTable(), js/finanzas-multi.js. -->
+      <!-- En la vista multi-año y más de un ejercicio elegido, esta tabla reemplaza a la de arriba: una columna por ejercicio. La llena
+           renderMultiPLTable(), js/finanzas-multi.js. -->
       <table id="finanzasPLMulti" class="pl-multi" hidden><thead></thead><tbody></tbody></table>
       </div>
     </div>
@@ -363,26 +280,21 @@ consulta puntual, nunca lectura de corrido.
         <thead><tr><th data-i18n="th.indicator">Indicador</th><th id="finanzasDebtTableCurLabel">Actual</th><th id="finanzasDebtTablePrevLabel">Anterior</th></tr></thead>
         <tbody></tbody>
       </table>
-      <!-- En la vista multi-año y más de un ejercicio, esta reemplaza a la de arriba (to-do 147, paso 8).
-           La llena FIN_MULTI_DEBT, js/finanzas-multi.js. -->
+      <!-- En la vista multi-año y más de un ejercicio, esta reemplaza a la de arriba. La llena FIN_MULTI_DEBT, js/finanzas-multi.js. -->
       <div class="table-scroll"><table id="finanzasDebtMulti" class="pl-multi" hidden><thead></thead><tbody></tbody></table></div>
       <p class="source-note" id="finanzasDebtNote" style="color:var(--azul);font-weight:600;"></p>
     </div>
 
-    <!-- to-do 83: "¿cómo le iría este club en otra liga?" — simulación por plata, no predicción
-         deportiva. Hasta la Versión 531 era un botón en la barra de controles, al lado del año y del
-         formato, donde parecía un filtro más y no se entendía qué hacía (to-do 147, paso 2). Es una
-         pregunta con respuesta, así que es un card propio. Usa UN ejercicio con balance (el motor,
-         computeYearGeneric(), toma un año): el elegido si tiene balance, si no el balance más nuevo
-         del club, nunca un presupuesto. Lo llena renderLigaSimCard(); se esconde sin club o en modo
-         "Por gestión". -->
+    <!-- "¿Cómo le iría este club en otra liga?": simulación por plata, no predicción deportiva. Es una pregunta con respuesta, así
+         que es un card propio. Usa UN ejercicio con balance (el elegido si tiene balance, si no el balance más nuevo del club, nunca un
+         presupuesto). Lo llena renderLigaSimCard(); se esconde sin club o en modo "Por gestión". -->
     <div class="card liga-sim-card" id="ligaSimWrap">
       <div class="liga-sim-txt">
         <h2 id="ligaSimTitle"></h2>
         <p class="subtitle" id="ligaSimSub"></p>
       </div>
-      <!-- to-do 147, paso 13: el puesto, a la vista, en la liga que se elija acá (renderLigaSimCard). Si
-           ninguna otra liga tiene clubes cargados de ese ejercicio, queda solo "Elegir una liga". -->
+      <!-- El puesto, a la vista, en la liga que se elija acá (renderLigaSimCard). Si ninguna otra liga tiene clubes cargados de ese
+           ejercicio, queda solo "Elegir una liga". -->
       <div class="liga-sim-res" id="ligaSimRes" hidden>
         <label class="liga-sim-pick"><span data-i18n="finanzas.ligasim.in">Si jugara en</span> <select id="ligaSimLeague"></select></label>
         <div class="liga-sim-big" id="ligaSimRank"></div>
@@ -540,11 +452,8 @@ consulta puntual, nunca lectura de corrido.
       </div>
     </div>
 
-    <!-- FICHA DE FUENTE (Versión 125, pedido de Guido: "que en /Finanzas haya un card al final
-         que sea Fuentes"). Reemplaza a `finanzasClubSourceNote`, que era un texto fijo escrito a
-         mano para 3 clubes (Boca, Racing, River) y no decía nada para los otros 38. Este se arma
-         de `sources{}` + la meta del ejercicio, así que no se puede desincronizar ni quedarse
-         corto cuando entra un club nuevo. Se llena en renderFuentesCard(), js/finanzas-render.js. -->
+    <!-- FICHA DE FUENTE: se arma de `sources{}` + la meta del ejercicio, así que no se desincroniza cuando entra un club nuevo. Se
+         llena en renderFuentesCard(), js/finanzas-render.js. -->
     <div class="card" id="finanzasFuentesCard" style="margin-top:22px;">
       <h2 data-i18n="fuentes.card.title">Fuentes</h2>
       <p class="subtitle" style="margin-top:-4px;" data-i18n="fuentes.card.sub">De dónde sale cada número de este ejercicio.</p>
@@ -666,24 +575,16 @@ consulta puntual, nunca lectura de corrido.
 
     <p class="subtitle" data-i18n="fuentes.sub">Todo dato en este sitio cita su origen y fecha. Acá está de dónde sale cada número del club que estás mirando, y el listado completo del sitio.</p>
 
-    <!-- FUENTES DEL CLUB SELECCIONADO (Versión 125). Antes había acá una tabla de 6 filas escrita
-         a mano (bocajuniors.com.ar, actas de asamblea, IGJ, INDEC/BCRA, Transfermarkt, prensa) y
-         un párrafo de ~450 palabras que nombraba club por club: las dos cosas se habían quedado en
-         los primeros clubes argentinos y no decían nada de los 6 países que el sitio cubre hoy. El
-         costo no era el tiempo de mantenerlas sino la credibilidad, que es todo lo que este sitio
-         tiene: prometía "todo dato cita su origen" y mostraba orígenes que no eran los de sus
-         datos. Ahora se arma de `sources{}`, en renderFuentesClubCard() (js/finanzas-render.js), y
-         el listado completo de los 91 documentos vive en fuentes.html, que genera
-         tools/generate-fuentes-page.js. -->
+    <!-- FUENTES DEL CLUB SELECCIONADO: se arma de `sources{}` en renderFuentesClubCard() (js/finanzas-render.js). El listado
+         completo de documentos vive en fuentes.html, que genera tools/generate-fuentes-page.js. -->
     <div class="card">
       <h2 id="fuentesClubTitulo">Documentos de este club</h2>
       <div id="fuentesClubBody"></div>
     </div>
   </section>
 
-  <!-- MI CUENTA (to-do 70, "Saved Searches"). El sitio sigue siendo todo gratis (decisión de
-       Guido, 2026-09-14) — esto NO es un paywall, es que quien se loguea con Google puede volver
-       a ver los clubes/ejercicios que ya miró. El contenido real lo arma js/cuenta.js. -->
+  <!-- MI CUENTA. El sitio es todo gratis: esto NO es un paywall, es que quien se loguea con Google puede volver a ver los
+       clubes/ejercicios que ya miró. El contenido lo arma js/cuenta.js. -->
   <section id="cuenta">
     <h1 data-i18n="cuenta.title">Mi Cuenta</h1>
     <p class="subtitle" data-i18n="cuenta.sub">Iniciá sesión para que tus búsquedas queden guardadas.</p>
@@ -711,9 +612,8 @@ consulta puntual, nunca lectura de corrido.
 <footer>
   <span data-i18n="footer.text">financeofsports.com publica datos financieros de clubes de fútbol, tomados de balances y presupuestos oficiales citados en cada ficha. No representa a ningún club, liga ni federación.</span><br>
   <span style="opacity:.7;" data-i18n="footer.note">Proyecto personal, sin fines de lucro.</span><br>
-  <!-- Link ESTÁTICO a fuentes.html (Versión 128). Los otros 2 links a esa página los arma
-       js/finanzas-render.js en runtime, así que un crawler que no ejecuta JS no la encontraba:
-       la página hecha para que la indexen era huérfana. Este <a> vive en el HTML servido. -->
+  <!-- Link ESTÁTICO a fuentes.html: los otros links a esa página los arma JS en runtime, y un crawler que no ejecuta JS no la
+       encontraría. -->
   <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
   <span style="opacity:.5;"> · </span>
   <a href="privacidad.html" style="color:inherit;opacity:.7;" data-i18n="footer.privacidad">Privacidad</a>
@@ -749,151 +649,84 @@ consulta puntual, nunca lectura de corrido.
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
-<!-- Supabase JS (to-do 70, "Saved Searches"): login con Google + guardado de búsquedas. La URL y
-     la key públicas viven en js/cuenta.js — ver Admin/supabase/.env para por qué esa key NO es
-     secreta y no hace falta esconderla. -->
+<!-- Supabase JS: login con Google + guardado de búsquedas. La URL y la key públicas viven en js/cuenta.js (la key está pensada
+     para viajar en el cliente: la seguridad la da Row Level Security). -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<!-- Mixpanel JS (to-do 67): funnel del selector (abrir → cada paso → elegir club), NO
-     pageviews/referrers (eso lo sigue dando Cloudflare Web Analytics gratis, sin tope — ver
-     CHANGELOG Versión 216). El token de proyecto va en js/selector.js, junto con el resto del
-     logging del selector (logEvent de la Versión 216) — no es secreto, es el mismo tipo de
-     credencial pública que ya explica el comentario de supabase.js más arriba.
-     ESTE ES EL SNIPPET OFICIAL DE MIXPANEL (docs.mixpanel.com/docs/quickstart/install-mixpanel),
-     NO UN <script src> PLANO (Versión 277, corregido el mismo día: la primera versión de este
-     comentario cargaba directo `cdn.mxpnl.com/libs/mixpanel-2-latest.min.js` con un script tag
-     común, como Chart.js/Supabase — y no funcionaba: sin este stub, `window.mixpanel.init()`
-     queda mal armado y ningún evento sale, sin ningún error visible en consola). Lo que hace
-     este bloque: define `window.mixpanel` con métodos que ENCOLAN llamadas (`b._i.push(...)`) y
-     recién DESPUÉS inyecta la librería real de forma asíncrona (`e.async = !0`), que al cargar
-     procesa la cola. Por eso `window.mixpanel.init`/`.track` están disponibles de inmediato,
-     aunque la librería real todavía no haya terminado de bajar — no hace falta esperar nada
-     desde js/selector.js. -->
+<!-- Mixpanel JS: funnel del selector (abrir → cada paso → elegir club), NO pageviews (eso lo da Cloudflare Web Analytics). El token
+     va en js/selector.js; no es secreto. ESTE ES EL SNIPPET OFICIAL DE MIXPANEL, NO UN <script src> PLANO: con un script tag común
+     `window.mixpanel.init()` queda mal armado y ningún evento sale, sin error en consola. El snippet define `window.mixpanel` con
+     métodos que ENCOLAN llamadas y después inyecta la librería real de forma asíncrona, que al cargar procesa la cola: init/track
+     están disponibles de inmediato. -->
 <script type="text/javascript">
   (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
 </script>
-<!-- ASSET_V (Versión 115): versión de los assets propios, para invalidar el cache del
-     navegador cuando se deploya una versión nueva. Sin esto, un visitante que ya entró antes
-     se puede quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo (pasó en
-     desarrollo al agregar i18n: el HTML nuevo pedía traducciones a una versión vieja del
-     render, que no las tenía). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o
-     `data/`. Lo leen también los 2 cargadores dinámicos (loadClubData y I18N.load). -->
-<script>window.ASSET_V = '808';</script>
-<script src="data/lang/langs.js?v=808"></script>
-<script src="js/i18n.js?v=808"></script>
-<script src="data/clubs.js?v=808"></script>
-<!-- data/club-index.js (Versión 129): el índice liviano de TODOS los clubes (nombre, país,
-     calidad del dato, cuántos ejercicios), GENERADO por tools/generate-club-index.js. Existe
-     porque lo que hay que mostrar de un club ANTES de entrar a él (su punto de calidad, su
-     cantidad de ejercicios) vive adentro de data/<club>-data.js, que es justamente lo que no
-     se carga hasta que el visitante elige ese club. Su consumidor es el selector jerárquico,
-     que todavía no está: hasta entonces viaja sin usarse, son 4 KB. -->
-<script src="data/club-index.js?v=808"></script>
-<!-- data/leagues.js (Versión 137): el CATÁLOGO de la taxonomía del selector jerárquico
-     (deportes, regiones, países, ligas). NO tiene membresía: qué club jugó en qué liga es
-     (club, ejercicio) y vive en data/club-leagues.js, que se carga justo después. Ver la
-     cabecera de data/leagues.js para la regla ("no existe ninguna arista club → liga sin año"). -->
-<script src="data/leagues.js?v=808"></script>
-<script src="data/club-leagues.js?v=808"></script>
-<script src="data/category-map.js?v=808"></script>
-<script src="data/site-labels.js?v=808"></script>
-<script src="data/currency-map.js?v=808"></script>
-<script src="data/sources-view.js?v=808"></script>
-<!-- data/boca-data.js YA NO SE CARGA ACÁ (Versión 137). Era el único data file de club
-     que entraba eager, porque Boca era el club por default del sitio. Con el cold start
-     no hay club por default: el sitio abre en la portada y CUALQUIER club, Boca incluida,
-     entra por loadClubData() cuando el visitante lo elige. Son 78 KB menos en la primera
-     carga de alguien que todavía no eligió, o que eligió otro club. -->
-<script src="js/info-tip.js?v=808"></script>
-<script src="data/deflactores.js?v=808"></script>
-<script src="js/finanzas-calc.js?v=808"></script>
-<script src="js/finanzas-render.js?v=808"></script>
-<script src="js/finanzas-anios.js?v=808"></script>
-<script src="js/finanzas-multi.js?v=808"></script>
-<!-- js/selector.js (Versión 137): el selector jerárquico de club. Reemplaza al
-     <select id="clubSelect"> plano y a populateClubSelect(). Se alimenta solo de
-     clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja los 41 clubes
-     sin bajar un solo data/<club>-data.js. -->
-<script src="js/selector.js?v=808"></script>
-<script src="data/destacados.js?v=808"></script>
-<script src="js/liga.js?v=808"></script>
-<!-- js/cuenta.js (to-do 70): login con Google vía Supabase + guardado automático de búsquedas.
-     No sabe cómo se renderiza el resto del sitio, igual que js/selector.js — recibe `reopen` por
-     CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=808"></script>
-<!-- data/river-data.js y data/racing-data.js YA NO se cargan acá: se inyectan bajo demanda
-     (loadClubData(), en el <script> principal) recién cuando el visitante elige ese club. -->
+<!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
+     con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
+     también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
+<script>window.ASSET_V = '809';</script>
+<script src="data/lang/langs.js?v=809"></script>
+<script src="js/i18n.js?v=809"></script>
+<script src="data/clubs.js?v=809"></script>
+<!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
+     tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<club>-data.js, que
+     no se carga hasta que el visitante lo elige. -->
+<script src="data/club-index.js?v=809"></script>
+<!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
+     jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
+     arista club → liga sin año"). -->
+<script src="data/leagues.js?v=809"></script>
+<script src="data/club-leagues.js?v=809"></script>
+<script src="data/category-map.js?v=809"></script>
+<script src="data/site-labels.js?v=809"></script>
+<script src="data/currency-map.js?v=809"></script>
+<script src="data/sources-view.js?v=809"></script>
+<!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
+     el visitante lo elige. -->
+<script src="js/info-tip.js?v=809"></script>
+<script src="data/deflactores.js?v=809"></script>
+<script src="js/finanzas-calc.js?v=809"></script>
+<script src="js/finanzas-render.js?v=809"></script>
+<script src="js/finanzas-anios.js?v=809"></script>
+<script src="js/finanzas-multi.js?v=809"></script>
+<!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
+     los clubes sin bajar un solo data/<club>-data.js. -->
+<script src="js/selector.js?v=809"></script>
+<script src="data/destacados.js?v=809"></script>
+<script src="js/liga.js?v=809"></script>
+<!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
+     recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
+<script src="js/cuenta.js?v=809"></script>
 <script>
-  // Bug real (encontrado en producción): `window.CLUB_GENERIC_DATA` solo se crea DENTRO de cada
-  // `data/<club>-data.js` lazy-loaded (ver más abajo) — boca-data.js (el único que carga en el
-  // <head>) no lo toca. En la carga inicial de la página, antes de que el visitante cambie de
-  // club por primera vez, ningún script lo había creado todavía, así que la referencia SIN
-  // `window.` en `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (más abajo) tiraba
-  // `ReferenceError: CLUB_GENERIC_DATA is not defined` (identificador global nunca declarado, a
-  // diferencia de `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar). Eso frenaba en seco
-  // TODO el resto del bloque INIT (JS sincrónico: un throw sin catch corta las statements
-  // siguientes del mismo <script>), dejando Boca con Ingresos/Gastos/Pases/Resultados vacíos hasta
-  // el primer cambio de club (que sí dispara la carga de un `data/*-data.js`, creando recién ahí el
-  // objeto). Fix: crearlo acá, antes de que corra nada más.
+  // `window.CLUB_GENERIC_DATA` solo lo crean los data/<club>-data.js, que se cargan bajo demanda. Se crea acá, antes que nada: una
+  // referencia SIN `window.` a un global nunca declarado tira ReferenceError y corta el resto del INIT.
   window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
 
   const FX_RATE = 1450; // ARS por USD, placeholder de referencia
   let currentCurrency = 'USD';
-  let simplifyFormat = true; // toggle "Formato del club" / "Formato simplificado" (Versión 80: default pasó a simplificado, pedido explícito de Guido)
+  let simplifyFormat = true; // toggle "Formato del club" / "Formato simplificado"
 
-  // ---------- MULTI-CLUB: motor genérico para clubes sin el detalle de Boca ----------
-  // Boca sigue usando computeYear/plRows/renderPLTable de arriba, sin tocar (ya verificado).
-  // River y Racing usan este motor más chico, que arma el mismo tipo de cálculo (EBITDA,
-  // resultado operativo, etc.) pero a partir de listas de líneas (revenueLines/expenseLines)
-  // en vez de campos fijos, porque cada club tiene una cantidad distinta de rubros reales.
-  // Versión 137: el sitio YA NO abre en un club por default. Si el visitante nunca
-  // eligió uno, `currentClub` es null y se muestra la portada (la bifurcación de #inicio): abrir
-  // siempre en Boca era la razón principal por la que nadie se enteraba de que el
-  // sitio es multi-club. Si ya eligió alguna vez, entra derecho a SU club, que es lo
-  // que guardó el selector en localStorage. El `'boca'` que estaba acá era el último
-  // literal de clubId estructural que quedaba en el código (to-do 20(g)).
-  // El club de la visita anterior, si hubo. `currentClub` arranca SIEMPRE en null: el
-  // sitio se dibuja en frío y recién al final del INIT se pide el club guardado, que
-  // entra por el mismo camino que un click en el selector (selectClub -> loadClubData
-  // -> refreshAllForClub). Así no hay dos caminos distintos para llegar a un club
-  // mostrado, que es como se desincronizan.
+  // El club de la visita anterior, si hubo. `currentClub` arranca SIEMPRE en null: el sitio se dibuja en frío (la portada) y
+  // recién al final del INIT se pide el club guardado, que entra por el mismo camino que un click en el selector (selectClub ->
+  // loadClubData -> refreshAllForClub). Un solo camino para llegar a un club mostrado.
   const clubGuardado = CLUB_SELECTOR.savedClub();
   let currentClub = null;
 
-  // ---------- CARGA BAJO DEMANDA (LAZY LOADING) DE DATOS POR CLUB ----------
-  // Versión 137: ya no hay club default ni data file eager. Todo club se inyecta como <script> recién cuando el visitante lo elige en
-  // el selector jerárquico, así alguien que solo mira Boca no paga el peso de los demás. `clubDataLoaded`
-  // cachea qué ya se bajó, para no volver a pedir el archivo si el visitante va y vuelve entre
-  // clubes en la misma visita.
-  //
-  // CONVENCIÓN (Versión 112, reemplaza el mapa CLUB_DATA_SCRIPT_SRC que había que editar a mano en
-  // cada onboarding): el archivo de datos de CUALQUIER club es SIEMPRE `data/<clubId>-data.js` — se
-  // construye el path directo desde `clubId`, no hay ningún registro que mantener. Confirmado que
-  // los ~35 clubes cargados hasta ahora siguen esta convención sin excepción (ver
-  // `.claude/skills/club-or-year-onboarding/SKILL.md` para el recipe completo de onboarding, que ya
-  // asumía este nombre de archivo). Si alguna vez aparece un club real que necesite un nombre de
-  // archivo distinto, agregar una entrada a `CLUB_DATA_SCRIPT_OVERRIDE` (abajo) en vez de volver al
-  // mapa completo — no reintroducir la convención vieja "por las dudas".
+  // ---------- CARGA BAJO DEMANDA DE DATOS POR CLUB ----------
+  // Todo club se inyecta como <script> recién cuando el visitante lo elige; `clubDataLoaded` cachea qué ya se bajó.
+  // CONVENCIÓN: el archivo de CUALQUIER club es SIEMPRE `data/<clubId>-data.js`, sin registro que mantener. Si alguna vez un club
+  // necesita otro nombre, va una entrada en CLUB_DATA_SCRIPT_OVERRIDE, no un mapa completo.
   const CLUB_DATA_SCRIPT_OVERRIDE = {};
-  // Versión 137: arranca VACÍO. Hasta acá tenía `{ boca: true }` porque boca-data.js
-  // entraba por <script src> en el <body>; ya no entra ninguno eager (ver el comentario
-  // en los <script src> de arriba).
+  // Arranca vacío: ningún data file de club entra eager.
   const clubDataLoaded = {};
-  // Versión 130: dos llamadas SIMULTÁNEAS al mismo club devuelven la MISMA promesa, en vez de
-  // inyectar dos <script> del mismo archivo. `clubDataLoaded[clubId]` recién se marca en el
-  // `onload`, así que sin esto la segunda llamada no ve nada cargado todavía y arranca una carga
-  // paralela: el archivo se ejecuta dos veces y la segunda tira "Identifier
-  // 'velezRevenueLinesByYear' has already been declared", porque los `const` de un data file viven
-  // en el scope global. Los datos igual quedaban bien (gana el primero), pero la consola se llena
-  // de errores. No pasaba hasta ahora porque el sitio carga un club por vez; la comparación
-  // multi-club del selector jerárquico lo va a hacer todo el tiempo (5 sujetos en paralelo, o el
-  // promedio de una liga que incluye al club activo). Verificado con 3 llamadas simultáneas.
+  // Dos llamadas SIMULTÁNEAS al mismo club devuelven la MISMA promesa: si no, el archivo se ejecuta dos veces y la segunda tira
+  // "Identifier ... has already been declared" (los `const` de un data file viven en el scope global). Pasa al comparar varios clubes
+  // en paralelo.
   const clubDataPending = {};
   function loadClubData(clubId){
     if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
     if(clubDataPending[clubId]) return clubDataPending[clubId];
-    // `?v=` (Versión 115): mismo ASSET_V que los <script src> estáticos del final del <body>.
-    // Sin esto, un visitante con un data/<club>-data.js viejo cacheado seguiría viendo números
-    // viejos de ese club después de un deploy que los corrigió.
+    // `?v=`: mismo ASSET_V que los <script src> estáticos. Sin esto, un visitante con un data file viejo cacheado seguiría viendo
+    // números viejos después de un deploy que los corrigió.
     const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubId + '-data.js');
     const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
     clubDataPending[clubId] = new Promise((resolve, reject) => {
@@ -908,8 +741,8 @@ consulta puntual, nunca lectura de corrido.
     return clubDataPending[clubId];
   }
 
-  // to-do 147, paso 2: el ejercicio que se lleva a otra liga. El balance más nuevo de los elegidos;
-  // si no se eligió ninguno con balance, el balance más nuevo del club (CLUB_INDEX). null si no hay.
+  // El ejercicio que se lleva a otra liga: el balance más nuevo de los elegidos; si no se eligió ninguno con balance, el balance
+  // más nuevo del club (CLUB_INDEX). null si no hay.
   function ligaSimYear(){
     const elegido = FIN_SEL.lastBalance(currentClub);
     if(elegido) return elegido;
@@ -934,11 +767,10 @@ consulta puntual, nunca lectura de corrido.
     renderLigaSimPuesto(year, ej);
   }
 
-  // to-do 147, paso 13: el puesto en otra liga, sin salir de Finanzas. Candidatas = las ligas que no son
-  // la del club y que tienen clubes cargados ESE ejercicio (leagueAt sobre el índice de clubes, sin bajar
-  // ningún ranking). Default: la de más clubes cargados. El puesto sale de LIGA_VIEW.filaSimulada (el mismo
-  // motor que la simulación de la pestaña Ligas) contra el ranking precalculado de esa liga. Como un ranking
-  // tiene solo los clubes que el sitio tiene cargados, el texto dice entre cuántos, nunca "de 20" a secas.
+  // El puesto en otra liga, sin salir de Finanzas. Candidatas = las ligas que no son la del club y que tienen clubes cargados ESE
+  // ejercicio (leagueAt sobre el índice de clubes, sin bajar ningún ranking). Default: la de más clubes cargados. El puesto sale de
+  // LIGA_VIEW.filaSimulada (el motor de la simulación de Ligas) contra el ranking precalculado. Un ranking tiene solo los clubes
+  // cargados, así que el texto dice entre cuántos, nunca "de 20" a secas.
   let ligaSimElegida = {}, ligasPorClubListas = false;
   function renderLigaSimPuesto(year, ej){
     const res = document.getElementById('ligaSimRes'), btnViejo = document.getElementById('btnLigaSim');
@@ -990,24 +822,21 @@ consulta puntual, nunca lectura de corrido.
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
     renderFuentesCard();
-    // to-do 83: el botón de simulación solo tiene sentido con un club elegido y en
-    // modo "Año a año" (la simulación es de UN ejercicio puntual, no de una gestión).
+    // El card de simulación solo tiene sentido con un club elegido y en modo "Año a año" (es de UN ejercicio, no de una gestión).
     renderLigaSimCard(isGestion);
     if(window.FIN_MULTI) FIN_ANIOS.render(currentClub);
     if(window.FIN_MULTI && window.FIN_GESTION) FIN_GESTION.render(currentClub);
     if(window.FIN_REAL_UI) FIN_REAL_UI.render(currentClub, FIN_SEL.years());
-    // to-do 70, "Saved Searches": cada vez que el club/año/gestión se asienta, se avisa a
-    // js/cuenta.js. Si no hay sesión (o `currentClub` es null, portada), CUENTA.notifyStateChange
-    // no hace nada — no es un botón, se guarda sola (decisión de Guido, 2026-09-27).
+    // Guardado en Mi Cuenta: cada vez que el club/año/gestión se asienta se avisa a js/cuenta.js, que guarda solo (no es un botón).
+    // Sin sesión, o en la portada, CUENTA.notifyStateChange no hace nada.
     if(window.CUENTA && currentClub && (isGestion || FIN_SEL.years().length)){
       window.CUENTA.notifyStateChange({
         view: 'finanzas',
         club: currentClub,
         mode: isGestion ? 'gestion' : 'anio',
         year: isGestion ? null : FIN_SEL.primary(),
-        // to-do 147, paso 10: la lista completa de ejercicios elegidos. `year` se sigue guardando (el
-        // más nuevo) para que una búsqueda se pueda reabrir aunque el sitio vuelva a un solo año, y
-        // para que las búsquedas viejas, que solo tienen `year`, se sigan leyendo igual.
+        // La lista completa de ejercicios elegidos. `year` (el más nuevo) se sigue guardando para que una búsqueda se pueda reabrir con
+        // la vista de un año y para que las búsquedas viejas, que solo tienen `year`, se sigan leyendo.
         years: isGestion ? null : FIN_SEL.years(),
         gestion: isGestion ? document.getElementById('gestionSelect').value : null,
       });
@@ -1019,23 +848,10 @@ consulta puntual, nunca lectura de corrido.
   // al día con el club elegido, en vez de quedar desactualizado hasta el próximo evento.
   function refreshAllForClub(){
     populateFinanzasSelectors(currentClub);
-    // Los cards "Supuestos", "Presupuesto Financiero" y "Presupuesto de Inversiones" YA NO se
-    // esconden por club (Versión 35, antes tenían la clase `.bocaPresupuestoOficialCard` y se
-    // escondían acá con un querySelectorAll). Ahora son genéricos y SIEMPRE visibles, para
-    // cualquier club/ejercicio: cada uno decide su propio contenido en renderSupuestosCard()/
-    // renderPresupuestoFinancieroCard()/renderPresupuestoInversionesCard() (llamadas desde
-    // updateFinanzasByAnio(Generic)/updateFinanzasByGestion(Generic) más abajo), mostrando el
-    // contenido real si existe o un mensaje explícito de "no hay" si no, es la regla que pidió
-    // Guido, no algo condicional por club. La clase `.bocaPresupuestoOficialCard` ya no tiene
-    // ningún elemento en el HTML.
-    // Toggle de moneda (Versión 32: antes solo Boca; Versión 103: nativa/USD para CUALQUIER club,
-    // ver populateCurrencyToggle() y el comentario de cabecera de data/currency-map.js).
+    // Los cards de presupuesto son genéricos: cada uno decide su contenido en su render (renderSupuestosCard(), etc.).
+    // Toggle de moneda: nativa/USD para cualquier club (populateCurrencyToggle(), y la cabecera de data/currency-map.js).
     populateCurrencyToggle(currentClub);
-    // "Formato del club" / "Formato simplificado" (`simplifyToggleWrap`): SIEMPRE visible para
-    // cualquier club (Versión 103 — antes estaba atado al mismo gate `isArgentineClub` que la
-    // moneda, una conflación accidental: este toggle no depende de la moneda ni del país, depende
-    // de si el club tiene `normalizedCategory` en sus líneas, y TODOS los clubes lo tienen desde
-    // que Boca se migró al motor genérico en la Versión 102).
+    // "Formato del club" / "Formato simplificado": siempre visible, para cualquier club.
     refreshFinanzas();
     populatePasesSelectors(currentClub);
     applyPasesFilters();
@@ -1044,25 +860,15 @@ consulta puntual, nunca lectura de corrido.
     renderTitulosTable();
     populateCompararSelectors(currentClub);
     renderComparar();
-    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club
-    // (Versión 125), no en cada cambio de ejercicio como la ficha de Finanzas.
+    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club, no en cada cambio de ejercicio.
     renderFuentesClubCard();
   }
 
-  // ---------- SELECTOR JERÁRQUICO DE CLUB (Versión 137) ----------
-  // Acá vivían `populateClubSelect()` (que generaba una <option> por club, alfabético
-  // A→Z) y el listener de `change` de ese <select>. Los reemplaza `js/selector.js`: el
-  // panel Deporte › Región › País › Liga › Equipo con búsqueda encima. La regla de la
-  // Versión 96 ("el dropdown va siempre alfabético A→Z") quedó obsoleta con el dropdown
-  // (ver Admin/CONVENCIONES.md): el orden alfabético sigue existiendo, pero ahora DENTRO de
-  // cada liga/país, que es el nivel donde comparar dos nombres significa algo.
-  //
-  // Este archivo le pasa 2 funciones y no sabe nada más de él; el selector no sabe nada
-  // de cómo se renderiza el sitio. Cambiar de club sigue siendo exactamente lo que era:
-  // cargar su data file, actualizar `currentClub`, repintar todo, y correr la
-  // verificación de tie-outs de ese club recién cargado.
-  // Cambiar de pestaña APRETANDO EL BOTÓN del nav, en vez de repetir las clases `active`
-  // que pone el listener de más abajo: si mañana esa navegación cambia, esto no se entera.
+  // ---------- SELECTOR DE CLUB (js/selector.js) ----------
+  // Este archivo le pasa 2 funciones y no sabe nada más de él; el selector no sabe cómo se renderiza el sitio. Cambiar de club es:
+  // cargar su data file, actualizar `currentClub`, repintar todo, y verificar los tie-outs de ese club.
+  // Cambiar de pestaña APRETANDO EL BOTÓN del nav, en vez de repetir las clases `active` que pone su listener: si esa navegación
+  // cambia, esto no se entera.
   function irASeccion(id){
     const btn = document.querySelector('#mainNav button[data-section="' + id + '"]');
     if(btn) btn.click();
@@ -1084,29 +890,23 @@ consulta puntual, nunca lectura de corrido.
       return Promise.resolve();
     }
     return loadClubData(newClub).then(() => {
-      // Se apaga el aviso de un intento anterior que falló. Hace falta desde el to-do 40: el
-      // aviso dejó de vivir adentro de #inicio y pasó a <main>, así que ya no se "esconde solo"
-      // al cambiar de pestaña — sin esto, un error de red viejo quedaría en pantalla al lado de
-      // los datos del club que SÍ cargó, diciendo lo contrario de lo que el visitante está viendo.
+      // Se apaga el aviso de un intento anterior que falló: vive en <main> y no se esconde solo al cambiar de pestaña, así que un error
+      // viejo quedaría al lado de los datos del club que SÍ cargó.
       const avisoPrevio = document.getElementById('clubLoadError');
       if(avisoPrevio) avisoPrevio.hidden = true;
       currentClub = newClub;
       applyClubMode();
       refreshAllForClub();
       verifyTieOuts(newClub);
-      // Versión 144: el que entró por "quiero ver un club en particular" aterriza en
-      // FINANZAS, que es donde están los números de un club. Es lo único que distingue
-      // ese camino del botón de club del header, que te deja donde estabas.
+      // El que entró por "quiero ver un club en particular" aterriza en FINANZAS. Es lo único que distingue ese camino del botón de
+      // club del header, que te deja donde estabas.
       if(irAFinanzasAlElegir){
         irAFinanzasAlElegir = false;
         irASeccion('finanzas');
       }
     }).catch(err => {
-      // NO un alert() (Versión 137). Un alert nativo CONGELA la página entera: timers,
-      // onload de scripts, todo. Si el club que falla es el guardado en localStorage, el
-      // sitio queda congelado en cada visita y ni siquiera se puede elegir otro club.
-      // Pasó de verdad al probar el cold start. Ahora el error se cuenta en la consola y
-      // se muestra un aviso adentro de la portada, que sigue siendo usable.
+      // NO un alert(): un alert nativo CONGELA la página entera (timers, onload de scripts). Si el club que falla es el guardado en
+      // localStorage, el sitio quedaría congelado en cada visita. El error va a la consola y a un aviso en la página.
       console.error('[club] no se pudo cargar', newClub, err);
       currentClub = previousClub;
       applyClubMode();
@@ -1118,11 +918,9 @@ consulta puntual, nunca lectura de corrido.
     });
   }
 
-  // to-do 70, "Saved Searches": reabrir una búsqueda guardada desde "Mi Cuenta". js/cuenta.js
-  // no toca `currentClub` ni ningún <select> directamente (mismo principio que CLUB_SELECTOR:
-  // no sabe cómo se renderiza el sitio) — le pasa el `state` guardado y esta función hace lo
-  // mismo que haría el visitante a mano: elegir el club, después el año/gestión, y aterrizar
-  // en Finanzas.
+  // Reabrir una búsqueda guardada desde Mi Cuenta. js/cuenta.js no toca `currentClub` ni ningún <select>: le pasa el `state`
+  // guardado y esta función hace lo mismo que haría el visitante a mano (elegir el club, después el año/gestión, y aterrizar en
+  // Finanzas).
   function reopenSavedSearch(state){
     if(!state) return;
     // Comparación (pestaña "Comparar"/vs): CLUB_SELECTOR sabe rearmar los dos lados, index.html
@@ -1132,12 +930,9 @@ consulta puntual, nunca lectura de corrido.
       irASeccion('vs');
       return;
     }
-    // to-do 83: simulación de uno o más clubes en una liga que no es la suya.
-    // `state.clubes` es SIEMPRE un array (hasta un solo club de Finanzas se
-    // guarda como array de 1) — necesitan sus `data/<club>-data.js` cargados
-    // para poder recalcular el ingreso con computeYearGeneric(), pero NO pasa
-    // por selectClub(): esto no cambia "el club activo" del sitio, solo arma
-    // una vista, en paralelo con Promise.all (LIGA_VIEW no sabe cargar clubes).
+    // Simulación de uno o más clubes en una liga que no es la suya. `state.clubes` es SIEMPRE un array. Necesitan sus data files
+    // cargados para recalcular el ingreso con computeYearGeneric(), pero NO pasa por selectClub(): no cambia el club activo, solo arma
+    // una vista (LIGA_VIEW no sabe cargar clubes).
     if(state.view === 'ligaSim'){
       if(!state.league || !state.clubes || !state.clubes.length) return;
       Promise.all(state.clubes.map(c => loadClubData(c.club).catch(() => null))).then(() => {
@@ -1157,8 +952,8 @@ consulta puntual, nunca lectura de corrido.
       else {
         document.getElementById('anioSelect').value = String(state.year);
         FIN_SEL.set([parseInt(document.getElementById('anioSelect').value, 10)]);
-        // to-do 147, paso 10: una búsqueda guardada con varios ejercicios los vuelve a elegir todos
-        // (los que el club siga teniendo). Sin los cards (?multi=0) queda el más nuevo, `year`.
+        // Una búsqueda guardada con varios ejercicios los vuelve a elegir todos (los que el club siga teniendo). Con ?multi=0 queda el
+        // más nuevo, `year`.
         if(window.FIN_MULTI && Array.isArray(state.years) && state.years.length > 1){
           const hay = new Set([...document.getElementById('anioSelect').options].map(o => parseInt(o.value, 10)));
           const ys = state.years.filter(y => hay.has(y));
@@ -1170,29 +965,13 @@ consulta puntual, nunca lectura de corrido.
     });
   }
 
-  // applyClubMode(): la única función que decide qué se ve según haya club o no.
-  //
-  // VERSIÓN 144 (etapa 2 del merge del prototipo 4). Hasta acá escondía EL NAV ENTERO y
-  // TODAS las secciones mientras no hubiera club, porque la portada era un hero suelto
-  // fuera de <main> y no había nada que navegar hasta elegir uno. Ahora la portada ES una
-  // sección (#inicio, la bifurcación) y Comparar es otra, así que esconderlas dejaba la
-  // página en blanco.
-  //
-  // LA REGLA NUEVA, que conserva lo que la Versión 137 buscaba (nunca ofrecer una pestaña
-  // que lleva a una vista vacía) sin esconder el nav: las pestañas que funcionan SIN club
-  // se ven siempre (Inicio, Comparar, Finanzas, Mi Cuenta) y las que no significan nada
-  // sin uno se esconden hasta que lo haya (Fuentes). Finanzas sin club no está vacía: es
-  // el card del selector (Versión 143). Y si el visitante estaba parado en una pestaña que
-  // acaba de esconderse (volvió a la portada desde Fuentes), se lo devuelve a Inicio en vez
-  // de dejarlo mirando una sección sin botón.
-  // 'liga' entra acá (Versión 183): la pestaña Ligas es sobre una LIGA, no sobre el club
-  // activo, así que funciona igual de bien sin ninguno elegido — de hecho su estado frío
-  // (la grilla de las 8 ligas) es una forma perfectamente buena de entrar al sitio.
+  // applyClubMode(): la única función que decide qué se ve según haya club o no. Las pestañas que funcionan SIN club se ven
+  // siempre (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) y las que no significan nada sin uno se esconden hasta que lo haya
+  // (Fuentes). Finanzas sin club no está vacía: es el card del selector. Si el visitante estaba en una pestaña que acaba de
+  // esconderse, vuelve a Inicio.
   const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
-    // El #coldHero de la Versión 137 se borró en la Versión 146, junto con el panel de
-    // columnas que lo llenaba: la portada es la bifurcación de #inicio.
     document.getElementById('mainNav').style.display = '';
     document.querySelectorAll('main > section').forEach(sec => { sec.style.display = ''; });
 
@@ -1202,9 +981,6 @@ consulta puntual, nunca lectura de corrido.
     const activo = document.querySelector('#mainNav button.active');
     if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
 
-    // Versión 184: acá se escondía `#inicioClub` cuando no había club. Ese bloque ya no
-    // existe — Inicio es la pregunta y la vidriera de rankings, y las dos cosas se ven
-    // igual haya club o no.
 
     CLUB_SELECTOR.renderButton();
   }
@@ -1212,15 +988,12 @@ consulta puntual, nunca lectura de corrido.
   CLUB_SELECTOR.init({
     getClub: () => currentClub,
     pickClub: selectClub,
-    // Versión 183: elegir una LIGA en el selector aterriza en la pestaña Ligas. Hasta
-    // acá terminaba en Finanzas del primer club de esa liga por orden alfabético, que
-    // es lo que el to-do 23(c) describía como "solo filtra la columna Equipo".
+    // Elegir una LIGA en el selector aterriza en la pestaña Ligas.
     pickLeague: (leagueId, year) => LIGA_VIEW.show(leagueId, year).then(() => irASeccion('liga')),
   });
 
-  // to-do 70, "Saved Searches": js/cuenta.js no sabe cargar un club ni cambiar de pestaña,
-  // le pasamos reopenSavedSearch() para que reabrir una búsqueda guardada haga exactamente lo
-  // mismo que elegirla a mano.
+  // js/cuenta.js no sabe cargar un club ni cambiar de pestaña: se le pasa reopenSavedSearch() para que reabrir una búsqueda
+  // guardada haga exactamente lo mismo que elegirla a mano.
   CUENTA.init({
     reopen: reopenSavedSearch,
   });
@@ -1230,11 +1003,9 @@ consulta puntual, nunca lectura de corrido.
   LIGA_VIEW.init({
     pickClub: selectClub,
     goFinanzas: () => irASeccion('finanzas'),
-    // Versión 184: el "Ver la liga ›" de cada bloque de la vidriera de Inicio.
+    // El "Ver la liga ›" de cada bloque de la vidriera de Inicio.
     goLiga: () => irASeccion('liga'),
-    // to-do 83: LIGA_VIEW no sabe de Supabase (mismo principio que CLUB_SELECTOR/
-    // js/cuenta.js), así que avisa acá cuando una simulación se armó de verdad, y
-    // acá se decide si guardarla — mismo gateo que refreshFinanzas() (sin sesión,
+    // LIGA_VIEW no sabe de Supabase: avisa acá cuando una simulación se armó de verdad, y acá se decide si guardarla (sin sesión,
     // notifyStateChange no hace nada).
     onSimulado: (league, leagueYear, clubes) => {
       if(window.CUENTA) window.CUENTA.notifyStateChange({
@@ -1246,20 +1017,13 @@ consulta puntual, nunca lectura de corrido.
     LIGA_VIEW.iniciarSimulacion(currentClub, parseInt(document.getElementById('ligaSimWrap').dataset.year, 10));
     irASeccion('liga');
   });
-  // Se dibujan las dos pantallas del módulo: la pestaña (estado frío: la grilla de las 8
-  // ligas, para que llegar por el nav sin liga elegida no muestre una sección vacía) y la
-  // vidriera de Inicio, que es lo primero que ve un visitante nuevo.
+  // Se dibujan las dos pantallas del módulo: la pestaña (estado frío: la grilla de ligas) y la vidriera de Inicio.
   LIGA_VIEW.refresh();
 
-  // Acá vivía el `CLUB_COMPARE.init()` de js/comparar-clubes.js, borrado en la
-  // Versión 152: la comparación es la pestaña Comparar, y su estado vive adentro de
-  // js/selector.js junto con los dos cards que lo producen.
   applyClubMode();
 
-  // ---------- LA BIFURCACIÓN DE INICIO (Versión 144) ----------
-  // Las dos opciones abren caminos distintos: la primera, el selector, y al elegir cae en
-  // Finanzas; la segunda ni lo abre — lleva a la pestaña Comparar. En la etapa 3 el
-  // selector pasa a ser el modal de pasos y esto no cambia: sigue siendo `CLUB_SELECTOR.open()`.
+  // ---------- LA BIFURCACIÓN DE INICIO ----------
+  // La primera opción abre el selector y al elegir cae en Finanzas; la segunda lleva a la pestaña Comparar.
   document.getElementById('bifUno').addEventListener('click', () => {
     irAFinanzasAlElegir = true;
     CLUB_SELECTOR.open();
@@ -1267,7 +1031,7 @@ consulta puntual, nunca lectura de corrido.
   document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
-  // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee (to-do 147, paso 3).
+  // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee.
   document.getElementById('anioSelect').addEventListener('change', e => {
     FIN_SEL.set([parseInt(e.target.value, 10)]);
     refreshFinanzas();
@@ -1283,33 +1047,14 @@ consulta puntual, nunca lectura de corrido.
     });
   });
 
-  // Verificación automática: para cada club-ejercicio que tiene un total oficial conocido,
-  // chequea que la suma de las líneas cargadas coincida. Corre sola al abrir el sitio y avisa
-  // por consola si algo no cierra, para no depender de acordarse de revisarlo a mano.
-  // onlyClub (opcional): con lazy-loading, los datos de River/Racing pueden no estar cargados
-  // todavía cuando esta función corre (ver INIT, más abajo, que solo llama a verifyTieOuts() sin
-  // argumento apenas abre la página, con Boca como único club en memoria). Los bloques de
-  // racing/river están gateados por `typeof ... !== 'undefined'` para no tirar ReferenceError si
-  // ese data/*.js todavía no se bajó, y loadClubData() (ver más arriba) vuelve a llamar a esta
-  // misma función con el clubId recién cargado, para no perder la verificación, solo diferirla al
-  // momento en que el dato efectivamente llega.
+  // Verificación automática: para cada club-ejercicio con un total oficial conocido, chequea que la suma de las líneas cargadas
+  // coincida, y avisa por consola si algo no cierra. Revisa solo los clubes cargados en memoria; `onlyClub` (opcional) la limita al
+  // que se acaba de cargar (la llama loadClubData()). Para todos los clubes: auditAll().
   function verifyTieOuts(onlyClub){
     const checks = [];
-    // Versión 101 (refactor de escalabilidad, a pedido de Guido): hasta acá, cada club del motor
-    // genérico tenía su propio bloque copy-pasteado (un `if(typeof <club>FiscalYearMeta...)` +
-    // checks a mano o un mini-mapa `officialPat` + forEach), ~250 líneas en total y creciendo con
-    // cada club/ejercicio nuevo. Ahora cada club guarda sus propios officialTotalRevenue/
-    // officialTotalExpenses/officialPAT DENTRO de su propio `fiscalYearMeta[year]` (en su
-    // data/<club>-data.js, al lado de donde ya vivían los primeros dos campos) — agregar un club o
-    // un ejercicio nuevo YA NO requiere tocar esta función, solo agregar esos 3 campos al año
-    // correspondiente en el archivo del club. Este loop único reemplaza los ~11 bloques por club que
-    // había antes; itera todo lo que haya en `window.CLUB_GENERIC_DATA` (Versión 102: Boca también
-    // está ahí, sus 3 checks de siempre — Revenue 2027/2025 y PAT 2025 — salen de este mismo loop
-    // ahora, ver bocaFiscalYearMeta en data/boca-data.js).
-    // officialPAT se omite (sin 3er check) en años que son PRESUPUESTO puro sin balance auditado
-    // (ej. Racing 2019/2026/2027): no hay un "Superávit/Déficit del ejercicio" real impreso contra
-    // qué comparar. Mismo criterio de siempre, ahora expresado como "el campo no está" en vez de
-    // "el año no aparece en la lista de este bloque".
+    // Cada club guarda officialTotalRevenue / officialTotalExpenses / officialPAT dentro de su fiscalYearMeta[year]: agregar un club o
+    // un ejercicio no toca esta función. officialPAT se omite en un presupuesto puro (no hay un resultado real impreso contra qué
+    // comparar).
     Object.keys(window.CLUB_GENERIC_DATA || {}).forEach(clubId => {
       const meta = window.CLUB_GENERIC_DATA[clubId].fiscalYearMeta;
       if(!meta) return;
@@ -1335,18 +1080,9 @@ consulta puntual, nunca lectura de corrido.
     });
   }
 
-  // ---------- MULTI-CLUB: acceso por club para Pases/Resultados/Comparar/Inicio ----------
-  // Todos los clubes (Boca incluida desde la Versión 102) viven en el registro CLUB_GENERIC_DATA (ver
-  // data/instituto-data.js para el comentario original de este registro) — un club nuevo del motor
-  // genérico no necesita tocar estas 3 funciones. River/Racing/etc. se cargan bajo demanda (ver
-  // loadClubData más abajo), pero eso no afecta a estas funciones: solo se llaman después de que
-  // loadClubData(clubId) ya resolvió (ver `selectClub()` más abajo), momento en el que
-  // CLUB_GENERIC_DATA[clubId] ya existe.
-  // Versión 131: los 3 devuelven null si no hay club elegido o si sus datos todavía no se
-  // cargaron. El comentario de arriba decía que "solo se llaman después de que loadClubData()
-  // resolvió", y era cierto mientras SIEMPRE hubiera un club activo. Deja de serlo con el cold
-  // start del selector jerárquico, donde el sitio abre sin club hasta que el visitante elige:
-  // ahí `currentClub` es null y estas tres tiraban TypeError. Ver `clubCargado()`, más abajo.
+  // ---------- ACCESO POR CLUB PARA PASES / RESULTADOS / COMPARAR GESTIONES ----------
+  // Todos los clubes viven en CLUB_GENERIC_DATA: un club nuevo no toca estas funciones. Devuelven null si no hay club elegido o si
+  // sus datos todavía no se cargaron (ver clubCargado()).
   function pasesDataForClub(clubId){
     return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].pasesData : null;
   }
@@ -1357,9 +1093,8 @@ consulta puntual, nunca lectura de corrido.
     return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].titulosData : null;
   }
 
-  // clubCargado(clubId): el único lugar que contesta "¿hay datos de este club acá y ahora?".
-  // Se usa para distinguir los dos estados que antes no existían: "todavía no se eligió club"
-  // (cold start) y "se eligió pero su archivo todavía no bajó".
+  // clubCargado(clubId): el único lugar que contesta "¿hay datos de este club acá y ahora?" (distingue "todavía no se eligió
+  // club" de "se eligió pero su archivo todavía no bajó").
   function clubCargado(clubId){
     return !!(clubId && (window.CLUB_GENERIC_DATA || {})[clubId]);
   }
@@ -1374,27 +1109,16 @@ consulta puntual, nunca lectura de corrido.
       sections.forEach(s => s.classList.remove('active'));
       btn.classList.add('active');
       document.getElementById(btn.dataset.section).classList.add('active');
-      // to-do 23: la pestaña activa también en <body>, para que el CSS esconda lo que en ella no
-      // hace nada (el USD / ARS del header en Comparar, que siempre muestra USD).
+      // La pestaña activa también en <body>, para que el CSS esconda lo que en ella no hace nada (el USD / ARS del header en Comparar,
+      // que siempre muestra USD).
       document.body.dataset.section = btn.dataset.section;
     });
   });
 
-  // ---------- CURRENCY TOGGLE (universal, header: afecta Inicio Y Finanzas) ----------
-  // Antes vivía solo dentro de Finanzas (#currencyToggleFin, adentro de sus controles). Guido pidió
-  // que sea universal, al lado del selector de club, porque Inicio también necesita mostrar la
-  // moneda nativa. "Comparar Gestiones" sigue ignorando este toggle a propósito (ver
-  // displayFinancialsForClub en js/finanzas-calc.js, muestra USD siempre, es una vista pensada para
-  // comparar clubes/gestiones entre sí, no se presta a que quede a mitad en una moneda de un lado y
-  // USD del otro).
-  //
-  // Versión 103 (a pedido de Guido, "full native currency toggle for every club", ver comentario de
-  // cabecera de data/currency-map.js para el modelo completo): los 2 <button> ya NO son HTML
-  // estático (antes literalmente "USD"/"ARS" fijos) — se regeneran por club en
-  // `populateCurrencyToggle()` (llamada desde `refreshAllForClub()`), mismo criterio que
-  // `populateClubSelect()`. Como los botones se regeneran, el listener de click se delega en el
-  // contenedor fijo `#currencyToggleGlobal` (que sí existe siempre en el HTML) en vez de
-  // engancharse a cada <button> individual (que se destruyen y recrean).
+  // ---------- CURRENCY TOGGLE (universal, en el header) ----------
+  // "Comparar Gestiones" lo ignora a propósito (displayFinancialsForClub, js/finanzas-calc.js: siempre USD). Los botones se
+  // regeneran por club en populateCurrencyToggle() (modelo completo: cabecera de data/currency-map.js), así que el listener de
+  // click se delega en el contenedor fijo #currencyToggleGlobal.
   document.getElementById('currencyToggleGlobal').addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-currency]');
     if(!btn) return;
@@ -1404,18 +1128,13 @@ consulta puntual, nunca lectura de corrido.
     refreshFinanzas();
   });
 
-  // Arma el toggle [moneda nativa del club / USD] para `clubId`. Un club cuyo `reportingCurrency`
-  // (data/clubs.js) YA ES 'USD' (ej. Ecuador, oficialmente dolarizado) no tiene nada que togglear:
-  // el contenedor entero se esconde, mismo criterio que ya existía para clubes sin cotización propia
-  // antes de esta versión. `currentCurrency` se resetea a USD al cambiar de club SOLO si la moneda
-  // elegida no tiene sentido para el club nuevo (ej. veníamos de ver ARS y el club nuevo es en BRL);
-  // entre 2 clubes de la MISMA moneda nativa (ej. dos clubes argentinos), la elección se conserva.
+  // Arma el toggle [moneda nativa del club / USD]. Un club cuyo `reportingCurrency` YA ES 'USD' (ej. Ecuador, dolarizado) no tiene
+  // nada que togglear y el contenedor se esconde. `currentCurrency` vuelve a USD al cambiar de club SOLO si la moneda elegida no
+  // tiene sentido para el club nuevo; entre dos clubes de la misma moneda nativa, la elección se conserva.
   function populateCurrencyToggle(clubId){
     const wrap = document.getElementById('currencyToggleGlobal');
     const native = (clubs[clubId] || {}).reportingCurrency;
-    // Sin club elegido (portada) no hay moneda nativa que ofrecer, y el toggle se
-    // pintaba con el literal "undefined" al lado de USD. Bug real, visto en la
-    // primera prueba del cold start en el navegador.
+    // Sin club elegido (portada) no hay moneda nativa que ofrecer: si no, el toggle se pintaba con "undefined" al lado de USD.
     if(!native || native === 'USD'){
       wrap.style.display = 'none';
       currentCurrency = 'USD';
@@ -1427,7 +1146,7 @@ consulta puntual, nunca lectura de corrido.
       `<button data-currency="${native}" class="${currentCurrency === native ? 'active' : ''}">${native}</button>`;
   }
 
-  // ---------- TOGGLE "FORMATO DEL CLUB" / "FORMATO SIMPLIFICADO" (Estado de resultados, solo Boca) ----------
+  // ---------- TOGGLE "FORMATO DEL CLUB" / "FORMATO SIMPLIFICADO" (Estado de resultados) ----------
   document.querySelectorAll('#simplifyToggle button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#simplifyToggle button').forEach(b => b.classList.remove('active'));
@@ -1455,15 +1174,8 @@ consulta puntual, nunca lectura de corrido.
   });
 
   // ---------- INIT ----------
-  // REGLA (Versión 56): antes de esto, `populateFinanzasSelectors()` solo se llamaba al CAMBIAR de
-  // club (`refreshAllForClub()`), nunca en la carga inicial, así que el `<select id="anioSelect">"
-  // se quedaba con las opciones ESTÁTICAS del HTML (arriba en el <body>) hasta el primer cambio de
-  // club. Bug real encontrado al implementar `anioDropdownSuffix()`: el HTML estático todavía tenía
-  // los sufijos viejos ("presupuestado", "esperando datos"), así que Boca (el club default) los
-  // seguía mostrando en la carga inicial, aunque el código de `populateFinanzasSelectors` ya
-  // generaba los nuevos ("Presupuesto"/"Placeholder") correctamente para cualquier club que no
-  // fuera el default. Se llama acá también para que el dropdown sea SIEMPRE el generado por JS,
-  // no dependa de que el visitante cambie de club para corregirse solo.
+  // Los selectores de Finanzas se generan también en la carga inicial, no solo al cambiar de club: el dropdown tiene que ser
+  // SIEMPRE el que arma el JS, nunca las opciones estáticas del HTML.
   populateFinanzasSelectors(currentClub);
   populateCurrencyToggle(currentClub);
   refreshFinanzas();
@@ -1482,13 +1194,10 @@ consulta puntual, nunca lectura de corrido.
   if(clubGuardado) selectClub(clubGuardado);
 
   // ==========================================================================
-  // SELECTOR DE IDIOMA (Versión 115)
+  // SELECTOR DE IDIOMA
   //
-  // El menú se dibuja leyendo `window.LANGS` (data/lang/langs.js), así que sumar
-  // un idioma nuevo NO toca este código ni el HTML: alcanza con la entrada en
-  // LANGS y su `data/lang/<code>.js`. Mismo criterio que `populateClubSelect()`
-  // (Versión 101) y que `loadClubData()` (Versión 112): convención, no un mapa a
-  // mano que alguien se tiene que acordar de actualizar.
+  // El menú se dibuja leyendo `window.LANGS` (data/lang/langs.js), así que sumar un idioma NO toca este código ni el HTML: alcanza
+  // con la entrada en LANGS y su `data/lang/<code>.js`. Convención, no un mapa a mano.
   // ==========================================================================
   function renderLangMenu(){
     const menu = document.getElementById('langMenu');
@@ -1529,8 +1238,7 @@ consulta puntual, nunca lectura de corrido.
   // Si mañana se agrega una vista nueva que genere texto propio, sumarla ACÁ.
   I18N.onChange(() => {
     renderLangMenu();
-    // (Versión 530, to-do 146) el chip del club del header y el modal del selector se arman en JS: js/selector.js decía que esta llamada
-    // estaba acá y no estaba, así que el chip no se volvía a traducir.
+    // El chip del club del header y el modal del selector se arman en JS: sin esta llamada no se vuelven a traducir.
     CLUB_SELECTOR.refresh();
     populateFinanzasSelectors(currentClub);
     populateCurrencyToggle(currentClub);
@@ -1539,39 +1247,24 @@ consulta puntual, nunca lectura de corrido.
     renderResultados();
     renderTitulosTable();
     renderComparar();
-    // La pestaña Fuentes arma su contenido en JS (Versión 126): sin esto, el título y las
-    // etiquetas quedan en el idioma que hubiera al cargar la página. `refreshFinanzas()`, acá
-    // arriba, ya redibuja la ficha de Fuentes de Finanzas.
+    // La pestaña Fuentes arma su contenido en JS: sin esto, el título y las etiquetas quedan en el idioma del arranque.
+    // refreshFinanzas(), acá arriba, ya redibuja la ficha de Fuentes de Finanzas.
     renderFuentesClubCard();
-    // La pestaña Ligas también arma todo su contenido en JS (Versión 183).
+    // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
   });
 
   I18N.init().then(renderLangMenu);
 
   // ==========================================================================
-  // auditAll() — AUDITORÍA COMPLETA, DE TODOS LOS CLUBES (Versión 118)
+  // auditAll() — AUDITORÍA COMPLETA, DE TODOS LOS CLUBES
   //
-  // EL PROBLEMA QUE RESUELVE: `verifyTieOuts()` y `checkFxSanity()` solo pueden
-  // revisar los clubes que están CARGADOS en memoria, y los clubes se cargan por
-  // demanda (`loadClubData()`, Versión 112). Como el único `data/<club>-data.js`
-  // que entra por `<script src>` es el de Boca, una carga normal de la página
-  // corría 6 de los 222 checks que existen. Los otros 216 solo corrían si un
-  // visitante elegía justo ese club en el selector. O sea: un error de datos en
-  // el club N° 37 era invisible hasta que alguien lo miraba a mano. A 41 clubes
-  // ya era poco probable que alguien los mirara todos; al objetivo de ~1000, es
-  // imposible.
+  // verifyTieOuts() y checkFxSanity() solo revisan los clubes CARGADOS en memoria, y los clubes se cargan por demanda: sin esto,
+  // un error de datos en un club que nadie abre es invisible. La carga por demanda se conserva (el visitante que solo quiere ver un
+  // club no baja todos); acá se fuerza la carga de todos.
   //
-  // POR QUÉ NO SE ARREGLA CARGANDO TODO SIEMPRE: la carga por demanda es
-  // correcta y hay que conservarla. Es lo que hace que el visitante que solo
-  // quiere ver Boca no baje 41 archivos de datos.
-  //
-  // POR QUÉ LLAMA AL MOTOR EN VEZ DE RECALCULAR: al escribir esto se probó
-  // primero un verificador aparte, en Node, que reimplementaba el cálculo del
-  // PAT. Tiró 12 falsos positivos, porque el motor real suma cosas que esa
-  // fórmula simplificada no tenía (nonCash, profitOnPlayerSales, assetSales,
-  // tax). REGLA: cualquier verificación total tiene que pasar por
-  // `computeYearGeneric()`, nunca reimplementar la cascada.
+  // REGLA: cualquier verificación total pasa por computeYearGeneric(), el motor real; nunca reimplementar la cascada (una fórmula
+  // simplificada tiró falsos positivos por no contemplar nonCash, profitOnPlayerSales, assetSales ni tax).
   //
   // CÓMO SE USA:
   //   - `financeofsports.com/?audit=1` — carga todos los clubes y audita todo.
@@ -1582,20 +1275,12 @@ consulta puntual, nunca lectura de corrido.
     const ids = Object.keys(clubs);
     const failedToLoad = [];
     console.log(`[auditoría] cargando los ${ids.length} clubes...`);
-    // EN TANDAS PARALELAS, NO DE A UNO (Versión 160). Antes era un `for` con `await` adentro, o
-    // sea 41 requests en fila: 114 ms hoy, pero decenas de segundos a 1000 clubes con latencia
-    // real de red, y esto es lo que hay que correr antes de CADA push que toque datos.
-    // EL TAMAÑO DE TANDA ES UN TECHO, NO UN OBJETIVO: el navegador ya limita a ~6 conexiones
-    // simultáneas por origen, así que 25 no compra más paralelismo de red que 6. Sirve para no
-    // inyectar 3000 `<script>` de una el día que el proyecto tenga ese volumen.
-    // `allSettled` Y NO `all`: con `all`, el primer club que falla aborta la tanda entera y se
-    // pierde el resultado de los otros 24. Así cada club reporta lo suyo, igual que el try/catch
-    // por iteración que había antes, y `failedToLoad` conserva el mismo orden determinista.
-    // OJO SI ALGÚN DÍA UN data/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace (el único
-    // `console.` de `data/` está en `currency-map.js`, que no es de club) y las dos
-    // verificaciones corren DESPUÉS de que terminó toda la carga, así que cargar en paralelo no
-    // puede entremezclar mensajes de dos clubes. Un data file que loguee rompe esa propiedad y
-    // tendría que prefijar su propio id.
+    // EN TANDAS PARALELAS, NO DE A UNO: en fila serían decenas de segundos con muchos clubes, y esto corre antes de cada push que
+    // toque datos. El tamaño de tanda es un TECHO (el navegador ya limita a ~6 conexiones por origen): sirve para no inyectar miles
+    // de <script> de una. `allSettled` Y NO `all`: el primer club que falla no aborta la tanda, y `failedToLoad` conserva un orden
+    // determinista.
+    // OJO SI ALGÚN DÍA UN data/<club>-data.js LOGUEA ALGO: hoy ninguno lo hace y las verificaciones corren DESPUÉS de toda la carga,
+    // así que cargar en paralelo no entremezcla mensajes. Un data file que loguee tendría que prefijar su propio id.
     const TANDA = 25;
     for(let i = 0; i < ids.length; i += TANDA){
       const tanda = ids.slice(i, i + TANDA);

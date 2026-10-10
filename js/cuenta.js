@@ -1,19 +1,13 @@
 // ============================================================================
-// js/cuenta.js — "Mi Cuenta": login con Google (Supabase Auth) y guardado automático de
-// búsquedas (to-do 70, Admin/TODO.md). Mismo principio que js/selector.js (ver su cabecera):
-// este archivo no sabe cómo se renderiza el resto del sitio. index.html le pasa `reopen` por
-// CUENTA.init(), y este archivo le avisa a index.html cuándo cambió el estado llamando a
-// CUENTA.notifyStateChange() desde refreshFinanzas() — no al revés.
+// js/cuenta.js — "Mi Cuenta": login con Google (Supabase Auth) y guardado automático de búsquedas. Mismo principio que
+// js/selector.js: este archivo no sabe cómo se renderiza el resto del sitio. index.html le pasa `reopen` por CUENTA.init(), y le
+// avisa cuándo cambió el estado llamando a CUENTA.notifyStateChange() desde refreshFinanzas(), no al revés.
 //
-// LA URL Y LA KEY DE ACÁ ABAJO SON PÚBLICAS A PROPÓSITO. No son un secreto que se filtró: la
-// `anon public key` de Supabase está pensada para viajar en el JS del cliente, la seguridad la
-// da Row Level Security del lado del server (ver Admin/supabase/.env y Admin/supabase/schema.sql
-// para el detalle completo, incluidas las políticas de RLS).
+// LA URL Y LA KEY DE ACÁ ABAJO SON PÚBLICAS A PROPÓSITO: la `anon public key` de Supabase está pensada para viajar en el JS del
+// cliente; la seguridad la da Row Level Security del lado del server.
 //
-// Schema esperado en Supabase (ya corrido, ver Admin/supabase/schema.sql): tabla
-// `saved_searches` (user_id, state jsonb, state_hash, is_favorite, created_at,
-// last_opened_at) + función `save_search(state, state_hash)` que hace upsert sin
-// resetear `is_favorite`.
+// Schema esperado: tabla `saved_searches` (user_id, state jsonb, state_hash, is_favorite, created_at, last_opened_at) + función
+// `save_search(state, state_hash)` que hace upsert sin resetear `is_favorite`.
 // ============================================================================
 
 (function () {
@@ -35,16 +29,14 @@
   // falta un hash de verdad: alcanza con una clave de texto estable y determinística.
   function stateKey(state) {
     if (state.view === 'vs') return ['vs', JSON.stringify(state.ladoA), JSON.stringify(state.ladoB)].join('|');
-    // to-do 83: "cómo le iría este/estos club(es) en otra liga" — `clubes` es
-    // SIEMPRE un array (hasta un solo club se guarda como array de 1), así que
-    // la clave incluye cada club+año de ORIGEN, más la liga+año DESTINO.
+    // Simulación de clubes en otra liga: `clubes` es SIEMPRE un array (un solo club también), así que la clave incluye cada
+    // club+año de ORIGEN, más la liga+año DESTINO.
     if (state.view === 'ligaSim') {
       var claves = (state.clubes || []).map(function(c) { return c.club + ':' + c.clubYear; }).join(',');
       return ['ligaSim', state.league, state.leagueYear, claves].join('|');
     }
-    // to-do 147, paso 10: con varios ejercicios elegidos la clave lleva la lista. Con uno solo queda
-    // la clave de siempre, así una búsqueda vieja de un año y la misma búsqueda hecha hoy son la misma
-    // fila y no se duplica.
+    // Con varios ejercicios elegidos la clave lleva la lista. Con uno solo queda la clave de siempre, así una búsqueda vieja de un
+    // año y la misma búsqueda hecha hoy son la misma fila.
     if (Array.isArray(state.years) && state.years.length > 1) {
       return [state.view, state.club, state.mode, state.years.join(','), state.gestion].join('|');
     }
@@ -75,7 +67,7 @@
   function seasonLabel(clubId, year) {
     if (!year) return '';
     var club = (typeof clubs !== 'undefined' && clubs[clubId]) || null;
-    var isCalendarYear = window.esEjercicioCalendario ? window.esEjercicioCalendario(clubId, year) : !!(club && club.fiscalYearStart === '01-01'); // (to-do 177)
+    var isCalendarYear = window.esEjercicioCalendario ? window.esEjercicioCalendario(clubId, year) : !!(club && club.fiscalYearStart === '01-01');
     return isCalendarYear ? String(year) : (year - 1) + '/' + year;
   }
 
@@ -88,21 +80,16 @@
     // CLUB_SELECTOR.paresDeLado() ya resuelve el año "sin fijar" (null = el más reciente
     // disponible) al valor real — no alcanza con leer `lado.bloques` crudo, ver su comentario.
     var pares = (window.CLUB_SELECTOR && window.CLUB_SELECTOR.paresDeLado(lado)) || [];
-    // Un solo par = un solo club (una liga entera resuelve a un par POR EQUIPO, así que esto
-    // solo da 1 cuando el lado es literalmente "un club, un año" — el caso de Guido).
+    // Un solo par = un solo club (una liga entera resuelve a un par POR EQUIPO, así que esto solo da 1 cuando el lado es
+    // literalmente "un club, un año").
     if (pares.length === 1) return clubName(pares[0][0]) + ', ' + seasonLabel(pares[0][0], pares[0][1]);
     return lado.nombre;
   }
 
   function labelFor(state) {
     if (state.view === 'vs') return labelForLado(state.ladoA) + ' vs ' + labelForLado(state.ladoB);
-    // to-do 83, el template que pidió Guido: "River 2024/2025 en Liga Española,
-    // ejercicio 2025". El año de la LIGA va como "ejercicio N" (no "N/N+1"):
-    // así es como el sitio ya etiqueta un ranking en js/liga.js (encabezado()),
-    // nunca como temporada — inventar un formato de temporada para ligas acá
-    // sería una segunda convención para la misma cosa. Con más de un club
-    // (segunda parte del to-do, "sumar uno o más equipos"), mismo criterio que
-    // `labelForLado()` unas líneas arriba: hasta 3 nombres unidos con "+", de
+    // Simulación: "River 2024/2025 en Liga Española, ejercicio 2025". El año de la LIGA va como "ejercicio N", como etiqueta un
+    // ranking js/liga.js (encabezado()). Con más de un club, mismo criterio que labelForLado(): hasta 3 nombres unidos con "+", de
     // ahí para arriba los 2 primeros + "N más".
     if (state.view === 'ligaSim') {
       var nombres = (state.clubes || []).map(function(c) {
@@ -114,8 +101,8 @@
         + t('cuenta.ligasim.ejercicio', 'ejercicio') + ' ' + state.leagueYear;
     }
     if (state.mode === 'gestion') return clubName(state.club) + ', ' + (state.gestion || '');
-    // to-do 147, paso 10: varios ejercicios. Hasta 3, se nombran; con más, el primero, el último y
-    // cuántos son ("Racing, 2017/2018 a 2024/2025, 5 ejercicios": puede haber saltos en el medio).
+    // Varios ejercicios. Hasta 3, se nombran; con más, el primero, el último y cuántos son ("Racing, 2017/2018 a 2024/2025, 5
+    // ejercicios": puede haber saltos en el medio).
     if (Array.isArray(state.years) && state.years.length > 1) {
       var ys = state.years.slice().sort(function(a, b) { return a - b; });
       if (ys.length <= 3) return clubName(state.club) + ', ' + ys.map(function(y) { return seasonLabel(state.club, y); }).join(', ');
@@ -244,7 +231,7 @@
     });
   }
 
-  // stateKey y labelFor se exponen para poder verificarlos sin sesión (to-do 147, paso 10): guardar
-  // de verdad necesita un usuario logueado, armar la clave y el nombre de la búsqueda no.
+  // stateKey y labelFor se exponen para poder verificarlos sin sesión: guardar de verdad necesita un usuario logueado, armar la
+  // clave y el nombre de la búsqueda no.
   window.CUENTA = { init: init, notifyStateChange: notifyStateChange, stateKey: stateKey, labelFor: labelFor };
 })();

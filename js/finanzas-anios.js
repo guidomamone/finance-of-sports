@@ -1,23 +1,17 @@
 // ============================================================================
-// js/finanzas-anios.js — los cards de ejercicios de Finanzas (to-do 147, paso 4).
-//
-// Reemplazan al dropdown "Año": un card por ejercicio, cada uno se prende y se apaga solo
-// (sin rangos), y escriben la selección en FIN_SEL (js/finanzas-render.js). Decisiones de
-// Guido, todas en el to-do 147 y en Prototyping/Finanzas/mockup-147.html:
+// js/finanzas-anios.js — los cards de ejercicios de Finanzas. Reemplazan al dropdown "Año": un card por ejercicio, cada uno se
+// prende y se apaga solo (sin rangos), y escriben la selección en FIN_SEL (js/finanzas-render.js).
 //   - Default y al cambiar de club: los últimos 5 ejercicios CON BALANCE.
 //   - Atajos: Últimos 5, Todos (tocarlo de nuevo saca todos → estado vacío), Solo el último.
-//   - Cada card dice qué documento hay: Balance, Presupuesto, Presupuesto y Balance. Un año sin
-//     nada entre el primero y el último cargado aparece rayado, "Sin publicar", y no se elige:
-//     así se ve el hueco.
-//   - Con más de 5 ejercicios la fila arranca corta (los últimos 5 balances + lo elegido, que
-//     nunca queda escondido) y "+N más", al principio de la misma fila, abre el resto.
+//   - Cada card dice qué documento hay: Balance, Presupuesto, Presupuesto y Balance. Un año sin nada entre el primero y el último
+//     cargado aparece rayado, "Sin publicar", y no se elige: así se ve el hueco.
+//   - Con más de 5 ejercicios la fila arranca corta (los últimos 5 balances + lo elegido, que nunca queda escondido) y "+N más",
+//     al principio de la misma fila, abre el resto.
 //   - Más viejo a la izquierda.
 //
-// ES EL DEFAULT desde la Versión 542 (pasos 4 a 10 terminados; hasta ahí vivía detrás de `?multi=1`).
-// `?multi=0` vuelve a la vista vieja de un ejercicio con el dropdown "Año": queda como salida de
-// emergencia y para comparar, no es algo que vea un visitante. El código de esa vista sigue entero
-// (renderNativePLTable, renderDebtBlockGeneric, la sección "Gráficos"): la vista multi-año lo usa
-// escondido para los totales de los KPIs, así que no se puede borrar.
+// `?multi=0` vuelve a la vista vieja de un ejercicio con el dropdown "Año" (salida de emergencia, no la ve un visitante). Su código
+// (renderNativePLTable, renderDebtBlockGeneric, la sección "Gráficos") no se puede borrar: la vista multi-año lo usa escondido
+// para los totales de los KPIs.
 // ============================================================================
 
 window.FIN_MULTI = !/[?&]multi=0(&|$)/.test(location.search);
@@ -53,7 +47,7 @@ const FIN_ANIOS = (function(){
     return lista.filter(e => e.tipo === 'B' || e.tipo === 'PB').slice(-n).map(e => e.y);
   }
   function etiqueta(clubId, y){
-    return esEjercicioCalendario(clubId, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // (to-do 177) por ejercicio
+    return esEjercicioCalendario(clubId, y) ? String(y) : String(y - 1).slice(2) + '/' + String(y).slice(2); // por ejercicio, no por club
   }
   function tipoTexto(tipo){
     return tipo === 'B' ? t('finanzas.card.balance', 'Balance')
@@ -70,7 +64,7 @@ const FIN_ANIOS = (function(){
       clubDeLaSeleccion = clubId;
       expandido = false;
       FIN_SEL.set(ultimosConBalance(lista, 5));
-      // Las gestiones del país llegan aparte (paso 12): cuando están, se vuelve a dibujar.
+      // Las gestiones del país llegan aparte: cuando están, se vuelve a dibujar.
       if(window.FIN_GESTION) FIN_GESTION.cargar(clubId).then(() => {
         if(clubDeLaSeleccion === clubId && window.CLUB_GESTIONES && window.CLUB_GESTIONES[clubId]) refreshFinanzas();
       });
@@ -157,13 +151,11 @@ window.FIN_ANIOS = FIN_ANIOS;
 
 
 // ============================================================================
-// GESTIÓN (to-do 147, paso 12). Lee data/gestiones/<país>.js (formato y regla de ejercicios: ver el
-// encabezado de ese archivo) y arma la fila "Gestión" de los cards: un botón por gestión CONFIRMADA
-// que tenga algún ejercicio cargado, de la más vieja a la más nueva. Tocar uno SUMA sus ejercicios a
-// los elegidos y tocarlo de nuevo los saca (se pueden prender dos para compararlas); un botón se ve
-// prendido cuando todos sus ejercicios están elegidos. Con más de 4, se ven las 3 más nuevas (más la
-// prendida) y "+N más" a la izquierda. `deAnio()` lo usan el gráfico (franjas) y la tabla (columnas
-// agrupadas por presidente), en js/finanzas-multi.js.
+// GESTIÓN. Lee data/gestiones/<país>.js (formato y regla de ejercicios: ver el encabezado de ese archivo) y arma la fila
+// "Gestión" de los cards: un botón por gestión CONFIRMADA que tenga algún ejercicio cargado, de la más vieja a la más nueva.
+// Tocar uno SUMA sus ejercicios a los elegidos y tocarlo de nuevo los saca (se pueden prender dos para compararlas); un botón se
+// ve prendido cuando todos sus ejercicios están elegidos. Con más de 4, se ven las 3 más nuevas (más la prendida) y "+N más" a
+// la izquierda. `deAnio()` lo usan el gráfico (franjas) y la tabla (columnas agrupadas por presidente), en js/finanzas-multi.js.
 // ============================================================================
 const FIN_GESTION = (function(){
   // Países con archivo en data/gestiones/. Uno nuevo se suma acá (tools/audit.js lo controla).
@@ -182,8 +174,7 @@ const FIN_GESTION = (function(){
     });
     return pedidos[pais];
   }
-  // La fecha de cierre del ejercicio `y`: el día anterior al arranque del ejercicio siguiente.
-  // (to-do 177) la fecha de cierre real de ESE ejercicio (cierreEjercicio, js/finanzas-calc.js), no la regla del club: Parma 2018 cierra el
+  // La fecha de cierre real de ESE ejercicio (cierreEjercicio, js/finanzas-calc.js), no la regla del club: Parma 2018 cierra el
   // 30/6/2018 y su gestión es la de Jiang, no la de Pizzarotti (que asumió el 1/10/2018).
   function cierre(clubId, y){ return cierreEjercicio(clubId, y); }
   // Las gestiones confirmadas del club, cada una con sus ejercicios cargados (no "Sin publicar").
@@ -214,7 +205,7 @@ const FIN_GESTION = (function(){
     lbl.className = 'fin-years-lbl';
     lbl.textContent = t('finanzas.gest.label', 'Gestión');
     caja.appendChild(lbl);
-    if(gs.length > 4 && (todas || visibles.length < gs.length)){ // sin "+0 más" cuando la selección ya muestra todas (Juventus con todos los años, 2026-10-09)
+    if(gs.length > 4 && (todas || visibles.length < gs.length)){ // sin "+0 más" cuando la selección ya muestra todas
       const mas = document.createElement('button');
       mas.type = 'button';
       mas.className = 'fin-years-more';

@@ -96,16 +96,12 @@ ni en el comentario de ningún archivo de código.
     `Admin/ESTADO-clubes.md`). Remedir la proporción en la próxima corrida del eje `escala` y, si cambió, actualizar ese punto de la skill
     (umbral y criterio).
 
-208. COMENTARIOS EN LO QUE SE PUBLICA (`index.html` y `js/*.js`). Son ~43% de `index.html` (~46 KB de 107 KB) y ~2.300 líneas en `js/`, y
-    viajan a cada visitante (se ven con "ver código fuente"). Opciones: (a) mover el porqué a `Admin/PANTALLA.md` y dejar en el código solo
-    comentarios cortos; (b) que `netlify.toml` los saque en el deploy con un minificador (paso de build, hoy el proyecto no tiene ninguno).
-    Recomendado: (a), en una sesión aparte. De paso: quedan cuatro "41 clubes" en comentarios de `index.html`.
-
 209. COMENTARIOS INTERNOS EN `data/*.js`, que también se publican: ~35% de las líneas son comentario y cientos mencionan a Guido, versiones
-    o to-dos. No es lo mismo que el 208: ahí está, rubro por rubro, por qué cada línea fue a su categoría y de dónde salió cada número (la
+    o to-dos. No es lo mismo que la limpieza de `index.html` y `js/` (hecha): ahí está, rubro por rubro, por qué cada línea fue a su categoría y de dónde salió cada número (la
     evidencia para auditar una carga), y parte la escriben los scripts del pipeline (`cargar.mjs` deja los ajustes como comentario).
     Antes de limpiar: decidir a dónde se muda esa evidencia (¿`fuentes/<club>`? ¿`Generados/`?) y cambiar los scripts para que dejen de
-    escribirla en `data/`. Hacerlo después del 208, con la regla de PANTALLA ("Comentarios en lo que se publica") como base.
+    escribirla en `data/`. La base es la regla de PANTALLA ("Comentarios en lo que se publica"); el chequeo de `audit.js`
+    (`comentario-interno-publicado`) hoy mira solo `index.html` y `js/`, y habría que extenderlo a `data/` al terminar.
 
 210. EL ENSAYO DE `cargar-lote.mjs` PROMETE AÑOS DE CLUBES NUEVOS QUE DESPUÉS NO ENTRAN (mejora de script). Con un club que no existe,
     `cargar.mjs --desde-verificacion` frena en "el club no existe" y no mira los demás frenos (casos de la verificación pendientes, categorías

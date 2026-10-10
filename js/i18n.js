@@ -1,46 +1,31 @@
 // ============================================================================
-// js/i18n.js - Motor de traducción del sitio (Versión 115).
+// js/i18n.js - Motor de traducción del sitio, que escala a N idiomas sin reescribir el sitio.
 //
-// POR QUÉ EXISTE: el sitio nació en castellano y para clubes argentinos, pero
-// desde la Versión 107 tiene clubes de 6 países y desde 2026-09-13 un dominio en
-// inglés (financeofsports.com). Hacía falta un selector de idioma que escale a
-// N idiomas sin reescribir el sitio cada vez.
-//
-// CÓMO ESCALA (esto es lo importante, leer antes de tocar nada):
+// CÓMO ESCALA (leer antes de tocar nada):
 //
 //   Agregar un idioma nuevo = 2 pasos, ninguno toca este archivo ni index.html:
-//     1. crear `data/lang/<code>.js` con el mismo patrón que `data/lang/en.js`
-//        (un objeto plano clave -> texto traducido);
+//     1. crear `data/lang/<code>.js` con el mismo patrón que `data/lang/en.js` (un objeto plano clave -> texto traducido);
 //     2. agregar una entrada en `LANGS` de `data/lang/langs.js`.
-//   El archivo del idioma se inyecta por convención (`data/lang/<code>.js`),
-//   igual que `loadClubData()` hace con `data/<clubId>-data.js` desde la
-//   Versión 112. No hay ningún mapa de rutas a mano que mantener.
+//   El archivo del idioma se inyecta por convención (`data/lang/<code>.js`), igual que loadClubData() con
+//   `data/<clubId>-data.js`. No hay ningún mapa de rutas a mano que mantener.
 //
-//   El CASTELLANO NO TIENE ARCHIVO DE DICCIONARIO, a propósito. El HTML ya está
-//   escrito en castellano, así que `apply()` guarda el texto original de cada
-//   elemento la primera vez que corre y lo usa como valor "es". Consecuencias:
+//   El CASTELLANO NO TIENE ARCHIVO DE DICCIONARIO, a propósito. El HTML ya está escrito en castellano, así que `apply()` guarda
+//   el texto original de cada elemento la primera vez que corre y lo usa como valor "es". Consecuencias:
 //     - traducir mal un idioma nuevo no puede romper el castellano;
-//     - una clave que falta en `en.js` cae de vuelta al castellano (texto raro,
-//       pero nunca una clave cruda en pantalla ni un hueco en blanco);
+//     - una clave que falta en `en.js` cae de vuelta al castellano (nunca una clave cruda en pantalla ni un hueco en blanco);
 //     - el castellano no se puede "desincronizar" del HTML, porque ES el HTML.
-//   Para strings generados en JS (que no viven en el HTML) el castellano se pasa
-//   como 2do argumento: `t('clave', 'texto en castellano')`.
+//   Para strings generados en JS (que no viven en el HTML) el castellano se pasa como 2do argumento: `t('clave', 'texto')`.
 //
 // CÓMO SE USA:
 //   - En el HTML: `<h1 data-i18n="finanzas.title">Finanzas</h1>`.
-//     Variantes: `data-i18n-html` (respeta markup interno), `data-i18n-title`,
-//     `data-i18n-placeholder`, `data-i18n-aria-label`.
+//     Variantes: `data-i18n-html` (respeta markup interno), `data-i18n-title`, `data-i18n-placeholder`, `data-i18n-aria-label`.
 //   - En JS que genera HTML: `I18N.t('clave', 'castellano por default')`.
 //   - Después de inyectar HTML nuevo en el DOM: `I18N.apply(elementoNuevo)`.
-//   - Para re-renderizar una vista cuando cambia el idioma:
-//     `I18N.onChange(() => miRender())`. El motor NO adivina qué re-renderizar.
+//   - Para re-renderizar una vista cuando cambia el idioma: `I18N.onChange(() => miRender())`. El motor NO adivina qué
+//     re-renderizar.
 //
-// QUÉ NO SE TRADUCE, A PROPÓSITO: los rubros de la tabla de Finanzas en
-// "Formato del club" salen textuales del balance de cada club (`rawLabel`), y la
-// promesa del sitio es mostrar cada club TAL CUAL LO REPORTA. Traducir
-// "Ingresos por Cuota Social" de un balance argentino sería inventar un dato que
-// el documento no dice. Los buckets de "Formato simplificado" SÍ se traducen:
-// esos son categorías del sitio, no del documento.
+// QUÉ NO SE TRADUCE, A PROPÓSITO: los rubros de "Formato del club" salen textuales del balance de cada club (`rawLabel`), y el
+// sitio muestra cada club TAL CUAL LO REPORTA. Los buckets de "Formato simplificado" SÍ se traducen: son categorías del sitio.
 // ============================================================================
 
 (function () {
@@ -110,20 +95,13 @@
   };
 
   // --------------------------------------------------------------------------
-  // Carga el archivo de un idioma por convención (data/lang/<code>.js), igual
-  // que loadClubData(). Devuelve una Promise. El castellano no tiene archivo.
+  // Carga el archivo de un idioma por convención (data/lang/<code>.js), igual que loadClubData(). Devuelve una Promise. El
+  // castellano no tiene archivo.
   // --------------------------------------------------------------------------
-  // `window.I18N_BASE` es lo que hay que anteponer para llegar a la raíz del sitio desde
-  // la página que está corriendo. Vale '' (o queda sin definir) en todo lo que vive en la
-  // raíz, y '../' en las páginas de fuentes por club (`fuentes/<clubId>.html`, Versión
-  // 162), que son las primeras del proyecto que NO están en la raíz.
-  // POR QUÉ HIZO FALTA: este src es relativo al DOCUMENTO, no a js/i18n.js. Los <script>
-  // estáticos de esas páginas ya llevan su `../` escrito, así que i18n.js cargaba bien, y
-  // el síntoma era solamente que el diccionario no llegaba: la página se quedaba en
-  // castellano aunque el visitante tuviera el sitio en inglés, pidiendo
-  // `fuentes/data/lang/en.js` y comiéndose un 404 en silencio (el onerror de acá abajo
-  // degrada a castellano a propósito, así que ni siquiera se veía roto).
-  // SI ALGÚN DÍA SE AGREGA OTRA PÁGINA FUERA DE LA RAÍZ, tiene que declarar su I18N_BASE.
+  // `window.I18N_BASE` es lo que hay que anteponer para llegar a la raíz del sitio desde la página que corre: '' (o sin definir)
+  // en la raíz, '../' en las páginas de fuentes por club (`fuentes/<clubId>.html`). Este src es relativo al DOCUMENTO, no a
+  // js/i18n.js: sin I18N_BASE esas páginas pedían `fuentes/data/lang/en.js`, se comían un 404 y se quedaban en castellano sin que se
+  // viera roto. UNA PÁGINA NUEVA FUERA DE LA RAÍZ tiene que declarar su I18N_BASE.
   I18N.load = function (code) {
     if (code === SOURCE_LANG) return Promise.resolve();
     if (I18N.strings[code]) return Promise.resolve();

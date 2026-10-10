@@ -1,9 +1,8 @@
-// js/info-tip.js — EL BOCADILLO DE EXPLICACIÓN, compartido (Versión 515, sacado de js/selector.js para el to-do 140(i)).
+// js/info-tip.js — EL BOCADILLO DE EXPLICACIÓN, compartido por el selector, Finanzas y Ligas.
 //
 // Hover en desktop, click/tap en mobile (donde no existe hover). El bocadillo NO es descendiente de su ancla: un único
 // `div.op-info-float` con `position:fixed` colgado de `document.body`, reposicionado con `getBoundingClientRect()` en cada
-// apertura, esquiva cualquier `overflow:hidden` ajeno en el camino (el bug que lo originó: `.paso` del selector recortaba el
-// bocadillo de México, la última fila de Países; las tablas de Finanzas viven adentro de cards con el mismo problema).
+// apertura, esquiva cualquier `overflow:hidden` ajeno en el camino (los pasos del selector y los cards de Finanzas lo recortaban).
 //
 // Dos formas de usarlo:
 //   INFO_TIP.enganchar(el, texto)   listeners propios del elemento (el "?" del selector, que corta la propagación del click
