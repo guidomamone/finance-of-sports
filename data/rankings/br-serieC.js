@@ -5,7 +5,7 @@
 //
 // Brasileirão Série C (BR) — 5 ejercicio(s) con ranking:
 //   2025: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
-//   2024: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
+//   2024: 2 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2023: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2021: 3 club(es) cargado(s), sin verificar cuántos equipos tuvo.
 //   2020: 1 club(es) cargado(s), sin verificar cuántos equipos tuvo.
@@ -27,6 +27,9 @@ window.RANKINGS["br-serieC"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"ferroviaria-br", revenue:5.087, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-demonstracoes-financeiras-2024",
+        mix:[["Comercial / Sponsors",2.234],["Estadio",0.037],["Televisión",0.24],["Premios por competencias",0.288],["Venta de Jugadores",1.128],["Otros ingresos",1.161]] },
       { id:"voltaredonda-br", revenue:2.042, reportType:"official_balance_sheet",
         sourceId:"voltaredonda-br-balanco-2024",
         mix:[["Cuotas Sociales",0.008],["Comercial / Sponsors",0.433],["Estadio",0.22],["Televisión",0.942],["Venta de Jugadores",0.348],["Otros ingresos",0.09]] },
