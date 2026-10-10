@@ -42,10 +42,6 @@ const dynamomakhachkalaruRevenueLinesByYear = {
   // Generados/Rusia/Dynamo Makhachkala/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Dynamo Makhachkala/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2021: [
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:0.5, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:59.077, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Dynamo Makhachkala/bfo-2022-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   2022: [
@@ -82,14 +78,14 @@ const dynamomakhachkalaruRevenueLinesByYear = {
     { rawLabel:'Добровольные имущественные взносы и пожертвования (6230, форма 6)', normalizedCategory:'other_income', amountNative:576, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:518.439, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Dynamo Makhachkala/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2021: [
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:0.5, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Целевые взносы (6220, форма 6)', normalizedCategory:'other_income', amountNative:59.077, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const dynamomakhachkalaruExpenseLinesByYear = {
-  2021: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-0.034, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-5.368, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-43.121, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-13.544, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2022: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-19.335, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-226.162, disclosureLevel:'aggregated' }, // pág. ?, ?
@@ -124,26 +120,14 @@ const dynamomakhachkalaruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-42.481, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-18.148, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2021: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-0.034, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-5.368, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на содержание аппарата управления (6320, форма 6)', normalizedCategory:'admin_general_expense', amountNative:-43.121, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-13.544, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const dynamomakhachkalaruFiscalYearMeta = {
-  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2021-12-31',
-    sourceId:'dynamomakhachkala-ru-bfo-2021-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:0, tax:-0.008,
-    extraRows: [
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-0.008},
-    ],
-    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:5.368, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-2.497,
-  },
   2022: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2022-12-31',
     sourceId:'dynamomakhachkala-ru-bfo-2022-datos',
@@ -225,6 +209,24 @@ const dynamomakhachkalaruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:66.384,
+  },
+  2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2021-12-31',
+    sourceId:'dynamomakhachkala-ru-bfo-2021-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-0.008,
+    extraRows: [
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-0.008},
+    ],
+    incluidoEn:{"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:5.368, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-2.497,
   },
 };
 const dynamomakhachkalaruPresupuestoOverlayByYear = {};
