@@ -42,10 +42,6 @@ const orenburgruRevenueLinesByYear = {
   // Generados/Rusia/Orenburg/bfo-2024-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Orenburg/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
-  2025: [
-    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2563.879, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:712.018, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   // 2021: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2021-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
   // Generados/Rusia/Orenburg/bfo-2021-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
   // 2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2022-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
@@ -80,14 +76,15 @@ const orenburgruRevenueLinesByYear = {
     { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:649.539, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:49.13, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  // 2025: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Rusia/Orenburg/bfo-2025-datos.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+  // Generados/Rusia/Orenburg/bfo-2025-datos.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: -; resultado "Чистая прибыль (убыток), código 2400 (suma verificada contra".
+  2025: [
+    { rawLabel:'Выручка (2110)', normalizedCategory:'lump_football_operations', amountNative:2563.879, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие доходы (2340)', normalizedCategory:'other_income', amountNative:712.018, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие поступления (6250, форма 6)', normalizedCategory:'other_income', amountNative:55.999, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const orenburgruExpenseLinesByYear = {
-  2025: [ // tools/cargar.mjs (2026-10-10)
-    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2688.13, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-5.354, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-129.55, disclosureLevel:'aggregated' }, // pág. ?, ?
-    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-479.277, disclosureLevel:'aggregated' }, // pág. ?, ?
-  ],
   2021: [ // tools/cargar.mjs (2026-10-10)
     { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-85.579, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'**Материальные затраты** (5610)', normalizedCategory:'other_expenses', amountNative:-86.817, disclosureLevel:'detailed' }, // pág. ?, ?
@@ -124,28 +121,16 @@ const orenburgruExpenseLinesByYear = {
     { rawLabel:'Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)', normalizedCategory:'other_expenses', amountNative:-0.388, disclosureLevel:'aggregated' }, // pág. ?, ?
     { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-26.602, disclosureLevel:'aggregated' }, // pág. ?, ?
   ],
+  2025: [ // tools/cargar.mjs (2026-10-10)
+    { rawLabel:'Себестоимость продаж (2120)', normalizedCategory:'lump_football_operations_expense', amountNative:-2688.13, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Коммерческие расходы (2210)', normalizedCategory:'admin_general_expense', amountNative:-5.354, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Управленческие расходы (2220)', normalizedCategory:'admin_general_expense', amountNative:-129.55, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (2350)', normalizedCategory:'other_expenses', amountNative:-479.277, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Расходы на целевые мероприятия (6310, форма 6)', normalizedCategory:'lump_football_operations_expense', amountNative:-109.376, disclosureLevel:'aggregated' }, // pág. ?, ?
+    { rawLabel:'Прочие расходы (6350, форма 6)', normalizedCategory:'other_expenses', amountNative:-63.918, disclosureLevel:'aggregated' }, // pág. ?, ?
+  ],
 };
 const orenburgruFiscalYearMeta = {
-  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-    currency:'RUB', fxRef:'RUB@2025-12-31',
-    sourceId:'orenburg-ru-bfo-2025-datos',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-3.002, tax:-34.502,
-    extraRows: [
-      {label:'Проценты к уплате (2330)', value:-3.002},
-      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-34.502},
-    ],
-    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true} }, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
-    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
-    sinDesglose: [
-      {renglon:'Выручка (2110)', lado:'ingreso', importe:2563.879, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2688.13, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-63.918,
-  },
   2021: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
     currency:'RUB', fxRef:'RUB@2021-12-31',
     sourceId:'orenburg-ru-bfo-2021-datos',
@@ -230,6 +215,27 @@ const orenburgruFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-84.67,
+  },
+  2025: { // tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+    currency:'RUB', fxRef:'RUB@2025-12-31',
+    sourceId:'orenburg-ru-bfo-2025-datos',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-3.002, tax:-34.502,
+    extraRows: [
+      {label:'Проценты к уплате (2330)', value:-3.002},
+      {label:'Налог на прибыль и прочее (2300 − 2400)', value:-34.502},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true},"member_dues":{"en":"lump_football_operations","posible":true},"sponsorship_commercial":{"en":"lump_football_operations","posible":true},"wages_squad":{"en":"lump_football_operations_expense","posible":true}}, // ajuste manual `incluye`: el documento junta estas categorías con otra línea
+    // sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+    sinDesglose: [
+      {renglon:'Выручка (2110)', lado:'ingreso', importe:2563.879, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2688.13, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+      {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:109.376, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-181.213,
   },
 };
 const orenburgruPresupuestoOverlayByYear = {};
